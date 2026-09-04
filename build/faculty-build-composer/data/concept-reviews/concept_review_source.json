@@ -1,6 +1,6 @@
 {
   "schemaVersion": "7.0.0-no-subtitle-template-authoritative",
-  "generatedAt": "2026-09-04T16:00:00.000Z",
+  "generatedAt": "2026-09-04T20:00:00-04:00",
   "composerLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1-phaseMacroFinalCleanup-v1-phaseMacroOpenEconomy-v1",
   "renumberingMap": {
     "GEN-ECON-14": "GEN-ECON-16",
@@ -9206,64 +9206,52 @@
     {
       "code": "MACRO-20",
       "canonicalConceptIds": [
-        "bank-balance-sheets-reserves-and-capital",
-        "deposit-creation-and-money-multiplier"
+        "bank-balance-sheets-reserves-and-capital"
       ],
-      "title": "Bank Money Creation",
+      "title": "Bank Balance Sheets, Reserves, and Capital",
       "discipline": "macro",
       "disciplineLabel": "MACROECONOMICS",
-      "focusTerms": [],
+      "focusTerms": [
+        "assets and liabilities",
+        "reserves",
+        "bank capital",
+        "deposits and withdrawals",
+        "asset losses"
+      ],
       "content": {
-        "outcome": "Analyze reserves, fractional-reserve banking, balance sheets, multipliers, and deposit creation.",
-        "core": "Fractional-reserve banks hold only part of deposits as reserves and can create deposits when they make loans. A new loan typically becomes a deposit elsewhere in the banking system, allowing the process to continue. The simple deposit multiplier describes a maximum expansion when banks lend all excess reserves and the public redeposits the proceeds; excess reserves and cash holding make actual expansion smaller.",
+        "outcome": "Classify bank accounts and trace how transactions change reserves and capital.",
+        "core": "A bank balance sheet satisfies assets = liabilities + capital. Reserves, loans, and securities are assets. Deposits and bank borrowing are liabilities. Bank capital is owners' equity: assets minus liabilities. Reserves provide liquidity and help meet withdrawals; capital absorbs asset losses. Required reserves and capital requirements therefore constrain different parts of the balance sheet.",
         "recognition": [
-          "A bank receives a new deposit and holds all of it as excess reserves instead of lending.",
-          "Deposits are liabilities: the bank has an obligation to repay depositors.",
-          "Borrowers owe repayment to the bank, so loans are bank assets.",
-          "The simple multiplier is 1 divided by the reserve ratio.",
-          "The reserve ratio is the reciprocal of the multiplier: 1/4 = 25 percent."
+          "A customer's deposit is a bank liability; the cash or reserve balance received is an asset.",
+          "A cash withdrawal reduces both reserves and deposits by the same amount.",
+          "A loan is a bank asset because the borrower owes the bank repayment.",
+          "An asset loss reduces capital when liabilities do not change."
         ],
-        "watch": "A common mistake is to reverse the reserve-ratio relationship. The simple multiplier is 1 divided by the required reserve ratio, so a higher ratio produces a smaller potential deposit expansion.",
-        "worked": "A bank has $900,000 in deposits and faces a 12% reserve requirement. Required reserves equal 0.12 x $900,000 = $108,000. If the bank holds exactly that amount, the remaining $792,000 can support loans. The simple money multiplier is 1/0.12 = 8.33, an upper bound rather than a guarantee.",
-        "check": "When a bank makes a loan from excess reserves, what can happen next?",
+        "watch": "Do not call reserves bank capital. Reserves are assets available for payments; capital is the residual claim, assets minus liabilities, that cushions losses.",
+        "worked": "A bank holds $120 in reserves, $780 in loans, and $100 in securities: assets are $1,000. Deposits of $900 and borrowing of $40 make liabilities $940, so capital is $60. A $25 loan loss cuts assets to $975 while liabilities stay $940. Capital falls to $35; reserves remain $120.",
+        "check": "If a depositor withdraws $20 in cash, which asset and which liability fall?",
         "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
-        "exampleQuestionId": "LG-B-6003",
-        "checkQuestionId": "ECON-SP-DEPOSIT-CREATION-5070",
-        "workedLabel": "DEPOSIT CREATION IN ACTION"
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "CAPITAL ABSORBS AN ASSET LOSS"
       },
       "instructionalEvidence": {
-        "canonicalDefinition": "Analyze reserves, fractional-reserve banking, balance sheets, multipliers, and deposit creation.",
-        "selectedQuestionIds": [
-          "P52A-BANK-M-004",
-          "P52A-BANK-E-001",
-          "P52A-BANK-E-003",
-          "P52A-BANK-E-004",
-          "P52A-BANK-B2-002",
-          "LG-B-6003",
-          "ECON-SP-DEPOSIT-CREATION-5070"
-        ],
+        "canonicalDefinition": "Classify bank accounts and trace how transactions change reserves and capital.",
+        "selectedQuestionIds": [],
         "testedDistinctions": [
-          "analyze leverage loss",
-          "apply fractional reserve logic",
-          "apply multiplier",
-          "apply reserve ratio",
-          "bank capital assets liabilities",
-          "calculate bank capital",
-          "calculate capital after asset loss",
-          "calculate capital loss percentage"
+          "assets and liabilities",
+          "reserves",
+          "bank capital",
+          "deposits and withdrawals",
+          "asset losses"
         ],
         "observedMisconceptions": [
-          "thinking banks create money by printing currency",
-          "thinking a higher reserve requirement creates more lending",
-          "Treating deposits as bank-owned assets.",
-          "Multiplying by the lending share instead of the reserve ratio.",
-          "Classifying loans as liabilities.",
-          "Reversing the relationship between the reserve ratio and multiplier."
+          "Do not call reserves bank capital. Reserves are assets available for payments; capital is the residual claim, assets minus liabilities, that cushions losses."
         ],
-        "questionsInspected": 90
+        "questionsInspected": 60
       },
       "manualQuality": {
         "normalWrittenEnglish": true,
@@ -9279,22 +9267,10 @@
         "noUnnecessaryAxisRestatement": true,
         "noConclusionWithoutReasoning": true,
         "noInvisiblePointOrCurveReferences": true,
-        "proseRevised": true,
-        "workedExampleSubstantiallyRewritten": true,
-        "coreIdeaStartsDirectly": true,
-        "conceptContaminationDetected": false,
-        "recognitionIsPedagogical": true,
-        "recognitionContainsUnexplainedGraphValues": false,
-        "workedExampleMatchesConcept": true,
-        "workedExampleMatchesVisibleGraph": null,
-        "numericValuesInternallyConsistent": true,
-        "subtitleIsConceptual": true,
         "proseReadsNaturally": true,
-        "coreIdeaEstablishesTopicFirst": true,
-        "coreIdeaContainsPrematureExample": false,
-        "workedExampleLabelIsDescriptive": true,
-        "workedExampleDetailsNotDuplicatedInCoreIdea": true,
-        "subtitleRetiredFromStudentFacingModel": true
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
       }
     },
     {
@@ -10550,68 +10526,54 @@
     {
       "code": "MACRO-34",
       "canonicalConceptIds": [
-        "short-run-aggregate-supply",
-        "long-run-aggregate-supply-and-potential-output"
+        "short-run-aggregate-supply"
       ],
-      "title": "Aggregate Supply",
+      "title": "Short-Run Aggregate Supply",
       "discipline": "macro",
       "disciplineLabel": "MACROECONOMICS",
-      "focusTerms": [],
+      "focusTerms": [
+        "upward SRAS",
+        "sticky adjustment",
+        "SRAS shifters",
+        "movement versus shift",
+        "cost shocks"
+      ],
       "content": {
-        "outcome": "Analyze LRAS, SRAS, sticky adjustment, expectations, and supply shifts.",
-        "core": "Aggregate supply describes the real output firms produce at different price levels in the short run and at potential output in the long run. Short-run aggregate supply slopes upward because some wages, input prices, and expectations adjust slowly. Changes in production costs or expected prices shift the short-run curve, while changes in labor, capital, resources, or technology can change long-run productive capacity.",
+        "outcome": "Explain the SRAS slope and distinguish movements from shifts.",
+        "core": "Short-run aggregate supply shows the real GDP firms produce at each price level while some wages, input prices, and expectations adjust slowly. It slopes upward because an unexpected rise in the price level can temporarily raise production profitability. A price-level change moves along SRAS; changes in input costs, expected prices, productivity, or business taxes shift the entire curve.",
         "recognition": [
-          "AS1 shows less output supplied at each price level.",
-          "SRAS slopes upward because sticky wages, sticky prices, and misperceptions allow price-level changes to affect output.",
-          "Higher expected prices tend to produce higher nominal wages and other input costs.",
-          "With sticky wages, unexpected price increases can make production temporarily more profitable."
+          "A higher current price level, with determinants fixed, means movement up along SRAS.",
+          "Higher expected prices or higher input costs shift SRAS left/up.",
+          "Lower input costs or higher productivity shift SRAS right/down.",
+          "Short-run output can lie above or below potential output because adjustment is incomplete."
         ],
-        "watch": "A common mistake is to confuse a movement along aggregate supply with a shift of the curve. A cost shock changes the output firms supply at every price level, so the entire curve shifts.",
-        "worked": "Higher energy prices raise production costs. The graph represents that shock by shifting aggregate supply upward and left from AS0 to AS1: at any given real GDP, firms require a higher price level. In a full AD-AS model, the short-run result is lower output and a higher price level.",
-        "check": "What change from AS0 to AS1 is shown?",
+        "watch": "Do not shift SRAS merely because the current price level changes. Ask whether production conditions changed at every price level.",
+        "worked": "Higher energy prices raise firms' costs. The graph shifts SRAS from AS0 to AS1, upward and left. At real GDP 150, the price level associated with supply rises from 150 to 190. With aggregate demand fixed, the new short-run equilibrium would have lower real GDP and a higher price level.",
+        "check": "Expected input prices fall. Does the economy move along SRAS or does SRAS shift?",
         "graph": true,
-        "calculation": true,
+        "calculation": false,
         "difficulty": "Intermediate",
         "time": "5 minutes",
-        "exampleQuestionId": "PG3-AS-M-002",
-        "checkQuestionId": "PG3-AS-E-001",
-        "workedLabel": "SHIFTING AGGREGATE SUPPLY",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/aggregate-supply/as-01.webp",
-        "assetMetadata": {
-          "filename": "as-01.webp",
-          "sourceUrl": "data/question-assets/aggregate-supply/AS-01.webp",
-          "sha256": "34a54f4e29ed509fd11a38740efc961a4bbe8e908567723ab2fdf594f6f268f6",
-          "imageAlt": "The horizontal axis is real GDP and the vertical axis is price level. AS0 is an upward-sloping curve beginning near a price level of 75 when real GDP is 0 and reaching about 190 when real GDP is 230. A dashed curve AS1 lies above AS0 at all output levels, indicating a decrease in aggregate supply. At real GDP 150, the price level on AS0 is 150 and the price level on AS1 is 190.",
-          "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AS0 is an upward-sloping curve beginning near a price level of 75 when real GDP is 0 and reaching about 190 when real GDP is 230. A dashed curve AS1 lies above AS0 at all output levels, indicating a decrease in aggregate supply. At real GDP 150, the price level on AS0 is 150 and the price level on AS1 is 190."
-        }
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "AN ADVERSE COST SHOCK",
+        "graphAssetPath": "question-assets/aggregate-supply/AS-01.webp",
+        "graphDescription": "Price level is vertical and real GDP horizontal. Upward-sloping AS1 lies above and left of AS0, showing a decrease in short-run aggregate supply."
       },
       "instructionalEvidence": {
-        "canonicalDefinition": "Analyze LRAS, SRAS, sticky adjustment, expectations, and supply shifts.",
-        "selectedQuestionIds": [
-          "PG3-AS-L-001",
-          "PG3-AS-L-002",
-          "ECON-SP-EASY-30",
-          "P52A-AS-M-001",
-          "P52A-AS-M-003",
-          "PG3-AS-M-002",
-          "PG3-AS-E-001"
-        ],
+        "canonicalDefinition": "Explain the SRAS slope and distinguish movements from shifts.",
+        "selectedQuestionIds": [],
         "testedDistinctions": [
-          "expected price sras shift",
-          "explain sras upward",
-          "identify lras",
-          "identify sras shifters",
-          "read sras shift"
+          "upward SRAS",
+          "sticky adjustment",
+          "SRAS shifters",
+          "movement versus shift",
+          "cost shocks"
         ],
         "observedMisconceptions": [
-          "Confusing SRAS and LRAS.",
-          "Applying long-run neutrality to the short run.",
-          "Treating production cost changes as AD shifts.",
-          "Reversing AS1 and AS2.",
-          "Confusing productive capacity with aggregate demand.",
-          "Reversing the effect of higher production costs."
+          "Do not shift SRAS merely because the current price level changes. Ask whether production conditions changed at every price level."
         ],
-        "questionsInspected": 63
+        "questionsInspected": 48
       },
       "manualQuality": {
         "normalWrittenEnglish": true,
@@ -10627,93 +10589,63 @@
         "noUnnecessaryAxisRestatement": true,
         "noConclusionWithoutReasoning": true,
         "noInvisiblePointOrCurveReferences": true,
-        "proseRevised": true,
-        "workedExampleSubstantiallyRewritten": true,
-        "coreIdeaStartsDirectly": true,
-        "conceptContaminationDetected": false,
-        "recognitionIsPedagogical": true,
-        "recognitionContainsUnexplainedGraphValues": false,
-        "workedExampleMatchesConcept": true,
-        "workedExampleMatchesVisibleGraph": true,
-        "numericValuesInternallyConsistent": true,
-        "subtitleIsConceptual": true,
         "proseReadsNaturally": true,
-        "coreIdeaEstablishesTopicFirst": true,
-        "coreIdeaContainsPrematureExample": false,
-        "workedExampleLabelIsDescriptive": true,
-        "workedExampleDetailsNotDuplicatedInCoreIdea": true,
-        "subtitleRetiredFromStudentFacingModel": true
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
       }
     },
     {
       "code": "MACRO-35",
       "canonicalConceptIds": [
-        "ad-as-equilibrium-and-output-gaps",
-        "demand-and-supply-shocks",
-        "long-run-macroeconomic-self-adjustment"
+        "demand-and-supply-shocks"
       ],
-      "title": "Macroeconomic Equilibrium and Shocks",
+      "title": "Demand and Supply Shocks",
       "discipline": "macro",
       "disciplineLabel": "MACROECONOMICS",
-      "focusTerms": [],
+      "focusTerms": [
+        "AD shocks",
+        "SRAS shocks",
+        "favorable and adverse shocks",
+        "stagflation",
+        "comparative statics"
+      ],
       "content": {
-        "outcome": "Analyze AD-AS equilibrium, demand shocks, supply shocks, and stagflation.",
-        "core": "Macroeconomic equilibrium occurs where aggregate demand intersects short-run aggregate supply, while long-run equilibrium also requires output to equal potential. A supply shock creates a tradeoff: supporting output can worsen inflation, while fighting inflation can worsen unemployment. An adverse supply shock shifts SRAS left, lowering output and raising prices. Both shocks lower the price level, while one lowers output and the other raises it. Similar magnitudes can leave output nearly unchanged.",
+        "outcome": "Identify AD and SRAS shocks and compare their short-run effects.",
+        "core": "An aggregate-demand shock shifts AD and moves real GDP and the price level in the same direction. A short-run aggregate-supply shock shifts SRAS and moves real GDP and the price level in opposite directions. Favorable supply shocks raise output and lower the price level; adverse supply shocks lower output and raise the price level, producing stagflation when lower output accompanies inflation.",
         "recognition": [
-          "Use the intersection of aggregate demand and short-run aggregate supply to find short-run output and the price level.",
-          "Compare short-run output with potential output shown by long-run aggregate supply.",
-          "A demand shock moves output and the price level in the same direction; a supply shock moves them in opposite directions.",
-          "When both curves shift, analyze each change separately before combining their effects."
+          "Spending changes shift AD: consumption, investment, government purchases, or net exports.",
+          "Production-cost or expected-price changes shift SRAS.",
+          "Demand shock: output and price level move together in the short run.",
+          "Supply shock: output and price level move in opposite directions."
         ],
-        "watch": "Do not treat a negative demand shock and positive supply shock as if they move both outcomes in the same direction. Lower aggregate demand and higher short-run aggregate supply both reduce the price level, but they push output in opposite directions.",
-        "worked": "The aggregate-demand increase moves equilibrium from point A, with real GDP of 150 and price level 125, to point B, with real GDP of 175 and price level 137.5. Output rises by 25 and the price level by 12.5, the standard short-run demand-expansion pattern.",
-        "check": "If AD falls while SRAS also falls, what outcome is certain?",
+        "watch": "Do not classify a shock from the outcome alone when several curves move. Identify the initiating event, shift each curve separately, then combine the effects.",
+        "worked": "From A, an AD increase alone moves equilibrium to B: output rises from 75 to 100 and the price level from 100 to 125. An adverse SRAS shift alone moves A to D: output falls from 75 to 50 while the price level rises to 125. The second pattern is stagflation.",
+        "check": "Oil prices fall sharply. Which curve shifts, and what happens to output and the price level?",
         "graph": true,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
-        "exampleQuestionId": "PG3-MEQ-M-006",
-        "checkQuestionId": "ECON-SP-TRACE-COMBINED-SHOCKS-5093",
-        "workedLabel": "COMBINING AD-AS SHOCKS",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/macroeconomic-equilibrium-and-shocks/adas-01.webp",
-        "assetMetadata": {
-          "filename": "adas-01.webp",
-          "sourceUrl": "data/question-assets/macroeconomic-equilibrium-and-shocks/ADAS-01.webp",
-          "sha256": "902c876558934ff04cc8c3e123800ed1e61dd39b0cd7bf6a427003b3d8c50c0d",
-          "imageAlt": "The horizontal axis is real GDP and the vertical axis is price level. AD0 intersects AS0 at point A, where real GDP is 150 and the price level is 125. A dashed AD1 curve lies to the right of AD0 and intersects AS0 at point B, where real GDP is 175 and the price level is 137.5. This graph shows an increase in aggregate demand moving the economy along a fixed short-run aggregate supply curve.",
-          "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AD0 intersects AS0 at point A, where real GDP is 150 and the price level is 125. A dashed AD1 curve lies to the right of AD0 and intersects AS0 at point B, where real GDP is 175 and the price level is 137.5. This graph shows an increase in aggregate demand moving the economy along a fixed short-run aggregate supply curve."
-        }
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "ONE SHIFT AT A TIME",
+        "graphAssetPath": "question-assets/macroeconomic-equilibrium-and-shocks/ADAS-02.webp",
+        "graphDescription": "AD0 and AD1 slope downward; AS0 and AS1 slope upward. A to B isolates an AD increase. A to D isolates an adverse SRAS shift."
       },
       "instructionalEvidence": {
-        "canonicalDefinition": "Analyze AD–AS equilibrium, demand shocks, supply shocks, and stagflation.",
-        "selectedQuestionIds": [
-          "P52B-S3-MEQS-LB-003",
-          "P52B-S3-MEQS-LB-001",
-          "ECON-SP-MEDIUM-129",
-          "ECON-SP-LEGENDARY-9039",
-          "P52B-S3-MEQS-L-001",
-          "PG3-MEQ-M-006",
-          "ECON-SP-TRACE-COMBINED-SHOCKS-5093"
-        ],
+        "canonicalDefinition": "Identify AD and SRAS shocks and compare their short-run effects.",
+        "selectedQuestionIds": [],
         "testedDistinctions": [
-          "choose stabilization response",
-          "classify demand shock",
-          "classify supply shock",
-          "connect output unemployment",
-          "define stagflation",
-          "evaluate supply shock policy",
-          "infer combined shocks",
-          "read ad as equilibrium"
+          "AD shocks",
+          "SRAS shocks",
+          "favorable and adverse shocks",
+          "stagflation",
+          "comparative statics"
         ],
         "observedMisconceptions": [
-          "Calling an oil shock a demand shock.",
-          "Confusing demand shocks with supply shocks.",
-          "Thinking all recessions lower inflation.",
-          "Treating stagflation as any recession.",
-          "Reading the wrong intersection.",
-          "Ignoring the curve labels."
+          "Do not classify a shock from the outcome alone when several curves move. Identify the initiating event, shift each curve separately, then combine the effects."
         ],
-        "questionsInspected": 83
+        "questionsInspected": 69
       },
       "manualQuality": {
         "normalWrittenEnglish": true,
@@ -10729,92 +10661,63 @@
         "noUnnecessaryAxisRestatement": true,
         "noConclusionWithoutReasoning": true,
         "noInvisiblePointOrCurveReferences": true,
-        "proseRevised": true,
-        "workedExampleSubstantiallyRewritten": true,
-        "coreIdeaStartsDirectly": true,
-        "conceptContaminationDetected": false,
-        "recognitionIsPedagogical": true,
-        "recognitionContainsUnexplainedGraphValues": false,
-        "workedExampleMatchesConcept": true,
-        "workedExampleMatchesVisibleGraph": true,
-        "numericValuesInternallyConsistent": true,
-        "subtitleIsConceptual": true,
         "proseReadsNaturally": true,
-        "coreIdeaEstablishesTopicFirst": true,
-        "coreIdeaContainsPrematureExample": false,
-        "workedExampleLabelIsDescriptive": true,
-        "workedExampleDetailsNotDuplicatedInCoreIdea": true,
-        "subtitleRetiredFromStudentFacingModel": true
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
       }
     },
     {
       "code": "MACRO-36",
       "canonicalConceptIds": [
-        "ad-as-equilibrium-and-output-gaps",
         "long-run-macroeconomic-self-adjustment"
       ],
-      "title": "Long-Run Macroeconomic Adjustment",
+      "title": "Long-Run Macroeconomic Self-Adjustment",
       "discipline": "macro",
       "disciplineLabel": "MACROECONOMICS",
-      "focusTerms": [],
+      "focusTerms": [
+        "recessionary gap",
+        "inflationary gap",
+        "wage adjustment",
+        "SRAS self-correction",
+        "policy distinction"
+      ],
       "content": {
-        "outcome": "Trace output gaps and self-correction toward natural output.",
-        "core": "When output differs from potential, wage and price adjustment can shift short-run aggregate supply and return the economy toward natural output. Output above potential creates upward pressure on wages and costs, shifting short-run aggregate supply left. Output below potential weakens wage and cost pressure, shifting it right. This self-correction changes the price level while returning output toward its long-run capacity.",
+        "outcome": "Trace wage and input-price adjustment that returns output toward potential.",
+        "core": "A recessionary gap has short-run output below potential; an inflationary gap has output above potential. With no new demand shock or discretionary policy, labor-market and input-price adjustment changes SRAS over time. Weak demand for labor in a recessionary gap reduces wage-cost pressure and shifts SRAS right; an inflationary gap raises wage-cost pressure and shifts SRAS left. Output returns toward LRAS.",
         "recognition": [
-          "Compare current output with potential output to identify an inflationary or recessionary gap.",
-          "Above potential, rising wages and input prices shift short-run aggregate supply left over time.",
-          "Below potential, falling wage and price pressure shifts short-run aggregate supply right over time.",
-          "Long-run adjustment changes the price level and returns output toward potential without shifting long-run aggregate supply."
+          "Compare short-run equilibrium output with the LRAS position to classify the gap.",
+          "Below potential: wages and input costs adjust downward, shifting SRAS right.",
+          "Above potential: wages and input costs adjust upward, shifting SRAS left.",
+          "Self-adjustment changes SRAS; discretionary stabilization deliberately shifts AD."
         ],
-        "watch": "A common mistake is to attribute every return to potential output to active policy. Self-correction is an endogenous wage-and-price adjustment; stabilization policy is a separate deliberate action.",
-        "worked": "After demand falls from AD2 to AD1, the short-run equilibrium is at Y3, below natural output Y1, with price level P2. High unemployment puts downward pressure on wages, shifting short-run supply from AS1 to AS2. The economy then returns to Y1 along AD1 at the lower price level P1.",
-        "check": "Refer to the graph with LRAS. Which output level is natural output?",
+        "watch": "Do not assume aggregate demand must reverse itself. In the textbook self-correction mechanism, wage and input-price adjustment shifts SRAS along the existing AD curve.",
+        "worked": "After AD falls to AD1, the short-run equilibrium is Y3, left of LRAS at Y1. Elevated unemployment reduces wage and input-cost pressure, shifting SRAS from AS1 to AS2. The economy moves along AD1 to Y1 at the lower price level P1 without discretionary policy.",
+        "check": "Output is above potential and AD is unchanged. Which direction must SRAS move during self-adjustment?",
         "graph": true,
         "calculation": false,
         "difficulty": "Intermediate",
         "time": "5 minutes",
-        "exampleQuestionId": "ECON-SP-MEDIUM-132",
-        "checkQuestionId": "ECON-SP-EASY-40",
-        "workedLabel": "RETURNING OUTPUT TO POTENTIAL",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/long-run-macroeconomic-adjustment/adaslras.webp",
-        "assetMetadata": {
-          "filename": "adaslras.webp",
-          "sourceUrl": "data/question-assets/long-run-macroeconomic-adjustment/adaslras.webp",
-          "sha256": "a9b632d34f6fa7c2a150cdb34d4f95bd907f662994f60dd6ccdec5ae00c53e6e",
-          "imageAlt": "The horizontal axis is real output Y and the vertical axis is the price level. LRAS is vertical at Y1. AD1 and AD2 slope downward, with AD2 to the right of AD1. AS1 and AS2 slope upward, with AS1 above/left of AS2. Dashed guides mark Y3 left of LRAS, Y1 on LRAS, Y2 right of LRAS, and price levels P1, P2, P3. AD1-AS2 is Y1/P1; AD1-AS1 is Y3/P2; AD2-AS2 is Y2/P2; AD2-AS1 is Y1/P3.",
-          "graphDescription": "The horizontal axis is real output Y and the vertical axis is the price level. LRAS is vertical at Y1. AD1 and AD2 slope downward, with AD2 to the right of AD1. AS1 and AS2 slope upward, with AS1 above/left of AS2. Dashed guides mark Y3 left of LRAS, Y1 on LRAS, Y2 right of LRAS, and price levels P1, P2, P3. AD1-AS2 is Y1/P1; AD1-AS1 is Y3/P2; AD2-AS2 is Y2/P2; AD2-AS1 is Y1/P3."
-        }
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "CLOSING A RECESSIONARY GAP",
+        "graphAssetPath": "question-assets/long-run-macroeconomic-adjustment/adaslras.webp",
+        "graphDescription": "LRAS is vertical at Y1. At AD1 and AS1, output Y3 is below potential. A rightward SRAS shift to AS2 restores output Y1 at a lower price level."
       },
       "instructionalEvidence": {
-        "canonicalDefinition": "Trace output gaps and self-correction toward natural output.",
-        "selectedQuestionIds": [
-          "ECON-SP-ELITE-310",
-          "ECON-SP-HARD-217",
-          "PM2D1-LRADJ-MB-003",
-          "ECON-SP-HARD-216",
-          "PM2D1-LRADJ-L-003",
-          "ECON-SP-MEDIUM-132",
-          "ECON-SP-EASY-40"
-        ],
+        "canonicalDefinition": "Trace wage and input-price adjustment that returns output toward potential.",
+        "selectedQuestionIds": [],
         "testedDistinctions": [
-          "adjustment speed",
-          "bridge to stabilization",
-          "choose stabilization response",
-          "classify output gap",
-          "connect output unemployment",
-          "explain long run adjustment",
-          "identify natural output",
-          "inflationary gap self correction"
+          "recessionary gap",
+          "inflationary gap",
+          "wage adjustment",
+          "SRAS self-correction",
+          "policy distinction"
         ],
         "observedMisconceptions": [
-          "Confusing natural output with the highest output shown.",
-          "Ignoring LRAS when judging output gaps.",
-          "Thinking short-run gaps last forever.",
-          "Reversing recessionary and expansionary gaps.",
-          "Assumes aggregate demand must shift back on its own for the economy to return to potential output.",
-          "Ignoring LRAS when judging gaps."
+          "Do not assume aggregate demand must reverse itself. In the textbook self-correction mechanism, wage and input-price adjustment shifts SRAS along the existing AD curve."
         ],
-        "questionsInspected": 49
+        "questionsInspected": 33
       },
       "manualQuality": {
         "normalWrittenEnglish": true,
@@ -10830,22 +10733,10 @@
         "noUnnecessaryAxisRestatement": true,
         "noConclusionWithoutReasoning": true,
         "noInvisiblePointOrCurveReferences": true,
-        "proseRevised": true,
-        "workedExampleSubstantiallyRewritten": true,
-        "coreIdeaStartsDirectly": true,
-        "conceptContaminationDetected": false,
-        "recognitionIsPedagogical": true,
-        "recognitionContainsUnexplainedGraphValues": false,
-        "workedExampleMatchesConcept": true,
-        "workedExampleMatchesVisibleGraph": true,
-        "numericValuesInternallyConsistent": true,
-        "subtitleIsConceptual": true,
         "proseReadsNaturally": true,
-        "coreIdeaEstablishesTopicFirst": true,
-        "coreIdeaContainsPrematureExample": false,
-        "workedExampleLabelIsDescriptive": true,
-        "workedExampleDetailsNotDuplicatedInCoreIdea": true,
-        "subtitleRetiredFromStudentFacingModel": true
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
       }
     },
     {
@@ -12358,6 +12249,1142 @@
         "proseReadsNaturally": true,
         "conceptContaminationDetected": false
       }
+    },
+    {
+      "code": "MACRO-42",
+      "canonicalConceptIds": [
+        "saving-and-investment-identities"
+      ],
+      "title": "Saving, Investment, and National-Saving Identities",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "private saving",
+        "public saving",
+        "national saving",
+        "closed-economy identity",
+        "open-economy identity"
+      ],
+      "content": {
+        "outcome": "Calculate private, public, and national saving in closed and open economies.",
+        "core": "With net taxes T, private saving is Y - T - C and public saving is T - G. National saving is their sum: S = Y - C - G. In a closed economy, S = I. In an open economy, S = I + NCO; because NX = NCO in the course model, S = I + NX. These are aggregate identities, not claims that each saver directly funds one investor.",
+        "recognition": [
+          "Budget surplus means T - G is positive; a deficit makes public saving negative.",
+          "Adding private and public saving cancels T and gives Y - C - G.",
+          "Use S = I only for the closed-economy model.",
+          "In an open economy, saving can finance domestic investment or net capital outflow."
+        ],
+        "watch": "Do not reverse the public-saving sign. T - G is public saving; G - T is the budget deficit. Also state the closed-economy assumption before writing S = I.",
+        "worked": "Let Y = $1,200, T = $150, C = $760, and G = $260. Private saving is $290; public saving is -$110; national saving is $180. If domestic investment is $140, then NCO = S - I = $40. The accounting identity also gives NX = $40.",
+        "check": "Private saving is $220 and public saving is -$50. What is national saving?",
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "6 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "FROM COMPONENTS TO OPEN-ECONOMY SAVING"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Calculate private, public, and national saving in closed and open economies.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "private saving",
+          "public saving",
+          "national saving",
+          "closed-economy identity",
+          "open-economy identity"
+        ],
+        "observedMisconceptions": [
+          "Do not reverse the public-saving sign. T - G is public saving; G - T is the budget deficit. Also state the closed-economy assumption before writing S = I."
+        ],
+        "questionsInspected": 49
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-43",
+      "canonicalConceptIds": [
+        "loanable-funds-equilibrium"
+      ],
+      "title": "Loanable-Funds Equilibrium",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "saving supply",
+        "investment demand",
+        "real rate",
+        "equilibrium quantity",
+        "market adjustment"
+      ],
+      "content": {
+        "outcome": "Find the real interest rate that balances desired saving and investment.",
+        "core": "In the closed-economy loanable-funds model, national saving supplies funds and desired investment demands them. A higher real interest rate encourages saving and makes fewer investment projects profitable, so supply slopes upward and demand downward. Equilibrium occurs where desired saving equals desired investment; the real rate coordinates the two plans.",
+        "recognition": [
+          "Vertical axis: real interest rate; horizontal axis: quantity of loanable funds.",
+          "Saving is the source of supply; investment is an important source of demand.",
+          "Below equilibrium, desired investment exceeds desired saving and the real rate is pushed up.",
+          "Above equilibrium, desired saving exceeds desired investment and the real rate is pushed down."
+        ],
+        "watch": "S = I at equilibrium does not mean desired saving equals desired investment at every possible real rate. The real rate adjusts to reconcile the plans.",
+        "worked": "The upward saving curve S0 and downward investment curve D0 meet at A. The equilibrium quantity is 140 and the real interest rate is 8 percent. A rate below 8 percent would create excess demand for funds; a rate above 8 percent would create excess supply.",
+        "check": "At a real rate below equilibrium, which planned quantity is larger: saving or investment?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "READING THE MARKET-CLEARING POINT",
+        "graphAssetPath": "question-assets/saving-investment-and-loanable-funds/LOANABLE-01.webp",
+        "graphDescription": "Upward saving supply S0 and downward investment demand D0 intersect at quantity 140 and real interest rate 8 percent."
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Find the real interest rate that balances desired saving and investment.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "saving supply",
+          "investment demand",
+          "real rate",
+          "equilibrium quantity",
+          "market adjustment"
+        ],
+        "observedMisconceptions": [
+          "S = I at equilibrium does not mean desired saving equals desired investment at every possible real rate. The real rate adjusts to reconcile the plans."
+        ],
+        "questionsInspected": 32
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-44",
+      "canonicalConceptIds": [
+        "loanable-funds-shifts"
+      ],
+      "title": "Loanable-Funds Shifts",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "supply shifters",
+        "demand shifters",
+        "saving incentives",
+        "investment incentives",
+        "shift versus movement"
+      ],
+      "content": {
+        "outcome": "Distinguish curve shifts from movements and predict the new equilibrium.",
+        "core": "A change in national saving shifts loanable-funds supply; a change in expected investment profitability shifts demand. Saving incentives or higher public saving can shift supply right. A larger budget deficit can shift supply left. Investment tax incentives, technology, or stronger expected sales can shift demand right. The real interest rate itself causes movement along both curves.",
+        "recognition": [
+          "More saving at every real rate shifts supply right; less saving shifts it left.",
+          "More profitable investment projects shift demand right; fewer shift it left.",
+          "Supply right lowers the real rate and raises equilibrium funds.",
+          "Demand right raises both the real rate and equilibrium funds."
+        ],
+        "watch": "Do not shift a curve because the equilibrium real rate changed. First identify the non-rate event; then move along the other unchanged curve to the new equilibrium.",
+        "worked": "A tax incentive makes households more willing to save at every real rate. Supply shifts right from S0 to S1 while investment demand D0 stays fixed. Equilibrium moves from A to B: the real rate falls from 8 to 6 percent and loanable funds rise from 80 to 120.",
+        "check": "New technology raises expected returns on capital. Which curve shifts, and what happens to the real rate?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "A SAVING INCENTIVE",
+        "graphAssetPath": "question-assets/saving-investment-and-loanable-funds/LOANABLE-02.webp",
+        "graphDescription": "Loanable-funds supply shifts right from S0 to S1 along demand D0. The real rate falls from 8 to 6 and quantity rises from 80 to 120."
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Distinguish curve shifts from movements and predict the new equilibrium.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "supply shifters",
+          "demand shifters",
+          "saving incentives",
+          "investment incentives",
+          "shift versus movement"
+        ],
+        "observedMisconceptions": [
+          "Do not shift a curve because the equilibrium real rate changed. First identify the non-rate event; then move along the other unchanged curve to the new equilibrium."
+        ],
+        "questionsInspected": 52
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-45",
+      "canonicalConceptIds": [
+        "crowding-out-and-capital-formation"
+      ],
+      "title": "Crowding Out and Capital Formation",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "budget deficit",
+        "national saving",
+        "real interest rate",
+        "crowding out",
+        "capital accumulation"
+      ],
+      "content": {
+        "outcome": "Trace how government borrowing can reduce investment and future capacity.",
+        "core": "A larger budget deficit reduces public saving and, other things equal, national saving. Loanable-funds supply shifts left, raising the equilibrium real interest rate. Some private investment projects become unprofitable, so investment falls along the demand curve: crowding out. Less investment can slow capital accumulation, productivity growth, and future potential output.",
+        "recognition": [
+          "Begin with deficit up -> public saving down -> national saving down.",
+          "Lower national saving shifts loanable-funds supply left.",
+          "A higher real rate reduces investment through movement along demand.",
+          "The long-run concern is less capital formation, not an automatic collapse of all investment."
+        ],
+        "watch": "Do not say every dollar of deficit eliminates one dollar of investment. The size of crowding out depends on market responses and, in an open economy, international capital flows.",
+        "worked": "The deficit reduces national saving, shifting supply left from S0 to S1. With demand D0 fixed, equilibrium moves from A to B: the real rate rises from 7 to 8 percent and investment falls from 100 to 80. Repeatedly lower investment can leave a smaller future capital stock.",
+        "check": "Why does a higher real interest rate reduce private investment in this model?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "THE COMPLETE CROWDING-OUT CHAIN",
+        "graphAssetPath": "question-assets/saving-investment-and-loanable-funds/LOANABLE-03.webp",
+        "graphDescription": "Loanable-funds supply shifts left from S0 to S1 along D0. The real rate rises from 7 to 8 and equilibrium investment falls from 100 to 80."
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Trace how government borrowing can reduce investment and future capacity.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "budget deficit",
+          "national saving",
+          "real interest rate",
+          "crowding out",
+          "capital accumulation"
+        ],
+        "observedMisconceptions": [
+          "Do not say every dollar of deficit eliminates one dollar of investment. The size of crowding out depends on market responses and, in an open economy, international capital flows."
+        ],
+        "questionsInspected": 27
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-46",
+      "canonicalConceptIds": [
+        "budget-accounting-and-public-saving"
+      ],
+      "title": "Budget Accounting and Public Saving",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "government revenue",
+        "government purchases",
+        "surplus",
+        "deficit",
+        "public-saving sign"
+      ],
+      "content": {
+        "outcome": "Calculate surplus, deficit, and public saving with correct signs.",
+        "core": "In the course saving model, T is net tax revenue and G is government purchases. Public saving is T - G. A positive value is a budget surplus; a negative value is a budget deficit. The deficit is G - T, the opposite sign. When fiscal data use total outlays instead, use the categories stated in that dataset rather than silently mixing definitions.",
+        "recognition": [
+          "Revenue above spending: surplus and positive public saving.",
+          "Spending above revenue: deficit and negative public saving.",
+          "Equal revenue and spending: balanced budget and zero public saving.",
+          "A deficit is a flow measured over a period; debt is an accumulated stock."
+        ],
+        "watch": "Keep signs straight: a $40 deficit means public saving is -$40, not +$40. State whether G means government purchases or the source's broader outlays measure.",
+        "worked": "Net tax revenue is $520 billion and government purchases are $560 billion. Public saving is T - G = -$40 billion. The budget deficit is G - T = +$40 billion. Both statements describe the same imbalance using opposite signs.",
+        "check": "If T = $680 billion and G = $650 billion, what are public saving and the budget balance?",
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Foundational",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "ONE BUDGET, TWO SIGN CONVENTIONS"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Calculate surplus, deficit, and public saving with correct signs.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "government revenue",
+          "government purchases",
+          "surplus",
+          "deficit",
+          "public-saving sign"
+        ],
+        "observedMisconceptions": [
+          "Keep signs straight: a $40 deficit means public saving is -$40, not +$40. State whether G means government purchases or the source's broader outlays measure."
+        ],
+        "questionsInspected": 37
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-47",
+      "canonicalConceptIds": [
+        "deficits-debt-and-government-borrowing"
+      ],
+      "title": "Deficits, Debt, and Government Borrowing",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "deficit versus debt",
+        "government borrowing",
+        "debt accumulation",
+        "interest costs",
+        "conditional consequences"
+      ],
+      "content": {
+        "outcome": "Distinguish annual budget flows from accumulated public debt.",
+        "core": "A budget deficit occurs when government outlays exceed revenues during a period; it is financed by borrowing and tends to add to public debt. A surplus can reduce debt if used for repayment. Debt is the accumulated stock of outstanding borrowing, not the current year's deficit. Borrowing can finance valuable investment or current spending, so its effects depend on use, scale, interest costs, and economic conditions.",
+        "recognition": [
+          "Deficit: one period's negative budget balance; debt: outstanding stock at a date.",
+          "New borrowing generally rises with a deficit and adds to debt.",
+          "Interest payments can absorb future budget resources.",
+          "Lower public saving links deficits to loanable funds and possible crowding out."
+        ],
+        "watch": "Do not call the debt the sum of all past spending or claim all debt is automatically harmful. Debt changes with deficits, surpluses, interest, repayments, and accounting adjustments.",
+        "worked": "Public debt begins at $900 billion. A $120 billion deficit adds borrowing; the next year's $20 billion surplus is used to repay debt. Ignoring other adjustments, debt becomes $900 + $120 - $20 = $1,000 billion. The two annual balances are flows; $1,000 billion is the ending stock.",
+        "check": "Can the debt remain positive in a year with a budget surplus? Explain briefly.",
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "UPDATING THE DEBT STOCK"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Distinguish annual budget flows from accumulated public debt.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "deficit versus debt",
+          "government borrowing",
+          "debt accumulation",
+          "interest costs",
+          "conditional consequences"
+        ],
+        "observedMisconceptions": [
+          "Do not call the debt the sum of all past spending or claim all debt is automatically harmful. Debt changes with deficits, surpluses, interest, repayments, and accounting adjustments."
+        ],
+        "questionsInspected": 28
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-48",
+      "canonicalConceptIds": [
+        "debt-measures-burden-and-fiscal-data"
+      ],
+      "title": "Debt Measures, Debt Burden, and Fiscal Data",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "debt level",
+        "debt-to-GDP",
+        "interest burden",
+        "nominal versus relative",
+        "fiscal-data interpretation"
+      ],
+      "content": {
+        "outcome": "Interpret debt levels, debt-to-GDP ratios, and interest burdens.",
+        "core": "The debt level is a nominal dollar stock; the debt-to-GDP ratio compares that stock with the economy's annual income and productive capacity. Ratios support comparisons across time and economies, but they do not by themselves prove sustainability. Interest rates, economic growth, revenues, primary balances, maturity, and investor confidence also matter at a Principles level.",
+        "recognition": [
+          "Debt-to-GDP = public debt divided by nominal GDP, multiplied by 100 percent.",
+          "Debt can rise while debt-to-GDP falls if nominal GDP grows faster.",
+          "Interest burden can be compared with GDP, revenue, or total outlays.",
+          "Nominal levels answer size questions; ratios answer size-relative-to-capacity questions."
+        ],
+        "watch": "Do not interpret one ratio as a mechanical crisis threshold. Use consistent definitions and dates, then combine the ratio with growth, interest costs, and budget information.",
+        "worked": "Debt rises from $6.0 trillion to $6.6 trillion while nominal GDP rises from $24.0 trillion to $27.5 trillion. Debt-to-GDP moves from 25.0% to 24.0%. The debt level increased, but the economy's nominal scale grew faster, so the relative measure fell.",
+        "check": "Debt is $9 trillion and nominal GDP is $30 trillion. What is the debt-to-GDP ratio?",
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "LEVEL UP, RATIO DOWN"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Interpret debt levels, debt-to-GDP ratios, and interest burdens.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "debt level",
+          "debt-to-GDP",
+          "interest burden",
+          "nominal versus relative",
+          "fiscal-data interpretation"
+        ],
+        "observedMisconceptions": [
+          "Do not interpret one ratio as a mechanical crisis threshold. Use consistent definitions and dates, then combine the ratio with growth, interest costs, and budget information."
+        ],
+        "questionsInspected": 43
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-49",
+      "canonicalConceptIds": [
+        "deposit-creation-and-money-multiplier"
+      ],
+      "title": "Deposit Creation and the Money Multiplier",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "fractional reserves",
+        "repeated redepositing",
+        "reserve ratio",
+        "simple multiplier",
+        "model limitations"
+      ],
+      "content": {
+        "outcome": "Apply the textbook fractional-reserve deposit-creation process.",
+        "core": "In the simple textbook model, banks keep the required fraction of deposits as reserves and lend the rest. When loan proceeds are redeposited, another bank can lend part again. The repeated process creates deposits. The simple money multiplier m = 1 / rr gives the theoretical maximum total deposit expansion per dollar of new reserves under full lending and redepositing.",
+        "recognition": [
+          "Required reserves = reserve ratio x deposits; excess reserves can support new lending.",
+          "A lower reserve ratio produces a larger simple multiplier.",
+          "Each lending round is smaller because a fraction is retained as reserves.",
+          "Currency holding and excess reserves make actual expansion smaller than the maximum."
+        ],
+        "watch": "Do not confuse the multiplier with bank capital or claim that one bank lends the entire multiplied amount. The multiplier summarizes repeated system-wide rounds under restrictive assumptions.",
+        "worked": "With rr = 10%, the simple multiplier is 1 / 0.10 = 10. If $1,000 of new reserves enters the banking system, maximum total deposits are $10,000. Banks collectively retain $1,000 as required reserves and can support up to $9,000 of new loans. Cash holding or excess reserves lowers the result.",
+        "check": "If rr rises from 10% to 20%, what happens to the simple multiplier?",
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "A THEORETICAL MAXIMUM"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Apply the textbook fractional-reserve deposit-creation process.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "fractional reserves",
+          "repeated redepositing",
+          "reserve ratio",
+          "simple multiplier",
+          "model limitations"
+        ],
+        "observedMisconceptions": [
+          "Do not confuse the multiplier with bank capital or claim that one bank lends the entire multiplied amount. The multiplier summarizes repeated system-wide rounds under restrictive assumptions."
+        ],
+        "questionsInspected": 38
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-50",
+      "canonicalConceptIds": [
+        "long-run-aggregate-supply-and-potential-output"
+      ],
+      "title": "Long-Run Aggregate Supply and Potential Output",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "vertical LRAS",
+        "potential output",
+        "productive capacity",
+        "LRAS shifters",
+        "actual versus potential output"
+      ],
+      "content": {
+        "outcome": "Explain vertical LRAS and changes in the economy's productive capacity.",
+        "core": "Long-run aggregate supply is vertical at potential output, the sustainable output level associated with normal resource use and the natural rate of unemployment. In the long run, the price level does not determine real productive capacity. Labor, physical and human capital, natural resources, institutions, and technology or productivity determine LRAS.",
+        "recognition": [
+          "A current-output change is not automatically a change in potential output.",
+          "More labor, capital, resources, or productivity shifts LRAS right.",
+          "Loss of productive resources or persistent lower productivity can shift LRAS left.",
+          "A vertical LRAS means higher prices alone do not create more long-run real output."
+        ],
+        "watch": "Do not shift LRAS because aggregate demand changes. Demand can move actual output away from potential in the short run; productive-capacity changes move the LRAS line.",
+        "worked": "A lasting productivity improvement shifts LRAS from 100 to 115. The graph also shows SRAS shifting right/down. With AD0 unchanged, long-run equilibrium moves from A to B: potential output rises to 115 and the price level falls from 125 to 110. The key LRAS result is higher sustainable real GDP.",
+        "check": "A recession lowers actual output but leaves labor, capital, and technology unchanged. Does LRAS shift?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "PRODUCTIVITY EXPANDS CAPACITY",
+        "graphAssetPath": "question-assets/macroeconomic-equilibrium-and-shocks/LRAS-02.webp",
+        "graphDescription": "Vertical LRAS shifts right from output 100 to 115 after a positive supply-side change; the new long-run equilibrium has higher output."
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Explain vertical LRAS and changes in the economy's productive capacity.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "vertical LRAS",
+          "potential output",
+          "productive capacity",
+          "LRAS shifters",
+          "actual versus potential output"
+        ],
+        "observedMisconceptions": [
+          "Do not shift LRAS because aggregate demand changes. Demand can move actual output away from potential in the short run; productive-capacity changes move the LRAS line."
+        ],
+        "questionsInspected": 15
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-51",
+      "canonicalConceptIds": [
+        "ad-as-equilibrium-and-output-gaps"
+      ],
+      "title": "AD-AS Equilibrium and Output Gaps",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "short-run equilibrium",
+        "long-run equilibrium",
+        "potential output",
+        "recessionary gap",
+        "inflationary gap"
+      ],
+      "content": {
+        "outcome": "Read AD, SRAS, and LRAS together to diagnose short-run output gaps.",
+        "core": "Short-run macroeconomic equilibrium occurs where AD intersects SRAS, determining real GDP and the price level. LRAS marks potential output. If the short-run intersection lies left of LRAS, the economy has a recessionary gap; if it lies right, an inflationary gap. Long-run equilibrium requires AD, SRAS, and LRAS to meet at potential output.",
+        "recognition": [
+          "First locate the active AD-SRAS intersection; then compare its output with LRAS.",
+          "Left of LRAS: recessionary gap and output below potential.",
+          "Right of LRAS: inflationary gap and output above potential.",
+          "At LRAS: output equals potential, though the equilibrium price level can differ across scenarios."
+        ],
+        "watch": "Do not call the rightmost or highest labeled point long-run equilibrium. A point is long-run equilibrium only when its output lies on LRAS and both AD and SRAS pass through it.",
+        "worked": "Point C is initial long-run equilibrium at output 100 and price level 125. AD rises from AD0 to AD1, moving short-run equilibrium to D at output 125 and price level 150: an inflationary gap. Later SRAS shifts left to SRAS1, moving equilibrium to B on LRAS at output 100 and price level 175.",
+        "check": "An AD-SRAS intersection lies left of LRAS. What gap exists, and how does actual output compare with potential?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "SHORT RUN VERSUS LONG RUN",
+        "graphAssetPath": "question-assets/macroeconomic-equilibrium-and-shocks/ADASLRAS-01.webp",
+        "graphDescription": "AD, SRAS, and vertical LRAS are shown together. Point C is long-run equilibrium; D lies right of LRAS; B returns to LRAS after SRAS adjustment."
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Read AD, SRAS, and LRAS together to diagnose short-run output gaps.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "short-run equilibrium",
+          "long-run equilibrium",
+          "potential output",
+          "recessionary gap",
+          "inflationary gap"
+        ],
+        "observedMisconceptions": [
+          "Do not call the rightmost or highest labeled point long-run equilibrium. A point is long-run equilibrium only when its output lies on LRAS and both AD and SRAS pass through it."
+        ],
+        "questionsInspected": 30
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-52",
+      "canonicalConceptIds": [
+        "international-transactions-and-identities"
+      ],
+      "title": "International Transactions and Open-Economy Identities",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "exports and imports",
+        "trade balance",
+        "NCO",
+        "NX equals NCO",
+        "open-economy saving identity"
+      ],
+      "content": {
+        "outcome": "Calculate trade and capital balances and connect NX, NCO, saving, and investment.",
+        "core": "Net exports are exports minus imports: NX = X - M. Positive NX is a trade surplus; negative NX is a trade deficit. Net capital outflow is domestic purchases of foreign assets minus foreign purchases of domestic assets. In the course accounting model, NX = NCO. National saving finances domestic investment and NCO, so S = I + NCO = I + NX.",
+        "recognition": [
+          "Exports add to NX; imports subtract from NX.",
+          "A domestic resident buying a foreign asset raises capital outflow and NCO.",
+          "A foreign resident buying a domestic asset lowers NCO and is a capital inflow.",
+          "If S exceeds I, the difference is positive NCO and positive NX."
+        ],
+        "watch": "Do not import Micro tariff or comparative-advantage analysis into these identities. Also do not call a trade deficit a mathematical error: it corresponds to negative NCO in the accounting model.",
+        "worked": "Exports are $300 billion and imports are $360 billion, so NX = -$60 billion. Residents buy $90 billion of foreign assets while foreigners buy $150 billion of domestic assets, so NCO = $90 - $150 = -$60 billion. If investment is $240 billion, saving is I + NCO = $180 billion.",
+        "check": "National saving is $250 billion and investment is $210 billion. What are NCO and NX?",
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "6 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "MATCHING THE TWO SIDES"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Calculate trade and capital balances and connect NX, NCO, saving, and investment.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "exports and imports",
+          "trade balance",
+          "NCO",
+          "NX equals NCO",
+          "open-economy saving identity"
+        ],
+        "observedMisconceptions": [
+          "Do not import Micro tariff or comparative-advantage analysis into these identities. Also do not call a trade deficit a mathematical error: it corresponds to negative NCO in the accounting model."
+        ],
+        "questionsInspected": 40
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-53",
+      "canonicalConceptIds": [
+        "nominal-exchange-rates"
+      ],
+      "title": "Nominal Exchange Rates and Currency Values",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "quotation units",
+        "currency conversion",
+        "appreciation",
+        "depreciation",
+        "percentage change"
+      ],
+      "content": {
+        "outcome": "Interpret quotations, convert currencies, and classify appreciation or depreciation.",
+        "core": "The nominal exchange rate states how much one currency trades for another. This course uses foreign currency per U.S. dollar for its dollar-market graphs. A higher value means one dollar buys more foreign currency, so the dollar appreciates; a lower value means dollar depreciation. Always write the units before converting or interpreting a percentage change.",
+        "recognition": [
+          "Foreign currency per dollar: multiply dollars by the quoted rate to obtain foreign currency.",
+          "To convert foreign currency back to dollars, divide by foreign currency per dollar.",
+          "A rise from 0.90 to 0.99 foreign units per dollar is a 10% dollar appreciation.",
+          "The reciprocal quotation moves in the opposite direction."
+        ],
+        "watch": "Never say only 'the exchange rate rose.' Name the quotation. A rise in foreign currency per dollar is dollar appreciation, but a rise in dollars per foreign currency means dollar depreciation.",
+        "worked": "At 0.90 euros per U.S. dollar, $200 buys 200 x 0.90 = 180 euros. If the quote rises to 0.99 euros per dollar, the dollar appreciates by (0.99 - 0.90) / 0.90 = 10%. The same $200 then buys 198 euros.",
+        "check": "The quote falls from 1.20 to 1.08 foreign units per dollar. Did the dollar appreciate or depreciate, and by what percent?",
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "UNITS FIRST, THEN ARITHMETIC"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Interpret quotations, convert currencies, and classify appreciation or depreciation.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "quotation units",
+          "currency conversion",
+          "appreciation",
+          "depreciation",
+          "percentage change"
+        ],
+        "observedMisconceptions": [
+          "Never say only 'the exchange rate rose.' Name the quotation. A rise in foreign currency per dollar is dollar appreciation, but a rise in dollars per foreign currency means dollar depreciation."
+        ],
+        "questionsInspected": 40
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-54",
+      "canonicalConceptIds": [
+        "real-exchange-rates-and-purchasing-power"
+      ],
+      "title": "Real Exchange Rates and Purchasing Power",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "nominal versus real",
+        "real-rate formula",
+        "real appreciation",
+        "PPP",
+        "inflation differentials"
+      ],
+      "content": {
+        "outcome": "Calculate the real exchange rate and use PPP as a long-run benchmark.",
+        "core": "Let e be foreign currency per domestic currency, P the domestic price level, and P* the foreign price level. The course convention is epsilon = e x P / P*. A higher epsilon is a real appreciation: domestic goods are relatively more expensive. Purchasing-power parity suggests epsilon tends toward 1 when comparable traded goods can be arbitraged, but transport costs, trade barriers, nontraded goods, and market frictions prevent exact short-run equality.",
+        "recognition": [
+          "Nominal e compares currencies; real epsilon compares basket prices after conversion.",
+          "A higher e or P raises epsilon; a higher P* lowers epsilon, other things equal.",
+          "Real appreciation tends to reduce exports and raise imports.",
+          "Relative PPP links currency changes to inflation differentials over longer horizons."
+        ],
+        "watch": "Do not invert the formula by importing another textbook's quotation. Write e's units first. Here e is foreign currency per domestic currency, so epsilon = eP/P*.",
+        "worked": "A U.S. basket costs $50, a comparable foreign basket costs 40 foreign units, and e = 0.80 foreign units per dollar. Then epsilon = 0.80 x 50 / 40 = 1.00. If the U.S. price rises to $55 with e and P* fixed, epsilon becomes 1.10: a 10% real appreciation.",
+        "check": "With e and P fixed, foreign prices rise. Does epsilon rise or fall under the course formula?",
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "6 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "CONVERTING TWO BASKETS"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Calculate the real exchange rate and use PPP as a long-run benchmark.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "nominal versus real",
+          "real-rate formula",
+          "real appreciation",
+          "PPP",
+          "inflation differentials"
+        ],
+        "observedMisconceptions": [
+          "Do not invert the formula by importing another textbook's quotation. Write e's units first. Here e is foreign currency per domestic currency, so epsilon = eP/P*."
+        ],
+        "questionsInspected": 40
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-55",
+      "canonicalConceptIds": [
+        "capital-flows-and-net-capital-outflow"
+      ],
+      "title": "Capital Flows and Net Capital Outflow",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "foreign asset purchases",
+        "capital inflow",
+        "capital outflow",
+        "NCO calculation",
+        "real-rate effect"
+      ],
+      "content": {
+        "outcome": "Classify international asset purchases and trace interest-rate effects on NCO.",
+        "core": "Net capital outflow equals domestic residents' purchases of foreign assets minus foreign residents' purchases of domestic assets. Positive NCO is net capital outflow; negative NCO is net capital inflow. Capital tends to move toward more attractive risk-adjusted returns. In the textbook model, a higher domestic real interest rate lowers NCO and therefore reduces the supply of dollars in the foreign-exchange market.",
+        "recognition": [
+          "A U.S. resident buying a foreign bond raises U.S. NCO.",
+          "A foreign resident buying a U.S. asset lowers U.S. NCO.",
+          "Higher domestic real returns attract inflow and discourage outflow, lowering NCO.",
+          "NCO supplies dollars to the FX market as residents acquire foreign assets."
+        ],
+        "watch": "NCO and NX describe different transactions: assets versus goods and services. They are equal as an accounting relationship in the course model, not because every asset purchase is an export.",
+        "worked": "U.S. residents buy $140 billion of foreign assets; foreigners buy $90 billion of U.S. assets. U.S. NCO is $140 - $90 = +$50 billion, a net outflow. That positive NCO supplies dollars in exchange for foreign currency and corresponds to NX of +$50 billion.",
+        "check": "Foreign purchases of U.S. assets rise while U.S. foreign-asset purchases are fixed. What happens to U.S. NCO?",
+        "graph": false,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "CLASSIFY, THEN NET"
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Classify international asset purchases and trace interest-rate effects on NCO.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "foreign asset purchases",
+          "capital inflow",
+          "capital outflow",
+          "NCO calculation",
+          "real-rate effect"
+        ],
+        "observedMisconceptions": [
+          "NCO and NX describe different transactions: assets versus goods and services. They are equal as an accounting relationship in the course model, not because every asset purchase is an export."
+        ],
+        "questionsInspected": 40
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": null,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-56",
+      "canonicalConceptIds": [
+        "foreign-exchange-market"
+      ],
+      "title": "Foreign-Exchange Market Equilibrium",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "dollar demand",
+        "dollar supply",
+        "equilibrium",
+        "appreciation and depreciation",
+        "simultaneous shifts"
+      ],
+      "content": {
+        "outcome": "Analyze dollar demand, dollar supply, and exchange-rate movements.",
+        "core": "The foreign-exchange market determines the exchange rate and quantity of dollars exchanged. The course graphs place foreign currency per U.S. dollar vertically, so a higher value is dollar appreciation. Demand for dollars slopes downward; the core graph family uses upward-sloping supply. Foreign demand for U.S. goods or assets can raise dollar demand, while stronger U.S. demand for foreign goods or assets can raise dollar supply.",
+        "recognition": [
+          "Demand right raises the exchange rate and quantity: dollar appreciation.",
+          "Supply right lowers the exchange rate and raises quantity: dollar depreciation.",
+          "Simultaneous shifts can make one equilibrium outcome indeterminate.",
+          "Read the axis convention before translating up/down into appreciation/depreciation."
+        ],
+        "watch": "Do not use an inverse quotation. On these graphs, moving upward means more foreign currency per dollar and therefore appreciation of the U.S. dollar.",
+        "worked": "Dollar demand shifts from D0 to D1 while S0 remains fixed. Equilibrium moves from A to B: quantity rises from 100 to 150 and the exchange rate rises from 1.0 to 1.2 foreign units per dollar. The higher quote means the U.S. dollar appreciates.",
+        "check": "Dollar supply shifts right while demand stays fixed. What happens to the dollar and to quantity exchanged?",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Intermediate",
+        "time": "5 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "A RIGHTWARD DEMAND SHIFT",
+        "graphAssetPath": "question-assets/foreign-exchange-market/FX-02.webp",
+        "graphDescription": "Foreign currency per U.S. dollar is vertical and quantity of dollars horizontal. Demand shifts right from D0 to D1 along S0, raising the rate from 1.0 to 1.2 and quantity from 100 to 150."
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Analyze dollar demand, dollar supply, and exchange-rate movements.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "dollar demand",
+          "dollar supply",
+          "equilibrium",
+          "appreciation and depreciation",
+          "simultaneous shifts"
+        ],
+        "observedMisconceptions": [
+          "Do not use an inverse quotation. On these graphs, moving upward means more foreign currency per dollar and therefore appreciation of the U.S. dollar."
+        ],
+        "questionsInspected": 40
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
+    },
+    {
+      "code": "MACRO-57",
+      "canonicalConceptIds": [
+        "open-economy-policy-transmission"
+      ],
+      "title": "Open-Economy Policy and Macroeconomic Transmission",
+      "discipline": "macro",
+      "disciplineLabel": "MACROECONOMICS",
+      "focusTerms": [
+        "fiscal policy",
+        "real interest rate",
+        "NCO",
+        "FX supply",
+        "exchange rate and NX",
+        "aggregate demand"
+      ],
+      "content": {
+        "outcome": "Trace fiscal and financial shocks through saving, NCO, FX, NX, and AD.",
+        "core": "Open-economy policy analysis connects several markets. A larger budget deficit lowers public and national saving, raises the real interest rate, reduces investment and NCO, and shifts the supply of dollars left. With dollar demand fixed, the dollar appreciates and net exports fall. The NX decline and investment crowding out can partly offset the direct aggregate-demand effect of higher government purchases.",
+        "recognition": [
+          "Write the chain market by market; do not skip from policy directly to the exchange rate.",
+          "Higher domestic real rates lower NCO by making domestic assets relatively attractive.",
+          "Lower NCO means fewer dollars supplied in the FX market.",
+          "Dollar appreciation makes U.S. goods relatively dearer and reduces NX."
+        ],
+        "watch": "Do not claim a fixed quantitative offset or that every fiscal expansion changes output by the same amount. The model identifies directions; magnitudes depend on responses across markets.",
+        "worked": "Suppose a deficit raises the real rate and lowers NCO. In the graph, dollar supply falls from NCO0 = 100 to NCO1 = 50. Equilibrium moves from A to B, and the exchange rate rises from 1.0 to 1.5 foreign units per dollar. Dollar appreciation reduces NX; higher rates also crowd out some investment.",
+        "check": "Capital flight raises NCO. Trace the likely directions of dollar supply, the dollar's value, and NX.",
+        "graph": true,
+        "calculation": true,
+        "difficulty": "Advanced",
+        "time": "6 minutes",
+        "exampleQuestionId": null,
+        "checkQuestionId": null,
+        "workedLabel": "FROM A DEFICIT TO NET EXPORTS",
+        "graphAssetPath": "question-assets/foreign-exchange-market/FX-09.webp",
+        "graphDescription": "With D0 = NX0 fixed, vertical dollar supply shifts left from S0 = NCO0 at 100 to S1 = NCO1 at 50. The foreign-currency-per-dollar rate rises from 1.0 to 1.5."
+      },
+      "instructionalEvidence": {
+        "canonicalDefinition": "Trace fiscal and financial shocks through saving, NCO, FX, NX, and AD.",
+        "selectedQuestionIds": [],
+        "testedDistinctions": [
+          "fiscal policy",
+          "real interest rate",
+          "NCO",
+          "FX supply",
+          "exchange rate and NX",
+          "aggregate demand"
+        ],
+        "observedMisconceptions": [
+          "Do not claim a fixed quantitative offset or that every fiscal expansion changes output by the same amount. The model identifies directions; magnitudes depend on responses across markets."
+        ],
+        "questionsInspected": 40
+      },
+      "manualQuality": {
+        "normalWrittenEnglish": true,
+        "economicsConceptuallyClear": true,
+        "coreIdeaCoherent": true,
+        "recognitionCluesCompleteAndUseful": true,
+        "watchOutNaturalAndEvidenceBased": true,
+        "workedExampleTrulyWorked": true,
+        "workedExampleHasSetupReasoningConclusion": true,
+        "graphExplanationMatchesVisibleGraph": true,
+        "checkYourselfAligned": true,
+        "noStitchedFragments": true,
+        "noUnnecessaryAxisRestatement": true,
+        "noConclusionWithoutReasoning": true,
+        "noInvisiblePointOrCurveReferences": true,
+        "proseReadsNaturally": true,
+        "conceptContaminationDetected": false,
+        "formulaAndSignConventionChecked": true,
+        "humanReviewedForPhaseMacroResourceCompletion": true
+      }
     }
   ],
   "conceptDispositionOverrides": {
@@ -12365,71 +13392,6 @@
       "disposition": "HIDDEN_SUPPLEMENTAL",
       "discipline": "micro",
       "reason": "Legacy compatibility parent retained for migrated recipes and residual records; active child concepts own dedicated review sheets."
-    },
-    "saving-and-investment-identities": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
-    },
-    "loanable-funds-equilibrium": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
-    },
-    "loanable-funds-shifts": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
-    },
-    "crowding-out-and-capital-formation": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
-    },
-    "budget-accounting-and-public-saving": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
-    },
-    "deficits-debt-and-government-borrowing": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
-    },
-    "debt-measures-burden-and-fiscal-data": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
-    },
-    "international-transactions-and-identities": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
-    },
-    "nominal-exchange-rates": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
-    },
-    "real-exchange-rates-and-purchasing-power": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
-    },
-    "capital-flows-and-net-capital-outflow": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
-    },
-    "foreign-exchange-market": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
-    },
-    "open-economy-policy-transmission": {
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "discipline": "macro",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
     }
   }
 }

@@ -1,0 +1,445 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseMacroResourceCompletion-v1",
+  "generatedAt": "2026-09-04T20:00:00-04:00",
+  "verdict": "PASS",
+  "summary": {
+    "checks": 28,
+    "passed": 28,
+    "failed": 0,
+    "ordinaryMacroChildren": 57,
+    "dedicatedMacroReviewPdfs": 57,
+    "revisedPdfs": 4,
+    "createdPdfs": 16,
+    "macroQuestions": 3110,
+    "ordinaryMacroQuestions": 2998,
+    "hiddenSupplementQuestions": 112
+  },
+  "checks": [
+    {
+      "name": "Exactly 57 ordinary selectable Macro child concepts exist",
+      "status": "PASS",
+      "detail": "57"
+    },
+    {
+      "name": "All eleven dedicated Macro parent families exist",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Exactly 57 Macro review PDFs are registered",
+      "status": "PASS",
+      "detail": "57/57"
+    },
+    {
+      "name": "Every ordinary Macro child has one dedicated mapping",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Every affected concept resolves to the intended dedicated code",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "The six open-economy NO_SHEET gaps are gone",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No ordinary Macro child retains a NO_SHEET or missing disposition",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MACRO-20, 34, 35, and 36 now have single-concept boundaries",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "MACRO-42 through MACRO-57 exist in the source and manifest",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No duplicate resource IDs exist",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Every mapped Macro PDF exists, opens, and is one selectable-text page",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Build and public Macro PDF copies are byte-identical",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All Concept Review relative PDF paths are simple and valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All 20 final PDFs have recorded render and visual QA passes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All 20 sheets have an exactly-once human content-review disposition",
+      "status": "PASS",
+      "detail": "20"
+    },
+    {
+      "name": "Every reused graph asset exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Macro question counts remain 3,110 total, 2,998 ordinary, and 112 hidden",
+      "status": "PASS",
+      "detail": "3110/2998/112"
+    },
+    {
+      "name": "Composer library and all question fingerprints are unchanged",
+      "status": "PASS",
+      "detail": "4edbfa1c0747a722c8b4d3fb09f19385da8b5013538dcfb28f31c33df5ae6aad -> 4edbfa1c0747a722c8b4d3fb09f19385da8b5013538dcfb28f31c33df5ae6aad"
+    },
+    {
+      "name": "The 112-question hidden Advanced Macro Checkpoint Supplement is unchanged",
+      "status": "PASS",
+      "detail": "112/112"
+    },
+    {
+      "name": "Micro resource source and PDFs are unchanged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Existing graph assets are unchanged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Full 58-selection Macro composition passes all requested modes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Full-Macro answer verification passes",
+      "status": "PASS",
+      "detail": "0 issues"
+    },
+    {
+      "name": "Concept Review runtime resolves all 57 ordinary Macro children",
+      "status": "PASS",
+      "detail": "57 review codes"
+    },
+    {
+      "name": "All full-Macro graph assets still embed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Full-Macro HTML and ZIP package generation passes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Publisher and manifest builder are content-idempotent",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "Existing end-to-end Concept Review integration suite passes",
+      "status": "PASS",
+      "detail": "12/12 cases"
+    }
+  ],
+  "protectedFingerprints": {
+    "composerLibrary": {
+      "before": "4edbfa1c0747a722c8b4d3fb09f19385da8b5013538dcfb28f31c33df5ae6aad",
+      "after": "4edbfa1c0747a722c8b4d3fb09f19385da8b5013538dcfb28f31c33df5ae6aad",
+      "unchanged": true
+    },
+    "hiddenSupplement": {
+      "before": "f78dba6a2b795034eca242ec7253e9166a1a194b5e6b23456e3c66a9fe76364c",
+      "after": "f78dba6a2b795034eca242ec7253e9166a1a194b5e6b23456e3c66a9fe76364c",
+      "unchanged": true,
+      "questionCount": 112
+    },
+    "microReviewSource": {
+      "before": "8ee435e65e77458d6cf29493769bab2de511ce040d423858beb9d3bf5e02d94b",
+      "after": "8ee435e65e77458d6cf29493769bab2de511ce040d423858beb9d3bf5e02d94b",
+      "unchanged": true
+    },
+    "microPdfDiffs": [],
+    "questionAssetDiffs": []
+  },
+  "runtime": {
+    "requestedConcepts": 57,
+    "resolvedReviewCodes": [
+      "MACRO-01",
+      "MACRO-02",
+      "MACRO-03",
+      "MACRO-04",
+      "MACRO-05",
+      "MACRO-06",
+      "MACRO-07",
+      "MACRO-08",
+      "MACRO-09",
+      "MACRO-10",
+      "MACRO-11",
+      "MACRO-12",
+      "MACRO-13",
+      "MACRO-14",
+      "MACRO-15",
+      "MACRO-16",
+      "MACRO-17",
+      "MACRO-18",
+      "MACRO-19",
+      "MACRO-20",
+      "MACRO-21",
+      "MACRO-22",
+      "MACRO-23",
+      "MACRO-24",
+      "MACRO-25",
+      "MACRO-26",
+      "MACRO-27",
+      "MACRO-28",
+      "MACRO-29",
+      "MACRO-30",
+      "MACRO-31",
+      "MACRO-32",
+      "MACRO-33",
+      "MACRO-34",
+      "MACRO-35",
+      "MACRO-36",
+      "MACRO-37",
+      "MACRO-38",
+      "MACRO-39",
+      "MACRO-40",
+      "MACRO-41",
+      "MACRO-42",
+      "MACRO-43",
+      "MACRO-44",
+      "MACRO-45",
+      "MACRO-46",
+      "MACRO-47",
+      "MACRO-48",
+      "MACRO-49",
+      "MACRO-50",
+      "MACRO-51",
+      "MACRO-52",
+      "MACRO-53",
+      "MACRO-54",
+      "MACRO-55",
+      "MACRO-56",
+      "MACRO-57"
+    ],
+    "errors": []
+  },
+  "composer": {
+    "errors": [],
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 415
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 455
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 428
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 173
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 175
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 181
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 227
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 145
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 415
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 455
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 428
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 227
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 145
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 415
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 455
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 428
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 227
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 145
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 353
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 163
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 415
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 455
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 428
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 173
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 175
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 181
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 227
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 145
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ],
+    "answerVerification": {
+      "ok": true,
+      "questionCount": 3108,
+      "issues": []
+    },
+    "embeddedQuestionAssets": 69
+  },
+  "package": {
+    "indexHtml": "validation_artifacts/macro_resource_completion/generated_packages/principles-macro/index.html",
+    "zip": "validation_artifacts/macro_resource_completion/generated_packages/principles-macro/principles-macro-resource-completion.zip",
+    "zipBytes": 5311497,
+    "zipSha256": "59404588d0c30f4c65b8161dbbeef64c3bfbbdbfc4f66bf3ff501b5a481813f2"
+  }
+}

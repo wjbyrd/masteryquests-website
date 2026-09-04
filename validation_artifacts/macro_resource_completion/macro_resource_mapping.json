@@ -1,0 +1,604 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseMacroResourceCompletion-v1",
+  "generatedAt": "2026-09-04T20:00:00-04:00",
+  "ordinaryMacroChildCount": 57,
+  "dedicatedMacroReviewCount": 57,
+  "affectedMapping": [
+    {
+      "conceptId": "bank-balance-sheets-reserves-and-capital",
+      "code": "MACRO-20"
+    },
+    {
+      "conceptId": "short-run-aggregate-supply",
+      "code": "MACRO-34"
+    },
+    {
+      "conceptId": "demand-and-supply-shocks",
+      "code": "MACRO-35"
+    },
+    {
+      "conceptId": "long-run-macroeconomic-self-adjustment",
+      "code": "MACRO-36"
+    },
+    {
+      "conceptId": "saving-and-investment-identities",
+      "code": "MACRO-42"
+    },
+    {
+      "conceptId": "loanable-funds-equilibrium",
+      "code": "MACRO-43"
+    },
+    {
+      "conceptId": "loanable-funds-shifts",
+      "code": "MACRO-44"
+    },
+    {
+      "conceptId": "crowding-out-and-capital-formation",
+      "code": "MACRO-45"
+    },
+    {
+      "conceptId": "budget-accounting-and-public-saving",
+      "code": "MACRO-46"
+    },
+    {
+      "conceptId": "deficits-debt-and-government-borrowing",
+      "code": "MACRO-47"
+    },
+    {
+      "conceptId": "debt-measures-burden-and-fiscal-data",
+      "code": "MACRO-48"
+    },
+    {
+      "conceptId": "deposit-creation-and-money-multiplier",
+      "code": "MACRO-49"
+    },
+    {
+      "conceptId": "long-run-aggregate-supply-and-potential-output",
+      "code": "MACRO-50"
+    },
+    {
+      "conceptId": "ad-as-equilibrium-and-output-gaps",
+      "code": "MACRO-51"
+    },
+    {
+      "conceptId": "international-transactions-and-identities",
+      "code": "MACRO-52"
+    },
+    {
+      "conceptId": "nominal-exchange-rates",
+      "code": "MACRO-53"
+    },
+    {
+      "conceptId": "real-exchange-rates-and-purchasing-power",
+      "code": "MACRO-54"
+    },
+    {
+      "conceptId": "capital-flows-and-net-capital-outflow",
+      "code": "MACRO-55"
+    },
+    {
+      "conceptId": "foreign-exchange-market",
+      "code": "MACRO-56"
+    },
+    {
+      "conceptId": "open-economy-policy-transmission",
+      "code": "MACRO-57"
+    }
+  ],
+  "fullMapping": [
+    {
+      "conceptId": "gdp-measurement",
+      "displayName": "GDP Measurement",
+      "reviewCodes": [
+        "MACRO-01"
+      ],
+      "primaryReviewCode": "MACRO-01",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "gdp-components",
+      "displayName": "GDP Components",
+      "reviewCodes": [
+        "MACRO-02"
+      ],
+      "primaryReviewCode": "MACRO-02",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "real-versus-nominal-gdp",
+      "displayName": "Real versus Nominal GDP",
+      "reviewCodes": [
+        "MACRO-03"
+      ],
+      "primaryReviewCode": "MACRO-03",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "limits-of-gdp",
+      "displayName": "Limits of GDP",
+      "reviewCodes": [
+        "MACRO-04"
+      ],
+      "primaryReviewCode": "MACRO-04",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "cpi-and-inflation-measurement",
+      "displayName": "CPI and Inflation Measurement",
+      "reviewCodes": [
+        "MACRO-05"
+      ],
+      "primaryReviewCode": "MACRO-05",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "cpi-bias",
+      "displayName": "CPI Bias",
+      "reviewCodes": [
+        "MACRO-06"
+      ],
+      "primaryReviewCode": "MACRO-06",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "cpi-versus-gdp-deflator",
+      "displayName": "CPI versus GDP Deflator",
+      "reviewCodes": [
+        "MACRO-07"
+      ],
+      "primaryReviewCode": "MACRO-07",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "indexing-and-real-values",
+      "displayName": "Indexing and Real Values",
+      "reviewCodes": [
+        "MACRO-08"
+      ],
+      "primaryReviewCode": "MACRO-08",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "real-versus-nominal-interest-rates",
+      "displayName": "Real versus Nominal Interest Rates",
+      "reviewCodes": [
+        "MACRO-09"
+      ],
+      "primaryReviewCode": "MACRO-09",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "inflation-costs",
+      "displayName": "Costs of Inflation",
+      "reviewCodes": [
+        "MACRO-26"
+      ],
+      "primaryReviewCode": "MACRO-26",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "living-standards-and-growth",
+      "displayName": "Living Standards and Growth",
+      "reviewCodes": [
+        "MACRO-10"
+      ],
+      "primaryReviewCode": "MACRO-10",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "productivity-measurement",
+      "displayName": "Productivity Measurement",
+      "reviewCodes": [
+        "MACRO-11"
+      ],
+      "primaryReviewCode": "MACRO-11",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "sources-of-productivity",
+      "displayName": "Sources of Productivity",
+      "reviewCodes": [
+        "MACRO-12"
+      ],
+      "primaryReviewCode": "MACRO-12",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "economic-growth-policy",
+      "displayName": "Economic Growth Policy",
+      "reviewCodes": [
+        "MACRO-13"
+      ],
+      "primaryReviewCode": "MACRO-13",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "unemployment-measurement",
+      "displayName": "Unemployment Measurement",
+      "reviewCodes": [
+        "MACRO-14"
+      ],
+      "primaryReviewCode": "MACRO-14",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "unemployment-types",
+      "displayName": "Types of Unemployment",
+      "reviewCodes": [
+        "MACRO-15"
+      ],
+      "primaryReviewCode": "MACRO-15",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "labor-market-institutions",
+      "displayName": "Labor-Market Institutions",
+      "reviewCodes": [
+        "MACRO-16"
+      ],
+      "primaryReviewCode": "MACRO-16",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "natural-rate-of-unemployment",
+      "displayName": "Natural Rate of Unemployment",
+      "reviewCodes": [
+        "MACRO-17"
+      ],
+      "primaryReviewCode": "MACRO-17",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "saving-and-investment-identities",
+      "displayName": "Saving, Investment, and National-Saving Identities",
+      "reviewCodes": [
+        "MACRO-42"
+      ],
+      "primaryReviewCode": "MACRO-42",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "loanable-funds-equilibrium",
+      "displayName": "Loanable-Funds Equilibrium",
+      "reviewCodes": [
+        "MACRO-43"
+      ],
+      "primaryReviewCode": "MACRO-43",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "loanable-funds-shifts",
+      "displayName": "Loanable-Funds Shifts",
+      "reviewCodes": [
+        "MACRO-44"
+      ],
+      "primaryReviewCode": "MACRO-44",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "crowding-out-and-capital-formation",
+      "displayName": "Crowding Out and Capital Formation",
+      "reviewCodes": [
+        "MACRO-45"
+      ],
+      "primaryReviewCode": "MACRO-45",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "budget-accounting-and-public-saving",
+      "displayName": "Budget Accounting and Public Saving",
+      "reviewCodes": [
+        "MACRO-46"
+      ],
+      "primaryReviewCode": "MACRO-46",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "deficits-debt-and-government-borrowing",
+      "displayName": "Deficits, Debt, and Government Borrowing",
+      "reviewCodes": [
+        "MACRO-47"
+      ],
+      "primaryReviewCode": "MACRO-47",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "debt-measures-burden-and-fiscal-data",
+      "displayName": "Debt Measures, Debt Burden, and Fiscal Data",
+      "reviewCodes": [
+        "MACRO-48"
+      ],
+      "primaryReviewCode": "MACRO-48",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "money-functions-and-measures",
+      "displayName": "Money Functions and Measures",
+      "reviewCodes": [
+        "MACRO-18"
+      ],
+      "primaryReviewCode": "MACRO-18",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "central-bank-and-federal-reserve",
+      "displayName": "Central Banking and the Federal Reserve",
+      "reviewCodes": [
+        "MACRO-19"
+      ],
+      "primaryReviewCode": "MACRO-19",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "bank-balance-sheets-reserves-and-capital",
+      "displayName": "Bank Balance Sheets, Reserves, and Capital",
+      "reviewCodes": [
+        "MACRO-20"
+      ],
+      "primaryReviewCode": "MACRO-20",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "deposit-creation-and-money-multiplier",
+      "displayName": "Deposit Creation and the Money Multiplier",
+      "reviewCodes": [
+        "MACRO-49"
+      ],
+      "primaryReviewCode": "MACRO-49",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "monetary-policy-tools",
+      "displayName": "Monetary-Policy Tools",
+      "reviewCodes": [
+        "MACRO-21"
+      ],
+      "primaryReviewCode": "MACRO-21",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "monetary-control-limits",
+      "displayName": "Limits of Monetary Control",
+      "reviewCodes": [
+        "MACRO-22"
+      ],
+      "primaryReviewCode": "MACRO-22",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "quantity-theory-of-money",
+      "displayName": "Quantity Theory of Money",
+      "reviewCodes": [
+        "MACRO-23"
+      ],
+      "primaryReviewCode": "MACRO-23",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "monetary-neutrality",
+      "displayName": "Monetary Neutrality",
+      "reviewCodes": [
+        "MACRO-24"
+      ],
+      "primaryReviewCode": "MACRO-24",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "fisher-effect",
+      "displayName": "Fisher Effect",
+      "reviewCodes": [
+        "MACRO-25"
+      ],
+      "primaryReviewCode": "MACRO-25",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "inflation-tax-and-deflation",
+      "displayName": "Inflation Tax and Deflation",
+      "reviewCodes": [
+        "MACRO-27"
+      ],
+      "primaryReviewCode": "MACRO-27",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "aggregate-demand",
+      "displayName": "Aggregate Demand",
+      "reviewCodes": [
+        "MACRO-33"
+      ],
+      "primaryReviewCode": "MACRO-33",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "short-run-aggregate-supply",
+      "displayName": "Short-Run Aggregate Supply",
+      "reviewCodes": [
+        "MACRO-34"
+      ],
+      "primaryReviewCode": "MACRO-34",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "long-run-aggregate-supply-and-potential-output",
+      "displayName": "Long-Run Aggregate Supply and Potential Output",
+      "reviewCodes": [
+        "MACRO-50"
+      ],
+      "primaryReviewCode": "MACRO-50",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "ad-as-equilibrium-and-output-gaps",
+      "displayName": "AD-AS Equilibrium and Output Gaps",
+      "reviewCodes": [
+        "MACRO-51"
+      ],
+      "primaryReviewCode": "MACRO-51",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "demand-and-supply-shocks",
+      "displayName": "Demand and Supply Shocks",
+      "reviewCodes": [
+        "MACRO-35"
+      ],
+      "primaryReviewCode": "MACRO-35",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "long-run-macroeconomic-self-adjustment",
+      "displayName": "Long-Run Macroeconomic Self-Adjustment",
+      "reviewCodes": [
+        "MACRO-36"
+      ],
+      "primaryReviewCode": "MACRO-36",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "displayName": "Liquidity Preference and the Money Market",
+      "reviewCodes": [
+        "MACRO-28"
+      ],
+      "primaryReviewCode": "MACRO-28",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "displayName": "Monetary-Policy Transmission",
+      "reviewCodes": [
+        "MACRO-29"
+      ],
+      "primaryReviewCode": "MACRO-29",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "fiscal-policy-and-aggregate-demand",
+      "displayName": "Fiscal Policy and Aggregate Demand",
+      "reviewCodes": [
+        "MACRO-30"
+      ],
+      "primaryReviewCode": "MACRO-30",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "fiscal-multipliers-and-crowding-out",
+      "displayName": "Fiscal Multipliers and Crowding Out",
+      "reviewCodes": [
+        "MACRO-31"
+      ],
+      "primaryReviewCode": "MACRO-31",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "stabilization-policy",
+      "displayName": "Stabilization Policy",
+      "reviewCodes": [
+        "MACRO-32"
+      ],
+      "primaryReviewCode": "MACRO-32",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "international-transactions-and-identities",
+      "displayName": "International Transactions and Open-Economy Identities",
+      "reviewCodes": [
+        "MACRO-52"
+      ],
+      "primaryReviewCode": "MACRO-52",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "nominal-exchange-rates",
+      "displayName": "Nominal Exchange Rates and Currency Values",
+      "reviewCodes": [
+        "MACRO-53"
+      ],
+      "primaryReviewCode": "MACRO-53",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "real-exchange-rates-and-purchasing-power",
+      "displayName": "Real Exchange Rates and Purchasing Power",
+      "reviewCodes": [
+        "MACRO-54"
+      ],
+      "primaryReviewCode": "MACRO-54",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "capital-flows-and-net-capital-outflow",
+      "displayName": "Capital Flows and Net Capital Outflow",
+      "reviewCodes": [
+        "MACRO-55"
+      ],
+      "primaryReviewCode": "MACRO-55",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "foreign-exchange-market",
+      "displayName": "Foreign-Exchange Market Equilibrium",
+      "reviewCodes": [
+        "MACRO-56"
+      ],
+      "primaryReviewCode": "MACRO-56",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "open-economy-policy-transmission",
+      "displayName": "Open-Economy Policy and Macroeconomic Transmission",
+      "reviewCodes": [
+        "MACRO-57"
+      ],
+      "primaryReviewCode": "MACRO-57",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "short-run-phillips-curve",
+      "displayName": "Short-Run Phillips Curve",
+      "reviewCodes": [
+        "MACRO-37"
+      ],
+      "primaryReviewCode": "MACRO-37",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "long-run-phillips-curve",
+      "displayName": "Long-Run Phillips Curve",
+      "reviewCodes": [
+        "MACRO-38"
+      ],
+      "primaryReviewCode": "MACRO-38",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "phillips-curve-expectations",
+      "displayName": "Phillips-Curve Expectations",
+      "reviewCodes": [
+        "MACRO-39"
+      ],
+      "primaryReviewCode": "MACRO-39",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "disinflation-and-policy",
+      "displayName": "Disinflation and Policy",
+      "reviewCodes": [
+        "MACRO-40"
+      ],
+      "primaryReviewCode": "MACRO-40",
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "sacrifice-ratio",
+      "displayName": "Sacrifice Ratio",
+      "reviewCodes": [
+        "MACRO-41"
+      ],
+      "primaryReviewCode": "MACRO-41",
+      "disposition": "REVIEW_SHEET"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseMacroResourceCompletion-v1",
+  "verifiedAt": "2026-09-04T20:00:00-04:00",
+  "publisher": "build/faculty-build-composer/tools/complete_macro_concept_reviews.py --publish",
+  "manifestBuilder": "build/faculty-build-composer/tools/build_concept_review_manifest.py",
+  "filesChecked": 44,
+  "idempotent": true,
+  "changedFiles": [],
+  "scope": "concept_review_source.json, concept_review_validation.json, manifest.json, concept_review_integration_audit.json, and both copies of all 20 new or revised PDFs"
+}

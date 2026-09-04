@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-01T12:00:00.000Z",
+  "generatedAt": "2026-09-04T20:00:00-04:00",
   "schemaVersion": "1.0.0",
   "sourceLibrary": {
     "countByDiscipline": {
       "general": 26,
-      "macro": 41,
+      "macro": 57,
       "micro": 68
     },
-    "manifestSha256": "17ea9e585ed327a9befd6688486fd066600817f5e0fa2339972e66daf671af76",
-    "pdfCount": 135,
-    "totalPdfBytes": 65131021
+    "manifestSha256": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f",
+    "pdfCount": 151,
+    "totalPdfBytes": 71131227
   },
   "status": "PASS",
   "testCases": [
@@ -356,10 +356,10 @@
         "short-run-phillips-curve",
         "stabilization-policy"
       ],
-      "generatedPackageBytes": 152097,
+      "generatedPackageBytes": 151798,
       "name": "macro-stabilization-starter",
       "questionCount": 919,
-      "referencedPdfBytes": 7905449,
+      "referencedPdfBytes": 8950356,
       "reviewCodes": [
         "MACRO-28",
         "MACRO-29",
@@ -374,10 +374,12 @@
         "MACRO-38",
         "MACRO-39",
         "MACRO-40",
-        "MACRO-41"
+        "MACRO-41",
+        "MACRO-50",
+        "MACRO-51"
       ],
-      "reviewPdfCount": 14,
-      "runtimeManifestBytes": 152097,
+      "reviewPdfCount": 16,
+      "runtimeManifestBytes": 151798,
       "selectedConceptCount": 14,
       "selectedConceptIds": [
         "liquidity-preference-and-money-market",
@@ -413,10 +415,10 @@
       "answerVerification": {
         "issues": [],
         "ok": true,
-        "questionCount": 9427
+        "questionCount": 9667
       },
       "case": "F",
-      "diagnosticClosureSize": 141,
+      "diagnosticClosureSize": 147,
       "diagnosticConceptIds": [
         "ad-as-equilibrium-and-output-gaps",
         "aggregate-demand",
@@ -426,6 +428,7 @@
         "binding-price-ceilings",
         "binding-price-floors",
         "budget-accounting-and-public-saving",
+        "capital-flows-and-net-capital-outflow",
         "central-bank-and-federal-reserve",
         "competitive-efficiency-limits",
         "competitive-entry-exit-long-run",
@@ -464,6 +467,7 @@
         "fiscal-multipliers-and-crowding-out",
         "fiscal-policy-and-aggregate-demand",
         "fisher-effect",
+        "foreign-exchange-market",
         "gains-from-trade",
         "gdp-components",
         "gdp-measurement",
@@ -477,6 +481,7 @@
         "information-asymmetry-behavioral-and-political-economy",
         "integrated-economic-analysis",
         "international-trade-and-trade-policy",
+        "international-transactions-and-identities",
         "labor-market-institutions",
         "limits-of-gdp",
         "liquidity-preference-and-money-market",
@@ -514,6 +519,7 @@
         "monopoly-welfare-efficiency",
         "natural-monopoly-regulation",
         "natural-rate-of-unemployment",
+        "nominal-exchange-rates",
         "oligopoly",
         "oligopoly-collusion-cartels",
         "oligopoly-dynamic-strategy",
@@ -521,6 +527,7 @@
         "oligopoly-rivalry-coordination",
         "oligopoly-structure-concentration",
         "oligopoly-welfare-policy",
+        "open-economy-policy-transmission",
         "opportunity-cost",
         "perfect-competition",
         "phillips-curve-expectations",
@@ -534,6 +541,7 @@
         "profit-concepts",
         "public-goods-and-common-resources",
         "quantity-theory-of-money",
+        "real-exchange-rates-and-purchasing-power",
         "real-versus-nominal-gdp",
         "real-versus-nominal-interest-rates",
         "sacrifice-ratio",
@@ -560,10 +568,10 @@
         "unemployment-measurement",
         "unemployment-types"
       ],
-      "generatedPackageBytes": 1411263,
+      "generatedPackageBytes": 1507251,
       "name": "large-all-top-level-concepts",
-      "questionCount": 9427,
-      "referencedPdfBytes": 64777418,
+      "questionCount": 9667,
+      "referencedPdfBytes": 70777624,
       "reviewCodes": [
         "GEN-ECON-01",
         "GEN-ECON-02",
@@ -632,6 +640,22 @@
         "MACRO-39",
         "MACRO-40",
         "MACRO-41",
+        "MACRO-42",
+        "MACRO-43",
+        "MACRO-44",
+        "MACRO-45",
+        "MACRO-46",
+        "MACRO-47",
+        "MACRO-48",
+        "MACRO-49",
+        "MACRO-50",
+        "MACRO-51",
+        "MACRO-52",
+        "MACRO-53",
+        "MACRO-54",
+        "MACRO-55",
+        "MACRO-56",
+        "MACRO-57",
         "MICRO-01",
         "MICRO-02",
         "MICRO-04",
@@ -700,9 +724,9 @@
         "MICRO-67",
         "MICRO-68"
       ],
-      "reviewPdfCount": 134,
-      "runtimeManifestBytes": 1411263,
-      "selectedConceptCount": 88,
+      "reviewPdfCount": 150,
+      "runtimeManifestBytes": 1507251,
+      "selectedConceptCount": 94,
       "selectedConceptIds": [
         "ad-as-equilibrium-and-output-gaps",
         "aggregate-demand",
@@ -710,6 +734,7 @@
         "binding-price-ceilings",
         "binding-price-floors",
         "budget-accounting-and-public-saving",
+        "capital-flows-and-net-capital-outflow",
         "central-bank-and-federal-reserve",
         "competitive-markets",
         "consumer-and-producer-surplus",
@@ -733,6 +758,7 @@
         "fiscal-multipliers-and-crowding-out",
         "fiscal-policy-and-aggregate-demand",
         "fisher-effect",
+        "foreign-exchange-market",
         "gains-from-trade",
         "gdp-components",
         "gdp-measurement",
@@ -744,6 +770,7 @@
         "information-asymmetry-behavioral-and-political-economy",
         "integrated-economic-analysis",
         "international-trade-and-trade-policy",
+        "international-transactions-and-identities",
         "labor-market-institutions",
         "limits-of-gdp",
         "liquidity-preference-and-money-market",
@@ -767,7 +794,9 @@
         "monopolistic-competition",
         "monopoly",
         "natural-rate-of-unemployment",
+        "nominal-exchange-rates",
         "oligopoly",
+        "open-economy-policy-transmission",
         "opportunity-cost",
         "perfect-competition",
         "phillips-curve-expectations",
@@ -777,6 +806,7 @@
         "productivity-measurement",
         "public-goods-and-common-resources",
         "quantity-theory-of-money",
+        "real-exchange-rates-and-purchasing-power",
         "real-versus-nominal-gdp",
         "real-versus-nominal-interest-rates",
         "sacrifice-ratio",
@@ -848,28 +878,12 @@
       "ok": true,
       "warnings": [
         {
-          "canonicalConceptId": "budget-accounting-and-public-saving",
-          "type": "diagnosable-no-sheet-meta"
-        },
-        {
           "canonicalConceptId": "consumer-and-producer-surplus",
           "type": "diagnosable-parent-covered-by-children"
         },
         {
           "canonicalConceptId": "costs-of-production",
           "type": "diagnosable-parent-covered-by-children"
-        },
-        {
-          "canonicalConceptId": "crowding-out-and-capital-formation",
-          "type": "diagnosable-no-sheet-meta"
-        },
-        {
-          "canonicalConceptId": "debt-measures-burden-and-fiscal-data",
-          "type": "diagnosable-no-sheet-meta"
-        },
-        {
-          "canonicalConceptId": "deficits-debt-and-government-borrowing",
-          "type": "diagnosable-no-sheet-meta"
         },
         {
           "canonicalConceptId": "elasticity",
@@ -882,14 +896,6 @@
         {
           "canonicalConceptId": "international-trade-and-trade-policy",
           "type": "diagnosable-parent-covered-by-children"
-        },
-        {
-          "canonicalConceptId": "loanable-funds-equilibrium",
-          "type": "diagnosable-no-sheet-meta"
-        },
-        {
-          "canonicalConceptId": "loanable-funds-shifts",
-          "type": "diagnosable-no-sheet-meta"
         },
         {
           "canonicalConceptId": "monopolistic-competition",
@@ -906,10 +912,6 @@
         {
           "canonicalConceptId": "perfect-competition",
           "type": "diagnosable-parent-covered-by-children"
-        },
-        {
-          "canonicalConceptId": "saving-and-investment-identities",
-          "type": "diagnosable-no-sheet-meta"
         },
         {
           "reviewCode": "MICRO-03",

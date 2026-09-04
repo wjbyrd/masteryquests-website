@@ -1,6 +1,6 @@
 {
   "schemaVersion": "8.0.0-composer-integration",
-  "generatedAt": "2026-09-04T16:00:00.000Z",
+  "generatedAt": "2026-09-04T20:00:00-04:00",
   "sourceAuthoringSchemaVersion": "7.0.0-no-subtitle-template-authoritative",
   "composerLibraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1-phaseMacroFinalCleanup-v1-phaseMacroOpenEconomy-v1",
   "contract": {
@@ -17,18 +17,18 @@
     "sourcePdfPolicy": "immutable-copy-with-sha256-verification"
   },
   "summary": {
-    "totalPdfCount": 135,
+    "totalPdfCount": 151,
     "generalPdfCount": 26,
     "microPdfCount": 68,
-    "macroPdfCount": 41,
-    "totalPdfSizeBytes": 65131021,
+    "macroPdfCount": 57,
+    "totalPdfSizeBytes": 71131227,
     "canonicalConceptCount": 149,
-    "directlyMappedCanonicalConceptCount": 125,
+    "directlyMappedCanonicalConceptCount": 138,
     "dispositionCounts": {
       "COVERED_BY_CHILD_CONCEPT": 8,
       "HIDDEN_SUPPLEMENTAL": 2,
-      "NO_SHEET_INTEGRATION_META": 14,
-      "REVIEW_SHEET": 125
+      "NO_SHEET_INTEGRATION_META": 1,
+      "REVIEW_SHEET": 138
     },
     "hardFailureCount": 0,
     "warningCount": 4
@@ -916,18 +916,17 @@
     {
       "code": "MACRO-20",
       "canonicalConceptIds": [
-        "bank-balance-sheets-reserves-and-capital",
-        "deposit-creation-and-money-multiplier"
+        "bank-balance-sheets-reserves-and-capital"
       ],
-      "title": "Bank Money Creation",
+      "title": "Bank Balance Sheets, Reserves, and Capital",
       "discipline": "macro",
       "disposition": "REVIEW_SHEET",
       "pdfPath": "MACRO-20.pdf",
       "runtimeFilename": "MACRO-20.pdf",
       "hasGraph": false,
       "hasCalculation": true,
-      "sha256": "20f7b1daeaec37ad8a87c5960506905a9fc2f17808c398dbfc774031b11e782e",
-      "sizeBytes": 353683,
+      "sha256": "075409542219abcb19bae4f8c88ad81ac6fc6d932dc8f97207d97e55aca66060",
+      "sizeBytes": 244907,
       "pageCount": 1,
       "hasSelectableText": true,
       "documentLanguage": "en-US",
@@ -1183,18 +1182,17 @@
     {
       "code": "MACRO-34",
       "canonicalConceptIds": [
-        "long-run-aggregate-supply-and-potential-output",
         "short-run-aggregate-supply"
       ],
-      "title": "Aggregate Supply",
+      "title": "Short-Run Aggregate Supply",
       "discipline": "macro",
       "disposition": "REVIEW_SHEET",
       "pdfPath": "MACRO-34.pdf",
       "runtimeFilename": "MACRO-34.pdf",
       "hasGraph": true,
-      "hasCalculation": true,
-      "sha256": "b37fd709deee3612fedefd00a3b5a6383925edcd3031e07de5c4eb9f3c2d23ac",
-      "sizeBytes": 554597,
+      "hasCalculation": false,
+      "sha256": "500d8877c55c4d5c8209b3ddb1b47b868d2f594e4d8607d645d8803f1058f7d2",
+      "sizeBytes": 606869,
       "pageCount": 1,
       "hasSelectableText": true,
       "documentLanguage": "en-US",
@@ -1203,19 +1201,17 @@
     {
       "code": "MACRO-35",
       "canonicalConceptIds": [
-        "ad-as-equilibrium-and-output-gaps",
-        "demand-and-supply-shocks",
-        "long-run-macroeconomic-self-adjustment"
+        "demand-and-supply-shocks"
       ],
-      "title": "Macroeconomic Equilibrium and Shocks",
+      "title": "Demand and Supply Shocks",
       "discipline": "macro",
       "disposition": "REVIEW_SHEET",
       "pdfPath": "MACRO-35.pdf",
       "runtimeFilename": "MACRO-35.pdf",
       "hasGraph": true,
       "hasCalculation": true,
-      "sha256": "928b0af905a78b37e98be4dfe795514df9f5ea7f5b048e76330c11867a278d06",
-      "sizeBytes": 682591,
+      "sha256": "1dd44c2d07a569f0fc5b29bc266dd885fb24dc1ecba19868c64d0960b9fdafc2",
+      "sizeBytes": 570424,
       "pageCount": 1,
       "hasSelectableText": true,
       "documentLanguage": "en-US",
@@ -1224,18 +1220,17 @@
     {
       "code": "MACRO-36",
       "canonicalConceptIds": [
-        "ad-as-equilibrium-and-output-gaps",
         "long-run-macroeconomic-self-adjustment"
       ],
-      "title": "Long-Run Macroeconomic Adjustment",
+      "title": "Long-Run Macroeconomic Self-Adjustment",
       "discipline": "macro",
       "disposition": "REVIEW_SHEET",
       "pdfPath": "MACRO-36.pdf",
       "runtimeFilename": "MACRO-36.pdf",
       "hasGraph": true,
       "hasCalculation": false,
-      "sha256": "f30f8fbdc4eae3628df020a9f5f11dfe7250b18cf7cf29aeba2273cacabbcb14",
-      "sizeBytes": 469111,
+      "sha256": "86e6ad50fcf9c5e1b274e3da6822fc978aa75fd56456e599e90ab21befdec3d2",
+      "sizeBytes": 359915,
       "pageCount": 1,
       "hasSelectableText": true,
       "documentLanguage": "en-US",
@@ -1335,6 +1330,310 @@
       "hasSelectableText": true,
       "documentLanguage": "en-US",
       "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-42",
+      "canonicalConceptIds": [
+        "saving-and-investment-identities"
+      ],
+      "title": "Saving, Investment, and National-Saving Identities",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-42.pdf",
+      "runtimeFilename": "MACRO-42.pdf",
+      "hasGraph": false,
+      "hasCalculation": true,
+      "sha256": "bbe628f9f3a2ff6056720a72c7bc8965be1d66669e7ecfd4d8fb5647a3cea229",
+      "sizeBytes": 244878,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-43",
+      "canonicalConceptIds": [
+        "loanable-funds-equilibrium"
+      ],
+      "title": "Loanable-Funds Equilibrium",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-43.pdf",
+      "runtimeFilename": "MACRO-43.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "de4574a2cd5d02029d182e4d5a56c3025340343e1f2e7ea407a1e30d17436afa",
+      "sizeBytes": 501475,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MACRO-44",
+      "canonicalConceptIds": [
+        "loanable-funds-shifts"
+      ],
+      "title": "Loanable-Funds Shifts",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-44.pdf",
+      "runtimeFilename": "MACRO-44.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "1eec8a3f7fd15358095f2d429fca7a6f469ec1bbc947af0cd830a09a70d0c04c",
+      "sizeBytes": 544124,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MACRO-45",
+      "canonicalConceptIds": [
+        "crowding-out-and-capital-formation"
+      ],
+      "title": "Crowding Out and Capital Formation",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-45.pdf",
+      "runtimeFilename": "MACRO-45.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "c459039887c63fee8dff5a7e0c1b8562796c0b8e73c9286922fac1129d703255",
+      "sizeBytes": 570440,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MACRO-46",
+      "canonicalConceptIds": [
+        "budget-accounting-and-public-saving"
+      ],
+      "title": "Budget Accounting and Public Saving",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-46.pdf",
+      "runtimeFilename": "MACRO-46.pdf",
+      "hasGraph": false,
+      "hasCalculation": true,
+      "sha256": "6475cead1fe9d7d80ca9ab152cd429f836f4aff72d0f19a7fe97f9dea2a6ffa2",
+      "sizeBytes": 244836,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-47",
+      "canonicalConceptIds": [
+        "deficits-debt-and-government-borrowing"
+      ],
+      "title": "Deficits, Debt, and Government Borrowing",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-47.pdf",
+      "runtimeFilename": "MACRO-47.pdf",
+      "hasGraph": false,
+      "hasCalculation": true,
+      "sha256": "2eab645e75d56d0f730d319c822bca79045d110b4e8c609fad3a116b0f5c97ac",
+      "sizeBytes": 245050,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-48",
+      "canonicalConceptIds": [
+        "debt-measures-burden-and-fiscal-data"
+      ],
+      "title": "Debt Measures, Debt Burden, and Fiscal Data",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-48.pdf",
+      "runtimeFilename": "MACRO-48.pdf",
+      "hasGraph": false,
+      "hasCalculation": true,
+      "sha256": "d14330ce3e111ef82c384a5b433e2e532678557463e40ef74f27ad433b47a2b4",
+      "sizeBytes": 245006,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-49",
+      "canonicalConceptIds": [
+        "deposit-creation-and-money-multiplier"
+      ],
+      "title": "Deposit Creation and the Money Multiplier",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-49.pdf",
+      "runtimeFilename": "MACRO-49.pdf",
+      "hasGraph": false,
+      "hasCalculation": true,
+      "sha256": "55e7f512712d5788361951d253fd3b38a97f7d50cf4549d16d16fad307f9aac0",
+      "sizeBytes": 244951,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-50",
+      "canonicalConceptIds": [
+        "long-run-aggregate-supply-and-potential-output"
+      ],
+      "title": "Long-Run Aggregate Supply and Potential Output",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-50.pdf",
+      "runtimeFilename": "MACRO-50.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "d10c7a9dde725f47c19ea9014f5c29cf327cb2f28c8dee6f368f7f55500813aa",
+      "sizeBytes": 643451,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MACRO-51",
+      "canonicalConceptIds": [
+        "ad-as-equilibrium-and-output-gaps"
+      ],
+      "title": "AD-AS Equilibrium and Output Gaps",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-51.pdf",
+      "runtimeFilename": "MACRO-51.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "ddb43f6e77f3822dc619d88cf7f37ff74f5bb10467b0b25737eedf1c63a46c02",
+      "sizeBytes": 570547,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MACRO-52",
+      "canonicalConceptIds": [
+        "international-transactions-and-identities"
+      ],
+      "title": "International Transactions and Open-Economy Identities",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-52.pdf",
+      "runtimeFilename": "MACRO-52.pdf",
+      "hasGraph": false,
+      "hasCalculation": true,
+      "sha256": "a8043c1a719fcc4858c7b9bb358fb56c9f59d19a342da5adc8c5ae37b08fb947",
+      "sizeBytes": 244893,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-53",
+      "canonicalConceptIds": [
+        "nominal-exchange-rates"
+      ],
+      "title": "Nominal Exchange Rates and Currency Values",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-53.pdf",
+      "runtimeFilename": "MACRO-53.pdf",
+      "hasGraph": false,
+      "hasCalculation": true,
+      "sha256": "857a96cc1f06df356154a8b1c21603df84ae96cc7da87a72d2c8694f4c83d2e5",
+      "sizeBytes": 244893,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-54",
+      "canonicalConceptIds": [
+        "real-exchange-rates-and-purchasing-power"
+      ],
+      "title": "Real Exchange Rates and Purchasing Power",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-54.pdf",
+      "runtimeFilename": "MACRO-54.pdf",
+      "hasGraph": false,
+      "hasCalculation": true,
+      "sha256": "564bdaebc6bcb726ac9b25cfac61d39c7a68a30d3395ba3ec63ebfd82539ed63",
+      "sizeBytes": 245070,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-55",
+      "canonicalConceptIds": [
+        "capital-flows-and-net-capital-outflow"
+      ],
+      "title": "Capital Flows and Net Capital Outflow",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-55.pdf",
+      "runtimeFilename": "MACRO-55.pdf",
+      "hasGraph": false,
+      "hasCalculation": true,
+      "sha256": "2d9ca3d7fde0b4977767e710ef8aa7619607cde907dd51c3e3a6ada6b924eb63",
+      "sizeBytes": 244938,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "not-applicable"
+    },
+    {
+      "code": "MACRO-56",
+      "canonicalConceptIds": [
+        "foreign-exchange-market"
+      ],
+      "title": "Foreign-Exchange Market Equilibrium",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-56.pdf",
+      "runtimeFilename": "MACRO-56.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "a73da511a301a6a0150017a6f0cf70118feb9ad5fed943cdb400d9d10f4dbaf2",
+      "sizeBytes": 646829,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
+    },
+    {
+      "code": "MACRO-57",
+      "canonicalConceptIds": [
+        "open-economy-policy-transmission"
+      ],
+      "title": "Open-Economy Policy and Macroeconomic Transmission",
+      "discipline": "macro",
+      "disposition": "REVIEW_SHEET",
+      "pdfPath": "MACRO-57.pdf",
+      "runtimeFilename": "MACRO-57.pdf",
+      "hasGraph": true,
+      "hasCalculation": true,
+      "sha256": "13734fb3d523df97e80940fc27f1808674883d32149eb6800fb42a36fdf8ace9",
+      "sizeBytes": 596692,
+      "pageCount": 1,
+      "hasSelectableText": true,
+      "documentLanguage": "en-US",
+      "sourceAltTextStatus": "retained-in-authoritative-source;pdf-figure-not-tagged"
     },
     {
       "code": "MICRO-01",
@@ -2643,10 +2942,9 @@
       "selectionRole": "standalone",
       "disposition": "REVIEW_SHEET",
       "reviewCodes": [
-        "MACRO-35",
-        "MACRO-36"
+        "MACRO-51"
       ],
-      "primaryReviewCode": "MACRO-35"
+      "primaryReviewCode": "MACRO-51"
     },
     {
       "canonicalConceptId": "aggregate-demand",
@@ -2779,8 +3077,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-46"
+      ],
+      "primaryReviewCode": "MACRO-46"
     },
     {
       "canonicalConceptId": "capital-flows-and-net-capital-outflow",
@@ -2795,8 +3096,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-55"
+      ],
+      "primaryReviewCode": "MACRO-55"
     },
     {
       "canonicalConceptId": "central-bank-and-federal-reserve",
@@ -3226,8 +3530,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-45"
+      ],
+      "primaryReviewCode": "MACRO-45"
     },
     {
       "canonicalConceptId": "debt-measures-burden-and-fiscal-data",
@@ -3242,8 +3549,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-48"
+      ],
+      "primaryReviewCode": "MACRO-48"
     },
     {
       "canonicalConceptId": "deficits-debt-and-government-borrowing",
@@ -3258,8 +3568,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-47"
+      ],
+      "primaryReviewCode": "MACRO-47"
     },
     {
       "canonicalConceptId": "demand",
@@ -3317,9 +3630,9 @@
       "selectionRole": "standalone",
       "disposition": "REVIEW_SHEET",
       "reviewCodes": [
-        "MACRO-20"
+        "MACRO-49"
       ],
-      "primaryReviewCode": "MACRO-20"
+      "primaryReviewCode": "MACRO-49"
     },
     {
       "canonicalConceptId": "disinflation-and-policy",
@@ -3603,8 +3916,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-56"
+      ],
+      "primaryReviewCode": "MACRO-56"
     },
     {
       "canonicalConceptId": "gains-from-trade",
@@ -3913,8 +4229,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-52"
+      ],
+      "primaryReviewCode": "MACRO-52"
     },
     {
       "canonicalConceptId": "labor-market-institutions",
@@ -4005,8 +4324,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-43"
+      ],
+      "primaryReviewCode": "MACRO-43"
     },
     {
       "canonicalConceptId": "loanable-funds-shifts",
@@ -4021,8 +4343,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-44"
+      ],
+      "primaryReviewCode": "MACRO-44"
     },
     {
       "canonicalConceptId": "long-run-aggregate-supply-and-potential-output",
@@ -4039,9 +4364,9 @@
       "selectionRole": "standalone",
       "disposition": "REVIEW_SHEET",
       "reviewCodes": [
-        "MACRO-34"
+        "MACRO-50"
       ],
-      "primaryReviewCode": "MACRO-34"
+      "primaryReviewCode": "MACRO-50"
     },
     {
       "canonicalConceptId": "long-run-average-cost-scale",
@@ -4077,10 +4402,9 @@
       "selectionRole": "standalone",
       "disposition": "REVIEW_SHEET",
       "reviewCodes": [
-        "MACRO-35",
         "MACRO-36"
       ],
-      "primaryReviewCode": "MACRO-35"
+      "primaryReviewCode": "MACRO-36"
     },
     {
       "canonicalConceptId": "long-run-phillips-curve",
@@ -4695,8 +5019,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-53"
+      ],
+      "primaryReviewCode": "MACRO-53"
     },
     {
       "canonicalConceptId": "oligopoly",
@@ -4864,8 +5191,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-57"
+      ],
+      "primaryReviewCode": "MACRO-57"
     },
     {
       "canonicalConceptId": "opportunity-cost",
@@ -5158,8 +5488,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Open-economy Macro phase created this independently diagnosable child without fabricating a review PDF; a dedicated review resource is deferred."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-54"
+      ],
+      "primaryReviewCode": "MACRO-54"
     },
     {
       "canonicalConceptId": "real-versus-nominal-gdp",
@@ -5231,8 +5564,11 @@
       "selectableCard": true,
       "diagnosable": true,
       "selectionRole": "standalone",
-      "disposition": "NO_SHEET_INTEGRATION_META",
-      "reason": "Phase 2 created this independently diagnosable Macro child without fabricating a review PDF; a dedicated review resource is deferred to the resource-authoring phase."
+      "disposition": "REVIEW_SHEET",
+      "reviewCodes": [
+        "MACRO-42"
+      ],
+      "primaryReviewCode": "MACRO-42"
     },
     {
       "canonicalConceptId": "scarcity-and-tradeoffs",

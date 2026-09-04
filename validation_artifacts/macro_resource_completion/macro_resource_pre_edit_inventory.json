@@ -1,0 +1,615 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseMacroResourceCompletion-v1",
+  "capturedFrom": "HEAD before resource edits",
+  "generatedAt": "2026-09-04T20:00:00-04:00",
+  "repositoryRoot": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "branch": "main",
+  "taxonomy": {
+    "authoritativeFile": "build/faculty-build-composer/course-area-model.js",
+    "dedicatedParentIds": [
+      "gdp-national-income",
+      "inflation-real-values",
+      "growth-productivity",
+      "unemployment-labor",
+      "saving-fiscal-foundations",
+      "money-banking-fed",
+      "money-growth-inflation",
+      "ad-as-equilibrium",
+      "stabilization-policy",
+      "open-economy-macroeconomics",
+      "phillips-disinflation"
+    ],
+    "ordinarySelectableChildCount": 57,
+    "conceptIds": [
+      "gdp-measurement",
+      "gdp-components",
+      "real-versus-nominal-gdp",
+      "limits-of-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias",
+      "cpi-versus-gdp-deflator",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates",
+      "inflation-costs",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "sources-of-productivity",
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "unemployment-types",
+      "labor-market-institutions",
+      "natural-rate-of-unemployment",
+      "saving-and-investment-identities",
+      "loanable-funds-equilibrium",
+      "loanable-funds-shifts",
+      "crowding-out-and-capital-formation",
+      "budget-accounting-and-public-saving",
+      "deficits-debt-and-government-borrowing",
+      "debt-measures-burden-and-fiscal-data",
+      "money-functions-and-measures",
+      "central-bank-and-federal-reserve",
+      "bank-balance-sheets-reserves-and-capital",
+      "deposit-creation-and-money-multiplier",
+      "monetary-policy-tools",
+      "monetary-control-limits",
+      "quantity-theory-of-money",
+      "monetary-neutrality",
+      "fisher-effect",
+      "inflation-tax-and-deflation",
+      "aggregate-demand",
+      "short-run-aggregate-supply",
+      "long-run-aggregate-supply-and-potential-output",
+      "ad-as-equilibrium-and-output-gaps",
+      "demand-and-supply-shocks",
+      "long-run-macroeconomic-self-adjustment",
+      "liquidity-preference-and-money-market",
+      "monetary-policy-transmission",
+      "fiscal-policy-and-aggregate-demand",
+      "fiscal-multipliers-and-crowding-out",
+      "stabilization-policy",
+      "international-transactions-and-identities",
+      "nominal-exchange-rates",
+      "real-exchange-rates-and-purchasing-power",
+      "capital-flows-and-net-capital-outflow",
+      "foreign-exchange-market",
+      "open-economy-policy-transmission",
+      "short-run-phillips-curve",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "disinflation-and-policy",
+      "sacrifice-ratio"
+    ]
+  },
+  "resources": {
+    "authoritativeSource": "build/faculty-build-composer/data/concept-reviews/concept_review_source.json",
+    "builder": "build/faculty-build-composer/tools/build_concept_review_manifest.py",
+    "publicDirectory": "concept-reviews/",
+    "beforeMacroPdfCount": 41
+  },
+  "currentConceptMappings": [
+    {
+      "conceptId": "gdp-measurement",
+      "reviewCodes": [
+        "MACRO-01"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "gdp-components",
+      "reviewCodes": [
+        "MACRO-02"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "real-versus-nominal-gdp",
+      "reviewCodes": [
+        "MACRO-03"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "limits-of-gdp",
+      "reviewCodes": [
+        "MACRO-04"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "cpi-and-inflation-measurement",
+      "reviewCodes": [
+        "MACRO-05"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "cpi-bias",
+      "reviewCodes": [
+        "MACRO-06"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "cpi-versus-gdp-deflator",
+      "reviewCodes": [
+        "MACRO-07"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "indexing-and-real-values",
+      "reviewCodes": [
+        "MACRO-08"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "real-versus-nominal-interest-rates",
+      "reviewCodes": [
+        "MACRO-09"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "inflation-costs",
+      "reviewCodes": [
+        "MACRO-26"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "living-standards-and-growth",
+      "reviewCodes": [
+        "MACRO-10"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "productivity-measurement",
+      "reviewCodes": [
+        "MACRO-11"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "sources-of-productivity",
+      "reviewCodes": [
+        "MACRO-12"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "economic-growth-policy",
+      "reviewCodes": [
+        "MACRO-13"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "unemployment-measurement",
+      "reviewCodes": [
+        "MACRO-14"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "unemployment-types",
+      "reviewCodes": [
+        "MACRO-15"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "labor-market-institutions",
+      "reviewCodes": [
+        "MACRO-16"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "natural-rate-of-unemployment",
+      "reviewCodes": [
+        "MACRO-17"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "saving-and-investment-identities",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "loanable-funds-equilibrium",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "loanable-funds-shifts",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "crowding-out-and-capital-formation",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "budget-accounting-and-public-saving",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "deficits-debt-and-government-borrowing",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "debt-measures-burden-and-fiscal-data",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "money-functions-and-measures",
+      "reviewCodes": [
+        "MACRO-18"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "central-bank-and-federal-reserve",
+      "reviewCodes": [
+        "MACRO-19"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "bank-balance-sheets-reserves-and-capital",
+      "reviewCodes": [
+        "MACRO-20"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "deposit-creation-and-money-multiplier",
+      "reviewCodes": [
+        "MACRO-20"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "monetary-policy-tools",
+      "reviewCodes": [
+        "MACRO-21"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "monetary-control-limits",
+      "reviewCodes": [
+        "MACRO-22"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "quantity-theory-of-money",
+      "reviewCodes": [
+        "MACRO-23"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "monetary-neutrality",
+      "reviewCodes": [
+        "MACRO-24"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "fisher-effect",
+      "reviewCodes": [
+        "MACRO-25"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "inflation-tax-and-deflation",
+      "reviewCodes": [
+        "MACRO-27"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "aggregate-demand",
+      "reviewCodes": [
+        "MACRO-33"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "short-run-aggregate-supply",
+      "reviewCodes": [
+        "MACRO-34"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "long-run-aggregate-supply-and-potential-output",
+      "reviewCodes": [
+        "MACRO-34"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "ad-as-equilibrium-and-output-gaps",
+      "reviewCodes": [
+        "MACRO-35",
+        "MACRO-36"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "demand-and-supply-shocks",
+      "reviewCodes": [
+        "MACRO-35"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "long-run-macroeconomic-self-adjustment",
+      "reviewCodes": [
+        "MACRO-35",
+        "MACRO-36"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "reviewCodes": [
+        "MACRO-28"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "reviewCodes": [
+        "MACRO-29"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "fiscal-policy-and-aggregate-demand",
+      "reviewCodes": [
+        "MACRO-30"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "fiscal-multipliers-and-crowding-out",
+      "reviewCodes": [
+        "MACRO-31"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "stabilization-policy",
+      "reviewCodes": [
+        "MACRO-32"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "international-transactions-and-identities",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "nominal-exchange-rates",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "real-exchange-rates-and-purchasing-power",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "capital-flows-and-net-capital-outflow",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "foreign-exchange-market",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "open-economy-policy-transmission",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "short-run-phillips-curve",
+      "reviewCodes": [
+        "MACRO-37"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "long-run-phillips-curve",
+      "reviewCodes": [
+        "MACRO-38"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "phillips-curve-expectations",
+      "reviewCodes": [
+        "MACRO-39"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "disinflation-and-policy",
+      "reviewCodes": [
+        "MACRO-40"
+      ],
+      "disposition": "REVIEW_SHEET"
+    },
+    {
+      "conceptId": "sacrifice-ratio",
+      "reviewCodes": [
+        "MACRO-41"
+      ],
+      "disposition": "REVIEW_SHEET"
+    }
+  ],
+  "missingMappings": [
+    {
+      "conceptId": "saving-and-investment-identities",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "loanable-funds-equilibrium",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "loanable-funds-shifts",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "crowding-out-and-capital-formation",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "budget-accounting-and-public-saving",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "deficits-debt-and-government-borrowing",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "debt-measures-burden-and-fiscal-data",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "international-transactions-and-identities",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "nominal-exchange-rates",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "real-exchange-rates-and-purchasing-power",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "capital-flows-and-net-capital-outflow",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "foreign-exchange-market",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    },
+    {
+      "conceptId": "open-economy-policy-transmission",
+      "reviewCodes": [],
+      "disposition": "NO_SHEET_INTEGRATION_META"
+    }
+  ],
+  "sharedOrOverbroadMappings": [
+    {
+      "code": "MACRO-20",
+      "conceptIds": [
+        "bank-balance-sheets-reserves-and-capital",
+        "deposit-creation-and-money-multiplier"
+      ]
+    },
+    {
+      "code": "MACRO-34",
+      "conceptIds": [
+        "short-run-aggregate-supply",
+        "long-run-aggregate-supply-and-potential-output"
+      ]
+    },
+    {
+      "code": "MACRO-35",
+      "conceptIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "demand-and-supply-shocks",
+        "long-run-macroeconomic-self-adjustment"
+      ]
+    },
+    {
+      "code": "MACRO-36",
+      "conceptIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "long-run-macroeconomic-self-adjustment"
+      ]
+    }
+  ],
+  "proposedWork": {
+    "revised": [
+      "MACRO-20",
+      "MACRO-34",
+      "MACRO-35",
+      "MACRO-36"
+    ],
+    "created": [
+      "MACRO-42",
+      "MACRO-43",
+      "MACRO-44",
+      "MACRO-45",
+      "MACRO-46",
+      "MACRO-47",
+      "MACRO-48",
+      "MACRO-49",
+      "MACRO-50",
+      "MACRO-51",
+      "MACRO-52",
+      "MACRO-53",
+      "MACRO-54",
+      "MACRO-55",
+      "MACRO-56",
+      "MACRO-57"
+    ],
+    "confirmedAvailableBeforeEdit": true
+  },
+  "sourceFilesAndScriptsEdited": [
+    "build/faculty-build-composer/tools/complete_macro_concept_reviews.py",
+    "build/faculty-build-composer/data/concept-reviews/concept_review_source.json",
+    "build/faculty-build-composer/data/concept-reviews/concept_review_validation.json",
+    "build/faculty-build-composer/data/concept-reviews/manifest.json",
+    "build/faculty-build-composer/data/concept-reviews/concept_review_integration_audit.json",
+    "audit_tools/macro_resource_completion/validate_macro_resource_completion.mjs",
+    "concept-reviews/MACRO-20.pdf, MACRO-34.pdf, MACRO-35.pdf, MACRO-36.pdf, and MACRO-42.pdf through MACRO-57.pdf",
+    "build/faculty-build-composer/data/concept-reviews/ matching PDF copies",
+    "validation_artifacts/macro_resource_completion/"
+  ],
+  "graphAssetsAvailable": [
+    "question-assets/saving-investment-and-loanable-funds/LOANABLE-01.webp through LOANABLE-08.webp",
+    "question-assets/aggregate-supply/AS-01.webp, AS-02.webp, and LRAS-02.webp",
+    "question-assets/macroeconomic-equilibrium-and-shocks/ADAS-02.webp",
+    "question-assets/long-run-macroeconomic-adjustment/adaslras.webp and ADASLRAS-01.webp",
+    "question-assets/foreign-exchange-market/FX-01.webp through FX-10.webp"
+  ],
+  "priorValidationSources": [
+    "audit_tools/macro_open_economy/",
+    "build/faculty-build-composer/tests/run_saving_investment_loanable_funds_question_pool_validation.mjs",
+    "build/faculty-build-composer/tests/run_federal_budgets_debt_question_pool_validation.mjs"
+  ]
+}
