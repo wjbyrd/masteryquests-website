@@ -1,0 +1,1330 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseComposerBroadThemes-v1",
+  "generatedAt": "2026-09-04T21:00:00-04:00",
+  "verdict": "PASS",
+  "summary": {
+    "checks": 27,
+    "passed": 27,
+    "failed": 0,
+    "newPresets": 3,
+    "retainedPresets": 10,
+    "microBroadThemes": 5,
+    "macroBroadThemes": 5,
+    "globalUniqueQuestionCount": 9779
+  },
+  "checks": [
+    {
+      "name": "Preset IDs remain unique",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Five broad Micro themes are defined",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Five broad Macro themes are defined",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Every preset contains at least one concept",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No preset contains duplicate concept IDs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Every preset references valid current concept IDs",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Every preset concept is selectable in its declared course area",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No preset references hidden, deprecated, or legacy-only concepts",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Any parent references use the established selectable family-parent architecture",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Open-Economy Macro includes exactly all six intended concepts",
+      "status": "PASS",
+      "detail": "[\"international-transactions-and-identities\",\"nominal-exchange-rates\",\"real-exchange-rates-and-purchasing-power\",\"capital-flows-and-net-capital-outflow\",\"foreign-exchange-market\",\"open-economy-policy-transmission\"]"
+    },
+    {
+      "name": "Quick Build descriptions remain short",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All existing Quick Start IDs are retained",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "The three intended new presets were added",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Area-specific Micro and Macro Quick Build headings are present",
+      "status": "PASS",
+      "detail": "heading source contract"
+    },
+    {
+      "name": "Preset application preserves exact selections and manual checkbox editing",
+      "status": "PASS",
+      "detail": "apply/add/remove source contract"
+    },
+    {
+      "name": "Browser QA confirms preset click and subsequent manual edit",
+      "status": "PASS",
+      "detail": "{\"schemaVersion\":\"1.0.0\",\"phase\":\"phaseComposerBroadThemes-v1\",\"testedAt\":\"2026-09-04T21:00:00-04:00\",\"url\":\"http://127.0.0.1:8770/build/faculty-build-composer/index.html\",\"status\":\"PASS\",\"macroQuickBuildHeadingVisible\":true,\"microQuickBuildHeadingVisible\":true,\"macroQuickBuildCardCount\":5,\"microQuickBuildCardCount\":7,\"testedPresetId\":\"open-economy-macro\",\"presetConceptCount\":6,\"selectedConceptIds\":[\"international-transactions-and-identities\",\"nominal-exchange-rates\",\"real-exchange-rates-and-purchasing-power\",\"capital-flows-and-net-capital-outflow\",\"foreign-exchange-market\",\"open-economy-policy-transmission\"],\"manualRemovalConceptId\":\"nominal-exchange-rates\",\"afterManualRemovalCount\":5,\"removedConceptStillSelected\":false,\"microPresetId\":\"micro-market-failures-public-goods\",\"microPresetSelectedConceptIds\":[\"externalities\",\"public-goods-and-common-resources\",\"market-power\"],\"consoleErrorOrWarningCount\":0,\"notes\":\"The existing Quick Start UI remained area-filtered. Applying a preset replaced the selected set exactly, and the ordinary concept checkbox remained editable immediately afterward.\"}"
+    },
+    {
+      "name": "Established course-area and starter-preset regression test passes",
+      "status": "PASS",
+      "detail": "{\"id\":\"K\",\"name\":\"starter presets remain area-valid\",\"status\":\"PASS\",\"presetCount\":13,\"macroPresetCount\":5}"
+    },
+    {
+      "name": "Every preset composes and builds in its supported modes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Only Measurement, Growth & Labor reports the known Trial by Graph deficiency",
+      "status": "PASS",
+      "detail": "macro-measurement-growth:trialGraph"
+    },
+    {
+      "name": "Every legacy Quick Start still composes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Whole-course Micro and Macro selections still compose and build",
+      "status": "PASS",
+      "detail": "micro:0/0, macro:0/0"
+    },
+    {
+      "name": "Representative individual Micro and Macro selections still work",
+      "status": "PASS",
+      "detail": "price-elasticity-of-demand:0/0, foreign-exchange-market:0/0"
+    },
+    {
+      "name": "Question libraries and fingerprints are unchanged",
+      "status": "PASS",
+      "detail": "4edbfa1c0747a722c8b4d3fb09f19385da8b5013538dcfb28f31c33df5ae6aad -> 4edbfa1c0747a722c8b4d3fb09f19385da8b5013538dcfb28f31c33df5ae6aad"
+    },
+    {
+      "name": "Concept Review mappings and PDF resources are unchanged",
+      "status": "PASS",
+      "detail": "546a8c3100efe30b95714cd0de1012c11d779aabec73dc5b6310749742803a34 -> 546a8c3100efe30b95714cd0de1012c11d779aabec73dc5b6310749742803a34"
+    },
+    {
+      "name": "Question graph assets are unchanged",
+      "status": "PASS",
+      "detail": "31aa094f07babc161e9e39ecae3acf4a4fa5fa831f1c243276e59049267425aa -> 31aa094f07babc161e9e39ecae3acf4a4fa5fa831f1c243276e59049267425aa"
+    },
+    {
+      "name": "Composer core and taxonomy files are unchanged",
+      "status": "PASS",
+      "detail": "core=true, taxonomy=true"
+    },
+    {
+      "name": "Only the intended Composer UI source changed among protected runtime files",
+      "status": "PASS",
+      "detail": "{\"before\":\"81325f501b16827acbf4f10e59aa72e5f88337eae8fb8426f7122695fd243adb\",\"after\":\"d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b\",\"changedAsIntended\":true}"
+    }
+  ],
+  "compositionResults": [
+    {
+      "presetId": "general-foundations",
+      "area": "general",
+      "conceptCount": 10,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 3,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 8588057,
+      "htmlSha256": "6ddc5117425d36bb7475cdd9d570010dc6d87458979d93907a95885eb4d84a0b"
+    },
+    {
+      "presetId": "micro-market-foundations",
+      "area": "micro",
+      "conceptCount": 11,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 21,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 4611215,
+      "htmlSha256": "9445c288a4d059b006396f8f27107c5b8411ad6e9c60d996486997afa3ce6053"
+    },
+    {
+      "presetId": "micro-market-policy",
+      "area": "micro",
+      "conceptCount": 11,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 30,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 5080886,
+      "htmlSha256": "dd9fbbb666217d11f99aa55cedf56d60dd561d408fb95c0677b1469332b42b74"
+    },
+    {
+      "presetId": "micro-firms-markets",
+      "area": "micro",
+      "conceptCount": 5,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 284,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 19828972,
+      "htmlSha256": "5df4d0d96287d8cfe7e84d863dff16d70a5e160bc769682b7ce8d7a4576ca0ae"
+    },
+    {
+      "presetId": "micro-market-failures-public-goods",
+      "area": "micro",
+      "conceptCount": 3,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 18,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 3757909,
+      "htmlSha256": "114ce9c2a8c9a76e08affb32071f26df88cdfeb7f24dd026415d38bfc72b7058"
+    },
+    {
+      "presetId": "micro-factor-choice-inequality",
+      "area": "micro",
+      "conceptCount": 3,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 20,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 3679521,
+      "htmlSha256": "b80a33d2af2ee05ac6b08570fdd59a08a2c81dfde1ce1d244859521824a9816c"
+    },
+    {
+      "presetId": "micro-trade-welfare",
+      "area": "micro",
+      "conceptCount": 4,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 69,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 9196108,
+      "htmlSha256": "216e51c7d759994a742cfc78c92fa8b67b5a2df6396326020803ef40d5b8f12d"
+    },
+    {
+      "presetId": "micro-principles-core",
+      "area": "micro",
+      "conceptCount": 14,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 379,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 30372768,
+      "htmlSha256": "1c72cfa3288303a9242f2fece98b90ad870349581ded26f0dd4d368417f78c51"
+    },
+    {
+      "presetId": "macro-measurement-growth",
+      "area": "macro",
+      "conceptCount": 17,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": false
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [
+        "trialGraph"
+      ],
+      "expectedDeficiency": "Trial by Graph lacks graph-safe questions; no unrelated concepts were added.",
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 3,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 3326702,
+      "htmlSha256": "fa38b56a77f39377a03bd27f8e7e906ac2c74230563a203e10a63f412537d3f4"
+    },
+    {
+      "presetId": "macro-saving-investment-budgets-debt",
+      "area": "macro",
+      "conceptCount": 7,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 8,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 2169320,
+      "htmlSha256": "e40e8ad7b8ec93a101a8c159dbd8f4db6e524edbabb47b759e43729a01b0cf18"
+    },
+    {
+      "presetId": "money-banking-inflation",
+      "area": "macro",
+      "conceptCount": 13,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 16,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 4538704,
+      "htmlSha256": "d6b686fd572043029661250afe9e53a164a3b380c5719902b4cc64e4c95ad933"
+    },
+    {
+      "presetId": "stabilization-policy",
+      "area": "macro",
+      "conceptCount": 14,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 27,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 5450796,
+      "htmlSha256": "fc3aff842d8ed9ff9695d92db21795247e430108f95916579e044d1bf5d7a8d9"
+    },
+    {
+      "presetId": "open-economy-macro",
+      "area": "macro",
+      "conceptCount": 6,
+      "allModes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "badModes": [],
+      "expectedDeficiency": null,
+      "buildModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "buildErrors": [],
+      "answerIssueCount": 0,
+      "conceptReviewRuntimeError": null,
+      "embeddedAssetCount": 10,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 2141134,
+      "htmlSha256": "5986e753905988d41a0e3e235b709c4896964f9fe0a6e4a431e14f37535e3e34"
+    }
+  ],
+  "wholeCourseResults": [
+    {
+      "area": "micro",
+      "conceptCount": 78,
+      "errors": [],
+      "badModes": [],
+      "answerIssueCount": 0,
+      "runtimeError": null,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 40501819,
+      "htmlSha256": "227e54f6f80ef70c7d139e82cc49f2eb7b0bce51db6e39590f4f5425d6f01d6c"
+    },
+    {
+      "area": "macro",
+      "conceptCount": 57,
+      "errors": [],
+      "badModes": [],
+      "answerIssueCount": 0,
+      "runtimeError": null,
+      "missingAssets": [],
+      "inlineScriptIssues": [],
+      "htmlBytes": 15405657,
+      "htmlSha256": "7851d03cc265c4898a9c86c96ef2abc978eca524b5e92eaf63ec4401747df3bc"
+    }
+  ],
+  "individualResults": [
+    {
+      "area": "micro",
+      "conceptId": "price-elasticity-of-demand",
+      "errors": [],
+      "badModes": [],
+      "answerVerification": {
+        "ok": true,
+        "questionCount": 171,
+        "issues": []
+      }
+    },
+    {
+      "area": "macro",
+      "conceptId": "foreign-exchange-market",
+      "errors": [],
+      "badModes": [],
+      "answerVerification": {
+        "ok": true,
+        "questionCount": 40,
+        "issues": []
+      }
+    }
+  ],
+  "fingerprints": {
+    "composerJs": {
+      "before": "81325f501b16827acbf4f10e59aa72e5f88337eae8fb8426f7122695fd243adb",
+      "after": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+      "changedAsIntended": true
+    },
+    "composerLibrary": {
+      "before": "4edbfa1c0747a722c8b4d3fb09f19385da8b5013538dcfb28f31c33df5ae6aad",
+      "after": "4edbfa1c0747a722c8b4d3fb09f19385da8b5013538dcfb28f31c33df5ae6aad",
+      "unchanged": true
+    },
+    "composerCore": {
+      "before": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+      "after": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+      "unchanged": true
+    },
+    "courseAreaModel": {
+      "before": "d8003382eabb5fd1b69fa0ab6969bdde0db389c65084c0505c6d563310559746",
+      "after": "d8003382eabb5fd1b69fa0ab6969bdde0db389c65084c0505c6d563310559746",
+      "unchanged": true
+    },
+    "conceptReviewResources": {
+      "before": "546a8c3100efe30b95714cd0de1012c11d779aabec73dc5b6310749742803a34",
+      "after": "546a8c3100efe30b95714cd0de1012c11d779aabec73dc5b6310749742803a34",
+      "fileCount": 289,
+      "unchanged": true
+    },
+    "questionAssets": {
+      "before": "31aa094f07babc161e9e39ecae3acf4a4fa5fa831f1c243276e59049267425aa",
+      "after": "31aa094f07babc161e9e39ecae3acf4a4fa5fa831f1c243276e59049267425aa",
+      "fileCount": 516,
+      "unchanged": true
+    }
+  },
+  "browserQa": {
+    "schemaVersion": "1.0.0",
+    "phase": "phaseComposerBroadThemes-v1",
+    "testedAt": "2026-09-04T21:00:00-04:00",
+    "url": "http://127.0.0.1:8770/build/faculty-build-composer/index.html",
+    "status": "PASS",
+    "macroQuickBuildHeadingVisible": true,
+    "microQuickBuildHeadingVisible": true,
+    "macroQuickBuildCardCount": 5,
+    "microQuickBuildCardCount": 7,
+    "testedPresetId": "open-economy-macro",
+    "presetConceptCount": 6,
+    "selectedConceptIds": [
+      "international-transactions-and-identities",
+      "nominal-exchange-rates",
+      "real-exchange-rates-and-purchasing-power",
+      "capital-flows-and-net-capital-outflow",
+      "foreign-exchange-market",
+      "open-economy-policy-transmission"
+    ],
+    "manualRemovalConceptId": "nominal-exchange-rates",
+    "afterManualRemovalCount": 5,
+    "removedConceptStillSelected": false,
+    "microPresetId": "micro-market-failures-public-goods",
+    "microPresetSelectedConceptIds": [
+      "externalities",
+      "public-goods-and-common-resources",
+      "market-power"
+    ],
+    "consoleErrorOrWarningCount": 0,
+    "notes": "The existing Quick Start UI remained area-filtered. Applying a preset replaced the selected set exactly, and the ordinary concept checkbox remained editable immediately afterward."
+  },
+  "courseAreaRegression": {
+    "schemaVersion": "1.0.0",
+    "status": "PASS",
+    "caseCount": 14,
+    "cases": [
+      {
+        "id": "A",
+        "name": "general + all",
+        "status": "PASS",
+        "visibleCount": 22
+      },
+      {
+        "id": "B",
+        "name": "micro + all",
+        "status": "PASS",
+        "visibleCount": 86
+      },
+      {
+        "id": "C",
+        "name": "macro + all",
+        "status": "PASS",
+        "visibleCount": 79
+      },
+      {
+        "id": "D",
+        "name": "general + ready",
+        "status": "PASS",
+        "visibleCount": 11
+      },
+      {
+        "id": "E",
+        "name": "micro + supporting",
+        "status": "PASS",
+        "visibleCount": 27
+      },
+      {
+        "id": "F",
+        "name": "macro + ready",
+        "status": "PASS",
+        "visibleCount": 68
+      },
+      {
+        "id": "G",
+        "name": "General → Micro → Macro → General",
+        "status": "PASS",
+        "visibleCounts": [
+          22,
+          86,
+          79,
+          22
+        ]
+      },
+      {
+        "id": "H",
+        "name": "expanded Micro family children",
+        "status": "PASS",
+        "parentCount": 8,
+        "childCount": 54
+      },
+      {
+        "id": "I",
+        "name": "Macro excludes Costs of Production children",
+        "status": "PASS",
+        "excludedChildCount": 10
+      },
+      {
+        "id": "J",
+        "name": "search inside Macro",
+        "status": "PASS",
+        "resultCount": 0
+      },
+      {
+        "id": "K",
+        "name": "starter presets remain area-valid",
+        "status": "PASS",
+        "presetCount": 13,
+        "macroPresetCount": 5
+      },
+      {
+        "id": "L",
+        "name": "mobile/accent source contract",
+        "status": "PASS",
+        "accentWidthPx": 4
+      },
+      {
+        "id": "M",
+        "name": "family index is exhaustive and unique",
+        "status": "PASS",
+        "navigationAudit": {
+          "general": {
+            "familyCount": 4,
+            "conceptCount": 22
+          },
+          "micro": {
+            "familyCount": 12,
+            "conceptCount": 86
+          },
+          "macro": {
+            "familyCount": 14,
+            "conceptCount": 79
+          }
+        }
+      },
+      {
+        "id": "N",
+        "name": "concept, family, and abbreviation search",
+        "status": "PASS",
+        "ppfCount": 3,
+        "nashCount": 7,
+        "adAsCount": 6
+      }
+    ],
+    "areaAudit": {
+      "general": {
+        "eligibleConceptCount": 22,
+        "visibleCardCount": 22,
+        "parentCount": 0,
+        "childSubtopicCount": 4,
+        "standaloneCount": 18,
+        "readyCount": 11,
+        "supportingCount": 11
+      },
+      "micro": {
+        "eligibleConceptCount": 86,
+        "visibleCardCount": 86,
+        "parentCount": 8,
+        "childSubtopicCount": 54,
+        "standaloneCount": 24,
+        "readyCount": 59,
+        "supportingCount": 27
+      },
+      "macro": {
+        "eligibleConceptCount": 79,
+        "visibleCardCount": 79,
+        "parentCount": 0,
+        "childSubtopicCount": 4,
+        "standaloneCount": 75,
+        "readyCount": 68,
+        "supportingCount": 11
+      }
+    },
+    "navigationAudit": {
+      "general": {
+        "familyCount": 4,
+        "conceptCount": 22
+      },
+      "micro": {
+        "familyCount": 12,
+        "conceptCount": 86
+      },
+      "macro": {
+        "familyCount": 14,
+        "conceptCount": 79
+      }
+    },
+    "metadataDefectCount": 36,
+    "canonicalConceptCount": 149,
+    "canonicalConceptIdsSha256": "63ea7b2af983c768ec375fe579fe13991479feee305cf67ef032ad8a933a7e00",
+    "composerLibrarySha256": "f377195e16e4a8b21513a7026eb99eb02afb2bedde51b6f2fd737d1a81700461",
+    "allTenModesExpected": true
+  }
+}

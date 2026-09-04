@@ -1,0 +1,588 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseComposerBroadThemes-v1",
+  "generatedAt": "2026-09-04T21:00:00-04:00",
+  "counts": {
+    "allPresets": 13,
+    "microPresets": 7,
+    "macroPresets": 5,
+    "broadMicroThemes": 5,
+    "broadMacroThemes": 5
+  },
+  "broadMicroThemes": [
+    {
+      "id": "micro-market-foundations",
+      "area": "micro",
+      "title": "Demand, Supply & Elasticity",
+      "description": "Markets, equilibrium, shifts, price signals, and responsiveness.",
+      "conceptIds": [
+        "competitive-markets",
+        "demand",
+        "supply",
+        "market-equilibrium",
+        "price-signals",
+        "price-elasticity-of-demand",
+        "price-elasticity-of-supply",
+        "income-elasticity-of-demand",
+        "cross-price-elasticity-of-demand",
+        "elasticity-and-total-revenue",
+        "applications-of-elasticity"
+      ]
+    },
+    {
+      "id": "micro-market-policy",
+      "area": "micro",
+      "title": "Market Policy, Surplus & Welfare",
+      "description": "Surplus, efficiency, price controls, taxes, incidence, and deadweight loss.",
+      "conceptIds": [
+        "consumer-surplus",
+        "producer-surplus",
+        "total-surplus-gains-from-exchange",
+        "efficient-quantity-allocation",
+        "surplus-changes-policy-effects",
+        "efficiency-equity-surplus-limits",
+        "binding-price-ceilings",
+        "binding-price-floors",
+        "tax-wedges-and-revenue",
+        "statutory-versus-economic-tax-incidence",
+        "tax-incidence"
+      ]
+    },
+    {
+      "id": "micro-firms-markets",
+      "area": "micro",
+      "title": "Firms, Costs & Market Structure",
+      "description": "Production, costs, profit, competition, monopoly, differentiation, and strategy.",
+      "conceptIds": [
+        "costs-of-production",
+        "perfect-competition",
+        "monopoly",
+        "monopolistic-competition",
+        "oligopoly"
+      ]
+    },
+    {
+      "id": "micro-market-failures-public-goods",
+      "area": "micro",
+      "title": "Market Failures & Public Goods",
+      "description": "Externalities, corrective policy, public goods, common resources, and market power.",
+      "conceptIds": [
+        "externalities",
+        "public-goods-and-common-resources",
+        "market-power"
+      ]
+    },
+    {
+      "id": "micro-factor-choice-inequality",
+      "area": "micro",
+      "title": "Factor Markets, Consumer Choice & Inequality",
+      "description": "Labor and factor demand, consumer decisions, income distribution, and poverty.",
+      "conceptIds": [
+        "factor-markets",
+        "consumer-choice",
+        "income-inequality-poverty-and-redistribution"
+      ]
+    }
+  ],
+  "broadMacroThemes": [
+    {
+      "id": "macro-measurement-growth",
+      "area": "macro",
+      "title": "Measurement, Growth & Labor",
+      "description": "GDP, inflation measures, real values, productivity, growth, and unemployment.",
+      "conceptIds": [
+        "gdp-measurement",
+        "gdp-components",
+        "real-versus-nominal-gdp",
+        "limits-of-gdp",
+        "cpi-and-inflation-measurement",
+        "cpi-bias",
+        "cpi-versus-gdp-deflator",
+        "indexing-and-real-values",
+        "real-versus-nominal-interest-rates",
+        "living-standards-and-growth",
+        "productivity-measurement",
+        "sources-of-productivity",
+        "economic-growth-policy",
+        "unemployment-measurement",
+        "unemployment-types",
+        "labor-market-institutions",
+        "natural-rate-of-unemployment"
+      ]
+    },
+    {
+      "id": "macro-saving-investment-budgets-debt",
+      "area": "macro",
+      "title": "Saving, Investment, Budgets & Debt",
+      "description": "National saving, loanable funds, crowding out, budgets, deficits, and debt.",
+      "conceptIds": [
+        "saving-and-investment-identities",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "crowding-out-and-capital-formation",
+        "budget-accounting-and-public-saving",
+        "deficits-debt-and-government-borrowing",
+        "debt-measures-burden-and-fiscal-data"
+      ]
+    },
+    {
+      "id": "money-banking-inflation",
+      "area": "macro",
+      "title": "Money, Banking, Inflation & Monetary Policy",
+      "description": "Money, banks, the Fed, money markets, long-run inflation, and policy transmission.",
+      "conceptIds": [
+        "money-functions-and-measures",
+        "central-bank-and-federal-reserve",
+        "bank-balance-sheets-reserves-and-capital",
+        "deposit-creation-and-money-multiplier",
+        "monetary-policy-tools",
+        "monetary-control-limits",
+        "liquidity-preference-and-money-market",
+        "monetary-policy-transmission",
+        "quantity-theory-of-money",
+        "monetary-neutrality",
+        "fisher-effect",
+        "inflation-costs",
+        "inflation-tax-and-deflation"
+      ]
+    },
+    {
+      "id": "stabilization-policy",
+      "area": "macro",
+      "title": "AD-AS, Fiscal Policy & Stabilization",
+      "description": "Aggregate equilibrium, shocks, fiscal policy, self-adjustment, and inflation tradeoffs.",
+      "conceptIds": [
+        "fiscal-policy-and-aggregate-demand",
+        "fiscal-multipliers-and-crowding-out",
+        "stabilization-policy",
+        "aggregate-demand",
+        "short-run-aggregate-supply",
+        "long-run-aggregate-supply-and-potential-output",
+        "ad-as-equilibrium-and-output-gaps",
+        "demand-and-supply-shocks",
+        "long-run-macroeconomic-self-adjustment",
+        "short-run-phillips-curve",
+        "long-run-phillips-curve",
+        "phillips-curve-expectations",
+        "disinflation-and-policy",
+        "sacrifice-ratio"
+      ]
+    },
+    {
+      "id": "open-economy-macro",
+      "area": "macro",
+      "title": "Open-Economy Macro & Exchange Rates",
+      "description": "International transactions, exchange rates, capital flows, FX markets, and policy transmission.",
+      "conceptIds": [
+        "international-transactions-and-identities",
+        "nominal-exchange-rates",
+        "real-exchange-rates-and-purchasing-power",
+        "capital-flows-and-net-capital-outflow",
+        "foreign-exchange-market",
+        "open-economy-policy-transmission"
+      ]
+    }
+  ],
+  "retainedExistingPresetIds": [
+    "general-foundations",
+    "micro-market-foundations",
+    "micro-market-policy",
+    "micro-trade-welfare",
+    "micro-firms-markets",
+    "micro-principles-core",
+    "macro-measurement-growth",
+    "money-banking-inflation",
+    "open-economy-macro",
+    "stabilization-policy"
+  ],
+  "removedPresetIds": [],
+  "newPresetIds": [
+    "micro-market-failures-public-goods",
+    "micro-factor-choice-inequality",
+    "macro-saving-investment-budgets-debt"
+  ],
+  "renamedOrRefocused": [
+    {
+      "id": "micro-market-foundations",
+      "before": {
+        "id": "micro-market-foundations",
+        "area": "micro",
+        "title": "Market Foundations",
+        "description": "Competitive markets, demand, supply, equilibrium, price signals, elasticity, and surplus.",
+        "conceptIds": [
+          "competitive-markets",
+          "demand",
+          "supply",
+          "market-equilibrium",
+          "price-signals",
+          "elasticity",
+          "consumer-and-producer-surplus"
+        ]
+      },
+      "after": {
+        "id": "micro-market-foundations",
+        "area": "micro",
+        "title": "Demand, Supply & Elasticity",
+        "description": "Markets, equilibrium, shifts, price signals, and responsiveness.",
+        "conceptIds": [
+          "competitive-markets",
+          "demand",
+          "supply",
+          "market-equilibrium",
+          "price-signals",
+          "price-elasticity-of-demand",
+          "price-elasticity-of-supply",
+          "income-elasticity-of-demand",
+          "cross-price-elasticity-of-demand",
+          "elasticity-and-total-revenue",
+          "applications-of-elasticity"
+        ]
+      }
+    },
+    {
+      "id": "micro-market-policy",
+      "before": {
+        "id": "micro-market-policy",
+        "area": "micro",
+        "title": "Market Policy",
+        "description": "Elasticity and surplus applied to price controls, tax wedges, and tax incidence.",
+        "conceptIds": [
+          "elasticity",
+          "consumer-and-producer-surplus",
+          "binding-price-ceilings",
+          "binding-price-floors",
+          "tax-wedges-and-revenue",
+          "tax-incidence"
+        ]
+      },
+      "after": {
+        "id": "micro-market-policy",
+        "area": "micro",
+        "title": "Market Policy, Surplus & Welfare",
+        "description": "Surplus, efficiency, price controls, taxes, incidence, and deadweight loss.",
+        "conceptIds": [
+          "consumer-surplus",
+          "producer-surplus",
+          "total-surplus-gains-from-exchange",
+          "efficient-quantity-allocation",
+          "surplus-changes-policy-effects",
+          "efficiency-equity-surplus-limits",
+          "binding-price-ceilings",
+          "binding-price-floors",
+          "tax-wedges-and-revenue",
+          "statutory-versus-economic-tax-incidence",
+          "tax-incidence"
+        ]
+      }
+    },
+    {
+      "id": "micro-firms-markets",
+      "before": {
+        "id": "micro-firms-markets",
+        "area": "micro",
+        "title": "Firms & Market Structure",
+        "description": "Production costs, factor markets, and firm behavior in perfect competition, monopoly, monopolistic competition, and oligopoly.",
+        "conceptIds": [
+          "costs-of-production",
+          "factor-markets",
+          "perfect-competition",
+          "monopoly",
+          "monopolistic-competition",
+          "oligopoly"
+        ]
+      },
+      "after": {
+        "id": "micro-firms-markets",
+        "area": "micro",
+        "title": "Firms, Costs & Market Structure",
+        "description": "Production, costs, profit, competition, monopoly, differentiation, and strategy.",
+        "conceptIds": [
+          "costs-of-production",
+          "perfect-competition",
+          "monopoly",
+          "monopolistic-competition",
+          "oligopoly"
+        ]
+      }
+    },
+    {
+      "id": "macro-measurement-growth",
+      "before": {
+        "id": "macro-measurement-growth",
+        "area": "macro",
+        "title": "Macro measurement and growth",
+        "description": "GDP, inflation measures, real values, productivity, growth, and unemployment.",
+        "conceptIds": [
+          "gdp-measurement",
+          "gdp-components",
+          "real-versus-nominal-gdp",
+          "limits-of-gdp",
+          "cpi-and-inflation-measurement",
+          "cpi-bias",
+          "cpi-versus-gdp-deflator",
+          "indexing-and-real-values",
+          "real-versus-nominal-interest-rates",
+          "living-standards-and-growth",
+          "productivity-measurement",
+          "sources-of-productivity",
+          "economic-growth-policy",
+          "unemployment-measurement",
+          "unemployment-types",
+          "labor-market-institutions",
+          "natural-rate-of-unemployment"
+        ]
+      },
+      "after": {
+        "id": "macro-measurement-growth",
+        "area": "macro",
+        "title": "Measurement, Growth & Labor",
+        "description": "GDP, inflation measures, real values, productivity, growth, and unemployment.",
+        "conceptIds": [
+          "gdp-measurement",
+          "gdp-components",
+          "real-versus-nominal-gdp",
+          "limits-of-gdp",
+          "cpi-and-inflation-measurement",
+          "cpi-bias",
+          "cpi-versus-gdp-deflator",
+          "indexing-and-real-values",
+          "real-versus-nominal-interest-rates",
+          "living-standards-and-growth",
+          "productivity-measurement",
+          "sources-of-productivity",
+          "economic-growth-policy",
+          "unemployment-measurement",
+          "unemployment-types",
+          "labor-market-institutions",
+          "natural-rate-of-unemployment"
+        ]
+      }
+    },
+    {
+      "id": "money-banking-inflation",
+      "before": {
+        "id": "money-banking-inflation",
+        "area": "macro",
+        "title": "Money, banking, and inflation",
+        "description": "Money creation, central banking, monetary tools, inflation, and the value of money.",
+        "conceptIds": [
+          "money-functions-and-measures",
+          "central-bank-and-federal-reserve",
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier",
+          "monetary-policy-tools",
+          "monetary-control-limits",
+          "quantity-theory-of-money",
+          "monetary-neutrality",
+          "fisher-effect",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ]
+      },
+      "after": {
+        "id": "money-banking-inflation",
+        "area": "macro",
+        "title": "Money, Banking, Inflation & Monetary Policy",
+        "description": "Money, banks, the Fed, money markets, long-run inflation, and policy transmission.",
+        "conceptIds": [
+          "money-functions-and-measures",
+          "central-bank-and-federal-reserve",
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier",
+          "monetary-policy-tools",
+          "monetary-control-limits",
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission",
+          "quantity-theory-of-money",
+          "monetary-neutrality",
+          "fisher-effect",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ]
+      }
+    },
+    {
+      "id": "open-economy-macro",
+      "before": {
+        "id": "open-economy-macro",
+        "area": "macro",
+        "title": "Open-Economy Macroeconomics",
+        "description": "International transactions, exchange rates, capital flows, the foreign-exchange market, and policy transmission.",
+        "conceptIds": [
+          "international-transactions-and-identities",
+          "nominal-exchange-rates",
+          "real-exchange-rates-and-purchasing-power",
+          "capital-flows-and-net-capital-outflow",
+          "foreign-exchange-market",
+          "open-economy-policy-transmission"
+        ]
+      },
+      "after": {
+        "id": "open-economy-macro",
+        "area": "macro",
+        "title": "Open-Economy Macro & Exchange Rates",
+        "description": "International transactions, exchange rates, capital flows, FX markets, and policy transmission.",
+        "conceptIds": [
+          "international-transactions-and-identities",
+          "nominal-exchange-rates",
+          "real-exchange-rates-and-purchasing-power",
+          "capital-flows-and-net-capital-outflow",
+          "foreign-exchange-market",
+          "open-economy-policy-transmission"
+        ]
+      }
+    },
+    {
+      "id": "stabilization-policy",
+      "before": {
+        "id": "stabilization-policy",
+        "area": "macro",
+        "title": "Stabilization and policy",
+        "description": "AD-AS, monetary and fiscal transmission, Phillips curves, and policy tradeoffs.",
+        "conceptIds": [
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission",
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy",
+          "aggregate-demand",
+          "short-run-aggregate-supply",
+          "long-run-aggregate-supply-and-potential-output",
+          "ad-as-equilibrium-and-output-gaps",
+          "demand-and-supply-shocks",
+          "long-run-macroeconomic-self-adjustment",
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations",
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ]
+      },
+      "after": {
+        "id": "stabilization-policy",
+        "area": "macro",
+        "title": "AD-AS, Fiscal Policy & Stabilization",
+        "description": "Aggregate equilibrium, shocks, fiscal policy, self-adjustment, and inflation tradeoffs.",
+        "conceptIds": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy",
+          "aggregate-demand",
+          "short-run-aggregate-supply",
+          "long-run-aggregate-supply-and-potential-output",
+          "ad-as-equilibrium-and-output-gaps",
+          "demand-and-supply-shocks",
+          "long-run-macroeconomic-self-adjustment",
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations",
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ]
+      }
+    }
+  ],
+  "displayOrder": [
+    "general-foundations",
+    "micro-market-foundations",
+    "micro-market-policy",
+    "micro-firms-markets",
+    "micro-market-failures-public-goods",
+    "micro-factor-choice-inequality",
+    "micro-trade-welfare",
+    "micro-principles-core",
+    "macro-measurement-growth",
+    "macro-saving-investment-budgets-debt",
+    "money-banking-inflation",
+    "stabilization-policy",
+    "open-economy-macro"
+  ],
+  "parentReferences": [
+    {
+      "presetId": "micro-firms-markets",
+      "conceptId": "costs-of-production",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-firms-markets",
+      "conceptId": "perfect-competition",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-firms-markets",
+      "conceptId": "monopoly",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-firms-markets",
+      "conceptId": "monopolistic-competition",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-firms-markets",
+      "conceptId": "oligopoly",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-trade-welfare",
+      "conceptId": "elasticity",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-trade-welfare",
+      "conceptId": "consumer-and-producer-surplus",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-trade-welfare",
+      "conceptId": "international-trade-and-trade-policy",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-principles-core",
+      "conceptId": "elasticity",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-principles-core",
+      "conceptId": "consumer-and-producer-surplus",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-principles-core",
+      "conceptId": "international-trade-and-trade-policy",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-principles-core",
+      "conceptId": "costs-of-production",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-principles-core",
+      "conceptId": "perfect-competition",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-principles-core",
+      "conceptId": "monopoly",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-principles-core",
+      "conceptId": "monopolistic-competition",
+      "selectionRole": "family-parent"
+    },
+    {
+      "presetId": "micro-principles-core",
+      "conceptId": "oligopoly",
+      "selectionRole": "family-parent"
+    }
+  ],
+  "expectedModeDeficiencies": [
+    {
+      "presetId": "macro-measurement-growth",
+      "detail": "Trial by Graph lacks graph-safe questions; no unrelated concepts were added."
+    }
+  ]
+}

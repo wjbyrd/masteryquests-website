@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseComposerBroadThemes-v1",
+  "capturedAt": "2026-09-04T21:00:00-04:00",
+  "repositoryRoot": "C:/Users/Jennings/Documents/GitHub/masteryquests-website",
+  "branch": "main",
+  "composerArchitecture": {
+    "presetSource": "build/faculty-build-composer/composer.js",
+    "representation": "Ordered PRESETS array; each preset stores an area and an explicit conceptIds array.",
+    "applicationBehavior": "applyPreset replaces state.selectedConceptIds with the preset's valid concept IDs, resets checkpoint focus, and then leaves the checkboxes editable.",
+    "uiPlacement": "One area-filtered Starter combinations section above the individual concept taxonomy.",
+    "wholeCourseSelection": "No dedicated whole-course Quick Start; Principles Micro Core is the existing broad Micro shortcut, while the full course remains selectable through the taxonomy.",
+    "validationSources": [
+      "build/faculty-build-composer/tests/run_course_area_step3.js",
+      "build/faculty-build-composer/tests/run_public_goods_common_resources_question_pool_validation.mjs",
+      "build/faculty-build-composer/tests/run_remaining_micro_manual_audit_validation.mjs"
+    ]
+  },
+  "taxonomy": {
+    "microNavigationParentCount": 12,
+    "microSelectableAreaConceptCount": 86,
+    "microFamilyParentCount": 8,
+    "microSelectableChildSubtopicCount": 54,
+    "macroNavigationParentCount": 14,
+    "macroSelectableAreaConceptCount": 79,
+    "macroDedicatedParentCount": 11,
+    "macroOrdinarySelectableChildCount": 57,
+    "microParentFamilies": [
+      "micro-foundations", "markets-equilibrium", "elasticity", "welfare-surplus",
+      "policy-market-failure", "international-trade", "costs-production",
+      "perfect-competition", "monopoly", "monopolistic-competition", "oligopoly",
+      "people-institutions"
+    ],
+    "macroParentFamilies": [
+      "macro-foundations", "markets-policy", "international-trade", "gdp-national-income",
+      "inflation-real-values", "growth-productivity", "unemployment-labor",
+      "saving-fiscal-foundations", "money-banking-fed", "money-growth-inflation",
+      "ad-as-equilibrium", "stabilization-policy", "open-economy-macroeconomics",
+      "phillips-disinflation"
+    ]
+  },
+  "beforeCounts": {
+    "allPresets": 10,
+    "microPresets": 5,
+    "macroPresets": 4,
+    "conceptReviewResourceFilesFingerprinted": 289,
+    "questionAssetFilesFingerprinted": 516
+  },
+  "displayOrder": [
+    "general-foundations", "micro-market-foundations", "micro-market-policy",
+    "micro-trade-welfare", "micro-firms-markets", "micro-principles-core",
+    "macro-measurement-growth", "money-banking-inflation", "open-economy-macro",
+    "stabilization-policy"
+  ],
+  "presets": [
+    {
+      "id": "general-foundations",
+      "area": "general",
+      "title": "General economics foundations",
+      "description": "Choice, tradeoffs, models, incentives, policy language, and production possibilities.",
+      "conceptIds": ["scarcity-and-tradeoffs", "opportunity-cost", "marginal-analysis", "incentives", "gains-from-trade", "models-and-assumptions", "production-possibilities-frontier", "micro-versus-macro", "positive-versus-normative-analysis", "economist-policy-role"]
+    },
+    {
+      "id": "micro-market-foundations",
+      "area": "micro",
+      "title": "Market Foundations",
+      "description": "Competitive markets, demand, supply, equilibrium, price signals, elasticity, and surplus.",
+      "conceptIds": ["competitive-markets", "demand", "supply", "market-equilibrium", "price-signals", "elasticity", "consumer-and-producer-surplus"]
+    },
+    {
+      "id": "micro-market-policy",
+      "area": "micro",
+      "title": "Market Policy",
+      "description": "Elasticity and surplus applied to price controls, tax wedges, and tax incidence.",
+      "conceptIds": ["elasticity", "consumer-and-producer-surplus", "binding-price-ceilings", "binding-price-floors", "tax-wedges-and-revenue", "tax-incidence"]
+    },
+    {
+      "id": "micro-trade-welfare",
+      "area": "micro",
+      "title": "Trade & Welfare",
+      "description": "Gains from trade, elasticity, consumer and producer surplus, and international trade policy.",
+      "conceptIds": ["gains-from-trade", "elasticity", "consumer-and-producer-surplus", "international-trade-and-trade-policy"]
+    },
+    {
+      "id": "micro-firms-markets",
+      "area": "micro",
+      "title": "Firms & Market Structure",
+      "description": "Production costs, factor markets, and firm behavior in perfect competition, monopoly, monopolistic competition, and oligopoly.",
+      "conceptIds": ["costs-of-production", "factor-markets", "perfect-competition", "monopoly", "monopolistic-competition", "oligopoly"]
+    },
+    {
+      "id": "micro-principles-core",
+      "area": "micro",
+      "title": "Principles Micro Core",
+      "description": "A broad sequence from markets and elasticity through surplus, trade, costs, and the major market structures.",
+      "conceptIds": ["competitive-markets", "demand", "supply", "market-equilibrium", "price-signals", "elasticity", "consumer-and-producer-surplus", "international-trade-and-trade-policy", "costs-of-production", "factor-markets", "perfect-competition", "monopoly", "monopolistic-competition", "oligopoly"]
+    },
+    {
+      "id": "macro-measurement-growth",
+      "area": "macro",
+      "title": "Macro measurement and growth",
+      "description": "GDP, inflation measures, real values, productivity, growth, and unemployment.",
+      "conceptIds": ["gdp-measurement", "gdp-components", "real-versus-nominal-gdp", "limits-of-gdp", "cpi-and-inflation-measurement", "cpi-bias", "cpi-versus-gdp-deflator", "indexing-and-real-values", "real-versus-nominal-interest-rates", "living-standards-and-growth", "productivity-measurement", "sources-of-productivity", "economic-growth-policy", "unemployment-measurement", "unemployment-types", "labor-market-institutions", "natural-rate-of-unemployment"]
+    },
+    {
+      "id": "money-banking-inflation",
+      "area": "macro",
+      "title": "Money, banking, and inflation",
+      "description": "Money creation, central banking, monetary tools, inflation, and the value of money.",
+      "conceptIds": ["money-functions-and-measures", "central-bank-and-federal-reserve", "bank-balance-sheets-reserves-and-capital", "deposit-creation-and-money-multiplier", "monetary-policy-tools", "monetary-control-limits", "quantity-theory-of-money", "monetary-neutrality", "fisher-effect", "inflation-costs", "inflation-tax-and-deflation"]
+    },
+    {
+      "id": "open-economy-macro",
+      "area": "macro",
+      "title": "Open-Economy Macroeconomics",
+      "description": "International transactions, exchange rates, capital flows, the foreign-exchange market, and policy transmission.",
+      "conceptIds": ["international-transactions-and-identities", "nominal-exchange-rates", "real-exchange-rates-and-purchasing-power", "capital-flows-and-net-capital-outflow", "foreign-exchange-market", "open-economy-policy-transmission"]
+    },
+    {
+      "id": "stabilization-policy",
+      "area": "macro",
+      "title": "Stabilization and policy",
+      "description": "AD-AS, monetary and fiscal transmission, Phillips curves, and policy tradeoffs.",
+      "conceptIds": ["liquidity-preference-and-money-market", "monetary-policy-transmission", "fiscal-policy-and-aggregate-demand", "fiscal-multipliers-and-crowding-out", "stabilization-policy", "aggregate-demand", "short-run-aggregate-supply", "long-run-aggregate-supply-and-potential-output", "ad-as-equilibrium-and-output-gaps", "demand-and-supply-shocks", "long-run-macroeconomic-self-adjustment", "short-run-phillips-curve", "long-run-phillips-curve", "phillips-curve-expectations", "disinflation-and-policy", "sacrifice-ratio"]
+    }
+  ],
+  "protectedFingerprints": {
+    "composerJsBefore": "81325f501b16827acbf4f10e59aa72e5f88337eae8fb8426f7122695fd243adb",
+    "composerLibrary": "4edbfa1c0747a722c8b4d3fb09f19385da8b5013538dcfb28f31c33df5ae6aad",
+    "composerCore": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "courseAreaModel": "d8003382eabb5fd1b69fa0ab6969bdde0db389c65084c0505c6d563310559746",
+    "conceptReviewResources": "546a8c3100efe30b95714cd0de1012c11d779aabec73dc5b6310749742803a34",
+    "questionAssets": "31aa094f07babc161e9e39ecae3acf4a4fa5fa831f1c243276e59049267425aa"
+  }
+}

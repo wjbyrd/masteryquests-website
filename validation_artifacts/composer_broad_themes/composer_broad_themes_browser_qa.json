@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseComposerBroadThemes-v1",
+  "testedAt": "2026-09-04T21:00:00-04:00",
+  "url": "http://127.0.0.1:8770/build/faculty-build-composer/index.html",
+  "status": "PASS",
+  "macroQuickBuildHeadingVisible": true,
+  "microQuickBuildHeadingVisible": true,
+  "macroQuickBuildCardCount": 5,
+  "microQuickBuildCardCount": 7,
+  "testedPresetId": "open-economy-macro",
+  "presetConceptCount": 6,
+  "selectedConceptIds": [
+    "international-transactions-and-identities",
+    "nominal-exchange-rates",
+    "real-exchange-rates-and-purchasing-power",
+    "capital-flows-and-net-capital-outflow",
+    "foreign-exchange-market",
+    "open-economy-policy-transmission"
+  ],
+  "manualRemovalConceptId": "nominal-exchange-rates",
+  "afterManualRemovalCount": 5,
+  "removedConceptStillSelected": false,
+  "microPresetId": "micro-market-failures-public-goods",
+  "microPresetSelectedConceptIds": [
+    "externalities",
+    "public-goods-and-common-resources",
+    "market-power"
+  ],
+  "consoleErrorOrWarningCount": 0,
+  "notes": "The existing Quick Start UI remained area-filtered. Applying a preset replaced the selected set exactly, and the ordinary concept checkbox remained editable immediately afterward."
+}

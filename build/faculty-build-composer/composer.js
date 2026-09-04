@@ -60,21 +60,54 @@ const PRESETS = [
   {
     id: 'micro-market-foundations',
     area: 'micro',
-    title: 'Market Foundations',
-    description: 'Competitive markets, demand, supply, equilibrium, price signals, elasticity, and surplus.',
+    title: 'Demand, Supply & Elasticity',
+    description: 'Markets, equilibrium, shifts, price signals, and responsiveness.',
     conceptIds: [
       'competitive-markets', 'demand', 'supply', 'market-equilibrium',
-      'price-signals', 'elasticity', 'consumer-and-producer-surplus'
+      'price-signals', 'price-elasticity-of-demand', 'price-elasticity-of-supply',
+      'income-elasticity-of-demand', 'cross-price-elasticity-of-demand',
+      'elasticity-and-total-revenue', 'applications-of-elasticity'
     ]
   },
   {
     id: 'micro-market-policy',
     area: 'micro',
-    title: 'Market Policy',
-    description: 'Elasticity and surplus applied to price controls, tax wedges, and tax incidence.',
+    title: 'Market Policy, Surplus & Welfare',
+    description: 'Surplus, efficiency, price controls, taxes, incidence, and deadweight loss.',
     conceptIds: [
-      'elasticity', 'consumer-and-producer-surplus',
-      'binding-price-ceilings', 'binding-price-floors', 'tax-wedges-and-revenue', 'tax-incidence'
+      'consumer-surplus', 'producer-surplus', 'total-surplus-gains-from-exchange',
+      'efficient-quantity-allocation', 'surplus-changes-policy-effects',
+      'efficiency-equity-surplus-limits', 'binding-price-ceilings',
+      'binding-price-floors', 'tax-wedges-and-revenue',
+      'statutory-versus-economic-tax-incidence', 'tax-incidence'
+    ]
+  },
+  {
+    id: 'micro-firms-markets',
+    area: 'micro',
+    title: 'Firms, Costs & Market Structure',
+    description: 'Production, costs, profit, competition, monopoly, differentiation, and strategy.',
+    conceptIds: [
+      'costs-of-production', 'perfect-competition', 'monopoly',
+      'monopolistic-competition', 'oligopoly'
+    ]
+  },
+  {
+    id: 'micro-market-failures-public-goods',
+    area: 'micro',
+    title: 'Market Failures & Public Goods',
+    description: 'Externalities, corrective policy, public goods, common resources, and market power.',
+    conceptIds: [
+      'externalities', 'public-goods-and-common-resources', 'market-power'
+    ]
+  },
+  {
+    id: 'micro-factor-choice-inequality',
+    area: 'micro',
+    title: 'Factor Markets, Consumer Choice & Inequality',
+    description: 'Labor and factor demand, consumer decisions, income distribution, and poverty.',
+    conceptIds: [
+      'factor-markets', 'consumer-choice', 'income-inequality-poverty-and-redistribution'
     ]
   },
   {
@@ -85,16 +118,6 @@ const PRESETS = [
     conceptIds: [
       'gains-from-trade', 'elasticity', 'consumer-and-producer-surplus',
       'international-trade-and-trade-policy'
-    ]
-  },
-  {
-    id: 'micro-firms-markets',
-    area: 'micro',
-    title: 'Firms & Market Structure',
-    description: 'Production costs, factor markets, and firm behavior in perfect competition, monopoly, monopolistic competition, and oligopoly.',
-    conceptIds: [
-      'costs-of-production', 'factor-markets', 'perfect-competition', 'monopoly',
-      'monopolistic-competition', 'oligopoly'
     ]
   },
   {
@@ -112,7 +135,7 @@ const PRESETS = [
   {
     id: 'macro-measurement-growth',
     area: 'macro',
-    title: 'Macro measurement and growth',
+    title: 'Measurement, Growth & Labor',
     description: 'GDP, inflation measures, real values, productivity, growth, and unemployment.',
     conceptIds: [
       'gdp-measurement', 'gdp-components', 'real-versus-nominal-gdp', 'limits-of-gdp',
@@ -124,36 +147,37 @@ const PRESETS = [
     ]
   },
   {
+    id: 'macro-saving-investment-budgets-debt',
+    area: 'macro',
+    title: 'Saving, Investment, Budgets & Debt',
+    description: 'National saving, loanable funds, crowding out, budgets, deficits, and debt.',
+    conceptIds: [
+      'saving-and-investment-identities', 'loanable-funds-equilibrium',
+      'loanable-funds-shifts', 'crowding-out-and-capital-formation',
+      'budget-accounting-and-public-saving', 'deficits-debt-and-government-borrowing',
+      'debt-measures-burden-and-fiscal-data'
+    ]
+  },
+  {
     id: 'money-banking-inflation',
     area: 'macro',
-    title: 'Money, banking, and inflation',
-    description: 'Money creation, central banking, monetary tools, inflation, and the value of money.',
+    title: 'Money, Banking, Inflation & Monetary Policy',
+    description: 'Money, banks, the Fed, money markets, long-run inflation, and policy transmission.',
     conceptIds: [
       'money-functions-and-measures', 'central-bank-and-federal-reserve',
       'bank-balance-sheets-reserves-and-capital', 'deposit-creation-and-money-multiplier',
       'monetary-policy-tools', 'monetary-control-limits',
+      'liquidity-preference-and-money-market', 'monetary-policy-transmission',
       'quantity-theory-of-money', 'monetary-neutrality', 'fisher-effect',
       'inflation-costs', 'inflation-tax-and-deflation'
     ]
   },
   {
-    id: 'open-economy-macro',
-    area: 'macro',
-    title: 'Open-Economy Macroeconomics',
-    description: 'International transactions, exchange rates, capital flows, the foreign-exchange market, and policy transmission.',
-    conceptIds: [
-      'international-transactions-and-identities', 'nominal-exchange-rates',
-      'real-exchange-rates-and-purchasing-power', 'capital-flows-and-net-capital-outflow',
-      'foreign-exchange-market', 'open-economy-policy-transmission'
-    ]
-  },
-  {
     id: 'stabilization-policy',
     area: 'macro',
-    title: 'Stabilization and policy',
-    description: 'AD-AS, monetary and fiscal transmission, Phillips curves, and policy tradeoffs.',
+    title: 'AD-AS, Fiscal Policy & Stabilization',
+    description: 'Aggregate equilibrium, shocks, fiscal policy, self-adjustment, and inflation tradeoffs.',
     conceptIds: [
-      'liquidity-preference-and-money-market', 'monetary-policy-transmission',
       'fiscal-policy-and-aggregate-demand', 'fiscal-multipliers-and-crowding-out',
       'stabilization-policy', 'aggregate-demand', 'short-run-aggregate-supply',
       'long-run-aggregate-supply-and-potential-output',
@@ -161,6 +185,17 @@ const PRESETS = [
       'long-run-macroeconomic-self-adjustment',
       'short-run-phillips-curve', 'long-run-phillips-curve',
       'phillips-curve-expectations', 'disinflation-and-policy', 'sacrifice-ratio',
+    ]
+  },
+  {
+    id: 'open-economy-macro',
+    area: 'macro',
+    title: 'Open-Economy Macro & Exchange Rates',
+    description: 'International transactions, exchange rates, capital flows, FX markets, and policy transmission.',
+    conceptIds: [
+      'international-transactions-and-identities', 'nominal-exchange-rates',
+      'real-exchange-rates-and-purchasing-power', 'capital-flows-and-net-capital-outflow',
+      'foreign-exchange-market', 'open-economy-policy-transmission'
     ]
   }
 ];
@@ -780,6 +815,7 @@ function renderThemeSlots(){
 
 function renderPresets(){
   const area = $('areaFilter').value;
+  const heading = $('presetHeading');
   const help = $('presetHelp');
   const container = $('presetOptions');
   $('presetSection')?.classList.toggle('hidden', !area);
@@ -792,6 +828,7 @@ function renderPresets(){
   }
 
   const presets = PRESETS.filter(preset => preset.area === area);
+  if(heading) heading.textContent = area === 'micro' ? 'Micro Quick Builds' : area === 'macro' ? 'Macro Quick Builds' : 'General Quick Builds';
   if(help) help.textContent = `Optional quick starts for ${AREA_LABELS[area]}. Apply one, then add or remove concepts as needed.`;
 
   container.innerHTML = presets.map(preset => `

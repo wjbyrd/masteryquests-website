@@ -30,7 +30,7 @@ function searchMatch(concept, search, area, model){
 }
 function extractPresets(){
   const source = fs.readFileSync(path.join(root, 'composer.js'), 'utf8');
-  const match = source.match(/const PRESETS = (\[[\s\S]*?\n\]);\n\nconst state/);
+  const match = source.match(/const PRESETS = (\[[\s\S]*?\]);\s*const state/);
   if(!match) throw new Error('Could not extract PRESETS.');
   return vm.runInNewContext(match[1]);
 }
