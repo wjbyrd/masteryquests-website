@@ -1,0 +1,78 @@
+{
+  "phase": "phaseAnonymousTelemetryPOC-v1",
+  "runId": "10000000-0000-4000-8000-000000000106",
+  "anonymousClientId": "10000000-0000-4000-8000-000000009001",
+  "gameId": "cost-directive",
+  "mode": "standard",
+  "startedAt": "2026-09-04T23:46:19.893Z",
+  "completedAt": "2026-09-04T23:46:19.893Z",
+  "completionStatus": "complete",
+  "eventCount": 6,
+  "answerCount": 1,
+  "correctAnswers": 1,
+  "accuracy": 1,
+  "rapidGuessCount": 0,
+  "remediationDetours": 0,
+  "bridgeTriggers": 0,
+  "retestTriggers": 0,
+  "bossCompletions": 0,
+  "graphAnswers": 0,
+  "artifacts": [],
+  "finalScore": 0,
+  "maxStreak": 0,
+  "masterySummary": {
+    "attempts": 1,
+    "correct": 1,
+    "accuracy": 1
+  },
+  "sequence": {
+    "duplicateEventIds": [],
+    "gaps": [],
+    "outOfOrder": [],
+    "contiguous": true
+  },
+  "timeline": [
+    {
+      "sequenceNumber": 1,
+      "eventType": "run_started",
+      "timestamp": "2026-09-04T23:46:19.893Z",
+      "position": 1,
+      "questionId": "SYNTH-Q-1"
+    },
+    {
+      "sequenceNumber": 2,
+      "eventType": "answer_evaluated",
+      "timestamp": "2026-09-04T23:46:19.893Z",
+      "position": 1,
+      "questionId": "SYNTH-Q-1"
+    },
+    {
+      "sequenceNumber": 3,
+      "eventType": "run_paused",
+      "timestamp": "2026-09-04T23:46:19.893Z",
+      "position": 1,
+      "questionId": "SYNTH-Q-1"
+    },
+    {
+      "sequenceNumber": 4,
+      "eventType": "run_resumed",
+      "timestamp": "2026-09-04T23:46:19.893Z",
+      "position": 1,
+      "questionId": "SYNTH-Q-1"
+    },
+    {
+      "sequenceNumber": 5,
+      "eventType": "mastery_report_summary_emitted",
+      "timestamp": "2026-09-04T23:46:19.893Z",
+      "position": 1,
+      "questionId": "SYNTH-Q-1"
+    },
+    {
+      "sequenceNumber": 6,
+      "eventType": "run_completed",
+      "timestamp": "2026-09-04T23:46:19.893Z",
+      "position": 1,
+      "questionId": "SYNTH-Q-1"
+    }
+  ]
+}

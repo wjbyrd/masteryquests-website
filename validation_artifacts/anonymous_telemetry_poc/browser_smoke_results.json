@@ -1,0 +1,29 @@
+{
+  "phase": "phaseAnonymousTelemetryPOC-v1",
+  "testedAt": "2026-09-04T23:34:00.000Z",
+  "status": "PASS",
+  "syntheticQA": true,
+  "environment": {
+    "site": "local static server at 127.0.0.1",
+    "backend": "intentionally unavailable on the static server",
+    "endpointResponseObserved": "HTTP 501",
+    "browser": "Codex in-app browser"
+  },
+  "checks": [
+    { "name": "private hub loads without public navigation changes", "status": "PASS" },
+    { "name": "private Cost Directive launches from the hub", "status": "PASS" },
+    { "name": "hub preserves telemetryDebug and telemetrySynthetic query flags", "status": "PASS" },
+    { "name": "authoritative title, images, question bank, and mode UI load through the private entrypoint", "status": "PASS" },
+    { "name": "all visible Cost Directive modes remain available", "status": "PASS" },
+    { "name": "plain-language anonymous telemetry disclosure is visible but compact", "status": "PASS" },
+    { "name": "debug panel is collapsed by default and does not block launch controls", "status": "PASS" },
+    { "name": "debug panel reports phase, build, schema, endpoint, queue, and send status", "status": "PASS" },
+    { "name": "fresh standard run receives opaque UUID client and run identifiers", "status": "PASS" },
+    { "name": "question display and answer evaluation add ordered queued events", "status": "PASS" },
+    { "name": "simulated failure preserves the queue and gameplay remains interactive", "status": "PASS" },
+    { "name": "refresh exposes continue-run UI and resume preserves run ID with a continuing sequence", "status": "PASS" },
+    { "name": "real endpoint failure is reported diagnostically without a gameplay error", "status": "PASS" },
+    { "name": "synthetic QA mode is visibly true when telemetrySynthetic=1", "status": "PASS" }
+  ],
+  "privacyNote": "No synthetic browser events left the localhost origin. Random identifiers are intentionally omitted from this artifact."
+}

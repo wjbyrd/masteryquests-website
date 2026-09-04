@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "masteryquests-anonymous-telemetry-poc",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-08-07",
+  "workers_dev": false,
+  "d1_databases": [
+    {
+      "binding": "TELEMETRY_DB",
+      "database_name": "masteryquests-anonymous-telemetry-poc",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "ALLOWED_ORIGINS": "https://masteryquests.com,https://www.masteryquests.com",
+    "MAX_EVENTS_PER_CLIENT_MINUTE": "300"
+  }
+}

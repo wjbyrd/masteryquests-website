@@ -1,0 +1,83 @@
+{
+  "phase": "phaseAnonymousTelemetryPOC-v1",
+  "generatedAt": "2026-09-04T23:46:20.809Z",
+  "status": "PASS",
+  "passed": 18,
+  "failed": 0,
+  "total": 18,
+  "synthetic": true,
+  "results": [
+    {
+      "name": "01 migration creates normalized tables",
+      "status": "PASS"
+    },
+    {
+      "name": "02 health endpoint reports storage",
+      "status": "PASS"
+    },
+    {
+      "name": "03 disallowed origin rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "04 direct identifier rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "04b arbitrary extras rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "04c duplicate run sequence inside one batch rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "05 valid batch ingests",
+      "status": "PASS"
+    },
+    {
+      "name": "06 duplicate retry is idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "07 resumed run stores one run with contiguous sequence",
+      "status": "PASS"
+    },
+    {
+      "name": "08 completion and mastery batch ingests",
+      "status": "PASS"
+    },
+    {
+      "name": "09 admin routes require bearer secret",
+      "status": "PASS"
+    },
+    {
+      "name": "10 admin summary returns counts without caching",
+      "status": "PASS"
+    },
+    {
+      "name": "11 run events are sequence ordered",
+      "status": "PASS"
+    },
+    {
+      "name": "12 server reconstruction is coherent",
+      "status": "PASS"
+    },
+    {
+      "name": "13 anomaly report surfaces incomplete runs",
+      "status": "PASS"
+    },
+    {
+      "name": "14 CSV export excludes synthetic by default",
+      "status": "PASS"
+    },
+    {
+      "name": "15 CSV export can include synthetic",
+      "status": "PASS"
+    },
+    {
+      "name": "16 synthetic cleanup removes QA rows",
+      "status": "PASS"
+    }
+  ]
+}

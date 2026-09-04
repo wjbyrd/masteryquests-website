@@ -1,0 +1,2950 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head><meta name="robots" content="noindex,nofollow,noarchive"><meta name="anonymous-telemetry-phase" content="phaseAnonymousTelemetryPOC-v1"><meta name="anonymous-telemetry-endpoint" content="/api/anonymous-telemetry-poc/v1/events"><base href="/play/managerial-intelligence-directorate/"><script src="/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Managerial Intelligence Directorate</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+  *{
+    box-sizing:border-box;
+  }
+
+body{
+  margin:0;
+  min-height:100vh;
+  background:#000;
+  color:#fff;
+  font-family:'Rajdhani', Arial, sans-serif;
+  overflow:hidden;
+}
+
+  button,
+  input{
+    font:inherit;
+  }
+
+  #splashScreen{
+    position:fixed;
+    inset:0;
+    z-index:30;
+    background:
+      linear-gradient(rgba(0,0,0,.05), rgba(0,0,0,.05)),
+      url('titlescreen.webp');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity:1;
+    transition:opacity 1s ease, visibility 1s ease;
+  }
+
+  @media (max-width: 768px){
+    #splashScreen{
+      background-image:
+        linear-gradient(rgba(0,0,0,.05), rgba(0,0,0,.05)),
+        url('titlescreen_mobile.webp');
+      background-size:cover;
+      background-position:center;
+    }
+  }
+
+  #splashScreen.hidden{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+  }
+
+  .splash-status{
+    position:fixed;
+    right:34px;
+    bottom:26px;
+    font-size:13px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.55);
+    text-shadow:0 0 8px rgba(0,0,0,.8);
+    animation:statusPulse 1.8s ease-in-out infinite;
+  }
+
+  .splash-enter{
+    position:fixed;
+    left:50%;
+    bottom:72px;
+    z-index:31;
+    transform:translateX(-50%);
+    display:none;
+    padding:14px 26px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.28);
+    background:rgba(0,0,0,.42);
+    color:rgba(255,255,255,.84);
+    cursor:pointer;
+    font-size:13px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    text-shadow:0 0 8px rgba(0,0,0,.8);
+    box-shadow:0 0 22px rgba(0,0,0,.55), inset 0 0 18px rgba(255,255,255,.04);
+    opacity:0;
+    transition:opacity .65s ease, transform .18s ease, border-color .18s ease, background .18s ease;
+  }
+
+  #splashScreen.ready .splash-enter{
+    display:block;
+    opacity:1;
+  }
+
+  .splash-enter:hover{
+    transform:translateX(-50%) translateY(-2px);
+    border-color:rgba(255,255,255,.55);
+    background:rgba(255,255,255,.08);
+    color:#fff;
+  }
+
+  .sound-toggle{
+    position:fixed;
+    right:28px;
+    bottom:24px;
+    z-index:12;
+    display:none;
+    padding:10px 13px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.22);
+    background:rgba(0,0,0,.46);
+    color:rgba(255,255,255,.72);
+    cursor:pointer;
+    font-size:11px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    box-shadow:0 0 18px rgba(0,0,0,.45);
+  }
+
+  .sound-toggle.visible{
+    display:block;
+  }
+
+  .sound-toggle:hover{
+    color:#fff;
+    border-color:rgba(255,255,255,.42);
+    background:rgba(255,255,255,.08);
+  }
+
+  .help-button{
+  position:fixed;
+  left:28px;
+  bottom:24px;
+  z-index:12;
+  display:none;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(0,0,0,.46);
+  color:rgba(255,255,255,.72);
+  cursor:pointer;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  box-shadow:0 0 18px rgba(0,0,0,.45);
+}
+
+.help-button.visible{
+  display:block;
+}
+
+.help-button:hover{
+  color:#fff;
+  border-color:rgba(255,255,255,.42);
+  background:rgba(255,255,255,.08);
+}
+
+#helpModal{
+  position:fixed;
+  inset:0;
+  z-index:25;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(0,0,0,.72);
+  backdrop-filter:blur(6px);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .22s ease, visibility .22s ease;
+}
+
+#helpModal.active{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.help-modal-card{
+  width:min(700px, 100%);
+  background:rgba(0,0,0,.96);
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:16px;
+  box-shadow:0 24px 70px rgba(0,0,0,.8);
+  padding:24px 24px 22px;
+}
+
+.help-modal-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:16px;
+  padding-bottom:12px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.help-modal-title{
+  margin:0;
+  font-size:28px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#fff;
+}
+
+.help-close-btn{
+  border:1px solid rgba(255,255,255,.20);
+  background:transparent;
+  color:rgba(255,255,255,.72);
+  border-radius:999px;
+  padding:8px 14px;
+  cursor:pointer;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.help-close-btn:hover{
+  color:#fff;
+  border-color:rgba(255,255,255,.42);
+  background:rgba(255,255,255,.06);
+}
+
+.help-modal-body{
+  color:rgba(255,255,255,.82);
+  line-height:1.7;
+  font-size:16px;
+}
+
+.help-modal-body p{
+  margin:0 0 14px;
+}
+
+.help-modal-body ul{
+  margin:0 0 14px 20px;
+  padding:0;
+}
+
+.help-modal-body li{
+  margin-bottom:8px;
+}
+
+  #mainMenu{
+    min-height:100vh;
+    padding:28px 44px 34px;
+    opacity:0;
+    transform:translateY(12px);
+    transition:opacity .9s ease, transform .9s ease;
+    background:
+      radial-gradient(circle at center, rgba(80,110,160,.18), transparent 38%),
+      linear-gradient(180deg, #05070d, #000);
+    overflow-y:auto;
+  }
+
+  #mainMenu.active{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  .menu-shell{
+    width:min(1500px, 100%);
+    margin:0 auto;
+  }
+
+  .menu-header{
+    text-align:center;
+    margin-bottom:24px;
+  }
+
+  .menu-kicker{
+    margin:0 0 8px;
+    font-size:13px;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.58);
+  }
+
+  .menu-title{
+    margin:0;
+    font-size:clamp(38px, 4vw, 62px);
+    font-weight:700;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:#f4f4f4;
+    text-shadow:0 0 14px rgba(255,255,255,.20), 0 0 34px rgba(120,170,255,.13);
+  }
+
+  .menu-subtitle{
+    max-width:820px;
+    margin:10px auto 0;
+    font-size:15px;
+    line-height:1.45;
+    color:rgba(255,255,255,.68);
+    letter-spacing:.04em;
+  }
+
+.realm-status-panel{
+  width:min(680px, 100%);
+  margin:22px auto 0;
+  padding:15px 18px 16px;
+  border-radius:16px;
+  border:1px solid rgba(107,200,255,.24);
+  background:
+    linear-gradient(135deg, rgba(107,200,255,.10), transparent 38%),
+    radial-gradient(circle at top, rgba(255,255,255,.08), transparent 55%),
+    rgba(2,8,16,.58);
+  box-shadow:
+    0 0 28px rgba(107,200,255,.10),
+    0 0 48px rgba(0,0,0,.45),
+    inset 0 0 24px rgba(255,255,255,.035);
+  text-align:center;
+}
+
+.realm-status-label{
+  font-size:11px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:rgba(173,222,255,.58);
+  margin-bottom:6px;
+}
+
+.realm-status-text{
+  font-size:22px;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:rgba(244,250,255,.94);
+  font-weight:700;
+  text-shadow:0 0 16px rgba(107,200,255,.20);
+}
+
+.realm-status-subtext{
+  max-width:560px;
+  margin:7px auto 0;
+  font-size:13px;
+  line-height:1.45;
+  color:rgba(220,236,255,.62);
+  letter-spacing:.04em;
+}
+
+#mainMenu{
+  position:relative;
+  overflow:hidden;
+}
+
+.menu-video-bg{
+  position:fixed;
+  inset:0;
+  width:100vw;
+  height:100vh;
+  object-fit:cover;
+  pointer-events:none;
+  z-index:1;
+  opacity:.3;
+  mix-blend-mode:screen;
+}
+
+.menu-overlay{
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at center, rgba(0,0,0,0) 30%, rgba(0,0,0,.55) 85%);
+  pointer-events:none;
+  z-index:1;
+}
+
+.menu-shell{
+  position:relative;
+  backdrop-filter: blur(1px);
+  z-index:2;
+}
+
+.game-grid{
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:22px;
+}
+
+  .game-card{
+    position:relative;
+    min-height:520px;
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:18px;
+    overflow:hidden;
+    background:rgba(4,6,12,.84);
+    box-shadow:0 18px 48px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.04);
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+
+  .game-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(255,255,255,.32);
+    box-shadow:0 24px 64px rgba(0,0,0,.7), 0 0 30px rgba(255,255,255,.08), inset 0 0 0 1px rgba(255,255,255,.05);
+  }
+
+  .game-thumb{
+    height:205px;
+    background-size:cover;
+    background-position:center;
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+
+  .game-thumb::after{
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background:linear-gradient(180deg, transparent 35%, rgba(0,0,0,.62));
+  }
+
+  .game-content{
+    padding:20px 20px 18px;
+    display:flex;
+    min-height:330px;
+    flex-direction:column;
+  }
+
+  .game-title{
+    margin:0 0 10px;
+    font-size:22px;
+    line-height:1.05;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:#fff;
+  }
+
+  .game-tagline{
+    margin:0 0 16px;
+    color:rgba(255,255,255,.64);
+    font-size:14px;
+    line-height:1.45;
+  }
+
+  .topic-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:18px;
+  }
+
+  .topic-chip{
+    padding:7px 9px;
+    border-radius:999px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.10);
+    color:rgba(255,255,255,.76);
+    font-size:11px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+
+  .game-meta{
+    margin-top:auto;
+    padding-top:14px;
+    border-top:1px solid rgba(255,255,255,.10);
+  }
+
+  .status-line{
+    display:flex;
+    justify-content:space-between;
+    gap:12px;
+    margin-bottom:14px;
+    font-size:12px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.56);
+  }
+
+  .status-value{
+    color:rgba(255,255,255,.86);
+  }
+
+  .enter-btn{
+    width:100%;
+    padding:13px 16px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.24);
+    background:linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.05));
+    color:#fff;
+    cursor:pointer;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    font-size:13px;
+    transition:transform .14s ease, background .14s ease, box-shadow .14s ease;
+  }
+
+  .enter-btn:hover{
+    transform:translateY(-2px);
+    background:linear-gradient(180deg, rgba(255,255,255,.24), rgba(255,255,255,.08));
+    box-shadow:0 0 22px rgba(255,255,255,.10);
+  }
+
+  .directive{--accent:#38bdf8;}
+  .market{--accent:#22c55e;}
+  .desk{--accent:#f59e0b;}
+  .agency{--accent:#6bc8ff;}
+
+  /* Agency/corporate command flavor */
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:0;
+    background:
+      linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(107,200,255,.025) 1px, transparent 1px);
+    background-size:42px 42px;
+    opacity:.28;
+  }
+
+  #mainMenu{
+    background:
+      radial-gradient(circle at 50% 22%, rgba(107,200,255,.18), transparent 34%),
+      linear-gradient(180deg, #050914, #02050a 58%, #000);
+  }
+
+  .menu-overlay{
+    background:
+      linear-gradient(90deg, rgba(0,0,0,.36), transparent 22%, transparent 78%, rgba(0,0,0,.42)),
+      radial-gradient(circle at center, rgba(0,0,0,0) 28%, rgba(0,0,0,.62) 86%);
+  }
+
+  .game-card{
+    background:
+      linear-gradient(180deg, rgba(11,18,32,.92), rgba(2,5,10,.96)),
+      rgba(4,6,12,.84);
+    border-color:rgba(107,200,255,.18);
+  }
+
+  .game-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:linear-gradient(90deg, transparent, rgba(107,200,255,.06), transparent);
+    opacity:.22;
+  }
+
+  .topic-chip{
+    border-color:rgba(107,200,255,.16);
+    background:rgba(107,200,255,.07);
+  }
+
+  .status-value[data-realm-state="restored"]{
+    color:#9be7ff;
+    text-shadow:0 0 12px rgba(107,200,255,.38);
+  }
+
+  .status-value[data-realm-state="contested"]{
+    color:#facc6b;
+    text-shadow:0 0 12px rgba(250,204,107,.30);
+  }
+
+  .status-value[data-realm-state="unstable"]{
+    color:rgba(255,255,255,.70);
+  }
+
+  .status-value[data-realm-state="offline"]{
+    color:rgba(255,255,255,.46);
+  }
+
+  .coming-soon{
+    opacity:.68;
+  }
+
+  .disabled-btn{
+    opacity:.55;
+    cursor:not-allowed;
+  }
+
+  .disabled-btn:hover{
+    transform:none;
+    box-shadow:none;
+  }
+
+  .game-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:linear-gradient(180deg, color-mix(in srgb, var(--accent) 22%, transparent), transparent 36%);
+    opacity:.26;
+  }
+
+  .game-card:hover .enter-btn{
+    border-color:color-mix(in srgb, var(--accent) 70%, white 20%);
+    box-shadow:0 0 24px color-mix(in srgb, var(--accent) 22%, transparent);
+  }
+
+  .directive .game-thumb{background-image:url('tcd_thumbnail.webp');}
+  .market .game-thumb{background-image:url('tms_thumbnail.webp');}
+  .desk .game-thumb{background-image:url('tsd_thumbnail.webp');}
+  .agency .game-thumb{background-image:url('tap_thumbnail.webp');}
+  
+  #emailModal{
+    position:fixed;
+    inset:0;
+    z-index:20;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:22px;
+    background:rgba(0,0,0,.72);
+    backdrop-filter:blur(8px);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:opacity .22s ease, visibility .22s ease;
+  }
+
+  #emailModal.active{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+  }
+
+  .modal-card{
+    width:min(520px, 100%);
+    border-radius:18px;
+    padding:28px;
+    background:radial-gradient(circle at top, rgba(255,255,255,.09), transparent 42%), rgba(5,7,12,.96);
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 28px 80px rgba(0,0,0,.8);
+  }
+
+  .modal-label{
+    margin:0 0 8px;
+    font-size:12px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.52);
+  }
+
+  .modal-title{
+    margin:0 0 10px;
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+
+  .modal-text{
+    margin:0 0 22px;
+    color:rgba(255,255,255,.66);
+    line-height:1.45;
+  }
+
+  .email-input{
+    width:100%;
+    padding:15px 16px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.22);
+    background:rgba(0,0,0,.45);
+    color:#fff;
+    outline:none;
+    margin-bottom:14px;
+  }
+
+  .email-input:focus{
+    border-color:rgba(255,255,255,.55);
+    box-shadow:0 0 20px rgba(255,255,255,.08);
+  }
+
+  .modal-actions{
+    display:flex;
+    gap:12px;
+  }
+
+  .modal-btn{
+    flex:1;
+    padding:13px 16px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.22);
+    color:#fff;
+    cursor:pointer;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    font-size:12px;
+  }
+
+  .launch-btn{
+    background:linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,.07));
+  }
+
+  .cancel-btn{
+    background:transparent;
+    color:rgba(255,255,255,.70);
+  }
+
+  @keyframes statusPulse{
+    0%,100%{opacity:.35;}
+    50%{opacity:.75;}
+  }
+
+  @media(max-width:1180px){
+    .game-grid{
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media(max-width:680px){
+    body{
+      overflow:auto;
+    }
+
+    #mainMenu{
+      padding:32px 18px;
+    }
+
+    .game-grid{
+      grid-template-columns:1fr;
+    }
+
+    .game-card{
+      min-height:auto;
+    }
+
+    .game-content{
+      min-height:auto;
+    }
+
+    .splash-status{
+      right:20px;
+      bottom:18px;
+      font-size:10px;
+    }
+
+    .modal-actions{
+      flex-direction:column;
+    }
+  }
+
+
+/* =========================================================
+   UPGRADE: Managerial Operations Briefing + Menu System
+   - Ported from The Economic Realm hub structure.
+   - Keeps the noir/corporate style while adding compact status,
+     next operation guidance, recovery, card state hooks, and logs.
+   ========================================================= */
+.operations-menu-button{
+  position:fixed;
+  right:28px;
+  bottom:24px;
+  z-index:12;
+  display:none;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid rgba(107,200,255,.24);
+  background:rgba(0,0,0,.52);
+  color:rgba(220,240,255,.76);
+  cursor:pointer;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  box-shadow:0 0 18px rgba(0,0,0,.50), 0 0 18px rgba(107,200,255,.08);
+}
+
+.operations-menu-button.visible{display:block;}
+.operations-menu-button:hover{
+  color:#fff;
+  border-color:rgba(107,200,255,.46);
+  background:rgba(107,200,255,.10);
+}
+
+.briefing-folder{
+  width:min(760px, 100%);
+  margin:22px auto 0;
+  border-radius:18px;
+  border:1px solid rgba(107,200,255,.22);
+  background:
+    linear-gradient(135deg, rgba(107,200,255,.10), transparent 38%),
+    radial-gradient(circle at top, rgba(255,255,255,.08), transparent 55%),
+    rgba(0,0,0,.44);
+  box-shadow:
+    0 0 28px rgba(107,200,255,.10),
+    0 0 48px rgba(0,0,0,.48),
+    inset 0 0 24px rgba(255,255,255,.03);
+  overflow:hidden;
+}
+
+.briefing-folder-header{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:16px 18px;
+  border:none;
+  background:transparent;
+  color:#fff;
+  cursor:pointer;
+  text-align:left;
+}
+
+.briefing-folder-label{
+  font-size:10px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:rgba(173,222,255,.50);
+  margin-bottom:5px;
+}
+
+.briefing-folder-title{
+  font-size:20px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:rgba(244,250,255,.94);
+  font-weight:700;
+  text-shadow:0 0 16px rgba(107,200,255,.18);
+}
+
+.briefing-folder-subtext{
+  margin-top:5px;
+  font-size:13px;
+  letter-spacing:.06em;
+  color:rgba(220,236,255,.60);
+}
+
+.briefing-folder-toggle{
+  flex:0 0 auto;
+  padding:8px 12px;
+  border-radius:999px;
+  border:1px solid rgba(107,200,255,.22);
+  color:rgba(220,236,255,.72);
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+.briefing-folder-body{display:none; padding:0 18px 18px;}
+.briefing-folder.open .briefing-folder-body{display:block;}
+
+.briefing-section{
+  margin-top:12px;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid rgba(107,200,255,.14);
+  background:
+    linear-gradient(180deg, rgba(107,200,255,.065), rgba(255,255,255,.025)),
+    rgba(0,0,0,.28);
+  text-align:center;
+}
+
+.briefing-section-label{
+  font-size:10px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:rgba(173,222,255,.46);
+  margin-bottom:6px;
+}
+
+.next-operation-title{
+  font-size:18px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  font-weight:700;
+  color:rgba(255,255,255,.94);
+}
+
+.next-operation-reason{
+  max-width:560px;
+  margin:6px auto 11px;
+  font-size:13px;
+  line-height:1.4;
+  color:rgba(220,236,255,.62);
+  letter-spacing:.04em;
+}
+
+.next-operation-button{
+  padding:10px 15px;
+  border-radius:999px;
+  border:1px solid rgba(107,200,255,.24);
+  background:linear-gradient(180deg, rgba(107,200,255,.16), rgba(255,255,255,.05));
+  color:rgba(255,255,255,.88);
+  cursor:pointer;
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.next-operation-button:hover{
+  color:#fff;
+  border-color:rgba(107,200,255,.50);
+  box-shadow:0 0 20px rgba(107,200,255,.10);
+}
+
+.next-operation-button:disabled{opacity:.48; cursor:default;}
+
+.operations-narrative-text{
+  max-width:620px;
+  margin:0 auto;
+  font-size:13px;
+  line-height:1.45;
+  color:rgba(220,236,255,.66);
+  letter-spacing:.045em;
+}
+
+.mission-briefing{
+  margin:-6px 0 14px;
+  font-size:13px;
+  line-height:1.35;
+  color:rgba(220,236,255,.52);
+  letter-spacing:.045em;
+}
+
+.restored-badge{
+  display:none;
+  margin:0 0 14px;
+  padding:9px 11px;
+  border-radius:12px;
+  border:1px solid rgba(107,200,255,.32);
+  background:
+    radial-gradient(circle at left, rgba(107,200,255,.18), transparent 58%),
+    rgba(255,255,255,.055);
+  color:rgba(255,255,255,.84);
+  font-size:12px;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+
+.game-card.restored{
+  border-color:rgba(107,200,255,.48);
+  box-shadow:
+    0 24px 70px rgba(0,0,0,.72),
+    0 0 34px rgba(107,200,255,.20),
+    inset 0 0 0 1px rgba(255,255,255,.08);
+}
+
+.game-card.contested{
+  border-color:rgba(245,158,11,.42);
+  box-shadow:
+    0 20px 54px rgba(0,0,0,.66),
+    0 0 26px rgba(245,158,11,.14),
+    inset 0 0 0 1px rgba(255,255,255,.05);
+}
+
+.game-card.unstable{filter:saturate(.92);}
+.game-card.locked{opacity:.54; filter:grayscale(.35) saturate(.65);}
+.game-card.locked .enter-btn{cursor:not-allowed; opacity:.55;}
+
+.game-card.restored .game-thumb::before,
+.game-card.contested .game-thumb::before,
+.game-card.locked .game-thumb::before{
+  position:absolute;
+  top:14px;
+  right:14px;
+  z-index:2;
+  padding:7px 10px;
+  border-radius:999px;
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:700;
+  backdrop-filter:blur(6px);
+}
+
+.game-card.restored .game-thumb::before{
+  content:"File Secured";
+  color:rgba(255,255,255,.94);
+  border:1px solid rgba(107,200,255,.50);
+  background:linear-gradient(180deg, rgba(107,200,255,.24), rgba(0,0,0,.42));
+}
+
+.game-card.contested .game-thumb::before{
+  content:"Active File";
+  color:rgba(255,255,255,.90);
+  border:1px solid rgba(245,158,11,.40);
+  background:linear-gradient(180deg, rgba(245,158,11,.22), rgba(0,0,0,.42));
+}
+
+.game-card.locked .game-thumb::before{
+  content:"Sealed";
+  color:rgba(255,255,255,.70);
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(0,0,0,.52);
+}
+
+.operations-menu-modal{
+  position:fixed;
+  inset:0;
+  z-index:25;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(0,0,0,.74);
+  backdrop-filter:blur(6px);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .22s ease, visibility .22s ease;
+}
+
+.operations-menu-modal.active{opacity:1; visibility:visible; pointer-events:auto;}
+
+.operations-menu-card{
+  width:min(840px, 100%);
+  max-height:85vh;
+  overflow:auto;
+  background:rgba(0,0,0,.96);
+  border:1px solid rgba(107,200,255,.24);
+  border-radius:16px;
+  box-shadow:0 24px 70px rgba(0,0,0,.8), 0 0 30px rgba(107,200,255,.08);
+  padding:24px;
+}
+
+.operations-menu-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:16px;
+  padding-bottom:12px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.operations-menu-title{margin:0; font-size:28px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;}
+.operations-menu-actions{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:18px;}
+.operations-menu-action{
+  padding:10px 13px;
+  border-radius:999px;
+  border:1px solid rgba(107,200,255,.18);
+  background:rgba(107,200,255,.07);
+  color:rgba(255,255,255,.82);
+  cursor:pointer;
+  font-size:12px;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.operations-menu-action:hover{color:#fff; border-color:rgba(107,200,255,.38); background:rgba(107,200,255,.12);}
+.operations-panel{display:none; color:rgba(255,255,255,.82); font-size:15px; line-height:1.65;}
+.operations-panel.active{display:block;}
+.operation-log-entry{padding:12px 0; border-bottom:1px solid rgba(255,255,255,.10);}
+.operation-log-entry-title{font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.92);}
+.operation-log-entry-time{margin-top:4px; font-size:12px; color:rgba(255,255,255,.48);}
+.recovery-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;}
+.recovery-grid select,.recovery-grid input{
+  width:100%;
+  padding:13px;
+  border-radius:10px;
+  border:1px solid rgba(107,200,255,.20);
+  background:rgba(0,0,0,.42);
+  color:#fff;
+}
+.recovery-message{margin-top:12px; font-size:14px; color:rgba(255,255,255,.68);}
+.recovery-message.success{color:#93c5fd;}
+.recovery-message.error{color:#fca5a5;}
+
+
+/* Operations Artifact Vault */
+.artifact-vault-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:12px;
+  margin-top:14px;
+}
+
+.artifact-card{
+  padding:14px;
+  border-radius:14px;
+  border:1px solid rgba(107,200,255,.16);
+  background:
+    radial-gradient(circle at top left, rgba(107,200,255,.10), transparent 52%),
+    linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.018)),
+    rgba(0,0,0,.34);
+  box-shadow:inset 0 0 24px rgba(255,255,255,.025), 0 0 18px rgba(0,0,0,.34);
+}
+
+.artifact-card.locked{
+  opacity:.48;
+  filter:grayscale(.45);
+}
+
+.artifact-card.unlocked{
+  border-color:rgba(107,200,255,.38);
+  box-shadow:
+    0 0 24px rgba(107,200,255,.13),
+    inset 0 0 24px rgba(107,200,255,.045),
+    0 0 22px rgba(0,0,0,.44);
+}
+
+.artifact-image-wrap{
+  width:100%;
+  margin-bottom:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  border:none;
+  overflow:visible;
+}
+
+.artifact-image-button{
+  border:none;
+  background:transparent;
+  padding:0;
+  margin:0;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+}
+
+.artifact-image{
+  max-width:82%;
+  max-height:230px;
+  object-fit:contain;
+  display:block;
+  filter:drop-shadow(0 0 22px rgba(107,200,255,.12));
+  transition:transform .18s ease, filter .18s ease;
+}
+
+.artifact-image-button:hover .artifact-image{
+  transform:scale(1.035);
+  filter:drop-shadow(0 0 28px rgba(107,200,255,.22));
+}
+
+.artifact-card.locked .artifact-image-wrap{
+  opacity:.45;
+  filter:grayscale(1);
+}
+
+.artifact-placeholder{
+  width:100%;
+  min-height:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.10);
+  background:
+    radial-gradient(circle at center, rgba(107,200,255,.08), transparent 58%),
+    rgba(0,0,0,.22);
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.42);
+}
+
+.artifact-name{
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.92);
+  margin-bottom:5px;
+  line-height:1.2;
+}
+
+.artifact-source{
+  font-size:11px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:rgba(173,222,255,.48);
+  margin-bottom:8px;
+}
+
+.artifact-meaning{
+  font-size:13px;
+  line-height:1.45;
+  color:rgba(255,255,255,.68);
+}
+
+.artifact-status{
+  margin-top:10px;
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.46);
+}
+
+.artifact-card.unlocked .artifact-status{
+  color:rgba(107,200,255,.92);
+}
+
+.artifact-vault-note{
+  margin:0 0 10px;
+  color:rgba(255,255,255,.64);
+}
+
+.artifact-modal{
+  position:fixed;
+  inset:0;
+  z-index:45;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(0,0,0,.82);
+  backdrop-filter:blur(7px);
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .22s ease, visibility .22s ease;
+}
+
+.artifact-modal.active{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+.artifact-modal-card{
+  width:min(780px, 100%);
+  max-height:88vh;
+  overflow:auto;
+  border-radius:18px;
+  border:1px solid rgba(107,200,255,.24);
+  background:
+    radial-gradient(circle at top, rgba(107,200,255,.08), transparent 42%),
+    rgba(0,0,0,.96);
+  box-shadow:0 28px 80px rgba(0,0,0,.86), 0 0 30px rgba(107,200,255,.10);
+  padding:24px;
+}
+
+.artifact-modal-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding-bottom:12px;
+  margin-bottom:18px;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.artifact-modal-title{
+  margin:0;
+  font-size:28px;
+  font-weight:700;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:#fff;
+}
+
+.artifact-modal-body{
+  text-align:center;
+}
+
+.artifact-modal-image{
+  width:100%;
+  max-height:460px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 18px;
+  filter:drop-shadow(0 0 34px rgba(107,200,255,.16));
+}
+
+.artifact-modal-source{
+  font-size:12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:rgba(173,222,255,.54);
+  margin-bottom:12px;
+}
+
+.artifact-modal-meaning{
+  max-width:620px;
+  margin:0 auto;
+  font-size:16px;
+  line-height:1.6;
+  color:rgba(255,255,255,.78);
+}
+
+.artifact-modal-field{
+  max-width:620px;
+  margin:10px auto 0;
+  font-size:15px;
+  line-height:1.55;
+  color:rgba(255,255,255,.72);
+  text-align:left;
+}
+
+.artifact-modal-field span{
+  color:rgba(255,255,255,.92);
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-size:12px;
+}
+
+@media(max-width:900px){
+  .artifact-vault-grid{grid-template-columns:1fr;}
+}
+
+@media(max-width:680px){
+  .operations-menu-button{right:14px; bottom:14px; padding:8px 10px; font-size:10px;}
+  .briefing-folder-header{padding:14px;}
+  .briefing-folder-title{font-size:17px;}
+  .briefing-folder-subtext{font-size:12px;}
+  .recovery-grid{grid-template-columns:1fr;}
+  .game-card.restored .game-thumb::before,
+  .game-card.contested .game-thumb::before,
+  .game-card.locked .game-thumb::before{top:10px; right:10px; font-size:9px; padding:6px 8px;}
+}
+
+
+
+/* =========================================================
+   UPGRADE: Managerial Hub Achievements Placeholder
+   - Shell only. Real achievement definitions can be added later
+     when the achievement set is finalized.
+   ========================================================= */
+.achievement-summary{
+  margin:0 0 16px;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid rgba(107,200,255,.16);
+  background:
+    radial-gradient(circle at top left, rgba(107,200,255,.12), transparent 56%),
+    rgba(255,255,255,.045);
+}
+
+.achievement-summary-label{
+  font-size:10px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:rgba(173,222,255,.48);
+  margin-bottom:5px;
+}
+
+.achievement-summary-title{
+  font-size:24px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#9be7ff;
+  font-weight:700;
+  text-shadow:0 0 14px rgba(107,200,255,.24);
+}
+
+.achievement-summary-text{
+  margin-top:6px;
+  font-size:13px;
+  line-height:1.4;
+  color:rgba(255,255,255,.62);
+  letter-spacing:.04em;
+}
+
+.achievement-progress-track{
+  margin-top:12px;
+  height:10px;
+  border-radius:999px;
+  overflow:hidden;
+  border:1px solid rgba(107,200,255,.16);
+  background:rgba(255,255,255,.055);
+  box-shadow:inset 0 0 10px rgba(0,0,0,.55);
+}
+
+.achievement-progress-fill{
+  height:100%;
+  width:0%;
+  border-radius:999px;
+  background:linear-gradient(90deg, rgba(107,200,255,.85), rgba(251,191,36,.95));
+  box-shadow:0 0 14px rgba(107,200,255,.28);
+  transition:width .25s ease;
+}
+
+.achievement-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:12px;
+}
+
+.achievement-card{
+  display:grid;
+  grid-template-columns:48px 1fr;
+  gap:12px;
+  align-items:center;
+  padding:13px;
+  border-radius:14px;
+  border:1px solid rgba(107,200,255,.14);
+  background:
+    radial-gradient(circle at top left, rgba(107,200,255,.10), transparent 54%),
+    rgba(255,255,255,.04);
+  cursor:pointer;
+}
+
+.achievement-card.placeholder{
+  opacity:.72;
+  cursor:default;
+}
+
+.achievement-card.locked{
+  opacity:.54;
+  filter:grayscale(.55);
+}
+
+.achievement-icon{
+  width:48px;
+  height:48px;
+  overflow:hidden;
+  padding:0;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(107,200,255,.16);
+  background:
+    radial-gradient(circle at center, rgba(107,200,255,.14), transparent 66%),
+    rgba(0,0,0,.28);
+  font-size:24px;
+  line-height:1;
+}
+
+.achievement-icon-image{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:contain;
+}
+
+.achievement-modal-image{
+  display:block;
+  width:min(260px, 80%);
+  max-height:260px;
+  object-fit:contain;
+  margin:0 auto 18px;
+}
+  
+.achievement-name{
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.92);
+}
+
+.achievement-desc{
+  margin-top:4px;
+  font-size:12.5px;
+  line-height:1.32;
+  color:rgba(255,255,255,.62);
+}
+
+.achievement-status{
+  margin-top:7px;
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:rgba(173,222,255,.48);
+}
+
+@media(max-width:680px){
+  .achievement-grid{
+    grid-template-columns:1fr;
+  }
+
+  .achievement-card{
+    grid-template-columns:42px 1fr;
+  }
+
+  .achievement-icon{
+    width:42px;
+    height:42px;
+    font-size:21px;
+  }
+}
+
+/* =========================================================
+   MOBILE OPERATIONS MENU FIX
+   Keeps the hub scrollable and the Operations Menu usable
+   on phones. This has to sit after earlier #mainMenu rules.
+   ========================================================= */
+html,
+body{
+  width:100%;
+  min-height:100%;
+}
+
+body{
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+/* Main hub menu owns the scroll. No more trapped mobile view. */
+#mainMenu{
+  min-height:100dvh;
+  height:100dvh;
+  overflow-y:auto !important;
+  overflow-x:hidden;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-y:contain;
+}
+
+#mainMenu .menu-shell{
+  padding-bottom:120px;
+}
+
+.game-thumb{
+  position:relative;
+}
+
+@media (max-width:768px){
+  #mainMenu{
+    height:100dvh;
+    min-height:100dvh;
+    padding:22px 14px 140px;
+    overflow-y:auto !important;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .menu-shell{
+    padding-bottom:140px;
+  }
+
+  .game-grid{
+    grid-template-columns:1fr;
+    gap:34px;
+  }
+
+  .game-card{
+    height:auto !important;
+    min-height:auto !important;
+    overflow:hidden;
+  }
+
+  .game-content{
+    min-height:auto !important;
+  }
+
+  .operations-menu-button{
+    right:16px;
+    bottom:16px;
+    z-index:60;
+  }
+
+  .operations-menu-button.visible{
+    display:block !important;
+  }
+
+  .operations-menu-modal{
+    align-items:flex-start;
+    padding:12px;
+    overflow-y:auto;
+  }
+
+  .operations-menu-card{
+    max-height:calc(100dvh - 24px);
+    padding:18px;
+  }
+}
+
+
+
+/* =========================================================
+   PRINCIPAL BRIEFING MATCH — Economic Realm-style dropdown
+   Keeps the same compact folder behavior while removing the extra
+   lower briefing box and dialing back the blue-heavy banner.
+   ========================================================= */
+.briefing-folder{
+  width:min(760px, 100%);
+  margin:22px auto 0;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.16);
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,.08), transparent 55%),
+    rgba(0,0,0,.38);
+  box-shadow:
+    0 0 24px rgba(255,255,255,.055),
+    inset 0 0 20px rgba(255,255,255,.03);
+}
+
+.briefing-folder-label{
+  color:rgba(255,255,255,.42);
+}
+
+.briefing-folder-title{
+  color:rgba(255,255,255,.92);
+  text-shadow:none;
+}
+
+.briefing-folder-subtext{
+  color:rgba(255,255,255,.56);
+}
+
+.briefing-folder-toggle{
+  border:1px solid rgba(255,255,255,.18);
+  color:rgba(255,255,255,.70);
+}
+
+.briefing-section{
+  border:1px solid rgba(255,255,255,.11);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.025)),
+    rgba(0,0,0,.25);
+}
+
+.briefing-section-label{
+  color:rgba(255,255,255,.44);
+}
+
+.next-operation-title{
+  color:rgba(255,255,255,.94);
+}
+
+.next-operation-reason{
+  color:rgba(255,255,255,.58);
+}
+
+.next-operation-button{
+  border:1px solid rgba(255,255,255,.22);
+  background:linear-gradient(180deg, rgba(255,255,255,.15), rgba(255,255,255,.05));
+}
+
+.next-operation-button:hover{
+  border-color:rgba(255,255,255,.42);
+  background:linear-gradient(180deg, rgba(255,255,255,.22), rgba(255,255,255,.08));
+  box-shadow:0 0 20px rgba(255,255,255,.08);
+}
+
+</style>
+</head>
+
+<body>
+  <section id="splashScreen" aria-label="Managerial Intelligence Directorate splash screen">
+  <button id="enterHubButton" class="splash-enter" onclick="enterHub()">Click to Enter</button>
+  <div class="splash-status" id="splashStatus">Initializing adaptive game...</div>
+</section>
+
+  <button id="soundToggle" class="sound-toggle" onclick="toggleMenuMusic()" aria-label="Toggle menu music">Sound Off</button>
+
+  <button id="helpButton" class="help-button" onclick="openHelpModal()" aria-label="Open instructions">
+  How This Works
+  </button>
+
+  <button id="operationsMenuButton" class="operations-menu-button" onclick="openOperationsMenu()" aria-label="Open operations menu">
+    Operations Menu
+  </button>
+
+  <main id="mainMenu" aria-label="Game selection menu">
+    <div class="menu-overlay"></div>
+    <video class="menu-video-bg" autoplay muted loop playsinline aria-hidden="true">
+      <source src="menu_mist.mp4" type="video/mp4">
+    </video>
+    <div class="menu-shell">
+      <header class="menu-header">
+        <p class="menu-kicker">Managerial Intelligence Directorate</p>
+        <h1 class="menu-title">Choose Your Operation</h1>
+        <p class="menu-subtitle">The Principal has initiated a critical mission. Clear each operation, secure the classified files, and prove your managerial judgment holds when the numbers start lying.</p>
+
+        <div class="briefing-folder collapsed" id="briefingFolder">
+          <button class="briefing-folder-header" onclick="toggleBriefingFolder()" aria-expanded="false" aria-controls="briefingFolderBody">
+            <div>
+              <div class="briefing-folder-label">Principal's Briefing</div>
+              <div id="briefingFolderTitle" class="briefing-folder-title">0 of 4 files secured</div>
+            </div>
+            <span id="briefingFolderToggle" class="briefing-folder-toggle">Open</span>
+          </button>
+
+          <div class="briefing-folder-body" id="briefingFolderBody">
+            <div id="nextOperationBox" class="briefing-section next-operation-box">
+              <div class="briefing-section-label">Next Operation</div>
+              <div id="nextOperationTitle" class="next-operation-title">The Cost Directive</div>
+              <div id="nextOperationReason" class="next-operation-reason">
+                The Principal has opened the cost-control file. Review tradeoffs, relevant costs, marginal decisions, and scale.
+              </div>
+              <button id="nextOperationButton" class="next-operation-button" onclick="launchNextOperation()">
+                Begin Next Operation
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+<section class="game-grid" aria-label="Available review operations">
+  <article class="game-card directive">
+    <div class="game-thumb" aria-hidden="true"></div>
+    <div class="game-content">
+      <h2 class="game-title">The Cost Directive</h2>
+      <p class="game-tagline">Trace tradeoffs, relevant costs, marginal decisions, and scale before the firm bleeds margin.</p>
+      <p class="mission-briefing" id="briefing-directive">Principal’s directive: Open the cost-control file by judging opportunity cost, relevant costs, marginal analysis, and scale decisions.</p>
+      <div class="restored-badge" id="badge-directive">Directive secured · File closed</div>
+      <div class="topic-list">
+        <span class="topic-chip">Tradeoffs</span>
+        <span class="topic-chip">Opportunity Cost</span>
+        <span class="topic-chip">Relevant Costs</span>
+        <span class="topic-chip">Marginal Decisions</span>
+        <span class="topic-chip">Scale</span>
+        <span class="topic-chip">Scope</span>
+      </div>
+      <div class="game-meta">
+        <div class="status-line"><span>Status</span><span class="status-value" id="status-directive">Ready</span></div>
+        <button class="enter-btn" onclick="selectGame('directive')">Enter Directive</button>
+      </div>
+    </div>
+  </article>
+
+  <article class="game-card market">
+    <div class="game-thumb" aria-hidden="true"></div>
+    <div class="game-content">
+      <h2 class="game-title">The Market Signal</h2>
+      <p class="game-tagline">Read capital, risk, and competitive signals before the market moves without you.</p>
+      <p class="mission-briefing" id="briefing-market">Principal’s signal: Evaluate investment decisions, uncertainty, market equilibrium, competitive returns, and profit erosion.</p>
+      <div class="restored-badge" id="badge-market">Signal secured · File closed</div>
+      <div class="topic-list">
+        <span class="topic-chip">NPV</span>
+        <span class="topic-chip">Break-Even</span>
+        <span class="topic-chip">Uncertainty</span>
+        <span class="topic-chip">Supply &amp; Demand</span>
+        <span class="topic-chip">Competitive Returns</span>
+        <span class="topic-chip">Entry &amp; Imitation</span>
+      </div>
+      <div class="game-meta">
+        <div class="status-line"><span>Status</span><span class="status-value" id="status-market">Ready</span></div>
+        <button class="enter-btn" onclick="selectGame('market')">Enter Signal</button>
+      </div>
+    </div>
+  </article>
+
+<article class="game-card desk">
+  <div class="game-thumb" aria-hidden="true"></div>
+  <div class="game-content">
+    <h2 class="game-title">The Strategy Desk</h2>
+
+    <p class="game-tagline">
+      Read demand, segment customers, set prices, and anticipate the next strategic move.
+    </p>
+
+    <p class="mission-briefing" id="briefing-desk">
+      Principal’s directive: Analyze elasticity, pricing, segmentation, strategic interaction, and bargaining power.
+    </p>
+
+    <div class="restored-badge" id="badge-desk">
+      Strategy Desk secured · Board cleared
+    </div>
+
+    <div class="topic-list">
+      <span class="topic-chip">Elasticity</span>
+      <span class="topic-chip">Pricing</span>
+      <span class="topic-chip">Segmentation</span>
+      <span class="topic-chip">Bundling</span>
+      <span class="topic-chip">Game Theory</span>
+      <span class="topic-chip">Bargaining</span>
+    </div>
+
+    <div class="game-meta">
+      <div class="status-line">
+        <span>Status</span>
+        <span class="status-value" id="status-desk">Ready</span>
+      </div>
+
+      <button class="enter-btn" onclick="selectGame('desk')">
+        Enter Desk
+      </button>
+    </div>
+  </div>
+</article>
+
+  <article class="game-card agency">
+    <div class="game-thumb" aria-hidden="true"></div>
+    <div class="game-content">
+      <h2 class="game-title">The Agency Protocol</h2>
+      <p class="game-tagline">Find hidden risks and align incentives.</p>
+      <p class="mission-briefing" id="briefing-agency">Active file. Detect adverse selection, moral hazard, principal-agent conflict, and broken incentive design.</p>
+      <div class="restored-badge" id="badge-agency">Protocol secured · File closed</div>
+      <div class="topic-list">
+        <span class="topic-chip">Moral Hazard</span>
+        <span class="topic-chip">Adverse Selection</span>
+        <span class="topic-chip">Incentives</span>
+        <span class="topic-chip">Principal-Agent Problem</span>
+         <span class="topic-chip">Divisional Games</span>
+        <span class="topic-chip">Organizational Control</span>
+      </div>
+      <div class="game-meta">
+        <div class="status-line"><span>Status</span><span class="status-value" id="status-agency">Ready</span></div>
+        <button class="enter-btn" onclick="selectGame('agency')">Enter Agency</button>
+      </div>
+    </div>
+  </article>
+</section>
+    </div>
+  </main>
+
+<section id="helpModal" aria-label="Instructions dialog">
+  <div class="help-modal-card">
+    <div class="help-modal-header">
+      <h2 class="help-modal-title">How This Works</h2>
+      <button class="help-close-btn" onclick="closeHelpModal()" aria-label="Close instructions">Close ×</button>
+    </div>
+
+    <div class="help-modal-body">
+      <p>Choose an operation to begin reviewing.</p>
+
+      <p>Each operation focuses on a different part of the course and adapts to your performance as you play.</p>
+
+      <ul>
+        <li>Correct answers move you forward.</li>
+        <li>Missed questions may send you back or trigger review.</li>
+        <li>Boss rooms check whether you are ready to advance.</li>
+        <li>Completion is reported when you finish an operation</li>
+        <li>Progress is saved at your current room. You can close the browser and pick up where you last were.</li>
+      </ul>
+
+      <p>This private research build records anonymous gameplay events only; no school email is requested or transmitted.</p>
+    </div>
+  </div>
+</section>
+
+<section id="operationsMenuModal" class="operations-menu-modal" aria-label="Operations menu dialog">
+  <div class="operations-menu-card">
+    <div class="operations-menu-header">
+      <h2 class="operations-menu-title">Operations Menu</h2>
+      <button class="help-close-btn" onclick="closeOperationsMenu()" aria-label="Close operations menu">Close ×</button>
+    </div>
+
+    <div class="operations-menu-actions">
+      <button class="operations-menu-action" onclick="showOperationsPanel('instructionsPanel')">How This Works</button>
+      <button class="operations-menu-action" onclick="showOperationsPanel('artifactVaultPanel')">Classified Items</button>
+      <button class="operations-menu-action" onclick="showOperationsPanel('operationLogPanel')">Operation Log</button>
+      <button class="operations-menu-action" onclick="showOperationsPanel('recoveryPanel')">Recover Progress</button>
+      <button class="operations-menu-action" onclick="showOperationsPanel('achievementsPanel')">Achievements</button>
+      <button class="operations-menu-action" onclick="toggleMenuMusic()">Toggle Sound</button>
+    </div>
+
+    <div id="instructionsPanel" class="operations-panel active">
+      <p>Choose an operation to begin reviewing. Each operation targets a different part of managerial economics and adapts to your performance as you play.</p>
+      <ul>
+        <li>Correct answers move you forward.</li>
+        <li>Missed questions may send you back or trigger review.</li>
+        <li>Boss rooms check whether you are ready to advance.</li>
+        <li>Completion is reported when you finish an operation.</li>
+        <li>Progress is saved locally, so you can close the browser and resume later.</li>
+      </ul>
+      <p>This private research build records anonymous gameplay events only; no school email is requested or transmitted.</p>
+    </div>
+
+    <div id="artifactVaultPanel" class="operations-panel">
+      <p class="artifact-vault-note">Classified items unlock when their operation is cleared. Item names and final achievement logic can be updated once the full set is built.</p>
+      <div id="operationsArtifactVault" class="artifact-vault-grid"></div>
+    </div>
+
+    <div id="achievementsPanel" class="operations-panel">
+      <div id="achievementsContent" class="achievements-content">
+        Achievement file pending.
+      </div>
+    </div>
+
+    <div id="operationLogPanel" class="operations-panel">
+      <div id="operationLogContent">No operation activity recorded yet.</div>
+    </div>
+
+    <div id="recoveryPanel" class="operations-panel">
+      <p>If a browser wipe removes local progress, use the completion recovery code from the finished operation to restore the cleared file on this device.</p>
+      <div class="recovery-grid">
+        <select id="recoveryOperation">
+          <option value="directive">The Cost Directive</option>
+          <option value="market">The Market Signal</option>
+          <option value="desk">The Strategy Desk</option>
+          <option value="agency">The Agency Protocol</option>
+        </select>
+        <input id="recoveryCode" type="text" placeholder="Enter recovery code">
+      </div>
+      <button class="next-operation-button" style="margin-top:12px;" onclick="restoreOperationFromCode()">Restore Operation</button>
+      <div id="recoveryMessage" class="recovery-message"></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="artifactModal" class="artifact-modal" aria-label="Artifact detail dialog">
+  <div class="artifact-modal-card">
+    <div class="artifact-modal-header">
+      <h2 id="artifactModalTitle" class="artifact-modal-title">Artifact</h2>
+      <button class="help-close-btn" onclick="closeArtifactModal()" aria-label="Close artifact view">Close ×</button>
+    </div>
+
+    <div class="artifact-modal-body">
+      <img id="artifactModalImage" class="artifact-modal-image" src="" alt="">
+      <div id="artifactModalSource" class="artifact-modal-source"></div>
+      <div id="artifactModalMeaning" class="artifact-modal-meaning"></div>
+      <div id="artifactModalConceptPower" class="artifact-modal-field"></div>
+      <div id="artifactModalWhyItMatters" class="artifact-modal-field"></div>
+    </div>
+  </div>
+</section>
+
+<section id="achievementModal" class="artifact-modal" aria-label="Achievement detail dialog">
+  <div class="artifact-modal-card">
+    <div class="artifact-modal-header">
+      <h2 id="achievementModalTitle" class="artifact-modal-title">Achievement</h2>
+      <button class="help-close-btn" onclick="closeAchievementModal()" aria-label="Close achievement view">Close ×</button>
+    </div>
+
+    <div class="artifact-modal-body">
+      <img
+        id="achievementModalImage"
+        class="achievement-modal-image"
+        src=""
+        alt=""
+      >
+      <div id="achievementModalStatus" class="artifact-modal-source"></div>
+      <div id="achievementModalDescription" class="artifact-modal-meaning"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const menuMusic = new Audio("menu_music.mp3");
+  menuMusic.loop = true;
+  menuMusic.volume = 0.12;
+  let menuMusicStarted = false;
+
+  function showSoundToggle(){
+    const button = document.getElementById("soundToggle");
+    if(button){
+      button.classList.add("visible");
+    }
+  }
+
+  function updateSoundToggle(){
+    const button = document.getElementById("soundToggle");
+    if(!button) return;
+    button.innerText = menuMusicStarted ? "Sound On" : "Sound Off";
+  }
+
+  function startMenuMusic(){
+    menuMusic.play()
+      .then(() => {
+        menuMusicStarted = true;
+        updateSoundToggle();
+      })
+      .catch(error => {
+        menuMusicStarted = false;
+        updateSoundToggle();
+        console.log("Menu music could not start yet:", error.message);
+      });
+  }
+
+  function stopMenuMusic(){
+    menuMusic.pause();
+    menuMusic.currentTime = 0;
+    menuMusicStarted = false;
+    updateSoundToggle();
+  }
+
+  function toggleMenuMusic(){
+    if(menuMusicStarted){
+      stopMenuMusic();
+    } else {
+      startMenuMusic();
+    }
+  }
+
+  const games = {
+    directive: {
+      title: "The Cost Directive",
+      file: "/play/managerial-directorate-telemetry-poc/cost-directive/" + window.location.search,
+      statusKey: "managerialHub_directive_complete",
+      storageAliases: {
+        complete: ["managerialHub_costDirective_complete"],
+        started: ["managerialHub_costDirective_started"],
+        room: ["managerialHub_costDirective_room"],
+        status: ["managerialHub_costDirective_status"]
+      },
+      startedKey: "managerialHub_directive_started",
+      roomKey: "managerialHub_directive_room",
+      unstableText: "Directive Unopened",
+      contestedText: "Directive Active",
+      restoredText: "Directive Cleared",
+      artifactText: "Cost Directive secured · File closed",
+      sequence: 1,
+      buttonText: "Enter Directive",
+      nextReason: "The Principal has opened the cost-control file. Review tradeoffs, opportunity cost, relevant costs, marginal decisions, and scale.",
+      storyIntro: "The Cost Directive is open. Cost pressure is building behind the glass, and the Principal wants the file secured before bad decisions become permanent.",
+      storyActive: "The Cost Directive is active. Track the cost signals, ignore sunk-cost nonsense, and stop the firm from bleeding margin.",
+      storyRestored: "The Cost Directive is secured. Tradeoffs, marginal decisions, and scale are back under control.",
+      recoveryCode: "DIRECTIVE-SECURED",
+      artifacts: [
+        {
+          name: "The Tradeoff Report",
+          source: "Cost Analyst",
+          image: "report.webp",
+          meaning: "The Tradeoff Report represents scarcity, tradeoffs, and opportunity cost: every choice uses resources that could have gone somewhere else.",
+          conceptPower: "Opportunity cost is the value of the next-best alternative forgone. Sound decisions compare the relevant benefits and costs of the available options, not just the visible expense of one option.",
+          whyItMatters: "It helps students make tradeoffs explicit before they move to marginal analysis, so they can see what a decision truly gives up."
+        },
+        {
+          name: "The Marginal Ledger",
+          source: "Margin Auditor",
+          image: "ledger.webp",
+          meaning: "The Marginal Ledger represents relevant cost, marginal benefit, and the discipline of separating decision-useful information from noise.",
+          conceptPower: "A marginal decision compares the additional benefit of one more unit or action with its additional relevant cost. Sunk costs and unavoidable costs should not control a forward-looking choice.",
+          whyItMatters: "It gives students a practical test for expansion, shutdown, pricing, and production decisions when total-cost intuition points the wrong way."
+        },
+        {
+          name: "The Strategic Scale Plan",
+          source: "Director of Production",
+          image: "plan.webp",
+          meaning: "The Strategic Scale Plan represents long-run cost structure, scale, scope, learning, and production discipline.",
+          conceptPower: "Economies of scale lower average cost as output expands; diseconomies raise it when coordination or capacity limits take over. Economies of scope and learning effects can also change the cost advantage of a firm.",
+          whyItMatters: "It connects a single operating choice to the larger question of how a firm should organize, grow, and sustain cost advantage."
+        }
+      ]
+    },
+    market: {
+      title: "The Market Signal",
+      file: "/play/managerial-directorate-telemetry-poc/market-signal/" + window.location.search,
+      statusKey: "managerialHub_market_complete",
+      storageAliases: {
+        complete: ["managerialHub_marketSignal_complete"],
+        started: ["managerialHub_marketSignal_started"],
+        room: ["managerialHub_marketSignal_room"],
+        status: ["managerialHub_marketSignal_status"]
+      },
+      startedKey: "managerialHub_market_started",
+      roomKey: "managerialHub_market_room",
+      unstableText: "Signal Unopened",
+      contestedText: "Signal Active",
+      restoredText: "Signal Cleared",
+      artifactText: "Market Signal secured · File closed",
+      sequence: 2,
+      buttonText: "Enter Signal",
+      nextReason: "The Principal has opened the market-intelligence file. Review investment decisions, uncertainty, market equilibrium, competitive returns, and profit erosion.",
+      storyIntro: "The Market Signal is open. Capital, risk, and competitive signals are moving through the system, and the Principal wants the file secured before noise becomes strategy.",
+      storyActive: "The Market Signal is active. Separate value from noise, price uncertainty, and read how competition changes returns.",
+      storyRestored: "The Market Signal is secured. Capital decisions, uncertainty, and competitive market forces are back under control.",
+      recoveryCode: "SIGNAL-SECURED",
+      artifacts: [
+        {
+          name: "The Capital Key",
+          source: "Investment Gatekeeper",
+          image: "capital_key.webp",
+          meaning: "The Capital Key represents disciplined investment logic: discounting, cost of capital, net present value, break-even analysis, and the exclusion of sunk costs.",
+          conceptPower: "A project creates value when the present value of its relevant expected cash flows exceeds the investment required. The discount rate reflects the opportunity cost and risk of the capital committed.",
+          whyItMatters: "It helps students distinguish a project that sounds promising from one that actually clears the value-creation threshold."
+        },
+        {
+          name: "The Risk Prism",
+          source: "Uncertainty Analyst",
+          image: "risk_prism.webp",
+          meaning: "The Risk Prism represents the separation of signal from noise through probabilities, expected value, experimentation, error costs, and contingency planning.",
+          conceptPower: "Decision-makers should weigh outcomes by their likelihood, identify what can be learned before committing, and compare the cost of different mistakes under uncertainty.",
+          whyItMatters: "It moves students beyond treating uncertainty as a feeling and toward evaluating risk with evidence, probabilities, and the value of information."
+        },
+        {
+          name: "The Market Map",
+          source: "Market Cartographer",
+          image: "market_map.webp",
+          meaning: "The Market Map represents market definition, buyer and seller behavior, equilibrium, competition, entry, imitation, and profit erosion.",
+          conceptPower: "Market outcomes depend on demand, supply, strategic behavior, and the ability of rivals to enter or copy attractive opportunities. Above-normal returns invite competitive pressure unless a durable barrier protects them.",
+          whyItMatters: "It helps students connect a firm-level decision to the market forces that determine whether an advantage can survive."
+        }
+      ]
+    },
+    desk: {
+      title: "The Strategy Desk",
+      file: "/play/managerial-directorate-telemetry-poc/strategy-desk/" + window.location.search,
+      statusKey: "managerialHub_desk_complete",
+      storageAliases: {
+        complete: ["managerialHub_strategyDesk_complete"],
+        started: ["managerialHub_strategyDesk_started"],
+        room: ["managerialHub_strategyDesk_room"],
+        status: ["managerialHub_strategyDesk_status"]
+      },
+      startedKey: "managerialHub_desk_started",
+      roomKey: "managerialHub_desk_room",
+      unstableText: "Desk Unopened",
+      contestedText: "Desk Active",
+      restoredText: "Desk Secured",
+      artifactText: "Strategy Desk secured · Board cleared",
+      sequence: 3,
+      buttonText: "Enter Desk",
+      nextReason: "Read demand, price across a portfolio, segment customers, and anticipate strategic responses before the next move lands.",
+      storyIntro: "The Strategy Desk is open. Demand signals are noisy, segments are shifting, and every move creates a countermove.",
+      storyActive: "The Strategy Desk is active. Price, package, commitment, and bargaining position are all live on the board.",
+      storyRestored: "The Strategy Desk is secured. Demand, segmentation, and strategic control are back on the board.",
+      recoveryCode: "DESK-SECURED",
+      artifacts: [
+        {
+          name: "The Elasticity Compass",
+          source: "Demand Strategist",
+          image: "elasticity_compass.webp",
+          meaning: "The Elasticity Compass represents demand responsiveness, optimal pricing, capacity decisions, and the evidence needed before moving a price.",
+          conceptPower: "Demand and pricing decisions work only when the firm can see how quantity, contribution, capacity, promotion, and related products respond together.",
+          whyItMatters: "It reminds students that price is a strategic decision rather than a number chosen in isolation."
+        },
+        {
+          name: "The Segmentation Seal",
+          source: "Segmentation Broker",
+          image: "segmentation_seal.webp",
+          meaning: "The Segmentation Seal represents direct and indirect price discrimination, self-selection, versioning, and bundling.",
+          conceptPower: "A firm can create more value when it recognizes willingness-to-pay differences and designs defensible choices around them.",
+          whyItMatters: "It keeps students focused on the conditions that make segmentation work, including the need to control arbitrage."
+        },
+        {
+          name: "The Bargaining Ledger",
+          source: "The Game Architect",
+          image: "bargaining_ledger.webp",
+          meaning: "The Bargaining Ledger represents strategic interdependence, equilibrium, commitment, timing, and bargaining power.",
+          conceptPower: "Strategic choices have value only in relation to the responses they invite from other players.",
+          whyItMatters: "It helps students move from isolated decisions to a complete view of rivalry and negotiation."
+        }
+      ]
+    },
+    agency: {
+      title: "The Agency Protocol",
+      file: "/play/managerial-directorate-telemetry-poc/agency-protocol/" + window.location.search,
+      statusKey: "managerialHub_agency_complete",
+      storageAliases: {
+        complete: ["managerialHub_agencyProtocol_complete"],
+        started: ["managerialHub_agencyProtocol_started"],
+        room: ["managerialHub_agencyProtocol_room"],
+        status: ["managerialHub_agencyProtocol_status"]
+      },
+      startedKey: "managerialHub_agency_started",
+      roomKey: "managerialHub_agency_room",
+      unstableText: "Protocol Unopened",
+      contestedText: "Protocol Active",
+      restoredText: "Protocol Cleared",
+      artifactText: "Protocol secured · File closed",
+      sequence: 4,
+      buttonText: "Enter Agency",
+      nextReason: "Close the first active file by reviewing adverse selection, moral hazard, principal-agent problems, and incentive design.",
+      storyIntro: "The Agency Protocol is the final file in the managerial sequence. Hidden information and bad incentives are loose in the system.",
+      storyActive: "The Agency Protocol is active. Someone knows more than they should, someone else is taking the risk, and the incentives are probably a mess.",
+      storyRestored: "The Agency Protocol is cleared. Hidden risks were found, incentives were aligned, and the file is secured.",
+      recoveryCode: "AGENCY-SECURED",
+      artifacts: [
+        {
+          name: "The Red Ledger",
+          source: "Underwriter of Hidden Risk",
+          image: "ledger.webp",
+          meaning: "The Red Ledger represents adverse selection and the danger of pricing a deal when hidden risk is buried in the file.",
+          conceptPower: "Adverse selection happens before an agreement when one side has better information than the other and the worse risks are more likely to enter the deal.",
+          whyItMatters: "Students often treat hidden information like ordinary uncertainty. The ledger reminds them to ask who knows what before the contract is signed."
+        },
+        {
+          name: "The Glass Lens",
+          source: "Auditor of Moral Hazard",
+          image: "lens.webp",
+          meaning: "The Glass Lens represents hidden action and the need to observe behavior after incentives have been created.",
+          conceptPower: "Moral hazard happens after an agreement when one party changes behavior because someone else bears part of the cost.",
+          whyItMatters: "Students often mix up hidden information with hidden action. The lens reminds them to ask whether the problem happens before or after the agreement."
+        },
+        {
+          name: "The Incentive Algorithm",
+          source: "Chief Architect of Incentives",
+          image: "algorithm.webp",
+          meaning: "The Incentive Algorithm represents principal-agent problems and the work of aligning rewards, constraints, and behavior.",
+          conceptPower: "A principal-agent problem appears when the agent making decisions does not bear the same costs or receive the same benefits as the principal.",
+          whyItMatters: "Students need to see that incentives do not just describe behavior. They shape it. The algorithm reminds them that better design changes what people actually do."
+        }
+      ]
+    }
+  };
+
+  let selectedGame = null;
+  let nextOperationKey = null;
+  const HUB_SAVE_KEY = "managerialHub_save_v1";
+
+  window.addEventListener("load", () => {
+    syncHubSaveFromExistingKeys();
+    updateGameStatuses();
+    renderArtifactVault();
+    restoreBriefingFolderState();
+    updateSoundToggle();
+
+    setTimeout(() => {
+      document.getElementById("splashScreen").classList.add("ready");
+      document.getElementById("splashStatus").innerText = "Game ready.";
+    }, 3000);
+  });
+
+  function enterHub(){
+    document.getElementById("splashScreen").classList.add("hidden");
+    document.getElementById("mainMenu").classList.add("active");
+    showOperationsMenuButton();
+    startMenuMusic();
+  }
+
+  function showHelpButton(){
+    const button = document.getElementById("helpButton");
+    if(button){ button.classList.add("visible"); }
+  }
+
+  function openHelpModal(){ document.getElementById("helpModal").classList.add("active"); }
+  function closeHelpModal(){ document.getElementById("helpModal").classList.remove("active"); }
+
+  function showOperationsMenuButton(){
+    const button = document.getElementById("operationsMenuButton");
+    if(button){ button.classList.add("visible"); }
+  }
+
+  function openOperationsMenu(){
+    renderOperationLog();
+    renderArtifactVault();
+    renderAchievements();
+    document.getElementById("operationsMenuModal").classList.add("active");
+  }
+
+  function closeOperationsMenu(){ document.getElementById("operationsMenuModal").classList.remove("active"); }
+
+  function showOperationsPanel(panelId){
+    document.querySelectorAll(".operations-panel").forEach(panel => panel.classList.remove("active"));
+    const panel = document.getElementById(panelId);
+    if(panel){ panel.classList.add("active"); }
+    if(panelId === "operationLogPanel"){ renderOperationLog(); }
+    if(panelId === "artifactVaultPanel"){ renderArtifactVault(); }
+    if(panelId === "achievementsPanel"){ renderAchievements(); }
+    if(panelId === "recoveryPanel"){
+      const message = document.getElementById("recoveryMessage");
+      const codeInput = document.getElementById("recoveryCode");
+      if(message){ message.className = "recovery-message"; message.innerText = ""; }
+      if(codeInput){ codeInput.value = ""; }
+    }
+  }
+
+  function pluralize(count, singular, plural){ return count === 1 ? singular : plural; }
+  function getStorageFlag(key){ return localStorage.getItem(key) === "true"; }
+
+  function getOperationStorageKeys(gameKey, field){
+    const game = games[gameKey];
+    if(!game) return [];
+
+    const primary = {
+      complete: game.statusKey,
+      started: game.startedKey,
+      room: game.roomKey
+    }[field];
+
+    const aliases = Array.isArray(game.storageAliases?.[field])
+      ? game.storageAliases[field]
+      : [];
+
+    return [...new Set([primary, ...aliases].filter(Boolean))];
+  }
+
+  function getOperationStorageValue(gameKey, field){
+    const keys = getOperationStorageKeys(gameKey, field);
+    for(const key of keys){
+      const value = localStorage.getItem(key);
+      if(value !== null && value !== "") return value;
+    }
+    return null;
+  }
+
+  function setOperationStorageValue(gameKey, field, value){
+    getOperationStorageKeys(gameKey, field).forEach(key => {
+      localStorage.setItem(key, String(value));
+    });
+  }
+
+  function getOperationRoom(gameKey){
+    return getOperationStorageValue(gameKey, "room");
+  }
+
+  function getHubSave(){
+    try { return JSON.parse(localStorage.getItem(HUB_SAVE_KEY) || "{}"); }
+    catch(error){ return {}; }
+  }
+
+  function getOperationSaveState(gameKey){
+    const save = getHubSave();
+    return save?.operations?.[gameKey] || {};
+  }
+
+  function isOperationCompleted(gameKey){
+    const game = games[gameKey];
+    if(!game) return false;
+
+    const savedState = getOperationSaveState(gameKey);
+    const aliasKeys = [
+      ...getOperationStorageKeys(gameKey, "complete"),
+      ...(Array.isArray(game.storageAliases?.status) ? game.storageAliases.status : []),
+      `${gameKey}Complete`,
+      `${gameKey}_complete`,
+      `${gameKey}_completed`,
+      `${gameKey}Completed`,
+      `${gameKey}Status`,
+      `managerialHub_${gameKey}_complete`,
+      `managerialHub_${gameKey}_completed`,
+      `managerialHub_${gameKey}_status`,
+      gameKey === "agency" ? "agencyProtocolComplete" : null,
+      gameKey === "agency" ? "agency_protocol_complete" : null,
+      gameKey === "agency" ? "agencyProtocol_completed" : null,
+      gameKey === "agency" ? "theAgencyProtocolComplete" : null,
+      gameKey === "agency" ? "agencyProtocolStatus" : null
+    ].filter(Boolean);
+
+    return aliasKeys.some(key => {
+      const value = String(localStorage.getItem(key) || "").toLowerCase();
+      return value === "true" || value === "complete" || value === "completed" || value === "cleared" || value === "secured";
+    }) || savedState.completed === true || String(savedState.status || "").toLowerCase() === "secured";
+  }
+
+  function isOperationStarted(gameKey){
+    const game = games[gameKey];
+    if(!game) return false;
+    const savedState = getOperationSaveState(gameKey);
+    const storageStarted = getOperationStorageKeys(gameKey, "started")
+      .some(key => getStorageFlag(key));
+    return storageStarted || savedState.started === true || Boolean(savedState.room) || Boolean(getOperationRoom(gameKey));
+  }
+
+  function setHubSave(save){ localStorage.setItem(HUB_SAVE_KEY, JSON.stringify(save)); }
+
+  function recordOperationProgress(gameKey, details = {}){
+    const game = games[gameKey];
+    if(!game) return;
+
+    const save = getHubSave();
+    save.operations = save.operations || {};
+    save.log = save.log || [];
+    save.operations[gameKey] = {
+      started: details.started ?? isOperationStarted(gameKey),
+      completed: details.completed ?? isOperationCompleted(gameKey),
+      room: details.room ?? getOperationRoom(gameKey) ?? null,
+      updatedAt: Date.now()
+    };
+
+    if(details.logMessage){
+      save.log.unshift({
+        mission: game.title,
+        message: details.logMessage,
+        timestamp: Date.now()
+      });
+      save.log = save.log.slice(0, 30);
+    }
+
+    setHubSave(save);
+  }
+
+  function syncHubSaveFromExistingKeys(){
+    Object.keys(games).forEach(key => {
+      const game = games[key];
+      if(game.unavailable) return;
+      const completed = isOperationCompleted(key);
+      const started = isOperationStarted(key);
+      const room = getOperationRoom(key);
+      if(completed || started || room){
+        recordOperationProgress(key, { started, completed, room });
+      }
+    });
+  }
+
+  function toggleBriefingFolder(){
+    const folder = document.getElementById("briefingFolder");
+    const button = document.querySelector(".briefing-folder-header");
+    const toggle = document.getElementById("briefingFolderToggle");
+    if(!folder) return;
+
+    const isOpen = folder.classList.toggle("open");
+    folder.classList.toggle("collapsed", !isOpen);
+    if(button){ button.setAttribute("aria-expanded", isOpen ? "true" : "false"); }
+    if(toggle){ toggle.innerText = isOpen ? "Close" : "Open"; }
+    localStorage.setItem("managerialHub_briefingOpen", isOpen ? "true" : "false");
+  }
+
+  function restoreBriefingFolderState(){
+    const shouldOpen = localStorage.getItem("managerialHub_briefingOpen") === "true";
+    const folder = document.getElementById("briefingFolder");
+    const button = document.querySelector(".briefing-folder-header");
+    const toggle = document.getElementById("briefingFolderToggle");
+    if(!folder) return;
+    folder.classList.toggle("open", shouldOpen);
+    folder.classList.toggle("collapsed", !shouldOpen);
+    if(button){ button.setAttribute("aria-expanded", shouldOpen ? "true" : "false"); }
+    if(toggle){ toggle.innerText = shouldOpen ? "Close" : "Open"; }
+  }
+
+  function getSortedOperationKeys(includeUnavailable = false){
+    return Object.keys(games)
+      .filter(key => includeUnavailable || !games[key].unavailable)
+      .sort((a, b) => (games[a].sequence || 999) - (games[b].sequence || 999));
+  }
+
+  function isOperationUnlocked(gameKey){
+    const game = games[gameKey];
+    if(!game || game.unavailable) return false;
+
+    // Completed files stay accessible even if the active sequence changes later.
+    if(isOperationCompleted(gameKey)) return true;
+
+    const activeKeys = getSortedOperationKeys(false);
+    const currentIndex = activeKeys.indexOf(gameKey);
+
+    if(currentIndex <= 0){
+      return true;
+    }
+
+    return activeKeys.slice(0, currentIndex).every(key => isOperationCompleted(key));
+  }
+
+  function updateGameStatuses(){
+    let clearedCount = 0;
+    let contestedCount = 0;
+    const activeKeys = getSortedOperationKeys(false);
+    const totalOperations = activeKeys.length;
+
+    getSortedOperationKeys(true).forEach(key => {
+      const game = games[key];
+      const statusElement = document.getElementById("status-" + key);
+      const card = statusElement ? statusElement.closest(".game-card") : document.querySelector(".game-card." + key);
+      const badge = document.getElementById("badge-" + key);
+      const briefing = document.getElementById("briefing-" + key);
+      const enterButton = card ? card.querySelector(".enter-btn") : null;
+
+      if(card){
+        card.classList.remove("restored", "contested", "unstable", "locked");
+      }
+
+      if(!statusElement) return;
+
+      if(game.unavailable){
+        statusElement.innerText = game.offlineText || "Coming Soon";
+        statusElement.dataset.realmState = "offline";
+
+        if(card){ card.classList.add("locked"); }
+        if(enterButton){
+          enterButton.disabled = true;
+          enterButton.innerText = game.offlineText || "Coming Soon";
+          enterButton.classList.add("disabled-btn");
+        }
+
+        if(briefing) briefing.innerText = game.storyIntro || "Sealed file. This operation is not open yet.";
+        return;
+      }
+
+      const unlocked = isOperationUnlocked(key);
+      const completed = isOperationCompleted(key);
+      const started = isOperationStarted(key);
+      const room = getOperationRoom(key);
+
+      if(enterButton){
+        enterButton.disabled = !unlocked;
+        enterButton.innerText = unlocked ? (game.buttonText || "Enter Operation") : "Sealed";
+        enterButton.classList.toggle("disabled-btn", !unlocked);
+      }
+
+      if(completed){
+        statusElement.innerText = game.restoredText || "Cleared";
+        statusElement.dataset.realmState = "restored";
+
+        if(card){ card.classList.add("restored"); }
+        if(badge) badge.innerText = game.artifactText || "File secured";
+        if(briefing) briefing.innerText = game.storyRestored || "Operation secured.";
+
+        clearedCount++;
+      } else if(!unlocked){
+        statusElement.innerText = "Sealed";
+        statusElement.dataset.realmState = "offline";
+
+        if(card){ card.classList.add("locked"); }
+        if(badge) badge.innerText = "";
+        if(briefing) briefing.innerText = "Sealed file. Clear the prior operation before opening this one.";
+        return;
+      } else if(started){
+        statusElement.innerText = room ? `${game.contestedText || "Active"} · Room ${room}` : (game.contestedText || "Active");
+        statusElement.dataset.realmState = "contested";
+
+        if(card){ card.classList.add("contested"); }
+        if(badge) badge.innerText = "";
+        if(briefing) briefing.innerText = game.storyActive || "Operation active.";
+
+        contestedCount++;
+      } else {
+        statusElement.innerText = game.unstableText || "Ready";
+        statusElement.dataset.realmState = "unstable";
+
+        if(card){ card.classList.add("unstable"); }
+        if(badge) badge.innerText = "";
+        if(briefing) briefing.innerText = game.storyIntro || "Operation awaiting review.";
+      }
+    });
+
+    updateBriefingSummary(clearedCount, contestedCount, totalOperations);
+    renderArtifactVault();
+    renderAchievements();
+  }
+
+  function updateBriefingSummary(clearedCount, contestedCount, totalOperations){
+    const title = document.getElementById("briefingFolderTitle");
+    const subtext = document.getElementById("briefingFolderSubtext");
+    const nextTitle = document.getElementById("nextOperationTitle");
+    const nextReason = document.getElementById("nextOperationReason");
+    const nextButton = document.getElementById("nextOperationButton");
+
+    nextOperationKey = getSortedOperationKeys(false).find(key => !isOperationCompleted(key)) || null;
+
+    if(title){ title.innerText = `${clearedCount} of ${totalOperations} ${pluralize(totalOperations, "file", "files")} secured`; }
+
+    if(!nextOperationKey){
+      if(subtext){ subtext.innerText = totalOperations ? "All active operations secured" : "No active operations available"; }
+      if(nextTitle){ nextTitle.innerText = totalOperations ? "All Active Files Secured" : "No Active Files"; }
+      if(nextReason){ nextReason.innerText = totalOperations ? "The active managerial file is locked down." : "The agency is waiting for the next operation to come online."; }
+      if(nextButton){ nextButton.innerText = "No Active Operation"; nextButton.disabled = true; }
+      return;
+    }
+
+    const nextGame = games[nextOperationKey];
+    if(subtext){ subtext.innerText = `Next Operation: ${nextGame.title}`; }
+    if(nextTitle){ nextTitle.innerText = nextGame.title; }
+    if(nextReason){ nextReason.innerText = nextGame.nextReason || "Begin the next available operation."; }
+    if(nextButton){ nextButton.innerText = "Begin Next Operation"; nextButton.disabled = false; }
+  }
+
+  function updateOperationsNarrative(clearedCount, contestedCount, totalOperations){
+    const narrative = document.getElementById("operationsNarrativeText");
+    if(!narrative) return;
+
+    if(totalOperations === 0){
+      narrative.innerText = "No active operations are available yet. The agency file remains sealed.";
+      return;
+    }
+
+    if(clearedCount === totalOperations){
+      narrative.innerText = "The active operation is cleared. The file is secured. Nobody gets to pretend the incentives were fine. They weren't.";
+      return;
+    }
+
+    const activeKey = getSortedOperationKeys(false).find(key => isOperationStarted(key) && !isOperationCompleted(key));
+    if(activeKey){
+      narrative.innerText = games[activeKey].storyActive || "An operation is active. Finish the file.";
+      return;
+    }
+
+    if(nextOperationKey){
+      narrative.innerText = games[nextOperationKey].storyIntro || "Begin the next operation to secure the system.";
+      return;
+    }
+
+    narrative.innerText = `${clearedCount} ${pluralize(clearedCount, "operation", "operations")} cleared. Keep moving.`;
+  }
+
+  function launchNextOperation(){
+    if(!nextOperationKey || !games[nextOperationKey] || games[nextOperationKey].unavailable) return;
+    selectGame(nextOperationKey);
+  }
+
+  function escapeForAttribute(value){
+    return String(value || "")
+      .replace(/\\/g, "\\\\")
+      .replace(/'/g, "\\'")
+      .replace(/"/g, "&quot;")
+      .replace(/\n/g, " ");
+  }
+
+  function renderArtifactVault(){
+    const vault = document.getElementById("operationsArtifactVault");
+    if(!vault) return;
+
+    const orderedGames = Object.entries(games)
+      .sort((a, b) => (a[1].sequence || 99) - (b[1].sequence || 99));
+
+    const artifactCards = [];
+
+    orderedGames.forEach(([key, game]) => {
+      const completed = isOperationCompleted(key);
+      const started = isOperationStarted(key);
+      const sealed = game.unavailable && !completed;
+      const artifacts = Array.isArray(game.artifacts) && game.artifacts.length
+        ? game.artifacts
+        : [{
+            name: game.artifactName || "Unknown Item",
+            source: game.title || key,
+            image: game.artifactImage || "",
+            initials: game.artifactInitials || "",
+            meaning: game.artifactDescription || game.artifactText || "Classified item recovered from the completed operation.",
+            conceptPower: "",
+            whyItMatters: ""
+          }];
+
+      artifacts.forEach((artifact, index) => {
+        const artifactName = artifact.name || `${game.title || key} Artifact`;
+        const sourceText = artifact.source || game.title || key;
+        const lockedText = sealed
+          ? "This file is not open yet. The artifact remains sealed. Naturally. Locked files do locked-file things."
+          : started
+            ? "Operation is active. Clear the run to unlock the full artifact file."
+            : "Start and complete the operation to unlock the full artifact file.";
+
+        const meaning = completed ? (artifact.meaning || "Classified item recovered from the completed operation.") : lockedText;
+        const safeName = escapeForAttribute(artifactName);
+        const safeSource = escapeForAttribute(sourceText);
+        const safeMeaning = escapeForAttribute(artifact.meaning || meaning);
+        const safeImage = escapeForAttribute(artifact.image || "");
+        const safeConceptPower = escapeForAttribute(artifact.conceptPower || "");
+        const safeWhyItMatters = escapeForAttribute(artifact.whyItMatters || "");
+
+        const imageMarkup = completed
+          ? (artifact.image
+              ? `
+                <button class="artifact-image-button"
+                  onclick="openArtifactModal('${safeImage}', '${safeName}', '${safeSource}', '${safeMeaning}', '${safeConceptPower}', '${safeWhyItMatters}')"
+                  aria-label="Open ${safeName}">
+                  <img class="artifact-image" src="${artifact.image}" alt="${artifactName}">
+                </button>
+              `
+              : `<div class="artifact-placeholder">Image Missing</div>`)
+          : `<div class="artifact-placeholder">Locked Item</div>`;
+
+        artifactCards.push(`
+          <div class="artifact-card ${completed ? "unlocked" : "locked"}" data-artifact="${key}-${index}">
+            <div class="artifact-image-wrap">${imageMarkup}</div>
+            <div class="artifact-name">${completed ? artifactName : "Unknown Item"}</div>
+            <div class="artifact-source">${completed ? sourceText : game.title}</div>
+            <div class="artifact-meaning">${completed ? meaning : "Clear this operation to reveal the classified item and its meaning."}</div>
+            <div class="artifact-status">${completed ? "Secured" : sealed ? "Sealed" : started ? "In Progress" : "Locked"}</div>
+          </div>
+        `);
+      });
+    });
+
+    vault.innerHTML = artifactCards.length
+      ? artifactCards.join("")
+      : "No classified items configured yet.";
+  }
+
+  function openArtifactModal(image, name, source, meaning, conceptPower = "", whyItMatters = ""){
+    const modal = document.getElementById("artifactModal");
+    const modalImage = document.getElementById("artifactModalImage");
+    const modalTitle = document.getElementById("artifactModalTitle");
+    const modalSource = document.getElementById("artifactModalSource");
+    const modalMeaning = document.getElementById("artifactModalMeaning");
+    const modalConceptPower = document.getElementById("artifactModalConceptPower");
+    const modalWhyItMatters = document.getElementById("artifactModalWhyItMatters");
+
+    if(!modal || !modalImage || !modalTitle || !modalSource || !modalMeaning) return;
+
+    modalImage.src = image;
+    modalImage.alt = name;
+    modalTitle.innerText = name;
+    modalSource.innerText = source;
+    modalMeaning.innerText = meaning;
+
+    if(modalConceptPower){
+      modalConceptPower.innerHTML = conceptPower
+        ? `<span>Concept Power:</span> ${conceptPower}`
+        : "";
+    }
+
+    if(modalWhyItMatters){
+      modalWhyItMatters.innerHTML = whyItMatters
+        ? `<span>Why It Matters:</span> ${whyItMatters}`
+        : "";
+    }
+
+    modal.classList.add("active");
+  }
+
+  function closeArtifactModal(){
+    const modal = document.getElementById("artifactModal");
+    if(modal){ modal.classList.remove("active"); }
+  }
+
+  function getAchievementPlaceholderStats(){
+    const activeKeys = getSortedOperationKeys(false);
+    const cleared = activeKeys.filter(key => isOperationCompleted(key)).length;
+    const active = activeKeys.filter(key => isOperationStarted(key) && !isOperationCompleted(key)).length;
+
+    return {
+      activeOperations: activeKeys.length,
+      clearedOperations: cleared,
+      activeOperationsInProgress: active
+    };
+  }
+
+  function renderAchievementPlaceholders(){
+    const container = document.getElementById("achievementsContent");
+    if(!container) return;
+
+    const stats = getAchievementPlaceholderStats();
+    const progressPct = stats.activeOperations ? Math.round((stats.clearedOperations / stats.activeOperations) * 100) : 0;
+
+    container.innerHTML = `
+      <div class="achievement-summary">
+        <div class="achievement-summary-label">Achievement File</div>
+        <div class="achievement-summary-title">Pending Build</div>
+        <div class="achievement-summary-text">
+          ${stats.clearedOperations}/${stats.activeOperations} active operations secured ·
+          ${stats.activeOperationsInProgress} active ${stats.activeOperationsInProgress === 1 ? "file" : "files"} in progress
+        </div>
+        <div class="achievement-progress-track" aria-hidden="true">
+          <div class="achievement-progress-fill" style="width:${progressPct}%"></div>
+        </div>
+      </div>
+
+      <div class="achievement-grid">
+        <div class="achievement-card placeholder"
+          onclick="openAchievementModal('◆', 'Achievements Pending', 'The achievement list will be added once the Managerial Intelligence Directorate achievement set and badge images are finalized.', 'Pending')"
+          role="button"
+          tabindex="0"
+          aria-label="Open achievement placeholder"
+          onkeydown="if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); openAchievementModal('◆', 'Achievements Pending', 'The achievement list will be added once the Managerial Intelligence Directorate achievement set and badge images are finalized.', 'Pending'); }">
+          <div class="achievement-icon" aria-hidden="true">◆</div>
+          <div>
+            <div class="achievement-name">Achievements Pending</div>
+            <div class="achievement-desc">The shell is here. The final achievement list can drop in later without rebuilding the hub.</div>
+            <div class="achievement-status">Pending</div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  const MANAGERIAL_ACHIEVEMENTS = [
+    { title: "First File", description: "Secure one operation.", icon: "first_file.webp", unlocked: stats => stats.completed >= 1 },
+    { title: "Operations Chief", description: "Secure every active operation.", icon: "operations_chief.webp", unlocked: stats => stats.completed >= stats.total && stats.total > 0 },
+    { title: "Unbroken Judgment", description: "Reach a streak of 20.", icon: "unbroken_judgement.webp", unlocked: stats => stats.bestStreak >= 20 },
+    { title: "Trial by Clock", description: "Reach Room 30 in Timed Trial with at least 80 percent accuracy.", icon: "trial_by_clock.webp", unlocked: stats => stats.timedRoom >= 30 && stats.timedAccuracy >= 80 },
+    { title: "Exam Operator", description: "Complete an Exam Drill session.", icon: "exam_operator.webp", unlocked: stats => stats.examSessions >= 1 },
+    { title: "Legendary File", description: "Complete one operation in Legendary Mode.", icon: "legendary_file.webp", unlocked: stats => stats.legendaryCompletions >= 1 },
+    { title: "Perfect Review", description: "Defeat all three bosses in a single operation without a wrong answer.", icon: "perfect_review.webp", unlocked: stats => stats.perfectBossRuns >= 1 },
+    { title: "Return to Duty", description: "Resume a saved run and finish it.", icon: "return_to_duty.webp", unlocked: stats => stats.resumeFinishes >= 1 },
+    { title: "Classified Collection", description: "Secure every active operation artifact set.", icon: "classified_collection.webp", unlocked: stats => stats.artifactsCollected >= stats.totalArtifacts && stats.totalArtifacts > 0 },
+    { title: "Proof of Work", description: "Answer 400 questions correctly.", icon: "proof_of_work.webp", unlocked: stats => stats.totalCorrect >= 400 }
+  ];
+
+  function getManagerialStorageEntries(){
+    const entries = [];
+    for(let i = 0; i < localStorage.length; i++){
+      const key = localStorage.key(i);
+      entries.push({ lowerKey: String(key || "").toLowerCase(), value: localStorage.getItem(key) });
+    }
+    return entries;
+  }
+
+  function getManagerialAchievementStats(){
+    const activeKeys = getSortedOperationKeys(false);
+    const entries = getManagerialStorageEntries();
+    const maxValue = matcher => entries.reduce((max, entry) => {
+      const value = Number(entry.value);
+      return matcher(entry.lowerKey) && Number.isFinite(value) ? Math.max(max, value) : max;
+    }, 0);
+    const trueCount = matcher => entries.filter(entry => matcher(entry.lowerKey) && (entry.value === "true" || entry.value === "1")).length;
+    const completed = activeKeys.filter(key => isOperationCompleted(key)).length;
+    const totalArtifacts = activeKeys.reduce((total, key) => total + ((games[key].artifacts || []).length), 0);
+    const artifactsCollected = activeKeys.reduce((total, key) => total + (isOperationCompleted(key) ? (games[key].artifacts || []).length : 0), 0);
+
+    return {
+      total: activeKeys.length,
+      completed,
+      legendaryCompletions: activeKeys.filter(key => localStorage.getItem(`managerialHub_${key}_legendary_complete`) === "true" || localStorage.getItem(`${key}LegendaryComplete`) === "true").length,
+      bestStreak: maxValue(key => key.includes("maxstreak") || key.includes("beststreak") || key.includes("timedlaststreak")),
+      timedRoom: maxValue(key => key.includes("timed") && key.includes("room")),
+      timedAccuracy: maxValue(key => key.includes("timed") && key.includes("accuracy")),
+      examSessions: trueCount(key => key.includes("exam") && (key.includes("complete") || key.includes("survivor"))),
+      perfectBossRuns: trueCount(key => key.includes("perfect") && (key.includes("boss") || key.includes("calibration")) && (key.includes("complete") || key.includes("run"))),
+      resumeFinishes: trueCount(key => (key.includes("resume") || key.includes("rebuild")) && (key.includes("finish") || key.includes("complete"))),
+      totalCorrect: maxValue(key => key.includes("correcttotal") || key.includes("totalcorrect") || key.includes("correctanswerslifetime")),
+      totalArtifacts,
+      artifactsCollected
+    };
+  }
+
+  function renderAchievements(){
+    const container = document.getElementById("achievementsContent");
+    if(!container) return;
+
+    const stats = getManagerialAchievementStats();
+    const achievements = MANAGERIAL_ACHIEVEMENTS.map(item => ({ ...item, unlocked: !!item.unlocked(stats) }));
+    const unlockedCount = achievements.filter(item => item.unlocked).length;
+    const progressPct = Math.round((unlockedCount / achievements.length) * 100);
+    const cards = achievements.map(item => `
+      <div class="achievement-card ${item.unlocked ? "unlocked" : "locked"}"
+        onclick="openAchievementModal('${item.icon}', '${item.title}', '${item.description}', '${item.unlocked ? "Unlocked" : "Locked"}')"
+        role="button" tabindex="0" aria-label="Open achievement ${item.title}"
+        onkeydown="if(event.key === 'Enter' || event.key === ' '){ event.preventDefault(); openAchievementModal('${item.icon}', '${item.title}', '${item.description}', '${item.unlocked ? "Unlocked" : "Locked"}'); }">
+        <div class="achievement-icon">
+          <img
+            class="achievement-icon-image"
+            src="${item.icon}"
+            alt="${item.title}"
+          >
+        </div>
+        <div><div class="achievement-name">${item.title}</div><div class="achievement-desc">${item.description}</div><div class="achievement-status">${item.unlocked ? "Unlocked" : "Locked"}</div></div>
+      </div>`).join("");
+
+    container.innerHTML = `
+      <div class="achievement-summary">
+        <div class="achievement-summary-label">Achievement Progress</div>
+        <div class="achievement-summary-title">${unlockedCount}/${achievements.length}</div>
+        <div class="achievement-summary-text">${stats.completed}/${stats.total} active operations secured &middot; ${stats.artifactsCollected}/${stats.totalArtifacts} artifacts cataloged</div>
+        <div class="achievement-progress-track" aria-hidden="true"><div class="achievement-progress-fill" style="width:${progressPct}%"></div></div>
+      </div>
+      <div class="achievement-grid">${cards}</div>`;
+  }
+
+  function openAchievementModal(icon, title, description, status){
+    const modal = document.getElementById("achievementModal");
+    const modalIcon = document.getElementById("achievementModalImage");
+    const modalTitle = document.getElementById("achievementModalTitle");
+    const modalStatus = document.getElementById("achievementModalStatus");
+    const modalDescription = document.getElementById("achievementModalDescription");
+
+    if(!modal || !modalIcon || !modalTitle || !modalStatus || !modalDescription) return;
+
+    modalIcon.src = icon || "";
+    modalIcon.alt = title || "Achievement";
+    modalTitle.innerText = title || "Achievement";
+    modalStatus.innerText = status || "Pending";
+    modalDescription.innerText = description || "";
+
+    modal.classList.add("active");
+  }
+
+  function closeAchievementModal(){
+    const modal = document.getElementById("achievementModal");
+    if(modal){ modal.classList.remove("active"); }
+  }
+
+  function renderOperationLog(){
+    const container = document.getElementById("operationLogContent");
+    if(!container) return;
+    const save = getHubSave();
+    const log = save.log || [];
+
+    if(log.length === 0){
+      container.innerHTML = "No operation activity recorded yet.";
+      return;
+    }
+
+    container.innerHTML = log.map(entry => {
+      const date = new Date(entry.timestamp);
+      const readableDate = isNaN(date) ? "" : date.toLocaleString();
+      return `
+        <div class="operation-log-entry">
+          <div class="operation-log-entry-title">${entry.message}</div>
+          <div class="operation-log-entry-time">${entry.mission || "Operations"} · ${readableDate}</div>
+        </div>
+      `;
+    }).join("");
+  }
+
+  function normalizeRecoveryCode(value){
+    return String(value || "").trim().toUpperCase().replace(/\s+/g, "");
+  }
+
+  function restoreOperationFromCode(){
+    const operationSelect = document.getElementById("recoveryOperation");
+    const codeInput = document.getElementById("recoveryCode");
+    const message = document.getElementById("recoveryMessage");
+    if(!operationSelect || !codeInput || !message) return;
+
+    const gameKey = operationSelect.value;
+    const game = games[gameKey];
+    if(!game){
+      message.className = "recovery-message error";
+      message.innerText = "Operation not found.";
+      return;
+    }
+
+    const enteredCode = normalizeRecoveryCode(codeInput.value);
+    const expectedCode = normalizeRecoveryCode(game.recoveryCode);
+
+    if(!enteredCode){
+      message.className = "recovery-message error";
+      message.innerText = "Enter a recovery code first.";
+      return;
+    }
+
+    if(!expectedCode || enteredCode !== expectedCode){
+      message.className = "recovery-message error";
+      message.innerText = "That recovery code does not match this operation.";
+      return;
+    }
+
+    setOperationStorageValue(gameKey, "complete", "true");
+    localStorage.setItem(`${gameKey}Complete`, "true");
+    localStorage.setItem(`${gameKey}_complete`, "true");
+    localStorage.setItem(`managerialHub_${gameKey}_complete`, "true");
+    if(gameKey === "agency"){
+      localStorage.setItem("agencyProtocolComplete", "true");
+      localStorage.setItem("agency_protocol_complete", "true");
+    }
+    setOperationStorageValue(gameKey, "started", "true");
+    setOperationStorageValue(gameKey, "room", "30");
+
+    recordOperationProgress(gameKey, {
+      started: true,
+      completed: true,
+      room: 30,
+      logMessage: `${game.title} restored from recovery code.`
+    });
+
+    updateGameStatuses();
+    renderOperationLog();
+    renderArtifactVault();
+    message.className = "recovery-message success";
+    message.innerText = `${game.title} restored on this device.`;
+    codeInput.value = "";
+  }
+
+  function selectGame(gameKey){
+    if(!games[gameKey] || games[gameKey].unavailable){
+      alert("That operation is still sealed.");
+      return;
+    }
+
+    if(!isOperationUnlocked(gameKey)){
+      alert("That file is sealed. Clear the prior operation first.");
+      return;
+    }
+
+    localStorage.setItem("selectedGauntlet", gameKey);
+    localStorage.setItem("selectedMission", gameKey);
+    setOperationStorageValue(gameKey, "started", "true");
+
+    recordOperationProgress(gameKey, {
+      started: true,
+      completed: isOperationCompleted(gameKey),
+      room: getOperationRoom(gameKey),
+      logMessage: `${games[gameKey].title} opened from the Managerial Intelligence Directorate hub.`
+    });
+
+    stopMenuMusic();
+    window.location.href = games[gameKey].file;
+  }
+
+ document.addEventListener("keydown", event => {
+  if(event.key === "Escape"){
+    const artifactModal = document.getElementById("artifactModal");
+    const achievementModal = document.getElementById("achievementModal");
+    const helpModal = document.getElementById("helpModal");
+    const operationsModal = document.getElementById("operationsMenuModal");
+
+    if(artifactModal && artifactModal.classList.contains("active")){
+      closeArtifactModal();
+      return;
+    }
+
+    if(achievementModal && achievementModal.classList.contains("active")){
+      closeAchievementModal();
+      return;
+    }
+
+    if(helpModal && helpModal.classList.contains("active")){
+      closeHelpModal();
+      return;
+    }
+
+    if(operationsModal && operationsModal.classList.contains("active")){
+      closeOperationsMenu();
+      return;
+    }
+
+    stopMenuMusic();
+  }
+});
+
+
+</script>
+<script src="/play/managerial-directorate-telemetry-poc/telemetry-client.js" data-game-id="managerial-hub"></script></body>
+</html>
+
