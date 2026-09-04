@@ -197,6 +197,11 @@
         'fiscal-policy-and-aggregate-demand','fiscal-multipliers-and-crowding-out',
         'stabilization-policy'
       ]),
+      family('open-economy-macroeconomics', 'Open-Economy Macroeconomics', ['open economy','international macro','foreign exchange','exchange rates','nco'], [
+        'international-transactions-and-identities','nominal-exchange-rates',
+        'real-exchange-rates-and-purchasing-power','capital-flows-and-net-capital-outflow',
+        'foreign-exchange-market','open-economy-policy-transmission'
+      ]),
       family('phillips-disinflation', 'Phillips curves and disinflation', ['srpc','lrpc','expectations','sacrifice ratio'], [
         'short-run-phillips-curve','long-run-phillips-curve','phillips-curve-expectations',
         'disinflation-and-policy','sacrifice-ratio'
@@ -226,6 +231,12 @@
     'long-run-macroeconomic-self-adjustment':Object.freeze(['self correction','self adjustment','long run adjustment']),
     'short-run-phillips-curve':Object.freeze(['srpc']),
     'long-run-phillips-curve':Object.freeze(['lrpc']),
+    'international-transactions-and-identities':Object.freeze(['net exports','nx','trade balance','current account']),
+    'nominal-exchange-rates':Object.freeze(['nominal exchange rate','currency appreciation','currency depreciation']),
+    'real-exchange-rates-and-purchasing-power':Object.freeze(['real exchange rate','purchasing power parity','ppp']),
+    'capital-flows-and-net-capital-outflow':Object.freeze(['net capital outflow','nco','capital flight']),
+    'foreign-exchange-market':Object.freeze(['foreign exchange market','currency market','fx market']),
+    'open-economy-policy-transmission':Object.freeze(['open economy policy','trade policy offset','budget deficit exchange rate']),
     'saving-and-investment-identities':Object.freeze(['national saving','private saving','public saving','saving investment identity']),
     'loanable-funds-equilibrium':Object.freeze(['loanable funds','real interest rate equilibrium']),
     'loanable-funds-shifts':Object.freeze(['loanable funds shifts']),

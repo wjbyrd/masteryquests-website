@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-09-01T21:00:00.000Z",
+  "generatedAt": "2026-09-04T16:00:00.000Z",
   "concepts": [
     {
       "canonicalConceptId": "ad-as-equilibrium-and-output-gaps",
@@ -763,6 +763,129 @@
       "legacySourceConceptIds": [
         "federal-budgets-and-debt"
       ]
+    },
+    {
+      "canonicalConceptId": "capital-flows-and-net-capital-outflow",
+      "title": "Capital Flows and Net Capital Outflow",
+      "description": "Classify international asset purchases, calculate NCO, and trace real-interest-rate and risk effects on capital flows.",
+      "includedSkills": [
+        "analyze_competing_nco_forces",
+        "analyze_reinforcing_nco_forces",
+        "bridge_interest_nco_fx_supply",
+        "calculate_capital_flight_shift",
+        "calculate_compound_nco",
+        "calculate_nco",
+        "calculate_nco_change",
+        "classify_asset_transaction",
+        "classify_foreign_direct_investment",
+        "connect_capital_inflow_investment",
+        "connect_interest_rate_asset_demand",
+        "define_capital_flight",
+        "define_nco",
+        "diagnose_inflow_outflow_reversal",
+        "distinguish_gross_net_capital_flows",
+        "evaluate_risk_adjusted_capital_flows",
+        "explain_interest_rate_nco_slope",
+        "interpret_nco_sign",
+        "reconcile_saving_and_gross_flows",
+        "repair_inflow_outflow_sign",
+        "solve_asset_flows_from_saving",
+        "solve_gross_asset_flows",
+        "solve_gross_flow_change",
+        "trace_capital_flight_feedback",
+        "trace_foreign_rate_to_nco",
+        "trace_interest_rate_to_nco",
+        "trace_portfolio_reallocation",
+        "trace_risk_to_nco"
+      ],
+      "excludedNeighboringSkills": [
+        "Micro comparative advantage, world-price, tariff-welfare, quota-rent, and gains-from-trade questions remain in the International Trade and Trade Policy family."
+      ],
+      "prerequisiteConceptIds": [
+        "international-transactions-and-identities",
+        "loanable-funds-equilibrium"
+      ],
+      "relatedConceptIds": [
+        "foreign-exchange-market",
+        "open-economy-policy-transmission"
+      ],
+      "sourceChapters": [
+        18,
+        19
+      ],
+      "sourceObjectives": [
+        "NCO.analyze_competing_nco_forces",
+        "NCO.analyze_reinforcing_nco_forces",
+        "NCO.bridge_interest_nco_fx_supply",
+        "NCO.calculate_capital_flight_shift",
+        "NCO.calculate_compound_nco",
+        "NCO.calculate_nco",
+        "NCO.calculate_nco_change",
+        "NCO.classify_asset_transaction",
+        "NCO.classify_foreign_direct_investment",
+        "NCO.connect_capital_inflow_investment",
+        "NCO.connect_interest_rate_asset_demand",
+        "NCO.define_capital_flight",
+        "NCO.define_nco",
+        "NCO.diagnose_inflow_outflow_reversal",
+        "NCO.distinguish_gross_net_capital_flows",
+        "NCO.evaluate_risk_adjusted_capital_flows",
+        "NCO.explain_interest_rate_nco_slope",
+        "NCO.interpret_nco_sign",
+        "NCO.reconcile_saving_and_gross_flows",
+        "NCO.repair_inflow_outflow_sign",
+        "NCO.solve_asset_flows_from_saving",
+        "NCO.solve_gross_asset_flows",
+        "NCO.solve_gross_flow_change",
+        "NCO.trace_capital_flight_feedback",
+        "NCO.trace_foreign_rate_to_nco",
+        "NCO.trace_interest_rate_to_nco",
+        "NCO.trace_portfolio_reallocation",
+        "NCO.trace_risk_to_nco"
+      ],
+      "sourceGames": [
+        "macro-open-economy-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 1,
+        "calculation": 11,
+        "elite": 2,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9,
+        "unknown": 0
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "calculationCoverage": 11,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Principles-level open-economy Macro child authored and human-read in phaseMacroOpenEconomy-v1.",
+      "instructionalClassification": "Open-economy Macro child",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Contains independent mode floors, checkpoint questions, and misconception-specific adaptive support.",
+      "coverageFloorVersion": "macro-open-economy-production-v1",
+      "selectionRole": "standalone",
+      "taxonomyPhase": "phaseMacroOpenEconomy-v1",
+      "familyConceptId": "open-economy-macroeconomics"
     },
     {
       "canonicalConceptId": "central-bank-and-federal-reserve",
@@ -4365,6 +4488,131 @@
       "coverageFloorVersion": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1"
     },
     {
+      "canonicalConceptId": "foreign-exchange-market",
+      "title": "Foreign-Exchange Market Equilibrium",
+      "description": "Analyze demand for and supply of domestic currency, equilibrium currency values, and single or simultaneous shifts.",
+      "includedSkills": [
+        "analyze_magnitude_bounded_fx_shifts",
+        "analyze_reinforcing_fx_shifts",
+        "analyze_simultaneous_fx_shifts",
+        "bridge_fx_nx_ad",
+        "calculate_fx_quantity_change",
+        "calculate_fx_rate_change",
+        "calculate_simultaneous_fx_change",
+        "diagnose_vertical_supply_misconception",
+        "explain_fx_indeterminacy",
+        "identify_fx_demand",
+        "identify_fx_equilibrium",
+        "identify_fx_supply",
+        "infer_fx_demand_shifter",
+        "infer_fx_supply_shifter",
+        "infer_simultaneous_fx_shifters",
+        "integrate_trade_and_nco_shifts",
+        "interpret_fx_axis",
+        "interpret_offsetting_fx_shifts",
+        "map_nco_to_fx_supply",
+        "map_trade_shock_to_fx_demand",
+        "predict_fx_demand_shift",
+        "read_fx_demand_shift",
+        "read_fx_equilibrium",
+        "read_fx_supply_shift",
+        "read_simultaneous_fx_outcome",
+        "reason_about_shift_order",
+        "repair_movement_shift_confusion",
+        "trace_fx_feedback_to_nx",
+        "trace_interest_nco_fx_nx_chain"
+      ],
+      "excludedNeighboringSkills": [
+        "Micro comparative advantage, world-price, tariff-welfare, quota-rent, and gains-from-trade questions remain in the International Trade and Trade Policy family."
+      ],
+      "prerequisiteConceptIds": [
+        "capital-flows-and-net-capital-outflow",
+        "real-exchange-rates-and-purchasing-power"
+      ],
+      "relatedConceptIds": [
+        "open-economy-policy-transmission",
+        "aggregate-demand"
+      ],
+      "sourceChapters": [
+        18,
+        19
+      ],
+      "sourceObjectives": [
+        "FX.analyze_magnitude_bounded_fx_shifts",
+        "FX.analyze_reinforcing_fx_shifts",
+        "FX.analyze_simultaneous_fx_shifts",
+        "FX.bridge_fx_nx_ad",
+        "FX.calculate_fx_quantity_change",
+        "FX.calculate_fx_rate_change",
+        "FX.calculate_simultaneous_fx_change",
+        "FX.diagnose_vertical_supply_misconception",
+        "FX.explain_fx_indeterminacy",
+        "FX.identify_fx_demand",
+        "FX.identify_fx_equilibrium",
+        "FX.identify_fx_supply",
+        "FX.infer_fx_demand_shifter",
+        "FX.infer_fx_supply_shifter",
+        "FX.infer_simultaneous_fx_shifters",
+        "FX.integrate_trade_and_nco_shifts",
+        "FX.interpret_fx_axis",
+        "FX.interpret_offsetting_fx_shifts",
+        "FX.map_nco_to_fx_supply",
+        "FX.map_trade_shock_to_fx_demand",
+        "FX.predict_fx_demand_shift",
+        "FX.read_fx_demand_shift",
+        "FX.read_fx_equilibrium",
+        "FX.read_fx_supply_shift",
+        "FX.read_simultaneous_fx_outcome",
+        "FX.reason_about_shift_order",
+        "FX.repair_movement_shift_confusion",
+        "FX.trace_fx_feedback_to_nx",
+        "FX.trace_interest_nco_fx_nx_chain"
+      ],
+      "sourceGames": [
+        "macro-open-economy-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 1,
+        "calculation": 6,
+        "elite": 2,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9,
+        "unknown": 0
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "calculationCoverage": 6,
+      "graphCoverage": 20,
+      "status": "active",
+      "notes": "Principles-level open-economy Macro child authored and human-read in phaseMacroOpenEconomy-v1.",
+      "instructionalClassification": "Open-economy Macro child",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Contains independent mode floors, checkpoint questions, and misconception-specific adaptive support.",
+      "coverageFloorVersion": "macro-open-economy-production-v1",
+      "selectionRole": "standalone",
+      "taxonomyPhase": "phaseMacroOpenEconomy-v1",
+      "familyConceptId": "open-economy-macroeconomics"
+    },
+    {
       "canonicalConceptId": "gains-from-trade",
       "title": "Comparative Advantage and Gains from Trade",
       "description": "Analyze comparative advantage, specialization, mutually beneficial terms of trade, and the distribution of gains from exchange.",
@@ -5825,6 +6073,129 @@
         "trade-policy-efficiency-distribution"
       ],
       "selectionRole": "family-parent"
+    },
+    {
+      "canonicalConceptId": "international-transactions-and-identities",
+      "title": "International Transactions and Open-Economy Identities",
+      "description": "Calculate and interpret exports, imports, net exports, net capital outflow, and open-economy saving identities.",
+      "includedSkills": [
+        "apply_nx_nco_identity",
+        "apply_saving_identity",
+        "audit_open_economy_data",
+        "bridge_nco_to_fx_supply",
+        "calculate_nco_from_saving_investment",
+        "calculate_nco_transactions",
+        "calculate_net_exports",
+        "calculate_trade_change",
+        "classify_imported_investment",
+        "classify_international_transaction",
+        "classify_trade_balance",
+        "compare_external_balances",
+        "connect_saving_investment_trade_balance",
+        "diagnose_import_misconception",
+        "evaluate_trade_balance_claim",
+        "explain_import_adjustment",
+        "interpret_nco_sign",
+        "reason_about_indeterminate_balances",
+        "reconcile_asset_and_trade_flows",
+        "reconcile_open_economy_accounts",
+        "repair_nx_sign",
+        "solve_full_external_accounts",
+        "solve_open_economy_identity",
+        "solve_saving_from_trade_balance",
+        "solve_saving_nco_chain",
+        "synthesize_gdp_import_accounting",
+        "trace_asset_purchase_identity",
+        "trace_saving_investment_external_balance"
+      ],
+      "excludedNeighboringSkills": [
+        "Micro comparative advantage, world-price, tariff-welfare, quota-rent, and gains-from-trade questions remain in the International Trade and Trade Policy family."
+      ],
+      "prerequisiteConceptIds": [
+        "gdp-components",
+        "saving-and-investment-identities"
+      ],
+      "relatedConceptIds": [
+        "capital-flows-and-net-capital-outflow",
+        "foreign-exchange-market"
+      ],
+      "sourceChapters": [
+        18,
+        19
+      ],
+      "sourceObjectives": [
+        "TX.apply_nx_nco_identity",
+        "TX.apply_saving_identity",
+        "TX.audit_open_economy_data",
+        "TX.bridge_nco_to_fx_supply",
+        "TX.calculate_nco_from_saving_investment",
+        "TX.calculate_nco_transactions",
+        "TX.calculate_net_exports",
+        "TX.calculate_trade_change",
+        "TX.classify_imported_investment",
+        "TX.classify_international_transaction",
+        "TX.classify_trade_balance",
+        "TX.compare_external_balances",
+        "TX.connect_saving_investment_trade_balance",
+        "TX.diagnose_import_misconception",
+        "TX.evaluate_trade_balance_claim",
+        "TX.explain_import_adjustment",
+        "TX.interpret_nco_sign",
+        "TX.reason_about_indeterminate_balances",
+        "TX.reconcile_asset_and_trade_flows",
+        "TX.reconcile_open_economy_accounts",
+        "TX.repair_nx_sign",
+        "TX.solve_full_external_accounts",
+        "TX.solve_open_economy_identity",
+        "TX.solve_saving_from_trade_balance",
+        "TX.solve_saving_nco_chain",
+        "TX.synthesize_gdp_import_accounting",
+        "TX.trace_asset_purchase_identity",
+        "TX.trace_saving_investment_external_balance"
+      ],
+      "sourceGames": [
+        "macro-open-economy-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 1,
+        "calculation": 20,
+        "elite": 2,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9,
+        "unknown": 0
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "calculationCoverage": 20,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Principles-level open-economy Macro child authored and human-read in phaseMacroOpenEconomy-v1.",
+      "instructionalClassification": "Open-economy Macro child",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Contains independent mode floors, checkpoint questions, and misconception-specific adaptive support.",
+      "coverageFloorVersion": "macro-open-economy-production-v1",
+      "selectionRole": "standalone",
+      "taxonomyPhase": "phaseMacroOpenEconomy-v1",
+      "familyConceptId": "open-economy-macroeconomics"
     },
     {
       "canonicalConceptId": "labor-market-institutions",
@@ -9381,6 +9752,122 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     },
     {
+      "canonicalConceptId": "nominal-exchange-rates",
+      "title": "Nominal Exchange Rates and Currency Values",
+      "description": "Interpret exchange-rate quotations, conversions, reciprocal rates, appreciation, and depreciation.",
+      "includedSkills": [
+        "apply_appreciation_to_buyers",
+        "apply_exchange_rate_to_asset_value",
+        "bridge_nominal_to_real_rate",
+        "calculate_appreciation_purchasing_power",
+        "calculate_currency_percentage_change",
+        "calculate_reciprocal_rate",
+        "classify_appreciation_depreciation",
+        "combine_asset_and_currency_returns",
+        "combine_price_and_exchange_changes",
+        "compare_bilateral_currency_changes",
+        "compare_conversion_costs",
+        "compare_reciprocal_percentage_changes",
+        "compound_currency_changes",
+        "connect_currency_value_purchasing_power",
+        "connect_depreciation_to_foreign_price",
+        "convert_currency",
+        "convert_export_revenue",
+        "convert_foreign_price",
+        "diagnose_quote_direction",
+        "evaluate_price_exchange_interaction",
+        "infer_currency_change_from_prices",
+        "interpret_exchange_rate_quote",
+        "interpret_stronger_currency",
+        "repair_quote_direction",
+        "trace_export_price_conversion"
+      ],
+      "excludedNeighboringSkills": [
+        "Micro comparative advantage, world-price, tariff-welfare, quota-rent, and gains-from-trade questions remain in the International Trade and Trade Policy family."
+      ],
+      "prerequisiteConceptIds": [
+        "international-transactions-and-identities"
+      ],
+      "relatedConceptIds": [
+        "real-exchange-rates-and-purchasing-power",
+        "foreign-exchange-market"
+      ],
+      "sourceChapters": [
+        18,
+        19
+      ],
+      "sourceObjectives": [
+        "NER.apply_appreciation_to_buyers",
+        "NER.apply_exchange_rate_to_asset_value",
+        "NER.bridge_nominal_to_real_rate",
+        "NER.calculate_appreciation_purchasing_power",
+        "NER.calculate_currency_percentage_change",
+        "NER.calculate_reciprocal_rate",
+        "NER.classify_appreciation_depreciation",
+        "NER.combine_asset_and_currency_returns",
+        "NER.combine_price_and_exchange_changes",
+        "NER.compare_bilateral_currency_changes",
+        "NER.compare_conversion_costs",
+        "NER.compare_reciprocal_percentage_changes",
+        "NER.compound_currency_changes",
+        "NER.connect_currency_value_purchasing_power",
+        "NER.connect_depreciation_to_foreign_price",
+        "NER.convert_currency",
+        "NER.convert_export_revenue",
+        "NER.convert_foreign_price",
+        "NER.diagnose_quote_direction",
+        "NER.evaluate_price_exchange_interaction",
+        "NER.infer_currency_change_from_prices",
+        "NER.interpret_exchange_rate_quote",
+        "NER.interpret_stronger_currency",
+        "NER.repair_quote_direction",
+        "NER.trace_export_price_conversion"
+      ],
+      "sourceGames": [
+        "macro-open-economy-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 1,
+        "calculation": 22,
+        "elite": 2,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9,
+        "unknown": 0
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "calculationCoverage": 22,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Principles-level open-economy Macro child authored and human-read in phaseMacroOpenEconomy-v1.",
+      "instructionalClassification": "Open-economy Macro child",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Contains independent mode floors, checkpoint questions, and misconception-specific adaptive support.",
+      "coverageFloorVersion": "macro-open-economy-production-v1",
+      "selectionRole": "standalone",
+      "taxonomyPhase": "phaseMacroOpenEconomy-v1",
+      "familyConceptId": "open-economy-macroeconomics"
+    },
+    {
       "canonicalConceptId": "oligopoly",
       "title": "Oligopoly",
       "description": "Analyze few-firm strategic interdependence, concentration, payoff matrices, Nash equilibrium, collusion, cartels, repeated interaction, entry deterrence, welfare, mergers, and policy tradeoffs.",
@@ -10119,6 +10606,134 @@
       "adaptiveSupportStatus": "ready",
       "quizEligibleNonLegendary": 38,
       "quiz15Status": "ready"
+    },
+    {
+      "canonicalConceptId": "open-economy-policy-transmission",
+      "title": "Open-Economy Policy and Macroeconomic Transmission",
+      "description": "Trace fiscal policy, trade policy, capital flight, and monetary changes through saving, interest rates, NCO, exchange rates, net exports, and aggregate demand.",
+      "includedSkills": [
+        "analyze_competing_policy_channels",
+        "analyze_trade_policy_offset",
+        "bridge_budget_fx_nx_ad",
+        "calculate_budget_external_effect",
+        "calculate_capital_flight_feedback",
+        "calculate_trade_policy_offset",
+        "connect_capital_flight_loanable_funds",
+        "connect_exchange_rate_to_ad",
+        "integrate_identity_and_fx_shifts",
+        "integrate_monetary_foreign_demand",
+        "integrate_trade_fiscal_policy",
+        "integrate_trade_policy_capital_flight",
+        "qualify_budget_deficit_chain",
+        "repair_deficit_nco_direction",
+        "start_budget_deficit_chain",
+        "start_capital_flight_chain",
+        "test_budget_chain_assumption",
+        "trace_budget_deficit_chain",
+        "trace_capital_flight_feedback",
+        "trace_capital_flight_to_fx",
+        "trace_capital_flight_two_markets",
+        "trace_deficit_to_exchange_rate",
+        "trace_deficit_to_fx_supply",
+        "trace_exchange_rate_to_nx",
+        "trace_foreign_demand_shock",
+        "trace_interest_rate_to_nco",
+        "trace_monetary_open_economy_channel",
+        "trace_nco_to_exchange_rate",
+        "trace_nco_to_fx_supply",
+        "trace_saving_to_interest_rate"
+      ],
+      "excludedNeighboringSkills": [
+        "Micro comparative advantage, world-price, tariff-welfare, quota-rent, and gains-from-trade questions remain in the International Trade and Trade Policy family."
+      ],
+      "prerequisiteConceptIds": [
+        "foreign-exchange-market",
+        "fiscal-multipliers-and-crowding-out",
+        "monetary-policy-transmission"
+      ],
+      "relatedConceptIds": [
+        "aggregate-demand",
+        "stabilization-policy"
+      ],
+      "sourceChapters": [
+        18,
+        19
+      ],
+      "sourceObjectives": [
+        "POL.analyze_competing_policy_channels",
+        "POL.analyze_trade_policy_offset",
+        "POL.bridge_budget_fx_nx_ad",
+        "POL.calculate_budget_external_effect",
+        "POL.calculate_capital_flight_feedback",
+        "POL.calculate_trade_policy_offset",
+        "POL.connect_capital_flight_loanable_funds",
+        "POL.connect_exchange_rate_to_ad",
+        "POL.integrate_identity_and_fx_shifts",
+        "POL.integrate_monetary_foreign_demand",
+        "POL.integrate_trade_fiscal_policy",
+        "POL.integrate_trade_policy_capital_flight",
+        "POL.qualify_budget_deficit_chain",
+        "POL.repair_deficit_nco_direction",
+        "POL.start_budget_deficit_chain",
+        "POL.start_capital_flight_chain",
+        "POL.test_budget_chain_assumption",
+        "POL.trace_budget_deficit_chain",
+        "POL.trace_capital_flight_feedback",
+        "POL.trace_capital_flight_to_fx",
+        "POL.trace_capital_flight_two_markets",
+        "POL.trace_deficit_to_exchange_rate",
+        "POL.trace_deficit_to_fx_supply",
+        "POL.trace_exchange_rate_to_nx",
+        "POL.trace_foreign_demand_shock",
+        "POL.trace_interest_rate_to_nco",
+        "POL.trace_monetary_open_economy_channel",
+        "POL.trace_nco_to_exchange_rate",
+        "POL.trace_nco_to_fx_supply",
+        "POL.trace_saving_to_interest_rate"
+      ],
+      "sourceGames": [
+        "macro-open-economy-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 1,
+        "calculation": 3,
+        "elite": 2,
+        "integration": 1,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 9,
+        "elite": 2,
+        "legendary": 10,
+        "unknown": 0
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "calculationCoverage": 3,
+      "graphCoverage": 2,
+      "status": "active",
+      "notes": "Principles-level open-economy Macro child authored and human-read in phaseMacroOpenEconomy-v1.",
+      "instructionalClassification": "Open-economy Macro child",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Contains independent mode floors, checkpoint questions, and misconception-specific adaptive support.",
+      "coverageFloorVersion": "macro-open-economy-production-v1",
+      "selectionRole": "standalone",
+      "taxonomyPhase": "phaseMacroOpenEconomy-v1",
+      "familyConceptId": "open-economy-macroeconomics"
     },
     {
       "canonicalConceptId": "opportunity-cost",
@@ -11418,6 +12033,123 @@
       "coverageStatusLabel": "Engine-safe alone; strongest in F6 long-run monetary sequence",
       "coverageStatusNote": "Phase M2c-2 protects Quantity Theory content, strengthens Fisher Effect and supporting slices, repairs Legendary boss stages, and creates explicit Quantity Theory → Neutrality → Fisher → Inflation Costs → Inflation Tax/Deflation routing.",
       "coverageFloorVersion": "phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1"
+    },
+    {
+      "canonicalConceptId": "real-exchange-rates-and-purchasing-power",
+      "title": "Real Exchange Rates and Purchasing Power",
+      "description": "Calculate real exchange rates and evaluate purchasing-power parity as a long-run benchmark.",
+      "includedSkills": [
+        "apply_real_exchange_rate_formula",
+        "apply_relative_ppp",
+        "approximate_real_rate_change",
+        "bridge_real_rate_to_net_exports",
+        "calculate_compound_real_rate_change",
+        "calculate_real_exchange_rate",
+        "calculate_real_rate_change",
+        "calculate_real_rate_from_inflation",
+        "classify_real_appreciation",
+        "compare_price_indexes_ppp",
+        "compare_traded_nontraded_goods",
+        "define_real_exchange_rate",
+        "diagnose_nominal_real_confusion",
+        "evaluate_ppp_evidence",
+        "evaluate_relative_ppp_prediction",
+        "explain_ppp",
+        "identify_ppp_limitation",
+        "infer_nominal_change_from_real_stability",
+        "interpret_real_rate_goods_prices",
+        "reason_about_offsetting_real_rate_forces",
+        "reason_about_reinforcing_real_rate_forces",
+        "repair_real_rate_formula",
+        "separate_nominal_real_changes",
+        "test_absolute_ppp",
+        "trace_price_level_to_real_rate"
+      ],
+      "excludedNeighboringSkills": [
+        "Micro comparative advantage, world-price, tariff-welfare, quota-rent, and gains-from-trade questions remain in the International Trade and Trade Policy family."
+      ],
+      "prerequisiteConceptIds": [
+        "nominal-exchange-rates",
+        "cpi-and-inflation-measurement"
+      ],
+      "relatedConceptIds": [
+        "foreign-exchange-market",
+        "open-economy-policy-transmission"
+      ],
+      "sourceChapters": [
+        18,
+        19
+      ],
+      "sourceObjectives": [
+        "RER.apply_real_exchange_rate_formula",
+        "RER.apply_relative_ppp",
+        "RER.approximate_real_rate_change",
+        "RER.bridge_real_rate_to_net_exports",
+        "RER.calculate_compound_real_rate_change",
+        "RER.calculate_real_exchange_rate",
+        "RER.calculate_real_rate_change",
+        "RER.calculate_real_rate_from_inflation",
+        "RER.classify_real_appreciation",
+        "RER.compare_price_indexes_ppp",
+        "RER.compare_traded_nontraded_goods",
+        "RER.define_real_exchange_rate",
+        "RER.diagnose_nominal_real_confusion",
+        "RER.evaluate_ppp_evidence",
+        "RER.evaluate_relative_ppp_prediction",
+        "RER.explain_ppp",
+        "RER.identify_ppp_limitation",
+        "RER.infer_nominal_change_from_real_stability",
+        "RER.interpret_real_rate_goods_prices",
+        "RER.reason_about_offsetting_real_rate_forces",
+        "RER.reason_about_reinforcing_real_rate_forces",
+        "RER.repair_real_rate_formula",
+        "RER.separate_nominal_real_changes",
+        "RER.test_absolute_ppp",
+        "RER.trace_price_level_to_real_rate"
+      ],
+      "sourceGames": [
+        "macro-open-economy-authoring"
+      ],
+      "questionCountByRole": {
+        "boss": 9,
+        "bridge": 1,
+        "calculation": 15,
+        "elite": 2,
+        "integration": 0,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "main": 18,
+        "repair": 1,
+        "repairSeed": 0
+      },
+      "questionCountByDifficulty": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9,
+        "unknown": 0
+      },
+      "repairCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "bridgeCoverage": {
+        "directSkillMatches": 1,
+        "mainWithUsableSkill": 40
+      },
+      "calculationCoverage": 15,
+      "graphCoverage": 0,
+      "status": "active",
+      "notes": "Principles-level open-economy Macro child authored and human-read in phaseMacroOpenEconomy-v1.",
+      "instructionalClassification": "Open-economy Macro child",
+      "coverageStatus": "ready-focused",
+      "coverageStatusLabel": "Ready for focused use",
+      "coverageStatusNote": "Contains independent mode floors, checkpoint questions, and misconception-specific adaptive support.",
+      "coverageFloorVersion": "macro-open-economy-production-v1",
+      "selectionRole": "standalone",
+      "taxonomyPhase": "phaseMacroOpenEconomy-v1",
+      "familyConceptId": "open-economy-macroeconomics"
     },
     {
       "canonicalConceptId": "real-versus-nominal-gdp",
@@ -13610,10 +14342,10 @@
       "coverageFloorVersion": "phaseM2b4-unemployment-labor-family-maturation-v1"
     }
   ],
-  "curationPhase": "phaseMacro2-taxonomy-normalization-v1",
+  "curationPhase": "phaseMacroOpenEconomy-v1",
   "curationSummary": "Approved Principles Micro human-read curation from question_rewrite_master.xlsx.",
-  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1-phaseMacroFinalCleanup-v1",
-  "canonicalQuestionCount": 9539,
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1-phaseMacroFinalCleanup-v1-phaseMacroOpenEconomy-v1",
+  "canonicalQuestionCount": 9779,
   "composerVersion": "4.5s.3k",
-  "librarySha256": "fb1c1b43e43cb4d2551a924d4043cb74fb1df4be054c0f1b9474dacfb0dd87a2"
+  "librarySha256": "c95ec10ebc15a8d507b563b471255b04b0dcc88d1f7510361a10fa71c8a39855"
 }

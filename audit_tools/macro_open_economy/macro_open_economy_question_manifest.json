@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-04T16:00:00.000Z",
+  "idScheme": "PMOE-{TX|NER|RER|NCO|FX|POL}-{E|M|H|EL|L|B1|B2|B3|LB|R|BR}-NNN",
+  "totalNewQuestions": 240,
+  "byChild": {
+    "international-transactions-and-identities": {
+      "totalQuestions": 40,
+      "practiceCount": 26,
+      "bossCheckpointCount": 12,
+      "repairCount": 1,
+      "bridgeCount": 1,
+      "graphCount": 0,
+      "graphRequiredCount": 0,
+      "calculationCount": 20,
+      "difficultyDistribution": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9
+      },
+      "poolDistribution": {
+        "boss": 9,
+        "bridgeQuestions": 1,
+        "easy": 6,
+        "elite": 2,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "repairQuestions": 1
+      }
+    },
+    "nominal-exchange-rates": {
+      "totalQuestions": 40,
+      "practiceCount": 26,
+      "bossCheckpointCount": 12,
+      "repairCount": 1,
+      "bridgeCount": 1,
+      "graphCount": 0,
+      "graphRequiredCount": 0,
+      "calculationCount": 22,
+      "difficultyDistribution": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9
+      },
+      "poolDistribution": {
+        "boss": 9,
+        "bridgeQuestions": 1,
+        "easy": 6,
+        "elite": 2,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "repairQuestions": 1
+      }
+    },
+    "real-exchange-rates-and-purchasing-power": {
+      "totalQuestions": 40,
+      "practiceCount": 26,
+      "bossCheckpointCount": 12,
+      "repairCount": 1,
+      "bridgeCount": 1,
+      "graphCount": 0,
+      "graphRequiredCount": 0,
+      "calculationCount": 15,
+      "difficultyDistribution": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9
+      },
+      "poolDistribution": {
+        "boss": 9,
+        "bridgeQuestions": 1,
+        "easy": 6,
+        "elite": 2,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "repairQuestions": 1
+      }
+    },
+    "capital-flows-and-net-capital-outflow": {
+      "totalQuestions": 40,
+      "practiceCount": 26,
+      "bossCheckpointCount": 12,
+      "repairCount": 1,
+      "bridgeCount": 1,
+      "graphCount": 0,
+      "graphRequiredCount": 0,
+      "calculationCount": 11,
+      "difficultyDistribution": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9
+      },
+      "poolDistribution": {
+        "boss": 9,
+        "bridgeQuestions": 1,
+        "easy": 6,
+        "elite": 2,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "repairQuestions": 1
+      }
+    },
+    "foreign-exchange-market": {
+      "totalQuestions": 40,
+      "practiceCount": 26,
+      "bossCheckpointCount": 12,
+      "repairCount": 1,
+      "bridgeCount": 1,
+      "graphCount": 20,
+      "graphRequiredCount": 20,
+      "calculationCount": 6,
+      "difficultyDistribution": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 10,
+        "elite": 2,
+        "legendary": 9
+      },
+      "poolDistribution": {
+        "boss": 9,
+        "bridgeQuestions": 1,
+        "easy": 6,
+        "elite": 2,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "repairQuestions": 1
+      }
+    },
+    "open-economy-policy-transmission": {
+      "totalQuestions": 40,
+      "practiceCount": 26,
+      "bossCheckpointCount": 12,
+      "repairCount": 1,
+      "bridgeCount": 1,
+      "graphCount": 2,
+      "graphRequiredCount": 2,
+      "calculationCount": 3,
+      "difficultyDistribution": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 9,
+        "elite": 2,
+        "legendary": 10
+      },
+      "poolDistribution": {
+        "boss": 9,
+        "bridgeQuestions": 1,
+        "easy": 6,
+        "elite": 2,
+        "hard": 6,
+        "legendary": 6,
+        "legendaryBoss": 3,
+        "medium": 6,
+        "repairQuestions": 1
+      }
+    }
+  }
+}

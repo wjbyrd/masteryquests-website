@@ -137,6 +137,17 @@ const PRESETS = [
     ]
   },
   {
+    id: 'open-economy-macro',
+    area: 'macro',
+    title: 'Open-Economy Macroeconomics',
+    description: 'International transactions, exchange rates, capital flows, the foreign-exchange market, and policy transmission.',
+    conceptIds: [
+      'international-transactions-and-identities', 'nominal-exchange-rates',
+      'real-exchange-rates-and-purchasing-power', 'capital-flows-and-net-capital-outflow',
+      'foreign-exchange-market', 'open-economy-policy-transmission'
+    ]
+  },
+  {
     id: 'stabilization-policy',
     area: 'macro',
     title: 'Stabilization and policy',

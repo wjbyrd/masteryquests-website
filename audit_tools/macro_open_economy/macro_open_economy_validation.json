@@ -1,0 +1,548 @@
+{
+  "schemaVersion": "1.0.0",
+  "phase": "phaseMacroOpenEconomy-v1",
+  "generatedAt": "2026-09-04T18:00:00.000Z",
+  "verdict": "PASS",
+  "summary": {
+    "checks": 31,
+    "passed": 31,
+    "failed": 0,
+    "beforeMacroQuestions": 2870,
+    "afterMacroQuestions": 3110,
+    "newQuestions": 240,
+    "oldChanged": 0,
+    "microChanged": 0,
+    "newAudit": {
+      "errors": 0,
+      "warnings": 0,
+      "reviews": 2
+    },
+    "fullAudit": {
+      "errors": 0,
+      "warnings": 726,
+      "reviews": 522
+    }
+  },
+  "checks": [
+    {
+      "name": "Authoritative baseline has 2,870 Macro questions",
+      "status": "PASS",
+      "detail": "2870"
+    },
+    {
+      "name": "Exactly 240 new question IDs were added",
+      "status": "PASS",
+      "detail": "new=240, globalAdded=240"
+    },
+    {
+      "name": "Every new question exists exactly once",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "name": "No existing question record changed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No existing question was lost",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "No Micro question changed",
+      "status": "PASS",
+      "detail": "changed=0, non-PMOE additions=0"
+    },
+    {
+      "name": "Supplement remains exactly intact",
+      "status": "PASS",
+      "detail": "112/112"
+    },
+    {
+      "name": "Macro totals are 3,110 total and 2,998 ordinary",
+      "status": "PASS",
+      "detail": "3110/2998"
+    },
+    {
+      "name": "All six new concepts exist with 40 records",
+      "status": "PASS",
+      "detail": "international-transactions-and-identities:40, nominal-exchange-rates:40, real-exchange-rates-and-purchasing-power:40, capital-flows-and-net-capital-outflow:40, foreign-exchange-market:40, open-economy-policy-transmission:40"
+    },
+    {
+      "name": "Question manifest totals agree",
+      "status": "PASS",
+      "detail": "240"
+    },
+    {
+      "name": "Every new answer hash resolves exactly once",
+      "status": "PASS",
+      "detail": "0 failures"
+    },
+    {
+      "name": "Every new question has distinct options",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "New-family deterministic auditor errors are zero",
+      "status": "PASS",
+      "detail": "{\"errors\":0,\"warnings\":0,\"reviews\":2}"
+    },
+    {
+      "name": "Full-Macro deterministic auditor errors remain zero",
+      "status": "PASS",
+      "detail": "{\"errors\":0,\"warnings\":726,\"reviews\":522}"
+    },
+    {
+      "name": "Every new question was human-read exactly once",
+      "status": "PASS",
+      "detail": "{\"reviewed\":240,\"duplicate\":0,\"missing\":0}"
+    },
+    {
+      "name": "Every semantic REVIEW finding has an explicit human disposition",
+      "status": "PASS",
+      "detail": "2/2 dispositions"
+    },
+    {
+      "name": "Open-economy parent and children resolve in navigation",
+      "status": "PASS",
+      "detail": "international-transactions-and-identities, nominal-exchange-rates, real-exchange-rates-and-purchasing-power, capital-flows-and-net-capital-outflow, foreign-exchange-market, open-economy-policy-transmission"
+    },
+    {
+      "name": "All ten prior dedicated Macro parents remain",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Dedicated Macro parent count advances 10 to 11",
+      "status": "PASS",
+      "detail": "10 prior + 1 new"
+    },
+    {
+      "name": "Selectable ordinary Macro child count advances 51 to 57",
+      "status": "PASS",
+      "detail": "51 + 6"
+    },
+    {
+      "name": "Eight core FX assets plus two NCO supplements exist, register, and hash correctly",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All graph-required questions satisfy cue/accessibility/non-leaking checks",
+      "status": "PASS",
+      "detail": "22 graph-required questions"
+    },
+    {
+      "name": "Six review-resource gaps are explicit and create no PDFs",
+      "status": "PASS",
+      "detail": "6 gaps"
+    },
+    {
+      "name": "Each selected child composes in all modes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "New family composes in all modes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Full 58-concept Macro selection composes in all modes",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Composer answer verification passes",
+      "status": "PASS",
+      "detail": "family=0, full=0"
+    },
+    {
+      "name": "Concept Review runtime resolves",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All full-Macro graph assets embed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Full-Macro HTML and ZIP build",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Publisher is idempotent",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ],
+  "details": {
+    "newIds": [
+      "PMOE-FX-B1-001",
+      "PMOE-FX-B1-002",
+      "PMOE-FX-B1-003",
+      "PMOE-FX-B2-001",
+      "PMOE-FX-B2-002",
+      "PMOE-FX-B2-003",
+      "PMOE-FX-B3-001",
+      "PMOE-FX-B3-002",
+      "PMOE-FX-B3-003",
+      "PMOE-FX-BR-001",
+      "PMOE-FX-E-001",
+      "PMOE-FX-E-002",
+      "PMOE-FX-E-003",
+      "PMOE-FX-E-004",
+      "PMOE-FX-E-005",
+      "PMOE-FX-E-006",
+      "PMOE-FX-EL-001",
+      "PMOE-FX-EL-002",
+      "PMOE-FX-H-001",
+      "PMOE-FX-H-002",
+      "PMOE-FX-H-003",
+      "PMOE-FX-H-004",
+      "PMOE-FX-H-005",
+      "PMOE-FX-H-006",
+      "PMOE-FX-L-001",
+      "PMOE-FX-L-002",
+      "PMOE-FX-L-003",
+      "PMOE-FX-L-004",
+      "PMOE-FX-L-005",
+      "PMOE-FX-L-006",
+      "PMOE-FX-LB-001",
+      "PMOE-FX-LB-002",
+      "PMOE-FX-LB-003",
+      "PMOE-FX-M-001",
+      "PMOE-FX-M-002",
+      "PMOE-FX-M-003",
+      "PMOE-FX-M-004",
+      "PMOE-FX-M-005",
+      "PMOE-FX-M-006",
+      "PMOE-FX-R-001",
+      "PMOE-NCO-B1-001",
+      "PMOE-NCO-B1-002",
+      "PMOE-NCO-B1-003",
+      "PMOE-NCO-B2-001",
+      "PMOE-NCO-B2-002",
+      "PMOE-NCO-B2-003",
+      "PMOE-NCO-B3-001",
+      "PMOE-NCO-B3-002",
+      "PMOE-NCO-B3-003",
+      "PMOE-NCO-BR-001",
+      "PMOE-NCO-E-001",
+      "PMOE-NCO-E-002",
+      "PMOE-NCO-E-003",
+      "PMOE-NCO-E-004",
+      "PMOE-NCO-E-005",
+      "PMOE-NCO-E-006",
+      "PMOE-NCO-EL-001",
+      "PMOE-NCO-EL-002",
+      "PMOE-NCO-H-001",
+      "PMOE-NCO-H-002",
+      "PMOE-NCO-H-003",
+      "PMOE-NCO-H-004",
+      "PMOE-NCO-H-005",
+      "PMOE-NCO-H-006",
+      "PMOE-NCO-L-001",
+      "PMOE-NCO-L-002",
+      "PMOE-NCO-L-003",
+      "PMOE-NCO-L-004",
+      "PMOE-NCO-L-005",
+      "PMOE-NCO-L-006",
+      "PMOE-NCO-LB-001",
+      "PMOE-NCO-LB-002",
+      "PMOE-NCO-LB-003",
+      "PMOE-NCO-M-001",
+      "PMOE-NCO-M-002",
+      "PMOE-NCO-M-003",
+      "PMOE-NCO-M-004",
+      "PMOE-NCO-M-005",
+      "PMOE-NCO-M-006",
+      "PMOE-NCO-R-001",
+      "PMOE-NER-B1-001",
+      "PMOE-NER-B1-002",
+      "PMOE-NER-B1-003",
+      "PMOE-NER-B2-001",
+      "PMOE-NER-B2-002",
+      "PMOE-NER-B2-003",
+      "PMOE-NER-B3-001",
+      "PMOE-NER-B3-002",
+      "PMOE-NER-B3-003",
+      "PMOE-NER-BR-001",
+      "PMOE-NER-E-001",
+      "PMOE-NER-E-002",
+      "PMOE-NER-E-003",
+      "PMOE-NER-E-004",
+      "PMOE-NER-E-005",
+      "PMOE-NER-E-006",
+      "PMOE-NER-EL-001",
+      "PMOE-NER-EL-002",
+      "PMOE-NER-H-001",
+      "PMOE-NER-H-002",
+      "PMOE-NER-H-003",
+      "PMOE-NER-H-004",
+      "PMOE-NER-H-005",
+      "PMOE-NER-H-006",
+      "PMOE-NER-L-001",
+      "PMOE-NER-L-002",
+      "PMOE-NER-L-003",
+      "PMOE-NER-L-004",
+      "PMOE-NER-L-005",
+      "PMOE-NER-L-006",
+      "PMOE-NER-LB-001",
+      "PMOE-NER-LB-002",
+      "PMOE-NER-LB-003",
+      "PMOE-NER-M-001",
+      "PMOE-NER-M-002",
+      "PMOE-NER-M-003",
+      "PMOE-NER-M-004",
+      "PMOE-NER-M-005",
+      "PMOE-NER-M-006",
+      "PMOE-NER-R-001",
+      "PMOE-POL-B1-001",
+      "PMOE-POL-B1-002",
+      "PMOE-POL-B1-003",
+      "PMOE-POL-B2-001",
+      "PMOE-POL-B2-002",
+      "PMOE-POL-B2-003",
+      "PMOE-POL-B3-001",
+      "PMOE-POL-B3-002",
+      "PMOE-POL-B3-003",
+      "PMOE-POL-BR-001",
+      "PMOE-POL-E-001",
+      "PMOE-POL-E-002",
+      "PMOE-POL-E-003",
+      "PMOE-POL-E-004",
+      "PMOE-POL-E-005",
+      "PMOE-POL-E-006",
+      "PMOE-POL-EL-001",
+      "PMOE-POL-EL-002",
+      "PMOE-POL-H-001",
+      "PMOE-POL-H-002",
+      "PMOE-POL-H-003",
+      "PMOE-POL-H-004",
+      "PMOE-POL-H-005",
+      "PMOE-POL-H-006",
+      "PMOE-POL-L-001",
+      "PMOE-POL-L-002",
+      "PMOE-POL-L-003",
+      "PMOE-POL-L-004",
+      "PMOE-POL-L-005",
+      "PMOE-POL-L-006",
+      "PMOE-POL-LB-001",
+      "PMOE-POL-LB-002",
+      "PMOE-POL-LB-003",
+      "PMOE-POL-M-001",
+      "PMOE-POL-M-002",
+      "PMOE-POL-M-003",
+      "PMOE-POL-M-004",
+      "PMOE-POL-M-005",
+      "PMOE-POL-M-006",
+      "PMOE-POL-R-001",
+      "PMOE-RER-B1-001",
+      "PMOE-RER-B1-002",
+      "PMOE-RER-B1-003",
+      "PMOE-RER-B2-001",
+      "PMOE-RER-B2-002",
+      "PMOE-RER-B2-003",
+      "PMOE-RER-B3-001",
+      "PMOE-RER-B3-002",
+      "PMOE-RER-B3-003",
+      "PMOE-RER-BR-001",
+      "PMOE-RER-E-001",
+      "PMOE-RER-E-002",
+      "PMOE-RER-E-003",
+      "PMOE-RER-E-004",
+      "PMOE-RER-E-005",
+      "PMOE-RER-E-006",
+      "PMOE-RER-EL-001",
+      "PMOE-RER-EL-002",
+      "PMOE-RER-H-001",
+      "PMOE-RER-H-002",
+      "PMOE-RER-H-003",
+      "PMOE-RER-H-004",
+      "PMOE-RER-H-005",
+      "PMOE-RER-H-006",
+      "PMOE-RER-L-001",
+      "PMOE-RER-L-002",
+      "PMOE-RER-L-003",
+      "PMOE-RER-L-004",
+      "PMOE-RER-L-005",
+      "PMOE-RER-L-006",
+      "PMOE-RER-LB-001",
+      "PMOE-RER-LB-002",
+      "PMOE-RER-LB-003",
+      "PMOE-RER-M-001",
+      "PMOE-RER-M-002",
+      "PMOE-RER-M-003",
+      "PMOE-RER-M-004",
+      "PMOE-RER-M-005",
+      "PMOE-RER-M-006",
+      "PMOE-RER-R-001",
+      "PMOE-TX-B1-001",
+      "PMOE-TX-B1-002",
+      "PMOE-TX-B1-003",
+      "PMOE-TX-B2-001",
+      "PMOE-TX-B2-002",
+      "PMOE-TX-B2-003",
+      "PMOE-TX-B3-001",
+      "PMOE-TX-B3-002",
+      "PMOE-TX-B3-003",
+      "PMOE-TX-BR-001",
+      "PMOE-TX-E-001",
+      "PMOE-TX-E-002",
+      "PMOE-TX-E-003",
+      "PMOE-TX-E-004",
+      "PMOE-TX-E-005",
+      "PMOE-TX-E-006",
+      "PMOE-TX-EL-001",
+      "PMOE-TX-EL-002",
+      "PMOE-TX-H-001",
+      "PMOE-TX-H-002",
+      "PMOE-TX-H-003",
+      "PMOE-TX-H-004",
+      "PMOE-TX-H-005",
+      "PMOE-TX-H-006",
+      "PMOE-TX-L-001",
+      "PMOE-TX-L-002",
+      "PMOE-TX-L-003",
+      "PMOE-TX-L-004",
+      "PMOE-TX-L-005",
+      "PMOE-TX-L-006",
+      "PMOE-TX-LB-001",
+      "PMOE-TX-LB-002",
+      "PMOE-TX-LB-003",
+      "PMOE-TX-M-001",
+      "PMOE-TX-M-002",
+      "PMOE-TX-M-003",
+      "PMOE-TX-M-004",
+      "PMOE-TX-M-005",
+      "PMOE-TX-M-006",
+      "PMOE-TX-R-001"
+    ],
+    "changedExistingIds": [],
+    "lostIds": [],
+    "duplicateIds": [
+      {
+        "id": "P52A-BANK-E-002",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-BANK-M-001",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-BANK-M-002",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-BANK-M-005",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-BANK-H-001",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-BANK-H-002",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-BANK-H-003",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-E-004",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-M-001",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-M-002",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-M-003",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-M-004",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-H-001",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-H-002",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-H-003",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-H-004",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-CPI-H-005",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-BANK-M-003",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-FISCAD-H-001",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-FISCAD-H-002",
+        "occurrences": 2
+      },
+      {
+        "id": "P52A-FISCAD-H-006",
+        "occurrences": 2
+      }
+    ],
+    "roleTotals": {
+      "practice": 156,
+      "boss": 72,
+      "repair": 6,
+      "bridge": 6,
+      "graph": 22,
+      "calculation": 77
+    },
+    "difficultyTotals": {
+      "easy": 54,
+      "medium": 60,
+      "hard": 59,
+      "elite": 12,
+      "legendary": 55
+    },
+    "graphQuestions": 22,
+    "familyAnswers": {
+      "ok": true,
+      "questionCount": 240,
+      "issues": []
+    },
+    "fullAnswers": {
+      "ok": true,
+      "questionCount": 3108,
+      "issues": []
+    },
+    "packages": {
+      "html": "validation_artifacts/macro_open_economy/generated_packages/principles-macro/index.html",
+      "zip": "validation_artifacts/macro_open_economy/generated_packages/principles-macro/principles-macro-open-economy.zip",
+      "zipBytes": 5310479,
+      "zipSha256": "c26f3f956c8982e907849a075340b480a7976fd829ae141d8e6b0d3c89f6274e",
+      "embeddedAssets": 69
+    }
+  }
+}

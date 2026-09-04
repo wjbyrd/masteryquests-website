@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-04T16:00:00.000Z",
+  "parent": {
+    "id": "open-economy-macroeconomics",
+    "title": "Open-Economy Macroeconomics",
+    "navigationOnly": true
+  },
+  "children": [
+    {
+      "id": "international-transactions-and-identities",
+      "title": "International Transactions and Open-Economy Identities",
+      "description": "Calculate and interpret exports, imports, net exports, net capital outflow, and open-economy saving identities.",
+      "prerequisites": [
+        "gdp-components",
+        "saving-and-investment-identities"
+      ],
+      "related": [
+        "capital-flows-and-net-capital-outflow",
+        "foreign-exchange-market"
+      ]
+    },
+    {
+      "id": "nominal-exchange-rates",
+      "title": "Nominal Exchange Rates and Currency Values",
+      "description": "Interpret exchange-rate quotations, conversions, reciprocal rates, appreciation, and depreciation.",
+      "prerequisites": [
+        "international-transactions-and-identities"
+      ],
+      "related": [
+        "real-exchange-rates-and-purchasing-power",
+        "foreign-exchange-market"
+      ]
+    },
+    {
+      "id": "real-exchange-rates-and-purchasing-power",
+      "title": "Real Exchange Rates and Purchasing Power",
+      "description": "Calculate real exchange rates and evaluate purchasing-power parity as a long-run benchmark.",
+      "prerequisites": [
+        "nominal-exchange-rates",
+        "cpi-and-inflation-measurement"
+      ],
+      "related": [
+        "foreign-exchange-market",
+        "open-economy-policy-transmission"
+      ]
+    },
+    {
+      "id": "capital-flows-and-net-capital-outflow",
+      "title": "Capital Flows and Net Capital Outflow",
+      "description": "Classify international asset purchases, calculate NCO, and trace real-interest-rate and risk effects on capital flows.",
+      "prerequisites": [
+        "international-transactions-and-identities",
+        "loanable-funds-equilibrium"
+      ],
+      "related": [
+        "foreign-exchange-market",
+        "open-economy-policy-transmission"
+      ]
+    },
+    {
+      "id": "foreign-exchange-market",
+      "title": "Foreign-Exchange Market Equilibrium",
+      "description": "Analyze demand for and supply of domestic currency, equilibrium currency values, and single or simultaneous shifts.",
+      "prerequisites": [
+        "capital-flows-and-net-capital-outflow",
+        "real-exchange-rates-and-purchasing-power"
+      ],
+      "related": [
+        "open-economy-policy-transmission",
+        "aggregate-demand"
+      ]
+    },
+    {
+      "id": "open-economy-policy-transmission",
+      "title": "Open-Economy Policy and Macroeconomic Transmission",
+      "description": "Trace fiscal policy, trade policy, capital flight, and monetary changes through saving, interest rates, NCO, exchange rates, net exports, and aggregate demand.",
+      "prerequisites": [
+        "foreign-exchange-market",
+        "fiscal-multipliers-and-crowding-out",
+        "monetary-policy-transmission"
+      ],
+      "related": [
+        "aggregate-demand",
+        "stabilization-policy"
+      ]
+    }
+  ],
+  "legacyAliasesAdded": [],
+  "rationale": [
+    "Separates accounting identities from behavioral capital-flow mechanisms.",
+    "Keeps nominal-rate quotation skills distinct from real-rate and PPP reasoning.",
+    "Gives the foreign-exchange market its own graph-centered child.",
+    "Reserves multi-market fiscal, trade, monetary, and capital-flight chains for policy transmission.",
+    "Avoids duplication of the existing Micro international-trade family."
+  ]
+}
