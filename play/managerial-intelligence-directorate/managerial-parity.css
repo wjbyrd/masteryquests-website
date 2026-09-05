@@ -215,3 +215,7 @@ body.guide-intro-active .daily-toast-region,body.boss-reveal-active .daily-toast
 }
 /* Cinematic text sits on its own opaque scene, without gameplay showing through. */
 .guide-intro-screen,.boss-reveal-screen{background:linear-gradient(115deg,#020617,#041223)}
+/* Encounter names: keep identity colors and typography without a text halo. */
+#question .bossIcon + .boss-title {
+  text-shadow: none;
+}
