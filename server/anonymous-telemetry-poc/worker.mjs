@@ -1,5 +1,8 @@
 import {
   MAX_BODY_BYTES,
+  QA_EXTRA_FIELDS,
+  eventExtras,
+  acceptedAttempt,
   PHASE,
   TelemetryValidationError,
   reconstructRun,
@@ -132,11 +135,11 @@ function runUpsert(env, event) {
       event_count = event_count + 1,
       max_sequence = MAX(max_sequence, excluded.max_sequence),
       completed = MAX(completed, excluded.completed),
-      completion_status = CASE WHEN excluded.completion_status <> '' THEN excluded.completion_status ELSE completion_status END,
+      completion_status = CASE WHEN excluded.completed = 1 AND excluded.completion_status <> '' THEN excluded.completion_status ELSE completion_status END,
       synthetic = MIN(synthetic, excluded.synthetic)
   `).bind(
     event.runId, event.anonymousClientId, event.buildId, event.buildVersion, event.gameId, event.mode,
-    event.eventTimestamp, event.eventTimestamp, event.sequenceNumber, completed, event.completionStatus,
+    event.eventTimestamp, event.eventTimestamp, event.sequenceNumber, completed, completed ? event.completionStatus : "",
     event.synthetic ? 1 : 0
   );
 }
@@ -299,6 +302,11 @@ function json(value, status = 200) {
 }
 
 function csv(rows) {
+  rows = rows.map(row => {
+    const extras = eventExtras(row);
+    return { ...row, ...Object.fromEntries(QA_EXTRA_FIELDS.map(key => [key, extras[key] ?? null])),
+      acceptedAttempt: row.event_type === "answer_evaluated" ? acceptedAttempt(row) : null };
+  });
   const columns = rows.length ? Object.keys(rows[0]) : [];
   const escape = value => `"${String(value ?? "").replace(/"/g, '""')}"`;
   const body = [columns.map(escape).join(","), ...rows.map(row => columns.map(column => escape(row[column])).join(","))].join("\r\n");

@@ -8828,20 +8828,26 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
        // Boss defeated — The Cost Directive boss artifacts
  if(modeAllowsRealmProgress()){
     if(room === 10){
+        const artifactAlreadyOwned = localStorage.getItem(ARTIFACT_STORAGE_KEYS.compass) === "true";
         document.getElementById("vaultCompass").classList.add("unlocked");
         localStorage.setItem(ARTIFACT_STORAGE_KEYS.compass, "true");
+        recordArtifactAward("compass", artifactAlreadyOwned, "checkpoint");
         showArtifact(artifacts.compass.img, artifacts.compass.title, artifacts.compass.text);
     }
 
     if(room === 20){
+        const artifactAlreadyOwned = localStorage.getItem(ARTIFACT_STORAGE_KEYS.lens) === "true";
         document.getElementById("vaultLens").classList.add("unlocked");
         localStorage.setItem(ARTIFACT_STORAGE_KEYS.lens, "true");
+        recordArtifactAward("lens", artifactAlreadyOwned, "checkpoint");
         showArtifact(artifacts.lens.img, artifacts.lens.title, artifacts.lens.text);
     }
 
     if(room === 30){
+        const artifactAlreadyOwned = localStorage.getItem(ARTIFACT_STORAGE_KEYS.scales) === "true";
         document.getElementById("vaultScales").classList.add("unlocked");
         localStorage.setItem(ARTIFACT_STORAGE_KEYS.scales, "true");
+        recordArtifactAward("scales", artifactAlreadyOwned, "checkpoint");
         showArtifact(artifacts.scales.img, artifacts.scales.title, artifacts.scales.text);
     }
 
@@ -9043,6 +9049,15 @@ showGameModal({
 // Unlocks artifact in vault + saves progress
 // Requires matching ID format: "vault" + ArtifactName
 // Safe to customize artifact visuals/text only
+function recordArtifactAward(key, alreadyOwned, source) {
+    // POC gameplay hook: restoration/display alone never emits an award.
+    try {
+        sendGameData({ event: "artifact_unlocked", runID, room, artifact: key,
+            artifactName: artifacts[key]?.title || "", artifactSource: source,
+            artifactAlreadyOwned: alreadyOwned });
+    } catch (_) {} // telemetry must never interrupt a reward
+}
+
 function unlockArtifact(key) {
     const id = "vault" + key.charAt(0).toUpperCase() + key.slice(1);
     const slot = document.getElementById(id);
@@ -9050,7 +9065,11 @@ function unlockArtifact(key) {
     if(slot){
         slot.classList.add("unlocked");
         const storageKey = ARTIFACT_STORAGE_KEYS[key];
-        if(storageKey) localStorage.setItem(storageKey, "true");
+        if(storageKey){
+            const alreadyOwned = localStorage.getItem(storageKey) === "true";
+            localStorage.setItem(storageKey, "true");
+            recordArtifactAward(key, alreadyOwned, "unlockArtifact");
+        }
         updateMissionArtifactCountFromVault();
     }
 

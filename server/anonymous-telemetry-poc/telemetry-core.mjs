@@ -16,7 +16,10 @@ export const NORMALIZED_FIELDS = [
   "bossStage", "graphQuestion", "score", "streak", "dailyProgress", "artifact", "completionStatus",
   "masteryAttempts", "masteryCorrect", "masteryAccuracy", "synthetic"
 ];
-const ALLOWED_EXTRA_KEYS = new Set(["selectionReason", "weaknessEstimate", "sourceEvent"]);
+export const QA_EXTRA_FIELDS = ["sourceRunId", "lifecycleReason", "acceptedAttempt", "artifactName", "artifactSource",
+  "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned"];
+const BOOLEAN_EXTRAS = new Set(["acceptedAttempt", "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned"]);
+const ALLOWED_EXTRA_KEYS = new Set(["selectionReason", "weaknessEstimate", "sourceEvent", ...QA_EXTRA_FIELDS]);
 
 const FIELD_LIMITS = {
   buildId: 100, buildVersion: 80, phase: 80, gameId: 100, mode: 60, eventType: 80,
@@ -138,6 +141,12 @@ export function normalizeEvent(event, index = 0) {
   for (const [key, value] of Object.entries(event)) {
     if (NORMALIZED_FIELDS.includes(key)) continue;
     assert(ALLOWED_EXTRA_KEYS.has(key), `events[${index}].${key} is not an accepted research field`);
+    if (QA_EXTRA_FIELDS.includes(key)) {
+      if (BOOLEAN_EXTRAS.has(key)) {
+        assert(value === null || typeof value === "boolean", `${key} must be boolean or null`);
+        extras[key] = value;
+      } else extras[key] = cleanString(value, key);
+    }
     if (key === "selectionReason") extras[key] = cleanString(value, "selectionReason").slice(0, 160);
     if (key === "sourceEvent") extras[key] = cleanString(value, "sourceEvent").slice(0, 80);
     if (key === "weaknessEstimate") {
@@ -152,6 +161,11 @@ export function normalizeEvent(event, index = 0) {
         };
       });
     }
+  }
+  // Normalize queued v1 clients too; preserve their reasons outside terminal status.
+  if (normalized.eventType !== "run_completed" && normalized.completionStatus) {
+    extras.lifecycleReason ||= normalized.completionStatus;
+    normalized.completionStatus = "";
   }
   const extrasJson = JSON.stringify(extras);
   assert(extrasJson.length <= 16384, `events[${index}] extras are too large`);
@@ -183,12 +197,31 @@ export function analyzeSequence(events) {
   return { duplicateEventIds, gaps, outOfOrder, contiguous: !duplicateEventIds.length && !gaps.length && !outOfOrder.length };
 }
 
+export function eventExtras(event) {
+  if (event.extras) return event.extras;
+  if (event.extras_json) { try { return JSON.parse(event.extras_json); } catch (_) {} }
+  return event;
+}
+
+export function acceptedAttempt(event) {
+  const extras = eventExtras(event);
+  if (typeof extras.acceptedAttempt === "boolean") return extras.acceptedAttempt;
+  // Historical v1 source events identify the actual non-engaged engine branch.
+  if (extras.sourceEvent === "rapid_guessing") return false;
+  if (extras.sourceEvent === "question") return true;
+  if (event.rapidGuess || event.rapid_guess) return false;
+  return null; // do not invent acceptance for unclassified historical fixtures
+}
+
 export function reconstructRun(events) {
   const ordered = [...events].sort((a,b) => Number(a.sequenceNumber ?? a.sequence_number) - Number(b.sequenceNumber ?? b.sequence_number));
   const first = ordered[0] || {};
   const typeOf = event => event.eventType ?? event.event_type ?? "";
   const valueOf = (event, camel, snake) => event[camel] ?? event[snake];
   const answers = ordered.filter(event => typeOf(event) === "answer_evaluated");
+  const accepted = answers.filter(event => acceptedAttempt(event) === true);
+  const acceptedCorrect = accepted.filter(event => Boolean(event.correct)).length;
+  const awards = ordered.filter(event => typeOf(event) === "artifact_unlocked");
   const correct = answers.filter(event => Boolean(valueOf(event, "correct", "correct"))).length;
   const completion = ordered.findLast ? ordered.findLast(event => typeOf(event) === "run_completed") : [...ordered].reverse().find(event => typeOf(event) === "run_completed");
   const mastery = [...ordered].reverse().find(event => typeOf(event) === "mastery_report_summary_emitted");
@@ -201,7 +234,19 @@ export function reconstructRun(events) {
     startedAt: valueOf(first, "eventTimestamp", "event_timestamp") || "",
     completedAt: completion ? valueOf(completion, "eventTimestamp", "event_timestamp") : "",
     completionStatus: completion ? valueOf(completion, "completionStatus", "completion_status") : "incomplete",
+    sourceRunId: ordered.map(event => eventExtras(event).sourceRunId).find(Boolean) || "",
+    wallClockDurationMs: ordered.length ? Math.max(0, Date.parse(valueOf(completion || ordered.at(-1), "eventTimestamp", "event_timestamp")) - Date.parse(valueOf(first, "eventTimestamp", "event_timestamp"))) : 0,
+    // This is the engine's existing elapsed value; no timing mechanics are changed.
+    activeGameplayElapsedMs: completion ? Number(valueOf(completion, "elapsedTimeMs", "elapsed_time_ms") || 0) : null,
     eventCount: ordered.length,
+    rawAttempts: answers.length,
+    rawCorrect: correct,
+    rawAccuracy: answers.length ? correct / answers.length : 0,
+    acceptedAttempts: accepted.length,
+    acceptedCorrect,
+    acceptedAccuracy: accepted.length ? acceptedCorrect / accepted.length : 0,
+    unclassifiedAttempts: answers.filter(event => acceptedAttempt(event) === null).length,
+    attemptSemantics: "answerCount/correctAnswers/accuracy remain raw; accepted excludes the engine non-engaged branch; missing historical evidence is unclassified",
     answerCount: answers.length,
     correctAnswers: correct,
     accuracy: answers.length ? correct / answers.length : 0,
@@ -211,7 +256,13 @@ export function reconstructRun(events) {
     retestTriggers: ordered.filter(event => typeOf(event) === "retest_triggered").length,
     bossCompletions: ordered.filter(event => typeOf(event) === "checkpoint_completed").length,
     graphAnswers: ordered.filter(event => typeOf(event) === "graph_question_answered").length,
-    artifacts: ordered.filter(event => typeOf(event) === "artifact_unlocked").map(event => valueOf(event, "artifact", "artifact")).filter(Boolean),
+    artifacts: awards.map(event => event.artifact).filter(Boolean),
+    newlyEarnedArtifacts: awards.filter(event => eventExtras(event).artifactNewlyEarned === true).map(event => event.artifact),
+    artifactAwards: awards.map(event => ({ artifact: event.artifact, position: event.position,
+      artifactName: eventExtras(event).artifactName || "", source: eventExtras(event).artifactSource || "",
+      alreadyOwned: eventExtras(event).artifactAlreadyOwned ?? null,
+      ownedBeforeRun: eventExtras(event).artifactOwnedBeforeRun ?? null,
+      newlyEarned: eventExtras(event).artifactNewlyEarned ?? null })),
     finalScore: Number(valueOf([...ordered].reverse().find(event => typeOf(event) === "score_changed") || {}, "score", "score") || 0),
     maxStreak: ordered.reduce((max, event) => Math.max(max, Number(valueOf(event, "streak", "streak") || 0)), 0),
     masterySummary: mastery ? {

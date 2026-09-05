@@ -4,10 +4,21 @@
   "anonymousClientId": "10000000-0000-4000-8000-000000009001",
   "gameId": "cost-directive",
   "mode": "standard",
-  "startedAt": "2026-09-04T23:46:19.893Z",
-  "completedAt": "2026-09-04T23:46:19.893Z",
+  "startedAt": "2026-09-05T13:24:29.918Z",
+  "completedAt": "2026-09-05T13:24:29.918Z",
   "completionStatus": "complete",
+  "sourceRunId": "",
+  "wallClockDurationMs": 0,
+  "activeGameplayElapsedMs": 6000,
   "eventCount": 6,
+  "rawAttempts": 1,
+  "rawCorrect": 1,
+  "rawAccuracy": 1,
+  "acceptedAttempts": 0,
+  "acceptedCorrect": 0,
+  "acceptedAccuracy": 0,
+  "unclassifiedAttempts": 1,
+  "attemptSemantics": "answerCount/correctAnswers/accuracy remain raw; accepted excludes the engine non-engaged branch; missing historical evidence is unclassified",
   "answerCount": 1,
   "correctAnswers": 1,
   "accuracy": 1,
@@ -18,6 +29,8 @@
   "bossCompletions": 0,
   "graphAnswers": 0,
   "artifacts": [],
+  "newlyEarnedArtifacts": [],
+  "artifactAwards": [],
   "finalScore": 0,
   "maxStreak": 0,
   "masterySummary": {
@@ -35,42 +48,42 @@
     {
       "sequenceNumber": 1,
       "eventType": "run_started",
-      "timestamp": "2026-09-04T23:46:19.893Z",
+      "timestamp": "2026-09-05T13:24:29.918Z",
       "position": 1,
       "questionId": "SYNTH-Q-1"
     },
     {
       "sequenceNumber": 2,
       "eventType": "answer_evaluated",
-      "timestamp": "2026-09-04T23:46:19.893Z",
+      "timestamp": "2026-09-05T13:24:29.918Z",
       "position": 1,
       "questionId": "SYNTH-Q-1"
     },
     {
       "sequenceNumber": 3,
       "eventType": "run_paused",
-      "timestamp": "2026-09-04T23:46:19.893Z",
+      "timestamp": "2026-09-05T13:24:29.918Z",
       "position": 1,
       "questionId": "SYNTH-Q-1"
     },
     {
       "sequenceNumber": 4,
       "eventType": "run_resumed",
-      "timestamp": "2026-09-04T23:46:19.893Z",
+      "timestamp": "2026-09-05T13:24:29.918Z",
       "position": 1,
       "questionId": "SYNTH-Q-1"
     },
     {
       "sequenceNumber": 5,
       "eventType": "mastery_report_summary_emitted",
-      "timestamp": "2026-09-04T23:46:19.893Z",
+      "timestamp": "2026-09-05T13:24:29.918Z",
       "position": 1,
       "questionId": "SYNTH-Q-1"
     },
     {
       "sequenceNumber": 6,
       "eventType": "run_completed",
-      "timestamp": "2026-09-04T23:46:19.893Z",
+      "timestamp": "2026-09-05T13:24:29.918Z",
       "position": 1,
       "questionId": "SYNTH-Q-1"
     }

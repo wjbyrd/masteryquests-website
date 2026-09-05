@@ -1,0 +1,90 @@
+{
+  "phase": "phaseAnonymousTelemetryPOC-v1",
+  "generatedAt": "2026-09-05T13:23:07.308Z",
+  "environment": "Headless Edge; actual private HTML/engine; localhost transport only; fixture positioning/clock acceleration",
+  "passed": 20,
+  "failed": 0,
+  "total": 20,
+  "results": [
+    {
+      "name": "cost-directive: actual fresh launch excludes previous question and streak",
+      "status": "PASS"
+    },
+    {
+      "name": "cost-directive: actual checkpoint reward emits a named new artifact and vault remains unlocked",
+      "status": "PASS"
+    },
+    {
+      "name": "cost-directive: repeated grant is recorded as already owned, display alone emits nothing",
+      "status": "PASS"
+    },
+    {
+      "name": "market-signal: actual fresh launch excludes previous question and streak",
+      "status": "PASS"
+    },
+    {
+      "name": "market-signal: actual checkpoint reward emits a named new artifact and vault remains unlocked",
+      "status": "PASS"
+    },
+    {
+      "name": "market-signal: repeated grant is recorded as already owned, display alone emits nothing",
+      "status": "PASS"
+    },
+    {
+      "name": "strategy-desk: actual fresh launch excludes previous question and streak",
+      "status": "PASS"
+    },
+    {
+      "name": "strategy-desk: actual checkpoint reward emits a named new artifact and vault remains unlocked",
+      "status": "PASS"
+    },
+    {
+      "name": "strategy-desk: repeated grant is recorded as already owned, display alone emits nothing",
+      "status": "PASS"
+    },
+    {
+      "name": "agency-protocol: actual fresh launch excludes previous question and streak",
+      "status": "PASS"
+    },
+    {
+      "name": "agency-protocol: actual checkpoint reward emits a named new artifact and vault remains unlocked",
+      "status": "PASS"
+    },
+    {
+      "name": "agency-protocol: repeated grant is recorded as already owned, display alone emits nothing",
+      "status": "PASS"
+    },
+    {
+      "name": "debug Close leaves a working reopen control and Fresh leaves mapping intact",
+      "status": "PASS"
+    },
+    {
+      "name": "refresh/Continue uses actual saved game source ID and does not reselect mode",
+      "status": "PASS"
+    },
+    {
+      "name": "real Standard ordinary miss proceeds repair -> bridge -> retest",
+      "status": "PASS"
+    },
+    {
+      "name": "real Legendary rapid pattern records non-engaged attempts without remediation",
+      "status": "PASS"
+    },
+    {
+      "name": "actual Timed expiration preserves timed_complete and engine 600-second elapsed",
+      "status": "PASS"
+    },
+    {
+      "name": "actual Standard completion emits terminal event; mastery report waits for view",
+      "status": "PASS"
+    },
+    {
+      "name": "completed-run persistent artifact is pre-owned in a fresh run and not earned by restoration",
+      "status": "PASS"
+    },
+    {
+      "name": "browser queue retries local failure then sends validated batches with unique contiguous events",
+      "status": "PASS"
+    }
+  ]
+}

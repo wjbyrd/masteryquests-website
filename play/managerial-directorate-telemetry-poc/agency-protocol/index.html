@@ -7202,20 +7202,26 @@ bossPool = [];
        // Boss defeated — Agency Protocol boss artifacts
     if(modeAllowsRealmProgress()){
     if(room === 10){
+        const artifactAlreadyOwned = localStorage.getItem("agencyProtocolVaultLedger") === "true";
         document.getElementById("vaultLedger").classList.add("unlocked");
         localStorage.setItem("agencyProtocolVaultLedger", "true");
+        recordArtifactAward("ledger", artifactAlreadyOwned, "checkpoint");
         showArtifact(artifacts.ledger.img, artifacts.ledger.title, artifacts.ledger.text);
     }
 
     if(room === 20){
+        const artifactAlreadyOwned = localStorage.getItem("agencyProtocolVaultLens") === "true";
         document.getElementById("vaultLens").classList.add("unlocked");
         localStorage.setItem("agencyProtocolVaultLens", "true");
+        recordArtifactAward("lens", artifactAlreadyOwned, "checkpoint");
         showArtifact(artifacts.lens.img, artifacts.lens.title, artifacts.lens.text);
     }
 
     if(room === 30){
+        const artifactAlreadyOwned = localStorage.getItem("agencyProtocolVaultAlgorithm") === "true";
         document.getElementById("vaultAlgorithm").classList.add("unlocked");
         localStorage.setItem("agencyProtocolVaultAlgorithm", "true");
+        recordArtifactAward("algorithm", artifactAlreadyOwned, "checkpoint");
         showArtifact(artifacts.algorithm.img, artifacts.algorithm.title, artifacts.algorithm.text);
     }
 }
@@ -7391,6 +7397,15 @@ showGameModal({
 // Unlocks artifact in vault + saves progress
 // Requires matching ID format: "vault" + ArtifactName
 // Safe to customize artifact visuals/text only
+function recordArtifactAward(key, alreadyOwned, source) {
+    // POC gameplay hook: restoration/display alone never emits an award.
+    try {
+        sendGameData({ event: "artifact_unlocked", runID, room, artifact: key,
+            artifactName: artifacts[key]?.title || "", artifactSource: source,
+            artifactAlreadyOwned: alreadyOwned });
+    } catch (_) {} // telemetry must never interrupt a reward
+}
+
 function unlockArtifact(key) {
     const id = "vault" + key.charAt(0).toUpperCase() + key.slice(1);
     const slot = document.getElementById(id);
@@ -7403,7 +7418,11 @@ function unlockArtifact(key) {
     if(slot){
         slot.classList.add("unlocked");
         const storageKey = storageKeyByArtifact[key];
-        if(storageKey) localStorage.setItem(storageKey, "true");
+        if(storageKey){
+            const alreadyOwned = localStorage.getItem(storageKey) === "true";
+            localStorage.setItem(storageKey, "true");
+            recordArtifactAward(key, alreadyOwned, "unlockArtifact");
+        }
         updateMissionArtifactCountFromVault();
     }
 
@@ -11783,20 +11802,26 @@ recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
        // Boss defeated — The Agency Protocol boss artifacts
  if(modeAllowsRealmProgress()){
     if(room === 10){
+        const artifactAlreadyOwned = localStorage.getItem(ARTIFACT_STORAGE_KEYS.ledger) === "true";
         document.getElementById("vaultLedger").classList.add("unlocked");
         localStorage.setItem(ARTIFACT_STORAGE_KEYS.ledger, "true");
+        recordArtifactAward("ledger", artifactAlreadyOwned, "checkpoint");
         showArtifact(artifacts.ledger.img, artifacts.ledger.title, artifacts.ledger.text);
     }
 
     if(room === 20){
+        const artifactAlreadyOwned = localStorage.getItem(ARTIFACT_STORAGE_KEYS.lens) === "true";
         document.getElementById("vaultLens").classList.add("unlocked");
         localStorage.setItem(ARTIFACT_STORAGE_KEYS.lens, "true");
+        recordArtifactAward("lens", artifactAlreadyOwned, "checkpoint");
         showArtifact(artifacts.lens.img, artifacts.lens.title, artifacts.lens.text);
     }
 
     if(room === 30){
+        const artifactAlreadyOwned = localStorage.getItem(ARTIFACT_STORAGE_KEYS.algorithm) === "true";
         document.getElementById("vaultAlgorithm").classList.add("unlocked");
         localStorage.setItem(ARTIFACT_STORAGE_KEYS.algorithm, "true");
+        recordArtifactAward("algorithm", artifactAlreadyOwned, "checkpoint");
         showArtifact(artifacts.algorithm.img, artifacts.algorithm.title, artifacts.algorithm.text);
     }
 

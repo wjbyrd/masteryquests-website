@@ -3,7 +3,7 @@
 
   const PHASE = "phaseAnonymousTelemetryPOC-v1";
   const BUILD_ID = "managerial-directorate-telemetry-poc";
-  const BUILD_VERSION = "2026.09.04-poc1";
+  const BUILD_VERSION = "2026.09.05-poc2";
   const SCHEMA_VERSION = 1;
   const DEFAULT_ENDPOINT = "/api/anonymous-telemetry-poc/v1/events";
   const QUEUE_KEY = "anonymousTelemetry:queue:v1";
@@ -37,6 +37,8 @@
     retryAttempt: 0,
     retryTimer: 0,
     lastStatus: "idle",
+    artifactOwnership: null,
+    launchDepth: 0,
     lastStage: "",
     lastBossStage: "",
     lastPosition: 0,
@@ -93,14 +95,16 @@
     if (sourceKey) state.runs[sourceKey] = runId;
     state.activeRunId = runId;
     state.sourceRunId = sourceRunId || "";
+    state.visibilityPaused = false;
+    state.runs[`${gameId}:artifacts:${runId}`] = state.artifactOwnership || artifactOwnership();
     state.lastStage = "";
     state.lastBossStage = "";
     state.lastPosition = 0;
     state.lastScore = null;
     state.lastStreak = null;
     localStorage.setItem(ACTIVE_RUN_KEY, runId);
-    writeJSON(RUNS_KEY, state.runs);
     if (mode) state.runs[`${gameId}:mode:${runId}`] = String(mode);
+    writeJSON(RUNS_KEY, state.runs);
     return runId;
   }
 
@@ -128,6 +132,11 @@
     } catch (_) { return fallback; }
   }
 
+  function artifactOwnership() {
+    const keys = globalValue("ARTIFACT_STORAGE_KEYS", {});
+    return Object.fromEntries(Object.entries(keys).map(([key, storageKey]) => [key, localStorage.getItem(storageKey) === "true"]));
+  }
+
   function currentContext(raw = {}) {
     const question = globalValue("currentQuestion", null) || {};
     const remediation = globalValue("remediationState", null) || {};
@@ -146,7 +155,7 @@
     const masteryAccuracy = attempts > 0 ? correctAnswers / attempts : number(raw.accuracy);
     return {
       mode: text(raw.mode ?? globalValue("gameMode", "standard"), 60).replace(/-complete$/, ""),
-      elapsedTimeMs: number(raw.elapsedTime ?? raw.elapsedTimeMs ?? globalValue("getElapsedTimeMs", null)?.() ?? 0),
+      elapsedTimeMs: number(raw.totalTime ?? raw.totalTimeMs ?? raw.elapsedTime ?? raw.elapsedTimeMs ?? globalValue("getElapsedTimeMs", null)?.() ?? 0),
       position,
       questionId,
       conceptId,
@@ -156,7 +165,7 @@
       selectedResponse: raw.selectedIndex === undefined ? null : number(raw.selectedIndex),
       correct: raw.correct === undefined ? null : Boolean(Number(raw.correct)),
       responseTimeMs: number(raw.responseTime ?? raw.responseTimeMs),
-      rapidGuess: Boolean(Number(raw.rapidGuessing)),
+      rapidGuess: raw.event === "rapid_guessing" || Boolean(Number(raw.rapidGuessing)),
       remediationStage: stage === "repair" ? stage : "",
       bridgeStage: stage === "bridge" ? stage : "",
       retestStage: stage === "retest" ? stage : "",
@@ -172,7 +181,9 @@
       masteryAccuracy: finite(masteryAccuracy),
       selectionReason: text(remediation.active ? `adaptive-${stage || "detour"}` : (globalValue("adaptiveMode", "") || "mode-pool"), 160),
       weaknessEstimate: summarizeWeakness(mastery),
-      sourceEvent: text(raw.event, 80)
+      sourceEvent: text(raw.event, 80),
+      sourceRunId: text(state.sourceRunId, 160),
+      lifecycleReason: text(raw.lifecycleReason, 80)
     };
   }
 
@@ -205,7 +216,9 @@
         "questionType", "difficulty", "selectedResponse", "correct", "responseTimeMs", "rapidGuess",
         "remediationStage", "bridgeStage", "retestStage", "bossStage", "graphQuestion", "score",
         "streak", "dailyProgress", "artifact", "completionStatus", "masteryAttempts", "masteryCorrect",
-        "masteryAccuracy", "selectionReason", "weaknessEstimate", "sourceEvent"
+        "masteryAccuracy", "selectionReason", "weaknessEstimate", "sourceEvent",
+        "sourceRunId", "lifecycleReason", "acceptedAttempt", "artifactName", "artifactSource",
+        "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned"
       ]) {
         if (Object.prototype.hasOwnProperty.call(fields, key)) safeOverrides[key] = fields[key];
       }
@@ -226,6 +239,11 @@
         ...context,
         ...safeOverrides
       };
+      // Lifecycle/adaptive reasons never occupy the durable terminal field.
+      if (eventType !== "run_completed" && event.completionStatus) {
+        event.lifecycleReason ||= event.completionStatus;
+        event.completionStatus = "";
+      }
       state.queue.push(event);
       if (state.queue.length > MAX_QUEUE) state.queue.splice(0, state.queue.length - MAX_QUEUE);
       persistQueue();
@@ -252,11 +270,30 @@
     runId ||= ensureRun(context.mode);
 
     if (sourceEvent === "start" || sourceEvent === "resume") {
-      emit("mode_selected", raw, { runId });
-      emit(sourceEvent === "resume" ? "run_resumed" : "run_started", raw, { runId });
+      // start is sent before the Standard engine reset; never sample prior-run
+      // question/progress globals for these pre-question lifecycle events.
+      const initial = { ...raw, position: 0, questionId: "", conceptId: "", learningObjective: "",
+        questionType: "", difficulty: "", remediationStage: "", bridgeStage: "", retestStage: "",
+        bossStage: "", graphQuestion: false };
+      if (sourceEvent === "start") {
+        Object.assign(initial, { elapsedTimeMs: 0, streak: 0, score: 0, dailyProgress: 0,
+          masteryAttempts: 0, masteryCorrect: 0, masteryAccuracy: 0, weaknessEstimate: [], selectionReason: "new-run" });
+        emit("mode_selected", initial, { runId });
+      }
+      state.visibilityPaused = false;
+      emit(sourceEvent === "resume" ? "run_resumed" : "run_started", initial, { runId });
+      return;
+    }
+    if (sourceEvent === "artifact_unlocked") {
+      const baseline = state.runs[`${gameId}:artifacts:${runId}`];
+      emit("artifact_unlocked", { ...raw,
+        artifactOwnedBeforeRun: baseline?.[raw.artifact] ?? null,
+        artifactNewlyEarned: !raw.artifactAlreadyOwned && baseline?.[raw.artifact] !== true
+      }, { runId });
       return;
     }
     if (sourceEvent === "question" || sourceEvent === "rapid_guessing") {
+      raw = { ...raw, acceptedAttempt: sourceEvent === "question", rapidGuess: context.rapidGuess };
       emit("answer_submitted", raw, { runId });
       emit("answer_evaluated", raw, { runId });
       emit("feedback_shown", raw, { runId });
@@ -277,7 +314,7 @@
       emit("checkpoint_completed", raw, { runId });
       return;
     }
-    if (COMPLETION_EVENTS.has(sourceEvent) || /_complete$/.test(sourceEvent)) {
+    if (COMPLETION_EVENTS.has(sourceEvent) || /_(?:complete|bust|ended_by_student)$/.test(sourceEvent)) {
       emit("run_completed", { ...raw, completionStatus: sourceEvent }, { runId });
       return;
     }
@@ -290,10 +327,10 @@
       if (!context.questionId) return;
       const stage = context.remediationStage || context.bridgeStage || context.retestStage;
       if (stage !== state.lastStage) {
-        if (state.lastStage) emit("adaptive_detour_ended", { completionStatus: state.lastStage });
-        if (stage === "repair") emit("repair_triggered", { completionStatus: stage });
-        if (stage === "bridge") emit("bridge_triggered", { completionStatus: stage });
-        if (stage === "retest") emit("retest_triggered", { completionStatus: stage });
+        if (state.lastStage) emit("adaptive_detour_ended", { lifecycleReason: state.lastStage });
+        if (stage === "repair") emit("repair_triggered", { lifecycleReason: stage });
+        if (stage === "bridge") emit("bridge_triggered", { lifecycleReason: stage });
+        if (stage === "retest") emit("retest_triggered", { lifecycleReason: stage });
         state.lastStage = stage;
       }
       if (state.lastPosition > 0 && context.position > state.lastPosition) emit("room_advanced", {});
@@ -353,7 +390,18 @@
     wrapAfter("beginFadingFortuneQuestion", captureQuestionShown);
     wrapAfter("renderRiskRewardQuestion", captureQuestionShown);
     wrapAfter("showMasteryReportScreen", masterySummary);
-    wrapAfter("unlockArtifact", args => emit("artifact_unlocked", { artifact: text(args[0], 120) }));
+    // Capture ownership before launch helpers clear any run-local save state.
+    for (const name of ["startNewRun", "startSelectedMode", "startGame"]) {
+      const original = window[name];
+      if (typeof original !== "function" || original.__anonymousTelemetryWrapped) continue;
+      const wrapped = function(...args) {
+        if (state.launchDepth === 0) { try { state.artifactOwnership = artifactOwnership(); } catch (_) { state.artifactOwnership = null; } }
+        state.launchDepth++;
+        try { return original.apply(this, args); } finally { state.launchDepth--; }
+      };
+      wrapped.__anonymousTelemetryWrapped = true;
+      window[name] = wrapped;
+    }
   }
 
   function scheduleFlush(delay) {
@@ -409,7 +457,7 @@
     const disclosure = document.createElement("details");
     disclosure.id = "anonymousTelemetryDisclosure";
     disclosure.style.cssText = "position:fixed;right:10px;bottom:10px;z-index:2147483000;max-width:430px;padding:8px 10px;border:1px solid rgba(125,211,252,.5);border-radius:8px;background:rgba(2,6,23,.94);color:#e0f2fe;font:12px/1.45 system-ui,sans-serif;box-shadow:0 8px 28px rgba(0,0,0,.35)";
-    disclosure.innerHTML = "<summary style='cursor:pointer;font-weight:700'>Anonymous research telemetry</summary><p style='margin:7px 0 0'>This private research build sends anonymous gameplay events to a research database. It does not send names, email addresses, account IDs, or typed free-response text. Events may include question identifiers, selected option index, correctness, timing, mode, adaptive-path state, score, streak, artifacts, and aggregate Mastery Report results. Transmission failures never block play; unsent events remain queued in this browser for retry.</p>";
+    disclosure.innerHTML = "<summary style='cursor:pointer;font-weight:700'>Anonymous gameplay telemetry</summary><p style='margin:7px 0 0'>This private QA build sends anonymous gameplay events to a gameplay telemetry database. It does not send names, email addresses, account IDs, or typed free-response text. Events may include question identifiers, selected option index, correctness, timing, mode, adaptive-path state, score, streak, artifacts, and aggregate Mastery Report results. Transmission failures never block play; unsent events remain queued in this browser for retry.</p>";
     document.body.appendChild(disclosure);
   }
 
@@ -422,7 +470,7 @@
     node.addEventListener("click", async event => {
       const action = event.target?.dataset?.action;
       if (!action) return;
-      if (action === "new-run") createRun("debug:" + uuid(), currentContext({}).mode);
+      if (action === "new-run") requestFreshRun();
       if (action === "flush") await flush();
       if (action === "failure") {
         state.failureSimulation = !state.failureSimulation;
@@ -437,7 +485,7 @@
         const mapped = state.sourceRunId ? state.runs[`${gameId}:${state.sourceRunId}`] : "";
         state.lastStatus = mapped === state.activeRunId && Boolean(mapped) ? "resume mapping valid" : "no resumable source run mapped yet";
       }
-      if (action === "close") node.remove();
+      if (action === "close") node.open = false;
       updateDebug();
     });
     document.body.appendChild(node);
@@ -457,7 +505,8 @@
       endpoint,
       syntheticMode,
       anonymousClientId: getClientId(),
-      runId: state.activeRunId || "(not started)",
+      runId: state.sourceRunId ? state.activeRunId : "(pre-game/unmapped; start or resume gameplay)",
+      sourceRunId: state.sourceRunId || "",
       sourceRunMapped: Boolean(state.sourceRunId),
       nextSequence: Number(state.sequences[state.activeRunId] || 0) + 1,
       queuedEvents: state.queue.length,
@@ -471,6 +520,19 @@
     if (recent) recent.textContent = JSON.stringify(state.queue.slice(-20).map(event => ({ sequenceNumber: event.sequenceNumber, eventType: event.eventType, position: event.position, questionId: event.questionId })), null, 2);
   }
 
+  function requestFreshRun() {
+    // A debug action cannot split an existing source run or mint a throwaway ID.
+    state.lastStatus = "Start a New Run in the game menu to create a fresh telemetry run. Continue preserves the existing mapping.";
+    updateDebug();
+    return null;
+  }
+
+  function pauseForLifecycle(reason) {
+    if (!state.activeRunId || state.visibilityPaused) return;
+    state.visibilityPaused = true;
+    emit("run_paused", { lifecycleReason: reason });
+  }
+
   window.AnonymousTelemetryPOC = Object.freeze({
     phase: PHASE,
     emit,
@@ -478,7 +540,7 @@
     getQueue: () => state.queue.slice(),
     getClientId,
     getRunId: () => state.activeRunId,
-    forceNewRun: () => createRun("debug:" + uuid(), currentContext({}).mode),
+    forceNewRun: requestFreshRun,
     installHooks
   });
 
@@ -487,18 +549,23 @@
   addDebugPanel();
   window.addEventListener("online", () => scheduleFlush(0));
   window.addEventListener("pagehide", () => {
-    if (state.activeRunId && !state.visibilityPaused) emit("run_paused", { completionStatus: "pagehide" });
+    pauseForLifecycle("pagehide");
     flush({ keepalive: true });
+  });
+  window.addEventListener("pageshow", event => {
+    if (event.persisted && state.visibilityPaused && document.visibilityState === "visible") {
+      state.visibilityPaused = false;
+      emit("run_resumed", { lifecycleReason: "pageshow" });
+    }
   });
   document.addEventListener("visibilitychange", () => {
     if (!state.activeRunId) return;
     if (document.visibilityState === "hidden" && !state.visibilityPaused) {
-      state.visibilityPaused = true;
-      emit("run_paused", { completionStatus: "visibility-hidden" });
+      pauseForLifecycle("visibility-hidden");
       flush({ keepalive: true });
     } else if (document.visibilityState === "visible" && state.visibilityPaused) {
       state.visibilityPaused = false;
-      emit("run_resumed", { completionStatus: "visibility-visible" });
+      emit("run_resumed", { lifecycleReason: "visibility-visible" });
     }
   });
   scheduleFlush(250);

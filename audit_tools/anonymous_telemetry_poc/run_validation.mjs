@@ -144,7 +144,7 @@ check("15 batching and idempotent event IDs present", () => {
   const client = read("play/managerial-directorate-telemetry-poc/telemetry-client.js"); const worker = read("server/anonymous-telemetry-poc/worker.mjs"); assert.ok(client.includes("BATCH_SIZE = 25") && worker.includes("INSERT OR IGNORE"));
 });
 check("16 disclosure is clear and gameplay visible", () => {
-  const client = read("play/managerial-directorate-telemetry-poc/telemetry-client.js"); assert.ok(client.includes("Anonymous research telemetry") && client.includes("does not send names, email addresses"));
+  const client = read("play/managerial-directorate-telemetry-poc/telemetry-client.js"); assert.ok(client.includes("Anonymous gameplay telemetry") && client.includes("does not send names, email addresses"));
 });
 check("17 debug panel is query gated with required controls", () => {
   const client = read("play/managerial-directorate-telemetry-poc/telemetry-client.js");
