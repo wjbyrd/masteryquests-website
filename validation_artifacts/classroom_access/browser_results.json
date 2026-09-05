@@ -1,0 +1,61 @@
+{
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "results": [
+    {
+      "name": "Real Cloudflare asset runtime gates hub, every title, scripts and encoded path aliases",
+      "status": "PASS"
+    },
+    {
+      "name": "Gate desktop/mobile layout, accessible label, focus and empty screenshot",
+      "status": "PASS"
+    },
+    {
+      "name": "Wrong form code shows accessible generic error and sets no session",
+      "status": "PASS"
+    },
+    {
+      "name": "Correct form issues secure HttpOnly cookie and returns to original child",
+      "status": "PASS"
+    },
+    {
+      "name": "cost-directive authenticated real game, intro, Daily/menu and anonymous telemetry",
+      "status": "PASS"
+    },
+    {
+      "name": "market-signal authenticated real game, intro, Daily/menu and anonymous telemetry",
+      "status": "PASS"
+    },
+    {
+      "name": "strategy-desk authenticated real game, intro, Daily/menu and anonymous telemetry",
+      "status": "PASS"
+    },
+    {
+      "name": "agency-protocol authenticated real game, intro, Daily/menu and anonymous telemetry",
+      "status": "PASS"
+    },
+    {
+      "name": "Public assets and POC remain ungated in actual asset runtime",
+      "status": "PASS"
+    },
+    {
+      "name": "Native Cloudflare rate limiter throttles repeated unauthenticated login attempts",
+      "status": "PASS"
+    },
+    {
+      "name": "No gate cookie reaches telemetry; no browser errors",
+      "status": "PASS"
+    }
+  ],
+  "screenshots": [
+    "gate-desktop.png",
+    "gate-mobile.png",
+    "gate-error-mobile.png",
+    "cost-directive-authorized-menu-mobile.png",
+    "market-signal-authorized-menu-mobile.png",
+    "strategy-desk-authorized-menu-mobile.png",
+    "agency-protocol-authorized-menu-mobile.png"
+  ],
+  "errors": []
+}

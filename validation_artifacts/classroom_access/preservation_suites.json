@@ -1,0 +1,14 @@
+[
+  {
+    "command": "node audit_tools/managerial_classroom/run_browser.mjs .",
+    "exitCode": 0
+  },
+  {
+    "command": "node audit_tools/anonymous_telemetry_poc/run_regressions.mjs .",
+    "exitCode": 0
+  },
+  {
+    "command": "node audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs .",
+    "exitCode": 0
+  }
+]

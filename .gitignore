@@ -1,0 +1,4 @@
+# Local Cloudflare credentials, sessions and development caches are never source.
+.dev.vars*
+.env*
+.wrangler/

@@ -1,0 +1,115 @@
+{
+  "passed": 27,
+  "failed": 0,
+  "total": 27,
+  "results": [
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/cost-directive/",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/cost-directive/index.html",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/market-signal/",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/market-signal/index.html",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/strategy-desk/",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/strategy-desk/index.html",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/agency-protocol/",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/agency-protocol/index.html",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/telemetry-client.js",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/telemetry-storage-isolation.js",
+      "status": "PASS"
+    },
+    {
+      "name": "Unauthenticated subtree /play/managerial-directorate-classroom/anything",
+      "status": "PASS"
+    },
+    {
+      "name": "Slashless entry canonicalizes without exposing static content",
+      "status": "PASS"
+    },
+    {
+      "name": "Public pages, shared assets, POC and API pass directly to original assets handler",
+      "status": "PASS"
+    },
+    {
+      "name": "Wrong code is generic, unreflected, and issues no cookie",
+      "status": "PASS"
+    },
+    {
+      "name": "Correct code returns original child path with narrow signed 10-hour cookie",
+      "status": "PASS"
+    },
+    {
+      "name": "Authenticated navigation covers all games and client assets with no-store",
+      "status": "PASS"
+    },
+    {
+      "name": "Tampered, malformed and duplicate cookies are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Expired, future-dated, overlong and extra-field signed sessions fail validation",
+      "status": "PASS"
+    },
+    {
+      "name": "Code rotation preserves sessions; signing-secret rotation invalidates them",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing secrets and pilot closure fail closed even for existing sessions",
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-origin POST, extra redirect fields and oversized bodies are denied",
+      "status": "PASS"
+    },
+    {
+      "name": "Encoded and repeated-slash classroom paths cannot bypass authorization or redirect externally",
+      "status": "PASS"
+    },
+    {
+      "name": "Shared rate limit rejects guessing and expires without affecting valid sessions",
+      "status": "PASS"
+    },
+    {
+      "name": "Rate-limit binding absence/failure cannot accidentally authorize",
+      "status": "PASS"
+    },
+    {
+      "name": "All prior tracked files except approved root config remain byte-identical",
+      "status": "PASS"
+    },
+    {
+      "name": "Root config preserves original asset directory and Worker; no route or backend changes",
+      "status": "PASS"
+    }
+  ]
+}

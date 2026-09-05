@@ -3,6 +3,22 @@
   "name": "masteryquests-website",
   "compatibility_date": "2026-08-07",
   "assets": {
-    "directory": "./dist"
-  }
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/play/managerial-directorate-classroom",
+      "/play/managerial-directorate-classroom/*"
+    ]
+  },
+  "main": "server/classroom-access/worker.mjs",
+  "ratelimits": [
+    {
+      "name": "CLASSROOM_LOGIN_LIMIT",
+      "namespace_id": "2026090501",
+      "simple": {
+        "limit": 120,
+        "period": 60
+      }
+    }
+  ]
 }
