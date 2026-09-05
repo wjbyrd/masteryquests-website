@@ -2905,6 +2905,7 @@ body{
 .target-unlimited-symbol{font-size:38px;line-height:1;color:#f7d982;margin:8px auto 14px}
 @media(max-width:520px){.practice-mode-controls{flex-direction:column}.targeted-repair-indicator{box-sizing:border-box;width:100%;max-width:100%}.end-practice-btn{max-width:100%}.repair-weak-areas-btn{width:100%;white-space:normal}}
 </style>
+<link rel="stylesheet" href="../managerial-parity.css">
 </head>
 <body class="strategy-desk strategy-intelligence">
 <!-- Screen reader announcements (accessibility — do not remove) -->    
@@ -3089,8 +3090,8 @@ body{
 </div>
 
 <div class="dungeon-container">
-    <button class="fullscreenBtn" onclick="goFullscreen()">FULLSCREEN</button>
-	<button id="returnMenuBtn" class="return-menu-btn" onclick="confirmReturnToModeMenu()">OPERATION MENU</button>
+
+	<button id="returnMenuBtn" class="return-menu-btn" onclick="openGameMenu()">Game Menu</button>
     <button id="soundToggle" class="sound-toggle" onclick="toggleGameSound()" aria-label="Toggle sound">Sound On</button>
 
 <!-- =========================================
@@ -3223,7 +3224,14 @@ DO NOT REMOVE:
     <h2 id="gameModalTitle">Strategy Warning</h2>
     <p id="gameModalText"></p>
 
-    <div class="game-modal-actions">
+        <div id="gameMenuOptions" class="game-menu-options" hidden>
+      <button id="gameMenuModeSelect" class="game-menu-option" type="button" onclick="chooseGameMenuModeSelection()">Mode Selection</button>
+      <button id="gameMenuFullscreen" class="game-menu-option" type="button" onclick="toggleGameMenuFullscreen()">Enter Fullscreen</button>
+      <button id="gameMenuDaily" class="game-menu-option" type="button" onclick="openDailyFromGameMenu()">Daily Task</button>
+      <button id="gameMenuGuideIntro" class="game-menu-option" type="button" onclick="replayGuideIntroduction()">Replay Introduction</button>
+    </div>
+
+<div id="gameModalActions" class="game-modal-actions">
       <button id="gameModalConfirm" class="continue-btn">Continue</button>
       <button id="gameModalCancel" class="continue-btn secondary-modal-btn" style="display:none;">Cancel</button>
     </div>
@@ -8391,7 +8399,7 @@ if (isBoss) {
     const bossImage = room === 10 ? "strategist.webp" : room === 20 ? "broker.webp" : "architect.webp";
     const bossClass = room === 10 ? "strategistGlow" : room === 20 ? "brokerGlow" : "principalGlow";
     document.getElementById("srAnnouncements").innerText = `Boss encounter. ${bTitle}. Prepare yourself.`;
-    bossMsg.innerText = "⚠ BOSS ENCOUNTER ⚠";
+    bossMsg.innerText = "";
     bossMsg.style.color = bColor;
     gameBox.style.setProperty("--bossColor", bColor);
     questionElement.innerHTML = `
@@ -8485,9 +8493,7 @@ if(gameMode === "legendary"){
 
     wizardSpeak(getWizardLine(currentQuestion.type));
 
-    bossMsg.innerText = (room === 9 || room === 19 || room === 29)
-        ? "⚠️ LEGENDARY BOSS DETECTED IN NEXT ROOM ⚠️"
-        : "";
+    bossMsg.innerText = "";
     bossMsg.style.color = "#f97316";
 
     questionElement.innerHTML = `<div>${currentQuestion.q}</div>`;
@@ -8562,9 +8568,7 @@ renderQuestionGraph(currentQuestion);
     wizardSpeak(wizardText);
 
     // --- UI ---
-    bossMsg.innerText = ((gameMode === "standard" || gameMode === "legendary") && (room === 9 || room === 19 || room === 29))
-        ? (gameMode === "legendary" ? "⚠️ LEGENDARY BOSS DETECTED IN NEXT ROOM ⚠️" : "⚠️ DANGER: BOSS DETECTED IN NEXT ROOM ⚠️")
-        : "";
+    bossMsg.innerText = "";
     bossMsg.style.color = "#ef4444";
 
     questionElement.innerHTML = `
@@ -12436,5 +12440,58 @@ document.head.appendChild(phase15LayoutStyle);
 
 
 </script>
+<div id="dailyTaskDock" class="daily-task-dock" hidden>
+  <button id="dailyTaskPill" class="daily-task-pill" type="button" aria-expanded="false" aria-controls="dailyDetailsPanel">
+    DAILY TASK
+  </button>
+  <section id="dailyDetailsPanel" class="daily-details-panel" aria-label="Daily task details" hidden>
+    <div class="daily-details-heading">
+      <div class="daily-details-kicker">Today's Daily</div>
+      <button id="dailyDetailsClose" class="daily-details-close" type="button" aria-label="Close Daily Task details">×</button>
+    </div>
+    <h2 id="dailyDetailsTitle" class="daily-details-title"></h2>
+    <p id="dailyDetailsMeta" class="daily-details-meta"></p>
+    <div class="daily-progress-track" aria-hidden="true"><div id="dailyDetailsProgress" class="daily-progress-fill"></div></div>
+    <div class="daily-details-grid">
+      <div class="daily-stat"><span class="daily-stat-label">Dailies completed</span><span id="dailyLifetimeValue" class="daily-stat-value">0</span></div>
+      <div class="daily-stat"><span class="daily-stat-label">Next milestone</span><span id="dailyMilestoneValue" class="daily-stat-value">1</span></div>
+    </div>
+    <p id="dailyMilestoneMeta" class="daily-details-meta" style="margin-top:9px;"></p>
+  </section>
+</div>
+<div id="dailyToastRegion" class="daily-toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+
+
+<section id="guideIntroScreen" class="guide-intro-screen" role="dialog" aria-modal="true" aria-labelledby="guideIntroName" hidden>
+  <div class="guide-intro-stage">
+    <div class="guide-intro-portrait-frame">
+      <img id="guideIntroImage" class="guide-intro-image" alt="" hidden>
+      <div id="guideIntroFallback" class="guide-intro-fallback" aria-hidden="true">✦</div>
+    </div>
+    <div class="guide-intro-copy">
+      <p class="guide-intro-kicker">Your Guide</p>
+      <h1 id="guideIntroName" class="guide-intro-name">The Guide</h1>
+      <p id="guideIntroPrimary" class="guide-intro-dialogue"></p>
+      <p id="guideIntroSecondary" class="guide-intro-dialogue secondary"></p>
+      <button id="guideIntroProceed" class="guide-intro-proceed" type="button" onclick="proceedGuideIntroduction()">Proceed</button>
+    </div>
+  </div>
+</section>
+
+<section id="bossRevealScreen" class="guide-intro-screen boss-reveal-screen" role="dialog" aria-modal="true" aria-labelledby="bossRevealName" hidden>
+  <div class="guide-intro-stage">
+    <div class="guide-intro-portrait-frame">
+      <img id="bossRevealImage" class="guide-intro-image" alt="" hidden>
+      <div id="bossRevealFallback" class="guide-intro-fallback" aria-hidden="true">◆</div>
+    </div>
+    <div class="guide-intro-copy">
+      <p id="bossRevealKicker" class="guide-intro-kicker">Checkpoint</p>
+      <h1 id="bossRevealName" class="guide-intro-name">Checkpoint</h1>
+      <p id="bossRevealDialogue" class="guide-intro-dialogue"></p>
+      <button id="bossRevealProceed" class="guide-intro-proceed" type="button" onclick="proceedBossReveal()">Enter the checkpoint</button>
+    </div>
+  </div>
+</section>
+<script src="../managerial-parity.js"></script>
 </body>
 </html>
