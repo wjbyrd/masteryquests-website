@@ -4,16 +4,22 @@
   "main": "worker.mjs",
   "compatibility_date": "2026-08-07",
   "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "masteryquests.org/api/anonymous-telemetry-poc/*",
+      "zone_name": "masteryquests.org"
+    }
+],
   "d1_databases": [
     {
       "binding": "TELEMETRY_DB",
-      "database_name": "masteryquests-anonymous-telemetry-poc",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_name": "managerial-telemetry-poc",
+      "database_id": "16b248ff-20cb-429c-a4a1-dd50d17c1fd0",
       "migrations_dir": "migrations"
     }
   ],
   "vars": {
-    "ALLOWED_ORIGINS": "https://masteryquests.com,https://www.masteryquests.com",
+    "ALLOWED_ORIGINS": "https://masteryquests.org,https://www.masteryquests.org",
     "MAX_EVENTS_PER_CLIENT_MINUTE": "300"
   }
 }
