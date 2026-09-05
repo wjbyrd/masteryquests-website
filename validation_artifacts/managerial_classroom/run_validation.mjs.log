@@ -1,0 +1,21 @@
+{
+  "phase": "phaseAnonymousTelemetryPOC-v1",
+  "status": "FAIL",
+  "passed": 33,
+  "failed": 1,
+  "total": 34,
+  "outputDir": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\validation_artifacts\\anonymous_telemetry_poc"
+}
+
+05 public protected hashes unchanged: AssertionError [ERR_ASSERTION]: play/managerial-intelligence-directorate/agency-protocol/index.html
++ actual - expected
+
++ 'a089192341afbc85e0b965ef5c296fd0da617f71d41a7e4643c99dc202dfa27e'
+- '1a994c529a8a21eefe382c077b352e94d2a9df022d6e5d171777f9fcabb3fe55'
+
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_validation.mjs:109:87
+    at check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_validation.mjs:22:9)
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_validation.mjs:108:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

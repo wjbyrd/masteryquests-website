@@ -1,0 +1,146 @@
+{
+  "phase": "phaseAnonymousTelemetryPOC-v1",
+  "generatedAt": "2026-09-05T19:31:05.708Z",
+  "status": "PASS",
+  "passed": 34,
+  "failed": 0,
+  "total": 34,
+  "checks": [
+    {
+      "name": "01 phase identifier exact",
+      "status": "PASS"
+    },
+    {
+      "name": "02 private build path exists",
+      "status": "PASS"
+    },
+    {
+      "name": "03 four private child entrypoints exist",
+      "status": "PASS"
+    },
+    {
+      "name": "04 private build is unlinked from public surfaces",
+      "status": "PASS"
+    },
+    {
+      "name": "05 public protected hashes unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "06 root deployment config unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "07 private HTML uses authoritative asset bases",
+      "status": "PASS"
+    },
+    {
+      "name": "08 no question banks or media duplicated",
+      "status": "PASS"
+    },
+    {
+      "name": "09 every private page is noindex and phase tagged",
+      "status": "PASS"
+    },
+    {
+      "name": "10 shared client and storage isolation loaded on every page",
+      "status": "PASS"
+    },
+    {
+      "name": "11 client identifiers use cryptographic UUIDs",
+      "status": "PASS"
+    },
+    {
+      "name": "12 client payload has no direct identifier fields",
+      "status": "PASS"
+    },
+    {
+      "name": "13 queue is persistent capped and ordered",
+      "status": "PASS"
+    },
+    {
+      "name": "14 retry is fail-open exponential and capped",
+      "status": "PASS"
+    },
+    {
+      "name": "15 batching and idempotent event IDs present",
+      "status": "PASS"
+    },
+    {
+      "name": "16 disclosure is clear and gameplay visible",
+      "status": "PASS"
+    },
+    {
+      "name": "17 debug panel is query gated with required controls",
+      "status": "PASS"
+    },
+    {
+      "name": "18 minimum event model covered",
+      "status": "PASS"
+    },
+    {
+      "name": "19 normalized D1 schema covers research fields",
+      "status": "PASS"
+    },
+    {
+      "name": "20 server rejects PII validates size and rate limits",
+      "status": "PASS"
+    },
+    {
+      "name": "21 admin tools authenticated and no-store",
+      "status": "PASS"
+    },
+    {
+      "name": "22 cleanup supports synthetic and full build deletion",
+      "status": "PASS"
+    },
+    {
+      "name": "23 all synthetic events validate and are marked",
+      "status": "PASS"
+    },
+    {
+      "name": "24 scenarios A-F reconstruct semantically",
+      "status": "PASS"
+    },
+    {
+      "name": "25 resume preserves run and monotonic sequence",
+      "status": "PASS"
+    },
+    {
+      "name": "26 failure and recovery preserves then acknowledges queue",
+      "status": "PASS"
+    },
+    {
+      "name": "27 duplicate event ID is detectable and DB protected",
+      "status": "PASS"
+    },
+    {
+      "name": "28 two runs can share one client and clients remain distinct",
+      "status": "PASS"
+    },
+    {
+      "name": "29 every supported mode remains present",
+      "status": "PASS"
+    },
+    {
+      "name": "30 JavaScript syntax passes",
+      "status": "PASS"
+    },
+    {
+      "name": "31 source question and answer content is not copied or rewritten",
+      "status": "PASS"
+    },
+    {
+      "name": "32 standalone backend leaves public wrangler untouched",
+      "status": "PASS"
+    },
+    {
+      "name": "33 private build contains no identity input or legacy email read",
+      "status": "PASS"
+    },
+    {
+      "name": "34 every private inline script compiles",
+      "status": "PASS"
+    }
+  ]
+}

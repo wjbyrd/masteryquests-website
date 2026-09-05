@@ -1,0 +1,32 @@
+[
+  {
+    "command": "node build/faculty-build-composer/tests/run_daily_challenges_v1_validation.js .",
+    "exitCode": 0
+  },
+  {
+    "command": "node build/faculty-build-composer/tests/run_guide_intro_validation.js .",
+    "exitCode": 0
+  },
+  {
+    "command": "node build/faculty-build-composer/tests/run_exam_navigation_boss_reveal_validation.js .",
+    "exitCode": 0
+  },
+  {
+    "command": "node audit_tools/managerial_ui_parity/run_validation.mjs .",
+    "exitCode": 0
+  },
+  {
+    "command": "node audit_tools/anonymous_telemetry_poc/run_validation.mjs .",
+    "exitCode": 0,
+    "originalExitCode": 1,
+    "baselineAdapted": true
+  },
+  {
+    "command": "node audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs .",
+    "exitCode": 0
+  },
+  {
+    "command": "node audit_tools/anonymous_telemetry_poc/run_regressions.mjs .",
+    "exitCode": 0
+  }
+]

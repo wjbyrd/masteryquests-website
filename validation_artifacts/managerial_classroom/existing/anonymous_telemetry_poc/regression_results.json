@@ -1,0 +1,93 @@
+{
+  "phase": "phaseAnonymousTelemetryPOC-v1",
+  "generatedAt": "2026-09-05T19:28:22.970Z",
+  "passed": 21,
+  "failed": 0,
+  "total": 21,
+  "results": [
+    {
+      "name": "A stale question/room and streak cannot enter fresh Standard lifecycle events",
+      "status": "PASS"
+    },
+    {
+      "name": "B same source resumes with same UUID/sequence/streak and no mode_selected",
+      "status": "PASS"
+    },
+    {
+      "name": "B pause deduplication pagehide then hidden",
+      "status": "PASS"
+    },
+    {
+      "name": "B pause deduplication hidden then pagehide",
+      "status": "PASS"
+    },
+    {
+      "name": "B BFCache restore allows a subsequent legitimate pagehide pause",
+      "status": "PASS"
+    },
+    {
+      "name": "C adapter records exactly one repair/bridge/retest trigger for stage transitions",
+      "status": "PASS"
+    },
+    {
+      "name": "D artifact awards distinguish new ownership, repeat grants and prior-run vault state",
+      "status": "PASS"
+    },
+    {
+      "name": "E raw and accepted attempts use engine branch, not response-time thresholds",
+      "status": "PASS"
+    },
+    {
+      "name": "E historical sourceEvent classifies lockouts even when v1 rapid_guess was false",
+      "status": "PASS"
+    },
+    {
+      "name": "H real client failure, retry, multi-batch flush and queue recovery",
+      "status": "PASS"
+    },
+    {
+      "name": "H simulated failure preserves exact event IDs before recovery",
+      "status": "PASS"
+    },
+    {
+      "name": "debug Close collapses and Fresh cannot create a throwaway or split mapped run",
+      "status": "PASS"
+    },
+    {
+      "name": "mastery report emits only when viewed",
+      "status": "PASS"
+    },
+    {
+      "name": "F durable terminal status complete survives lifecycle and delayed adaptive events",
+      "status": "PASS"
+    },
+    {
+      "name": "F durable terminal status timed_complete survives lifecycle and delayed adaptive events",
+      "status": "PASS"
+    },
+    {
+      "name": "F durable terminal status timed_ended_early survives lifecycle and delayed adaptive events",
+      "status": "PASS"
+    },
+    {
+      "name": "F durable terminal status riskReward_bust survives lifecycle and delayed adaptive events",
+      "status": "PASS"
+    },
+    {
+      "name": "F durable terminal status exam_ended_by_student survives lifecycle and delayed adaptive events",
+      "status": "PASS"
+    },
+    {
+      "name": "F data migration repairs old summaries and retains lifecycle reasons without rewriting attempts",
+      "status": "PASS"
+    },
+    {
+      "name": "G CSV preserves filtering, ordering, uniqueness and exposes artifact/accepted fields",
+      "status": "PASS"
+    },
+    {
+      "name": "privacy allowlist still rejects identifiers, arbitrary text and mistyped new extras",
+      "status": "PASS"
+    }
+  ]
+}

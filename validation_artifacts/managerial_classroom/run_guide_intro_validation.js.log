@@ -1,0 +1,29 @@
+PASS default plus three official faculty themes remain
+PASS arcane-archive guide identity
+PASS market-citadel guide identity
+PASS managerial-cost-directive guide identity
+PASS custom guide name is used with custom guide art
+PASS blank custom guide name falls back to Guide
+PASS Guide Name is a faculty-facing optional field
+PASS guide name survives recipe migration
+PASS legacy National Ledger recipes migrate to Cost Directive
+PASS generated config contains the normalized shared guide config
+PASS cutscene markup is full-screen and accessible
+PASS cutscene uses the same guide slot as gameplay
+PASS first-time state is namespaced and persistent
+PASS mode preflight runs before the first-time guide gate
+PASS gameplay initialization waits until after the guide gate
+PASS Proceed starts the exact selected mode once
+PASS seen players bypass the introduction
+PASS Game Menu exposes replay
+PASS replay does not initialize or reset a mode
+{
+  "ok": true,
+  "checks": 19,
+  "facultyThemes": [
+    "arcane-archive",
+    "market-citadel",
+    "managerial-cost-directive"
+  ]
+}
+
