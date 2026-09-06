@@ -1,0 +1,550 @@
+{
+  "uniqueBefore": 851,
+  "uniqueAfter": 851,
+  "revised": 128,
+  "contentRevised": 110,
+  "graphReferenceRevised": 23,
+  "graphReferenceOnly": 18,
+  "retained": 723,
+  "added": 0,
+  "removed": 0,
+  "revisedByConcept": {
+    "scarcity-and-tradeoffs": 8,
+    "opportunity-cost": 14,
+    "marginal-analysis": 12,
+    "incentives": 3,
+    "gains-from-trade": 13,
+    "models-and-assumptions": 15,
+    "production-possibilities-frontier": 28,
+    "micro-versus-macro": 11,
+    "positive-versus-normative-analysis": 12,
+    "economist-policy-role": 12
+  },
+  "revisedByDifficulty": {
+    "legendary": 103,
+    "hard": 12,
+    "elite": 4,
+    "medium": 9
+  },
+  "revisedByPool": {
+    "legendary": 101,
+    "legendaryBoss": 2,
+    "hard": 8,
+    "elite": 4,
+    "medium": 5,
+    "calculation": 8
+  },
+  "graphCount": 29,
+  "oldLibraryHash": "c95ec10ebc15a8d507b563b471255b04b0dcc88d1f7510361a10fa71c8a39855",
+  "newLibraryHash": "098bf47591ab9b39091130336b8c2ab368716407ea215257c1ae374684bd6c85",
+  "metadataExceptions": [
+    {
+      "id": "P73-MARG-L-013",
+      "field": "commonError",
+      "reason": "Correct diagnostic prose to match repaired complementary-step arithmetic; route IDs unchanged."
+    },
+    {
+      "id": "ECON-MG-MEDIUM-150",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-MEDIUM-151",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-MEDIUM-152",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-MEDIUM-157",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-MEDIUM-158",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-HARD-253",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-HARD-254",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-HARD-256",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-HARD-257",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-EC-LEGENDARY-14007",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9000",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9001",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9002",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9003",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9004",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-HARD-250",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-HARD-251",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-HARD-252",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-HARD-255",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-MEDIUM-153",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-MEDIUM-154",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-MEDIUM-155",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    },
+    {
+      "id": "ECON-MG-MEDIUM-156",
+      "field": "image",
+      "reason": "Correct legacy source path to existing approved runtime asset; no new asset or eligibility."
+    }
+  ],
+  "compositionCounts": {
+    "easy": 92,
+    "medium": 103,
+    "hard": 107,
+    "elite": 46,
+    "legendary": 191,
+    "easyBoss": 38,
+    "mediumBoss": 38,
+    "finalBoss": 38,
+    "legendaryBoss": 68,
+    "repair": 69,
+    "repairSeed": 10,
+    "bridge": 51,
+    "calculation": 15,
+    "integration": 0,
+    "challengeOpening": 0,
+    "challengeMiddle": 0,
+    "challengeFinal": 0,
+    "challengeLegendary": 0,
+    "challengeTotal": 0,
+    "graph": 29,
+    "graphSafe": 29,
+    "graphSafeByDifficulty": {
+      "easy": 0,
+      "medium": 10,
+      "hard": 10,
+      "elite": 2,
+      "legendary": 7
+    },
+    "fadingFortuneEligible": 539,
+    "fadingFortuneByDifficulty": {
+      "easy": 92,
+      "medium": 103,
+      "hard": 107,
+      "elite": 46,
+      "legendary": 191
+    },
+    "riskRewardEligible": 539,
+    "riskRewardByDifficulty": {
+      "easy": 92,
+      "medium": 103,
+      "hard": 107,
+      "elite": 46,
+      "legendary": 191
+    },
+    "assets": 3,
+    "totalCanonical": 851
+  },
+  "modeValidation": {
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 92
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 103
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 107
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 38
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 38
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 38
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 69
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 51
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 92
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 103
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 107
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 69
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 51
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 92
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 103
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 107
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 69
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 51
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 92
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 103
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 107
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 92
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 103
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 107
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 69
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 51
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 191
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 68
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 92
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 103
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 107
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 38
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 38
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 38
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 69
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 51
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 29
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 539
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 539
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ]
+  },
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 851,
+    "issues": []
+  },
+  "warnings": [],
+  "graphAssets": [
+    {
+      "conceptId": "production-possibilities-frontier",
+      "filename": "PPF-01.webp",
+      "sourceAssetPath": "question-assets/production-possibilities-frontier/PPF-01.webp",
+      "sourceUrl": "data/question-assets/production-possibilities-frontier/PPF-01.webp",
+      "runtimePath": "question-assets/production-possibilities-frontier/PPF-01.webp",
+      "sha256": "db35510e997538217073a76b85ccde397b9c4521336289a003c5464e50ae40eb",
+      "sizeBytes": 40410,
+      "imageAlt": "A bowed PPF0 has pizzas on the horizontal axis and robots on the vertical axis. Point A is at 20 pizzas and 120 robots; point B is at 60 pizzas and 80 robots. The frontier reaches about 125 robots at zero pizzas and 100 pizzas at zero robots.",
+      "graphDescription": "A bowed PPF0 has pizzas on the horizontal axis and robots on the vertical axis. Point A is at 20 pizzas and 120 robots; point B is at 60 pizzas and 80 robots. The frontier reaches about 125 robots at zero pizzas and 100 pizzas at zero robots.",
+      "sourceCurationPhase": "phase3e-market-gate-graph-sync-v1"
+    },
+    {
+      "conceptId": "production-possibilities-frontier",
+      "filename": "PPF-02.webp",
+      "sourceAssetPath": "question-assets/production-possibilities-frontier/PPF-02.webp",
+      "sourceUrl": "data/question-assets/production-possibilities-frontier/PPF-02.webp",
+      "runtimePath": "question-assets/production-possibilities-frontier/PPF-02.webp",
+      "sha256": "fa8d2d2a3f3cb8f83f83af2a9a2b73dde140e752eecbdeda9baf15a01e4f9b45",
+      "sizeBytes": 52892,
+      "imageAlt": "Burgers are on the horizontal axis and fries on the vertical axis. Bowed PPF0 includes A at 10 burgers and 120 fries and B at 30 burgers and 80 fries. Dashed PPF1 lies outside PPF0, reaching about 150 fries at zero burgers and 60 burgers at zero fries.",
+      "graphDescription": "Burgers are on the horizontal axis and fries on the vertical axis. Bowed PPF0 includes A at 10 burgers and 120 fries and B at 30 burgers and 80 fries. Dashed PPF1 lies outside PPF0, reaching about 150 fries at zero burgers and 60 burgers at zero fries.",
+      "sourceCurationPhase": "phase3e-market-gate-graph-sync-v1"
+    },
+    {
+      "conceptId": "production-possibilities-frontier",
+      "filename": "ppf.webp",
+      "sourceAssetPath": "question-assets/ppf.webp",
+      "sourceUrl": "data/question-assets/production-possibilities-frontier/ppf.webp",
+      "runtimePath": "question-assets/production-possibilities-frontier/ppf.webp",
+      "sha256": "961e4a0c034de2ee5662f004cb0a343825290ca663dbe80b9ae6ad7dd0617a5a",
+      "sizeBytes": 41172,
+      "imageAlt": "Production possibilities graph with points A through G.",
+      "graphDescription": "The horizontal axis is Good X and the vertical axis is Good Y. A bowed-out frontier passes through A at (0, 50), B at (8, 45), C at (15, 35), D at (21, 20), and E at (25, 0). F is inside the frontier near (8, 20), and G is outside it near (21, 48)."
+    }
+  ],
+  "graphValidation": {
+    "ok": true,
+    "questionCount": 29,
+    "assetCount": 3,
+    "issues": []
+  },
+  "conceptReviewRoutesUnchanged": true,
+  "unrelatedModulesUnchanged": 139
+}

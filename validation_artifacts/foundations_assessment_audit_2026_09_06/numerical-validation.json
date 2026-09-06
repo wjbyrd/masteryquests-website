@@ -1,0 +1,383 @@
+{
+  "questions": 45,
+  "checks": 75,
+  "passed": true,
+  "method": "Independent recomputation of the authored numeric relationships and feasible-choice comparisons, in addition to manual units/direction/distractor review; answer hashes are checked separately.",
+  "results": [
+    {
+      "id": "P52A-OPPC-L-001",
+      "check": "max(32000-4000,24000)+9000 == 37000",
+      "passed": true
+    },
+    {
+      "id": "P52A-OPPC-L-003",
+      "check": "max(90,52+46)==98",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-005",
+      "check": "max(29000-5000,20000+6000)==26000",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-006",
+      "check": "max(18000,25000-9000)==18000",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-007",
+      "check": "max(15,9+9)+2==20",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-008",
+      "check": "max(80,47,40)==80",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-009",
+      "check": "max(44000-8000,53000-19000)+7000==43000",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-010",
+      "check": "76-61==15",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-010",
+      "check": "76-16<61",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-010",
+      "check": "76-14>61",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-012",
+      "check": "max(96000,82000+20000)-max(96000,82000)==6000",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-014",
+      "check": "90*(1/2+1/6)==60",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-017",
+      "check": "150*40/100+12==72",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-019",
+      "check": "41000-max(38000-9000,31000)==10000",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-024",
+      "check": "4-3==1",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-024",
+      "check": "4-5==-1",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-024",
+      "check": "8-(3+5)==0",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-025",
+      "check": "max(94000-21000,77000)==77000",
+      "passed": true
+    },
+    {
+      "id": "P72-OPPC-L-025",
+      "check": "max(94000-(21000-6000),77000)==79000",
+      "passed": true
+    },
+    {
+      "id": "P52A-MARG-L-002",
+      "check": "1.5-(6-7)==2.5",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-013",
+      "check": "max([0,2,2+.7,2+.7-.4,2+.7-.4+.6])==2+.7-.4+.6",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-013",
+      "check": "abs((-.4+.6)-.2)<1e-9",
+      "passed": true
+    },
+    {
+      "id": "P52A-MARG-L-001",
+      "check": "[0,14-9,14+8-9-12,14+8+19-9-12-10]==[0,5,1,10]",
+      "passed": true
+    },
+    {
+      "id": "P52A-MARG-L-004",
+      "check": "320+410-350-340==40",
+      "passed": true
+    },
+    {
+      "id": "P52A-MARG-L-004",
+      "check": "320-350==-30",
+      "passed": true
+    },
+    {
+      "id": "P52A-MARG-L-004",
+      "check": "410-340==70",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-006",
+      "check": "88-42-35==11",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-006",
+      "check": "(88-12)-(42-8)-35==7",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-009",
+      "check": "18-10-9==-1",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-009",
+      "check": "18+13-10-11-9==1",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-011",
+      "check": "(688000-610000)+9000-(970000-900000)==17000",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-014",
+      "check": "9-7-3==-1",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-015",
+      "check": "490+140+160-760==30",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-017",
+      "check": "60000/100000==.6",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-019",
+      "check": "892-840-(655-610)==7",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-019",
+      "check": "930-892-(699-655)==-6",
+      "passed": true
+    },
+    {
+      "id": "P73-MARG-L-024",
+      "check": "(70000+20000)/500000==.18",
+      "passed": true
+    },
+    {
+      "id": "P52B-TRADE-L-001",
+      "check": "36/12==3",
+      "passed": true
+    },
+    {
+      "id": "P52B-TRADE-L-001",
+      "check": "20/10==2",
+      "passed": true
+    },
+    {
+      "id": "P52B-TRADE-L-001",
+      "check": "[r for r in [2.25,2,2.75,3] if 2<r and r+.5<3]==[2.25]",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-007",
+      "check": "2+1==3",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-007",
+      "check": "1/5<1/4<1/3",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-008",
+      "check": "[m for m in [4,3,5,2] if 30-3*m>16 and m>3]==[4]",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-010",
+      "check": "7-2==5",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-010",
+      "check": "6+2>7",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-010",
+      "check": "3<4 and 4+2<7",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-012",
+      "check": "24/8==3",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-012",
+      "check": "24/16==1.5",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-012",
+      "check": "18/9==2",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-012",
+      "check": "1.5<1.75<2",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-013",
+      "check": "24/12>1.5",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-015",
+      "check": "(2*40)/(2*10)==40/10==4",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-016",
+      "check": "24-5-7==12",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-016",
+      "check": "15-5-7==3",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-016",
+      "check": "24-15==9",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-017",
+      "check": "abs((1/2-2/6)-1/6)<1e-9",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-023",
+      "check": "24/8==3",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-023",
+      "check": "15/10==1.5",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-023",
+      "check": "24/16==1.5",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-023",
+      "check": "1.5<2<3",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-024",
+      "check": "1/3-.05>.25",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-024",
+      "check": "1/3<.5",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-026",
+      "check": "23-18==5",
+      "passed": true
+    },
+    {
+      "id": "P75-TRADE-L-026",
+      "check": "13-2-10==1",
+      "passed": true
+    },
+    {
+      "id": "P52B-TRADE-LB-001",
+      "check": "[r for r in [2.8,2.5,2.4,3] if r-2-.4>0 and 3-r>0 and r-2-.4>3-r]==[2.8]",
+      "passed": true
+    },
+    {
+      "id": "ECON-EC-LEGENDARY-14007",
+      "check": "(50-45)/(8-0)<2",
+      "passed": true
+    },
+    {
+      "id": "ECON-EC-LEGENDARY-14007",
+      "check": "(20-0)/(25-21)>2",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9000",
+      "check": "max(x for x,y in [(0,50),(8,45),(15,35),(21,20),(25,0)] if y>=30)==15",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9000",
+      "check": "45-35==10",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9002",
+      "check": "(21-15)*3-(35-20)==3",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9005",
+      "check": "4-2==2",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9005",
+      "check": "4-6==-2",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9005",
+      "check": "8-8==0",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9006",
+      "check": "12+20-2*12==8",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9014",
+      "check": "2*3==6",
+      "passed": true
+    }
+  ]
+}
