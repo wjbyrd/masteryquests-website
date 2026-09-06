@@ -17,7 +17,9 @@ export const NORMALIZED_FIELDS = [
   "masteryAttempts", "masteryCorrect", "masteryAccuracy", "synthetic"
 ];
 export const QA_EXTRA_FIELDS = ["sourceRunId", "lifecycleReason", "acceptedAttempt", "artifactName", "artifactSource",
-  "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned"];
+  "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned",
+  "wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"];
+const NUMERIC_EXTRAS = new Set(["wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"]);
 const BOOLEAN_EXTRAS = new Set(["acceptedAttempt", "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned"]);
 const ALLOWED_EXTRA_KEYS = new Set(["selectionReason", "weaknessEstimate", "sourceEvent", ...QA_EXTRA_FIELDS]);
 
@@ -142,7 +144,10 @@ export function normalizeEvent(event, index = 0) {
     if (NORMALIZED_FIELDS.includes(key)) continue;
     assert(ALLOWED_EXTRA_KEYS.has(key), `events[${index}].${key} is not an accepted research field`);
     if (QA_EXTRA_FIELDS.includes(key)) {
-      if (BOOLEAN_EXTRAS.has(key)) {
+      if (NUMERIC_EXTRAS.has(key)) {
+        assert(typeof value === "number", key + " must be numeric");
+        extras[key] = cleanNumber(value, key, { min: 0, integer: key === "removedOptionIndex" || key === "remainingOptionCount" });
+      } else if (BOOLEAN_EXTRAS.has(key)) {
         assert(value === null || typeof value === "boolean", `${key} must be boolean or null`);
         extras[key] = value;
       } else extras[key] = cleanString(value, key);
@@ -225,8 +230,27 @@ export function reconstructRun(events) {
   const correct = answers.filter(event => Boolean(valueOf(event, "correct", "correct"))).length;
   const completion = ordered.findLast ? ordered.findLast(event => typeOf(event) === "run_completed") : [...ordered].reverse().find(event => typeOf(event) === "run_completed");
   const mastery = [...ordered].reverse().find(event => typeOf(event) === "mastery_report_summary_emitted");
+  const wagerHistory = ordered.filter(event => typeOf(event) === "risk_reward_wager_committed").map(event => ({
+    questionId: valueOf(event, "questionId", "question_id") || "", position: Number(event.position || 0),
+    sequenceNumber: Number(valueOf(event, "sequenceNumber", "sequence_number")),
+    wagerAmount: eventExtras(event).wagerAmount ?? null, scoreBeforeWager: eventExtras(event).scoreBeforeWager ?? null
+  }));
+  const fadedQuestions = new Set();
+  let fadedOptionsRemoved = 0;
+  let answersSubmittedAfterFade = 0;
+  for (const event of ordered) {
+    const key = JSON.stringify([Number(event.position || 0), valueOf(event, "questionId", "question_id") || ""]);
+    if (typeOf(event) === "fading_fortune_option_removed") { fadedOptionsRemoved++; fadedQuestions.add(key); }
+    if (typeOf(event) === "answer_submitted" && fadedQuestions.has(key)) answersSubmittedAfterFade++;
+  }
   return {
     phase: PHASE,
+    wagerHistory,
+    wagerCount: wagerHistory.length,
+    totalWager: wagerHistory.reduce((sum, wager) => sum + Number(wager.wagerAmount || 0), 0),
+    fadedOptionsRemoved,
+    questionsWithFading: fadedQuestions.size,
+    answersSubmittedAfterFade,
     runId: valueOf(first, "runId", "run_id") || "",
     anonymousClientId: valueOf(first, "anonymousClientId", "anonymous_client_id") || "",
     gameId: valueOf(first, "gameId", "game_id") || "",

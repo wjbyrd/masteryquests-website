@@ -5847,6 +5847,10 @@ function performFadingFortuneFade(){
     }
     const announce = document.getElementById('srAnnouncements');
     if(announce) announce.innerText = `One incorrect option has faded. Question now worth ${fadingFortuneQuestionValue} points.`;
+    sendGameData({runID,event:"fading_fortune_option_removed",room,
+        questionId:currentQuestion?.id || currentQuestion?.questionId || '',
+        removedOptionIndex:choiceIndex,remainingOptionCount:currentQuestion.options.length - fadingFortuneFadedChoices.size,
+        elapsedTime:getElapsedTimeMs()});
     fadingFortuneEvents.push({event:'fade',questionId:currentQuestion?.id || currentQuestion?.questionId || '',value:fadingFortuneQuestionValue,fadeCount:fadingFortuneFadeCount,elapsedTime:startTime ? Date.now()-startTime : 0});
     if(fadingFortuneFadeCount < 3) scheduleFadingFortuneFade(fadingFortuneIntervalMs);
 }
@@ -6159,6 +6163,10 @@ function lockRiskRewardWager(ratio){
     riskRewardWagerCounts[tier] = (riskRewardWagerCounts[tier] || 0) + 1;
     if(tier === 'ALL IN') riskRewardAllInAttempts++;
     riskRewardLargestWager = Math.max(riskRewardLargestWager, riskRewardCurrentWager);
+    sendGameData({runID,event:"risk_reward_wager_committed",room,
+        questionId:currentQuestion?.id || currentQuestion?.questionId || '',
+        wagerAmount:riskRewardCurrentWager,scoreBeforeWager:riskRewardBankrollBeforeWager,
+        elapsedTime:getElapsedTimeMs()});
     riskRewardEvents.push({event:'wager',questionId:currentQuestion?.id || currentQuestion?.questionId || '',bankrollBefore:riskRewardBankrollBeforeWager,wagerAmount:riskRewardCurrentWager,wagerRatio:cleanRatio,wagerTier:tier,difficulty:currentQuestion?.__mqDifficulty || currentQuestion?.canonicalDifficulty || currentQuestion?.difficulty || ''});
     updateRiskRewardHud();
     renderRiskRewardQuestion();
@@ -8158,7 +8166,7 @@ function loadQuestion() {
     // 1. Determine Difficulty and Boss Status
 	let diff = getDifficultyForMode();
 
-   const isBoss = diff.includes("Boss") && gameMode !== "exam" && gameMode !== "timed" && gameMode !== "unlimited";
+   const isBoss = diff.includes("Boss") && gameMode !== "timed" && gameMode !== "unlimited";
 
    // Only reset health if the bossPool is currently empty (meaning a new encounter)
      if (isBoss && (!bossPool || bossPool.length === 0)) {
@@ -8213,6 +8221,8 @@ function loadQuestion() {
         document.getElementById("areaDisplay").innerText = `${getModeDisplayName()} — ${getAreaName(roomCap)} (${roomCap}/30)`;
         document.getElementById("srAnnouncements").innerText = `Entering ${getModeDisplayName()}. ${getAreaName(roomCap)}. Room ${roomCap} of 30.`;
     }
+
+    if(gameMode === "exam" && loadExamDrillQuestion()) return;
 
     // 3. Select the Question (CHANGE BOSS NAMES AND PNG)
 if (isBoss) {
@@ -8489,6 +8499,11 @@ function displayQuestion() {
         const btn = document.createElement("button");
         btn.innerText = option;
         btn.dataset.answerIndex = String(index);
+        if(gameMode === "exam" && isExamOrdinaryRoom(room)){
+            const selected = getExamRoomState(room)?.selectedIndex === index;
+            btn.classList.toggle("selected", selected);
+            btn.setAttribute("aria-pressed", selected ? "true" : "false");
+        }
         btn.setAttribute("aria-label", `Answer option: ${option}`);
         if(modeUsesFadingFortune() && fadingFortuneFadedChoices.has(index)){
             btn.disabled = true;
@@ -8620,6 +8635,12 @@ async function answer(choice) {
             text: "The answer could not be verified. The question is still active; close this message and try again.",
             confirmText: "Return to Question"
         });
+        return;
+    }
+
+    if(gameMode === "exam"){
+        if(isExamOrdinaryRoom(room)) recordExamDraftAnswer(choice, isCorrect, responseTime);
+        else recordManagerialExamCheckpointAnswer(choice, isCorrect, responseTime);
         return;
     }
 

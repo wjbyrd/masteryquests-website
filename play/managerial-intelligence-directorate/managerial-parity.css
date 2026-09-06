@@ -219,3 +219,35 @@ body.guide-intro-active .daily-toast-region,body.boss-reveal-active .daily-toast
 #question .bossIcon + .boss-title {
   text-shadow: none;
 }
+
+/* Current Composer Exam Drill navigation and selected responses. */
+button.maze-box.exam-nav-room{
+    appearance:none;
+    padding:0;
+    color:#eef6ff;
+    font:800 14px/1 'Rajdhani',Arial,sans-serif;
+    cursor:pointer;
+}
+button.maze-box.exam-nav-room:hover,
+button.maze-box.exam-nav-room:focus-visible{
+    border-color:#8bdcff;
+    box-shadow:0 0 0 3px rgba(56,189,248,.18),0 0 14px rgba(56,189,248,.42);
+    outline:none;
+}
+button.maze-box.exam-nav-room.exam-answered{background:linear-gradient(180deg,rgba(52,56,112,.9),rgba(14,18,52,.98));border-color:rgba(165,180,252,.68)}
+button.maze-box.exam-nav-room.exam-unanswered{background:linear-gradient(180deg,rgba(30,58,88,.78),rgba(2,10,24,.98))}
+button.maze-box.exam-nav-room.exam-boss-ready{background:linear-gradient(180deg,rgba(154,104,26,.92),rgba(55,31,4,.98));border-color:#f7d982;box-shadow:0 0 16px rgba(247,217,130,.42)}
+button.maze-box.exam-nav-room:disabled{cursor:not-allowed;opacity:.34;filter:saturate(.35)}
+.maze-box.exam-committed{opacity:.58;background:linear-gradient(180deg,rgba(19,57,86,.72),rgba(3,10,24,.96));border-color:rgba(247,217,130,.28)}
+#answers button.selected,#answers button[aria-pressed="true"]{border-color:#f7d982!important;background:linear-gradient(180deg,rgba(30,78,110,.96),rgba(8,33,56,.98))!important;box-shadow:0 0 0 3px rgba(247,217,130,.16),0 0 18px rgba(56,189,248,.34)!important}
+
+
+/* Existing Game Menu launcher: readable utility action and mobile touch target. */
+body #returnMenuBtn.return-menu-btn {
+  min-height:44px!important;padding:11px 16px!important;font-size:13px!important;
+  line-height:1.25!important;border-radius:10px!important;
+  color:#e0f2fe!important;border:1px solid rgba(56,189,248,.38)!important;
+  background:linear-gradient(180deg,rgba(18,48,79,.96),rgba(4,16,31,.98))!important;
+}
+#anonymousTelemetryDisclosure {width:100%;color:#e0f2fe;font:13px/1.5 system-ui,sans-serif;text-align:left}
+#anonymousTelemetryDisclosure p {margin:10px 0 0}

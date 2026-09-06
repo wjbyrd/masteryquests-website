@@ -38,10 +38,14 @@ export function classroomClient(root){
  const disclosureStart=s.indexOf('  function addDisclosure()');
  const debugEnd=s.indexOf('  function pauseForLifecycle(',disclosureStart);
  s=s.slice(0,disclosureStart)+`  function addDisclosure() {
-    const disclosure = document.createElement("details");
+    const disclosure = document.createElement("div");
     disclosure.id = "anonymousTelemetryDisclosure";
-    disclosure.style.cssText = "margin-top:12px;color:#e0f2fe;font:13px/1.5 system-ui,sans-serif;text-align:left";
-    disclosure.innerHTML = "<summary style='cursor:pointer'>About this class build</summary><p>${disclosure}</p>";
+    disclosure.innerHTML = "<button type='button' class='game-menu-option' aria-expanded='false' aria-controls='anonymousTelemetryDetails'>About this class build</button><p id='anonymousTelemetryDetails' hidden>This private class build records anonymous gameplay activity to help evaluate and improve the game. It does not collect your name, email, student ID, or course identity.</p>";
+    disclosure.querySelector("button").onclick = event => {
+      const details = disclosure.querySelector("p");
+      details.hidden = !details.hidden;
+      event.currentTarget.setAttribute("aria-expanded", String(!details.hidden));
+    };
     document.getElementById("gameMenuOptions")?.appendChild(disclosure);
   }
 
@@ -56,6 +60,8 @@ export function classroomClient(root){
 
   function readJSON(key, fallback) {`);
  s=s.replace('let value = safeStorageGet(CLIENT_KEY);','let value = memoryClientId || safeStorageGet(CLIENT_KEY);').replace('    return value;\n  }\n\n  function nextSequence','    memoryClientId = value;\n    return value;\n  }\n\n  function nextSequence');
+ s=s.replace('"artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned"\n',
+   '"artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned",\n        "wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"\n');
  return s;
 }
 export function build(root){

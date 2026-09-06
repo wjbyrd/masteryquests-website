@@ -216,7 +216,8 @@
         "streak", "dailyProgress", "artifact", "completionStatus", "masteryAttempts", "masteryCorrect",
         "masteryAccuracy", "selectionReason", "weaknessEstimate", "sourceEvent",
         "sourceRunId", "lifecycleReason", "acceptedAttempt", "artifactName", "artifactSource",
-        "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned"
+        "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned",
+        "wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"
       ]) {
         if (Object.prototype.hasOwnProperty.call(fields, key)) safeOverrides[key] = fields[key];
       }
@@ -441,10 +442,14 @@
   }
 
   function addDisclosure() {
-    const disclosure = document.createElement("details");
+    const disclosure = document.createElement("div");
     disclosure.id = "anonymousTelemetryDisclosure";
-    disclosure.style.cssText = "margin-top:12px;color:#e0f2fe;font:13px/1.5 system-ui,sans-serif;text-align:left";
-    disclosure.innerHTML = "<summary style='cursor:pointer'>About this class build</summary><p>This private class build records anonymous gameplay activity to help evaluate and improve the game. It does not collect your name, email, student ID, or course identity.</p>";
+    disclosure.innerHTML = "<button type='button' class='game-menu-option' aria-expanded='false' aria-controls='anonymousTelemetryDetails'>About this class build</button><p id='anonymousTelemetryDetails' hidden>This private class build records anonymous gameplay activity to help evaluate and improve the game. It does not collect your name, email, student ID, or course identity.</p>";
+    disclosure.querySelector("button").onclick = event => {
+      const details = disclosure.querySelector("p");
+      details.hidden = !details.hidden;
+      event.currentTarget.setAttribute("aria-expanded", String(!details.hidden));
+    };
     document.getElementById("gameMenuOptions")?.appendChild(disclosure);
   }
 

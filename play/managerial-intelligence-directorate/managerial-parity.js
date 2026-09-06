@@ -876,7 +876,13 @@ window.buildBossQuestionSet=function(bank,diff,objective,...args){
 };
 const managerialDisplayQuestion=window.displayQuestion;
 window.displayQuestion=function(...args){
-    const render=()=>managerialDisplayQuestion.apply(this,args);
+    const render=()=>{
+        const result=managerialDisplayQuestion.apply(this,args);
+        if(gameMode === 'exam' && isBossRoomForMode(room)){
+            document.getElementById('bossMessage').innerText = 'CHECKPOINT QUESTION ' + (4 - bossHealth) + ' OF 3';
+        }
+        return result;
+    };
     if(openBossReveal(render))return;
     return render();
 };
@@ -903,3 +909,339 @@ document.addEventListener('keydown',event=>{
     else if(activeBossReveal){event.preventDefault();proceedBossReveal();}
     else if(!document.getElementById('gameMenuOptions').hidden){event.preventDefault();closeGameModal();}
 });
+
+// Exam Drill state/navigation ported from the current Composer template.
+const EXAM_DRILL_SECTIONS = Object.freeze([
+    Object.freeze({index:0,start:1,end:9,boss:10,difficulty:"easy",bossDifficulty:"easyBoss"}),
+    Object.freeze({index:1,start:11,end:19,boss:20,difficulty:"medium",bossDifficulty:"mediumBoss"}),
+    Object.freeze({index:2,start:21,end:29,boss:30,difficulty:"hard",bossDifficulty:"finalBoss"})
+]);
+let examDrillState = null;
+
+function createExamDrillState(){
+    return {
+        sections:EXAM_DRILL_SECTIONS.map(section => ({...section,committed:false,allAnsweredAt:0,committedAt:0})),
+        rooms:{},
+        activeRoom:null
+    };
+}
+
+function resetExamDrillState(){
+    examDrillState = createExamDrillState();
+}
+
+function getExamSectionForRoom(roomNumber){
+    return EXAM_DRILL_SECTIONS.find(section => roomNumber >= section.start && roomNumber <= section.boss) || null;
+}
+
+function getExamSectionState(roomNumber = room){
+    if(!examDrillState) resetExamDrillState();
+    const section = getExamSectionForRoom(roomNumber);
+    return section ? examDrillState.sections[section.index] : null;
+}
+
+function isExamOrdinaryRoom(roomNumber){
+    const section = getExamSectionForRoom(roomNumber);
+    return !!section && roomNumber >= section.start && roomNumber <= section.end;
+}
+
+function getExamRoomState(roomNumber, create = false){
+    if(!examDrillState) resetExamDrillState();
+    if(!examDrillState.rooms[roomNumber] && create){
+        examDrillState.rooms[roomNumber] = {
+            question:null,
+            selectedIndex:null,
+            initialSelectedIndex:null,
+            initialCorrect:null,
+            finalCorrect:null,
+            revisionCount:0,
+            viewedCount:0,
+            firstViewedAt:0,
+            viewStartedAt:0,
+            totalViewMs:0
+        };
+    }
+    return examDrillState.rooms[roomNumber] || null;
+}
+
+function isExamSectionComplete(sectionState){
+    if(!sectionState) return false;
+    for(let roomNumber = sectionState.start; roomNumber <= sectionState.end; roomNumber++){
+        if(getExamRoomState(roomNumber)?.selectedIndex === null || getExamRoomState(roomNumber)?.selectedIndex === undefined) return false;
+    }
+    return true;
+}
+
+function finalizeExamRoomView(nextRoom = null){
+    if(gameMode !== "exam" || !examDrillState?.activeRoom) return;
+    const previousRoom = examDrillState.activeRoom;
+    const state = getExamRoomState(previousRoom);
+    if(state?.viewStartedAt){
+        state.totalViewMs += Math.max(0, Date.now() - state.viewStartedAt);
+        state.viewStartedAt = 0;
+    }
+    if(nextRoom !== null && nextRoom !== previousRoom){
+        sendGameData({
+            runID,event:"exam_navigation",room:previousRoom,questionId:state?.question?.id || 0,
+            examSection:getExamSectionForRoom(previousRoom)?.index + 1,
+            examNavigationFrom:previousRoom,examNavigationTo:nextRoom,
+            examReturnVisit:0,examSkippedRevisit:0,examReviewTimeMs:state?.totalViewMs || 0
+        });
+    }
+    examDrillState.activeRoom = null;
+}
+
+function navigateExamRoom(targetRoom){
+    if(gameMode !== "exam" || answerSubmissionPending || runEnding || !isExamOrdinaryRoom(targetRoom)) return false;
+    const targetSection = getExamSectionState(targetRoom);
+    const currentSection = getExamSectionState(room);
+    if(!targetSection || targetSection !== currentSection || targetSection.committed) return false;
+
+    const existing = getExamRoomState(targetRoom);
+    const isReturn = !!existing?.viewedCount;
+    const skippedRevisit = isReturn && existing.selectedIndex === null;
+    finalizeExamRoomView(targetRoom);
+    room = targetRoom;
+    sendGameData({
+        runID,event:"exam_navigation_arrive",room:targetRoom,questionId:existing?.question?.id || 0,
+        examSection:targetSection.index + 1,examNavigationTo:targetRoom,
+        examReturnVisit:isReturn ? 1 : 0,examSkippedRevisit:skippedRevisit ? 1 : 0
+    });
+    loadQuestion();
+    return true;
+}
+
+function selectExamQuestion(section){
+    const profile = getSelectionProfile();
+    const question = getAdaptiveQuestion(section.difficulty, getWeakestTag(), {
+        mode:"support",
+        preferredTypes:profile?.preferredTypes || [],
+        purpose:"exam-navigation"
+    });
+    const shuffled = shuffleOptions(question);
+    if(shuffled) shuffled.__mqDifficulty = section.difficulty;
+    return shuffled;
+}
+
+function loadExamDrillQuestion(){
+    const section = getExamSectionForRoom(room);
+    const sectionState = getExamSectionState(room);
+    if(!section || !sectionState || sectionState.committed || !isExamOrdinaryRoom(room)) return false;
+
+    finalizeExamRoomView(room);
+    const roomState = getExamRoomState(room, true);
+    if(!roomState.question) roomState.question = selectExamQuestion(section);
+    currentQuestion = roomState.question;
+    if(!currentQuestion){
+        showGameModal({title:"Question Selection Stopped",text:"Exam Drill could not select a valid question.",confirmText:"Return to Modes",onConfirm:returnToModeSelectFromRun});
+        return true;
+    }
+
+    const now = Date.now();
+    roomState.viewedCount++;
+    if(!roomState.firstViewedAt) roomState.firstViewedAt = now;
+    roomState.viewStartedAt = now;
+    examDrillState.activeRoom = room;
+    adaptiveMode = "exam-navigation";
+    renderQuestionGraph(currentQuestion);
+    wizardSpeak(getWizardLine(currentQuestion.type || "interpretation"));
+    document.getElementById("bossMessage").innerText = "";
+    document.getElementById("question").innerHTML = `<div>${currentQuestion.q}</div>`;
+    document.getElementById("formulaHint").innerText = currentQuestion.hint ? "💡 Hint: " + currentQuestion.hint : "";
+    document.getElementById("message").innerText = isExamSectionComplete(sectionState)
+        ? "All section questions have responses. Review freely, then enter the checkpoint when ready."
+        : "Select any room in this section. Responses remain revisable until you enter the checkpoint.";
+    displayQuestion();
+    updateMazeTrack();
+    return true;
+}
+
+function recordExamDraftAnswer(choice, isCorrect, responseTime){
+    const sectionState = getExamSectionState(room);
+    const roomState = getExamRoomState(room, true);
+    if(!sectionState || sectionState.committed || !isExamOrdinaryRoom(room)) return;
+
+    const previousChoice = roomState.selectedIndex;
+    const changed = previousChoice !== null && previousChoice !== choice;
+    if(roomState.initialSelectedIndex === null){
+        roomState.initialSelectedIndex = choice;
+        roomState.initialCorrect = !!isCorrect;
+    } else if(changed){
+        roomState.revisionCount++;
+    }
+    roomState.selectedIndex = choice;
+    roomState.finalCorrect = !!isCorrect;
+    if(isExamSectionComplete(sectionState) && !sectionState.allAnsweredAt) sectionState.allAnsweredAt = Date.now();
+
+    sendGameData({
+        runID,event:changed ? "exam_answer_revision" : "exam_answer_initial",room,
+        questionId:currentQuestion?.id || 0,selectedIndex:choice,correct:isCorrect ? 1 : 0,
+        tag:currentQuestion?.tag || "",type:currentQuestion?.type || "",objective:inferObjective(currentQuestion),
+        responseTime,examSection:sectionState.index + 1,
+        examInitialSelectedIndex:roomState.initialSelectedIndex,examFinalSelectedIndex:choice,
+        examRevisionCount:roomState.revisionCount,
+        examChangedCorrect:changed && !roomState.initialCorrect && isCorrect ? 1 : 0,
+        examChangedIncorrect:changed && roomState.initialCorrect && !isCorrect ? 1 : 0
+    });
+
+    answerSubmissionPending = false;
+    setAnswerButtonsDisabled(false);
+    displayQuestion();
+    updateMazeTrack();
+    document.getElementById("message").innerText = isExamSectionComplete(sectionState)
+        ? "All section questions have responses. Review freely, then enter the checkpoint when ready."
+        : "Response saved. You may revise it or choose another room.";
+    document.getElementById("srAnnouncements").innerText = `Response saved for Room ${room}.`;
+}
+
+function scoreCommittedExamResponse(roomNumber, roomState, sectionState){
+    const question = roomState.question;
+    const previousQuestion = currentQuestion;
+    currentQuestion = question;
+    const isCorrect = !!roomState.finalCorrect;
+    const responseTime = Math.max(0, roomState.totalViewMs);
+    Object.keys(conceptMemory).forEach(tag => { conceptMemory[tag] *= 0.95; });
+    totalAttempts++;
+    recordAdaptiveAttempt(question, isCorrect, responseTime);
+    if(isCorrect){
+        streak++;
+        correctAnswers++;
+        maxStreak = Math.max(maxStreak, streak);
+        if(question.tag) conceptMemory[question.tag] = Math.max(0, ((conceptMemory[question.tag] || 0) * .68) - .2);
+    } else {
+        streak = 0;
+        if(question.tag) conceptMemory[question.tag] = (conceptMemory[question.tag] || 0) + 1;
+    }
+    const changed = roomState.revisionCount > 0;
+    sendGameData({
+        runID,event:"question",room:roomNumber,questionId:question.id || 0,
+        selectedIndex:roomState.selectedIndex,correct:isCorrect ? 1 : 0,
+        tag:question.tag || "",type:question.type || "",objective:inferObjective(question),
+        responseTime,attempt:totalAttempts,streak,elapsedTime:getElapsedTimeMs(),adaptiveMode:"exam-commit",
+        examSection:sectionState.index + 1,examInitialSelectedIndex:roomState.initialSelectedIndex,
+        examFinalSelectedIndex:roomState.selectedIndex,examRevisionCount:roomState.revisionCount,
+        examReviewTimeMs:responseTime,
+        examChangedCorrect:changed && !roomState.initialCorrect && isCorrect ? 1 : 0,
+        examChangedIncorrect:changed && roomState.initialCorrect && !isCorrect ? 1 : 0,
+    });
+    currentQuestion = previousQuestion;
+}
+
+function commitExamSection(sectionState){
+    if(gameMode !== "exam" || !sectionState || sectionState.committed || !isExamSectionComplete(sectionState)) return false;
+    finalizeExamRoomView(sectionState.boss);
+    sectionState.committed = true;
+    sectionState.committedAt = Date.now();
+    for(let roomNumber = sectionState.start; roomNumber <= sectionState.end; roomNumber++){
+        scoreCommittedExamResponse(roomNumber, getExamRoomState(roomNumber), sectionState);
+    }
+    sendGameData({
+        runID,event:"exam_section_commit",room:sectionState.boss,examSection:sectionState.index + 1,
+        examReviewTimeMs:sectionState.allAnsweredAt ? Math.max(0, sectionState.committedAt - sectionState.allAnsweredAt) : 0
+    });
+    room = sectionState.boss;
+    bossHealth = 3;
+    bossPool = [];
+    loadQuestion();
+    return true;
+}
+
+function selectExamCheckpoint(roomNumber){
+    const sectionState = getExamSectionState(roomNumber);
+    return !answerSubmissionPending && !runEnding && sectionState === getExamSectionState(room) && roomNumber === sectionState.boss && commitExamSection(sectionState);
+}
+
+
+const managerialUpdateMazeTrack = window.updateMazeTrack;
+window.updateMazeTrack = function(){
+    const track = document.getElementById("mazeTrack");
+    if(gameMode === "exam") track.innerHTML = "";
+    if(gameMode === "exam"){
+        const activeSection = getExamSectionForRoom(room);
+        for(let i = 1; i <= 30; i++){
+            const section = getExamSectionForRoom(i);
+            const sectionState = getExamSectionState(i);
+            const isBoss = i === section?.boss;
+            const isCurrent = i === room;
+            const isActiveSection = section?.index === activeSection?.index;
+            const answered = !isBoss && getExamRoomState(i)?.selectedIndex !== null && getExamRoomState(i)?.selectedIndex !== undefined;
+            const bossReady = isBoss && isActiveSection && !sectionState.committed && isExamSectionComplete(sectionState);
+            const interactive = isActiveSection && !sectionState.committed && (!isBoss || bossReady);
+            const box = document.createElement(interactive ? "button" : "div");
+            box.className = "maze-box";
+            box.innerText = isBoss ? (i === 10 ? "I" : i === 20 ? "II" : "III") : String(i);
+            if(interactive){
+                box.type = "button";
+                box.classList.add("exam-nav-room",isBoss ? "exam-boss-ready" : answered ? "exam-answered" : "exam-unanswered");
+                box.onclick = () => isBoss ? selectExamCheckpoint(i) : navigateExamRoom(i);
+            } else {
+                box.setAttribute("role","img");
+                if(sectionState?.committed) box.classList.add("exam-committed");
+            }
+            if(isCurrent){ box.classList.add("active"); box.setAttribute("aria-current","step"); }
+            const stateLabel = isCurrent ? "current" : sectionState?.committed ? "committed" : isBoss ? (bossReady ? "available" : "locked") : answered ? "answered" : isActiveSection ? "unanswered" : "locked";
+            box.setAttribute("aria-label",`${isBoss ? "Checkpoint" : "Question"} ${i}, ${stateLabel}`);
+            track.appendChild(box);
+        }
+        return;
+    }
+
+    return managerialUpdateMazeTrack.apply(this, arguments);
+};
+const managerialBossRoom = window.isBossRoomForMode;
+window.isBossRoomForMode = function(roomNumber){
+    if(gameMode === "exam") return roomNumber === getExamSectionForRoom(roomNumber)?.boss;
+    return managerialBossRoom.apply(this, arguments);
+};
+const managerialDifficulty = window.getDifficultyForMode;
+window.getDifficultyForMode = function(){
+    if(gameMode === "exam"){
+        const section = getExamSectionForRoom(room);
+        return room === section?.boss ? section.bossDifficulty : (section?.difficulty || "easy");
+    }
+    return managerialDifficulty.apply(this, arguments);
+};
+const managerialExamStart = window.startGame;
+window.startGame = function(shouldResume=false, ...args){
+    if(!shouldResume) resetExamDrillState();
+    return managerialExamStart.call(this, shouldResume, ...args);
+};
+
+// Composer checkpoints consume three responses without immediate correctness feedback.
+// Reuse Managerial question selection, telemetry scoring, and the practice-results exit.
+function recordManagerialExamCheckpointAnswer(choice, isCorrect, responseTime){
+    const section = getExamSectionState(room);
+    if(!section?.committed || section.checkpointComplete) return;
+    scoreCommittedExamResponse(room, {
+        question:currentQuestion, selectedIndex:choice, initialSelectedIndex:choice,
+        initialCorrect:isCorrect, finalCorrect:isCorrect, revisionCount:0, totalViewMs:responseTime
+    }, section);
+    bossHealth = Math.max(0, bossHealth - 1);
+    document.getElementById("message").innerText = "Response recorded.";
+    if(bossHealth > 0){ scheduleForCurrentRun(loadQuestion, TIMING.boss); return; }
+    section.checkpointComplete = true;
+    recordBossDefeatForAchievements();
+    sendGameData({runID,event:"boss_defeated",room});
+    bossPool = [];
+    showKnowledgeRoom(room);
+}
+const managerialKnowledgeRoom = window.showKnowledgeRoom;
+window.showKnowledgeRoom = function(bossRoom){
+    if(gameMode !== "exam") return managerialKnowledgeRoom.apply(this, arguments);
+    playExplorationMusic();
+    document.getElementById("message").innerText = "";
+    document.getElementById("question").innerHTML = '<span class="boss-title">CHECKPOINT COMPLETE</span><div class="boss-q">Your responses have been recorded.</div>';
+    const answers = document.getElementById("answers");
+    answers.innerHTML = '<button id="continueBtn" class="continue-btn"></button>';
+    const button = document.getElementById("continueBtn");
+    button.textContent = bossRoom === 30 ? "VIEW RESULTS →" : 'CONTINUE TO ROOM ' + (bossRoom + 1) + ' →';
+    button.onclick = () => {
+        button.disabled = true;
+        if(bossRoom === 30) handlePracticeModeComplete();
+        else { room = bossRoom + 1; loadQuestion(); }
+    };
+    document.getElementById("gameShell").classList.remove("boss-mode");
+    document.getElementById("gameBox").classList.remove("boss-mode");
+    bossHealth = 3;
+    bossCheckpoint = bossRoom + 1;
+};
