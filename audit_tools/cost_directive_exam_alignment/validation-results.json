@@ -1,0 +1,78 @@
+{
+  "passed": [
+    "807 records before and after",
+    "Exact main, boss, repair and bridge IDs and order",
+    "Repair and bridge records unchanged",
+    "Exact schemas and all routing metadata unchanged",
+    "Every answer hash selects exactly one of four distinct choices",
+    "No new graph content or graph eligibility",
+    "Every revised question and feedback nonempty",
+    "All numeric expressions match independently specified expected results",
+    "No duplicate revised stems"
+  ],
+  "totalBefore": 807,
+  "totalAfter": 807,
+  "revised": 222,
+  "retained": 585,
+  "added": 0,
+  "removed": 0,
+  "byPool": {
+    "easy": {
+      "before": 90,
+      "after": 90,
+      "revised": 2,
+      "retained": 88
+    },
+    "medium": {
+      "before": 90,
+      "after": 90,
+      "revised": 4,
+      "retained": 86
+    },
+    "hard": {
+      "before": 90,
+      "after": 90,
+      "revised": 61,
+      "retained": 29
+    },
+    "elite": {
+      "before": 90,
+      "after": 90,
+      "revised": 60,
+      "retained": 30
+    },
+    "legendary": {
+      "before": 90,
+      "after": 90,
+      "revised": 64,
+      "retained": 26
+    },
+    "legendaryBoss": {
+      "before": 90,
+      "after": 90,
+      "revised": 31,
+      "retained": 59
+    },
+    "easyBoss": {
+      "before": 18,
+      "after": 18,
+      "revised": 0,
+      "retained": 18
+    },
+    "mediumBoss": {
+      "before": 12,
+      "after": 12,
+      "revised": 0,
+      "retained": 12
+    },
+    "finalBoss": {
+      "before": 21,
+      "after": 21,
+      "revised": 0,
+      "retained": 21
+    }
+  },
+  "numericRecords": 198,
+  "numericExpressions": 366,
+  "newTables": 10
+}

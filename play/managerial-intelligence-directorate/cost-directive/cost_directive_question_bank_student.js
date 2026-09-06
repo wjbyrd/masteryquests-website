@@ -149,12 +149,12 @@ const questionBanks = {
     {
       "id": 6,
       "sourceGame": "costDirective",
-      "q": "Which statement does not fit the rational-actor paradigm?",
+      "q": "A buyer declines a cheaper supplier because she values dependable delivery. Which claim about rational choice is mistaken?",
       "options": [
-        "People act purposefully when incentives change",
-        "People act unselfishly in every business decision",
-        "People usually compare benefits and costs",
-        "People try to make themselves better off"
+        "Reliability can be valuable even without a separate invoice.",
+        "Only the invoice price can enter a rational decision.",
+        "A buyer can weigh expected delay costs against price savings.",
+        "Different buyers can rationally value reliability differently."
       ],
       "tag": "rational_actor_paradigm",
       "type": "trap",
@@ -165,8 +165,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
       "commonError": "confuses_rational_with_altruistic",
-      "feedback": "The rational-actor model assumes people pursue their own objectives; it does not assume constant unselfishness.",
-      "aHash": "bddbd3529d6f87784dfee70ac07a2ad9ca7771f97e53d70a376e26df09b67680"
+      "feedback": "Purposeful choice can include time, reliability and other valued outcomes, not just the invoice price.",
+      "aHash": "0aa87b5c58a9e95e31e1f1ffd3f9c728a3d920dfed4ea66fe147509812cbc61f"
     },
     {
       "id": 7,
@@ -1215,11 +1215,11 @@ const questionBanks = {
     {
       "id": 52,
       "sourceGame": "costDirective",
-      "q": "A coffee shop adds wine service but ignores training and licensing costs. What mistake is this?",
+      "q": "A repair shop offers home pickup but leaves vehicle wear out of its cost estimate. Which error is this?",
       "options": [
         "Fixed-cost fallacy",
-        "Economies of scale",
-        "Accounting profit",
+        "Confusing total cost with average cost",
+        "Counting an opportunity cost twice",
         "Hidden-cost fallacy"
       ],
       "tag": "hidden_cost_fallacy",
@@ -1231,7 +1231,7 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "overlooks_new_relevant_costs",
-      "feedback": "Training and licensing are relevant costs created by the new choice.",
+      "feedback": "Vehicle wear caused by pickup is a relevant cost. Omitting it hides part of the cost of the service.",
       "aHash": "0057e633a04590aebeb4614f73f7c455a8447e9407486f3e07a02fc5f95d27f7"
     },
     {
@@ -2389,12 +2389,12 @@ const questionBanks = {
     {
       "id": 112,
       "sourceGame": "costDirective",
-      "q": "A regional manager opens stores in weak locations because bonuses are based on number of openings, not profitability. What problem should leadership investigate?",
+      "q": "Buyers earn bonuses for negotiating invoice discounts. Deliveries now fail inspection more often, although buyers receive defect reports. What should leadership investigate?",
       "options": [
-        "Whether the manager's incentives conflict with the firm's objective",
-        "Whether the manager needs more freedom to open stores faster",
-        "Whether weak locations can be hidden by opening more locations",
-        "Whether profitability should be ignored until every region expands"
+        "Whether bonuses account for the cost of defective deliveries",
+        "Whether buyers need access to the defect reports they already receive",
+        "Whether the invoice discounts should be made larger",
+        "Whether all supplier decisions should require the same order quantity"
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "application",
@@ -2405,8 +2405,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "managerial_problem_diagnosis",
       "commonError": "ignores_incentive_conflict",
-      "feedback": "Problem solving asks whether the decision maker had the right incentives and information for the firm's objective.",
-      "aHash": "b02961057916547aee5f562ebb0b63144972f5b3776340ad3ef006f5099b2f72"
+      "feedback": "The buyers already have defect information; the reward may still favor invoice savings over total cost.",
+      "aHash": "e3d0948d2c0794ac42f690728505468691f67f95f0365d44d58fe0c1063aba2f"
     },
     {
       "id": 113,
@@ -2545,12 +2545,12 @@ const questionBanks = {
     {
       "id": 119,
       "sourceGame": "costDirective",
-      "q": "A firm keeps unused office space because subleasing requires legal approval, search time, and tenant screening. These are examples of:",
+      "q": "A resale rule sets a minimum price above the usual clearing price. At that minimum, sellers offer 90 units and buyers request 60. What is this numerical mismatch?",
       "options": [
-        "fixed costs that always justify keeping the space",
-        "economies of scope from using two offices together",
-        "marginal benefits that rise when space is vacant",
-        "transaction costs that impede asset movement"
+        "A shortage of 30 units",
+        "A surplus of 60 units",
+        "A shortage of 90 units",
+        "A surplus of 30 units"
       ],
       "tag": "barriers_to_trade",
       "type": "identification",
@@ -2563,18 +2563,18 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "labels_transaction_cost_as_fixed_cost",
-      "feedback": "Search, negotiation, screening, and legal costs can prevent assets from moving to higher-valued uses.",
-      "aHash": "fcf31f884d61d59a35a1016fd451c5c7209a0f0c35c551bb1d6d233d4e8242fd"
+      "feedback": "Offered quantity exceeds requested quantity by 90 - 60 = 30 units. These stated quantities are sufficient; no graph is needed.",
+      "aHash": "c6728498d61f226fe9fd26a590f11bdb48a1375fdbe322992b3a85e9861993aa"
     },
     {
       "id": 120,
       "sourceGame": "costDirective",
-      "q": "A city requires months of permits before food trucks can transfer licenses to new owners. What is the likely economic effect?",
+      "q": "At a binding rental price cap, 140 equipment rentals are requested and 95 are offered. Which consequence follows directly?",
       "options": [
-        "Licenses may stay with lower-valued users longer than they otherwise would",
-        "Every license will automatically move to the highest-valued user",
-        "The permit delay eliminates scarcity in the food-truck market",
-        "The transfer rule creates wealth even when no trade occurs"
+        "There are 45 more requests than available rentals.",
+        "There are 45 unwanted rentals.",
+        "All 140 requests can be filled at the cap.",
+        "Raising the cap would necessarily create exactly 45 more rentals."
       ],
       "tag": "barriers_to_trade",
       "type": "application",
@@ -2587,8 +2587,8 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "assumes_regulation_is_costless",
-      "feedback": "Administrative frictions can block mutually beneficial trades and reduce wealth creation.",
-      "aHash": "726975073116f85470fffb5fa4bfd5a86a31b680d2f2f151a656f6b0c744cd62"
+      "feedback": "The shortage is 140 - 95 = 45 rentals. The supplied numbers do not establish how quantities would respond to another price.",
+      "aHash": "38bc9b2cb029ef8a00a5c8eabae82dbe31d8b47f150063d2f0e23e975d22474f"
     },
     {
       "id": 121,
@@ -3289,12 +3289,12 @@ const questionBanks = {
     {
       "id": 152,
       "sourceGame": "costDirective",
-      "q": "A manager adds a wine menu to a café without considering that most workers are under 21 and cannot serve alcohol. What mistake is this?",
+      "q": "A caterer prices an off-site job using food and serving hours but omits paid travel time to the site. What is the error?",
       "options": [
-        "Hidden-cost fallacy",
-        "Fixed-cost fallacy",
-        "Economies of scale",
-        "Accounting profit error"
+        "Ignoring a relevant cost created by the job",
+        "Counting an unrecoverable past cost",
+        "Treating an unchanged lease as avoidable",
+        "Using average fixed cost as marginal cost"
       ],
       "tag": "hidden_cost_fallacy",
       "type": "application",
@@ -3305,8 +3305,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "confuses_hidden_and_fixed_cost",
-      "feedback": "The hidden-cost fallacy occurs when a relevant cost or constraint is ignored.",
-      "aHash": "0057e633a04590aebeb4614f73f7c455a8447e9407486f3e07a02fc5f95d27f7"
+      "feedback": "The off-site job causes paid travel time, so the cost belongs in the decision even though it is absent from the initial quote.",
+      "aHash": "c4696e0fd22b3ed19e0792a2448bba9cda824852505b7c8e94f5db8ce696ae7a"
     },
     {
       "id": 153,
@@ -4171,12 +4171,12 @@ const questionBanks = {
     {
       "id": 201,
       "sourceGame": "costDirective",
-      "q": "A firm wants managers to reduce delivery delays. Which question best follows the managerial problem-solving approach?",
+      "q": "A parcel depot meets its dispatch target but misses customer delivery windows. Dispatchers choose routes and earn bonuses when trucks leave early. They see departure times but not delivery results. Which investigation is most useful?",
       "options": [
-        "Which route manager has the weakest explanation for the latest delay?",
-        "Do the managers who choose routes have the information and incentives needed to reduce delays?",
-        "Can the firm lower delivery standards so reported delays decline?",
-        "Would a larger quarterly report make the delay problem appear more formal?"
+        "Compare dispatchers' tenure before changing the reporting system.",
+        "Trace route choices using delivery outcomes and the departure-based bonus.",
+        "Rank truck departure times more precisely using the existing target.",
+        "Increase the early-departure bonus and judge success by departures."
       ],
       "tag": "problem_solving_steps",
       "type": "application",
@@ -4189,18 +4189,18 @@ const questionBanks = {
       ],
       "repairSkill": "problem_solving_steps",
       "commonError": "focuses_on_blame",
-      "feedback": "A good diagnosis asks whether the decision maker has the right information and incentives. Blame alone does not solve the problem.",
-      "aHash": "9b704447d8909a29435f118c9f3bbfaee5342ca9dad9fbc6b1ed9b4f9d76c0b0"
+      "feedback": "Both the information available and the rewarded measure may favor departures over successful delivery. Investigating both is more informative than refining the same proxy.",
+      "aHash": "4c3a6292f4448ac36ebdec5fb2b5ed3510d4456cd78fcb23c7443c097def2ab1"
     },
     {
       "id": 202,
       "sourceGame": "costDirective",
-      "q": "A manager assumes workers will always choose the policy that maximizes company profit, even when their pay is unaffected. What is the flaw?",
+      "q": "An analyst is paid for avoiding budget overruns. She declines a trial costing $4,000 that is expected to save the firm $7,000; savings are credited to another team. Which inference is justified?",
       "options": [
-        "The rational-actor paradigm requires every worker to ignore personal incentives",
-        "The rational-actor paradigm applies only to consumers and not to employees",
-        "The rational-actor paradigm predicts purposeful behavior, but not automatic loyalty to the firm's objective",
-        "The rational-actor paradigm says people act randomly when contracts are incomplete"
+        "Her choice proves she believes the expected savings are zero.",
+        "Rational behavior requires her to maximize the firm's net savings.",
+        "Her choice may serve her rewarded objective while reducing firm value.",
+        "A trial that increases current spending cannot have economic value."
       ],
       "tag": "rational_actor_paradigm",
       "type": "trap",
@@ -4211,8 +4211,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "rational_actor_paradigm",
       "commonError": "confuses_rational_with_loyal",
-      "feedback": "Rational actors respond to their own incentives. They may work toward the firm's goal only if information, incentives, and constraints are aligned.",
-      "aHash": "42ad785b2871e484d67180fec8f93fd32ec0a86a3670ae65dd3ecff62bfb11b9"
+      "feedback": "The trial's expected net gain is $3,000, but the analyst's measure counts its expense without its benefit. The behavior can be privately rational.",
+      "aHash": "59883f055f849bb2edeed90af4eb0251a8cdc41e5872adffd2f538a977f1f0b2"
     },
     {
       "id": 203,
@@ -4265,12 +4265,12 @@ const questionBanks = {
     {
       "id": 205,
       "sourceGame": "costDirective",
-      "q": "A call center rewards representatives for short calls. Customer callbacks double. What is the best diagnosis?",
+      "q": "A support team reports 25% more closed cases after a bonus starts. Unique customer problems resolved are unchanged, and reopened cases receive new case numbers. Which diagnosis best fits the evidence?",
       "options": [
-        "The workers failed because short calls are always less efficient than long calls",
-        "The reward system encourages representatives to end calls quickly instead of solving customer problems",
-        "The firm should remove all performance measures to avoid gaming",
-        "The problem proves incentives cannot shape service quality"
+        "The bonus has increased successful resolutions by 25%.",
+        "The bonus can reward repeated closures of the same unresolved problem.",
+        "The team must need more staff because closure counts rose.",
+        "Reopening cases cannot affect a measure based on closed cases."
       ],
       "tag": "incentive_system_design",
       "type": "trap",
@@ -4283,8 +4283,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_system_design",
       "commonError": "mistakes_metric_for_goal",
-      "feedback": "The measured target should support the real objective. Short calls are useful only if the customer issue is actually resolved.",
-      "aHash": "2747edd8336c3777bbecb98c8b721d506c155e7e10505046f30c86c4b8d584ee"
+      "feedback": "The observed metric can rise by counting the same underlying problem repeatedly. Rewarding verified resolution over a defined follow-up period targets the desired outcome.",
+      "aHash": "ef9c7f457e2d72350c1a1844ce7b706350951d7384b0b869db6d424e83de6f07"
     },
     {
       "id": 206,
@@ -4338,12 +4338,12 @@ const questionBanks = {
     {
       "id": 208,
       "sourceGame": "costDirective",
-      "q": "A division misses profit targets. The director asks: Who made the decision, what did they want, what information did they have, and how were they rewarded? This is an example of:",
+      "q": "A buyer selects a component priced $6 lower, but the choice adds $9 of expected rework per component. The buyer sees rework reports and is paid on invoice savings. Which diagnosis fits?",
       "options": [
-        "Using diagnostic questions to analyze the decision process behind the problem",
-        "Treating poor outcomes as proof that workers acted irrationally",
-        "Replacing marginal analysis with accounting profit measurement",
-        "Assuming every bad result comes from a lack of employee effort"
+        "The information exists, but the rewarded measure favors the costlier choice.",
+        "The main problem is missing rework information.",
+        "The component reduces firm cost because the invoice is lower.",
+        "Delegating purchasing is sufficient to align the buyer's objective."
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "identification",
@@ -4356,8 +4356,8 @@ const questionBanks = {
       ],
       "repairSkill": "managerial_problem_diagnosis",
       "commonError": "outcome_bias",
-      "feedback": "The questions focus on the decision environment. That is stronger than judging only from the outcome.",
-      "aHash": "55a57dd83b930bce099077bf4c475662dbb33ec2be91f41e78a516b2ea0b36e0"
+      "feedback": "The firm spends $3 more per component overall. Existing information does not fix a bonus that excludes rework.",
+      "aHash": "c52fe4b1267948fd9f4a839419c86342af969db8811016e7d52b8f4a405022dd"
     },
     {
       "id": 209,
@@ -4386,12 +4386,12 @@ const questionBanks = {
     {
       "id": 210,
       "sourceGame": "costDirective",
-      "q": "A company asks employees to report safety hazards but punishes teams when reports increase. What would the rational-actor paradigm predict?",
+      "q": "Maintenance staff lose a bonus whenever they log equipment downtime. After the rule starts, logged downtime falls but emergency repair purchases rise. Which interpretation is best supported?",
       "options": [
-        "Employees will report all hazards because safety is always the firm's objective",
-        "Employees will ignore the punishment if the reporting form is easy to use",
-        "Employees may report fewer hazards because the punishment changes the incentive to reveal information",
-        "Employees will act randomly because safety reports are not market transactions"
+        "Lower logged downtime proves that maintenance reliability improved.",
+        "Emergency purchases prove that every employee is concealing failures.",
+        "The rule may discourage recording downtime; lower logs alone do not prove improvement.",
+        "The bonus cannot affect reporting because it does not pay for repairs."
       ],
       "tag": "rational_actor_paradigm",
       "type": "application",
@@ -4404,18 +4404,18 @@ const questionBanks = {
       ],
       "repairSkill": "rational_actor_paradigm",
       "commonError": "ignores_reporting_incentives",
-      "feedback": "People respond to incentives. Punishing reported hazards can discourage the very information the firm needs.",
-      "aHash": "93f831de00ad4888ef099d41ae15134e9aa4fda2a1f98655ad419c4c888a2590"
+      "feedback": "The incentive changes the cost of revealing information. The two indicators warrant checking reporting and actual reliability without assuming dishonesty is proven.",
+      "aHash": "eee4dc892c988697e5e428deedfe666ffe7bd5026fde0ee6bba2de4801ff5947"
     },
     {
       "id": 211,
       "sourceGame": "costDirective",
-      "q": "A firm wants project managers to choose profitable projects. Which compensation plan is most likely to align behavior with that goal?",
+      "q": "A rental manager can cut cleaning expense by $400, but doing so is expected to cause $900 in refund claims. Which bonus measure best supports profitable service?",
       "options": [
-        "Reward managers for total spending because large projects signal ambition",
-        "Reward managers only for starting projects before the deadline",
-        "Reward managers for the number of meetings held with project teams",
-        "Reward managers for project profit after accounting for relevant costs and measurable quality targets"
+        "Rental revenue before refunds",
+        "Cleaning expense per booking alone",
+        "Number of bookings accepted before cleaning",
+        "Rental contribution after cleaning and attributable refund costs"
       ],
       "tag": "incentive_system_design",
       "type": "application",
@@ -4428,18 +4428,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_system_design",
       "commonError": "rewards_activity_not_value",
-      "feedback": "Aligned incentives reward the outcome the firm actually wants: profitable, quality-adjusted performance.",
-      "aHash": "f177c64df20c43c7b332365cbbfdff6c1b635de2a8946ff29653bf30c7c1021c"
+      "feedback": "The apparent saving reduces expected contribution by $500. A measure including both effects aligns the cleaning choice with the objective.",
+      "aHash": "a8e130876c1a9ef578dce71c6b6f9161b43f2fb199f73f1641d0c4ec7b02fe9b"
     },
     {
       "id": 212,
       "sourceGame": "costDirective",
-      "q": "A CEO centralizes all pricing decisions because store managers sometimes make mistakes. What is the strongest concern?",
+      "q": "Headquarters has reliable product costs; branch managers observe local customer needs. Branch bonuses depend on revenue. Prices are often below the full incremental cost of serving a request. Which redesign addresses both weaknesses?",
       "options": [
-        "Centralization may remove decisions from employees with better local information",
-        "Centralization always improves decisions and profits",
-        "Store managers should choose prices even when they have no demand data",
-        "Pricing mistakes prove that incentives cannot affect managerial behavior"
+        "Give branches cost data and reward contribution from their pricing choices.",
+        "Give branches cost data while retaining only the revenue target.",
+        "Move all pricing to headquarters without passing along local information.",
+        "Retain local pricing and reward the number of quoted requests."
       ],
       "tag": "organization_design_info_incentives",
       "type": "trap",
@@ -4452,8 +4452,8 @@ const questionBanks = {
       ],
       "repairSkill": "organization_design_info_incentives",
       "commonError": "overcorrects_to_centralization",
-      "feedback": "Centralization can help in some cases, but it may sacrifice local information. Good design balances information and incentives.",
-      "aHash": "575368e101c4af3a56fd181876c8949e068e88592cc5eb4011aaf4bf3d5084dd"
+      "feedback": "Local knowledge is useful, but branches also need service-cost information and a reason to use it. Each partial fix leaves a key problem unresolved.",
+      "aHash": "a4f9389ddfef3509927186c062ddbb91f51c3f2222089231215b1ebdf48acb0f"
     },
     {
       "id": 213,
@@ -4482,12 +4482,12 @@ const questionBanks = {
     {
       "id": 214,
       "sourceGame": "costDirective",
-      "q": "An incentive plan is easy to understand but rewards only individual output. Teamwork collapses. What lesson follows?",
+      "q": "Technicians earn a bonus for their own completed jobs. Helping a colleague finish a complex job reduces the helper's count although it improves total service. Which revision best addresses this tradeoff?",
       "options": [
-        "A transparent plan fails because employees should not know how rewards are earned",
-        "Individual output is always the best measure because it is simple to observe",
-        "Clarity is useful, but the measured target must match the behavior the organization needs",
-        "The firm should switch to fixed salaries because incentives cannot be designed well"
+        "Increase the per-job bonus on the current individual count.",
+        "Count a handoff as a completed job for both technicians.",
+        "Include verified team outcomes while retaining individual quality accountability.",
+        "Remove quality verification so helpers can finish more counted jobs."
       ],
       "tag": "incentive_system_design",
       "type": "trap",
@@ -4500,18 +4500,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_system_design",
       "commonError": "overvalues_measure_simplicity",
-      "feedback": "A clear incentive can still be badly designed if it rewards behavior that conflicts with the organization's objective.",
-      "aHash": "5be1b1a3b62579fd714603a4bd7adcad2bd40bf5b65c8a40c9967ff4793fe0ea"
+      "feedback": "Team outcomes can reward valuable assistance; individual quality accountability helps limit free riding and poor work. Merely increasing the old reward strengthens the distortion.",
+      "aHash": "1a10f797d3d3415c9fa4fab487a2e31aac2b8500b763d7ea6e96c2e20ca4f41f"
     },
     {
       "id": 215,
       "sourceGame": "costDirective",
-      "q": "A supplier can make a part for $18. A buyer values the part at $31. They agree to a price of $24. What total surplus is created?",
+      "q": "A buyer would pay at most $96 for a replacement module. The owner would keep it unless receiving at least $58. At an $80 price, the buyer also pays a $10 courier charge that uses real resources. What are buyer gain and total gains after delivery?",
       "options": [
-        "$6",
-        "$7",
-        "$24",
-        "$13"
+        "$16 buyer gain; $38 total gains",
+        "$6 buyer gain; $22 total gains",
+        "$22 buyer gain; $28 total gains",
+        "$6 buyer gain; $28 total gains"
       ],
       "tag": "voluntary_transactions_surplus",
       "type": "calculation",
@@ -4524,18 +4524,18 @@ const questionBanks = {
       ],
       "repairSkill": "voluntary_transactions_surplus",
       "commonError": "confuses_price_with_surplus",
-      "feedback": "Total surplus is buyer value minus seller cost: $31 - $18 = $13. Price splits the surplus; it does not create it.",
-      "aHash": "5f17aaf4727d937bd2ecafbe6ad1a3127415dc2454489e31ce7271ffb9ab6a3d"
+      "feedback": "Buyer gain is 96 - 80 - 10 = $6. Seller gain is 80 - 58 = $22. Their total is $28; the price only divides the gains.",
+      "aHash": "bc5c80402d2fd50185cd1747db8c25765028cf69fc71162a549703226e62f252"
     },
     {
       "id": 216,
       "sourceGame": "costDirective",
-      "q": "A firm owns a parking lot worth $2 million to a retailer but keeps using it for storage worth $900,000. What is blocking wealth creation?",
+      "q": "A tool-rental rule sets a daily maximum of $24, below the stated clearing price of $32. At $24, 180 rentals are requested and 125 are offered. Which conclusion follows without predicting behavior at other prices?",
       "options": [
-        "The asset is not moving to its higher-valued use",
-        "The current owner has positive accounting value from the lot",
-        "The retailer values the lot more than the original purchase price",
-        "The lot has no value because it is not currently sold"
+        "There is a shortage of 55 rentals at the controlled price.",
+        "There is a surplus of 55 rentals at the controlled price.",
+        "Exactly 180 rentals will occur because buyers request them.",
+        "Exactly 55 rentals would be added if the maximum rose by $1."
       ],
       "tag": "barriers_to_trade",
       "type": "application",
@@ -4548,18 +4548,18 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "ignores_opportunity_value",
-      "feedback": "Wealth rises when assets move to higher-valued uses. Keeping the asset in a lower-valued use sacrifices value.",
-      "aHash": "ef429591442b3a26222c3e6583a03f725138b55223792cf45ef06298f14d69c3"
+      "feedback": "The stated quantity gap is 180 - 125 = 55 unfilled requests. The problem does not provide responses to alternative prices.",
+      "aHash": "a5b8dd4f58e2e31daa0295648754639ce25140eed947b7230afe8417c21c8058"
     },
     {
       "id": 217,
       "sourceGame": "costDirective",
-      "q": "A regulation requires six months of approval before equipment can be resold. Which effect is most likely?",
+      "q": "A city requires a minimum of $46 for an equipment rental; the stated clearing price is $38. At $46, owners offer 150 rentals and customers request 105. Which outcome can be established from those figures?",
       "options": [
-        "It guarantees that every asset remains in its most efficient use",
-        "It can slow the movement of assets to higher-valued uses",
-        "It removes transaction costs by adding an approval process",
-        "It increases wealth because waiting time creates value"
+        "45 customer requests lack an offered rental at that price.",
+        "45 offered rentals have no matching request at that price.",
+        "All 150 rentals occur because the price floor binds.",
+        "The 45 unmatched rentals must be sold illegally below the floor."
       ],
       "tag": "barriers_to_trade",
       "type": "application",
@@ -4572,18 +4572,18 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "treats_barrier_as_value",
-      "feedback": "Delays, legal restrictions, search costs, and bargaining costs can prevent assets from reaching higher-valued uses.",
-      "aHash": "6657a4b4af0951a0e7ab3585384749cd34c072f376cc6d29ed68a6ebbf34ecb0"
+      "feedback": "Offered rentals exceed requests by 45. A surplus follows numerically; an illegal market is possible but is not guaranteed by those figures.",
+      "aHash": "b5e93382f526f372e4e2f74c9d3ac61be986acb3f4903531ec0884df6736d3a1"
     },
     {
       "id": 218,
       "sourceGame": "costDirective",
-      "q": "A manufacturer reduces waste so the same inputs produce 12% more output. Why does this help the business?",
+      "q": "A packing redesign saves $2 in materials per order but adds $3 in expected damage costs. Delivery value to customers is unchanged. What does this show?",
       "options": [
-        "It guarantees higher profit even if customers do not value the output",
-        "It matters only for accounting reports, not managerial decisions",
-        "It raises the value created from the firm's resources",
-        "It lowers opportunity cost by eliminating all tradeoffs"
+        "Resource efficiency improves by $2 because materials are the targeted input.",
+        "Resource cost falls by $5 because both changes concern the same order.",
+        "The measured material saving conceals a $1 increase in resource cost per order.",
+        "The redesign has no efficiency effect unless the sale price changes."
       ],
       "tag": "efficiency_business_value",
       "type": "application",
@@ -4596,18 +4596,18 @@ const questionBanks = {
       ],
       "repairSkill": "efficiency_business_value",
       "commonError": "confuses_efficiency_with_guaranteed_profit",
-      "feedback": "Efficiency helps when resources create more value or the same value at lower cost. Profit still depends on demand and pricing.",
-      "aHash": "d8362a7e95ad4fcd6f6f63b0e515fc3bcd28549c3cdf5a0c2e521123e22a902b"
+      "feedback": "With customer value unchanged, total relevant resource cost rises by 3 - 2 = $1. A lower expense line alone is not evidence of efficiency.",
+      "aHash": "13651d78ca2eb4d31a14edaf76d6c2c20823493beac920fd469fe9e16cc42d97"
     },
     {
       "id": 219,
       "sourceGame": "costDirective",
-      "q": "A warehouse has unused evening capacity. A customer will pay $4,000 for temporary storage that costs the warehouse $1,300 to provide. What is the money-making opportunity?",
+      "q": "A print shop has a vacant Saturday. A club offers $1,900 for a batch; paper and hourly labor cost $1,100, and accepting requires a $250 cleaning visit. The monthly lease is already committed. What opportunity is available?",
       "options": [
-        "Rejecting the job avoids all warehouse cost and creates $4,000 of value",
-        "Accepting the job creates no value because the warehouse has fixed costs",
-        "The opportunity depends only on the original cost of the warehouse",
-        "Accepting the job creates $2,700 of value before considering any fixed costs already committed"
+        "A $800 increase because cleaning is overhead",
+        "A $1,900 increase because the shop is vacant",
+        "No opportunity unless the batch covers the entire monthly lease",
+        "A $550 increase in contribution from accepting the batch"
       ],
       "tag": "value_gap_opportunities",
       "type": "calculation",
@@ -4621,8 +4621,8 @@ const questionBanks = {
       ],
       "repairSkill": "value_gap_opportunities",
       "commonError": "counts_sunk_fixed_cost",
-      "feedback": "The relevant comparison is willingness to pay versus the additional cost of serving the customer: $4,000 - $1,300 = $2,700.",
-      "aHash": "dd3d5ad2fccd12c0aef7ef16863af2c00831d3869ce544e814c1ed8dcfba7b7f"
+      "feedback": "The batch adds 1,900 - 1,100 - 250 = $550. The lease is unchanged, but the cleaning visit is caused by this job.",
+      "aHash": "f66594a8591d2a5660d3004377acd74379290b39bc053567ee7119cdf834f7c9"
     },
     {
       "id": 220,
@@ -4651,12 +4651,12 @@ const questionBanks = {
     {
       "id": 221,
       "sourceGame": "costDirective",
-      "q": "A manager finds that two departments both need the same specialized tool, but neither knows the other has idle capacity. What problem is most likely?",
+      "q": "Before a per-unit tax, customers paid $50. Afterward they pay $54, sellers retain $47, and 120 units sell. Which statement correctly assigns the tax?",
       "options": [
-        "The tool cannot create value unless it is sold outside the firm",
-        "Information is preventing assets from moving to better uses inside the firm",
-        "The departments should ignore internal transfers because no market price is visible",
-        "The firm should buy more tools before checking existing capacity"
+        "Buyers bear $7 per unit; sellers bear $0; revenue is $840.",
+        "Buyers bear $4 per unit; sellers bear $3; revenue is $840.",
+        "Buyers bear $4 per unit; sellers bear $3; revenue is $480.",
+        "Buyers bear $54 per unit; sellers bear $47; revenue is $120."
       ],
       "tag": "barriers_to_trade",
       "type": "application",
@@ -4669,18 +4669,18 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "ignores_internal_information",
-      "feedback": "Assets can be misallocated inside firms too. Better information can reveal higher-valued uses.",
-      "aHash": "68f875e9b073a153bf02db5d04f620b07ee3a680b78cfb2b534afa83cd3426e3"
+      "feedback": "The buyer's price rises $4 and the seller's receipt falls $3. The $7 wedge on 120 actual sales produces $840 in tax revenue.",
+      "aHash": "6557023ab1eda4e59cb720e61a76fe5c02e52fab06e14c195b6c6c684e4b040f"
     },
     {
       "id": 222,
       "sourceGame": "costDirective",
-      "q": "A coffee shop can sell pastries from a local bakery. Customers value the bundle at $9 more per order, while the added cost is $4. What should the manager infer?",
+      "q": "A buyer values a training session at $210. The instructor sacrifices other work worth $150. The buyer must also spend $25 traveling. If they agree to a $170 fee, which statement is correct?",
       "options": [
-        "The bundle cannot create wealth because the shop did not make the pastries",
-        "The bundle should be rejected because any added cost reduces profit",
-        "The bundle may create wealth because customer value rises more than cost",
-        "The bundle creates value only if the pastry cost is zero"
+        "Only the buyer gains because travel eliminates the instructor's gain.",
+        "Total gain is $60 because travel does not appear on the invoice.",
+        "Both gain: buyer $15 and instructor $20.",
+        "The buyer gains $40 and the instructor gains $60."
       ],
       "tag": "voluntary_transactions_surplus",
       "type": "application",
@@ -4693,18 +4693,18 @@ const questionBanks = {
       ],
       "repairSkill": "voluntary_transactions_surplus",
       "commonError": "sees_cost_without_value",
-      "feedback": "Voluntary transactions create wealth when value exceeds cost. Here the added value is $9 and added cost is $4.",
-      "aHash": "56ce4b9d5d5d967088be5f9418ca54036ef02b15f2d05a3145c16411aa928882"
+      "feedback": "Buyer gain is 210 - 170 - 25 = $15; instructor gain is 170 - 150 = $20. The travel cost reduces total gains to $35.",
+      "aHash": "b538b822ae7ed7d0389dfa77f6077738b9a62e02338c0c9dd29c9ee2ae62cd09"
     },
     {
       "id": 223,
       "sourceGame": "costDirective",
-      "q": "A firm improves routing software and uses 8% fewer miles to deliver the same orders. Which statement is most accurate?",
+      "q": "A depot moves an idle scanner to a busy location. The busy location gains $900 in weekly value, the original location loses $200, and transport costs $100 for that week. Which description fits?",
       "options": [
-        "Efficiency fell because the firm generated fewer miles of activity",
-        "Efficiency is unchanged unless accounting profit is reported immediately",
-        "Efficiency means the firm must raise prices after reducing miles",
-        "Efficiency improved because fewer resources are used to provide the same service"
+        "A $900 net improvement because only the receiving location matters",
+        "A $1,100 net improvement because both locations' values add",
+        "A $300 loss because transfers create no new equipment",
+        "A $600 net value improvement through reallocation"
       ],
       "tag": "efficiency_business_value",
       "type": "identification",
@@ -4717,18 +4717,18 @@ const questionBanks = {
       ],
       "repairSkill": "efficiency_business_value",
       "commonError": "confuses_activity_with_value",
-      "feedback": "Efficiency is about value created relative to resources used, not the amount of activity performed.",
-      "aHash": "9d42d87ac5629bcbb3a9d9a422b3203f5e3b358508036078977ea0d54f7c2696"
+      "feedback": "The same asset creates more value elsewhere. Net improvement is 900 - 200 - 100 = $600; new production of equipment is not required.",
+      "aHash": "248735f4d906763c44ea35fffed9222453a4dbd021adc4bf480d710249f73daa"
     },
     {
       "id": 224,
       "sourceGame": "costDirective",
-      "q": "A tenant values an office at $5,000 per month. The landlord's next-best use is $3,800 per month. Negotiation costs are $1,600 per month. What is the result?",
+      "q": "A customer values a job at $340 and the provider's reservation amount is $265. A $60 per-job tax is payable only if they trade; there are no other costs. Can a price leave both strictly better off?",
       "options": [
-        "No wealth-creating lease remains after negotiation costs",
-        "A lease creates $1,200 in monthly surplus after all costs",
-        "A lease always creates wealth because the tenant values the office",
-        "A lease creates $5,000 because that is the tenant's willingness to pay"
+        "Yes; their combined gain after tax is $15.",
+        "No; any positive tax prevents a mutually beneficial transaction.",
+        "Yes; their combined gain after tax is $75.",
+        "No; the provider must receive the customer's full $340 value."
       ],
       "tag": "barriers_to_trade",
       "type": "calculation",
@@ -4741,18 +4741,18 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "ignores_bargaining_cost",
-      "feedback": "Potential surplus is $5,000 - $3,800 = $1,200. Negotiation costs of $1,600 wipe it out.",
-      "aHash": "a0ddcb9a117ae0d29fd76bb5d3832c1e7df07274563530e5ea37187035f5908e"
+      "feedback": "The private gain available to divide is 340 - 265 - 60 = $15. A price splitting that gain can benefit both. Tax revenue is a transfer to government, not itself a resource loss.",
+      "aHash": "33b790700549e3b659a991c3a4ddfe96fcb2eb7d5e773e3f6090a601f22a28c2"
     },
     {
       "id": 225,
       "sourceGame": "costDirective",
-      "q": "A company discovers a customer segment willing to pay $120 for a service that costs $70 to provide. What makes this a money-making opportunity?",
+      "q": "A repair firm can offer pickup for $30. Each pickup uses $12 of driver time, $6 of fuel and $4 of extra handling. Customers value pickup at $35. Which condition supports offering it?",
       "options": [
-        "The price is above zero, so any sale must increase profit",
-        "The customer's value exceeds the firm's incremental cost of serving the segment",
-        "The firm has fixed costs, so all new customers should be rejected",
-        "The customer segment is new, so accounting profit cannot be estimated"
+        "The firm gains $18 because fuel and handling are already part of transport.",
+        "The $30 price leaves customers $5 and the firm $8 per pickup.",
+        "The firm gains $35 because willingness to pay is revenue.",
+        "Pickup creates no value because it adds three kinds of cost."
       ],
       "tag": "value_gap_opportunities",
       "type": "application",
@@ -4765,8 +4765,8 @@ const questionBanks = {
       ],
       "repairSkill": "value_gap_opportunities",
       "commonError": "ignores_incremental_cost",
-      "feedback": "A profitable opportunity exists when willingness to pay exceeds the relevant cost of providing the good or service.",
-      "aHash": "f4051b8633275cbcdf1e038e3fa780e20327a16f89a4c7aa7c1ed05b3c5c9f05"
+      "feedback": "Relevant cost is $22; firm gain is $8 and customer gain is $5. Total gains are $13, with the $30 price dividing them.",
+      "aHash": "c38bc9043151a96e8f9a377f7740dd4ebc1e0290d5c6dacf24e748702253a354"
     },
     {
       "id": 226,
@@ -4795,12 +4795,12 @@ const questionBanks = {
     {
       "id": 227,
       "sourceGame": "costDirective",
-      "q": "A firm can lease unused lab space to a startup for $9,000. Cleaning and security cost $2,500. The lab would otherwise sit idle. What is the relevant surplus to the firm before taxes?",
+      "q": "A laboratory can rent an unused room for $2,400 this month. Added security is $350 and resetting the room afterward is $450. The $900 allocated building charge is unchanged. What is the rental's gain to the laboratory?",
       "options": [
-        "$2,500",
-        "$9,000",
-        "$11,500",
-        "$6,500"
+        "$700",
+        "$2,050",
+        "$2,400",
+        "$1,600"
       ],
       "tag": "value_gap_opportunities",
       "type": "calculation",
@@ -4814,18 +4814,18 @@ const questionBanks = {
       ],
       "repairSkill": "value_gap_opportunities",
       "commonError": "adds_cost_to_revenue",
-      "feedback": "The idle lab has no sacrificed current use in the problem. Relevant surplus is $9,000 - $2,500 = $6,500.",
-      "aHash": "81f639959157d116638732869239e0265a391ff118c935d96fdfc6225e24dbd9"
+      "feedback": "The decision adds $2,400 and causes $800 of cost. The allocated building charge does not change, so the gain is $1,600.",
+      "aHash": "17e2a167586551942e8f6133b9bc7dbc5e57b87e8c157dcec2bd13ab42c55420"
     },
     {
       "id": 228,
       "sourceGame": "costDirective",
-      "q": "A buyer and seller could create $20,000 in surplus, but each hires lawyers costing $12,000 to fight over the price. What should a manager recognize?",
+      "q": "A tax wedge rises from $4 to $9 per sale. With the higher tax, only trades whose buyer-value-minus-seller-cost exceeds $9 remain strictly attractive to both parties. Which previously attractive trade is blocked, absent other costs?",
       "options": [
-        "Bargaining costs can destroy otherwise available gains from trade",
-        "Legal spending creates additional surplus because it is paid to professionals",
-        "The transaction remains efficient because the gross surplus is positive",
-        "Price negotiation changes who values the asset more"
+        "Buyer value $85; seller cost $78",
+        "Buyer value $85; seller cost $74",
+        "Buyer value $85; seller cost $72",
+        "Buyer value $85; seller cost $70"
       ],
       "tag": "barriers_to_trade",
       "type": "trap",
@@ -4838,8 +4838,8 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "ignores_dissipated_surplus",
-      "feedback": "If the cost of completing the transaction exceeds the surplus, wealth creation can disappear.",
-      "aHash": "e9724d8a6631f8aaf7c7e3aca13b60ff31977be7c7801ee8e00dc02a16442319"
+      "feedback": "The first pair has $7 in gains before tax: positive after a $4 tax but negative after $9. The other gaps exceed $9. This is a transaction test using stated values.",
+      "aHash": "6e726ae38e57ac0533f88254217e0711f43dff0f2019e6486ba600fd30da00fc"
     },
     {
       "id": 229,
@@ -4918,12 +4918,12 @@ const questionBanks = {
     {
       "id": 232,
       "sourceGame": "costDirective",
-      "q": "A machine lease costs $8,000 per month no matter how many units are produced. Materials cost $3 per unit. If output rises by 1,000 units, which cost changes?",
+      "q": "A monthly production ledger lists a $1,800 equipment lease, $700 supervisor salary guaranteed for the month, $3 materials per kit and $2 piece-rate assembly per kit. At 500 kits, what are total fixed cost and AVC?",
       "options": [
-        "Variable cost rises by $3,000 while the lease cost stays fixed",
-        "Fixed cost rises by $8,000 because more output uses the machine",
-        "Total fixed cost and total variable cost both stay unchanged",
-        "Variable cost rises by $8,000 because the lease supports production"
+        "$2,500 fixed; $5 per kit AVC",
+        "$1,800 fixed; $6.40 per kit AVC",
+        "$5,000 fixed; $10 per kit AVC",
+        "$2,500 fixed; $10 per kit AVC"
       ],
       "tag": "fixed_variable_costs",
       "type": "calculation",
@@ -4936,18 +4936,18 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_variable_costs",
       "commonError": "treats_fixed_as_variable",
-      "feedback": "The lease is fixed over this output range. Materials are variable: 1,000 × $3 = $3,000.",
-      "aHash": "c33b453eba7ada48f260d234a69f7b80d46fa716e29a9ad3af6dd261f5a0b632"
+      "feedback": "The lease and guaranteed salary do not vary this month. Materials and piece-rate assembly total $5 per kit. Total fixed cost is 1,800 + 700 = $2,500.",
+      "aHash": "748508273bcfc01e142a5c483d965b83d8a33ee8b85e89fa7a98f7ccfcf0f063"
     },
     {
       "id": 233,
       "sourceGame": "costDirective",
-      "q": "A designer earns $180,000 in revenue, pays $52,000 in explicit business costs, and gives up a $70,000 salaried job. What are accounting profit and economic profit?",
+      "q": "An owner reports annual sales of $168,000, outside payroll of $46,000, purchased supplies of $32,000 and paid rent of $14,000. She could earn $68,000 in a job using the same time. With no other costs, what are accounting and economic profit?",
       "options": [
-        "Accounting profit is $58,000; economic profit is $128,000",
-        "Accounting profit is $128,000; economic profit is $58,000",
-        "Accounting profit is $180,000; economic profit is $70,000",
-        "Accounting profit is $128,000; economic profit is $70,000"
+        "$8,000 accounting; $76,000 economic",
+        "$76,000 accounting; $8,000 economic",
+        "$76,000 accounting; $144,000 economic",
+        "$90,000 accounting; $22,000 economic"
       ],
       "tag": "accounting_economic_profit",
       "type": "calculation",
@@ -4960,18 +4960,18 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "ignores_opportunity_cost",
-      "feedback": "Accounting profit subtracts explicit costs: $180,000 - $52,000 = $128,000. Economic profit also subtracts the $70,000 opportunity cost, leaving $58,000.",
-      "aHash": "e01ac61a5c9b19f1232ad88069691eb7f29179b39018dcecd06059c45f8bd034"
+      "feedback": "Explicit costs are 46,000 + 32,000 + 14,000 = $92,000. Accounting profit is $76,000; subtracting forgone salary gives $8,000 economic profit.",
+      "aHash": "45936392cd44f15ced6812333970288dbc67eab04a4d09de739e6388395aa230"
     },
     {
       "id": 234,
       "sourceGame": "costDirective",
-      "q": "A firm continues a failed product because it has already spent $400,000 on development. Future revenue is expected to be $60,000 and future production cost is $95,000. What fallacy is present?",
+      "q": "A publisher prepaid an unrecoverable $9,000 illustration fee. Printing a title now yields $7,500 in sales and requires $5,000 printing plus a $3,000 launch fee. A manager insists on printing to justify the artwork. What is the error?",
       "options": [
-        "Hidden-cost fallacy",
-        "Economies of scale",
-        "Fixed-cost fallacy",
-        "Diminishing marginal returns"
+        "Ignoring $9,000 of avoidable illustration cost",
+        "Rejecting a positive contribution merely because average cost is high",
+        "Using sunk spending to justify a launch that loses another $500",
+        "Treating the launch fee as relevant when all fixed fees are sunk"
       ],
       "tag": "fixed_cost_fallacy",
       "type": "identification",
@@ -4982,18 +4982,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "fixed_cost_fallacy",
       "commonError": "confuses_fixed_and_hidden_cost",
-      "feedback": "The $400,000 is sunk. Continuing because of it is the fixed-cost fallacy. The future project loses $35,000.",
-      "aHash": "b92d2734f614fc22f80f4c304a6322e2c16b86857929bf071c015d65d6fee11f"
+      "feedback": "The artwork cannot change. Printing causes 5,000 + 3,000 = $8,000 in new costs against $7,500 in sales. The launch fee is avoidable even though it is a lump sum.",
+      "aHash": "023db74767c630ea666ece03bc2d6a10c876be0608eb0fdf9556a7f5ac1bbdf4"
     },
     {
       "id": 235,
       "sourceGame": "costDirective",
-      "q": "A firm adds a rush order because it has idle machines, but it forgets that the order will delay a high-margin regular customer. What fallacy is most likely?",
+      "q": "A studio's off-hours project offers $2,000 and uses $600 in supplies. The manager calls the remaining $1,400 a gain because staff salaries are unchanged. Those staff would otherwise complete work earning $1,700 after its additional costs. What was missed?",
       "options": [
-        "Fixed-cost fallacy",
-        "Accounting-profit fallacy",
-        "Returns-to-scale fallacy",
-        "Hidden-cost fallacy"
+        "A $600 sunk cost that makes the project $2,000 better",
+        "The entire salary bill, even if identical under both options",
+        "No cost, because unchanged salary means staff time is free",
+        "A $1,700 opportunity cost that makes the project $300 worse"
       ],
       "tag": "hidden_cost_fallacy",
       "type": "identification",
@@ -5004,18 +5004,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "ignores_opportunity_cost",
-      "feedback": "The delayed regular customer is a relevant opportunity cost. Ignoring it is a hidden-cost fallacy.",
-      "aHash": "0057e633a04590aebeb4614f73f7c455a8447e9407486f3e07a02fc5f95d27f7"
+      "feedback": "Staff time can have an alternative use despite a fixed salary. Relative gain is 2,000 - 600 - 1,700 = -$300.",
+      "aHash": "642c5b0452506b76f3bc04c999f22eb1ea1845fcab36b209fb32b2c2c62966d9"
     },
     {
       "id": 236,
       "sourceGame": "costDirective",
-      "q": "A bakery has weekly rent of $1,200, salaried management of $1,000, ingredients of $0.80 per pastry, and packaging of $0.20 per pastry. At 3,000 pastries, what is total variable cost?",
+      "q": "For one month, a mill's rent and supervisor pay are fixed. Its ledger is incomplete.<table><thead><tr><th scope=\"col\">Output</th><th scope=\"col\">Variable cost</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>0</td><td>$0</td><td>$2,400</td></tr><tr><td>400</td><td>?</td><td>$5,600</td></tr><tr><td>600</td><td>$4,500</td><td>?</td></tr></tbody></table>What variable cost belongs in the 400-unit row?",
       "options": [
-        "$3,000",
-        "$1,200",
-        "$2,200",
-        "$5,200"
+        "$3,200",
+        "$5,600",
+        "$2,400",
+        "$8 per unit"
       ],
       "tag": "fixed_variable_costs",
       "type": "calculation",
@@ -5028,8 +5028,8 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_variable_costs",
       "commonError": "includes_fixed_costs",
-      "feedback": "Variable cost per pastry is $1.00. At 3,000 pastries, total variable cost is $3,000.",
-      "aHash": "50e5c930578954e631f9c75bfe0ef0b7d0f0b5c27638d20ec1049649881f0acc"
+      "feedback": "The zero-output row reveals fixed cost of $2,400. Variable cost at 400 is 5,600 - 2,400 = $3,200. Dividing gives a per-unit amount, not the requested total.",
+      "aHash": "156bc4af87073d790d7b129e3908f47d088f03ef0277e64fe7f92b24733a7423"
     },
     {
       "id": 237,
@@ -5106,12 +5106,12 @@ const questionBanks = {
     {
       "id": 240,
       "sourceGame": "costDirective",
-      "q": "A plant's monthly cost is $40,000 plus $6 per unit. Which statement is correct when output rises from 5,000 to 6,000 units?",
+      "q": "A shop makes 300 packages. The monthly lease is $1,200, a supervisor is guaranteed $600, and materials plus piecework total $2,100. Within the same capacity, 400 packages require $2,800 in materials plus piecework. What changes?",
       "options": [
-        "Total cost rises by $6,000 and average fixed cost falls",
-        "Total fixed cost rises by $40,000 and average fixed cost stays constant",
-        "Total variable cost stays fixed and average variable cost falls to zero",
-        "Total cost rises by $46,000 because fixed cost repeats for each extra unit"
+        "Total cost rises $700; average fixed cost falls from $6 to $4.50.",
+        "Total cost rises $2,500 because fixed costs recur on expansion.",
+        "Total cost is unchanged because the same premises are used.",
+        "Average variable cost falls from $13 to $11.50."
       ],
       "tag": "fixed_variable_costs",
       "type": "calculation",
@@ -5125,18 +5125,18 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_variable_costs",
       "commonError": "misreads_fixed_cost",
-      "feedback": "The extra 1,000 units add 1,000 × $6 = $6,000. The same fixed cost is spread over more units, so average fixed cost falls.",
-      "aHash": "8a416da287ed07a3ac3dc4b65232321a4208274b1cb2a66de335eac7548be9ce"
+      "feedback": "Only materials and piecework change, by $700. Fixed cost stays $1,800, divided by 300 and 400 respectively.",
+      "aHash": "4ebe1bc8c39e4527dd99c5aa5575886ce86a76bcc1c149364d2600a85734451b"
     },
     {
       "id": 241,
       "sourceGame": "costDirective",
-      "q": "A florist has $95,000 in revenue, $38,000 in explicit costs, and uses her own building that could rent for $24,000. What is economic profit?",
+      "q": "A repair business earns $104,000 a year and pays $47,000 to suppliers and employees. It uses the owner's garage, which could earn $12,000 net rent, and her time, which could earn $39,000 elsewhere. What is economic profit?",
       "options": [
         "$57,000",
-        "$33,000",
-        "$71,000",
-        "$119,000"
+        "$6,000",
+        "$18,000",
+        "$45,000"
       ],
       "tag": "accounting_economic_profit",
       "type": "calculation",
@@ -5149,8 +5149,8 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "ignores_implicit_rent",
-      "feedback": "Economic profit is $95,000 - $38,000 - $24,000 = $33,000. The foregone rent is an opportunity cost.",
-      "aHash": "33a0e3a17ce14066ae018ac6efc5fc35b92f2d5e4eb408128a95fd064ef4bdb4"
+      "feedback": "Accounting profit is $57,000. The garage and owner's labor have separate, simultaneously forgone alternatives totaling $51,000, leaving $6,000.",
+      "aHash": "f455ed4209cdc909730b6b732fb242e1933fdebcfac5fdf35dd9f2bac7cb51b0"
     },
     {
       "id": 242,
@@ -5203,12 +5203,12 @@ const questionBanks = {
     {
       "id": 244,
       "sourceGame": "costDirective",
-      "q": "A gym paid $80,000 for equipment. It can either operate a class that earns $9,000 and costs $5,500 to staff, or leave the room unused. What matters for the class decision?",
+      "q": "A workshop's extra class earns $1,600. Supplies cost $280, an instructor charges $500, and the room could otherwise earn $450 net rental income. Existing building expenses stay unchanged. What benefit should guide the class decision?",
       "options": [
-        "The $3,500 contribution from running the class",
-        "The full $80,000 equipment cost plus staffing cost",
-        "The original price of the equipment divided by the number of class members",
-        "The accounting depreciation entry even if it does not change with the class"
+        "The $370 gain over renting out the room",
+        "The $820 contribution before considering the room's alternative",
+        "The $1,600 collected from students",
+        "The $1,270 sum of the class costs and forgone rent"
       ],
       "tag": "relevant_costs_benefits",
       "type": "application",
@@ -5221,8 +5221,8 @@ const questionBanks = {
       ],
       "repairSkill": "relevant_costs_benefits",
       "commonError": "includes_sunk_equipment",
-      "feedback": "The equipment cost is sunk for this decision. Running the class adds $9,000 - $5,500 = $3,500.",
-      "aHash": "2f3bd22627b300a6fef9609af468383d7a256e60af6938369cccdf8f0c5aa35d"
+      "feedback": "The class adds 1,600 - 280 - 500 = $820 before the room's opportunity cost. Compared with rental, it adds $370.",
+      "aHash": "83655cb579f3b16a60b511f0698aaa6b5d506fed85c624757e8b3dab71e80e03"
     },
     {
       "id": 245,
@@ -5249,12 +5249,12 @@ const questionBanks = {
     {
       "id": 246,
       "sourceGame": "costDirective",
-      "q": "A firm accepts a low-price special order because the price covers materials. It forgets the order will require scarce machine time that could produce a more profitable product. What error occurred?",
+      "q": "A rush job produces $2,500 in revenue and $1,800 in extra cash costs. It also delays routine work, causing $900 of contractual credits. Calling it profitable because cash production costs are covered commits which error?",
       "options": [
-        "The firm incorrectly treated materials as a variable cost",
-        "The firm included a sunk cost in the special-order decision",
-        "The firm ignored an opportunity cost of scarce capacity",
-        "The firm confused accounting profit with revenue"
+        "Including sunk customer credits that cannot change",
+        "Treating the $1,800 cash expense as relevant when revenue is positive",
+        "Ignoring a relevant $900 consequence, so the claimed gain is overstated",
+        "Using marginal reasoning when only total revenue matters"
       ],
       "tag": "hidden_cost_fallacy",
       "type": "trap",
@@ -5267,18 +5267,18 @@ const questionBanks = {
       ],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "ignores_capacity_constraint",
-      "feedback": "Machine time has an opportunity cost when capacity is scarce. Ignoring that sacrificed contribution hides a relevant cost.",
-      "aHash": "67ae6f7079d14feee70478be301e82d87db284bc49fee1309824cb72363ccb97"
+      "feedback": "The delay credits are caused by accepting the job. Net effect is 2,500 - 1,800 - 900 = -$200.",
+      "aHash": "633da63229f1e305647bceee7ad02f73e2e41730fdd8243f99c662afb92a739c"
     },
     {
       "id": 247,
       "sourceGame": "costDirective",
-      "q": "A food truck has daily permit cost of $150, labor of $220, and ingredients of $2 per meal. If it sells 180 meals, what are total cost and total variable cost?",
+      "q": "For a single market day, a seller owes a $140 permit and a $260 guaranteed assistant payment regardless of meals sold. Ingredients cost $3 per meal. At 120 meals, what are total cost and total variable cost?",
       "options": [
-        "Total cost is $370; total variable cost is $150",
-        "Total cost is $580; total variable cost is $220",
-        "Total cost is $730; total variable cost is $580",
-        "Total cost is $730; total variable cost is $360"
+        "$760 total; $620 variable",
+        "$500 total; $360 variable",
+        "$400 total; $760 variable",
+        "$760 total; $360 variable"
       ],
       "tag": "fixed_variable_costs",
       "type": "calculation",
@@ -5291,18 +5291,18 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_variable_costs",
       "commonError": "misclassifies_labor_or_permit",
-      "feedback": "Ingredient cost is variable: 180 × $2 = $360. Permit plus labor plus ingredients gives $150 + $220 + $360 = $730.",
-      "aHash": "545e4dc46f059d7f680efae1d71da562719fa6260fed88ed0b0b89c7b3468c96"
+      "feedback": "The explicitly guaranteed daily commitments are fixed for this decision. Ingredients cost 120 × 3 = $360; total cost is 140 + 260 + 360 = $760.",
+      "aHash": "d2cba89ca75b0e0fa6a0a3b6ba3cc64a758b79f0358e481aafaddca5574a311b"
     },
     {
       "id": 248,
       "sourceGame": "costDirective",
-      "q": "A freelancer earns $75,000 after explicit expenses. Her next-best job pays $82,000. Which statement is correct?",
+      "q": "An owner has $64,000 left after all explicit annual expenses. She could instead take a $49,000 job and rent her business room for $19,000 net per year at the same time. Which conclusion follows?",
       "options": [
-        "She has positive accounting profit but negative economic profit",
-        "She has negative accounting profit but positive economic profit",
-        "She has zero economic profit because explicit expenses are already removed",
-        "She has positive economic profit because her business earns revenue"
+        "Accounting profit is positive, but economic profit is -$4,000.",
+        "Economic profit is $15,000 because only the job is an alternative.",
+        "Economic profit is $45,000 because only rent is an alternative.",
+        "Economic profit is $64,000 because no invoice records either alternative."
       ],
       "tag": "accounting_economic_profit",
       "type": "application",
@@ -5315,18 +5315,18 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "ignores_next_best_job",
-      "feedback": "Accounting profit can be positive while economic profit is negative. Here she gives up an $82,000 job to earn $75,000 after explicit expenses.",
-      "aHash": "8f72c551ea222d8db8fc8d88b29b8299de631b0ac88ba447d65982e21f6c3acb"
+      "feedback": "Both alternatives can occur together and both are sacrificed by running the business. Economic profit is 64,000 - 49,000 - 19,000 = -$4,000.",
+      "aHash": "bce7e69f81a2c4f45f93150933280e237275a1d59f925da7526dfc8359f44939"
     },
     {
       "id": 249,
       "sourceGame": "costDirective",
-      "q": "A manager should treat which cost as relevant when deciding whether to produce 500 additional units?",
+      "q": "A printer can accept a job for $4,000. Ink costs $900, overtime $1,100, and an optional job-specific setup fee $600. A $2,000 design payment made last month is unrecoverable; rent is unchanged. Which cost bundle is relevant?",
       "options": [
-        "The original purchase price of a machine bought last year",
-        "The extra materials and labor required for the 500 units",
-        "The portion of headquarters rent allocated to the product line but unchanged by output",
-        "The advertising campaign that has already run and cannot be changed"
+        "Ink and overtime only: $2,000",
+        "Ink, overtime and the setup fee: $2,600",
+        "All four listed expenses: $4,600",
+        "The design payment and setup fee only: $2,600"
       ],
       "tag": "relevant_costs_benefits",
       "type": "identification",
@@ -5339,8 +5339,8 @@ const questionBanks = {
       ],
       "repairSkill": "relevant_costs_benefits",
       "commonError": "uses_past_or_allocated_costs",
-      "feedback": "Relevant costs change because of the decision. Extra materials and labor for additional output are relevant.",
-      "aHash": "80b34a71d5023658715c01b57368cdaaa7a91d3e6f2d41be8aa97a49a35534c1"
+      "feedback": "The setup fee is caused by acceptance despite being fixed per job. The prior design payment and unchanged rent do not differ between choices.",
+      "aHash": "99df00631f36e1ea43cfbfe1159f37c1eb0cc58d1c2c8abf1f627c88c11653d3"
     },
     {
       "id": 250,
@@ -5416,12 +5416,12 @@ const questionBanks = {
     {
       "id": 253,
       "sourceGame": "costDirective",
-      "q": "A company reports $400,000 in revenue, $260,000 in explicit costs, and $90,000 in owner-provided labor that could have been sold elsewhere. What is economic profit?",
+      "q": "A firm's annual revenue is missing. Explicit expenses are $86,000, owner labor has a $42,000 opportunity cost, and an owned workspace could earn $16,000 net rent. Economic profit is $9,000. What revenue is consistent with this report?",
       "options": [
-        "$140,000",
-        "$50,000",
-        "$230,000",
-        "$310,000"
+        "$95,000",
+        "$153,000",
+        "$137,000",
+        "$144,000"
       ],
       "tag": "accounting_economic_profit",
       "type": "calculation",
@@ -5434,18 +5434,18 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "ignores_implicit_labor",
-      "feedback": "Economic profit subtracts explicit and implicit costs: $400,000 - $260,000 - $90,000 = $50,000.",
-      "aHash": "088337848db89afff682e661c914356f1e73d8bf5e721ad8238e0bf86eed68df"
+      "feedback": "Revenue must cover explicit costs, both implicit costs and economic profit: 86,000 + 42,000 + 16,000 + 9,000 = $153,000.",
+      "aHash": "e42a19d79273fe85768af905a938fb3a58255199d2c9906a3f62d354f3d15cc1"
     },
     {
       "id": 254,
       "sourceGame": "costDirective",
-      "q": "Output rises from 400 to 450 units. Total cost rises from $18,000 to $19,750. What is marginal cost per unit over this range?",
+      "q": "A parts ledger has fixed monthly cost of $900. At 100 units, variable cost is $1,400. At 140 units, total cost is $3,180. What is incremental cost per unit between these outputs?",
       "options": [
-        "$39.50",
-        "$43.89",
-        "$35",
-        "$1,750"
+        "$22.71",
+        "$880",
+        "$22",
+        "$44.50"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "calculation",
@@ -5458,8 +5458,8 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "uses_average_cost",
-      "feedback": "Marginal cost is change in total cost divided by change in output: $1,750 / 50 = $35.",
-      "aHash": "a1ac5b982584c5a51cc7f0927a7f2b0c70671a239921cd8f2d76112b48e641e9"
+      "feedback": "Total cost at 100 is 900 + 1,400 = $2,300. The increase is $880 across 40 units, so incremental cost is $22 per unit.",
+      "aHash": "9c770d65e30e715bd62bfbd5d797cce7d9d6c058d0537f00fa581e4fb1c7d889"
     },
     {
       "id": 255,
@@ -5534,12 +5534,12 @@ const questionBanks = {
     {
       "id": 258,
       "sourceGame": "costDirective",
-      "q": "A salesperson receives a $40,000 salary plus 2% commission. A pure commission plan would pay 12%. Which plan creates the stronger marginal incentive to make an extra $1,000 sale?",
+      "q": "A rep earns $24,000 plus 4% of collected sales under A, or 16% with no salary under B. A $500 follow-up order takes extra effort and is certainly collected. Which claim correctly compares the added pay?",
       "options": [
-        "The salary-plus-commission plan, because salary increases with each sale",
-        "Both plans, because total expected pay is the only incentive that matters",
-        "The pure commission plan, because the salesperson earns $120 instead of $20 on the extra sale",
-        "Neither plan, because commissions affect fixed pay rather than marginal benefit"
+        "A adds more because its guaranteed salary is larger than the order.",
+        "Both add $500 because both collect the same order.",
+        "B adds $80 versus A's $20, regardless of their current total pay.",
+        "The comparison requires including the full annual salary in the order's pay."
       ],
       "tag": "incentive_compensation_effort",
       "type": "calculation",
@@ -5552,18 +5552,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "confuses_total_pay_with_marginal_pay",
-      "feedback": "Marginal incentive depends on the added pay from an added sale: 12% of $1,000 is $120; 2% is $20.",
-      "aHash": "6efbfd3e9b4a8784939d66de648a91791a73907a6017ac3d552eecf9bd2adfbd"
+      "feedback": "Marginal pay is the commission on this order: 0.16 × 500 = $80 versus 0.04 × 500 = $20. Salary changes total pay, not this increment.",
+      "aHash": "47f0230d30bf3bcb0651cf5acc814a144e4e4f903f351efbbd27d3908e8616ae"
     },
     {
       "id": 259,
       "sourceGame": "costDirective",
-      "q": "A consultant pays a fixed fee to access a lead platform, then earns $500 per client signed. How does the fixed fee affect effort after it is paid?",
+      "q": "A freelancer has already paid a nonrefundable $800 platform fee. An additional job pays $140, requires $50 of materials, and uses time she values at $70. What should guide effort on this job?",
       "options": [
-        "It makes every additional client less valuable because the fixed fee must be recovered",
-        "It raises marginal benefit by the amount of the fixed fee",
-        "It turns each client into a sunk benefit rather than a marginal benefit",
-        "It should not affect the marginal benefit of signing one more client"
+        "A loss of $780 after charging the whole platform fee to this job.",
+        "Its $90 net benefit because time has no invoice.",
+        "A $140 gain because membership made access free at the margin.",
+        "Its $20 net benefit; the paid platform fee does not change."
       ],
       "tag": "incentive_compensation_effort",
       "type": "trap",
@@ -5576,18 +5576,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "spreads_fixed_fee_to_marginal_decision",
-      "feedback": "Once paid, the fixed fee is sunk for effort decisions. The marginal benefit of another client is still $500.",
-      "aHash": "3481a5729f8d80959015eb1e06d8100ce86362a7ab4a09626d12b108baa1fd9c"
+      "feedback": "The fee is sunk, but materials and valued time are relevant: 140 - 50 - 70 = $20.",
+      "aHash": "42846cf8dc792e62896e40f45e686c29665ed7774a92320ee7b7a29e4869e8b8"
     },
     {
       "id": 260,
       "sourceGame": "costDirective",
-      "q": "A table shows total cost of $1,000 at 50 units, $1,420 at 70 units, and $1,900 at 90 units. What happens to marginal cost across the two ranges?",
+      "q": "A supplier provides this monthly cost schedule.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>80</td><td>$2,080</td></tr><tr><td>100</td><td>$2,600</td></tr><tr><td>140</td><td>$3,800</td></tr></tbody></table>How does incremental cost per unit change across the two intervals?",
       "options": [
-        "It rises from $21 per unit to $24 per unit",
-        "It falls from $28.40 per unit to $21.11 per unit",
-        "It stays constant at $480 per range",
-        "It cannot be computed without fixed cost"
+        "It rises from $26 to $30.",
+        "It rises from $520 to $1,200 per unit.",
+        "It stays $26 because average cost initially equals $26.",
+        "It falls because the second interval includes more units."
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "calculation",
@@ -5600,18 +5600,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "uses_average_cost",
-      "feedback": "From 50 to 70, MC = $420 / 20 = $21. From 70 to 90, MC = $480 / 20 = $24.",
-      "aHash": "c652d57984060077f624a899dfe8619214492f26b19fa8e626709bcd0a7c2d37"
+      "feedback": "Divide each cost change by its own output change: 520/20 = $26 and 1,200/40 = $30. Unequal intervals require different denominators.",
+      "aHash": "c9c00811aa4a56814ddaed0c826d87138076a4db6a2c4cca14fc533b55a98d1a"
     },
     {
       "id": 261,
       "sourceGame": "costDirective",
-      "q": "A firm is producing where MR is $37 and MC is $29 for the next unit. What should it do?",
+      "q": "A repair shop can extend opening by one hour. Total receipts would rise from $3,900 to $4,180 and avoidable daily expenses from $2,100 to $2,340. Rent is unchanged. What does this imply?",
       "options": [
-        "Reduce output because marginal cost is positive",
-        "Expand output because the next unit adds $8 to profit",
-        "Keep output unchanged because MR and MC are both below average cost",
-        "Expand only if fixed cost also falls"
+        "The extra hour adds $280 because rent is unchanged.",
+        "The extra hour adds $40 to profit.",
+        "The extra hour loses $240 because operating expenses rise.",
+        "The decision requires the original cost of the shop."
       ],
       "tag": "mr_mc_extent_rule",
       "type": "identification",
@@ -5624,8 +5624,8 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "requires_zero_fixed_cost",
-      "feedback": "For an extent decision, expand when MR exceeds MC. The next unit adds $37 - $29 = $8.",
-      "aHash": "163276c86cde5aa16c299568c85b3b56f7a6166824d285b334af04ae663bc5b7"
+      "feedback": "The relevant changes are $280 revenue and $240 cost, leaving a $40 gain.",
+      "aHash": "3ec66fe47f3b2b3219c5ff5082ce80cb344e0e8b102951ebcb518791f80f6dce"
     },
     {
       "id": 262,
@@ -5652,12 +5652,12 @@ const questionBanks = {
     {
       "id": 263,
       "sourceGame": "costDirective",
-      "q": "A company pays installers a fixed daily wage. Installations per day fall. Which change most directly increases marginal effort incentives?",
+      "q": "Installers choose whether to spend extra time checking connections. That check reduces expected customer rework, but a bonus is paid on initial job completion. Which change most directly improves the incentive?",
       "options": [
-        "Increase the fixed wage without changing performance measurement",
-        "Pay the fixed wage earlier in the day",
-        "Remove quality checks and evaluate only attendance",
-        "Add a bonus tied to completed installations that meet quality standards"
+        "Increase the bonus for initial completion alone.",
+        "Make the fixed daily wage higher without changing verification.",
+        "Count each return visit as another bonus-eligible completion.",
+        "Pay for verified completions after a defined rework window."
       ],
       "tag": "incentive_compensation_effort",
       "type": "application",
@@ -5670,8 +5670,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "raises_fixed_pay_only",
-      "feedback": "A performance bonus increases the marginal benefit of additional quality work. A higher fixed wage alone may not change marginal effort incentives.",
-      "aHash": "8d423bc77e43b88399b33c2335e627f01c26ad58af0a8a652a29a9310e4c6a69"
+      "feedback": "Verification ties the reward to durable completion. Paying twice for a failed installation can reward the rework the firm wants to prevent.",
+      "aHash": "b9f918b84be2612e36b8128fa2b61025dbd9fe2ca1fc7c83182c44e507b643cb"
     },
     {
       "id": 264,
@@ -5700,12 +5700,12 @@ const questionBanks = {
     {
       "id": 265,
       "sourceGame": "costDirective",
-      "q": "A cost table shows average cost falling while marginal cost is below average cost. What relationship explains this?",
+      "q": "A workshop makes 50 units for $1,500 total cost. It can make 10 more for $240 in added cost. A manager says the average must rise because total cost rises. What is the correction?",
       "options": [
-        "Average cost falls only when marginal cost is zero",
-        "Low marginal cost pulls average cost downward",
-        "Marginal cost must be above average cost when average cost falls",
-        "Average cost and marginal cost move independently"
+        "Average cost rises to $34.80 because $1,740 is divided by the original 50.",
+        "Average cost falls to $29 because the added units cost $24 each.",
+        "Average cost becomes $24 because only the newest units matter.",
+        "Average cost stays $30 because the original output cost is unchanged."
       ],
       "tag": "average_vs_marginal_cost",
       "type": "interpretation",
@@ -5718,18 +5718,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "misreads_ac_mc_relationship",
-      "feedback": "When marginal cost is below average cost, it pulls the average down. When MC is above AC, it pulls the average up.",
-      "aHash": "a69ba34d3d7bbd540de958e3c31ff9ebef9e84f3e3f0948830ed7c0c67a9efc1"
+      "feedback": "New average cost is (1,500 + 240)/60 = $29. An increment below the original $30 average pulls that average down.",
+      "aHash": "f5bb52c23a38640a6ba3a8e50b969ca4406378be7177ef815131435f9defbe3f"
     },
     {
       "id": 266,
       "sourceGame": "costDirective",
-      "q": "A firm must choose whether to increase production from 10,000 to 10,500 units. Which numbers are needed for the extent decision?",
+      "q": "A plant considers the extra output in this schedule.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">Revenue</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>200</td><td>$6,000</td><td>$5,000</td></tr><tr><td>250</td><td>$7,250</td><td>$6,100</td></tr></tbody></table>Which comparison identifies the profit effect of expanding?",
       "options": [
-        "The total revenue from all 10,500 units and the original plant cost",
-        "The average cost of the first 10,000 units only",
-        "The added revenue and added cost from the 500 extra units",
-        "The fixed cost already committed before the decision"
+        "The $7,250 total revenue versus the $1,100 cost increase",
+        "The $1,250 revenue increase versus the $6,100 total cost",
+        "The $1,250 revenue increase versus the $1,100 cost increase",
+        "The original $1,000 profit versus the new $7,250 revenue"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "identification",
@@ -5742,18 +5742,18 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "uses_total_or_sunk_cost",
-      "feedback": "Extent decisions depend on marginal revenue and marginal cost: what changes if output expands.",
-      "aHash": "0a72a4bb5a04d6f8315d58cbb9b3a3a806d4e89d7ca6105bb096af55b6699827"
+      "feedback": "Both sides of an extent decision must use changes over the same interval. Expansion adds $150 to profit.",
+      "aHash": "b98301005a19096afe787e2b0adeff0667ce5e095ffc35c96443a4133bce3d57"
     },
     {
       "id": 267,
       "sourceGame": "costDirective",
-      "q": "A worker paid $18 per hour can produce 6 units per hour. Materials are $4 per unit. What is labor plus materials marginal cost per unit?",
+      "q": "A machine makes 8 accepted pieces per operator-hour. The operator earns $24 per hour; materials cost $4 per accepted piece. An extra 40-piece order also needs a $40 setup. Existing lease cost is unchanged. What is the order's added cost per piece?",
       "options": [
-        "$3",
-        "$4",
-        "$22",
-        "$7"
+        "$7",
+        "$28",
+        "$320",
+        "$8"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "calculation",
@@ -5766,18 +5766,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "adds_hourly_wage_per_unit",
-      "feedback": "Labor cost per unit is $18 / 6 = $3. Add materials of $4, so marginal cost is $7.",
-      "aHash": "ee0afb030fe0274152779b8ca6788588440baf31aeb1fab592ee377f4211fa9b"
+      "feedback": "Labor costs $3 per piece, materials $4, and setup $40/40 = $1 per piece. Added total cost is $320, or $8 per piece.",
+      "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94"
     },
     {
       "id": 268,
       "sourceGame": "costDirective",
-      "q": "A delivery driver gets $120 per day plus $3 per completed delivery. Which part of the plan creates a marginal incentive for extra deliveries?",
+      "q": "A collector receives $100 per day plus 6% of recovered balances. Spending an extra hour raises certain collections by $400 and costs the collector $18 in valued time. Which element creates a net reason to spend that hour?",
       "options": [
-        "The $3 paid for each additional completed delivery",
-        "The $120 daily payment because it is larger than the per-delivery payment",
-        "The total number of deliveries completed by other drivers",
-        "The fixed payment after it has already been earned"
+        "The $24 extra commission exceeds the $18 time cost.",
+        "The $100 fixed payment exceeds the $18 time cost.",
+        "The full $400 collection belongs to the collector.",
+        "The $18 time cost is irrelevant because it is not invoiced."
       ],
       "tag": "incentive_compensation_effort",
       "type": "identification",
@@ -5790,18 +5790,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "confuses_fixed_and_marginal_pay",
-      "feedback": "The marginal incentive is the added pay from one more delivery. The fixed daily payment does not change with delivery count.",
-      "aHash": "064b4ee9efbaecfddafb9492511018e730702700eeb9322599eb91f75af148c0"
+      "feedback": "Marginal commission is 0.06 × 400 = $24. Subtracting the personal time cost leaves $6; the fixed daily payment does not change.",
+      "aHash": "e04fac0f698b9df2d7ab23a0d8ecec13be6255f91a943b58971962695336cb26"
     },
     {
       "id": 269,
       "sourceGame": "costDirective",
-      "q": "A firm has MR of $42 for the next unit. MC for the next unit is $39, then $44 for the unit after that. What is the profit-maximizing move?",
+      "q": "A bakery can choose 0, 1, 2 or 3 evening batches, in sequence. Cumulative added receipts are $0, $320, $590, $800; cumulative added costs are $0, $210, $450, $720. Which plan maximizes added profit?",
       "options": [
-        "Produce both extra units because average revenue is positive",
-        "Produce the first extra unit but not the second",
-        "Produce neither extra unit because MC eventually exceeds MR",
-        "Produce the second extra unit only because its cost is closer to MR"
+        "3 batches, adding $80",
+        "2 batches, adding $140",
+        "1 batch, adding $110",
+        "0 batches, because later batches cost more"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "multi-step",
@@ -5814,8 +5814,8 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "misses_unit_by_unit_logic",
-      "feedback": "Take units for which MR exceeds MC. The first adds $3; the second would lose $2.",
-      "aHash": "40a524932cb5018a60427bff20b70dac98c6a8473b6fb37dcba62dee47dae1b1"
+      "feedback": "Cumulative profits are 0, 110, 140 and 80. The second batch adds $30 but the third subtracts $60, so two is best.",
+      "aHash": "347860547af3910856b6dc6c032ad436239739dc14f19b73bf0ba596b4d86e36"
     },
     {
       "id": 270,
@@ -5844,12 +5844,12 @@ const questionBanks = {
     {
       "id": 271,
       "sourceGame": "costDirective",
-      "q": "A firm uses piece-rate pay but notices workers rush and defects rise. Which adjustment best preserves effort incentives while reducing defects?",
+      "q": "A processor pays staff per accepted claim. Staff can hide difficult claims by reclassifying them as incomplete, and only accepted claims are audited. Which adjustment best retains useful effort incentives?",
       "options": [
-        "Switch to a fixed salary with no quality measurement",
-        "Pay only for attendance because quality is hard to observe",
-        "Reward the team for buying cheaper materials",
-        "Pay for completed units that pass inspection rather than all units produced"
+        "Raise the payment for accepted claims without changing the audit.",
+        "Exclude difficult claims from all performance measures.",
+        "Pay for opening a claim before checking whether it is valid.",
+        "Audit a sample of rejected claims as well as accepted claims and count valid resolutions."
       ],
       "tag": "incentive_compensation_effort",
       "type": "application",
@@ -5862,8 +5862,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "ignores_quality_metric",
-      "feedback": "A piece rate tied to accepted units keeps marginal effort incentives while adding a quality screen.",
-      "aHash": "e6961d7ad624d10c22d7ee43a226966e00990e505974fc86f18ff1f4beb362d7"
+      "feedback": "Quality screening only the paid output leaves a way to avoid legitimate difficult work. Checking both acceptance and rejection decisions helps align effort with valid resolution.",
+      "aHash": "e2ba51e3f2ae68f48a3f89ded2eaed68feaedeec9ad7484688ce5cdbb120d728"
     },
     {
       "id": 272,
@@ -5917,12 +5917,12 @@ const questionBanks = {
     {
       "id": 274,
       "sourceGame": "costDirective",
-      "q": "A kitchen adds a sixth cook to a crowded line. Total meals rise by less than when the fifth cook was added. What concept is illustrated?",
+      "q": "With the same two test benches, 3 technicians complete 90 tests daily, 4 complete 124, and 5 complete 150. Which change demonstrates diminishing marginal returns?",
       "options": [
-        "Economies of scope",
-        "Increasing returns to scale",
-        "Diminishing marginal returns",
-        "Fixed-cost fallacy"
+        "Total tests rise from 124 to 150.",
+        "Average tests per technician are positive at each staffing level.",
+        "The fifth technician adds 26 tests versus 34 from the fourth.",
+        "Five technicians use more labor than four, proving decreasing returns to scale."
       ],
       "tag": "diminishing_marginal_returns",
       "type": "identification",
@@ -5933,18 +5933,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "diminishing_marginal_returns",
       "commonError": "confuses_short_run_and_scale",
-      "feedback": "Diminishing marginal returns occur when adding more of one input increases output by smaller amounts while other inputs are fixed.",
-      "aHash": "3fb9c70a70c4d59f72107654414444bea302e05072b3b6d4b418349eb64ef404"
+      "feedback": "Marginal output falls from 124 - 90 = 34 to 150 - 124 = 26 while bench capacity stays fixed. An all-input scale comparison is not provided.",
+      "aHash": "665c92004c107e944e6f9235ce7898b183e1fff3fec00a700497fff4803c7372"
     },
     {
       "id": 275,
       "sourceGame": "costDirective",
-      "q": "A supplier contract charges $14 per unit for the first 10,000 units and $20 per unit after capacity is strained. Why should the buyer understand the supplier's cost curve?",
+      "q": "A supplier can produce its current 1,000 units for $18,000. Adding a separate 200-unit order raises total cost to $20,600 and requires a $600 order-specific test. The offered price is $17 per added unit. What should the supplier infer?",
       "options": [
-        "The buyer can assume average cost is constant at every output level",
-        "The buyer can ignore capacity because only total revenue matters",
-        "The buyer can treat all supplier costs as sunk after signing",
-        "The buyer can anticipate where marginal cost rises and negotiate quantities more intelligently"
+        "The order loses $200 because current average cost is $18.",
+        "The order adds $800 because testing is a fixed fee.",
+        "The order loses $18,000 because its price does not cover current total cost.",
+        "The order adds $200 after testing despite a price below current average cost."
       ],
       "tag": "cost_curves_contracts",
       "type": "application",
@@ -5957,18 +5957,18 @@ const questionBanks = {
       ],
       "repairSkill": "cost_curves_contracts",
       "commonError": "ignores_capacity_cost_curve",
-      "feedback": "Knowing the cost curve helps a buyer understand where capacity pressure raises marginal cost and affects contract terms.",
-      "aHash": "35886e7ed42ac8016f13c073e3e472320197173409089ded0511e8100e7d0eab"
+      "feedback": "Revenue is $3,400. Production cost rises $2,600 and testing adds $600, leaving $200. The job-specific fee is relevant.",
+      "aHash": "1bc1eec751cb1a5449be57243e567a1a069fb4d6b9b2c6e5cdd164fce46d8980"
     },
     {
       "id": 276,
       "sourceGame": "costDirective",
-      "q": "A plant's average cost is $40 at 5,000 units, $32 at 8,000 units, and $31 at 11,000 units. What is most likely true over this range?",
+      "q": "A fixed plant can produce 100 units at $3,000 total cost or 150 units at $4,200. The larger plan's total cost is higher. What does the average-cost evidence show?",
       "options": [
-        "Average cost is falling, but the gains from spreading scale may be slowing",
-        "The plant is experiencing diseconomies of scale at every output level",
-        "Marginal cost must be exactly $31 at 11,000 units",
-        "Average cost is rising because total output is increasing"
+        "Average cost falls from $30 to $28; total cost alone does not show unit cost.",
+        "Average cost rises by $1,200 per unit.",
+        "Marginal cost must equal the new $28 average.",
+        "This proves economies of scale from changing all inputs."
       ],
       "tag": "average_cost_output",
       "type": "interpretation",
@@ -5981,18 +5981,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_cost_output",
       "commonError": "confuses_total_and_average",
-      "feedback": "Average cost falls as output rises, but the decrease from $32 to $31 is smaller than the earlier drop.",
-      "aHash": "651b7b3a84bcd868487ac2a0391a15a2445c35ac9852148b095c186444c7a05e"
+      "feedback": "Average cost is 3,000/100 = $30 versus 4,200/150 = $28. This is a fixed-plant comparison, not proof about all-input scale changes.",
+      "aHash": "bdb6328823c2a56d9836b487cd770db11c0208c833db627bd1850cf38e760ef6"
     },
     {
       "id": 277,
       "sourceGame": "costDirective",
-      "q": "A firm doubles all inputs and output rises from 10,000 to 23,000 units. What returns to scale is it experiencing?",
+      "q": "A producer expands all inputs by 50% at unchanged input prices. Output rises from 200 to 330 units. Which result follows?",
       "options": [
-        "Constant returns to scale",
-        "Increasing returns to scale",
-        "Decreasing returns to scale",
-        "Diminishing marginal returns"
+        "Constant returns to scale because both inputs and output rise.",
+        "Increasing returns to scale; cost per unit falls.",
+        "Decreasing returns to scale because output rises by less than 200 units.",
+        "Diminishing marginal returns because one input was held fixed."
       ],
       "tag": "returns_to_scale",
       "type": "calculation",
@@ -6003,18 +6003,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
       "commonError": "confuses_with_diminishing_returns",
-      "feedback": "When all inputs double and output more than doubles, the firm has increasing returns to scale.",
-      "aHash": "b43902336e49d926263d77e4900a3b47a9fe58bddd8460b227efbb785a750b06"
+      "feedback": "Inputs and cost multiply by 1.5; output multiplies by 1.65. Output rises more proportionally, so unit cost falls when input prices are unchanged.",
+      "aHash": "872bf0e6709bd2e0c8905afaf0b4fe8edf23c871e06f1795a6fde63003ce4557"
     },
     {
       "id": 278,
       "sourceGame": "costDirective",
-      "q": "A firm doubles all inputs and output rises from 40,000 to 72,000 units. What is the correct classification?",
+      "q": "A firm scales every input from its current level to 1.25 times that level, with unchanged input prices. Output rises from 800 to 960 units. What does the comparison show?",
       "options": [
-        "Increasing returns to scale",
-        "Constant returns to scale",
-        "Decreasing returns to scale",
-        "Economies of scope"
+        "Increasing returns to scale because output rose by 160",
+        "Constant returns to scale because all inputs rose together",
+        "Decreasing returns to scale and higher cost per unit",
+        "Diminishing marginal returns with fixed capital"
       ],
       "tag": "returns_to_scale",
       "type": "calculation",
@@ -6025,18 +6025,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
       "commonError": "looks_only_at_output_increase",
-      "feedback": "Output rises, but less than doubles. That is decreasing returns to scale.",
-      "aHash": "1ccfca62406e75b88927edb55372aeb324dc8a3fd1a6214eddcbea139fe034d6"
+      "feedback": "Output grows 20%, less than the 25% increase in all inputs and cost. This is a scale comparison; unit cost rises by the ratio 1.25/1.20.",
+      "aHash": "35d93d338df8f93096daa4923684de9c4bce7d934273a7eb5eaad89903d4ac00"
     },
     {
       "id": 279,
       "sourceGame": "costDirective",
-      "q": "A factory's minimum efficient scale is 50,000 units. A rival operates at 12,000 units with the same technology. What advantage does the larger producer likely have?",
+      "q": "Long-run unit costs at feasible outputs are: 2,000 units, $18; 4,000, $14; 6,000, $12; 8,000, $12. These are the only available plant plans. A buyer orders 4,000 units. What limits a quote based on minimum unit cost?",
       "options": [
-        "It can ignore marginal cost because output is high",
-        "It must have higher average cost because total cost is higher",
-        "It avoids all opportunity costs by producing near capacity",
-        "It can spread scale-related costs over enough output to reach a lower average cost"
+        "The supplier must produce 8,000 because the largest plant defines minimum efficient scale.",
+        "The 4,000-unit plan already has the minimum unit cost.",
+        "The $12 unit cost can be achieved at any volume by allocating fixed cost differently.",
+        "The supplier needs at least 2,000 more units of demand to use the first minimum-cost plan."
       ],
       "tag": "minimum_efficient_scale",
       "type": "application",
@@ -6047,18 +6047,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
       "commonError": "confuses_total_and_average_cost",
-      "feedback": "Minimum efficient scale is the output level where average cost reaches its low range. Small rivals may face higher average cost.",
-      "aHash": "6d9f36e3229f9463c9d6f8f96d408fa9ae89ce84b4588e1b711395ab64b54255"
+      "feedback": "The smallest available output at the minimum $12 unit cost is 6,000. A 4,000-unit order leaves a 2,000-unit gap; accounting allocation does not remove it.",
+      "aHash": "d74150451ca589f2143602449a6e8e763587df6f693f5357d77919de7828e757"
     },
     {
       "id": 280,
       "sourceGame": "costDirective",
-      "q": "A startup's unit cost falls from $80 to $60 as cumulative production doubles, then to $48 after the next doubling. What concept best explains this pattern?",
+      "q": "A factory keeps its hourly output, machines and input prices unchanged. As accumulated experience doubles, setup mistakes fall and unit cost drops from $75 to $60. Which explanation fits best?",
       "options": [
-        "Learning curve effects",
-        "Diminishing marginal returns",
-        "Fixed-cost fallacy",
-        "Price ceiling effects"
+        "Learning from cumulative experience, with a 20% cost reduction",
+        "Economies of scope from producing two products",
+        "Economies of scale from a larger current production rate",
+        "Diminishing marginal returns from adding workers to fixed machines"
       ],
       "tag": "learning_curve",
       "type": "identification",
@@ -6069,18 +6069,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "learning_curve",
       "commonError": "confuses_learning_with_scale",
-      "feedback": "Learning curves describe cost reductions as cumulative experience improves production.",
-      "aHash": "8db3114997bd34dd1eb307a6ad70e51a0ad9b1a8d0945e0ccb611a24d9404844"
+      "feedback": "The controlled current production rate separates experience from scale. Cost falls 15/75 = 20%; the new cost is 80% of the old cost.",
+      "aHash": "3487c8dc30ca66764ebb999ebcac64fcac64cb4e04a47b2cff8bb7236a2a9fbc"
     },
     {
       "id": 281,
       "sourceGame": "costDirective",
-      "q": "A company can produce Product A for $90,000 and Product B for $70,000 separately. Joint production costs $145,000. What is the scope economy?",
+      "q": "Separate annual service costs are $72,000 for calibration and $54,000 for inspection. A shared team costs $108,000 plus $6,000 in coordination; it provides the same outputs and quality. What are net scope savings?",
       "options": [
-        "$145,000 in savings because joint production replaces separate production",
-        "$15,000 in cost savings from joint production",
-        "$15,000 in extra cost from producing two products together",
-        "$160,000 in savings because separate costs should be added to joint costs"
+        "$18,000",
+        "$12,000",
+        "$114,000",
+        "-$12,000"
       ],
       "tag": "economies_of_scope",
       "type": "calculation",
@@ -6091,18 +6091,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
       "commonError": "subtracts_in_wrong_direction",
-      "feedback": "Separate production costs $160,000. Joint production costs $145,000, saving $15,000.",
-      "aHash": "7aeb280ce7d108a0317ef4906f5e84c8c4a012f1d5fb06ad27b696b742cd7c3b"
+      "feedback": "Separate cost is $126,000; all-in joint cost is $114,000. Net savings are $12,000, after counting coordination.",
+      "aHash": "b08622c3255596a642de67b20552046a35198df5775dd4042eb6b81dc1185d7a"
     },
     {
       "id": 282,
       "sourceGame": "costDirective",
-      "q": "A warehouse becomes crowded as output rises. Workers spend more time waiting for equipment, and marginal cost rises. Which explanation fits?",
+      "q": "A fixed labeling machine handles 180 units with 4 workers, 220 with 5, and 250 with 6. Each additional worker costs the same per shift. What happens to labor cost per extra unit?",
       "options": [
-        "All inputs have doubled, creating constant returns to scale",
-        "Joint production is reducing cost through economies of scope",
-        "A fixed input is becoming congested, causing diminishing marginal returns",
-        "Sunk costs are being incorrectly included in marginal cost"
+        "It falls because total output is larger with six workers.",
+        "It is unchanged because the wage per worker is unchanged.",
+        "It rises for the sixth worker because that worker adds fewer units.",
+        "It proves diseconomies of scale because every input increased."
       ],
       "tag": "diminishing_marginal_returns",
       "type": "application",
@@ -6113,18 +6113,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "diminishing_marginal_returns",
       "commonError": "treats_congestion_as_scale",
-      "feedback": "With a fixed facility, extra variable inputs can run into congestion. That raises marginal cost through diminishing returns.",
-      "aHash": "23db049c547599af1591f80abba0b5cd72a5170a08064050a39450bc66abdd3a"
+      "feedback": "Marginal output falls from 40 to 30. The same worker cost spread over fewer extra units raises labor cost per additional unit; the machine is fixed.",
+      "aHash": "f4276d029ec52477da40fbcede30597561ec7a65aa5b66d650c73cf36c1d3c38"
     },
     {
       "id": 283,
       "sourceGame": "costDirective",
-      "q": "A buyer asks for a low price on a rush order that would push the supplier beyond normal capacity. What cost-curve issue matters most?",
+      "q": "A supplier's normal extra units cost $9 each up to 1,000 total units; units beyond that cost $15 each. It is already making 900. A 200-unit rush order also requires a $100 setup. At $13 each, should it accept?",
       "options": [
-        "Average fixed cost is the only cost relevant to rush orders",
-        "The supplier's marginal cost must fall whenever output increases",
-        "The buyer should ignore the supplier's capacity because price is negotiable",
-        "Marginal cost may be higher for rush output beyond the efficient range"
+        "Yes; it adds $800 by applying $9 to every unit.",
+        "No; it loses $500 by applying $15 to every unit.",
+        "No; any order crossing normal capacity must lose money.",
+        "Yes; the order adds $100 after both cost ranges and setup."
       ],
       "tag": "cost_curves_contracts",
       "type": "application",
@@ -6137,18 +6137,18 @@ const questionBanks = {
       ],
       "repairSkill": "cost_curves_contracts",
       "commonError": "assumes_flat_marginal_cost",
-      "feedback": "Rush or high-volume orders can move production into a range where marginal cost rises. That matters in negotiation.",
-      "aHash": "dd13224cfd1bb022d14461428a07e595c561d358ed5cabb024a47f60f3c0a028"
+      "feedback": "The first 100 cost $900 and the next 100 cost $1,500. Add $100 setup: $2,500 cost against $2,600 revenue, a $100 gain.",
+      "aHash": "446b06ca7c570ea2f242352c9e28dcd9cc32c20f13ab94e0a3234352a6bfa534"
     },
     {
       "id": 284,
       "sourceGame": "costDirective",
-      "q": "A firm finds average cost falling from $12 to $9 as output rises, then flattening near $8. What does the flat area suggest?",
+      "q": "Only four plant sizes are feasible. Their long-run cost data are shown.<table><thead><tr><th scope=\"col\">Output</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>1000</td><td>$18,000</td></tr><tr><td>2000</td><td>$28,000</td></tr><tr><td>3000</td><td>$36,000</td></tr><tr><td>4000</td><td>$48,000</td></tr></tbody></table>What is minimum efficient scale among these plans?",
       "options": [
-        "The firm is near the minimum efficient scale range",
-        "The firm has no fixed costs at any output",
-        "The firm is definitely suffering diminishing marginal returns in the short run",
-        "The firm should stop production because total cost is rising"
+        "3,000 units",
+        "1,000 units",
+        "2,000 units",
+        "4,000 units"
       ],
       "tag": "minimum_efficient_scale",
       "type": "interpretation",
@@ -6161,18 +6161,18 @@ const questionBanks = {
       ],
       "repairSkill": "minimum_efficient_scale",
       "commonError": "misreads_flat_ac",
-      "feedback": "Minimum efficient scale is the output range where average cost has fallen to its low level.",
-      "aHash": "59cded89eaf203f79b950af448b2feb64525f78e516b67cb53cf9bfa59dfcfd8"
+      "feedback": "Average costs are $18, $14, $12 and $12. The smallest output attaining the minimum is 3,000.",
+      "aHash": "996adbd19abe24894b643215a7fbd0081f39fe937dc887b07af9ba44195a7774"
     },
     {
       "id": 285,
       "sourceGame": "costDirective",
-      "q": "A company opens a larger plant. It triples labor and capital, but output also triples. What returns to scale does this show?",
+      "q": "Plant A increases labor and machines by 40% and output by 40%. Plant B holds machines fixed while extra workers add progressively less output. Which classification is appropriate?",
       "options": [
-        "Increasing returns to scale",
-        "Constant returns to scale",
-        "Decreasing returns to scale",
-        "Diminishing marginal returns"
+        "A: increasing returns to scale; B: economies of scope",
+        "A: constant returns to scale; B: diminishing marginal returns",
+        "A: diminishing marginal returns; B: constant returns to scale",
+        "A and B: decreasing returns to scale"
       ],
       "tag": "returns_to_scale",
       "type": "identification",
@@ -6183,18 +6183,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
       "commonError": "confuses_output_growth_with_increasing_returns",
-      "feedback": "When all inputs and output rise by the same proportion, returns to scale are constant.",
-      "aHash": "4afcedd9184d58c718cce4e396cd98b89fbea90ad79a74521565ac77f5c36fad"
+      "feedback": "A changes every input proportionally with proportional output. B varies labor against fixed machines. The relevant comparison differs between the two.",
+      "aHash": "aab0a00cbed167db346977a576d12700a5f0dc18667213003b8c21cc24c13e47"
     },
     {
       "id": 286,
       "sourceGame": "costDirective",
-      "q": "A firm expects unit cost to fall as workers repeat a complex assembly process over the product life cycle. Why does this matter for strategy?",
+      "q": "A supplier's current cost is $50 per unit. Experience is expected to lower it to $40 on later comparable units while current production rate stays fixed. A manager uses $40 to justify a $43 price on all current units. What is the concern?",
       "options": [
-        "Learning curves prove the firm should price below marginal cost forever",
-        "Learning effects mean opportunity costs disappear over time",
-        "Early cost may overstate long-run cost if learning reduces future production cost",
-        "Learning curves matter only for accounting depreciation"
+        "A learning effect means every unit currently costs $40.",
+        "Any price below the first unit's cost must be rejected over the full life cycle.",
+        "Future learning does not remove the current $7 loss per unit; evaluate the full contract.",
+        "The forecast proves economies of scope because costs change over time."
       ],
       "tag": "learning_curve",
       "type": "application",
@@ -6207,18 +6207,18 @@ const questionBanks = {
       ],
       "repairSkill": "learning_curve",
       "commonError": "uses_current_cost_as_permanent",
-      "feedback": "Learning curves matter because costs can fall with accumulated experience, affecting pricing, entry, and production plans.",
-      "aHash": "c27742ea64f621d1cd1ce571546376721c644a15ed2972757a8255233ec22540"
+      "feedback": "At present cost, each $43 sale loses $7. Later margins may offset that loss, but the quantities and timing must be assessed; a forecast is not current cost.",
+      "aHash": "880a3dfc5f40bcba164cc932a544af321ea31dbf5fd12b4fbce166d1a5113fd9"
     },
     {
       "id": 287,
       "sourceGame": "costDirective",
-      "q": "A delivery company uses the same trucks and routing software to offer grocery delivery and pharmacy delivery at lower combined cost than running two separate systems. This is:",
+      "q": "A field-service firm compares equal outputs: water testing alone costs $44,000, soil testing alone $38,000, and both together $70,000 including coordination. Which interpretation fits?",
       "options": [
-        "Diseconomies of scale",
-        "Fixed-cost fallacy",
-        "Diminishing marginal returns",
-        "Economies of scope"
+        "This proves increasing returns to scale in a single product.",
+        "Joint provision costs $70,000 more than separate provision.",
+        "Learning is proven because the combined cost is lower.",
+        "Joint provision saves $12,000 through economies of scope."
       ],
       "tag": "economies_of_scope",
       "type": "identification",
@@ -6229,18 +6229,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
       "commonError": "confuses_scope_and_scale",
-      "feedback": "Economies of scope occur when producing multiple products together is cheaper than producing them separately.",
-      "aHash": "cf9cdabc57e330c328ceab504e71e51de7b3bb8d005c531b89f8b0a31e2cfa5c"
+      "feedback": "Joint cost is less than the sum of separate costs by 44,000 + 38,000 - 70,000 = $12,000. The comparison is across products, not cumulative experience or a proportional input expansion.",
+      "aHash": "c4bd03452486c593e3f0c4332eaae41590d06084b889a1aaee81d793b8ee03d2"
     },
     {
       "id": 288,
       "sourceGame": "costDirective",
-      "q": "A supplier's average cost is low only between 80,000 and 120,000 units. Below that range, average cost is much higher. What should a buyer consider when negotiating a small order?",
+      "q": "At 2,000 units a supplier's full monthly cost is $30,000; at 5,000 units it is $55,000. No other sales exist. A buyer wants 2,000 units at the larger plan's $11 unit cost. What is the issue?",
       "options": [
-        "A small order may not let the supplier operate near minimum efficient scale",
-        "A small order must have the same average cost as a large order",
-        "The supplier should price only from total fixed cost",
-        "Minimum efficient scale matters only after a contract is signed"
+        "The requested revenue is $8,000 short of the cost of serving that standalone volume.",
+        "The supplier earns $8,000 because the smaller order uses fewer units.",
+        "The supplier's cost at 2,000 units is $22,000 by definition.",
+        "The larger plan proves that any extra unit costs exactly $11."
       ],
       "tag": "cost_curves_contracts",
       "type": "application",
@@ -6254,18 +6254,18 @@ const questionBanks = {
       ],
       "repairSkill": "cost_curves_contracts",
       "commonError": "ignores_order_size_ac",
-      "feedback": "Order size can affect whether the supplier operates in a low-average-cost range. That can shape feasible pricing.",
-      "aHash": "23ae3d71a27720c49eeb357ca71984979f1e934bccb186babab51bfb3c6612e2"
+      "feedback": "At the requested volume, revenue is 2,000 × 11 = $22,000 against $30,000 cost. A larger plan's average is not automatically available at a smaller standalone volume.",
+      "aHash": "e97bd1778a710239de0bdff57a03561132b60de74471208a34ef52eae22f9f7d"
     },
     {
       "id": 289,
       "sourceGame": "costDirective",
-      "q": "A firm produces two products together for $210,000. Producing them separately would cost $110,000 and $115,000. Which statement is correct?",
+      "q": "A firm's two service lines cost $63,000 and $47,000 separately. Combining them costs $94,000, but requires an additional $20,000 annual coordination team. What does the complete comparison imply?",
       "options": [
-        "Joint production costs $15,000 more, showing diseconomies of scope",
-        "Joint production saves $15,000, showing economies of scope",
-        "Joint production saves $210,000 because both products share a facility",
-        "Separate production saves $225,000 because the costs are listed separately"
+        "Joint provision saves $16,000 because coordination is fixed.",
+        "Joint provision costs $4,000 more; the apparent scope saving disappears.",
+        "Joint provision saves $110,000 because separate costs disappear.",
+        "The comparison demonstrates diminishing marginal returns with fixed capital."
       ],
       "tag": "economies_of_scope",
       "type": "calculation",
@@ -6276,20 +6276,20 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
       "commonError": "subtracts_joint_from_one_product",
-      "feedback": "Separate production costs $225,000. Joint production costs $210,000, so joint production saves $15,000.",
-      "aHash": "096a61d48851ab8796e88e6b59ac84490442332a78405f20e9b4bc06ae3fb973"
+      "feedback": "The joint option costs 94,000 + 20,000 = $114,000, exceeding separate cost of $110,000. Avoidable coordination cost must be counted.",
+      "aHash": "36b058a7a1f81c7856d3988115af12cd808499d8bdd01cc97ffd385b3bbbe882"
     }
   ],
   "elite": [
     {
       "id": 300,
       "sourceGame": "costDirective",
-      "q": "A warehouse manager blames late shipments on lazy workers and proposes a bonus. What should the manager do before choosing that fix?",
+      "q": "A fulfillment unit's profit fell after a speed bonus began. Orders per hour rose, paid hours stayed constant, and refunds rose. The supervisor proposes another packer. Which next step best distinguishes a capacity problem from a metric problem?",
       "options": [
-        "Define the decision, objective, constraints, alternatives, information, and incentives",
-        "Compare this year's labor budget with last year's labor budget only",
-        "Ask whether competitors use bonuses before reviewing internal data",
-        "Start the bonus program and decide later whether delays changed"
+        "Link refunds to order handling and bonus exposure, then compare net value under feasible staffing choices.",
+        "Approve the packer because lower profit establishes a labor shortage.",
+        "Double the speed bonus because measured productivity already improved.",
+        "Cancel all refunds so the original productivity improvement reaches reported profit."
       ],
       "tag": "problem_solving_steps",
       "type": "integration",
@@ -6303,8 +6303,8 @@ const questionBanks = {
       ],
       "repairSkill": "problem_solving_steps",
       "commonError": "solution_before_diagnosis",
-      "feedback": "The first step is to diagnose the decision problem before committing to a solution.",
-      "aHash": "7457efb9850a24b97eb0ce5df143c93c09fc301d39c412b9d5ca6d12fd7b77ae"
+      "feedback": "The same facts are consistent with faster but less reliable work. Diagnosis needs evidence connecting decisions to downstream cost before selecting a staffing or incentive fix.",
+      "aHash": "7abb146d95c627d83fbcdaddb3b57e3491aa7d1720b688abe1fb955a21eafb07"
     },
     {
       "id": 301,
@@ -6333,12 +6333,12 @@ const questionBanks = {
     {
       "id": 302,
       "sourceGame": "costDirective",
-      "q": "A software firm says its support backlog is a staffing problem. Which finding would most strongly suggest the problem has been misdiagnosed?",
+      "q": "A clinic attributes appointment delays to reception staffing. An audit finds reception has idle time, clinicians release schedules late, and reception is rewarded for keeping every slot full. Which finding most challenges the proposed staffing solution?",
       "options": [
-        "The support team has lower morale than other departments",
-        "The support budget is larger than it was three years earlier",
-        "The backlog rises after product updates that create preventable customer issues",
-        "The support director wants authority to approve overtime"
+        "Idle reception time proves that all delays are caused by low effort.",
+        "Full appointment books establish that the objective is already met.",
+        "Available reception time cannot solve missing schedules or a reward that encourages overfilling.",
+        "A larger reception team necessarily gives clinicians better scheduling incentives."
       ],
       "tag": "problem_solving_steps",
       "type": "trap",
@@ -6351,18 +6351,18 @@ const questionBanks = {
       ],
       "repairSkill": "problem_solving_steps",
       "commonError": "accepts_surface_symptom",
-      "feedback": "A backlog may be a symptom. If updates create preventable issues, the decision problem may sit upstream.",
-      "aHash": "f65c111d9d582200960962d4f6b4a4f8ed89e798e9fd2d2abfa9b6cca94341fc"
+      "feedback": "The evidence points to information timing and the booking objective, not simply the quantity of reception labor. It does not prove a single cause but challenges the stated diagnosis.",
+      "aHash": "40cb5133804950cf72857fca216102aaee2fb3caf0780febb5524499de8bd5a0"
     },
     {
       "id": 303,
       "sourceGame": "costDirective",
-      "q": "An employee rejects optional weekend training because it is unpaid and unlikely to affect promotion. Under the rational-actor paradigm, what is the best interpretation?",
+      "q": "A worker can spend two hours improving documentation. It reduces coworkers' future effort by six hours, but brings her no pay or recognition and costs her $50 in valued time. Which interpretation best separates private and organizational objectives?",
       "options": [
-        "The employee is irrational because training can never be costly",
-        "The employee must be acting selfishly rather than optimally",
-        "The employee is ignoring incentives because training is optional",
-        "The employee may be acting rationally given the perceived costs and benefits"
+        "Declining proves she does not understand the six-hour saving.",
+        "A rational worker must treat coworkers' saved time as her own reward.",
+        "The firm should count only the worker's pay because time lacks economic value.",
+        "Declining can be privately rational even when the documentation creates more firm value."
       ],
       "tag": "rational_actor_paradigm",
       "type": "interpretation",
@@ -6375,8 +6375,8 @@ const questionBanks = {
       ],
       "repairSkill": "rational_actor_paradigm",
       "commonError": "confuses_rational_with_always_cooperative",
-      "feedback": "Rational actors weigh expected benefits and costs from their own perspective.",
-      "aHash": "8d9ee37ead2d780d6257e1f01a12e85870e18cb93d4a6feed1044590adb8534a"
+      "feedback": "The benefits accrue elsewhere while she bears the effort cost. Management should investigate whether information and rewards let her share in valuable improvements.",
+      "aHash": "179f3574006098de3104510c88545f41e414a81dfe7e881df912494d335017ea"
     },
     {
       "id": 304,
@@ -6405,12 +6405,12 @@ const questionBanks = {
     {
       "id": 305,
       "sourceGame": "costDirective",
-      "q": "Which observation is most consistent with rational actors responding to incentives rather than merely following rules?",
+      "q": "A purchasing team can choose A: $12 invoice plus $5 expected failure cost, or B: $15 invoice plus $1 failure cost. Bonuses reward invoice savings and failure costs are visible. They choose A. What is the best inference?",
       "options": [
-        "Employees ignore a bonus after it is tied to a metric they cannot influence",
-        "Employees increase documented calls after rewards are tied to call volume",
-        "Employees always choose the action that maximizes total company value",
-        "Employees prefer the oldest policy because it is familiar"
+        "A is efficient because its invoice is $3 lower.",
+        "A privately rewarded saving can cause a $1 higher total cost; information alone may not change the choice.",
+        "B costs $4 more because only failure costs should be compared.",
+        "The observed choice proves the team has no cost information."
       ],
       "tag": "rational_actor_paradigm",
       "type": "application",
@@ -6425,18 +6425,18 @@ const questionBanks = {
       ],
       "repairSkill": "rational_actor_paradigm",
       "commonError": "treats_rules_as_behavior",
-      "feedback": "A metric tied to rewards can change behavior when employees can influence it.",
-      "aHash": "5826a3379a7df3a4cbea480dd4491f1429d73b15638f8a40dda0d22ca0097460"
+      "feedback": "A costs $17 in total and B $16. The bonus values the $3 invoice saving while ignoring the $4 extra failure cost.",
+      "aHash": "ec6b4c577a0a4628ffe991270eb3b53001d58369f2bf736096c417aac9af1792"
     },
     {
       "id": 306,
       "sourceGame": "costDirective",
-      "q": "A call center rewards representatives only for shorter calls. Complaints rise because complex cases are rushed. What design flaw is most likely?",
+      "q": "A support plan pays $8 per closure. Closing a case early gives an agent the payment, but a 40% chance of reopening causes the firm $30 in extra support cost. A verified resolution costs the agent additional effort. Which redesign targets the distortion?",
       "options": [
-        "The reward is too transparent for employees to understand",
-        "The incentive is fixed, so employees cannot respond to it",
-        "The incentive measures one dimension while ignoring service quality",
-        "The firm used performance data instead of seniority data"
+        "Pay another $8 whenever the same case reopens and closes.",
+        "Raise the initial closure payment to compensate for difficult cases without verification.",
+        "Condition payment on resolution after a defined follow-up period, including reopened cases.",
+        "Judge only the count of closures because expected support cost is uncertain."
       ],
       "tag": "incentive_system_design",
       "type": "application",
@@ -6450,8 +6450,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_system_design",
       "commonError": "single_metric_problem",
-      "feedback": "A good incentive system measures behavior tied to the real objective, not just an easy metric.",
-      "aHash": "15657ac874162df788827fc5420eb0907bcfa97d011907a6ebe2f31f4c1acb64"
+      "feedback": "Premature closure can create $12 in expected extra cost. Linking payment to durable resolution accounts for the outcome currently excluded from the metric.",
+      "aHash": "dc4f16194b31d176330ce4903d676a7964f7c4c112c3e7763e28956106590e15"
     },
     {
       "id": 307,
@@ -6481,12 +6481,12 @@ const questionBanks = {
     {
       "id": 308,
       "sourceGame": "costDirective",
-      "q": "A firm wants higher output but also low defect rates. Which incentive plan is most likely to avoid a distortion?",
+      "q": "A shop can reward units started or accepted units net of rework. A team starts 120, delivers 100 accepted units, and incurs $240 rework cost; another starts 110, delivers 105, and incurs $60 rework. Each accepted unit contributes $20 before rework. Which measure ranks the teams consistently with value?",
       "options": [
-        "Reward output growth while also penalizing excessive defect rates",
-        "Pay only for units produced, then inspect defects next quarter",
-        "Pay a fixed salary and stop tracking performance metrics",
-        "Reward the fastest team even if customer returns increase"
+        "Accepted contribution less rework; the second team creates $2,040 versus $1,760.",
+        "Units started; the first team creates more value because 120 exceeds 110.",
+        "Accepted units plus rejected units; both kinds consume effort.",
+        "Rework spending alone; it captures all customer value and output differences."
       ],
       "tag": "incentive_system_design",
       "type": "integration",
@@ -6501,18 +6501,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_system_design",
       "commonError": "ignores_multitasking_tradeoff",
-      "feedback": "When multiple objectives matter, the incentive system should not reward one while sacrificing the other.",
-      "aHash": "5977902d5bae4d77bf31f624b468f38f547f95cf811b095e4fe7277ca4101e42"
+      "feedback": "Net values are 100×20 - 240 = $1,760 and 105×20 - 60 = $2,040. The measure includes both useful output and its quality cost.",
+      "aHash": "eb8ecb493c99de50c22b5d7bbd6675b2e19c297bd7401b535dbe8d794d1982cd"
     },
     {
       "id": 309,
       "sourceGame": "costDirective",
-      "q": "A purchasing clerk has the best supplier information but is rewarded for avoiding all risk, so she keeps using an expensive incumbent supplier. What organizational-design problem appears?",
+      "q": "Store managers see local sales prospects. Central analysts see delivery costs, and managers receive bonuses for revenue. A locally attractive order loses money after delivery. Which organizational change is most complete?",
       "options": [
-        "The firm centralized too many decisions in the finance department",
-        "The clerk has information, but incentives discourage value-creating choices",
-        "The supplier market cannot create wealth through voluntary exchange",
-        "The clerk should be replaced by a manager with less supplier information"
+        "Share delivery estimates but continue to reward only sales revenue.",
+        "Share delivery-cost estimates with managers and reward contribution after those costs.",
+        "Centralize all orders while discarding managers' local customer information.",
+        "Reward order count so that delivery costs average out automatically."
       ],
       "tag": "organization_design_info_incentives",
       "type": "application",
@@ -6526,8 +6526,8 @@ const questionBanks = {
       ],
       "repairSkill": "organization_design_info_incentives",
       "commonError": "separates_information_from_incentives",
-      "feedback": "A well-designed organization gives decision makers both useful information and incentives aligned with the firm's goals.",
-      "aHash": "e123a3df13a58e360cee8adfd19f0b9f9896f441779ab01cddbf1a351f205d45"
+      "feedback": "Good decision rights require relevant information and aligned incentives together. Neither a data feed nor a narrower sales target by itself fixes both weaknesses.",
+      "aHash": "73cd4abf4ffc8471e3a090f4b4f7e1f6a879653a89da1e68a0f056f4dbfd71ce"
     },
     {
       "id": 310,
@@ -6557,12 +6557,12 @@ const questionBanks = {
     {
       "id": 311,
       "sourceGame": "costDirective",
-      "q": "A firm wants local managers to make pricing decisions. Which design best supports that authority?",
+      "q": "An engineer chooses parts that save her division $30,000 but impose $44,000 of expected service costs on another division. Both forecasts are available before approval. Which design best makes the informed choice serve the whole firm?",
       "options": [
-        "Move every decision to headquarters to remove employee discretion",
-        "Reward departments for cutting their own costs even if total cost rises",
-        "Let employees choose goals without measuring whether goals are met",
-        "Give local managers demand data and reward them for contribution margin"
+        "Require more detailed part-price reports while retaining the current divisional bonus.",
+        "Charge all historical service costs to the engineer regardless of the design chosen.",
+        "Remove service-cost data because it belongs to another division.",
+        "Evaluate design savings net of attributable service costs and give the engineer authority within that rule."
       ],
       "tag": "organization_design_info_incentives",
       "type": "integration",
@@ -6576,18 +6576,18 @@ const questionBanks = {
       ],
       "repairSkill": "organization_design_info_incentives",
       "commonError": "confuses_control_with_design",
-      "feedback": "Good organization design matches decision rights, information, and incentives.",
-      "aHash": "5c78664588a382011f10099aa91e12dfbcae878122787d0de8d8ed522f98b421"
+      "feedback": "The change loses $14,000 overall. Accountability should include consequences the engineer can affect, rather than unrelated historical costs or a single department's budget.",
+      "aHash": "07b9dbd55d3aa01e8542e5160fd35ea24a88fcf077efd0905d04e85e21c3c5de"
     },
     {
       "id": 312,
       "sourceGame": "costDirective",
-      "q": "A new product team asks, 'Should we launch?' Which follow-up question best turns that into managerial analysis?",
+      "q": "A unit proposes outsourcing because its accounting loss is $18,000. Revenue is $90,000, direct avoidable cost $76,000, and remaining allocated overhead stays regardless. Outsourcing the same work costs $81,000. Which question best advances the decision?",
       "options": [
-        "What objective are we maximizing, and what alternatives are we comparing?",
-        "Which launch date would sound most confident to investors?",
-        "Can we classify the launch as marketing rather than operations?",
-        "Which sunk development costs must be recovered before launch?"
+        "Does outsourcing provide any additional benefit worth its $5,000 extra relevant cost?",
+        "How can the unit eliminate the full $18,000 loss by reallocating overhead?",
+        "Can the unit recover all historical overhead before outsourcing?",
+        "Is the $90,000 revenue larger than the accounting loss?"
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "application",
@@ -6601,18 +6601,18 @@ const questionBanks = {
       ],
       "repairSkill": "managerial_problem_diagnosis",
       "commonError": "asks_vague_yes_no",
-      "feedback": "Managerial problem solving turns vague yes-or-no issues into objectives, alternatives, constraints, and tradeoffs.",
-      "aHash": "c82ea3bc9f0a4bde113fd0dfc6ca8fb64194bcb4cec851326f562e887ab7dd92"
+      "feedback": "Keeping costs $76,000 that can be avoided; outsourcing costs $81,000. Revenue and unavoidable overhead cancel, leaving a $5,000 hurdle for other outsourcing benefits.",
+      "aHash": "594e33c7c25b047651ea7cbd40ca84721a3bf7da92170692d87f3f3ba2493432"
     },
     {
       "id": 313,
       "sourceGame": "costDirective",
-      "q": "A plant supervisor asks whether to add a second shift. Which answer is most useful for solving the problem?",
+      "q": "A depot considers a second shift bringing $14,000 in added receipts. It needs $6,000 labor, $3,000 materials and $2,000 security. It also displaces a rental earning $4,000 net. A pilot report counts only labor and materials. Which diagnosis matters before approval?",
       "options": [
-        "Second shifts are common in manufacturing, so the choice is probably acceptable",
-        "The relevant comparison is added revenue versus added labor, utilities, supervision, and coordination costs",
-        "A second shift should be rejected unless fixed factory rent also increases",
-        "The decision should be based on whether last year's budget included second-shift labor"
+        "The report understates the gain because rent is never an opportunity cost.",
+        "The report omits security and a forgone rental, turning a claimed $5,000 gain into a $1,000 loss.",
+        "The original building purchase must replace all pilot costs in the decision.",
+        "The shift should launch because revenue exceeds the two largest expense lines."
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "integration",
@@ -6628,8 +6628,8 @@ const questionBanks = {
       ],
       "repairSkill": "managerial_problem_diagnosis",
       "commonError": "uses_accounting_categories_only",
-      "feedback": "A useful answer compares the future benefits and costs that change because of the decision.",
-      "aHash": "c7d6f893a009bdf56f23e4f412907c07e98dd7bb01432b0d7fc6257226e7047c"
+      "feedback": "The full comparison is 14,000 - 6,000 - 3,000 - 2,000 - 4,000 = -$1,000. The pilot's narrower arithmetic is correct but incomplete.",
+      "aHash": "c4e63ccaf04174c825940aea4ac4d25e6059f802ec07d80f61a1b5d2a8ea9eb9"
     },
     {
       "id": 314,
@@ -6659,12 +6659,12 @@ const questionBanks = {
     {
       "id": 315,
       "sourceGame": "costDirective",
-      "q": "A supplier can produce a component for $18, and a buyer values it at $31. They agree on $24. Which statement is correct?",
+      "q": "A seller requires $120 net for a device and a buyer values it at $190. Buyer-paid delivery consumes $10 of resources and a seller-remitted tax is $20. A price of $150 is paid to the seller before tax. What are buyer gain, seller gain and government revenue?",
       "options": [
-        "The transaction creates $7 of total surplus because that is the seller's gain",
-        "The transaction destroys value because the buyer pays more than the supplier's cost",
-        "The transaction creates no wealth because the price is only a transfer",
-        "The transaction creates $13 of total surplus, split between buyer and seller"
+        "$40, $30 and $20 respectively",
+        "$30, $30 and $10 respectively",
+        "$10, $30 and $20 respectively",
+        "$30, $10 and $20 respectively"
       ],
       "tag": "voluntary_transactions_surplus",
       "type": "calculation",
@@ -6678,8 +6678,8 @@ const questionBanks = {
       ],
       "repairSkill": "voluntary_transactions_surplus",
       "commonError": "confuses_price_with_surplus",
-      "feedback": "Total surplus is buyer value minus seller cost: $31 - $18 = $13.",
-      "aHash": "8b72ba05f2eca63fb64cf951dca86c618f94ffeac9ad764e72f389b5ad7f0a01"
+      "feedback": "Buyer gain is 190 - 150 - 10 = $30; seller gain is 150 - 20 - 120 = $10. Government receives $20. Private gains plus revenue total $60, equal to value minus reservation cost and delivery.",
+      "aHash": "18c519d7191a124eb035a1b19896433abd45ef05d78d376a61e436bf2c7ae57c"
     },
     {
       "id": 316,
@@ -6709,12 +6709,12 @@ const questionBanks = {
     {
       "id": 317,
       "sourceGame": "costDirective",
-      "q": "A buyer values emergency repair at $5,000. A contractor's opportunity cost is $3,800. A regulation prevents the transaction unless the price is below $3,000. What is the likely effect?",
+      "q": "Three independent buyers each want one unit, valued at $100, $82 and $65. Three sellers each offer one unit, at reservation costs $40, $60 and $90. Match highest values to lowest costs, with no other costs. A maximum buyer price of $55 applies and payments cannot be supplemented. What happens?",
       "options": [
-        "The rule increases total surplus because the buyer would pay less",
-        "The rule blocks a value-creating trade with $1,200 of potential surplus",
-        "The rule has no efficiency effect because the price is only a transfer",
-        "The rule creates a surplus of repair services because prices are lower"
+        "All three sellers accept because three buyers value a unit above $55.",
+        "Only one seller accepts; one of the two otherwise positive-gain trades is prevented.",
+        "Two sellers accept because the efficient count is two without the rule.",
+        "No trade occurs because every controlled price destroys every gain."
       ],
       "tag": "voluntary_transactions_surplus",
       "type": "integration",
@@ -6729,18 +6729,18 @@ const questionBanks = {
       ],
       "repairSkill": "voluntary_transactions_surplus",
       "commonError": "ignores_blocked_surplus",
-      "feedback": "The trade would create $5,000 - $3,800 = $1,200 in surplus, but the price rule can prevent it.",
-      "aHash": "319ba71c8ad13297a32bae24ab2ce330afbf8cc747d781ffe2677b5367e11441"
+      "feedback": "Without the cap, efficient matching yields gaps $60, $22 and -$25, so two trades create gains. At a maximum payment of $55, only the $40-cost seller can be paid enough.",
+      "aHash": "c3d065cdece670107f79620981d15415ee8daddae66da41033e5bbe2f1ed2f3b"
     },
     {
       "id": 318,
       "sourceGame": "costDirective",
-      "q": "A restaurant owns a delivery van worth $8,000 to the restaurant, while a courier company values it at $11,000. The sale fails because transfer paperwork costs $4,000. What happened?",
+      "q": "A good sold for $28 before tax. After a tax, buyers pay $31 and sellers receive $24; sales fall from 500 to 420. Which conclusion is correct?",
       "options": [
-        "The van had no opportunity cost once it was already owned",
-        "The restaurant created wealth by avoiding all paperwork",
-        "A transaction cost blocked movement to a higher-valued use",
-        "The courier company must value every asset at its accounting cost"
+        "Buyers bear the full $7; revenue is $3,500 on the original 500 units.",
+        "Buyers bear $3 and sellers $4; revenue is $1,260.",
+        "Buyers bear $3 and sellers $4 per surviving sale; tax revenue is $2,940.",
+        "The lost 80 sales themselves produce $560 of tax revenue."
       ],
       "tag": "barriers_to_trade",
       "type": "application",
@@ -6754,8 +6754,8 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "ignores_transaction_costs",
-      "feedback": "The asset would create value in the courier company, but transaction costs can prevent the transfer.",
-      "aHash": "68470ecdac448d94b979919da9a31199ac8e5a61a61352f2a9d36ad4cf67c8a9"
+      "feedback": "The price changes split the $7 wedge into $3 and $4. Revenue uses actual taxed sales: 420×7 = $2,940. Lost trades pay no tax.",
+      "aHash": "eb824bba6edb4228c000f8aa83200b7e330cd10ef9fa5d32a72cd64cd3187b3a"
     },
     {
       "id": 319,
@@ -6785,12 +6785,12 @@ const questionBanks = {
     {
       "id": 320,
       "sourceGame": "costDirective",
-      "q": "A city permit delays food-truck entry for six months. Demand is high, and vendors are ready to operate. Which efficiency concern is most direct?",
+      "q": "A venue rental floor is $75, above a stated clearing price of $60. At the floor, 100 slots are offered and 70 requested. A separate rule caps equipment rentals at $20; at that cap 95 are requested and 65 offered. Which report is accurate?",
       "options": [
-        "The delay may keep assets and labor from moving to higher-valued uses",
-        "The delay proves food trucks have no comparative advantage",
-        "The delay reduces accounting costs by limiting the number of firms",
-        "The delay guarantees existing restaurants will use resources efficiently"
+        "Venue surplus 30; equipment shortage 30; quantities traded require matching assumptions.",
+        "Both markets have a shortage of 30 because both rules bind.",
+        "Venue shortage 30; equipment surplus 30.",
+        "Both markets must trade their larger stated quantity."
       ],
       "tag": "barriers_to_trade",
       "type": "application",
@@ -6804,18 +6804,18 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "ignores_asset_mobility",
-      "feedback": "Barriers can reduce efficiency by preventing resources from moving where they create more value.",
-      "aHash": "e948ee2db6d5e0fa86c5844470e5407128df5334d543f93d68f9d4f32a7f9eaf"
+      "feedback": "At the floor, offered minus requested is 30. At the cap, requested minus offered is 30. These gaps alone do not guarantee completed matching or allocation efficiency.",
+      "aHash": "29f7df5f5facba4ebea04cff9985a9c95a18dc0d6d70ed2d0d91ff6dc83804a4"
     },
     {
       "id": 321,
       "sourceGame": "costDirective",
-      "q": "A firm shifts technicians from low-value warranty visits to high-value installation work without increasing total labor hours. Why can profit rise?",
+      "q": "A technician can complete either 4 calibrations, each worth $180 to customers with $50 other cost, or 6 inspections, each worth $110 with $20 other cost. Technician time is the same and there are no other differences. Which assignment creates more total value?",
       "options": [
-        "Fixed costs disappear when labor is reassigned",
-        "The same resources are moved to a higher-valued use",
-        "Accounting profit rises whenever workers stay busy",
-        "Variable cost falls to zero when output changes"
+        "Calibrations, by $70 because each has a larger per-job gap",
+        "Inspections, by $20 for the shift",
+        "Calibrations, by $60 because their total customer value is higher",
+        "Both, because the same labor time is used"
       ],
       "tag": "efficiency_business_value",
       "type": "application",
@@ -6829,8 +6829,8 @@ const questionBanks = {
       ],
       "repairSkill": "efficiency_business_value",
       "commonError": "equates_activity_with_value",
-      "feedback": "Efficiency can increase business value by reallocating scarce resources to uses where they create more surplus.",
-      "aHash": "4cf7820eb3d38381bef19102256d0353d9b7808a200753533db2da3fb5714b5f"
+      "feedback": "Calibration gains are 4×(180-50) = $520; inspection gains are 6×(110-20) = $540. Compare value over the same scarce shift, not per job.",
+      "aHash": "b59b2f4c56eb3cc1fc935f295929404b9f30dc478ce8cd597a09e2b2992a2770"
     },
     {
       "id": 322,
@@ -6860,12 +6860,12 @@ const questionBanks = {
     {
       "id": 323,
       "sourceGame": "costDirective",
-      "q": "A manager says, 'Efficiency is only about cutting costs.' Which correction is best?",
+      "q": "A delivery firm can save $4,000 monthly with a cheaper route plan. It would require $1,000 extra sorting and sacrifice deliveries creating $4,500 of net customer-and-firm value. Which correction to the 'lowest expense is most efficient' claim is strongest?",
       "options": [
-        "Efficiency requires every department to reduce its budget by the same percent",
-        "Efficiency means the firm should ignore customer willingness to pay",
-        "Efficiency is the same as maximizing output regardless of quality",
-        "Efficiency compares value created with resources used, not just spending cuts"
+        "It improves efficiency by $4,000 because routing is the target expense.",
+        "It improves efficiency by $3,000 because only cash expenses count.",
+        "It has no efficiency effect unless every input changes proportionally.",
+        "The plan reduces net value by $1,500 after all consequences."
       ],
       "tag": "efficiency_business_value",
       "type": "trap",
@@ -6879,18 +6879,18 @@ const questionBanks = {
       ],
       "repairSkill": "efficiency_business_value",
       "commonError": "cost_cutting_only",
-      "feedback": "Efficiency is about creating more value from scarce resources, not blindly cutting spending.",
-      "aHash": "1b015a9e65fde7241fb3949064d412c015aa2ae87180aefb512bee6b59397034"
+      "feedback": "The saving is outweighed by sorting and forgone delivery value: 4,000 - 1,000 - 4,500 = -$1,500. Efficient resource use includes sacrificed benefits.",
+      "aHash": "bd2fbb3ca0f404a0dae792b5e405c4e6168770252e69c77b668ed5debb3896f5"
     },
     {
       "id": 324,
       "sourceGame": "costDirective",
-      "q": "A firm can buy returned tablets for $90, refurbish them for $35, and sell them for $155. What does this reveal?",
+      "q": "A refurbisher can buy 20 returns for $40 each. Sixteen can be repaired for $15 each and sold for $85 each; four yield $8 each as scrap. Testing the whole lot costs $120. What is the lot's net opportunity?",
       "options": [
-        "A money-making opportunity exists if other relevant costs do not erase the $30 margin",
-        "The opportunity must be rejected because refurbishing adds variable cost",
-        "The firm earns $155 of profit because that is the selling price",
-        "The returned tablets have no opportunity cost because customers already returned them"
+        "$232",
+        "$440",
+        "$360",
+        "$1,392"
       ],
       "tag": "value_gap_opportunities",
       "type": "calculation",
@@ -6904,8 +6904,8 @@ const questionBanks = {
       ],
       "repairSkill": "value_gap_opportunities",
       "commonError": "confuses_revenue_with_profit",
-      "feedback": "The value gap is $155 - $90 - $35 = $30 before considering other relevant costs.",
-      "aHash": "8a71c73adc4906c1fd1a8ad19247e8bb9e3a1234e39d9336398467b4b0ae5d2d"
+      "feedback": "Receipts are 16×85 + 4×8 = $1,392. Purchase, repair and testing total 800 + 240 + 120 = $1,160, leaving $232. Failed items still cost money to acquire.",
+      "aHash": "fcd2f9e946fb715a0dfe0746cb13f434ae47f589ee53a58cea57cfe0b0cb71ae"
     },
     {
       "id": 325,
@@ -6936,12 +6936,12 @@ const questionBanks = {
     {
       "id": 326,
       "sourceGame": "costDirective",
-      "q": "A business finds that customers value faster delivery at $18 per order, while the added delivery cost is $11 per order. What is the strongest implication?",
+      "q": "A workshop has 10 spare technician-hours. Job A earns $900 after materials and uses 6 hours; B earns $700 and uses 5; C earns $500 and uses 4. Jobs are indivisible and each can be accepted once. What is the best use before any unchanged overhead?",
       "options": [
-        "The firm should not act because delivery cost is variable",
-        "The firm should charge exactly $18 because customers value speed at that amount",
-        "There may be a $7-per-order value gap the firm can capture",
-        "The opportunity disappears because some customers may not choose faster delivery"
+        "A alone, contributing $900",
+        "B and C, contributing $1,200",
+        "A and C, contributing $1,400",
+        "A and B, contributing $1,600"
       ],
       "tag": "value_gap_opportunities",
       "type": "application",
@@ -6955,18 +6955,18 @@ const questionBanks = {
       ],
       "repairSkill": "value_gap_opportunities",
       "commonError": "misses_value_cost_gap",
-      "feedback": "A money-making opportunity often appears when willingness to pay exceeds the cost of providing value.",
-      "aHash": "b0caa728217fb511db62664042d3c5259c6b06ab6eb0e02c9c2d0ceef4c8c0bd"
+      "feedback": "A+C uses exactly 10 hours and contributes $1,400. B+C uses 9 hours for $1,200. A+B cannot fit. Total contribution and feasibility both matter.",
+      "aHash": "45cff4f07b4f2485e5b550dcd694690c7d02bea16ea273a69af313598aaefd35"
     },
     {
       "id": 327,
       "sourceGame": "costDirective",
-      "q": "A company knows local branches understand customers best, but headquarters keeps all pricing authority and rewards branches only for revenue volume. What is the main wealth-creation problem?",
+      "q": "A branch can transfer spare inventory that is worth $12,000 locally to another branch where it is worth $19,000. Moving costs $2,000. Its manager loses an inventory-retention bonus if it transfers. Which change addresses the lost wealth?",
       "options": [
-        "Branch managers have too much control over accounting profit",
-        "Revenue volume is always the same as economic profit",
-        "Local customer information cannot help business decisions",
-        "Decision rights, information, and incentives are misaligned"
+        "Retain the bonus and tell the manager the destination value again.",
+        "Transfer only if the receiving branch pays the original purchase cost regardless of current values.",
+        "Reward the sending branch for keeping inventory even when it has a better use elsewhere.",
+        "Credit the manager for verified firm-wide transfer gains of $5,000."
       ],
       "tag": "organization_wealth_creation",
       "type": "integration",
@@ -6980,18 +6980,18 @@ const questionBanks = {
       ],
       "repairSkill": "organization_wealth_creation",
       "commonError": "misaligns_decision_rights",
-      "feedback": "Organizations create wealth when knowledge and incentives support value-creating decisions.",
-      "aHash": "9310e6a3277331b012b75be91784b4f1ec86895ca44fec4ed1f8ebf6e27d3750"
+      "feedback": "Net gain is 19,000 - 12,000 - 2,000 = $5,000. The relevant information is available; the performance rule discourages using it.",
+      "aHash": "33304326dbf1b3b6256e0b356bf57ebf23e842c98c9a724d685f8f9153237412"
     },
     {
       "id": 328,
       "sourceGame": "costDirective",
-      "q": "A firm gives engineers authority to approve design changes but charges all warranty costs to manufacturing. What problem is likely?",
+      "q": "Engineering can save $18 per unit by changing a part. Service expects an extra 10% chance of a $240 repair per unit, charged to its budget. Engineering is evaluated only on part costs. What is the organizational risk?",
       "options": [
-        "Engineers may not bear the cost of choices that raise downstream warranty claims",
-        "Manufacturing will always choose the design with the highest customer value",
-        "Warranty cost is fixed and therefore irrelevant to product design",
-        "The firm has solved the incentive problem by separating teams"
+        "Engineering may choose a change that lowers firm value by $6 per unit.",
+        "The firm saves $18 because repairs belong to another budget.",
+        "The firm loses $222 per unit because every unit certainly needs repair.",
+        "Providing service forecasts alone guarantees aligned choices."
       ],
       "tag": "organization_wealth_creation",
       "type": "trap",
@@ -7004,8 +7004,8 @@ const questionBanks = {
       ],
       "repairSkill": "organization_wealth_creation",
       "commonError": "ignores_cross_unit_costs",
-      "feedback": "Decision makers should face incentives that reflect the costs and benefits their choices create.",
-      "aHash": "e346a8b2b6cc405c797edb48aae2c872aedb248b8fb227a08d781938fa7e0341"
+      "feedback": "Expected repair cost is 0.10×240 = $24, exceeding the saving by $6. The design metric should reflect attributable expected downstream costs.",
+      "aHash": "cb4c142e9d3e231f31f1c323b32deae02049de4323705d6935416cf0b7d370ed"
     },
     {
       "id": 329,
@@ -7034,12 +7034,12 @@ const questionBanks = {
     {
       "id": 330,
       "sourceGame": "costDirective",
-      "q": "A consultant earns $80,000 from clients and pays $25,000 in explicit expenses. She gave up a $60,000 job to consult. What is her economic profit?",
+      "q": "A consultant can take a contract paying $31,000 with $8,000 travel and subcontracting, or a job paying $21,000 with $1,000 commuting. The contract also prevents a separate $3,000 net weekend assignment that fits alongside the job. What is the contract's economic advantage?",
       "options": [
-        "$20,000",
-        "$55,000",
-        "-$5,000",
-        "$80,000"
+        "$3,000",
+        "$10,000",
+        "$0",
+        "-$3,000"
       ],
       "tag": "opportunity_cost",
       "type": "calculation",
@@ -7053,8 +7053,8 @@ const questionBanks = {
       ],
       "repairSkill": "opportunity_cost",
       "commonError": "ignores_implicit_cost",
-      "feedback": "Economic profit is $80,000 - $25,000 - $60,000 = -$5,000.",
-      "aHash": "58cac24838078ca502979ba1a652cc98375d5f9107ccc612f27beab3939ffdb2"
+      "feedback": "Contract net is $23,000. The feasible alternative combines 21,000 - 1,000 + 3,000 = $23,000. Opportunity cost is the best feasible combination, not just one payment.",
+      "aHash": "ce66470e18f3579ac7665d2a660da03089cd89698b57c5e900e8ba608bb394ee"
     },
     {
       "id": 331,
@@ -7081,12 +7081,12 @@ const questionBanks = {
     {
       "id": 332,
       "sourceGame": "costDirective",
-      "q": "A restaurant can use an event room for a private party earning $3,200 or for regular seating earning $2,400. The private party requires $500 in extra labor. What is the net gain from choosing the party?",
+      "q": "A hall can host one workshop or rent to a club this weekend. Workshop receipts are $4,800, catering is $1,400 and extra staffing $900. The club pays $2,200 but needs $300 cleaning. Unchanged building costs are $700. How much better is the workshop?",
       "options": [
+        "$600",
         "$300",
-        "$800",
-        "$2,700",
-        "$3,200"
+        "$2,500",
+        "-$100"
       ],
       "tag": "opportunity_cost",
       "type": "calculation",
@@ -7099,18 +7099,18 @@ const questionBanks = {
       ],
       "repairSkill": "opportunity_cost",
       "commonError": "ignores_forgone_alternative",
-      "feedback": "Net gain is $3,200 - $500 - $2,400 = $300 compared with regular seating.",
-      "aHash": "3977c27d53b276cb260062e3160e8fb18bccde32c51f69b3f93a4f638b32279e"
+      "feedback": "Workshop contribution is $2,500; rental net is $1,900. Their difference is $600. Neither alternative changes the $700 building cost.",
+      "aHash": "2afd4624f5de4d9eb184259dd84cbc3275c7f984e204c0d286a2fdfc7b1ce7f8"
     },
     {
       "id": 333,
       "sourceGame": "costDirective",
-      "q": "A firm has already spent $70,000 designing a product. Launching now would require $30,000 more and generate $45,000 in revenue. What should the firm do, using relevant-cost reasoning?",
+      "q": "A company prepaid a $12,000 prototype with no recovery value. Finishing costs $7,000 and yields $13,000 sales. Canceling now permits selling unused materials for $2,000; finishing consumes them. What does relevant-cost reasoning recommend?",
       "options": [
-        "Cancel, because total spending would exceed revenue",
-        "Launch, because future revenue exceeds the future launch cost",
-        "Cancel, because the design cost must be recovered first",
-        "Launch only if accounting profit including sunk cost is positive"
+        "Finish; it adds $6,000 because materials are already owned.",
+        "Finish; it adds $4,000 compared with canceling.",
+        "Cancel; including the prototype makes the project lose $6,000.",
+        "Cancel; resale value is relevant only when a sale has already occurred."
       ],
       "tag": "relevant_costs_benefits",
       "type": "trap",
@@ -7124,8 +7124,8 @@ const questionBanks = {
       ],
       "repairSkill": "relevant_costs_benefits",
       "commonError": "includes_sunk_cost",
-      "feedback": "The past design cost is sunk. The relevant comparison is $45,000 future revenue versus $30,000 future cost.",
-      "aHash": "36190995ddf7409256315af2dd3c47a41f655e6cc46bdf99e097ff12e4728a66"
+      "feedback": "Finishing nets $6,000 in future cash but sacrifices the $2,000 cancellation receipt. Its advantage is $4,000; the sunk prototype does not change.",
+      "aHash": "ca34fae07a445afc7f6a955676b35793f25cb3eebe34cc8bba49102d3aee6179"
     },
     {
       "id": 334,
@@ -7155,12 +7155,12 @@ const questionBanks = {
     {
       "id": 335,
       "sourceGame": "costDirective",
-      "q": "A product line loses $12,000 after allocated headquarters overhead. Dropping it would save $50,000 in direct costs but lose $63,000 in revenue. Headquarters overhead would not change. What should the firm do?",
+      "q": "A line reports a $9,000 loss after $24,000 of unavoidable allocated overhead. Closing avoids all direct costs, loses the line's revenue and frees staff for work earning $11,000 net. There are no other changes. What should the firm do?",
       "options": [
-        "Drop it, because allocated overhead makes it appear unprofitable",
-        "Drop it, because revenue is less than total accounting cost",
-        "Keep it only if headquarters overhead is assigned to another product",
-        "Keep it, because dropping it lowers profit by $13,000"
+        "Close; it removes the $9,000 reported loss and adds $11,000.",
+        "Close; freed staff always have more value than a loss-making line.",
+        "Keep only if the allocated overhead can be recovered from customers.",
+        "Keep the line; closing reduces profit by $4,000."
       ],
       "tag": "relevant_costs_benefits",
       "type": "multi-step",
@@ -7174,18 +7174,18 @@ const questionBanks = {
       ],
       "repairSkill": "relevant_costs_benefits",
       "commonError": "treats_allocated_overhead_as_relevant",
-      "feedback": "Dropping saves $50,000 but loses $63,000, so profit falls by $13,000. Unchanged overhead is irrelevant.",
-      "aHash": "15e89bd8244a5f67860f35b09cb6c81c4d200dc719218c61e6e02bf2031bef73"
+      "feedback": "Before allocated overhead the line contributes -9,000 + 24,000 = $15,000. Closing gives up $15,000 to earn $11,000 elsewhere, a $4,000 reduction.",
+      "aHash": "656beb29c200052c0f6222ac7c0520c000931356f85c7ab0404e773b14425177"
     },
     {
       "id": 336,
       "sourceGame": "costDirective",
-      "q": "A bakery pays $4,000 rent, $2 per loaf for ingredients, and $1 per loaf for packaging. If output rises by 1,000 loaves, what cost increases directly with output?",
+      "q": "A cost table covers one month with unchanged fixed commitments.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">Fixed cost</th><th scope=\"col\">Variable cost</th><th scope=\"col\">Total cost</th></tr></thead><tbody><tr><td>0</td><td>?</td><td>$0</td><td>$1,600</td></tr><tr><td>200</td><td>?</td><td>$2,400</td><td>?</td></tr><tr><td>300</td><td>?</td><td>?</td><td>$5,500</td></tr></tbody></table>What are AVC at 300 and the total cost increase from 200 to 300?",
       "options": [
-        "$3,000",
-        "$4,000",
-        "$5,000",
-        "$7,000"
+        "$13 per unit; $1,500",
+        "$18.33 per unit; $1,500",
+        "$13 per unit; $3,100",
+        "$12 per unit; $1,600"
       ],
       "tag": "fixed_variable_costs",
       "type": "calculation",
@@ -7198,8 +7198,8 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_variable_costs",
       "commonError": "includes_fixed_cost",
-      "feedback": "Variable cost rises by ($2 + $1) × 1,000 = $3,000. Rent does not change with output here.",
-      "aHash": "50e5c930578954e631f9c75bfe0ef0b7d0f0b5c27638d20ec1049649881f0acc"
+      "feedback": "Fixed cost is $1,600. VC at 300 is $3,900, so AVC is $13. TC at 200 is $4,000; the increase is $1,500.",
+      "aHash": "fba5822545f9a1fe48deffa17bcbd797cca364bc7956e78e253ed93101fea70f"
     },
     {
       "id": 337,
@@ -7228,12 +7228,12 @@ const questionBanks = {
     {
       "id": 338,
       "sourceGame": "costDirective",
-      "q": "A plant can produce 10,000 or 12,000 units. Rent remains $18,000, materials are $4 per unit, and hourly labor is $3 per unit. What is the change in total cost from producing 2,000 more units?",
+      "q": "A plant guarantees $2,000 rent and $1,000 supervisor pay monthly. Materials cost $4 and piecework $3 per unit. Beyond 500 units it must hire an extra supervisor for $800 for the month. What is the cost increase from 400 to 600 units?",
       "options": [
-        "$18,000",
-        "$26,000",
-        "$14,000",
-        "$32,000"
+        "$1,400",
+        "$5,200",
+        "$2,200",
+        "$800"
       ],
       "tag": "fixed_variable_costs",
       "type": "calculation",
@@ -7246,18 +7246,18 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_variable_costs",
       "commonError": "adds_unchanged_fixed_cost",
-      "feedback": "Only variable costs change: ($4 + $3) × 2,000 = $14,000.",
-      "aHash": "f23529bda2693b1e110a563a7b4bc12c2260efcd354e413e002ffdcc0c59939c"
+      "feedback": "The extra 200 units cost $1,400 in variable inputs and trigger an avoidable $800 step cost. Existing commitments do not change, but the new supervisor cost does.",
+      "aHash": "262d72bc5bed331d13453691a705ba3e784e41db9a185f78c277840ed985dac4"
     },
     {
       "id": 339,
       "sourceGame": "costDirective",
-      "q": "A small firm earns $210,000 in revenue and pays $140,000 in explicit costs. The owner gave up a $65,000 salary elsewhere and uses a building that could rent for $18,000. What is economic profit?",
+      "q": "Annual receipts are $230,000. Paid payroll is $78,000, supplies $46,000 and rent $22,000. The owner's time could earn $65,000 and her invested capital could earn $9,000, independently. With no other costs, what are accounting and economic profit?",
       "options": [
-        "$5,000",
-        "$70,000",
-        "$88,000",
-        "-$13,000"
+        "$10,000 and $84,000",
+        "$84,000 and $19,000",
+        "$106,000 and $32,000",
+        "$84,000 and $10,000"
       ],
       "tag": "accounting_economic_profit",
       "type": "calculation",
@@ -7271,18 +7271,18 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "ignores_implicit_costs",
-      "feedback": "Economic profit is $210,000 - $140,000 - $65,000 - $18,000 = -$13,000.",
-      "aHash": "ac1bba371c744d9afc0b434482c96e4c9755f0694ff24d6a351120132fc61fcd"
+      "feedback": "Explicit costs total $146,000; accounting profit is $84,000. Both owner labor and capital alternatives are implicit costs, leaving $10,000.",
+      "aHash": "3d4e9ef2cadf7b309c6bc205796aac2f082ac78b53d6a6d411d1a4a151e111b2"
     },
     {
       "id": 340,
       "sourceGame": "costDirective",
-      "q": "A project reports $40,000 of accounting profit, but it uses owner time worth $25,000 and owned equipment that could earn $22,000 elsewhere. What is the economic profit?",
+      "q": "A studio reports $36,000 accounting profit after paying an assistant $18,000. The owner could earn $41,000 in another job and rent out her studio for $7,000 net at the same time. What economic profit follows?",
       "options": [
-        "-$7,000",
-        "$18,000",
-        "$25,000",
-        "$40,000"
+        "-$12,000",
+        "$6,000",
+        "-$30,000",
+        "-$5,000"
       ],
       "tag": "accounting_economic_profit",
       "type": "calculation",
@@ -7296,8 +7296,8 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "confuses_accounting_with_economic_profit",
-      "feedback": "Economic profit subtracts implicit opportunity costs: $40,000 - $25,000 - $22,000 = -$7,000.",
-      "aHash": "906e55649014de97fb29e27524f6fbd4a5540f32883b663540b3562d006e2566"
+      "feedback": "The assistant payment is already deducted. Subtract only the two additional implicit costs: 36,000 - 41,000 - 7,000 = -$12,000. Deducting payroll again double-counts it.",
+      "aHash": "7870e36d0a28bfd3a9b637460f79be97e9361258b613c254854ccac348cc42f4"
     },
     {
       "id": 341,
@@ -7327,12 +7327,12 @@ const questionBanks = {
     {
       "id": 342,
       "sourceGame": "costDirective",
-      "q": "A firm continues a failing ad campaign because the media contract was prepaid. New ads would not increase future sales. Which error is most likely?",
+      "q": "A manager's preferred launch earns $12,000 after future production costs, but requires a new $14,000 permit. He argues that last year's nonrefundable research fee makes launch necessary. Which diagnosis is correct?",
       "options": [
-        "Hidden-cost fallacy",
-        "Economies of scope",
-        "Fixed-cost fallacy",
-        "Diminishing marginal returns"
+        "He overlooks the research fee as an avoidable launch cost.",
+        "The permit is irrelevant because it is fixed per launch.",
+        "He uses sunk research to justify a launch with a $2,000 future loss.",
+        "Positive receipts establish that launching covers its opportunity cost."
       ],
       "tag": "fixed_cost_fallacy",
       "type": "identification",
@@ -7343,8 +7343,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "fixed_cost_fallacy",
       "commonError": "confuses_sunk_with_relevant",
-      "feedback": "The prepaid contract is sunk. Continuing because of it is the fixed-cost fallacy.",
-      "aHash": "b92d2734f614fc22f80f4c304a6322e2c16b86857929bf071c015d65d6fee11f"
+      "feedback": "The new permit is avoidable, unlike the research fee. The future net is 12,000 - 14,000 = -$2,000.",
+      "aHash": "c226d1a8f1ee79ff2589bde9e46b8e26bf3854bf8a19b4f6ba06212a96fc3386"
     },
     {
       "id": 343,
@@ -7371,12 +7371,12 @@ const questionBanks = {
     {
       "id": 344,
       "sourceGame": "costDirective",
-      "q": "A store paid $30,000 for displays that cannot be resold. A new layout would increase monthly profit by $2,500, but the manager refuses to 'waste' the displays. What should matter?",
+      "q": "A firm paid $40,000 for custom displays with no resale value. Switching layouts costs $6,000 now and raises contribution $1,800 monthly for the next four months only. Ignore discounting and other effects. Which amount should drive the choice?",
       "options": [
-        "The future profit gain from switching, not the sunk display cost",
-        "The display cost because large accounting costs must be recovered",
-        "The original vendor quote because it determines current marginal cost",
-        "The emotional loss from admitting the display choice failed"
+        "A $1,200 gain from switching",
+        "A $38,800 loss including the old display cost",
+        "A $7,200 gain ignoring the new layout cost",
+        "A $6,000 loss because making the old display idle destroys that amount"
       ],
       "tag": "fixed_cost_fallacy",
       "type": "application",
@@ -7387,18 +7387,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "fixed_cost_fallacy",
       "commonError": "sunk_cost_bias",
-      "feedback": "The display cost is sunk. The relevant issue is whether the new layout improves future profit.",
-      "aHash": "62b0af569723073d2bfb3658530cc3c9f29c569926afba869904377245bee2b7"
+      "feedback": "Future contribution is 4×1,800 = $7,200, less $6,000 switching cost. The old display outlay is unrecoverable under either choice.",
+      "aHash": "02d0a607133000727821fe897a43b356100f84372ef1f5bbd28731eaad702ba8"
     },
     {
       "id": 345,
       "sourceGame": "costDirective",
-      "q": "A coffee shop adds wine service without considering that trained baristas under age 21 cannot legally serve it. Which error is most likely?",
+      "q": "A software firm quotes a migration job using $9,000 labor and $1,000 tools. It omits $3,000 of required customer retraining and a $4,000 contribution lost when specialists leave another assignment. Its $15,000 quote appears profitable. What error is present?",
       "options": [
-        "Fixed-cost fallacy",
-        "Hidden-cost fallacy",
-        "Accounting-profit fallacy",
-        "Economies-of-scale fallacy"
+        "Fixed-cost fallacy: the specialist opportunity cost should be excluded.",
+        "Hidden-cost fallacy: omitted consequences turn $5,000 into a $2,000 loss.",
+        "No error: the quoted price exceeds all costs shown in the proposal.",
+        "Double counting: training and forgone work are necessarily the same cost."
       ],
       "tag": "hidden_cost_fallacy",
       "type": "identification",
@@ -7409,8 +7409,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "ignores_relevant_constraint",
-      "feedback": "The hidden-cost fallacy occurs when a relevant cost or constraint is overlooked.",
-      "aHash": "0057e633a04590aebeb4614f73f7c455a8447e9407486f3e07a02fc5f95d27f7"
+      "feedback": "Retraining uses additional resources; forgone contribution is a separate capacity cost. Full gain is 15,000 - 9,000 - 1,000 - 3,000 - 4,000 = -$2,000.",
+      "aHash": "b45b5c43c9dd5746b22a60bc5d68e316d62fb20545b89181f59f0a6df45819b9"
     },
     {
       "id": 346,
@@ -7440,12 +7440,12 @@ const questionBanks = {
     {
       "id": 347,
       "sourceGame": "costDirective",
-      "q": "A manager chooses a cheaper supplier without accounting for higher inspection, delay, and warranty costs. What is the best diagnosis?",
+      "q": "A cheaper component saves $5 on each of 400 units. It requires $300 extra inspection and raises expected failures from 2% to 7%; each failure costs $100. Why is invoice price alone misleading?",
       "options": [
-        "Fixed-cost fallacy",
-        "Diminishing returns",
-        "Constant returns to scale",
-        "Hidden-cost fallacy"
+        "All 7% failure costs are incremental, so the loss is $1,100.",
+        "Inspection is fixed, so the saving remains $2,000.",
+        "Existing failures make any additional failure probability irrelevant.",
+        "Additional failure and inspection costs exceed the saving by $300."
       ],
       "tag": "hidden_cost_fallacy",
       "type": "application",
@@ -7456,18 +7456,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "ignores_downstream_costs",
-      "feedback": "The decision ignores real costs created by the cheaper supplier.",
-      "aHash": "0057e633a04590aebeb4614f73f7c455a8447e9407486f3e07a02fc5f95d27f7"
+      "feedback": "Only the 5-percentage-point increase is attributable: 400×0.05×100 = $2,000. Inspection adds $300, against a $2,000 invoice saving.",
+      "aHash": "67822ede1095aa638c3dac4389d2d2e4e3e51380a29da3971f7b22bbcd2ce3bc"
     },
     {
       "id": 348,
       "sourceGame": "costDirective",
-      "q": "A firm's average cost is $22 at 5,000 units. The next unit costs $30 to produce. Which statement is correct?",
+      "q": "A producer makes 200 units at average cost $25. A further 50 units cost $1,000 in total and sell for $19 each, with no other effects. Which conclusion is correct?",
       "options": [
-        "Marginal cost is $30 and should guide the one-more-unit decision",
-        "Average cost is $22 and should always guide the one-more-unit decision",
-        "Marginal cost is $22 because it equals total cost divided by output",
-        "The next unit should be produced whenever average cost is positive"
+        "Average cost falls to $24, but the extra order reduces profit by $50.",
+        "Average cost falls to $24, so the extra order must be profitable.",
+        "Average cost becomes $20, and the order loses $300.",
+        "Average cost rises because total cost increases by $1,000."
       ],
       "tag": "average_vs_marginal_cost",
       "type": "interpretation",
@@ -7481,18 +7481,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "uses_average_for_margin",
-      "feedback": "A marginal decision depends on the cost of the additional unit, not the average cost of all units.",
-      "aHash": "7a3c085e2adaf7be156115fa997f048fed33e6a87665f65395134b7e768debaf"
+      "feedback": "Original TC is $5,000; new AC is 6,000/250 = $24. Added receipts are $950 against $1,000 added cost. Falling AC does not substitute for the marginal decision.",
+      "aHash": "ac819874bb8797d3416e30675535761dc2543671ebfcd3b02e73b2ab4187e273"
     },
     {
       "id": 349,
       "sourceGame": "costDirective",
-      "q": "Total cost rises from $48,000 to $50,700 when output rises from 1,200 to 1,260 units. What is marginal cost over this interval?",
+      "q": "A ledger gives 80 units at $2,400 total cost. At 100 units, AVC is $21 and fixed cost is $900, unchanged across rows. What is incremental cost per unit for the added output?",
       "options": [
-        "$40 per unit",
-        "$45 per unit",
-        "$42.25 per unit",
-        "$50.70 per unit"
+        "$21",
+        "$30",
+        "$24",
+        "$600"
       ],
       "tag": "average_vs_marginal_cost",
       "type": "calculation",
@@ -7506,18 +7506,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "divides_total_cost_by_total_output",
-      "feedback": "Marginal cost is the change in total cost divided by the change in output: $2,700 / 60 = $45.",
-      "aHash": "52a11998256705cedf9a366ada4864ccc1b006de538f244db7860c607de37b2b"
+      "feedback": "TC at 100 is 100×21 + 900 = $3,000. The increase is $600 over 20 units, or $30 each. AVC at the endpoint is not interval MC.",
+      "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
     },
     {
       "id": 350,
       "sourceGame": "costDirective",
-      "q": "A manager rejects a special order because average cost is $18 and the order price is $16. The order would add only $11 in marginal cost per unit and not affect other sales. What is the issue?",
+      "q": "A manager accepts a 100-unit order at $18 because current AC is $17. The order adds $1,200 production cost, $300 setup, and displaces $400 of other contribution. Which criticism is correct?",
       "options": [
-        "The manager is correctly rejecting every order below average cost",
-        "The order should be rejected because fixed cost must be spread over all units",
-        "The manager is using average cost when marginal cost is relevant",
-        "The order can be accepted only if accounting profit per unit is positive"
+        "The order gains $100 because price exceeds AC by $1.",
+        "The order gains $600 because setup and displaced work are not unit costs.",
+        "The order loses $100 despite a price above current AC.",
+        "The order must be accepted whenever variable production cost is covered."
       ],
       "tag": "average_vs_marginal_cost",
       "type": "trap",
@@ -7532,18 +7532,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "average_cost_trap",
-      "feedback": "If the order does not affect other sales, compare its price with marginal cost, not average cost.",
-      "aHash": "59d1234d8148cf1c57b9a77da616ecf6f447e735394db6258a63e0b8da4e95dc"
+      "feedback": "Relevant cost is 1,200 + 300 + 400 = $1,900, above $1,800 revenue. Current average cost omits this order's particular consequences.",
+      "aHash": "82e7bd91b6561e6750286d806fa6b0a246fe722a3edae2c347bd72838712d128"
     },
     {
       "id": 351,
       "sourceGame": "costDirective",
-      "q": "A firm produces 400 units at total cost $12,000 and 450 units at total cost $13,750. What are average cost at 400 units and marginal cost for the next 50 units?",
+      "q": "Fixed monthly cost is unchanged in this schedule.<table><thead><tr><th scope=\"col\">Units</th><th scope=\"col\">VC</th><th scope=\"col\">TC</th><th scope=\"col\">Revenue</th></tr></thead><tbody><tr><td>0</td><td>$0</td><td>$600</td><td>$0</td></tr><tr><td>40</td><td>$1,000</td><td>?</td><td>$1,800</td></tr><tr><td>60</td><td>?</td><td>$2,200</td><td>$2,500</td></tr></tbody></table>What are MC and MR per extra unit from 40 to 60?",
       "options": [
-        "AC = $35; MC = $30",
-        "AC = $30; MC = $1,750",
-        "AC = $34.38; MC = $35",
-        "AC = $30; MC = $35"
+        "MC $36.67; MR $41.67",
+        "MC $60; MR $35",
+        "MC $600; MR $700",
+        "MC $30; MR $35"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "calculation",
@@ -7557,18 +7557,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "confuses_total_and_marginal",
-      "feedback": "AC at 400 is $12,000 / 400 = $30. MC over the interval is $1,750 / 50 = $35.",
-      "aHash": "8b1b70bc5904b320b0e3944fe04a83f45d34e72d680a367a8231bd7db5920859"
+      "feedback": "TC at 40 is $1,600, so the $600 increase over 20 units gives MC $30. Revenue rises $700, giving MR $35.",
+      "aHash": "7e4da8914e13546321999b06e32de9e8046900ffe69cd58b7ba8f724ca00c828"
     },
     {
       "id": 352,
       "sourceGame": "costDirective",
-      "q": "Revenue rises from $24,000 to $27,600 when sales rise from 600 to 660 units. What is marginal revenue over this interval?",
+      "q": "A software service can sell 80 seats at $50 each or 100 seats at $44 each; the lower price applies to every seat. What is marginal revenue per additional seat over that interval?",
       "options": [
-        "$60 per unit",
-        "$46 per unit",
-        "$3,600 per unit",
-        "$40 per unit"
+        "$20",
+        "$44",
+        "$50",
+        "-$6"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "calculation",
@@ -7582,18 +7582,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "uses_average_revenue",
-      "feedback": "MR is change in revenue divided by change in quantity: $3,600 / 60 = $60.",
-      "aHash": "731e415b23d761c9182122f38df249ebe09639d4029ad4f4a99435d0c4579222"
+      "feedback": "Total revenue changes from $4,000 to $4,400. Divide the $400 change by 20 extra seats. The new price is not MR because it also changes receipts on existing seats.",
+      "aHash": "1f67972ce8b9d3da71256e750035aa4ffd0a58c0796b2172492afd8b96426416"
     },
     {
       "id": 353,
       "sourceGame": "costDirective",
-      "q": "Output rises from 100 to 125 units. Total cost rises from $5,000 to $5,900, and total revenue rises from $7,200 to $8,450. What are MC and MR for the added units?",
+      "q": "At 100 units, TC is $3,000. At 120 units, AVC is $20 and unchanged fixed cost is $1,200. Total revenue rises from $4,200 to $4,900. What are interval MC, MR and added profit?",
       "options": [
-        "MC = $50; MR = $36",
-        "MC = $36; MR = $50",
-        "MC = $900; MR = $1,250",
-        "MC = $59; MR = $67.60"
+        "$20, $35 and $300",
+        "$30, $35 and $100",
+        "$30, $40.83 and $100",
+        "$600, $700 and $1,300"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "calculation",
@@ -7607,18 +7607,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "confuses_totals_with_marginals",
-      "feedback": "MC = $900 / 25 = $36. MR = $1,250 / 25 = $50.",
-      "aHash": "0cd077c92d0e00f00b3d1b6e89fdee03370a56dfa98fcb5515935d2802228191"
+      "feedback": "New TC is 120×20 + 1,200 = $3,600. Cost rises $600 and revenue $700 over 20 units: MC $30, MR $35, profit +$100.",
+      "aHash": "29e7aa7d6eae4d6c79403bc773d95ef763d91ec4276f3a24beacbd4abfae4e49"
     },
     {
       "id": 354,
       "sourceGame": "costDirective",
-      "q": "A firm can add 200 units. Added revenue is $9,000 and added cost is $7,600. What should it do?",
+      "q": "A shop chooses 0, 1, 2 or 3 additional service blocks in sequence.<table><thead><tr><th scope=\"col\">Blocks</th><th scope=\"col\">Added receipts</th><th scope=\"col\">Added costs</th></tr></thead><tbody><tr><td>0</td><td>$0</td><td>$0</td></tr><tr><td>1</td><td>$800</td><td>$500</td></tr><tr><td>2</td><td>$1,500</td><td>$1,100</td></tr><tr><td>3</td><td>$2,000</td><td>$1,800</td></tr></tbody></table>Which plan maximizes added profit?",
       "options": [
-        "Reject the added units because total cost is positive",
-        "Produce only if average cost falls across all units",
-        "Produce the added units because marginal revenue exceeds marginal cost",
-        "Reject because added cost must be zero to create profit"
+        "3 blocks, earning $200",
+        "1 block, earning $300",
+        "2 blocks, earning $400",
+        "0 blocks, because total cost grows"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "application",
@@ -7632,18 +7632,18 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "ignores_incremental_profit",
-      "feedback": "The added units increase profit by $9,000 - $7,600 = $1,400.",
-      "aHash": "daee029c049fb6a0830daa513ba0f81398436266eada44a9faf7e6b9d6f51311"
+      "feedback": "Profits are 0, 300, 400 and 200. The second block adds $100; the third subtracts $200. Compare the full feasible schedule.",
+      "aHash": "1717a9c1984ec41a0ba90f7dfd05d230dfd6704a29cb0eaf38a7a310e38861f2"
     },
     {
       "id": 355,
       "sourceGame": "costDirective",
-      "q": "A delivery firm can serve one more contract for $18,000 in revenue. It would require $9,500 in driver pay, $3,800 in fuel, and $6,200 in extra insurance. What should it do?",
+      "q": "A depot can add up to 3 sequential drivers. Total deliveries with 4, 5, 6 and 7 drivers are 200, 260, 310 and 340. Each delivery earns $12 and uses $3 fuel; each added driver costs $400. How many drivers beyond the current 4 maximize profit?",
       "options": [
-        "Accept because revenue exceeds driver pay and fuel",
-        "Accept because fixed assets are already available",
-        "Reject only if average cost rises for all contracts",
-        "Reject because added cost exceeds added revenue"
+        "1 extra driver",
+        "3 extra drivers",
+        "0 extra drivers",
+        "2 extra drivers"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "calculation",
@@ -7657,18 +7657,18 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "omits_relevant_cost",
-      "feedback": "Added cost is $19,500, which exceeds $18,000 revenue, so the contract reduces profit.",
-      "aHash": "ae6e3570f36bf98fcd18098a81991b2e92e0f4a04f6ec8f240b3c7f305586f8a"
+      "feedback": "Each delivery contributes $9 before driver pay. Added drivers contribute 60×9-400 = $140, 50×9-400 = $50, then 30×9-400 = -$130. Add two.",
+      "aHash": "708877672ed2f683f20f0fce2d45ad15999531bf921ad0441d8c2389415444a6"
     },
     {
       "id": 356,
       "sourceGame": "costDirective",
-      "q": "A plant manager says, 'We should expand output until average cost is minimized.' What is the better decision rule for the next unit?",
+      "q": "Average cost is lowest at 300 units. Feasible total profits are $700 at 250, $820 at 300 and $880 at 350; expanding to 400 would add $900 revenue and $970 cost. What is wrong with stopping automatically at minimum AC?",
       "options": [
-        "Expand while marginal revenue is at least marginal cost",
-        "Expand until fixed cost per unit stops falling",
-        "Expand whenever average cost is below price on past units",
-        "Expand until total revenue equals total cost"
+        "It misses the $60 gain to 350; expanding further to 400 would lose $70.",
+        "Minimum AC proves the 300-unit plan has maximum profit.",
+        "Rising total cost proves that the 350-unit plan loses money.",
+        "Positive extra revenue makes 400 the best plan regardless of cost."
       ],
       "tag": "mr_mc_extent_rule",
       "type": "trap",
@@ -7682,18 +7682,18 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "minimizes_ac_not_maximize_profit",
-      "feedback": "Extent decisions should compare marginal revenue with marginal cost.",
-      "aHash": "644a13cd2f2fed2e7582b201ff5ba463ed98232e759006582fc1605b42592d0e"
+      "feedback": "The relevant objective is profit. Moving from 300 to 350 adds $60, while the next expansion reduces profit $70. AC alone does not locate the optimum.",
+      "aHash": "87b76345bdd2fd0c0bf4336341ce14d1469b86793fb7f67b7e024cc8d1f467e9"
     },
     {
       "id": 357,
       "sourceGame": "costDirective",
-      "q": "A salesperson receives a fixed salary plus 2% commission. Another receives only 12% commission. Which statement is most likely?",
+      "q": "Plan A pays $18,000 plus 5% of annual sales; B pays 20% without salary. At $100,000 sales A pays more. An extra $20,000 sale would require effort valued at $2,000. What comparison is correct?",
       "options": [
-        "The fixed salary plus 2% commission creates stronger marginal pay",
-        "The 12% commission creates stronger marginal pay for each added sale",
-        "Both contracts create the same marginal incentive if total expected pay matches",
-        "Neither contract can affect effort because sales depend on customers"
+        "A induces the effort because its total pay at current sales is higher.",
+        "A's higher starting pay does not make its $1,000 extra commission worth that effort; B's $4,000 is worth it.",
+        "Both induce the effort because both plans include commission.",
+        "Neither induces the effort because the fixed salary does not change."
       ],
       "tag": "incentive_compensation_effort",
       "type": "interpretation",
@@ -7707,8 +7707,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "confuses_total_pay_with_marginal_pay",
-      "feedback": "A higher commission rate increases the marginal reward from an additional sale.",
-      "aHash": "93961e233be7aa170919980d71f4413e4d49215fa6f259fd406f4db381dddbd1"
+      "feedback": "At current sales A pays $23,000 versus B's $20,000. The effort earns 5%×20,000 = $1,000 under A and $4,000 under B. Marginal incentives differ from pay levels.",
+      "aHash": "ba9c4039651dbd9b482ca2cf6938add8f6f60503606f0a1862525a87c2d66aa2"
     },
     {
       "id": 358,
@@ -7738,12 +7738,12 @@ const questionBanks = {
     {
       "id": 359,
       "sourceGame": "costDirective",
-      "q": "A firm shifts technicians from hourly pay to a per-job bonus. Output rises, but rework also rises. What is the best interpretation?",
+      "q": "A technician can rush 10 jobs with 80% lasting success, or complete 8 carefully with 100% lasting success. The current plan pays $20 per initially completed job. Rework imposes costs on customers. What does changing pay to $20 per verified lasting success accomplish?",
       "options": [
-        "The incentive failed because output cannot respond to compensation",
-        "The bonus proves fixed fees are always superior to performance pay",
-        "The firm should ignore rework because it is a future cost",
-        "The incentive increased speed but may have distorted quality effort"
+        "It guarantees careful work because eight successes always pay more than eight expected successes.",
+        "It increases rushing's expected pay from $200 to $240.",
+        "It eliminates the need to inspect outcomes because the payment label changed.",
+        "It removes rushing's expected pay advantage, but alone does not make careful work strictly preferred."
       ],
       "tag": "incentive_compensation_effort",
       "type": "integration",
@@ -7758,18 +7758,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "ignores_quality_dimension",
-      "feedback": "Performance pay can increase the rewarded activity while distorting unrewarded dimensions like quality.",
-      "aHash": "d1bb9f0d7d8ccb76fc8d294d8a81ecc65df671eb4b5175d53855d55c6328a4da"
+      "feedback": "Current pay is $200 versus $160. Verified expected pay is 10×0.8×20 = $160 versus 8×20 = $160. Effort costs, risk and verification still matter.",
+      "aHash": "c9e93da8b77c00d1619cad01ddbf7c04ec32c9c25f530230398591ba5a92022c"
     },
     {
       "id": 360,
       "sourceGame": "costDirective",
-      "q": "A kitchen has one oven. Adding the second cook raises output by 40 meals, the third by 30, and the fourth by 18. What is this pattern?",
+      "q": "A plant holds equipment fixed.<table><thead><tr><th scope=\"col\">Workers</th><th scope=\"col\">Units per day</th></tr></thead><tbody><tr><td>2</td><td>60</td></tr><tr><td>3</td><td>105</td></tr><tr><td>4</td><td>140</td></tr><tr><td>5</td><td>165</td></tr></tbody></table>When do diminishing marginal returns first appear in the observed additions?",
       "options": [
-        "Diminishing marginal returns to labor",
-        "Decreasing returns to scale",
-        "Economies of scope",
-        "Minimum efficient scale"
+        "With the fourth worker, whose 35 units are below the third's 45",
+        "With the third worker, because total output is only 105",
+        "With the fifth worker, because only then does total output fall",
+        "With no worker, because output rises throughout"
       ],
       "tag": "diminishing_marginal_returns",
       "type": "identification",
@@ -7782,18 +7782,18 @@ const questionBanks = {
       ],
       "repairSkill": "diminishing_marginal_returns",
       "commonError": "confuses_short_run_with_scale",
-      "feedback": "With a fixed input, each added worker contributes less additional output.",
-      "aHash": "cc46f83c3bce0a8582d083f18247ac9782dcfcc09d98a9f273d2d5591876bbae"
+      "feedback": "The third, fourth and fifth workers add 45, 35 and 25 units. The first observed decline is at the fourth worker; total output need not fall.",
+      "aHash": "de2e6a48a256a9fbdb1bdd0c712a967fca2a284151830548b677c8217c01458f"
     },
     {
       "id": 361,
       "sourceGame": "costDirective",
-      "q": "A factory adds workers while capital is fixed. Output keeps rising, but marginal product eventually falls. What cost pattern is likely if wages are constant?",
+      "q": "With fixed machinery, a fifth worker adds 40 accepted units and a sixth adds 25. Each costs $200 per day. Materials remain $3 per accepted unit. How does incremental cost per unit change?",
       "options": [
-        "Average fixed cost eventually rises",
-        "Marginal cost eventually rises",
-        "Total fixed cost eventually falls",
-        "Marginal revenue must become negative"
+        "It stays $203 because wage and materials are unchanged.",
+        "It rises from $8 to $11.",
+        "It falls from $11 to $8 as total output rises.",
+        "It rises from $5 to $8, including all production inputs."
       ],
       "tag": "diminishing_marginal_returns",
       "type": "integration",
@@ -7808,8 +7808,8 @@ const questionBanks = {
       ],
       "repairSkill": "diminishing_marginal_returns",
       "commonError": "misses_cost_connection",
-      "feedback": "When marginal product falls with a constant wage, each extra unit tends to require more labor cost, raising marginal cost.",
-      "aHash": "12f4e9efcdb326af93f092d1139cfb0a929cc869fd4a9ed27fd4dbdef7f471f5"
+      "feedback": "Worker cost per added unit rises from 200/40 = $5 to 200/25 = $8. Adding materials gives $8 and $11. The $5/$8 pair omits materials.",
+      "aHash": "535a93f6df27c0318b1825279d50128cc4bd45003785c406f16d93784d9e8c1d"
     },
     {
       "id": 362,
@@ -7839,12 +7839,12 @@ const questionBanks = {
     {
       "id": 363,
       "sourceGame": "costDirective",
-      "q": "A supplier offers a fixed price per unit for any quantity. The buyer expects volume to rise into the supplier's steep marginal-cost range. What should the buyer worry about?",
+      "q": "A buyer requests 500 extra units at $12 each. The first 300 cost the supplier $8 each; the next 200 cost $14 each. A new $900 setup is required only for this order. Which contract conclusion is supported?",
       "options": [
-        "The supplier's marginal cost is irrelevant once a contract is signed",
-        "The buyer should ignore cost curves because only the posted price matters",
-        "The contract automatically creates economies of scope",
-        "The supplier may later resist volume, cut quality, or demand renegotiation"
+        "At $12 it earns $2,000 because the first-range cost applies throughout.",
+        "At $12 it loses $1,900 because the highest marginal cost applies throughout.",
+        "The setup is fixed, so the order earns $800.",
+        "At $12 the order loses $100; the break-even whole-order price is $12.20 per unit."
       ],
       "tag": "cost_curves_contracts",
       "type": "application",
@@ -7857,18 +7857,18 @@ const questionBanks = {
       ],
       "repairSkill": "cost_curves_contracts",
       "commonError": "ignores_supplier_cost_curve",
-      "feedback": "Knowing the supplier's cost curve helps predict whether contract terms remain sustainable at higher output.",
-      "aHash": "781d544f34dba4a2b25f624b6b285065adc10815201198da80e96c1590b79b80"
+      "feedback": "Relevant cost is 300×8 + 200×14 + 900 = $6,100. Revenue is $6,000. Dividing full incremental cost by 500 gives a $12.20 break-even quote.",
+      "aHash": "8f0a83f75c82157f7a3f3a5a2ee290f6b7d09f8ea43dd228e7d017149d346f8e"
     },
     {
       "id": 364,
       "sourceGame": "costDirective",
-      "q": "A contractor's average cost falls sharply up to 5,000 units and then flattens. A buyer needs 4,800 units. What contract insight follows?",
+      "q": "A supplier offers annual plans: 2,000 units for $34,000 total cost; 4,000 for $52,000; 6,000 for $78,000. These are the only feasible plans. A buyer needs 3,000 units and can find a second buyer for 1,000. What cost insight supports a joint commitment?",
       "options": [
-        "The buyer is near the supplier's efficient range and may negotiate from that cost position",
-        "The buyer should expect diseconomies of scale before any production occurs",
-        "The contractor's fixed cost is irrelevant to pricing negotiations at all quantities",
-        "The buyer should split the order to prevent scale economies"
+        "Combined volume reaches the smallest minimum-AC plan, costing $13 per unit.",
+        "The 6,000-unit plan is required because MES always means largest output.",
+        "Every unit costs $17 because that is the first plan's average.",
+        "The extra 2,000 units from the first plan cost $13 each at the margin."
       ],
       "tag": "cost_curves_contracts",
       "type": "interpretation",
@@ -7881,8 +7881,8 @@ const questionBanks = {
       ],
       "repairSkill": "cost_curves_contracts",
       "commonError": "ignores_average_cost_shape",
-      "feedback": "Cost-curve knowledge helps the buyer understand the supplier's efficient operating range and pricing room.",
-      "aHash": "24970df2443d615185d2dc36ee98a5c9ef3811689b89ec0410a60ad17faa3860"
+      "feedback": "Average costs are $17, $13 and $13. Committing 4,000 total reaches the first minimum. The cost change from 2,000 to 4,000 is $18,000, or $9 per extra unit, distinct from AC.",
+      "aHash": "262e9c7c7943307e0839681678bebc87ed38cf3bbdc4e739566e119e44e2a4d2"
     },
     {
       "id": 365,
@@ -7911,12 +7911,12 @@ const questionBanks = {
     {
       "id": 366,
       "sourceGame": "costDirective",
-      "q": "A firm has high fixed setup cost and low constant variable cost. What happens to average cost as output first expands?",
+      "q": "A plant has $4,000 monthly fixed cost and $8 variable cost per unit. It expands from 500 to 1,000 units, with no change in plant or variable unit cost. Which inference is justified?",
       "options": [
-        "Average cost rises because fixed cost rises with output",
-        "Average cost stays constant because variable cost is constant",
-        "Average cost falls as fixed cost is spread over more units",
-        "Average cost equals marginal revenue once output expands"
+        "AC falls from $16 to $8 because fixed cost disappears at 1,000 units.",
+        "The unchanged $8 variable unit cost proves every input doubled.",
+        "AC falls from $16 to $12 through spreading fixed cost; learning or long-run scale economies are not established.",
+        "Total cost falls by $4,000 when fixed cost is spread over more output."
       ],
       "tag": "average_cost_output",
       "type": "interpretation",
@@ -7929,18 +7929,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_cost_output",
       "commonError": "misses_spreading_fixed_cost",
-      "feedback": "With high fixed cost, average cost often falls initially as output spreads fixed cost over more units.",
-      "aHash": "a289bc32e95aad00c102f4ba997c1d311fcfcf1ce31c3053f480ed6a293a2b75"
+      "feedback": "AC is 4,000/Q + 8. Fixed cost per unit falls from $8 to $4. No evidence here isolates an experience effect or changes in all inputs.",
+      "aHash": "193584da9515e5d397fa7d5d8b313e537d6b9365189d28ad35a60f1ef384151a"
     },
     {
       "id": 367,
       "sourceGame": "costDirective",
-      "q": "Total cost is $50,000 at 2,000 units and $70,000 at 4,000 units. What happens to average cost?",
+      "q": "A workshop's total cost is $6,000 at 200 units. At 300 units its average cost is $26. What is the cost per added unit, and why can AC fall while total cost rises?",
       "options": [
-        "It rises from $17.50 to $25",
-        "It stays at $20 because total cost rises by $20,000",
-        "It cannot be determined without marginal revenue",
-        "It falls from $25 to $17.50"
+        "$26; marginal cost equals the new average by definition.",
+        "$78; divide the new total cost by only the extra units.",
+        "$30; the original average is the cost of all future units.",
+        "$18; added units cost less than the original $30 average."
       ],
       "tag": "average_cost_output",
       "type": "calculation",
@@ -7953,8 +7953,8 @@ const questionBanks = {
       ],
       "repairSkill": "average_cost_output",
       "commonError": "uses_change_in_cost_only",
-      "feedback": "AC is $50,000 / 2,000 = $25 and $70,000 / 4,000 = $17.50.",
-      "aHash": "9af8835987920e86c76318e33ac667a366cc357f2dc89b533844de9252a1c0de"
+      "feedback": "New TC is 300×26 = $7,800. The $1,800 increase over 100 units is $18 each, pulling the original $30 average down.",
+      "aHash": "eb2d15c2297f64f2b22052a19973b20af4cb6eef8f8ff76e9d2a30b6b349d62d"
     },
     {
       "id": 368,
@@ -7984,12 +7984,12 @@ const questionBanks = {
     {
       "id": 369,
       "sourceGame": "costDirective",
-      "q": "A firm doubles labor, machines, and plant space. Output rises from 10,000 to 23,000 units. What does this show?",
+      "q": "All inputs rise by 25% and output rises from 400 to 520. Input prices are unchanged, so cost rises from $8,000 to $10,000. Which pair of conclusions fits?",
       "options": [
-        "Constant returns to scale",
-        "Increasing returns to scale",
-        "Decreasing returns to scale",
-        "Diminishing marginal returns"
+        "Decreasing returns to scale; AC rises because total cost rises.",
+        "Increasing returns to scale; AC falls from $20 to about $19.23.",
+        "Constant returns to scale; output and input both increase.",
+        "Diminishing marginal returns; machinery was held fixed."
       ],
       "tag": "returns_to_scale",
       "type": "calculation",
@@ -8000,8 +8000,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
       "commonError": "confuses_scale_with_dmr",
-      "feedback": "When all inputs double and output more than doubles, the firm has increasing returns to scale.",
-      "aHash": "b43902336e49d926263d77e4900a3b47a9fe58bddd8460b227efbb785a750b06"
+      "feedback": "Output grows 30%, more than all inputs' 25%. AC is 8,000/400 = $20 versus 10,000/520 ≈ $19.23.",
+      "aHash": "a8a2190c5381ce7ec296809aa52d500f88d527ab1ab577615d7b09ec275cd8d4"
     },
     {
       "id": 370,
@@ -8028,12 +8028,12 @@ const questionBanks = {
     {
       "id": 371,
       "sourceGame": "costDirective",
-      "q": "All inputs triple, but output rises from 5,000 to 12,000 units. What is the best interpretation?",
+      "q": "A producer doubles every physical input and output rises from 600 to 1,320. At the same time, all input prices increase 20%. Which statement is correct?",
       "options": [
-        "Increasing returns to scale",
-        "Constant returns to scale",
-        "Economies of scope",
-        "Decreasing returns to scale"
+        "Rising average monetary cost proves physical decreasing returns to scale.",
+        "Physical constant returns to scale follow because all inputs double.",
+        "Increasing returns guarantee lower monetary AC even when input prices rise.",
+        "Physical returns to scale increase, yet average monetary cost rises."
       ],
       "tag": "returns_to_scale",
       "type": "calculation",
@@ -8044,18 +8044,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "returns_to_scale",
       "commonError": "confuses_output_growth_with_scale",
-      "feedback": "Output less than triples when all inputs triple, so returns to scale are decreasing.",
-      "aHash": "1ccfca62406e75b88927edb55372aeb324dc8a3fd1a6214eddcbea139fe034d6"
+      "feedback": "Physical output grows by 2.2 times for twice the inputs. Money cost grows by 2×1.2 = 2.4 times, so AC multiplies by 2.4/2.2, above one. Input-price changes separate these concepts.",
+      "aHash": "ec27b8ad30cc0d47edd11a8752899eab8a7e1662e5496e8f10bde3aca2c1cbe6"
     },
     {
       "id": 372,
       "sourceGame": "costDirective",
-      "q": "A firm's long-run average cost falls until 80,000 units, then remains flat until 120,000 units. What is the minimum efficient scale?",
+      "q": "Only four long-run plans are available: 1,000 units at $20,000 TC; 2,000 at $30,000; 3,000 at $42,000; 4,000 at $56,000. An analyst chooses 1,000 because TC is lowest. What corrects the MES analysis?",
       "options": [
-        "80,000 units",
-        "120,000 units",
-        "40,000 units",
-        "Any output above zero"
+        "MES is 3,000, the first plan with the minimum $14 average cost.",
+        "MES is 1,000 because the smallest total cost defines efficiency.",
+        "MES is 4,000 because it is the last point on the flat average.",
+        "MES is 2,000 because it cuts AC by the largest dollar amount."
       ],
       "tag": "minimum_efficient_scale",
       "type": "interpretation",
@@ -8066,8 +8066,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
       "commonError": "picks_end_of_flat_range",
-      "feedback": "Minimum efficient scale is the smallest output at which long-run average cost reaches its minimum.",
-      "aHash": "7d320623bb7ab895eae128411ee8fe71d0e910c6035c04012bf60bdfecd9a43c"
+      "feedback": "Average costs are $20, $15, $14 and $14. Minimum efficient scale selects the smallest output at minimum long-run average cost, not minimum total cost.",
+      "aHash": "c0e1ccae3b329de5cda84f4d05c5a4c072dc2382f4acbfcd23057827ea422672"
     },
     {
       "id": 373,
@@ -8094,12 +8094,12 @@ const questionBanks = {
     {
       "id": 374,
       "sourceGame": "costDirective",
-      "q": "A start-up expects to sell 3,000 units. The industry reaches minimum efficient scale at 50,000 units. What is the most direct concern?",
+      "q": "An entrant can sell 8,000 units annually. Its cost at that scale is $24 each; at its 20,000-unit MES it would be $17. An incumbent offers to supply all 8,000 at $19 each, plus a $12,000 annual coordination fee. All internal production costs are avoidable. Which comparison is relevant?",
       "options": [
-        "The start-up must have zero fixed cost at low volume",
-        "The start-up will automatically benefit from decreasing returns to scale",
-        "The start-up may face a cost disadvantage at its expected volume",
-        "The start-up should ignore volume because price determines all costs"
+        "Making saves $16,000 using the unattainable $17 MES cost.",
+        "Buying saves $40,000 because the coordination fee is fixed.",
+        "Buying costs $28,000 less at the attainable volume.",
+        "Making is always preferable because MES is known."
       ],
       "tag": "minimum_efficient_scale",
       "type": "application",
@@ -8110,18 +8110,18 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "minimum_efficient_scale",
       "commonError": "ignores_scale_disadvantage",
-      "feedback": "Operating far below MES can leave a firm with higher average cost than larger rivals.",
-      "aHash": "8bceef9f7b824bc9fa89b9fc1476d177ebcfd70cd670e7fed6f0fa1827085cbc"
+      "feedback": "Make cost is 8,000×24 = $192,000. Buy cost is 8,000×19 + 12,000 = $164,000. The gap is $28,000; the larger-scale hypothetical is not currently available.",
+      "aHash": "a66c593d9f61b4168794d10ffd854ff1147fa8fe2c4803eac3b3fa5b113be7db"
     },
     {
       "id": 375,
       "sourceGame": "costDirective",
-      "q": "A firm's unit cost falls from $40 to $32 after cumulative output doubles. What is the learning rate?",
+      "q": "Comparable unit cost falls from $80 to $64 when cumulative experience doubles. Define the progress ratio as new cost divided by old cost at each doubling. If that ratio persists for one more doubling, what are the next cost and its cumulative reduction from $80?",
       "options": [
-        "20%",
-        "32%",
-        "125%",
-        "80%"
+        "$48; 40% reduction",
+        "$64; 20% reduction",
+        "$16; 80% reduction",
+        "$51.20; 36% reduction"
       ],
       "tag": "learning_curve",
       "type": "calculation",
@@ -8135,18 +8135,18 @@ const questionBanks = {
       ],
       "repairSkill": "learning_curve",
       "commonError": "uses_cost_reduction_as_learning_rate",
-      "feedback": "The learning rate is new cost divided by old cost: $32 / $40 = 80%.",
-      "aHash": "f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a"
+      "feedback": "The progress ratio is 64/80 = 0.8. Another doubling gives 64×0.8 = $51.20. The cumulative reduction is (80-51.2)/80 = 36%, not the sum of two 20% reductions.",
+      "aHash": "e64f56cfcf1053e05501300304153cb9443a0bbff7d240780c9e5e14234716a9"
     },
     {
       "id": 376,
       "sourceGame": "costDirective",
-      "q": "Why should a manager evaluate cost over the product life cycle when learning curves are present?",
+      "q": "A two-batch contract pays $46 per unit for 100 units in each batch. Forecast unit costs are $55 then $35 due to learning, with no other costs or discounting. Which evaluation is correct?",
       "options": [
-        "Early losses may be rational if learning lowers future cost enough",
-        "Only first-period accounting profit matters under learning",
-        "Learning curves make marginal cost irrelevant to future output",
-        "Future cost must rise when cumulative output increases"
+        "The full contract earns $200 despite losing $900 on the first batch.",
+        "Reject automatically because the first batch's price is below its cost.",
+        "The contract earns $2,200 because the learned cost applies to all units.",
+        "The contract loses $1,800 because the first cost persists throughout."
       ],
       "tag": "learning_curve",
       "type": "interpretation",
@@ -8160,8 +8160,8 @@ const questionBanks = {
       ],
       "repairSkill": "learning_curve",
       "commonError": "ignores_future_cost_decline",
-      "feedback": "Learning can make later production cheaper, so a life-cycle view may justify early investment or low margins.",
-      "aHash": "d1914a86549be7fa3c12fd475da8e0bace37a8d1997183d5ea4fe20ea5ad2ccd"
+      "feedback": "Revenue is 200×46 = $9,200; forecast cost is 100×55 + 100×35 = $9,000. First-batch loss is $900; second-batch gain is $1,100.",
+      "aHash": "25d1178f71c9329dc7b793754f88097bb1531f9ba08c7061049c8f703a257166"
     },
     {
       "id": 377,
@@ -8192,12 +8192,12 @@ const questionBanks = {
     {
       "id": 378,
       "sourceGame": "costDirective",
-      "q": "A firm can produce Product A for $80,000 and Product B for $60,000 separately. Joint production costs $125,000. What is the scope economy?",
+      "q": "Separate production of two diagnostic kits costs $96,000 and $74,000 annually. Shared production costs $142,000 plus $11,000 coordination and $9,000 additional expected warranty cost. Same outputs and quality obligations apply. What is the net scope saving?",
       "options": [
-        "$20,000",
-        "$125,000",
-        "$15,000",
-        "-$15,000"
+        "$28,000",
+        "$17,000",
+        "$8,000",
+        "-$8,000"
       ],
       "tag": "economies_of_scope",
       "type": "calculation",
@@ -8208,8 +8208,8 @@ const questionBanks = {
       "secondarySkills": [],
       "repairSkill": "economies_of_scope",
       "commonError": "confuses_joint_cost_with_savings",
-      "feedback": "Separate cost is $140,000. Joint cost is $125,000, so scope savings are $15,000.",
-      "aHash": "208bd9cfd4e08ea0e562d793c5f0e8c93c62473aa2d72f363127750b41e7bbae"
+      "feedback": "All-in joint cost is $162,000 versus $170,000 separately. Ignoring coordination or warranty exaggerates the saving.",
+      "aHash": "c94f532439ac07e039fde3052a4e3c0fc4761288418d39e622ac0e25116da0c8"
     },
     {
       "id": 379,
@@ -8236,12 +8236,12 @@ const questionBanks = {
     {
       "id": 380,
       "sourceGame": "costDirective",
-      "q": "A company considers acquiring a small brand because both firms can use the same salesforce and customer data. What is the scope-based argument?",
+      "q": "An acquisition would reduce combined annual production cost from $220,000 to $180,000 at unchanged outputs. Integration adds $25,000 per year. The seller also asks a one-time $50,000 premium. For a two-year horizon with no discounting or resale premium recovery, what does the scope argument establish?",
       "options": [
-        "Shared assets may lower the joint cost of serving both products",
-        "The acquisition must create increasing returns to scale in one product",
-        "The smaller brand has no opportunity cost once acquired",
-        "The deal is profitable whenever accounting revenue increases"
+        "Operations save $30,000 over two years, insufficient to cover the $50,000 premium.",
+        "The acquisition gains $80,000 because integration costs are fixed.",
+        "The acquisition gains $30,000 after the premium.",
+        "The production saving alone guarantees a worthwhile purchase at any premium."
       ],
       "tag": "economies_of_scope",
       "type": "application",
@@ -8254,8 +8254,8 @@ const questionBanks = {
       ],
       "repairSkill": "economies_of_scope",
       "commonError": "confuses_scope_with_revenue_growth",
-      "feedback": "Economies of scope can make acquisitions valuable when shared capabilities reduce joint cost or increase joint value.",
-      "aHash": "7a9e384269e466c1dd3b325d0ab9af02700e349c9a338195827003340796f617"
+      "feedback": "Annual net operating saving is 220,000 - 180,000 - 25,000 = $15,000. Two years give $30,000, so the premium exceeds those savings by $20,000.",
+      "aHash": "60a82e6fca15d95dd8f5effa3dd6d47ac89606cbed722765ba61d8671c152c50"
     },
     {
       "id": 381,
@@ -8311,12 +8311,12 @@ const questionBanks = {
     {
       "id": 383,
       "sourceGame": "costDirective",
-      "q": "A firm rewards plant managers for low average cost. One manager overproduces inventory to spread fixed cost across more units. What is the best diagnosis?",
+      "q": "A plant manager is rewarded for low reported AC. Making 1,000 units costs $20,000; making 1,200 costs $22,800, but only 1,000 can sell. Extra inventory has no future value and costs $400 to dispose of. What is the incentive problem?",
       "options": [
-        "The manager is maximizing economic profit because average cost fell",
-        "The incentive is irrelevant because fixed cost never affects decisions",
-        "The firm should use only output volume because it is easier to measure",
-        "The metric encourages behavior that lowers reported average cost but may reduce firm value"
+        "The firm gains $1,200 because the reported unit cost falls by $1.",
+        "The extra units are free because fixed cost is spread more widely.",
+        "The bonus tracks firm value because a lower AC always raises profit.",
+        "AC falls from $20 to $19 while overproduction destroys $3,200 of value."
       ],
       "tag": "incentive_system_design",
       "type": "integration",
@@ -8332,8 +8332,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_system_design",
       "commonError": "ignores_metric_distortion",
-      "feedback": "An incentive based on average cost can distort output decisions if it rewards inventory buildup rather than value creation.",
-      "aHash": "af882836991a57853efe66c786ca7c635ee02531cc206ee1593b0ed073b71568"
+      "feedback": "Reported AC rewards the larger denominator. With no extra revenue, production cost rises $2,800 and disposal adds $400, a $3,200 loss.",
+      "aHash": "4f468d7d67e9a7b91d886d696cd633ba0b263e62b425c7e599223a7c47d03eb5"
     },
     {
       "id": 384,
@@ -8388,12 +8388,12 @@ const questionBanks = {
     {
       "id": 386,
       "sourceGame": "costDirective",
-      "q": "A business has accounting profit of $90,000. It uses owner capital that could earn $35,000 elsewhere and owner labor worth $60,000 elsewhere. What should an economist conclude?",
+      "q": "An owner has $88,000 accounting profit. Her labor could earn $54,000; her building could earn $21,000 net rent; capital excluding that building could earn $8,000. A manager also subtracts the $21,000 rent as a separate 'facility opportunity charge' a second time. What is correct economic profit?",
       "options": [
-        "Economic profit is $90,000 because accounting profit is positive",
-        "Economic profit is $185,000 because opportunity costs add value",
-        "Economic profit is -$5,000, so resources may be worth more elsewhere",
-        "Economic profit cannot be calculated unless fixed cost is known"
+        "-$16,000",
+        "$26,000",
+        "$5,000",
+        "$88,000"
       ],
       "tag": "accounting_economic_profit",
       "type": "calculation",
@@ -8408,8 +8408,8 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "ignores_implicit_costs",
-      "feedback": "Economic profit is $90,000 - $35,000 - $60,000 = -$5,000.",
-      "aHash": "afa00bdfce90125ed988db40c82888d2ead7ee2106be83b068f5df485718c322"
+      "feedback": "Distinct implicit costs total 54,000 + 21,000 + 8,000 = $83,000. Deduct the building's rental alternative once, leaving $5,000.",
+      "aHash": "9268d0f3ef03795caf9a49883e4557382c23b99292886f428e0c8742eaa2929c"
     },
     {
       "id": 387,
@@ -8465,12 +8465,12 @@ const questionBanks = {
     {
       "id": 389,
       "sourceGame": "costDirective",
-      "q": "A firm can enter a market only by producing far below minimum efficient scale at first. Entry also creates learning that could cut cost by 30% after volume grows. What is the best evaluation?",
+      "q": "A pilot loses $8,000 this month but creates experience expected to reduce relevant cost by $3 per unit on 4,000 later units. Later orders are committed; the pilot has no other benefits or costs and discounting is ignored. What lifecycle evaluation is appropriate?",
       "options": [
-        "Reject entry because being below minimum efficient scale always makes profit impossible",
-        "Compare early scale disadvantage with expected life-cycle learning benefits",
-        "Enter because learning curves guarantee future economic profit",
-        "Ignore scale and learning because only current accounting profit matters"
+        "Reject because a current loss can never be recovered through learning.",
+        "Proceed on these forecasts: later savings exceed the pilot loss by $4,000.",
+        "Proceed with a $12,000 net gain because the pilot loss is irrelevant before approval.",
+        "Proceed because future learning proves the firm is already at MES."
       ],
       "tag": "learning_curve",
       "type": "integration",
@@ -8485,20 +8485,20 @@ const questionBanks = {
       ],
       "repairSkill": "learning_curve",
       "commonError": "single_period_thinking",
-      "feedback": "The decision should weigh early cost disadvantage against future cost reductions from learning and volume.",
-      "aHash": "61ec639bb758ed92cd58ec6b58323fb6de45824cb014a9d4d6190fb094c5254c"
+      "feedback": "Before approval, the pilot loss is avoidable and must be counted. Forecast savings are 3×4,000 = $12,000, exceeding $8,000 by $4,000. This does not prove MES.",
+      "aHash": "2f32b044fe18051debe5314080bd7198c324fa053fa55d90ea666a88e977586a"
     }
   ],
   "legendary": [
     {
       "id": 9000,
       "sourceGame": "costDirective",
-      "q": "A regional warehouse is missing delivery targets. Labor hours rose, order volume fell, and the manager wants to add a bonus for speed. What is the best first move?",
+      "q": "A plant rewards supervisors for low cost per unit. After the bonus starts, output rises 20%, sales stay flat, inventory grows, and rework rises. Supervisors have customer-order data. Leadership proposes better sales forecasts. Which diagnosis should guide the first intervention?",
       "options": [
-        "Define the decision problem before choosing a speed bonus",
-        "Start the bonus because missed targets prove effort is too low",
-        "Cut labor hours because higher hours did not fix delivery performance",
-        "Rank workers by late shipments and discipline the lowest performers"
+        "Check whether the bonus rewards unsold production and excludes rework before treating missing forecasts as the cause.",
+        "Buy better forecasts first because every inventory increase proves information is missing.",
+        "Raise the output target because cost per unit will fall if production rises further.",
+        "Replace supervisors because informed employees cannot rationally respond to a harmful bonus."
       ],
       "tag": "problem_solving_steps",
       "type": "integration",
@@ -8512,18 +8512,18 @@ const questionBanks = {
       ],
       "repairSkill": "problem_solving_steps",
       "commonError": "solution_before_diagnosis",
-      "feedback": "Legendary diagnosis starts before the proposed fix. The manager must define the decision, objective, constraints, information, and incentives before adding a bonus.",
-      "aHash": "6822d92998ba624799e0f62d2943a09e5d91cc389ff32e4d65d99865cf268cd6"
+      "feedback": "Available order data weakens a pure information explanation. The combination of inventory and rework suggests a measure that can improve while firm value falls. Validate that mechanism before changing staffing or forecasts.",
+      "aHash": "a69880a5efc90b1326ca6c0e584b1ab8e31cbeb541b645b2e9d7d98a6f85de34"
     },
     {
       "id": 9001,
       "sourceGame": "costDirective",
-      "q": "A product team says a failed launch proves the advertising budget was too small. Which evidence would most challenge that diagnosis?",
+      "q": "A company blames churn on slow support and proposes staffing. A staggered pilot shows: adding staff shortens queues but leaves churn unchanged; rewarding verified resolutions lowers callbacks and churn with the same staffing. Groups had similar initial customers but assignment was not random. Which inference is strongest?",
       "options": [
-        "Advertising spending was lower than the prior year's launch budget",
-        "Customer surveys show the product lacked a feature buyers considered essential",
-        "The launch manager left the firm three months after the campaign",
-        "The team used a new vendor for several digital advertisements"
+        "The pilot proves staffing cannot affect any customer outcome.",
+        "The evidence favors a resolution-incentive problem and warrants further comparison; it does not prove queue speed never matters.",
+        "Shorter queues demonstrate that more staffing is the profitable solution despite unchanged churn.",
+        "Because assignment was not random, none of the observed evidence can inform the decision."
       ],
       "tag": "problem_solving_steps",
       "type": "trap",
@@ -8537,18 +8537,18 @@ const questionBanks = {
       ],
       "repairSkill": "problem_solving_steps",
       "commonError": "confuses_symptom_with_cause",
-      "feedback": "If buyers rejected the product because of a missing feature, the problem is not mainly advertising. The original diagnosis is likely wrong.",
-      "aHash": "5fb203410f7313d342336d276e89e94caf4d7804f6c8a665dcab89854be70893"
+      "feedback": "The contrast helps distinguish mechanisms, but possible group differences limit causation claims. A good diagnosis uses the evidence without overstating it.",
+      "aHash": "798078d2171b304e2d084021d52cee0080be9588eb74272baf86b26eb43dcb3c"
     },
     {
       "id": 9002,
       "sourceGame": "costDirective",
-      "q": "A division head asks whether to close a small facility. Which question is most important before comparing the alternatives?",
+      "q": "A branch reports a $20,000 loss after $50,000 headquarters allocation. Closing avoids all direct costs, leaves headquarters costs unchanged, frees capacity earning $18,000 net, and triggers $7,000 severance. What should the closure analysis establish?",
       "options": [
-        "Which facility has the lowest accounting profit this quarter?",
-        "Can the closure be announced before competitors react?",
-        "What objective is being maximized, and which costs and benefits change if the facility closes?",
-        "How much did the firm originally spend building the facility?"
+        "Closure gains $31,000 by eliminating the loss, adding capacity income and paying severance.",
+        "Closure gains $11,000 because only the newly freed capacity and severance matter.",
+        "Closure loses $19,000: it gives up $30,000 contribution for $18,000 and pays $7,000.",
+        "Closure loses $57,000 because all allocated overhead becomes incremental."
       ],
       "tag": "problem_solving_steps",
       "type": "integration",
@@ -8562,18 +8562,18 @@ const questionBanks = {
       ],
       "repairSkill": "problem_solving_steps",
       "commonError": "uses_accounting_label_as_objective",
-      "feedback": "The decision should be framed around the objective and the costs and benefits that change under the alternatives.",
-      "aHash": "4b5c72a243cd7debe89c812bbe13957112b66b923f9c14e1896e4c219000abb3"
+      "feedback": "The branch's pre-allocation contribution is -20,000 + 50,000 = $30,000. Closure's change is 18,000 - 30,000 - 7,000 = -$19,000.",
+      "aHash": "a33fc582b2ba57ffc8c10abe2fc90c9ba89780596eaea19cfa0df6477719694b"
     },
     {
       "id": 9003,
       "sourceGame": "costDirective",
-      "q": "An employee chooses the low-quality supplier because the purchasing bonus rewards only lower invoice prices. What does the rational-actor paradigm predict?",
+      "q": "A buyer earns 10% of invoice savings and personally bears none of the failure cost. An alternate input saves $12,000 on invoices but raises expected failure cost $15,000. Verified net-cost savings could instead determine the bonus. What does rational-actor analysis predict under the current rule?",
       "options": [
-        "Employees ignore bonus formulas when quality problems are possible",
-        "Employees act rationally only when the firm earns higher profit",
-        "Employees must be acting irrationally because quality later declined",
-        "Employees respond to the incentives they face, even when those incentives conflict with firm value"
+        "The buyer must reject because the firm loses $3,000.",
+        "The buyer earns $300 because personal pay always follows firm net savings.",
+        "Showing the existing failure estimate again necessarily removes the $1,200 incentive.",
+        "The buyer can gain $1,200 by selecting an input that costs the firm $3,000 more; a net-cost rule removes that reward."
       ],
       "tag": "rational_actor_paradigm",
       "type": "integration",
@@ -8587,18 +8587,18 @@ const questionBanks = {
       ],
       "repairSkill": "rational_actor_paradigm",
       "commonError": "confuses_bad_outcome_with_irrationality",
-      "feedback": "A rational actor responds to costs and benefits. A bad metric can make value-destroying behavior privately attractive.",
-      "aHash": "952bc41ede95fd110ac0d91dfb6c18e5d730b8601dc9cc0123c6ca39ac879357"
+      "feedback": "The current bonus is 0.10×12,000 = $1,200. The firm's net saving is 12,000 - 15,000 = -$3,000, so no positive net-saving reward is earned under the alternative measure.",
+      "aHash": "04074f641c1d70c0d76ee3f20b0567f61544f76b73e42766a87678fdaf486fa5"
     },
     {
       "id": 9004,
       "sourceGame": "costDirective",
-      "q": "A manager rejects a profit-improving change because it would make her department look worse on a cost-per-unit dashboard. How should this behavior be interpreted?",
+      "q": "A manager chooses a safe plan yielding $40,000 firm profit over a risky plan yielding $80,000 with 60% probability and $10,000 otherwise. Her bonus is $4,000 if profit is at least $35,000, zero otherwise. She maximizes expected bonus and faces no other effects. What explains her choice?",
       "options": [
-        "It can be rational for the manager if the dashboard affects her rewards or reputation",
-        "It proves the manager does not understand profit maximization",
-        "It violates rational behavior because profit would rise for the firm",
-        "It shows that accounting measures never influence real behavior"
+        "Safe pays her $4,000 versus $2,400 expected; risky has higher expected firm profit of $52,000.",
+        "Safe maximizes both expected bonus and expected firm profit.",
+        "Risky must be selected by every rational manager because it has the larger possible payoff.",
+        "Safe proves she is risk averse because the expected bonuses are equal."
       ],
       "tag": "rational_actor_paradigm",
       "type": "trap",
@@ -8612,8 +8612,8 @@ const questionBanks = {
       ],
       "repairSkill": "rational_actor_paradigm",
       "commonError": "assumes_firm_objective_equals_agent_objective",
-      "feedback": "Rational behavior depends on the decision maker's payoffs. If the dashboard affects rewards, the manager may rationally protect that metric.",
-      "aHash": "988fa1db1146e04fde139560956ad77de1bd15739af965d7ae9039f4d93bae2d"
+      "feedback": "Expected firm profit from risky is 0.6×80,000 + 0.4×10,000 = $52,000. Expected bonus is only 0.6×4,000 = $2,400. The threshold itself can create the conflict without risk aversion.",
+      "aHash": "617c6ae9b988bdf1d417308ccd51a8183eb49fdacd048d78fb6710512a463bac"
     },
     {
       "id": 9005,
@@ -8642,12 +8642,12 @@ const questionBanks = {
     {
       "id": 9006,
       "sourceGame": "costDirective",
-      "q": "A call center pays agents per completed call. Average call time falls, but repeat complaints rise. What is the best incentive diagnosis?",
+      "q": "A call center rewards cases closed. Closing a case without solving it earns one bonus now; a reopening earns another. Managers propose paying only after seven days without reopening. Agents can instead delay registering a callback until day eight. Which redesign best addresses both distortions?",
       "options": [
-        "The incentive is ineffective because employees never respond to piece rates",
-        "The repeat complaints prove the wage rate is too low for all agents",
-        "The incentive rewards speed but fails to account for call quality",
-        "The firm should ignore quality because completed calls are easier to count"
+        "Extend the cutoff by one day while relying only on agents' own recording.",
+        "Pay the original bonus twice as fast so legitimate effort is rewarded sooner.",
+        "Link rewards to independently sampled customer resolution, including callbacks recorded after the cutoff.",
+        "Reward the number of cases still closed exactly at the seven-day boundary."
       ],
       "tag": "incentive_system_design",
       "type": "integration",
@@ -8662,18 +8662,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_system_design",
       "commonError": "ignores_unmeasured_dimension",
-      "feedback": "The metric rewards one dimension of performance. If quality is not included, employees may increase speed in ways that damage quality.",
-      "aHash": "9d4074975bbe056f499da051cd83ce240a83da556f596424da63e70730f17bef"
+      "feedback": "A recorded cutoff can itself be gamed. Independent outcome checks and coverage of delayed callbacks target durable resolution rather than merely moving the reporting boundary.",
+      "aHash": "5e2092da4fdbcf8c3c4cc021ff3929fb18d23b50fc5a604cea0320d6dd8a27d0"
     },
     {
       "id": 9007,
       "sourceGame": "costDirective",
-      "q": "A sales team earns commission on revenue, not profit. Reps start discounting heavily to close more deals. Which redesign best targets the incentive problem?",
+      "q": "Reps can sell one of two equal-effort offers: A brings $1,000 revenue and $700 incremental cost; B brings $850 revenue and $450 cost. A 5% revenue commission rewards A. A proposed 10% contribution commission is paid after verified acceptance. What changes?",
       "options": [
-        "Raise the base salary and keep the same revenue commission",
-        "Remove performance measurement until discounting returns to normal",
-        "Reward the number of customer meetings rather than the value of deals",
-        "Tie part of compensation to contribution margin instead of revenue alone"
+        "A remains preferable because $1,000 revenue always creates more contribution.",
+        "Both pay $50 because the original commission determines the new plan.",
+        "B pays $85 because contribution commission uses revenue before costs.",
+        "B becomes privately preferable at $40 commission versus A's $30, matching its $100 larger contribution."
       ],
       "tag": "incentive_system_design",
       "type": "application",
@@ -8688,8 +8688,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_system_design",
       "commonError": "rewards_wrong_metric",
-      "feedback": "If discounts raise revenue but reduce margin, revenue commission alone can push reps toward low-profit deals.",
-      "aHash": "54a17cf642b9ef9412d6f20f1e42cbe3ef7b42b5610c3e629f9db0f995f4c52e"
+      "feedback": "Contributions are $300 and $400. The revised commissions are $30 and $40, aligning these equal-effort choices with the larger net contribution.",
+      "aHash": "f3b324a4cafc5dbc0c3cde420f775407c372fd091c2f6c551aa90f8d49339d89"
     },
     {
       "id": 9008,
@@ -8720,12 +8720,12 @@ const questionBanks = {
     {
       "id": 9009,
       "sourceGame": "costDirective",
-      "q": "A branch manager has local demand information, but her bonus depends only on minimizing labor cost. Headquarters has weaker local information but cares about profit. What is the organizational problem?",
+      "q": "Local managers know customer values; headquarters knows cost, and a dispatch team knows capacity opportunity costs. Managers currently receive revenue bonuses. Which design best supports local quoting when accepting one order can displace another?",
       "options": [
-        "The branch manager should make all decisions because she has local information",
-        "Decision rights and incentives are split across people with different information and objectives",
-        "Headquarters should centralize every decision because it cares about profit",
-        "The firm should ignore incentives and collect more sales reports only"
+        "Send manufacturing AC to managers but continue to reward revenue alone.",
+        "Combine local value, incremental cost and displaced contribution in the quote information, and reward verified net contribution.",
+        "Centralize quotes using headquarters' costs while excluding local value and dispatch data.",
+        "Delegate fully because local customer information alone resolves all tradeoffs."
       ],
       "tag": "organization_design_info_incentives",
       "type": "integration",
@@ -8740,18 +8740,18 @@ const questionBanks = {
       ],
       "repairSkill": "organization_design_info_incentives",
       "commonError": "focuses_on_information_only",
-      "feedback": "A well-designed organization aligns information, decision authority, and incentives. Here those pieces are not aligned.",
-      "aHash": "5430621f8dd460ca15323cf1474b9e00285185c369ff3e1f9ef85b6ee98d97eb"
+      "feedback": "Informed authority requires the relevant opportunity cost as well as production cost and customer value. The reward must also encourage use of that combined information.",
+      "aHash": "c5e288dc5cae1e5d0de5ecf01604f78816bf7cd7fc211bf2ebe8d2ed8a1f0b45"
     },
     {
       "id": 9010,
       "sourceGame": "costDirective",
-      "q": "A firm gives plant supervisors authority to choose maintenance schedules but evaluates them only on this quarter's operating cost. What risk does this create?",
+      "q": "A maintenance manager earns a bonus for this quarter's spending cuts. Skipping a $6,000 service has a 25% chance of causing $40,000 downtime next quarter. Equipment condition data are available now; the manager transfers divisions next quarter. Which change most directly addresses the distortion?",
       "options": [
-        "Supervisors will automatically choose the maintenance plan that maximizes firm value",
-        "Quarterly cost measures solve the information problem by being easy to observe",
-        "Supervisors may postpone valuable maintenance because the future cost is not in their performance measure",
-        "Maintenance authority should always belong to accounting rather than operations"
+        "Provide the same condition data more frequently while keeping the spending-only bonus.",
+        "Charge the manager for all downtime in the firm, regardless of which decisions caused it.",
+        "Include attributable expected lifecycle cost and retain accountability for deferred maintenance outcomes.",
+        "Reward this quarter's cut because the future loss is uncertain."
       ],
       "tag": "organization_design_info_incentives",
       "type": "trap",
@@ -8766,8 +8766,8 @@ const questionBanks = {
       ],
       "repairSkill": "organization_design_info_incentives",
       "commonError": "ignores_time_horizon",
-      "feedback": "Authority without aligned incentives can distort decisions. Short-run cost targets may hide long-run maintenance costs.",
-      "aHash": "cae7e59abffd24b74acf68d2784d6251470cb02017d6a874df800c0e19dbcdcc"
+      "feedback": "Expected downtime cost is 0.25×40,000 = $10,000, exceeding the saving by $4,000. Timing and attribution should align the reward with the consequences the decision creates.",
+      "aHash": "644cdd2860a2752d90c9292951448ae4d404be50be27a0fc7d6494cc4f3c31ce"
     },
     {
       "id": 9011,
@@ -8798,12 +8798,12 @@ const questionBanks = {
     {
       "id": 9012,
       "sourceGame": "costDirective",
-      "q": "A retailer asks why online returns are rising. Which investigation best reflects the question-driven problem-solving approach?",
+      "q": "A return-rate spike follows a revenue commission. Reps now favor product A, with $900 revenue and $180 expected contribution after returns, over B, with $700 revenue and $260 contribution. Equal sales effort is required. Leadership proposes more product training, but reps already know return rates. Which inquiry is most useful?",
       "options": [
-        "Ask which decisions changed, who made them, what information they used, and how incentives changed",
-        "Ask whether the return rate is embarrassing compared with competitors",
-        "Assume customers became less honest and tighten every return rule",
-        "Blame the department with the largest increase in refund processing cost"
+        "Test whether the reward for A's larger revenue outweighs the rep's incentive to recommend B's larger net contribution.",
+        "Ask only whether reps can recall product specifications.",
+        "Conclude all returns are intentional because the reps know return rates.",
+        "Raise the revenue commission on both products and use revenue to evaluate the fix."
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "integration",
@@ -8819,8 +8819,8 @@ const questionBanks = {
       ],
       "repairSkill": "managerial_problem_diagnosis",
       "commonError": "jumps_to_blame",
-      "feedback": "The recommended approach is to ask structured questions about decisions, information, incentives, alternatives, and constraints.",
-      "aHash": "dcb7cdf8029c4c7cdfb5e3009e1de60e517c1b1eb390bd7e8d3b1b0e6b6b9acf"
+      "feedback": "The evidence isolates a plausible incentive conflict while leaving room to test other causes. Equal effort and known returns make net contribution a relevant alternative measure.",
+      "aHash": "ea997c2f1edb46fca69aa6b7c916e30beccac0bc46305e51fea5a644f14a57fa"
     },
     {
       "id": 9013,
@@ -8851,12 +8851,12 @@ const questionBanks = {
     {
       "id": 9014,
       "sourceGame": "costDirective",
-      "q": "A manager wants to know whether a failed process change was a bad idea or a good idea implemented badly. Which evidence is most useful?",
+      "q": "A pilot improves average handling time but lowers retained-customer contribution. The team calls it a success and wants to scale it. The original goal was profitable retention. Which evidence should decide whether the process worked?",
       "options": [
-        "Compare the project name with other successful initiatives",
-        "Ask whether employees liked the change after it was announced",
-        "Separate the expected value of the change from the incentives and information used during execution",
-        "Use the final outcome alone because outcomes reveal decision quality"
+        "Average handling time alone, because it was the easiest metric to collect.",
+        "The money already spent on the pilot, because scaling spreads it across customers.",
+        "Contribution after repeat work and customer losses, compared with a credible alternative using similar customers.",
+        "A comparison of the pilot's best week with the old process's worst week."
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "trap",
@@ -8871,18 +8871,18 @@ const questionBanks = {
       ],
       "repairSkill": "managerial_problem_diagnosis",
       "commonError": "equates_bad_outcome_with_bad_decision",
-      "feedback": "A bad outcome does not automatically mean a bad decision. Legendary analysis separates decision quality from implementation and uncertainty.",
-      "aHash": "ea0b324650dd96702781eb951815d480b5fdd72d9f47b002682257cf09e35298"
+      "feedback": "Evaluate the stated objective and all attributable effects over comparable cases. A faster proxy and sunk pilot expense do not establish profitable retention.",
+      "aHash": "a26da019efc5b59341fb1db2803c5629bed04c2a8a6c2b2c5c8c4b3fb7f77de4"
     },
     {
       "id": 9015,
       "sourceGame": "costDirective",
-      "q": "A supplier can make a component for $42. A manufacturer values it at $70 and they agree to $56. A $18 compliance fee is added per unit. What happens to the deal's surplus?",
+      "q": "Three independent buyer-seller pairs have values/costs (in dollars): A 110/60, B 84/50, C 70/48. There are no resource transaction costs. A $30 tax is paid per completed trade, and pairs trade only with strictly positive combined private gains. What are private gains, government revenue and lost total gains relative to no tax?",
       "options": [
-        "The transaction creates $28 of surplus because the price is $56",
-        "The transaction creates no surplus because the fee exceeds the seller's profit",
-        "The transaction creates $14 of surplus because buyer value minus price is $14",
-        "The transaction still creates $10 of surplus after the fee"
+        "$84 private gains; $60 revenue; $0 lost gains",
+        "$24 private gains; $90 revenue; $30 lost gains",
+        "$84 private gains; $0 revenue; $60 lost gains",
+        "$24 private gains; $60 revenue; $22 lost total gains"
       ],
       "tag": "voluntary_transactions_surplus",
       "type": "calculation",
@@ -8896,18 +8896,18 @@ const questionBanks = {
       ],
       "repairSkill": "voluntary_transactions_surplus",
       "commonError": "confuses_price_with_surplus",
-      "feedback": "Value minus cost is $70 - $42 = $28. After the $18 fee, net surplus is $10.",
-      "aHash": "186b7a67ceea111e819012acc603faee49b030c51e0d7a2f4f91bc990426357e"
+      "feedback": "Gross gaps are 50, 34 and 22. A and B trade, leaving private gains 20+4 = $24 and tax revenue $60. C's $22 gain is lost. Revenue is a transfer, so surviving total gains remain $84.",
+      "aHash": "2f860e520a02d7c22782a24bf5f25a349ab5259a4673f68e249129a964fe8399"
     },
     {
       "id": 9016,
       "sourceGame": "costDirective",
-      "q": "A buyer values a used machine at $90,000. The seller's next-best use is $72,000. Negotiation costs are expected to be $22,000. What should happen if both sides understand the numbers?",
+      "q": "A buyer values equipment at $48,000. The seller requires $32,000 net. Shipping consumes $3,000; a $5,000 tax applies only if traded. A broker charges the buyer a fee F. With renegotiable price and no other effects, what is the largest whole-dollar F allowing both parties strictly positive gains?",
       "options": [
-        "The deal should not occur because transaction costs exceed the $18,000 surplus",
-        "The deal should occur because the buyer values the machine more than the seller",
-        "The deal should occur only if the price is exactly $81,000",
-        "The deal creates $22,000 of surplus because negotiation is costly"
+        "$7,999",
+        "$8,000",
+        "$12,999",
+        "$15,999"
       ],
       "tag": "voluntary_transactions_surplus",
       "type": "multi-step",
@@ -8921,8 +8921,8 @@ const questionBanks = {
       ],
       "repairSkill": "voluntary_transactions_surplus",
       "commonError": "ignores_transaction_costs",
-      "feedback": "The gross surplus is $18,000. If negotiation costs are $22,000, the transaction destroys net value.",
-      "aHash": "ac27c6a3857e5cf7ed485e7c50cebefba6f8810bf868fce993a1a2624f0edf15"
+      "feedback": "Combined private gains before the broker are 48,000 - 32,000 - 3,000 - 5,000 = $8,000. Strictly positive combined gains require F below $8,000; $7,999 leaves $1 that a renegotiated price can split.",
+      "aHash": "51a39613a219fbb9b499a004b327ea675bb8d7ef3f0aca9d61f02a29b7036bb0"
     },
     {
       "id": 9017,
@@ -8952,12 +8952,12 @@ const questionBanks = {
     {
       "id": 9018,
       "sourceGame": "costDirective",
-      "q": "A city requires six approvals before a vacant lot can be converted into a restaurant site. The site remains unused even though buyers value it more than the current owner. What is the best interpretation?",
+      "q": "Two independent one-unit rental pairs have buyer values $95 and $72 and seller reservation costs $40 and $55 respectively. No other costs exist. A maximum price of $50 applies to both pairs; supplementary payments are forbidden. Which policy effect is certain?",
       "options": [
-        "The asset has no opportunity cost because it is vacant",
-        "The market cannot create wealth when land is involved",
-        "Regulatory delay is impeding movement of the asset to a higher-valued use",
-        "The current owner must value the land more than all buyers"
+        "Both pairs trade because both buyer values exceed $50.",
+        "Neither pair trades because the maximum is below both buyer values.",
+        "The second pair cannot trade voluntarily, losing $17 of potential gains; the first can still split $55.",
+        "Exactly $45 of gains are lost because the first buyer pays below value."
       ],
       "tag": "barriers_to_trade",
       "type": "application",
@@ -8972,18 +8972,18 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "ignores_barrier_to_trade",
-      "feedback": "When approvals block a higher-valued use, the asset may stay in a lower-valued use even though trade would create value.",
-      "aHash": "2cd4041564ab92ed58c198ba41cca470e0ca0b705b1746057cab2224acf3a46c"
+      "feedback": "The second seller cannot receive its $55 minimum. That blocks its 72-55 = $17 gain. The first seller can accept a price between $40 and $50, preserving the $55 value-cost gap.",
+      "aHash": "436a70c476148d0590477c159399ccc15bee83c10925ee0125b5fd2525947ad4"
     },
     {
       "id": 9019,
       "sourceGame": "costDirective",
-      "q": "A firm cannot sell obsolete inventory because no one can verify its condition without costly testing. Which barrier is most directly blocking a value-creating transaction?",
+      "q": "Before tax a service sells at $60. A proposed tax would leave buyers paying $64 and sellers receiving $55. Forecast taxed sales are 200, down from 240. Which information is still needed to calculate the total gains lost from the 40 prevented trades?",
       "options": [
-        "Economies of scale in production",
-        "A fixed cost that has already been sunk",
-        "A lower marginal cost at higher output",
-        "Information and verification costs"
+        "The $9 tax wedge alone; multiplying it by 40 gives the exact loss",
+        "The $4 buyer burden alone; multiplying it by 200 gives the exact loss",
+        "No more information; the $1,800 tax revenue is the lost surplus",
+        "Buyer values and seller reservation costs for the prevented trades"
       ],
       "tag": "barriers_to_trade",
       "type": "identification",
@@ -8998,8 +8998,8 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "misidentifies_cost_concept",
-      "feedback": "If buyers cannot cheaply verify quality, information costs can prevent assets from moving to higher-valued uses.",
-      "aHash": "6fa6955428453aec9ef3461fe7ef776854eb3865b4ec004c6898ba932c3deac5"
+      "feedback": "The figures determine incidence and revenue but not the value-cost gaps of transactions that disappear. Without those gaps, lost gains cannot be inferred from quantities and the tax alone.",
+      "aHash": "36154d6a85f79e247334e145966e9689d12f70f1f697ec85d365e2f6720959d1"
     },
     {
       "id": 9020,
@@ -9030,12 +9030,12 @@ const questionBanks = {
     {
       "id": 9021,
       "sourceGame": "costDirective",
-      "q": "A plant redesign lets the same workers produce 12% more units with the same materials and equipment. Why does this help the business?",
+      "q": "A production change saves $9,000 materials, adds $2,000 quality control and reduces customer product value by $4,000 over the same annual output. It also frees capacity that earns $5,000 of additional net value elsewhere. What is the overall efficiency effect?",
       "options": [
-        "It helps only if total fixed cost rises by at least 12%",
-        "It raises output from the same resources, lowering cost per usable unit if quality holds",
-        "It helps because higher output automatically means higher profit",
-        "It proves marginal cost must be zero after redesign"
+        "Net value rises $9,000 because the material saving is the only efficiency measure.",
+        "Net value rises $8,000.",
+        "Net value rises $12,000 because reduced customer value is not a resource cost.",
+        "Net value falls $1,000 because the capacity alternative is internal."
       ],
       "tag": "efficiency_business_value",
       "type": "integration",
@@ -9049,8 +9049,8 @@ const questionBanks = {
       ],
       "repairSkill": "efficiency_business_value",
       "commonError": "equates_output_with_profit_without_costs",
-      "feedback": "Efficiency means producing more value from the same resources. If quality holds, average cost can fall.",
-      "aHash": "e8a9346b88cd55d838b367000e11fbdecc8f08b0573c9cb66ae5a79917f70b5e"
+      "feedback": "Include both resource changes and value changes: 9,000 - 2,000 - 4,000 + 5,000 = $8,000. An internal opportunity can create value even without a market transfer.",
+      "aHash": "29c1c0d26ad7e7db9c0cead75f7247a9ff2ec6d9ce3e9dcad891d1ab20f18a02"
     },
     {
       "id": 9022,
@@ -9080,12 +9080,12 @@ const questionBanks = {
     {
       "id": 9023,
       "sourceGame": "costDirective",
-      "q": "A manager says efficiency means cutting the largest expense line. What is the strongest correction?",
+      "q": "A firm can use 8 machine-hours for A, worth $1,800 after all other resource costs, or B, worth $1,600. A needs $300 additional testing; B frees a technician who can create $400 net value elsewhere during the same period. Which allocation is more efficient?",
       "options": [
-        "Efficiency means lowering price even if cost does not change",
-        "Efficiency means increasing output regardless of quality or waste",
-        "Efficiency means avoiding all transactions with outside suppliers",
-        "Efficiency is about value created per resource used, not simply making one cost line smaller"
+        "A, by $200 because its stated contribution is larger",
+        "A, by $100 because testing is the only additional expense",
+        "Both, because machine-hours are equal and fixed",
+        "B, by $500 after testing and the technician's alternative are included"
       ],
       "tag": "efficiency_business_value",
       "type": "trap",
@@ -9098,18 +9098,18 @@ const questionBanks = {
       ],
       "repairSkill": "efficiency_business_value",
       "commonError": "confuses_efficiency_with_expense_cutting",
-      "feedback": "A cost cut can reduce value. Efficiency compares output or value produced with resources used.",
-      "aHash": "5d9da7a087c5ed3c2f71d4b2e8d4cd342d1f7f191a44cb68baf4d46b99be4404"
+      "feedback": "A yields 1,800 - 300 = $1,500; B yields 1,600 + 400 = $2,000. Compare feasible complete alternatives over the same resource horizon.",
+      "aHash": "e1195bce4ae387ded8f2e2d26f05dee1131adea0d239f9336275b280d357171c"
     },
     {
       "id": 9024,
       "sourceGame": "costDirective",
-      "q": "A firm notices customers value same-day installation at $80, while the added cost is $35. Competitors do not offer it. What opportunity is present?",
+      "q": "A refurbisher can buy a 50-item lot for $1,500. Testing costs $200. Forty items sell for $65 each after $10 repairs apiece; ten sell as scrap for $5 each. A return guarantee causes $150 expected cost. What is the most the firm could pay above the quoted lot price while retaining nonnegative gain?",
       "options": [
-        "A money-making opportunity exists if the firm can capture part of the $45 surplus",
-        "No opportunity exists because same-day installation raises cost",
-        "The opportunity equals $80 because that is customer value",
-        "The opportunity exists only if price can be raised by exactly $35"
+        "$400",
+        "$550",
+        "$950",
+        "$1,100"
       ],
       "tag": "value_gap_opportunities",
       "type": "calculation",
@@ -9124,8 +9124,8 @@ const questionBanks = {
       ],
       "repairSkill": "value_gap_opportunities",
       "commonError": "focuses_on_cost_increase_only",
-      "feedback": "The added value is $80 and added cost is $35, so there is $45 of potential surplus to capture.",
-      "aHash": "3e0db937f8306a149d69d44d0dcbad08ac0ca3431789e61c9bea815b7ba39d92"
+      "feedback": "Receipts are 40×65 + 10×5 = $2,650. Other costs are 200 + 400 + 150 = $750; maximum total purchase price is $1,900. Relative to $1,500, there is $400 headroom.",
+      "aHash": "78177f1b0aa4b2723c7b50b191004ac9e5bbbd6ae4fc6f30fd0f80d1513698e6"
     },
     {
       "id": 9025,
@@ -9156,12 +9156,12 @@ const questionBanks = {
     {
       "id": 9026,
       "sourceGame": "costDirective",
-      "q": "A repair shop has a bottleneck technician. Some jobs generate $60 of margin per technician hour; others generate $38. What opportunity is the shop looking for?",
+      "q": "A bottleneck has 12 hours. A earns $900 after other costs and takes 7 hours; B earns $700 and takes 5; C earns $600 and takes 4. Each is indivisible and available once. A manager ranks C first by contribution per hour and then adds B. What improvement is available?",
       "options": [
-        "Accept every job with positive total revenue",
-        "Choose jobs with the lowest parts cost regardless of labor time",
-        "Move scarce technician time toward jobs with higher value per constrained hour",
-        "Spread technician time evenly to avoid measuring margins"
+        "Keep B+C because the highest contribution per hour guarantees the best bundle.",
+        "Choose all three because each has positive contribution.",
+        "Choose A+B for $1,600, exceeding B+C by $300.",
+        "Choose A+C because unused capacity is always costless and irrelevant to bundle choice."
       ],
       "tag": "value_gap_opportunities",
       "type": "application",
@@ -9176,18 +9176,18 @@ const questionBanks = {
       ],
       "repairSkill": "value_gap_opportunities",
       "commonError": "ignores_constraint",
-      "feedback": "When a resource is constrained, the opportunity is to allocate it where it creates the most value per unit of the constraint.",
-      "aHash": "0db1c496b3e6806dd3908321cbf925ba48b0ddaab1772216417a7f690ea66599"
+      "feedback": "A+B uses 12 hours and earns $1,600. B+C uses 9 and earns $1,300; A+C uses 11 and earns $1,500. With indivisible jobs, a ratio ranking need not find the best feasible bundle.",
+      "aHash": "51d63baf7bc87de11268125671e0b143709f3f832e98e5f513cff0bae7d68088"
     },
     {
       "id": 9027,
       "sourceGame": "costDirective",
-      "q": "A company lets local managers approve discounts because they know customers, but it rewards them on revenue growth only. What design change best supports wealth creation?",
+      "q": "Division A can transfer a resource worth $8,000 to it. B can create $14,000 with it before $2,000 transfer costs, paid by B. Each manager accepts only if divisional profit strictly rises. With a transfer payment P from B to A, what range aligns the trade?",
       "options": [
-        "Centralize all discounts even if headquarters lacks customer information",
-        "Keep the revenue bonus because revenue growth always creates wealth",
-        "Remove all discount authority so no manager can make a bad deal",
-        "Keep local information in the decision while adding profit or margin accountability"
+        "$8,000 < P < $14,000",
+        "$2,000 < P < $8,000",
+        "Only P = $14,000",
+        "$8,000 < P < $12,000"
       ],
       "tag": "organization_wealth_creation",
       "type": "integration",
@@ -9202,18 +9202,18 @@ const questionBanks = {
       ],
       "repairSkill": "organization_wealth_creation",
       "commonError": "information_without_incentives",
-      "feedback": "Good design uses local information while aligning incentives with value, not just volume.",
-      "aHash": "57823c8fb2c61d1d3215100e2a3bd299b7d2ccef3390aa9bd5a5d5e95c6f7494"
+      "feedback": "A needs P above its $8,000 sacrifice; B needs P below 14,000 - 2,000 = $12,000. The range lets both share $4,000 of firm-wide gains.",
+      "aHash": "591ef57ef5eb4233385867a3b69bf655a8d064e2d83b55aee2fb81a14762f3ff"
     },
     {
       "id": 9028,
       "sourceGame": "costDirective",
-      "q": "A firm assigns purchasing to a team rewarded for invoice savings. Production later pays more for downtime from low-quality inputs. What is the organizational design flaw?",
+      "q": "Purchasing can save $24,000 on components. Operations bears $18,000 expected downtime, and service bears $10,000 warranty cost. The firm proposes giving purchasing 10% of savings across all three budgets, paid only if net savings are positive. What does the redesigned incentive imply?",
       "options": [
-        "The purchasing metric omits downstream costs created by the purchasing decision",
-        "Purchasing should always choose the supplier with the shortest contract",
-        "Production downtime is irrelevant because it happens after the purchase",
-        "Invoice savings prove the purchasing team created firm-wide value"
+        "No saving bonus for this switch; the total effect is a $4,000 loss.",
+        "A $2,400 bonus because invoice savings remain the purchasing team's contribution.",
+        "A $600 bonus because only the next department's downtime counts.",
+        "A $400 bonus because the absolute value of net savings is positive."
       ],
       "tag": "organization_wealth_creation",
       "type": "trap",
@@ -9228,8 +9228,8 @@ const questionBanks = {
       ],
       "repairSkill": "organization_wealth_creation",
       "commonError": "confuses_local_savings_with_total_value",
-      "feedback": "A local metric can destroy value if it ignores costs pushed onto another part of the organization.",
-      "aHash": "ad148f29779bb520319f0442c8ce4e46d8d870adbc2965520b6008e0064a1100"
+      "feedback": "Firm-wide net savings are 24,000 - 18,000 - 10,000 = -$4,000. The conditional bonus excludes a switch that shifts costs rather than reducing them.",
+      "aHash": "12184be7006237d989b49d1698524d83a9c1f14c021ce4d451bf41035a61ba20"
     },
     {
       "id": 9029,
@@ -9261,12 +9261,12 @@ const questionBanks = {
     {
       "id": 9030,
       "sourceGame": "costDirective",
-      "q": "A consultant can take Project A for $48,000 or Project B for $35,000. Project A requires $9,000 of travel; Project B requires $2,000. What is the opportunity cost of choosing A if B is the next-best alternative?",
+      "q": "A specialist can spend the month on A earning $45,000 before $8,000 expenses, or on B earning $32,000 before $3,000 expenses. B also leaves time for C earning $7,000 net; A excludes C. Choosing A requires a new $2,000 setup. What are A's opportunity cost and advantage?",
       "options": [
-        "The $35,000 revenue from Project B",
-        "The $9,000 travel cost for Project A",
-        "The $33,000 net payoff from Project B",
-        "The $13,000 revenue difference between A and B"
+        "$29,000 opportunity cost; $6,000 advantage",
+        "$39,000 opportunity cost; -$4,000 advantage",
+        "$36,000 opportunity cost; -$1,000 advantage",
+        "$8,000 opportunity cost; $27,000 advantage"
       ],
       "tag": "opportunity_cost",
       "type": "calculation",
@@ -9280,8 +9280,8 @@ const questionBanks = {
       ],
       "repairSkill": "opportunity_cost",
       "commonError": "uses_revenue_not_net_value",
-      "feedback": "The forgone alternative is B's net payoff: $35,000 - $2,000 = $33,000.",
-      "aHash": "2d7c9aec21882efd4f68bdf41fe86471f39dd906cfa96f3f739480bae7c8629c"
+      "feedback": "The feasible alternative is B+C: 32,000 - 3,000 + 7,000 = $36,000. A nets 45,000 - 8,000 - 2,000 = $35,000, so it is $1,000 worse.",
+      "aHash": "aa3af06c91445b32d7a5359e47dfa93ebb5de42ccce6b83ffcc40952160bcc7d"
     },
     {
       "id": 9031,
@@ -9311,12 +9311,12 @@ const questionBanks = {
     {
       "id": 9032,
       "sourceGame": "costDirective",
-      "q": "A manager says an option is free because no invoice will arrive. Which statement is the best correction?",
+      "q": "An owned machine can be leased out for $9,000 net this year or used on a project yielding $12,000 before $2,000 extra maintenance. Its book depreciation is $4,000 under either choice. Which interpretation avoids both hidden and double-counted costs?",
       "options": [
-        "A choice can be costly if it uses resources that have valuable alternative uses",
-        "A choice is free whenever accounting records show no cash payment",
-        "A choice is costly only when it creates a new fixed cost",
-        "A choice is free if the resource was purchased in a prior year"
+        "Project advantage is $1,000; count forgone rent once and exclude unchanged depreciation.",
+        "Project advantage is $10,000 because ownership removes opportunity cost.",
+        "Project advantage is -$3,000 after also subtracting book depreciation.",
+        "Project advantage is $5,000 after subtracting depreciation instead of forgone rent."
       ],
       "tag": "opportunity_cost",
       "type": "interpretation",
@@ -9329,18 +9329,18 @@ const questionBanks = {
       ],
       "repairSkill": "opportunity_cost",
       "commonError": "equates_cost_with_invoice",
-      "feedback": "Economic cost includes forgone alternatives, not only explicit cash payments.",
-      "aHash": "561853ca01dcdd3126624bc814c99f0a7ce2136e2864d3af3a88999c187849b8"
+      "feedback": "The project yields $10,000 versus $9,000 leasing. Book depreciation is not a changed resource use here. The rental alternative is a single $9,000 sacrifice.",
+      "aHash": "056fef78db4ded3ab71348319c5b02a907abc539e35eff6e7d3f5feeff444d84"
     },
     {
       "id": 9033,
       "sourceGame": "costDirective",
-      "q": "A company must choose between using a machine for Product X or Product Y. X earns $18,000 contribution after variable costs. Y earns $23,000. Switching to X also requires $2,000 setup cost. What is X's economic advantage over Y?",
+      "q": "A factory can devote a week to X or Y. X earns $26,000 after variable costs; Y earns $23,000. X needs $2,000 setup and ties up a room that could be rented for $3,000 net while making Y. A prepaid lease is unchanged. What is X's advantage?",
       "options": [
-        "-$5,000, because X earns $5,000 less contribution than Y",
-        "-$7,000, because X gives up $23,000 and adds $2,000 setup cost",
-        "$16,000, because X earns $18,000 minus setup cost",
-        "$18,000, because Product X has positive contribution"
+        "$1,000",
+        "-$2,000",
+        "$3,000",
+        "-$5,000"
       ],
       "tag": "opportunity_cost",
       "type": "multi-step",
@@ -9354,18 +9354,18 @@ const questionBanks = {
       ],
       "repairSkill": "opportunity_cost",
       "commonError": "ignores_setup_or_forgone_y",
-      "feedback": "Choosing X gives $18,000 but costs $2,000 setup and forgoes $23,000 from Y. Net advantage is -$7,000.",
-      "aHash": "38c40cf26278e4636de62efa10fe80212716e9d92f9aa300ac9ce6c369a4ca60"
+      "feedback": "X nets $24,000. Y plus compatible room rental nets $26,000. The same lease appears under both options and cancels.",
+      "aHash": "d5707ed254ec411ceb4aacdb629d20ee628470911ee47ceba13fa1a22ca62c15"
     },
     {
       "id": 9034,
       "sourceGame": "costDirective",
-      "q": "A firm spent $70,000 designing a product. It can spend $18,000 more to launch and expects $24,000 in new revenue. What is the correct launch decision?",
+      "q": "A project already used $35,000 with no recovery. Finish normally for $12,000 and receive $25,000; finish urgently for $17,000 and receive $32,000; or cancel and sell unused inputs for $4,000. Either finish uses those inputs. Which choice is best and by how much over cancellation?",
       "options": [
-        "Do not launch, because total spending would exceed total revenue",
-        "Launch only if the old $70,000 can be recovered through the launch",
-        "Launch, because the additional revenue exceeds the additional cost by $6,000",
-        "Do not launch, because sunk design cost makes the project unprofitable"
+        "Normal finish; $13,000 better than canceling",
+        "Cancel; both finishes fail to recover $35,000",
+        "Urgent finish; $11,000 better than canceling",
+        "Urgent finish; $15,000 better than canceling"
       ],
       "tag": "relevant_costs_benefits",
       "type": "calculation",
@@ -9380,8 +9380,8 @@ const questionBanks = {
       ],
       "repairSkill": "relevant_costs_benefits",
       "commonError": "includes_sunk_cost",
-      "feedback": "The $70,000 is sunk. The launch decision compares $24,000 of new revenue with $18,000 of new cost.",
-      "aHash": "21a51a479481956b0b8aa3cb06f1a14ddc218f2c67ab902cf46d4fe3cb77e64b"
+      "feedback": "Normal finish nets $13,000, urgent $15,000, cancel $4,000. Urgent is best with an $11,000 advantage over cancellation; sunk spending is common.",
+      "aHash": "d2e04b4a93287122a0871bca95a05738b675c54e5f103d23e492b9e14d04a8d7"
     },
     {
       "id": 9035,
@@ -9412,12 +9412,12 @@ const questionBanks = {
     {
       "id": 9036,
       "sourceGame": "costDirective",
-      "q": "A company can repair a defective unit for $16 and sell it for $41. Scrapping it yields $12. The original production cost was $55. What is the relevant advantage of repair over scrap?",
+      "q": "A damaged item can be scrapped now for $35 or repaired. Repair costs $40, succeeds with 80% probability and sells for $130 if successful; a failed item scraps for $10. Original production cost was $90, unrecoverable. On expected value alone, what is repair's advantage over immediate scrap?",
       "options": [
-        "$13, because repair nets $25 and scrap nets $12",
-        "-$30, because the original cost was $55 and the sale price is $41",
-        "$25, because repair revenue minus repair cost is $25",
-        "$29, because the sale price exceeds the scrap value by $29"
+        "$31",
+        "$66",
+        "-$59",
+        "$55"
       ],
       "tag": "relevant_costs_benefits",
       "type": "multi-step",
@@ -9432,8 +9432,8 @@ const questionBanks = {
       ],
       "repairSkill": "relevant_costs_benefits",
       "commonError": "ignores_scrap_alternative_or_sunk_cost",
-      "feedback": "Repair produces $41 - $16 = $25 net. Scrapping yields $12. Repair is better by $13.",
-      "aHash": "f994c2088252bea18d91cf7682c69ca119ba37214f65f808fc770582294359af"
+      "feedback": "Expected repair proceeds are 0.8×130 + 0.2×10 = $106. Subtract repair cost and the forgone $35 immediate scrap value: 106 - 40 - 35 = $31.",
+      "aHash": "0af5c293512e266b1f246bbda9c55d5d1a2b9a7a1d4af92e081fff53460abc4b"
     },
     {
       "id": 9037,
@@ -9464,12 +9464,12 @@ const questionBanks = {
     {
       "id": 9038,
       "sourceGame": "costDirective",
-      "q": "A firm can outsource a part for $19 per unit. Internal variable cost is $14 per unit, and avoidable fixed cost is $3 per unit at the planned volume. Unavoidable fixed overhead is $6 per unit. What is the relevant internal cost per unit?",
+      "q": "At 2,000 parts annually, internal variable cost is $11 per part, avoidable supervision $8,000, and unavoidable allocation $10,000. Outsourcing costs $17 per part plus $1,000 coordination, and frees capacity earning $6,000 net. What is the profit change from outsourcing?",
       "options": [
-        "$14",
-        "$20",
-        "$17",
-        "$23"
+        "A $5,000 decrease",
+        "An $11,000 increase",
+        "A $1,000 increase",
+        "A $9,000 decrease"
       ],
       "tag": "relevant_costs_benefits",
       "type": "calculation",
@@ -9484,18 +9484,18 @@ const questionBanks = {
       ],
       "repairSkill": "relevant_costs_benefits",
       "commonError": "includes_unavoidable_fixed_overhead",
-      "feedback": "Relevant internal cost is avoidable cost: $14 variable cost + $3 avoidable fixed cost = $17.",
-      "aHash": "f1f44648bb7e7054e2ac920c7e3cfd86f024f8ba5f15a36cdd0e339a25fb95c9"
+      "feedback": "Avoided internal costs are $30,000; buy plus coordination costs $35,000. Add $6,000 freed-capacity benefit: 30,000 - 35,000 + 6,000 = $1,000. Allocation does not change.",
+      "aHash": "9e5a6298f0078c8eeb4fbef3a3bd70340a93a518b6eb24a22bcff1eb3f5dcff7"
     },
     {
       "id": 9039,
       "sourceGame": "costDirective",
-      "q": "A bakery pays $3,000 monthly rent, $2 per pastry for ingredients, and $1 per pastry for hourly labor. At 4,000 pastries, what is total variable cost?",
+      "q": "Monthly fixed cost is unchanged within 0–300 units. Beyond 300 a new $600 supervisor is required. At zero output TC is $1,200. At 300 units TC is $3,600; materials and piecework per unit remain constant through 400. What are TC at 400 and the added cost per unit from 300 to 400?",
       "options": [
-        "$3,000",
-        "$8,000",
-        "$15,000",
-        "$12,000"
+        "$4,400 TC; $8 per added unit",
+        "$5,400 TC; $18 per added unit",
+        "$5,000 TC; $12.50 per added unit",
+        "$5,000 TC; $14 per added unit"
       ],
       "tag": "fixed_variable_costs",
       "type": "calculation",
@@ -9509,8 +9509,8 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_variable_costs",
       "commonError": "includes_fixed_rent_in_variable_cost",
-      "feedback": "Variable cost per pastry is $3. At 4,000 pastries, total variable cost is $12,000.",
-      "aHash": "b08622c3255596a642de67b20552046a35198df5775dd4042eb6b81dc1185d7a"
+      "feedback": "Variable unit cost is (3,600-1,200)/300 = $8. At 400, TC is 1,200+600+400×8 = $5,000. The $1,400 increase across 100 units includes the new step cost.",
+      "aHash": "8d6bcfe5fc396e830267a59e46c5cd9fd30bb0b1c5162703358467197c4c34f9"
     },
     {
       "id": 9040,
@@ -9540,12 +9540,12 @@ const questionBanks = {
     {
       "id": 9041,
       "sourceGame": "costDirective",
-      "q": "A factory can produce 10,000 units or 12,000 units in the same building. Rent is $20,000 per month, materials are $7 per unit, and packaging is $2 per unit. What cost changes when output rises by 2,000 units?",
+      "q": "A firm makes 500 units for $7,500, including $2,500 fixed cost. At 700 units, variable cost per unit remains unchanged, but a second workspace costs $1,200 for the month. What portion of the $3,200 cost increase is variable versus a new fixed commitment?",
       "options": [
-        "$20,000",
-        "$18,000",
-        "$34,000",
-        "$38,000"
+        "$3,200 variable; $0 new fixed",
+        "$2,000 variable; $1,200 new fixed",
+        "$700 variable; $2,500 new fixed",
+        "$1,200 variable; $2,000 new fixed"
       ],
       "tag": "fixed_variable_costs",
       "type": "calculation",
@@ -9560,8 +9560,8 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_variable_costs",
       "commonError": "includes_unchanged_rent",
-      "feedback": "Only materials and packaging change: $9 per unit x 2,000 = $18,000. Rent does not change within this range.",
-      "aHash": "565a150d172150622f487acf2d90c7126aa9040ebc74d56039fac13b60d07e22"
+      "feedback": "Existing variable cost is $5,000/500 = $10 per unit. Two hundred more add $2,000; the workspace is a discrete new $1,200 commitment. Fixed within a range does not mean irrelevant before commitment.",
+      "aHash": "a23c5c8f210c342d6016a1cb1490b5d46a39586cea9fd6901f171a12d49141cf"
     },
     {
       "id": 9042,
@@ -9592,12 +9592,12 @@ const questionBanks = {
     {
       "id": 9043,
       "sourceGame": "costDirective",
-      "q": "A designer earns $170,000 in revenue, pays $62,000 in explicit business costs, and gives up a $78,000 salaried job. What are accounting profit and economic profit?",
+      "q": "An owner's annual sales are unknown. Paid business expenses are $132,000. She forgoes $58,000 employment income and $14,000 net building rent. Economic profit is -$6,000. If sales rose $10,000 with expenses unchanged, what would accounting and economic profit become?",
       "options": [
-        "Accounting profit is $30,000; economic profit is $108,000",
-        "Accounting profit is $92,000; economic profit is $30,000",
-        "Accounting profit is $108,000; economic profit is -$78,000",
-        "Accounting profit is $108,000; economic profit is $30,000"
+        "$4,000 accounting; $76,000 economic",
+        "$66,000 accounting; -$6,000 economic",
+        "$208,000 accounting; $4,000 economic",
+        "$76,000 accounting; $4,000 economic"
       ],
       "tag": "accounting_economic_profit",
       "type": "calculation",
@@ -9612,18 +9612,18 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "ignores_opportunity_cost",
-      "feedback": "Accounting profit is $170,000 - $62,000 = $108,000. Economic profit subtracts the $78,000 opportunity cost, leaving $30,000.",
-      "aHash": "652df417f69f0ec249d6070ecece37ed423909e01411e8374389efd45a7c921b"
+      "feedback": "Current accounting profit is 58,000+14,000-6,000 = $66,000. The additional revenue raises both profit measures $10,000: $76,000 and $4,000.",
+      "aHash": "9ede99be07ff3af8d053b977c3ba4ba17e88b54f8923d446f25922bbe85392cb"
     },
     {
       "id": 9044,
       "sourceGame": "costDirective",
-      "q": "A business reports $25,000 accounting profit. The owner could earn $42,000 elsewhere using the same time. What is the economic profit?",
+      "q": "A firm reports $52,000 accounting profit. Owner labor could earn $45,000, and separately invested owner capital could earn $12,000. A proposed job adds $18,000 revenue and $10,000 explicit expense without using extra owner time or capital. What are the resulting profit measures and the job decision?",
       "options": [
-        "-$17,000",
-        "$25,000",
-        "$42,000",
-        "$67,000"
+        "Accounting $60,000; economic $3,000; the job improves both by $8,000.",
+        "Accounting $60,000; economic -$5,000; reject the job.",
+        "Accounting $3,000; economic $60,000; accept the job.",
+        "Accounting $60,000; economic -$54,000 because owner costs must be subtracted twice."
       ],
       "tag": "accounting_economic_profit",
       "type": "calculation",
@@ -9638,8 +9638,8 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "ignores_owner_time_cost",
-      "feedback": "Economic profit subtracts the owner's opportunity cost: $25,000 - $42,000 = -$17,000.",
-      "aHash": "667b0c78457c07728f594b782312ddc4615df72a221c218b870fb558a4b883fd"
+      "feedback": "The job adds $8,000. New accounting profit is $60,000; deduct the unchanged $57,000 implicit cost once to get $3,000. Negative starting economic profit does not make a profitable increment unattractive.",
+      "aHash": "43e9c46db8acee5dc79ecfef8443718d82c891ba864440cb0c8a0eece8baff5b"
     },
     {
       "id": 9045,
@@ -9695,12 +9695,12 @@ const questionBanks = {
     {
       "id": 9047,
       "sourceGame": "costDirective",
-      "q": "A theater keeps a show running because it spent $120,000 on sets. Expected future ticket revenue is $35,000 and avoidable future cost is $48,000. What is the correct decision?",
+      "q": "A production team prepaid a nonrefundable $80,000 license. For the next quarter it can operate for $34,000 new costs and $29,000 receipts, or pause and earn $2,000 net sublease income. Restarting later costs the same under either option. What is the effect of operating rather than pausing?",
       "options": [
-        "Run the show, because the set cost must be recovered",
-        "Run the show if total spending including sets exceeds ticket revenue",
-        "Cancel only if the sets can be sold for the full $120,000",
-        "Cancel the show, because future revenue is $13,000 below avoidable future cost"
+        "A $5,000 loss; the available sublease has no invoice and is irrelevant.",
+        "An $87,000 loss; all prior license spending belongs to this comparison.",
+        "A $29,000 gain because the license has already been paid.",
+        "A $7,000 loss; the paid license does not justify operating."
       ],
       "tag": "fixed_cost_fallacy",
       "type": "calculation",
@@ -9714,8 +9714,8 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_cost_fallacy",
       "commonError": "includes_sunk_cost",
-      "feedback": "The set cost is sunk. Future revenue is $35,000 and avoidable future cost is $48,000, so canceling avoids a $13,000 loss.",
-      "aHash": "ecebc325bcf86ffc5bdb593c486f8c32e1d6ba163812c78a54c397dc78658c01"
+      "feedback": "Operating nets -$5,000 while pausing nets +$2,000. The difference is -$7,000; the license is unchanged.",
+      "aHash": "16f02ad5213d49b01cad1245d1c3fcf7740a7492832c52fe571340439eee9d75"
     },
     {
       "id": 9048,
@@ -9744,12 +9744,12 @@ const questionBanks = {
     {
       "id": 9049,
       "sourceGame": "costDirective",
-      "q": "A firm keeps producing a product because its allocated headquarters cost is high and managers want each unit to 'absorb overhead.' Demand is weak and contribution margin is negative. What is the problem?",
+      "q": "A division's loss of $15,000 includes $38,000 unavoidable headquarters allocation. Its manager wants extra production solely to absorb overhead. An unsold extra batch costs $4,000 and earns no current or future benefit. Which correction covers both decisions?",
       "options": [
-        "They are correctly increasing output because average fixed cost falls",
-        "They are treating allocated fixed cost as if it justifies value-destroying output",
-        "They are applying MR = MC because contribution margin is negative",
-        "They are using hidden costs by ignoring the original overhead allocation"
+        "Both keeping the division and making the batch must lose money because the reported division loss is negative.",
+        "The division currently contributes $23,000 before allocation, but the extra batch would reduce firm profit by $4,000.",
+        "The batch creates $38,000 of value by absorbing the overhead.",
+        "Keeping the division avoids the entire headquarters allocation, so the batch should be produced."
       ],
       "tag": "fixed_cost_fallacy",
       "type": "trap",
@@ -9763,8 +9763,8 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_cost_fallacy",
       "commonError": "uses_overhead_absorption_to_produce_losses",
-      "feedback": "Producing units with negative contribution destroys value even if it spreads fixed overhead over more units.",
-      "aHash": "74a3418ff114834579d8267e89f1bf7e5728d8fd15a08ce194866ab1cb1fa059"
+      "feedback": "Current contribution is -15,000+38,000 = $23,000. Allocating the same overhead to more units creates no receipts and does not save that cost; the new batch consumes another $4,000.",
+      "aHash": "ddcbca6973bc2d6b3c949630d6863bd9b9f9704a2f5ea2704efd4bfccce702b7"
     },
     {
       "id": 9050,
@@ -9794,12 +9794,12 @@ const questionBanks = {
     {
       "id": 9051,
       "sourceGame": "costDirective",
-      "q": "A coffee shop rejects beer and wine sales because baristas under 21 cannot serve alcohol during some shifts. It ignores the cost of hiring licensed evening staff. Which fallacy is the concern?",
+      "q": "A data firm quotes $16,000 for a migration, counts $9,000 labor and $2,000 software, and calls the $5,000 balance profit. Customer onboarding adds $2,000; scarce engineer time displaces $4,000 contribution. A $6,000 prior prototype cannot be recovered. Which diagnosis is correct?",
       "options": [
-        "Fixed-cost fallacy",
-        "Economies of scale",
-        "Accounting profit fallacy",
-        "Hidden-cost fallacy"
+        "The quote gains $5,000 because onboarding and displaced work are not production invoices.",
+        "The quote loses $7,000 because the prototype must also be recovered.",
+        "Only the prototype is hidden; engineers already on salary have no opportunity cost.",
+        "The quote hides $6,000 relevant costs and actually loses $1,000; the prior prototype is irrelevant."
       ],
       "tag": "hidden_cost_fallacy",
       "type": "identification",
@@ -9812,18 +9812,18 @@ const questionBanks = {
       ],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "mislabels_as_sunk_cost",
-      "feedback": "The danger is ignoring a relevant cost: staffing constraints and added labor needed to sell alcohol legally.",
-      "aHash": "0057e633a04590aebeb4614f73f7c455a8447e9407486f3e07a02fc5f95d27f7"
+      "feedback": "The complete incremental comparison is 16,000 - 9,000 - 2,000 - 2,000 - 4,000 = -$1,000. Do not correct omitted relevant costs by adding a sunk one.",
+      "aHash": "c74bf807584f129145128b96a2b42360d01bf0897de90a11292fd073c65c7e94"
     },
     {
       "id": 9052,
       "sourceGame": "costDirective",
-      "q": "A distributor accepts a rush order because price exceeds materials cost. It ignores overtime premiums and delayed shipments to regular customers. What is the error?",
+      "q": "A distributor's rush contract earns $8,000 after materials and normal labor. It adds $1,800 overtime premiums and $1,200 expected delay credits. It consumes a slot with a 50% chance of another $12,000-contribution order; the other order cannot then be accepted. On expected profit alone, what was hidden?",
       "options": [
-        "It ignores relevant costs created by the order",
-        "It treats a sunk cost as relevant",
-        "It uses economic profit instead of accounting profit",
-        "It assumes long-run scale economies are impossible"
+        "$9,000 of relevant costs, making the rush contract $1,000 worse than reserving the slot",
+        "$15,000 of relevant costs, because the other order is certain",
+        "Only $3,000 because uncertain opportunities have no cost",
+        "Only $6,000 because overtime and credits are fixed payments"
       ],
       "tag": "hidden_cost_fallacy",
       "type": "application",
@@ -9837,8 +9837,8 @@ const questionBanks = {
       ],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "counts_visible_cost_only",
-      "feedback": "A rush order can create overtime and opportunity costs. Ignoring them is a hidden-cost problem.",
-      "aHash": "746a96cb740b1e69adf43a0056848567b47b853b73888bf28d824d9ae9922d19"
+      "feedback": "Expected sacrificed contribution is 0.5×12,000 = $6,000. Add overtime and credits for $9,000 total against $8,000, a $1,000 disadvantage.",
+      "aHash": "ed51ea5fc2e51c829827618daf5b8ba7a9eab76da5d2edb64b6579008e6fd719"
     },
     {
       "id": 9053,
@@ -9868,12 +9868,12 @@ const questionBanks = {
     {
       "id": 9054,
       "sourceGame": "costDirective",
-      "q": "A firm compares two suppliers. Supplier A has a lower invoice price but requires more inspections, higher defect rework, and slower delivery. What should the firm do?",
+      "q": "A supplier switch saves $6 per unit on 1,000 units. Defects rise from 1% to 4%, each costing $120. Extra inspection costs $1,400, and inventory delay sacrifices $1,500 net contribution. What is the complete result?",
       "options": [
-        "Choose Supplier A because invoice price is the only visible cost",
-        "Choose the supplier with the longest contract history",
-        "Compare total relevant cost, including quality, inspection, and delivery effects",
-        "Ignore rework because it occurs after the purchase order"
+        "A $1,000 gain after inspection and defects but before delay",
+        "A $2,500 gain because only defect cost changes",
+        "A $500 loss from switching",
+        "A $4,800 loss because every old and new defect is incremental"
       ],
       "tag": "hidden_cost_fallacy",
       "type": "integration",
@@ -9887,18 +9887,18 @@ const questionBanks = {
       ],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "uses_invoice_price_only",
-      "feedback": "A low invoice price can hide quality and timing costs. The relevant comparison is total cost, not just purchase price.",
-      "aHash": "3d27fa1aa42eece6ffcb0c276e80798da8b0d4e26820d14ed44133ebd00e1005"
+      "feedback": "Incremental defects cost 1,000×0.03×120 = $3,600. Net saving is 6,000 - 3,600 - 1,400 - 1,500 = -$500. Count changes, not all existing failures.",
+      "aHash": "71e7ea4bb8012c81d9b8161bba47d173d1e9f0229cb13b857159511e989770da"
     },
     {
       "id": 9055,
       "sourceGame": "costDirective",
-      "q": "A firm's total cost rises from $8,400 at 700 units to $8,760 at 720 units. What is marginal cost over this range?",
+      "q": "At 200 units a plant's AVC is $12 and AC $18. At 260 units its total cost is $4,860, with fixed cost unchanged. What is interval MC, and does the new AC rise or fall?",
       "options": [
-        "$12 per unit",
-        "$360 per unit",
-        "$438 per unit",
-        "$18 per unit"
+        "MC $12; AC falls because output grows.",
+        "MC $18.69; AC rises to $21.",
+        "MC $1,260; AC stays $18.",
+        "MC $21; AC rises to about $18.69."
       ],
       "tag": "average_vs_marginal_cost",
       "type": "calculation",
@@ -9912,18 +9912,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "uses_average_cost_as_marginal",
-      "feedback": "Marginal cost over the range is the change in total cost divided by the change in quantity: $360 / 20 = $18.",
-      "aHash": "dab6812f2023f4fbdad097a5f927f40aba27eac84bd1f5103ff21b7d079961ac"
+      "feedback": "Original TC is 200×18 = $3,600. The $1,260 increase over 60 units gives MC $21; new AC is 4,860/260 ≈ $18.69.",
+      "aHash": "822b32563ccf48ed6519d003b1eb284005abb7759ffc795b2ec3a5205505f4ec"
     },
     {
       "id": 9056,
       "sourceGame": "costDirective",
-      "q": "At 1,000 units, average cost is $27. The 1,001st unit has marginal cost of $19. What happens to average cost if output rises to 1,001?",
+      "q": "A firm produces 100 units for $4,000. A buyer offers $30 each for 50 more, which add $1,000 production cost and require $600 setup. No other sales change. Which result combines average and marginal reasoning?",
       "options": [
-        "Average cost falls because marginal cost is below current average cost",
-        "Average cost rises because total cost increases",
-        "Average cost stays at $27 because fixed cost is unchanged",
-        "Average cost becomes $19 because marginal cost replaces average cost"
+        "New AC falls to about $37.33, but the order loses $100.",
+        "New AC falls, so the order necessarily increases profit.",
+        "New AC is $20 and the order earns $500.",
+        "The order loses $500 because the old $40 AC applies to each new unit."
       ],
       "tag": "average_vs_marginal_cost",
       "type": "interpretation",
@@ -9937,18 +9937,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "confuses_total_cost_increase_with_average_cost_increase",
-      "feedback": "When marginal cost is below average cost, the next unit pulls average cost down.",
-      "aHash": "de382cdf749d0c3bb8d352498305c2dd5b4e13b5967276635e31a2a388ec6e0f"
+      "feedback": "New TC is $5,600 over 150 units. The order's revenue is $1,500 and its relevant cost is $1,600. Setup is avoidable despite being a fixed fee.",
+      "aHash": "e437a4cbf5ccfe2806e82e1be5ff2df5dd37d451d1b6e4f6229f63476b17143c"
     },
     {
       "id": 9057,
       "sourceGame": "costDirective",
-      "q": "A manager says average cost is $24, so any order priced above $24 is profitable. Which correction is best?",
+      "q": "Two mutually exclusive jobs use the same scarce shift. A sells 100 units at $25, adds $1,500 production cost and $300 setup. B earns $900 after all its extra costs. Current AC is $28. Which reasoning is correct?",
       "options": [
-        "Average cost is always the correct price floor for all orders",
-        "Incremental orders should be judged using marginal or avoidable cost, not average cost alone",
-        "Orders above average cost always increase total profit",
-        "Marginal cost matters only when fixed cost is zero"
+        "Reject A only because its price is below $28 AC.",
+        "A contributes $700 but is $200 worse than B; neither the price-versus-AC comparison nor contribution alone chooses correctly.",
+        "Choose A because its price exceeds $15 variable cost per unit.",
+        "Choose A because the $300 setup is fixed and can be excluded."
       ],
       "tag": "average_vs_marginal_cost",
       "type": "trap",
@@ -9963,8 +9963,8 @@ const questionBanks = {
       ],
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "uses_average_cost_for_incremental_decision",
-      "feedback": "Average cost can include fixed or allocated costs that do not change. Incremental decisions require marginal or avoidable cost.",
-      "aHash": "0b09af892df0942a16b1d2f418b5c2bc3199abd3629750777e2a9a4e8e3ed284"
+      "feedback": "A adds 2,500-1,500-300 = $700 versus B's $900. A would help relative to idle capacity but loses $200 relative to the available alternative.",
+      "aHash": "a591bfead278a9bfacaf120bd82c67acde7d790221339fc5552f55448ab4172f"
     },
     {
       "id": 9058,
@@ -9995,12 +9995,12 @@ const questionBanks = {
     {
       "id": 9059,
       "sourceGame": "costDirective",
-      "q": "Total cost is $5,000 at 200 units and $5,720 at 240 units. Revenue rises from $8,600 to $9,520. What are MC and MR over this range?",
+      "q": "Fixed cost remains constant.<table><thead><tr><th scope=\"col\">Q</th><th scope=\"col\">AVC</th><th scope=\"col\">TC</th><th scope=\"col\">Revenue</th></tr></thead><tbody><tr><td>0</td><td>—</td><td>$800</td><td>$0</td></tr><tr><td>40</td><td>$20</td><td>?</td><td>$2,400</td></tr><tr><td>60</td><td>?</td><td>$2,300</td><td>$2,850</td></tr><tr><td>80</td><td>$27</td><td>?</td><td>$3,200</td></tr></tbody></table>For expansion from 60 to 80, what are MC, MR and profit change?",
       "options": [
-        "MC = $23 and MR = $18",
-        "MC = $720 and MR = $920",
-        "MC = $28.60 and MR = $39.67",
-        "MC = $18 and MR = $23"
+        "$27, $40 and $260",
+        "$33, $40 and $140",
+        "$660, $350 and $310",
+        "$33, $17.50 and -$310"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "calculation",
@@ -10015,18 +10015,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "uses_totals_or_averages",
-      "feedback": "MC = $720 / 40 = $18. MR = $920 / 40 = $23.",
-      "aHash": "eccc43724d957ccc852590f68a36efd5eaea572accb300ec65ca489fa0370973"
+      "feedback": "TC at 80 is 80×27+800 = $2,960. Cost rises $660 and revenue $350 over 20 units. MC is $33, MR $17.50, and profit falls $310.",
+      "aHash": "8eccc84d48ae3e3cf45a2f7974e33314986f06c7ce152451cc166d71f8dbe002"
     },
     {
       "id": 9060,
       "sourceGame": "costDirective",
-      "q": "A firm has fixed cost of $4,800 and variable cost of $31,200 at 1,200 units. What is average cost?",
+      "q": "At 120 units, AC is $30 and AVC $22. Fixed cost stays unchanged as output rises to 160; VC then totals $3,840. What are new AC and interval MC?",
       "options": [
-        "$30 per unit",
-        "$26 per unit",
-        "$4 per unit",
-        "$36 per unit"
+        "AC $30; MC $30",
+        "AC $24; MC $30",
+        "AC $30; MC $24",
+        "AC $24; MC $1,200"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "calculation",
@@ -10040,18 +10040,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "omits_fixed_or_variable_cost",
-      "feedback": "Total cost is $4,800 + $31,200 = $36,000. Average cost is $36,000 / 1,200 = $30.",
-      "aHash": "f7270f084139ba1500c773b0aab50d9c383372ae7db247723da46166c1219088"
+      "feedback": "Fixed cost is 120×(30-22) = $960. New TC is $4,800, so AC is $30. Original TC was $3,600; the increase of $1,200 over 40 units gives MC $30.",
+      "aHash": "b35c35259e209098aaf53022a0915b5f85f35ed85078c65e0465edaf3969a17f"
     },
     {
       "id": 9061,
       "sourceGame": "costDirective",
-      "q": "Output rises from 500 to 560 units. Variable cost rises from $7,500 to $8,700 while fixed cost stays $2,000. What is marginal cost?",
+      "q": "A firm's TC at 50 units is $2,000, including $500 fixed cost. From 50 to 70 units MC averages $40; from 70 to 100 it averages $50. Fixed cost stays unchanged. What are VC and AC at 100?",
       "options": [
-        "$15 per unit",
-        "$20 per unit",
-        "$17.86 per unit",
-        "$53.33 per unit"
+        "VC $4,300; AC $38",
+        "VC $3,800; AC $43",
+        "VC $3,000; AC $35",
+        "VC $4,500; AC $50"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "calculation",
@@ -10066,18 +10066,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "includes_unchanged_fixed_cost",
-      "feedback": "Fixed cost did not change. MC is the variable cost increase divided by added units: $1,200 / 60 = $20.",
-      "aHash": "258d1ec78d7cd3b657eee85f9d8d609735be3770412b8d66ff59f03ae963a649"
+      "feedback": "TC at 100 is 2,000+20×40+30×50 = $4,300. Subtract fixed cost once for VC $3,800; divide TC by 100 for AC $43.",
+      "aHash": "9ed8b433fa254470e725f922e2dfa986e4974ba320adc47c18d9dd299b24ee07"
     },
     {
       "id": 9062,
       "sourceGame": "costDirective",
-      "q": "A product sells for $44. Selling one more unit requires a $5 discount on each of the 20 units that would have sold at the old price, and adds one new unit sold at $44. What is marginal revenue from the price cut?",
+      "q": "A service can sell 100 subscriptions at $60 each or 120 at $54 each, applying the lower price to every subscription. The expansion adds $360 in service cost and $160 marketing cost. What are incremental revenue per new subscriber and total profit change?",
       "options": [
-        "$44",
-        "-$100",
-        "-$56",
-        "$944"
+        "$54 MR per new subscriber; $560 profit change",
+        "$24 MR per new subscriber; $120 profit change",
+        "$24 MR per new subscriber; -$40 profit change",
+        "-$6 MR per new subscriber; -$640 profit change"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "multi-step",
@@ -10092,8 +10092,8 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "ignores_revenue_lost_on_existing_units",
-      "feedback": "The new unit adds $44, but the firm loses $5 on 20 existing units, or $100. MR = $44 - $100 = -$56.",
-      "aHash": "11f440815970ae2a3317f25b8914a0436c4e06a0ede53e980a98f9487ca7bc51"
+      "feedback": "Revenue rises from $6,000 to $6,480: $480/20 = $24 MR. Added cost is $520, so profit falls $40. The price cut affects existing subscribers too.",
+      "aHash": "b28a7a9e887ef27a1beb7ab56ce05a2385a7aea78f386ebd7ab19628c0937e22"
     },
     {
       "id": 9063,
@@ -10124,12 +10124,12 @@ const questionBanks = {
     {
       "id": 9064,
       "sourceGame": "costDirective",
-      "q": "A service firm earns $140 from an extra client. The client requires $55 of labor, $18 of supplies, and causes $22 of delay cost for another job. What is the marginal net benefit?",
+      "q": "An extra contract pays $4,200 and requires $1,700 labor, $600 materials and a $400 dedicated setup. It also uses a room that could earn $900 net rent. What is the largest additional unexpected cost the contract can bear while still improving profit strictly?",
       "options": [
-        "$45",
-        "$67",
-        "$85",
-        "$95"
+        "Any amount below $600",
+        "Any amount below $1,500",
+        "Any amount below $1,000",
+        "Any amount below $4,200"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "multi-step",
@@ -10144,18 +10144,18 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "ignores_delay_cost",
-      "feedback": "Relevant marginal cost is $55 + $18 + $22 = $95. Marginal net benefit is $140 - $95 = $45.",
-      "aHash": "d503dcfdd44cb6216b22dba5a43ecacce36079e0f6445b5906ba9b0a4daaf2dc"
+      "feedback": "Current advantage is 4,200-1,700-600-400-900 = $600. At an extra cost of exactly $600 the firm is indifferent; strict improvement requires less.",
+      "aHash": "c3e7476c72bd2a53f8aac285db0c1e74efb617664e3ae207739adbe48733c7e6"
     },
     {
       "id": 9065,
       "sourceGame": "costDirective",
-      "q": "A firm can expand output by 400 units. MR is $16 per unit for those units. MC is $11 for the first 250 units and $19 for the final 150. What is the profit effect of expansion?",
+      "q": "A firm may expand by 0, 100, 200 or 300 units in sequence. Revenue on extra units is $20 each. The three 100-unit blocks cost $1,200, $2,200 and $1,000 respectively; any expansion requires a $400 setup. What expansion maximizes profit?",
       "options": [
-        "+$2,000",
-        "+$800",
-        "-$450",
-        "+$6,400"
+        "100 units, adding $400",
+        "300 units, adding $1,200",
+        "200 units, adding $200",
+        "0 units, because the second block has MC above price"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "multi-step",
@@ -10169,18 +10169,18 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "assumes_all_units_have_same_mc",
-      "feedback": "Revenue is 400 x $16 = $6,400. Cost is 250 x $11 plus 150 x $19 = $5,600. Expansion adds $800.",
-      "aHash": "f79864873643107ee5317ac51939471714fff9698813d5d4cccdfb70bde8dd39"
+      "feedback": "Total gains after setup are 0, 400, 200 and 1,200. The third block more than offsets the loss on the second. With nonmonotone block costs, compare feasible cumulative profits instead of stopping at the first unfavorable block.",
+      "aHash": "6a1e4b8102fbb05b5dc20c6f004e8ac2af36a5c1ea54a884e2f1bcbac36e4525"
     },
     {
       "id": 9066,
       "sourceGame": "costDirective",
-      "q": "A company can add one more sales territory. Expected added revenue is $210,000. Added sales salaries are $92,000, travel is $38,000, and lost support capacity costs $31,000. What is the decision?",
+      "q": "A firm can launch up to three sequential territories.<table><thead><tr><th scope=\"col\">Territories</th><th scope=\"col\">Total added revenue</th><th scope=\"col\">Total added cash cost</th></tr></thead><tbody><tr><td>0</td><td>$0</td><td>$0</td></tr><tr><td>1</td><td>$80,000</td><td>$52,000</td></tr><tr><td>2</td><td>$146,000</td><td>$108,000</td></tr><tr><td>3</td><td>$204,000</td><td>$161,000</td></tr></tbody></table>Launching two or more also sacrifices $9,000 of existing contribution. Which plan is best?",
       "options": [
-        "Reject the territory because sales salaries are fixed for the year",
-        "Add the territory because revenue exceeds salaries by $118,000",
-        "Add the territory because net marginal benefit is $49,000",
-        "Reject the territory because support capacity is not an invoice cost"
+        "Two territories, adding $38,000",
+        "One territory, adding $28,000",
+        "Three territories, adding $34,000",
+        "Three territories, adding $43,000"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "calculation",
@@ -10194,18 +10194,18 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "ignores_hidden_opportunity_cost",
-      "feedback": "Relevant marginal cost is $92,000 + $38,000 + $31,000 = $161,000. Net benefit is $49,000.",
-      "aHash": "6bcc947fbfd5dcd5980ce52d9a87016f4bfacffe9794c9f78ff5e82a2e7a1a04"
+      "feedback": "Net gains including the opportunity cost are $28,000, $29,000 and $34,000. The $9,000 sacrifice applies once to either the two- or three-territory plan.",
+      "aHash": "53dd9b659b8c5b834331bb91aa367154c5e4c3fe401d604c2369f98e99bcca24"
     },
     {
       "id": 9067,
       "sourceGame": "costDirective",
-      "q": "A manager wants to keep adding workers as long as total output rises. What is wrong with that rule?",
+      "q": "Adding sequential workers raises output by 60, 45 and 30 units. Each unit sells for $14 and uses $4 materials; each worker costs $400. Hiring any extra workers also requires a one-time $150 shift setup. Which staffing decision maximizes the gain?",
       "options": [
-        "Total output should never be used in any production decision",
-        "Adding workers is profitable whenever average cost is positive",
-        "Marginal revenue matters only after total output starts falling",
-        "Profit depends on whether each added worker's marginal revenue exceeds marginal cost"
+        "Add one worker; net gain $200",
+        "Add three workers because output continues to rise",
+        "Add none because the second worker's gain is below setup cost",
+        "Add two workers; net gain $100"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "interpretation",
@@ -10219,8 +10219,8 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "uses_total_output_instead_of_margin",
-      "feedback": "The extent decision is not 'does output rise?' but 'does the added worker add more revenue than cost?'",
-      "aHash": "5236ec6af6c31ab03f786c7e8c7b04747d123aac52c30e4cf086173638f6d7d7"
+      "feedback": "Worker contributions before setup are $200, $50 and -$100. Cumulative gains after the single setup are $50, $100 and $0. The setup must not be charged again to every added worker.",
+      "aHash": "93dfa98e12b71a1f5098c476542791807301d0388662057e09026991f679a404"
     },
     {
       "id": 9068,
@@ -10275,12 +10275,12 @@ const questionBanks = {
     {
       "id": 9070,
       "sourceGame": "costDirective",
-      "q": "Two compensation plans pay the same expected total amount at current effort. Plan A is fixed salary. Plan B pays per verified sale. Which effect is most likely?",
+      "q": "Low effort produces $100,000 sales; high effort $140,000 and costs the worker $5,000 in valued effort. A pays $20,000 plus 5% sales; B pays 20% sales only. The worker chooses effort to maximize pay minus effort cost, with certainty. What happens?",
       "options": [
-        "Plan A creates stronger marginal incentives because income is guaranteed",
-        "Both plans create identical effort incentives because expected pay is equal",
-        "Plan B creates stronger marginal incentives to make additional verified sales",
-        "Plan B removes all risk from the worker"
+        "High effort under both, because both include commission.",
+        "High effort under B means the worker must prefer B to A.",
+        "Low effort under A and high under B; A then yields $25,000 net versus B's $23,000.",
+        "Low effort under both because fixed pay dominates all incentives."
       ],
       "tag": "incentive_compensation_effort",
       "type": "interpretation",
@@ -10295,8 +10295,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "compares_total_pay_not_marginal_pay",
-      "feedback": "A commission changes the marginal payoff from extra sales. Equal expected pay does not mean equal incentives.",
-      "aHash": "f7bb585574e6b8b8e209fca24c6d376e9a219f30bf9e72ee829ff238f2ddb379"
+      "feedback": "A's extra pay is $2,000, below effort cost, so net is $25,000. B's extra pay is $8,000, so high effort gives $28,000-$5,000 = $23,000. The stronger effort incentive need not yield the preferred contract.",
+      "aHash": "1ebe614564243f7ba9333311f41907f1708fae58041f102a4517fa4d2f373e2c"
     },
     {
       "id": 9071,
@@ -10353,12 +10353,12 @@ const questionBanks = {
     {
       "id": 9073,
       "sourceGame": "costDirective",
-      "q": "A firm switches from individual commission to team bonus. Sales support improves, but top sellers reduce prospecting. What is the best assessment?",
+      "q": "In a four-person team, one worker's extra effort raises a shared bonus pool by $600 at a personal cost of $180. The pool is split equally and others' behavior is fixed. Under an individual plan the worker would retain the whole $600. What tradeoff appears?",
       "options": [
-        "The team bonus dominates because cooperation is always the only objective",
-        "The plan may improve cooperation while weakening individual marginal effort incentives",
-        "The plan fails because any reduction in prospecting makes it irrational",
-        "The change proves incentives cannot shape multiple behaviors at once"
+        "Team sharing induces effort because the total pool gain exceeds $180.",
+        "Team sharing leaves only $150 marginal pay, below effort cost, even though the action benefits the group.",
+        "Both plans induce identical effort because total bonus expense is $600.",
+        "Individual pay yields only $150 because there are four workers."
       ],
       "tag": "incentive_compensation_effort",
       "type": "integration",
@@ -10373,18 +10373,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "misses_tradeoff_between_cooperation_and_effort",
-      "feedback": "Team incentives can encourage cooperation but dilute the link between one person's extra effort and pay.",
-      "aHash": "afebf7cf4c45f20abb1d35f16263c5a731f408eca75b7225155b700d1e2d29cc"
+      "feedback": "The worker receives 600/4 = $150 from the action under equal sharing, below $180. Individual retention would exceed that cost. Teamwork benefits must be weighed against this dilution.",
+      "aHash": "93472fd15b49993c8175e2ad06187adef9f53d1e033fa2aa208e679907bc2d04"
     },
     {
       "id": 9074,
       "sourceGame": "costDirective",
-      "q": "A salesperson receives 20% commission on revenue. The firm wants profit, but salespeople control discounts. Which compensation change best addresses the distortion?",
+      "q": "A rep chooses between A: $2,000 revenue and $500 contribution, or B: $1,700 revenue and $650 contribution. A requires effort worth $20 and B $40. Under 5% revenue commission A is preferred. Would 20% contribution commission align the choice?",
       "options": [
-        "Increase revenue commission so salespeople work harder",
-        "Pay only fixed salary and stop tracking discount behavior",
-        "Base commission partly on contribution margin after discounts",
-        "Reward the number of calls made rather than deal quality"
+        "No: A's larger revenue still fixes its commission at $100.",
+        "Yes: B pays $340 because contribution commission uses revenue.",
+        "Yes: net pay is $80 for A and $90 for B, so B is preferred.",
+        "No: all equal percentage commissions create identical rankings."
       ],
       "tag": "incentive_compensation_effort",
       "type": "trap",
@@ -10399,18 +10399,18 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "rewards_revenue_not_profit",
-      "feedback": "If reps control discounts, revenue commission can reward low-margin sales. Margin-based pay better aligns behavior with profit.",
-      "aHash": "d0fe25d6815b889f26b4d4984a596365c5a8828ef88b7b339b684f77086cdcb7"
+      "feedback": "Contribution commissions are $100 and $130. After effort costs, A gives $80 and B $90, aligning the worker with B's $150 greater contribution for this comparison.",
+      "aHash": "5e4245867fc89376adba2de9121d9f1843d9cbed6593c83471b3db187ba4b0f6"
     },
     {
       "id": 9075,
       "sourceGame": "costDirective",
-      "q": "A factory adds workers to a fixed number of machines. Output rises from 100 to 170 to 225 to 265 as workers increase from 2 to 3 to 4 to 5. What pattern appears?",
+      "q": "With machines fixed, output at 3, 4, 5 and 6 workers is 120, 170, 210 and 240 units. Each extra worker costs $300 and materials cost $2 per unit. Units sell for $10. Relative to 3 workers, which staffing choice is best?",
       "options": [
-        "Diseconomies of scale, because all inputs are changing together",
-        "Economies of scope, because two products share inputs",
-        "Constant returns to scale, because output keeps rising",
-        "Diminishing marginal returns, because each added worker adds less output"
+        "6 workers because output is greatest",
+        "4 workers because diminishing returns require stopping immediately",
+        "3 workers because every added worker costs $300",
+        "5 workers; the added gain is $120"
       ],
       "tag": "diminishing_marginal_returns",
       "type": "interpretation",
@@ -10425,18 +10425,18 @@ const questionBanks = {
       ],
       "repairSkill": "diminishing_marginal_returns",
       "commonError": "confuses_total_output_with_marginal_product",
-      "feedback": "Total output rises, but marginal output falls: +70, +55, +40. That is diminishing marginal returns.",
-      "aHash": "a084a4c2dc86cd3185b3c3f121d519e4a77e10d16f8a819a4123c80c88880ee8"
+      "feedback": "Worker gains are 50×8-300 = $100, 40×8-300 = $20 and 30×8-300 = -$60. Diminishing marginal product begins before the profit-maximizing stopping point.",
+      "aHash": "4bfd95bfe02bf330ee148d3fcfbb68c233224ccba0652a04fd50b42a32d45581"
     },
     {
       "id": 9076,
       "sourceGame": "costDirective",
-      "q": "A manager sees labor productivity fall after adding workers to a crowded kitchen and concludes the firm has decreasing returns to scale. What is the correction?",
+      "q": "A fixed-plant trial adds workers and finds falling marginal product. Separately, a redesigned plant doubles all inputs and produces 2.3 times as much at unchanged input prices. Which combined conclusion is valid?",
       "options": [
-        "This is more likely diminishing marginal returns because one input is fixed in the short run",
-        "It must be decreasing returns to scale because output rose more slowly",
-        "It must be economies of scope because workers share equipment",
-        "It proves average cost cannot change when output changes"
+        "Short-run diminishing returns can coexist with long-run increasing returns to scale and lower unit cost.",
+        "The fixed-plant finding proves the redesign must have higher unit cost.",
+        "The redesign disproves the observed diminishing marginal product.",
+        "Both findings measure economies of scope because they compare production plans."
       ],
       "tag": "diminishing_marginal_returns",
       "type": "trap",
@@ -10451,18 +10451,18 @@ const questionBanks = {
       ],
       "repairSkill": "diminishing_marginal_returns",
       "commonError": "confuses_short_run_with_long_run",
-      "feedback": "Diminishing marginal returns occurs when one input rises while another is fixed. Returns to scale concerns changing all inputs in the long run.",
-      "aHash": "20fc4b22945ae5bf396ff2858a7fdfb55a6c92830bcee5d6fd0249cd5f00c5ec"
+      "feedback": "One trial varies labor against fixed capital; the other changes all inputs. For the redesign, cost doubles while output multiplies by 2.3, lowering AC. The two results are compatible.",
+      "aHash": "137d47fba6cc722e5f3074718b5c67001b401e72c75096b2c427f078f04835b5"
     },
     {
       "id": 9077,
       "sourceGame": "costDirective",
-      "q": "A supplier offers a three-year contract with a low unit price above 80,000 units but a penalty for volume below 60,000. Which cost-curve fact matters most before signing?",
+      "q": "A supplier offers 1,000 units at $18 each or a required purchase of 1,500 at $14 each. The buyer needs 1,000 but can resell all excess for $5 each, paying $1 handling per excess unit. Which contract has lower net acquisition cost?",
       "options": [
-        "Whether fixed cost is already sunk before negotiations begin",
-        "Whether expected volume is near the efficient range where average cost is low",
-        "Whether marginal cost is equal to accounting profit at every output",
-        "Whether the supplier's invoice price is lower than last year's price"
+        "The 1,500-unit contract by $4,000 because its unit price is lower",
+        "The 1,000-unit contract by $1,000",
+        "The 1,500-unit contract by $1,500 after resale",
+        "Both cost $18,000 after excess units are handled"
       ],
       "tag": "cost_curves_contracts",
       "type": "integration",
@@ -10477,8 +10477,8 @@ const questionBanks = {
       ],
       "repairSkill": "cost_curves_contracts",
       "commonError": "ignores_volume_risk_on_cost_curve",
-      "feedback": "Contract terms tied to volume require understanding where costs are low and how risky it is to fall outside that range.",
-      "aHash": "9c2aafd40d8ed73432b773226bd3bb433652a1a26fe923d667858adf947be510"
+      "feedback": "Small contract costs $18,000. Large costs $21,000 less 500×(5-1) = $2,000 recovery, or $19,000. Scale discounts must be compared with actual use and excess disposal economics.",
+      "aHash": "15acc8cd57522a69016a17091b808e10d4780c20d5000b6078c80ef802032861"
     },
     {
       "id": 9078,
@@ -10509,12 +10509,12 @@ const questionBanks = {
     {
       "id": 9079,
       "sourceGame": "costDirective",
-      "q": "A contract sets price at average cost plus 8%. What is the main risk if the supplier controls production efficiency?",
+      "q": "A supplier can spend $3,000 effort to cut reimbursable cost from $50,000 to $42,000. Under cost plus 10%, payment is 110% of reimbursable cost and the effort expense is not reimbursable. Under a fixed $55,000 fee it keeps all savings. Which incentive comparison is correct?",
       "options": [
-        "The supplier will always choose minimum efficient scale automatically",
-        "The buyer pays less whenever supplier cost rises",
-        "The contract eliminates the need to understand the cost curve",
-        "The supplier may have weak incentives to control cost because higher cost can raise payment"
+        "Both reward the supplier $8,000 because resource costs fall by $8,000.",
+        "Cost plus rewards effort $800 because the markup percentage stays constant.",
+        "Fixed fee gives no incentive because revenue is unchanged.",
+        "Cost plus makes effort reduce supplier profit $3,800; fixed fee makes it increase profit $5,000."
       ],
       "tag": "cost_curves_contracts",
       "type": "trap",
@@ -10529,18 +10529,18 @@ const questionBanks = {
       ],
       "repairSkill": "cost_curves_contracts",
       "commonError": "ignores_supplier_effort_incentive",
-      "feedback": "Cost-plus pricing can weaken cost-control incentives unless monitoring or performance terms offset the distortion.",
-      "aHash": "6057f1701e4accff3175c32b5f9e1dc1dbc64d1c3aca6fa4dcfba20a2bc21635"
+      "feedback": "Cost-plus margin falls from $5,000 to $4,200, then effort costs $3,000: profit change -$3,800. Fixed-fee cost savings of $8,000 less effort give +$5,000.",
+      "aHash": "c3f0abf2a95cdd69fa389376a9dd6b18acbc148d78b3115b07d350a664934464"
     },
     {
       "id": 9080,
       "sourceGame": "costDirective",
-      "q": "A firm's average cost falls from $18 at 10,000 units to $13 at 20,000 units, then rises to $16 at 40,000 units. What is the best interpretation?",
+      "q": "A firm can choose 100, 200 or 300 units. AC is $30, $24 and $23 respectively; total revenue is $3,500, $5,500 and $7,200. What output maximizes profit, and what does the last expansion show?",
       "options": [
-        "The firm has economies of scale at first and diseconomies at higher output",
-        "The firm has constant returns because output rises in every case",
-        "The firm has diminishing marginal returns only because average cost changes",
-        "The firm has economies of scope because cost changes across output levels"
+        "200 units; AC falls again at 300 but profit falls $400.",
+        "300 units because AC is lowest there.",
+        "100 units because revenue per unit is highest there.",
+        "300 units because total revenue rises by $1,700."
       ],
       "tag": "average_cost_output",
       "type": "interpretation",
@@ -10555,18 +10555,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_cost_output",
       "commonError": "confuses_ac_shape_with_scope",
-      "feedback": "Falling average cost indicates economies of scale over the first range; rising average cost indicates diseconomies over the later range.",
-      "aHash": "4c10a25f2980689de017258a1aec1928e1df9c2e009066fe894f7e8a7d6aa5c9"
+      "feedback": "TC is $3,000, $4,800 and $6,900; profits are $500, $700 and $300. The last expansion adds $1,700 revenue but $2,100 cost.",
+      "aHash": "21a3bfe51a861c4466fb31362d8e7a3bee7589877a4f4fc4ee5b57c4a0c98438"
     },
     {
       "id": 9081,
       "sourceGame": "costDirective",
-      "q": "A manager says average cost fell after output doubled, so every additional unit must be cheaper than the last. What is wrong?",
+      "q": "AC falls from $40 at 100 units to $35 at 200. From 200 to 250, added cost is $1,500. A manager claims falling AC proves MC fell on the later interval. Which correction is valid?",
       "options": [
-        "Average cost cannot fall when marginal cost rises",
-        "Average cost can fall even if marginal cost is rising, as long as marginal cost remains below average cost",
-        "Marginal cost must equal average cost whenever output doubles",
-        "Falling average cost proves fixed cost is zero"
+        "The first interval has $35 MC and the second $30, proving the claim.",
+        "Both intervals have $30 incremental cost per unit; falling AC does not prove falling MC.",
+        "The later interval has $6 MC because added cost is divided by all 250 units.",
+        "AC cannot fall when total cost rises."
       ],
       "tag": "average_cost_output",
       "type": "trap",
@@ -10581,18 +10581,18 @@ const questionBanks = {
       ],
       "repairSkill": "average_cost_output",
       "commonError": "assumes_falling_ac_means_falling_mc",
-      "feedback": "Average cost falls when marginal cost is below average cost. Marginal cost may still be increasing.",
-      "aHash": "e1d27ec435548dc27ca88f23a242bfef4e8664c227234bc883d306e4e93283dd"
+      "feedback": "First-interval MC is (200×35-100×40)/100 = $30. Later MC is 1,500/50 = $30. AC falls because those increments remain below the earlier average, even with unchanged interval MC.",
+      "aHash": "ae602185766762d42b30046019fb44f46f627078d39191a5c5bea2d623f66535"
     },
     {
       "id": 9082,
       "sourceGame": "costDirective",
-      "q": "A firm doubles all inputs and output rises from 5,000 to 12,000 units. What return to scale is present?",
+      "q": "All physical inputs increase by 60% and output rises from 500 to 900. Input prices also rise 10%. What are physical returns to scale and the approximate change in average monetary cost?",
       "options": [
-        "Constant returns to scale",
-        "Decreasing returns to scale",
-        "Increasing returns to scale",
-        "Diminishing marginal returns"
+        "Increasing returns; AC falls 20%",
+        "Decreasing returns; AC rises 10%",
+        "Increasing returns; AC falls about 2.22%",
+        "Constant returns; AC is unchanged"
       ],
       "tag": "returns_to_scale",
       "type": "calculation",
@@ -10605,18 +10605,18 @@ const questionBanks = {
       ],
       "repairSkill": "returns_to_scale",
       "commonError": "confuses_with_diminishing_returns",
-      "feedback": "All inputs doubled, but output more than doubled. That is increasing returns to scale.",
-      "aHash": "b43902336e49d926263d77e4900a3b47a9fe58bddd8460b227efbb785a750b06"
+      "feedback": "Output multiplies by 1.8, exceeding the 1.6 input factor. Monetary cost multiplies by 1.6×1.1 = 1.76. AC changes by 1.76/1.8-1 ≈ -2.22%.",
+      "aHash": "a7890760a1009c62b1857f694e097d5c6de29c2b0afd08107c9b684456fa12fd"
     },
     {
       "id": 9083,
       "sourceGame": "costDirective",
-      "q": "A plant triples all inputs and output rises from 9,000 to 24,000 units. Which statement is correct?",
+      "q": "Doubling every input raises output from 1,000 to 1,800. Supplier discounts simultaneously reduce all input prices 15%. A manager sees lower AC and infers increasing physical returns to scale. What is the correction?",
       "options": [
-        "The plant has increasing returns because output increased by 15,000",
-        "The plant has constant returns because all inputs changed together",
-        "The plant has diminishing marginal returns because one input stayed fixed",
-        "The plant has decreasing returns to scale over that range"
+        "Lower AC proves output more than doubled.",
+        "All-input expansion is the same test as adding labor to a fixed machine.",
+        "Decreasing physical returns guarantee higher money cost per unit under any input prices.",
+        "Physical returns decrease, even though AC falls about 5.56% because input prices fall."
       ],
       "tag": "returns_to_scale",
       "type": "trap",
@@ -10629,18 +10629,18 @@ const questionBanks = {
       ],
       "repairSkill": "returns_to_scale",
       "commonError": "compares_absolute_not_percentage_change",
-      "feedback": "Inputs tripled, so constant returns would raise output to 27,000. Output rose only to 24,000, so returns to scale are decreasing.",
-      "aHash": "ddbc6e21cdd3ea74d4d3453b5d9dbcddf8962580d9f6263e3c40e968d152adf5"
+      "feedback": "Output factor is 1.8 versus input factor 2. Money cost factor is 2×0.85 = 1.7; AC factor is 1.7/1.8. Discounts can offset the physical scale disadvantage.",
+      "aHash": "7389e27dc8347f51974d19df55a65d08b6076febc9f6df403042f4377b20ff3c"
     },
     {
       "id": 9084,
       "sourceGame": "costDirective",
-      "q": "A firm's long-run average cost reaches its low point at 75,000 units. Market demand is 90,000 units. What does minimum efficient scale imply?",
+      "q": "Only three plant plans exist: 10,000 units at $200,000 TC; 20,000 at $300,000; 30,000 at $450,000. Total annual market purchases are 36,000 units, shared between two equal firms using the same technology. Which MES conclusion is warranted?",
       "options": [
-        "One efficient producer could serve most of the market, so scale may limit the number of viable firms",
-        "Every firm must produce exactly 90,000 units to survive",
-        "Minimum efficient scale means marginal cost is zero at 75,000 units",
-        "Scale is irrelevant because demand exceeds the efficient output level"
+        "MES is 20,000; equal shares leave each below it, but this alone does not prove only one firm can survive.",
+        "MES is 30,000, since it is the largest plan at the minimum AC.",
+        "Both firms reach MES because total market purchases exceed 20,000.",
+        "MES proves that exactly two firms must be profitable."
       ],
       "tag": "minimum_efficient_scale",
       "type": "integration",
@@ -10654,18 +10654,18 @@ const questionBanks = {
       ],
       "repairSkill": "minimum_efficient_scale",
       "commonError": "ignores_mes_relative_to_market_size",
-      "feedback": "When MES is large relative to market demand, only a few firms may operate near minimum average cost.",
-      "aHash": "8381ad937246b98a485016d17e00e701fbc414ffcab18c3dc8eca5600f96ea38"
+      "feedback": "The first $15 AC plan is 20,000 units. Equal shares are 18,000 each, below that scale. Costs alone do not establish prices, differentiation or survival.",
+      "aHash": "754dccc2b061ce631334a0d5a574d3878681ffd467f8c529e933d4d252019365"
     },
     {
       "id": 9085,
       "sourceGame": "costDirective",
-      "q": "A startup can produce at $42 average cost at 8,000 units, while incumbents near minimum efficient scale produce at $27. What strategic issue does the startup face?",
+      "q": "An entrant needs 6,000 units this year and 12,000 next. Internal AC would be $28 then $20 at MES; buying costs $23 each both years plus $6,000 coordination each year. All internal costs are avoidable; ignore discounting. What is the two-year comparison?",
       "options": [
-        "It should enter because higher average cost proves customers value variety",
-        "It may need enough volume, differentiation, or another advantage to survive the scale cost gap",
-        "It has no disadvantage if marginal cost on the next unit is positive",
-        "It should ignore scale because fixed cost is already paid"
+        "Making costs $36,000 less because only the MES year matters.",
+        "Making costs $18,000 less overall, despite buying's first-year advantage.",
+        "Buying costs $30,000 less because only the first-year unit-cost gap matters.",
+        "Making costs $6,000 less because coordination should be ignored."
       ],
       "tag": "minimum_efficient_scale",
       "type": "application",
@@ -10679,18 +10679,18 @@ const questionBanks = {
       ],
       "repairSkill": "minimum_efficient_scale",
       "commonError": "ignores_scale_disadvantage",
-      "feedback": "Operating far below minimum efficient scale can create a cost disadvantage unless the firm has another way to create value.",
-      "aHash": "2482857ae75a28aff0c817d5019767747b81d7a82d0c7c432c48dd10940bd63f"
+      "feedback": "Make totals 6,000×28 + 12,000×20 = $408,000. Buy totals 18,000×23 + 12,000 = $426,000, so making costs $18,000 less.",
+      "aHash": "8b40e5714f329d3de85216813b57fd9d0a22814673d82b43ff30136bc999721d"
     },
     {
       "id": 9086,
       "sourceGame": "costDirective",
-      "q": "A firm's unit cost falls from $100 to $82 after cumulative production doubles. What is the learning rate?",
+      "q": "Comparable unit cost is $100 after a given amount of experience. It falls by a constant progress ratio at each doubling. Two doublings later it is $64. What is the ratio and the unit cost after one more doubling?",
       "options": [
-        "18%",
-        "22%",
-        "82%",
-        "122%"
+        "64%; $40.96",
+        "20%; $12.80",
+        "80%; $51.20",
+        "36%; $23.04"
       ],
       "tag": "learning_curve",
       "type": "calculation",
@@ -10703,18 +10703,18 @@ const questionBanks = {
       ],
       "repairSkill": "learning_curve",
       "commonError": "confuses_cost_reduction_with_learning_rate",
-      "feedback": "The learning rate is the new cost as a percentage of the old cost after cumulative output doubles: $82 / $100 = 82%.",
-      "aHash": "ea28f89741423e0b48cf0a5ec8a581dde223c95c341f43ca469b5c6d6a3672be"
+      "feedback": "The ratio squared equals 64/100 = 0.64, so the positive ratio is 0.8. One further doubling gives 64×0.8 = $51.20. The progress ratio differs from the percentage reduction.",
+      "aHash": "3b42715b7e909ed0e1f5e95a20b640812b9bb4425f53e4cefa49d12280231b2c"
     },
     {
       "id": 9087,
       "sourceGame": "costDirective",
-      "q": "A manager evaluates a new product using first-month unit cost only. The product has a strong learning curve. What is the risk?",
+      "q": "A contract requires 100 units now at $70 cost each and 200 later. The price is $60 per unit throughout; no other costs or discounting apply. What maximum later unit cost permits the full contract to break even?",
       "options": [
-        "The manager will overstate economies of scope by using future data",
-        "The manager will ignore that learning curves make costs rise over time",
-        "The manager will correctly avoid all products with high initial cost",
-        "The manager may reject a product whose future cost falls as cumulative experience rises"
+        "$60",
+        "$65",
+        "$50",
+        "$55"
       ],
       "tag": "learning_curve",
       "type": "trap",
@@ -10728,18 +10728,18 @@ const questionBanks = {
       ],
       "repairSkill": "learning_curve",
       "commonError": "uses_initial_cost_as_permanent_cost",
-      "feedback": "A learning curve means early unit cost may overstate long-run cost once cumulative production increases.",
-      "aHash": "cdb66f58c9908b03e0462a89297283aba826a92efdc7c59a86d8e2730b7240dd"
+      "feedback": "Total revenue is 300×60 = $18,000. Initial cost is $7,000, leaving $11,000 for 200 later units, or $55 each. A learning forecast must meet that threshold; future cost cannot simply replace current cost.",
+      "aHash": "5b2cea7a812abc42d624ae2d295c7f8769bed7a83a932d4682056d043cd45c6d"
     },
     {
       "id": 9088,
       "sourceGame": "costDirective",
-      "q": "A firm can produce Product A for $44,000 and Product B for $38,000 separately. Joint production costs $73,000. What is the economy of scope?",
+      "q": "Two services cost $180,000 annually in total when separate. Joint production costs $145,000 before $12,000 coordination. A merger premium is $30,000 upfront with no recovery. For a two-year horizon without discounting, what is the maximum additional annual joint cost that leaves the merger at least break-even?",
       "options": [
-        "$9,000",
-        "$73,000",
-        "$82,000",
-        "-$9,000"
+        "$8,000 per year",
+        "$23,000 per year",
+        "$15,000 per year",
+        "$16,000 per year"
       ],
       "tag": "economies_of_scope",
       "type": "calculation",
@@ -10752,18 +10752,18 @@ const questionBanks = {
       ],
       "repairSkill": "economies_of_scope",
       "commonError": "confuses_joint_cost_with_savings",
-      "feedback": "Separate production costs $82,000. Joint production costs $73,000. Scope savings are $9,000.",
-      "aHash": "1c7c5e17361e9ef8e222ef46a6ed4c8589cc8ad5cc02847797174ac099b63bdb"
+      "feedback": "Annual net saving before the unknown cost is 180,000-145,000-12,000 = $23,000. Two years give $46,000, less $30,000 premium leaves $16,000 for two years, or $8,000 annually.",
+      "aHash": "6cde080f206c0229678bcab0eabfb8a518f9063aabc98e8440ac6d91d9e06588"
     },
     {
       "id": 9089,
       "sourceGame": "costDirective",
-      "q": "A medical device firm considers acquiring a small sensor company because the same sales force and regulatory team could support both products. What is the strongest scope argument?",
+      "q": "A combined team can serve products A and B for $120,000, versus $70,000 and $65,000 separately. Joint working also displaces a third service contributing $9,000 and adds $8,000 expected coordination failures. Which acquisition argument survives the full analysis?",
       "options": [
-        "Acquisition creates scope only if both products have the same unit cost",
-        "Shared capabilities may lower total cost or raise value across the combined product line",
-        "Scope exists whenever a larger firm buys a smaller firm",
-        "The argument is scale, not scope, because two products are involved"
+        "The $15,000 production saving guarantees a worthwhile acquisition.",
+        "Gross scope savings are $15,000, but the full combination reduces annual value by $2,000 before any purchase premium.",
+        "The third service is irrelevant because it is not one of the acquired products.",
+        "Joint production has no scope saving because the final decision is unfavorable."
       ],
       "tag": "economies_of_scope",
       "type": "integration",
@@ -10777,8 +10777,8 @@ const questionBanks = {
       ],
       "repairSkill": "economies_of_scope",
       "commonError": "confuses_scope_with_size",
-      "feedback": "Economies of scope arise when producing or supporting products together is cheaper or more valuable than doing so separately.",
-      "aHash": "f4c1ba924c60e6a0677c06d67e3f860d446039c83f5b26242ba58cc661aa3184"
+      "feedback": "The direct production comparison shows a $15,000 scope saving. Opportunity and coordination costs total $17,000, outweighing it. Recognizing a scope economy is not enough to establish acquisition value.",
+      "aHash": "db64aa7dcb502029c4e0d24eeb0be065c685e19c90e089ed503bd609b3b71afb"
     }
   ],
   "legendaryBoss": [
@@ -10811,12 +10811,12 @@ const questionBanks = {
     {
       "id": 9101,
       "sourceGame": "costDirective",
-      "q": "A manager has narrowed a production delay to two possible causes: a slow inspection step or a parts shortage. Which next step best fits disciplined problem solving?",
+      "q": "A warehouse has two proposals: add a packer for $5,000 monthly or change incentives and verification for $2,000. A matched pilot of the latter reduces refunds by $4,500 with the same shipment volume and staffing. Queue delay is unchanged. What should the next decision focus on?",
       "options": [
-        "Choose the explanation that is easiest to explain to senior leadership",
-        "Collect evidence that distinguishes the two causes before changing the process",
-        "Change both the inspection process and the supplier contract immediately",
-        "Ignore the parts shortage because inspection is inside the firm's control"
+        "Add the packer because unchanged queue time means the incentive pilot had no value.",
+        "Verify the $2,500 net improvement and investigate remaining queue costs separately before adding staff.",
+        "Adopt the pilot only if it also recovers all previous refunds.",
+        "Conclude staffing can never improve profit because the pilot used unchanged staffing."
       ],
       "tag": "problem_solving_steps",
       "type": "boss_application",
@@ -10830,8 +10830,8 @@ const questionBanks = {
       ],
       "repairSkill": "problem_solving_steps",
       "commonError": "confirms_first_story",
-      "feedback": "When several causes are possible, the next step is to collect evidence that can distinguish among them. Otherwise the manager may act on a convenient story rather than the real constraint.",
-      "aHash": "5e81899c7ea4be0c3ab948af5c8c1ff296a6c1e3381c423aa9eed4279e4cabaa"
+      "feedback": "The pilot suggests a 4,500-2,000 = $2,500 monthly gain on quality. Remaining delay can still have a separate cost; this evidence does not settle every staffing question.",
+      "aHash": "e8772051cf3aa402c8ec80dbbde410b4cd4b9e192b8f54788d3c79a1dfa881d9"
     },
     {
       "id": 9102,
@@ -10912,12 +10912,12 @@ const questionBanks = {
     {
       "id": 9105,
       "sourceGame": "costDirective",
-      "q": "A firm says a warehouse manager is irrational because he refuses a change that raises firm profit but lowers his bonus score. What is the best critique?",
+      "q": "A supervisor chooses between two certain plans. A creates $30,000 firm contribution and a $3,000 bonus; B creates $36,000 contribution and a $2,000 bonus. Moving to B also costs the supervisor $300 in valued effort. What bonus increase on B would make B strictly privately preferable?",
       "options": [
-        "The manager cannot be rational if his choice lowers total profit",
-        "The firm is judging his choice by firm profit rather than by the incentives he faces",
-        "The bonus score is irrelevant because it is not a cash payment",
-        "The firm should ignore incentives and appeal to loyalty"
+        "Exactly $1,000",
+        "More than $1,300",
+        "More than $300",
+        "No increase, because firm contribution already rises $6,000"
       ],
       "tag": "rational_actor_paradigm",
       "type": "boss_trap",
@@ -10931,8 +10931,8 @@ const questionBanks = {
       ],
       "repairSkill": "rational_actor_paradigm",
       "commonError": "assumes_common_objective",
-      "feedback": "A manager can make a rational private choice that conflicts with the firm's objective. That conflict points to an incentive-design problem.",
-      "aHash": "254bc482eaa851a874c71a93ba0f3daa8919eb63bf767b27caeba8a011fb3f3c"
+      "feedback": "Current private advantage of A is 3,000-(2,000-300) = $1,300. Equality creates indifference; strict preference requires more. Firm benefit alone does not change the stated private payoffs.",
+      "aHash": "e78f26cdc33e70740c28a1e3fd92039b32e5e21eba6708dbbce0f8a47607cfc6"
     },
     {
       "id": 9106,
@@ -10990,12 +10990,12 @@ const questionBanks = {
     {
       "id": 9108,
       "sourceGame": "costDirective",
-      "q": "Which plan is most likely to create a distorted incentive?",
+      "q": "A plant can ship 1,000 units with $3,000 expected warranty cost or 950 with $500 warranty cost. Each shipped unit contributes $30 before warranty. A shipment-count bonus favors 1,000. Which redesign follows the net value comparison?",
       "options": [
-        "Pay buyers only for lower purchase prices when they also choose supplier quality",
-        "Pay technicians for completed repairs that pass a follow-up quality check",
-        "Pay account managers partly on renewals and verified customer retention",
-        "Pay warehouse teams for accurate shipments delivered by the promised date"
+        "Reward verified contribution after warranty; 950 units create $28,000 versus $27,000.",
+        "Increase the count bonus because the extra 50 units always add $1,500 net.",
+        "Reward warranty expense alone because revenue has no effect on value.",
+        "Pay on initial shipments and charge all warranty costs to unrelated workers."
       ],
       "tag": "incentive_system_design",
       "type": "boss_trap",
@@ -11010,8 +11010,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_system_design",
       "commonError": "ignores_unmeasured_cost",
-      "feedback": "Rewarding only low invoice prices can encourage buyers to sacrifice quality, reliability, or total cost. Good incentives track the full objective.",
-      "aHash": "57192a6af3319bc423da0ecc40aa2947c2bf99f8b8ed69887c7b62c96f19fff8"
+      "feedback": "Values are 1,000×30-3,000 = $27,000 and 950×30-500 = $28,000. The full measure reverses the misleading count ranking.",
+      "aHash": "65990c0bcd44ec9fb3ddac1d2c6049630e7f165bbee77011483243278749385c"
     },
     {
       "id": 9109,
@@ -11069,12 +11069,12 @@ const questionBanks = {
     {
       "id": 9111,
       "sourceGame": "costDirective",
-      "q": "Which change most directly improves organizational design?",
+      "q": "A regional manager knows a customer's value but cannot see the scarce-capacity schedule. Her bonus is based on contribution before displaced work. Headquarters proposes sending only average plant costs. Which complete design is stronger?",
       "options": [
-        "Centralize all pricing decisions and evaluate teams on total revenue",
-        "Let local teams set price but evaluate them only on units sold",
-        "Give pricing authority to finance while hiding customer information from sales",
-        "Give pricing authority to the team with local demand information and evaluate it on contribution margin"
+        "Provide average plant cost while keeping the current contribution measure.",
+        "Remove local discretion and ignore the customer's locally observed needs.",
+        "Reward revenue growth so the manager naturally discovers capacity costs.",
+        "Provide job-specific cost and displaced contribution, and reward the resulting net gain."
       ],
       "tag": "organization_design_info_incentives",
       "type": "boss_trap",
@@ -11089,8 +11089,8 @@ const questionBanks = {
       ],
       "repairSkill": "organization_design_info_incentives",
       "commonError": "separates_authority_from_information",
-      "feedback": "The strongest design links authority, relevant information, and incentives tied to the objective. Contribution margin is closer to profit than revenue or units alone.",
-      "aHash": "e2602d1cc609eaa4d598f004763227cd6cfa52582102fa5deaadbd62569f9a65"
+      "feedback": "The decision needs both the correct incremental inputs and the incentive to use them. Average cost does not identify the contribution lost when capacity is scarce.",
+      "aHash": "19c1cf21648778b03ae0a3b7cf4a43f8dcb9e2e2ee8d634ab95c798b822cf154"
     },
     {
       "id": 9112,
@@ -11149,12 +11149,12 @@ const questionBanks = {
     {
       "id": 9114,
       "sourceGame": "costDirective",
-      "q": "Which question is least useful for diagnosing a recurring managerial decision problem?",
+      "q": "A division reports a loss after allocation, but can either close, keep serving existing customers or repurpose staff. Which information is least useful for choosing now?",
       "options": [
-        "What decision is being made repeatedly?",
-        "What information is missing when the decision is made?",
-        "Which past expenditure makes the current choice feel hardest to abandon?",
-        "What payoff does the decision maker face at the margin?"
+        "Revenue lost and expenses avoided under closure",
+        "Net contribution from the feasible staff-redeployment plan",
+        "A nonrefundable historical launch fee that is identical under all three choices",
+        "One-time costs caused by repurposing the division"
       ],
       "tag": "managerial_problem_diagnosis",
       "type": "boss_trap",
@@ -11169,18 +11169,18 @@ const questionBanks = {
       ],
       "repairSkill": "managerial_problem_diagnosis",
       "commonError": "focuses_on_sunk_emotion",
-      "feedback": "Feelings about past spending may explain resistance, but they do not diagnose the current decision system as well as decision rights, information, and marginal payoffs.",
-      "aHash": "debb699b945e15a92107adef5bf5d552b8b7c2ef32a72d33b1e51d50e2d0b2d9"
+      "feedback": "The three alternatives require changes in benefits, avoidable costs and opportunity costs. An identical unrecoverable historical fee cannot rank them.",
+      "aHash": "28d1f7e411ad70dbaa0f19e57471d75e0ecdf8c0a9ce7316ea12abb85dfe0ba4"
     },
     {
       "id": 9115,
       "sourceGame": "costDirective",
-      "q": "A buyer values a repair service at $420. The contractor's opportunity cost is $310. They agree on a price of $360. What total surplus is created?",
+      "q": "Three independent trades have gross value-minus-cost gaps $48, $31 and $18. A $20 tax applies to each completed trade; only strictly positive private-gain trades occur. What is the total gain including government revenue after tax, and how much is lost versus no tax?",
       "options": [
-        "$50",
-        "$60",
-        "$360",
-        "$110"
+        "$39 remaining; $58 lost",
+        "$97 remaining; $0 lost",
+        "$60 remaining; $37 lost",
+        "$79 remaining; $18 lost"
       ],
       "tag": "voluntary_transactions_surplus",
       "type": "boss_calculation",
@@ -11195,8 +11195,8 @@ const questionBanks = {
       ],
       "repairSkill": "voluntary_transactions_surplus",
       "commonError": "confuses_price_with_surplus",
-      "feedback": "Total surplus is buyer value minus seller cost: $420 - $310 = $110. The price divides the surplus; it does not determine the total surplus.",
-      "aHash": "3df9f0d0c95e5941041bef459b8af0e5d7fc882a98b5b1b2d20dd3ad8a79f0fd"
+      "feedback": "The first two trades survive: private gains are $28+$11=$39, revenue is $40, and total gains are $79. The third trade's $18 is lost. Tax receipts are not themselves lost resources.",
+      "aHash": "8ea2e64e1aa608a32611c2fa0363be5b8187da3da0686b20eca493025c507b8e"
     },
     {
       "id": 9116,
@@ -11227,12 +11227,12 @@ const questionBanks = {
     {
       "id": 9117,
       "sourceGame": "costDirective",
-      "q": "A buyer values a machine at $75,000 and the seller will part with it for $62,000. What is the smallest whole-dollar tax that would eliminate all gains from trade?",
+      "q": "A buyer values a license at $260; the seller needs $170 net. Buyer-paid verification uses $15 of resources. A per-trade tax T is also paid by the buyer and the sale price can be renegotiated. What smallest whole-dollar T makes combined private gains strictly negative?",
       "options": [
-        "$7,500",
-        "$13,001",
-        "$13,000",
-        "$62,000"
+        "$75",
+        "$76",
+        "$90",
+        "$91"
       ],
       "tag": "voluntary_transactions_surplus",
       "type": "boss_trap",
@@ -11247,18 +11247,18 @@ const questionBanks = {
       ],
       "repairSkill": "voluntary_transactions_surplus",
       "commonError": "confuses_price_with_gain",
-      "feedback": "The gains from trade are $13,000. A tax equal to $13,000 removes the surplus; a whole-dollar tax above that amount eliminates positive gains.",
-      "aHash": "7b7d0093618140573059f4deebd463fbd22044fdd5b84f3e04f1396f10b9cdd7"
+      "feedback": "Before tax, combined private gains are 260-170-15 = $75. At $75 they are zero; the smallest whole-dollar tax making them negative is $76. Strict negativity differs from eliminating strictly positive gains.",
+      "aHash": "88624459f02c2ead1a53f76a72bfc26bc381c82b22dd4ee6289f778454168f31"
     },
     {
       "id": 9118,
       "sourceGame": "costDirective",
-      "q": "A city caps rent below the market-clearing level. At the cap, 1,800 apartments are demanded and 1,250 are supplied. Which effect follows?",
+      "q": "At a binding $30 price cap, 160 rentals are requested and 100 offered. All offered units find buyers. Ten excluded buyers would each value rental $55 while ten additional sellers would each require $38. Supplementary payments are prohibited. What is established?",
       "options": [
-        "A surplus of 550 apartments creates more vacancies",
-        "All renters gain because quantity supplied is unchanged",
-        "A shortage of 550 apartments prevents some mutually beneficial rentals",
-        "Total surplus rises because the legal price is lower"
+        "A surplus of 60 and exactly $1,800 lost gains",
+        "A shortage of 60 and exactly $3,300 lost gains for all excluded buyers",
+        "A shortage of 60 and at least $170 in unrealized gains from the ten specified potential trades",
+        "No unrealized gains because sellers are free to decline"
       ],
       "tag": "barriers_to_trade",
       "type": "boss_diagnosis",
@@ -11273,8 +11273,8 @@ const questionBanks = {
       ],
       "repairSkill": "barriers_to_trade",
       "commonError": "confuses_ceiling_with_surplus",
-      "feedback": "A binding price ceiling increases quantity demanded and reduces quantity supplied, creating a shortage. Some apartments do not move to higher-valued users.",
-      "aHash": "f6233aa205a295ae60c3a6fb521b1d7e95b965cf59b3e1ee067ebb2fd1525f73"
+      "feedback": "The numerical shortage is 60. The ten specified pairs could create 10×(55-38) = $170 but cannot pay sellers enough under the cap. Other excluded pairs' gains are unknown.",
+      "aHash": "f78c78024a2ecc18074fb803b5d24d985277685ddf0a6bd6b1312f7132ad3cab"
     },
     {
       "id": 9119,
@@ -11331,12 +11331,12 @@ const questionBanks = {
     {
       "id": 9121,
       "sourceGame": "costDirective",
-      "q": "A firm lowers unit cost from $14 to $10 while customers' willingness to pay remains $18. What is the main business effect?",
+      "q": "A process saves $8 per unit on 500 units but reduces customer value by $3 per unit. It requires a $1,000 monthly service and frees a room earning $700 net monthly rent. Over one month, what is the value change?",
       "options": [
-        "Customer value must fall because cost fell",
-        "More surplus is available, giving the firm more room to earn profit or expand sales",
-        "The firm's profit must be unchanged unless price rises",
-        "The transaction stops creating wealth because cost changed"
+        "+$4,700",
+        "+$2,200",
+        "+$3,200",
+        "+$1,500"
       ],
       "tag": "efficiency_business_value",
       "type": "boss_diagnosis",
@@ -11351,8 +11351,8 @@ const questionBanks = {
       ],
       "repairSkill": "efficiency_business_value",
       "commonError": "ignores_cost_savings",
-      "feedback": "Efficiency lowers the resource cost of serving customers. That widens the gap between willingness to pay and cost.",
-      "aHash": "24dc39da3fc57c71ea156b04cedf2d285f2e8fbb8800c6de57b8dc0018f85a7e"
+      "feedback": "Net change is 500×(8-3)-1,000+700 = $2,200. Resource savings, lost customer value and the room's alternative must all be counted.",
+      "aHash": "150cf6227eb225167ce0d14231665ec3413f78230348b2e5a94bf69ccffa61dc"
     },
     {
       "id": 9122,
@@ -11435,12 +11435,12 @@ const questionBanks = {
     {
       "id": 9125,
       "sourceGame": "costDirective",
-      "q": "Three projects have buyer value and cost per unit as follows: A: $70 value, $54 cost; B: $63 value, $42 cost; C: $92 value, $78 cost. Which has the largest per-unit surplus?",
+      "q": "Two contracts compete for 8 scarce hours. A pays $2,400, needs $1,000 materials and all 8 hours. B pays $1,700, needs $600 materials and 5 hours; its remaining 3 hours can earn $500 net on another job. A also needs $200 setup. Which package creates more firm contribution?",
       "options": [
-        "Project A",
-        "Project B",
-        "Project C",
-        "All three create the same surplus"
+        "A, by $300 because its initial contribution is larger",
+        "B plus the other job, by $400",
+        "A, by $700 because it brings more revenue",
+        "Both, because every scarce hour is used"
       ],
       "tag": "value_gap_opportunities",
       "type": "boss_calculation",
@@ -11455,8 +11455,8 @@ const questionBanks = {
       ],
       "repairSkill": "value_gap_opportunities",
       "commonError": "chooses_highest_value_not_surplus",
-      "feedback": "Surplus is value minus cost. A creates $16, B creates $21, and C creates $14. Project B has the largest per-unit surplus.",
-      "aHash": "f4d19f788de8deb4b1aaac6639918594fc44f0c5cd9cebfd5d7a1315d0cfe174"
+      "feedback": "A nets 2,400-1,000-200 = $1,200. B plus the compatible job nets 1,700-600+500 = $1,600. Compare complete feasible packages.",
+      "aHash": "4bbf2cd2b5d1942e77fde1fbd31611a99c21d27914cdf3671a4f7d18ec669890"
     },
     {
       "id": 9126,
@@ -11513,12 +11513,12 @@ const questionBanks = {
     {
       "id": 9128,
       "sourceGame": "costDirective",
-      "q": "A firm lets repair teams decide whether to rebuild or replace equipment. Rebuilds look cheaper on the monthly budget, but replacements reduce downtime for sales teams. Which design change best supports wealth creation?",
+      "q": "A rebuilding team saves $7,000 on equipment invoices but causes $10,000 expected lost production elsewhere. Its bonus is 10% of invoice saving. The firm gives it the production-loss data without changing rewards. What remains unresolved?",
       "options": [
-        "Evaluate repair choices using total value, including downtime costs borne by sales",
-        "Reward repair teams for the lowest repair-department spending only",
-        "Require rebuilds whenever the invoice is lower than replacement cost",
-        "Exclude sales downtime because it appears in a different department"
+        "A $700 private reward still favors a $3,000 firm loss.",
+        "The data automatically turn its reward into a $300 penalty.",
+        "The invoice saving proves rebuilding creates value.",
+        "The bonus becomes irrelevant because the production estimate is visible."
       ],
       "tag": "organization_wealth_creation",
       "type": "boss_application",
@@ -11533,8 +11533,8 @@ const questionBanks = {
       ],
       "repairSkill": "organization_wealth_creation",
       "commonError": "silo_cost_measurement",
-      "feedback": "A good design accounts for costs and benefits across the organization, not just the department making the choice.",
-      "aHash": "d193594e775fc77783b6e905ae8120724d72e6f3e31a80486ce7e2603c1a1b90"
+      "feedback": "Information and incentives are distinct. The current bonus is 10%×7,000 = $700, while net saving is 7,000-10,000 = -$3,000.",
+      "aHash": "b656bba3407a32d433dd766cf61c88348a26295be8e72bdb61a76c394fd6f81a"
     },
     {
       "id": 9129,
@@ -11590,12 +11590,12 @@ const questionBanks = {
     {
       "id": 9131,
       "sourceGame": "costDirective",
-      "q": "A firm owns a warehouse it could rent out for $11,000 per month. It uses the warehouse for a product line instead. What monthly cost belongs in the product-line decision?",
+      "q": "A building can host a project earning $22,000 after extra cash costs or be rented for $18,000 net. The project requires the owner's time, otherwise worth $6,000, while rental does not. Historical depreciation is unchanged. What is the project's economic advantage?",
       "options": [
-        "$0 because the firm already owns the warehouse",
-        "Only the original purchase price of the warehouse",
-        "Only depreciation because rent is not paid to outsiders",
-        "$11,000 as the opportunity cost of using the warehouse"
+        "$4,000",
+        "$16,000",
+        "-$24,000",
+        "-$2,000"
       ],
       "tag": "opportunity_cost",
       "type": "boss_application",
@@ -11609,8 +11609,8 @@ const questionBanks = {
       ],
       "repairSkill": "opportunity_cost",
       "commonError": "treats_owned_asset_as_free",
-      "feedback": "Using an owned asset is not free when the asset has an alternative use. The forgone rent is a relevant opportunity cost.",
-      "aHash": "e7b8263e543e25ec43dc5e0dc5b1ec455a7b4e860d60caa89702b9b99c5071d1"
+      "feedback": "The feasible rental alternative includes keeping the owner's time available. Project advantage is 22,000-18,000-6,000 = -$2,000; unchanged depreciation cancels.",
+      "aHash": "d5707ed254ec411ceb4aacdb629d20ee628470911ee47ceba13fa1a22ca62c15"
     },
     {
       "id": 9132,
@@ -11666,12 +11666,12 @@ const questionBanks = {
     {
       "id": 9134,
       "sourceGame": "costDirective",
-      "q": "A retailer can keep a store open for one more month. Extra sales revenue would be $74,000. Extra labor, inventory, utilities, and avoidable rent total $78,500. What should it do for that month?",
+      "q": "A shop can operate next month for $52,000 revenue, $31,000 variable expenses and $9,000 avoidable staffing. Closing instead yields $5,000 net sublease revenue but incurs $3,000 closing cost. A $10,000 lease payment is unavoidable either way. Which option is better?",
       "options": [
-        "Stay open because revenue is positive",
-        "Stay open because fixed costs from earlier months must be recovered",
-        "Close for the month because avoidable cost exceeds extra revenue by $4,500",
-        "Close only if accounting profit for the year is negative"
+        "Operate, by $12,000",
+        "Close, by $2,000",
+        "Operate, by $10,000",
+        "Both, because rent absorbs the operating contribution"
       ],
       "tag": "relevant_costs_benefits",
       "type": "boss_application",
@@ -11686,8 +11686,8 @@ const questionBanks = {
       ],
       "repairSkill": "relevant_costs_benefits",
       "commonError": "uses_total_or_past_costs",
-      "feedback": "For a short-run decision, compare additional revenue with avoidable additional costs. Here the store loses $4,500 by staying open.",
-      "aHash": "4cb52a24e39c569caabf828a8952b1b9b3a42d9a658c5a387fcb76fc86c72c95"
+      "feedback": "Operating nets $12,000 before common rent. Closing nets 5,000-3,000 = $2,000 before that same rent. Operating is $10,000 better.",
+      "aHash": "1579fb4d9e404562f3a26849d44de52ca3a084d323925b0e7f1523a135f773ff"
     },
     {
       "id": 9135,
@@ -11743,12 +11743,12 @@ const questionBanks = {
     {
       "id": 9137,
       "sourceGame": "costDirective",
-      "q": "A cafe has weekly rent of $1,200, labor cost of $0.90 per drink, and ingredients of $1.10 per drink. If it sells 3,000 drinks, what is total variable cost?",
+      "q": "At zero monthly output a factory owes $2,000. At 200 units TC is $5,000. Variable unit cost stays constant, but production above 300 units requires $900 extra supervision. What are VC and TC at 400 units?",
       "options": [
-        "$1,200",
-        "$6,000",
-        "$3,000",
-        "$7,200"
+        "$6,900 VC; $8,900 TC",
+        "$6,000 VC; $8,900 TC",
+        "$10,000 VC; $12,900 TC",
+        "$6,000 VC; $8,000 TC"
       ],
       "tag": "fixed_variable_costs",
       "type": "boss_calculation",
@@ -11762,8 +11762,8 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_variable_costs",
       "commonError": "includes_fixed_cost_in_variable_cost",
-      "feedback": "Variable cost per drink is $0.90 + $1.10 = $2.00. For 3,000 drinks, total variable cost is $6,000.",
-      "aHash": "f455ed4209cdc909730b6b732fb242e1933fdebcfac5fdf35dd9f2bac7cb51b0"
+      "feedback": "Variable unit cost is (5,000-2,000)/200 = $15. At 400, VC is $6,000. Add the $2,000 existing fixed commitment and new $900 step commitment for TC $8,900.",
+      "aHash": "e48393a3eea33037dfeeb0e5c6c154521886cd1060dda378d4468682094d6a7f"
     },
     {
       "id": 9138,
@@ -11818,12 +11818,12 @@ const questionBanks = {
     {
       "id": 9140,
       "sourceGame": "costDirective",
-      "q": "A business has accounting profit of $48,000. The owner uses a building that could rent for $30,000 and gave up salary of $35,000. What is economic profit?",
+      "q": "Annual economic profit is $7,000 after $62,000 owner-labor and $11,000 owner-capital opportunity costs. Explicit expenses are $120,000. What are revenue and accounting profit?",
       "options": [
-        "-$17,000",
-        "$48,000",
-        "$18,000",
-        "$113,000"
+        "Revenue $200,000; accounting profit $80,000",
+        "Revenue $127,000; accounting profit $7,000",
+        "Revenue $193,000; accounting profit $73,000",
+        "Revenue $80,000; accounting profit $200,000"
       ],
       "tag": "accounting_economic_profit",
       "type": "boss_application",
@@ -11837,8 +11837,8 @@ const questionBanks = {
       ],
       "repairSkill": "accounting_economic_profit",
       "commonError": "misses_multiple_opportunity_costs",
-      "feedback": "Economic profit subtracts implicit opportunity costs from accounting profit: $48,000 - $30,000 - $35,000 = -$17,000.",
-      "aHash": "667b0c78457c07728f594b782312ddc4615df72a221c218b870fb558a4b883fd"
+      "feedback": "Accounting profit equals economic profit plus implicit costs: 7,000+62,000+11,000 = $80,000. Revenue adds the $120,000 explicit costs, giving $200,000.",
+      "aHash": "80fc69cdfbaee2b177482ab0a0ec9946abfee916466652deb3a3cbf8406bdfe2"
     },
     {
       "id": 9141,
@@ -11893,12 +11893,12 @@ const questionBanks = {
     {
       "id": 9143,
       "sourceGame": "costDirective",
-      "q": "A firm can drop a service and avoid $21,000 in monthly costs. Dropping it would lose $18,000 in monthly revenue. A manager argues the service must stay because overhead allocated to it is $9,000. What is the correct decision?",
+      "q": "A service reports -$8,000 after $20,000 unavoidable allocation. Closing saves all direct expenses, sacrifices its revenue, permits $9,000 net new work and costs $2,000 to transition. What is the profit change from closing?",
       "options": [
-        "Keep it, because allocated overhead makes the service profitable",
-        "Keep it, because total overhead must be recovered by every service",
-        "Drop it only if the original launch cost can also be recovered",
-        "Drop it, because avoidable cost exceeds lost revenue by $3,000 and allocated overhead is not decisive"
+        "+$15,000",
+        "+$7,000",
+        "-$10,000",
+        "-$5,000"
       ],
       "tag": "fixed_cost_fallacy",
       "type": "boss_application",
@@ -11912,8 +11912,8 @@ const questionBanks = {
       ],
       "repairSkill": "fixed_cost_fallacy",
       "commonError": "uses_allocated_overhead",
-      "feedback": "The relevant comparison is lost revenue versus avoidable cost. If the $9,000 overhead is not avoidable, it should not drive the decision.",
-      "aHash": "af1774984f621ef84e95d030fa8fda31b02b5bdf318d63fb4906cd9efc9bd8ec"
+      "feedback": "The service contributes -8,000+20,000 = $12,000 before allocation. Closure replaces $12,000 with $9,000 and incurs $2,000, for a $5,000 reduction.",
+      "aHash": "58cac24838078ca502979ba1a652cc98375d5f9107ccc612f27beab3939ffdb2"
     },
     {
       "id": 9144,
@@ -11969,12 +11969,12 @@ const questionBanks = {
     {
       "id": 9146,
       "sourceGame": "costDirective",
-      "q": "A firm can use an idle-looking room for training or rent it out for $4,500 per month. Training saves $3,200 in outside venue costs. What is the net effect of using the room for training?",
+      "q": "An internal course saves $7,000 external training fees but uses a room rentable for $3,000 net, requires $1,500 materials, and takes staff from work earning $3,000 contribution. No other expense changes. What hidden-cost correction is needed?",
       "options": [
-        "+$3,200 because the room has no invoice cost",
-        "+$4,500 because rent is avoided",
-        "-$1,300 compared with renting it out and buying outside training space",
-        "$0 because the room is owned"
+        "The course saves $4,000 because only room rent is an opportunity cost.",
+        "The course saves $5,500 because paid salaries make time free.",
+        "The course is $500 worse than the alternative after all opportunity and material costs.",
+        "The course loses $7,500 because saved fees are not revenue."
       ],
       "tag": "hidden_cost_fallacy",
       "type": "boss_calculation",
@@ -11988,8 +11988,8 @@ const questionBanks = {
       ],
       "repairSkill": "hidden_cost_fallacy",
       "commonError": "treats_idle_asset_as_free",
-      "feedback": "Using the room sacrifices $4,500 in rent and saves $3,200 in venue cost. Net effect is $3,200 - $4,500 = -$1,300.",
-      "aHash": "6f044bc8272d57ed54a9a59528b60c7bcc2e53eee961ea33ddeb9bd54269f680"
+      "feedback": "Net effect is 7,000-3,000-1,500-3,000 = -$500. Avoided fees are benefits, and both room and staff have relevant alternatives.",
+      "aHash": "c35031ddb75733a3b8a196b9b1ca0a8c01a01a3820dbde6f6bbba5dee85ac071"
     },
     {
       "id": 9147,
@@ -12045,12 +12045,12 @@ const questionBanks = {
     {
       "id": 9149,
       "sourceGame": "costDirective",
-      "q": "A shop has total cost of $9,600 at 1,200 units. Producing 1,201 units raises total cost to $9,609. What are average cost at 1,200 and marginal cost of the 1,201st unit?",
+      "q": "A plant's AC is $32 at 100 units. Producing 140 units gives TC $4,240. The additional order pays $28 each but requires $160 setup beyond that TC. Which conclusion is correct?",
       "options": [
-        "Average cost is $9; marginal cost is $8",
-        "Average cost is $8; marginal cost is $9",
-        "Average cost is $9,600; marginal cost is $9,609",
-        "Average cost is $8; marginal cost is $8"
+        "MC is $30.29, so the order loses $91.60.",
+        "Production interval MC is $26, but the order loses $80 after setup.",
+        "The order earns $80 because setup is fixed.",
+        "The order loses $160 because no revenue is gained by spreading costs."
       ],
       "tag": "average_vs_marginal_cost",
       "type": "boss_calculation",
@@ -12065,8 +12065,8 @@ const questionBanks = {
       ],
       "repairSkill": "average_vs_marginal_cost",
       "commonError": "confuses_total_average_marginal",
-      "feedback": "Average cost is $9,600 / 1,200 = $8. Marginal cost is the added cost: $9,609 - $9,600 = $9.",
-      "aHash": "126acd6a20eef756f9756929fc2d017dd3f13d9ff861e083b5254f25c8fa8dbe"
+      "feedback": "Production cost rises 4,240-3,200 = $1,040 over 40 units, or $26 each. Receipts $1,120 less $1,040 and $160 setup give -$80.",
+      "aHash": "26ac55c7c9f45654c3251badddb58f564d7867b40a139136dfe2e5a1134928f6"
     },
     {
       "id": 9150,
@@ -12097,12 +12097,12 @@ const questionBanks = {
     {
       "id": 9151,
       "sourceGame": "costDirective",
-      "q": "Output is 200 units at total cost $5,400. Output is 260 units at total cost $6,900. What is marginal cost per additional unit over this range?",
+      "q": "Fixed cost is $700. At 50 units AVC is $18; at 80 units TC is $2,410. Revenue rises from $2,000 to $2,900. What are MC, MR and the gain over this interval?",
       "options": [
-        "$5.77",
-        "$26.54",
-        "$1,500",
-        "$25"
+        "$18 MC; $30 MR; $360 gain",
+        "$30.13 MC; $36.25 MR; $90 gain",
+        "$810 MC; $900 MR; $1,710 gain",
+        "$27 MC; $30 MR; $90 gain"
       ],
       "tag": "ac_mc_mr_calculation",
       "type": "boss_calculation",
@@ -12116,8 +12116,8 @@ const questionBanks = {
       ],
       "repairSkill": "ac_mc_mr_calculation",
       "commonError": "divides_by_total_output",
-      "feedback": "Marginal cost over the range is change in total cost divided by change in output: ($6,900 - $5,400) / 60 = $25.",
-      "aHash": "710d47350209c0f645e39d602f361641127e3c1509bdcb4de76a330960aa3a95"
+      "feedback": "Original TC is 700+50×18 = $1,600. Cost rises $810 and revenue $900 over 30 units. MC $27 and MR $30 imply a $90 gain.",
+      "aHash": "b903598ec45f4424df0295ce777d91f218b23f94b8ea9ad057b9dae81dc7bd99"
     },
     {
       "id": 9152,
@@ -12198,12 +12198,12 @@ const questionBanks = {
     {
       "id": 9155,
       "sourceGame": "costDirective",
-      "q": "A worker adds $720 of revenue and $640 of cost. The next worker would add $650 of revenue and $700 of cost. What should the firm do?",
+      "q": "A producer can choose 0, 1, 2 or 3 extra batches. Each earns $1,000. Batch costs are $600, $1,100 and $500 respectively, in sequence, plus $300 setup for any positive number. What is the best extent decision?",
       "options": [
-        "Hire both workers because total revenue is positive",
-        "Hire neither worker because the second worker is unprofitable",
-        "Hire the second worker to spread fixed costs",
-        "Hire the first worker but not the next one"
+        "One batch, adding $100",
+        "Two batches, adding $0",
+        "None, because batch two individually loses money",
+        "Three batches, adding $500"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "boss_application",
@@ -12218,8 +12218,8 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "uses_total_not_marginal",
-      "feedback": "Accept units where marginal revenue exceeds marginal cost. The first worker adds $80; the next would subtract $50.",
-      "aHash": "83748551c77bcc7b63cdbfb37b4e94cb449c1f8cd3f089c03b95ccacb74c4038"
+      "feedback": "Cumulative profits after setup are $100, $0 and $500. A locally unfavorable second batch does not justify stopping when it unlocks a sufficiently profitable third batch.",
+      "aHash": "7dda0118822161d5721f95cbc29087923c902694b3fae710acdf101853bc4453"
     },
     {
       "id": 9156,
@@ -12250,12 +12250,12 @@ const questionBanks = {
     {
       "id": 9157,
       "sourceGame": "costDirective",
-      "q": "A salesperson can choose high effort or low effort. High effort raises expected sales by $60,000. Contract A pays 5% commission plus a salary. Contract B pays 25% commission with no salary. Which contract gives the stronger marginal effort incentive?",
+      "q": "High effort adds $30,000 sales and costs a worker $4,000 in valued effort. A pays $15,000 plus 8% of sales; B pays 22% only. Sales without extra effort are $80,000. Which plan induces high effort, and which delivers higher optimized net pay?",
       "options": [
-        "Contract A, because a salary always increases marginal effort",
-        "Contract B, because high effort increases expected pay by $15,000 instead of $3,000",
-        "Contract A, because fixed pay changes with each sale",
-        "Both contracts give the same incentive because expected sales are the same"
+        "Only A induces high effort because salary exceeds effort cost.",
+        "Only B induces high effort; A delivers $21,400 versus B's $20,200 net.",
+        "B induces high effort and therefore necessarily delivers higher net pay.",
+        "Both induce high effort because both commissions are positive."
       ],
       "tag": "incentive_compensation_effort",
       "type": "boss_calculation",
@@ -12270,8 +12270,8 @@ const questionBanks = {
       ],
       "repairSkill": "incentive_compensation_effort",
       "commonError": "confuses_level_pay_with_marginal_incentive",
-      "feedback": "The marginal incentive is the commission rate times the extra sales created by effort. A fixed salary affects pay level, not the marginal return to effort.",
-      "aHash": "2a7135f988c1472a864ae033615af78d3a2f7909235c862b1f662d614a476aed"
+      "feedback": "Extra commission is $2,400 under A and $6,600 under B. A's optimum is low effort: 15,000+0.08×80,000=$21,400. B's high-effort net is 0.22×110,000-4,000=$20,200.",
+      "aHash": "0e74eabbc7a2c34438ff0b3f12dfead9a3f9ccb36993ab91cf5fd6a531e3ffa2"
     },
     {
       "id": 9158,
@@ -12329,12 +12329,12 @@ const questionBanks = {
     {
       "id": 9160,
       "sourceGame": "costDirective",
-      "q": "A kitchen has one grill and adds workers. Output rises from 0 to 40 to 74 to 101 to 121 meals as workers rise from 0 to 4. When do diminishing marginal returns begin?",
+      "q": "With fixed equipment, workers 2, 3, 4 and 5 produce 70, 120, 160 and 190 units. Each extra worker costs $240; each unit earns $10 and uses $3 materials. What are the observed start of diminishing returns and the best staffing relative to 2 workers?",
       "options": [
-        "With the second worker, because marginal product falls from 40 to 34",
-        "With the first worker, because output becomes positive",
-        "With the fourth worker, because total output is still rising",
-        "Only after total output begins to fall"
+        "Diminishing returns at worker 4; employ 4 workers total.",
+        "Diminishing returns at worker 3; employ 3 workers total.",
+        "Diminishing returns at worker 5; employ 5 workers total.",
+        "No diminishing returns because total output keeps rising."
       ],
       "tag": "diminishing_marginal_returns",
       "type": "boss_diagnosis",
@@ -12348,8 +12348,8 @@ const questionBanks = {
       ],
       "repairSkill": "diminishing_marginal_returns",
       "commonError": "requires_total_output_to_fall",
-      "feedback": "Diminishing marginal returns begin when additional workers add less extra output than the previous worker, even if total output still rises.",
-      "aHash": "0421845e6d0c8d427b785760fd08e3b1b54d308db1d09bd48f5fae36765a4a75"
+      "feedback": "Marginal products are 50, 40 and 30, so the first decline is at worker 4. Incremental profits are $110, $40 and -$30, so employ four workers.",
+      "aHash": "5eb446eb51a4cd999f15f6b724d9d3e117ea1d02023033b346ebf400bcc6e5f2"
     },
     {
       "id": 9161,
@@ -12404,12 +12404,12 @@ const questionBanks = {
     {
       "id": 9163,
       "sourceGame": "costDirective",
-      "q": "A supplier quotes average cost of $18 per unit, but it has idle capacity and marginal cost of $11 for an extra order. What should the buyer understand in negotiation?",
+      "q": "A supplier's first 300 extra units cost $10 each and the next 200 cost $16. An order for all 500 requires $800 setup and displaces $500 contribution. What minimum whole-order unit price avoids lowering profit?",
       "options": [
-        "The supplier must reject any price below $18 because average cost is always relevant",
-        "The buyer should ignore marginal cost because invoices use average cost",
-        "The order is profitable only if it covers all historical fixed costs",
-        "The supplier may profit from a price below average cost if the order covers marginal cost and opportunity cost"
+        "$12.40",
+        "$14",
+        "$16",
+        "$15"
       ],
       "tag": "cost_curves_contracts",
       "type": "boss_diagnosis",
@@ -12423,8 +12423,8 @@ const questionBanks = {
       ],
       "repairSkill": "cost_curves_contracts",
       "commonError": "uses_average_cost_for_incremental_order",
-      "feedback": "Cost curves help negotiators see when marginal cost differs from average cost. With idle capacity, a price below average cost can still be profitable.",
-      "aHash": "1593e3dbaa83f07267d61817beb940f77d7ec3f0a20e5486a88397e7f8fe7774"
+      "feedback": "Full relevant cost is 300×10+200×16+800+500 = $7,500. Dividing by all 500 units gives the $15 break-even quote. Neither endpoint MC alone is enough.",
+      "aHash": "012c420ecec5e4b1dec47c93a4043e027e2d9af669cb7be8deedd3c46e111110"
     },
     {
       "id": 9164,
@@ -12505,12 +12505,12 @@ const questionBanks = {
     {
       "id": 9167,
       "sourceGame": "costDirective",
-      "q": "Total cost is $72,000 at 6,000 units and $81,000 at 7,500 units. What happens to average cost?",
+      "q": "AC is $24 at 200 units and $22 at 300. Producing 400 would add $2,200 cost beyond the 300-unit plan. What can be concluded?",
       "options": [
-        "It rises from $10.80 to $12.00",
-        "It stays at $12.00 because total cost rises",
-        "It falls from $72,000 to $81,000",
-        "It falls from $12.00 to $10.80"
+        "AC falls to $18 because that was the earlier marginal cost.",
+        "AC rises above $22 because interval MC rose.",
+        "Each additional unit has become cheaper because output rose.",
+        "AC remains $22 at 400 although interval MC rose from $18 to $22."
       ],
       "tag": "average_cost_output",
       "type": "boss_calculation",
@@ -12525,8 +12525,8 @@ const questionBanks = {
       ],
       "repairSkill": "average_cost_output",
       "commonError": "looks_only_at_total_cost",
-      "feedback": "Average cost is total cost divided by output: $72,000 / 6,000 = $12.00 and $81,000 / 7,500 = $10.80.",
-      "aHash": "bddc124cc1a32ff7206ab55fe94a08a8d09c20da62b021c3c87d7444c8fa792c"
+      "feedback": "First interval MC is (300×22-200×24)/100 = $18. Next MC is $22, equal to the current average, so new AC stays $22.",
+      "aHash": "4df8cc21b3167dd98c56ba7bc36e2517767faee8851eb1bd3d0a6b6dc9225c82"
     },
     {
       "id": 9168,
@@ -12582,12 +12582,12 @@ const questionBanks = {
     {
       "id": 9170,
       "sourceGame": "costDirective",
-      "q": "A producer doubles plant size, equipment, and labor. Output doubles exactly. What does that imply?",
+      "q": "A firm's physical inputs double and output grows from 400 to 840. Input prices rise 8%. What inference distinguishes scale from monetary cost?",
       "options": [
-        "Economies of scope",
-        "Diminishing marginal returns",
-        "Constant returns to scale",
-        "Decreasing returns to scale"
+        "Higher AC proves decreasing physical returns.",
+        "Inputs doubling means output must exactly double.",
+        "Increasing physical returns coexist with about 2.86% higher AC.",
+        "Physical returns cannot be evaluated without the selling price."
       ],
       "tag": "returns_to_scale",
       "type": "boss_application",
@@ -12601,8 +12601,8 @@ const questionBanks = {
       ],
       "repairSkill": "returns_to_scale",
       "commonError": "confuses_all_inputs_with_one_input",
-      "feedback": "Returns to scale asks what happens when all inputs change proportionally. Exact proportional output growth is constant returns to scale.",
-      "aHash": "4afcedd9184d58c718cce4e396cd98b89fbea90ad79a74521565ac77f5c36fad"
+      "feedback": "Output factor is 2.1, above the input factor 2. Monetary cost factor is 2.16, so AC factor is 2.16/2.1, about 2.86% higher.",
+      "aHash": "b11c78fc1208b92c256967e5a5d81868367159a448099d5c1cc4eddf98ba6c77"
     },
     {
       "id": 9171,
@@ -12657,12 +12657,12 @@ const questionBanks = {
     {
       "id": 9173,
       "sourceGame": "costDirective",
-      "q": "A plant has average cost of $18 at 50,000 units, $13 at 100,000, $10 at 160,000, and $10 at 220,000. What is the minimum efficient scale?",
+      "q": "Feasible long-run plans have (Q, TC): (2,000, $40,000), (4,000, $64,000), (6,000, $90,000), (8,000, $120,000). A 4,000-unit buyer expects a price based on minimum AC. What additional committed demand is needed to reach the first such plan?",
       "options": [
-        "50,000 units",
-        "160,000 units",
-        "100,000 units",
-        "220,000 units"
+        "4,000 units",
+        "2,000 units",
+        "0 units",
+        "6,000 units"
       ],
       "tag": "minimum_efficient_scale",
       "type": "boss_calculation",
@@ -12676,8 +12676,8 @@ const questionBanks = {
       ],
       "repairSkill": "minimum_efficient_scale",
       "commonError": "chooses_largest_output",
-      "feedback": "The minimum efficient scale is the smallest output at which the firm reaches the minimum average cost. The minimum average cost is $10, first reached at 160,000 units.",
-      "aHash": "46b1f551d17e42ad9d1151efff8d84ff51450642772e6510b69be6d9cabc706a"
+      "feedback": "Average costs are $20, $16, $15 and $15. MES among the feasible plans is 6,000, requiring 2,000 additional units beyond the buyer's commitment.",
+      "aHash": "6d5d0fe3203b3349ce0216e662c3b34f0c7c25d73f545003664e8f44cf3625a9"
     },
     {
       "id": 9174,
@@ -12707,12 +12707,12 @@ const questionBanks = {
     {
       "id": 9175,
       "sourceGame": "costDirective",
-      "q": "A firm's cost for the first 10,000 units is $500,000. After experience doubles, the comparable cost falls to $400,000. What is the learning rate?",
+      "q": "Comparable unit cost is $125 before two cumulative-output doublings and $80 afterward. Assume a constant progress ratio per doubling. A later 100-unit batch follows one more doubling; what unit cost and total batch cost are forecast?",
       "options": [
-        "20%",
-        "25%",
-        "125%",
-        "80%"
+        "$80 per unit; $8,000 total",
+        "$51.20 per unit; $5,120 total",
+        "$45 per unit; $4,500 total",
+        "$64 per unit; $6,400 total"
       ],
       "tag": "learning_curve",
       "type": "boss_calculation",
@@ -12727,8 +12727,8 @@ const questionBanks = {
       ],
       "repairSkill": "learning_curve",
       "commonError": "uses_cost_reduction_as_learning_rate",
-      "feedback": "The learning rate is the new cost as a percentage of the old cost after cumulative output doubles: $400,000 / $500,000 = 80%.",
-      "aHash": "f39dda09980ef9a67b8524c7ab4fe02526c9c91d00f11fae1824c7d0954d257a"
+      "feedback": "The progress ratio is sqrt(80/125) = 0.8. A further doubling gives $64 per unit, so 100 units cost $6,400. This applies to comparable units at the stated experience stage.",
+      "aHash": "fc858c508fa5e74750447ff80601127eb21d2da2e3579bbd0a1697816e598b23"
     },
     {
       "id": 9176,
@@ -12785,12 +12785,12 @@ const questionBanks = {
     {
       "id": 9178,
       "sourceGame": "costDirective",
-      "q": "A firm can produce Product A alone for $620,000 and Product B alone for $510,000. Producing both together costs $980,000. What is the scope saving?",
+      "q": "Producing A and B separately costs $260,000 annually. Joint production costs $210,000 plus $18,000 annual integration support. The acquisition premium is $70,000 upfront. Over three years with no discounting or residual premium recovery, what is the net gain?",
       "options": [
-        "$130,000",
-        "$470,000",
-        "$150,000",
-        "$980,000"
+        "$96,000",
+        "$80,000",
+        "$26,000",
+        "-$38,000"
       ],
       "tag": "economies_of_scope",
       "type": "boss_calculation",
@@ -12804,8 +12804,8 @@ const questionBanks = {
       ],
       "repairSkill": "economies_of_scope",
       "commonError": "confuses_joint_cost_with_savings",
-      "feedback": "Separate production would cost $1,130,000. Joint production costs $980,000, so scope savings equal $150,000.",
-      "aHash": "66807e3878f3cdbf1ab46d4cd8ebc58a1ec1bb72b0b464a53b220ad3358c5eb8"
+      "feedback": "Annual scope saving net of support is 260,000-210,000-18,000 = $32,000. Three years yield $96,000; subtract the $70,000 premium for a $26,000 gain.",
+      "aHash": "867954a2cd30a171a197adc93184d3a214e9acea1b80dbf66b148123f3c48df5"
     },
     {
       "id": 9179,
@@ -12860,12 +12860,12 @@ const questionBanks = {
     {
       "id": 9181,
       "sourceGame": "costDirective",
-      "q": "A firm may drop Product X. Dropping it saves $90,000 of avoidable cost and loses $82,000 of revenue. It also frees a machine that can earn $14,000 on Product Y. What should the firm do?",
+      "q": "Dropping X saves $60,000 direct costs, loses $72,000 receipts, frees equipment for $18,000 contribution and incurs $4,000 transition cost. Allocated overhead of $25,000 remains. What is the profit effect?",
       "options": [
-        "Keep Product X because its revenue exceeds the opportunity value of the machine",
-        "Drop Product X because the net gain is $22,000",
-        "Keep Product X because avoidable cost ignores allocated overhead",
-        "Drop Product X only if its original launch cost can be recovered"
+        "+$27,000",
+        "+$2,000",
+        "-$12,000",
+        "+$6,000"
       ],
       "tag": "relevant_costs_benefits",
       "type": "boss_calculation",
@@ -12882,8 +12882,8 @@ const questionBanks = {
       ],
       "repairSkill": "relevant_costs_benefits",
       "commonError": "misses_released_capacity_value",
-      "feedback": "Dropping X saves $90,000 and creates $14,000 of capacity value, while losing $82,000 of revenue. Net gain is $22,000.",
-      "aHash": "78c0a068b5be3b7620811940b7a06c95cd534cce150a6ec0ead3724d42021416"
+      "feedback": "Net change is 60,000-72,000+18,000-4,000 = $2,000. Do not count unchanged overhead as a saving or omit transition cost.",
+      "aHash": "2681d204fae4784ae9871488ef075200a176c19f3dbd1c510ea5ff4b100dadcc"
     },
     {
       "id": 9182,
@@ -12942,12 +12942,12 @@ const questionBanks = {
     {
       "id": 9184,
       "sourceGame": "costDirective",
-      "q": "A purchasing department is rewarded for reducing invoice prices. Supplier defects increase rework costs in production, but those costs are charged to production. What is the main diagnosis?",
+      "q": "A buyer can save $10,000 invoices by switching suppliers. Expected rework rises $7,000, and scarce inspection time sacrifices $5,000 contribution. Her bonus is 5% invoice savings. Which joint diagnosis is correct?",
       "options": [
-        "A siloed incentive rewards purchasing for savings while hiding costs imposed on production",
-        "Purchasing is irrational because lower prices always reduce total cost",
-        "Production should absorb defects because it controls rework",
-        "The firm has economies of scope between purchasing and production"
+        "A $500 personal reward encourages a $2,000 firm loss; both downstream cost and capacity opportunity cost are excluded.",
+        "The firm gains $3,000 because inspection staff salaries are unchanged.",
+        "The buyer earns a $100 penalty because firm value falls.",
+        "Information about rework alone removes every incentive problem."
       ],
       "tag": "organization_design_info_incentives",
       "type": "boss_diagnosis",
@@ -12964,8 +12964,8 @@ const questionBanks = {
       ],
       "repairSkill": "organization_design_info_incentives",
       "commonError": "ignores_cross_department_costs",
-      "feedback": "The metric rewards one department for a narrow cost while shifting hidden costs elsewhere. Organization design should measure total cost or value.",
-      "aHash": "090d2ffcf3d5e28fcf2c71ce2d11bd6956c552ddf6ef65a4a5923415f09192d6"
+      "feedback": "Current bonus is $500. Net firm saving is 10,000-7,000-5,000 = -$2,000. The reward measure and the relevant-cost estimate both need the full consequences.",
+      "aHash": "7e7f471c6e31d9541cc191ff3f0c814f8b42696c603fa8c45adc471232f72159"
     },
     {
       "id": 9185,
@@ -13024,12 +13024,12 @@ const questionBanks = {
     {
       "id": 9187,
       "sourceGame": "costDirective",
-      "q": "A new plant has high first-batch cost, but costs are expected to fall with learning. A customer offers a large contract at a price below first-batch average cost but above expected marginal cost after the first batch. What should managers evaluate?",
+      "q": "A two-stage contract pays $52 each for 100 units now and 200 later. Current unit cost is $65; later cost is forecast $42 through learning. Signing also sacrifices a $1,500 alternative contribution. What is the full expected advantage with no other effects or discounting?",
       "options": [
-        "Reject it automatically because price is below first-batch average cost",
-        "Accept it automatically because learning always makes future units profitable",
-        "Accept it only if it covers the sunk cost of building the plant",
-        "Whether the contract's full life-cycle marginal benefits exceed life-cycle marginal and opportunity costs"
+        "+$700",
+        "+$2,000",
+        "-$1,300",
+        "-$800"
       ],
       "tag": "mr_mc_extent_rule",
       "type": "boss_diagnosis",
@@ -13045,8 +13045,8 @@ const questionBanks = {
       ],
       "repairSkill": "mr_mc_extent_rule",
       "commonError": "uses_first_batch_average_cost",
-      "feedback": "With learning, the relevant comparison may span the contract life cycle. Managers should compare incremental benefits with incremental and opportunity costs over that horizon.",
-      "aHash": "40f156559eeb7ced1e0efad2f981b8668eb0eeead4d476d5076d21dde61a1020"
+      "feedback": "Revenue is 300×52 = $15,600. Production cost is 100×65+200×42 = $14,900, leaving $700 before the $1,500 opportunity cost. The contract is $800 worse than the alternative.",
+      "aHash": "45a0ed69a71f3a69df5fad05999bc66575796c8d3f36c6045d96ea914a8c66a0"
     },
     {
       "id": 9188,
