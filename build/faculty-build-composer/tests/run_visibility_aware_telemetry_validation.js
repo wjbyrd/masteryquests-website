@@ -28,20 +28,57 @@ function extractFunction(source, name){
 
 const names = [
   'createQuestionVisibilityTimingState',
+  'createQuestionBehaviorTelemetryState',
+  'clearQuestionSelectionDebounce',
   'resetQuestionVisibilityTiming',
   'markQuestionVisibilityHidden',
   'markQuestionVisibilityVisible',
   'getQuestionVisibilityTiming',
   'completeQuestionVisibilityTiming',
   'handleQuestionVisibilityChange',
+  'markQuestionFocusLost',
+  'markQuestionFocusRegained',
+  'selectedCharactersWithinRange',
+  'getRelevantSelectionSummary',
+  'recordMeaningfulQuestionSelection',
+  'scheduleQuestionSelectionTelemetry',
+  'flushQuestionSelectionTelemetry',
+  'recordRelevantQuestionCopy',
+  'getQuestionBehaviorTelemetry',
+  'getQuestionBehaviorData',
   'getMasteryResponseTime'
 ];
-const context = {document:{hidden:false}, Number, Math};
+let nextTimerID = 1;
+const pendingTimers = new Map();
+const questionRoot = {id:'question'};
+const answersRoot = {id:'answers'};
+const context = {
+  document:{
+    hidden:false,
+    getElementById(id){ return id === 'question' ? questionRoot : id === 'answers' ? answersRoot : null; },
+    createRange(){
+      return {
+        root:null,startContainer:null,startOffset:0,endContainer:null,endOffset:0,
+        selectNodeContents(root){ this.root=root; this.startContainer=root; this.endContainer=root; }
+      };
+    }
+  },
+  window:{getSelection(){ return context.currentSelection; }},
+  Range:{START_TO_START:0,END_TO_END:2},
+  setTimeout(callback){ const id=nextTimerID++; pendingTimers.set(id,callback); return id; },
+  clearTimeout(id){ pendingTimers.delete(id); },
+  currentSelection:null,
+  Number, Math, String
+};
 vm.createContext(context);
 vm.runInContext(
   `${names.map(name => extractFunction(template, name)).join('\n')}
    let questionStartTime = 0;
-   let questionVisibilityTiming = createQuestionVisibilityTimingState();`,
+   let questionVisibilityTiming = createQuestionVisibilityTimingState();
+   let questionBehaviorTelemetry = createQuestionBehaviorTelemetryState();
+   let questionSelectionDebounceTimer = null;
+   let questionBehaviorGeneration = 0;
+   let answerSubmissionPending = false;`,
   context
 );
 
@@ -55,11 +92,38 @@ function assertTiming(actual, expected, label){
   if(actual.hiddenTimeMs < 0 || actual.activeResponseTimeMs < 0) throw new Error(`${label}: negative time`);
 }
 
+function makeSelection(questionCharacters, answerCharacters){
+  const charactersByRoot = new Map([[questionRoot,questionCharacters],[answersRoot,answerCharacters]]);
+  const range = {
+    intersectsNode(root){ return (charactersByRoot.get(root) || 0) > 0; },
+    cloneRange(){
+      return {
+        activeRoot:null,
+        compareBoundaryPoints(_how, other){ this.activeRoot=other.root; return 0; },
+        setStart(){},setEnd(){},
+        toString(){ return 'x'.repeat(charactersByRoot.get(this.activeRoot) || 0); }
+      };
+    }
+  };
+  return {isCollapsed:false,rangeCount:1,getRangeAt(){ return range; }};
+}
+
+function runPendingTimers(){
+  const callbacks = [...pendingTimers.values()];
+  pendingTimers.clear();
+  callbacks.forEach(callback => callback());
+}
+
 const cases = {};
 
 run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
 cases.normal = run('getQuestionVisibilityTiming(11000)');
 assertTiming(cases.normal, {responseTimeMs:10000,activeResponseTimeMs:10000,hiddenTimeMs:0,tabSwitchCount:0,timeAfterReturnMs:null}, 'normal');
+assertTiming(cases.normal, {
+  focusLossCount:0,unfocusedTimeMs:0,timeAfterFocusMs:null,selectionCount:0,maxSelectedChars:0,
+  questionSelected:0,answersSelected:0,copyCount:0,questionCopied:0,answersCopied:0,
+  lastCopyElapsedMs:null,timeCopyToHideMs:null,timeCopyToBlurMs:null
+}, 'normal behavior');
 
 run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
 run('document.hidden=true; handleQuestionVisibilityChange(6000); handleQuestionVisibilityChange(6500)');
@@ -87,6 +151,81 @@ run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
 run('document.hidden=true; handleQuestionVisibilityChange(3000)');
 cases.hiddenSubmission = run('getQuestionVisibilityTiming(8000)');
 assertTiming(cases.hiddenSubmission, {responseTimeMs:7000,activeResponseTimeMs:2000,hiddenTimeMs:5000,tabSwitchCount:1,timeAfterReturnMs:null}, 'hiddenSubmission');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+run('markQuestionFocusLost(3000); markQuestionFocusLost(3500); markQuestionFocusRegained(7000)');
+cases.windowBlurFocus = run('getQuestionVisibilityTiming(9000)');
+assertTiming(cases.windowBlurFocus, {
+  responseTimeMs:8000,hiddenTimeMs:0,tabSwitchCount:0,
+  focusLossCount:1,unfocusedTimeMs:4000,timeAfterFocusMs:2000
+}, 'windowBlurFocus');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+run('markQuestionFocusLost(2000); document.hidden=true; handleQuestionVisibilityChange(2500)');
+run('document.hidden=false; handleQuestionVisibilityChange(5500); markQuestionFocusRegained(6000)');
+cases.tabSwitchWithFocus = run('getQuestionVisibilityTiming(8000)');
+assertTiming(cases.tabSwitchWithFocus, {
+  responseTimeMs:7000,activeResponseTimeMs:4000,hiddenTimeMs:3000,tabSwitchCount:1,timeAfterReturnMs:2500,
+  focusLossCount:1,unfocusedTimeMs:4000,timeAfterFocusMs:2000
+}, 'tabSwitchWithFocus');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+context.currentSelection = makeSelection(18, 0);
+cases.questionSelection = run('recordMeaningfulQuestionSelection(getRelevantSelectionSummary()); getQuestionVisibilityTiming(2000)');
+assertTiming(cases.questionSelection, {selectionCount:1,maxSelectedChars:18,questionSelected:1,answersSelected:0,copyCount:0}, 'questionSelection');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+context.currentSelection = makeSelection(0, 11);
+cases.answerSelection = run('recordMeaningfulQuestionSelection(getRelevantSelectionSummary()); getQuestionVisibilityTiming(2000)');
+assertTiming(cases.answerSelection, {selectionCount:1,maxSelectedChars:11,questionSelected:0,answersSelected:1}, 'answerSelection');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+context.currentSelection = makeSelection(24, 0);
+for(let change = 0; change < 20; change++) run('scheduleQuestionSelectionTelemetry()');
+runPendingTimers();
+cases.dragSelection = run('getQuestionVisibilityTiming(2000)');
+assertTiming(cases.dragSelection, {selectionCount:1,maxSelectedChars:24,questionSelected:1}, 'dragSelection');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+context.currentSelection = makeSelection(20, 0);
+run('recordRelevantQuestionCopy(2500, getRelevantSelectionSummary())');
+cases.copyQuestion = run('getQuestionVisibilityTiming(3000)');
+assertTiming(cases.copyQuestion, {copyCount:1,questionCopied:1,answersCopied:0,lastCopyElapsedMs:1500}, 'copyQuestion');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+context.currentSelection = makeSelection(0, 9);
+run('recordRelevantQuestionCopy(2200, getRelevantSelectionSummary())');
+cases.copyAnswer = run('getQuestionVisibilityTiming(3000)');
+assertTiming(cases.copyAnswer, {copyCount:1,questionCopied:0,answersCopied:1,lastCopyElapsedMs:1200}, 'copyAnswer');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+run('recordRelevantQuestionCopy(2000, {characterCount:12,question:true,answers:false}); markQuestionFocusLost(3500); markQuestionFocusRegained(6000)');
+cases.copyBlurReturnAnswer = run('getQuestionVisibilityTiming(8000)');
+assertTiming(cases.copyBlurReturnAnswer, {
+  focusLossCount:1,unfocusedTimeMs:2500,timeAfterFocusMs:2000,
+  copyCount:1,lastCopyElapsedMs:1000,timeCopyToBlurMs:1500,timeCopyToHideMs:null
+}, 'copyBlurReturnAnswer');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+run('recordRelevantQuestionCopy(2000, {characterCount:12,question:true,answers:false}); document.hidden=true; handleQuestionVisibilityChange(3200)');
+run('document.hidden=false; handleQuestionVisibilityChange(6200)');
+cases.copyHideReturnAnswer = run('getQuestionVisibilityTiming(8000)');
+assertTiming(cases.copyHideReturnAnswer, {
+  hiddenTimeMs:3000,tabSwitchCount:1,timeAfterReturnMs:1800,
+  copyCount:1,lastCopyElapsedMs:1000,timeCopyToHideMs:1200,timeCopyToBlurMs:null
+}, 'copyHideReturnAnswer');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000)');
+run('markQuestionFocusLost(2000); markQuestionFocusRegained(3000); markQuestionFocusLost(4000); markQuestionFocusRegained(6500)');
+cases.multipleFocusChanges = run('getQuestionVisibilityTiming(8000)');
+assertTiming(cases.multipleFocusChanges, {focusLossCount:2,unfocusedTimeMs:3500,timeAfterFocusMs:1500}, 'multipleFocusChanges');
+
+run('document.hidden=false; resetQuestionVisibilityTiming(1000); markQuestionFocusLost(3000)');
+cases.unfocusedSubmission = run('getQuestionVisibilityTiming(7000)');
+assertTiming(cases.unfocusedSubmission, {focusLossCount:1,unfocusedTimeMs:4000,timeAfterFocusMs:null}, 'unfocusedSubmission');
+run('completeQuestionVisibilityTiming(); markQuestionFocusRegained(9000)');
+assertEqual(run('questionBehaviorTelemetry.active'), false, 'completed focus telemetry inactive');
+assertEqual(run('questionBehaviorTelemetry.unfocusedStartedAt'), null, 'completed focus interval closed');
 
 const runClockContext = {Number, Math, now:1000};
 runClockContext.Date = {now:() => runClockContext.now};
@@ -116,10 +255,11 @@ assertEqual(cases.pauseResume.accumulatedElapsedMs, 5000, 'pause accumulated ela
 assertEqual(cases.pauseResume.clockRunning, true, 'resume restarts active clock');
 assertEqual(cases.pauseResume.resumePending, false, 'resume flag clears');
 
-run('document.hidden=false; resetQuestionVisibilityTiming(1000); document.hidden=true; handleQuestionVisibilityChange(3000)');
+run('document.hidden=false; resetQuestionVisibilityTiming(1000); markQuestionFocusLost(2000); recordRelevantQuestionCopy(2500, {characterCount:5,question:true,answers:false}); document.hidden=true; handleQuestionVisibilityChange(3000)');
 run('document.hidden=false; resetQuestionVisibilityTiming(50000)');
 cases.restoredQuestion = run('getQuestionVisibilityTiming(53000)');
 assertTiming(cases.restoredQuestion, {responseTimeMs:3000,activeResponseTimeMs:3000,hiddenTimeMs:0,tabSwitchCount:0,timeAfterReturnMs:null}, 'restoredQuestion');
+assertTiming(cases.restoredQuestion, {focusLossCount:0,unfocusedTimeMs:0,selectionCount:0,copyCount:0,timeAfterFocusMs:null}, 'restoredQuestion behavior reset');
 
 cases.backwardCompatibility = {
   oldRecentRecord:run('getMasteryResponseTime({responseTime:7000})'),
@@ -135,12 +275,24 @@ vm.createContext(examCompatibilityContext);
 vm.runInContext(extractFunction(template, 'addExamRoomVisibilityTiming'), examCompatibilityContext);
 cases.restoredExamRoom = vm.runInContext(`
   const state = {totalViewMs:9000};
-  addExamRoomVisibilityTiming(state, {activeResponseTimeMs:3000,hiddenTimeMs:2000,tabSwitchCount:1});
+  addExamRoomVisibilityTiming(state, {
+    activeResponseTimeMs:3000,hiddenTimeMs:2000,tabSwitchCount:1,
+    focusLossCount:2,unfocusedTimeMs:2400,timeAfterFocusMs:400,
+    selectionCount:1,maxSelectedChars:16,questionSelected:1,answersSelected:0,
+    copyCount:1,questionCopied:1,answersCopied:0,lastCopyElapsedMs:800,timeCopyToBlurMs:250,timeCopyToHideMs:null
+  });
   state;
 `, examCompatibilityContext);
 assertEqual(cases.restoredExamRoom.totalActiveViewMs, 12000, 'legacy exam active-time fallback');
 assertEqual(cases.restoredExamRoom.totalHiddenViewMs, 2000, 'legacy exam hidden-time fallback');
 assertEqual(cases.restoredExamRoom.totalTabSwitchCount, 1, 'legacy exam switch-count fallback');
+assertEqual(cases.restoredExamRoom.totalFocusLossCount, 2, 'exam focus-count accumulation');
+assertEqual(cases.restoredExamRoom.totalUnfocusedTimeMs, 2400, 'exam unfocused-time accumulation');
+assertEqual(cases.restoredExamRoom.lastTimeAfterFocusMs, 400, 'exam latest focus timing');
+assertEqual(cases.restoredExamRoom.totalSelectionCount, 1, 'exam selection accumulation');
+assertEqual(cases.restoredExamRoom.maxSelectedChars, 16, 'exam selection maximum');
+assertEqual(cases.restoredExamRoom.totalCopyCount, 1, 'exam copy accumulation');
+assertEqual(cases.restoredExamRoom.timeCopyToBlurMs, 250, 'exam copy-to-blur timing');
 
 const rapidConfigSource = template.match(/const RAPID_GUESS_CONFIG = (\{[\s\S]*?\n\});/);
 if(!rapidConfigSource) throw new Error('Missing RAPID_GUESS_CONFIG');
@@ -163,8 +315,13 @@ const columnSource = template.match(/const TELEMETRY_COLUMNS = \[([\s\S]*?)\n\];
 if(!columnSource) throw new Error('Missing TELEMETRY_COLUMNS');
 const columns = vm.runInNewContext(`[${columnSource[1]}]`);
 const responseIndex = columns.indexOf('responseTimeMs');
-const expectedTimingColumns = ['responseTimeMs','activeResponseTimeMs','hiddenTimeMs','tabSwitchCount','timeAfterReturnMs'];
-assertEqual(JSON.stringify(columns.slice(responseIndex, responseIndex + 5)), JSON.stringify(expectedTimingColumns), 'CSV timing column order');
+const expectedTimingColumns = [
+  'responseTimeMs','activeResponseTimeMs','hiddenTimeMs','tabSwitchCount','timeAfterReturnMs',
+  'focusLossCount','unfocusedTimeMs','timeAfterFocusMs','selectionCount','maxSelectedChars',
+  'questionSelected','answersSelected','copyCount','questionCopied','answersCopied',
+  'lastCopyElapsedMs','timeCopyToHideMs','timeCopyToBlurMs'
+];
+assertEqual(JSON.stringify(columns.slice(responseIndex, responseIndex + expectedTimingColumns.length)), JSON.stringify(expectedTimingColumns), 'CSV timing column order');
 
 const storage = new Map();
 const telemetryContext = {
@@ -187,18 +344,24 @@ vm.runInContext(`
   ${extractFunction(template, 'readLocalTelemetry')}
   ${extractFunction(template, 'sendGameData')}
 `, telemetryContext);
-runTelemetry(`sendGameData({event:'question',questionId:7,responseTime:13000,activeResponseTime:8000,hiddenTime:5000,tabSwitchCount:1,timeAfterReturn:3000,correct:1})`);
-runTelemetry(`sendGameData({event:'start',responseTime:999,activeResponseTime:999,hiddenTime:999,tabSwitchCount:9,timeAfterReturn:999})`);
+runTelemetry(`sendGameData({event:'question',questionId:7,responseTime:13000,activeResponseTime:8000,hiddenTime:5000,tabSwitchCount:1,timeAfterReturn:3000,focusLossCount:2,unfocusedTimeMs:6000,timeAfterFocusMs:2000,selectionCount:1,maxSelectedChars:42,questionSelected:1,answersSelected:0,copyCount:1,questionCopied:1,answersCopied:0,lastCopyElapsedMs:1500,timeCopyToHideMs:300,timeCopyToBlurMs:200,correct:1})`);
+runTelemetry(`sendGameData({event:'start',responseTime:999,activeResponseTime:999,hiddenTime:999,tabSwitchCount:9,timeAfterReturn:999,focusLossCount:9,unfocusedTimeMs:999,selectionCount:9,copyCount:9})`);
 runTelemetry(`sendGameData({event:'question',questionId:8,responseTime:9000,correct:1})`);
 function runTelemetry(code){ return vm.runInContext(code, telemetryContext); }
 const telemetryRows = JSON.parse(storage.get('test:run-1'));
 cases.telemetryRows = telemetryRows.map(row => ({
   event:row.event,responseTimeMs:row.responseTimeMs,activeResponseTimeMs:row.activeResponseTimeMs,
-  hiddenTimeMs:row.hiddenTimeMs,tabSwitchCount:row.tabSwitchCount,timeAfterReturnMs:row.timeAfterReturnMs
+  hiddenTimeMs:row.hiddenTimeMs,tabSwitchCount:row.tabSwitchCount,timeAfterReturnMs:row.timeAfterReturnMs,
+  focusLossCount:row.focusLossCount,unfocusedTimeMs:row.unfocusedTimeMs,timeAfterFocusMs:row.timeAfterFocusMs,
+  selectionCount:row.selectionCount,maxSelectedChars:row.maxSelectedChars,questionSelected:row.questionSelected,answersSelected:row.answersSelected,
+  copyCount:row.copyCount,questionCopied:row.questionCopied,answersCopied:row.answersCopied,lastCopyElapsedMs:row.lastCopyElapsedMs,
+  timeCopyToHideMs:row.timeCopyToHideMs,timeCopyToBlurMs:row.timeCopyToBlurMs
 }));
 assertTiming(cases.telemetryRows[0], {responseTimeMs:13000,activeResponseTimeMs:8000,hiddenTimeMs:5000,tabSwitchCount:1,timeAfterReturnMs:3000}, 'question telemetry');
-assertTiming(cases.telemetryRows[1], {responseTimeMs:0,activeResponseTimeMs:0,hiddenTimeMs:0,tabSwitchCount:0,timeAfterReturnMs:''}, 'non-question telemetry');
+assertTiming(cases.telemetryRows[0], {focusLossCount:2,unfocusedTimeMs:6000,timeAfterFocusMs:2000,selectionCount:1,maxSelectedChars:42,questionSelected:1,answersSelected:0,copyCount:1,questionCopied:1,answersCopied:0,lastCopyElapsedMs:1500,timeCopyToHideMs:300,timeCopyToBlurMs:200}, 'behavior telemetry');
+assertTiming(cases.telemetryRows[1], {responseTimeMs:0,activeResponseTimeMs:0,hiddenTimeMs:0,tabSwitchCount:0,timeAfterReturnMs:'',focusLossCount:0,unfocusedTimeMs:0,selectionCount:0,copyCount:0,lastCopyElapsedMs:''}, 'non-question telemetry');
 assertTiming(cases.telemetryRows[2], {responseTimeMs:9000,activeResponseTimeMs:9000,hiddenTimeMs:0,tabSwitchCount:0,timeAfterReturnMs:''}, 'legacy call fallback');
+assertTiming(cases.telemetryRows[2], {focusLossCount:0,unfocusedTimeMs:0,timeAfterFocusMs:'',selectionCount:0,maxSelectedChars:0,copyCount:0,lastCopyElapsedMs:'',timeCopyToHideMs:'',timeCopyToBlurMs:''}, 'legacy behavior fallback');
 
 const sourceChecks = {
   rawResponsePreserved:template.includes('const responseTime = responseTiming.responseTimeMs;'),
@@ -208,17 +371,30 @@ const sourceChecks = {
   scoreUsesRaw:template.includes('applyScoreAttackForAnswer(isCorrect, responseTime);'),
   fadingPauseDoesNotShiftRawClock:!template.includes('questionStartTime += pausedFor;'),
   visibilityListener:template.includes('handleQuestionVisibilityChange();'),
+  windowBlurListener:template.includes('window.addEventListener("blur"') && template.includes('markQuestionFocusLost();'),
+  windowFocusListener:template.includes('window.addEventListener("focus"') && template.includes('markQuestionFocusRegained();'),
+  selectionDebounced:template.includes('document.addEventListener("selectionchange", scheduleQuestionSelectionTelemetry);') && template.includes('}, 250);'),
+  copyObserved:template.includes('document.addEventListener("copy"') && template.includes('recordRelevantQuestionCopy();'),
+  selectionScopedToQuestionUI:template.includes('document.getElementById("question")') && template.includes('document.getElementById("answers")'),
+  clipboardNotRead:!template.includes('clipboardData.getData') && !template.includes('navigator.clipboard.readText'),
+  telemetryCopyDoesNotTouchClipboard:!extractFunction(template, 'recordRelevantQuestionCopy').includes('clipboard'),
+  focusVisibilitySeparate:template.includes('accumulatedUnfocusedMs') && template.includes('accumulatedHiddenMs'),
   nonQuestionDefaults:template.includes('const responseTimeMs = isResponseEvent ?') && template.includes(': 0;'),
-  saveResumeResetsViaPresentation:template.includes('phase15BaseDisplayQuestion();') && template.includes('resetQuestionVisibilityTiming();')
+  saveResumeResetsViaPresentation:template.includes('phase15BaseDisplayQuestion();') && template.includes('resetQuestionVisibilityTiming();'),
+  runResetClearsBehavior:template.includes('questionBehaviorTelemetry = createQuestionBehaviorTelemetryState();')
 };
 for(const [name, passed] of Object.entries(sourceChecks)) if(!passed) throw new Error(`Source check failed: ${name}`);
 
 const result = {
-  schema:'visibility-aware-question-timing-v1',
+  schema:'visibility-and-behavioral-question-telemetry-v2',
   ok:true,
   cases,
   csvTimingColumns:expectedTimingColumns,
-  convention:{timeAfterReturnMs:'Blank/null when no hidden interval returned to visibility, and when submitted while still hidden; otherwise milliseconds since the most recent visible return.'},
+  convention:{
+    timeAfterReturnMs:'Blank/null when no hidden interval returned to visibility, and when submitted while still hidden; otherwise milliseconds since the most recent visible return.',
+    timeAfterFocusMs:'Blank/null unless a blur was followed by focus before submission; otherwise milliseconds from the most recent matching focus regain to submission.',
+    optionalCopyTiming:'Blank/null when no relevant copy occurred or when the latest relevant copy was not followed by the named transition before submission.'
+  },
   sourceChecks
 };
 console.log(JSON.stringify(result, null, 2));

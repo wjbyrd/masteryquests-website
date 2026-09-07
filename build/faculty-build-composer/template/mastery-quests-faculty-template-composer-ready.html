@@ -3727,6 +3727,9 @@ let username = "";
 let runID = "";
 let questionStartTime = 0;
 let questionVisibilityTiming = createQuestionVisibilityTimingState();
+let questionBehaviorTelemetry = createQuestionBehaviorTelemetryState();
+let questionSelectionDebounceTimer = null;
+let questionBehaviorGeneration = 0;
 let streak = 0; 
 let startTime; // Will be set in startGame()
 let finalElapsedTimeMs = null;
@@ -3756,19 +3759,58 @@ function createQuestionVisibilityTimingState(){
     };
 }
 
+function createQuestionBehaviorTelemetryState(){
+    return {
+        active:false,
+        accumulatedUnfocusedMs:0,
+        unfocusedStartedAt:null,
+        focusLossCount:0,
+        lastFocusAt:null,
+        hasRefocused:false,
+        selectionCount:0,
+        maxSelectedChars:0,
+        questionSelected:false,
+        answersSelected:false,
+        copyCount:0,
+        questionCopied:false,
+        answersCopied:false,
+        lastCopyAt:null,
+        pendingCopyToHideAt:null,
+        pendingCopyToBlurAt:null,
+        timeCopyToHideMs:null,
+        timeCopyToBlurMs:null
+    };
+}
+
+function clearQuestionSelectionDebounce(){
+    if(questionSelectionDebounceTimer !== null){
+        clearTimeout(questionSelectionDebounceTimer);
+        questionSelectionDebounceTimer = null;
+    }
+}
+
 function resetQuestionVisibilityTiming(now = Date.now()){
     const safeNow = Math.max(0, Number(now) || 0);
+    clearQuestionSelectionDebounce();
+    questionBehaviorGeneration++;
     questionStartTime = safeNow;
     questionVisibilityTiming = createQuestionVisibilityTimingState();
     questionVisibilityTiming.active = true;
+    questionBehaviorTelemetry = createQuestionBehaviorTelemetryState();
+    questionBehaviorTelemetry.active = true;
     if(document.hidden) questionVisibilityTiming.hiddenStartedAt = safeNow;
     return questionVisibilityTiming;
 }
 
 function markQuestionVisibilityHidden(now = Date.now()){
     if(!questionVisibilityTiming.active || Number.isFinite(questionVisibilityTiming.hiddenStartedAt)) return;
-    questionVisibilityTiming.hiddenStartedAt = Math.max(0, Number(now) || 0);
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    questionVisibilityTiming.hiddenStartedAt = safeNow;
     questionVisibilityTiming.tabSwitchCount++;
+    if(Number.isFinite(questionBehaviorTelemetry.pendingCopyToHideAt)){
+        questionBehaviorTelemetry.timeCopyToHideMs = Math.max(0, safeNow - questionBehaviorTelemetry.pendingCopyToHideAt);
+        questionBehaviorTelemetry.pendingCopyToHideAt = null;
+    }
 }
 
 function markQuestionVisibilityVisible(now = Date.now()){
@@ -3801,18 +3843,175 @@ function getQuestionVisibilityTiming(now = Date.now()){
         activeResponseTimeMs,
         hiddenTimeMs,
         tabSwitchCount:Math.max(0, Number(questionVisibilityTiming.tabSwitchCount) || 0),
-        timeAfterReturnMs
+        timeAfterReturnMs,
+        ...getQuestionBehaviorTelemetry(safeNow)
     };
 }
 
 function completeQuestionVisibilityTiming(){
+    clearQuestionSelectionDebounce();
     questionVisibilityTiming.active = false;
     questionVisibilityTiming.hiddenStartedAt = null;
+    questionBehaviorTelemetry.active = false;
+    questionBehaviorTelemetry.unfocusedStartedAt = null;
+    questionBehaviorTelemetry.pendingCopyToHideAt = null;
+    questionBehaviorTelemetry.pendingCopyToBlurAt = null;
 }
 
 function handleQuestionVisibilityChange(now = Date.now()){
     if(document.hidden) markQuestionVisibilityHidden(now);
     else markQuestionVisibilityVisible(now);
+}
+
+function markQuestionFocusLost(now = Date.now()){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending || Number.isFinite(questionBehaviorTelemetry.unfocusedStartedAt)) return;
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    questionBehaviorTelemetry.unfocusedStartedAt = safeNow;
+    questionBehaviorTelemetry.focusLossCount++;
+    if(Number.isFinite(questionBehaviorTelemetry.pendingCopyToBlurAt)){
+        questionBehaviorTelemetry.timeCopyToBlurMs = Math.max(0, safeNow - questionBehaviorTelemetry.pendingCopyToBlurAt);
+        questionBehaviorTelemetry.pendingCopyToBlurAt = null;
+    }
+}
+
+function markQuestionFocusRegained(now = Date.now()){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending || !Number.isFinite(questionBehaviorTelemetry.unfocusedStartedAt)) return;
+    const safeNow = Math.max(questionBehaviorTelemetry.unfocusedStartedAt, Number(now) || 0);
+    questionBehaviorTelemetry.accumulatedUnfocusedMs += Math.max(0, safeNow - questionBehaviorTelemetry.unfocusedStartedAt);
+    questionBehaviorTelemetry.unfocusedStartedAt = null;
+    questionBehaviorTelemetry.lastFocusAt = safeNow;
+    questionBehaviorTelemetry.hasRefocused = true;
+}
+
+function selectedCharactersWithinRange(range, root){
+    if(!range || !root || typeof range.intersectsNode !== "function") return 0;
+    try {
+        if(!range.intersectsNode(root)) return 0;
+        const relevantRange = range.cloneRange();
+        const rootRange = document.createRange();
+        rootRange.selectNodeContents(root);
+        if(relevantRange.compareBoundaryPoints(Range.START_TO_START, rootRange) < 0){
+            relevantRange.setStart(rootRange.startContainer, rootRange.startOffset);
+        }
+        if(relevantRange.compareBoundaryPoints(Range.END_TO_END, rootRange) > 0){
+            relevantRange.setEnd(rootRange.endContainer, rootRange.endOffset);
+        }
+        return Math.max(0, String(relevantRange.toString()).trim().length);
+    } catch(error){
+        return 0;
+    }
+}
+
+function getRelevantSelectionSummary(selection = window.getSelection?.()){
+    const summary = {characterCount:0,question:false,answers:false};
+    if(!selection || selection.isCollapsed || selection.rangeCount < 1) return summary;
+    const questionRoot = document.getElementById("question");
+    const answersRoot = document.getElementById("answers");
+    for(let index = 0; index < selection.rangeCount; index++){
+        const range = selection.getRangeAt(index);
+        const questionCharacters = selectedCharactersWithinRange(range, questionRoot);
+        const answerCharacters = selectedCharactersWithinRange(range, answersRoot);
+        if(questionCharacters > 0) summary.question = true;
+        if(answerCharacters > 0) summary.answers = true;
+        summary.characterCount += questionCharacters + answerCharacters;
+    }
+    return summary;
+}
+
+function recordMeaningfulQuestionSelection(summary = getRelevantSelectionSummary()){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending || !summary || summary.characterCount < 1) return false;
+    questionBehaviorTelemetry.selectionCount++;
+    questionBehaviorTelemetry.maxSelectedChars = Math.max(questionBehaviorTelemetry.maxSelectedChars, summary.characterCount);
+    questionBehaviorTelemetry.questionSelected ||= !!summary.question;
+    questionBehaviorTelemetry.answersSelected ||= !!summary.answers;
+    return true;
+}
+
+function scheduleQuestionSelectionTelemetry(){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending) return;
+    clearQuestionSelectionDebounce();
+    const scheduledGeneration = questionBehaviorGeneration;
+    questionSelectionDebounceTimer = setTimeout(() => {
+        questionSelectionDebounceTimer = null;
+        if(scheduledGeneration !== questionBehaviorGeneration) return;
+        recordMeaningfulQuestionSelection();
+    }, 250);
+}
+
+function flushQuestionSelectionTelemetry(){
+    if(questionSelectionDebounceTimer === null) return;
+    clearQuestionSelectionDebounce();
+    recordMeaningfulQuestionSelection();
+}
+
+function recordRelevantQuestionCopy(now = Date.now(), summary = getRelevantSelectionSummary()){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending || !summary || summary.characterCount < 1) return false;
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    questionBehaviorTelemetry.copyCount++;
+    questionBehaviorTelemetry.questionCopied ||= !!summary.question;
+    questionBehaviorTelemetry.answersCopied ||= !!summary.answers;
+    questionBehaviorTelemetry.lastCopyAt = safeNow;
+    questionBehaviorTelemetry.pendingCopyToHideAt = safeNow;
+    questionBehaviorTelemetry.pendingCopyToBlurAt = safeNow;
+    questionBehaviorTelemetry.timeCopyToHideMs = null;
+    questionBehaviorTelemetry.timeCopyToBlurMs = null;
+    return true;
+}
+
+function getQuestionBehaviorTelemetry(now = Date.now()){
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    const responseTimeMs = Math.max(0, safeNow - questionStartTime);
+    const openUnfocusedMs = Number.isFinite(questionBehaviorTelemetry.unfocusedStartedAt)
+        ? Math.max(0, safeNow - questionBehaviorTelemetry.unfocusedStartedAt)
+        : 0;
+    const unfocusedTimeMs = Math.min(
+        responseTimeMs,
+        Math.max(0, questionBehaviorTelemetry.accumulatedUnfocusedMs + openUnfocusedMs)
+    );
+    const timeAfterFocusMs = questionBehaviorTelemetry.hasRefocused
+        && !Number.isFinite(questionBehaviorTelemetry.unfocusedStartedAt)
+        && Number.isFinite(questionBehaviorTelemetry.lastFocusAt)
+            ? Math.max(0, safeNow - questionBehaviorTelemetry.lastFocusAt)
+            : null;
+    return {
+        focusLossCount:Math.max(0, Math.trunc(Number(questionBehaviorTelemetry.focusLossCount) || 0)),
+        unfocusedTimeMs,
+        timeAfterFocusMs,
+        selectionCount:Math.max(0, Math.trunc(Number(questionBehaviorTelemetry.selectionCount) || 0)),
+        maxSelectedChars:Math.max(0, Math.trunc(Number(questionBehaviorTelemetry.maxSelectedChars) || 0)),
+        questionSelected:questionBehaviorTelemetry.questionSelected ? 1 : 0,
+        answersSelected:questionBehaviorTelemetry.answersSelected ? 1 : 0,
+        copyCount:Math.max(0, Math.trunc(Number(questionBehaviorTelemetry.copyCount) || 0)),
+        questionCopied:questionBehaviorTelemetry.questionCopied ? 1 : 0,
+        answersCopied:questionBehaviorTelemetry.answersCopied ? 1 : 0,
+        lastCopyElapsedMs:Number.isFinite(questionBehaviorTelemetry.lastCopyAt)
+            ? Math.max(0, questionBehaviorTelemetry.lastCopyAt - questionStartTime)
+            : null,
+        timeCopyToHideMs:Number.isFinite(questionBehaviorTelemetry.timeCopyToHideMs)
+            ? Math.max(0, questionBehaviorTelemetry.timeCopyToHideMs)
+            : null,
+        timeCopyToBlurMs:Number.isFinite(questionBehaviorTelemetry.timeCopyToBlurMs)
+            ? Math.max(0, questionBehaviorTelemetry.timeCopyToBlurMs)
+            : null
+    };
+}
+
+function getQuestionBehaviorData(timing = {}){
+    return {
+        focusLossCount:timing.focusLossCount,
+        unfocusedTimeMs:timing.unfocusedTimeMs,
+        timeAfterFocusMs:timing.timeAfterFocusMs,
+        selectionCount:timing.selectionCount,
+        maxSelectedChars:timing.maxSelectedChars,
+        questionSelected:timing.questionSelected,
+        answersSelected:timing.answersSelected,
+        copyCount:timing.copyCount,
+        questionCopied:timing.questionCopied,
+        answersCopied:timing.answersCopied,
+        lastCopyElapsedMs:timing.lastCopyElapsedMs,
+        timeCopyToHideMs:timing.timeCopyToHideMs,
+        timeCopyToBlurMs:timing.timeCopyToBlurMs
+    };
 }
 
 function getMasteryResponseTime(record){
@@ -4465,8 +4664,18 @@ document.addEventListener("visibilitychange", function(){
         reconcileTimedModeClock();
     }
 });
+document.addEventListener("selectionchange", scheduleQuestionSelectionTelemetry);
+document.addEventListener("copy", () => {
+    recordRelevantQuestionCopy();
+});
 window.addEventListener("pageshow", reconcileTimedModeClock);
-window.addEventListener("focus", reconcileTimedModeClock);
+window.addEventListener("blur", () => {
+    markQuestionFocusLost();
+});
+window.addEventListener("focus", () => {
+    markQuestionFocusRegained();
+    reconcileTimedModeClock();
+});
 
 function getSaveKey(){ return `${SAVE_KEY}_${gameMode || "standard"}`; }
 function isBossRoomForMode(r){ if(gameMode === "timed" || gameMode === "quiz" || gameMode === "trialGraph" || gameMode === "fadingFortune" || gameMode === "riskReward" || gameMode === "unlimited") return false; return r === 10 || r === 20 || r === 30; }
@@ -9749,7 +9958,20 @@ function getExamRoomState(roomNumber, create = false){
             totalViewMs:0,
             totalActiveViewMs:0,
             totalHiddenViewMs:0,
-            totalTabSwitchCount:0
+            totalTabSwitchCount:0,
+            totalFocusLossCount:0,
+            totalUnfocusedTimeMs:0,
+            lastTimeAfterFocusMs:null,
+            totalSelectionCount:0,
+            maxSelectedChars:0,
+            questionSelected:false,
+            answersSelected:false,
+            totalCopyCount:0,
+            questionCopied:false,
+            answersCopied:false,
+            lastCopyElapsedMs:null,
+            timeCopyToHideMs:null,
+            timeCopyToBlurMs:null
         };
     }
     return examDrillState.rooms[roomNumber] || null;
@@ -9767,6 +9989,21 @@ function addExamRoomVisibilityTiming(state, timing){
     state.totalActiveViewMs = priorActiveMs + Math.max(0, Number(timing.activeResponseTimeMs || 0));
     state.totalHiddenViewMs = priorHiddenMs + Math.max(0, Number(timing.hiddenTimeMs || 0));
     state.totalTabSwitchCount = Math.max(0, Number(state.totalTabSwitchCount || 0)) + Math.max(0, Number(timing.tabSwitchCount || 0));
+    state.totalFocusLossCount = Math.max(0, Number(state.totalFocusLossCount || 0)) + Math.max(0, Number(timing.focusLossCount || 0));
+    state.totalUnfocusedTimeMs = Math.max(0, Number(state.totalUnfocusedTimeMs || 0)) + Math.max(0, Number(timing.unfocusedTimeMs || 0));
+    if(timing.timeAfterFocusMs !== null && timing.timeAfterFocusMs !== undefined) state.lastTimeAfterFocusMs = Math.max(0, Number(timing.timeAfterFocusMs) || 0);
+    state.totalSelectionCount = Math.max(0, Number(state.totalSelectionCount || 0)) + Math.max(0, Number(timing.selectionCount || 0));
+    state.maxSelectedChars = Math.max(Math.max(0, Number(state.maxSelectedChars || 0)), Math.max(0, Number(timing.maxSelectedChars || 0)));
+    state.questionSelected ||= !!timing.questionSelected;
+    state.answersSelected ||= !!timing.answersSelected;
+    state.totalCopyCount = Math.max(0, Number(state.totalCopyCount || 0)) + Math.max(0, Number(timing.copyCount || 0));
+    state.questionCopied ||= !!timing.questionCopied;
+    state.answersCopied ||= !!timing.answersCopied;
+    if(Number(timing.copyCount || 0) > 0){
+        state.lastCopyElapsedMs = timing.lastCopyElapsedMs;
+        state.timeCopyToHideMs = timing.timeCopyToHideMs;
+        state.timeCopyToBlurMs = timing.timeCopyToBlurMs;
+    }
 }
 
 function isExamSectionComplete(sectionState){
@@ -9899,6 +10136,7 @@ function recordExamDraftAnswer(choice, isCorrect, responseTime){
         hiddenTime:responseTiming.hiddenTimeMs,
         tabSwitchCount:responseTiming.tabSwitchCount,
         timeAfterReturn:responseTiming.timeAfterReturnMs,
+        ...getQuestionBehaviorData(responseTiming),
         examSection:sectionState.index + 1,
         examInitialSelectedIndex:roomState.initialSelectedIndex,examFinalSelectedIndex:choice,
         examRevisionCount:roomState.revisionCount,
@@ -9942,6 +10180,15 @@ function scoreCommittedExamResponse(roomNumber, roomState, sectionState){
         tag:question.tag || "",type:question.type || "",objective:inferObjective(question),
         responseTime,activeResponseTime,hiddenTime,
         tabSwitchCount:Math.max(0, Number(roomState.totalTabSwitchCount || 0)),timeAfterReturn:null,
+        focusLossCount:Math.max(0, Number(roomState.totalFocusLossCount || 0)),
+        unfocusedTimeMs:Math.max(0, Number(roomState.totalUnfocusedTimeMs || 0)),
+        timeAfterFocusMs:roomState.lastTimeAfterFocusMs,
+        selectionCount:Math.max(0, Number(roomState.totalSelectionCount || 0)),
+        maxSelectedChars:Math.max(0, Number(roomState.maxSelectedChars || 0)),
+        questionSelected:roomState.questionSelected ? 1 : 0,answersSelected:roomState.answersSelected ? 1 : 0,
+        copyCount:Math.max(0, Number(roomState.totalCopyCount || 0)),
+        questionCopied:roomState.questionCopied ? 1 : 0,answersCopied:roomState.answersCopied ? 1 : 0,
+        lastCopyElapsedMs:roomState.lastCopyElapsedMs,timeCopyToHideMs:roomState.timeCopyToHideMs,timeCopyToBlurMs:roomState.timeCopyToBlurMs,
         attempt:totalAttempts,streak,elapsedTime:getElapsedTimeMs(),adaptiveMode:"exam-commit",
         examSection:sectionState.index + 1,examInitialSelectedIndex:roomState.initialSelectedIndex,
         examFinalSelectedIndex:roomState.selectedIndex,examRevisionCount:roomState.revisionCount,
@@ -10946,6 +11193,7 @@ async function answer(choice) {
     if(currentQuestionAssistance && currentQuestionAssistance.questionId !== (currentQuestion?.id || 0)) currentQuestionAssistance = null;
     if(modeUsesRiskReward() && (!riskRewardWagerLocked || !riskRewardQuestionRevealed || riskRewardWagerSettled)) return;
 
+    flushQuestionSelectionTelemetry();
     answerSubmissionPending = true;
     freezeFadingFortuneForAnswerCheck();
     setAnswerButtonsDisabled(true);
@@ -11031,6 +11279,7 @@ if(showImmediateFeedback && rapidGuess.triggered && !rapidGuessLocked){
         hiddenTime: responseTiming.hiddenTimeMs,
         tabSwitchCount: responseTiming.tabSwitchCount,
         timeAfterReturn: responseTiming.timeAfterReturnMs,
+        ...getQuestionBehaviorData(responseTiming),
         attempt: totalAttempts ?? 0,
         streak: streak ?? 0,
         elapsedTime: getElapsedTimeMs(),
@@ -11141,6 +11390,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
         hiddenTime: responseTiming.hiddenTimeMs,
         tabSwitchCount: responseTiming.tabSwitchCount,
         timeAfterReturn: responseTiming.timeAfterReturnMs,
+        ...getQuestionBehaviorData(responseTiming),
 	    attempt: totalAttempts ?? 0,
 		streak: streak ?? 0,
 	    elapsedTime: getElapsedTimeMs(),
@@ -13379,13 +13629,16 @@ Generated by Mastery Quests`;
 // =============================================
 const TELEMETRY_PREFIX = `${STORAGE_PREFIX}:telemetry:`;
 const LATEST_TELEMETRY_RUN_KEY = `${STORAGE_PREFIX}:telemetry:latestRun`;
-const TELEMETRY_VERSION = "faculty-local-v3";
+const TELEMETRY_VERSION = "faculty-local-v4";
 const GAME_VERSION = "Faculty-Blank-2026.08.24-phase1.5";
 const TELEMETRY_COLUMNS = [
     "eventID","timestamp","telemetryVersion","gameVersion","runID","game","mode","event",
     "room","questionID","questionVersion","difficulty","selectedIndex","correct",
     "rapidGuessing","tag","type","objective","responseTimeMs","activeResponseTimeMs",
-    "hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","attempt","streak",
+    "hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","focusLossCount","unfocusedTimeMs",
+    "timeAfterFocusMs","selectionCount","maxSelectedChars","questionSelected","answersSelected",
+    "copyCount","questionCopied","answersCopied","lastCopyElapsedMs","timeCopyToHideMs",
+    "timeCopyToBlurMs","attempt","streak",
     "elapsedTimeMs","adaptiveMode","remediationStage","priorExposureCount",
     "firstExposure","score","bestScore","totalTimeMs","accuracy","maxStreak",
     "totalAttempts","verificationCode","fadingFortuneScore","fadingFortuneQuestionValue",
@@ -13475,6 +13728,27 @@ function sendGameData(data = {}){
             tabSwitchCount:isResponseEvent ? Math.max(0, Math.trunc(Number(data.tabSwitchCount ?? 0) || 0)) : 0,
             timeAfterReturnMs:isResponseEvent && (data.timeAfterReturn ?? data.timeAfterReturnMs) !== null && (data.timeAfterReturn ?? data.timeAfterReturnMs) !== undefined
                 ? Math.max(0, Number(data.timeAfterReturn ?? data.timeAfterReturnMs ?? 0) || 0)
+                : "",
+            focusLossCount:isResponseEvent ? Math.max(0, Math.trunc(Number(data.focusLossCount ?? 0) || 0)) : 0,
+            unfocusedTimeMs:isResponseEvent ? Math.min(responseTimeMs, Math.max(0, Number(data.unfocusedTimeMs ?? 0) || 0)) : 0,
+            timeAfterFocusMs:isResponseEvent && data.timeAfterFocusMs !== null && data.timeAfterFocusMs !== undefined
+                ? Math.min(responseTimeMs, Math.max(0, Number(data.timeAfterFocusMs) || 0))
+                : "",
+            selectionCount:isResponseEvent ? Math.max(0, Math.trunc(Number(data.selectionCount ?? 0) || 0)) : 0,
+            maxSelectedChars:isResponseEvent ? Math.max(0, Math.trunc(Number(data.maxSelectedChars ?? 0) || 0)) : 0,
+            questionSelected:isResponseEvent && Number(data.questionSelected ?? 0) ? 1 : 0,
+            answersSelected:isResponseEvent && Number(data.answersSelected ?? 0) ? 1 : 0,
+            copyCount:isResponseEvent ? Math.max(0, Math.trunc(Number(data.copyCount ?? 0) || 0)) : 0,
+            questionCopied:isResponseEvent && Number(data.questionCopied ?? 0) ? 1 : 0,
+            answersCopied:isResponseEvent && Number(data.answersCopied ?? 0) ? 1 : 0,
+            lastCopyElapsedMs:isResponseEvent && data.lastCopyElapsedMs !== null && data.lastCopyElapsedMs !== undefined
+                ? Math.min(responseTimeMs, Math.max(0, Number(data.lastCopyElapsedMs) || 0))
+                : "",
+            timeCopyToHideMs:isResponseEvent && data.timeCopyToHideMs !== null && data.timeCopyToHideMs !== undefined
+                ? Math.min(responseTimeMs, Math.max(0, Number(data.timeCopyToHideMs) || 0))
+                : "",
+            timeCopyToBlurMs:isResponseEvent && data.timeCopyToBlurMs !== null && data.timeCopyToBlurMs !== undefined
+                ? Math.min(responseTimeMs, Math.max(0, Number(data.timeCopyToBlurMs) || 0))
                 : "",
             attempt: Number(data.attempt ?? 0),
             streak: Number(data.streak ?? 0),
@@ -14121,8 +14395,11 @@ startGame = function(shouldResume = false, ...args){
 
 const phase15BaseResetRunState = resetRunStateForNewMode;
 resetRunStateForNewMode = function(...args){
+    clearQuestionSelectionDebounce();
+    questionBehaviorGeneration++;
     questionStartTime = 0;
     questionVisibilityTiming = createQuestionVisibilityTimingState();
+    questionBehaviorTelemetry = createQuestionBehaviorTelemetryState();
     accumulatedElapsedMs = 0;
     startTime = null;
     finalElapsedTimeMs = null;

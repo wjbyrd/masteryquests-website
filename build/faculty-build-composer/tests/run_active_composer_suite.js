@@ -16,6 +16,7 @@ const ACTIVE_RUNNERS = [
   'run_phase1_targeted_repair_validation.js',
   'run_phase15_production_hardening_validation.js',
   'run_visibility_aware_telemetry_validation.js',
+  'run_generated_telemetry_smoke.js',
   'run_phase3a_official_theme_validation.js',
   'run_phase3b_custom_asset_validation.js',
   'run_phase3e_graph_question_sync_validation.mjs',
