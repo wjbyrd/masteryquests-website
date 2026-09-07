@@ -1,0 +1,1618 @@
+{
+  "engine": "Microsoft Edge / Playwright",
+  "pageErrors": [],
+  "revisedRecordsVerified": 82,
+  "allRevisedRecordsPresent": true,
+  "graphChecks": [
+    {
+      "id": "PG1-DMD-E-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gourmet donuts in thousands and the vertical axis is price of gourmet donuts. A downward-sloping demand curve runs from about price $14 at quantity 0 to quantity 350 thousand at price $0. Point A is at quantity 100 thousand and price $10. Point B is at quantity 225 thousand and price $5.",
+      "source": [
+        "data:image/webp;base64,UklGRozDAABXRUJQVlA4IIDDAADQqwOdASpABrAEPh0OhkKhBCKbEAQAcS0t39a/zD9nO69s37V9+R+DabXnP7t/AP4B2QMtfoB/APcC/AP5H+qv9o2N8AH8A/i36sf8TtAPQn+AfgB8AH83/znok5geQDxy/"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-E-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. D0 is the original demand curve and D1 is a parallel curve to its right. At price $10, D0 shows quantity 50 thousand and D1 shows quantity 125 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 225 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRobjAABXRUJQVlA4IHrjAACw2wOdASpABrAEPh0OhkKhBCqZEQQAcS0t38pf689q+z/hv1+7YvatxT6Z+CP8A9wL8A/gH6Kas/m/oA/gH8D/Vn1n47f0f/WewB5emZn9v9AHg8ep/Vv+f/8n9He4D+Mf3"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-E-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tea in thousands and the vertical axis is price of tea. D0 is the original demand curve and D1 is a parallel curve to its left. At price $4, D0 shows quantity 200 thousand and D1 shows quantity 100 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 50 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtK/AABXRUJQVlA4IMa/AADwnAOdASpABrAEPh0OhkKhBCKtEAQAcS0t38w+pG7hugeYB/AP8thhXjLuS3zb/h7l3kpas5zfUU87iKXGcbQ7//9Q/rgHV98wL8A8wD1jeRL5A9A3+yfv32gHQ/QL/6+ge"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-E-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. A single upward-sloping supply curve is shown. Point A is at quantity 100 thousand and price $6. Point B is at quantity 225 thousand and price $11. At price $8 the curve passes through quantity 150 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRjSzAABXRUJQVlA4ICizAACwggOdASpABrAEPh0OhkKhBB6nDwQAcS0t38wGo56ZhANeBHoaAbADnh/8nqTGwPHdNj3Y4P67II//2BfzTC/+YF+AdMfyef8n8v9Ar+dfv/rTku/b/75+zH9b//H3aQE5d"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-E-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of hamburgers in thousands and the vertical axis is price of hamburgers. S0 is the original supply curve and S1 is a parallel curve to its left and above. At price $9, S0 shows quantity 200 thousand and S1 shows quantity 100 thousand. At price $13, S0 shows quantity 300 thousand and S1 shows quantity 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRkLqAABXRUJQVlA4IDbqAAAw9wOdASpABrAEPh0OhkKhBC61EQQAcSzt3/qP1Xsf6nY2Yu0c/gZ2tlo9rTPJ0NLet6inxcUgmesM3wih//6gnC/+YF+AdL3x7/9nkZ6k47P3X+4f3X/b/4L/8/+H7w4F6"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-E-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tacos in thousands and the vertical axis is price of tacos. S0 is the original upward-sloping supply curve; S1 is a parallel curve below and to the right. Point A on S0 is at quantity 100 thousand and price $3. Point B on S0 is at quantity 225 thousand and price $4. At price $3, S1 shows quantity 225 thousand. At price $2, S1 shows quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRo6+AABXRUJQVlA4IIK+AADwfgOdASpABrAEPh0OhkKhBC4nEQQAcS0t3v8rocoDzpsWS8Gz4/Oa89Zo1hedP/+oA561z/5gX4B01fLl/6ZBFN/6j/Bfur6fcm96flv9V/Vz+l/+7/N/OFTX6D/Uv0Z/V"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-E-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtLqAABXRUJQVlA4IMbqAACwrAOdASpABrAEPh0OhkKhBDKlEAQAcSzt38ov7AazrnP6x+Ll2AeafYB/AOQVgD9AP4B7gX4B/AP0A/hfpY+AfwD+Afod7C/4f6AegJ1F7AHlrZn+QDx+fyH5a9T/6z/yP"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-E-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. D1 is parallel and right of D0; S1 is parallel and left of S0. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRt4UAQBXRUJQVlA4INIUAQDw1AOdASpABrAEPh0OhkKhBD7LEgQAcSzt38uWoNdLuvE9mJf0A/gHsAfwD9Df415i/gH8A/hH6Aesqwb9mevz9M8wH8c/m/4NbG94GvXW1tYfhTO/+AN/75iPnzXA+l1mA"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-E-028",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-E-029",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-E-031",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-E-032",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-E-033",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-E-034",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-E-035",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-E-038",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-E-039",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-167",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/demand/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-M-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gourmet donuts in thousands and the vertical axis is price of gourmet donuts. A downward-sloping demand curve runs from about price $14 at quantity 0 to quantity 350 thousand at price $0. Point A is at quantity 100 thousand and price $10. Point B is at quantity 225 thousand and price $5.",
+      "source": [
+        "data:image/webp;base64,UklGRozDAABXRUJQVlA4IIDDAADQqwOdASpABrAEPh0OhkKhBCKbEAQAcS0t39a/zD9nO69s37V9+R+DabXnP7t/AP4B2QMtfoB/APcC/AP5H+qv9o2N8AH8A/i36sf8TtAPQn+AfgB8AH83/znok5geQDxy/"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-M-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gourmet donuts in thousands and the vertical axis is price of gourmet donuts. A downward-sloping demand curve runs from about price $14 at quantity 0 to quantity 350 thousand at price $0. Point A is at quantity 100 thousand and price $10. Point B is at quantity 225 thousand and price $5.",
+      "source": [
+        "data:image/webp;base64,UklGRozDAABXRUJQVlA4IIDDAADQqwOdASpABrAEPh0OhkKhBCKbEAQAcS0t39a/zD9nO69s37V9+R+DabXnP7t/AP4B2QMtfoB/APcC/AP5H+qv9o2N8AH8A/i36sf8TtAPQn+AfgB8AH83/znok5geQDxy/"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-M-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. D0 is the original demand curve and D1 is a parallel curve to its right. At price $10, D0 shows quantity 50 thousand and D1 shows quantity 125 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 225 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRobjAABXRUJQVlA4IHrjAACw2wOdASpABrAEPh0OhkKhBCqZEQQAcS0t38pf689q+z/hv1+7YvatxT6Z+CP8A9wL8A/gH6Kas/m/oA/gH8D/Vn1n47f0f/WewB5emZn9v9AHg8ep/Vv+f/8n9He4D+Mf3"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-M-004",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. D0 is the original demand curve and D1 is a parallel curve to its right. At price $10, D0 shows quantity 50 thousand and D1 shows quantity 125 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 225 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRobjAABXRUJQVlA4IHrjAACw2wOdASpABrAEPh0OhkKhBCqZEQQAcS0t38pf689q+z/hv1+7YvatxT6Z+CP8A9wL8A/gH6Kas/m/oA/gH8D/Vn1n47f0f/WewB5emZn9v9AHg8ep/Vv+f/8n9He4D+Mf3"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-M-005",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tea in thousands and the vertical axis is price of tea. D0 is the original demand curve and D1 is a parallel curve to its left. At price $4, D0 shows quantity 200 thousand and D1 shows quantity 100 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 50 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtK/AABXRUJQVlA4IMa/AADwnAOdASpABrAEPh0OhkKhBCKtEAQAcS0t38w+pG7hugeYB/AP8thhXjLuS3zb/h7l3kpas5zfUU87iKXGcbQ7//9Q/rgHV98wL8A8wD1jeRL5A9A3+yfv32gHQ/QL/6+ge"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-M-006",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tea in thousands and the vertical axis is price of tea. D0 is the original demand curve and D1 is a parallel curve to its left. At price $4, D0 shows quantity 200 thousand and D1 shows quantity 100 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 50 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtK/AABXRUJQVlA4IMa/AADwnAOdASpABrAEPh0OhkKhBCKtEAQAcS0t38w+pG7hugeYB/AP8thhXjLuS3zb/h7l3kpas5zfUU87iKXGcbQ7//9Q/rgHV98wL8A8wD1jeRL5A9A3+yfv32gHQ/QL/6+ge"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40009",
+      "zoomOK": true,
+      "description": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+      "source": [
+        "data:image/webp;base64,UklGRq4eAQBXRUJQVlA4IKIeAQCwDgSdASpABrAEPhkMhUIhBDavGQQAYSzt38qv9A9P1pNSG/0SkR8Tz9O/8zzgj0Xo3/kPsd9Un5x/ufKA1dkwVuDWF308wD0IsQnxj0AP4B6qMwB6//MC/APMA4vzzAP4L"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-166",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/supply/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-M-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. A single upward-sloping supply curve is shown. Point A is at quantity 100 thousand and price $6. Point B is at quantity 225 thousand and price $11. At price $8 the curve passes through quantity 150 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRjSzAABXRUJQVlA4ICizAACwggOdASpABrAEPh0OhkKhBB6nDwQAcS0t38wGo56ZhANeBHoaAbADnh/8nqTGwPHdNj3Y4P67II//2BfzTC/+YF+AdMfyef8n8v9Ar+dfv/rTku/b/75+zH9b//H3aQE5d"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-M-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. A single upward-sloping supply curve is shown. Point A is at quantity 100 thousand and price $6. Point B is at quantity 225 thousand and price $11. At price $8 the curve passes through quantity 150 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRjSzAABXRUJQVlA4ICizAACwggOdASpABrAEPh0OhkKhBB6nDwQAcS0t38wGo56ZhANeBHoaAbADnh/8nqTGwPHdNj3Y4P67II//2BfzTC/+YF+AdMfyef8n8v9Ar+dfv/rTku/b/75+zH9b//H3aQE5d"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-M-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of hamburgers in thousands and the vertical axis is price of hamburgers. S0 is the original supply curve and S1 is a parallel curve to its left and above. At price $9, S0 shows quantity 200 thousand and S1 shows quantity 100 thousand. At price $13, S0 shows quantity 300 thousand and S1 shows quantity 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRkLqAABXRUJQVlA4IDbqAAAw9wOdASpABrAEPh0OhkKhBC61EQQAcSzt3/qP1Xsf6nY2Yu0c/gZ2tlo9rTPJ0NLet6inxcUgmesM3wih//6gnC/+YF+AdL3x7/9nkZ6k47P3X+4f3X/b/4L/8/+H7w4F6"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-M-004",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of hamburgers in thousands and the vertical axis is price of hamburgers. S0 is the original supply curve and S1 is a parallel curve to its left and above. At price $9, S0 shows quantity 200 thousand and S1 shows quantity 100 thousand. At price $13, S0 shows quantity 300 thousand and S1 shows quantity 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRkLqAABXRUJQVlA4IDbqAAAw9wOdASpABrAEPh0OhkKhBC61EQQAcSzt3/qP1Xsf6nY2Yu0c/gZ2tlo9rTPJ0NLet6inxcUgmesM3wih//6gnC/+YF+AdL3x7/9nkZ6k47P3X+4f3X/b/4L/8/+H7w4F6"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-M-005",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tacos in thousands and the vertical axis is price of tacos. S0 is the original upward-sloping supply curve; S1 is a parallel curve below and to the right. Point A on S0 is at quantity 100 thousand and price $3. Point B on S0 is at quantity 225 thousand and price $4. At price $3, S1 shows quantity 225 thousand. At price $2, S1 shows quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRo6+AABXRUJQVlA4IIK+AADwfgOdASpABrAEPh0OhkKhBC4nEQQAcS0t3v8rocoDzpsWS8Gz4/Oa89Zo1hedP/+oA561z/5gX4B01fLl/6ZBFN/6j/Bfur6fcm96flv9V/Vz+l/+7/N/OFTX6D/Uv0Z/V"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-M-006",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tacos in thousands and the vertical axis is price of tacos. S0 is the original upward-sloping supply curve; S1 is a parallel curve below and to the right. Point A on S0 is at quantity 100 thousand and price $3. Point B on S0 is at quantity 225 thousand and price $4. At price $3, S1 shows quantity 225 thousand. At price $2, S1 shows quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRo6+AABXRUJQVlA4IIK+AADwfgOdASpABrAEPh0OhkKhBC4nEQQAcS0t3v8rocoDzpsWS8Gz4/Oa89Zo1hedP/+oA561z/5gX4B01fLl/6ZBFN/6j/Bfur6fcm96flv9V/Vz+l/+7/N/OFTX6D/Uv0Z/V"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40006",
+      "zoomOK": true,
+      "description": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+      "source": [
+        "data:image/webp;base64,UklGRh4hAQBXRUJQVlA4IBIhAQDQ/gOdASpABrAEPhkMhUIhBDavFwQAYSzt38vP9m9H27e0qsPAA/lv+S/gFKfrJRJP+B9oHqt/MPMZ+t2rvcHrR/4TCtQ3//v67nv5Bzsp4D+AeYB63PKv8QegJ/If381mH"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-160",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-161",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-162",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-163",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-164",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-165",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-168",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-170",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve intersect at price $30 and quantity 200. Dashed guides also show demand and supply quantities at prices $10, $20, $40, and $50: at $10, supply is 100 and demand is 300; at $20, supply is 150 and demand is 250; at $40, supply is 250 and demand is 150; at $50, supply is 300 and demand is 100.",
+      "source": [
+        "data:image/webp;base64,UklGRv5uAQBXRUJQVlA4WAoAAAAQAAAAdggAxwYAQUxQSMgAAAABDzD/ERFCQdtGzjE/6Edh/HBE/ycgHpbVjMl//Md//Md//Md//Md//Md//Md//Md//Md//Md//Md//Md//Md//Md//Md//Md//Md//Md//"
+      ],
+      "questionImage": "question-assets/market-equilibrium/ceilingfloor.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-M-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtLqAABXRUJQVlA4IMbqAACwrAOdASpABrAEPh0OhkKhBDKlEAQAcSzt38ov7AazrnP6x+Ll2AeafYB/AOQVgD9AP4B7gX4B/AP0A/hfpY+AfwD+Afod7C/4f6AegJ1F7AHlrZn+QDx+fyH5a9T/6z/yP"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-M-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtLqAABXRUJQVlA4IMbqAACwrAOdASpABrAEPh0OhkKhBDKlEAQAcSzt38ov7AazrnP6x+Ll2AeafYB/AOQVgD9AP4B7gX4B/AP0A/hfpY+AfwD+Afod7C/4f6AegJ1F7AHlrZn+QDx+fyH5a9T/6z/yP"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-M-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. D1 is parallel and right of D0; S1 is parallel and left of S0. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRt4UAQBXRUJQVlA4INIUAQDw1AOdASpABrAEPh0OhkKhBD7LEgQAcSzt38uWoNdLuvE9mJf0A/gHsAfwD9Df415i/gH8A/hH6Aesqwb9mevz9M8wH8c/m/4NbG94GvXW1tYfhTO/+AN/75iPnzXA+l1mA"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-M-004",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. D1 is parallel and right of D0; S1 is parallel and left of S0. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRt4UAQBXRUJQVlA4INIUAQDw1AOdASpABrAEPh0OhkKhBD7LEgQAcSzt38uWoNdLuvE9mJf0A/gHsAfwD9Df415i/gH8A/hH6Aesqwb9mevz9M8wH8c/m/4NbG94GvXW1tYfhTO/+AN/75iPnzXA+l1mA"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-008",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-028",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-034",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-035",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-036",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-037",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Demand curve D1 is horizontal at price 5, while demand curve D2 is vertical at quantity 50. They cross at labeled point A, quantity 50 and price 5. Point B is on D2 at quantity 50 and price 7.",
+      "source": [
+        "data:image/webp;base64,UklGRlhyAABXRUJQVlA4IExyAADQAgOdASpABrAEPh0OhkKhEEgsZhoIAOJaW77Md88/+Eyz9UDM/5f9nj6D/UPxfcfHB+hogn/+7CzHfwDp4ecYfOH38yPU9m/3j+R/wn+I/3f+K/dH6HOUe8L2h4Y/sX/W/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-038",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-039",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-031",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-032",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-M-033",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-HARD-261",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/demand/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-HARD-262",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/demand/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-H-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gourmet donuts in thousands and the vertical axis is price of gourmet donuts. A downward-sloping demand curve runs from about price $14 at quantity 0 to quantity 350 thousand at price $0. Point A is at quantity 100 thousand and price $10. Point B is at quantity 225 thousand and price $5.",
+      "source": [
+        "data:image/webp;base64,UklGRozDAABXRUJQVlA4IIDDAADQqwOdASpABrAEPh0OhkKhBCKbEAQAcS0t39a/zD9nO69s37V9+R+DabXnP7t/AP4B2QMtfoB/APcC/AP5H+qv9o2N8AH8A/i36sf8TtAPQn+AfgB8AH83/znok5geQDxy/"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-H-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. D0 is the original demand curve and D1 is a parallel curve to its right. At price $10, D0 shows quantity 50 thousand and D1 shows quantity 125 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 225 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRobjAABXRUJQVlA4IHrjAACw2wOdASpABrAEPh0OhkKhBCqZEQQAcS0t38pf689q+z/hv1+7YvatxT6Z+CP8A9wL8A/gH6Kas/m/oA/gH8D/Vn1n47f0f/WewB5emZn9v9AHg8ep/Vv+f/8n9He4D+Mf3"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-H-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tea in thousands and the vertical axis is price of tea. D0 is the original demand curve and D1 is a parallel curve to its left. At price $4, D0 shows quantity 200 thousand and D1 shows quantity 100 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 50 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtK/AABXRUJQVlA4IMa/AADwnAOdASpABrAEPh0OhkKhBCKtEAQAcS0t38w+pG7hugeYB/AP8thhXjLuS3zb/h7l3kpas5zfUU87iKXGcbQ7//9Q/rgHV98wL8A8wD1jeRL5A9A3+yfv32gHQ/QL/6+ge"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40010",
+      "zoomOK": true,
+      "description": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+      "source": [
+        "data:image/webp;base64,UklGRq4eAQBXRUJQVlA4IKIeAQCwDgSdASpABrAEPhkMhUIhBDavGQQAYSzt38qv9A9P1pNSG/0SkR8Tz9O/8zzgj0Xo3/kPsd9Un5x/ufKA1dkwVuDWF308wD0IsQnxj0AP4B6qMwB6//MC/APMA4vzzAP4L"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-HARD-263",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/supply/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-H-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. A single upward-sloping supply curve is shown. Point A is at quantity 100 thousand and price $6. Point B is at quantity 225 thousand and price $11. At price $8 the curve passes through quantity 150 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRjSzAABXRUJQVlA4ICizAACwggOdASpABrAEPh0OhkKhBB6nDwQAcS0t38wGo56ZhANeBHoaAbADnh/8nqTGwPHdNj3Y4P67II//2BfzTC/+YF+AdMfyef8n8v9Ar+dfv/rTku/b/75+zH9b//H3aQE5d"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-H-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of hamburgers in thousands and the vertical axis is price of hamburgers. S0 is the original supply curve and S1 is a parallel curve to its left and above. At price $9, S0 shows quantity 200 thousand and S1 shows quantity 100 thousand. At price $13, S0 shows quantity 300 thousand and S1 shows quantity 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRkLqAABXRUJQVlA4IDbqAAAw9wOdASpABrAEPh0OhkKhBC61EQQAcSzt3/qP1Xsf6nY2Yu0c/gZ2tlo9rTPJ0NLet6inxcUgmesM3wih//6gnC/+YF+AdL3x7/9nkZ6k47P3X+4f3X/b/4L/8/+H7w4F6"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-H-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tacos in thousands and the vertical axis is price of tacos. S0 is the original upward-sloping supply curve; S1 is a parallel curve below and to the right. Point A on S0 is at quantity 100 thousand and price $3. Point B on S0 is at quantity 225 thousand and price $4. At price $3, S1 shows quantity 225 thousand. At price $2, S1 shows quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRo6+AABXRUJQVlA4IIK+AADwfgOdASpABrAEPh0OhkKhBC4nEQQAcS0t3v8rocoDzpsWS8Gz4/Oa89Zo1hedP/+oA561z/5gX4B01fLl/6ZBFN/6j/Bfur6fcm96flv9V/Vz+l/+7/N/OFTX6D/Uv0Z/V"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40007",
+      "zoomOK": true,
+      "description": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+      "source": [
+        "data:image/webp;base64,UklGRh4hAQBXRUJQVlA4IBIhAQDQ/gOdASpABrAEPhkMhUIhBDavFwQAYSzt38vP9m9H27e0qsPAA/lv+S/gFKfrJRJP+B9oHqt/MPMZ+t2rvcHrR/4TCtQ3//v67nv5Bzsp4D+AeYB63PKv8QegJ/If381mH"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-HARD-258",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-HARD-259",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-HARD-260",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-HARD-264",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-HARD-265",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-H-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtLqAABXRUJQVlA4IMbqAACwrAOdASpABrAEPh0OhkKhBDKlEAQAcSzt38ov7AazrnP6x+Ll2AeafYB/AOQVgD9AP4B7gX4B/AP0A/hfpY+AfwD+Afod7C/4f6AegJ1F7AHlrZn+QDx+fyH5a9T/6z/yP"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-H-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. D1 is parallel and right of D0; S1 is parallel and left of S0. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRt4UAQBXRUJQVlA4INIUAQDw1AOdASpABrAEPh0OhkKhBD7LEgQAcSzt38uWoNdLuvE9mJf0A/gHsAfwD9Df415i/gH8A/hH6Aesqwb9mevz9M8wH8c/m/4NbG94GvXW1tYfhTO/+AN/75iPnzXA+l1mA"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40012",
+      "zoomOK": true,
+      "description": "Price of movie tickets is in dollars vertically; quantity is in thousands horizontally. Downward-sloping D0 starts at price $18 and D1 at $22. Upward-sloping S0 starts at $2 and S1 at $6. A is the D0/S0 intersection at quantity 200 and price $10. B is the D1/S1 intersection at quantity 200 and price $14.",
+      "source": [
+        "data:image/webp;base64,UklGRjpRAQBXRUJQVlA4IC5RAQAwMwSdASpABrAEPhkMhUIhBEa1GQQAYSzt38zv9m9J1s3vjN/vANeABHWBB2vIgN1eD1262jrDOWf/+/t0QuMB5H0njn/zAvwDpa+M3/58wD+Gfv3rE2O/a/s/9s/aj+7//"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40015",
+      "zoomOK": true,
+      "description": "The gasoline market has price in dollars vertically and quantity in thousands of gallons per day horizontally. D1 is right of D0 and S1 is left of S0. Intersections are A at D0-S1, quantity 150 and price 5; B at D1-S1, quantity 200 and price 6; C at D1-S0, quantity 250 and price 5; and D at D0-S0, quantity 200 and price 4.",
+      "source": [
+        "data:image/webp;base64,UklGRtQ9AQBXRUJQVlA4IMg9AQBw/wOdASpABrAEPhkMhUIhBEa/FQQAYSzt38tP6Naqvx36LfAfwA/i3+j/gGIAfwD9C/f+sO8gQaT8zeqv9F/1XoA/pP9b/ADY3uY1tP+LnTrD/laF1dw14PAMwA9evkAc7"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-06.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40018",
+      "zoomOK": true,
+      "description": "The taco market has price on the vertical axis and quantity on the horizontal axis. D0 and D1 slope downward, with D1 to the right of D0. S0 and S1 slope upward, with S1 to the left of S0. Point D is the D0-S0 intersection, A is D0-S1, C is D1-S0, and B is D1-S1.",
+      "source": [
+        "data:image/webp;base64,UklGRoIRAQBXRUJQVlA4IHYRAQBQmQOdASpABrAEPhkMhUIhBDq9EQQAYSzt38p36YZMH6T+9b0B/AP4b/m/5bigP4P/FP044QQoDyBCMP5b81+jP8o/0/6n9wH88/sv4MbG9039c2Ka2/rDOrf/fAG/u8wD0"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-H-016",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-H-031",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-H-032",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-H-033",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-H-034",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-H-035",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-H-036",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-H-037",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-H-039",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-EL-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gourmet donuts in thousands and the vertical axis is price of gourmet donuts. A downward-sloping demand curve runs from about price $14 at quantity 0 to quantity 350 thousand at price $0. Point A is at quantity 100 thousand and price $10. Point B is at quantity 225 thousand and price $5.",
+      "source": [
+        "data:image/webp;base64,UklGRozDAABXRUJQVlA4IIDDAADQqwOdASpABrAEPh0OhkKhBCKbEAQAcS0t39a/zD9nO69s37V9+R+DabXnP7t/AP4B2QMtfoB/APcC/AP5H+qv9o2N8AH8A/i36sf8TtAPQn+AfgB8AH83/znok5geQDxy/"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-EL-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. D0 is the original demand curve and D1 is a parallel curve to its right. At price $10, D0 shows quantity 50 thousand and D1 shows quantity 125 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 225 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRobjAABXRUJQVlA4IHrjAACw2wOdASpABrAEPh0OhkKhBCqZEQQAcS0t38pf689q+z/hv1+7YvatxT6Z+CP8A9wL8A/gH6Kas/m/oA/gH8D/Vn1n47f0f/WewB5emZn9v9AHg8ep/Vv+f/8n9He4D+Mf3"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-EL-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tea in thousands and the vertical axis is price of tea. D0 is the original demand curve and D1 is a parallel curve to its left. At price $4, D0 shows quantity 200 thousand and D1 shows quantity 100 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 50 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtK/AABXRUJQVlA4IMa/AADwnAOdASpABrAEPh0OhkKhBCKtEAQAcS0t38w+pG7hugeYB/AP8thhXjLuS3zb/h7l3kpas5zfUU87iKXGcbQ7//9Q/rgHV98wL8A8wD1jeRL5A9A3+yfv32gHQ/QL/6+ge"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40011",
+      "zoomOK": true,
+      "description": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. S0 is an upward-sloping supply curve. D0 and D1 are downward-sloping demand curves, with D1 lying to the right of D0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D1-S0 intersection at quantity 250 and price $12.",
+      "source": [
+        "data:image/webp;base64,UklGRq4eAQBXRUJQVlA4IKIeAQCwDgSdASpABrAEPhkMhUIhBDavGQQAYSzt38qv9A9P1pNSG/0SkR8Tz9O/8zzgj0Xo3/kPsd9Un5x/ufKA1dkwVuDWF308wD0IsQnxj0AP4B6qMwB6//MC/APMA4vzzAP4L"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-EL-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. A single upward-sloping supply curve is shown. Point A is at quantity 100 thousand and price $6. Point B is at quantity 225 thousand and price $11. At price $8 the curve passes through quantity 150 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRjSzAABXRUJQVlA4ICizAACwggOdASpABrAEPh0OhkKhBB6nDwQAcS0t38wGo56ZhANeBHoaAbADnh/8nqTGwPHdNj3Y4P67II//2BfzTC/+YF+AdMfyef8n8v9Ar+dfv/rTku/b/75+zH9b//H3aQE5d"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-EL-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of hamburgers in thousands and the vertical axis is price of hamburgers. S0 is the original supply curve and S1 is a parallel curve to its left and above. At price $9, S0 shows quantity 200 thousand and S1 shows quantity 100 thousand. At price $13, S0 shows quantity 300 thousand and S1 shows quantity 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRkLqAABXRUJQVlA4IDbqAAAw9wOdASpABrAEPh0OhkKhBC61EQQAcSzt3/qP1Xsf6nY2Yu0c/gZ2tlo9rTPJ0NLet6inxcUgmesM3wih//6gnC/+YF+AdL3x7/9nkZ6k47P3X+4f3X/b/4L/8/+H7w4F6"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-EL-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tacos in thousands and the vertical axis is price of tacos. S0 is the original upward-sloping supply curve; S1 is a parallel curve below and to the right. Point A on S0 is at quantity 100 thousand and price $3. Point B on S0 is at quantity 225 thousand and price $4. At price $3, S1 shows quantity 225 thousand. At price $2, S1 shows quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRo6+AABXRUJQVlA4IIK+AADwfgOdASpABrAEPh0OhkKhBC4nEQQAcS0t3v8rocoDzpsWS8Gz4/Oa89Zo1hedP/+oA561z/5gX4B01fLl/6ZBFN/6j/Bfur6fcm96flv9V/Vz+l/+7/N/OFTX6D/Uv0Z/V"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40008",
+      "zoomOK": true,
+      "description": "The movie-ticket market has price in dollars on the vertical axis and quantity in thousands on the horizontal axis. D0 is a downward-sloping demand curve. S0 and S1 are upward-sloping supply curves, with S1 lying to the left of S0 at each displayed price. Point A is the D0-S0 intersection at quantity 200 and price $10. Point B is the D0-S1 intersection at quantity 150 and price $12.",
+      "source": [
+        "data:image/webp;base64,UklGRh4hAQBXRUJQVlA4IBIhAQDQ/gOdASpABrAEPhkMhUIhBDavFwQAYSzt38vP9m9H27e0qsPAA/lv+S/gFKfrJRJP+B9oHqt/MPMZ+t2rvcHrR/4TCtQ3//v67nv5Bzsp4D+AeYB63PKv8QegJ/If381mH"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-EL-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtLqAABXRUJQVlA4IMbqAACwrAOdASpABrAEPh0OhkKhBDKlEAQAcSzt38ov7AazrnP6x+Ll2AeafYB/AOQVgD9AP4B7gX4B/AP0A/hfpY+AfwD+Afod7C/4f6AegJ1F7AHlrZn+QDx+fyH5a9T/6z/yP"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-EL-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. D1 is parallel and right of D0; S1 is parallel and left of S0. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRt4UAQBXRUJQVlA4INIUAQDw1AOdASpABrAEPh0OhkKhBD7LEgQAcSzt38uWoNdLuvE9mJf0A/gHsAfwD9Df415i/gH8A/hH6Aesqwb9mevz9M8wH8c/m/4NbG94GvXW1tYfhTO/+AN/75iPnzXA+l1mA"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40013",
+      "zoomOK": true,
+      "description": "Price of movie tickets is in dollars vertically; quantity is in thousands horizontally. Downward-sloping D0 starts at price $18 and D1 at $22. Upward-sloping S0 starts at $2 and S1 at $6. A is the D0/S0 intersection at quantity 200 and price $10. B is the D1/S1 intersection at quantity 200 and price $14.",
+      "source": [
+        "data:image/webp;base64,UklGRjpRAQBXRUJQVlA4IC5RAQAwMwSdASpABrAEPhkMhUIhBEa1GQQAYSzt38zv9m9J1s3vjN/vANeABHWBB2vIgN1eD1262jrDOWf/+/t0QuMB5H0njn/zAvwDpa+M3/58wD+Gfv3rE2O/a/s/9s/aj+7//"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40016",
+      "zoomOK": true,
+      "description": "The gasoline market has price in dollars vertically and quantity in thousands of gallons per day horizontally. D1 is right of D0 and S1 is left of S0. Intersections are A at D0-S1, quantity 150 and price 5; B at D1-S1, quantity 200 and price 6; C at D1-S0, quantity 250 and price 5; and D at D0-S0, quantity 200 and price 4.",
+      "source": [
+        "data:image/webp;base64,UklGRtQ9AQBXRUJQVlA4IMg9AQBw/wOdASpABrAEPhkMhUIhBEa/FQQAYSzt38tP6Naqvx36LfAfwA/i3+j/gGIAfwD9C/f+sO8gQaT8zeqv9F/1XoA/pP9b/ADY3uY1tP+LnTrD/laF1dw14PAMwA9evkAc7"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-06.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40017",
+      "zoomOK": true,
+      "description": "The gasoline market has price in dollars vertically and quantity in thousands of gallons per day horizontally. D1 is right of D0 and S1 is left of S0. Intersections are A at D0-S1, quantity 150 and price 5; B at D1-S1, quantity 200 and price 6; C at D1-S0, quantity 250 and price 5; and D at D0-S0, quantity 200 and price 4.",
+      "source": [
+        "data:image/webp;base64,UklGRtQ9AQBXRUJQVlA4IMg9AQBw/wOdASpABrAEPhkMhUIhBEa/FQQAYSzt38tP6Naqvx36LfAfwA/i3+j/gGIAfwD9C/f+sO8gQaT8zeqv9F/1XoA/pP9b/ADY3uY1tP+LnTrD/laF1dw14PAMwA9evkAc7"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-06.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40019",
+      "zoomOK": true,
+      "description": "The taco market has price on the vertical axis and quantity on the horizontal axis. D0 and D1 slope downward, with D1 to the right of D0. S0 and S1 slope upward, with S1 to the left of S0. Point D is the D0-S0 intersection, A is D0-S1, C is D1-S0, and B is D1-S1.",
+      "source": [
+        "data:image/webp;base64,UklGRoIRAQBXRUJQVlA4IHYRAQBQmQOdASpABrAEPhkMhUIhBDq9EQQAYSzt38p36YZMH6T+9b0B/AP4b/m/5bigP4P/FP044QQoDyBCMP5b81+jP8o/0/6n9wH88/sv4MbG9039c2Ka2/rDOrf/fAG/u8wD0"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40020",
+      "zoomOK": true,
+      "description": "The taco market has price on the vertical axis and quantity on the horizontal axis. D0 and D1 slope downward, with D1 to the right of D0. S0 and S1 slope upward, with S1 to the left of S0. Point D is the D0-S0 intersection, A is D0-S1, C is D1-S0, and B is D1-S1.",
+      "source": [
+        "data:image/webp;base64,UklGRoIRAQBXRUJQVlA4IHYRAQBQmQOdASpABrAEPhkMhUIhBDq9EQQAYSzt38p36YZMH6T+9b0B/AP4b/m/5bigP4P/FP044QQoDyBCMP5b81+jP8o/0/6n9wH88/sv4MbG9039c2Ka2/rDOrf/fAG/u8wD0"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-EL-037",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-EL-038",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-EL-031",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-EL-032",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-EL-033",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-EL-034",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-EL-035",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9017",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/demand/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-L-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gourmet donuts in thousands and the vertical axis is price of gourmet donuts. A downward-sloping demand curve runs from about price $14 at quantity 0 to quantity 350 thousand at price $0. Point A is at quantity 100 thousand and price $10. Point B is at quantity 225 thousand and price $5.",
+      "source": [
+        "data:image/webp;base64,UklGRozDAABXRUJQVlA4IIDDAADQqwOdASpABrAEPh0OhkKhBCKbEAQAcS0t39a/zD9nO69s37V9+R+DabXnP7t/AP4B2QMtfoB/APcC/AP5H+qv9o2N8AH8A/i36sf8TtAPQn+AfgB8AH83/znok5geQDxy/"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-L-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. D0 is the original demand curve and D1 is a parallel curve to its right. At price $10, D0 shows quantity 50 thousand and D1 shows quantity 125 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 225 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRobjAABXRUJQVlA4IHrjAACw2wOdASpABrAEPh0OhkKhBCqZEQQAcS0t38pf689q+z/hv1+7YvatxT6Z+CP8A9wL8A/gH6Kas/m/oA/gH8D/Vn1n47f0f/WewB5emZn9v9AHg8ep/Vv+f/8n9He4D+Mf3"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-DMD-L-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tea in thousands and the vertical axis is price of tea. D0 is the original demand curve and D1 is a parallel curve to its left. At price $4, D0 shows quantity 200 thousand and D1 shows quantity 100 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 50 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtK/AABXRUJQVlA4IMa/AADwnAOdASpABrAEPh0OhkKhBCKtEAQAcS0t38w+pG7hugeYB/AP8thhXjLuS3zb/h7l3kpas5zfUU87iKXGcbQ7//9Q/rgHV98wL8A8wD1jeRL5A9A3+yfv32gHQ/QL/6+ge"
+      ],
+      "questionImage": "question-assets/demand/DEMAND-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-L-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. A single upward-sloping supply curve is shown. Point A is at quantity 100 thousand and price $6. Point B is at quantity 225 thousand and price $11. At price $8 the curve passes through quantity 150 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRjSzAABXRUJQVlA4ICizAACwggOdASpABrAEPh0OhkKhBB6nDwQAcS0t38wGo56ZhANeBHoaAbADnh/8nqTGwPHdNj3Y4P67II//2BfzTC/+YF+AdMfyef8n8v9Ar+dfv/rTku/b/75+zH9b//H3aQE5d"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-L-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of hamburgers in thousands and the vertical axis is price of hamburgers. S0 is the original supply curve and S1 is a parallel curve to its left and above. At price $9, S0 shows quantity 200 thousand and S1 shows quantity 100 thousand. At price $13, S0 shows quantity 300 thousand and S1 shows quantity 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRkLqAABXRUJQVlA4IDbqAAAw9wOdASpABrAEPh0OhkKhBC61EQQAcSzt3/qP1Xsf6nY2Yu0c/gZ2tlo9rTPJ0NLet6inxcUgmesM3wih//6gnC/+YF+AdL3x7/9nkZ6k47P3X+4f3X/b/4L/8/+H7w4F6"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-SUP-L-003",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of tacos in thousands and the vertical axis is price of tacos. S0 is the original upward-sloping supply curve; S1 is a parallel curve below and to the right. Point A on S0 is at quantity 100 thousand and price $3. Point B on S0 is at quantity 225 thousand and price $4. At price $3, S1 shows quantity 225 thousand. At price $2, S1 shows quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRo6+AABXRUJQVlA4IIK+AADwfgOdASpABrAEPh0OhkKhBC4nEQQAcS0t3v8rocoDzpsWS8Gz4/Oa89Zo1hedP/+oA561z/5gX4B01fLl/6ZBFN/6j/Bfur6fcm96flv9V/Vz+l/+7/N/OFTX6D/Uv0Z/V"
+      ],
+      "questionImage": "question-assets/supply/SUPPLY-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9015",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9016",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9018",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9019",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2.",
+      "source": [
+        "data:image/webp;base64,UklGRp52AQBXRUJQVlA4WAoAAAAQAAAAWwgAzwYAQUxQSMgAAAABDzD/ERFCQdtGzjE4/miPwvjhiP5PQFydqxOT//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP//iP/"
+      ],
+      "questionImage": "question-assets/market-equilibrium/supplydemand1.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-L-001",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRtLqAABXRUJQVlA4IMbqAACwrAOdASpABrAEPh0OhkKhBDKlEAQAcSzt38ov7AazrnP6x+Ll2AeafYB/AOQVgD9AP4B7gX4B/AP0A/hfpY+AfwD+Afod7C/4f6AegJ1F7AHlrZn+QDx+fyH5a9T/6z/yP"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "PG1-EQ-L-002",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. D1 is parallel and right of D0; S1 is parallel and left of S0. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+      "source": [
+        "data:image/webp;base64,UklGRt4UAQBXRUJQVlA4INIUAQDw1AOdASpABrAEPh0OhkKhBD7LEgQAcSzt38uWoNdLuvE9mJf0A/gHsAfwD9Df415i/gH8A/hH6Aesqwb9mevz9M8wH8c/m/4NbG94GvXW1tYfhTO/+AN/75iPnzXA+l1mA"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "40014",
+      "zoomOK": true,
+      "description": "Price of movie tickets is in dollars vertically; quantity is in thousands horizontally. Downward-sloping D0 starts at price $18 and D1 at $22. Upward-sloping S0 starts at $2 and S1 at $6. A is the D0/S0 intersection at quantity 200 and price $10. B is the D1/S1 intersection at quantity 200 and price $14.",
+      "source": [
+        "data:image/webp;base64,UklGRjpRAQBXRUJQVlA4IC5RAQAwMwSdASpABrAEPhkMhUIhBEa1GQQAYSzt38zv9m9J1s3vjN/vANeABHWBB2vIgN1eD1262jrDOWf/+/t0QuMB5H0njn/zAvwDpa+M3/58wD+Gfv3rE2O/a/s/9s/aj+7//"
+      ],
+      "questionImage": "question-assets/market-equilibrium/DEMAND-SUPPLY-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-L-091",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-L-094",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10.",
+      "source": [
+        "data:image/webp;base64,UklGRkjdAABXRUJQVlA4IDzdAACwYgOdASr0BSEEPh0OhkKhBCaTFwQAcSzt39m/7XJGui3AP75+sXsBfgH8I/WnaLwAfwT+T+dvEE+AbGF/Pzbf+3xwfkP/j9AH8a/w2re9xrp1u3WFHO6y3SqZEXT68gzn/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-02.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-L-096",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Demand curve D1 is horizontal at price 5, while demand curve D2 is vertical at quantity 50. They cross at labeled point A, quantity 50 and price 5. Point B is on D2 at quantity 50 and price 7.",
+      "source": [
+        "data:image/webp;base64,UklGRlhyAABXRUJQVlA4IExyAADQAgOdASpABrAEPh0OhkKhEEgsZhoIAOJaW77Md88/+Eyz9UDM/5f9nj6D/UPxfcfHB+hogn/+7CzHfwDp4ecYfOH38yPU9m/3j+R/wn+I/3f+K/dH6HOUe8L2h4Y/sX/W/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-L-097",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-L-093",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-B1-019",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-B1-020",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Demand curve D1 is horizontal at price 5, while demand curve D2 is vertical at quantity 50. They cross at labeled point A, quantity 50 and price 5. Point B is on D2 at quantity 50 and price 7.",
+      "source": [
+        "data:image/webp;base64,UklGRlhyAABXRUJQVlA4IExyAADQAgOdASpABrAEPh0OhkKhEEgsZhoIAOJaW77Md88/+Eyz9UDM/5f9nj6D/UPxfcfHB+hogn/+7CzHfwDp4ecYfOH38yPU9m/3j+R/wn+I/3f+K/dH6HOUe8L2h4Y/sX/W/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-03.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-B2-020",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-B2-019",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
+      "source": [
+        "data:image/webp;base64,UklGRlCcAABXRUJQVlA4IEScAADwIQOdASoHBlcEPh0OhkKhBB6XEgQAcS0t34Mb/5/ofpLfr13C+Rrf+sP//6QdTquzgDUYC13bjcf87/m/2G/v37T/MryP0yeEO4X7kf5P5l/3L7kfVvzr/b/Vj7tHk35L/"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-01.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    },
+    {
+      "id": "P62B-ELAS-B3-020",
+      "zoomOK": true,
+      "description": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping supply curves are labeled SR supply and LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. The SR curve is steeper and the LR curve is flatter.",
+      "source": [
+        "data:image/webp;base64,UklGRkzrAABXRUJQVlA4IEDrAADwzQOdASpABrAEPh0OhkKhBCJ/FgQAcSzt386Hhszcz50H+t3sBfgH8g1KMQH8A/lXeisWszX4L/3/QB/BP7r+/+vezz+iGxRHCYmdqP/8wVm7/gE9lah+G/un7Mfv/6rMy"
+      ],
+      "questionImage": "question-assets/elasticity/ELAS-05.webp",
+      "embeddedImages": 1,
+      "loaded": true,
+      "text": true
+    }
+  ],
+  "externalRequestsBlocked": true,
+  "scope": "Generated HTML loads; all revised payloads match; all 134 graph questions decode and their click-to-enlarge image opens. This is a content smoke test, not an all-mode playthrough."
+}

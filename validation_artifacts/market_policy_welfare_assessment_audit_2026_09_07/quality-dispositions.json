@@ -1,0 +1,2301 @@
+{
+  "beforeCounts": {
+    "errors": 0,
+    "warnings": 90,
+    "reviews": 158
+  },
+  "afterCounts": {
+    "errors": 0,
+    "warnings": 77,
+    "reviews": 155
+  },
+  "findings": [
+    {
+      "rule": "accessibility-answer-leak",
+      "id": "PG2-CEIL-M-001",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Correct graph accessibility evidence: remove a computed conclusion from the description."
+    },
+    {
+      "rule": "accessibility-answer-leak",
+      "id": "PG2-FLR-L-001",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Upgrade floor-removal graph comparison to employment, imbalance and aggregate earnings."
+    },
+    {
+      "rule": "accessibility-answer-leak",
+      "id": "PG2-FLR-M-001",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Correct graph accessibility evidence: remove a computed conclusion from the description."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-B3-012",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-B3-014",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-BR-003",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-BR-004",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-BR-007",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-BR-010",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-BR-016",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-BR-017",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-BR-019",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-BR-020",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-E-018",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-EL-006",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-EL-012",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-EL-024",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-EL-026",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-H-013",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-H-014",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-H-018",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-H-024",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-H-030",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-L-071",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-L-086",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Upgrade a verbal demand-change reminder into equilibrium reconstruction and comparative welfare."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-L-089",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-LB-029",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-M-018",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-R-001",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-R-005",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-R-007",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "P62C-CPS-R-011",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "PMA-CPS-E-010",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "answer-length-outlier",
+      "id": "PMS-CPS-BR-022",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "The longer choice states the economically complete claim, especially in explanations and remediation. Retained as a distractor-quality limitation where the alternatives are shorter; no automatic length-only rewrite of otherwise sound questions."
+    },
+    {
+      "rule": "generic-feedback",
+      "id": "P62C-CPS-EL-003",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Replace generic feedback with complete welfare accounting."
+    },
+    {
+      "rule": "generic-feedback",
+      "id": "P62C-CPS-EL-004",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Replace generic feedback with resource-cost reasoning."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "40033",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "40036",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "40039",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "40040",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "40041",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Turn revenue-denominator recognition into a policy comparison on the existing linear graph."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "40045",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "PG2-CEIL-H-001",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "PG2-CEIL-M-002",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "PG2-STX-EL-001",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "PG2-TAX-H-001",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "graph-prompt-missing-cue",
+      "id": "PG2-TAX-M-002",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Add the missing graph cue; numerical answer and assessed skill retained."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-FINALBOSS-4001",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-FINALBOSS-4018",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-266",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-267",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-268",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-269",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-270",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-271",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-272",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-273",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-274",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-275",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-276",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-277",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-278",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-279",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-280",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-281",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-282",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-283",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-HARD-284",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9035",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9036",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9037",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9038",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9039",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9055",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9056",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9057",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9058",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-LEGENDARY-9059",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-171",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-172",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-173",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-174",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-175",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-176",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-177",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-178",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-179",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-180",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-181",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-182",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-183",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-184",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-185",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-186",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-187",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-188",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "image-without-graph-required",
+      "id": "ECON-MG-MEDIUM-189",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Preserve explicit graph eligibility and mode routes as requested. Correct the legacy path while leaving graphRequired unchanged; the image still renders in ordinary modes. This is a retained eligibility exception, not a broken-media claim."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "ECON-MG-EASY-71",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "ECON-MG-EASY-76",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "ECON-MG-ELITE-317",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Clarify that aggregate incidence on continuing trades is not the full welfare loss."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "ECON-MG-MEDIUM-144",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-045",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-046",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-047",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-048",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-049",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-050",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-051",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-052",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-053",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-054",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-055",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-056",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-L-059",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-LB-017",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-LB-018",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-LB-019",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "near-duplicate-stem",
+      "id": "P62C-CPS-LB-020",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain established schedule variants or adjacent-tier practice. No revised stem exactly duplicates another ID. Repetitive schedule families remain an acknowledged upper-tier variety limitation."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "40025",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "40034",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "40042",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "ECON-MG-HARD-246",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "ECON-MG-HARD-272",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "ECON-MG-HARD-273",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "ECON-MG-HARD-280",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "ECON-MG-LEGENDARY-9056",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "ECON-MG-LEGENDARY-9061",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-B3-015",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-B3-016",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-H-007",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Replace equilibrium-only lookup with ordinary Hard welfare calculation and interpretation."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-001",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-003",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-005",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-007",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-009",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-011",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-013",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-015",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-045",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-047",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-049",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-051",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-053",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-055",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-L-057",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-LB-035",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "possible-difficulty-overstatement",
+      "id": "P62C-CPS-LB-036",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Do not equate a short prompt with a wrong tier. Routine graph calculations are legitimate Hard calibration; ranked-value/cost decisions and policy inference can require several steps. Some retained Elite/Legendary recognition items remain lighter than the strongest revised synthesis items; difficulty metadata is preserved."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-001",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-007",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-013",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-020",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-024",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-028",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-033",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-034",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-036",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-037",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-039",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-040",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-042",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-043",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-059",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-060",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-061",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-062",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-063",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-064",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-065",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-066",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-067",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-L-068",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-M-009",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-M-010",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "repeated-feedback",
+      "id": "P62C-CPS-M-013",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "Retain the shared rule explanation for related practice variants. The linked calculations and marginal/allocation applications remain valid; repetition is a residual variety limitation rather than a numerical defect."
+    },
+    {
+      "rule": "stem-answer-redundancy",
+      "id": "ECON-MG-LEGENDARYBOSS-9140",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Replace stem-answer repetition with statutory cash-flow error diagnosis."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "40026",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "40035",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "40046",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Replace an abstract equivalence rule with graphical statutory cash-flow reconciliation."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-BINDING-PRICE-CEILING-6025",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-BINDING-PRICE-FLOOR-6029",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-EASY-75",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-ELITE-303",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-ELITE-319",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-ELITE-320",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-ELITE-324",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-ELITE-326",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-FINALBOSS-4010",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-HARD-236",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-HARD-240",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-HARD-242",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-HARD-246",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-HARD-282",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "reason": "Make statutory equivalence require actual graph prices and quantity."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-HARD-283",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARY-9053",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARY-9056",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARY-9060",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARY-9063",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARY-9065",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARY-9066",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARY-9069",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARY-9074",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARYBOSS-9138",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-LEGENDARYBOSS-9141",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-MEDIUM-143",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-MEDIUM-147",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-MEDIUM-188",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-TAX-EQUIVALENCE-6036",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "ECON-MG-TAX-INCIDENCE-LESS-ELASTIC-SIDE-5024",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-B1-017",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-B1-018",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-B3-013",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-B3-014",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-B3-017",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-BR-004",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-BR-005",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-BR-018",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-E-024",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-EL-002",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-EL-005",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-EL-006",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-EL-028",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-H-007",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-025",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-029",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-046",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-048",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-050",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-052",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-054",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-056",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-058",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-070",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-075",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-L-083",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-LB-010",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-LB-014",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-LB-015",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-LB-030",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-LB-033",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-M-019",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-M-020",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-M-021",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "P62C-CPS-M-022",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMA-CPS-E-007",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMA-CPS-E-012",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMA-CPS-E-023",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMA-CPS-E-037",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMA-CPS-M-041",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMA-CPS-M-042",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMS-CPS-BR-010",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMS-CPS-BR-028",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMS-CPS-R-008",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMS-CPS-R-018",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    },
+    {
+      "rule": "weak-absolute-distractors",
+      "id": "PMS-CPS-R-019",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained-with-rationale",
+      "reason": "An absolute claim can express the precise misconception being tested (all remitters bear the tax, every consumer gains, price alone determines welfare). Revisions remove false universal claims from correct answers; retained alternatives and elementary/remediation practice are not a requirement that every distractor be equally sophisticated."
+    }
+  ],
+  "interpretation": "Heuristic findings are not semantic verdicts. Remaining warnings/reviews are explicitly retained with limitations; this report does not claim a zero-warning bank or uniform Legendary complexity."
+}

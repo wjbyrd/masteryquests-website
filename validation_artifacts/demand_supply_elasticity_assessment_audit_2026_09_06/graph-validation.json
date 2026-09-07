@@ -1,0 +1,2097 @@
+{
+  "graphQuestions": 134,
+  "runtimeAssets": 21,
+  "distinctAssetFamilies": 19,
+  "newAssets": 0,
+  "changedAssetBytes": 0,
+  "pathFixes": 23,
+  "accessibilityAssetRecords": 11,
+  "recordsInheritingAccessibilityUpdates": 71,
+  "contracts": {
+    "supplydemand1.webp": {
+      "intersections": {
+        "D1/S1": [
+          "Q1",
+          "P2"
+        ],
+        "D2/S1": [
+          "Q2",
+          "P3"
+        ],
+        "D1/S2": [
+          "Q2",
+          "P1"
+        ],
+        "D2/S2": [
+          "Q3",
+          "P2"
+        ]
+      },
+      "note": "Ordered P1<P2<P3 and Q1<Q2<Q3; never infer numeric magnitudes."
+    },
+    "ceilingfloor.webp": {
+      "equilibrium": [
+        200,
+        30
+      ],
+      "atPrice": {
+        "10": {
+          "Qs": 100,
+          "Qd": 300
+        },
+        "20": {
+          "Qs": 150,
+          "Qd": 250
+        },
+        "40": {
+          "Qs": 250,
+          "Qd": 150
+        },
+        "50": {
+          "Qs": 300,
+          "Qd": 100
+        }
+      },
+      "note": "Asset filename is historical. Questions here use market imbalance, not legal controls."
+    },
+    "DEMAND-01.webp": {
+      "points": {
+        "A": [
+          100,
+          10
+        ],
+        "B": [
+          225,
+          5
+        ]
+      },
+      "quantityUnit": "thousands",
+      "equation": "P=14-0.04Q"
+    },
+    "DEMAND-02.webp": {
+      "atPrice": {
+        "10": {
+          "D0": 50,
+          "D1": 125
+        },
+        "6": {
+          "D0": 150,
+          "D1": 225
+        }
+      },
+      "quantityUnit": "thousands",
+      "note": "D1 right of D0; gap 75; inverse price slope -0.04."
+    },
+    "DEMAND-03.webp": {
+      "atPrice": {
+        "4": {
+          "D0": 200,
+          "D1": 100
+        },
+        "6": {
+          "D0": 150,
+          "D1": 50
+        }
+      },
+      "quantityUnit": "thousands",
+      "note": "D1 left of D0; gap 100."
+    },
+    "SUPPLY-01.webp": {
+      "points": {
+        "A": [
+          100,
+          6
+        ],
+        "B": [
+          225,
+          11
+        ]
+      },
+      "atPrice": {
+        "8": 150
+      },
+      "quantityUnit": "thousands",
+      "equation": "P=2+0.04Q"
+    },
+    "SUPPLY-02.webp": {
+      "atPrice": {
+        "9": {
+          "S0": 200,
+          "S1": 100
+        },
+        "13": {
+          "S0": 300,
+          "S1": 200
+        }
+      },
+      "quantityUnit": "thousands",
+      "note": "S1 left/up from S0. Two intermediate tick labels lack leading 1; none of the revised tasks depends on those ticks."
+    },
+    "SUPPLY-03.webp": {
+      "points": {
+        "A": [
+          100,
+          3
+        ],
+        "B": [
+          225,
+          4
+        ]
+      },
+      "atPrice": {
+        "3": {
+          "S1": 225
+        },
+        "2": {
+          "S1": 100
+        }
+      },
+      "quantityUnit": "thousands",
+      "note": "Approximate readings, matching wording. Parallel rightward S1 is 125 thousand beyond S0 at a common price."
+    },
+    "DEMAND-SUPPLY-01.webp": {
+      "equilibrium": [
+        150,
+        3
+      ],
+      "atPrice": {
+        "1": {
+          "Qs": 50,
+          "Qd": 250
+        },
+        "2": {
+          "Qs": 100,
+          "Qd": 200
+        },
+        "4": {
+          "Qs": 200,
+          "Qd": 100
+        }
+      },
+      "quantityUnit": "thousand gallons",
+      "equations": {
+        "D0": "P=6-0.02Q",
+        "S0": "P=0.02Q"
+      }
+    },
+    "DEMAND-SUPPLY-02.webp": {
+      "intersections": {
+        "D0/S0": [
+          150,
+          3
+        ],
+        "D1/S0": [
+          200,
+          4
+        ],
+        "D0/S1": [
+          100,
+          4
+        ],
+        "D1/S1": [
+          150,
+          5
+        ]
+      },
+      "quantityUnit": "thousands",
+      "equations": {
+        "D0": "P=6-0.02Q",
+        "D1": "P=8-0.02Q",
+        "S0": "P=0.02Q",
+        "S1": "P=2+0.02Q"
+      }
+    },
+    "DEMAND-SUPPLY-03.webp": {
+      "points": {
+        "A": [
+          200,
+          10
+        ],
+        "B": [
+          150,
+          12
+        ]
+      },
+      "quantityUnit": "thousand movie tickets",
+      "note": "D0 fixed; A on S0, B on leftward S1."
+    },
+    "DEMAND-SUPPLY-04.webp": {
+      "points": {
+        "A": [
+          200,
+          10
+        ],
+        "B": [
+          250,
+          12
+        ]
+      },
+      "quantityUnit": "thousand movie tickets",
+      "note": "S0 fixed; A on D0, B on rightward D1. Revised question uses labeled points, not unlabeled intercepts."
+    },
+    "DEMAND-SUPPLY-05.webp": {
+      "points": {
+        "A": [
+          200,
+          10
+        ],
+        "B": [
+          200,
+          14
+        ]
+      },
+      "quantityUnit": "thousand movie tickets",
+      "note": "A=D0/S0; B=D1/S1. Reverse B-to-A has lower demand and higher supply, lowering price with Q unchanged in this drawing only."
+    },
+    "DEMAND-SUPPLY-06.webp": {
+      "points": {
+        "A": [
+          150,
+          5
+        ],
+        "B": [
+          200,
+          6
+        ],
+        "C": [
+          250,
+          5
+        ],
+        "D": [
+          200,
+          4
+        ]
+      },
+      "quantityUnit": "thousand gallons/day",
+      "note": "A=D0/S1; B=D1/S1; C=D1/S0; D=D0/S0. Demand-first D-C-B, supply-first D-A-B."
+    },
+    "DEMAND-SUPPLY-07.webp": {
+      "intersections": {
+        "A": "D0/S1",
+        "B": "D1/S1",
+        "C": "D1/S0",
+        "D": "D0/S0"
+      },
+      "note": "Qualitative only: B above D at equal quantity; A left and C right of D, both between D and B in price."
+    },
+    "ELAS-01.webp": {
+      "points": {
+        "A": [
+          90,
+          4
+        ],
+        "B": [
+          60,
+          8
+        ],
+        "C": [
+          30,
+          12
+        ]
+      },
+      "equation": "Q=120-7.5P",
+      "note": "C-B midpoint PED=5/3, B-A=3/5, C-A=1. Revenues 360,480,360; B is the maximum."
+    },
+    "ELAS-02.webp": {
+      "points": {
+        "A": [
+          95,
+          6
+        ],
+        "B": [
+          45,
+          10
+        ],
+        "C": [
+          55,
+          6
+        ],
+        "D": [
+          35,
+          10
+        ]
+      },
+      "note": "A,B on D1; C,D on D2. PED D1=10/7 and D2=8/9. Price cut revenue D1 450 to570; D2 350 to330."
+    },
+    "ELAS-03.webp": {
+      "points": {
+        "A": [
+          50,
+          5
+        ],
+        "B": [
+          50,
+          7
+        ]
+      },
+      "note": "D1 horizontal at5, infinite elasticity; D2 vertical at50, zero elasticity. A-B on D2 has revenue250 to350."
+    },
+    "ELAS-05.webp": {
+      "points": {
+        "originOfComparison": [
+          60,
+          4
+        ],
+        "A": [
+          70,
+          8
+        ],
+        "B": [
+          100,
+          8
+        ]
+      },
+      "note": "A on SR, B on LR. Midpoint PES 3/13 and3/4; ratio13/4. LR is more elastic, but both coefficients below1 for this interval."
+    }
+  },
+  "questionChecks": [
+    {
+      "id": "PG1-DMD-E-001",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-01.webp",
+      "correctChoice": "$10 and 100 thousand donuts",
+      "feedback": "At point A, the demand curve pairs a price of $10 with a quantity demanded of 100 thousand donuts.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-E-002",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-02.webp",
+      "correctChoice": "An increase in demand",
+      "feedback": "D1 lies to the right of D0, showing that consumers demand more coffee at each common price.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-E-003",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-03.webp",
+      "correctChoice": "A decrease in demand",
+      "feedback": "D1 lies to the left of D0, showing that consumers demand less tea at each common price.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-167",
+      "concept": "demand",
+      "image": "question-assets/demand/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "From P1, Q2 to P2, Q3 along S2, showing demand shifts right from D1 to D2",
+      "feedback": "Higher income raises demand for a normal good. With supply fixed at S2, the equilibrium moves along S2 from D1/S2 at P1, Q2 to D2/S2 at P2, Q3.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-M-001",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-01.webp",
+      "correctChoice": "Price falls, causing an increase in quantity demanded along D.",
+      "feedback": "A and B lie on the same demand curve. The lower price is associated with a larger quantity demanded, so this is a movement along demand, not a shift.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-M-002",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-01.webp",
+      "correctChoice": "An increase of 125 thousand donuts",
+      "feedback": "Quantity demanded rises from 100 thousand at A to 225 thousand at B, an increase of 125 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-M-003",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-02.webp",
+      "correctChoice": "It increases from 50 thousand to 125 thousand",
+      "feedback": "At $10, D0 shows 50 thousand units and D1 shows 125 thousand, so quantity demanded at that price rises by 75 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-M-004",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-02.webp",
+      "correctChoice": "Consumer income rises",
+      "feedback": "For a normal good, higher income increases demand, shifting the entire demand curve to the right.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-M-005",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-03.webp",
+      "correctChoice": "It decreases from 200 thousand to 100 thousand",
+      "feedback": "At $4, D0 shows 200 thousand units while D1 shows 100 thousand, a decrease of 100 thousand at the same price.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-M-006",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-03.webp",
+      "correctChoice": "Consumer income falls",
+      "feedback": "For a normal good, lower income decreases demand and shifts the entire demand curve left.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40009",
+      "concept": "demand",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-04.webp",
+      "correctChoice": "Demand increases, raising price and quantity",
+      "feedback": "Demand shifts right; price rises from 10 to 12 and quantity rises from 200 to 250 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-HARD-261",
+      "concept": "demand",
+      "image": "question-assets/demand/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Demand shifts right; equilibrium moves from P2, Q1 to P3, Q2, so both price and quantity rise",
+      "feedback": "The higher substitute price increases demand. With supply fixed at S1, the graph moves from the D1/S1 intersection at P2, Q1 to the D2/S1 intersection at P3, Q2.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-HARD-262",
+      "concept": "demand",
+      "image": "question-assets/demand/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Demand shifts left; equilibrium moves from P2, Q3 to P1, Q2, reducing both price and quantity",
+      "feedback": "A cheaper substitute reduces demand for this good. With S2 unchanged, the equilibrium moves from D2/S2 at P2, Q3 to D1/S2 at P1, Q2.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-H-001",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-01.webp",
+      "correctChoice": "Quantity demanded rises 25 thousand per $1 decrease, illustrating movement along a downward-sloping demand curve",
+      "feedback": "From A to B, price falls $5 and quantity demanded rises 125 thousand, or 25 thousand per dollar. Because the good's own price changes, this is movement along the demand curve, not a curve shift.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-H-002",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-02.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-02.webp",
+      "correctChoice": "Higher consumer income; 75 thousand more units demanded at that price.",
+      "feedback": "At $6, D0 shows 150 thousand and D1 shows 225 thousand: a 75-thousand increase at the same price. Higher income shifts demand right for a normal good; an own-price fall moves along a curve, and a cheaper substitute shifts demand left.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-H-003",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-03.webp",
+      "correctChoice": "Demand decreases by 100 thousand units at each shown price, indicating a leftward curve shift",
+      "feedback": "At both $4 and $6, D1 lies 100 thousand units left of D0. A repeated horizontal difference at fixed prices identifies a decrease in demand rather than movement along one curve.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40010",
+      "concept": "demand",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-04.webp",
+      "correctChoice": "Streaming subscriptions become more expensive, increasing demand for movie tickets.",
+      "feedback": "A lies on D0 and S0; B lies on D1 and S0. Demand has increased while supply stays fixed. A higher substitute price can cause that shift; the higher ticket price is a result, not a demand shifter.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-EL-001",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-01.webp",
+      "correctChoice": "Quantity demanded rises 125 thousand; demand is unchanged.",
+      "feedback": "A change in the good's own price causes a movement along a fixed demand curve. Quantity demanded rises from 100 thousand to 225 thousand, but demand does not shift.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-EL-002",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-02.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-02.webp",
+      "correctChoice": "Demand increased, yet final quantity is 25 thousand below the starting quantity.",
+      "feedback": "The initial quantity is 150 thousand and the final quantity is 125 thousand. D1 is right of D0, but movement up the new demand curve offsets more than the 75-thousand rightward shift.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-EL-003",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-03.webp",
+      "correctChoice": "The shift to D1 lowers quantity at each price; moving down D1 then raises quantity to 100 thousand, only partly offsetting the shift",
+      "feedback": "At $6, shifting from D0 to D1 reduces quantity demanded. The later price decline produces movement down D1 to 100 thousand, but that movement does not fully undo the demand decrease.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40011",
+      "concept": "demand",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-04.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-04.webp",
+      "correctChoice": "Demand shifts D0 to D1, and equilibrium moves upward along S0",
+      "feedback": "Demand changes curves; the higher equilibrium is also a movement along unchanged supply.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9017",
+      "concept": "demand",
+      "image": "question-assets/demand/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "D1 to D2 is a demand shift; movement along D1 is a quantity demanded change",
+      "feedback": "A non-price determinant shifts demand; a price change causes movement along a demand curve.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-L-001",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-01.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-01.webp",
+      "correctChoice": "The report confuses movement with a shift; quantity rises 125 thousand because price is lower.",
+      "feedback": "A and B are on the same demand curve, at 100 and 225 thousand. The unchanged fixed-price schedule rules out a taste-driven demand shift. The graph shows an increase in quantity demanded caused by a lower price.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-L-002",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-02.webp",
+      "correctChoice": "50→125 from the demand shift; 125→225 from the price fall.",
+      "feedback": "At $10 the shift from D0 to D1 raises quantity demanded from 50 to 125 thousand. Moving down D1 from $10 to $6 raises it again from 125 to 225 thousand, for a total increase of 175 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-DMD-L-003",
+      "concept": "demand",
+      "image": "question-assets/demand/DEMAND-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-03.webp",
+      "correctChoice": "150→50 from the demand shift; 50→100 from the price fall.",
+      "feedback": "At $6, D0 shows 150 thousand and D1 shows 50 thousand. Moving down D1 to $4 raises quantity demanded to 100 thousand. Final quantity remains 50 thousand below the starting level.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-E-001",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "SUPPLY-01.webp",
+      "correctChoice": "$6 and 100 thousand units",
+      "feedback": "At point A, the supply curve pairs a price of $6 with a quantity supplied of 100 thousand units.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-E-002",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-02.webp",
+      "correctChoice": "A decrease in supply",
+      "feedback": "S1 lies to the left and above S0, showing less quantity supplied at each common price.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-E-003",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-03.webp",
+      "correctChoice": "An increase in supply",
+      "feedback": "S1 lies below and to the right of S0, showing more quantity supplied at each common price.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-166",
+      "concept": "supply",
+      "image": "question-assets/supply/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "A rightward shift in supply",
+      "feedback": "The move from D1 with S1 to D1 with S2 lowers price and raises quantity, which matches an increase in supply.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-M-001",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "SUPPLY-01.webp",
+      "correctChoice": "Price rises, causing quantity supplied to increase along S.",
+      "feedback": "A and B lie on the same supply curve. The higher price is associated with a larger quantity supplied, so this is a movement along supply, not a shift.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-M-002",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "SUPPLY-01.webp",
+      "correctChoice": "An increase of 125 thousand units",
+      "feedback": "Quantity supplied rises from 100 thousand at A to 225 thousand at B, an increase of 125 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-M-003",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-02.webp",
+      "correctChoice": "It decreases from 200 thousand to 100 thousand",
+      "feedback": "At $9, S0 shows 200 thousand units while S1 shows 100 thousand, a decrease of 100 thousand at the same price.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-M-004",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-02.webp",
+      "correctChoice": "The price of a major meat input rises",
+      "feedback": "Higher input costs reduce supply, shifting the supply curve left.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-M-005",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-03.webp",
+      "correctChoice": "An increase in quantity supplied because the price is higher.",
+      "feedback": "A and B lie on the same S0 curve. Price rises from $3 to $4 and quantity supplied rises from 100 thousand to 225 thousand, so this is a movement along supply.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-M-006",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-03.webp",
+      "correctChoice": "225 thousand",
+      "feedback": "At $3, point A on S0 is 100 thousand, while S1 crosses the $3 line at about 225 thousand. Supply therefore increases by about 125 thousand units at that price.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40006",
+      "concept": "supply",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-03.webp",
+      "correctChoice": "Supply decreases, raising price and reducing quantity",
+      "feedback": "Supply shifts left; price rises from 10 to 12 and quantity falls from 200 to 150 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-HARD-263",
+      "concept": "supply",
+      "image": "question-assets/supply/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "From P3, Q2 to P2, Q3",
+      "feedback": "With demand fixed at D2, moving from S1 to S2 changes equilibrium from P3, Q2 to P2, Q3.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-H-001",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "SUPPLY-01.webp",
+      "correctChoice": "Quantity supplied rises 25 thousand per $1 increase, illustrating movement along an upward-sloping supply curve",
+      "feedback": "From A to B, price rises $5 and quantity supplied rises 125 thousand, or 25 thousand per dollar. Because the product's own price changes, this is movement along supply rather than a curve shift.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-H-002",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-02.webp",
+      "correctChoice": "Higher input costs; 100 thousand fewer units supplied.",
+      "feedback": "At $9, supply falls from 200 thousand on S0 to 100 thousand on S1. Higher input costs can cause this leftward shift. A change in the product’s own price cannot explain different quantities at the same price.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-H-003",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-03.webp",
+      "correctChoice": "A to B is movement along S0; S0 to S1 is an increase in supply",
+      "feedback": "A and B are points on one curve, so their difference is quantity supplied. Moving from S0 to S1 shifts the entire curve and changes supply.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40007",
+      "concept": "supply",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-03.webp",
+      "correctChoice": "Higher theater operating costs shift supply left, raising price and reducing quantity",
+      "feedback": "Higher operating costs reduce supply, shifting it left from S0 to S1. With demand unchanged, the equilibrium moves from A to B: price rises and quantity falls.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-EL-001",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "SUPPLY-01.webp",
+      "correctChoice": "150 thousand units",
+      "feedback": "The supply line passes through quantity 150 thousand at a price of $8.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-EL-002",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-02.webp",
+      "correctChoice": "The shift to S1 lowers quantity at each price; moving up S1 then raises quantity back to 200 thousand",
+      "feedback": "The leftward shift from S0 to S1 reduces quantity supplied at each price. The later price rise causes movement up S1 until quantity supplied returns to 200 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-EL-003",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-03.webp",
+      "correctChoice": "The shift to S1 raises quantity at each price; moving down S1 then lowers quantity back to about 100 thousand",
+      "feedback": "The rightward shift to S1 raises quantity supplied at each price. The later price decline causes movement down S1, offsetting that increase in this particular comparison.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40008",
+      "concept": "supply",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-03.webp",
+      "correctChoice": "Supply itself shifts left from S0 to S1",
+      "feedback": "A quantity-supplied change moves along one curve; here the supply curve itself shifts.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-L-001",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "SUPPLY-01.webp",
+      "correctChoice": "It is more quantity supplied, not an increase in supply.",
+      "feedback": "A change in the good's own price changes quantity supplied along a fixed supply curve. A supply increase would require a rightward shift of the entire curve.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-L-002",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-02.webp",
+      "correctChoice": "$13; a 100-thousand reduction from the supply shift is offset by movement up S1.",
+      "feedback": "S0 at $9 supplies 200 thousand. S1 at $9 supplies 100 thousand; at $13 it supplies 200 thousand. The price increase restores quantity by movement along S1, while the cost-driven shift remains.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-SUP-L-003",
+      "concept": "supply",
+      "image": "question-assets/supply/SUPPLY-03.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "SUPPLY-03.webp",
+      "correctChoice": "About $2; the supply increase is offset by movement down S1.",
+      "feedback": "A is about 100 thousand at $3. On S1 the same quantity is supplied at about $2. At the old $3 price the improvement adds about 125 thousand; the lower price then reduces quantity supplied along S1 by the same amount.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-E-001",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-01.webp",
+      "correctChoice": "$3 per gallon and 150 thousand gallons",
+      "feedback": "D0 and S0 intersect at a price of $3 per gallon and a quantity of 150 thousand gallons.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-E-002",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-SUPPLY-02.webp",
+      "correctChoice": "$3 and 150 thousand units",
+      "feedback": "The original curves D0 and S0 intersect at price $3 and quantity 150 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-160",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Price P1 and Quantity Q2",
+      "feedback": "D1 and S2 intersect at the middle vertical guide and the lowest horizontal guide, which is Price P1 and Quantity Q2.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-161",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Price P2 and Quantity Q1",
+      "feedback": "D1 and S1 intersect at the left vertical guide and the middle horizontal guide, which is Price P2 and Quantity Q1.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-162",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Price P2 and Quantity Q3",
+      "feedback": "D2 and S2 intersect at the right vertical guide and the middle horizontal guide, which is Price P2 and Quantity Q3.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-163",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Equilibrium moves from P2, Q1 to P1, Q2, so price falls and quantity rises",
+      "feedback": "The production improvement shifts supply right to S2. Along unchanged D1, the intersection moves from P2, Q1 to P1, Q2.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-164",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Price rises and quantity rises",
+      "feedback": "Moving from D1 with S2 to D2 with S2 raises equilibrium price from P1 to P2 and raises equilibrium quantity from Q2 to Q3.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-165",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "The same price but a higher quantity",
+      "feedback": "D1 and S1 gives Price P2 and Quantity Q1, while D2 and S2 gives Price P2 and Quantity Q3, so price is the same and quantity is higher.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-168",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Price P2 and Quantity Q3",
+      "feedback": "Starting at D1 and S1 gives P2, Q1. A supply increase moves equilibrium to P1, Q2. Then a demand increase moves equilibrium to P2, Q3.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-MEDIUM-170",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/ceilingfloor.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": false,
+      "contract": "ceilingfloor.webp",
+      "correctChoice": "$30 and 200 units",
+      "feedback": "Equilibrium occurs where supply and demand intersect, which is $30 and 200 units.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-M-001",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-01.webp",
+      "correctChoice": "A shortage of 100 thousand gallons",
+      "feedback": "At $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand, so the shortage is 100 thousand gallons.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-M-002",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-01.webp",
+      "correctChoice": "A surplus of 100 thousand gallons",
+      "feedback": "At $4, quantity supplied is 200 thousand and quantity demanded is 100 thousand, so the surplus is 100 thousand gallons.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-M-003",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-SUPPLY-02.webp",
+      "correctChoice": "Demand increases while supply decreases",
+      "feedback": "D1 is to the right of D0, indicating increased demand. S1 is to the left of S0, indicating decreased supply.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-M-004",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-SUPPLY-02.webp",
+      "correctChoice": "$5 and 150 thousand units",
+      "feedback": "The new curves D1 and S1 intersect at price $5 and quantity 150 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-HARD-258",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Quantity rises for certain; price is generally ambiguous but remains at P2 in this drawing",
+      "feedback": "Both increases raise equilibrium quantity. Their price effects oppose, so theory alone leaves price ambiguous; the displayed intersections show P2 in both the initial and final equilibria.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-HARD-259",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Price rises for certain; quantity is generally ambiguous but stays at Q2 in this drawing",
+      "feedback": "The demand increase and supply decrease both raise price. Their quantity effects oppose; the graph shows those effects offset at Q2 for this particular pair of shifts.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-HARD-260",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Price falls and quantity stays the same",
+      "feedback": "D2/S1 gives P3 and Q2. D1/S2 gives P1 and Q2. Price falls while quantity remains Q2.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-HARD-264",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Quantity rises while price stays the same",
+      "feedback": "The graph shows D1/S1 to D2/S2. Both demand and supply increase, quantity rises, and price remains unchanged.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-HARD-265",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Price rises while quantity stays the same",
+      "feedback": "The graph shows D1/S2 to D2/S1. Demand rises and supply falls, causing price to rise while quantity stays at Q2.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-H-001",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-01.webp",
+      "correctChoice": "A 200-thousand shortage; upward price pressure",
+      "feedback": "Quantity demanded exceeds quantity supplied by 200 thousand gallons. A shortage gives buyers an incentive to bid price upward toward equilibrium.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-H-002",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-SUPPLY-02.webp",
+      "correctChoice": "$4 and 200 thousand units",
+      "feedback": "D1 intersects the unchanged S0 curve at price $4 and quantity 200 thousand. A demand increase alone raises both equilibrium price and quantity.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40012",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-05.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-SUPPLY-05.webp",
+      "correctChoice": "Price rises 4 dollars; quantity stays 200 thousand",
+      "feedback": "The quantity effects offset while price rises from 10 to 14 dollars.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40015",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-06.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-06.webp",
+      "correctChoice": "D to C",
+      "feedback": "D is D0-S0 and C is D1-S0.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40018",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-07.webp",
+      "correctChoice": "A to B",
+      "feedback": "A is D0-S1 and B is D1-S1.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-EL-001",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-01.webp",
+      "correctChoice": "Quantity demanded falls 50 thousand gallons and quantity supplied rises 50 thousand gallons.",
+      "feedback": "At $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. Price rises to the intersection at $3 and 150 thousand. Each side adjusts by 50 thousand along its existing curve.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-EL-002",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-SUPPLY-02.webp",
+      "correctChoice": "Consumer income falls and production becomes cheaper; price falls by $2.",
+      "feedback": "The two intersections have the same quantity, 150 thousand, but prices $5 and $3. D1 to D0 is lower demand, consistent with lower income for a normal good. S1 to S0 is higher supply, consistent with lower cost.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40013",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-05.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-SUPPLY-05.webp",
+      "correctChoice": "Price must rise; quantity is generally ambiguous but unchanged here",
+      "feedback": "Demand up and supply down reinforce price but oppose in quantity.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40016",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-06.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-06.webp",
+      "correctChoice": "Price falls by $2 and quantity stays 200; the two shifts have offsetting quantity effects.",
+      "feedback": "B is at price $6 and quantity 200; D is at $4 and 200. Demand falls and supply increases. Both reduce price, while their opposing quantity effects offset in this graph.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40017",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-06.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-06.webp",
+      "correctChoice": "Demand first takes quantity to C; supply first takes it to A; both paths end at B.",
+      "feedback": "With S0 fixed, D0 to D1 moves the market from D to C. With D0 fixed, S0 to S1 moves it from D to A. The final D1/S1 intersection is B regardless of order; the intermediate quantities differ.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40019",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-07.webp",
+      "correctChoice": "Price rises; quantity is unchanged in the drawing",
+      "feedback": "From D to B, the opposing quantity effects cancel while both shifts raise equilibrium price, so quantity is unchanged and price rises.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40020",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-07.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-07.webp",
+      "correctChoice": "B — the intersection of D1 and S1",
+      "feedback": "Because tacos are a normal good, higher consumer income shifts demand from D0 to D1. The higher input cost shifts supply from S0 to S1. The new D1-S1 equilibrium is point B.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9015",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Demand shifts right, and equilibrium moves along S1 from P2, Q1 to P3, Q2",
+      "feedback": "The taste change shifts the entire demand curve from D1 to D2. Because S1 is fixed, the new intersection is also a movement along S1 to a higher price and quantity.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9016",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Equilibrium moves from P3, Q2 to P2, Q3.",
+      "feedback": "A supply increase shifts supply right from S1 to S2, lowering price and raising quantity.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9018",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Equilibrium moves from P1, Q2 to P2, Q1.",
+      "feedback": "A decrease in supply shifts supply left, raising price and lowering quantity.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9019",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/supplydemand1.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": true,
+      "accessibilityUpdated": true,
+      "contract": "supplydemand1.webp",
+      "correctChoice": "Quantity rises generally; price is ambiguous generally but stays at P2 here as quantity moves from Q1 to Q3",
+      "feedback": "Both shifts raise quantity. Their price effects oppose, so price is indeterminate without magnitudes; this graph supplies those magnitudes and shows the price effects offset at P2.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-L-001",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "DEMAND-SUPPLY-01.webp",
+      "correctChoice": "Shortage at $2 pushes price up; surplus at $4 pushes price down.",
+      "feedback": "A shortage creates upward price pressure and a surplus creates downward pressure. Both adjustment forces point toward the $3 equilibrium.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "PG1-EQ-L-002",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-SUPPLY-02.webp",
+      "correctChoice": "First $4 and 100 thousand, then $3 and 150 thousand; demand falls before supply rises.",
+      "feedback": "The initial D1/S1 intersection is $5 and 150 thousand. Holding S1 fixed, lower demand takes the market to D0/S1 at $4 and 100 thousand. Higher supply then takes it to D0/S0 at $3 and 150 thousand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "40014",
+      "concept": "market-equilibrium",
+      "image": "question-assets/market-equilibrium/DEMAND-SUPPLY-05.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "DEMAND-SUPPLY-05.webp",
+      "correctChoice": "Consistent: demand falls and supply rises; price falls $4 while quantity stays 200 thousand.",
+      "feedback": "Cheaper streaming substitutes reduce movie demand from D1 to D0; lower operating costs increase supply from S1 to S0. B is $14 and A is $10, both at 200 thousand. Opposing quantity effects offset here, though they need not do so in every market.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-E-028",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": null,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "Slope uses units; elasticity compares percentage changes.",
+      "feedback": "Slope measures units of price per unit of quantity and changes when axis units change. Elasticity measures percentage responsiveness; classification also depends on the price and quantity being compared.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-E-029",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": null,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Declines from elastic to unit elastic to inelastic",
+      "feedback": "C lies in the elastic region, B is the unit-elastic midpoint, and A lies in the inelastic region.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-E-031",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "$8 and 60 units",
+      "feedback": "Point B is marked at P = $8 and Q = 60.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-E-032",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Point B",
+      "feedback": "The line runs from P = $16, Q = 0 to P = $0, Q = 120, so its midpoint is P = $8, Q = 60 at B.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-E-033",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Point A",
+      "feedback": "Below the midpoint of a linear demand curve, quantity is relatively large and price relatively small, so demand is inelastic; A is in that region.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-E-034",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "D1, at 45 units",
+      "feedback": "At P = $10, point B on D1 is Q = 45 while point D on D2 is Q = 35.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-E-035",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "D1, at 95 units",
+      "feedback": "At P = $6, D1 is at point A with Q = 95, while D2 is at point C with Q = 55.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-E-038",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "70 units",
+      "feedback": "Point A on the short-run supply curve is Q = 70 at P = $8.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-E-039",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "Long-run supply",
+      "feedback": "Long-run supply reaches Q = 100, compared with Q = 70 in the short run.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-008",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": null,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Decline",
+      "feedback": "The price-to-quantity ratio falls as movement continues down the line, so elasticity declines.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-028",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": null,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Slope is constant on a linear demand curve, but elasticity usually changes along it",
+      "feedback": "Elasticity also depends on the price and quantity at the point.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-031",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "$360",
+      "feedback": "At C, P = $12 and Q = 30, so total revenue is $12 × 30 = $360.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-032",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "$480",
+      "feedback": "At B, P = $8 and Q = 60, so total revenue is $480.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-033",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Demand is elastic",
+      "feedback": "When a price cut raises total revenue, demand is elastic over the interval.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-034",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "50 units",
+      "feedback": "The change is 95 − 45 = 50 units.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-035",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "20 units",
+      "feedback": "The change is 55 − 35 = 20 units.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-036",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "D1",
+      "feedback": "D1 has the much larger proportional quantity response to the same proportional price change.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-037",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-03.webp",
+      "correctChoice": "It remains 50 units",
+      "feedback": "D2 is vertical at Q = 50, so the price change does not alter quantity demanded.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-038",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "10 units",
+      "feedback": "Short-run quantity rises from 60 to 70, a 10-unit increase.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-M-039",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "Producers have more time to adjust capacity and inputs",
+      "feedback": "More adjustment time usually allows firms to expand capacity, enter, switch inputs, and otherwise respond more strongly.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-H-016",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": null,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Percentage bases differ along the curve despite constant slope",
+      "feedback": "Elasticity compares percentage changes, so the price-quantity location matters even when slope is constant.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-H-031",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "About 1.67, elastic; the price cut raises total revenue.",
+      "feedback": "C is P = 12, Q = 30 and B is P = 8, Q = 60. Midpoint elasticity is (30/45)/(4/10) = 1.67. Revenue rises from 360 to 480, so the elastic interval supports the price cut.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-H-032",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "0.60",
+      "feedback": "The percentage quantity change is 30/75 = 40% and the percentage price change is 4/6 ≈ 66.7%, giving elasticity about 0.60.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-H-033",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "1.00",
+      "feedback": "From C to A, quantity changes by 60 around an average of 60 and price changes by 8 around an average of 8, so both percentage changes are 100%.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-H-034",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "The price-to-quantity ratio changes along the curve",
+      "feedback": "For a linear demand curve, point elasticity depends on both the constant slope term and the changing P/Q ratio.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-H-035",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "1.43",
+      "feedback": "The midpoint quantity change is 50/70 ≈ 71.4% and the price change is 4/8 = 50%, so elasticity is about 1.43.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-H-036",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "0.89",
+      "feedback": "The midpoint quantity change is 20/45 ≈ 44.4% and the price change is 4/8 = 50%, so elasticity is about 0.89.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-H-037",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "D1 is elastic and D2 is inelastic",
+      "feedback": "The midpoint coefficients are about 1.43 for D1 and 0.89 for D2.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-H-039",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "0.23",
+      "feedback": "The midpoint quantity change is 10/65 ≈ 15.4% and the price change is 4/6 ≈ 66.7%, giving PES ≈ 0.23.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-EL-031",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Demand is elastic over C–B",
+      "feedback": "A price decrease that raises total revenue signals elastic demand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-EL-032",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Demand is inelastic over B–A",
+      "feedback": "A price decrease that lowers total revenue signals inelastic demand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-EL-033",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Demand is unit elastic",
+      "feedback": "On a linear demand curve, total revenue is maximized at the midpoint, where demand is unit elastic.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-EL-034",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "D1 is elastic over B–A",
+      "feedback": "A price cut that increases total revenue indicates elastic demand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-EL-035",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "D2 is inelastic over D–C",
+      "feedback": "A price cut that reduces total revenue indicates inelastic demand.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-EL-037",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "0.75",
+      "feedback": "The midpoint quantity change is 40/80 = 50% and the price change is 4/6 ≈ 66.7%, giving PES ≈ 0.75.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-EL-038",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "Supply tends to become more elastic over longer time horizons",
+      "feedback": "The larger long-run quantity response illustrates that firms can adjust more fully when given time.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-L-091",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "The percentage-change bases differ across the two intervals",
+      "feedback": "Elasticity depends on percentage changes, so identical absolute changes can produce different elasticities when the average price and quantity bases differ.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "The price at B; revenue rises by 120 while sales remain above the minimum.",
+      "feedback": "A earns 4 × 90 = 360, B earns 8 × 60 = 480, and C earns 12 × 30 = 360. B raises revenue by 120 and sells 60 units. C also fails the 50-unit minimum. The A-to-B interval is inelastic, so the price increase raises revenue.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-L-093",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Move to B: revenue is 480; at A capacity limits revenue to 280.",
+      "feedback": "At B, 60 units are demanded and can be sold, earning 8 × 60 = 480. At A, demand is 90 but only 70 can be sold, earning 4 × 70 = 280. C earns 360. Elasticity describes demand, while a binding sales constraint changes realized revenue.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-L-094",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "Only D1 is above the unit-elastic threshold",
+      "feedback": "Elasticity above one is elastic; 1.43 exceeds one while 0.89 does not.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-02.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-02.webp",
+      "correctChoice": "D1 plausibly has more close substitutes; the price cut raises D1 revenue but lowers D2 revenue.",
+      "feedback": "The midpoint coefficients are about 1.43 for D1 and 0.89 for D2. More substitutes is a plausible explanation for D1’s greater responsiveness, not proof from slope alone. Revenue changes from 450 to 570 on D1 and from 350 to 330 on D2.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-L-096",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-03.webp",
+      "correctChoice": "D1 approaches infinity while D2 equals zero",
+      "feedback": "Perfectly elastic demand is the infinite-elasticity limiting case; perfectly inelastic demand has elasticity zero.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-L-097",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "Short run about 0.23, long run 0.75; 90 units can be supplied only after the longer adjustment.",
+      "feedback": "Starting quantity is 60 at $4. At $8, short-run quantity is 70 and long-run quantity is 100. Midpoint PES is (10/65)/(4/6) ≈ 0.23 and (40/80)/(4/6) = 0.75. Both are inelastic over this interval, but only the long run reaches the 90-unit requirement.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-B1-019",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Total revenue is locally maximized.",
+      "feedback": "At B the linear demand curve is unit elastic and revenue is at its local maximum. A small movement in either direction lowers revenue; the first-order change is zero at the exact maximum.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-B1-020",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-03.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": true,
+      "contract": "ELAS-03.webp",
+      "correctChoice": "D2",
+      "feedback": "D2 is vertical, so quantity does not respond to price and elasticity is zero.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-B2-019",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-01.webp",
+      "graphRequired": true,
+      "contentRevised": true,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-01.webp",
+      "correctChoice": "Revenue rises in the elastic region, peaks at unit elasticity, then falls in the inelastic region",
+      "feedback": "The total-revenue test tracks the shift from elastic demand above the midpoint to unit elasticity at B and inelastic demand below it.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-B2-020",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "Its quantity response is larger",
+      "feedback": "With the same price change and starting point, the long-run curve shows the larger percentage quantity response.",
+      "browserDecodeAndZoom": true
+    },
+    {
+      "id": "P62B-ELAS-B3-020",
+      "concept": "elasticity",
+      "image": "question-assets/elasticity/ELAS-05.webp",
+      "graphRequired": true,
+      "contentRevised": false,
+      "pathRevised": false,
+      "accessibilityUpdated": false,
+      "contract": "ELAS-05.webp",
+      "correctChoice": "Short run 0.23; long run 0.75",
+      "feedback": "The short-run response is about 0.23 and the long-run response about 0.75, so long-run supply is more elastic.",
+      "browserDecodeAndZoom": true
+    }
+  ],
+  "visualInspection": "All 19 distinct graph families inspected visually. Three runtime copies share the legacy supply-demand family. Revised graphical questions have named initial/final observations; numeric answers use the transcribed coordinates, and qualitative axes are not assigned invented numbers.",
+  "limitations": [
+    "SUPPLY-02 has two intermediate quantity labels with missing leading digits; revised tasks use the clear 100/200 quantities and 9/13 prices. Original asset bytes retained.",
+    "Some retained high-tier questions remain simple graph recognition; this is a targeted content pass, not wholesale difficulty relabeling.",
+    "Five existing questions have graph images without graphRequired=true. Images render; existing Trial by Graph eligibility is preserved."
+  ]
+}

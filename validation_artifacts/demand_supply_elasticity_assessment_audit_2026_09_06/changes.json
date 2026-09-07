@@ -1,0 +1,2454 @@
+[
+  {
+    "id": "P52B-COMP-L-001",
+    "concept": "competitive-markets",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.1",
+    "type": "application",
+    "primarySkill": "competitive_market_mechanism",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Improve a thin Legendary pool through comparative evidence and plausible distractors.",
+    "numericProofs": [],
+    "before": {
+      "q": "A commodity exchange publishes prices instantly, products are standardized, and thousands of traders participate. Which mechanism most supports price taking?",
+      "options": [
+        "Each trader has a unique product.",
+        "The exchange blocks entry.",
+        "Any one trader’s order is small relative to total market volume, and other traders offer close substitutes at observable prices.",
+        "Buyers cannot observe alternatives."
+      ],
+      "feedback": "Small market shares, standardization, and transparent alternatives limit individual influence.",
+      "aHash": "623bf62ac19dc064fee98af40a81ddcc45aa2cff05f4e4ba83be807423d77ef7"
+    },
+    "after": {
+      "q": "Two exchanges each list hundreds of sellers of standardized grain. On X, buyers can immediately compare prices and switch suppliers. On Y, contracts impose large switching charges. Which claim best separates seller count from effective competition?",
+      "options": [
+        "An individual seller likely has less pricing discretion on Y because switching charges protect buyer choice.",
+        "The same seller count ensures equal pricing discretion even when switching costs differ.",
+        "An individual seller likely has less pricing discretion on X because buyers can readily use competing offers.",
+        "Standardization gives each seller a unique product, preventing price taking on either exchange."
+      ],
+      "feedback": "Many sellers support competition when buyers can substitute among their offers. Price transparency and low switching costs on X make an individual price increase harder to sustain. Seller count alone does not establish equal competitive pressure.",
+      "aHash": "c7075d0cf91dd6a7ce30d462867d7c15d068fb7306f3d65ea2a484a909d0d6e3"
+    }
+  },
+  {
+    "id": "P52B-COMP-B1-001",
+    "concept": "competitive-markets",
+    "pool": "boss",
+    "difficulty": "easy",
+    "objective": "LO4.1",
+    "type": "application",
+    "primarySkill": "price_taker_application",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace identical generic checkpoint feedback with an explanation of this item’s mechanism.",
+    "numericProofs": [],
+    "before": {
+      "feedback": "Competitive conditions make individual participants price takers."
+    },
+    "after": {
+      "feedback": "A small grain farmer supplies a tiny share of a standardized market. Buyers can turn to other farmers, so this farmer generally accepts the quoted market price."
+    }
+  },
+  {
+    "id": "P52B-COMP-B1-002",
+    "concept": "competitive-markets",
+    "pool": "boss",
+    "difficulty": "easy",
+    "objective": "LO4.1",
+    "type": "application",
+    "primarySkill": "entry_exit_competition",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace identical generic checkpoint feedback with an explanation of this item’s mechanism.",
+    "numericProofs": [],
+    "before": {
+      "feedback": "Competitive conditions make individual participants price takers."
+    },
+    "after": {
+      "feedback": "Entry adds market supply when existing firms earn economic profit. The resulting competitive pressure makes that profit harder to sustain."
+    }
+  },
+  {
+    "id": "P52B-COMP-B1-003",
+    "concept": "competitive-markets",
+    "pool": "boss",
+    "difficulty": "easy",
+    "objective": "LO4.1",
+    "type": "application",
+    "primarySkill": "competitive_market_definition",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace identical generic checkpoint feedback with an explanation of this item’s mechanism.",
+    "numericProofs": [],
+    "before": {
+      "feedback": "Competitive conditions make individual participants price takers."
+    },
+    "after": {
+      "feedback": "With many sellers offering standardized products, buyers can switch to competing offers. An individual seller therefore has little scope to charge above the market price."
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-167",
+    "concept": "demand",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.2",
+    "type": "graph_interpretation",
+    "primarySkill": "demand_shift_direction",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/demand/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-261",
+    "concept": "demand",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.2",
+    "type": "graph_interpretation",
+    "primarySkill": "demand_shift_direction",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/demand/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-262",
+    "concept": "demand",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.2",
+    "type": "graph_interpretation",
+    "primarySkill": "demand_shift_direction",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/demand/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "PG1-DMD-H-002",
+    "concept": "demand",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.2",
+    "type": "calculation",
+    "primarySkill": "demand_shift_analysis",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Hard graph calibration: combine horizontal difference with a determinant.",
+    "numericProofs": [
+      "225-150 == 75"
+    ],
+    "before": {
+      "q": "Refer to the graph. Across the prices shown, by how much is D1 horizontally shifted to the right of D0?",
+      "options": [
+        "25 thousand units",
+        "75 thousand units",
+        "100 thousand units",
+        "125 thousand units"
+      ],
+      "feedback": "For example, at $10 quantity rises from 50 thousand to 125 thousand, and at $6 it rises from 150 thousand to 225 thousand. The horizontal shift is 75 thousand units.",
+      "aHash": "261dc85353149411e1ac10798aa7b6628d41c42f6183969683d879c64f6673dc"
+    },
+    "after": {
+      "q": "Refer to the graph. At $6, compare D0 with D1. If this is a normal good, which change could explain the difference, and how large is it?",
+      "options": [
+        "A fall in the good’s own price; 75 thousand more units demanded at that price.",
+        "Higher consumer income; 75 thousand more units demanded at that price.",
+        "Higher consumer income; 100 thousand more units demanded at that price.",
+        "A cheaper substitute; 75 thousand more units demanded at that price."
+      ],
+      "feedback": "At $6, D0 shows 150 thousand and D1 shows 225 thousand: a 75-thousand increase at the same price. Higher income shifts demand right for a normal good; an own-price fall moves along a curve, and a cheaper substitute shifts demand left.",
+      "aHash": "e2c133264261b8ff313a44aefcdad699e12a2c4aef67e6e0651bff795c15d124"
+    }
+  },
+  {
+    "id": "40010",
+    "concept": "demand",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.2",
+    "type": "graph_integration",
+    "primarySkill": "related_goods_demand",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Hard graph use: remove stated shift so the student must identify it from intersections.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. Streaming subscriptions are substitutes for movie tickets, and demand shifts from D0 to D1 while supply remains S0. Which explanation connects a change in the streaming market to the new movie-ticket equilibrium?",
+      "options": [
+        "A higher streaming-subscription price shifts movie-ticket demand right, raising both equilibrium price and quantity",
+        "A lower streaming-subscription price shifts movie-ticket demand right, raising both equilibrium price and quantity",
+        "Higher theater operating costs shift movie-ticket demand right while leaving supply unchanged",
+        "A higher movie-ticket price shifts demand from D0 to D1 along the unchanged supply curve"
+      ],
+      "feedback": "A higher price for streaming makes movie tickets relatively more attractive. Movie-ticket demand shifts right from D0 to D1; with S0 fixed, equilibrium price and quantity both rise.",
+      "aHash": "0bc49f7fb4aa0dfc00c3cd535dc553c7ff1254f9bf281310143bc61b5b590c15"
+    },
+    "after": {
+      "q": "Refer to the movie-ticket graph. Streaming subscriptions are substitutes for theater visits. With production conditions unchanged, which event could take equilibrium from A to B?",
+      "options": [
+        "Streaming subscriptions become more expensive, increasing demand for movie tickets.",
+        "Streaming subscriptions become cheaper, increasing demand for movie tickets.",
+        "The movie-ticket price rises by itself, shifting demand for movie tickets right.",
+        "Theaters face lower operating costs, shifting supply of movie tickets right."
+      ],
+      "feedback": "A lies on D0 and S0; B lies on D1 and S0. Demand has increased while supply stays fixed. A higher substitute price can cause that shift; the higher ticket price is a result, not a demand shifter.",
+      "aHash": "ae9d69d092c2a1bab5143792d4cc2033efc18725eadd5568949f67d13ef7e40f"
+    }
+  },
+  {
+    "id": "P52B-S3-DEM-EL-001",
+    "concept": "demand",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO4.2",
+    "type": "multi-step",
+    "primarySkill": "multiple_demand_shifters",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Answer uniqueness: replace two true conditional distractors.",
+    "numericProofs": [],
+    "before": {
+      "options": [
+        "The net shift is uncertain because the two effects oppose each other.",
+        "Demand rises if the income effect exceeds the response to the cheaper substitute.",
+        "Demand falls if the substitute-price effect exceeds the income effect.",
+        "Quantity demanded changes along the original curve because both events alter the good's own price."
+      ],
+      "feedback": "Higher income raises demand for a normal good, while a cheaper substitute lowers it. The net shift depends on the relative size of the effects.",
+      "aHash": "9dab15f6bf75cd8294b2724a470c59607fec690e9cbf2cbe55d2de7d94624413"
+    },
+    "after": {
+      "options": [
+        "The net demand shift is uncertain because the two effects oppose each other.",
+        "Demand must rise because income rises for a normal good.",
+        "Demand must fall because the substitute becomes cheaper.",
+        "Demand stays fixed; both changes are movements along the original curve."
+      ],
+      "feedback": "Higher income raises demand for the normal good; a cheaper substitute lowers it. Either effect can dominate, or they can offset. Own-price movements do not describe these determinants.",
+      "aHash": "e22058e56c3236f6082faac0474efa90621ae8d926ec42241cba779ca51d5074"
+    }
+  },
+  {
+    "id": "PG1-DMD-EL-002",
+    "concept": "demand",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO4.2",
+    "type": "multi-step",
+    "primarySkill": "movement_vs_demand_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Graph necessity: remove supplied starting quantity; combine shift and movement.",
+    "numericProofs": [
+      "125-150 == -25",
+      "75-100 == -25"
+    ],
+    "before": {
+      "q": "Start on D0 at a price of $6, where quantity demanded is 150 thousand. Demand then shifts to D1, but the price rises to $10. What final quantity demanded does the graph show, and how does it compare with the starting quantity?",
+      "options": [
+        "225 thousand; 75 thousand higher than the starting quantity",
+        "50 thousand; 100 thousand lower than the starting quantity",
+        "125 thousand; 25 thousand lower than the starting quantity",
+        "150 thousand; unchanged"
+      ],
+      "feedback": "The final point is on D1 at $10, which is 125 thousand. Demand increased, but the higher price produces a movement up D1 large enough that final quantity demanded is 25 thousand below the original 150 thousand.",
+      "aHash": "9ea1a7893c00820c5e01f5e82380a96d3c7adfe5d79414f457877dcd61eacf0c"
+    },
+    "after": {
+      "q": "Refer to the graph. A buyer group starts on D0 at $6. After demand changes to D1, price is $10. Which statement reconciles the demand change with the final quantity?",
+      "options": [
+        "Demand decreased, causing final quantity to be 25 thousand below the starting quantity.",
+        "Demand increased, so final quantity must be 75 thousand above the starting quantity.",
+        "Demand increased, yet final quantity is 25 thousand below the starting quantity.",
+        "Demand was unchanged, and the price increase reduced quantity by 100 thousand."
+      ],
+      "feedback": "The initial quantity is 150 thousand and the final quantity is 125 thousand. D1 is right of D0, but movement up the new demand curve offsets more than the 75-thousand rightward shift.",
+      "aHash": "5573ba9f4adcb713cd99b66ee42434d8b8e7567a3bcb66a6e3fc14309eaba7a1"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9017",
+    "concept": "demand",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.2",
+    "type": "graph_trap",
+    "primarySkill": "movement_vs_shift",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/demand/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "P52B-S3-DEM-L-001",
+    "concept": "demand",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.2",
+    "type": "multi-step",
+    "primarySkill": "multiple_demand_shifters",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Answer uniqueness and conditional synthesis: replace simultaneous true conditionals.",
+    "numericProofs": [],
+    "before": {
+      "options": [
+        "Current demand rises if the combined income and tea-price effects exceed the expectations effect.",
+        "Current demand falls if the expectations effect exceeds the other two effects combined.",
+        "The direction is ambiguous because two forces raise current demand while one lowers it.",
+        "Current quantity demanded moves along one curve because expectations and related-good prices change coffee's own price."
+      ],
+      "feedback": "Higher income and a higher substitute price raise current coffee demand, while expecting a lower future coffee price reduces current demand. Magnitudes determine the net shift.",
+      "aHash": "5354449be7aa36a131b7d44941ad191fa1823356b11750577a1f978fc1429e1a"
+    },
+    "after": {
+      "options": [
+        "Demand must rise: two favorable determinants outweigh one unfavorable determinant regardless of their sizes.",
+        "Demand must fall: an expected future price decline outweighs current income and substitute-price effects.",
+        "Demand is indeterminate: income and the substitute price raise it, while waiting for a lower future price reduces it.",
+        "Demand is unchanged: income, expectations, and related-good prices affect only movement along the curve."
+      ],
+      "feedback": "The two positive demand effects need not outweigh the negative expectations effect. Counting determinants cannot replace comparing their magnitudes.",
+      "aHash": "09e9453358423a1924388295515e5a0dff340beddfdbd1e712f5610b27e28b31"
+    }
+  },
+  {
+    "id": "PG1-DMD-L-001",
+    "concept": "demand",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.2",
+    "type": "multi-step",
+    "primarySkill": "movement_vs_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary evidence reconciliation without adding words that reveal the inference.",
+    "numericProofs": [
+      "225-100 == 125"
+    ],
+    "before": {
+      "q": "A student claims that the move from A to B on the displayed graph proves that demand increased by 125 thousand donuts. What is wrong with that claim?",
+      "options": [
+        "Any quantity increase counts as an increase in demand.",
+        "It is more quantity demanded, not an increase in demand.",
+        "A and B show a leftward shift of the demand curve.",
+        "The higher quantity means the supply curve shifted right."
+      ],
+      "feedback": "The points lie on one demand curve. A lower own price changes quantity demanded, whereas an increase in demand would require the entire demand curve to shift right.",
+      "aHash": "eebef7f6e3b7efc264047bb56ff4265d28df666e5f4b861c922290acdca9cce2"
+    },
+    "after": {
+      "q": "Refer to the graph. A report attributes the entire A-to-B change to stronger tastes for donuts. A second survey finds the quantity desired at every fixed price is unchanged. Which diagnosis fits both pieces of evidence?",
+      "options": [
+        "The report is supported; quantity rises 125 thousand because demand shifted right.",
+        "The report confuses movement with a shift; quantity rises 125 thousand because price is lower.",
+        "The report confuses movement with a shift; quantity falls 125 thousand because price is lower.",
+        "The report is supported; demand shifted right even though the fixed-price schedule is unchanged."
+      ],
+      "feedback": "A and B are on the same demand curve, at 100 and 225 thousand. The unchanged fixed-price schedule rules out a taste-driven demand shift. The graph shows an increase in quantity demanded caused by a lower price.",
+      "aHash": "a84fb4497d5592b197204c393925b3df6629901f6f679cc6f4d00a6922bb74b9"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-166",
+    "concept": "supply",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.3",
+    "type": "graph_interpretation",
+    "primarySkill": "supply_shift_direction",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/supply/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-263",
+    "concept": "supply",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.3",
+    "type": "graph_interpretation",
+    "primarySkill": "supply_shift_direction",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/supply/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "P52B-S2-SUP-H-001",
+    "concept": "supply",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.3",
+    "type": "multi-step",
+    "primarySkill": "multiple_supply_shifters",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Answer uniqueness: opposing supply determinants had multiple true conditional options.",
+    "numericProofs": [],
+    "before": {
+      "options": [
+        "Current supply rises if the wage reduction has the larger effect.",
+        "Current supply falls if inventory withholding has the larger effect.",
+        "The net direction is uncertain because the two changes push current supply in opposite directions.",
+        "Quantity supplied changes along the original curve because both events change the product's current price."
+      ],
+      "feedback": "Lower wages shift supply right, while holding inventory for a higher future price shifts current supply left. The net direction depends on their relative size.",
+      "aHash": "762e003107620ab0a32ae122ff6fd08b2316af21fddf79cd251f3878250ddf70"
+    },
+    "after": {
+      "options": [
+        "Supply must rise because lower wages dominate the decision to withhold inventory.",
+        "Supply must fall because withholding inventory dominates the wage reduction.",
+        "The net supply shift is uncertain because lower wages and inventory withholding work in opposite directions.",
+        "Supply stays fixed because wages and expected future prices only move firms along supply."
+      ],
+      "feedback": "Lower wages reduce production costs and increase supply. Holding inventory for a higher expected future price reduces current supply. Their relative sizes determine the net shift.",
+      "aHash": "a4a77f26dabe2a7256b7e37dab6f7ad50c822f90671ddf9411b9030a909fb1e5"
+    }
+  },
+  {
+    "id": "PG1-SUP-H-002",
+    "concept": "supply",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.3",
+    "type": "calculation",
+    "primarySkill": "supply_shift_analysis",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Hard graph calibration: connect measured shift to a supply determinant.",
+    "numericProofs": [
+      "200-100 == 100"
+    ],
+    "before": {
+      "q": "Refer to the graph. Across the prices shown, by how much is S1 horizontally shifted to the left of S0?",
+      "options": [
+        "25 thousand units",
+        "75 thousand units",
+        "200 thousand units",
+        "100 thousand units"
+      ],
+      "feedback": "At $9, quantity supplied falls from 200 thousand to 100 thousand; at $13, it falls from 300 thousand to 200 thousand. The horizontal decrease is 100 thousand units.",
+      "aHash": "323e6a4266844cc92a2c6a716703b9f0df2ad5fb07b9c7ce69d19190526efde0"
+    },
+    "after": {
+      "q": "Refer to the graph. At $9, compare S0 with S1. Which event and quantity change are consistent with that comparison?",
+      "options": [
+        "Lower input costs; 100 thousand fewer units supplied.",
+        "A fall in the product’s own price; 100 thousand fewer units at the same $9 price.",
+        "Higher input costs; 200 thousand fewer units supplied.",
+        "Higher input costs; 100 thousand fewer units supplied."
+      ],
+      "feedback": "At $9, supply falls from 200 thousand on S0 to 100 thousand on S1. Higher input costs can cause this leftward shift. A change in the product’s own price cannot explain different quantities at the same price.",
+      "aHash": "ad35ddfdeb4e84199aa12ad3ca68174e56b404a2485847879507c1e10b1754f6"
+    }
+  },
+  {
+    "id": "P52B-S2-SUP-EL-001",
+    "concept": "supply",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO4.3",
+    "type": "multi-step",
+    "primarySkill": "multiple_supply_shifters",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical repair only in an existing fee context; no policy calibration or new policy content.",
+    "numericProofs": [],
+    "before": {
+      "options": [
+        "Supply shifts right if the machine's cost reduction exceeds the environmental fee.",
+        "Supply shifts left if the environmental fee exceeds the machine's cost reduction.",
+        "Supply is unchanged if the two per-unit cost effects are equal.",
+        "The net supply shift cannot be determined without comparing the two cost changes."
+      ],
+      "feedback": "Technology pushes supply right and the per-unit fee pushes it left. Magnitudes are needed to determine the net shift."
+    },
+    "after": {
+      "options": [
+        "Supply must shift right because improved technology outweighs any higher per-unit fee.",
+        "Supply must shift left because a new per-unit fee outweighs any technological saving.",
+        "Supply must remain unchanged because there is one cost decrease and one cost increase.",
+        "The net supply shift cannot be determined without comparing the two cost changes."
+      ],
+      "feedback": "The cost saving increases supply; the fee reduces supply. The net direction depends on the magnitudes, not the number of changes."
+    }
+  },
+  {
+    "id": "P52B-S2-SUP-EL-002",
+    "concept": "supply",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO4.3",
+    "type": "multi-step",
+    "primarySkill": "market_supply_multiple_shifters",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Answer uniqueness: eliminate two true conditional alternatives.",
+    "numericProofs": [],
+    "before": {
+      "options": [
+        "Entry pushes supply right and higher input cost pushes it left, making the net effect uncertain.",
+        "Market supply rises if the entry effect is larger than the input-cost effect.",
+        "Market supply falls if the input-cost effect is larger than the entry effect.",
+        "Quantity supplied changes along the original curve because entry and input costs change the product's price."
+      ],
+      "feedback": "More sellers expand market supply, while higher input costs reduce it. The final direction depends on relative magnitudes.",
+      "aHash": "909e0beb88f6465208609935c12366b4799d3689c275a29100f92fa83d130332"
+    },
+    "after": {
+      "options": [
+        "Entry pushes supply right and higher input cost pushes it left, leaving the net effect uncertain.",
+        "Market supply must rise because entry outweighs the input-cost increase.",
+        "Market supply must fall because higher input costs outweigh entry.",
+        "Market supply stays fixed because both events only change quantity supplied along the curve."
+      ],
+      "feedback": "More firms add supply at each price; a cost increase reduces each firm’s supply. Without magnitudes, the combined shift can go either way or be zero.",
+      "aHash": "1bfca12c1fcd834e0533a44874487ff47c372514c7aa91c5c4e0a8033820c581"
+    }
+  },
+  {
+    "id": "P52B-S2-SUP-L-002",
+    "concept": "supply",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.3",
+    "type": "calculation",
+    "primarySkill": "number_of_sellers_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Reverse aggregation within the existing number-of-sellers calculation skill.",
+    "numericProofs": [
+      "60*8 == 480",
+      "480/10 == 48",
+      "60-48 == 12"
+    ],
+    "before": {
+      "q": "A market has 80 identical firms, each supplying 6 units at a price of $10. If 20 firms exit and each remaining firm’s supply is unchanged, market quantity supplied becomes:",
+      "options": [
+        "120 units.",
+        "480 units.",
+        "600 units.",
+        "360 units."
+      ],
+      "feedback": "Sixty firms remain, so market quantity supplied is 60 × 6 = 360 units.",
+      "aHash": "24f63309a3619460cca36fc7460792691fc7862a4be755f86addca4d76030dee"
+    },
+    "after": {
+      "q": "At a fixed price, 60 identical firms initially supply 8 units each. An input-cost decline raises each surviving firm’s supply to 10 units, but some firms exit. Total supply at that price is unchanged. How many firms exited, and what does the unchanged total imply?",
+      "options": [
+        "10 firms; the cost and exit effects offset at this price.",
+        "12 firms; neither input costs nor firm exit shifted supply.",
+        "15 firms; a higher product price offset the firm exits.",
+        "12 firms; the cost and exit effects offset at this price."
+      ],
+      "feedback": "Initial supply is 60 × 8 = 480 units. At 10 units each, 48 firms supply 480, so 12 exited. Opposing supply determinants offset at the stated price; this is not a movement caused by an own-price change.",
+      "aHash": "3d2fb33f4c029363c4ecab0e035922401e7eb6c8371a163ebbcdfc075d886e1b"
+    }
+  },
+  {
+    "id": "PG1-SUP-L-002",
+    "concept": "supply",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.3",
+    "type": "multi-step",
+    "primarySkill": "supply_shift_and_movement",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary reverse graph reasoning: infer the price needed to offset a cost shift.",
+    "numericProofs": [
+      "200-100 == 100",
+      "13-9 == 4"
+    ],
+    "before": {
+      "q": "The market begins on S0 at $9 and 200 thousand units. Supply shifts to S1 while price is still $9, and then price rises to $13. Which decomposition matches the graph?",
+      "options": [
+        "200→300 from the supply shift; 300→200 from the price rise.",
+        "200→100 from the supply shift; 100→200 from the price rise.",
+        "200→100 from the price rise; 100→200 from the supply shift.",
+        "200→200 from the supply shift; 200→100 from the price rise."
+      ],
+      "feedback": "At $9 the shift from S0 to S1 lowers quantity supplied from 200 to 100 thousand. Moving up S1 to $13 raises it back to 200 thousand.",
+      "aHash": "39fe3dc787ce13a0c95b1101dbbbc243e7f8d072a59fe3e9732366c2bb8147c1"
+    },
+    "after": {
+      "q": "Refer to the graph. Producers initially supply on S0 at $9. Input costs then change so the relevant curve is S1. What price would restore the original quantity, and what accounts for the restoration?",
+      "options": [
+        "$9; the change in input costs leaves the fixed-price quantity unchanged.",
+        "$13; a 100-thousand reduction from the supply shift is offset by movement up S1.",
+        "$5; a 100-thousand reduction from the supply shift is offset by movement down S1.",
+        "$13; the rise in the product’s price shifts S1 back to S0."
+      ],
+      "feedback": "S0 at $9 supplies 200 thousand. S1 at $9 supplies 100 thousand; at $13 it supplies 200 thousand. The price increase restores quantity by movement along S1, while the cost-driven shift remains.",
+      "aHash": "03bba890e653b457b79ba8e6885c13772db2f3616543242b7744fbe42b88318e"
+    }
+  },
+  {
+    "id": "PG1-SUP-L-003",
+    "concept": "supply",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.3",
+    "type": "multi-step",
+    "primarySkill": "supply_shift_and_movement",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary reverse price inference and shift-versus-movement synthesis.",
+    "numericProofs": [
+      "225-100 == 125",
+      "3-2 == 1"
+    ],
+    "before": {
+      "q": "Start at A on S0: $3 and 100 thousand tacos. At the same $3 price, supply shifts to S1, and then price falls to $2. Which accounting best explains why final quantity supplied returns to about 100 thousand?",
+      "options": [
+        "100→225 from the price fall; 225→100 from the supply shift.",
+        "100→50 from the supply shift; 50→100 from the price fall.",
+        "100→100 from the supply shift; 100→225 from the price fall.",
+        "100→225 from the supply shift; 225→100 from the price fall."
+      ],
+      "feedback": "At $3 the rightward shift moves quantity supplied from 100 to about 225 thousand. The subsequent fall to $2 moves down S1 by about 125 thousand, returning quantity supplied to about 100 thousand.",
+      "aHash": "ea8fcbd658ffd62e0cf3e6db68b505b9fa95f0694785fa7c4f2a477ec84bbfb4"
+    },
+    "after": {
+      "q": "Refer to the graph. A process improvement changes supply from S0 to S1. Starting at A, find the price on S1 that restores the initial quantity. What does the unchanged final quantity mean?",
+      "options": [
+        "About $3; the supply increase leaves quantity unchanged at the initial price.",
+        "About $4; movement up S1 offsets the supply increase.",
+        "About $2; unchanged final quantity proves that no supply shift occurred.",
+        "About $2; the supply increase is offset by movement down S1."
+      ],
+      "feedback": "A is about 100 thousand at $3. On S1 the same quantity is supplied at about $2. At the old $3 price the improvement adds about 125 thousand; the lower price then reduces quantity supplied along S1 by the same amount.",
+      "aHash": "c2cc89b8b47d3a48f725983b399792a7a1b880bd266baa51ef4c9afd102fd244"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARYBOSS-9125",
+    "concept": "supply",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "LO4.3",
+    "type": "multi-step",
+    "primarySkill": "supply_shift_analysis",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical repair of existing competing cost effects; preserve checkpoint routing.",
+    "numericProofs": [],
+    "before": {
+      "options": [
+        "Supply shifts right if the technology's cost reduction is larger",
+        "Supply shifts left if the compliance-cost increase is larger",
+        "The net direction is ambiguous without relative magnitudes",
+        "Supply is unchanged if the two cost effects are equal"
+      ],
+      "feedback": "Technology pushes supply right and compliance costs push it left. The net direction depends on which cost effect is larger; equal effects would offset.",
+      "aHash": "7affd0d0f192fb2ebb27aa1912374bbcbd90b7fee835feda7263f7005602360b"
+    },
+    "after": {
+      "options": [
+        "Supply must increase because technology reduces production cost.",
+        "Supply must decrease because compliance raises production cost.",
+        "The net supply direction is ambiguous without relative cost changes.",
+        "Supply must stay fixed because the two changes cancel by definition."
+      ],
+      "feedback": "The two cost effects oppose each other. Supply rises if the saving dominates, falls if the added cost dominates, and is unchanged only if they offset.",
+      "aHash": "6508c2fb27e6a815cf4d08e76238d5cb0c55da6315a81ad702ba09a697b391b1"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-160",
+    "concept": "market-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.4",
+    "type": "graph",
+    "primarySkill": "equilibrium_identification",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-161",
+    "concept": "market-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.4",
+    "type": "graph",
+    "primarySkill": "equilibrium_identification",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-162",
+    "concept": "market-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.4",
+    "type": "graph",
+    "primarySkill": "equilibrium_identification",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-163",
+    "concept": "market-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "supply_shift_equilibrium_prediction",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-164",
+    "concept": "market-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "demand_shift_equilibrium_prediction",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-165",
+    "concept": "market-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "equilibrium_comparison",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-168",
+    "concept": "market-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "multi_shift_sequence",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-170",
+    "concept": "market-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO4.4",
+    "type": "graph",
+    "primarySkill": "equilibrium_identification",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-258",
+    "concept": "market-equilibrium",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "simultaneous_shift_comparison",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-259",
+    "concept": "market-equilibrium",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "simultaneous_shift_comparison",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-260",
+    "concept": "market-equilibrium",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "simultaneous_shift_sequence",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-264",
+    "concept": "market-equilibrium",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "double_shift_ambiguous_price",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-265",
+    "concept": "market-equilibrium",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "double_shift_ambiguous_quantity",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-ELITE-305",
+    "concept": "market-equilibrium",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO4.4",
+    "type": "trap",
+    "primarySkill": "double_shift_ambiguous_quantity",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Answer uniqueness: replace conditional distractors that were economically true.",
+    "numericProofs": [],
+    "before": {
+      "options": [
+        "Price rises, but quantity is ambiguous",
+        "Quantity rises, but price is ambiguous",
+        "Price and quantity rise if the demand shift is larger",
+        "Price rises and quantity falls if the supply shift has the larger quantity effect"
+      ],
+      "feedback": "Demand increases and supply decreases both push price up, but quantity depends on which shift is larger.",
+      "aHash": "b32530969a6b94e7a9878978b422557718f35ed836094fef3074c40f3bb709c5"
+    },
+    "after": {
+      "options": [
+        "Price rises; equilibrium quantity can rise, fall, or stay unchanged.",
+        "Quantity rises; equilibrium price can rise, fall, or stay unchanged.",
+        "Price and quantity both rise for every possible size of the shifts.",
+        "Price and quantity both fall for every possible size of the shifts."
+      ],
+      "feedback": "Reduced wheat supply and greater derived demand for wheat both raise its price. They push equilibrium quantity in opposite directions, so quantities require more information.",
+      "aHash": "48dccaa11963eaac78d66bcd735b1f94306a535085ab2a5ad9827ab6ec87bc49"
+    }
+  },
+  {
+    "id": "PG1-EQ-EL-001",
+    "concept": "market-equilibrium",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO4.4",
+    "type": "multi-step",
+    "primarySkill": "surplus_shortage_adjustment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Graph necessity: remove the supplied equilibrium and shortage answer.",
+    "numericProofs": [
+      "200-100 == 100",
+      "200-150 == 50",
+      "150-100 == 50"
+    ],
+    "before": {
+      "q": "Refer to the graph. Compare quantities at $2 with those at the $3 equilibrium and explain how movements along both curves eliminate the 100-thousand-gallon shortage.",
+      "options": [
+        "Quantity demanded falls by 50 thousand and quantity supplied rises by 50 thousand",
+        "Quantity demanded rises by 50 thousand and quantity supplied falls by 50 thousand",
+        "Both quantity demanded and quantity supplied rise by 100 thousand",
+        "Both quantities fall by 50 thousand"
+      ],
+      "feedback": "From $2 to $3, quantity demanded falls from 200 to 150 thousand while quantity supplied rises from 100 to 150 thousand. Together those changes eliminate the 100-thousand shortage.",
+      "aHash": "4b859506ff59bbc4c2b1caadcfd0ca8ef0df4c2fdf3febe8de2b815ccf809e3a"
+    },
+    "after": {
+      "q": "Refer to the graph. The market price starts at $2 and can adjust freely. Which pair of quantity changes would eliminate the initial imbalance with both curves fixed?",
+      "options": [
+        "Quantity demanded falls 50 thousand gallons and quantity supplied rises 50 thousand gallons.",
+        "Quantity demanded rises 50 thousand gallons and quantity supplied falls 50 thousand gallons.",
+        "Quantity demanded falls 100 thousand gallons and quantity supplied stays fixed.",
+        "Demand shifts left 50 thousand gallons and supply shifts right 50 thousand gallons."
+      ],
+      "feedback": "At $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. Price rises to the intersection at $3 and 150 thousand. Each side adjusts by 50 thousand along its existing curve.",
+      "aHash": "c6abe054ff7e1f868c4135af9253a7b4e80b13e935c98d081005f56fe8e86040"
+    }
+  },
+  {
+    "id": "PG1-EQ-EL-002",
+    "concept": "market-equilibrium",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO4.4",
+    "type": "analysis",
+    "primarySkill": "simultaneous_shift_comparison",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Elite reverse comparative statics from graph endpoints and valid determinants.",
+    "numericProofs": [
+      "5-3 == 2"
+    ],
+    "before": {
+      "q": "Comparing the original D0/S0 equilibrium with the final D1/S1 equilibrium, what happened in this particular graph?",
+      "options": [
+        "Price unchanged; quantity +100 thousand.",
+        "Price +$1; quantity -50 thousand.",
+        "Price +$2; quantity stays at 150 thousand.",
+        "Price -$2; quantity stays at 150 thousand."
+      ],
+      "feedback": "The original equilibrium is $3 and 150 thousand; the final equilibrium is $5 and 150 thousand. Both shifts push price upward, while their opposing quantity effects exactly offset in this graph.",
+      "aHash": "20a365ddc6e86f22d4a7703e1cf2da24857fc460f6991da152233cce83ec4704"
+    },
+    "after": {
+      "q": "Refer to the graph. A normal-good market moves from the D1/S1 intersection to the D0/S0 intersection. Which pair of events could explain that change, and what happens to price?",
+      "options": [
+        "Consumer income rises and production becomes cheaper; price falls by $2.",
+        "Consumer income falls and production becomes more expensive; price rises by $2.",
+        "Consumer income falls and production becomes cheaper; price falls by $2.",
+        "Consumer income rises and production becomes more expensive; price rises by $2."
+      ],
+      "feedback": "The two intersections have the same quantity, 150 thousand, but prices $5 and $3. D1 to D0 is lower demand, consistent with lower income for a normal good. S1 to S0 is higher supply, consistent with lower cost.",
+      "aHash": "1cf683e5f4971339fbfaede47f7fbd3dc3f460bad195d9533a2a92be8bdd5c29"
+    }
+  },
+  {
+    "id": "40016",
+    "concept": "market-equilibrium",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO4.4",
+    "type": "graph_integration",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Elite reverse simultaneous shifts with distinct determinants and graph evidence.",
+    "numericProofs": [
+      "6-4 == 2",
+      "200-200 == 0"
+    ],
+    "before": {
+      "q": "Refer to the graph. From D to B, demand rises and supply falls. What do the two equilibria show?",
+      "options": [
+        "Quantity stays 200; price rises from 4 to 6",
+        "Quantity rises to 250; price stays at 4",
+        "Quantity falls to 150; price stays at 4",
+        "Quantity stays 200; price returns to 4"
+      ],
+      "feedback": "Opposing quantity effects cancel; both shifts raise price.",
+      "aHash": "c3e1c8483c53eed4a4170c2ff315b650437307267e02baf918d66fcf2610faa3"
+    },
+    "after": {
+      "q": "Refer to the gasoline graph. Suppose cheaper alternative transportation reduces gasoline demand while refinery costs fall. If the curves change from those through B to those through D, which outcome and explanation fit?",
+      "options": [
+        "Price falls by $2 and quantity stays 200; the two shifts have offsetting quantity effects.",
+        "Price stays $6 and quantity falls to 150; both shifts reduce equilibrium quantity.",
+        "Price falls by $2 and quantity rises to 250; the graph shows only a supply increase.",
+        "Price rises by $2 and quantity stays 200; both shifts raise equilibrium price."
+      ],
+      "feedback": "B is at price $6 and quantity 200; D is at $4 and 200. Demand falls and supply increases. Both reduce price, while their opposing quantity effects offset in this graph.",
+      "aHash": "b06ef88c76ca509b24227e795420a69cf7dfc4c2ebe4d8ab0394e3ebdd3836c4"
+    }
+  },
+  {
+    "id": "40017",
+    "concept": "market-equilibrium",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO4.4",
+    "type": "graph_trap",
+    "primarySkill": "market_shift_analysis",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Elite linked graph paths replace a one-intersection recognition item.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. Why is B the final equilibrium regardless of whether demand or supply shifts first?",
+      "options": [
+        "The shift order forces quantity to end at 250",
+        "B intersects the final D1 and S1 curves",
+        "Both A and C intersect the final D1 and S1 curves",
+        "Equilibrium depends on the first shift, not final curves"
+      ],
+      "feedback": "The final equilibrium is the intersection of D1 and S1, so it depends on the final curves rather than the order of the shifts.",
+      "aHash": "d6e2a5d51bd3b19b0b1d3c89133a64f46de58050a9365d58e11501671b517540"
+    },
+    "after": {
+      "q": "Refer to the graph. Compare two adjustment paths from D to B: demand changes first in one path; supply changes first in the other. Which claim about the intermediate quantity and final equilibrium is correct?",
+      "options": [
+        "Demand first takes quantity to A; supply first takes it to C; both paths end at B.",
+        "Demand first takes quantity to C; supply first takes it to A; both paths end at B.",
+        "Demand first takes quantity to C; supply first takes it to A; the paths end at different equilibria.",
+        "Either first shift keeps quantity at D; only the second shift moves quantity to B."
+      ],
+      "feedback": "With S0 fixed, D0 to D1 moves the market from D to C. With D0 fixed, S0 to S1 moves it from D to A. The final D1/S1 intersection is B regardless of order; the intermediate quantities differ.",
+      "aHash": "c1238e6c6873a12abba2fa821e9b83b76841e91d90aea7c1548e0b3b141ac073"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9015",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "market_shift_analysis",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9016",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "supply_shift_analysis",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9018",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "graph_interpretation",
+    "primarySkill": "supply_shift_analysis",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9019",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "graph_integration",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/supplydemand1.webp"
+    },
+    "after": {
+      "image": "question-assets/market-equilibrium/supplydemand1.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9020",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "multi-step",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace multiple true conditionals with reverse inference from observed quantity.",
+    "numericProofs": [],
+    "before": {
+      "q": "A drought destroys part of the orange crop at the same time a health report increases consumer interest in orange juice. Which conclusion is strongest without exact curve sizes?",
+      "options": [
+        "Equilibrium quantity is ambiguous, while equilibrium price rises",
+        "Equilibrium quantity rises if the demand effect is larger",
+        "Equilibrium quantity falls if the supply effect is larger",
+        "Equilibrium price falls while quantity is ambiguous"
+      ],
+      "feedback": "The demand increase and supply decrease reinforce each other on price but oppose on quantity. Quantity therefore depends on relative shift sizes.",
+      "aHash": "7f47c2a2a36b06818d52a426f5c990853adeedeffc071ba7eca267d75ec65c8a"
+    },
+    "after": {
+      "q": "A disease reduces berry supply while a nutrition trend raises berry demand. The final quantity is above its original level. Which conclusion follows with ordinary downward demand and upward supply?",
+      "options": [
+        "Price is higher; the demand increase more than offsets the supply reduction’s effect on quantity.",
+        "Price is lower; greater final quantity proves that supply increased.",
+        "Price is unchanged; the higher quantity shows that the two shifts offset completely.",
+        "Price is higher; the observed quantity proves that the supply reduction dominated demand."
+      ],
+      "feedback": "Both shifts raise price. Supply reduction alone lowers equilibrium quantity, so the observed quantity increase requires the demand effect to outweigh that reduction in the final outcome.",
+      "aHash": "ad5b4941c41df9804008290f86370b57a7bf99bfe556b6305276980faec1d286"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9021",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "multi-step",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace multiple true conditionals with comparison of two markets and reference points.",
+    "numericProofs": [],
+    "before": {
+      "q": "Demand for laptops rises while a chip shortage reduces supply. Without knowing curve sizes, what can be said with confidence?",
+      "options": [
+        "Equilibrium price rises, while equilibrium quantity is ambiguous",
+        "Equilibrium quantity rises if the demand effect is larger",
+        "Equilibrium quantity falls if the supply effect is larger",
+        "Equilibrium price falls while quantity is ambiguous"
+      ],
+      "feedback": "Higher laptop demand and reduced chip supply both raise price. Their quantity effects oppose, leaving quantity dependent on relative magnitudes.",
+      "aHash": "08518aa551cfee1c8bea394cbff72933701db14d889a0fca90501968917a6fac"
+    },
+    "after": {
+      "q": "Two initially identical device markets face the same increase in demand. Only Market Y also loses a component supplier. Compared with Market X’s final equilibrium, what must be true in Market Y?",
+      "options": [
+        "Y has a higher price and lower quantity, although its quantity relative to the original equilibrium is uncertain.",
+        "Y has a lower price and higher quantity, although its quantity relative to the original equilibrium is uncertain.",
+        "Y has a higher price and quantity, because both changes increase demand.",
+        "Y has the same price and quantity, because both markets face the same demand change."
+      ],
+      "feedback": "Starting from X’s final equilibrium, the additional supply reduction in Y raises price and lowers quantity. Compared with the common original equilibrium, Y’s demand increase and supply decrease have opposing quantity effects.",
+      "aHash": "91a1d8defe5d638433969a190a3ccb6494116599927d6c3c1761f2a7cc9bfb8b"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9022",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "multi-step",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Answer uniqueness and reverse simultaneous-shift interpretation.",
+    "numericProofs": [],
+    "before": {
+      "q": "Demand for restaurant meals falls while lower food costs increase supply. Without exact curve sizes, what is the strongest conclusion?",
+      "options": [
+        "Equilibrium price falls, while equilibrium quantity is ambiguous",
+        "Equilibrium quantity falls if the demand effect is larger",
+        "Equilibrium quantity rises if the supply effect is larger",
+        "Equilibrium price rises while quantity is ambiguous"
+      ],
+      "feedback": "Lower demand and greater supply both reduce price. Their quantity effects oppose, so quantity depends on relative magnitudes.",
+      "aHash": "b5c7e0952eca65f0abaa099d90ab2fecb1a7cf0fb7064f34b4f1c7095df977f7"
+    },
+    "after": {
+      "q": "Lunch-delivery demand falls while improved routing lowers delivery costs. Final price is lower and the number of deliveries is unchanged. Which explanation is consistent?",
+      "options": [
+        "Demand fell and supply rose; their quantity effects offset at the final equilibrium.",
+        "Demand and supply both fell; their quantity effects offset at the final equilibrium.",
+        "Demand and supply both rose; unchanged deliveries reflect offsetting quantity effects.",
+        "Only demand fell; a fixed upward-sloping supply curve kept deliveries unchanged."
+      ],
+      "feedback": "Lower demand and higher supply both reduce price but have opposite quantity effects. The observed unchanged quantity reflects an offset in this case; it is not a general prediction of those shifts.",
+      "aHash": "467aa70de0bfecf1fbe31818b1358027ce4591489a382c131f103a95235a84e8"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9026",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "synthesis",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace true conditional distractors with evidence-based causal diagnosis.",
+    "numericProofs": [],
+    "before": {
+      "q": "Input costs rise for producers of bicycles. At the same time, consumer income rises and bicycles are a normal good. What is the clearest prediction?",
+      "options": [
+        "Equilibrium price rises, while equilibrium quantity is ambiguous",
+        "Equilibrium quantity rises if the income-driven demand effect is larger",
+        "Equilibrium quantity falls if the input-cost supply effect is larger",
+        "Equilibrium price falls while quantity is ambiguous"
+      ],
+      "feedback": "Higher input costs decrease supply and higher income increases demand. Both raise price, while their quantity effects oppose.",
+      "aHash": "08518aa551cfee1c8bea394cbff72933701db14d889a0fca90501968917a6fac"
+    },
+    "after": {
+      "q": "Bicycles are a normal good. Income and production-input costs rise, yet equilibrium bicycle sales fall. A manager concludes that bicycle demand must have fallen. Evaluate the conclusion.",
+      "options": [
+        "Incorrect: demand rose, but the supply reduction more than offset its effect on quantity; price rose.",
+        "Correct: lower equilibrium sales establish a demand decrease even when income rises.",
+        "Incorrect: supply rose, but demand fell enough to reduce both price and quantity.",
+        "Correct: higher input costs reduce bicycle demand directly while supply stays fixed."
+      ],
+      "feedback": "Higher income increases demand for a normal good; higher input costs reduce supply. Both raise price. Lower sales can result when the supply effect dominates quantity, so sales alone do not identify a demand shift.",
+      "aHash": "07d0cf4b323838a06ad4855962d49f7ccf0de519f809a8cdb1e5101213223032"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9027",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "synthesis",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Answer uniqueness: only one conditional statement, evaluated against an overclaim.",
+    "numericProofs": [],
+    "before": {
+      "q": "A technological improvement reduces production costs while consumer tastes shift away from the good. What is the strongest prediction?",
+      "options": [
+        "Equilibrium price falls, while equilibrium quantity is ambiguous",
+        "Equilibrium quantity rises if the technology-driven supply effect is larger",
+        "Equilibrium quantity falls if the taste-driven demand effect is larger",
+        "Equilibrium price rises while quantity is ambiguous"
+      ],
+      "feedback": "The supply increase and demand decrease both lower price. Their quantity effects oppose, leaving quantity dependent on relative magnitudes.",
+      "aHash": "b5c7e0952eca65f0abaa099d90ab2fecb1a7cf0fb7064f34b4f1c7095df977f7"
+    },
+    "after": {
+      "q": "A production improvement increases supply while tastes shift away from the product. An analyst predicts that price and quantity must both fall. What is the precise correction?",
+      "options": [
+        "Price must fall, but quantity falls only if the demand reduction outweighs the supply increase’s quantity effect.",
+        "Quantity must fall, but price falls only if the production improvement outweighs the taste change.",
+        "Price must rise, but quantity can rise or fall depending on the relative shifts.",
+        "Neither direction can be inferred because simultaneous shifts make both variables indeterminate."
+      ],
+      "feedback": "Both changes lower equilibrium price. Lower demand reduces quantity while higher supply increases it, so the analyst needs relative effects to assert a quantity decline.",
+      "aHash": "e74ee7005f601f74f946cff95016b754db357c66027650cdaae8a82463b70fbe"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9034",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "multi-step",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace multiple true conditionals with reverse inference from observed price.",
+    "numericProofs": [],
+    "before": {
+      "q": "Both supply and demand decrease. Without curve sizes, what is the strongest conclusion?",
+      "options": [
+        "Equilibrium quantity falls, while equilibrium price is ambiguous",
+        "Equilibrium price falls if the demand decrease has the larger price effect",
+        "Equilibrium price rises if the supply decrease has the larger price effect",
+        "Equilibrium quantity rises while price is ambiguous"
+      ],
+      "feedback": "Both decreases reduce equilibrium quantity. Demand's decrease lowers price while supply's decrease raises it, so price depends on relative shift sizes.",
+      "aHash": "f61689039f0cc884524212e9d949231cd292a20e32e618f0e924998d7a501d13"
+    },
+    "after": {
+      "q": "Fewer buyers want a product and several producers exit. Final price is above the starting price. Which interpretation is consistent with both shifts and that observation?",
+      "options": [
+        "Quantity falls; the supply reduction’s upward price effect outweighs the demand reduction’s downward effect.",
+        "Quantity rises; the demand reduction’s downward price effect outweighs the supply reduction’s upward effect.",
+        "Quantity stays fixed; an increase in price prevents either curve from shifting.",
+        "Quantity falls; the higher price proves that demand increased rather than decreased."
+      ],
+      "feedback": "Both lower demand and lower supply reduce equilibrium quantity. Their price effects oppose each other; the observed price increase identifies the dominant price effect in this case.",
+      "aHash": "725a74718ef57f77b0a1bf82d7d060449a78cca456f2dcce6b4800d5cd8a1407"
+    }
+  },
+  {
+    "id": "PG1-EQ-L-002",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "multi-step",
+    "primarySkill": "simultaneous_shift_sequence",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary reverse two-stage graph reasoning; remove stated coordinates from stem.",
+    "numericProofs": [],
+    "before": {
+      "q": "Begin at D0/S0: $3 and 150 thousand. Demand first increases to D1 with S0 fixed, then supply decreases to S1 with D1 fixed. Which sequence matches the graph?",
+      "options": [
+        "First $2/200k; then $3/150k.",
+        "First $4/100k; then $3/150k.",
+        "First $3/150k; then $4/100k.",
+        "First $4/200k; then $5/150k."
+      ],
+      "feedback": "D1/S0 intersects at $4 and 200 thousand. Moving from S0 to S1 with D1 fixed then raises price to $5 and lowers quantity to 150 thousand. The final quantity matches the original even though the path does not.",
+      "aHash": "3519400e6e4ce9e7287883e5166837171abe140b1544373cae4f5dcddf9f2044"
+    },
+    "after": {
+      "q": "Refer to the graph. The market starts at D1/S1 and ends at D0/S0. Demand changes first while supply is initially fixed. Which sequence and explanation fit the graph?",
+      "options": [
+        "First $4 and 200 thousand, then $3 and 150 thousand; demand falls before supply rises.",
+        "First $4 and 100 thousand, then $5 and 150 thousand; demand falls before supply falls.",
+        "First $3 and 150 thousand, then $4 and 100 thousand; supply rises before demand falls.",
+        "First $4 and 100 thousand, then $3 and 150 thousand; demand falls before supply rises."
+      ],
+      "feedback": "The initial D1/S1 intersection is $5 and 150 thousand. Holding S1 fixed, lower demand takes the market to D0/S1 at $4 and 100 thousand. Higher supply then takes it to D0/S0 at $3 and 150 thousand.",
+      "aHash": "4524e49e87aa716b74b4eb56d013147e2a6bb43d2efc32b903e01c9b808b2674"
+    }
+  },
+  {
+    "id": "40014",
+    "concept": "market-equilibrium",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "graph_trap",
+    "primarySkill": "market_shift_analysis",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary reverse graph, causal evaluation, and theoretical versus observed quantity.",
+    "numericProofs": [
+      "14-10 == 4"
+    ],
+    "before": {
+      "q": "Observed price rises from 10 to 14 while quantity stays 200. What graph evidence identifies the mechanism?",
+      "options": [
+        "Unchanged quantity proves neither curve shifted",
+        "Higher price proves only demand shifted",
+        "The labeled curves show demand right and supply left",
+        "Point B proves both curves increased"
+      ],
+      "feedback": "The outcome alone is not unique; the displayed curve shifts identify the mechanism.",
+      "aHash": "7a9cd8c38fe2be5e744113c2addaf9d3af6b26f87e353bf8fa7f62c3310b61d7"
+    },
+    "after": {
+      "q": "Refer to the movie-ticket graph. An analyst explains the move from B back to A by cheaper streaming substitutes and lower theater operating costs. Which evaluation uses both the determinants and the endpoints?",
+      "options": [
+        "Inconsistent: cheaper substitutes increase movie demand, so both curves shift right.",
+        "Consistent: both demand and supply fall, leaving quantity fixed at 200 thousand.",
+        "Consistent: demand falls and supply rises; price falls $4 while quantity stays 200 thousand.",
+        "Inconsistent: unchanged quantity rules out any change in demand or supply."
+      ],
+      "feedback": "Cheaper streaming substitutes reduce movie demand from D1 to D0; lower operating costs increase supply from S1 to S0. B is $14 and A is $10, both at 200 thousand. Opposing quantity effects offset here, though they need not do so in every market.",
+      "aHash": "3107a7629396624ac700df85ebe3805fb210eb4b07ed6f8c66e4abdce2c62aa8"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARYBOSS-9128",
+    "concept": "market-equilibrium",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "integration",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct ambiguous size comparison using specified schedules; preserve simultaneous-shift checkpoint skill.",
+    "numericProofs": [
+      "(180-20)/4 == 40",
+      "20+2*40 == 100",
+      "(156-12)/4 == 36",
+      "12+2*36 == 84",
+      "40-36 == 4",
+      "100-84 == 16"
+    ],
+    "before": {
+      "q": "Demand decreases by more than supply decreases. Which outcome is consistent with the two shifts?",
+      "options": [
+        "Price rises and quantity rises",
+        "Price falls and quantity falls",
+        "Price is unchanged and quantity rises",
+        "Quantity is unchanged and price rises"
+      ],
+      "feedback": "Both shifts lower quantity. A larger demand decrease can also produce a lower equilibrium price.",
+      "aHash": "e4857e30e32945c0333b0551c1974985de7bf9851791baffbb3bc6742bcbbf1b"
+    },
+    "after": {
+      "q": "A market has Qd = 180 - 2P and Qs = 20 + 2P. At every price, demand then falls by 24 units and supply falls by 8 units. Which final change and explanation are correct?",
+      "options": [
+        "Price rises $4 and quantity falls 16 units; demand’s larger reduction raises price.",
+        "Price falls $4 and quantity falls 16 units; demand’s larger horizontal reduction dominates the price effect.",
+        "Price falls $4 and quantity rises 16 units; both curve reductions expand sales.",
+        "Price is unchanged and quantity falls 32 units; the horizontal reductions simply add."
+      ],
+      "feedback": "Initially 180 - 2P = 20 + 2P gives P = 40 and Q = 100. After the changes, 156 - 2P = 12 + 2P gives P = 36 and Q = 84. Stating horizontal units makes the comparison of shift sizes well defined.",
+      "aHash": "510cba1f10a7529bc388869f8afe356620ce3b176200e04bf6f301ce00f4e068"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARYBOSS-9129",
+    "concept": "market-equilibrium",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "LO4.4",
+    "type": "multi-step",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct keyed feedback/choice language that called own-price adjustments demand and supply shifts.",
+    "numericProofs": [
+      "1150-900 == 250"
+    ],
+    "before": {
+      "options": [
+        "A shortage pressures price upward until demand falls and supply rises",
+        "A surplus pressures price downward until demand rises and supply falls",
+        "A surplus pressures price upward until demand rises",
+        "The market remains fixed because quantity supplied exceeds quantity demanded"
+      ],
+      "feedback": "Excess supply creates downward pressure on price, increasing quantity demanded and reducing quantity supplied.",
+      "aHash": "f22ee17816ccad61c3a180f8889473ef1d786f359ac2c1f7cae95078896a1777"
+    },
+    "after": {
+      "options": [
+        "A 250-unit shortage pushes price up; quantity demanded falls and quantity supplied rises along unchanged curves.",
+        "A 250-unit surplus pushes price down; quantity demanded rises and quantity supplied falls along unchanged curves.",
+        "A 250-unit surplus pushes price up; demand shifts right and supply shifts left.",
+        "A 250-unit surplus leaves price fixed because planned sales exceed planned purchases."
+      ],
+      "feedback": "Quantity supplied exceeds quantity demanded by 1,150 - 900 = 250 units. Sellers face downward price pressure. Adjustment increases quantity demanded and decreases quantity supplied; it does not itself shift either curve.",
+      "aHash": "e229d7c2878c45ec86c6649bf3bc888a9485e3a2d825891754e005801f3f07f8"
+    }
+  },
+  {
+    "id": "P52B-PSIG-L-001",
+    "concept": "price-signals",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO4.5",
+    "type": "application",
+    "primarySkill": "dynamic_price_signal",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Strengthen the existing dynamic-price-signal application using heterogeneous flexibility; no policy expansion.",
+    "numericProofs": [],
+    "before": {
+      "q": "Electricity prices vary by hour to reflect system congestion. What coordinating role does time-varying pricing serve?",
+      "options": [
+        "It eliminates the need for generation capacity.",
+        "It guarantees equal bills for all users.",
+        "It shifts some demand away from periods with high marginal system cost.",
+        "It makes electricity non-scarce during peaks."
+      ],
+      "feedback": "Prices that vary with congestion communicate when consumption is most costly to the system.",
+      "aHash": "ba2d49a2c7062db9ec75331a6ea0c7bd86227653829cc641356b361bc2670cf1"
+    },
+    "after": {
+      "q": "An electricity supplier charges more during evening peaks and less overnight. Some households can delay appliance use, while others need electricity immediately. Which response shows how the price signal can coordinate scarce capacity?",
+      "options": [
+        "Flexible users shift use into the evening, reducing peak pressure because peak prices are higher.",
+        "Inflexible users must stop consuming before the price difference can affect peak demand.",
+        "Flexible users shift some use overnight, reducing peak pressure without requiring every household to shift.",
+        "All households must use less electricity over the full day for timing prices to reduce peak demand."
+      ],
+      "feedback": "Higher peak prices encourage users with flexible timing to move consumption. Daily consumption need not fall, and users with urgent needs need not shift for this coordinating effect to occur.",
+      "aHash": "fb9da159d30e9333503d3c9d2ca62399cc7ac2911f057a528ddecfc064f3a5bc"
+    }
+  },
+  {
+    "id": "P62B-ELAS-E-028",
+    "concept": "elasticity",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "ELAS.1",
+    "type": "explanation",
+    "primarySkill": "slope_vs_elasticity",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct a factual wording defect: slope itself does not vary with location on a straight line. Preserve existing graph eligibility.",
+    "numericProofs": [],
+    "before": {
+      "options": [
+        "Elasticity and slope are identical by definition",
+        "Only vertical curves have elasticity",
+        "Elasticity ignores quantity changes",
+        "Slope depends on measurement units and the price-quantity location"
+      ],
+      "feedback": "Elasticity compares percentage changes, while slope uses changes in the original price and quantity units.",
+      "aHash": "c928b77c977281cd7a11606ac2e17a177f8b0ecb537175dbdc08c4ec2b42175c"
+    },
+    "after": {
+      "options": [
+        "Slope and elasticity measure the same response in the same units.",
+        "A negative slope makes demand inelastic at every point.",
+        "A steeper-looking curve has the same elasticity at every point.",
+        "Slope uses units; elasticity compares percentage changes."
+      ],
+      "feedback": "Slope measures units of price per unit of quantity and changes when axis units change. Elasticity measures percentage responsiveness; classification also depends on the price and quantity being compared.",
+      "aHash": "48643193e256c6f8c3b28ab1630aab6715768bdedb2149e8e11b141ebc0a31d2"
+    }
+  },
+  {
+    "id": "P62B-ELAS-M-033",
+    "concept": "elasticity",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "ELAS.3",
+    "type": "analysis",
+    "primarySkill": "total_revenue_test",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Explicit graph cue; content and keyed reasoning retained.",
+    "numericProofs": [],
+    "before": {
+      "q": "Compare points C and B and calculate total revenue at each. What does the change imply about demand over that interval?"
+    },
+    "after": {
+      "q": "Refer to the graph. Compare points C and B and calculate total revenue at each. What does the change imply about demand over that interval?"
+    }
+  },
+  {
+    "id": "P62B-ELAS-M-038",
+    "concept": "elasticity",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "ELAS.4",
+    "type": "calculation",
+    "primarySkill": "pes_interpretation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Explicit graph cue; content and keyed reasoning retained.",
+    "numericProofs": [],
+    "before": {
+      "q": "When price rises from $4 to $8, how much does quantity supplied rise in the short run?"
+    },
+    "after": {
+      "q": "Refer to the graph. When price rises from $4 to $8, how much does quantity supplied rise in the short run?"
+    }
+  },
+  {
+    "id": "P62B-ELAS-M-039",
+    "concept": "elasticity",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "ELAS.4",
+    "type": "application",
+    "primarySkill": "time_horizon_supply",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Explicit graph cue; content and keyed reasoning retained.",
+    "numericProofs": [],
+    "before": {
+      "q": "Compare the short-run and long-run supply responses to the same price change. Why is the long-run response larger?"
+    },
+    "after": {
+      "q": "Refer to the graph. Compare the short-run and long-run supply responses to the same price change. Why is the long-run response larger?"
+    }
+  },
+  {
+    "id": "P62B-ELAS-H-001",
+    "concept": "elasticity",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "ELAS.2",
+    "type": "calculation",
+    "primarySkill": "ped_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Calculation-to-decision calibration using the bank’s midpoint convention, original values and setting.",
+    "numericProofs": [
+      "round(abs((360-400)/((360+400)/2)/((36-30)/((36+30)/2))),2) == 0.58",
+      "30*400 == 12000",
+      "36*360 == 12960"
+    ],
+    "before": {
+      "q": "Using the midpoint method, price for commuter rail passes changes from $10 to $12 and quantity demanded changes from 1200 to 1020. What is price elasticity of demand?",
+      "options": [
+        "0.89",
+        "0.45",
+        "1.78",
+        "1.12"
+      ],
+      "feedback": "The midpoint percentage change in quantity divided by the midpoint percentage change in price is about 0.89, so demand is inelastic.",
+      "aHash": "0003dc8ba4e379d078ccc278b8c13ca665b2440770df16f54511bf7609203239"
+    },
+    "after": {
+      "q": "A tool-rental shop compares two weekly rates. Holding demand conditions fixed, price changes from $30 to $36 and quantity demanded from 400 to 360. Using midpoint elasticity in absolute value, which calculation and revenue decision are supported for these two prices?",
+      "options": [
+        "About 0.58, inelastic; use $36 to earn $960 more.",
+        "About 0.58, inelastic; use $30 to earn $960 more.",
+        "About 1.73, elastic; use $30 to earn $960 more.",
+        "About 0.58, elastic; both prices earn the same revenue."
+      ],
+      "feedback": "Midpoint elasticity is |(360 - 400) / ((360 + 400) / 2)| divided by |(36 - 30) / ((36 + 30) / 2)|, about 0.58. Revenue is $12,000 at $30 and $12,960 at $36. Compare these feasible prices; the interval does not establish a global optimum.",
+      "aHash": "51b21349a9076d8cc7a175f34d9b03cf58b2aad4779098aff8ed92de9be7a613"
+    }
+  },
+  {
+    "id": "P62B-ELAS-H-004",
+    "concept": "elasticity",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "ELAS.2",
+    "type": "calculation",
+    "primarySkill": "ped_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Calculation-to-decision calibration using the bank’s midpoint convention, original values and setting.",
+    "numericProofs": [
+      "round(abs((360-480)/((360+480)/2)/((30-25)/((30+25)/2))),2) == 1.57",
+      "25*480 == 12000",
+      "30*360 == 10800"
+    ],
+    "before": {
+      "q": "Using the midpoint method, price for cloud-storage plans changes from $20 to $24 and quantity demanded changes from 1400 to 1120. What is price elasticity of demand?",
+      "options": [
+        "0.61",
+        "2.44",
+        "0.82",
+        "1.22"
+      ],
+      "feedback": "The midpoint percentage change in quantity divided by the midpoint percentage change in price is about 1.22, so demand is elastic.",
+      "aHash": "7f1bfb468d99e5451444f5ee3327293b7082b4a81087357ea826ee8ad176d485"
+    },
+    "after": {
+      "q": "A print service tests two poster prices. Holding demand conditions fixed, price changes from $25 to $30 and quantity demanded from 480 to 360. Using midpoint elasticity in absolute value, which calculation and revenue decision are supported for these two prices?",
+      "options": [
+        "About 1.57, elastic; use $30 to earn $1,200 more.",
+        "About 0.64, inelastic; use $30 to earn $1,200 more.",
+        "About 1.57, inelastic; both prices earn $12,000.",
+        "About 1.57, elastic; use $25 to earn $1,200 more."
+      ],
+      "feedback": "Midpoint elasticity is |(360 - 480) / ((360 + 480) / 2)| divided by |(30 - 25) / ((30 + 25) / 2)|, about 1.57. Revenue is $12,000 at $25 and $10,800 at $30. Compare these feasible prices; the interval does not establish a global optimum.",
+      "aHash": "a6ef78c9e99599a97571f3f4d3808e195cde480515c0a448c406aefef0b4ac97"
+    }
+  },
+  {
+    "id": "P62B-ELAS-H-031",
+    "concept": "elasticity",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "ELAS.2",
+    "type": "calculation",
+    "primarySkill": "midpoint_formula",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Hard graphical calculation now supports a revenue decision; explicit graph cue.",
+    "numericProofs": [
+      "round((30/45)/(4/10),2) == 1.67",
+      "12*30 == 360",
+      "8*60 == 480"
+    ],
+    "before": {
+      "q": "Using the labeled coordinates at points C and B, what is the midpoint price elasticity of demand?",
+      "options": [
+        "0.60",
+        "1.00",
+        "1.67",
+        "3.00"
+      ],
+      "feedback": "The percentage quantity change is 30/45 ≈ 66.7% and the percentage price change is 4/10 = 40%, giving elasticity about 1.67.",
+      "aHash": "ec7437ac721da5306664df58b2f7feb0bfdd20efe45e809bce4b8a3c3e135026"
+    },
+    "after": {
+      "q": "Refer to the graph. Using points C and B and midpoint percentages, which elasticity and revenue implication describe a move from C to B?",
+      "options": [
+        "About 1.67, elastic; the price cut lowers total revenue.",
+        "About 0.60, inelastic; the price cut raises total revenue.",
+        "About 1.67, elastic; the price cut raises total revenue.",
+        "About 1.00, unit elastic; total revenue is unchanged."
+      ],
+      "feedback": "C is P = 12, Q = 30 and B is P = 8, Q = 60. Midpoint elasticity is (30/45)/(4/10) = 1.67. Revenue rises from 360 to 480, so the elastic interval supports the price cut.",
+      "aHash": "688753167d3345188ea94670b31325d219ad353ccf86bb626710f5f533953fd3"
+    }
+  },
+  {
+    "id": "P62B-ELAS-H-037",
+    "concept": "elasticity",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "ELAS.2",
+    "type": "analysis",
+    "primarySkill": "elasticity_classification",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Explicit graph cue; content and keyed reasoning retained.",
+    "numericProofs": [],
+    "before": {
+      "q": "Using the labeled $10-to-$6 price change, which classification is correct?"
+    },
+    "after": {
+      "q": "Refer to the graph. Using the labeled $10-to-$6 price change, which classification is correct?"
+    }
+  },
+  {
+    "id": "PMA-ELAS-H-028",
+    "concept": "elasticity",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "ELAS.3",
+    "type": "analysis",
+    "primarySkill": "total_revenue_test",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Calculation-to-decision calibration using the bank’s midpoint convention, original values and setting.",
+    "numericProofs": [
+      "round(abs((135-150)/((135+150)/2)/((48-40)/((48+40)/2))),2) == 0.58",
+      "40*150 == 6000",
+      "48*135 == 6480"
+    ],
+    "before": {
+      "q": "A firm raises price by about 6% and quantity demanded falls by about 3%. What is the most likely effect on total revenue?",
+      "options": [
+        "It cannot be inferred from percentage changes",
+        "It should rise because demand is inelastic over this range",
+        "It should fall because demand is elastic over this range",
+        "It should stay exactly constant because quantity changed"
+      ],
+      "feedback": "Quantity changes proportionally less than price, so the price effect dominates and total revenue rises.",
+      "aHash": "7d1c079faa71cccc17e2e6d69b61fe071363c1633cc9960054d07b43941bf413"
+    },
+    "after": {
+      "q": "A garden workshop compares admission prices. Holding demand conditions fixed, price changes from $40 to $48 and quantity demanded from 150 to 135. Using midpoint elasticity in absolute value, which calculation and revenue decision are supported for these two prices?",
+      "options": [
+        "About 0.58, elastic; $40 raises revenue by $480.",
+        "About 0.58, inelastic; $48 raises revenue by $480.",
+        "About 1.73, elastic; $40 raises revenue by $480.",
+        "About 0.58, inelastic; $40 raises revenue by $480."
+      ],
+      "feedback": "Midpoint elasticity is |(135 - 150) / ((135 + 150) / 2)| divided by |(48 - 40) / ((48 + 40) / 2)|, about 0.58. Revenue is $6,000 at $40 and $6,480 at $48. Compare these feasible prices; the interval does not establish a global optimum.",
+      "aHash": "5e4d6a1a948c674ed1548c72aa25472ca7d90d0bdf3d4797761e0f2c7a77f3cf"
+    }
+  },
+  {
+    "id": "PMA-ELAS-H-029",
+    "concept": "elasticity",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "ELAS.3",
+    "type": "analysis",
+    "primarySkill": "total_revenue_test",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Calculation-to-decision calibration using the bank’s midpoint convention, original values and setting.",
+    "numericProofs": [
+      "round(abs((600-900)/((600+900)/2)/((12-9)/((12+9)/2))),2) == 1.4",
+      "9*900 == 8100",
+      "12*600 == 7200"
+    ],
+    "before": {
+      "q": "A theater lowers ticket price and observes both attendance and total revenue rise. Which inference is strongest?",
+      "options": [
+        "Demand was elastic over the price range tested",
+        "Demand was inelastic over the price range tested",
+        "Demand was perfectly inelastic over the price range tested",
+        "Income elasticity must have been negative"
+      ],
+      "feedback": "Revenue rising after a price cut means the quantity response was proportionally larger than the price decrease.",
+      "aHash": "75f013eb91082ce157e0c385c47d49773d344fbae6bbacce1907b3156ee66d88"
+    },
+    "after": {
+      "q": "A digital lesson service compares subscription prices. Holding demand conditions fixed, price changes from $9 to $12 and quantity demanded from 900 to 600. Using midpoint elasticity in absolute value, which calculation and revenue decision are supported for these two prices?",
+      "options": [
+        "About 1.40, elastic; $9 earns $900 more than $12.",
+        "About 1.40, elastic; $12 earns $900 more than $9.",
+        "About 0.71, inelastic; $12 earns $900 more than $9.",
+        "About 1.40, unit elastic; the prices earn equal revenue."
+      ],
+      "feedback": "Midpoint elasticity is |(600 - 900) / ((600 + 900) / 2)| divided by |(12 - 9) / ((12 + 9) / 2)|, about 1.4. Revenue is $8,100 at $9 and $7,200 at $12. Compare these feasible prices; the interval does not establish a global optimum.",
+      "aHash": "4955fbf06ae27b254d92f3d03c8114bc2132416b49d1c0a0b5f818a5ff862408"
+    }
+  },
+  {
+    "id": "PMA-ELAS-H-030",
+    "concept": "elasticity",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "ELAS.3",
+    "type": "analysis",
+    "primarySkill": "total_revenue_test",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Ordinary Hard schedule-to-elasticity-to-revenue advice within existing total-revenue skill.",
+    "numericProofs": [
+      "round((20/130)/(5/47.5),2) == 1.46",
+      "45*140 == 6300",
+      "50*120 == 6000"
+    ],
+    "before": {
+      "q": "A firm is currently operating on the elastic portion of its demand curve and wants to increase total revenue without shifting demand. Which move is most consistent with the total-revenue test?",
+      "options": [
+        "Raise price",
+        "Hold quantity fixed by assumption",
+        "Raise fixed cost",
+        "Lower price"
+      ],
+      "feedback": "On the elastic portion of demand, a price reduction raises total revenue because quantity responds more than proportionally.",
+      "aHash": "356a4822467a68bb5bb3412545d17c59e8c9eef217aec61d866b03ed7024c995"
+    },
+    "after": {
+      "q": "A repair service can charge $50 for 120 jobs or $45 for 140 jobs, with enough capacity for either. Holding other demand factors fixed, use midpoint elasticity to choose the higher-revenue price.",
+      "options": [
+        "About 1.46, elastic; choose $50 because elastic demand favors a higher price.",
+        "About 0.68, inelastic; choose $50 because revenue is $6,300 rather than $6,000.",
+        "About 1.00, unit elastic; choose either because the revenues are equal.",
+        "About 1.46, elastic; choose $45 because revenue is $6,300 rather than $6,000."
+      ],
+      "feedback": "The midpoint changes are 20/130 for quantity and 5/47.5 for price, giving about 1.46. Revenue is 45 × 140 = $6,300 versus 50 × 120 = $6,000. The price cut raises revenue over this interval.",
+      "aHash": "8b27d27098f5a2dd68416799cecd20e4d80b6809b1585171eb0a5f475b954082"
+    }
+  },
+  {
+    "id": "P62B-ELAS-EL-004",
+    "concept": "elasticity",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "ELAS.2",
+    "type": "calculation",
+    "primarySkill": "ped_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Elite calculation-to-decision synthesis across two intervals; no copied exam schedule.",
+    "numericProofs": [
+      "round((20/170)/(8/36),2) == .53",
+      "round((50/135)/(8/44),2) == 2.04",
+      "32*180 == 5760",
+      "40*160 == 6400",
+      "48*110 == 5280"
+    ],
+    "before": {
+      "q": "A market researcher observes intercity bus tickets: price moves from $28 to $24, while quantity demanded moves from 2400 to 3000. Use the midpoint method to estimate elasticity and select the coefficient.",
+      "options": [
+        "0.72",
+        "1.44",
+        "2.89",
+        "0.69"
+      ],
+      "feedback": "The midpoint estimate is about 1.44; this places the observation in the elastic range.",
+      "aHash": "12ae02d62ab8f3e3343b26b528fb96f3cf59b61e8547310411043dbc61d5e6b6"
+    },
+    "after": {
+      "q": "A ceramics studio has this unchanged demand schedule: $32 for 180 sessions, $40 for 160, and $48 for 110. It currently charges $40 and can serve all scheduled buyers. Which recommendation follows from midpoint elasticity and revenue across the two adjacent intervals?",
+      "options": [
+        "Choose $32: the lower interval is elastic, so the additional sessions raise revenue.",
+        "Keep $40: the lower interval is inelastic and the upper interval is elastic, so either listed change lowers revenue.",
+        "Choose $48: the upper interval is inelastic, so the higher price raises revenue.",
+        "Choose either alternative: equal $8 changes produce equal revenue gains."
+      ],
+      "feedback": "For $32–$40, midpoint elasticity is (20/170)/(8/36) ≈ 0.53. For $40–$48 it is (50/135)/(8/44) ≈ 2.04. Revenues are $5,760, $6,400, and $5,280; $40 is best among the three quoted prices.",
+      "aHash": "f3bf2e956cd4ee87cbd1856be56af6cd0dd5b0d6ad4454f8d7bbb5485834a46c"
+    }
+  },
+  {
+    "id": "P62B-ELAS-EL-015",
+    "concept": "elasticity",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "ELAS.3",
+    "type": "calculation",
+    "primarySkill": "total_revenue_formula",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Elite total-revenue skill now integrates method, classification, and pricing advice.",
+    "numericProofs": [
+      "round((70/285)/(4/22),2) == 1.35",
+      "20*320 == 6400",
+      "24*250 == 6000"
+    ],
+    "before": {
+      "q": "A firm sells 1,000 units at $20. After lowering price to $18, it sells 1,150 units. Without computing a precise midpoint coefficient, which revenue result is correct?",
+      "options": [
+        "Total revenue rises from $20,000 to $20,700",
+        "Total revenue falls from $20,000 to $18,000",
+        "Total revenue is unchanged",
+        "Revenue cannot be compared without cost data"
+      ],
+      "feedback": "Compute P × Q at each point: $20,000 versus $20,700.",
+      "aHash": "b167b7c4bbeda0ddf16a212014da4667067ea4ca12c7015326b807712cc5c4cb"
+    },
+    "after": {
+      "q": "A tour operator can serve all customers at either quoted price: $24 attracts 250 buyers and $20 attracts 320. Other demand conditions are fixed. Which midpoint estimate and revenue advice follow?",
+      "options": [
+        "About 1.35, elastic; use $20, which raises revenue by $400.",
+        "About 1.35, elastic; use $24, which raises revenue by $400.",
+        "About 0.74, inelastic; use $24, which raises revenue by $400.",
+        "About 1.00, unit elastic; the two prices earn the same revenue."
+      ],
+      "feedback": "Midpoint elasticity is (70/285)/(4/22) ≈ 1.35. The lower price earns 20 × 320 = $6,400 instead of 24 × 250 = $6,000. The larger proportional quantity response offsets the price cut.",
+      "aHash": "9b8717a533f34149015a02c1a302fcfb91536f5b77939d9ed72a5f381673a204"
+    }
+  },
+  {
+    "id": "P62B-ELAS-EL-031",
+    "concept": "elasticity",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "ELAS.3",
+    "type": "analysis",
+    "primarySkill": "total_revenue_test",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Explicit graph cue; content and keyed reasoning retained.",
+    "numericProofs": [],
+    "before": {
+      "q": "Use the price, quantity, and total-revenue change from C to B. Which elasticity conclusion follows?"
+    },
+    "after": {
+      "q": "Refer to the graph. Use the price, quantity, and total-revenue change from C to B. Which elasticity conclusion follows?"
+    }
+  },
+  {
+    "id": "P62B-ELAS-L-016",
+    "concept": "elasticity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "ELAS.4",
+    "type": "multi-step",
+    "primarySkill": "pes_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary supply calculation gains horizon comparison and an operational decision.",
+    "numericProofs": [
+      "round((20/210)/(20/90),2) == .43",
+      "(80/240)/(20/90) == 1.5",
+      "220<250<=280"
+    ],
+    "before": {
+      "q": "The price of modular solar installations changes from $1000 to $1150, and quantity supplied changes from 300 to 390. Which midpoint elasticity and interpretation are correct?",
+      "options": [
+        "About 0.53; the reciprocal must be used for supply",
+        "About 1.87; elastic supply, so producers respond proportionally more than price",
+        "About 0.93; supply is unit elastic",
+        "Elasticity is zero because supply slopes upward"
+      ],
+      "feedback": "The midpoint coefficient is about 1.87; the magnitude determines the classification.",
+      "aHash": "4b7403a19160034e7dde3ff2cd8bceeb5481481f6013ddbfc2e41fffadad2707"
+    },
+    "after": {
+      "q": "At a price of $80, 200 equipment-rental days are supplied. At $100, supply is 220 days this month and 280 after firms expand their fleets. Use midpoint elasticity. Which conclusion fits a buyer seeking 250 rental days at $100?",
+      "options": [
+        "Supply is about 1.50 this month and 0.43 after expansion; only current capacity meets the requirement.",
+        "Supply is about 0.43 this month and 1.50 after expansion; only the expanded fleet meets the requirement.",
+        "Supply is about 0.43 in both periods because the price change is the same.",
+        "Supply is about 1.50 in both periods because any quantity increase is elastic."
+      ],
+      "feedback": "The common midpoint price change is 20/90. Quantity changes are 20/210 this month and 80/240 after expansion. PES is about 0.43 and 1.50. At $100, 220 is below the required 250, while 280 exceeds it.",
+      "aHash": "4d1ee30a210bf01a804e7d70a2a087751ca4b8354114a6f32838c3001c7b5efd"
+    }
+  },
+  {
+    "id": "P62B-ELAS-L-024",
+    "concept": "elasticity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "ELAS.5",
+    "type": "multi-step",
+    "primarySkill": "income_elasticity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legitimately selected income elasticity: classification followed by a comparative forecast.",
+    "numericProofs": [
+      "6/4 == 1.5",
+      "-2/4 == -.5",
+      "1.5*-2 == -3",
+      "-.5*-2 == 1"
+    ],
+    "before": {
+      "q": "Household income changes by 4 percent and demand for international travel changes by 9 percent. Which estimate and classification are correct?",
+      "options": [
+        "Income elasticity is 0.44; the product is classified from the reciprocal",
+        "Income elasticity is 2.25; the product is an income-elastic normal good",
+        "Income elasticity is 2.25; the sign has no economic meaning",
+        "The product cannot be classified because price is not provided"
+      ],
+      "feedback": "Divide the demand percentage change by the income percentage change: 2.25. The sign and magnitude identify an income-elastic normal good.",
+      "aHash": "242157791d6e45be42e9503401bf8c0d773106e0b84493061b6b22714a5909f4"
+    },
+    "after": {
+      "q": "Holding prices fixed, a 4% income increase raises demand for Product A by 6% and lowers demand for Product B by 2%. If income next falls 2%, use the same local elasticities to forecast the two demands approximately.",
+      "options": [
+        "A rises 3% and B falls 1%; A is normal and B is inferior.",
+        "A falls 3% and B rises 1%; A is normal and B is inferior.",
+        "A falls 3% and B falls 1%; discard both income-elasticity signs.",
+        "A falls 1.33% and B rises 4%; use income change divided by demand change."
+      ],
+      "feedback": "Income elasticities are 6/4 = 1.5 for A and -2/4 = -0.5 for B. Multiplying each signed coefficient by -2% gives -3% and +1%. The signs must be retained for income elasticity.",
+      "aHash": "a86461a817c4fe28eac6ed0177321bb4c90ea3d57df779a90d3aae7a9400626e"
+    }
+  },
+  {
+    "id": "P62B-ELAS-L-029",
+    "concept": "elasticity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "ELAS.5",
+    "type": "multi-step",
+    "primarySkill": "cross_price_elasticity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Cross-price sign, calculation and forecast replace a weak direct ratio; original related-product setting.",
+    "numericProofs": [
+      "-6/8 == -.75",
+      "-.75*-4 == 3"
+    ],
+    "before": {
+      "q": "The price of gasoline changes by 12 percent, and demand for electric vehicles changes by -9 percent. Which cross-price result is correct?",
+      "options": [
+        "Cross-price elasticity is -1.33; the reciprocal defines the relationship",
+        "Cross-price elasticity is 0.75; the goods are substitutes regardless of sign",
+        "Cross-price elasticity is -0.75; the goods are complements",
+        "The goods are unrelated because neither quantity supplied nor income is given"
+      ],
+      "feedback": "The coefficient is -9% ÷ 12% = -0.75. Its sign identifies complements.",
+      "aHash": "4feb942726a0e7b057fd8f7bb5bfb7fccbe5622469477c83e9cfcdd031d16eb6"
+    },
+    "after": {
+      "q": "Holding other factors fixed, an 8% increase in camera prices reduces demand for a compatible lens by 6%. A supplier next forecasts a 4% camera-price decrease. Which cross-price estimate and approximate lens-demand forecast are consistent?",
+      "options": [
+        "+0.75; lenses and cameras are substitutes, and lens demand falls about 3%.",
+        "-0.75; lenses and cameras are complements, and lens demand falls about 3%.",
+        "-0.75; lenses and cameras are complements, and lens demand rises about 3%.",
+        "-1.33; lenses and cameras are complements, and lens demand rises about 5.33%."
+      ],
+      "feedback": "Cross-price elasticity is -6/8 = -0.75. The negative sign indicates complements. Applying the same local estimate to a -4% camera-price change gives (-0.75)(-4%) = +3% lens demand.",
+      "aHash": "0d55e1c656cff4f1001d922f7389f7ef1f8f8be23180e9bc811c469592da35c5"
+    }
+  },
+  {
+    "id": "P62B-ELAS-L-030",
+    "concept": "elasticity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "ELAS.5",
+    "type": "multi-step",
+    "primarySkill": "cross_price_elasticity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Remove near-duplicate relationship distractor and integrate a signed forecast.",
+    "numericProofs": [
+      "10/8 == 1.25",
+      "1.25*-4 == -5"
+    ],
+    "before": {
+      "q": "The price of high-speed rail changes by 10 percent, and demand for air travel changes by 6 percent. Which cross-price result is correct?",
+      "options": [
+        "Cross-price elasticity is 1.67; the reciprocal defines the relationship",
+        "Cross-price elasticity is 0.6; the goods are substitutes regardless of sign",
+        "The goods are unrelated because neither quantity supplied nor income is given",
+        "Cross-price elasticity is 0.6; the goods are substitutes"
+      ],
+      "feedback": "The coefficient is 6% ÷ 10% = 0.6. Its sign identifies substitutes.",
+      "aHash": "65790edb9c1619c1d54d473937da87ea1d27886677908b92535529ee0dfc6aec"
+    },
+    "after": {
+      "q": "A controlled price test finds that an 8% increase in Service Y’s price raises demand for Service X by 10%. If Y next cuts price 4%, which estimate, relationship, and approximate forecast follow?",
+      "options": [
+        "-1.25, complements; demand for X rises about 5%.",
+        "+1.25, substitutes; demand for X rises about 5%.",
+        "+0.80, substitutes; demand for X falls about 3.2%.",
+        "+1.25, substitutes; demand for X falls about 5%."
+      ],
+      "feedback": "Cross-price elasticity is 10/8 = +1.25. Its positive sign indicates substitutes. Applying that signed estimate to -4% gives a -5% change in X demand, with other factors fixed.",
+      "aHash": "0f3c93ee514f1504f6bb31fcbf5b9186b2e48eef139a627325e65f5ee9a7694f"
+    }
+  },
+  {
+    "id": "P62B-ELAS-L-032",
+    "concept": "elasticity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "ELAS.5",
+    "type": "multi-step",
+    "primarySkill": "cross_price_elasticity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary signed cross-price application and error diagnosis; eliminate near-duplicate correct relationship.",
+    "numericProofs": [
+      ".8*-5 == -4"
+    ],
+    "before": {
+      "q": "The price of brand B cereal changes by -8 percent, and demand for brand A cereal changes by -10 percent. Which cross-price result is correct?",
+      "options": [
+        "Cross-price elasticity is 0.8; the reciprocal defines the relationship",
+        "Cross-price elasticity is 1.25; the goods are substitutes",
+        "Cross-price elasticity is 1.25; the goods are substitutes regardless of sign",
+        "The goods are unrelated because neither quantity supplied nor income is given"
+      ],
+      "feedback": "The coefficient is -10% ÷ -8% = 1.25. Its sign identifies substitutes.",
+      "aHash": "dfe07499616a2517ca15d8417210bf2691a48221f4bb86d47d8e26a8b47489f4"
+    },
+    "after": {
+      "q": "Two rival brands have cross-price elasticity +0.8 for A’s demand with respect to B’s price. Brand A expects B to cut price 5%, while income and A’s own price remain fixed. A proposes stocking 4% more units because the coefficient is positive. Evaluate the plan.",
+      "options": [
+        "The sign identifies substitutes and predicts a 4% demand increase, so the stock increase matches the forecast.",
+        "The sign identifies substitutes, but the forecast is a 4% demand decrease, so the proposed stock increase reverses the response.",
+        "The sign identifies complements and predicts a 4% demand decrease, so the stock increase reverses the response.",
+        "The sign identifies substitutes but predicts a 6.25% demand decrease, so division gives the correct forecast."
+      ],
+      "feedback": "A positive cross-price coefficient means X demand moves in the same direction as the other product’s price. Here 0.8 × (-5%) = -4%. A cheaper substitute reduces demand for A; positive elasticity does not mean demand always increases.",
+      "aHash": "83ce26d948c6f2f7f9668f060aaf69553f049a27ba160bc89e5cc748488f69c1"
+    }
+  },
+  {
+    "id": "P62B-ELAS-L-092",
+    "concept": "elasticity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "ELAS.3",
+    "type": "application",
+    "primarySkill": "total_revenue_test",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary graph decision with a relevant sales constraint; remove stated target answer.",
+    "numericProofs": [
+      "4*90 == 360",
+      "8*60 == 480",
+      "12*30 == 360",
+      "480-360 == 120",
+      "60>=50",
+      "30<50"
+    ],
+    "before": {
+      "q": "Starting from point A, which pricing move toward the midpoint raises total revenue on the displayed demand curve?",
+      "options": [
+        "Cut price farther below point A",
+        "Raise price toward point C but skip B",
+        "Raise price toward point B",
+        "Keep price fixed because revenue cannot change"
+      ],
+      "feedback": "At A, demand is inelastic. Moving toward B raises price from $4 to $8 while total revenue rises from $360 to $480.",
+      "aHash": "5c3d2df80b6e35afda4dc6a316aba67cc6fe951a0432fb2f5f4da2e9168784d8"
+    },
+    "after": {
+      "q": "Refer to the graph. A seller at A can choose the posted price at A, B, or C and can serve all buyers. It wants higher revenue while retaining at least 50 unit sales. Which price is best, and what explains the result?",
+      "options": [
+        "The price at C; its highest posted price also gives the highest revenue and meets the minimum.",
+        "The price at A; its largest quantity necessarily gives the highest revenue.",
+        "The price at B; revenue rises by 120 while sales remain above the minimum.",
+        "The price at B; revenue stays unchanged but sales rise above their level at A."
+      ],
+      "feedback": "A earns 4 × 90 = 360, B earns 8 × 60 = 480, and C earns 12 × 30 = 360. B raises revenue by 120 and sells 60 units. C also fails the 50-unit minimum. The A-to-B interval is inelastic, so the price increase raises revenue.",
+      "aHash": "233a849e296596d0ccdabfd538bcc1bb31939f358f608032c859ccfd9c5d69f2"
+    }
+  },
+  {
+    "id": "P62B-ELAS-L-093",
+    "concept": "elasticity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "ELAS.3",
+    "type": "application",
+    "primarySkill": "total_revenue_test",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary elasticity/revenue decision integrates a capacity condition and graph evidence.",
+    "numericProofs": [
+      "8*60 == 480",
+      "4*min(90,70) == 280",
+      "12*30 == 360"
+    ],
+    "before": {
+      "q": "At point C, the seller is on the elastic portion of demand. Which direction of price change moves revenue toward its maximum at B?",
+      "options": [
+        "Raise price farther above point C",
+        "Lower price toward point A without passing B",
+        "Keep price fixed because C already maximizes revenue",
+        "Lower price toward point B"
+      ],
+      "feedback": "At C, demand is elastic. Moving toward B lowers price and raises total revenue from $360 to $480.",
+      "aHash": "8e7196f422699351c2e29babb3f8328deee441e33873f5411fb359e99cd6326b"
+    },
+    "after": {
+      "q": "Refer to the graph. A seller at C can instead post the price at A or B, but capacity is limited to 70 units and sales equal the smaller of demand and capacity. Which change earns more revenue, and why is demand elasticity alone insufficient?",
+      "options": [
+        "Move to A: revenue is 360; all 90 demanded units can be sold.",
+        "Move to A: revenue is 480; a larger price cut guarantees a larger revenue increase.",
+        "Stay at C: revenue is 480; capacity makes the B price infeasible.",
+        "Move to B: revenue is 480; at A capacity limits revenue to 280."
+      ],
+      "feedback": "At B, 60 units are demanded and can be sold, earning 8 × 60 = 480. At A, demand is 90 but only 70 can be sold, earning 4 × 70 = 280. C earns 360. Elasticity describes demand, while a binding sales constraint changes realized revenue.",
+      "aHash": "f871a521b4add928e412595297b6fc807a78b7ab22e67f210ee5ba0b48768b66"
+    }
+  },
+  {
+    "id": "P62B-ELAS-L-095",
+    "concept": "elasticity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "ELAS.1",
+    "type": "application",
+    "primarySkill": "substitutes_determinant",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Legendary determinant inference plus graph-based coefficient/revenue comparison.",
+    "numericProofs": [
+      "round((50/70)/(4/8),2) == 1.43",
+      "round((20/45)/(4/8),2) == .89",
+      "10*45 == 450",
+      "6*95 == 570",
+      "10*35 == 350",
+      "6*55 == 330"
+    ],
+    "before": {
+      "q": "Suppose D1 and D2 describe similar goods, but one has many close substitutes and the other has few. Which assignment is most consistent with the displayed responses?",
+      "options": [
+        "D2 has more close substitutes than D1",
+        "D1 has more close substitutes than D2",
+        "Both must have the same number of substitutes",
+        "Substitutes cannot affect demand elasticity"
+      ],
+      "feedback": "More close substitutes make buyers more responsive to price changes, consistent with the larger response on D1.",
+      "aHash": "3a22330e036dd79e22a8641d17e83ab7ea2b96c964ebee0d5454294b7a4c140e"
+    },
+    "after": {
+      "q": "Refer to the graph. Two otherwise comparable products face D1 and D2 over the marked $10-to-$6 interval. Which pairing of substitute availability and revenue response is consistent with midpoint elasticity?",
+      "options": [
+        "D2 plausibly has more close substitutes; the price cut raises D1 revenue but lowers D2 revenue.",
+        "D1 plausibly has more close substitutes; the price cut raises D1 revenue but lowers D2 revenue.",
+        "D1 plausibly has more close substitutes; the price cut lowers D1 revenue but raises D2 revenue.",
+        "Both have the same responsiveness; equal price changes make both revenues unchanged."
+      ],
+      "feedback": "The midpoint coefficients are about 1.43 for D1 and 0.89 for D2. More substitutes is a plausible explanation for D1’s greater responsiveness, not proof from slope alone. Revenue changes from 450 to 570 on D1 and from 350 to 330 on D2.",
+      "aHash": "2b78a95db52c76af11e8aa99b53f957ae46aa87c30141d222f5cc0dabf8a0526"
+    }
+  },
+  {
+    "id": "P62B-ELAS-L-097",
+    "concept": "elasticity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "ELAS.4",
+    "type": "synthesis",
+    "primarySkill": "pes_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Supply-elasticity synthesis: computation, relative versus absolute classification, and capacity application.",
+    "numericProofs": [
+      "round((10/65)/(4/6),2) == .23",
+      "(40/80)/(4/6) == .75",
+      "70<90<=100"
+    ],
+    "before": {
+      "q": "Refer to the graph. Calculate the midpoint price elasticity of supply for the short-run and long-run curves. Approximately how many times larger is the long-run elasticity?",
+      "options": [
+        "1.30 times",
+        "3.25 times",
+        "2.00 times",
+        "7.50 times"
+      ],
+      "feedback": "0.75 ÷ 0.23 is about 3.25, confirming a substantially larger long-run response.",
+      "aHash": "8625f1e9c40c4159f71d666108228428fbd30d32c2e4bd99c88296dec674c8a7"
+    },
+    "after": {
+      "q": "Refer to the graph. A buyer needs 90 units when price has risen from the common starting point to $8. Using midpoint supply elasticities, which comparison and procurement conclusion are supported?",
+      "options": [
+        "Short run about 0.75, long run 0.23; 90 units can be supplied only in the short run.",
+        "Short run about 0.23, long run 0.75; 90 units can be supplied only after the longer adjustment.",
+        "Short run about 0.23, long run 0.75; neither horizon can supply 90 units at $8.",
+        "Short run about 0.23, long run 1.33; longer-run supply is elastic because it is flatter."
+      ],
+      "feedback": "Starting quantity is 60 at $4. At $8, short-run quantity is 70 and long-run quantity is 100. Midpoint PES is (10/65)/(4/6) ≈ 0.23 and (40/80)/(4/6) = 0.75. Both are inelastic over this interval, but only the long run reaches the 90-unit requirement.",
+      "aHash": "b807b740ccb1e232462003d80f596685b1a9626d5b7e3d4ffe24b78c1898eabc"
+    }
+  },
+  {
+    "id": "P62B-ELAS-B1-019",
+    "concept": "elasticity",
+    "pool": "boss",
+    "difficulty": "easy",
+    "objective": "ELAS.2",
+    "type": "checkpoint",
+    "primarySkill": "total_revenue_test",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Answer uniqueness: a distractor saying revenue falls after a price decrease was also true at B.",
+    "numericProofs": [
+      "8*60 == 480",
+      "7*67.5 < 480",
+      "9*52.5 < 480"
+    ],
+    "before": {
+      "options": [
+        "Total revenue is locally maximized",
+        "Total revenue must rise in either direction",
+        "Total revenue must fall as price falls",
+        "Total revenue is zero at the midpoint"
+      ],
+      "feedback": "Point B is the unit-elastic midpoint of the linear demand curve, where total revenue is at its maximum among nearby points.",
+      "aHash": "00007ffbe233bc9546654a982a07f5cb0acd63b1964b36a1c3782c4ec5ecbfd5"
+    },
+    "after": {
+      "options": [
+        "Total revenue is locally maximized.",
+        "Total revenue rises for small movements in both directions.",
+        "Total revenue is unchanged at every lower price.",
+        "Total revenue is zero at the midpoint."
+      ],
+      "feedback": "At B the linear demand curve is unit elastic and revenue is at its local maximum. A small movement in either direction lowers revenue; the first-order change is zero at the exact maximum.",
+      "aHash": "bbf6bcf86222704ecf9306af198e39655e9d2e11fd1008561dc0b3ca943d9f07"
+    }
+  },
+  {
+    "id": "P62B-ELAS-B2-019",
+    "concept": "elasticity",
+    "pool": "boss",
+    "difficulty": "medium",
+    "objective": "ELAS.3",
+    "type": "checkpoint",
+    "primarySkill": "total_revenue_test",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Explicit graph cue; content and keyed reasoning retained.",
+    "numericProofs": [],
+    "before": {
+      "q": "Checkpoint: Calculate total revenue at C, B, and A. Which pattern is correct as price falls across those points?"
+    },
+    "after": {
+      "q": "Refer to the graph. Checkpoint: Calculate total revenue at C, B, and A. Which pattern is correct as price falls across those points?"
+    }
+  }
+]

@@ -1,0 +1,392 @@
+{
+  "uniqueBefore": 789,
+  "uniqueAfter": 789,
+  "contentRevised": 59,
+  "pathRevised": 23,
+  "pathOnly": 23,
+  "recordUnchanged": 707,
+  "added": 0,
+  "removed": 0,
+  "contentByConcept": {
+    "competitive-markets": 4,
+    "demand": 6,
+    "supply": 8,
+    "market-equilibrium": 15,
+    "price-signals": 1,
+    "elasticity": 25
+  },
+  "contentByDifficulty": {
+    "legendary": 27,
+    "easy": 5,
+    "hard": 11,
+    "elite": 12,
+    "medium": 4
+  },
+  "allChangesByDifficulty": {
+    "legendary": 32,
+    "easy": 5,
+    "medium": 14,
+    "hard": 19,
+    "elite": 12
+  },
+  "accessibilityAssetRecords": 11,
+  "graphCount": 134,
+  "assetRuntimeCount": 21,
+  "oldLibrarySha256": "098bf47591ab9b39091130336b8c2ab368716407ea215257c1ae374684bd6c85",
+  "newLibrarySha256": "b071adea394fbb8d33322bf5c0ca9fc3af3faf6af2dacd03508fa2976e683b9c",
+  "compositionCounts": {
+    "easy": 100,
+    "medium": 106,
+    "hard": 125,
+    "elite": 69,
+    "legendary": 139,
+    "easyBoss": 32,
+    "mediumBoss": 38,
+    "finalBoss": 32,
+    "legendaryBoss": 45,
+    "repair": 49,
+    "repairSeed": 2,
+    "bridge": 52,
+    "calculation": 34,
+    "integration": 0,
+    "challengeOpening": 0,
+    "challengeMiddle": 0,
+    "challengeFinal": 0,
+    "challengeLegendary": 0,
+    "challengeTotal": 0,
+    "graph": 134,
+    "graphSafe": 124,
+    "graphSafeByDifficulty": {
+      "easy": 15,
+      "medium": 37,
+      "hard": 29,
+      "elite": 22,
+      "legendary": 21
+    },
+    "fadingFortuneEligible": 539,
+    "fadingFortuneByDifficulty": {
+      "easy": 100,
+      "medium": 106,
+      "hard": 125,
+      "elite": 69,
+      "legendary": 139
+    },
+    "riskRewardEligible": 539,
+    "riskRewardByDifficulty": {
+      "easy": 100,
+      "medium": 106,
+      "hard": 125,
+      "elite": 69,
+      "legendary": 139
+    },
+    "assets": 21,
+    "totalCanonical": 789
+  },
+  "modeValidation": {
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 100
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 106
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 125
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 32
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 38
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 32
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 49
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 52
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 100
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 106
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 125
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 49
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 52
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 100
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 106
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 125
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 49
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 52
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 100
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 106
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 125
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 100
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 106
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 125
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 49
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 52
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 139
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 45
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 100
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 106
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 125
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 32
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 38
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 32
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 49
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 52
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 124
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 539
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 539
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ]
+  },
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 789,
+    "issues": []
+  },
+  "graphValidation": {
+    "ok": true,
+    "questionCount": 129,
+    "assetCount": 21,
+    "issues": []
+  },
+  "warnings": [],
+  "unrelatedAndDerivedDefinitionsUnchanged": 143,
+  "conceptReviewRoutesUnchanged": true,
+  "allSourceRecordRoutingUnchanged": true,
+  "allPoolMembershipsAndOrderUnchanged": true,
+  "allResolvedViewMembershipsUnchanged": true,
+  "graphBytesUnchanged": true
+}

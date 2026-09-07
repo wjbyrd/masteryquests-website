@@ -1,0 +1,396 @@
+{
+  "uniqueBefore": 710,
+  "uniqueAfter": 710,
+  "contentRevised": 57,
+  "pathRevised": 50,
+  "pathOnly": 39,
+  "recordUnchanged": 614,
+  "added": 0,
+  "removed": 0,
+  "contentByConcept": {
+    "consumer-and-producer-surplus": 15,
+    "binding-price-ceilings": 8,
+    "binding-price-floors": 4,
+    "tax-wedges-and-revenue": 14,
+    "statutory-versus-economic-tax-incidence": 7,
+    "tax-incidence": 9
+  },
+  "contentByDifficulty": {
+    "hard": 14,
+    "elite": 13,
+    "legendary": 26,
+    "medium": 4
+  },
+  "allChangesByDifficulty": {
+    "hard": 29,
+    "elite": 13,
+    "legendary": 31,
+    "medium": 23
+  },
+  "accessibilityAssetRecords": 16,
+  "graphCount": 165,
+  "assetRuntimeCount": 30,
+  "oldLibrarySha256": "b071adea394fbb8d33322bf5c0ca9fc3af3faf6af2dacd03508fa2976e683b9c",
+  "newLibrarySha256": "9e8907576d339d577d1ea346383180476cef43da5be484e19f31660ad8f65995",
+  "compositionCounts": {
+    "easy": 78,
+    "medium": 99,
+    "hard": 110,
+    "elite": 67,
+    "legendary": 133,
+    "easyBoss": 18,
+    "mediumBoss": 18,
+    "finalBoss": 39,
+    "legendaryBoss": 51,
+    "repair": 42,
+    "repairSeed": 1,
+    "bridge": 54,
+    "calculation": 60,
+    "integration": 0,
+    "challengeOpening": 0,
+    "challengeMiddle": 0,
+    "challengeFinal": 0,
+    "challengeLegendary": 0,
+    "challengeTotal": 0,
+    "graph": 165,
+    "graphSafe": 97,
+    "graphSafeByDifficulty": {
+      "easy": 4,
+      "medium": 20,
+      "hard": 33,
+      "elite": 17,
+      "legendary": 23
+    },
+    "fadingFortuneEligible": 487,
+    "fadingFortuneByDifficulty": {
+      "easy": 78,
+      "medium": 99,
+      "hard": 110,
+      "elite": 67,
+      "legendary": 133
+    },
+    "riskRewardEligible": 487,
+    "riskRewardByDifficulty": {
+      "easy": 78,
+      "medium": 99,
+      "hard": 110,
+      "elite": 67,
+      "legendary": 133
+    },
+    "assets": 30,
+    "totalCanonical": 710
+  },
+  "modeValidation": {
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 78
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 99
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 110
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 39
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 42
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 54
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 78
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 99
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 110
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 42
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 54
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 78
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 99
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 110
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 42
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 54
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 78
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 99
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 110
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 78
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 99
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 110
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 42
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 54
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 133
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 51
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 78
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 99
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 110
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 39
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 42
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 54
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 97
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 487
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 487
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ]
+  },
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 710,
+    "issues": []
+  },
+  "graphValidation": {
+    "ok": true,
+    "questionCount": 115,
+    "assetCount": 30,
+    "issues": []
+  },
+  "warnings": [
+    {
+      "type": "repair",
+      "conceptId": "statutory-versus-economic-tax-incidence",
+      "message": "Statutory versus Economic Tax Incidence has no direct repair route."
+    }
+  ],
+  "unrelatedAndDerivedDefinitionsUnchanged": 143,
+  "conceptReviewRoutesUnchanged": true,
+  "allSourceRecordRoutingUnchanged": true,
+  "allPoolMembershipsAndOrderUnchanged": true,
+  "allResolvedViewMembershipsUnchanged": true,
+  "graphBytesUnchanged": true
+}

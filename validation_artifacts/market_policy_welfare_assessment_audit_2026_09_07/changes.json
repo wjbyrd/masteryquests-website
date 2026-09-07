@@ -1,0 +1,2679 @@
+[
+  {
+    "id": "P62C-CPS-H-005",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "CPS.2",
+    "type": "graph_calculation",
+    "primarySkill": "consumer_surplus_graph_area",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Disambiguate equal numerical CS/PS expressions by requiring the correct region.",
+    "numericProofs": [
+      "0.5*8*(18-10)==32",
+      "8*10==80",
+      "0.5*8*(18-2)==64"
+    ],
+    "before": {
+      "q": "Which expression correctly calculates consumer surplus in the balanced equilibrium graph?",
+      "options": [
+        "½ × 8 × ($18 − $10)",
+        "8 × $10",
+        "½ × 8 × ($10 − $2)",
+        "½ × 16 × $10"
+      ],
+      "feedback": "Consumer surplus is the triangle above the $10 equilibrium price and below demand through Q = 8.",
+      "aHash": "fcd2c23aa9547da868ef023580ab370ca40fb64608d32a512cad3dd91cac79d4"
+    },
+    "after": {
+      "q": "Refer to the balanced-market graph. Which amount and region represent consumer surplus at E?",
+      "options": [
+        "$32, below demand and above the market price, up to the traded quantity",
+        "$32, above supply and below the market price, up to the traded quantity",
+        "$80, the price-times-quantity rectangle",
+        "$64, the entire region between demand and supply up to E"
+      ],
+      "feedback": "At E, quantity is 8 and price is $10. Consumer surplus is 0.5 × 8 × ($18 − $10) = $32. The equally sized area above supply is producer surplus; expenditure is $80 and total surplus is $64.",
+      "aHash": "3c70910228787e988e8d40e05909d2107262a335cb40a171b9e69e5de1e1f00b"
+    }
+  },
+  {
+    "id": "P62C-CPS-H-007",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "CPS.2",
+    "type": "graph_calculation",
+    "primarySkill": "total_surplus_graph",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace equilibrium-only lookup with ordinary Hard welfare calculation and interpretation.",
+    "numericProofs": [
+      "0.5*5*(24-4)==50",
+      "5*14==70"
+    ],
+    "before": {
+      "q": "Which price-and-quantity pair identifies the competitive equilibrium in the compact market graph?",
+      "options": [
+        "$14 and 5 units",
+        "$18 and 5 units",
+        "$14 and 8 units",
+        "$24 and 5 units"
+      ],
+      "feedback": "The demand and supply curves cross at E, where price is $14 and quantity is 5.",
+      "aHash": "4bf47056d7435b96709aa590a0aef8de8bc700fa0f84ba00b141318e120e8472"
+    },
+    "after": {
+      "q": "Refer to the compact-market graph. At E, what is total surplus, and why is it different from buyer expenditure?",
+      "options": [
+        "$50; it measures value above production cost, rather than payments",
+        "$70; it equals the price paid for all units",
+        "$25; it includes only the area above the price",
+        "$100; it is the full intercept-gap rectangle"
+      ],
+      "feedback": "The graph gives Q = 5, P = $14, demand intercept $24 and supply intercept $4. CS and PS are each $25, so total surplus is $50. Payments of $70 transfer money between market participants.",
+      "aHash": "2037ac84bf58c3144f6b0674813aee635900afe5ee2c981446dac666f6c89bc2"
+    }
+  },
+  {
+    "id": "P62C-CPS-H-027",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "CPS.4",
+    "type": "analysis",
+    "primarySkill": "total_surplus",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct an ambiguous before/after baseline.",
+    "numericProofs": [
+      "45+35-12==68"
+    ],
+    "before": {
+      "q": "Consumer surplus is $45, producer surplus is $35, and a prevented exchange would have created $12. New total surplus is:",
+      "options": [
+        "$68",
+        "$80",
+        "$92",
+        "$57"
+      ],
+      "feedback": "Initial total is $80; subtract $12."
+    },
+    "after": {
+      "q": "Before a restriction, consumer surplus is $45 and producer surplus is $35. The restriction prevents exchanges with combined gains of $12 and has no other effects. What is total surplus afterward?",
+      "options": [
+        "$68",
+        "$80",
+        "$92",
+        "$12"
+      ],
+      "feedback": "Initial total surplus is $45 + $35 = $80. The prevented beneficial exchanges remove $12, leaving $68. The question specifies that the reported CS and PS precede the restriction."
+    }
+  },
+  {
+    "id": "P62C-CPS-EL-003",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "CPS.6",
+    "type": "analysis",
+    "primarySkill": "surplus_policy_application",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace generic feedback with complete welfare accounting.",
+    "numericProofs": [
+      "-60+44+10==-6"
+    ],
+    "before": {
+      "feedback": "Add -60+44+10."
+    },
+    "after": {
+      "feedback": "Include government revenue once: −$60 + $44 + $10 = −$6. The $10 received by government is a transfer of surplus, not another loss. Total surplus falls by $6."
+    }
+  },
+  {
+    "id": "P62C-CPS-EL-004",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "CPS.6",
+    "type": "analysis",
+    "primarySkill": "surplus_policy_application",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace generic feedback with resource-cost reasoning.",
+    "numericProofs": [
+      "35-50-4==-19"
+    ],
+    "before": {
+      "feedback": "Add +35-50-4."
+    },
+    "after": {
+      "feedback": "The consumer and producer changes sum to $35 − $50 = −$15. Administration consumes another $4 of real resources, so the total change is −$19. A resource cost reduces surplus; it is not just a payment transferred to another participant."
+    }
+  },
+  {
+    "id": "P62C-CPS-EL-023",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "CPS.6",
+    "type": "analysis",
+    "primarySkill": "surplus_policy_application",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct incomplete aggregation of successful and displaced buyers.",
+    "numericProofs": [
+      "25-5-40==-20"
+    ],
+    "before": {
+      "q": "A binding price ceiling raises consumer surplus for successful buyers by $25 and lowers producer surplus by $40. No search costs. Total surplus:",
+      "options": [
+        "Rises by $25",
+        "Falls by $40",
+        "Falls by $15",
+        "Is unchanged"
+      ],
+      "feedback": "Net change is +25-40.",
+      "aHash": "b57202c28aabed059ab97696fb0245b453b2f02b215205396e412486e65a6328"
+    },
+    "after": {
+      "q": "A ceiling increases surplus for continuing buyers by $25, but buyers who lose access forfeit $5 of prior surplus. Producer surplus falls by $40. There are no search costs or other effects. What happens to total surplus?",
+      "options": [
+        "It falls by $15",
+        "It rises by $20",
+        "It falls by $20",
+        "It falls by $70"
+      ],
+      "feedback": "Count all consumers: their net change is +$25 − $5 = +$20. Adding the $40 producer loss gives a $20 total-surplus loss. Counting only successful buyers understates the loss.",
+      "aHash": "5e697ec461f2eda3999e944bf7af38c7d7e15daf819bad86705ff790e3d6ba47"
+    }
+  },
+  {
+    "id": "P62C-CPS-L-021",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "CPS.2",
+    "type": "legendary",
+    "primarySkill": "consumer_surplus_graph_area",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace expenditure lookup with conditional control/welfare comparison on the same graph.",
+    "numericProofs": [
+      "(30-12)*6-6**2==72",
+      "0.5*8*(30-14)==64",
+      "(30*6-6**2)-12*6==72",
+      "6+6==12"
+    ],
+    "before": {
+      "q": "Refer to the graph. What is total buyer expenditure at the asymmetric competitive equilibrium?",
+      "options": [
+        "$112",
+        "$64",
+        "$96",
+        "$176"
+      ],
+      "feedback": "Equilibrium price is $14 and quantity is 8, so buyer expenditure is $112.",
+      "aHash": "a606ea52767922a9ad5c87ef0bc4cdf86356ad43b9a4e2e3b531978689d1131c"
+    },
+    "after": {
+      "q": "Refer to the asymmetric-market graph. Suppose a ceiling of $12 permits six units to trade, allocated to the highest-value buyers and produced by the lowest-cost sellers. How does consumer surplus compare with its value at E?",
+      "options": [
+        "It rises from $64 to $72, despite two fewer trades",
+        "It rises from $64 to $80, because every original unit saves $2",
+        "It falls from $64 to $36, counting only the triangle above the last buyer value",
+        "It stays at $64, because payments are transfers"
+      ],
+      "feedback": "At E, CS = 0.5 × 8 × (30 − 14) = $64. At Q = 6, demand is $18; with the ceiling at $12, CS is a $36 triangle plus a $36 rectangle, or $72. Equivalently, total willingness to pay is $144 and spending is $72. Lost trades must be counted alongside the lower price.",
+      "aHash": "68a2a780c967fb1592abb3a4350b8c06fb4968d37267c22c28cbdcbda4436b5d"
+    }
+  },
+  {
+    "id": "P62C-CPS-L-025",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "CPS.2",
+    "type": "legendary",
+    "primarySkill": "consumer_surplus_graph_area",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Link tax prices, before/after CS and transfer versus lost surplus.",
+    "numericProofs": [
+      "0.5*5*(24-14)-0.5*4*(24-16)==9",
+      "(16-14)*4==8",
+      "(24-2*4)-(4+2*4)==4"
+    ],
+    "before": {
+      "q": "Refer to the graph. What is consumer surplus at the compact competitive equilibrium?",
+      "options": [
+        "$25",
+        "$50",
+        "$39",
+        "$14"
+      ],
+      "feedback": "The consumer-surplus region is below demand and above the equilibrium price through Q = 5; its area is $25.",
+      "aHash": "710d47350209c0f645e39d602f361641127e3c1509bdcb4de76a330960aa3a95"
+    },
+    "after": {
+      "q": "Refer to the compact-market graph. A $4 tax reduces trade to four units. Using the original curves to find the two tax prices, how much consumer surplus is lost, and how much of that loss is the buyer-burden rectangle on continuing trades?",
+      "options": [
+        "$9 lost; $8 is the continuing-trade rectangle",
+        "$9 lost; all $9 is transferred to government",
+        "$8 lost; all $8 is the continuing-trade rectangle",
+        "$16 lost; $8 is the continuing-trade rectangle"
+      ],
+      "feedback": "Initially CS is $25. At Q = 4, buyers pay $16 and sellers receive $12, so CS is 0.5 × 4 × (24 − 16) = $16. Buyers lose $9: the $2 increase on four continuing units is $8, with another $1 from the lost unit. The buyer-burden rectangle is only part of tax revenue.",
+      "aHash": "17d5c7b604b7c99d76e824041f29c8678d9226471659d6ae0f226852a592f6c5"
+    }
+  },
+  {
+    "id": "P62C-CPS-L-030",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "CPS.4",
+    "type": "legendary",
+    "primarySkill": "total_surplus",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace a single triangle calculation with welfare reconstruction including redistribution.",
+    "numericProofs": [
+      "0.5*(8-6)*(12-8)==4",
+      "9-9==0"
+    ],
+    "before": {
+      "q": "Refer to the graph. How much surplus is unrealized when output stops at Q = 6 instead of Q = 8?",
+      "options": [
+        "$2",
+        "$4",
+        "$8",
+        "$16"
+      ],
+      "feedback": "The missing triangular region has base 2 and height 4, so its area is one-half times 2 times 4, or $4.",
+      "aHash": "8237f5502e21c9b92304abaa68f4ad1e2814264cfc72663f178e31089e0d7f9b"
+    },
+    "after": {
+      "q": "Refer to the underproduction graph. A rule holds output at the marked quantity left of E. Repealing it restores E but also transfers $9 from producers to consumers on continuing trades. What is the total-surplus change, assuming efficient allocation and no other effects?",
+      "options": [
+        "A $13 increase; add the transfer to the recovered gains",
+        "A $4 increase; the $9 changes distribution",
+        "A $5 decrease; the transfer costs more than the recovered gains",
+        "A $9 increase; only the transfer changes welfare"
+      ],
+      "feedback": "The omitted triangle has width 8 − 6 = 2 and height 12 − 8 = $4, so restored gains are $4. The $9 transfer adds to CS and subtracts from PS equally. It does not change combined surplus.",
+      "aHash": "b290ec8dbaa92414512a1de6c76b060eefeb9595aeff789cc5ceb1228f5b92b6"
+    }
+  },
+  {
+    "id": "P62C-CPS-L-079",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "CPS.6",
+    "type": "legendary",
+    "primarySkill": "surplus_policy_application",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace repeated one-step tax accounting with comparison of competing tax designs.",
+    "numericProofs": [
+      "110+70+96==276",
+      "100+65+112==277",
+      "300-276==24",
+      "300-277==23"
+    ],
+    "before": {
+      "q": "After a tax, consumer surplus falls by $90, producer surplus falls by $60, and tax revenue is $120. By how much does total surplus fall?",
+      "options": [
+        "$120",
+        "$150",
+        "$30",
+        "$270"
+      ],
+      "feedback": "Initial private surplus falls by $150, but $120 becomes tax revenue, leaving a $30 reduction in total surplus.",
+      "aHash": "e3aae7bc0e5ad26dcf3912c166846dff1e00a3887aeb53c3363722bba19b16bd"
+    },
+    "after": {
+      "q": "A market starts with CS of $180 and PS of $120. Tax A leaves CS of $110 and PS of $70 and raises $96. Tax B leaves CS of $100 and PS of $65 and raises $112. With no externalities or administrative costs, which tax preserves more total surplus?",
+      "options": [
+        "Tax A by $15, because its private surplus is higher",
+        "Tax B by $16, equal to its extra revenue",
+        "Tax B by $1, even though private surplus is lower",
+        "They tie, because tax revenue is only a transfer"
+      ],
+      "feedback": "Include revenue once: A yields $110 + $70 + $96 = $276; B yields $100 + $65 + $112 = $277. Against the $300 baseline, the losses are $24 and $23. Lower private surplus alone does not rank efficiency.",
+      "aHash": "0f55fa82a96619dca1e6254de77b54a1454cf55e70a12e42e47bb42522dc33e8"
+    }
+  },
+  {
+    "id": "P62C-CPS-L-086",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "CPS.6",
+    "type": "legendary",
+    "primarySkill": "consumer_surplus_price_change",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Upgrade a verbal demand-change reminder into equilibrium reconstruction and comparative welfare.",
+    "numericProofs": [
+      "(28-4)/2==12",
+      "(32-4)/2==14",
+      "0.5*14*(32-18)-0.5*12*(28-16)==26",
+      "2*(98-72)==52"
+    ],
+    "before": {
+      "q": "Demand increases while supply is unchanged, raising both equilibrium price and quantity. Which statement best organizes the surplus analysis?",
+      "options": [
+        "Consumer surplus must fall because price rises",
+        "Existing buyers may lose from the price rise, while new trades and seller gains must also be counted",
+        "Total surplus must be unchanged because curves still intersect",
+        "Producer surplus must equal consumer surplus"
+      ],
+      "feedback": "A complete analysis separates effects on existing participants from gains on newly traded units.",
+      "aHash": "8e468a92ed28f81d6ae41075caa3c2ba2e49e9c382783c965623d05e09812b2a"
+    },
+    "after": {
+      "q": "A linear market has demand P = 28 − Q and supply P = 4 + Q. Demand then becomes P = 32 − Q. With supply unchanged, which statement correctly compares the two equilibria?",
+      "options": [
+        "Price rises by $2, so CS falls by $24 and TS stays unchanged",
+        "Price rises by $2, while CS rises by $26 and TS rises by $52",
+        "Price rises by $4, while CS rises by $26 and TS rises by $26",
+        "Price rises by $2, while CS rises by $2 and TS rises by $4"
+      ],
+      "feedback": "Initially Q = 12 and P = $16, giving CS = PS = $72. After the demand change, Q = 14 and P = $18, giving CS = PS = $98. CS rises by $26 and TS by $52. Higher willingness to pay changes the surplus comparison even though the price rises.",
+      "aHash": "0e47c6967b5d2405bcbb463f9c617b2932430dd98da03bf3f03f7b9dc97df07a"
+    }
+  },
+  {
+    "id": "P62C-CPS-L-087",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "CPS.6",
+    "type": "legendary",
+    "primarySkill": "producer_surplus_price_change",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Upgrade supply-change recognition to linked equilibrium and welfare comparison.",
+    "numericProofs": [
+      "(27-3)/2==12",
+      "(27-7)/2==10",
+      "0.5*10*(17-7)-0.5*12*(15-3)==-22",
+      "2*(50-72)==-44"
+    ],
+    "before": {
+      "q": "Supply increases while demand is unchanged, lowering price and raising quantity. Which statement is strongest?",
+      "options": [
+        "Producer surplus must fall because price falls",
+        "Total surplus must equal consumer surplus",
+        "Consumer gains, seller effects, and gains from new trades must all be included",
+        "Only the price change matters"
+      ],
+      "feedback": "Price and quantity both change, so both transfers and new gains from exchange matter.",
+      "aHash": "5b7173c2dc5e1687828321b728054e50e6d2cafb350669bc3dc967da626ecec5"
+    },
+    "after": {
+      "q": "Demand is P = 27 − Q. Supply changes from P = 3 + Q to P = 7 + Q because production costs rise. Which comparison correctly separates producer surplus from price changes?",
+      "options": [
+        "Price rises by $2, so PS rises by $20 and TS is unchanged",
+        "Price rises by $4, while PS falls by $22 and TS falls by $22",
+        "Price rises by $2, but PS falls by $22 and TS falls by $44",
+        "Price rises by $2, so PS rises by $24 and TS rises by $48"
+      ],
+      "feedback": "The original equilibrium is Q = 12, P = $15, with CS = PS = $72. After the cost increase, Q = 10 and P = $17, with CS = PS = $50. Thus PS falls $22 and TS falls $44. The higher selling price does not offset higher costs and fewer trades.",
+      "aHash": "ffe0b26c73278a161e3b9b7e74ba666372cfac19a124f077f368aba2438ac1f7"
+    }
+  },
+  {
+    "id": "P62C-CPS-L-088",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "CPS.6",
+    "type": "legendary",
+    "primarySkill": "consumer_surplus_price_change",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct the claim that all welfare gains from a demand shift come from newly traded units.",
+    "numericProofs": [
+      "(24-4)/2==10",
+      "(28-4)/2==12",
+      "4*10+0.5*2*4==44",
+      "0.5*12*24-0.5*10*20==44"
+    ],
+    "before": {
+      "q": "A demand increase raises total surplus in a standard market. What directly explains the increase?",
+      "options": [
+        "The new price is necessarily fairer",
+        "Consumer and producer surplus become equal",
+        "Every existing buyer pays less",
+        "Additional units now have buyer value at least as large as seller cost"
+      ],
+      "feedback": "The added surplus comes from newly beneficial units, not from the price level by itself.",
+      "aHash": "a91b97640c61a40e41e2e7cb96a5d937d99440192955506c32ab01692821764e"
+    },
+    "after": {
+      "q": "Demand rises from P = 24 − Q to P = 28 − Q while supply remains P = 4 + Q. At the new efficient equilibrium, total surplus is $44 higher. How is this increase explained?",
+      "options": [
+        "$44 from additional trades and nothing from the original units",
+        "$20 transferred from sellers and $24 from additional trades",
+        "$40 of additional spending and $4 of tax revenue",
+        "$40 of higher value on the original ten units and $4 from additional trades"
+      ],
+      "feedback": "The original efficient quantity is 10 and the new quantity is 12. Willingness to pay rises $4 on each of the original ten units, adding $40. The two new units add a triangle of 0.5 × 2 × $4 = $4. A demand increase can raise gains on existing units as well as create new beneficial trades.",
+      "aHash": "68a5890e052e7966f9f06fa28fd18229ae7a3693bca8212f36db5cc88716d596"
+    }
+  },
+  {
+    "id": "P62C-CPS-LB-014",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "CPS.4",
+    "type": "legendaryBoss",
+    "primarySkill": "consumer_surplus_price_change",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Specify direction of the two-price comparison.",
+    "numericProofs": [
+      "0.5*12*(20-8)-0.5*8*(20-12)==40"
+    ],
+    "before": {
+      "q": "Refer to the graph. Which calculation captures the full change in consumer surplus?"
+    },
+    "after": {
+      "q": "Refer to the graph as price moves from P1 to P2. Which calculation captures the full change in consumer surplus?"
+    }
+  },
+  {
+    "id": "P62C-CPS-LB-015",
+    "concept": "consumer-and-producer-surplus",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "CPS.4",
+    "type": "legendaryBoss",
+    "primarySkill": "producer_surplus_price_change",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Specify direction of the two-price comparison.",
+    "numericProofs": [
+      "0.5*10*(12-2)-0.5*6*(8-2)==32"
+    ],
+    "before": {
+      "q": "Refer to the graph. Which calculation captures the full change in producer surplus?"
+    },
+    "after": {
+      "q": "Refer to the graph as price moves from P1 to P2. Which calculation captures the full change in producer surplus?"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-171",
+    "concept": "binding-price-ceilings",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.1",
+    "type": "graph_interpretation",
+    "primarySkill": "binding_price_ceiling",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-172",
+    "concept": "binding-price-ceilings",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.1",
+    "type": "graph",
+    "primarySkill": "ceiling_quantity_demanded",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-173",
+    "concept": "binding-price-ceilings",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.1",
+    "type": "graph",
+    "primarySkill": "ceiling_quantity_supplied",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-179",
+    "concept": "binding-price-ceilings",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.1",
+    "type": "graph_interpretation",
+    "primarySkill": "nonbinding_price_ceiling",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "PG2-CEIL-M-002",
+    "concept": "binding-price-ceilings",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.1",
+    "type": "graph",
+    "primarySkill": "ceiling_quantity_reading",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "min(50,250)==50"
+    ],
+    "before": {
+      "q": "At the binding $1,000 rent ceiling, what is the maximum number of apartments that can be rented if transactions cannot exceed the number landlords offer?"
+    },
+    "after": {
+      "q": "Refer to the graph. At the binding $1,000 rent ceiling, what is the maximum number of apartments that can be rented if transactions cannot exceed the number landlords offer?"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-266",
+    "concept": "binding-price-ceilings",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.1",
+    "type": "graph_interpretation",
+    "primarySkill": "nonbinding_price_ceiling",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-270",
+    "concept": "binding-price-ceilings",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.1",
+    "type": "graph_interpretation",
+    "primarySkill": "binding_ceiling_shortage_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-273",
+    "concept": "binding-price-ceilings",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.1",
+    "type": "graph",
+    "primarySkill": "ceiling_quantity_reading",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "PG2-CEIL-H-001",
+    "concept": "binding-price-ceilings",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.1",
+    "type": "multi-step",
+    "primarySkill": "binding_ceiling_shortage_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "250-150==100",
+      "50-150==-100"
+    ],
+    "before": {
+      "q": "Relative to the competitive equilibrium, how do quantity demanded and quantity supplied change at the $1,000 ceiling?"
+    },
+    "after": {
+      "q": "Refer to the graph. Relative to the competitive equilibrium, how do quantity demanded and quantity supplied change at the $1,000 ceiling?"
+    }
+  },
+  {
+    "id": "ECON-MG-ELITE-311",
+    "concept": "binding-price-ceilings",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.1",
+    "type": "integration",
+    "primarySkill": "ceiling_distributional_tradeoff",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Avoid equating excess demand with displaced incumbent tenants.",
+    "numericProofs": [
+      "300>0",
+      "28000>0"
+    ],
+    "before": {
+      "q": "A city sets rent below equilibrium. Quantity demanded is 80,000 and quantity supplied is 52,000. Renters who get apartments save $300 each, but 28,000 renters are rationed out. What is the best conclusion?",
+      "options": [
+        "Some renters gain, while rationed-out renters lose.",
+        "All renters benefit because the legal price is lower",
+        "Landlords benefit because quantity supplied rises",
+        "The market clears because the legal price is lower"
+      ],
+      "feedback": "Some renters gain lower rent, but others lose access because the ceiling creates a shortage.",
+      "aHash": "fd75af08987ba53011ec15d09cc8451f76663ac0199ab2f97d62619908c500a1"
+    },
+    "after": {
+      "q": "A binding rent ceiling lowers the rent paid by tenants who retain apartments by $300. At that rent, 28,000 more households want apartments than landlords offer. Which conclusion is warranted?",
+      "options": [
+        "Continuing tenants save on rent, but the shortage does not identify how many former tenants lost housing",
+        "All 28,000 unmatched households must previously have rented apartments",
+        "Every household is better off because the legal rent is lower",
+        "The rent saving proves aggregate consumer surplus increased"
+      ],
+      "feedback": "The shortage compares current quantities demanded and supplied; it is not a count of displaced former tenants. Continuing tenants save on rent, but the net effects on all households also depend on lost access, allocation and any search costs.",
+      "aHash": "a06fa89382e3fb0924493a05cf018806e4bdd9c13f348823c0935ffb6d1fc8b6"
+    }
+  },
+  {
+    "id": "PG2-CEIL-EL-001",
+    "concept": "binding-price-ceilings",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.1",
+    "type": "analysis",
+    "primarySkill": "ceiling_shortage_rationing",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Distinguish a supply-constrained maximum from guaranteed actual matching.",
+    "numericProofs": [
+      "1000<2000",
+      "min(50,250)==50",
+      "250-50==200"
+    ],
+    "before": {
+      "q": "A student looks at the $1,000 ceiling and says, “Because 250 apartments are demanded, 250 apartments will be rented.” What is the graph-based correction?",
+      "options": [
+        "Only 50 apartments trade; 200 renters go unmatched.",
+        "All 250 renters trade because the ceiling lowers rent.",
+        "Exactly 175 apartments trade, matching the old equilibrium.",
+        "A 200-unit surplus appears because landlords over-supply housing."
+      ],
+      "feedback": "Quantity demanded is not the same thing as quantity traded. At the ceiling, landlords supply only 50 apartments, so the market is short by 200 units.",
+      "aHash": "6cf03ad9ebaa2df4e5bcf738138188a7d3e84c79a3d0987d06cc5852cc427da5"
+    },
+    "after": {
+      "q": "Refer to the apartment graph. Under the displayed ceiling, what is the maximum number of rentals and the excess demand, assuming landlords offer the quantity on S0?",
+      "options": [
+        "At most 50 rentals and excess demand of 200 apartments",
+        "At most 250 rentals and excess demand of 200 apartments",
+        "At most 150 rentals and excess demand of 100 apartments",
+        "At most 50 rentals and excess supply of 200 apartments"
+      ],
+      "feedback": "The ceiling is below the $2,000 equilibrium rent. At $1,000, supply is 50 and demand is 250. Supply limits possible rentals to 50, while excess demand is 250 − 50 = 200. Actual matching could be lower; the graph alone establishes a maximum.",
+      "aHash": "0b0aa2917dbe4a5fbcc858d85ded9de562416242a292fbcfe159f599686b606d"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9035",
+    "concept": "binding-price-ceilings",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.1",
+    "type": "graph_calculation",
+    "primarySkill": "binding_ceiling_shortage",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Replace a revealed-equilibrium shortage calculation with comparison of binding and nonbinding alternatives.",
+    "numericProofs": [
+      "20<30<40",
+      "250-150==100",
+      "min(150,250)==150"
+    ],
+    "before": {
+      "q": "Refer to the ceiling/floor graph. The market equilibrium is $30 and 200 units. If a legal maximum price is set at $20, what happens?",
+      "options": [
+        "A binding price ceiling creates a 100-unit shortage",
+        "A binding price floor creates a 100-unit surplus",
+        "A nonbinding price ceiling leaves quantity at 200",
+        "A nonbinding price floor leaves price at $30"
+      ],
+      "feedback": "At $20, quantity demanded is 250 and quantity supplied is 150, so the shortage is 100 units.",
+      "image": "question-assets/ceilingfloor.webp",
+      "aHash": "9564790df73633e27f1301f0014461896b81cadc5514dc604b888fd0e5c2888d"
+    },
+    "after": {
+      "q": "Refer to the graph. Compare a $20 ceiling with a $40 ceiling, assuming efficient matching and no other restrictions. Which policy comparison is correct?",
+      "options": [
+        "$20 permits 150 trades and creates a 100-unit shortage; $40 allows the 200-unit equilibrium",
+        "$20 permits 250 trades and creates a 100-unit shortage; $40 allows the 200-unit equilibrium",
+        "$20 permits 150 trades; $40 forces 250 trades and a 100-unit surplus",
+        "Both ceilings leave the market at 200 trades because both are legal maximum prices"
+      ],
+      "feedback": "Equilibrium is $30 and 200 units. The $20 maximum binds: Qs = 150 and Qd = 250, so the shortage is 100 and at most 150 units trade. The $40 maximum allows the equilibrium price below it; it does not force the market to charge $40.",
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp",
+      "aHash": "3c8af33dad0715b7d437fe237cef0f4345dbf5d2f351bd468251712b1326c44d"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9037",
+    "concept": "binding-price-ceilings",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.1",
+    "type": "graph_trap",
+    "primarySkill": "nonbinding_price_ceiling",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9039",
+    "concept": "binding-price-ceilings",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.1",
+    "type": "graph_integration",
+    "primarySkill": "ceiling_unintended_consequences",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9042",
+    "concept": "binding-price-ceilings",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.1",
+    "type": "synthesis",
+    "primarySkill": "ceiling_distribution_tradeoff",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Remove the false universal claim that a binding ceiling necessarily misallocates remaining units.",
+    "numericProofs": [],
+    "before": {
+      "q": "A rent ceiling is set below equilibrium. After one year, renters with apartments pay less, but new renters struggle to find units. What is the best economic interpretation?",
+      "options": [
+        "The policy transfers some surplus to lucky renters but creates shortage and misallocation",
+        "The policy increases total surplus because rent is lower",
+        "The policy creates a surplus of apartments",
+        "The policy is nonbinding because some tenants still rent units"
+      ],
+      "feedback": "A binding ceiling can help some buyers while creating shortages and misallocation for others.",
+      "aHash": "32d95fa160525f26b3aae646f1d763833f006c98189e8d4277a388675c50b567"
+    },
+    "after": {
+      "q": "A binding ceiling reduces the number of apartments rented. Under which allocation would it create an additional loss beyond the gains from the missing rentals?",
+      "options": [
+        "Some available apartments go to lower-value applicants while higher-value applicants go without",
+        "The remaining apartments all go to the highest-value applicants",
+        "The lower rent transfers money from landlords to continuing tenants",
+        "Landlords supply exactly the number of apartments willing buyers rent"
+      ],
+      "feedback": "A quantity reduction loses gains from missing beneficial trades. A further allocation loss arises if a lower-value recipient displaces a higher-value applicant. A ceiling does not by itself prove that this misallocation occurs.",
+      "aHash": "50ee0d22eeb407c9d3f35a95f30afd2724fb7af4ac47cc6b7cdc463b6ebfbb06"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9046",
+    "concept": "binding-price-ceilings",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.1",
+    "type": "calculation",
+    "primarySkill": "shortage_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Upgrade subtraction drill to a two-stage policy consequence.",
+    "numericProofs": [
+      "4000-2700==1300",
+      "4200-3200==1000",
+      "3200-2700==500",
+      "1300-1000==300"
+    ],
+    "before": {
+      "q": "At a rent ceiling of $900, quantity demanded is 4,000 apartments and quantity supplied is 2,700 apartments. Which answer best states the result?",
+      "options": [
+        "A shortage of 1,300 apartments",
+        "A surplus of 1,300 apartments",
+        "A shortage of 2,700 apartments",
+        "A surplus of 4,000 apartments"
+      ],
+      "feedback": "Shortage equals quantity demanded minus quantity supplied: 4,000 - 2,700 = 1,300.",
+      "aHash": "cd4a4a17f6a8c804e1d4bd04ea1fb8270b05d39a10f13bb2755793f5b9b3b5fd"
+    },
+    "after": {
+      "q": "At a binding rent ceiling, 4,000 households demand apartments and landlords offer 2,700. A construction program adds 500 apartments at that rent, while new arrivals raise quantity demanded by 200. Assuming all offered apartments are rented, what changes?",
+      "options": [
+        "Rentals rise by 500 and the shortage falls by 300",
+        "Rentals rise by 500 and the shortage falls by 500",
+        "Rentals rise by 200 and the shortage falls by 700",
+        "Rentals rise by 700 and the shortage stays unchanged"
+      ],
+      "feedback": "Initially the shortage is 4,000 − 2,700 = 1,300. Afterward demand is 4,200 and supply is 3,200, so rentals rise by 500 and the shortage is 1,000, down 300. Additional demand partly offsets the construction program.",
+      "aHash": "eb14c34663a05d8fea834d2197cc25878e7dd38b9ec4a429679c0178bba6627c"
+    }
+  },
+  {
+    "id": "PG2-CEIL-L-001",
+    "concept": "binding-price-ceilings",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.1",
+    "type": "multi-step",
+    "primarySkill": "ceiling_nonmoney_costs_and_misallocation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Link graph shortage to a case where the nominal beneficiary loses after a stated nonmoney cost.",
+    "numericProofs": [
+      "2000-1000-1100==-100",
+      "250-50==200"
+    ],
+    "before": {
+      "q": "At the $1,000 ceiling, what does the graph imply about rationing?",
+      "options": [
+        "All 250 renters trade because the legal rent is lower.",
+        "Only 50 units trade; 200 renters remain unmatched.",
+        "The legal rent rises to $2,000 until the shortage disappears.",
+        "Landlords add 200 units immediately, removing the shortage."
+      ],
+      "feedback": "The graph establishes a 200-apartment shortage. A binding ceiling blocks price from doing the full rationing job, so other allocation mechanisms can matter; the graph does not identify which renters receive the limited units.",
+      "aHash": "42776d2b5e9011ab315bccede98ee4612b6f2a7886190fab25c3088eab5d7a1e"
+    },
+    "after": {
+      "q": "Refer to the apartment graph. One tenant keeps the same apartment after the displayed ceiling is imposed but now spends time searching and queuing valued at $1,100 per month. With apartment quality unchanged, which evaluation is correct?",
+      "options": [
+        "The tenant gains $1,000 net, and the market has excess demand of 200 apartments",
+        "The tenant loses $100 net, and the market has excess demand of 200 apartments",
+        "The tenant loses $100 net, and all 200 unmatched applicants must be former tenants",
+        "The tenant gains $100 net, and the market has excess supply of 200 apartments"
+      ],
+      "feedback": "The graph shows rent falling from $2,000 to $1,000, a $1,000 saving. Subtract the stated $1,100 time cost: the continuing tenant loses $100 net. At the ceiling, Qd = 250 and Qs = 50, giving excess demand of 200. The time cost is specified for this tenant, not asserted for every ceiling.",
+      "aHash": "547ce1a2f4f2b8d4fc4443aaaa0d621e4a1557e649a4fb74e151fd64a9e2bcbb"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-268",
+    "concept": "binding-price-ceilings",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "LO6.1",
+    "type": "graph_calculation",
+    "primarySkill": "ceiling_shortage_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-174",
+    "concept": "binding-price-ceilings",
+    "pool": "calculation",
+    "difficulty": "medium",
+    "objective": "LO6.1",
+    "type": "graph_calculation",
+    "primarySkill": "ceiling_shortage_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-FINALBOSS-4001",
+    "concept": "binding-price-ceilings",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "LO6.1",
+    "type": "graph_calculation",
+    "primarySkill": "binding_ceiling_shortage_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-ceilings/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-175",
+    "concept": "binding-price-floors",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.2",
+    "type": "graph_interpretation",
+    "primarySkill": "binding_price_floor",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-176",
+    "concept": "binding-price-floors",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.2",
+    "type": "graph",
+    "primarySkill": "floor_quantity_demanded",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-177",
+    "concept": "binding-price-floors",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.2",
+    "type": "graph",
+    "primarySkill": "floor_quantity_supplied",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-267",
+    "concept": "binding-price-floors",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.2",
+    "type": "graph_interpretation",
+    "primarySkill": "nonbinding_price_floor",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-271",
+    "concept": "binding-price-floors",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.2",
+    "type": "graph_interpretation",
+    "primarySkill": "binding_floor_surplus_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-272",
+    "concept": "binding-price-floors",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.2",
+    "type": "graph",
+    "primarySkill": "floor_quantity_reading",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "40029",
+    "concept": "binding-price-floors",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.2",
+    "type": "graph_integration",
+    "primarySkill": "surplus_shortage_identification",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Use employment calculation to evaluate nominal worker benefits and aggregate earnings.",
+    "numericProofs": [
+      "200000*12==2400000",
+      "150000*15==2250000",
+      "2250000-2400000==-150000",
+      "250000-150000==100000"
+    ],
+    "before": {
+      "q": "Refer to the graph. At the binding $15 minimum wage, how many workers are employed?",
+      "options": [
+        "100 thousand workers",
+        "150 thousand workers",
+        "200 thousand workers",
+        "250 thousand workers"
+      ],
+      "feedback": "Employment is limited by labor demanded.",
+      "aHash": "600aac4b873e704a4b858fd53ccbf19968ebab037d91e9c20c9d58064f0c103a"
+    },
+    "after": {
+      "q": "Refer to the labor graph. Assume all jobs demanded are filled for one hour each. With the displayed floor, what are employment and excess labor supply, and how does payroll compare with the equilibrium without the floor?",
+      "options": [
+        "150,000 employed, 100,000 excess workers, and payroll $450,000 higher",
+        "150,000 employed, 100,000 excess workers, and payroll $150,000 lower",
+        "250,000 employed, 100,000 excess workers, and payroll $1,350,000 higher",
+        "200,000 employed, no excess workers, and payroll $600,000 higher"
+      ],
+      "feedback": "Without the floor, payroll is 200,000 × $12 = $2,400,000. At $15, firms demand 150,000 workers, so payroll is $2,250,000. Supply is 250,000 workers, so excess labor supply is 100,000. Employment falls by 50,000 and payroll by $150,000 despite the higher wage on remaining jobs.",
+      "aHash": "e8a0f9806b3892ee551689dadc1793f28b4ab1cca4da683af02d9878b92da7c8"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9036",
+    "concept": "binding-price-floors",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.2",
+    "type": "graph_calculation",
+    "primarySkill": "binding_floor_surplus",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Combine binding floor, private demand, public purchases and budget rather than repeat surplus lookup.",
+    "numericProofs": [
+      "40>30",
+      "250-150-50==50",
+      "40*50==2000"
+    ],
+    "before": {
+      "q": "Refer to the ceiling/floor graph. The market equilibrium is $30 and 200 units. If a legal minimum price is set at $40, what happens?",
+      "options": [
+        "A binding price floor creates a 100-unit surplus",
+        "A binding price ceiling creates a 150-unit shortage",
+        "A nonbinding price floor leaves quantity at 200",
+        "A nonbinding price ceiling leaves price at $30"
+      ],
+      "feedback": "At $40, quantity supplied is 250 and quantity demanded is 150, so the surplus is 100 units.",
+      "image": "question-assets/ceilingfloor.webp",
+      "aHash": "2426d48200552d9f08d235a3dbc0339b623d53470fd596dcd7b98718bdd20b28"
+    },
+    "after": {
+      "q": "Refer to the graph. A $40 floor is enforced. Private buyers purchase their quantity demanded, and government buys 50 additional units at the floor. If sellers produce the quantity on supply, what remains unsold and what does government spend?",
+      "options": [
+        "50 units remain unsold; government spends $2,000",
+        "100 units remain unsold; government spends $2,000",
+        "50 units remain unsold; government spends $4,000",
+        "No units remain unsold; government spends $2,000"
+      ],
+      "feedback": "At $40, Qs = 250 and private Qd = 150. Government absorbs 50 of the 100-unit gap, leaving 50 unsold. Its spending is 50 × $40 = $2,000. Desired supply does not become private demand.",
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp",
+      "aHash": "995c9e44ad8767fc0c5a130364001a534e79c42cf8b2801889c43ad885324576"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9038",
+    "concept": "binding-price-floors",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.2",
+    "type": "graph_trap",
+    "primarySkill": "nonbinding_price_floor",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "PG2-FLR-L-001",
+    "concept": "binding-price-floors",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.2",
+    "type": "multi-step",
+    "primarySkill": "minimum_wage_tradeoff",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Upgrade floor-removal graph comparison to employment, imbalance and aggregate earnings.",
+    "numericProofs": [
+      "175000-100000==75000",
+      "250000-100000==150000",
+      "175000*7-100000*10==225000"
+    ],
+    "before": {
+      "q": "Refer to the graph. If the minimum wage falls from the binding $10 level to the $7 equilibrium wage, what happens to employment and the labor surplus?",
+      "options": [
+        "Employment falls to 175k; a labor shortage appears.",
+        "Employment stays at 100k; the old floor fixes hiring.",
+        "Employment rises to 250k; labor demand equals supply there.",
+        "Employment rises to 175k; the labor surplus disappears."
+      ],
+      "feedback": "At $10, labor demand is 100 thousand and labor supply is 250 thousand. At $7, both equal 175 thousand, so employment rises to the equilibrium quantity and the labor surplus vanishes.",
+      "aHash": "e72214ddb81f04af82b93df7dc13e5c8042b53486fab00f3865455a0206785d3"
+    },
+    "after": {
+      "q": "Refer to the labor graph. The displayed minimum wage is repealed and the market returns to A. Assume all jobs demanded are filled for one hour each. Which comparison accounts for the lower wage and changed employment?",
+      "options": [
+        "Employment rises by 150,000, excess labor supply disappears, and hourly payroll rises by $750,000",
+        "Employment falls by 75,000 and hourly payroll falls by $225,000",
+        "Employment rises by 75,000, but hourly payroll falls by $300,000",
+        "Employment rises by 75,000, excess labor supply disappears, and hourly payroll rises by $225,000"
+      ],
+      "feedback": "With the $10 floor, employment is 100,000, willing workers number 250,000, and payroll is $1,000,000. At A, 175,000 workers earn $7, so payroll is $1,225,000 and excess supply is zero. Employment rises 75,000; payroll rises $225,000 even though the wage falls.",
+      "aHash": "6ed1747819ebb6b9950961441a00eac57c046054a37a982bc1e9eaa69edc4465"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-269",
+    "concept": "binding-price-floors",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "LO6.2",
+    "type": "graph_calculation",
+    "primarySkill": "floor_surplus_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-178",
+    "concept": "binding-price-floors",
+    "pool": "calculation",
+    "difficulty": "medium",
+    "objective": "LO6.2",
+    "type": "graph_calculation",
+    "primarySkill": "floor_surplus_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/ceilingfloor.webp"
+    },
+    "after": {
+      "image": "question-assets/binding-price-floors/ceilingfloor.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARYBOSS-9133",
+    "concept": "binding-price-floors",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "LO6.2",
+    "type": "trap",
+    "primarySkill": "binding_price_floor",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace static nonbinding recognition with conditional policy inference after a market change.",
+    "numericProofs": [
+      "14<16<18",
+      "130-90==40"
+    ],
+    "before": {
+      "q": "Equilibrium wage is $18. A minimum wage is set at $16. What follows?",
+      "options": [
+        "A binding labor surplus",
+        "A binding labor shortage",
+        "No direct employment effect because the floor is nonbinding",
+        "Employment must fall to zero"
+      ],
+      "feedback": "A floor below equilibrium does not constrain the market wage.",
+      "aHash": "64f1f7f7f6c5c055e927be2ea9c706585cbc985a065cc2ad469bf14440268844"
+    },
+    "after": {
+      "q": "A wage floor of $16 is initially below an $18 equilibrium wage. Demand then falls; without the floor the new wage would be $14. At $16, firms now demand 90 workers and 130 want jobs. With all demanded jobs filled, what is the correct diagnosis?",
+      "options": [
+        "The floor remains nonbinding, with 130 employed and no surplus",
+        "The floor changes from nonbinding to binding, with 130 employed and a 40-worker shortage",
+        "The floor changes from nonbinding to binding, with 90 employed and a 40-worker surplus",
+        "The floor was binding in both periods, with employment fixed at 90"
+      ],
+      "feedback": "Initially the legal minimum of $16 permits the $18 equilibrium. After demand falls, it prevents adjustment to $14. Labor demand limits employment to 90, while 130 − 90 = 40 willing workers are unmatched. Binding status depends on the current equilibrium.",
+      "aHash": "ada340796d0bae694ea3f2a99501378ebbc852e77d7a4915cc2b7bf194a12c6c"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-180",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "graph",
+    "primarySkill": "pre_tax_equilibrium_identification",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-181",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "graph",
+    "primarySkill": "price_paid_by_buyers",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-182",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "graph",
+    "primarySkill": "price_received_by_sellers",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-186",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "graph_interpretation",
+    "primarySkill": "tax_quantity_effect",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-189",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "graph_interpretation",
+    "primarySkill": "tax_wedge_identification",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "PG2-TAX-M-002",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "calculation",
+    "primarySkill": "tax_quantity_reduction_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "140000-100000==40000"
+    ],
+    "before": {
+      "q": "After the tax is imposed, by how much does quantity traded fall?"
+    },
+    "after": {
+      "q": "Refer to the graph. After the tax is imposed, by how much does quantity traded fall?"
+    }
+  },
+  {
+    "id": "40033",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "graph_calculation",
+    "primarySkill": "tax_wedge_incidence",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "12-8==4"
+    ],
+    "before": {
+      "q": "What is the per-trip tax wedge?"
+    },
+    "after": {
+      "q": "Refer to the graph. What is the per-trip tax wedge?"
+    }
+  },
+  {
+    "id": "40036",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "graph_interpretation",
+    "primarySkill": "tax_quantity_effect",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "200000-50000==150000"
+    ],
+    "before": {
+      "q": "What is the post-tax quantity?"
+    },
+    "after": {
+      "q": "Refer to the graph. What is the post-tax quantity?"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-280",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.3",
+    "type": "graph_interpretation",
+    "primarySkill": "tax_wedge_and_quantity_effect",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-283",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.3",
+    "type": "graph_interpretation",
+    "primarySkill": "tax_wedge_formula",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Replace formula-only question with graph wedge calculation and burden interpretation.",
+    "numericProofs": [
+      "18-12==6",
+      "18-15==3",
+      "15-12==3"
+    ],
+    "before": {
+      "q": "Refer to the tax incidence graph. Which calculation correctly measures the tax per unit?",
+      "options": [
+        "Price paid by buyers minus price received by sellers",
+        "Original equilibrium price minus after-tax quantity",
+        "Original quantity minus after-tax quantity",
+        "Buyer price plus seller price"
+      ],
+      "image": "question-assets/taxincidence.webp",
+      "feedback": "The per-unit tax is the wedge between the price buyers pay and the price sellers receive.",
+      "aHash": "6113a7eab9b103021aa3e573dc28d57218a1de9df311e6807a8fd4f2001d05a9"
+    },
+    "after": {
+      "q": "Refer to the tax graph. What is the per-unit tax, and why is the rise in the buyer price alone insufficient?",
+      "options": [
+        "$6; the buyer price rises $3 and the seller receipt falls $3",
+        "$3; only the buyer price change is part of the tax",
+        "$18; the entire buyer payment is remitted to government",
+        "$33; the original and new buyer prices must be added"
+      ],
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp",
+      "feedback": "The taxed quantity is 80. There, buyers pay $18 and sellers receive $12, so the wedge is $6. Relative to the original $15 price, each side bears $3. Using only the buyer increase omits the seller burden.",
+      "aHash": "da6693b3ec0c6707e529e7b7b3c559fea59f28c355f716226e9725cff3dbcbda"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-284",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.3",
+    "type": "graph_interpretation",
+    "primarySkill": "tax_revenue_quantity_base",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "PG2-TAX-H-001",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.3",
+    "type": "multi-step",
+    "primarySkill": "tax_revenue_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "(14-10)*100000==400000"
+    ],
+    "before": {
+      "q": "After the tax is imposed, how much tax revenue is collected?"
+    },
+    "after": {
+      "q": "Refer to the graph. After the tax is imposed, how much tax revenue is collected?"
+    }
+  },
+  {
+    "id": "40039",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.3",
+    "type": "graph_calculation",
+    "primarySkill": "tax_revenue_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "(14-10)*200000==800000"
+    ],
+    "before": {
+      "q": "How much daily tax revenue is generated?"
+    },
+    "after": {
+      "q": "Refer to the graph. How much daily tax revenue is generated?"
+    }
+  },
+  {
+    "id": "40045",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.3",
+    "type": "graph_calculation",
+    "primarySkill": "tax_wedge_incidence",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "16-8==8",
+      "8*150000==1200000"
+    ],
+    "before": {
+      "q": "For the buyer-side tax, what are the wedge and revenue?"
+    },
+    "after": {
+      "q": "Refer to the graph. For the buyer-side tax, what are the wedge and revenue?"
+    }
+  },
+  {
+    "id": "PG2-TAX-EL-001",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.3",
+    "type": "analysis",
+    "primarySkill": "tax_revenue_from_burden_split",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Combine graphical incidence and revenue while diagnosing two common measurement errors.",
+    "numericProofs": [
+      "14-12==12-10==2",
+      "(14-10)*100000==400000"
+    ],
+    "before": {
+      "q": "Using the graph, how is the per-unit tax burden divided between buyers and sellers?",
+      "options": [
+        "Buyers: $2; sellers: $2.",
+        "Buyers: $4; sellers: $0.",
+        "Buyers: $0; sellers: $4.",
+        "Buyers: $3; sellers: $1."
+      ],
+      "feedback": "Relative to the original $12 price, buyers pay $2 more and sellers receive $2 less. Those two pieces add to the $4 tax wedge.",
+      "aHash": "d29bf503b5117086393aa1acbeda7a9ea148a4e2b9968e7baeb97d94df450ece"
+    },
+    "after": {
+      "q": "Refer to the movie-tax graph. A report counts only the buyer price increase as the tax rate. Which correction correctly gives the two per-unit burdens and total government revenue?",
+      "options": [
+        "Buyers bear $2 and sellers $2; revenue is $400,000",
+        "Buyers bear $2 and sellers $2; revenue is $560,000",
+        "Buyers bear $4 and sellers $0; revenue is $400,000",
+        "Buyers bear $2 and sellers $0; revenue is $200,000"
+      ],
+      "feedback": "The old price is $12, buyer price $14 and seller receipt $10. Thus the burdens are $2 each, summing to the $4 wedge. Apply that wedge to 100,000 taxed units: revenue is $400,000. The old quantity of 140,000 no longer trades.",
+      "aHash": "39c10c2ede25bcd3af59fe6d197cecf3d9d6618d8d61d87a1b1a2629ac8b6227"
+    }
+  },
+  {
+    "id": "40040",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.3",
+    "type": "graph_integration",
+    "primarySkill": "tax_wedge_incidence",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "14-12==2",
+      "10-12==-2",
+      "200000-250000==-50000"
+    ],
+    "before": {
+      "q": "Which complete pre/post comparison is correct?"
+    },
+    "after": {
+      "q": "Refer to the graph. Which complete pre/post comparison is correct?"
+    }
+  },
+  {
+    "id": "40041",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.3",
+    "type": "graph_trap",
+    "primarySkill": "tax_revenue_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Turn revenue-denominator recognition into a policy comparison on the existing linear graph.",
+    "numericProofs": [
+      "(14-10)*200000==800000",
+      "(200000+250000)/2==225000",
+      "2*225000==450000"
+    ],
+    "before": {
+      "q": "Why is 4 dollars times the pre-tax 250 thousand quantity an incorrect revenue calculation?",
+      "options": [
+        "Use the buyer price of 14 dollars rather than the wedge",
+        "Use the post-tax quantity of 200 thousand trips",
+        "Use the pre-tax price of 12 dollars as the wedge",
+        "Use a 2 dollar wedge because sellers receive 10"
+      ],
+      "feedback": "Only post-tax trades are taxed, yielding 800,000 dollars.",
+      "aHash": "c74d3731f0bf59f88a158cf0e2f9b747b167d8e772e87ce15c8246c4962ea285"
+    },
+    "after": {
+      "q": "Refer to the rideshare graph with A at quantity 250 thousand. A proposal halves the displayed per-trip tax. Keeping the straight demand and supply curves fixed, what happens to daily tax revenue?",
+      "options": [
+        "It falls from $800,000 to $400,000 because quantity stays fixed",
+        "It falls from $800,000 to $450,000 as quantity rises to 225,000",
+        "It rises from $800,000 to $900,000 as quantity rises to 225,000",
+        "It falls from $1,000,000 to $500,000 using the untaxed quantity"
+      ],
+      "feedback": "The displayed wedge is $14 − $10 = $4 at 200,000 trips. Halving it to $2 places quantity halfway between 200,000 and the untaxed 250,000: 225,000. Revenue changes from $4 × 200,000 = $800,000 to $2 × 225,000 = $450,000. The quantity response offsets part of the rate cut.",
+      "aHash": "12ab32e6297eab6dca040dc72cf95d16d16441b9a0182f4c859918cd83f37efe"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9055",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.3",
+    "type": "graph_calculation",
+    "primarySkill": "tax_wedge_calculation",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Replace an answer-revealing wedge drill with diagnosis of two offsetting revenue errors.",
+    "numericProofs": [
+      "18-12==6",
+      "6*80==480",
+      "(18-15)*100==300",
+      "480-300==180"
+    ],
+    "before": {
+      "q": "Refer to the tax graph. Before the tax, equilibrium is $15 and 100 units. After the tax, buyers pay $18, sellers receive $12, and quantity is 80. What is the per-unit tax?",
+      "options": [
+        "$6 per unit",
+        "$3 per unit",
+        "$18 per unit",
+        "$12 per unit"
+      ],
+      "feedback": "The wedge is buyer price minus seller price: $18 - $12 = $6.",
+      "image": "question-assets/taxincidence.webp",
+      "aHash": "01cd779d394e5fe4b827088aa46fb0bc7a8fb6d7970c8b085f195edf1b85d6ac"
+    },
+    "after": {
+      "q": "Refer to the tax graph. A clerk uses only the buyer price increase as the tax rate and multiplies by the original quantity, reporting $300 of revenue. Which correction addresses both errors?",
+      "options": [
+        "$6 per unit on 80 units gives $480; the report is $180 too low",
+        "$3 per unit on 80 units gives $240; the report is $60 too high",
+        "$6 per unit on 100 units gives $600; the report is $300 too low",
+        "$3 per unit on 100 units gives $300; the report is correct"
+      ],
+      "feedback": "The graph gives buyer price $18 and seller receipt $12, so the rate is $6, not the $3 buyer increase. Only 80 units trade after tax. Correct revenue is $480, which exceeds the reported $300 by $180. Fixing only one error still gives the wrong amount.",
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp",
+      "aHash": "4c9092fc315357d00cf59ee8de7e2c9760736a2833ab7b4fd571b29abb96a79d"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9057",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.3",
+    "type": "graph_interpretation",
+    "primarySkill": "tax_quantity_effect",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9058",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.3",
+    "type": "graph_calculation",
+    "primarySkill": "tax_revenue_calculation",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Connect graph revenue to transfer-versus-efficiency-loss diagnosis.",
+    "numericProofs": [
+      "(18-12)*80==480",
+      "0.5*(100-80)*(18-12)==60"
+    ],
+    "before": {
+      "q": "Refer to the tax graph. How much tax revenue is collected after the tax?",
+      "options": [
+        "$480",
+        "$300",
+        "$600",
+        "$1,200"
+      ],
+      "feedback": "Tax revenue equals tax per unit times quantity sold: $6 × 80 = $480.",
+      "image": "question-assets/taxincidence.webp",
+      "aHash": "2fa3ce0ad31ce6bfa977b82d3e60cb2f8ce3870ad51c088ca732efed3def3a02"
+    },
+    "after": {
+      "q": "Refer to the tax graph. An analyst calls the government receipt the entire efficiency loss. With no externalities and using the straight curve segments around the two equilibria, which correction is right?",
+      "options": [
+        "Revenue is $480; deadweight loss is $60",
+        "Revenue is $600; deadweight loss is $60",
+        "Revenue is $480; deadweight loss is $480",
+        "Revenue is $240; deadweight loss is $120"
+      ],
+      "feedback": "Buyers pay $18, sellers receive $12 and 80 units trade, so revenue is $6 × 80 = $480. Quantity falls from 100 to 80, giving a lost-gains triangle of 0.5 × 20 × $6 = $60. Revenue transfers surplus to government; the missing trades destroy surplus.",
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp",
+      "aHash": "cc24db2f70655b771398a5f285c136a64f8df92ea4f5dacdfc4b918e4b829a33"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9059",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.3",
+    "type": "graph_interpretation",
+    "primarySkill": "tax_supply_shift",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9069",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.3",
+    "type": "synthesis",
+    "primarySkill": "tax_deadweight_loss_logic",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace generic DWL recognition with conditional tax-versus-control welfare synthesis.",
+    "numericProofs": [
+      "(30-6-8)/2==8",
+      "14-6==8",
+      "30-14==16",
+      "0.5*12*(30-6)==144",
+      "0.5*8*(30-22)+0.5*8*(14-6)+8*8==128",
+      "(30-14)*8-0.5*8**2==96",
+      "144-128==16"
+    ],
+    "before": {
+      "q": "A tax on a good raises government revenue but reduces quantity traded. Which answer best connects taxes to market efficiency?",
+      "options": [
+        "Some trades with benefits above costs no longer occur because the tax wedge blocks them",
+        "All lost trades were inefficient anyway",
+        "Tax revenue always exceeds any efficiency loss",
+        "Taxes improve efficiency whenever buyers dislike higher prices"
+      ],
+      "feedback": "A tax wedge can prevent trades that would have benefited both buyers and sellers.",
+      "aHash": "9d3099fd49f1af2449dbe78a4189ab6299511a09f6117e0acd11a7534ca539f4"
+    },
+    "after": {
+      "q": "A linear market has demand P = 30 − Q and supply P = 6 + Q. Compare an $8 tax with a $14 ceiling. Under the ceiling, available units go to the highest-value buyers and lowest-cost sellers, with no search costs. With no externalities, which comparison is correct?",
+      "options": [
+        "Both trade 8 units and retain $128 of total surplus; the ceiling gives consumers $64 more surplus",
+        "Both trade 8 units, but the tax destroys its $64 revenue and leaves only $64 of total surplus",
+        "The tax trades 8 units, but the ceiling trades all 16 units demanded at $14",
+        "Both retain $144 of total surplus because revenue and lower prices are transfers"
+      ],
+      "feedback": "Untaxed Q is 12 and TS is $144. With the tax, Q = 8, buyers pay $22 and sellers receive $14: CS = $32, PS = $32 and revenue = $64, totaling $128. The ceiling also supports 8 supplied units; efficient allocation gives CS = $96 and PS = $32. Each loses $16 of gains, but consumers receive $64 more under the ceiling. This equality depends on the stated allocation and cost assumptions.",
+      "aHash": "e5f8e923a3e6fc9039658725c571ee14435e1ffe31b6f6df25998fb57c0d44fb"
+    }
+  },
+  {
+    "id": "PG2-TAX-L-001",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.3",
+    "type": "multi-step",
+    "primarySkill": "tax_wedge_market_shrinkage_synthesis",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace generic statutory-incidence synthesis with linked graph incidence, revenue and welfare accounting.",
+    "numericProofs": [
+      "(14-10)*100000==400000",
+      "480000-400000==80000",
+      "0.5*(140000-100000)*4==80000",
+      "14-12==12-10==2"
+    ],
+    "before": {
+      "q": "What does this graph show about statutory tax placement versus economic incidence?",
+      "options": [
+        "Sellers bear the full $4 because supply is the shifted curve.",
+        "The $4 wedge is shared; sellers do not bear all of it.",
+        "Buyers bear the full $4 because the market price rises.",
+        "Neither side bears the tax because quantity falls after the tax."
+      ],
+      "feedback": "The graph separates statutory placement from market incidence. Buyers pay more, sellers net less, and fewer units are traded; the $4 wedge is split $2/$2 here.",
+      "aHash": "8a60d9087d8984db4ee8fa1667bce96627bf50c18d603c0f3d529634bfe915f7"
+    },
+    "after": {
+      "q": "Refer to the movie-tax graph. A review finds that CS plus PS falls by $480,000 after the displayed tax. With no externalities or collection costs, how should that change be reconciled with incidence and total surplus?",
+      "options": [
+        "$480,000 is lost surplus, while the $400,000 revenue is an additional loss",
+        "$400,000 becomes revenue, $80,000 is lost surplus, and each side bears $2 per unit",
+        "$560,000 becomes revenue, total surplus rises $80,000, and each side bears $2",
+        "$400,000 becomes revenue, $80,000 is lost surplus, and buyers bear all $4 per unit"
+      ],
+      "feedback": "Read the old price $12, buyer price $14, seller receipt $10 and taxed quantity 100,000. The $4 wedge raises $400,000. Subtracting that transfer from the $480,000 private loss leaves $80,000 of lost surplus, also 0.5 × 40,000 × $4. Each side bears $2 on each remaining unit.",
+      "aHash": "6ad8b839ba39dcef95e741d076fdf304378499d2d058908f2dff6ec93b7b1f03"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-274",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "LO6.3",
+    "type": "graph_calculation",
+    "primarySkill": "tax_revenue_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-183",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "calculation",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "graph_calculation",
+    "primarySkill": "tax_wedge_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-187",
+    "concept": "tax-wedges-and-revenue",
+    "pool": "calculation",
+    "difficulty": "medium",
+    "objective": "LO6.3",
+    "type": "graph_calculation",
+    "primarySkill": "tax_quantity_reduction_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-wedges-and-revenue/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-282",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.4",
+    "type": "graph_interpretation",
+    "primarySkill": "buyer_seller_tax_equivalence",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Make statutory equivalence require actual graph prices and quantity.",
+    "numericProofs": [
+      "18-12==6",
+      "12+6==18",
+      "18-15==3"
+    ],
+    "before": {
+      "q": "Refer to the tax incidence graph. If the tax were legally placed on buyers instead of sellers but the same wedge resulted, what would change in the economic burden?",
+      "options": [
+        "Nothing; elasticities still determine the burden.",
+        "Buyers would automatically bear all of it",
+        "Sellers would automatically bear all of it",
+        "Quantity would increase"
+      ],
+      "image": "question-assets/taxincidence.webp",
+      "feedback": "The legal assignment does not determine the economic burden. The wedge and elasticities determine how the burden is split.",
+      "aHash": "fbaa388a594cb5aae7150db7ecea638566300b7e0a744f55cc2ab74d5fd0615a"
+    },
+    "after": {
+      "q": "Refer to the tax graph. If the same per-unit tax is collected from buyers instead of sellers, with demand and supply unchanged, which outcome follows?",
+      "options": [
+        "Buyers still pay $18 in total, sellers keep $12, and 80 units trade",
+        "Buyers pay $21 in total, sellers keep $15, and 80 units trade",
+        "Buyers pay $18 in total, sellers keep $18, and 100 units trade",
+        "Buyers pay $15 in total, sellers keep $9, and 100 units trade"
+      ],
+      "image": "question-assets/statutory-versus-economic-tax-incidence/taxincidence.webp",
+      "feedback": "The graph establishes a $6 wedge at quantity 80, with total buyer payment $18 and net seller receipt $12. Changing the remitter preserves this wedge and equilibrium. Under buyer remittance, buyers pay sellers $12 and government $6; that does not make the economic buyer burden $6.",
+      "aHash": "d49d3e093cbf21f71362a9895fa77ec30b1bcc65b98d5a51e8aeed21d88ca0d9"
+    }
+  },
+  {
+    "id": "PG2-STX-H-001",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.4",
+    "type": "calculation",
+    "primarySkill": "tax_equivalence_application",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Strengthen Hard buyer-tax graph interpretation without supplying the needed prices.",
+    "numericProofs": [
+      "13.5-7.5==6",
+      "7.5+6==13.5"
+    ],
+    "before": {
+      "q": "Refer to the graph. By how much does the buyer-side tax reduce the quantity of movie transactions?",
+      "options": [
+        "Quantity traded rises by 40 thousand movies",
+        "Quantity traded falls by 40 thousand movies",
+        "Quantity traded stays at 100 thousand movies",
+        "Quantity traded falls by 60 thousand movies"
+      ],
+      "feedback": "Quantity falls from 100 thousand movies before the tax to 60 thousand after the tax, a reduction of 40 thousand movies.",
+      "aHash": "7ddb40b719f58487e0dd0b3135c2425a869fa33ecd354e98930cd1dd368c8b7f"
+    },
+    "after": {
+      "q": "Refer to the movie graph with Demand with tax. If sellers instead remitted the same tax, with both curves fixed, which bundle would give the total buyer payment, net seller receipt and quantity?",
+      "options": [
+        "$7.50 paid, $13.50 received, and 60,000 units traded",
+        "$13.50 paid, $7.50 received, and 60,000 units traded",
+        "$13.50 paid, $7.50 received, and 100,000 units traded",
+        "$10.50 paid, $4.50 received, and 100,000 units traded"
+      ],
+      "feedback": "Supply intersects Demand with tax at 60,000 units and $7.50 received by sellers. At that quantity, original demand gives the $13.50 total buyer payment. The $6 difference goes to government. Switching remittance to sellers preserves these total and net prices and quantity.",
+      "aHash": "9c714db84fe3bab239ddc17e8fabbf212be1c0962aada3f417ea4d3de92b6ded"
+    }
+  },
+  {
+    "id": "PG2-STX-EL-001",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.4",
+    "type": "multi-step",
+    "primarySkill": "buyer_seller_tax_equivalence",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add the missing graph cue; numerical answer and assessed skill retained.",
+    "numericProofs": [
+      "13.5-7.5==6",
+      "13.5-10.5==10.5-7.5==3"
+    ],
+    "before": {
+      "q": "Suppose the same $6 per-movie tax were legally collected from sellers instead of buyers, with the same supply and demand curves. What standard supply-and-demand result should be expected?"
+    },
+    "after": {
+      "q": "Refer to the graph. Suppose the same $6 per-movie tax were legally collected from sellers instead of buyers, with the same supply and demand curves. What standard supply-and-demand result should be expected?"
+    }
+  },
+  {
+    "id": "40046",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.4",
+    "type": "graph_integration",
+    "primarySkill": "tax_equivalence",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace an abstract equivalence rule with graphical statutory cash-flow reconciliation.",
+    "numericProofs": [
+      "16-8==8",
+      "16-8==8"
+    ],
+    "before": {
+      "q": "Refer to the graph. If the same $8 per-unit tax were imposed on sellers instead of buyers, what should happen?",
+      "options": [
+        "Quantity would return to 200 thousand tickets",
+        "Sellers would necessarily bear all 8 dollars",
+        "Quantity and burden split would be equivalent",
+        "Buyers would necessarily bear none of the tax"
+      ],
+      "feedback": "Equal buyer and seller taxes create the same wedge; elasticities determine burden.",
+      "aHash": "fcd883db4541f260cf7e5e332a287ca81ab972489a272bf7373025b2f6cbd63f"
+    },
+    "after": {
+      "q": "Refer to the concert graph with Demand with tax. The law changes so sellers remit the same tax instead. With demand and supply fixed, which cash-flow description fits the resulting equilibrium?",
+      "options": [
+        "Buyers pay sellers $8; sellers remit $8 and keep $0; 150,000 tickets trade",
+        "Buyers pay sellers $18; sellers remit $8 and keep $10; 200,000 tickets trade",
+        "Buyers pay sellers $16; sellers remit $8 and keep $8; 150,000 tickets trade",
+        "Buyers pay sellers $16; sellers remit $6 and keep $10; 200,000 tickets trade"
+      ],
+      "feedback": "The graph shows buyer cost $16 and net seller receipt $8 at 150,000 tickets, so the wedge is $8. Switching remittance changes the transaction payment, not these net prices or quantity. Sellers now collect $16, forward $8 and retain $8.",
+      "aHash": "798f5c2df6c28da1a053fa6067b1527cb9f8d6b60f797024c5fa65b2a40cd607"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9070",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.4",
+    "type": "trap",
+    "primarySkill": "tax_equivalence_application",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Upgrade legal-incidence misconception to price, quantity and revenue decomposition.",
+    "numericProofs": [
+      "120*25-100*23==700",
+      "25-23==2",
+      "2*100+20*25==700",
+      "29-23==6"
+    ],
+    "before": {
+      "q": "A seller argues, 'The tax is legally charged to buyers, so my business cannot be affected.' What is the best response?",
+      "options": [
+        "Wrong; buyer taxes can reduce demand faced by sellers and lower quantity sold",
+        "Correct; only the legal taxpayer changes behavior",
+        "Correct; seller revenue cannot change when buyers pay the tax",
+        "Wrong; the tax becomes a price floor"
+      ],
+      "feedback": "Even when buyers remit the tax, sellers can be affected through lower quantity sold and changed equilibrium prices.",
+      "aHash": "885617a615b9ba2ba09fbf138c44f9fe28331074f8580c8e95fcc3e59cbfd800"
+    },
+    "after": {
+      "q": "A $6 tax is legally remitted by buyers. Before it, 120 repairs sold for $25 each; afterward, 100 repairs sell, buyers pay $29 in total and firms keep $23. A firm says buyer remittance leaves its sales receipts unaffected. What refutes the claim?",
+      "options": [
+        "Net sales receipts fall by $700, although the seller burden is only $2 per remaining repair",
+        "Net sales receipts fall by $600, equal to the full government receipt",
+        "Net sales receipts rise by $400, because buyers pay $4 more per repair",
+        "Net sales receipts remain $3,000, because firms do not remit the tax"
+      ],
+      "feedback": "Firms initially receive 120 × $25 = $3,000, then 100 × $23 = $2,300: a $700 decline. Only $200 is the $2 price burden on continuing repairs; $500 reflects lost sales at the old price. Sales receipts are not profit or producer surplus. Legal remittance does not shield firms from price and quantity changes.",
+      "aHash": "d020df42331036a1b35678c651d13771491f28280570926292f5f35921465254"
+    }
+  },
+  {
+    "id": "PG2-STX-L-001",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.4",
+    "type": "multi-step",
+    "primarySkill": "tax_incidence_misconception_detection",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Make upper-tier statutory equivalence depend on graph reconstruction of incidence and revenue.",
+    "numericProofs": [
+      "(13.5-7.5)*60000==360000",
+      "13.5-10.5==10.5-7.5==3"
+    ],
+    "before": {
+      "q": "Refer to the graph. A student concludes that buyers bear the full $6 tax because the tax is legally imposed on them. Which evidence from the graph shows why that conclusion is wrong?",
+      "options": [
+        "Legal placement fixes incidence; buyers bear the entire tax.",
+        "Legal placement fixes incidence; sellers bear the entire tax.",
+        "Incidence cannot be inferred from buyer and seller prices.",
+        "Legal placement and incidence differ; both sides share it."
+      ],
+      "feedback": "Economic incidence is measured by changes from the original equilibrium price, not by who sends the tax payment to government. Here the buyer increase and seller decrease are both $3.",
+      "aHash": "baca1c22b1d337b639c709c3b6e5a1d322e97c96d852c33565799509fd3810a7"
+    },
+    "after": {
+      "q": "Refer to the movie graph with Demand with tax. A proposal shifts remittance to sellers while keeping the tax unchanged. Which forecast correctly combines revenue and economic incidence?",
+      "options": [
+        "Revenue stays $600,000; buyers and sellers each bear $3 per unit",
+        "Revenue stays $360,000; sellers now bear the entire $6 per unit",
+        "Revenue falls to $180,000; only the new legal remitter has a burden",
+        "Revenue stays $360,000; buyers and sellers each bear $3 per unit"
+      ],
+      "feedback": "The wedge is $13.50 − $7.50 = $6 and 60,000 units trade, giving $360,000 in revenue. Relative to the original $10.50 price, buyer and seller burdens are each $3. The same fixed curves and wedge yield the same equilibrium under seller remittance.",
+      "aHash": "a4b58c1abdbe7978cbe7003b68db9b3988be7ee936bbf36f81ddab7e7ac9f5cd"
+    }
+  },
+  {
+    "id": "ECON-MG-FINALBOSS-4018",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "LO6.4",
+    "type": "graph_integration",
+    "primarySkill": "buyer_seller_tax_equivalence",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/statutory-versus-economic-tax-incidence/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARYBOSS-9140",
+    "concept": "statutory-versus-economic-tax-incidence",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "LO6.4",
+    "type": "calculation",
+    "primarySkill": "buyer_seller_tax_equivalence",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace stem-answer repetition with statutory cash-flow error diagnosis.",
+    "numericProofs": [
+      "52-46==6",
+      "46+6==52",
+      "52+6==58"
+    ],
+    "before": {
+      "q": "Under a seller tax, buyers pay $52 and sellers keep $46. Under an equivalent buyer tax, which outcome should occur?",
+      "options": [
+        "Buyers pay $46 and sellers keep $52",
+        "Buyers pay $49 and sellers keep $49",
+        "Buyers pay $52 and sellers keep $46",
+        "Both prices rise to $58"
+      ],
+      "feedback": "The same $6 wedge and market equilibrium remain when only statutory remittance changes.",
+      "aHash": "4c116af0a068ed0d16f395024c31cfe219709618db6c78e27f0b3ebc153fc449"
+    },
+    "after": {
+      "q": "Under a seller-remitted tax, buyers pay $52 and sellers keep $46 per unit. The same tax is reassigned to buyers, with curves unchanged. An invoice then asks buyers to pay sellers $52 plus a separate tax payment. Which correction preserves the original economic outcome?",
+      "options": [
+        "Pay sellers $52 and government $6, for $58 in total",
+        "Pay sellers $49 and government $3, for $52 in total",
+        "Pay sellers $46 and government $6, for $52 in total",
+        "Pay sellers $46 and government nothing, for $46 in total"
+      ],
+      "feedback": "The original wedge is $52 − $46 = $6. Under buyer remittance, the seller transaction payment must be $46, with another $6 sent directly to government. Paying sellers $52 and then adding $6 double-counts the wedge relative to the equivalent equilibrium.",
+      "aHash": "ca23826b8b9245d421225d949b6cf392e2935634a7c4e0863815f26d7807fb5f"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-188",
+    "concept": "tax-incidence",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO6.5",
+    "type": "graph_interpretation",
+    "primarySkill": "buyer_seller_tax_burden",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-incidence/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-281",
+    "concept": "tax-incidence",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO6.5",
+    "type": "graph_interpretation",
+    "primarySkill": "equal_tax_incidence_interpretation",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Remove the answer-revealing burden split from the stem.",
+    "numericProofs": [
+      "18-15==15-12==3",
+      "3/(18-12)==0.5"
+    ],
+    "before": {
+      "q": "Refer to the tax incidence graph. What does the equal $3 buyer burden and $3 seller burden suggest?",
+      "options": [
+        "Buyers and sellers split the tax burden equally in this graph",
+        "Buyers bear the entire tax",
+        "Sellers bear the entire tax",
+        "The tax has no burden because revenue is collected"
+      ],
+      "image": "question-assets/taxincidence.webp",
+      "feedback": "Buyers pay $3 more and sellers receive $3 less, so the burden is split evenly in this graph.",
+      "aHash": "9adbc576bfc80fc74966a87a588493e4f4a76e8e2d12760c502e170d30d7aac0"
+    },
+    "after": {
+      "q": "Refer to the tax graph. Using the original equilibrium as the benchmark, how is the per-unit tax burden divided?",
+      "options": [
+        "Buyers bear $3 and sellers $3, so each bears half",
+        "Buyers bear $6 and sellers $0, because the buyer price is highest",
+        "Buyers bear $0 and sellers $6, because the shifted curve is supply",
+        "Buyers bear $18 and sellers $12, equal to the two after-tax prices"
+      ],
+      "image": "question-assets/tax-incidence/taxincidence.webp",
+      "feedback": "The original price is $15. Buyers now pay $18, an increase of $3, while sellers keep $12, a decrease of $3. These burdens sum to the $6 wedge. Neither legal remittance nor the full price level measures incidence.",
+      "aHash": "4d2427654f92ffe5bc7dd8254e50eedb0c5a1c59b2efdb2a1f62dbac799505fd"
+    }
+  },
+  {
+    "id": "ECON-MG-ELITE-317",
+    "concept": "tax-incidence",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.5",
+    "type": "multi-step",
+    "primarySkill": "total_buyer_tax_burden",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Clarify that aggregate incidence on continuing trades is not the full welfare loss.",
+    "numericProofs": [
+      "(46-40)*420==2520",
+      "500-420==80"
+    ],
+    "before": {
+      "q": "A market starts at price $40. After a tax, buyers pay $46 and sellers receive $34. Quantity sold is 420. What is the total buyer-side burden?",
+      "options": [
+        "$2,520",
+        "$5,040",
+        "$1,680",
+        "$14,280"
+      ],
+      "feedback": "Buyers pay $6 more per unit than before. Total buyer burden is $6 × 420 = $2,520."
+    },
+    "after": {
+      "q": "Before a tax, price is $40 and 500 units trade. Afterward buyers pay $46, sellers keep $34, and 420 units trade. What is the buyer-burden rectangle on the units still traded, as distinct from the entire change in consumer surplus?",
+      "options": [
+        "$2,520",
+        "$3,000",
+        "$5,040",
+        "$19,320"
+      ],
+      "feedback": "The per-unit buyer burden is $46 − $40 = $6. On 420 continuing units, its rectangle is $2,520. The full CS change also includes lost gains from the 80 missing trades; the rectangle alone does not measure that entire loss."
+    }
+  },
+  {
+    "id": "ECON-MG-ELITE-318",
+    "concept": "tax-incidence",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO6.5",
+    "type": "multi-step",
+    "primarySkill": "total_seller_tax_burden",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Distinguish the seller incidence rectangle from total PS loss and revenue.",
+    "numericProofs": [
+      "(40-34)*420==2520",
+      "(46-34)*420==5040"
+    ],
+    "before": {
+      "q": "A market starts at price $40. After a tax, buyers pay $46 and sellers receive $34. Quantity sold is 420. What is the total seller-side burden?",
+      "options": [
+        "$2,520",
+        "$5,040",
+        "$1,680",
+        "$14,280"
+      ],
+      "feedback": "Sellers receive $6 less per unit than before. Total seller burden is $6 × 420 = $2,520."
+    },
+    "after": {
+      "q": "A market moves from $40 and 500 units before a tax to a buyer price of $46, seller receipt of $34, and 420 units afterward. What is the seller-burden rectangle on continuing trades, excluding the surplus lost on missing trades?",
+      "options": [
+        "$2,520",
+        "$3,000",
+        "$5,040",
+        "$14,280"
+      ],
+      "feedback": "The seller loses $40 − $34 = $6 per continuing unit, so the rectangle is $6 × 420 = $2,520. Using 500 applies the burden to trades that no longer occur. The $12 wedge times 420 is total revenue, not the seller share alone."
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9056",
+    "concept": "tax-incidence",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.5",
+    "type": "graph_calculation",
+    "primarySkill": "tax_burden_split",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Remove given answers and combine graphical incidence with remittance and revenue accounting.",
+    "numericProofs": [
+      "18-15==15-12==3",
+      "3*80==240",
+      "2*240==480"
+    ],
+    "before": {
+      "q": "Refer to the tax graph. After the tax, buyers pay $18 and sellers receive $12. Compared with the original $15 equilibrium price, how is the burden split?",
+      "options": [
+        "Buyers bear $3 and sellers bear $3 per unit",
+        "Buyers bear $6 and sellers bear $0 per unit",
+        "Buyers bear $0 and sellers bear $6 per unit",
+        "Buyers bear $18 and sellers bear $12 per unit"
+      ],
+      "feedback": "Buyers pay $3 more than before and sellers receive $3 less than before.",
+      "image": "question-assets/taxincidence.webp",
+      "aHash": "7c43ae4215e4849fff8b9de6c498c908b811bfe23c0e69480267e7901e2af57b"
+    },
+    "after": {
+      "q": "Refer to the tax graph. A seller argues that its legal duty to remit the tax means it bears the entire revenue rectangle. What do the price changes and continuing quantity show?",
+      "options": [
+        "Each side bears $3 per unit and $240 of the $480 rectangle",
+        "Sellers bear $6 per unit and all $480 of the rectangle",
+        "Each side bears $3 per unit and $300 of the $600 rectangle",
+        "Buyers bear $6 per unit and all $480 of the rectangle"
+      ],
+      "feedback": "Relative to $15, buyers pay $3 more and sellers receive $3 less. At 80 units, each incidence rectangle is $240, together equaling $480 of revenue. Remitting the money is different from bearing the price burden; these rectangles exclude gains lost on missing trades.",
+      "image": "question-assets/tax-incidence/taxincidence.webp",
+      "aHash": "1e6ac3f06c6f1de7c345fc273a067573cc827beb714f7025cf6a713dcd4db74c"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9061",
+    "concept": "tax-incidence",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.5",
+    "type": "synthesis",
+    "primarySkill": "tax_burden_elasticity_inference",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace direct burden reading with reverse price inference and elasticity interpretation.",
+    "numericProofs": [
+      "0.75*8==6",
+      "26-6==20",
+      "20-18==2"
+    ],
+    "before": {
+      "q": "A $5 tax is imposed. Buyers pay $3 more and sellers receive $2 less than before. Which side bears more burden and what does that imply?",
+      "options": [
+        "Buyers bear more, suggesting demand is less elastic than supply",
+        "Sellers bear more, suggesting supply is less elastic than demand",
+        "Both bear the same burden because the tax is $5",
+        "The legal taxpayer bears all of the burden"
+      ],
+      "feedback": "Buyers bear $3 of the $5 tax. The side with less elastic behavior tends to bear more burden.",
+      "aHash": "a6d6aed331f05f4c6ff441a3e7890fe360dd0b4eacb4bec04529f532865ac66c"
+    },
+    "after": {
+      "q": "A market has an $8 tax, a total buyer price of $26 and a net seller receipt of $18. Buyers bear 75% of the per-unit burden. What was the untaxed price, and which side is less price responsive over this change?",
+      "options": [
+        "$20; buyers",
+        "$24; sellers",
+        "$20; sellers",
+        "$24; buyers"
+      ],
+      "feedback": "Buyer burden is 0.75 × $8 = $6, so the old price was $26 − $6 = $20. Sellers bear the remaining $2, since $20 − $18 = $2. Under the standard tax-incidence comparison, the side bearing more of the wedge is less price responsive.",
+      "aHash": "a8209a0f4a87e92a3d5e8cab792ff241b9243c2b5259250c974ca41b8c4b65c0"
+    }
+  },
+  {
+    "id": "ECON-MG-LEGENDARY-9071",
+    "concept": "tax-incidence",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO6.5",
+    "type": "trap",
+    "primarySkill": "perfectly_inelastic_supply_tax_burden",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Connect an extreme incidence case to quantity, revenue and welfare instead of repeating the burden rule.",
+    "numericProofs": [
+      "6*200==1200",
+      "0.5*0*6==0"
+    ],
+    "before": {
+      "q": "A tax is imposed on a market where supply is perfectly inelastic. Who bears the tax burden?",
+      "options": [
+        "Sellers bear the burden because quantity supplied cannot respond",
+        "Buyers bear the burden because demand slopes downward",
+        "The burden is split equally by law",
+        "No one bears the burden because quantity does not change"
+      ],
+      "feedback": "The side that cannot adjust bears more burden. Perfectly inelastic supply means sellers bear the tax.",
+      "aHash": "ceaa68c8beea81afa3a4f4ca9b44aa911fc2970e2e486ffa0eaab008c98ac72d"
+    },
+    "after": {
+      "q": "Supply is perfectly inelastic at 200 units and demand slopes downward. A $6 tax is imposed in a competitive market with no externalities or collection costs. Which combination follows?",
+      "options": [
+        "Sellers bear $6 per unit, revenue is $1,200, and deadweight loss is zero",
+        "Buyers bear $6 per unit, revenue is $1,200, and deadweight loss is zero",
+        "Sellers bear $6 per unit, revenue is $1,200, and deadweight loss is $1,200",
+        "Buyers and sellers each bear $3, revenue is $600, and quantity falls"
+      ],
+      "feedback": "The vertical supply curve holds quantity at 200. Buyers pay the same demand price at that quantity, so sellers absorb the full $6 wedge through lower net receipts. Revenue is $1,200. With no trades lost and no other distortions in the stated model, tax revenue is a transfer and there is no deadweight loss.",
+      "aHash": "029f08abb6d1c9a016f1bec669950af1d821fa2802ed500acea1674a09943f81"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-275",
+    "concept": "tax-incidence",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "LO6.5",
+    "type": "graph_calculation",
+    "primarySkill": "total_buyer_tax_burden",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Remove ambiguity between an incidence rectangle and the entire welfare loss.",
+    "numericProofs": [
+      "(18-15)*80==240"
+    ],
+    "before": {
+      "q": "Refer to the tax incidence graph. What is the total buyer burden after the tax?",
+      "image": "question-assets/taxincidence.webp",
+      "feedback": "Buyers pay $3 more than before, and 80 units are sold. Total buyer burden is $3 × 80 = $240."
+    },
+    "after": {
+      "q": "Refer to the tax incidence graph. What is the buyer-burden rectangle on the units still traded, excluding surplus lost on missing trades?",
+      "image": "question-assets/tax-incidence/taxincidence.webp",
+      "feedback": "The per-unit buyer burden is $3 relative to the original $15 price. Multiplying by 80 continuing units gives $240. The full welfare loss for that side also includes surplus lost on trades that no longer occur."
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-276",
+    "concept": "tax-incidence",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "LO6.5",
+    "type": "graph_calculation",
+    "primarySkill": "total_seller_tax_burden",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Remove ambiguity between an incidence rectangle and the entire welfare loss.",
+    "numericProofs": [
+      "(15-12)*80==240"
+    ],
+    "before": {
+      "q": "Refer to the tax incidence graph. What is the total seller burden after the tax?",
+      "image": "question-assets/taxincidence.webp",
+      "feedback": "Sellers receive $3 less than before, and 80 units are sold. Total seller burden is $3 × 80 = $240."
+    },
+    "after": {
+      "q": "Refer to the tax incidence graph. What is the seller-burden rectangle on the units still traded, excluding surplus lost on missing trades?",
+      "image": "question-assets/tax-incidence/taxincidence.webp",
+      "feedback": "The per-unit seller burden is $3 relative to the original $15 price. Multiplying by 80 continuing units gives $240. The full welfare loss for that side also includes surplus lost on trades that no longer occur."
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-277",
+    "concept": "tax-incidence",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "LO6.5",
+    "type": "graph_calculation",
+    "primarySkill": "total_tax_burden_calculation",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Clarify that the revenue rectangle excludes deadweight loss.",
+    "numericProofs": [
+      "(18-12)*80==480"
+    ],
+    "before": {
+      "q": "Refer to the tax incidence graph. What is the total burden on buyers and sellers combined?",
+      "image": "question-assets/taxincidence.webp",
+      "feedback": "The tax is $6 per unit and 80 units are sold. Total tax burden, which becomes revenue, is $480."
+    },
+    "after": {
+      "q": "Refer to the tax incidence graph. What is the combined buyer- and seller-burden rectangle on continuing trades, which becomes government revenue?",
+      "image": "question-assets/tax-incidence/taxincidence.webp",
+      "feedback": "The $6 wedge applies to 80 continuing trades, so the rectangle is $480. This is the combined per-unit incidence times taxed quantity. Lost gains from the missing trades are additional welfare loss and are not government revenue."
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-278",
+    "concept": "tax-incidence",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "LO6.5",
+    "type": "graph_calculation",
+    "primarySkill": "buyer_tax_burden_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-incidence/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-HARD-279",
+    "concept": "tax-incidence",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "LO6.5",
+    "type": "graph_calculation",
+    "primarySkill": "seller_tax_burden_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-incidence/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-184",
+    "concept": "tax-incidence",
+    "pool": "calculation",
+    "difficulty": "medium",
+    "objective": "LO6.5",
+    "type": "graph_calculation",
+    "primarySkill": "buyer_tax_burden_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-incidence/taxincidence.webp"
+    }
+  },
+  {
+    "id": "ECON-MG-MEDIUM-185",
+    "concept": "tax-incidence",
+    "pool": "calculation",
+    "difficulty": "medium",
+    "objective": "LO6.5",
+    "type": "graph_calculation",
+    "primarySkill": "seller_tax_burden_calculation",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Correct legacy path to the existing approved runtime graph asset.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/taxincidence.webp"
+    },
+    "after": {
+      "image": "question-assets/tax-incidence/taxincidence.webp"
+    }
+  }
+]

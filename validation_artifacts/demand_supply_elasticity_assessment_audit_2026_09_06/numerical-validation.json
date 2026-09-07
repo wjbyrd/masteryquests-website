@@ -1,0 +1,1250 @@
+{
+  "passed": true,
+  "independentEndpointAndSignedForecastChecks": [
+    {
+      "id": "P62B-ELAS-H-001",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            30,
+            36,
+            400,
+            360
+          ],
+          "expectedRounded": 0.58,
+          "pricePct": 18.181818181818183,
+          "quantityPct": -10.526315789473685,
+          "signedElasticity": -0.5789473684210527,
+          "absoluteElasticity": 0.5789473684210527,
+          "revenueBefore": 12000,
+          "revenueAfter": 12960,
+          "classification": "inelastic"
+        }
+      ],
+      "correctChoice": "About 0.58, inelastic; use $36 to earn $960 more.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-004",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            25,
+            30,
+            480,
+            360
+          ],
+          "expectedRounded": 1.57,
+          "pricePct": 18.181818181818183,
+          "quantityPct": -28.571428571428573,
+          "signedElasticity": -1.5714285714285714,
+          "absoluteElasticity": 1.5714285714285714,
+          "revenueBefore": 12000,
+          "revenueAfter": 10800,
+          "classification": "elastic"
+        }
+      ],
+      "correctChoice": "About 1.57, elastic; use $25 to earn $1,200 more.",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-028",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            40,
+            48,
+            150,
+            135
+          ],
+          "expectedRounded": 0.58,
+          "pricePct": 18.181818181818183,
+          "quantityPct": -10.526315789473685,
+          "signedElasticity": -0.5789473684210527,
+          "absoluteElasticity": 0.5789473684210527,
+          "revenueBefore": 6000,
+          "revenueAfter": 6480,
+          "classification": "inelastic"
+        }
+      ],
+      "correctChoice": "About 0.58, inelastic; $48 raises revenue by $480.",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-029",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            9,
+            12,
+            900,
+            600
+          ],
+          "expectedRounded": 1.4,
+          "pricePct": 28.571428571428573,
+          "quantityPct": -40.0,
+          "signedElasticity": -1.4,
+          "absoluteElasticity": 1.4,
+          "revenueBefore": 8100,
+          "revenueAfter": 7200,
+          "classification": "elastic"
+        }
+      ],
+      "correctChoice": "About 1.40, elastic; $9 earns $900 more than $12.",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-030",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            50,
+            45,
+            120,
+            140
+          ],
+          "expectedRounded": 1.46,
+          "pricePct": -10.526315789473685,
+          "quantityPct": 15.384615384615385,
+          "signedElasticity": -1.4615384615384615,
+          "absoluteElasticity": 1.4615384615384615,
+          "revenueBefore": 6000,
+          "revenueAfter": 6300,
+          "classification": "elastic"
+        }
+      ],
+      "correctChoice": "About 1.46, elastic; choose $45 because revenue is $6,300 rather than $6,000.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-031",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            12,
+            8,
+            30,
+            60
+          ],
+          "expectedRounded": 1.67,
+          "pricePct": -40.0,
+          "quantityPct": 66.66666666666667,
+          "signedElasticity": -1.6666666666666667,
+          "absoluteElasticity": 1.6666666666666667,
+          "revenueBefore": 360,
+          "revenueAfter": 480,
+          "classification": "elastic"
+        }
+      ],
+      "correctChoice": "About 1.67, elastic; the price cut raises total revenue.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-004",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            32,
+            40,
+            180,
+            160
+          ],
+          "expectedRounded": 0.53,
+          "pricePct": 22.22222222222222,
+          "quantityPct": -11.764705882352942,
+          "signedElasticity": -0.5294117647058824,
+          "absoluteElasticity": 0.5294117647058824,
+          "revenueBefore": 5760,
+          "revenueAfter": 6400,
+          "classification": "inelastic"
+        },
+        {
+          "inputs": [
+            40,
+            48,
+            160,
+            110
+          ],
+          "expectedRounded": 2.04,
+          "pricePct": 18.181818181818183,
+          "quantityPct": -37.03703703703704,
+          "signedElasticity": -2.037037037037037,
+          "absoluteElasticity": 2.037037037037037,
+          "revenueBefore": 6400,
+          "revenueAfter": 5280,
+          "classification": "elastic"
+        }
+      ],
+      "correctChoice": "Keep $40: the lower interval is inelastic and the upper interval is elastic, so either listed change lowers revenue.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-015",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            24,
+            20,
+            250,
+            320
+          ],
+          "expectedRounded": 1.35,
+          "pricePct": -18.181818181818183,
+          "quantityPct": 24.56140350877193,
+          "signedElasticity": -1.3508771929824561,
+          "absoluteElasticity": 1.3508771929824561,
+          "revenueBefore": 6000,
+          "revenueAfter": 6400,
+          "classification": "elastic"
+        }
+      ],
+      "correctChoice": "About 1.35, elastic; use $20, which raises revenue by $400.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            4,
+            8,
+            90,
+            60
+          ],
+          "expectedRounded": 0.6,
+          "pricePct": 66.66666666666667,
+          "quantityPct": -40.0,
+          "signedElasticity": -0.6,
+          "absoluteElasticity": 0.6,
+          "revenueBefore": 360,
+          "revenueAfter": 480,
+          "classification": "inelastic"
+        }
+      ],
+      "correctChoice": "The price at B; revenue rises by 120 while sales remain above the minimum.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-093",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            12,
+            8,
+            30,
+            60
+          ],
+          "expectedRounded": 1.67,
+          "pricePct": -40.0,
+          "quantityPct": 66.66666666666667,
+          "signedElasticity": -1.6666666666666667,
+          "absoluteElasticity": 1.6666666666666667,
+          "revenueBefore": 360,
+          "revenueAfter": 480,
+          "classification": "elastic"
+        }
+      ],
+      "correctChoice": "Move to B: revenue is 480; at A capacity limits revenue to 280.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            10,
+            6,
+            45,
+            95
+          ],
+          "expectedRounded": 1.43,
+          "pricePct": -50.0,
+          "quantityPct": 71.42857142857143,
+          "signedElasticity": -1.4285714285714286,
+          "absoluteElasticity": 1.4285714285714286,
+          "revenueBefore": 450,
+          "revenueAfter": 570,
+          "classification": "elastic"
+        },
+        {
+          "inputs": [
+            10,
+            6,
+            35,
+            55
+          ],
+          "expectedRounded": 0.89,
+          "pricePct": -50.0,
+          "quantityPct": 44.44444444444444,
+          "signedElasticity": -0.8888888888888888,
+          "absoluteElasticity": 0.8888888888888888,
+          "revenueBefore": 350,
+          "revenueAfter": 330,
+          "classification": "inelastic"
+        }
+      ],
+      "correctChoice": "D1 plausibly has more close substitutes; the price cut raises D1 revenue but lowers D2 revenue.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-097",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            4,
+            8,
+            60,
+            70
+          ],
+          "expectedRounded": 0.23,
+          "pricePct": 66.66666666666667,
+          "quantityPct": 15.384615384615385,
+          "signedElasticity": 0.23076923076923078,
+          "absoluteElasticity": 0.23076923076923078,
+          "revenueBefore": 240,
+          "revenueAfter": 560,
+          "classification": "inelastic"
+        },
+        {
+          "inputs": [
+            4,
+            8,
+            60,
+            100
+          ],
+          "expectedRounded": 0.75,
+          "pricePct": 66.66666666666667,
+          "quantityPct": 50.0,
+          "signedElasticity": 0.75,
+          "absoluteElasticity": 0.75,
+          "revenueBefore": 240,
+          "revenueAfter": 800,
+          "classification": "inelastic"
+        }
+      ],
+      "correctChoice": "Short run about 0.23, long run 0.75; 90 units can be supplied only after the longer adjustment.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-016",
+      "method": "Exact rational midpoint percentages; signed coefficient retained internally, absolute PED reported; PES positive.",
+      "intervals": [
+        {
+          "inputs": [
+            80,
+            100,
+            200,
+            220
+          ],
+          "expectedRounded": 0.43,
+          "pricePct": 22.22222222222222,
+          "quantityPct": 9.523809523809524,
+          "signedElasticity": 0.42857142857142855,
+          "absoluteElasticity": 0.42857142857142855,
+          "revenueBefore": 16000,
+          "revenueAfter": 22000,
+          "classification": "inelastic"
+        },
+        {
+          "inputs": [
+            80,
+            100,
+            200,
+            280
+          ],
+          "expectedRounded": 1.5,
+          "pricePct": 22.22222222222222,
+          "quantityPct": 33.333333333333336,
+          "signedElasticity": 1.5,
+          "absoluteElasticity": 1.5,
+          "revenueBefore": 16000,
+          "revenueAfter": 28000,
+          "classification": "elastic"
+        }
+      ],
+      "correctChoice": "Supply is about 0.43 this month and 1.50 after expansion; only the expanded fleet meets the requirement.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-024",
+      "method": "Ratios of supplied percentage changes; signed income/cross elasticity; local forecast approximation.",
+      "cases": [
+        {
+          "signedCoefficient": "3/2",
+          "givenPercentages": [
+            6,
+            4
+          ],
+          "forecastDriverPercent": -2,
+          "predictedDemandPercent": -3.0
+        },
+        {
+          "signedCoefficient": "-1/2",
+          "givenPercentages": [
+            -2,
+            4
+          ],
+          "forecastDriverPercent": -2,
+          "predictedDemandPercent": 1.0
+        }
+      ],
+      "correctChoice": "A falls 3% and B rises 1%; A is normal and B is inferior.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-029",
+      "method": "Ratios of supplied percentage changes; signed income/cross elasticity; local forecast approximation.",
+      "cases": [
+        {
+          "signedCoefficient": "-3/4",
+          "givenPercentages": [
+            -6,
+            8
+          ],
+          "forecastDriverPercent": -4,
+          "predictedDemandPercent": 3.0
+        }
+      ],
+      "correctChoice": "-0.75; lenses and cameras are complements, and lens demand rises about 3%.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-030",
+      "method": "Ratios of supplied percentage changes; signed income/cross elasticity; local forecast approximation.",
+      "cases": [
+        {
+          "signedCoefficient": "5/4",
+          "givenPercentages": [
+            10,
+            8
+          ],
+          "forecastDriverPercent": -4,
+          "predictedDemandPercent": -5.0
+        }
+      ],
+      "correctChoice": "+1.25, substitutes; demand for X falls about 5%.",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-032",
+      "method": "Ratios of supplied percentage changes; signed income/cross elasticity; local forecast approximation.",
+      "cases": [
+        {
+          "signedCoefficient": "4/5",
+          "givenPercentages": [
+            4,
+            5
+          ],
+          "forecastDriverPercent": -5,
+          "predictedDemandPercent": -4.0
+        }
+      ],
+      "correctChoice": "The sign identifies substitutes, but the forecast is a 4% demand decrease, so the proposed stock increase reverses the response.",
+      "passed": true
+    }
+  ],
+  "authoringArithmeticAssertions": [
+    {
+      "id": "PG1-DMD-H-002",
+      "expression": "225-150 == 75",
+      "passed": true
+    },
+    {
+      "id": "PG1-SUP-H-002",
+      "expression": "200-100 == 100",
+      "passed": true
+    },
+    {
+      "id": "PG1-DMD-EL-002",
+      "expression": "125-150 == -25",
+      "passed": true
+    },
+    {
+      "id": "PG1-DMD-EL-002",
+      "expression": "75-100 == -25",
+      "passed": true
+    },
+    {
+      "id": "PG1-DMD-L-001",
+      "expression": "225-100 == 125",
+      "passed": true
+    },
+    {
+      "id": "PG1-SUP-L-002",
+      "expression": "200-100 == 100",
+      "passed": true
+    },
+    {
+      "id": "PG1-SUP-L-002",
+      "expression": "13-9 == 4",
+      "passed": true
+    },
+    {
+      "id": "PG1-SUP-L-003",
+      "expression": "225-100 == 125",
+      "passed": true
+    },
+    {
+      "id": "PG1-SUP-L-003",
+      "expression": "3-2 == 1",
+      "passed": true
+    },
+    {
+      "id": "P52B-S2-SUP-L-002",
+      "expression": "60*8 == 480",
+      "passed": true
+    },
+    {
+      "id": "P52B-S2-SUP-L-002",
+      "expression": "480/10 == 48",
+      "passed": true
+    },
+    {
+      "id": "P52B-S2-SUP-L-002",
+      "expression": "60-48 == 12",
+      "passed": true
+    },
+    {
+      "id": "PG1-EQ-EL-001",
+      "expression": "200-100 == 100",
+      "passed": true
+    },
+    {
+      "id": "PG1-EQ-EL-001",
+      "expression": "200-150 == 50",
+      "passed": true
+    },
+    {
+      "id": "PG1-EQ-EL-001",
+      "expression": "150-100 == 50",
+      "passed": true
+    },
+    {
+      "id": "PG1-EQ-EL-002",
+      "expression": "5-3 == 2",
+      "passed": true
+    },
+    {
+      "id": "40016",
+      "expression": "6-4 == 2",
+      "passed": true
+    },
+    {
+      "id": "40016",
+      "expression": "200-200 == 0",
+      "passed": true
+    },
+    {
+      "id": "40014",
+      "expression": "14-10 == 4",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9128",
+      "expression": "(180-20)/4 == 40",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9128",
+      "expression": "20+2*40 == 100",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9128",
+      "expression": "(156-12)/4 == 36",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9128",
+      "expression": "12+2*36 == 84",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9128",
+      "expression": "40-36 == 4",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9128",
+      "expression": "100-84 == 16",
+      "passed": true
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9129",
+      "expression": "1150-900 == 250",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-001",
+      "expression": "round(abs((360-400)/((360+400)/2)/((36-30)/((36+30)/2))),2) == 0.58",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-001",
+      "expression": "30*400 == 12000",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-001",
+      "expression": "36*360 == 12960",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-004",
+      "expression": "round(abs((360-480)/((360+480)/2)/((30-25)/((30+25)/2))),2) == 1.57",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-004",
+      "expression": "25*480 == 12000",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-004",
+      "expression": "30*360 == 10800",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-028",
+      "expression": "round(abs((135-150)/((135+150)/2)/((48-40)/((48+40)/2))),2) == 0.58",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-028",
+      "expression": "40*150 == 6000",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-028",
+      "expression": "48*135 == 6480",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-029",
+      "expression": "round(abs((600-900)/((600+900)/2)/((12-9)/((12+9)/2))),2) == 1.4",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-029",
+      "expression": "9*900 == 8100",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-029",
+      "expression": "12*600 == 7200",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-030",
+      "expression": "round((20/130)/(5/47.5),2) == 1.46",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-030",
+      "expression": "45*140 == 6300",
+      "passed": true
+    },
+    {
+      "id": "PMA-ELAS-H-030",
+      "expression": "50*120 == 6000",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-031",
+      "expression": "round((30/45)/(4/10),2) == 1.67",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-031",
+      "expression": "12*30 == 360",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-H-031",
+      "expression": "8*60 == 480",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-004",
+      "expression": "round((20/170)/(8/36),2) == .53",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-004",
+      "expression": "round((50/135)/(8/44),2) == 2.04",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-004",
+      "expression": "32*180 == 5760",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-004",
+      "expression": "40*160 == 6400",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-004",
+      "expression": "48*110 == 5280",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-015",
+      "expression": "round((70/285)/(4/22),2) == 1.35",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-015",
+      "expression": "20*320 == 6400",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-EL-015",
+      "expression": "24*250 == 6000",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "expression": "4*90 == 360",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "expression": "8*60 == 480",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "expression": "12*30 == 360",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "expression": "480-360 == 120",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "expression": "60>=50",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "expression": "30<50",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-093",
+      "expression": "8*60 == 480",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-093",
+      "expression": "4*min(90,70) == 280",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-093",
+      "expression": "12*30 == 360",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "expression": "round((50/70)/(4/8),2) == 1.43",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "expression": "round((20/45)/(4/8),2) == .89",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "expression": "10*45 == 450",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "expression": "6*95 == 570",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "expression": "10*35 == 350",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "expression": "6*55 == 330",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-097",
+      "expression": "round((10/65)/(4/6),2) == .23",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-097",
+      "expression": "(40/80)/(4/6) == .75",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-097",
+      "expression": "70<90<=100",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-016",
+      "expression": "round((20/210)/(20/90),2) == .43",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-016",
+      "expression": "(80/240)/(20/90) == 1.5",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-016",
+      "expression": "220<250<=280",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-024",
+      "expression": "6/4 == 1.5",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-024",
+      "expression": "-2/4 == -.5",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-024",
+      "expression": "1.5*-2 == -3",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-024",
+      "expression": "-.5*-2 == 1",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-029",
+      "expression": "-6/8 == -.75",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-029",
+      "expression": "-.75*-4 == 3",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-030",
+      "expression": "10/8 == 1.25",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-030",
+      "expression": "1.25*-4 == -5",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-L-032",
+      "expression": ".8*-5 == -4",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-B1-019",
+      "expression": "8*60 == 480",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-B1-019",
+      "expression": "7*67.5 < 480",
+      "passed": true
+    },
+    {
+      "id": "P62B-ELAS-B1-019",
+      "expression": "9*52.5 < 480",
+      "passed": true
+    }
+  ],
+  "arithmeticAssertionCount": 85,
+  "independentGraphEquilibria": [
+    {
+      "demandIntercept": 6,
+      "supplyIntercept": 0,
+      "quantity": 150.0,
+      "price": 3.0
+    },
+    {
+      "demandIntercept": 8,
+      "supplyIntercept": 0,
+      "quantity": 200.0,
+      "price": 4.0
+    },
+    {
+      "demandIntercept": 6,
+      "supplyIntercept": 2,
+      "quantity": 100.0,
+      "price": 4.0
+    },
+    {
+      "demandIntercept": 8,
+      "supplyIntercept": 2,
+      "quantity": 150.0,
+      "price": 5.0
+    }
+  ],
+  "graphContracts": {
+    "supplydemand1.webp": {
+      "intersections": {
+        "D1/S1": [
+          "Q1",
+          "P2"
+        ],
+        "D2/S1": [
+          "Q2",
+          "P3"
+        ],
+        "D1/S2": [
+          "Q2",
+          "P1"
+        ],
+        "D2/S2": [
+          "Q3",
+          "P2"
+        ]
+      },
+      "note": "Ordered P1<P2<P3 and Q1<Q2<Q3; never infer numeric magnitudes."
+    },
+    "ceilingfloor.webp": {
+      "equilibrium": [
+        200,
+        30
+      ],
+      "atPrice": {
+        "10": {
+          "Qs": 100,
+          "Qd": 300
+        },
+        "20": {
+          "Qs": 150,
+          "Qd": 250
+        },
+        "40": {
+          "Qs": 250,
+          "Qd": 150
+        },
+        "50": {
+          "Qs": 300,
+          "Qd": 100
+        }
+      },
+      "note": "Asset filename is historical. Questions here use market imbalance, not legal controls."
+    },
+    "DEMAND-01.webp": {
+      "points": {
+        "A": [
+          100,
+          10
+        ],
+        "B": [
+          225,
+          5
+        ]
+      },
+      "quantityUnit": "thousands",
+      "equation": "P=14-0.04Q"
+    },
+    "DEMAND-02.webp": {
+      "atPrice": {
+        "10": {
+          "D0": 50,
+          "D1": 125
+        },
+        "6": {
+          "D0": 150,
+          "D1": 225
+        }
+      },
+      "quantityUnit": "thousands",
+      "note": "D1 right of D0; gap 75; inverse price slope -0.04."
+    },
+    "DEMAND-03.webp": {
+      "atPrice": {
+        "4": {
+          "D0": 200,
+          "D1": 100
+        },
+        "6": {
+          "D0": 150,
+          "D1": 50
+        }
+      },
+      "quantityUnit": "thousands",
+      "note": "D1 left of D0; gap 100."
+    },
+    "SUPPLY-01.webp": {
+      "points": {
+        "A": [
+          100,
+          6
+        ],
+        "B": [
+          225,
+          11
+        ]
+      },
+      "atPrice": {
+        "8": 150
+      },
+      "quantityUnit": "thousands",
+      "equation": "P=2+0.04Q"
+    },
+    "SUPPLY-02.webp": {
+      "atPrice": {
+        "9": {
+          "S0": 200,
+          "S1": 100
+        },
+        "13": {
+          "S0": 300,
+          "S1": 200
+        }
+      },
+      "quantityUnit": "thousands",
+      "note": "S1 left/up from S0. Two intermediate tick labels lack leading 1; none of the revised tasks depends on those ticks."
+    },
+    "SUPPLY-03.webp": {
+      "points": {
+        "A": [
+          100,
+          3
+        ],
+        "B": [
+          225,
+          4
+        ]
+      },
+      "atPrice": {
+        "3": {
+          "S1": 225
+        },
+        "2": {
+          "S1": 100
+        }
+      },
+      "quantityUnit": "thousands",
+      "note": "Approximate readings, matching wording. Parallel rightward S1 is 125 thousand beyond S0 at a common price."
+    },
+    "DEMAND-SUPPLY-01.webp": {
+      "equilibrium": [
+        150,
+        3
+      ],
+      "atPrice": {
+        "1": {
+          "Qs": 50,
+          "Qd": 250
+        },
+        "2": {
+          "Qs": 100,
+          "Qd": 200
+        },
+        "4": {
+          "Qs": 200,
+          "Qd": 100
+        }
+      },
+      "quantityUnit": "thousand gallons",
+      "equations": {
+        "D0": "P=6-0.02Q",
+        "S0": "P=0.02Q"
+      }
+    },
+    "DEMAND-SUPPLY-02.webp": {
+      "intersections": {
+        "D0/S0": [
+          150,
+          3
+        ],
+        "D1/S0": [
+          200,
+          4
+        ],
+        "D0/S1": [
+          100,
+          4
+        ],
+        "D1/S1": [
+          150,
+          5
+        ]
+      },
+      "quantityUnit": "thousands",
+      "equations": {
+        "D0": "P=6-0.02Q",
+        "D1": "P=8-0.02Q",
+        "S0": "P=0.02Q",
+        "S1": "P=2+0.02Q"
+      }
+    },
+    "DEMAND-SUPPLY-03.webp": {
+      "points": {
+        "A": [
+          200,
+          10
+        ],
+        "B": [
+          150,
+          12
+        ]
+      },
+      "quantityUnit": "thousand movie tickets",
+      "note": "D0 fixed; A on S0, B on leftward S1."
+    },
+    "DEMAND-SUPPLY-04.webp": {
+      "points": {
+        "A": [
+          200,
+          10
+        ],
+        "B": [
+          250,
+          12
+        ]
+      },
+      "quantityUnit": "thousand movie tickets",
+      "note": "S0 fixed; A on D0, B on rightward D1. Revised question uses labeled points, not unlabeled intercepts."
+    },
+    "DEMAND-SUPPLY-05.webp": {
+      "points": {
+        "A": [
+          200,
+          10
+        ],
+        "B": [
+          200,
+          14
+        ]
+      },
+      "quantityUnit": "thousand movie tickets",
+      "note": "A=D0/S0; B=D1/S1. Reverse B-to-A has lower demand and higher supply, lowering price with Q unchanged in this drawing only."
+    },
+    "DEMAND-SUPPLY-06.webp": {
+      "points": {
+        "A": [
+          150,
+          5
+        ],
+        "B": [
+          200,
+          6
+        ],
+        "C": [
+          250,
+          5
+        ],
+        "D": [
+          200,
+          4
+        ]
+      },
+      "quantityUnit": "thousand gallons/day",
+      "note": "A=D0/S1; B=D1/S1; C=D1/S0; D=D0/S0. Demand-first D-C-B, supply-first D-A-B."
+    },
+    "DEMAND-SUPPLY-07.webp": {
+      "intersections": {
+        "A": "D0/S1",
+        "B": "D1/S1",
+        "C": "D1/S0",
+        "D": "D0/S0"
+      },
+      "note": "Qualitative only: B above D at equal quantity; A left and C right of D, both between D and B in price."
+    },
+    "ELAS-01.webp": {
+      "points": {
+        "A": [
+          90,
+          4
+        ],
+        "B": [
+          60,
+          8
+        ],
+        "C": [
+          30,
+          12
+        ]
+      },
+      "equation": "Q=120-7.5P",
+      "note": "C-B midpoint PED=5/3, B-A=3/5, C-A=1. Revenues 360,480,360; B is the maximum."
+    },
+    "ELAS-02.webp": {
+      "points": {
+        "A": [
+          95,
+          6
+        ],
+        "B": [
+          45,
+          10
+        ],
+        "C": [
+          55,
+          6
+        ],
+        "D": [
+          35,
+          10
+        ]
+      },
+      "note": "A,B on D1; C,D on D2. PED D1=10/7 and D2=8/9. Price cut revenue D1 450 to570; D2 350 to330."
+    },
+    "ELAS-03.webp": {
+      "points": {
+        "A": [
+          50,
+          5
+        ],
+        "B": [
+          50,
+          7
+        ]
+      },
+      "note": "D1 horizontal at5, infinite elasticity; D2 vertical at50, zero elasticity. A-B on D2 has revenue250 to350."
+    },
+    "ELAS-05.webp": {
+      "points": {
+        "originOfComparison": [
+          60,
+          4
+        ],
+        "A": [
+          70,
+          8
+        ],
+        "B": [
+          100,
+          8
+        ]
+      },
+      "note": "A on SR, B on LR. Midpoint PES 3/13 and3/4; ratio13/4. LR is more elastic, but both coefficients below1 for this interval."
+    }
+  },
+  "scope": "All content-revised numerical records checked by exact-rational models, arithmetic assertions, or their independently transcribed graph contract, including cue-only retained calculations. Every revised option and feedback was read for a unique economic answer. No exam answer key is included."
+}

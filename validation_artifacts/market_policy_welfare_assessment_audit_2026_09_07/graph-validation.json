@@ -1,0 +1,571 @@
+{
+  "graphQuestions": 165,
+  "runtimeAssets": 30,
+  "distinctImageHashes": 27,
+  "pathCorrectedRecords": 50,
+  "pathOnlyRecords": 39,
+  "accessibilityRecordsCorrected": 16,
+  "newAssets": 0,
+  "deletedAssets": 0,
+  "allBytesMatchRegistry": true,
+  "graphEligibilityUnchanged": true,
+  "trialGraphEligible": 97,
+  "assets": [
+    {
+      "runtimePath": "question-assets/binding-price-ceilings/CEILING-01.webp",
+      "sha256": "13882c3db06900367a4c3978b25e58719b09f0fcfbf2377668d25e1e038020f3",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "questionIds": [
+        "PG2-CEIL-E-001",
+        "PG2-CEIL-M-001",
+        "PG2-CEIL-M-002",
+        "PG2-CEIL-H-001",
+        "PG2-CEIL-EL-001",
+        "PG2-CEIL-L-001"
+      ],
+      "description": "The horizontal axis is quantity of apartments and the vertical axis is monthly rent in dollars. D0 and S0 intersect at A, quantity 150, rent 2000. The horizontal ceiling is at rent 1000, meeting supply at quantity 50 and demand at quantity 250.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/binding-price-ceilings/CEILING-02.webp",
+      "sha256": "d5afa73b833037ad4f84e6a481b40125e9bd7e4e6fff08fe555f6f2b3c7767c7",
+      "dimensions": [
+        1615,
+        1200
+      ],
+      "questionIds": [
+        "40021",
+        "40022",
+        "40023"
+      ],
+      "description": "The apartment market has monthly price vertically and quantity in thousands horizontally. D0 and S0 intersect at 200 thousand apartments and 1,500 dollars. A ceiling at 1,000 dollars intersects supply at 100 thousand and demand at 300 thousand.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/binding-price-ceilings/CEILING-03.webp",
+      "sha256": "394e558d501a6d2f8ddafeec304b9ac8ddc8d2671635c9877594906b7fb3ea83",
+      "dimensions": [
+        1613,
+        1200
+      ],
+      "questionIds": [
+        "40024",
+        "40025",
+        "40026"
+      ],
+      "description": "The apartment market has monthly price vertically and quantity in thousands horizontally. D0 and S0 intersect at 200 thousand apartments and 1,500 dollars. A ceiling at 2,000 dollars intersects demand at 100 thousand and supply at 300 thousand.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/binding-price-ceilings/ceilingfloor.webp",
+      "sha256": "f483f0c5fbae3b5793ceea124e10fb4b3de8338f4c0d58cd6ba07d8ac936ae6b",
+      "dimensions": [
+        2167,
+        1729
+      ],
+      "questionIds": [
+        "ECON-MG-MEDIUM-171",
+        "ECON-MG-MEDIUM-172",
+        "ECON-MG-MEDIUM-173",
+        "ECON-MG-MEDIUM-179",
+        "ECON-MG-HARD-266",
+        "ECON-MG-HARD-270",
+        "ECON-MG-HARD-273",
+        "ECON-MG-LEGENDARY-9035",
+        "ECON-MG-LEGENDARY-9037",
+        "ECON-MG-LEGENDARY-9039",
+        "ECON-MG-HARD-268",
+        "ECON-MG-MEDIUM-174",
+        "ECON-MG-FINALBOSS-4001"
+      ],
+      "description": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve intersect at price $30 and quantity 200. Dashed guides also show demand and supply quantities at prices $10, $20, $40, and $50: at $10, supply is 100 and demand is 300; at $20, supply is 150 and demand is 250; at $40, supply is 250 and demand is 150; at $50, supply is 300 and demand is 100.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/binding-price-floors/ceilingfloor.webp",
+      "sha256": "f483f0c5fbae3b5793ceea124e10fb4b3de8338f4c0d58cd6ba07d8ac936ae6b",
+      "dimensions": [
+        2167,
+        1729
+      ],
+      "questionIds": [
+        "ECON-MG-MEDIUM-175",
+        "ECON-MG-MEDIUM-176",
+        "ECON-MG-MEDIUM-177",
+        "ECON-MG-HARD-267",
+        "ECON-MG-HARD-271",
+        "ECON-MG-HARD-272",
+        "ECON-MG-LEGENDARY-9036",
+        "ECON-MG-LEGENDARY-9038",
+        "ECON-MG-HARD-269",
+        "ECON-MG-MEDIUM-178"
+      ],
+      "description": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve intersect at price $30 and quantity 200. Dashed guides also show demand and supply quantities at prices $10, $20, $40, and $50: at $10, supply is 100 and demand is 300; at $20, supply is 150 and demand is 250; at $40, supply is 250 and demand is 150; at $50, supply is 300 and demand is 100.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/binding-price-floors/FLOOR-01.webp",
+      "sha256": "933a323461f00bc3bf0d91c293272221c11f9b580d3cddf3da554f1a981276f4",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "questionIds": [
+        "PG2-FLR-E-001",
+        "PG2-FLR-M-001",
+        "PG2-FLR-M-002",
+        "PG2-FLR-H-001",
+        "PG2-FLR-EL-001",
+        "PG2-FLR-L-001"
+      ],
+      "description": "The horizontal axis is quantity of workers in thousands and the vertical axis is hourly wage in dollars. D0 and S0 intersect at A, quantity 175, wage 7. The horizontal floor is at wage 10, meeting demand at quantity 100 and supply at quantity 250.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/binding-price-floors/FLOOR-02.webp",
+      "sha256": "5620349697523a31fe57a39c6472461a67b521bed35ea90f9e5f25f4efc7afdf",
+      "dimensions": [
+        1614,
+        1200
+      ],
+      "questionIds": [
+        "40027",
+        "40028",
+        "40029"
+      ],
+      "description": "The labor market has wage vertically and quantity in thousands of workers horizontally. D0 and S0 intersect at 200 thousand workers and 12 dollars. A wage floor at 15 dollars intersects demand at 150 thousand and supply at 250 thousand.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/binding-price-floors/FLOOR-03.webp",
+      "sha256": "acdda47d3c35ea4ed3a5f3bbfb741b28fb25d8f6342df2683fc25370f3a751bd",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "questionIds": [
+        "40030",
+        "40031",
+        "40032"
+      ],
+      "description": "The labor market has wage vertically and quantity in thousands of workers horizontally. D0 and S0 intersect at 200 thousand workers and 12 dollars. A wage floor at 6 dollars intersects demand at 300 thousand and supply at 100 thousand.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
+      "sha256": "8524e29fadce0d985c8800948e5e5b7844b82b3d2fb1135b2301279037a8d013",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-C-028",
+        "P62C-CPS-LB-014"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight demand runs from price 20 at quantity 0 through P1 at quantity 8, price 12 and P2 at quantity 12, price 8.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_demand_shift.webp",
+      "sha256": "c559b174060f2f8ce28945350be2e05853a001f6e16f770e7fabf734651dd29f",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-H-018",
+        "P62C-CPS-B3-003"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight demand D1 has price intercept 18 and D2 has intercept 22; straight supply S has intercept 2. E1 is D1/S at quantity 8, price 10. E2 is D2/S at quantity 10, price 12.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
+      "sha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-M-012",
+        "P62C-CPS-M-013",
+        "P62C-CPS-H-006",
+        "P62C-CPS-L-021",
+        "P62C-CPS-L-022",
+        "P62C-CPS-L-023",
+        "P62C-CPS-L-024",
+        "P62C-CPS-C-020",
+        "P62C-CPS-C-023",
+        "P62C-CPS-C-026",
+        "P62C-CPS-B2-007",
+        "P62C-CPS-B2-008",
+        "P62C-CPS-B2-009",
+        "P62C-CPS-LB-010"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 30 and straight supply has intercept 6. Their intersection E is quantity 8, price 14.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
+      "sha256": "e7ad3b5e0934eb62695fc69308d0991371a4989e16fc30bda3e5653823cbf9bc",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-M-009",
+        "P62C-CPS-M-010",
+        "P62C-CPS-M-011",
+        "P62C-CPS-M-029",
+        "P62C-CPS-M-030",
+        "P62C-CPS-H-005",
+        "P62C-CPS-L-017",
+        "P62C-CPS-L-018",
+        "P62C-CPS-L-019",
+        "P62C-CPS-L-020",
+        "P62C-CPS-C-019",
+        "P62C-CPS-C-022",
+        "P62C-CPS-C-025",
+        "P62C-CPS-B1-015",
+        "P62C-CPS-B1-016",
+        "P62C-CPS-LB-009"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 18 and straight supply has intercept 2. Their intersection E is quantity 8, price 10.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
+      "sha256": "2f7f6d7fe4aad82da0984b27f4806a9a5cafbc325a4c4982d23ec599a5dd318b",
+      "dimensions": [
+        1310,
+        858
+      ],
+      "questionIds": [
+        "P62C-CPS-M-014",
+        "P62C-CPS-H-007",
+        "P62C-CPS-L-025",
+        "P62C-CPS-L-026",
+        "P62C-CPS-L-027",
+        "P62C-CPS-L-028",
+        "P62C-CPS-C-021",
+        "P62C-CPS-C-024",
+        "P62C-CPS-C-027",
+        "P62C-CPS-B2-010",
+        "P62C-CPS-LB-011"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 24 and straight supply has intercept 4. Their intersection E is quantity 5, price 14.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_horizontal_supply.webp",
+      "sha256": "d09df7bd9924ec6f74bd6cade75d7818700e48f132e129a71669bac8a1d5087a",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-EL-017",
+        "P62C-CPS-EL-018",
+        "P62C-CPS-LB-016"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 18. Horizontal supply is at price 6 and meets demand at E, quantity 12.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
+      "sha256": "5c6e31aaac1b7c4996719f0b30e8ee53bda29ac9b08c614a1d0af073d36d6db1",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-H-009",
+        "P62C-CPS-L-031",
+        "P62C-CPS-L-032",
+        "P62C-CPS-B3-002",
+        "P62C-CPS-LB-013"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight demand starts at price 18 and straight supply at price 2. They intersect at E, quantity 8, price 10. At quantity 10, A on demand is price 8 and B on supply is price 12.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_producer_prices.webp",
+      "sha256": "3962f750dd32a57434aed7ca52fc46aa2dad55d000fe862dd587633e51b47c24",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-C-029",
+        "P62C-CPS-LB-015"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight supply starts at price 2. P1 marks quantity 6, price 8; P2 marks quantity 10, price 12.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_step_buyers.webp",
+      "sha256": "f6b9f44f1d49deb73da3dba230ebceab0e8809dfe56100e45a05a1e3cd74fe7f",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-H-020"
+      ],
+      "description": "Quantity is horizontal and dollar willingness to pay vertical. The demand staircase shows five one-unit steps, with values 18, 15, 12, 9 and 6 for units 1 through 5 respectively.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_step_sellers.webp",
+      "sha256": "185b3b93f34b5588c2500f5122b7df41aac5c80c28aa9ec3a01a6f2d1893684b",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-H-021"
+      ],
+      "description": "Quantity is horizontal and dollar seller cost vertical. The supply staircase shows five one-unit steps, with costs 3, 6, 9, 12 and 15 for units 1 through 5 respectively.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_supply_shift.webp",
+      "sha256": "5dfd8a7af713d343b5991379f435e8f927752e7aa202b3ee9233922f290548df",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-H-019",
+        "P62C-CPS-B3-004"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 20. Straight supply S1 has intercept 4 and S2 has intercept 8. E1 is D/S1 at quantity 8, price 12. E2 is D/S2 at quantity 6, price 14.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
+      "sha256": "f11c62fa8fb3272bd37b3c38a6ff1c55d59dcf22e8ee001699e14ca8fd5488d7",
+      "dimensions": [
+        1310,
+        859
+      ],
+      "questionIds": [
+        "P62C-CPS-H-008",
+        "P62C-CPS-L-029",
+        "P62C-CPS-L-030",
+        "P62C-CPS-B3-001",
+        "P62C-CPS-LB-012"
+      ],
+      "description": "Quantity is horizontal and price in dollars vertical. Straight demand starts at price 18 and straight supply at price 2. They intersect at E, quantity 8, price 10. At quantity 6, A on demand is price 12 and B on supply is price 8.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/statutory-versus-economic-tax-incidence/TAX-02.webp",
+      "sha256": "f6395f7c6208641d5b65590a2eb2f59ea37dbe40e15a03f5cbd43065848c77da",
+      "dimensions": [
+        1555,
+        1175
+      ],
+      "questionIds": [
+        "PG2-STX-E-001",
+        "PG2-STX-M-001",
+        "PG2-STX-M-002",
+        "PG2-STX-H-001",
+        "PG2-STX-EL-001",
+        "PG2-STX-L-001"
+      ],
+      "description": "Quantity of movies in thousands is horizontal and price in dollars vertical. Straight original demand D0 has price intercept 18 and straight supply S0 has intercept 3. They meet at e, quantity 100, price 10.50. Demand with tax meets S0 at quantity 60, price 7.50. At quantity 60 original demand is at price 13.50.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/statutory-versus-economic-tax-incidence/taxincidence.webp",
+      "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+      "dimensions": [
+        2167,
+        1736
+      ],
+      "questionIds": [
+        "ECON-MG-HARD-282",
+        "ECON-MG-FINALBOSS-4018"
+      ],
+      "description": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/tax-incidence/taxincidence.webp",
+      "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+      "dimensions": [
+        2167,
+        1736
+      ],
+      "questionIds": [
+        "ECON-MG-MEDIUM-188",
+        "ECON-MG-HARD-281",
+        "ECON-MG-LEGENDARY-9056",
+        "ECON-MG-HARD-275",
+        "ECON-MG-HARD-276",
+        "ECON-MG-HARD-277",
+        "ECON-MG-HARD-278",
+        "ECON-MG-HARD-279",
+        "ECON-MG-MEDIUM-184",
+        "ECON-MG-MEDIUM-185"
+      ],
+      "description": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/tax-wedges-and-revenue/TAX-01.webp",
+      "sha256": "cf4234419410715f06f8f7dc23d8b4cb6257870c227560b215ff5eefd229287e",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "questionIds": [
+        "PG2-TAX-E-001",
+        "PG2-TAX-M-001",
+        "PG2-TAX-M-002",
+        "PG2-TAX-H-001",
+        "PG2-TAX-EL-001",
+        "PG2-TAX-L-001"
+      ],
+      "description": "Quantity of movies in thousands is horizontal and price in dollars vertical. Straight D0 has price intercept 19 and straight S0 has intercept 5. They intersect at e, quantity 140, price 12. Supply with tax meets D0 at quantity 100, price 14. At that quantity S0 is at price 10.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/tax-wedges-and-revenue/TAX-02.webp",
+      "sha256": "efc993c9eff14b9ee5e96283b09f87382535c23467a0f182ef6ca202294b2590",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "questionIds": [
+        "40033",
+        "40034",
+        "40035"
+      ],
+      "description": "The rideshare market has price per trip vertically and quantity in thousands per day horizontally. D0 and S0 intersect at A, quantity 200 and price 10 dollars. Supply with tax intersects demand at quantity 150 and buyer price 12; original supply there gives seller price 8.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/tax-wedges-and-revenue/TAX-03.webp",
+      "sha256": "ef69a4b97e9b0ec232fa6bfa24e1071aecd36f0b1d28e4f92e18fe1e283f4685",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "questionIds": [
+        "40036",
+        "40037",
+        "40038"
+      ],
+      "description": "The concert-ticket market has price vertically and quantity in thousands horizontally. D0 and S0 intersect at A, quantity 200 and price 10 dollars. Supply with tax intersects demand at quantity 150 and buyer price 16; original supply there gives seller price 8.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/tax-wedges-and-revenue/TAX-04.webp",
+      "sha256": "c17569c52cb224bc9b1bbbc6a36a0641f8fc470f7547dbda9dd19dee9ceae942",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "questionIds": [
+        "40039",
+        "40040",
+        "40041"
+      ],
+      "description": "The rideshare market has price per trip vertically and quantity in thousands per day horizontally. D0 and S0 intersect at A, quantity 250 and price 12 dollars. Supply with tax intersects demand at quantity 200 and buyer price 14; original supply there gives seller price 10.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/tax-wedges-and-revenue/TAX-05.webp",
+      "sha256": "b4652bce273eaa717c4e7e258076a45be48f956d01e3f09fb65fa3c6780ce74d",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "questionIds": [
+        "40042",
+        "40043",
+        "40044"
+      ],
+      "description": "The rideshare market has price per trip vertically and quantity in thousands per day horizontally. D0 and steep S0 intersect at A, quantity 200 and price 10 dollars. Supply with tax intersects demand at quantity 150 and buyer price 12; original supply there gives seller price 4.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/tax-wedges-and-revenue/TAX-06.webp",
+      "sha256": "c8c58a2b9f7182730628d1a78ab12ac00f690568e04ae361132ff4309d50bfda",
+      "dimensions": [
+        1615,
+        1200
+      ],
+      "questionIds": [
+        "40045",
+        "40046",
+        "40047"
+      ],
+      "description": "The concert-ticket market has price vertically and quantity in thousands horizontally. D0 and S0 intersect at A, quantity 200 and price 10 dollars. Demand with tax intersects supply at quantity 150 and seller price 8; original demand there gives buyer price 16.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    },
+    {
+      "runtimePath": "question-assets/tax-wedges-and-revenue/taxincidence.webp",
+      "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+      "dimensions": [
+        2167,
+        1736
+      ],
+      "questionIds": [
+        "ECON-MG-MEDIUM-180",
+        "ECON-MG-MEDIUM-181",
+        "ECON-MG-MEDIUM-182",
+        "ECON-MG-MEDIUM-186",
+        "ECON-MG-MEDIUM-189",
+        "ECON-MG-HARD-280",
+        "ECON-MG-HARD-283",
+        "ECON-MG-HARD-284",
+        "ECON-MG-LEGENDARY-9055",
+        "ECON-MG-LEGENDARY-9057",
+        "ECON-MG-LEGENDARY-9058",
+        "ECON-MG-LEGENDARY-9059",
+        "ECON-MG-HARD-274",
+        "ECON-MG-MEDIUM-183",
+        "ECON-MG-MEDIUM-187"
+      ],
+      "description": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20.",
+      "byteCheck": "passed",
+      "visualEvidenceReview": "Curve identities, labeled coordinates, intercepts where required, and axis units matched to the image; retained approved bytes."
+    }
+  ],
+  "scope": "Visual evidence review of existing asset families; calculations for revised graph questions in numerical-validation.json. Legacy tax graph calculations use labeled equilibrium coordinates and the local straight segments, not extrapolation from its uneven global tick spacing. Full generated embedding and 165 decode/enlarge checks are in browser-validation.json."
+}

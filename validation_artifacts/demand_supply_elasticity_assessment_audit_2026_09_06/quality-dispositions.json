@@ -1,0 +1,1475 @@
+{
+  "before": {
+    "errors": 0,
+    "warnings": 15,
+    "reviews": 118
+  },
+  "after": {
+    "errors": 0,
+    "warnings": 6,
+    "reviews": 121
+  },
+  "allFindingsAccountedFor": true,
+  "dispositions": [
+    {
+      "id": "ECON-MG-EASY-36",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9125",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": true
+    },
+    {
+      "id": "ECON-MG-MEDIUMBOSS-3002",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-COMP-B1-001",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-COMP-B1-001",
+      "rule": "repeated-feedback",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Replace identical generic checkpoint feedback with an explanation of this item’s mechanism.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-COMP-B1-002",
+      "rule": "repeated-feedback",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Replace identical generic checkpoint feedback with an explanation of this item’s mechanism.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-COMP-B1-003",
+      "rule": "repeated-feedback",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Replace identical generic checkpoint feedback with an explanation of this item’s mechanism.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-COMP-BR-001",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-COMP-E-002",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-COMP-H-001",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-COMP-H-001",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-COMP-L-001",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Improve a thin Legendary pool through comparative evidence and plausible distractors.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-COMP-M-003",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-COMP-R-001",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-PSIG-E-001",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-PSIG-H-001",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-PSIG-H-002",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-PSIG-H-003",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-PSIG-H-004",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-PSIG-L-001",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted after semantic review",
+      "note": "The revised task links calculation or graph inference with classification, comparison, offsetting movements, or a decision. A short stem is not evidence of an insufficient difficulty level.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-PSIG-L-001",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-PSIG-L-003",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-PSIG-M-002",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P52B-S2-SUP-EL-001",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-S2-SUP-EL-002",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-S2-SUP-H-001",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-S3-DEM-EL-001",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": true
+    },
+    {
+      "id": "P52B-S3-DEM-L-001",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-B1-019",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Answer uniqueness: a distractor saying revenue falls after a price decrease was also true at B.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-B2-019",
+      "rule": "graph-prompt-missing-cue",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Explicit graph cue; content and keyed reasoning retained.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-B3-006",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-B3-007",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-B3-008",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-B3-009",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-B3-011",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-B3-014",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-B3-014",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-B3-015",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-B3-019",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-C-021",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-C-022",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-C-023",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-C-024",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-C-025",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-E-002",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-E-018",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-E-028",
+      "rule": "image-without-graph-required",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained metadata exception",
+      "note": "The correct registered image renders and enlarges. User specifically requires preserved graph/game-mode eligibility; setting graphRequired would expand Trial by Graph membership. Record is retained for a separate eligibility decision.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-E-029",
+      "rule": "image-without-graph-required",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained metadata exception",
+      "note": "The correct registered image renders and enlarges. User specifically requires preserved graph/game-mode eligibility; setting graphRequired would expand Trial by Graph membership. Record is retained for a separate eligibility decision.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-E-030",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-EL-016",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-EL-018",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-EL-031",
+      "rule": "graph-prompt-missing-cue",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Explicit graph cue; content and keyed reasoning retained.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-EL-038",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-001",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Calculation-to-decision calibration using the bank’s midpoint convention, original values and setting.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-H-002",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-003",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-004",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Calculation-to-decision calibration using the bank’s midpoint convention, original values and setting.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-H-005",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-006",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-007",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-008",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-009",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-010",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-011",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-012",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-013",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-014",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-015",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-016",
+      "rule": "image-without-graph-required",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained metadata exception",
+      "note": "The correct registered image renders and enlarges. User specifically requires preserved graph/game-mode eligibility; setting graphRequired would expand Trial by Graph membership. Record is retained for a separate eligibility decision.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-022",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-030",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-031",
+      "rule": "graph-prompt-missing-cue",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Hard graphical calculation now supports a revenue decision; explicit graph cue.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-H-031",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Hard graphical calculation now supports a revenue decision; explicit graph cue.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-H-033",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-035",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-036",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained appropriate practice",
+      "note": "The user explicitly places routine exam calculations in Hard and preserves quick calculation practice. Do not inflate or relabel it solely to satisfy a heuristic.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-H-037",
+      "rule": "graph-prompt-missing-cue",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Explicit graph cue; content and keyed reasoning retained.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-L-029",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted after semantic review",
+      "note": "The revised task links calculation or graph inference with classification, comparison, offsetting movements, or a decision. A short stem is not evidence of an insufficient difficulty level.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-L-030",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Remove near-duplicate relationship distractor and integrate a signed forecast.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-L-031",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained uneven upper-tier depth",
+      "note": "Correct and useful as an accessible checkpoint or supporting skill, but lighter than the desired upper-tier synthesis. Targeted stronger items were added by revision elsewhere; no claim that every upper-tier item is equally demanding.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-032",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Legendary signed cross-price application and error diagnosis; eliminate near-duplicate correct relationship.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-L-033",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained uneven upper-tier depth",
+      "note": "Correct and useful as an accessible checkpoint or supporting skill, but lighter than the desired upper-tier synthesis. Targeted stronger items were added by revision elsewhere; no claim that every upper-tier item is equally demanding.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-042",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-049",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-050",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-052",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained uneven upper-tier depth",
+      "note": "Correct and useful as an accessible checkpoint or supporting skill, but lighter than the desired upper-tier synthesis. Targeted stronger items were added by revision elsewhere; no claim that every upper-tier item is equally demanding.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-063",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-071",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-073",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained uneven upper-tier depth",
+      "note": "Correct and useful as an accessible checkpoint or supporting skill, but lighter than the desired upper-tier synthesis. Targeted stronger items were added by revision elsewhere; no claim that every upper-tier item is equally demanding.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-076",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained uneven upper-tier depth",
+      "note": "Correct and useful as an accessible checkpoint or supporting skill, but lighter than the desired upper-tier synthesis. Targeted stronger items were added by revision elsewhere; no claim that every upper-tier item is equally demanding.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-077",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained uneven upper-tier depth",
+      "note": "Correct and useful as an accessible checkpoint or supporting skill, but lighter than the desired upper-tier synthesis. Targeted stronger items were added by revision elsewhere; no claim that every upper-tier item is equally demanding.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-078",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained uneven upper-tier depth",
+      "note": "Correct and useful as an accessible checkpoint or supporting skill, but lighter than the desired upper-tier synthesis. Targeted stronger items were added by revision elsewhere; no claim that every upper-tier item is equally demanding.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-086",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-087",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-088",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained uneven upper-tier depth",
+      "note": "Correct and useful as an accessible checkpoint or supporting skill, but lighter than the desired upper-tier synthesis. Targeted stronger items were added by revision elsewhere; no claim that every upper-tier item is equally demanding.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-091",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-L-092",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted after semantic review",
+      "note": "The revised task links calculation or graph inference with classification, comparison, offsetting movements, or a decision. A short stem is not evidence of an insufficient difficulty level.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-L-093",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Legendary elasticity/revenue decision integrates a capacity condition and graph evidence.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-L-095",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Legendary determinant inference plus graph-based coefficient/revenue comparison.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-LB-002",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained uneven upper-tier depth",
+      "note": "Correct and useful as an accessible checkpoint or supporting skill, but lighter than the desired upper-tier synthesis. Targeted stronger items were added by revision elsewhere; no claim that every upper-tier item is equally demanding.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-004",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-005",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-009",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-013",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-017",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-018",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-020",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-022",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-025",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-031",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-LB-032",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-M-002",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-M-008",
+      "rule": "image-without-graph-required",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained metadata exception",
+      "note": "The correct registered image renders and enlarges. User specifically requires preserved graph/game-mode eligibility; setting graphRequired would expand Trial by Graph membership. Record is retained for a separate eligibility decision.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-M-018",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-M-021",
+      "rule": "near-duplicate-stem",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-M-028",
+      "rule": "image-without-graph-required",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained metadata exception",
+      "note": "The correct registered image renders and enlarges. User specifically requires preserved graph/game-mode eligibility; setting graphRequired would expand Trial by Graph membership. Record is retained for a separate eligibility decision.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-M-029",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-M-033",
+      "rule": "graph-prompt-missing-cue",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Explicit graph cue; content and keyed reasoning retained.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-M-038",
+      "rule": "graph-prompt-missing-cue",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Explicit graph cue; content and keyed reasoning retained.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-M-039",
+      "rule": "graph-prompt-missing-cue",
+      "severity": "WARNING",
+      "presentBefore": true,
+      "presentAfter": false,
+      "status": "resolved",
+      "note": "Explicit graph cue; content and keyed reasoning retained.",
+      "recordRevised": true
+    },
+    {
+      "id": "P62B-ELAS-R-002",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-R-005",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-R-005",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-R-006",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-R-012",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-R-014",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-R-015",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-R-017",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    },
+    {
+      "id": "P62B-ELAS-R-019",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PG1-EQ-EL-001",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted after semantic review",
+      "note": "The revised task links calculation or graph inference with classification, comparison, offsetting movements, or a decision. A short stem is not evidence of an insufficient difficulty level.",
+      "recordRevised": true
+    },
+    {
+      "id": "PG1-SUP-L-002",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted after semantic review",
+      "note": "The revised task links calculation or graph inference with classification, comparison, offsetting movements, or a decision. A short stem is not evidence of an insufficient difficulty level.",
+      "recordRevised": true
+    },
+    {
+      "id": "PG1-SUP-L-003",
+      "rule": "graph-question-evidence-mismatch",
+      "severity": "WARNING",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted heuristic false positive",
+      "note": "A on S0 is the specified initial observation. The target is the point on S1 with A’s quantity; finding its price is the task, so supplying the final price in the stem would reveal the answer. The asset includes the required S1 point.",
+      "recordRevised": true
+    },
+    {
+      "id": "PG1-SUP-L-003",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "presentBefore": false,
+      "presentAfter": true,
+      "status": "accepted after semantic review",
+      "note": "The revised task links calculation or graph inference with classification, comparison, offsetting movements, or a decision. A short stem is not evidence of an insufficient difficulty level.",
+      "recordRevised": true
+    },
+    {
+      "id": "PMA-ELAS-E-002",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMA-ELAS-E-027",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMA-ELAS-E-032",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMA-ELAS-H-045",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMS-ELAS-BR-012",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMS-ELAS-BR-013",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMS-ELAS-BR-016",
+      "rule": "answer-length-outlier",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained content exception",
+      "note": "Read all four choices; the longer keyed answer identifies the required mechanism. No second defensible answer found in this review. Length cue remains a localized quality limitation, not a missing topic or reason to rewrite the whole pool.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMS-ELAS-BR-023",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMS-ELAS-BR-025",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMS-ELAS-R-020",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMS-ELAS-R-021",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMS-ELAS-R-029",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "accepted with documented limitation",
+      "note": "Read all four choices. Overgeneralization, wrong sign/base, or confusion between shifts and movements is a real misconception. In opposing-shifter items a certain directional assertion is deliberately contrasted with indeterminacy; true conditional distractors were removed. Some retained choices remain easier to eliminate than ideal.",
+      "recordRevised": false
+    },
+    {
+      "id": "PMS-ELAS-R-030",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "presentBefore": true,
+      "presentAfter": true,
+      "status": "retained outside content-calibration boundary",
+      "note": "Pre-existing later-unit application. This flag does not create a DSE coverage requirement. Its policy/trade difficulty and distractor calibration are reserved for the corresponding audit.",
+      "recordRevised": false
+    }
+  ]
+}
