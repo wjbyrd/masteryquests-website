@@ -3726,6 +3726,7 @@ let maxStreak = 0;
 let username = "";
 let runID = "";
 let questionStartTime = 0;
+let questionVisibilityTiming = createQuestionVisibilityTimingState();
 let streak = 0; 
 let startTime; // Will be set in startGame()
 let finalElapsedTimeMs = null;
@@ -3735,6 +3736,7 @@ const EXAM_DRILL_SECTIONS = Object.freeze([
     Object.freeze({index:2,start:21,end:29,boss:30,difficulty:"hard",bossDifficulty:"finalBoss"})
 ]);
 let examDrillState = null;
+let pendingExamResponseTiming = null;
 let bossRevealShownKeys = new Set();
 let activeBossEncounter = null;
 let activeBossReveal = null;
@@ -3742,6 +3744,80 @@ let checkpointAttemptState = null;
 let lastCheckpointOutcome = null;
 let currentQuestionAssistance = null;
 let artifactSkipState = {remaining:0,skippedRooms:[]};
+
+function createQuestionVisibilityTimingState(){
+    return {
+        active:false,
+        accumulatedHiddenMs:0,
+        hiddenStartedAt:null,
+        tabSwitchCount:0,
+        lastReturnAt:null,
+        hasReturned:false
+    };
+}
+
+function resetQuestionVisibilityTiming(now = Date.now()){
+    const safeNow = Math.max(0, Number(now) || 0);
+    questionStartTime = safeNow;
+    questionVisibilityTiming = createQuestionVisibilityTimingState();
+    questionVisibilityTiming.active = true;
+    if(document.hidden) questionVisibilityTiming.hiddenStartedAt = safeNow;
+    return questionVisibilityTiming;
+}
+
+function markQuestionVisibilityHidden(now = Date.now()){
+    if(!questionVisibilityTiming.active || Number.isFinite(questionVisibilityTiming.hiddenStartedAt)) return;
+    questionVisibilityTiming.hiddenStartedAt = Math.max(0, Number(now) || 0);
+    questionVisibilityTiming.tabSwitchCount++;
+}
+
+function markQuestionVisibilityVisible(now = Date.now()){
+    if(!questionVisibilityTiming.active || !Number.isFinite(questionVisibilityTiming.hiddenStartedAt)) return;
+    const safeNow = Math.max(questionVisibilityTiming.hiddenStartedAt, Number(now) || 0);
+    questionVisibilityTiming.accumulatedHiddenMs += safeNow - questionVisibilityTiming.hiddenStartedAt;
+    questionVisibilityTiming.hiddenStartedAt = null;
+    questionVisibilityTiming.lastReturnAt = safeNow;
+    questionVisibilityTiming.hasReturned = true;
+}
+
+function getQuestionVisibilityTiming(now = Date.now()){
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    const responseTimeMs = Math.max(0, safeNow - questionStartTime);
+    const openHiddenMs = Number.isFinite(questionVisibilityTiming.hiddenStartedAt)
+        ? Math.max(0, safeNow - questionVisibilityTiming.hiddenStartedAt)
+        : 0;
+    const hiddenTimeMs = Math.min(
+        responseTimeMs,
+        Math.max(0, questionVisibilityTiming.accumulatedHiddenMs + openHiddenMs)
+    );
+    const activeResponseTimeMs = Math.max(0, responseTimeMs - hiddenTimeMs);
+    const timeAfterReturnMs = questionVisibilityTiming.hasReturned
+        && !Number.isFinite(questionVisibilityTiming.hiddenStartedAt)
+        && Number.isFinite(questionVisibilityTiming.lastReturnAt)
+            ? Math.max(0, safeNow - questionVisibilityTiming.lastReturnAt)
+            : null;
+    return {
+        responseTimeMs,
+        activeResponseTimeMs,
+        hiddenTimeMs,
+        tabSwitchCount:Math.max(0, Number(questionVisibilityTiming.tabSwitchCount) || 0),
+        timeAfterReturnMs
+    };
+}
+
+function completeQuestionVisibilityTiming(){
+    questionVisibilityTiming.active = false;
+    questionVisibilityTiming.hiddenStartedAt = null;
+}
+
+function handleQuestionVisibilityChange(now = Date.now()){
+    if(document.hidden) markQuestionVisibilityHidden(now);
+    else markQuestionVisibilityVisible(now);
+}
+
+function getMasteryResponseTime(record){
+    return Math.max(0, Number(record?.activeResponseTime ?? record?.activeResponseTimeMs ?? record?.responseTime ?? record?.responseTimeMs ?? 0) || 0);
+}
 function getElapsedTimeMs(){ return Number.isFinite(finalElapsedTimeMs) ? finalElapsedTimeMs : (startTime ? (Date.now() - startTime) : 0); }
 function freezeCompletionTime(fallbackMs = 0){
     if(!Number.isFinite(finalElapsedTimeMs)){
@@ -4381,6 +4457,7 @@ function reconcileTimedModeClock(){
 }
 
 document.addEventListener("visibilitychange", function(){
+    handleQuestionVisibilityChange();
     if(document.hidden){
         pauseFadingFortune("visibility");
     } else {
@@ -4933,7 +5010,7 @@ function getTagTypeFluency(tag, type){
     return getFluency(getTypeBucket(tag, type), type || "default");
 }
 
-function recordAdaptiveAttempt(question, isCorrect, responseTime){
+function recordAdaptiveAttempt(question, isCorrect, activeResponseTime){
     if(!question || !question.tag) return;
 
     const tagBucket = getTagBucket(question.tag);
@@ -4942,10 +5019,10 @@ function recordAdaptiveAttempt(question, isCorrect, responseTime){
 	const skillBucket = getSkillBucket(question);
     const difficulty = question.__mqDifficulty || currentQuestion?.__mqDifficulty || getDifficultyForMode();
 
-    updateBucket(tagBucket, isCorrect, responseTime, difficulty);
-    updateBucket(typeBucket, isCorrect, responseTime, difficulty);
-    updateBucket(objectiveBucket, isCorrect, responseTime, difficulty);
-	updateBucket(skillBucket, isCorrect, responseTime, difficulty);
+    updateBucket(tagBucket, isCorrect, activeResponseTime, difficulty);
+    updateBucket(typeBucket, isCorrect, activeResponseTime, difficulty);
+    updateBucket(objectiveBucket, isCorrect, activeResponseTime, difficulty);
+	updateBucket(skillBucket, isCorrect, activeResponseTime, difficulty);
 
     if(!masteryState.byDifficulty) masteryState.byDifficulty = {};
     const overallDifficulty = normalizeMasteryDifficulty(difficulty);
@@ -4955,7 +5032,8 @@ function recordAdaptiveAttempt(question, isCorrect, responseTime){
 
     masteryState.recent.push({
         correct: !!isCorrect,
-        responseTime,
+        responseTime:activeResponseTime,
+        activeResponseTime,
         tag: question.tag,
         type: question.type || "default",
         objective: currentQuestion.objective || inferObjective(currentQuestion),
@@ -4978,7 +5056,8 @@ function recordAdaptiveAttempt(question, isCorrect, responseTime){
         secondarySkills: [...new Set([...(question.secondarySkills || []), ...(question.secondarySkillIds || [])])],
         objective: String(question.objective || inferObjective(question) || ""),
         correct: !!isCorrect,
-        responseTime,
+        responseTime:activeResponseTime,
+        activeResponseTime,
         tag: String(question.tag || ""),
         difficulty: overallDifficulty
     });
@@ -4992,7 +5071,7 @@ function getRecentPerformance(windowSize = 8){
 
     const correct = recent.filter(x => x.correct);
     const avgCorrectRatio = correct.length
-        ? correct.reduce((sum, item) => sum + (item.responseTime / getTypeTargetMs(item.type)), 0) / correct.length
+        ? correct.reduce((sum, item) => sum + (getMasteryResponseTime(item) / getTypeTargetMs(item.type)), 0) / correct.length
         : 2;
 
     return {
@@ -6839,7 +6918,6 @@ function resumeFadingFortune(reason){
     if(Number.isFinite(fadingFortunePauseStartedAt)){
         const pausedFor = Math.max(0, Date.now() - fadingFortunePauseStartedAt);
         fadingFortunePausedDurationMs += pausedFor;
-        questionStartTime += pausedFor;
     }
     fadingFortunePauseStartedAt = null;
     if(fadingFortuneFadeCount < 3) scheduleFadingFortuneFade(fadingFortuneRemainingMs || fadingFortuneIntervalMs);
@@ -6870,7 +6948,7 @@ async function beginFadingFortuneQuestion(){
     fadingFortuneFadeOrder = shuffle([0,1,2,3].filter(index => index !== correctIndex));
     fadingFortuneQuestionActive = true;
     fadingFortuneQuestionFrozen = false;
-    questionStartTime = Date.now();
+    resetQuestionVisibilityTiming();
     if(document.hidden) pauseFadingFortune("visibility");
     if(document.getElementById("graphLightbox")?.classList.contains("active")) pauseFadingFortune("graph-lightbox");
     if(document.getElementById("gameModal")?.style.display === "flex") pauseFadingFortune("game-modal");
@@ -9668,10 +9746,27 @@ function getExamRoomState(roomNumber, create = false){
             viewedCount:0,
             firstViewedAt:0,
             viewStartedAt:0,
-            totalViewMs:0
+            totalViewMs:0,
+            totalActiveViewMs:0,
+            totalHiddenViewMs:0,
+            totalTabSwitchCount:0
         };
     }
     return examDrillState.rooms[roomNumber] || null;
+}
+
+function addExamRoomVisibilityTiming(state, timing){
+    if(!state || !timing) return;
+    const legacyViewMs = Math.max(0, Number(state.totalViewMs || 0));
+    const priorActiveMs = Number.isFinite(Number(state.totalActiveViewMs))
+        ? Math.max(0, Number(state.totalActiveViewMs))
+        : legacyViewMs;
+    const priorHiddenMs = Number.isFinite(Number(state.totalHiddenViewMs))
+        ? Math.max(0, Number(state.totalHiddenViewMs))
+        : Math.max(0, legacyViewMs - priorActiveMs);
+    state.totalActiveViewMs = priorActiveMs + Math.max(0, Number(timing.activeResponseTimeMs || 0));
+    state.totalHiddenViewMs = priorHiddenMs + Math.max(0, Number(timing.hiddenTimeMs || 0));
+    state.totalTabSwitchCount = Math.max(0, Number(state.totalTabSwitchCount || 0)) + Math.max(0, Number(timing.tabSwitchCount || 0));
 }
 
 function isExamSectionComplete(sectionState){
@@ -9686,6 +9781,10 @@ function finalizeExamRoomView(nextRoom = null){
     if(gameMode !== "exam" || !examDrillState?.activeRoom) return;
     const previousRoom = examDrillState.activeRoom;
     const state = getExamRoomState(previousRoom);
+    if(state && questionVisibilityTiming.active){
+        addExamRoomVisibilityTiming(state, getQuestionVisibilityTiming());
+        completeQuestionVisibilityTiming();
+    }
     if(state?.viewStartedAt){
         state.totalViewMs += Math.max(0, Date.now() - state.viewStartedAt);
         state.viewStartedAt = 0;
@@ -9767,6 +9866,13 @@ function loadExamDrillQuestion(){
 }
 
 function recordExamDraftAnswer(choice, isCorrect, responseTime){
+    const responseTiming = pendingExamResponseTiming || {
+        activeResponseTimeMs:responseTime,
+        hiddenTimeMs:0,
+        tabSwitchCount:0,
+        timeAfterReturnMs:null
+    };
+    pendingExamResponseTiming = null;
     const sectionState = getExamSectionState(room);
     const roomState = getExamRoomState(room, true);
     if(!sectionState || sectionState.committed || !isExamOrdinaryRoom(room)) return;
@@ -9781,13 +9887,19 @@ function recordExamDraftAnswer(choice, isCorrect, responseTime){
     }
     roomState.selectedIndex = choice;
     roomState.finalCorrect = !!isCorrect;
+    addExamRoomVisibilityTiming(roomState, responseTiming);
     if(isExamSectionComplete(sectionState) && !sectionState.allAnsweredAt) sectionState.allAnsweredAt = Date.now();
 
     sendGameData({
         runID,event:changed ? "exam_answer_revision" : "exam_answer_initial",room,
         questionId:currentQuestion?.id || 0,selectedIndex:choice,correct:isCorrect ? 1 : 0,
         tag:currentQuestion?.tag || "",type:currentQuestion?.type || "",objective:inferObjective(currentQuestion),
-        responseTime,examSection:sectionState.index + 1,
+        responseTime,
+        activeResponseTime:responseTiming.activeResponseTimeMs,
+        hiddenTime:responseTiming.hiddenTimeMs,
+        tabSwitchCount:responseTiming.tabSwitchCount,
+        timeAfterReturn:responseTiming.timeAfterReturnMs,
+        examSection:sectionState.index + 1,
         examInitialSelectedIndex:roomState.initialSelectedIndex,examFinalSelectedIndex:choice,
         examRevisionCount:roomState.revisionCount,
         examChangedCorrect:changed && !roomState.initialCorrect && isCorrect ? 1 : 0,
@@ -9808,9 +9920,11 @@ function scoreCommittedExamResponse(roomNumber, roomState, sectionState){
     const question = roomState.question;
     const isCorrect = !!roomState.finalCorrect;
     const responseTime = Math.max(0, roomState.totalViewMs);
+    const activeResponseTime = Math.min(responseTime, Math.max(0, Number(roomState.totalActiveViewMs ?? responseTime)));
+    const hiddenTime = Math.min(responseTime, Math.max(0, Number(roomState.totalHiddenViewMs ?? (responseTime - activeResponseTime))));
     Object.keys(conceptMemory).forEach(tag => { conceptMemory[tag] *= 0.95; });
     totalAttempts++;
-    recordAdaptiveAttempt(question, isCorrect, responseTime);
+    recordAdaptiveAttempt(question, isCorrect, activeResponseTime);
     if(isCorrect){
         streak++;
         correctAnswers++;
@@ -9826,7 +9940,9 @@ function scoreCommittedExamResponse(roomNumber, roomState, sectionState){
         runID,event:"question",room:roomNumber,questionId:question.id || 0,
         selectedIndex:roomState.selectedIndex,correct:isCorrect ? 1 : 0,
         tag:question.tag || "",type:question.type || "",objective:inferObjective(question),
-        responseTime,attempt:totalAttempts,streak,elapsedTime:getElapsedTimeMs(),adaptiveMode:"exam-commit",
+        responseTime,activeResponseTime,hiddenTime,
+        tabSwitchCount:Math.max(0, Number(roomState.totalTabSwitchCount || 0)),timeAfterReturn:null,
+        attempt:totalAttempts,streak,elapsedTime:getElapsedTimeMs(),adaptiveMode:"exam-commit",
         examSection:sectionState.index + 1,examInitialSelectedIndex:roomState.initialSelectedIndex,
         examFinalSelectedIndex:roomState.selectedIndex,examRevisionCount:roomState.revisionCount,
         examReviewTimeMs:responseTime,
@@ -10704,7 +10820,7 @@ function displayQuestion() {
     }
 
     answerSubmissionPending = false;
-    questionStartTime = Date.now();
+    resetQuestionVisibilityTiming();
     const optionsElement = document.getElementById("answers");
     optionsElement.innerHTML = "";
 
@@ -10834,7 +10950,9 @@ async function answer(choice) {
     freezeFadingFortuneForAnswerCheck();
     setAnswerButtonsDisabled(true);
 
-    const responseTime = Date.now() - questionStartTime;
+    const responseTiming = getQuestionVisibilityTiming();
+    const responseTime = responseTiming.responseTimeMs;
+    const activeResponseTime = responseTiming.activeResponseTimeMs;
     let isCorrect = false;
 
     try {
@@ -10860,6 +10978,9 @@ async function answer(choice) {
         return;
     }
 
+    completeQuestionVisibilityTiming();
+
+    pendingExamResponseTiming = gameMode === "exam" && isExamOrdinaryRoom(room) ? responseTiming : null;
     if(gameMode === "exam" && isExamOrdinaryRoom(room)){
         recordExamDraftAnswer(choice, isCorrect, responseTime);
         return;
@@ -10906,6 +11027,10 @@ if(showImmediateFeedback && rapidGuess.triggered && !rapidGuessLocked){
         type: currentQuestion.type || "none",
         objective: currentQuestion.objective || inferObjective(currentQuestion),
         responseTime: responseTime,
+        activeResponseTime: activeResponseTime,
+        hiddenTime: responseTiming.hiddenTimeMs,
+        tabSwitchCount: responseTiming.tabSwitchCount,
+        timeAfterReturn: responseTiming.timeAfterReturnMs,
         attempt: totalAttempts ?? 0,
         streak: streak ?? 0,
         elapsedTime: getElapsedTimeMs(),
@@ -10969,7 +11094,7 @@ if(gameMode === "riskReward"){
     settleRiskRewardAnswer(isCorrect, responseTime);
 }
 
-recordAdaptiveAttempt(currentQuestion, isCorrect, responseTime);
+recordAdaptiveAttempt(currentQuestion, isCorrect, activeResponseTime);
 if(isBossRoom) recordCheckpointAttempt(isCorrect);
 
     // =============================================
@@ -11012,6 +11137,10 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
         type: currentQuestion.type || "none",
         objective: currentQuestion.objective || inferObjective(currentQuestion),
         responseTime: responseTime,
+        activeResponseTime: activeResponseTime,
+        hiddenTime: responseTiming.hiddenTimeMs,
+        tabSwitchCount: responseTiming.tabSwitchCount,
+        timeAfterReturn: responseTiming.timeAfterReturnMs,
 	    attempt: totalAttempts ?? 0,
 		streak: streak ?? 0,
 	    elapsedTime: getElapsedTimeMs(),
@@ -11173,7 +11302,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
         // --- LEARNING: reduce weakness ---
         if(currentQuestion.tag){
             const expected = getTypeTargetMs(currentQuestion.type);
-            const speedBonus = responseTime <= expected * 0.85 ? 0.45 : responseTime <= expected * 1.15 ? 0.3 : 0.15;
+            const speedBonus = activeResponseTime <= expected * 0.85 ? 0.45 : activeResponseTime <= expected * 1.15 ? 0.3 : 0.15;
             conceptMemory[currentQuestion.tag] = Math.max(0,
             ((conceptMemory[currentQuestion.tag] || 0) * 0.68) - speedBonus);
         }
@@ -11189,7 +11318,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
  		 objective: currentQuestion.objective || inferObjective(currentQuestion),
  		 streak,
  		 bossHealth,
- 		 responseTime
+		  responseTime:activeResponseTime
 		}) : "";
 
 		msgElement.innerHTML = showImmediateFeedback
@@ -11257,7 +11386,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
     // --- LEARNING: increase weakness ---
     if (currentQuestion.tag) {
         const expected = getTypeTargetMs(currentQuestion.type);
-        const rushPenalty = responseTime < expected * 0.65 ? 1.25 : 1;
+        const rushPenalty = activeResponseTime < expected * 0.65 ? 1.25 : 1;
         conceptMemory[currentQuestion.tag] =
             (conceptMemory[currentQuestion.tag] || 0) + rushPenalty;
     }
@@ -11270,7 +11399,7 @@ if(isBossRoom) recordCheckpointAttempt(isCorrect);
     	objective: currentQuestion.objective || inferObjective(currentQuestion),
     	streak,
     	bossHealth,
-    	responseTime
+        responseTime:activeResponseTime
      }) : "";
 
      msgElement.innerHTML = `<span class='fade-out-text'>${showImmediateFeedback ? bossLine : "Response recorded."}</span>`;
@@ -11311,7 +11440,7 @@ if(remediationState.active){
 
 // --- STAGED REMEDIATION TRIGGER ---
 if (remediationTransitionAllowed(currentQuestion) && shouldTriggerDetour(currentQuestion)) {
-    remediationState = planRemediation(currentQuestion, responseTime) || remediationState;
+    remediationState = planRemediation(currentQuestion, activeResponseTime) || remediationState;
     detourActive = true;
     detourReturnRoom = room;
 
@@ -12619,7 +12748,7 @@ function getRecentBehaviorSignals(){
 
     recent.forEach(item => {
         const target = getTypeTargetMs(item.type || "default");
-        const responseTime = Number(item.responseTime || 0);
+        const responseTime = getMasteryResponseTime(item);
 
         if(item.correct) recentCorrect++;
         if(responseTime) recentTimeTotal += responseTime;
@@ -13250,12 +13379,13 @@ Generated by Mastery Quests`;
 // =============================================
 const TELEMETRY_PREFIX = `${STORAGE_PREFIX}:telemetry:`;
 const LATEST_TELEMETRY_RUN_KEY = `${STORAGE_PREFIX}:telemetry:latestRun`;
-const TELEMETRY_VERSION = "faculty-local-v2";
+const TELEMETRY_VERSION = "faculty-local-v3";
 const GAME_VERSION = "Faculty-Blank-2026.08.24-phase1.5";
 const TELEMETRY_COLUMNS = [
     "eventID","timestamp","telemetryVersion","gameVersion","runID","game","mode","event",
     "room","questionID","questionVersion","difficulty","selectedIndex","correct",
-    "rapidGuessing","tag","type","objective","responseTimeMs","attempt","streak",
+    "rapidGuessing","tag","type","objective","responseTimeMs","activeResponseTimeMs",
+    "hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","attempt","streak",
     "elapsedTimeMs","adaptiveMode","remediationStage","priorExposureCount",
     "firstExposure","score","bestScore","totalTimeMs","accuracy","maxStreak",
     "totalAttempts","verificationCode","fadingFortuneScore","fadingFortuneQuestionValue",
@@ -13308,6 +13438,11 @@ function sendGameData(data = {}){
         const eventName = data.event || "";
         const isResponseEvent = eventName === "question" || eventName === "rapid_guessing" || eventName === "exam_answer_initial" || eventName === "exam_answer_revision";
         const isCompletionEvent = /(?:^|_)complete$/.test(eventName) || eventName === "complete";
+        const responseTimeMs = isResponseEvent ? Math.max(0, Number(data.responseTime ?? data.responseTimeMs ?? 0) || 0) : 0;
+        const hiddenTimeMs = isResponseEvent ? Math.min(responseTimeMs, Math.max(0, Number(data.hiddenTime ?? data.hiddenTimeMs ?? 0) || 0)) : 0;
+        const activeResponseTimeMs = isResponseEvent
+            ? Math.min(responseTimeMs, Math.max(0, Number(data.activeResponseTime ?? data.activeResponseTimeMs ?? (responseTimeMs - hiddenTimeMs)) || 0))
+            : 0;
         const priorExposureCount = questionID > 0
             ? records.filter(item => Number(item.questionID) === questionID && (item.event === "question" || item.event === "rapid_guessing")).length
             : 0;
@@ -13334,7 +13469,13 @@ function sendGameData(data = {}){
             tag: data.tag || "",
             type: data.type || "",
             objective: data.objective || "",
-            responseTimeMs: Number(data.responseTime ?? data.responseTimeMs ?? 0),
+            responseTimeMs,
+            activeResponseTimeMs,
+            hiddenTimeMs,
+            tabSwitchCount:isResponseEvent ? Math.max(0, Math.trunc(Number(data.tabSwitchCount ?? 0) || 0)) : 0,
+            timeAfterReturnMs:isResponseEvent && (data.timeAfterReturn ?? data.timeAfterReturnMs) !== null && (data.timeAfterReturn ?? data.timeAfterReturnMs) !== undefined
+                ? Math.max(0, Number(data.timeAfterReturn ?? data.timeAfterReturnMs ?? 0) || 0)
+                : "",
             attempt: Number(data.attempt ?? 0),
             streak: Number(data.streak ?? 0),
             elapsedTimeMs: isCompletionEvent ? Number(data.totalTime ?? data.totalTimeMs ?? 0) : Number(data.elapsedTime ?? data.elapsedTimeMs ?? 0),
@@ -13962,6 +14103,8 @@ handlePracticeModeComplete = function(...args){
 const phase15BaseStartGame = startGame;
 startGame = function(shouldResume = false, ...args){
     if(!shouldResume){
+        questionStartTime = 0;
+        questionVisibilityTiming = createQuestionVisibilityTimingState();
         accumulatedElapsedMs = 0;
         startTime = null;
         finalElapsedTimeMs = null;
@@ -13978,6 +14121,8 @@ startGame = function(shouldResume = false, ...args){
 
 const phase15BaseResetRunState = resetRunStateForNewMode;
 resetRunStateForNewMode = function(...args){
+    questionStartTime = 0;
+    questionVisibilityTiming = createQuestionVisibilityTimingState();
     accumulatedElapsedMs = 0;
     startTime = null;
     finalElapsedTimeMs = null;
