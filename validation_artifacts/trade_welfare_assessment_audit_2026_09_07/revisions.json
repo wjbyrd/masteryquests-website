@@ -1,0 +1,3418 @@
+{
+  "P52B-TRADE-H-001": {
+    "q": "With constant tradeoffs per day, Fern can make 28 trays or 7 stools; Cove can make 18 trays or 9 stools. Which specialization and exchange can give both strict gains?",
+    "options": [
+      "Fern makes trays, Cove makes stools; 3 trays per stool",
+      "Fern makes stools, Cove makes trays; 3 trays per stool",
+      "Fern makes trays, Cove makes stools; 5 trays per stool",
+      "Fern makes trays, Cove makes stools; 1 tray per stool"
+    ],
+    "feedback": "A stool costs Fern 4 trays and Cove 2. Cove has stool advantage and Fern tray advantage; a rate strictly between 2 and 4 trays per stool can benefit both.",
+    "reason": "C: link comparative advantage, specialization and feasible terms in ordinary Hard.",
+    "proof": [
+      {
+        "label": "Fern stool cost",
+        "expression": "28/7",
+        "expected": 4
+      },
+      {
+        "label": "Cove stool cost",
+        "expression": "18/9",
+        "expected": 2
+      },
+      {
+        "label": "strict rate",
+        "expression": "2<3<4",
+        "expected": true
+      }
+    ]
+  },
+  "P52B-TRADE-H-002": {
+    "q": "Two studios have constant daily tradeoffs. Alder can make 21 prints or 7 models; Brook can make 20 prints or 10 models. Which proposal benefits both at the margin?",
+    "options": [
+      "Brook exports models to Alder for 2.5 prints each",
+      "Alder exports models to Brook for 2.5 prints each",
+      "Brook exports models to Alder for 3.5 prints each",
+      "Brook exports models to Alder for 1.5 prints each"
+    ],
+    "feedback": "Alder gives up 3 prints per model; Brook gives up 2. Brook can supply models at a rate above 2 that still saves Alder prints compared with making models itself.",
+    "reason": "C: require correct export direction as well as terms bounds.",
+    "proof": [
+      {
+        "label": "Alder cost",
+        "expression": "21/7",
+        "expected": 3
+      },
+      {
+        "label": "Brook cost",
+        "expression": "20/10",
+        "expected": 2
+      },
+      {
+        "label": "strict terms",
+        "expression": "2<2.5<3",
+        "expected": true
+      }
+    ]
+  },
+  "P52B-TRADE-EL-001": {
+    "q": "At constant tradeoffs, Iona makes 32 badges or 8 signs daily; Paz makes 18 badges or 9 signs. Paz offers one sign for 3 badges. Which reciprocal-rate assessment is correct?",
+    "options": [
+      "Iona exports badges; 1/3 sign per badge lies between costs of 1/4 and 1/2",
+      "Paz exports badges; 3 signs per badge lies between the relevant costs",
+      "Iona exports signs because its badge output is greater",
+      "Both have sign advantage because 3 exceeds both sign-output ratios"
+    ],
+    "feedback": "Iona gives up 1/4 sign per badge and Paz 1/2. Iona exports badges and obtains 1/3 sign each, which is strictly between those costs.",
+    "reason": "C: reciprocal units, specialization and proposed price in one chain.",
+    "proof": [
+      {
+        "label": "Iona reciprocal",
+        "expression": "8/32",
+        "expected": 0.25
+      },
+      {
+        "label": "Paz reciprocal",
+        "expression": "9/18",
+        "expected": 0.5
+      },
+      {
+        "label": "price",
+        "expression": "1/4<1/3<1/2",
+        "expected": true
+      }
+    ]
+  },
+  "P52B-TRADE-EL-004": {
+    "q": "At constant tradeoffs, Slate can make 36 tiles or 12 sinks; Moss can make 24 tiles or 12 sinks. Slate doubles sink capacity without changing tile capacity. Which contract could now give both strict gains?",
+    "options": [
+      "Slate exports sinks for 1.75 tiles each",
+      "Moss exports sinks for 2.5 tiles each",
+      "Slate exports tiles for 0.4 sink each",
+      "Moss exports sinks for exactly 2 tiles each"
+    ],
+    "feedback": "Slate's sink cost falls from 3 to 1.5 tiles while Moss's remains 2. Slate now exports sinks; 1.75 lies between their costs. At 2, Moss is indifferent.",
+    "reason": "C: technology must change relative costs and the acceptable contract.",
+    "proof": [
+      {
+        "label": "new Slate cost",
+        "expression": "36/24",
+        "expected": 1.5
+      },
+      {
+        "label": "Moss cost",
+        "expression": "24/12",
+        "expected": 2
+      },
+      {
+        "label": "mutual terms",
+        "expression": "1.5<1.75<2",
+        "expected": true
+      }
+    ]
+  },
+  "P62D-ITP-E-028": {
+    "q": "New domestic pump makers request temporary protection while they learn to match established foreign firms' costs. Which argument are they using?",
+    "options": [
+      "Infant-industry argument",
+      "National-security argument",
+      "Jobs argument based only on existing employment",
+      "Retaliation against a partner's trade barrier"
+    ],
+    "feedback": "The infant-industry argument claims temporary learning can make a new industry competitive. The label alone does not establish that future benefits exceed current costs.",
+    "reason": "B: add concise applied argument identification before upper tiers.",
+    "proof": []
+  },
+  "P62D-ITP-E-025": {
+    "q": "At an importing country's request, a foreign government caps shipments and gives its exporters the rights free. Which restriction is this?",
+    "options": [
+      "A voluntary export restraint (VER)",
+      "An import tariff collected by the importing treasury",
+      "An import-license auction held by the importing treasury",
+      "A subsidy paid on domestic production"
+    ],
+    "feedback": "A VER limits exports from the supplying country. With free rights assigned to foreign exporters, those exporters can capture the scarcity rents.",
+    "reason": "A: VER identification missing despite established quota/foreign-rent scope.",
+    "proof": []
+  },
+  "P62D-ITP-M-026": {
+    "q": "Under a voluntary export restraint, foreign firms receive free rights to supply 45 units. Buyers pay $27 while the unchanged world price is $23. Who receives the $180 scarcity rent?",
+    "options": [
+      "The foreign firms holding the export rights",
+      "The importing government as tariff revenue",
+      "Domestic producers in addition to their producer surplus",
+      "Domestic consumers as a price rebate"
+    ],
+    "feedback": "The price wedge is $4 and 45 units cross the border: $180. The foreign holders of the free rights receive the rents; the importing treasury collects no tariff.",
+    "reason": "A: connect VER terminology with explicit rent allocation.",
+    "proof": [
+      {
+        "label": "rent",
+        "expression": "(27-23)*45",
+        "expected": 180
+      }
+    ]
+  },
+  "PMA-ITP-H-030": {
+    "q": "A tariff and a voluntary export restraint each allow 45 imports at a domestic price of $27; the world price stays $23. Foreign firms get the VER rights free. How much higher is importing-country surplus under the tariff, holding quantities and other costs equal?",
+    "options": [
+      "$180, because the price-wedge receipts stay in the importing country",
+      "$0, because identical prices imply identical national welfare",
+      "$1,215, because all spending on imports is government revenue",
+      "$180, because the tariff removes both distortion losses"
+    ],
+    "feedback": "Both restrictions have the same production and consumption distortions. The difference is $4 × 45 = $180: tariff receipts stay domestic while the specified VER rents go abroad.",
+    "reason": "A/B: applied VER comparison, with rent transfer distinguished from distortion.",
+    "proof": [
+      {
+        "label": "domestic difference",
+        "expression": "(27-23)*45",
+        "expected": 180
+      }
+    ]
+  },
+  "P62D-ITP-R-018": {
+    "q": "A learner says a voluntary export restraint must earn revenue for the importing treasury. Foreign exporters receive the export rights free. What corrects the claim?",
+    "options": [
+      "The foreign rights holders receive the scarcity rents; a VER is not an import tariff",
+      "Every restriction automatically sends its price wedge to the importing treasury",
+      "Domestic producers receive the foreign exporters' rights revenue",
+      "Quota rents are destroyed surplus, so no one receives them"
+    ],
+    "feedback": "A VER limits foreign shipments. With the rights held free by foreign firms, the price-wedge receipts accrue abroad. Rent ownership, not the word restriction, determines the recipient.",
+    "reason": "A: repair support for new VER wording within existing quota-rent route.",
+    "proof": []
+  },
+  "PMS-ITP-BR-020": {
+    "q": "A voluntary export restraint gives foreign firms free shipment rights. How does national-welfare accounting connect this arrangement to an equivalent tariff?",
+    "options": [
+      "Include the same distortions, but subtract rents sent abroad instead of counting domestic tariff revenue",
+      "Count the rents as domestic tax receipts because domestic consumers pay them",
+      "Count only producer gains because no import tax is collected",
+      "Treat rents and distortion triangles as the same loss in world welfare"
+    ],
+    "feedback": "With the same prices and quantities, the distortions match. Foreign rents are a transfer abroad that lowers importing-country welfare relative to domestic tariff receipts; they are not themselves destroyed world surplus.",
+    "reason": "A: bridge VER rent ownership to national versus global welfare.",
+    "proof": []
+  },
+  "P62D-ITP-H-018": {
+    "q": "Arden is a small importer of solar panels, with demand P = 80 - Qd and supply P = 20 + Qs. The world price is $30. What is the net national welfare loss from a $8 per-unit tariff?",
+    "options": [
+      "$64",
+      "$192",
+      "$368",
+      "$112"
+    ],
+    "feedback": "The tariff reduces total surplus from $1300 to $1236, a loss of $64.",
+    "reason": "B: supply and demand schedules were missing; restore independent solvability.",
+    "proof": [
+      {
+        "label": "post tariff price",
+        "expression": "30+8",
+        "expected": 38
+      },
+      {
+        "label": "tariff loss",
+        "expression": "(1/2)*8*(8+8)",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-H-021": {
+    "q": "Bellora is a small importer of coffee beans, with demand P = 94 - Qd and supply P = 26 + Qs. The world price is $42. What is the net national welfare loss from a $10 per-unit tariff?",
+    "options": [
+      "$100",
+      "$160",
+      "$470",
+      "$210"
+    ],
+    "feedback": "The tariff reduces total surplus from $1480 to $1380, a loss of $100.",
+    "reason": "B: supply and demand schedules were missing; restore independent solvability.",
+    "proof": [
+      {
+        "label": "post tariff price",
+        "expression": "42+10",
+        "expected": 52
+      },
+      {
+        "label": "tariff loss",
+        "expression": "(1/2)*10*(10+10)",
+        "expected": 100
+      }
+    ]
+  },
+  "P62D-ITP-H-024": {
+    "q": "Caspia is a small importer of bicycles, with demand P = 72 - Qd and supply P = 12 + Qs. The world price is $20. What is the net national welfare loss from a $8 per-unit tariff?",
+    "options": [
+      "$64",
+      "$224",
+      "$384",
+      "$96"
+    ],
+    "feedback": "The tariff reduces total surplus from $1384 to $1320, a loss of $64.",
+    "reason": "B: supply and demand schedules were missing; restore independent solvability.",
+    "proof": [
+      {
+        "label": "post tariff price",
+        "expression": "20+8",
+        "expected": 28
+      },
+      {
+        "label": "tariff loss",
+        "expression": "(1/2)*8*(8+8)",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-H-027": {
+    "q": "Demer is a small importer of tablets, with demand P = 104 - Qd and supply P = 24 + Qs. The world price is $40. What is the net national welfare loss from a $12 per-unit tariff?",
+    "options": [
+      "$144",
+      "$288",
+      "$696",
+      "$264"
+    ],
+    "feedback": "The tariff reduces total surplus from $2176 to $2032, a loss of $144.",
+    "reason": "B: supply and demand schedules were missing; restore independent solvability.",
+    "proof": [
+      {
+        "label": "post tariff price",
+        "expression": "40+12",
+        "expected": 52
+      },
+      {
+        "label": "tariff loss",
+        "expression": "(1/2)*12*(12+12)",
+        "expected": 144
+      }
+    ]
+  },
+  "P62D-ITP-H-030": {
+    "q": "Estara is a small importer of wool blankets, with demand P = 92 - Qd and supply P = 14 + Qs. The world price is $30. What is the net national welfare loss from a $8 per-unit tariff?",
+    "options": [
+      "$64",
+      "$240",
+      "$464",
+      "$160"
+    ],
+    "feedback": "The tariff reduces total surplus from $2050 to $1986, a loss of $64.",
+    "reason": "B: supply and demand schedules were missing; restore independent solvability.",
+    "proof": [
+      {
+        "label": "post tariff price",
+        "expression": "30+8",
+        "expected": 38
+      },
+      {
+        "label": "tariff loss",
+        "expression": "(1/2)*8*(8+8)",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-LB-003": {
+    "q": "Arden's solar panels market has demand P = 80 - Qd and supply P = 20 + Qs. It imports at Pw = $30, then adds a $8 tariff without affecting the world price. Which complete import, revenue and distortion ledger is correct?",
+    "options": [
+      "Imports fall to 24; revenue=$192; production loss=$32; consumption loss=$32; total loss=$64",
+      "Imports rise to 24; revenue=$64; total loss=$192",
+      "Imports fall to 24; revenue=$192; all consumer loss is deadweight loss",
+      "Imports fall to 24; revenue=0; total loss=$192"
+    ],
+    "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
+    "reason": "B: checkpoint relied on a different question for its market schedules.",
+    "proof": [
+      {
+        "label": "imports",
+        "expression": "80-30-8-(30+8-20)",
+        "expected": 24
+      },
+      {
+        "label": "revenue",
+        "expression": "8*(80+20-2*(30+8))",
+        "expected": 192
+      },
+      {
+        "label": "each distortion",
+        "expression": "8*8/2",
+        "expected": 32.0
+      }
+    ]
+  },
+  "P62D-ITP-LB-006": {
+    "q": "Bellora's coffee beans market has demand P = 94 - Qd and supply P = 26 + Qs. It imports at Pw = $42, then adds a $10 tariff without affecting the world price. Which complete import, revenue and distortion ledger is correct?",
+    "options": [
+      "Imports fall to 16; revenue=$160; production loss=$50; consumption loss=$50; total loss=$100",
+      "Imports rise to 16; revenue=$100; total loss=$160",
+      "Imports fall to 16; revenue=$160; all consumer loss is deadweight loss",
+      "Imports fall to 16; revenue=0; total loss=$160"
+    ],
+    "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
+    "reason": "B: checkpoint relied on a different question for its market schedules.",
+    "proof": [
+      {
+        "label": "imports",
+        "expression": "94-42-10-(42+10-26)",
+        "expected": 16
+      },
+      {
+        "label": "revenue",
+        "expression": "10*(94+26-2*(42+10))",
+        "expected": 160
+      },
+      {
+        "label": "each distortion",
+        "expression": "10*10/2",
+        "expected": 50.0
+      }
+    ]
+  },
+  "P62D-ITP-LB-018": {
+    "q": "Faron's ceramic tiles market has demand P = 86 - Qd and supply P = 22 + Qs. It imports at Pw = $32, then adds a $10 tariff without affecting the world price. Which complete import, revenue and distortion ledger is correct?",
+    "options": [
+      "Imports fall to 24; revenue=$240; production loss=$50; consumption loss=$50; total loss=$100",
+      "Imports rise to 24; revenue=$100; total loss=$240",
+      "Imports fall to 24; revenue=$240; all consumer loss is deadweight loss",
+      "Imports fall to 24; revenue=0; total loss=$240"
+    ],
+    "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
+    "reason": "B: checkpoint relied on a different question for its market schedules.",
+    "proof": [
+      {
+        "label": "imports",
+        "expression": "86-32-10-(32+10-22)",
+        "expected": 24
+      },
+      {
+        "label": "revenue",
+        "expression": "10*(86+22-2*(32+10))",
+        "expected": 240
+      },
+      {
+        "label": "each distortion",
+        "expression": "10*10/2",
+        "expected": 50.0
+      }
+    ]
+  },
+  "P62D-ITP-LB-021": {
+    "q": "Galena's medical gloves market has demand P = 98 - Qd and supply P = 18 + Qs. It imports at Pw = $34, then adds a $8 tariff without affecting the world price. Which complete import, revenue and distortion ledger is correct?",
+    "options": [
+      "Imports fall to 32; revenue=$256; production loss=$32; consumption loss=$32; total loss=$64",
+      "Imports rise to 32; revenue=$64; total loss=$256",
+      "Imports fall to 32; revenue=$256; all consumer loss is deadweight loss",
+      "Imports fall to 32; revenue=0; total loss=$256"
+    ],
+    "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
+    "reason": "B: checkpoint relied on a different question for its market schedules.",
+    "proof": [
+      {
+        "label": "imports",
+        "expression": "98-34-8-(34+8-18)",
+        "expected": 32
+      },
+      {
+        "label": "revenue",
+        "expression": "8*(98+18-2*(34+8))",
+        "expected": 256
+      },
+      {
+        "label": "each distortion",
+        "expression": "8*8/2",
+        "expected": 32.0
+      }
+    ]
+  },
+  "P62D-ITP-LB-024": {
+    "q": "Haven's garden tools market has demand P = 90 - Qd and supply P = 30 + Qs. It imports at Pw = $44, then adds a $6 tariff without affecting the world price. Which complete import, revenue and distortion ledger is correct?",
+    "options": [
+      "Imports fall to 20; revenue=$120; production loss=$18; consumption loss=$18; total loss=$36",
+      "Imports rise to 20; revenue=$36; total loss=$120",
+      "Imports fall to 20; revenue=$120; all consumer loss is deadweight loss",
+      "Imports fall to 20; revenue=0; total loss=$120"
+    ],
+    "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
+    "reason": "B: checkpoint relied on a different question for its market schedules.",
+    "proof": [
+      {
+        "label": "imports",
+        "expression": "90-44-6-(44+6-30)",
+        "expected": 20
+      },
+      {
+        "label": "revenue",
+        "expression": "6*(90+30-2*(44+6))",
+        "expected": 120
+      },
+      {
+        "label": "each distortion",
+        "expression": "6*6/2",
+        "expected": 18.0
+      }
+    ]
+  },
+  "P62D-ITP-LB-036": {
+    "q": "Lydon's steel bolts market has demand P = 102 - Qd and supply P = 20 + Qs. It imports at Pw = $36, then adds a $10 tariff without affecting the world price. Which complete import, revenue and distortion ledger is correct?",
+    "options": [
+      "Imports fall to 30; revenue=$300; production loss=$50; consumption loss=$50; total loss=$100",
+      "Imports rise to 30; revenue=$100; total loss=$300",
+      "Imports fall to 30; revenue=$300; all consumer loss is deadweight loss",
+      "Imports fall to 30; revenue=0; total loss=$300"
+    ],
+    "feedback": "The tariff shrinks imports, transfers revenue, and creates two distortion triangles.",
+    "reason": "B: checkpoint relied on a different question for its market schedules.",
+    "proof": [
+      {
+        "label": "imports",
+        "expression": "102-36-10-(36+10-20)",
+        "expected": 30
+      },
+      {
+        "label": "revenue",
+        "expression": "10*(102+20-2*(36+10))",
+        "expected": 300
+      },
+      {
+        "label": "each distortion",
+        "expression": "10*10/2",
+        "expected": 50.0
+      }
+    ]
+  },
+  "P62D-ITP-LB-011": {
+    "q": "Demer opens its tablets market at Pw = $90. Demand is P = 104 - Qd and supply P = 24 + Qs. Which complete trade-and-welfare outcome is correct?",
+    "options": [
+      "Exports=52; consumers lose $702; producers gain $1378; total surplus rises $676",
+      "Imports=52; consumers gain $702; producers lose $1378; total surplus falls",
+      "Exports=66; consumers lose $676; producers gain $1378; total surplus is unchanged",
+      "Exports=52; consumers lose $702; producers gain $1378; total surplus falls $676"
+    ],
+    "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
+    "reason": "B: referenced equations were absent from this independently selected checkpoint.",
+    "proof": [
+      {
+        "label": "exports",
+        "expression": "2*90-104-24",
+        "expected": 52
+      },
+      {
+        "label": "gain",
+        "expression": "(90-(104+24)/2)**2",
+        "expected": 676.0
+      }
+    ]
+  },
+  "P62D-ITP-LB-029": {
+    "q": "Juno opens its olive oil market at Pw = $82. Demand is P = 96 - Qd and supply P = 28 + Qs. Which complete trade-and-welfare outcome is correct?",
+    "options": [
+      "Exports=40; consumers lose $480; producers gain $880; total surplus rises $400",
+      "Imports=40; consumers gain $480; producers lose $880; total surplus falls",
+      "Exports=54; consumers lose $400; producers gain $880; total surplus is unchanged",
+      "Exports=40; consumers lose $480; producers gain $880; total surplus falls $400"
+    ],
+    "feedback": "The price is above autarky, so the country exports; the larger producer gain exceeds the consumer loss.",
+    "reason": "B: referenced equations were absent from this independently selected checkpoint.",
+    "proof": [
+      {
+        "label": "exports",
+        "expression": "2*82-96-28",
+        "expected": 40
+      },
+      {
+        "label": "gain",
+        "expression": "(82-(96+28)/2)**2",
+        "expected": 400.0
+      }
+    ]
+  },
+  "PMA-ITP-H-001": {
+    "q": "A small country has domestic demand P = 54 - Qd and supply P = 18 + Qs. The world price is $28. Which outcome follows when trade opens?",
+    "options": [
+      "It imports 16 units; the price falls and domestic consumers gain",
+      "It exports 16 units; the price falls and domestic producers gain",
+      "It imports 26 units; every unit consumed must be imported",
+      "It imports 16 units; domestic consumers lose from the lower price"
+    ],
+    "feedback": "Autarky price is $36. At $28, demand is 26 and supply is 10, leaving 16 imports. The lower price benefits domestic consumers.",
+    "reason": "C: replace direct price recognition with price, quantity and welfare links.",
+    "proof": [
+      {
+        "label": "autarky",
+        "expression": "(54+18)/2",
+        "expected": 36
+      },
+      {
+        "label": "imports",
+        "expression": "54-28-(28-18)",
+        "expected": 16
+      }
+    ]
+  },
+  "PMA-ITP-H-002": {
+    "q": "At an unchanged world price, domestic mills supply 68 units and residents buy 44. After opening to trade, which combination is consistent with this competitive small-country market?",
+    "options": [
+      "24 exports, a price above autarky, and a gain to domestic producers",
+      "24 imports, a price below autarky, and a gain to domestic consumers",
+      "68 exports, since all domestic output is sold abroad",
+      "24 exports, a price below autarky, and a loss to domestic producers"
+    ],
+    "feedback": "The excess of supply over domestic demand is 24 exports. With upward supply and downward demand, this occurs at a world price above autarky, benefiting domestic producers.",
+    "reason": "C: infer price position and distribution from quantities.",
+    "proof": [
+      {
+        "label": "exports",
+        "expression": "68-44",
+        "expected": 24
+      }
+    ]
+  },
+  "PMA-ITP-H-003": {
+    "q": "Demand is P = 66 - Qd and supply is P = 18 + Qs. A world price of $42 initially produces no trade. If the world price falls to $36 with the curves unchanged, what follows?",
+    "options": [
+      "12 imports and higher domestic consumer surplus",
+      "12 exports and higher domestic producer surplus",
+      "No trade because the original world price equaled autarky",
+      "30 imports because domestic demand becomes 30"
+    ],
+    "feedback": "The initial price equals autarky. At $36, Qd = 30 and Qs = 18, so 12 units are imported and consumers gain from the price reduction.",
+    "reason": "C: turn no-trade recognition into a changed-world-price inference.",
+    "proof": [
+      {
+        "label": "autarky",
+        "expression": "(66+18)/2",
+        "expected": 42
+      },
+      {
+        "label": "imports",
+        "expression": "66-36-(36-18)",
+        "expected": 12
+      }
+    ]
+  },
+  "P62D-ITP-L-001": {
+    "q": "Arden has P = 80 - Qd and P = 20 + Qs. Free trade creates 40 imports, but the price is unreported. If that world price then falls by $2, which new outcome follows?",
+    "options": [
+      "Price $28; 44 imports; domestic consumers gain",
+      "Price $28; 40 imports; domestic consumers gain",
+      "Price $30; 40 imports; the world price cannot change",
+      "Price $28; 44 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $30: the signed Qs/Qd gap must equal 40. At $28, Qd = 52 and Qs = 8; the new gap is 44 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(80+20-40)/2",
+        "expected": 30
+      },
+      {
+        "label": "new price",
+        "expression": "30-2",
+        "expected": 28
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(80+20-2*28)",
+        "expected": 44
+      }
+    ]
+  },
+  "P62D-ITP-L-002": {
+    "q": "Arden's solar panels market has P = 80 - Qd and P = 20 + Qs. Free trade produces 40 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$400; compensation changes distribution without removing the trade gain",
+      "$800; compensation does not reduce what the winners retain",
+      "$400; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $50, Q = 30. The trade gap implies P = $30. Winners gain $800, losers lose $400; after the transfer the winners retain $400. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(80+20-40)/2",
+        "expected": 30
+      },
+      {
+        "label": "net gain",
+        "expression": "(30-(80+20)/2)**2",
+        "expected": 400.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "800.0-400.0",
+        "expected": 400.0
+      }
+    ]
+  },
+  "P62D-ITP-L-003": {
+    "q": "A Arden report opposes opening the solar panels market because producers would lose. Domestic curves are P = 80 - Qd and P = 20 + Qs; Pw = $30. A proposed lump-sum compensation plan fully covers that loss and uses $10 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $390 ahead while restoring losers",
+      "National welfare rises $400 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $400 of total surplus"
+    ],
+    "feedback": "Opening trade creates $400 in aggregate gains: winner gain $800 less loser loss $400. Compensation reallocates surplus, while administration consumes $10. The remaining net gain is $390.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(30-(80+20)/2)**2",
+        "expected": 400.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "800.0-400.0-10",
+        "expected": 390.0
+      }
+    ]
+  },
+  "P62D-ITP-L-031": {
+    "q": "Arden has P = 80 - Qd and P = 20 + Qs. Free trade creates 40 exports, but the price is unreported. If that world price then rises by $2, which new outcome follows?",
+    "options": [
+      "Price $72; 44 exports; domestic consumers lose",
+      "Price $72; 40 exports; domestic consumers lose",
+      "Price $70; 40 exports; the world price cannot change",
+      "Price $72; 44 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $70: the signed Qs/Qd gap must equal 40. At $72, Qd = 8 and Qs = 52; the new gap is 44 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(80+20+40)/2",
+        "expected": 70
+      },
+      {
+        "label": "new price",
+        "expression": "70+2",
+        "expected": 72
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(80+20-2*72)",
+        "expected": 44
+      }
+    ]
+  },
+  "P62D-ITP-L-032": {
+    "q": "Arden's solar panels market has P = 80 - Qd and P = 20 + Qs. Free trade produces 40 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$400; compensation changes distribution without removing the trade gain",
+      "$800; compensation does not reduce what the winners retain",
+      "$400; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $50, Q = 30. The trade gap implies P = $70. Winners gain $800, losers lose $400; after the transfer the winners retain $400. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(80+20+40)/2",
+        "expected": 70
+      },
+      {
+        "label": "net gain",
+        "expression": "(70-(80+20)/2)**2",
+        "expected": 400.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "800.0-400.0",
+        "expected": 400.0
+      }
+    ]
+  },
+  "P62D-ITP-L-033": {
+    "q": "A Arden report opposes opening the solar panels market because consumers would lose. Domestic curves are P = 80 - Qd and P = 20 + Qs; Pw = $70. A proposed lump-sum compensation plan fully covers that loss and uses $10 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $390 ahead while restoring losers",
+      "National welfare rises $400 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $400 of total surplus"
+    ],
+    "feedback": "Opening trade creates $400 in aggregate gains: winner gain $800 less loser loss $400. Compensation reallocates surplus, while administration consumes $10. The remaining net gain is $390.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(70-(80+20)/2)**2",
+        "expected": 400.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "800.0-400.0-10",
+        "expected": 390.0
+      }
+    ]
+  },
+  "P62D-ITP-L-004": {
+    "q": "Bellora has P = 94 - Qd and P = 26 + Qs. Free trade creates 36 imports, but the price is unreported. If that world price then falls by $3, which new outcome follows?",
+    "options": [
+      "Price $39; 42 imports; domestic consumers gain",
+      "Price $39; 36 imports; domestic consumers gain",
+      "Price $42; 36 imports; the world price cannot change",
+      "Price $39; 42 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $42: the signed Qs/Qd gap must equal 36. At $39, Qd = 55 and Qs = 13; the new gap is 42 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(94+26-36)/2",
+        "expected": 42
+      },
+      {
+        "label": "new price",
+        "expression": "42-3",
+        "expected": 39
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(94+26-2*39)",
+        "expected": 42
+      }
+    ]
+  },
+  "P62D-ITP-L-005": {
+    "q": "Bellora's coffee beans market has P = 94 - Qd and P = 26 + Qs. Free trade produces 36 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$324; compensation changes distribution without removing the trade gain",
+      "$774; compensation does not reduce what the winners retain",
+      "$450; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $60, Q = 34. The trade gap implies P = $42. Winners gain $774, losers lose $450; after the transfer the winners retain $324. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(94+26-36)/2",
+        "expected": 42
+      },
+      {
+        "label": "net gain",
+        "expression": "(42-(94+26)/2)**2",
+        "expected": 324.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "774.0-450.0",
+        "expected": 324.0
+      }
+    ]
+  },
+  "P62D-ITP-L-006": {
+    "q": "A Bellora report opposes opening the coffee beans market because producers would lose. Domestic curves are P = 94 - Qd and P = 26 + Qs; Pw = $42. A proposed lump-sum compensation plan fully covers that loss and uses $12 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $312 ahead while restoring losers",
+      "National welfare rises $324 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $450 of total surplus"
+    ],
+    "feedback": "Opening trade creates $324 in aggregate gains: winner gain $774 less loser loss $450. Compensation reallocates surplus, while administration consumes $12. The remaining net gain is $312.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(42-(94+26)/2)**2",
+        "expected": 324.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "774.0-450.0-12",
+        "expected": 312.0
+      }
+    ]
+  },
+  "P62D-ITP-L-034": {
+    "q": "Bellora has P = 94 - Qd and P = 26 + Qs. Free trade creates 32 exports, but the price is unreported. If that world price then rises by $3, which new outcome follows?",
+    "options": [
+      "Price $79; 38 exports; domestic consumers lose",
+      "Price $79; 32 exports; domestic consumers lose",
+      "Price $76; 32 exports; the world price cannot change",
+      "Price $79; 38 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $76: the signed Qs/Qd gap must equal 32. At $79, Qd = 15 and Qs = 53; the new gap is 38 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(94+26+32)/2",
+        "expected": 76
+      },
+      {
+        "label": "new price",
+        "expression": "76+3",
+        "expected": 79
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(94+26-2*79)",
+        "expected": 38
+      }
+    ]
+  },
+  "P62D-ITP-L-035": {
+    "q": "Bellora's coffee beans market has P = 94 - Qd and P = 26 + Qs. Free trade produces 32 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$256; compensation changes distribution without removing the trade gain",
+      "$672; compensation does not reduce what the winners retain",
+      "$416; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $60, Q = 34. The trade gap implies P = $76. Winners gain $672, losers lose $416; after the transfer the winners retain $256. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(94+26+32)/2",
+        "expected": 76
+      },
+      {
+        "label": "net gain",
+        "expression": "(76-(94+26)/2)**2",
+        "expected": 256.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "672.0-416.0",
+        "expected": 256.0
+      }
+    ]
+  },
+  "P62D-ITP-L-036": {
+    "q": "A Bellora report opposes opening the coffee beans market because consumers would lose. Domestic curves are P = 94 - Qd and P = 26 + Qs; Pw = $76. A proposed lump-sum compensation plan fully covers that loss and uses $12 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $244 ahead while restoring losers",
+      "National welfare rises $256 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $416 of total surplus"
+    ],
+    "feedback": "Opening trade creates $256 in aggregate gains: winner gain $672 less loser loss $416. Compensation reallocates surplus, while administration consumes $12. The remaining net gain is $244.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(76-(94+26)/2)**2",
+        "expected": 256.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "672.0-416.0-12",
+        "expected": 244.0
+      }
+    ]
+  },
+  "P62D-ITP-L-007": {
+    "q": "Caspia has P = 72 - Qd and P = 12 + Qs. Free trade creates 44 imports, but the price is unreported. If that world price then falls by $4, which new outcome follows?",
+    "options": [
+      "Price $16; 52 imports; domestic consumers gain",
+      "Price $16; 44 imports; domestic consumers gain",
+      "Price $20; 44 imports; the world price cannot change",
+      "Price $16; 52 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $20: the signed Qs/Qd gap must equal 44. At $16, Qd = 56 and Qs = 4; the new gap is 52 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(72+12-44)/2",
+        "expected": 20
+      },
+      {
+        "label": "new price",
+        "expression": "20-4",
+        "expected": 16
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(72+12-2*16)",
+        "expected": 52
+      }
+    ]
+  },
+  "P62D-ITP-L-008": {
+    "q": "Caspia's bicycles market has P = 72 - Qd and P = 12 + Qs. Free trade produces 44 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$484; compensation changes distribution without removing the trade gain",
+      "$902; compensation does not reduce what the winners retain",
+      "$418; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $42, Q = 30. The trade gap implies P = $20. Winners gain $902, losers lose $418; after the transfer the winners retain $484. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(72+12-44)/2",
+        "expected": 20
+      },
+      {
+        "label": "net gain",
+        "expression": "(20-(72+12)/2)**2",
+        "expected": 484.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "902.0-418.0",
+        "expected": 484.0
+      }
+    ]
+  },
+  "P62D-ITP-L-009": {
+    "q": "A Caspia report opposes opening the bicycles market because producers would lose. Domestic curves are P = 72 - Qd and P = 12 + Qs; Pw = $20. A proposed lump-sum compensation plan fully covers that loss and uses $14 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $470 ahead while restoring losers",
+      "National welfare rises $484 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $418 of total surplus"
+    ],
+    "feedback": "Opening trade creates $484 in aggregate gains: winner gain $902 less loser loss $418. Compensation reallocates surplus, while administration consumes $14. The remaining net gain is $470.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(20-(72+12)/2)**2",
+        "expected": 484.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "902.0-418.0-14",
+        "expected": 470.0
+      }
+    ]
+  },
+  "P62D-ITP-L-037": {
+    "q": "Caspia has P = 72 - Qd and P = 12 + Qs. Free trade creates 36 exports, but the price is unreported. If that world price then rises by $4, which new outcome follows?",
+    "options": [
+      "Price $64; 44 exports; domestic consumers lose",
+      "Price $64; 36 exports; domestic consumers lose",
+      "Price $60; 36 exports; the world price cannot change",
+      "Price $64; 44 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $60: the signed Qs/Qd gap must equal 36. At $64, Qd = 8 and Qs = 52; the new gap is 44 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(72+12+36)/2",
+        "expected": 60
+      },
+      {
+        "label": "new price",
+        "expression": "60+4",
+        "expected": 64
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(72+12-2*64)",
+        "expected": 44
+      }
+    ]
+  },
+  "P62D-ITP-L-038": {
+    "q": "Caspia's bicycles market has P = 72 - Qd and P = 12 + Qs. Free trade produces 36 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$324; compensation changes distribution without removing the trade gain",
+      "$702; compensation does not reduce what the winners retain",
+      "$378; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $42, Q = 30. The trade gap implies P = $60. Winners gain $702, losers lose $378; after the transfer the winners retain $324. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(72+12+36)/2",
+        "expected": 60
+      },
+      {
+        "label": "net gain",
+        "expression": "(60-(72+12)/2)**2",
+        "expected": 324.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "702.0-378.0",
+        "expected": 324.0
+      }
+    ]
+  },
+  "P62D-ITP-L-039": {
+    "q": "A Caspia report opposes opening the bicycles market because consumers would lose. Domestic curves are P = 72 - Qd and P = 12 + Qs; Pw = $60. A proposed lump-sum compensation plan fully covers that loss and uses $14 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $310 ahead while restoring losers",
+      "National welfare rises $324 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $378 of total surplus"
+    ],
+    "feedback": "Opening trade creates $324 in aggregate gains: winner gain $702 less loser loss $378. Compensation reallocates surplus, while administration consumes $14. The remaining net gain is $310.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(60-(72+12)/2)**2",
+        "expected": 324.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "702.0-378.0-14",
+        "expected": 310.0
+      }
+    ]
+  },
+  "P62D-ITP-L-010": {
+    "q": "Demer has P = 104 - Qd and P = 24 + Qs. Free trade creates 48 imports, but the price is unreported. If that world price then falls by $2, which new outcome follows?",
+    "options": [
+      "Price $38; 52 imports; domestic consumers gain",
+      "Price $38; 48 imports; domestic consumers gain",
+      "Price $40; 48 imports; the world price cannot change",
+      "Price $38; 52 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $40: the signed Qs/Qd gap must equal 48. At $38, Qd = 66 and Qs = 14; the new gap is 52 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(104+24-48)/2",
+        "expected": 40
+      },
+      {
+        "label": "new price",
+        "expression": "40-2",
+        "expected": 38
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(104+24-2*38)",
+        "expected": 52
+      }
+    ]
+  },
+  "P62D-ITP-L-011": {
+    "q": "Demer's tablets market has P = 104 - Qd and P = 24 + Qs. Free trade produces 48 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$576; compensation changes distribution without removing the trade gain",
+      "$1,248; compensation does not reduce what the winners retain",
+      "$672; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $64, Q = 40. The trade gap implies P = $40. Winners gain $1,248, losers lose $672; after the transfer the winners retain $576. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(104+24-48)/2",
+        "expected": 40
+      },
+      {
+        "label": "net gain",
+        "expression": "(40-(104+24)/2)**2",
+        "expected": 576.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "1248.0-672.0",
+        "expected": 576.0
+      }
+    ]
+  },
+  "P62D-ITP-L-012": {
+    "q": "A Demer report opposes opening the tablets market because producers would lose. Domestic curves are P = 104 - Qd and P = 24 + Qs; Pw = $40. A proposed lump-sum compensation plan fully covers that loss and uses $16 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $560 ahead while restoring losers",
+      "National welfare rises $576 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $672 of total surplus"
+    ],
+    "feedback": "Opening trade creates $576 in aggregate gains: winner gain $1,248 less loser loss $672. Compensation reallocates surplus, while administration consumes $16. The remaining net gain is $560.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(40-(104+24)/2)**2",
+        "expected": 576.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "1248.0-672.0-16",
+        "expected": 560.0
+      }
+    ]
+  },
+  "P62D-ITP-L-040": {
+    "q": "Demer has P = 104 - Qd and P = 24 + Qs. Free trade creates 52 exports, but the price is unreported. If that world price then rises by $2, which new outcome follows?",
+    "options": [
+      "Price $92; 56 exports; domestic consumers lose",
+      "Price $92; 52 exports; domestic consumers lose",
+      "Price $90; 52 exports; the world price cannot change",
+      "Price $92; 56 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $90: the signed Qs/Qd gap must equal 52. At $92, Qd = 12 and Qs = 68; the new gap is 56 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(104+24+52)/2",
+        "expected": 90
+      },
+      {
+        "label": "new price",
+        "expression": "90+2",
+        "expected": 92
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(104+24-2*92)",
+        "expected": 56
+      }
+    ]
+  },
+  "P62D-ITP-L-041": {
+    "q": "Demer's tablets market has P = 104 - Qd and P = 24 + Qs. Free trade produces 52 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$676; compensation changes distribution without removing the trade gain",
+      "$1,378; compensation does not reduce what the winners retain",
+      "$702; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $64, Q = 40. The trade gap implies P = $90. Winners gain $1,378, losers lose $702; after the transfer the winners retain $676. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(104+24+52)/2",
+        "expected": 90
+      },
+      {
+        "label": "net gain",
+        "expression": "(90-(104+24)/2)**2",
+        "expected": 676.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "1378.0-702.0",
+        "expected": 676.0
+      }
+    ]
+  },
+  "P62D-ITP-L-042": {
+    "q": "A Demer report opposes opening the tablets market because consumers would lose. Domestic curves are P = 104 - Qd and P = 24 + Qs; Pw = $90. A proposed lump-sum compensation plan fully covers that loss and uses $16 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $660 ahead while restoring losers",
+      "National welfare rises $676 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $702 of total surplus"
+    ],
+    "feedback": "Opening trade creates $676 in aggregate gains: winner gain $1,378 less loser loss $702. Compensation reallocates surplus, while administration consumes $16. The remaining net gain is $660.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(90-(104+24)/2)**2",
+        "expected": 676.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "1378.0-702.0-16",
+        "expected": 660.0
+      }
+    ]
+  },
+  "P62D-ITP-L-013": {
+    "q": "Estara has P = 92 - Qd and P = 14 + Qs. Free trade creates 46 imports, but the price is unreported. If that world price then falls by $3, which new outcome follows?",
+    "options": [
+      "Price $27; 52 imports; domestic consumers gain",
+      "Price $27; 46 imports; domestic consumers gain",
+      "Price $30; 46 imports; the world price cannot change",
+      "Price $27; 52 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $30: the signed Qs/Qd gap must equal 46. At $27, Qd = 65 and Qs = 13; the new gap is 52 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(92+14-46)/2",
+        "expected": 30
+      },
+      {
+        "label": "new price",
+        "expression": "30-3",
+        "expected": 27
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(92+14-2*27)",
+        "expected": 52
+      }
+    ]
+  },
+  "P62D-ITP-L-014": {
+    "q": "Estara's wool blankets market has P = 92 - Qd and P = 14 + Qs. Free trade produces 46 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$529; compensation changes distribution without removing the trade gain",
+      "$1,161.5; compensation does not reduce what the winners retain",
+      "$632.5; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $53, Q = 39. The trade gap implies P = $30. Winners gain $1,161.5, losers lose $632.5; after the transfer the winners retain $529. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(92+14-46)/2",
+        "expected": 30
+      },
+      {
+        "label": "net gain",
+        "expression": "(30-(92+14)/2)**2",
+        "expected": 529.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "1161.5-632.5",
+        "expected": 529.0
+      }
+    ]
+  },
+  "P62D-ITP-L-015": {
+    "q": "A Estara report opposes opening the wool blankets market because producers would lose. Domestic curves are P = 92 - Qd and P = 14 + Qs; Pw = $30. A proposed lump-sum compensation plan fully covers that loss and uses $18 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $511 ahead while restoring losers",
+      "National welfare rises $529 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $632.5 of total surplus"
+    ],
+    "feedback": "Opening trade creates $529 in aggregate gains: winner gain $1,161.5 less loser loss $632.5. Compensation reallocates surplus, while administration consumes $18. The remaining net gain is $511.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(30-(92+14)/2)**2",
+        "expected": 529.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "1161.5-632.5-18",
+        "expected": 511.0
+      }
+    ]
+  },
+  "P62D-ITP-L-043": {
+    "q": "Use the Estara wool blankets graph. If the world price rises by $3 from the displayed line and both straight curves remain unchanged, which new trade outcome follows?",
+    "options": [
+      "Price $75; 44 exports; domestic consumers lose",
+      "Price $75; 38 exports; domestic consumers lose",
+      "Price $72; 38 exports; the world price cannot change",
+      "Price $75; 44 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $72: the signed Qs/Qd gap must equal 38. At $75, Qd = 17 and Qs = 61; the new gap is 44 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(92+14+38)/2",
+        "expected": 72
+      },
+      {
+        "label": "new price",
+        "expression": "72+3",
+        "expected": 75
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(92+14-2*75)",
+        "expected": 44
+      }
+    ]
+  },
+  "P62D-ITP-L-044": {
+    "q": "Estara's wool blankets market has P = 92 - Qd and P = 14 + Qs. Free trade produces 38 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$361; compensation changes distribution without removing the trade gain",
+      "$921.5; compensation does not reduce what the winners retain",
+      "$560.5; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $53, Q = 39. The trade gap implies P = $72. Winners gain $921.5, losers lose $560.5; after the transfer the winners retain $361. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(92+14+38)/2",
+        "expected": 72
+      },
+      {
+        "label": "net gain",
+        "expression": "(72-(92+14)/2)**2",
+        "expected": 361.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "921.5-560.5",
+        "expected": 361.0
+      }
+    ]
+  },
+  "P62D-ITP-L-045": {
+    "q": "A Estara report opposes opening the wool blankets market because consumers would lose. Domestic curves are P = 92 - Qd and P = 14 + Qs; Pw = $72. A proposed lump-sum compensation plan fully covers that loss and uses $18 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $343 ahead while restoring losers",
+      "National welfare rises $361 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $560.5 of total surplus"
+    ],
+    "feedback": "Opening trade creates $361 in aggregate gains: winner gain $921.5 less loser loss $560.5. Compensation reallocates surplus, while administration consumes $18. The remaining net gain is $343.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(72-(92+14)/2)**2",
+        "expected": 361.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "921.5-560.5-18",
+        "expected": 343.0
+      }
+    ]
+  },
+  "P62D-ITP-L-016": {
+    "q": "Faron has P = 86 - Qd and P = 22 + Qs. Free trade creates 44 imports, but the price is unreported. If that world price then falls by $4, which new outcome follows?",
+    "options": [
+      "Price $28; 52 imports; domestic consumers gain",
+      "Price $28; 44 imports; domestic consumers gain",
+      "Price $32; 44 imports; the world price cannot change",
+      "Price $28; 52 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $32: the signed Qs/Qd gap must equal 44. At $28, Qd = 58 and Qs = 6; the new gap is 52 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(86+22-44)/2",
+        "expected": 32
+      },
+      {
+        "label": "new price",
+        "expression": "32-4",
+        "expected": 28
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(86+22-2*28)",
+        "expected": 52
+      }
+    ]
+  },
+  "P62D-ITP-L-017": {
+    "q": "Faron's ceramic tiles market has P = 86 - Qd and P = 22 + Qs. Free trade produces 44 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$484; compensation changes distribution without removing the trade gain",
+      "$946; compensation does not reduce what the winners retain",
+      "$462; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $54, Q = 32. The trade gap implies P = $32. Winners gain $946, losers lose $462; after the transfer the winners retain $484. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(86+22-44)/2",
+        "expected": 32
+      },
+      {
+        "label": "net gain",
+        "expression": "(32-(86+22)/2)**2",
+        "expected": 484.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "946.0-462.0",
+        "expected": 484.0
+      }
+    ]
+  },
+  "P62D-ITP-L-018": {
+    "q": "A Faron report opposes opening the ceramic tiles market because producers would lose. Domestic curves are P = 86 - Qd and P = 22 + Qs; Pw = $32. A proposed lump-sum compensation plan fully covers that loss and uses $20 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $464 ahead while restoring losers",
+      "National welfare rises $484 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $462 of total surplus"
+    ],
+    "feedback": "Opening trade creates $484 in aggregate gains: winner gain $946 less loser loss $462. Compensation reallocates surplus, while administration consumes $20. The remaining net gain is $464.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(32-(86+22)/2)**2",
+        "expected": 484.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "946.0-462.0-20",
+        "expected": 464.0
+      }
+    ]
+  },
+  "P62D-ITP-L-046": {
+    "q": "Faron has P = 86 - Qd and P = 22 + Qs. Free trade creates 32 exports, but the price is unreported. If that world price then rises by $4, which new outcome follows?",
+    "options": [
+      "Price $74; 40 exports; domestic consumers lose",
+      "Price $74; 32 exports; domestic consumers lose",
+      "Price $70; 32 exports; the world price cannot change",
+      "Price $74; 40 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $70: the signed Qs/Qd gap must equal 32. At $74, Qd = 12 and Qs = 52; the new gap is 40 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(86+22+32)/2",
+        "expected": 70
+      },
+      {
+        "label": "new price",
+        "expression": "70+4",
+        "expected": 74
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(86+22-2*74)",
+        "expected": 40
+      }
+    ]
+  },
+  "P62D-ITP-L-047": {
+    "q": "Faron's ceramic tiles market has P = 86 - Qd and P = 22 + Qs. Free trade produces 32 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$256; compensation changes distribution without removing the trade gain",
+      "$640; compensation does not reduce what the winners retain",
+      "$384; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $54, Q = 32. The trade gap implies P = $70. Winners gain $640, losers lose $384; after the transfer the winners retain $256. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(86+22+32)/2",
+        "expected": 70
+      },
+      {
+        "label": "net gain",
+        "expression": "(70-(86+22)/2)**2",
+        "expected": 256.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "640.0-384.0",
+        "expected": 256.0
+      }
+    ]
+  },
+  "P62D-ITP-L-048": {
+    "q": "A Faron report opposes opening the ceramic tiles market because consumers would lose. Domestic curves are P = 86 - Qd and P = 22 + Qs; Pw = $70. A proposed lump-sum compensation plan fully covers that loss and uses $20 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $236 ahead while restoring losers",
+      "National welfare rises $256 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $384 of total surplus"
+    ],
+    "feedback": "Opening trade creates $256 in aggregate gains: winner gain $640 less loser loss $384. Compensation reallocates surplus, while administration consumes $20. The remaining net gain is $236.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(70-(86+22)/2)**2",
+        "expected": 256.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "640.0-384.0-20",
+        "expected": 236.0
+      }
+    ]
+  },
+  "P62D-ITP-L-019": {
+    "q": "Galena has P = 98 - Qd and P = 18 + Qs. Free trade creates 48 imports, but the price is unreported. If that world price then falls by $2, which new outcome follows?",
+    "options": [
+      "Price $32; 52 imports; domestic consumers gain",
+      "Price $32; 48 imports; domestic consumers gain",
+      "Price $34; 48 imports; the world price cannot change",
+      "Price $32; 52 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $34: the signed Qs/Qd gap must equal 48. At $32, Qd = 66 and Qs = 14; the new gap is 52 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(98+18-48)/2",
+        "expected": 34
+      },
+      {
+        "label": "new price",
+        "expression": "34-2",
+        "expected": 32
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(98+18-2*32)",
+        "expected": 52
+      }
+    ]
+  },
+  "P62D-ITP-L-020": {
+    "q": "Galena's medical gloves market has P = 98 - Qd and P = 18 + Qs. Free trade produces 48 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$576; compensation changes distribution without removing the trade gain",
+      "$1,248; compensation does not reduce what the winners retain",
+      "$672; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $58, Q = 40. The trade gap implies P = $34. Winners gain $1,248, losers lose $672; after the transfer the winners retain $576. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(98+18-48)/2",
+        "expected": 34
+      },
+      {
+        "label": "net gain",
+        "expression": "(34-(98+18)/2)**2",
+        "expected": 576.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "1248.0-672.0",
+        "expected": 576.0
+      }
+    ]
+  },
+  "P62D-ITP-L-021": {
+    "q": "A Galena report opposes opening the medical gloves market because producers would lose. Domestic curves are P = 98 - Qd and P = 18 + Qs; Pw = $34. A proposed lump-sum compensation plan fully covers that loss and uses $22 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $554 ahead while restoring losers",
+      "National welfare rises $576 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $672 of total surplus"
+    ],
+    "feedback": "Opening trade creates $576 in aggregate gains: winner gain $1,248 less loser loss $672. Compensation reallocates surplus, while administration consumes $22. The remaining net gain is $554.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(34-(98+18)/2)**2",
+        "expected": 576.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "1248.0-672.0-22",
+        "expected": 554.0
+      }
+    ]
+  },
+  "P62D-ITP-L-049": {
+    "q": "Galena has P = 98 - Qd and P = 18 + Qs. Free trade creates 48 exports, but the price is unreported. If that world price then rises by $2, which new outcome follows?",
+    "options": [
+      "Price $84; 52 exports; domestic consumers lose",
+      "Price $84; 48 exports; domestic consumers lose",
+      "Price $82; 48 exports; the world price cannot change",
+      "Price $84; 52 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $82: the signed Qs/Qd gap must equal 48. At $84, Qd = 14 and Qs = 66; the new gap is 52 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(98+18+48)/2",
+        "expected": 82
+      },
+      {
+        "label": "new price",
+        "expression": "82+2",
+        "expected": 84
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(98+18-2*84)",
+        "expected": 52
+      }
+    ]
+  },
+  "P62D-ITP-L-050": {
+    "q": "Galena's medical gloves market has P = 98 - Qd and P = 18 + Qs. Free trade produces 48 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$576; compensation changes distribution without removing the trade gain",
+      "$1,248; compensation does not reduce what the winners retain",
+      "$672; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $58, Q = 40. The trade gap implies P = $82. Winners gain $1,248, losers lose $672; after the transfer the winners retain $576. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(98+18+48)/2",
+        "expected": 82
+      },
+      {
+        "label": "net gain",
+        "expression": "(82-(98+18)/2)**2",
+        "expected": 576.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "1248.0-672.0",
+        "expected": 576.0
+      }
+    ]
+  },
+  "P62D-ITP-L-051": {
+    "q": "A Galena report opposes opening the medical gloves market because consumers would lose. Domestic curves are P = 98 - Qd and P = 18 + Qs; Pw = $82. A proposed lump-sum compensation plan fully covers that loss and uses $22 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $554 ahead while restoring losers",
+      "National welfare rises $576 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $672 of total surplus"
+    ],
+    "feedback": "Opening trade creates $576 in aggregate gains: winner gain $1,248 less loser loss $672. Compensation reallocates surplus, while administration consumes $22. The remaining net gain is $554.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(82-(98+18)/2)**2",
+        "expected": 576.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "1248.0-672.0-22",
+        "expected": 554.0
+      }
+    ]
+  },
+  "P62D-ITP-L-022": {
+    "q": "Haven has P = 90 - Qd and P = 30 + Qs. Free trade creates 32 imports, but the price is unreported. If that world price then falls by $3, which new outcome follows?",
+    "options": [
+      "Price $41; 38 imports; domestic consumers gain",
+      "Price $41; 32 imports; domestic consumers gain",
+      "Price $44; 32 imports; the world price cannot change",
+      "Price $41; 38 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $44: the signed Qs/Qd gap must equal 32. At $41, Qd = 49 and Qs = 11; the new gap is 38 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(90+30-32)/2",
+        "expected": 44
+      },
+      {
+        "label": "new price",
+        "expression": "44-3",
+        "expected": 41
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(90+30-2*41)",
+        "expected": 38
+      }
+    ]
+  },
+  "P62D-ITP-L-023": {
+    "q": "Haven's garden tools market has P = 90 - Qd and P = 30 + Qs. Free trade produces 32 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$256; compensation changes distribution without removing the trade gain",
+      "$608; compensation does not reduce what the winners retain",
+      "$352; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $60, Q = 30. The trade gap implies P = $44. Winners gain $608, losers lose $352; after the transfer the winners retain $256. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(90+30-32)/2",
+        "expected": 44
+      },
+      {
+        "label": "net gain",
+        "expression": "(44-(90+30)/2)**2",
+        "expected": 256.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "608.0-352.0",
+        "expected": 256.0
+      }
+    ]
+  },
+  "P62D-ITP-L-024": {
+    "q": "A Haven report opposes opening the garden tools market because producers would lose. Domestic curves are P = 90 - Qd and P = 30 + Qs; Pw = $44. A proposed lump-sum compensation plan fully covers that loss and uses $24 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $232 ahead while restoring losers",
+      "National welfare rises $256 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $352 of total surplus"
+    ],
+    "feedback": "Opening trade creates $256 in aggregate gains: winner gain $608 less loser loss $352. Compensation reallocates surplus, while administration consumes $24. The remaining net gain is $232.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(44-(90+30)/2)**2",
+        "expected": 256.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "608.0-352.0-24",
+        "expected": 232.0
+      }
+    ]
+  },
+  "P62D-ITP-L-052": {
+    "q": "Haven has P = 90 - Qd and P = 30 + Qs. Free trade creates 32 exports, but the price is unreported. If that world price then rises by $3, which new outcome follows?",
+    "options": [
+      "Price $79; 38 exports; domestic consumers lose",
+      "Price $79; 32 exports; domestic consumers lose",
+      "Price $76; 32 exports; the world price cannot change",
+      "Price $79; 38 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $76: the signed Qs/Qd gap must equal 32. At $79, Qd = 11 and Qs = 49; the new gap is 38 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(90+30+32)/2",
+        "expected": 76
+      },
+      {
+        "label": "new price",
+        "expression": "76+3",
+        "expected": 79
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(90+30-2*79)",
+        "expected": 38
+      }
+    ]
+  },
+  "P62D-ITP-L-053": {
+    "q": "Haven's garden tools market has P = 90 - Qd and P = 30 + Qs. Free trade produces 32 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$256; compensation changes distribution without removing the trade gain",
+      "$608; compensation does not reduce what the winners retain",
+      "$352; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $60, Q = 30. The trade gap implies P = $76. Winners gain $608, losers lose $352; after the transfer the winners retain $256. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(90+30+32)/2",
+        "expected": 76
+      },
+      {
+        "label": "net gain",
+        "expression": "(76-(90+30)/2)**2",
+        "expected": 256.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "608.0-352.0",
+        "expected": 256.0
+      }
+    ]
+  },
+  "P62D-ITP-L-054": {
+    "q": "A Haven report opposes opening the garden tools market because consumers would lose. Domestic curves are P = 90 - Qd and P = 30 + Qs; Pw = $76. A proposed lump-sum compensation plan fully covers that loss and uses $24 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $232 ahead while restoring losers",
+      "National welfare rises $256 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $352 of total surplus"
+    ],
+    "feedback": "Opening trade creates $256 in aggregate gains: winner gain $608 less loser loss $352. Compensation reallocates surplus, while administration consumes $24. The remaining net gain is $232.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(76-(90+30)/2)**2",
+        "expected": 256.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "608.0-352.0-24",
+        "expected": 232.0
+      }
+    ]
+  },
+  "P62D-ITP-L-025": {
+    "q": "Ilyria has P = 78 - Qd and P = 16 + Qs. Free trade creates 42 imports, but the price is unreported. If that world price then falls by $4, which new outcome follows?",
+    "options": [
+      "Price $22; 50 imports; domestic consumers gain",
+      "Price $22; 42 imports; domestic consumers gain",
+      "Price $26; 42 imports; the world price cannot change",
+      "Price $22; 50 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $26: the signed Qs/Qd gap must equal 42. At $22, Qd = 56 and Qs = 6; the new gap is 50 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(78+16-42)/2",
+        "expected": 26
+      },
+      {
+        "label": "new price",
+        "expression": "26-4",
+        "expected": 22
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(78+16-2*22)",
+        "expected": 50
+      }
+    ]
+  },
+  "P62D-ITP-L-026": {
+    "q": "Ilyria's paper rolls market has P = 78 - Qd and P = 16 + Qs. Free trade produces 42 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$441; compensation changes distribution without removing the trade gain",
+      "$871.5; compensation does not reduce what the winners retain",
+      "$430.5; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $47, Q = 31. The trade gap implies P = $26. Winners gain $871.5, losers lose $430.5; after the transfer the winners retain $441. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(78+16-42)/2",
+        "expected": 26
+      },
+      {
+        "label": "net gain",
+        "expression": "(26-(78+16)/2)**2",
+        "expected": 441.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "871.5-430.5",
+        "expected": 441.0
+      }
+    ]
+  },
+  "P62D-ITP-L-027": {
+    "q": "A Ilyria report opposes opening the paper rolls market because producers would lose. Domestic curves are P = 78 - Qd and P = 16 + Qs; Pw = $26. A proposed lump-sum compensation plan fully covers that loss and uses $26 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $415 ahead while restoring losers",
+      "National welfare rises $441 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $430.5 of total surplus"
+    ],
+    "feedback": "Opening trade creates $441 in aggregate gains: winner gain $871.5 less loser loss $430.5. Compensation reallocates surplus, while administration consumes $26. The remaining net gain is $415.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(26-(78+16)/2)**2",
+        "expected": 441.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "871.5-430.5-26",
+        "expected": 415.0
+      }
+    ]
+  },
+  "P62D-ITP-L-055": {
+    "q": "Ilyria has P = 78 - Qd and P = 16 + Qs. Free trade creates 38 exports, but the price is unreported. If that world price then rises by $4, which new outcome follows?",
+    "options": [
+      "Price $70; 46 exports; domestic consumers lose",
+      "Price $70; 38 exports; domestic consumers lose",
+      "Price $66; 38 exports; the world price cannot change",
+      "Price $70; 46 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $66: the signed Qs/Qd gap must equal 38. At $70, Qd = 8 and Qs = 54; the new gap is 46 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(78+16+38)/2",
+        "expected": 66
+      },
+      {
+        "label": "new price",
+        "expression": "66+4",
+        "expected": 70
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(78+16-2*70)",
+        "expected": 46
+      }
+    ]
+  },
+  "P62D-ITP-L-056": {
+    "q": "Ilyria's paper rolls market has P = 78 - Qd and P = 16 + Qs. Free trade produces 38 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$361; compensation changes distribution without removing the trade gain",
+      "$769.5; compensation does not reduce what the winners retain",
+      "$408.5; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $47, Q = 31. The trade gap implies P = $66. Winners gain $769.5, losers lose $408.5; after the transfer the winners retain $361. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(78+16+38)/2",
+        "expected": 66
+      },
+      {
+        "label": "net gain",
+        "expression": "(66-(78+16)/2)**2",
+        "expected": 361.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "769.5-408.5",
+        "expected": 361.0
+      }
+    ]
+  },
+  "P62D-ITP-L-057": {
+    "q": "A Ilyria report opposes opening the paper rolls market because consumers would lose. Domestic curves are P = 78 - Qd and P = 16 + Qs; Pw = $66. A proposed lump-sum compensation plan fully covers that loss and uses $26 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $335 ahead while restoring losers",
+      "National welfare rises $361 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $408.5 of total surplus"
+    ],
+    "feedback": "Opening trade creates $361 in aggregate gains: winner gain $769.5 less loser loss $408.5. Compensation reallocates surplus, while administration consumes $26. The remaining net gain is $335.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(66-(78+16)/2)**2",
+        "expected": 361.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "769.5-408.5-26",
+        "expected": 335.0
+      }
+    ]
+  },
+  "P62D-ITP-L-028": {
+    "q": "Juno has P = 96 - Qd and P = 28 + Qs. Free trade creates 48 imports, but the price is unreported. If that world price then falls by $2, which new outcome follows?",
+    "options": [
+      "Price $36; 52 imports; domestic consumers gain",
+      "Price $36; 48 imports; domestic consumers gain",
+      "Price $38; 48 imports; the world price cannot change",
+      "Price $36; 52 exports; domestic consumers lose"
+    ],
+    "feedback": "The initial price is $38: the signed Qs/Qd gap must equal 48. At $36, Qd = 60 and Qs = 8; the new gap is 52 imports. Consumers pay less and gain surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(96+28-48)/2",
+        "expected": 38
+      },
+      {
+        "label": "new price",
+        "expression": "38-2",
+        "expected": 36
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(96+28-2*36)",
+        "expected": 52
+      }
+    ]
+  },
+  "P62D-ITP-L-029": {
+    "q": "Juno's olive oil market has P = 96 - Qd and P = 28 + Qs. Free trade produces 48 imports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$576; compensation changes distribution without removing the trade gain",
+      "$1,104; compensation does not reduce what the winners retain",
+      "$528; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $62, Q = 34. The trade gap implies P = $38. Winners gain $1,104, losers lose $528; after the transfer the winners retain $576. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(96+28-48)/2",
+        "expected": 38
+      },
+      {
+        "label": "net gain",
+        "expression": "(38-(96+28)/2)**2",
+        "expected": 576.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "1104.0-528.0",
+        "expected": 576.0
+      }
+    ]
+  },
+  "P62D-ITP-L-030": {
+    "q": "A Juno report opposes opening the olive oil market because producers would lose. Domestic curves are P = 96 - Qd and P = 28 + Qs; Pw = $38. A proposed lump-sum compensation plan fully covers that loss and uses $28 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $548 ahead while restoring losers",
+      "National welfare rises $576 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $528 of total surplus"
+    ],
+    "feedback": "Opening trade creates $576 in aggregate gains: winner gain $1,104 less loser loss $528. Compensation reallocates surplus, while administration consumes $28. The remaining net gain is $548.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(38-(96+28)/2)**2",
+        "expected": 576.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "1104.0-528.0-28",
+        "expected": 548.0
+      }
+    ]
+  },
+  "P62D-ITP-L-058": {
+    "q": "Use the Juno olive oil graph. If the world price rises by $2 from the displayed line and both straight curves remain unchanged, which new trade outcome follows?",
+    "options": [
+      "Price $84; 44 exports; domestic consumers lose",
+      "Price $84; 40 exports; domestic consumers lose",
+      "Price $82; 40 exports; the world price cannot change",
+      "Price $84; 44 imports; domestic consumers gain"
+    ],
+    "feedback": "The initial price is $82: the signed Qs/Qd gap must equal 40. At $84, Qd = 12 and Qs = 56; the new gap is 44 exports. Consumers pay more and lose surplus.",
+    "reason": "C: reconstruct an unreported price, apply a second price change, and interpret the resulting trade direction.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(96+28+40)/2",
+        "expected": 82
+      },
+      {
+        "label": "new price",
+        "expression": "82+2",
+        "expected": 84
+      },
+      {
+        "label": "new gap",
+        "expression": "abs(96+28-2*84)",
+        "expected": 44
+      }
+    ]
+  },
+  "P62D-ITP-L-059": {
+    "q": "Juno's olive oil market has P = 96 - Qd and P = 28 + Qs. Free trade produces 40 exports. If a costless lump-sum transfer fully restores the losing domestic group's autarky surplus, what gain remains with the winners?",
+    "options": [
+      "$400; compensation changes distribution without removing the trade gain",
+      "$880; compensation does not reduce what the winners retain",
+      "$480; the transfer is the gain created by trade",
+      "$0; restoring the losers necessarily exhausts the national gain"
+    ],
+    "feedback": "Autarky has P = $62, Q = 34. The trade gap implies P = $82. Winners gain $880, losers lose $480; after the transfer the winners retain $400. Actual compensation is assumed here, not automatic.",
+    "reason": "C: replace given-surplus subtraction with market reconstruction and compensated welfare.",
+    "proof": [
+      {
+        "label": "trade price",
+        "expression": "(96+28+40)/2",
+        "expected": 82
+      },
+      {
+        "label": "net gain",
+        "expression": "(82-(96+28)/2)**2",
+        "expected": 400.0
+      },
+      {
+        "label": "remaining after compensation",
+        "expression": "880.0-480.0",
+        "expected": 400.0
+      }
+    ]
+  },
+  "P62D-ITP-L-060": {
+    "q": "A Juno report opposes opening the olive oil market because consumers would lose. Domestic curves are P = 96 - Qd and P = 28 + Qs; Pw = $82. A proposed lump-sum compensation plan fully covers that loss and uses $28 of real administrative resources. Which assessment follows?",
+    "options": [
+      "The plan can leave winners $372 ahead while restoring losers",
+      "National welfare rises $400 because administrative resources are only transfers",
+      "Compensation must make winners worse off whenever any group loses",
+      "The transfer itself destroys $480 of total surplus"
+    ],
+    "feedback": "Opening trade creates $400 in aggregate gains: winner gain $880 less loser loss $480. Compensation reallocates surplus, while administration consumes $28. The remaining net gain is $372.",
+    "reason": "B/C: replace an answer that supplied unstated welfare facts with an independently solvable policy claim and real-cost distinction.",
+    "proof": [
+      {
+        "label": "trade gain",
+        "expression": "(82-(96+28)/2)**2",
+        "expected": 400.0
+      },
+      {
+        "label": "net after real costs",
+        "expression": "880.0-480.0-28",
+        "expected": 372.0
+      }
+    ]
+  },
+  "P62D-ITP-L-061": {
+    "q": "Arden has P = 80 - Qd and P = 20 + Qs, with Pw = $30. A tariff is chosen to leave 24 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $8; revenue $192; deadweight loss $64",
+      "Tariff $16; revenue $384; deadweight loss $256",
+      "Tariff $8; revenue $336; deadweight loss $64",
+      "Tariff $8; revenue $192; deadweight loss $256"
+    ],
+    "feedback": "Imports equal 100 - 2P, so the target implies P = $38 and tariff $8. Revenue is $8 × 24 = $192. Production expands 8 and consumption contracts 8; their two triangles sum to $64.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(80+20-24)/2",
+        "expected": 38
+      },
+      {
+        "label": "revenue",
+        "expression": "(38-30)*24",
+        "expected": 192
+      },
+      {
+        "label": "distortions",
+        "expression": "(38-30)*(8+8)/2",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-L-062": {
+    "q": "In Arden, a small-country tariff cuts imports from 40 to 24. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $368 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $8; $192 is government revenue and $112 a producer transfer, leaving $64 destroyed",
+      "The tariff is $8; all $368 is destroyed because consumers pay it",
+      "The tariff is $16; revenue uses the original 40 imports",
+      "The tariff is $8; the $192 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 16 reflects two quantity responses, so the tariff is $8. Receipts are $8 × 24 = $192; each distortion is $32. Consumer loss less revenue and the producer transfer leaves $64.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(40-24)/2",
+        "expected": 8
+      },
+      {
+        "label": "revenue",
+        "expression": "8*24",
+        "expected": 192
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "368.0-192-112.0",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-L-063": {
+    "q": "Bellora has P = 94 - Qd and P = 26 + Qs, with Pw = $42. A tariff is chosen to leave 16 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $10; revenue $160; deadweight loss $100",
+      "Tariff $20; revenue $320; deadweight loss $400",
+      "Tariff $10; revenue $420; deadweight loss $100",
+      "Tariff $10; revenue $160; deadweight loss $260"
+    ],
+    "feedback": "Imports equal 120 - 2P, so the target implies P = $52 and tariff $10. Revenue is $10 × 16 = $160. Production expands 10 and consumption contracts 10; their two triangles sum to $100.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(94+26-16)/2",
+        "expected": 52
+      },
+      {
+        "label": "revenue",
+        "expression": "(52-42)*16",
+        "expected": 160
+      },
+      {
+        "label": "distortions",
+        "expression": "(52-42)*(10+10)/2",
+        "expected": 100
+      }
+    ]
+  },
+  "P62D-ITP-L-064": {
+    "q": "In Bellora, a small-country tariff cuts imports from 36 to 16. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $470 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $10; $160 is government revenue and $210 a producer transfer, leaving $100 destroyed",
+      "The tariff is $10; all $470 is destroyed because consumers pay it",
+      "The tariff is $20; revenue uses the original 36 imports",
+      "The tariff is $10; the $160 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 20 reflects two quantity responses, so the tariff is $10. Receipts are $10 × 16 = $160; each distortion is $50. Consumer loss less revenue and the producer transfer leaves $100.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(36-16)/2",
+        "expected": 10
+      },
+      {
+        "label": "revenue",
+        "expression": "10*16",
+        "expected": 160
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "470.0-160-210.0",
+        "expected": 100
+      }
+    ]
+  },
+  "P62D-ITP-L-065": {
+    "q": "Caspia has P = 72 - Qd and P = 12 + Qs, with Pw = $20. A tariff is chosen to leave 28 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $8; revenue $224; deadweight loss $64",
+      "Tariff $16; revenue $448; deadweight loss $256",
+      "Tariff $8; revenue $352; deadweight loss $64",
+      "Tariff $8; revenue $224; deadweight loss $288"
+    ],
+    "feedback": "Imports equal 84 - 2P, so the target implies P = $28 and tariff $8. Revenue is $8 × 28 = $224. Production expands 8 and consumption contracts 8; their two triangles sum to $64.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(72+12-28)/2",
+        "expected": 28
+      },
+      {
+        "label": "revenue",
+        "expression": "(28-20)*28",
+        "expected": 224
+      },
+      {
+        "label": "distortions",
+        "expression": "(28-20)*(8+8)/2",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-L-066": {
+    "q": "In Caspia, a small-country tariff cuts imports from 44 to 28. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $384 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $8; $224 is government revenue and $96 a producer transfer, leaving $64 destroyed",
+      "The tariff is $8; all $384 is destroyed because consumers pay it",
+      "The tariff is $16; revenue uses the original 44 imports",
+      "The tariff is $8; the $224 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 16 reflects two quantity responses, so the tariff is $8. Receipts are $8 × 28 = $224; each distortion is $32. Consumer loss less revenue and the producer transfer leaves $64.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(44-28)/2",
+        "expected": 8
+      },
+      {
+        "label": "revenue",
+        "expression": "8*28",
+        "expected": 224
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "384.0-224-96.0",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-L-067": {
+    "q": "Demer has P = 104 - Qd and P = 24 + Qs, with Pw = $40. A tariff is chosen to leave 24 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $12; revenue $288; deadweight loss $144",
+      "Tariff $24; revenue $576; deadweight loss $576",
+      "Tariff $12; revenue $624; deadweight loss $144",
+      "Tariff $12; revenue $288; deadweight loss $432"
+    ],
+    "feedback": "Imports equal 128 - 2P, so the target implies P = $52 and tariff $12. Revenue is $12 × 24 = $288. Production expands 12 and consumption contracts 12; their two triangles sum to $144.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(104+24-24)/2",
+        "expected": 52
+      },
+      {
+        "label": "revenue",
+        "expression": "(52-40)*24",
+        "expected": 288
+      },
+      {
+        "label": "distortions",
+        "expression": "(52-40)*(12+12)/2",
+        "expected": 144
+      }
+    ]
+  },
+  "P62D-ITP-L-068": {
+    "q": "In Demer, a small-country tariff cuts imports from 48 to 24. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $696 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $12; $288 is government revenue and $264 a producer transfer, leaving $144 destroyed",
+      "The tariff is $12; all $696 is destroyed because consumers pay it",
+      "The tariff is $24; revenue uses the original 48 imports",
+      "The tariff is $12; the $288 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 24 reflects two quantity responses, so the tariff is $12. Receipts are $12 × 24 = $288; each distortion is $72. Consumer loss less revenue and the producer transfer leaves $144.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(48-24)/2",
+        "expected": 12
+      },
+      {
+        "label": "revenue",
+        "expression": "12*24",
+        "expected": 288
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "696.0-288-264.0",
+        "expected": 144
+      }
+    ]
+  },
+  "P62D-ITP-L-069": {
+    "q": "Estara has P = 92 - Qd and P = 14 + Qs, with Pw = $30. A tariff is chosen to leave 30 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $8; revenue $240; deadweight loss $64",
+      "Tariff $16; revenue $480; deadweight loss $256",
+      "Tariff $8; revenue $432; deadweight loss $64",
+      "Tariff $8; revenue $240; deadweight loss $304"
+    ],
+    "feedback": "Imports equal 106 - 2P, so the target implies P = $38 and tariff $8. Revenue is $8 × 30 = $240. Production expands 8 and consumption contracts 8; their two triangles sum to $64.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(92+14-30)/2",
+        "expected": 38
+      },
+      {
+        "label": "revenue",
+        "expression": "(38-30)*30",
+        "expected": 240
+      },
+      {
+        "label": "distortions",
+        "expression": "(38-30)*(8+8)/2",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-L-070": {
+    "q": "In Estara, a small-country tariff cuts imports from 46 to 30. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $464 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $8; $240 is government revenue and $160 a producer transfer, leaving $64 destroyed",
+      "The tariff is $8; all $464 is destroyed because consumers pay it",
+      "The tariff is $16; revenue uses the original 46 imports",
+      "The tariff is $8; the $240 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 16 reflects two quantity responses, so the tariff is $8. Receipts are $8 × 30 = $240; each distortion is $32. Consumer loss less revenue and the producer transfer leaves $64.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(46-30)/2",
+        "expected": 8
+      },
+      {
+        "label": "revenue",
+        "expression": "8*30",
+        "expected": 240
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "464.0-240-160.0",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-L-071": {
+    "q": "Faron has P = 86 - Qd and P = 22 + Qs, with Pw = $32. A tariff is chosen to leave 24 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $10; revenue $240; deadweight loss $100",
+      "Tariff $20; revenue $480; deadweight loss $400",
+      "Tariff $10; revenue $440; deadweight loss $100",
+      "Tariff $10; revenue $240; deadweight loss $340"
+    ],
+    "feedback": "Imports equal 108 - 2P, so the target implies P = $42 and tariff $10. Revenue is $10 × 24 = $240. Production expands 10 and consumption contracts 10; their two triangles sum to $100.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(86+22-24)/2",
+        "expected": 42
+      },
+      {
+        "label": "revenue",
+        "expression": "(42-32)*24",
+        "expected": 240
+      },
+      {
+        "label": "distortions",
+        "expression": "(42-32)*(10+10)/2",
+        "expected": 100
+      }
+    ]
+  },
+  "P62D-ITP-L-072": {
+    "q": "In Faron, a small-country tariff cuts imports from 44 to 24. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $490 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $10; $240 is government revenue and $150 a producer transfer, leaving $100 destroyed",
+      "The tariff is $10; all $490 is destroyed because consumers pay it",
+      "The tariff is $20; revenue uses the original 44 imports",
+      "The tariff is $10; the $240 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 20 reflects two quantity responses, so the tariff is $10. Receipts are $10 × 24 = $240; each distortion is $50. Consumer loss less revenue and the producer transfer leaves $100.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(44-24)/2",
+        "expected": 10
+      },
+      {
+        "label": "revenue",
+        "expression": "10*24",
+        "expected": 240
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "490.0-240-150.0",
+        "expected": 100
+      }
+    ]
+  },
+  "P62D-ITP-L-073": {
+    "q": "Galena has P = 98 - Qd and P = 18 + Qs, with Pw = $34. A tariff is chosen to leave 32 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $8; revenue $256; deadweight loss $64",
+      "Tariff $16; revenue $512; deadweight loss $256",
+      "Tariff $8; revenue $448; deadweight loss $64",
+      "Tariff $8; revenue $256; deadweight loss $320"
+    ],
+    "feedback": "Imports equal 116 - 2P, so the target implies P = $42 and tariff $8. Revenue is $8 × 32 = $256. Production expands 8 and consumption contracts 8; their two triangles sum to $64.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(98+18-32)/2",
+        "expected": 42
+      },
+      {
+        "label": "revenue",
+        "expression": "(42-34)*32",
+        "expected": 256
+      },
+      {
+        "label": "distortions",
+        "expression": "(42-34)*(8+8)/2",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-L-074": {
+    "q": "In Galena, a small-country tariff cuts imports from 48 to 32. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $480 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $8; $256 is government revenue and $160 a producer transfer, leaving $64 destroyed",
+      "The tariff is $8; all $480 is destroyed because consumers pay it",
+      "The tariff is $16; revenue uses the original 48 imports",
+      "The tariff is $8; the $256 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 16 reflects two quantity responses, so the tariff is $8. Receipts are $8 × 32 = $256; each distortion is $32. Consumer loss less revenue and the producer transfer leaves $64.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(48-32)/2",
+        "expected": 8
+      },
+      {
+        "label": "revenue",
+        "expression": "8*32",
+        "expected": 256
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "480.0-256-160.0",
+        "expected": 64
+      }
+    ]
+  },
+  "P62D-ITP-L-075": {
+    "q": "Haven has P = 90 - Qd and P = 30 + Qs, with Pw = $44. A tariff is chosen to leave 20 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $6; revenue $120; deadweight loss $36",
+      "Tariff $12; revenue $240; deadweight loss $144",
+      "Tariff $6; revenue $240; deadweight loss $36",
+      "Tariff $6; revenue $120; deadweight loss $156"
+    ],
+    "feedback": "Imports equal 120 - 2P, so the target implies P = $50 and tariff $6. Revenue is $6 × 20 = $120. Production expands 6 and consumption contracts 6; their two triangles sum to $36.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(90+30-20)/2",
+        "expected": 50
+      },
+      {
+        "label": "revenue",
+        "expression": "(50-44)*20",
+        "expected": 120
+      },
+      {
+        "label": "distortions",
+        "expression": "(50-44)*(6+6)/2",
+        "expected": 36
+      }
+    ]
+  },
+  "P62D-ITP-L-076": {
+    "q": "In Haven, a small-country tariff cuts imports from 32 to 20. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $258 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $6; $120 is government revenue and $102 a producer transfer, leaving $36 destroyed",
+      "The tariff is $6; all $258 is destroyed because consumers pay it",
+      "The tariff is $12; revenue uses the original 32 imports",
+      "The tariff is $6; the $120 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 12 reflects two quantity responses, so the tariff is $6. Receipts are $6 × 20 = $120; each distortion is $18. Consumer loss less revenue and the producer transfer leaves $36.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(32-20)/2",
+        "expected": 6
+      },
+      {
+        "label": "revenue",
+        "expression": "6*20",
+        "expected": 120
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "258.0-120-102.0",
+        "expected": 36
+      }
+    ]
+  },
+  "P62D-ITP-L-077": {
+    "q": "Ilyria has P = 78 - Qd and P = 16 + Qs, with Pw = $26. A tariff is chosen to leave 28 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $7; revenue $196; deadweight loss $49",
+      "Tariff $14; revenue $392; deadweight loss $196",
+      "Tariff $7; revenue $315; deadweight loss $49",
+      "Tariff $7; revenue $196; deadweight loss $245"
+    ],
+    "feedback": "Imports equal 94 - 2P, so the target implies P = $33 and tariff $7. Revenue is $7 × 28 = $196. Production expands 7 and consumption contracts 7; their two triangles sum to $49.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(78+16-28)/2",
+        "expected": 33
+      },
+      {
+        "label": "revenue",
+        "expression": "(33-26)*28",
+        "expected": 196
+      },
+      {
+        "label": "distortions",
+        "expression": "(33-26)*(7+7)/2",
+        "expected": 49
+      }
+    ]
+  },
+  "P62D-ITP-L-078": {
+    "q": "In Ilyria, a small-country tariff cuts imports from 42 to 28. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $339.5 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $7; $196 is government revenue and $94.5 a producer transfer, leaving $49 destroyed",
+      "The tariff is $7; all $339.5 is destroyed because consumers pay it",
+      "The tariff is $14; revenue uses the original 42 imports",
+      "The tariff is $7; the $196 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 14 reflects two quantity responses, so the tariff is $7. Receipts are $7 × 28 = $196; each distortion is $24.5. Consumer loss less revenue and the producer transfer leaves $49.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(42-28)/2",
+        "expected": 7
+      },
+      {
+        "label": "revenue",
+        "expression": "7*28",
+        "expected": 196
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "339.5-196-94.5",
+        "expected": 49
+      }
+    ]
+  },
+  "P62D-ITP-L-079": {
+    "q": "Juno has P = 96 - Qd and P = 28 + Qs, with Pw = $38. A tariff is chosen to leave 24 imports. Which ledger follows if the world price is unchanged?",
+    "options": [
+      "Tariff $12; revenue $288; deadweight loss $144",
+      "Tariff $24; revenue $576; deadweight loss $576",
+      "Tariff $12; revenue $552; deadweight loss $144",
+      "Tariff $12; revenue $288; deadweight loss $432"
+    ],
+    "feedback": "Imports equal 124 - 2P, so the target implies P = $50 and tariff $12. Revenue is $12 × 24 = $288. Production expands 12 and consumption contracts 12; their two triangles sum to $144.",
+    "reason": "B/C: infer the tariff from a quantity target, then distinguish revenue from distortions.",
+    "proof": [
+      {
+        "label": "policy price",
+        "expression": "(96+28-24)/2",
+        "expected": 50
+      },
+      {
+        "label": "revenue",
+        "expression": "(50-38)*24",
+        "expected": 288
+      },
+      {
+        "label": "distortions",
+        "expression": "(50-38)*(12+12)/2",
+        "expected": 144
+      }
+    ]
+  },
+  "P62D-ITP-L-080": {
+    "q": "In Juno, a small-country tariff cuts imports from 48 to 24. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $624 of consumer loss deadweight loss. What is the correct correction?",
+    "options": [
+      "The tariff is $12; $288 is government revenue and $192 a producer transfer, leaving $144 destroyed",
+      "The tariff is $12; all $624 is destroyed because consumers pay it",
+      "The tariff is $24; revenue uses the original 48 imports",
+      "The tariff is $12; the $288 revenue is the entire net welfare loss"
+    ],
+    "feedback": "The import contraction of 24 reflects two quantity responses, so the tariff is $12. Receipts are $12 × 24 = $288; each distortion is $72. Consumer loss less revenue and the producer transfer leaves $144.",
+    "reason": "C: reverse-infer the tariff and reconcile consumer loss with transfers and destruction.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "(48-24)/2",
+        "expected": 12
+      },
+      {
+        "label": "revenue",
+        "expression": "12*24",
+        "expected": 288
+      },
+      {
+        "label": "welfare reconciliation",
+        "expression": "624.0-288-192.0",
+        "expected": 144
+      }
+    ]
+  },
+  "P62D-ITP-EL-001": {
+    "q": "Import access raises consumer surplus by $640 and reduces producer surplus by $390. A proposal uses a $390 lump-sum transfer to restore producers and consumes $35 in real adjustment resources. Which result separates efficiency from distribution?",
+    "options": [
+      "$215 of net gain remains, and compensation occurs only because the proposal provides it",
+      "$250 remains because transfers and real adjustment costs are both ignored",
+      "$605 remains because the producer transfer creates additional national surplus",
+      "$175 is lost because both producer losses and compensation must be subtracted"
+    ],
+    "feedback": "The trade gain is 640 - 390 = 250. The transfer reallocates that surplus; the real resource cost reduces it to 215. Potential compensation is distinct from this stipulated actual compensation.",
+    "reason": "C: add compensation implementation and resource-cost distinction to elementary subtraction.",
+    "proof": [
+      {
+        "label": "net gain",
+        "expression": "640-390-35",
+        "expected": 215
+      }
+    ]
+  },
+  "P62D-ITP-EL-008": {
+    "q": "A small importer has Qd = 100 - P and Qs = P - 20. Pw is $30. A $10 tariff and a quota initially allow 40 imports. Demand then becomes Qd = 120 - P. With all else unchanged, which comparison is correct?",
+    "options": [
+      "Tariff: price $40 and 60 imports; quota: price $50 and 40 imports",
+      "Tariff: price $50 and 40 imports; quota: price $40 and 60 imports",
+      "Both keep price $40 and imports 40",
+      "Both raise price to $50 because a demand increase must raise the world price"
+    ],
+    "feedback": "The tariff keeps domestic price at 30 + 10 = 40, where imports are 80 - 20 = 60. Under the cap, 120 - P - (P - 20) = 40 implies P = 50.",
+    "reason": "C: require quantity and price reconstruction after demand growth.",
+    "proof": [
+      {
+        "label": "initial imports",
+        "expression": "100-40-(40-20)",
+        "expected": 40
+      },
+      {
+        "label": "tariff imports",
+        "expression": "120-40-(40-20)",
+        "expected": 60
+      },
+      {
+        "label": "quota price",
+        "expression": "(120+20-40)/2",
+        "expected": 50
+      }
+    ]
+  },
+  "P62D-ITP-EL-009": {
+    "q": "A quota allows 36 imports at $29 while Pw remains $24. Consumers lose $310 and domestic producers gain $94. Foreign exporters receive the rights free. Relative to free trade, what are the national loss and the global distortion loss, ignoring other effects?",
+    "options": [
+      "$216 national loss; $36 distortion loss",
+      "$36 national loss; $216 distortion loss",
+      "$180 for both because the rents are the only loss",
+      "$310 for both because every dollar lost by consumers disappears"
+    ],
+    "feedback": "Rents are (29 - 24) × 36 = 180. Domestic surplus falls 310 - 94 = 216. Of this, 180 is transferred abroad; the remaining 36 is destroyed surplus.",
+    "reason": "C: separate national rent outflow from global efficiency loss.",
+    "proof": [
+      {
+        "label": "rents",
+        "expression": "(29-24)*36",
+        "expected": 180
+      },
+      {
+        "label": "national loss",
+        "expression": "310-94",
+        "expected": 216
+      },
+      {
+        "label": "distortion",
+        "expression": "310-94-(29-24)*36",
+        "expected": 36
+      }
+    ]
+  },
+  "P62D-ITP-EL-010": {
+    "q": "Two quota systems have the same price and import quantity. Rents total $240. System A auctions rights competitively and spends $20 of real resources administering them; system B gives rights free to domestic importers at no resource cost. Ignoring other effects, which comparison is correct?",
+    "options": [
+      "A raises $240 for government, but national surplus is $20 lower than under B",
+      "A raises national surplus by $240 because auction receipts are new gains",
+      "B loses $240 nationally because private domestic rents leave the country",
+      "Both have identical national surplus because administrative costs are transfers"
+    ],
+    "feedback": "Both keep the $240 rent inside the country; auctioning changes its recipient. The stated real administrative cost makes A $20 worse nationally than B.",
+    "reason": "C: test the assumptions behind auction equivalence rather than merely name the institution.",
+    "proof": [
+      {
+        "label": "national difference",
+        "expression": "0-20",
+        "expected": -20
+      }
+    ]
+  },
+  "P62D-ITP-EL-012": {
+    "q": "A protected pump industry reports falling average costs. The same decline occurred in unprotected firms using a newly available machine. Which additional evidence is most needed before crediting protection to infant-industry learning?",
+    "options": [
+      "Evidence that protection generated additional learning whose future benefits exceed its costs",
+      "Evidence that protected firms still employ workers, regardless of the source of cost reductions",
+      "Evidence that import prices exceed zero, proving domestic learning is valuable",
+      "Evidence that production increased, proving the tariff caused every cost reduction"
+    ],
+    "feedback": "A common technology improvement weakens the claim that protection caused the learning. The case needs an additional benefit attributable to the policy and comparison with its costs.",
+    "reason": "C: causal evidence and cost-benefit logic for a selected infant-industry argument.",
+    "proof": []
+  },
+  "P62D-ITP-EL-016": {
+    "q": "A small economy has Qd = 78 - P and Qs = P - 18. The world price initially equals its autarky price. Demand then rises by 12 units at every price while Pw stays fixed. What happens?",
+    "options": [
+      "It imports 12 units at $48; its new autarky price would be $54",
+      "It imports 6 units at $54 because domestic autarky still sets the trading price",
+      "It exports 12 units at $48 because demand has shifted right",
+      "It has no trade because Pw equaled the old autarky price"
+    ],
+    "feedback": "Initially Pw = (78 + 18)/2 = 48. New demand is 90 - P, giving a closed-economy price of 54, but trade holds price at 48: Qd = 42 and Qs = 30.",
+    "reason": "C: infer the initial world price, update autarky, and distinguish it from the trading price.",
+    "proof": [
+      {
+        "label": "initial price",
+        "expression": "(78+18)/2",
+        "expected": 48
+      },
+      {
+        "label": "new autarky",
+        "expression": "(90+18)/2",
+        "expected": 54
+      },
+      {
+        "label": "imports",
+        "expression": "90-48-(48-18)",
+        "expected": 12
+      }
+    ]
+  },
+  "P62D-ITP-EL-024": {
+    "q": "A tariff raises price from $16 to $21. Domestic output rises from 14 to 24 units and domestic purchases fall from 74 to 59. Which revenue calculation and interpretation is correct?",
+    "options": [
+      "$175; the tariff taxes the 35 units still imported",
+      "$295; every domestic purchase pays the import tariff",
+      "$300; the original import volume remains the tax base",
+      "$120; tariff revenue is the value of all domestic production at the tariff rate"
+    ],
+    "feedback": "The tariff is $5 and the remaining import gap is 59 - 24 = 35. Revenue is $175. Neither total purchases nor pre-tariff imports is the correct tax base.",
+    "reason": "C: reconstruct both wedge and post-tariff import tax base.",
+    "proof": [
+      {
+        "label": "tariff",
+        "expression": "21-16",
+        "expected": 5
+      },
+      {
+        "label": "post imports",
+        "expression": "59-24",
+        "expected": 35
+      },
+      {
+        "label": "revenue",
+        "expression": "(21-16)*(59-24)",
+        "expected": 175
+      }
+    ]
+  },
+  "P62D-ITP-EL-025": {
+    "q": "At Pw = $18, Qd = 54 and Qs = 20. A quota is set at 34 imports, with no initial price premium. Demand then increases by 10 at every price. If Qd falls by 2 and Qs rises by 3 for each $1 price increase, what does the unchanged quota do?",
+    "options": [
+      "Price rises to $20; the initially zero-rent cap now creates $68 in rents",
+      "Price remains $18 and imports rise to 44 because the quota was initially harmless",
+      "Price rises to $23 because only the demand response matters",
+      "$34 of rents appears because rent always equals the quota quantity"
+    ],
+    "feedback": "At the old price the new import gap is 44, ten above the cap. Each $1 rise closes the gap by 5, so price rises $2. Rents are $2 × 34 = $68.",
+    "reason": "B/C: avoid ambiguous binding-at-equality language; analyze the initially zero-premium boundary under a shift.",
+    "proof": [
+      {
+        "label": "price rise",
+        "expression": "10/(2+3)",
+        "expected": 2
+      },
+      {
+        "label": "rent",
+        "expression": "2*34",
+        "expected": 68
+      }
+    ]
+  },
+  "P62D-ITP-EL-029": {
+    "q": "Demand is P = 68 - Qd and supply is P = 20 + Qs. Pw is $30. A proposed tariff is $18 per imported unit. What is the competitive domestic outcome?",
+    "options": [
+      "Price $44, no imports and no tariff revenue",
+      "Price $48, positive imports and revenue on all purchases",
+      "Price $44, but the government collects $18 on every domestic unit",
+      "Price $30, because a tariff cannot eliminate imports"
+    ],
+    "feedback": "Autarky price is (68 + 20)/2 = 44. The proposed import cost is 48, above autarky. Domestic trade clears at 44 without imports, so the treasury receives zero tariff revenue.",
+    "reason": "C: distinguish the prohibitive threshold from mechanically adding the tariff to Pw.",
+    "proof": [
+      {
+        "label": "autarky",
+        "expression": "(68+20)/2",
+        "expected": 44
+      },
+      {
+        "label": "landed price",
+        "expression": "30+18",
+        "expected": 48
+      },
+      {
+        "label": "imports at autarky",
+        "expression": "68-44-(44-20)",
+        "expected": 0
+      }
+    ]
+  },
+  "P62D-ITP-EL-030": {
+    "q": "A country imports 24 units when Pw is $20 and exports 16 when Pw is $30. Domestic supply and demand are unchanged and straight. At what world price would net trade be zero?",
+    "options": [
+      "$26, between the two observations",
+      "$25, because it must be the midpoint of the quoted prices",
+      "$24, equal to the initial imports",
+      "$30, because exports determine autarky"
+    ],
+    "feedback": "Net imports fall from +24 to -16, a 40-unit decline over $10. At 4 units per dollar, eliminating the initial 24-unit import gap requires a $6 rise, to $26.",
+    "reason": "C: infer autarky from two signed trade observations rather than name a broad interval.",
+    "proof": [
+      {
+        "label": "gap slope",
+        "expression": "(24+16)/(30-20)",
+        "expected": 4
+      },
+      {
+        "label": "zero trade price",
+        "expression": "20+24/4",
+        "expected": 26
+      }
+    ]
+  },
+  "P62D-ITP-L-081": {
+    "q": "With Qd = 110 - P, Qs = P - 10 and Pw = $30, a quota is auctioned to allow 40 imports. A $10 tariff is proposed instead. Demand then rises by 20 at every price. With competitive licensing and no administration costs, which post-shift outcome is correct?",
+    "options": [
+      "Quota: price $50 and receipts $800; tariff: price $40 and receipts $600",
+      "Both: price $40 and receipts $400",
+      "Quota: price $40 and receipts $600; tariff: price $50 and receipts $800",
+      "Both: price $50 and receipts $800"
+    ],
+    "feedback": "After the shift, Qd = 130 - P. A 40-unit cap requires 140 - 2P = 40, so P = 50 and auction rents are 20 × 40 = 800. The tariff keeps P = 40, allows 60 imports and raises 600.",
+    "reason": "C: reconstruct both initially equivalent regimes after demand changes.",
+    "proof": [
+      {
+        "label": "initial quota price",
+        "expression": "(110+10-40)/2",
+        "expected": 40
+      },
+      {
+        "label": "new quota price",
+        "expression": "(130+10-40)/2",
+        "expected": 50
+      },
+      {
+        "label": "quota receipts",
+        "expression": "(50-30)*40",
+        "expected": 800
+      },
+      {
+        "label": "tariff receipts",
+        "expression": "10*(130-40-(40-10))",
+        "expected": 600
+      }
+    ]
+  },
+  "P62D-ITP-L-082": {
+    "q": "An importing market has Qd = 96 - P, Qs = P - 16 and Pw = $28. A voluntary export restraint gives foreign firms free rights to ship 32 units. Compared with free trade, what are the importing-country welfare loss and the part transferred abroad?",
+    "options": [
+      "$528 lost nationally, including $384 in foreign rents",
+      "$144 lost nationally, with no foreign transfer",
+      "$384 lost nationally, all of it destroyed surplus",
+      "$912 lost nationally, including a second deduction for the same rents"
+    ],
+    "feedback": "The cap implies P = (96 + 16 - 32)/2 = 40, a $12 wedge. Rents are 12 × 32 = 384. Straight curves each change quantity by 12, creating total distortion of 144. National loss is 384 + 144 = 528.",
+    "reason": "A/C: VER, endogenous price, national versus global accounting.",
+    "proof": [
+      {
+        "label": "quota price",
+        "expression": "(96+16-32)/2",
+        "expected": 40
+      },
+      {
+        "label": "rents",
+        "expression": "(40-28)*32",
+        "expected": 384
+      },
+      {
+        "label": "distortion",
+        "expression": "(40-28)**2",
+        "expected": 144
+      },
+      {
+        "label": "national loss",
+        "expression": "384+144",
+        "expected": 528
+      }
+    ]
+  },
+  "P62D-ITP-L-083": {
+    "q": "An importer initially has Qd = 92 - P, Qs = P - 12 and Pw = $26. A $10 tariff and a 32-unit quota initially match. Demand then falls by 28 at every price. Which outcome follows?",
+    "options": [
+      "The quota becomes nonrestrictive at $26 with 24 imports; the tariff still raises price to $36 with 4 imports",
+      "Both keep price $36 because initially equivalent restrictions remain equivalent",
+      "The quota keeps imports at 32 even when buyers want only 24 at the world price",
+      "The tariff becomes nonrestrictive while the quota raises price above $36"
+    ],
+    "feedback": "New demand is 64 - P. At Pw = 26 the desired import gap is 38 - 14 = 24, below the cap. Under the tariff P = 36 and imports are 28 - 24 = 4. A cap is a maximum, not a required shipment.",
+    "reason": "C: use a demand fall and nonbinding boundary rather than repeat the usual demand-growth result.",
+    "proof": [
+      {
+        "label": "initial imports",
+        "expression": "92-36-(36-12)",
+        "expected": 32
+      },
+      {
+        "label": "free imports after shift",
+        "expression": "64-26-(26-12)",
+        "expected": 24
+      },
+      {
+        "label": "tariff imports after shift",
+        "expression": "64-36-(36-12)",
+        "expected": 4
+      }
+    ]
+  },
+  "P62D-ITP-L-084": {
+    "q": "A quota causes a $520 consumer loss, a $170 domestic producer gain and $280 of rents. Domestic firms hold the rights and spend $60 of real resources competing for them. A competitive auction would yield the same rents and use $15 of real resources. How much would switching to the auction improve national welfare?",
+    "options": [
+      "$45; it saves resources while changing who receives an existing transfer",
+      "$280; all auction proceeds are newly created surplus",
+      "$325; add auction proceeds to the resource saving",
+      "$60; auctions have no resource cost regardless of the stated data"
+    ],
+    "feedback": "Distortion before rent-seeking is 520 - 170 - 280 = 70. The present system loses 70 + 60 = 130; the auction loses 70 + 15 = 85. National welfare improves by 45, not by the rent amount.",
+    "reason": "C: combine rent dissipation, fiscal transfers and policy comparison.",
+    "proof": [
+      {
+        "label": "distortion",
+        "expression": "520-170-280",
+        "expected": 70
+      },
+      {
+        "label": "improvement",
+        "expression": "(70+60)-(70+15)",
+        "expected": 45
+      }
+    ]
+  },
+  "P62D-ITP-L-085": {
+    "q": "Demand is P = 86 - Qd, supply is P = 14 + Qs and Pw is $30. A ministry compares tariffs of $6 and $14. Which comparison correctly distinguishes government revenue from national welfare?",
+    "options": [
+      "Both raise $168, but the $14 tariff destroys $160 more surplus",
+      "Both raise $168 and therefore have equal national welfare",
+      "The $14 tariff raises more revenue because its rate is larger",
+      "The $6 tariff destroys more surplus because it permits more imports"
+    ],
+    "feedback": "Imports are 40 - 2t. At t = 6, revenue is 6 × 28 = 168 and DWL = 36. At t = 14, revenue is 14 × 12 = 168 and DWL = 196. The difference is 160.",
+    "reason": "C: compare multiple rates with identical receipts but different distortions.",
+    "proof": [
+      {
+        "label": "low revenue",
+        "expression": "6*(86+14-2*(30+6))",
+        "expected": 168
+      },
+      {
+        "label": "high revenue",
+        "expression": "14*(86+14-2*(30+14))",
+        "expected": 168
+      },
+      {
+        "label": "extra loss",
+        "expression": "14**2-6**2",
+        "expected": 160
+      }
+    ]
+  },
+  "P62D-ITP-L-086": {
+    "q": "Officials propose a tariff on emergency valves because a foreign supply outage could halt hospitals. Domestic firms cannot expand within five years; audited reserves and two independent allied suppliers could cover an outage sooner at lower resource cost. Which assessment is best?",
+    "options": [
+      "The security concern can be real, but the evidence favors reserves and diversified supply over this tariff",
+      "The security label alone establishes that any tariff improves resilience",
+      "The tariff must solve the outage risk because it raises domestic producer surplus",
+      "All resilience spending is wasteful because the small-country trade model has gains from trade"
+    ],
+    "feedback": "Evaluate whether the instrument actually reduces the stated risk and whether another instrument does so at lower cost. A legitimate objective does not make an ineffective tariff the preferred response.",
+    "reason": "C: test policy effectiveness and alternatives simultaneously, without introducing new arguments.",
+    "proof": []
+  },
+  "P62D-ITP-L-087": {
+    "q": "A new sensor industry predicts learning gains worth $18 million in present value. Protection would cost $24 million in present-value consumer surplus, transfer $9 million to domestic producers and yield $5 million of tariff revenue. Suppose learning is additional and there are no other effects. Which evaluation is correct?",
+    "options": [
+      "The modeled net gain is $8 million, but the case depends on the learning forecast being credible",
+      "The modeled net loss is $6 million because all consumer loss is destroyed",
+      "The modeled net gain is $32 million because producer gains and revenue are additional to learning",
+      "The policy is proven desirable regardless of whether learning occurs"
+    ],
+    "feedback": "Static national loss is 24 - 9 - 5 = 10 million. Additional learning of 18 gives a modeled gain of 8. If the learning is not caused by protection or does not materialize, the conclusion can reverse.",
+    "reason": "C: conditional infant-industry welfare test using stated present values.",
+    "proof": [
+      {
+        "label": "static loss",
+        "expression": "24-9-5",
+        "expected": 10
+      },
+      {
+        "label": "conditional net gain",
+        "expression": "18-(24-9-5)",
+        "expected": 8
+      }
+    ]
+  },
+  "P62D-ITP-L-088": {
+    "q": "A tariff preserves 240 jobs in an input industry but eliminates 160 downstream jobs. Retaliation would eliminate another 120 export jobs if it occurs; its probability is one-half. What follows from these employment estimates alone?",
+    "options": [
+      "Expected employment rises by 20, but this alone does not establish a national welfare gain",
+      "Expected employment rises by 80, so the tariff necessarily raises welfare",
+      "Expected employment falls by 40 because retaliation is certain",
+      "Expected employment rises by 240 because losses outside the protected industry are irrelevant"
+    ],
+    "feedback": "Expected job change is 240 - 160 - 0.5 × 120 = 20. Employment counts alone do not measure consumer surplus, resource costs or other welfare effects.",
+    "reason": "C: evaluate the selected jobs argument with cross-sector and conditional effects.",
+    "proof": [
+      {
+        "label": "expected employment",
+        "expression": "240-160-0.5*120",
+        "expected": 20
+      }
+    ]
+  },
+  "P62D-ITP-L-089": {
+    "q": "A minister defends a tariff by citing $12 million of domestic producer gains. It also raises $8 million in revenue and costs consumers $17 million. Retaliation causes a separate $7 million net loss to domestic exporters. Ignoring other effects, which conclusion follows?",
+    "options": [
+      "National surplus falls $4 million; the protected industry does not capture the whole policy effect",
+      "National surplus rises $3 million because retaliation affects only foreigners",
+      "National surplus rises $12 million because the protected producers are the relevant group",
+      "National surplus falls $24 million because producer gains and revenue cannot offset consumer losses"
+    ],
+    "feedback": "Include all the stated domestic effects once: 12 + 8 - 17 - 7 = -4 million. Retaliation transmits costs beyond the original protected industry; producer gains alone do not establish a national gain.",
+    "reason": "C: evaluate cross-industry retaliation consequences already in the selected curriculum.",
+    "proof": [
+      {
+        "label": "net package",
+        "expression": "12+8-17-7",
+        "expected": -4
+      }
+    ]
+  },
+  "P62D-ITP-L-090": {
+    "q": "Opening trade gives consumers $720 and costs producers $420. A plan transfers $420 from consumers to producers but uses $75 of real resources delivering assistance. Compared with autarky, which statement is correct?",
+    "options": [
+      "Producers can be restored and consumers retain $225; compensation and efficiency must both be evaluated",
+      "Consumers retain $300 because assistance resources are just transfers",
+      "National surplus rises $720 because producer compensation cancels the original loss without cost",
+      "National surplus falls $195 because compensation must be subtracted twice"
+    ],
+    "feedback": "The initial national gain is 720 - 420 = 300. The transfer restores producers but changes no total; resource use reduces the gain to 225. The result presumes the assistance is actually delivered.",
+    "reason": "C: replace broad equity recognition with an implemented distribution and resource-cost calculation.",
+    "proof": [
+      {
+        "label": "retained gain",
+        "expression": "720-420-75",
+        "expected": 225
+      }
+    ]
+  },
+  "P62D-ITP-L-091": {
+    "q": "Use the displayed avocado import graph. Suppose a policy raises domestic price $1 above the shown world price, with world price and both straight curves unchanged. What tariff revenue and remaining national gain relative to autarky follow? Quantities are in thousands.",
+    "options": [
+      "$50 thousand revenue and $75 thousand remaining gain",
+      "$50 thousand revenue and $25 thousand remaining gain",
+      "$200 thousand revenue and $75 thousand remaining gain",
+      "$100 thousand revenue and $100 thousand remaining gain"
+    ],
+    "feedback": "The graph gives Pw = 5 and autarky price 7. At price 6, Qs = 150 and Qd = 200, so revenue is 1 × 50 = 50 thousand. Free-trade gains are 100 thousand; the tariff destroys 0.5 × 1 × (25 + 25) = 25 thousand, leaving 75.",
+    "reason": "D/C: replace a direct graph quantity package with a hypothetical tariff and retained-gains reconstruction.",
+    "proof": [
+      {
+        "label": "imports",
+        "expression": "200-150",
+        "expected": 50
+      },
+      {
+        "label": "revenue",
+        "expression": "1*50",
+        "expected": 50
+      },
+      {
+        "label": "free gains",
+        "expression": "(7-5)*(225-125)/2",
+        "expected": 100
+      },
+      {
+        "label": "remaining gains",
+        "expression": "100-1*(25+25)/2",
+        "expected": 75
+      }
+    ]
+  },
+  "P62D-ITP-L-092": {
+    "q": "From the displayed avocado import graph, a program would restore the domestic producers' autarky surplus using a lump-sum transfer from consumers. Administration uses $30 thousand of real resources. How much of the opening-to-trade gain would consumers retain after both payments?",
+    "options": [
+      "$70 thousand",
+      "$100 thousand",
+      "$300 thousand",
+      "$370 thousand"
+    ],
+    "feedback": "At the two graph prices, producer loss is 0.5 × (7 - 5) × (175 + 125) = 300 thousand. Consumer gain is 0.5 × 2 × (175 + 225) = 400 thousand. Paying 300 compensation plus 30 resource cost leaves 70 thousand.",
+    "reason": "D/C: require both surplus areas and actual compensation rather than a generic net-gain statement.",
+    "proof": [
+      {
+        "label": "producer loss",
+        "expression": "(7-5)*(175+125)/2",
+        "expected": 300
+      },
+      {
+        "label": "consumer gain",
+        "expression": "(7-5)*(175+225)/2",
+        "expected": 400
+      },
+      {
+        "label": "remaining gain",
+        "expression": "400-300-30",
+        "expected": 70
+      }
+    ]
+  },
+  "P62D-ITP-L-093": {
+    "q": "In the displayed avocado export graph, suppose Pw falls by $1 while both straight domestic curves stay fixed. What are the new exports and the decrease in gains from trade relative to the displayed free-trade outcome? Quantities are in thousands.",
+    "options": [
+      "100 thousand exports; gains from trade fall $125 thousand",
+      "100 thousand exports; gains from trade fall $50 thousand",
+      "150 thousand exports; gains from trade fall $125 thousand",
+      "100 thousand imports; gains from trade rise $125 thousand"
+    ],
+    "feedback": "Price falls from 10 to 9. The graph's slopes give Qs = 225 and Qd = 125, hence 100 exports. Gains over autarky fall from 0.5 × 3 × 150 = 225 to 0.5 × 2 × 100 = 100 thousand: a 125-thousand decline.",
+    "reason": "D/C: graph-based counterfactual quantities and welfare comparison.",
+    "proof": [
+      {
+        "label": "exports",
+        "expression": "225-125",
+        "expected": 100
+      },
+      {
+        "label": "gain decline",
+        "expression": "(10-7)*150/2-(9-7)*100/2",
+        "expected": 125
+      }
+    ]
+  },
+  "P62D-ITP-L-094": {
+    "q": "Read the displayed avocado export graph. A producer-funded lump-sum transfer exactly compensates domestic consumers for opening to trade, with no resource costs. Which pair gives the required transfer and the producers' remaining gain?",
+    "options": [
+      "$412.5 thousand transfer; $225 thousand remaining producer gain",
+      "$225 thousand transfer; $412.5 thousand remaining producer gain",
+      "$637.5 thousand transfer; no producer gain",
+      "$412.5 thousand transfer; no national gain because compensation cancels trade"
+    ],
+    "feedback": "The price rise is $3. Consumer loss is 0.5 × 3 × (175 + 100) = 412.5 thousand; producer gain is 0.5 × 3 × (175 + 250) = 637.5 thousand. Their difference, 225 thousand, remains after compensation.",
+    "reason": "D/C: require graph-derived distribution and the residual gain.",
+    "proof": [
+      {
+        "label": "consumer loss",
+        "expression": "3*(175+100)/2",
+        "expected": 412.5
+      },
+      {
+        "label": "producer gain",
+        "expression": "3*(175+250)/2",
+        "expected": 637.5
+      },
+      {
+        "label": "remaining",
+        "expression": "637.5-412.5",
+        "expected": 225
+      }
+    ]
+  },
+  "P62D-ITP-L-096": {
+    "q": "Use the phone-case tariff graph. If the tariff is reduced halfway from its displayed level to zero, with straight curves and world price unchanged, what happens to tariff revenue and total distortion loss?",
+    "options": [
+      "Revenue becomes $150 thousand and distortion loss $25 thousand",
+      "Revenue becomes $100 thousand and distortion loss $50 thousand",
+      "Revenue becomes $200 thousand and distortion loss $50 thousand",
+      "Revenue becomes $250 thousand and distortion loss $25 thousand"
+    ],
+    "feedback": "The displayed wedge is 2; halving it gives price 5. Qs becomes 75 and Qd 225, so 150 imports pay 1 each. Each quantity distortion is 25 relative to free trade; total DWL is 0.5 × 1 × 50 = 25 thousand.",
+    "reason": "D/C: compare tariff rates using the graph instead of naming distortions.",
+    "proof": [
+      {
+        "label": "new imports",
+        "expression": "225-75",
+        "expected": 150
+      },
+      {
+        "label": "revenue",
+        "expression": "1*(225-75)",
+        "expected": 150
+      },
+      {
+        "label": "distortion",
+        "expression": "1*(25+25)/2",
+        "expected": 25
+      }
+    ]
+  },
+  "P62D-ITP-L-097": {
+    "q": "Use the phone-case tariff graph. A minister proposes keeping the tariff but returning all its revenue to consumers as lump-sum payments, with no administrative cost. Relative to free trade, what happens to consumers and total national surplus?",
+    "options": [
+      "Consumers still lose $250 thousand; national surplus still falls $100 thousand",
+      "Consumers lose nothing; national surplus returns to free-trade level",
+      "Consumers still lose $450 thousand; national surplus falls $300 thousand",
+      "Consumers gain $200 thousand; national surplus rises by the revenue"
+    ],
+    "feedback": "The graph implies consumer loss 0.5 × 2 × (250 + 200) = 450 thousand and revenue 2 × (200 - 100) = 200 thousand. The rebate leaves a 250-thousand consumer loss and does not undo either distortion triangle, totaling 100 thousand.",
+    "reason": "D/C: graph-based rebate, transfers and remaining distortions.",
+    "proof": [
+      {
+        "label": "consumer loss after rebate",
+        "expression": "2*(250+200)/2-2*(200-100)",
+        "expected": 250
+      },
+      {
+        "label": "national loss",
+        "expression": "2*(50+50)/2",
+        "expected": 100
+      }
+    ]
+  },
+  "P62D-ITP-L-099": {
+    "q": "Using the phone-case quota graph, compare free domestic license allocation with a VER giving foreign firms the same rights free. With the same price and quantity and no extra costs, what is the national loss under the VER relative to free trade, and how much is a transfer abroad?",
+    "options": [
+      "$375 thousand national loss, including $150 thousand transferred abroad",
+      "$225 thousand national loss, including no foreign transfer",
+      "$150 thousand national loss, all of it destroyed world surplus",
+      "$525 thousand national loss, including two copies of the rent transfer"
+    ],
+    "feedback": "The wedge is 6 - 3 = 3; permitted imports are 200 - 150 = 50 thousand. Foreign rent is 150 thousand. Two 75-thousand quantity distortions create 225 thousand of DWL, so the national loss is 375 thousand.",
+    "reason": "A/D/C: graph-dependent VER accounting with an explicit national/global distinction.",
+    "proof": [
+      {
+        "label": "rents",
+        "expression": "(6-3)*(200-150)",
+        "expected": 150
+      },
+      {
+        "label": "distortion",
+        "expression": "3*(75+75)/2",
+        "expected": 225
+      },
+      {
+        "label": "national loss",
+        "expression": "150+225",
+        "expected": 375
+      }
+    ]
+  },
+  "P62D-ITP-L-100": {
+    "q": "The phone-case quota graph shows free trade and a quota with domestic rights holders. If the import cap is raised from the displayed amount to 100 thousand, with both straight curves and Pw unchanged, which result follows?",
+    "options": [
+      "Domestic price $5; rents $200 thousand; distortion loss $100 thousand",
+      "Domestic price $6; rents $300 thousand; distortion loss $225 thousand",
+      "Domestic price $4; rents $100 thousand; distortion loss $25 thousand",
+      "Domestic price $5; rents $100 thousand; distortion loss $200 thousand"
+    ],
+    "feedback": "The curves imply Qd = 350 - 25P and Qs = 25P. A gap of 100 requires 350 - 50P = 100, so P = 5. The wedge is 2 and rents 200 thousand. Production rises 50 and consumption falls 50 relative to Pw = 3, giving DWL 100 thousand.",
+    "reason": "D/C: reconstruct the new quota price and distinguish rent from distortion.",
+    "proof": [
+      {
+        "label": "new price",
+        "expression": "(350-100)/50",
+        "expected": 5
+      },
+      {
+        "label": "rent",
+        "expression": "(5-3)*100",
+        "expected": 200
+      },
+      {
+        "label": "loss",
+        "expression": "(5-3)*(50+50)/2",
+        "expected": 100
+      }
+    ]
+  }
+}
