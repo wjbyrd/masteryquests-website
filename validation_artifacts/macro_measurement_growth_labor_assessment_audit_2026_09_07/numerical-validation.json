@@ -1,0 +1,2049 @@
+{
+  "ok": true,
+  "numericalItems": 66,
+  "conceptualItems": 19,
+  "additionalArithmeticAssertions": 138,
+  "rounding": "Exact rational input arithmetic; displayed one-decimal results checked within 0.051. Directional loss/gain wording reviewed separately.",
+  "method": "A separate verifier does not import any authoring program. Independently transcribed final-stem cases reconstruct all 66 numerical results, and compare them with the keyed choices. Authoring proof expressions are re-evaluated only as additional checks. All interest revisions use the stated Principles approximation.",
+  "items": {
+    "ECON-NL-LEGENDARY-9001": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "420000-150000",
+        "420000-(150000+90000)"
+      ],
+      "independentResults": [
+        270000.0,
+        180000.0
+      ],
+      "key": "$270,000 total domestic GDP, including $180,000 at assembly"
+    },
+    "ECON-NL-LEGENDARY-9003": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "560-140",
+        "560-(140+250+90)"
+      ],
+      "independentResults": [
+        420.0,
+        80.0
+      ],
+      "key": "$420 value added, including $80 profit"
+    },
+    "ECON-NL-LEGENDARY-9009": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(96000-24000)+6000"
+      ],
+      "independentResults": [
+        78000.0
+      ],
+      "key": "$78,000; count domestic renovation value and the new brokerage service"
+    },
+    "ECON-NL-LEGENDARY-9010": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "74+6",
+        "(74+6)-(51+9)"
+      ],
+      "independentResults": [
+        80.0,
+        20.0
+      ],
+      "key": "$80 million GDP and $20 million profit"
+    },
+    "ECON-NL-LEGENDARY-9011": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "28000+2000"
+      ],
+      "independentResults": [
+        30000.0
+      ],
+      "key": "$30,000: brokerage service plus inventory investment"
+    },
+    "ECON-NL-ELITE-303": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "310-180",
+        "70+(180-70)+(310-180)"
+      ],
+      "independentResults": [
+        130.0,
+        310.0
+      ],
+      "key": "$130 at the bakery; $310 across the chain"
+    },
+    "ECON-NL-LEGENDARY-9000": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "72-(46+13+9-11)"
+      ],
+      "independentResults": [
+        15.0
+      ],
+      "key": "I = 15; the 4 of inventories is included within that total"
+    },
+    "ECON-NL-LEGENDARY-9004": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "18+7",
+        "18",
+        "7+3",
+        "3"
+      ],
+      "independentResults": [
+        25.0,
+        18.0,
+        10.0,
+        3.0
+      ],
+      "key": "$25 million; G = 18, C = 10, and M = 3"
+    },
+    "ECON-NL-LEGENDARY-9012": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "34-(8-4)",
+        "4-8"
+      ],
+      "independentResults": [
+        30.0,
+        -4.0
+      ],
+      "key": "$30 million: final sales 34 plus inventory investment of -4"
+    },
+    "ECON-NL-LEGENDARY-9017": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(6+2)-6"
+      ],
+      "independentResults": [
+        2.0
+      ],
+      "key": "Rise $2 billion; imported spending cancels while domestic installation remains"
+    },
+    "PM2B1-RNGDP-H-002": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "864*100/120",
+        "(864*100/120-640)/640*100"
+      ],
+      "independentResults": [
+        720.0,
+        12.5
+      ],
+      "key": "$720 billion real GDP; 12.5% growth"
+    },
+    "ECON-NL-ELITE-315": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(115.5/105-1)*100",
+        "5"
+      ],
+      "independentResults": [
+        10.0,
+        5.0
+      ],
+      "key": "Deflator rises 10%; real production rose 5%"
+    },
+    "ECON-NL-LEGENDARY-9005": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "475.2/(468*100/130*1.10)*100"
+      ],
+      "independentResults": [
+        120.0
+      ],
+      "key": "120; real output rises while the domestic price level falls"
+    },
+    "ECON-NL-LEGENDARY-9006": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "60*40+(6000-60*50)/30*20",
+        "6000/(60*40+(6000-60*50)/30*20)*100"
+      ],
+      "independentResults": [
+        4400.0,
+        136.36363636363637
+      ],
+      "key": "$4,400 real GDP; deflator about 136.4"
+    },
+    "ECON-NL-LEGENDARY-9007": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "80*12+(2400-80*10)/20*30",
+        "(2400-80*10)/20"
+      ],
+      "independentResults": [
+        3360.0,
+        80.0
+      ],
+      "key": "$3,360; recover 80 units of the second good and value both at current prices"
+    },
+    "ECON-NL-LEGENDARY-9013": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(108/112.5-1)*100"
+      ],
+      "independentResults": [
+        -4.0
+      ],
+      "key": "Real GDP per person falls 4%; nominal growth does not establish output growth"
+    },
+    "ECON-NL-LEGENDARY-9022": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "125*(132/110)",
+        "(132/110-1)*100"
+      ],
+      "independentResults": [
+        150.0,
+        20.0
+      ],
+      "key": "150; the domestic price level rose 20%"
+    },
+    "ECON-NL-LEGENDARYBOSS-9103": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "715*100/130",
+        "756*100/140",
+        "(756*100/140-715*100/130)/(715*100/130)*100"
+      ],
+      "independentResults": [
+        550.0,
+        540.0,
+        -1.8181818181818181
+      ],
+      "key": "Real GDP falls from $550 billion to $540 billion, about 1.8%"
+    },
+    "ECON-NL-LEGENDARY-9015": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "12-5"
+      ],
+      "independentResults": [
+        7.0
+      ],
+      "key": "GDP is $7 million higher than otherwise; this does not establish a welfare improvement"
+    },
+    "PM2B1-GDPL-L-002": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "2-9"
+      ],
+      "independentResults": [
+        -7.0
+      ],
+      "key": "Measured GDP falls $7 million; the value of users’ net welfare gain is not determined"
+    },
+    "P52A-CPI-M-005": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(2*4*1.1+12)/(2*4+12)*100",
+        "2*4/(2*4+12)*100"
+      ],
+      "independentResults": [
+        104.0,
+        40.0
+      ],
+      "key": "104; meals had 40% of base basket spending"
+    },
+    "P52A-CPI-M-002": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "14/175*100"
+      ],
+      "independentResults": [
+        8.0
+      ],
+      "key": "8%, because the 14-point rise is divided by 175"
+    },
+    "ECON-NL-ELITE-321": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "125*810/750",
+        "(810-750)/750*100"
+      ],
+      "independentResults": [
+        135.0,
+        8.0
+      ],
+      "key": "CPI 135; inflation is 8%, although the index rose 10 points"
+    },
+    "ECON-NL-LEGENDARY-9023": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "((3*8+2*18)*135/100-3*9)/2",
+        "((3*8+2*18)*135/100-72)/72*100"
+      ],
+      "independentResults": [
+        27.0,
+        12.5
+      ],
+      "key": "$27 per repair and 12.5% inflation"
+    },
+    "ECON-NL-LEGENDARY-9024": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "176*100/160"
+      ],
+      "independentResults": [
+        110.0
+      ],
+      "key": "The new current index is 110; the benefit lost purchasing power"
+    },
+    "ECON-NL-LEGENDARY-9025": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(4*9+(72-4*6)/12*15)/72*100",
+        "(100.8/(4*9+(72-4*6)/12*15)-1)*100"
+      ],
+      "independentResults": [
+        133.33333333333334,
+        5.0
+      ],
+      "key": "CPI 133.3; next-period inflation 5%"
+    },
+    "ECON-NL-LEGENDARY-9026": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(27*500/(25*525)-1)*100"
+      ],
+      "independentResults": [
+        2.857142857142857
+      ],
+      "key": "About 2.9% higher; the first raise just matched prices, then prices partly fell"
+    },
+    "ECON-NL-LEGENDARY-9027": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "120*(1-10/100)"
+      ],
+      "independentResults": [
+        108.0
+      ],
+      "key": "Index 108; unchanged dollars buy less than initially"
+    },
+    "ECON-NL-LEGENDARY-9032": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(40*1.25+60-100)/100*100"
+      ],
+      "independentResults": [
+        10.0
+      ],
+      "key": "CPI rises 10%; the GDP deflator falls, but its size needs domestic-output weights"
+    },
+    "ECON-NL-LEGENDARY-9033": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(10*120+100*10)*100/(10*100+100*10)"
+      ],
+      "independentResults": [
+        110.0
+      ],
+      "key": "GDP deflator 110; CPI unchanged if its fixed basket contains only those consumer purchases"
+    },
+    "PM2B2-DEF-L-002": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(108/104-1)*100"
+      ],
+      "independentResults": [
+        3.8461538461538463
+      ],
+      "key": "The grant preserves purchasing power; real GDP rises about 3.8%"
+    },
+    "ECON-NL-ELITE-333": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "1800*165/150-1920",
+        "1800*165/150"
+      ],
+      "independentResults": [
+        60.0,
+        1980.0
+      ],
+      "key": "$60; full indexation requires $1,980"
+    },
+    "ECON-NL-LEGENDARY-9035": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "2400*132/120",
+        "2400*(144-132)/120"
+      ],
+      "independentResults": [
+        2640.0,
+        240.0
+      ],
+      "key": "$2,640 paid; an additional $240 is needed"
+    },
+    "ECON-NL-LEGENDARY-9036": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "1260/900*100"
+      ],
+      "independentResults": [
+        140.0
+      ],
+      "key": "Missing CPI 140; both later payments preserve the initial purchasing power"
+    },
+    "PM2B2-INDEX-L-003": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "40000*121/100-40000*1.1",
+        "40000*1.1",
+        "40000*121/100"
+      ],
+      "independentResults": [
+        4400.0,
+        44000.0,
+        48400.0
+      ],
+      "key": "$4,400; the paid threshold is $44,000 instead of $48,400"
+    },
+    "PM2B2-RNI-H-003": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "9-100*(212-200)/200"
+      ],
+      "independentResults": [
+        3.0
+      ],
+      "key": "The realized real return is approximately 3%"
+    },
+    "PM2B2-RNI-FB-006": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "4-6"
+      ],
+      "independentResults": [
+        -2.0
+      ],
+      "key": "The realized real return is -2%; the expected real return cannot be recovered"
+    },
+    "ECON-NL-ELITE-338": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(7-2)+2",
+        "7-((7-2)+2)"
+      ],
+      "independentResults": [
+        7.0,
+        0.0
+      ],
+      "key": "7% actual inflation and 0% realized real return"
+    },
+    "ECON-NL-LEGENDARY-9038": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "8-(172.8-160)/160*100",
+        "(172.8-160)/160*100-(8-3)"
+      ],
+      "independentResults": [
+        0.0,
+        3.0
+      ],
+      "key": "0% realized real return; inflation was 3 percentage points above expected"
+    },
+    "ECON-NL-LEGENDARY-9039": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "6-(420-400)/400*100",
+        "6-(540-500)/500*100"
+      ],
+      "independentResults": [
+        1.0,
+        -2.0
+      ],
+      "key": "A gains about 1%; B loses about 2%, despite equal nominal rates"
+    },
+    "ECON-NL-LEGENDARY-9040": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "2+(130-125)/125*100",
+        "2+(130-125)/125*100-(135-125)/125*100"
+      ],
+      "independentResults": [
+        6.0,
+        -2.0
+      ],
+      "key": "6% nominal; -2% realized real return"
+    },
+    "ECON-NL-LEGENDARY-9045": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "32000*2**(40/(70/1.75))",
+        "8000*2**(40/(70/7))"
+      ],
+      "independentResults": [
+        64000.0,
+        128000.0
+      ],
+      "key": "Alder is near $64,000 and Birch near $128,000; matching Alder’s initial level earlier was not yet catching its moving level"
+    },
+    "ECON-NL-LEGENDARY-9046": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(112/105-1)*100",
+        "(112/120-1)*100"
+      ],
+      "independentResults": [
+        6.666666666666667,
+        -6.666666666666667
+      ],
+      "key": "Real GDP per person rises 6.7%; output per hour falls 6.7%"
+    },
+    "ECON-NL-LEGENDARY-9047": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "960*100/120*1000/32",
+        "1320*100/150*1000/44"
+      ],
+      "independentResults": [
+        25000.0,
+        20000.0
+      ],
+      "key": "Cedar $25,000; Delta $20,000, so higher nominal total does not imply higher average real output"
+    },
+    "ECON-NL-LEGENDARY-9049": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(110/100*95/100*58/60-1)*100"
+      ],
+      "independentResults": [
+        1.0166666666666666
+      ],
+      "key": "It rises about 1.0%; the other two factors offset much of the productivity gain"
+    },
+    "ECON-NL-LEGENDARY-9050": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "((25344/24)-(24000/20))/(24000/20)*100",
+        "((25344/(24*80))/(24000/(20*100))-1)*100"
+      ],
+      "independentResults": [
+        -12.0,
+        10.0
+      ],
+      "key": "Output per worker falls 12%; output per hour rises 10%"
+    },
+    "ECON-NL-LEGENDARY-9051": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "108/3.2",
+        "((108/3.2)-(90/3))/(90/3)*100"
+      ],
+      "independentResults": [
+        33.75,
+        12.5
+      ],
+      "key": "$33.75 per hour, a 12.5% increase"
+    },
+    "ECON-NL-LEGENDARY-9053": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "6",
+        "(106/110-1)*100"
+      ],
+      "independentResults": [
+        6.0,
+        -3.6363636363636362
+      ],
+      "key": "Output per person rises 6%; output per worker falls about 3.6%"
+    },
+    "ECON-NL-LEGENDARY-9066": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "30000*100/50000",
+        "30000*100/55000"
+      ],
+      "independentResults": [
+        60.0,
+        54.54545454545455
+      ],
+      "key": "It falls from 60% to about 54.5%, offsetting the productivity rise"
+    },
+    "PM2B3-PROD-FB-004": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(36.37/28.53-1)*100"
+      ],
+      "independentResults": [
+        27.479845776375743
+      ],
+      "key": "27.5%; the same further capital increase would add less output"
+    },
+    "ECON-NL-LEGENDARY-9058": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "160-100",
+        "200-160"
+      ],
+      "independentResults": [
+        60.0,
+        40.0
+      ],
+      "key": "The successive gains are 60 and 40; continued diminishing marginal returns would put the next gain below 40"
+    },
+    "ECON-NL-LEGENDARY-9067": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(12-4-3+5)/(132+4-2+12-4-3+5)*100",
+        "(132+4-2+12-4-3+5)/(132+12+56)*100"
+      ],
+      "independentResults": [
+        6.944444444444445,
+        72.0
+      ],
+      "key": "About 6.9% unemployment and 72% participation"
+    },
+    "ECON-NL-LEGENDARY-9068": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "200*.75*(1-.08)-6",
+        "(200*.75*.08-6+4)/(200*.75-6-6+4)*100",
+        "(200*.75-6-6+4)/200*100"
+      ],
+      "independentResults": [
+        132.0,
+        7.042253521126761,
+        71.0
+      ],
+      "key": "132 employed; about 7.0% unemployment; 71% participation"
+    },
+    "ECON-NL-LEGENDARY-9070": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "200*.75*(1-.06)-200*.7*(1-.06)"
+      ],
+      "independentResults": [
+        9.4
+      ],
+      "key": "Employment falls by 9.4; a stable unemployment rate does not imply a stable number of jobs"
+    },
+    "ECON-NL-LEGENDARY-9081": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "184-180",
+        "20-12-(184-180)",
+        "(180+20)/250*100",
+        "(184+12)/250*100"
+      ],
+      "independentResults": [
+        4.0,
+        4.0,
+        80.0,
+        78.4
+      ],
+      "key": "4 found jobs and 4 left search; participation fell from 80% to 78.4%"
+    },
+    "ECON-NL-ELITE-366": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "84+6",
+        "6/(84+6)*100"
+      ],
+      "independentResults": [
+        90.0,
+        6.666666666666667
+      ],
+      "key": "Labor force 90 and unemployment about 6.7%; underemployment among paid workers is not in that rate"
+    },
+    "ECON-NL-FINALBOSS-4003": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "(126+14)/(126+14+60)*100"
+      ],
+      "independentResults": [
+        70.0
+      ],
+      "key": "70% participation; unemployment uses 14 divided by 140"
+    },
+    "ECON-NL-LEGENDARY-9076": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "100-95",
+        "140-95"
+      ],
+      "independentResults": [
+        5.0,
+        45.0
+      ],
+      "key": "Employment falls by 5, while the labor surplus is 45; these are different quantities"
+    },
+    "ECON-NL-LEGENDARY-9078": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "((24*90)-(20*100))/(20*100)*100"
+      ],
+      "independentResults": [
+        8.0
+      ],
+      "key": "The wage bill rises 8%; retained workers gain hourly pay while some workers lose jobs"
+    },
+    "ECON-NL-LEGENDARY-9079": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "18/6",
+        "21/7"
+      ],
+      "independentResults": [
+        3.0,
+        3.0
+      ],
+      "key": "Wage cost stays $3 per unit if the productivity forecast holds; the forecast still needs evidence"
+    },
+    "ECON-NL-ELITE-375": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "112-88",
+        "112-100"
+      ],
+      "independentResults": [
+        24.0,
+        12.0
+      ],
+      "key": "It falls from 24 to 12; higher labor demand reduces the excess supply"
+    },
+    "ECON-NL-LEGENDARY-9075": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "1.5+3+0"
+      ],
+      "independentResults": [
+        4.5
+      ],
+      "key": "Both are 4.5%; recovery removed the cyclical component and matching lowered the natural rate"
+    },
+    "ECON-NL-LEGENDARY-9085": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        "9-6",
+        "7-4"
+      ],
+      "independentResults": [
+        3.0,
+        3.0
+      ],
+      "key": "The gap stays at 3 points; the lower actual rate alone does not show cyclical weakness diminished"
+    },
+    "PM2B4-NRU-L-002": {
+      "ok": true,
+      "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+      "independentExpressions": [
+        ".4-1"
+      ],
+      "independentResults": [
+        -0.6
+      ],
+      "key": "It falls 0.6 point; the policy effects partly offset"
+    },
+    "ECON-NL-LEGENDARY-9014": {
+      "ok": true,
+      "method": "Independent quantitative relation plus semantic key review.",
+      "values": [
+        44000,
+        40000
+      ],
+      "assertion": true,
+      "interpretation": "First higher output/person; second higher output/hour; welfare cannot be ranked from unvalued dimensions.",
+      "key": "The first has higher output per person; the second has higher hourly productivity, so welfare is not ranked"
+    },
+    "ECON-NL-LEGENDARY-9029": {
+      "ok": true,
+      "method": "Independent quantitative relation plus semantic key review.",
+      "values": [
+        1.0
+      ],
+      "assertion": true,
+      "interpretation": "Equal proportional price/durability changes leave undiscounted cost per service-year unchanged; cannot infer aggregate inflation.",
+      "key": "Cost per service-year is unchanged; economy-wide inflation cannot be inferred"
+    }
+  },
+  "conceptualReviews": {
+    "ECON-NL-LEGENDARY-9028": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The same service can be maintained at lower cost by changing an existing bundle, which is the substitution mechanism. A travel example alone does not measure the full index’s bias or imply that overall prices fell.",
+      "key": "A fixed bundle overstates the cost of that service; the evidence does not quantify bias for the whole CPI"
+    },
+    "PM2B2-BIAS-L-001": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "A cheaper bundle can reflect reduced consumption or quality rather than cost-saving substitution at the same living standard. The comparison must hold the relevant standard of living constant before interpreting the gap as bias.",
+      "key": "The redesigned bundle preserves the relevant living standard, with comparable quality and coverage"
+    },
+    "PM2B2-DEF-H-002": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The deflator compares current-price and base-price values of current quantities. Changing the output mix toward larger current-to-base price relatives can raise the ratio even with no new individual price changes. High dollar prices alone do not establish that result.",
+      "key": "Current quantities put more weight on goods with larger price increases since the base year"
+    },
+    "ECON-NL-ELITE-331": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The household payment needs a consumer-price measure, which includes imported consumer energy. Deflating GDP requires prices of domestic production, including investment goods. Their differing coverage permits divergent movements.",
+      "key": "Use CPI for the allowance and the GDP deflator for GDP; the indexes can move differently"
+    },
+    "ECON-NL-ELITE-344": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "Capital scarcity can create high-return opportunities, but skilled workers and usable infrastructure help realize them. Catch-up is conditional; equal starting capital alone does not establish equal productivity growth.",
+      "key": "The complementary inputs differ, so equal capital scarcity does not imply equal realized gains"
+    },
+    "ECON-NL-LEGENDARY-9054": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The second stage changes human capital while holding physical inputs fixed. Its effect can reflect complementarity between skills and machinery. A weak result before training does not identify a zero contribution from capital.",
+      "key": "Training helped realize the value of complementary capital; the first stage did not show that machines were useless"
+    },
+    "ECON-NL-LEGENDARY-9056": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "A new production method is technological knowledge; skills acquired by workers are human capital. Equal measured gains do not identify a common mechanism or prove the two interventions would have equal effects elsewhere.",
+      "key": "A changed technological knowledge and B human capital; equal output gains do not make the mechanisms identical"
+    },
+    "ECON-NL-LEGENDARYBOSS-9120": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "Diminishing marginal returns concerns additional capital with other determinants held fixed. The first two gains fit that pattern. A technology improvement changes the production relationship, so the larger third gain is not a comparable capital-only experiment.",
+      "key": "No; the first two gains compare capital with other inputs fixed, while technology changed in the third"
+    },
+    "ECON-NL-LEGENDARY-9060": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The evidence identifies insecure returns as a barrier between available funds and investment. Predictable enforcement can complement financing. The survey does not establish an optimal subsidy or prove capital has no productive value.",
+      "key": "Address enforcement risk alongside finance; more saving alone may not make productive investment attractive"
+    },
+    "ECON-NL-LEGENDARY-9062": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The constrained margin is adopting better methods. Technology, skills and equipment can complement one another; repeating one input policy while blocking another can limit the gain. This is a conditional recommendation from the stated evidence.",
+      "key": "Permit useful method adoption while maintaining skills and investment; training alone may not release the constraint"
+    },
+    "ECON-NL-LEGENDARY-9063": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The instruments address institutions, human capital and technological knowledge. These are plausible growth channels, but observed short-run output alone neither guarantees eventual success nor disproves the channels. Implementation and technology diffusion must be evaluated.",
+      "key": "The package targets productivity determinants; implementation, diffusion and time still matter for realized growth"
+    },
+    "ECON-NL-ELITE-359": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "Additional capital can still raise output, but its marginal contribution may diminish with other inputs fixed. Skills and technological progress complement capital and support productivity growth beyond a single level increase.",
+      "key": "Maintain useful investment while improving skills, research and adoption of better methods"
+    },
+    "ECON-NL-LEGENDARY-9084": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "Unemployment divides job seekers by the labor force. Lower participation can lower employment per adult even at the same rate, while involuntary part-time workers remain employed. Additional participation and hours evidence is needed for the broader assessment.",
+      "key": "Compare employment per adult and desired versus actual hours; the headline rate omits both differences"
+    },
+    "ECON-NL-FINALBOSS-4006": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The worker moves from outside the labor force to employed. Both employment and the labor force rise, while wanting more hours does not change the official employed classification. The hours shortfall remains relevant to labor-market well-being.",
+      "key": "Employment and the labor force rise; involuntary part-time work can remain"
+    },
+    "ECON-NL-LEGENDARY-9074": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "Normal matching among suitable jobs is frictional; a persistent credential mismatch is structural. A paid part-time job makes the third group employed under the official measure, even though underemployment may remain.",
+      "key": "The first group is frictionally unemployed, the second structurally unemployed, and the third employed"
+    },
+    "ECON-NL-LEGENDARY-9080": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The mismatch between expanding occupations and worker credentials points to a structural barrier. Placements after relevant training, with demand broadly unchanged, strengthen that mechanism rather than a claim based only on weak spending or ordinary search.",
+      "key": "Credential training is followed by placements into the unfilled occupations while overall spending changes little"
+    },
+    "PM2B4-UTYPE-L-002": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "The first group faces search frictions among suitable jobs. The second faces a durable mismatch that information alone may not remove. Diagnosis should guide the intervention without assuming guaranteed placement.",
+      "key": "It can shorten matching for the first group; the second may also need retraining or mobility support"
+    },
+    "ECON-NL-LEGENDARY-9077": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "Income support can reduce search urgency while better matching shortens search. Their combined result does not isolate either effect; a credible separate comparison would be needed. The duration result also does not measure the value of income protection.",
+      "key": "The combined outcome improved duration; it does not show that the benefit extension by itself shortened search"
+    },
+    "ECON-NL-ELITE-379": {
+      "ok": true,
+      "method": "Each alternative reviewed against the stated mechanism and assumptions. Incidental numbers do not determine a numerical answer.",
+      "uniqueCorrectnessRationale": "Both totals equal 5%, but the components differ. A common aggregate benchmark does not establish identical barriers or identical policy priorities. Relevant retraining and matching interventions target different components.",
+      "key": "The first has more mismatch to address; the second has more scope for faster matching, holding effectiveness comparable"
+    }
+  },
+  "additionalProofs": [
+    {
+      "id": "ECON-NL-LEGENDARY-9001",
+      "label": "domestic total",
+      "expression": "420000-150000",
+      "expected": 270000,
+      "recomputed": 270000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9001",
+      "label": "assembly",
+      "expression": "420000-150000-90000",
+      "expected": 180000,
+      "recomputed": 180000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9003",
+      "label": "value added",
+      "expression": "560-140",
+      "expected": 420,
+      "recomputed": 420.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9003",
+      "label": "profit",
+      "expression": "560-140-250-90",
+      "expected": 80,
+      "recomputed": 80.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9009",
+      "label": "GDP",
+      "expression": "96000-24000+6000",
+      "expected": 78000,
+      "recomputed": 78000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9010",
+      "label": "GDP",
+      "expression": "74+6",
+      "expected": 80,
+      "recomputed": 80.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9010",
+      "label": "profit",
+      "expression": "74+6-51-9",
+      "expected": 20,
+      "recomputed": 20.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9011",
+      "label": "GDP",
+      "expression": "2000+28000",
+      "expected": 30000,
+      "recomputed": 30000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-303",
+      "label": "bakery",
+      "expression": "310-180",
+      "expected": 130,
+      "recomputed": 130.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-303",
+      "label": "chain",
+      "expression": "70+(180-70)+(310-180)",
+      "expected": 310,
+      "recomputed": 310.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9000",
+      "label": "investment",
+      "expression": "72-46-13-9+11",
+      "expected": 15,
+      "recomputed": 15.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9000",
+      "label": "other investment",
+      "expression": "15-4",
+      "expected": 11,
+      "recomputed": 11.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9004",
+      "label": "GDP",
+      "expression": "18+(7+3)-3",
+      "expected": 25,
+      "recomputed": 25.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9012",
+      "label": "inventory change",
+      "expression": "4-8",
+      "expected": -4,
+      "recomputed": -4.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9012",
+      "label": "GDP",
+      "expression": "34+4-8",
+      "expected": 30,
+      "recomputed": 30.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9017",
+      "label": "GDP revision",
+      "expression": "6+2-6",
+      "expected": 2,
+      "recomputed": 2.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B1-RNGDP-H-002",
+      "label": "real",
+      "expression": "864/1.2",
+      "expected": 720,
+      "recomputed": 720.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B1-RNGDP-H-002",
+      "label": "growth",
+      "expression": "(720/640-1)*100",
+      "expected": 12.5,
+      "recomputed": 12.5,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-315",
+      "label": "deflator growth",
+      "expression": "(1.155/1.05-1)*100",
+      "expected": 10,
+      "recomputed": 10.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9005",
+      "label": "real initial",
+      "expression": "468/1.3",
+      "expected": 360,
+      "recomputed": 360.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9005",
+      "label": "real later",
+      "expression": "360*1.1",
+      "expected": 396,
+      "recomputed": 396.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9005",
+      "label": "deflator",
+      "expression": "475.2/396*100",
+      "expected": 120,
+      "recomputed": 120.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9006",
+      "label": "visits",
+      "expression": "(6000-60*50)/30",
+      "expected": 100,
+      "recomputed": 100.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9006",
+      "label": "real",
+      "expression": "60*40+100*20",
+      "expected": 4400,
+      "recomputed": 4400.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9006",
+      "label": "deflator",
+      "expression": "6000/4400*100",
+      "expected": 136.36363636363637,
+      "recomputed": 136.36363636363637,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9007",
+      "label": "second quantity",
+      "expression": "(2400-80*10)/20",
+      "expected": 80,
+      "recomputed": 80.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9007",
+      "label": "nominal",
+      "expression": "80*12+80*30",
+      "expected": 3360,
+      "recomputed": 3360.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9013",
+      "label": "real growth",
+      "expression": "(1.08/1.125-1)*100",
+      "expected": -4,
+      "recomputed": -4.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9022",
+      "label": "price factor",
+      "expression": "1.32/1.1",
+      "expected": 1.2,
+      "recomputed": 1.2,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9022",
+      "label": "final deflator",
+      "expression": "125*1.32/1.1",
+      "expected": 150,
+      "recomputed": 150.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARYBOSS-9103",
+      "label": "real first",
+      "expression": "715/1.3",
+      "expected": 550,
+      "recomputed": 550.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARYBOSS-9103",
+      "label": "real last",
+      "expression": "756/1.4",
+      "expected": 540,
+      "recomputed": 540.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARYBOSS-9103",
+      "label": "real growth",
+      "expression": "(540/550-1)*100",
+      "expected": -1.8181818181818181,
+      "recomputed": -1.8181818181818181,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9014",
+      "label": "first output",
+      "expression": "40*1100",
+      "expected": 44000,
+      "recomputed": 44000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9014",
+      "label": "second output",
+      "expression": "50*800",
+      "expected": 40000,
+      "recomputed": 40000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9015",
+      "label": "GDP change",
+      "expression": "12-5",
+      "expected": 7,
+      "recomputed": 7.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B1-GDPL-L-002",
+      "label": "GDP change",
+      "expression": "-9+2",
+      "expected": -7,
+      "recomputed": -7.0,
+      "ok": true
+    },
+    {
+      "id": "P52A-CPI-M-005",
+      "label": "base cost",
+      "expression": "2*4+12",
+      "expected": 20,
+      "recomputed": 20.0,
+      "ok": true
+    },
+    {
+      "id": "P52A-CPI-M-005",
+      "label": "current cost",
+      "expression": "2*4.4+12",
+      "expected": 20.8,
+      "recomputed": 20.8,
+      "ok": true
+    },
+    {
+      "id": "P52A-CPI-M-005",
+      "label": "CPI",
+      "expression": "20.8/20*100",
+      "expected": 104,
+      "recomputed": 104.0,
+      "ok": true
+    },
+    {
+      "id": "P52A-CPI-M-002",
+      "label": "inflation",
+      "expression": "(189-175)/175*100",
+      "expected": 8,
+      "recomputed": 8.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-321",
+      "label": "base",
+      "expression": "750/1.25",
+      "expected": 600,
+      "recomputed": 600.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-321",
+      "label": "CPI",
+      "expression": "810/600*100",
+      "expected": 135,
+      "recomputed": 135.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-321",
+      "label": "inflation",
+      "expression": "(810/750-1)*100",
+      "expected": 8,
+      "recomputed": 8.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9023",
+      "label": "base",
+      "expression": "3*8+2*18",
+      "expected": 60,
+      "recomputed": 60.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9023",
+      "label": "repair price",
+      "expression": "(60*1.35-3*9)/2",
+      "expected": 27,
+      "recomputed": 27.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9023",
+      "label": "inflation",
+      "expression": "(81/72-1)*100",
+      "expected": 12.5,
+      "recomputed": 12.5,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9024",
+      "label": "rebased index",
+      "expression": "176/160*100",
+      "expected": 110,
+      "recomputed": 110.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9024",
+      "label": "inflation",
+      "expression": "(176/160-1)*100",
+      "expected": 10,
+      "recomputed": 10.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9025",
+      "label": "B quantity",
+      "expression": "(72-4*6)/12",
+      "expected": 4,
+      "recomputed": 4.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9025",
+      "label": "current cost",
+      "expression": "4*9+4*15",
+      "expected": 96,
+      "recomputed": 96.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9025",
+      "label": "next inflation",
+      "expression": "(100.8/96-1)*100",
+      "expected": 5,
+      "recomputed": 5.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9026",
+      "label": "real growth",
+      "expression": "((27/25)/(525/500)-1)*100",
+      "expected": 2.857142857142857,
+      "recomputed": 2.857142857142857,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9027",
+      "label": "final index",
+      "expression": "100*1.2*.9",
+      "expected": 108,
+      "recomputed": 108.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9029",
+      "label": "service cost ratio",
+      "expression": "1.12/1.12",
+      "expected": 1,
+      "recomputed": 1.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9032",
+      "label": "CPI growth",
+      "expression": "(40*1.25+60)/(40+60)*100-100",
+      "expected": 10,
+      "recomputed": 10.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9033",
+      "label": "deflator",
+      "expression": "(10*120+100*10)/(10*100+100*10)*100",
+      "expected": 110,
+      "recomputed": 110.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B2-DEF-L-002",
+      "label": "grant ratio",
+      "expression": "(2160/2000)/(135/125)",
+      "expected": 1,
+      "recomputed": 1.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B2-DEF-L-002",
+      "label": "GDP growth",
+      "expression": "(1.08/1.04-1)*100",
+      "expected": 3.846153846153846,
+      "recomputed": 3.8461538461538463,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-333",
+      "label": "target",
+      "expression": "1800*165/150",
+      "expected": 1980,
+      "recomputed": 1980.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-333",
+      "label": "shortfall",
+      "expression": "1980-1920",
+      "expected": 60,
+      "recomputed": 60.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9035",
+      "label": "paid",
+      "expression": "2400*132/120",
+      "expected": 2640,
+      "recomputed": 2640.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9035",
+      "label": "topup",
+      "expression": "2400*144/120-2640",
+      "expected": 240,
+      "recomputed": 240.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9036",
+      "label": "missing CPI",
+      "expression": "100*1260/900",
+      "expected": 140,
+      "recomputed": 140.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9036",
+      "label": "final base value",
+      "expression": "1350/1.5",
+      "expected": 900,
+      "recomputed": 900.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B2-INDEX-L-003",
+      "label": "full target",
+      "expression": "40000*1.21",
+      "expected": 48400,
+      "recomputed": 48400.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B2-INDEX-L-003",
+      "label": "lagged",
+      "expression": "40000*1.1",
+      "expected": 44000,
+      "recomputed": 44000.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B2-INDEX-L-003",
+      "label": "shortfall",
+      "expression": "48400-44000",
+      "expected": 4400,
+      "recomputed": 4400.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B2-RNI-H-003",
+      "label": "inflation",
+      "expression": "(212/200-1)*100",
+      "expected": 6,
+      "recomputed": 6.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B2-RNI-H-003",
+      "label": "real",
+      "expression": "9-6",
+      "expected": 3,
+      "recomputed": 3.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B2-RNI-FB-006",
+      "label": "real",
+      "expression": "4-6",
+      "expected": -2,
+      "recomputed": -2.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-338",
+      "label": "expected inflation",
+      "expression": "7-2",
+      "expected": 5,
+      "recomputed": 5.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-338",
+      "label": "actual inflation",
+      "expression": "5+2",
+      "expected": 7,
+      "recomputed": 7.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-338",
+      "label": "real",
+      "expression": "7-7",
+      "expected": 0,
+      "recomputed": 0.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9038",
+      "label": "expected inflation",
+      "expression": "8-3",
+      "expected": 5,
+      "recomputed": 5.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9038",
+      "label": "actual inflation",
+      "expression": "(172.8/160-1)*100",
+      "expected": 8,
+      "recomputed": 8.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9038",
+      "label": "real",
+      "expression": "8-8",
+      "expected": 0,
+      "recomputed": 0.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9038",
+      "label": "error",
+      "expression": "8-5",
+      "expected": 3,
+      "recomputed": 3.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9039",
+      "label": "A inflation",
+      "expression": "(420/400-1)*100",
+      "expected": 5,
+      "recomputed": 5.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9039",
+      "label": "B inflation",
+      "expression": "(540/500-1)*100",
+      "expected": 8,
+      "recomputed": 8.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9039",
+      "label": "A real",
+      "expression": "6-5",
+      "expected": 1,
+      "recomputed": 1.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9039",
+      "label": "B real",
+      "expression": "6-8",
+      "expected": -2,
+      "recomputed": -2.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9040",
+      "label": "nominal",
+      "expression": "2+(130/125-1)*100",
+      "expected": 6,
+      "recomputed": 6.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9040",
+      "label": "actual inflation",
+      "expression": "(135/125-1)*100",
+      "expected": 8,
+      "recomputed": 8.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9040",
+      "label": "real",
+      "expression": "6-8",
+      "expected": -2,
+      "recomputed": -2.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9045",
+      "label": "A time",
+      "expression": "70/1.75",
+      "expected": 40,
+      "recomputed": 40.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9045",
+      "label": "B time",
+      "expression": "70/7",
+      "expected": 10,
+      "recomputed": 10.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9045",
+      "label": "A final",
+      "expression": "32000*2",
+      "expected": 64000,
+      "recomputed": 64000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9045",
+      "label": "B final",
+      "expression": "8000*2**4",
+      "expected": 128000,
+      "recomputed": 128000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9046",
+      "label": "per person",
+      "expression": "(1.12/1.05-1)*100",
+      "expected": 6.666666666666667,
+      "recomputed": 6.666666666666667,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9046",
+      "label": "per hour",
+      "expression": "(1.12/1.2-1)*100",
+      "expected": -6.666666666666667,
+      "recomputed": -6.666666666666667,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9047",
+      "label": "Cedar",
+      "expression": "960/1.2/32*1000",
+      "expected": 25000,
+      "recomputed": 25000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9047",
+      "label": "Delta",
+      "expression": "1320/1.5/44*1000",
+      "expected": 20000,
+      "recomputed": 20000.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9049",
+      "label": "growth",
+      "expression": "(1.1*.95*(58/60)-1)*100",
+      "expected": 1.0166666666666666,
+      "recomputed": 1.0166666666666666,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9050",
+      "label": "initial hourly",
+      "expression": "24000/(20*100)",
+      "expected": 12,
+      "recomputed": 12.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9050",
+      "label": "final hourly",
+      "expression": "25344/(24*80)",
+      "expected": 13.2,
+      "recomputed": 13.2,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9050",
+      "label": "worker growth",
+      "expression": "((25344/24)/(24000/20)-1)*100",
+      "expected": -12,
+      "recomputed": -12.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9050",
+      "label": "hour growth",
+      "expression": "(13.2/12-1)*100",
+      "expected": 10,
+      "recomputed": 10.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9051",
+      "label": "target",
+      "expression": "108/3.2",
+      "expected": 33.75,
+      "recomputed": 33.75,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9051",
+      "label": "growth",
+      "expression": "((108/3.2)/(90/3)-1)*100",
+      "expected": 12.5,
+      "recomputed": 12.5,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9053",
+      "label": "worker growth",
+      "expression": "(1.06/1.1-1)*100",
+      "expected": -3.6363636363636362,
+      "recomputed": -3.6363636363636362,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9066",
+      "label": "initial share",
+      "expression": "30000/50000*100",
+      "expected": 60,
+      "recomputed": 60.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9066",
+      "label": "final share",
+      "expression": "30000/55000*100",
+      "expected": 54.54545454545455,
+      "recomputed": 54.54545454545455,
+      "ok": true
+    },
+    {
+      "id": "PM2B3-PROD-FB-004",
+      "label": "output growth",
+      "expression": "(36.37-28.53)/28.53*100",
+      "expected": 27.479845776375743,
+      "recomputed": 27.479845776375743,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9058",
+      "label": "first gain",
+      "expression": "160-100",
+      "expected": 60,
+      "recomputed": 60.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9058",
+      "label": "second gain",
+      "expression": "200-160",
+      "expected": 40,
+      "recomputed": 40.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9067",
+      "label": "employed",
+      "expression": "132+4-2",
+      "expected": 134,
+      "recomputed": 134.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9067",
+      "label": "unemployed",
+      "expression": "12-4-3+5",
+      "expected": 10,
+      "recomputed": 10.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9067",
+      "label": "u rate",
+      "expression": "10/144*100",
+      "expected": 6.944444444444445,
+      "recomputed": 6.944444444444445,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9067",
+      "label": "LFPR",
+      "expression": "144/200*100",
+      "expected": 72,
+      "recomputed": 72.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9068",
+      "label": "initial LF",
+      "expression": "200*.75",
+      "expected": 150,
+      "recomputed": 150.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9068",
+      "label": "initial U",
+      "expression": "150*.08",
+      "expected": 12,
+      "recomputed": 12.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9068",
+      "label": "final E",
+      "expression": "150-12-6",
+      "expected": 132,
+      "recomputed": 132.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9068",
+      "label": "final U",
+      "expression": "12-6+4",
+      "expected": 10,
+      "recomputed": 10.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9068",
+      "label": "u rate",
+      "expression": "10/142*100",
+      "expected": 7.042253521126761,
+      "recomputed": 7.042253521126761,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9068",
+      "label": "LFPR",
+      "expression": "142/200*100",
+      "expected": 71,
+      "recomputed": 71.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9070",
+      "label": "initial E",
+      "expression": "200*.75*.94",
+      "expected": 141,
+      "recomputed": 141.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9070",
+      "label": "final E",
+      "expression": "200*.70*.94",
+      "expected": 131.6,
+      "recomputed": 131.6,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9070",
+      "label": "E decline",
+      "expression": "200*(.75-.70)*.94",
+      "expected": 9.4,
+      "recomputed": 9.4,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9081",
+      "label": "hires",
+      "expression": "184-180",
+      "expected": 4,
+      "recomputed": 4.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9081",
+      "label": "exits",
+      "expression": "20-12-(184-180)",
+      "expected": 4,
+      "recomputed": 4.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9081",
+      "label": "initial LFPR",
+      "expression": "200/250*100",
+      "expected": 80,
+      "recomputed": 80.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9081",
+      "label": "final LFPR",
+      "expression": "(184+12)/250*100",
+      "expected": 78.4,
+      "recomputed": 78.4,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-366",
+      "label": "LF",
+      "expression": "84+6",
+      "expected": 90,
+      "recomputed": 90.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-366",
+      "label": "rate",
+      "expression": "6/90*100",
+      "expected": 6.666666666666667,
+      "recomputed": 6.666666666666667,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-FINALBOSS-4003",
+      "label": "LFPR",
+      "expression": "(126+14)/(126+14+60)*100",
+      "expected": 70,
+      "recomputed": 70.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-FINALBOSS-4003",
+      "label": "u rate",
+      "expression": "14/140*100",
+      "expected": 10,
+      "recomputed": 10.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9076",
+      "label": "lost jobs",
+      "expression": "100-95",
+      "expected": 5,
+      "recomputed": 5.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9076",
+      "label": "surplus",
+      "expression": "140-95",
+      "expected": 45,
+      "recomputed": 45.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9078",
+      "label": "bill growth",
+      "expression": "((24*90)/(20*100)-1)*100",
+      "expected": 8,
+      "recomputed": 8.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9079",
+      "label": "old unit cost",
+      "expression": "18/6",
+      "expected": 3,
+      "recomputed": 3.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9079",
+      "label": "new unit cost",
+      "expression": "21/7",
+      "expected": 3,
+      "recomputed": 3.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-375",
+      "label": "old surplus",
+      "expression": "112-88",
+      "expected": 24,
+      "recomputed": 24.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-ELITE-375",
+      "label": "new surplus",
+      "expression": "112-100",
+      "expected": 12,
+      "recomputed": 12.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9075",
+      "label": "new natural",
+      "expression": "1.5+3",
+      "expected": 4.5,
+      "recomputed": 4.5,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9085",
+      "label": "old gap",
+      "expression": "9-6",
+      "expected": 3,
+      "recomputed": 3.0,
+      "ok": true
+    },
+    {
+      "id": "ECON-NL-LEGENDARY-9085",
+      "label": "new gap",
+      "expression": "7-4",
+      "expected": 3,
+      "recomputed": 3.0,
+      "ok": true
+    },
+    {
+      "id": "PM2B4-NRU-L-002",
+      "label": "change",
+      "expression": "-1+.4",
+      "expected": -0.6,
+      "recomputed": -0.6,
+      "ok": true
+    }
+  ]
+}

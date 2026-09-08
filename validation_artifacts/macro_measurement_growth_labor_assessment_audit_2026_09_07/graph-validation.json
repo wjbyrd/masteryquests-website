@@ -1,0 +1,175 @@
+{
+  "ok": true,
+  "linkedQuestions": 12,
+  "namespacedRegistrations": 3,
+  "distinctImageBytes": 1,
+  "allApprovedAssetsVisuallyInspected": true,
+  "assetsUnchanged": true,
+  "pathChanges": 0,
+  "accessibilityChanges": 0,
+  "newAssets": 0,
+  "assets": [
+    {
+      "runtimePath": "question-assets/economic-growth-policy/GROWTH-01.webp",
+      "sha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+      "ok": true,
+      "visualEvidence": {
+        "axes": [
+          "Capital per worker, 0–100",
+          "Output per worker, 0–60"
+        ],
+        "A": [
+          20,
+          28.53
+        ],
+        "B": [
+          40,
+          36.37
+        ],
+        "shape": "Increasing, concave: equal added capital produces diminishing marginal output with other inputs fixed."
+      },
+      "descriptionAccurate": true
+    },
+    {
+      "runtimePath": "question-assets/productivity-measurement/GROWTH-01.webp",
+      "sha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+      "ok": true,
+      "visualEvidence": {
+        "axes": [
+          "Capital per worker, 0–100",
+          "Output per worker, 0–60"
+        ],
+        "A": [
+          20,
+          28.53
+        ],
+        "B": [
+          40,
+          36.37
+        ],
+        "shape": "Increasing, concave: equal added capital produces diminishing marginal output with other inputs fixed."
+      },
+      "descriptionAccurate": true
+    },
+    {
+      "runtimePath": "question-assets/sources-of-productivity/GROWTH-01.webp",
+      "sha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+      "ok": true,
+      "visualEvidence": {
+        "axes": [
+          "Capital per worker, 0–100",
+          "Output per worker, 0–60"
+        ],
+        "A": [
+          20,
+          28.53
+        ],
+        "B": [
+          40,
+          36.37
+        ],
+        "shape": "Increasing, concave: equal added capital produces diminishing marginal output with other inputs fixed."
+      },
+      "descriptionAccurate": true
+    }
+  ],
+  "questions": [
+    {
+      "id": "PM2B3-PROD-E-001",
+      "image": "question-assets/productivity-measurement/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-PROD-M-001",
+      "image": "question-assets/productivity-measurement/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-PROD-H-001",
+      "image": "question-assets/productivity-measurement/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-PROD-L-001",
+      "image": "question-assets/productivity-measurement/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-PROD-EB-002",
+      "image": "question-assets/productivity-measurement/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-PROD-FB-004",
+      "image": "question-assets/productivity-measurement/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": true
+    },
+    {
+      "id": "PM2B3-PROD-LB-002",
+      "image": "question-assets/productivity-measurement/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-SRC-EB-002",
+      "image": "question-assets/sources-of-productivity/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-SRC-FB-004",
+      "image": "question-assets/sources-of-productivity/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-POL-H-001",
+      "image": "question-assets/economic-growth-policy/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-POL-FB-006",
+      "image": "question-assets/economic-growth-policy/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    },
+    {
+      "id": "PM2B3-POL-LB-001",
+      "image": "question-assets/economic-growth-policy/GROWTH-01.webp",
+      "graphRequired": null,
+      "graphSafe": null,
+      "contentRevised": false
+    }
+  ],
+  "numericalGraphResult": {
+    "ok": true,
+    "method": "Separate reconstruction using inputs transcribed from the final stem; checked result, rounding, units, sign and economic interpretation against keyed option.",
+    "independentExpressions": [
+      "(36.37/28.53-1)*100"
+    ],
+    "independentResults": [
+      27.479845776375743
+    ],
+    "key": "27.5%; the same further capital increase would add less output"
+  },
+  "browserEvidence": "browser-validation.json",
+  "eligibilityDisposition": "The 12 existing image-linked records yield zero Trial by Graph-safe IDs. Preserve baseline eligibility; do not turn a primarily measurement/tabular audit into a graph-mode expansion."
+}

@@ -1,0 +1,1364 @@
+{
+  "preset": {
+    "id": "macro-measurement-growth",
+    "title": "Measurement, Growth & Labor",
+    "selectedConceptIds": [
+      "gdp-measurement",
+      "gdp-components",
+      "real-versus-nominal-gdp",
+      "limits-of-gdp",
+      "cpi-and-inflation-measurement",
+      "cpi-bias",
+      "cpi-versus-gdp-deflator",
+      "indexing-and-real-values",
+      "real-versus-nominal-interest-rates",
+      "living-standards-and-growth",
+      "productivity-measurement",
+      "sources-of-productivity",
+      "economic-growth-policy",
+      "unemployment-measurement",
+      "unemployment-types",
+      "labor-market-institutions",
+      "natural-rate-of-unemployment"
+    ]
+  },
+  "unique": 944,
+  "byConcept": {
+    "gdp-measurement": {
+      "unique": 73,
+      "objectives": {
+        "LO24.1": 29,
+        "LO24.2": 44
+      },
+      "difficulty": {
+        "easy": 22,
+        "medium": 13,
+        "hard": 11,
+        "elite": 8,
+        "legendary": 10,
+        "unknown": 9
+      },
+      "types": {
+        "definition": 8,
+        "interpretation": 10,
+        "trap": 17,
+        "multi-step": 10,
+        "calculation": 12,
+        "checkpoint": 6,
+        "integration": 1,
+        "repair": 6,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 7,
+        "medium": 7,
+        "hard": 7,
+        "elite": 8,
+        "legendary": 7,
+        "calculation": 6,
+        "boss": 19,
+        "legendaryBoss": 3,
+        "repairQuestions": 6,
+        "bridgeQuestions": 3
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "gdp-components": {
+      "unique": 63,
+      "objectives": {
+        "LO24.3": 48,
+        "MACRO.M2B1": 15
+      },
+      "difficulty": {
+        "easy": 16,
+        "medium": 15,
+        "hard": 12,
+        "elite": 4,
+        "legendary": 7,
+        "unknown": 9
+      },
+      "types": {
+        "definition": 5,
+        "interpretation": 9,
+        "application": 7,
+        "trap": 8,
+        "multi-step": 7,
+        "calculation": 18,
+        "repair": 6,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 9,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 4,
+        "calculation": 7,
+        "boss": 15,
+        "legendaryBoss": 3,
+        "repairQuestions": 6,
+        "bridgeQuestions": 3
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "real-versus-nominal-gdp": {
+      "unique": 49,
+      "objectives": {
+        "LO24.4": 36,
+        "MACRO.M2B1": 13
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 11,
+        "elite": 4,
+        "legendary": 9,
+        "unknown": 6
+      },
+      "types": {
+        "definition": 4,
+        "interpretation": 9,
+        "application": 5,
+        "calculation": 21,
+        "multi-step": 4,
+        "repair": 4,
+        "bridge": 2
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "calculation": 3,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 4,
+        "bridgeQuestions": 2
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "limits-of-gdp": {
+      "unique": 45,
+      "objectives": {
+        "LO24.5": 23,
+        "MACRO.M2B1": 22
+      },
+      "difficulty": {
+        "easy": 12,
+        "medium": 9,
+        "hard": 9,
+        "elite": 3,
+        "legendary": 9,
+        "unknown": 3
+      },
+      "types": {
+        "definition": 2,
+        "interpretation": 15,
+        "application": 22,
+        "calculation": 1,
+        "trap": 2,
+        "repair": 2,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 3,
+        "legendary": 6,
+        "boss": 12,
+        "legendaryBoss": 3,
+        "repairQuestions": 2,
+        "bridgeQuestions": 1
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "cpi-and-inflation-measurement": {
+      "unique": 60,
+      "objectives": {
+        "LO25.1": 60
+      },
+      "difficulty": {
+        "easy": 15,
+        "medium": 13,
+        "hard": 13,
+        "elite": 4,
+        "legendary": 9,
+        "unknown": 6
+      },
+      "types": {
+        "definition": 6,
+        "interpretation": 6,
+        "calculation": 26,
+        "multi-step": 8,
+        "trap": 1,
+        "application": 7,
+        "repair": 4,
+        "bridge": 2
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "calculation": 21,
+        "boss": 12,
+        "legendaryBoss": 3,
+        "repairQuestions": 4,
+        "bridgeQuestions": 2
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "cpi-bias": {
+      "unique": 47,
+      "objectives": {
+        "LO25.2": 35,
+        "LO25.3": 12
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 9,
+        "elite": 5,
+        "legendary": 9,
+        "unknown": 6
+      },
+      "types": {
+        "definition": 4,
+        "interpretation": 18,
+        "application": 12,
+        "trap": 3,
+        "multi-step": 3,
+        "integration": 1,
+        "repair": 4,
+        "bridge": 2
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 5,
+        "legendary": 6,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 4,
+        "bridgeQuestions": 2
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "cpi-versus-gdp-deflator": {
+      "unique": 43,
+      "objectives": {
+        "LO25.3": 27,
+        "LO25.2": 16
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 9,
+        "elite": 4,
+        "legendary": 9,
+        "unknown": 3
+      },
+      "types": {
+        "definition": 6,
+        "interpretation": 14,
+        "application": 16,
+        "multi-step": 1,
+        "integration": 3,
+        "repair": 2,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 2,
+        "bridgeQuestions": 1
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "indexing-and-real-values": {
+      "unique": 49,
+      "objectives": {
+        "LO25.4": 49
+      },
+      "difficulty": {
+        "easy": 11,
+        "medium": 11,
+        "hard": 12,
+        "elite": 3,
+        "legendary": 9,
+        "unknown": 3
+      },
+      "types": {
+        "definition": 2,
+        "application": 25,
+        "interpretation": 2,
+        "multi-step": 1,
+        "calculation": 16,
+        "repair": 2,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 3,
+        "legendary": 6,
+        "calculation": 7,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 2,
+        "bridgeQuestions": 1
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "real-versus-nominal-interest-rates": {
+      "unique": 46,
+      "objectives": {
+        "LO25.5": 46
+      },
+      "difficulty": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 10,
+        "elite": 4,
+        "legendary": 9,
+        "unknown": 3
+      },
+      "types": {
+        "definition": 3,
+        "interpretation": 9,
+        "application": 19,
+        "calculation": 8,
+        "multi-step": 3,
+        "integration": 1,
+        "repair": 2,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 6,
+        "calculation": 3,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 2,
+        "bridgeQuestions": 1
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "living-standards-and-growth": {
+      "unique": 56,
+      "objectives": {
+        "LO26.1": 56
+      },
+      "difficulty": {
+        "easy": 11,
+        "medium": 14,
+        "hard": 11,
+        "elite": 5,
+        "legendary": 9,
+        "unknown": 6
+      },
+      "types": {
+        "definition": 7,
+        "interpretation": 10,
+        "calculation": 22,
+        "multi-step": 8,
+        "application": 2,
+        "integration": 1,
+        "repair": 4,
+        "bridge": 2
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 5,
+        "legendary": 6,
+        "calculation": 6,
+        "boss": 12,
+        "legendaryBoss": 3,
+        "repairQuestions": 4,
+        "bridgeQuestions": 2
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "productivity-measurement": {
+      "unique": 53,
+      "objectives": {
+        "LO26.2": 53
+      },
+      "difficulty": {
+        "easy": 11,
+        "medium": 14,
+        "hard": 11,
+        "elite": 4,
+        "legendary": 10,
+        "unknown": 3
+      },
+      "types": {
+        "definition": 3,
+        "interpretation": 10,
+        "graph": 7,
+        "application": 7,
+        "calculation": 21,
+        "multi-step": 1,
+        "integration": 1,
+        "repair": 2,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 7,
+        "calculation": 6,
+        "boss": 12,
+        "legendaryBoss": 3,
+        "repairQuestions": 2,
+        "bridgeQuestions": 1
+      },
+      "assets": 1,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "sources-of-productivity": {
+      "unique": 72,
+      "objectives": {
+        "LO26.3": 72
+      },
+      "difficulty": {
+        "easy": 11,
+        "medium": 22,
+        "hard": 10,
+        "elite": 7,
+        "legendary": 10,
+        "unknown": 12
+      },
+      "types": {
+        "definition": 10,
+        "interpretation": 35,
+        "multi-step": 3,
+        "trap": 3,
+        "integration": 3,
+        "application": 4,
+        "graph": 2,
+        "repair": 6,
+        "bridge": 6
+      },
+      "poolCounts": {
+        "easy": 8,
+        "medium": 7,
+        "hard": 7,
+        "elite": 7,
+        "legendary": 7,
+        "boss": 21,
+        "legendaryBoss": 3,
+        "repairQuestions": 6,
+        "bridgeQuestions": 6
+      },
+      "assets": 1,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "economic-growth-policy": {
+      "unique": 50,
+      "objectives": {
+        "LO26.4": 50
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 15,
+        "hard": 9,
+        "elite": 4,
+        "legendary": 10,
+        "unknown": 3
+      },
+      "types": {
+        "interpretation": 25,
+        "application": 13,
+        "trap": 1,
+        "graph": 3,
+        "integration": 2,
+        "definition": 3,
+        "repair": 2,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 7,
+        "boss": 15,
+        "legendaryBoss": 3,
+        "repairQuestions": 2,
+        "bridgeQuestions": 1
+      },
+      "assets": 1,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "unemployment-measurement": {
+      "unique": 79,
+      "objectives": {
+        "LO29.1": 47,
+        "LO29.2": 31,
+        "LO29.1_LO29.2_LO29.5": 1
+      },
+      "difficulty": {
+        "easy": 13,
+        "medium": 13,
+        "hard": 21,
+        "elite": 10,
+        "legendary": 12,
+        "unknown": 10
+      },
+      "types": {
+        "definition": 8,
+        "interpretation": 22,
+        "trap": 5,
+        "multi-step": 12,
+        "calculation": 16,
+        "integration": 1,
+        "checkpoint": 5,
+        "repair": 5,
+        "bridge": 5
+      },
+      "poolCounts": {
+        "easy": 7,
+        "medium": 6,
+        "hard": 9,
+        "elite": 10,
+        "legendary": 9,
+        "calculation": 8,
+        "boss": 17,
+        "legendaryBoss": 3,
+        "repairQuestions": 5,
+        "bridgeQuestions": 5
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "unemployment-types": {
+      "unique": 57,
+      "objectives": {
+        "LO29.3": 57
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 18,
+        "elite": 5,
+        "legendary": 9,
+        "unknown": 7
+      },
+      "types": {
+        "definition": 9,
+        "interpretation": 15,
+        "application": 12,
+        "multi-step": 6,
+        "trap": 3,
+        "integration": 5,
+        "repair": 3,
+        "bridge": 4
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 5,
+        "legendary": 6,
+        "boss": 18,
+        "legendaryBoss": 3,
+        "repairQuestions": 3,
+        "bridgeQuestions": 4
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "labor-market-institutions": {
+      "unique": 58,
+      "objectives": {
+        "LO29.4": 58
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 20,
+        "elite": 4,
+        "legendary": 10,
+        "unknown": 6
+      },
+      "types": {
+        "interpretation": 23,
+        "application": 15,
+        "definition": 6,
+        "calculation": 5,
+        "integration": 4,
+        "repair": 2,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 7,
+        "boss": 20,
+        "legendaryBoss": 3,
+        "repairQuestions": 3,
+        "bridgeQuestions": 3
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "natural-rate-of-unemployment": {
+      "unique": 44,
+      "objectives": {
+        "LO29.5": 44
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 11,
+        "elite": 2,
+        "legendary": 9,
+        "unknown": 4
+      },
+      "types": {
+        "definition": 3,
+        "application": 26,
+        "interpretation": 8,
+        "multi-step": 1,
+        "calculation": 3,
+        "integration": 1,
+        "repair": 1,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 2,
+        "legendary": 6,
+        "boss": 11,
+        "legendaryBoss": 3,
+        "repairQuestions": 3,
+        "bridgeQuestions": 1
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    }
+  },
+  "difficulty": {
+    "easy": 195,
+    "medium": 204,
+    "hard": 207,
+    "elite": 80,
+    "legendary": 159,
+    "unknown": 99
+  },
+  "types": {
+    "definition": 89,
+    "interpretation": 240,
+    "trap": 43,
+    "multi-step": 68,
+    "calculation": 169,
+    "checkpoint": 11,
+    "integration": 24,
+    "repair": 57,
+    "bridge": 39,
+    "application": 192,
+    "graph": 12
+  },
+  "graphLinked": 12,
+  "composedCounts": {
+    "easy": 122,
+    "medium": 129,
+    "hard": 126,
+    "elite": 80,
+    "legendary": 108,
+    "easyBoss": 73,
+    "mediumBoss": 75,
+    "finalBoss": 81,
+    "legendaryBoss": 51,
+    "repair": 60,
+    "repairSeed": 0,
+    "bridge": 39,
+    "calculation": 67,
+    "integration": 0,
+    "challengeOpening": 0,
+    "challengeMiddle": 0,
+    "challengeFinal": 0,
+    "challengeLegendary": 0,
+    "challengeTotal": 0,
+    "graph": 12,
+    "graphSafe": 0,
+    "graphSafeByDifficulty": {
+      "easy": 0,
+      "medium": 0,
+      "hard": 0,
+      "elite": 0,
+      "legendary": 0
+    },
+    "fadingFortuneEligible": 565,
+    "fadingFortuneByDifficulty": {
+      "easy": 122,
+      "medium": 129,
+      "hard": 126,
+      "elite": 80,
+      "legendary": 108
+    },
+    "riskRewardEligible": 565,
+    "riskRewardByDifficulty": {
+      "easy": 122,
+      "medium": 129,
+      "hard": 126,
+      "elite": 80,
+      "legendary": 108
+    },
+    "assets": 3,
+    "totalCanonical": 944
+  },
+  "modes": {
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 122
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 129
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 126
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 73
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 75
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 81
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 60
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 39
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 122
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 129
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 126
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 60
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 39
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 122
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 129
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 126
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 60
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 39
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 122
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 129
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 126
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 122
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 129
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 126
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 60
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 39
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 108
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 51
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 122
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 129
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 126
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 73
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 75
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 81
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 60
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 39
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 0
+          }
+        ],
+        "deficiencies": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 0
+          }
+        ],
+        "issues": [],
+        "ok": false
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 565
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 565
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ]
+  },
+  "errors": [
+    "Trial by Graph: graphSafe needs 10, found 0"
+  ]
+}

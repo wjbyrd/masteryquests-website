@@ -1,0 +1,3733 @@
+[
+  {
+    "id": "ECON-NL-ELITE-303",
+    "concept": "gdp-measurement",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO24.2",
+    "type": "calculation",
+    "primarySkill": "intermediate_vs_final_goods",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: make value-added arithmetic support the full-chain interpretation.",
+    "numericProofs": [
+      {
+        "label": "bakery",
+        "expression": "310-180",
+        "expected": 130
+      },
+      {
+        "label": "chain",
+        "expression": "70+(180-70)+(310-180)",
+        "expected": 310
+      }
+    ],
+    "before": {
+      "q": "A farmer sells wheat to a miller for $60, the miller sells flour to a bakery for $110, and the bakery sells bread to consumers for $180. What is the value added by the bakery?",
+      "options": [
+        "$70",
+        "$110",
+        "$180",
+        "$350"
+      ],
+      "feedback": "The bakery's value added is final bread value minus flour input cost: 180 - 110 = 70.",
+      "aHash": "2dcb75d9e4bad2f1fd25c7e9e2a49c299306988a6a45c13fd7e6d3762a11eb4f"
+    },
+    "after": {
+      "q": "A mill sells $180 of flour made from $70 of current domestic grain. A baker uses all the flour in $310 of bread sold to households. What are the baker’s value added and GDP across the full domestic chain?",
+      "options": [
+        "$130 at the bakery; $310 across the chain",
+        "$240 at the bakery; $560 across the chain",
+        "$310 at the bakery; $310 across the chain",
+        "$130 at the bakery; $490 across the chain"
+      ],
+      "feedback": "The baker adds 310 - 180 = 130. Summing domestic value added gives 70 + (180 - 70) + 130 = 310, equal to the final sale. Intermediate sales cannot be added again.",
+      "aHash": "7ed3a005cc0d82ace1b90950ea6f96d911c8d3726c7cd7a152262928827e07d4"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9001",
+    "concept": "gdp-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.2",
+    "type": "trap",
+    "primarySkill": "gdp_counting_rules",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: replace two-country recognition with imported-input and value-added reconciliation.",
+    "numericProofs": [
+      {
+        "label": "domestic total",
+        "expression": "420000-150000",
+        "expected": 270000
+      },
+      {
+        "label": "assembly",
+        "expression": "420000-150000-90000",
+        "expected": 180000
+      }
+    ],
+    "before": {
+      "q": "A U.S. household buys a $45,000 car made in Japan, and a Japanese household buys a $50,000 tractor made in Iowa. What is the net direct effect on U.S. GDP from these two transactions?",
+      "options": [
+        "U.S. GDP rises by $50,000 because only the Iowa tractor is U.S. production",
+        "U.S. GDP rises by $95,000 because both purchases are final goods",
+        "U.S. GDP rises by $5,000 because exports minus imports equals $5,000",
+        "U.S. GDP falls by $45,000 because imports reduce GDP"
+      ],
+      "feedback": "GDP counts domestic production. The imported car is not U.S. production; the Iowa tractor is.",
+      "aHash": "425ae280b8b332da4cd8ba66f8482cd42a2aeb169670aabf68e730dc2f828592"
+    },
+    "after": {
+      "q": "A domestic assembler sells $420,000 of new equipment, using $150,000 of imported parts and $90,000 of current domestic components. A clerk adds all three values as domestic GDP. What correction reconciles final spending with domestic value added?",
+      "options": [
+        "$270,000 total domestic GDP, including $180,000 at assembly",
+        "$420,000 total domestic GDP, including $330,000 at assembly",
+        "$510,000 total domestic GDP, including $420,000 at assembly",
+        "$180,000 total domestic GDP, excluding the domestic component makers"
+      ],
+      "feedback": "Final spending of 420,000 less imported inputs of 150,000 yields 270,000 domestic value added. Assembly contributes 420,000 - 150,000 - 90,000 = 180,000; domestic component makers contribute the remaining 90,000. Do not count their output twice.",
+      "aHash": "53d61888bedac2d842c96705589e816f2b8b3cdba6234a494ed48002a66e2e20"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9003",
+    "concept": "gdp-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.2",
+    "type": "calculation",
+    "primarySkill": "intermediate_vs_final_goods",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: link intermediate goods, value added and residual production income.",
+    "numericProofs": [
+      {
+        "label": "value added",
+        "expression": "560-140",
+        "expected": 420
+      },
+      {
+        "label": "profit",
+        "expression": "560-140-250-90",
+        "expected": 80
+      }
+    ],
+    "before": {
+      "q": "A bakery buys flour for $90, pays workers $120, pays rent and interest of $40, and sells bread to households for $300. What is the bakery's value added?",
+      "options": [
+        "$210",
+        "$300",
+        "$250",
+        "$120"
+      ],
+      "feedback": "Value added equals final sales minus intermediate inputs: 300 - 90 = 210.",
+      "aHash": "dc763562bf5715ff83726e46ef2243f996110058fc9cc6374c95ac65b036e5db"
+    },
+    "after": {
+      "q": "A workshop sells $560 of new furniture after buying $140 of domestic lumber. Its wage bill is $250 and rent plus interest is $90. With no other costs or taxes, which value-added and profit account is consistent?",
+      "options": [
+        "$420 value added, including $80 profit",
+        "$560 value added, including $220 profit",
+        "$280 value added, including $80 profit",
+        "$420 value added, including $420 profit"
+      ],
+      "feedback": "Value added is final output less intermediate lumber: 560 - 140 = 420. Of that, wages and rent/interest absorb 340, leaving profit of 80. Subtracting wages when computing value added would remove income generated by production.",
+      "aHash": "97a966fb226d0a3461049f764411dc135d10064d9699f6d5ecbb9ebf2879f36e"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9009",
+    "concept": "gdp-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.2",
+    "type": "multi-step",
+    "primarySkill": "gdp_counting_rules",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: distinguish used asset from a new service and remove imported inputs.",
+    "numericProofs": [
+      {
+        "label": "GDP",
+        "expression": "96000-24000+6000",
+        "expected": 78000
+      }
+    ],
+    "before": {
+      "q": "A homeowner pays a contractor $12,000 for repairs, buys $4,000 of imported appliances, and sells an old table for $500. What is the direct effect on domestic GDP?",
+      "options": [
+        "$12,000",
+        "$16,000",
+        "$15,500",
+        "$12,500"
+      ],
+      "feedback": "The contractor's domestic repair service counts. Imported appliances do not add to domestic GDP, and the used table resale does not count.",
+      "aHash": "b08622c3255596a642de67b20552046a35198df5775dd4042eb6b81dc1185d7a"
+    },
+    "after": {
+      "q": "A renovation business bills households $96,000, including $24,000 of imported fixtures. It also brokers an old building for a $6,000 fee; the building sells for $310,000. Ignoring other inputs, what current domestic production and counting rule follow?",
+      "options": [
+        "$78,000; count domestic renovation value and the new brokerage service",
+        "$388,000; the old building becomes current output when sold",
+        "$102,000; imported fixtures count because households bought them",
+        "$72,000; services attached to used assets must also be excluded"
+      ],
+      "feedback": "Domestic renovation value is 96,000 - 24,000 = 72,000. The current brokerage service adds 6,000, while the old building itself is not new output. Total current domestic production is 78,000.",
+      "aHash": "4c1a8234ce29d5dcb766525d92c12a9d62cdb3aee9fd202a33f534b23efd3a2e"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9010",
+    "concept": "gdp-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.1",
+    "type": "multi-step",
+    "primarySkill": "income_expenditure_identity",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: infer missing income from sales plus unsold production.",
+    "numericProofs": [
+      {
+        "label": "GDP",
+        "expression": "74+6",
+        "expected": 80
+      },
+      {
+        "label": "profit",
+        "expression": "74+6-51-9",
+        "expected": 20
+      }
+    ],
+    "before": {
+      "q": "If GDP measured by expenditure is $26T and income data show wages of $15T, rent and interest of $4T, profits of $5T, and other production income of $2T, what does this show?",
+      "options": [
+        "Income and expenditure reconcile at $26T",
+        "Income is short by $2T",
+        "GDP should be $24T because other production income is excluded",
+        "GDP should be $30T because income and spending are added together"
+      ],
+      "feedback": "The income categories sum to $26T, matching expenditure GDP.",
+      "aHash": "2a5c59c2dd1dab6468f21b7caefc6af627e770acf625db1aeaac72a94678a6b0"
+    },
+    "after": {
+      "q": "A production audit reports $74 million of final sales and $6 million of new inventories. Domestic production income is $51 million in wages, $9 million in rent and interest, and unreported profit. With no imports, taxes or depreciation adjustments, which result closes both accounts?",
+      "options": [
+        "$80 million GDP and $20 million profit",
+        "$74 million GDP and $14 million profit",
+        "$86 million GDP and $26 million profit",
+        "$60 million GDP and $20 million profit"
+      ],
+      "feedback": "Current production includes the unsold 6 million, giving expenditure GDP of 80 million. Wages and rent/interest total 60 million, so residual profit is 20 million. Sales alone omit inventory investment.",
+      "aHash": "df3e0ae661d51106ca1d4d6e550fcb5d620476a88c40a49263126895f7dda04f"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9011",
+    "concept": "gdp-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.2",
+    "type": "trap",
+    "primarySkill": "gdp_counting_rules",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B/C: replace repeated used-good definition with timing and current-service accounting.",
+    "numericProofs": [
+      {
+        "label": "GDP",
+        "expression": "2000+28000",
+        "expected": 30000
+      }
+    ],
+    "before": {
+      "q": "A student says GDP is higher when a used car is resold because the buyer spends money and the seller receives income. What is the best correction?",
+      "options": [
+        "Used-car resale is not current production",
+        "All income transactions count in GDP",
+        "Used goods count if sold above market value",
+        "Only the buyer's spending counts, not the seller's income"
+      ],
+      "feedback": "GDP measures current production. Used goods were counted when first produced.",
+      "aHash": "1f4058806dde8747bf5de80583bbd8e31c69e5fbdb9c45810f814fc18f1601bf"
+    },
+    "after": {
+      "q": "A used machine changes hands for $40,000 through a broker charging $2,000. A new domestic machine worth $28,000 is produced but remains unsold. An analyst counts only the $40,000 resale as this year’s GDP. What is the corrected contribution?",
+      "options": [
+        "$30,000: brokerage service plus inventory investment",
+        "$42,000: resale plus brokerage service",
+        "$70,000: every transaction and unsold machine",
+        "$2,000: unsold output cannot count until purchased"
+      ],
+      "feedback": "The resale transfers an existing asset; the newly produced brokerage service counts. The unsold new machine is inventory investment when produced. Thus current GDP includes 2,000 + 28,000 = 30,000.",
+      "aHash": "1f9ec2dd0397e18b68ce7fe0214322e91fe83731fa2ba25bdaa51e24fecf1da8"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9000",
+    "concept": "gdp-components",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.3",
+    "type": "multi-step",
+    "primarySkill": "imports_exports_nx",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reverse the identity and reconcile a reported investment subcomponent.",
+    "numericProofs": [
+      {
+        "label": "investment",
+        "expression": "72-46-13-9+11",
+        "expected": 15
+      },
+      {
+        "label": "other investment",
+        "expression": "15-4",
+        "expected": 11
+      }
+    ],
+    "before": {
+      "q": "A country reports C = $18T, I = $4T, G = $7T, exports = $3T, imports = $5T, and $2T of unsold domestic output added to inventories already included in I. What is GDP, and what common mistake should be avoided?",
+      "options": [
+        "$27T; do not add inventories again",
+        "$29T; inventories should be added after the GDP identity",
+        "$31T; imports should be added because consumers bought them",
+        "$25T; exports should be excluded because foreigners bought them"
+      ],
+      "feedback": "GDP = 18 + 4 + 7 + (3 - 5) = 27. Inventories are already part of investment, so adding them again double counts.",
+      "aHash": "bc3016d9dfdc666d10bcc929d92a5f53b2744df3f543c1b18e2c9559c231d46d"
+    },
+    "after": {
+      "q": "An economy reports C = 46, G = 13, exports = 9, imports = 11, and GDP = 72, all in billions. A separate inventory report records 4 billion of new unsold output. What investment total reconciles the accounts, and how should the inventory figure be treated?",
+      "options": [
+        "I = 15; the 4 of inventories is included within that total",
+        "I = 19; add inventories after solving the identity",
+        "I = 7; subtract inventories twice to avoid unsold output",
+        "I = 37; imports should be added when solving for investment"
+      ],
+      "feedback": "The expenditure identity gives I = 72 - 46 - 13 - 9 + 11 = 15. Inventory investment is one part of I, leaving 11 in other investment; it is not an extra addition after reconciliation.",
+      "aHash": "88595ed5e6b4b3f4d4eb1fbf166b4d938bbcabc415f4323c0431e7deb653b5f3"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9004",
+    "concept": "gdp-components",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.3",
+    "type": "multi-step",
+    "primarySkill": "gdp_components_identity",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reconcile transfer-financed consumption and imports.",
+    "numericProofs": [
+      {
+        "label": "GDP",
+        "expression": "18+(7+3)-3",
+        "expected": 25
+      }
+    ],
+    "before": {
+      "q": "A government pays $80B to contractors to repair roads and sends $80B in unemployment benefits. Recipients spend half the benefits on domestic final goods and save the rest. What is the direct GDP increase described?",
+      "options": [
+        "$120B",
+        "$80B",
+        "$160B",
+        "$40B"
+      ],
+      "feedback": "Road repair is government purchases of $80B. Half of the transfers spent on domestic final goods adds $40B of consumption. Transfers themselves do not count.",
+      "aHash": "d2824a715fe9015ac863aea05cfa8f48903e12e62586068c3ab71a54bdf9f78c"
+    },
+    "after": {
+      "q": "A government purchases $18 million of new domestic flood barriers and pays $12 million in household benefits. Recipients spend $7 million on new domestic services and $3 million on imported goods, saving the rest. What GDP contribution and expenditure classification follow?",
+      "options": [
+        "$25 million; G = 18, C = 10, and M = 3",
+        "$37 million; benefits and recipient purchases both count",
+        "$28 million; imported purchases count only in C",
+        "$18 million; spending financed by benefits is excluded"
+      ],
+      "feedback": "The benefit payment itself is a transfer. Recipient purchases enter C = 7 + 3 = 10; M = 3 removes the imported goods. G = 18, so domestic GDP rises 18 + 10 - 3 = 25 million, without counting the transfer again.",
+      "aHash": "49621ce0d5a6e510e6cc7f2c7c80d3492148064b850eee701bbdcda70bace7f3"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9012",
+    "concept": "gdp-components",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.3",
+    "type": "multi-step",
+    "primarySkill": "inventory_investment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: distinguish inventory stock, inventory change and production timing.",
+    "numericProofs": [
+      {
+        "label": "inventory change",
+        "expression": "4-8",
+        "expected": -4
+      },
+      {
+        "label": "GDP",
+        "expression": "34+4-8",
+        "expected": 30
+      }
+    ],
+    "before": {
+      "q": "A domestic firm produces $2M in software, sells $1.2M to domestic households, $500,000 to foreign customers, and keeps $300,000 unsold. What is counted in domestic GDP?",
+      "options": [
+        "$2M",
+        "$1.2M",
+        "$1.7M",
+        "$1.5M"
+      ],
+      "feedback": "All current domestic production counts: consumption, exports, and inventory investment together equal $2M.",
+      "aHash": "373044d475856f13311ecaaa6fad6fda702f5a2f1e69fdc2b139f48ab40fce50"
+    },
+    "after": {
+      "q": "At the start of a year, a producer has $8 million of goods made last year. It produces $30 million this year and sells $34 million, leaving $4 million in inventory. With unchanged prices, no imports and all sales to final users, which GDP account is correct?",
+      "options": [
+        "$30 million: final sales 34 plus inventory investment of -4",
+        "$34 million: sales determine the production year",
+        "$38 million: add beginning inventories to new output",
+        "$42 million: add beginning inventories to final sales"
+      ],
+      "feedback": "Inventory investment is the change in stock: 4 - 8 = -4. Sales of 34 plus inventory investment of -4 equal current production of 30. Selling previously produced goods does not create output again.",
+      "aHash": "16432430cd718e958b5bcd7f72b9bcfd04230b0cf57fd013566ceac91f0b1c48"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9017",
+    "concept": "gdp-components",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.3",
+    "type": "trap",
+    "primarySkill": "imports_exports_nx",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: distinguish offsetting imports from additional domestic services.",
+    "numericProofs": [
+      {
+        "label": "GDP revision",
+        "expression": "6+2-6",
+        "expected": 2
+      }
+    ],
+    "before": {
+      "q": "If C rises by $2T entirely because households buy imports, what happens to GDP through the expenditure identity?",
+      "options": [
+        "GDP is unchanged because C rises by $2T and NX falls by $2T",
+        "GDP rises by $2T because consumption rises",
+        "GDP falls by $2T because imports are bad",
+        "GDP rises by $4T because trade expands"
+      ],
+      "feedback": "Imports enter C but are subtracted in NX, so domestic production is unchanged.",
+      "aHash": "6801cb573d70ee36e10511a39e98d8dfb99d05e0acd73d439160b977776b021e"
+    },
+    "after": {
+      "q": "A revision adds $6 billion of imported household appliances to consumption and records $2 billion of previously omitted current domestic installation services. The same imported appliances were missing from M. How should measured GDP change after all corrections?",
+      "options": [
+        "Rise $2 billion; imported spending cancels while domestic installation remains",
+        "Rise $8 billion; all added consumption is domestic output",
+        "Fall $4 billion; imports are subtracted without adding their spending",
+        "Remain unchanged; every correction associated with imports cancels"
+      ],
+      "feedback": "C rises by 8 billion and M by 6 billion. The net 2-billion increase is the newly measured domestic service. Subtracting imports removes foreign production, not the associated domestic activity.",
+      "aHash": "dc60eefd303ed055e509cfa0aee90807b4460897d24db32672e65230aeb90094"
+    }
+  },
+  {
+    "id": "PM2B1-RNGDP-H-002",
+    "concept": "real-versus-nominal-gdp",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MACRO.M2B1",
+    "type": "calculation",
+    "primarySkill": "real_growth_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B/D: replace an exam-parallel scenario with index-scaling error diagnosis and growth.",
+    "numericProofs": [
+      {
+        "label": "real",
+        "expression": "864/1.2",
+        "expected": 720
+      },
+      {
+        "label": "growth",
+        "expression": "(720/640-1)*100",
+        "expected": 12.5
+      }
+    ],
+    "before": {
+      "q": "Nominal GDP rises from $600 billion to $660 billion while the GDP deflator rises from 100 to 105. To one decimal place, what is real-GDP growth?",
+      "options": [
+        "5.0%",
+        "10.0%",
+        "15.5%",
+        "4.8%"
+      ],
+      "feedback": "Real-GDP growth equals the change in real GDP divided by the initial real GDP.",
+      "aHash": "97c436969c6122db407a123ed21e5bda51ecd6a78f88d32d20a7eab2a0586a53"
+    },
+    "after": {
+      "q": "An accountant divides current nominal GDP of $864 billion by a deflator of 120 and reports real GDP of $7.2 billion. Last year real GDP was $640 billion. Which correction and growth rate are right?",
+      "options": [
+        "$7.2 billion real GDP; 98.9% decline",
+        "$864 billion real GDP; 35% growth",
+        "$720 billion real GDP; 20% growth",
+        "$720 billion real GDP; 12.5% growth"
+      ],
+      "feedback": "An index with base 100 requires dividing by 120/100, not 120: 864/1.2 = 720. Real growth is (720 - 640)/640 = 12.5%. The deflator’s level is not the output growth rate.",
+      "aHash": "3d70df9dfd0ab66361c850ec24f3b5fd2b70f1c55098a427a24ceed9d9e9ed12"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-315",
+    "concept": "real-versus-nominal-gdp",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO24.4",
+    "type": "interpretation",
+    "primarySkill": "gdp_deflator",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: infer the price component rather than merely assert both rose.",
+    "numericProofs": [
+      {
+        "label": "deflator growth",
+        "expression": "(1.155/1.05-1)*100",
+        "expected": 10
+      }
+    ],
+    "before": {
+      "q": "Real GDP rises by 4%, while nominal GDP rises by 9%. What is the most reasonable interpretation?",
+      "options": [
+        "Output rose and the price level also rose",
+        "Only output rose",
+        "Only prices rose",
+        "Both output and prices fell"
+      ],
+      "feedback": "Real GDP captures output growth; nominal GDP rising faster suggests prices rose too.",
+      "aHash": "3f3b5de5c06e65aed8801d853ef7e4eef77ee92cb4097b15b54dc239e1961ab3"
+    },
+    "after": {
+      "q": "Real GDP rises 5% while nominal GDP rises 15.5%. A report calls the full nominal increase output growth. What price change and correction follow?",
+      "options": [
+        "Deflator rises 10%; real production rose 5%",
+        "Deflator rises 10.5%; real production rose 15.5%",
+        "Deflator rises 20.5%; real production rose 5%",
+        "Deflator is unchanged; the two growth rates use different units"
+      ],
+      "feedback": "The price-index ratio is 1.155/1.05 = 1.10. Thus the deflator rises 10%, while the stated real production increase remains 5%. Price and quantity growth combine multiplicatively.",
+      "aHash": "e99186353446f00f8447dec51fbe8303909a916b59035c1b875b24cf36103b09"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9005",
+    "concept": "real-versus-nominal-gdp",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.4",
+    "type": "calculation",
+    "primarySkill": "gdp_deflator",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reverse a multi-period nominal/real/price account.",
+    "numericProofs": [
+      {
+        "label": "real initial",
+        "expression": "468/1.3",
+        "expected": 360
+      },
+      {
+        "label": "real later",
+        "expression": "360*1.1",
+        "expected": 396
+      },
+      {
+        "label": "deflator",
+        "expression": "475.2/396*100",
+        "expected": 120
+      }
+    ],
+    "before": {
+      "q": "Nominal GDP rises from $24T to $30T while the GDP deflator rises from 120 to 150. What happens to real GDP?",
+      "options": [
+        "It is unchanged",
+        "It rises by 25%",
+        "It falls by 20%",
+        "It rises by 5%"
+      ],
+      "feedback": "Initial real GDP = 24/1.20 = 20. New real GDP = 30/1.50 = 20. Real GDP is unchanged.",
+      "aHash": "2eb953560d2aee9c96090261017ebe948bbd5a91ac4e77d6b95c43634e63f109"
+    },
+    "after": {
+      "q": "A country’s nominal GDP is $468 billion and its deflator is 130. Next year real GDP rises 10%, but nominal GDP is $475.2 billion. Which new deflator and interpretation reconcile these facts?",
+      "options": [
+        "120; real output rises while the domestic price level falls",
+        "132; nominal and real growth must move together",
+        "145.2; add real growth to the old deflator",
+        "120; the lower deflator proves real production fell"
+      ],
+      "feedback": "Initial real GDP is 468/1.30 = 360. It grows to 396; the new deflator is 475.2/396 × 100 = 120. Output grew despite a decline in the price index from 130 to 120.",
+      "aHash": "a1d80e5c684fde88914f92bdbb348508d8c2a305efca43d6b1c13b75adb28be5"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9006",
+    "concept": "real-versus-nominal-gdp",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.4",
+    "type": "calculation",
+    "primarySkill": "nominal_vs_real_gdp",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: infer missing quantity before real valuation and price-index reconstruction.",
+    "numericProofs": [
+      {
+        "label": "visits",
+        "expression": "(6000-60*50)/30",
+        "expected": 100
+      },
+      {
+        "label": "real",
+        "expression": "60*40+100*20",
+        "expected": 4400
+      },
+      {
+        "label": "deflator",
+        "expression": "6000/4400*100",
+        "expected": 136.36363636363637
+      }
+    ],
+    "before": {
+      "q": "An economy produces 100 computers at $1,000 and 500 meals at $20 in the base year. This year it produces 120 computers at $900 and 550 meals at $24. What is this year's real GDP using base-year prices?",
+      "options": [
+        "$131,000",
+        "$121,200",
+        "$108,000",
+        "$145,200"
+      ],
+      "feedback": "Real GDP = 120($1,000) + 550($20) = $120,000 + $11,000 = $131,000.",
+      "aHash": "01410a5c88bbb862073234d4970b70597d8e96bb5cdfff28145f89b11654d819"
+    },
+    "after": {
+      "q": "A workshop economy makes pumps and repair visits. Base prices are $40 and $20. Current quantities are 60 pumps and an unreported number of visits; current prices are $50 and $30. Current nominal GDP is $6,000. What real GDP and deflator follow?",
+      "options": [
+        "$4,400 real GDP; deflator about 136.4",
+        "$6,000 real GDP; deflator 100",
+        "$4,000 real GDP; deflator 150",
+        "$4,400 real GDP; deflator about 73.3"
+      ],
+      "feedback": "Pumps account for 60 × 50 = 3,000 nominal dollars, leaving 3,000/30 = 100 visits. At base prices real GDP is 60 × 40 + 100 × 20 = 4,400. The deflator is 6,000/4,400 × 100 ≈ 136.4.",
+      "aHash": "1e6868698783046ecc2d48d4664ddb17b479cb76ef224c17017f936b848bd88f"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9007",
+    "concept": "real-versus-nominal-gdp",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.4",
+    "type": "calculation",
+    "primarySkill": "nominal_vs_real_gdp",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: missing quantity and current-price reconstruction.",
+    "numericProofs": [
+      {
+        "label": "second quantity",
+        "expression": "(2400-80*10)/20",
+        "expected": 80
+      },
+      {
+        "label": "nominal",
+        "expression": "80*12+80*30",
+        "expected": 3360
+      }
+    ],
+    "before": {
+      "q": "An economy produces 120 computers at $900 and 550 meals at $24 this year. What is this year's nominal GDP?",
+      "options": [
+        "$121,200",
+        "$131,000",
+        "$145,200",
+        "$108,000"
+      ],
+      "feedback": "Nominal GDP = 120($900) + 550($24) = $108,000 + $13,200 = $121,200.",
+      "aHash": "408e5e8355ad083a025c5b9d5359769e2db8c60dd1e125100f0ba237bebefd97"
+    },
+    "after": {
+      "q": "Two new domestic goods have current prices of $12 and $30 and base prices of $10 and $20. Output of the first is 80 units; total real GDP is $2,400. A report calls $2,400 current nominal GDP. What is the correct nominal total and source of the difference?",
+      "options": [
+        "$3,360; recover 80 units of the second good and value both at current prices",
+        "$2,880; raise all real output by the first good’s price increase",
+        "$2,400; real and nominal GDP use the same quantities, so they are equal",
+        "$4,320; current prices must be applied to the dollar value of real GDP"
+      ],
+      "feedback": "Base-price output of the first good is 800, leaving 1,600/20 = 80 units of the second. Nominal GDP is 80 × 12 + 80 × 30 = 3,360. The same quantities have different values at different price vectors.",
+      "aHash": "7027b1b129e4ed9309d21c430206f5e478481587b1993cae6198b839706869c1"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9013",
+    "concept": "real-versus-nominal-gdp",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.4",
+    "type": "interpretation",
+    "primarySkill": "gdp_deflator",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: opposite nominal/real movement with exact index interpretation.",
+    "numericProofs": [
+      {
+        "label": "real growth",
+        "expression": "(1.08/1.125-1)*100",
+        "expected": -4
+      }
+    ],
+    "before": {
+      "q": "If nominal GDP rises by 12% while real GDP rises by 3%, what is the best approximate interpretation?",
+      "options": [
+        "Most of the increase reflects inflation, not output",
+        "Real output fell sharply",
+        "Prices must have fallen by 9%",
+        "GDP cannot be compared over time"
+      ],
+      "feedback": "Nominal GDP reflects price and output changes; real GDP isolates output. The gap mostly reflects inflation.",
+      "aHash": "0a6acccf9ca6a7898c6c948a0e71020c3ad4a244f4e7bca2a53c26487066e04c"
+    },
+    "after": {
+      "q": "Nominal GDP grows 8% and the GDP deflator grows 12.5%. Population is unchanged. Which conclusion best evaluates the claim that average real production rose?",
+      "options": [
+        "Real GDP per person falls 4%; nominal growth does not establish output growth",
+        "Real GDP per person falls 4.5%; subtracting rates gives an exact result",
+        "Real GDP per person rises 8%; population did not change",
+        "Real GDP per person rises 20.5%; combine both positive rates"
+      ],
+      "feedback": "The real-output ratio is 1.08/1.125 = 0.96, a 4% fall. With population fixed, real GDP per person falls by the same proportion. Nominal output rose only because the price increase exceeded the real contraction.",
+      "aHash": "3da4f703ec9358e8be616d77f4c25ced1f29d5ae909f40f2de76aed343c3fe97"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9022",
+    "concept": "real-versus-nominal-gdp",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.4",
+    "type": "interpretation",
+    "primarySkill": "gdp_deflator",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: multi-period output/price reconstruction and base-versus-period distinction.",
+    "numericProofs": [
+      {
+        "label": "price factor",
+        "expression": "1.32/1.1",
+        "expected": 1.2
+      },
+      {
+        "label": "final deflator",
+        "expression": "125*1.32/1.1",
+        "expected": 150
+      }
+    ],
+    "before": {
+      "q": "If an economy's nominal GDP doubles while real GDP rises by only 20%, what must be true?",
+      "options": [
+        "Much of the nominal increase came from higher prices",
+        "Output must have doubled",
+        "The GDP deflator must have fallen",
+        "Imports must have equaled exports"
+      ],
+      "feedback": "Nominal GDP reflects prices and quantities; real GDP shows output grew much less than nominal GDP.",
+      "aHash": "e776bff14232fec0bec552f348c08caf5b2452a7f366c8e8582ea442f7cb2cae"
+    },
+    "after": {
+      "q": "Nominal GDP rises 32% over two years. Real GDP rises 10% in the first year and is unchanged in the second. The deflator started at 125. Which final deflator and cumulative price change follow?",
+      "options": [
+        "150; the domestic price level rose 20%",
+        "165; the domestic price level rose 32%",
+        "152.5; subtracting growth rates gives an exact 22% price rise",
+        "150; the domestic price level rose 50% during these two years"
+      ],
+      "feedback": "Real GDP’s cumulative factor is 1.10. The price factor is 1.32/1.10 = 1.20, giving deflator 125 × 1.20 = 150. A level of 150 is 50% above the base year, but only 20% above the initial 125.",
+      "aHash": "2a74198ee826d75eab1990ad0b1e76110f2a71bdbb55e5c000f600cff4bd2dee"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARYBOSS-9103",
+    "concept": "real-versus-nominal-gdp",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "LO24.4",
+    "type": "calculation",
+    "primarySkill": "gdp_deflator",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B/C: remove literal embedded answer options and improve independent checkpoint reasoning.",
+    "numericProofs": [
+      {
+        "label": "real first",
+        "expression": "715/1.3",
+        "expected": 550
+      },
+      {
+        "label": "real last",
+        "expression": "756/1.4",
+        "expected": 540
+      },
+      {
+        "label": "real growth",
+        "expression": "(540/550-1)*100",
+        "expected": -1.8181818181818181
+      }
+    ],
+    "before": {
+      "q": "Nominal GDP rises from $40 trillion to $48 trillion, and the GDP deflator rises from 125 to 150. What happens to real GDP? Options: It is unchanged at $32 trillion. || It rises from $32 trillion to $48 trillion. || It rises from $40 trillion to $48 trillion. || It falls from $32 trillion to $30 trillion.",
+      "options": [
+        "It is unchanged at $32T",
+        "It rises from $32T to $48T",
+        "It rises from $40T to $48T",
+        "It falls from $32T to $30T"
+      ],
+      "feedback": "Initial real GDP = 40/1.25 = 32. New real GDP = 48/1.50 = 32.",
+      "aHash": "5f1372c2cc908bb5b8cfc720b7d5188e178d01f61aaadfec563f70491e124724"
+    },
+    "after": {
+      "q": "A statistical office reports nominal GDP of $715 billion with a deflator of 130, followed by $756 billion with a deflator of 140. Which real-output comparison is consistent, to one decimal place?",
+      "options": [
+        "Real GDP falls from $550 billion to $540 billion, about 1.8%",
+        "Real GDP rises from $550 billion to $756 billion, about 37.5%",
+        "Real GDP rises from $715 billion to $756 billion, about 5.7%",
+        "Real GDP is unchanged because nominal GDP and prices both rise"
+      ],
+      "feedback": "Deflate each observation: 715/1.30 = 550 and 756/1.40 = 540. The change is -10/550 × 100 ≈ -1.8%. Higher nominal GDP does not prevent real output from falling.",
+      "aHash": "6bc6338466659cdb46421b88364c5110c7b319d97fe0e04aaef94d51c546b5dd"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9014",
+    "concept": "limits-of-gdp",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.5",
+    "type": "interpretation",
+    "primarySkill": "gdp_wellbeing_limits",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: integrate output, hours and a disciplined welfare inference.",
+    "numericProofs": [
+      {
+        "label": "first output",
+        "expression": "40*1100",
+        "expected": 44000
+      },
+      {
+        "label": "second output",
+        "expression": "50*800",
+        "expected": 40000
+      }
+    ],
+    "before": {
+      "q": "Country A has GDP per person of $70,000 but severe pollution, long work hours, and high inequality. Country B has GDP per person of $60,000 with cleaner air, more leisure, and broader access to services. What is the best conclusion?",
+      "options": [
+        "GDP per person alone cannot settle which country has higher well-being",
+        "Country A must have higher well-being because GDP per person is higher",
+        "Country B must have higher GDP once adjusted",
+        "GDP is useless because it does not measure anything important"
+      ],
+      "feedback": "GDP per person is useful but incomplete because it misses leisure, pollution, inequality, and other quality-of-life issues.",
+      "aHash": "1e1f339786fe824df6c1df322ffaa3ef1bf17a6ec86980fcd6080e62ec9977a3"
+    },
+    "after": {
+      "q": "Two regions report real GDP per person of $44,000 and $40,000. In the first, output per hour is $40 and annual hours per resident are 1,100; in the second they are $50 and 800. Which comparison is supported without assigning a value to leisure?",
+      "options": [
+        "The first has higher output per person; the second has higher hourly productivity, so welfare is not ranked",
+        "The first is more productive per hour because its GDP per person is higher",
+        "The second has higher GDP per person because it is more productive per hour",
+        "The first has higher overall welfare by exactly 10%"
+      ],
+      "feedback": "The products 40 × 1,100 = 44,000 and 50 × 800 = 40,000 reconcile the figures. More hours explain the first region’s higher average output despite lower hourly productivity. Neither GDP nor these hours alone values all welfare differences.",
+      "aHash": "f2b091c284c0f6c2925f6e48723207202b6ab40cf239af767d7d79db45beed22"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9015",
+    "concept": "limits-of-gdp",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO24.5",
+    "type": "interpretation",
+    "primarySkill": "gdp_wellbeing_limits",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: distinguish a flow change, lost wealth and welfare rather than repeat a disaster slogan.",
+    "numericProofs": [
+      {
+        "label": "GDP change",
+        "expression": "12-5",
+        "expected": 7
+      }
+    ],
+    "before": {
+      "q": "A country rebuilds after a flood. Construction spending raises GDP, but households have lost homes and possessions. What does this show?",
+      "options": [
+        "GDP can rise even while welfare falls",
+        "GDP must fall whenever disaster occurs",
+        "GDP subtracts the value of destroyed property automatically",
+        "Rebuilding is excluded because it follows a disaster"
+      ],
+      "feedback": "GDP counts current production but does not fully subtract the welfare loss from destruction.",
+      "aHash": "cc47017eab67be9c1699f1f743eb4a3e3e187dc4305c48c984f1b517dc8dc8ab"
+    },
+    "after": {
+      "q": "After a storm, rebuilding adds $12 million of current production while lost business activity reduces other current production by $5 million. Destroyed existing buildings were worth $30 million. Which GDP and welfare statement is defensible?",
+      "options": [
+        "GDP is $7 million higher than otherwise; this does not establish a welfare improvement",
+        "GDP is $23 million lower because destroyed wealth is subtracted from current production",
+        "GDP is $12 million higher; lost current production is irrelevant",
+        "GDP is $37 million higher because rebuilding replaces the destroyed stock"
+      ],
+      "feedback": "The change in current production is 12 - 5 = 7 million. Destruction of existing wealth is a separate loss, not a negative item of current production. Higher measured GDP therefore does not establish higher well-being.",
+      "aHash": "7f3aabfada85488910ab56ad5ae96de9ecda317314d93a6414b04583c56f75a0"
+    }
+  },
+  {
+    "id": "PM2B1-GDPL-L-002",
+    "concept": "limits-of-gdp",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MACRO.M2B1",
+    "type": "application",
+    "primarySkill": "marketization_free_services",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: quantify marketization change and limit the welfare inference.",
+    "numericProofs": [
+      {
+        "label": "GDP change",
+        "expression": "-9+2",
+        "expected": -7
+      }
+    ],
+    "before": {
+      "q": "A free digital service replaces a paid service while users receive greater benefit. Measured GDP falls. What does this illustrate?",
+      "options": [
+        "Real GDP automatically measures every quality improvement in a free service",
+        "Lower recorded spending proves every user receives less benefit from translation",
+        "Market spending can fall even when consumer benefit rises",
+        "The free digital service must be recorded as an export to foreign users"
+      ],
+      "feedback": "Moving activity into or out of markets can change GDP even when useful services or consumer benefit move differently.",
+      "aHash": "1632072c7a505282117811373649b1dd9c8921182e7e1e6a9fe0e8e060844479"
+    },
+    "after": {
+      "q": "A free translation tool replaces $9 million of paid translation services. Users report more completed translations and less effort; domestic firms produce $2 million of new paid implementation services. No other output changes. Which claim is supported?",
+      "options": [
+        "Measured GDP falls $9 million; the implementation services do not count",
+        "Measured GDP rises because the number of translations rose",
+        "Measured GDP falls $7 million; the value of users’ net welfare gain is not determined",
+        "Measured GDP falls $7 million, proving welfare fell by $7 million"
+      ],
+      "feedback": "The measured output change is -9 + 2 = -7 million. Greater use and convenience can improve welfare despite reduced market spending, but the stated information does not price the total welfare change.",
+      "aHash": "d22d26639d81004eaa9508e742e168ff737e84e96d0df21ce2da801f06dd4d75"
+    }
+  },
+  {
+    "id": "P52A-CPI-M-002",
+    "concept": "cpi-and-inflation-measurement",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO25.1",
+    "type": "calculation",
+    "primarySkill": "inflation_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B: replace an exact legacy match to the simple exam item with denominator-error diagnosis.",
+    "numericProofs": [
+      {
+        "label": "inflation",
+        "expression": "(189-175)/175*100",
+        "expected": 8
+      }
+    ],
+    "before": {
+      "q": "The CPI rises from 150 to 159. The inflation rate is:",
+      "options": [
+        "5.7 percent.",
+        "159 percent.",
+        "6 percent.",
+        "9 percent."
+      ],
+      "feedback": "Inflation = (159 − 150)/150 = 6 percent.",
+      "aHash": "23dfe6ffb21607df50e50b52b476e398e1c69303503344a333b3bb641e0a0ec7"
+    },
+    "after": {
+      "q": "An index moves from 175 to 189. A report calls the 14-point rise “14 percent inflation.” Which correction uses the proper comparison?",
+      "options": [
+        "7.4%, because the 14-point rise is divided by 189",
+        "14%, because one index point is one percent",
+        "8%, because the 14-point rise is divided by 175",
+        "89%, because every comparison must begin at 100"
+      ],
+      "feedback": "Inflation is the change relative to the previous index: (189 - 175)/175 × 100 = 8%. Index points and percentage changes are different.",
+      "aHash": "6d99bb30b7ccac872080b27096461817cb6d5e02e108458ae58c9193714542d5"
+    }
+  },
+  {
+    "id": "P52A-CPI-M-005",
+    "concept": "cpi-and-inflation-measurement",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO25.1",
+    "type": "interpretation",
+    "primarySkill": "cpi_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B: correct the false inference from physical units to expenditure weights.",
+    "numericProofs": [
+      {
+        "label": "base cost",
+        "expression": "2*4+12",
+        "expected": 20
+      },
+      {
+        "label": "current cost",
+        "expression": "2*4.4+12",
+        "expected": 20.8
+      },
+      {
+        "label": "CPI",
+        "expression": "20.8/20*100",
+        "expected": 104
+      }
+    ],
+    "before": {
+      "q": "A fixed basket contains twice as many units of food as transportation. Food prices rise 10 percent and transportation prices do not change. Which statement is best?",
+      "options": [
+        "‘The CPI must rise exactly 10 percent.’",
+        "‘Transportation receives the larger weight because its price did not change.’",
+        "‘The CPI cannot change unless every item price changes.’",
+        "The basket cost rises, with food receiving greater weight because more units are in the basket."
+      ],
+      "feedback": "CPI weights reflect the quantities in the fixed basket, so the larger food quantity matters more.",
+      "aHash": "fd8e2455b5ef591fe979b457f242f0597f69aa75fcd2609d7918ebc2aceb2484"
+    },
+    "after": {
+      "q": "A fixed basket has two meals at a base price of $4 each and one fare at $12. Meal prices rise 10%; the fare is unchanged. What CPI results, with the base set to 100?",
+      "options": [
+        "106.7; meals were two-thirds of the units",
+        "110; use the price change of the only item that rose",
+        "140; the meal expenditure weight is the inflation rate",
+        "104; meals had 40% of base basket spending"
+      ],
+      "feedback": "Base cost is 2 × 4 + 12 = 20. Current cost is 2 × 4.40 + 12 = 20.80, giving CPI 104. The relevant weight is the 8/20 spending share, not the two-of-three item count.",
+      "aHash": "dd50efc2547a26ffbfd1aa251aad80d92292e8efe7594ffe51ab06cb65c00cdd"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-321",
+    "concept": "cpi-and-inflation-measurement",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO25.1",
+    "type": "calculation",
+    "primarySkill": "inflation_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reverse the basket base and connect the new index to inflation.",
+    "numericProofs": [
+      {
+        "label": "base",
+        "expression": "750/1.25",
+        "expected": 600
+      },
+      {
+        "label": "CPI",
+        "expression": "810/600*100",
+        "expected": 135
+      },
+      {
+        "label": "inflation",
+        "expression": "(810/750-1)*100",
+        "expected": 8
+      }
+    ],
+    "before": {
+      "q": "The CPI is 180 in year 1, 198 in year 2, and 207.9 in year 3. What is the inflation rate from year 2 to year 3?",
+      "options": [
+        "5%",
+        "10%",
+        "15.5%",
+        "27.9%"
+      ],
+      "feedback": "Inflation = (207.9 - 198)/198 x 100 = 5%.",
+      "aHash": "d1ce334b6a7f364b1e97ebb9e661f6d4cf6e20aa741aba4b8f198417aea18326"
+    },
+    "after": {
+      "q": "A basket costs $750 when the CPI is 125. One year later the same basket costs $810. Which new index and claim about inflation are correct?",
+      "options": [
+        "CPI 135; inflation is 8%, although the index rose 10 points",
+        "CPI 108; inflation is 8%, because the old index resets each year",
+        "CPI 135; inflation is 10%, matching the index-point increase",
+        "CPI 162; inflation is 35%, measured from the base year"
+      ],
+      "feedback": "The unchanged base-basket cost is 750/1.25 = 600. The new index is 810/600 × 100 = 135. The 10-point increase is 10/125 = 8%, not 10%.",
+      "aHash": "d5b148d753b658f5efbc552278687d11d6b6e323586721d9bb0ba0bb9a89c46a"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9023",
+    "concept": "cpi-and-inflation-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.1",
+    "type": "calculation",
+    "primarySkill": "cpi_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reconstruct a missing price and chain the basket index to annual inflation.",
+    "numericProofs": [
+      {
+        "label": "base",
+        "expression": "3*8+2*18",
+        "expected": 60
+      },
+      {
+        "label": "repair price",
+        "expression": "(60*1.35-3*9)/2",
+        "expected": 27
+      },
+      {
+        "label": "inflation",
+        "expression": "(81/72-1)*100",
+        "expected": 12.5
+      }
+    ],
+    "before": {
+      "q": "A CPI basket has 6 gallons of gas and 4 meals. Base prices are $3 per gallon and $12 per meal. Current prices are $4.50 per gallon and $15 per meal. What is the current CPI?",
+      "options": [
+        "131.82",
+        "137.50",
+        "151.20",
+        "127.27"
+      ],
+      "feedback": "Base cost = 6(3)+4(12)=66. Current cost = 6(4.5)+4(15)=87. CPI = 100 x 87/66 = 131.82.",
+      "aHash": "5e7e88c140b5c2f5f715fe83737e8e34ea07555e1abcc3c9631c4820e65969eb"
+    },
+    "after": {
+      "q": "A fixed basket contains 3 tickets and 2 repairs. Base prices are $8 and $18. Last year the basket cost $72. This year its CPI is 135 and each ticket costs $9. What repair price and annual inflation rate are implied?",
+      "options": [
+        "$27 per repair and 12.5% inflation",
+        "$27 per repair and 35% inflation",
+        "$24 per repair and 12.5% inflation",
+        "$40.50 per repair and 35% inflation"
+      ],
+      "feedback": "Base cost is 3 × 8 + 2 × 18 = 60. CPI 135 implies current cost 81. After ticket spending of 27, the two repairs cost 54, or 27 each. Inflation since last year is (81 - 72)/72 = 12.5%.",
+      "aHash": "697f4050a5df90b1f3d59dc3c50cd079dfef05074eda7d240f5f466a925a1fc8"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9024",
+    "concept": "cpi-and-inflation-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.1",
+    "type": "calculation",
+    "primarySkill": "inflation_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: distinguish index rebasing from inflation and evaluate a real payment.",
+    "numericProofs": [
+      {
+        "label": "rebased index",
+        "expression": "176/160*100",
+        "expected": 110
+      },
+      {
+        "label": "inflation",
+        "expression": "(176/160-1)*100",
+        "expected": 10
+      }
+    ],
+    "before": {
+      "q": "A CPI basket costs $800 in the base year, $1,000 last year, and $1,080 this year. What is this year's inflation rate?",
+      "options": [
+        "8%",
+        "35%",
+        "25%",
+        "10%"
+      ],
+      "feedback": "Last year's CPI = 125 and this year's CPI = 135. Inflation = (135 - 125)/125 = 8%.",
+      "aHash": "23ec5e7f20a2bcc3fca42ac6f74643066b90a0458cf4f309bc2dc517869c7f39"
+    },
+    "after": {
+      "q": "An index is rebased: the old series lists last year at 160 and this year at 176, while the new series sets last year to 100. A nominal benefit rose 6% over the period. Which comparison survives rebasing?",
+      "options": [
+        "The new current index is 110; the benefit lost purchasing power",
+        "The new current index is 116; the benefit lost purchasing power",
+        "The new current index is 110; the benefit gained 6% in real terms",
+        "The new current index is 100; rebasing removes inflation"
+      ],
+      "feedback": "Scaling both indexes by 100/160 makes the new current index 110. Inflation remains 10%; a 6% nominal increase is smaller, so real purchasing power falls. Changing the reference base cannot erase price growth.",
+      "aHash": "eeb274be08a063677fd39375ef8eb1d14d82f0e2acc0639c6f0501fa05905e92"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9025",
+    "concept": "cpi-and-inflation-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.1",
+    "type": "calculation",
+    "primarySkill": "cpi_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: infer basket quantity before index and inflation calculations.",
+    "numericProofs": [
+      {
+        "label": "B quantity",
+        "expression": "(72-4*6)/12",
+        "expected": 4
+      },
+      {
+        "label": "current cost",
+        "expression": "4*9+4*15",
+        "expected": 96
+      },
+      {
+        "label": "next inflation",
+        "expression": "(100.8/96-1)*100",
+        "expected": 5
+      }
+    ],
+    "before": {
+      "q": "A basket has 10 units of A and 5 units of B. Base prices are A = $4 and B = $8. Current prices are A = $6 and B = $10. What is the CPI?",
+      "options": [
+        "137.5",
+        "150",
+        "125",
+        "160"
+      ],
+      "feedback": "Base cost = 10(4)+5(8)=80. Current cost = 10(6)+5(10)=110. CPI = 137.5.",
+      "aHash": "07a3bd2a5cf7d95ea9f017525804a4d6eafa4fc34f117c2b1d524dcfa567fd4e"
+    },
+    "after": {
+      "q": "A basket contains 4 units of A at a base price of $6 and an unknown quantity of B at $12. Its base cost is $72. Current prices are $9 for A and $15 for B. Which CPI and next-period inflation follow if the same basket then costs $100.80?",
+      "options": [
+        "CPI 133.3; next-period inflation 5%",
+        "CPI 140; next-period inflation 40%",
+        "CPI 133.3; next-period inflation 40%",
+        "CPI 125; next-period inflation 12%"
+      ],
+      "feedback": "B accounts for 72 - 24 = 48 base dollars, so there are 4 units. Current cost is 4 × 9 + 4 × 15 = 96 and CPI ≈ 133.3. The next increase is (100.80 - 96)/96 = 5%.",
+      "aHash": "41edabb487fbe2e46dda394c767b5ca07aed23f4c9f3de81c9df65c5698fa15d"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9026",
+    "concept": "cpi-and-inflation-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.1",
+    "type": "multi-step",
+    "primarySkill": "inflation_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: multi-period real-wage interpretation with an intervening price reversal.",
+    "numericProofs": [
+      {
+        "label": "real growth",
+        "expression": "((27/25)/(525/500)-1)*100",
+        "expected": 2.857142857142857
+      }
+    ],
+    "before": {
+      "q": "If CPI rises from 160 to 176 and nominal wages rise from $20 to $21, what happens to the real wage?",
+      "options": [
+        "It falls because prices rose 10% while nominal wages rose 5%",
+        "It rises because nominal wages rose",
+        "It stays unchanged because both CPI and wages rose",
+        "It doubles because CPI is above 100"
+      ],
+      "feedback": "Inflation is 10%; nominal wages rose 5%, so the real wage falls.",
+      "aHash": "a87ad5811c0b5361a2fcf611ec45268c5d0d73753815513a8393c9c1781deff3"
+    },
+    "after": {
+      "q": "A nominal hourly wage rises from $25 to $27. Basket cost rises from $500 to $540, then falls to $525 while the wage stays $27. Relative to the starting year, what real-wage change remains after both price movements?",
+      "options": [
+        "About 2.9% higher; the first raise just matched prices, then prices partly fell",
+        "8% higher; only the nominal wage change matters",
+        "Unchanged; the first year’s full indexation guarantees this forever",
+        "About 2.9% lower; a later price decline reduces purchasing power"
+      ],
+      "feedback": "The cumulative wage factor is 27/25 = 1.08 and cumulative price factor is 525/500 = 1.05. Their ratio is 1.02857, giving about 2.9% more purchasing power. Use cumulative levels instead of adding annual rates.",
+      "aHash": "3184310939caefd15e257ea309a82be0b85f349d9e191d7c8b931780371e6914"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9027",
+    "concept": "cpi-and-inflation-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.1",
+    "type": "trap",
+    "primarySkill": "inflation_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: compound inflation and evaluate a misleading reversal claim.",
+    "numericProofs": [
+      {
+        "label": "final index",
+        "expression": "100*1.2*.9",
+        "expected": 108
+      }
+    ],
+    "before": {
+      "q": "The CPI rises from 240 to 252. A student says inflation is 12 percentage points. What is the correct inflation rate?",
+      "options": [
+        "5%",
+        "12%",
+        "4.76%",
+        "252%"
+      ],
+      "feedback": "Inflation is the percentage change: (252 - 240)/240 = 5%, not 12 percentage points.",
+      "aHash": "d1ce334b6a7f364b1e97ebb9e661f6d4cf6e20aa741aba4b8f198417aea18326"
+    },
+    "after": {
+      "q": "A fixed basket’s cost rises 20% in one year and falls 10% in the next. A commentator claims prices are back where they started because growth has reversed. Which cumulative index and purchasing-power statement are correct, starting from 100?",
+      "options": [
+        "Index 108; unchanged dollars buy less than initially",
+        "Index 110; subtract annual rates to obtain the exact total",
+        "Index 100; opposite price changes cancel",
+        "Index 90; only the most recent inflation rate matters"
+      ],
+      "feedback": "The cumulative factor is 1.20 × 0.90 = 1.08. Prices remain 8% above the starting level, so unchanged nominal income has less purchasing power. A decline does not undo an earlier rise of a different percentage base.",
+      "aHash": "169e6e121828bb59404554a99cbc9f092e7d509e7461d5ebe9c2910a48c3c64d"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9028",
+    "concept": "cpi-bias",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.2",
+    "type": "interpretation",
+    "primarySkill": "substitution_bias",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: evaluate equivalence evidence and inference limits rather than identify a label.",
+    "numericProofs": [],
+    "before": {
+      "q": "A new generic drug enters the market at a much lower price than the brand-name drug, and consumers switch rapidly. Why might the CPI overstate cost-of-living growth?",
+      "options": [
+        "The fixed basket misses substitution to the cheaper generic",
+        "The CPI always ignores medicine",
+        "The GDP deflator includes only generic drugs",
+        "Quality change always raises measured inflation"
+      ],
+      "feedback": "Substitution toward cheaper alternatives can make actual cost-of-living growth lower than a fixed basket suggests.",
+      "aHash": "7bce9adec073af275e1a8e043ac4f0817dc97a98de20b5d7c56fd3ecbb879c81"
+    },
+    "after": {
+      "q": "A basket agency sees households replacing a newly expensive rail route with an existing bus route. A trial finds the cheaper travel bundle preserves the same commuting service. Which evidence supports substitution bias, and what does it fail to establish?",
+      "options": [
+        "A fixed bundle overstates the cost of that service; the evidence does not quantify bias for the whole CPI",
+        "The bus is a new good; the evidence measures all economy-wide quality gains",
+        "The rail price rise is entirely a quality change; no pure inflation occurred",
+        "The change proves the whole CPI should fall because one alternative is cheaper"
+      ],
+      "feedback": "The same service can be maintained at lower cost by changing an existing bundle, which is the substitution mechanism. A travel example alone does not measure the full index’s bias or imply that overall prices fell.",
+      "aHash": "0a0f62b916c83393f0e30bdce0052e62a71339673c8641bc2f10d7ae6159289d"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9029",
+    "concept": "cpi-bias",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.2",
+    "type": "interpretation",
+    "primarySkill": "quality_new_goods_bias",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: quantify a controlled quality comparison and limit its interpretation.",
+    "numericProofs": [
+      {
+        "label": "service cost ratio",
+        "expression": "1.12/1.12",
+        "expected": 1
+      }
+    ],
+    "before": {
+      "q": "A laptop price rises 15%, but processing speed doubles and battery life improves. What is the measurement problem?",
+      "options": [
+        "Unmeasured quality improvement may cause the CPI to overstate inflation",
+        "Substitution bias is impossible because quality changed",
+        "The GDP deflator must fall",
+        "The laptop must be excluded from all price indexes"
+      ],
+      "feedback": "Some price increases reflect better quality, not only higher prices for the same good.",
+      "aHash": "138156fbbf427e713988c415a88644440e024cf3dd08ac48eea6942f0fab5dfa"
+    },
+    "after": {
+      "q": "A new pump costs 12% more than the old model and lasts 12% longer with identical annual performance and maintenance costs. Ignoring discounting, which conclusion is supported for this product, and which is not?",
+      "options": [
+        "Cost per service-year is unchanged; economy-wide inflation cannot be inferred",
+        "Cost per service-year rises 12%; durability is irrelevant to quality",
+        "Cost per service-year falls 12%; equal percentage changes must be subtracted from price twice",
+        "Economy-wide inflation is zero because this product has no service-cost rise"
+      ],
+      "feedback": "Price per lifetime service-year changes by 1.12/1.12 = 1. The sticker-price rise alone is therefore not pure service-cost inflation for this product. Its example cannot establish the economy-wide price change.",
+      "aHash": "77f065bd749d53702478901ac9fb3a6a041924bd64e53e503cff0eee38a9ad20"
+    }
+  },
+  {
+    "id": "PM2B2-BIAS-L-001",
+    "concept": "cpi-bias",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.3",
+    "type": "application",
+    "primarySkill": "substitution_bias",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: evaluate the missing identifying condition in a plausible bias calculation.",
+    "numericProofs": [],
+    "before": {
+      "q": "Coffee prices jump, households switch toward tea, and the fixed basket still gives coffee its old weight. Which mechanism is primary?",
+      "options": [
+        "Substitution bias from outdated purchasing weights",
+        "New-goods bias because tea already existed",
+        "Quality bias because coffee became expensive",
+        "A GDP-deflator error involving exports"
+      ],
+      "feedback": "Substitution bias arises when consumers shift toward relatively cheaper alternatives but the fixed basket does not fully reflect that response.",
+      "aHash": "2e5bb4890a8ad4829e4b94d89c2ee863ad5c83eaca116558efe22e6c704bd897"
+    },
+    "after": {
+      "q": "A fixed basket costs 9% more, while a redesigned bundle costs only 3% more. Before concluding that substitution bias is six percentage points, what must an analyst establish?",
+      "options": [
+        "The redesigned bundle preserves the relevant living standard, with comparable quality and coverage",
+        "Households bought fewer total items, regardless of the services they lost",
+        "Both bundles contain the same number of product names, regardless of quantities",
+        "The redesigned bundle is cheaper, even if it provides less value"
+      ],
+      "feedback": "A cheaper bundle can reflect reduced consumption or quality rather than cost-saving substitution at the same living standard. The comparison must hold the relevant standard of living constant before interpreting the gap as bias.",
+      "aHash": "8178d15e1298a177a3b9cc03718a07c79a0647e54aabf02a0450e416482950e7"
+    }
+  },
+  {
+    "id": "PM2B2-DEF-H-002",
+    "concept": "cpi-versus-gdp-deflator",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO25.2",
+    "type": "application",
+    "primarySkill": "deflator_composition",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B: clarify the ambiguous meaning of relative prices; preserve composition skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "Individual prices are unchanged, but current domestic production shifts toward goods with higher relative prices. Why can the GDP deflator change?",
+      "options": [
+        "Its fixed consumer basket must be replaced every month",
+        "It includes every imported consumer purchase automatically",
+        "Its value is determined only by household expenditure shares",
+        "Its weights reflect the composition of current domestic output"
+      ],
+      "feedback": "The GDP deflator weights prices by the composition of current domestic output. When production shifts toward goods with higher relative prices, the weighted price index can change even if each individual price is unchanged.",
+      "aHash": "a007dd2b5af26ba6b0e4d695f6d1776258789f74ea3f0e24697b8c563e83c87f"
+    },
+    "after": {
+      "q": "Between two years, individual prices do not change, but domestic production shifts toward goods whose current prices are higher relative to their base-year prices. Why can a fixed-base GDP deflator rise?",
+      "options": [
+        "The deflator must be unchanged whenever current-year prices are unchanged",
+        "The deflator begins including imported consumer goods as domestic output",
+        "A shift toward goods with higher dollar prices raises every index regardless of base prices",
+        "Current quantities put more weight on goods with larger price increases since the base year"
+      ],
+      "feedback": "The deflator compares current-price and base-price values of current quantities. Changing the output mix toward larger current-to-base price relatives can raise the ratio even with no new individual price changes. High dollar prices alone do not establish that result.",
+      "aHash": "9d454c6b772e1a9e1f0776327c9fac0206d6ad17b9ea90515329bd1a6544fbd2"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-331",
+    "concept": "cpi-versus-gdp-deflator",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO25.3",
+    "type": "definition",
+    "primarySkill": "cpi_vs_gdp_deflator",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: apply index choice to competing household and production tasks.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which pair is correctly matched?",
+      "options": [
+        "CPI: fixed consumer basket; GDP deflator: current domestic production",
+        "CPI: current exports only; GDP deflator: fixed imported basket",
+        "CPI: unemployment; GDP deflator: labor force",
+        "CPI: real output; GDP deflator: nominal output only"
+      ],
+      "feedback": "The CPI and GDP deflator both measure prices, but their baskets differ.",
+      "aHash": "1c8494cf444044fb79b46b567735a1c64e4479b753e65e761570dac536376af6"
+    },
+    "after": {
+      "q": "A government must update a household allowance and also convert nominal GDP to real GDP. Imported household energy gets dearer while domestic investment equipment gets cheaper. Which pairing and interpretation fit?",
+      "options": [
+        "Use CPI for the allowance and the GDP deflator for GDP; the indexes can move differently",
+        "Use the GDP deflator for both because energy purchases reduce net exports",
+        "Use CPI for both because every domestic output price is in its basket",
+        "Use either index for either task because all price changes have equal weights"
+      ],
+      "feedback": "The household payment needs a consumer-price measure, which includes imported consumer energy. Deflating GDP requires prices of domestic production, including investment goods. Their differing coverage permits divergent movements.",
+      "aHash": "fb46426607be039d48d62f18a3a1405f1a22d20474f2c3416c05385e5d41d7f8"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9032",
+    "concept": "cpi-versus-gdp-deflator",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.3",
+    "type": "interpretation",
+    "primarySkill": "cpi_vs_gdp_deflator",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: calculate one index while recognizing information insufficient for another.",
+    "numericProofs": [
+      {
+        "label": "CPI growth",
+        "expression": "(40*1.25+60)/(40+60)*100-100",
+        "expected": 10
+      }
+    ],
+    "before": {
+      "q": "Imported oil prices rise 30%, while domestically produced capital goods prices fall 10%. Which statement is best?",
+      "options": [
+        "CPI rises more because imported oil is excluded from the GDP deflator",
+        "GDP deflator must rise more because oil is imported",
+        "CPI ignores oil because it is energy",
+        "Both indexes must move identically"
+      ],
+      "feedback": "CPI includes imported consumer goods; GDP deflator reflects domestic production prices.",
+      "aHash": "0c1449342fa31d7b2afb70b919b9c373473a1962297e6ded0e09b3173810c2c8"
+    },
+    "after": {
+      "q": "An economy’s consumer basket has base spending of $40 on imported tea and $60 on domestic services. Tea prices rise 25%; services prices stay fixed. The only other domestic output is exported machinery, whose price falls 10%. With quantities fixed, which conclusion is justified?",
+      "options": [
+        "CPI rises 10%; the GDP deflator falls, but its size needs domestic-output weights",
+        "Both indexes rise 25% because imports are in consumer spending",
+        "CPI rises 25%; the GDP deflator falls exactly 10%",
+        "CPI is unchanged; imported consumer prices are excluded"
+      ],
+      "feedback": "The consumer basket rises from 100 to 40 × 1.25 + 60 = 110, a 10% increase. The domestic deflator includes unchanged service prices and lower machinery prices, so it falls; their output weights are needed to measure the decline.",
+      "aHash": "868920b14e1f8fec077b8b94bb7bb4a355f3ec85030589c4a6ea49a542de6058"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9033",
+    "concept": "cpi-versus-gdp-deflator",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.3",
+    "type": "interpretation",
+    "primarySkill": "cpi_vs_gdp_deflator",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: quantify domestic-output weighting and distinguish consumer coverage.",
+    "numericProofs": [
+      {
+        "label": "deflator",
+        "expression": "(10*120+100*10)/(10*100+100*10)*100",
+        "expected": 110
+      }
+    ],
+    "before": {
+      "q": "A domestically produced business machine becomes more expensive, but imported consumer clothing becomes cheaper. Which index is more directly affected by the machine price?",
+      "options": [
+        "GDP deflator",
+        "CPI",
+        "Unemployment rate",
+        "Labor force participation rate"
+      ],
+      "feedback": "Domestically produced capital goods are part of GDP and affect the GDP deflator.",
+      "aHash": "a50ef76fdd443d89ed8a703f8eaa754767d1d4cda401b52b6efc9f8d0eb0afff"
+    },
+    "after": {
+      "q": "Domestic output consists of 10 machines and 100 services. Base prices are $100 and $10; current prices are $120 and $10. Consumers buy the services and imported clothing; the clothing price is unchanged. Which price-index account is supported?",
+      "options": [
+        "GDP deflator 110; CPI unchanged if its fixed basket contains only those consumer purchases",
+        "GDP deflator 120; CPI rises 20% because domestic machines got dearer",
+        "GDP deflator 110; CPI must rise by the same 10%",
+        "GDP deflator 100; business equipment is not final domestic output"
+      ],
+      "feedback": "Base-price domestic output is 10 × 100 + 100 × 10 = 2,000; current-price output is 2,200, giving deflator 110. The stated consumer prices did not change, so their fixed basket’s CPI is unchanged.",
+      "aHash": "0659f04653a7e865e1a972222c21b3b242c0e14758125ad784bed8db68eabd32"
+    }
+  },
+  {
+    "id": "PM2B2-DEF-L-002",
+    "concept": "cpi-versus-gdp-deflator",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.2",
+    "type": "application",
+    "primarySkill": "index_choice",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: integrate index choice and real-value comparisons.",
+    "numericProofs": [
+      {
+        "label": "grant ratio",
+        "expression": "(2160/2000)/(135/125)",
+        "expected": 1
+      },
+      {
+        "label": "GDP growth",
+        "expression": "(1.08/1.04-1)*100",
+        "expected": 3.846153846153846
+      }
+    ],
+    "before": {
+      "q": "An analyst must adjust a pension for consumer purchasing power and convert nominal GDP into real GDP. Which indexes fit the two purposes?",
+      "options": [
+        "Use the GDP deflator for both tasks",
+        "Use CPI for both tasks",
+        "Use a nominal interest rate for the pension and CPI for GDP",
+        "Use CPI for the pension and the GDP deflator for GDP"
+      ],
+      "feedback": "Use CPI for consumer purchasing-power questions and the GDP deflator for the price level of current domestic GDP.",
+      "aHash": "a854af31f16b4033d5be87b919e94166df8f03aabe5582e74ef4f89292267bfc"
+    },
+    "after": {
+      "q": "A household grant rises from $2,000 to $2,160 as CPI moves from 125 to 135. Nominal GDP rises 8% while the GDP deflator rises 4%. Which combined assessment uses the appropriate indexes?",
+      "options": [
+        "The grant gains 8% purchasing power; real GDP rises 8%",
+        "The grant loses purchasing power; real GDP is unchanged",
+        "Both real changes are zero because each nominal value rose 8%",
+        "The grant preserves purchasing power; real GDP rises about 3.8%"
+      ],
+      "feedback": "The grant and consumer-price factors are both 1.08, preserving purchasing power. GDP requires its own price factor: 1.08/1.04 - 1 ≈ 3.8%. Matching nominal rates do not imply matching real changes with different deflators.",
+      "aHash": "a295efac97414683a2bb6507630fad02b5bc4a1d8ae89b4d2ff06c9435aec9e4"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-333",
+    "concept": "indexing-and-real-values",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO25.4",
+    "type": "calculation",
+    "primarySkill": "inflation_adjustment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: convert and compare against an actual partial adjustment.",
+    "numericProofs": [
+      {
+        "label": "target",
+        "expression": "1800*165/150",
+        "expected": 1980
+      },
+      {
+        "label": "shortfall",
+        "expression": "1980-1920",
+        "expected": 60
+      }
+    ],
+    "before": {
+      "q": "A worker earned $42,000 when the CPI was 140. The CPI is now 245. What income today has the same purchasing power?",
+      "options": [
+        "$73,500",
+        "$58,800",
+        "$24,000",
+        "$105,000"
+      ],
+      "feedback": "Today's dollars = 42000 x 245/140 = 73500.",
+      "aHash": "c64c0b480ff4ddc6ccfd0f4fd3d7adb8946b7c3a54db51c754cbcb5f13a98627"
+    },
+    "after": {
+      "q": "A stipend pays $1,800 at CPI 150. At CPI 165 it rises to $1,920. How much additional monthly pay would restore the original purchasing power, and why?",
+      "options": [
+        "$60; full indexation requires $1,980",
+        "$180; the CPI increased by 10%, so add 10% again",
+        "$120; any increase exactly restores purchasing power",
+        "$0; the stipend already rose in dollars"
+      ],
+      "feedback": "Maintaining the initial purchasing power requires 1,800 × 165/150 = 1,980. The actual 1,920 is short by 60. A positive nominal raise may still fall short of price growth.",
+      "aHash": "a719383217af9825da383159020a7f776fa0ed8f9600aa5bf51cc9db8be9aab7"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9035",
+    "concept": "indexing-and-real-values",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.4",
+    "type": "calculation",
+    "primarySkill": "inflation_adjustment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: multi-period indexation with a missed adjustment.",
+    "numericProofs": [
+      {
+        "label": "paid",
+        "expression": "2400*132/120",
+        "expected": 2640
+      },
+      {
+        "label": "topup",
+        "expression": "2400*144/120-2640",
+        "expected": 240
+      }
+    ],
+    "before": {
+      "q": "A salary was $55,000 when CPI was 125. The CPI is now 200. What current salary has the same purchasing power?",
+      "options": [
+        "$88,000",
+        "$68,750",
+        "$34,375",
+        "$110,000"
+      ],
+      "feedback": "Today's dollars = 55,000 x 200/125 = 88,000.",
+      "aHash": "f49a2101ab198cef8a1bba42b21b62a7ba2d084ba143868f53eb5b6792a4d831"
+    },
+    "after": {
+      "q": "A grant is $2,400 at CPI 120. It is fully adjusted when CPI reaches 132, then remains frozen as CPI reaches 144. What final grant and additional payment would restore the starting purchasing power?",
+      "options": [
+        "$2,640 paid; an additional $240 is needed",
+        "$2,880 paid; no additional payment is needed",
+        "$2,640 paid; an additional $264 is needed",
+        "$2,400 paid; an additional $480 is needed"
+      ],
+      "feedback": "The first adjustment is 2,400 × 132/120 = 2,640. At the final index, preserving starting purchasing power requires 2,400 × 144/120 = 2,880. The frozen payment is short by 240.",
+      "aHash": "f7b8a68813c13d82c0a8e3af708266b991d24ec45b15989aa14351f53521b161"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9036",
+    "concept": "indexing-and-real-values",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.4",
+    "type": "calculation",
+    "primarySkill": "inflation_adjustment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reverse one index and evaluate a subsequent adjustment.",
+    "numericProofs": [
+      {
+        "label": "missing CPI",
+        "expression": "100*1260/900",
+        "expected": 140
+      },
+      {
+        "label": "final base value",
+        "expression": "1350/1.5",
+        "expected": 900
+      }
+    ],
+    "before": {
+      "q": "A house cost $90,000 when CPI was 75. In today's dollars, it equals $360,000. What is today's CPI?",
+      "options": [
+        "300",
+        "225",
+        "400",
+        "120"
+      ],
+      "feedback": "360,000 = 90,000 x current CPI/75, so current CPI = 300.",
+      "aHash": "983bd614bb5afece5ab3b6023f71147cd7b6bc2314f9d27af7422541c6558389"
+    },
+    "after": {
+      "q": "An indexed payment was $900 at CPI 100. Its purchasing power is unchanged at a later $1,260 payment, but the later CPI was lost. The next payment is $1,350 at CPI 150. Which reconstruction and comparison are correct?",
+      "options": [
+        "Missing CPI 140; both later payments preserve the initial purchasing power",
+        "Missing CPI 126; the $1,350 payment buys 50% more",
+        "Missing CPI 140; the $1,350 payment buys 7.1% more in real terms",
+        "Missing CPI 150; the two nominal payments have equal dollar value"
+      ],
+      "feedback": "Equal purchasing power requires the lost index to be 100 × 1,260/900 = 140. The next payment deflates to 1,350/1.50 = 900 in base dollars, also preserving the initial purchasing power.",
+      "aHash": "511445f2624c172bacc2c24af7255f2aee5e6af1fcb16c7193e1ad0d26d0ad01"
+    }
+  },
+  {
+    "id": "PM2B2-INDEX-L-003",
+    "concept": "indexing-and-real-values",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.4",
+    "type": "application",
+    "primarySkill": "indexation_contracts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: quantify lagged indexation and cumulative price growth.",
+    "numericProofs": [
+      {
+        "label": "full target",
+        "expression": "40000*1.21",
+        "expected": 48400
+      },
+      {
+        "label": "lagged",
+        "expression": "40000*1.1",
+        "expected": 44000
+      },
+      {
+        "label": "shortfall",
+        "expression": "48400-44000",
+        "expected": 4400
+      }
+    ],
+    "before": {
+      "q": "Tax thresholds are indexed with a one-year lag during an inflation surge. What problem can occur before the adjustment catches up?",
+      "options": [
+        "The lag converts CPI into the GDP deflator",
+        "Real thresholds rise faster than prices",
+        "Nominal income can push taxpayers across thresholds whose real value has fallen",
+        "Every taxpayer receives an immediate real tax cut when nominal thresholds lag behind inflation"
+      ],
+      "feedback": "Indexation adjusts a nominal amount using a specified index; lags or an imperfectly matched index can still change real value.",
+      "aHash": "7d13962e5466e34d2e78d5d2880717c8aa3cc38b5a28cd040bb01671d19e3e64"
+    },
+    "after": {
+      "q": "A threshold is $40,000 at CPI 100. The contract adjusts next year using the previous year’s inflation. CPI rises to 110, then 121; by the second year the threshold has received only the first 10% adjustment. What is the shortfall from full current indexation?",
+      "options": [
+        "$4,000; apply the second 10% only to the original threshold",
+        "$8,400; the threshold never received any adjustment",
+        "$4,400; the paid threshold is $44,000 instead of $48,400",
+        "$0; a one-year lag cannot alter purchasing power"
+      ],
+      "feedback": "Full current indexation requires 40,000 × 121/100 = 48,400. The lagged threshold is 40,000 × 1.10 = 44,000. The gap is 4,400; successive inflation rates apply to changing price levels.",
+      "aHash": "b773ae92a9bbb376e8c5c81607e5e5aa9f43a2d0a649a2e92d490e2a475492ef"
+    }
+  },
+  {
+    "id": "PM2B2-RNI-H-003",
+    "concept": "real-versus-nominal-interest-rates",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO25.5",
+    "type": "application",
+    "primarySkill": "fisher_boundary",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B/D: replace internal F2/F6 taxonomy with realized-return inference within the same boundary skill.",
+    "numericProofs": [
+      {
+        "label": "inflation",
+        "expression": "(212/200-1)*100",
+        "expected": 6
+      },
+      {
+        "label": "real",
+        "expression": "9-6",
+        "expected": 3
+      }
+    ],
+    "before": {
+      "q": "Which task belongs in F2 rather than the later Fisher Effect family?",
+      "options": [
+        "Tracing long-run monetary neutrality through nominal rates",
+        "Explaining why expected inflation shifts the long-run nominal rate",
+        "Interpreting a realized real return after observing inflation",
+        "Predicting a one-for-one long-run nominal-rate response to expected inflation"
+      ],
+      "feedback": "F2 measures and interprets nominal versus real returns; the later Fisher Effect explains long-run nominal-rate responses to expected inflation.",
+      "aHash": "0144189359a70932ff6bc975a8ebacc9977766f14334a2448b14eedffadf1f68"
+    },
+    "after": {
+      "q": "A loan’s fixed nominal rate is 9%. During its year, CPI rises from 200 to 212. Which conclusion is supported by these observations without a theory of how future loan rates are set?",
+      "options": [
+        "Next year’s nominal rate must rise to 15%",
+        "Expected inflation at signing must have been 6%",
+        "The realized real return is approximately 3%",
+        "The realized real return is approximately 15%"
+      ],
+      "feedback": "Observed inflation is (212 - 200)/200 = 6%, so the approximate realized real return is 9 - 6 = 3%. These observations do not reveal prior expectations or determine future nominal rates.",
+      "aHash": "10b2036ce7d2d3878f4965f0596837c1880f1dcefb7547b250ea26b34ae444ad"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-338",
+    "concept": "real-versus-nominal-interest-rates",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO25.5",
+    "type": "calculation",
+    "primarySkill": "real_interest_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: infer missing expectations and apply the surprise.",
+    "numericProofs": [
+      {
+        "label": "expected inflation",
+        "expression": "7-2",
+        "expected": 5
+      },
+      {
+        "label": "actual inflation",
+        "expression": "5+2",
+        "expected": 7
+      },
+      {
+        "label": "real",
+        "expression": "7-7",
+        "expected": 0
+      }
+    ],
+    "before": {
+      "q": "If nominal interest is 11% and real interest is 4%, what inflation rate is implied?",
+      "options": [
+        "7%",
+        "15%",
+        "4%",
+        "11%"
+      ],
+      "feedback": "Inflation = nominal interest - real interest = 11% - 4% = 7%.",
+      "aHash": "9f753044ad98962e40225692a334009ac3280bb88d182a9e0b90212f3e79a629"
+    },
+    "after": {
+      "q": "A lender expected a 2% real return on a fixed 7% nominal loan. Actual inflation was 2 percentage points higher than expected. Which inflation and realized real rate follow using the approximation?",
+      "options": [
+        "7% actual inflation and 0% realized real return",
+        "5% actual inflation and 2% realized real return",
+        "9% actual inflation and -2% realized real return",
+        "7% actual inflation and 4% realized real return"
+      ],
+      "feedback": "Expected inflation was 7 - 2 = 5%. Actual inflation was 7%, leaving realized real return 7 - 7 = 0%. The two-point surprise lowers the realized real rate by two points.",
+      "aHash": "ec78a5f952509b287652179eb7ed8854ee82dd2381cc4068f2353ea0787bdaf1"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9038",
+    "concept": "real-versus-nominal-interest-rates",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.5",
+    "type": "multi-step",
+    "primarySkill": "real_interest_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reverse expected inflation, measure actual inflation and reconcile the return.",
+    "numericProofs": [
+      {
+        "label": "expected inflation",
+        "expression": "8-3",
+        "expected": 5
+      },
+      {
+        "label": "actual inflation",
+        "expression": "(172.8/160-1)*100",
+        "expected": 8
+      },
+      {
+        "label": "real",
+        "expression": "8-8",
+        "expected": 0
+      },
+      {
+        "label": "error",
+        "expression": "8-5",
+        "expected": 3
+      }
+    ],
+    "before": {
+      "q": "A borrower signs a fixed-rate loan at 8% when expected inflation is 3%. Actual inflation is 10%. What happened to the lender's real return?",
+      "options": [
+        "It fell from expected 5% to actual -2%",
+        "It rose from expected 5% to actual 18%",
+        "It stayed at 8%",
+        "It became exactly 10%"
+      ],
+      "feedback": "Expected real return = 8 - 3 = 5. Actual real return = 8 - 10 = -2.",
+      "aHash": "19bc27dff34a9451a11e7059bce2624b59d92b9da05fc6c234593d46f5847032"
+    },
+    "after": {
+      "q": "A lender charged a fixed 8% nominal rate to target a 3% expected real return. CPI subsequently moved from 160 to 172.8. What realized real rate and forecast error follow using approximate real interest?",
+      "options": [
+        "0% realized real return; inflation was 3 percentage points above expected",
+        "3% realized real return; the target guarantees the outcome",
+        "-4.8% realized real return; the CPI-point increase is inflation",
+        "5% realized real return; actual inflation was below expected"
+      ],
+      "feedback": "The target implies expected inflation of 8 - 3 = 5%. Observed inflation is (172.8 - 160)/160 = 8%, so realized real interest is 0%. Inflation exceeded the expectation by 3 percentage points.",
+      "aHash": "3359f337833b1784399528902688020c2b057257e312a4a605cb6d24545de244"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9039",
+    "concept": "real-versus-nominal-interest-rates",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.5",
+    "type": "interpretation",
+    "primarySkill": "real_interest_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: compare measured inflation across periods and interpret opposite real returns.",
+    "numericProofs": [
+      {
+        "label": "A inflation",
+        "expression": "(420/400-1)*100",
+        "expected": 5
+      },
+      {
+        "label": "B inflation",
+        "expression": "(540/500-1)*100",
+        "expected": 8
+      },
+      {
+        "label": "A real",
+        "expression": "6-5",
+        "expected": 1
+      },
+      {
+        "label": "B real",
+        "expression": "6-8",
+        "expected": -2
+      }
+    ],
+    "before": {
+      "q": "A saver earns 6% nominal interest. CPI inflation is 9%. Which is true?",
+      "options": [
+        "The account balance rises in dollars, but purchasing power falls by about 3%",
+        "The saver gains 15% purchasing power",
+        "The real interest rate is 6% because that is what the bank reports",
+        "Inflation is irrelevant if nominal interest is positive"
+      ],
+      "feedback": "Real interest is approximately 6 - 9 = -3%, so purchasing power falls.",
+      "aHash": "40ffdc49ccc284d676292f05fc17684806e056c91c55309e1bb0b1fcf30ded29"
+    },
+    "after": {
+      "q": "Two one-year accounts each credit 6% nominal interest. Account A’s year has basket costs moving from $400 to $420; B’s year moves from $500 to $540. Which real-return comparison is valid using the approximation?",
+      "options": [
+        "A gains about 1%; B loses about 2%, despite equal nominal rates",
+        "Both gain 6%, since account balances rise at the same rate",
+        "A loses 14%; B loses 34%, using basket-dollar increases as inflation",
+        "A gains about 11%; B gains about 14%, adding inflation to interest"
+      ],
+      "feedback": "Inflation is 20/400 = 5% for A and 40/500 = 8% for B. Subtracting from 6% gives +1% and -2%. The appropriate price growth, not the nominal rate alone, determines the purchasing-power return.",
+      "aHash": "3ede69e9cf9d974fdba912a280f5f63f36086a8241be990cfb83b591b0735d3f"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9040",
+    "concept": "real-versus-nominal-interest-rates",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO25.5",
+    "type": "calculation",
+    "primarySkill": "real_interest_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: forecast-index inference, contract setting and realized real return.",
+    "numericProofs": [
+      {
+        "label": "nominal",
+        "expression": "2+(130/125-1)*100",
+        "expected": 6
+      },
+      {
+        "label": "actual inflation",
+        "expression": "(135/125-1)*100",
+        "expected": 8
+      },
+      {
+        "label": "real",
+        "expression": "6-8",
+        "expected": -2
+      }
+    ],
+    "before": {
+      "q": "If a lender wants a 4% real return and expects 6% inflation, what nominal rate should be charged, approximately?",
+      "options": [
+        "10%",
+        "2%",
+        "6%",
+        "24%"
+      ],
+      "feedback": "Nominal rate ≈ real rate + expected inflation = 4 + 6 = 10%.",
+      "aHash": "3ccce1f4da948035fd36a399576a50a5248ddc02dd008f3c3668df57c0aa75b5"
+    },
+    "after": {
+      "q": "A lender wants a 2% approximate real return and forecasts CPI rising from 125 to 130. The resulting fixed nominal contract is signed, but CPI ends at 135. What nominal rate and realized real return follow?",
+      "options": [
+        "6% nominal; -2% realized real return",
+        "7% nominal; -1% realized real return",
+        "6% nominal; 2% realized real return",
+        "10% nominal; 2% realized real return"
+      ],
+      "feedback": "Expected inflation is 5/125 = 4%, so the target nominal rate is 2 + 4 = 6%. Actual inflation is 10/125 = 8%, giving approximate realized return 6 - 8 = -2%. Use the stated approximation, not the exact Fisher ratio.",
+      "aHash": "e016ff22059824cfbc2f1337979bddc286658be776851f786cc1ae8a679189c0"
+    }
+  },
+  {
+    "id": "PM2B2-RNI-FB-006",
+    "concept": "real-versus-nominal-interest-rates",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "LO25.5",
+    "type": "application",
+    "primarySkill": "fisher_boundary",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B/D: remove implementation labels and preserve expected/realized measurement boundary.",
+    "numericProofs": [
+      {
+        "label": "real",
+        "expression": "4-6",
+        "expected": -2
+      }
+    ],
+    "before": {
+      "q": "Which statement preserves the F2/F6 boundary?",
+      "options": [
+        "F2 and F6 both focus only on CPI basket costs",
+        "F2 predicts money neutrality; F6 compares historical salaries",
+        "F2 explains long-run Fisher causation; F6 measures realized returns",
+        "F2 interprets real returns; F6 explains long-run nominal-rate adjustment"
+      ],
+      "feedback": "F2 measures and interprets nominal versus real returns; the later Fisher Effect explains long-run nominal-rate responses to expected inflation.",
+      "aHash": "57453f3d945fa46fd796218a6b188012a97811551aed5b7b28eb282b3fecc91c"
+    },
+    "after": {
+      "q": "A bank pays a fixed 4% nominal rate. CPI inflation during the year is 6%, but no inflation forecast was recorded at signing. What can be established using the Principles approximation?",
+      "options": [
+        "Both expected and realized real returns were -2%",
+        "The realized real return is 10%; the expected rate is unknown",
+        "The nominal contract must have reset to 6% after inflation was observed",
+        "The realized real return is -2%; the expected real return cannot be recovered"
+      ],
+      "feedback": "The realized real return uses actual inflation: 4 - 6 = -2%. The expected return needs expected inflation, which was not supplied. A fixed contract does not automatically reset after an inflation surprise.",
+      "aHash": "2f18794943e7c681dd6a6df4431dbe92172f767f90e3fcd2f53a36f51842898d"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-344",
+    "concept": "living-standards-and-growth",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO26.1",
+    "type": "interpretation",
+    "primarySkill": "real_gdp_per_person",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: evaluate a conditional catch-up inference instead of recognizing a poor country.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which country is most likely to experience the catch-up effect, other things equal?",
+      "options": [
+        "A poor country with low capital per worker but improving institutions",
+        "A rich country with already abundant capital and stagnant technology",
+        "A country banning investment",
+        "A country with no property rights"
+      ],
+      "feedback": "The catch-up effect is most plausible where capital is scarce and institutions allow investment.",
+      "aHash": "12e06b31e4b85d852da4c1198b9a672eac4b19b79265f16589692a60d6c82e7d"
+    },
+    "after": {
+      "q": "Two economies have equally scarce capital and similar access to technology. One has reliable electricity and trained operators; the other has frequent outages and little training. Which evidence best limits a claim that both must catch up equally fast?",
+      "options": [
+        "The complementary inputs differ, so equal capital scarcity does not imply equal realized gains",
+        "Scarce capital has a low marginal product in both, regardless of complementary inputs",
+        "Technology access proves training and infrastructure no longer matter",
+        "A country’s current income ranking fixes its future growth ranking"
+      ],
+      "feedback": "Capital scarcity can create high-return opportunities, but skilled workers and usable infrastructure help realize them. Catch-up is conditional; equal starting capital alone does not establish equal productivity growth.",
+      "aHash": "56761c777b02edec3c738971624d9a17a5ef6d228fc1abb0c026552c0c0bc128"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9045",
+    "concept": "living-standards-and-growth",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.1",
+    "type": "multi-step",
+    "primarySkill": "rule_of_70",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: connect multiple doublings with a moving comparison target.",
+    "numericProofs": [
+      {
+        "label": "A time",
+        "expression": "70/1.75",
+        "expected": 40
+      },
+      {
+        "label": "B time",
+        "expression": "70/7",
+        "expected": 10
+      },
+      {
+        "label": "A final",
+        "expression": "32000*2",
+        "expected": 64000
+      },
+      {
+        "label": "B final",
+        "expression": "8000*2**4",
+        "expected": 128000
+      }
+    ],
+    "before": {
+      "q": "Country A starts at $40,000 real GDP per person and grows at 2%. Country B starts at $20,000 and grows at 6%. Using the Rule of 70, which is most accurate?",
+      "options": [
+        "B can reach A's current level in about 12 years, while A doubles in about 35 years",
+        "B cannot catch A because it starts poorer",
+        "A doubles in about 12 years and B doubles in about 35 years",
+        "Both double in about 20 years"
+      ],
+      "feedback": "B doubles in about 70/6 = 11.7 years. A doubles in about 35 years.",
+      "aHash": "ee0f79f1351f8843639525020e9d2bea59330a9366e3e3fcf92cc6bf7a6b8c81"
+    },
+    "after": {
+      "q": "At the start, real GDP per person is $32,000 in Alder and $8,000 in Birch. Their persistent growth rates are 1.75% and 7%. Using the Rule of 70, which comparison follows after 40 years?",
+      "options": [
+        "Alder is near $64,000 and Birch near $128,000; matching Alder’s initial level earlier was not yet catching its moving level",
+        "Both are near $64,000 because Birch began at one-quarter of Alder’s level",
+        "Alder is near $64,000 and Birch near $32,000; count only one doubling for Birch",
+        "Birch stays poorer because a lower starting level cannot be overcome"
+      ],
+      "feedback": "Approximate doubling times are 40 years for Alder and 10 for Birch. Over 40 years Alder doubles once to 64,000, while Birch doubles four times to 128,000. Reaching a rival’s initial level is distinct from catching a rival that also grows.",
+      "aHash": "17a26bbee898effb26f43608ef915ed56b9502d100b64e9862b5f4f9f7d3a1a5"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9046",
+    "concept": "living-standards-and-growth",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.1",
+    "type": "calculation",
+    "primarySkill": "real_gdp_per_person",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: distinguish two labor/population denominators and opposing inferences.",
+    "numericProofs": [
+      {
+        "label": "per person",
+        "expression": "(1.12/1.05-1)*100",
+        "expected": 6.666666666666667
+      },
+      {
+        "label": "per hour",
+        "expression": "(1.12/1.2-1)*100",
+        "expected": -6.666666666666667
+      }
+    ],
+    "before": {
+      "q": "A country's real GDP rises 5%, population rises 3%, and average hours per worker rise 1%. Approximate growth in real GDP per person is:",
+      "options": [
+        "About 2%",
+        "About 8%",
+        "About 1%",
+        "About 5%"
+      ],
+      "feedback": "Real GDP per person grows roughly GDP growth minus population growth: 5% - 3% = 2%.",
+      "aHash": "1f8a9162f81541ddb790ad01e39c8bbe81ae1e28d6eb7604482afadc07b85fe2"
+    },
+    "after": {
+      "q": "Over a decade, real GDP rises 12%, population rises 5%, and total labor hours rise 20%. Which pair best evaluates average material output and hourly productivity, to one decimal place?",
+      "options": [
+        "Real GDP per person rises 6.7%; output per hour falls 6.7%",
+        "Both rise 12% because total real GDP rose",
+        "Real GDP per person rises 7%; output per hour falls exactly 8%",
+        "Real GDP per person falls 6.7%; output per hour rises 6.7%"
+      ],
+      "feedback": "Per-person output changes by 1.12/1.05 - 1 ≈ 6.7%; hourly output changes by 1.12/1.20 - 1 ≈ -6.7%. More total hours can raise average output even while productivity per hour falls.",
+      "aHash": "414a74add913d547018bbeae4a3909c1cf167510b1e7eb3e4ade8ab8f490b1b6"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9047",
+    "concept": "living-standards-and-growth",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.1",
+    "type": "calculation",
+    "primarySkill": "real_gdp_per_person",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: combine deflation, scale conversion and per-person comparison.",
+    "numericProofs": [
+      {
+        "label": "Cedar",
+        "expression": "960/1.2/32*1000",
+        "expected": 25000
+      },
+      {
+        "label": "Delta",
+        "expression": "1320/1.5/44*1000",
+        "expected": 20000
+      }
+    ],
+    "before": {
+      "q": "Country X has real GDP of $900B and population of 30M. Country Y has real GDP of $1.6T and population of 80M. Which has higher real GDP per person?",
+      "options": [
+        "Country X with $30,000 versus Country Y with $20,000",
+        "Country Y because total real GDP is larger",
+        "They are equal",
+        "It cannot be determined without CPI"
+      ],
+      "feedback": "X: 900B/30M = 30,000. Y: 1.6T/80M = 20,000.",
+      "aHash": "2507ea70e6d62cc6fc43144d4a91de5b8e0c0339d59df2f2d462eafff5552aa6"
+    },
+    "after": {
+      "q": "Cedar reports nominal GDP of $960 billion, a deflator of 120, and 32 million residents. Delta reports $1,320 billion, a deflator of 150, and 44 million residents. Which current real-GDP-per-person comparison is supported using comparable base prices?",
+      "options": [
+        "Cedar $25,000; Delta $20,000, so higher nominal total does not imply higher average real output",
+        "Cedar $30,000; Delta $30,000, so average real output is equal",
+        "Cedar $25,000; Delta $30,000, because only Cedar needs deflation",
+        "Cedar $20,000; Delta $25,000, because the larger deflator raises real output"
+      ],
+      "feedback": "Real GDP is 960/1.20 = 800 billion for Cedar and 1,320/1.50 = 880 billion for Delta. Divide by populations: 25,000 and 20,000 per person. The larger nominal aggregate does not settle the living-standard comparison.",
+      "aHash": "38380d16597e08cd2e4eaad30e83913e221f40dce8adb022264ffa86d8c46001"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9049",
+    "concept": "living-standards-and-growth",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.1",
+    "type": "interpretation",
+    "primarySkill": "real_gdp_per_person",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reconstruct the sources of per-person growth without conflating workers and residents.",
+    "numericProofs": [
+      {
+        "label": "growth",
+        "expression": "(1.1*.95*(58/60)-1)*100",
+        "expected": 1.0166666666666666
+      }
+    ],
+    "before": {
+      "q": "A country has high total GDP but low GDP per person. What is the likely explanation?",
+      "options": [
+        "It has a large population relative to output",
+        "It must have low inflation",
+        "It must have high productivity",
+        "It has no labor force"
+      ],
+      "feedback": "Total GDP can be high while GDP per person is low if population is very large.",
+      "aHash": "17184c1e992be233d42a1fe6105fbc9fe346c3f83f279d38a9d3a901fd431e1b"
+    },
+    "after": {
+      "q": "Real output per hour rises 10%, annual hours per employed person fall 5%, and the employed share of the population falls from 60% to 58%. Which conclusion about real GDP per person follows, assuming these cover all production?",
+      "options": [
+        "It rises about 1.0%; the other two factors offset much of the productivity gain",
+        "It rises 10%; hourly productivity alone determines the exact change",
+        "It falls 7%; add the percentage and percentage-point declines",
+        "It rises 5%; the employed share does not enter output per person"
+      ],
+      "feedback": "Output per person equals output/hour × hours/worker × workers/person. Its factor is 1.10 × 0.95 × (58/60) ≈ 1.01017. Average output rises about 1.0%, much less than the hourly-productivity increase.",
+      "aHash": "829347b51adfec6aeac69dd7898fb0145afee301a7b20c95b65fafbeb500d507"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9050",
+    "concept": "productivity-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.2",
+    "type": "calculation",
+    "primarySkill": "productivity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reconstruct total hours and compare opposing worker/hour measures.",
+    "numericProofs": [
+      {
+        "label": "initial hourly",
+        "expression": "24000/(20*100)",
+        "expected": 12
+      },
+      {
+        "label": "final hourly",
+        "expression": "25344/(24*80)",
+        "expected": 13.2
+      },
+      {
+        "label": "worker growth",
+        "expression": "((25344/24)/(24000/20)-1)*100",
+        "expected": -12
+      },
+      {
+        "label": "hour growth",
+        "expression": "(13.2/12-1)*100",
+        "expected": 10
+      }
+    ],
+    "before": {
+      "q": "Output rises from 80,000 units to 100,000 units while labor rises from 4,000 hours to 5,500 hours. What happens to productivity?",
+      "options": [
+        "It falls from 20 to about 18.18 units per hour",
+        "It rises from 20 to 25 units per hour",
+        "It stays at 20 units per hour",
+        "It rises from 18.18 to 20 units per hour"
+      ],
+      "feedback": "Initial productivity = 80,000/4,000 = 20. New productivity = 100,000/5,500 ≈ 18.18.",
+      "aHash": "952255d59c9173c21611f38ab1159e67d6f6723f800c7879d067436eb85eb61e"
+    },
+    "after": {
+      "q": "A plant initially produces 24,000 units using 20 workers who each work 100 hours. Next period, 24 workers each work 80 hours and produce 25,344 units. Which comparison is correct?",
+      "options": [
+        "Output per worker falls 12%; output per hour rises 10%",
+        "Both productivity measures rise 5.6%, matching total output",
+        "Output per worker rises 10%; output per hour falls 12%",
+        "Output per hour is unchanged because the plant hired more workers"
+      ],
+      "feedback": "Per-worker output falls from 1,200 to 1,056, or 12%. Total hours fall from 2,000 to 1,920; hourly output rises from 12 to 13.2, or 10%. Changes in hours per worker make the productivity measures diverge.",
+      "aHash": "f8861fc0a7f7a03a0e04670a9e120160c01e4a7473f3c9957cd959419a81a62b"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9051",
+    "concept": "productivity-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.2",
+    "type": "calculation",
+    "primarySkill": "productivity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reverse a resource-constrained output target and interpret the required productivity gain.",
+    "numericProofs": [
+      {
+        "label": "target",
+        "expression": "108/3.2",
+        "expected": 33.75
+      },
+      {
+        "label": "growth",
+        "expression": "((108/3.2)/(90/3)-1)*100",
+        "expected": 12.5
+      }
+    ],
+    "before": {
+      "q": "A country raises output per worker from $60,000 to $75,000 while population is unchanged. What is the productivity growth rate?",
+      "options": [
+        "25%",
+        "15%",
+        "20%",
+        "75%"
+      ],
+      "feedback": "Growth = (75,000 - 60,000)/60,000 = 25%.",
+      "aHash": "72da55d317fd997b93138b8646a2238e806a4c4566d1e854277b5a583d8aef23"
+    },
+    "after": {
+      "q": "An economy initially produces $90 billion using 3 billion labor hours. A plan targets $108 billion while limiting total hours to 3.2 billion. What hourly productivity and increase over the initial level are required?",
+      "options": [
+        "$33.75 per hour, a 12.5% increase",
+        "$36 per hour, a 20% increase",
+        "$30 per hour, with no productivity gain",
+        "$28.125 per hour, a 6.25% decline"
+      ],
+      "feedback": "Initial productivity is 90/3 = 30 dollars per hour. The target requires 108/3.2 = 33.75, or 12.5% more. Output growth alone overstates the needed productivity increase because hours also expand.",
+      "aHash": "3c6b59e8518ea5764b7114dc67ee8b65bed7b204963d9f2ec20279511e906686"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9053",
+    "concept": "productivity-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.2",
+    "type": "interpretation",
+    "primarySkill": "productivity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B/C/D: correct the unsupported living-standard implication in the former keyed wording.",
+    "numericProofs": [
+      {
+        "label": "worker growth",
+        "expression": "(1.06/1.1-1)*100",
+        "expected": -3.6363636363636362
+      }
+    ],
+    "before": {
+      "q": "A country adds workers and total output rises, but output per worker falls. What is the best interpretation?",
+      "options": [
+        "GDP rose, but productivity and living-standard gains weakened",
+        "Productivity must rise because output rose",
+        "Real GDP per person must rise faster than GDP",
+        "The Rule of 70 no longer applies"
+      ],
+      "feedback": "Total output and productivity can move in different directions.",
+      "aHash": "f9bbab5067435fbd1c76ee7654fb293d74e33f26dc86186f6ab4c405dbce5b8c"
+    },
+    "after": {
+      "q": "A country’s real GDP rises 6% while employment rises 10%. Population is unchanged. Which assessment separates average material output from output per worker?",
+      "options": [
+        "Output per person rises 6%; output per worker falls about 3.6%",
+        "Both fall about 3.6% because productivity declined",
+        "Both rise 6% because GDP increased",
+        "Output per person falls 4%; subtract employment growth from GDP growth"
+      ],
+      "feedback": "With population fixed, GDP per person rises 6%. Output per worker changes by 1.06/1.10 - 1 ≈ -3.6%. A productivity decline does not imply that average output per resident also declined.",
+      "aHash": "867a0382d3bb743f2e5730f0957253642fb19bfaa1960290b1747d8f9ad49fe7"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9066",
+    "concept": "productivity-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.2",
+    "type": "integration",
+    "primarySkill": "productivity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reverse two productivity measures and distinguish accounting from causation.",
+    "numericProofs": [
+      {
+        "label": "initial share",
+        "expression": "30000/50000*100",
+        "expected": 60
+      },
+      {
+        "label": "final share",
+        "expression": "30000/55000*100",
+        "expected": 54.54545454545455
+      }
+    ],
+    "before": {
+      "q": "A country's real GDP per worker rises while real GDP per person is flat. What likely happened?",
+      "options": [
+        "A smaller share of the population was working",
+        "Productivity must have fallen",
+        "Real GDP must have fallen",
+        "The CPI must have doubled"
+      ],
+      "feedback": "Output per worker can rise while output per person remains flat if fewer people are working relative to population.",
+      "aHash": "f22c17d0b492c3d935c60d2f0258c737a823b6417539b05b73aab6c738dd7220"
+    },
+    "after": {
+      "q": "Output per worker rises from $50,000 to $55,000, but real GDP per resident stays at $30,000. What must happen to the employed share of residents, assuming the measures cover the same output?",
+      "options": [
+        "It falls from 60% to about 54.5%, offsetting the productivity rise",
+        "It rises from 60% to 66%, reinforcing the productivity rise",
+        "It stays at 60% because output per resident is unchanged",
+        "It falls from 50% to 45%, because wages determine employment shares"
+      ],
+      "feedback": "Workers/residents equals output/resident divided by output/worker. The share changes from 30,000/50,000 = 60% to 30,000/55,000 ≈ 54.5%. This accounting result does not identify why the employment share fell.",
+      "aHash": "c2589600271eb9c16c116ce9955035124776040b0c1b1109ec99cebeb7508380"
+    }
+  },
+  {
+    "id": "PM2B3-PROD-FB-004",
+    "concept": "productivity-measurement",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "LO26.2",
+    "type": "graph",
+    "primarySkill": "productivity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "E/D: remove all-answer coordinates from the stem and require the approved image for calculation and inference.",
+    "numericProofs": [
+      {
+        "label": "output growth",
+        "expression": "(36.37-28.53)/28.53*100",
+        "expected": 27.479845776375743
+      }
+    ],
+    "before": {
+      "q": "From A to B in GROWTH-01, capital per worker doubles from 20 to 40 while output per worker rises from 28.53 to 36.37. What does this comparison show?",
+      "options": [
+        "Capital per worker has no relationship to the output shown on the curve",
+        "Output per worker rises by less than 100 percent",
+        "Output per worker also doubles because capital per worker doubled",
+        "Output per worker falls even though capital per worker doubled"
+      ],
+      "feedback": "Output per worker rises from 28.53 to 36.37, about 27.5%, which is less than the 100% increase in capital per worker.",
+      "aHash": "33316c46ee11e4033f05660cf752af5e7a48a9e22961a01e77248ae4232cf0c3"
+    },
+    "after": {
+      "q": "Use the displayed GROWTH-01 coordinates. Moving from A to B doubles capital per worker. Approximately how much does output per worker rise, and what is consistent with the curve’s shape?",
+      "options": [
+        "7.84%; the numerical output increase is already a percentage",
+        "27.5%; the same further capital increase would add less output",
+        "100%; doubling capital must double output",
+        "27.5%; each further equal capital increase must add more output"
+      ],
+      "feedback": "The graph gives output 28.53 at A and 36.37 at B. The increase is 7.84/28.53 × 100 ≈ 27.5%. The flattening curve shows diminishing marginal gains from equal additional capital, holding other inputs fixed.",
+      "aHash": "d613f7bf35b37de2ef6e0fc5f432e1088873e8eafe704d47d694bb3e882dcf73"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9054",
+    "concept": "sources-of-productivity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.3",
+    "type": "integration",
+    "primarySkill": "physical_capital",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: evaluate staged evidence and an overbroad causal conclusion.",
+    "numericProofs": [],
+    "before": {
+      "q": "A factory adds machines but does not train workers to use them well. Output rises only slightly. Which concept best explains the weak result?",
+      "options": [
+        "Capital and worker skills are complementary",
+        "Natural resources always dominate machines",
+        "GDP excludes machines",
+        "Human capital reduces productivity"
+      ],
+      "feedback": "Capital is more productive when workers have the skills to use it effectively.",
+      "aHash": "b6906c16386c8c9501677de95017bf7ec772ac36074d67e467add25da63a62a3"
+    },
+    "after": {
+      "q": "A factory adds machinery but productivity barely changes. After operator training, output rises with the same machines and labor hours. A manager concludes that machines have no productive value. Which interpretation best fits both stages?",
+      "options": [
+        "Training helped realize the value of complementary capital; the first stage did not show that machines were useless",
+        "Training proves all earlier spending on machines should be subtracted from GDP",
+        "The later gain must be more physical capital because worker skills are unchanged by training",
+        "The data prove training raises output equally in every factory, regardless of equipment"
+      ],
+      "feedback": "The second stage changes human capital while holding physical inputs fixed. Its effect can reflect complementarity between skills and machinery. A weak result before training does not identify a zero contribution from capital.",
+      "aHash": "f36ba1e320b808f86f2c3ed0e3771527bf1d49dca69aef67c58ee7d36e0e63e3"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9056",
+    "concept": "sources-of-productivity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.3",
+    "type": "trap",
+    "primarySkill": "physical_capital",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: separate productivity sources under a matched outcome.",
+    "numericProofs": [],
+    "before": {
+      "q": "A new production method doubles output using the same workers and machines. Which productivity factor changed most directly?",
+      "options": [
+        "Technological knowledge",
+        "Physical capital per worker",
+        "Natural resources per worker",
+        "Labor force participation"
+      ],
+      "feedback": "A better method of production is technological knowledge, not necessarily more physical capital.",
+      "aHash": "dca1c38d8087b2a49dad8fe1ad9815a1efa44a1702bb6d57a96970e8137d42d3"
+    },
+    "after": {
+      "q": "Two plants initially use the same machines and hours. Plant A adopts a freely available scheduling method and raises output 8%. Plant B trains operators without changing its method and raises output 8%. What can be inferred about productivity sources?",
+      "options": [
+        "A changed technological knowledge and B human capital; equal output gains do not make the mechanisms identical",
+        "Both added physical capital because output rose without more labor hours",
+        "Both changed natural resources because the gain has the same size",
+        "A’s gain is human capital and B’s is technology solely because both involve information"
+      ],
+      "feedback": "A new production method is technological knowledge; skills acquired by workers are human capital. Equal measured gains do not identify a common mechanism or prove the two interventions would have equal effects elsewhere.",
+      "aHash": "f845eeb1c82bf0c69cf5931ad966778c0f4506e25edad566729b7ef1ea4f0719"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9058",
+    "concept": "sources-of-productivity",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.3",
+    "type": "interpretation",
+    "primarySkill": "productivity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B/C/D: state controlled inputs and distinguish marginal evidence from unsupported extrapolation.",
+    "numericProofs": [
+      {
+        "label": "first gain",
+        "expression": "160-100",
+        "expected": 60
+      },
+      {
+        "label": "second gain",
+        "expression": "200-160",
+        "expected": 40
+      }
+    ],
+    "before": {
+      "q": "If capital per worker rises from $50,000 to $100,000 and output per worker rises from $70,000 to $90,000, what does this suggest?",
+      "options": [
+        "Productivity rose less than capital, showing diminishing returns",
+        "Capital had no effect",
+        "Output per worker doubled",
+        "Diminishing returns means output must fall"
+      ],
+      "feedback": "Capital doubled, but output per worker rose by less than double, consistent with diminishing returns.",
+      "aHash": "f9afc542236f192a74978d2871f56ff9244cefcc72b37dbee807c46e5320ac12"
+    },
+    "after": {
+      "q": "With labor, skills and technology fixed, output at 10, 20 and 30 identical machines is 100, 160 and 200 units. A planner predicts that 40 machines must yield 260. Which assessment follows from the observed pattern?",
+      "options": [
+        "The successive gains are 60 and 40; continued diminishing marginal returns would put the next gain below 40",
+        "The observed average gain is 50, so 40 machines must yield exactly 250",
+        "The capital stock doubled once, proving output must double at 40 machines",
+        "The last gain was 40, so every later ten machines must add exactly 40"
+      ],
+      "feedback": "Equal capital increments add 60 then 40 units while other inputs are fixed. If the diminishing-returns pattern continues, the next increment adds less than 40; the table alone does not supply an exact future output level.",
+      "aHash": "cd9ac306c8f49212a34df88686dbdfcf2ec05d1b9348d7c723f322b3064ce7ca"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARYBOSS-9120",
+    "concept": "sources-of-productivity",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "LO26.3",
+    "type": "interpretation",
+    "primarySkill": "productivity_calculation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B/C: add the missing fixed-input condition and test a competing explanation.",
+    "numericProofs": [],
+    "before": {
+      "q": "Boss Audit: Capital per worker doubles, but output per worker rises only 20%. What concept is most directly shown?",
+      "options": [
+        "Diminishing returns to capital",
+        "Rule of 70",
+        "CPI substitution bias",
+        "Cyclical unemployment"
+      ],
+      "feedback": "Adding capital raises output, but less than proportionally, showing diminishing returns.",
+      "aHash": "ea7d99b48006b8e730d3c4741d1464f56c25d4917df4a7fbcbbddd0eb31de194"
+    },
+    "after": {
+      "q": "Two equal additions to capital per worker produce output gains of 9 and 6 with skills and technology fixed. A later 9-unit gain occurs after a new production method is introduced. Does that last observation refute diminishing returns to capital?",
+      "options": [
+        "No; the first two gains compare capital with other inputs fixed, while technology changed in the third",
+        "Yes; any later larger gain refutes diminishing returns regardless of other changes",
+        "No; diminishing returns means total output must fall after adding capital",
+        "Yes; introducing technology changes physical capital into a natural resource"
+      ],
+      "feedback": "Diminishing marginal returns concerns additional capital with other determinants held fixed. The first two gains fit that pattern. A technology improvement changes the production relationship, so the larger third gain is not a comparable capital-only experiment.",
+      "aHash": "99b3e537b08ba001a24bf343dbbe093d87370471c78c62b71d398621a86e24af"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-359",
+    "concept": "economic-growth-policy",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO26.4",
+    "type": "interpretation",
+    "primarySkill": "growth_policy",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: apply a policy package to an explicit growth constraint.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which policy package is most internally consistent for long-run growth?",
+      "options": [
+        "Secure property rights, investment, education, trade, and R&D",
+        "Raise uncertainty, block trade, reduce schooling, and discourage investment",
+        "Focus only on transfer payments and ignore productivity",
+        "Ban foreign technology and subsidize capital decay"
+      ],
+      "feedback": "Long-run growth policy should support capital accumulation, human capital, technology, trade, and stable institutions.",
+      "aHash": "ffcd78db5b57d8a48407efe7b8a4f35164ab882edb79f4f4589185b90f71a74b"
+    },
+    "after": {
+      "q": "A country wants continuing productivity growth after a one-time equipment grant has raised capital per worker. Which package best addresses the limitation imposed by diminishing returns?",
+      "options": [
+        "Maintain useful investment while improving skills, research and adoption of better methods",
+        "Repeat equal equipment grants and assume each creates a larger marginal output gain",
+        "Increase working hours and treat all additional output as higher hourly productivity",
+        "Replace training with equipment because physical and human capital cannot complement each other"
+      ],
+      "feedback": "Additional capital can still raise output, but its marginal contribution may diminish with other inputs fixed. Skills and technological progress complement capital and support productivity growth beyond a single level increase.",
+      "aHash": "430b13e8f518e1f180294915bbce61c6efe555492f99cc40597bfa9ae3f5e1e7"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9060",
+    "concept": "economic-growth-policy",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.4",
+    "type": "interpretation",
+    "primarySkill": "growth_policy",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: evaluate a proposed policy against the mechanism in the evidence.",
+    "numericProofs": [],
+    "before": {
+      "q": "A country encourages saving but has corrupt courts and frequent asset seizure. Why might investment still remain weak?",
+      "options": [
+        "Weak property rights discourage productive investment",
+        "Saving always guarantees investment",
+        "Courts affect only unemployment statistics",
+        "Asset seizure increases capital accumulation"
+      ],
+      "feedback": "Saving supports investment only when institutions make investment secure enough to undertake.",
+      "aHash": "a50c43eb89e25cb0c9ef1d4bd983a309c12407a2b5baca5b2fefff3639188257"
+    },
+    "after": {
+      "q": "A country raises saving incentives, yet surveyed firms postpone equipment purchases because contracts are often unenforceable. A proposed response doubles the saving subsidy without changing courts. Which recommendation is best supported?",
+      "options": [
+        "Address enforcement risk alongside finance; more saving alone may not make productive investment attractive",
+        "Double the subsidy because every extra saved dollar necessarily becomes domestic machinery",
+        "Reduce worker training because courts and skills are substitute measures of the same input",
+        "Infer that physical capital has zero marginal product because investment is currently weak"
+      ],
+      "feedback": "The evidence identifies insecure returns as a barrier between available funds and investment. Predictable enforcement can complement financing. The survey does not establish an optimal subsidy or prove capital has no productive value.",
+      "aHash": "233dd13da392bafeeeb86378608cfc229865bc5c5796bf81b6684d8df88bfe28"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9062",
+    "concept": "economic-growth-policy",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.4",
+    "type": "integration",
+    "primarySkill": "growth_policy",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: replace a general complements slogan with an evaluated policy response.",
+    "numericProofs": [],
+    "before": {
+      "q": "A country invests in education but prevents firms from adopting new technology. What is the main problem?",
+      "options": [
+        "Skills need complementary technology and capital",
+        "Education is unrelated to productivity",
+        "Technology always reduces human capital",
+        "Growth depends only on natural resources"
+      ],
+      "feedback": "Human capital, physical capital, and technology work together.",
+      "aHash": "cde9cf9d445872d7e5a966d96042266e05e7a4e430b67a9dff575f6cf9b9ab38"
+    },
+    "after": {
+      "q": "A region has trained engineers and funds for new equipment, but a rule prevents firms from using improved production methods. A review proposes more of the same training while keeping that rule. Which response best addresses the stated constraint?",
+      "options": [
+        "Permit useful method adoption while maintaining skills and investment; training alone may not release the constraint",
+        "Purchase equipment alone because methods cannot affect output with machines fixed",
+        "Keep the rule because a stock of trained workers guarantees continuing productivity growth",
+        "Stop all training because technological knowledge makes human capital unproductive"
+      ],
+      "feedback": "The constrained margin is adopting better methods. Technology, skills and equipment can complement one another; repeating one input policy while blocking another can limit the gain. This is a conditional recommendation from the stated evidence.",
+      "aHash": "dce8b00cd9028fde296a3d5e87bd88e62a56e029f0c33cd14a79de8824907dc3"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9063",
+    "concept": "economic-growth-policy",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO26.4",
+    "type": "interpretation",
+    "primarySkill": "growth_policy",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: assess evidence and timing behind an established growth-policy package.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which policy package best targets productivity rather than merely short-run demand?",
+      "options": [
+        "R&D, secure property rights, education, infrastructure, and investment",
+        "Temporary rebates only",
+        "Price ceilings on output",
+        "Higher transfer payments without investment"
+      ],
+      "feedback": "Long-run productivity policy builds capital, skills, technology, and institutions.",
+      "aHash": "aaaf7596ef9f9d5d791419267f154590593d68a8751a74ff81f1cc9e87cf3306"
+    },
+    "after": {
+      "q": "A policy package improves contract enforcement, funds technical training, and supports research trials. After two years, capital and skill measures rise but output growth remains modest. Which assessment best separates a coherent strategy from a guaranteed result?",
+      "options": [
+        "The package targets productivity determinants; implementation, diffusion and time still matter for realized growth",
+        "The package failed in principle because research must raise output immediately",
+        "The capital increase proves the research trials caused all future growth",
+        "The modest output change proves institutions cannot affect investment incentives"
+      ],
+      "feedback": "The instruments address institutions, human capital and technological knowledge. These are plausible growth channels, but observed short-run output alone neither guarantees eventual success nor disproves the channels. Implementation and technology diffusion must be evaluated.",
+      "aHash": "8159b9d14d195d795d53ed2093e0bd6271b660775303afc9187f16becec0d600"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-366",
+    "concept": "unemployment-measurement",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO29.2",
+    "type": "multi-step",
+    "primarySkill": "employment_classification",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: apply classifications to a rate and its limitation.",
+    "numericProofs": [
+      {
+        "label": "LF",
+        "expression": "84+6",
+        "expected": 90
+      },
+      {
+        "label": "rate",
+        "expression": "6/90*100",
+        "expected": 6.666666666666667
+      }
+    ],
+    "before": {
+      "q": "A jobless person applies for work this week. Another jobless person wants work but last applied three months ago. How are they classified?",
+      "options": [
+        "The first is unemployed; the second is not in the labor force",
+        "Both are unemployed",
+        "Both are employed",
+        "The first is not in the labor force; the second is unemployed"
+      ],
+      "feedback": "Active recent search is required to be counted as unemployed.",
+      "aHash": "68e9b991295889a76950a541b34cb953ed34549f2d7adc03ea7e170d5d94b0ac"
+    },
+    "after": {
+      "q": "A survey has 84 adults working for pay, including 14 seeking more hours; 6 available jobless adults applied last week; 30 jobless adults are not searching. Which official count and limitation are correct?",
+      "options": [
+        "Labor force 90 and unemployment about 6.7%; underemployment among paid workers is not in that rate",
+        "Labor force 104 and unemployment about 19.2%; add those seeking more hours to unemployment",
+        "Labor force 120 and unemployment 5%; use every adult in the denominator",
+        "Labor force 76 and unemployment about 7.9%; exclude part-time paid workers"
+      ],
+      "feedback": "All 84 paid workers are employed, including those wanting more hours. Add the 6 active, available seekers for LF = 90; 6/90 ≈ 6.7%. The rate does not measure all of the part-time workers’ unmet demand for hours.",
+      "aHash": "34ef5ef4e16035a96d5ec6ff24b2a779a6b60ca060ae35909d188dc7d917b733"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9067",
+    "concept": "unemployment-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.1",
+    "type": "multi-step",
+    "primarySkill": "unemployment_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reconcile several worker flows and both denominators.",
+    "numericProofs": [
+      {
+        "label": "employed",
+        "expression": "132+4-2",
+        "expected": 134
+      },
+      {
+        "label": "unemployed",
+        "expression": "12-4-3+5",
+        "expected": 10
+      },
+      {
+        "label": "u rate",
+        "expression": "10/144*100",
+        "expected": 6.944444444444445
+      },
+      {
+        "label": "LFPR",
+        "expression": "144/200*100",
+        "expected": 72
+      }
+    ],
+    "before": {
+      "q": "An economy has 170M employed, 10M unemployed, and 70M not in the labor force. Then 5M unemployed become discouraged and 5M not in the labor force find jobs. What is the new unemployment rate?",
+      "options": [
+        "2.78%",
+        "5.56%",
+        "5.26%",
+        "8.33%"
+      ],
+      "feedback": "New employed = 175M, unemployed = 5M, labor force = 180M. Unemployment = 5/180 = 2.78%.",
+      "aHash": "4a4aca2235a50cfadcf65cd6c6333e378ebca9fd964a5bc315159680a2f74a0b"
+    },
+    "after": {
+      "q": "A labor survey starts with 132 employed, 12 unemployed and 56 other adults. Then 4 unemployed find jobs, 3 stop searching, 5 outsiders start searching without finding work, and 2 employed retire. All job seekers are available. What are the new unemployment and participation rates?",
+      "options": [
+        "About 6.9% unemployment and 72% participation",
+        "About 5% unemployment and 72% participation",
+        "About 6.9% unemployment and 75.5% participation",
+        "About 8.3% unemployment and 72% participation"
+      ],
+      "feedback": "Employment becomes 132 + 4 - 2 = 134 and unemployment 12 - 4 - 3 + 5 = 10. The labor force is 144 of 200 adults, so participation is 72% and unemployment is 10/144 ≈ 6.9%. The entering and leaving flows happen to offset in total participation.",
+      "aHash": "bf3748fc6f600bd51438822a13688f102249608b2be8e0a6cdd6570a577517db"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9068",
+    "concept": "unemployment-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.1",
+    "type": "calculation",
+    "primarySkill": "labor_force_participation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reverse starting stocks from rates and then reconcile transitions.",
+    "numericProofs": [
+      {
+        "label": "initial LF",
+        "expression": "200*.75",
+        "expected": 150
+      },
+      {
+        "label": "initial U",
+        "expression": "150*.08",
+        "expected": 12
+      },
+      {
+        "label": "final E",
+        "expression": "150-12-6",
+        "expected": 132
+      },
+      {
+        "label": "final U",
+        "expression": "12-6+4",
+        "expected": 10
+      },
+      {
+        "label": "u rate",
+        "expression": "10/142*100",
+        "expected": 7.042253521126761
+      },
+      {
+        "label": "LFPR",
+        "expression": "142/200*100",
+        "expected": 71
+      }
+    ],
+    "before": {
+      "q": "Adult population is 280M, labor force participation is 65%, and unemployment rate is 6%. How many people are employed?",
+      "options": [
+        "171.08M",
+        "182M",
+        "16.8M",
+        "263.2M"
+      ],
+      "feedback": "Labor force = 0.65 x 280 = 182M. Unemployed = 0.06 x 182 = 10.92M. Employed = 171.08M.",
+      "aHash": "84e1c7134946f972d381905dbfa95912e9af9cd654bf3ce48cfef593bf343d37"
+    },
+    "after": {
+      "q": "There are 200 adults, labor-force participation is 75%, and unemployment is 8%. Next month 6 unemployed stop searching, 6 employed retire, and 4 outsiders start searching without finding work. With everyone otherwise unchanged and seekers available, which final account is correct?",
+      "options": [
+        "132 employed; about 7.0% unemployment; 71% participation",
+        "138 employed; 4% unemployment; 75% participation",
+        "132 employed; 5% unemployment; 71% participation",
+        "144 employed; about 6.5% unemployment; 77% participation"
+      ],
+      "feedback": "Initially LF = 150, U = 12 and E = 138. After the flows E = 132, U = 12 - 6 + 4 = 10 and LF = 142. Thus U/LF ≈ 7.0% and LF/adults = 71%. A lower unemployment rate coexists with fewer people employed.",
+      "aHash": "f1af2bcc450c9b24ecceea9b17232aadc21ce7136358dcbd0e184eea694ff540"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9070",
+    "concept": "unemployment-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.1",
+    "type": "interpretation",
+    "primarySkill": "labor_force_participation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: infer employment from simultaneous rate observations and challenge a misleading summary.",
+    "numericProofs": [
+      {
+        "label": "initial E",
+        "expression": "200*.75*.94",
+        "expected": 141
+      },
+      {
+        "label": "final E",
+        "expression": "200*.70*.94",
+        "expected": 131.6
+      },
+      {
+        "label": "E decline",
+        "expression": "200*(.75-.70)*.94",
+        "expected": 9.4
+      }
+    ],
+    "before": {
+      "q": "The unemployment rate falls while labor force participation also falls. Which interpretation is most careful?",
+      "options": [
+        "Labor-force exits may make unemployment look lower",
+        "The labor market definitely improved",
+        "Employment must have risen",
+        "Cyclical unemployment must be zero"
+      ],
+      "feedback": "A falling unemployment rate can be misleading when participation falls.",
+      "aHash": "2c6d5904530a04e96d4699ef172dcef24d18435a56e1eee41e13dd13ede97186"
+    },
+    "after": {
+      "q": "A population of 200 adults is unchanged. The unemployment rate stays at 6%, while participation falls from 75% to 70%. Which employment change and interpretation follow?",
+      "options": [
+        "Employment falls by 9.4; a stable unemployment rate does not imply a stable number of jobs",
+        "Employment stays at 141; a stable rate fixes employment",
+        "Employment falls by 10; every labor-force exit must be an employed worker",
+        "Employment rises by 9.4; lower participation indicates more jobs"
+      ],
+      "feedback": "The labor force falls from 150 to 140. Employment is 94% of each total: 141 initially and 131.6 afterward, a decline of 9.4. The unchanged unemployment rate is a ratio, not an unchanged employment count.",
+      "aHash": "abdf57c7e5f0788265bddb7cea7799498914f5291395dd78d5edc6c70d1ce8e2"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9081",
+    "concept": "unemployment-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.1",
+    "type": "interpretation",
+    "primarySkill": "unemployment_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: reverse worker flows instead of accepting a lower unemployment total as sufficient evidence.",
+    "numericProofs": [
+      {
+        "label": "hires",
+        "expression": "184-180",
+        "expected": 4
+      },
+      {
+        "label": "exits",
+        "expression": "20-12-(184-180)",
+        "expected": 4
+      },
+      {
+        "label": "initial LFPR",
+        "expression": "200/250*100",
+        "expected": 80
+      },
+      {
+        "label": "final LFPR",
+        "expression": "(184+12)/250*100",
+        "expected": 78.4
+      }
+    ],
+    "before": {
+      "q": "If unemployed workers stop searching at the same time firms hire some unemployed workers, why is the unemployment rate hard to interpret?",
+      "options": [
+        "It may fall for both good reasons and bad reasons at the same time",
+        "It must rise because employment rises",
+        "It becomes meaningless because GDP changes",
+        "It always equals labor force participation"
+      ],
+      "feedback": "Hiring improves labor markets, but labor-force exit can also reduce measured unemployment.",
+      "aHash": "f5c76e52681a4de4fc1f8248d97f303e498ca29980b523dc441b38faf72e0ba9"
+    },
+    "after": {
+      "q": "A report says unemployment fell from 20 to 12 while employment rose from 180 to 184. Adult population is fixed at 250, and the only flows were unemployed people finding jobs or stopping search. Which decomposition and participation change are implied?",
+      "options": [
+        "4 found jobs and 4 left search; participation fell from 80% to 78.4%",
+        "8 found jobs; participation stayed at 80%",
+        "4 found jobs and 8 left search; participation fell to 76.8%",
+        "4 left search and none found jobs; the employment rise is unrelated"
+      ],
+      "feedback": "The employment rise identifies 4 job findings. Of the 8-person unemployment decline, the remaining 4 are exits. LF falls from 200 to 196, so participation falls from 80% to 78.4%. Both hiring and withdrawal contributed to the lower headline rate.",
+      "aHash": "d3cd6f52477a86045a87be574002459bc3d314a0ac0d72102ee06bff2c6fd351"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9084",
+    "concept": "unemployment-measurement",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.2",
+    "type": "interpretation",
+    "primarySkill": "employment_classification",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: evaluate what information is needed beyond headline classification.",
+    "numericProofs": [],
+    "before": {
+      "q": "A country has low unemployment but many workers are involuntarily part time. What is the best conclusion?",
+      "options": [
+        "Headline unemployment may understate underemployment",
+        "The economy must be at full well-being",
+        "All part-time work is unemployment",
+        "Labor force participation must be zero"
+      ],
+      "feedback": "Workers can be counted as employed even when their hours are inadequate.",
+      "aHash": "3baa0cdd73566493c39bd28d16ee1a648b59304b6f18e4fd75ebdd8f30cc66d6"
+    },
+    "after": {
+      "q": "Two districts have the same unemployment rate and population. One has lower participation and a larger share of employed people working part time because full-time work is unavailable. Which additional comparison is best before calling their labor markets equally strong?",
+      "options": [
+        "Compare employment per adult and desired versus actual hours; the headline rate omits both differences",
+        "Compare only total unemployment; equal unemployment rates guarantee equal counts",
+        "Count all involuntary part-time workers as unemployed before applying the official definition",
+        "Exclude discouraged workers from every indicator because they are outside the labor force"
+      ],
+      "feedback": "Unemployment divides job seekers by the labor force. Lower participation can lower employment per adult even at the same rate, while involuntary part-time workers remain employed. Additional participation and hours evidence is needed for the broader assessment.",
+      "aHash": "34de6a3f830dd10927242f2028aa3293b43109442d5571baf02ff1de622d4818"
+    }
+  },
+  {
+    "id": "ECON-NL-FINALBOSS-4003",
+    "concept": "unemployment-measurement",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "LO29.1",
+    "type": "definition",
+    "primarySkill": "labor_force_participation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: replace a final-checkpoint definition with ordinary exam measurement.",
+    "numericProofs": [
+      {
+        "label": "LFPR",
+        "expression": "(126+14)/(126+14+60)*100",
+        "expected": 70
+      },
+      {
+        "label": "u rate",
+        "expression": "14/140*100",
+        "expected": 10
+      }
+    ],
+    "before": {
+      "q": "Labor-force participation is calculated as:",
+      "options": [
+        "Labor force divided by adult population times 100",
+        "Unemployed divided by labor force times 100",
+        "Employed divided by unemployed times 100",
+        "Not in labor force divided by unemployed times 100"
+      ],
+      "feedback": "Labor force participation measures the share of adults in the labor force.",
+      "aHash": "060a1309a435ed55a24b2e21380c1575c6b67ca77b4f5aa13dd1aed154d7dd90"
+    },
+    "after": {
+      "q": "A survey records 126 employed adults, 14 available jobless adults actively searching, and 60 adults outside the labor force. Which participation calculation is correct, and how does it differ from unemployment?",
+      "options": [
+        "70% participation; unemployment uses 14 divided by 140",
+        "63% participation; unemployment uses 14 divided by 200",
+        "90% participation; unemployment uses 14 divided by 126",
+        "7% participation; unemployment and participation are the same ratio"
+      ],
+      "feedback": "Participation is (126 + 14)/(126 + 14 + 60) = 70%. Unemployment instead divides the 14 unemployed by the labor force of 140, yielding 10%. The denominators answer different questions.",
+      "aHash": "4db7707d3d62e6ce6ae08ba7a7efab7f8f4cc75cdcfa6cc3e7fd69012a4cd450"
+    }
+  },
+  {
+    "id": "ECON-NL-FINALBOSS-4006",
+    "concept": "unemployment-measurement",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "LO29.2",
+    "type": "trap",
+    "primarySkill": "employment_classification",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: replace checkpoint label recall with a status transition and interpretation.",
+    "numericProofs": [],
+    "before": {
+      "q": "An economist asks a classification question: a worker with a part-time paid job wants full-time work. How is that worker classified in the headline unemployment rate?",
+      "options": [
+        "Employed",
+        "Unemployed",
+        "Not in the labor force",
+        "Discouraged"
+      ],
+      "feedback": "Any paid work generally means the person is counted as employed, even if underemployed.",
+      "aHash": "5946f7b2be60c7ea745cf7a2c55e1da2a1afb6c4d805428c7a6f76bf58f83606"
+    },
+    "after": {
+      "q": "A jobless adult who had stopped searching accepts a paid part-time job but still wants full-time work. With other adults unchanged, which immediate changes follow?",
+      "options": [
+        "Employment and the labor force rise; involuntary part-time work can remain",
+        "Unemployment rises because the worker still wants a full-time job",
+        "Employment rises but the labor force stays fixed because the job is part time",
+        "Participation falls because part-time employment is outside the labor force"
+      ],
+      "feedback": "The worker moves from outside the labor force to employed. Both employment and the labor force rise, while wanting more hours does not change the official employed classification. The hours shortfall remains relevant to labor-market well-being.",
+      "aHash": "a8ae4346a3b039b8805fb6115c1259d078d5deaff26b4abc438a97c41f6517dc"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9074",
+    "concept": "unemployment-types",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.3",
+    "type": "multi-step",
+    "primarySkill": "structural_unemployment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: integrate causes of unemployment with the separate employment-status classification.",
+    "numericProofs": [],
+    "before": {
+      "q": "A nurse moving between hospitals, a cashier displaced by automation, and a waiter laid off during recession represent which types, in order?",
+      "options": [
+        "Frictional, structural, cyclical",
+        "Structural, frictional, cyclical",
+        "Cyclical, structural, frictional",
+        "Frictional, cyclical, structural"
+      ],
+      "feedback": "Job search is frictional; automation mismatch is structural; recession layoff is cyclical.",
+      "aHash": "d814d7906736affe3e9fe8550e953f27b6c09f4269daeaeed16a04b9d8cc923d"
+    },
+    "after": {
+      "q": "After a regional downturn ends, one group has suitable job offers but needs time to choose; another cannot meet credentials for expanding occupations. A third group has already accepted paid part-time work while seeking full-time jobs. Which diagnosis respects both cause and official status?",
+      "options": [
+        "The first group is frictionally unemployed, the second structurally unemployed, and the third employed",
+        "All three are structurally unemployed because each wants a different job",
+        "The first is cyclical, the second frictional, and the third outside the labor force",
+        "All three are unemployed until they obtain their preferred full-time jobs"
+      ],
+      "feedback": "Normal matching among suitable jobs is frictional; a persistent credential mismatch is structural. A paid part-time job makes the third group employed under the official measure, even though underemployment may remain.",
+      "aHash": "20f10a242095b23923f6d4a0a63390a9ee847b75d644233abe23fcf45d91c4fb"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9080",
+    "concept": "unemployment-types",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.3",
+    "type": "interpretation",
+    "primarySkill": "cyclical_unemployment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: choose discriminating evidence among plausible unemployment mechanisms.",
+    "numericProofs": [],
+    "before": {
+      "q": "The economy recovers from recession, but unemployment remains elevated among workers whose skills no longer match job openings. What remains after cyclical unemployment falls?",
+      "options": [
+        "Structural unemployment",
+        "Only frictional unemployment",
+        "No unemployment",
+        "Inflation unemployment"
+      ],
+      "feedback": "Persistent mismatch after recovery is structural unemployment.",
+      "aHash": "7d4946ab3971cda89e72885d31962cb00e054b88b996dd505df24b497da2fc76"
+    },
+    "after": {
+      "q": "Spending and total vacancies recover after a downturn, but vacancies concentrate in licensed occupations while displaced workers lack the credentials. Which evidence would most directly strengthen a structural diagnosis over a purely cyclical one?",
+      "options": [
+        "Credential training is followed by placements into the unfilled occupations while overall spending changes little",
+        "All vacancies disappear when spending weakens again",
+        "Workers have suitable offers and are briefly choosing among them",
+        "Unemployment falls only when economy-wide spending rises sharply, with no change in skills"
+      ],
+      "feedback": "The mismatch between expanding occupations and worker credentials points to a structural barrier. Placements after relevant training, with demand broadly unchanged, strengthen that mechanism rather than a claim based only on weak spending or ordinary search.",
+      "aHash": "c479ff383053851062e47c984283164986cf0f58cde000bbe84ba0866bd0aebd"
+    }
+  },
+  {
+    "id": "PM2B4-UTYPE-L-002",
+    "concept": "unemployment-types",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.3",
+    "type": "application",
+    "primarySkill": "frictional_unemployment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: distinguish unemployment mechanisms through a conditional remedy.",
+    "numericProofs": [],
+    "before": {
+      "q": "Two unemployed workers are actively searching. One left a job voluntarily and is comparing similar offers; the other lost a job after the occupation disappeared permanently. Why are they classified differently by unemployment type?",
+      "options": [
+        "The first is cyclical because quitting is voluntary; the second is frictional because the old job disappeared",
+        "Both are structural because both currently lack jobs",
+        "Both are frictional because both are actively searching",
+        "The first faces normal search time; the second faces a durable job-skill mismatch"
+      ],
+      "feedback": "Frictional unemployment comes from normal search and matching as workers move between jobs or enter the labor market.",
+      "aHash": "b44673acc22a374a4b0016b53aba98c67be80dcd04e6e626f73db5293a019583"
+    },
+    "after": {
+      "q": "A city’s jobless population includes skilled movers choosing among local openings and workers whose occupation disappeared. A single faster job-listing service is proposed for both. Which prediction is best supported?",
+      "options": [
+        "It must eliminate both groups’ unemployment because each can read the same vacancies",
+        "It affects only cyclical unemployment because information is part of total spending",
+        "It turns structurally unemployed workers into employed people as soon as listings are viewed",
+        "It can shorten matching for the first group; the second may also need retraining or mobility support"
+      ],
+      "feedback": "The first group faces search frictions among suitable jobs. The second faces a durable mismatch that information alone may not remove. Diagnosis should guide the intervention without assuming guaranteed placement.",
+      "aHash": "b10b797aa7ca5a57e41a031aef84afe78652b6fcaee0e482e3e7b1e63994a5e6"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-375",
+    "concept": "labor-market-institutions",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO29.4",
+    "type": "calculation",
+    "primarySkill": "minimum_wage_surplus",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: compare labor-market outcomes under an unchanged institution.",
+    "numericProofs": [
+      {
+        "label": "old surplus",
+        "expression": "112-88",
+        "expected": 24
+      },
+      {
+        "label": "new surplus",
+        "expression": "112-100",
+        "expected": 12
+      }
+    ],
+    "before": {
+      "q": "A binding minimum wage raises the wage from $10 to $14. At $14, firms demand 80 workers and 120 workers want jobs. What is the labor surplus?",
+      "options": [
+        "40 workers",
+        "80 workers",
+        "120 workers",
+        "200 workers"
+      ],
+      "feedback": "Labor surplus = quantity supplied - quantity demanded = 120 - 80 = 40 workers.",
+      "aHash": "7583264dc8257099a1ae3364d33bc5572bfdeeb6fc95432927c34fd5cc328ec5"
+    },
+    "after": {
+      "q": "A wage floor is $16. At that wage, 112 workers seek jobs and firms hire 88. A demand increase raises desired hiring to 100 while the wage and labor supply stay fixed. What happens to the labor surplus?",
+      "options": [
+        "It falls from 24 to 12; higher labor demand reduces the excess supply",
+        "It stays at 24 because the statutory wage did not change",
+        "It rises from 24 to 36 because firms want more labor",
+        "It disappears because any increase in demand makes a floor nonbinding"
+      ],
+      "feedback": "Initially the surplus is 112 - 88 = 24. With hiring demand of 100, it is 112 - 100 = 12. The wage floor can remain binding even as the size of the labor surplus changes.",
+      "aHash": "0b2a331c864b3d365b880d5c25bfb5cbd5d381d3d95d315dd875d1a2b778cdf8"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9076",
+    "concept": "labor-market-institutions",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.4",
+    "type": "calculation",
+    "primarySkill": "minimum_wage_surplus",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B/C/D: distinguish a wage-floor labor surplus from employment loss.",
+    "numericProofs": [
+      {
+        "label": "lost jobs",
+        "expression": "100-95",
+        "expected": 5
+      },
+      {
+        "label": "surplus",
+        "expression": "140-95",
+        "expected": 45
+      }
+    ],
+    "before": {
+      "q": "A minimum wage rises above equilibrium. At the new wage, 140 workers want jobs and firms hire 95. What is the labor surplus, and what does it represent?",
+      "options": [
+        "45 workers; unemployment created by the wage floor",
+        "235 workers; total labor market size",
+        "95 workers; employment created by the wage floor",
+        "140 workers; labor demand"
+      ],
+      "feedback": "Surplus = quantity supplied - quantity demanded = 140 - 95 = 45 workers.",
+      "aHash": "9bfa0650c4c926521c2ed5eeb0d86b70b33557631768e336b3b04f8d9376b553"
+    },
+    "after": {
+      "q": "In a competitive labor market, employment is 100 at the clearing wage. A binding wage floor produces labor supply of 140 and demand of 95. Assuming everyone seeking work is available and active, which comparison is correct?",
+      "options": [
+        "Employment falls by 5, while the labor surplus is 45; these are different quantities",
+        "Employment falls by 45 because every person in the surplus previously had a job",
+        "Employment falls by 40, matching the increase in labor supply",
+        "There is no surplus because 95 people remain employed"
+      ],
+      "feedback": "Employment changes from 100 to 95, a loss of 5. The new excess of labor supplied over labor demanded is 140 - 95 = 45, including the effect of increased job seeking as well as reduced hiring. The surplus is not the number of pre-existing jobs lost.",
+      "aHash": "836797de42888f4115a2fdbbe1c093e9f499d7f428f1a19d303a9bf7c2a21ab4"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9077",
+    "concept": "labor-market-institutions",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.4",
+    "type": "interpretation",
+    "primarySkill": "frictional_unemployment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: evaluate competing institutional channels and causal limits.",
+    "numericProofs": [],
+    "before": {
+      "q": "Unemployment insurance becomes more generous. Which is the best balanced evaluation?",
+      "options": [
+        "Income protection and better matching, but longer job searches",
+        "It only creates structural unemployment",
+        "It eliminates job search costs without tradeoffs",
+        "It guarantees lower natural unemployment"
+      ],
+      "feedback": "Unemployment insurance has benefits and search-incentive tradeoffs.",
+      "aHash": "12b02cd0bdb3efc26c37aa8bb8a3bf009aca93826292dca0ebfe6a7a14eeb5d6"
+    },
+    "after": {
+      "q": "A benefit extension lowers the cost of continued search. A simultaneous placement program improves matching. Average unemployment duration then falls. Which conclusion is warranted from these facts alone?",
+      "options": [
+        "The combined outcome improved duration; it does not show that the benefit extension by itself shortened search",
+        "The fall proves benefit extensions always shorten search",
+        "The extension must have been ineffective at protecting income because duration fell",
+        "The placement program cannot matter because benefits determine every search decision"
+      ],
+      "feedback": "Income support can reduce search urgency while better matching shortens search. Their combined result does not isolate either effect; a credible separate comparison would be needed. The duration result also does not measure the value of income protection.",
+      "aHash": "86f70681aea541dafb8c112800a56da54a4ab3de70fb030a8f600ff7fed38444"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9078",
+    "concept": "labor-market-institutions",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.4",
+    "type": "interpretation",
+    "primarySkill": "unions_efficiency_wages",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: integrate a union wage/employment account and insider-outsider interpretation.",
+    "numericProofs": [
+      {
+        "label": "bill growth",
+        "expression": "((24*90)/(20*100)-1)*100",
+        "expected": 8
+      }
+    ],
+    "before": {
+      "q": "A union wage raises pay from $18 to $25. Firms reduce employment, but workers who remain employed earn more. What is the insider-outsider issue?",
+      "options": [
+        "Union insiders gain; workers priced out lose",
+        "All workers gain equally",
+        "The unemployment rate must fall",
+        "Only consumers of imports are affected"
+      ],
+      "feedback": "Union wage gains can create benefits for insiders and costs for outsiders.",
+      "aHash": "d2a5c29857cab65fbd331604c9247e9d150426d850d696119fb09dc7ab045def"
+    },
+    "after": {
+      "q": "A negotiated wage rises from $20 to $24 while employment falls from 100 to 90, with hours per worker fixed. What happens to the total wage bill, and what distributional claim is justified?",
+      "options": [
+        "The wage bill rises 8%; retained workers gain hourly pay while some workers lose jobs",
+        "The wage bill falls 10%; no workers gain from the contract",
+        "The wage bill rises 20%; the employment change is irrelevant",
+        "The wage bill rises 8%; this proves every original worker is better off"
+      ],
+      "feedback": "The wage bill changes from 20 × 100 = 2,000 to 24 × 90 = 2,160 per common unit of hours, an 8% rise. The aggregate increase does not erase the job losses; gains to retained workers and losses to displaced workers differ.",
+      "aHash": "ef0c2e35f5d2c41e9b6f8928f6db3efa23a2f8808b18cfe35b4fc8262979205c"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9079",
+    "concept": "labor-market-institutions",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.4",
+    "type": "interpretation",
+    "primarySkill": "unions_efficiency_wages",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: test an efficiency-wage calculation with a conditional rather than guaranteed conclusion.",
+    "numericProofs": [
+      {
+        "label": "old unit cost",
+        "expression": "18/6",
+        "expected": 3
+      },
+      {
+        "label": "new unit cost",
+        "expression": "21/7",
+        "expected": 3
+      }
+    ],
+    "before": {
+      "q": "A firm pays above-market wages and observes lower quits, more applicants, and better effort. Why can this wage persist?",
+      "options": [
+        "The wage may pay for itself through efficiency-wage effects",
+        "The firm is violating GDP accounting",
+        "Higher wages always reduce productivity",
+        "The wage must create cyclical unemployment only"
+      ],
+      "feedback": "Efficiency wages can raise productivity, reduce turnover, and attract better workers.",
+      "aHash": "9c5ea0ad429477052c6f7921fe1b4f7ba8f329cca9922c07007c9b08e0a00db6"
+    },
+    "after": {
+      "q": "A firm considers raising wages from $18 to $21 per hour. Output per hour is expected to rise from 6 to 7 units through better retention and effort, with other unit costs unchanged. Which cost calculation and caution are correct?",
+      "options": [
+        "Wage cost stays $3 per unit if the productivity forecast holds; the forecast still needs evidence",
+        "$3.50 per unit is certain because productivity cannot respond to wages",
+        "$2.57 per unit is certain because the old wage applies to the new output",
+        "$3 per unit proves the wage policy eliminates unemployment throughout the economy"
+      ],
+      "feedback": "The old wage cost is 18/6 = 3 per unit; the proposed cost is 21/7 = 3 if the effort/retention forecast occurs. This makes an efficiency-wage rationale possible, but does not prove the forecast or settle economy-wide unemployment.",
+      "aHash": "6222518de2c9656ce3c773a01eebc476c5c72f757ecffa0dc76245bbfa3ec102"
+    }
+  },
+  {
+    "id": "ECON-NL-ELITE-379",
+    "concept": "natural-rate-of-unemployment",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO29.5",
+    "type": "interpretation",
+    "primarySkill": "natural_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C: infer differing policy needs from the same natural-rate total.",
+    "numericProofs": [],
+    "before": {
+      "q": "An economy has no recessionary unemployment, but still has workers searching between jobs and workers mismatched by skills. What unemployment remains?",
+      "options": [
+        "The natural rate of unemployment",
+        "Only cyclical unemployment",
+        "No unemployment at all",
+        "Only discouraged-worker unemployment"
+      ],
+      "feedback": "The natural rate remains because frictional and structural unemployment persist even without cyclical unemployment.",
+      "aHash": "8034417957c62d4419b676c7138a34fe4e91da646d25b74871dd8020d8d7a2b3"
+    },
+    "after": {
+      "q": "Two economies each have 5% natural unemployment. One combines 1% frictional and 4% structural unemployment; the other combines 3% frictional and 2% structural. Which policy comparison fits these equal totals?",
+      "options": [
+        "The first has more mismatch to address; the second has more scope for faster matching, holding effectiveness comparable",
+        "The same natural rate proves their underlying labor-market problems are identical",
+        "Only the second has natural unemployment because frictional unemployment is the sole component",
+        "Both can reach zero unemployment simply by ending a recession"
+      ],
+      "feedback": "Both totals equal 5%, but the components differ. A common aggregate benchmark does not establish identical barriers or identical policy priorities. Relevant retraining and matching interventions target different components.",
+      "aHash": "1539d1f07df557f538d9991718eb3a3294c65cd0b3482dec9311b917391d9d35"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9075",
+    "concept": "natural-rate-of-unemployment",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.5",
+    "type": "interpretation",
+    "primarySkill": "natural_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: decompose a changing natural rate and a disappearing cyclical gap.",
+    "numericProofs": [
+      {
+        "label": "new natural",
+        "expression": "1.5+3",
+        "expected": 4.5
+      }
+    ],
+    "before": {
+      "q": "Why does the natural rate of unemployment not equal zero?",
+      "options": [
+        "Search frictions and structural mismatches remain even in normal times",
+        "Cyclical unemployment is permanent",
+        "Everyone who wants work is always counted as unemployed",
+        "Minimum wages always bind every labor market"
+      ],
+      "feedback": "The natural rate includes frictional and structural unemployment.",
+      "aHash": "d852b01f04b42d894a5558ae17bfffaa45ae61dae597d52554ba3fa4f999000c"
+    },
+    "after": {
+      "q": "An economy has 2% frictional, 3% structural and 2% cyclical unemployment. A recovery eliminates the cyclical component. At the same time, better matching lowers frictional unemployment to 1.5%, with structural unemployment unchanged. What actual and natural rates remain?",
+      "options": [
+        "Both are 4.5%; recovery removed the cyclical component and matching lowered the natural rate",
+        "Both are 5%; recovery cannot change any observed unemployment rate",
+        "Actual is 2.5% and natural is 4.5%; subtract the cyclical decline again",
+        "Both are zero because the recession has ended"
+      ],
+      "feedback": "After recovery, cyclical unemployment is zero. The remaining natural rate is 1.5 + 3 = 4.5%, also the actual rate. Ending the downturn and improving normal matching are distinct channels.",
+      "aHash": "73d219d606b66beb5cd41733b7494cd32accfc5dff975871fbd8cd5bac6df91f"
+    }
+  },
+  {
+    "id": "ECON-NL-LEGENDARY-9085",
+    "concept": "natural-rate-of-unemployment",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.5",
+    "type": "calculation",
+    "primarySkill": "natural_rate",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: compare moving actual and natural rates rather than one subtraction.",
+    "numericProofs": [
+      {
+        "label": "old gap",
+        "expression": "9-6",
+        "expected": 3
+      },
+      {
+        "label": "new gap",
+        "expression": "7-4",
+        "expected": 3
+      }
+    ],
+    "before": {
+      "q": "Suppose natural unemployment is 4.5% and actual unemployment is 8%. What is the likely cyclical unemployment?",
+      "options": [
+        "3.5 percentage points",
+        "4.5 percentage points",
+        "8 percentage points",
+        "12.5 percentage points"
+      ],
+      "feedback": "Cyclical unemployment is actual minus natural: 8 - 4.5 = 3.5 percentage points.",
+      "aHash": "a391cae2cf025a48e9b8e38873f9e0a98e9cfca76bc72570ecd508a15f118441"
+    },
+    "after": {
+      "q": "Actual unemployment falls from 9% to 7%. Over the same interval, an estimate of the natural rate falls from 6% to 4%. What happens to the cyclical gap, and what claim would overstate the evidence?",
+      "options": [
+        "The gap stays at 3 points; the lower actual rate alone does not show cyclical weakness diminished",
+        "The gap falls 2 points; actual unemployment determines the gap by itself",
+        "The gap rises 2 points; a lower natural rate always raises the gap by that amount",
+        "The gap becomes zero because both rates fell equally"
+      ],
+      "feedback": "Initially the gap is 9 - 6 = 3 points; finally it is 7 - 4 = 3. Actual unemployment fell with the estimated natural benchmark, so these numbers do not show a smaller cyclical component.",
+      "aHash": "24041897d7633043eab56aa2839a59f22f5dcad783c9fbfdaf79cab4027dcaf1"
+    }
+  },
+  {
+    "id": "PM2B4-NRU-L-002",
+    "concept": "natural-rate-of-unemployment",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO29.5",
+    "type": "application",
+    "primarySkill": "natural_rate_not_fixed",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C/D: conditional natural-rate recommendation with competing components.",
+    "numericProofs": [
+      {
+        "label": "change",
+        "expression": "-1+.4",
+        "expected": -0.6
+      }
+    ],
+    "before": {
+      "q": "A government wants to reduce the natural rate rather than only reduce recessionary unemployment. Which policy is most directly aligned with that goal?",
+      "options": [
+        "Use a temporary demand stimulus with no effect on matching or skills",
+        "Change the CPI base year used to report inflation",
+        "Increase aggregate spending only until actual unemployment falls for one quarter",
+        "Improve job matching and retraining to reduce frictional and structural unemployment"
+      ],
+      "feedback": "Changes in matching, worker skills, mobility, and labor-market institutions can change frictional or structural unemployment and therefore the natural rate.",
+      "aHash": "c2aaea26639caffb4836e008dd936e0f09dd7bc5887a0a08c6438e434f88050c"
+    },
+    "after": {
+      "q": "A retraining reform is expected to lower structural unemployment by 1 percentage point, but longer voluntary search raises frictional unemployment by 0.4 point. Cyclical unemployment is unchanged. Which natural-rate prediction follows, conditional on both estimates?",
+      "options": [
+        "It falls 1.4 points; both changes reduce unemployment",
+        "It rises 0.4 point; structural mismatch is outside the natural rate",
+        "It stays unchanged; only recessions can move the natural rate",
+        "It falls 0.6 point; the policy effects partly offset"
+      ],
+      "feedback": "The natural rate includes both structural and frictional unemployment. Its predicted change is -1 + 0.4 = -0.6 percentage point. The net estimate is conditional on the two stated mechanisms, not a guarantee about every retraining policy.",
+      "aHash": "f689b5044727b5e28021e20c4ba1b7466762254b3872b3c08e94b7aa5a0d3a23"
+    }
+  }
+]
