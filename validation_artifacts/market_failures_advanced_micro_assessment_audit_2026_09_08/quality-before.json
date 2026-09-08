@@ -1,0 +1,1772 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-08T17:07:31.589Z",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1-phaseMacroFinalCleanup-v1-phaseMacroOpenEconomy-v1",
+  "librarySha256": "0cb44b95ad1e064babf5a3df750864c7dcdbbe9d03c177be31a3671383bc62d4",
+  "scope": {
+    "concepts": [
+      "externalities",
+      "public-goods-and-common-resources",
+      "market-power"
+    ],
+    "pools": [],
+    "graphLinkedOnly": false,
+    "poolInventory": [
+      "boss",
+      "bridge",
+      "easy",
+      "elite",
+      "hard",
+      "legendary",
+      "legendaryBoss",
+      "medium",
+      "repair"
+    ],
+    "questionCount": 362,
+    "conceptQuestionCounts": [
+      {
+        "concept": "externalities",
+        "count": 177
+      },
+      {
+        "concept": "public-goods-and-common-resources",
+        "count": 176
+      },
+      {
+        "concept": "market-power",
+        "count": 9
+      }
+    ],
+    "questionCountsByPool": [
+      {
+        "pool": "boss",
+        "count": 16
+      },
+      {
+        "pool": "bridge",
+        "count": 7
+      },
+      {
+        "pool": "easy",
+        "count": 70
+      },
+      {
+        "pool": "elite",
+        "count": 43
+      },
+      {
+        "pool": "hard",
+        "count": 80
+      },
+      {
+        "pool": "legendary",
+        "count": 29
+      },
+      {
+        "pool": "legendaryBoss",
+        "count": 6
+      },
+      {
+        "pool": "medium",
+        "count": 103
+      },
+      {
+        "pool": "repair",
+        "count": 8
+      }
+    ]
+  },
+  "counts": {
+    "errors": 0,
+    "warnings": 59,
+    "reviews": 64
+  },
+  "ruleCounts": [
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "count": 17
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "count": 28
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-understatement",
+      "count": 1
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "count": 18
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "count": 48
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "count": 11
+    }
+  ],
+  "conceptFindingCounts": [
+    {
+      "concept": "externalities",
+      "count": 87
+    },
+    {
+      "concept": "public-goods-and-common-resources",
+      "count": 32
+    },
+    {
+      "concept": "market-power",
+      "count": 4
+    }
+  ],
+  "poolFindingCounts": [
+    {
+      "pool": "medium",
+      "count": 38
+    },
+    {
+      "pool": "hard",
+      "count": 36
+    },
+    {
+      "pool": "elite",
+      "count": 25
+    },
+    {
+      "pool": "easy",
+      "count": 12
+    },
+    {
+      "pool": "legendary",
+      "count": 5
+    },
+    {
+      "pool": "legendaryBoss",
+      "count": 3
+    },
+    {
+      "pool": "repair",
+      "count": 3
+    },
+    {
+      "pool": "boss",
+      "count": 1
+    },
+    {
+      "pool": "bridge",
+      "count": 0
+    }
+  ],
+  "findingSummary": {
+    "totalFindings": 123,
+    "uniqueQuestionsAffected": 113,
+    "questionsWithMultipleFindings": [
+      {
+        "questionId": "42064",
+        "concept": "externalities",
+        "pools": [
+          "hard"
+        ],
+        "count": 2,
+        "rules": [
+          "graph-prompt-missing-cue",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "42066",
+        "concept": "externalities",
+        "pools": [
+          "elite"
+        ],
+        "count": 2,
+        "rules": [
+          "graph-prompt-missing-cue",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "42073",
+        "concept": "externalities",
+        "pools": [
+          "hard"
+        ],
+        "count": 2,
+        "rules": [
+          "graph-prompt-missing-cue",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "42075",
+        "concept": "externalities",
+        "pools": [
+          "elite"
+        ],
+        "count": 2,
+        "rules": [
+          "graph-prompt-missing-cue",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "42082",
+        "concept": "externalities",
+        "pools": [
+          "hard"
+        ],
+        "count": 2,
+        "rules": [
+          "graph-prompt-missing-cue",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "42084",
+        "concept": "externalities",
+        "pools": [
+          "elite"
+        ],
+        "count": 2,
+        "rules": [
+          "graph-prompt-missing-cue",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "42091",
+        "concept": "externalities",
+        "pools": [
+          "hard"
+        ],
+        "count": 2,
+        "rules": [
+          "graph-prompt-missing-cue",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "42093",
+        "concept": "externalities",
+        "pools": [
+          "elite"
+        ],
+        "count": 2,
+        "rules": [
+          "graph-prompt-missing-cue",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "42097",
+        "concept": "externalities",
+        "pools": [
+          "elite"
+        ],
+        "count": 2,
+        "rules": [
+          "graph-prompt-missing-cue",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "42295",
+        "concept": "public-goods-and-common-resources",
+        "pools": [
+          "hard"
+        ],
+        "count": 2,
+        "rules": [
+          "answer-length-outlier",
+          "weak-absolute-distractors"
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42002",
+      "concept": "externalities",
+      "pools": [
+        "easy"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "If no corrective policy is adopted, how will the market quantity of fast-fashion garments compare with the socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42003",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Based on the vertical distance between the private and social curves, what is the constant marginal external effect for fast-fashion garments?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42004",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Which change in incentives would move the fast-fashion garments market toward its socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42007",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "If no corrective policy is adopted, how will the market quantity of disposable vapes compare with the socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42008",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Based on the vertical distance between the private and social curves, what is the constant marginal external effect for disposable vapes?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42009",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Which change in incentives would move the disposable vapes market toward its socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42012",
+      "concept": "externalities",
+      "pools": [
+        "easy"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "If no corrective policy is adopted, how will the market quantity of native-plant gardens compare with the socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42013",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Based on the vertical distance between the private and social curves, what is the constant marginal external effect for native-plant gardens?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42014",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Which change in incentives would move the native-plant gardens market toward its socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42017",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "If no corrective policy is adopted, how will the market quantity of public-transit rides compare with the socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42018",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Based on the vertical distance between the private and social curves, what is the constant marginal external effect for public-transit rides?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42019",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Which change in incentives would move the public-transit rides market toward its socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42022",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Which marked quantity represents the socially efficient outcome for fast-fashion garments?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42024",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "By how many million garments does the unregulated fast-fashion garments quantity differ from the socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42025",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At the efficient quantity for fast-fashion garments, what marginal external cost is represented by the gap between the curves?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42032",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Which marked quantity represents the socially efficient outcome for disposable vapes?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42034",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "By how many thousand vapes does the unregulated disposable vapes quantity differ from the socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42035",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At the efficient quantity for disposable vapes, what marginal external cost is represented by the gap between the curves?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42042",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Which marked quantity represents the socially efficient outcome for native-plant gardens?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42044",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "By how many gardens does the unregulated native-plant gardens quantity differ from the socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42045",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At the efficient quantity for native-plant gardens, what marginal external benefit is represented by the gap between the curves?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42052",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Which marked quantity represents the socially efficient outcome for public-transit rides?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42054",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "By how many thousand rides per day does the unregulated public-transit rides quantity differ from the socially efficient quantity?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42055",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At the efficient quantity for public-transit rides, what marginal external benefit is represented by the gap between the curves?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42061",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "What per-unit gap between private and social incentives must the policy internalize in the fast-fashion garments market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42064",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "After the optimal corrective tax internalizes the spillover, what quantity of fast-fashion garments is produced or consumed?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42065",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Why does the corrected quantity of 160 million garments represent social efficiency in this market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42066",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At the corrected fast-fashion garments quantity, which buyer-price and seller-receipt pair reflects the policy wedge?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42067",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "How does the corrective tax change private incentives in the fast-fashion garments market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42070",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "What per-unit gap between private and social incentives must the policy internalize in the disposable vapes market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42073",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "After the optimal corrective tax internalizes the spillover, what quantity of disposable vapes is produced or consumed?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42074",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Why does the corrected quantity of 140 thousand vapes represent social efficiency in this market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42075",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At the corrected disposable vapes quantity, which buyer-price and seller-receipt pair reflects the policy wedge?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42076",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "How does the corrective tax change private incentives in the disposable vapes market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42079",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "What per-unit gap between private and social incentives must the policy internalize in the native-plant gardens market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42082",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "After the optimal producer subsidy internalizes the spillover, what quantity of native-plant gardens is produced or consumed?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42083",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Why does the corrected quantity of 150 gardens represent social efficiency in this market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42084",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At the corrected native-plant gardens quantity, which buyer-price and seller-receipt pair reflects the policy wedge?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42085",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "How does the producer subsidy change private incentives in the native-plant gardens market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42088",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "What per-unit gap between private and social incentives must the policy internalize in the public-transit rides market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42091",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "After the optimal rider subsidy internalizes the spillover, what quantity of public-transit rides is produced or consumed?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42092",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Why does the corrected quantity of 200 thousand rides per day represent social efficiency in this market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42093",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At the corrected public-transit rides quantity, which buyer-price and seller-receipt pair reflects the policy wedge?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42094",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "How does the rider subsidy change private incentives in the public-transit rides market?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42097",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At what quantity does the $2 vaping tax leave the market after shifting the private consumption incentive?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42101",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "What percentage of the original vaping deadweight loss is removed by the $2 tax?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42102",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "How much tax revenue does the government collect when the $2 vaping tax leaves consumption at 160 thousand units?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "42103",
+      "concept": "externalities",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "Which assessment correctly compares the actual $2 vaping tax with the optimal $4 correction?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-MG-MEDIUM-106",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "A delivery truck creates noise for residents who are not customers. Why is this an externality?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-E-003",
+      "concept": "externalities",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "A neighbor bears smoke from a restaurant exhaust fan. What feature identifies an externality?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-EL-014",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "A subsidy addresses a spillover but attracts costly gaming. What follows?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-L-019",
+      "concept": "externalities",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "A loud festival benefits ticket buyers but disturbs residents. What is the spillover?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-R-035",
+      "concept": "externalities",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "What makes an effect an externality?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-E-005",
+      "concept": "market-power",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "A seller can profitably influence price by restricting output. What concern appears?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-L-020",
+      "concept": "market-power",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "A patent holder sets price above marginal cost. Which introductory concern applies?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-M-009",
+      "concept": "market-power",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "A dominant platform blocks entry and reduces trades. What is the core concern?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-R-036",
+      "concept": "market-power",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "How does market power differ from an externality?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-L-017",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "A fishery uses quotas, but regulators cannot observe illegal catch. What complicates the remedy?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "P77-MFAIL-LB-031",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 3 distinct questions.",
+      "suggestion": "",
+      "wording": "A fishing limit protects stocks but enforcement is weak. What should evaluation include?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42023",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Based on the graph, why does the unregulated fast-fashion garments outcome differ from the socially efficient outcome?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42027",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Suppose regulators replace the price instrument with a quantity limit. Based on the graph, what fast-fashion garments quantity would reproduce the efficient outcome?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42029",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "If affected parties could bargain costlessly over the fast-fashion garments spillover, which quantity on the graph would be their efficient target?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42033",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Based on the graph, why does the unregulated disposable vapes outcome differ from the socially efficient outcome?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42037",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Suppose regulators replace the price instrument with a quantity limit. Based on the graph, what disposable vapes quantity would reproduce the efficient outcome?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42039",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "If affected parties could bargain costlessly over the disposable vapes spillover, which quantity on the graph would be their efficient target?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42043",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Based on the graph, why does the unregulated native-plant gardens outcome differ from the socially efficient outcome?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42047",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Suppose regulators replace the price instrument with a quantity limit. Based on the graph, what native-plant gardens quantity would reproduce the efficient outcome?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42049",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "If affected parties could bargain costlessly over the native-plant gardens spillover, which quantity on the graph would be their efficient target?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42053",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Based on the graph, why does the unregulated public-transit rides outcome differ from the socially efficient outcome?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42057",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Suppose regulators replace the price instrument with a quantity limit. Based on the graph, what public-transit rides quantity would reproduce the efficient outcome?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42059",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "If affected parties could bargain costlessly over the public-transit rides spillover, which quantity on the graph would be their efficient target?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42062",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Which corrective instrument and per-unit amount shown on the graph would move fast-fashion garments to the efficient quantity?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42064",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "After the optimal corrective tax internalizes the spillover, what quantity of fast-fashion garments is produced or consumed?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42066",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "At the corrected fast-fashion garments quantity, which buyer-price and seller-receipt pair reflects the policy wedge?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42071",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Which corrective instrument and per-unit amount shown on the graph would move disposable vapes to the efficient quantity?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42073",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "After the optimal corrective tax internalizes the spillover, what quantity of disposable vapes is produced or consumed?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42075",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "At the corrected disposable vapes quantity, which buyer-price and seller-receipt pair reflects the policy wedge?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42080",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Which corrective instrument and per-unit amount shown on the graph would move native-plant gardens to the efficient quantity?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42082",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "After the optimal producer subsidy internalizes the spillover, what quantity of native-plant gardens is produced or consumed?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42084",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "At the corrected native-plant gardens quantity, which buyer-price and seller-receipt pair reflects the policy wedge?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42089",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Which corrective instrument and per-unit amount shown on the graph would move public-transit rides to the efficient quantity?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42091",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "After the optimal rider subsidy internalizes the spillover, what quantity of public-transit rides is produced or consumed?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42093",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "At the corrected public-transit rides quantity, which buyer-price and seller-receipt pair reflects the policy wedge?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42097",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "At what quantity does the $2 vaping tax leave the market after shifting the private consumption incentive?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42099",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "At the taxed quantity of 160 thousand vapes, which consumer-price and seller-receipt pair is shown?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42110",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "What distinguishes an external cost from an ordinary private cost?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42111",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why does the sign of an externality not reveal its production or consumption channel?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42116",
+      "concept": "externalities",
+      "pools": [
+        "hard"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Why can equating MPB with MPC fail when consumption creates an external cost?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42137",
+      "concept": "externalities",
+      "pools": [
+        "medium"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Firm A abates for $20 per ton and B for $70. At a $45 permit price, what is efficient?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42141",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "What signal does a higher permit price create?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42150",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why can community norms reduce an externality without guaranteeing full efficiency?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42156",
+      "concept": "externalities",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A rancher and one farmer have enforceable rights, full information, and negligible bargaining costs. What does Coase predict?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42159",
+      "concept": "externalities",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Avoided pollution damage is $2 million, prevention costs $1.2 million, and bargaining costs $1 million. What follows?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42167",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "boss"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Which statement best describes the MC curve in the emergency-sirens graph?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42179",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the graph. Which labeled benefit curve would be built from voluntary payments when listeners can receive the signal without contributing?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42182",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the coastal-protection graph. At what quantity do MSB and MC intersect?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42189",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the graph. At Q = 10 miles, what marginal cost does the MC curve show?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "42196",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Which quantity of community fireworks is efficient in the graph?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42197",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "The graph plots North and South MB at the same quantity of four displays. Which summation rule does this illustrate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-understatement",
+      "questionId": "42215",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "easy"
+      ],
+      "message": "Easy metadata may understate a multi-step or simultaneous-change task.",
+      "suggestion": "",
+      "wording": "A university database requires a paid login, and simultaneous users do not reduce the information available to one another. Which category fits?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42227",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A road is free and uncongested before rush hour but becomes crowded later. Which conclusion is best?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42233",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A private park requires a membership card at its only entrance. Which conclusion follows?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42245",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A swimming pool is nearly empty in the morning but packed in the afternoon. Which conclusion is best?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42260",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "elite"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Why does free riding not imply that nobody will ever contribute?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42261",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A city asks households to report benefits from a proposed siren network before setting voluntary fees. What bias should analysts anticipate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42262",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If exclusion technology becomes effective for a formerly open broadcast, what happens to the free-rider problem?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42267",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "repair"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "A student says free riding means 'people are bad.' What is the more precise economic explanation?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42279",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "How can free riding bias a survey used to value a proposed public good?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42282",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "An analyst values a public-health information campaign using only benefits to people who completed a survey. What may be missing?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42284",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "medium"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Why do boats tend to catch too many fish in an open-access fishery?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42287",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "medium"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "On open grazing land, why might each herder add another animal even when total grazing is excessive?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42291",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "medium"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Which outcome distinguishes common-resource overuse from public-good underprovision?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42293",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "medium"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Why can an individual fisher's private marginal cost be below the social marginal cost of a catch?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42295",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "hard"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "A shared irrigation canal has ample water this month, but supply is scarce during drought. Which statement is best?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42295",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A shared irrigation canal has ample water this month, but supply is scarce during drought. Which statement is best?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "42296",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "What would an efficient common-resource rule try to make users consider?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42298",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "easy"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Why might voluntary promises alone fail to protect a large open-access forest?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42302",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "easy"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Why can common-resource use exceed the efficient quantity even when every user understands depletion?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42306",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "hard"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "A village assigns each household a monitored groundwater allowance. What incentive changes?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42307",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "easy"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Why might a private forest owner conserve young trees?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42311",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "easy"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "How can transferable catch shares reduce a race to fish?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42312",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "easy"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "Why can community-managed access rights sometimes improve stewardship?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "answer-length-outlier",
+      "questionId": "42317",
+      "concept": "public-goods-and-common-resources",
+      "pools": [
+        "easy"
+      ],
+      "message": "The correct answer is an extreme length outlier and may cue test-wise learners.",
+      "suggestion": "Make distractors comparably specific without adding ambiguity.",
+      "wording": "How do clear rights differ from a general request to conserve?"
+    }
+  ]
+}

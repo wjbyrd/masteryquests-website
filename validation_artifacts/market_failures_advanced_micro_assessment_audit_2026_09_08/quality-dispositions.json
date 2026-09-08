@@ -1,0 +1,1057 @@
+{
+  "before": {
+    "errors": 0,
+    "warnings": 59,
+    "reviews": 64
+  },
+  "after": {
+    "errors": 0,
+    "warnings": 52,
+    "reviews": 62
+  },
+  "beforeQuestionCount": 362,
+  "afterQuestionCount": 362,
+  "method": "Existing auditor run against exact resolved selected modules in an audit-only projection; all original and newly reported question/rule pairs accounted for. Projection provenance is separate from the source-library hash.",
+  "findings": [
+    {
+      "questionId": "42002",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42003",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42004",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42007",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42008",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42009",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42012",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42013",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42014",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42017",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42018",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42019",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42022",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42024",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42025",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42032",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42034",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42035",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42042",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42044",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42045",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42052",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42054",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42055",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42061",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42064",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42065",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42066",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42067",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42070",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42073",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42074",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42075",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42076",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42079",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42082",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42083",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42084",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42085",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42088",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42091",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42092",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42093",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42094",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42097",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42101",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42102",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "42103",
+      "rule": "graph-prompt-missing-cue",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The existing image is present and the generated renderer was checked for this record. Some stems refer to graph-specific quantities or curves without the auditor’s expected cue phrase. Retain as a wording warning; no asset or graph eligibility was removed to suppress it."
+    },
+    {
+      "questionId": "ECON-MG-MEDIUM-106",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained legacy feedback repeats an explanation across nearby support/variant records. This is a documented robustness limitation, not a claim of zero-warning quality."
+    },
+    {
+      "questionId": "P77-MFAIL-E-003",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained legacy feedback repeats an explanation across nearby support/variant records. This is a documented robustness limitation, not a claim of zero-warning quality."
+    },
+    {
+      "questionId": "P77-MFAIL-EL-014",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "no-longer-reported",
+      "contentRevised": false,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "P77-MFAIL-L-019",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "P77-MFAIL-R-035",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained legacy feedback repeats an explanation across nearby support/variant records. This is a documented robustness limitation, not a claim of zero-warning quality."
+    },
+    {
+      "questionId": "P77-MFAIL-E-005",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained legacy feedback repeats an explanation across nearby support/variant records. This is a documented robustness limitation, not a claim of zero-warning quality."
+    },
+    {
+      "questionId": "P77-MFAIL-L-020",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "P77-MFAIL-M-009",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained legacy feedback repeats an explanation across nearby support/variant records. This is a documented robustness limitation, not a claim of zero-warning quality."
+    },
+    {
+      "questionId": "P77-MFAIL-R-036",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained legacy feedback repeats an explanation across nearby support/variant records. This is a documented robustness limitation, not a claim of zero-warning quality."
+    },
+    {
+      "questionId": "P77-MFAIL-L-017",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "no-longer-reported",
+      "contentRevised": false,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "P77-MFAIL-LB-031",
+      "rule": "repeated-feedback",
+      "severityBefore": "WARNING",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42023",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42027",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42029",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42033",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42037",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42039",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42043",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42047",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42049",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42053",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42057",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42059",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42062",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42064",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42066",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42071",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42073",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42075",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42080",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42082",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42084",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": true,
+      "reason": "Final item requires selecting the social intersection, reading both private prices and computing a full-unit subsidy budget. It is a modest Elite integration task; the heuristic flag is retained for faculty review."
+    },
+    {
+      "questionId": "42089",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42091",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42093",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42097",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42099",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42110",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42111",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42116",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42137",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42141",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42150",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42156",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": true,
+      "reason": "The alternatives represent efficiency/distribution confusion under explicit ideal Coase assumptions. Their absolute wording is a retained review limitation."
+    },
+    {
+      "questionId": "42159",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42167",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Retained upper tiers still include direct recognition and one-step tasks. Metadata is deliberately preserved. Targeted revisions establish stronger chains without claiming every tier mismatch is resolved."
+    },
+    {
+      "questionId": "42179",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42182",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42189",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42196",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The final wording no longer triggers this rule; this is a heuristic change, not an assertion that all content-quality concerns disappeared."
+    },
+    {
+      "questionId": "42197",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42215",
+      "rule": "possible-difficulty-understatement",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "An existing Easy graph comparison asks more than definition recall. It remains a calibration review flag; no tier or pool was moved."
+    },
+    {
+      "questionId": "42227",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42233",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42245",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42260",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42261",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42262",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42267",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42279",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42282",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42284",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42287",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42291",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42293",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42295",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42295",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42296",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "Review flag remains: absolute claims can encode the selected misconception, but some retained alternatives are too easy to eliminate. No claim is made that all distractors are equally strong."
+    },
+    {
+      "questionId": "42298",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42302",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42306",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42307",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42311",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42312",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "42317",
+      "rule": "answer-length-outlier",
+      "severityBefore": "REVIEW",
+      "status": "retained-review",
+      "contentRevised": false,
+      "reason": "The correct choice remains longer than some alternatives in this retained record. This is a residual distractor cue and is not asserted resolved."
+    },
+    {
+      "questionId": "P77-MFAIL-L-022",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": null,
+      "status": "new-review-flag",
+      "contentRevised": true,
+      "reason": "The choices omit marginal external benefits, resource costs or implementation costs. The repeated “only” formulation remains a stylistic cue, disclosed for faculty review."
+    },
+    {
+      "questionId": "P52B-MFAIL-L-003",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": null,
+      "status": "new-review-flag",
+      "contentRevised": true,
+      "reason": "The alternatives isolate accounting losses, break-even or subsidy transfers as sufficient welfare tests. The repeated “only” structure is a residual cue even though the economic confusions are relevant."
+    },
+    {
+      "questionId": "P77-MFAIL-L-020",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": null,
+      "status": "new-review-flag",
+      "contentRevised": true,
+      "reason": "The alternatives ignore either current access gains or future innovation incentives. Repeated “only” wording remains a style limitation."
+    },
+    {
+      "questionId": "42189",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": null,
+      "status": "new-review-flag",
+      "contentRevised": true,
+      "reason": "The alternatives use initial or final marginal cost for the whole interval and confuse gross benefit with budget cost. These are deliberate quantitative misconceptions; the wording heuristic remains."
+    },
+    {
+      "questionId": "42199",
+      "rule": "possible-difficulty-overstatement",
+      "severityBefore": null,
+      "status": "new-review-flag",
+      "contentRevised": true,
+      "reason": "Final checkpoint requires reconstructing the North-only provision decision, contrasting summed provision and integrating omitted net benefits. It is no longer a direct coordinate lookup despite the heuristic flag."
+    },
+    {
+      "questionId": "42210",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": null,
+      "status": "new-review-flag",
+      "contentRevised": true,
+      "reason": "The incorrect funding plans confuse contractor ownership, changing exclusion, rivalry and automatic cross-financing. The strongest terms remain heuristic review flags."
+    },
+    {
+      "questionId": "42285",
+      "rule": "weak-absolute-distractors",
+      "severityBefore": null,
+      "status": "new-review-flag",
+      "contentRevised": true,
+      "reason": "The alternatives deliberately conflate rival depletion with nonrival underfunding. Some absolute language remains easier to eliminate than the correct two-mechanism account."
+    }
+  ]
+}

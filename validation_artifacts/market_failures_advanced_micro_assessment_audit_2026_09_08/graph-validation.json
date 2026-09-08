@@ -1,0 +1,217 @@
+{
+  "assetsInspected": 18,
+  "linkedQuestionCount": 147,
+  "unchangedAssetChecks": [
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-A-01.webp",
+      "sha256": "3bf8a3370d25d963013eeb77c52062c00c28d55e45c05cdc8ba320235a170f6a",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-A-02.webp",
+      "sha256": "cb78aac33fd7434f0f9e1fb99f187dfb30451a62f15a46d53e73e2208dc7fae8",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-A-03.webp",
+      "sha256": "7371c64609bbf73eb251399d97d8bb523758083edeabc1cbf1cf5522e39aa158",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-A-04.webp",
+      "sha256": "4c5a75e587ea4bb99fbc952df5c3545035acec148bf4b73be108f5e718a75474",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-B-01.webp",
+      "sha256": "080e46bbcd0e26fa0e1f94e85bf8319a2afd1bafe95ec6832e6b86bdbae65aeb",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-B-02.webp",
+      "sha256": "2b3898bd5ad7b99585971f6b574f8e588df432e3a7183734aaa1a11d566fca53",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-B-03.webp",
+      "sha256": "60a9278c4de61e0a8823ce617c5dbb9e21eb08dc163e5c37ecc28bd1ea62d4a0",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-B-04.webp",
+      "sha256": "3506c993b06cc6966a487e31367582eaef0707b70d959dae771394cc441adac4",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-C-01.webp",
+      "sha256": "721dd203d052f67ec2a2114cdfc712c6c96b616833f648076b88c27db23f7cd6",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-C-02.webp",
+      "sha256": "56a7cfe718e6d03a498b98e3081b8ba79b97bc0287476b2ccca23e903a52a965",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-C-03.webp",
+      "sha256": "ade6e10af993fdc1d60d710b9cc4ae5b731614d2db842cdc458db2f886efba94",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-C-04.webp",
+      "sha256": "5bce7ff8b406b0f46451e5e2f9fdfb31ef8c610c16e114a07b9cb32dd2c955b1",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/EXTERNALITY-D-02.webp",
+      "sha256": "f6891f406f2f05535888f590d531eca47903c7923c4c5750ba1336a181a77cb7",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/PUBLIC-01.webp",
+      "sha256": "fb2bc35d6456da6b40bef235909b878467f3172ea5daf1a1a129a1fc3cc399ab",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/PUBLIC-02.webp",
+      "sha256": "5e046ff8d1d2833ba1c45bf56733b40f6698a89a8afa6abfd011e56ed0eb0eac",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/PUBLIC-03.webp",
+      "sha256": "35ce117935f176216b19c83d18f3b7822245273ba1b90f5981574d55f379e25c",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/PUBLIC-04.webp",
+      "sha256": "ade235c1c2ec006e997f95cbaa3e6139ab5be69bb36c029703812eed030f0dfc",
+      "decode": true,
+      "bytesUnchanged": true
+    },
+    {
+      "runtimePath": "question-assets/market-failures/PUBLIC-05.webp",
+      "sha256": "b575b8870460310b96368bef71e4bbcd0ea44a73819fb72f2e7f16a2ae480b6d",
+      "decode": true,
+      "bytesUnchanged": true
+    }
+  ],
+  "externalityModels": {
+    "garments": {
+      "mpb": [
+        "21",
+        "-0.0375"
+      ],
+      "mpc": [
+        "3",
+        "0.0375"
+      ],
+      "social": [
+        "9",
+        "0.0375"
+      ],
+      "socialSide": "cost",
+      "qScale": "million garments",
+      "moneyScale": "million dollars",
+      "marketQ": "240",
+      "socialQ": "160",
+      "marketPrice": "12",
+      "buyerPrice": "15",
+      "sellerReceipt": "9",
+      "wedge": "6",
+      "dwl": "240",
+      "fiscal": "960"
+    },
+    "vapes": {
+      "mpb": [
+        "19",
+        "-0.05"
+      ],
+      "mpc": [
+        "1",
+        "0.05"
+      ],
+      "social": [
+        "15",
+        "-0.05"
+      ],
+      "socialSide": "benefit",
+      "qScale": "thousand vapes",
+      "moneyScale": "thousand dollars",
+      "marketQ": "180",
+      "socialQ": "140",
+      "marketPrice": "10",
+      "buyerPrice": "12",
+      "sellerReceipt": "8",
+      "wedge": "4",
+      "dwl": "80",
+      "fiscal": "560"
+    },
+    "gardens": {
+      "mpb": [
+        "16",
+        "-0.04"
+      ],
+      "mpc": [
+        "6",
+        "0.06"
+      ],
+      "social": [
+        "1",
+        "0.06"
+      ],
+      "socialSide": "cost",
+      "qScale": "gardens",
+      "moneyScale": "dollars",
+      "marketQ": "100",
+      "socialQ": "150",
+      "marketPrice": "12",
+      "buyerPrice": "10",
+      "sellerReceipt": "15",
+      "wedge": "5",
+      "dwl": "125",
+      "fiscal": "750"
+    },
+    "transit": {
+      "mpb": [
+        "8",
+        "-0.02"
+      ],
+      "mpc": [
+        "2",
+        "0.02"
+      ],
+      "social": [
+        "10",
+        "-0.02"
+      ],
+      "socialSide": "benefit",
+      "qScale": "thousand rides per day",
+      "moneyScale": "thousand dollars per day",
+      "marketQ": "150",
+      "socialQ": "200",
+      "marketPrice": "5",
+      "buyerPrice": "4",
+      "sellerReceipt": "6",
+      "wedge": "2",
+      "dwl": "50",
+      "fiscal": "400"
+    }
+  },
+  "publicModels": "PUBLIC-01 MSB=40000-500Q, MC=20000; PUBLIC-02 MSB=10000-100Q, Private Benefit=6000-100Q, MC=2000; PUBLIC-03 MSB=60-Q, MC=15+0.5Q in millions; PUBLIC-04 MB North=max(0,50000-5000Q), South=max(0,40000-5000Q), MC=50000; PUBLIC-05 A=max(0,5000-50Q), B=max(0,3000-50Q), MC=3000. Values reconstructed from the visible endpoints and units."
+}

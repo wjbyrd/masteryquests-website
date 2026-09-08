@@ -1,0 +1,672 @@
+{
+  "method": "Independent Fraction arithmetic from final question inputs and separately reconstructed image geometry. No old answer key or authoring proof is used to calculate results. Full final options were then reviewed for a single economically correct response.",
+  "revisedNumericalRecords": 36,
+  "records": [
+    {
+      "id": "42026",
+      "finalStem": "Refer to the graph. What is the original deadweight loss in the fast-fashion garments market?",
+      "image": "question-assets/market-failures/EXTERNALITY-B-01.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "marketQ": "240",
+        "socialQ": "160",
+        "wedge": "6",
+        "dwl": "240"
+      },
+      "keyedOption": "$240 million",
+      "derivation": "Integrate the linear social/private net-benefit gap over the excess or omitted output interval; use the image quantity scale.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42036",
+      "finalStem": "Refer to the graph. What is the original deadweight loss in the disposable-vapes market?",
+      "image": "question-assets/market-failures/EXTERNALITY-B-02.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "marketQ": "180",
+        "socialQ": "140",
+        "wedge": "4",
+        "dwl": "80"
+      },
+      "keyedOption": "$80 thousand",
+      "derivation": "Integrate the linear social/private net-benefit gap over the excess or omitted output interval; use the image quantity scale.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42056",
+      "finalStem": "Refer to the graph. What is the original deadweight loss in the public-transit rides market?",
+      "image": "question-assets/market-failures/EXTERNALITY-B-04.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "marketQ": "150",
+        "socialQ": "200",
+        "wedge": "2",
+        "dwl": "50"
+      },
+      "keyedOption": "$50 thousand per day",
+      "derivation": "Integrate the linear social/private net-benefit gap over the excess or omitted output interval; use the image quantity scale.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42047",
+      "finalStem": "Refer to the native-plant gardens graph. A council proposes only an upper cap of 150 gardens, with no subsidy or purchase commitment. Starting from the private market outcome, which assessment is correct?",
+      "image": "question-assets/market-failures/EXTERNALITY-B-03.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "cap": "150",
+        "privateQ": "100",
+        "socialQ": "150"
+      },
+      "keyedOption": "The cap is nonbinding at 100 gardens; an incentive to expand is still needed.",
+      "derivation": "An upper maximum above the unconstrained optimum does not force expansion.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42057",
+      "finalStem": "Refer to the public-transit rides graph. A transport authority wants the social-intersection quantity. Which proposal directly supports that target rather than merely allowing it?",
+      "image": "question-assets/market-failures/EXTERNALITY-B-04.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "wedge": "2",
+        "target": "200"
+      },
+      "keyedOption": "A $2 rider subsidy that raises the private incentive and supports 200 thousand rides per day.",
+      "derivation": "Positive consumption benefit requires raising effective MPB to the social curve; solve the social intersection.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "P52B-MFAIL-H-001",
+      "finalStem": "At the next unit of a competitive product, a buyer values it at $18, the producer uses $14 of resources, and pollution harms neighbors by $6. Which outcome does a $6 per-unit tax encourage?",
+      "image": null,
+      "finalInputs": [
+        "18",
+        "14",
+        "6",
+        "6"
+      ],
+      "recomputed": {
+        "privateGain": "4",
+        "socialGain": "-2"
+      },
+      "keyedOption": "Forgo the unit: private gains are $4 but net social benefit is -$2.",
+      "derivation": "Subtract real production cost and third-party harm from willingness to pay.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42122",
+      "finalStem": "A plant saves $90 by evading one required emissions-control action. An inspection detects evasion with probability 0.20 and triggers a $300 fine. For a risk-neutral plant, which change would deter this evasion without changing the emissions standard?",
+      "image": null,
+      "finalInputs": [
+        "90",
+        "300"
+      ],
+      "recomputed": {
+        "currentExpectedPenalty": "60",
+        "strictFineThreshold": "450"
+      },
+      "keyedOption": "Raise the fine above $450 while keeping detection at 0.20.",
+      "derivation": "A risk-neutral evader compares savings with detection probability times fine; equality leaves indifference.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42130",
+      "finalStem": "Before a corrective tax, a market sells 800 units. A $3 per-unit tax reduces sales to 500 units. What revenue is collected, and why does it differ from taxing the original sales volume?",
+      "image": null,
+      "finalInputs": [
+        "3"
+      ],
+      "recomputed": {
+        "postQuantity": "500",
+        "revenue": "1500"
+      },
+      "keyedOption": "$1,500, because the tax applies to the 500 units still traded.",
+      "derivation": "Use post-policy quantity, not baseline sales or the quantity reduction.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42140",
+      "finalStem": "Two plants must jointly reduce emissions by two tons. Each can remove at most one ton at each successive cost: Plant A, $20 then $30; Plant B, $60 then $90. With enforceable tradable permits and no trading costs, how should the two-ton reduction be allocated?",
+      "image": null,
+      "finalInputs": [
+        "20",
+        "30",
+        "60",
+        "90"
+      ],
+      "recomputed": {
+        "minimumCost": "50",
+        "equalCutCost": "80",
+        "saving": "30"
+      },
+      "keyedOption": "A removes both tons for $50, saving $30 relative to one ton each.",
+      "derivation": "Enumerate all feasible two-ton allocations respecting successive abatement costs.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42066",
+      "finalStem": "Refer to the garments graph. Suppose the $6 corrective tax is legally remitted by sellers. Relative to the unregulated price, which result separates statutory payment from economic burden?",
+      "image": "question-assets/market-failures/EXTERNALITY-C-01.webp",
+      "finalInputs": [
+        "6"
+      ],
+      "recomputed": {
+        "buyerBurden": "3",
+        "sellerBurden": "3"
+      },
+      "keyedOption": "Buyers pay $3 more and sellers receive $3 less per garment; legal remittance does not assign the whole burden.",
+      "derivation": "Calculate both price changes from graph intersections, independent of legal remittance.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42084",
+      "finalStem": "Refer to the gardens graph. A producer subsidy supports the social-intersection quantity. Which fiscal and price account is consistent with both the graph and payment on every garden produced?",
+      "image": "question-assets/market-failures/EXTERNALITY-C-03.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "buyerPrice": "10",
+        "sellerReceipt": "15",
+        "budget": "750"
+      },
+      "keyedOption": "Buyers pay $10, sellers receive $15, and the subsidy budget is $750.",
+      "derivation": "At the social Q read MPB and MPC; multiply their gap by all produced units.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42096",
+      "finalStem": "Refer to the imperfect-correction graph. A regulator calls the dashed curve a full correction because it intersects MPC. Which evidence contradicts that claim?",
+      "image": "question-assets/market-failures/EXTERNALITY-D-02.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "policyQuantity": "160",
+        "socialQuantity": "140",
+        "remainingWedge": "2"
+      },
+      "keyedOption": "The dashed curve stays $2 above MSB, leaving quantity at 160 rather than 140 thousand vapes.",
+      "derivation": "Dashed line endpoints imply a $2 shift; compare its intersection with MSB-MPC.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42149",
+      "finalStem": "A venue can cut nighttime noise at a $600 resource cost, preventing $1,000 of harm to nearby households. The venue has the right to operate. Households would also pay $100 to organize and enforce a contract. What payment range makes both sides strictly better off?",
+      "image": null,
+      "finalInputs": [
+        "600",
+        "1000",
+        "100"
+      ],
+      "recomputed": {
+        "lowerPayment": "600",
+        "upperPayment": "900",
+        "netSurplus": "300"
+      },
+      "keyedOption": "More than $600 but less than $900 paid to the venue.",
+      "derivation": "Venue minimum is prevention cost; victims maximum is avoided harm less their real contract cost.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42156",
+      "finalStem": "A workshop can install a filter for $400 that avoids $900 of harm to its sole neighbor. Rights are enforceable, information is complete, bargaining is costless, and there are no wealth effects. Which prediction survives reversing the initial right to emit?",
+      "image": null,
+      "finalInputs": [
+        "400",
+        "900"
+      ],
+      "recomputed": {
+        "jointSurplus": "500"
+      },
+      "keyedOption": "The filter remains worthwhile; the direction or amount of compensation can change.",
+      "derivation": "Compare resources and avoided damage under both rights; negligible bargaining costs and no wealth effects are explicit.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42086",
+      "finalStem": "Refer to the gardens graph. Enforceable agreements could let all affected neighbors jointly pay producers $5 per garden, with no bargaining cost or wealth effects. Compare this with a $5 producer subsidy funded by costless lump-sum taxes. Which conclusion follows?",
+      "image": "question-assets/market-failures/EXTERNALITY-C-03.webp",
+      "finalInputs": [
+        "5",
+        "5"
+      ],
+      "recomputed": {
+        "socialQuantity": "150",
+        "gain": "125",
+        "transfer": "750"
+      },
+      "keyedOption": "Both can support 150 gardens; who pays and receives transfers differs, while the gain over 100 gardens is $125.",
+      "derivation": "Equal per-unit incentives support the same graph quantity; real gain is the omitted-surplus triangle, not all-unit payments.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42095",
+      "finalStem": "Refer to the transit graph. A $2 rider subsidy could implement the social-intersection quantity at a real administration cost of $12 thousand per day. A private agreement would implement the same quantity but cost $18 thousand per day to arrange and enforce. Ignore financing distortions and treat transfers as transfers. Which comparison follows?",
+      "image": "question-assets/market-failures/EXTERNALITY-C-04.webp",
+      "finalInputs": [
+        "2",
+        "12",
+        "18"
+      ],
+      "recomputed": {
+        "grossGain": "50",
+        "policyNet": "38",
+        "bargainNet": "32"
+      },
+      "keyedOption": "The subsidy yields $38 thousand and bargaining $32 thousand in net daily gains over the private outcome.",
+      "derivation": "Use thousands per day consistently: graph triangle minus each real implementation cost.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42100",
+      "finalStem": "Refer to the imperfect-correction graph. The city raises the vaping tax from $2 to the full $4 correction. Ignoring administration and financing costs, what additional welfare gain is obtained, and how does tax revenue change?",
+      "image": "question-assets/market-failures/EXTERNALITY-D-02.webp",
+      "finalInputs": [
+        "2",
+        "4"
+      ],
+      "recomputed": {
+        "additionalWelfare": "20",
+        "revenueIncrease": "240"
+      },
+      "keyedOption": "Welfare rises $20 thousand; revenue rises $240 thousand.",
+      "derivation": "Solve both tax equilibria. Additional welfare equals removed residual triangle; revenue uses each endogenous quantity.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42147",
+      "finalStem": "Plants would emit 500 tons without abatement. A binding cap is reduced to 420 tons. The first 50 tons can be abated for $10 each; the next 50 for $30 each, with no other abatement or trading costs. What allocation and total cost meet the new cap most cheaply?",
+      "image": null,
+      "finalInputs": [
+        "10",
+        "30"
+      ],
+      "recomputed": {
+        "abatement": "80",
+        "lowCostTons": "50",
+        "highCostTons": "30",
+        "minimumCost": "1400"
+      },
+      "keyedOption": "Abate all 50 low-cost tons and 30 higher-cost tons, for $1,400.",
+      "derivation": "Use the limited cheapest reductions first; remaining emissions equal the cap.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42151",
+      "finalStem": "A landlord can insulate a noisy building for $700. The improvement raises the present value of rents by $500 and gives neighboring properties $400 of additional benefits. There are no other effects. Neighbors could organize a payment at a real cost of $250. Which diagnosis is correct?",
+      "image": null,
+      "finalInputs": [
+        "700",
+        "500",
+        "400",
+        "250"
+      ],
+      "recomputed": {
+        "privateNet": "-200",
+        "grossSocialNet": "200",
+        "contractNet": "-50"
+      },
+      "keyedOption": "Insulation is socially worthwhile before coordination costs, but neither rent capture alone nor that bargain finances it with positive joint gains.",
+      "derivation": "Separate benefit captured by the landlord from the outside benefit and real organization cost.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42153",
+      "finalStem": "A polluter has the right to continue operating. Option A prevents $900 of damage, costs $500 to install and $100 to contract. Option B prevents $1,200 of damage, costs $650 to install and $300 to contract. Victims pay all contract costs; transfers have no resource cost. Which option offers the larger bargaining surplus, and what payment interval supports it?",
+      "image": null,
+      "finalInputs": [
+        "900",
+        "500",
+        "100",
+        "1200",
+        "650",
+        "300"
+      ],
+      "recomputed": {
+        "surplusA": "300",
+        "surplusB": "250",
+        "paymentLowerA": "500",
+        "paymentUpperA": "800"
+      },
+      "keyedOption": "Option A: more than $500 but less than $800 paid to the polluter.",
+      "derivation": "Rank net benefits of both contracts; compute separate reservation payments from final inputs.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42159",
+      "finalStem": "Preventing a spillover avoids $2 million of harm and uses $1.2 million of resources. A bargain adds $1 million in real transaction costs. An enforceable regulation can achieve the same prevention with $0.3 million of administration and compliance costs beyond prevention. With no other effects, which ranking follows?",
+      "image": null,
+      "finalInputs": [
+        "2",
+        "1.2",
+        "1",
+        "0.3"
+      ],
+      "recomputed": {
+        "gross": "0.8",
+        "bargainNet": "-0.2",
+        "regulationNet": "0.5"
+      },
+      "keyedOption": "Regulation gains $0.5 million; no prevention ranks next; the bargain loses $0.2 million.",
+      "derivation": "Rank specified real institutional costs against no action (zero incremental surplus).",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "P77-MFAIL-L-019",
+      "finalStem": "A festival can run late, end early, or run late with sound insulation. Relative to ending early, running late adds $1,000 of gains to attendees and organizers and $1,400 of resident harm. Insulation costs $600 and reduces that harm to $200. Ignore bargaining costs. Which arrangement maximizes net gains, and what remains to be negotiated?",
+      "image": null,
+      "finalInputs": [
+        "1000",
+        "1400",
+        "600",
+        "200"
+      ],
+      "recomputed": {
+        "lateNet": "-400",
+        "insulatedLateNet": "200"
+      },
+      "keyedOption": "Run late with insulation; divide its $200 net gain through compensation.",
+      "derivation": "Compare all three outcomes relative to early closing; compensation redistributes gains.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42182",
+      "finalStem": "Refer to the coastal-protection graph. A council has funds for either 20, 30 or 40 miles and wants the greatest net social benefit. Which choice is supported by marginal benefit and cost?",
+      "image": "question-assets/market-failures/PUBLIC-03.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "optimalQuantity": "30",
+        "mb": "30",
+        "mc": "30"
+      },
+      "keyedOption": "30 miles: expand beyond 20 while MSB exceeds MC, but do not add the miles beyond 30.",
+      "derivation": "MSB-MC changes from positive to negative at the intersection; select the matching feasible proposal.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42192",
+      "finalStem": "Refer to the fireworks graph. At four shared displays, an analyst records only North’s marginal benefit and recommends reducing provision because it is below MC. What corrects this recommendation?",
+      "image": "question-assets/market-failures/PUBLIC-04.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "northMB": "30000",
+        "southMB": "20000",
+        "sumMB": "50000",
+        "MC": "50000"
+      },
+      "keyedOption": "Add South’s $20,000 to North’s $30,000; the fourth shared display meets the $50,000 marginal cost.",
+      "derivation": "Vertically add both benefits at the same shared quantity.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42256",
+      "finalStem": "A shared warning service costs $600 and will be provided only if fully funded. Four households each value it at $200; nonpayers cannot be excluded. Three have irrevocably contributed $150 each. What is the fourth household’s best choice if it cares only about its own net benefit?",
+      "image": null,
+      "finalInputs": [
+        "600",
+        "200",
+        "150"
+      ],
+      "recomputed": {
+        "fundingGap": "150",
+        "pivotalPrivateNet": "50"
+      },
+      "keyedOption": "Contribute the remaining $150: its contribution is pivotal and leaves a $50 net benefit.",
+      "derivation": "Irrevocable prior contributions make the fourth household pivotal; without funding it gets no service.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42288",
+      "finalStem": "An extra trip on a free congested road gives its driver $12 of benefit and $8 of private time and fuel cost. It also adds $6 of delays to other drivers. Which marginal comparison explains excessive use?",
+      "image": null,
+      "finalInputs": [
+        "12",
+        "8",
+        "6"
+      ],
+      "recomputed": {
+        "privateNet": "4",
+        "socialNet": "-2"
+      },
+      "keyedOption": "The driver gains $4 privately, but the trip reduces net social benefit by $2.",
+      "derivation": "Compute marginal private and social net benefits using outside delay as a real cost.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42186",
+      "finalStem": "Refer to the coastal-protection graph. A cost-saving method lowers MC by $15 million per mile at every quantity, with MSB unchanged. Treat quantity as continuous. Which revised target and reasoning are consistent with the graph?",
+      "image": "question-assets/market-failures/PUBLIC-03.webp",
+      "finalInputs": [
+        "15"
+      ],
+      "recomputed": {
+        "newQ": "40",
+        "newMB": "20",
+        "newMC": "20"
+      },
+      "keyedOption": "40 miles, where MSB of $20 million equals the new MC of $20 million per mile.",
+      "derivation": "Shift cost intercept by the stated amount, retain slopes, and solve new intersection.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42196",
+      "finalStem": "Refer to the fireworks graph. Suppose an analyst finds a previously omitted neighborhood with constant marginal benefit of $10,000 per display over the relevant range. MC and the two plotted neighborhood values are unchanged. Using the continuous quantity approximation, what target follows?",
+      "image": "question-assets/market-failures/PUBLIC-04.webp",
+      "finalInputs": [
+        "10000"
+      ],
+      "recomputed": {
+        "newQ": "5",
+        "newMSB": "50000"
+      },
+      "keyedOption": "5 displays; the added neighborhood raises MSB to $50,000 at that quantity.",
+      "derivation": "Add beneficiary value vertically; verify both component curves remain on their positive segments.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42253",
+      "finalStem": "A nonexcludable siren project is worth $300 to each of five households and costs $1,000. One household cannot finance it alone. A binding agreement would collect $200 from each household only if all five sign, with no contracting costs. Which comparison follows?",
+      "image": null,
+      "finalInputs": [
+        "300",
+        "1000",
+        "200"
+      ],
+      "recomputed": {
+        "totalBenefit": "1500",
+        "jointNet": "500",
+        "householdNet": "100"
+      },
+      "keyedOption": "Uncoordinated funding can fail despite $500 of total gains; the conditional agreement can make every household $100 better off.",
+      "derivation": "Aggregate all household values and verify the conditional agreement fully funds the project.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42274",
+      "finalStem": "A nonrival safety bulletin yields $1,500 of total user benefit when open and costs $900 to produce. Donations provide $500. A sponsor would pay $1,000 to keep it open; alternatively, a paywall yields $1,100 of receipts, retains $1,200 of user benefit and costs $100 to enforce. Treat payments as transfers and assume no other effects. Which financing plan is viable and gives larger net social benefit?",
+      "image": null,
+      "finalInputs": [
+        "1500",
+        "900",
+        "500",
+        "1000",
+        "1100",
+        "1200",
+        "100"
+      ],
+      "recomputed": {
+        "sponsorSocialNet": "600",
+        "paywallSocialNet": "200",
+        "sponsorProviderSurplus": "100",
+        "paywallProviderSurplus": "100"
+      },
+      "keyedOption": "Sponsorship: it covers production and preserves $600 of net social benefit, versus $200 under the paywall.",
+      "derivation": "Check financial feasibility separately from user benefits less real production/enforcement costs; receipts are transfers.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "P77-MFAIL-LB-029",
+      "finalStem": "A nonrival, nonexcludable water-quality alert system would generate $12,000 in total benefits and cost $8,000 to operate. Individual fee collection would cost $5,000; a binding cooperative funding agreement would cost $1,000. Both could fund the same service. Which evaluation is correct if there are no other effects?",
+      "image": null,
+      "finalInputs": [
+        "12000",
+        "8000",
+        "5000",
+        "1000"
+      ],
+      "recomputed": {
+        "gross": "4000",
+        "individualNet": "-1000",
+        "cooperativeNet": "3000"
+      },
+      "keyedOption": "The cooperative creates $3,000 of net gains; individual collection costs exceed the $4,000 operating surplus.",
+      "derivation": "Compare both funding institutions after all real costs.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42169",
+      "finalStem": "Refer to the sirens graph, treating provision as continuous. A proposal installs 60 rather than the quantity that maximizes net social benefit. What excess provision and loss follow, and can positive total benefits alone justify the proposal?",
+      "image": "question-assets/market-failures/PUBLIC-01.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "optimal": "40",
+        "excess": "20",
+        "loss": "100000"
+      },
+      "keyedOption": "20 excess sirens and $100,000 of lost net benefit; positive total benefits do not establish that the extra sirens are worthwhile.",
+      "derivation": "Integrate MC minus MSB only over excess units, rather than counting all extra spending as loss.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42179",
+      "finalStem": "Refer to the public-radio graph. A fund can raise provision from the quantity supported by Private Benefit to the MSB-MC intersection. It uses $10,000 per week in real administration costs; transfers themselves have no resource cost. Which conclusion is supported?",
+      "image": "question-assets/market-failures/PUBLIC-02.webp",
+      "finalInputs": [
+        "10000"
+      ],
+      "recomputed": {
+        "privateQ": "40",
+        "socialQ": "80",
+        "grossBenefit": "80000",
+        "netBenefit": "70000"
+      },
+      "keyedOption": "The expansion yields $70,000 of net weekly gains; voluntary payments alone omit some beneficiaries’ value.",
+      "derivation": "Integrate omitted net social benefits and subtract the final-stem administration cost.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42189",
+      "finalStem": "Refer to the coastal-protection graph and treat quantity as continuous. A council budgets $700 million to expand from 10 to 30 miles. With no fixed or financing costs, which assessment uses the changing marginal cost correctly?",
+      "image": "question-assets/market-failures/PUBLIC-03.webp",
+      "finalInputs": [
+        "700"
+      ],
+      "recomputed": {
+        "cost": "500",
+        "benefit": "800",
+        "net": "300",
+        "budget": "700"
+      },
+      "keyedOption": "The budget is sufficient: expansion costs $500 million and adds $300 million in net benefits.",
+      "derivation": "Integrate each linear curve over the expansion; compare added cost with the stated budget.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "42199",
+      "finalStem": "Refer to the fireworks graph and treat displays as continuous. Suppose a proposal uses only North’s willingness to pay to decide provision. What quantity and welfare loss result compared with using both neighborhoods’ benefits, ignoring funding costs?",
+      "image": "question-assets/market-failures/PUBLIC-04.webp",
+      "finalInputs": "Approved graph geometry and explicitly stated quantities",
+      "recomputed": {
+        "northOnlyQ": "0",
+        "fullQ": "4",
+        "loss": "80000"
+      },
+      "keyedOption": "Zero displays and $80,000 of forgone net benefits.",
+      "derivation": "Using only North stops at zero; integrate summed MB minus MC through the efficient four-display target.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    },
+    {
+      "id": "P52B-MFAIL-H-003",
+      "finalStem": "A dominant seller withholds an additional unit that a buyer values at $25 even though producing it uses $18 of resources. There are no externalities. Which mechanism explains the lost efficiency?",
+      "image": null,
+      "finalInputs": [
+        "25",
+        "18"
+      ],
+      "recomputed": {
+        "lostSocialGain": "7"
+      },
+      "keyedOption": "Restricting output can preserve the seller’s price while forgoing a trade with $7 of social gains.",
+      "derivation": "No externalities: forgone marginal social surplus is willingness to pay minus marginal resource cost.",
+      "exactArithmetic": true,
+      "standaloneInputs": true,
+      "oneEconomicallyCorrectOptionAfterFullOptionReview": true
+    }
+  ]
+}

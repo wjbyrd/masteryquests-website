@@ -1,0 +1,47 @@
+{
+  "unselectedConceptDefinitionsUnchanged": 148,
+  "unselectedParentRecordsUnchanged": 25,
+  "sourceAliasAndIdentityFieldsPreserved": true,
+  "newSourceIdAliases": 0,
+  "sourceAndCanonicalDifficultyPreserved": true,
+  "sourceParentPoolOrderPreserved": true,
+  "resolvedPoolOrderPreserved": true,
+  "checkpointAndRepairAndBridgeRoutingPreserved": true,
+  "modeMembershipPreserved": true,
+  "reviewAssets": [
+    {
+      "code": "MICRO-54",
+      "path": "data/concept-reviews/MICRO-54.pdf",
+      "sha256": "250071d6d8c5fef71d7f31b48656a484b204d2de606306c118dd8341f66a2c7e",
+      "verified": true
+    },
+    {
+      "code": "MICRO-55",
+      "path": "data/concept-reviews/MICRO-55.pdf",
+      "sha256": "1cb1269adce96c4b8b09b33dd76330e856ed7e630aebfeb334342ca016e09982",
+      "verified": true
+    },
+    {
+      "code": "MICRO-56",
+      "path": "data/concept-reviews/MICRO-56.pdf",
+      "sha256": "5e3ae831058a43d294e70178a757c73e5bfd6e93c8e7f7d33c2ce0ce5ab68dfb",
+      "verified": true
+    }
+  ],
+  "reviewCodes": [
+    "MICRO-54",
+    "MICRO-55",
+    "MICRO-56"
+  ],
+  "reviewRuntimeRoutesPreserved": true,
+  "protectedFileHashesBeforeApply": {
+    "data/composer_library.js": "187da59da4500266e78d6bb67cf11c375df1a65971cc9370c3fc2c30cba54353",
+    "data/composer_registry.json": "16a4d1b731c28e407ad8f36c115435f878b45468a90dcbdcbed9c991d451cefa",
+    "data/composer_library_manifest.json": "a08bb55594b1626a55a39febb6d754145a2d64492ff55269e22553faa9ea3da6",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  },
+  "sidecarOnlyChanges": "Shared semantic hash and approved asset accessibility fields. No engine, UI, Worker, telemetry, access or other content edits."
+}
