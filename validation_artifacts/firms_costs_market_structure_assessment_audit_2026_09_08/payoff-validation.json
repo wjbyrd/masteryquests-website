@@ -1,0 +1,1282 @@
+{
+  "allPassed": true,
+  "approvedMatricesVerified": 20,
+  "revisedMatrixRecords": 12,
+  "method": "Independent visual transcription; both contingencies for each player; strict dominance; enumerate every pure cell and all interior mixed equilibria. No payoff ties occur in the actual best-response comparisons.",
+  "matrices": [
+    {
+      "asset": "matrix_ad_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          9,
+          9
+        ],
+        "A/Y": [
+          4,
+          13
+        ],
+        "B/X": [
+          13,
+          4
+        ],
+        "B/Y": [
+          6,
+          6
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 18,
+        "A/Y": 17,
+        "B/X": 17,
+        "B/Y": 12
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-L-005"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_asym_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          12,
+          8
+        ],
+        "A/Y": [
+          3,
+          14
+        ],
+        "B/X": [
+          15,
+          2
+        ],
+        "B/Y": [
+          6,
+          6
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 20,
+        "A/Y": 17,
+        "B/X": 17,
+        "B/Y": 12
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-L-011"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_asym_2.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          7,
+          11
+        ],
+        "A/Y": [
+          2,
+          13
+        ],
+        "B/X": [
+          12,
+          4
+        ],
+        "B/Y": [
+          5,
+          6
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 18,
+        "A/Y": 15,
+        "B/X": 16,
+        "B/Y": 11
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-EL-002"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_capacity_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          11,
+          11
+        ],
+        "A/Y": [
+          6,
+          15
+        ],
+        "B/X": [
+          15,
+          6
+        ],
+        "B/Y": [
+          8,
+          8
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 22,
+        "A/Y": 21,
+        "B/X": 21,
+        "B/Y": 16
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_capacity_2.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          16,
+          16
+        ],
+        "A/Y": [
+          6,
+          21
+        ],
+        "B/X": [
+          21,
+          6
+        ],
+        "B/Y": [
+          9,
+          9
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 32,
+        "A/Y": 27,
+        "B/X": 27,
+        "B/Y": 18
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_coord_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          10,
+          10
+        ],
+        "A/Y": [
+          1,
+          2
+        ],
+        "B/X": [
+          2,
+          1
+        ],
+        "B/Y": [
+          8,
+          8
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "A"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "X"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [],
+      "columnStrictDominance": [],
+      "allPureNash": [
+        "A/X",
+        "B/Y"
+      ],
+      "interiorMixedNash": [
+        {
+          "rowProbabilityA": 0.4666666666666667,
+          "columnProbabilityX": 0.4666666666666667
+        }
+      ],
+      "jointTotals": {
+        "A/X": 20,
+        "A/Y": 3,
+        "B/X": 3,
+        "B/Y": 16
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_coord_2.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          14,
+          9
+        ],
+        "A/Y": [
+          2,
+          2
+        ],
+        "B/X": [
+          1,
+          1
+        ],
+        "B/Y": [
+          8,
+          13
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "A"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "X"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [],
+      "columnStrictDominance": [],
+      "allPureNash": [
+        "A/X",
+        "B/Y"
+      ],
+      "interiorMixedNash": [
+        {
+          "rowProbabilityA": 0.631578947368421,
+          "columnProbabilityX": 0.3157894736842105
+        }
+      ],
+      "jointTotals": {
+        "A/X": 23,
+        "A/Y": 4,
+        "B/X": 2,
+        "B/Y": 21
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-L-004"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_coord_3.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          11,
+          7
+        ],
+        "A/Y": [
+          1,
+          1
+        ],
+        "B/X": [
+          2,
+          2
+        ],
+        "B/Y": [
+          7,
+          12
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "A"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "X"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [],
+      "columnStrictDominance": [],
+      "allPureNash": [
+        "A/X",
+        "B/Y"
+      ],
+      "interiorMixedNash": [
+        {
+          "rowProbabilityA": 0.625,
+          "columnProbabilityX": 0.4
+        }
+      ],
+      "jointTotals": {
+        "A/X": 18,
+        "A/Y": 2,
+        "B/X": 4,
+        "B/Y": 19
+      },
+      "jointMaxima": [
+        "B/Y"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-L-017"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_entry_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          9,
+          7
+        ],
+        "A/Y": [
+          4,
+          12
+        ],
+        "B/X": [
+          12,
+          3
+        ],
+        "B/Y": [
+          6,
+          5
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 16,
+        "A/Y": 16,
+        "B/X": 15,
+        "B/Y": 11
+      },
+      "jointMaxima": [
+        "A/X",
+        "A/Y"
+      ],
+      "revisedRecords": [],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_monitor_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          14,
+          14
+        ],
+        "A/Y": [
+          5,
+          18
+        ],
+        "B/X": [
+          18,
+          5
+        ],
+        "B/Y": [
+          9,
+          9
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 28,
+        "A/Y": 23,
+        "B/X": 23,
+        "B/Y": 18
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_multi_ne_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          9,
+          9
+        ],
+        "A/Y": [
+          2,
+          3
+        ],
+        "B/X": [
+          3,
+          2
+        ],
+        "B/Y": [
+          7,
+          7
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "A"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "X"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [],
+      "columnStrictDominance": [],
+      "allPureNash": [
+        "A/X",
+        "B/Y"
+      ],
+      "interiorMixedNash": [
+        {
+          "rowProbabilityA": 0.45454545454545453,
+          "columnProbabilityX": 0.45454545454545453
+        }
+      ],
+      "jointTotals": {
+        "A/X": 18,
+        "A/Y": 5,
+        "B/X": 5,
+        "B/Y": 14
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-LB-009"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_no_dom_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          8,
+          6
+        ],
+        "A/Y": [
+          3,
+          7
+        ],
+        "B/X": [
+          6,
+          4
+        ],
+        "B/Y": [
+          5,
+          3
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "A"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "X"
+        ]
+      },
+      "rowStrictDominance": [],
+      "columnStrictDominance": [],
+      "allPureNash": [],
+      "interiorMixedNash": [
+        {
+          "rowProbabilityA": 0.5,
+          "columnProbabilityX": 0.5
+        }
+      ],
+      "jointTotals": {
+        "A/X": 14,
+        "A/Y": 10,
+        "B/X": 10,
+        "B/Y": 8
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-L-008"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_no_pure_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          6,
+          2
+        ],
+        "A/Y": [
+          2,
+          6
+        ],
+        "B/X": [
+          2,
+          6
+        ],
+        "B/Y": [
+          6,
+          2
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "A"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "X"
+        ]
+      },
+      "rowStrictDominance": [],
+      "columnStrictDominance": [],
+      "allPureNash": [],
+      "interiorMixedNash": [
+        {
+          "rowProbabilityA": 0.5,
+          "columnProbabilityX": 0.5
+        }
+      ],
+      "jointTotals": {
+        "A/X": 8,
+        "A/Y": 8,
+        "B/X": 8,
+        "B/Y": 8
+      },
+      "jointMaxima": [
+        "A/X",
+        "A/Y",
+        "B/X",
+        "B/Y"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-L-010"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_pd_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          8,
+          8
+        ],
+        "A/Y": [
+          3,
+          11
+        ],
+        "B/X": [
+          11,
+          3
+        ],
+        "B/Y": [
+          5,
+          5
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 16,
+        "A/Y": 14,
+        "B/X": 14,
+        "B/Y": 10
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-L-001"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_pd_2.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          12,
+          12
+        ],
+        "A/Y": [
+          4,
+          16
+        ],
+        "B/X": [
+          16,
+          4
+        ],
+        "B/Y": [
+          7,
+          7
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 24,
+        "A/Y": 20,
+        "B/X": 20,
+        "B/Y": 14
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-L-002"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_pd_3.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          18,
+          18
+        ],
+        "A/Y": [
+          6,
+          23
+        ],
+        "B/X": [
+          23,
+          6
+        ],
+        "B/Y": [
+          10,
+          10
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 36,
+        "A/Y": 29,
+        "B/X": 29,
+        "B/Y": 20
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-EL-008"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_policy_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          10,
+          10
+        ],
+        "A/Y": [
+          6,
+          12
+        ],
+        "B/X": [
+          12,
+          6
+        ],
+        "B/Y": [
+          8,
+          8
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 20,
+        "A/Y": 18,
+        "B/X": 18,
+        "B/Y": 16
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_price_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          15,
+          15
+        ],
+        "A/Y": [
+          5,
+          20
+        ],
+        "B/X": [
+          20,
+          5
+        ],
+        "B/Y": [
+          8,
+          8
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 30,
+        "A/Y": 25,
+        "B/X": 25,
+        "B/Y": 16
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_quality_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          10,
+          10
+        ],
+        "A/Y": [
+          5,
+          14
+        ],
+        "B/X": [
+          14,
+          5
+        ],
+        "B/Y": [
+          7,
+          7
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 20,
+        "A/Y": 19,
+        "B/X": 19,
+        "B/Y": 14
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [
+        "P62I-OLI-L-014"
+      ],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    },
+    {
+      "asset": "matrix_rd_1.webp",
+      "payoffOrder": [
+        "Row",
+        "Column"
+      ],
+      "cells": {
+        "A/X": [
+          13,
+          13
+        ],
+        "A/Y": [
+          4,
+          17
+        ],
+        "B/X": [
+          17,
+          4
+        ],
+        "B/Y": [
+          8,
+          8
+        ]
+      },
+      "rowBestResponses": {
+        "X": [
+          "B"
+        ],
+        "Y": [
+          "B"
+        ]
+      },
+      "columnBestResponses": {
+        "A": [
+          "Y"
+        ],
+        "B": [
+          "Y"
+        ]
+      },
+      "rowStrictDominance": [
+        "B"
+      ],
+      "columnStrictDominance": [
+        "Y"
+      ],
+      "allPureNash": [
+        "B/Y"
+      ],
+      "interiorMixedNash": [],
+      "jointTotals": {
+        "A/X": 26,
+        "A/Y": 21,
+        "B/X": 21,
+        "B/Y": 16
+      },
+      "jointMaxima": [
+        "A/X"
+      ],
+      "revisedRecords": [],
+      "socialOptimum": "Not established: these are firm profits, with no consumer surplus or external effects."
+    }
+  ]
+}

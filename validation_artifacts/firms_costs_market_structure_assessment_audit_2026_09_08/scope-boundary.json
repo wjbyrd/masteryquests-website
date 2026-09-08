@@ -1,0 +1,37 @@
+{
+  "preset": {
+    "id": "micro-firms-markets",
+    "title": "Firms, Costs & Market Structure",
+    "selectedConceptIds": [
+      "costs-of-production",
+      "perfect-competition",
+      "monopoly",
+      "monopolistic-competition",
+      "oligopoly"
+    ]
+  },
+  "directConcepts": [
+    "costs-of-production",
+    "perfect-competition",
+    "monopoly",
+    "monopolistic-competition",
+    "oligopoly"
+  ],
+  "derivedSelectedConcepts": [],
+  "topics": {
+    "accounting_vs_economic_profit": "COP.1: accounting_profit/economic_profit",
+    "explicit_implicit_costs": "COP.1: explicit_cost/implicit_cost",
+    "production_marginal_product_diminishing_returns": "COP.2: production_function/marginal_product/diminishing_marginal_product",
+    "fixed_variable_marginal_average_cost": "COP.3–COP.5: fixed_cost/variable_cost/marginal_cost/average cost skills",
+    "scale_and_MES": "COP.6: economies/diseconomies/constant_returns/minimum_efficient_scale",
+    "perfect_competition_shutdown_profit_entry_exit": "PC.1–PC.6: price taking, marginal choice, produce_at_loss, shutdown_vs_exit, long_run_adjustment",
+    "monopoly_welfare_and_natural_monopoly_regulation": "MON.1–MON.6: barriers, profit, DWL, natural_monopoly, marginal_cost_regulation, average_cost_regulation, regulatory_tradeoff",
+    "price_discrimination": "MON.6: first_degree_price_discrimination, third_degree_price_discrimination, resale_prevention; second-degree taxonomy absent",
+    "monopolistic_competition_excess_capacity_variety": "MCMP.1–MCMP.6: differentiation, entry_demand_shift, long_run_tangency, markup, excess_capacity, product_variety, welfare_tradeoff",
+    "named_entry_externalities": "Named business-stealing/product-variety externality taxonomy absent. Underlying incumbent-demand loss and consumer variety benefits are already selected; preserve those mechanisms without importing names.",
+    "oligopoly_collusion_dominance_Nash": "OLI.1–OLI.4: strategic_interdependence, collusion, incentive_to_cheat, dominant_strategy, nash_equilibrium, joint_profit_maximization, repeated_games",
+    "antitrust_and_practices": "OLI.5–OLI.6: entry deterrence, predation evidence, antitrust_rationale, explicit_collusion, merger and welfare tradeoffs",
+    "tying_resale_price_maintenance_statutory_details": "Absent in selected source records/skills/objectives. No tying, RPM, Sherman/Clayton identity, treble damages or private standing questions imported."
+  },
+  "source": "Live PRESETS → selectedConceptIds → resolveConceptModule → MQ_COMPOSER_LIBRARY.concepts; original source occurrences retained for provenance."
+}

@@ -1,0 +1,1065 @@
+{
+  "method": "Independent final-stem and graph transcription. No authoring functions/proofs imported. Exact rational arithmetic where possible; polynomial maximization recomputed from TR minus TC.",
+  "revisedNumericalRecords": 66,
+  "allPassed": true,
+  "records": [
+    {
+      "id": "P62G-MON-LB-002",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 104.0,
+        "demandSlope": 2.0,
+        "fixedCost": 320.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.1
+      },
+      "outputs": {
+        "Q": 20.0,
+        "P": 64.0,
+        "TR": 1280.0,
+        "TC": 760.0,
+        "AVC": 22.0,
+        "profit": 520.0,
+        "shutdownProfit": -320.0
+      },
+      "key": "Produce about 20.00 units with an economic profit of $520.00",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-005",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 118.0,
+        "demandSlope": 2.5,
+        "fixedCost": 420.0,
+        "linearCost": 22.0,
+        "quadraticCost": 0.125
+      },
+      "outputs": {
+        "Q": 18.285714285714285,
+        "P": 72.28571428571429,
+        "TR": 1321.795918367347,
+        "TC": 864.0816326530612,
+        "AVC": 24.285714285714285,
+        "profit": 457.7142857142857,
+        "shutdownProfit": -420.0
+      },
+      "key": "Produce about 18.29 units with an economic profit of $457.71",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-008",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 98.0,
+        "demandSlope": 1.75,
+        "fixedCost": 360.0,
+        "linearCost": 18.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 21.05263157894737,
+        "P": 61.1578947368421,
+        "TR": 1287.5346260387812,
+        "TC": 805.4293628808864,
+        "AVC": 21.157894736842106,
+        "profit": 482.10526315789474,
+        "shutdownProfit": -360.0
+      },
+      "key": "Produce about 21.05 units with an economic profit of $482.11",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-011",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 112.0,
+        "demandSlope": 2.25,
+        "fixedCost": 500.0,
+        "linearCost": 24.0,
+        "quadraticCost": 0.1
+      },
+      "outputs": {
+        "Q": 18.72340425531915,
+        "P": 69.87234042553192,
+        "TR": 1308.2480760525125,
+        "TC": 984.4182888184699,
+        "AVC": 25.872340425531913,
+        "profit": 323.82978723404256,
+        "shutdownProfit": -500.0
+      },
+      "key": "Produce about 18.72 units with an economic profit of $323.83",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-014",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 100.0,
+        "demandSlope": 2.0,
+        "fixedCost": 900.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.125
+      },
+      "outputs": {
+        "Q": 18.823529411764707,
+        "P": 62.35294117647059,
+        "TR": 1173.7024221453287,
+        "TC": 1320.7612456747404,
+        "AVC": 22.352941176470587,
+        "profit": -147.05882352941177,
+        "shutdownProfit": -900.0
+      },
+      "key": "Produce about 18.82 units with an economic loss of $147.06",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-017",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 94.0,
+        "demandSlope": 1.6,
+        "fixedCost": 820.0,
+        "linearCost": 18.0,
+        "quadraticCost": 0.175
+      },
+      "outputs": {
+        "Q": 21.408450704225352,
+        "P": 59.74647887323944,
+        "TR": 1279.079547708788,
+        "TC": 1285.5584209482245,
+        "AVC": 21.746478873239436,
+        "profit": -6.47887323943662,
+        "shutdownProfit": -820.0
+      },
+      "key": "Produce about 21.41 units with an economic loss of $6.48",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-020",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 116.0,
+        "demandSlope": 2.4,
+        "fixedCost": 980.0,
+        "linearCost": 26.0,
+        "quadraticCost": 0.125
+      },
+      "outputs": {
+        "Q": 17.821782178217823,
+        "P": 73.22772277227723,
+        "TR": 1305.0485246544456,
+        "TC": 1483.0683266346437,
+        "AVC": 28.22772277227723,
+        "profit": -178.01980198019803,
+        "shutdownProfit": -980.0
+      },
+      "key": "Produce about 17.82 units with an economic loss of $178.02",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-023",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 68.0,
+        "demandSlope": 1.8,
+        "fixedCost": 360.0,
+        "linearCost": 50.0,
+        "quadraticCost": 0.09
+      },
+      "outputs": {
+        "Q": 4.761904761904762,
+        "P": 59.42857142857143,
+        "TR": 282.99319727891157,
+        "TC": 600.1360544217687,
+        "AVC": 50.42857142857143,
+        "profit": -317.14285714285717,
+        "shutdownProfit": -360.0
+      },
+      "key": "Produce about 4.76 units with an economic loss of $317.14",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-026",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 108.0,
+        "demandSlope": 2.0,
+        "fixedCost": 300.0,
+        "linearCost": 18.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 20.930232558139537,
+        "P": 66.13953488372093,
+        "TR": 1384.3158464034614,
+        "TC": 742.4553812871823,
+        "AVC": 21.13953488372093,
+        "profit": 641.8604651162791,
+        "shutdownProfit": -300.0
+      },
+      "key": "Produce about 20.93 units with an economic profit of $641.86",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-029",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 122.0,
+        "demandSlope": 2.5,
+        "fixedCost": 450.0,
+        "linearCost": 24.0,
+        "quadraticCost": 0.1
+      },
+      "outputs": {
+        "Q": 18.846153846153847,
+        "P": 74.88461538461539,
+        "TR": 1411.2869822485206,
+        "TC": 937.8254437869823,
+        "AVC": 25.884615384615383,
+        "profit": 473.46153846153845,
+        "shutdownProfit": -450.0
+      },
+      "key": "Produce about 18.85 units with an economic profit of $473.46",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-032",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 102.0,
+        "demandSlope": 1.8,
+        "fixedCost": 380.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.125
+      },
+      "outputs": {
+        "Q": 21.2987012987013,
+        "P": 63.66233766233766,
+        "TR": 1355.9251138471918,
+        "TC": 862.6783606004385,
+        "AVC": 22.662337662337663,
+        "profit": 493.24675324675326,
+        "shutdownProfit": -380.0
+      },
+      "key": "Produce about 21.30 units with an economic profit of $493.25",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-LB-035",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 114.0,
+        "demandSlope": 2.2,
+        "fixedCost": 420.0,
+        "linearCost": 22.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 19.574468085106382,
+        "P": 70.93617021276596,
+        "TR": 1388.5377999094612,
+        "TC": 908.1122679945677,
+        "AVC": 24.93617021276596,
+        "profit": 480.4255319148936,
+        "shutdownProfit": -420.0
+      },
+      "key": "Produce about 19.57 units with an economic profit of $480.43",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-002",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 120.0,
+        "demandSlope": 2.4,
+        "fixedCost": 240.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 19.607843137254903,
+        "P": 72.94117647058823,
+        "TR": 1430.2191464821224,
+        "TC": 689.8269896193772,
+        "AVC": 22.941176470588236,
+        "profit": 740.3921568627451,
+        "shutdownProfit": -240.0
+      },
+      "key": "Produce about 19.61 units with an economic profit of $740.39; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-005",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 108.0,
+        "demandSlope": 1.8,
+        "fixedCost": 320.0,
+        "linearCost": 18.0,
+        "quadraticCost": 0.175
+      },
+      "outputs": {
+        "Q": 22.78481012658228,
+        "P": 66.9873417721519,
+        "TR": 1526.2938631629547,
+        "TC": 820.9774074667521,
+        "AVC": 21.9873417721519,
+        "profit": 705.3164556962025,
+        "shutdownProfit": -320.0
+      },
+      "key": "Produce about 22.78 units with an economic profit of $705.32; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-008",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 102.0,
+        "demandSlope": 2.0,
+        "fixedCost": 720.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.16
+      },
+      "outputs": {
+        "Q": 18.98148148148148,
+        "P": 64.03703703703704,
+        "TR": 1215.5178326474622,
+        "TC": 1157.2770919067216,
+        "AVC": 23.037037037037038,
+        "profit": 58.24074074074074,
+        "shutdownProfit": -720.0
+      },
+      "key": "Produce about 18.98 units with an economic profit of $58.24; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-011",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 128.0,
+        "demandSlope": 2.6,
+        "fixedCost": 260.0,
+        "linearCost": 24.0,
+        "quadraticCost": 0.14
+      },
+      "outputs": {
+        "Q": 18.978102189781023,
+        "P": 78.65693430656934,
+        "TR": 1492.7593372049657,
+        "TC": 765.8980233363525,
+        "AVC": 26.656934306569344,
+        "profit": 726.8613138686131,
+        "shutdownProfit": -260.0
+      },
+      "key": "Produce about 18.98 units with an economic profit of $726.86; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-014",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 114.0,
+        "demandSlope": 2.1,
+        "fixedCost": 520.0,
+        "linearCost": 22.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 20.444444444444443,
+        "P": 71.06666666666666,
+        "TR": 1452.9185185185186,
+        "TC": 1032.474074074074,
+        "AVC": 25.066666666666666,
+        "profit": 420.44444444444446,
+        "shutdownProfit": -520.0
+      },
+      "key": "Produce about 20.44 units with an economic profit of $420.44; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-017",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 98.0,
+        "demandSlope": 1.7,
+        "fixedCost": 690.0,
+        "linearCost": 18.0,
+        "quadraticCost": 0.19
+      },
+      "outputs": {
+        "Q": 21.164021164021165,
+        "P": 62.02116402116402,
+        "TR": 1312.6172279611433,
+        "TC": 1156.0563814002967,
+        "AVC": 22.021164021164022,
+        "profit": 156.56084656084656,
+        "shutdownProfit": -690.0
+      },
+      "key": "Produce about 21.16 units with an economic profit of $156.56; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-020",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 122.0,
+        "demandSlope": 2.3,
+        "fixedCost": 340.0,
+        "linearCost": 24.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 20.0,
+        "P": 76.0,
+        "TR": 1520.0,
+        "TC": 880.0,
+        "AVC": 27.0,
+        "profit": 640.0,
+        "shutdownProfit": -340.0
+      },
+      "key": "Produce about 20.00 units with an economic profit of $640.00; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-023",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 110.0,
+        "demandSlope": 2.0,
+        "fixedCost": 610.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.17
+      },
+      "outputs": {
+        "Q": 20.737327188940093,
+        "P": 68.52534562211981,
+        "TR": 1421.032512901102,
+        "TC": 1097.852789398798,
+        "AVC": 23.525345622119815,
+        "profit": 323.17972350230417,
+        "shutdownProfit": -610.0
+      },
+      "key": "Produce about 20.74 units with an economic profit of $323.18; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-026",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 118.0,
+        "demandSlope": 2.2,
+        "fixedCost": 300.0,
+        "linearCost": 22.0,
+        "quadraticCost": 0.14
+      },
+      "outputs": {
+        "Q": 20.512820512820515,
+        "P": 72.87179487179488,
+        "TR": 1494.8060486522024,
+        "TC": 810.1906640368179,
+        "AVC": 24.871794871794872,
+        "profit": 684.6153846153846,
+        "shutdownProfit": -300.0
+      },
+      "key": "Produce about 20.51 units with an economic profit of $684.62; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-029",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 126.0,
+        "demandSlope": 2.5,
+        "fixedCost": 280.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.16
+      },
+      "outputs": {
+        "Q": 19.924812030075188,
+        "P": 76.18796992481202,
+        "TR": 1518.0309797049013,
+        "TC": 742.0159421109164,
+        "AVC": 23.18796992481203,
+        "profit": 776.015037593985,
+        "shutdownProfit": -280.0
+      },
+      "key": "Produce about 19.92 units with an economic profit of $776.02; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-002",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 122.0,
+        "demandSlope": 2.4,
+        "fixedCost": 260.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 20.0,
+        "P": 74.0,
+        "TR": 1480.0,
+        "TC": 720.0,
+        "AVC": 23.0,
+        "profit": 760.0,
+        "shutdownProfit": -260.0
+      },
+      "key": "Produce about 20.00 units with an economic profit of $760.00; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-005",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 110.0,
+        "demandSlope": 2.0,
+        "fixedCost": 380.0,
+        "linearCost": 18.0,
+        "quadraticCost": 0.17
+      },
+      "outputs": {
+        "Q": 21.19815668202765,
+        "P": 67.6036866359447,
+        "TR": 1433.0735415914544,
+        "TC": 837.9583342181826,
+        "AVC": 21.6036866359447,
+        "profit": 595.1152073732719,
+        "shutdownProfit": -380.0
+      },
+      "key": "Produce about 21.20 units with an economic profit of $595.12; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-008",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 104.0,
+        "demandSlope": 2.1,
+        "fixedCost": 730.0,
+        "linearCost": 22.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 18.22222222222222,
+        "P": 65.73333333333333,
+        "TR": 1197.8074074074075,
+        "TC": 1180.6962962962964,
+        "AVC": 24.733333333333334,
+        "profit": 17.11111111111111,
+        "shutdownProfit": -730.0
+      },
+      "key": "Produce about 18.22 units with an economic profit of $17.11; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-011",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 130.0,
+        "demandSlope": 2.6,
+        "fixedCost": 300.0,
+        "linearCost": 24.0,
+        "quadraticCost": 0.14
+      },
+      "outputs": {
+        "Q": 19.343065693430656,
+        "P": 79.7080291970803,
+        "TR": 1541.797645053013,
+        "TC": 816.6151633011881,
+        "AVC": 26.708029197080293,
+        "profit": 725.1824817518249,
+        "shutdownProfit": -300.0
+      },
+      "key": "Produce about 19.34 units with an economic profit of $725.18; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-014",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 116.0,
+        "demandSlope": 2.2,
+        "fixedCost": 560.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.16
+      },
+      "outputs": {
+        "Q": 20.338983050847457,
+        "P": 71.2542372881356,
+        "TR": 1449.2387245044526,
+        "TC": 1032.9675380637748,
+        "AVC": 23.25423728813559,
+        "profit": 416.271186440678,
+        "shutdownProfit": -560.0
+      },
+      "key": "Produce about 20.34 units with an economic profit of $416.27; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-017",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 100.0,
+        "demandSlope": 1.8,
+        "fixedCost": 700.0,
+        "linearCost": 18.0,
+        "quadraticCost": 0.19
+      },
+      "outputs": {
+        "Q": 20.603015075376884,
+        "P": 62.914572864321606,
+        "TR": 1296.2298931845155,
+        "TC": 1151.5062750940633,
+        "AVC": 21.91457286432161,
+        "profit": 144.72361809045225,
+        "shutdownProfit": -700.0
+      },
+      "key": "Produce about 20.60 units with an economic profit of $144.72; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-020",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 124.0,
+        "demandSlope": 2.3,
+        "fixedCost": 340.0,
+        "linearCost": 24.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 20.408163265306122,
+        "P": 77.06122448979592,
+        "TR": 1572.6780508121617,
+        "TC": 892.2698875468554,
+        "AVC": 27.06122448979592,
+        "profit": 680.4081632653061,
+        "shutdownProfit": -340.0
+      },
+      "key": "Produce about 20.41 units with an economic profit of $680.41; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-023",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 112.0,
+        "demandSlope": 2.0,
+        "fixedCost": 650.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.175
+      },
+      "outputs": {
+        "Q": 21.149425287356323,
+        "P": 69.70114942528735,
+        "TR": 1474.139252212974,
+        "TC": 1151.2656889945831,
+        "AVC": 23.701149425287355,
+        "profit": 322.8735632183908,
+        "shutdownProfit": -650.0
+      },
+      "key": "Produce about 21.15 units with an economic profit of $322.87; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-026",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 120.0,
+        "demandSlope": 2.2,
+        "fixedCost": 320.0,
+        "linearCost": 22.0,
+        "quadraticCost": 0.14
+      },
+      "outputs": {
+        "Q": 20.94017094017094,
+        "P": 73.93162393162393,
+        "TR": 1548.1408430126378,
+        "TC": 842.0724669442618,
+        "AVC": 24.931623931623932,
+        "profit": 706.0683760683761,
+        "shutdownProfit": -320.0
+      },
+      "key": "Produce about 20.94 units with an economic profit of $706.07; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-029",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 128.0,
+        "demandSlope": 2.5,
+        "fixedCost": 300.0,
+        "linearCost": 20.0,
+        "quadraticCost": 0.16
+      },
+      "outputs": {
+        "Q": 20.30075187969925,
+        "P": 77.24812030075188,
+        "TR": 1568.1949233987223,
+        "TC": 771.954321894963,
+        "AVC": 23.24812030075188,
+        "profit": 796.2406015037594,
+        "shutdownProfit": -300.0
+      },
+      "key": "Produce about 20.30 units with an economic profit of $796.24; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-032",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 106.0,
+        "demandSlope": 1.9,
+        "fixedCost": 480.0,
+        "linearCost": 18.0,
+        "quadraticCost": 0.17
+      },
+      "outputs": {
+        "Q": 21.256038647342994,
+        "P": 65.61352657004831,
+        "TR": 1394.6836565614133,
+        "TC": 939.4179560783216,
+        "AVC": 21.613526570048307,
+        "profit": 455.2657004830918,
+        "shutdownProfit": -480.0
+      },
+      "key": "Produce about 21.26 units with an economic profit of $455.27; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-LB-035",
+      "method": "Revenue-minus-total-cost quadratic maximum, neighbor and shutdown comparisons",
+      "inputs": {
+        "demandIntercept": 118.0,
+        "demandSlope": 2.1,
+        "fixedCost": 520.0,
+        "linearCost": 22.0,
+        "quadraticCost": 0.15
+      },
+      "outputs": {
+        "Q": 21.333333333333332,
+        "P": 73.2,
+        "TR": 1561.6,
+        "TC": 1057.6,
+        "AVC": 25.2,
+        "profit": 504.0,
+        "shutdownProfit": -520.0
+      },
+      "key": "Produce about 21.33 units with an economic profit of $504.00; positive profit creates entry pressure",
+      "pass_": true
+    },
+    {
+      "id": "P62E-COP-H-023",
+      "method": "explicit payments vs foregone salary/rent",
+      "expected": [
+        72000,
+        8000
+      ],
+      "key": "$72,000 accounting profit; $8,000 economic profit",
+      "pass_": true
+    },
+    {
+      "id": "PMC-COP-H-019",
+      "method": "two receipts, explicit payments, implicit returns",
+      "expected": [
+        60000,
+        3000
+      ],
+      "key": "$60,000 accounting profit and $3,000 economic profit",
+      "pass_": true
+    },
+    {
+      "id": "P62E-COP-EL-002",
+      "method": "opportunity cost and accounting profit changes reinforce",
+      "expected": [
+        12000
+      ],
+      "key": "Economic profit becomes $12,000 because accounting profit rises while implicit cost falls",
+      "pass_": true
+    },
+    {
+      "id": "P62E-COP-L-068",
+      "method": "alternative plant total costs",
+      "expected": [
+        9000
+      ],
+      "key": "The current lease is unavoidable; next year the larger plant costs $9,000 less in total",
+      "pass_": true
+    },
+    {
+      "id": "P62E-COP-L-080",
+      "method": "plant total-cost crossover; cost ordering checked separately",
+      "expected": [
+        6000.0
+      ],
+      "key": "Use the compact plant at 4,000 and the automated plant at 8,000; the switch occurs at 6,000 units",
+      "pass_": true
+    },
+    {
+      "id": "P62F-PC-H-035",
+      "method": "PC-03: MR/MC quantity, loss rectangle; P30 > AVC20",
+      "expected": [
+        30,
+        300
+      ],
+      "key": "Produce 30 units with a $300 loss; revenue covers variable cost",
+      "pass_": true
+    },
+    {
+      "id": "PM5-PC-H-065",
+      "method": "cost shift and final loss; P28 > AVC21",
+      "expected": [
+        20
+      ],
+      "key": "Market supply shifted left; the firm operates with a $20 economic loss",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-H-013",
+      "method": "MR/MC then demand then ATC profit",
+      "expected": [
+        16.0,
+        52.0,
+        320.0
+      ],
+      "key": "16 units, $52 price, $320 profit",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-H-035",
+      "method": "MON-02: output 40, demand price 40, ATC45",
+      "expected": [
+        40,
+        40,
+        200
+      ],
+      "key": "40 units at $40, with a $200 economic loss",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-H-040",
+      "method": "MON-03: unregulated demand price minus MC",
+      "expected": [
+        27
+      ],
+      "key": "$27",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-L-063",
+      "method": "unregulated profit and MC-pricing financing gap",
+      "expected": [
+        800,
+        800
+      ],
+      "key": "Unregulated profit is $800; MC pricing needs an $800 subsidy; AC pricing covers cost but leaves P above MC",
+      "pass_": true
+    },
+    {
+      "id": "P62G-MON-L-096",
+      "method": "MON-04 higher-output cost recovery versus MC pricing",
+      "expected": [
+        116,
+        24,
+        700
+      ],
+      "key": "Choose fair-return pricing near 116 units; MC pricing adds about 24 units but needs about $700 of support",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-L-095",
+      "method": "MCOMP-03 markup and excess capacity",
+      "expected": [
+        11.5,
+        14
+      ],
+      "key": "The current markup is $11.50 and excess capacity is 14 units; policy evaluation must also weigh lost variety and cost recovery, which the firm diagram does not measure",
+      "pass_": true
+    },
+    {
+      "id": "P62I-OLI-H-003",
+      "method": "CR4; specified fringe members smaller than D",
+      "expected": [
+        82
+      ],
+      "key": "82%",
+      "pass_": true
+    },
+    {
+      "id": "P62I-OLI-H-004",
+      "method": "CR4; specified fringe members smaller than D",
+      "expected": [
+        90
+      ],
+      "key": "90%",
+      "pass_": true
+    },
+    {
+      "id": "P62I-OLI-H-005",
+      "method": "HHI five individual firms",
+      "expected": [
+        2102
+      ],
+      "key": "2102",
+      "pass_": true
+    },
+    {
+      "id": "P62I-OLI-H-006",
+      "method": "HHI five individual firms",
+      "expected": [
+        2774
+      ],
+      "key": "2774",
+      "pass_": true
+    },
+    {
+      "id": "P62I-OLI-H-007",
+      "method": "HHI five individual firms",
+      "expected": [
+        2360
+      ],
+      "key": "2360",
+      "pass_": true
+    },
+    {
+      "id": "P62I-OLI-H-008",
+      "method": "HHI five individual firms",
+      "expected": [
+        2810
+      ],
+      "key": "2810",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-H-002",
+      "method": "explicit MR/MC quantity and demand/ATC comparison",
+      "expected": [
+        8,
+        384
+      ],
+      "key": "$8 per unit; $384 total",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-H-004",
+      "method": "explicit MR/MC quantity and demand/ATC comparison",
+      "expected": [
+        14,
+        504
+      ],
+      "key": "$14 per unit; $504 total",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-H-006",
+      "method": "explicit MR/MC quantity and demand/ATC comparison",
+      "expected": [
+        4,
+        260
+      ],
+      "key": "$4 per unit; $260 total",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-H-008",
+      "method": "explicit MR/MC quantity and demand/ATC comparison",
+      "expected": [
+        21,
+        588
+      ],
+      "key": "$21 per unit; $588 total",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-H-010",
+      "method": "explicit MR/MC quantity and demand/ATC comparison",
+      "expected": [
+        25,
+        1050
+      ],
+      "key": "$25 per unit; $1050 total",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-H-012",
+      "method": "explicit MR/MC quantity and demand/ATC comparison",
+      "expected": [
+        5,
+        275
+      ],
+      "key": "$5 per unit; $275 total",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-C-013",
+      "method": "profit/loss recomputed from displayed decimal inputs",
+      "expected": [
+        792.9135
+      ],
+      "key": "$792.91",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-C-014",
+      "method": "profit/loss recomputed from displayed decimal inputs",
+      "expected": [
+        759.8581
+      ],
+      "key": "$759.86",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-C-015",
+      "method": "profit/loss recomputed from displayed decimal inputs",
+      "expected": [
+        800.7103
+      ],
+      "key": "$800.71",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-C-016",
+      "method": "profit/loss recomputed from displayed decimal inputs",
+      "expected": [
+        804.6145
+      ],
+      "key": "$804.61",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-C-017",
+      "method": "profit/loss recomputed from displayed decimal inputs",
+      "expected": [
+        7.4374
+      ],
+      "key": "$7.44",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-C-018",
+      "method": "profit/loss recomputed from displayed decimal inputs",
+      "expected": [
+        17.3264
+      ],
+      "key": "$17.33",
+      "pass_": true
+    },
+    {
+      "id": "P62H-MCMP-C-019",
+      "method": "profit/loss recomputed from displayed decimal inputs",
+      "expected": [
+        70.4814
+      ],
+      "key": "$70.48",
+      "pass_": true
+    }
+  ],
+  "naturalMonopolyRoots": [
+    11.715728752538098,
+    68.2842712474619
+  ],
+  "limits": "Graph quantities explicitly marked approximately remain approximate. Qualitative items receive separate economic review."
+}

@@ -1,0 +1,3034 @@
+[
+  {
+    "id": "P62E-COP-H-023",
+    "concept": "costs-of-production",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "COP.1",
+    "type": "analysis",
+    "primarySkill": "economic_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C,D: Hard must classify realistic explicit and implicit costs before calculating both profit measures.",
+    "numericProofs": [],
+    "before": {
+      "q": "A firm’s accounting profit is $90,000 and its owner forgoes a $55,000 salary plus $15,000 of interest. Economic profit is:",
+      "options": [
+        "$20,000",
+        "$90,000",
+        "$35,000",
+        "$160,000"
+      ],
+      "feedback": "Subtract both implicit costs from accounting profit.",
+      "aHash": "f61e7cb1ff388ad8caeba94c2f04671f08182d0ed70dcf5b5339611cd9ff379d"
+    },
+    "after": {
+      "q": "A bicycle-fitting workshop bills clients $168,000 for the year. It pays $54,000 to employees, $27,000 for supplies and $15,000 for utilities and insurance. The proprietor gives up an outside salary of $46,000 and could rent the workshop she owns for $18,000 a year. What are accounting profit and economic profit?",
+      "options": [
+        "$72,000 accounting profit; $8,000 economic profit",
+        "$72,000 accounting profit; $26,000 economic profit",
+        "$90,000 accounting profit; $8,000 economic profit",
+        "$8,000 accounting profit; $72,000 economic profit"
+      ],
+      "feedback": "Explicit payments total $96,000, leaving accounting profit of $72,000. Forgone salary and rent total $64,000 in implicit costs, leaving $8,000 economic profit. Owning the workshop does not make its alternative rental use free.",
+      "aHash": "9fed4201d48923efebc07a798f487126db1180d40fc2dfe990e53f517595fa9b"
+    }
+  },
+  {
+    "id": "P62E-COP-H-044",
+    "concept": "costs-of-production",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "COP.2",
+    "type": "analysis",
+    "primarySkill": "average_product",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct incomplete/ambiguous wording or graph evidence while preserving the assessed skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "At the point where the MP and AP curves intersect, what is true of average product?",
+      "options": [
+        "MP equals zero",
+        "AP equals total product",
+        "MP is at its own maximum",
+        "MP equals AP"
+      ],
+      "aHash": "899c9ac8acbe6e576b597c1078452ecf7a3e6fbafd04ab9b296a69df417bf853"
+    },
+    "after": {
+      "q": "Refer to the graph. At the MP–AP crossing, MP changes from above AP to below AP. What does this imply about average product?",
+      "options": [
+        "AP reaches zero there",
+        "AP begins rising after the crossing",
+        "AP equals total product there",
+        "AP reaches a local maximum there"
+      ],
+      "aHash": "c7d41752c2a34d0729396bcca119445d777480471611963d1884445cb156dcc7"
+    }
+  },
+  {
+    "id": "P62E-COP-H-046",
+    "concept": "costs-of-production",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "COP.6",
+    "type": "analysis",
+    "primarySkill": "diseconomies_of_scale",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct incomplete/ambiguous wording or graph evidence while preserving the assessed skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "If a firm expands output from about 60 toward 90 units, what happens to LRAC?"
+    },
+    "after": {
+      "q": "Refer to the LRAC graph. If the firm expands all adjustable inputs to raise output from about 60 toward 90 units, what happens to LRAC?"
+    }
+  },
+  {
+    "id": "PMC-COP-H-019",
+    "concept": "costs-of-production",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "COP.1",
+    "type": "analysis",
+    "primarySkill": "economic_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C,D: Strengthen an existing economic-profit subtraction with classification and multiple revenue sources.",
+    "numericProofs": [],
+    "before": {
+      "q": "A proprietor reports $95,000 of accounting profit. She gives up a $65,000 salary and $18,000 of interest by operating the business. What is her economic profit?",
+      "options": [
+        "$83,000",
+        "$178,000",
+        "$12,000",
+        "$30,000"
+      ],
+      "feedback": "Subtract both implicit costs from accounting profit: $95,000 − $65,000 − $18,000.",
+      "aHash": "b08622c3255596a642de67b20552046a35198df5775dd4042eb6b81dc1185d7a"
+    },
+    "after": {
+      "q": "A repair cooperative receives $144,000 from maintenance contracts and $36,000 from parts sales. It pays $98,000 in wages and parts purchases plus $22,000 in rent and other bills. Its owner forgoes a $48,000 job and $9,000 of investment income. Which profit assessment is correct?",
+      "options": [
+        "$60,000 accounting profit and $12,000 economic profit",
+        "$82,000 accounting profit and $25,000 economic profit",
+        "$60,000 accounting profit and $3,000 economic profit",
+        "$3,000 accounting profit and a $54,000 economic loss"
+      ],
+      "feedback": "Total revenue is $180,000 and explicit costs are $120,000. Accounting profit is $60,000; subtract the $57,000 return available from the owner’s next-best alternatives to obtain $3,000 economic profit.",
+      "aHash": "bebd395ace9537227ec3b75bac2f12eee305645c505fbdaa4e45fc8c6d289b2d"
+    }
+  },
+  {
+    "id": "P62E-COP-EL-002",
+    "concept": "costs-of-production",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "COP.1",
+    "type": "elite",
+    "primarySkill": "normal_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical defect: The original statement reversed the sign of changing implicit cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "A firm’s economic profit is zero while its accounting profit rises because the owner’s outside salary falls by the same amount. Which statement is correct?",
+      "options": [
+        "Economic profit must become positive",
+        "Normal profit is still being earned because total opportunity cost remains covered",
+        "Accounting profit must equal zero",
+        "Explicit cost must have risen"
+      ],
+      "feedback": "The change in implicit cost offsets the accounting-profit change.",
+      "aHash": "5c680c2649e17482f17392df27270516d55e2b97b73fae95e5faf43411d0c4da"
+    },
+    "after": {
+      "q": "A proprietor initially earns $84,000 in accounting profit, exactly covering a $60,000 outside salary and $24,000 of forgone rent. Next year accounting profit rises by $6,000 while the outside salary falls by $6,000; forgone rent is unchanged. Which assessment follows?",
+      "options": [
+        "Economic profit stays zero because the two changes offset",
+        "Economic profit becomes $12,000 because accounting profit rises while implicit cost falls",
+        "Economic profit becomes $6,000 because only the accounting change matters",
+        "Economic profit becomes a $12,000 loss because outside earnings fall"
+      ],
+      "feedback": "Initially implicit costs are $84,000. They fall to $78,000 while accounting profit rises to $90,000; economic profit is $12,000. These changes reinforce each other, rather than offsetting. Normal profit is the return required to cover the owner’s alternatives.",
+      "aHash": "2a81c635474ee38884f8d37b05048f5e4d2ff08d1f17806b93c8c2ab16f9a494"
+    }
+  },
+  {
+    "id": "P62E-COP-EL-003",
+    "concept": "costs-of-production",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "COP.2",
+    "type": "elite",
+    "primarySkill": "short_run_long_run",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Replace time-horizon label lookup with input and planning inference.",
+    "numericProofs": [],
+    "before": {
+      "q": "A restaurant can vary labor today but cannot expand kitchen space for six months. Six months is the relevant short run because:",
+      "options": [
+        "Six months is legally defined as short run",
+        "Labor is fixed",
+        "Kitchen capacity remains fixed during that decision period",
+        "All costs are sunk"
+      ],
+      "feedback": "The fixed-input constraint defines the short run.",
+      "aHash": "c036ac11a5fdd8caa19f4048cc6b078d1f009611b00517f79ba9abcfd4f5cf32"
+    },
+    "after": {
+      "q": "A ceramics firm can change staffing now but must use its current kiln until the lease expires. At renewal it can select a larger kiln. Which comparison correctly separates today’s output choice from the renewal decision?",
+      "options": [
+        "Today both inputs are fixed; at renewal only labor can be chosen",
+        "The kiln is variable today because its payment appears in total cost",
+        "Today labor varies around a fixed kiln; at renewal both kiln capacity and labor can be chosen",
+        "The current lease payment remains a sunk cost for every future kiln choice"
+      ],
+      "feedback": "The short run is defined by a fixed input, not a fixed number of months. Staffing can vary today around the existing kiln. At renewal the firm can change capacity as well as staffing; a future lease payment is not the same as an unrecoverable past payment.",
+      "aHash": "0c10e51082d3be6ba1e1b86633ee965f10171648ab36be53184fed6cf066976e"
+    }
+  },
+  {
+    "id": "P62E-COP-L-068",
+    "concept": "costs-of-production",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "COP.5",
+    "type": "legendary",
+    "primarySkill": "avoidable_cost",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Integrate fixed/avoidable commitments, long-run input choice and plant costs.",
+    "numericProofs": [],
+    "before": {
+      "q": "A fixed lease is cancelable before next year. Which statement is correct?",
+      "options": [
+        "It is necessarily sunk forever",
+        "It is variable today",
+        "It is an implicit cost only",
+        "It is fixed today but potentially avoidable next year"
+      ],
+      "feedback": "Time horizon can change avoidability.",
+      "aHash": "d93bcebb48df6bdeae6254c9da21b5182373091c1b230f436b48c39c89d4c3f5"
+    },
+    "after": {
+      "q": "A packaging plant must pay its current $24,000 lease whether it operates or closes. Next year it can renew at $24,000 or lease a larger plant for $42,000. At the planned output of 9,000 units, variable cost would be $8 per unit in the old plant or $5 in the larger plant. Which decision correctly treats the time horizon?",
+      "options": [
+        "The current lease is avoidable; next year the old plant costs $18,000 less in total",
+        "The current lease is sunk, so exclude both possible lease payments next year",
+        "The larger plant is cheaper at every output because its variable cost is lower",
+        "The current lease is unavoidable; next year the larger plant costs $9,000 less in total"
+      ],
+      "feedback": "The current commitment does not disappear with shutdown. Next year total cost is $24,000 + $8 × 9,000 = $96,000 in the old plant and $42,000 + $5 × 9,000 = $87,000 in the larger one. Future capacity costs are avoidable choices. The larger plant saves $9,000 at this output, not at every output.",
+      "aHash": "5bd35a1ca395d67b0362f9743968b397a70620fe8d141cac1a960006dfa3dbf9"
+    }
+  },
+  {
+    "id": "P62E-COP-L-080",
+    "concept": "costs-of-production",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "COP.6",
+    "type": "legendary",
+    "primarySkill": "long_run_average_cost",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Make the envelope concept require comparison of actual plant alternatives.",
+    "numericProofs": [],
+    "before": {
+      "q": "A firm operates on an SRATC above LRATC at its current Q. What is implied?",
+      "options": [
+        "The firm has negative MP",
+        "The firm must shut down",
+        "LRATC includes no fixed cost",
+        "Another feasible plant size could produce that Q at lower ATC"
+      ],
+      "feedback": "LRATC is the least-cost envelope.",
+      "aHash": "44d4a99b2986ed71d7cf858d4ed9662295085e9ca2ed25cc401578efde51aefb"
+    },
+    "after": {
+      "q": "A bottler can renew a compact plant with annual cost TC = 18000 + 9Q or lease an automated plant with TC = 42000 + 5Q. Both can supply either forecast: 4,000 or 8,000 units. Which long-run plan minimizes cost across those forecasts?",
+      "options": [
+        "Use the automated plant at both forecasts because its variable cost is lower",
+        "Use the compact plant at both forecasts because its fixed cost is lower",
+        "Use the compact plant at 8,000 and the automated plant at 4,000; the switch occurs at 6,000 units",
+        "Use the compact plant at 4,000 and the automated plant at 8,000; the switch occurs at 6,000 units"
+      ],
+      "feedback": "Set the two total costs equal: $24,000 = $4Q, so the crossover is 6,000. At 4,000 units costs are $54,000 versus $62,000; at 8,000 they are $90,000 versus $82,000. Long-run planning selects the lower attainable cost at each output; this comparison does not infer diminishing marginal returns.",
+      "aHash": "d5dc1100178f7cb73911a680fc2ab14e2aa56b45b05daa1f0657e5c91b67d085"
+    }
+  },
+  {
+    "id": "P62F-PC-H-015",
+    "concept": "perfect-competition",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "PC.5",
+    "type": "analysis",
+    "primarySkill": "market_vs_firm",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Connect market demand to firm price, output and profit without adding the upper-tier adjustment chain.",
+    "numericProofs": [],
+    "before": {
+      "q": "A market-and-firm diagram shows market price rising. On the firm panel, the horizontal MR line rises. What happens to the firm’s chosen output?",
+      "options": [
+        "It rises along the firm’s MC curve above AVC",
+        "It falls because firm demand slopes downward",
+        "It remains fixed because the firm is a price taker",
+        "It equals market quantity"
+      ],
+      "feedback": "A higher market price raises MR and the P=MC output.",
+      "aHash": "e74e5704b1774c60a10f9d5a9a77cf58b136b0bf53764c80fecfa6cc95db8421"
+    },
+    "after": {
+      "q": "Refer to the paired market and firm graph and compare the firm’s price line with ATC at the rising-MC intersection. Suppose the displayed position followed a rise in buyer demand from an initial zero-profit equilibrium, before any entry and with firm cost curves unchanged. Which transmission from the market explains the displayed firm outcome?",
+      "options": [
+        "Its horizontal MR line rises, it expands output along MC, and economic profit increases",
+        "Its MC shifts down, so it can expand while its MR line stays fixed",
+        "Its horizontal MR line falls because more buyers enter the market",
+        "Its output stays fixed because a price taker cannot respond to price"
+      ],
+      "feedback": "Market demand raises the equilibrium price. The firm takes that price as P = MR, so the higher horizontal line intersects rising MC at more output. With unchanged costs and initial zero profit, it can earn positive short-run profit before entry responds.",
+      "aHash": "a97f859c7bae0889456356d3b79008b81c4207768431567247f55cb3e213c607"
+    }
+  },
+  {
+    "id": "P62F-PC-H-035",
+    "concept": "perfect-competition",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "PC.4",
+    "type": "analysis",
+    "primarySkill": "total_loss",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "E: Use the approved loss graph for quantity, accounting and shutdown distinctions together.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. What is the firm’s total economic loss at the selected output?",
+      "options": [
+        "$100",
+        "$600",
+        "$900",
+        "$300"
+      ],
+      "feedback": "Total loss is ($40 − $30) × 30 = $300.",
+      "aHash": "3977c27d53b276cb260062e3160e8fb18bccde32c51f69b3f93a4f638b32279e"
+    },
+    "after": {
+      "q": "Refer to the competitive-firm graph. Use P = MR and rising MC to select output, then compare price with ATC and AVC. Which operating result follows?",
+      "options": [
+        "Produce 30 units with a $300 profit; price exceeds AVC",
+        "Shut down because ATC exceeds price at the intersection",
+        "Produce 40 units because MC then intersects ATC",
+        "Produce 30 units with a $300 loss; revenue covers variable cost"
+      ],
+      "feedback": "The horizontal $30 price line meets rising MC at Q = 30. ATC is $40 and AVC is $20 there. Profit is (30 - 40) × 30 = -$300, but price covers AVC, so operating limits the short-run loss.",
+      "aHash": "096b013e02e21c5882d388ee3abd0279abb649f250e1fb20f54cf2635110bc87"
+    }
+  },
+  {
+    "id": "PM5-PC-H-065",
+    "concept": "perfect-competition",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "PC.5",
+    "type": "analysis",
+    "primarySkill": "market_supply_aggregation",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Link an input-cost supply shock to the representative firm with enough data to avoid a false universal profit claim.",
+    "numericProofs": [],
+    "before": {
+      "q": "A competitive industry has 40 identical firms. At P = $25, each firm supplies 12 units. A variable-input cost increase reduces each firm’s quantity supplied at $25 to 9 units. With no entry or exit, what happens to market quantity supplied at that price?",
+      "options": [
+        "It falls from 480 to 360 units",
+        "It falls from 52 to 49 units",
+        "It rises from 360 to 480 units",
+        "It stays at 480 because the number of firms is unchanged"
+      ],
+      "feedback": "Industry supply horizontally aggregates firm quantities, so the per-firm decline of 3 units reduces market quantity by 40 × 3 = 120.",
+      "aHash": "36e26a6232303de050cd03ebca23dbbcc90f3533b204e3ba8e62e8e068640d8b"
+    },
+    "after": {
+      "q": "A competitive industry has 40 identical firms. At a price of $25, each initially supplies 12 units. Higher energy costs reduce each firm’s supply at that price to 9 units. With unchanged market demand and no entry, equilibrium price then rises to $28. At its new MR = MC quantity of 10 units, a firm has ATC $30 and AVC $21. Which assessment is correct?",
+      "options": [
+        "Market supply shifted left; the firm operates with a $20 economic loss",
+        "Market supply shifted right; the firm earns $70 economic profit",
+        "Market supply shifted left; the firm shuts down because P is below ATC",
+        "Market supply stayed fixed; the firm earns $30 economic profit"
+      ],
+      "feedback": "At the original price, industry supply falls from 480 to 360 units, identifying a leftward shift. At the new optimum, profit is (28 - 30) × 10 = -$20; price still exceeds AVC, so the firm operates. A cost shock can raise market price while reducing profit; the profit result requires the stated cost comparison.",
+      "aHash": "8b3e191cb0b358540fd454730ad5edaa4bc7891d9bff519a07d54a608b615665"
+    }
+  },
+  {
+    "id": "P62F-PC-EL-038",
+    "concept": "perfect-competition",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "PC.6",
+    "type": "elite",
+    "primarySkill": "long_run_adjustment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Replace a single output-direction step with the complete competitive adjustment mechanism.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. Trace the representative firm’s output choice as entry lowers the market price while its cost curves stay fixed. What happens to output?",
+      "options": [
+        "It remains fixed at 90 because firms are price takers",
+        "It rises because lower price increases demand for the firm",
+        "It moves down along rising MC to a lower quantity",
+        "It becomes equal to market quantity"
+      ],
+      "feedback": "A lower horizontal MR line meets rising MC at a lower firm output.",
+      "aHash": "22f752f49c804a0b669442d9ed38ddab0ccf2df5673bfa0cc799c192f1e7b845"
+    },
+    "after": {
+      "q": "Refer to the paired market and firm graph. The displayed firm earns positive profit. Under free entry, identical firms, and unchanged input prices and cost curves, which sequence moves this industry toward long-run equilibrium?",
+      "options": [
+        "Entry shifts market demand left; price and firm output fall until P = minimum AVC",
+        "Each firm cuts its own price first; market supply then shifts left until MR becomes downward sloping",
+        "Entry shifts market supply right; price and each firm’s horizontal MR fall; firm output falls along rising MC until P = minimum ATC",
+        "Positive profit attracts entry; every firm keeps its original output and price while industry output rises"
+      ],
+      "feedback": "At the displayed Q = 90, price is $40 and ATC is $20, so profit attracts entry. Entry adds market supply. The lower market price lowers each firm’s horizontal MR line; with fixed cost curves its best output falls along rising MC. Under the stated benchmark assumptions entry ends at zero economic profit, P = MC = minimum ATC.",
+      "aHash": "1095178cd81dc407d38302ca9bb727f5ba79e263b0b6754e6d62e7204a634dc2"
+    }
+  },
+  {
+    "id": "P62F-PC-L-056",
+    "concept": "perfect-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "PC.6",
+    "type": "legendary",
+    "primarySkill": "long_run_adjustment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Reverse-infer the full short-run to long-run chain from observed firm and market outcomes.",
+    "numericProofs": [],
+    "before": {
+      "q": "Demand rises in a constant-cost industry and entry is unrestricted. Which conclusion is strongest?",
+      "options": [
+        "The short-run price becomes permanent and no firm enters or exits",
+        "Economic profit or loss persists indefinitely",
+        "The individual firm raises or lowers the market price directly",
+        "Long-run industry output rises mainly through more firms, not permanently higher economic profit"
+      ],
+      "feedback": "Trace the demand shock, entry or exit, and the cost condition governing firm costs and the final price.",
+      "aHash": "94d34901d86c6458a2d7e7c2c34478f4a9f9c0a9bb0b3cf54e5e00e722b126d1"
+    },
+    "after": {
+      "q": "A constant-cost competitive industry begins in long-run equilibrium. A permanent demand increase creates temporary profits. Later, price has returned to its old level, each identical surviving firm again produces its old quantity, and market sales are higher. Which history explains all three observations?",
+      "options": [
+        "Demand first raised price; incumbent firms then kept increasing their own output until their individual MR curves sloped downward",
+        "Entry first raised costs; higher costs then reduced firm output while preserving positive economic profit",
+        "Demand increased, but each firm’s horizontal MR stayed fixed throughout because firms take price as given",
+        "Demand first raised price and firm output; profit induced entry; added supply lowered firm MR and output until zero profit returned with more firms"
+      ],
+      "feedback": "The demand shock raises price, MR and each incumbent’s output initially. Profit attracts new firms, shifting industry supply right. Unchanged input prices keep firm cost curves fixed, so price returns to minimum ATC and each firm returns to its original output. Higher final market output is supplied by more firms, with zero economic profit.",
+      "aHash": "0e8a7c191d951585479d6359cf586b2f7f587740068c3d1630ebaeade003f0ee"
+    }
+  },
+  {
+    "id": "P62F-PC-L-065",
+    "concept": "perfect-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "PC.6",
+    "type": "legendary",
+    "primarySkill": "exit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Integrate loss-but-produce, exit, market supply and surviving-firm adjustment.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. If the loss shown on this firm graph persists, what long-run pressure develops?",
+      "options": [
+        "Exit pressure in the industry",
+        "Entry pressure",
+        "A permanent rise in firm demand",
+        "Automatic elimination of fixed cost"
+      ],
+      "feedback": "Read only the relationships displayed and apply the competitive-firm sequence in the correct order.",
+      "aHash": "e1a80854b6a353c7b3f6f0f663a688f8a8f9a8c324362316aaf7a914d532cb72"
+    },
+    "after": {
+      "q": "Refer to the loss-making firm graph. Assume all firms are initially identical, fixed costs cannot be avoided this period, and input prices and cost curves stay unchanged as firms leave. Which sequence correctly separates present operation from eventual adjustment?",
+      "options": [
+        "The firm operates because P exceeds AVC; persistent losses induce exit; market supply falls and survivors’ MR and output rise until losses disappear",
+        "The firm shuts down solely because P is below ATC; shutdown immediately removes all fixed costs and eliminates losses",
+        "Losses induce entry; market supply rises and each survivor’s horizontal MR rises until zero profit",
+        "Survivors raise their own selling prices first; their downward-sloping demand curves then shift right"
+      ],
+      "feedback": "The displayed price lies between AVC and ATC, so production covers variable cost and some unavoidable fixed cost. Persistent economic losses discourage renewal and induce exit. Reduced market supply raises price and each survivor’s horizontal MR; output rises along unchanged rising MC until the standard long-run zero-profit condition is restored.",
+      "aHash": "1a6c7d9dd85cb94160a9f3af93fe47fd7bbc14b21fdb32a6235d90cacf9719d0"
+    }
+  },
+  {
+    "id": "P62G-MON-H-005",
+    "concept": "monopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MON.4",
+    "type": "analysis",
+    "primarySkill": "monopoly_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct incomplete/ambiguous wording or graph evidence while preserving the assessed skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. If P1 equals ATC at Q1, the monopoly earns:",
+      "feedback": "P=ATC means all explicit and implicit costs are covered."
+    },
+    "after": {
+      "q": "Refer to the graph. The demand price P1 currently lies above ATC at Q1. Suppose a higher fixed cost raises ATC exactly to P1 without changing demand, MR or MC. The monopoly would then earn:",
+      "feedback": "The higher fixed cost raises ATC without moving the MR = MC output or demand price. When ATC reaches P1 at Q1, revenue covers all economic costs and economic profit becomes zero. The original plotted curves need not already show tangency."
+    }
+  },
+  {
+    "id": "P62G-MON-H-013",
+    "concept": "monopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MON.3",
+    "type": "analysis",
+    "primarySkill": "integrated_monopoly_analysis",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "C,D: Replace unused-number rule recitation with a short complete monopoly calculation.",
+    "numericProofs": [],
+    "before": {
+      "q": "A monopolist faces P=100−2Q, MC=20+0Q, and fixed cost $300. Which sequence correctly solves the problem?",
+      "options": [
+        "Set MR=MC for Q, use demand for P, then compare P with ATC",
+        "Set demand=MC for Q, use MR for P, then compare P with AVC",
+        "Minimize ATC for Q, set P=MC, then calculate revenue",
+        "Choose the highest price, then produce the demanded quantity"
+      ],
+      "feedback": "Monopoly analysis proceeds quantity, price, then profit or loss.",
+      "aHash": "4dabeaa9a10a41bae97ad858d01caa6fffb2edb15f2985d653f7924ad9e9665e"
+    },
+    "after": {
+      "q": "A single-price seller of specialty filters faces P = 84 - 2Q and MR = 84 - 4Q, with constant MC = $20. At its optimal output, ATC is $32. Which quantity, price and economic profit are consistent?",
+      "options": [
+        "16 units, $52 price, $320 profit",
+        "32 units, $20 price, $384 loss",
+        "16 units, $20 price, $192 loss",
+        "16 units, $52 price, $512 profit"
+      ],
+      "feedback": "MR = MC gives 84 - 4Q = 20, so Q = 16. Demand then gives P = $52. The profit margin is 52 - 32 = $20; multiplying by 16 gives $320. The $512 distractor uses P - MC instead of P - ATC.",
+      "aHash": "3b7d819f16bb3dad1acbf2488ba7631a5334e51bc673667039aadc3d172f2795"
+    }
+  },
+  {
+    "id": "P62G-MON-H-030",
+    "concept": "monopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MON.6",
+    "type": "analysis",
+    "primarySkill": "third_degree_price_discrimination",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B,C: Apply the already-selected third-degree classification and elasticity mechanism in Hard.",
+    "numericProofs": [],
+    "before": {
+      "q": "A software firm charges a lower price in a market with highly elastic demand. The economic rationale is:",
+      "options": [
+        "The elastic market has higher willingness to pay at every quantity",
+        "The elastic market requires a smaller markup over marginal cost",
+        "The firm’s marginal cost is necessarily lower there",
+        "Resale makes segmentation stronger"
+      ],
+      "feedback": "Optimal markups are smaller where demand is more responsive.",
+      "aHash": "70b1c530f2267d18b08de16a7ad111c6458bb4c96217e445ab88fbf4bb1d4342"
+    },
+    "after": {
+      "q": "An aquarium offers a verified local-resident ticket and a higher-priced tourist ticket. Both admit buyers to the same exhibit at the same marginal cost, and tickets cannot be transferred. Which classification and pricing rationale fit?",
+      "options": [
+        "First-degree discrimination: each visitor is charged their own exact willingness to pay",
+        "Third-degree discrimination: identifiable groups can face different markups when their demand elasticities differ",
+        "Cost-based pricing: the higher tourist ticket proves higher marginal cost",
+        "Uniform monopoly pricing: resale restrictions force both groups to pay one price"
+      ],
+      "feedback": "The seller separates observable groups rather than setting a unique price for every visitor. With equal marginal cost and enforceable separation, less elastic demand can support the larger markup. The ticket difference alone does not demonstrate a cost difference.",
+      "aHash": "2417dee0f0968d4c3ad879726cf75b61ef0a4ad8941b64bfb0074070b139f5ff"
+    }
+  },
+  {
+    "id": "P62G-MON-H-035",
+    "concept": "monopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MON.4",
+    "type": "analysis",
+    "primarySkill": "monopoly_loss",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "E: Link monopoly output, demand price, average cost and total loss without inferring unavailable AVC.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. Which comparison shows that the monopolist is taking an economic loss?",
+      "options": [
+        "Price $40 is above MR $20 at Q = 40",
+        "MC $20 is below demand at Q = 40",
+        "Demand intersects MC near Q = 67",
+        "Price $40 is below ATC $45 at Q = 40"
+      ],
+      "feedback": "Economic profit depends on price relative to ATC. Here P < ATC at the chosen quantity.",
+      "aHash": "496de51829d4126e379f3502576e9330f24f8b77294734da068721e5c3716987"
+    },
+    "after": {
+      "q": "Refer to the monopoly graph. Find output at MR = MC, read price from demand and ATC at that output. What total economic result does the graph show?",
+      "options": [
+        "40 units at $20, with a $1,000 economic loss",
+        "About 67 units at $27, with zero economic profit",
+        "40 units at $40, with an $800 economic profit",
+        "40 units at $40, with a $200 economic loss"
+      ],
+      "feedback": "MR intersects MC at Q = 40. The demand price is $40, while ATC is $45. Economic profit is (40 - 45) × 40 = -$200. The graph has no AVC curve, so it does not by itself establish the shutdown comparison.",
+      "aHash": "70729b2649efa48d289327b7e2024e73fc046ff6920d9ff61770b21a27a95e81"
+    }
+  },
+  {
+    "id": "P62G-MON-H-040",
+    "concept": "monopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MON.5",
+    "type": "analysis",
+    "primarySkill": "allocative_inefficiency",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct incomplete/ambiguous wording or graph evidence while preserving the assessed skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. At the regulated output shown, how large is price minus marginal cost?"
+    },
+    "after": {
+      "q": "Refer to the graph. At the unregulated monopoly output where MR equals MC, how large is price minus marginal cost?"
+    }
+  },
+  {
+    "id": "P62G-MON-L-063",
+    "concept": "monopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MON.6",
+    "type": "legendary",
+    "primarySkill": "regulatory_tradeoff",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Compare all three regulatory rules, financing and efficiency in one self-contained item.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which regulatory comparison for Metro Water is correct?",
+      "options": [
+        "Average-cost pricing sets P below MC",
+        "MC pricing creates monopoly profit",
+        "Average-cost pricing sacrifices some output to cover cost, while MC pricing is efficient but needs support",
+        "Both rules reproduce the unregulated monopoly outcome"
+      ],
+      "feedback": "The core tradeoff is allocative efficiency versus cost recovery.",
+      "aHash": "33bb458f68a952252f0ddcf2bd1e9ac5d860bbdc1c5ac2679c12f0f8bb345969"
+    },
+    "after": {
+      "q": "A water network has demand P = 90 - Q, MR = 90 - 2Q, constant MC = $10 and fixed cost $800. ATC therefore equals 10 + 800/Q. A regulator compares unregulated pricing, P = MC, and the higher-output P = ATC solution (about Q = 68.28). Which assessment is correct?",
+      "options": [
+        "Unregulated profit is $1,600; MC pricing needs no subsidy; AC pricing achieves the efficient output",
+        "Unregulated profit is $800; MC pricing needs an $800 subsidy; AC pricing leaves the same output as monopoly",
+        "Unregulated profit is $800; MC pricing needs an $800 subsidy; AC pricing covers cost but leaves P above MC",
+        "Unregulated profit is zero; MC pricing needs an $800 subsidy; AC pricing produces more than the efficient quantity"
+      ],
+      "feedback": "MR = MC gives Q = 40 and P = $50: profit is (50 - 10) × 40 - 800 = $800. MC pricing gives Q = 80 and covers only variable cost, leaving an $800 financing gap. Higher-output AC pricing gives Q about 68.28 and P about $21.72: zero profit, but P > MC and fewer trades than under MC pricing.",
+      "aHash": "227e92d91c5704d5bfe9b92c05e112354294ecd6182fa79883c2bf3a35a911f1"
+    }
+  },
+  {
+    "id": "P62G-MON-L-066",
+    "concept": "monopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MON.6",
+    "type": "legendary",
+    "primarySkill": "regulatory_tradeoff",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Evaluate efficiency, financial viability and the cost-incentive consequences of regulation.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which regulatory comparison for National Gridline is correct?",
+      "options": [
+        "Average-cost pricing sets P below MC",
+        "Average-cost pricing sacrifices some output to cover cost, while MC pricing is efficient but needs support",
+        "MC pricing creates monopoly profit",
+        "Both rules reproduce the unregulated monopoly outcome"
+      ],
+      "feedback": "The core tradeoff is allocative efficiency versus cost recovery.",
+      "aHash": "33bb458f68a952252f0ddcf2bd1e9ac5d860bbdc1c5ac2679c12f0f8bb345969"
+    },
+    "after": {
+      "q": "A district-heating network is regulated at P = ATC and earns zero economic profit. Its ATC is declining over the relevant range and exceeds MC. Officials propose P = MC with a subsidy equal to the resulting shortfall in revenue relative to total economic cost. Which appraisal best addresses the regulatory dilemma?",
+      "options": [
+        "The rule necessarily covers all total costs because MC includes the average fixed infrastructure cost",
+        "The rule can expand mutually beneficial service, but public financing and weak cost-control incentives under automatic cost reimbursement must be assessed",
+        "The rule must reduce service because lowering price moves buyers up the demand curve",
+        "The rule is unnecessary because zero economic profit proves the original allocation maximizes total surplus"
+      ],
+      "feedback": "Cost-covering P = ATC leaves price above MC, excluding some positive-surplus uses. Setting P = MC can recover those uses but, with ATC > MC, leaves a cost-recovery gap. Funding that gap and designing incentives to control cost are part of the policy comparison; zero profit alone is not an efficiency test.",
+      "aHash": "6f99a6b56bc5464c842e4aa476020ba7731ce107de8e403945ffaf212b39151c"
+    }
+  },
+  {
+    "id": "P62G-MON-L-096",
+    "concept": "monopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MON.6",
+    "type": "legendary",
+    "primarySkill": "regulatory_tradeoff",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F,E: Use the approved regulatory graph for a constrained choice and subsidy calculation.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. Moving from the unregulated outcome to fair-return pricing changes the marked outcome approximately how?",
+      "options": [
+        "Price rises by $11 and output falls by 46 units",
+        "Price falls by $17 and output rises by 70 units",
+        "Price falls by $11 and output rises by 46 units",
+        "Price falls by $6 and output rises by 24 units"
+      ],
+      "feedback": "The graph moves from about P = $27, Q = 70 to P = $16, Q = 116.",
+      "aHash": "65b048c40523a30332c2ded430305f1cc76994b9d91e4552c18b69f03ff1a2f1"
+    },
+    "after": {
+      "q": "Refer to the natural-monopoly regulation graph. Officials require the highest displayed output that covers total economic cost without a subsidy. Which rule meets that constraint, and what would change if they instead required the displayed P = MC outcome?",
+      "options": [
+        "Choose unregulated output near 70 units; MC pricing adds about 46 units and needs no support",
+        "Choose MC pricing at 140 units; it already covers ATC because P equals MC",
+        "Choose fair-return pricing near 116 units; MC pricing adds about 24 units but needs about $700 of support",
+        "Choose fair-return pricing near 116 units; MC pricing removes 24 units and earns about $700 profit"
+      ],
+      "feedback": "At the higher-output demand–ATC intersection, about Q = 116 and P = $16, revenue covers economic cost. MC pricing sets P = $10 at Q = 140, where ATC is about $15. The additional 24 units leave a (15 - 10) × 140 = $700 loss to finance. The constraint selects cost recovery rather than full allocative efficiency.",
+      "aHash": "7fc52f44e972469bbd1a9095af9fe1dcdeb3952dfc0bb1ab20369934e25ac60e"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-002",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Apex Water Authority’s chosen output, ATC=$38 and AVC=$22. What is the short-run operating result?",
+      "options": [
+        "Profit of $800",
+        "Economic loss of $520",
+        "Zero economic profit",
+        "Economic profit of $520"
+      ],
+      "feedback": "Use ATC rather than MC for the profit rectangle.",
+      "aHash": "af340acb4e94565523673aa42b900cbdf58eb9857e0d5f7ec4fa44b375dc0016"
+    },
+    "after": {
+      "q": "Apex Water Authority faces P = 104 - 2Q, MR = 104 - 4Q, and total cost TC = 320 + 20Q + 0.1Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $320.00",
+        "Produce about 20.00 units and count $840.00 as economic profit",
+        "Produce about 20.00 units and count revenue of $1,280.00 as economic profit",
+        "Produce about 20.00 units with an economic profit of $520.00"
+      ],
+      "feedback": "MR = MC gives Q = 20.000000; demand gives P = 64.000000. Revenue minus the stated total cost is 520.000000, so the rounded economic profit is $520.00. Revenue covers variable cost; operating contributes $840.00 toward fixed cost.",
+      "aHash": "f021d78b45d674946b92688e6a19efaa06e1d47e3dc3ce1cb51a538a2d637256"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-005",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Beacon Patent Systems’s chosen output, ATC=$47.25 and AVC=$24.29. What is the short-run operating result?",
+      "options": [
+        "Profit of $835.92",
+        "Economic loss of $457.71",
+        "Economic profit of $457.71",
+        "Zero economic profit"
+      ],
+      "feedback": "Use ATC rather than MC for the profit rectangle.",
+      "aHash": "9da56bcd3b9eb422670dfff87b706416606dc5aed3fb8ad9eb098dff0e069248"
+    },
+    "after": {
+      "q": "Beacon Patent Systems faces P = 118 - 2.5Q, MR = 118 - 5Q, and total cost TC = 420 + 22Q + 0.125Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $420.00",
+        "Produce about 18.29 units and count $877.71 as economic profit",
+        "Produce about 18.29 units with an economic profit of $457.71",
+        "Produce about 18.29 units and count revenue of $1,321.80 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 18.285714; demand gives P = 72.285714. Revenue minus the stated total cost is 457.714286, so the rounded economic profit is $457.71. Revenue covers variable cost; operating contributes $877.71 toward fixed cost.",
+      "aHash": "b1905d2ddf4cd1fbe3bad10aaba0ed6e97ccd587c8b005d195c4fe9bb8a2e82f"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-008",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Cobalt Rail Link’s chosen output, ATC=$38.26 and AVC=$21.16. What is the short-run operating result?",
+      "options": [
+        "Profit of $775.62",
+        "Economic profit of $482.11",
+        "Economic loss of $482.11",
+        "Zero economic profit"
+      ],
+      "feedback": "Use ATC rather than MC for the profit rectangle.",
+      "aHash": "711cee21a084058bd92226581c2f5d2c4872a714bf0d489efd623620cd2cfe81"
+    },
+    "after": {
+      "q": "Cobalt Rail Link faces P = 98 - 1.75Q, MR = 98 - 3.5Q, and total cost TC = 360 + 18Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $360.00",
+        "Produce about 21.05 units with an economic profit of $482.11",
+        "Produce about 21.05 units and count $842.11 as economic profit",
+        "Produce about 21.05 units and count revenue of $1,287.53 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 21.052632; demand gives P = 61.157895. Revenue minus the stated total cost is 482.105263, so the rounded economic profit is $482.11. Revenue covers variable cost; operating contributes $842.11 toward fixed cost.",
+      "aHash": "2eb5b5f82e66852996b62473e2d2d5bfea5cfcfbcfaf2e1ef762126b1f266f1b"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-011",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Dune Mineral Trust’s chosen output, ATC=$52.58 and AVC=$25.87. What is the short-run operating result?",
+      "options": [
+        "Economic profit of $323.83",
+        "Profit of $788.77",
+        "Economic loss of $323.83",
+        "Zero economic profit"
+      ],
+      "feedback": "Use ATC rather than MC for the profit rectangle.",
+      "aHash": "4a8cd70cf327f5aa9d68a73a1ebe57a57d9d17c2844c4076523b86b53cc8ecff"
+    },
+    "after": {
+      "q": "Dune Mineral Trust faces P = 112 - 2.25Q, MR = 112 - 4.5Q, and total cost TC = 500 + 24Q + 0.1Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Produce about 18.72 units with an economic profit of $323.83",
+        "Shut down and incur the fixed-cost loss of $500.00",
+        "Produce about 18.72 units and count $823.83 as economic profit",
+        "Produce about 18.72 units and count revenue of $1,308.25 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 18.723404; demand gives P = 69.872340. Revenue minus the stated total cost is 323.829787, so the rounded economic profit is $323.83. Revenue covers variable cost; operating contributes $823.83 toward fixed cost.",
+      "aHash": "b5e8623ad6b4b829b912d2c681e5dd7e779f7fb3a20aff048e0ddea4076ff433"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-014",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_loss",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Evergreen Spectrum’s chosen output, ATC=$70.17 and AVC=$22.35. What is the short-run operating result?",
+      "options": [
+        "Shut down solely because P<ATC",
+        "Earn profit of $147.06",
+        "Produce where D=MC",
+        "Produce and incur an economic loss of $147.06"
+      ],
+      "feedback": "If P covers AVC, MR=MC minimizes the loss.",
+      "aHash": "1aef947962c9c07c85edc6e94af64fac25c1d626579e5f459b4b7484232c6df0"
+    },
+    "after": {
+      "q": "Evergreen Spectrum faces P = 100 - 2Q, MR = 100 - 4Q, and total cost TC = 900 + 20Q + 0.125Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $900.00",
+        "Produce about 18.82 units and count $752.94 as economic profit",
+        "Produce about 18.82 units and count revenue of $1,173.70 as economic profit",
+        "Produce about 18.82 units with an economic loss of $147.06"
+      ],
+      "feedback": "MR = MC gives Q = 18.823529; demand gives P = 62.352941. Revenue minus the stated total cost is -147.058824, so the rounded economic loss is $147.06. Revenue covers variable cost; operating contributes $752.94 toward fixed cost.",
+      "aHash": "adca83cb1dd5e68828dbc71cde2d2caeea75e318b44fef531fa8eb9b4b5cf909"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-017",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_loss",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Frontier Cable’s chosen output, ATC=$60.05 and AVC=$21.75. What is the short-run operating result?",
+      "options": [
+        "Shut down solely because P<ATC",
+        "Earn profit of $6.48",
+        "Produce and incur an economic loss of $6.48",
+        "Produce where D=MC"
+      ],
+      "feedback": "If P covers AVC, MR=MC minimizes the loss.",
+      "aHash": "91fcc5334779ff0bb6eb9b87a85ead95f6c36aef65d6156ea16202f5631efe52"
+    },
+    "after": {
+      "q": "Frontier Cable faces P = 94 - 1.6Q, MR = 94 - 3.2Q, and total cost TC = 820 + 18Q + 0.175Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $820.00",
+        "Produce about 21.41 units and count $813.52 as economic profit",
+        "Produce about 21.41 units with an economic loss of $6.48",
+        "Produce about 21.41 units and count revenue of $1,279.08 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 21.408451; demand gives P = 59.746479. Revenue minus the stated total cost is -6.478873, so the rounded economic loss is $6.48. Revenue covers variable cost; operating contributes $813.52 toward fixed cost.",
+      "aHash": "919dfa59d828cedba630b2e14ab29342b4d0cdce88873798f21411e22b1d8047"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-020",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_loss",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Granite Pipeline’s chosen output, ATC=$83.22 and AVC=$28.23. What is the short-run operating result?",
+      "options": [
+        "Shut down solely because P<ATC",
+        "Produce and incur an economic loss of $178.02",
+        "Earn profit of $178.02",
+        "Produce where D=MC"
+      ],
+      "feedback": "If P covers AVC, MR=MC minimizes the loss.",
+      "aHash": "84c7f66ab84d3be40614c684c6d5b1a5a12aa9601409a21d0e42cf9f9be83c44"
+    },
+    "after": {
+      "q": "Granite Pipeline faces P = 116 - 2.4Q, MR = 116 - 4.8Q, and total cost TC = 980 + 26Q + 0.125Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $980.00",
+        "Produce about 17.82 units with an economic loss of $178.02",
+        "Produce about 17.82 units and count $801.98 as economic profit",
+        "Produce about 17.82 units and count revenue of $1,305.05 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 17.821782; demand gives P = 73.227723. Revenue minus the stated total cost is -178.019802, so the rounded economic loss is $178.02. Revenue covers variable cost; operating contributes $801.98 toward fixed cost.",
+      "aHash": "98475b7c81ad51c045da7de79a94470ba8c8cf6697092de5d9ad4a7753670993"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-023",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_loss",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Harbor Transit’s chosen output, ATC=$126.03 and AVC=$50.43. What is the short-run operating result?",
+      "options": [
+        "Produce and incur an economic loss of $317.14",
+        "Shut down solely because P<ATC",
+        "Earn profit of $317.14",
+        "Produce where D=MC"
+      ],
+      "feedback": "If P covers AVC, MR=MC minimizes the loss.",
+      "aHash": "cccdd52c65398ffc9c97ede6af492b63edebd848690e7f76c6c58ab7ad2fe57b"
+    },
+    "after": {
+      "q": "Harbor Transit faces P = 68 - 1.8Q, MR = 68 - 3.6Q, and total cost TC = 360 + 50Q + 0.09Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Produce about 4.76 units with an economic loss of $317.14",
+        "Shut down and incur the fixed-cost loss of $360.00",
+        "Produce about 4.76 units and count $42.86 as economic profit",
+        "Produce about 4.76 units and count revenue of $282.99 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 4.761905; demand gives P = 59.428571. Revenue minus the stated total cost is -317.142857, so the rounded economic loss is $317.14. Revenue covers variable cost; operating contributes $42.86 toward fixed cost.",
+      "aHash": "691b1d27886848ff6ab6ecc8b3c91b94672a7c2a0ac12c1fced434328b5ea1ac"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-026",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Ironwood Utility’s chosen output, ATC=$35.47 and AVC=$21.14. What is the short-run operating result?",
+      "options": [
+        "Profit of $876.15",
+        "Economic loss of $641.86",
+        "Zero economic profit",
+        "Economic profit of $641.86"
+      ],
+      "feedback": "Use ATC rather than MC for the profit rectangle.",
+      "aHash": "0137b323b2964db295c2d5ada093ce7f7479cbd8fe9e26c2cf8eaac5529ff2d4"
+    },
+    "after": {
+      "q": "Ironwood Utility faces P = 108 - 2Q, MR = 108 - 4Q, and total cost TC = 300 + 18Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $300.00",
+        "Produce about 20.93 units and count $941.86 as economic profit",
+        "Produce about 20.93 units and count revenue of $1,384.32 as economic profit",
+        "Produce about 20.93 units with an economic profit of $641.86"
+      ],
+      "feedback": "MR = MC gives Q = 20.930233; demand gives P = 66.139535. Revenue minus the stated total cost is 641.860465, so the rounded economic profit is $641.86. Revenue covers variable cost; operating contributes $941.86 toward fixed cost.",
+      "aHash": "60ac54e5e3f79ef7d6f9a812ba11a913017f6a0fd29efd8d3b11ca91a5f28d88"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-029",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Juniper Network’s chosen output, ATC=$49.76 and AVC=$25.88. What is the short-run operating result?",
+      "options": [
+        "Profit of $887.94",
+        "Economic loss of $473.46",
+        "Economic profit of $473.46",
+        "Zero economic profit"
+      ],
+      "feedback": "Use ATC rather than MC for the profit rectangle.",
+      "aHash": "9d8941209aceb6610c66c3d5fdd637412f0293440ad2e012c209daa97fe20c88"
+    },
+    "after": {
+      "q": "Juniper Network faces P = 122 - 2.5Q, MR = 122 - 5Q, and total cost TC = 450 + 24Q + 0.1Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $450.00",
+        "Produce about 18.85 units and count $923.46 as economic profit",
+        "Produce about 18.85 units with an economic profit of $473.46",
+        "Produce about 18.85 units and count revenue of $1,411.29 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 18.846154; demand gives P = 74.884615. Revenue minus the stated total cost is 473.461538, so the rounded economic profit is $473.46. Revenue covers variable cost; operating contributes $923.46 toward fixed cost.",
+      "aHash": "bcd0112997f0ab835caf721abfdbca9ffa489ac8c5d29035a0e9f66d991001d6"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-032",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Keystone Licensing’s chosen output, ATC=$40.50 and AVC=$22.66. What is the short-run operating result?",
+      "options": [
+        "Profit of $816.54",
+        "Economic profit of $493.25",
+        "Economic loss of $493.25",
+        "Zero economic profit"
+      ],
+      "feedback": "Use ATC rather than MC for the profit rectangle.",
+      "aHash": "bd5c7a7dabb343409544dd1b6ffc328cd5be20842bf3f54f8a3e8f3bfd3b3622"
+    },
+    "after": {
+      "q": "Keystone Licensing faces P = 102 - 1.8Q, MR = 102 - 3.6Q, and total cost TC = 380 + 20Q + 0.125Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $380.00",
+        "Produce about 21.30 units with an economic profit of $493.25",
+        "Produce about 21.30 units and count $873.25 as economic profit",
+        "Produce about 21.30 units and count revenue of $1,355.93 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 21.298701; demand gives P = 63.662338. Revenue minus the stated total cost is 493.246753, so the rounded economic profit is $493.25. Revenue covers variable cost; operating contributes $873.25 toward fixed cost.",
+      "aHash": "0bff225a0e746cbf27c305ef62a1e807e926eb1e157ff9ed4b40ed4563eeee8b"
+    }
+  },
+  {
+    "id": "P62G-MON-LB-035",
+    "concept": "monopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MON.4",
+    "type": "legendaryBoss",
+    "primarySkill": "monopoly_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Lighthouse Data’s chosen output, ATC=$46.39 and AVC=$24.94. What is the short-run operating result?",
+      "options": [
+        "Economic profit of $480.43",
+        "Profit of $842.95",
+        "Economic loss of $480.43",
+        "Zero economic profit"
+      ],
+      "feedback": "Use ATC rather than MC for the profit rectangle.",
+      "aHash": "e312926e0ef02b5bca5ed235e7ea68ab3a991571731a998d826bccbcf25ea091"
+    },
+    "after": {
+      "q": "Lighthouse Data faces P = 114 - 2.2Q, MR = 114 - 4.4Q, and total cost TC = 420 + 22Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Produce about 19.57 units with an economic profit of $480.43",
+        "Shut down and incur the fixed-cost loss of $420.00",
+        "Produce about 19.57 units and count $900.43 as economic profit",
+        "Produce about 19.57 units and count revenue of $1,388.54 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 19.574468; demand gives P = 70.936170. Revenue minus the stated total cost is 480.425532, so the rounded economic profit is $480.43. Revenue covers variable cost; operating contributes $900.43 toward fixed cost.",
+      "aHash": "aba58f7d8bd2be4e62d2cdda4ed09edcb32763616daf6b08b4af30f88e8ae149"
+    }
+  },
+  {
+    "id": "P62H-MCMP-H-002",
+    "concept": "monopolistic-competition",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "analysis",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Supply the missing quantity and connect output, margin and profit at normal exam demand.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Maple Bakery’s chosen output, price is $66.14 and ATC is $33.08. What is the result?",
+      "options": [
+        "Profit of $876.15",
+        "Economic profit of $691.86",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use (P−ATC)Q; shutdown depends on AVC.",
+      "aHash": "03ec180158f4b62d8dbcf6dfb375dfde75eac8f0a324f594dbaf13744d7c842d"
+    },
+    "after": {
+      "q": "Seabrook Repair sells a differentiated service. Its MR and rising MC intersect at 48 units; demand at that quantity gives a price of $39, and ATC is $31. What are its profit margin and total economic profit?",
+      "options": [
+        "$8 per unit; $1872 total",
+        "$8 per unit; $384 total",
+        "$39 per unit; $1872 total",
+        "$31 per unit; $1488 total"
+      ],
+      "feedback": "Use the MR = MC quantity, obtain price from demand, and subtract ATC: 39 - 31 = 8 per unit. Multiplying by 48 gives $384; revenue and total cost are not profit.",
+      "aHash": "ec567f491a813dc5a2cecf2d0a0798a93928204fd30b09b7652fb5a7abb0fc9f"
+    }
+  },
+  {
+    "id": "P62H-MCMP-H-004",
+    "concept": "monopolistic-competition",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "analysis",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Supply the missing quantity and connect output, margin and profit at normal exam demand.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Northstar Spa’s chosen output, price is $71.12 and ATC is $44.65. What is the result?",
+      "options": [
+        "Profit of $875.67",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC",
+        "Economic profit of $516.59"
+      ],
+      "feedback": "Use (P−ATC)Q; shutdown depends on AVC.",
+      "aHash": "aef013637988fd003724b2dc4b08381560eecc6b0b53466803dc16649c5bfafc"
+    },
+    "after": {
+      "q": "Cairn Tailoring sells a differentiated service. Its MR and rising MC intersect at 36 units; demand at that quantity gives a price of $56, and ATC is $42. What are its profit margin and total economic profit?",
+      "options": [
+        "$14 per unit; $2016 total",
+        "$56 per unit; $2016 total",
+        "$42 per unit; $1512 total",
+        "$14 per unit; $504 total"
+      ],
+      "feedback": "Use the MR = MC quantity, obtain price from demand, and subtract ATC: 56 - 42 = 14 per unit. Multiplying by 36 gives $504; revenue and total cost are not profit.",
+      "aHash": "1f4c598ec6203b9a8340cc2bf33fea3b6e120e50ba56fc15750dc6592bffa517"
+    }
+  },
+  {
+    "id": "P62H-MCMP-H-006",
+    "concept": "monopolistic-competition",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "analysis",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Supply the missing quantity and connect output, margin and profit at normal exam demand.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Orchid Studio’s chosen output, price is $60.91 and ATC is $50.01. What is the result?",
+      "options": [
+        "Profit of $764.07",
+        "Economic profit of $224.72",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use (P−ATC)Q; shutdown depends on AVC.",
+      "aHash": "abda8a89e17a707460cbb63ca4e502608b01387e31fb1ac8f82579ead24ba86d"
+    },
+    "after": {
+      "q": "Grove Pottery sells a differentiated service. Its MR and rising MC intersect at 65 units; demand at that quantity gives a price of $28, and ATC is $24. What are its profit margin and total economic profit?",
+      "options": [
+        "$4 per unit; $1820 total",
+        "$4 per unit; $260 total",
+        "$28 per unit; $1820 total",
+        "$24 per unit; $1560 total"
+      ],
+      "feedback": "Use the MR = MC quantity, obtain price from demand, and subtract ATC: 28 - 24 = 4 per unit. Multiplying by 65 gives $260; revenue and total cost are not profit.",
+      "aHash": "758c1f8282fa6af540768d09ef150bd691cb95cda5123295e0bef59ce06d28f4"
+    }
+  },
+  {
+    "id": "P62H-MCMP-H-008",
+    "concept": "monopolistic-competition",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "analysis",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Supply the missing quantity and connect output, margin and profit at normal exam demand.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Pioneer Deli’s chosen output, price is $65.56 and ATC is $54.06. What is the result?",
+      "options": [
+        "Profit of $703.54",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC",
+        "Economic profit of $210.45"
+      ],
+      "feedback": "Use (P−ATC)Q; shutdown depends on AVC.",
+      "aHash": "11cb89e9d76585200f1180c9c23452f3d0ed1059e91739ee187298d8c58d75c0"
+    },
+    "after": {
+      "q": "Willow Tours sells a differentiated service. Its MR and rising MC intersect at 28 units; demand at that quantity gives a price of $75, and ATC is $54. What are its profit margin and total economic profit?",
+      "options": [
+        "$21 per unit; $2100 total",
+        "$75 per unit; $2100 total",
+        "$54 per unit; $1512 total",
+        "$21 per unit; $588 total"
+      ],
+      "feedback": "Use the MR = MC quantity, obtain price from demand, and subtract ATC: 75 - 54 = 21 per unit. Multiplying by 28 gives $588; revenue and total cost are not profit.",
+      "aHash": "d0211ba23f3770bf811c9d33c75525506077178b2b2ee725efcf60a4a2717b7c"
+    }
+  },
+  {
+    "id": "P62H-MCMP-H-010",
+    "concept": "monopolistic-competition",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "analysis",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Supply the missing quantity and connect output, margin and profit at normal exam demand.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Quartz Shoes’s chosen output, price is $76.73 and ATC is $42.13. What is the result?",
+      "options": [
+        "Profit of $859.50",
+        "Economic profit of $629.09",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use (P−ATC)Q; shutdown depends on AVC.",
+      "aHash": "2a08c57bdd0ffc8620f09441aaef93ecbde55aadfa6e07773bc43e317ac95827"
+    },
+    "after": {
+      "q": "Ember Design sells a differentiated service. Its MR and rising MC intersect at 42 units; demand at that quantity gives a price of $63, and ATC is $38. What are its profit margin and total economic profit?",
+      "options": [
+        "$25 per unit; $2646 total",
+        "$25 per unit; $1050 total",
+        "$63 per unit; $2646 total",
+        "$38 per unit; $1596 total"
+      ],
+      "feedback": "Use the MR = MC quantity, obtain price from demand, and subtract ATC: 63 - 38 = 25 per unit. Multiplying by 42 gives $1050; revenue and total cost are not profit.",
+      "aHash": "d8804e7f7d49aa972e5a78c2c798b368e7c07096ec859f61a00e4b187287f700"
+    }
+  },
+  {
+    "id": "P62H-MCMP-H-012",
+    "concept": "monopolistic-competition",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "analysis",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Supply the missing quantity and connect output, margin and profit at normal exam demand.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Riverfront Dental’s chosen output, price is $68.62 and ATC is $41.02. What is the result?",
+      "options": [
+        "Profit of $856.12",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC",
+        "Economic profit of $571.03"
+      ],
+      "feedback": "Use (P−ATC)Q; shutdown depends on AVC.",
+      "aHash": "df78b5e8a60e6085f0a8b2215f82c1cb19f4b24bd5e5b767c2d9822c88591f35"
+    },
+    "after": {
+      "q": "North Quay Roasting sells a differentiated service. Its MR and rising MC intersect at 55 units; demand at that quantity gives a price of $34, and ATC is $29. What are its profit margin and total economic profit?",
+      "options": [
+        "$5 per unit; $1870 total",
+        "$34 per unit; $1870 total",
+        "$29 per unit; $1595 total",
+        "$5 per unit; $275 total"
+      ],
+      "feedback": "Use the MR = MC quantity, obtain price from demand, and subtract ATC: 34 - 29 = 5 per unit. Multiplying by 55 gives $275; revenue and total cost are not profit.",
+      "aHash": "0bb7174f7a5729f6a1f78d762706dea99b5ee20a4b1c4b2621ed6ec129b89a12"
+    }
+  },
+  {
+    "id": "P62H-MCMP-EL-037",
+    "concept": "monopolistic-competition",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "MCMP.6",
+    "type": "elite",
+    "primarySkill": "market_structure_characteristics",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Require evaluation of a flawed welfare inference instead of listing model characteristics.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. Compared with a perfectly competitive firm in long-run equilibrium, what is distinctive about this monopolistically competitive firm?",
+      "options": [
+        "It has positive economic profit, P = MC, and output at efficient scale",
+        "It has zero economic profit, P > MC, and output below efficient scale",
+        "It has zero economic profit only because its demand curve is horizontal",
+        "It produces at minimum ATC while charging a price below marginal cost"
+      ],
+      "feedback": "Monopolistic competition combines zero long-run economic profit with markup and excess capacity.",
+      "aHash": "09056bf982494d539e7bff677fbf996ed1f5f9f33a63a165dde064ae8c9f379e"
+    },
+    "after": {
+      "q": "Refer to the displayed long-run firm graph. A policymaker argues that because entry has eliminated economic profit, consumers cannot gain from additional mutually beneficial trades. Which response is economically sound?",
+      "options": [
+        "P = ATC proves P = MC, so the policymaker’s inference is sound",
+        "P = ATC establishes zero profit, but P > MC still signals a markup; a policy must also consider differentiated-product benefits and cost recovery",
+        "The firm must earn positive economic profit because output is below minimum ATC",
+        "Free entry makes the firm a price taker, so the plotted downward-sloping demand is irrelevant"
+      ],
+      "feedback": "The graph combines P = ATC with P > MC and output below efficient scale. Entry removes profit without eliminating markup. The markup identifies a potential allocative issue, but the graph does not quantify the value of variety or the costs of a proposed remedy.",
+      "aHash": "9d4491aa7e97b7c3e3c91b93eafda93b61066c2cb9c87bd892e1d14d52b7b95b"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-002",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Mosaic Café’s chosen output, ATC is $35.18 and AVC is $22.94. What is the operating result?",
+      "options": [
+        "Profit of $922.72",
+        "Economic profit of $740.39",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "10d061f6ffeb26cff6e0f4a39a6c791c08782010a015a683c890ab7897b93755"
+    },
+    "after": {
+      "q": "Mosaic Café faces P = 120 - 2.4Q, MR = 120 - 4.8Q, and total cost TC = 240 + 20Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $240.00",
+        "Produce about 19.61 units with an economic profit of $740.39; positive profit creates entry pressure",
+        "Produce about 19.61 units and count $980.39 as economic profit",
+        "Produce about 19.61 units and count revenue of $1,430.22 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 19.607843; demand gives P = 72.941176. Revenue minus the stated total cost is 740.392157, so the rounded economic profit is $740.39. Revenue covers variable cost; operating contributes $980.39 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "172e48d22c03bff727e2d904d67d42ce13d05e2bdbe964871e4deaaad1988870"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-005",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Nova Salon’s chosen output, ATC is $36.03 and AVC is $21.99. What is the operating result?",
+      "options": [
+        "Economic profit of $705.32",
+        "Profit of $934.47",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "28cac3b7451e99d8ff8b333dfc1c037750fc6ef5211237cdfb001deadde593e8"
+    },
+    "after": {
+      "q": "Nova Salon faces P = 108 - 1.8Q, MR = 108 - 3.6Q, and total cost TC = 320 + 18Q + 0.175Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Produce about 22.78 units with an economic profit of $705.32; positive profit creates entry pressure",
+        "Shut down and incur the fixed-cost loss of $320.00",
+        "Produce about 22.78 units and count $1,025.32 as economic profit",
+        "Produce about 22.78 units and count revenue of $1,526.29 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 22.784810; demand gives P = 66.987342. Revenue minus the stated total cost is 705.316456, so the rounded economic profit is $705.32. Revenue covers variable cost; operating contributes $1,025.32 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "c52d5dbbe1aec7ecf470d68728f26554659ce5d7e3473971b85ccb6e86abf772"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-008",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Opal Fitness’s chosen output, ATC is $60.97 and AVC is $23.04. What is the operating result?",
+      "options": [
+        "Profit of $720.59",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC",
+        "Economic profit of $58.24"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "85a8c67157bc64bc914eb9571f51eb33cfe3751dc1360af824205a41808da093"
+    },
+    "after": {
+      "q": "Opal Fitness faces P = 102 - 2Q, MR = 102 - 4Q, and total cost TC = 720 + 20Q + 0.16Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $720.00",
+        "Produce about 18.98 units and count $778.24 as economic profit",
+        "Produce about 18.98 units and count revenue of $1,215.52 as economic profit",
+        "Produce about 18.98 units with an economic profit of $58.24; positive profit creates entry pressure"
+      ],
+      "feedback": "MR = MC gives Q = 18.981481; demand gives P = 64.037037. Revenue minus the stated total cost is 58.240741, so the rounded economic profit is $58.24. Revenue covers variable cost; operating contributes $778.24 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "608b0f766493552e32b18694ce08349165faa0ff3c1b2d8fce92bb982b44c54f"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-011",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Pinnacle Apparel’s chosen output, ATC is $40.36 and AVC is $26.66. What is the operating result?",
+      "options": [
+        "Profit of $936.44",
+        "Zero economic profit",
+        "Economic profit of $726.86",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "8740760bbc42026973d45d780bf6d97c5464356d282a5b17687264424dc30480"
+    },
+    "after": {
+      "q": "Pinnacle Apparel faces P = 128 - 2.6Q, MR = 128 - 5.2Q, and total cost TC = 260 + 24Q + 0.14Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $260.00",
+        "Produce about 18.98 units and count $986.86 as economic profit",
+        "Produce about 18.98 units with an economic profit of $726.86; positive profit creates entry pressure",
+        "Produce about 18.98 units and count revenue of $1,492.76 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 18.978102; demand gives P = 78.656934. Revenue minus the stated total cost is 726.861314, so the rounded economic profit is $726.86. Revenue covers variable cost; operating contributes $986.86 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "b6f8cde459f150e583166096d93da05900ffa2e46be5f88abedabd6f03edc701"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-014",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Quill Bistro’s chosen output, ATC is $50.50 and AVC is $25.07. What is the operating result?",
+      "options": [
+        "Profit of $877.75",
+        "Economic profit of $420.44",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "528e9764147637e6fd41af5dab4d87b9e4134ab0c23e7f2141138c3ed505e3e0"
+    },
+    "after": {
+      "q": "Quill Bistro faces P = 114 - 2.1Q, MR = 114 - 4.2Q, and total cost TC = 520 + 22Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $520.00",
+        "Produce about 20.44 units with an economic profit of $420.44; positive profit creates entry pressure",
+        "Produce about 20.44 units and count $940.44 as economic profit",
+        "Produce about 20.44 units and count revenue of $1,452.92 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 20.444444; demand gives P = 71.066667. Revenue minus the stated total cost is 420.444444, so the rounded economic profit is $420.44. Revenue covers variable cost; operating contributes $940.44 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "1f20447a5cb7e52514e02fe343880766e5c61f793f4edc135037ac6641de6fa5"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-017",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Radiant Studio’s chosen output, ATC is $54.62 and AVC is $22.02. What is the operating result?",
+      "options": [
+        "Economic profit of $156.56",
+        "Profit of $761.46",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "a5fd6f2f6c3031d6d77b1c0da6e501a6484330029c4831bf2989d4fa46cb6bbf"
+    },
+    "after": {
+      "q": "Radiant Studio faces P = 98 - 1.7Q, MR = 98 - 3.4Q, and total cost TC = 690 + 18Q + 0.19Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Produce about 21.16 units with an economic profit of $156.56; positive profit creates entry pressure",
+        "Shut down and incur the fixed-cost loss of $690.00",
+        "Produce about 21.16 units and count $846.56 as economic profit",
+        "Produce about 21.16 units and count revenue of $1,312.62 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 21.164021; demand gives P = 62.021164. Revenue minus the stated total cost is 156.560847, so the rounded economic profit is $156.56. Revenue covers variable cost; operating contributes $846.56 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "ed2cc82596b0afac3b0edd33d78d4dee17b698353a1c259f2f07019c4fbabce7"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-020",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Saffron Dental’s chosen output, ATC is $44 and AVC is $27. What is the operating result?",
+      "options": [
+        "Profit of $920",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC",
+        "Economic profit of $640"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "825b3f5f7f27bb6c3eb7801507d07f5aa55cb479beeae99b4c2b45123e7ff72b"
+    },
+    "after": {
+      "q": "Saffron Dental faces P = 122 - 2.3Q, MR = 122 - 4.6Q, and total cost TC = 340 + 24Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $340.00",
+        "Produce about 20.00 units and count $980.00 as economic profit",
+        "Produce about 20.00 units and count revenue of $1,520.00 as economic profit",
+        "Produce about 20.00 units with an economic profit of $640.00; positive profit creates entry pressure"
+      ],
+      "feedback": "MR = MC gives Q = 20.000000; demand gives P = 76.000000. Revenue minus the stated total cost is 640.000000, so the rounded economic profit is $640.00. Revenue covers variable cost; operating contributes $980.00 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "e453406a8d724f6681722066b4ab5f9ec164dbf7f6745ccd753c43480ad11dbe"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-023",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Timber Lodging’s chosen output, ATC is $52.94 and AVC is $23.53. What is the operating result?",
+      "options": [
+        "Profit of $860.07",
+        "Zero economic profit",
+        "Economic profit of $323.18",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "7c93129702546014a133fd12a3921ae0bc2c55b2b39d256cfa12ac144f379173"
+    },
+    "after": {
+      "q": "Timber Lodging faces P = 110 - 2Q, MR = 110 - 4Q, and total cost TC = 610 + 20Q + 0.17Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $610.00",
+        "Produce about 20.74 units and count $933.18 as economic profit",
+        "Produce about 20.74 units with an economic profit of $323.18; positive profit creates entry pressure",
+        "Produce about 20.74 units and count revenue of $1,421.03 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 20.737327; demand gives P = 68.525346. Revenue minus the stated total cost is 323.179724, so the rounded economic profit is $323.18. Revenue covers variable cost; operating contributes $933.18 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "614661cfe3cb6af69072a0e8c6329980cf2e5ce7afbb976bcad5f4c4956e7e86"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-026",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Umber Shoes’s chosen output, ATC is $39.50 and AVC is $24.87. What is the operating result?",
+      "options": [
+        "Profit of $925.71",
+        "Economic profit of $684.62",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "653eb7dc8500b7367c138e68d275438b77a71fea82e44bea689dd53ff7e9d3d8"
+    },
+    "after": {
+      "q": "Umber Shoes faces P = 118 - 2.2Q, MR = 118 - 4.4Q, and total cost TC = 300 + 22Q + 0.14Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $300.00",
+        "Produce about 20.51 units with an economic profit of $684.62; positive profit creates entry pressure",
+        "Produce about 20.51 units and count $984.62 as economic profit",
+        "Produce about 20.51 units and count revenue of $1,494.81 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 20.512821; demand gives P = 72.871795. Revenue minus the stated total cost is 684.615385, so the rounded economic profit is $684.62. Revenue covers variable cost; operating contributes $984.62 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "0a4d968df77224141700bfdcac0aa4ae7d43d44b2c046cb19921e3f0f6bc5836"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-029",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendary",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Vesper Learning’s chosen output, ATC is $37.24 and AVC is $23.19. What is the operating result?",
+      "options": [
+        "Economic profit of $776.02",
+        "Profit of $992.50",
+        "Zero economic profit",
+        "Shut down solely because price is below ATC"
+      ],
+      "feedback": "Use ATC for profit or loss and AVC for shutdown.",
+      "aHash": "007432eb664b9d262b9e81bcf171469cf124a02a76c51d04204429dfca7b5ea5"
+    },
+    "after": {
+      "q": "Vesper Learning faces P = 126 - 2.5Q, MR = 126 - 5Q, and total cost TC = 280 + 20Q + 0.16Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Produce about 19.92 units with an economic profit of $776.02; positive profit creates entry pressure",
+        "Shut down and incur the fixed-cost loss of $280.00",
+        "Produce about 19.92 units and count $1,056.02 as economic profit",
+        "Produce about 19.92 units and count revenue of $1,518.03 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 19.924812; demand gives P = 76.187970. Revenue minus the stated total cost is 776.015038, so the rounded economic profit is $776.02. Revenue covers variable cost; operating contributes $1,056.02 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "a03642d91a76b5f53e4105fb63d4e3aa26b63fa0e5878e5d2673709074183bcd"
+    }
+  },
+  {
+    "id": "P62H-MCMP-L-095",
+    "concept": "monopolistic-competition",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "MCMP.6",
+    "type": "legendary",
+    "primarySkill": "welfare_tradeoff",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Integrate graphic markup/excess capacity with the course’s variety-versus-efficiency tradeoff.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. What is the strongest inference about long-run market performance?",
+      "options": [
+        "Free entry removes profit but leaves markup and excess capacity",
+        "Free entry guarantees P = MC and production at minimum ATC",
+        "Free entry preserves positive profit to finance product differentiation",
+        "Free entry makes each firm’s demand perfectly elastic in the long run"
+      ],
+      "feedback": "The graph shows zero profit at P = ATC, yet P > MC and Q is below efficient scale.",
+      "aHash": "8e8f7b27a33e1fae4cbec6c64369f7258d232c6c3cdfba98569dee5450b6dac1"
+    },
+    "after": {
+      "q": "Refer to the long-run monopolistic-competition graph. A proposal would force each firm to produce at minimum ATC while also pricing at MC. Which assessment uses the diagram and recognizes what it cannot establish about welfare?",
+      "options": [
+        "The current markup is $11.50 and excess capacity is 14 units; policy evaluation must also weigh lost variety and cost recovery, which the firm diagram does not measure",
+        "The current $11.50 markup is economic profit, so eliminating it necessarily leaves every variety financially viable",
+        "Current zero profit proves efficient output, so neither the markup nor product variety belongs in welfare analysis",
+        "Excess capacity is 14 units of unsold inventory, so ordering its sale necessarily raises total consumer welfare"
+      ],
+      "feedback": "At Q = 36, P = ATC = $27 while MC = $15.50, giving an $11.50 markup. Minimum ATC occurs at Q = 50, so excess capacity is 14 units, not inventory. Producing more at a mandated price is not automatically feasible at zero profit. Buyers may value differentiation; the diagram alone cannot quantify the benefits of variety or the policy’s net welfare effect.",
+      "aHash": "ddd8f8c7fd15667bfdd7700668ac0bb5634f490a041e12fb98cb6a824b51fce1"
+    }
+  },
+  {
+    "id": "P62H-MCMP-C-013",
+    "concept": "monopolistic-competition",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "calculation",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Align cent-level key with displayed inputs rather than hidden source precision.",
+    "numericProofs": [],
+    "before": {
+      "q": "At its chosen output, a firm sells 21.15 units at $67.70 and has ATC $30.21. What is economic profit?",
+      "options": [
+        "$792.91",
+        "$37.49",
+        "$1,431.84",
+        "$894.60"
+      ],
+      "feedback": "Profit equals (P−ATC)Q."
+    },
+    "after": {
+      "q": "At its chosen output, a firm sells 21.15 units at $67.70 and has ATC $30.21. What is economic profit? Use the displayed values and round to the nearest cent.",
+      "options": [
+        "$792.91",
+        "$37.49",
+        "$1,431.86",
+        "$638.94"
+      ],
+      "feedback": "Total profit is the absolute price–ATC gap times output: |67.7 - 30.21| × 21.15 = $792.91. The keyed amount uses only the displayed data."
+    }
+  },
+  {
+    "id": "P62H-MCMP-C-014",
+    "concept": "monopolistic-competition",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "calculation",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Align cent-level key with displayed inputs rather than hidden source precision.",
+    "numericProofs": [],
+    "before": {
+      "q": "At its chosen output, a firm sells 23.33 units at $62.67 and has ATC $30.10. What is economic profit?",
+      "options": [
+        "$32.57",
+        "$759.86",
+        "$1,462.22",
+        "$871.11"
+      ],
+      "feedback": "Profit equals (P−ATC)Q."
+    },
+    "after": {
+      "q": "At its chosen output, a firm sells 23.33 units at $62.67 and has ATC $30.10. What is economic profit? Use the displayed values and round to the nearest cent.",
+      "options": [
+        "$32.57",
+        "$759.86",
+        "$1,462.09",
+        "$702.23"
+      ],
+      "feedback": "Total profit is the absolute price–ATC gap times output: |62.67 - 30.1| × 23.33 = $759.86. The keyed amount uses only the displayed data."
+    }
+  },
+  {
+    "id": "P62H-MCMP-C-015",
+    "concept": "monopolistic-competition",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "calculation",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Align cent-level key with displayed inputs rather than hidden source precision.",
+    "numericProofs": [],
+    "before": {
+      "q": "At its chosen output, a firm sells 19.43 units at $76.42 and has ATC $35.21. What is economic profit?",
+      "options": [
+        "$41.21",
+        "$1,485.05",
+        "$800.71",
+        "$944.20"
+      ],
+      "feedback": "Profit equals (P−ATC)Q."
+    },
+    "after": {
+      "q": "At its chosen output, a firm sells 19.43 units at $76.42 and has ATC $35.21. What is economic profit? Use the displayed values and round to the nearest cent.",
+      "options": [
+        "$41.21",
+        "$1,484.84",
+        "$800.71",
+        "$684.13"
+      ],
+      "feedback": "Total profit is the absolute price–ATC gap times output: |76.42 - 35.21| × 19.43 = $800.71. The keyed amount uses only the displayed data."
+    }
+  },
+  {
+    "id": "P62H-MCMP-C-016",
+    "concept": "monopolistic-competition",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "calculation",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Align cent-level key with displayed inputs rather than hidden source precision.",
+    "numericProofs": [],
+    "before": {
+      "q": "At its chosen output, a firm sells 23.77 units at $60.35 and has ATC $26.50. What is economic profit?",
+      "options": [
+        "$33.85",
+        "$1,434.35",
+        "$847.39",
+        "$804.61"
+      ],
+      "feedback": "Profit equals (P−ATC)Q."
+    },
+    "after": {
+      "q": "At its chosen output, a firm sells 23.77 units at $60.35 and has ATC $26.50. What is economic profit? Use the displayed values and round to the nearest cent.",
+      "options": [
+        "$33.85",
+        "$1,434.52",
+        "$629.90",
+        "$804.61"
+      ],
+      "feedback": "Total profit is the absolute price–ATC gap times output: |60.35 - 26.5| × 23.77 = $804.61. The keyed amount uses only the displayed data."
+    }
+  },
+  {
+    "id": "P62H-MCMP-C-017",
+    "concept": "monopolistic-competition",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "calculation",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Align cent-level key with displayed inputs rather than hidden source precision.",
+    "numericProofs": [],
+    "before": {
+      "q": "A firm produces 18.14 units at price $61.72 with ATC $61.31. What is its economic profit?",
+      "options": [
+        "$7.44",
+        "$0.41",
+        "$700.00",
+        "$658.09"
+      ],
+      "feedback": "Profit equals (P−ATC)Q because price exceeds ATC."
+    },
+    "after": {
+      "q": "A firm produces 18.14 units at price $61.72 with ATC $61.31. What is its economic profit? Use the displayed values and round to the nearest cent.",
+      "options": [
+        "$7.44",
+        "$0.41",
+        "$1,119.60",
+        "$1,112.16"
+      ],
+      "feedback": "Total profit is the absolute price–ATC gap times output: |61.72 - 61.31| × 18.14 = $7.44. The keyed amount uses only the displayed data."
+    }
+  },
+  {
+    "id": "P62H-MCMP-C-018",
+    "concept": "monopolistic-competition",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "calculation",
+    "primarySkill": "short_run_loss",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Align cent-level key with displayed inputs rather than hidden source precision.",
+    "numericProofs": [],
+    "before": {
+      "q": "A firm produces 17.68 units at price $69.09 with ATC $70.07. What is its economic loss?",
+      "options": [
+        "$0.98",
+        "$17.33",
+        "$760",
+        "$688.01"
+      ],
+      "feedback": "Loss equals (ATC−P)Q."
+    },
+    "after": {
+      "q": "A firm produces 17.68 units at price $69.09 with ATC $70.07. What is its economic loss? Use the displayed values and round to the nearest cent.",
+      "options": [
+        "$0.98",
+        "$17.33",
+        "$1,221.51",
+        "$1,238.84"
+      ],
+      "feedback": "Total loss is the absolute price–ATC gap times output: |69.09 - 70.07| × 17.68 = $17.33. The keyed amount uses only the displayed data."
+    }
+  },
+  {
+    "id": "P62H-MCMP-C-019",
+    "concept": "monopolistic-competition",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "MCMP.2",
+    "type": "calculation",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Align cent-level key with displayed inputs rather than hidden source precision.",
+    "numericProofs": [],
+    "before": {
+      "q": "A firm produces 19.47 units at price $58.89 with ATC $55.27. What is its economic profit?",
+      "options": [
+        "$3.62",
+        "$650.00",
+        "$70.48",
+        "$644.68"
+      ],
+      "feedback": "Profit equals (P−ATC)Q because price exceeds ATC."
+    },
+    "after": {
+      "q": "A firm produces 19.47 units at price $58.89 with ATC $55.27. What is its economic profit? Use the displayed values and round to the nearest cent.",
+      "options": [
+        "$3.62",
+        "$1,146.59",
+        "$70.48",
+        "$1,076.11"
+      ],
+      "feedback": "Total profit is the absolute price–ATC gap times output: |58.89 - 55.27| × 19.47 = $70.48. The keyed amount uses only the displayed data."
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-002",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Keystone Café’s chosen output, ATC=$36 and AVC=$23. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $760; no adjustment pressure",
+        "Zero economic profit; entry pressure",
+        "Shut down because price differs from ATC",
+        "Economic profit of $760; entry pressure"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "1eaec5644c82fdbef777963319c0f6c2efdc06933de61bf67041f1d4b8b974a1"
+    },
+    "after": {
+      "q": "Keystone Café faces P = 122 - 2.4Q, MR = 122 - 4.8Q, and total cost TC = 260 + 20Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $260.00",
+        "Produce about 20.00 units and count $1,020.00 as economic profit",
+        "Produce about 20.00 units and count revenue of $1,480.00 as economic profit",
+        "Produce about 20.00 units with an economic profit of $760.00; positive profit creates entry pressure"
+      ],
+      "feedback": "MR = MC gives Q = 20.000000; demand gives P = 74.000000. Revenue minus the stated total cost is 760.000000, so the rounded economic profit is $760.00. Revenue covers variable cost; operating contributes $1,020.00 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "e4a58ac1657c7d88d5a606688cf209da67492347a9547d4a188ed7f02f4dd7bf"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-005",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Lantern Salon’s chosen output, ATC=$39.53 and AVC=$21.60. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $595.12; no adjustment pressure",
+        "Zero economic profit; entry pressure",
+        "Economic profit of $595.12; entry pressure",
+        "Shut down because price differs from ATC"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "161bb53b542a6b83da2ccf069aa736e46f5b69ced6929934fbf4763179d0b051"
+    },
+    "after": {
+      "q": "Lantern Salon faces P = 110 - 2Q, MR = 110 - 4Q, and total cost TC = 380 + 18Q + 0.17Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $380.00",
+        "Produce about 21.20 units and count $975.12 as economic profit",
+        "Produce about 21.20 units with an economic profit of $595.12; positive profit creates entry pressure",
+        "Produce about 21.20 units and count revenue of $1,433.07 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 21.198157; demand gives P = 67.603687. Revenue minus the stated total cost is 595.115207, so the rounded economic profit is $595.12. Revenue covers variable cost; operating contributes $975.12 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "e149b8148b42556e1900bf7665a44ff418b5f2f5cde5bf26454a20cbaf737db4"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-008",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Meadow Fitness’s chosen output, ATC=$64.79 and AVC=$24.73. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $17.11; no adjustment pressure",
+        "Economic profit of $17.11; entry pressure",
+        "Zero economic profit; entry pressure",
+        "Shut down because price differs from ATC"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "b876ef1f535bf16ae1cfa10798f95f221464f22e5b43390939d97abeda4ea03d"
+    },
+    "after": {
+      "q": "Meadow Fitness faces P = 104 - 2.1Q, MR = 104 - 4.2Q, and total cost TC = 730 + 22Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $730.00",
+        "Produce about 18.22 units with an economic profit of $17.11; positive profit creates entry pressure",
+        "Produce about 18.22 units and count $747.11 as economic profit",
+        "Produce about 18.22 units and count revenue of $1,197.81 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 18.222222; demand gives P = 65.733333. Revenue minus the stated total cost is 17.111111, so the rounded economic profit is $17.11. Revenue covers variable cost; operating contributes $747.11 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "fccf563c301713408b59fe575f415a1d6c638bfad9176723e6fadcb773dcc140"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-011",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Nimbus Apparel’s chosen output, ATC=$42.22 and AVC=$26.71. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $725.18; entry pressure",
+        "Economic profit of $725.18; no adjustment pressure",
+        "Zero economic profit; entry pressure",
+        "Shut down because price differs from ATC"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "3201ed9265fb20d8ef4e43711571aadb6344a539c1736f9315878139b6972011"
+    },
+    "after": {
+      "q": "Nimbus Apparel faces P = 130 - 2.6Q, MR = 130 - 5.2Q, and total cost TC = 300 + 24Q + 0.14Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Produce about 19.34 units with an economic profit of $725.18; positive profit creates entry pressure",
+        "Shut down and incur the fixed-cost loss of $300.00",
+        "Produce about 19.34 units and count $1,025.18 as economic profit",
+        "Produce about 19.34 units and count revenue of $1,541.80 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 19.343066; demand gives P = 79.708029. Revenue minus the stated total cost is 725.182482, so the rounded economic profit is $725.18. Revenue covers variable cost; operating contributes $1,025.18 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "ad6a82290f5714defbb9d9bb79306a3fa281aa0d7833ca39d6e55b59991846bf"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-014",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Oasis Bistro’s chosen output, ATC=$50.79 and AVC=$23.25. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $416.27; no adjustment pressure",
+        "Zero economic profit; entry pressure",
+        "Shut down because price differs from ATC",
+        "Economic profit of $416.27; entry pressure"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "ba8f3a81f7be02013bd970096ff52423584dd060cb92d83b9f72f7ba3b0e9970"
+    },
+    "after": {
+      "q": "Oasis Bistro faces P = 116 - 2.2Q, MR = 116 - 4.4Q, and total cost TC = 560 + 20Q + 0.16Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $560.00",
+        "Produce about 20.34 units and count $976.27 as economic profit",
+        "Produce about 20.34 units and count revenue of $1,449.24 as economic profit",
+        "Produce about 20.34 units with an economic profit of $416.27; positive profit creates entry pressure"
+      ],
+      "feedback": "MR = MC gives Q = 20.338983; demand gives P = 71.254237. Revenue minus the stated total cost is 416.271186, so the rounded economic profit is $416.27. Revenue covers variable cost; operating contributes $976.27 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "d55fbc3597682108ce4d1a2faa2a31f0d9347b770e8e8ff15accb52902c8070e"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-017",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Prairie Studio’s chosen output, ATC=$55.89 and AVC=$21.91. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $144.72; no adjustment pressure",
+        "Zero economic profit; entry pressure",
+        "Economic profit of $144.72; entry pressure",
+        "Shut down because price differs from ATC"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "52450b38e207e0dbb8574876f8d4a3d4c87df07b376a06bde823c5cfdcfecb82"
+    },
+    "after": {
+      "q": "Prairie Studio faces P = 100 - 1.8Q, MR = 100 - 3.6Q, and total cost TC = 700 + 18Q + 0.19Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $700.00",
+        "Produce about 20.60 units and count $844.72 as economic profit",
+        "Produce about 20.60 units with an economic profit of $144.72; positive profit creates entry pressure",
+        "Produce about 20.60 units and count revenue of $1,296.23 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 20.603015; demand gives P = 62.914573. Revenue minus the stated total cost is 144.723618, so the rounded economic profit is $144.72. Revenue covers variable cost; operating contributes $844.72 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "65eea27aa465c5d5420b4c3e1cfacedfcb8c59c0e90f7dc154ea3c5393e4dc4f"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-020",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Quartz Dental’s chosen output, ATC=$43.72 and AVC=$27.06. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $680.41; no adjustment pressure",
+        "Economic profit of $680.41; entry pressure",
+        "Zero economic profit; entry pressure",
+        "Shut down because price differs from ATC"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "2ca6096f56ef31a765aceb551c31b4fae67183ba735b4aafe799ff0465ec1b35"
+    },
+    "after": {
+      "q": "Quartz Dental faces P = 124 - 2.3Q, MR = 124 - 4.6Q, and total cost TC = 340 + 24Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $340.00",
+        "Produce about 20.41 units with an economic profit of $680.41; positive profit creates entry pressure",
+        "Produce about 20.41 units and count $1,020.41 as economic profit",
+        "Produce about 20.41 units and count revenue of $1,572.68 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 20.408163; demand gives P = 77.061224. Revenue minus the stated total cost is 680.408163, so the rounded economic profit is $680.41. Revenue covers variable cost; operating contributes $1,020.41 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "154699d657734d46dd50deb9bb176d5485edfa2ee2cd1ff812cb3aaf8f2d22ab"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-023",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Ridge Lodging’s chosen output, ATC=$54.43 and AVC=$23.70. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $322.87; entry pressure",
+        "Economic profit of $322.87; no adjustment pressure",
+        "Zero economic profit; entry pressure",
+        "Shut down because price differs from ATC"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "cbc0a8c98feb45df7bc979b6f6dcf35b09f027184aa71c34bf56ded12e79570c"
+    },
+    "after": {
+      "q": "Ridge Lodging faces P = 112 - 2Q, MR = 112 - 4Q, and total cost TC = 650 + 20Q + 0.175Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Produce about 21.15 units with an economic profit of $322.87; positive profit creates entry pressure",
+        "Shut down and incur the fixed-cost loss of $650.00",
+        "Produce about 21.15 units and count $972.87 as economic profit",
+        "Produce about 21.15 units and count revenue of $1,474.14 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 21.149425; demand gives P = 69.701149. Revenue minus the stated total cost is 322.873563, so the rounded economic profit is $322.87. Revenue covers variable cost; operating contributes $972.87 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "fbf2d342ac0444b6f13063c8ab06202a1c4cc674665e6346ce4dc31be6fb8ecb"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-026",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Solstice Shoes’s chosen output, ATC=$40.21 and AVC=$24.93. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $706.07; no adjustment pressure",
+        "Zero economic profit; entry pressure",
+        "Shut down because price differs from ATC",
+        "Economic profit of $706.07; entry pressure"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "4e38c90896ec9399ebd530c974efbc0dceabbeacae3b496460fb6bcdb9535aec"
+    },
+    "after": {
+      "q": "Solstice Shoes faces P = 120 - 2.2Q, MR = 120 - 4.4Q, and total cost TC = 320 + 22Q + 0.14Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $320.00",
+        "Produce about 20.94 units and count $1,026.07 as economic profit",
+        "Produce about 20.94 units and count revenue of $1,548.14 as economic profit",
+        "Produce about 20.94 units with an economic profit of $706.07; positive profit creates entry pressure"
+      ],
+      "feedback": "MR = MC gives Q = 20.940171; demand gives P = 73.931624. Revenue minus the stated total cost is 706.068376, so the rounded economic profit is $706.07. Revenue covers variable cost; operating contributes $1,026.07 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "f4dbdd8585076bc7a2361395f358c382084d89067d8a1175206b58c40073c1bd"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-029",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Thicket Learning’s chosen output, ATC=$38.03 and AVC=$23.25. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $796.24; no adjustment pressure",
+        "Zero economic profit; entry pressure",
+        "Economic profit of $796.24; entry pressure",
+        "Shut down because price differs from ATC"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "6ee91404d3982b59b8be43fd0ae192e7fb2d3b2c197a45f7e70da979fcca8dbc"
+    },
+    "after": {
+      "q": "Thicket Learning faces P = 128 - 2.5Q, MR = 128 - 5Q, and total cost TC = 300 + 20Q + 0.16Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $300.00",
+        "Produce about 20.30 units and count $1,096.24 as economic profit",
+        "Produce about 20.30 units with an economic profit of $796.24; positive profit creates entry pressure",
+        "Produce about 20.30 units and count revenue of $1,568.19 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 20.300752; demand gives P = 77.248120. Revenue minus the stated total cost is 796.240602, so the rounded economic profit is $796.24. Revenue covers variable cost; operating contributes $1,096.24 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "8d5f484539f92f10c2ebbee199295b2d979b692aae5ef28bae1950e3e3e8d04f"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-032",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Unity Retail’s chosen output, ATC=$44.20 and AVC=$21.61. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $455.27; no adjustment pressure",
+        "Economic profit of $455.27; entry pressure",
+        "Zero economic profit; entry pressure",
+        "Shut down because price differs from ATC"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "46b884c56867c81ff5f0577f48a6179ab8be119fc554f98611ba5f2e2cd4698d"
+    },
+    "after": {
+      "q": "Unity Retail faces P = 106 - 1.9Q, MR = 106 - 3.8Q, and total cost TC = 480 + 18Q + 0.17Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Shut down and incur the fixed-cost loss of $480.00",
+        "Produce about 21.26 units with an economic profit of $455.27; positive profit creates entry pressure",
+        "Produce about 21.26 units and count $935.27 as economic profit",
+        "Produce about 21.26 units and count revenue of $1,394.68 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 21.256039; demand gives P = 65.613527. Revenue minus the stated total cost is 455.265700, so the rounded economic profit is $455.27. Revenue covers variable cost; operating contributes $935.27 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "6cf469a565be50e85548094039aa84d20e312b478d0ca0ab559a379ef217c5b4"
+    }
+  },
+  {
+    "id": "P62H-MCMP-LB-035",
+    "concept": "monopolistic-competition",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "MCMP.2",
+    "type": "legendaryBoss",
+    "primarySkill": "short_run_profit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "D: Restore missing standalone demand, output and cost evidence in a randomly routed profit item; recompute from explicit total cost.",
+    "numericProofs": [],
+    "before": {
+      "q": "At Verdant Spa’s chosen output, ATC=$49.58 and AVC=$25.20. What is the short-run result and adjustment pressure?",
+      "options": [
+        "Economic profit of $504; entry pressure",
+        "Economic profit of $504; no adjustment pressure",
+        "Zero economic profit; entry pressure",
+        "Shut down because price differs from ATC"
+      ],
+      "feedback": "Profit attracts entry; loss encourages exit if the firm continues operating.",
+      "aHash": "6ead40d1cad5cd949ecd1f3bb360c618962c2f2df8bc97fa9ef0e35b848510d2"
+    },
+    "after": {
+      "q": "Verdant Spa faces P = 118 - 2.1Q, MR = 118 - 4.2Q, and total cost TC = 520 + 22Q + 0.15Q². Fixed cost is unavoidable this period. After choosing output, which operating result follows? Keep full precision until rounding profit or loss to cents.",
+      "options": [
+        "Produce about 21.33 units with an economic profit of $504.00; positive profit creates entry pressure",
+        "Shut down and incur the fixed-cost loss of $520.00",
+        "Produce about 21.33 units and count $1,024.00 as economic profit",
+        "Produce about 21.33 units and count revenue of $1,561.60 as economic profit"
+      ],
+      "feedback": "MR = MC gives Q = 21.333333; demand gives P = 73.200000. Revenue minus the stated total cost is 504.000000, so the rounded economic profit is $504.00. Revenue covers variable cost; operating contributes $1,024.00 toward fixed cost. With free entry, positive economic profit attracts rivals; it is not a long-run guarantee.",
+      "aHash": "9b77d93bebda2a99f47a576697d529f2114be12cf220912d30a2e1f93ecc1c17"
+    }
+  },
+  {
+    "id": "P62I-OLI-H-003",
+    "concept": "oligopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "OLI.1",
+    "type": "analysis",
+    "primarySkill": "concentration_ratio",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Numerical defect and ambiguity: Correct the CR4 sum from the actual plotted bars and specify the fringe assumption.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the market-share chart. What is the four-firm concentration ratio?",
+      "options": [
+        "68%",
+        "2112%",
+        "86%",
+        "28%"
+      ],
+      "feedback": "Sum the four largest market shares.",
+      "aHash": "ebcef8262d1a791aceeb88f3d31edf6b7b43a2b677dedab38a1c0175db1f28fe"
+    },
+    "after": {
+      "q": "Refer to market-share chart 3. Other combines smaller firms, each with a share below firm D. What is the four-firm concentration ratio?",
+      "options": [
+        "86%",
+        "68%",
+        "82%",
+        "100%"
+      ],
+      "feedback": "The four largest individual firms are A, B, C and D under the stated fringe assumption. Add their shares; do not count an aggregate of smaller firms as one large firm. Here CR4 = 28 + 22 + 18 + 14 = 82%.",
+      "aHash": "ea28f89741423e0b48cf0a5ec8a581dde223c95c341f43ca469b5c6d6a3672be"
+    }
+  },
+  {
+    "id": "P62I-OLI-H-004",
+    "concept": "oligopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "OLI.1",
+    "type": "analysis",
+    "primarySkill": "concentration_ratio",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Numerical defect and ambiguity: Correct the CR4 sum from the actual plotted bars and specify the fringe assumption.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the market-share chart. What is the four-firm concentration ratio?",
+      "options": [
+        "82%",
+        "3208%",
+        "50%",
+        "92%"
+      ],
+      "feedback": "Sum the four largest market shares.",
+      "aHash": "f2612fd38a99c771903458b4a8a027b39a21665df17844aca5791f4be10e240e"
+    },
+    "after": {
+      "q": "Refer to market-share chart 4. Other combines smaller firms, each with a share below firm D. What is the four-firm concentration ratio?",
+      "options": [
+        "92%",
+        "82%",
+        "100%",
+        "90%"
+      ],
+      "feedback": "The four largest individual firms are A, B, C and D under the stated fringe assumption. Add their shares; do not count an aggregate of smaller firms as one large firm. Here CR4 = 50 + 20 + 12 + 8 = 90%.",
+      "aHash": "883caeb7ca1165a22441d8487203cc8aa9284ad7c0f5664c704f98ecb10849b4"
+    }
+  },
+  {
+    "id": "P62I-OLI-H-005",
+    "concept": "oligopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "OLI.1",
+    "type": "analysis",
+    "primarySkill": "hhi",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct incomplete/ambiguous wording or graph evidence while preserving the assessed skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the market-share chart. What is the HHI?",
+      "feedback": "Square each market share and add the results."
+    },
+    "after": {
+      "q": "Refer to the market-share chart for market 5. For this calculation, assume the bar labeled Other represents one additional firm, not several small firms. What is the HHI?",
+      "feedback": "With Other specified as one firm, HHI = 26² + 24² + 20² + 15² + 15² = 2,102. Square individual firm shares, not an unspecified fringe total. If Other contained several firms, their separate shares would be needed for an exact HHI."
+    }
+  },
+  {
+    "id": "P62I-OLI-H-006",
+    "concept": "oligopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "OLI.1",
+    "type": "analysis",
+    "primarySkill": "hhi",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct incomplete/ambiguous wording or graph evidence while preserving the assessed skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the market-share chart. What is the HHI?",
+      "feedback": "Square each market share and add the results."
+    },
+    "after": {
+      "q": "Refer to the market-share chart for market 6. For this calculation, assume the bar labeled Other represents one additional firm, not several small firms. What is the HHI?",
+      "feedback": "With Other specified as one firm, HHI = 38² + 32² + 12² + 9² + 9² = 2,774. Square individual firm shares, not an unspecified fringe total. If Other contained several firms, their separate shares would be needed for an exact HHI."
+    }
+  },
+  {
+    "id": "P62I-OLI-H-007",
+    "concept": "oligopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "OLI.1",
+    "type": "analysis",
+    "primarySkill": "hhi",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct incomplete/ambiguous wording or graph evidence while preserving the assessed skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the market-share chart. What is the HHI?",
+      "feedback": "Square each market share and add the results."
+    },
+    "after": {
+      "q": "Refer to the market-share chart for market 7. For this calculation, assume the bar labeled Other represents one additional firm, not several small firms. What is the HHI?",
+      "feedback": "With Other specified as one firm, HHI = 31² + 29² + 17² + 13² + 10² = 2,360. Square individual firm shares, not an unspecified fringe total. If Other contained several firms, their separate shares would be needed for an exact HHI."
+    }
+  },
+  {
+    "id": "P62I-OLI-H-008",
+    "concept": "oligopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "OLI.1",
+    "type": "analysis",
+    "primarySkill": "hhi",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct incomplete/ambiguous wording or graph evidence while preserving the assessed skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the market-share chart. What is the HHI?",
+      "feedback": "Square each market share and add the results."
+    },
+    "after": {
+      "q": "Refer to the market-share chart for market 8. For this calculation, assume the bar labeled Other represents one additional firm, not several small firms. What is the HHI?",
+      "feedback": "With Other specified as one firm, HHI = 45² + 18² + 14² + 12² + 11² = 2,810. Square individual firm shares, not an unspecified fringe total. If Other contained several firms, their separate shares would be needed for an exact HHI."
+    }
+  },
+  {
+    "id": "PM8-OLI-H-066",
+    "concept": "oligopoly",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "OLI.6",
+    "type": "application",
+    "primarySkill": "antitrust_rationale",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "B: Concrete application of existing antitrust rationale, without importing statute identity or private-suit doctrine.",
+    "numericProofs": [],
+    "before": {
+      "q": "Four firms independently raise price after the same large increase in a key input cost. What additional evidence would be needed before inferring collusion?",
+      "options": [
+        "A high market price by itself",
+        "Proof that the firms earn positive accounting profit",
+        "A calculation showing consumer demand slopes downward",
+        "Evidence that the firms coordinated rather than merely responding to the common cost shock"
+      ],
+      "feedback": "Parallel pricing can have competitive explanations; an inference of collusion needs evidence that distinguishes coordination from common incentives.",
+      "aHash": "a49cfe66e849f04c2cf907cc054a2004ce629c346f29fa215a7816adfbf01f2c"
+    },
+    "after": {
+      "q": "Four paving contractors independently face the same asphalt-cost increase. An investigator then finds messages in which their managers agree on a common minimum bid for upcoming jobs. Which evidence most directly supports an antitrust concern?",
+      "options": [
+        "The asphalt-cost increase shared by all four firms",
+        "The fact that all four firms may earn positive accounting profit",
+        "The fact that the market has fewer than ten sellers",
+        "The agreement among competing bidders to set a common minimum price"
+      ],
+      "feedback": "A common cost shock can explain similar independent price increases. An agreement among competing bidders to set a minimum bid is direct evidence of coordinated pricing. Concentration or profit alone does not establish such an agreement.",
+      "aHash": "f3ba2fb17e7db6286ef3a9c9daf7c54442a1f75b54c3ee788e048ff22f0287b6"
+    }
+  },
+  {
+    "id": "P62I-OLI-EL-002",
+    "concept": "oligopoly",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "OLI.2",
+    "type": "elite",
+    "primarySkill": "noncooperative_outcome",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Replace a generic claim that outcomes can differ with a matrix-specific incentive and total comparison.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the payoff matrix. How does the Nash equilibrium compare with the joint-payoff-maximizing outcome?",
+      "options": [
+        "Every Nash equilibrium must maximize joint payoff",
+        "The jointly best cell is automatically a dominant strategy",
+        "Equal payoffs are required for equilibrium",
+        "The equilibrium can differ from the cell maximizing joint payoff"
+      ],
+      "feedback": "Compare mutual best responses with the combined-payoff maximum.",
+      "aHash": "555989c9ee4ed15a3e3616d88fc2aaf55b959c0e119f889c579da6fc2f2ae543"
+    },
+    "after": {
+      "q": "Refer to the asymmetric payoff matrix. Compare both firms’ incentives and then sum their profits. Which equilibrium-versus-joint-profit comparison follows?",
+      "options": [
+        "B/Y is the unique pure equilibrium with total 11; A/Y gives the largest total, 15",
+        "A/X is the unique pure equilibrium because its total of 18 is largest",
+        "B/X is the equilibrium because Row’s payoff of 12 is largest",
+        "B/Y is the unique pure equilibrium with total 11; A/X gives the largest total, 18"
+      ],
+      "feedback": "Row prefers B in both columns (12 > 7 and 5 > 2). Column prefers Y in both rows (13 > 11 and 6 > 4). B/Y is therefore the equilibrium, totaling 11. The four totals are 18, 15, 16 and 11, so A/X maximizes joint profit. That comparison does not include consumer welfare.",
+      "aHash": "78f6b831910c6c87101373975a611107582d1a31db345f865f9b7cdc555c46f9"
+    }
+  },
+  {
+    "id": "P62I-OLI-EL-008",
+    "concept": "oligopoly",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "OLI.2",
+    "type": "elite",
+    "primarySkill": "noncooperative_outcome",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Require deviation, dominance, equilibrium and joint-total reasoning from the actual approved matrix.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the payoff matrix. How does the Nash equilibrium compare with the joint-payoff-maximizing outcome?",
+      "options": [
+        "Every Nash equilibrium must maximize joint payoff",
+        "The equilibrium can differ from the cell maximizing joint payoff",
+        "The jointly best cell is automatically a dominant strategy",
+        "Equal payoffs are required for equilibrium"
+      ],
+      "feedback": "Compare mutual best responses with the combined-payoff maximum.",
+      "aHash": "555989c9ee4ed15a3e3616d88fc2aaf55b959c0e119f889c579da6fc2f2ae543"
+    },
+    "after": {
+      "q": "Refer to the matrix with A/X payoffs (18,18). If the firms agree on A/X, what unilateral incentive threatens the agreement and how does the resulting pure equilibrium compare with their joint-profit maximum?",
+      "options": [
+        "Neither firm can improve alone; A/X is the pure equilibrium because its total is 36",
+        "Either firm can raise its own payoff to 23 by deviating alone; B/Y totals 20 instead of A/X’s 36",
+        "Either firm gains only if both deviate; B/Y totals 36 instead of A/X’s 20",
+        "Row benefits from deviating but Column does not; the equilibrium is B/X with total 29"
+      ],
+      "feedback": "Holding the other firm at A or X, a unilateral switch raises the deviator’s payoff from 18 to 23. Each firm also prefers its aggressive action when the other uses it (10 > 6), so B/Y is the unique pure equilibrium. Joint profit is 20 there, versus 36 at A/X; private deviation incentives prevent the joint maximum from being a one-shot equilibrium.",
+      "aHash": "5914e43e4e517f7c9d36a201c6ad5f4342e500a9c63563bb61c8d6ccdb110cfe"
+    }
+  },
+  {
+    "id": "P62I-OLI-L-001",
+    "concept": "oligopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendary",
+    "primarySkill": "nash_equilibrium",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Integrate all pure equilibria, best responses and joint totals without assuming a prisoner’s dilemma or total social welfare.",
+    "numericProofs": [],
+    "before": {
+      "q": "Regional airline analysts review a strategic case. Refer to the payoff matrix. Identify all pure-strategy Nash equilibria.",
+      "options": [
+        "Row B, Column Y",
+        "Row A, Column X",
+        "Row A, Column Y",
+        "Row B, Column X"
+      ],
+      "feedback": "Mutual best responses determine pure-strategy Nash equilibria.",
+      "aHash": "08c8c7e0b917f721ddfe788ee7800f12745f40dde690a0501437099b907cee41"
+    },
+    "after": {
+      "q": "Refer to the payoff matrix for a regional freight pricing review. Payoffs are profits ordered (Row, Column). Comparing both players’ best responses with the sum of their payoffs, which conclusion is supported?",
+      "options": [
+        "B/Y is the only pure equilibrium with total 10; A/X maximizes joint profit at 16",
+        "A/X is the only pure equilibrium with total 16; B/Y maximizes joint profit at 10",
+        "B/Y is the only pure equilibrium with total 10; A/Y maximizes joint profit at 14",
+        "A/X and B/Y are both pure equilibria and both have total 16"
+      ],
+      "feedback": "Row prefers B under either column and Column prefers Y under either row. Their unique pure equilibrium B/Y pays (5,5), total 10. Joint totals at A/X, A/Y, B/X, B/Y are 16,14,14,10, so A/X maximizes joint profit. Consumer surplus is absent, so this is not a demonstrated social optimum.",
+      "aHash": "29f315f6b65c310245c8c2915f289daf89b561aaa5fd1d466477d4d5619ca114"
+    }
+  },
+  {
+    "id": "P62I-OLI-L-002",
+    "concept": "oligopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendary",
+    "primarySkill": "best_response",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical/robustness defect: The original asked for a best response to an unspecified action. Supply both contingencies.",
+    "numericProofs": [],
+    "before": {
+      "q": "Wireless-carrier managers evaluate a rival response. Refer to the payoff matrix. Identify Row’s best response to the specified Column action.",
+      "options": [
+        "A",
+        "B",
+        "Both row strategies regardless of payoffs",
+        "The column strategy with the highest joint payoff"
+      ],
+      "feedback": "Hold Column’s action fixed and compare Row’s payoffs.",
+      "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    "after": {
+      "q": "Wireless-carrier managers evaluate a rival response. Refer to the payoff matrix. Which contingent plan gives Row a best response to each possible Column action? Payoffs are ordered (Row, Column).",
+      "options": [
+        "A against X and A against Y",
+        "B against X and B against Y",
+        "A against X and B against Y",
+        "B against X and A against Y"
+      ],
+      "feedback": "16 exceeds 12 against X; 7 exceeds 4 against Y. Compare Row’s first payoff in each cell within each column. B is strictly dominant for Row.",
+      "aHash": "449bf22ef60012188a3b88b01f52e1fb729550abbe09c4ddb7564e96ae68024d"
+    }
+  },
+  {
+    "id": "P62I-OLI-L-004",
+    "concept": "oligopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendary",
+    "primarySkill": "nash_equilibrium",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Integrate all pure equilibria, best responses and joint totals without assuming a prisoner’s dilemma or total social welfare.",
+    "numericProofs": [],
+    "before": {
+      "q": "Cement suppliers study a concentrated market. Refer to the payoff matrix. Identify all pure-strategy Nash equilibria.",
+      "options": [
+        "Row A, Column X; Row B, Column X",
+        "Row A, Column Y; Row B, Column X",
+        "Row A, Column Y; Row B, Column Y",
+        "Row A, Column X; Row B, Column Y"
+      ],
+      "feedback": "Mutual best responses determine pure-strategy Nash equilibria.",
+      "aHash": "0070e9d0c613cb1750ee62898dc59f310a2a0e4e4d66773bf189cb7a15c6266b"
+    },
+    "after": {
+      "q": "Refer to the payoff matrix for a port-services coordination review. Payoffs are profits ordered (Row, Column). Comparing both players’ best responses with the sum of their payoffs, which conclusion is supported?",
+      "options": [
+        "B/Y is the only pure equilibrium because Column prefers its payoff there",
+        "A/X is the only pure equilibrium because it has the largest joint total",
+        "Neither diagonal cell is an equilibrium because the off-diagonal totals are lower",
+        "A/X and B/Y are pure equilibria; A/X has the larger joint total, 23 versus 21"
+      ],
+      "feedback": "Against X, Row chooses A; against Y, Row chooses B. Against A, Column chooses X; against B, Column chooses Y. Both diagonal cells are equilibria, with joint totals 23 and 21. Neither player has a dominant strategy. The maximum joint-profit cell is also one equilibrium; it need not be the selected outcome.",
+      "aHash": "79506044fdca2ffcb3d03a986497918ba5162ce37d8fa8f7e53748af0ca76d27"
+    }
+  },
+  {
+    "id": "P62I-OLI-L-005",
+    "concept": "oligopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendary",
+    "primarySkill": "best_response",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical/robustness defect: The original asked for a best response to an unspecified action. Supply both contingencies.",
+    "numericProofs": [],
+    "before": {
+      "q": "Chip manufacturers compare strategic payoffs. Refer to the payoff matrix. Identify Row’s best response to the specified Column action.",
+      "options": [
+        "B",
+        "A",
+        "Both row strategies regardless of payoffs",
+        "The column strategy with the highest joint payoff"
+      ],
+      "feedback": "Hold Column’s action fixed and compare Row’s payoffs.",
+      "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    "after": {
+      "q": "Chip manufacturers compare strategic payoffs. Refer to the payoff matrix. Which contingent plan gives Row a best response to each possible Column action? Payoffs are ordered (Row, Column).",
+      "options": [
+        "B against X and B against Y",
+        "A against X and A against Y",
+        "A against X and B against Y",
+        "B against X and A against Y"
+      ],
+      "feedback": "13 exceeds 9 against X; 6 exceeds 4 against Y. Compare Row’s first payoff in each cell within each column. B is strictly dominant for Row.",
+      "aHash": "449bf22ef60012188a3b88b01f52e1fb729550abbe09c4ddb7564e96ae68024d"
+    }
+  },
+  {
+    "id": "P62I-OLI-L-008",
+    "concept": "oligopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendary",
+    "primarySkill": "best_response",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical/robustness defect: The original asked for a best response to an unspecified action. Supply both contingencies.",
+    "numericProofs": [],
+    "before": {
+      "q": "Farm-equipment makers review dealer rivalry. Refer to the payoff matrix. Identify Row’s best response to the specified Column action.",
+      "options": [
+        "A",
+        "Both row strategies regardless of payoffs",
+        "The column strategy with the highest joint payoff",
+        "B"
+      ],
+      "feedback": "Hold Column’s action fixed and compare Row’s payoffs.",
+      "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    "after": {
+      "q": "Farm-equipment makers review dealer rivalry. Refer to the payoff matrix. Which contingent plan gives Row a best response to each possible Column action? Payoffs are ordered (Row, Column).",
+      "options": [
+        "A against X and A against Y",
+        "B against X and A against Y",
+        "B against X and B against Y",
+        "A against X and B against Y"
+      ],
+      "feedback": "8 exceeds 6 against X; 5 exceeds 3 against Y. Compare Row’s first payoff in each cell within each column. The best response changes with Column’s action, so Row has no dominant strategy.",
+      "aHash": "cddad0974b4feb14c2036738dd63f4c333de2ae410c2bf2c651cf02b505222d2"
+    }
+  },
+  {
+    "id": "P62I-OLI-L-010",
+    "concept": "oligopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendary",
+    "primarySkill": "nash_equilibrium",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "F: Integrate all pure equilibria, best responses and joint totals without assuming a prisoner’s dilemma or total social welfare.",
+    "numericProofs": [],
+    "before": {
+      "q": "Streaming services compare subscription strategies. Refer to the payoff matrix. Identify all pure-strategy Nash equilibria.",
+      "options": [
+        "Row A, Column X; Row A, Column Y; Row B, Column X; Row B, Column Y",
+        "No pure-strategy Nash equilibrium",
+        "Row A, Column Y",
+        "Row B, Column X"
+      ],
+      "feedback": "Mutual best responses determine pure-strategy Nash equilibria.",
+      "aHash": "9563fa46c3906ea88bfd34e4f6700a82ef020b4c0e7e76ec43f913618992b935"
+    },
+    "after": {
+      "q": "Refer to the payoff matrix for a rotating delivery-slot game. Payoffs are profits ordered (Row, Column). Comparing both players’ best responses with the sum of their payoffs, which conclusion is supported?",
+      "options": [
+        "There are four pure-strategy equilibria because all four joint totals equal 8",
+        "There is no pure-strategy equilibrium; all four cells tie at a joint total of 8",
+        "A/X is the unique equilibrium because Row receives 6 there",
+        "B/Y is the joint optimum because Column receives 2 there"
+      ],
+      "feedback": "Row chooses A against X and B against Y. Column chooses Y against A and X against B. Every pure cell permits a profitable deviation. Each cell totals 8, so equal joint profit does not create a pure equilibrium. A mixed-strategy equilibrium is distinct from a pure one.",
+      "aHash": "a4c071fad114405c05f06dc7962ca1df8015cb1589dfab82388e29a38684f2c2"
+    }
+  },
+  {
+    "id": "P62I-OLI-L-011",
+    "concept": "oligopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendary",
+    "primarySkill": "best_response",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical/robustness defect: The original asked for a best response to an unspecified action. Supply both contingencies.",
+    "numericProofs": [],
+    "before": {
+      "q": "Steel producers analyze a joint-output problem. Refer to the payoff matrix. Identify Row’s best response to the specified Column action.",
+      "options": [
+        "A",
+        "Both row strategies regardless of payoffs",
+        "B",
+        "The column strategy with the highest joint payoff"
+      ],
+      "feedback": "Hold Column’s action fixed and compare Row’s payoffs.",
+      "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    "after": {
+      "q": "Steel producers analyze a joint-output problem. Refer to the payoff matrix. Which contingent plan gives Row a best response to each possible Column action? Payoffs are ordered (Row, Column).",
+      "options": [
+        "A against X and A against Y",
+        "A against X and B against Y",
+        "B against X and B against Y",
+        "B against X and A against Y"
+      ],
+      "feedback": "15 exceeds 12 against X; 6 exceeds 3 against Y. Compare Row’s first payoff in each cell within each column. B is strictly dominant for Row.",
+      "aHash": "449bf22ef60012188a3b88b01f52e1fb729550abbe09c4ddb7564e96ae68024d"
+    }
+  },
+  {
+    "id": "P62I-OLI-L-014",
+    "concept": "oligopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendary",
+    "primarySkill": "best_response",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical/robustness defect: The original asked for a best response to an unspecified action. Supply both contingencies.",
+    "numericProofs": [],
+    "before": {
+      "q": "Drug manufacturers evaluate entry incentives. Refer to the payoff matrix. Identify Row’s best response to the specified Column action.",
+      "options": [
+        "A",
+        "B",
+        "Both row strategies regardless of payoffs",
+        "The column strategy with the highest joint payoff"
+      ],
+      "feedback": "Hold Column’s action fixed and compare Row’s payoffs.",
+      "aHash": "3e23e8160039594a33894f6564e1b1348bbd7a0088d42c4acb73eeaed59c009d"
+    },
+    "after": {
+      "q": "Drug manufacturers evaluate entry incentives. Refer to the payoff matrix. Which contingent plan gives Row a best response to each possible Column action? Payoffs are ordered (Row, Column).",
+      "options": [
+        "A against X and A against Y",
+        "B against X and B against Y",
+        "A against X and B against Y",
+        "B against X and A against Y"
+      ],
+      "feedback": "14 exceeds 10 against X; 7 exceeds 5 against Y. Compare Row’s first payoff in each cell within each column. B is strictly dominant for Row.",
+      "aHash": "449bf22ef60012188a3b88b01f52e1fb729550abbe09c4ddb7564e96ae68024d"
+    }
+  },
+  {
+    "id": "P62I-OLI-L-017",
+    "concept": "oligopoly",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendary",
+    "primarySkill": "best_response",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical/robustness defect: The original asked for a best response to an unspecified action. Supply both contingencies.",
+    "numericProofs": [],
+    "before": {
+      "q": "Railroads assess a route-level rivalry. Refer to the payoff matrix. Identify Row’s best response to the specified Column action.",
+      "options": [
+        "A",
+        "B",
+        "Both row strategies regardless of payoffs",
+        "The column strategy with the highest joint payoff"
+      ],
+      "feedback": "Hold Column’s action fixed and compare Row’s payoffs.",
+      "aHash": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+    },
+    "after": {
+      "q": "Railroads assess a route-level rivalry. Refer to the payoff matrix. Which contingent plan gives Row a best response to each possible Column action? Payoffs are ordered (Row, Column).",
+      "options": [
+        "A against X and B against Y",
+        "A against X and A against Y",
+        "B against X and A against Y",
+        "B against X and B against Y"
+      ],
+      "feedback": "11 exceeds 2 against X; 7 exceeds 1 against Y. Compare Row’s first payoff in each cell within each column. The best response changes with Column’s action, so Row has no dominant strategy.",
+      "aHash": "cddad0974b4feb14c2036738dd63f4c333de2ae410c2bf2c651cf02b505222d2"
+    }
+  },
+  {
+    "id": "P62I-OLI-LB-009",
+    "concept": "oligopoly",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "OLI.2",
+    "type": "legendaryBoss",
+    "primarySkill": "noncooperative_outcome",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Logical defect: The original keyed a universal difference even though one of this matrix’s two equilibria is the joint optimum.",
+    "numericProofs": [],
+    "before": {
+      "q": "Payment networks evaluate user incentives. Refer to the payoff matrix. Determine the relationship between equilibrium and joint payoff, then interpret the individual-versus-joint incentive conflict.",
+      "options": [
+        "Every Nash equilibrium must maximize joint payoff",
+        "Equal payoffs are required",
+        "The equilibrium and joint optimum differ",
+        "No player has a best response"
+      ],
+      "feedback": "Solve best responses and compare them with combined payoffs.",
+      "aHash": "f95bed7cd9dca178b8199ef74f6c8c5b0e0648a74d74451ced53aa4bd85f2de7"
+    },
+    "after": {
+      "q": "Refer to the payoff matrix. An analyst says that the joint-profit maximum must differ from every Nash equilibrium. Which assessment of this particular game is correct? Payoffs are ordered (Row, Column).",
+      "options": [
+        "B/Y is the only pure equilibrium; A/X maximizes joint profit at 18, so the analyst’s claim holds",
+        "A/X is the only pure equilibrium because its joint profit of 18 exceeds 14 at B/Y",
+        "A/X and B/Y are both pure equilibria; A/X also maximizes joint profit at 18, so the analyst’s claim fails",
+        "Neither diagonal cell is an equilibrium because a joint-profit maximum cannot be individually stable"
+      ],
+      "feedback": "Row prefers A against X and B against Y; Column prefers X against A and Y against B. Both A/X and B/Y are mutual best responses. Their totals are 18 and 14; the off-diagonal totals are 5 each. Thus A/X is both a pure equilibrium and the joint-profit maximum. Neither player has a dominant strategy. Firm profits alone do not determine social welfare.",
+      "aHash": "202293cbd5c939fc23364dd61dfc0f26e591f86d1054e78e62419d85eb9e218c"
+    }
+  }
+]
