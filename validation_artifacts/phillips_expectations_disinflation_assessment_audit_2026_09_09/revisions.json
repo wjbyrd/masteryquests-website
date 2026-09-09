@@ -1,0 +1,338 @@
+{
+  "P52B-S1-LRPC-EL-001": {
+    "q": "Assume a fixed natural rate, no supply shocks, and an unchanged Phillips slope. Each year expected inflation equals the previous year’s actual inflation. Policy keeps unemployment the same fixed distance below natural. What must happen to actual inflation and the inflation surprise?",
+    "options": [
+      "Actual inflation rises each year, but the required positive surprise can remain constant.",
+      "Both actual inflation and the size of the positive surprise must rise each year.",
+      "Actual inflation stays fixed while expected inflation falls each year.",
+      "Actual and expected inflation can remain equal while unemployment stays below natural."
+    ],
+    "feedback": "With an unchanged slope and unemployment gap, the required actual-minus-expected inflation gap is constant. Because expectations catch up to the previous actual rate, actual inflation must rise again by that same amount. Ever-higher inflation does not require ever-larger forecast errors.",
+    "reason": "Correct confusion between rising inflation levels and an increasing inflation-surprise gap.",
+    "numeric": false
+  },
+  "PM2A-LRPC-L-009": {
+    "q": "Policy holds unemployment below natural with successive demand expansions. Expected inflation rises each round. The repeated expansions then stop and actual inflation stabilizes at its higher rate. Which subsequent path is consistent with the natural-rate model?",
+    "options": [
+      "A sequence of upward-shifting SRPCs ending back at natural unemployment with higher inflation",
+      "One unchanged SRPC delivering permanently lower unemployment after every contract renewal",
+      "A leftward LRPC shift caused solely by faster inflation with unchanged labor structure",
+      "A downward SRPC shift ending in deflation and a lower natural unemployment rate"
+    ],
+    "feedback": "Expected inflation adjusts, the SRPC shifts, and unemployment returns toward its natural rate. Return to natural is conditional on ending the repeated effort to maintain a surprise.",
+    "reason": "State the policy change needed for the asserted natural-rate endpoint.",
+    "numeric": false
+  },
+  "PM2A-SRPC-LB-015": {
+    "q": "A government maintains a fixed unemployment gap below the natural rate through successive demand expansions. Expectations adapt to observed inflation, the Phillips slope is unchanged, and no supply or structural shock occurs. Which distinction explains why a permanently higher but stable inflation rate is insufficient?",
+    "options": [
+      "Maintaining the gap requires continuing positive inflation surprises; once inflation stabilizes and expectations catch up, unemployment returns toward natural.",
+      "Maintaining the gap requires only a one-time increase in inflation; expectations adjustment then preserves the lower unemployment.",
+      "Maintaining the gap shifts LRPC left even though the prompt holds labor-market structure fixed.",
+      "Maintaining the gap requires falling actual inflation while expected inflation rises."
+    ],
+    "feedback": "A fixed below-natural unemployment gap requires a positive actual-minus-expected inflation gap. Adaptive expectations catch up to a stable inflation rate, eliminating that gap. Continued surprises and a return to natural are alternative policy paths, not simultaneous endpoints.",
+    "reason": "Resolve the contradiction between a continuously maintained unemployment target and unconditional natural-rate return.",
+    "numeric": false
+  },
+  "ECON-SP-EASY-70": {
+    "q": "Refer to the graph. SRPC2 compared with SRPC1 represents:",
+    "options": [
+      "A higher expected inflation curve",
+      "A lower expected inflation curve",
+      "A lower natural rate only",
+      "A fall in money supply only"
+    ],
+    "feedback": "SRPC2 is above SRPC1, meaning higher expected inflation or a worse tradeoff. With other shifters explicitly excluded, the upward shift identifies higher expected inflation.",
+    "reason": "Exclude other SRPC shifters before identifying expectations from graph position.",
+    "numeric": false
+  },
+  "ECON-SP-MEDIUM-162": {
+    "q": "Refer to the SRPC graph. Assume supply conditions and the natural rate are unchanged; only expected inflation can shift the curve. If the economy moves from c on SRPC1 to the upper point at the same unemployment rate, the likely cause is:",
+    "options": [
+      "Higher expected inflation",
+      "Lower expected inflation",
+      "A fall in actual inflation only",
+      "A lower natural rate"
+    ],
+    "feedback": "At the same unemployment rate, a higher SRPC reflects higher expected inflation or a worse tradeoff. With other shifters explicitly excluded, the upward shift identifies higher expected inflation.",
+    "reason": "Exclude other SRPC shifters before identifying expectations from graph position.",
+    "numeric": false
+  },
+  "PM2A-EXP-LB-013": {
+    "q": "An adverse supply shock raises actual inflation, then wage setters incorporate it into next year’s contracts. What are the two stages?",
+    "options": [
+      "An initial SRPC shift followed by reinforcement through higher expected inflation",
+      "Two movements along one fixed SRPC with no change in the inflation-unemployment relation",
+      "An LRPC shift followed by lower expected inflation when contracts renew",
+      "A demand contraction followed by an SRPC shift downward at each unemployment rate"
+    ],
+    "feedback": "The supply shock first shifts SRPC upward even with expectations unchanged. Incorporating the higher observed inflation into contracts adds an expectations-driven upward shift. This reinforces inflation pressure rather than describing the disappearance of a demand-created unemployment gain.",
+    "reason": "Replace borrowed demand-boom feedback with the actual two-stage adverse-supply mechanism.",
+    "numeric": false
+  },
+  "ECON-SP-LEGENDARY-9008": {
+    "q": "Refer to the LRPC graph. Compare two disinflations from b to the lower sustained inflation rate I1 with supply conditions and natural unemployment unchanged. In one, existing contracts keep expected inflation at I2 initially. In the other, a credible announcement and immediate contract adjustment lower expected inflation to I1 before spending adjusts. Which pair of paths is consistent with these assumptions?",
+    "options": [
+      "The first can pass through d before c; the second can reach c without the same initial unemployment excursion.",
+      "Both must pass through d because credibility cannot change expected inflation before actual inflation falls.",
+      "The first reaches c immediately; the second must shift LRPC right before inflation can fall.",
+      "Both finish at a because lower inflation permanently lowers natural unemployment."
+    ],
+    "feedback": "With old expectations, lower actual inflation moves b to d along SRPC2 before expectations shift the curve down toward c. If expectations and contracts already incorporate I1, the lower SRPC can support c without that initial gap. Credibility alone would not guarantee this outcome without the stated contract adjustment.",
+    "reason": "Specify the timing assumptions and compare delayed versus immediate expectations adjustment instead of forcing one path from credibility alone.",
+    "numeric": false
+  },
+  "PG5-PC-H-016": {
+    "q": "Refer to the graph with points A and B on SRPC0. The natural rate and supply conditions are unchanged, and inflation expectations have not yet adjusted. Consumer spending unexpectedly strengthens. Which interpretation links the demand event to the graph and distinguishes current unemployment from its natural rate?",
+    "options": [
+      "The economy moves A to B along SRPC0; unemployment is 2 percentage points below natural while inflation is 1 percentage point higher.",
+      "The economy shifts to a different SRPC because any change in actual inflation changes expectations immediately.",
+      "LRPC shifts left to 3 percent unemployment because stronger demand permanently improves matching.",
+      "The economy moves B to A because stronger demand reduces inflation and raises unemployment."
+    ],
+    "feedback": "A is (5,2.5) and B is (3,3.5). A demand change with expectations and supply fixed moves along SRPC0. Compare the unemployment coordinate with LRPC at 5, and compare inflation with A; the cyclical gap does not move natural unemployment.",
+    "reason": "Strengthen an existing Hard graph recognition item with supplied AD transfer, coordinate differences and natural-rate distinction.",
+    "numeric": true
+  },
+  "PG5-PC-H-022": {
+    "q": "Refer to the graph with points A and B on SRPC0. The natural rate and supply conditions are unchanged, and inflation expectations have not yet adjusted. Planned investment unexpectedly contracts. Which interpretation links the demand event to the graph and distinguishes current unemployment from its natural rate?",
+    "options": [
+      "The economy moves A to B along SRPC0; unemployment is 2 percentage points above natural while inflation is 1 percentage point lower.",
+      "The economy shifts to a different SRPC because any change in actual inflation changes expectations immediately.",
+      "LRPC shifts right to 7 percent unemployment because weaker demand permanently worsens matching.",
+      "The economy moves B to A because weaker demand raises inflation and reduces unemployment."
+    ],
+    "feedback": "A is (5,2.5) and B is (7,1.5). A demand change with expectations and supply fixed moves along SRPC0. Compare the unemployment coordinate with LRPC at 5, and compare inflation with A; the cyclical gap does not move natural unemployment.",
+    "reason": "Strengthen an existing Hard graph recognition item with supplied AD transfer, coordinate differences and natural-rate distinction.",
+    "numeric": true
+  },
+  "PG5-PC-L-018": {
+    "q": "Refer to the graph with A and B on SRPC0. Initially expected inflation is the inflation rate at A, and the economy is at B. Next period expected inflation equals this period’s actual inflation. Hold the natural rate and supply conditions fixed; each one-point expectations change shifts the SRPC vertically by one point with slope unchanged. Compare keeping unemployment at B’s rate with instead keeping actual inflation at B’s current rate. Which next-period outcome follows?",
+    "options": [
+      "Keeping unemployment at 3 percent requires 4.5 percent inflation; holding inflation at 3.5 percent instead returns unemployment to 5 percent.",
+      "Keeping unemployment at 3 percent requires unchanged 3.5 percent inflation; holding inflation fixed shifts LRPC to 3 percent.",
+      "Keeping unemployment at 3 percent requires 2.5 percent inflation; holding inflation at 3.5 percent raises unemployment to 7 percent.",
+      "Both targets give the same unchanged point B because adaptive expectations cannot shift an SRPC."
+    ],
+    "feedback": "Expectations rise from 2.5 to 3.5, shifting the curve up one point. At unemployment 3, inflation therefore rises from 3.5 to 4.5. Alternatively, actual inflation equal to the new expectation gives natural unemployment at 5. A fixed unemployment target and a fixed inflation target are different continuations.",
+    "reason": "Replace inconsistent fixed-point/return feedback with a two-policy adaptive-expectations comparison.",
+    "numeric": true
+  },
+  "PG5-PC-L-024": {
+    "q": "Refer to the graph with B to the right of A on SRPC0. Initially actual inflation is B’s rate and expected inflation is A’s rate. Each period expectations equal the previous period’s actual inflation; each one-point expectations change shifts SRPC vertically by one point with slope unchanged. Natural unemployment and supply conditions stay fixed. Policy holds unemployment at B’s rate for one additional period, then requires inflation to be nonnegative in the following period. What inflation occurs in the additional period, and what is the highest unemployment rate compatible with that later inflation constraint?",
+    "options": [
+      "Inflation is 0.5 percent, then unemployment can be at most 6 percent.",
+      "Inflation stays 1.5 percent, then unemployment can remain at 7 percent.",
+      "Inflation is 0.5 percent, then unemployment can remain at 7 percent without deflation.",
+      "Inflation is 2.5 percent, then unemployment can be at most 5 percent."
+    ],
+    "feedback": "The plotted slope is (1.5 − 2.5)/(7 − 5) = −0.5. Expectations first fall from 2.5 to 1.5, so holding unemployment at 7 gives inflation 0.5. Next expectations are 0.5; nonnegative inflation requires 0.5 − 0.5 × (unemployment − 5) ≥ 0, or unemployment no greater than 6. Maintaining 7 would instead produce −0.5 percent inflation.",
+    "reason": "Replace fixed-unemployment/return inconsistency with a multi-period adaptive-expectations path and a no-deflation constraint.",
+    "numeric": true
+  },
+  "PG5-PC-L-006": {
+    "q": "Refer to the graph with SRPC0, SRPC1, A and B. Use the model inflation = expected inflation − 0.6 × (unemployment − 5) + supply offset, with all rates in percent and differences in percentage points. At B the separately measured supply offset is +1.1 points. What expected inflation is consistent with B, and could the graph alone identify that expectation if the supply offset were unknown?",
+    "options": [
+      "Expected inflation is 5.5 percent; without the supply-offset measurement, only expected inflation plus the offset is identified.",
+      "Expected inflation is 6 percent; actual inflation equals expectations at every point on an SRPC.",
+      "Expected inflation is 6.6 percent; the supply offset can be ignored even though it is positive.",
+      "Expected inflation is 4.3 percent; both the unemployment gap and the supply offset must be subtracted from actual inflation."
+    ],
+    "feedback": "B has unemployment 6 and actual inflation 6. Thus 6 = expected inflation − 0.6 + 1.1, implying expected inflation 5.5. Without the offset measurement the graph identifies only expected inflation + offset = 6.6. The higher curve does not by itself isolate an expectations change.",
+    "reason": "Deepen a simple upper graph reading into reverse expectations inference and an identification limit.",
+    "numeric": true
+  },
+  "PG5-PC-L-012": {
+    "q": "Refer to the graph with A on SRPC0 and LRPC. Later observations show unemployment at A’s rate but persistently higher inflation. One analyst says the SRPC must have become vertical; another says the same vertical LRPC can coexist with a higher SRPC after contracts adjust. Which additional evidence would support the second interpretation?",
+    "options": [
+      "Wage-setting expectations have risen to match the sustained inflation while labor-market structure and supply conditions are unchanged.",
+      "Inflation rose once, which by itself proves that expectations already adjusted fully.",
+      "Current unemployment equals the natural rate, which requires every SRPC to be vertical.",
+      "The price level is higher, which proves that the natural unemployment rate permanently fell."
+    ],
+    "feedback": "An unchanged natural rate locates the same LRPC. Evidence that expected inflation caught up, with other shifters held fixed, supports a higher SRPC crossing it. Equal unemployment and a higher inflation observation alone do not establish the expectations mechanism.",
+    "reason": "Replace curve-name recognition with a conditional evidence test within the same primary Phillips skill.",
+    "numeric": false
+  },
+  "P52B-S1-LRPC-L-002": {
+    "q": "A matching reform lowers the natural unemployment rate from 6.4 percent to 5.6 percent. At the same time, an unexpected demand expansion lowers actual unemployment to 4.9 percent. Later inflation expectations fully adjust while the reform remains in place and no new surprises occur. Which decomposition separates the durable change from the initial cyclical change?",
+    "options": [
+      "LRPC shifts left by 0.8 percentage point; the initial gap is 0.7 point below the new natural rate, and long-run unemployment returns to 5.6 percent.",
+      "LRPC shifts left by 1.5 percentage points; actual unemployment at 4.9 percent is the new permanent natural rate.",
+      "LRPC stays at 6.4 percent; both the reform and demand expansion are temporary movements along SRPC.",
+      "LRPC shifts to 5.6 percent, but expectations adjustment permanently fixes unemployment at 4.9 percent."
+    ],
+    "feedback": "The structural shift is 6.4 − 5.6 = 0.8 percentage point. Actual unemployment is temporarily 5.6 − 4.9 = 0.7 point below the new natural rate. Once the demand surprise disappears, the long-run anchor is 5.6, not the old 6.4 or temporary 4.9.",
+    "reason": "Add simultaneous structural and demand effects with distinct long-run and cyclical components; no exam demographic scenario is reused.",
+    "numeric": true
+  },
+  "PM2A-EXP-FB-008": {
+    "q": "Under rational expectations, wage setters use available information, including credible policy announcements; forecasts can still be wrong when new information arrives. A credible lower-inflation target changes their forecasts before much demand contraction occurs, but some contracts remain fixed. Which assessment follows?",
+    "options": [
+      "The SRPC can shift downward sooner, reducing the transition cost, while fixed contracts can leave some temporary unemployment increase.",
+      "Rational expectations guarantee exact forecasts and eliminate every unemployment cost even with fixed contracts.",
+      "Expected inflation must wait for past inflation to decline because announcements cannot enter a forecast.",
+      "A credible nominal target permanently shifts LRPC left even when labor-market structure is unchanged."
+    ],
+    "feedback": "Available-information forecasting can incorporate credible policy news before actual inflation falls. It does not imply perfect foresight or instantly flexible contracts. Earlier expectations adjustment can reduce disinflation costs without guaranteeing zero costs.",
+    "reason": "Apply the selected credibility skill at Hard using accurate rational-expectations and contract assumptions.",
+    "numeric": false
+  },
+  "PM2A-EXP-L-002": {
+    "q": "A temporary supply disruption raises inflation while existing contracts still reflect the original expected inflation. Wage setters update forecasts using the observed inflation, but the disruption ends before the new contracts take effect. Expected inflation nevertheless remains above its original level. With natural unemployment unchanged, what can be concluded about the final SRPC relative to its original position and its position during the disruption?",
+    "options": [
+      "It remains above its original position, but its position relative to the disruption-period curve depends on the expectations rise versus the removed supply offset.",
+      "It must return exactly to its original position because the physical disruption ended.",
+      "It must lie above the disruption-period curve because any expectations rise exceeds any removed supply offset.",
+      "It must lie below the original curve because the original supply shock was temporary."
+    ],
+    "feedback": "The original curve has neither the supply offset nor the higher expectation. The final curve retains only the expectation increase, so it is above the original. Comparing it with the disruption-period curve requires the two offset magnitudes. Observed inflation alone does not identify their relative sizes.",
+    "reason": "Deepen repeated expectations recognition into supply reversal and residual expectations identification.",
+    "numeric": false
+  },
+  "ECON-SP-LEGENDARY-9047": {
+    "q": "Refer to the LRPC graph. The economy has moved b to d during disinflation. Inflation is then held at I1, the natural rate stays U2, and the adverse-supply offset is unchanged. A forecast shows unemployment returning to U2. Which evidence is necessary to reconcile this forecast with the diagram?",
+    "options": [
+      "Expected inflation must fall enough to place an SRPC through c; contraction along unchanged SRPC2 would leave unemployment at d.",
+      "Expected inflation must rise enough to place an SRPC above SRPC2 while actual inflation remains I1.",
+      "The return requires moving from d to b along unchanged SRPC2 while inflation remains I1.",
+      "The return requires LRPC to shift right to U3 even though the natural rate stays U2."
+    ],
+    "feedback": "At I1 the original SRPC2 locates d, not c. With natural unemployment and the supply offset fixed, a lower expected-inflation schedule is needed to reach c at U2. A forecast of unemployment recovery is therefore conditional on the expected-inflation adjustment, not just continued contraction.",
+    "reason": "Make a repeated graph endpoint into a forecast-consistency test with confounding shifters excluded.",
+    "numeric": false
+  },
+  "PM2A-SAC-H-010": {
+    "q": "Potential GDP remains $500 billion in each of the three years. Output is 2% below potential for one year and 1% below for two more years while inflation falls 4 points. What is the loss per inflation point?",
+    "options": [
+      "$5 billion per inflation point",
+      "$2.5 billion per inflation point",
+      "$10 billion per inflation point",
+      "$20 billion per inflation point"
+    ],
+    "feedback": "The cumulative loss is $10 billion + $5 billion + $5 billion = $20 billion; $20 billion ÷ 4 = $5 billion per inflation point.",
+    "reason": "Clarify the cumulative-loss, below-potential or constant-output benchmark needed for numerical interpretation.",
+    "numeric": true
+  },
+  "PM2A-SAC-LB-025": {
+    "q": "Potential output remains $800 billion each year. Actual output is below potential by 1.5% for two years and 0.5% for one year while inflation falls 2.8 points. What is cumulative loss per inflation point?",
+    "options": [
+      "$10 billion per inflation point",
+      "$4 billion per inflation point",
+      "$14 billion per inflation point",
+      "$28 billion per inflation point"
+    ],
+    "feedback": "The cumulative loss is 3.5% of $800 billion = $28 billion. Dividing by 2.8 inflation points gives $10 billion per point.",
+    "reason": "Clarify the cumulative-loss, below-potential or constant-output benchmark needed for numerical interpretation.",
+    "numeric": true
+  },
+  "ECON-SP-ELITE-331": {
+    "q": "If cumulative output loss is 14 percent of one year’s potential GDP and inflation falls by 4 percentage points, the sacrifice ratio is:",
+    "options": [
+      "3.5% of one year’s output per inflation point",
+      "4% of one year’s output per inflation point",
+      "10% of one year’s output per inflation point",
+      "18% of one year’s output per inflation point"
+    ],
+    "feedback": "Divide the 14% cumulative output loss by the 4-percentage-point inflation reduction: 14 ÷ 4 = 3.5% of one year’s output per point.",
+    "reason": "Clarify the cumulative-loss, below-potential or constant-output benchmark needed for numerical interpretation.",
+    "numeric": true
+  },
+  "PM2A-SAC-FB-020": {
+    "q": "Use the sum of annual percentage output shortfalls as the cumulative-loss convention. Annual output gaps are −1%, −2%, and −1%; inflation falls from 7% to 5%. What is the ratio?",
+    "options": [
+      "2% of one year’s output per inflation point",
+      "6% of output per inflation point",
+      "0.5% of output per inflation point",
+      "3% of output per inflation point"
+    ],
+    "feedback": "Add output-gap losses across the disinflation period, then divide by the percentage-point inflation reduction.",
+    "reason": "Clarify the cumulative-loss, below-potential or constant-output benchmark needed for numerical interpretation.",
+    "numeric": true
+  },
+  "ECON-SP-LEGENDARY-9020": {
+    "q": "A disinflation lowers inflation from 10 percent to 6 percent. Cumulative output loss is 18 percent of one year’s potential GDP, of which 11 percent occurred before the final year. An analyst reports a sacrifice ratio using only the final-year loss. Which audit correction is needed?",
+    "options": [
+      "Use all 18 percent: the ratio is 4.5; using only the final year would understate it as 1.75.",
+      "Use only 7 percent: the ratio is 1.75 because earlier output losses are already over.",
+      "Use the final inflation rate: the ratio is 3 because the target is 6 percent.",
+      "Add initial and final inflation: the ratio is 1.125 because the full window contains both rates."
+    ],
+    "feedback": "The inflation reduction is 4 percentage points. Cumulative loss gives 18/4 = 4.5. Final-year loss is 18 − 11 = 7, giving 7/4 = 1.75 if earlier losses are wrongly omitted. Returning toward potential does not erase earlier lost production.",
+    "reason": "Replace one division and an unsupported costly label with a time-window audit and cumulative-loss reconciliation.",
+    "numeric": true
+  },
+  "ECON-SP-LEGENDARY-9049": {
+    "q": "A disinflation lowers inflation from 9 percent to 5 percent with cumulative output loss of 10 percent of one year’s potential GDP. A second plan is projected to lower inflation by only 2.5 percentage points with loss of 7 percent on the same output benchmark. Which comparison avoids confusing a smaller total loss with a lower loss per inflation point?",
+    "options": [
+      "The completed plan has ratio 2.5 versus 2.8 for the second; the second has less total loss but a higher loss per point.",
+      "The second plan has the lower ratio because 7 is less than 10, regardless of the inflation reductions.",
+      "Both have ratio 2.5 because the second plan’s inflation reduction is its denominator and also its ratio.",
+      "The completed plan has ratio 0.4 and therefore no output cost; the second has ratio 2.8."
+    ],
+    "feedback": "The completed reduction is 9 − 5 = 4 points, so 10/4 = 2.5. The second ratio is 7/2.5 = 2.8. A lower cumulative cost can accompany a higher per-point cost when the inflation reductions differ; neither statistic alone proves a universally better policy.",
+    "reason": "Remove the unbenchmarked not-extreme judgment and compare total versus normalized costs.",
+    "numeric": true
+  },
+  "ECON-SP-LEGENDARY-9021": {
+    "q": "A plan must reduce inflation by 5 percentage points with cumulative output loss no greater than 14 percent of one year’s potential GDP. Its first stage has already reduced inflation by 2 percentage points at a cumulative loss of 7 percent. What maximum sacrifice ratio can the remaining stage have if the full plan is to meet both targets?",
+    "options": [
+      "About 2.33 percent of one year’s output per remaining inflation point.",
+      "2.8 percent of one year’s output per remaining inflation point.",
+      "3.5 percent of one year’s output per remaining inflation point.",
+      "7 percent of one year’s output per remaining inflation point."
+    ],
+    "feedback": "There are 3 inflation points and 7 percent of output-loss allowance remaining. The remaining-stage ceiling is 7/3 = 2.333..., about 2.33. Applying the overall allowance ratio 14/5 = 2.8 to the remaining stage would exceed the total loss limit because the first stage used more loss per point.",
+    "reason": "Deepen forward multiplication into an inverse remaining-stage constraint.",
+    "numeric": true
+  },
+  "ECON-SP-LEGENDARY-9050": {
+    "q": "Two stages jointly reduce inflation by 6 percentage points with a combined sacrifice ratio of 1.75. The first stage loses 3 percent of one year’s potential GDP while reducing inflation by 2 percentage points. Use the same output benchmark for both stages. What is the second-stage ratio, and how does it compare with the first?",
+    "options": [
+      "1.875 for the second versus 1.5 for the first; the second has the higher loss per point.",
+      "1.75 for both stages, because a combined ratio must equal each stage’s ratio.",
+      "3.75 for the second versus 1.5 for the first, using only 2 remaining inflation points.",
+      "0.533 for the second versus 0.667 for the first, using inflation reduction divided by loss."
+    ],
+    "feedback": "Total loss is 6 × 1.75 = 10.5 percent. The second stage accounts for 10.5 − 3 = 7.5 percent loss and 6 − 2 = 4 inflation points, giving 1.875. The first-stage ratio is 3/2 = 1.5. The combined ratio is weighted by the reductions, not a mandate for equal stage ratios.",
+    "reason": "Replace simple multiplication with a reverse stage decomposition and ratio comparison.",
+    "numeric": true
+  },
+  "ECON-SP-HARD-246": {
+    "q": "In the standard expectations-augmented Phillips model with no supply-shock offset, actual inflation equals expected inflation. What does the equation imply about unemployment?",
+    "options": [
+      "At the natural rate",
+      "Below the natural rate",
+      "Above the natural rate",
+      "Equal to zero"
+    ],
+    "feedback": "With no inflation surprise, unemployment equals the natural rate. The no-offset assumption matters: an independent supply shock can also affect the relationship.",
+    "reason": "State the zero-supply-offset condition needed to infer natural unemployment from zero inflation surprise.",
+    "numeric": false
+  },
+  "ECON-SP-HARD-263": {
+    "q": "Initially actual inflation equals expected inflation and unemployment is at its natural rate. Supply conditions and the natural rate stay unchanged. If expected inflation rises while actual inflation is held at its original rate, what happens to unemployment?",
+    "options": [
+      "Rise above natural",
+      "Fall below natural",
+      "Stay zero",
+      "Become inflation"
+    ],
+    "feedback": "Higher expected inflation shifts SRPC up, so unchanged actual inflation corresponds to higher unemployment. The stated initial equality makes the new inflation surprise negative.",
+    "reason": "Supply the missing initial position before asserting that an expectations change crosses the natural unemployment rate.",
+    "numeric": false
+  },
+  "ECON-SP-HARD-264": {
+    "q": "Initially actual inflation equals expected inflation and unemployment is at its natural rate. Supply conditions and the natural rate stay unchanged. If expected inflation falls while actual inflation is held at its original rate, what happens to unemployment?",
+    "options": [
+      "Fall below natural",
+      "Rise above natural",
+      "Stay at zero",
+      "Equal the price level"
+    ],
+    "feedback": "Lower expected inflation shifts SRPC down, so the same actual inflation can mean lower unemployment. The stated initial equality makes the new inflation surprise positive.",
+    "reason": "Supply the missing initial position before asserting that an expectations change crosses the natural unemployment rate.",
+    "numeric": false
+  }
+}

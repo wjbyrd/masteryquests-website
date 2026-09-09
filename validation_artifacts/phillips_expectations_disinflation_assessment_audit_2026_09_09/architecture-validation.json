@@ -1,0 +1,2010 @@
+{
+  "all262RecordsStructurallyChecked": true,
+  "all144UnselectedDefinitionsUnchanged": true,
+  "allIdsDifficultyObjectivesSkillsTagsProvenanceAndAliasesPreserved": true,
+  "orderedPoolsRepairBridgeCheckpointsRetestAndEligibilityPreserved": true,
+  "reviewRoutesPreserved": true,
+  "reviewAssets": [
+    {
+      "code": "MACRO-37",
+      "title": "Short-Run Phillips Curve",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-37.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-37.pdf",
+      "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25",
+      "sizeBytes": 565287,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-38",
+      "title": "Long-Run Phillips Curve",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-38.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-38.pdf",
+      "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731",
+      "sizeBytes": 642014,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-39",
+      "title": "Phillips-Curve Expectations",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-39.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-39.pdf",
+      "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4",
+      "sizeBytes": 638816,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-40",
+      "title": "Disinflation and Policy",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-40.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-40.pdf",
+      "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e",
+      "sizeBytes": 638729,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-41",
+      "title": "Sacrifice Ratio",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-41.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-41.pdf",
+      "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7",
+      "sizeBytes": 353540,
+      "bytesVerified": true
+    }
+  ],
+  "reviewRuntimeIndex": {
+    "schemaVersion": "2.1.0",
+    "sourceManifestSchemaVersion": "8.0.0-composer-integration",
+    "delivery": "central-https",
+    "baseUrl": "https://masteryquests.org/concept-reviews/",
+    "selectedConceptIds": [
+      "disinflation-and-policy",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "sacrifice-ratio",
+      "short-run-phillips-curve"
+    ],
+    "diagnosticConceptIds": [
+      "disinflation-and-policy",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "sacrifice-ratio",
+      "short-run-phillips-curve"
+    ],
+    "reviewCodes": [
+      "MACRO-37",
+      "MACRO-38",
+      "MACRO-39",
+      "MACRO-40",
+      "MACRO-41"
+    ],
+    "assetInventory": [
+      {
+        "code": "MACRO-37",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-37.pdf",
+        "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25",
+        "sizeBytes": 565287
+      },
+      {
+        "code": "MACRO-38",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-38.pdf",
+        "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731",
+        "sizeBytes": 642014
+      },
+      {
+        "code": "MACRO-39",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-39.pdf",
+        "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4",
+        "sizeBytes": 638816
+      },
+      {
+        "code": "MACRO-40",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-40.pdf",
+        "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e",
+        "sizeBytes": 638729
+      },
+      {
+        "code": "MACRO-41",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-41.pdf",
+        "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7",
+        "sizeBytes": 353540
+      }
+    ],
+    "concepts": {
+      "disinflation-and-policy": {
+        "title": "Disinflation and Policy",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-40"
+        ],
+        "primaryReviewCode": "MACRO-40",
+        "assets": [
+          {
+            "code": "MACRO-40",
+            "title": "Disinflation and Policy",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-40.pdf",
+            "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e"
+          }
+        ]
+      },
+      "long-run-phillips-curve": {
+        "title": "Long-Run Phillips Curve",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-38"
+        ],
+        "primaryReviewCode": "MACRO-38",
+        "assets": [
+          {
+            "code": "MACRO-38",
+            "title": "Long-Run Phillips Curve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-38.pdf",
+            "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731"
+          }
+        ]
+      },
+      "phillips-curve-expectations": {
+        "title": "Phillips-Curve Expectations",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-39"
+        ],
+        "primaryReviewCode": "MACRO-39",
+        "assets": [
+          {
+            "code": "MACRO-39",
+            "title": "Phillips-Curve Expectations",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-39.pdf",
+            "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4"
+          }
+        ]
+      },
+      "sacrifice-ratio": {
+        "title": "Sacrifice Ratio",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-41"
+        ],
+        "primaryReviewCode": "MACRO-41",
+        "assets": [
+          {
+            "code": "MACRO-41",
+            "title": "Sacrifice Ratio",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-41.pdf",
+            "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7"
+          }
+        ]
+      },
+      "short-run-phillips-curve": {
+        "title": "Short-Run Phillips Curve",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-37"
+        ],
+        "primaryReviewCode": "MACRO-37",
+        "assets": [
+          {
+            "code": "MACRO-37",
+            "title": "Short-Run Phillips Curve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-37.pdf",
+            "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25"
+          }
+        ]
+      }
+    },
+    "reviews": {
+      "disinflation-and-policy": {
+        "reviewCodes": [
+          "MACRO-40"
+        ],
+        "primaryReviewCode": "MACRO-40",
+        "assets": [
+          {
+            "code": "MACRO-40",
+            "title": "Disinflation and Policy",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-40.pdf",
+            "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e"
+          }
+        ],
+        "code": "MACRO-40",
+        "title": "Disinflation and Policy",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-40.pdf"
+      },
+      "long-run-phillips-curve": {
+        "reviewCodes": [
+          "MACRO-38"
+        ],
+        "primaryReviewCode": "MACRO-38",
+        "assets": [
+          {
+            "code": "MACRO-38",
+            "title": "Long-Run Phillips Curve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-38.pdf",
+            "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731"
+          }
+        ],
+        "code": "MACRO-38",
+        "title": "Long-Run Phillips Curve",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-38.pdf"
+      },
+      "phillips-curve-expectations": {
+        "reviewCodes": [
+          "MACRO-39"
+        ],
+        "primaryReviewCode": "MACRO-39",
+        "assets": [
+          {
+            "code": "MACRO-39",
+            "title": "Phillips-Curve Expectations",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-39.pdf",
+            "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4"
+          }
+        ],
+        "code": "MACRO-39",
+        "title": "Phillips-Curve Expectations",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-39.pdf"
+      },
+      "sacrifice-ratio": {
+        "reviewCodes": [
+          "MACRO-41"
+        ],
+        "primaryReviewCode": "MACRO-41",
+        "assets": [
+          {
+            "code": "MACRO-41",
+            "title": "Sacrifice Ratio",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-41.pdf",
+            "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7"
+          }
+        ],
+        "code": "MACRO-41",
+        "title": "Sacrifice Ratio",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-41.pdf"
+      },
+      "short-run-phillips-curve": {
+        "reviewCodes": [
+          "MACRO-37"
+        ],
+        "primaryReviewCode": "MACRO-37",
+        "assets": [
+          {
+            "code": "MACRO-37",
+            "title": "Short-Run Phillips Curve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-37.pdf",
+            "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25"
+          }
+        ],
+        "code": "MACRO-37",
+        "title": "Short-Run Phillips Curve",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-37.pdf"
+      }
+    },
+    "evidenceRoutes": {
+      "questionToConceptIds": {
+        "ECON-SP-EASY-59": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-60": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-61": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-62": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-63": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-66": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-67": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-76": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-E-007": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-E-013": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-E-019": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-153": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-154": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-155": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-160": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-008": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-014": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-015": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-020": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-021": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-M-001": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-M-002": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-238": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-241": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-255": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-258": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-268": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-H-010": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-H-016": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-H-022": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-H-003": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-ELITE-323": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-ELITE-348": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-ELITE-351": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-LEGENDARY-9007": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-LEGENDARY-9046": [
+          "short-run-phillips-curve"
+        ],
+        "P52B-S2-SRPC-L-001": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-L-012": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-L-004": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-L-005": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-L-006": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUMBOSS-3000": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUMBOSS-3001": [
+          "short-run-phillips-curve"
+        ],
+        "P52B-S2-SRPC-B2-001": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-EB-007": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-EB-008": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-EB-009": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-FB-010": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-FB-011": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-FB-012": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-LB-013": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-LB-014": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-LB-015": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-DEFINE-PHILLIPS-CURVE-5048": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MOVE-ALONG-SRPC-5050": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-NATURAL-RATE-HYPOTHESIS-5052": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-READ-PC-AXES-5049": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-READ-PC-POINTS-5091": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-DEFINE-PHILLIPS-CURVE-6039": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MOVE-ALONG-SRPC-6041": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-NATURAL-RATE-HYPOTHESIS-6043": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-READ-PC-AXES-6040": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-64": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-65": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-71": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-72": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-E-001": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-E-002": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-159": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-M-001": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-M-003": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-M-009": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-M-003": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-M-004": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-M-005": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-M-006": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-239": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-246": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-259": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-260": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-H-007": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-H-008": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-ELITE-325": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-EL-001": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-X-005": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-X-011": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-X-017": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-X-023": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-L-001": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-L-002": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-L-003": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-L-009": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-L-010": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-L-011": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUMBOSS-3003": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUMBOSS-3004": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-B3-001": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-EB-012": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-EB-013": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-EB-014": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-FB-016": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-FB-017": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-MB-015": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-LB-018": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-LB-019": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-LB-020": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-IDENTIFY-LRPC-5051": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-IDENTIFY-NATURAL-UNEMPLOYMENT-5077": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-IDENTIFY-LRPC-6042": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-BR-021": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-BR-022": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-68": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-69": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-70": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-73": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-74": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-E-001": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-E-001": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-156": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-158": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-161": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-162": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-163": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-164": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-M-002": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-236": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-240": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-242": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-243": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-244": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-245": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-257": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-263": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-264": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-265": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-267": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-H-004": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-ELITE-326": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-ELITE-327": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-ELITE-328": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-ELITE-350": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-LEGENDARY-9009": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-LEGENDARY-9018": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-LEGENDARY-9048": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-L-006": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-L-018": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-L-024": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-L-002": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-L-003": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-L-004": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUMBOSS-3006": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUMBOSS-3007": [
+          "phillips-curve-expectations"
+        ],
+        "P52B-S2-PCEXP-B2-001": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-EB-005": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-EB-006": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-EB-007": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-FB-008": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-FB-009": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-FB-010": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-LB-011": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-LB-012": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-LB-013": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EXPECTED-INFLATION-SHIFT-5053": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-SUPPLY-SHOCK-PC-SHIFT-5055": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-5054": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EXPECTED-INFLATION-SHIFT-6044": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-SUPPLY-SHOCK-PC-SHIFT-6046": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-6045": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-75": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-E-001": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-E-002": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-E-003": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-E-001": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-E-002": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MEDIUM-157": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MEDIUM-165": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-M-003": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-M-004": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-M-005": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-M-006": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-HARD-237": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-HARD-247": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-HARD-256": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-H-001": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-H-007": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-H-008": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-ELITE-324": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-ELITE-349": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-LEGENDARY-9008": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-LEGENDARY-9047": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-L-001": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-L-009": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-L-010": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-L-011": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MEDIUMBOSS-3009": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MEDIUMBOSS-3010": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-B3-001": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-EB-012": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-EB-013": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-EB-014": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-FB-016": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-FB-017": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-MB-015": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-LB-018": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-LB-019": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-LB-020": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-5057": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MONETARY-POLICY-PC-TRANSITION-5056": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-6048": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MONETARY-POLICY-PC-TRANSITION-6047": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-BR-021": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-EASY-77": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-EASY-79": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-E-001": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-E-002": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-E-003": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-E-004": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-MEDIUM-166": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-005": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-006": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-007": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-008": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-009": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-HARD-248": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-HARD-266": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-H-010": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-H-011": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-H-012": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-H-013": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-329": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-330": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-331": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-354": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-355": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-LEGENDARY-9020": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-LEGENDARY-9021": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-LEGENDARY-9049": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-LEGENDARY-9050": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-L-014": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-L-015": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-EASY-78": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-HARD-249": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-HARD-250": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-MEDIUM-167": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-MEDIUMBOSS-3012": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-MEDIUMBOSS-3013": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-EB-016": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-EB-017": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-EB-018": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-FB-020": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-FB-021": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-FB-022": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-MB-019": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-LB-023": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-LB-024": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-LB-025": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-CALCULATE-SACRIFICE-RATIO-5059": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-DEFINE-SACRIFICE-RATIO-5058": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-INTERPRET-SACRIFICE-RATIO-5060": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-CALCULATE-SACRIFICE-RATIO-6050": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-DEFINE-SACRIFICE-RATIO-6049": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-INTERPRET-SACRIFICE-RATIO-6051": [
+          "sacrifice-ratio"
+        ]
+      },
+      "tagToConceptIds": {
+        "phillips_curve": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "policy_phillips": [
+          "short-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "natural_rate_hypothesis": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "short_run_phillips_curve": [
+          "short-run-phillips-curve"
+        ],
+        "lrpc": [
+          "long-run-phillips-curve"
+        ],
+        "long_run_phillips_curve": [
+          "long-run-phillips-curve"
+        ],
+        "expectations": [
+          "phillips-curve-expectations"
+        ],
+        "supply_shock_pc": [
+          "phillips-curve-expectations"
+        ],
+        "phillips_curve_expectations": [
+          "phillips-curve-expectations"
+        ],
+        "disinflation": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_and_policy": [
+          "disinflation-and-policy"
+        ],
+        "sacrifice_ratio": [
+          "sacrifice-ratio"
+        ]
+      },
+      "repairSkillToConceptIds": {
+        "define_phillips_curve": [
+          "short-run-phillips-curve"
+        ],
+        "read_pc_axes": [
+          "short-run-phillips-curve"
+        ],
+        "move_along_srpc": [
+          "short-run-phillips-curve"
+        ],
+        "read_pc_points": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "natural_rate_hypothesis": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "movement_vs_shift_srpc": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "srpc_movement": [
+          "short-run-phillips-curve"
+        ],
+        "srpc_shift": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "srpc_relation": [
+          "short-run-phillips-curve"
+        ],
+        "trace_expectations_adjustment": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "long_run_adjustment": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "expectations_adjustment": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "lrpc_vertical": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "disinflation_policy": [
+          "short-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "identify_lrpc": [
+          "long-run-phillips-curve"
+        ],
+        "identify_natural_unemployment": [
+          "long-run-phillips-curve"
+        ],
+        "long_run_inflation_neutrality": [
+          "long-run-phillips-curve"
+        ],
+        "natural_rate_shift": [
+          "long-run-phillips-curve"
+        ],
+        "accelerationist_hypothesis": [
+          "long-run-phillips-curve"
+        ],
+        "vertical_lrpc_comparison": [
+          "long-run-phillips-curve"
+        ],
+        "lrpc_natural_rate_shift": [
+          "long-run-phillips-curve"
+        ],
+        "expectations_long_run_return": [
+          "long-run-phillips-curve"
+        ],
+        "sacrifice_ratio_meaning": [
+          "long-run-phillips-curve",
+          "sacrifice-ratio"
+        ],
+        "expected_inflation_shift": [
+          "phillips-curve-expectations"
+        ],
+        "supply_shock_pc_shift": [
+          "phillips-curve-expectations"
+        ],
+        "credibility_expectations": [
+          "phillips-curve-expectations",
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "disinflation_unemployment_cost": [
+          "disinflation-and-policy"
+        ],
+        "define_disinflation": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_credibility": [
+          "disinflation-and-policy"
+        ],
+        "sacrifice_ratio_definition": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_definition": [
+          "disinflation-and-policy"
+        ],
+        "monetary_policy_pc_transition": [
+          "disinflation-and-policy"
+        ],
+        "policy_path": [
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "sacrifice_ratio_calculation": [
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "define_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ],
+        "interpret_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ],
+        "sacrifice_ratio_denominator": [
+          "sacrifice-ratio"
+        ],
+        "calculate_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ]
+      },
+      "primarySkillToConceptIds": {
+        "define_phillips_curve": [
+          "short-run-phillips-curve"
+        ],
+        "read_pc_axes": [
+          "short-run-phillips-curve"
+        ],
+        "move_along_srpc": [
+          "short-run-phillips-curve"
+        ],
+        "read_pc_points": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "natural_rate_hypothesis": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "movement_vs_shift_srpc": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "srpc_movement": [
+          "short-run-phillips-curve"
+        ],
+        "srpc_shift": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "srpc_relation": [
+          "short-run-phillips-curve"
+        ],
+        "trace_expectations_adjustment": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "long_run_adjustment": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "expectations_adjustment": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "lrpc_vertical": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "disinflation_policy": [
+          "short-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "identify_lrpc": [
+          "long-run-phillips-curve"
+        ],
+        "identify_natural_unemployment": [
+          "long-run-phillips-curve"
+        ],
+        "long_run_inflation_neutrality": [
+          "long-run-phillips-curve"
+        ],
+        "natural_rate_shift": [
+          "long-run-phillips-curve"
+        ],
+        "accelerationist_hypothesis": [
+          "long-run-phillips-curve"
+        ],
+        "vertical_lrpc_comparison": [
+          "long-run-phillips-curve"
+        ],
+        "lrpc_natural_rate_shift": [
+          "long-run-phillips-curve"
+        ],
+        "expectations_long_run_return": [
+          "long-run-phillips-curve"
+        ],
+        "sacrifice_ratio_meaning": [
+          "long-run-phillips-curve",
+          "sacrifice-ratio"
+        ],
+        "expected_inflation_shift": [
+          "phillips-curve-expectations"
+        ],
+        "supply_shock_pc_shift": [
+          "phillips-curve-expectations"
+        ],
+        "credibility_expectations": [
+          "phillips-curve-expectations",
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "disinflation_unemployment_cost": [
+          "disinflation-and-policy"
+        ],
+        "define_disinflation": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_credibility": [
+          "disinflation-and-policy"
+        ],
+        "sacrifice_ratio_definition": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_definition": [
+          "disinflation-and-policy"
+        ],
+        "monetary_policy_pc_transition": [
+          "disinflation-and-policy"
+        ],
+        "policy_path": [
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "sacrifice_ratio_calculation": [
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "define_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ],
+        "interpret_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ],
+        "sacrifice_ratio_denominator": [
+          "sacrifice-ratio"
+        ],
+        "calculate_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ]
+      },
+      "secondarySkillToConceptIds": {
+        "long-run-phillips-curve": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "phillips-curve-expectations": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "short_run_tradeoff": [
+          "short-run-phillips-curve"
+        ],
+        "short-run-phillips-curve": [
+          "long-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "natural_unemployment": [
+          "long-run-phillips-curve"
+        ],
+        "read_pc_points": [
+          "long-run-phillips-curve"
+        ],
+        "srpc_shift": [
+          "phillips-curve-expectations"
+        ],
+        "lrpc": [
+          "phillips-curve-expectations",
+          "disinflation-and-policy"
+        ],
+        "disinflation": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_cost": [
+          "sacrifice-ratio"
+        ]
+      },
+      "objectiveToConceptIds": {
+        "LO36.1": [
+          "short-run-phillips-curve"
+        ],
+        "MACRO.M2A": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations",
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "36.1": [
+          "short-run-phillips-curve"
+        ],
+        "LO36.2": [
+          "long-run-phillips-curve"
+        ],
+        "36.2": [
+          "long-run-phillips-curve"
+        ],
+        "LO36.3": [
+          "phillips-curve-expectations"
+        ],
+        "36.3": [
+          "phillips-curve-expectations"
+        ],
+        "LO36.4": [
+          "disinflation-and-policy"
+        ],
+        "36.4": [
+          "disinflation-and-policy"
+        ],
+        "LO36.5": [
+          "sacrifice-ratio"
+        ],
+        "36.5": [
+          "sacrifice-ratio"
+        ]
+      }
+    },
+    "bundleRoutes": {}
+  },
+  "reviewGlobalWarnings": [
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "consumer-and-producer-surplus"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "costs-of-production"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "elasticity"
+    },
+    {
+      "type": "diagnosable-no-sheet-meta",
+      "canonicalConceptId": "integrated-economic-analysis"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "international-trade-and-trade-policy"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopolistic-competition"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "oligopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "perfect-competition"
+    },
+    {
+      "type": "orphan-review",
+      "reviewCode": "MICRO-03"
+    },
+    {
+      "type": "unreachable-review",
+      "reviewCode": "MICRO-03"
+    }
+  ],
+  "parentPresetValidation": {
+    "counts": {
+      "easy": 94,
+      "medium": 109,
+      "hard": 105,
+      "elite": 76,
+      "legendary": 94,
+      "easyBoss": 36,
+      "mediumBoss": 36,
+      "finalBoss": 36,
+      "legendaryBoss": 39,
+      "repair": 63,
+      "repairSeed": 0,
+      "bridge": 40,
+      "calculation": 20,
+      "integration": 0,
+      "challengeOpening": 0,
+      "challengeMiddle": 0,
+      "challengeFinal": 0,
+      "challengeLegendary": 0,
+      "challengeTotal": 0,
+      "graph": 161,
+      "graphSafe": 72,
+      "graphSafeByDifficulty": {
+        "easy": 12,
+        "medium": 24,
+        "hard": 12,
+        "elite": 12,
+        "legendary": 12
+      },
+      "fadingFortuneEligible": 478,
+      "fadingFortuneByDifficulty": {
+        "easy": 94,
+        "medium": 109,
+        "hard": 105,
+        "elite": 76,
+        "legendary": 94
+      },
+      "riskRewardEligible": 478,
+      "riskRewardByDifficulty": {
+        "easy": 94,
+        "medium": 109,
+        "hard": 105,
+        "elite": 76,
+        "legendary": 94
+      },
+      "assets": 27,
+      "totalCanonical": 728
+    },
+    "modes": {
+      "modes": [
+        {
+          "mode": "standard",
+          "label": "Standard Campaign",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 94
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 109
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 105
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 36
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 36
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 36
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 63
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 40
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "label": "Timed Trial",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 94
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 109
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 105
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 63
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 40
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "label": "Exam Drill",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 94
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 109
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 105
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 63
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 40
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "label": "Quiz",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 5,
+              "count": 94
+            },
+            {
+              "pool": "medium",
+              "minimum": 5,
+              "count": 109
+            },
+            {
+              "pool": "hard",
+              "minimum": 5,
+              "count": 105
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "label": "Unlimited Practice",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 94
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 109
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 105
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 63
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 40
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "label": "Legendary Mode",
+          "requirements": [
+            {
+              "pool": "legendary",
+              "minimum": 6,
+              "count": 94
+            },
+            {
+              "pool": "legendaryBoss",
+              "minimum": 3,
+              "count": 39
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "label": "Score Attack",
+          "requirements": [
+            {
+              "pool": "easy",
+              "minimum": 6,
+              "count": 94
+            },
+            {
+              "pool": "medium",
+              "minimum": 6,
+              "count": 109
+            },
+            {
+              "pool": "hard",
+              "minimum": 6,
+              "count": 105
+            },
+            {
+              "pool": "easyBoss",
+              "minimum": 3,
+              "count": 36
+            },
+            {
+              "pool": "mediumBoss",
+              "minimum": 3,
+              "count": 36
+            },
+            {
+              "pool": "finalBoss",
+              "minimum": 3,
+              "count": 36
+            },
+            {
+              "pool": "repair",
+              "minimum": 1,
+              "count": 63
+            },
+            {
+              "pool": "bridge",
+              "minimum": 1,
+              "count": 40
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "label": "Trial by Graph",
+          "requirements": [
+            {
+              "pool": "graphSafe",
+              "minimum": 10,
+              "count": 72
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "label": "Fading Fortune",
+          "requirements": [
+            {
+              "pool": "fadingFortuneEligible",
+              "minimum": 10,
+              "count": 478
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "label": "Risk & Reward",
+          "requirements": [
+            {
+              "pool": "riskRewardEligible",
+              "minimum": 10,
+              "count": 478
+            }
+          ],
+          "deficiencies": [],
+          "issues": [],
+          "ok": true
+        }
+      ]
+    },
+    "errors": [],
+    "unchanged": true
+  },
+  "priorAuditArtifactFilesBeforeApply": {
+    "adas_fiscal_stabilization_assessment_audit_2026_09_09": {
+      "accessibility-inspection.json": "9a9b690c47fc9e8b57861219c47b7603cee94ffa9c916b9e4075669b2b7aca2f",
+      "accessibility-spec.json": "53e97f5b0acf53d04daa1bd378ddba827605af522595a9052c26179d6da9b6ec",
+      "accessibility.py": "644a51701a7e80902377629420bc34b0d3c46c21415adeff81a3d30955041c09",
+      "accounting.json": "edd684bea9c122ae755a97ec54b88db392bfc580a74950632ebee4d39529b420",
+      "architecture-validation.json": "f093f93b999bba05f89828c8545c650cfa5dbf0ad08d7b9da48fe3bc2eee3e60",
+      "asset-accessibility-changes.json": "259405872d69a3f23aab0cac91f625204dbac7de7eea7aef703706451515417a",
+      "audit-projection-provenance.json": "34511e16b01460132445e3104b7c66ba1326ed35f776192867e366cfafa67a04",
+      "author.py": "df8cb8b77569920da65a7f0a66f38d78a628863d4da63a15d0ce3a99b1f08469",
+      "BEFORE.md": "67895e7c213ff8a4435e8723be8dc4da789efbff20ee7b65a5c52e14af7910b0",
+      "browser-smoke.png": "ca18c0f34bcc38e26b43155c380f1a1cac9a3c426d7cb75625d013a6984a5155",
+      "browser-validation.json": "a72a2e4a6768abfe887cb3dce437c388d952b286eff9001c0643a25c1e34a238",
+      "browser.cjs": "c7adfc271c103a41041e69e51f89b8121932952519c3209ba346d0af977effee",
+      "changes.json": "ef7998c797d66d39af585fc9c33e22fb31f6ae053b6091bce56330a5f7622f5b",
+      "concepts.json": "42df23e6f3a9ae9d32904239802729524143fa7433b3116187f18ba652d7154c",
+      "deliverables.json": "d78207312c529b60f49badf0b69a027577bdc3e5a12bc32ce5614588d8b547f0",
+      "exam-source.json": "4091147841f707b44bcc493ad8150f81fba5b8249e707fb0ea810e54c2c8e9bb",
+      "FINAL_REPORT.md": "eb9f423b233ea548af54273ef30897f15c1825c0c1d80fea9365a0c2b904d436",
+      "findings.py": "804439433499a4b1627d2bbd9fbd1f319beb5a306f54f6054c095baae14a5cf1",
+      "finish.py": "c37dc30aefd14a24fba199e6e98d98a211308b32a753cd2545bccba77c6e3ae6",
+      "graph-validation.json": "4d532980d497d06d5e78d48f946870a085fa6c5b1e22e37c9e952a0c7cb2e9e8",
+      "inventory-after.json": "9d65428680cf2948f4e1e60b2da3cd98a58911e21b0fa28880f74e47201593ec",
+      "inventory-before.json": "030e37bb007397aefffa0423ad7c75526d25835e11f91ea38376de79c8e189b8",
+      "logical-validation.json": "c1f47c8850f9666c101efe8bb7ac55314f86cca85772072b9f3ea0aac6facf7e",
+      "numerical-validation.json": "42a1420820e9794a6aace46cc85dd822cccf29480bbde17e81f8b80bde2ade87",
+      "objective-findings-before.json": "92afa43fb91336e190b0de3e4ae2cbd941c1172e2358d8b94cc6ed3b7d50e484",
+      "OBJECTIVE_FINDINGS_BEFORE.md": "fa56c2d4b450a4e0566d8ea65ef7438fa1a1c3f25c5c5b57cb5d03e3e48b319c",
+      "originality-validation.json": "15e6ca477c44a0d0f15f7324f7b2bf1cb73a6abc0a1b76d9697106fe0b91afc1",
+      "overlap-mask.json": "58615fb898249c6872c29e0d8b65ea35b85a4ae9f2685eecdd4ade7f7d427ffd",
+      "phillips-deferred-followup.json": "7d795b70d1cf440383dad45a0c49fb1f89ddc46982896d343ad122cd71d60db3",
+      "pool-memberships.json": "557313a3547d9da4f799d970ce91249809a7ec65dbe3949c4816ec77291c6d51",
+      "quality-after.json": "0a8ef4aa5be618768115632c1e87790a224d17b18fe6e45aaf1cebe86683331c",
+      "quality-after.md": "fb677e96be4ccd7970597c22d18fe185fd1dcdc87637063fd62fdacff5f8b441",
+      "quality-before.json": "944b880ea1843b05070ca15333ad075c462c2bbae64086cbff5e81d169fc8562",
+      "quality-before.md": "6dd3bd71f6b568d68cdaa935cc1b7759fde7eda15660465f297190666f931fb9",
+      "quality-dispositions.json": "a0fb4224a00dca5d3185b8e4cb37be6be674e478491afc124fe477ba4b1fccc0",
+      "recipe.json": "375e53e6ffc4ee5a07f0a8a847a4caabd545d3ca7a6d479bfb912087f2e547d4",
+      "record-actions.json": "8f3dd3a01996e93d75679628f728b8158e3907be5a67e68be93b52eac8b7299e",
+      "retained-hard.json": "5df5cb46653a4f07e0415e8856383bae095dce201b91e06b4b7e2c9c81a7cfda",
+      "revisions.json": "603b2c41239ae6c8e53668cfbeea27b25b15c53c49d96ffbc556af5b40b086a3",
+      "scope-boundary.json": "eccc80911e833df5b90465b9704c395c991c6c9de204ed1250af6fc0ece0428e",
+      "semantic-validation.json": "767ac61c62947e1a5b7a8eaa38e65b7cf30d253d7648ad45872413c41d8554ea",
+      "sources.json": "42df23e6f3a9ae9d32904239802729524143fa7433b3116187f18ba652d7154c",
+      "stage.mjs": "4a0998681a2ce24e2fe65b4c6467add9f962a0a2260110a963d682b225f0d3c3",
+      "summary-before.json": "d4e852c61a01a560a06af8f62ce1e3fb9389360ab68e3b0ab9422077327ea993",
+      "validation.json": "f9463f7f7801bc7ce89db15bf7f957525ba9ed17e5c7834e6cfe5edf3f6a25be",
+      "verify.py": "7abbcf493930945ea0c1e882cf7015c414378a5dc6698ac99e34596799d2103a"
+    },
+    "money_banking_monetary_system_assessment_audit_2026_09_08": {
+      "access.py": "8f2c418d9aeaeb72405d17b8162933e024a04dfbc0d7ab63e02577b89e4da4e8",
+      "accessibility-inspection.json": "05ae6489a56a9f78dd5c080315ae9cc4d9af5bb2c79df5f779a90eb032968e98",
+      "accessibility-spec.json": "e04ec5bdfe11f7d47b878a381132c41868fd116036992887dc1cc894b1dc3385",
+      "accounting.json": "96dd60bb013f1f9b46a051d4592201a281d390692b9e7e0c3e952645a80b0db5",
+      "architecture-validation.json": "3937fb31dfeaa8afd57f2e6abc9d3b1843a5640ff06fc43aebadbdc84d265f66",
+      "asset-accessibility-changes.json": "78c9cabfe1d4fe3cc5d7ef848ecf4bcc66e8d631a5d1bdc67f3caec55c95a160",
+      "audit-projection-provenance.json": "b3ceda08ad5692a0497e3cff4e09a10c8d3f105a9eaccdcc334243679d319db0",
+      "author.py": "510dbe76c956364a5dc1e37e5896f8b1d92b594177d3651d5602166e5e4a05e2",
+      "BEFORE.md": "ab0f40eb03aa6ba038d491f9179239712502856e5268c4bd616f1c6d9b2a029c",
+      "browser-smoke.png": "7c0af07d78b1e8b7579ec0d10338e774be64648bca912fabcd01625fab6f8307",
+      "browser-validation.json": "e4f6ab13d9336ab3952b28c0d80cbf94ad38ec7cd00086b5d9d0df9669ba5519",
+      "browser.cjs": "e2c28227c9fdcbd93ec77a25165c528b0e6118ca82c1452b20ad63d8da9fa769",
+      "changes.json": "2a15e0a34c10f9b718e991650cc6eebbb83027a909f7b2868b84dd396ffa5244",
+      "concepts.json": "8353181534c660caf51f920f8963d3998aa6a65ddb0173e4585fee8ea9b97d49",
+      "exam-source.json": "bc6489214bac78b9a08992f3a4871c7575db2b02c4de500685c0f111f4cd7e53",
+      "FINAL_REPORT.md": "cc88fb2f1db66c004ca19bae35552ad5d42f071cceb6d852136d4bb65f1b3109",
+      "findings.py": "d87b1c43f0d75c86204e5b28525fc72c9b6b553a4884529601906e7e08f00828",
+      "finish.py": "28138b11332c25f6be5fc901d8102455fb55008ffaf526d383ac6d156909c716",
+      "graph-validation.json": "291b76b2ef26e66f9bdb553971421ed1b116dd17dbf020bf7b355c74755be91e",
+      "inspect.cjs": "62172e50b2fa9a94f5f4e430e8da456cafc801617ea651891847e6740bf82f3b",
+      "inventory-after.json": "c7fe042ab40cb2f6bd93316588e976b8920ea1f28bac0331edce67e49565f4b9",
+      "inventory-before.json": "0d68d89f43759389060a2dda14c9881247ed6436ae0b204d99cee4d4e78e5d78",
+      "logical-validation.json": "017ec441d5f7eee316559251943a52435e554dcc943bb7ee21ef0c7699741b5f",
+      "numerical-validation.json": "75bc7431127f3e6577bdcb011973d0ef86b00a6b594bf309550612dadc1880ec",
+      "objective-findings-before.json": "cc6dcbb78e00916d23851a7f9e29e97fd652649b42feee9efb4f88cd649e5fa3",
+      "originality-validation.json": "0ca207540ecc1930a10fd9a0cc59617adc31aa39fc4608b305d81ada53959141",
+      "pool-memberships.json": "60029b976b5c800717581459e615063fba2dccaa1c0c69b296fda42c8815834b",
+      "quality-after.json": "39588180c9a96d408428123ba65518895a855995f9da7b1d33b826194457fe56",
+      "quality-after.md": "e07d86bf7124603a82faff101bd6d74616312715c50661016e91aa7f93876753",
+      "quality-before.json": "019c1c10e11be27ecd3b9e0cbab8c5320896899550c6eada2d26cd5a061f5e3d",
+      "quality-before.md": "3bc7943a763e3528aaf75001457fa4f8c47d4c6d7c3fbd0bb4861a46baa1ffb4",
+      "quality-dispositions.json": "0c128996e2442553ff0c89b482d174ce474c6851acade0a35913c444b6c60a8a",
+      "recipe.json": "bc620cd6153c98709bb3e29e976b03dc12b242e250a66cfab942d7687a66e5e7",
+      "record-actions.json": "67ff433195fd57e5639fc1a6a5b3c7e1df9bf5de4985b3e52fd8fd2a1d604f47",
+      "revisions.json": "ef6d0f9e8e16daf97d17a849bd875642d711c059a5a9c4a56819a4648377280a",
+      "scope-boundary.json": "7c05ef0024450669bc07c64d5a01c07b68e61523331b82baa5c6ba77269d7bb9",
+      "semantic-validation.json": "48d82400f4c598b0f51c3424a89f199820e9e2bd3032b42e75e89cae9a2d3aea",
+      "sources.json": "8353181534c660caf51f920f8963d3998aa6a65ddb0173e4585fee8ea9b97d49",
+      "stage.mjs": "00af2fdb2c48fa0dca78e7b8e339d6a3ad24827d394796a1a396866c5e49826a",
+      "summary-before.json": "01b3654b1bd0813ecaa31b1bb3edd70223dbab65fa4cbab34613cbce2c7621fd",
+      "validation.json": "f3868fdd57b13d09316f08ef907ab4044eb07f2976ea7d3a54160c35c753da0e",
+      "verify.py": "f0f92733a3b545004031a789e0a687b365311b37be33cf664306b83a8cb86c43"
+    },
+    "saving_investment_loanable_funds_assessment_audit_2026_09_09": {
+      "accessibility-inspection.json": "79a8a1f2673ae804cc835ad9afffb33838421c6c146f4c6e18c2e0996e86e3da",
+      "accessibility-spec.json": "8277d0f8d032f7ce36411abf9e647e0ea4d8161806fb661048ac5bc0a2ec8af0",
+      "accessibility.py": "919cc2d0e1b5a6dc73e2a82b912ff92b8365c8dc0b93f30a959737d44ccbefd3",
+      "accounting.json": "5958a5fa7e2104957996a641fc9180179f12dc8a27ffe40403184f163726340d",
+      "architecture-validation.json": "636bce403d0218d1fe7f95187a9cc9f4619feafbeb83c6782b25069a42cfad9c",
+      "asset-accessibility-changes.json": "2d3ca7f589995a6e893efa848c209f128d4041ded2cfccb7453ed8d2d094e89b",
+      "audit-projection-provenance.json": "19b9e103110d464b1b607f99057106319a506b5b9fb5afd5d54e85194cb327e3",
+      "author.py": "bb19f39b6b530a567501a24a542468a314faf175143117298009b098996e8d51",
+      "BEFORE.md": "3fdbd6c9c47110d6a7d5969c9fb99600ce3ce31553063b5adfbe5fc12fbbef2c",
+      "browser-smoke.png": "9a00cfb79119925c55bf6adb1a96c4b6b2b45d335871f482dbbef14aa9c48014",
+      "browser-validation.json": "ff3836a3d5997b20278da455facafe2d60c765f1fa626805eb34f9f437f6e7a9",
+      "browser.cjs": "f7c27344a34a7b4fefa5467e18447bcdea7405c5690d39ecb2d1b3006613503e",
+      "changes.json": "d4558e3a825ead51703c7a6c71ffe506ed5bb7c0faab96c17b1bd1f9daa103b6",
+      "concepts.json": "6d855173bda4fd9102b67331841ef2961b4f1066e0e92ecb157c206c1f7c5eab",
+      "deliverables.json": "3706c6db916c7498c56721ca389161a413b46c37cabc8505d6583fd7c7cf1639",
+      "exam-source.json": "4091147841f707b44bcc493ad8150f81fba5b8249e707fb0ea810e54c2c8e9bb",
+      "FINAL_REPORT.md": "07a42c9df9a2bc91e71a0931970ebb9b83fa8398d727923a580950f89b0090e4",
+      "findings.py": "7a764ace180a0827e0b6fa40af4554c4de65285e992cc07f0234227637af6c82",
+      "finish.py": "6d0d4184b7a0eee8a82a4657426288b53df13a7589711931bc533fc0f83d3e7e",
+      "graph-validation.json": "6793ea1937cf4520e6895684ba7d863b78379d0be3813818fbf2a95b1fccb177",
+      "inventory-after.json": "eda53808f474ac7748514a278134e28ebd595353bf182fe4de82c890c20a3c4d",
+      "inventory-before.json": "39b8c42f4f88168eed49e36f5df1f4041b2e5e99c4552ab7ff9bb78141292727",
+      "logical-validation.json": "e0a9554e344b5df2b9a6f8b1d6f1d2b17ab0357dd882a7b640b7e9a845ccacd4",
+      "numerical-validation.json": "9bfe607c69d36648ee23b5ab807bf321b3e09eab8df9d0c3be53b6a96274fec6",
+      "objective-findings-before.json": "fddb4280903413bde9c6e185238adea03d752e2582e438e6494a700077af95cd",
+      "OBJECTIVE_FINDINGS_BEFORE.md": "f543b2eb39385f71e43a17dd855ca5373a8770a9dd594416e21104d75aecedc2",
+      "originality-validation.json": "7d92ecbf31aecf5d49d8e2555997fb429e83b7ceff7aa45e19a7a0109cacca05",
+      "overlap-mask.json": "a6e5b26007c51c7db68252a493626a695efe5dea0f10e1aec9d393c780527aac",
+      "pool-memberships.json": "4043774f9f6266600a9561cc7dd68605405cfea21e205e2537ba99f712c4529d",
+      "quality-after.json": "5dfdd090ba131493f93209f7c55dadd480d25538bc5bca872c984457276b0ee9",
+      "quality-after.md": "fd20fb021d2ab02591a0fcf4de5dbe1d0d2a3715eb8cdac9adc2bc5e41b8df73",
+      "quality-before.json": "e19dbe4a965308071a9d47b0e79c36d1306c3f29dfc52a6573ff7e685fe5e0b1",
+      "quality-before.md": "9b286d5ce30eafac3e4d41d9deb69d3035a9b6428d32c813f62c2c766c6f3e27",
+      "quality-dispositions.json": "a7f9d3cb2ad4a27f5a6852850f341786e12d8cb66f1a8e3bd4750b24180ffbc9",
+      "recipe.json": "7301c05bda486e90d70bc20bd83e15d8a61a62e7cb16f863ed0b2d649497faa5",
+      "record-actions.json": "44180433c80236cf188fcb1f7bef0ca4e7fac44e0daf372ba9fa2b7a1522eb68",
+      "retained-hard.json": "ea602d1318a22f8794e00c169db099fbb3130667a7401d63b3616a718b38209e",
+      "revisions.json": "f72e91d95b2d9edd3f101ff906992dd15cfbb6fb3e5d8c4a34bae9252c3b6680",
+      "scope-boundary.json": "3730e3ac2d782cc6b964f7fc1c0e136e871f518cee6fcd753c09aeb209a49846",
+      "semantic-validation.json": "9a5b718c3ed980c80e39bcfdb025b0574353132698435c2d4604e4bbcc20a063",
+      "sources.json": "6d855173bda4fd9102b67331841ef2961b4f1066e0e92ecb157c206c1f7c5eab",
+      "stage.mjs": "1817216e9f134417438b40b5e9a1d3e4e434474404cc99fbfd38fd45b8be1c09",
+      "summary-before.json": "d9957a779f74991e08786409fdfedfacc71a7f35735f759811a4eb48194c4685",
+      "validation.json": "a47b115452b1bb3b24d3eb2dd2ccc65ed39e29c816977cd673a571615a630d39",
+      "verify.py": "25c1f8805c82be5edf75abd431e1fadedf2dc317cafd0d599af3ab86435cd20f"
+    }
+  },
+  "baselineSourceFiles": {
+    "data/composer_library.js": "2446dc220a1379008ab15a725c7ffcd3aa7d2bd92dbe5165060bcbb8cf73297b",
+    "data/composer_registry.json": "dcd6f5a2209d4de6b47acfe187bc836ffd4134092b33ca4d704531e8b00ddbd6",
+    "data/composer_library_manifest.json": "7f6f2f31fc8c3060bd1c33e9683287a2fa90caddce299e4d520cb134cb3d8bc3",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  },
+  "finalSourceFiles": {
+    "data/composer_library.js": "022fa6eae13eaa091c54a1f66d57390de2bf1663245a7796f057b3ddf4ec8ff4",
+    "data/composer_registry.json": "dbeb02da888d5dd53fe5707ae06b79be5a0a52af0b61e114476401dc82722891",
+    "data/composer_library_manifest.json": "1656c794c234c2a77c540e825179df96605c678254e37e2fbadab60d6dec0b36",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  }
+}

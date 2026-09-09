@@ -1,0 +1,2747 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-09T22:30:51.927Z",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1-phaseMacroFinalCleanup-v1-phaseMacroOpenEconomy-v1",
+  "librarySha256": "e04ec4254f937424d82735ce62d307d7efb1d7c0a26713ece3b5d35969738773",
+  "scope": {
+    "concepts": [
+      "short-run-phillips-curve",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "disinflation-and-policy",
+      "sacrifice-ratio"
+    ],
+    "pools": [],
+    "graphLinkedOnly": false,
+    "poolInventory": [
+      "boss",
+      "bridge",
+      "calculation",
+      "easy",
+      "elite",
+      "hard",
+      "legendary",
+      "legendaryBoss",
+      "medium",
+      "repair"
+    ],
+    "questionCount": 262,
+    "conceptQuestionCounts": [
+      {
+        "concept": "short-run-phillips-curve",
+        "count": 62
+      },
+      {
+        "concept": "long-run-phillips-curve",
+        "count": 49
+      },
+      {
+        "concept": "phillips-curve-expectations",
+        "count": 57
+      },
+      {
+        "concept": "disinflation-and-policy",
+        "count": 43
+      },
+      {
+        "concept": "sacrifice-ratio",
+        "count": 51
+      }
+    ],
+    "questionCountsByPool": [
+      {
+        "pool": "boss",
+        "count": 45
+      },
+      {
+        "pool": "bridge",
+        "count": 16
+      },
+      {
+        "pool": "calculation",
+        "count": 4
+      },
+      {
+        "pool": "easy",
+        "count": 36
+      },
+      {
+        "pool": "elite",
+        "count": 20
+      },
+      {
+        "pool": "hard",
+        "count": 39
+      },
+      {
+        "pool": "legendary",
+        "count": 34
+      },
+      {
+        "pool": "legendaryBoss",
+        "count": 15
+      },
+      {
+        "pool": "medium",
+        "count": 38
+      },
+      {
+        "pool": "repair",
+        "count": 15
+      }
+    ]
+  },
+  "counts": {
+    "errors": 0,
+    "warnings": 159,
+    "reviews": 33
+  },
+  "ruleCounts": [
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "count": 1
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "count": 9
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "count": 23
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "count": 42
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "count": 115
+    }
+  ],
+  "conceptFindingCounts": [
+    {
+      "concept": "phillips-curve-expectations",
+      "count": 41
+    },
+    {
+      "concept": "long-run-phillips-curve",
+      "count": 39
+    },
+    {
+      "concept": "short-run-phillips-curve",
+      "count": 39
+    },
+    {
+      "concept": "disinflation-and-policy",
+      "count": 37
+    },
+    {
+      "concept": "sacrifice-ratio",
+      "count": 36
+    }
+  ],
+  "poolFindingCounts": [
+    {
+      "pool": "boss",
+      "count": 35
+    },
+    {
+      "pool": "hard",
+      "count": 28
+    },
+    {
+      "pool": "medium",
+      "count": 25
+    },
+    {
+      "pool": "legendary",
+      "count": 24
+    },
+    {
+      "pool": "repair",
+      "count": 19
+    },
+    {
+      "pool": "bridge",
+      "count": 17
+    },
+    {
+      "pool": "easy",
+      "count": 17
+    },
+    {
+      "pool": "legendaryBoss",
+      "count": 14
+    },
+    {
+      "pool": "elite",
+      "count": 13
+    },
+    {
+      "pool": "calculation",
+      "count": 0
+    }
+  ],
+  "findingSummary": {
+    "totalFindings": 192,
+    "uniqueQuestionsAffected": 172,
+    "questionsWithMultipleFindings": [
+      {
+        "questionId": "ECON-SP-DEFINE-SACRIFICE-RATIO-5058",
+        "concept": "sacrifice-ratio",
+        "pools": [
+          "repair"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-DEFINE-SACRIFICE-RATIO-6049",
+        "concept": "sacrifice-ratio",
+        "pools": [
+          "bridge"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-EASY-70",
+        "concept": "phillips-curve-expectations",
+        "pools": [
+          "easy"
+        ],
+        "count": 2,
+        "rules": [
+          "image-without-graph-required",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-ELITE-348",
+        "concept": "short-run-phillips-curve",
+        "pools": [
+          "elite"
+        ],
+        "count": 2,
+        "rules": [
+          "image-without-graph-required",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-HARD-238",
+        "concept": "short-run-phillips-curve",
+        "pools": [
+          "hard"
+        ],
+        "count": 2,
+        "rules": [
+          "image-without-graph-required",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-HARD-239",
+        "concept": "long-run-phillips-curve",
+        "pools": [
+          "hard"
+        ],
+        "count": 2,
+        "rules": [
+          "image-without-graph-required",
+          "possible-difficulty-overstatement"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-IDENTIFY-LRPC-5051",
+        "concept": "long-run-phillips-curve",
+        "pools": [
+          "repair"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-INTERPRET-SACRIFICE-RATIO-5060",
+        "concept": "sacrifice-ratio",
+        "pools": [
+          "repair"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-LEGENDARY-9008",
+        "concept": "disinflation-and-policy",
+        "pools": [
+          "legendary"
+        ],
+        "count": 2,
+        "rules": [
+          "image-without-graph-required",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-LEGENDARY-9048",
+        "concept": "phillips-curve-expectations",
+        "pools": [
+          "legendary"
+        ],
+        "count": 2,
+        "rules": [
+          "image-without-graph-required",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-MONETARY-POLICY-PC-TRANSITION-5056",
+        "concept": "disinflation-and-policy",
+        "pools": [
+          "repair"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "PG5-PC-X-011",
+        "concept": "long-run-phillips-curve",
+        "pools": [
+          "elite"
+        ],
+        "count": 2,
+        "rules": [
+          "possible-difficulty-overstatement",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "PM2A-DIS-H-008",
+        "concept": "disinflation-and-policy",
+        "pools": [
+          "hard"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "PM2A-DIS-M-005",
+        "concept": "disinflation-and-policy",
+        "pools": [
+          "medium"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "PM2A-DIS-M-006",
+        "concept": "disinflation-and-policy",
+        "pools": [
+          "medium"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "PM2A-EXP-FB-010",
+        "concept": "phillips-curve-expectations",
+        "pools": [
+          "boss"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "PM2A-EXP-L-003",
+        "concept": "phillips-curve-expectations",
+        "pools": [
+          "legendary"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "PM2A-LRPC-EB-013",
+        "concept": "long-run-phillips-curve",
+        "pools": [
+          "boss"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "PM2A-SAC-H-012",
+        "concept": "sacrifice-ratio",
+        "pools": [
+          "hard"
+        ],
+        "count": 2,
+        "rules": [
+          "repeated-feedback",
+          "weak-absolute-distractors"
+        ]
+      },
+      {
+        "questionId": "PM2A-SRPC-LB-013",
+        "concept": "short-run-phillips-curve",
+        "pools": [
+          "legendaryBoss"
+        ],
+        "count": 2,
+        "rules": [
+          "possible-difficulty-overstatement",
+          "repeated-feedback"
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-5057",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation falls from 5% to 2% but remains positive. Did the price level fall?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-6048",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Contractionary monetary policy reduces spending and inflation pressure. Which Phillips connection follows initially?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-324",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Starting at b, which sequence best shows disinflation with temporary unemployment costs?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-349",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Which policy lesson fits the move from b to d to c?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-237",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Starting at b, which sequence matches disinflation and expectations adjustment?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-LEGENDARY-9008",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Compare two disinflations from b to the lower sustained inflation rate I1 with supply conditions and natural unemployment unchanged. In one, existing contracts keep expected inflation at I2 initially. In the other, a credible announcement and immediate contract adjustment lower expected inflation to I1 before spending adjusts. Which pair of paths is consistent with these assumptions?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-LEGENDARY-9047",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. The economy has moved b to d during disinflation. Inflation is then held at I1, the natural rate stays U2, and the adverse-supply offset is unchanged. A forecast shows unemployment returning to U2. Which evidence is necessary to reconcile this forecast with the diagram?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUM-157",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Starting at point b, contractionary policy that lowers inflation below expectations moves the economy in the short run to:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUMBOSS-3010",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "boss"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. Starting at b, the Fed reduces inflation below expectations. Where does the economy move in the short run?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-MONETARY-POLICY-PC-TRANSITION-5056",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Contractionary disinflation raises unemployment in the short run. Is that necessarily permanent?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-MONETARY-POLICY-PC-TRANSITION-6047",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Expected inflation falls and the economy later returns to natural unemployment. Which family links explain the transition?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-BR-021",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "A policy team has computed cumulative output loss per inflation point. What applied question should that sacrifice ratio now inform?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-E-001",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation slows from 6% to 3%, so the price level still rises more slowly. What is this?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-E-002",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Which short-run effect commonly accompanies contractionary disinflation policy?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-EB-012",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation drops from 5% to 2% while prices still rise. What is occurring?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-EB-013",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Which policy direction normally lowers aggregate demand to pursue disinflation?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-EB-014",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "What is the usual short-run Phillips cost of disinflation?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-FB-017",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "After contraction raises unemployment above natural, expected inflation falls. What long-run adjustment is expected?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-H-007",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "hard"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A disinflation announcement is not credible, and wage contracts embed 6% inflation. What makes immediate costless adjustment unlikely?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-H-008",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "hard"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "Two paths reach 2% inflation. The rapid path has a deep one-year recession; the gradual path has smaller gaps for several years. What must be compared?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-L-009",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A credible central bank announces a lower inflation target, expected inflation falls partly, and policy still contracts demand. Which conclusion is most defensible?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-L-010",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation falls 3 points while cumulative output loss equals 6% of annual GDP. Unemployment later returns to natural. Which synthesis is correct?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-L-011",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "An adverse supply shock has raised inflation and unemployment. Why can disinflation policy face a harder near-term tradeoff than after a demand boom?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-LB-018",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A central bank with mixed credibility begins rapid disinflation. Which full chain is most model-consistent?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-LB-019",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "Policy A cuts inflation 4 points with 8% cumulative output loss. Policy B cuts 2.5 points with 4% loss. Which cost comparison is correct?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-LB-020",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation is down to 1% after disinflation, unemployment is back at natural, and the price level is higher than before. Which diagnosis is complete?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-M-003",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A central bank reduces aggregate demand to lower inflation. What Phillips movement is expected before expectations adjust?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-M-004",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Why can a credible lower-inflation target reduce the short-run cost of disinflation?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-M-005",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation falls from 4% to 1%, but prices continue rising. Which statement is correct?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-M-006",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "Why might gradual disinflation be chosen instead of a rapid contraction?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-DIS-MB-015",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A trusted announcement lowers expected inflation. What is the relevant Phillips mechanism?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-EASY-65",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "easy"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. Which unemployment rate is the natural rate?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-EASY-71",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "easy"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. At U3, SRPC2 has inflation rate:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-EASY-72",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "easy"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. At U4 on SRPC1, inflation is:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-325",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Which comparison best captures the long-run result of higher expected inflation?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-239",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Which point reflects high inflation with unemployment at the natural rate?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-IDENTIFY-LRPC-5051",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "Why does higher inflation not permanently lower unemployment in the natural-rate model?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-IDENTIFY-LRPC-6042",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Expected inflation has fully adjusted after an expansion. Which prior family idea now leads to the LRPC conclusion?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-IDENTIFY-NATURAL-UNEMPLOYMENT-5077",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "Structural unemployment falls because matching improves. Is that movement along or a shift of LRPC?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUM-159",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Which pair of points are long-run equilibria?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUMBOSS-3004",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "On the graph, where does the LRPC identify the natural rate of unemployment?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-BR-021",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "The LRPC places unemployment at its natural rate. Which labor-family concept supplies that location?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-BR-022",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 8 distinct questions.",
+      "suggestion": "",
+      "wording": "A central bank begins disinflation from the natural rate. Which next family concept measures the possible output cost of the temporary adjustment?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-E-001",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "Where is the long-run Phillips curve drawn?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-E-002",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "What does a vertical LRPC imply?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-EB-012",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "At what unemployment rate is the LRPC located?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-EB-013",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "What makes the LRPC vertical?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-EB-014",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "Which event can shift the LRPC?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-FB-016",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "A policy claim says 6% inflation can permanently hold unemployment below natural. Which model result rejects it?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-FB-017",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "Job-search reform lowers mismatch while inflation expectations are unchanged. Which graph change captures the durable labor effect?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-H-007",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "hard"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation rises permanently after repeated demand expansion, but labor-market structure is unchanged. Which long-run statement is strongest?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-H-008",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "hard"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "The natural rate falls because job search becomes faster. How should SRPC and LRPC reasoning be separated?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-L-010",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "Economy A lowers its natural rate through better job matching; Economy B only creates an unexpected demand boom. Which comparison is correct?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-L-011",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation expectations instantly match a fully anticipated monetary expansion in the model. What Phillips prediction is most consistent?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-LB-018",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A surprise expansion moves unemployment below natural; later contracts incorporate the higher inflation. What identifies the long-run endpoint?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-LB-019",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "A labor-market reform lowers the natural rate while a demand expansion temporarily lowers unemployment even further. Which distinction is essential?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-LB-020",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "Two economies have different steady unemployment rates but the same long-run inflation. What can explain the difference without restoring a long-run tradeoff?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-M-003",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Demand expansion temporarily pushes unemployment below natural. After expected inflation adjusts, where does unemployment tend to go?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-M-004",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "Job-matching technology improves and lowers structural unemployment. What Phillips-curve change can follow?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-M-005",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 10 distinct questions.",
+      "suggestion": "",
+      "wording": "A rise in long-term mismatch raises the natural rate. What happens to the LRPC?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-M-006",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "Why can many inflation rates appear on the same vertical LRPC?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-LRPC-MB-015",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Unemployment is below natural and actual inflation exceeds expected inflation. What long-run adjustment follows?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-EASY-68",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "easy"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. Moving from point a to point b most likely shows:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-EASY-70",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "easy"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. SRPC2 compared with SRPC1 represents:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-326",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. A move from c on SRPC1 to the upper point at U3 on SRPC2 means:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-327",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. At inflation I3, comparing SRPC1 and SRPC2 shows:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-350",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. Which labeled move isolates an upward SRPC shift at unemployment U3?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-EXPECTED-INFLATION-SHIFT-5053",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "Expected inflation rises from 2% to 4%. At a given unemployment rate, how does the SRPC move?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-EXPECTED-INFLATION-SHIFT-6044",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 7 distinct questions.",
+      "suggestion": "",
+      "wording": "The economy moves up-left along SRPC after a demand surprise. Wage setters then revise forecasts upward. What connection is required?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-236",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Starting at c, which sequence matches expansionary policy and expectations adjustment?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-240",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Which movement shows expectations falling after contractionary policy?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-242",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. At U3, moving from SRPC1 to SRPC2 changes inflation from:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-243",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. At inflation I3, the move from SRPC1 to SRPC2 implies unemployment is:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-244",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. A shift from SRPC1 to SRPC2 is most consistent with:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-LEGENDARY-9009",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. The economy moves from SRPC1 to SRPC2. Which statement should be rejected?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-LEGENDARY-9048",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. The economy is on SRPC2 rather than SRPC1. Which conclusion is most careful?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUM-156",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Starting at point a, expected inflation adjusts upward. The long-run movement is to:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUM-158",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Moving from d to c most likely reflects:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUM-161",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. Moving from SRPC1 to SRPC2 at the same unemployment rate means:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUM-162",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. Assume supply conditions and the natural rate are unchanged; only expected inflation can shift the curve. If the economy moves from c on SRPC1 to the upper point at the same unemployment rate, the likely cause is:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUMBOSS-3007",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "boss"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. Starting at c, expansionary policy moves the economy to a. After expected inflation rises, where does the economy move?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-SUPPLY-SHOCK-PC-SHIFT-5055",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 7 distinct questions.",
+      "suggestion": "",
+      "wording": "Actual inflation repeatedly exceeds the rate workers expected. Which forecast adjustment is likely?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-SUPPLY-SHOCK-PC-SHIFT-6046",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Expected inflation falls during a credible disinflation. Which applied family slice uses that change to assess policy costs?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-5054",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Does a credible announcement guarantee costless disinflation?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-6045",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "Expectations fully catch up after repeated inflation surprises. Which curve summarizes the long-run unemployment result?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "PG5-PC-H-004",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "hard"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "At a given unemployment rate, how does SRPC1 compare with SRPC0?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-E-001",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "Workers and firms begin expecting higher inflation next year. Holding unemployment fixed, what happens to the short-run Phillips curve?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-EB-005",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "If expected inflation increases, which SRPC change follows?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-EB-006",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "If expected inflation decreases, which SRPC change follows?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-EB-007",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 7 distinct questions.",
+      "suggestion": "",
+      "wording": "Why can actual inflation above expected inflation temporarily reduce unemployment?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-FB-009",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 7 distinct questions.",
+      "suggestion": "",
+      "wording": "Actual inflation remains above expected inflation for several contract cycles. Which sequence best fits adaptive expectations?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-FB-010",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A supply shock raises inflation without a demand boom. Why might a simple expectations-only diagnosis be incomplete?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-L-003",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Two central banks announce the same lower inflation target. One has a stronger record of meeting targets. Under otherwise similar conditions, what can differ?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-L-004",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 7 distinct questions.",
+      "suggestion": "",
+      "wording": "Actual inflation is 5% while wage setters expected 3%, temporarily pushing unemployment below natural. What erodes that effect?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-LB-011",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 7 distinct questions.",
+      "suggestion": "",
+      "wording": "A surprise expansion lifts inflation from 2% to 5% while expected inflation remains 2%. What makes the unemployment effect temporary?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-EXP-LB-012",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A disinflation announcement is only partly credible and wage contracts reset slowly. Which conclusion is appropriately bounded?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-CALCULATE-SACRIFICE-RATIO-5059",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation falls from 8% to 5%. What number belongs in the sacrifice-ratio denominator?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-CALCULATE-SACRIFICE-RATIO-6050",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "The economy temporarily moves above natural unemployment during disinflation. How is this cost measured?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-DEFINE-SACRIFICE-RATIO-5058",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "Should annual output gaps be added before calculating a multi-year sacrifice ratio?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-DEFINE-SACRIFICE-RATIO-6049",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Expected inflation falls faster after a credible announcement. How can that connect to the sacrifice ratio?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-INTERPRET-SACRIFICE-RATIO-5060",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 8 distinct questions.",
+      "suggestion": "",
+      "wording": "Does the sacrifice ratio normally measure an unemployment increase per inflation point?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-INTERPRET-SACRIFICE-RATIO-6051",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "Two disinflation paths reach the same inflation target. Which family destination uses their sacrifice ratios to compare costs?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-E-001",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 8 distinct questions.",
+      "suggestion": "",
+      "wording": "What does a sacrifice ratio of 3 mean?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-E-002",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "An analyst divides output loss by the final 4% inflation rate after inflation began at 7%. What denominator should replace 4%?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-E-003",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 8 distinct questions.",
+      "suggestion": "",
+      "wording": "Which loss belongs in the usual sacrifice-ratio numerator?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-E-004",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "easy"
+      ],
+      "message": "Identical feedback is reused across 8 distinct questions.",
+      "suggestion": "",
+      "wording": "A disinflation has a lower sacrifice ratio than another. Under comparable measurement, what does that indicate?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-EB-016",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 8 distinct questions.",
+      "suggestion": "",
+      "wording": "Which formula states the sacrifice ratio?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-EB-017",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation falls from 6% to 4%. What is the denominator?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-EB-018",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 8 distinct questions.",
+      "suggestion": "",
+      "wording": "A ratio of 2 is best read as what?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-FB-020",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "Use the sum of annual percentage output shortfalls as the cumulative-loss convention. Annual output gaps are −1%, −2%, and −1%; inflation falls from 7% to 5%. What is the ratio?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-FB-021",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "A report divides cumulative output loss by the final inflation rate. What correction is required?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-FB-022",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "Path X loses 7.2% of annual GDP to reduce inflation 3 points. Path Y loses 5% to reduce inflation 2 points. Which is more output-efficient?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-H-011",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "hard"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "A disinflation creates cumulative output loss equal to 9% of annual GDP. If the sacrifice ratio is 3, how far did inflation fall?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-H-012",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "hard"
+      ],
+      "message": "Identical feedback is reused across 8 distinct questions.",
+      "suggestion": "",
+      "wording": "Real GDP growth slows from 4% to 1%, but output remains above potential. Why can the 3-point growth slowdown not automatically be the sacrifice-ratio numerator?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-H-013",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "hard"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "Cumulative output loss is 6.5% of one year's GDP and inflation falls 3 percentage points. Round the sacrifice ratio to two decimals."
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-L-014",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "A three-year disinflation produces annual output gaps of −2%, −1%, and 0%, cutting inflation from 6.5% to 4.5%. A faster path produces one year at −4% and cuts inflation the same amount. Which comparison is correct?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-L-015",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "Economy A loses 8% of one year's GDP while inflation falls from 9% to 5%. Economy B loses 6% while inflation falls from 5% to 2%. What can be concluded?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-LB-023",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "A two-year policy creates output gaps of −2.4% and −1.8%, lowering inflation from 7.0% to 5.2%. Round the sacrifice ratio to two decimals."
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-LB-024",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "A credible plan lowers expected inflation and produces a 3% cumulative output loss for a 2-point inflation reduction. A less credible plan loses 7.5% for a 3-point reduction. Which comparison is correct?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-M-005",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "Cumulative output loss is 12% of one year's GDP while inflation falls 3 percentage points. What is the sacrifice ratio?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-M-006",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "A planned inflation reduction is 2.5 percentage points and the estimated sacrifice ratio is 3. What cumulative output loss is implied?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-M-007",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "The output gap is −1.5% in year one and −2.5% in year two while inflation falls 2 percentage points. Using the sum of annual gaps, what is the sacrifice ratio?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-M-008",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation declines from 8% to 5%. Which calculation uses the correct denominator?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SAC-MB-019",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 16 distinct questions.",
+      "suggestion": "",
+      "wording": "Loss is 10% of annual GDP and inflation falls 4 points. What is the ratio?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-DEFINE-PHILLIPS-CURVE-5048",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "A demand increase raises inflation and lowers unemployment while expectations are unchanged. Is this a movement or a shift?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-DEFINE-PHILLIPS-CURVE-6039",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "Aggregate demand expands unexpectedly, raising output and the price level. What linked Phillips result follows first?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-EASY-66",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "easy"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. Point a has:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-EASY-67",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "easy"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the graph. Moving from point c to point a shows:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-323",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Starting at c, which sequence best shows an attempted permanent unemployment reduction through expansionary policy?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-348",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Which policy mistake is shown by treating point a as permanent?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-ELITE-351",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "elite"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. If policy moves the economy from c to b on SRPC1, what must be true?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-238",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Which point reflects unemployment below the natural rate with inflation above I1?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-HARD-241",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "hard"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. Moving from b to c along SRPC1 means:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-LEGENDARY-9007",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Starting at c, policymakers try to keep unemployment at U1 through repeated demand expansion. What eventually breaks the plan?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-LEGENDARY-9046",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. The economy moves from c to a, then policymakers mistake a as sustainable. What is the likely correction?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUM-155",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the LRPC graph. Starting at point c, expansionary policy that raises inflation above expectations moves the economy to:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "image-without-graph-required",
+      "questionId": "ECON-SP-MEDIUM-160",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "The stem directs the learner to visual evidence, but graphRequired is not true.",
+      "suggestion": "Set graphRequired to true after confirming the attached graph is the intended asset.",
+      "wording": "Refer to the SRPC graph. A move along SRPC1 from c toward b means:"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-MOVE-ALONG-SRPC-5050",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Expected inflation rises while unemployment is held fixed. What happens to the SRPC?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-MOVE-ALONG-SRPC-6041",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 7 distinct questions.",
+      "suggestion": "",
+      "wording": "After a move to lower unemployment and higher inflation, wage setters revise inflation forecasts upward. What happens to the short-run Phillips curve?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-NATURAL-RATE-HYPOTHESIS-5052",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "On a Phillips graph, moving upward and left along one SRPC means what?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-NATURAL-RATE-HYPOTHESIS-6043",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 11 distinct questions.",
+      "suggestion": "",
+      "wording": "A short-run unemployment gain disappears as expectations adjust. Which family destination explains the long-run endpoint?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-READ-PC-AXES-5049",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "Can a downward-sloping SRPC guarantee permanently lower unemployment from higher inflation?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-READ-PC-AXES-6040",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "bridge"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A contraction moves the economy down the SRPC toward lower inflation and higher unemployment. Which applied destination studies that policy path?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "ECON-SP-READ-PC-POINTS-5091",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "repair"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "An adverse supply shock raises inflation and unemployment together. What curve change is indicated?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "graph-prompt-missing-cue",
+      "questionId": "PG5-PC-M-015",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "The graph is required, but the stem does not clearly direct the learner to visual evidence.",
+      "suggestion": "Use a natural cue such as 'Refer to the graph...' when the graph is required.",
+      "wording": "What type of change is the move from A to B?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-EB-007",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "On a given SRPC, which combination lies farther up and left?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-EB-008",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "Expected inflation is unchanged and aggregate demand falls. What happens first?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-EB-009",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Which event most directly shifts rather than moves along the SRPC?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-FB-010",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A demand boom first lowers unemployment, then wage expectations catch up. Which complete Phillips sequence is most defensible?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-FB-011",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A supply disruption raises inflation and unemployment together. Which interpretation survives both the graph and mechanism tests?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-FB-012",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "A central bank unexpectedly expands demand. Which claim correctly separates the short run from the long run?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-H-003",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "hard"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Two years have the same unemployment rate, but inflation is higher in the second after wage setters revise expected inflation upward. What changed?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-L-004",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A demand expansion moves the economy to lower unemployment and higher inflation. A year later unemployment returns to its original rate while inflation remains higher. Which sequence fits?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-L-005",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "An adverse supply shock raises inflation while output falls. How should the AD-AS result transfer to the Phillips model?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-L-006",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "legendary"
+      ],
+      "message": "Identical feedback is reused across 5 distinct questions.",
+      "suggestion": "",
+      "wording": "A policymaker cites the downward-sloping SRPC as proof that permanently higher inflation will secure permanently lower unemployment. What is the decisive flaw?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-LB-013",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "A demand expansion moves unemployment below natural. Wage contracts later incorporate the higher inflation. What is the next Phillips-curve development?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-LB-014",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "One episode has rising inflation with falling unemployment; another has rising inflation with rising unemployment. What distinguishes them?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-M-001",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 4 distinct questions.",
+      "suggestion": "",
+      "wording": "Aggregate demand rises unexpectedly while expected inflation is fixed. Which Phillips-curve change best represents the immediate effect?"
+    },
+    {
+      "severity": "WARNING",
+      "rule": "repeated-feedback",
+      "questionId": "PM2A-SRPC-M-002",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "medium"
+      ],
+      "message": "Identical feedback is reused across 9 distinct questions.",
+      "suggestion": "",
+      "wording": "Inflation and unemployment both rise after a sharp increase in energy costs. What is the best diagnosis?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-HARD-256",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A policymaker wants lower inflation but ignores unemployment during transition. What model warns about this cost?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-LEGENDARY-9008",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Refer to the LRPC graph. Compare two disinflations from b to the lower sustained inflation rate I1 with supply conditions and natural unemployment unchanged. In one, existing contracts keep expected inflation at I2 initially. In the other, a credible announcement and immediate contract adjustment lower expected inflation to I1 before spending adjusts. Which pair of paths is consistent with these assumptions?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-MONETARY-POLICY-PC-TRANSITION-5056",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Contractionary disinflation raises unemployment in the short run. Is that necessarily permanent?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2A-DIS-H-008",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two paths reach 2% inflation. The rapid path has a deep one-year recession; the gradual path has smaller gaps for several years. What must be compared?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2A-DIS-M-005",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Inflation falls from 4% to 1%, but prices continue rising. Which statement is correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2A-DIS-M-006",
+      "concept": "disinflation-and-policy",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why might gradual disinflation be chosen instead of a rapid contraction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "ECON-SP-HARD-239",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the LRPC graph. Which point reflects high inflation with unemployment at the natural rate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-IDENTIFY-LRPC-5051",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why does higher inflation not permanently lower unemployment in the natural-rate model?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "P52B-S1-LRPC-B3-001",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "A government insists on holding unemployment below the natural rate after inflation expectations have adjusted. What does the long-run Phillips-curve model predict?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S1-LRPC-L-001",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two economies have the same natural unemployment rate but very different average inflation rates over many years. Which observation is most consistent with a vertical long-run Phillips curve?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG5-PC-X-011",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Which description of point A is correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PG5-PC-X-011",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which description of point A is correct?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG5-PC-X-023",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "With unemployment above the natural rate at B, what long-run Phillips-curve adjustment should follow?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2A-LRPC-EB-013",
+      "concept": "long-run-phillips-curve",
+      "pools": [
+        "boss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "What makes the LRPC vertical?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-EASY-70",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Refer to the graph. SRPC2 compared with SRPC1 represents:"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "ECON-SP-HARD-263",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "hard"
+      ],
+      "message": "Stem is 89% token-similar to ECON-SP-HARD-264. Automated comparison indicates differences in: direction of reasoning or curve/shift direction, scenario or wording.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Initially actual inflation equals expected inflation and unemployment is at its natural rate. Supply conditions and the natural rate stay unchanged. If expected inflation rises while actual inflation is held at its original rate, what happens to unemployment?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-HARD-265",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says an oil shock causes only movement along the SRPC. What is the correction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-LEGENDARY-9048",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Refer to the SRPC graph. The economy is on SRPC2 rather than SRPC1. Which conclusion is most careful?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2A-EXP-FB-010",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "boss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A supply shock raises inflation without a demand boom. Why might a simple expectations-only diagnosis be incomplete?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2A-EXP-L-002",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "legendary"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A temporary supply disruption raises inflation while existing contracts still reflect the original expected inflation. Wage setters update forecasts using the observed inflation, but the disruption ends before the new contracts take effect. Expected inflation nevertheless remains above its original level. With natural unemployment unchanged, what can be concluded about the final SRPC relative to its original position and its position during the disruption?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2A-EXP-L-003",
+      "concept": "phillips-curve-expectations",
+      "pools": [
+        "legendary"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two central banks announce the same lower inflation target. One has a stronger record of meeting targets. Under otherwise similar conditions, what can differ?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-DEFINE-SACRIFICE-RATIO-5058",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Should annual output gaps be added before calculating a multi-year sacrifice ratio?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-DEFINE-SACRIFICE-RATIO-6049",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "bridge"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Expected inflation falls faster after a credible announcement. How can that connect to the sacrifice ratio?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-HARD-266",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A student says disinflation has no cost if the Fed announces it. What is the correction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-INTERPRET-SACRIFICE-RATIO-5060",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "repair"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Does the sacrifice ratio normally measure an unemployment increase per inflation point?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-LEGENDARY-9050",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two stages jointly reduce inflation by 6 percentage points with a combined sacrifice ratio of 1.75. The first stage loses 3 percent of one year's potential GDP while reducing inflation by 2 percentage points. Use the same output benchmark for both stages. What is the second-stage ratio, and how does it compare with the first?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PM2A-SAC-H-010",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Potential GDP remains $500 billion in each of the three years. Output is 2% below potential for one year and 1% below for two more years while inflation falls 4 points. What is the loss per inflation point?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "PM2A-SAC-H-012",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Real GDP growth slows from 4% to 1%, but output remains above potential. Why can the 3-point growth slowdown not automatically be the sacrifice-ratio numerator?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PM2A-SAC-LB-025",
+      "concept": "sacrifice-ratio",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Potential output remains $800 billion each year. Actual output is below potential by 1.5% for two years and 0.5% for one year while inflation falls 2.8 points. What is cumulative loss per inflation point?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "ECON-SP-ELITE-348",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the LRPC graph. Which policy mistake is shown by treating point a as permanent?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "ECON-SP-HARD-238",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the LRPC graph. Which point reflects unemployment below the natural rate with inflation above I1?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-SP-HARD-255",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A policymaker claims higher inflation can permanently hold unemployment below natural. What is the flaw?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PM2A-SRPC-LB-013",
+      "concept": "short-run-phillips-curve",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "A demand expansion moves unemployment below natural. Wage contracts later incorporate the higher inflation. What is the next Phillips-curve development?"
+    }
+  ]
+}

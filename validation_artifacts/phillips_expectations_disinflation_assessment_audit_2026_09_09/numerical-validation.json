@@ -1,0 +1,1037 @@
+{
+  "method": "Independent final-stem extraction with exact fractions and separately transcribed image geometry. Calculations precede key comparison; no hash is used as numerical evidence.",
+  "count": 43,
+  "allRevisedQuantitativeCount": 14,
+  "allNumericalSacrificeRatioCount": 37,
+  "items": [
+    {
+      "id": "P52B-S1-DIS-L-001",
+      "contentRevised": false,
+      "finalStem": "Country A has a sacrifice ratio of 2, while Country B has a sacrifice ratio of 5. If both reduce inflation by 3 percentage points, which comparison is correct?",
+      "parsedNumbers": [
+        "2",
+        "5",
+        "3"
+      ],
+      "recomputed": {
+        "countryALoss": "6",
+        "countryBLoss": "15"
+      },
+      "correctOption": "A loses about 6% of annual GDP cumulatively; B loses about 15%.",
+      "allOptions": [
+        "A loses about 15% of annual GDP cumulatively; B loses about 6%.",
+        "Both lose about 3% of annual GDP because the inflation reduction is equal.",
+        "A loses about 6% of annual GDP cumulatively; B loses about 15%.",
+        "A has no output loss because its sacrifice ratio is below the inflation reduction."
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-DIS-L-010",
+      "contentRevised": false,
+      "finalStem": "Inflation falls 3 points while cumulative output loss equals 6% of annual GDP. Unemployment later returns to natural. Which synthesis is correct?",
+      "parsedNumbers": [
+        "3",
+        "6"
+      ],
+      "recomputed": {
+        "ratio": "2"
+      },
+      "correctOption": "The sacrifice ratio is 2, and the unemployment cost was temporary in the model",
+      "allOptions": [
+        "The sacrifice ratio is 0.5, and unemployment stays permanently high",
+        "The ratio is 3, and LRPC shifts right permanently",
+        "The ratio is 6, and the price level must have fallen",
+        "The sacrifice ratio is 2, and the unemployment cost was temporary in the model"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested. Natural-rate return means the model’s unemployment cost ends; it does not erase cumulative output losses.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-DIS-FB-016",
+      "contentRevised": false,
+      "finalStem": "A rapid plan loses 5% of annual GDP to cut inflation 2 points; a gradual plan loses 6% to cut it 3 points. Which has the lower sacrifice ratio?",
+      "parsedNumbers": [
+        "5",
+        "2",
+        "6",
+        "3"
+      ],
+      "recomputed": {
+        "firstRatio": "5/2",
+        "secondRatio": "2"
+      },
+      "correctOption": "The gradual plan has ratio 2 versus the rapid plan’s 2.5",
+      "allOptions": [
+        "The gradual plan has ratio 3 versus the rapid plan’s 2",
+        "The gradual plan has ratio 2 versus the rapid plan’s 2.5",
+        "The rapid plan has ratio 2 versus the gradual plan’s 3",
+        "Both plans have a sacrifice ratio of 2.5"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-DIS-LB-019",
+      "contentRevised": false,
+      "finalStem": "Policy A cuts inflation 4 points with 8% cumulative output loss. Policy B cuts 2.5 points with 4% loss. Which cost comparison is correct?",
+      "parsedNumbers": [
+        "4",
+        "8",
+        "5/2",
+        "4"
+      ],
+      "recomputed": {
+        "firstRatio": "2",
+        "secondRatio": "8/5"
+      },
+      "correctOption": "A has ratio 2; B has ratio 1.6, so B loses less output per point",
+      "allOptions": [
+        "A has ratio 4; B has ratio 2.5, using final inflation as denominator",
+        "Both have ratio 2 because each lowers inflation from a positive starting rate",
+        "A has ratio 2; B has ratio 1.6, so B loses less output per point",
+        "A has ratio 0.5; B has ratio 0.625, so A has the lower cost"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-E-001",
+      "contentRevised": false,
+      "finalStem": "What does a sacrifice ratio of 3 mean?",
+      "parsedNumbers": [
+        "3"
+      ],
+      "recomputed": {
+        "ratioMeaning": "3"
+      },
+      "correctOption": "About 3% of one year’s output is lost per 1-percentage-point inflation reduction",
+      "allOptions": [
+        "About 3% of one year’s output is lost per 1-percentage-point inflation reduction",
+        "Inflation falls 3% whenever output falls 1%",
+        "Unemployment rises 3 percentage points permanently",
+        "The price level falls 3% during every disinflation"
+      ],
+      "derivation": "The stated ratio denotes this percent of one year’s output lost per one percentage-point inflation reduction; it is not an unemployment or price-level percentage.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-E-002",
+      "contentRevised": false,
+      "finalStem": "An analyst divides output loss by the final 4% inflation rate after inflation began at 7%. What denominator should replace 4%?",
+      "parsedNumbers": [
+        "4",
+        "7",
+        "4"
+      ],
+      "recomputed": {
+        "inflationReductionPoints": "3"
+      },
+      "correctOption": "The 3-percentage-point reduction in inflation",
+      "allOptions": [
+        "The initial 7% inflation rate before policy",
+        "The 11% sum of the two inflation rates",
+        "The final 4% inflation rate already used",
+        "The 3-percentage-point reduction in inflation"
+      ],
+      "derivation": "Subtract final inflation from initial inflation; do not divide by the final rate or the percentage reduction relative to the initial rate.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-M-005",
+      "contentRevised": false,
+      "finalStem": "Cumulative output loss is 12% of one year’s GDP while inflation falls 3 percentage points. What is the sacrifice ratio?",
+      "parsedNumbers": [
+        "12",
+        "3"
+      ],
+      "recomputed": {
+        "ratio": "4"
+      },
+      "correctOption": "4% of one year’s output per inflation point",
+      "allOptions": [
+        "4% of one year’s output per inflation point",
+        "3% of output per inflation point",
+        "9% of output per inflation point",
+        "36% of output per inflation point"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-M-006",
+      "contentRevised": false,
+      "finalStem": "A planned inflation reduction is 2.5 percentage points and the estimated sacrifice ratio is 3. What cumulative output loss is implied?",
+      "parsedNumbers": [
+        "5/2",
+        "3"
+      ],
+      "recomputed": {
+        "cumulativeLossPercent": "15/2"
+      },
+      "correctOption": "7.5% of one year’s output",
+      "allOptions": [
+        "1.2% of one year’s output",
+        "5.5% of one year’s output",
+        "8.3% of one year’s output",
+        "7.5% of one year’s output"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-M-007",
+      "contentRevised": false,
+      "finalStem": "The output gap is −1.5% in year one and −2.5% in year two while inflation falls 2 percentage points. Using the sum of annual gaps, what is the sacrifice ratio?",
+      "parsedNumbers": [
+        "3/2",
+        "5/2",
+        "2"
+      ],
+      "recomputed": {
+        "summedAnnualGapLoss": "4",
+        "ratio": "2"
+      },
+      "correctOption": "2% of one year’s output per inflation point",
+      "allOptions": [
+        "4% of output per inflation point",
+        "8% of output per inflation point",
+        "2% of one year’s output per inflation point",
+        "1% of output per inflation point"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-M-008",
+      "contentRevised": false,
+      "finalStem": "Inflation declines from 8% to 5%. Which calculation uses the correct denominator?",
+      "parsedNumbers": [
+        "8",
+        "5"
+      ],
+      "recomputed": {
+        "inflationReductionPoints": "3"
+      },
+      "correctOption": "Cumulative output loss divided by 3 percentage points",
+      "allOptions": [
+        "Final output divided by 13 percentage points",
+        "Cumulative output loss divided by 3 percentage points",
+        "Cumulative output loss divided by the final 5%",
+        "Cumulative output loss divided by the initial 8%"
+      ],
+      "derivation": "Subtract final inflation from initial inflation; do not divide by the final rate or the percentage reduction relative to the initial rate.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-M-009",
+      "contentRevised": false,
+      "finalStem": "Path A loses 6% of one year’s output to cut inflation 3 points. Path B loses 5% to cut inflation 2 points. Which has the lower sacrifice ratio?",
+      "parsedNumbers": [
+        "6",
+        "3",
+        "5",
+        "2"
+      ],
+      "recomputed": {
+        "firstRatio": "2",
+        "secondRatio": "5/2"
+      },
+      "correctOption": "Path A has a ratio of 2; Path B has a ratio of 2.5",
+      "allOptions": [
+        "Path A has a ratio of 2; Path B has a ratio of 2.5",
+        "Path B has a ratio of 2; Path A has a ratio of 2.5",
+        "Both paths have a sacrifice ratio of 2",
+        "Path A has a ratio of 3; Path B has a ratio of 2"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-H-010",
+      "contentRevised": true,
+      "finalStem": "Potential GDP remains $500 billion in each of the three years. Output is 2% below potential for one year and 1% below for two more years while inflation falls 4 points. What is the loss per inflation point?",
+      "parsedNumbers": [
+        "500",
+        "2",
+        "1",
+        "4"
+      ],
+      "recomputed": {
+        "cumulativeLossBillions": "20",
+        "billionsPerPoint": "5"
+      },
+      "correctOption": "$5 billion per inflation point",
+      "allOptions": [
+        "$2.5 billion per inflation point",
+        "$10 billion per inflation point",
+        "$20 billion per inflation point",
+        "$5 billion per inflation point"
+      ],
+      "derivation": "Potential GDP is explicitly constant for all three years. Count the two 1-percent shortfall years, then divide total dollar loss by the inflation-point reduction.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-H-011",
+      "contentRevised": false,
+      "finalStem": "A disinflation creates cumulative output loss equal to 9% of annual GDP. If the sacrifice ratio is 3, how far did inflation fall?",
+      "parsedNumbers": [
+        "9",
+        "3"
+      ],
+      "recomputed": {
+        "inflationReductionPoints": "3"
+      },
+      "correctOption": "3 percentage points",
+      "allOptions": [
+        "6 percentage points",
+        "27 percentage points",
+        "3 percentage points",
+        "2 percentage points"
+      ],
+      "derivation": "Invert loss = sacrifice ratio × inflation reduction.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-H-012",
+      "contentRevised": false,
+      "finalStem": "Real GDP growth slows from 4% to 1%, but output remains above potential. Why can the 3-point growth slowdown not automatically be the sacrifice-ratio numerator?",
+      "parsedNumbers": [
+        "4",
+        "1",
+        "3"
+      ],
+      "recomputed": {
+        "growthSlowdownPoints": "3"
+      },
+      "correctOption": "The numerator measures an output-level loss relative to a benchmark, not merely slower growth",
+      "allOptions": [
+        "Only the final inflation rate belongs in the numerator of this measure",
+        "The numerator measures an output-level loss relative to a benchmark, not merely slower growth",
+        "Any growth slowdown is exactly the cumulative output gap relative to potential",
+        "The numerator must be a permanent unemployment-rate change rather than output"
+      ],
+      "derivation": "The growth slowdown is 3 percentage points, but no cumulative output shortfall is supplied and output remains above potential. A sacrifice ratio cannot be computed from this slowdown.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-H-013",
+      "contentRevised": false,
+      "finalStem": "Cumulative output loss is 6.5% of one year’s GDP and inflation falls 3 percentage points. Round the sacrifice ratio to two decimals.",
+      "parsedNumbers": [
+        "13/2",
+        "3"
+      ],
+      "recomputed": {
+        "ratio": "13/6"
+      },
+      "correctOption": "2.17% of one year’s output per inflation point",
+      "allOptions": [
+        "2.17% of one year’s output per inflation point",
+        "2.16% of output per inflation point",
+        "2.20% of output per inflation point",
+        "3.50% of output per inflation point"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-ELITE-330",
+      "contentRevised": false,
+      "finalStem": "If inflation falls from 12 percent to 7 percent and the sacrifice ratio is 3.5, output loss equals:",
+      "parsedNumbers": [
+        "12",
+        "7",
+        "7/2"
+      ],
+      "recomputed": {
+        "inflationReductionPoints": "5",
+        "cumulativeLossPercent": "35/2"
+      },
+      "correctOption": "17.5 percent of one year's output",
+      "allOptions": [
+        "17.5 percent of one year's output",
+        "15.5 percent of one year's output",
+        "8.5 percent of one year's output",
+        "5 percent of one year's output"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-ELITE-331",
+      "contentRevised": true,
+      "finalStem": "If cumulative output loss is 14 percent of one year’s potential GDP and inflation falls by 4 percentage points, the sacrifice ratio is:",
+      "parsedNumbers": [
+        "14",
+        "4"
+      ],
+      "recomputed": {
+        "ratio": "7/2"
+      },
+      "correctOption": "3.5% of one year’s output per inflation point",
+      "allOptions": [
+        "3.5% of one year’s output per inflation point",
+        "4% of one year’s output per inflation point",
+        "10% of one year’s output per inflation point",
+        "18% of one year’s output per inflation point"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9020",
+      "contentRevised": true,
+      "finalStem": "A disinflation lowers inflation from 10 percent to 6 percent. Cumulative output loss is 18 percent of one year’s potential GDP, of which 11 percent occurred before the final year. An analyst reports a sacrifice ratio using only the final-year loss. Which audit correction is needed?",
+      "parsedNumbers": [
+        "10",
+        "6",
+        "18",
+        "11"
+      ],
+      "recomputed": {
+        "reduction": "4",
+        "allYearsRatio": "9/2",
+        "finalYearOnlyRatio": "7/4"
+      },
+      "correctOption": "Use all 18 percent: the ratio is 4.5; using only the final year would understate it as 1.75.",
+      "allOptions": [
+        "Use all 18 percent: the ratio is 4.5; using only the final year would understate it as 1.75.",
+        "Use only 7 percent: the ratio is 1.75 because earlier output losses are already over.",
+        "Use the final inflation rate: the ratio is 3 because the target is 6 percent.",
+        "Add initial and final inflation: the ratio is 1.125 because the full window contains both rates."
+      ],
+      "derivation": "Subtract the earlier loss from total to get final-year loss. Compare cumulative and incomplete-window ratios on the same inflation reduction.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9021",
+      "contentRevised": true,
+      "finalStem": "A plan must reduce inflation by 5 percentage points with cumulative output loss no greater than 14 percent of one year’s potential GDP. Its first stage has already reduced inflation by 2 percentage points at a cumulative loss of 7 percent. What maximum sacrifice ratio can the remaining stage have if the full plan is to meet both targets?",
+      "parsedNumbers": [
+        "5",
+        "14",
+        "2",
+        "7"
+      ],
+      "recomputed": {
+        "remainingPoints": "3",
+        "remainingLossAllowance": "7",
+        "maxRemainingRatio": "7/3"
+      },
+      "correctOption": "About 2.33 percent of one year’s output per remaining inflation point.",
+      "allOptions": [
+        "About 2.33 percent of one year’s output per remaining inflation point.",
+        "2.8 percent of one year’s output per remaining inflation point.",
+        "3.5 percent of one year’s output per remaining inflation point.",
+        "7 percent of one year’s output per remaining inflation point."
+      ],
+      "derivation": "Subtract already achieved inflation reduction and spent loss allowance from the total targets, then divide the remaining allowance by remaining points.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9049",
+      "contentRevised": true,
+      "finalStem": "A disinflation lowers inflation from 9 percent to 5 percent with cumulative output loss of 10 percent of one year’s potential GDP. A second plan is projected to lower inflation by only 2.5 percentage points with loss of 7 percent on the same output benchmark. Which comparison avoids confusing a smaller total loss with a lower loss per inflation point?",
+      "parsedNumbers": [
+        "9",
+        "5",
+        "10",
+        "5/2",
+        "7"
+      ],
+      "recomputed": {
+        "completedRatio": "5/2",
+        "alternativeRatio": "14/5"
+      },
+      "correctOption": "The completed plan has ratio 2.5 versus 2.8 for the second; the second has less total loss but a higher loss per point.",
+      "allOptions": [
+        "The completed plan has ratio 2.5 versus 2.8 for the second; the second has less total loss but a higher loss per point.",
+        "The second plan has the lower ratio because 7 is less than 10, regardless of the inflation reductions.",
+        "Both have ratio 2.5 because the second plan’s inflation reduction is its denominator and also its ratio.",
+        "The completed plan has ratio 0.4 and therefore no output cost; the second has ratio 2.8."
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-LEGENDARY-9050",
+      "contentRevised": true,
+      "finalStem": "Two stages jointly reduce inflation by 6 percentage points with a combined sacrifice ratio of 1.75. The first stage loses 3 percent of one year’s potential GDP while reducing inflation by 2 percentage points. Use the same output benchmark for both stages. What is the second-stage ratio, and how does it compare with the first?",
+      "parsedNumbers": [
+        "6",
+        "7/4",
+        "3",
+        "2"
+      ],
+      "recomputed": {
+        "totalLoss": "21/2",
+        "secondStageLoss": "15/2",
+        "secondStagePoints": "4",
+        "firstRatio": "3/2",
+        "secondRatio": "15/8"
+      },
+      "correctOption": "1.875 for the second versus 1.5 for the first; the second has the higher loss per point.",
+      "allOptions": [
+        "1.875 for the second versus 1.5 for the first; the second has the higher loss per point.",
+        "1.75 for both stages, because a combined ratio must equal each stage’s ratio.",
+        "3.75 for the second versus 1.5 for the first, using only 2 remaining inflation points.",
+        "0.533 for the second versus 0.667 for the first, using inflation reduction divided by loss."
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-L-014",
+      "contentRevised": false,
+      "finalStem": "A three-year disinflation produces annual output gaps of −2%, −1%, and 0%, cutting inflation from 6.5% to 4.5%. A faster path produces one year at −4% and cuts inflation the same amount. Which comparison is correct?",
+      "parsedNumbers": [
+        "2",
+        "1",
+        "0",
+        "13/2",
+        "9/2",
+        "4"
+      ],
+      "recomputed": {
+        "gradualLoss": "3",
+        "inflationReduction": "2",
+        "gradualRatio": "3/2",
+        "fastRatio": "2"
+      },
+      "correctOption": "The gradual path ratio is 1.5; the fast path ratio is 2",
+      "allOptions": [
+        "The gradual path ratio is 3; the fast path ratio is 4",
+        "Both paths have a ratio of 2",
+        "The gradual path ratio is 2; the fast path ratio is 1.5",
+        "The gradual path ratio is 1.5; the fast path ratio is 2"
+      ],
+      "derivation": "Use the course sum-of-annual-percentage-gaps convention, including the zero final-year loss, and compare with the one-year fast path at the same inflation reduction.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-L-015",
+      "contentRevised": false,
+      "finalStem": "Economy A loses 8% of one year’s GDP while inflation falls from 9% to 5%. Economy B loses 6% while inflation falls from 5% to 2%. What can be concluded?",
+      "parsedNumbers": [
+        "8",
+        "9",
+        "5",
+        "6",
+        "5",
+        "2"
+      ],
+      "recomputed": {
+        "firstRatio": "2",
+        "secondRatio": "2"
+      },
+      "correctOption": "A has a ratio of 2 and B also has a ratio of 2",
+      "allOptions": [
+        "A has a ratio of 0.5 and B has a ratio of 0.67",
+        "A has a lower ratio because its inflation drop is larger",
+        "A has a ratio of 2 and B also has a ratio of 2",
+        "A has a ratio of 4 and B has a ratio of 3"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-EASY-78",
+      "contentRevised": false,
+      "finalStem": "If the sacrifice ratio is 4 and inflation falls by 2 percentage points, the output cost is:",
+      "parsedNumbers": [
+        "4",
+        "2"
+      ],
+      "recomputed": {
+        "cumulativeLossPercent": "8"
+      },
+      "correctOption": "8 percent of one year's output",
+      "allOptions": [
+        "2 percent of one year's output",
+        "4 percent of one year's output",
+        "8 percent of one year's output",
+        "16 percent of one year's output"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-HARD-249",
+      "contentRevised": false,
+      "finalStem": "Potential GDP is $400 billion. Cumulative output loss is $24 billion while inflation falls from 8% to 5%. What is the sacrifice ratio?",
+      "parsedNumbers": [
+        "400",
+        "24",
+        "8",
+        "5"
+      ],
+      "recomputed": {
+        "lossPercentAnnualGDP": "6",
+        "inflationReductionPoints": "3",
+        "ratio": "2"
+      },
+      "correctOption": "2% of one year’s output per inflation point",
+      "allOptions": [
+        "3% of output per inflation point",
+        "6% of output per inflation point",
+        "8% of output per inflation point",
+        "2% of one year’s output per inflation point"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-HARD-250",
+      "contentRevised": false,
+      "finalStem": "If inflation falls by 3 points and the output loss is 12 percent of one year’s GDP, the sacrifice ratio is:",
+      "parsedNumbers": [
+        "3",
+        "12"
+      ],
+      "recomputed": {
+        "ratio": "4"
+      },
+      "correctOption": "4% of one year’s output per inflation point",
+      "allOptions": [
+        "12% of one year’s output per inflation point",
+        "4% of one year’s output per inflation point",
+        "3% of one year’s output per inflation point",
+        "9% of one year’s output per inflation point"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-MEDIUM-167",
+      "contentRevised": false,
+      "finalStem": "If the sacrifice ratio is 3 and inflation falls from 8 percent to 5 percent, the output cost is:",
+      "parsedNumbers": [
+        "3",
+        "8",
+        "5"
+      ],
+      "recomputed": {
+        "lossPercent": "9"
+      },
+      "correctOption": "9 percent of one year's output",
+      "allOptions": [
+        "3 percent of one year's output",
+        "6 percent of one year's output",
+        "9 percent of one year's output",
+        "15 percent of one year's output"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-MEDIUMBOSS-3013",
+      "contentRevised": false,
+      "finalStem": "Inflation falls by 3 percentage points. If the sacrifice ratio is 4, what output loss should be expected?",
+      "parsedNumbers": [
+        "3",
+        "4"
+      ],
+      "recomputed": {
+        "cumulativeLossPercent": "12"
+      },
+      "correctOption": "12 percent of one year's output",
+      "allOptions": [
+        "7 percent of one year's output",
+        "12 percent of one year's output",
+        "3 percent of one year's output",
+        "4 percent of one year's output"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-EB-017",
+      "contentRevised": false,
+      "finalStem": "Inflation falls from 6% to 4%. What is the denominator?",
+      "parsedNumbers": [
+        "6",
+        "4"
+      ],
+      "recomputed": {
+        "inflationReductionPoints": "2"
+      },
+      "correctOption": "2 percentage points",
+      "allOptions": [
+        "2 percentage points",
+        "4 percent",
+        "6 percent",
+        "10 percentage points"
+      ],
+      "derivation": "Subtract final inflation from initial inflation; do not divide by the final rate or the percentage reduction relative to the initial rate.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-EB-018",
+      "contentRevised": false,
+      "finalStem": "A ratio of 2 is best read as what?",
+      "parsedNumbers": [
+        "2"
+      ],
+      "recomputed": {
+        "ratioMeaning": "2"
+      },
+      "correctOption": "Two percent of one year’s output lost per inflation point reduced",
+      "allOptions": [
+        "Inflation falls two percent for every percentage point of unemployment added",
+        "Unemployment stays two points above natural after expectations completely adjust",
+        "The price level declines two percent in each year of disinflation",
+        "Two percent of one year’s output lost per inflation point reduced"
+      ],
+      "derivation": "The stated ratio denotes this percent of one year’s output lost per one percentage-point inflation reduction; it is not an unemployment or price-level percentage.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-FB-020",
+      "contentRevised": true,
+      "finalStem": "Use the sum of annual percentage output shortfalls as the cumulative-loss convention. Annual output gaps are −1%, −2%, and −1%; inflation falls from 7% to 5%. What is the ratio?",
+      "parsedNumbers": [
+        "1",
+        "2",
+        "1",
+        "7",
+        "5"
+      ],
+      "recomputed": {
+        "cumulativeLoss": "4",
+        "ratio": "2"
+      },
+      "correctOption": "2% of one year’s output per inflation point",
+      "allOptions": [
+        "6% of output per inflation point",
+        "2% of one year’s output per inflation point",
+        "0.5% of output per inflation point",
+        "3% of output per inflation point"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-FB-022",
+      "contentRevised": false,
+      "finalStem": "Path X loses 7.2% of annual GDP to reduce inflation 3 points. Path Y loses 5% to reduce inflation 2 points. Which is more output-efficient?",
+      "parsedNumbers": [
+        "36/5",
+        "3",
+        "5",
+        "2"
+      ],
+      "recomputed": {
+        "firstRatio": "12/5",
+        "secondRatio": "5/2"
+      },
+      "correctOption": "Path X, with a ratio of 2.4 versus 2.5",
+      "allOptions": [
+        "Path Y, with a ratio of 2 versus 2.4",
+        "Path X, with a ratio of 3 versus 2",
+        "They are equal because both lower inflation",
+        "Path X, with a ratio of 2.4 versus 2.5"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-MB-019",
+      "contentRevised": false,
+      "finalStem": "Loss is 10% of annual GDP and inflation falls 4 points. What is the ratio?",
+      "parsedNumbers": [
+        "10",
+        "4"
+      ],
+      "recomputed": {
+        "ratio": "5/2"
+      },
+      "correctOption": "2.5% of one year’s output per inflation point",
+      "allOptions": [
+        "4% of output per inflation point",
+        "14% of output per inflation point",
+        "2.5% of one year’s output per inflation point",
+        "1.5% of output per inflation point"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-LB-023",
+      "contentRevised": false,
+      "finalStem": "A two-year policy creates output gaps of −2.4% and −1.8%, lowering inflation from 7.0% to 5.2%. Round the sacrifice ratio to two decimals.",
+      "parsedNumbers": [
+        "12/5",
+        "9/5",
+        "7",
+        "26/5"
+      ],
+      "recomputed": {
+        "cumulativeLoss": "21/5",
+        "drop": "9/5",
+        "ratio": "7/3"
+      },
+      "correctOption": "2.33% of one year’s output per inflation point",
+      "allOptions": [
+        "2.34% of output per inflation point",
+        "4.20% of output per inflation point",
+        "2.33% of one year’s output per inflation point",
+        "1.80% of output per inflation point"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-LB-024",
+      "contentRevised": false,
+      "finalStem": "A credible plan lowers expected inflation and produces a 3% cumulative output loss for a 2-point inflation reduction. A less credible plan loses 7.5% for a 3-point reduction. Which comparison is correct?",
+      "parsedNumbers": [
+        "3",
+        "2",
+        "15/2",
+        "3"
+      ],
+      "recomputed": {
+        "firstRatio": "3/2",
+        "secondRatio": "5/2"
+      },
+      "correctOption": "The credible plan ratio is 1.5; the other is 2.5",
+      "allOptions": [
+        "The plans are equal because both reduce inflation",
+        "The credible plan ratio is 1.5; the other is 2.5",
+        "The credible plan ratio is 2; the other is 2.5",
+        "The credible plan ratio is 0.67; the other is 0.4"
+      ],
+      "derivation": "Use cumulative output loss on the stated benchmark divided by the percentage-point inflation reduction. All arithmetic uses exact fractions; round only where requested.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PM2A-SAC-LB-025",
+      "contentRevised": true,
+      "finalStem": "Potential output remains $800 billion each year. Actual output is below potential by 1.5% for two years and 0.5% for one year while inflation falls 2.8 points. What is cumulative loss per inflation point?",
+      "parsedNumbers": [
+        "800",
+        "3/2",
+        "1/2",
+        "14/5"
+      ],
+      "recomputed": {
+        "cumulativeLossBillions": "28",
+        "billionsPerPoint": "10"
+      },
+      "correctOption": "$10 billion per inflation point",
+      "allOptions": [
+        "$10 billion per inflation point",
+        "$4 billion per inflation point",
+        "$14 billion per inflation point",
+        "$28 billion per inflation point"
+      ],
+      "derivation": "Both gaps are explicitly below potential, with two years at 1.5 percent and one at 0.5 percent of constant 800. Divide their combined dollar loss by 2.8 points.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "ECON-SP-CALCULATE-SACRIFICE-RATIO-5059",
+      "contentRevised": false,
+      "finalStem": "Inflation falls from 8% to 5%. What number belongs in the sacrifice-ratio denominator?",
+      "parsedNumbers": [
+        "8",
+        "5"
+      ],
+      "recomputed": {
+        "inflationReductionPoints": "3"
+      },
+      "correctOption": "3 percentage points",
+      "allOptions": [
+        "3 percentage points",
+        "5 percent",
+        "8 percent",
+        "13 percentage points"
+      ],
+      "derivation": "Subtract final inflation from initial inflation; do not divide by the final rate or the percentage reduction relative to the initial rate.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PG5-PC-H-016",
+      "contentRevised": true,
+      "finalStem": "Refer to the graph with points A and B on SRPC0. The natural rate and supply conditions are unchanged, and inflation expectations have not yet adjusted. Consumer spending unexpectedly strengthens. Which interpretation links the demand event to the graph and distinguishes current unemployment from its natural rate?",
+      "parsedNumbers": [
+        "0"
+      ],
+      "recomputed": {
+        "unemploymentGapPoints": "-2",
+        "inflationChangePoints": "1"
+      },
+      "correctOption": "The economy moves A to B along SRPC0; unemployment is 2 percentage points below natural while inflation is 1 percentage point higher.",
+      "allOptions": [
+        "The economy shifts to a different SRPC because any change in actual inflation changes expectations immediately.",
+        "LRPC shifts left to 3 percent unemployment because stronger demand permanently improves matching.",
+        "The economy moves B to A because stronger demand reduces inflation and raises unemployment.",
+        "The economy moves A to B along SRPC0; unemployment is 2 percentage points below natural while inflation is 1 percentage point higher."
+      ],
+      "derivation": "Read A and B from the visually inspected SRPC-02/03. Subtract axis coordinates, keeping percentage-point units and the supplied unchanged expectations/supply assumption.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PG5-PC-H-022",
+      "contentRevised": true,
+      "finalStem": "Refer to the graph with points A and B on SRPC0. The natural rate and supply conditions are unchanged, and inflation expectations have not yet adjusted. Planned investment unexpectedly contracts. Which interpretation links the demand event to the graph and distinguishes current unemployment from its natural rate?",
+      "parsedNumbers": [
+        "0"
+      ],
+      "recomputed": {
+        "unemploymentGapPoints": "2",
+        "inflationChangePoints": "-1"
+      },
+      "correctOption": "The economy moves A to B along SRPC0; unemployment is 2 percentage points above natural while inflation is 1 percentage point lower.",
+      "allOptions": [
+        "The economy shifts to a different SRPC because any change in actual inflation changes expectations immediately.",
+        "The economy moves A to B along SRPC0; unemployment is 2 percentage points above natural while inflation is 1 percentage point lower.",
+        "LRPC shifts right to 7 percent unemployment because weaker demand permanently worsens matching.",
+        "The economy moves B to A because weaker demand raises inflation and reduces unemployment."
+      ],
+      "derivation": "Read A and B from the visually inspected SRPC-02/03. Subtract axis coordinates, keeping percentage-point units and the supplied unchanged expectations/supply assumption.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PG5-PC-L-018",
+      "contentRevised": true,
+      "finalStem": "Refer to the graph with A and B on SRPC0. Initially expected inflation is the inflation rate at A, and the economy is at B. Next period expected inflation equals this period’s actual inflation. Hold the natural rate and supply conditions fixed; each one-point expectations change shifts the SRPC vertically by one point with slope unchanged. Compare keeping unemployment at B’s rate with instead keeping actual inflation at B’s current rate. Which next-period outcome follows?",
+      "parsedNumbers": [
+        "0"
+      ],
+      "recomputed": {
+        "nextExpected": "7/2",
+        "inflationAtUnemployment3": "9/2",
+        "unemploymentIfInflationEqualsExpectation": "5"
+      },
+      "correctOption": "Keeping unemployment at 3 percent requires 4.5 percent inflation; holding inflation at 3.5 percent instead returns unemployment to 5 percent.",
+      "allOptions": [
+        "Keeping unemployment at 3 percent requires unchanged 3.5 percent inflation; holding inflation fixed shifts LRPC to 3 percent.",
+        "Keeping unemployment at 3 percent requires 4.5 percent inflation; holding inflation at 3.5 percent instead returns unemployment to 5 percent.",
+        "Keeping unemployment at 3 percent requires 2.5 percent inflation; holding inflation at 3.5 percent raises unemployment to 7 percent.",
+        "Both targets give the same unchanged point B because adaptive expectations cannot shift an SRPC."
+      ],
+      "derivation": "The image gives a one-point initial inflation surprise at unemployment 3. The final-stem adaptive rule raises expectations to 3.5. Maintaining the same unemployment gap requires the same surprise; fixed inflation at the new expectation instead gives natural unemployment.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PG5-PC-L-024",
+      "contentRevised": true,
+      "finalStem": "Refer to the graph with B to the right of A on SRPC0. Initially actual inflation is B’s rate and expected inflation is A’s rate. Each period expectations equal the previous period’s actual inflation; each one-point expectations change shifts SRPC vertically by one point with slope unchanged. Natural unemployment and supply conditions stay fixed. Policy holds unemployment at B’s rate for one additional period, then requires inflation to be nonnegative in the following period. What inflation occurs in the additional period, and what is the highest unemployment rate compatible with that later inflation constraint?",
+      "parsedNumbers": [
+        "0"
+      ],
+      "recomputed": {
+        "plottedSlope": "-1/2",
+        "nextInflation": "1/2",
+        "followingExpectedInflation": "1/2",
+        "maximumUnemploymentAtNonnegativeInflation": "6"
+      },
+      "correctOption": "Inflation is 0.5 percent, then unemployment can be at most 6 percent.",
+      "allOptions": [
+        "Inflation stays 1.5 percent, then unemployment can remain at 7 percent.",
+        "Inflation is 0.5 percent, then unemployment can remain at 7 percent without deflation.",
+        "Inflation is 2.5 percent, then unemployment can be at most 5 percent.",
+        "Inflation is 0.5 percent, then unemployment can be at most 6 percent."
+      ],
+      "derivation": "Derive the line slope from A and B; apply the explicitly adaptive forecast twice. Solve the following-period inflation inequality at its zero-inflation boundary.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "PG5-PC-L-006",
+      "contentRevised": true,
+      "finalStem": "Refer to the graph with SRPC0, SRPC1, A and B. Use the model inflation = expected inflation − 0.6 × (unemployment − 5) + supply offset, with all rates in percent and differences in percentage points. At B the separately measured supply offset is +1.1 points. What expected inflation is consistent with B, and could the graph alone identify that expectation if the supply offset were unknown?",
+      "parsedNumbers": [
+        "0",
+        "1",
+        "3/5",
+        "5",
+        "11/10"
+      ],
+      "recomputed": {
+        "plottedUnemployment": "6",
+        "plottedInflation": "6",
+        "expectedPlusOffset": "33/5",
+        "supplyOffset": "11/10",
+        "expectedInflation": "11/2"
+      },
+      "correctOption": "Expected inflation is 5.5 percent; without the supply-offset measurement, only expected inflation plus the offset is identified.",
+      "allOptions": [
+        "Expected inflation is 6 percent; actual inflation equals expectations at every point on an SRPC.",
+        "Expected inflation is 5.5 percent; without the supply-offset measurement, only expected inflation plus the offset is identified.",
+        "Expected inflation is 6.6 percent; the supply offset can be ignored even though it is positive.",
+        "Expected inflation is 4.3 percent; both the unemployment gap and the supply offset must be subtracted from actual inflation."
+      ],
+      "derivation": "Read B=(6,6) from SRPC-04; solve the final-stem equation. Separate identification of expectation requires the separately measured supply offset.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    },
+    {
+      "id": "P52B-S1-LRPC-L-002",
+      "contentRevised": true,
+      "finalStem": "A matching reform lowers the natural unemployment rate from 6.4 percent to 5.6 percent. At the same time, an unexpected demand expansion lowers actual unemployment to 4.9 percent. Later inflation expectations fully adjust while the reform remains in place and no new surprises occur. Which decomposition separates the durable change from the initial cyclical change?",
+      "parsedNumbers": [
+        "32/5",
+        "28/5",
+        "49/10"
+      ],
+      "recomputed": {
+        "structuralNaturalRateFall": "4/5",
+        "initialCyclicalGapBelowNatural": "7/10",
+        "longRunUnemployment": "28/5"
+      },
+      "correctOption": "LRPC shifts left by 0.8 percentage point; the initial gap is 0.7 point below the new natural rate, and long-run unemployment returns to 5.6 percent.",
+      "allOptions": [
+        "LRPC shifts left by 1.5 percentage points; actual unemployment at 4.9 percent is the new permanent natural rate.",
+        "LRPC stays at 6.4 percent; both the reform and demand expansion are temporary movements along SRPC.",
+        "LRPC shifts to 5.6 percent, but expectations adjustment permanently fixes unemployment at 4.9 percent.",
+        "LRPC shifts left by 0.8 percentage point; the initial gap is 0.7 point below the new natural rate, and long-run unemployment returns to 5.6 percent."
+      ],
+      "derivation": "Subtract the new natural rate from the old rate for the structural change, and actual unemployment from the new natural rate for the cyclical component. The final-stem absence of further surprises fixes the long-run anchor.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "unitsAndWindowReviewed": true
+    }
+  ]
+}
