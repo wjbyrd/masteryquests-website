@@ -1,0 +1,45 @@
+{
+  "preset": {
+    "id": "stabilization-policy",
+    "title": "AD-AS, Fiscal Policy & Stabilization",
+    "selectedConceptIds": [
+      "fiscal-policy-and-aggregate-demand",
+      "fiscal-multipliers-and-crowding-out",
+      "stabilization-policy",
+      "aggregate-demand",
+      "short-run-aggregate-supply",
+      "long-run-aggregate-supply-and-potential-output",
+      "ad-as-equilibrium-and-output-gaps",
+      "demand-and-supply-shocks",
+      "long-run-macroeconomic-self-adjustment",
+      "short-run-phillips-curve",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "disinflation-and-policy",
+      "sacrifice-ratio"
+    ]
+  },
+  "allSelectionsDirect": true,
+  "contentAuditConcepts": [
+    "fiscal-policy-and-aggregate-demand",
+    "fiscal-multipliers-and-crowding-out",
+    "stabilization-policy",
+    "aggregate-demand",
+    "short-run-aggregate-supply",
+    "long-run-aggregate-supply-and-potential-output",
+    "ad-as-equilibrium-and-output-gaps",
+    "demand-and-supply-shocks",
+    "long-run-macroeconomic-self-adjustment"
+  ],
+  "deferredPhillipsConcepts": [
+    "short-run-phillips-curve",
+    "long-run-phillips-curve",
+    "phillips-curve-expectations",
+    "disinflation-and-policy",
+    "sacrifice-ratio"
+  ],
+  "contentAuditRecords": 466,
+  "deferredPhillipsRecords": 262,
+  "included": "AD components and determinants; price-level movement versus shifts; sticky wages/prices, SRAS/LRAS, capacity, equilibrium/output gaps, demand/supply shocks, self-adjustment; purchases, taxes, transfers, MPC/spending and tax multipliers, crowding-out offsets, automatic stabilization, lags and policy tradeoffs.",
+  "boundary": "Monetary mechanics and loanable-funds mechanics remain protected by prior audits; incidental monetary shocks and crowding-out offsets may be supplied as inputs. Existing NX/import channels are selected applications, not authorization to rebuild open-economy modules. Phillips content is explicitly present in the live preset but deferred by user instructions."
+}

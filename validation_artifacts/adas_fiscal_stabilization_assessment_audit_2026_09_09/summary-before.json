@@ -1,0 +1,1396 @@
+{
+  "preset": {
+    "id": "stabilization-policy",
+    "title": "AD-AS, Fiscal Policy & Stabilization",
+    "selectedConceptIds": [
+      "fiscal-policy-and-aggregate-demand",
+      "fiscal-multipliers-and-crowding-out",
+      "stabilization-policy",
+      "aggregate-demand",
+      "short-run-aggregate-supply",
+      "long-run-aggregate-supply-and-potential-output",
+      "ad-as-equilibrium-and-output-gaps",
+      "demand-and-supply-shocks",
+      "long-run-macroeconomic-self-adjustment",
+      "short-run-phillips-curve",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "disinflation-and-policy",
+      "sacrifice-ratio"
+    ]
+  },
+  "unique": 728,
+  "byConcept": {
+    "fiscal-policy-and-aggregate-demand": {
+      "unique": 54,
+      "objectives": {
+        "LO35.3": 29,
+        "35.3": 25
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 11,
+        "hard": 10,
+        "elite": 4,
+        "legendary": 11,
+        "unknown": 9
+      },
+      "types": {
+        "interpretation": 3,
+        "definition": 2,
+        "policy_direction": 2,
+        "graph_interpretation": 2,
+        "identification": 2,
+        "explanation": 2,
+        "policy_application": 2,
+        "calculation": 4,
+        "analysis": 1,
+        "policy-analysis": 4,
+        "integration": 1,
+        "policy_calculation": 1,
+        "multi-step": 5,
+        "application": 9,
+        "policy_package_synthesis": 1,
+        "finalboss_scaffold_definition": 1,
+        "finalboss_scaffold_application": 1,
+        "finalboss_scaffold_synthesis": 1,
+        "legendary_boss_tax_multiplier": 1,
+        "repair": 6,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 8,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 8,
+        "calculation": 4,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 6,
+        "bridgeQuestions": 3
+      },
+      "assets": 1,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "fiscal-multipliers-and-crowding-out": {
+      "unique": 76,
+      "objectives": {
+        "LO35.4": 25,
+        "35.4": 51
+      },
+      "difficulty": {
+        "easy": 12,
+        "medium": 14,
+        "hard": 14,
+        "elite": 11,
+        "legendary": 11,
+        "unknown": 14
+      },
+      "types": {
+        "definition": 6,
+        "interpretation": 1,
+        "concept": 2,
+        "graph_identification": 2,
+        "relationship": 1,
+        "application": 1,
+        "graph_interpretation": 3,
+        "graph_explanation": 1,
+        "graph_application": 1,
+        "identification": 1,
+        "comparison": 1,
+        "integration": 3,
+        "graph_calculation": 1,
+        "reverse_graph_calculation": 1,
+        "comparative_graph_calculation": 1,
+        "graph_net_effect_calculation": 1,
+        "graph_policy_synthesis": 1,
+        "multi_step_graph_calculation": 1,
+        "concept_synthesis": 1,
+        "trap": 1,
+        "graph_integration": 1,
+        "legendary_multiplier_graph_order": 1,
+        "legendary_reverse_multiplier_graph": 1,
+        "legendary_comparative_graph_order": 1,
+        "legendary_net_fiscal_graph_order": 1,
+        "multi-step-policy-comparison": 1,
+        "reverse-calculation": 1,
+        "calculation": 13,
+        "multi_step_calculation": 1,
+        "finalboss_scaffold_definition": 1,
+        "finalboss_scaffold_calculation": 1,
+        "finalboss_scaffold_synthesis": 1,
+        "checkpoint": 4,
+        "legendary_boss_fiscal_net_effect": 1,
+        "legendary_boss_reverse_multiplier_graph": 1,
+        "legendary_boss_dual_channel": 1,
+        "repair": 9,
+        "bridge": 5
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 7,
+        "hard": 6,
+        "elite": 11,
+        "legendary": 8,
+        "calculation": 12,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 9,
+        "bridgeQuestions": 5
+      },
+      "assets": 3,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "stabilization-policy": {
+      "unique": 82,
+      "objectives": {
+        "LO35.5": 23,
+        "35.5": 59
+      },
+      "difficulty": {
+        "easy": 12,
+        "medium": 12,
+        "hard": 15,
+        "elite": 12,
+        "legendary": 18,
+        "unknown": 13
+      },
+      "types": {
+        "definition": 3,
+        "concept": 5,
+        "policy_direction": 2,
+        "application": 4,
+        "interpretation": 5,
+        "policy_application": 3,
+        "trap": 1,
+        "policy_mix": 3,
+        "concept_explanation": 1,
+        "shock_analysis": 3,
+        "integration": 3,
+        "graph_policy_application": 2,
+        "graph_policy_synthesis": 1,
+        "policy_gap_calculation": 1,
+        "policy_mix_synthesis": 2,
+        "shock_synthesis": 2,
+        "policy_lag_synthesis": 1,
+        "legendary_graph_gap_calculation": 1,
+        "legendary_reverse_graph_calculation": 1,
+        "legendary_policy_mix_calculation": 1,
+        "legendary_policy_overshoot": 1,
+        "legendary_fiscal_gap_graph_order": 1,
+        "legendary_overheating_multiplier_order": 1,
+        "legendary_policy_mix_graph_offset": 1,
+        "legendary_combined_policy_gap_graph_order": 1,
+        "policy-lag-synthesis": 1,
+        "policy-lag-calculation": 1,
+        "cross-family-transfer": 1,
+        "policy-timing-transfer": 1,
+        "finalboss_scaffold_definition": 1,
+        "finalboss_scaffold_application": 1,
+        "finalboss_scaffold_synthesis": 1,
+        "checkpoint": 6,
+        "legendary_boss_combined_gap": 1,
+        "legendary_boss_overheating_gap": 1,
+        "legendary_boss_fiscal_gap": 1,
+        "legendary_boss_policy_context": 1,
+        "legendary_boss_policy_collision": 1,
+        "legendary_boss_shock_synthesis": 1,
+        "repair": 8,
+        "bridge": 5
+      },
+      "poolCounts": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 12,
+        "elite": 12,
+        "legendary": 12,
+        "boss": 9,
+        "legendaryBoss": 6,
+        "repairQuestions": 8,
+        "bridgeQuestions": 5
+      },
+      "assets": 2,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "aggregate-demand": {
+      "unique": 59,
+      "objectives": {
+        "LO34.1": 54,
+        "34.1": 5
+      },
+      "difficulty": {
+        "easy": 11,
+        "medium": 13,
+        "hard": 11,
+        "elite": 6,
+        "legendary": 11,
+        "unknown": 7
+      },
+      "types": {
+        "definition": 2,
+        "interpretation": 9,
+        "application": 14,
+        "graph": 2,
+        "multi-step": 9,
+        "analysis": 9,
+        "comparison": 1,
+        "sequence": 2,
+        "calculation": 2,
+        "error-analysis": 1,
+        "policy-analysis": 1,
+        "repair": 5,
+        "bridge": 2
+      },
+      "poolCounts": {
+        "easy": 8,
+        "medium": 10,
+        "hard": 8,
+        "elite": 6,
+        "legendary": 8,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 5,
+        "bridgeQuestions": 2
+      },
+      "assets": 4,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "short-run-aggregate-supply": {
+      "unique": 48,
+      "objectives": {
+        "LO34.2": 38,
+        "LO34.3": 3,
+        "34.3": 3,
+        "34.2": 4
+      },
+      "difficulty": {
+        "easy": 8,
+        "medium": 10,
+        "hard": 10,
+        "elite": 5,
+        "legendary": 7,
+        "unknown": 8
+      },
+      "types": {
+        "definition": 1,
+        "interpretation": 9,
+        "application": 10,
+        "graph": 2,
+        "analysis": 10,
+        "policy-analysis": 1,
+        "calculation": 2,
+        "multi-step": 4,
+        "error-analysis": 1,
+        "repair": 5,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 8,
+        "hard": 8,
+        "elite": 5,
+        "legendary": 5,
+        "boss": 6,
+        "legendaryBoss": 2,
+        "repairQuestions": 5,
+        "bridgeQuestions": 3
+      },
+      "assets": 4,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths",
+        "standaloneRecommendation",
+        "taxonomyPhase",
+        "legacySourceConceptIds"
+      ]
+    },
+    "long-run-aggregate-supply-and-potential-output": {
+      "unique": 15,
+      "objectives": {
+        "LO34.2": 13,
+        "34.2": 2
+      },
+      "difficulty": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 3,
+        "elite": 1,
+        "legendary": 4,
+        "unknown": 2
+      },
+      "types": {
+        "definition": 1,
+        "application": 6,
+        "multi-step": 4,
+        "analysis": 1,
+        "policy-analysis": 1,
+        "repair": 1,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 2,
+        "medium": 1,
+        "hard": 2,
+        "elite": 1,
+        "legendary": 3,
+        "boss": 3,
+        "legendaryBoss": 1,
+        "repairQuestions": 1,
+        "bridgeQuestions": 1
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths",
+        "standaloneRecommendation",
+        "taxonomyPhase",
+        "legacySourceConceptIds"
+      ]
+    },
+    "ad-as-equilibrium-and-output-gaps": {
+      "unique": 30,
+      "objectives": {
+        "LO34.4": 6,
+        "LO34.3": 7,
+        "LO34.5": 14,
+        "34.5": 3
+      },
+      "difficulty": {
+        "easy": 11,
+        "medium": 6,
+        "hard": 3,
+        "elite": 2,
+        "legendary": 2,
+        "unknown": 6
+      },
+      "types": {
+        "interpretation": 6,
+        "graph": 4,
+        "definition": 2,
+        "graph_interpretation": 5,
+        "application": 4,
+        "analysis": 2,
+        "multi-step": 1,
+        "repair": 5,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 9,
+        "medium": 6,
+        "hard": 2,
+        "elite": 2,
+        "legendary": 1,
+        "boss": 3,
+        "legendaryBoss": 1,
+        "repairQuestions": 5,
+        "bridgeQuestions": 1
+      },
+      "assets": 5,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths",
+        "standaloneRecommendation",
+        "taxonomyPhase",
+        "legacySourceConceptIds"
+      ]
+    },
+    "demand-and-supply-shocks": {
+      "unique": 69,
+      "objectives": {
+        "LO34.4": 47,
+        "LO34.3": 15,
+        "LO34.2": 1,
+        "34.4": 6
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 17,
+        "hard": 13,
+        "elite": 8,
+        "legendary": 12,
+        "unknown": 10
+      },
+      "types": {
+        "interpretation": 6,
+        "definition": 1,
+        "graph": 6,
+        "analysis": 3,
+        "graph_interpretation": 12,
+        "trap": 4,
+        "calculation": 2,
+        "multi-step": 8,
+        "integration": 1,
+        "graph_integration": 3,
+        "policy_synthesis": 1,
+        "checkpoint": 9,
+        "mastery_checkpoint": 3,
+        "repair": 7,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 14,
+        "hard": 10,
+        "elite": 8,
+        "legendary": 9,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 7,
+        "bridgeQuestions": 3
+      },
+      "assets": 7,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths",
+        "standaloneRecommendation",
+        "taxonomyPhase",
+        "legacySourceConceptIds"
+      ]
+    },
+    "long-run-macroeconomic-self-adjustment": {
+      "unique": 33,
+      "objectives": {
+        "LO34.5": 29,
+        "LO34.3": 1,
+        "34.5": 3
+      },
+      "difficulty": {
+        "easy": 3,
+        "medium": 6,
+        "hard": 6,
+        "elite": 7,
+        "legendary": 8,
+        "unknown": 3
+      },
+      "types": {
+        "definition": 1,
+        "application": 11,
+        "multi-step": 7,
+        "graph_interpretation": 4,
+        "analysis": 1,
+        "integration": 4,
+        "graph_integration": 2,
+        "repair": 2,
+        "bridge": 1
+      },
+      "poolCounts": {
+        "easy": 2,
+        "medium": 3,
+        "hard": 4,
+        "elite": 7,
+        "legendary": 6,
+        "boss": 6,
+        "legendaryBoss": 2,
+        "repairQuestions": 2,
+        "bridgeQuestions": 1
+      },
+      "assets": 2,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths",
+        "standaloneRecommendation",
+        "taxonomyPhase",
+        "legacySourceConceptIds"
+      ]
+    },
+    "short-run-phillips-curve": {
+      "unique": 62,
+      "objectives": {
+        "LO36.1": 39,
+        "MACRO.M2A": 15,
+        "36.1": 8
+      },
+      "difficulty": {
+        "easy": 14,
+        "medium": 14,
+        "hard": 12,
+        "elite": 3,
+        "legendary": 10,
+        "unknown": 9
+      },
+      "types": {
+        "definition": 4,
+        "interpretation": 6,
+        "graph": 4,
+        "graph_interpretation": 7,
+        "calculation": 2,
+        "analysis": 5,
+        "application": 16,
+        "trap": 2,
+        "integration": 1,
+        "graph_integration": 2,
+        "multi-step": 2,
+        "boss_scaffold_definition": 1,
+        "boss_scaffold_application": 1,
+        "repair": 5,
+        "bridge": 4
+      },
+      "poolCounts": {
+        "easy": 11,
+        "medium": 11,
+        "hard": 9,
+        "elite": 3,
+        "legendary": 7,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 5,
+        "bridgeQuestions": 4
+      },
+      "assets": 5,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "long-run-phillips-curve": {
+      "unique": 49,
+      "objectives": {
+        "LO36.2": 25,
+        "MACRO.M2A": 22,
+        "36.2": 2
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 11,
+        "hard": 9,
+        "elite": 6,
+        "legendary": 9,
+        "unknown": 5
+      },
+      "types": {
+        "definition": 1,
+        "interpretation": 6,
+        "application": 21,
+        "graph_interpretation": 3,
+        "graph": 1,
+        "analysis": 5,
+        "multi-step": 5,
+        "boss_scaffold_definition": 1,
+        "boss_scaffold_application": 1,
+        "repair": 2,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 8,
+        "hard": 6,
+        "elite": 6,
+        "legendary": 6,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 2,
+        "bridgeQuestions": 3
+      },
+      "assets": 6,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "phillips-curve-expectations": {
+      "unique": 57,
+      "objectives": {
+        "LO36.3": 38,
+        "MACRO.M2A": 13,
+        "36.3": 6
+      },
+      "difficulty": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 15,
+        "elite": 4,
+        "legendary": 12,
+        "unknown": 6
+      },
+      "types": {
+        "interpretation": 8,
+        "definition": 1,
+        "graph": 1,
+        "application": 14,
+        "graph_interpretation": 12,
+        "multi-step": 4,
+        "analysis": 2,
+        "integration": 2,
+        "trap": 4,
+        "graph_integration": 1,
+        "boss_scaffold_definition": 1,
+        "boss_scaffold_application": 1,
+        "repair": 3,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 7,
+        "medium": 7,
+        "hard": 12,
+        "elite": 4,
+        "legendary": 9,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 3,
+        "bridgeQuestions": 3
+      },
+      "assets": 5,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "disinflation-and-policy": {
+      "unique": 43,
+      "objectives": {
+        "LO36.4": 18,
+        "MACRO.M2A": 21,
+        "36.4": 4
+      },
+      "difficulty": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 9,
+        "elite": 2,
+        "legendary": 9,
+        "unknown": 5
+      },
+      "types": {
+        "interpretation": 4,
+        "definition": 2,
+        "application": 18,
+        "graph_interpretation": 4,
+        "multi-step": 2,
+        "graph_integration": 2,
+        "calculation": 4,
+        "boss_scaffold_definition": 1,
+        "boss_scaffold_application": 1,
+        "repair": 2,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 2,
+        "legendary": 6,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 2,
+        "bridgeQuestions": 3
+      },
+      "assets": 1,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    },
+    "sacrifice-ratio": {
+      "unique": 51,
+      "objectives": {
+        "LO36.5": 20,
+        "MACRO.M2A": 25,
+        "36.5": 6
+      },
+      "difficulty": {
+        "easy": 10,
+        "medium": 10,
+        "hard": 11,
+        "elite": 5,
+        "legendary": 9,
+        "unknown": 6
+      },
+      "types": {
+        "definition": 1,
+        "interpretation": 4,
+        "application": 9,
+        "calculation": 26,
+        "trap": 1,
+        "integration": 2,
+        "boss_scaffold_definition": 1,
+        "boss_scaffold_application": 1,
+        "repair": 3,
+        "bridge": 3
+      },
+      "poolCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 6,
+        "elite": 5,
+        "legendary": 6,
+        "calculation": 4,
+        "boss": 9,
+        "legendaryBoss": 3,
+        "repairQuestions": 3,
+        "bridgeQuestions": 3
+      },
+      "assets": 0,
+      "keys": [
+        "schemaVersion",
+        "canonicalConceptId",
+        "title",
+        "description",
+        "sourceChapters",
+        "legacyObjectives",
+        "objectiveLabels",
+        "questions",
+        "repairQuestions",
+        "repairSeedQuestions",
+        "bridgeQuestions",
+        "directSkillRepairRoutes",
+        "microSkillRepairPools",
+        "skillRepairSeedPools",
+        "microSkillBridgePools",
+        "assets",
+        "assetMetadata",
+        "assetPaths"
+      ]
+    }
+  },
+  "difficulty": {
+    "easy": 130,
+    "medium": 145,
+    "hard": 141,
+    "elite": 76,
+    "legendary": 133,
+    "unknown": 103
+  },
+  "types": {
+    "interpretation": 67,
+    "definition": 28,
+    "policy_direction": 4,
+    "graph_interpretation": 52,
+    "identification": 3,
+    "explanation": 2,
+    "policy_application": 5,
+    "calculation": 55,
+    "analysis": 39,
+    "policy-analysis": 7,
+    "integration": 17,
+    "policy_calculation": 1,
+    "multi-step": 51,
+    "application": 137,
+    "policy_package_synthesis": 1,
+    "finalboss_scaffold_definition": 3,
+    "finalboss_scaffold_application": 2,
+    "finalboss_scaffold_synthesis": 3,
+    "legendary_boss_tax_multiplier": 1,
+    "repair": 63,
+    "bridge": 40,
+    "concept": 7,
+    "graph_identification": 2,
+    "relationship": 1,
+    "graph_explanation": 1,
+    "graph_application": 1,
+    "comparison": 2,
+    "graph_calculation": 1,
+    "reverse_graph_calculation": 1,
+    "comparative_graph_calculation": 1,
+    "graph_net_effect_calculation": 1,
+    "graph_policy_synthesis": 2,
+    "multi_step_graph_calculation": 1,
+    "concept_synthesis": 1,
+    "trap": 13,
+    "graph_integration": 11,
+    "legendary_multiplier_graph_order": 1,
+    "legendary_reverse_multiplier_graph": 1,
+    "legendary_comparative_graph_order": 1,
+    "legendary_net_fiscal_graph_order": 1,
+    "multi-step-policy-comparison": 1,
+    "reverse-calculation": 1,
+    "multi_step_calculation": 1,
+    "finalboss_scaffold_calculation": 1,
+    "checkpoint": 19,
+    "legendary_boss_fiscal_net_effect": 1,
+    "legendary_boss_reverse_multiplier_graph": 1,
+    "legendary_boss_dual_channel": 1,
+    "policy_mix": 3,
+    "concept_explanation": 1,
+    "shock_analysis": 3,
+    "graph_policy_application": 2,
+    "policy_gap_calculation": 1,
+    "policy_mix_synthesis": 2,
+    "shock_synthesis": 2,
+    "policy_lag_synthesis": 1,
+    "legendary_graph_gap_calculation": 1,
+    "legendary_reverse_graph_calculation": 1,
+    "legendary_policy_mix_calculation": 1,
+    "legendary_policy_overshoot": 1,
+    "legendary_fiscal_gap_graph_order": 1,
+    "legendary_overheating_multiplier_order": 1,
+    "legendary_policy_mix_graph_offset": 1,
+    "legendary_combined_policy_gap_graph_order": 1,
+    "policy-lag-synthesis": 1,
+    "policy-lag-calculation": 1,
+    "cross-family-transfer": 1,
+    "policy-timing-transfer": 1,
+    "legendary_boss_combined_gap": 1,
+    "legendary_boss_overheating_gap": 1,
+    "legendary_boss_fiscal_gap": 1,
+    "legendary_boss_policy_context": 1,
+    "legendary_boss_policy_collision": 1,
+    "legendary_boss_shock_synthesis": 1,
+    "graph": 20,
+    "sequence": 2,
+    "error-analysis": 2,
+    "policy_synthesis": 1,
+    "mastery_checkpoint": 3,
+    "boss_scaffold_definition": 5,
+    "boss_scaffold_application": 5
+  },
+  "graphLinked": 161,
+  "composedCounts": {
+    "easy": 94,
+    "medium": 109,
+    "hard": 105,
+    "elite": 76,
+    "legendary": 94,
+    "easyBoss": 36,
+    "mediumBoss": 36,
+    "finalBoss": 36,
+    "legendaryBoss": 39,
+    "repair": 63,
+    "repairSeed": 0,
+    "bridge": 40,
+    "calculation": 20,
+    "integration": 0,
+    "challengeOpening": 0,
+    "challengeMiddle": 0,
+    "challengeFinal": 0,
+    "challengeLegendary": 0,
+    "challengeTotal": 0,
+    "graph": 161,
+    "graphSafe": 72,
+    "graphSafeByDifficulty": {
+      "easy": 12,
+      "medium": 24,
+      "hard": 12,
+      "elite": 12,
+      "legendary": 12
+    },
+    "fadingFortuneEligible": 478,
+    "fadingFortuneByDifficulty": {
+      "easy": 94,
+      "medium": 109,
+      "hard": 105,
+      "elite": 76,
+      "legendary": 94
+    },
+    "riskRewardEligible": 478,
+    "riskRewardByDifficulty": {
+      "easy": 94,
+      "medium": 109,
+      "hard": 105,
+      "elite": 76,
+      "legendary": 94
+    },
+    "assets": 27,
+    "totalCanonical": 728
+  },
+  "modes": {
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 94
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 109
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 105
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 36
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 36
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 63
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 40
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 94
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 109
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 105
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 63
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 40
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 94
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 109
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 105
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 63
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 40
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 94
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 109
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 105
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 94
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 109
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 105
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 63
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 40
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 94
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 39
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 94
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 109
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 105
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 36
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 36
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 63
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 40
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 72
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 478
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 478
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ]
+  },
+  "errors": []
+}

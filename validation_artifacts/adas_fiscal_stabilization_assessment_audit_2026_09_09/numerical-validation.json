@@ -1,0 +1,609 @@
+{
+  "method": "Independent final-stem parsing with rational arithmetic or separately transcribed original-image coordinates. Computation precedes answer-key comparison; hashes do not establish numerical validity.",
+  "count": 24,
+  "items": [
+    {
+      "id": "LG-Q-275",
+      "finalStem": "A fiscal package produces a gross $300 billion rightward AD shift in a simplified expenditure model. Crowding out produces a total $80 billion leftward AD offset, including all induced spending effects of the displaced investment. What net AD increase should policy analysis use?",
+      "parsedDollarMagnitudes": [
+        "300",
+        "80"
+      ],
+      "recomputed": {
+        "grossAD": "300",
+        "totalADOffset": "80",
+        "netAD": "220"
+      },
+      "keyedOption": "$220 billion",
+      "options": [
+        "$220 billion",
+        "$380 billion",
+        "$80 billion",
+        "$300 billion"
+      ],
+      "derivation": "Both final-stem amounts are total AD changes. Subtract once; do not multiply the explicit induced-spending-inclusive offset.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-373",
+      "finalStem": "A fiscal package produces a gross $200 billion rightward AD shift in a simplified expenditure model. Crowding out produces a total $60 billion leftward AD offset, including all induced spending effects of the displaced investment. What net AD increase should policy analysis use?",
+      "parsedDollarMagnitudes": [
+        "200",
+        "60"
+      ],
+      "recomputed": {
+        "grossAD": "200",
+        "totalADOffset": "60",
+        "netAD": "140"
+      },
+      "keyedOption": "$140 billion",
+      "options": [
+        "$140 billion",
+        "$260 billion",
+        "$200 billion",
+        "$60 billion"
+      ],
+      "derivation": "Both final-stem amounts are total AD changes. Subtract once; do not multiply the explicit induced-spending-inclusive offset.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "P52B-S4-FMCO-B2-002",
+      "finalStem": "A fiscal package produces a gross $120 billion rightward AD shift in a simplified expenditure model. Crowding out produces a total $25 billion leftward AD offset, including all induced spending effects of the displaced investment. What net AD increase should policy analysis use?",
+      "parsedDollarMagnitudes": [
+        "120",
+        "25"
+      ],
+      "recomputed": {
+        "grossAD": "120",
+        "totalADOffset": "25",
+        "netAD": "95"
+      },
+      "keyedOption": "Aggregate demand rises by $95 billion.",
+      "options": [
+        "Aggregate demand rises by $145 billion.",
+        "Aggregate demand rises by $25 billion.",
+        "Aggregate demand rises by $95 billion.",
+        "Aggregate demand falls by $95 billion."
+      ],
+      "derivation": "Both final-stem amounts are total AD changes. Subtract once; do not multiply the explicit induced-spending-inclusive offset.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-B-6023",
+      "finalStem": "A stabilization analyst receives two model estimates: a $300 billion gross rightward AD shift from fiscal expansion and a total $80 billion AD reduction from displaced investment, including its induced spending effects. Which AD impulse should the analyst carry into the stabilization forecast?",
+      "parsedDollarMagnitudes": [
+        "300",
+        "80"
+      ],
+      "recomputed": {
+        "grossAD": "300",
+        "totalADOffset": "80",
+        "netAD": "220"
+      },
+      "keyedOption": "$220 billion net increase.",
+      "options": [
+        "$220 billion net increase.",
+        "$380 billion net increase.",
+        "$300 billion because stabilization uses only the gross multiplier effect.",
+        "$80 billion because crowding out replaces the fiscal impulse."
+      ],
+      "derivation": "Both final-stem amounts are total AD changes. Subtract once; do not multiply the explicit induced-spending-inclusive offset.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-376",
+      "finalStem": "Government purchases increase by $60 billion. MPC = 0.75; use the simple spending multiplier, with no other leakages. Crowding out produces a total $50 billion AD offset, including its induced spending effects. What is the net rightward AD shift?",
+      "parsedDollarMagnitudes": [
+        "60",
+        "50"
+      ],
+      "recomputed": {
+        "MPC": "3/4",
+        "multiplier": "4",
+        "grossAD": "240",
+        "netAD": "190"
+      },
+      "keyedOption": "$190 billion",
+      "options": [
+        "$190 billion",
+        "$240 billion",
+        "$110 billion",
+        "$10 billion"
+      ],
+      "derivation": "Apply 1/(1−MPC) to purchases, then subtract the total AD offset. For sequence options, also verify direct and gross stages separately.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-4011",
+      "finalStem": "Government purchases increase by $80 billion. MPC = 0.75; use the simple spending multiplier, with no other leakages. Crowding out produces a total $70 billion AD offset, including its induced spending effects. What is the net rightward AD shift?",
+      "parsedDollarMagnitudes": [
+        "80",
+        "70"
+      ],
+      "recomputed": {
+        "MPC": "3/4",
+        "multiplier": "4",
+        "grossAD": "320",
+        "netAD": "250"
+      },
+      "keyedOption": "+$250 billion",
+      "options": [
+        "+$250 billion",
+        "+$320 billion",
+        "+$70 billion",
+        "+$150 billion"
+      ],
+      "derivation": "Apply 1/(1−MPC) to purchases, then subtract the total AD offset. For sequence options, also verify direct and gross stages separately.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-9073",
+      "finalStem": "Government purchases increase by $100 billion. MPC = 0.6; use the simple spending multiplier, with no other leakages. Crowding out produces a total $75 billion AD offset, including its induced spending effects. Which sequence separates the direct purchases, gross multiplier prediction, and net AD shift?",
+      "parsedDollarMagnitudes": [
+        "100",
+        "75"
+      ],
+      "recomputed": {
+        "MPC": "3/5",
+        "multiplier": "5/2",
+        "grossAD": "250",
+        "netAD": "175"
+      },
+      "keyedOption": "AD first shifts right $100 billion, then the multiplier pushes the gross shift to $250 billion, then crowding out leaves a net $175 billion shift.",
+      "options": [
+        "AD first shifts right $100 billion, then the multiplier pushes the gross shift to $250 billion, then crowding out leaves a net $175 billion shift.",
+        "AD first shifts right $250 billion, then crowding out increases it to $325 billion.",
+        "AD first shifts left $100 billion, then the multiplier pushes it left $250 billion, then crowding out leaves $175 billion.",
+        "AD shifts right $100 billion only because crowding out cancels the multiplier."
+      ],
+      "derivation": "Apply 1/(1−MPC) to purchases, then subtract the total AD offset. For sequence options, also verify direct and gross stages separately.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-9133",
+      "finalStem": "Government purchases increase by $90 billion. MPC = 0.8; use the simple spending multiplier, with no other leakages. Crowding out produces a total $180 billion AD offset, including its induced spending effects. Which sequence separates the direct purchases, gross multiplier prediction, and net AD shift?",
+      "parsedDollarMagnitudes": [
+        "90",
+        "180"
+      ],
+      "recomputed": {
+        "MPC": "4/5",
+        "multiplier": "5",
+        "grossAD": "450",
+        "netAD": "270"
+      },
+      "keyedOption": "AD first shifts right $90 billion, then the multiplier pushes the gross shift to $450 billion, then crowding out leaves a net $270 billion shift.",
+      "options": [
+        "AD first shifts right $90 billion, then the multiplier pushes the gross shift to $450 billion, then crowding out leaves a net $270 billion shift.",
+        "AD first shifts right $450 billion, then crowding out increases the shift to $630 billion.",
+        "AD first shifts left $90 billion, then the multiplier pushes it left $450 billion, then crowding out leaves $270 billion.",
+        "AD shifts right only $90 billion because crowding out eliminates the multiplier."
+      ],
+      "derivation": "Apply 1/(1−MPC) to purchases, then subtract the total AD offset. For sequence options, also verify direct and gross stages separately.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-9069",
+      "finalStem": "At a fixed reference price level, desired spending is $250 billion below the policy target. Government purchases rise by $50 billion and MPC = 0.75. Use the simple spending multiplier with no other leakages. Crowding out produces a total $40 billion AD offset, including its induced spending effects. Which decomposition gives the net AD shift and remaining shortfall at that reference price?",
+      "parsedDollarMagnitudes": [
+        "250",
+        "50",
+        "40"
+      ],
+      "recomputed": {
+        "MPC": "3/4",
+        "multiplier": "4",
+        "grossAD": "200",
+        "totalADOffset": "40",
+        "netAD": "160",
+        "remainingHorizontalADGap": "90"
+      },
+      "keyedOption": "AD first shifts right $50 billion, then the multiplier pushes it to $200 billion, then crowding out leaves a net $160 billion shift and a $90 billion gap.",
+      "options": [
+        "AD first shifts right $50 billion, then the multiplier pushes it to $200 billion, then crowding out leaves a net $160 billion shift and a $90 billion gap.",
+        "AD first shifts right $250 billion, then crowding out leaves a $210 billion surplus.",
+        "AD first shifts left $50 billion, then the multiplier shifts it left $200 billion, leaving a $90 billion gap.",
+        "AD shifts right $50 billion only because crowding out cancels the multiplier."
+      ],
+      "derivation": "All gaps are measured at the same reference price. Subtract the induced-spending-inclusive offset from gross AD, then subtract net AD from the target distance.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-9139",
+      "finalStem": "At a fixed reference price level, desired spending is $600 billion below the policy target. Government purchases rise by $100 billion and MPC = 0.8. Use the simple spending multiplier with no other leakages. Crowding out produces a total $150 billion AD offset, including its induced spending effects. Which decomposition gives the net AD shift and remaining shortfall at that reference price?",
+      "parsedDollarMagnitudes": [
+        "600",
+        "100",
+        "150"
+      ],
+      "recomputed": {
+        "MPC": "4/5",
+        "multiplier": "5",
+        "grossAD": "500",
+        "totalADOffset": "150",
+        "netAD": "350",
+        "remainingHorizontalADGap": "250"
+      },
+      "keyedOption": "AD first shifts right $100 billion, then gross shift reaches $500 billion, then crowding out leaves $350 billion net and a $250 billion gap.",
+      "options": [
+        "AD first shifts right $100 billion, then gross shift reaches $500 billion, then crowding out leaves $350 billion net and a $250 billion gap.",
+        "AD first shifts right $600 billion, then crowding out leaves $450 billion net and a $150 billion gap.",
+        "AD first shifts left $100 billion, then gross shift reaches $500 billion, worsening the gap.",
+        "AD shifts right only $100 billion because crowding out cancels the multiplier."
+      ],
+      "derivation": "All gaps are measured at the same reference price. Subtract the induced-spending-inclusive offset from gross AD, then subtract net AD from the target distance.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-4014",
+      "finalStem": "At a fixed reference price, AD must shift right by $500 billion to meet the policy target. A supplied monetary-policy effect raises autonomous investment by $50 billion, government purchases rise by $60 billion, and fiscal crowding out reduces autonomous investment by $40 billion. MPC = 0.75; apply the same simple multiplier to each autonomous change, with no other leakages. What AD shortfall remains?",
+      "parsedDollarMagnitudes": [
+        "500",
+        "50",
+        "60",
+        "40"
+      ],
+      "recomputed": {
+        "netAutonomousSpending": "70",
+        "multiplier": "4",
+        "netAD": "280",
+        "remainingHorizontalADGap": "220"
+      },
+      "keyedOption": "$220 billion remains.",
+      "options": [
+        "$220 billion remains.",
+        "$100 billion remains.",
+        "$60 billion remains.",
+        "$460 billion remains."
+      ],
+      "derivation": "All three impulses are autonomous. Their net must be multiplied, including the raw investment loss: (50+60−40)×4=280, then 500−280=220. Alternatives 100 and 60 respectively omit induced displacement and all displacement; 460 omits the positive impulses.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-9070",
+      "finalStem": "At a fixed reference price level, desired spending already exceeds the policy target by $180 billion. Purchases rise by $30 billion and MPC = 0.8. With the simple spending multiplier and no offsets, which interpretation of the policy is correct?",
+      "parsedDollarMagnitudes": [
+        "180",
+        "30"
+      ],
+      "recomputed": {
+        "multiplier": "5",
+        "totalADShift": "150",
+        "finalExcessDesiredSpending": "330"
+      },
+      "keyedOption": "The direct $30 billion increase becomes a $150 billion AD shift, raising excess desired spending to $330 billion at the reference price.",
+      "options": [
+        "The direct $30 billion increase becomes a $150 billion AD shift, raising excess desired spending to $330 billion at the reference price.",
+        "The policy shifts AD left by $150 billion, reducing excess desired spending to $30 billion.",
+        "Only the direct $30 billion enters AD, raising excess desired spending to $210 billion.",
+        "The $150 billion AD shift exactly removes the existing $180 billion excess."
+      ],
+      "derivation": "Expansion adds to the already-positive horizontal AD excess. Do not treat the resulting AD distance as actual equilibrium GDP.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-9074",
+      "finalStem": "At a fixed reference price, desired spending is $400 billion below the policy target. Government purchases rise by $100 billion and MPC = 0.75. Using the simple spending multiplier and ignoring crowding out and other leakages, which decomposition gives the AD shift and remaining horizontal AD gap?",
+      "parsedDollarMagnitudes": [
+        "400",
+        "100"
+      ],
+      "recomputed": {
+        "multiplier": "4",
+        "totalADShift": "400",
+        "remainingHorizontalADGap": "0"
+      },
+      "keyedOption": "AD first shifts right $100 billion, then the multiplier expands the shift to $400 billion, closing the gap.",
+      "options": [
+        "AD first shifts right $100 billion, then the multiplier expands the shift to $400 billion, closing the gap.",
+        "AD first shifts right $400 billion, then falls back to $100 billion, leaving a $300 billion gap.",
+        "AD first shifts left $100 billion, then left $400 billion, worsening the gap.",
+        "AD shifts right $100 billion only, leaving a $300 billion gap."
+      ],
+      "derivation": "The explicitly horizontal reference-price gap and computed AD shift are equal.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "LG-Q-9136",
+      "finalStem": "At a fixed reference price, desired spending exceeds the policy target by $360 billion. Contractionary monetary policy is supplied as reducing autonomous investment by $50 billion. MPC = 0.8; use the simple spending multiplier with no other leakages. What excess desired spending remains at that reference price?",
+      "parsedDollarMagnitudes": [
+        "360",
+        "50"
+      ],
+      "recomputed": {
+        "multiplier": "5",
+        "ADReduction": "250",
+        "remainingExcessDesiredSpending": "110"
+      },
+      "keyedOption": "$110 billion",
+      "options": [
+        "$110 billion",
+        "$250 billion",
+        "$50 billion",
+        "No gap remains; policy overshoots by $110 billion."
+      ],
+      "derivation": "Investment response is supplied. Apply the spending multiplier to the autonomous reduction and subtract from the horizontal AD excess.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "PM2D2-STAB-L-002",
+      "finalStem": "A government authorizes $75 billion of extra purchases when the required rightward AD shift is $300 billion. Before payment, the required shift at the same reference price falls to $100 billion. The simple spending multiplier is 4; no crowding out or other leakages apply. One third of the authorized purchases must now occur, while the rest can still be cancelled. Which implementation decision meets the revised target without overshooting?",
+      "parsedDollarMagnitudes": [
+        "75",
+        "300",
+        "100"
+      ],
+      "recomputed": {
+        "unavoidablePurchases": "25",
+        "theirADShift": "100",
+        "cancelRemaining": "50",
+        "fullImplementationOvershoot": "200"
+      },
+      "keyedOption": "Cancel the remaining $50 billion; the unavoidable $25 billion already produces the required $100 billion AD shift.",
+      "options": [
+        "Pay the entire remaining $50 billion; the original authorization still matches the revised target.",
+        "Pay another $25 billion and cancel $25 billion; the unmultiplied purchases must equal the revised target.",
+        "Cancel all $75 billion; a revision of the target eliminates the unavoidable payment.",
+        "Cancel the remaining $50 billion; the unavoidable $25 billion already produces the required $100 billion AD shift."
+      ],
+      "derivation": "Extract the one-third unavoidable share, multiply it, and solve the remaining authorization against the revised target. The unavoidable portion already meets the target; any extra payment overshoots.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "ECON-SP-HARD-228",
+      "finalStem": "Refer to the AD multiplier graph. For this application, assign Y1 = $500 billion, Y2 = $560 billion, and Y3 = $620 billion at the marked price P. Starting on AD1, purchases increase by $40 billion and MPC = 0.5. Use the simple spending multiplier. Crowding out creates a total $20 billion AD offset, already including induced spending effects. Which drawn AD curve represents the net result at P?",
+      "parsedDollarMagnitudes": [
+        "500",
+        "560",
+        "620",
+        "40",
+        "20"
+      ],
+      "recomputed": {
+        "multiplier": "2",
+        "grossAD": "80",
+        "netAD": "60",
+        "targetAtPriceP": "560",
+        "AD1": "500",
+        "AD2": "560",
+        "AD3": "620"
+      },
+      "keyedOption": "AD2, because the net rightward shift is $60 billion.",
+      "options": [
+        "AD2, because the net rightward shift is $60 billion.",
+        "AD3, because the net rightward shift is $120 billion.",
+        "AD1, because the $20 billion offset cancels all induced spending and direct purchases.",
+        "No drawn curve, because $80 billion is the net shift after crowding out."
+      ],
+      "derivation": "The numeric scale is supplied in the final stem, not inferred from the unnumbered artwork. Compute gross 80, total offset 20, net 60, then locate 560 on AD2. No SRAS or macro-equilibrium conclusion is asserted.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "P52A-AS-L-003",
+      "finalStem": "For this capacity calculation only, potential output equals usable capital multiplied by output per unit of usable capital; other inputs are sufficient and unchanged. Usable capital falls by 5 percent while output per unit rises by 8 percent. A planner claims that any productivity gain above 5 percent would restore the original LRAS position. Which assessment is correct?",
+      "parsedDollarMagnitudes": [],
+      "recomputed": {
+        "capacityFactor": "513/500",
+        "capacityGrowthPercent": "13/5",
+        "breakEvenProductivityGainPercent": "100/19"
+      },
+      "keyedOption": "Potential output rises by 2.6 percent, but exactly restoring it would require a productivity gain of about 5.26 percent.",
+      "options": [
+        "Potential output rises by 2.6 percent, but exactly restoring it would require a productivity gain of about 5.26 percent.",
+        "Potential output rises by 3 percent, and a 5 percent productivity gain would exactly restore it.",
+        "Potential output falls by 2.6 percent, and an 8 percent productivity gain cannot offset the capital loss.",
+        "Potential output is unchanged because the two percentage changes cancel exactly."
+      ],
+      "derivation": "Use the explicit multiplicative capacity identity. Retained capital × new productivity gives 1.026; solve retained capital × required productivity = 1 to get 100/19 percent, rounded to 5.26 percent. Three-percentage-point subtraction is a different-base error.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "PG3-AD-H-001",
+      "finalStem": "Refer to the first AD graph. At a price level of 50, which value is closest to the horizontal real-GDP-demanded gap between AD0 and AD1?",
+      "parsedDollarMagnitudes": [],
+      "recomputed": {
+        "firstCurveReading": "100",
+        "secondCurveReading": "155",
+        "approximateGap": "55",
+        "plausibleGapLower": "50",
+        "plausibleGapUpper": "60",
+        "closestOfferedValue": "50"
+      },
+      "keyedOption": "50",
+      "options": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "derivation": "Read each curve at the final-stem fixed axis value; take their absolute horizontal or vertical separation. Compare all four offered estimates. The same unique choice remains closest across the stated visual-read interval. AS-01 pixel calibration corroborates the approximately 42.4-unit vertical separation.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Closest offered estimate from visually transcribed raster coordinates."
+    },
+    {
+      "id": "PG3-AD-H-002",
+      "finalStem": "Refer to the second AD graph. At a price level of 45, which value is closest to the horizontal real-GDP-demanded gap between AD0 and AD1?",
+      "parsedDollarMagnitudes": [],
+      "recomputed": {
+        "firstCurveReading": "150",
+        "secondCurveReading": "100",
+        "approximateGap": "50",
+        "plausibleGapLower": "46",
+        "plausibleGapUpper": "54",
+        "closestOfferedValue": "50"
+      },
+      "keyedOption": "50",
+      "options": [
+        "25",
+        "75",
+        "100",
+        "50"
+      ],
+      "derivation": "Read each curve at the final-stem fixed axis value; take their absolute horizontal or vertical separation. Compare all four offered estimates. The same unique choice remains closest across the stated visual-read interval. AS-01 pixel calibration corroborates the approximately 42.4-unit vertical separation.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Closest offered estimate from visually transcribed raster coordinates."
+    },
+    {
+      "id": "PG3-AS-H-001",
+      "finalStem": "Refer to the first AS graph. At real GDP of 150, which value is closest to the vertical price-level gap between AS0 and AS1?",
+      "parsedDollarMagnitudes": [],
+      "recomputed": {
+        "firstCurveReading": "1481/10",
+        "secondCurveReading": "381/2",
+        "approximateGap": "212/5",
+        "plausibleGapLower": "40",
+        "plausibleGapUpper": "44",
+        "closestOfferedValue": "40"
+      },
+      "keyedOption": "40",
+      "options": [
+        "25",
+        "50",
+        "75",
+        "40"
+      ],
+      "derivation": "Read each curve at the final-stem fixed axis value; take their absolute horizontal or vertical separation. Compare all four offered estimates. The same unique choice remains closest across the stated visual-read interval. AS-01 pixel calibration corroborates the approximately 42.4-unit vertical separation.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Closest offered estimate from visually transcribed raster coordinates."
+    },
+    {
+      "id": "PG3-AS-H-002",
+      "finalStem": "Refer to the second AS graph. At real GDP of 150, which value is closest to the vertical price-level gap between AS0 and AS1?",
+      "parsedDollarMagnitudes": [],
+      "recomputed": {
+        "firstCurveReading": "150",
+        "secondCurveReading": "110",
+        "approximateGap": "40",
+        "plausibleGapLower": "36",
+        "plausibleGapUpper": "44",
+        "closestOfferedValue": "40"
+      },
+      "keyedOption": "40",
+      "options": [
+        "25",
+        "40",
+        "50",
+        "75"
+      ],
+      "derivation": "Read each curve at the final-stem fixed axis value; take their absolute horizontal or vertical separation. Compare all four offered estimates. The same unique choice remains closest across the stated visual-read interval. AS-01 pixel calibration corroborates the approximately 42.4-unit vertical separation.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Closest offered estimate from visually transcribed raster coordinates."
+    },
+    {
+      "id": "PM2D2-FISCAD-L-001",
+      "finalStem": "A $120 billion refundable tax credit can be allocated between two household groups, with MPCs of 0.90 and 0.40. The government wants a first-round consumption increase of $84 billion, before any induced spending. How should the credit be allocated, and why would the same $120 billion of government purchases have a different first-round AD effect?",
+      "parsedDollarMagnitudes": [
+        "120",
+        "84",
+        "120"
+      ],
+      "recomputed": {
+        "highMPCAllocation": "72",
+        "lowMPCAllocation": "48",
+        "highGroupConsumption": "324/5",
+        "lowGroupConsumption": "96/5",
+        "totalFirstRoundConsumption": "84",
+        "directPurchasesComparison": "120"
+      },
+      "keyedOption": "$72 billion to the higher-MPC group and $48 billion to the other; purchases enter AD directly, whereas some credit is saved.",
+      "options": [
+        "$72 billion to the higher-MPC group and $48 billion to the other; purchases enter AD directly, whereas some credit is saved.",
+        "$48 billion to the higher-MPC group and $72 billion to the other; purchases and credits enter AD directly in full.",
+        "$60 billion to each group; averaging MPCs guarantees the target regardless of allocation.",
+        "$84 billion to the higher-MPC group and $36 billion to the other; each dollar of credit is a dollar of purchases."
+      ],
+      "derivation": "Invert the weighted first-round consumption equation with the total budget fixed. Separately compare with purchases, which directly enter AD in full. Equal shares would produce 78 rather than the required 84.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "P52A-FISCAD-L-005",
+      "finalStem": "A government wants to reduce aggregate demand while expanding targeted transfers. Under a simple closed-economy expenditure model, MPC = 0.6 for all households, taxes stay fixed, and no crowding-out or price feedback occurs. Transfers rise by $30 billion. What minimum purchases cut produces a $45 billion leftward AD shift rather than merely cancelling the transfer stimulus?",
+      "parsedDollarMagnitudes": [
+        "30",
+        "45"
+      ],
+      "recomputed": {
+        "multiplier": "5/2",
+        "transferConsumption": "18",
+        "requiredNetAutonomousContraction": "18",
+        "purchasesCut": "36"
+      },
+      "keyedOption": "$36 billion: offset $18 billion of induced first-round consumption and add $18 billion of net autonomous contraction.",
+      "options": [
+        "$18 billion: cancelling the first-round transfer consumption also provides the full target contraction.",
+        "$45 billion: the target AD shift is itself the required purchases cut.",
+        "$75 billion: add the full transfer amount to the desired AD reduction.",
+        "$36 billion: offset $18 billion of induced first-round consumption and add $18 billion of net autonomous contraction."
+      ],
+      "derivation": "Transfers induce MPC×transfer consumption, unlike purchases. Solve (MPC×transfer−purchasesCut)×multiplier=−target. The resulting 36 cut exactly meets the target; a smaller cut does not achieve at least that contraction.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    },
+    {
+      "id": "PG3-MEQ-L-004",
+      "finalStem": "Refer to the ADAS graph with points A, B, C and D. The economy begins at A. A supply disruption moves AS0 to AS1, giving D, and remains in place. Compare two fiscal targets while AS1 stays fixed: restore the original output, or restore the original price level. Which comparison follows from the drawn straight AS1 line, extended if needed?",
+      "parsedDollarMagnitudes": [],
+      "recomputed": {
+        "originalGDP": "75",
+        "originalPrice": "100",
+        "outputTargetGDP": "75",
+        "outputTargetPrice": "150",
+        "AS1Slope": "1",
+        "AS1Intercept": "75",
+        "priceTargetGDP": "25"
+      },
+      "keyedOption": "Restoring output gives C at GDP 75 and price 150; restoring price 100 instead gives GDP 25 and requires a further AD contraction from D.",
+      "options": [
+        "Restoring output gives B at GDP 100 and price 125; restoring price 100 also restores GDP 75.",
+        "Both targets give A because fiscal expansion returns AS1 to AS0.",
+        "Restoring output gives C at GDP 75 and price 150; restoring price 100 instead raises GDP to 125.",
+        "Restoring output gives C at GDP 75 and price 150; restoring price 100 instead gives GDP 25 and requires a further AD contraction from D."
+      ],
+      "derivation": "Use the original A target and the inspected straight AS1 through C and D. Keeping AS1 fixed, solve separately for the output target and price target. Price restoration needs further demand contraction from D; output restoration increases price pressure.",
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; only the explicitly approximate break-even percentage is rounded."
+    }
+  ]
+}

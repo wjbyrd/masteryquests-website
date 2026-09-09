@@ -1,0 +1,2759 @@
+[
+  {
+    "id": "ECON-SP-MEDIUM-151",
+    "concept": "fiscal-policy-and-aggregate-demand",
+    "authoritativeConcept": "fiscal-policy-and-aggregate-demand",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO35.3",
+    "type": "graph_interpretation",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/moneymultiplier.webp"
+    },
+    "after": {
+      "image": "question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-MEDIUM-152",
+    "concept": "fiscal-policy-and-aggregate-demand",
+    "authoritativeConcept": "fiscal-policy-and-aggregate-demand",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO35.3",
+    "type": "graph_interpretation",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/moneymultiplier.webp"
+    },
+    "after": {
+      "image": "question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp"
+    }
+  },
+  {
+    "id": "P52A-FISCAD-L-004",
+    "concept": "fiscal-policy-and-aggregate-demand",
+    "authoritativeConcept": "fiscal-policy-and-aggregate-demand",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO35.3",
+    "type": "policy-analysis",
+    "primarySkill": "explain_policy_channel",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add timing and an evidence requirement to a repeated higher-MPC recognition item.",
+    "numericProofs": [],
+    "before": {
+      "q": "A tax cut and transfer increase have the same budget cost. The transfer is targeted to households with a higher MPC. Which package is likely to shift AD more in the short run?",
+      "options": [
+        "The targeted transfer increase.",
+        "Neither can affect consumption.",
+        "They must have identical effects.",
+        "The broad tax cut regardless of spending behavior."
+      ],
+      "feedback": "More of the targeted transfer is likely to be spent, producing a larger initial consumption increase.",
+      "aHash": "a10c042fda50a725d1fb7140df4420fb733a1f141866b932515f6400e2d0fad0"
+    },
+    "after": {
+      "q": "Two equal-cost fiscal packages provide either a targeted transfer or a broad tax rebate. Recipients of the transfer have the higher MPC, but most transfer payments arrive after a planned stabilization deadline, while the rebates arrive before it. A minister concludes that the transfer must create more AD by the deadline. Which additional comparison is needed?",
+      "options": [
+        "Compare each package’s amount actually received and spent by the deadline, including induced spending completed by then.",
+        "Compare only the recipients’ MPCs; the timing of payment cannot affect AD by the deadline.",
+        "Count every transfer dollar as purchases immediately, then compare that total with rebate consumption.",
+        "Compare the eventual multipliers only; completion of spending rounds before the deadline is irrelevant."
+      ],
+      "feedback": "A higher MPC raises consumption from each dollar received, other things equal, but it does not guarantee a larger effect by a date when fewer dollars have been paid. Timely receipts, consumption and induced rounds jointly determine the relevant short-run AD effect.",
+      "aHash": "f6d70b28b3aacac5e05c53f29f7d4c748c30715f83580c1b83fffeb23be4db34"
+    }
+  },
+  {
+    "id": "P52A-FISCAD-L-005",
+    "concept": "fiscal-policy-and-aggregate-demand",
+    "authoritativeConcept": "fiscal-policy-and-aggregate-demand",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO35.3",
+    "type": "application",
+    "primarySkill": "contractionary_fiscal_policy_definition",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace basic contractionary direction recognition with a constrained package that accommodates an expansionary transfer.",
+    "numericProofs": [],
+    "before": {
+      "q": "A government plans contractionary fiscal policy. Which combination most clearly supports that goal?",
+      "options": [
+        "Lower taxes and unchanged purchases.",
+        "Higher transfers and lower taxes.",
+        "Higher government purchases and lower taxes.",
+        "Lower government purchases and higher taxes."
+      ],
+      "feedback": "Lower purchases and higher taxes both push aggregate demand left.",
+      "aHash": "b681e7838cee6c1710f9a1146b17c04d35773542b70979b5a7028a120ef22829"
+    },
+    "after": {
+      "q": "A government wants to reduce aggregate demand while expanding targeted transfers. Under a simple closed-economy expenditure model, MPC = 0.6 for all households, taxes stay fixed, and no crowding-out or price feedback occurs. Transfers rise by $30 billion. What minimum purchases cut produces a $45 billion leftward AD shift rather than merely cancelling the transfer stimulus?",
+      "options": [
+        "$18 billion: cancelling the first-round transfer consumption also provides the full target contraction.",
+        "$45 billion: the target AD shift is itself the required purchases cut.",
+        "$75 billion: add the full transfer amount to the desired AD reduction.",
+        "$36 billion: offset $18 billion of induced first-round consumption and add $18 billion of net autonomous contraction."
+      ],
+      "feedback": "Transfers first add 0.6 × 30 = $18 billion of consumption. The spending multiplier is 2.5, so a $45 billion AD reduction requires $18 billion of net autonomous contraction. Purchases must fall by 18 + 18 = $36 billion. The transfer is not itself a government purchase.",
+      "aHash": "81338138bceb193b583cc02c494ecbba3636fd97a66fa1532c641a9d23f55db5"
+    }
+  },
+  {
+    "id": "PM2D2-FISCAD-L-001",
+    "concept": "fiscal-policy-and-aggregate-demand",
+    "authoritativeConcept": "fiscal-policy-and-aggregate-demand",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO35.3",
+    "type": "multi-step",
+    "primarySkill": "heterogeneous_mpc_tax_effect",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace forward weighted arithmetic with reverse allocation under a fiscal target and distinguish purchases from tax credits.",
+    "numericProofs": [],
+    "before": {
+      "q": "A temporary $120 billion tax credit is split equally between two household groups. One group has MPC 0.90 and the other MPC 0.40. Before multiplier rounds or crowding out, what is the first-round change in aggregate demand from consumption?",
+      "options": [
+        "$78 billion increase.",
+        "$120 billion increase.",
+        "$60 billion increase.",
+        "$156 billion increase."
+      ],
+      "feedback": "Compute each group’s first-round consumption response separately, then add them before considering later multiplier rounds.",
+      "aHash": "cb2b500cdcf7e26095657573b9ec6c6437a86600612ba97aece01c42a565f010"
+    },
+    "after": {
+      "q": "A $120 billion refundable tax credit can be allocated between two household groups, with MPCs of 0.90 and 0.40. The government wants a first-round consumption increase of $84 billion, before any induced spending. How should the credit be allocated, and why would the same $120 billion of government purchases have a different first-round AD effect?",
+      "options": [
+        "$72 billion to the higher-MPC group and $48 billion to the other; purchases enter AD directly, whereas some credit is saved.",
+        "$48 billion to the higher-MPC group and $72 billion to the other; purchases and credits enter AD directly in full.",
+        "$60 billion to each group; averaging MPCs guarantees the target regardless of allocation.",
+        "$84 billion to the higher-MPC group and $36 billion to the other; each dollar of credit is a dollar of purchases."
+      ],
+      "feedback": "Let x go to the higher-MPC group. Then 0.90x + 0.40(120 − x) = 84, giving x = $72 billion and $48 billion to the other group. Their consumption responses are $64.8 billion and $19.2 billion. Government purchases would directly add $120 billion to AD; a credit affects disposable income and only the spent portion enters first-round consumption.",
+      "aHash": "a613e4e1dd081c79bfdd7d49ef8f4ee9d39406c622735fff1886b9f1c26aaeb1"
+    }
+  },
+  {
+    "id": "LG-Q-9142",
+    "concept": "fiscal-policy-and-aggregate-demand",
+    "authoritativeConcept": "fiscal-policy-and-aggregate-demand",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "35.3",
+    "type": "legendary_boss_tax_multiplier",
+    "primarySkill": "trace_tax_cut_to_first_round_consumption_then_multiplier",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/moneymultiplier.webp"
+    },
+    "after": {
+      "image": "question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-228",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO35.4",
+    "type": "graph_interpretation",
+    "primarySkill": "read_multiplier_graph",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Resolve the local Hard graph-integration gap through multiplier arithmetic, an explicit total offset, and curve mapping; no exam graph or scenario is copied.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the AD multiplier graph. If government spending first shifts AD from AD1 to AD2, the multiplier effect is best shown by:",
+      "options": [
+        "AD2 to AD3",
+        "AD2 to AD1",
+        "AD3 to AD1",
+        "Y3 to Y1"
+      ],
+      "feedback": "The multiplier effect expands the initial AD shift farther right, from AD2 to AD3.",
+      "image": "question-assets/moneymultiplier.webp",
+      "aHash": "6b133ae35f8a5e2ce38d7335f2116e851707c5b12e46cc3516c81bb7c90437f9"
+    },
+    "after": {
+      "q": "Refer to the AD multiplier graph. For this application, assign Y1 = $500 billion, Y2 = $560 billion, and Y3 = $620 billion at the marked price P. Starting on AD1, purchases increase by $40 billion and MPC = 0.5. Use the simple spending multiplier. Crowding out creates a total $20 billion AD offset, already including induced spending effects. Which drawn AD curve represents the net result at P?",
+      "options": [
+        "AD2, because the net rightward shift is $60 billion.",
+        "AD3, because the net rightward shift is $120 billion.",
+        "AD1, because the $20 billion offset cancels all induced spending and direct purchases.",
+        "No drawn curve, because $80 billion is the net shift after crowding out."
+      ],
+      "feedback": "The multiplier is 2. Gross AD increases by $80 billion; subtract the already-total $20 billion offset to obtain $60 billion. At P, desired output is therefore 500 + 60 = $560 billion, on AD2. The diagram does not contain an SRAS curve, so this locates demand at P rather than a final macro equilibrium.",
+      "image": "question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
+      "aHash": "a52fcc6c31a64722fafc217469792f3e757d43645f6d86e3ad1afb10ef0d5271"
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-229",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO35.4",
+    "type": "graph_interpretation",
+    "primarySkill": "crowding_out_effect",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/moneymultiplier.webp"
+    },
+    "after": {
+      "image": "question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-320",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO35.4",
+    "type": "graph_interpretation",
+    "primarySkill": "crowding_out_effect",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Correct unsupported location inference from partial crowding out and add an identification condition.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the multiplier graph. Government spending initially moves AD1 to AD2, the multiplier moves AD2 to AD3, and crowding out offsets part of it. The final effect is likely:",
+      "options": [
+        "Between AD2 and AD3",
+        "Left of AD1",
+        "Exactly at AD3",
+        "Exactly at SRPC2"
+      ],
+      "feedback": "Crowding out offsets part of the multiplied AD increase, so the final shift may land between AD2 and AD3.",
+      "image": "question-assets/moneymultiplier.webp",
+      "aHash": "76bcfec82e0f0a46f7794b26461f59a69c576cd7a7690a77515c873a1522b5b7"
+    },
+    "after": {
+      "q": "Refer to the multiplier graph. Direct purchases shift AD1 to AD2; induced spending makes the gross prediction AD3. Crowding out creates a positive total AD offset. Which additional restriction is needed to conclude that the final AD curve lies strictly between AD2 and AD3?",
+      "options": [
+        "The total offset must be smaller than the horizontal AD2-to-AD3 distance at the reference price.",
+        "The total offset must be smaller than the full AD1-to-AD3 distance, with no further restriction.",
+        "The total offset must equal the full AD1-to-AD3 distance.",
+        "The total offset must exceed the AD2-to-AD3 distance but remain below the AD1-to-AD3 distance."
+      ],
+      "feedback": "To finish to the right of AD2, subtract less than the extra induced-spending distance from AD2 to AD3. A positive offset puts the result left of AD3. Merely retaining some net stimulus relative to AD1 does not guarantee finishing beyond AD2.",
+      "image": "question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
+      "aHash": "bde11ddfb04fda0f9006613dbb47fed6fa0fed7ef2c15028e8d589c44d9606cf"
+    }
+  },
+  {
+    "id": "LG-Q-373",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "35.4",
+    "type": "graph_net_effect_calculation",
+    "primarySkill": "combine_multiplier_and_crowding_out",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Clarify total AD offset versus raw autonomous investment reduction; prevent mixing pre- and post-multiplier magnitudes.",
+    "numericProofs": [],
+    "before": {
+      "q": "Suppose the multiplier would shift AD right by $200 billion, but crowding out reduces investment by $60 billion. What is the net shift?",
+      "feedback": "Crowding out offsets part of the multiplier effect. Net shift is $200 billion - $60 billion = $140 billion."
+    },
+    "after": {
+      "q": "A fiscal package produces a gross $200 billion rightward AD shift in a simplified expenditure model. Crowding out produces a total $60 billion leftward AD offset, including all induced spending effects of the displaced investment. What net AD increase should policy analysis use?",
+      "feedback": "The two magnitudes are both total AD changes: 200 − 60 = $140 billion. Do not multiply the stated total offset again. This is an AD shift, not a guaranteed equal increase in equilibrium GDP."
+    }
+  },
+  {
+    "id": "LG-Q-376",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "35.4",
+    "type": "multi_step_graph_calculation",
+    "primarySkill": "calculate_net_fiscal_effect",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Specify the level at which crowding out enters the multiplier calculation.",
+    "numericProofs": [],
+    "before": {
+      "q": "If government spending rises by $60 billion, MPC is 0.75, and crowding out reduces investment by $50 billion, what is the net AD shift?",
+      "feedback": "Multiplier is 4, so the gross shift is $240 billion. Subtract $50 billion crowding out for a net $190 billion."
+    },
+    "after": {
+      "q": "Government purchases increase by $60 billion. MPC = 0.75; use the simple spending multiplier, with no other leakages. Crowding out produces a total $50 billion AD offset, including its induced spending effects. What is the net rightward AD shift?",
+      "feedback": "Multiplier is 4, so the gross shift is $240 billion. Subtract $50 billion crowding out for a net $190 billion. The offset is already a total AD change and is subtracted after multiplication; the sequence is an analytical decomposition, not a claim about separate calendar stages."
+    }
+  },
+  {
+    "id": "ECON-SP-LEGENDARY-9024",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO35.4",
+    "type": "graph_integration",
+    "primarySkill": "crowding_out_effect",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/moneymultiplier.webp"
+    },
+    "after": {
+      "image": "question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp"
+    }
+  },
+  {
+    "id": "LG-Q-9073",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "35.4",
+    "type": "legendary_net_fiscal_graph_order",
+    "primarySkill": "trace_initial_multiplier_and_crowding_out",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Specify the level at which crowding out enters the multiplier calculation.",
+    "numericProofs": [],
+    "before": {
+      "q": "Government spending rises by $100 billion and MPC = 0.6. Crowding out reduces investment by $75 billion. What is the correct order of AD effects?",
+      "feedback": "MPC = 0.6 gives multiplier 2.5. The $100 billion initial shift becomes $250 billion, then crowding out reduces the net shift to $175 billion."
+    },
+    "after": {
+      "q": "Government purchases increase by $100 billion. MPC = 0.6; use the simple spending multiplier, with no other leakages. Crowding out produces a total $75 billion AD offset, including its induced spending effects. Which sequence separates the direct purchases, gross multiplier prediction, and net AD shift?",
+      "feedback": "MPC = 0.6 gives multiplier 2.5. The $100 billion initial shift becomes $250 billion, then crowding out reduces the net shift to $175 billion. The offset is already a total AD change and is subtracted after multiplication; the sequence is an analytical decomposition, not a claim about separate calendar stages."
+    }
+  },
+  {
+    "id": "LG-Q-275",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "calculation",
+    "difficulty": "hard",
+    "objective": "35.4",
+    "type": "calculation",
+    "primarySkill": "calculate_net_policy_effect",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Clarify total AD offset versus raw autonomous investment reduction; prevent mixing pre- and post-multiplier magnitudes.",
+    "numericProofs": [],
+    "before": {
+      "q": "Suppose fiscal stimulus initially raises AD by $300 billion through the multiplier, but crowding out reduces investment by $80 billion. What is the net AD increase?",
+      "feedback": "Crowding out offsets part of the stimulus, so net AD rises by $300 billion - $80 billion = $220 billion."
+    },
+    "after": {
+      "q": "A fiscal package produces a gross $300 billion rightward AD shift in a simplified expenditure model. Crowding out produces a total $80 billion leftward AD offset, including all induced spending effects of the displaced investment. What net AD increase should policy analysis use?",
+      "feedback": "The two magnitudes are both total AD changes: 300 − 80 = $220 billion. Do not multiply the stated total offset again. This is an AD shift, not a guaranteed equal increase in equilibrium GDP."
+    }
+  },
+  {
+    "id": "LG-Q-4011",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "35.4",
+    "type": "finalboss_scaffold_synthesis",
+    "primarySkill": "calculate_multiplier_minus_crowding_out",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Specify the level at which crowding out enters the multiplier calculation.",
+    "numericProofs": [],
+    "before": {
+      "q": "Government spending rises by $80 billion, MPC = 0.75, and crowding out reduces investment by $70 billion. What is the net AD shift?",
+      "feedback": "Gross AD shift is $320 billion. Subtract $70 billion of crowding out, leaving $250 billion."
+    },
+    "after": {
+      "q": "Government purchases increase by $80 billion. MPC = 0.75; use the simple spending multiplier, with no other leakages. Crowding out produces a total $70 billion AD offset, including its induced spending effects. What is the net rightward AD shift?",
+      "feedback": "Gross AD shift is $320 billion. Subtract $70 billion of crowding out, leaving $250 billion. The offset is already a total AD change and is subtracted after multiplication; the sequence is an analytical decomposition, not a claim about separate calendar stages."
+    }
+  },
+  {
+    "id": "P52B-S4-FMCO-B2-002",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "boss",
+    "difficulty": "medium",
+    "objective": "LO35.4",
+    "type": "calculation",
+    "primarySkill": "net_multiplier_after_crowding_out",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Clarify total AD offset versus raw autonomous investment reduction; prevent mixing pre- and post-multiplier magnitudes.",
+    "numericProofs": [],
+    "before": {
+      "q": "A fiscal package creates a gross $120 billion increase in aggregate demand, but higher interest rates reduce investment by $25 billion. What is the net shift?",
+      "feedback": "Crowding out offsets part of the expansion: $120 billion minus $25 billion equals a $95 billion net increase."
+    },
+    "after": {
+      "q": "A fiscal package produces a gross $120 billion rightward AD shift in a simplified expenditure model. Crowding out produces a total $25 billion leftward AD offset, including all induced spending effects of the displaced investment. What net AD increase should policy analysis use?",
+      "feedback": "The two magnitudes are both total AD changes: 120 − 25 = $95 billion. Do not multiply the stated total offset again. This is an AD shift, not a guaranteed equal increase in equilibrium GDP."
+    }
+  },
+  {
+    "id": "LG-Q-9133",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "35.4",
+    "type": "legendary_boss_fiscal_net_effect",
+    "primarySkill": "trace_multiplier_then_crowding_out",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Specify the level at which crowding out enters the multiplier calculation.",
+    "numericProofs": [],
+    "before": {
+      "q": "Government spending rises by $90 billion and MPC = 0.8. Crowding out reduces investment by $180 billion. What is the correct order of AD effects?",
+      "feedback": "MPC 0.8 gives multiplier 5. The $90 billion initial shift becomes $450 billion, then crowding out reduces the net shift to $270 billion."
+    },
+    "after": {
+      "q": "Government purchases increase by $90 billion. MPC = 0.8; use the simple spending multiplier, with no other leakages. Crowding out produces a total $180 billion AD offset, including its induced spending effects. Which sequence separates the direct purchases, gross multiplier prediction, and net AD shift?",
+      "feedback": "MPC 0.8 gives multiplier 5. The $90 billion initial shift becomes $450 billion, then crowding out reduces the net shift to $270 billion. The offset is already a total AD change and is subtracted after multiplication; the sequence is an analytical decomposition, not a claim about separate calendar stages."
+    }
+  },
+  {
+    "id": "LG-B-6023",
+    "concept": "fiscal-multipliers-and-crowding-out",
+    "authoritativeConcept": "fiscal-multipliers-and-crowding-out",
+    "pool": "bridgeQuestions",
+    "difficulty": "unknown",
+    "objective": "35.4",
+    "type": "bridge",
+    "primarySkill": "bridge_multiplier_to_stabilization",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Clarify total AD offset versus raw autonomous investment reduction; prevent mixing pre- and post-multiplier magnitudes.",
+    "numericProofs": [],
+    "before": {
+      "q": "A fiscal package generates a $300 billion gross AD increase, but crowding out reduces private investment by $80 billion in the simplified model. What AD impulse should stabilization analysis carry forward?",
+      "feedback": "Stabilization analysis should use the net aggregate-demand impulse after the multiplier and stated crowding-out offset."
+    },
+    "after": {
+      "q": "A stabilization analyst receives two model estimates: a $300 billion gross rightward AD shift from fiscal expansion and a total $80 billion AD reduction from displaced investment, including its induced spending effects. Which AD impulse should the analyst carry into the stabilization forecast?",
+      "feedback": "The two magnitudes are both total AD changes: 300 − 80 = $220 billion. Do not multiply the stated total offset again. This is an AD shift, not a guaranteed equal increase in equilibrium GDP."
+    }
+  },
+  {
+    "id": "LG-Q-9069",
+    "concept": "stabilization-policy",
+    "authoritativeConcept": "stabilization-policy",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "35.5",
+    "type": "legendary_fiscal_gap_graph_order",
+    "primarySkill": "trace_multiplier_then_crowding_out_gap",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Separate horizontal AD shortfall from equilibrium output gap and define total crowding-out offset.",
+    "numericProofs": [],
+    "before": {
+      "q": "A $50 billion government spending increase is intended to close a $250 billion AD gap. MPC = 0.75, but crowding out reduces investment by $40 billion. What is the correct sequence?",
+      "feedback": "MPC = 0.75 gives multiplier 4. The $50 billion initial shift becomes $200 billion, then crowding out lowers the net shift to $160 billion, leaving a $90 billion gap."
+    },
+    "after": {
+      "q": "At a fixed reference price level, desired spending is $250 billion below the policy target. Government purchases rise by $50 billion and MPC = 0.75. Use the simple spending multiplier with no other leakages. Crowding out produces a total $40 billion AD offset, including its induced spending effects. Which decomposition gives the net AD shift and remaining shortfall at that reference price?",
+      "feedback": "MPC = 0.75 gives multiplier 4. The $50 billion initial shift becomes $200 billion, then crowding out lowers the net shift to $160 billion, leaving a $90 billion gap. These are horizontal AD distances at the reference price, not actual equilibrium GDP changes; the total offset is not multiplied again."
+    }
+  },
+  {
+    "id": "LG-Q-9070",
+    "concept": "stabilization-policy",
+    "authoritativeConcept": "stabilization-policy",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "35.5",
+    "type": "legendary_overheating_multiplier_order",
+    "primarySkill": "apply_multiplier_graph_to_wrong_policy_context",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Remove unjustified one-for-one addition of an AD shift to an equilibrium output gap.",
+    "numericProofs": [],
+    "before": {
+      "q": "The economy is already above potential output by $180 billion. Congress raises spending by $30 billion and MPC = 0.8. What is the correct AD-shift interpretation?",
+      "options": [
+        "AD first shifts right $30 billion, then the multiplier expands the shift to $150 billion, worsening the overheating gap to $330 billion.",
+        "AD first shifts left $30 billion, then left $150 billion, reducing the overheating gap to $30 billion.",
+        "AD shifts right $30 billion only, closing part of the overheating gap.",
+        "AD does not shift because the economy is already above potential."
+      ],
+      "feedback": "MPC = 0.8 gives multiplier 5. The $30 billion spending increase becomes a $150 billion AD increase, making the $180 billion overheating gap worse.",
+      "aHash": "af183319c5db8b67e19b6e0f95891e3beb63c93940e2090b83c8a728d2addf51"
+    },
+    "after": {
+      "q": "At a fixed reference price level, desired spending already exceeds the policy target by $180 billion. Purchases rise by $30 billion and MPC = 0.8. With the simple spending multiplier and no offsets, which interpretation of the policy is correct?",
+      "options": [
+        "The direct $30 billion increase becomes a $150 billion AD shift, raising excess desired spending to $330 billion at the reference price.",
+        "The policy shifts AD left by $150 billion, reducing excess desired spending to $30 billion.",
+        "Only the direct $30 billion enters AD, raising excess desired spending to $210 billion.",
+        "The $150 billion AD shift exactly removes the existing $180 billion excess."
+      ],
+      "feedback": "The multiplier is 5, so desired spending at the reference price rises by $150 billion. The excess becomes 180 + 150 = $330 billion. An upward-sloping SRAS would divide the equilibrium response between output and prices; these AD distances do not determine the GDP gap.",
+      "aHash": "ddeef9263465db1d6b6808b3e7be22dcb99534be64a7238680e80910aadbced7"
+    }
+  },
+  {
+    "id": "LG-Q-9074",
+    "concept": "stabilization-policy",
+    "authoritativeConcept": "stabilization-policy",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "35.5",
+    "type": "legendary_combined_policy_gap_graph_order",
+    "primarySkill": "trace_multiplier_graph_to_gap_closure",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Define the gap as a horizontal AD distance instead of equating multiplier spending with realized output.",
+    "numericProofs": [],
+    "before": {
+      "q": "A recessionary gap is $400 billion. Government spending rises by $100 billion and MPC = 0.75. What is the order of AD shifts and the final gap, ignoring crowding out?",
+      "feedback": "MPC = 0.75 gives multiplier 4. The $100 billion initial spending increase becomes a $400 billion final AD shift, closing the gap."
+    },
+    "after": {
+      "q": "At a fixed reference price, desired spending is $400 billion below the policy target. Government purchases rise by $100 billion and MPC = 0.75. Using the simple spending multiplier and ignoring crowding out and other leakages, which decomposition gives the AD shift and remaining horizontal AD gap?",
+      "feedback": "The multiplier is 4. Direct purchases of $100 billion imply a total $400 billion AD shift, closing the stated horizontal AD gap. Without an SRAS relationship, this does not identify an equal equilibrium GDP increase."
+    }
+  },
+  {
+    "id": "PM2D2-STAB-L-002",
+    "concept": "stabilization-policy",
+    "authoritativeConcept": "stabilization-policy",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO35.5",
+    "type": "policy-lag-calculation",
+    "primarySkill": "revised_gap_policy_overshoot",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace direct overshoot arithmetic with an inverse implementation decision under revised data and an unavoidable commitment.",
+    "numericProofs": [],
+    "before": {
+      "q": "Policymakers initially estimate a $300 billion recessionary gap and enact a $75 billion spending increase with a simple multiplier of 4. By the time the policy takes effect, revised data show the gap is only $100 billion. Ignoring crowding out, what is the implication?",
+      "options": [
+        "The policy closes the revised gap exactly because it was calibrated to the original estimate.",
+        "The $75 billion initial spending increase leaves a $25 billion gap because only the first round matters.",
+        "The policy raises AD by $100 billion because stabilization automatically adjusts to revised data.",
+        "The $300 billion AD increase overshoots the revised gap by $200 billion."
+      ],
+      "feedback": "Compare the policy’s expected AD shift with the output gap that exists when the policy actually takes effect, not only the initial estimate.",
+      "aHash": "f5fbd0720203feee04d3434a63f7109bad5fc86a369e235235d50c31f2dc07f1"
+    },
+    "after": {
+      "q": "A government authorizes $75 billion of extra purchases when the required rightward AD shift is $300 billion. Before payment, the required shift at the same reference price falls to $100 billion. The simple spending multiplier is 4; no crowding out or other leakages apply. One third of the authorized purchases must now occur, while the rest can still be cancelled. Which implementation decision meets the revised target without overshooting?",
+      "options": [
+        "Pay the entire remaining $50 billion; the original authorization still matches the revised target.",
+        "Pay another $25 billion and cancel $25 billion; the unmultiplied purchases must equal the revised target.",
+        "Cancel all $75 billion; a revision of the target eliminates the unavoidable payment.",
+        "Cancel the remaining $50 billion; the unavoidable $25 billion already produces the required $100 billion AD shift."
+      ],
+      "feedback": "The unavoidable purchases are 75/3 = $25 billion, producing 25 × 4 = $100 billion of AD. The remaining authorization is $50 billion and should be cancelled under the stated target. Full implementation would create a $300 billion shift and a $200 billion overshoot. Policy must be evaluated when it takes effect.",
+      "aHash": "bbd6a28f3dedd6ae5840fb12ed2497a1fc171c99106811c5a70809757510ccde"
+    }
+  },
+  {
+    "id": "LG-Q-4014",
+    "concept": "stabilization-policy",
+    "authoritativeConcept": "stabilization-policy",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "35.5",
+    "type": "finalboss_scaffold_synthesis",
+    "primarySkill": "combine_policy_impulses_multiplier_and_crowding_out",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct raw investment displacement arithmetic; monetary transmission is supplied rather than re-audited.",
+    "numericProofs": [],
+    "before": {
+      "q": "A recessionary AD gap is $500 billion. Monetary policy raises investment by $50 billion, fiscal policy raises government spending by $60 billion, MPC = 0.75, and crowding out reduces investment by $40 billion. What gap remains?",
+      "options": [
+        "$100 billion remains.",
+        "$60 billion remains.",
+        "The gap closes exactly.",
+        "AD overshoots by $100 billion."
+      ],
+      "feedback": "Initial impulse is $110 billion. Multiplier is 4, so gross AD rise is $440 billion. Subtract $40 billion crowding out, net AD rise is $400 billion. A $100 billion gap remains.",
+      "aHash": "0c8914b63e0666ad2569fc23a86fc2c9e8010606f378aa7f2b6038c466246c1d"
+    },
+    "after": {
+      "q": "At a fixed reference price, AD must shift right by $500 billion to meet the policy target. A supplied monetary-policy effect raises autonomous investment by $50 billion, government purchases rise by $60 billion, and fiscal crowding out reduces autonomous investment by $40 billion. MPC = 0.75; apply the same simple multiplier to each autonomous change, with no other leakages. What AD shortfall remains?",
+      "options": [
+        "$220 billion remains.",
+        "$100 billion remains.",
+        "$60 billion remains.",
+        "$460 billion remains."
+      ],
+      "feedback": "Net autonomous spending rises by 50 + 60 − 40 = $70 billion. The multiplier is 1/(1 − 0.75) = 4, so AD shifts $280 billion and the remaining horizontal shortfall is 500 − 280 = $220 billion. Subtracting only $40 billion after multiplying the gross impulse would omit the lost induced spending.",
+      "aHash": "3c7999b7c3c929c2b96659de2799582aa1c999eb450dbf01f3793082e1af4205"
+    }
+  },
+  {
+    "id": "LG-Q-9136",
+    "concept": "stabilization-policy",
+    "authoritativeConcept": "stabilization-policy",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "35.5",
+    "type": "legendary_boss_overheating_gap",
+    "primarySkill": "read_contractionary_graph_and_calculate_remaining_gap",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Supply the monetary effect, remove the nonexistent graph cue, and separate AD distances from output gaps.",
+    "numericProofs": [],
+    "before": {
+      "q": "Output is above potential by $360 billion. The Fed uses contractionary monetary policy, and the investment response is $50 billion. If MPC = 0.8, what overheating gap remains?",
+      "feedback": "The graph shows contractionary policy. MPC 0.8 gives multiplier 5, so AD falls $250 billion. The remaining overheating gap is $110 billion."
+    },
+    "after": {
+      "q": "At a fixed reference price, desired spending exceeds the policy target by $360 billion. Contractionary monetary policy is supplied as reducing autonomous investment by $50 billion. MPC = 0.8; use the simple spending multiplier with no other leakages. What excess desired spending remains at that reference price?",
+      "feedback": "The supplied investment fall shifts AD left by 50/(1 − 0.8) = $250 billion. Excess desired spending falls to 360 − 250 = $110 billion. This is an AD-distance calculation, not a claim that the equilibrium GDP gap falls one-for-one."
+    }
+  },
+  {
+    "id": "LG-Q-9139",
+    "concept": "stabilization-policy",
+    "authoritativeConcept": "stabilization-policy",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "35.5",
+    "type": "legendary_boss_fiscal_gap",
+    "primarySkill": "trace_multiplier_crowding_and_gap",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Separate horizontal AD shortfall from equilibrium output gap and define total crowding-out offset.",
+    "numericProofs": [],
+    "before": {
+      "q": "A recessionary AD gap is $600 billion. Government spending rises $100 billion, MPC = 0.8, and crowding out is $150 billion. What is the correct order and remaining gap?",
+      "feedback": "MPC 0.8 gives multiplier 5, so gross shift is $500 billion. Net after $150 billion crowding out is $350 billion, leaving a $250 billion gap."
+    },
+    "after": {
+      "q": "At a fixed reference price level, desired spending is $600 billion below the policy target. Government purchases rise by $100 billion and MPC = 0.8. Use the simple spending multiplier with no other leakages. Crowding out produces a total $150 billion AD offset, including its induced spending effects. Which decomposition gives the net AD shift and remaining shortfall at that reference price?",
+      "feedback": "MPC 0.8 gives multiplier 5, so gross shift is $500 billion. Net after $150 billion crowding out is $350 billion, leaving a $250 billion gap. These are horizontal AD distances at the reference price, not actual equilibrium GDP changes; the total offset is not multiplied again."
+    }
+  },
+  {
+    "id": "ECON-SP-EASY-36",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.1",
+    "type": "interpretation",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "PG3-AD-E-001",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.1",
+    "type": "graph",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its right on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,100) to (200,0). Dashed blue AD1 lies above and right of AD0, running from approximately (0,125) to (260,0). At price level 50, AD0 is near GDP 100 and AD1 near GDP 155. These are approximate readings of hand-drawn lines; the diagram has no aggregate-supply curve."
+    }
+  },
+  {
+    "id": "PG3-AD-E-002",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.1",
+    "type": "graph",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its left on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,120) to (240,0). Dashed blue AD1 lies below and left of AD0, running from approximately (0,95) to (190,0). At price level 45, AD0 is near GDP 150 and AD1 near GDP 100. These are approximate readings of hand-drawn lines; no aggregate-supply curve is shown."
+    }
+  },
+  {
+    "id": "PG3-AD-M-001",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.1",
+    "type": "analysis",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its right on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,100) to (200,0). Dashed blue AD1 lies above and right of AD0, running from approximately (0,125) to (260,0). At price level 50, AD0 is near GDP 100 and AD1 near GDP 155. These are approximate readings of hand-drawn lines; the diagram has no aggregate-supply curve."
+    }
+  },
+  {
+    "id": "PG3-AD-M-002",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.1",
+    "type": "analysis",
+    "primarySkill": "identify_ad_shifters",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its right on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,100) to (200,0). Dashed blue AD1 lies above and right of AD0, running from approximately (0,125) to (260,0). At price level 50, AD0 is near GDP 100 and AD1 near GDP 155. These are approximate readings of hand-drawn lines; the diagram has no aggregate-supply curve."
+    }
+  },
+  {
+    "id": "PG3-AD-M-003",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.1",
+    "type": "analysis",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its left on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,120) to (240,0). Dashed blue AD1 lies below and left of AD0, running from approximately (0,95) to (190,0). At price level 45, AD0 is near GDP 150 and AD1 near GDP 100. These are approximate readings of hand-drawn lines; no aggregate-supply curve is shown."
+    }
+  },
+  {
+    "id": "PG3-AD-M-004",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.1",
+    "type": "analysis",
+    "primarySkill": "identify_ad_shifters",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its left on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,120) to (240,0). Dashed blue AD1 lies below and left of AD0, running from approximately (0,95) to (190,0). At price level 45, AD0 is near GDP 150 and AD1 near GDP 100. These are approximate readings of hand-drawn lines; no aggregate-supply curve is shown."
+    }
+  },
+  {
+    "id": "PG3-AD-H-001",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.1",
+    "type": "calculation",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace unsupported exact precision with a closest-estimate reading of the actual raster graph.",
+    "numericProofs": [],
+    "before": {
+      "q": "At a price level of 50, by how much does real GDP demanded differ between AD0 and AD1?",
+      "feedback": "At price level 50, the quantity of output demanded rises from 100 to 150, an increase of 50."
+    },
+    "after": {
+      "q": "Refer to the first AD graph. At a price level of 50, which value is closest to the horizontal real-GDP-demanded gap between AD0 and AD1?",
+      "feedback": "The hand-drawn lines imply roughly 100 on AD0 and about 155 on AD1. The gap is about 55 units, so 50 is the closest offered estimate; the drawing does not justify an exact 50-unit claim.",
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its right on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,100) to (200,0). Dashed blue AD1 lies above and right of AD0, running from approximately (0,125) to (260,0). At price level 50, AD0 is near GDP 100 and AD1 near GDP 155. These are approximate readings of hand-drawn lines; the diagram has no aggregate-supply curve."
+    }
+  },
+  {
+    "id": "PG3-AD-H-002",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.1",
+    "type": "calculation",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace unsupported exact precision with a closest-estimate reading of the actual raster graph.",
+    "numericProofs": [],
+    "before": {
+      "q": "Use the second AD graph at price level 45. What horizontal GDP gap separates AD0 and AD1?",
+      "feedback": "At price level 45, quantity demanded falls from 150 to 100, a decrease of 50."
+    },
+    "after": {
+      "q": "Refer to the second AD graph. At a price level of 45, which value is closest to the horizontal real-GDP-demanded gap between AD0 and AD1?",
+      "feedback": "The curves show approximately 150 on AD0 and 100 on AD1 at this price level, so 50 units is the closest offered estimate.",
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its left on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,120) to (240,0). Dashed blue AD1 lies below and left of AD0, running from approximately (0,95) to (190,0). At price level 45, AD0 is near GDP 150 and AD1 near GDP 100. These are approximate readings of hand-drawn lines; no aggregate-supply curve is shown."
+    }
+  },
+  {
+    "id": "PG3-AD-EL-001",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.1",
+    "type": "analysis",
+    "primarySkill": "explain_ad_slope",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its right on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,100) to (200,0). Dashed blue AD1 lies above and right of AD0, running from approximately (0,125) to (260,0). At price level 50, AD0 is near GDP 100 and AD1 near GDP 155. These are approximate readings of hand-drawn lines; the diagram has no aggregate-supply curve."
+    }
+  },
+  {
+    "id": "PG3-AD-EL-002",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.1",
+    "type": "analysis",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its left on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,120) to (240,0). Dashed blue AD1 lies below and left of AD0, running from approximately (0,95) to (190,0). At price level 45, AD0 is near GDP 150 and AD1 near GDP 100. These are approximate readings of hand-drawn lines; no aggregate-supply curve is shown."
+    }
+  },
+  {
+    "id": "PG3-AD-L-001",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.1",
+    "type": "multi-step",
+    "primarySkill": "identify_ad_shifters",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace Legendary curve-definition repetition with offset, movement-versus-shift and equilibrium-identification synthesis.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which statement correctly interprets the move from AD0 to AD1?",
+      "options": [
+        "At each price level, AS1 shows more real GDP supplied.",
+        "At each output level, AD1 shows a lower price requirement.",
+        "AD0 and AD1 are two points on one aggregate-demand curve.",
+        "At each price level, AD1 shows more real GDP demanded."
+      ],
+      "feedback": "An AD increase means spending is higher at every price level. That is a shift of the entire demand curve, not a movement along it.",
+      "aHash": "a76eec370a4dc4ec4dfa70ed02373429a3eb4169cea8b4a806fbb1a0a3ef6ab0"
+    },
+    "after": {
+      "q": "Refer to the first AD graph. Purchases rise, private investment partly falls, and the combined spending changes leave the economy on AD1 instead of AD0. The equilibrium price level also rises. Which conclusion separates what the diagram establishes from what still requires evidence?",
+      "options": [
+        "The price increase alone shifted AD0 to AD1; SRAS is unnecessary for identifying equilibrium GDP.",
+        "The investment decline proves net AD fell; the rightward curve is only movement along AD0.",
+        "The horizontal AD0-to-AD1 distance equals the equilibrium GDP increase even when SRAS slopes upward.",
+        "Net desired spending rose at a common price; the equilibrium GDP increase needs the SRAS relationship and cannot be read as the whole horizontal AD shift."
+      ],
+      "feedback": "The rightward shift records a positive net demand change despite an offsetting investment effect. A price change moves along a demand curve. The final intersection and split between price and output responses require supply information absent from this AD-only diagram.",
+      "aHash": "815593f0bf70cf1adf3ea787dd0c1833a687984bc80be177a8c205f1dc476b86",
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its right on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,100) to (200,0). Dashed blue AD1 lies above and right of AD0, running from approximately (0,125) to (260,0). At price level 50, AD0 is near GDP 100 and AD1 near GDP 155. These are approximate readings of hand-drawn lines; the diagram has no aggregate-supply curve."
+    }
+  },
+  {
+    "id": "PG3-AD-L-002",
+    "concept": "aggregate-demand",
+    "authoritativeConcept": "aggregate-demand",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.1",
+    "type": "multi-step",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Deepen the upper-tier graph item through opposing determinants and limits on identifying gross effects.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which statement best captures the meaning of the shift from AD0 to AD1?",
+      "options": [
+        "At each price level, AS1 shows less real GDP supplied.",
+        "At each price level, AD1 shows less real GDP demanded.",
+        "At each output level, AD1 shows a higher price requirement.",
+        "AD0 and AD1 are two points on one aggregate-demand curve."
+      ],
+      "feedback": "The entire AD curve shifts left. That means spending is lower at each price level, not that the economy merely moved along AD0.",
+      "aHash": "44adaf6c62832e7e85ca8e218f234abf7b392ec70003001d93ead35671fcb01a"
+    },
+    "after": {
+      "q": "Refer to the second AD graph. An economy moves from AD0 to AD1. Falling confidence reduces consumption, while an enacted purchases increase pushes spending in the opposite direction. A lower price level subsequently raises quantity demanded along AD1. Which conclusion is supported, and what remains unidentified?",
+      "options": [
+        "The fiscal expansion outweighs the confidence decline; the lower price level causes the leftward AD shift.",
+        "The confidence-related demand reduction outweighs the fiscal expansion at a common price; the diagram does not separately measure the two gross effects.",
+        "The lower price level reverses the confidence shock, so the final demand curve must be AD0.",
+        "Each gross spending effect equals the net distance between AD0 and AD1, because the shifts have opposite signs."
+      ],
+      "feedback": "AD1 lies left of AD0, so the net demand change is negative at a common price. This identifies which opposing effect dominates, not their individual sizes. A lower price increases quantity demanded along the new curve and does not itself restore the old demand schedule.",
+      "aHash": "722c534e157318c160d6abdff5d903361bfd0af3369984331f28f69224d64f9d",
+      "imageAlt": "Aggregate-demand graph with solid AD0 and dashed AD1 to its left on numbered price-level and real-GDP axes.",
+      "graphDescription": "The horizontal axis is real GDP, numbered from 0 to 300; the vertical axis is price level, numbered from 0 to 140. Solid blue AD0 slopes downward from approximately (0,120) to (240,0). Dashed blue AD1 lies below and left of AD0, running from approximately (0,95) to (190,0). At price level 45, AD0 is near GDP 150 and AD1 near GDP 100. These are approximate readings of hand-drawn lines; no aggregate-supply curve is shown."
+    }
+  },
+  {
+    "id": "ECON-SP-EASY-37",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.2",
+    "type": "interpretation",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "PG3-AS-E-001",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.2",
+    "type": "graph",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 above and left of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward, near price 70 at GDP 0 and near price 150 at GDP 150, and near price 190 at GDP 230. Dashed red AS1 lies above and left of AS0, near price 115 at GDP 0 and near price 190 at GDP 150. Both lines continue upward to the right. These coordinates are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-E-002",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.2",
+    "type": "graph",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 below and right of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward from approximately (0,75) toward (230,190). Dashed red AS1 lies below and right of AS0, running from approximately (0,35) toward (230,150). At GDP 150, the curves are near price levels 150 and 110 respectively. These are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-M-002",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.2",
+    "type": "analysis",
+    "primarySkill": "identify_sras_shifters",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 above and left of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward, near price 70 at GDP 0 and near price 150 at GDP 150, and near price 190 at GDP 230. Dashed red AS1 lies above and left of AS0, near price 115 at GDP 0 and near price 190 at GDP 150. Both lines continue upward to the right. These coordinates are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-M-003",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.2",
+    "type": "analysis",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 below and right of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward from approximately (0,75) toward (230,190). Dashed red AS1 lies below and right of AS0, running from approximately (0,35) toward (230,150). At GDP 150, the curves are near price levels 150 and 110 respectively. These are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-M-004",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.2",
+    "type": "analysis",
+    "primarySkill": "identify_sras_shifters",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 below and right of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward from approximately (0,75) toward (230,190). Dashed red AS1 lies below and right of AS0, running from approximately (0,35) toward (230,150). At GDP 150, the curves are near price levels 150 and 110 respectively. These are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-H-001",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.2",
+    "type": "calculation",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace unsupported exact precision with a closest-estimate reading of the actual raster graph.",
+    "numericProofs": [],
+    "before": {
+      "q": "At real GDP of 150, what is the vertical price-level gap between AS0 and AS1?",
+      "feedback": "At the same output level, the price level increases from 150 to 190, a rise of 40."
+    },
+    "after": {
+      "q": "Refer to the first AS graph. At real GDP of 150, which value is closest to the vertical price-level gap between AS0 and AS1?",
+      "feedback": "The hand-drawn curves lie near price levels 150 and 190 at GDP 150. Their gap is roughly 40–45 price-level units, so 40 is the closest offered estimate; the graph does not support exact coordinate arithmetic.",
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 above and left of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward, near price 70 at GDP 0 and near price 150 at GDP 150, and near price 190 at GDP 230. Dashed red AS1 lies above and left of AS0, near price 115 at GDP 0 and near price 190 at GDP 150. Both lines continue upward to the right. These coordinates are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-H-002",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.2",
+    "type": "calculation",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace unsupported exact precision with a closest-estimate reading of the actual raster graph.",
+    "numericProofs": [],
+    "before": {
+      "q": "Use the second AS graph at real GDP 150. What vertical price-level distance separates AS0 and AS1?",
+      "feedback": "At the same output level, price level falls from 150 to 110, a decrease of 40."
+    },
+    "after": {
+      "q": "Refer to the second AS graph. At real GDP of 150, which value is closest to the vertical price-level gap between AS0 and AS1?",
+      "feedback": "The curves lie near price levels 150 and 110 at GDP 150. Their separation is approximately 40 price-level units, the closest offered estimate.",
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 below and right of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward from approximately (0,75) toward (230,190). Dashed red AS1 lies below and right of AS0, running from approximately (0,35) toward (230,150). At GDP 150, the curves are near price levels 150 and 110 respectively. These are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-MEQ-H-002",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.3",
+    "type": "analysis",
+    "primarySkill": "identify_sras_shifters",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, SRAS0, SRAS1, vertical LRAS0 and LRAS1, and intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 slopes downward. Red SRAS0 slopes upward; dashed SRAS1 lies below and right of SRAS0. LRAS0 is vertical at GDP 100 and dashed LRAS1 is vertical to its right at GDP 115. A, the AD0-SRAS0-LRAS0 intersection, is at (100,125). B, the AD0-SRAS1-LRAS1 intersection, is at (115,110). Dashed guides connect A and B to the axes."
+    }
+  },
+  {
+    "id": "PG3-AS-EL-001",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.2",
+    "type": "analysis",
+    "primarySkill": "expected_price_sras_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 above and left of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward, near price 70 at GDP 0 and near price 150 at GDP 150, and near price 190 at GDP 230. Dashed red AS1 lies above and left of AS0, near price 115 at GDP 0 and near price 190 at GDP 150. Both lines continue upward to the right. These coordinates are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-EL-002",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.2",
+    "type": "analysis",
+    "primarySkill": "identify_sras_shifters",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 below and right of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward from approximately (0,75) toward (230,190). Dashed red AS1 lies below and right of AS0, running from approximately (0,35) toward (230,150). At GDP 150, the curves are near price levels 150 and 110 respectively. These are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-L-001",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.2",
+    "type": "multi-step",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace direct SRAS recognition with a temporary-versus-permanent diagnosis and a required-evidence test.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which statement best interprets the shift from AS0 to AS1 without confusing it for a movement along a curve?",
+      "options": [
+        "AS1 shows more output demanded at each price level.",
+        "AS1 shows less output supplied at each price level.",
+        "AS0 and AS1 are two points on one supply curve.",
+        "AS1 shows higher potential output on a shifted LRAS."
+      ],
+      "feedback": "The entire AS curve shifted up/left. That means production is less forthcoming at each price level, not that the economy merely moved to another point on AS0.",
+      "aHash": "64e3505314b0dd788874b3faab7481c9e6524cad519f6130ce454b6b9f353fc6"
+    },
+    "after": {
+      "q": "Refer to the first AS graph, treating AS0 and AS1 as short-run supply. A temporary energy bottleneck and a permanent loss of productive equipment could each help explain the shift to AS1. After energy costs normalize, which evidence is needed to predict whether wage adjustment restores the old potential-output level?",
+      "options": [
+        "Whether the price level initially rose; any price rise proves that LRAS stayed fixed.",
+        "Whether productive capacity was restored and LRAS retained its old position; the SRAS-only drawing does not establish that.",
+        "Whether actual GDP fell; any actual output loss permanently lowers potential output by the same amount.",
+        "Whether demand policy can raise spending; a rightward AD shift by itself restores lost productive capacity."
+      ],
+      "feedback": "The drawing establishes a reduction in short-run supply, but contains no LRAS line. Temporary costs may reverse while destroyed capital leaves lower potential output. Wage adjustment returns output toward the applicable capacity level, so the old long-run anchor must be verified.",
+      "aHash": "0331af405c07da47a8fe7ce908eb342e33087b0450f24c4b4b0f50a321df40bd",
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 above and left of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward, near price 70 at GDP 0 and near price 150 at GDP 150, and near price 190 at GDP 230. Dashed red AS1 lies above and left of AS0, near price 115 at GDP 0 and near price 190 at GDP 150. Both lines continue upward to the right. These coordinates are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-L-002",
+    "concept": "short-run-aggregate-supply",
+    "authoritativeConcept": "short-run-aggregate-supply",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.2",
+    "type": "multi-step",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add partial reversal, long-run capacity, and identification limits to a repeated upper-tier graph definition.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which statement best interprets the move from AS0 to AS1?",
+      "options": [
+        "AS1 shows less output demanded at each price level.",
+        "AS0 and AS1 are two points on one supply curve.",
+        "AS1 shows lower potential output on a shifted LRAS.",
+        "AS1 shows more output supplied at each price level."
+      ],
+      "feedback": "A lower AS curve means firms will supply more at each price level, or the same output at a lower price level. That is an increase in aggregate supply.",
+      "aHash": "e424e6dc8415d5a8a60de7bbf6fa53839fab578569521ab96b5a66001365b510"
+    },
+    "after": {
+      "q": "Refer to the second AS graph, treating AS0 and AS1 as short-run supply. Both lower expected prices and a lasting productivity gain could contribute to the shift to AS1. If expected prices later return to their original level but the productivity gain remains, which prediction is justified?",
+      "options": [
+        "SRAS must return exactly to AS0 and LRAS must remain fixed because expected prices returned.",
+        "SRAS must stay exactly at AS1 because a permanent productivity change prevents any expectations effect.",
+        "LRAS must shift left because returning expected prices erase the productive-capacity gain.",
+        "Some rightward supply effect can remain, and potential output can be higher; the exact final SRAS position needs the sizes of the two original contributions."
+      ],
+      "feedback": "Restoring expected prices reverses that contribution to SRAS, while improved productivity still supports supply and raises potential output. The graph records only their combined initial effect; without a decomposition it does not locate the final SRAS precisely.",
+      "aHash": "ffee290c80a3061807987ca8ffce4070312b907cac3812db6fd0f40a4108b7d4",
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 below and right of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward from approximately (0,75) toward (230,190). Dashed red AS1 lies below and right of AS0, running from approximately (0,35) toward (230,150). At GDP 150, the curves are near price levels 150 and 110 respectively. These are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "P52A-AS-H-003",
+    "concept": "long-run-aggregate-supply-and-potential-output",
+    "authoritativeConcept": "long-run-aggregate-supply-and-potential-output",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.2",
+    "type": "multi-step",
+    "primarySkill": "identify_lras",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Remove the hidden assumption that energy costs dominate the labor-force contribution to SRAS.",
+    "numericProofs": [],
+    "before": {
+      "q": "A permanent increase in the labor force raises potential output, while a temporary surge in energy prices raises costs. Which combination is most likely?",
+      "options": [
+        "LRAS shifts right and SRAS shifts left.",
+        "LRAS shifts left and SRAS shifts right.",
+        "Both curves shift left.",
+        "Both curves shift right."
+      ],
+      "feedback": "More labor raises capacity; higher energy prices reduce short-run supply.",
+      "aHash": "b7d52d47510dce2947e186bd7fbb9e18eaaaeac9b88b84f98b3a1361a9ccad74"
+    },
+    "after": {
+      "q": "A permanent labor-force increase raises productive capacity and tends to expand short-run supply. A simultaneous temporary energy-price spike tends to reduce short-run supply. No relative magnitudes are given. What can be concluded about LRAS and the net SRAS shift?",
+      "options": [
+        "LRAS shifts right; the net SRAS direction is not determined.",
+        "LRAS shifts right; SRAS necessarily shifts left.",
+        "LRAS shifts left; SRAS necessarily shifts right.",
+        "LRAS stays fixed; SRAS necessarily shifts right."
+      ],
+      "feedback": "The labor-force increase raises potential output, shifting LRAS right. The two events exert opposing pressures on SRAS, so their relative effects are needed to determine its net direction. A temporary energy-price spike does not by itself remove productive capacity.",
+      "aHash": "cd46d891456940c57c69cdfd6efc9d7af242c13cd10da594aff903d0df5ae60f"
+    }
+  },
+  {
+    "id": "P52A-AS-L-003",
+    "concept": "long-run-aggregate-supply-and-potential-output",
+    "authoritativeConcept": "long-run-aggregate-supply-and-potential-output",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.2",
+    "type": "analysis",
+    "primarySkill": "identify_lras",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Specify the missing production relationship and replace ambiguous percentages with a capacity-and-threshold inference.",
+    "numericProofs": [],
+    "before": {
+      "q": "A country loses 5 percent of its capital stock but gains a technology that raises remaining capital productivity by 8 percent. What is the LRAS implication?",
+      "options": [
+        "The net LRAS effect is ambiguous without knowing the relative output effects.",
+        "LRAS must shift right because productivity rose more in percentage terms.",
+        "LRAS cannot change when two forces offset.",
+        "LRAS must shift left because capital fell."
+      ],
+      "feedback": "The effect on potential output depends on how each change affects productive capacity.",
+      "aHash": "52c32c4e653a381894012a4772a1c617d2de08b20fe560d91556610ccf80d082"
+    },
+    "after": {
+      "q": "For this capacity calculation only, potential output equals usable capital multiplied by output per unit of usable capital; other inputs are sufficient and unchanged. Usable capital falls by 5 percent while output per unit rises by 8 percent. A planner claims that any productivity gain above 5 percent would restore the original LRAS position. Which assessment is correct?",
+      "options": [
+        "Potential output rises by 2.6 percent, but exactly restoring it would require a productivity gain of about 5.26 percent.",
+        "Potential output rises by 3 percent, and a 5 percent productivity gain would exactly restore it.",
+        "Potential output falls by 2.6 percent, and an 8 percent productivity gain cannot offset the capital loss.",
+        "Potential output is unchanged because the two percentage changes cancel exactly."
+      ],
+      "feedback": "Capacity becomes 0.95 × 1.08 = 1.026 times its original value, a 2.6 percent increase and a rightward LRAS shift. The break-even productivity factor is 1/0.95, or a gain of approximately 5.26 percent. Percentages with different bases cannot simply be subtracted.",
+      "aHash": "82b4096c78e414948d3e36e933de8cda7b3f0480142a020c26fc4043d0641040"
+    }
+  },
+  {
+    "id": "P52A-AS-B3-001",
+    "concept": "long-run-aggregate-supply-and-potential-output",
+    "authoritativeConcept": "long-run-aggregate-supply-and-potential-output",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "LO34.2",
+    "type": "application",
+    "primarySkill": "identify_lras",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Remove the hidden assumption that energy costs dominate the labor-force contribution to SRAS.",
+    "numericProofs": [],
+    "before": {
+      "q": "A permanent labor-force increase occurs with a temporary oil-price spike. Which curves move?",
+      "options": [
+        "Both left.",
+        "Both right.",
+        "LRAS right and SRAS left.",
+        "LRAS left and SRAS right."
+      ],
+      "feedback": "More labor raises capacity; expensive oil reduces short-run supply.",
+      "aHash": "bfc95a7bf5e77489719e0e882dce70b6e1917e92dad80ababf1c47e519c081eb"
+    },
+    "after": {
+      "q": "A larger permanent labor force adds productive capacity and supports short-run supply, but a temporary oil-price spike pushes short-run supply in the opposite direction. Before their relative sizes are known, which conclusion should an AD-AS analysis carry forward?",
+      "options": [
+        "LRAS shifts right; SRAS necessarily shifts left.",
+        "LRAS shifts left; SRAS necessarily shifts right.",
+        "LRAS shifts right; the net SRAS direction is not determined.",
+        "LRAS stays fixed; SRAS necessarily shifts right."
+      ],
+      "feedback": "The labor-force increase raises potential output, shifting LRAS right. The two events exert opposing pressures on SRAS, so their relative effects are needed to determine its net direction. A temporary energy-price spike does not by itself remove productive capacity.",
+      "aHash": "cd46d891456940c57c69cdfd6efc9d7af242c13cd10da594aff903d0df5ae60f"
+    }
+  },
+  {
+    "id": "ECON-SP-EASY-38",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.4",
+    "type": "interpretation",
+    "primarySkill": "read_ad_as_equilibrium",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-EASY-39",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.4",
+    "type": "interpretation",
+    "primarySkill": "read_ad_as_equilibrium",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "PG3-MEQ-E-001",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "identify_lras",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, vertical LRAS0 at GDP 100 and points A through D.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 and dashed AD1 slope downward; AD1 lies to the right of AD0. Red SRAS0 and dashed SRAS1 slope upward; SRAS1 lies above and left of SRAS0. LRAS0 is vertical at real GDP 100. Coordinates are (GDP, price level): C is the AD0-SRAS0 intersection at (100,125); D is AD1-SRAS0 at (125,150); B is AD1-SRAS1 at (100,175); A is AD0-SRAS1 at (75,150). C and B lie on LRAS0. Dashed guides connect the labeled points with their axis coordinates."
+    }
+  },
+  {
+    "id": "PG3-MEQ-E-002",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "identify_lras",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, SRAS0, SRAS1, vertical LRAS0 and LRAS1, and intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 slopes downward. Red SRAS0 slopes upward; dashed SRAS1 lies below and right of SRAS0. LRAS0 is vertical at GDP 100 and dashed LRAS1 is vertical to its right at GDP 115. A, the AD0-SRAS0-LRAS0 intersection, is at (100,125). B, the AD0-SRAS1-LRAS1 intersection, is at (115,110). Dashed guides connect A and B to the axes."
+    }
+  },
+  {
+    "id": "ECON-SP-EASY-40",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.5",
+    "type": "interpretation",
+    "primarySkill": "identify_natural_output",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-EASY-41",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.5",
+    "type": "interpretation",
+    "primarySkill": "classify_output_gap",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-EASY-42",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.5",
+    "type": "interpretation",
+    "primarySkill": "classify_output_gap",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-MEDIUM-128",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "read_ad_as_equilibrium",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "PG3-MEQ-M-002",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "identify_lras",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, vertical LRAS0 at GDP 100 and points A through D.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 and dashed AD1 slope downward; AD1 lies to the right of AD0. Red SRAS0 and dashed SRAS1 slope upward; SRAS1 lies above and left of SRAS0. LRAS0 is vertical at real GDP 100. Coordinates are (GDP, price level): C is the AD0-SRAS0 intersection at (100,125); D is AD1-SRAS0 at (125,150); B is AD1-SRAS1 at (100,175); A is AD0-SRAS1 at (75,150). C and B lie on LRAS0. Dashed guides connect the labeled points with their axis coordinates."
+    }
+  },
+  {
+    "id": "PG3-MEQ-M-003",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "identify_lras",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, SRAS0, SRAS1, vertical LRAS0 and LRAS1, and intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 slopes downward. Red SRAS0 slopes upward; dashed SRAS1 lies below and right of SRAS0. LRAS0 is vertical at GDP 100 and dashed LRAS1 is vertical to its right at GDP 115. A, the AD0-SRAS0-LRAS0 intersection, is at (100,125). B, the AD0-SRAS1-LRAS1 intersection, is at (115,110). Dashed guides connect A and B to the axes."
+    }
+  },
+  {
+    "id": "ECON-SP-MEDIUM-131",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.5",
+    "type": "graph_interpretation",
+    "primarySkill": "classify_output_gap",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-MEDIUM-132",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.5",
+    "type": "graph_interpretation",
+    "primarySkill": "connect_output_unemployment",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-MEDIUM-133",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.5",
+    "type": "graph_interpretation",
+    "primarySkill": "classify_output_gap",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-214",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.5",
+    "type": "graph_interpretation",
+    "primarySkill": "classify_output_gap",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "PG3-MEQ-EL-001",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.3",
+    "type": "analysis",
+    "primarySkill": "identify_lras",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, vertical LRAS0 at GDP 100 and points A through D.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 and dashed AD1 slope downward; AD1 lies to the right of AD0. Red SRAS0 and dashed SRAS1 slope upward; SRAS1 lies above and left of SRAS0. LRAS0 is vertical at real GDP 100. Coordinates are (GDP, price level): C is the AD0-SRAS0 intersection at (100,125); D is AD1-SRAS0 at (125,150); B is AD1-SRAS1 at (100,175); A is AD0-SRAS1 at (75,150). C and B lie on LRAS0. Dashed guides connect the labeled points with their axis coordinates."
+    }
+  },
+  {
+    "id": "PG3-MEQ-EL-003",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.3",
+    "type": "analysis",
+    "primarySkill": "movement_vs_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, rightward AD1, fixed AS0 and marked intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward, with AD1 above and right of AD0. Solid red AS0 slopes upward. Point A is AD0-AS0 at (150,125); point B is AD1-AS0 at (175,137.5). Dashed guides connect the intersections to the axis values. No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "PG3-MEQ-L-002",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.3",
+    "type": "multi-step",
+    "primarySkill": "identify_lras",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, SRAS0, SRAS1, vertical LRAS0 and LRAS1, and intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 slopes downward. Red SRAS0 slopes upward; dashed SRAS1 lies below and right of SRAS0. LRAS0 is vertical at GDP 100 and dashed LRAS1 is vertical to its right at GDP 115. A, the AD0-SRAS0-LRAS0 intersection, is at (100,125). B, the AD0-SRAS1-LRAS1 intersection, is at (115,110). Dashed guides connect A and B to the axes."
+    }
+  },
+  {
+    "id": "PM2D1-LRADJ-EB-002",
+    "concept": "ad-as-equilibrium-and-output-gaps",
+    "authoritativeConcept": "ad-as-equilibrium-and-output-gaps",
+    "pool": "boss",
+    "difficulty": "easy",
+    "objective": "LO34.5",
+    "type": "application",
+    "primarySkill": "classify_output_gap",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "PG3-MEQ-E-003",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, rightward AD1, fixed AS0 and marked intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward, with AD1 above and right of AD0. Solid red AS0 slopes upward. Point A is AD0-AS0 at (150,125); point B is AD1-AS0 at (175,137.5). Dashed guides connect the intersections to the axis values. No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "PG3-MEQ-E-004",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, and four marked intersections.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward; AD1 lies above and right of AD0. Solid red AS0 and dashed red AS1 slope upward; AS1 lies above and left of AS0. All four lines are straight. Coordinates are (GDP, price level): A is AD0-AS0 at (75,100); B is AD1-AS0 at (100,125); C is AD1-AS1 at (75,150); D is AD0-AS1 at (50,125). A numbered grid gives the coordinates. AS1 continues through (25,100). No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "PG3-AS-M-001",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.2",
+    "type": "analysis",
+    "primarySkill": "identify_sras_shifters",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "Short-run aggregate-supply graph with solid AS0 and dashed AS1 above and left of it on numbered axes.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level; both are numbered from 0 to 250. Solid red AS0 slopes upward, near price 70 at GDP 0 and near price 150 at GDP 150, and near price 190 at GDP 230. Dashed red AS1 lies above and left of AS0, near price 115 at GDP 0 and near price 190 at GDP 150. Both lines continue upward to the right. These coordinates are approximate readings of hand-drawn curves. No AD or LRAS curve is drawn."
+    }
+  },
+  {
+    "id": "ECON-SP-MEDIUM-129",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_supply_shock",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-MEDIUM-130",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_combined_shocks",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-MEDIUM-134",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_supply_shock",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "PG3-MEQ-M-001",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, vertical LRAS0 at GDP 100 and points A through D.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 and dashed AD1 slope downward; AD1 lies to the right of AD0. Red SRAS0 and dashed SRAS1 slope upward; SRAS1 lies above and left of SRAS0. LRAS0 is vertical at real GDP 100. Coordinates are (GDP, price level): C is the AD0-SRAS0 intersection at (100,125); D is AD1-SRAS0 at (125,150); B is AD1-SRAS1 at (100,175); A is AD0-SRAS1 at (75,150). C and B lie on LRAS0. Dashed guides connect the labeled points with their axis coordinates."
+    }
+  },
+  {
+    "id": "PG3-MEQ-M-004",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.3",
+    "type": "analysis",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, SRAS0, SRAS1, vertical LRAS0 and LRAS1, and intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 slopes downward. Red SRAS0 slopes upward; dashed SRAS1 lies below and right of SRAS0. LRAS0 is vertical at GDP 100 and dashed LRAS1 is vertical to its right at GDP 115. A, the AD0-SRAS0-LRAS0 intersection, is at (100,125). B, the AD0-SRAS1-LRAS1 intersection, is at (115,110). Dashed guides connect A and B to the axes."
+    }
+  },
+  {
+    "id": "PG3-MEQ-M-005",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, rightward AD1, fixed AS0 and marked intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward, with AD1 above and right of AD0. Solid red AS0 slopes upward. Point A is AD0-AS0 at (150,125); point B is AD1-AS0 at (175,137.5). Dashed guides connect the intersections to the axis values. No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "PG3-MEQ-M-006",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.3",
+    "type": "calculation",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, rightward AD1, fixed AS0 and marked intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward, with AD1 above and right of AD0. Solid red AS0 slopes upward. Point A is AD0-AS0 at (150,125); point B is AD1-AS0 at (175,137.5). Dashed guides connect the intersections to the axis values. No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "PG3-MEQ-M-007",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, and four marked intersections.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward; AD1 lies above and right of AD0. Solid red AS0 and dashed red AS1 slope upward; AS1 lies above and left of AS0. All four lines are straight. Coordinates are (GDP, price level): A is AD0-AS0 at (75,100); B is AD1-AS0 at (100,125); C is AD1-AS1 at (75,150); D is AD0-AS1 at (50,125). A numbered grid gives the coordinates. AS1 continues through (25,100). No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "PG3-MEQ-M-008",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.3",
+    "type": "graph",
+    "primarySkill": "read_sras_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, and four marked intersections.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward; AD1 lies above and right of AD0. Solid red AS0 and dashed red AS1 slope upward; AS1 lies above and left of AS0. All four lines are straight. Coordinates are (GDP, price level): A is AD0-AS0 at (75,100); B is AD1-AS0 at (100,125); C is AD1-AS1 at (75,150); D is AD0-AS1 at (50,125). A numbered grid gives the coordinates. AS1 continues through (25,100). No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-211",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_supply_shock",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-212",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_combined_shocks",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Repair impossible starting-curve transition and require both macro outcomes from the actual intersections.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph. If the economy starts at AD1-AS2 and both AD and SRAS increase, where does it end?",
+      "options": [
+        "Y2 and P2",
+        "Y1 and P3",
+        "Y3 and P2",
+        "Y1 and P1"
+      ],
+      "feedback": "AD2 and AS2 intersect at Y2 and P2.",
+      "image": "question-assets/adas1.webp",
+      "aHash": "2daa41e206aa09a4e91708398ae3c8f78082c7ce1adf028852c7d4261de6e4b5"
+    },
+    "after": {
+      "q": "Refer to the graph. The economy begins at AD1-AS1. Higher planned spending moves demand to AD2 while lower production costs move short-run supply to AS2. Compared with the starting equilibrium, what happens to output and the price level?",
+      "options": [
+        "Output rises from Y3 to Y2 while the price level stays at P2.",
+        "Output stays at Y1 while the price level rises from P1 to P3.",
+        "Output falls from Y2 to Y3 while the price level stays at P2.",
+        "Output rises from Y3 to Y1 while the price level falls from P2 to P1."
+      ],
+      "feedback": "The starting AD1-AS1 intersection is Y3/P2 and the ending AD2-AS2 intersection is Y2/P2. The two rightward shifts reinforce output and offset in the price level in this particular drawing.",
+      "image": "question-assets/aggregate-demand/adas1.webp",
+      "aHash": "2a452af2839764f0ed4c4914d12df361c4a16e58b1c446c1703caccc850a5238"
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-213",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_combined_shocks",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-215",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_supply_shock",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-218",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.4",
+    "type": "multi-step",
+    "primarySkill": "trace_demand_shock",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "PG3-MEQ-H-001",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.3",
+    "type": "multi-step",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, vertical LRAS0 at GDP 100 and points A through D.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 and dashed AD1 slope downward; AD1 lies to the right of AD0. Red SRAS0 and dashed SRAS1 slope upward; SRAS1 lies above and left of SRAS0. LRAS0 is vertical at real GDP 100. Coordinates are (GDP, price level): C is the AD0-SRAS0 intersection at (100,125); D is AD1-SRAS0 at (125,150); B is AD1-SRAS1 at (100,175); A is AD0-SRAS1 at (75,150). C and B lie on LRAS0. Dashed guides connect the labeled points with their axis coordinates."
+    }
+  },
+  {
+    "id": "PG3-MEQ-H-003",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.3",
+    "type": "calculation",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, rightward AD1, fixed AS0 and marked intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward, with AD1 above and right of AD0. Solid red AS0 slopes upward. Point A is AD0-AS0 at (150,125); point B is AD1-AS0 at (175,137.5). Dashed guides connect the intersections to the axis values. No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "PG3-MEQ-H-004",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.3",
+    "type": "multi-step",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, and four marked intersections.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward; AD1 lies above and right of AD0. Solid red AS0 and dashed red AS1 slope upward; AS1 lies above and left of AS0. All four lines are straight. Coordinates are (GDP, price level): A is AD0-AS0 at (75,100); B is AD1-AS0 at (100,125); C is AD1-AS1 at (75,150); D is AD0-AS1 at (50,125). A numbered grid gives the coordinates. AS1 continues through (25,100). No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-308",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_combined_shocks",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-309",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_combined_shocks",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-312",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.4",
+    "type": "integration",
+    "primarySkill": "evaluate_supply_shock_policy",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-339",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "evaluate_supply_shock_policy",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-340",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_supply_shock",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-341",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.4",
+    "type": "graph_interpretation",
+    "primarySkill": "trace_supply_shock",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "PG3-MEQ-EL-004",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.3",
+    "type": "analysis",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, and four marked intersections.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward; AD1 lies above and right of AD0. Solid red AS0 and dashed red AS1 slope upward; AS1 lies above and left of AS0. All four lines are straight. Coordinates are (GDP, price level): A is AD0-AS0 at (75,100); B is AD1-AS0 at (100,125); C is AD1-AS1 at (75,150); D is AD0-AS1 at (50,125). A numbered grid gives the coordinates. AS1 continues through (25,100). No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "ECON-SP-LEGENDARY-9002",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.4",
+    "type": "graph_integration",
+    "primarySkill": "evaluate_supply_shock_policy",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-LEGENDARY-9038",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.4",
+    "type": "graph_integration",
+    "primarySkill": "trace_combined_shocks",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-LEGENDARY-9039",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.4",
+    "type": "graph_integration",
+    "primarySkill": "trace_combined_shocks",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adas1.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adas1.webp"
+    }
+  },
+  {
+    "id": "PG3-MEQ-L-001",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.3",
+    "type": "multi-step",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, vertical LRAS0 at GDP 100 and points A through D.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 and dashed AD1 slope downward; AD1 lies to the right of AD0. Red SRAS0 and dashed SRAS1 slope upward; SRAS1 lies above and left of SRAS0. LRAS0 is vertical at real GDP 100. Coordinates are (GDP, price level): C is the AD0-SRAS0 intersection at (100,125); D is AD1-SRAS0 at (125,150); B is AD1-SRAS1 at (100,175); A is AD0-SRAS1 at (75,150). C and B lie on LRAS0. Dashed guides connect the labeled points with their axis coordinates."
+    }
+  },
+  {
+    "id": "PG3-MEQ-L-003",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.3",
+    "type": "multi-step",
+    "primarySkill": "read_ad_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, rightward AD1, fixed AS0 and marked intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward, with AD1 above and right of AD0. Solid red AS0 slopes upward. Point A is AD0-AS0 at (150,125); point B is AD1-AS0 at (175,137.5). Dashed guides connect the intersections to the axis values. No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "PG3-MEQ-L-004",
+    "concept": "demand-and-supply-shocks",
+    "authoritativeConcept": "demand-and-supply-shocks",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.3",
+    "type": "multi-step",
+    "primarySkill": "simultaneous_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace a repeated simultaneous-shift claim with an inverse output-versus-price stabilization comparison using actual graph geometry.",
+    "numericProofs": [],
+    "before": {
+      "q": "A student says the graph proves output must rise whenever aggregate demand increases. Which graph-based rebuttal is strongest?",
+      "options": [
+        "The AD increase dominates both output and the price-level effects.",
+        "The AS decrease dominates both output and the price-level effects.",
+        "The two shifts offset the price level but reinforce the output effect.",
+        "The AS decrease offsets the AD increase in output, not prices."
+      ],
+      "feedback": "Point B isolates the AD increase and point D isolates the AS decrease. Point C shows their combination, where the output effect is offset but inflation is amplified.",
+      "aHash": "94f7f8b31cdadb10a3dbe62cfb1bec14b54185d78016ea93d45d110206b3036f"
+    },
+    "after": {
+      "q": "Refer to the ADAS graph with points A, B, C and D. The economy begins at A. A supply disruption moves AS0 to AS1, giving D, and remains in place. Compare two fiscal targets while AS1 stays fixed: restore the original output, or restore the original price level. Which comparison follows from the drawn straight AS1 line, extended if needed?",
+      "options": [
+        "Restoring output gives B at GDP 100 and price 125; restoring price 100 also restores GDP 75.",
+        "Both targets give A because fiscal expansion returns AS1 to AS0.",
+        "Restoring output gives C at GDP 75 and price 150; restoring price 100 instead raises GDP to 125.",
+        "Restoring output gives C at GDP 75 and price 150; restoring price 100 instead gives GDP 25 and requires a further AD contraction from D."
+      ],
+      "feedback": "A is (75,100) and D is (50,125). With AS1 fixed, output 75 requires C at price 150. AS1 passes through D (50,125) and C (75,150), so its equation is P = Y + 75; at P = 100, Y = 25. Moving from D to that lower-price point requires lower AD and further output loss. Fiscal demand policy does not remove the supply disruption.",
+      "aHash": "ae024c980b32a6d3af6ee51b4895ea6b1ec3484b3aa326e4bd16a31461eb2d47",
+      "imageAlt": "AD-AS graph with two demand curves, two short-run supply curves, and four marked intersections.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Solid blue AD0 and dashed blue AD1 slope downward; AD1 lies above and right of AD0. Solid red AS0 and dashed red AS1 slope upward; AS1 lies above and left of AS0. All four lines are straight. Coordinates are (GDP, price level): A is AD0-AS0 at (75,100); B is AD1-AS0 at (100,125); C is AD1-AS1 at (75,150); D is AD0-AS1 at (50,125). A numbered grid gives the coordinates. AS1 continues through (25,100). No LRAS line is drawn."
+    }
+  },
+  {
+    "id": "PM2D1-LRADJ-M-001",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "LO34.5",
+    "type": "application",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "State that AD remains at its new position during endogenous wage adjustment.",
+    "numericProofs": [],
+    "before": {
+      "q": "A temporary demand boom pushes production above potential. Policymakers do nothing, and wage contracts are gradually renegotiated as workers and firms revise price expectations upward. Which change is most consistent with self-correction?"
+    },
+    "after": {
+      "q": "An increase in demand that remains in place pushes production above potential. Policymakers do nothing, and wage contracts are gradually renegotiated as workers and firms revise price expectations upward. Which change is most consistent with self-correction?"
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-216",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.5",
+    "type": "graph_interpretation",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-HARD-217",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "LO34.5",
+    "type": "graph_interpretation",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "PG3-MEQ-EL-002",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.3",
+    "type": "analysis",
+    "primarySkill": "short_run_long_run_adjustment",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {},
+    "after": {
+      "imageAlt": "AD-AS graph with AD0, SRAS0, SRAS1, vertical LRAS0 and LRAS1, and intersections A and B.",
+      "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. Blue AD0 slopes downward. Red SRAS0 slopes upward; dashed SRAS1 lies below and right of SRAS0. LRAS0 is vertical at GDP 100 and dashed LRAS1 is vertical to its right at GDP 115. A, the AD0-SRAS0-LRAS0 intersection, is at (100,125). B, the AD0-SRAS1-LRAS1 intersection, is at (115,110). Dashed guides connect A and B to the axes."
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-310",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.5",
+    "type": "graph_interpretation",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-311",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.5",
+    "type": "graph_interpretation",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-314",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.5",
+    "type": "integration",
+    "primarySkill": "choose_stabilization_response",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace unspecified same-direction adjustment with a comparison of output-restoring paths and opposite price effects.",
+    "numericProofs": [],
+    "before": {
+      "q": "An economy is above potential because of a demand boom. Which policy and long-run force push in the same direction?",
+      "options": [
+        "Contractionary policy and rising expected prices",
+        "Expansionary policy and falling expected prices",
+        "Contractionary policy and falling expected prices",
+        "Expansionary policy and rising expected prices"
+      ],
+      "feedback": "Contractionary policy shifts AD left, while rising expected prices shift SRAS left; both reduce output toward potential.",
+      "aHash": "826018d5ebd443e6bad4c9a6454306e5de4b30b9f9efa1f26291d49412cd0897"
+    },
+    "after": {
+      "q": "Output initially exceeds potential after a lasting AD expansion. Compare two separate responses, each sufficient to restore potential output: a demand policy with SRAS held fixed, or wage/expectation adjustment with AD held fixed. How do their price-level effects compare with the initial short-run equilibrium?",
+      "options": [
+        "Contractionary policy lowers the price level; wage adjustment raises it.",
+        "Both responses lower the price level because both reduce output.",
+        "Contractionary policy raises the price level; wage adjustment lowers it.",
+        "Neither response changes the price level because both restore potential output."
+      ],
+      "feedback": "AD contraction moves down along fixed SRAS, lowering output and price. Rising wages shift SRAS left, lowering output but raising price along fixed AD. The two paths share an output target, not a price outcome.",
+      "aHash": "bbdd2009c89e22efeb6029898f1389a18a76d43f83e7ffdc26cef8235808f1e9"
+    }
+  },
+  {
+    "id": "ECON-SP-ELITE-315",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "LO34.5",
+    "type": "integration",
+    "primarySkill": "choose_stabilization_response",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace unspecified same-direction adjustment with a comparison of output-restoring paths and opposite price effects.",
+    "numericProofs": [],
+    "before": {
+      "q": "An economy is below potential because AD collapsed. Which policy and long-run force push in the same direction?",
+      "options": [
+        "Expansionary policy and falling expected prices",
+        "Contractionary policy and rising expected prices",
+        "Expansionary policy and rising expected prices",
+        "Contractionary policy and falling expected prices"
+      ],
+      "feedback": "Expansionary policy shifts AD right, while falling expected prices shift SRAS right; both raise output toward potential.",
+      "aHash": "9687d84abd167de49275a9cf3c70b05dff7f8d4ed5105586d865956c0f93fae7"
+    },
+    "after": {
+      "q": "Output initially lies below potential after a lasting AD decline. Compare two separate responses, each sufficient to restore potential output: a demand policy with SRAS held fixed, or wage/expectation adjustment with AD held fixed. How do their price-level effects compare with the initial short-run equilibrium?",
+      "options": [
+        "Expansionary policy raises the price level; wage adjustment lowers it.",
+        "Both responses raise the price level because both raise output.",
+        "Expansionary policy lowers the price level; wage adjustment raises it.",
+        "Neither response changes the price level because both restore potential output."
+      ],
+      "feedback": "AD expansion moves up along fixed SRAS, raising output and price. Falling wages shift SRAS right, raising output but lowering price along fixed AD. The two paths share an output target, not a price outcome.",
+      "aHash": "6848c4c1a70cbafac89639ebdc2428828de10f0451105fce89e46b20b7c81b2c"
+    }
+  },
+  {
+    "id": "ECON-SP-LEGENDARY-9003",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.5",
+    "type": "graph_integration",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Deepen repeated self-correction recognition into a delayed-policy reversal after completed wage adjustment.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph with LRAS. Starting at AD2-AS2, expected prices adjust upward with no policy response. Which movement fits the model?",
+      "options": [
+        "SRAS shifts left toward AS1 and output returns toward Y1.",
+        "SRAS shifts right toward AS2 and output rises toward Y2.",
+        "AD shifts right toward AD2 and output remains above potential.",
+        "LRAS shifts right toward Y2 because actual output was high."
+      ],
+      "feedback": "When output is above potential, rising expected prices shift SRAS left and return output toward LRAS.",
+      "image": "question-assets/adaslras.webp",
+      "aHash": "e898ad9f8d21d4f72a3e73222be7005604a026230822255e2496e0bed2a79a3b"
+    },
+    "after": {
+      "q": "Refer to the graph with LRAS. Starting at AD1-AS2, a lasting demand expansion moves AD to AD2. Wage adjustment then moves SRAS all the way to AS1. Only after this adjustment does a delayed fiscal contraction return AD to AD1. With wages slow to change again, why does this delayed action fail to restore the original equilibrium immediately?",
+      "options": [
+        "It leaves the economy at Y3/P2, below potential; restoring the original Y1/P1 with AD1 requires SRAS to move back to AS2.",
+        "It leaves the economy at Y1/P1 immediately, because restoring AD always restores the original equilibrium.",
+        "It leaves the economy at Y2/P2, because wage adjustment shifted LRAS to Y2.",
+        "It leaves the economy at Y1/P3, because a contraction cannot change output once wages have adjusted."
+      ],
+      "feedback": "The sequence is AD1-AS2 at Y1/P1, AD2-AS2 at Y2/P2, AD2-AS1 at Y1/P3, then AD1-AS1 at Y3/P2. After wages adjusted to the demand expansion, simply restoring old demand creates a new recessionary gap. Subsequent lower wage and expected-price pressures can return SRAS toward AS2.",
+      "image": "question-assets/aggregate-demand/adaslras.webp",
+      "aHash": "8994fd473b6dbdb8942e251f1aab6af10aa080c0de182dbd62252413a48e5377"
+    }
+  },
+  {
+    "id": "ECON-SP-LEGENDARY-9004",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.5",
+    "type": "graph_integration",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": true,
+    "pathRevised": true,
+    "reason": "Integrate alternative stabilization paths, price outcomes and policy timing in an existing Legendary record.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph with LRAS. Starting at AD1-AS1, expected prices adjust downward with no policy response. Which movement fits the model?",
+      "options": [
+        "SRAS shifts right toward AS2 and output returns toward Y1.",
+        "SRAS shifts left toward AS1 and output falls toward Y3.",
+        "AD shifts left toward AD1 and prices rise toward P3.",
+        "LRAS shifts left toward Y3 because unemployment is high."
+      ],
+      "feedback": "When output is below potential, falling expected prices shift SRAS right and restore output toward natural output.",
+      "image": "question-assets/adaslras.webp",
+      "aHash": "2f05e2ebf89fff70eb272c570c5bd4f64a11b4d934f12951545a239fa1ffe034"
+    },
+    "after": {
+      "q": "Refer to the graph with LRAS. The economy starts at AD1-AS1, below potential. Two separate counterfactuals restore Y1: leave AD fixed and allow SRAS to reach AS2, or hold AS1 fixed and expand AD to AD2. If policymakers implement the full demand expansion after SRAS has already reached AS2, what happens and why?",
+      "options": [
+        "Output reaches Y2/P2, above potential, because each full remedy was sized for the original gap rather than the already-adjusted economy.",
+        "Output remains Y1/P1 because self-correction prevents fiscal policy from changing demand.",
+        "Output remains Y1/P3 because a policy calibrated to the original gap automatically shrinks as wages adjust.",
+        "Output falls to Y3/P2 because combining two output-restoring changes reverses both shifts."
+      ],
+      "feedback": "Self-correction alone gives AD1-AS2 at Y1/P1; the policy alone gives AD2-AS1 at Y1/P3. Combining both full changes gives AD2-AS2 at Y2/P2. A policy appropriate before cost adjustment can be excessive after the gap has closed.",
+      "image": "question-assets/aggregate-demand/adaslras.webp",
+      "aHash": "8c2f757fa4dd75bb42a2128e255d5664a9d48697fea12123b8fd97cae99a1975"
+    }
+  },
+  {
+    "id": "P52B-S1-LRADJ-L-001",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.5",
+    "type": "multi-step",
+    "primarySkill": "long_run_self_correction_demand_shock",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Remove a temporary-shock assumption inconsistent with the fixed post-shock AD long-run endpoint.",
+    "numericProofs": [],
+    "before": {
+      "q": "A temporary negative aggregate-demand shock lowers output below potential. With no policy response and flexible wages and expected prices over time, what is the long-run outcome?"
+    },
+    "after": {
+      "q": "A one-time aggregate-demand decline that remains in place lowers output below potential. With no policy response and flexible wages and expected prices over time, what is the long-run outcome?"
+    }
+  },
+  {
+    "id": "PM2D1-LRADJ-L-001",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "LO34.5",
+    "type": "application",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "PM2D1-LRADJ-FB-006",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "boss",
+    "difficulty": "hard",
+    "objective": "LO34.5",
+    "type": "application",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "PM2D1-LRADJ-MB-004",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "boss",
+    "difficulty": "medium",
+    "objective": "LO34.5",
+    "type": "application",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  },
+  {
+    "id": "PM2D1-LRADJ-LB-002",
+    "concept": "long-run-macroeconomic-self-adjustment",
+    "authoritativeConcept": "long-run-macroeconomic-self-adjustment",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "LO34.5",
+    "type": "application",
+    "primarySkill": "explain_long_run_adjustment",
+    "contentRevised": false,
+    "pathRevised": true,
+    "reason": "Resolve the legacy image reference to its existing registered runtime asset path.",
+    "numericProofs": [],
+    "before": {
+      "image": "question-assets/adaslras.webp"
+    },
+    "after": {
+      "image": "question-assets/aggregate-demand/adaslras.webp"
+    }
+  }
+]

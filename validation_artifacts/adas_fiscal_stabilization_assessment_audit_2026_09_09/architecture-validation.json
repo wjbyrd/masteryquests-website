@@ -1,0 +1,4676 @@
+{
+  "all728ScopedRecordsChecked": true,
+  "all262PhillipsRecordsUnchanged": true,
+  "protectedRecordFieldsUnchanged": true,
+  "allPoolMembershipsOrderAndAliasesUnchanged": true,
+  "all135NonselectedConceptDefinitionsUnchanged": true,
+  "modeEligibilityUnchanged": true,
+  "reviewRoutesUnchanged": true,
+  "repairBridgeRetestCheckpointAndTelemetryMetadataUnchanged": true,
+  "productionFilesAllowed": [
+    "data/composer_library.js",
+    "data/composer_registry.json",
+    "data/composer_library_manifest.json"
+  ],
+  "baselineSourceFiles": {
+    "data/composer_library.js": "3743d0bad666fb2ec5be94c1e9c13b41324a3a4780c84aff1441b4c846a80e24",
+    "data/composer_registry.json": "4d466b43434f700ccbb8e16539e7c6454cd02653e1730f2e7a4ce53fd4cab527",
+    "data/composer_library_manifest.json": "b6ea01fd899ff902a470e215ed94997d754e4bcaf6a0f49f74b8c01a1b803ce6",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  },
+  "finalSourceFiles": {
+    "data/composer_library.js": "2446dc220a1379008ab15a725c7ffcd3aa7d2bd92dbe5165060bcbb8cf73297b",
+    "data/composer_registry.json": "dcd6f5a2209d4de6b47acfe187bc836ffd4134092b33ca4d704531e8b00ddbd6",
+    "data/composer_library_manifest.json": "7f6f2f31fc8c3060bd1c33e9683287a2fa90caddce299e4d520cb134cb3d8bc3",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  },
+  "reviewAssets": [
+    {
+      "code": "MACRO-30",
+      "title": "Fiscal Policy and Aggregate Demand",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-30.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-30.pdf",
+      "sha256": "eba6305653589ef769717a02a2c3dcc5bd80b2dcb4a84463bf2d77c984cd3655",
+      "sizeBytes": 582159,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-31",
+      "title": "Fiscal Multipliers and Crowding Out",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-31.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-31.pdf",
+      "sha256": "b21eddcd9fbda4af78c245ee8ca0e4124464d8134936062247ef1863dc8a7ed4",
+      "sizeBytes": 581972,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-32",
+      "title": "Stabilization Policy",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-32.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-32.pdf",
+      "sha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc",
+      "sizeBytes": 353773,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-33",
+      "title": "Aggregate Demand",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-33.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-33.pdf",
+      "sha256": "727de49c0588c9c971cac54fdaedabe0a3595615e3622145b70807c959e0fc25",
+      "sizeBytes": 560842,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-34",
+      "title": "Short-Run Aggregate Supply",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-34.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-34.pdf",
+      "sha256": "500d8877c55c4d5c8209b3ddb1b47b868d2f594e4d8607d645d8803f1058f7d2",
+      "sizeBytes": 606869,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-35",
+      "title": "Demand and Supply Shocks",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-35.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-35.pdf",
+      "sha256": "1dd44c2d07a569f0fc5b29bc266dd885fb24dc1ecba19868c64d0960b9fdafc2",
+      "sizeBytes": 570424,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-36",
+      "title": "Long-Run Macroeconomic Self-Adjustment",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-36.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-36.pdf",
+      "sha256": "86e6ad50fcf9c5e1b274e3da6822fc978aa75fd56456e599e90ab21befdec3d2",
+      "sizeBytes": 359915,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-37",
+      "title": "Short-Run Phillips Curve",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-37.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-37.pdf",
+      "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25",
+      "sizeBytes": 565287,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-38",
+      "title": "Long-Run Phillips Curve",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-38.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-38.pdf",
+      "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731",
+      "sizeBytes": 642014,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-39",
+      "title": "Phillips-Curve Expectations",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-39.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-39.pdf",
+      "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4",
+      "sizeBytes": 638816,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-40",
+      "title": "Disinflation and Policy",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-40.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-40.pdf",
+      "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e",
+      "sizeBytes": 638729,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-41",
+      "title": "Sacrifice Ratio",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-41.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-41.pdf",
+      "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7",
+      "sizeBytes": 353540,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-50",
+      "title": "Long-Run Aggregate Supply and Potential Output",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-50.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-50.pdf",
+      "sha256": "d10c7a9dde725f47c19ea9014f5c29cf327cb2f28c8dee6f368f7f55500813aa",
+      "sizeBytes": 643451,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-51",
+      "title": "AD-AS Equilibrium and Output Gaps",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-51.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-51.pdf",
+      "sha256": "ddb43f6e77f3822dc619d88cf7f37ff74f5bb10467b0b25737eedf1c63a46c02",
+      "sizeBytes": 570547,
+      "bytesVerified": true
+    }
+  ],
+  "reviewRuntimeIndex": {
+    "schemaVersion": "2.1.0",
+    "sourceManifestSchemaVersion": "8.0.0-composer-integration",
+    "delivery": "central-https",
+    "baseUrl": "https://masteryquests.org/concept-reviews/",
+    "selectedConceptIds": [
+      "ad-as-equilibrium-and-output-gaps",
+      "aggregate-demand",
+      "demand-and-supply-shocks",
+      "disinflation-and-policy",
+      "fiscal-multipliers-and-crowding-out",
+      "fiscal-policy-and-aggregate-demand",
+      "long-run-aggregate-supply-and-potential-output",
+      "long-run-macroeconomic-self-adjustment",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "sacrifice-ratio",
+      "short-run-aggregate-supply",
+      "short-run-phillips-curve",
+      "stabilization-policy"
+    ],
+    "diagnosticConceptIds": [
+      "ad-as-equilibrium-and-output-gaps",
+      "aggregate-demand",
+      "demand-and-supply-shocks",
+      "disinflation-and-policy",
+      "fiscal-multipliers-and-crowding-out",
+      "fiscal-policy-and-aggregate-demand",
+      "long-run-aggregate-supply-and-potential-output",
+      "long-run-macroeconomic-self-adjustment",
+      "long-run-phillips-curve",
+      "phillips-curve-expectations",
+      "sacrifice-ratio",
+      "short-run-aggregate-supply",
+      "short-run-phillips-curve",
+      "stabilization-policy"
+    ],
+    "reviewCodes": [
+      "MACRO-30",
+      "MACRO-31",
+      "MACRO-32",
+      "MACRO-33",
+      "MACRO-34",
+      "MACRO-35",
+      "MACRO-36",
+      "MACRO-37",
+      "MACRO-38",
+      "MACRO-39",
+      "MACRO-40",
+      "MACRO-41",
+      "MACRO-50",
+      "MACRO-51"
+    ],
+    "assetInventory": [
+      {
+        "code": "MACRO-30",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-30.pdf",
+        "sha256": "eba6305653589ef769717a02a2c3dcc5bd80b2dcb4a84463bf2d77c984cd3655",
+        "sizeBytes": 582159
+      },
+      {
+        "code": "MACRO-31",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-31.pdf",
+        "sha256": "b21eddcd9fbda4af78c245ee8ca0e4124464d8134936062247ef1863dc8a7ed4",
+        "sizeBytes": 581972
+      },
+      {
+        "code": "MACRO-32",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-32.pdf",
+        "sha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc",
+        "sizeBytes": 353773
+      },
+      {
+        "code": "MACRO-33",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-33.pdf",
+        "sha256": "727de49c0588c9c971cac54fdaedabe0a3595615e3622145b70807c959e0fc25",
+        "sizeBytes": 560842
+      },
+      {
+        "code": "MACRO-34",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-34.pdf",
+        "sha256": "500d8877c55c4d5c8209b3ddb1b47b868d2f594e4d8607d645d8803f1058f7d2",
+        "sizeBytes": 606869
+      },
+      {
+        "code": "MACRO-35",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-35.pdf",
+        "sha256": "1dd44c2d07a569f0fc5b29bc266dd885fb24dc1ecba19868c64d0960b9fdafc2",
+        "sizeBytes": 570424
+      },
+      {
+        "code": "MACRO-36",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-36.pdf",
+        "sha256": "86e6ad50fcf9c5e1b274e3da6822fc978aa75fd56456e599e90ab21befdec3d2",
+        "sizeBytes": 359915
+      },
+      {
+        "code": "MACRO-37",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-37.pdf",
+        "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25",
+        "sizeBytes": 565287
+      },
+      {
+        "code": "MACRO-38",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-38.pdf",
+        "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731",
+        "sizeBytes": 642014
+      },
+      {
+        "code": "MACRO-39",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-39.pdf",
+        "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4",
+        "sizeBytes": 638816
+      },
+      {
+        "code": "MACRO-40",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-40.pdf",
+        "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e",
+        "sizeBytes": 638729
+      },
+      {
+        "code": "MACRO-41",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-41.pdf",
+        "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7",
+        "sizeBytes": 353540
+      },
+      {
+        "code": "MACRO-50",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-50.pdf",
+        "sha256": "d10c7a9dde725f47c19ea9014f5c29cf327cb2f28c8dee6f368f7f55500813aa",
+        "sizeBytes": 643451
+      },
+      {
+        "code": "MACRO-51",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-51.pdf",
+        "sha256": "ddb43f6e77f3822dc619d88cf7f37ff74f5bb10467b0b25737eedf1c63a46c02",
+        "sizeBytes": 570547
+      }
+    ],
+    "concepts": {
+      "ad-as-equilibrium-and-output-gaps": {
+        "title": "AD-AS Equilibrium and Output Gaps",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-51"
+        ],
+        "primaryReviewCode": "MACRO-51",
+        "assets": [
+          {
+            "code": "MACRO-51",
+            "title": "AD-AS Equilibrium and Output Gaps",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-51.pdf",
+            "sha256": "ddb43f6e77f3822dc619d88cf7f37ff74f5bb10467b0b25737eedf1c63a46c02"
+          }
+        ]
+      },
+      "aggregate-demand": {
+        "title": "Aggregate Demand",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-33"
+        ],
+        "primaryReviewCode": "MACRO-33",
+        "assets": [
+          {
+            "code": "MACRO-33",
+            "title": "Aggregate Demand",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-33.pdf",
+            "sha256": "727de49c0588c9c971cac54fdaedabe0a3595615e3622145b70807c959e0fc25"
+          }
+        ]
+      },
+      "demand-and-supply-shocks": {
+        "title": "Demand and Supply Shocks",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-35"
+        ],
+        "primaryReviewCode": "MACRO-35",
+        "assets": [
+          {
+            "code": "MACRO-35",
+            "title": "Demand and Supply Shocks",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-35.pdf",
+            "sha256": "1dd44c2d07a569f0fc5b29bc266dd885fb24dc1ecba19868c64d0960b9fdafc2"
+          }
+        ]
+      },
+      "disinflation-and-policy": {
+        "title": "Disinflation and Policy",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-40"
+        ],
+        "primaryReviewCode": "MACRO-40",
+        "assets": [
+          {
+            "code": "MACRO-40",
+            "title": "Disinflation and Policy",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-40.pdf",
+            "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e"
+          }
+        ]
+      },
+      "fiscal-multipliers-and-crowding-out": {
+        "title": "Fiscal Multipliers and Crowding Out",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-31"
+        ],
+        "primaryReviewCode": "MACRO-31",
+        "assets": [
+          {
+            "code": "MACRO-31",
+            "title": "Fiscal Multipliers and Crowding Out",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-31.pdf",
+            "sha256": "b21eddcd9fbda4af78c245ee8ca0e4124464d8134936062247ef1863dc8a7ed4"
+          }
+        ]
+      },
+      "fiscal-policy-and-aggregate-demand": {
+        "title": "Fiscal Policy and Aggregate Demand",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-30"
+        ],
+        "primaryReviewCode": "MACRO-30",
+        "assets": [
+          {
+            "code": "MACRO-30",
+            "title": "Fiscal Policy and Aggregate Demand",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-30.pdf",
+            "sha256": "eba6305653589ef769717a02a2c3dcc5bd80b2dcb4a84463bf2d77c984cd3655"
+          }
+        ]
+      },
+      "long-run-aggregate-supply-and-potential-output": {
+        "title": "Long-Run Aggregate Supply and Potential Output",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-50"
+        ],
+        "primaryReviewCode": "MACRO-50",
+        "assets": [
+          {
+            "code": "MACRO-50",
+            "title": "Long-Run Aggregate Supply and Potential Output",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-50.pdf",
+            "sha256": "d10c7a9dde725f47c19ea9014f5c29cf327cb2f28c8dee6f368f7f55500813aa"
+          }
+        ]
+      },
+      "long-run-macroeconomic-self-adjustment": {
+        "title": "Long-Run Macroeconomic Self-Adjustment",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-36"
+        ],
+        "primaryReviewCode": "MACRO-36",
+        "assets": [
+          {
+            "code": "MACRO-36",
+            "title": "Long-Run Macroeconomic Self-Adjustment",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-36.pdf",
+            "sha256": "86e6ad50fcf9c5e1b274e3da6822fc978aa75fd56456e599e90ab21befdec3d2"
+          }
+        ]
+      },
+      "long-run-phillips-curve": {
+        "title": "Long-Run Phillips Curve",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-38"
+        ],
+        "primaryReviewCode": "MACRO-38",
+        "assets": [
+          {
+            "code": "MACRO-38",
+            "title": "Long-Run Phillips Curve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-38.pdf",
+            "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731"
+          }
+        ]
+      },
+      "phillips-curve-expectations": {
+        "title": "Phillips-Curve Expectations",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-39"
+        ],
+        "primaryReviewCode": "MACRO-39",
+        "assets": [
+          {
+            "code": "MACRO-39",
+            "title": "Phillips-Curve Expectations",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-39.pdf",
+            "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4"
+          }
+        ]
+      },
+      "sacrifice-ratio": {
+        "title": "Sacrifice Ratio",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-41"
+        ],
+        "primaryReviewCode": "MACRO-41",
+        "assets": [
+          {
+            "code": "MACRO-41",
+            "title": "Sacrifice Ratio",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-41.pdf",
+            "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7"
+          }
+        ]
+      },
+      "short-run-aggregate-supply": {
+        "title": "Short-Run Aggregate Supply",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-34"
+        ],
+        "primaryReviewCode": "MACRO-34",
+        "assets": [
+          {
+            "code": "MACRO-34",
+            "title": "Short-Run Aggregate Supply",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-34.pdf",
+            "sha256": "500d8877c55c4d5c8209b3ddb1b47b868d2f594e4d8607d645d8803f1058f7d2"
+          }
+        ]
+      },
+      "short-run-phillips-curve": {
+        "title": "Short-Run Phillips Curve",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-37"
+        ],
+        "primaryReviewCode": "MACRO-37",
+        "assets": [
+          {
+            "code": "MACRO-37",
+            "title": "Short-Run Phillips Curve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-37.pdf",
+            "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25"
+          }
+        ]
+      },
+      "stabilization-policy": {
+        "title": "Stabilization Policy",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-32"
+        ],
+        "primaryReviewCode": "MACRO-32",
+        "assets": [
+          {
+            "code": "MACRO-32",
+            "title": "Stabilization Policy",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-32.pdf",
+            "sha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc"
+          }
+        ]
+      }
+    },
+    "reviews": {
+      "ad-as-equilibrium-and-output-gaps": {
+        "reviewCodes": [
+          "MACRO-51"
+        ],
+        "primaryReviewCode": "MACRO-51",
+        "assets": [
+          {
+            "code": "MACRO-51",
+            "title": "AD-AS Equilibrium and Output Gaps",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-51.pdf",
+            "sha256": "ddb43f6e77f3822dc619d88cf7f37ff74f5bb10467b0b25737eedf1c63a46c02"
+          }
+        ],
+        "code": "MACRO-51",
+        "title": "AD-AS Equilibrium and Output Gaps",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-51.pdf"
+      },
+      "aggregate-demand": {
+        "reviewCodes": [
+          "MACRO-33"
+        ],
+        "primaryReviewCode": "MACRO-33",
+        "assets": [
+          {
+            "code": "MACRO-33",
+            "title": "Aggregate Demand",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-33.pdf",
+            "sha256": "727de49c0588c9c971cac54fdaedabe0a3595615e3622145b70807c959e0fc25"
+          }
+        ],
+        "code": "MACRO-33",
+        "title": "Aggregate Demand",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-33.pdf"
+      },
+      "demand-and-supply-shocks": {
+        "reviewCodes": [
+          "MACRO-35"
+        ],
+        "primaryReviewCode": "MACRO-35",
+        "assets": [
+          {
+            "code": "MACRO-35",
+            "title": "Demand and Supply Shocks",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-35.pdf",
+            "sha256": "1dd44c2d07a569f0fc5b29bc266dd885fb24dc1ecba19868c64d0960b9fdafc2"
+          }
+        ],
+        "code": "MACRO-35",
+        "title": "Demand and Supply Shocks",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-35.pdf"
+      },
+      "disinflation-and-policy": {
+        "reviewCodes": [
+          "MACRO-40"
+        ],
+        "primaryReviewCode": "MACRO-40",
+        "assets": [
+          {
+            "code": "MACRO-40",
+            "title": "Disinflation and Policy",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-40.pdf",
+            "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e"
+          }
+        ],
+        "code": "MACRO-40",
+        "title": "Disinflation and Policy",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-40.pdf"
+      },
+      "fiscal-multipliers-and-crowding-out": {
+        "reviewCodes": [
+          "MACRO-31"
+        ],
+        "primaryReviewCode": "MACRO-31",
+        "assets": [
+          {
+            "code": "MACRO-31",
+            "title": "Fiscal Multipliers and Crowding Out",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-31.pdf",
+            "sha256": "b21eddcd9fbda4af78c245ee8ca0e4124464d8134936062247ef1863dc8a7ed4"
+          }
+        ],
+        "code": "MACRO-31",
+        "title": "Fiscal Multipliers and Crowding Out",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-31.pdf"
+      },
+      "fiscal-policy-and-aggregate-demand": {
+        "reviewCodes": [
+          "MACRO-30"
+        ],
+        "primaryReviewCode": "MACRO-30",
+        "assets": [
+          {
+            "code": "MACRO-30",
+            "title": "Fiscal Policy and Aggregate Demand",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-30.pdf",
+            "sha256": "eba6305653589ef769717a02a2c3dcc5bd80b2dcb4a84463bf2d77c984cd3655"
+          }
+        ],
+        "code": "MACRO-30",
+        "title": "Fiscal Policy and Aggregate Demand",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-30.pdf"
+      },
+      "long-run-aggregate-supply-and-potential-output": {
+        "reviewCodes": [
+          "MACRO-50"
+        ],
+        "primaryReviewCode": "MACRO-50",
+        "assets": [
+          {
+            "code": "MACRO-50",
+            "title": "Long-Run Aggregate Supply and Potential Output",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-50.pdf",
+            "sha256": "d10c7a9dde725f47c19ea9014f5c29cf327cb2f28c8dee6f368f7f55500813aa"
+          }
+        ],
+        "code": "MACRO-50",
+        "title": "Long-Run Aggregate Supply and Potential Output",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-50.pdf"
+      },
+      "long-run-macroeconomic-self-adjustment": {
+        "reviewCodes": [
+          "MACRO-36"
+        ],
+        "primaryReviewCode": "MACRO-36",
+        "assets": [
+          {
+            "code": "MACRO-36",
+            "title": "Long-Run Macroeconomic Self-Adjustment",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-36.pdf",
+            "sha256": "86e6ad50fcf9c5e1b274e3da6822fc978aa75fd56456e599e90ab21befdec3d2"
+          }
+        ],
+        "code": "MACRO-36",
+        "title": "Long-Run Macroeconomic Self-Adjustment",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-36.pdf"
+      },
+      "long-run-phillips-curve": {
+        "reviewCodes": [
+          "MACRO-38"
+        ],
+        "primaryReviewCode": "MACRO-38",
+        "assets": [
+          {
+            "code": "MACRO-38",
+            "title": "Long-Run Phillips Curve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-38.pdf",
+            "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731"
+          }
+        ],
+        "code": "MACRO-38",
+        "title": "Long-Run Phillips Curve",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-38.pdf"
+      },
+      "phillips-curve-expectations": {
+        "reviewCodes": [
+          "MACRO-39"
+        ],
+        "primaryReviewCode": "MACRO-39",
+        "assets": [
+          {
+            "code": "MACRO-39",
+            "title": "Phillips-Curve Expectations",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-39.pdf",
+            "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4"
+          }
+        ],
+        "code": "MACRO-39",
+        "title": "Phillips-Curve Expectations",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-39.pdf"
+      },
+      "sacrifice-ratio": {
+        "reviewCodes": [
+          "MACRO-41"
+        ],
+        "primaryReviewCode": "MACRO-41",
+        "assets": [
+          {
+            "code": "MACRO-41",
+            "title": "Sacrifice Ratio",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-41.pdf",
+            "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7"
+          }
+        ],
+        "code": "MACRO-41",
+        "title": "Sacrifice Ratio",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-41.pdf"
+      },
+      "short-run-aggregate-supply": {
+        "reviewCodes": [
+          "MACRO-34"
+        ],
+        "primaryReviewCode": "MACRO-34",
+        "assets": [
+          {
+            "code": "MACRO-34",
+            "title": "Short-Run Aggregate Supply",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-34.pdf",
+            "sha256": "500d8877c55c4d5c8209b3ddb1b47b868d2f594e4d8607d645d8803f1058f7d2"
+          }
+        ],
+        "code": "MACRO-34",
+        "title": "Short-Run Aggregate Supply",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-34.pdf"
+      },
+      "short-run-phillips-curve": {
+        "reviewCodes": [
+          "MACRO-37"
+        ],
+        "primaryReviewCode": "MACRO-37",
+        "assets": [
+          {
+            "code": "MACRO-37",
+            "title": "Short-Run Phillips Curve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-37.pdf",
+            "sha256": "dd7bcbba610d697178a7a42773ad12c0581b33fd83a15460aa56fad4c7c56d25"
+          }
+        ],
+        "code": "MACRO-37",
+        "title": "Short-Run Phillips Curve",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-37.pdf"
+      },
+      "stabilization-policy": {
+        "reviewCodes": [
+          "MACRO-32"
+        ],
+        "primaryReviewCode": "MACRO-32",
+        "assets": [
+          {
+            "code": "MACRO-32",
+            "title": "Stabilization Policy",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-32.pdf",
+            "sha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc"
+          }
+        ],
+        "code": "MACRO-32",
+        "title": "Stabilization Policy",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-32.pdf"
+      }
+    },
+    "evidenceRoutes": {
+      "questionToConceptIds": {
+        "ECON-SP-EASY-51": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "ECON-SP-EASY-52": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-49": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-50": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-51": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-52": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "ECON-SP-MEDIUM-151": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "ECON-SP-MEDIUM-152": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-164": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-165": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-166": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-167": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-168": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-169": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-H-001": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-H-002": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-H-003": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-H-004": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-H-005": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-H-006": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "ECON-SP-ELITE-345": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-379": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-EL-001": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-EL-002": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-L-001": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-L-002": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-L-003": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-L-004": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-L-005": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-L-006": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "PM2D2-FISCAD-L-001": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "PM2D2-FISCAD-L-002": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-277": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-4006": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-4007": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-4008": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-B1-001": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-B1-002": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-B1-003": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-B2-001": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-B2-002": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-B2-003": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-Q-9142": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-LB-001": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "P52A-FISCAD-LB-002": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "ECON-SP-FISCAL-POLICY-AD-SHIFT-5041": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "ECON-SP-TAX-CUT-AD-5042": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-R-5048": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-R-5049": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-R-5050": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-R-5051": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "ECON-SP-FISCAL-POLICY-AD-SHIFT-6032": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "ECON-SP-TAX-CUT-AD-6033": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LG-B-6021": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "ECON-SP-EASY-53": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-EASY-54": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-53": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-54": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-56": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-58": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-MEDIUM-147": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-170": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-174": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-175": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-176": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-177": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-178": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-HARD-228": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-HARD-229": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-272": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-273": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-274": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-276": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-ELITE-319": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-ELITE-320": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-ELITE-346": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-ELITE-347": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-370": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-371": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-372": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-373": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-374": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-376": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-377": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-LEGENDARY-9023": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-LEGENDARY-9024": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-9066": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-9067": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-9068": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-9073": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "PM2D2-MULT-L-001": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "PM2D2-MULT-L-002": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-EASY-55": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-HARD-230": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-HARD-231": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-MEDIUM-146": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-171": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-172": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-173": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-270": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-271": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-275": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-55": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-57": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-4009": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-4010": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-4011": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "P52B-S4-FMCO-B1-001": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "P52B-S4-FMCO-B1-002": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "P52B-S4-FMCO-B1-003": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "P52B-S4-FMCO-B2-001": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "P52B-S4-FMCO-B2-002": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "P52B-S4-FMCO-B2-003": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-9133": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-9134": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-Q-9141": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-CALCULATE-SPENDING-MULTIPLIER-5044": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-CROWDING-OUT-EFFECT-5045": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-FISCAL-POLICY-MAGNITUDE-5071": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-MULTIPLIER-EFFECT-5043": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-READ-MULTIPLIER-GRAPH-5090": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-R-5052": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-R-5053": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-R-5054": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-R-5055": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-CALCULATE-SPENDING-MULTIPLIER-6035": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-CROWDING-OUT-EFFECT-6036": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-MULTIPLIER-EFFECT-6034": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-B-6022": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LG-B-6023": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ECON-SP-EASY-56": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-EASY-57": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-EASY-58": [
+          "stabilization-policy"
+        ],
+        "LG-Q-60": [
+          "stabilization-policy"
+        ],
+        "LG-Q-81": [
+          "stabilization-policy"
+        ],
+        "LG-Q-82": [
+          "stabilization-policy"
+        ],
+        "LG-Q-83": [
+          "stabilization-policy"
+        ],
+        "LG-Q-84": [
+          "stabilization-policy"
+        ],
+        "LG-Q-85": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-MEDIUM-148": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-MEDIUM-149": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-MEDIUM-150": [
+          "stabilization-policy"
+        ],
+        "LG-Q-179": [
+          "stabilization-policy"
+        ],
+        "LG-Q-180": [
+          "stabilization-policy"
+        ],
+        "LG-Q-181": [
+          "stabilization-policy"
+        ],
+        "LG-Q-182": [
+          "stabilization-policy"
+        ],
+        "LG-Q-183": [
+          "stabilization-policy"
+        ],
+        "LG-Q-184": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-HARD-233": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-HARD-234": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-HARD-235": [
+          "stabilization-policy"
+        ],
+        "LG-Q-268": [
+          "stabilization-policy"
+        ],
+        "LG-Q-269": [
+          "stabilization-policy"
+        ],
+        "LG-Q-278": [
+          "stabilization-policy"
+        ],
+        "LG-Q-279": [
+          "stabilization-policy"
+        ],
+        "LG-Q-280": [
+          "stabilization-policy"
+        ],
+        "LG-Q-281": [
+          "stabilization-policy"
+        ],
+        "LG-Q-282": [
+          "stabilization-policy"
+        ],
+        "LG-Q-283": [
+          "stabilization-policy"
+        ],
+        "LG-Q-284": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-ELITE-321": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-ELITE-322": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-ELITE-344": [
+          "stabilization-policy"
+        ],
+        "LG-Q-362": [
+          "stabilization-policy"
+        ],
+        "LG-Q-363": [
+          "stabilization-policy"
+        ],
+        "LG-Q-375": [
+          "stabilization-policy"
+        ],
+        "LG-Q-378": [
+          "stabilization-policy"
+        ],
+        "LG-Q-380": [
+          "stabilization-policy"
+        ],
+        "LG-Q-381": [
+          "stabilization-policy"
+        ],
+        "LG-Q-382": [
+          "stabilization-policy"
+        ],
+        "LG-Q-383": [
+          "stabilization-policy"
+        ],
+        "LG-Q-384": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9057": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9058": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9063": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9065": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9069": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9070": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9071": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9074": [
+          "stabilization-policy"
+        ],
+        "PM2D2-STAB-L-001": [
+          "stabilization-policy"
+        ],
+        "PM2D2-STAB-L-002": [
+          "stabilization-policy"
+        ],
+        "PM2D2-STAB-L-003": [
+          "stabilization-policy"
+        ],
+        "PM2D2-STAB-L-004": [
+          "stabilization-policy"
+        ],
+        "LG-Q-4012": [
+          "stabilization-policy"
+        ],
+        "LG-Q-4013": [
+          "stabilization-policy"
+        ],
+        "LG-Q-4014": [
+          "stabilization-policy"
+        ],
+        "P52B-S4-STAB-B1-001": [
+          "stabilization-policy"
+        ],
+        "P52B-S4-STAB-B1-002": [
+          "stabilization-policy"
+        ],
+        "P52B-S4-STAB-B1-003": [
+          "stabilization-policy"
+        ],
+        "P52B-S4-STAB-B2-001": [
+          "stabilization-policy"
+        ],
+        "P52B-S4-STAB-B2-002": [
+          "stabilization-policy"
+        ],
+        "P52B-S4-STAB-B2-003": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9135": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9136": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9139": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9140": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9143": [
+          "stabilization-policy"
+        ],
+        "LG-Q-9144": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-AUTOMATIC-STABILIZERS-5064": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-CHOOSE-STABILIZATION-RESPONSE-5063": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-LIQUIDITY-TRAP-5047": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-POLICY-LAGS-5046": [
+          "stabilization-policy"
+        ],
+        "LG-R-5056": [
+          "stabilization-policy"
+        ],
+        "LG-R-5057": [
+          "stabilization-policy"
+        ],
+        "LG-R-5058": [
+          "stabilization-policy"
+        ],
+        "LG-R-5059": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-CHOOSE-STABILIZATION-RESPONSE-6054": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-LIQUIDITY-TRAP-6038": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-POLICY-LAGS-6037": [
+          "stabilization-policy"
+        ],
+        "LG-B-6024": [
+          "stabilization-policy"
+        ],
+        "LG-B-6025": [
+          "stabilization-policy"
+        ],
+        "ECON-SP-EASY-25": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-EASY-26": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-EASY-27": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-EASY-28": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-EASY-36": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-E-001": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-E-001": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-E-002": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-MEDIUM-120": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-MEDIUM-121": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-MEDIUM-122": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-MEDIUM-123": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-MEDIUM-139": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-M-001": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-M-001": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-M-002": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-M-003": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-M-004": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-H-001": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-H-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-H-003": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-H-004": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-H-005": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-H-006": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-H-001": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-H-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-EL-001": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-EL-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-EL-003": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-EL-004": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-EL-001": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-EL-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-L-001": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-L-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-L-003": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-L-004": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-L-005": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-L-006": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-L-001": [
+          "aggregate-demand"
+        ],
+        "PG3-AD-L-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-B1-001": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-B1-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-B1-003": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-B2-001": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-B2-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-B2-003": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-B3-001": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-B3-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-B3-003": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-LB-001": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-LB-002": [
+          "aggregate-demand"
+        ],
+        "P52A-AD-LB-003": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-EXPLAIN-AD-SLOPE-5024": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-IDENTIFY-AD-SHIFTERS-5025": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-IDENTIFY-AD-SHIFTERS-5026": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-READ-AD-AS-AXES-5085": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-READ-AD-SHIFT-5087": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-EXPLAIN-AD-SLOPE-6019": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-IDENTIFY-AD-SHIFTERS-6020": [
+          "aggregate-demand"
+        ],
+        "ECON-SP-EASY-30": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-EASY-31": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-EASY-37": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-E-002": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-E-001": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-E-002": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-MEDIUM-124": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-MEDIUM-125": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-M-001": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-M-002": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-M-003": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-M-002": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-M-003": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-M-004": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-H-001": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-H-002": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-H-004": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-H-005": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-H-006": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-H-001": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-H-002": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-MEQ-H-002": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-EL-002": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-EL-003": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-EL-004": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-EL-001": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-EL-002": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-L-002": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-L-004": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-L-006": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-L-001": [
+          "short-run-aggregate-supply"
+        ],
+        "PG3-AS-L-002": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-B1-001": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-B1-003": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-B2-001": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-B2-003": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-B3-002": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-B3-003": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-LB-001": [
+          "short-run-aggregate-supply"
+        ],
+        "P52A-AS-LB-002": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-EXPECTED-PRICE-SRAS-SHIFT-5031": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-EXPLAIN-SRAS-UPWARD-5028": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-IDENTIFY-SRAS-SHIFTERS-5029": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-IDENTIFY-SRAS-SHIFTERS-5030": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-READ-SRAS-SHIFT-5092": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-EXPECTED-PRICE-SRAS-SHIFT-6024": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-EXPLAIN-SRAS-UPWARD-6022": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-IDENTIFY-SRAS-SHIFTERS-6023": [
+          "short-run-aggregate-supply"
+        ],
+        "ECON-SP-EASY-29": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-E-001": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-M-004": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "ECON-SP-HARD-219": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-H-003": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-EL-001": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-L-001": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-L-003": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-L-005": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-B1-002": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-B2-002": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-B3-001": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "P52A-AS-LB-003": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "ECON-SP-IDENTIFY-LRAS-5027": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "ECON-SP-IDENTIFY-LRAS-6021": [
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "ECON-SP-EASY-38": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-EASY-39": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-EASY-43": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PG3-MEQ-E-001": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PG3-MEQ-E-002": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-EASY-40": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-EASY-41": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-EASY-42": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-EASY-45": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-MEDIUM-128": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PG3-MEQ-M-002": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PG3-MEQ-M-003": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-MEDIUM-131": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-MEDIUM-132": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-MEDIUM-133": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-HARD-214": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PM2D1-LRADJ-H-001": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PG3-MEQ-EL-001": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PG3-MEQ-EL-003": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PG3-MEQ-L-002": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "P52B-S1-LRADJ-B1-001": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PM2D1-LRADJ-EB-002": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PM2D1-LRADJ-FB-005": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "PM2D1-LRADJ-LB-003": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-CONNECT-OUTPUT-UNEMPLOYMENT-5068": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-READ-AD-AS-EQUILIBRIUM-5086": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-CLASSIFY-OUTPUT-GAP-5034": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-CLASSIFY-OUTPUT-GAP-5035": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-IDENTIFY-NATURAL-OUTPUT-5076": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-CLASSIFY-OUTPUT-GAP-6027": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "ECON-SP-EASY-32": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-EASY-33": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-EASY-34": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-EASY-35": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-E-003": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-E-004": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-AS-M-001": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-MEDIUM-126": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-MEDIUM-127": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-MEDIUM-129": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-MEDIUM-130": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-MEDIUM-134": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-MEDIUM-137": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-MEDIUM-138": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-M-001": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-M-004": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-M-005": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-M-006": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-M-007": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-M-008": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-HARD-211": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-HARD-212": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-HARD-213": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-HARD-215": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-HARD-218": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-HARD-220": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-HARD-223": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-H-001": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-H-003": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-H-004": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-ELITE-308": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-ELITE-309": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-ELITE-312": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-ELITE-313": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-ELITE-339": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-ELITE-340": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-ELITE-341": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-EL-004": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-LEGENDARY-9002": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-LEGENDARY-9038": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-LEGENDARY-9039": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-L-001": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-L-002": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-L-003": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-L-001": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-L-003": [
+          "demand-and-supply-shocks"
+        ],
+        "PG3-MEQ-L-004": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-B1-001": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-B1-002": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-B1-003": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-B2-001": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-B2-002": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-B2-003": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-B3-001": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-B3-002": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-B3-003": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-LB-001": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-LB-002": [
+          "demand-and-supply-shocks"
+        ],
+        "P52B-S3-MEQS-LB-003": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-CLASSIFY-DEMAND-SHOCK-5065": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-CLASSIFY-SUPPLY-SHOCK-5066": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-DEFINE-STAGFLATION-5069": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-EVALUATE-SUPPLY-SHOCK-POLICY-5062": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-TRACE-COMBINED-SHOCKS-5093": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-TRACE-DEMAND-SHOCK-5032": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-TRACE-SUPPLY-SHOCK-5033": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-EVALUATE-SUPPLY-SHOCK-POLICY-6053": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-TRACE-DEMAND-SHOCK-6025": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-TRACE-SUPPLY-SHOCK-6026": [
+          "demand-and-supply-shocks"
+        ],
+        "ECON-SP-EASY-44": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-E-001": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-MEDIUM-135": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-MEDIUM-136": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-M-001": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-HARD-216": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-HARD-217": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-HARD-221": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-HARD-222": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PG3-MEQ-EL-002": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-ELITE-310": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-ELITE-311": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-ELITE-314": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-ELITE-315": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-ELITE-337": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-ELITE-338": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-LEGENDARY-9003": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-LEGENDARY-9004": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "P52B-S1-LRADJ-L-001": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-L-001": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-L-002": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-L-003": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "P52B-S1-LRADJ-B2-001": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "P52B-S1-LRADJ-B3-001": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-EB-001": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-FB-006": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-MB-003": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-MB-004": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-LB-001": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "PM2D1-LRADJ-LB-002": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-EXPLAIN-LONG-RUN-ADJUSTMENT-5036": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-EXPLAIN-LONG-RUN-ADJUSTMENT-5037": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-EXPLAIN-LONG-RUN-ADJUSTMENT-6028": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ECON-SP-EASY-59": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-60": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-61": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-62": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-63": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-66": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-67": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-76": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-E-007": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-E-013": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-E-019": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-153": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-154": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-155": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-160": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-008": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-014": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-015": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-020": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-M-021": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-M-001": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-M-002": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-238": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-241": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-255": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-258": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-268": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-H-010": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-H-016": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-H-022": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-H-003": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-ELITE-323": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-ELITE-348": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-ELITE-351": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-LEGENDARY-9007": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-LEGENDARY-9046": [
+          "short-run-phillips-curve"
+        ],
+        "P52B-S2-SRPC-L-001": [
+          "short-run-phillips-curve"
+        ],
+        "PG5-PC-L-012": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-L-004": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-L-005": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-L-006": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUMBOSS-3000": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUMBOSS-3001": [
+          "short-run-phillips-curve"
+        ],
+        "P52B-S2-SRPC-B2-001": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-EB-007": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-EB-008": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-EB-009": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-FB-010": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-FB-011": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-FB-012": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-LB-013": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-LB-014": [
+          "short-run-phillips-curve"
+        ],
+        "PM2A-SRPC-LB-015": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-DEFINE-PHILLIPS-CURVE-5048": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MOVE-ALONG-SRPC-5050": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-NATURAL-RATE-HYPOTHESIS-5052": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-READ-PC-AXES-5049": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-READ-PC-POINTS-5091": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-DEFINE-PHILLIPS-CURVE-6039": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-MOVE-ALONG-SRPC-6041": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-NATURAL-RATE-HYPOTHESIS-6043": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-READ-PC-AXES-6040": [
+          "short-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-64": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-65": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-71": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-72": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-E-001": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-E-002": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUM-159": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-M-001": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-M-003": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-M-009": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-M-003": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-M-004": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-M-005": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-M-006": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-239": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-246": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-259": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-HARD-260": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-H-007": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-H-008": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-ELITE-325": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-EL-001": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-X-005": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-X-011": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-X-017": [
+          "long-run-phillips-curve"
+        ],
+        "PG5-PC-X-023": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-L-001": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-L-002": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-L-003": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-L-009": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-L-010": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-L-011": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUMBOSS-3003": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-MEDIUMBOSS-3004": [
+          "long-run-phillips-curve"
+        ],
+        "P52B-S1-LRPC-B3-001": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-EB-012": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-EB-013": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-EB-014": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-FB-016": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-FB-017": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-MB-015": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-LB-018": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-LB-019": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-LB-020": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-IDENTIFY-LRPC-5051": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-IDENTIFY-NATURAL-UNEMPLOYMENT-5077": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-IDENTIFY-LRPC-6042": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-BR-021": [
+          "long-run-phillips-curve"
+        ],
+        "PM2A-LRPC-BR-022": [
+          "long-run-phillips-curve"
+        ],
+        "ECON-SP-EASY-68": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-69": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-70": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-73": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-74": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-E-001": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-E-001": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-156": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-158": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-161": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-162": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-163": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUM-164": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-M-002": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-236": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-240": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-242": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-243": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-244": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-245": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-257": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-263": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-264": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-265": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-HARD-267": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-H-004": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-ELITE-326": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-ELITE-327": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-ELITE-328": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-ELITE-350": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-LEGENDARY-9009": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-LEGENDARY-9018": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-LEGENDARY-9048": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-L-006": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-L-018": [
+          "phillips-curve-expectations"
+        ],
+        "PG5-PC-L-024": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-L-002": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-L-003": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-L-004": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUMBOSS-3006": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-MEDIUMBOSS-3007": [
+          "phillips-curve-expectations"
+        ],
+        "P52B-S2-PCEXP-B2-001": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-EB-005": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-EB-006": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-EB-007": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-FB-008": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-FB-009": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-FB-010": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-LB-011": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-LB-012": [
+          "phillips-curve-expectations"
+        ],
+        "PM2A-EXP-LB-013": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EXPECTED-INFLATION-SHIFT-5053": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-SUPPLY-SHOCK-PC-SHIFT-5055": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-5054": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EXPECTED-INFLATION-SHIFT-6044": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-SUPPLY-SHOCK-PC-SHIFT-6046": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-TRACE-EXPECTATIONS-ADJUSTMENT-6045": [
+          "phillips-curve-expectations"
+        ],
+        "ECON-SP-EASY-75": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-E-001": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-E-002": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-E-003": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-E-001": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-E-002": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MEDIUM-157": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MEDIUM-165": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-M-003": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-M-004": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-M-005": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-M-006": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-HARD-237": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-HARD-247": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-HARD-256": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-H-001": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-H-007": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-H-008": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-ELITE-324": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-ELITE-349": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-LEGENDARY-9008": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-LEGENDARY-9047": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-L-001": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-L-009": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-L-010": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-L-011": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MEDIUMBOSS-3009": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MEDIUMBOSS-3010": [
+          "disinflation-and-policy"
+        ],
+        "P52B-S1-DIS-B3-001": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-EB-012": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-EB-013": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-EB-014": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-FB-016": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-FB-017": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-MB-015": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-LB-018": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-LB-019": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-LB-020": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-5057": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MONETARY-POLICY-PC-TRANSITION-5056": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-DISINFLATION-UNEMPLOYMENT-COST-6048": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-MONETARY-POLICY-PC-TRANSITION-6047": [
+          "disinflation-and-policy"
+        ],
+        "PM2A-DIS-BR-021": [
+          "disinflation-and-policy"
+        ],
+        "ECON-SP-EASY-77": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-EASY-79": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-E-001": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-E-002": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-E-003": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-E-004": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-MEDIUM-166": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-005": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-006": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-007": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-008": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-M-009": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-HARD-248": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-HARD-266": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-H-010": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-H-011": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-H-012": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-H-013": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-329": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-330": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-331": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-354": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-ELITE-355": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-LEGENDARY-9020": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-LEGENDARY-9021": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-LEGENDARY-9049": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-LEGENDARY-9050": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-L-014": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-L-015": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-EASY-78": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-HARD-249": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-HARD-250": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-MEDIUM-167": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-MEDIUMBOSS-3012": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-MEDIUMBOSS-3013": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-EB-016": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-EB-017": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-EB-018": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-FB-020": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-FB-021": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-FB-022": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-MB-019": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-LB-023": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-LB-024": [
+          "sacrifice-ratio"
+        ],
+        "PM2A-SAC-LB-025": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-CALCULATE-SACRIFICE-RATIO-5059": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-DEFINE-SACRIFICE-RATIO-5058": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-INTERPRET-SACRIFICE-RATIO-5060": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-CALCULATE-SACRIFICE-RATIO-6050": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-DEFINE-SACRIFICE-RATIO-6049": [
+          "sacrifice-ratio"
+        ],
+        "ECON-SP-INTERPRET-SACRIFICE-RATIO-6051": [
+          "sacrifice-ratio"
+        ]
+      },
+      "tagToConceptIds": {
+        "fiscal_policy": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "tax_policy": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "fiscal_policy_ad": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "aggregate_demand": [
+          "fiscal-policy-and-aggregate-demand",
+          "aggregate-demand"
+        ],
+        "mpc": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_formula": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "fiscal_multiplier": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "liquidity_trap": [
+          "stabilization-policy"
+        ],
+        "automatic_stabilizers": [
+          "stabilization-policy"
+        ],
+        "policy_lags": [
+          "stabilization-policy"
+        ],
+        "stabilization_policy": [
+          "stabilization-policy"
+        ],
+        "ad_as_basics": [
+          "aggregate-demand"
+        ],
+        "sras": [
+          "short-run-aggregate-supply"
+        ],
+        "sras_shifts": [
+          "short-run-aggregate-supply",
+          "demand-and-supply-shocks"
+        ],
+        "aggregate_supply": [
+          "short-run-aggregate-supply",
+          "long-run-aggregate-supply-and-potential-output",
+          "demand-and-supply-shocks"
+        ],
+        "ad_as_macro_equilibrium": [
+          "short-run-aggregate-supply",
+          "ad-as-equilibrium-and-output-gaps",
+          "demand-and-supply-shocks",
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "lras": [
+          "long-run-aggregate-supply-and-potential-output",
+          "ad-as-equilibrium-and-output-gaps",
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "ad_as_graph_interpretation": [
+          "ad-as-equilibrium-and-output-gaps",
+          "demand-and-supply-shocks"
+        ],
+        "economic_fluctuations": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "output_gaps": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "long_run_adjustment": [
+          "ad-as-equilibrium-and-output-gaps",
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "supply_shocks": [
+          "demand-and-supply-shocks"
+        ],
+        "demand_shocks": [
+          "demand-and-supply-shocks"
+        ],
+        "ad_as_policy": [
+          "demand-and-supply-shocks"
+        ],
+        "phillips_curve": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "policy_phillips": [
+          "short-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "natural_rate_hypothesis": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "short_run_phillips_curve": [
+          "short-run-phillips-curve"
+        ],
+        "lrpc": [
+          "long-run-phillips-curve"
+        ],
+        "long_run_phillips_curve": [
+          "long-run-phillips-curve"
+        ],
+        "expectations": [
+          "phillips-curve-expectations"
+        ],
+        "supply_shock_pc": [
+          "phillips-curve-expectations"
+        ],
+        "phillips_curve_expectations": [
+          "phillips-curve-expectations"
+        ],
+        "disinflation": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_and_policy": [
+          "disinflation-and-policy"
+        ],
+        "sacrifice_ratio": [
+          "sacrifice-ratio"
+        ]
+      },
+      "repairSkillToConceptIds": {
+        "fiscal_policy_ad_shift": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "tax_cut_ad": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "expansionary_fiscal_policy_definition": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "contractionary_fiscal_policy_definition": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "government_spending_ad_direction": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "tax_cut_ad_direction": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "read_ad_shift": [
+          "fiscal-policy-and-aggregate-demand",
+          "aggregate-demand",
+          "demand-and-supply-shocks"
+        ],
+        "tax_increase_ad_direction": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "calculate_tax_cut_consumption_effect": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "explain_policy_channel": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "predict_ad_shift": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "calculate_tax_policy_consumption_effect": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "mpc_basic_calculation": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "taxes_consumption_ad": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "combine_tax_cut_mpc_and_multiplier": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "government_spending_ad": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "heterogeneous_mpc_tax_effect": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "compare_fiscal_package_first_round": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "identify_policy_type": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "bridge_fiscal_to_multiplier": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "crowding_out_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_effect_definition": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "mpc_definition": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "spending_multiplier_formula": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "crowding_out_definition": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "mpc_multiplier_relationship": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "read_multiplier_graph": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "spending_multiplier_application": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "crowding_out_net_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_vs_crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_crowding_net_comparison": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "infer_crowding_out_from_net_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "calculate_spending_multiplier": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "mpc_and_multiplier_link": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "crowding_out_mechanism": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_leakage": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "net_multiplier_after_crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "fiscal_policy_magnitude": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "investment_interest_rate_inverse": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "bridge_multiplier_to_stabilization": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "liquidity_trap": [
+          "stabilization-policy"
+        ],
+        "automatic_stabilizers": [
+          "stabilization-policy"
+        ],
+        "policy_lags": [
+          "stabilization-policy"
+        ],
+        "policy_lag_risk": [
+          "stabilization-policy"
+        ],
+        "stabilization_response_recession": [
+          "stabilization-policy"
+        ],
+        "stabilization_response_overheating": [
+          "stabilization-policy"
+        ],
+        "case_for_stabilization_policy": [
+          "stabilization-policy"
+        ],
+        "choose_stabilization_response": [
+          "stabilization-policy",
+          "demand-and-supply-shocks",
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "mixed_shock_policy_response": [
+          "stabilization-policy"
+        ],
+        "expansionary_policy_mix": [
+          "stabilization-policy"
+        ],
+        "contractionary_policy_mix": [
+          "stabilization-policy"
+        ],
+        "policy_mix_direction": [
+          "stabilization-policy"
+        ],
+        "delayed_policy_self_correction": [
+          "stabilization-policy"
+        ],
+        "revised_gap_policy_overshoot": [
+          "stabilization-policy"
+        ],
+        "stabilization_to_phillips": [
+          "stabilization-policy"
+        ],
+        "automatic_vs_discretionary_timing": [
+          "stabilization-policy"
+        ],
+        "automatic_stabilizer_identification": [
+          "stabilization-policy"
+        ],
+        "recessionary_gap_policy_direction": [
+          "stabilization-policy"
+        ],
+        "implementation_lag_risk": [
+          "stabilization-policy"
+        ],
+        "supply_shock_stabilization_tradeoff": [
+          "stabilization-policy"
+        ],
+        "policy_mix_overheating_risk": [
+          "stabilization-policy"
+        ],
+        "opposing_policy_mix": [
+          "stabilization-policy"
+        ],
+        "apply_policy_lag_logic": [
+          "stabilization-policy"
+        ],
+        "analyze_supply_shock_tradeoff": [
+          "stabilization-policy"
+        ],
+        "bridge_lradj_to_stabilization": [
+          "stabilization-policy"
+        ],
+        "bridge_stabilization_to_phillips": [
+          "stabilization-policy"
+        ],
+        "read_ad_as_axes": [
+          "aggregate-demand"
+        ],
+        "identify_ad_shifters": [
+          "aggregate-demand"
+        ],
+        "explain_ad_slope": [
+          "aggregate-demand"
+        ],
+        "explain_sras_upward": [
+          "short-run-aggregate-supply"
+        ],
+        "identify_sras_shifters": [
+          "short-run-aggregate-supply",
+          "demand-and-supply-shocks"
+        ],
+        "read_sras_shift": [
+          "short-run-aggregate-supply",
+          "demand-and-supply-shocks"
+        ],
+        "expected_price_sras_shift": [
+          "short-run-aggregate-supply"
+        ],
+        "identify_lras": [
+          "long-run-aggregate-supply-and-potential-output",
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "read_ad_as_equilibrium": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "connect_output_unemployment": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "identify_natural_output": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "classify_output_gap": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "lras_shift_vs_gap": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "movement_vs_shift": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "natural_output_determinants": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "classify_supply_shock": [
+          "demand-and-supply-shocks"
+        ],
+        "trace_demand_shock": [
+          "demand-and-supply-shocks"
+        ],
+        "trace_supply_shock": [
+          "demand-and-supply-shocks"
+        ],
+        "define_stagflation": [
+          "demand-and-supply-shocks"
+        ],
+        "classify_demand_shock": [
+          "demand-and-supply-shocks"
+        ],
+        "trace_combined_shocks": [
+          "demand-and-supply-shocks"
+        ],
+        "evaluate_supply_shock_policy": [
+          "demand-and-supply-shocks"
+        ],
+        "infer_combined_shocks": [
+          "demand-and-supply-shocks"
+        ],
+        "simultaneous_shifts": [
+          "demand-and-supply-shocks"
+        ],
+        "explain_long_run_adjustment": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "short_run_long_run_adjustment": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "long_run_self_correction_demand_shock": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "adjustment_speed": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "self_correction_vs_policy": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "recessionary_gap_self_correction": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "inflationary_gap_self_correction": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "bridge_to_stabilization": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "define_phillips_curve": [
+          "short-run-phillips-curve"
+        ],
+        "read_pc_axes": [
+          "short-run-phillips-curve"
+        ],
+        "move_along_srpc": [
+          "short-run-phillips-curve"
+        ],
+        "read_pc_points": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "natural_rate_hypothesis": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "movement_vs_shift_srpc": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "srpc_movement": [
+          "short-run-phillips-curve"
+        ],
+        "srpc_shift": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "srpc_relation": [
+          "short-run-phillips-curve"
+        ],
+        "trace_expectations_adjustment": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "long_run_adjustment": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "expectations_adjustment": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "lrpc_vertical": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "disinflation_policy": [
+          "short-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "identify_lrpc": [
+          "long-run-phillips-curve"
+        ],
+        "identify_natural_unemployment": [
+          "long-run-phillips-curve"
+        ],
+        "long_run_inflation_neutrality": [
+          "long-run-phillips-curve"
+        ],
+        "natural_rate_shift": [
+          "long-run-phillips-curve"
+        ],
+        "accelerationist_hypothesis": [
+          "long-run-phillips-curve"
+        ],
+        "vertical_lrpc_comparison": [
+          "long-run-phillips-curve"
+        ],
+        "lrpc_natural_rate_shift": [
+          "long-run-phillips-curve"
+        ],
+        "expectations_long_run_return": [
+          "long-run-phillips-curve"
+        ],
+        "sacrifice_ratio_meaning": [
+          "long-run-phillips-curve",
+          "sacrifice-ratio"
+        ],
+        "expected_inflation_shift": [
+          "phillips-curve-expectations"
+        ],
+        "supply_shock_pc_shift": [
+          "phillips-curve-expectations"
+        ],
+        "credibility_expectations": [
+          "phillips-curve-expectations",
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "disinflation_unemployment_cost": [
+          "disinflation-and-policy"
+        ],
+        "define_disinflation": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_credibility": [
+          "disinflation-and-policy"
+        ],
+        "sacrifice_ratio_definition": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_definition": [
+          "disinflation-and-policy"
+        ],
+        "monetary_policy_pc_transition": [
+          "disinflation-and-policy"
+        ],
+        "policy_path": [
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "sacrifice_ratio_calculation": [
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "define_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ],
+        "interpret_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ],
+        "sacrifice_ratio_denominator": [
+          "sacrifice-ratio"
+        ],
+        "calculate_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ]
+      },
+      "primarySkillToConceptIds": {
+        "fiscal_policy_ad_shift": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "tax_cut_ad": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "identify_policy_type": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "predict_ad_shift": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "read_ad_shift": [
+          "fiscal-policy-and-aggregate-demand",
+          "aggregate-demand",
+          "demand-and-supply-shocks"
+        ],
+        "explain_policy_channel": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "government_spending_ad_direction": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "calculate_tax_cut_consumption_effect": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "tax_cut_ad_direction": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "calculate_tax_policy_consumption_effect": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "taxes_consumption_ad": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "combine_tax_cut_mpc_and_multiplier": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "government_spending_ad": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "contractionary_fiscal_policy_definition": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "heterogeneous_mpc_tax_effect": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "compare_fiscal_package_first_round": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "identify_expansionary_fiscal_policy": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "expansionary_fiscal_policy_definition": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "tax_increase_ad_direction": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "trace_tax_cut_to_first_round_consumption_then_multiplier": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "bridge_fiscal_to_multiplier": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "crowding_out_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "identify_mechanism": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "identify_definition": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "identify_formula": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "explain_multiplier_logic": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "identify_graph_concept": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "explain_graph_shift": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "explain_crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "predict_multiplier_size": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "evaluate_policy_strength": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "read_multiplier_graph": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "explain_multiplier_graph": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "predict_multiplier_graph_change": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "identify_offsetting_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "compare_multiplier_sizes": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "apply_multiplier_to_graph_shift": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "infer_mpc_from_multiplier_graph": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "compare_multiplier_graph_outcomes": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "combine_multiplier_and_crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "evaluate_fiscal_policy_shortfall": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "calculate_net_fiscal_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "distinguish_fiscal_effects": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "read_multiplier_graph_shift_order": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "infer_mpc_from_graph_shift_order": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "compare_mpc_effect_on_shift_order": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "trace_initial_multiplier_and_crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_crowding_net_comparison": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "infer_crowding_out_from_net_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "calculate_spending_multiplier": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "calculate_consumption_change": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "calculate_multiplier": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "apply_multiplier": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "calculate_multiplier_and_ad_change": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "apply_high_mpc_multiplier": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "calculate_net_policy_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "identify_multiplier_logic": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "apply_spending_multiplier": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "calculate_multiplier_minus_crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "mpc_and_multiplier_link": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "crowding_out_mechanism": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "multiplier_leakage": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "spending_multiplier_application": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "net_multiplier_after_crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "fiscal_policy_magnitude": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "trace_multiplier_then_crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "infer_mpc_from_shift_order": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "combine_money_demand_shift_and_crowding_out": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "spending_multiplier_formula": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "crowding_out_net_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "bridge_multiplier_to_stabilization": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "liquidity_trap": [
+          "stabilization-policy"
+        ],
+        "automatic_stabilizers": [
+          "stabilization-policy"
+        ],
+        "policy_lags": [
+          "stabilization-policy"
+        ],
+        "identify_policy_limit": [
+          "stabilization-policy"
+        ],
+        "select_policy_response": [
+          "stabilization-policy"
+        ],
+        "identify_argument": [
+          "stabilization-policy"
+        ],
+        "apply_policy_lag_logic": [
+          "stabilization-policy"
+        ],
+        "choose_stabilization_response": [
+          "stabilization-policy",
+          "demand-and-supply-shocks",
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "select_policy_direction": [
+          "stabilization-policy"
+        ],
+        "diagnose_mixed_shock": [
+          "stabilization-policy"
+        ],
+        "coordinate_policy_response": [
+          "stabilization-policy"
+        ],
+        "choose_policy_for_positive_demand_shock": [
+          "stabilization-policy"
+        ],
+        "evaluate_policy_mix": [
+          "stabilization-policy"
+        ],
+        "explain_policy_lags": [
+          "stabilization-policy"
+        ],
+        "analyze_supply_shock_tradeoff": [
+          "stabilization-policy"
+        ],
+        "match_policy_to_demand_shock": [
+          "stabilization-policy"
+        ],
+        "match_policy_to_overheating": [
+          "stabilization-policy"
+        ],
+        "choose_policy_from_graph_chain": [
+          "stabilization-policy"
+        ],
+        "choose_policy_for_overheating_from_graph": [
+          "stabilization-policy"
+        ],
+        "evaluate_multiplier_policy_context": [
+          "stabilization-policy"
+        ],
+        "calculate_remaining_ad_gap": [
+          "stabilization-policy"
+        ],
+        "evaluate_combined_policy_direction": [
+          "stabilization-policy"
+        ],
+        "evaluate_policy_mistiming": [
+          "stabilization-policy"
+        ],
+        "match_policy_to_shock_type": [
+          "stabilization-policy"
+        ],
+        "analyze_policy_lag_risk": [
+          "stabilization-policy"
+        ],
+        "read_contractionary_ad_shift_and_calculate_gap": [
+          "stabilization-policy"
+        ],
+        "read_graph_then_solve_required_investment_change": [
+          "stabilization-policy"
+        ],
+        "combine_graph_monetary_contraction_and_fiscal_offset": [
+          "stabilization-policy"
+        ],
+        "calculate_contractionary_policy_overshoot_from_graph": [
+          "stabilization-policy"
+        ],
+        "trace_multiplier_then_crowding_out_gap": [
+          "stabilization-policy"
+        ],
+        "apply_multiplier_graph_to_wrong_policy_context": [
+          "stabilization-policy"
+        ],
+        "trace_multiplier_graph_to_gap_closure": [
+          "stabilization-policy"
+        ],
+        "delayed_policy_self_correction": [
+          "stabilization-policy"
+        ],
+        "revised_gap_policy_overshoot": [
+          "stabilization-policy"
+        ],
+        "stabilization_to_phillips": [
+          "stabilization-policy"
+        ],
+        "automatic_vs_discretionary_timing": [
+          "stabilization-policy"
+        ],
+        "identify_stabilization_direction": [
+          "stabilization-policy"
+        ],
+        "calculate_policy_gap_without_crowding_out": [
+          "stabilization-policy"
+        ],
+        "combine_policy_impulses_multiplier_and_crowding_out": [
+          "stabilization-policy"
+        ],
+        "automatic_stabilizer_identification": [
+          "stabilization-policy"
+        ],
+        "recessionary_gap_policy_direction": [
+          "stabilization-policy"
+        ],
+        "implementation_lag_risk": [
+          "stabilization-policy"
+        ],
+        "supply_shock_stabilization_tradeoff": [
+          "stabilization-policy"
+        ],
+        "policy_mix_overheating_risk": [
+          "stabilization-policy"
+        ],
+        "opposing_policy_mix": [
+          "stabilization-policy"
+        ],
+        "combine_spending_impulses_and_multiplier": [
+          "stabilization-policy"
+        ],
+        "read_contractionary_graph_and_calculate_remaining_gap": [
+          "stabilization-policy"
+        ],
+        "trace_multiplier_crowding_and_gap": [
+          "stabilization-policy"
+        ],
+        "evaluate_contractionary_policy_relative_to_output_gap": [
+          "stabilization-policy"
+        ],
+        "combine_graph_monetary_contraction_and_fiscal_expansion": [
+          "stabilization-policy"
+        ],
+        "analyze_supply_shock_policy_tradeoff_with_contractionary_graph": [
+          "stabilization-policy"
+        ],
+        "stabilization_response_recession": [
+          "stabilization-policy"
+        ],
+        "stabilization_response_overheating": [
+          "stabilization-policy"
+        ],
+        "bridge_lradj_to_stabilization": [
+          "stabilization-policy"
+        ],
+        "bridge_stabilization_to_phillips": [
+          "stabilization-policy"
+        ],
+        "read_ad_as_axes": [
+          "aggregate-demand"
+        ],
+        "identify_ad_shifters": [
+          "aggregate-demand"
+        ],
+        "explain_ad_slope": [
+          "aggregate-demand"
+        ],
+        "explain_sras_upward": [
+          "short-run-aggregate-supply"
+        ],
+        "identify_sras_shifters": [
+          "short-run-aggregate-supply",
+          "demand-and-supply-shocks"
+        ],
+        "read_sras_shift": [
+          "short-run-aggregate-supply",
+          "demand-and-supply-shocks"
+        ],
+        "expected_price_sras_shift": [
+          "short-run-aggregate-supply"
+        ],
+        "identify_lras": [
+          "long-run-aggregate-supply-and-potential-output",
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "read_ad_as_equilibrium": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "connect_output_unemployment": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "identify_natural_output": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "classify_output_gap": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "lras_shift_vs_gap": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "movement_vs_shift": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "natural_output_determinants": [
+          "ad-as-equilibrium-and-output-gaps"
+        ],
+        "classify_supply_shock": [
+          "demand-and-supply-shocks"
+        ],
+        "trace_demand_shock": [
+          "demand-and-supply-shocks"
+        ],
+        "trace_supply_shock": [
+          "demand-and-supply-shocks"
+        ],
+        "define_stagflation": [
+          "demand-and-supply-shocks"
+        ],
+        "classify_demand_shock": [
+          "demand-and-supply-shocks"
+        ],
+        "trace_combined_shocks": [
+          "demand-and-supply-shocks"
+        ],
+        "evaluate_supply_shock_policy": [
+          "demand-and-supply-shocks"
+        ],
+        "infer_combined_shocks": [
+          "demand-and-supply-shocks"
+        ],
+        "simultaneous_shifts": [
+          "demand-and-supply-shocks"
+        ],
+        "explain_long_run_adjustment": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "short_run_long_run_adjustment": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "long_run_self_correction_demand_shock": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "adjustment_speed": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "self_correction_vs_policy": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "recessionary_gap_self_correction": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "inflationary_gap_self_correction": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "bridge_to_stabilization": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "define_phillips_curve": [
+          "short-run-phillips-curve"
+        ],
+        "read_pc_axes": [
+          "short-run-phillips-curve"
+        ],
+        "move_along_srpc": [
+          "short-run-phillips-curve"
+        ],
+        "read_pc_points": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "natural_rate_hypothesis": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "movement_vs_shift_srpc": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "srpc_movement": [
+          "short-run-phillips-curve"
+        ],
+        "srpc_shift": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "srpc_relation": [
+          "short-run-phillips-curve"
+        ],
+        "trace_expectations_adjustment": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "long_run_adjustment": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "expectations_adjustment": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "lrpc_vertical": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "disinflation_policy": [
+          "short-run-phillips-curve",
+          "disinflation-and-policy"
+        ],
+        "identify_lrpc": [
+          "long-run-phillips-curve"
+        ],
+        "identify_natural_unemployment": [
+          "long-run-phillips-curve"
+        ],
+        "long_run_inflation_neutrality": [
+          "long-run-phillips-curve"
+        ],
+        "natural_rate_shift": [
+          "long-run-phillips-curve"
+        ],
+        "accelerationist_hypothesis": [
+          "long-run-phillips-curve"
+        ],
+        "vertical_lrpc_comparison": [
+          "long-run-phillips-curve"
+        ],
+        "lrpc_natural_rate_shift": [
+          "long-run-phillips-curve"
+        ],
+        "expectations_long_run_return": [
+          "long-run-phillips-curve"
+        ],
+        "sacrifice_ratio_meaning": [
+          "long-run-phillips-curve",
+          "sacrifice-ratio"
+        ],
+        "expected_inflation_shift": [
+          "phillips-curve-expectations"
+        ],
+        "supply_shock_pc_shift": [
+          "phillips-curve-expectations"
+        ],
+        "credibility_expectations": [
+          "phillips-curve-expectations",
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "disinflation_unemployment_cost": [
+          "disinflation-and-policy"
+        ],
+        "define_disinflation": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_credibility": [
+          "disinflation-and-policy"
+        ],
+        "sacrifice_ratio_definition": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_definition": [
+          "disinflation-and-policy"
+        ],
+        "monetary_policy_pc_transition": [
+          "disinflation-and-policy"
+        ],
+        "policy_path": [
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "sacrifice_ratio_calculation": [
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "define_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ],
+        "interpret_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ],
+        "sacrifice_ratio_denominator": [
+          "sacrifice-ratio"
+        ],
+        "calculate_sacrifice_ratio": [
+          "sacrifice-ratio"
+        ]
+      },
+      "secondarySkillToConceptIds": {
+        "expansionary_fiscal_policy": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "contractionary_fiscal_policy": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "government_spending_ad": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "taxes_consumption_ad": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "government_spending": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy"
+        ],
+        "taxes": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "consumption": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "aggregate_demand": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy"
+        ],
+        "recession": [
+          "fiscal-policy-and-aggregate-demand",
+          "stabilization-policy"
+        ],
+        "mpc": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy"
+        ],
+        "disposable_income": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "tax_cut": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "multiplier": [
+          "fiscal-policy-and-aggregate-demand",
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy"
+        ],
+        "income_consumption_feedback": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "mpc_definition": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "spending_multiplier": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "interest_rates_investment": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "income_spending_cycle": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "aggregate_demand_shift": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "income": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "interest_rate": [
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy"
+        ],
+        "investment": [
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy"
+        ],
+        "crowding_out": [
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy"
+        ],
+        "ad_shift": [
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy"
+        ],
+        "interest_rates": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "net_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "output_gap": [
+          "fiscal-multipliers-and-crowding-out",
+          "stabilization-policy"
+        ],
+        "multiplier_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "ad_shift_order": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "apply_mpc": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "apply_multiplier_formula": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "money_demand": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "net_ad_effect": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "policy_lags": [
+          "stabilization-policy"
+        ],
+        "inflation_pressure": [
+          "stabilization-policy"
+        ],
+        "aggregate_demand_shocks": [
+          "stabilization-policy"
+        ],
+        "demand_shock": [
+          "stabilization-policy"
+        ],
+        "demand_shocks": [
+          "stabilization-policy"
+        ],
+        "misdiagnosis": [
+          "stabilization-policy"
+        ],
+        "aggregate_supply": [
+          "stabilization-policy"
+        ],
+        "fiscal_contraction": [
+          "stabilization-policy"
+        ],
+        "monetary_offset": [
+          "stabilization-policy"
+        ],
+        "wealth_effect": [
+          "stabilization-policy"
+        ],
+        "monetary_policy": [
+          "stabilization-policy"
+        ],
+        "fiscal_policy": [
+          "stabilization-policy"
+        ],
+        "recognition_lag": [
+          "stabilization-policy"
+        ],
+        "implementation_lag": [
+          "stabilization-policy"
+        ],
+        "impact_lag": [
+          "stabilization-policy"
+        ],
+        "fiscal_lag": [
+          "stabilization-policy"
+        ],
+        "stagflation": [
+          "stabilization-policy",
+          "short-run-aggregate-supply"
+        ],
+        "aggregate_demand_policy": [
+          "stabilization-policy"
+        ],
+        "money_supply": [
+          "stabilization-policy"
+        ],
+        "full_employment": [
+          "stabilization-policy"
+        ],
+        "recessionary_gap": [
+          "stabilization-policy"
+        ],
+        "fiscal_expansion": [
+          "stabilization-policy"
+        ],
+        "monetary_expansion": [
+          "stabilization-policy"
+        ],
+        "supply_shock": [
+          "stabilization-policy"
+        ],
+        "inflation": [
+          "stabilization-policy"
+        ],
+        "ad_gap": [
+          "stabilization-policy"
+        ],
+        "overheating": [
+          "stabilization-policy"
+        ],
+        "fiscal_multiplier": [
+          "stabilization-policy"
+        ],
+        "monetary_contraction": [
+          "stabilization-policy"
+        ],
+        "contractionary_policy": [
+          "stabilization-policy"
+        ],
+        "read_ad_as_axes": [
+          "aggregate-demand"
+        ],
+        "fiscal_policy_and_aggregate_demand": [
+          "aggregate-demand"
+        ],
+        "movement_vs_shift": [
+          "aggregate-demand",
+          "short-run-aggregate-supply",
+          "ad-as-equilibrium-and-output-gaps",
+          "demand-and-supply-shocks"
+        ],
+        "simultaneous_shifts": [
+          "demand-and-supply-shocks"
+        ],
+        "short_run_long_run_adjustment": [
+          "demand-and-supply-shocks"
+        ],
+        "read_sras_shift": [
+          "demand-and-supply-shocks"
+        ],
+        "growth_productivity": [
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "long-run-phillips-curve": [
+          "short-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "phillips-curve-expectations": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve"
+        ],
+        "short_run_tradeoff": [
+          "short-run-phillips-curve"
+        ],
+        "short-run-phillips-curve": [
+          "long-run-phillips-curve",
+          "phillips-curve-expectations"
+        ],
+        "natural_unemployment": [
+          "long-run-phillips-curve"
+        ],
+        "read_pc_points": [
+          "long-run-phillips-curve"
+        ],
+        "srpc_shift": [
+          "phillips-curve-expectations"
+        ],
+        "lrpc": [
+          "phillips-curve-expectations",
+          "disinflation-and-policy"
+        ],
+        "disinflation": [
+          "disinflation-and-policy"
+        ],
+        "disinflation_cost": [
+          "sacrifice-ratio"
+        ]
+      },
+      "objectiveToConceptIds": {
+        "LO35.3": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "35.3": [
+          "fiscal-policy-and-aggregate-demand"
+        ],
+        "LO35.4": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "35.4": [
+          "fiscal-multipliers-and-crowding-out"
+        ],
+        "LO35.5": [
+          "stabilization-policy"
+        ],
+        "35.5": [
+          "stabilization-policy"
+        ],
+        "LO34.1": [
+          "aggregate-demand"
+        ],
+        "34.1": [
+          "aggregate-demand"
+        ],
+        "LO34.2": [
+          "short-run-aggregate-supply",
+          "long-run-aggregate-supply-and-potential-output",
+          "demand-and-supply-shocks"
+        ],
+        "LO34.3": [
+          "short-run-aggregate-supply",
+          "ad-as-equilibrium-and-output-gaps",
+          "demand-and-supply-shocks",
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "34.3": [
+          "short-run-aggregate-supply"
+        ],
+        "34.2": [
+          "short-run-aggregate-supply",
+          "long-run-aggregate-supply-and-potential-output"
+        ],
+        "LO34.4": [
+          "ad-as-equilibrium-and-output-gaps",
+          "demand-and-supply-shocks"
+        ],
+        "LO34.5": [
+          "ad-as-equilibrium-and-output-gaps",
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "34.5": [
+          "ad-as-equilibrium-and-output-gaps",
+          "long-run-macroeconomic-self-adjustment"
+        ],
+        "34.4": [
+          "demand-and-supply-shocks"
+        ],
+        "LO36.1": [
+          "short-run-phillips-curve"
+        ],
+        "MACRO.M2A": [
+          "short-run-phillips-curve",
+          "long-run-phillips-curve",
+          "phillips-curve-expectations",
+          "disinflation-and-policy",
+          "sacrifice-ratio"
+        ],
+        "36.1": [
+          "short-run-phillips-curve"
+        ],
+        "LO36.2": [
+          "long-run-phillips-curve"
+        ],
+        "36.2": [
+          "long-run-phillips-curve"
+        ],
+        "LO36.3": [
+          "phillips-curve-expectations"
+        ],
+        "36.3": [
+          "phillips-curve-expectations"
+        ],
+        "LO36.4": [
+          "disinflation-and-policy"
+        ],
+        "36.4": [
+          "disinflation-and-policy"
+        ],
+        "LO36.5": [
+          "sacrifice-ratio"
+        ],
+        "36.5": [
+          "sacrifice-ratio"
+        ]
+      }
+    },
+    "bundleRoutes": {}
+  },
+  "reviewGlobalWarningsRetained": [
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "consumer-and-producer-surplus"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "costs-of-production"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "elasticity"
+    },
+    {
+      "type": "diagnosable-no-sheet-meta",
+      "canonicalConceptId": "integrated-economic-analysis"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "international-trade-and-trade-policy"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopolistic-competition"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "oligopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "perfect-competition"
+    },
+    {
+      "type": "orphan-review",
+      "reviewCode": "MICRO-03"
+    },
+    {
+      "type": "unreachable-review",
+      "reviewCode": "MICRO-03"
+    }
+  ],
+  "priorAuditArtifactFilesBeforeApply": {
+    "money_banking_monetary_system_assessment_audit_2026_09_08": {
+      "access.py": "8f2c418d9aeaeb72405d17b8162933e024a04dfbc0d7ab63e02577b89e4da4e8",
+      "accessibility-inspection.json": "05ae6489a56a9f78dd5c080315ae9cc4d9af5bb2c79df5f779a90eb032968e98",
+      "accessibility-spec.json": "e04ec5bdfe11f7d47b878a381132c41868fd116036992887dc1cc894b1dc3385",
+      "accounting.json": "96dd60bb013f1f9b46a051d4592201a281d390692b9e7e0c3e952645a80b0db5",
+      "architecture-validation.json": "3937fb31dfeaa8afd57f2e6abc9d3b1843a5640ff06fc43aebadbdc84d265f66",
+      "asset-accessibility-changes.json": "78c9cabfe1d4fe3cc5d7ef848ecf4bcc66e8d631a5d1bdc67f3caec55c95a160",
+      "audit-projection-provenance.json": "b3ceda08ad5692a0497e3cff4e09a10c8d3f105a9eaccdcc334243679d319db0",
+      "author.py": "510dbe76c956364a5dc1e37e5896f8b1d92b594177d3651d5602166e5e4a05e2",
+      "BEFORE.md": "ab0f40eb03aa6ba038d491f9179239712502856e5268c4bd616f1c6d9b2a029c",
+      "browser-smoke.png": "7c0af07d78b1e8b7579ec0d10338e774be64648bca912fabcd01625fab6f8307",
+      "browser-validation.json": "e4f6ab13d9336ab3952b28c0d80cbf94ad38ec7cd00086b5d9d0df9669ba5519",
+      "browser.cjs": "e2c28227c9fdcbd93ec77a25165c528b0e6118ca82c1452b20ad63d8da9fa769",
+      "changes.json": "2a15e0a34c10f9b718e991650cc6eebbb83027a909f7b2868b84dd396ffa5244",
+      "concepts.json": "8353181534c660caf51f920f8963d3998aa6a65ddb0173e4585fee8ea9b97d49",
+      "exam-source.json": "bc6489214bac78b9a08992f3a4871c7575db2b02c4de500685c0f111f4cd7e53",
+      "FINAL_REPORT.md": "cc88fb2f1db66c004ca19bae35552ad5d42f071cceb6d852136d4bb65f1b3109",
+      "findings.py": "d87b1c43f0d75c86204e5b28525fc72c9b6b553a4884529601906e7e08f00828",
+      "finish.py": "28138b11332c25f6be5fc901d8102455fb55008ffaf526d383ac6d156909c716",
+      "graph-validation.json": "291b76b2ef26e66f9bdb553971421ed1b116dd17dbf020bf7b355c74755be91e",
+      "inspect.cjs": "62172e50b2fa9a94f5f4e430e8da456cafc801617ea651891847e6740bf82f3b",
+      "inventory-after.json": "c7fe042ab40cb2f6bd93316588e976b8920ea1f28bac0331edce67e49565f4b9",
+      "inventory-before.json": "0d68d89f43759389060a2dda14c9881247ed6436ae0b204d99cee4d4e78e5d78",
+      "logical-validation.json": "017ec441d5f7eee316559251943a52435e554dcc943bb7ee21ef0c7699741b5f",
+      "numerical-validation.json": "75bc7431127f3e6577bdcb011973d0ef86b00a6b594bf309550612dadc1880ec",
+      "objective-findings-before.json": "cc6dcbb78e00916d23851a7f9e29e97fd652649b42feee9efb4f88cd649e5fa3",
+      "originality-validation.json": "0ca207540ecc1930a10fd9a0cc59617adc31aa39fc4608b305d81ada53959141",
+      "pool-memberships.json": "60029b976b5c800717581459e615063fba2dccaa1c0c69b296fda42c8815834b",
+      "quality-after.json": "39588180c9a96d408428123ba65518895a855995f9da7b1d33b826194457fe56",
+      "quality-after.md": "e07d86bf7124603a82faff101bd6d74616312715c50661016e91aa7f93876753",
+      "quality-before.json": "019c1c10e11be27ecd3b9e0cbab8c5320896899550c6eada2d26cd5a061f5e3d",
+      "quality-before.md": "3bc7943a763e3528aaf75001457fa4f8c47d4c6d7c3fbd0bb4861a46baa1ffb4",
+      "quality-dispositions.json": "0c128996e2442553ff0c89b482d174ce474c6851acade0a35913c444b6c60a8a",
+      "recipe.json": "bc620cd6153c98709bb3e29e976b03dc12b242e250a66cfab942d7687a66e5e7",
+      "record-actions.json": "67ff433195fd57e5639fc1a6a5b3c7e1df9bf5de4985b3e52fd8fd2a1d604f47",
+      "revisions.json": "ef6d0f9e8e16daf97d17a849bd875642d711c059a5a9c4a56819a4648377280a",
+      "scope-boundary.json": "7c05ef0024450669bc07c64d5a01c07b68e61523331b82baa5c6ba77269d7bb9",
+      "semantic-validation.json": "48d82400f4c598b0f51c3424a89f199820e9e2bd3032b42e75e89cae9a2d3aea",
+      "sources.json": "8353181534c660caf51f920f8963d3998aa6a65ddb0173e4585fee8ea9b97d49",
+      "stage.mjs": "00af2fdb2c48fa0dca78e7b8e339d6a3ad24827d394796a1a396866c5e49826a",
+      "summary-before.json": "01b3654b1bd0813ecaa31b1bb3edd70223dbab65fa4cbab34613cbce2c7621fd",
+      "validation.json": "f3868fdd57b13d09316f08ef907ab4044eb07f2976ea7d3a54160c35c753da0e",
+      "verify.py": "f0f92733a3b545004031a789e0a687b365311b37be33cf664306b83a8cb86c43"
+    },
+    "saving_investment_loanable_funds_assessment_audit_2026_09_09": {
+      "accessibility-inspection.json": "79a8a1f2673ae804cc835ad9afffb33838421c6c146f4c6e18c2e0996e86e3da",
+      "accessibility-spec.json": "8277d0f8d032f7ce36411abf9e647e0ea4d8161806fb661048ac5bc0a2ec8af0",
+      "accessibility.py": "919cc2d0e1b5a6dc73e2a82b912ff92b8365c8dc0b93f30a959737d44ccbefd3",
+      "accounting.json": "5958a5fa7e2104957996a641fc9180179f12dc8a27ffe40403184f163726340d",
+      "architecture-validation.json": "636bce403d0218d1fe7f95187a9cc9f4619feafbeb83c6782b25069a42cfad9c",
+      "asset-accessibility-changes.json": "2d3ca7f589995a6e893efa848c209f128d4041ded2cfccb7453ed8d2d094e89b",
+      "audit-projection-provenance.json": "19b9e103110d464b1b607f99057106319a506b5b9fb5afd5d54e85194cb327e3",
+      "author.py": "bb19f39b6b530a567501a24a542468a314faf175143117298009b098996e8d51",
+      "BEFORE.md": "3fdbd6c9c47110d6a7d5969c9fb99600ce3ce31553063b5adfbe5fc12fbbef2c",
+      "browser-smoke.png": "9a00cfb79119925c55bf6adb1a96c4b6b2b45d335871f482dbbef14aa9c48014",
+      "browser-validation.json": "ff3836a3d5997b20278da455facafe2d60c765f1fa626805eb34f9f437f6e7a9",
+      "browser.cjs": "f7c27344a34a7b4fefa5467e18447bcdea7405c5690d39ecb2d1b3006613503e",
+      "changes.json": "d4558e3a825ead51703c7a6c71ffe506ed5bb7c0faab96c17b1bd1f9daa103b6",
+      "concepts.json": "6d855173bda4fd9102b67331841ef2961b4f1066e0e92ecb157c206c1f7c5eab",
+      "deliverables.json": "3706c6db916c7498c56721ca389161a413b46c37cabc8505d6583fd7c7cf1639",
+      "exam-source.json": "4091147841f707b44bcc493ad8150f81fba5b8249e707fb0ea810e54c2c8e9bb",
+      "FINAL_REPORT.md": "07a42c9df9a2bc91e71a0931970ebb9b83fa8398d727923a580950f89b0090e4",
+      "findings.py": "7a764ace180a0827e0b6fa40af4554c4de65285e992cc07f0234227637af6c82",
+      "finish.py": "6d0d4184b7a0eee8a82a4657426288b53df13a7589711931bc533fc0f83d3e7e",
+      "graph-validation.json": "6793ea1937cf4520e6895684ba7d863b78379d0be3813818fbf2a95b1fccb177",
+      "inventory-after.json": "eda53808f474ac7748514a278134e28ebd595353bf182fe4de82c890c20a3c4d",
+      "inventory-before.json": "39b8c42f4f88168eed49e36f5df1f4041b2e5e99c4552ab7ff9bb78141292727",
+      "logical-validation.json": "e0a9554e344b5df2b9a6f8b1d6f1d2b17ab0357dd882a7b640b7e9a845ccacd4",
+      "numerical-validation.json": "9bfe607c69d36648ee23b5ab807bf321b3e09eab8df9d0c3be53b6a96274fec6",
+      "objective-findings-before.json": "fddb4280903413bde9c6e185238adea03d752e2582e438e6494a700077af95cd",
+      "OBJECTIVE_FINDINGS_BEFORE.md": "f543b2eb39385f71e43a17dd855ca5373a8770a9dd594416e21104d75aecedc2",
+      "originality-validation.json": "7d92ecbf31aecf5d49d8e2555997fb429e83b7ceff7aa45e19a7a0109cacca05",
+      "overlap-mask.json": "a6e5b26007c51c7db68252a493626a695efe5dea0f10e1aec9d393c780527aac",
+      "pool-memberships.json": "4043774f9f6266600a9561cc7dd68605405cfea21e205e2537ba99f712c4529d",
+      "quality-after.json": "5dfdd090ba131493f93209f7c55dadd480d25538bc5bca872c984457276b0ee9",
+      "quality-after.md": "fd20fb021d2ab02591a0fcf4de5dbe1d0d2a3715eb8cdac9adc2bc5e41b8df73",
+      "quality-before.json": "e19dbe4a965308071a9d47b0e79c36d1306c3f29dfc52a6573ff7e685fe5e0b1",
+      "quality-before.md": "9b286d5ce30eafac3e4d41d9deb69d3035a9b6428d32c813f62c2c766c6f3e27",
+      "quality-dispositions.json": "a7f9d3cb2ad4a27f5a6852850f341786e12d8cb66f1a8e3bd4750b24180ffbc9",
+      "recipe.json": "7301c05bda486e90d70bc20bd83e15d8a61a62e7cb16f863ed0b2d649497faa5",
+      "record-actions.json": "44180433c80236cf188fcb1f7bef0ca4e7fac44e0daf372ba9fa2b7a1522eb68",
+      "retained-hard.json": "ea602d1318a22f8794e00c169db099fbb3130667a7401d63b3616a718b38209e",
+      "revisions.json": "f72e91d95b2d9edd3f101ff906992dd15cfbb6fb3e5d8c4a34bae9252c3b6680",
+      "scope-boundary.json": "3730e3ac2d782cc6b964f7fc1c0e136e871f518cee6fcd753c09aeb209a49846",
+      "semantic-validation.json": "9a5b718c3ed980c80e39bcfdb025b0574353132698435c2d4604e4bbcc20a063",
+      "sources.json": "6d855173bda4fd9102b67331841ef2961b4f1066e0e92ecb157c206c1f7c5eab",
+      "stage.mjs": "1817216e9f134417438b40b5e9a1d3e4e434474404cc99fbfd38fd45b8be1c09",
+      "summary-before.json": "d9957a779f74991e08786409fdfedfacc71a7f35735f759811a4eb48194c4685",
+      "validation.json": "a47b115452b1bb3b24d3eb2dd2ccc65ed39e29c816977cd673a571615a630d39",
+      "verify.py": "25c1f8805c82be5edf75abd431e1fadedf2dc317cafd0d599af3ab86435cd20f"
+    }
+  },
+  "all20PriorAuditedModulesPreserved": true,
+  "allFivePhillipsDefinitionsPreserved": true,
+  "all140DefinitionsOutsideContentAuditUnchanged": true
+}
