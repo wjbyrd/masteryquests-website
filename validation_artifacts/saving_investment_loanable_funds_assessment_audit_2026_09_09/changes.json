@@ -1,0 +1,2168 @@
+[
+  {
+    "id": "43210",
+    "concept": "saving-and-investment-identities",
+    "authoritativeConcept": "saving-and-investment-identities",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF3",
+    "type": "integration",
+    "primarySkill": "apply_closed_economy_saving_identity",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Avoid holding realized consumption fixed while relying on an upward-sloping saving schedule and an ambiguous final rate.",
+    "numericProofs": [],
+    "before": {
+      "q": "Government purchases fall by $25 billion with output and consumption fixed in a closed economy, while firms also become more optimistic about future sales. Which market description is complete?",
+      "feedback": "Lower government purchases raise national saving by $25 billion and shift supply right. Stronger expected sales shift investment demand right. Quantity rises, but the rate depends on relative shifts."
+    },
+    "after": {
+      "q": "Government purchases fall by $25 billion in a closed economy with output fixed and the consumption schedule unchanged at each given real rate, while firms also become more optimistic about future sales. Which market description is complete?",
+      "feedback": "At each given real rate, lower purchases raise planned national saving by $25 billion and shift supply right. Stronger sales expectations shift investment demand right. Both raise equilibrium quantity, but their opposing rate pressures make the rate depend on relative shift magnitudes."
+    }
+  },
+  {
+    "id": "43189",
+    "concept": "saving-and-investment-identities",
+    "authoritativeConcept": "saving-and-investment-identities",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "SLF2",
+    "type": "integration",
+    "primarySkill": "calculate_national_saving",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Make the private/public changes schedule shifts rather than an unstated final equilibrium constraint.",
+    "numericProofs": [],
+    "before": {
+      "q": "Private saving increases by $25 billion, but a larger deficit reduces public saving by $40 billion. With investment demand unchanged, which sequence follows?"
+    },
+    "after": {
+      "q": "At every given real interest rate, planned private saving increases by $25 billion, but a larger deficit reduces public saving by $40 billion. With investment demand unchanged, which sequence follows?"
+    }
+  },
+  {
+    "id": "43203",
+    "concept": "saving-and-investment-identities",
+    "authoritativeConcept": "saving-and-investment-identities",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "SLF3",
+    "type": "integration",
+    "primarySkill": "apply_closed_economy_saving_identity",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Distinguish fixed-rate schedule shifts from realized saving changes before inferring ambiguous final quantity.",
+    "numericProofs": [],
+    "before": {
+      "q": "In a closed economy, private saving rises by $20 billion while public saving falls by $35 billion. At the same time, new technology raises desired investment. What can be concluded without shift magnitudes?",
+      "feedback": "National saving falls by $15 billion, shifting supply left. Technology shifts investment demand right. Both changes raise the real rate, but they push equilibrium quantity in opposite directions."
+    },
+    "after": {
+      "q": "In a closed economy, at every given real interest rate, planned private saving rises by $20 billion while public saving falls by $35 billion. At the same time, new technology raises desired investment. What can be concluded without knowing the investment-demand shift magnitude?",
+      "feedback": "At each given real rate, planned national saving falls by $15 billion, shifting supply left. Technology shifts investment demand right. Both shifts raise the real rate, but their quantity effects oppose one another; the final change in realized saving and investment is therefore not fixed at −$15 billion."
+    }
+  },
+  {
+    "id": "43205",
+    "concept": "saving-and-investment-identities",
+    "authoritativeConcept": "saving-and-investment-identities",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "SLF3",
+    "type": "integration",
+    "primarySkill": "apply_closed_economy_saving_identity",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Correct the equilibrium-only interpretation of S=I and require planned/realized reconciliation.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which statement correctly describes S = I in a closed economy?",
+      "options": [
+        "S = I applies to each household, but only when the government budget is balanced",
+        "It is an aggregate equilibrium relationship coordinated through financial markets.",
+        "S = I means desired quantities can differ permanently because the real rate has no coordinating role",
+        "S = I is a rule for open economies only and does not describe aggregate accounting"
+      ],
+      "feedback": "The equality concerns aggregate realized saving and investment in the closed-economy model. Planned quantities need not match away from equilibrium, and intermediaries pool funds rather than pair savers with firms.",
+      "aHash": "0b27a47f33292fe85c1fa32de8d04ff9f315ffeed47ea3e04fbf7c6671fb0a9f"
+    },
+    "after": {
+      "q": "In a closed economy, output is $1,240 billion, consumption is $790 billion and government purchases are $230 billion. Firms planned $250 billion of investment, including planned inventory accumulation. Output and final purchases are realized as stated. Which reconciliation is consistent with national accounting?",
+      "options": [
+        "$220 billion of saving and $250 billion of realized investment, leaving a $30 billion accounting gap",
+        "$220 billion of realized saving and investment, including a $30 billion unplanned inventory reduction",
+        "$250 billion of realized saving and investment, with consumption automatically $30 billion lower",
+        "$220 billion of realized investment, including a $30 billion unplanned inventory increase"
+      ],
+      "feedback": "Realized saving is Y − C − G = 1,240 − 790 − 230 = $220 billion. Realized investment includes inventories, so it is also $220 billion. Relative to planned investment of $250 billion, unplanned inventory investment is −$30 billion. Equality of realized aggregates does not require equality of plans at every interest rate.",
+      "aHash": "10600b6369cde14d2dac2647f1940aae366a14741c48a8141651ea58a8cda6da"
+    }
+  },
+  {
+    "id": "43218",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF4",
+    "type": "graph_calculation",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43222",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF4",
+    "type": "graph_integration",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43226",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF4",
+    "type": "graph_calculation",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43220",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF4",
+    "type": "graph_interpretation",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43223",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF4",
+    "type": "graph_interpretation",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43225",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF4",
+    "type": "graph_interpretation",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43221",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF4",
+    "type": "graph_integration",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43224",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF4",
+    "type": "graph_integration",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43227",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF4",
+    "type": "integration",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Hold private-saving behavior fixed rather than its final quantity in the deficit mechanism.",
+    "numericProofs": [],
+    "before": {
+      "q": "A larger budget deficit lowers public saving while private saving and investment determinants remain unchanged. Which complete loanable-funds sequence follows?"
+    },
+    "after": {
+      "q": "A larger budget deficit lowers public saving while private-saving behavior and investment determinants remain unchanged. Which complete loanable-funds sequence follows?"
+    }
+  },
+  {
+    "id": "43217",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "SLF4",
+    "type": "graph_integration",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace repeated upper directional recognition with two actual-graph readings and adjustment logic.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph above. Suppose the real interest rate is temporarily 10 percent while the curves remain fixed. Which adjustment is consistent with the market returning to point A?",
+      "options": [
+        "Excess investment demand pushes the rate higher as both curves shift right",
+        "Excess saving pushes the rate down toward point A",
+        "Excess saving shifts investment demand left until quantity reaches zero",
+        "Saving and investment remain unequal because point A no longer represents equilibrium"
+      ],
+      "feedback": "Above the 8 percent equilibrium, saving supplied exceeds investment demanded. Downward pressure on the rate moves the market along S0 and D0 until their planned quantities again match at A.",
+      "aHash": "97b3b9feb8f1ab5a55a5b37f61350cbced530bd83c903ab82b064d5125f0ef4d",
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "q": "Refer to the graph above. Treat the displayed curves as straight lines. At a temporary real interest rate of 10 percent, how large is the planned imbalance, and what adjustment returns this market toward A?",
+      "options": [
+        "A 40-unit excess supply; a falling rate shifts both curves toward A",
+        "An 80-unit excess supply; a falling rate reduces saving supplied and increases investment demanded",
+        "An 80-unit excess demand; a rising rate reduces investment demanded and increases saving supplied",
+        "A 40-unit excess demand; a rising rate shifts saving supply right"
+      ],
+      "feedback": "At 10 percent, S0 supplies 180 units and D0 demands 100, leaving excess supply of 80. A lower rate moves down along S0 and D0 toward their intersection at 140 units and 8 percent; neither curve must shift.",
+      "aHash": "82cc2e177c330249cc9ea618652795abd3bdbccb4c03d1699530d02a10f54e05",
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43219",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "SLF4",
+    "type": "graph_integration",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add reverse shift reconstruction while separating equilibrium quantity, curve shift and accounting equality.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph above. In this closed economy, a student says point A proves that any increase in desired investment must be matched immediately by an identical outward shift of saving supply. What is wrong with the claim?",
+      "options": [
+        "Point A proves both curves must shift together because aggregate S = I at every possible rate",
+        "The investment curve cannot shift because it represents an accounting identity rather than behavior",
+        "Saving supply must shift left whenever expected investment profitability rises",
+        "Point A is the initial equilibrium; rate adjustment coordinates a new one"
+      ],
+      "feedback": "The graph shows equality at the initial intersection, not automatic equality of planned quantities after a shock. Higher desired investment can shift demand, after which the real rate coordinates movements toward a new equilibrium.",
+      "aHash": "c960adf5dd8845befab88096511a9bf0d8590add29cc7285d75cc5d8aefcc45a",
+      "imageAlt": "Saving supply S0 and investment demand D0 intersect at point A, a real interest rate of 8 percent and 140 units of loanable funds.",
+      "graphDescription": "The vertical axis is the real interest rate and the horizontal axis is the quantity of loanable funds. Upward-sloping S0 (saving) and downward-sloping D0 (investment) intersect at A: Q = 140 and r = 8 percent."
+    },
+    "after": {
+      "q": "Refer to the graph above. Treat the lines as straight. Starting at A, a technology change shifts D0 horizontally right while S0 stays fixed. The new equilibrium real rate is 10 percent, although the new demand curve is not drawn. What can be inferred about the shift and the quantity response?",
+      "options": [
+        "Demand shifted right by 40 units; equilibrium investment rose by 40 through a rightward shift of S0",
+        "Demand shifted right by 80 units; equilibrium investment rose by 80 because saving must match the shift",
+        "Demand shifted right by 40 units; equilibrium investment rose by 80 through movement along D0",
+        "Demand shifted right by 80 units; equilibrium investment rose by 40 through movement along S0"
+      ],
+      "feedback": "On S0, a 10 percent rate corresponds to 180 units. Old D0 demands 100 units at that rate, so the new demand schedule must be 80 units to the right. Equilibrium investment rises from 140 to 180, or 40 units. The unchanged saving schedule accommodates that quantity through a rate-induced movement; an accounting identity does not force a saving-supply shift.",
+      "aHash": "dd25fc3df1a215ec033f91a11c1d2e627d9c6fbe1fd024bf5769b977ed0555bd",
+      "imageAlt": "Loanable-funds graph with S0, D0 and labeled intersection A.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 (saving) slopes upward through (0, 1) and (140, 8). The solid blue line labeled D0 (investment) slopes downward through (0, 15) and (140, 8). Point A marks the S0–D0 intersection at (140, 8). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43231",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "SLF4",
+    "type": "integration",
+    "primarySkill": "analyze_loanable_funds_equilibrium",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "State the always-valid realized identity instead of implying that interest-rate adjustment creates accounting equality.",
+    "numericProofs": [],
+    "before": {
+      "q": "At a real interest rate below equilibrium, desired investment exceeds desired saving. A student claims this disproves S = I in a closed economy. Which response is correct?",
+      "options": [
+        "The student is correct because any planned imbalance permanently invalidates national accounting",
+        "S = I requires every saver to lend directly to one investor at the posted rate",
+        "The gap shows that closed economies can finance investment only through unrecorded foreign saving",
+        "Planned quantities can differ; rate adjustment restores aggregate equilibrium"
+      ],
+      "feedback": "Planned supply and demand can differ at a disequilibrium rate. Excess demand creates upward rate pressure, coordinating decisions at equilibrium without turning the aggregate identity into one-to-one behavior.",
+      "aHash": "7998f7d3060dd071a121bc6da487102dc2d1f85e9f8fadd879f3ad61a67c3add"
+    },
+    "after": {
+      "q": "At a real interest rate below equilibrium, desired investment exceeds desired saving. A student claims this disproves S = I in a closed economy. Which response correctly separates the accounting statement from the market adjustment?",
+      "options": [
+        "Realized saving exceeds realized investment until the rate rises; inventory changes are excluded from investment",
+        "Realized investment equals desired investment at every rate; the saving identity applies only after the rate adjusts",
+        "Realized saving includes the financing gap as foreign saving; the rate rises until that gap disappears",
+        "Realized investment, including unplanned inventories, equals realized saving; excess demand for funds puts upward pressure on the rate"
+      ],
+      "feedback": "S = I is an ex-post closed-economy accounting identity, including inventory investment. Planned quantities can disagree at a posted rate; that behavioral imbalance creates upward pressure on the real rate. Market clearing explains compatible plans, not the validity of the identity.",
+      "aHash": "d46e3fd5050c1aa145e13cbc806bf3a20cd832041507c60982088296d0a89491"
+    }
+  },
+  {
+    "id": "43245",
+    "concept": "loanable-funds-equilibrium",
+    "authoritativeConcept": "loanable-funds-equilibrium",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "SLF5",
+    "type": "integration",
+    "primarySkill": "distinguish_movement_from_shift_loanable_funds",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace duplicate technology/rate-offset recognition with reverse decomposition and a counterfactual.",
+    "numericProofs": [],
+    "before": {
+      "q": "Improved technology raises expected project returns, and the resulting equilibrium real interest rate rises. How should a firm's investment response be decomposed?",
+      "options": [
+        "Technology causes movement along demand, while the higher rate shifts demand left",
+        "Demand shifts right; the higher rate partly offsets the increase",
+        "Both changes shift investment demand right because desired investment initially increases",
+        "The higher rate shifts saving supply left, leaving investment demand unchanged"
+      ],
+      "feedback": "Technology changes profitability at every rate and shifts demand right. The higher equilibrium rate is an endogenous price change that reduces quantity demanded along the shifted curve.",
+      "aHash": "b50889e0a3ce70645514ff7a5aec30e8b2f141207816fc07bc0868f7c5727a5f"
+    },
+    "after": {
+      "q": "Initially, desired investment is I = 300 − 10r, with I in billions of dollars and r measured in percentage points. Technology changes only the intercept. The real rate rises from 4 to 7 percent, and equilibrium investment rises by $20 billion. What happened to investment demand, and what would investment have been at the original rate after the technology change?",
+      "options": [
+        "Demand shifted right by $20 billion; investment at 4 percent would be $280 billion",
+        "Demand shifted right by $50 billion; investment at 4 percent would be $310 billion",
+        "Demand shifted right by $30 billion; investment at 4 percent would be $290 billion",
+        "Demand shifted right by $50 billion; investment at 4 percent would be $280 billion"
+      ],
+      "feedback": "Initial investment is 300 − 10(4) = $260 billion, so the new equilibrium quantity is $280 billion. The 3-point rate increase reduces quantity demanded by $30 billion along the new schedule. Technology therefore raises demand by $50 billion at every rate, making investment $310 billion at 4 percent.",
+      "aHash": "2cf430426d0d2eb2e123bde5fd82b2a997680616440c7e14098e15c4a50701db"
+    }
+  },
+  {
+    "id": "43250",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43254",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43258",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 2) and (100, 7). The dashed red line labeled S1 slopes upward through (0, 4) and (80, 8). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (100, 7). Point B marks the S1–D0 intersection at (80, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43262",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 2) and (100, 7). The dashed red line labeled S1 slopes upward through (0, 4) and (80, 8). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (100, 7). Point B marks the S1–D0 intersection at (80, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43268",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts right from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 120 and 7 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts right from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 120, r = 7 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 13) and (260, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (120, 7). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43272",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts right from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 120 and 7 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts right from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 120, r = 7 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 13) and (260, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (120, 7). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43276",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts left from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 60 and 4 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts left from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 60, r = 4 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 7) and (140, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (60, 4). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43308",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF9",
+    "type": "graph_integration",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43312",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF9",
+    "type": "graph_interpretation",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43251",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43253",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43256",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 2) and (100, 7). The dashed red line labeled S1 slopes upward through (0, 4) and (80, 8). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (100, 7). Point B marks the S1–D0 intersection at (80, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43260",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 2) and (100, 7). The dashed red line labeled S1 slopes upward through (0, 4) and (80, 8). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (100, 7). Point B marks the S1–D0 intersection at (80, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43270",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts right from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 120 and 7 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts right from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 120, r = 7 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 13) and (260, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (120, 7). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43274",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts left from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 60 and 4 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts left from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 60, r = 4 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 7) and (140, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (60, 4). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43277",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts left from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 60 and 4 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts left from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 60, r = 4 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 7) and (140, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (60, 4). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43279",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts left from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 60 and 4 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts left from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 60, r = 4 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 7) and (140, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (60, 4). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43306",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF9",
+    "type": "graph_integration",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43310",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF9",
+    "type": "graph_integration",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43313",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF9",
+    "type": "graph_integration",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43249",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43252",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Make the fiscal graph shift consistent with a rate-responsive private-saving schedule.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph above. Congress reduces government purchases while output and consumption remain fixed. Which explanation connects that policy to the movement from A to B?",
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent)."
+    },
+    "after": {
+      "q": "Refer to the graph above. Congress reduces government purchases while output remains fixed and the consumption schedule is unchanged at each given real rate. Which explanation connects that policy to the movement from A to B?",
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43255",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 80 and 8 percent to B at 120 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 80, r = 8 percent) to B (Q = 120, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (80, 8). The dashed red line labeled S1 slopes upward through (0, 0) and (120, 6). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (80, 8). Point B marks the S1–D0 intersection at (120, 6). Dashed horizontal and vertical guides connect the labeled intersection points to the axes."
+    }
+  },
+  {
+    "id": "43261",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 2) and (100, 7). The dashed red line labeled S1 slopes upward through (0, 4) and (80, 8). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (100, 7). Point B marks the S1–D0 intersection at (80, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43264",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF6",
+    "type": "integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Specify the fixed-rate fiscal and private-saving changes underlying the supply shift.",
+    "numericProofs": [],
+    "before": {
+      "q": "Public saving falls by $30 billion while private saving rises by $10 billion. With investment demand unchanged, what follows?"
+    },
+    "after": {
+      "q": "At every given real interest rate, public saving falls by $30 billion while planned private saving rises by $10 billion. With investment demand unchanged, what follows?"
+    }
+  },
+  {
+    "id": "43269",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts right from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 120 and 7 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts right from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 120, r = 7 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 13) and (260, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (120, 7). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43275",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts left from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 60 and 4 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts left from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 60, r = 4 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 7) and (140, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (60, 4). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43278",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts left from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 60 and 4 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts left from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 60, r = 4 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 7) and (140, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (60, 4). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43305",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF9",
+    "type": "graph_integration",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43311",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF9",
+    "type": "graph_integration",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43314",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF9",
+    "type": "graph_integration",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43317",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF9",
+    "type": "application",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Separate Hard from the near-duplicate one-direction Medium grammar by requiring partial identification.",
+    "numericProofs": [],
+    "before": {
+      "q": "Saving supply rises while investment demand falls. What happens to the equilibrium real interest rate?",
+      "options": [
+        "It rises",
+        "It falls",
+        "It remains unchanged",
+        "It cannot be determined"
+      ],
+      "feedback": "Both the rightward supply shift and the leftward demand shift put downward pressure on the equilibrium real interest rate, while their quantity effects oppose one another.",
+      "aHash": "51a961febd461ad1ea9db3f345c3907f42988e7937e56390ff5e6b439ae33884"
+    },
+    "after": {
+      "q": "A saving incentive raises planned national saving at every real rate, while weaker expected sales reduce desired investment at every real rate. With upward-sloping saving supply and downward-sloping investment demand, which conclusion and information requirement are correct?",
+      "options": [
+        "The real rate falls; investment quantity must fall because only the demand shift affects quantity",
+        "The real rate falls; the relative shift magnitudes are needed to determine the investment-quantity change",
+        "Investment quantity rises; the relative shift magnitudes are needed to determine the real-rate change",
+        "The real rate rises; investment quantity must rise because the saving incentive finances more projects"
+      ],
+      "feedback": "More saving shifts supply right, while weaker sales shift demand left. Both changes lower the real rate. The supply change raises equilibrium quantity and the demand change lowers it, so their relative magnitudes determine the net investment response.",
+      "aHash": "6310a3696151edca6088fe20ebed8d5095fad7f8533f50077cdd690e7bef2d48"
+    }
+  },
+  {
+    "id": "43257",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Give graph quantities an explicit scale and distinguish fixed-rate fiscal offsets from the final equilibrium response.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph above. Private saving rises by $15 billion while a larger deficit reduces public saving by $30 billion. Which interpretation is consistent with A moving to B?",
+      "options": [
+        "National saving rises by $45 billion, shifting supply right and lowering the real rate",
+        "National saving falls by $15 billion, shifting supply left and raising the real rate",
+        "National saving falls by $15 billion, shifting investment demand left and lowering the rate",
+        "National saving is unchanged because private and public saving changes cannot be combined"
+      ],
+      "feedback": "The net change in national saving is +15 − 30 = −$15 billion. The resulting leftward supply shift matches S0 to S1 and raises the equilibrium real interest rate.",
+      "aHash": "8efba07749f3766f936d6c5cbadcc66faa50932245f320a44fa1bea9b339581d",
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent)."
+    },
+    "after": {
+      "q": "Refer to the graph above. Each quantity unit represents $1 billion, and the lines are straight. A fiscal change lowers public saving by $55 billion at every real rate, while a separate incentive raises planned private saving by $15 billion at every rate. Investment demand does not shift. Which comparison correctly connects the policy shifts with A and B?",
+      "options": [
+        "Saving supply shifts left by $20 billion, and equilibrium investment falls by $40 billion",
+        "Saving supply shifts left by $40 billion, but equilibrium investment falls by $20 billion",
+        "Saving supply shifts left by $70 billion, but equilibrium investment falls by $20 billion",
+        "Saving supply shifts left by $40 billion, and equilibrium investment falls by $40 billion"
+      ],
+      "feedback": "At any given rate, the saving-supply change is −55 + 15 = −$40 billion, matching the horizontal distance between S0 and S1. The marked equilibria move from 100 to 80, so investment falls by $20 billion. The higher rate partly offsets the supply reduction by inducing additional saving along the shifted schedule.",
+      "aHash": "457395e1965ad35f4caf7950cf2205cd173b8cee1f1457af482a2109774e1670",
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 2) and (100, 7). The dashed red line labeled S1 slopes upward through (0, 4) and (80, 8). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (100, 7). Point B marks the S1–D0 intersection at (80, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43271",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts right from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 120 and 7 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts right from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 120, r = 7 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 13) and (260, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (120, 7). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43307",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "SLF9",
+    "type": "graph_integration",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43259",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "SLF6",
+    "type": "graph_integration",
+    "primarySkill": "analyze_saving_supply_shift",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace missing-curve recognition with reverse fiscal reconstruction from actual horizontal shift geometry.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph above. A deficit reduces public saving while a technological improvement raises expected investment returns. Why can this graph not represent the complete scenario?",
+      "options": [
+        "It shifts both curves right, although a deficit should shift supply left",
+        "It shows investment demand shifting right but leaves saving supply fixed",
+        "It is inconsistent because both shocks must lower the real interest rate",
+        "It omits the technology-driven rightward demand shift"
+      ],
+      "feedback": "The deficit is represented by the leftward saving-supply shift. The technology shock would also require a rightward investment-demand shift, which the graph does not display.",
+      "aHash": "3bf6c4f3d8d74dcb02aff9aa8c370486234575881207dfb6b453030ab14f45e6",
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 7 percent to B at 80 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 7 percent) to B (Q = 80, r = 8 percent)."
+    },
+    "after": {
+      "q": "Refer to the graph above. Each quantity unit represents $1 billion. The straight S0 and S1 curves capture a fiscal change, with the private-saving schedule unchanged and D0 fixed. Starting from B, a second policy raises planned private saving by $15 billion at every real rate. How much must public saving rise from its level at B to restore A?",
+      "options": [
+        "$40 billion; the private-saving incentive cannot change national saving",
+        "$5 billion; the required saving shift equals the 20-unit equilibrium-quantity gap",
+        "$55 billion; the private-saving increase must be added to the original supply shortfall",
+        "$25 billion; together the two changes restore the original saving schedule"
+      ],
+      "feedback": "At any given rate, S1 lies 40 units left of S0. Restoring S0 therefore requires $40 billion of additional planned national saving, not merely the 20-unit difference in equilibrium quantity. Private saving supplies $15 billion of that shift, leaving $25 billion of public saving. With D0 fixed, restoring S0 restores A.",
+      "aHash": "50fe1ee6cfb154a678f22d0c0efff382b3045dc1f3f00745855a3efcf5a5ca6d",
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 2) and (100, 7). The dashed red line labeled S1 slopes upward through (0, 4) and (80, 8). The solid blue line labeled D0 slopes downward through (0, 12) and (240, 0). Point A marks the S0–D0 intersection at (100, 7). Point B marks the S1–D0 intersection at (80, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43273",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "SLF7",
+    "type": "graph_integration",
+    "primarySkill": "analyze_investment_demand_shift",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Investment demand shifts right from D0 to D1, moving equilibrium from A at 80 and 5 percent to B at 120 and 7 percent.",
+      "graphDescription": "Saving supply S0 is fixed. Investment demand shifts right from solid D0 to dashed D1. Equilibrium moves from A (Q = 80, r = 5 percent) to B (Q = 120, r = 7 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (80, 5). The solid blue line labeled D0 slopes downward through (0, 9) and (180, 0). The dashed blue line labeled D1 slopes downward through (0, 13) and (260, 0). Point A marks the S0–D0 intersection at (80, 5). Point B marks the S0–D1 intersection at (120, 7). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43309",
+    "concept": "loanable-funds-shifts",
+    "authoritativeConcept": "loanable-funds-shifts",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "SLF9",
+    "type": "graph_integration",
+    "primarySkill": "analyze_simultaneous_loanable_funds_shifts",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace loosely scaled accounting/graph recognition with reverse component reconstruction using actual image quantities.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph above. Private saving rises by $25 billion, public saving falls by $10 billion, and technology raises desired investment. Which interpretation uses both the accounting and the graph?",
+      "options": [
+        "National saving falls, both curves shift left, and the graph shows a lower equilibrium quantity",
+        "National saving and both curves shift right; rate pressures offset and quantity rises",
+        "National saving rises, only supply shifts right, and the graph proves technology had no effect",
+        "National saving is unchanged, only demand shifts right, and the graph shows the real rate rising"
+      ],
+      "feedback": "Private and public changes raise national saving by $15 billion, shifting supply right; technology shifts demand right. Both raise quantity, while the graph shows their opposing real-rate pressures offset at 6 percent.",
+      "aHash": "30299d50bc6a20929d018bfef3107295b5b3c24c6091aa0da0d7ada0512fa588",
+      "imageAlt": "Saving supply and investment demand both shift right, moving equilibrium from A at 40 and 6 percent to B at 80 and 6 percent.",
+      "graphDescription": "Solid S0 and D0 intersect at A (Q = 40, r = 6 percent). Dashed S1 and D1 are both to the right and intersect at B (Q = 80, r = 6 percent). Quantity rises by 40 while this graph holds the real interest rate unchanged."
+    },
+    "after": {
+      "q": "Refer to the graph above. Each quantity unit represents $1 billion, and the straight-line shifts summarize all changes in saving and investment behavior. Public saving falls by $10 billion at every real rate, while technology raises investment demand. What private-saving shift is required to reconcile the graph with that fiscal change?",
+      "options": [
+        "A $30 billion increase at every rate; subtracting the public-saving decline gives the $40 billion supply increase",
+        "A $50 billion increase at every rate; net saving supply and investment demand each move right by $40 billion",
+        "A $10 billion increase at every rate; an unchanged interest rate means national saving is unchanged",
+        "A $40 billion increase at every rate; public saving is excluded when constructing the saving-supply curve"
+      ],
+      "feedback": "At 6 percent, S0 and D0 each have quantity 40, while S1 and D1 each have quantity 80. Each schedule shifts right by $40 billion. Since national saving combines private and public saving, the private shift must satisfy private change − 10 = 40, giving +$50 billion. The two shifts leave the depicted equilibrium rate at 6 percent.",
+      "aHash": "b7b43bb9717d61a6b33eaa4202a3b2b92247da305665db7ff4dceb9c7ede04e1",
+      "imageAlt": "Loanable-funds graph with S0, S1, D0, D1 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 4) and (40, 6). The dashed red line labeled S1 slopes upward through (0, 2) and (80, 6). The solid blue line labeled D0 slopes downward through (0, 8) and (160, 0). The dashed blue line labeled D1 slopes downward through (0, 10) and (200, 0). Point A marks the S0–D0 intersection at (40, 6). Point B marks the S1–D1 intersection at (80, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43288",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 6 percent to B at 60 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 6 percent) to B (Q = 60, r = 8 percent), a loanable-funds crowding-out case."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (100, 6). The dashed red line labeled S1 slopes upward through (0, 5) and (60, 8). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (100, 6). Point B marks the S1–D0 intersection at (60, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43292",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 6 percent to B at 60 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 6 percent) to B (Q = 60, r = 8 percent), a loanable-funds crowding-out case."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (100, 6). The dashed red line labeled S1 slopes upward through (0, 5) and (60, 8). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (100, 6). Point B marks the S1–D0 intersection at (60, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43296",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 5) and (60, 8). The dashed red line labeled S1 slopes upward through (0, 1) and (100, 6). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (60, 8). Point B marks the S1–D0 intersection at (100, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43286",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF8",
+    "type": "graph_calculation",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 6 percent to B at 60 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 6 percent) to B (Q = 60, r = 8 percent), a loanable-funds crowding-out case."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (100, 6). The dashed red line labeled S1 slopes upward through (0, 5) and (60, 8). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (100, 6). Point B marks the S1–D0 intersection at (60, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43289",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 6 percent to B at 60 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 6 percent) to B (Q = 60, r = 8 percent), a loanable-funds crowding-out case."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (100, 6). The dashed red line labeled S1 slopes upward through (0, 5) and (60, 8). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (100, 6). Point B marks the S1–D0 intersection at (60, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43291",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 6 percent to B at 60 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 6 percent) to B (Q = 60, r = 8 percent), a loanable-funds crowding-out case."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (100, 6). The dashed red line labeled S1 slopes upward through (0, 5) and (60, 8). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (100, 6). Point B marks the S1–D0 intersection at (60, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43294",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF8",
+    "type": "graph_calculation",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 5) and (60, 8). The dashed red line labeled S1 slopes upward through (0, 1) and (100, 6). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (60, 8). Point B marks the S1–D0 intersection at (100, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43298",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "medium",
+    "difficulty": "medium",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 5) and (60, 8). The dashed red line labeled S1 slopes upward through (0, 1) and (100, 6). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (60, 8). Point B marks the S1–D0 intersection at (100, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43287",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 6 percent to B at 60 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 6 percent) to B (Q = 60, r = 8 percent), a loanable-funds crowding-out case."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (100, 6). The dashed red line labeled S1 slopes upward through (0, 5) and (60, 8). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (100, 6). Point B marks the S1–D0 intersection at (60, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43290",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts left from S0 to S1, moving equilibrium from A at 100 and 6 percent to B at 60 and 8 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts left from solid S0 to dashed S1. Equilibrium moves from A (Q = 100, r = 6 percent) to B (Q = 60, r = 8 percent), a loanable-funds crowding-out case."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 1) and (100, 6). The dashed red line labeled S1 slopes upward through (0, 5) and (60, 8). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (100, 6). Point B marks the S1–D0 intersection at (60, 8). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43293",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 5) and (60, 8). The dashed red line labeled S1 slopes upward through (0, 1) and (100, 6). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (60, 8). Point B marks the S1–D0 intersection at (100, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43299",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 5) and (60, 8). The dashed red line labeled S1 slopes upward through (0, 1) and (100, 6). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (60, 8). Point B marks the S1–D0 intersection at (100, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43295",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": false,
+    "pathRevised": false,
+    "reason": "Synchronize inline accessibility metadata with the visually verified approved asset contract.",
+    "numericProofs": [],
+    "before": {
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent)."
+    },
+    "after": {
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 5) and (60, 8). The dashed red line labeled S1 slopes upward through (0, 1) and (100, 6). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (60, 8). Point B marks the S1–D0 intersection at (100, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43297",
+    "concept": "crowding-out-and-capital-formation",
+    "authoritativeConcept": "crowding-out-and-capital-formation",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "SLF8",
+    "type": "graph_integration",
+    "primarySkill": "trace_deficit_crowding_out",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Add reverse fiscal inference and distinguish a fixed private-saving schedule from its changing equilibrium quantity.",
+    "numericProofs": [],
+    "before": {
+      "q": "Refer to the graph above. In this closed economy, a student says the rise in investment from A to B occurs ‘because S = I forces firms to invest every extra unit households save at the old rate.’ Which correction is best?",
+      "options": [
+        "The claim is correct because the accounting identity removes any role for the real interest rate",
+        "Rate adjustment, not the identity alone, induces the investment increase",
+        "Higher saving shifts investment demand right directly, so firms invest more at every rate",
+        "S = I applies only to individual saver-firm pairs and not to the aggregate market"
+      ],
+      "feedback": "The identity does not specify a behavioral one-for-one transfer at the old rate. Greater saving shifts supply, the real rate adjusts downward, and firms move along demand to the new equilibrium quantity.",
+      "aHash": "6c00fb661a07920472e4d00a06114b557956123b15142cb6b0fab4beaef4e9a0",
+      "imageAlt": "Saving supply shifts right from S0 to S1, moving equilibrium from A at 60 and 8 percent to B at 100 and 6 percent.",
+      "graphDescription": "Investment demand D0 is fixed. Saving supply shifts right from solid S0 to dashed S1. Equilibrium moves from A (Q = 60, r = 8 percent) to B (Q = 100, r = 6 percent)."
+    },
+    "after": {
+      "q": "Refer to the graph above. Each quantity unit represents $1 billion, and the curves are straight. A budget improvement shifts S0 to S1; the private-saving schedule and investment demand are unchanged. What does the graph imply about the rise in public saving and the induced change in private saving between A and B?",
+      "options": [
+        "Public saving rises $40 billion; private saving is unchanged because its schedule is fixed",
+        "Public saving rises $80 billion; private saving falls $40 billion as the rate declines",
+        "Public saving rises $80 billion; private saving rises $40 billion as investment expands",
+        "Public saving rises $40 billion; private saving falls $80 billion because D0 does not shift"
+      ],
+      "feedback": "The horizontal supply shift is 80 units: at an 8 percent rate S0 is at 60 and S1 is at 140. With the private-saving schedule unchanged, that shift is the $80 billion public-saving increase. Final national saving and investment rise only from 60 to 100, or $40 billion. Private saving consequently changes by 40 − 80 = −$40 billion through movement along its schedule as the rate falls.",
+      "aHash": "1d91e18bf5de8637615d520c88f10d4a30aedc4373ae14c3571f83bf7a9b312b",
+      "imageAlt": "Loanable-funds graph with S0, S1, D0 and labeled intersections A and B.",
+      "graphDescription": "The horizontal axis is labeled Quantity of loanable funds; the vertical axis is labeled Real interest rate. Coordinates below are (quantity, rate). The quantity axis has no currency scale. All curves are straight. The solid red line labeled S0 slopes upward through (0, 5) and (60, 8). The dashed red line labeled S1 slopes upward through (0, 1) and (100, 6). The solid blue line labeled D0 slopes downward through (0, 11) and (220, 0). Point A marks the S0–D0 intersection at (60, 8). Point B marks the S1–D0 intersection at (100, 6). A numbered grid provides the coordinate scale."
+    }
+  },
+  {
+    "id": "43069",
+    "concept": "budget-accounting-and-public-saving",
+    "authoritativeConcept": "budget-accounting-and-public-saving",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "FB1",
+    "type": "integration",
+    "primarySkill": "infer_missing_budget_component",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace one-addition upper arithmetic with inflow classification and financing reconciliation.",
+    "numericProofs": [],
+    "before": {
+      "q": "A fiscal-year budget has a $0.6 trillion surplus and $5.4 trillion in outlays. What revenues are consistent with those figures?",
+      "options": [
+        "$4.8 trillion",
+        "$6.0 trillion",
+        "$5.4 trillion",
+        "$6.6 trillion"
+      ],
+      "feedback": "A surplus equals revenues minus outlays, so revenues must be $5.4 trillion plus $0.6 trillion.",
+      "aHash": "2dc005d7e9bd60b53e4666c26fab42664cbecb6859191a5c81d2b5253beafd96"
+    },
+    "after": {
+      "q": "A budget worksheet reports $920 billion of cash inflows, including $180 billion from issuing new debt, and $870 billion of total outlays. All remaining inflows are revenues; there are no other financing adjustments. What are the budget balance and the amount of new borrowing left to increase cash balances?",
+      "options": [
+        "A $50 billion surplus and no borrowing needed for the outlays",
+        "A $130 billion deficit and a $50 billion cash increase",
+        "A $130 billion deficit and a $180 billion cash increase",
+        "A $310 billion deficit and a $130 billion cash decrease"
+      ],
+      "feedback": "Revenues exclude borrowing: 920 − 180 = $740 billion. Revenues minus outlays equal 740 − 870 = −$130 billion. Of the $180 billion borrowed, $130 billion finances the deficit and $50 billion increases cash balances.",
+      "aHash": "a9849bedd3da8f418039589a9e857a03048224fe3fbe5ce03fb1519f02f4f32c"
+    }
+  },
+  {
+    "id": "43098",
+    "concept": "budget-accounting-and-public-saving",
+    "authoritativeConcept": "budget-accounting-and-public-saving",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "FB3",
+    "type": "integration",
+    "primarySkill": "reconcile_budget_and_public_saving_measures",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Repair an underspecified reconciliation by making gross/net tax, transfer and interest conventions explicit.",
+    "numericProofs": [],
+    "before": {
+      "q": "Why can a total-outlays budget balance and T − G public saving, where T is net tax revenue and G is government purchases, differ numerically?",
+      "options": [
+        "Public saving excludes all receipts",
+        "The budget balance is a stock while public saving is a flow",
+        "Total outlays include items beyond government purchases",
+        "T always equals total outlays"
+      ],
+      "feedback": "The two calculations use different components unless the question defines them to be equivalent.",
+      "aHash": "33e3c59c38586c79c811a3d787560aa83a85b105c46ac56f745c19c61959bd4e"
+    },
+    "after": {
+      "q": "A simplified fiscal account reports gross tax receipts of $900 billion, transfers of $180 billion, government purchases of $660 billion and interest payments of $70 billion. These are all revenues and outlays. For this exercise define T as gross taxes minus transfers, excluding interest. Which pair gives textbook public saving T − G and the full budget balance?",
+      "options": [
+        "Public saving is $240 billion; the full budget has a $60 billion surplus",
+        "Public saving is −$10 billion; the full budget also has a $10 billion deficit",
+        "Public saving is $60 billion; the full budget has a $10 billion deficit",
+        "Public saving is $60 billion; the full budget has a $60 billion surplus"
+      ],
+      "feedback": "Under the stated convention, T = 900 − 180 = $720 billion and T − G = $60 billion. Total outlays are 180 + 660 + 70 = $910 billion, giving a $10 billion deficit. The $70 billion difference is interest, which this exercise excludes from net taxes. Transfers are already deducted in T and must not be deducted a second time.",
+      "aHash": "e2d7d92aff17d068369805c69fd615160c9cfd584844c97c788d44ae3803c75b"
+    }
+  },
+  {
+    "id": "43070",
+    "concept": "budget-accounting-and-public-saving",
+    "authoritativeConcept": "budget-accounting-and-public-saving",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "FB1",
+    "type": "integration",
+    "primarySkill": "evaluate_budget_accounting_claim",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace borrowing-is-not-revenue recall with linked budget, rollover, debt-stock and cash reconciliation.",
+    "numericProofs": [],
+    "before": {
+      "q": "A headline says, “Borrowing rose, so federal revenues must have risen by the same amount.” What is the central accounting error?",
+      "options": [
+        "It treats outlays as a stock",
+        "It subtracts revenues from GDP",
+        "It treats deficit financing as revenue",
+        "It assumes every surplus raises borrowing"
+      ],
+      "feedback": "Borrowing finances a gap between revenues and outlays; it is not itself a revenue category.",
+      "aHash": "1490b7a6bc178e0e5eb81df0206a00e4687bdac35fd61b66557b4d1f0d34ec79"
+    },
+    "after": {
+      "q": "A government starts the year with $3,600 billion of debt. Revenues are $760 billion and outlays are $940 billion. It issues $500 billion of debt, including debt used to repay $270 billion of maturing principal; remaining financing may change cash balances. With no other debt or financing adjustments, which reconciliation is correct?",
+      "options": [
+        "A $180 billion deficit, ending debt of $4,100 billion, and a $320 billion increase in cash",
+        "A $320 billion surplus, ending debt of $3,830 billion, and a $50 billion increase in cash",
+        "A $180 billion deficit, ending debt of $3,830 billion, and a $50 billion increase in cash",
+        "A $450 billion deficit, ending debt of $3,780 billion, and unchanged cash"
+      ],
+      "feedback": "The deficit is 940 − 760 = $180 billion; debt issuance is financing, not revenue. Net issuance is 500 − 270 = $230 billion, so ending debt is $3,830 billion. Net financing exceeds the deficit by $50 billion, increasing cash. Principal repayment is not counted again as a budget outlay.",
+      "aHash": "5d92c6a9721eb18844867a956ae5d537acdac5681b20015892ca02cf935e528b"
+    }
+  },
+  {
+    "id": "43111",
+    "concept": "budget-accounting-and-public-saving",
+    "authoritativeConcept": "budget-accounting-and-public-saving",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "FB4",
+    "type": "integration",
+    "primarySkill": "interpret_cbo_outlay_categories",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace upper category recall with the different consequences of budget and national-income classifications.",
+    "numericProofs": [],
+    "before": {
+      "q": "CBO's February 2026 baseline classifies projected FY2026 outlays as mandatory, discretionary, or net interest. What is the sound interpretation?",
+      "options": [
+        "Realized calendar-year revenues",
+        "Only discretionary outlays count",
+        "Debt held by the public separated from intragovernmental holdings",
+        "Budget categories, not judgments of permanence or importance"
+      ],
+      "feedback": "CBO reports projected fiscal-year outlays by category; the labels describe their budget treatment, not their importance.",
+      "aHash": "8a3a7ad0e10f5a00abd9e9985c923cb0b5948399590a2c6fc537860bd52b67cf"
+    },
+    "after": {
+      "q": "A simplified government has only three outlay categories: purchases of current domestic goods and services, transfers, and interest. Purchases rise from $400 billion to $430 billion, transfers from $300 billion to $350 billion, and interest from $50 billion to $70 billion. Revenues rise by $60 billion. Which comparison is correct?",
+      "options": [
+        "The deficit widens by $40 billion, while the direct increase in GDP government purchases is $100 billion",
+        "The deficit narrows by $30 billion, while the direct increase in GDP government purchases is $40 billion",
+        "The deficit widens by $100 billion, while the direct increase in GDP government purchases is $30 billion",
+        "The deficit widens by $40 billion, while the direct increase in GDP government purchases is $30 billion"
+      ],
+      "feedback": "Outlays rise by 30 + 50 + 20 = $100 billion. With revenues up $60 billion, the deficit widens $40 billion. Only the $30 billion increase in current purchases directly increases G; transfers and interest are budget outlays without being current government purchases. No induced output response is being calculated.",
+      "aHash": "92de817c3054212002c05b0148d2120787249b887c47d445256608a94b6f8954"
+    }
+  },
+  {
+    "id": "43154",
+    "concept": "deficits-debt-and-government-borrowing",
+    "authoritativeConcept": "deficits-debt-and-government-borrowing",
+    "pool": "hard",
+    "difficulty": "hard",
+    "objective": "FB8",
+    "type": "integration",
+    "primarySkill": "deficit_public_saving_chain",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace a curriculum-boundary prompt with a student-facing fiscal application.",
+    "numericProofs": [],
+    "before": {
+      "q": "Which sequence stays within the intended Principles-level boundary?",
+      "options": [
+        "A larger deficit fixes the equilibrium real interest rate through federal law",
+        "A deficit always eliminates private investment",
+        "A larger deficit lowers public saving and generally requires greater government borrowing.",
+        "A budget surplus necessarily causes the currency's exchange rate to depreciate"
+      ],
+      "feedback": "The bank introduces the saving and borrowing link but leaves market equilibrium and graphical crowding out to other concepts.",
+      "aHash": "4aa38d9428ef755e657624cee7606f43f66aa8ac14d034c94bd5abdffd28b63d"
+    },
+    "after": {
+      "q": "A government raises purchases with net taxes unchanged. Private-saving behavior is unchanged. Which sequence describes the fiscal consequence?",
+      "options": [
+        "Private saving falls but public saving is unchanged, because government purchases are household consumption",
+        "Public saving rises and the budget moves toward surplus, reducing the need to issue government debt",
+        "Public saving falls and the budget moves toward deficit, increasing borrowing needs if the shortfall is debt-financed",
+        "Public saving falls but issuing debt counts as revenue, so borrowing restores the budget balance"
+      ],
+      "feedback": "With net taxes unchanged, higher government purchases reduce public saving T − G and move the budget toward deficit. Borrowing can finance the shortfall, but debt issuance does not count as revenue or reverse the decline in public saving.",
+      "aHash": "8de33989af9f7d49e4bcef8557a0924bb87cca5d8255df8d4ee299d7c3bde8d5"
+    }
+  },
+  {
+    "id": "43087",
+    "concept": "deficits-debt-and-government-borrowing",
+    "authoritativeConcept": "deficits-debt-and-government-borrowing",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "FB2",
+    "type": "integration",
+    "primarySkill": "diagnose_stock_flow_comparison",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Strengthen stock/flow time-basis critique with a conditional annualization and growth reconciliation.",
+    "numericProofs": [],
+    "before": {
+      "q": "An analyst divides the debt stock at one date by one month's deficit and calls the result a debt-to-deficit growth rate. What is the main problem?",
+      "options": [
+        "Debt and deficit values must first be expressed in different currencies",
+        "Monthly deficits are always surpluses",
+        "Debt cannot be compared with flows",
+        "It lacks a meaningful stock-flow time basis"
+      ],
+      "feedback": "Stocks and flows can be related, but the period and interpretation must be specified; this ratio is not a growth rate.",
+      "aHash": "efa5b3285b67522ddb2b9a0276a14ae0e4b638b4a5b04739fc28800cd88c7bf6"
+    },
+    "after": {
+      "q": "At year-end a government owes $2,400 billion. During the final month its deficit was $20 billion. An analyst divides 2,400 by 20 and calls the result a 120 percent annual debt-growth rate. If the monthly deficit instead remained constant for a full future year, all deficits were borrowed, and no other debt adjustments occurred, what would the calculation establish?",
+      "options": [
+        "The original quotient is a 120 percent growth rate; annualizing the deficit leaves that rate unchanged",
+        "The original quotient is 120 years of deficits; the stated future scenario implies 1 percent annual debt growth",
+        "The original quotient is a 10 percent growth rate; dividing it by 12 gives annual debt growth",
+        "The original quotient is 120 months of deficits; the stated future scenario implies 10 percent annual debt growth"
+      ],
+      "feedback": "A stock of $2,400 billion divided by a flow of $20 billion per month gives 120 months, not a percent growth rate. Under the explicit future assumption, twelve monthly deficits add $240 billion to debt; 240 / 2,400 = 10 percent. One observed month alone does not establish that future path.",
+      "aHash": "a0f45e4f761f931d0467f4f8fbed8ce3e950f6c791d59f4576a28d050455c953"
+    }
+  },
+  {
+    "id": "43156",
+    "concept": "deficits-debt-and-government-borrowing",
+    "authoritativeConcept": "deficits-debt-and-government-borrowing",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "FB8",
+    "type": "integration",
+    "primarySkill": "evaluate_borrowing_tradeoff_claim",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace a broad all-borrowing-harmful rebuttal with a constrained public/private capital comparison.",
+    "numericProofs": [],
+    "before": {
+      "q": "A claim says all borrowing is harmful because it raises debt. What is the best economic response?",
+      "options": [
+        "The assessment depends partly on what the borrowing finances",
+        "Borrowing has no costs under any circumstances",
+        "Any positive deficit proves that national saving has fallen to zero",
+        "Economic analysis alone determines the only acceptable philosophy of fiscal policy"
+      ],
+      "feedback": "Positive analysis identifies accounting effects and conditional tradeoffs without turning them into a universal normative verdict.",
+      "aHash": "34dccf40203987c76209a97337de9a642492572d7486bd9c02c46d3d5c0807ad"
+    },
+    "after": {
+      "q": "Two packages require the same additional borrowing, leave public saving equally lower, and face the same unchanged private-saving and investment-demand schedules. Package A finances productive public infrastructure; Package B finances transfers. What evidence is needed to decide whether A leaves more total productive capital than before the policy?",
+      "options": [
+        "Whether the public-capital addition exceeds the private-capital formation displaced by the higher real rate",
+        "Whether A issues less debt than B, even though their additional borrowing is stated to be equal",
+        "Whether transfers count as current public-capital formation at the moment they are paid",
+        "Whether a decline in public saving is itself a one-for-one measure of lost private capital"
+      ],
+      "feedback": "Both packages create the same initial loanable-funds pressure under the stated schedules. A also adds public productive capital. Its net capital effect depends on that addition relative to displaced private capital formation; borrowing alone does not establish the sign. No project-valuation or AD-AS model is needed for this comparison.",
+      "aHash": "812fde82af5f35520712ea9a34759134f04530e9dfcbe0e95a4b0b1d53dc2251"
+    }
+  },
+  {
+    "id": "43158",
+    "concept": "deficits-debt-and-government-borrowing",
+    "authoritativeConcept": "deficits-debt-and-government-borrowing",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "FB8",
+    "type": "integration",
+    "primarySkill": "boundary_synthesis",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace a generic borrowing/rate claim with offsetting policies and a separate investment incentive.",
+    "numericProofs": [],
+    "before": {
+      "q": "A larger deficit reduces public saving. Which conclusion is justified without solving for the exact loanable-funds equilibrium?",
+      "options": [
+        "The exact equilibrium real interest rate must fall by the deficit percentage",
+        "A loanable-funds graph must shift by a fixed distance",
+        "Greater government borrowing can put upward pressure on interest rates and downward pressure on private investment.",
+        "Foreign capital inflows necessarily equal the deficit"
+      ],
+      "feedback": "A larger deficit lowers public saving; in the loanable-funds model, this can reduce national saving and put upward pressure on the real interest rate and downward pressure on private investment, but the exact equilibrium change requires the full model.",
+      "aHash": "490f35954018f54347694af12f4740ac2c4dbfc4cd7c1dd71a5669a951c385a8"
+    },
+    "after": {
+      "q": "A deficit reduces public saving at every real rate. A separate household incentive exactly offsets that reduction in planned private saving at every rate, while an investment tax credit also raises desired investment. In the closed-economy loanable-funds model, what can be concluded relative to the initial equilibrium?",
+      "options": [
+        "The saving curve shifts left; the real rate rises and private investment must fall",
+        "Both curves are unchanged; exact private-saving offset also cancels the investment tax credit",
+        "The saving curve is unchanged; the real rate and equilibrium private investment rise",
+        "The saving curve shifts right; private investment rises but the real rate must fall"
+      ],
+      "feedback": "The public- and private-saving shifts cancel at every rate, leaving national-saving supply unchanged. The tax credit separately shifts investment demand right. With an upward-sloping saving curve, the new equilibrium has a higher real rate and more private investment. A higher rate alone does not prove crowding out when investment demand also changes.",
+      "aHash": "5fa4f2537df155d82ac4f6c01ab6ec0fc868f9a0eb18e8e5cf49a05bf5448bff"
+    }
+  },
+  {
+    "id": "43162",
+    "concept": "debt-measures-burden-and-fiscal-data",
+    "authoritativeConcept": "debt-measures-burden-and-fiscal-data",
+    "pool": "easy",
+    "difficulty": "easy",
+    "objective": "FB9",
+    "type": "interpretation",
+    "primarySkill": "distinguish_dated_debt_stock",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Remove a moving dataset-update claim while preserving the dated-observation skill.",
+    "numericProofs": [],
+    "before": {
+      "q": "Treasury's Debt to the Penny dataset, last updated August 26, 2026, reports daily U.S. dollar debt amounts. What does an observation dated August 25, 2026 represent?"
+    },
+    "after": {
+      "q": "Treasury's Debt to the Penny dataset reports daily U.S. dollar debt amounts. What does an observation dated August 25, 2026 represent?"
+    }
+  },
+  {
+    "id": "43145",
+    "concept": "debt-measures-burden-and-fiscal-data",
+    "authoritativeConcept": "debt-measures-burden-and-fiscal-data",
+    "pool": "elite",
+    "difficulty": "elite",
+    "objective": "FB7",
+    "type": "integration",
+    "primarySkill": "avoid_single_rate_assumption",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Turn a generic portfolio caveat into integrated refinancing arithmetic and budget feedback.",
+    "numericProofs": [],
+    "before": {
+      "q": "Why is it misleading to multiply the entire actual federal debt by one market rate without qualification?",
+      "options": [
+        "Federal debt never pays interest",
+        "One rate is only a simplifying assumption",
+        "Annual interest costs depend only on the current level of GDP",
+        "Every outstanding Treasury security carries the current market interest rate"
+      ],
+      "feedback": "A classroom uniform-rate calculation can illustrate the channel but does not describe the actual debt portfolio exactly.",
+      "aHash": "2cef19e4f05388967d2964dc6a07fbcdef7b040c01f2c8b93ad7a991ed0ea101"
+    },
+    "after": {
+      "q": "In a simplified debt portfolio, $600 billion remains at a fixed 2 percent annual rate and $400 billion is refinanced from 2 to 5 percent at the start of the year. Principal stays constant; rates apply for the full year and there are no interest receipts. Revenues and noninterest outlays are unchanged. How do interest outlays and the deficit change?",
+      "options": [
+        "Interest outlays become $50 billion and the deficit widens $30 billion",
+        "Interest outlays become $32 billion and the deficit widens $12 billion",
+        "Interest outlays become $20 billion and the deficit is unchanged",
+        "Interest outlays become $32 billion and the deficit widens $32 billion"
+      ],
+      "feedback": "Initial interest is (600 + 400)(0.02) = $20 billion. New interest is 600(0.02) + 400(0.05) = 12 + 20 = $32 billion. The $12 billion increase widens the deficit by the same amount. The current refinancing rate applies only to the repriced portion, not the whole portfolio.",
+      "aHash": "9af4b415d27d8be7847e5f963e7ad6d0216b630767bf9bc5560d61ec66a12fdc"
+    }
+  },
+  {
+    "id": "43134",
+    "concept": "debt-measures-burden-and-fiscal-data",
+    "authoritativeConcept": "debt-measures-burden-and-fiscal-data",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "FB6",
+    "type": "integration",
+    "primarySkill": "reconcile_ratio_and_deficit",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "State financing assumptions and replace qualitative reconciliation with linked ratio and stock-growth reasoning.",
+    "numericProofs": [],
+    "before": {
+      "q": "Debt-to-GDP falls while the government runs a deficit. Which statement is most accurate?",
+      "options": [
+        "A deficit always raises the ratio",
+        "A falling ratio proves the nominal debt stock also declined",
+        "Debt rises, but faster GDP growth lowers the ratio",
+        "GDP growth affects output but cannot affect a debt-to-GDP ratio"
+      ],
+      "feedback": "The deficit concerns the debt numerator's direction, while denominator growth can dominate the ratio.",
+      "aHash": "e1af50545cd89d374a9a00abfe6dc70f10747ede5917500b26a66722f79ca76f"
+    },
+    "after": {
+      "q": "A government begins with debt equal to 80 percent of nominal GDP. During the year it borrows an amount equal to 4 percent of initial GDP to finance its deficit, with no other debt adjustments. Nominal GDP grows 8 percent. Which result reconciles the deficit, the debt stock and the debt ratio?",
+      "options": [
+        "Debt rises 4 percent, and debt-to-GDP falls to exactly 76 percent",
+        "Debt falls 4 percent, so debt-to-GDP falls to about 77.8 percent",
+        "Debt rises 5 percent, but debt-to-GDP falls to about 77.8 percent",
+        "Debt rises 5 percent, so debt-to-GDP rises to 84 percent"
+      ],
+      "feedback": "Normalize initial GDP to 100: debt starts at 80, borrowing adds 4 and GDP rises to 108. Debt growth is 4 / 80 = 5 percent; the new ratio is 84 / 108 ≈ 77.8 percent. Faster denominator growth lowers the ratio despite the borrowing-financed deficit.",
+      "aHash": "cf670a814bcf351c6f138fc327de50bd8c4b52fc71d87be03336d01b9b4ead26"
+    }
+  },
+  {
+    "id": "43135",
+    "concept": "debt-measures-burden-and-fiscal-data",
+    "authoritativeConcept": "debt-measures-burden-and-fiscal-data",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "FB6",
+    "type": "integration",
+    "primarySkill": "separate_percent_changes",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace one-step upper percentage-point arithmetic with denominator-aware reconstruction.",
+    "numericProofs": [],
+    "before": {
+      "q": "Debt-to-GDP increases from 80 percent to 88 percent. Which statement is correct?",
+      "options": [
+        "The ratio rose 8 percent and 10 percentage points",
+        "The increase is 88 percentage points, or 8 percent of the initial ratio",
+        "The increase is 10 percentage points, or 8 percent of the initial ratio",
+        "The increase is 8 points, or 10 percent of the initial ratio"
+      ],
+      "feedback": "The level change is 8 points; dividing 8 by the initial 80 gives a 10 percent relative increase.",
+      "aHash": "8287ab79f471a7665c4aae8d270e23a5d6189a52db926c7a780629e54817106a"
+    },
+    "after": {
+      "q": "Debt-to-GDP rises from 80 percent to 88 percent while nominal GDP rises 5 percent. The debt measure and accounting dates are comparable. Which comparison correctly separates the ratio change from the change in nominal debt?",
+      "options": [
+        "The ratio rises 8 percentage points, or 10 percent; nominal debt rises 10 percent",
+        "The ratio rises 8 percent, or 10 percentage points; nominal debt rises 13 percent",
+        "The ratio rises 8 percentage points, or 10 percent; nominal debt rises 5 percent",
+        "The ratio rises 8 percentage points, or 10 percent; nominal debt rises 15.5 percent"
+      ],
+      "feedback": "The ratio increases by 8 points and by 8 / 80 = 10 percent relative to its initial level. Nominal debt changes by the ratio factor times the GDP factor: (88 / 80)(1.05) = 1.155, or 15.5 percent. The ratio growth rate is not the numerator growth rate when GDP also changes.",
+      "aHash": "8a867dabdf688ea70f58820ebf024c26647433bdf8b1192a4213cc8d9b240959"
+    }
+  },
+  {
+    "id": "43167",
+    "concept": "debt-measures-burden-and-fiscal-data",
+    "authoritativeConcept": "debt-measures-burden-and-fiscal-data",
+    "pool": "legendary",
+    "difficulty": "legendary",
+    "objective": "FB9",
+    "type": "integration",
+    "primarySkill": "compare_projected_debt_ratios",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Replace repeated projected-ratio recognition with partial identification and a reverse denominator threshold.",
+    "numericProofs": [],
+    "before": {
+      "q": "CBO's February 2026 baseline projects debt held by the public at 101 percent of GDP in 2026 and 120 percent in 2036. Which conclusion is warranted?",
+      "options": [
+        "The figures are realized nominal debt totals stated in trillions of dollars",
+        "GDP falls exactly 19 percent",
+        "Total public debt and debt held by the public are identical measures",
+        "The projected ratio rises from 101 to 120 percent"
+      ],
+      "feedback": "The comparison is a projected ratio for debt held by the public, not a realized nominal total.",
+      "aHash": "2ebfe131d4ef6f1a7c29e193a57909129fa1335cd30f5654bbe845361328c406"
+    },
+    "after": {
+      "q": "CBO’s February 2026 baseline gives projected debt-held-by-the-public ratios of 101 percent of GDP in 2026 and 120 percent in 2036. Using only these displayed ratios, when would nominal debt in 2036 exceed nominal debt in 2026?",
+      "options": [
+        "When nominal GDP in 2036 exceeds 120 percent of its 2026 level; a smaller GDP increase implies falling debt",
+        "Only when nominal GDP is unchanged; otherwise the two debt ratios cannot be compared",
+        "For every possible positive GDP level in 2036; a higher ratio proves a larger nominal debt stock",
+        "When nominal GDP in 2036 exceeds about 84.2 percent of its 2026 level; the ratios alone do not establish GDP’s change"
+      ],
+      "feedback": "Debt is its GDP share times nominal GDP. Thus 1.20 × GDP2036 must exceed 1.01 × GDP2026, requiring GDP2036 / GDP2026 > 101 / 120 ≈ 0.8417. A higher ratio alone does not identify nominal-debt growth without denominator evidence. This threshold uses the displayed rounded ratios and is not a forecast of GDP.",
+      "aHash": "674cc4d45adc50338f2168caa40b6f6cc2f67980805a7236f0efbcedc008def8"
+    }
+  },
+  {
+    "id": "43137",
+    "concept": "debt-measures-burden-and-fiscal-data",
+    "authoritativeConcept": "debt-measures-burden-and-fiscal-data",
+    "pool": "legendaryBoss",
+    "difficulty": "legendary",
+    "objective": "FB6",
+    "type": "integration",
+    "primarySkill": "interpret_cbo_debt_ratio_projection",
+    "contentRevised": true,
+    "pathRevised": false,
+    "reason": "Deepen the existing projected-ratio checkpoint through reverse consistency rather than a repeated subtraction.",
+    "numericProofs": [],
+    "before": {
+      "q": "CBO's February 2026 baseline projects debt held by the public at 101 percent of GDP in 2026 and 120 percent in 2036. What does the comparison imply?",
+      "options": [
+        "An annual deficit increase of exactly 19 percent of GDP",
+        "A projected increase of 19 percentage points",
+        "A projected decline in debt held by the public measured in dollars",
+        "A projected GDP level equal to 120 percent of federal debt"
+      ],
+      "feedback": "The ratio rises from 101 to 120 percent, a 19-percentage-point increase in the projected debt stock relative to GDP.",
+      "aHash": "38e6d571b18f6ce069a90de765332d58c0a1da056963d50eeee6cb0b7ed0acb8"
+    },
+    "after": {
+      "q": "CBO’s February 2026 baseline projects debt held by the public at 101 percent of GDP in 2026 and 120 percent in 2036. An analyst claims that nominal debt would therefore rise 19 percent. For that nominal-debt growth claim to be consistent with these displayed ratios, what would nominal GDP have to do?",
+      "options": [
+        "Rise by 19 percent; debt and GDP must grow at the same rate when the ratio increases",
+        "Rise by about 0.16 percent; the 19-percentage-point ratio increase is not itself nominal-debt growth",
+        "Remain exactly unchanged; subtracting the two ratios gives the percent growth in debt",
+        "Fall by about 15.8 percent; a higher debt ratio necessarily implies a smaller economy"
+      ],
+      "feedback": "Let GDP growth have factor g. The nominal-debt factor would be (120 / 101)g. Setting it to 1.19 gives g = 1.19(101 / 120) ≈ 1.001583, a 0.16 percent increase. This is a conditional consistency calculation using displayed rounded ratios, not CBO’s GDP projection.",
+      "aHash": "a5ba110d491c4d5579d5382ce7cdb67c1f9032339e6be39a489184f96a653b8d"
+    }
+  }
+]

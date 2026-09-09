@@ -1,0 +1,459 @@
+{
+  "method": "A separate verifier parses FINAL staged stems and recomputes with exact fractions. Actual image coordinates are visually transcribed independently of question keys; line interpolation is recomputed. Answer hashes are structural checks, not arithmetic evidence. Every revised numeric item, including clarification-only edits, is included.",
+  "count": 22,
+  "items": [
+    {
+      "id": "43205",
+      "finalStem": "In a closed economy, output is $1,240 billion, consumption is $790 billion and government purchases are $230 billion. Firms planned $250 billion of investment, including planned inventory accumulation. Output and final purchases are realized as stated. Which reconciliation is consistent with national accounting?",
+      "parsedDollarMagnitudes": [
+        "1240",
+        "790",
+        "230",
+        "250"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "savingAndRealizedInvestment": "220",
+        "unplannedInventoryInvestment": "-30"
+      },
+      "keyedOption": "$220 billion of realized saving and investment, including a $30 billion unplanned inventory reduction",
+      "derivation": "Y−C−G fixes realized investment; subtract planned investment, including planned inventories, to obtain the unplanned inventory change.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43217",
+      "finalStem": "Refer to the graph above. Treat the displayed curves as straight lines. At a temporary real interest rate of 10 percent, how large is the planned imbalance, and what adjustment returns this market toward A?",
+      "parsedDollarMagnitudes": [],
+      "parsedPercentageMagnitudes": [
+        "10"
+      ],
+      "recomputed": {
+        "supply": "180",
+        "demand": "100",
+        "excessSupply": "80"
+      },
+      "keyedOption": "An 80-unit excess supply; a falling rate reduces saving supplied and increases investment demanded",
+      "derivation": "Solve each visually inspected straight line at the final-stem rate. Excess supply creates downward rate pressure, moving along both curves.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43219",
+      "finalStem": "Refer to the graph above. Treat the lines as straight. Starting at A, a technology change shifts D0 horizontally right while S0 stays fixed. The new equilibrium real rate is 10 percent, although the new demand curve is not drawn. What can be inferred about the shift and the quantity response?",
+      "parsedDollarMagnitudes": [],
+      "parsedPercentageMagnitudes": [
+        "10"
+      ],
+      "recomputed": {
+        "newQuantityOnUnchangedSupply": "180",
+        "oldDemandAtNewRate": "100",
+        "horizontalDemandIncrease": "80",
+        "investmentIncrease": "40"
+      },
+      "keyedOption": "Demand shifted right by 80 units; equilibrium investment rose by 40 through movement along S0",
+      "derivation": "The new equilibrium must be on S0. Its distance from old D0 at the same rate identifies the parallel demand shift; compare quantity with the original intersection separately.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43245",
+      "finalStem": "Initially, desired investment is I = 300 − 10r, with I in billions of dollars and r measured in percentage points. Technology changes only the intercept. The real rate rises from 4 to 7 percent, and equilibrium investment rises by $20 billion. What happened to investment demand, and what would investment have been at the original rate after the technology change?",
+      "parsedDollarMagnitudes": [
+        "20"
+      ],
+      "parsedPercentageMagnitudes": [
+        "7"
+      ],
+      "recomputed": {
+        "initialI": "260",
+        "newI": "280",
+        "demandShift": "50",
+        "counterfactualAtOldRate": "310"
+      },
+      "keyedOption": "Demand shifted right by $50 billion; investment at 4 percent would be $310 billion",
+      "derivation": "Invert the new demand intercept from final equilibrium investment and the final rate. Evaluate the inferred new schedule at the old rate.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43257",
+      "finalStem": "Refer to the graph above. Each quantity unit represents $1 billion, and the lines are straight. A fiscal change lowers public saving by $55 billion at every real rate, while a separate incentive raises planned private saving by $15 billion at every rate. Investment demand does not shift. Which comparison correctly connects the policy shifts with A and B?",
+      "parsedDollarMagnitudes": [
+        "1",
+        "55",
+        "15"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "fixedRateSavingChange": "-40",
+        "actualGraphHorizontalShift": "-40",
+        "equilibriumInvestmentChange": "-20"
+      },
+      "keyedOption": "Saving supply shifts left by $40 billion, but equilibrium investment falls by $20 billion",
+      "derivation": "Independently sum the final fiscal/private shifts; compare with same-rate horizontal distance between actual S curves and separately with labeled equilibrium quantities.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43259",
+      "finalStem": "Refer to the graph above. Each quantity unit represents $1 billion. The straight S0 and S1 curves capture a fiscal change, with the private-saving schedule unchanged and D0 fixed. Starting from B, a second policy raises planned private saving by $15 billion at every real rate. How much must public saving rise from its level at B to restore A?",
+      "parsedDollarMagnitudes": [
+        "1",
+        "15"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "requiredTotalRightShift": "40",
+        "privateShift": "15",
+        "requiredPublicShift": "25"
+      },
+      "keyedOption": "$25 billion; together the two changes restore the original saving schedule",
+      "derivation": "Restore the full horizontal supply displacement; subtract the explicit additional private-saving shift. Do not use the equilibrium quantity gap as the shift size.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43297",
+      "finalStem": "Refer to the graph above. Each quantity unit represents $1 billion, and the curves are straight. A budget improvement shifts S0 to S1; the private-saving schedule and investment demand are unchanged. What does the graph imply about the rise in public saving and the induced change in private saving between A and B?",
+      "parsedDollarMagnitudes": [
+        "1"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "publicSavingIncrease": "80",
+        "nationalSavingIncrease": "40",
+        "inducedPrivateSavingChange": "-40"
+      },
+      "keyedOption": "Public saving rises $80 billion; private saving falls $40 billion as the rate declines",
+      "derivation": "The private schedule is unchanged, so the horizontal national-supply shift identifies the public component. Subtract that component from the realized aggregate change to infer endogenous private saving.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43309",
+      "finalStem": "Refer to the graph above. Each quantity unit represents $1 billion, and the straight-line shifts summarize all changes in saving and investment behavior. Public saving falls by $10 billion at every real rate, while technology raises investment demand. What private-saving shift is required to reconcile the graph with that fiscal change?",
+      "parsedDollarMagnitudes": [
+        "1",
+        "10"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "savingShift": "40",
+        "demandShift": "40",
+        "requiredPrivateSavingShift": "50"
+      },
+      "keyedOption": "A $50 billion increase at every rate; net saving supply and investment demand each move right by $40 billion",
+      "derivation": "Read each old and new schedule at the common plotted rate, then solve private saving minus the public-saving decline equals the net supply increase.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43069",
+      "finalStem": "A budget worksheet reports $920 billion of cash inflows, including $180 billion from issuing new debt, and $870 billion of total outlays. All remaining inflows are revenues; there are no other financing adjustments. What are the budget balance and the amount of new borrowing left to increase cash balances?",
+      "parsedDollarMagnitudes": [
+        "920",
+        "180",
+        "870"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "revenue": "740",
+        "deficit": "130",
+        "cashIncrease": "50"
+      },
+      "keyedOption": "A $130 billion deficit and a $50 billion cash increase",
+      "derivation": "Remove issuance from inflows to obtain revenue. Financing minus the deficit gives the cash increase.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43070",
+      "finalStem": "A government starts the year with $3,600 billion of debt. Revenues are $760 billion and outlays are $940 billion. It issues $500 billion of debt, including debt used to repay $270 billion of maturing principal; remaining financing may change cash balances. With no other debt or financing adjustments, which reconciliation is correct?",
+      "parsedDollarMagnitudes": [
+        "3600",
+        "760",
+        "940",
+        "500",
+        "270"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "deficit": "180",
+        "netIssuance": "230",
+        "endingDebt": "3830",
+        "cashIncrease": "50"
+      },
+      "keyedOption": "A $180 billion deficit, ending debt of $3,830 billion, and a $50 billion increase in cash",
+      "derivation": "Outlays exclude principal repayment; borrowing excludes revenue. Gross issuance minus retiring principal determines the debt change, and net financing minus deficit determines cash.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43087",
+      "finalStem": "At year-end a government owes $2,400 billion. During the final month its deficit was $20 billion. An analyst divides 2,400 by 20 and calls the result a 120 percent annual debt-growth rate. If the monthly deficit instead remained constant for a full future year, all deficits were borrowed, and no other debt adjustments occurred, what would the calculation establish?",
+      "parsedDollarMagnitudes": [
+        "2400",
+        "20"
+      ],
+      "parsedPercentageMagnitudes": [
+        "120"
+      ],
+      "recomputed": {
+        "stockOverMonthlyFlowMonths": "120",
+        "futureAnnualDeficit": "240",
+        "futureDebtGrowthPercent": "10"
+      },
+      "keyedOption": "The original quotient is 120 months of deficits; the stated future scenario implies 10 percent annual debt growth",
+      "derivation": "Dimensional analysis gives months. Only the explicit future constant-flow and financing assumptions permit twelve-month accumulation and a percentage growth rate.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43098",
+      "finalStem": "A simplified fiscal account reports gross tax receipts of $900 billion, transfers of $180 billion, government purchases of $660 billion and interest payments of $70 billion. These are all revenues and outlays. For this exercise define T as gross taxes minus transfers, excluding interest. Which pair gives textbook public saving T − G and the full budget balance?",
+      "parsedDollarMagnitudes": [
+        "900",
+        "180",
+        "660",
+        "70"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "netTaxes": "720",
+        "publicSaving": "60",
+        "fullBudgetBalance": "-10",
+        "gapFromInterest": "70"
+      },
+      "keyedOption": "Public saving is $60 billion; the full budget has a $10 billion deficit",
+      "derivation": "T is explicitly gross receipts less transfers only. Full outlays also include interest. Subtract each category once.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43111",
+      "finalStem": "A simplified government has only three outlay categories: purchases of current domestic goods and services, transfers, and interest. Purchases rise from $400 billion to $430 billion, transfers from $300 billion to $350 billion, and interest from $50 billion to $70 billion. Revenues rise by $60 billion. Which comparison is correct?",
+      "parsedDollarMagnitudes": [
+        "400",
+        "430",
+        "300",
+        "350",
+        "50",
+        "70",
+        "60"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "purchaseIncrease": "30",
+        "transferIncrease": "50",
+        "interestIncrease": "20",
+        "totalOutlayIncrease": "100",
+        "deficitWidening": "40"
+      },
+      "keyedOption": "The deficit widens by $40 billion, while the direct increase in GDP government purchases is $30 billion",
+      "derivation": "Sum all outlay changes for the budget, subtract revenue growth, and count only current domestic purchases for direct G.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43134",
+      "finalStem": "A government begins with debt equal to 80 percent of nominal GDP. During the year it borrows an amount equal to 4 percent of initial GDP to finance its deficit, with no other debt adjustments. Nominal GDP grows 8 percent. Which result reconciles the deficit, the debt stock and the debt ratio?",
+      "parsedDollarMagnitudes": [],
+      "parsedPercentageMagnitudes": [
+        "80",
+        "4",
+        "8"
+      ],
+      "recomputed": {
+        "debtGrowthPercent": "5",
+        "newDebtRatioPercent": "700/9"
+      },
+      "keyedOption": "Debt rises 5 percent, but debt-to-GDP falls to about 77.8 percent",
+      "derivation": "Normalize initial GDP to 100. Borrowing is measured relative to GDP, so divide it by initial debt for debt growth. Recompute the ratio with the new GDP.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43135",
+      "finalStem": "Debt-to-GDP rises from 80 percent to 88 percent while nominal GDP rises 5 percent. The debt measure and accounting dates are comparable. Which comparison correctly separates the ratio change from the change in nominal debt?",
+      "parsedDollarMagnitudes": [],
+      "parsedPercentageMagnitudes": [
+        "80",
+        "88",
+        "5"
+      ],
+      "recomputed": {
+        "ratioPoints": "8",
+        "relativeRatioGrowthPercent": "10",
+        "nominalDebtGrowthPercent": "31/2"
+      },
+      "keyedOption": "The ratio rises 8 percentage points, or 10 percent; nominal debt rises 15.5 percent",
+      "derivation": "Multiply the debt-ratio growth factor by the GDP growth factor to reconstruct nominal debt.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43137",
+      "finalStem": "CBO’s February 2026 baseline projects debt held by the public at 101 percent of GDP in 2026 and 120 percent in 2036. An analyst claims that nominal debt would therefore rise 19 percent. For that nominal-debt growth claim to be consistent with these displayed ratios, what would nominal GDP have to do?",
+      "parsedDollarMagnitudes": [],
+      "parsedPercentageMagnitudes": [
+        "101",
+        "120",
+        "19"
+      ],
+      "recomputed": {
+        "requiredGDPFactor": "12019/12000",
+        "requiredGDPGrowthPercent": "19/120",
+        "ratioPointIncrease": "19"
+      },
+      "keyedOption": "Rise by about 0.16 percent; the 19-percentage-point ratio increase is not itself nominal-debt growth",
+      "derivation": "Solve the claimed nominal-debt factor divided by the ratio factor. Round only at the final step; this is not CBO GDP data.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43145",
+      "finalStem": "In a simplified debt portfolio, $600 billion remains at a fixed 2 percent annual rate and $400 billion is refinanced from 2 to 5 percent at the start of the year. Principal stays constant; rates apply for the full year and there are no interest receipts. Revenues and noninterest outlays are unchanged. How do interest outlays and the deficit change?",
+      "parsedDollarMagnitudes": [
+        "600",
+        "400"
+      ],
+      "parsedPercentageMagnitudes": [
+        "2",
+        "5"
+      ],
+      "recomputed": {
+        "interestBefore": "20",
+        "interestAfter": "32",
+        "deficitIncrease": "12"
+      },
+      "keyedOption": "Interest outlays become $32 billion and the deficit widens $12 billion",
+      "derivation": "Weight the unchanged and repriced principal separately for a full year; unchanged revenues and noninterest outlays transmit only the interest change into the deficit.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43167",
+      "finalStem": "CBO’s February 2026 baseline gives projected debt-held-by-the-public ratios of 101 percent of GDP in 2026 and 120 percent in 2036. Using only these displayed ratios, when would nominal debt in 2036 exceed nominal debt in 2026?",
+      "parsedDollarMagnitudes": [],
+      "parsedPercentageMagnitudes": [
+        "101",
+        "120"
+      ],
+      "recomputed": {
+        "minimumGDPPercentOfInitialForEqualDebt": "505/6"
+      },
+      "keyedOption": "When nominal GDP in 2036 exceeds about 84.2 percent of its 2026 level; the ratios alone do not establish GDP’s change",
+      "derivation": "Nominal debt rises precisely when the GDP factor exceeds the inverse ratio factor; equality defines the threshold, so the correct alternative uses exceeds.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43203",
+      "finalStem": "In a closed economy, at every given real interest rate, planned private saving rises by $20 billion while public saving falls by $35 billion. At the same time, new technology raises desired investment. What can be concluded without knowing the investment-demand shift magnitude?",
+      "parsedDollarMagnitudes": [
+        "20",
+        "35"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "fixedRateNationalSavingChange": "-15"
+      },
+      "keyedOption": "Supply shifts left, demand shifts right; the rate rises and quantity is ambiguous",
+      "derivation": "Add the signed private and public schedule shifts at each given rate. In 43203 demand also shifts right, making quantity ambiguous; in the other two demand stays fixed, so equilibrium investment falls.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43210",
+      "finalStem": "Government purchases fall by $25 billion in a closed economy with output fixed and the consumption schedule unchanged at each given real rate, while firms also become more optimistic about future sales. Which market description is complete?",
+      "parsedDollarMagnitudes": [
+        "25"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "fixedRateNationalSavingIncrease": "25"
+      },
+      "keyedOption": "Both curves shift right; quantity rises and the rate is ambiguous",
+      "derivation": "At fixed Y and the same consumption schedule at each rate, lower G shifts national saving right by the stated purchase reduction. Optimism independently shifts investment demand right.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43189",
+      "finalStem": "At every given real interest rate, planned private saving increases by $25 billion, but a larger deficit reduces public saving by $40 billion. With investment demand unchanged, which sequence follows?",
+      "parsedDollarMagnitudes": [
+        "25",
+        "40"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "fixedRateNationalSavingChange": "-15"
+      },
+      "keyedOption": "National saving falls by $15 billion; supply shifts left, the real rate rises, and investment falls",
+      "derivation": "Add the signed private and public schedule shifts at each given rate. In 43203 demand also shifts right, making quantity ambiguous; in the other two demand stays fixed, so equilibrium investment falls.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    },
+    {
+      "id": "43264",
+      "finalStem": "At every given real interest rate, public saving falls by $30 billion while planned private saving rises by $10 billion. With investment demand unchanged, what follows?",
+      "parsedDollarMagnitudes": [
+        "30",
+        "10"
+      ],
+      "parsedPercentageMagnitudes": [],
+      "recomputed": {
+        "fixedRateNationalSavingChange": "-20"
+      },
+      "keyedOption": "Supply shifts left, raising the rate and reducing investment",
+      "derivation": "Add the signed private and public schedule shifts at each given rate. In 43203 demand also shifts right, making quantity ambiguous; in the other two demand stays fixed, so equilibrium investment falls.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational arithmetic; round only the final value where approximate wording permits it."
+    }
+  ]
+}

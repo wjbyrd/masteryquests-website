@@ -1,0 +1,296 @@
+{
+  "before": {
+    "errors": 0,
+    "warnings": 0,
+    "reviews": 29
+  },
+  "after": {
+    "errors": 0,
+    "warnings": 0,
+    "reviews": 25
+  },
+  "beforeScope": 268,
+  "afterScope": 268,
+  "method": "Unmodified existing question_quality_auditor.mjs against actual authoritative baseline and staged library, all seven direct concepts and every pool. No derived projection needed. Every original/final question-rule pair is individually dispositioned.",
+  "findings": [
+    {
+      "questionId": "43082",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "A debt-stock headline can coexist with a smaller annual deficit. The key is correct but this Hard item is more direct than the stronger retained stock/flow applications.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43083",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "Debt changes can differ from deficits because of financing adjustments. Alternatives deny the difference or confuse aggregates; the accounting caveat is valuable despite absolute wording.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43087",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The revision now requires dimensional analysis and a conditional annual debt-growth calculation, replacing a largely definitional response.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43093",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The alternatives confuse net-tax accounting with fiscal neutrality; public saving remains T−G. Absolute language is an elimination cue, retained as a nonblocking distractor weakness.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43098",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The original vague public-saving/budget distinction was replaced with explicitly defined taxes, transfers and interest plus a numerical reconciliation. The original absolute-distractor flag is no longer reported.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43117",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "Different debt definitions can produce different values. Absolutes deny measurement or collapse measures; retain the useful Medium definition boundary while disclosing the cue.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43118",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The two supplied debt totals imply intragovernmental holdings. Distractors confuse that stock difference with a deficit or a different measure; some categorical wording remains.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43120",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "Same-date releases with different measure labels need not conflict. The task remains direct for Elite; retained as a residual upper-tier/distractor limitation, not declared fully remediated.",
+      "auditorMessage": "3 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43158",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": true,
+      "reason": "The revised item requires exact saving-shift cancellation plus an independent demand shift. Unchanged/must distractors encode the offset and rate-direction errors; the heuristic flag is retained.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43166",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "Measure, date, projected/observed status and units all matter. The surviving Legendary item is a fairly direct checklist and its only/nothing alternatives are weak; retained without claiming every upper item is equally deep.",
+      "auditorMessage": "3 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43181",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The key rejects one-saver/one-project matching. Absolute distractors encode the aggregation error; this support/checkpoint grammar is retained.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43182",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The bridge links household saving to financing and capital formation. Its absolute distractors are simple; preserve the bridge and routing rather than inflate its difficulty.",
+      "auditorMessage": "3 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43203",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": true,
+      "reason": "The revised fixed-rate saving shifts and independent technology shock imply an unambiguous rate but ambiguous final quantity. Only/must distractors encode omitted-curve reasoning; keep the honest flag.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43205",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The original equilibrium-only identity key was replaced with realized/plan inventory reconciliation; the old absolute-distractor flag is no longer reported.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43208",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "Easy aggregate identity correction rejects one-to-one saver/investor matching. The literal absolutes make alternatives weak but the introductory key remains appropriate.",
+      "auditorMessage": "3 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43210",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": true,
+      "reason": "The revised Hard scenario shifts both curves right. Only/must distractors omit a shock or reverse its effect; retain the complete application and disclose the cue.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43213",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The given components imply 300 of planned supply versus 340 desired investment at the current rate. The upward-rate key is sound; categorical distractors remain a limitation.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43219",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "status": "newly-reported",
+      "contentRevised": true,
+      "reason": "False positive from the SIMPLE_READING / REASONING_CUE regex test: inferred is not the regex token infer. The undrawn new demand curve must be reconstructed at a new rate, then its horizontal shift distinguished from the equilibrium change. Independent proof gives 80 versus 40 units. Do not rewrite to game the cue regex.",
+      "auditorMessage": "legendary metadata may overstate a direct recognition or graph-reading task."
+    },
+    {
+      "questionId": "43219",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "False positive from the SIMPLE_READING / REASONING_CUE regex test: inferred is not the regex token infer. The undrawn new demand curve must be reconstructed at a new rate, then its horizontal shift distinguished from the equilibrium change. Independent proof gives 80 versus 40 units. Do not rewrite to game the cue regex.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43241",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "Both rightward shifts imply a quantity increase and an ambiguous rate. Absolute alternatives are misconceptions about simultaneous shifts; the Hard causal comparison is retained.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43249",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The student must reject an investment-demand determinant as an explanation for a supply-only graph. This is a modest inverse application at the easier edge of Hard; retain alongside deeper Hard items, with the calibration flag disclosed.",
+      "auditorMessage": "hard metadata may overstate a direct recognition or graph-reading task."
+    },
+    {
+      "questionId": "43285",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "Both leftward shifts lower quantity but oppose each other on the rate. Absolute direction/unchanged-rate alternatives test that distinction; still a relatively short Legendary task.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43305",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The Hard item distinguishes general theoretical ambiguity from the particular plotted result. Necessity language in the alternatives is part of that misconception, though it gives an elimination cue.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43308",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "An Easy graph-recognition item identifies both changed schedules. Only/both alternatives are appropriate basic contrasts but easy to eliminate once both dashed lines are noticed.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43309",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": true,
+      "reason": "The original loosely scaled component example was replaced with a reverse private-saving shift calculation using a stated graph scale; the old flag is no longer reported.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43313",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The marked B intersection resolves this particular rate outcome. Distractors improperly generalize to all simultaneous shifts or treat axes as causal; their absolutes remain disclosed.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43317",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "newly-reported",
+      "contentRevised": true,
+      "reason": "The revised Hard task combines two determinants, a common rate effect and an ambiguous quantity. Only/must alternatives test which shift affects quantity; retained without changing metadata to silence the flag.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43318",
+      "rule": "near-duplicate-stem",
+      "severity": "REVIEW",
+      "status": "no-longer-reported",
+      "contentRevised": false,
+      "reason": "The old near-duplicate pair was separated by revising Hard 43317 to ask for both the rate direction and the information needed to identify quantity. Medium 43318 remains unchanged.",
+      "auditorMessage": "Stem is 100% token-similar to 43317. Automated comparison indicates differences in: direction of reasoning or curve/shift direction, pedagogical role/pool (medium vs hard), scenario or wording."
+    },
+    {
+      "questionId": "43320",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The key says investment can enlarge physical capital; distractors overstate guaranteed growth or confuse flows and stocks. Appropriate introductory conditionality is preserved.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43323",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The core Hard inference is lower-than-counterfactual capital versus an absolute decline. Absolute alternatives encode that precise error; some remain easier to eliminate.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "43325",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "retained",
+      "contentRevised": false,
+      "reason": "The item distinguishes lower capital formation from a necessary fall in output or the existing stock. The conditional key is sound; distractor wording remains simple.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    }
+  ]
+}

@@ -1,0 +1,6075 @@
+{
+  "all818ScopedRecordsChecked": true,
+  "protectedRecordFieldsUnchanged": true,
+  "allPoolMembershipsOrderAndAliasesUnchanged": true,
+  "all136UnrelatedConceptDefinitionsUnchanged": true,
+  "modeEligibilityUnchanged": true,
+  "reviewRoutesUnchanged": true,
+  "repairBridgeRetestCheckpointAndTelemetryMetadataUnchanged": true,
+  "productionFilesAllowed": [
+    "data/composer_library.js",
+    "data/composer_registry.json",
+    "data/composer_library_manifest.json"
+  ],
+  "onlyImageReferenceException": "38 legacy references are corrected to their existing per-concept registered runtime paths after the generated browser revealed failed image loads. Image bytes and eligibility do not change.",
+  "baselineSourceFiles": {
+    "data/composer_library.js": "800adbd2c8603d29216ff7c7b0f4d34c0d2140d5034aecce62521423c4f8848e",
+    "data/composer_registry.json": "3b58219bd816bc80e8e760b6d346219b4f973057b6c6612a5a06ba03ceecd720",
+    "data/composer_library_manifest.json": "c91005b4db0945b3924cc998a649488f3ffa31769d86a7945ce4fba858d1667a",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  },
+  "finalSourceFiles": {
+    "data/composer_library.js": "73964332b0c6c572e2922e9f010e0ed426d4f9c69befc72b8e5f8fcdded176b9",
+    "data/composer_registry.json": "892f00eb70baaa1975dd9f30bbdd73d7c15e5c2ab1e3e7b755f0aa32fe6889de",
+    "data/composer_library_manifest.json": "e9791b705713bbe775af03b9de88ce54b1c4d9da7ec3002e3d2a3a508c42e623",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  },
+  "reviewAssets": [
+    {
+      "code": "MACRO-18",
+      "title": "Money Functions and Measures",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-18.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-18.pdf",
+      "sha256": "c4d08834e62399af19617dd5b73d9b53b6281966d76238ff17f60edb24065e30",
+      "sizeBytes": 353563,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-19",
+      "title": "Central Banking and the Federal Reserve",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-19.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-19.pdf",
+      "sha256": "438b59b2a7de204dac76b663e06be8188d0d0ae9709972703e76b794c2fed087",
+      "sizeBytes": 353663,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-20",
+      "title": "Bank Balance Sheets, Reserves, and Capital",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-20.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-20.pdf",
+      "sha256": "075409542219abcb19bae4f8c88ad81ac6fc6d932dc8f97207d97e55aca66060",
+      "sizeBytes": 244907,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-21",
+      "title": "Monetary-Policy Tools",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-21.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-21.pdf",
+      "sha256": "7d8a9692c52078277f975ebc101855a1c31000cb2661c3965c5844d294aecd38",
+      "sizeBytes": 353642,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-22",
+      "title": "Limits of Monetary Control",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-22.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-22.pdf",
+      "sha256": "fd87e6d4c56fe4e0736369ee64d75c3728f3a597ef344a1b1738d9f7619e9918",
+      "sizeBytes": 353677,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-23",
+      "title": "Quantity Theory of Money",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-23.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-23.pdf",
+      "sha256": "6a4b084998f1afda4c5d18a084c7a2cc5af0675a9694cb38e2bbfd946826113b",
+      "sizeBytes": 427485,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-24",
+      "title": "Monetary Neutrality",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-24.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-24.pdf",
+      "sha256": "3ea7367479882ff0efcfdd676b1b254e2fb0642d80344103d865a99731b6d54b",
+      "sizeBytes": 417527,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-25",
+      "title": "Fisher Effect",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-25.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-25.pdf",
+      "sha256": "0e045685deef232edcb54a4c3c5218a07f1a4b5a5982f74c06b8d8a6ac177510",
+      "sizeBytes": 353581,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-26",
+      "title": "Costs of Inflation",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-26.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-26.pdf",
+      "sha256": "c70818f4c81228070085833c09e81587af7f76349132779b1b323875d88014af",
+      "sizeBytes": 353727,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-27",
+      "title": "Inflation Tax and Deflation",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-27.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-27.pdf",
+      "sha256": "1b549de491afa3a380b16aceda66100d8f6239dc8cf59d5fbe34f6ae14501b1b",
+      "sizeBytes": 353751,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-28",
+      "title": "Liquidity Preference and the Money Market",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-28.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-28.pdf",
+      "sha256": "222cd55dea67f0b0d0002df38a934e19bc6bd6abe63572a51710d5ebec6689c7",
+      "sizeBytes": 594146,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-29",
+      "title": "Monetary-Policy Transmission",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-29.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-29.pdf",
+      "sha256": "075fe3cade6373e7de02ff33cdb8f73a84ecae3975b1efd1aceb11640de39365",
+      "sizeBytes": 687872,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-49",
+      "title": "Deposit Creation and the Money Multiplier",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-49.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-49.pdf",
+      "sha256": "55e7f512712d5788361951d253fd3b38a97f7d50cf4549d16d16fad307f9aac0",
+      "sizeBytes": 244951,
+      "bytesVerified": true
+    }
+  ],
+  "reviewRuntimeIndex": {
+    "schemaVersion": "2.1.0",
+    "sourceManifestSchemaVersion": "8.0.0-composer-integration",
+    "delivery": "central-https",
+    "baseUrl": "https://masteryquests.org/concept-reviews/",
+    "selectedConceptIds": [
+      "bank-balance-sheets-reserves-and-capital",
+      "central-bank-and-federal-reserve",
+      "deposit-creation-and-money-multiplier",
+      "fisher-effect",
+      "inflation-costs",
+      "inflation-tax-and-deflation",
+      "liquidity-preference-and-money-market",
+      "monetary-control-limits",
+      "monetary-neutrality",
+      "monetary-policy-tools",
+      "monetary-policy-transmission",
+      "money-functions-and-measures",
+      "quantity-theory-of-money"
+    ],
+    "diagnosticConceptIds": [
+      "bank-balance-sheets-reserves-and-capital",
+      "central-bank-and-federal-reserve",
+      "deposit-creation-and-money-multiplier",
+      "fisher-effect",
+      "inflation-costs",
+      "inflation-tax-and-deflation",
+      "liquidity-preference-and-money-market",
+      "monetary-control-limits",
+      "monetary-neutrality",
+      "monetary-policy-tools",
+      "monetary-policy-transmission",
+      "money-functions-and-measures",
+      "quantity-theory-of-money"
+    ],
+    "reviewCodes": [
+      "MACRO-18",
+      "MACRO-19",
+      "MACRO-20",
+      "MACRO-21",
+      "MACRO-22",
+      "MACRO-23",
+      "MACRO-24",
+      "MACRO-25",
+      "MACRO-26",
+      "MACRO-27",
+      "MACRO-28",
+      "MACRO-29",
+      "MACRO-49"
+    ],
+    "assetInventory": [
+      {
+        "code": "MACRO-18",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-18.pdf",
+        "sha256": "c4d08834e62399af19617dd5b73d9b53b6281966d76238ff17f60edb24065e30",
+        "sizeBytes": 353563
+      },
+      {
+        "code": "MACRO-19",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-19.pdf",
+        "sha256": "438b59b2a7de204dac76b663e06be8188d0d0ae9709972703e76b794c2fed087",
+        "sizeBytes": 353663
+      },
+      {
+        "code": "MACRO-20",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-20.pdf",
+        "sha256": "075409542219abcb19bae4f8c88ad81ac6fc6d932dc8f97207d97e55aca66060",
+        "sizeBytes": 244907
+      },
+      {
+        "code": "MACRO-21",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-21.pdf",
+        "sha256": "7d8a9692c52078277f975ebc101855a1c31000cb2661c3965c5844d294aecd38",
+        "sizeBytes": 353642
+      },
+      {
+        "code": "MACRO-22",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-22.pdf",
+        "sha256": "fd87e6d4c56fe4e0736369ee64d75c3728f3a597ef344a1b1738d9f7619e9918",
+        "sizeBytes": 353677
+      },
+      {
+        "code": "MACRO-23",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-23.pdf",
+        "sha256": "6a4b084998f1afda4c5d18a084c7a2cc5af0675a9694cb38e2bbfd946826113b",
+        "sizeBytes": 427485
+      },
+      {
+        "code": "MACRO-24",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-24.pdf",
+        "sha256": "3ea7367479882ff0efcfdd676b1b254e2fb0642d80344103d865a99731b6d54b",
+        "sizeBytes": 417527
+      },
+      {
+        "code": "MACRO-25",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-25.pdf",
+        "sha256": "0e045685deef232edcb54a4c3c5218a07f1a4b5a5982f74c06b8d8a6ac177510",
+        "sizeBytes": 353581
+      },
+      {
+        "code": "MACRO-26",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-26.pdf",
+        "sha256": "c70818f4c81228070085833c09e81587af7f76349132779b1b323875d88014af",
+        "sizeBytes": 353727
+      },
+      {
+        "code": "MACRO-27",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-27.pdf",
+        "sha256": "1b549de491afa3a380b16aceda66100d8f6239dc8cf59d5fbe34f6ae14501b1b",
+        "sizeBytes": 353751
+      },
+      {
+        "code": "MACRO-28",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-28.pdf",
+        "sha256": "222cd55dea67f0b0d0002df38a934e19bc6bd6abe63572a51710d5ebec6689c7",
+        "sizeBytes": 594146
+      },
+      {
+        "code": "MACRO-29",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-29.pdf",
+        "sha256": "075fe3cade6373e7de02ff33cdb8f73a84ecae3975b1efd1aceb11640de39365",
+        "sizeBytes": 687872
+      },
+      {
+        "code": "MACRO-49",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-49.pdf",
+        "sha256": "55e7f512712d5788361951d253fd3b38a97f7d50cf4549d16d16fad307f9aac0",
+        "sizeBytes": 244951
+      }
+    ],
+    "concepts": {
+      "bank-balance-sheets-reserves-and-capital": {
+        "title": "Bank Balance Sheets, Reserves, and Capital",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-20"
+        ],
+        "primaryReviewCode": "MACRO-20",
+        "assets": [
+          {
+            "code": "MACRO-20",
+            "title": "Bank Balance Sheets, Reserves, and Capital",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-20.pdf",
+            "sha256": "075409542219abcb19bae4f8c88ad81ac6fc6d932dc8f97207d97e55aca66060"
+          }
+        ]
+      },
+      "central-bank-and-federal-reserve": {
+        "title": "Central Banking and the Federal Reserve",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-19"
+        ],
+        "primaryReviewCode": "MACRO-19",
+        "assets": [
+          {
+            "code": "MACRO-19",
+            "title": "Central Banking and the Federal Reserve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-19.pdf",
+            "sha256": "438b59b2a7de204dac76b663e06be8188d0d0ae9709972703e76b794c2fed087"
+          }
+        ]
+      },
+      "deposit-creation-and-money-multiplier": {
+        "title": "Deposit Creation and the Money Multiplier",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-49"
+        ],
+        "primaryReviewCode": "MACRO-49",
+        "assets": [
+          {
+            "code": "MACRO-49",
+            "title": "Deposit Creation and the Money Multiplier",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-49.pdf",
+            "sha256": "55e7f512712d5788361951d253fd3b38a97f7d50cf4549d16d16fad307f9aac0"
+          }
+        ]
+      },
+      "fisher-effect": {
+        "title": "Fisher Effect",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-25"
+        ],
+        "primaryReviewCode": "MACRO-25",
+        "assets": [
+          {
+            "code": "MACRO-25",
+            "title": "Fisher Effect",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-25.pdf",
+            "sha256": "0e045685deef232edcb54a4c3c5218a07f1a4b5a5982f74c06b8d8a6ac177510"
+          }
+        ]
+      },
+      "inflation-costs": {
+        "title": "Costs of Inflation",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-26"
+        ],
+        "primaryReviewCode": "MACRO-26",
+        "assets": [
+          {
+            "code": "MACRO-26",
+            "title": "Costs of Inflation",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-26.pdf",
+            "sha256": "c70818f4c81228070085833c09e81587af7f76349132779b1b323875d88014af"
+          }
+        ]
+      },
+      "inflation-tax-and-deflation": {
+        "title": "Inflation Tax and Deflation",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-27"
+        ],
+        "primaryReviewCode": "MACRO-27",
+        "assets": [
+          {
+            "code": "MACRO-27",
+            "title": "Inflation Tax and Deflation",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-27.pdf",
+            "sha256": "1b549de491afa3a380b16aceda66100d8f6239dc8cf59d5fbe34f6ae14501b1b"
+          }
+        ]
+      },
+      "liquidity-preference-and-money-market": {
+        "title": "Liquidity Preference and the Money Market",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-28"
+        ],
+        "primaryReviewCode": "MACRO-28",
+        "assets": [
+          {
+            "code": "MACRO-28",
+            "title": "Liquidity Preference and the Money Market",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-28.pdf",
+            "sha256": "222cd55dea67f0b0d0002df38a934e19bc6bd6abe63572a51710d5ebec6689c7"
+          }
+        ]
+      },
+      "monetary-control-limits": {
+        "title": "Limits of Monetary Control",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-22"
+        ],
+        "primaryReviewCode": "MACRO-22",
+        "assets": [
+          {
+            "code": "MACRO-22",
+            "title": "Limits of Monetary Control",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-22.pdf",
+            "sha256": "fd87e6d4c56fe4e0736369ee64d75c3728f3a597ef344a1b1738d9f7619e9918"
+          }
+        ]
+      },
+      "monetary-neutrality": {
+        "title": "Monetary Neutrality",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-24"
+        ],
+        "primaryReviewCode": "MACRO-24",
+        "assets": [
+          {
+            "code": "MACRO-24",
+            "title": "Monetary Neutrality",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-24.pdf",
+            "sha256": "3ea7367479882ff0efcfdd676b1b254e2fb0642d80344103d865a99731b6d54b"
+          }
+        ]
+      },
+      "monetary-policy-tools": {
+        "title": "Monetary-Policy Tools",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-21"
+        ],
+        "primaryReviewCode": "MACRO-21",
+        "assets": [
+          {
+            "code": "MACRO-21",
+            "title": "Monetary-Policy Tools",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-21.pdf",
+            "sha256": "7d8a9692c52078277f975ebc101855a1c31000cb2661c3965c5844d294aecd38"
+          }
+        ]
+      },
+      "monetary-policy-transmission": {
+        "title": "Monetary-Policy Transmission",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-29"
+        ],
+        "primaryReviewCode": "MACRO-29",
+        "assets": [
+          {
+            "code": "MACRO-29",
+            "title": "Monetary-Policy Transmission",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-29.pdf",
+            "sha256": "075fe3cade6373e7de02ff33cdb8f73a84ecae3975b1efd1aceb11640de39365"
+          }
+        ]
+      },
+      "money-functions-and-measures": {
+        "title": "Money Functions and Measures",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-18"
+        ],
+        "primaryReviewCode": "MACRO-18",
+        "assets": [
+          {
+            "code": "MACRO-18",
+            "title": "Money Functions and Measures",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-18.pdf",
+            "sha256": "c4d08834e62399af19617dd5b73d9b53b6281966d76238ff17f60edb24065e30"
+          }
+        ]
+      },
+      "quantity-theory-of-money": {
+        "title": "Quantity Theory of Money",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-23"
+        ],
+        "primaryReviewCode": "MACRO-23",
+        "assets": [
+          {
+            "code": "MACRO-23",
+            "title": "Quantity Theory of Money",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-23.pdf",
+            "sha256": "6a4b084998f1afda4c5d18a084c7a2cc5af0675a9694cb38e2bbfd946826113b"
+          }
+        ]
+      }
+    },
+    "reviews": {
+      "bank-balance-sheets-reserves-and-capital": {
+        "reviewCodes": [
+          "MACRO-20"
+        ],
+        "primaryReviewCode": "MACRO-20",
+        "assets": [
+          {
+            "code": "MACRO-20",
+            "title": "Bank Balance Sheets, Reserves, and Capital",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-20.pdf",
+            "sha256": "075409542219abcb19bae4f8c88ad81ac6fc6d932dc8f97207d97e55aca66060"
+          }
+        ],
+        "code": "MACRO-20",
+        "title": "Bank Balance Sheets, Reserves, and Capital",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-20.pdf"
+      },
+      "central-bank-and-federal-reserve": {
+        "reviewCodes": [
+          "MACRO-19"
+        ],
+        "primaryReviewCode": "MACRO-19",
+        "assets": [
+          {
+            "code": "MACRO-19",
+            "title": "Central Banking and the Federal Reserve",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-19.pdf",
+            "sha256": "438b59b2a7de204dac76b663e06be8188d0d0ae9709972703e76b794c2fed087"
+          }
+        ],
+        "code": "MACRO-19",
+        "title": "Central Banking and the Federal Reserve",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-19.pdf"
+      },
+      "deposit-creation-and-money-multiplier": {
+        "reviewCodes": [
+          "MACRO-49"
+        ],
+        "primaryReviewCode": "MACRO-49",
+        "assets": [
+          {
+            "code": "MACRO-49",
+            "title": "Deposit Creation and the Money Multiplier",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-49.pdf",
+            "sha256": "55e7f512712d5788361951d253fd3b38a97f7d50cf4549d16d16fad307f9aac0"
+          }
+        ],
+        "code": "MACRO-49",
+        "title": "Deposit Creation and the Money Multiplier",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-49.pdf"
+      },
+      "fisher-effect": {
+        "reviewCodes": [
+          "MACRO-25"
+        ],
+        "primaryReviewCode": "MACRO-25",
+        "assets": [
+          {
+            "code": "MACRO-25",
+            "title": "Fisher Effect",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-25.pdf",
+            "sha256": "0e045685deef232edcb54a4c3c5218a07f1a4b5a5982f74c06b8d8a6ac177510"
+          }
+        ],
+        "code": "MACRO-25",
+        "title": "Fisher Effect",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-25.pdf"
+      },
+      "inflation-costs": {
+        "reviewCodes": [
+          "MACRO-26"
+        ],
+        "primaryReviewCode": "MACRO-26",
+        "assets": [
+          {
+            "code": "MACRO-26",
+            "title": "Costs of Inflation",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-26.pdf",
+            "sha256": "c70818f4c81228070085833c09e81587af7f76349132779b1b323875d88014af"
+          }
+        ],
+        "code": "MACRO-26",
+        "title": "Costs of Inflation",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-26.pdf"
+      },
+      "inflation-tax-and-deflation": {
+        "reviewCodes": [
+          "MACRO-27"
+        ],
+        "primaryReviewCode": "MACRO-27",
+        "assets": [
+          {
+            "code": "MACRO-27",
+            "title": "Inflation Tax and Deflation",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-27.pdf",
+            "sha256": "1b549de491afa3a380b16aceda66100d8f6239dc8cf59d5fbe34f6ae14501b1b"
+          }
+        ],
+        "code": "MACRO-27",
+        "title": "Inflation Tax and Deflation",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-27.pdf"
+      },
+      "liquidity-preference-and-money-market": {
+        "reviewCodes": [
+          "MACRO-28"
+        ],
+        "primaryReviewCode": "MACRO-28",
+        "assets": [
+          {
+            "code": "MACRO-28",
+            "title": "Liquidity Preference and the Money Market",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-28.pdf",
+            "sha256": "222cd55dea67f0b0d0002df38a934e19bc6bd6abe63572a51710d5ebec6689c7"
+          }
+        ],
+        "code": "MACRO-28",
+        "title": "Liquidity Preference and the Money Market",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-28.pdf"
+      },
+      "monetary-control-limits": {
+        "reviewCodes": [
+          "MACRO-22"
+        ],
+        "primaryReviewCode": "MACRO-22",
+        "assets": [
+          {
+            "code": "MACRO-22",
+            "title": "Limits of Monetary Control",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-22.pdf",
+            "sha256": "fd87e6d4c56fe4e0736369ee64d75c3728f3a597ef344a1b1738d9f7619e9918"
+          }
+        ],
+        "code": "MACRO-22",
+        "title": "Limits of Monetary Control",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-22.pdf"
+      },
+      "monetary-neutrality": {
+        "reviewCodes": [
+          "MACRO-24"
+        ],
+        "primaryReviewCode": "MACRO-24",
+        "assets": [
+          {
+            "code": "MACRO-24",
+            "title": "Monetary Neutrality",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-24.pdf",
+            "sha256": "3ea7367479882ff0efcfdd676b1b254e2fb0642d80344103d865a99731b6d54b"
+          }
+        ],
+        "code": "MACRO-24",
+        "title": "Monetary Neutrality",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-24.pdf"
+      },
+      "monetary-policy-tools": {
+        "reviewCodes": [
+          "MACRO-21"
+        ],
+        "primaryReviewCode": "MACRO-21",
+        "assets": [
+          {
+            "code": "MACRO-21",
+            "title": "Monetary-Policy Tools",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-21.pdf",
+            "sha256": "7d8a9692c52078277f975ebc101855a1c31000cb2661c3965c5844d294aecd38"
+          }
+        ],
+        "code": "MACRO-21",
+        "title": "Monetary-Policy Tools",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-21.pdf"
+      },
+      "monetary-policy-transmission": {
+        "reviewCodes": [
+          "MACRO-29"
+        ],
+        "primaryReviewCode": "MACRO-29",
+        "assets": [
+          {
+            "code": "MACRO-29",
+            "title": "Monetary-Policy Transmission",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-29.pdf",
+            "sha256": "075fe3cade6373e7de02ff33cdb8f73a84ecae3975b1efd1aceb11640de39365"
+          }
+        ],
+        "code": "MACRO-29",
+        "title": "Monetary-Policy Transmission",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-29.pdf"
+      },
+      "money-functions-and-measures": {
+        "reviewCodes": [
+          "MACRO-18"
+        ],
+        "primaryReviewCode": "MACRO-18",
+        "assets": [
+          {
+            "code": "MACRO-18",
+            "title": "Money Functions and Measures",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-18.pdf",
+            "sha256": "c4d08834e62399af19617dd5b73d9b53b6281966d76238ff17f60edb24065e30"
+          }
+        ],
+        "code": "MACRO-18",
+        "title": "Money Functions and Measures",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-18.pdf"
+      },
+      "quantity-theory-of-money": {
+        "reviewCodes": [
+          "MACRO-23"
+        ],
+        "primaryReviewCode": "MACRO-23",
+        "assets": [
+          {
+            "code": "MACRO-23",
+            "title": "Quantity Theory of Money",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-23.pdf",
+            "sha256": "6a4b084998f1afda4c5d18a084c7a2cc5af0675a9694cb38e2bbfd946826113b"
+          }
+        ],
+        "code": "MACRO-23",
+        "title": "Quantity Theory of Money",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-23.pdf"
+      }
+    },
+    "evidenceRoutes": {
+      "questionToConceptIds": {
+        "ECON-SP-EASY-1": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-EASY-2": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-EASY-4": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-EASY-5": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-EASY-6": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-1": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-2": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-3": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-4": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-5": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-6": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-7": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-MEDIUM-100": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-MEDIUM-101": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-100": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-101": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-102": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-103": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-106": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-107": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-HARD-200": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-200": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-201": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-203": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-H-001": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-H-002": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-300": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-EL-001": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-EL-002": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-EL-003": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-9011": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-9012": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-9023": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-L-001": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-L-002": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-L-003": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-104": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-105": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-202": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-2000": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-2001": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-2002": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-B2-001": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-B2-002": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-B2-003": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-B3-001": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-B3-002": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-B3-003": [
+          "money-functions-and-measures"
+        ],
+        "LG-Q-9110": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-LB-001": [
+          "money-functions-and-measures"
+        ],
+        "P52B-S3-MFM-LB-002": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-COMMODITY-VS-FIAT-MONEY-5067": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-DISTINGUISH-M1-M2-5002": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-DISTINGUISH-M1-M2-5003": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-IDENTIFY-MONEY-FUNCTIONS-5000": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-IDENTIFY-MONEY-FUNCTIONS-5001": [
+          "money-functions-and-measures"
+        ],
+        "LG-R-5000": [
+          "money-functions-and-measures"
+        ],
+        "LG-R-5001": [
+          "money-functions-and-measures"
+        ],
+        "LG-R-5002": [
+          "money-functions-and-measures"
+        ],
+        "LG-R-5003": [
+          "money-functions-and-measures"
+        ],
+        "LG-R-5004": [
+          "money-functions-and-measures"
+        ],
+        "LG-R-5005": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-DISTINGUISH-M1-M2-6001": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-IDENTIFY-MONEY-FUNCTIONS-6000": [
+          "money-functions-and-measures"
+        ],
+        "LG-B-6000": [
+          "money-functions-and-measures"
+        ],
+        "LG-B-6001": [
+          "money-functions-and-measures"
+        ],
+        "ECON-SP-EASY-7": [
+          "central-bank-and-federal-reserve"
+        ],
+        "ECON-SP-EASY-8": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-61": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-62": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-63": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-8": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-9": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-113": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-114": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-115": [
+          "central-bank-and-federal-reserve"
+        ],
+        "P52B-S1-FED-M-001": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-M-001": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-M-002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "P52B-S1-FED-H-001": [
+          "central-bank-and-federal-reserve"
+        ],
+        "P52B-S1-FED-H-002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "P52B-S1-FED-H-003": [
+          "central-bank-and-federal-reserve"
+        ],
+        "P52B-S1-FED-H-004": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-H-001": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-H-002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "P52B-S1-FED-EL-001": [
+          "central-bank-and-federal-reserve"
+        ],
+        "P52B-S1-FED-EL-002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-9020": [
+          "central-bank-and-federal-reserve"
+        ],
+        "P52B-S1-FED-L-001": [
+          "central-bank-and-federal-reserve"
+        ],
+        "P52B-S1-FED-L-002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-L-001": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-L-002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-L-003": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-2003": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-2004": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-2005": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-FB-004": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-FB-005": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-FB-006": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-MB-001": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-MB-002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-MB-003": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-9111": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-LB-001": [
+          "central-bank-and-federal-reserve"
+        ],
+        "PM2C1-FED-LB-002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "ECON-SP-CENTRAL-BANK-ROLE-5004": [
+          "central-bank-and-federal-reserve"
+        ],
+        "ECON-SP-FOMC-ROLE-5005": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-R-5006": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-R-5007": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-R-5008": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-R-5009": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-R-5010": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-R-5011": [
+          "central-bank-and-federal-reserve"
+        ],
+        "ECON-SP-CENTRAL-BANK-ROLE-6002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "ECON-SP-FOMC-ROLE-6003": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-B-6002": [
+          "central-bank-and-federal-reserve"
+        ],
+        "LG-Q-13": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-16": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-E-001": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-E-002": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-E-003": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-M-001": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-M-002": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-M-005": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-221": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-222": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-H-001": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-H-002": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-H-003": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-301": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-302": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-307": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-313": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-318": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-322": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-323": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-326": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-9004": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-9007": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-9016": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "ECON-SP-EASY-10": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "ECON-SP-HARD-201": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "ECON-SP-MEDIUM-102": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "ECON-SP-MEDIUM-103": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-116": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-117": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-118": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-14": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-15": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-204": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-207": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-219": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-220": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-2007": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-B2-001": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-B2-003": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-B3-001": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-B3-002": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-9104": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-Q-9105": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "ECON-SP-CALCULATE-EXCESS-RESERVES-5007": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "ECON-SP-CALCULATE-REQUIRED-RESERVES-5006": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-R-5012": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-R-5014": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-R-5015": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "ECON-SP-CALCULATE-EXCESS-RESERVES-6005": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "ECON-SP-CALCULATE-REQUIRED-RESERVES-6004": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-B-6003": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "LG-B-6004": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "P52A-BANK-E-004": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "P52A-BANK-M-003": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "P52A-BANK-M-004": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "P52A-BANK-M-006": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-223": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "ECON-SP-ELITE-302": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-303": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-308": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-310": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-324": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-9000": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-9005": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-9008": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-9018": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "ECON-SP-EASY-9": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "ECON-SP-HARD-202": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "ECON-SP-MEDIUM-104": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-119": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-120": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-17": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-205": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-206": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-224": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-2006": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-2008": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "P52A-BANK-B2-002": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "P52A-BANK-B3-003": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-9102": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-9109": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-Q-9112": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "ECON-SP-CALCULATE-MONEY-MULTIPLIER-EFFECT-5008": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "ECON-SP-DEPOSIT-CREATION-5070": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-R-5013": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-R-5016": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-R-5017": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "ECON-SP-CALCULATE-MONEY-MULTIPLIER-EFFECT-6006": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LG-B-6005": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "ECON-SP-EASY-11": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-10": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-11": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-12": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-64": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-65": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-66": [
+          "monetary-policy-tools"
+        ],
+        "ECON-SP-MEDIUM-105": [
+          "monetary-policy-tools"
+        ],
+        "ECON-SP-MEDIUM-108": [
+          "monetary-policy-tools"
+        ],
+        "ECON-SP-MEDIUM-109": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-108": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-109": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-110": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-111": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-112": [
+          "monetary-policy-tools"
+        ],
+        "ECON-SP-HARD-205": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-210": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-211": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-212": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-226": [
+          "monetary-policy-tools"
+        ],
+        "P52B-S3-MPT-H-001": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-305": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-306": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-311": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-312": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-316": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-317": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-319": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-320": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9001": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9003": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9010": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9013": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9014": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9017": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-208": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-209": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-2009": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-2010": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-2011": [
+          "monetary-policy-tools"
+        ],
+        "P52B-S3-MPT-B2-001": [
+          "monetary-policy-tools"
+        ],
+        "P52B-S3-MPT-B2-002": [
+          "monetary-policy-tools"
+        ],
+        "P52B-S3-MPT-B2-003": [
+          "monetary-policy-tools"
+        ],
+        "P52B-S3-MPT-B3-001": [
+          "monetary-policy-tools"
+        ],
+        "P52B-S3-MPT-B3-002": [
+          "monetary-policy-tools"
+        ],
+        "P52B-S3-MPT-B3-003": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9100": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9103": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9107": [
+          "monetary-policy-tools"
+        ],
+        "LG-Q-9113": [
+          "monetary-policy-tools"
+        ],
+        "ECON-SP-CHOOSE-FED-TOOL-EFFECT-5009": [
+          "monetary-policy-tools"
+        ],
+        "ECON-SP-CHOOSE-FED-TOOL-EFFECT-5010": [
+          "monetary-policy-tools"
+        ],
+        "ECON-SP-INTEREST-ON-RESERVES-POLICY-5080": [
+          "monetary-policy-tools"
+        ],
+        "LG-R-5018": [
+          "monetary-policy-tools"
+        ],
+        "LG-R-5019": [
+          "monetary-policy-tools"
+        ],
+        "LG-R-5020": [
+          "monetary-policy-tools"
+        ],
+        "LG-R-5021": [
+          "monetary-policy-tools"
+        ],
+        "ECON-SP-CHOOSE-FED-TOOL-EFFECT-6007": [
+          "monetary-policy-tools"
+        ],
+        "LG-B-6006": [
+          "monetary-policy-tools"
+        ],
+        "LG-B-6007": [
+          "monetary-policy-tools"
+        ],
+        "ECON-SP-EASY-12": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-67": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-68": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-69": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-70": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-71": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-MEDIUM-106": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-121": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-122": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-123": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-124": [
+          "monetary-control-limits"
+        ],
+        "PM2C1-MCL-M-001": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-HARD-203": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-213": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-214": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-215": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-216": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-217": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-218": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-225": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-227": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-ELITE-300": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-ELITE-301": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-304": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-309": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-314": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-315": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-321": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-325": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-327": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9002": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9006": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9009": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9015": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9019": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9021": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9022": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9024": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-HARD-204": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-MEDIUM-107": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-2012": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-2013": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-2014": [
+          "monetary-control-limits"
+        ],
+        "PM2C1-MCL-FB-004": [
+          "monetary-control-limits"
+        ],
+        "PM2C1-MCL-FB-005": [
+          "monetary-control-limits"
+        ],
+        "PM2C1-MCL-FB-006": [
+          "monetary-control-limits"
+        ],
+        "PM2C1-MCL-MB-001": [
+          "monetary-control-limits"
+        ],
+        "PM2C1-MCL-MB-002": [
+          "monetary-control-limits"
+        ],
+        "PM2C1-MCL-MB-003": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9101": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9106": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9108": [
+          "monetary-control-limits"
+        ],
+        "LG-Q-9114": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-BANK-LEVERAGE-RISK-5012": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-LIMITS-OF-MONETARY-CONTROL-5011": [
+          "monetary-control-limits"
+        ],
+        "LG-R-5022": [
+          "monetary-control-limits"
+        ],
+        "LG-R-5023": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-BANK-LEVERAGE-RISK-6009": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-LIMITS-OF-MONETARY-CONTROL-6008": [
+          "monetary-control-limits"
+        ],
+        "LG-B-6008": [
+          "monetary-control-limits"
+        ],
+        "ECON-SP-EASY-46": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-37": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-38": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-39": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-40": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-41": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-42": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-E-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-E-002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-E-003": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-E-004": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-E-005": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-MEDIUM-142": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-MEDIUM-143": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-MEDIUM-144": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-MEDIUM-145": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-150": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-151": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-152": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-153": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-154": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-155": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-003": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-004": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-005": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-006": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-007": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-008": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-009": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-M-010": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-HARD-224": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-HARD-226": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-256": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-257": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-258": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-259": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-260": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-H-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-H-002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-H-003": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-H-004": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-H-005": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-ELITE-316": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-ELITE-317": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-ELITE-342": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-ELITE-343": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-356": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-357": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-358": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-359": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-364": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-367": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-368": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-EL-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-EL-002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-EL-003": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-EL-004": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-EL-005": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-LEGENDARY-9015": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-LEGENDARY-9016": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-LEGENDARY-9042": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-LEGENDARY-9043": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-9054": [
+          "liquidity-preference-and-money-market"
+        ],
+        "P52B-S3-LPMM-L-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-L-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-L-002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-L-003": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-L-004": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PG4-MM-L-005": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-L-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-L-002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-L-003": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-L-004": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-L-005": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-L-006": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-L-007": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-4000": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-4001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-4002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "P52B-S3-LPMM-B1-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "P52B-S3-LPMM-B1-002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "P52B-S3-LPMM-B1-003": [
+          "liquidity-preference-and-money-market"
+        ],
+        "P52B-S3-LPMM-B2-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "P52B-S3-LPMM-B2-002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "P52B-S3-LPMM-B2-003": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-9130": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-Q-9137": [
+          "liquidity-preference-and-money-market"
+        ],
+        "P52B-S3-LPMM-LB-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-LB-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-LB-002": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-LIQUIDITY-PREFERENCE-THEORY-5038": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-MONEY-DEMAND-INTEREST-RATE-5039": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-READ-MONEY-MARKET-EQUILIBRIUM-5088": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-R-5040": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-R-5041": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-R-5042": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-R-5043": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-LIQUIDITY-PREFERENCE-THEORY-6029": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-MONEY-DEMAND-INTEREST-RATE-6030": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-B-6017": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LG-B-6018": [
+          "liquidity-preference-and-money-market"
+        ],
+        "PM2C3-LPMM-BR-001": [
+          "liquidity-preference-and-money-market"
+        ],
+        "ECON-SP-EASY-47": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-EASY-48": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-EASY-49": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-EASY-50": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-43": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-44": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-45": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-46": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-47": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-48": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-59": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-E-001": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-E-002": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-MEDIUM-140": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-MEDIUM-141": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-156": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-157": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-158": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-159": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-160": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-161": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-162": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-163": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-M-001": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-M-002": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-M-003": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-M-004": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-HARD-225": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-HARD-227": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-HARD-232": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-261": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-262": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-263": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-264": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-265": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-266": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-267": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-H-001": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-H-002": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-ELITE-318": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-360": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-361": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-365": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-366": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-369": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-EL-001": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-EL-002": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-LEGENDARY-9014": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-LEGENDARY-9022": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-LEGENDARY-9052": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9051": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9052": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9053": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9055": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9056": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9059": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9060": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9061": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9062": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9064": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9072": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-L-001": [
+          "monetary-policy-transmission"
+        ],
+        "PG4-MPT-L-002": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-4003": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-4004": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-4005": [
+          "monetary-policy-transmission"
+        ],
+        "P52B-S4-MPTX-B1-001": [
+          "monetary-policy-transmission"
+        ],
+        "P52B-S4-MPTX-B1-002": [
+          "monetary-policy-transmission"
+        ],
+        "P52B-S4-MPTX-B1-003": [
+          "monetary-policy-transmission"
+        ],
+        "P52B-S4-MPTX-B2-001": [
+          "monetary-policy-transmission"
+        ],
+        "P52B-S4-MPTX-B2-002": [
+          "monetary-policy-transmission"
+        ],
+        "P52B-S4-MPTX-B2-003": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9131": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9132": [
+          "monetary-policy-transmission"
+        ],
+        "LG-Q-9138": [
+          "monetary-policy-transmission"
+        ],
+        "PM2C3-MPTX-LB-001": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-MONETARY-POLICY-AD-SHIFT-5082": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-MONETARY-POLICY-TRANSMISSION-5040": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-READ-MONEY-MARKET-SHIFT-5089": [
+          "monetary-policy-transmission"
+        ],
+        "LG-R-5044": [
+          "monetary-policy-transmission"
+        ],
+        "LG-R-5045": [
+          "monetary-policy-transmission"
+        ],
+        "LG-R-5046": [
+          "monetary-policy-transmission"
+        ],
+        "LG-R-5047": [
+          "monetary-policy-transmission"
+        ],
+        "PM2C3-MPTX-R-001": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-MONETARY-POLICY-TRANSMISSION-6031": [
+          "monetary-policy-transmission"
+        ],
+        "LG-B-6019": [
+          "monetary-policy-transmission"
+        ],
+        "LG-B-6020": [
+          "monetary-policy-transmission"
+        ],
+        "ECON-SP-EASY-13": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-EASY-15": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-EASY-16": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-18": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-19": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-20": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-21": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-22": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-23": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-MEDIUM-111": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-126": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-127": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-128": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-129": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-131": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-133": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-228": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-229": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-230": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-255": [
+          "quantity-theory-of-money"
+        ],
+        "P52B-S4-QTM-H-001": [
+          "quantity-theory-of-money"
+        ],
+        "P52B-S4-QTM-H-002": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-ELITE-304": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-328": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-329": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-330": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-331": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-332": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-333": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-334": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-335": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-337": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-338": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-353": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9025": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9026": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9027": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9028": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9029": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9030": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9031": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9049": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9050": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-HARD-206": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-MEDIUM-110": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-MEDIUM-112": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-125": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-130": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-132": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-231": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-232": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-233": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-234": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-235": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-24": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-3000": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-3001": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-3002": [
+          "quantity-theory-of-money"
+        ],
+        "P52B-S4-QTM-B1-001": [
+          "quantity-theory-of-money"
+        ],
+        "P52B-S4-QTM-B1-002": [
+          "quantity-theory-of-money"
+        ],
+        "P52B-S4-QTM-B1-003": [
+          "quantity-theory-of-money"
+        ],
+        "P52B-S4-QTM-B3-001": [
+          "quantity-theory-of-money"
+        ],
+        "P52B-S4-QTM-B3-002": [
+          "quantity-theory-of-money"
+        ],
+        "P52B-S4-QTM-B3-003": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9116": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9118": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9122": [
+          "quantity-theory-of-money"
+        ],
+        "LG-Q-9126": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-MONEY-GROWTH-TO-INFLATION-5015": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-QUANTITY-EQUATION-5013": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-QUANTITY-EQUATION-5014": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-VALUE-OF-MONEY-5016": [
+          "quantity-theory-of-money"
+        ],
+        "LG-R-5024": [
+          "quantity-theory-of-money"
+        ],
+        "LG-R-5025": [
+          "quantity-theory-of-money"
+        ],
+        "LG-R-5026": [
+          "quantity-theory-of-money"
+        ],
+        "LG-R-5027": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-MONEY-GROWTH-TO-INFLATION-6011": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-QUANTITY-EQUATION-6010": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-VALUE-OF-MONEY-6012": [
+          "quantity-theory-of-money"
+        ],
+        "LG-B-6009": [
+          "quantity-theory-of-money"
+        ],
+        "LG-B-6010": [
+          "quantity-theory-of-money"
+        ],
+        "ECON-SP-EASY-17": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-EASY-18": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-EASY-19": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-25": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-26": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-27": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-28": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-29": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-30": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-E-001": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-MEDIUM-113": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-135": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-137": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-138": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-M-001": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-HARD-207": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-236": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-239": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-240": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-241": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-H-001": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-ELITE-303": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-ELITE-305": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-336": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-339": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-340": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-354": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-LEGENDARY-9027": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-LEGENDARY-9051": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-9032": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-9033": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-9034": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-9045": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-9046": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-134": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-136": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-237": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-238": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-3003": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-3004": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-3005": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-EB-001": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-EB-002": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-EB-003": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-FB-004": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-FB-005": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-FB-006": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-9115": [
+          "monetary-neutrality"
+        ],
+        "LG-Q-9123": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-LB-001": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-MONETARY-NEUTRALITY-5019": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-NOMINAL-VS-REAL-VARIABLES-5017": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-NOMINAL-VS-REAL-VARIABLES-5018": [
+          "monetary-neutrality"
+        ],
+        "LG-R-5028": [
+          "monetary-neutrality"
+        ],
+        "LG-R-5029": [
+          "monetary-neutrality"
+        ],
+        "LG-R-5030": [
+          "monetary-neutrality"
+        ],
+        "LG-R-5031": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-MONETARY-NEUTRALITY-6014": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-NOMINAL-VS-REAL-VARIABLES-6013": [
+          "monetary-neutrality"
+        ],
+        "LG-B-6011": [
+          "monetary-neutrality"
+        ],
+        "LG-B-6012": [
+          "monetary-neutrality"
+        ],
+        "PM2C2-NEUT-BR-001": [
+          "monetary-neutrality"
+        ],
+        "ECON-SP-EASY-21": [
+          "fisher-effect"
+        ],
+        "LG-Q-31": [
+          "fisher-effect"
+        ],
+        "LG-Q-72": [
+          "fisher-effect"
+        ],
+        "LG-Q-74": [
+          "fisher-effect"
+        ],
+        "LG-Q-75": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-E-001": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-E-002": [
+          "fisher-effect"
+        ],
+        "LG-Q-141": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-M-001": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-M-002": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-M-003": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-H-001": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-H-002": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-H-003": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-H-004": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-H-005": [
+          "fisher-effect"
+        ],
+        "ECON-SP-ELITE-306": [
+          "fisher-effect"
+        ],
+        "LG-Q-341": [
+          "fisher-effect"
+        ],
+        "LG-Q-342": [
+          "fisher-effect"
+        ],
+        "LG-Q-9035": [
+          "fisher-effect"
+        ],
+        "LG-Q-9036": [
+          "fisher-effect"
+        ],
+        "LG-Q-9047": [
+          "fisher-effect"
+        ],
+        "LG-Q-9048": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-L-001": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-L-002": [
+          "fisher-effect"
+        ],
+        "ECON-SP-HARD-209": [
+          "fisher-effect"
+        ],
+        "ECON-SP-MEDIUM-115": [
+          "fisher-effect"
+        ],
+        "LG-Q-139": [
+          "fisher-effect"
+        ],
+        "LG-Q-140": [
+          "fisher-effect"
+        ],
+        "LG-Q-242": [
+          "fisher-effect"
+        ],
+        "LG-Q-243": [
+          "fisher-effect"
+        ],
+        "LG-Q-32": [
+          "fisher-effect"
+        ],
+        "LG-Q-73": [
+          "fisher-effect"
+        ],
+        "LG-Q-3006": [
+          "fisher-effect"
+        ],
+        "LG-Q-3007": [
+          "fisher-effect"
+        ],
+        "LG-Q-3008": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-EB-001": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-EB-002": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-EB-003": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-FB-004": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-FB-005": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-FB-006": [
+          "fisher-effect"
+        ],
+        "LG-Q-9117": [
+          "fisher-effect"
+        ],
+        "LG-Q-9127": [
+          "fisher-effect"
+        ],
+        "LG-Q-9128": [
+          "fisher-effect"
+        ],
+        "ECON-SP-FISHER-EFFECT-5020": [
+          "fisher-effect"
+        ],
+        "ECON-SP-NOMINAL-REAL-INTEREST-RATE-5083": [
+          "fisher-effect"
+        ],
+        "LG-R-5032": [
+          "fisher-effect"
+        ],
+        "LG-R-5033": [
+          "fisher-effect"
+        ],
+        "ECON-SP-FISHER-EFFECT-6015": [
+          "fisher-effect"
+        ],
+        "LG-B-6013": [
+          "fisher-effect"
+        ],
+        "PM2C2-FISH-BR-001": [
+          "fisher-effect"
+        ],
+        "ECON-SP-EASY-22": [
+          "inflation-costs"
+        ],
+        "ECON-SP-EASY-23": [
+          "inflation-costs"
+        ],
+        "LG-Q-33": [
+          "inflation-costs"
+        ],
+        "LG-Q-34": [
+          "inflation-costs"
+        ],
+        "LG-Q-35": [
+          "inflation-costs"
+        ],
+        "LG-Q-36": [
+          "inflation-costs"
+        ],
+        "ECON-SP-MEDIUM-116": [
+          "inflation-costs"
+        ],
+        "ECON-SP-MEDIUM-117": [
+          "inflation-costs"
+        ],
+        "ECON-SP-MEDIUM-118": [
+          "inflation-costs"
+        ],
+        "LG-Q-142": [
+          "inflation-costs"
+        ],
+        "LG-Q-143": [
+          "inflation-costs"
+        ],
+        "LG-Q-144": [
+          "inflation-costs"
+        ],
+        "LG-Q-145": [
+          "inflation-costs"
+        ],
+        "PM2C2-ICOST-M-001": [
+          "inflation-costs"
+        ],
+        "ECON-SP-HARD-208": [
+          "inflation-costs"
+        ],
+        "LG-Q-244": [
+          "inflation-costs"
+        ],
+        "LG-Q-245": [
+          "inflation-costs"
+        ],
+        "LG-Q-246": [
+          "inflation-costs"
+        ],
+        "LG-Q-247": [
+          "inflation-costs"
+        ],
+        "LG-Q-248": [
+          "inflation-costs"
+        ],
+        "LG-Q-254": [
+          "inflation-costs"
+        ],
+        "PM2C2-ICOST-H-001": [
+          "inflation-costs"
+        ],
+        "LG-Q-343": [
+          "inflation-costs"
+        ],
+        "LG-Q-344": [
+          "inflation-costs"
+        ],
+        "LG-Q-345": [
+          "inflation-costs"
+        ],
+        "LG-Q-346": [
+          "inflation-costs"
+        ],
+        "LG-Q-347": [
+          "inflation-costs"
+        ],
+        "LG-Q-355": [
+          "inflation-costs"
+        ],
+        "LG-Q-9037": [
+          "inflation-costs"
+        ],
+        "LG-Q-9038": [
+          "inflation-costs"
+        ],
+        "LG-Q-9042": [
+          "inflation-costs"
+        ],
+        "LG-Q-9043": [
+          "inflation-costs"
+        ],
+        "LG-Q-9044": [
+          "inflation-costs"
+        ],
+        "PM2C2-ICOST-L-001": [
+          "inflation-costs"
+        ],
+        "LG-Q-3009": [
+          "inflation-costs"
+        ],
+        "LG-Q-3010": [
+          "inflation-costs"
+        ],
+        "LG-Q-3011": [
+          "inflation-costs"
+        ],
+        "PM2C2-ICOST-EB-001": [
+          "inflation-costs"
+        ],
+        "PM2C2-ICOST-EB-002": [
+          "inflation-costs"
+        ],
+        "PM2C2-ICOST-EB-003": [
+          "inflation-costs"
+        ],
+        "PM2C2-ICOST-FB-004": [
+          "inflation-costs"
+        ],
+        "PM2C2-ICOST-FB-005": [
+          "inflation-costs"
+        ],
+        "PM2C2-ICOST-FB-006": [
+          "inflation-costs"
+        ],
+        "LG-Q-9119": [
+          "inflation-costs"
+        ],
+        "LG-Q-9120": [
+          "inflation-costs"
+        ],
+        "LG-Q-9125": [
+          "inflation-costs"
+        ],
+        "LG-Q-9129": [
+          "inflation-costs"
+        ],
+        "ECON-SP-INFLATION-REDISTRIBUTION-5079": [
+          "inflation-costs"
+        ],
+        "ECON-SP-MENU-COSTS-5022": [
+          "inflation-costs"
+        ],
+        "ECON-SP-SHOELEATHER-COSTS-5021": [
+          "inflation-costs"
+        ],
+        "LG-R-5034": [
+          "inflation-costs"
+        ],
+        "LG-R-5035": [
+          "inflation-costs"
+        ],
+        "LG-R-5036": [
+          "inflation-costs"
+        ],
+        "LG-R-5037": [
+          "inflation-costs"
+        ],
+        "ECON-SP-MENU-COSTS-6017": [
+          "inflation-costs"
+        ],
+        "ECON-SP-SHOELEATHER-COSTS-6016": [
+          "inflation-costs"
+        ],
+        "LG-B-6014": [
+          "inflation-costs"
+        ],
+        "LG-B-6015": [
+          "inflation-costs"
+        ],
+        "LG-Q-76": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-77": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-78": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-79": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-80": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-E-001": [
+          "inflation-tax-and-deflation"
+        ],
+        "ECON-SP-MEDIUM-119": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-146": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-147": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-148": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-149": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-M-001": [
+          "inflation-tax-and-deflation"
+        ],
+        "ECON-SP-HARD-210": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-249": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-250": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-251": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-253": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-H-001": [
+          "inflation-tax-and-deflation"
+        ],
+        "ECON-SP-ELITE-307": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-348": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-349": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-350": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-351": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-352": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-9039": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-9040": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-9041": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-L-001": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-L-002": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-L-003": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-252": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-3012": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-3013": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-3014": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-EB-001": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-EB-002": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-EB-003": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-FB-004": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-FB-005": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-FB-006": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-9121": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-Q-9124": [
+          "inflation-tax-and-deflation"
+        ],
+        "PM2C2-ITAX-LB-001": [
+          "inflation-tax-and-deflation"
+        ],
+        "ECON-SP-INFLATION-TAX-5023": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-R-5038": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-R-5039": [
+          "inflation-tax-and-deflation"
+        ],
+        "ECON-SP-INFLATION-TAX-6018": [
+          "inflation-tax-and-deflation"
+        ],
+        "LG-B-6016": [
+          "inflation-tax-and-deflation"
+        ]
+      },
+      "tagToConceptIds": {
+        "money_functions": [
+          "money-functions-and-measures"
+        ],
+        "m1_m2": [
+          "money-functions-and-measures"
+        ],
+        "forms_of_money": [
+          "money-functions-and-measures"
+        ],
+        "money_measures": [
+          "money-functions-and-measures"
+        ],
+        "federal_reserve": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fomc": [
+          "central-bank-and-federal-reserve"
+        ],
+        "central_banking": [
+          "central-bank-and-federal-reserve"
+        ],
+        "banking_system": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier",
+          "monetary-control-limits"
+        ],
+        "money_multiplier_banking": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier"
+        ],
+        "bank_money_creation": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier"
+        ],
+        "bank_capital": [
+          "bank-balance-sheets-reserves-and-capital",
+          "monetary-control-limits"
+        ],
+        "required_reserves": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier",
+          "monetary-policy-tools"
+        ],
+        "excess_reserves": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "fractional_reserve": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "money_creation": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "money_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "open_market_operations": [
+          "monetary-policy-tools"
+        ],
+        "monetary_policy_tools": [
+          "monetary-policy-tools"
+        ],
+        "interest_on_reserves": [
+          "monetary-policy-tools"
+        ],
+        "limits_monetary_control": [
+          "monetary-control-limits"
+        ],
+        "monetary_control_limits": [
+          "monetary-control-limits"
+        ],
+        "liquidity_preference": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_demand": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_market": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_market_ad": [
+          "liquidity-preference-and-money-market"
+        ],
+        "interest_rate_effect": [
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission"
+        ],
+        "monetary_policy": [
+          "monetary-policy-transmission"
+        ],
+        "money_supply_interest_rate": [
+          "monetary-policy-transmission"
+        ],
+        "monetary_policy_ad": [
+          "monetary-policy-transmission"
+        ],
+        "liquidity_trap": [
+          "monetary-policy-transmission"
+        ],
+        "monetary_policy_transmission": [
+          "monetary-policy-transmission"
+        ],
+        "policy_transmission": [
+          "monetary-policy-transmission"
+        ],
+        "quantity_theory": [
+          "quantity-theory-of-money",
+          "inflation-tax-and-deflation"
+        ],
+        "money_growth_inflation": [
+          "quantity-theory-of-money"
+        ],
+        "value_of_money": [
+          "quantity-theory-of-money",
+          "monetary-neutrality"
+        ],
+        "quantity_equation": [
+          "quantity-theory-of-money",
+          "inflation-costs"
+        ],
+        "money_supply_demand": [
+          "quantity-theory-of-money"
+        ],
+        "velocity": [
+          "quantity-theory-of-money"
+        ],
+        "real_nominal_variables": [
+          "monetary-neutrality"
+        ],
+        "monetary_neutrality": [
+          "monetary-neutrality"
+        ],
+        "nominal_real": [
+          "monetary-neutrality"
+        ],
+        "classical_dichotomy": [
+          "monetary-neutrality"
+        ],
+        "fisher_effect": [
+          "fisher-effect"
+        ],
+        "inflation_costs": [
+          "inflation-costs"
+        ],
+        "inflation_redistribution": [
+          "inflation-costs"
+        ],
+        "inflation_policy": [
+          "inflation-tax-and-deflation"
+        ],
+        "inflation_tax": [
+          "inflation-tax-and-deflation"
+        ]
+      },
+      "repairSkillToConceptIds": {
+        "identify_money_functions": [
+          "money-functions-and-measures"
+        ],
+        "distinguish_m1_m2": [
+          "money-functions-and-measures"
+        ],
+        "commodity_vs_fiat_money": [
+          "money-functions-and-measures"
+        ],
+        "functions_of_money": [
+          "money-functions-and-measures"
+        ],
+        "fiat_money_definition": [
+          "money-functions-and-measures"
+        ],
+        "commodity_money_definition": [
+          "money-functions-and-measures"
+        ],
+        "m1_components": [
+          "money-functions-and-measures"
+        ],
+        "m2_near_money": [
+          "money-functions-and-measures"
+        ],
+        "unit_of_account": [
+          "money-functions-and-measures"
+        ],
+        "store_of_value": [
+          "money-functions-and-measures"
+        ],
+        "medium_of_exchange": [
+          "money-functions-and-measures"
+        ],
+        "money_supply_counting_rules": [
+          "money-functions-and-measures"
+        ],
+        "public_currency_holdings": [
+          "money-functions-and-measures",
+          "monetary-control-limits"
+        ],
+        "trace_reclassification_between_m1_m2": [
+          "money-functions-and-measures"
+        ],
+        "m1_m2_components": [
+          "money-functions-and-measures"
+        ],
+        "classify_payment_technology": [
+          "money-functions-and-measures"
+        ],
+        "m2_components": [
+          "money-functions-and-measures"
+        ],
+        "calculate_m1_m2_reclassification": [
+          "money-functions-and-measures"
+        ],
+        "avoid_money_measure_double_counting": [
+          "money-functions-and-measures"
+        ],
+        "fiat_money_acceptance": [
+          "money-functions-and-measures"
+        ],
+        "trace_m1_component_transfer": [
+          "money-functions-and-measures"
+        ],
+        "money_vs_wealth_income": [
+          "money-functions-and-measures"
+        ],
+        "central_bank_role": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fomc_role": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_lender_of_last_resort": [
+          "central-bank-and-federal-reserve"
+        ],
+        "discount_rate_definition": [
+          "central-bank-and-federal-reserve"
+        ],
+        "federal_funds_rate_definition": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_role": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_independence": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_treasury_distinction": [
+          "central-bank-and-federal-reserve"
+        ],
+        "central_commercial_money": [
+          "central-bank-and-federal-reserve"
+        ],
+        "lender_of_last_resort_design": [
+          "central-bank-and-federal-reserve"
+        ],
+        "independence_accountability": [
+          "central-bank-and-federal-reserve"
+        ],
+        "central_bank_balance_sheet": [
+          "central-bank-and-federal-reserve"
+        ],
+        "unconventional_monetary_policy": [
+          "central-bank-and-federal-reserve"
+        ],
+        "liquidity_solvency": [
+          "central-bank-and-federal-reserve"
+        ],
+        "reserve_supply_vs_lending": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fiscal_dominance": [
+          "central-bank-and-federal-reserve"
+        ],
+        "lender_of_last_resort_moral_hazard": [
+          "central-bank-and-federal-reserve"
+        ],
+        "time_inconsistency_independence": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fractional_reserve_definition": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier"
+        ],
+        "money_multiplier_reserve_ratio": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier"
+        ],
+        "bank_capital_assets_liabilities": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_required_reserves": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "trace_bank_loan_balance_sheet": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_excess_reserves": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "identify_lending_capacity": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_bank_capital": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "bank_leverage_risk": [
+          "bank-balance-sheets-reserves-and-capital",
+          "monetary-control-limits"
+        ],
+        "loan_reserve_balance_sheet": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "diagnose_reserve_position": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_capital_after_asset_loss": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "apply_reserve_ratio": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "excess_reserves_formula": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "excess_reserves_lending": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "bank_capital_loss_absorption": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "required_reserves_formula": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "reserve_shortfall_constraint": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_lending_capacity": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "infer_reserve_ratio_from_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "apply_fractional_reserve_logic": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "loan_redeposit": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "fractional_reserve_money_creation": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "deposit_creation": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "money_multiplier_application": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "simple_money_multiplier_formula": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "calculate_money_multiplier_effect": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "apply_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "choose_fed_tool_effect": [
+          "monetary-policy-tools"
+        ],
+        "fed_buys_bonds_money_supply": [
+          "monetary-policy-tools"
+        ],
+        "fed_sells_bonds_money_supply": [
+          "monetary-policy-tools"
+        ],
+        "discount_rate_effect": [
+          "monetary-policy-tools"
+        ],
+        "reserve_requirement_effect": [
+          "monetary-policy-tools"
+        ],
+        "interest_on_reserves_policy": [
+          "monetary-policy-tools"
+        ],
+        "interest_on_reserves_role": [
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "monetary_policy_tools_direction": [
+          "monetary-policy-tools"
+        ],
+        "contractionary_monetary_policy_tools": [
+          "monetary-policy-tools"
+        ],
+        "expansionary_monetary_policy_tools": [
+          "monetary-policy-tools"
+        ],
+        "select_policy_tool": [
+          "monetary-policy-tools"
+        ],
+        "analyze_mixed_policy_tools": [
+          "monetary-policy-tools"
+        ],
+        "diagnose_policy_constraint": [
+          "monetary-policy-tools"
+        ],
+        "limits_of_monetary_control": [
+          "monetary-control-limits"
+        ],
+        "actual_vs_simple_multiplier": [
+          "monetary-control-limits"
+        ],
+        "weak_loan_demand": [
+          "monetary-control-limits"
+        ],
+        "money_vs_real_resources": [
+          "monetary-control-limits"
+        ],
+        "liquidity_preference_theory": [
+          "liquidity-preference-and-money-market"
+        ],
+        "liquidity_preference_definition": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_supply_fixed_by_central_bank": [
+          "liquidity-preference-and-money-market"
+        ],
+        "opportunity_cost_holding_money": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_demand_interest_rate_inverse": [
+          "liquidity-preference-and-money-market"
+        ],
+        "income_money_demand_positive": [
+          "liquidity-preference-and-money-market"
+        ],
+        "price_level_money_demand_positive": [
+          "liquidity-preference-and-money-market"
+        ],
+        "read_money_market_equilibrium": [
+          "liquidity-preference-and-money-market"
+        ],
+        "read_money_market_shift": [
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission"
+        ],
+        "simultaneous_money_shifts": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_money_demand_shift_to_investment": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_demand_interest_rate": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_demand_shift_interest_rate": [
+          "liquidity-preference-and-money-market"
+        ],
+        "identify_core_model": [
+          "liquidity-preference-and-money-market"
+        ],
+        "predict_money_market_equilibrium": [
+          "liquidity-preference-and-money-market"
+        ],
+        "identify_shift_result": [
+          "liquidity-preference-and-money-market"
+        ],
+        "connect_money_market_to_ad_slope": [
+          "liquidity-preference-and-money-market"
+        ],
+        "interest_rate_effect_ad_slope": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_market_policy_offset": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_demand_shift_vs_movement": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_market_offsetting_shifts": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_market_disequilibrium": [
+          "liquidity-preference-and-money-market"
+        ],
+        "bridge_money_market_transmission": [
+          "liquidity-preference-and-money-market"
+        ],
+        "infer_money_supply_offset": [
+          "liquidity-preference-and-money-market"
+        ],
+        "stabilize_interest_rate_after_md_shift": [
+          "liquidity-preference-and-money-market"
+        ],
+        "explain_money_demand_shift": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_price_level_to_interest_rate": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_income_to_interest_rate": [
+          "liquidity-preference-and-money-market"
+        ],
+        "monetary_policy_transmission": [
+          "monetary-policy-transmission"
+        ],
+        "monetary_policy_ad_shift": [
+          "monetary-policy-transmission"
+        ],
+        "read_ad_shift": [
+          "monetary-policy-transmission"
+        ],
+        "expansionary_monetary_policy_chain": [
+          "monetary-policy-transmission"
+        ],
+        "contractionary_monetary_policy_chain": [
+          "monetary-policy-transmission"
+        ],
+        "investment_interest_rate_inverse": [
+          "monetary-policy-transmission"
+        ],
+        "monetary_policy_ad_direction": [
+          "monetary-policy-transmission"
+        ],
+        "liquidity_trap_definition": [
+          "monetary-policy-transmission"
+        ],
+        "trace_expansionary_monetary_policy_graph": [
+          "monetary-policy-transmission"
+        ],
+        "trace_contractionary_monetary_policy_graph": [
+          "monetary-policy-transmission"
+        ],
+        "money_market_to_ad_chain": [
+          "monetary-policy-transmission"
+        ],
+        "read_output_change_from_ad_shift": [
+          "monetary-policy-transmission"
+        ],
+        "stabilization_response_recession": [
+          "monetary-policy-transmission"
+        ],
+        "stabilization_response_overheating": [
+          "monetary-policy-transmission"
+        ],
+        "monetary_policy_transmission_limits": [
+          "monetary-policy-transmission"
+        ],
+        "distinguish_money_market_and_ad_model": [
+          "monetary-policy-transmission"
+        ],
+        "read_graph_and_evaluate_transmission_size": [
+          "monetary-policy-transmission"
+        ],
+        "open_market_purchase_transmission": [
+          "monetary-policy-transmission"
+        ],
+        "interest_sensitive_spending_channel": [
+          "monetary-policy-transmission"
+        ],
+        "money_supply_shift_interest_rate": [
+          "monetary-policy-transmission"
+        ],
+        "reserve_hoarding_transmission_limit": [
+          "monetary-policy-transmission"
+        ],
+        "investment_expectations_transmission": [
+          "monetary-policy-transmission"
+        ],
+        "contractionary_transmission_sequence": [
+          "monetary-policy-transmission"
+        ],
+        "crowding_out_net_effect": [
+          "monetary-policy-transmission"
+        ],
+        "transmission_strength": [
+          "monetary-policy-transmission"
+        ],
+        "omitted_transmission_link": [
+          "monetary-policy-transmission"
+        ],
+        "quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "money_growth_to_inflation": [
+          "quantity-theory-of-money"
+        ],
+        "value_of_money": [
+          "quantity-theory-of-money"
+        ],
+        "value_of_money_formula": [
+          "quantity-theory-of-money"
+        ],
+        "money_value_price_level_inverse": [
+          "quantity-theory-of-money",
+          "monetary-neutrality",
+          "inflation-tax-and-deflation"
+        ],
+        "quantity_theory_basics": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_equation_formula": [
+          "quantity-theory-of-money"
+        ],
+        "nominal_gdp_py": [
+          "quantity-theory-of-money"
+        ],
+        "money_supply_fixed_by_fed": [
+          "quantity-theory-of-money"
+        ],
+        "monetary_injection_graph": [
+          "quantity-theory-of-money"
+        ],
+        "money_growth_inflation_link": [
+          "quantity-theory-of-money"
+        ],
+        "money_demand_price_level_relationship": [
+          "quantity-theory-of-money"
+        ],
+        "monetary_injection_adjustment": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_theory_and_neutrality": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_equation_with_velocity_change": [
+          "quantity-theory-of-money"
+        ],
+        "price_level_change_vs_inflation": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_theory_growth_rates": [
+          "quantity-theory-of-money",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "solve_quantity_equation_for_p": [
+          "quantity-theory-of-money"
+        ],
+        "velocity_formula": [
+          "quantity-theory-of-money"
+        ],
+        "velocity_definition": [
+          "quantity-theory-of-money"
+        ],
+        "basic_quantity_growth_calculation": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_equation_output_price_tradeoff": [
+          "quantity-theory-of-money"
+        ],
+        "advanced_quantity_growth_calculation": [
+          "quantity-theory-of-money"
+        ],
+        "nominal_gdp_growth_from_mv": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_theory_long_run_neutrality": [
+          "quantity-theory-of-money"
+        ],
+        "nominal_vs_real_variables": [
+          "monetary-neutrality"
+        ],
+        "monetary_neutrality": [
+          "monetary-neutrality"
+        ],
+        "nominal_variable_definition": [
+          "monetary-neutrality"
+        ],
+        "real_variable_definition": [
+          "monetary-neutrality"
+        ],
+        "nominal_vs_real_examples": [
+          "monetary-neutrality"
+        ],
+        "classical_dichotomy_definition": [
+          "monetary-neutrality"
+        ],
+        "monetary_neutrality_definition": [
+          "monetary-neutrality"
+        ],
+        "nominal_real_adjustment": [
+          "monetary-neutrality"
+        ],
+        "real_wage_formula": [
+          "monetary-neutrality"
+        ],
+        "long_run_neutrality_boundary": [
+          "monetary-neutrality"
+        ],
+        "real_wage_growth_logic": [
+          "monetary-neutrality"
+        ],
+        "nominal_real_gdp_price_growth": [
+          "monetary-neutrality"
+        ],
+        "relative_price_calculation": [
+          "monetary-neutrality"
+        ],
+        "neutrality_level_vs_growth": [
+          "monetary-neutrality"
+        ],
+        "nominal_real_interest_rate": [
+          "fisher-effect"
+        ],
+        "fisher_effect_basics": [
+          "fisher-effect",
+          "inflation-tax-and-deflation"
+        ],
+        "fisher_equation_simple": [
+          "fisher-effect"
+        ],
+        "fisher_expected_inflation": [
+          "fisher-effect"
+        ],
+        "fisher_ex_ante_contract": [
+          "fisher-effect"
+        ],
+        "fisher_holding_real_rate": [
+          "fisher-effect"
+        ],
+        "realized_real_interest_rate": [
+          "fisher-effect"
+        ],
+        "fisher_effect": [
+          "fisher-effect"
+        ],
+        "solve_fisher_equation_real_rate": [
+          "fisher-effect"
+        ],
+        "shoeleather_costs": [
+          "inflation-costs"
+        ],
+        "menu_costs": [
+          "inflation-costs"
+        ],
+        "shoeleather_cost_definition": [
+          "inflation-costs"
+        ],
+        "menu_cost_definition": [
+          "inflation-costs"
+        ],
+        "unexpected_inflation_debtors_creditors": [
+          "inflation-costs"
+        ],
+        "inflation_redistribution": [
+          "inflation-costs"
+        ],
+        "expected_inflation_costs": [
+          "inflation-costs"
+        ],
+        "relative_price_distortions": [
+          "inflation-costs"
+        ],
+        "inflation_costs_overview": [
+          "inflation-costs"
+        ],
+        "unexpected_inflation_redistribution": [
+          "inflation-costs"
+        ],
+        "inflation_cost_mechanism": [
+          "inflation-costs"
+        ],
+        "inflation_tax_definition": [
+          "inflation-tax-and-deflation"
+        ],
+        "hyperinflation_money_growth": [
+          "inflation-tax-and-deflation"
+        ],
+        "deflation_definition": [
+          "inflation-tax-and-deflation"
+        ],
+        "inflation_tax_policy_risk": [
+          "inflation-tax-and-deflation"
+        ],
+        "inflation_tax_mechanism": [
+          "inflation-tax-and-deflation"
+        ],
+        "inflation_tax": [
+          "inflation-tax-and-deflation"
+        ],
+        "disinflation_vs_deflation": [
+          "inflation-tax-and-deflation"
+        ],
+        "deflation_vs_disinflation": [
+          "inflation-tax-and-deflation"
+        ],
+        "deflation_debt_burden": [
+          "inflation-tax-and-deflation"
+        ],
+        "seigniorage_feedback": [
+          "inflation-tax-and-deflation"
+        ]
+      },
+      "primarySkillToConceptIds": {
+        "identify_money_functions": [
+          "money-functions-and-measures"
+        ],
+        "distinguish_m1_m2": [
+          "money-functions-and-measures"
+        ],
+        "commodity_vs_fiat_money": [
+          "money-functions-and-measures"
+        ],
+        "compare_concepts": [
+          "money-functions-and-measures"
+        ],
+        "classify_component": [
+          "money-functions-and-measures"
+        ],
+        "correct_misconception": [
+          "money-functions-and-measures",
+          "monetary-control-limits"
+        ],
+        "identify_function_in_context": [
+          "money-functions-and-measures"
+        ],
+        "explain_role_of_money": [
+          "money-functions-and-measures"
+        ],
+        "explain_measurement_rule": [
+          "money-functions-and-measures"
+        ],
+        "match_concepts_to_contexts": [
+          "money-functions-and-measures"
+        ],
+        "classify_money_type": [
+          "money-functions-and-measures"
+        ],
+        "connect_money_measure_to_lending": [
+          "money-functions-and-measures"
+        ],
+        "trace_reclassification_between_m1_m2": [
+          "money-functions-and-measures"
+        ],
+        "m1_m2_components": [
+          "money-functions-and-measures"
+        ],
+        "calculate_m1_m2": [
+          "money-functions-and-measures"
+        ],
+        "classify_payment_technology": [
+          "money-functions-and-measures"
+        ],
+        "functions_of_money": [
+          "money-functions-and-measures"
+        ],
+        "calculate_m2_with_exclusion": [
+          "money-functions-and-measures"
+        ],
+        "connect_policy_to_money_measures": [
+          "money-functions-and-measures"
+        ],
+        "calculate_m1_m2_reclassification": [
+          "money-functions-and-measures"
+        ],
+        "avoid_money_measure_double_counting": [
+          "money-functions-and-measures"
+        ],
+        "fiat_money_acceptance": [
+          "money-functions-and-measures"
+        ],
+        "calculate_m1": [
+          "money-functions-and-measures"
+        ],
+        "calculate_m2": [
+          "money-functions-and-measures"
+        ],
+        "identify_fiat_money": [
+          "money-functions-and-measures"
+        ],
+        "match_money_functions_to_context": [
+          "money-functions-and-measures"
+        ],
+        "trace_m1_component_transfer": [
+          "money-functions-and-measures"
+        ],
+        "money_vs_wealth_income": [
+          "money-functions-and-measures"
+        ],
+        "fiat_money_definition": [
+          "money-functions-and-measures"
+        ],
+        "central_bank_role": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fomc_role": [
+          "central-bank-and-federal-reserve"
+        ],
+        "identify_institution_role": [
+          "central-bank-and-federal-reserve"
+        ],
+        "identify_definition": [
+          "central-bank-and-federal-reserve",
+          "bank-balance-sheets-reserves-and-capital",
+          "monetary-policy-transmission",
+          "monetary-neutrality",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "explain_institution_role": [
+          "central-bank-and-federal-reserve"
+        ],
+        "explain_institution_design": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_treasury_distinction": [
+          "central-bank-and-federal-reserve"
+        ],
+        "central_commercial_money": [
+          "central-bank-and-federal-reserve"
+        ],
+        "lender_of_last_resort_design": [
+          "central-bank-and-federal-reserve"
+        ],
+        "independence_accountability": [
+          "central-bank-and-federal-reserve"
+        ],
+        "central_bank_balance_sheet": [
+          "central-bank-and-federal-reserve"
+        ],
+        "unconventional_monetary_policy": [
+          "central-bank-and-federal-reserve"
+        ],
+        "liquidity_solvency": [
+          "central-bank-and-federal-reserve"
+        ],
+        "reserve_supply_vs_lending": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fiscal_dominance": [
+          "central-bank-and-federal-reserve"
+        ],
+        "lender_of_last_resort_moral_hazard": [
+          "central-bank-and-federal-reserve"
+        ],
+        "connect_central_bank_independence_to_inflation_risk": [
+          "central-bank-and-federal-reserve"
+        ],
+        "time_inconsistency_independence": [
+          "central-bank-and-federal-reserve"
+        ],
+        "identify_fed_role": [
+          "central-bank-and-federal-reserve"
+        ],
+        "connect_fomc_to_policy": [
+          "central-bank-and-federal-reserve"
+        ],
+        "explain_fed_independence": [
+          "central-bank-and-federal-reserve"
+        ],
+        "connect_fed_independence_money_growth_and_inflation": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_lender_of_last_resort": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_role": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_independence": [
+          "central-bank-and-federal-reserve"
+        ],
+        "predict_direction": [
+          "bank-balance-sheets-reserves-and-capital",
+          "monetary-policy-tools",
+          "monetary-control-limits",
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission",
+          "quantity-theory-of-money",
+          "fisher-effect"
+        ],
+        "bank_capital_assets_liabilities": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_required_reserves": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "trace_bank_loan_balance_sheet": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_excess_reserves": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "identify_lending_capacity": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_bank_capital": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "explain_leverage_risk": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "diagnose_reserve_position": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_capital_after_asset_loss": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "apply_reserve_ratio": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_lending_capacity": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "analyze_leverage_loss": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_capital_loss_percentage": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "diagnose_reserve_shortfall": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "solve_deposits_from_required_reserves": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "solve_deposits_from_excess_reserves": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "identify_reserve_constraint": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "reason_from_capital_ratio": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "calculate_lending_adjustment": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "solve_deposits_from_reserve_data": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "excess_reserves_formula": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "required_reserves_formula": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "money_multiplier_reserve_ratio": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "infer_reserve_ratio_from_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "apply_fractional_reserve_logic": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "loan_redeposit": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "explain_deposit_creation": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "deposit_creation": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "combine_initial_lending_and_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "trace_deposit_creation_rounds": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "trace_next_round_reserves": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "combine_initial_lending_and_total_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "trace_second_round_lending": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "infer_reserve_ratio_from_multiplier_change": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "multiply_existing_excess_reserves": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "calculate_money_multiplier_effect": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "calculate_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "apply_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "compare_multipliers": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "combine_multiplier_and_initial_lending": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "identify_fractional_reserve_banking": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "combine_lending_and_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "simple_money_multiplier_formula": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "trace_two_rounds_with_nonstandard_ratio": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "fractional_reserve_money_creation": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "money_multiplier_application": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "choose_fed_tool_effect": [
+          "monetary-policy-tools"
+        ],
+        "select_policy_tool": [
+          "monetary-policy-tools"
+        ],
+        "interest_on_reserves_policy": [
+          "monetary-policy-tools"
+        ],
+        "predict_policy_effect": [
+          "monetary-policy-tools"
+        ],
+        "predict_bank_behavior": [
+          "monetary-policy-tools"
+        ],
+        "combine_policy_effects": [
+          "monetary-policy-tools"
+        ],
+        "classify_policy_mix": [
+          "monetary-policy-tools"
+        ],
+        "identify_policy_tension": [
+          "monetary-policy-tools"
+        ],
+        "solve_required_open_market_operation": [
+          "monetary-policy-tools"
+        ],
+        "analyze_mixed_policy_tools": [
+          "monetary-policy-tools"
+        ],
+        "evaluate_policy_package": [
+          "monetary-policy-tools"
+        ],
+        "compare_excess_reserves_after_policy_change": [
+          "monetary-policy-tools"
+        ],
+        "calculate_new_excess_reserves": [
+          "monetary-policy-tools"
+        ],
+        "trace_bond_sale_reserve_effect": [
+          "monetary-policy-tools"
+        ],
+        "trace_bond_purchase_reserve_effect": [
+          "monetary-policy-tools"
+        ],
+        "adjust_open_market_operation_for_leakage": [
+          "monetary-policy-tools"
+        ],
+        "diagnose_policy_constraint": [
+          "monetary-policy-tools"
+        ],
+        "synthesize_multiple_fed_tools": [
+          "monetary-policy-tools"
+        ],
+        "synthesize_contractionary_tools": [
+          "monetary-policy-tools"
+        ],
+        "calculate_lending_after_reserve_change": [
+          "monetary-policy-tools"
+        ],
+        "apply_open_market_multiplier": [
+          "monetary-policy-tools"
+        ],
+        "solve_open_market_needed": [
+          "monetary-policy-tools"
+        ],
+        "identify_open_market_direction": [
+          "monetary-policy-tools"
+        ],
+        "select_contractionary_tool": [
+          "monetary-policy-tools"
+        ],
+        "apply_bond_sale_multiplier": [
+          "monetary-policy-tools"
+        ],
+        "recalculate_excess_reserves_after_policy_change": [
+          "monetary-policy-tools"
+        ],
+        "adjust_policy_for_actual_multiplier": [
+          "monetary-policy-tools"
+        ],
+        "analyze_mixed_fed_policy_package": [
+          "monetary-policy-tools"
+        ],
+        "solve_required_bond_purchase": [
+          "monetary-policy-tools"
+        ],
+        "reserve_requirement_effect": [
+          "monetary-policy-tools"
+        ],
+        "fed_buys_bonds_money_supply": [
+          "monetary-policy-tools"
+        ],
+        "discount_rate_effect": [
+          "monetary-policy-tools"
+        ],
+        "fed_sells_bonds_money_supply": [
+          "monetary-policy-tools"
+        ],
+        "limits_of_monetary_control": [
+          "monetary-control-limits"
+        ],
+        "identify_policy_limit": [
+          "monetary-control-limits"
+        ],
+        "explain_policy_limit": [
+          "monetary-control-limits",
+          "monetary-policy-transmission"
+        ],
+        "identify_policy_channel": [
+          "monetary-control-limits"
+        ],
+        "explain_model_limit": [
+          "monetary-control-limits"
+        ],
+        "predict_bank_effect": [
+          "monetary-control-limits"
+        ],
+        "predict_multiplier_effect": [
+          "monetary-control-limits"
+        ],
+        "identify_control_limit": [
+          "monetary-control-limits"
+        ],
+        "weak_loan_demand": [
+          "monetary-control-limits"
+        ],
+        "diagnose_multiplier_breakdown": [
+          "monetary-control-limits"
+        ],
+        "explain_policy_slippage": [
+          "monetary-control-limits"
+        ],
+        "explain_interest_on_reserves": [
+          "monetary-control-limits"
+        ],
+        "predict_deposit_effect": [
+          "monetary-control-limits"
+        ],
+        "identify_binding_constraint": [
+          "monetary-control-limits"
+        ],
+        "evaluate_multiplier_leakage": [
+          "monetary-control-limits"
+        ],
+        "distinguish_nominal_real_effects": [
+          "monetary-control-limits"
+        ],
+        "compare_simple_and_actual_multiplier": [
+          "monetary-control-limits"
+        ],
+        "correct_multiplier_misconception": [
+          "monetary-control-limits"
+        ],
+        "evaluate_currency_to_deposit_shift": [
+          "monetary-control-limits"
+        ],
+        "explain_currency_drain_multiplier_effect": [
+          "monetary-control-limits"
+        ],
+        "identify_real_world_limitation": [
+          "monetary-control-limits"
+        ],
+        "diagnose_multiplier_leakage": [
+          "monetary-control-limits"
+        ],
+        "explain_policy_transmission_limit": [
+          "monetary-control-limits"
+        ],
+        "explain_currency_drain_contraction": [
+          "monetary-control-limits"
+        ],
+        "combine_bond_sale_and_currency_drain": [
+          "monetary-control-limits"
+        ],
+        "explain_discount_rate_transmission_limit": [
+          "monetary-control-limits"
+        ],
+        "calculate_deposit_expansion_from_currency_shift": [
+          "monetary-control-limits"
+        ],
+        "distinguish_money_creation_from_real_output": [
+          "monetary-control-limits"
+        ],
+        "evaluate_currency_leakage_in_multiplier_process": [
+          "monetary-control-limits"
+        ],
+        "synthesize_banking_and_policy_limits": [
+          "monetary-control-limits"
+        ],
+        "bank_leverage_risk": [
+          "monetary-control-limits"
+        ],
+        "explain_excess_reserve_limit": [
+          "monetary-control-limits"
+        ],
+        "synthesize_multiplier_leakages": [
+          "monetary-control-limits"
+        ],
+        "compare_simple_multiplier_to_actual_result": [
+          "monetary-control-limits"
+        ],
+        "analyze_currency_withdrawal_reserve_position": [
+          "monetary-control-limits"
+        ],
+        "evaluate_currency_leakage_in_multiplier": [
+          "monetary-control-limits"
+        ],
+        "correct_overstated_fed_control_claim": [
+          "monetary-control-limits"
+        ],
+        "actual_vs_simple_multiplier": [
+          "monetary-control-limits"
+        ],
+        "public_currency_holdings": [
+          "monetary-control-limits"
+        ],
+        "liquidity_preference_theory": [
+          "liquidity-preference-and-money-market"
+        ],
+        "identify_core_model": [
+          "liquidity-preference-and-money-market"
+        ],
+        "identify_assumption": [
+          "liquidity-preference-and-money-market"
+        ],
+        "read_money_market_equilibrium": [
+          "liquidity-preference-and-money-market"
+        ],
+        "read_money_market_shift": [
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission"
+        ],
+        "simultaneous_money_shifts": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_money_demand_shift_to_investment": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_demand_interest_rate": [
+          "liquidity-preference-and-money-market"
+        ],
+        "identify_model_logic": [
+          "liquidity-preference-and-money-market"
+        ],
+        "identify_curve": [
+          "liquidity-preference-and-money-market",
+          "quantity-theory-of-money"
+        ],
+        "identify_shift_result": [
+          "liquidity-preference-and-money-market",
+          "quantity-theory-of-money"
+        ],
+        "explain_money_demand_shift": [
+          "liquidity-preference-and-money-market"
+        ],
+        "predict_money_market_equilibrium": [
+          "liquidity-preference-and-money-market"
+        ],
+        "connect_money_market_to_ad_slope": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_price_level_to_interest_rate": [
+          "liquidity-preference-and-money-market"
+        ],
+        "explain_ad_slope_interest_rate_effect": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_income_to_interest_rate": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_price_level_to_money_market": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_price_level_to_ad_quantity": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_lower_price_level_effect": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_money_demand_left_shift": [
+          "liquidity-preference-and-money-market"
+        ],
+        "stabilize_interest_rate_after_md_shift": [
+          "liquidity-preference-and-money-market"
+        ],
+        "analyze_policy_offset_of_price_level_effect": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_demand_shift_vs_movement": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_market_offsetting_shifts": [
+          "liquidity-preference-and-money-market"
+        ],
+        "read_md_shift_and_choose_policy_offset": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_market_disequilibrium": [
+          "liquidity-preference-and-money-market"
+        ],
+        "bridge_money_market_transmission": [
+          "liquidity-preference-and-money-market"
+        ],
+        "infer_money_supply_offset": [
+          "liquidity-preference-and-money-market"
+        ],
+        "identify_liquidity_preference_model": [
+          "liquidity-preference-and-money-market"
+        ],
+        "trace_price_level_to_money_demand": [
+          "liquidity-preference-and-money-market"
+        ],
+        "connect_price_level_to_ad_multiplier": [
+          "liquidity-preference-and-money-market"
+        ],
+        "liquidity_preference_definition": [
+          "liquidity-preference-and-money-market"
+        ],
+        "read_money_demand_shift_then_apply_multiplier": [
+          "liquidity-preference-and-money-market"
+        ],
+        "read_md_shift_then_apply_multiplier": [
+          "liquidity-preference-and-money-market"
+        ],
+        "interest_rate_effect_ad_slope": [
+          "liquidity-preference-and-money-market"
+        ],
+        "monetary_policy_transmission": [
+          "monetary-policy-transmission"
+        ],
+        "monetary_policy_ad_shift": [
+          "monetary-policy-transmission"
+        ],
+        "read_ad_shift": [
+          "monetary-policy-transmission"
+        ],
+        "predict_ad_shift": [
+          "monetary-policy-transmission"
+        ],
+        "trace_expansionary_monetary_policy_graph": [
+          "monetary-policy-transmission"
+        ],
+        "trace_contractionary_monetary_policy_graph": [
+          "monetary-policy-transmission"
+        ],
+        "order_policy_chain": [
+          "monetary-policy-transmission"
+        ],
+        "identify_graph_panel": [
+          "monetary-policy-transmission"
+        ],
+        "identify_direct_effect": [
+          "monetary-policy-transmission"
+        ],
+        "identify_ad_shift": [
+          "monetary-policy-transmission"
+        ],
+        "select_policy_response": [
+          "monetary-policy-transmission"
+        ],
+        "read_output_change_from_ad_shift": [
+          "monetary-policy-transmission"
+        ],
+        "trace_monetary_policy_chain": [
+          "monetary-policy-transmission"
+        ],
+        "interpret_monetary_policy_graph": [
+          "monetary-policy-transmission"
+        ],
+        "explain_liquidity_trap": [
+          "monetary-policy-transmission"
+        ],
+        "choose_stabilizing_monetary_policy": [
+          "monetary-policy-transmission"
+        ],
+        "choose_anti_inflation_policy": [
+          "monetary-policy-transmission"
+        ],
+        "evaluate_transmission_strength": [
+          "monetary-policy-transmission"
+        ],
+        "identify_liquidity_trap_breakpoint": [
+          "monetary-policy-transmission"
+        ],
+        "distinguish_money_market_and_ad_model": [
+          "monetary-policy-transmission"
+        ],
+        "read_contractionary_monetary_policy_graph": [
+          "monetary-policy-transmission"
+        ],
+        "read_graph_then_apply_multiplier": [
+          "monetary-policy-transmission"
+        ],
+        "read_contractionary_graph_then_calculate_ad_change": [
+          "monetary-policy-transmission"
+        ],
+        "read_graph_and_evaluate_transmission_size": [
+          "monetary-policy-transmission"
+        ],
+        "read_graph_direction_and_apply_multiplier": [
+          "monetary-policy-transmission"
+        ],
+        "distinguish_ad_shift_from_movement_along_ad": [
+          "monetary-policy-transmission"
+        ],
+        "identify_contractionary_policy_from_graph": [
+          "monetary-policy-transmission"
+        ],
+        "read_policy_direction_and_solve_required_interest_rate_change": [
+          "monetary-policy-transmission"
+        ],
+        "trace_contractionary_money_graph_with_multiplier": [
+          "monetary-policy-transmission"
+        ],
+        "identify_expansionary_monetary_effect": [
+          "monetary-policy-transmission"
+        ],
+        "combine_monetary_policy_and_multiplier": [
+          "monetary-policy-transmission"
+        ],
+        "open_market_purchase_transmission": [
+          "monetary-policy-transmission"
+        ],
+        "interest_sensitive_spending_channel": [
+          "monetary-policy-transmission"
+        ],
+        "money_supply_shift_interest_rate": [
+          "monetary-policy-transmission"
+        ],
+        "reserve_hoarding_transmission_limit": [
+          "monetary-policy-transmission"
+        ],
+        "investment_expectations_transmission": [
+          "monetary-policy-transmission"
+        ],
+        "contractionary_transmission_sequence": [
+          "monetary-policy-transmission"
+        ],
+        "read_contractionary_graph_and_calculate_net_ad_effect": [
+          "monetary-policy-transmission"
+        ],
+        "read_contractionary_graph_and_solve_required_rate_change": [
+          "monetary-policy-transmission"
+        ],
+        "distinguish_standard_liquidity_preference_from_liquidity_trap": [
+          "monetary-policy-transmission"
+        ],
+        "transmission_strength": [
+          "monetary-policy-transmission"
+        ],
+        "expansionary_monetary_policy_chain": [
+          "monetary-policy-transmission"
+        ],
+        "contractionary_monetary_policy_chain": [
+          "monetary-policy-transmission"
+        ],
+        "omitted_transmission_link": [
+          "monetary-policy-transmission"
+        ],
+        "quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "money_growth_to_inflation": [
+          "quantity-theory-of-money"
+        ],
+        "value_of_money": [
+          "quantity-theory-of-money"
+        ],
+        "identify_formula": [
+          "quantity-theory-of-money",
+          "fisher-effect"
+        ],
+        "identify_core_prediction": [
+          "quantity-theory-of-money"
+        ],
+        "identify_formula_component": [
+          "quantity-theory-of-money"
+        ],
+        "infer_inverse_relationship": [
+          "quantity-theory-of-money"
+        ],
+        "read_axis": [
+          "quantity-theory-of-money"
+        ],
+        "apply_quantity_theory": [
+          "quantity-theory-of-money"
+        ],
+        "predict_long_run_result": [
+          "quantity-theory-of-money"
+        ],
+        "interpret_graph_shift": [
+          "quantity-theory-of-money"
+        ],
+        "explain_curve_slope": [
+          "quantity-theory-of-money"
+        ],
+        "explain_adjustment_process": [
+          "quantity-theory-of-money"
+        ],
+        "synthesize_long_run_money_logic": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_equation_with_velocity_change": [
+          "quantity-theory-of-money"
+        ],
+        "price_level_change_vs_inflation": [
+          "quantity-theory-of-money"
+        ],
+        "trace_monetary_injection_graph": [
+          "quantity-theory-of-money"
+        ],
+        "connect_graph_to_quantity_theory": [
+          "quantity-theory-of-money"
+        ],
+        "read_graph_and_convert_value_to_price": [
+          "quantity-theory-of-money"
+        ],
+        "diagnose_money_market_adjustment": [
+          "quantity-theory-of-money"
+        ],
+        "analyze_money_demand_shift": [
+          "quantity-theory-of-money"
+        ],
+        "reverse_graph_shift": [
+          "quantity-theory-of-money"
+        ],
+        "correct_graph_misinterpretation": [
+          "quantity-theory-of-money"
+        ],
+        "connect_graph_to_quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "apply_quantity_equation_growth_rates": [
+          "quantity-theory-of-money"
+        ],
+        "compare_price_levels_across_years": [
+          "quantity-theory-of-money"
+        ],
+        "apply_quantity_equation_with_velocity_change": [
+          "quantity-theory-of-money"
+        ],
+        "read_graph_convert_value_to_price_and_interpret": [
+          "quantity-theory-of-money"
+        ],
+        "connect_money_graph_to_quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "explain_graph_disequilibrium_adjustment": [
+          "quantity-theory-of-money"
+        ],
+        "analyze_md_shift_and_convert_to_price_level": [
+          "quantity-theory-of-money"
+        ],
+        "distinguish_ms_shift_from_md_shift": [
+          "quantity-theory-of-money"
+        ],
+        "solve_quantity_equation_across_changes": [
+          "quantity-theory-of-money"
+        ],
+        "apply_quantity_equation_growth_form": [
+          "quantity-theory-of-money"
+        ],
+        "analyze_contractionary_money_graph": [
+          "quantity-theory-of-money"
+        ],
+        "correct_axis_and_curve_misreading": [
+          "quantity-theory-of-money"
+        ],
+        "calculate_value_of_money": [
+          "quantity-theory-of-money"
+        ],
+        "solve_quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "calculate_velocity": [
+          "quantity-theory-of-money"
+        ],
+        "calculate_inflation_from_quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "solve_velocity_formula": [
+          "quantity-theory-of-money"
+        ],
+        "convert_money_value_to_price_level": [
+          "quantity-theory-of-money"
+        ],
+        "compare_price_levels": [
+          "quantity-theory-of-money"
+        ],
+        "calculate_price_level": [
+          "quantity-theory-of-money"
+        ],
+        "identify_quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "solve_quantity_equation_for_p": [
+          "quantity-theory-of-money"
+        ],
+        "convert_value_of_money_to_price_level": [
+          "quantity-theory-of-money"
+        ],
+        "velocity_definition": [
+          "quantity-theory-of-money"
+        ],
+        "basic_quantity_growth_calculation": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_equation_output_price_tradeoff": [
+          "quantity-theory-of-money"
+        ],
+        "advanced_quantity_growth_calculation": [
+          "quantity-theory-of-money"
+        ],
+        "nominal_gdp_growth_from_mv": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_theory_long_run_neutrality": [
+          "quantity-theory-of-money"
+        ],
+        "connect_graph_result_to_quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "solve_price_level_across_multiple_changes": [
+          "quantity-theory-of-money"
+        ],
+        "convert_multiple_value_of_money_points_to_price_level": [
+          "quantity-theory-of-money"
+        ],
+        "value_of_money_formula": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_theory_growth_rates": [
+          "quantity-theory-of-money"
+        ],
+        "nominal_vs_real_variables": [
+          "monetary-neutrality"
+        ],
+        "monetary_neutrality": [
+          "monetary-neutrality"
+        ],
+        "classify_variable": [
+          "monetary-neutrality"
+        ],
+        "nominal_real_adjustment": [
+          "monetary-neutrality"
+        ],
+        "identify_concept_in_context": [
+          "monetary-neutrality"
+        ],
+        "apply_concept": [
+          "monetary-neutrality"
+        ],
+        "apply_real_wage_logic": [
+          "monetary-neutrality"
+        ],
+        "apply_monetary_neutrality": [
+          "monetary-neutrality"
+        ],
+        "explain_long_run_neutrality": [
+          "monetary-neutrality"
+        ],
+        "classify_variables": [
+          "monetary-neutrality"
+        ],
+        "connect_neutrality_to_money_value": [
+          "monetary-neutrality"
+        ],
+        "long_run_neutrality_boundary": [
+          "monetary-neutrality"
+        ],
+        "separate_nominal_and_real_effects": [
+          "monetary-neutrality"
+        ],
+        "identify_long_run_money_neutrality": [
+          "monetary-neutrality"
+        ],
+        "estimate_real_wage_growth": [
+          "monetary-neutrality"
+        ],
+        "infer_price_growth_from_nominal_and_real_gdp": [
+          "monetary-neutrality"
+        ],
+        "infer_price_growth_and_classify_variable": [
+          "monetary-neutrality"
+        ],
+        "calculate_and_compare_real_wages": [
+          "monetary-neutrality"
+        ],
+        "compare_nominal_wage_and_price_growth": [
+          "monetary-neutrality"
+        ],
+        "compare_nominal_wage_and_price_level_changes": [
+          "monetary-neutrality"
+        ],
+        "identify_nominal_real_pattern": [
+          "monetary-neutrality"
+        ],
+        "calculate_real_wage": [
+          "monetary-neutrality"
+        ],
+        "calculate_relative_price": [
+          "monetary-neutrality"
+        ],
+        "compare_real_wages": [
+          "monetary-neutrality"
+        ],
+        "calculate_relative_price_change": [
+          "monetary-neutrality"
+        ],
+        "identify_nominal_variable": [
+          "monetary-neutrality"
+        ],
+        "neutrality_level_vs_growth": [
+          "monetary-neutrality"
+        ],
+        "combine_graph_price_level_and_real_wage": [
+          "monetary-neutrality"
+        ],
+        "infer_inflation_and_real_wage_growth": [
+          "monetary-neutrality"
+        ],
+        "real_wage_formula": [
+          "monetary-neutrality"
+        ],
+        "monetary_neutrality_definition": [
+          "monetary-neutrality"
+        ],
+        "nominal_real_interest_rate": [
+          "fisher-effect"
+        ],
+        "predict_change": [
+          "fisher-effect"
+        ],
+        "fisher_expected_inflation": [
+          "fisher-effect"
+        ],
+        "fisher_ex_ante_contract": [
+          "fisher-effect"
+        ],
+        "apply_fisher_effect": [
+          "fisher-effect"
+        ],
+        "fisher_holding_real_rate": [
+          "fisher-effect"
+        ],
+        "compare_expected_and_realized_real_rates": [
+          "fisher-effect"
+        ],
+        "apply_fisher_effect_over_time": [
+          "fisher-effect"
+        ],
+        "apply_fisher_effect_with_changing_real_rate": [
+          "fisher-effect"
+        ],
+        "connect_money_graph_to_fisher_effect": [
+          "fisher-effect"
+        ],
+        "combine_quantity_theory_and_fisher_effect": [
+          "fisher-effect"
+        ],
+        "fisher_effect": [
+          "fisher-effect"
+        ],
+        "calculate_real_interest": [
+          "fisher-effect"
+        ],
+        "calculate_nominal_interest": [
+          "fisher-effect"
+        ],
+        "distinguish_expected_actual_inflation": [
+          "fisher-effect"
+        ],
+        "apply_fisher_effect_change": [
+          "fisher-effect"
+        ],
+        "identify_fisher_effect": [
+          "fisher-effect"
+        ],
+        "apply_fisher_with_changing_real_rate": [
+          "fisher-effect"
+        ],
+        "apply_fisher_effect_with_offsetting_real_rate_change": [
+          "fisher-effect"
+        ],
+        "compare_real_rates_during_disinflation": [
+          "fisher-effect"
+        ],
+        "fisher_equation_simple": [
+          "fisher-effect"
+        ],
+        "shoeleather_costs": [
+          "inflation-costs"
+        ],
+        "menu_costs": [
+          "inflation-costs"
+        ],
+        "predict_winner_loser": [
+          "inflation-costs"
+        ],
+        "inflation_redistribution": [
+          "inflation-costs"
+        ],
+        "explain_redistribution": [
+          "inflation-costs"
+        ],
+        "identify_example": [
+          "inflation-costs"
+        ],
+        "expected_inflation_costs": [
+          "inflation-costs"
+        ],
+        "analyze_unexpected_inflation": [
+          "inflation-costs"
+        ],
+        "analyze_unexpected_disinflation": [
+          "inflation-costs"
+        ],
+        "explain_inflation_cost": [
+          "inflation-costs"
+        ],
+        "explain_relative_price_distortion": [
+          "inflation-costs"
+        ],
+        "summarize_inflation_costs": [
+          "inflation-costs"
+        ],
+        "unexpected_inflation_redistribution": [
+          "inflation-costs"
+        ],
+        "combine_fisher_and_redistribution": [
+          "inflation-costs"
+        ],
+        "identify_inflation_cost_from_behavior": [
+          "inflation-costs"
+        ],
+        "identify_inflation_cost_from_firm_behavior": [
+          "inflation-costs"
+        ],
+        "correct_inflation_welfare_misconception": [
+          "inflation-costs"
+        ],
+        "combine_unexpected_inflation_and_real_rate": [
+          "inflation-costs"
+        ],
+        "combine_unexpected_disinflation_and_real_rate": [
+          "inflation-costs"
+        ],
+        "connect_graph_inflation_to_cost_type": [
+          "inflation-costs"
+        ],
+        "connect_graph_inflation_to_behavioral_cost": [
+          "inflation-costs"
+        ],
+        "calculate_inflation_and_link_to_redistribution": [
+          "inflation-costs"
+        ],
+        "identify_shoeleather_costs": [
+          "inflation-costs"
+        ],
+        "combine_fisher_and_unexpected_inflation": [
+          "inflation-costs"
+        ],
+        "inflation_cost_mechanism": [
+          "inflation-costs"
+        ],
+        "connect_graph_inflation_to_multiple_costs": [
+          "inflation-costs"
+        ],
+        "connect_price_level_change_to_debt_burden": [
+          "inflation-costs"
+        ],
+        "correct_expected_inflation_cost_misconception": [
+          "inflation-costs"
+        ],
+        "unexpected_inflation_debtors_creditors": [
+          "inflation-costs"
+        ],
+        "inflation_costs_overview": [
+          "inflation-costs"
+        ],
+        "explain_mechanism": [
+          "inflation-tax-and-deflation"
+        ],
+        "identify_cause": [
+          "inflation-tax-and-deflation"
+        ],
+        "evaluate_policy_implication": [
+          "inflation-tax-and-deflation"
+        ],
+        "inflation_tax_mechanism": [
+          "inflation-tax-and-deflation"
+        ],
+        "inflation_tax": [
+          "inflation-tax-and-deflation"
+        ],
+        "evaluate_policy_risk": [
+          "inflation-tax-and-deflation"
+        ],
+        "identify_condition": [
+          "inflation-tax-and-deflation"
+        ],
+        "infer_money_value_change": [
+          "inflation-tax-and-deflation"
+        ],
+        "disinflation_vs_deflation": [
+          "inflation-tax-and-deflation"
+        ],
+        "identify_burden": [
+          "inflation-tax-and-deflation"
+        ],
+        "distinguish_inflation_terms": [
+          "inflation-tax-and-deflation"
+        ],
+        "connect_seigniorage_to_inflation": [
+          "inflation-tax-and-deflation"
+        ],
+        "deflation_debt_burden": [
+          "inflation-tax-and-deflation"
+        ],
+        "connect_money_finance_to_nominal_rates": [
+          "inflation-tax-and-deflation"
+        ],
+        "connect_money_growth_to_policy_risk": [
+          "inflation-tax-and-deflation"
+        ],
+        "connect_deflation_to_debt_burden": [
+          "inflation-tax-and-deflation"
+        ],
+        "distinguish_disinflation_deflation": [
+          "inflation-tax-and-deflation"
+        ],
+        "trace_seigniorage_risk": [
+          "inflation-tax-and-deflation"
+        ],
+        "connect_money_finance_to_inflation_prediction": [
+          "inflation-tax-and-deflation"
+        ],
+        "connect_policy_expectations_and_interest_rates": [
+          "inflation-tax-and-deflation"
+        ],
+        "connect_deflation_to_real_debt_burden": [
+          "inflation-tax-and-deflation"
+        ],
+        "seigniorage_feedback": [
+          "inflation-tax-and-deflation"
+        ],
+        "apply_deflation_logic": [
+          "inflation-tax-and-deflation"
+        ],
+        "identify_inflation_tax": [
+          "inflation-tax-and-deflation"
+        ],
+        "calculate_inflation_from_money_finance": [
+          "inflation-tax-and-deflation"
+        ],
+        "synthesize_money_finance_inflation_and_interest_rates": [
+          "inflation-tax-and-deflation"
+        ],
+        "convert_money_value_to_price_and_classify": [
+          "inflation-tax-and-deflation"
+        ],
+        "synthesize_inflation_tax_fisher_and_costs": [
+          "inflation-tax-and-deflation"
+        ],
+        "inflation_tax_policy_risk": [
+          "inflation-tax-and-deflation"
+        ]
+      },
+      "secondarySkillToConceptIds": {
+        "distinguish_money_functions": [
+          "money-functions-and-measures"
+        ],
+        "recognize_price_measurement": [
+          "money-functions-and-measures"
+        ],
+        "distinguish_saving_from_spending": [
+          "money-functions-and-measures"
+        ],
+        "distinguish_fiat_commodity_money": [
+          "money-functions-and-measures"
+        ],
+        "identify_m1": [
+          "money-functions-and-measures"
+        ],
+        "distinguish_m1_m2": [
+          "money-functions-and-measures"
+        ],
+        "fiat_money": [
+          "money-functions-and-measures"
+        ],
+        "intrinsic_value": [
+          "money-functions-and-measures"
+        ],
+        "unit_of_account": [
+          "money-functions-and-measures"
+        ],
+        "store_of_value": [
+          "money-functions-and-measures"
+        ],
+        "near_money": [
+          "money-functions-and-measures"
+        ],
+        "barter": [
+          "money-functions-and-measures"
+        ],
+        "specialization": [
+          "money-functions-and-measures"
+        ],
+        "currency": [
+          "money-functions-and-measures"
+        ],
+        "bank_reserves": [
+          "money-functions-and-measures",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "money_functions": [
+          "money-functions-and-measures"
+        ],
+        "application": [
+          "money-functions-and-measures"
+        ],
+        "currency_drain": [
+          "money-functions-and-measures",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "bank_deposits": [
+          "money-functions-and-measures"
+        ],
+        "checkable_deposits": [
+          "money-functions-and-measures"
+        ],
+        "m1": [
+          "money-functions-and-measures"
+        ],
+        "large_time_deposits": [
+          "money-functions-and-measures"
+        ],
+        "checking_deposits": [
+          "money-functions-and-measures"
+        ],
+        "savings_deposits": [
+          "money-functions-and-measures"
+        ],
+        "deposits": [
+          "money-functions-and-measures",
+          "deposit-creation-and-money-multiplier",
+          "monetary-control-limits"
+        ],
+        "m2": [
+          "money-functions-and-measures"
+        ],
+        "forms_of_money": [
+          "money-functions-and-measures"
+        ],
+        "medium_of_exchange": [
+          "money-functions-and-measures"
+        ],
+        "commodity_money": [
+          "money-functions-and-measures"
+        ],
+        "fractional_reserve_money_creation": [
+          "money-functions-and-measures"
+        ],
+        "fed_functions": [
+          "central-bank-and-federal-reserve"
+        ],
+        "discount_rate": [
+          "central-bank-and-federal-reserve",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "federal_funds_rate": [
+          "central-bank-and-federal-reserve"
+        ],
+        "recognize_fed_function": [
+          "central-bank-and-federal-reserve"
+        ],
+        "connect_fomc_monetary_policy": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fomc": [
+          "central-bank-and-federal-reserve"
+        ],
+        "monetary_policy": [
+          "central-bank-and-federal-reserve"
+        ],
+        "lender_of_last_resort": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_independence": [
+          "central-bank-and-federal-reserve"
+        ],
+        "money_growth": [
+          "central-bank-and-federal-reserve",
+          "quantity-theory-of-money",
+          "fisher-effect",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "inflation": [
+          "central-bank-and-federal-reserve",
+          "quantity-theory-of-money",
+          "monetary-neutrality",
+          "fisher-effect",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "central_bank": [
+          "central-bank-and-federal-reserve"
+        ],
+        "open_market_operations": [
+          "central-bank-and-federal-reserve",
+          "monetary-policy-tools",
+          "monetary-control-limits",
+          "monetary-policy-transmission"
+        ],
+        "political_pressure": [
+          "central-bank-and-federal-reserve"
+        ],
+        "central_bank_independence": [
+          "central-bank-and-federal-reserve"
+        ],
+        "inflation_risk": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fed_buys_bonds_money_supply": [
+          "central-bank-and-federal-reserve"
+        ],
+        "fractional_reserve_banking": [
+          "bank-balance-sheets-reserves-and-capital",
+          "monetary-control-limits"
+        ],
+        "reserve_ratio_multiplier": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "bank_capital": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "asset_losses": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "reserves": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "loans": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier"
+        ],
+        "required_reserves": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "excess_reserves": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "reserve_ratio": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "assets": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "liabilities": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "capital": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "leverage": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "actual_reserves": [
+          "bank-balance-sheets-reserves-and-capital",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "bank_lending": [
+          "bank-balance-sheets-reserves-and-capital",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "asset_loss": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "capital_ratio": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "apply_reserve_ratio": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "identify_lending_capacity": [
+          "bank-balance-sheets-reserves-and-capital"
+        ],
+        "money_multiplier": [
+          "deposit-creation-and-money-multiplier",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "loan_redeposit": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "redeposit": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "money_supply_change": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "use_simple_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "simple_multiplier": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "lending": [
+          "deposit-creation-and-money-multiplier",
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "initial_loan": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "distinguish_base_money_from_deposit_creation": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "deposit_expansion": [
+          "deposit-creation-and-money-multiplier"
+        ],
+        "reserve_requirements": [
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "money_creation": [
+          "monetary-policy-tools",
+          "monetary-control-limits",
+          "inflation-tax-and-deflation"
+        ],
+        "interest_on_reserves": [
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "bond_sale": [
+          "monetary-policy-tools"
+        ],
+        "bond_purchase": [
+          "monetary-policy-tools",
+          "monetary-control-limits"
+        ],
+        "reserve_requirement": [
+          "monetary-policy-tools"
+        ],
+        "lending_capacity": [
+          "monetary-policy-tools"
+        ],
+        "money_supply": [
+          "monetary-policy-tools",
+          "monetary-control-limits",
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission",
+          "quantity-theory-of-money"
+        ],
+        "limits_of_monetary_control": [
+          "monetary-policy-tools"
+        ],
+        "money_supply_shift": [
+          "monetary-policy-tools",
+          "monetary-policy-transmission",
+          "quantity-theory-of-money"
+        ],
+        "currency_holdings": [
+          "monetary-control-limits"
+        ],
+        "deposit_creation": [
+          "monetary-control-limits"
+        ],
+        "bank_behavior": [
+          "monetary-control-limits"
+        ],
+        "bank_incentives": [
+          "monetary-control-limits"
+        ],
+        "currency_deposits": [
+          "monetary-control-limits"
+        ],
+        "real_output": [
+          "monetary-control-limits",
+          "monetary-neutrality"
+        ],
+        "redepositing": [
+          "monetary-control-limits"
+        ],
+        "bank_risk": [
+          "monetary-control-limits"
+        ],
+        "deposit_multiplier": [
+          "monetary-control-limits"
+        ],
+        "real_resources": [
+          "monetary-control-limits"
+        ],
+        "money_market_equilibrium": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_supply_fixed": [
+          "liquidity-preference-and-money-market",
+          "quantity-theory-of-money"
+        ],
+        "interest_rate_money_demand": [
+          "liquidity-preference-and-money-market"
+        ],
+        "income_money_demand": [
+          "liquidity-preference-and-money-market"
+        ],
+        "price_level_money_demand": [
+          "liquidity-preference-and-money-market"
+        ],
+        "money_demand_shift": [
+          "liquidity-preference-and-money-market"
+        ],
+        "interest_rate": [
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission"
+        ],
+        "income": [
+          "liquidity-preference-and-money-market"
+        ],
+        "transactions": [
+          "liquidity-preference-and-money-market"
+        ],
+        "price_level": [
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission",
+          "quantity-theory-of-money",
+          "monetary-neutrality",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "money_demand": [
+          "liquidity-preference-and-money-market",
+          "quantity-theory-of-money",
+          "inflation-tax-and-deflation"
+        ],
+        "investment": [
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission"
+        ],
+        "aggregate_demand": [
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission"
+        ],
+        "monetary_policy_transmission": [
+          "liquidity-preference-and-money-market"
+        ],
+        "mpc": [
+          "liquidity-preference-and-money-market",
+          "monetary-policy-transmission"
+        ],
+        "money_supply_interest_rate": [
+          "monetary-policy-transmission"
+        ],
+        "interest_rates_investment": [
+          "monetary-policy-transmission"
+        ],
+        "expansionary_monetary_policy": [
+          "monetary-policy-transmission"
+        ],
+        "contractionary_monetary_policy": [
+          "monetary-policy-transmission"
+        ],
+        "zero_lower_bound": [
+          "monetary-policy-transmission"
+        ],
+        "money_market": [
+          "monetary-policy-transmission"
+        ],
+        "recession": [
+          "monetary-policy-transmission"
+        ],
+        "inflation_pressure": [
+          "monetary-policy-transmission"
+        ],
+        "interest_rates": [
+          "monetary-policy-transmission"
+        ],
+        "demand_shock": [
+          "monetary-policy-transmission"
+        ],
+        "overheating": [
+          "monetary-policy-transmission"
+        ],
+        "ad_shift": [
+          "monetary-policy-transmission"
+        ],
+        "investment_sensitivity": [
+          "monetary-policy-transmission"
+        ],
+        "output": [
+          "monetary-policy-transmission",
+          "quantity-theory-of-money"
+        ],
+        "multiplier": [
+          "monetary-policy-transmission"
+        ],
+        "ad_target": [
+          "monetary-policy-transmission"
+        ],
+        "crowding_out": [
+          "monetary-policy-transmission"
+        ],
+        "connect_price_level_money_value": [
+          "quantity-theory-of-money"
+        ],
+        "inverse_relationship": [
+          "quantity-theory-of-money"
+        ],
+        "money_growth_inflation_link": [
+          "quantity-theory-of-money"
+        ],
+        "quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "nominal_gdp": [
+          "quantity-theory-of-money",
+          "monetary-neutrality"
+        ],
+        "value_of_money": [
+          "quantity-theory-of-money",
+          "monetary-neutrality",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "value_of_money_formula": [
+          "quantity-theory-of-money"
+        ],
+        "money_supply_increase": [
+          "quantity-theory-of-money"
+        ],
+        "excess_money_supply": [
+          "quantity-theory-of-money"
+        ],
+        "monetary_neutrality": [
+          "quantity-theory-of-money",
+          "monetary-neutrality"
+        ],
+        "price_adjustment": [
+          "quantity-theory-of-money",
+          "inflation-costs"
+        ],
+        "money_supply_decrease": [
+          "quantity-theory-of-money"
+        ],
+        "scarcity": [
+          "quantity-theory-of-money"
+        ],
+        "output_growth": [
+          "quantity-theory-of-money",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "velocity": [
+          "quantity-theory-of-money"
+        ],
+        "velocity_growth": [
+          "quantity-theory-of-money",
+          "inflation-costs"
+        ],
+        "purchasing_power": [
+          "quantity-theory-of-money",
+          "monetary-neutrality"
+        ],
+        "spending": [
+          "quantity-theory-of-money"
+        ],
+        "use_quantity_equation": [
+          "quantity-theory-of-money"
+        ],
+        "nominal_variable": [
+          "monetary-neutrality"
+        ],
+        "real_variable": [
+          "monetary-neutrality"
+        ],
+        "nominal_variable_examples": [
+          "monetary-neutrality"
+        ],
+        "real_variable_examples": [
+          "monetary-neutrality"
+        ],
+        "classical_dichotomy": [
+          "monetary-neutrality"
+        ],
+        "money_neutrality": [
+          "monetary-neutrality"
+        ],
+        "nominal_variables": [
+          "monetary-neutrality"
+        ],
+        "real_variables": [
+          "monetary-neutrality"
+        ],
+        "nominal_real_variables": [
+          "monetary-neutrality"
+        ],
+        "nominal_wage": [
+          "monetary-neutrality"
+        ],
+        "real_wage": [
+          "monetary-neutrality"
+        ],
+        "relative_prices": [
+          "monetary-neutrality",
+          "inflation-costs"
+        ],
+        "real_gdp": [
+          "monetary-neutrality"
+        ],
+        "nominal_prices": [
+          "monetary-neutrality"
+        ],
+        "relative_price": [
+          "monetary-neutrality"
+        ],
+        "nominal_real": [
+          "monetary-neutrality"
+        ],
+        "expected_inflation_nominal_interest": [
+          "fisher-effect"
+        ],
+        "fisher_equation": [
+          "fisher-effect"
+        ],
+        "inflation_nominal_interest": [
+          "fisher-effect"
+        ],
+        "expected_inflation": [
+          "fisher-effect",
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "nominal_interest": [
+          "fisher-effect",
+          "inflation-costs"
+        ],
+        "fisher_effect": [
+          "fisher-effect",
+          "inflation-tax-and-deflation"
+        ],
+        "unexpected_inflation": [
+          "fisher-effect",
+          "inflation-costs"
+        ],
+        "actual_inflation": [
+          "fisher-effect",
+          "inflation-costs"
+        ],
+        "real_interest": [
+          "fisher-effect",
+          "inflation-costs"
+        ],
+        "real_rate_expected_inflation": [
+          "fisher-effect"
+        ],
+        "shoeleather_costs": [
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "menu_costs": [
+          "inflation-costs"
+        ],
+        "debtors": [
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "borrowers": [
+          "inflation-costs"
+        ],
+        "lenders": [
+          "inflation-costs"
+        ],
+        "money_holding": [
+          "inflation-costs"
+        ],
+        "price_changes": [
+          "inflation-costs"
+        ],
+        "inflation_costs": [
+          "inflation-costs"
+        ],
+        "redistribution": [
+          "inflation-costs"
+        ],
+        "inflation_tax": [
+          "inflation-costs",
+          "inflation-tax-and-deflation"
+        ],
+        "nominal_income": [
+          "inflation-costs"
+        ],
+        "monetary_injection": [
+          "inflation-costs"
+        ],
+        "money_holdings": [
+          "inflation-costs"
+        ],
+        "hyperinflation": [
+          "inflation-tax-and-deflation"
+        ],
+        "deflation": [
+          "inflation-tax-and-deflation"
+        ],
+        "money_holders": [
+          "inflation-tax-and-deflation"
+        ],
+        "disinflation": [
+          "inflation-tax-and-deflation"
+        ],
+        "inflation_expectations": [
+          "inflation-tax-and-deflation"
+        ],
+        "inflation_rate": [
+          "inflation-tax-and-deflation"
+        ],
+        "nominal_debt": [
+          "inflation-tax-and-deflation"
+        ],
+        "government_finance": [
+          "inflation-tax-and-deflation"
+        ],
+        "quantity_theory": [
+          "inflation-tax-and-deflation"
+        ]
+      },
+      "objectiveToConceptIds": {
+        "LO30.1": [
+          "money-functions-and-measures"
+        ],
+        "30.1": [
+          "money-functions-and-measures"
+        ],
+        "LO30.2": [
+          "central-bank-and-federal-reserve"
+        ],
+        "30.2": [
+          "central-bank-and-federal-reserve"
+        ],
+        "30.3": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LO30.3": [
+          "bank-balance-sheets-reserves-and-capital",
+          "deposit-creation-and-money-multiplier"
+        ],
+        "LO30.4": [
+          "monetary-policy-tools"
+        ],
+        "30.4": [
+          "monetary-policy-tools"
+        ],
+        "LO30.5": [
+          "monetary-control-limits"
+        ],
+        "30.5": [
+          "monetary-control-limits"
+        ],
+        "LO31.4": [
+          "monetary-control-limits",
+          "inflation-costs"
+        ],
+        "LO35.1": [
+          "liquidity-preference-and-money-market"
+        ],
+        "35.1": [
+          "liquidity-preference-and-money-market"
+        ],
+        "LO35.2": [
+          "monetary-policy-transmission"
+        ],
+        "35.2": [
+          "monetary-policy-transmission"
+        ],
+        "LO31.1": [
+          "quantity-theory-of-money"
+        ],
+        "31.1": [
+          "quantity-theory-of-money"
+        ],
+        "LO31.2": [
+          "monetary-neutrality"
+        ],
+        "31.2": [
+          "monetary-neutrality"
+        ],
+        "LO31.3": [
+          "fisher-effect"
+        ],
+        "31.3": [
+          "fisher-effect"
+        ],
+        "31.4": [
+          "inflation-costs"
+        ],
+        "31.5": [
+          "inflation-tax-and-deflation"
+        ],
+        "LO31.5": [
+          "inflation-tax-and-deflation"
+        ]
+      }
+    },
+    "bundleRoutes": {}
+  },
+  "reviewGlobalWarningsRetained": [
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "consumer-and-producer-surplus"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "costs-of-production"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "elasticity"
+    },
+    {
+      "type": "diagnosable-no-sheet-meta",
+      "canonicalConceptId": "integrated-economic-analysis"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "international-trade-and-trade-policy"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopolistic-competition"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "oligopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "perfect-competition"
+    },
+    {
+      "type": "orphan-review",
+      "reviewCode": "MICRO-03"
+    },
+    {
+      "type": "unreachable-review",
+      "reviewCode": "MICRO-03"
+    }
+  ]
+}

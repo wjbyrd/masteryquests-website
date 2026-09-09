@@ -1,0 +1,854 @@
+{
+  "ECON-SP-EASY-5": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. Which item is included in M2 but not M1?",
+    "options": [
+      "Savings deposits",
+      "Checkable deposits",
+      "Coins held by households",
+      "Currency held by the public"
+    ],
+    "feedback": "M2 includes M1 plus near monies such as savings deposits.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": false
+  },
+  "LG-Q-6": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. Which of the following is included in M1?",
+    "options": [
+      "Currency held by the public",
+      "Small time deposits",
+      "Savings deposits",
+      "Money market mutual funds held by individuals"
+    ],
+    "feedback": "M1 includes currency held by the public, checkable deposits, and similar highly liquid transaction balances.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": false
+  },
+  "LG-Q-7": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. Which of the following is part of M2 but not M1?",
+    "options": [
+      "Savings deposits",
+      "Currency",
+      "Checkable deposits",
+      "Traveler's checks"
+    ],
+    "feedback": "Savings deposits are near monies, so they are included in M2 but not M1.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": false
+  },
+  "LG-Q-103": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. Which item would be counted in M2 but not in M1?",
+    "options": [
+      "A savings deposit",
+      "Currency in your wallet",
+      "A checking account deposit",
+      "A traveler's check"
+    ],
+    "feedback": "Savings deposits are near monies. They belong in M2, not M1.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": false
+  },
+  "LG-Q-300": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. A table lists public currency as $600, checkable deposits as $1,400, savings deposits as $1,800, small time deposits as $500, and retail money market mutual funds as $300. What are M1 and M2?",
+    "options": [
+      "M1 = $2,000; M2 = $4,600",
+      "M1 = $600; M2 = $3,200",
+      "M1 = $1,400; M2 = $4,000",
+      "M1 = $2,000; M2 = $2,600"
+    ],
+    "feedback": "M1 is currency plus checkable deposits: $600 + $1,400 = $2,000. M2 adds savings, small time deposits, and retail money market funds: $4,600.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": true
+  },
+  "LG-Q-9011": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. Suppose M1 is $3,000, savings deposits are $2,500, small time deposits are $1,200, retail money market funds are $800, and large time deposits are $900. If large time deposits are not counted in M2, what is M2?",
+    "options": [
+      "$7,500",
+      "$8,400",
+      "$4,500",
+      "$6,600"
+    ],
+    "feedback": "M2 = M1 + savings deposits + small time deposits + retail money market funds = $3,000 + $2,500 + $1,200 + $800 = $7,500.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": true
+  },
+  "LG-Q-9012": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. A household moves $10,000 from a checking account to a savings account. What happens to M1 and M2, using standard course definitions?",
+    "options": [
+      "M1 falls, while M2 is unchanged.",
+      "Both M1 and M2 fall.",
+      "M1 is unchanged, while M2 rises.",
+      "Both M1 and M2 rise."
+    ],
+    "feedback": "Checking deposits are in M1 and M2; savings deposits are in M2 but not M1. Moving funds to savings lowers M1 but leaves M2 unchanged.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": true
+  },
+  "LG-Q-105": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. Suppose M1 is $2,000 billion, savings deposits are $900 billion, small time deposits are $300 billion, and retail money market mutual funds are $200 billion. M2 is",
+    "options": [
+      "$3,400 billion",
+      "$2,000 billion",
+      "$1,400 billion",
+      "$2,300 billion"
+    ],
+    "feedback": "M2 equals M1 plus near monies: $2,000 + $900 + $300 + $200 = $3,400 billion.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": true
+  },
+  "LG-Q-202": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. A table lists currency held by the public as $900, checkable deposits as $1,600, savings deposits as $2,000, small time deposits as $700, and retail money market funds as $300. What are M1 and M2?",
+    "options": [
+      "M1 = $2,500; M2 = $5,500",
+      "M1 = $900; M2 = $4,600",
+      "M1 = $1,600; M2 = $4,600",
+      "M1 = $2,500; M2 = $3,000"
+    ],
+    "feedback": "M1 = currency + checkable deposits = $2,500. M2 = M1 + savings + small time deposits + retail money market funds = $5,500.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": true
+  },
+  "LG-Q-2002": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. Currency held by the public is $900, checkable deposits are $1,100, savings deposits are $1,500, and small time deposits are $500. What are M1 and M2?",
+    "options": [
+      "M1 = $2,000; M2 = $4,000",
+      "M1 = $900; M2 = $2,900",
+      "M1 = $1,100; M2 = $3,100",
+      "M1 = $2,000; M2 = $2,000"
+    ],
+    "feedback": "M1 is $900 + $1,100 = $2,000. M2 adds savings and small time deposits, so M2 = $4,000.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": true
+  },
+  "ECON-SP-DISTINGUISH-M1-M2-5003": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. Which item is in M2 but not M1?",
+    "options": [
+      "Savings deposits",
+      "Currency",
+      "Checkable deposits",
+      "Coins"
+    ],
+    "feedback": "M2 includes near monies such as savings deposits.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": false
+  },
+  "LG-R-5005": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. M2 equals:",
+    "options": [
+      "M1 plus near monies like savings deposits",
+      "Only currency",
+      "Only checkable deposits",
+      "Only government bonds"
+    ],
+    "feedback": "M2 includes M1 plus near monies such as savings deposits.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": false
+  },
+  "LG-B-6001": {
+    "q": "Use U.S. monetary-aggregate definitions in effect before May 2020. Currency is $800, checkable deposits are $1,200, and savings deposits are $1,500. What are M1 and M2?",
+    "options": [
+      "M1 = $2,000; M2 = $3,500",
+      "M1 = $800; M2 = $2,300",
+      "M1 = $1,200; M2 = $2,700",
+      "M1 = $2,000; M2 = $2,000"
+    ],
+    "feedback": "M1 = currency + checkable deposits = $2,000. M2 adds savings deposits, so M2 = $3,500.",
+    "reason": "State the historical aggregate convention; current U.S. M1 includes savings deposits, so an unqualified legacy exclusion is ambiguous.",
+    "numeric": true
+  },
+  "LG-Q-104": {
+    "q": "Currency held by the public is $800 billion and checkable deposits are $1,200 billion. Assume these are the only M1 components with nonzero balances. What is M1?",
+    "options": [
+      "$2,000 billion",
+      "$1,200 billion",
+      "$800 billion",
+      "$400 billion"
+    ],
+    "feedback": "M1 includes currency plus checkable deposits: $800 billion + $1,200 billion = $2,000 billion.",
+    "reason": "Make the incomplete component list an explicit closed calculation.",
+    "numeric": true
+  },
+  "LG-Q-9110": {
+    "q": "Use current U.S. definitions, in which savings deposits are part of M1. A household shifts $75,000 from checking to savings at the same bank. Later the bank originates a $12,000 loan by crediting another customer’s checking account; no loan is repaid and no other balance changes. Relative to the starting totals, how do M1 and M2 change?",
+    "options": [
+      "Both rise by $12,000.",
+      "M1 falls by $63,000; M2 rises by $12,000.",
+      "Both rise by $87,000.",
+      "Both remain unchanged."
+    ],
+    "feedback": "The checking-to-savings transfer changes neither aggregate and does not release reserves. The new loan adds a $12,000 deposit, raising both M1 and M2 by that amount.",
+    "reason": "Remove the false freed-liquidity claim and link account reclassification to actual loan-created deposits.",
+    "numeric": true
+  },
+  "LG-Q-222": {
+    "q": "A bank originates a loan by crediting its borrower’s checking account. The borrower then pays a supplier at a different bank, and the payment settles in reserves. Which comparison correctly separates origination from settlement?",
+    "options": [
+      "Origination adds a loan and a deposit; settlement reduces the originating bank’s reserves and its borrower’s deposit.",
+      "Origination reduces reserves; settlement creates the loan and increases bank capital.",
+      "Origination adds reserves and a deposit; settlement leaves both banks’ reserves unchanged.",
+      "Origination reduces deposits; settlement cancels the originating bank’s loan asset."
+    ],
+    "feedback": "Crediting the account initially adds a loan asset and a deposit liability. The later outgoing payment reduces reserves and the deposit liability; the loan remains an asset.",
+    "reason": "Correct conflation of loan origination with reserve settlement.",
+    "numeric": false
+  },
+  "LG-Q-207": {
+    "q": "Use the textbook reserve-constrained model, with no other changes. A bank has $300,000 in deposits and a 10 percent reserve requirement. It currently holds $45,000 in reserves. If it lends all excess reserves, what will its reserves and loans change by? Assume the borrower immediately pays someone at another bank and the entire payment settles in reserves.",
+    "options": [
+      "Reserves fall by $15,000 and loans rise by $15,000.",
+      "Reserves fall by $30,000 and loans rise by $30,000.",
+      "Reserves fall by $45,000 and loans rise by $45,000.",
+      "Reserves rise by $15,000 and loans fall by $15,000."
+    ],
+    "feedback": "Required reserves are $30,000, so excess reserves are $15,000. Lending those lowers reserves by $15,000 and raises loans by $15,000.",
+    "reason": "The keyed reserve fall occurs after external settlement, not at origination.",
+    "numeric": true
+  },
+  "LG-Q-301": {
+    "q": "Assume the bank cannot obtain extra reserves, sell assets, or retain any new loan proceeds as deposits; every new loan payment would leave the bank. A bank has $900,000 in deposits, a 15 percent reserve requirement, and $135,000 in actual reserves. What can the bank do immediately?",
+    "options": [
+      "It cannot lend more because actual reserves equal required reserves.",
+      "It can lend $135,000 because all reserves are excess reserves.",
+      "It can lend $765,000 because deposits minus reserves are lendable.",
+      "It must borrow $15,000 from the Fed."
+    ],
+    "feedback": "Required reserves are 0.15 x $900,000 = $135,000. Actual reserves equal required reserves, so there are no excess reserves to lend.",
+    "reason": "Make inability to expand a stated constraint rather than a general prohibition on bank lending.",
+    "numeric": true
+  },
+  "LG-Q-303": {
+    "q": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. A public cash deposit of $8,000 enters a banking system with a 20 percent reserve requirement. What is the first bank's initial loan and the maximum total deposit expansion?",
+    "options": [
+      "Initial loan = $6,400; total expansion = $40,000",
+      "Initial loan = $1,600; total expansion = $8,000",
+      "Initial loan = $8,000; total expansion = $40,000",
+      "Initial loan = $6,400; total expansion = $32,000"
+    ],
+    "feedback": "The first bank keeps 20 percent, or $1,600, and lends $6,400. The multiplier is 5, so total deposit expansion can reach $40,000. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "reason": "Specify source, model assumptions and gross deposit measure without changing the calculation or routing.",
+    "numeric": true
+  },
+  "LG-Q-224": {
+    "q": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. Suppose the reserve ratio is 25 percent and a public cash deposit of $4,000 enters the banking system. What is the maximum total deposit expansion and the first bank's initial loan?",
+    "options": [
+      "Maximum expansion = $16,000; initial loan = $3,000",
+      "Maximum expansion = $4,000; initial loan = $1,000",
+      "Maximum expansion = $3,000; initial loan = $16,000",
+      "Maximum expansion = $1,000; initial loan = $4,000"
+    ],
+    "feedback": "Multiplier is 1 / 0.25 = 4, so total expansion is $16,000. First bank keeps $1,000 and lends $3,000. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "reason": "Specify source, model assumptions and gross deposit measure without changing the calculation or routing.",
+    "numeric": true
+  },
+  "LG-Q-2008": {
+    "q": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. A public cash deposit of $5,000 enters a banking system with a 20 percent reserve requirement. What is the first bank's initial loan and the simple maximum total deposit expansion?",
+    "options": [
+      "Initial loan = $4,000; total expansion = $25,000",
+      "Initial loan = $1,000; total expansion = $5,000",
+      "Initial loan = $5,000; total expansion = $25,000",
+      "Initial loan = $4,000; total expansion = $20,000"
+    ],
+    "feedback": "The bank lends $4,000. The multiplier is 1/0.20 = 5, so total expansion can reach $25,000. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "reason": "Specify source, model assumptions and gross deposit measure without changing the calculation or routing.",
+    "numeric": true
+  },
+  "P52A-BANK-B3-003": {
+    "q": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. A $10,000 deposit enters a system with a 20 percent reserve requirement. If banks lend all excess reserves and loans are redeposited, maximum total deposits are:",
+    "options": [
+      "$50,000.",
+      "$200,000.",
+      "$40,000.",
+      "$8,000."
+    ],
+    "feedback": "The multiplier is 5, so total deposits can rise by $50,000. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "reason": "Specify source, model assumptions and gross deposit measure without changing the calculation or routing.",
+    "numeric": true
+  },
+  "LG-B-6005": {
+    "q": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. A $10,000 deposit enters a system with a 20% reserve ratio. What is the maximum total deposit expansion?",
+    "options": [
+      "$50,000",
+      "$10,000",
+      "$8,000",
+      "$2,000"
+    ],
+    "feedback": "The multiplier is 5, so total expansion can reach $50,000. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "reason": "Specify source, model assumptions and gross deposit measure without changing the calculation or routing.",
+    "numeric": true
+  },
+  "LG-Q-314": {
+    "q": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. The public moves $50 million from currency into checking deposits. The reserve ratio is 10 percent and banks lend all excess reserves. What is the maximum total deposit expansion supported by this shift?",
+    "options": [
+      "$500 million",
+      "$50 million",
+      "$45 million",
+      "$5 million"
+    ],
+    "feedback": "Moving currency into deposits gives banks reserves to support lending. With a multiplier of 10, $50 million can support up to $500 million in deposits. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "reason": "Specify source, model assumptions and gross deposit measure without changing the calculation or routing.",
+    "numeric": true
+  },
+  "LG-Q-9019": {
+    "q": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. If the public deposits $30 million in currency into banks, the reserve ratio is 15 percent, and banks lend all excess reserves, what is the maximum total deposit expansion?",
+    "options": [
+      "$200 million",
+      "$30 million",
+      "$25.5 million",
+      "$4.5 million"
+    ],
+    "feedback": "The multiplier is 1/0.15 = 6.666..., so $30 million can support about $200 million in total deposits. The initial cash deposit itself replaces public currency with deposits; it is not net new money.",
+    "reason": "Specify source, model assumptions and gross deposit measure without changing the calculation or routing.",
+    "numeric": true
+  },
+  "LG-Q-205": {
+    "q": "In a hypothetical system, a household deposits $10,000 of currency previously held outside banks. Banks initially meet a fixed 20 percent reserve ratio exactly, lend every new excess reserve dollar, and all loan payments are redeposited without currency drain. No other constraint binds. What are the first bank’s loan and the eventual net increase in currency plus checking deposits?",
+    "options": [
+      "First loan $8,000; net money increase $40,000.",
+      "First loan $8,000; net money increase $50,000.",
+      "First loan $2,000; net money increase $40,000.",
+      "First loan $10,000; net money increase $50,000."
+    ],
+    "feedback": "Required reserves on the initial deposit are $2,000, leaving an $8,000 first loan. Total deposits rise by $10,000/0.20 = $50,000, but public currency falls by $10,000. Net money creation is $40,000.",
+    "reason": "Correct total deposits versus newly created money; retain ordinary Hard reserve arithmetic.",
+    "numeric": true
+  },
+  "LG-Q-9018": {
+    "q": "Use a hypothetical fixed-ratio reserve model with no currency drain: every loan payment is fully redeposited, credit demand is sufficient, and no other constraint binds. A bank has $5 million in deposits, $700,000 in reserves, and a 10 percent reserve requirement. It lends all excess reserves, and every later bank does the same. What is the maximum total money expansion created by the excess reserves?",
+    "options": [
+      "$2 million",
+      "$700,000",
+      "$200,000",
+      "$5 million"
+    ],
+    "feedback": "Required reserves are $500,000, so excess reserves are $200,000. With multiplier 10, maximum expansion from excess reserves is $2 million.",
+    "reason": "State the assumptions supporting maximum expansion of preexisting excess reserves.",
+    "numeric": true
+  },
+  "LG-Q-9109": {
+    "q": "Use a hypothetical fixed-ratio reserve model with no currency drain: every loan payment is fully redeposited, credit demand is sufficient, and no other constraint binds. A bank has $10 million in deposits and $1.3 million in reserves. The reserve ratio is 10 percent. If the bank lends all excess reserves and every later bank does the same, what maximum total deposit expansion can the excess reserves support?",
+    "options": [
+      "$3 million",
+      "$13 million",
+      "$1.3 million",
+      "$300,000"
+    ],
+    "feedback": "Required reserves are $1 million, so excess reserves are $300,000. With multiplier 10, maximum expansion is $3 million.",
+    "reason": "State the assumptions supporting maximum expansion of preexisting excess reserves.",
+    "numeric": true
+  },
+  "LG-Q-9000": {
+    "q": "In a hypothetical system with a fixed 12.5 percent reserve ratio, a household deposits $28,000 of existing public currency. Banks initially have no excess reserves. Every bank lends all new excess reserves, all loan payments are redeposited, and no other constraint binds. An analyst counts the first deposit as new money and reports the full deposit increase as money creation. Which set of results diagnoses the error?",
+    "options": [
+      "First loan $24,500; deposit increase $224,000; net money increase $196,000.",
+      "First loan $24,500; deposit increase $196,000; net money increase $224,000.",
+      "First loan $3,500; deposit increase $224,000; net money increase $224,000.",
+      "First loan $28,000; deposit increase $196,000; net money increase $168,000."
+    ],
+    "feedback": "The first loan is $28,000 × 0.875 = $24,500. Deposits rise by $28,000/0.125 = $224,000. Subtract the $28,000 decline in public currency to obtain $196,000 of net money creation.",
+    "reason": "Replace repeated paired arithmetic with linked first-round, system and aggregate reconciliation.",
+    "numeric": true
+  },
+  "LG-Q-9008": {
+    "q": "In two hypothetical steady states, the public holds no currency and banks have a fixed required-reserve ratio of 10 percent. The observed deposit-to-reserve ratio falls from 8 to 5. Assume all reserves are either required or deliberately held as excess reserves. Which diagnosis fits both observations?",
+    "options": [
+      "The excess-reserve share of deposits rose from 2.5 to 10 percent.",
+      "The required-reserve ratio rose from 12.5 to 20 percent.",
+      "The excess-reserve share of deposits fell from 10 to 2.5 percent.",
+      "The public currency-to-deposit ratio rose from 2.5 to 10 percent."
+    ],
+    "feedback": "Total reserves/deposits are the reciprocal of deposits/reserves: 12.5 percent, then 20 percent. Subtract the unchanged 10 percent requirement to infer excess-reserve shares of 2.5 and 10 percent.",
+    "reason": "Separate observed effective reserve behavior from the legally fixed reserve requirement.",
+    "numeric": true
+  },
+  "LG-Q-9112": {
+    "q": "A hypothetical system starts with no excess reserves. A public cash deposit of $25,000 enters the first bank. Each bank keeps the fixed 8 percent required reserve and lends the remainder. After each loan, 25 percent of its proceeds stays as public currency and 75 percent is deposited at the next bank. What is the second bank’s loan, and how much smaller is it than under full redepositing?",
+    "options": [
+      "$15,870; $5,290 smaller.",
+      "$21,160; no reduction.",
+      "$17,250; $3,910 smaller.",
+      "$5,290; $15,870 smaller."
+    ],
+    "feedback": "The first loan is $23,000. The next deposit is $23,000 × 0.75 = $17,250, of which 92 percent can be lent: $15,870. Full redepositing would permit $21,160, a difference of $5,290.",
+    "reason": "Require multi-bank propagation with an explicit currency leak instead of repeated unqualified second-round arithmetic.",
+    "numeric": true
+  },
+  "LG-Q-209": {
+    "q": "If the Fed wants to reduce the money supply by exactly $120 million and the money multiplier is 6, how many bonds should it sell?",
+    "options": [
+      "$20 million",
+      "$120 million",
+      "$720 million",
+      "$6 million"
+    ],
+    "feedback": "To reduce money by $120 million with a multiplier of 6, the Fed sells $20 million in bonds.",
+    "reason": "Replace an at-most target with an exact target so smaller policy operations are not also valid.",
+    "numeric": true
+  },
+  "LG-Q-9003": {
+    "q": "In a hypothetical steady-state banking model, the required-reserve ratio is 10 percent, banks hold excess reserves equal to 5 percent of deposits, and the public holds currency equal to 25 percent of deposits. These ratios remain fixed. Money is currency plus deposits; the monetary base is currency plus total reserves. What base increase is needed for a $250 million money increase, and why is the simple 1/required-ratio estimate too small?",
+    "options": [
+      "$80 million; both currency holdings and excess reserves absorb base money.",
+      "$25 million; every base dollar supports ten dollars of money.",
+      "$100 million; currency is excluded from the money measure.",
+      "$62.5 million; retaining a fixed fraction once describes every lending round."
+    ],
+    "feedback": "With deposits D, money is 1.25D and the base is (0.25 + 0.10 + 0.05)D = 0.40D. The money/base ratio is 3.125, so the base must rise $250/3.125 = $80 million. The simple multiplier ignores both leakages.",
+    "reason": "Replace the incoherent one-time 80-percent scalar with a fully specified currency/excess-reserve model and reverse policy target.",
+    "numeric": true
+  },
+  "LG-Q-9010": {
+    "q": "A hypothetical bank has $600,000 in deposits and $90,000 in reserves. The required-reserve ratio rises from 10 to 15 percent. The bank cannot obtain new reserves, and any additional loan payment would settle at another bank. Which conclusion distinguishes its reserve position from its ability to expand?",
+    "options": [
+      "It meets the new requirement exactly, but has no excess reserves for an outgoing loan.",
+      "It has a $30,000 reserve deficit and must obtain reserves just to comply.",
+      "It retains $30,000 of excess reserves because deposits have not changed.",
+      "It must shrink deposits by $90,000 even if it makes no new loan."
+    ],
+    "feedback": "Required reserves rise from $60,000 to $90,000, exactly equal to actual reserves. The bank is compliant but the specified settlement constraint prevents further outgoing lending without adjustment.",
+    "reason": "Correct the implication that a fully compliant bank must acquire reserves; distinguish compliance from expansion.",
+    "numeric": true
+  },
+  "LG-Q-9114": {
+    "q": "A policy memo claims that supplying more reserves guarantees the full textbook deposit expansion, even when creditworthy firms postpone borrowing and banks retain excess reserves. Which correction addresses both breaks in the argument?",
+    "options": [
+      "Banks must be willing to lend and borrowers willing to borrow; unused reserves do not guarantee new deposits.",
+      "Only the reserve requirement matters; banks and borrowers cannot alter the predicted expansion.",
+      "Borrower caution raises the multiplier because fewer loans consume fewer reserves.",
+      "Excess reserves are already customer deposits, so the predicted expansion has occurred."
+    ],
+    "feedback": "The reserve injection is an input to a conditional model. Both bank decisions and credit demand can prevent the lending and redepositing needed to reach its maximum.",
+    "reason": "Restore the missing claim and require diagnosis of two distinct private-behavior constraints.",
+    "numeric": false
+  },
+  "LG-Q-9108": {
+    "q": "In a hypothetical banking system initially without excess reserves, the public deposits $56,000 of existing currency. The required-reserve ratio stays at 20 percent. Each bank lends all excess reserves; after every loan, 25 percent stays as currency and 75 percent reaches the next bank. No other constraint binds. Including the initial deposit, what is the eventual deposit increase, and what is the net increase in currency plus deposits?",
+    "options": [
+      "Deposits rise $140,000; net money rises $112,000.",
+      "Deposits rise $280,000; net money rises $224,000.",
+      "Deposits rise $140,000; net money rises $140,000.",
+      "Deposits rise $112,000; net money rises $84,000."
+    ],
+    "feedback": "Successive deposits have ratio 0.80 × 0.75 = 0.60, so their sum is $56,000/(1 − 0.60) = $140,000. Total loans are 0.80 × $140,000 = $112,000; $28,000 returns to public currency. Currency changes by −$56,000 + $28,000, so net money rises $112,000.",
+    "reason": "Replace a qualitative upper checkpoint with a complete repeated-leakage reconciliation.",
+    "numeric": true
+  },
+  "LG-Q-9006": {
+    "q": "In a hypothetical fully loaned-up system with a fixed 10 percent reserve ratio and no excess reserves, the public permanently switches $36 million from deposits to currency. The monetary base stays fixed. Banks restore their reserve ratios through loan repayments that destroy deposits; there are no defaults or other changes. What are the final changes in deposits and in currency plus deposits?",
+    "options": [
+      "Deposits fall $360 million; money falls $324 million.",
+      "Deposits fall $36 million; money is unchanged.",
+      "Deposits fall $360 million; money falls $396 million.",
+      "Deposits fall $324 million; money falls $360 million."
+    ],
+    "feedback": "Currency rises $36 million and reserves fall $36 million. At reserves/deposits = 0.10, deposits must fall $360 million in total. Money changes by +$36 million − $360 million = −$324 million.",
+    "reason": "Make contraction mechanics and public currency accounting explicit rather than implying that withdrawal itself destroys money.",
+    "numeric": true
+  },
+  "ECON-SP-MEDIUM-142": {
+    "q": "Refer to the money-market graph. With MD1 unchanged, money supply increases from MS1 to MS2. Which equilibrium movement follows?",
+    "options": [
+      "e to g",
+      "g to e",
+      "a to d",
+      "c to f"
+    ],
+    "feedback": "MD1 intersects MS1 at e and MS2 at g. Increasing supply moves equilibrium from e to g and lowers the nominal interest rate.",
+    "reason": "Correct a reversed answer key and feedback using visible MS1/MS2 intersections.",
+    "numeric": false
+  },
+  "PG4-MM-L-004": {
+    "q": "Refer to the graph. The economy starts at B with MD0 and MS0. Money demand changes to MD1. The central bank increases money supply to MS1, but wants to restore B’s original nominal interest rate. If the straight MD1 line continues as drawn, approximately how much additional money beyond MS1 is needed?",
+    "options": [
+      "12.5 units; a total money quantity of 112.5.",
+      "25 units; a total money quantity of 125.",
+      "No additional money; C already restores the original rate.",
+      "75 units; a total money quantity of 175."
+    ],
+    "feedback": "B’s rate is 3. MD1 passes through A at (75,6) and C at (100,4), a fall of 2 rate points per 25 money units. A further 1-point fall requires 12.5 additional units, beyond MS1 at 100.",
+    "reason": "Use actual graph slope and a reverse policy target to strengthen a repeated upper-tier offset prompt.",
+    "numeric": true
+  },
+  "LG-Q-336": {
+    "q": "Refer to the value-of-money graph. The economy moves from a to b. In a long-run comparison, a nominal wage rises by the same proportion as the price level inferred from those points, and technology and labor supplies are unchanged. Which comparison fits monetary neutrality?",
+    "options": [
+      "The price level and nominal wage rise by one-third; the real wage need not change.",
+      "The price level falls by one-quarter; the real wage must rise.",
+      "The price level doubles; unchanged real resources require output to double.",
+      "The price level rises by one-third; the real wage must also rise by one-third."
+    ],
+    "feedback": "The graph gives value of money 2 at a and 1.5 at b. Their reciprocal price levels are 1/2 and 2/3, a one-third increase. Proportional nominal wage growth leaves the real wage unchanged; nominal changes alone do not raise real productive capacity.",
+    "reason": "Replace graph-inconsistent price levels with actual reciprocal readings and linked nominal/real inference.",
+    "numeric": true
+  },
+  "LG-Q-9115": {
+    "q": "Refer to the value-of-money graph. A worker earns $24 at point a and $30 at point b. Treat each point’s price level as the reciprocal of its displayed value of money. What happens to the worker’s real wage, and what nominal wage at b would instead preserve the original purchasing power?",
+    "options": [
+      "Real wage falls from 48 to 45 output units; $32 would preserve it.",
+      "Real wage rises from 12 to 20 output units; $18 would preserve it.",
+      "Real wage rises from 48 to 60 output units; $24 would preserve it.",
+      "Real wage falls from 48 to 45 output units; $36 would preserve it."
+    ],
+    "feedback": "P is 1/2 at a and 2/3 at b. Real wages are 24/(1/2) = 48 and 30/(2/3) = 45. To retain 48 units at b requires 48 × 2/3 = $32.",
+    "reason": "Correct attached graph values and require both forward comparison and reverse wage compensation.",
+    "numeric": true
+  },
+  "LG-Q-9029": {
+    "q": "Refer to the graph. An analyst describes the move from a to b as a rightward shift of money demand and says that doubling the money quantity proves a doubling of the price level. Which diagnosis uses both curve evidence and the vertical-axis scale?",
+    "options": [
+      "MD is unchanged; the price level rises by one-third, so constant output would require velocity to fall.",
+      "MD shifts right; the price level doubles, so velocity can remain fixed.",
+      "MD is unchanged; the price level falls by one-quarter, so velocity must rise.",
+      "MD shifts left; the price level is unchanged because the money supply is vertical."
+    ],
+    "feedback": "The same MD contains both a and b. Money doubles from 2,500 to 5,000, while P rises from 1/2 to 2/3, a factor of 4/3. With Y fixed, MV = PY requires velocity to change by (4/3)/2 = 2/3, so it falls.",
+    "reason": "Turn a repeated shift correction into diagnosis of two competing claims using actual image geometry.",
+    "numeric": true
+  },
+  "LG-Q-9031": {
+    "q": "An economy plans for real output to grow 4 percent and the price level to grow 2 percent over one year. A payments change is expected to reduce velocity by 3 percent. Using the exact multiplicative quantity equation, approximately what money-growth rate meets both targets, and why would simply adding 2 and 4 be insufficient?",
+    "options": [
+      "9.36 percent; money must also offset the velocity decline.",
+      "6 percent; velocity has no effect when output growth is given.",
+      "3 percent; declining velocity reduces the money needed.",
+      "9 percent exactly; percentage growth rates always add exactly."
+    ],
+    "feedback": "The required money growth factor is (1.02 × 1.04)/0.97 = 1.093608..., so growth is about 9.36 percent. The sum approximation gives 9 percent, but is not the exact multiplicative result.",
+    "reason": "Strengthen a one-step Legendary growth calculation with reverse inference and an explicit exact-versus-approximate distinction.",
+    "numeric": true
+  },
+  "LG-Q-9035": {
+    "q": "A lender’s one-year fixed nominal contract pays 12 percent. Expected inflation when written was 5 percent, but actual inflation is 9 percent. Use exact gross returns. What are the expected and realized real returns, and what nominal rate on a new loan would preserve the original expected real return if expected inflation is now 9 percent?",
+    "options": [
+      "About 6.67 percent, 2.75 percent, and 16.27 percent.",
+      "7 percent, 3 percent, and 16 percent exactly.",
+      "About 2.75 percent, 6.67 percent, and 12 percent.",
+      "About 6.67 percent, 2.75 percent, and 12 percent."
+    ],
+    "feedback": "Expected real return is 1.12/1.05 − 1 = 6.67 percent; realized is 1.12/1.09 − 1 = 2.75 percent. Preserving the original gross real return on a new loan requires (1.12/1.05) × 1.09 − 1 = 16.27 percent nominal.",
+    "reason": "Differentiate a Legendary contract reconstruction from ordinary Fisher subtraction already covered at Hard.",
+    "numeric": true
+  },
+  "LG-Q-9047": {
+    "q": "A one-time monetary expansion lowers the value of money today. Credible guidance says the money-growth rate will then return to its previous path. The long-run real interest rate is unchanged. An analyst concludes that nominal interest rates must remain permanently higher. Which evaluation is strongest?",
+    "options": [
+      "A one-time price-level rise does not establish permanently higher expected inflation, so the lasting nominal-rate claim is unsupported.",
+      "The higher price level guarantees permanently higher inflation, so the nominal-rate claim follows.",
+      "The lower value of money proves the real interest rate falls permanently, so nominal rates must fall.",
+      "Monetary neutrality makes expected inflation irrelevant to nominal rates, so the Fisher relationship does not apply."
+    ],
+    "feedback": "The Fisher effect relates nominal rates to expected inflation over the loan horizon. A level adjustment alone does not establish a continuing inflation-rate increase. The real-rate assumption therefore does not complete the analyst’s argument.",
+    "reason": "Separate a price-level movement from a sustained expected-inflation change; avoid causal inference unsupported by the graph-like scenario.",
+    "numeric": false
+  },
+  "LG-Q-9128": {
+    "q": "A country’s nominal loan rate falls from 16 to 9 percent while expected inflation falls from 12 to 4 percent. Using the Fisher approximation, what happens to the expected real rate, and by how much would the new nominal rate have had to fall further to preserve its original expected real rate?",
+    "options": [
+      "The expected real rate rises from 4 to 5 percent; a further 1-point nominal cut was needed.",
+      "The expected real rate falls from 4 to 3 percent; a further 1-point nominal cut was needed.",
+      "The expected real rate stays at 4 percent; no further nominal change was needed.",
+      "The expected real rate rises from 4 to 5 percent; a further 5-point nominal cut was needed."
+    ],
+    "feedback": "Subtract expected inflation: 16 − 12 = 4 initially and 9 − 4 = 5 later. Preserving a real rate of 4 with expected inflation of 4 requires a nominal rate of 8, one point below 9.",
+    "reason": "Make the inflation expectation explicit and add reverse inference to repeated upper-tier subtraction.",
+    "numeric": true
+  },
+  "LG-Q-9129": {
+    "q": "All long-term debt is fully price-indexed, wage contracts adjust correctly, and inflation is perfectly anticipated. Firms still reprice at different times and households spend time moving funds out of non-interest-bearing cash. Which evaluation separates what indexation resolves from what it leaves?",
+    "options": [
+      "Debt indexation limits surprise redistribution; asynchronous prices and cash management can still consume resources or distort signals.",
+      "Debt indexation eliminates all inflation costs because every relative price must adjust at the same instant.",
+      "The remaining cash-management costs transfer wealth from borrowers to lenders without using real resources.",
+      "Perfect anticipation eliminates repricing costs but creates unexpected redistribution on the indexed debt."
+    ],
+    "feedback": "Indexation protects the real value of the specified debt. It does not make repricing instantaneous or eliminate the effort spent economizing on non-interest-bearing cash.",
+    "reason": "Strengthen a repeated Legendary misconception correction through comparison of protected contracts and remaining resource costs.",
+    "numeric": false
+  },
+  "LG-Q-249": {
+    "q": "A household keeps a fixed $720 cash balance while the price level rises from 1.2 to 1.5 during money-financed government spending. How much purchasing power, measured in units of the composite good, does this unchanged balance lose?",
+    "options": [
+      "120 units.",
+      "180 units.",
+      "144 units.",
+      "No units, because the nominal balance is fixed."
+    ],
+    "feedback": "The cash initially buys 720/1.2 = 600 units and later buys 720/1.5 = 480 units. The loss is 120 units; an unchanged dollar balance need not preserve purchasing power.",
+    "reason": "Give an existing Hard inflation-tax item substantive real-balance arithmetic rather than another burden-identification question.",
+    "numeric": true
+  },
+  "LG-Q-9041": {
+    "q": "Unexpected deflation reduces the price level from 1.25 to 1.00. A firm’s fixed nominal debt is $48,000. Its sales volume is unchanged, and its $12,000 nominal operating cash flow falls in the same proportion as the price level. Which pair describes the debt burden and the cash-flow pressure?",
+    "options": [
+      "Real debt rises from 38,400 to 48,000 units; debt/cash flow rises from 4 to 5.",
+      "Real debt falls from 48,000 to 38,400 units; debt/cash flow falls from 5 to 4.",
+      "Real debt rises from 38,400 to 48,000 units; debt/cash flow stays at 4.",
+      "Real debt stays at 48,000 units; debt/cash flow rises from 4 to 5."
+    ],
+    "feedback": "Real debt rises from 48,000/1.25 = 38,400 to 48,000/1 = 48,000. Nominal cash flow becomes 12,000 × 1/1.25 = 9,600. Debt/cash flow therefore rises from 4 to 5, despite unchanged sales volume.",
+    "reason": "Replace a repetitive directional Legendary prompt with linked real-debt and repayment-capacity analysis.",
+    "numeric": true
+  },
+  "PG4-MPT-L-001": {
+    "q": "Refer to the two-panel graph. Between A and B, the central bank expands money supply while SRAS stays fixed. A commentator says output and prices rose by the same percentage because they both rose. Which numerical comparison and inference are supported?",
+    "options": [
+      "Output rises 25 percent and the price level 12.5 percent; their responses need not be proportional.",
+      "Output rises 12.5 percent and the price level 25 percent; their responses must be proportional.",
+      "Both rise 25 percent; equal directions establish equal percentage changes.",
+      "Both rise 6.25 percent; a common point label establishes a common percentage change."
+    ],
+    "feedback": "Read output 100 to 125 and P 50 to 56.25. Their percentage changes are 25/100 = 25 percent and 6.25/50 = 12.5 percent. The diagram supplies distinct responses along fixed SRAS.",
+    "reason": "Use both panels’ numerical evidence to evaluate a claim rather than repeat the Hard direction chain.",
+    "numeric": true
+  },
+  "LG-Q-9131": {
+    "q": "Refer to the graph showing MS1 to MS2. In a fixed-price spending model, the resulting investment loss is $90 billion, while an independent recovery in business expectations adds $30 billion of autonomous investment. MPC is 0.6; there are no taxes, imports or further interest-rate feedbacks. What is the net shift in aggregate demand, and what independent investment recovery would exactly cancel the monetary effect?",
+    "options": [
+      "AD shifts left $150 billion; a $90 billion recovery would cancel it.",
+      "AD shifts left $225 billion; a $30 billion recovery would cancel it.",
+      "AD shifts left $60 billion; a $150 billion recovery would cancel it.",
+      "AD shifts right $150 billion; a $90 billion recovery would cancel it."
+    ],
+    "feedback": "The graph supplies contractionary direction. Net autonomous investment is −90 + 30 = −60. With multiplier 1/(1 − 0.6) = 2.5, AD shifts left $150 billion. Exact cancellation requires a $90 billion independent recovery, before multiplication.",
+    "reason": "Remove ambiguous fiscal-offset units, retain the selected investment channel, and add a reverse cancellation condition.",
+    "numeric": true
+  },
+  "LG-Q-242": {
+    "q": "Use the Fisher approximation. The nominal interest rate is 11 percent and expected inflation is 7 percent. If actual inflation turns out to be 10 percent, what is the realized real interest rate?",
+    "options": [
+      "1 percent",
+      "4 percent",
+      "3 percent",
+      "21 percent"
+    ],
+    "feedback": "The realized real rate uses actual inflation: 11 - 10 = 1 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-243": {
+    "q": "Use the Fisher approximation. If expected inflation rises from 3 percent to 8 percent and the real interest rate remains 2 percent, what happens to the nominal interest rate?",
+    "options": [
+      "It rises from 5 percent to 10 percent.",
+      "It falls from 5 percent to 2 percent.",
+      "It rises from 3 percent to 8 percent.",
+      "It stays at 2 percent."
+    ],
+    "feedback": "Nominal rate = real rate + expected inflation. It rises from 2 + 3 = 5 to 2 + 8 = 10.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-341": {
+    "q": "Use the Fisher approximation. A borrower signs a loan at 9 percent nominal interest when expected inflation is 4 percent. Actual inflation is 7 percent. What happened to the realized real interest rate compared with what the lender expected?",
+    "options": [
+      "It fell from 5 percent expected to 2 percent realized.",
+      "It rose from 5 percent expected to 7 percent realized.",
+      "It stayed at 5 percent because nominal interest was fixed.",
+      "It fell from 9 percent expected to 4 percent realized."
+    ],
+    "feedback": "Expected real rate was 9 - 4 = 5 percent. Realized real rate was 9 - 7 = 2 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-342": {
+    "q": "Use the Fisher approximation. Expected inflation rises from 2 percent to 9 percent. If the real interest rate is stable at 3 percent, what should happen to the nominal interest rate under the Fisher effect?",
+    "options": [
+      "It rises from 5 percent to 12 percent.",
+      "It falls from 5 percent to 3 percent.",
+      "It rises from 2 percent to 9 percent.",
+      "It stays at 3 percent."
+    ],
+    "feedback": "Nominal rate equals real rate plus expected inflation. It rises from 3 + 2 = 5 to 3 + 9 = 12 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-9036": {
+    "q": "Use the Fisher approximation. Expected inflation rises from 4 percent to 11 percent. The real interest rate falls from 3 percent to 2 percent. What happens to the nominal interest rate?",
+    "options": [
+      "It rises from 7 percent to 13 percent.",
+      "It rises from 4 percent to 11 percent.",
+      "It falls from 7 percent to 2 percent.",
+      "It stays at 7 percent."
+    ],
+    "feedback": "Initial nominal rate is 3 + 4 = 7 percent. New nominal rate is 2 + 11 = 13 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-3008": {
+    "q": "Use the Fisher approximation. Expected inflation rises from 3 percent to 8 percent while the real interest rate falls from 4 percent to 2 percent. What happens to the nominal interest rate?",
+    "options": [
+      "It rises from 7 percent to 10 percent.",
+      "It falls from 7 percent to 2 percent.",
+      "It rises from 3 percent to 8 percent.",
+      "It stays at 7 percent."
+    ],
+    "feedback": "Initial nominal rate is 4 + 3 = 7 percent. New nominal rate is 2 + 8 = 10 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-9117": {
+    "q": "Use the Fisher approximation. If MS shifts right and the value of money falls, expected inflation rises from 3 percent to 9 percent. If the real interest rate stays at 2 percent, what happens to the nominal interest rate?",
+    "options": [
+      "It rises from 5 percent to 11 percent.",
+      "It falls from 5 percent to 2 percent.",
+      "It rises from 3 percent to 9 percent.",
+      "It stays at 5 percent."
+    ],
+    "feedback": "Nominal rate equals real rate plus expected inflation. It rises from 2 + 3 = 5 to 2 + 9 = 11 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-9127": {
+    "q": "Use the Fisher approximation. Expected inflation rises from 2 percent to 10 percent while the real rate falls from 4 percent to 1 percent. What happens to the nominal interest rate, and why is this not a contradiction?",
+    "options": [
+      "It rises from 6 percent to 11 percent because expected inflation rose more than the real rate fell.",
+      "It falls from 6 percent to 1 percent because the real rate fell.",
+      "It stays at 6 percent because changes cancel exactly.",
+      "It rises from 2 percent to 10 percent because real rates do not matter."
+    ],
+    "feedback": "Initial nominal rate is 4 + 2 = 6 percent. New nominal rate is 1 + 10 = 11 percent. Expected inflation rose more than the real rate fell.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "ECON-SP-MEDIUM-115": {
+    "q": "Use the Fisher approximation. Expected inflation rises from 3 percent to 6 percent while the real interest rate stays at 2 percent. The nominal rate becomes:",
+    "options": [
+      "8 percent",
+      "3 percent",
+      "5 percent",
+      "6 percent"
+    ],
+    "feedback": "Nominal interest rate equals real interest rate plus expected inflation, so 2 + 6 = 8 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "ECON-SP-HARD-209": {
+    "q": "Use the Fisher approximation. If the real interest rate is 3 percent and expected inflation rises from 4 percent to 9 percent, the Fisher effect predicts the nominal rate rises by:",
+    "options": [
+      "5 points",
+      "3 points",
+      "4 points",
+      "9 points"
+    ],
+    "feedback": "Expected inflation rises by 5 percentage points, so the nominal rate rises by 5 points.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-R-5033": {
+    "q": "Use the Fisher approximation. If real interest is 3% and expected inflation is 5%, nominal interest is:",
+    "options": [
+      "8%",
+      "2%",
+      "5%",
+      "15%"
+    ],
+    "feedback": "Nominal interest is 3% + 5% = 8%.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "ECON-SP-FISHER-EFFECT-6015": {
+    "q": "Use the Fisher approximation. If the real interest rate is 2 percent and expected inflation is 6 percent, the nominal interest rate is:",
+    "options": [
+      "8 percent",
+      "6 percent",
+      "4 percent",
+      "2 percent"
+    ],
+    "feedback": "Nominal interest rate equals real interest rate plus expected inflation, so 2 + 6 = 8 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-B-6013": {
+    "q": "Use the Fisher approximation. Real interest is 2% and expected inflation is 6%. Nominal interest is:",
+    "options": [
+      "8%",
+      "4%",
+      "6%",
+      "12%"
+    ],
+    "feedback": "Nominal interest is 2% + 6% = 8%.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-343": {
+    "q": "Use the Fisher approximation. A lender expected 6 percent inflation and charged 11 percent nominal interest. Actual inflation was 3 percent. Who gains from the surprise and what is the realized real rate?",
+    "options": [
+      "Lender gains; realized real rate is 8 percent.",
+      "Borrower gains; realized real rate is 5 percent.",
+      "Lender gains; realized real rate is 5 percent.",
+      "Borrower gains; realized real rate is 14 percent."
+    ],
+    "feedback": "Actual inflation was lower than expected, so the lender gains. Realized real rate is 11 - 3 = 8 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-344": {
+    "q": "Use the Fisher approximation. A borrower expected 3 percent inflation on a loan with a 7 percent nominal rate. Actual inflation was 10 percent. Who gains and what is the realized real rate?",
+    "options": [
+      "Borrower gains; realized real rate is -3 percent.",
+      "Lender gains; realized real rate is 4 percent.",
+      "Borrower gains; realized real rate is 7 percent.",
+      "Lender gains; realized real rate is -3 percent."
+    ],
+    "feedback": "Actual inflation was higher than expected, so borrowers gain. The realized real rate is 7 - 10 = -3 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-9037": {
+    "q": "Use the Fisher approximation. A lender expected 3 percent inflation and charged 8 percent nominal interest. Actual inflation was 12 percent. Who gains, and what is the realized real rate?",
+    "options": [
+      "Borrower gains; realized real rate is -4 percent.",
+      "Lender gains; realized real rate is 5 percent.",
+      "Borrower gains; realized real rate is 8 percent.",
+      "Lender gains; realized real rate is -4 percent."
+    ],
+    "feedback": "Actual inflation exceeded expected inflation, so borrowers gain. The realized real rate is 8 - 12 = -4 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-9038": {
+    "q": "Use the Fisher approximation. A lender expected 8 percent inflation and charged 13 percent nominal interest. Actual inflation was 2 percent. Who gains, and what is the realized real rate?",
+    "options": [
+      "Lender gains; realized real rate is 11 percent.",
+      "Borrower gains; realized real rate is 5 percent.",
+      "Lender gains; realized real rate is 5 percent.",
+      "Borrower gains; realized real rate is 11 percent."
+    ],
+    "feedback": "Actual inflation was lower than expected, so lenders gain. The realized real rate is 13 - 2 = 11 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-3011": {
+    "q": "Use the Fisher approximation. A loan has a 9 percent nominal interest rate. Expected inflation was 3 percent, but actual inflation was 10 percent. Who gains, and what is the realized real interest rate?",
+    "options": [
+      "Borrower gains; realized real rate is -1 percent.",
+      "Lender gains; realized real rate is 6 percent.",
+      "Borrower gains; realized real rate is 9 percent.",
+      "Lender gains; realized real rate is -1 percent."
+    ],
+    "feedback": "Actual inflation was higher than expected, so borrowers gain. Realized real rate is 9 - 10 = -1 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-9119": {
+    "q": "Use the Fisher approximation. A loan has a 10 percent nominal interest rate. Expected inflation was 4 percent, but actual inflation was 11 percent. Who gains, and what is the realized real interest rate?",
+    "options": [
+      "Borrower gains; realized real rate is -1 percent.",
+      "Lender gains; realized real rate is 6 percent.",
+      "Borrower gains; realized real rate is 10 percent.",
+      "Lender gains; realized real rate is -1 percent."
+    ],
+    "feedback": "Actual inflation was higher than expected, so borrowers gain. Realized real rate is 10 - 11 = -1 percent.",
+    "reason": "State that percentage-point addition/subtraction is approximate, not the exact gross-return identity.",
+    "numeric": true
+  },
+  "LG-Q-3013": {
+    "q": "Use the quantity-equation growth approximation. A government prints money heavily to pay bills. Money growth rises to 18 percent, velocity is stable, and real output grows 4 percent. What inflation rate is predicted?",
+    "options": [
+      "14 percent",
+      "18 percent",
+      "22 percent",
+      "4 percent"
+    ],
+    "feedback": "With stable velocity, inflation is about money growth minus output growth: 18 - 4 = 14 percent.",
+    "reason": "Make the approximate growth-rate calculation explicit.",
+    "numeric": true
+  }
+}

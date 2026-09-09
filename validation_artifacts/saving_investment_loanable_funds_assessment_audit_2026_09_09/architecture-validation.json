@@ -1,0 +1,2131 @@
+{
+  "all268ScopedRecordsChecked": true,
+  "protectedRecordFieldsUnchanged": true,
+  "allPoolMembershipsOrderAndAliasesUnchanged": true,
+  "all142UnrelatedConceptDefinitionsUnchanged": true,
+  "modeEligibilityUnchanged": true,
+  "reviewRoutesUnchanged": true,
+  "repairBridgeRetestCheckpointAndTelemetryMetadataUnchanged": true,
+  "productionFilesAllowed": [
+    "data/composer_library.js",
+    "data/composer_registry.json",
+    "data/composer_library_manifest.json"
+  ],
+  "imagePathsUnchanged": true,
+  "baselineSourceFiles": {
+    "data/composer_library.js": "73964332b0c6c572e2922e9f010e0ed426d4f9c69befc72b8e5f8fcdded176b9",
+    "data/composer_registry.json": "892f00eb70baaa1975dd9f30bbdd73d7c15e5c2ab1e3e7b755f0aa32fe6889de",
+    "data/composer_library_manifest.json": "e9791b705713bbe775af03b9de88ce54b1c4d9da7ec3002e3d2a3a508c42e623",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  },
+  "finalSourceFiles": {
+    "data/composer_library.js": "3743d0bad666fb2ec5be94c1e9c13b41324a3a4780c84aff1441b4c846a80e24",
+    "data/composer_registry.json": "4d466b43434f700ccbb8e16539e7c6454cd02653e1730f2e7a4ce53fd4cab527",
+    "data/composer_library_manifest.json": "b6ea01fd899ff902a470e215ed94997d754e4bcaf6a0f49f74b8c01a1b803ce6",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  },
+  "reviewAssets": [
+    {
+      "code": "MACRO-42",
+      "title": "Saving, Investment, and National-Saving Identities",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-42.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-42.pdf",
+      "sha256": "bbe628f9f3a2ff6056720a72c7bc8965be1d66669e7ecfd4d8fb5647a3cea229",
+      "sizeBytes": 244878,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-43",
+      "title": "Loanable-Funds Equilibrium",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-43.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-43.pdf",
+      "sha256": "de4574a2cd5d02029d182e4d5a56c3025340343e1f2e7ea407a1e30d17436afa",
+      "sizeBytes": 501475,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-44",
+      "title": "Loanable-Funds Shifts",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-44.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-44.pdf",
+      "sha256": "1eec8a3f7fd15358095f2d429fca7a6f469ec1bbc947af0cd830a09a70d0c04c",
+      "sizeBytes": 544124,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-45",
+      "title": "Crowding Out and Capital Formation",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-45.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-45.pdf",
+      "sha256": "c459039887c63fee8dff5a7e0c1b8562796c0b8e73c9286922fac1129d703255",
+      "sizeBytes": 570440,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-46",
+      "title": "Budget Accounting and Public Saving",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-46.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-46.pdf",
+      "sha256": "6475cead1fe9d7d80ca9ab152cd429f836f4aff72d0f19a7fe97f9dea2a6ffa2",
+      "sizeBytes": 244836,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-47",
+      "title": "Deficits, Debt, and Government Borrowing",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-47.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-47.pdf",
+      "sha256": "2eab645e75d56d0f730d319c822bca79045d110b4e8c609fad3a116b0f5c97ac",
+      "sizeBytes": 245050,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-48",
+      "title": "Debt Measures, Debt Burden, and Fiscal Data",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-48.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-48.pdf",
+      "sha256": "d14330ce3e111ef82c384a5b433e2e532678557463e40ef74f27ad433b47a2b4",
+      "sizeBytes": 245006,
+      "bytesVerified": true
+    }
+  ],
+  "reviewRuntimeIndex": {
+    "schemaVersion": "2.1.0",
+    "sourceManifestSchemaVersion": "8.0.0-composer-integration",
+    "delivery": "central-https",
+    "baseUrl": "https://masteryquests.org/concept-reviews/",
+    "selectedConceptIds": [
+      "budget-accounting-and-public-saving",
+      "crowding-out-and-capital-formation",
+      "debt-measures-burden-and-fiscal-data",
+      "deficits-debt-and-government-borrowing",
+      "loanable-funds-equilibrium",
+      "loanable-funds-shifts",
+      "saving-and-investment-identities"
+    ],
+    "diagnosticConceptIds": [
+      "budget-accounting-and-public-saving",
+      "crowding-out-and-capital-formation",
+      "debt-measures-burden-and-fiscal-data",
+      "deficits-debt-and-government-borrowing",
+      "loanable-funds-equilibrium",
+      "loanable-funds-shifts",
+      "saving-and-investment-identities"
+    ],
+    "reviewCodes": [
+      "MACRO-42",
+      "MACRO-43",
+      "MACRO-44",
+      "MACRO-45",
+      "MACRO-46",
+      "MACRO-47",
+      "MACRO-48"
+    ],
+    "assetInventory": [
+      {
+        "code": "MACRO-42",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-42.pdf",
+        "sha256": "bbe628f9f3a2ff6056720a72c7bc8965be1d66669e7ecfd4d8fb5647a3cea229",
+        "sizeBytes": 244878
+      },
+      {
+        "code": "MACRO-43",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-43.pdf",
+        "sha256": "de4574a2cd5d02029d182e4d5a56c3025340343e1f2e7ea407a1e30d17436afa",
+        "sizeBytes": 501475
+      },
+      {
+        "code": "MACRO-44",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-44.pdf",
+        "sha256": "1eec8a3f7fd15358095f2d429fca7a6f469ec1bbc947af0cd830a09a70d0c04c",
+        "sizeBytes": 544124
+      },
+      {
+        "code": "MACRO-45",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-45.pdf",
+        "sha256": "c459039887c63fee8dff5a7e0c1b8562796c0b8e73c9286922fac1129d703255",
+        "sizeBytes": 570440
+      },
+      {
+        "code": "MACRO-46",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-46.pdf",
+        "sha256": "6475cead1fe9d7d80ca9ab152cd429f836f4aff72d0f19a7fe97f9dea2a6ffa2",
+        "sizeBytes": 244836
+      },
+      {
+        "code": "MACRO-47",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-47.pdf",
+        "sha256": "2eab645e75d56d0f730d319c822bca79045d110b4e8c609fad3a116b0f5c97ac",
+        "sizeBytes": 245050
+      },
+      {
+        "code": "MACRO-48",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-48.pdf",
+        "sha256": "d14330ce3e111ef82c384a5b433e2e532678557463e40ef74f27ad433b47a2b4",
+        "sizeBytes": 245006
+      }
+    ],
+    "concepts": {
+      "budget-accounting-and-public-saving": {
+        "title": "Budget Accounting and Public Saving",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-46"
+        ],
+        "primaryReviewCode": "MACRO-46",
+        "assets": [
+          {
+            "code": "MACRO-46",
+            "title": "Budget Accounting and Public Saving",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-46.pdf",
+            "sha256": "6475cead1fe9d7d80ca9ab152cd429f836f4aff72d0f19a7fe97f9dea2a6ffa2"
+          }
+        ]
+      },
+      "crowding-out-and-capital-formation": {
+        "title": "Crowding Out and Capital Formation",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-45"
+        ],
+        "primaryReviewCode": "MACRO-45",
+        "assets": [
+          {
+            "code": "MACRO-45",
+            "title": "Crowding Out and Capital Formation",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-45.pdf",
+            "sha256": "c459039887c63fee8dff5a7e0c1b8562796c0b8e73c9286922fac1129d703255"
+          }
+        ]
+      },
+      "debt-measures-burden-and-fiscal-data": {
+        "title": "Debt Measures, Debt Burden, and Fiscal Data",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-48"
+        ],
+        "primaryReviewCode": "MACRO-48",
+        "assets": [
+          {
+            "code": "MACRO-48",
+            "title": "Debt Measures, Debt Burden, and Fiscal Data",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-48.pdf",
+            "sha256": "d14330ce3e111ef82c384a5b433e2e532678557463e40ef74f27ad433b47a2b4"
+          }
+        ]
+      },
+      "deficits-debt-and-government-borrowing": {
+        "title": "Deficits, Debt, and Government Borrowing",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-47"
+        ],
+        "primaryReviewCode": "MACRO-47",
+        "assets": [
+          {
+            "code": "MACRO-47",
+            "title": "Deficits, Debt, and Government Borrowing",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-47.pdf",
+            "sha256": "2eab645e75d56d0f730d319c822bca79045d110b4e8c609fad3a116b0f5c97ac"
+          }
+        ]
+      },
+      "loanable-funds-equilibrium": {
+        "title": "Loanable-Funds Equilibrium",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-43"
+        ],
+        "primaryReviewCode": "MACRO-43",
+        "assets": [
+          {
+            "code": "MACRO-43",
+            "title": "Loanable-Funds Equilibrium",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-43.pdf",
+            "sha256": "de4574a2cd5d02029d182e4d5a56c3025340343e1f2e7ea407a1e30d17436afa"
+          }
+        ]
+      },
+      "loanable-funds-shifts": {
+        "title": "Loanable-Funds Shifts",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-44"
+        ],
+        "primaryReviewCode": "MACRO-44",
+        "assets": [
+          {
+            "code": "MACRO-44",
+            "title": "Loanable-Funds Shifts",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-44.pdf",
+            "sha256": "1eec8a3f7fd15358095f2d429fca7a6f469ec1bbc947af0cd830a09a70d0c04c"
+          }
+        ]
+      },
+      "saving-and-investment-identities": {
+        "title": "Saving, Investment, and National-Saving Identities",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-42"
+        ],
+        "primaryReviewCode": "MACRO-42",
+        "assets": [
+          {
+            "code": "MACRO-42",
+            "title": "Saving, Investment, and National-Saving Identities",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-42.pdf",
+            "sha256": "bbe628f9f3a2ff6056720a72c7bc8965be1d66669e7ecfd4d8fb5647a3cea229"
+          }
+        ]
+      }
+    },
+    "reviews": {
+      "budget-accounting-and-public-saving": {
+        "reviewCodes": [
+          "MACRO-46"
+        ],
+        "primaryReviewCode": "MACRO-46",
+        "assets": [
+          {
+            "code": "MACRO-46",
+            "title": "Budget Accounting and Public Saving",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-46.pdf",
+            "sha256": "6475cead1fe9d7d80ca9ab152cd429f836f4aff72d0f19a7fe97f9dea2a6ffa2"
+          }
+        ],
+        "code": "MACRO-46",
+        "title": "Budget Accounting and Public Saving",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-46.pdf"
+      },
+      "crowding-out-and-capital-formation": {
+        "reviewCodes": [
+          "MACRO-45"
+        ],
+        "primaryReviewCode": "MACRO-45",
+        "assets": [
+          {
+            "code": "MACRO-45",
+            "title": "Crowding Out and Capital Formation",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-45.pdf",
+            "sha256": "c459039887c63fee8dff5a7e0c1b8562796c0b8e73c9286922fac1129d703255"
+          }
+        ],
+        "code": "MACRO-45",
+        "title": "Crowding Out and Capital Formation",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-45.pdf"
+      },
+      "debt-measures-burden-and-fiscal-data": {
+        "reviewCodes": [
+          "MACRO-48"
+        ],
+        "primaryReviewCode": "MACRO-48",
+        "assets": [
+          {
+            "code": "MACRO-48",
+            "title": "Debt Measures, Debt Burden, and Fiscal Data",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-48.pdf",
+            "sha256": "d14330ce3e111ef82c384a5b433e2e532678557463e40ef74f27ad433b47a2b4"
+          }
+        ],
+        "code": "MACRO-48",
+        "title": "Debt Measures, Debt Burden, and Fiscal Data",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-48.pdf"
+      },
+      "deficits-debt-and-government-borrowing": {
+        "reviewCodes": [
+          "MACRO-47"
+        ],
+        "primaryReviewCode": "MACRO-47",
+        "assets": [
+          {
+            "code": "MACRO-47",
+            "title": "Deficits, Debt, and Government Borrowing",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-47.pdf",
+            "sha256": "2eab645e75d56d0f730d319c822bca79045d110b4e8c609fad3a116b0f5c97ac"
+          }
+        ],
+        "code": "MACRO-47",
+        "title": "Deficits, Debt, and Government Borrowing",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-47.pdf"
+      },
+      "loanable-funds-equilibrium": {
+        "reviewCodes": [
+          "MACRO-43"
+        ],
+        "primaryReviewCode": "MACRO-43",
+        "assets": [
+          {
+            "code": "MACRO-43",
+            "title": "Loanable-Funds Equilibrium",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-43.pdf",
+            "sha256": "de4574a2cd5d02029d182e4d5a56c3025340343e1f2e7ea407a1e30d17436afa"
+          }
+        ],
+        "code": "MACRO-43",
+        "title": "Loanable-Funds Equilibrium",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-43.pdf"
+      },
+      "loanable-funds-shifts": {
+        "reviewCodes": [
+          "MACRO-44"
+        ],
+        "primaryReviewCode": "MACRO-44",
+        "assets": [
+          {
+            "code": "MACRO-44",
+            "title": "Loanable-Funds Shifts",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-44.pdf",
+            "sha256": "1eec8a3f7fd15358095f2d429fca7a6f469ec1bbc947af0cd830a09a70d0c04c"
+          }
+        ],
+        "code": "MACRO-44",
+        "title": "Loanable-Funds Shifts",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-44.pdf"
+      },
+      "saving-and-investment-identities": {
+        "reviewCodes": [
+          "MACRO-42"
+        ],
+        "primaryReviewCode": "MACRO-42",
+        "assets": [
+          {
+            "code": "MACRO-42",
+            "title": "Saving, Investment, and National-Saving Identities",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-42.pdf",
+            "sha256": "bbe628f9f3a2ff6056720a72c7bc8965be1d66669e7ecfd4d8fb5647a3cea229"
+          }
+        ],
+        "code": "MACRO-42",
+        "title": "Saving, Investment, and National-Saving Identities",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-42.pdf"
+      }
+    },
+    "evidenceRoutes": {
+      "questionToConceptIds": {
+        "43060": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43061": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43062": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43063": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43064": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43065": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43066": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43067": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43068": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43069": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43070": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43071": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43072": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43073": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43074": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43075": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43076": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43077": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43078": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43079": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43080": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43081": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43082": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43083": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43084": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43085": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43086": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43087": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43088": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43089": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43090": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43091": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43092": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43093": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43094": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43095": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43096": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43097": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43098": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43099": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43100": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43101": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43102": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43103": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43104": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43105": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43106": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43107": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43108": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43109": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43110": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43111": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43112": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43113": [
+          "budget-accounting-and-public-saving"
+        ],
+        "43114": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43115": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43116": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43117": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43118": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43119": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43120": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43121": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43122": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43123": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43124": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43125": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43126": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43127": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43128": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43129": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43130": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43131": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43132": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43133": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43134": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43135": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43136": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43137": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43138": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43139": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43140": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43141": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43142": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43143": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43144": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43145": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43146": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43147": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43148": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43149": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43150": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43151": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43152": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43153": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43154": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43155": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43156": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43157": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43158": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43159": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43160": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "43161": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43162": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43163": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43164": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43165": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43166": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43167": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "43168": [
+          "saving-and-investment-identities"
+        ],
+        "43169": [
+          "saving-and-investment-identities"
+        ],
+        "43170": [
+          "saving-and-investment-identities"
+        ],
+        "43171": [
+          "saving-and-investment-identities"
+        ],
+        "43172": [
+          "saving-and-investment-identities"
+        ],
+        "43173": [
+          "saving-and-investment-identities"
+        ],
+        "43174": [
+          "saving-and-investment-identities"
+        ],
+        "43175": [
+          "saving-and-investment-identities"
+        ],
+        "43176": [
+          "saving-and-investment-identities"
+        ],
+        "43177": [
+          "saving-and-investment-identities"
+        ],
+        "43178": [
+          "saving-and-investment-identities"
+        ],
+        "43179": [
+          "saving-and-investment-identities"
+        ],
+        "43180": [
+          "saving-and-investment-identities"
+        ],
+        "43181": [
+          "saving-and-investment-identities"
+        ],
+        "43182": [
+          "saving-and-investment-identities"
+        ],
+        "43183": [
+          "saving-and-investment-identities"
+        ],
+        "43184": [
+          "saving-and-investment-identities"
+        ],
+        "43185": [
+          "saving-and-investment-identities"
+        ],
+        "43186": [
+          "saving-and-investment-identities"
+        ],
+        "43187": [
+          "saving-and-investment-identities"
+        ],
+        "43188": [
+          "saving-and-investment-identities"
+        ],
+        "43189": [
+          "saving-and-investment-identities"
+        ],
+        "43190": [
+          "saving-and-investment-identities"
+        ],
+        "43191": [
+          "saving-and-investment-identities"
+        ],
+        "43192": [
+          "saving-and-investment-identities"
+        ],
+        "43193": [
+          "saving-and-investment-identities"
+        ],
+        "43194": [
+          "saving-and-investment-identities"
+        ],
+        "43195": [
+          "saving-and-investment-identities"
+        ],
+        "43196": [
+          "saving-and-investment-identities"
+        ],
+        "43197": [
+          "saving-and-investment-identities"
+        ],
+        "43198": [
+          "saving-and-investment-identities"
+        ],
+        "43199": [
+          "saving-and-investment-identities"
+        ],
+        "43200": [
+          "saving-and-investment-identities"
+        ],
+        "43201": [
+          "saving-and-investment-identities"
+        ],
+        "43202": [
+          "saving-and-investment-identities"
+        ],
+        "43203": [
+          "saving-and-investment-identities"
+        ],
+        "43204": [
+          "saving-and-investment-identities"
+        ],
+        "43205": [
+          "saving-and-investment-identities"
+        ],
+        "43206": [
+          "saving-and-investment-identities"
+        ],
+        "43207": [
+          "saving-and-investment-identities"
+        ],
+        "43208": [
+          "saving-and-investment-identities"
+        ],
+        "43209": [
+          "saving-and-investment-identities"
+        ],
+        "43210": [
+          "saving-and-investment-identities"
+        ],
+        "43211": [
+          "saving-and-investment-identities"
+        ],
+        "43212": [
+          "saving-and-investment-identities"
+        ],
+        "43213": [
+          "saving-and-investment-identities"
+        ],
+        "43214": [
+          "saving-and-investment-identities"
+        ],
+        "43215": [
+          "saving-and-investment-identities"
+        ],
+        "43216": [
+          "saving-and-investment-identities"
+        ],
+        "43217": [
+          "loanable-funds-equilibrium"
+        ],
+        "43218": [
+          "loanable-funds-equilibrium"
+        ],
+        "43219": [
+          "loanable-funds-equilibrium"
+        ],
+        "43220": [
+          "loanable-funds-equilibrium"
+        ],
+        "43221": [
+          "loanable-funds-equilibrium"
+        ],
+        "43222": [
+          "loanable-funds-equilibrium"
+        ],
+        "43223": [
+          "loanable-funds-equilibrium"
+        ],
+        "43224": [
+          "loanable-funds-equilibrium"
+        ],
+        "43225": [
+          "loanable-funds-equilibrium"
+        ],
+        "43226": [
+          "loanable-funds-equilibrium"
+        ],
+        "43227": [
+          "loanable-funds-equilibrium"
+        ],
+        "43228": [
+          "loanable-funds-equilibrium"
+        ],
+        "43229": [
+          "loanable-funds-equilibrium"
+        ],
+        "43230": [
+          "loanable-funds-equilibrium"
+        ],
+        "43231": [
+          "loanable-funds-equilibrium"
+        ],
+        "43232": [
+          "loanable-funds-equilibrium"
+        ],
+        "43233": [
+          "loanable-funds-equilibrium"
+        ],
+        "43234": [
+          "loanable-funds-equilibrium"
+        ],
+        "43235": [
+          "loanable-funds-equilibrium"
+        ],
+        "43236": [
+          "loanable-funds-equilibrium"
+        ],
+        "43237": [
+          "loanable-funds-equilibrium"
+        ],
+        "43238": [
+          "loanable-funds-equilibrium"
+        ],
+        "43239": [
+          "loanable-funds-equilibrium"
+        ],
+        "43240": [
+          "loanable-funds-equilibrium"
+        ],
+        "43241": [
+          "loanable-funds-equilibrium"
+        ],
+        "43242": [
+          "loanable-funds-equilibrium"
+        ],
+        "43243": [
+          "loanable-funds-equilibrium"
+        ],
+        "43244": [
+          "loanable-funds-equilibrium"
+        ],
+        "43245": [
+          "loanable-funds-equilibrium"
+        ],
+        "43246": [
+          "loanable-funds-equilibrium"
+        ],
+        "43247": [
+          "loanable-funds-equilibrium"
+        ],
+        "43248": [
+          "loanable-funds-equilibrium"
+        ],
+        "43249": [
+          "loanable-funds-shifts"
+        ],
+        "43250": [
+          "loanable-funds-shifts"
+        ],
+        "43251": [
+          "loanable-funds-shifts"
+        ],
+        "43252": [
+          "loanable-funds-shifts"
+        ],
+        "43253": [
+          "loanable-funds-shifts"
+        ],
+        "43254": [
+          "loanable-funds-shifts"
+        ],
+        "43255": [
+          "loanable-funds-shifts"
+        ],
+        "43256": [
+          "loanable-funds-shifts"
+        ],
+        "43257": [
+          "loanable-funds-shifts"
+        ],
+        "43258": [
+          "loanable-funds-shifts"
+        ],
+        "43259": [
+          "loanable-funds-shifts"
+        ],
+        "43260": [
+          "loanable-funds-shifts"
+        ],
+        "43261": [
+          "loanable-funds-shifts"
+        ],
+        "43262": [
+          "loanable-funds-shifts"
+        ],
+        "43263": [
+          "loanable-funds-shifts"
+        ],
+        "43264": [
+          "loanable-funds-shifts"
+        ],
+        "43265": [
+          "loanable-funds-shifts"
+        ],
+        "43266": [
+          "loanable-funds-shifts"
+        ],
+        "43267": [
+          "loanable-funds-shifts"
+        ],
+        "43268": [
+          "loanable-funds-shifts"
+        ],
+        "43269": [
+          "loanable-funds-shifts"
+        ],
+        "43270": [
+          "loanable-funds-shifts"
+        ],
+        "43271": [
+          "loanable-funds-shifts"
+        ],
+        "43272": [
+          "loanable-funds-shifts"
+        ],
+        "43273": [
+          "loanable-funds-shifts"
+        ],
+        "43274": [
+          "loanable-funds-shifts"
+        ],
+        "43275": [
+          "loanable-funds-shifts"
+        ],
+        "43276": [
+          "loanable-funds-shifts"
+        ],
+        "43277": [
+          "loanable-funds-shifts"
+        ],
+        "43278": [
+          "loanable-funds-shifts"
+        ],
+        "43279": [
+          "loanable-funds-shifts"
+        ],
+        "43280": [
+          "loanable-funds-shifts"
+        ],
+        "43281": [
+          "loanable-funds-shifts"
+        ],
+        "43282": [
+          "loanable-funds-shifts"
+        ],
+        "43283": [
+          "loanable-funds-shifts"
+        ],
+        "43284": [
+          "loanable-funds-shifts"
+        ],
+        "43285": [
+          "loanable-funds-shifts"
+        ],
+        "43286": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43287": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43288": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43289": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43290": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43291": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43292": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43293": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43294": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43295": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43296": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43297": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43298": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43299": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43300": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43301": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43302": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43303": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43304": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43305": [
+          "loanable-funds-shifts"
+        ],
+        "43306": [
+          "loanable-funds-shifts"
+        ],
+        "43307": [
+          "loanable-funds-shifts"
+        ],
+        "43308": [
+          "loanable-funds-shifts"
+        ],
+        "43309": [
+          "loanable-funds-shifts"
+        ],
+        "43310": [
+          "loanable-funds-shifts"
+        ],
+        "43311": [
+          "loanable-funds-shifts"
+        ],
+        "43312": [
+          "loanable-funds-shifts"
+        ],
+        "43313": [
+          "loanable-funds-shifts"
+        ],
+        "43314": [
+          "loanable-funds-shifts"
+        ],
+        "43315": [
+          "loanable-funds-shifts"
+        ],
+        "43316": [
+          "loanable-funds-shifts"
+        ],
+        "43317": [
+          "loanable-funds-shifts"
+        ],
+        "43318": [
+          "loanable-funds-shifts"
+        ],
+        "43319": [
+          "loanable-funds-shifts"
+        ],
+        "43320": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43321": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43322": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43323": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43324": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43325": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43326": [
+          "crowding-out-and-capital-formation"
+        ],
+        "43327": [
+          "crowding-out-and-capital-formation"
+        ]
+      },
+      "tagToConceptIds": {
+        "private-public-national-saving": [
+          "saving-and-investment-identities"
+        ],
+        "closed-economy-saving-investment-identity": [
+          "saving-and-investment-identities"
+        ],
+        "saving-versus-investment": [
+          "saving-and-investment-identities"
+        ],
+        "loanable-funds-equilibrium": [
+          "loanable-funds-equilibrium"
+        ],
+        "loanable-funds-movement-versus-shift": [
+          "loanable-funds-equilibrium"
+        ],
+        "changes-in-saving": [
+          "loanable-funds-shifts"
+        ],
+        "investment-demand": [
+          "loanable-funds-shifts"
+        ],
+        "simultaneous-loanable-funds-shifts": [
+          "loanable-funds-shifts"
+        ],
+        "deficits-and-crowding-out": [
+          "crowding-out-and-capital-formation"
+        ],
+        "investment-capital-formation": [
+          "crowding-out-and-capital-formation"
+        ],
+        "budget-accounting": [
+          "budget-accounting-and-public-saving"
+        ],
+        "public-saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "revenues-and-outlays": [
+          "budget-accounting-and-public-saving"
+        ],
+        "deficit-versus-debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "persistent-deficits": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "debt-measures": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "debt-to-gdp": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interest-costs": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "fiscal-data": [
+          "debt-measures-burden-and-fiscal-data"
+        ]
+      },
+      "repairSkillToConceptIds": {
+        "calculate_national_saving": [
+          "saving-and-investment-identities"
+        ],
+        "apply_closed_economy_saving_identity": [
+          "saving-and-investment-identities"
+        ],
+        "distinguish_saving_and_investment": [
+          "saving-and-investment-identities"
+        ],
+        "analyze_loanable_funds_equilibrium": [
+          "loanable-funds-equilibrium"
+        ],
+        "distinguish_movement_from_shift_loanable_funds": [
+          "loanable-funds-equilibrium"
+        ],
+        "analyze_saving_supply_shift": [
+          "loanable-funds-shifts"
+        ],
+        "analyze_investment_demand_shift": [
+          "loanable-funds-shifts"
+        ],
+        "analyze_simultaneous_loanable_funds_shifts": [
+          "loanable-funds-shifts"
+        ],
+        "trace_deficit_crowding_out": [
+          "crowding-out-and-capital-formation"
+        ],
+        "connect_investment_to_capital_formation": [
+          "crowding-out-and-capital-formation"
+        ],
+        "identify_budget_deficit": [
+          "budget-accounting-and-public-saving"
+        ],
+        "identify_budget_surplus": [
+          "budget-accounting-and-public-saving"
+        ],
+        "distinguish_revenue_from_borrowing": [
+          "budget-accounting-and-public-saving"
+        ],
+        "define_public_saving_variables": [
+          "budget-accounting-and-public-saving"
+        ],
+        "interpret_negative_public_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_transfer_outlay": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_government_purchase": [
+          "budget-accounting-and-public-saving"
+        ],
+        "calculate_budget_balance": [
+          "budget-accounting-and-public-saving"
+        ],
+        "interpret_budget_balance_sign": [
+          "budget-accounting-and-public-saving"
+        ],
+        "calculate_deficit_magnitude": [
+          "budget-accounting-and-public-saving"
+        ],
+        "calculate_public_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "calculate_positive_public_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "distinguish_mandatory_discretionary": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_interest_outlay": [
+          "budget-accounting-and-public-saving"
+        ],
+        "reconcile_balance_conventions": [
+          "budget-accounting-and-public-saving"
+        ],
+        "compare_budget_balances": [
+          "budget-accounting-and-public-saving"
+        ],
+        "avoid_public_saving_convention_error": [
+          "budget-accounting-and-public-saving"
+        ],
+        "connect_budget_deficit_public_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "purchase_transfer_budget_gdp": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_revenue_and_borrowing": [
+          "budget-accounting-and-public-saving"
+        ],
+        "diagnose_rounded_budget_data": [
+          "budget-accounting-and-public-saving"
+        ],
+        "infer_missing_budget_component": [
+          "budget-accounting-and-public-saving"
+        ],
+        "reconcile_budget_and_public_saving_measures": [
+          "budget-accounting-and-public-saving"
+        ],
+        "evaluate_spending_label_claim": [
+          "budget-accounting-and-public-saving"
+        ],
+        "evaluate_budget_accounting_claim": [
+          "budget-accounting-and-public-saving"
+        ],
+        "identify_budget_position": [
+          "budget-accounting-and-public-saving"
+        ],
+        "interpret_projected_budget_position": [
+          "budget-accounting-and-public-saving"
+        ],
+        "identify_public_saving_sign": [
+          "budget-accounting-and-public-saving"
+        ],
+        "public_saving_boundary": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_budget_transactions": [
+          "budget-accounting-and-public-saving"
+        ],
+        "interpret_cbo_outlay_categories": [
+          "budget-accounting-and-public-saving"
+        ],
+        "distinguish_purchase_transfer": [
+          "budget-accounting-and-public-saving"
+        ],
+        "connect_balance_to_borrowing": [
+          "budget-accounting-and-public-saving"
+        ],
+        "connect_public_to_national_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "connect_outlay_to_gdp": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_flow_and_stock": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "smaller_deficit_not_lower_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "balanced_budget_existing_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "persistent_deficits_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "deficit_borrowing_chain": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "infer_debt_direction_from_deficit": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "distinguish_reduced_deficit_from_surplus": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "surplus_and_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "calculate_persistent_deficit_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "borrowing_not_revenue": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "multi_year_deficit_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "separate_flow_stock_headline": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "deficit_debt_financing_caution": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "deficit_public_saving_chain": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "borrowing_consequence_conditional": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "reconcile_smaller_deficit_rising_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "evaluate_debt_elimination_claim": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "reconcile_three_fiscal_facts": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "diagnose_stock_flow_comparison": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "evaluate_borrowing_tradeoff_claim": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "deficit_debt_mastery": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "persistent_deficit_mastery": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "flow_stock_ratio_synthesis": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "boundary_synthesis": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "distinguish_deficit_and_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "connect_deficit_borrowing": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "connect_deficit_to_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "connect_borrowing_to_phase_two": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "identify_debt_held_public": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "identify_intragovernmental_holdings": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "calculate_debt_to_gdp": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interpret_debt_ratio": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_debt_interest": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "identify_interest_cost_driver": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_projection_actual": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_dated_debt_stock": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "calculate_total_public_debt": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "require_debt_measure_label": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_nominal_debt_ratios": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "debt_gdp_growth_direction": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "percentage_points_debt_ratio": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "calculate_simple_interest_cost": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "calculate_interest_share_outlays": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interpret_cbo_budget_table": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_debt_measures": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "debt_limit_measure_precision": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "simultaneous_debt_gdp_change": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_two_economies_ratios": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "infer_gdp_growth_from_ratio": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interest_feedback_budget": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_cbo_projection_years": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "diagnose_two_release_comparison": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "diagnose_nominal_debt_claim": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "avoid_single_rate_assumption": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "evaluate_baseline_uncertainty": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "reconcile_ratio_and_deficit": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "separate_percent_changes": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "align_debt_data_measures": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_projected_debt_ratios": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "identify_gross_debt_components": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "apply_treasury_debt_definition": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "debt_ratio_mastery": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_interest_from_principal": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interpret_cbo_interest_projection": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interpret_cbo_debt_ratio_projection": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_debt_measures": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "connect_debt_measure_to_ratio": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "connect_cbo_ratio_to_measure": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "connect_interest_to_budget_balance": [
+          "debt-measures-burden-and-fiscal-data"
+        ]
+      },
+      "primarySkillToConceptIds": {
+        "calculate_national_saving": [
+          "saving-and-investment-identities"
+        ],
+        "apply_closed_economy_saving_identity": [
+          "saving-and-investment-identities"
+        ],
+        "distinguish_saving_and_investment": [
+          "saving-and-investment-identities"
+        ],
+        "analyze_loanable_funds_equilibrium": [
+          "loanable-funds-equilibrium"
+        ],
+        "distinguish_movement_from_shift_loanable_funds": [
+          "loanable-funds-equilibrium"
+        ],
+        "analyze_saving_supply_shift": [
+          "loanable-funds-shifts"
+        ],
+        "analyze_investment_demand_shift": [
+          "loanable-funds-shifts"
+        ],
+        "analyze_simultaneous_loanable_funds_shifts": [
+          "loanable-funds-shifts"
+        ],
+        "trace_deficit_crowding_out": [
+          "crowding-out-and-capital-formation"
+        ],
+        "connect_investment_to_capital_formation": [
+          "crowding-out-and-capital-formation"
+        ],
+        "identify_budget_deficit": [
+          "budget-accounting-and-public-saving"
+        ],
+        "identify_budget_surplus": [
+          "budget-accounting-and-public-saving"
+        ],
+        "distinguish_revenue_from_borrowing": [
+          "budget-accounting-and-public-saving"
+        ],
+        "define_public_saving_variables": [
+          "budget-accounting-and-public-saving"
+        ],
+        "interpret_negative_public_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_transfer_outlay": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_government_purchase": [
+          "budget-accounting-and-public-saving"
+        ],
+        "calculate_budget_balance": [
+          "budget-accounting-and-public-saving"
+        ],
+        "interpret_budget_balance_sign": [
+          "budget-accounting-and-public-saving"
+        ],
+        "calculate_deficit_magnitude": [
+          "budget-accounting-and-public-saving"
+        ],
+        "calculate_public_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "calculate_positive_public_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "distinguish_mandatory_discretionary": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_interest_outlay": [
+          "budget-accounting-and-public-saving"
+        ],
+        "reconcile_balance_conventions": [
+          "budget-accounting-and-public-saving"
+        ],
+        "compare_budget_balances": [
+          "budget-accounting-and-public-saving"
+        ],
+        "avoid_public_saving_convention_error": [
+          "budget-accounting-and-public-saving"
+        ],
+        "connect_budget_deficit_public_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "purchase_transfer_budget_gdp": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_revenue_and_borrowing": [
+          "budget-accounting-and-public-saving"
+        ],
+        "diagnose_rounded_budget_data": [
+          "budget-accounting-and-public-saving"
+        ],
+        "infer_missing_budget_component": [
+          "budget-accounting-and-public-saving"
+        ],
+        "reconcile_budget_and_public_saving_measures": [
+          "budget-accounting-and-public-saving"
+        ],
+        "evaluate_spending_label_claim": [
+          "budget-accounting-and-public-saving"
+        ],
+        "evaluate_budget_accounting_claim": [
+          "budget-accounting-and-public-saving"
+        ],
+        "identify_budget_position": [
+          "budget-accounting-and-public-saving"
+        ],
+        "interpret_projected_budget_position": [
+          "budget-accounting-and-public-saving"
+        ],
+        "identify_public_saving_sign": [
+          "budget-accounting-and-public-saving"
+        ],
+        "public_saving_boundary": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_budget_transactions": [
+          "budget-accounting-and-public-saving"
+        ],
+        "interpret_cbo_outlay_categories": [
+          "budget-accounting-and-public-saving"
+        ],
+        "distinguish_purchase_transfer": [
+          "budget-accounting-and-public-saving"
+        ],
+        "connect_balance_to_borrowing": [
+          "budget-accounting-and-public-saving"
+        ],
+        "connect_public_to_national_saving": [
+          "budget-accounting-and-public-saving"
+        ],
+        "connect_outlay_to_gdp": [
+          "budget-accounting-and-public-saving"
+        ],
+        "classify_flow_and_stock": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "smaller_deficit_not_lower_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "balanced_budget_existing_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "persistent_deficits_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "deficit_borrowing_chain": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "infer_debt_direction_from_deficit": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "distinguish_reduced_deficit_from_surplus": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "surplus_and_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "calculate_persistent_deficit_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "borrowing_not_revenue": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "multi_year_deficit_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "separate_flow_stock_headline": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "deficit_debt_financing_caution": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "deficit_public_saving_chain": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "borrowing_consequence_conditional": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "reconcile_smaller_deficit_rising_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "evaluate_debt_elimination_claim": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "reconcile_three_fiscal_facts": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "diagnose_stock_flow_comparison": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "evaluate_borrowing_tradeoff_claim": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "deficit_debt_mastery": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "persistent_deficit_mastery": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "flow_stock_ratio_synthesis": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "boundary_synthesis": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "distinguish_deficit_and_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "connect_deficit_borrowing": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "connect_deficit_to_debt": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "connect_borrowing_to_phase_two": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "identify_debt_held_public": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "identify_intragovernmental_holdings": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "calculate_debt_to_gdp": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interpret_debt_ratio": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_debt_interest": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "identify_interest_cost_driver": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_projection_actual": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_dated_debt_stock": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "calculate_total_public_debt": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "require_debt_measure_label": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_nominal_debt_ratios": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "debt_gdp_growth_direction": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "percentage_points_debt_ratio": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "calculate_simple_interest_cost": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "calculate_interest_share_outlays": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interpret_cbo_budget_table": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_debt_measures": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "debt_limit_measure_precision": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "simultaneous_debt_gdp_change": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_two_economies_ratios": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "infer_gdp_growth_from_ratio": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interest_feedback_budget": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_cbo_projection_years": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "diagnose_two_release_comparison": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "diagnose_nominal_debt_claim": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "avoid_single_rate_assumption": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "evaluate_baseline_uncertainty": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "reconcile_ratio_and_deficit": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "separate_percent_changes": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "align_debt_data_measures": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "compare_projected_debt_ratios": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "identify_gross_debt_components": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "apply_treasury_debt_definition": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "debt_ratio_mastery": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_interest_from_principal": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interpret_cbo_interest_projection": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "interpret_cbo_debt_ratio_projection": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "distinguish_debt_measures": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "connect_debt_measure_to_ratio": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "connect_cbo_ratio_to_measure": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "connect_interest_to_budget_balance": [
+          "debt-measures-burden-and-fiscal-data"
+        ]
+      },
+      "secondarySkillToConceptIds": {},
+      "objectiveToConceptIds": {
+        "SLF2": [
+          "saving-and-investment-identities"
+        ],
+        "SLF3": [
+          "saving-and-investment-identities"
+        ],
+        "SLF1": [
+          "saving-and-investment-identities"
+        ],
+        "SLF4": [
+          "loanable-funds-equilibrium"
+        ],
+        "SLF5": [
+          "loanable-funds-equilibrium"
+        ],
+        "SLF6": [
+          "loanable-funds-shifts"
+        ],
+        "SLF7": [
+          "loanable-funds-shifts"
+        ],
+        "SLF9": [
+          "loanable-funds-shifts"
+        ],
+        "SLF8": [
+          "crowding-out-and-capital-formation"
+        ],
+        "SLF10": [
+          "crowding-out-and-capital-formation"
+        ],
+        "FB1": [
+          "budget-accounting-and-public-saving"
+        ],
+        "FB3": [
+          "budget-accounting-and-public-saving"
+        ],
+        "FB4": [
+          "budget-accounting-and-public-saving"
+        ],
+        "FB2": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "FB8": [
+          "deficits-debt-and-government-borrowing"
+        ],
+        "FB5": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "FB6": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "FB7": [
+          "debt-measures-burden-and-fiscal-data"
+        ],
+        "FB9": [
+          "debt-measures-burden-and-fiscal-data"
+        ]
+      }
+    },
+    "bundleRoutes": {}
+  },
+  "reviewGlobalWarningsRetained": [
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "consumer-and-producer-surplus"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "costs-of-production"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "elasticity"
+    },
+    {
+      "type": "diagnosable-no-sheet-meta",
+      "canonicalConceptId": "integrated-economic-analysis"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "international-trade-and-trade-policy"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopolistic-competition"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "oligopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "perfect-competition"
+    },
+    {
+      "type": "orphan-review",
+      "reviewCode": "MICRO-03"
+    },
+    {
+      "type": "unreachable-review",
+      "reviewCode": "MICRO-03"
+    }
+  ],
+  "priorAuditArtifactFilesBeforeApply": {
+    "access.py": "8f2c418d9aeaeb72405d17b8162933e024a04dfbc0d7ab63e02577b89e4da4e8",
+    "accessibility-inspection.json": "05ae6489a56a9f78dd5c080315ae9cc4d9af5bb2c79df5f779a90eb032968e98",
+    "accessibility-spec.json": "e04ec5bdfe11f7d47b878a381132c41868fd116036992887dc1cc894b1dc3385",
+    "accounting.json": "96dd60bb013f1f9b46a051d4592201a281d390692b9e7e0c3e952645a80b0db5",
+    "architecture-validation.json": "3937fb31dfeaa8afd57f2e6abc9d3b1843a5640ff06fc43aebadbdc84d265f66",
+    "asset-accessibility-changes.json": "78c9cabfe1d4fe3cc5d7ef848ecf4bcc66e8d631a5d1bdc67f3caec55c95a160",
+    "audit-projection-provenance.json": "b3ceda08ad5692a0497e3cff4e09a10c8d3f105a9eaccdcc334243679d319db0",
+    "author.py": "510dbe76c956364a5dc1e37e5896f8b1d92b594177d3651d5602166e5e4a05e2",
+    "BEFORE.md": "ab0f40eb03aa6ba038d491f9179239712502856e5268c4bd616f1c6d9b2a029c",
+    "browser-smoke.png": "7c0af07d78b1e8b7579ec0d10338e774be64648bca912fabcd01625fab6f8307",
+    "browser-validation.json": "e4f6ab13d9336ab3952b28c0d80cbf94ad38ec7cd00086b5d9d0df9669ba5519",
+    "browser.cjs": "e2c28227c9fdcbd93ec77a25165c528b0e6118ca82c1452b20ad63d8da9fa769",
+    "changes.json": "2a15e0a34c10f9b718e991650cc6eebbb83027a909f7b2868b84dd396ffa5244",
+    "concepts.json": "8353181534c660caf51f920f8963d3998aa6a65ddb0173e4585fee8ea9b97d49",
+    "exam-source.json": "bc6489214bac78b9a08992f3a4871c7575db2b02c4de500685c0f111f4cd7e53",
+    "FINAL_REPORT.md": "cc88fb2f1db66c004ca19bae35552ad5d42f071cceb6d852136d4bb65f1b3109",
+    "findings.py": "d87b1c43f0d75c86204e5b28525fc72c9b6b553a4884529601906e7e08f00828",
+    "finish.py": "28138b11332c25f6be5fc901d8102455fb55008ffaf526d383ac6d156909c716",
+    "graph-validation.json": "291b76b2ef26e66f9bdb553971421ed1b116dd17dbf020bf7b355c74755be91e",
+    "inspect.cjs": "62172e50b2fa9a94f5f4e430e8da456cafc801617ea651891847e6740bf82f3b",
+    "inventory-after.json": "c7fe042ab40cb2f6bd93316588e976b8920ea1f28bac0331edce67e49565f4b9",
+    "inventory-before.json": "0d68d89f43759389060a2dda14c9881247ed6436ae0b204d99cee4d4e78e5d78",
+    "logical-validation.json": "017ec441d5f7eee316559251943a52435e554dcc943bb7ee21ef0c7699741b5f",
+    "numerical-validation.json": "75bc7431127f3e6577bdcb011973d0ef86b00a6b594bf309550612dadc1880ec",
+    "objective-findings-before.json": "cc6dcbb78e00916d23851a7f9e29e97fd652649b42feee9efb4f88cd649e5fa3",
+    "originality-validation.json": "0ca207540ecc1930a10fd9a0cc59617adc31aa39fc4608b305d81ada53959141",
+    "pool-memberships.json": "60029b976b5c800717581459e615063fba2dccaa1c0c69b296fda42c8815834b",
+    "quality-after.json": "39588180c9a96d408428123ba65518895a855995f9da7b1d33b826194457fe56",
+    "quality-after.md": "e07d86bf7124603a82faff101bd6d74616312715c50661016e91aa7f93876753",
+    "quality-before.json": "019c1c10e11be27ecd3b9e0cbab8c5320896899550c6eada2d26cd5a061f5e3d",
+    "quality-before.md": "3bc7943a763e3528aaf75001457fa4f8c47d4c6d7c3fbd0bb4861a46baa1ffb4",
+    "quality-dispositions.json": "0c128996e2442553ff0c89b482d174ce474c6851acade0a35913c444b6c60a8a",
+    "recipe.json": "bc620cd6153c98709bb3e29e976b03dc12b242e250a66cfab942d7687a66e5e7",
+    "record-actions.json": "67ff433195fd57e5639fc1a6a5b3c7e1df9bf5de4985b3e52fd8fd2a1d604f47",
+    "revisions.json": "ef6d0f9e8e16daf97d17a849bd875642d711c059a5a9c4a56819a4648377280a",
+    "scope-boundary.json": "7c05ef0024450669bc07c64d5a01c07b68e61523331b82baa5c6ba77269d7bb9",
+    "semantic-validation.json": "48d82400f4c598b0f51c3424a89f199820e9e2bd3032b42e75e89cae9a2d3aea",
+    "sources.json": "8353181534c660caf51f920f8963d3998aa6a65ddb0173e4585fee8ea9b97d49",
+    "stage.mjs": "00af2fdb2c48fa0dca78e7b8e339d6a3ad24827d394796a1a396866c5e49826a",
+    "summary-before.json": "01b3654b1bd0813ecaa31b1bb3edd70223dbab65fa4cbab34613cbce2c7621fd",
+    "validation.json": "f3868fdd57b13d09316f08ef907ab4044eb07f2976ea7d3a54160c35c753da0e",
+    "verify.py": "f0f92733a3b545004031a789e0a687b365311b37be33cf664306b83a8cb86c43"
+  },
+  "priorAuditAll13ModulesPreserved": true
+}

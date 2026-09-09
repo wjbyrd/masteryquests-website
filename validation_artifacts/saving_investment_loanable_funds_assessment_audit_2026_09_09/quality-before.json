@@ -1,0 +1,544 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-09-09T12:13:06.107Z",
+  "libraryVersion": "phase6.2i-oligopoly-rich-bank-v1-costs-graph-v2-pc-graph-v2-monopoly-graph-v2-mcomp-graph-v2-elasticity-graph-v2-trade-graph-v2-phase6.3-targeted-production-repair-v1-phase6.4-graph-accessibility-v1-phase7.1-scarcity-standalone-expansion-v1-phase7.2-opportunity-cost-standalone-expansion-v1-phase7.3-marginal-analysis-standalone-expansion-v1-phase7.4-incentives-standalone-expansion-v1-phase7.5-comparative-advantage-gains-trade-standalone-expansion-v1-phase7.6-models-assumptions-light-touch-pilot-v1-phase7.7-general-economics-final-maturation-v1-phaseM2a-phillips-disinflation-family-maturation-v1-phaseM2b1-gdp-national-output-family-maturation-v1-phaseM2b2-inflation-real-values-family-maturation-v1-phaseM2b3-growth-productivity-family-maturation-v1-phaseM2b4-unemployment-labor-family-maturation-v1-phaseM2c1-money-banking-fed-family-maturation-v1-phaseM2c2-money-growth-inflation-neutrality-family-maturation-v1-phaseM2c3-money-market-policy-transmission-family-maturation-v1-phaseM2d1-ad-as-macro-equilibrium-family-maturation-v1-phaseM2d2-fiscal-stabilization-family-maturation-v1-phaseM2d3-stabilization-block-closure-v1-phaseM2e-advanced-macro-checkpoint-supplement-v1-phaseM4-final-macro-release-closure-v1-phaseMicro1-elasticity-granularity-pilot-v1-phaseMicro2-surplus-granularity-v1-phaseMicro3-trade-granularity-v1-phaseMicro3a-adaptive-depth-backfill-v1-phaseMicro3b-adaptive-support-backfill-v1-phaseMicro4-costs-granularity-adaptive-backfill-v1-phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1-phaseMicro6-monopoly-granularity-adaptive-backfill-v1-phaseMicro7-monopolistic-competition-granularity-adaptive-backfill-v1-phaseMicro8-oligopoly-granularity-adaptive-backfill-v1-phaseQH1-question-independence-graph-hygiene-v1-phaseGraph1-demand-supply-core-v1-phaseGraph2-price-controls-taxes-v1-phaseGraph3-macro-ad-as-core-v1-phaseGraph4-money-market-ad-transmission-v1-phaseGraphAudit-remediation-v1-phaseMicroGraphAudit-remediation-v1-phaseTrialGraph-mode8-v1-phaseQH2-question-quality-remediation-v1-phase3e-market-gate-graph-sync-v1-phase-public-goods-common-resources-question-pool-v1-phase-externalities-question-pool-v1-phase-factor-markets-question-pool-v1-phase-remaining-principles-micro-question-pools-v1-phase-macro-federal-budgets-debt-v1-phase-saving-investment-loanable-funds-question-pool-v1-phaseQH3-core-question-quality-gate-v1-phaseQH4-supply-demand-equilibrium-audit-remediation-v1-phaseQH5-foundations-curation-graph-evidence-v1-phaseQH6-graph-assessment-integrity-v1-phaseQH7-principles-micro-human-read-curation-v1-phaseMacro2-taxonomy-normalization-v1-phaseMacro4-human-read-curation-v1-phaseMacroFinalCleanup-v1-phaseMacroOpenEconomy-v1",
+  "librarySha256": "71cdad1028b02d3acfe3aca55636019d1fbc3ae5bbbd994d4189ff229fbfe518",
+  "scope": {
+    "concepts": [
+      "saving-and-investment-identities",
+      "loanable-funds-equilibrium",
+      "loanable-funds-shifts",
+      "crowding-out-and-capital-formation",
+      "budget-accounting-and-public-saving",
+      "deficits-debt-and-government-borrowing",
+      "debt-measures-burden-and-fiscal-data"
+    ],
+    "pools": [],
+    "graphLinkedOnly": false,
+    "poolInventory": [
+      "boss",
+      "bridge",
+      "easy",
+      "elite",
+      "hard",
+      "legendary",
+      "legendaryBoss",
+      "medium",
+      "repair"
+    ],
+    "questionCount": 268,
+    "conceptQuestionCounts": [
+      {
+        "concept": "saving-and-investment-identities",
+        "count": 49
+      },
+      {
+        "concept": "loanable-funds-equilibrium",
+        "count": 32
+      },
+      {
+        "concept": "loanable-funds-shifts",
+        "count": 52
+      },
+      {
+        "concept": "crowding-out-and-capital-formation",
+        "count": 27
+      },
+      {
+        "concept": "budget-accounting-and-public-saving",
+        "count": 37
+      },
+      {
+        "concept": "deficits-debt-and-government-borrowing",
+        "count": 28
+      },
+      {
+        "concept": "debt-measures-burden-and-fiscal-data",
+        "count": 43
+      }
+    ],
+    "questionCountsByPool": [
+      {
+        "pool": "boss",
+        "count": 30
+      },
+      {
+        "pool": "bridge",
+        "count": 14
+      },
+      {
+        "pool": "easy",
+        "count": 54
+      },
+      {
+        "pool": "elite",
+        "count": 22
+      },
+      {
+        "pool": "hard",
+        "count": 48
+      },
+      {
+        "pool": "legendary",
+        "count": 14
+      },
+      {
+        "pool": "legendaryBoss",
+        "count": 10
+      },
+      {
+        "pool": "medium",
+        "count": 62
+      },
+      {
+        "pool": "repair",
+        "count": 14
+      }
+    ]
+  },
+  "counts": {
+    "errors": 0,
+    "warnings": 0,
+    "reviews": 29
+  },
+  "ruleCounts": [
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "count": 1
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "count": 1
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "count": 27
+    }
+  ],
+  "conceptFindingCounts": [
+    {
+      "concept": "loanable-funds-shifts",
+      "count": 7
+    },
+    {
+      "concept": "saving-and-investment-identities",
+      "count": 7
+    },
+    {
+      "concept": "debt-measures-burden-and-fiscal-data",
+      "count": 4
+    },
+    {
+      "concept": "deficits-debt-and-government-borrowing",
+      "count": 4
+    },
+    {
+      "concept": "crowding-out-and-capital-formation",
+      "count": 3
+    },
+    {
+      "concept": "budget-accounting-and-public-saving",
+      "count": 2
+    },
+    {
+      "concept": "loanable-funds-equilibrium",
+      "count": 2
+    }
+  ],
+  "poolFindingCounts": [
+    {
+      "pool": "hard",
+      "count": 9
+    },
+    {
+      "pool": "easy",
+      "count": 5
+    },
+    {
+      "pool": "legendary",
+      "count": 4
+    },
+    {
+      "pool": "elite",
+      "count": 3
+    },
+    {
+      "pool": "legendaryBoss",
+      "count": 3
+    },
+    {
+      "pool": "medium",
+      "count": 3
+    },
+    {
+      "pool": "boss",
+      "count": 1
+    },
+    {
+      "pool": "bridge",
+      "count": 1
+    },
+    {
+      "pool": "repair",
+      "count": 0
+    }
+  ],
+  "findingSummary": {
+    "totalFindings": 29,
+    "uniqueQuestionsAffected": 29,
+    "questionsWithMultipleFindings": []
+  },
+  "findings": [
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43093",
+      "concept": "budget-accounting-and-public-saving",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Under public saving = T − G, with T defined as net tax revenue and G as government purchases, what does negative public saving mean?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43098",
+      "concept": "budget-accounting-and-public-saving",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why can a total-outlays budget balance and T − G public saving, where T is net tax revenue and G is government purchases, differ numerically?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43320",
+      "concept": "crowding-out-and-capital-formation",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "How can more current investment affect future productive capacity?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43323",
+      "concept": "crowding-out-and-capital-formation",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Crowding out reduces new machinery purchases, while depreciation and all other growth determinants are unchanged. Which conclusion is warranted?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43325",
+      "concept": "crowding-out-and-capital-formation",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "If private investment is $30 billion lower because of crowding out, what is the careful growth implication?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43117",
+      "concept": "debt-measures-burden-and-fiscal-data",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why is a statement that \"federal debt is $X\" incomplete?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43118",
+      "concept": "debt-measures-burden-and-fiscal-data",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A report lists debt held by the public at $25 trillion and total public debt outstanding at $32 trillion. What can be inferred?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43120",
+      "concept": "debt-measures-burden-and-fiscal-data",
+      "pools": [
+        "elite"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Two releases report different debt values on the same date, but one labels debt held by the public and the other labels total public debt outstanding. What is the best conclusion?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43166",
+      "concept": "debt-measures-burden-and-fiscal-data",
+      "pools": [
+        "legendary"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A Treasury observation reports total public debt outstanding, while a CBO projection reports debt held by the public as a percentage of GDP. What must be aligned before comparing them?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43082",
+      "concept": "deficits-debt-and-government-borrowing",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A report says debt reached $25 trillion while the year's deficit was $1 trillion. Why are the figures not contradictory?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43083",
+      "concept": "deficits-debt-and-government-borrowing",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why is the reported annual deficit not always identical to the measured change in federal debt?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43087",
+      "concept": "deficits-debt-and-government-borrowing",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "An analyst divides the debt stock at one date by one month's deficit and calls the result a debt-to-deficit growth rate. What is the main problem?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43158",
+      "concept": "deficits-debt-and-government-borrowing",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A larger deficit reduces public saving. Which conclusion is justified without solving for the exact loanable-funds equilibrium?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43219",
+      "concept": "loanable-funds-equilibrium",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Refer to the graph above. In this closed economy, a student says point A proves that any increase in desired investment must be matched immediately by an identical outward shift of saving supply. What is wrong with the claim?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43241",
+      "concept": "loanable-funds-equilibrium",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A retirement incentive increases saving at every real rate, while improved technology raises expected returns on investment. Which conclusion follows without knowing shift sizes?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "43249",
+      "concept": "loanable-funds-shifts",
+      "pools": [
+        "hard"
+      ],
+      "message": "hard metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the graph above. The market moves from A to B. Which event is inconsistent with the change shown?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43285",
+      "concept": "loanable-funds-shifts",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Expected investment profitability falls while a budget deficit also reduces national saving. What must happen, and what remains uncertain?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43305",
+      "concept": "loanable-funds-shifts",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Refer to the graph above. Saving supply and investment demand both increase. What does theory establish before the graph's marked intersections resolve the remaining issue?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43308",
+      "concept": "loanable-funds-shifts",
+      "pools": [
+        "easy"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Refer to the graph above. Which two curves shift between A and B?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43309",
+      "concept": "loanable-funds-shifts",
+      "pools": [
+        "legendary"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Refer to the graph above. Private saving rises by $25 billion, public saving falls by $10 billion, and technology raises desired investment. Which interpretation uses both the accounting and the graph?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43313",
+      "concept": "loanable-funds-shifts",
+      "pools": [
+        "medium"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Refer to the graph above. Why is the interest-rate outcome not ambiguous in this particular graph?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "near-duplicate-stem",
+      "questionId": "43318",
+      "concept": "loanable-funds-shifts",
+      "pools": [
+        "medium"
+      ],
+      "message": "Stem is 100% token-similar to 43317. Automated comparison indicates differences in: direction of reasoning or curve/shift direction, pedagogical role/pool (medium vs hard), scenario or wording.",
+      "suggestion": "Confirm that the pair tests meaningfully different reasoning rather than a trivial wording variant; the listed differences are heuristic review aids, not a redundancy verdict.",
+      "wording": "Saving supply falls while investment demand rises. What happens to the equilibrium real interest rate?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43181",
+      "concept": "saving-and-investment-identities",
+      "pools": [
+        "boss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Why is the statement 'each saver finances one identical investment project' incorrect?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43182",
+      "concept": "saving-and-investment-identities",
+      "pools": [
+        "bridge"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "How does household saving connect to later capital formation?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43203",
+      "concept": "saving-and-investment-identities",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In a closed economy, private saving rises by $20 billion while public saving falls by $35 billion. At the same time, new technology raises desired investment. What can be concluded without shift magnitudes?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43205",
+      "concept": "saving-and-investment-identities",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Which statement correctly describes S = I in a closed economy?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43208",
+      "concept": "saving-and-investment-identities",
+      "pools": [
+        "easy"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "In a closed economy, a student says each household's saving must equal one firm's investment. What is the correction?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43210",
+      "concept": "saving-and-investment-identities",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Government purchases fall by $25 billion with output and consumption fixed in a closed economy, while firms also become more optimistic about future sales. Which market description is complete?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "43213",
+      "concept": "saving-and-investment-identities",
+      "pools": [
+        "hard"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Private saving is $360 billion and public saving is −$60 billion. If desired investment at the current real rate is $340 billion, what pressure should move the closed-economy market toward equilibrium?"
+    }
+  ]
+}

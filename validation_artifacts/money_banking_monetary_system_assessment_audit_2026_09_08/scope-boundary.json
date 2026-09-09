@@ -1,0 +1,104 @@
+{
+  "preset": {
+    "id": "money-banking-inflation",
+    "title": "Money, Banking, Inflation & Monetary Policy",
+    "selectedConceptIds": [
+      "money-functions-and-measures",
+      "central-bank-and-federal-reserve",
+      "bank-balance-sheets-reserves-and-capital",
+      "deposit-creation-and-money-multiplier",
+      "monetary-policy-tools",
+      "monetary-control-limits",
+      "liquidity-preference-and-money-market",
+      "monetary-policy-transmission",
+      "quantity-theory-of-money",
+      "monetary-neutrality",
+      "fisher-effect",
+      "inflation-costs",
+      "inflation-tax-and-deflation"
+    ]
+  },
+  "selections": [
+    {
+      "conceptId": "money-functions-and-measures",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "central-bank-and-federal-reserve",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "bank-balance-sheets-reserves-and-capital",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "deposit-creation-and-money-multiplier",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "monetary-policy-tools",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "monetary-control-limits",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "liquidity-preference-and-money-market",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "monetary-policy-transmission",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "quantity-theory-of-money",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "monetary-neutrality",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "fisher-effect",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "inflation-costs",
+      "kind": "direct",
+      "parent": null
+    },
+    {
+      "conceptId": "inflation-tax-and-deflation",
+      "kind": "direct",
+      "parent": null
+    }
+  ],
+  "included": [
+    "Money functions, fiat/commodity, liquidity, M1/M2",
+    "Bank balance sheets, reserves, capital, deposit creation and multiplier limits",
+    "Central-bank roles, OMO, discount lending, reserve requirements and interest on reserves",
+    "Nominal-interest money market and value-of-money diagrams",
+    "Selected monetary-policy transmission, investment and AD; retain existing spending-multiplier integrations",
+    "MV=PY, velocity, neutrality, Fisher effect, inflation costs, inflation tax and deflation"
+  ],
+  "boundaries": [
+    "No new saving/national-accounting/loanable-funds or fiscal-policy coverage",
+    "No new full AD-AS shock/output-gap curriculum beyond the existing selected transmission records",
+    "No Phillips curves, sacrifice ratios or disinflation-policy models",
+    "No exchange-rate, FX, NCO or international-capital-flow coverage"
+  ],
+  "objectiveCodesAreRuntimeMetadata": true,
+  "note": "LO31.4 in monetary-control-limits is selected capital/leverage content. Objective codes and historical source chapters are preserved, not used to redefine selection."
+}

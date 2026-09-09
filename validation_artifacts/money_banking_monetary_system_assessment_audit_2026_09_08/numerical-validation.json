@@ -1,0 +1,1335 @@
+{
+  "method": "Separate verifier parses FINAL stems and independently uses rational arithmetic. Graph coordinates come from visual inspection of the actual approved images. Answer hashes are only checked after economic results, not used as numerical evidence. Every revised numeric item, including clarification-only edits, is included.",
+  "count": 60,
+  "items": [
+    {
+      "id": "LG-Q-300",
+      "finalStem": "Use U.S. monetary-aggregate definitions in effect before May 2020. A table lists public currency as $600, checkable deposits as $1,400, savings deposits as $1,800, small time deposits as $500, and retail money market mutual funds as $300. What are M1 and M2?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "600",
+          "1400",
+          "1800",
+          "500",
+          "300"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "M1": "2000",
+        "M2": "4600"
+      },
+      "keyedOption": "M1 = $2,000; M2 = $4,600",
+      "derivation": "Apply explicitly historical M1 = public currency + checkable deposits; add listed near monies once for M2.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9011",
+      "finalStem": "Use U.S. monetary-aggregate definitions in effect before May 2020. Suppose M1 is $3,000, savings deposits are $2,500, small time deposits are $1,200, retail money market funds are $800, and large time deposits are $900. If large time deposits are not counted in M2, what is M2?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "3000",
+          "2500",
+          "1200",
+          "800",
+          "900"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "M2": "7500"
+      },
+      "keyedOption": "$7,500",
+      "derivation": "Historical M1 excludes listed savings; sum M1, savings, small time and retail funds. Exclude large time deposits.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9012",
+      "finalStem": "Use U.S. monetary-aggregate definitions in effect before May 2020. A household moves $10,000 from a checking account to a savings account. What happens to M1 and M2, using standard course definitions?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "10000"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "deltaM1": "-10000",
+        "deltaM2": "0"
+      },
+      "keyedOption": "M1 falls, while M2 is unchanged.",
+      "derivation": "Under explicitly historical convention, reclassify checking into an M2-only component; no new balance is created.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-105",
+      "finalStem": "Use U.S. monetary-aggregate definitions in effect before May 2020. Suppose M1 is $2,000 billion, savings deposits are $900 billion, small time deposits are $300 billion, and retail money market mutual funds are $200 billion. M2 is",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "2000000000000",
+          "900000000000",
+          "300000000000",
+          "200000000000"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "M2": "3400000000000"
+      },
+      "keyedOption": "$3,400 billion",
+      "derivation": "Historical M1 excludes listed savings; sum M1, savings, small time and retail funds. Exclude large time deposits.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-202",
+      "finalStem": "Use U.S. monetary-aggregate definitions in effect before May 2020. A table lists currency held by the public as $900, checkable deposits as $1,600, savings deposits as $2,000, small time deposits as $700, and retail money market funds as $300. What are M1 and M2?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "900",
+          "1600",
+          "2000",
+          "700",
+          "300"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "M1": "2500",
+        "M2": "5500"
+      },
+      "keyedOption": "M1 = $2,500; M2 = $5,500",
+      "derivation": "Apply explicitly historical M1 = public currency + checkable deposits; add listed near monies once for M2.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-2002",
+      "finalStem": "Use U.S. monetary-aggregate definitions in effect before May 2020. Currency held by the public is $900, checkable deposits are $1,100, savings deposits are $1,500, and small time deposits are $500. What are M1 and M2?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "900",
+          "1100",
+          "1500",
+          "500"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "M1": "2000",
+        "M2": "4000"
+      },
+      "keyedOption": "M1 = $2,000; M2 = $4,000",
+      "derivation": "Apply explicitly historical M1 = public currency + checkable deposits; add listed near monies once for M2.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-B-6001",
+      "finalStem": "Use U.S. monetary-aggregate definitions in effect before May 2020. Currency is $800, checkable deposits are $1,200, and savings deposits are $1,500. What are M1 and M2?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "800",
+          "1200",
+          "1500"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "M1": "2000",
+        "M2": "3500"
+      },
+      "keyedOption": "M1 = $2,000; M2 = $3,500",
+      "derivation": "Apply explicitly historical M1 = public currency + checkable deposits; add listed near monies once for M2.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-104",
+      "finalStem": "Currency held by the public is $800 billion and checkable deposits are $1,200 billion. Assume these are the only M1 components with nonzero balances. What is M1?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "800000000000",
+          "1200000000000"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "M1": "2000000000000"
+      },
+      "keyedOption": "$2,000 billion",
+      "derivation": "Sum the only nonzero components explicitly supplied, with a common billion-dollar unit.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9110",
+      "finalStem": "Use current U.S. definitions, in which savings deposits are part of M1. A household shifts $75,000 from checking to savings at the same bank. Later the bank originates a $12,000 loan by crediting another customer’s checking account; no loan is repaid and no other balance changes. Relative to the starting totals, how do M1 and M2 change?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "75000",
+          "12000"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "classificationDelta": "0",
+        "deltaM1": "12000",
+        "deltaM2": "12000"
+      },
+      "keyedOption": "Both rise by $12,000.",
+      "derivation": "Current-definition internal reclassification changes neither aggregate. Loan origination adds a deposit equal to the loan, counted once in each aggregate.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-207",
+      "finalStem": "Use the textbook reserve-constrained model, with no other changes. A bank has $300,000 in deposits and a 10 percent reserve requirement. It currently holds $45,000 in reserves. If it lends all excess reserves, what will its reserves and loans change by? Assume the borrower immediately pays someone at another bank and the entire payment settles in reserves.",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "300000",
+          "45000"
+        ],
+        "percentFractions": [
+          "1/10"
+        ]
+      },
+      "recomputed": {
+        "requiredReserves": "30000",
+        "excess": "15000",
+        "settlementReserveChange": "-15000",
+        "loanChange": "15000"
+      },
+      "keyedOption": "Reserves fall by $15,000 and loans rise by $15,000.",
+      "derivation": "Calculate pre-loan excess reserves; the explicitly stated outgoing settlement converts this amount of reserves into a loan asset.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-301",
+      "finalStem": "Assume the bank cannot obtain extra reserves, sell assets, or retain any new loan proceeds as deposits; every new loan payment would leave the bank. A bank has $900,000 in deposits, a 15 percent reserve requirement, and $135,000 in actual reserves. What can the bank do immediately?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "900000",
+          "135000"
+        ],
+        "percentFractions": [
+          "3/20"
+        ]
+      },
+      "recomputed": {
+        "excessReserves": "0"
+      },
+      "keyedOption": "It cannot lend more because actual reserves equal required reserves.",
+      "derivation": "No excess reserves and the explicit no-funding/no-retention constraints rule out an additional outgoing loan.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-303",
+      "finalStem": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. A public cash deposit of $8,000 enters a banking system with a 20 percent reserve requirement. What is the first bank's initial loan and the maximum total deposit expansion?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "8000"
+        ],
+        "percentFractions": [
+          "1/5"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "6400",
+        "grossDepositIncrease": "40000",
+        "netMoneyIncrease": "32000"
+      },
+      "keyedOption": "Initial loan = $6,400; total expansion = $40,000",
+      "derivation": "At fixed ratio with full redepositing and no leakage, sum deposits as initial cash/r. Gross deposits include initial public cash; net money subtracts it.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-224",
+      "finalStem": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. Suppose the reserve ratio is 25 percent and a public cash deposit of $4,000 enters the banking system. What is the maximum total deposit expansion and the first bank's initial loan?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "4000"
+        ],
+        "percentFractions": [
+          "1/4"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "3000",
+        "grossDepositIncrease": "16000",
+        "netMoneyIncrease": "12000"
+      },
+      "keyedOption": "Maximum expansion = $16,000; initial loan = $3,000",
+      "derivation": "At fixed ratio with full redepositing and no leakage, sum deposits as initial cash/r. Gross deposits include initial public cash; net money subtracts it.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-2008",
+      "finalStem": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. A public cash deposit of $5,000 enters a banking system with a 20 percent reserve requirement. What is the first bank's initial loan and the simple maximum total deposit expansion?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "5000"
+        ],
+        "percentFractions": [
+          "1/5"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "4000",
+        "grossDepositIncrease": "25000",
+        "netMoneyIncrease": "20000"
+      },
+      "keyedOption": "Initial loan = $4,000; total expansion = $25,000",
+      "derivation": "At fixed ratio with full redepositing and no leakage, sum deposits as initial cash/r. Gross deposits include initial public cash; net money subtracts it.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "P52A-BANK-B3-003",
+      "finalStem": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. A $10,000 deposit enters a system with a 20 percent reserve requirement. If banks lend all excess reserves and loans are redeposited, maximum total deposits are:",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "10000"
+        ],
+        "percentFractions": [
+          "1/5"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "8000",
+        "grossDepositIncrease": "50000",
+        "netMoneyIncrease": "40000"
+      },
+      "keyedOption": "$50,000.",
+      "derivation": "At fixed ratio with full redepositing and no leakage, sum deposits as initial cash/r. Gross deposits include initial public cash; net money subtracts it.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-B-6005",
+      "finalStem": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. A $10,000 deposit enters a system with a 20% reserve ratio. What is the maximum total deposit expansion?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "10000"
+        ],
+        "percentFractions": [
+          "1/5"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "8000",
+        "grossDepositIncrease": "50000",
+        "netMoneyIncrease": "40000"
+      },
+      "keyedOption": "$50,000",
+      "derivation": "At fixed ratio with full redepositing and no leakage, sum deposits as initial cash/r. Gross deposits include initial public cash; net money subtracts it.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-314",
+      "finalStem": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. The public moves $50 million from currency into checking deposits. The reserve ratio is 10 percent and banks lend all excess reserves. What is the maximum total deposit expansion supported by this shift?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "50000000"
+        ],
+        "percentFractions": [
+          "1/10"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "45000000",
+        "grossDepositIncrease": "500000000",
+        "netMoneyIncrease": "450000000"
+      },
+      "keyedOption": "$500 million",
+      "derivation": "At fixed ratio with full redepositing and no leakage, sum deposits as initial cash/r. Gross deposits include initial public cash; net money subtracts it.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9019",
+      "finalStem": "Use a hypothetical banking system initially holding exactly its required reserves. The stated reserve ratio stays fixed, banks lend all excess reserves, every loan payment is fully redeposited, and there is no currency drain or other lending constraint. The initial deposit comes from currency previously held by the public, and total deposit expansion includes that initial deposit. If the public deposits $30 million in currency into banks, the reserve ratio is 15 percent, and banks lend all excess reserves, what is the maximum total deposit expansion?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "30000000"
+        ],
+        "percentFractions": [
+          "3/20"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "25500000",
+        "grossDepositIncrease": "200000000",
+        "netMoneyIncrease": "170000000"
+      },
+      "keyedOption": "$200 million",
+      "derivation": "At fixed ratio with full redepositing and no leakage, sum deposits as initial cash/r. Gross deposits include initial public cash; net money subtracts it.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-205",
+      "finalStem": "In a hypothetical system, a household deposits $10,000 of currency previously held outside banks. Banks initially meet a fixed 20 percent reserve ratio exactly, lend every new excess reserve dollar, and all loan payments are redeposited without currency drain. No other constraint binds. What are the first bank’s loan and the eventual net increase in currency plus checking deposits?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "10000"
+        ],
+        "percentFractions": [
+          "1/5"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "8000",
+        "netMoney": "40000"
+      },
+      "keyedOption": "First loan $8,000; net money increase $40,000.",
+      "derivation": "Calculate first lending and subtract currency removed from the public from the eventual deposit increase.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9018",
+      "finalStem": "Use a hypothetical fixed-ratio reserve model with no currency drain: every loan payment is fully redeposited, credit demand is sufficient, and no other constraint binds. A bank has $5 million in deposits, $700,000 in reserves, and a 10 percent reserve requirement. It lends all excess reserves, and every later bank does the same. What is the maximum total money expansion created by the excess reserves?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "5000000",
+          "700000"
+        ],
+        "percentFractions": [
+          "1/10"
+        ]
+      },
+      "recomputed": {
+        "initialExcess": "200000",
+        "newDepositsAndMoney": "2000000"
+      },
+      "keyedOption": "$2 million",
+      "derivation": "The excess reserves preexist; all subsequent deposits are new loan-created money. Full redepositing gives E/r.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9109",
+      "finalStem": "Use a hypothetical fixed-ratio reserve model with no currency drain: every loan payment is fully redeposited, credit demand is sufficient, and no other constraint binds. A bank has $10 million in deposits and $1.3 million in reserves. The reserve ratio is 10 percent. If the bank lends all excess reserves and every later bank does the same, what maximum total deposit expansion can the excess reserves support?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "10000000",
+          "1300000"
+        ],
+        "percentFractions": [
+          "1/10"
+        ]
+      },
+      "recomputed": {
+        "initialExcess": "300000",
+        "newDepositsAndMoney": "3000000"
+      },
+      "keyedOption": "$3 million",
+      "derivation": "The excess reserves preexist; all subsequent deposits are new loan-created money. Full redepositing gives E/r.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9000",
+      "finalStem": "In a hypothetical system with a fixed 12.5 percent reserve ratio, a household deposits $28,000 of existing public currency. Banks initially have no excess reserves. Every bank lends all new excess reserves, all loan payments are redeposited, and no other constraint binds. An analyst counts the first deposit as new money and reports the full deposit increase as money creation. Which set of results diagnoses the error?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "28000"
+        ],
+        "percentFractions": [
+          "1/8"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "24500",
+        "deposits": "224000",
+        "netMoney": "196000"
+      },
+      "keyedOption": "First loan $24,500; deposit increase $224,000; net money increase $196,000.",
+      "derivation": "Three-way reconciliation: first loan D0(1-r), deposits D0/r, and net money D0/r-D0.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9008",
+      "finalStem": "In two hypothetical steady states, the public holds no currency and banks have a fixed required-reserve ratio of 10 percent. The observed deposit-to-reserve ratio falls from 8 to 5. Assume all reserves are either required or deliberately held as excess reserves. Which diagnosis fits both observations?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "1/10"
+        ]
+      },
+      "recomputed": {
+        "excessDepositShareBefore": "1/40",
+        "excessDepositShareAfter": "1/10"
+      },
+      "keyedOption": "The excess-reserve share of deposits rose from 2.5 to 10 percent.",
+      "derivation": "Invert observed D/R and subtract the unchanged required reserve ratio; public currency is explicitly zero.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9112",
+      "finalStem": "A hypothetical system starts with no excess reserves. A public cash deposit of $25,000 enters the first bank. Each bank keeps the fixed 8 percent required reserve and lends the remainder. After each loan, 25 percent of its proceeds stays as public currency and 75 percent is deposited at the next bank. What is the second bank’s loan, and how much smaller is it than under full redepositing?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "25000"
+        ],
+        "percentFractions": [
+          "2/25",
+          "1/4",
+          "3/4"
+        ]
+      },
+      "recomputed": {
+        "firstLoan": "23000",
+        "secondDeposit": "17250",
+        "secondLoan": "15870",
+        "reduction": "5290"
+      },
+      "keyedOption": "$15,870; $5,290 smaller.",
+      "derivation": "Each stage distinguishes loan, leaked currency and next-bank deposit; the reserve requirement applies to the redeposited portion.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-209",
+      "finalStem": "If the Fed wants to reduce the money supply by exactly $120 million and the money multiplier is 6, how many bonds should it sell?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "120000000"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "sale": "20000000"
+      },
+      "keyedOption": "$20 million",
+      "derivation": "Solve the exact target by dividing the desired money reduction by the stipulated multiplier.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9003",
+      "finalStem": "In a hypothetical steady-state banking model, the required-reserve ratio is 10 percent, banks hold excess reserves equal to 5 percent of deposits, and the public holds currency equal to 25 percent of deposits. These ratios remain fixed. Money is currency plus deposits; the monetary base is currency plus total reserves. What base increase is needed for a $250 million money increase, and why is the simple 1/required-ratio estimate too small?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "250000000"
+        ],
+        "percentFractions": [
+          "1/10",
+          "1/20",
+          "1/4"
+        ]
+      },
+      "recomputed": {
+        "moneyBaseMultiplier": "25/8",
+        "baseIncrease": "80000000"
+      },
+      "keyedOption": "$80 million; both currency holdings and excess reserves absorb base money.",
+      "derivation": "Derive money/base = (C+D)/(C+R) = (1+c)/(c+r+e); both ratios are shares of deposits.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9010",
+      "finalStem": "A hypothetical bank has $600,000 in deposits and $90,000 in reserves. The required-reserve ratio rises from 10 to 15 percent. The bank cannot obtain new reserves, and any additional loan payment would settle at another bank. Which conclusion distinguishes its reserve position from its ability to expand?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "600000",
+          "90000"
+        ],
+        "percentFractions": [
+          "3/20"
+        ]
+      },
+      "recomputed": {
+        "requiredBefore": "60000",
+        "requiredAfter": "90000",
+        "excessAfter": "0"
+      },
+      "keyedOption": "It meets the new requirement exactly, but has no excess reserves for an outgoing loan.",
+      "derivation": "A zero excess position is compliant, not a reserve deficit; apply the stated outgoing-settlement constraint separately.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9108",
+      "finalStem": "In a hypothetical banking system initially without excess reserves, the public deposits $56,000 of existing currency. The required-reserve ratio stays at 20 percent. Each bank lends all excess reserves; after every loan, 25 percent stays as currency and 75 percent reaches the next bank. No other constraint binds. Including the initial deposit, what is the eventual deposit increase, and what is the net increase in currency plus deposits?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "56000"
+        ],
+        "percentFractions": [
+          "1/5",
+          "1/4",
+          "3/4"
+        ]
+      },
+      "recomputed": {
+        "depositSeriesRatio": "3/5",
+        "deposits": "140000",
+        "totalLoans": "112000",
+        "currencyChange": "-28000",
+        "netMoney": "112000"
+      },
+      "keyedOption": "Deposits rise $140,000; net money rises $112,000.",
+      "derivation": "Sum the geometric deposit series independently. Currency held from all loans minus initial deposited public cash reconciles net money.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9006",
+      "finalStem": "In a hypothetical fully loaned-up system with a fixed 10 percent reserve ratio and no excess reserves, the public permanently switches $36 million from deposits to currency. The monetary base stays fixed. Banks restore their reserve ratios through loan repayments that destroy deposits; there are no defaults or other changes. What are the final changes in deposits and in currency plus deposits?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "36000000"
+        ],
+        "percentFractions": [
+          "1/10"
+        ]
+      },
+      "recomputed": {
+        "depositDecline": "360000000",
+        "netMoneyDecline": "324000000"
+      },
+      "keyedOption": "Deposits fall $360 million; money falls $324 million.",
+      "derivation": "Fixed base and higher public currency imply equal reserve loss. At unchanged R/D, final deposit contraction is reserve loss/r; subtract currency growth for net money contraction.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "PG4-MM-L-004",
+      "finalStem": "Refer to the graph. The economy starts at B with MD0 and MS0. Money demand changes to MD1. The central bank increases money supply to MS1, but wants to restore B’s original nominal interest rate. If the straight MD1 line continues as drawn, approximately how much additional money beyond MS1 is needed?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "MD1Slope": "-2/25",
+        "additionalMoney": "25/2",
+        "targetMoney": "225/2"
+      },
+      "keyedOption": "12.5 units; a total money quantity of 112.5.",
+      "derivation": "Read the original rate at B and solve the straight MD1 through A and C for that rate. The horizontal difference is measured from MS1.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-336",
+      "finalStem": "Refer to the value-of-money graph. The economy moves from a to b. In a long-run comparison, a nominal wage rises by the same proportion as the price level inferred from those points, and technology and labor supplies are unchanged. Which comparison fits monetary neutrality?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "priceA": "1/2",
+        "priceB": "2/3",
+        "priceGrowth": "1/3",
+        "velocityFactorIfOutputFixed": "2/3"
+      },
+      "keyedOption": "The price level and nominal wage rise by one-third; the real wage need not change.",
+      "derivation": "Use actual graph values, not old stem fractions. Inverse prices rise by 4/3; constant output and doubled money imply velocity factor 2/3. Proportional wages preserve real wages where stated.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9115",
+      "finalStem": "Refer to the value-of-money graph. A worker earns $24 at point a and $30 at point b. Treat each point’s price level as the reciprocal of its displayed value of money. What happens to the worker’s real wage, and what nominal wage at b would instead preserve the original purchasing power?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "24",
+          "30"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "priceA": "1/2",
+        "priceB": "2/3",
+        "realWageA": "48",
+        "realWageB": "45",
+        "compensatingNominalWage": "32"
+      },
+      "keyedOption": "Real wage falls from 48 to 45 output units; $32 would preserve it.",
+      "derivation": "Invert the actual image value-of-money ordinates, divide final-stem nominal wages by those prices, then solve the compensation wage.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9029",
+      "finalStem": "Refer to the graph. An analyst describes the move from a to b as a rightward shift of money demand and says that doubling the money quantity proves a doubling of the price level. Which diagnosis uses both curve evidence and the vertical-axis scale?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "priceA": "1/2",
+        "priceB": "2/3",
+        "priceGrowth": "1/3",
+        "velocityFactorIfOutputFixed": "2/3"
+      },
+      "keyedOption": "MD is unchanged; the price level rises by one-third, so constant output would require velocity to fall.",
+      "derivation": "Use actual graph values, not old stem fractions. Inverse prices rise by 4/3; constant output and doubled money imply velocity factor 2/3. Proportional wages preserve real wages where stated.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9031",
+      "finalStem": "An economy plans for real output to grow 4 percent and the price level to grow 2 percent over one year. A payments change is expected to reduce velocity by 3 percent. Using the exact multiplicative quantity equation, approximately what money-growth rate meets both targets, and why would simply adding 2 and 4 be insufficient?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "1/25",
+          "1/50",
+          "3/100"
+        ]
+      },
+      "recomputed": {
+        "exactMoneyGrowth": "227/2425",
+        "approximatePercent": "9.36"
+      },
+      "keyedOption": "9.36 percent; money must also offset the velocity decline.",
+      "derivation": "Rearrange exact growth factors: M1/M0 = (P1/P0)(Y1/Y0)/(V1/V0).",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9035",
+      "finalStem": "A lender’s one-year fixed nominal contract pays 12 percent. Expected inflation when written was 5 percent, but actual inflation is 9 percent. Use exact gross returns. What are the expected and realized real returns, and what nominal rate on a new loan would preserve the original expected real return if expected inflation is now 9 percent?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/25",
+          "1/20",
+          "9/100",
+          "9/100"
+        ]
+      },
+      "recomputed": {
+        "expectedReal": "1/15",
+        "realizedReal": "3/109",
+        "newNominal": "61/375"
+      },
+      "keyedOption": "About 6.67 percent, 2.75 percent, and 16.27 percent.",
+      "derivation": "Exact gross-return ratios; reprice a new loan using the original expected real return and newly expected inflation.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9128",
+      "finalStem": "A country’s nominal loan rate falls from 16 to 9 percent while expected inflation falls from 12 to 4 percent. Using the Fisher approximation, what happens to the expected real rate, and by how much would the new nominal rate have had to fall further to preserve its original expected real rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "9/100",
+          "1/25"
+        ]
+      },
+      "recomputed": {
+        "expectedRealBeforePercent": "4",
+        "expectedRealAfterPercent": "5",
+        "furtherNominalCutPoints": "1"
+      },
+      "keyedOption": "The expected real rate rises from 4 to 5 percent; a further 1-point nominal cut was needed.",
+      "derivation": "Apply the expressly approximate expected-inflation decomposition, then hold the original real rate fixed to solve the counterfactual nominal rate.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-249",
+      "finalStem": "A household keeps a fixed $720 cash balance while the price level rises from 1.2 to 1.5 during money-financed government spending. How much purchasing power, measured in units of the composite good, does this unchanged balance lose?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "720"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "initialRealCash": "600",
+        "finalRealCash": "480",
+        "purchasingPowerLoss": "120"
+      },
+      "keyedOption": "120 units.",
+      "derivation": "Divide the same nominal cash by each final-stem price level; subtract in composite-good units.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9041",
+      "finalStem": "Unexpected deflation reduces the price level from 1.25 to 1.00. A firm’s fixed nominal debt is $48,000. Its sales volume is unchanged, and its $12,000 nominal operating cash flow falls in the same proportion as the price level. Which pair describes the debt burden and the cash-flow pressure?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "48000",
+          "12000"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "realDebtBefore": "38400",
+        "realDebtAfter": "48000",
+        "newNominalCashFlow": "9600",
+        "coverageRatioBefore": "4",
+        "coverageRatioAfter": "5"
+      },
+      "keyedOption": "Real debt rises from 38,400 to 48,000 units; debt/cash flow rises from 4 to 5.",
+      "derivation": "Recompute real debt at each price level, adjust nominal cash flow proportionally, and calculate both debt/cash-flow ratios.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "PG4-MPT-L-001",
+      "finalStem": "Refer to the two-panel graph. Between A and B, the central bank expands money supply while SRAS stays fixed. A commentator says output and prices rose by the same percentage because they both rose. Which numerical comparison and inference are supported?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "outputGrowthPercent": "25",
+        "priceGrowthPercent": "25/2"
+      },
+      "keyedOption": "Output rises 25 percent and the price level 12.5 percent; their responses need not be proportional.",
+      "derivation": "Use visually inspected MONEY-AD-01 point A=(100,50), B=(125,56.25); compute each percentage change with its own denominator.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9131",
+      "finalStem": "Refer to the graph showing MS1 to MS2. In a fixed-price spending model, the resulting investment loss is $90 billion, while an independent recovery in business expectations adds $30 billion of autonomous investment. MPC is 0.6; there are no taxes, imports or further interest-rate feedbacks. What is the net shift in aggregate demand, and what independent investment recovery would exactly cancel the monetary effect?",
+      "finalInputsParsed": {
+        "currencyAmounts": [
+          "90000000000",
+          "30000000000"
+        ],
+        "percentFractions": []
+      },
+      "recomputed": {
+        "autonomousNetInvestment": "-60000000000",
+        "netAD": "-150000000000",
+        "cancellingAutonomousRecovery": "90000000000"
+      },
+      "keyedOption": "AD shifts left $150 billion; a $90 billion recovery would cancel it.",
+      "derivation": "The inspected MS2-left-of-MS1 image establishes contraction. Apply the specified fixed-price multiplier to net autonomous investment, not to a final-demand offset.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-242",
+      "finalStem": "Use the Fisher approximation. The nominal interest rate is 11 percent and expected inflation is 7 percent. If actual inflation turns out to be 10 percent, what is the realized real interest rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "11/100",
+          "7/100",
+          "1/10"
+        ]
+      },
+      "recomputed": {
+        "realizedReal": "1"
+      },
+      "keyedOption": "1 percent",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-243",
+      "finalStem": "Use the Fisher approximation. If expected inflation rises from 3 percent to 8 percent and the real interest rate remains 2 percent, what happens to the nominal interest rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/100",
+          "2/25",
+          "1/50"
+        ]
+      },
+      "recomputed": {
+        "nominalBefore": "5",
+        "nominalAfter": "10"
+      },
+      "keyedOption": "It rises from 5 percent to 10 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-341",
+      "finalStem": "Use the Fisher approximation. A borrower signs a loan at 9 percent nominal interest when expected inflation is 4 percent. Actual inflation is 7 percent. What happened to the realized real interest rate compared with what the lender expected?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "9/100",
+          "1/25",
+          "7/100"
+        ]
+      },
+      "recomputed": {
+        "expectedReal": "5",
+        "realizedReal": "2"
+      },
+      "keyedOption": "It fell from 5 percent expected to 2 percent realized.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-342",
+      "finalStem": "Use the Fisher approximation. Expected inflation rises from 2 percent to 9 percent. If the real interest rate is stable at 3 percent, what should happen to the nominal interest rate under the Fisher effect?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "1/50",
+          "9/100",
+          "3/100"
+        ]
+      },
+      "recomputed": {
+        "nominalBefore": "5",
+        "nominalAfter": "12"
+      },
+      "keyedOption": "It rises from 5 percent to 12 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9036",
+      "finalStem": "Use the Fisher approximation. Expected inflation rises from 4 percent to 11 percent. The real interest rate falls from 3 percent to 2 percent. What happens to the nominal interest rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "1/25",
+          "11/100",
+          "3/100",
+          "1/50"
+        ]
+      },
+      "recomputed": {
+        "nominalBefore": "7",
+        "nominalAfter": "13"
+      },
+      "keyedOption": "It rises from 7 percent to 13 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-3008",
+      "finalStem": "Use the Fisher approximation. Expected inflation rises from 3 percent to 8 percent while the real interest rate falls from 4 percent to 2 percent. What happens to the nominal interest rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/100",
+          "2/25",
+          "1/25",
+          "1/50"
+        ]
+      },
+      "recomputed": {
+        "nominalBefore": "7",
+        "nominalAfter": "10"
+      },
+      "keyedOption": "It rises from 7 percent to 10 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9117",
+      "finalStem": "Use the Fisher approximation. If MS shifts right and the value of money falls, expected inflation rises from 3 percent to 9 percent. If the real interest rate stays at 2 percent, what happens to the nominal interest rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/100",
+          "9/100",
+          "1/50"
+        ]
+      },
+      "recomputed": {
+        "nominalBefore": "5",
+        "nominalAfter": "11"
+      },
+      "keyedOption": "It rises from 5 percent to 11 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9127",
+      "finalStem": "Use the Fisher approximation. Expected inflation rises from 2 percent to 10 percent while the real rate falls from 4 percent to 1 percent. What happens to the nominal interest rate, and why is this not a contradiction?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "1/50",
+          "1/10",
+          "1/25",
+          "1/100"
+        ]
+      },
+      "recomputed": {
+        "nominalBefore": "6",
+        "nominalAfter": "11"
+      },
+      "keyedOption": "It rises from 6 percent to 11 percent because expected inflation rose more than the real rate fell.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "ECON-SP-MEDIUM-115",
+      "finalStem": "Use the Fisher approximation. Expected inflation rises from 3 percent to 6 percent while the real interest rate stays at 2 percent. The nominal rate becomes:",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/100",
+          "3/50",
+          "1/50"
+        ]
+      },
+      "recomputed": {
+        "nominalAfter": "8"
+      },
+      "keyedOption": "8 percent",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "ECON-SP-HARD-209",
+      "finalStem": "Use the Fisher approximation. If the real interest rate is 3 percent and expected inflation rises from 4 percent to 9 percent, the Fisher effect predicts the nominal rate rises by:",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/100",
+          "1/25",
+          "9/100"
+        ]
+      },
+      "recomputed": {
+        "nominalChangePoints": "5"
+      },
+      "keyedOption": "5 points",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-R-5033",
+      "finalStem": "Use the Fisher approximation. If real interest is 3% and expected inflation is 5%, nominal interest is:",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/100",
+          "1/20"
+        ]
+      },
+      "recomputed": {
+        "nominalRate": "8"
+      },
+      "keyedOption": "8%",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "ECON-SP-FISHER-EFFECT-6015",
+      "finalStem": "Use the Fisher approximation. If the real interest rate is 2 percent and expected inflation is 6 percent, the nominal interest rate is:",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "1/50",
+          "3/50"
+        ]
+      },
+      "recomputed": {
+        "nominalRate": "8"
+      },
+      "keyedOption": "8 percent",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-B-6013",
+      "finalStem": "Use the Fisher approximation. Real interest is 2% and expected inflation is 6%. Nominal interest is:",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "1/50",
+          "3/50"
+        ]
+      },
+      "recomputed": {
+        "nominalRate": "8"
+      },
+      "keyedOption": "8%",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-343",
+      "finalStem": "Use the Fisher approximation. A lender expected 6 percent inflation and charged 11 percent nominal interest. Actual inflation was 3 percent. Who gains from the surprise and what is the realized real rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/50",
+          "11/100",
+          "3/100"
+        ]
+      },
+      "recomputed": {
+        "realizedReal": "8",
+        "inflationSurprise": "-3"
+      },
+      "keyedOption": "Lender gains; realized real rate is 8 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-344",
+      "finalStem": "Use the Fisher approximation. A borrower expected 3 percent inflation on a loan with a 7 percent nominal rate. Actual inflation was 10 percent. Who gains and what is the realized real rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/100",
+          "7/100",
+          "1/10"
+        ]
+      },
+      "recomputed": {
+        "realizedReal": "-3",
+        "inflationSurprise": "7"
+      },
+      "keyedOption": "Borrower gains; realized real rate is -3 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9037",
+      "finalStem": "Use the Fisher approximation. A lender expected 3 percent inflation and charged 8 percent nominal interest. Actual inflation was 12 percent. Who gains, and what is the realized real rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "3/100",
+          "2/25",
+          "3/25"
+        ]
+      },
+      "recomputed": {
+        "realizedReal": "-4",
+        "inflationSurprise": "9"
+      },
+      "keyedOption": "Borrower gains; realized real rate is -4 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9038",
+      "finalStem": "Use the Fisher approximation. A lender expected 8 percent inflation and charged 13 percent nominal interest. Actual inflation was 2 percent. Who gains, and what is the realized real rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "2/25",
+          "13/100",
+          "1/50"
+        ]
+      },
+      "recomputed": {
+        "realizedReal": "11",
+        "inflationSurprise": "-6"
+      },
+      "keyedOption": "Lender gains; realized real rate is 11 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-3011",
+      "finalStem": "Use the Fisher approximation. A loan has a 9 percent nominal interest rate. Expected inflation was 3 percent, but actual inflation was 10 percent. Who gains, and what is the realized real interest rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "9/100",
+          "3/100",
+          "1/10"
+        ]
+      },
+      "recomputed": {
+        "realizedReal": "-1",
+        "inflationSurprise": "7"
+      },
+      "keyedOption": "Borrower gains; realized real rate is -1 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-9119",
+      "finalStem": "Use the Fisher approximation. A loan has a 10 percent nominal interest rate. Expected inflation was 4 percent, but actual inflation was 11 percent. Who gains, and what is the realized real interest rate?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "1/10",
+          "1/25",
+          "11/100"
+        ]
+      },
+      "recomputed": {
+        "realizedReal": "-1",
+        "inflationSurprise": "7"
+      },
+      "keyedOption": "Borrower gains; realized real rate is -1 percent.",
+      "derivation": "Parse the final stated rates; apply approximate i=r+expected inflation for pricing and i-actual inflation for realized return. Compare actual with expected inflation for redistribution on the fixed nominal contract.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    },
+    {
+      "id": "LG-Q-3013",
+      "finalStem": "Use the quantity-equation growth approximation. A government prints money heavily to pay bills. Money growth rises to 18 percent, velocity is stable, and real output grows 4 percent. What inflation rate is predicted?",
+      "finalInputsParsed": {
+        "currencyAmounts": [],
+        "percentFractions": [
+          "9/50",
+          "1/25"
+        ]
+      },
+      "recomputed": {
+        "approxInflationPercent": "14"
+      },
+      "keyedOption": "14 percent",
+      "derivation": "Stable velocity growth is zero; approximate inflation is money growth minus real-output growth.",
+      "fourOptionsReviewed": true,
+      "exactlyOneEconomicallyCorrectOption": true,
+      "standaloneInputs": true,
+      "rounding": "Exact rational calculation; round only where the question requests approximation."
+    }
+  ]
+}

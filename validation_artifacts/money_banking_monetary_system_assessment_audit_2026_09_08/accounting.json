@@ -1,0 +1,715 @@
+{
+  "before": 818,
+  "after": 818,
+  "added": 0,
+  "removed": 0,
+  "unchanged": 674,
+  "content-revised": 71,
+  "accessibility-only": 73,
+  "byConcept": {
+    "bank-balance-sheets-reserves-and-capital": {
+      "unchanged": 50,
+      "content-revised": 3
+    },
+    "central-bank-and-federal-reserve": {
+      "unchanged": 50
+    },
+    "deposit-creation-and-money-multiplier": {
+      "unchanged": 26,
+      "content-revised": 11
+    },
+    "fisher-effect": {
+      "unchanged": 36,
+      "content-revised": 16
+    },
+    "inflation-costs": {
+      "unchanged": 51,
+      "content-revised": 7
+    },
+    "inflation-tax-and-deflation": {
+      "unchanged": 45,
+      "content-revised": 3
+    },
+    "liquidity-preference-and-money-market": {
+      "unchanged": 61,
+      "accessibility-only": 41,
+      "content-revised": 2
+    },
+    "monetary-control-limits": {
+      "unchanged": 55,
+      "content-revised": 5
+    },
+    "monetary-neutrality": {
+      "unchanged": 60,
+      "content-revised": 2
+    },
+    "monetary-policy-tools": {
+      "unchanged": 57,
+      "content-revised": 3
+    },
+    "monetary-policy-transmission": {
+      "unchanged": 53,
+      "accessibility-only": 32,
+      "content-revised": 2
+    },
+    "money-functions-and-measures": {
+      "unchanged": 51,
+      "content-revised": 15
+    },
+    "quantity-theory-of-money": {
+      "unchanged": 79,
+      "content-revised": 2
+    }
+  },
+  "byObjective": {
+    "30.1": {
+      "unchanged": 27,
+      "content-revised": 14
+    },
+    "30.2": {
+      "unchanged": 24
+    },
+    "30.3": {
+      "unchanged": 49,
+      "content-revised": 13
+    },
+    "30.4": {
+      "unchanged": 44,
+      "content-revised": 3
+    },
+    "30.5": {
+      "unchanged": 41,
+      "content-revised": 5
+    },
+    "31.1": {
+      "unchanged": 63,
+      "content-revised": 2
+    },
+    "31.2": {
+      "unchanged": 40,
+      "content-revised": 2
+    },
+    "31.3": {
+      "unchanged": 14,
+      "content-revised": 14
+    },
+    "31.4": {
+      "unchanged": 35,
+      "content-revised": 7
+    },
+    "31.5": {
+      "unchanged": 42,
+      "content-revised": 3
+    },
+    "35.1": {
+      "unchanged": 40
+    },
+    "35.2": {
+      "unchanged": 37,
+      "accessibility-only": 14,
+      "content-revised": 1
+    },
+    "LO30.1": {
+      "unchanged": 24,
+      "content-revised": 1
+    },
+    "LO30.2": {
+      "unchanged": 26
+    },
+    "LO30.3": {
+      "unchanged": 27,
+      "content-revised": 1
+    },
+    "LO30.4": {
+      "unchanged": 13
+    },
+    "LO30.5": {
+      "unchanged": 7
+    },
+    "LO31.1": {
+      "unchanged": 16
+    },
+    "LO31.2": {
+      "unchanged": 20
+    },
+    "LO31.3": {
+      "unchanged": 22,
+      "content-revised": 2
+    },
+    "LO31.4": {
+      "unchanged": 23
+    },
+    "LO31.5": {
+      "unchanged": 3
+    },
+    "LO35.1": {
+      "unchanged": 21,
+      "accessibility-only": 41,
+      "content-revised": 2
+    },
+    "LO35.2": {
+      "unchanged": 16,
+      "accessibility-only": 18,
+      "content-revised": 1
+    }
+  },
+  "byCanonicalDifficulty": {
+    "easy": {
+      "unchanged": 131,
+      "content-revised": 5,
+      "accessibility-only": 9
+    },
+    "elite": {
+      "content-revised": 9,
+      "unchanged": 76,
+      "accessibility-only": 10
+    },
+    "hard": {
+      "unchanged": 127,
+      "content-revised": 11,
+      "accessibility-only": 11
+    },
+    "legendary": {
+      "content-revised": 31,
+      "unchanged": 91,
+      "accessibility-only": 24
+    },
+    "medium": {
+      "unchanged": 128,
+      "content-revised": 8,
+      "accessibility-only": 19
+    },
+    "unknown": {
+      "unchanged": 121,
+      "content-revised": 7
+    }
+  },
+  "byType": {
+    "advanced_growth_calculation": {
+      "unchanged": 1
+    },
+    "analysis": {
+      "accessibility-only": 15,
+      "unchanged": 1
+    },
+    "application": {
+      "unchanged": 106,
+      "content-revised": 1,
+      "accessibility-only": 6
+    },
+    "balance_sheet_diagnosis": {
+      "unchanged": 1
+    },
+    "balance_sheet_logic": {
+      "content-revised": 1
+    },
+    "boss_scaffold_application": {
+      "unchanged": 5,
+      "content-revised": 1
+    },
+    "boss_scaffold_calculation": {
+      "unchanged": 4
+    },
+    "boss_scaffold_definition": {
+      "unchanged": 10
+    },
+    "boss_scaffold_graph_synthesis": {
+      "unchanged": 1
+    },
+    "boss_scaffold_synthesis": {
+      "content-revised": 4,
+      "unchanged": 5
+    },
+    "bridge": {
+      "unchanged": 40,
+      "content-revised": 4
+    },
+    "calculation": {
+      "unchanged": 53,
+      "content-revised": 7,
+      "accessibility-only": 5
+    },
+    "calculation_logic": {
+      "unchanged": 1
+    },
+    "causal_chain": {
+      "unchanged": 8
+    },
+    "causal_explanation": {
+      "unchanged": 7
+    },
+    "checkpoint": {
+      "unchanged": 27
+    },
+    "classification": {
+      "content-revised": 1,
+      "unchanged": 3
+    },
+    "comparative_calculation": {
+      "unchanged": 2,
+      "content-revised": 1
+    },
+    "comparative_growth_calculation": {
+      "unchanged": 1
+    },
+    "concept": {
+      "unchanged": 15
+    },
+    "concept_application": {
+      "unchanged": 7
+    },
+    "concept_distinction": {
+      "unchanged": 1
+    },
+    "concept_synthesis": {
+      "unchanged": 2
+    },
+    "definition": {
+      "unchanged": 43,
+      "content-revised": 1
+    },
+    "definition_application": {
+      "unchanged": 1
+    },
+    "diagnostic_calculation": {
+      "unchanged": 1
+    },
+    "expected_vs_actual_calculation": {
+      "content-revised": 1
+    },
+    "explanation": {
+      "unchanged": 5
+    },
+    "finalboss_scaffold_definition": {
+      "unchanged": 2
+    },
+    "finalboss_scaffold_graph_application": {
+      "unchanged": 2
+    },
+    "finalboss_scaffold_graph_synthesis": {
+      "unchanged": 2
+    },
+    "graph": {
+      "accessibility-only": 16
+    },
+    "graph_application": {
+      "unchanged": 5
+    },
+    "graph_calculation": {
+      "unchanged": 1
+    },
+    "graph_chain": {
+      "unchanged": 7
+    },
+    "graph_disequilibrium": {
+      "unchanged": 1
+    },
+    "graph_explanation": {
+      "unchanged": 2
+    },
+    "graph_formula_synthesis": {
+      "unchanged": 1
+    },
+    "graph_identification": {
+      "unchanged": 8,
+      "accessibility-only": 1
+    },
+    "graph_integration": {
+      "unchanged": 5
+    },
+    "graph_interpretation": {
+      "content-revised": 1,
+      "accessibility-only": 11,
+      "unchanged": 1
+    },
+    "graph_misconception": {
+      "unchanged": 1
+    },
+    "graph_model_synthesis": {
+      "unchanged": 1
+    },
+    "graph_policy_offset": {
+      "unchanged": 1
+    },
+    "graph_policy_response": {
+      "unchanged": 1
+    },
+    "graph_shift_analysis": {
+      "unchanged": 2
+    },
+    "graph_synthesis": {
+      "unchanged": 4,
+      "content-revised": 1
+    },
+    "growth_rate_application": {
+      "unchanged": 2
+    },
+    "growth_rate_calculation": {
+      "unchanged": 1
+    },
+    "identification": {
+      "content-revised": 2,
+      "unchanged": 7
+    },
+    "institution_role": {
+      "unchanged": 1
+    },
+    "integration": {
+      "unchanged": 7
+    },
+    "interpretation": {
+      "unchanged": 22,
+      "accessibility-only": 2
+    },
+    "legendary_balance_sheet_calculation": {
+      "unchanged": 1
+    },
+    "legendary_boss_axis_conversion": {
+      "unchanged": 1
+    },
+    "legendary_boss_balance_sheet": {
+      "unchanged": 1
+    },
+    "legendary_boss_calculation": {
+      "unchanged": 1
+    },
+    "legendary_boss_currency_drain": {
+      "unchanged": 1
+    },
+    "legendary_boss_disinflation_real_rate": {
+      "content-revised": 1
+    },
+    "legendary_boss_excess_multiplier": {
+      "content-revised": 1
+    },
+    "legendary_boss_fisher_redistribution": {
+      "content-revised": 1
+    },
+    "legendary_boss_fisher_synthesis": {
+      "content-revised": 1
+    },
+    "legendary_boss_graph_calculation": {
+      "unchanged": 1
+    },
+    "legendary_boss_graph_cost_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_boss_graph_debt_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_boss_graph_deflation": {
+      "unchanged": 1
+    },
+    "legendary_boss_graph_diagnosis": {
+      "accessibility-only": 1
+    },
+    "legendary_boss_graph_fisher": {
+      "content-revised": 1
+    },
+    "legendary_boss_graph_multiplier": {
+      "unchanged": 1
+    },
+    "legendary_boss_graph_quantity_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_boss_graph_real_wage": {
+      "content-revised": 1
+    },
+    "legendary_boss_growth_calculation": {
+      "unchanged": 1
+    },
+    "legendary_boss_institution_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_boss_misconception": {
+      "content-revised": 2
+    },
+    "legendary_boss_money_measurement": {
+      "content-revised": 1
+    },
+    "legendary_boss_multi_year_quantity": {
+      "unchanged": 1
+    },
+    "legendary_boss_multiplier_leakage": {
+      "content-revised": 1
+    },
+    "legendary_boss_net_graph_calculation": {
+      "content-revised": 1
+    },
+    "legendary_boss_nominal_real_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_boss_policy_chain": {
+      "unchanged": 1
+    },
+    "legendary_boss_policy_conflict": {
+      "unchanged": 1
+    },
+    "legendary_boss_policy_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_boss_reverse_calculation": {
+      "unchanged": 1
+    },
+    "legendary_boss_reverse_graph_calculation": {
+      "accessibility-only": 1
+    },
+    "legendary_boss_reverse_multiplier": {
+      "unchanged": 1
+    },
+    "legendary_boss_reverse_policy_calculation": {
+      "unchanged": 1
+    },
+    "legendary_boss_sequential_calculation": {
+      "unchanged": 1,
+      "content-revised": 1
+    },
+    "legendary_calculation": {
+      "content-revised": 1
+    },
+    "legendary_causal_synthesis": {
+      "content-revised": 1
+    },
+    "legendary_classical_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_classification": {
+      "content-revised": 1
+    },
+    "legendary_concept_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_contractionary_graph_multiplier_order": {
+      "accessibility-only": 1
+    },
+    "legendary_currency_to_deposit_calculation": {
+      "content-revised": 1
+    },
+    "legendary_deflation_debt_synthesis": {
+      "content-revised": 1
+    },
+    "legendary_excess_reserve_multiplier": {
+      "content-revised": 1
+    },
+    "legendary_expected_realized_calculation": {
+      "content-revised": 1
+    },
+    "legendary_fisher_change_calculation": {
+      "content-revised": 1
+    },
+    "legendary_fisher_redistribution": {
+      "content-revised": 2
+    },
+    "legendary_graph_adjustment": {
+      "unchanged": 1
+    },
+    "legendary_graph_calculation": {
+      "unchanged": 1
+    },
+    "legendary_graph_chain": {
+      "accessibility-only": 1
+    },
+    "legendary_graph_chain_calculation": {
+      "accessibility-only": 3
+    },
+    "legendary_graph_cost_connection": {
+      "unchanged": 2
+    },
+    "legendary_graph_fisher_synthesis": {
+      "content-revised": 1
+    },
+    "legendary_graph_formula_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_graph_identification": {
+      "accessibility-only": 1
+    },
+    "legendary_graph_misconception": {
+      "accessibility-only": 1,
+      "content-revised": 1,
+      "unchanged": 1
+    },
+    "legendary_graph_multiplier_calculation": {
+      "accessibility-only": 1
+    },
+    "legendary_graph_output_reading": {
+      "accessibility-only": 1
+    },
+    "legendary_graph_policy_offset": {
+      "unchanged": 1
+    },
+    "legendary_graph_shift_calculation": {
+      "unchanged": 1
+    },
+    "legendary_growth_rate_calculation": {
+      "content-revised": 1
+    },
+    "legendary_institution_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_leverage_logic": {
+      "unchanged": 1
+    },
+    "legendary_measurement_calculation": {
+      "content-revised": 1
+    },
+    "legendary_multi_year_calculation": {
+      "unchanged": 1
+    },
+    "legendary_multiplier_leakage": {
+      "unchanged": 1
+    },
+    "legendary_nominal_real_calculation": {
+      "unchanged": 1
+    },
+    "legendary_nominal_real_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_policy_calculation": {
+      "unchanged": 2
+    },
+    "legendary_policy_diagnosis": {
+      "content-revised": 1
+    },
+    "legendary_policy_limitation": {
+      "unchanged": 1
+    },
+    "legendary_policy_measurement": {
+      "unchanged": 1
+    },
+    "legendary_policy_package": {
+      "unchanged": 2
+    },
+    "legendary_policy_quantity_calculation": {
+      "unchanged": 1
+    },
+    "legendary_policy_synthesis": {
+      "unchanged": 2
+    },
+    "legendary_quantity_fisher_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_quantity_redistribution_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_real_nominal_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_real_wage_calculation": {
+      "unchanged": 1
+    },
+    "legendary_real_wage_inflation_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_reverse_calculation": {
+      "unchanged": 1,
+      "content-revised": 1
+    },
+    "legendary_reverse_graph_calculation": {
+      "accessibility-only": 1,
+      "unchanged": 1
+    },
+    "legendary_reverse_multiplier": {
+      "content-revised": 1
+    },
+    "legendary_sequential_calculation": {
+      "unchanged": 1
+    },
+    "legendary_synthesis": {
+      "unchanged": 1
+    },
+    "legendary_transmission_strength": {
+      "accessibility-only": 1
+    },
+    "mastery_checkpoint": {
+      "unchanged": 3
+    },
+    "mechanism_diagnosis": {
+      "unchanged": 1
+    },
+    "misconception": {
+      "unchanged": 2
+    },
+    "misconception_synthesis": {
+      "unchanged": 1
+    },
+    "multi-step": {
+      "unchanged": 20,
+      "content-revised": 2,
+      "accessibility-only": 4
+    },
+    "multi_step_application": {
+      "content-revised": 2,
+      "unchanged": 1
+    },
+    "multi_step_calculation": {
+      "content-revised": 8,
+      "unchanged": 4
+    },
+    "multi_step_identification": {
+      "unchanged": 1
+    },
+    "multi_year_calculation": {
+      "unchanged": 1
+    },
+    "policy_application": {
+      "unchanged": 12,
+      "content-revised": 1
+    },
+    "policy_classification": {
+      "unchanged": 2
+    },
+    "policy_conflict": {
+      "unchanged": 1
+    },
+    "policy_direction": {
+      "unchanged": 10
+    },
+    "policy_fisher_synthesis": {
+      "unchanged": 1
+    },
+    "policy_limitation": {
+      "unchanged": 2
+    },
+    "policy_mechanism": {
+      "unchanged": 1
+    },
+    "policy_synthesis": {
+      "unchanged": 5
+    },
+    "relationship": {
+      "unchanged": 14
+    },
+    "repair": {
+      "unchanged": 81,
+      "content-revised": 3
+    },
+    "reverse_calculation": {
+      "unchanged": 4
+    },
+    "scenario_classification": {
+      "unchanged": 2
+    },
+    "sequence": {
+      "unchanged": 1
+    },
+    "sequential_calculation": {
+      "unchanged": 2
+    },
+    "synthesis": {
+      "unchanged": 3
+    },
+    "trap": {
+      "unchanged": 5
+    }
+  },
+  "graphLinkedBefore": 80,
+  "graphLinkedAfter": 80,
+  "trialGraphEligibleBefore": 42,
+  "trialGraphEligibleAfter": 42,
+  "numericalItemsVerified": 60,
+  "assetRegistrationsInspected": 16,
+  "uniqueImageFilesInspected": 12,
+  "accessibilityContractsCorrected": 8,
+  "legacyImageReferencesCorrected": 38
+}

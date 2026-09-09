@@ -1,0 +1,99 @@
+{
+  "preset": {
+    "id": "macro-saving-investment-budgets-debt",
+    "title": "Saving, Investment, Budgets & Debt",
+    "selectedConceptIds": [
+      "saving-and-investment-identities",
+      "loanable-funds-equilibrium",
+      "loanable-funds-shifts",
+      "crowding-out-and-capital-formation",
+      "budget-accounting-and-public-saving",
+      "deficits-debt-and-government-borrowing",
+      "debt-measures-burden-and-fiscal-data"
+    ]
+  },
+  "selected": [
+    {
+      "id": "saving-and-investment-identities",
+      "kind": "direct",
+      "parent": null,
+      "objectives": {
+        "SLF1": 16,
+        "SLF2": 19,
+        "SLF3": 14
+      }
+    },
+    {
+      "id": "loanable-funds-equilibrium",
+      "kind": "direct",
+      "parent": null,
+      "objectives": {
+        "SLF4": 19,
+        "SLF5": 13
+      }
+    },
+    {
+      "id": "loanable-funds-shifts",
+      "kind": "direct",
+      "parent": null,
+      "objectives": {
+        "SLF6": 19,
+        "SLF7": 18,
+        "SLF9": 15
+      }
+    },
+    {
+      "id": "crowding-out-and-capital-formation",
+      "kind": "direct",
+      "parent": null,
+      "objectives": {
+        "SLF8": 19,
+        "SLF10": 8
+      }
+    },
+    {
+      "id": "budget-accounting-and-public-saving",
+      "kind": "direct",
+      "parent": null,
+      "objectives": {
+        "FB1": 15,
+        "FB3": 11,
+        "FB4": 11
+      }
+    },
+    {
+      "id": "deficits-debt-and-government-borrowing",
+      "kind": "direct",
+      "parent": null,
+      "objectives": {
+        "FB2": 17,
+        "FB8": 11
+      }
+    },
+    {
+      "id": "debt-measures-burden-and-fiscal-data",
+      "kind": "direct",
+      "parent": null,
+      "objectives": {
+        "FB5": 11,
+        "FB6": 15,
+        "FB7": 10,
+        "FB9": 7
+      }
+    }
+  ],
+  "included": [
+    "Saving versus real investment; private/public/national saving; closed-economy S=I",
+    "Real-interest loanable-funds equilibrium, movements/shifts, saving and investment incentives, simultaneous shifts",
+    "Government deficits, crowding out, capital formation",
+    "Budget accounting, revenues/outlays, public saving, deficit versus debt, government borrowing",
+    "Debt measures, debt/GDP, interest costs and fiscal-data interpretation"
+  ],
+  "scopeBoundaries": [
+    "Separate financial-system taxonomy, stocks/bonds, direct/indirect finance and intermediary-specific objectives are absent",
+    "Present/future value, compounding, diversification, risk aversion, valuation and efficient-markets objectives are absent",
+    "Money-demand/supply, Fed reserve mechanics, Fisher effect, monetary transmission and inflation costs belong to the protected prior audit",
+    "No new AD-AS stabilization, Phillips curves or open-economy curriculum"
+  ],
+  "model": "The current selected loanable-funds bank models national saving as supply and private investment as demand; fiscal deficits lower public/national saving and shift supply left, ceteris paribus. Do not impose a government-borrowing-demand alternative on this model."
+}

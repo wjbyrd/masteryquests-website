@@ -1,0 +1,880 @@
+{
+  "recordedAtUTC": "2026-09-09T00:09:37.578815+00:00",
+  "beforeAnyContentAuthoring": true,
+  "baselineLibrarySha256": "72d8c80a2030480938603227f28c90f73788e7b7f3b624d0861aa5e54f0ec370",
+  "findings": [
+    {
+      "selectedConcept": "money-functions-and-measures",
+      "objective": "LO30.1",
+      "objectiveLabel": "LO30.1",
+      "count": 25,
+      "canonicalDifficultyCounts": {
+        "easy": 5,
+        "medium": 5,
+        "hard": 6,
+        "elite": 3,
+        "legendary": 5,
+        "unknown": 1
+      },
+      "classifications": [
+        "B",
+        "F"
+      ],
+      "finding": "Functions, fiat/commodity money, liquidity and aggregates are represented at ordinary levels. Historical M1 exclusion of savings is unstated in several legacy records. Repeated upper-tier classification warrants focused linked classification, not added objectives.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "ECON-SP-HARD-200",
+        "P52B-S3-MFM-H-001",
+        "P52B-S3-MFM-H-002",
+        "P52B-S3-MFM-B3-001",
+        "P52B-S3-MFM-B3-002"
+      ],
+      "upperTierEvidenceIds": [
+        "P52B-S3-MFM-L-001",
+        "P52B-S3-MFM-L-002",
+        "P52B-S3-MFM-L-003",
+        "P52B-S3-MFM-LB-001",
+        "P52B-S3-MFM-LB-002"
+      ]
+    },
+    {
+      "selectedConcept": "money-functions-and-measures",
+      "objective": "30.1",
+      "objectiveLabel": "30.1",
+      "count": 41,
+      "canonicalDifficultyCounts": {
+        "easy": 10,
+        "medium": 8,
+        "hard": 4,
+        "elite": 1,
+        "legendary": 4,
+        "unknown": 14
+      },
+      "classifications": [
+        "B",
+        "F"
+      ],
+      "finding": "Functions, fiat/commodity money, liquidity and aggregates are represented at ordinary levels. Historical M1 exclusion of savings is unstated in several legacy records. Repeated upper-tier classification warrants focused linked classification, not added objectives.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-200",
+        "LG-Q-201",
+        "LG-Q-203",
+        "LG-Q-202"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9011",
+        "LG-Q-9012",
+        "LG-Q-9023",
+        "LG-Q-9110"
+      ]
+    },
+    {
+      "selectedConcept": "central-bank-and-federal-reserve",
+      "objective": "LO30.2",
+      "objectiveLabel": "LO30.2",
+      "count": 26,
+      "canonicalDifficultyCounts": {
+        "easy": 2,
+        "medium": 6,
+        "hard": 9,
+        "elite": 2,
+        "legendary": 7,
+        "unknown": 0
+      },
+      "classifications": [
+        "G"
+      ],
+      "finding": "Institutional authority, instrument versus goal, liquidity versus solvency and balance-sheet mechanics have strong existing Hard coverage. Some upper-tier recognition remains, but the module as a whole has no material coverage or calibration deficit.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "P52B-S1-FED-H-001",
+        "P52B-S1-FED-H-002",
+        "P52B-S1-FED-H-003",
+        "P52B-S1-FED-H-004",
+        "PM2C1-FED-H-001"
+      ],
+      "upperTierEvidenceIds": [
+        "P52B-S1-FED-L-001",
+        "P52B-S1-FED-L-002",
+        "PM2C1-FED-L-001",
+        "PM2C1-FED-L-002",
+        "PM2C1-FED-L-003"
+      ]
+    },
+    {
+      "selectedConcept": "central-bank-and-federal-reserve",
+      "objective": "30.2",
+      "objectiveLabel": "30.2",
+      "count": 24,
+      "canonicalDifficultyCounts": {
+        "easy": 8,
+        "medium": 3,
+        "hard": 0,
+        "elite": 0,
+        "legendary": 2,
+        "unknown": 11
+      },
+      "classifications": [
+        "G"
+      ],
+      "finding": "Institutional authority, instrument versus goal, liquidity versus solvency and balance-sheet mechanics have strong existing Hard coverage. Some upper-tier recognition remains, but the module as a whole has no material coverage or calibration deficit.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [],
+      "upperTierEvidenceIds": [
+        "LG-Q-9020",
+        "LG-Q-9111"
+      ]
+    },
+    {
+      "selectedConcept": "bank-balance-sheets-reserves-and-capital",
+      "objective": "30.3",
+      "objectiveLabel": "30.3",
+      "count": 36,
+      "canonicalDifficultyCounts": {
+        "easy": 5,
+        "medium": 3,
+        "hard": 6,
+        "elite": 8,
+        "legendary": 5,
+        "unknown": 9
+      },
+      "classifications": [
+        "D"
+      ],
+      "finding": "Required/excess reserves, balance sheets and leverage are well represented. Loan origination must be separated from later interbank settlement in legacy balance-sheet questions. Hard arithmetic is already plentiful.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-221",
+        "LG-Q-222",
+        "LG-Q-204",
+        "LG-Q-207",
+        "LG-Q-219"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9004",
+        "LG-Q-9007",
+        "LG-Q-9016",
+        "LG-Q-9104",
+        "LG-Q-9105"
+      ]
+    },
+    {
+      "selectedConcept": "bank-balance-sheets-reserves-and-capital",
+      "objective": "LO30.3",
+      "objectiveLabel": "LO30.3",
+      "count": 17,
+      "canonicalDifficultyCounts": {
+        "easy": 4,
+        "medium": 7,
+        "hard": 6,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
+      },
+      "classifications": [
+        "D"
+      ],
+      "finding": "Required/excess reserves, balance sheets and leverage are well represented. Loan origination must be separated from later interbank settlement in legacy balance-sheet questions. Hard arithmetic is already plentiful.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "P52A-BANK-H-001",
+        "P52A-BANK-H-002",
+        "P52A-BANK-H-003",
+        "ECON-SP-HARD-201",
+        "P52A-BANK-B3-001"
+      ],
+      "upperTierEvidenceIds": []
+    },
+    {
+      "selectedConcept": "deposit-creation-and-money-multiplier",
+      "objective": "LO30.3",
+      "objectiveLabel": "LO30.3",
+      "count": 11,
+      "canonicalDifficultyCounts": {
+        "easy": 2,
+        "medium": 5,
+        "hard": 2,
+        "elite": 1,
+        "legendary": 0,
+        "unknown": 1
+      },
+      "classifications": [
+        "D",
+        "F"
+      ],
+      "finding": "No absent objective. Legacy initial cash deposit questions need explicit simple-model assumptions and gross-deposit versus net-money distinctions; repeated one-bank arithmetic in upper tiers can support reverse inference or propagation instead.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "ECON-SP-HARD-202",
+        "P52A-BANK-B3-003"
+      ],
+      "upperTierEvidenceIds": []
+    },
+    {
+      "selectedConcept": "deposit-creation-and-money-multiplier",
+      "objective": "30.3",
+      "objectiveLabel": "30.3",
+      "count": 26,
+      "canonicalDifficultyCounts": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 4,
+        "elite": 4,
+        "legendary": 7,
+        "unknown": 6
+      },
+      "classifications": [
+        "D",
+        "F"
+      ],
+      "finding": "No absent objective. Legacy initial cash deposit questions need explicit simple-model assumptions and gross-deposit versus net-money distinctions; repeated one-bank arithmetic in upper tiers can support reverse inference or propagation instead.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-223",
+        "LG-Q-205",
+        "LG-Q-206",
+        "LG-Q-224"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9000",
+        "LG-Q-9005",
+        "LG-Q-9008",
+        "LG-Q-9018",
+        "LG-Q-9102"
+      ]
+    },
+    {
+      "selectedConcept": "monetary-policy-tools",
+      "objective": "LO30.4",
+      "objectiveLabel": "LO30.4",
+      "count": 13,
+      "canonicalDifficultyCounts": {
+        "easy": 1,
+        "medium": 6,
+        "hard": 5,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 1
+      },
+      "classifications": [
+        "D",
+        "F"
+      ],
+      "finding": "OMO, reserve requirements, discount lending and interest on reserves are selected. An at-most target has multiple feasible answers; an upper-tier reserve-retention calculation lacks a coherent model. Existing Hard operational mechanisms are sufficient.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "ECON-SP-HARD-205",
+        "P52B-S3-MPT-H-001",
+        "P52B-S3-MPT-B3-001",
+        "P52B-S3-MPT-B3-002",
+        "P52B-S3-MPT-B3-003"
+      ],
+      "upperTierEvidenceIds": []
+    },
+    {
+      "selectedConcept": "monetary-policy-tools",
+      "objective": "30.4",
+      "objectiveLabel": "30.4",
+      "count": 47,
+      "canonicalDifficultyCounts": {
+        "easy": 9,
+        "medium": 5,
+        "hard": 6,
+        "elite": 8,
+        "legendary": 10,
+        "unknown": 9
+      },
+      "classifications": [
+        "D",
+        "F"
+      ],
+      "finding": "OMO, reserve requirements, discount lending and interest on reserves are selected. An at-most target has multiple feasible answers; an upper-tier reserve-retention calculation lacks a coherent model. Existing Hard operational mechanisms are sufficient.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-210",
+        "LG-Q-211",
+        "LG-Q-212",
+        "LG-Q-226",
+        "LG-Q-208"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9001",
+        "LG-Q-9003",
+        "LG-Q-9010",
+        "LG-Q-9013",
+        "LG-Q-9014"
+      ]
+    },
+    {
+      "selectedConcept": "monetary-control-limits",
+      "objective": "LO30.5",
+      "objectiveLabel": "LO30.5",
+      "count": 7,
+      "canonicalDifficultyCounts": {
+        "easy": 1,
+        "medium": 2,
+        "hard": 2,
+        "elite": 2,
+        "legendary": 0,
+        "unknown": 0
+      },
+      "classifications": [
+        "D",
+        "F"
+      ],
+      "finding": "Currency drain, excess reserves, weak borrowing and bank risk are all present. LO31.4 in this module is actual selected bank-capital content despite its historical code. Missing claim in LG-Q-9114 and repeated qualitative upper-tier leakage prompts warrant targeted fixes.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "ECON-SP-HARD-203",
+        "ECON-SP-HARD-204"
+      ],
+      "upperTierEvidenceIds": []
+    },
+    {
+      "selectedConcept": "monetary-control-limits",
+      "objective": "30.5",
+      "objectiveLabel": "30.5",
+      "count": 46,
+      "canonicalDifficultyCounts": {
+        "easy": 8,
+        "medium": 4,
+        "hard": 8,
+        "elite": 7,
+        "legendary": 12,
+        "unknown": 7
+      },
+      "classifications": [
+        "D",
+        "F"
+      ],
+      "finding": "Currency drain, excess reserves, weak borrowing and bank risk are all present. LO31.4 in this module is actual selected bank-capital content despite its historical code. Missing claim in LG-Q-9114 and repeated qualitative upper-tier leakage prompts warrant targeted fixes.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-213",
+        "LG-Q-214",
+        "LG-Q-215",
+        "LG-Q-216",
+        "LG-Q-217"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9002",
+        "LG-Q-9006",
+        "LG-Q-9009",
+        "LG-Q-9015",
+        "LG-Q-9019"
+      ]
+    },
+    {
+      "selectedConcept": "monetary-control-limits",
+      "objective": "LO31.4",
+      "objectiveLabel": "LO31.4",
+      "count": 7,
+      "canonicalDifficultyCounts": {
+        "easy": 0,
+        "medium": 4,
+        "hard": 3,
+        "elite": 0,
+        "legendary": 0,
+        "unknown": 0
+      },
+      "classifications": [
+        "G"
+      ],
+      "finding": "Selected leverage/capital subset has direct recognition, arithmetic at Medium/Hard, and repair/bridge support. No material gap; preserve all seven records.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "PM2C1-MCL-FB-004",
+        "PM2C1-MCL-FB-005",
+        "PM2C1-MCL-FB-006"
+      ],
+      "upperTierEvidenceIds": []
+    },
+    {
+      "selectedConcept": "liquidity-preference-and-money-market",
+      "objective": "LO35.1",
+      "objectiveLabel": "LO35.1",
+      "count": 64,
+      "canonicalDifficultyCounts": {
+        "easy": 9,
+        "medium": 17,
+        "hard": 7,
+        "elite": 9,
+        "legendary": 20,
+        "unknown": 2
+      },
+      "classifications": [
+        "B",
+        "E",
+        "F"
+      ],
+      "finding": "Extensive graph and Hard reasoning exists; this is not missing graph coverage. ECON-SP-MEDIUM-142 reverses the money-supply movement. Some Legendary items merely name a point or repeat Hard chains. Correct visual contracts and strengthen selected upper-tier reverse inference.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "ECON-SP-HARD-224",
+        "ECON-SP-HARD-226",
+        "PG4-MM-H-001",
+        "PG4-MM-H-002",
+        "PG4-MM-H-003"
+      ],
+      "upperTierEvidenceIds": [
+        "ECON-SP-LEGENDARY-9015",
+        "ECON-SP-LEGENDARY-9016",
+        "ECON-SP-LEGENDARY-9042",
+        "ECON-SP-LEGENDARY-9043",
+        "P52B-S3-LPMM-L-001"
+      ]
+    },
+    {
+      "selectedConcept": "liquidity-preference-and-money-market",
+      "objective": "35.1",
+      "objectiveLabel": "35.1",
+      "count": 40,
+      "canonicalDifficultyCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 8,
+        "elite": 7,
+        "legendary": 3,
+        "unknown": 10
+      },
+      "classifications": [
+        "B",
+        "E",
+        "F"
+      ],
+      "finding": "Extensive graph and Hard reasoning exists; this is not missing graph coverage. ECON-SP-MEDIUM-142 reverses the money-supply movement. Some Legendary items merely name a point or repeat Hard chains. Correct visual contracts and strengthen selected upper-tier reverse inference.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-256",
+        "LG-Q-257",
+        "LG-Q-258",
+        "LG-Q-259",
+        "LG-Q-260"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9054",
+        "LG-Q-9130",
+        "LG-Q-9137"
+      ]
+    },
+    {
+      "selectedConcept": "monetary-policy-transmission",
+      "objective": "LO35.2",
+      "objectiveLabel": "LO35.2",
+      "count": 35,
+      "canonicalDifficultyCounts": {
+        "easy": 9,
+        "medium": 9,
+        "hard": 5,
+        "elite": 3,
+        "legendary": 6,
+        "unknown": 3
+      },
+      "classifications": [
+        "B",
+        "F"
+      ],
+      "finding": "The live preset explicitly includes the interest-rate/investment/AD chain, liquidity-trap limits and existing numerical spending-multiplier examples. Retain that boundary; no new fiscal-policy objectives. Repeated upper-tier graph-plus-multiplier grammar merits selective reverse/constraint analysis.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "ECON-SP-HARD-225",
+        "ECON-SP-HARD-227",
+        "ECON-SP-HARD-232",
+        "PG4-MPT-H-001",
+        "PG4-MPT-H-002"
+      ],
+      "upperTierEvidenceIds": [
+        "ECON-SP-LEGENDARY-9014",
+        "ECON-SP-LEGENDARY-9022",
+        "ECON-SP-LEGENDARY-9052",
+        "PG4-MPT-L-001",
+        "PG4-MPT-L-002"
+      ]
+    },
+    {
+      "selectedConcept": "monetary-policy-transmission",
+      "objective": "35.2",
+      "objectiveLabel": "35.2",
+      "count": 52,
+      "canonicalDifficultyCounts": {
+        "easy": 7,
+        "medium": 8,
+        "hard": 10,
+        "elite": 5,
+        "legendary": 14,
+        "unknown": 8
+      },
+      "classifications": [
+        "B",
+        "F"
+      ],
+      "finding": "The live preset explicitly includes the interest-rate/investment/AD chain, liquidity-trap limits and existing numerical spending-multiplier examples. Retain that boundary; no new fiscal-policy objectives. Repeated upper-tier graph-plus-multiplier grammar merits selective reverse/constraint analysis.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-261",
+        "LG-Q-262",
+        "LG-Q-263",
+        "LG-Q-264",
+        "LG-Q-265"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9051",
+        "LG-Q-9052",
+        "LG-Q-9053",
+        "LG-Q-9055",
+        "LG-Q-9056"
+      ]
+    },
+    {
+      "selectedConcept": "quantity-theory-of-money",
+      "objective": "LO31.1",
+      "objectiveLabel": "LO31.1",
+      "count": 16,
+      "canonicalDifficultyCounts": {
+        "easy": 6,
+        "medium": 3,
+        "hard": 6,
+        "elite": 1,
+        "legendary": 0,
+        "unknown": 0
+      },
+      "classifications": [
+        "D",
+        "E",
+        "F"
+      ],
+      "finding": "MV=PY, velocity, approximate growth accounting and inverse value-of-money reasoning are present at Hard. Several attached graph prompts give incompatible fractions or impose fixed velocity on a graph that does not imply it. Preserve the accurate asset and correct question evidence.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "P52B-S4-QTM-H-001",
+        "P52B-S4-QTM-H-002",
+        "ECON-SP-HARD-206",
+        "P52B-S4-QTM-B3-001",
+        "P52B-S4-QTM-B3-002"
+      ],
+      "upperTierEvidenceIds": []
+    },
+    {
+      "selectedConcept": "quantity-theory-of-money",
+      "objective": "31.1",
+      "objectiveLabel": "31.1",
+      "count": 65,
+      "canonicalDifficultyCounts": {
+        "easy": 7,
+        "medium": 12,
+        "hard": 9,
+        "elite": 11,
+        "legendary": 13,
+        "unknown": 13
+      },
+      "classifications": [
+        "D",
+        "E",
+        "F"
+      ],
+      "finding": "MV=PY, velocity, approximate growth accounting and inverse value-of-money reasoning are present at Hard. Several attached graph prompts give incompatible fractions or impose fixed velocity on a graph that does not imply it. Preserve the accurate asset and correct question evidence.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-228",
+        "LG-Q-229",
+        "LG-Q-230",
+        "LG-Q-255",
+        "LG-Q-231"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9025",
+        "LG-Q-9026",
+        "LG-Q-9027",
+        "LG-Q-9028",
+        "LG-Q-9029"
+      ]
+    },
+    {
+      "selectedConcept": "monetary-neutrality",
+      "objective": "LO31.2",
+      "objectiveLabel": "LO31.2",
+      "count": 20,
+      "canonicalDifficultyCounts": {
+        "easy": 7,
+        "medium": 2,
+        "hard": 5,
+        "elite": 3,
+        "legendary": 3,
+        "unknown": 0
+      },
+      "classifications": [
+        "D",
+        "E",
+        "F"
+      ],
+      "finding": "Hard applies real wages, relative prices and short-run versus long-run distinctions. Upper-tier repetition and graph-supplied values inconsistent with the actual image warrant targeted correction and linked nominal/real comparison.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "ECON-SP-HARD-207",
+        "PM2C2-NEUT-H-001",
+        "PM2C2-NEUT-FB-004",
+        "PM2C2-NEUT-FB-005",
+        "PM2C2-NEUT-FB-006"
+      ],
+      "upperTierEvidenceIds": [
+        "ECON-SP-LEGENDARY-9027",
+        "ECON-SP-LEGENDARY-9051",
+        "PM2C2-NEUT-LB-001"
+      ]
+    },
+    {
+      "selectedConcept": "monetary-neutrality",
+      "objective": "31.2",
+      "objectiveLabel": "31.2",
+      "count": 42,
+      "canonicalDifficultyCounts": {
+        "easy": 6,
+        "medium": 8,
+        "hard": 6,
+        "elite": 4,
+        "legendary": 7,
+        "unknown": 11
+      },
+      "classifications": [
+        "D",
+        "E",
+        "F"
+      ],
+      "finding": "Hard applies real wages, relative prices and short-run versus long-run distinctions. Upper-tier repetition and graph-supplied values inconsistent with the actual image warrant targeted correction and linked nominal/real comparison.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-236",
+        "LG-Q-239",
+        "LG-Q-240",
+        "LG-Q-241",
+        "LG-Q-237"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9032",
+        "LG-Q-9033",
+        "LG-Q-9034",
+        "LG-Q-9045",
+        "LG-Q-9046"
+      ]
+    },
+    {
+      "selectedConcept": "fisher-effect",
+      "objective": "LO31.3",
+      "objectiveLabel": "LO31.3",
+      "count": 24,
+      "canonicalDifficultyCounts": {
+        "easy": 6,
+        "medium": 4,
+        "hard": 9,
+        "elite": 2,
+        "legendary": 2,
+        "unknown": 1
+      },
+      "classifications": [
+        "B",
+        "F"
+      ],
+      "finding": "Strong Hard coverage already separates ex ante from ex post returns and changing real-rate components. Some legacy arithmetic silently uses the Fisher approximation; upper-tier graph prompts must not infer expected future inflation solely from a one-time price-level change.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "PM2C2-FISH-H-001",
+        "PM2C2-FISH-H-002",
+        "PM2C2-FISH-H-003",
+        "PM2C2-FISH-H-004",
+        "PM2C2-FISH-H-005"
+      ],
+      "upperTierEvidenceIds": [
+        "PM2C2-FISH-L-001",
+        "PM2C2-FISH-L-002"
+      ]
+    },
+    {
+      "selectedConcept": "fisher-effect",
+      "objective": "31.3",
+      "objectiveLabel": "31.3",
+      "count": 28,
+      "canonicalDifficultyCounts": {
+        "easy": 6,
+        "medium": 6,
+        "hard": 2,
+        "elite": 2,
+        "legendary": 7,
+        "unknown": 5
+      },
+      "classifications": [
+        "B",
+        "F"
+      ],
+      "finding": "Strong Hard coverage already separates ex ante from ex post returns and changing real-rate components. Some legacy arithmetic silently uses the Fisher approximation; upper-tier graph prompts must not infer expected future inflation solely from a one-time price-level change.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-242",
+        "LG-Q-243"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9035",
+        "LG-Q-9036",
+        "LG-Q-9047",
+        "LG-Q-9048",
+        "LG-Q-9117"
+      ]
+    },
+    {
+      "selectedConcept": "inflation-costs",
+      "objective": "LO31.4",
+      "objectiveLabel": "LO31.4",
+      "count": 16,
+      "canonicalDifficultyCounts": {
+        "easy": 5,
+        "medium": 4,
+        "hard": 5,
+        "elite": 0,
+        "legendary": 1,
+        "unknown": 1
+      },
+      "classifications": [
+        "B",
+        "E",
+        "F"
+      ],
+      "finding": "Hard covers anticipated costs, redistribution and relative-price signals. Upper graph items often identify a named cost without using evidence, and some price levels contradict the attached graph. Target links between real repayment, surprise and resource costs.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "ECON-SP-HARD-208",
+        "PM2C2-ICOST-H-001",
+        "PM2C2-ICOST-FB-004",
+        "PM2C2-ICOST-FB-005",
+        "PM2C2-ICOST-FB-006"
+      ],
+      "upperTierEvidenceIds": [
+        "PM2C2-ICOST-L-001"
+      ]
+    },
+    {
+      "selectedConcept": "inflation-costs",
+      "objective": "31.4",
+      "objectiveLabel": "31.4",
+      "count": 42,
+      "canonicalDifficultyCounts": {
+        "easy": 4,
+        "medium": 7,
+        "hard": 6,
+        "elite": 6,
+        "legendary": 9,
+        "unknown": 10
+      },
+      "classifications": [
+        "B",
+        "E",
+        "F"
+      ],
+      "finding": "Hard covers anticipated costs, redistribution and relative-price signals. Upper graph items often identify a named cost without using evidence, and some price levels contradict the attached graph. Target links between real repayment, surprise and resource costs.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-244",
+        "LG-Q-245",
+        "LG-Q-246",
+        "LG-Q-247",
+        "LG-Q-248"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9037",
+        "LG-Q-9038",
+        "LG-Q-9042",
+        "LG-Q-9043",
+        "LG-Q-9044"
+      ]
+    },
+    {
+      "selectedConcept": "inflation-tax-and-deflation",
+      "objective": "31.5",
+      "objectiveLabel": "31.5",
+      "count": 45,
+      "canonicalDifficultyCounts": {
+        "easy": 9,
+        "medium": 8,
+        "hard": 9,
+        "elite": 5,
+        "legendary": 9,
+        "unknown": 5
+      },
+      "classifications": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "finding": "All selected concepts exist. Several Hard and Legendary prompts repeat recognition. Strengthen an existing Hard real-balance calculation and upper-tier debt-burden/seigniorage feedback analysis; correct graph numbers.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "LG-Q-249",
+        "LG-Q-250",
+        "LG-Q-251",
+        "LG-Q-253",
+        "PM2C2-ITAX-H-001"
+      ],
+      "upperTierEvidenceIds": [
+        "LG-Q-9039",
+        "LG-Q-9040",
+        "LG-Q-9041",
+        "PM2C2-ITAX-L-001",
+        "PM2C2-ITAX-L-002"
+      ]
+    },
+    {
+      "selectedConcept": "inflation-tax-and-deflation",
+      "objective": "LO31.5",
+      "objectiveLabel": "LO31.5",
+      "count": 3,
+      "canonicalDifficultyCounts": {
+        "easy": 0,
+        "medium": 1,
+        "hard": 1,
+        "elite": 1,
+        "legendary": 0,
+        "unknown": 0
+      },
+      "classifications": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "finding": "All selected concepts exist. Several Hard and Legendary prompts repeat recognition. Strengthen an existing Hard real-balance calculation and upper-tier debt-burden/seigniorage feedback analysis; correct graph numbers.",
+      "coverageGap": false,
+      "normalExamReasoningPrimarilyTrappedInUpperTiers": false,
+      "evidenceIds": [
+        "ECON-SP-HARD-210"
+      ],
+      "upperTierEvidenceIds": []
+    }
+  ],
+  "overall": "No A coverage gaps and no systemic C calibration gap. Target economic precision, evidence mismatch and selected B/D/E/F deficits. G findings include institutional coverage and capital subset. No target change count."
+}
