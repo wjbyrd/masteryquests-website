@@ -1,0 +1,16 @@
+# Classification before repairs
+
+Baseline: clean Git status; 19/27 PASS after per-process Git safe.directory for the sandbox account. The unconfigured recapture had two Git ownership errors (theme and checkpoint-remediation runners); both pass with repository-scoped trust and require no test changes. Exact stdout/stderr retained separately.
+
+| Runner | Classification | Evidence and intended repair |
+|---|---|---|
+| phase3e_graph_question_sync | C — obsolete fixture / snapshot | Historical author + QH5/QH6/human-read snapshots predate 13 authorized graph rewrites in Foundations Sep 6, Demand/Supply Sep 6, and Market Policy Sep 7 changes.json. Retain 48 IDs, mapping, difficulty, skills, assets and unique answer key; apply recorded later revisions. Replace 9539 inventory sentinels with independent artifact agreement. |
+| question_quality_auditor | B — stale test semantics | Source hashes describe historical provenance, explicitly preserved by the Sep 6 audits. Current 40010 differs from QH6 on purpose. Validate historical hash against its historical payload, occurrences, and current full record against authorized overlays. Compare current findings to exact audited findings/dispositions rather than obsolete zero-review assumptions. |
+| macro_phase2_taxonomy | B — stale test semantics | A one-time migration verifier still requires an external TEMP pre-migration snapshot, global 143/9539, immutable student wording and seven missing review sheets. Current taxonomy retains 51 original children/2758 questions plus 112 hidden supplemental, and adds six open-economy children/240 questions; review sheets now exist. Retain approved assignments, pool partitions, aliases, hidden state, navigation and selectability; replace historical content-freeze and incomplete-resource expectations. |
+| mastery_report_2 | A — stale hard-coded expectation | Only 9539 sentinel fails; all reported evidence-strength, diagnosis, recommendation and isolation assertions succeed. Replace sentinel with independent inventory integrity. |
+| unlimited_practice | A — stale hard-coded expectation | Only 9539 sentinel fails; runtime assertions succeed. Replace sentinel with independent inventory integrity. |
+| trial_by_graph | C — obsolete fixture / snapshot | Old graph-membership union omits the 22 open-economy graphs introduced with six concepts/240 questions. Retain existing membership sets, add exact authored open-economy graph IDs corroborated by its question/asset manifests; preserve deck and eligibility checks. |
+| fading_fortune | A — stale hard-coded expectation | Only 9539 sentinel fails; runtime assertions succeed. Replace sentinel with independent inventory integrity. |
+| risk_reward | A — stale hard-coded expectation | Only 9539 sentinel fails; runtime assertions succeed. Replace sentinel with independent inventory integrity. |
+
+No production defect demonstrated. Current corpus: 149 concept definitions, 9779 unique canonical questions, 1077 unique graphRequired questions, 507 registered assets. Derived concept views and pool aliases require unique-ID enumeration rather than summing pools. The full current library semantic hash and synchronized registry/manifest remain the live content-integrity contract; historical ledger hashes remain historical evidence.

@@ -1,0 +1,421 @@
+{
+  "phase": "mode-availability-fix-v6-ten-mode-aware",
+  "ok": true,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9779,
+  "cssGuard": true,
+  "showReapply": true,
+  "returnReapply": true,
+  "cases": [
+    {
+      "name": "unlimited-only",
+      "requested": [
+        "unlimited"
+      ],
+      "injected": [
+        "unlimited"
+      ],
+      "visible": [
+        "unlimited"
+      ],
+      "hidden": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "enabledCount": "1",
+      "subtitle": "Your instructor enabled one mode for this game.",
+      "validation": [
+        {
+          "mode": "unlimited",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1719144
+    },
+    {
+      "name": "timed-only",
+      "requested": [
+        "timed"
+      ],
+      "injected": [
+        "timed"
+      ],
+      "visible": [
+        "timed"
+      ],
+      "hidden": [
+        "standard",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "enabledCount": "1",
+      "subtitle": "Your instructor enabled one mode for this game.",
+      "validation": [
+        {
+          "mode": "timed",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1719108
+    },
+    {
+      "name": "timed-exam",
+      "requested": [
+        "timed",
+        "exam"
+      ],
+      "injected": [
+        "timed",
+        "exam"
+      ],
+      "visible": [
+        "timed",
+        "exam"
+      ],
+      "hidden": [
+        "standard",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "enabledCount": "2",
+      "subtitle": "Choose one of the modes enabled by your instructor.",
+      "validation": [
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1719136
+    },
+    {
+      "name": "all-seven",
+      "requested": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score"
+      ],
+      "injected": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score"
+      ],
+      "visible": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score"
+      ],
+      "hidden": [
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "enabledCount": "7",
+      "subtitle": "Choose one of the modes enabled by your instructor.",
+      "validation": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 1719299
+    },
+    {
+      "name": "all-eight",
+      "requested": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph"
+      ],
+      "injected": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph"
+      ],
+      "visible": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph"
+      ],
+      "hidden": [
+        "fadingFortune",
+        "riskReward"
+      ],
+      "enabledCount": "8",
+      "subtitle": "Choose one of the modes enabled by your instructor.",
+      "validation": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 2059778
+    },
+    {
+      "name": "all-nine",
+      "requested": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune"
+      ],
+      "injected": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune"
+      ],
+      "visible": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune"
+      ],
+      "hidden": [
+        "riskReward"
+      ],
+      "enabledCount": "9",
+      "subtitle": "Choose one of the modes enabled by your instructor.",
+      "validation": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 2059816
+    },
+    {
+      "name": "all-ten",
+      "requested": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "injected": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "visible": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ],
+      "hidden": [],
+      "enabledCount": "10",
+      "subtitle": "Choose one of the modes enabled by your instructor.",
+      "validation": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ],
+      "htmlBytes": 2059848
+    }
+  ],
+  "issues": []
+}

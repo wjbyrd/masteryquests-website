@@ -10,6 +10,8 @@ import {
 } from "../../../play/economic-realm/market-gate/authoring/market_gate_phase2a_author.mjs";
 
 const require = createRequire(import.meta.url);
+const {assertCanonicalIntegrity} = require('./composer-integrity-contracts.js');
+const {currentAuditedQuestion} = require('./composer-audit-contracts.js');
 const core = require("../composer-core.js");
 const helpers = require("./composer-test-helpers.js");
 const testRoot = path.dirname(fileURLToPath(import.meta.url));
@@ -17,12 +19,7 @@ const composerRoot = path.resolve(testRoot, "..");
 const repoRoot = path.resolve(composerRoot, "..", "..");
 const manifestPath = path.join(composerRoot, "data/composer_library_manifest.json");
 const phaseIds = new Set(ordinaryQuestions.map(question => String(question.id)));
-const foundationsRemediation = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "foundations_audit_remediation.json"), "utf8"));
-const foundationsExpectedById = new Map(foundationsRemediation.changes.map(change => [String(change.id), change.after]));
 const graphIntegrityRemediation = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "graph_assessment_integrity_remediation.json"), "utf8"));
-const graphIntegrityExpectedById = new Map(graphIntegrityRemediation.changes.map(change => [String(change.id), change.after]));
-const humanReadCuration = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "question_rewrite_master_execution_ledger.json"), "utf8"));
-const humanReadExpectedById = new Map(humanReadCuration.entries.map(change => [String(change.questionId), change.after]));
 
 const expectedConcept = new Map([
   ...range(40000, 40005).map(id => [id, "production-possibilities-frontier"]),
@@ -108,8 +105,7 @@ async function run() {
   pass(core.COMPOSER_VERSION === "4.5s.3k", `Composer version ${core.COMPOSER_VERSION}`);
   pass(core.RECIPE_SCHEMA_VERSION === "1.6.0", `Recipe schema ${core.RECIPE_SCHEMA_VERSION}`);
   pass(library.composerVersion === "4.5s.3k", `Library Composer version ${library.composerVersion}`);
-  pass(library.canonicalQuestionCount === 9539, `Canonical count ${library.canonicalQuestionCount}`);
-  pass(manifest.canonicalQuestionCount === 9539, `Manifest canonical count ${manifest.canonicalQuestionCount}`);
+  assertCanonicalIntegrity(library);
   pass(synchronized.length === 48, `Synchronized record count ${synchronized.length}`);
   pass(new Set(synchronized.map(({ question }) => String(question.id))).size === 48, "Phase 3E IDs are not unique");
   pass(JSON.stringify(distribution(ordinaryQuestions, "pool")) === JSON.stringify({ medium: 7, hard: 16, elite: 20, legendary: 5 }), "Source difficulty distribution changed");
@@ -122,11 +118,12 @@ async function run() {
     const { conceptId, pool, question } = found;
     pass(conceptId === expectedConcept.get(author.id), `Concept mapping ${author.id}: ${conceptId}`);
     pass(pool === author.pool && question.difficulty === author.pool && question.canonicalDifficulty === author.pool, `Difficulty ${author.id}`);
-    const curated = humanReadExpectedById.get(String(author.id)) || graphIntegrityExpectedById.get(String(author.id)) || foundationsExpectedById.get(String(author.id));
+    const curated = currentAuditedQuestion(author.id, {id: String(author.id), q: author.q, feedback: author.feedback, type: author.type});
     pass(
       curated ? question.q === curated.q && question.feedback === curated.feedback : question.q === author.q && question.feedback === author.feedback,
       `Canonical copy changed ${author.id}`
     );
+    if (curated?.options) pass(JSON.stringify(question.options) === JSON.stringify(curated.options), `Audited options changed ${author.id}`);
     pass(question.type === (curated?.type || author.type) && question.objective === author.objective, `Type/objective ${author.id}`);
     pass(question.primarySkill === author.primarySkill && question.repairSkill === author.repairSkill, `Skill metadata ${author.id}`);
     pass(question.graphRequired === true && Boolean(question.image), `Graph requirement ${author.id}`);

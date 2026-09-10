@@ -87,7 +87,7 @@
       "sha256": "13882c3db06900367a4c3978b25e58719b09f0fcfbf2377668d25e1e038020f3",
       "sizeBytes": 104738,
       "imageAlt": "Apartment rental market with demand D0, supply S0, equilibrium point A, and a horizontal price ceiling at $1,000 per month.",
-      "graphDescription": "The horizontal axis is quantity of apartments and the vertical axis is rental rate per month. Demand D0 and supply S0 intersect at point A, quantity 150 and rent $2,000. A horizontal legal price ceiling is shown at $1,000. At the ceiling, quantity supplied is 50 apartments and quantity demanded is 250 apartments, creating a shortage of 200 apartments."
+      "graphDescription": "The horizontal axis is quantity of apartments and the vertical axis is monthly rent in dollars. D0 and S0 intersect at A, quantity 150, rent 2000. The horizontal ceiling is at rent 1000, meeting supply at quantity 50 and demand at quantity 250."
     },
     {
       "conceptId": "binding-price-ceilings",
@@ -109,7 +109,7 @@
       "sha256": "933a323461f00bc3bf0d91c293272221c11f9b580d3cddf3da554f1a981276f4",
       "sizeBytes": 134236,
       "imageAlt": "Labor market with demand D0, supply S0, equilibrium point A, and a horizontal wage floor at $10 per hour.",
-      "graphDescription": "The horizontal axis is quantity of workers in thousands and the vertical axis is wage rate per hour. Labor demand D0 and labor supply S0 intersect at point A, 175 thousand workers and a $7 wage. A horizontal wage floor is shown at $10. At the floor, labor demanded is 100 thousand workers and labor supplied is 250 thousand workers, creating a labor surplus of 150 thousand workers."
+      "graphDescription": "The horizontal axis is quantity of workers in thousands and the vertical axis is hourly wage in dollars. D0 and S0 intersect at A, quantity 175, wage 7. The horizontal floor is at wage 10, meeting demand at quantity 100 and supply at quantity 250."
     },
     {
       "conceptId": "binding-price-floors",
@@ -130,8 +130,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
       "sha256": "8524e29fadce0d985c8800948e5e5b7844b82b3d2fb1135b2301279037a8d013",
       "sizeBytes": 24328,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve has horizontal reference lines P1 and P2 with vertical quantity guides, showing two price-quantity positions. Visible numeric scale markings include 20, 16, 1, 122, 2, 8, 4, 0, 12."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight demand runs from price 20 at quantity 0 through P1 at quantity 8, price 12 and P2 at quantity 12, price 8."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -141,8 +141,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_demand_shift.webp",
       "sha256": "c559b174060f2f8ce28945350be2e05853a001f6e16f770e7fabf734651dd29f",
       "sizeBytes": 39944,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve is crossed by downward-sloping demand curves D1 and D2; intersections E1 and E2 and their dashed price and quantity guides are labeled. Visible numeric scale markings include 22, 2, 12, 5, 7, 1, 10, 0, 4, 8, 14, 18."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight demand D1 has price intercept 18 and D2 has intercept 22; straight supply S has intercept 2. E1 is D1/S at quantity 8, price 10. E2 is D2/S at quantity 10, price 12."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -152,8 +152,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
       "sha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
       "sizeBytes": 28244,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve cross at labeled point E, with dashed guides to its price and quantity. Visible numeric scale markings include 30, 22, 0, 14, 1, 6, 4, 8, 12."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 30 and straight supply has intercept 6. Their intersection E is quantity 8, price 14."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -163,8 +163,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
       "sha256": "e7ad3b5e0934eb62695fc69308d0991371a4989e16fc30bda3e5653823cbf9bc",
       "sizeBytes": 29516,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve cross at labeled point E, with dashed guides to its price and quantity. Visible numeric scale markings include 18, 14, 0, 2, 10, 1, 6, 4, 8, 12, 16."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 18 and straight supply has intercept 2. Their intersection E is quantity 8, price 10."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -174,8 +174,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_eq_compact.webp",
       "sha256": "2f7f6d7fe4aad82da0984b27f4806a9a5cafbc325a4c4982d23ec599a5dd318b",
       "sizeBytes": 29448,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve cross at labeled point E, with dashed guides to its price and quantity. Visible numeric scale markings include 24, 18, 14, 2, 1, 8, 4, 0, 5, 10."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 24 and straight supply has intercept 4. Their intersection E is quantity 5, price 14."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -185,8 +185,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_horizontal_supply.webp",
       "sha256": "d09df7bd9924ec6f74bd6cade75d7818700e48f132e129a71669bac8a1d5087a",
       "sizeBytes": 17882,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. A horizontal supply curve labeled S crosses a downward-sloping demand curve at point E; the axes show the corresponding price and quantity. Visible numeric scale markings include 18, 14, 10, 6, 2, 0, 4, 8, 12, 16."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 18. Horizontal supply is at price 6 and meets demand at E, quantity 12."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -196,8 +196,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_overproduction.webp",
       "sha256": "5c6e31aaac1b7c4996719f0b30e8ee53bda29ac9b08c614a1d0af073d36d6db1",
       "sizeBytes": 29056,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Upward-sloping supply and downward-sloping demand cross at E. Points A and B lie to the right of E at the larger quantity; dashed guides show the labeled quantities and prices. Visible numeric scale markings include 18, 12, 2, 10, 8, 1, 0, 4, 16."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight demand starts at price 18 and straight supply at price 2. They intersect at E, quantity 8, price 10. At quantity 10, A on demand is price 8 and B on supply is price 12."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -207,8 +207,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_producer_prices.webp",
       "sha256": "3962f750dd32a57434aed7ca52fc46aa2dad55d000fe862dd587633e51b47c24",
       "sizeBytes": 24574,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve has horizontal reference lines P1 and P2 with vertical quantity guides, showing two price-quantity positions. Visible numeric scale markings include 18, 2, 12, 0, 1, 6, 10, 14, 16."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight supply starts at price 2. P1 marks quantity 6, price 8; P2 marks quantity 10, price 12."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -218,8 +218,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_step_buyers.webp",
       "sha256": "f6b9f44f1d49deb73da3dba230ebceab0e8809dfe56100e45a05a1e3cd74fe7f",
       "sizeBytes": 8262,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. A downward staircase curve labeled D shows successive buyer values at quantities 1 through 5. Visible numeric scale markings include 18, 15, 12, 9, 6, 3, 0, 1, 2, 4, 5."
+      "imageAlt": "Quantity is horizontal and dollar willingness to pay vertical. A labeled staircase curve.",
+      "graphDescription": "Quantity is horizontal and dollar willingness to pay vertical. The demand staircase shows five one-unit steps, with values 18, 15, 12, 9 and 6 for units 1 through 5 respectively."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -229,8 +229,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_step_sellers.webp",
       "sha256": "185b3b93f34b5588c2500f5122b7df41aac5c80c28aa9ec3a01a6f2d1893684b",
       "sizeBytes": 8056,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward staircase curve labeled S shows successive seller values at quantities 1 through 5. Visible numeric scale markings include 15, 12, 9, 6, 3, 0, 1, 2, 4, 5."
+      "imageAlt": "Quantity is horizontal and dollar seller cost vertical. A labeled staircase curve.",
+      "graphDescription": "Quantity is horizontal and dollar seller cost vertical. The supply staircase shows five one-unit steps, with costs 3, 6, 9, 12 and 15 for units 1 through 5 respectively."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -240,8 +240,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_supply_shift.webp",
       "sha256": "5dfd8a7af713d343b5991379f435e8f927752e7aa202b3ee9233922f290548df",
       "sizeBytes": 40560,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve is crossed by upward-sloping supply curves S1 and S2; intersections E1 and E2 and their dashed price and quantity guides are labeled. Visible numeric scale markings include 2, 24, 1, 20, 14, 12, 8, 4, 0, 6, 16."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight demand has price intercept 20. Straight supply S1 has intercept 4 and S2 has intercept 8. E1 is D/S1 at quantity 8, price 12. E2 is D/S2 at quantity 6, price 14."
     },
     {
       "conceptId": "consumer-and-producer-surplus",
@@ -251,8 +251,8 @@
       "runtimePath": "question-assets/consumer-and-producer-surplus/cps_underproduction.webp",
       "sha256": "f11c62fa8fb3272bd37b3c38a6ff1c55d59dcf22e8ee001699e14ca8fd5488d7",
       "sizeBytes": 29222,
-      "imageAlt": "Supply-and-demand graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Upward-sloping supply and downward-sloping demand cross at E. Point A lies left of E and point B is marked below the demand curve at the smaller quantity; dashed guides show the labeled quantities and prices. Visible numeric scale markings include 18, 12, 0, 2, 10, 1, 8, 4, 6, 16."
+      "imageAlt": "Quantity is horizontal and price in dollars vertical. Labeled straight curves and price-quantity guides.",
+      "graphDescription": "Quantity is horizontal and price in dollars vertical. Straight demand starts at price 18 and straight supply at price 2. They intersect at E, quantity 8, price 10. At quantity 6, A on demand is price 12 and B on supply is price 8."
     },
     {
       "conceptId": "costs-of-production",
@@ -903,7 +903,7 @@
       "sha256": "14505844471906a322080ac5cb52327500748dfba46a994a3794d39bcc6aef32",
       "sizeBytes": 58254,
       "imageAlt": "Two parallel downward-sloping demand curves for coffee labeled D0 and D1.",
-      "graphDescription": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. D0 is the original demand curve and D1 is a parallel curve to its right. At price $10, D0 shows quantity 50 thousand and D1 shows quantity 125 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 225 thousand. D1 represents 75 thousand more units demanded than D0 at each common price shown."
+      "graphDescription": "The horizontal axis is quantity of coffee in thousands and the vertical axis is price of coffee. D0 is the original demand curve and D1 is a parallel curve to its right. At price $10, D0 shows quantity 50 thousand and D1 shows quantity 125 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 225 thousand."
     },
     {
       "conceptId": "demand",
@@ -914,7 +914,7 @@
       "sha256": "1ce1751a267b58820a0f72221e2789d63ae1d3be3759ad1652813c432a04247b",
       "sizeBytes": 49114,
       "imageAlt": "Two parallel downward-sloping demand curves for tea labeled D0 and D1.",
-      "graphDescription": "The horizontal axis is quantity of tea in thousands and the vertical axis is price of tea. D0 is the original demand curve and D1 is a parallel curve to its left. At price $4, D0 shows quantity 200 thousand and D1 shows quantity 100 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 50 thousand. D1 represents 100 thousand fewer units demanded than D0 at each common price shown."
+      "graphDescription": "The horizontal axis is quantity of tea in thousands and the vertical axis is price of tea. D0 is the original demand curve and D1 is a parallel curve to its left. At price $4, D0 shows quantity 200 thousand and D1 shows quantity 100 thousand. At price $6, D0 shows quantity 150 thousand and D1 shows quantity 50 thousand."
     },
     {
       "conceptId": "demand",
@@ -925,7 +925,7 @@
       "sha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
       "sizeBytes": 95910,
       "imageAlt": "Supply-and-demand shift graph with labeled prices and quantities.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping curves are labeled S1 and S2, and two downward-sloping curves are labeled D1 and D2. Dashed guides mark prices P1, P2, and P3 and quantities Q1, Q2, and Q3 at the displayed intersections."
+      "graphDescription": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2."
     },
     {
       "conceptId": "disinflation-and-policy",
@@ -956,7 +956,7 @@
       "sha256": "744874b053c2349b42cd407e4a789d33ffbf62a3416a8dcf64ef68d2c2513ac5",
       "sizeBytes": 56656,
       "imageAlt": "Demand or supply curve graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. The plotted points are labeled A, B, C, and D."
+      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Two downward-sloping demand curves are labeled D1 and D2. D1 is flatter than D2. At price $10, D1 has quantity 45 and D2 has quantity 35; at price $6, D1 has quantity 95 and D2 has quantity 55. On D1, A is at quantity 95, price $6 and B at quantity 45, price $10. On D2, C is at quantity 55, price $6 and D at quantity 35, price $10."
     },
     {
       "conceptId": "elasticity",
@@ -967,7 +967,7 @@
       "sha256": "a8ec0dd32cd1c6038a48571dc83678eef213c07082b23f6a61ac6b8a56052cba",
       "sizeBytes": 29280,
       "imageAlt": "Demand or supply curve graph with labeled points and price-quantity guides.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Demand curve D1 is horizontal at price 5, while demand curve D2 is vertical at quantity 50. They cross at labeled point A, quantity 50 and price 5."
+      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Demand curve D1 is horizontal at price 5, while demand curve D2 is vertical at quantity 50. They cross at labeled point A, quantity 50 and price 5. Point B is on D2 at quantity 50 and price 7."
     },
     {
       "conceptId": "elasticity",
@@ -1836,7 +1836,7 @@
       "sha256": "2c0487a337c1dcfce2070f37c1ac0b7d561f104f27f7df91251e351a3778408f",
       "sizeBytes": 70886,
       "imageAlt": "Gas market with original curves D0 and S0 and shifted curves D1 and S1.",
-      "graphDescription": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand."
+      "graphDescription": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. D1 is parallel and right of D0; S1 is parallel and left of S0. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand."
     },
     {
       "conceptId": "market-equilibrium",
@@ -1858,7 +1858,7 @@
       "sha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
       "sizeBytes": 95910,
       "imageAlt": "Supply-and-demand shift graph with labeled prices and quantities.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping curves are labeled S1 and S2, and two downward-sloping curves are labeled D1 and D2. Dashed guides mark prices P1, P2, and P3 and quantities Q1, Q2, and Q3 at the displayed intersections."
+      "graphDescription": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2."
     },
     {
       "conceptId": "monetary-neutrality",
@@ -4192,7 +4192,7 @@
       "sha256": "f6395f7c6208641d5b65590a2eb2f59ea37dbe40e15a03f5cbd43065848c77da",
       "sizeBytes": 67900,
       "imageAlt": "Movie market with original demand D0, supply S0, and a parallel demand-with-tax curve below D0.",
-      "graphDescription": "The horizontal axis is quantity of movies in thousands and the vertical axis is price of movies. Original demand D0 and supply S0 intersect at point e, quantity 100 thousand and price $10.50. A parallel curve labeled Demand with tax lies $6 below D0. After the buyer-side tax, quantity is 60 thousand. Sellers receive $7.50 at the intersection of supply and demand with tax, while buyers pay $13.50 on the original demand curve at that same quantity. The $6 wedge is split equally relative to the original $10.50 equilibrium price, and quantity falls by 40 thousand."
+      "graphDescription": "Quantity of movies in thousands is horizontal and price in dollars vertical. Straight original demand D0 has price intercept 18 and straight supply S0 has intercept 3. They meet at e, quantity 100, price 10.50. Demand with tax meets S0 at quantity 60, price 7.50. At quantity 60 original demand is at price 13.50."
     },
     {
       "conceptId": "statutory-versus-economic-tax-incidence",
@@ -4225,7 +4225,7 @@
       "sha256": "30364c9cedfcdf0ba376fe4de39523fa4d73d06eae147e0b5d6c59f82eb872d0",
       "sizeBytes": 59978,
       "imageAlt": "Two parallel upward-sloping supply curves for hamburgers labeled S0 and S1.",
-      "graphDescription": "The horizontal axis is quantity of hamburgers in thousands and the vertical axis is price of hamburgers. S0 is the original supply curve and S1 is a parallel curve to its left and above. At price $9, S0 shows quantity 200 thousand and S1 shows quantity 100 thousand. At price $13, S0 shows quantity 300 thousand and S1 shows quantity 200 thousand. S1 represents 100 thousand fewer units supplied than S0 at each common price shown."
+      "graphDescription": "The horizontal axis is quantity of hamburgers in thousands and the vertical axis is price of hamburgers. S0 is the original supply curve and S1 is a parallel curve to its left and above. At price $9, S0 shows quantity 200 thousand and S1 shows quantity 100 thousand. At price $13, S0 shows quantity 300 thousand and S1 shows quantity 200 thousand."
     },
     {
       "conceptId": "supply",
@@ -4236,7 +4236,7 @@
       "sha256": "6713ee777ec55f3ee1af8b72058e9906f77d3c8e0139acb0d11397a9e8335433",
       "sizeBytes": 48790,
       "imageAlt": "Two parallel upward-sloping supply curves for tacos labeled S0 and S1, with points A and B on S0.",
-      "graphDescription": "The horizontal axis is quantity of tacos in thousands and the vertical axis is price of tacos. S0 is the original upward-sloping supply curve; S1 is a parallel curve below and to the right. Point A on S0 is at quantity 100 thousand and price $3. Point B on S0 is at quantity 225 thousand and price $4. At price $3, S1 shows quantity 225 thousand, so the shift from S0 to S1 adds 125 thousand units supplied at that price."
+      "graphDescription": "The horizontal axis is quantity of tacos in thousands and the vertical axis is price of tacos. S0 is the original upward-sloping supply curve; S1 is a parallel curve below and to the right. Point A on S0 is at quantity 100 thousand and price $3. Point B on S0 is at quantity 225 thousand and price $4. At price $3, S1 shows quantity 225 thousand. At price $2, S1 shows quantity 100 thousand."
     },
     {
       "conceptId": "supply",
@@ -4247,7 +4247,7 @@
       "sha256": "0e6036cb18656e910c724df79e081f822836d4e4207033fcafcdcded5c122389",
       "sizeBytes": 95910,
       "imageAlt": "Supply-and-demand shift graph with labeled prices and quantities.",
-      "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Two upward-sloping curves are labeled S1 and S2, and two downward-sloping curves are labeled D1 and D2. Dashed guides mark prices P1, P2, and P3 and quantities Q1, Q2, and Q3 at the displayed intersections."
+      "graphDescription": "The horizontal axis is quantity and the vertical axis is price, with P1 < P2 < P3 and Q1 < Q2 < Q3. D1 and D2 slope downward; S1 and S2 slope upward. D1/S1 intersects at Q1, P2; D2/S1 at Q2, P3; D1/S2 at Q2, P1; and D2/S2 at Q3, P2."
     },
     {
       "conceptId": "tax-incidence",
@@ -4269,7 +4269,7 @@
       "sha256": "cf4234419410715f06f8f7dc23d8b4cb6257870c227560b215ff5eefd229287e",
       "sizeBytes": 77760,
       "imageAlt": "Movie market with demand D0, original supply S0, and a parallel supply-with-tax curve above S0.",
-      "graphDescription": "The horizontal axis is quantity of movies in thousands and the vertical axis is price of movies. Demand D0 and original supply S0 intersect at point e, price $12 and quantity 140 thousand. A parallel curve labeled Supply with tax is $4 above S0. After the tax, demand intersects the shifted supply curve at quantity 100 thousand and buyer price $14. At that quantity the original supply curve is at $10, so sellers receive $10, the per-unit tax wedge is $4, and quantity falls by 40 thousand."
+      "graphDescription": "Quantity of movies in thousands is horizontal and price in dollars vertical. Straight D0 has price intercept 19 and straight S0 has intercept 5. They intersect at e, quantity 140, price 12. Supply with tax meets D0 at quantity 100, price 14. At that quantity S0 is at price 10."
     },
     {
       "conceptId": "tax-wedges-and-revenue",
@@ -4338,8 +4338,8 @@
       "runtimePath": "question-assets/market-equilibrium/DEMAND-SUPPLY-05.webp",
       "sha256": "2e4222f7677fd917073bdf9708649f2f6fde744cbb0480548cefff7ce69afc62",
       "sizeBytes": 86338,
-      "imageAlt": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand shifts right from D0 to D1 while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 200 and price 14 dollars.",
-      "graphDescription": "The movie-ticket market has price in dollars vertically and quantity in thousands horizontally. Demand shifts right from D0 to D1 while supply shifts left from S0 to S1. Equilibrium moves from A at quantity 200 and price 10 dollars to B at quantity 200 and price 14 dollars.",
+      "imageAlt": "Movie-ticket graph with demand curves D0 and D1, supply curves S0 and S1, and labeled points A and B.",
+      "graphDescription": "Price of movie tickets is in dollars vertically; quantity is in thousands horizontally. Downward-sloping D0 starts at price $18 and D1 at $22. Upward-sloping S0 starts at $2 and S1 at $6. A is the D0/S0 intersection at quantity 200 and price $10. B is the D1/S1 intersection at quantity 200 and price $14.",
       "sourceCurationPhase": "phase3e-market-gate-graph-sync-v1"
     },
     {

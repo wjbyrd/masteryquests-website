@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "integrity": {
+    "concepts": 149,
+    "questions": 9779,
+    "graphs": 1077,
+    "assets": 507
+  },
+  "negativeChecks": 18,
+  "results": [
+    {
+      "name": "wrong canonical question count",
+      "status": "PASS"
+    },
+    {
+      "name": "missing registry concept",
+      "status": "PASS"
+    },
+    {
+      "name": "mismatched manifest hash",
+      "status": "PASS"
+    },
+    {
+      "name": "stale manifest accessibility copy",
+      "status": "PASS"
+    },
+    {
+      "name": "graph question with missing asset",
+      "status": "PASS"
+    },
+    {
+      "name": "corrupt asset bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "incorrect preserved source hash",
+      "status": "PASS"
+    },
+    {
+      "name": "unauthorized graph copy",
+      "status": "PASS"
+    },
+    {
+      "name": "new unreviewed auditor finding",
+      "status": "PASS"
+    },
+    {
+      "name": "run_phase3e_graph_question_sync_validation.mjs: count",
+      "status": "PASS",
+      "childExit": 1
+    },
+    {
+      "name": "run_question_quality_auditor_validation.mjs: count",
+      "status": "PASS",
+      "childExit": 1
+    },
+    {
+      "name": "run_macro_phase2_taxonomy_validation.mjs: count",
+      "status": "PASS",
+      "childExit": 1
+    },
+    {
+      "name": "run_mastery_report_2_validation.js: count",
+      "status": "PASS",
+      "childExit": 1
+    },
+    {
+      "name": "run_unlimited_practice_validation.js: count",
+      "status": "PASS",
+      "childExit": 1
+    },
+    {
+      "name": "run_trial_by_graph_validation.js: count",
+      "status": "PASS",
+      "childExit": 1
+    },
+    {
+      "name": "run_fading_fortune_validation.js: count",
+      "status": "PASS",
+      "childExit": 1
+    },
+    {
+      "name": "run_risk_reward_validation.js: count",
+      "status": "PASS",
+      "childExit": 1
+    },
+    {
+      "name": "run_trial_by_graph_validation.js: mode",
+      "status": "PASS",
+      "childExit": 1
+    }
+  ]
+}

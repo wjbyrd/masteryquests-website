@@ -1,0 +1,101 @@
+error: Could not access 'HEAD'
+Error: Command failed: git diff --name-only HEAD -- play
+error: Could not access 'HEAD'
+
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at Object.execFileSync (node:child_process:961:15)
+    at run (C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\run_phase3a_official_theme_validation.js:221:59)
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Stale source hash on 40010
++ actual - expected
+
++ '7b430a9da5ee7224cc86b9ae78d27cc7fc66e248db89418eccbc8d8d5de776ba'
+- 'fa53f1c50fe86c444f6ac9df153f9ef436d0aa532c5d84fbb8c24537d6777bfb'
+
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_question_quality_auditor_validation.mjs:50:10
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: '7b430a9da5ee7224cc86b9ae78d27cc7fc66e248db89418eccbc8d8d5de776ba',
+  expected: 'fa53f1c50fe86c444f6ac9df153f9ef436d0aa532c5d84fbb8c24537d6777bfb',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.14.1
+file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_macro_phase2_taxonomy_validation.mjs:87
+const check=(name,condition,details={})=>{checks.push({name,status:condition?'PASS':'FAIL',...details});if(!condition)throw new Error(`${name}: ${JSON.stringify(details)}`);};
+                                                                                                                            ^
+
+Error: Global synchronized totals: {"libraryConcepts":149,"manifestConcepts":149,"questions":9779}
+    at check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_macro_phase2_taxonomy_validation.mjs:87:125)
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_macro_phase2_taxonomy_validation.mjs:109:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.14.1
+fatal: detected dubious ownership in repository at 'C:/Users/Jennings/Documents/GitHub/masteryquests-website'
+'C:/Users/Jennings/Documents/GitHub/masteryquests-website' is owned by:
+	JenningsPC/Jennings (S-1-5-21-2372618697-2852572125-4019038400-1002)
+but the current user is:
+	JenningsPC/CodexSandboxOffline (S-1-5-21-2372618697-2852572125-4019038400-1004)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory C:/Users/Jennings/Documents/GitHub/masteryquests-website
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: git show HEAD:build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html
+fatal: detected dubious ownership in repository at 'C:/Users/Jennings/Documents/GitHub/masteryquests-website'
+'C:/Users/Jennings/Documents/GitHub/masteryquests-website' is owned by:
+	JenningsPC/Jennings (S-1-5-21-2372618697-2852572125-4019038400-1002)
+but the current user is:
+	JenningsPC/CodexSandboxOffline (S-1-5-21-2372618697-2852572125-4019038400-1004)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory C:/Users/Jennings/Documents/GitHub/masteryquests-website
+
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at Object.execFileSync (node:child_process:961:15)
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_checkpoint_remediation_design_change_validation.mjs:12:33
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 128,
+  signal: null,
+  output: [
+    null,
+    '',
+    "fatal: detected dubious ownership in repository at 'C:/Users/Jennings/Documents/GitHub/masteryquests-website'\n" +
+      "'C:/Users/Jennings/Documents/GitHub/masteryquests-website' is owned by:\n" +
+      '\tJenningsPC/Jennings (S-1-5-21-2372618697-2852572125-4019038400-1002)\n' +
+      'but the current user is:\n' +
+      '\tJenningsPC/CodexSandboxOffline (S-1-5-21-2372618697-2852572125-4019038400-1004)\n' +
+      'To add an exception for this directory, call:\n' +
+      '\n' +
+      '\tgit config --global --add safe.directory C:/Users/Jennings/Documents/GitHub/masteryquests-website\n'
+  ],
+  pid: 27968,
+  stdout: '',
+  stderr: "fatal: detected dubious ownership in repository at 'C:/Users/Jennings/Documents/GitHub/masteryquests-website'\n" +
+    "'C:/Users/Jennings/Documents/GitHub/masteryquests-website' is owned by:\n" +
+    '\tJenningsPC/Jennings (S-1-5-21-2372618697-2852572125-4019038400-1002)\n' +
+    'but the current user is:\n' +
+    '\tJenningsPC/CodexSandboxOffline (S-1-5-21-2372618697-2852572125-4019038400-1004)\n' +
+    'To add an exception for this directory, call:\n' +
+    '\n' +
+    '\tgit config --global --add safe.directory C:/Users/Jennings/Documents/GitHub/masteryquests-website\n'
+}
+
+Node.js v24.14.1

@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "bytes": 726125,
+  "inlineScripts": 1,
+  "questionCount": 59,
+  "modes": [
+    {
+      "mode": "standard",
+      "label": "Standard Campaign",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 8
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 10
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 8
+        },
+        {
+          "pool": "easyBoss",
+          "minimum": 3,
+          "count": 3
+        },
+        {
+          "pool": "mediumBoss",
+          "minimum": 3,
+          "count": 3
+        },
+        {
+          "pool": "finalBoss",
+          "minimum": 3,
+          "count": 3
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 5
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 2
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    }
+  ]
+}

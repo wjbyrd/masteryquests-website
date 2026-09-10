@@ -1,3 +1,4 @@
+const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
 const path=require('path');
 const vm=require('vm');
@@ -44,7 +45,7 @@ function simulateManualEnd(mode){
 (async()=>{
   const issues=[];
   assertCanonicalCoreVersion(core);
-  if(library.canonicalQuestionCount!==9539) issues.push(`canonical ${library.canonicalQuestionCount}`);
+  assertCanonicalIntegrity(library);
   const tiny=evidence({attempts:2,accuracy:1,byDifficulty:{easy:{attempts:2}},overall:false});
   const developing=evidence({attempts:7,accuracy:.86,byDifficulty:{easy:{attempts:4},medium:{attempts:3}},recentAccuracy:.86,overall:true});
   const mastered=evidence({attempts:20,accuracy:.90,byDifficulty:{easy:{attempts:6},medium:{attempts:6},hard:{attempts:8}},recentAccuracy:.90,overall:true});

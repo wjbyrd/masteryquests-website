@@ -1,3 +1,4 @@
+const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
 const path=require('path');
 const vm=require('vm');
@@ -81,8 +82,16 @@ function runtimeDeckCheck(composition,target){
   const issues=[];
   assertCanonicalCoreVersion(core);
   if(core.MODE_ORDER.length!==10 || core.MODE_ORDER[7]!=='trialGraph' || core.MODE_ORDER[8]!=='fadingFortune' || core.MODE_ORDER[9]!=='riskReward') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
-  if(library.canonicalQuestionCount!==9539) issues.push(`canonical count ${library.canonicalQuestionCount}`);
+  assertCanonicalIntegrity(library);
 
+  // This later authored expansion is separate from the legacy graph audits.
+  const {productionQuestions}=await import('../authoring/open_economy_question_pool_author.mjs');
+  const openEconomyGraphIds=new Set(productionQuestions.filter(q=>q.graphRequired===true).map(q=>String(q.id)));
+  const openManifest=JSON.parse(fs.readFileSync(path.resolve(root,'../../audit_tools/macro_open_economy/macro_open_economy_question_manifest.json'),'utf8'));
+  const openExpectedGraphs=Object.values(openManifest.byChild).reduce((sum,child)=>sum+child.graphRequiredCount,0);
+  if(openEconomyGraphIds.size!==openExpectedGraphs) issues.push('Open-economy authored / manifest graph membership count mismatch');
+  const currentOpenGraphs=Object.entries(library.concepts).filter(([id])=>Object.hasOwn(openManifest.byChild,id)).flatMap(([,module])=>Object.values(module.questions||{}).flat()).filter(q=>q.graphRequired===true).map(q=>String(q.canonicalId||q.id)).sort();
+  if(JSON.stringify(currentOpenGraphs)!==JSON.stringify([...openEconomyGraphIds].sort())) issues.push('Open-economy graph membership mismatch');
   const auditIds=new Set();
   for(const fn of ['MICRO_GRAPH_QUESTIONS_AUDIT_CORRECTED.json','TODAYS_GRAPH_QUESTIONS_AUDIT_CORRECTED_V2.json']){
     for(const r of JSON.parse(fs.readFileSync(path.join(root,fn),'utf8'))) auditIds.add(String(r.id));
@@ -111,7 +120,7 @@ function runtimeDeckCheck(composition,target){
         if(q.graphRequired===true){
           flagged++;
           const id=String(q.canonicalId||q.id||q.questionId||'');
-          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id) && !foundationsGraphIds.has(id)) flaggedOutsideAudit++;
+          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id) && !foundationsGraphIds.has(id) && !openEconomyGraphIds.has(id)) flaggedOutsideAudit++;
           if(!q.image) flaggedWithoutImage++;
         }
       }
@@ -120,7 +129,7 @@ function runtimeDeckCheck(composition,target){
   if(auditIds.size!==612) issues.push(`audit id count ${auditIds.size}`);
   if(qualityGraphIds.size!==23) issues.push(`quality remediation graph id count ${qualityGraphIds.size}`);
   if(foundationsGraphIds.size!==23) issues.push(`foundations remediation graph id count ${foundationsGraphIds.size}`);
-  if(flagged!==1055) issues.push(`graphRequired count ${flagged}`);
+  if(flagged!==1055+openExpectedGraphs) issues.push(`graphRequired count ${flagged}`);
   if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);
   if(flaggedWithoutImage) issues.push(`flags without image ${flaggedWithoutImage}`);
 

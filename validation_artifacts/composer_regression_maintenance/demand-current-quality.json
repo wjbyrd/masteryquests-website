@@ -1,0 +1,129 @@
+{
+  "counts": {
+    "errors": 0,
+    "warnings": 1,
+    "reviews": 9
+  },
+  "findings": [
+    {
+      "severity": "WARNING",
+      "rule": "graph-question-evidence-mismatch",
+      "questionId": "PG1-SUP-L-003",
+      "concept": "supply",
+      "pools": [
+        "legendary"
+      ],
+      "message": "The stem asks for a multi-stage graph path without identifying the observations or stages the learner should inspect.",
+      "suggestion": "Make the intended graph observations identifiable from the stem and graph contract before the learner reads the options.",
+      "wording": "Refer to the graph. A process improvement changes supply from S0 to S1. Starting at A, find the price on S1 that restores the initial quantity. What does the unchanged final quantity mean?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S3-DEM-EL-001",
+      "concept": "demand",
+      "pools": [
+        "elite"
+      ],
+      "message": "2 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Income rises for a normal good while the price of a close substitute falls. What can be concluded about demand for the normal good?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S3-DEM-L-001",
+      "concept": "demand",
+      "pools": [
+        "legendary"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Coffee is a normal good. Consumer income rises, buyers expect coffee prices to fall next month, and the current price of tea, a substitute, rises. What can be concluded about current coffee demand?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG1-EQ-EL-001",
+      "concept": "market-equilibrium",
+      "pools": [
+        "elite"
+      ],
+      "message": "elite metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the graph. The market price starts at $2 and can adjust freely. Which pair of quantity changes would eliminate the initial imbalance with both curves fixed?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "ECON-MG-LEGENDARYBOSS-9125",
+      "concept": "supply",
+      "pools": [
+        "legendaryBoss"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Evaluate the competing effects of a cost-saving production technology and a new compliance cost. What can be inferred about the net supply shift without relative magnitudes?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S2-SUP-EL-001",
+      "concept": "supply",
+      "pools": [
+        "elite"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "A new machine lowers unit production cost, while a new per-unit environmental fee raises cost. Which conclusion about supply is justified without knowing the size of each change?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S2-SUP-EL-002",
+      "concept": "supply",
+      "pools": [
+        "elite"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Twenty new firms enter a market, but an essential input becomes more expensive for every firm. What is the most careful conclusion about market supply?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "weak-absolute-distractors",
+      "questionId": "P52B-S2-SUP-H-001",
+      "concept": "supply",
+      "pools": [
+        "hard"
+      ],
+      "message": "3 distractors rely on absolute wording while the correct answer does not.",
+      "suggestion": "",
+      "wording": "Workers accept lower wages, but producers also expect the product's future price to rise and hold inventory for later sale. What can be concluded about current supply?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG1-SUP-L-002",
+      "concept": "supply",
+      "pools": [
+        "legendary"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the graph. Producers initially supply on S0 at $9. Input costs then change so the relevant curve is S1. What price would restore the original quantity, and what accounts for the restoration?"
+    },
+    {
+      "severity": "REVIEW",
+      "rule": "possible-difficulty-overstatement",
+      "questionId": "PG1-SUP-L-003",
+      "concept": "supply",
+      "pools": [
+        "legendary"
+      ],
+      "message": "legendary metadata may overstate a direct recognition or graph-reading task.",
+      "suggestion": "Confirm that the item requires work appropriate to its assigned difficulty.",
+      "wording": "Refer to the graph. A process improvement changes supply from S0 to S1. Starting at A, find the price on S1 that restores the initial quantity. What does the unchanged final quantity mean?"
+    }
+  ]
+}

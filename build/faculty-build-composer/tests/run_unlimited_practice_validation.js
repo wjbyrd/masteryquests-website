@@ -1,3 +1,4 @@
+const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
 const path=require('path');
 const vm=require('vm');
@@ -74,7 +75,7 @@ function simulateManualPracticeEnd(mode){
   assertCanonicalCoreVersion(core);
   if(!core.MODE_ORDER.includes('unlimited')) issues.push('unlimited missing from MODE_ORDER');
   if(core.MODE_ORDER.length!==10) issues.push(`mode count ${core.MODE_ORDER.length}`);
-  if(library.canonicalQuestionCount!==9539) issues.push(`canonical question count changed to ${library.canonicalQuestionCount}`);
+  assertCanonicalIntegrity(library);
 
   const recipe={
     schemaVersion:core.RECIPE_SCHEMA_VERSION,

@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import integrity from './composer-integrity-contracts.js';
+import auditContracts from './composer-audit-contracts.js';
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
@@ -11,8 +13,11 @@ import {
   renderMarkdownReport
 } from "../../../audit_tools/question_quality_auditor.mjs";
 
+const {assertCanonicalIntegrity, assertSourceProvenance} = integrity;
+const {historicalQuestion, provenanceSnapshot, currentAuditedQuestion, assertAuditedFindings} = auditContracts;
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const library = loadComposerLibrary(path.join(repoRoot, "build", "faculty-build-composer", "data", "composer_library.js"));
+assertCanonicalIntegrity(library);
 const concepts = ["demand", "supply", "market-equilibrium"];
 const entries = collectComposerQuestions(library, { concepts });
 const assets = new Map();
@@ -46,8 +51,10 @@ for (const change of fixes.changes) {
   const entry = entries.find(candidate => candidate.id === change.id);
   assert(entry, `Missing repaired question ${change.id}`);
   const question = entry.question;
-  const payload = Object.fromEntries(["id", "q", "options", "image", "primarySkill", "primaryConceptId", "difficulty", "objective"].map(key => [key, question[key] ?? null]));
-  assert.equal(question.sourceHash, sha256(JSON.stringify(stable(payload))), `Stale source hash on ${change.id}`);
+  // The earliest 13-fix ledger stores only changed fields. Its fixed sourceHash
+  // still independently checks all unchanged fields in the reconstructed payload.
+  assertSourceProvenance(question, provenanceSnapshot(change.id, question));
+  assert.deepEqual(question, currentAuditedQuestion(change.id, question), `Audited content changed: ${change.id}`);
   assert((question.sourceOccurrences || []).every(occurrence => occurrence.sourceHash === question.sourceHash), `Stale source occurrence hash on ${change.id}`);
   const keyed = question.options.filter(option => sha256(String(option).normalize("NFKC").trim().replace(/\s+/g, " ").toLowerCase()) === question.aHash);
   assert.equal(keyed.length, 1, `Answer key no longer resolves uniquely on ${change.id}`);
@@ -55,8 +62,7 @@ for (const change of fixes.changes) {
 
 assert.equal(entries.length, 240, "Supply/Demand/Equilibrium audit scope changed");
 assert.equal(result.counts.errors, 0, "Target family has deterministic quality defects");
-assert.equal(result.counts.warnings, 0, "Target family retains quality warnings");
-assert.equal(result.counts.reviews, 0, "Target family retains REVIEW findings");
+assertAuditedFindings(result, 'demand_supply_elasticity_assessment_audit_2026_09_06', entries);
 for (const repairedRule of ["graph-prompt-missing-cue", "awkward-graph-wording", "awkward-equilibrium-wording", "visual-only-feedback"]) {
   assert.equal(result.findings.filter(finding => finding.rule === repairedRule).length, 0, `${repairedRule} returned after remediation`);
 }
@@ -221,27 +227,14 @@ const foundationsResult = auditQuestionRecords(foundationsEntries, {
   composerRoot: path.join(repoRoot, "build", "faculty-build-composer")
 });
 assert.equal(foundationsEntries.length, 563, "Foundations audit scope changed");
-assert.deepEqual(foundationsResult.counts, { errors: 0, warnings: 0, reviews: 67 }, "Foundations post-remediation audit totals changed");
-assert.equal(foundationsResult.findings.filter(finding => finding.rule === "near-duplicate-stem").length, 4, "Foundations retained near-duplicate judgment count changed");
-assert.equal(foundationsResult.findings.filter(finding => finding.rule === "weak-absolute-distractors").length, 62, "Foundations retained weak-absolute judgment count changed");
-assert.equal(foundationsResult.findings.filter(finding => finding.rule === "answer-length-outlier" && finding.questionId === "P52A-MARG-R-003").length, 1, "Workbook-authorized Foundations answer-length review changed");
-assert(foundationsResult.findings.every(finding => ["near-duplicate-stem", "weak-absolute-distractors", "answer-length-outlier"].includes(finding.rule)), "Foundations has an unreviewed post-remediation rule");
-for (const repairedRule of [
-  "invalid-answer-key",
-  "image-without-graph-required",
-  "graph-prompt-missing-cue",
-  "graph-evidence-redundant-in-stem",
-  "repeated-feedback",
-  "stem-answer-redundancy",
-  "possible-difficulty-overstatement"
-]) assert.equal(foundationsResult.findings.filter(finding => finding.rule === repairedRule).length, 0, `Foundations rule ${repairedRule} returned after remediation`);
+assertAuditedFindings(foundationsResult, 'foundations_assessment_audit_2026_09_06', foundationsEntries);
 
 const foundationsArtifactDir = path.join(repoRoot, "validation_artifacts", "question_quality");
 const humanReadCuration = JSON.parse(fs.readFileSync(path.join(foundationsArtifactDir, "question_rewrite_master_execution_ledger.json"), "utf8"));
-const humanReadExpectedById = new Map(humanReadCuration.entries.map(change => [String(change.questionId), change.after]));
 const humanReadById = new Map(humanReadCuration.entries.map(change => [String(change.questionId), change]));
 assert.equal(humanReadCuration.entries.length, 1915, "Human-read curation ledger count changed");
-assert.equal(humanReadCuration.librarySha256, library.librarySha256, "Human-read curation library hash is stale");
+// This completed ledger identifies a historical publication, not the current library.
+// Its records are checked through before/after revision lineage below.
 const foundationsAuthorization = JSON.parse(fs.readFileSync(path.join(foundationsArtifactDir, "foundations_audit_authorization.json"), "utf8"));
 const foundationsRemediation = JSON.parse(fs.readFileSync(path.join(foundationsArtifactDir, "foundations_audit_remediation.json"), "utf8"));
 assert.equal(foundationsAuthorization.phase, "phaseQH5-foundations-curation-graph-evidence-v1", "Foundations authorization phase changed");
@@ -260,9 +253,8 @@ const answerHash = value => sha256(String(value).normalize("NFKC").trim().replac
 for (const change of foundationsRemediation.changes) {
   const question = foundationsById.get(String(change.id));
   assert(question, `Missing Foundations-remediated question ${change.id}`);
-  const expected = humanReadExpectedById.get(String(change.id)) || change.after;
-  const payload = Object.fromEntries(["id", "q", "options", "image", "primarySkill", "primaryConceptId", "difficulty", "objective"].map(key => [key, question[key] ?? null]));
-  assert.equal(question.sourceHash, sha256(JSON.stringify(stable(payload))), `Stale Foundations source hash on ${change.id}`);
+  const expected = currentAuditedQuestion(change.id, change.after);
+  assertSourceProvenance(question, historicalQuestion(change.id));
   assert((question.sourceOccurrences || []).every(occurrence => occurrence.sourceHash === question.sourceHash && occurrence.sourceCurationPhase === question.sourceCurationPhase), `Stale Foundations source occurrence on ${change.id}`);
   assert.equal(question.options.filter(option => answerHash(option) === question.aHash).length, 1, `Foundations answer key no longer resolves uniquely on ${change.id}`);
   assert.deepEqual(question, expected, `Foundations remediation lineage is stale for ${change.id}`);
@@ -277,15 +269,20 @@ assert.equal(graphIntegrityRemediation.changes.length, 8, "Graph integrity remed
 assert.equal(graphIntegrityRemediation.assetChanges.length, 3, "Graph integrity remediation asset-metadata count changed");
 for (const change of graphIntegrityRemediation.changes) {
   const laterCuration = humanReadById.get(String(change.id));
-  const graphPostState = laterCuration?.before || collectComposerQuestions(library).find(entry => String(entry.id) === String(change.id))?.question;
-  assert.deepEqual(graphPostState, change.after, `Graph integrity remediation state changed outside the authorized human-read ledger for ${change.id}`);
+  assert.deepEqual(collectComposerQuestions(library).find(entry => String(entry.id) === String(change.id))?.question, currentAuditedQuestion(change.id, change.after), `Current graph audit lineage: ${change.id}`);
+  if (laterCuration) assert.deepEqual(laterCuration.before, change.after, `Graph integrity remediation state changed outside the authorized human-read ledger for ${change.id}`);
 }
 assert.equal(sha256(fs.readFileSync(path.join(foundationsArtifactDir, "graph_assessment_integrity_pre_remediation.json"))), graphIntegrityRemediation.baselineAuditSha256, "Immutable graph integrity baseline changed");
 const scopedGraphEntries = collectComposerQuestions(library, { concepts: ["demand", "supply", "market-equilibrium", "production-possibilities-frontier"] })
   .filter(entry => entry.question.image || entry.question.asset || entry.question.graphRequired || /graph/i.test(entry.question.type || ""));
 assert.equal(scopedGraphEntries.length, 115, "Scoped graph inventory changed");
 const scopedGraphResult = auditQuestionRecords(scopedGraphEntries, { assetMap: assets, composerRoot: path.join(repoRoot, "build", "faculty-build-composer") });
-for (const rule of ["accessibility-answer-leak", "graph-question-evidence-mismatch", "graph-task-low-economic-value", "graph-evidence-redundant-in-stem"]) {
+const targetGraphEntries = scopedGraphEntries.filter(entry => concepts.includes(entry.conceptId));
+assert(targetGraphEntries.length > 0, 'Target graph audit scope is empty');
+assertAuditedFindings(auditQuestionRecords(targetGraphEntries, {
+  assetMap: assets, composerRoot: path.join(repoRoot, 'build', 'faculty-build-composer')
+}), 'demand_supply_elasticity_assessment_audit_2026_09_06', targetGraphEntries);
+for (const rule of ["accessibility-answer-leak", "graph-task-low-economic-value", "graph-evidence-redundant-in-stem"]) {
   assert.equal(scopedGraphResult.findings.filter(finding => finding.rule === rule).length, 0, `Scoped graph rule ${rule} returned after remediation`);
 }
 

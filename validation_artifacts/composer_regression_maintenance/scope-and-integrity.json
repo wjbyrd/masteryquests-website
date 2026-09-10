@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "baselineTrackedFiles": 4727,
+  "unchangedTrackedFiles": 4718,
+  "changedTrackedFiles": [
+    "build/faculty-build-composer/data/composer_library_manifest.json",
+    "build/faculty-build-composer/tests/run_fading_fortune_validation.js",
+    "build/faculty-build-composer/tests/run_macro_phase2_taxonomy_validation.mjs",
+    "build/faculty-build-composer/tests/run_mastery_report_2_validation.js",
+    "build/faculty-build-composer/tests/run_phase3e_graph_question_sync_validation.mjs",
+    "build/faculty-build-composer/tests/run_question_quality_auditor_validation.mjs",
+    "build/faculty-build-composer/tests/run_risk_reward_validation.js",
+    "build/faculty-build-composer/tests/run_trial_by_graph_validation.js",
+    "build/faculty-build-composer/tests/run_unlimited_practice_validation.js"
+  ],
+  "productionFilesChanged": [
+    "build/faculty-build-composer/data/composer_library_manifest.json"
+  ],
+  "questionLibraryBytesUnchanged": true,
+  "allOtherTrackedProductionAndAssetsUnchanged": true,
+  "integrity": {
+    "concepts": 149,
+    "questions": 9779,
+    "graphs": 1077,
+    "assets": 507
+  },
+  "distinctAssetRuntimePaths": 502,
+  "librarySha256": "530ce41689bf83126ccde2d7d0fd236ca0c34761042455323ce7d3f99e97bbab",
+  "recipeSchema": "1.6.0",
+  "originalAssertionLocations": {
+    "run_phase3e_graph_question_sync_validation.mjs": [
+      {
+        "line": 111,
+        "text": "pass(library.canonicalQuestionCount === 9539, `Canonical count ${library.canonicalQuestionCount}`);"
+      },
+      {
+        "line": 112,
+        "text": "pass(manifest.canonicalQuestionCount === 9539, `Manifest canonical count ${manifest.canonicalQuestionCount}`);"
+      },
+      {
+        "line": 128,
+        "text": "`Canonical copy changed ${author.id}`"
+      },
+      {
+        "line": 138,
+        "text": "pass(correctHashes.length === 1 && question.aHash === expectedAnswerHash, `Answer hash ${author.id}`);"
+      }
+    ],
+    "run_question_quality_auditor_validation.mjs": [
+      {
+        "line": 50,
+        "text": "assert.equal(question.sourceHash, sha256(JSON.stringify(stable(payload))), `Stale source hash on ${change.id}`);"
+      }
+    ],
+    "run_macro_phase2_taxonomy_validation.mjs": [
+      {
+        "line": 109,
+        "text": "check('Global synchronized totals',library.conceptCount===143&&library.canonicalQuestionCount===9539&&registry.conceptCount===undefined&&manifest.conceptCount===143&&manifest.canonicalQuestionCount===9539,{libraryConcepts:library.conceptCount,manifestConcepts:manifest.conceptCount,questions:library.canonicalQuestionCount});"
+      }
+    ],
+    "run_mastery_report_2_validation.js": [
+      {
+        "line": 47,
+        "text": "if(library.canonicalQuestionCount!==9539) issues.push(`canonical ${library.canonicalQuestionCount}`);"
+      }
+    ],
+    "run_unlimited_practice_validation.js": [
+      {
+        "line": 77,
+        "text": "if(library.canonicalQuestionCount!==9539) issues.push(`canonical question count changed to ${library.canonicalQuestionCount}`);"
+      }
+    ],
+    "run_trial_by_graph_validation.js": [
+      {
+        "line": 84,
+        "text": "if(library.canonicalQuestionCount!==9539) issues.push(`canonical count ${library.canonicalQuestionCount}`);"
+      },
+      {
+        "line": 123,
+        "text": "if(flagged!==1055) issues.push(`graphRequired count ${flagged}`);"
+      },
+      {
+        "line": 124,
+        "text": "if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);"
+      }
+    ],
+    "run_fading_fortune_validation.js": [
+      {
+        "line": 34,
+        "text": "if(library.canonicalQuestionCount!==9539) issues.push(`canonical count ${library.canonicalQuestionCount}`);"
+      }
+    ],
+    "run_risk_reward_validation.js": [
+      {
+        "line": 28,
+        "text": "if(library.canonicalQuestionCount!==9539) issues.push(`canonical count ${library.canonicalQuestionCount}`);"
+      }
+    ]
+  }
+}

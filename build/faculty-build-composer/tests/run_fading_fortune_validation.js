@@ -1,3 +1,4 @@
+const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
 const path=require('path');
 const vm=require('vm');
@@ -31,7 +32,7 @@ function runtimeDeckCheck(composition,target){
   const issues=[];
   assertCanonicalCoreVersion(core);
   if(core.MODE_ORDER.length!==10 || core.MODE_ORDER[8]!=='fadingFortune' || core.MODE_ORDER[9]!=='riskReward') issues.push(`mode order ${JSON.stringify(core.MODE_ORDER)}`);
-  if(library.canonicalQuestionCount!==9539) issues.push(`canonical count ${library.canonicalQuestionCount}`);
+  assertCanonicalIntegrity(library);
 
   const allNine=core.compose(library,recipe('perfect-competition',[...core.MODE_ORDER]));
   if(allNine.errors.length) issues.push(...allNine.errors.map(x=>`all-nine: ${x}`));

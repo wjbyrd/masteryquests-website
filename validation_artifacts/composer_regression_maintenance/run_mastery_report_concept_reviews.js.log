@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PASS",
+  "caseCount": 26,
+  "cases": [
+    {
+      "id": "A",
+      "name": "single direct review",
+      "status": "PASS"
+    },
+    {
+      "id": "B",
+      "name": "multi-review routes to one exact skill",
+      "status": "PASS"
+    },
+    {
+      "id": "C",
+      "name": "mixed multi-review evidence is capped at two",
+      "status": "PASS"
+    },
+    {
+      "id": "D",
+      "name": "family direct child evidence",
+      "status": "PASS"
+    },
+    {
+      "id": "E",
+      "name": "family repair-skill evidence",
+      "status": "PASS"
+    },
+    {
+      "id": "F",
+      "name": "family primary-skill evidence",
+      "status": "PASS"
+    },
+    {
+      "id": "G",
+      "name": "family objective evidence",
+      "status": "PASS"
+    },
+    {
+      "id": "H",
+      "name": "family ambiguity uses ordered chooser",
+      "status": "PASS"
+    },
+    {
+      "id": "I",
+      "name": "integration meta concept has no generic review",
+      "status": "PASS"
+    },
+    {
+      "id": "J",
+      "name": "hidden supplemental never renders",
+      "status": "PASS"
+    },
+    {
+      "id": "K",
+      "name": "clean run suppresses Concept Review",
+      "status": "PASS"
+    },
+    {
+      "id": "L",
+      "name": "missing runtime manifest degrades gracefully",
+      "status": "PASS"
+    },
+    {
+      "id": "M",
+      "name": "malformed runtime manifest degrades gracefully",
+      "status": "PASS"
+    },
+    {
+      "id": "N",
+      "name": "unsafe paths are rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "O",
+      "name": "canonical GEN-ECON-01 fixture exists and remains visible",
+      "status": "PASS"
+    },
+    {
+      "id": "P",
+      "name": "one generated build supports all ten modes without engine mutation",
+      "status": "PASS"
+    },
+    {
+      "id": "Q",
+      "name": "new Micro concepts resolve to exact dedicated reviews",
+      "status": "PASS"
+    },
+    {
+      "id": "R",
+      "name": "exact diagnostic aliases stay inside their canonical Micro concept",
+      "status": "PASS"
+    },
+    {
+      "id": "S",
+      "name": "legacy Public Goods tag repairs a missing canonical signal without broad fallback",
+      "status": "PASS"
+    },
+    {
+      "id": "T",
+      "name": "ambiguous objective alone does not trigger a broad Concept Review fallback",
+      "status": "PASS"
+    },
+    {
+      "id": "U",
+      "name": "legacy Market Failures recipe migration retains compatibility and dedicated children",
+      "status": "PASS"
+    },
+    {
+      "id": "V",
+      "name": "information parent packages all nine focused reviews",
+      "status": "PASS"
+    },
+    {
+      "id": "W",
+      "name": "objective and production-skill evidence routes six exact information topics",
+      "status": "PASS"
+    },
+    {
+      "id": "X",
+      "name": "current combined-bias questions route present bias and loss aversion exactly",
+      "status": "PASS"
+    },
+    {
+      "id": "Y",
+      "name": "exact framing aliases route without treating broad behavioral evidence as framing",
+      "status": "PASS"
+    },
+    {
+      "id": "Z",
+      "name": "unmatched broad parent and ambiguous objectives do not select an arbitrary sheet",
+      "status": "PASS"
+    }
+  ]
+}

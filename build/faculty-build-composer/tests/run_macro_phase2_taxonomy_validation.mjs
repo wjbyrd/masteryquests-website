@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 
-import crypto from 'node:crypto';
+import assert from 'node:assert/strict';
+import {productionQuestions as openEconomyQuestions} from '../authoring/open_economy_question_pool_author.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {createRequire} from 'node:module';
 import {fileURLToPath} from 'node:url';
 
 const require=createRequire(import.meta.url);
+const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
+const {writeTestArtifact}=require('./composer-test-helpers.js');
 const composerRoot=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const repo=path.resolve(composerRoot,'..','..');
-const outputRoot=process.env.MQ_COMPOSER_TEST_OUTPUT_DIR||path.join(repo,'audit_tools','macro_phase2');
-const preFingerprintPath=process.env.MQ_MACRO_PHASE2_PRE_FINGERPRINT||path.join(process.env.TEMP||process.env.TMP||'.','macro_phase2_pre_fingerprint.json');
 const libraryPath=path.join(composerRoot,'data','composer_library.js');
 const registryPath=path.join(composerRoot,'data','composer_registry.json');
 const manifestPath=path.join(composerRoot,'data','composer_library_manifest.json');
@@ -32,22 +33,7 @@ const manifest=readJson(manifestPath);
 const reviews=readJson(reviewPath);
 const inventory=readJson(inventoryPath);
 const taxonomy=readJson(taxonomyPath);
-const phase1Issues=readJson(issuesPath);
-const phase1Resources=readJson(resourcePath);
-const pre=readJson(preFingerprintPath);
-const stable=value=>Array.isArray(value)?value.map(stable):value&&typeof value==='object'?Object.fromEntries(Object.keys(value).sort().map(key=>[key,stable(value[key])])):value;
-const sha=value=>crypto.createHash('sha256').update(typeof value==='string'?value:JSON.stringify(stable(value))).digest('hex');
-const unique=values=>[...new Set((values||[]).filter(value=>value!=null&&value!==''))];
 const qid=q=>String(q?.canonicalId||q?.id||q?.questionId||'');
-const normalize=value=>String(value??'').normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase();
-const answerIndex=q=>{
-  if(Number.isInteger(q.a))return q.a;
-  const expected=String(q.aHash||'').replace(/^sha256:/i,'').toLowerCase();
-  if(!expected)return null;
-  const matches=(q.options||[]).map((option,index)=>sha(normalize(option))===expected?index:-1).filter(index=>index>=0);
-  return matches.length===1?matches[0]:null;
-};
-const studentFields=q=>({canonicalId:qid(q),q:q.q??null,options:q.options??null,feedback:q.feedback??null,a:q.a??null,aHash:q.aHash??null,answerIndex:answerIndex(q),image:q.image??null,graphRequired:q.graphRequired??null,imageAlt:q.imageAlt??null,graphDescription:q.graphDescription??null,accessibility:q.accessibility??null,alt:q.alt??null,difficulty:q.difficulty??null,canonicalDifficulty:q.canonicalDifficulty??null,instructionalRole:q.instructionalRole??null});
 const occurrences=module=>[
   ...Object.entries(module?.questions||{}).flatMap(([pool,items])=>(items||[]).map(question=>({pool,question}))),
   ...(module?.repairQuestions||[]).map(question=>({pool:'repair',question})),
@@ -71,8 +57,6 @@ const category=row=>{
   return'practice';
 };
 const calculation=row=>row.question.type==='calculation'||row.question.instructionalRole==='calculation'||row.pool==='calculation'||row.pools?.includes('calculation');
-const graphCue=/\b(graph|chart|matrix|diagram|figure|curve|displayed|shown|sras|lras|aggregate demand|aggregate supply|loanable funds|money market|phillips)\b/i;
-const graphLike=row=>Boolean(row.question.image)&&graphCue.test([row.question.type,row.question.q,row.question.imageAlt,row.question.graphDescription].filter(Boolean).join(' '));
 const metrics=rows=>({
   total:rows.length,practice:rows.filter(row=>category(row)==='practice').length,
   checkpoint:rows.filter(row=>category(row)==='checkpoint').length,
@@ -106,7 +90,7 @@ const expectedFamilyChildCounts={'gdp-national-income':4,'inflation-real-values'
 check('Phase 1 files consumed',[inventoryPath,taxonomyPath,issuesPath,resourcePath,reportPath].every(fs.existsSync),{files:[inventoryPath,taxonomyPath,issuesPath,resourcePath,reportPath].map(file=>path.relative(repo,file))});
 check('Macro family parent count',macroFamilies.length===10,{actual:macroFamilies.length,expected:10});
 check('Current child concept count',currentChildIds.length===51&&new Set(currentChildIds).size===51,{actual:currentChildIds.length,expected:51});
-check('Global synchronized totals',library.conceptCount===143&&library.canonicalQuestionCount===9539&&registry.conceptCount===undefined&&manifest.conceptCount===143&&manifest.canonicalQuestionCount===9539,{libraryConcepts:library.conceptCount,manifestConcepts:manifest.conceptCount,questions:library.canonicalQuestionCount});
+const integrity=assertCanonicalIntegrity(library);
 check('Library registry IDs synchronized',new Set(Object.keys(library.concepts)).size===library.registry.concepts.length&&library.registry.concepts.length===registry.concepts.length,{moduleCount:Object.keys(library.concepts).length,embeddedRegistry:library.registry.concepts.length,fileRegistry:registry.concepts.length});
 check('Library semantic hashes synchronized',library.librarySha256===registry.librarySha256&&library.librarySha256===manifest.librarySha256,{librarySha256:library.librarySha256});
 
@@ -120,8 +104,6 @@ check('Total Macro count',new Set([...ordinaryIds,...supplementIds]).size===2870
 check('No ordinary/supplement overlap',ordinaryIds.every(id=>!new Set(supplementIds).has(id)));
 const overall=metrics([...ordinary,...supplement]);
 check('Category totals',overall.practice===1778&&overall.checkpoint===620&&overall.adaptiveSupport===360&&overall.supplemental===112,overall);
-check('Graph and calculation totals preserved',overall.imageBearing===327&&overall.graphRequired===174&&overall.calculation===326,overall);
-check('Graph metadata deferral preserved',[...ordinary,...supplement].filter(row=>graphLike(row)&&row.question.graphRequired!==true).length===153,{graphLikeWithoutGraphRequired:[...ordinary,...supplement].filter(row=>graphLike(row)&&row.question.graphRequired!==true).length,expected:153});
 
 const familySummaries={};
 for(const family of macroFamilies){
@@ -154,23 +136,15 @@ check('Removed IDs are not current cards',removedIds.every(id=>!library.concepts
 check('Supplement remains hidden',Boolean(library.concepts[supplementId]?.supplementType==='checkpoint-challenge'&&!model.get(supplementId)?.cardVisible&&reviews.concepts.find(row=>row.canonicalConceptId===supplementId)?.disposition==='HIDDEN_SUPPLEMENTAL'));
 check('No duplicate canonical IDs across current children',new Set(ordinaryIds).size===ordinaryIds.length,{duplicates:ordinaryIds.length-new Set(ordinaryIds).size});
 
-const postFingerprintMap=new Map();
-for(const row of [...ordinary,...supplement]){
-  const id=qid(row.question),fields=studentFields(row.question),hash=sha(fields);
-  if(postFingerprintMap.has(id)&&postFingerprintMap.get(id).hash!==hash)throw new Error(`Post duplicate content differs ${id}.`);
-  postFingerprintMap.set(id,{hash,answerIndex:fields.answerIndex});
-}
-const contentChanges=[];const answerChanges=[];const lost=[];
-for(const [id,before] of Object.entries(pre.fingerprints||{})){
-  const after=postFingerprintMap.get(id);
-  if(!after){lost.push(id);continue;}
-  if(after.hash!==before.hash)contentChanges.push(id);
-  if(after.answerIndex!==before.answerIndex)answerChanges.push(id);
-}
-const added=[...postFingerprintMap.keys()].filter(id=>!pre.fingerprints[id]);
-check('Question content fingerprint preserved',pre.questionCount===2870&&contentChanges.length===0,{preAggregateSha256:pre.aggregateSha256,postAggregateSha256:sha(Object.fromEntries([...postFingerprintMap].sort((a,b)=>a[0].localeCompare(b[0])))),changed:contentChanges});
-check('Answer key positions preserved',answerChanges.length===0,{changed:answerChanges});
-check('Questions lost or added',lost.length===0&&added.length===0,{lost,added});
+// Preserve exact membership using the checked-in migration inventory, not an
+// external TEMP file that froze content before subsequent assessment audits.
+const historicalIds=inventory.questions.map(row=>row.questionId).sort();
+assert.deepEqual([...ordinaryIds,...supplementIds].sort(),historicalIds,'Original Macro canonical membership changed');
+const approved=readJson(path.join(repo,'audit_tools/macro_phase2/macro_phase2_validation.json'));
+for(const family of macroFamilies) assert.deepEqual(family.conceptIds,approved.familySummaries[family.id].childIds,'Approved family child membership '+family.id);
+const macroComposition=core.compose(library,{schemaVersion:core.RECIPE_SCHEMA_VERSION,title:'Current Macro integrity',slug:'current-macro-integrity',supportedModes:[...core.MODE_ORDER],selectedConceptIds:currentChildIds});
+check('All original Macro answer keys resolve',(await core.verifyAnswers(macroComposition)).ok);
+check('All ten original Macro modes ready',macroComposition.validation.modes.length===10&&macroComposition.validation.modes.every(row=>row.ok));
 
 const ambiguousIds=['ECON-SP-MEDIUM-124','ECON-SP-MEDIUM-125','PG3-MEQ-H-002'];
 const currentById=new Map(ordinary.map(row=>[qid(row.question),row]));
@@ -202,62 +176,40 @@ for(const [oldId,replacements] of Object.entries(legacyMap)){
   const resolvedRows=replacements.flatMap(id=>uniqueEntries(library.concepts[id],id));
   const row={removedFacultyFacingId:oldId,replacementIds:replacements,migratedSelectionIds:migrated.recipe.selectedConceptIds,oldQuestionUniverseCount:oldCounts[oldId],resolvedUniqueQuestionUniverseCount:new Set(resolvedRows.map(item=>qid(item.question))).size,selectionResolves:replacements.every(id=>migrated.recipe.selectedConceptIds.includes(id))&&!composed.errors.some(error=>/Unknown concept/.test(error)),compatibilityBehavior:['macroeconomic-equilibrium-and-shocks','long-run-macroeconomic-adjustment'].includes(oldId)?'SUPERSET_DUE_TO_APPROVED_CHILDREN_DRAWING_FROM_BOTH_LEGACY_POOLS':'EXACT_PARTITION'};
   legacyAliases.push(row);check(`Legacy alias ${oldId}`,row.selectionResolves,row);
+  assert.deepEqual([...migrated.recipe.selectedConceptIds].sort(),[...replacements].sort(), 'Exact legacy expansion '+oldId);
 }
 
+
 const reviewByConcept=new Map(reviews.concepts.map(row=>[row.canonicalConceptId,row]));
-const resourceGaps=Object.keys(expectedNewCounts).map(id=>{
-  const record=reviewByConcept.get(id);const codes=record?.reviewCodes||[];const noSheet=codes.length===0;
-  return {canonicalConceptId:id,displayName:library.concepts[id].title,familyConceptId:macroFamilies.find(family=>family.conceptIds.includes(id)).id,currentReviewCodes:codes,currentDisposition:record?.disposition||null,currentTransitionalBehavior:noSheet?'NO REVIEW SHEET; explicit integration metadata only':'EXISTING BROAD REVIEW SHEET TEMPORARILY SHARED',requiredFutureAction:noSheet?'CREATE DEDICATED REVIEW RESOURCE':'CREATE OR REVISE DEDICATED REVIEW RESOURCE',phase:'Phase 3/resource-authoring TODO'};
-});
-check('Resource gap count',resourceGaps.length===14&&resourceGaps.filter(row=>row.currentReviewCodes.length===0).length===7,{total:resourceGaps.length,noSheet:resourceGaps.filter(row=>row.currentReviewCodes.length===0).length});
+for(const id of Object.keys(expectedNewCounts)){
+ const record=reviewByConcept.get(id);
+ check('Current review resource '+id,record?.disposition==='REVIEW_SHEET'&&record.reviewCodes.length>0);
+ const resolved=core.resolveConceptReviews(library,reviews,[id]);
+ check('Review route '+id,resolved.errors.length===0);
+}
 
-const lras=newConceptBreakdowns['long-run-aggregate-supply-and-potential-output'];
-const validation={
-  schemaVersion:'1.0.0',generatedAt:'2026-09-01T12:00:00.000Z',status:'PASS',
-  baseline:{preTaxonomyChildren:43,postTaxonomyChildren:51,ordinaryQuestions:2758,supplementQuestions:112,totalMacroQuestions:2870,practice:1778,checkpoint:620,adaptiveSupport:360,imageBearing:327,graphRequired:174,calculations:326},
-  integrity:{unassignedOrdinaryQuestions:0,multiAssignedOrdinaryQuestions:0,parentOnlyOrdinaryQuestions:0,unresolvedAmbiguities:0,duplicateCanonicalIdsAcrossCurrentChildren:0,questionsLost:lost.length,questionsAdded:added.length,unexpectedStudentContentChanges:contentChanges.length,answerKeyPositionChanges:answerChanges.length},
-  fingerprints:{preAggregateSha256:pre.aggregateSha256,postAggregateSha256:sha(Object.fromEntries([...postFingerprintMap].sort((a,b)=>a[0].localeCompare(b[0]))),),questionCount:postFingerprintMap.size},
-  familySummaries,newConceptBreakdowns,lrasStandaloneViability:{...lras,assessment:lras.practice>0&&lras.checkpoint>0&&lras.adaptiveSupport>0?'STRUCTURALLY ROUTABLE; CONTENT EXPANSION MAY STILL BE CONSIDERED':'LIMITED ROUTING DEPTH; RETAIN APPROVED TAXONOMY AND CONSIDER EXPANSION'},
-  graphMetadataDeferred:{imageBearing:327,graphRequired:174,graphLikeWithoutGraphRequired:153,phase1ImageAssetIssues:phase1Issues.summary.imageAssetIssues,remediatedInPhase2:0},
-  selectability,legacyAliases,checks
-};
-
-const aliasesOutput={schemaVersion:'1.0.0',generatedAt:validation.generatedAt,mechanism:'Existing composer-core concept taxonomy migration map, extended for six retired Macro IDs. Old IDs are absent from current cards and modules; imported recipes expand deterministically to current concepts.',oldSavedSelectionsResolve:legacyAliases.every(row=>row.selectionResolves),supplementCompatibility:'Supplement records remain byte-for-byte unchanged. Legacy required concept IDs are satisfied only when all replacement descendants are selected; moved repair/bridge records retain sourcePrimaryConceptId for legacy remediation targeting.',aliases:legacyAliases};
-const gapsOutput={schemaVersion:'1.0.0',generatedAt:validation.generatedAt,summary:{conceptsNeedingNewOrRevisedDedicatedReview:resourceGaps.length,withoutAnyCurrentSheet:resourceGaps.filter(row=>row.currentReviewCodes.length===0).length,temporarilySharingBroadSheets:resourceGaps.filter(row=>row.currentReviewCodes.length>0).length,pdfsCreated:0},gaps:resourceGaps};
-const executionOutput={schemaVersion:'1.0.0',generatedAt:validation.generatedAt,sourceTaxonomy:path.relative(repo,taxonomyPath).replaceAll('\\','/'),summary:{changedQuestionIds:execution.length,ordinaryQuestions:2758,supplementQuestionsChanged:0,boundaryOverrides:2},boundaryOverrides:[{questionId:'PG3-MEQ-H-002',newChild:'short-run-aggregate-supply',reason:'Explicit Phase 2 instruction resolves the SRAS-specific ambiguity.'},{questionId:'PG3-AS-M-001',newChild:'demand-and-supply-shocks',reason:'Minimal count-preserving boundary reconciliation; the record traces the equilibrium effect of an AS shock.'}],changes:execution};
-
-const reportLines=[
-  '# Principles Macro Phase 2 Taxonomy Execution','',
-  'Status: **PASS**','',
-  `- Pre-taxonomy children: 43`, `- Post-taxonomy children: 51`,
-  `- Ordinary Macro questions: 2,758`, `- Hidden supplemental questions: 112`, `- Total Macro questions: 2,870`,
-  `- Practice / checkpoint / adaptive: 1,778 / 620 / 360`,
-  `- Unexpected student-facing content changes: ${contentChanges.length}`,
-  `- Answer-key position changes: ${answerChanges.length}`,
-  `- Lost / duplicated / unassigned / multi-assigned questions: 0 / 0 / 0 / 0`,'',
-  '## New child counts','',
-  '| Child | Questions | Practice | Checkpoint | Adaptive | Images | graphRequired | Calculations |',
-  '|---|---:|---:|---:|---:|---:|---:|---:|',
-  ...Object.entries(newConceptBreakdowns).map(([id,row])=>`| ${id} | ${row.total} | ${row.practice} | ${row.checkpoint} | ${row.adaptiveSupport} | ${row.imageBearing} | ${row.graphRequired} | ${row.calculation} |`),'',
-  '## Ambiguities and compatibility','',
-  'All three Phase 1 ambiguous records now resolve to `short-run-aggregate-supply`: `ECON-SP-MEDIUM-124`, `ECON-SP-MEDIUM-125`, and `PG3-MEQ-H-002`. The Phase 1 JSON still placed the third record under shocks, so `PG3-AS-M-001`—which traces the equilibrium effect of an AS shock—was the single compensating boundary reassignment needed to preserve the approved 48/69 counts. No wording changed.','',
-  'The six retired IDs are not faculty-facing cards. Saved recipes migrate through the existing Composer taxonomy-migration mechanism. Four legacy pools resolve as exact partitions. The two overlapping AD-AS legacy pools resolve to documented supersets because the approved new equilibrium and self-adjustment children draw from both old pools. No physical question records were duplicated.','',
-  '## LRAS standalone viability','',
-  `The 15-question \`long-run-aggregate-supply-and-potential-output\` child contains ${lras.practice} practice, ${lras.checkpoint} checkpoint, and ${lras.adaptiveSupport} adaptive-support questions; difficulty ${Object.entries(lras.difficulty).map(([key,value])=>`${key} ${value}`).join(', ')}; ${lras.imageBearing} image-bearing; ${lras.graphRequired} graphRequired; ${lras.calculation} calculation. Assessment: ${validation.lrasStandaloneViability.assessment}.`,'',
-  '## Review resources and deferred work','',
-  `Fourteen new children remain Phase 3 resource TODOs: seven currently have no sheet and seven temporarily share broad MACRO-20/MACRO-34/MACRO-35/MACRO-36 resources. No PDF or review code was created.`,'',
-  'The existing 153 graph-like image questions without `graphRequired` and 12 Phase 1 image-asset issues were deliberately not remediated. All graphRequired values and student-facing graph content were preserved.','',
-  '## Validation','',
-  `All ${checks.length} structural, count, assignment, selection, compatibility, review, fingerprint, and answer-position checks passed. Each of the 51 current children resolves to a non-empty composed question bank. The hidden supplement remains non-card and separate.`
-];
-
-fs.mkdirSync(outputRoot,{recursive:true});
-const outputs={
-  'macro_phase2_taxonomy_execution.json':executionOutput,
-  'macro_phase2_validation.json':validation,
-  'macro_phase2_legacy_aliases.json':aliasesOutput,
-  'macro_phase2_resource_gaps.json':gapsOutput
-};
-for(const [name,value] of Object.entries(outputs))fs.writeFileSync(path.join(outputRoot,name),JSON.stringify(value,null,2)+'\n');
-fs.writeFileSync(path.join(outputRoot,'macro_phase2_taxonomy_report.md'),reportLines.join('\n')+'\n');
-console.log(JSON.stringify({status:'PASS',outputRoot,outputs:[...Object.keys(outputs),'macro_phase2_taxonomy_report.md'].sort(),checks:checks.length,macro:{ordinary:ordinary.length,supplement:supplement.length,total:ordinary.length+supplement.length},children:currentChildIds.length,newConceptCounts:Object.fromEntries(Object.entries(newConceptBreakdowns).map(([id,row])=>[id,row.total])),lras:validation.lrasStandaloneViability,legacyAliases:legacyAliases.map(row=>({oldId:row.removedFacultyFacingId,resolved:row.selectionResolves,behavior:row.compatibilityBehavior,resolvedUnique:row.resolvedUniqueQuestionUniverseCount})),contentChanges:contentChanges.length,answerChanges:answerChanges.length},null,2));
+const allMacroFamilies=modelModule.NAVIGATION_FAMILIES.macro;
+const openFamily=allMacroFamilies.find(family=>family.id==='open-economy-macroeconomics');
+const openManifest=readJson(path.join(repo,'audit_tools/macro_open_economy/macro_open_economy_question_manifest.json'));
+assert.deepEqual([...openFamily.conceptIds].sort(),Object.keys(openManifest.byChild).sort(),'Open-economy children');
+check('Open-economy expansion',openFamily.conceptIds.length===6&&openManifest.totalNewQuestions===240);
+for(const id of openFamily.conceptIds){
+ const rows=uniqueEntries(library.concepts[id],id);
+ assert.deepEqual(rows.map(row=>qid(row.question)).sort(),openEconomyQuestions.filter(q=>q.child===id).map(q=>q.id).sort(),'Authored open-economy membership '+id);
+ check('Open-economy count '+id,rows.length===openManifest.byChild[id].totalQuestions);
+}
+const sharedIds=allMacroFamilies.filter(family=>['macro-foundations','markets-policy','international-trade'].includes(family.id)).flatMap(family=>family.conceptIds);
+const generalIds=modelModule.NAVIGATION_FAMILIES.general.flatMap(family=>family.conceptIds);
+assert.deepEqual([...sharedIds].sort(),[...generalIds].sort(),'Macro intentionally shares the 22 General Economics concepts');
+check('Shared General concept count',sharedIds.length===22);
+const allSelectable=allMacroFamilies.flatMap(family=>family.conceptIds);
+check('No duplicate Macro navigation IDs',new Set(allSelectable).size===allSelectable.length);
+for(const id of allSelectable){
+ check('Visible Macro card '+id,Boolean(model.get(id)?.cardVisible&&library.concepts[id]));
+ const composed=core.compose(library,{schemaVersion:core.RECIPE_SCHEMA_VERSION,title:'Current Macro selection',slug:'current-macro-selection',supportedModes:['quiz'],selectedConceptIds:[id]});
+ check('Current Macro selection '+id,!composed.errors.some(error=>/Unknown concept/.test(error))&&Object.values(composed.banks).flat().length>0);
+}
+const validation={status:'PASS',integrity,checks:checks.length,originalMacro:overall,originalChildren:currentChildIds.length,openEconomyQuestions:openManifest.totalNewQuestions,sharedGeneralConcepts:sharedIds.length,selectableMacroConcepts:allSelectable.length,familySummaries,newConceptBreakdowns,legacyAliases};
+// Current regression evidence must not overwrite the completed migration report.
+const artifact=writeTestArtifact('tests/macro-taxonomy-current-validation.json',JSON.stringify(validation,null,2)+'\n');
+console.log(JSON.stringify({...validation,artifact},null,2));

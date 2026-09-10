@@ -1,0 +1,750 @@
+PASS run_faculty_outcome_validation.js
+PASS run_content_scope_validation.js
+PASS run_default_character_set_validation.js
+PASS run_exam_navigation_boss_reveal_validation.js
+PASS run_checkpoint_artifact_exam_integrity_validation.js
+PASS run_guide_intro_validation.js
+PASS run_phase1_targeted_repair_validation.js
+PASS run_phase15_production_hardening_validation.js
+PASS run_visibility_aware_telemetry_validation.js
+PASS run_generated_telemetry_smoke.js
+PASS run_phase3a_official_theme_validation.js
+PASS run_phase3b_custom_asset_validation.js
+FAIL run_phase3e_graph_question_sync_validation.mjs
+{
+  "phase": "phase3e-market-gate-graph-sync-v1",
+  "ok": false,
+  "composerVersion": "4.5s.3k",
+  "recipeSchemaVersion": "1.6.0",
+  "canonicalQuestionCount": 9779,
+  "synchronizedQuestions": 48,
+  "difficulty": {
+    "medium": 7,
+    "hard": 16,
+    "elite": 20,
+    "legendary": 5
+  },
+  "types": {
+    "graph_calculation": 11,
+    "graph_interpretation": 10,
+    "graph_integration": 17,
+    "graph_trap": 10
+  },
+  "conceptIds": [
+    "production-possibilities-frontier",
+    "supply",
+    "demand",
+    "market-equilibrium",
+    "binding-price-ceilings",
+    "binding-price-floors",
+    "tax-wedges-and-revenue",
+    "tax-incidence",
+    "statutory-versus-economic-tax-incidence"
+  ],
+  "phaseAssetRegistrations": 21,
+  "physicalAssetsCopied": 0,
+  "cleanedGraphs": 11,
+  "generatedBytes": 7482214,
+  "inlineScripts": 1,
+  "generatedArtifact": "C:\\Users\\Jennings\\AppData\\Local\\Temp\\mq-active-composer-tests-wpMzT3\\tests\\phase3e-market-gate-sample.html",
+  "modes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "issues": [
+    "Canonical count 9779",
+    "Manifest canonical count 9779",
+    "Canonical copy changed 40005",
+    "Answer hash 40005",
+    "Canonical copy changed 40010",
+    "Answer hash 40010",
+    "Canonical copy changed 40014",
+    "Answer hash 40014",
+    "Canonical copy changed 40016",
+    "Answer hash 40016",
+    "Canonical copy changed 40017",
+    "Answer hash 40017",
+    "Canonical copy changed 40029",
+    "Answer hash 40029",
+    "Canonical copy changed 40033",
+    "Canonical copy changed 40036",
+    "Canonical copy changed 40039",
+    "Canonical copy changed 40040",
+    "Canonical copy changed 40041",
+    "Answer hash 40041",
+    "Canonical copy changed 40045",
+    "Canonical copy changed 40046",
+    "Answer hash 40046"
+  ]
+}
+FAIL run_question_quality_auditor_validation.mjs
+FAIL run_macro_phase2_taxonomy_validation.mjs
+PASS run_checkpoint_remediation_design_change_validation.mjs
+PASS run_concept_review_integration.js
+PASS run_mastery_report_concept_reviews.js
+FAIL run_mastery_report_2_validation.js
+{
+  "phase": "mastery-report-2.0",
+  "ok": false,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9779,
+  "evidenceCases": {
+    "tiny": {
+      "key": "limited",
+      "label": "Limited Evidence",
+      "explanation": "The result may be accurate, but there are too few scored attempts to make a strong mastery claim.",
+      "exposure": {
+        "counts": {
+          "foundational": 2,
+          "intermediate": 0,
+          "advanced": 0,
+          "highChallenge": 0,
+          "support": 0
+        },
+        "hardestRank": 1,
+        "challengeBands": 1
+      }
+    },
+    "developing": {
+      "key": "developing",
+      "label": "Developing Evidence",
+      "explanation": "The evidence is growing, but more repeated attempts or broader difficulty exposure would make the diagnosis stronger.",
+      "exposure": {
+        "counts": {
+          "foundational": 4,
+          "intermediate": 3,
+          "advanced": 0,
+          "highChallenge": 0,
+          "support": 0
+        },
+        "hardestRank": 2,
+        "challengeBands": 2
+      }
+    },
+    "mastered": {
+      "key": "mastery",
+      "label": "Mastery Demonstrated",
+      "explanation": "Enough repeated evidence, strong accuracy, and advanced-or-harder exposure support a mastery claim.",
+      "exposure": {
+        "counts": {
+          "foundational": 6,
+          "intermediate": 6,
+          "advanced": 8,
+          "highChallenge": 0,
+          "support": 0
+        },
+        "hardestRank": 3,
+        "challengeBands": 3
+      }
+    },
+    "weakStrong": {
+      "key": "strong",
+      "label": "Strong Evidence",
+      "explanation": "There is enough evidence to trust the diagnosis. This label describes evidence strength, not whether performance was high or low.",
+      "exposure": {
+        "counts": {
+          "foundational": 8,
+          "intermediate": 7,
+          "advanced": 5,
+          "highChallenge": 0,
+          "support": 0
+        },
+        "hardestRank": 3,
+        "challengeBands": 3
+      }
+    }
+  },
+  "battleMenu": {
+    "exam": {
+      "confirmEndPractice": 1,
+      "showGameModal": 0,
+      "saved": 0,
+      "timedEarly": 0,
+      "returned": 0
+    },
+    "unlimited": {
+      "confirmEndPractice": 1,
+      "showGameModal": 0,
+      "saved": 0,
+      "timedEarly": 0,
+      "returned": 0
+    },
+    "standard": {
+      "confirmEndPractice": 0,
+      "showGameModal": 1,
+      "saved": 1,
+      "timedEarly": 0,
+      "returned": 1
+    }
+  },
+  "manualEnd": {
+    "exam": {
+      "marked": 0,
+      "report": 1,
+      "event": "exam_ended_by_student",
+      "preserveResultsHTML": true
+    },
+    "unlimited": {
+      "marked": 0,
+      "report": 1,
+      "event": "unlimited_ended_by_student",
+      "preserveResultsHTML": true
+    }
+  },
+  "sourceChecks": {
+    "evidenceLabels": true,
+    "difficultyCapture": true,
+    "battleMenuFunnelsPractice": true,
+    "reportDestination": true,
+    "evidenceSection": true,
+    "copyIncludesEvidence": true
+  },
+  "sevenModeValidation": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    }
+  ],
+  "issues": [
+    "canonical 9779"
+  ]
+}
+PASS run_mastery_report_state_leak_hotfix.js
+PASS run_mode_availability_fix.js
+PASS run_quiz_mode_validation.js
+FAIL run_unlimited_practice_validation.js
+{
+  "phase": "unlimited-practice-and-exam-manual-exit-v1",
+  "ok": false,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9779,
+  "supportedModes": [
+    "standard",
+    "timed",
+    "exam",
+    "quiz",
+    "unlimited",
+    "legendary",
+    "score",
+    "trialGraph",
+    "fadingFortune",
+    "riskReward"
+  ],
+  "unlimitedValidation": {
+    "ok": true,
+    "requirements": [
+      {
+        "pool": "easy",
+        "minimum": 6,
+        "count": 50
+      },
+      {
+        "pool": "medium",
+        "minimum": 6,
+        "count": 51
+      },
+      {
+        "pool": "hard",
+        "minimum": 6,
+        "count": 73
+      },
+      {
+        "pool": "repair",
+        "minimum": 1,
+        "count": 30
+      },
+      {
+        "pool": "bridge",
+        "minimum": 1,
+        "count": 31
+      }
+    ]
+  },
+  "difficultySequence": [
+    {
+      "room": 1,
+      "difficulty": "easy"
+    },
+    {
+      "room": 10,
+      "difficulty": "easy"
+    },
+    {
+      "room": 11,
+      "difficulty": "medium"
+    },
+    {
+      "room": 20,
+      "difficulty": "medium"
+    },
+    {
+      "room": 21,
+      "difficulty": "hard"
+    },
+    {
+      "room": 30,
+      "difficulty": "hard"
+    }
+  ],
+  "practiceControlVisibility": {
+    "exam": "flex",
+    "unlimited": "flex",
+    "quiz": "none",
+    "standard": "none",
+    "endedUnlimited": "none"
+  },
+  "manualEndSimulation": {
+    "exam": {
+      "examMarked": 0,
+      "reportShown": 1,
+      "telemetryEvent": "exam_ended_by_student",
+      "runEnding": true,
+      "sessionBegun": 1
+    },
+    "unlimited": {
+      "examMarked": 0,
+      "reportShown": 1,
+      "telemetryEvent": "unlimited_ended_by_student",
+      "runEnding": true,
+      "sessionBegun": 1
+    }
+  },
+  "checks": {
+    "unlimitedCard": true,
+    "endPracticeButton": true,
+    "endControlIncludesExam": true,
+    "confirmFlow": true,
+    "directReport": true,
+    "cycleRollover": true,
+    "noUnlimitedBosses": true,
+    "examEarlyCompletionGuard": true,
+    "manualTelemetry": true,
+    "masteryLabel": true,
+    "composerLabel": true,
+    "composerDescription": true,
+    "configOnlyUnlimited": true
+  },
+  "generatedHtmlBytes": 1719179,
+  "issues": [
+    "canonical question count changed to 9779"
+  ]
+}
+FAIL run_trial_by_graph_validation.js
+{
+  "phase": "mode8-trial-by-graph-v1",
+  "ok": false,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9779,
+  "auditedIds": 612,
+  "graphRequiredFlagged": 1077,
+  "examples": {
+    "perfectCompetition": 76,
+    "demand": 25,
+    "aggregateDemand": 12,
+    "bankMoneyCreation": 0
+  },
+  "generatedGraphIntegrity": {
+    "brokenRejected": true,
+    "omittedRejected": true,
+    "validAccepted": true,
+    "representativeConcepts": [
+      "demand",
+      "supply",
+      "market-equilibrium",
+      "production-possibilities-frontier"
+    ],
+    "graphQuestions": 115,
+    "assets": 20,
+    "smokeQuestions": 10,
+    "smokeAssets": 9,
+    "smokeIds": [
+      "40006",
+      "PG1-DMD-L-002",
+      "40020",
+      "40000",
+      "PG1-DMD-E-001",
+      "PG1-SUP-E-001",
+      "PG1-EQ-E-001",
+      "40003",
+      "40009",
+      "40018"
+    ]
+  },
+  "supportedTargets": {
+    "perfectCompetition": [
+      10,
+      15,
+      20
+    ],
+    "demand": [
+      10,
+      15,
+      20
+    ],
+    "aggregateDemand": [
+      10
+    ]
+  },
+  "allEightModes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "issues": [
+    "canonical count 9779",
+    "graphRequired count 1077",
+    "flags outside audited set 22"
+  ]
+}
+FAIL run_fading_fortune_validation.js
+{
+  "phase": "mode9-fading-fortune-v1",
+  "ok": false,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9779,
+  "perfectCompetitionEligible": 383,
+  "byDifficulty": {
+    "easy": 76,
+    "medium": 78,
+    "hard": 85,
+    "elite": 44,
+    "legendary": 100
+  },
+  "supportedTargets": {
+    "perfectCompetition": [
+      10,
+      15,
+      20
+    ],
+    "integratedEconomicAnalysis": [
+      10
+    ],
+    "competitiveMarkets": [
+      10,
+      15
+    ]
+  },
+  "allNineModes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "sourceChecks": {
+    "card": true,
+    "setup": true,
+    "hud": true,
+    "decay": true,
+    "correctProtected": true,
+    "answerFreeze": true,
+    "graphPause": true,
+    "visibilityPause": true,
+    "modalPause": true,
+    "rapidPause": true,
+    "noRemediation": true,
+    "fixedCompletion": true,
+    "report": true,
+    "telemetry": true
+  },
+  "issues": [
+    "canonical count 9779"
+  ]
+}
+FAIL run_risk_reward_validation.js
+{
+  "phase": "mode10-risk-reward-v1",
+  "ok": false,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9779,
+  "perfectCompetitionEligible": 383,
+  "byDifficulty": {
+    "easy": 76,
+    "medium": 78,
+    "hard": 85,
+    "elite": 44,
+    "legendary": 100
+  },
+  "supportedTargets": {
+    "perfectCompetition": [
+      10,
+      15,
+      20
+    ],
+    "integratedEconomicAnalysis": [
+      10
+    ],
+    "competitiveMarkets": [
+      10,
+      15
+    ]
+  },
+  "allTenModes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "configRiskReward": {
+    "enabled": true,
+    "startingBankroll": 1000,
+    "wagerOptions": [
+      {
+        "label": "10%",
+        "ratio": 0.1
+      },
+      {
+        "label": "25%",
+        "ratio": 0.25
+      },
+      {
+        "label": "50%",
+        "ratio": 0.5
+      },
+      {
+        "label": "ALL IN",
+        "ratio": 1
+      }
+    ],
+    "allowedTargets": [
+      10,
+      15,
+      20
+    ]
+  },
+  "sourceChecks": {
+    "card": true,
+    "setup": true,
+    "hud": true,
+    "hiddenUntilWager": true,
+    "settlementGuard": true,
+    "allInBust": true,
+    "noRemediation": true,
+    "fixedCompletion": true,
+    "mastery": true,
+    "telemetry": true,
+    "bustedResult": true,
+    "replay": true
+  },
+  "issues": [
+    "canonical count 9779"
+  ]
+}
+PASS run_risk_reward_state_validation.js
+{
+  "ok": false,
+  "total": 27,
+  "passed": 19,
+  "failed": [
+    {
+      "runner": "run_phase3e_graph_question_sync_validation.mjs",
+      "passed": false,
+      "durationMs": 1359
+    },
+    {
+      "runner": "run_question_quality_auditor_validation.mjs",
+      "passed": false,
+      "durationMs": 1282
+    },
+    {
+      "runner": "run_macro_phase2_taxonomy_validation.mjs",
+      "passed": false,
+      "durationMs": 756
+    },
+    {
+      "runner": "run_mastery_report_2_validation.js",
+      "passed": false,
+      "durationMs": 486
+    },
+    {
+      "runner": "run_unlimited_practice_validation.js",
+      "passed": false,
+      "durationMs": 564
+    },
+    {
+      "runner": "run_trial_by_graph_validation.js",
+      "passed": false,
+      "durationMs": 1092
+    },
+    {
+      "runner": "run_fading_fortune_validation.js",
+      "passed": false,
+      "durationMs": 558
+    },
+    {
+      "runner": "run_risk_reward_validation.js",
+      "passed": false,
+      "durationMs": 482
+    }
+  ]
+}
