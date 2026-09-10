@@ -576,7 +576,7 @@ function getQuestionBehaviorTelemetry(now = Date.now()){
 
   function persistQueue() { writeJSON(QUEUE_KEY, state.queue); }
 
-  function mapGameEvent(raw) {
+  function mapGameEvent(raw, measurements) {
     const sourceEvent = text(raw?.event, 80);
     if (!sourceEvent) return;
     const sourceRunId = text(raw.runID ?? raw.runId, 160);
@@ -610,7 +610,7 @@ function getQuestionBehaviorTelemetry(now = Date.now()){
       return;
     }
     if (sourceEvent === "question" || sourceEvent === "rapid_guessing") {
-      raw = { ...raw, ...responseMeasurements(raw), acceptedAttempt: sourceEvent === "question", rapidGuess: context.rapidGuess };
+      raw = { ...raw, ...(measurements === undefined ? responseMeasurements(raw) : measurements), acceptedAttempt: sourceEvent === "question", rapidGuess: context.rapidGuess };
       emit("answer_submitted", raw, { runId });
       emit("answer_evaluated", raw, { runId });
       emit("feedback_shown", raw, { runId });
@@ -628,7 +628,7 @@ function getQuestionBehaviorTelemetry(now = Date.now()){
       return;
     }
     if (sourceEvent === "exam_answer_initial" || sourceEvent === "exam_answer_revision") {
-      emit(sourceEvent,{...raw,...responseMeasurements(raw)},{runId});return;
+      emit(sourceEvent,{...raw,...(measurements === undefined ? responseMeasurements(raw) : measurements)},{runId});return;
     }
     if (sourceEvent === "boss_defeated") {
       emit("checkpoint_completed", raw, { runId });
@@ -703,13 +703,62 @@ function getQuestionBehaviorTelemetry(now = Date.now()){
     }
   }
 
+  // Extend the existing local exporter; never build a parallel CSV or tracker.
+  function installLocalTelemetryColumns(){
+    const columns=globalValue('TELEMETRY_COLUMNS',null);
+    if(!Array.isArray(columns))return;
+    for(const key of [...BEHAVIOR_FIELDS,'gameplayResponseTimeMs'])if(!columns.includes(key))columns.push(key);
+  }
+  function installLocalCsvDownload(){
+    const original=window.downloadTelemetryCsv;
+    if(typeof original!=='function'||original.__anonymousLocalCsvWrapped)return;
+    const wrapped=function(activeRunID=globalValue('runID','')){
+      const resolved=activeRunID || safeStorageGet(globalValue('LATEST_TELEMETRY_RUN_KEY',''));
+      const records=resolved ? globalValue('readLocalTelemetry')?.(resolved) : [];
+      if(!records?.length)return original.apply(this,arguments);
+      // Reuse the game's reader, ordered columns and quoting; no metric calculation.
+      const columns=globalValue('TELEMETRY_COLUMNS',[]),escape=globalValue('escapeCsvValue');
+      const rows=[columns.join(','),...records.map(row=>columns.map(key=>escape(row[key])).join(','))];
+      const url=URL.createObjectURL(new Blob(['\uFEFF',rows.join('\r\n')],{type:'text/csv;charset=utf-8'}));
+      const link=document.createElement('a');
+      const mode=String(records.at(-1)?.mode || 'run').replace(/[^a-z0-9_-]+/gi,'-').toLowerCase();
+      link.href=url;
+      link.download=`${globalValue('FACULTY_COMPOSITION_CONFIG',{}).slug || 'faculty-mastery-quest'}_${mode}_${resolved}.csv`;
+      document.body.appendChild(link);link.click();link.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),1000);
+    };
+    wrapped.__anonymousLocalCsvWrapped=true;window.downloadTelemetryCsv=wrapped;
+  }
+  function localTelemetryTail(data){
+    const localRun=data?.runID || globalValue('runID','') || safeStorageGet(globalValue('RUN_ID_KEY',''));
+    const read=globalValue('readLocalTelemetry',null);
+    if(!localRun || typeof read!=='function')return null;
+    return {runId:localRun,eventId:read(localRun).at(-1)?.eventID};
+  }
+  function attachLocalMeasurements(data, measurements, prior){
+    if(!measurements || !prior)return;
+    const read=globalValue('readLocalTelemetry',null),key=globalValue('getTelemetryKey',null);
+    if(typeof read!=='function'||typeof key!=='function')return;
+    const records=read(prior.runId),row=records.at(-1);
+    // Only enrich the row just saved by this invocation, including at the cap.
+    if(!row || row.eventID===prior.eventId || row.event!==data.event)return;
+    row.gameplayResponseTimeMs=row.responseTimeMs;
+    for(const field of ['responseTimeMs',...BEHAVIOR_FIELDS])row[field]=measurements[field] ?? null;
+    safeStorageSet(key(prior.runId),JSON.stringify(records));
+  }
+
   function installHooks() {
+    try { installLocalTelemetryColumns(); } catch (_) {}
+    try { installLocalCsvDownload(); } catch (_) {}
     const originalSend = window.sendGameData;
     if (typeof originalSend === "function" && !originalSend.__anonymousTelemetryWrapped) {
       const wrapped = function(data) {
-        let result;
+        let result, measurements, prior;
+        // Resolve once: local and anonymous rows receive the identical snapshot.
+        try { measurements=responseMeasurements(data || {}); prior=localTelemetryTail(data); } catch (_) {}
         try { result = originalSend.apply(this, arguments); } finally {
-          try { mapGameEvent(data || {}); } catch (_) {}
+          try { attachLocalMeasurements(data || {},measurements,prior); } catch (_) {}
+          try { mapGameEvent(data || {},measurements); } catch (_) {}
         }
         return result;
       };
