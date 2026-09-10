@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Build and customize an economics Mastery Quest in the Faculty Concept Composer, or use the advanced blank template for a custom subject library." name="description"/>
+<meta content="Build and customize an economics Mastery Quest in the Faculty Build Composer, or use the advanced blank template for a custom subject library." name="description"/>
 <title>Build a Quest | Mastery Quests</title>
 <link href="/assets/css/site.css" rel="stylesheet"/>
 <script defer="" src="/assets/js/site.js"></script>
@@ -63,7 +63,7 @@
 <input checked="" name="faculty-goal" type="checkbox" value="economics"/>
 <span>
 <strong>Build a game from existing economics concepts</strong>
-<small>Use the Faculty Concept Composer to build from the current economics library with adaptive practice support.</small>
+<small>Use the Faculty Build Composer to build from the current economics library with adaptive practice support.</small>
 </span>
 </label>
 <label class="goal-option">
@@ -118,10 +118,10 @@
 <div class="goal-panel-heading">
 <div>
 <p class="resource-type">Existing economics concepts</p>
-<h2>Faculty Concept Composer</h2>
+<h2>Faculty Build Composer</h2>
 <p>
-                Select concepts by course area, review concept-readiness guidance, choose supported
-                modes, confirm checkpoint coverage, and generate a self-contained Mastery Quest. Published question records use hashed correct-answer representations rather than plain numeric answer indexes.
+                Select concepts by course area and the learning outcomes you teach, review readiness, choose supported
+                modes, confirm checkpoint coverage, and generate a self-contained Mastery Quest.
               </p>
 </div>
 <div class="resource-actions">
@@ -135,7 +135,7 @@
 <article class="build-step-card">
 <span class="feature-number">01</span>
 <h3>Choose content and modes</h3>
-<p>Select a course area, concepts, and the modes students will use.</p>
+<p>Select a course area and concepts, choose Brief, Standard, Full, or Custom outcome coverage, then enable the modes students will use. <a href="/how-to/learning-outcomes/">Explore learning outcomes</a>.</p>
 </article>
 <article class="build-step-card">
 <span class="feature-number">02</span>
@@ -153,7 +153,7 @@
 <strong>Embedded composer</strong>
 <span>Selections and generated files remain in your browser.</span>
 </div>
-<iframe class="composer-frame" loading="lazy" src="/build/faculty-build-composer/" title="Mastery Quests Faculty Concept Composer"></iframe>
+<iframe class="composer-frame" loading="lazy" src="/build/faculty-build-composer/" title="Mastery Quests Faculty Build Composer"></iframe>
 </div>
 </section>
 <section class="goal-result-panel" data-goal-panel="" data-goals="subject" id="subject-authoring">
@@ -203,7 +203,7 @@
 <p>
                 Host the generated HTML file at a public HTTPS URL, test that URL, and then link
                 or embed the game in your LMS. Graphs are embedded and Concept Reviews open from the
-                Mastery Quests web library when recommended, so no sibling asset or review folder is required. Published answers are stored as hashes rather than plain answer indexes, adding practical answer-key hardening without requiring server-side hosting.
+                Mastery Quests web library when recommended, so no sibling asset or review folder is required.
               </p>
 </div>
 <a class="button button-primary" href="/how-to/">Open Hosting + LMS Guide</a>
@@ -213,7 +213,7 @@
 <article class="resource-card">
 <p class="resource-type">Deployment hardening</p>
 <h3>Hashed answers, no backend required</h3>
-<p>Generated games do not publish correct answers as plain numeric option indexes. LMS iframe deployment adds additional inspection friction while keeping the activity portable. This is practical answer-key hardening, not a substitute for server-side secure-exam infrastructure.</p>
+<p>Review the portable answer-key design and its limits before using a Quest for assessment.</p>
 <a class="text-link" href="/how-to/#answer-hardening">Read how the hardening works <span aria-hidden="true">→</span></a>
 </article>
 <article class="resource-card">
@@ -289,33 +289,7 @@
 </div>
 </section>
 
-<section class="section" id="mode-behavior">
-<div class="site-container">
-<div class="section-heading">
-<p class="eyebrow">Before you choose modes</p>
-<h2>Mode selection changes the learning engine, not just the game mechanic.</h2>
-<p>A generated Mastery Quest does not treat every mode as the same assessment with different artwork. The mode determines how questions are selected, whether targeted remediation may interrupt the run, and how strongly the post-run report is allowed to interpret the evidence.</p>
-</div>
-<div class="resource-grid">
-<article class="resource-card">
-<p class="resource-type">Full adaptive practice</p>
-<h3>Standard, Timed, Exam Drill, Score Attack, Unlimited</h3>
-<p>These modes use ongoing adaptive selection and can route students into targeted Repair, Bridge, and Retest questions when repeated evidence supports remediation.</p>
-</article>
-<article class="resource-card">
-<p class="resource-type">Instructor assessment</p>
-<h3>Quiz stays balanced</h3>
-<p>Quiz is designed so it can function as an actual instructor-assigned quiz. It samples across the selected bank and planned difficulty range without turning early misses into weakness-chasing.</p>
-</article>
-<article class="resource-card">
-<p class="resource-type">Short game modes</p>
-<h3>Calibrate, then investigate</h3>
-<p>Fading Fortune, Risk &amp; Reward, and Trial by Graph use broad cold-start calibration before constrained adaptive investigation. They do not create repair detours, and their reports remain explicit about limited evidence.</p>
-</article>
-</div>
-<div class="card-actions"><a class="button button-primary" href="/how-to/#adaptive-engine">Review the Mode-by-Mode Engine Rules</a></div>
-</div>
-</section>
+<section class="section"><div class="site-container"><h2>Match the mode to the assignment</h2><p>Available modes depend on your selected content. Use the <a href="/how-to/#adaptive-engine">mode-by-mode faculty guide</a> to compare practice, remediation, and short-run evidence before assigning a Quest.</p></div></section>
 <section class="section section-light" id="faculty-use">
 <div class="site-container">
 <div class="section-heading">

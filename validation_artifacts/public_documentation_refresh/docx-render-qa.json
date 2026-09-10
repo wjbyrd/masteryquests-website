@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "pagesInspected": 13,
+  "documents": [
+    {
+      "file": "faculty-composer-quick-start-guide.pdf",
+      "pages": 3,
+      "method": "Microsoft Word PDF export; PDFium rasterization",
+      "status": "rendered"
+    },
+    {
+      "file": "faculty-game-overview-guide.pdf",
+      "pages": 3,
+      "method": "Microsoft Word PDF export; PDFium rasterization",
+      "status": "rendered"
+    },
+    {
+      "file": "faculty-implementation-guide.pdf",
+      "pages": 4,
+      "method": "Microsoft Word PDF export; PDFium rasterization",
+      "status": "rendered"
+    },
+    {
+      "file": "student-instructions-and-faculty-customization-checklist.pdf",
+      "pages": 3,
+      "method": "Microsoft Word PDF export; PDFium rasterization",
+      "status": "rendered"
+    }
+  ],
+  "rendererNote": "Packaged render_docx.py failed because LibreOffice is absent. Installed Microsoft Word exported the PDFs; bundled PDFium produced page PNGs. All 13 pages inspected, with split step rows prevented and section pagination corrected.",
+  "design": "Original logos, colors, tables, headers and footers retained. No new document design."
+}

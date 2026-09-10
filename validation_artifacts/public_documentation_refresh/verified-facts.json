@@ -1,0 +1,74 @@
+{
+  "library": {
+    "concepts": 149,
+    "questions": 9779,
+    "sha": "530ce41689bf83126ccde2d7d0fd236ca0c34761042455323ce7d3f99e97bbab",
+    "source": "build/faculty-build-composer/data/composer_library.js"
+  },
+  "outcomes": {
+    "total": 222,
+    "publicConcepts": 147,
+    "publicOutcomes": 220
+  },
+  "modes": [
+    "standard",
+    "timed",
+    "exam",
+    "quiz",
+    "unlimited",
+    "legendary",
+    "score",
+    "trialGraph",
+    "fadingFortune",
+    "riskReward"
+  ],
+  "collections": {
+    "economic-realm": [
+      "/play/economic-realm/market-gate/",
+      "/play/economic-realm/national-ledger/",
+      "/play/economic-realm/equilibrium-crisis/",
+      "/play/economic-realm/liquidity-grid/",
+      "/play/economic-realm/stabilization-protocol/"
+    ],
+    "macro-command-system": [
+      "/play/macro-command-system/national-engine/",
+      "/play/macro-command-system/mint-ash-gold/",
+      "/play/macro-command-system/command-nexus/",
+      "/play/macro-command-system/exchange-citadel/"
+    ],
+    "managerial-intelligence-directorate": [
+      "/play/managerial-intelligence-directorate/cost-directive/",
+      "/play/managerial-intelligence-directorate/market-signal/",
+      "/play/managerial-intelligence-directorate/strategy-desk/",
+      "/play/managerial-intelligence-directorate/agency-protocol/"
+    ],
+    "micro-domains": [
+      "/play/micro-domains/labyrinth-of-choice/"
+    ]
+  },
+  "starterAssetPack": {
+    "images": 20,
+    "audio": 8,
+    "verification": "ZIP entries: 20 webp, 3 mp3, 5 wav; two text files"
+  },
+  "referenceSources": [
+    {
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+      "finding": "Branch/root publishing workflow verified; removed brittle sidebar category wording."
+    },
+    {
+      "url": "https://community.instructure.com/en/kb/articles/387066-canvas-html-editor-allowlist",
+      "finding": "Iframe supported; institution restrictions and external-link fallback retained."
+    },
+    {
+      "url": "https://www.troy.edu/academics/colleges-schools/business/departments/economics-finance-risk-management-insurance/faculty-staff.html",
+      "finding": "Associate Professor and economics teaching attribution confirmed."
+    }
+  ],
+  "inspectionNotes": [
+    "Current runtime getLimitedRunCalibrationCount and getSampleAwareEntryEvidence match retained faculty calibration/evidence descriptions.",
+    "Public Managerial local-telemetry.js contains no fetch/XHR/beacon; separate classroom client defines SCHEMA_VERSION=2 and fetch transport.",
+    "Public interactive hub help includes historical school-email wording; hubs are runtime/progression surfaces and not edited in this documentation-only pass.",
+    "Other four linked authoring/converter DOCX references inspected; raw skill IDs and authored answer indexes are appropriate advanced-authoring content, not Composer UI instructions."
+  ]
+}
