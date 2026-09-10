@@ -7,7 +7,7 @@ export const games=['cost-directive','market-signal','strategy-desk','agency-pro
 export const publicRoot='play/managerial-intelligence-directorate';
 export const pocRoot='play/managerial-directorate-telemetry-poc';
 export const classroomRoot='play/managerial-directorate-classroom';
-export const disclosure='This private class build records anonymous gameplay activity to help evaluate and improve the game. It does not collect your name, email, student ID, or course identity.';
+export const disclosure='This private class build records anonymous gameplay activity to help evaluate and improve the game. It records visibility/focus timing and counts of question-area selection/copy actions, never selected or copied text. It does not collect your name, email, student ID, or course identity.';
 export const read=(root,p)=>fs.readFileSync(path.join(root,p),'utf8');
 function replaceOnce(s,a,b){if(!s.includes(a)||s.indexOf(a)!==s.lastIndexOf(a))throw Error('Expected one match: '+a.slice(0,100));return s.replace(a,b);}
 export function instrumentHTML(root,game){
@@ -29,7 +29,7 @@ export function instrumentHTML(root,game){
 }
 export function classroomClient(root){
  let s=read(root,`${pocRoot}/telemetry-client.js`);
- s=s.replace('function anonymousTelemetryPOC()','function anonymousClassroomTelemetry()').replace('"managerial-directorate-telemetry-poc"','"managerial-directorate-classroom"').replace('"2026.09.05-poc2"','"2026.09.05-classroom1"');
+ s=s.replace('function anonymousTelemetryPOC()','function anonymousClassroomTelemetry()').replace('"managerial-directorate-telemetry-poc"','"managerial-directorate-classroom"').replace('"2026.09.10-parity3"','"2026.09.10-classroom-parity3"');
  s=s.replace(/  const FAILURE_KEY[^\n]+\n/,'');
  s=s.replace(/  const params = new URLSearchParams[\s\S]*?  const syntheticMode[^\n]+\n/,'  const endpoint = DEFAULT_ENDPOINT;\n');
  s=s.replace('    failureSimulation: localStorage.getItem(FAILURE_KEY) === "1",\n','').replace('    debugNode: null\n','');
@@ -40,7 +40,7 @@ export function classroomClient(root){
  s=s.slice(0,disclosureStart)+`  function addDisclosure() {
     const disclosure = document.createElement("div");
     disclosure.id = "anonymousTelemetryDisclosure";
-    disclosure.innerHTML = "<button type='button' class='game-menu-option' aria-expanded='false' aria-controls='anonymousTelemetryDetails'>About this class build</button><p id='anonymousTelemetryDetails' hidden>This private class build records anonymous gameplay activity to help evaluate and improve the game. It does not collect your name, email, student ID, or course identity.</p>";
+    disclosure.innerHTML = "<button type='button' class='game-menu-option' aria-expanded='false' aria-controls='anonymousTelemetryDetails'>About this class build</button><p id='anonymousTelemetryDetails' hidden>This private class build records anonymous gameplay activity to help evaluate and improve the game. It records visibility/focus timing and counts of question-area selection/copy actions, never selected or copied text. It does not collect your name, email, student ID, or course identity.</p>";
     disclosure.querySelector("button").onclick = event => {
       const details = disclosure.querySelector("p");
       details.hidden = !details.hidden;

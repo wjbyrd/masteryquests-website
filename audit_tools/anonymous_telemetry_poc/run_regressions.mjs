@@ -13,7 +13,7 @@ async function check(name, fn) { try { await fn(); results.push({name,status:'PA
 function client(storage = new Map()) {
   const listeners = {}, timers = new Map(), nodes = new Map(); let timer = 0;
   const node = () => ({style:{},open:false,addEventListener(type,fn){this[type]=fn;},querySelector(key){return this[key] ||= {textContent:''};}});
-  const context = vm.createContext({crypto:webcrypto, URLSearchParams, location:{search:'?telemetryDebug=1&telemetrySynthetic=1'},
+  const context = vm.createContext({crypto:webcrypto, AbortController, URLSearchParams, location:{search:'?telemetryDebug=1&telemetrySynthetic=1'},
     localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,String(v)),removeItem:k=>storage.delete(k)},
     document:{currentScript:{dataset:{gameId:'cost-directive'}},documentElement:{dataset:{}},visibilityState:'visible',
       querySelector:()=>null,getElementById:id=>nodes.get(id),createElement:node,body:{appendChild(n){nodes.set(n.id,n);}},

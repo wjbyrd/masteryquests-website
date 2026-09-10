@@ -1,6 +1,7 @@
 import {
   MAX_BODY_BYTES,
   QA_EXTRA_FIELDS,
+  BEHAVIOR_FIELDS,
   eventExtras,
   acceptedAttempt,
   PHASE,
@@ -304,10 +305,11 @@ function json(value, status = 200) {
 function csv(rows) {
   rows = rows.map(row => {
     const extras = eventExtras(row);
-    return { ...row, ...Object.fromEntries(QA_EXTRA_FIELDS.map(key => [key, extras[key] ?? null])),
+    return { ...row, ...Object.fromEntries([...QA_EXTRA_FIELDS,...BEHAVIOR_FIELDS].map(key => [key, extras[key] ?? null])),
+      responseTimeMs: row.response_time_ms ?? null,
       acceptedAttempt: row.event_type === "answer_evaluated" ? acceptedAttempt(row) : null };
   });
-  const columns = rows.length ? Object.keys(rows[0]) : [];
+  const columns = ["event_id","run_id","anonymous_client_id","build_id","build_version","schema_version","phase","game_id","mode","event_type","sequence_number","event_timestamp","received_at","elapsed_time_ms","position","question_id","concept_id","learning_objective","question_type","difficulty","selected_response","correct","response_time_ms","rapid_guess","remediation_stage","bridge_stage","retest_stage","boss_stage","graph_question","score","streak","daily_progress","artifact","completion_status","mastery_attempts","mastery_correct","mastery_accuracy","synthetic","extras_json","sourceRunId","lifecycleReason","acceptedAttempt","artifactName","artifactSource","artifactAlreadyOwned","artifactOwnedBeforeRun","artifactNewlyEarned","wagerAmount","scoreBeforeWager","removedOptionIndex","remainingOptionCount","activeResponseTimeMs","hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","focusLossCount","unfocusedTimeMs","timeAfterFocusMs","selectionCount","maxSelectedChars","questionSelected","answersSelected","copyCount","questionCopied","answersCopied","lastCopyElapsedMs","timeCopyToHideMs","timeCopyToBlurMs","responseTimeMs"];
   const escape = value => `"${String(value ?? "").replace(/"/g, '""')}"`;
   const body = [columns.map(escape).join(","), ...rows.map(row => columns.map(column => escape(row[column])).join(","))].join("\r\n");
   return new Response(body, {

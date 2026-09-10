@@ -3,7 +3,7 @@
   const runEvents=async()=>{await page.waitForTimeout(80);const source=await page.evaluate(()=>runID);const all=[...harness.received.values(),...await queued()];return [...new Map(all.filter(e=>e.gameId===game&&e.sourceRunId===String(source)).map(e=>[e.eventId,e])).values()].sort((a,b)=>a.sequenceNumber-b.sequenceNumber);};
   const drain=async()=>{await page.evaluate(()=>window.dispatchEvent(new Event('online')));await page.waitForFunction(()=>JSON.parse(localStorage.getItem('anonymousTelemetry:queue:v1')||'[]').length===0);};
   await check(game+' classroom has no debug API/UI or query switches; fixed real telemetry accepted by Worker',async()=>{
-   await drain();const e=await runEvents();assert.ok(e.length>2);assert.ok(e.every(e=>e.synthetic===false&&e.buildId==='managerial-directorate-classroom'&&e.buildVersion==='2026.09.05-classroom1'&&e.schemaVersion===1));
+   await drain();const e=await runEvents();assert.ok(e.length>2);assert.ok(e.every(e=>e.synthetic===false&&e.buildId==='managerial-directorate-classroom'&&e.buildVersion==='2026.09.10-classroom-parity3'&&e.schemaVersion===2));
    assert.ok(e.every(e=>e.anonymousClientId&&e.runId&&e.sourceRunId));assert.equal(await page.evaluate(()=>Boolean(window.AnonymousTelemetryPOC)),false);
    assert.equal(await page.locator('#anonymousTelemetryDebug,[data-action="new-run"],[data-action="flush"],[data-action="failure"]').count(),0);
    assert.ok(!/Fresh telemetry run|Flush now|failure simulation|POC debug/.test(await page.locator('body').innerText()));

@@ -1,0 +1,50 @@
+{
+  "baselineCommit": "af11e1fd6286b5127dd8d30672d97c426e0cf7f6",
+  "telemetry": {
+    "baseline": {
+      "passed": 21,
+      "failed": 0
+    },
+    "current": {
+      "passed": 21,
+      "failed": 0
+    }
+  },
+  "classroom": {
+    "baseline": {
+      "passed": 76,
+      "failed": 4
+    },
+    "current": {
+      "passed": 76,
+      "failed": 4
+    },
+    "unchangedFailures": [
+      "cost-directive mode exam initializes and accepts gameplay",
+      "market-signal mode exam initializes and accepts gameplay",
+      "strategy-desk mode exam initializes and accepts gameplay",
+      "agency-protocol mode exam initializes and accepts gameplay"
+    ],
+    "baselineMethod": "Same browser suite with HEAD private client assets; original schema/build expectations restored in memory. Local Worker accepts both schemas."
+  },
+  "historicValidator": {
+    "baseline": {
+      "passed": 32,
+      "failed": 2
+    },
+    "current": {
+      "passed": 32,
+      "failed": 2
+    },
+    "unchangedFailures": [
+      "05 public protected hashes unchanged",
+      "06 root deployment config unchanged"
+    ]
+  },
+  "protectedSources": {
+    "composer": "unchanged from HEAD",
+    "publicManagerialGames": "unchanged from HEAD",
+    "migrations": "unchanged from HEAD",
+    "rootDeploymentConfiguration": "unchanged from HEAD"
+  }
+}

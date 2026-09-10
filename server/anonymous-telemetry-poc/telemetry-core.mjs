@@ -16,12 +16,15 @@ export const NORMALIZED_FIELDS = [
   "bossStage", "graphQuestion", "score", "streak", "dailyProgress", "artifact", "completionStatus",
   "masteryAttempts", "masteryCorrect", "masteryAccuracy", "synthetic"
 ];
+export const BEHAVIOR_FIELDS = ["activeResponseTimeMs","hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","focusLossCount","unfocusedTimeMs","timeAfterFocusMs","selectionCount","maxSelectedChars","questionSelected","answersSelected","copyCount","questionCopied","answersCopied","lastCopyElapsedMs","timeCopyToHideMs","timeCopyToBlurMs"];
+const BEHAVIOR_FLAGS=new Set(['questionSelected','answersSelected','questionCopied','answersCopied']);
+const BEHAVIOR_COUNTS=new Set(['tabSwitchCount','focusLossCount','selectionCount','maxSelectedChars','copyCount']);
 export const QA_EXTRA_FIELDS = ["sourceRunId", "lifecycleReason", "acceptedAttempt", "artifactName", "artifactSource",
   "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned",
   "wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"];
 const NUMERIC_EXTRAS = new Set(["wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"]);
 const BOOLEAN_EXTRAS = new Set(["acceptedAttempt", "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned"]);
-const ALLOWED_EXTRA_KEYS = new Set(["selectionReason", "weaknessEstimate", "sourceEvent", ...QA_EXTRA_FIELDS]);
+const ALLOWED_EXTRA_KEYS = new Set(["selectionReason", "weaknessEstimate", "sourceEvent", ...QA_EXTRA_FIELDS, ...BEHAVIOR_FIELDS]);
 
 const FIELD_LIMITS = {
   buildId: 100, buildVersion: 80, phase: 80, gameId: 100, mode: 60, eventType: 80,
@@ -120,7 +123,7 @@ export function normalizeEvent(event, index = 0) {
     difficulty: cleanString(event.difficulty, "difficulty"),
     selectedResponse: event.selectedResponse === null || event.selectedResponse === undefined ? null : cleanNumber(event.selectedResponse, "selectedResponse", { integer: true, min: -1, max: 100 }),
     correct: event.correct === null || event.correct === undefined ? null : Boolean(event.correct),
-    responseTimeMs: cleanNumber(event.responseTimeMs, "responseTimeMs", { min: 0, max: 1000 * 60 * 60 }),
+    responseTimeMs: cleanNumber(event.responseTimeMs, "responseTimeMs", { min: 0, max: 1000 * 60 * 60 * 48 }),
     rapidGuess: Boolean(event.rapidGuess),
     remediationStage: cleanString(event.remediationStage, "remediationStage"),
     bridgeStage: cleanString(event.bridgeStage, "bridgeStage"),
@@ -143,6 +146,10 @@ export function normalizeEvent(event, index = 0) {
   for (const [key, value] of Object.entries(event)) {
     if (NORMALIZED_FIELDS.includes(key)) continue;
     assert(ALLOWED_EXTRA_KEYS.has(key), `events[${index}].${key} is not an accepted research field`);
+    if(BEHAVIOR_FIELDS.includes(key)){
+      assert(value===null || typeof value==='number',key+' must be numeric or null');
+      extras[key]=value===null?null:cleanNumber(value,key,{min:0,max:BEHAVIOR_FLAGS.has(key)?1:BEHAVIOR_COUNTS.has(key)?1000000:172800000,integer:BEHAVIOR_FLAGS.has(key)||BEHAVIOR_COUNTS.has(key)});
+    }
     if (QA_EXTRA_FIELDS.includes(key)) {
       if (NUMERIC_EXTRAS.has(key)) {
         assert(typeof value === "number", key + " must be numeric");
@@ -171,6 +178,12 @@ export function normalizeEvent(event, index = 0) {
   if (normalized.eventType !== "run_completed" && normalized.completionStatus) {
     extras.lifecycleReason ||= normalized.completionStatus;
     normalized.completionStatus = "";
+  }
+  if(extras.activeResponseTimeMs!=null && extras.hiddenTimeMs!=null){
+    assert(Math.abs(extras.activeResponseTimeMs+extras.hiddenTimeMs-normalized.responseTimeMs)<=2,'response timing components must equal wall time');
+  }
+  for(const key of ['activeResponseTimeMs','hiddenTimeMs','unfocusedTimeMs','timeAfterReturnMs','timeAfterFocusMs','lastCopyElapsedMs','timeCopyToHideMs','timeCopyToBlurMs']){
+    if(extras[key]!=null)assert(extras[key]<=normalized.responseTimeMs,key+' exceeds response interval');
   }
   const extrasJson = JSON.stringify(extras);
   assert(extrasJson.length <= 16384, `events[${index}] extras are too large`);
@@ -295,12 +308,20 @@ export function reconstructRun(events) {
       accuracy: Number(valueOf(mastery, "masteryAccuracy", "mastery_accuracy") || 0)
     } : null,
     sequence: analyzeSequence(ordered),
+    questionResponses: ordered.filter(event=>['question_shown','question_interrupted','answer_evaluated','exam_answer_initial','exam_answer_revision'].includes(typeOf(event))).map(event=>({
+      sequenceNumber:Number(valueOf(event,'sequenceNumber','sequence_number')),
+      eventType:typeOf(event),questionId:valueOf(event,'questionId','question_id')||'',
+      lifecycleReason:eventExtras(event).lifecycleReason||'',
+      responseTimeMs:valueOf(event,'responseTimeMs','response_time_ms')??null,
+      ...Object.fromEntries(BEHAVIOR_FIELDS.map(key=>[key,eventExtras(event)[key]??null]))
+    })),
     timeline: ordered.map(event => ({
       sequenceNumber: Number(valueOf(event, "sequenceNumber", "sequence_number")),
       eventType: typeOf(event),
       timestamp: valueOf(event, "eventTimestamp", "event_timestamp"),
       position: Number(valueOf(event, "position", "position") || 0),
-      questionId: valueOf(event, "questionId", "question_id") || ""
+      questionId: valueOf(event, "questionId", "question_id") || "",
+      lifecycleReason:eventExtras(event).lifecycleReason || ""
     }))
   };
 }

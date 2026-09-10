@@ -3,8 +3,8 @@
 
   const PHASE = "phaseAnonymousTelemetryPOC-v1";
   const BUILD_ID = "managerial-directorate-classroom";
-  const BUILD_VERSION = "2026.09.05-classroom1";
-  const SCHEMA_VERSION = 1;
+  const BUILD_VERSION = "2026.09.10-classroom-parity3";
+  const SCHEMA_VERSION = 2;
   const DEFAULT_ENDPOINT = "/api/anonymous-telemetry-poc/v1/events";
   const QUEUE_KEY = "anonymousTelemetry:queue:v1";
   const CLIENT_KEY = "anonymousTelemetry:clientId:v1";
@@ -44,6 +44,324 @@
     failedSendCount: 0,
     visibilityPaused: false,
   };
+
+  // BEGIN GENERATED COMPOSER BEHAVIOR (sync-composer-behavior.mjs)
+  function createComposerQuestionTracker(){
+    let questionStartTime=0, questionVisibilityTiming=createQuestionVisibilityTimingState();
+    let questionBehaviorTelemetry=createQuestionBehaviorTelemetryState();
+    let questionSelectionDebounceTimer=null, questionBehaviorGeneration=0;
+    // The adapter freezes at submission; it never changes the game's pending flag.
+    let answerSubmissionPending=false;
+function createQuestionVisibilityTimingState(){
+    return {
+        active:false,
+        accumulatedHiddenMs:0,
+        hiddenStartedAt:null,
+        tabSwitchCount:0,
+        lastReturnAt:null,
+        hasReturned:false
+    };
+}
+
+function createQuestionBehaviorTelemetryState(){
+    return {
+        active:false,
+        accumulatedUnfocusedMs:0,
+        unfocusedStartedAt:null,
+        focusLossCount:0,
+        lastFocusAt:null,
+        hasRefocused:false,
+        selectionCount:0,
+        maxSelectedChars:0,
+        questionSelected:false,
+        answersSelected:false,
+        copyCount:0,
+        questionCopied:false,
+        answersCopied:false,
+        lastCopyAt:null,
+        pendingCopyToHideAt:null,
+        pendingCopyToBlurAt:null,
+        timeCopyToHideMs:null,
+        timeCopyToBlurMs:null
+    };
+}
+
+function clearQuestionSelectionDebounce(){
+    if(questionSelectionDebounceTimer !== null){
+        clearTimeout(questionSelectionDebounceTimer);
+        questionSelectionDebounceTimer = null;
+    }
+}
+
+function resetQuestionVisibilityTiming(now = Date.now()){
+    const safeNow = Math.max(0, Number(now) || 0);
+    clearQuestionSelectionDebounce();
+    questionBehaviorGeneration++;
+    questionStartTime = safeNow;
+    questionVisibilityTiming = createQuestionVisibilityTimingState();
+    questionVisibilityTiming.active = true;
+    questionBehaviorTelemetry = createQuestionBehaviorTelemetryState();
+    questionBehaviorTelemetry.active = true;
+    if(document.hidden) questionVisibilityTiming.hiddenStartedAt = safeNow;
+    return questionVisibilityTiming;
+}
+
+function markQuestionVisibilityHidden(now = Date.now()){
+    if(!questionVisibilityTiming.active || Number.isFinite(questionVisibilityTiming.hiddenStartedAt)) return;
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    questionVisibilityTiming.hiddenStartedAt = safeNow;
+    questionVisibilityTiming.tabSwitchCount++;
+    if(Number.isFinite(questionBehaviorTelemetry.pendingCopyToHideAt)){
+        questionBehaviorTelemetry.timeCopyToHideMs = Math.max(0, safeNow - questionBehaviorTelemetry.pendingCopyToHideAt);
+        questionBehaviorTelemetry.pendingCopyToHideAt = null;
+    }
+}
+
+function markQuestionVisibilityVisible(now = Date.now()){
+    if(!questionVisibilityTiming.active || !Number.isFinite(questionVisibilityTiming.hiddenStartedAt)) return;
+    const safeNow = Math.max(questionVisibilityTiming.hiddenStartedAt, Number(now) || 0);
+    questionVisibilityTiming.accumulatedHiddenMs += safeNow - questionVisibilityTiming.hiddenStartedAt;
+    questionVisibilityTiming.hiddenStartedAt = null;
+    questionVisibilityTiming.lastReturnAt = safeNow;
+    questionVisibilityTiming.hasReturned = true;
+}
+
+function getQuestionVisibilityTiming(now = Date.now()){
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    const responseTimeMs = Math.max(0, safeNow - questionStartTime);
+    const openHiddenMs = Number.isFinite(questionVisibilityTiming.hiddenStartedAt)
+        ? Math.max(0, safeNow - questionVisibilityTiming.hiddenStartedAt)
+        : 0;
+    const hiddenTimeMs = Math.min(
+        responseTimeMs,
+        Math.max(0, questionVisibilityTiming.accumulatedHiddenMs + openHiddenMs)
+    );
+    const activeResponseTimeMs = Math.max(0, responseTimeMs - hiddenTimeMs);
+    const timeAfterReturnMs = questionVisibilityTiming.hasReturned
+        && !Number.isFinite(questionVisibilityTiming.hiddenStartedAt)
+        && Number.isFinite(questionVisibilityTiming.lastReturnAt)
+            ? Math.max(0, safeNow - questionVisibilityTiming.lastReturnAt)
+            : null;
+    return {
+        responseTimeMs,
+        activeResponseTimeMs,
+        hiddenTimeMs,
+        tabSwitchCount:Math.max(0, Number(questionVisibilityTiming.tabSwitchCount) || 0),
+        timeAfterReturnMs,
+        ...getQuestionBehaviorTelemetry(safeNow)
+    };
+}
+
+function completeQuestionVisibilityTiming(){
+    clearQuestionSelectionDebounce();
+    questionVisibilityTiming.active = false;
+    questionVisibilityTiming.hiddenStartedAt = null;
+    questionBehaviorTelemetry.active = false;
+    questionBehaviorTelemetry.unfocusedStartedAt = null;
+    questionBehaviorTelemetry.pendingCopyToHideAt = null;
+    questionBehaviorTelemetry.pendingCopyToBlurAt = null;
+}
+
+function handleQuestionVisibilityChange(now = Date.now()){
+    if(document.hidden) markQuestionVisibilityHidden(now);
+    else markQuestionVisibilityVisible(now);
+}
+
+function markQuestionFocusLost(now = Date.now()){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending || Number.isFinite(questionBehaviorTelemetry.unfocusedStartedAt)) return;
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    questionBehaviorTelemetry.unfocusedStartedAt = safeNow;
+    questionBehaviorTelemetry.focusLossCount++;
+    if(Number.isFinite(questionBehaviorTelemetry.pendingCopyToBlurAt)){
+        questionBehaviorTelemetry.timeCopyToBlurMs = Math.max(0, safeNow - questionBehaviorTelemetry.pendingCopyToBlurAt);
+        questionBehaviorTelemetry.pendingCopyToBlurAt = null;
+    }
+}
+
+function markQuestionFocusRegained(now = Date.now()){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending || !Number.isFinite(questionBehaviorTelemetry.unfocusedStartedAt)) return;
+    const safeNow = Math.max(questionBehaviorTelemetry.unfocusedStartedAt, Number(now) || 0);
+    questionBehaviorTelemetry.accumulatedUnfocusedMs += Math.max(0, safeNow - questionBehaviorTelemetry.unfocusedStartedAt);
+    questionBehaviorTelemetry.unfocusedStartedAt = null;
+    questionBehaviorTelemetry.lastFocusAt = safeNow;
+    questionBehaviorTelemetry.hasRefocused = true;
+}
+
+function selectedCharactersWithinRange(range, root){
+    if(!range || !root || typeof range.intersectsNode !== "function") return 0;
+    try {
+        if(!range.intersectsNode(root)) return 0;
+        const relevantRange = range.cloneRange();
+        const rootRange = document.createRange();
+        rootRange.selectNodeContents(root);
+        if(relevantRange.compareBoundaryPoints(Range.START_TO_START, rootRange) < 0){
+            relevantRange.setStart(rootRange.startContainer, rootRange.startOffset);
+        }
+        if(relevantRange.compareBoundaryPoints(Range.END_TO_END, rootRange) > 0){
+            relevantRange.setEnd(rootRange.endContainer, rootRange.endOffset);
+        }
+        return Math.max(0, String(relevantRange.toString()).trim().length);
+    } catch(error){
+        return 0;
+    }
+}
+
+function getRelevantSelectionSummary(selection = window.getSelection?.()){
+    const summary = {characterCount:0,question:false,answers:false};
+    if(!selection || selection.isCollapsed || selection.rangeCount < 1) return summary;
+    const questionRoot = document.getElementById("question");
+    const answersRoot = document.getElementById("answers");
+    for(let index = 0; index < selection.rangeCount; index++){
+        const range = selection.getRangeAt(index);
+        const questionCharacters = selectedCharactersWithinRange(range, questionRoot);
+        const answerCharacters = selectedCharactersWithinRange(range, answersRoot);
+        if(questionCharacters > 0) summary.question = true;
+        if(answerCharacters > 0) summary.answers = true;
+        summary.characterCount += questionCharacters + answerCharacters;
+    }
+    return summary;
+}
+
+function recordMeaningfulQuestionSelection(summary = getRelevantSelectionSummary()){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending || !summary || summary.characterCount < 1) return false;
+    questionBehaviorTelemetry.selectionCount++;
+    questionBehaviorTelemetry.maxSelectedChars = Math.max(questionBehaviorTelemetry.maxSelectedChars, summary.characterCount);
+    questionBehaviorTelemetry.questionSelected ||= !!summary.question;
+    questionBehaviorTelemetry.answersSelected ||= !!summary.answers;
+    return true;
+}
+
+function scheduleQuestionSelectionTelemetry(){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending) return;
+    clearQuestionSelectionDebounce();
+    const scheduledGeneration = questionBehaviorGeneration;
+    questionSelectionDebounceTimer = setTimeout(() => {
+        questionSelectionDebounceTimer = null;
+        if(scheduledGeneration !== questionBehaviorGeneration) return;
+        recordMeaningfulQuestionSelection();
+    }, 250);
+}
+
+function flushQuestionSelectionTelemetry(){
+    if(questionSelectionDebounceTimer === null) return;
+    clearQuestionSelectionDebounce();
+    recordMeaningfulQuestionSelection();
+}
+
+function recordRelevantQuestionCopy(now = Date.now(), summary = getRelevantSelectionSummary()){
+    if(!questionBehaviorTelemetry.active || answerSubmissionPending || !summary || summary.characterCount < 1) return false;
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    questionBehaviorTelemetry.copyCount++;
+    questionBehaviorTelemetry.questionCopied ||= !!summary.question;
+    questionBehaviorTelemetry.answersCopied ||= !!summary.answers;
+    questionBehaviorTelemetry.lastCopyAt = safeNow;
+    questionBehaviorTelemetry.pendingCopyToHideAt = safeNow;
+    questionBehaviorTelemetry.pendingCopyToBlurAt = safeNow;
+    questionBehaviorTelemetry.timeCopyToHideMs = null;
+    questionBehaviorTelemetry.timeCopyToBlurMs = null;
+    return true;
+}
+
+function getQuestionBehaviorTelemetry(now = Date.now()){
+    const safeNow = Math.max(questionStartTime, Number(now) || 0);
+    const responseTimeMs = Math.max(0, safeNow - questionStartTime);
+    const openUnfocusedMs = Number.isFinite(questionBehaviorTelemetry.unfocusedStartedAt)
+        ? Math.max(0, safeNow - questionBehaviorTelemetry.unfocusedStartedAt)
+        : 0;
+    const unfocusedTimeMs = Math.min(
+        responseTimeMs,
+        Math.max(0, questionBehaviorTelemetry.accumulatedUnfocusedMs + openUnfocusedMs)
+    );
+    const timeAfterFocusMs = questionBehaviorTelemetry.hasRefocused
+        && !Number.isFinite(questionBehaviorTelemetry.unfocusedStartedAt)
+        && Number.isFinite(questionBehaviorTelemetry.lastFocusAt)
+            ? Math.max(0, safeNow - questionBehaviorTelemetry.lastFocusAt)
+            : null;
+    return {
+        focusLossCount:Math.max(0, Math.trunc(Number(questionBehaviorTelemetry.focusLossCount) || 0)),
+        unfocusedTimeMs,
+        timeAfterFocusMs,
+        selectionCount:Math.max(0, Math.trunc(Number(questionBehaviorTelemetry.selectionCount) || 0)),
+        maxSelectedChars:Math.max(0, Math.trunc(Number(questionBehaviorTelemetry.maxSelectedChars) || 0)),
+        questionSelected:questionBehaviorTelemetry.questionSelected ? 1 : 0,
+        answersSelected:questionBehaviorTelemetry.answersSelected ? 1 : 0,
+        copyCount:Math.max(0, Math.trunc(Number(questionBehaviorTelemetry.copyCount) || 0)),
+        questionCopied:questionBehaviorTelemetry.questionCopied ? 1 : 0,
+        answersCopied:questionBehaviorTelemetry.answersCopied ? 1 : 0,
+        lastCopyElapsedMs:Number.isFinite(questionBehaviorTelemetry.lastCopyAt)
+            ? Math.max(0, questionBehaviorTelemetry.lastCopyAt - questionStartTime)
+            : null,
+        timeCopyToHideMs:Number.isFinite(questionBehaviorTelemetry.timeCopyToHideMs)
+            ? Math.max(0, questionBehaviorTelemetry.timeCopyToHideMs)
+            : null,
+        timeCopyToBlurMs:Number.isFinite(questionBehaviorTelemetry.timeCopyToBlurMs)
+            ? Math.max(0, questionBehaviorTelemetry.timeCopyToBlurMs)
+            : null
+    };
+}
+
+    return {reset:resetQuestionVisibilityTiming, snapshot:getQuestionVisibilityTiming,
+      complete:completeQuestionVisibilityTiming, visibility:handleQuestionVisibilityChange,
+      blur:markQuestionFocusLost, focus:markQuestionFocusRegained,
+      selection:scheduleQuestionSelectionTelemetry, flushSelection:flushQuestionSelectionTelemetry,
+      copy:recordRelevantQuestionCopy, active:()=>questionVisibilityTiming.active};
+  }
+  // END GENERATED COMPOSER BEHAVIOR
+
+  const BEHAVIOR_FIELDS = ["activeResponseTimeMs","hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","focusLossCount","unfocusedTimeMs","timeAfterFocusMs","selectionCount","maxSelectedChars","questionSelected","answersSelected","copyCount","questionCopied","answersCopied","lastCopyElapsedMs","timeCopyToHideMs","timeCopyToBlurMs"];
+  const tracker=createComposerQuestionTracker();
+  let intervalKey='', intervalContext=null, pendingTiming=null, pendingKey='', shownToken='', runClosed=true;
+  const examViews=new Map();
+  const intervalId=c=>[state.activeRunId,c.position,c.questionId].join(':');
+  function finishInterval(timing){
+    if(!tracker.active())return;
+    const value=timing || tracker.snapshot();
+    if(intervalContext?.mode==='exam'){
+      const prior=examViews.get(intervalKey);
+      const sum={...value};
+      if(prior){
+        for(const key of ['responseTimeMs','activeResponseTimeMs','hiddenTimeMs','tabSwitchCount','focusLossCount','unfocusedTimeMs','selectionCount','copyCount'])sum[key]+=prior[key];
+        sum.maxSelectedChars=Math.max(prior.maxSelectedChars,value.maxSelectedChars);
+        for(const key of ['questionSelected','answersSelected','questionCopied','answersCopied'])sum[key]=Number(Boolean(prior[key]||value[key]));
+        if(!value.copyCount)for(const key of ['lastCopyElapsedMs','timeCopyToHideMs','timeCopyToBlurMs'])sum[key]=prior[key];
+      }
+      examViews.set(intervalKey,sum);
+    }
+    tracker.complete();
+  }
+  function beginInterval(){
+    if(runClosed)return;
+    const c=currentContext({});
+    if(!c.questionId || globalValue('answerSubmissionPending',false))return;
+    if(c.mode==='riskReward'&&!globalValue('riskRewardQuestionRevealed',false))return;
+    if(c.mode==='fadingFortune'&&!globalValue('fadingFortuneQuestionActive',false))return;
+    const key=intervalId(c),token=key+':'+globalValue('questionStartTime',0)+':'+[c.remediationStage,c.bridgeStage,c.retestStage].join(':');
+    if(shownToken===token && tracker.active())return;
+    finishInterval();
+    intervalKey=key;intervalContext=c;shownToken=token;pendingTiming=null;pendingKey='';
+    tracker.reset();
+    emit("question_shown",{});
+    return true;
+  }
+  function responseMeasurements(raw){
+    const c=currentContext(raw),key=intervalId(c);
+    if(raw.adaptiveMode==='exam-commit')return examViews.get(key) || null;
+    if(!['question','rapid_guessing','exam_answer_initial','exam_answer_revision'].includes(raw.event))return null;
+    if(key!==intervalKey)return null;
+    const value=pendingKey===key&&pendingTiming ? pendingTiming : tracker.active()?tracker.snapshot():null;
+    if(value)finishInterval(value);
+    return value;
+  }
+  function suspendQuestion(reason){
+    if(runClosed)return;
+    if(tracker.active()){
+      tracker.flushSelection();
+      emit('question_interrupted',{...intervalContext,...tracker.snapshot(),lifecycleReason:reason});
+      finishInterval();
+    }
+    pendingTiming=null;shownToken='';
+  }
+  function safeBehavior(action){try{if(!runClosed)action();}catch(_){} }
 
   function safeStorageGet(key) { try { return localStorage.getItem(key); } catch (_) { return null; } }
   function safeStorageSet(key, value) { try { localStorage.setItem(key, value); } catch (_) {} }
@@ -93,6 +411,7 @@
     if (sourceKey) state.runs[sourceKey] = runId;
     state.activeRunId = runId;
     state.sourceRunId = sourceRunId || "";
+    tracker.complete(); examViews.clear(); intervalKey=''; pendingTiming=null; shownToken=''; runClosed=false;
     state.visibilityPaused = false;
     state.runs[`${gameId}:artifacts:${runId}`] = state.artifactOwnership || artifactOwnership();
     state.lastStage = "";
@@ -107,6 +426,7 @@
   }
 
   function resumeRun(sourceRunId, mode) {
+    tracker.complete(); pendingTiming=null; shownToken=''; runClosed=false;
     const sourceKey = sourceRunId ? `${gameId}:${sourceRunId}` : "";
     const mapped = sourceKey ? state.runs[sourceKey] : "";
     if (mapped) {
@@ -208,7 +528,7 @@
     try {
       const runId = options.runId || ensureRun(fields.mode);
       const context = currentContext(fields);
-      const safeOverrides = {};
+      const safeOverrides = Object.fromEntries(BEHAVIOR_FIELDS.map(key=>[key,null]));
       for (const key of [
         "mode", "elapsedTimeMs", "position", "questionId", "conceptId", "learningObjective",
         "questionType", "difficulty", "selectedResponse", "correct", "responseTimeMs", "rapidGuess",
@@ -218,7 +538,7 @@
         "sourceRunId", "lifecycleReason", "acceptedAttempt", "artifactName", "artifactSource",
         "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned",
         "wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"
-      ]) {
+      , ...BEHAVIOR_FIELDS]) {
         if (Object.prototype.hasOwnProperty.call(fields, key)) safeOverrides[key] = fields[key];
       }
       const event = {
@@ -290,7 +610,7 @@
       return;
     }
     if (sourceEvent === "question" || sourceEvent === "rapid_guessing") {
-      raw = { ...raw, acceptedAttempt: sourceEvent === "question", rapidGuess: context.rapidGuess };
+      raw = { ...raw, ...responseMeasurements(raw), acceptedAttempt: sourceEvent === "question", rapidGuess: context.rapidGuess };
       emit("answer_submitted", raw, { runId });
       emit("answer_evaluated", raw, { runId });
       emit("feedback_shown", raw, { runId });
@@ -307,19 +627,24 @@
       state.lastStreak = context.streak;
       return;
     }
+    if (sourceEvent === "exam_answer_initial" || sourceEvent === "exam_answer_revision") {
+      emit(sourceEvent,{...raw,...responseMeasurements(raw)},{runId});return;
+    }
     if (sourceEvent === "boss_defeated") {
       emit("checkpoint_completed", raw, { runId });
       return;
     }
     if (COMPLETION_EVENTS.has(sourceEvent) || /_(?:complete|bust|ended_by_student)$/.test(sourceEvent)) {
+      suspendQuestion("run-ended");
       emit("run_completed", { ...raw, completionStatus: sourceEvent }, { runId });
+      runClosed=true;
       return;
     }
     emit(sourceEvent, raw, { runId });
   }
 
   function captureQuestionShown() {
-    setTimeout(() => {
+    if(!beginInterval())return;
       const context = currentContext({});
       if (!context.questionId) return;
       const stage = context.remediationStage || context.bridgeStage || context.retestStage;
@@ -336,13 +661,11 @@
         if (context.bossStage) emit("checkpoint_started", {});
         state.lastBossStage = context.bossStage;
       }
-      emit("question_shown", {});
       if (stage === "repair") emit("repair_question_shown", {});
       if (stage === "bridge") emit("bridge_question_shown", {});
       if (stage === "retest") emit("retest_question_shown", {});
       if (context.bossStage) emit("boss_question_shown", {});
       if (context.graphQuestion) emit("graph_question_shown", {});
-    }, 0);
   }
 
   function masterySummary() {
@@ -362,12 +685,22 @@
     if (typeof original !== "function" || original.__anonymousTelemetryWrapped) return false;
     const wrapped = function(...args) {
       const result = original.apply(this, args);
-      try { after(args, result); } catch (_) {}
+      if(result && typeof result.then === "function") result.then(()=>{try{after(args,result);}catch(_){}},()=>{});
+      else try { after(args, result); } catch (_) {}
       return result;
     };
     wrapped.__anonymousTelemetryWrapped = true;
     window[name] = wrapped;
     return true;
+  }
+
+  function installExamHooks() {
+    // Classroom navigation helpers load after this adapter; re-install at DOM ready.
+    const finalize=window.finalizeExamRoomView;
+    if(typeof finalize==='function'&&!finalize.__anonymousTelemetryWrapped){
+      const wrapped=function(...args){safeBehavior(()=>finishInterval());return finalize.apply(this,args);};
+      wrapped.__anonymousTelemetryWrapped=true;window.finalizeExamRoomView=wrapped;
+    }
   }
 
   function installHooks() {
@@ -384,9 +717,32 @@
       window.sendGameData = wrapped;
     }
     wrapAfter("displayQuestion", captureQuestionShown);
+    wrapAfter("phase15RestoreSavedQuestion", captureQuestionShown);
     wrapAfter("beginFadingFortuneQuestion", captureQuestionShown);
     wrapAfter("renderRiskRewardQuestion", captureQuestionShown);
     wrapAfter("showMasteryReportScreen", masterySummary);
+    const originalAnswer=window.answer;
+    if(typeof originalAnswer==='function'&&!originalAnswer.__anonymousTelemetryWrapped){
+      const wrapped=function(...args){
+        safeBehavior(()=>{
+          if(!globalValue('answerSubmissionPending',false)&&!globalValue('rapidGuessLocked',false)&&tracker.active()){
+            tracker.flushSelection();pendingTiming=tracker.snapshot();pendingKey=intervalKey;
+          }
+        });
+        return originalAnswer.apply(this,args);
+      };
+      wrapped.__anonymousTelemetryWrapped=true;window.answer=wrapped;
+    }
+    for(const name of ['returnToModeSelectFromRun','returnToTitleScreen']){
+      const original=window[name];
+      if(typeof original!=='function'||original.__anonymousTelemetryWrapped)continue;
+      const wrapped=function(...args){
+        safeBehavior(()=>{suspendQuestion('menu');pauseForLifecycle('menu');runClosed=true;});
+        return original.apply(this,args);
+      };
+      wrapped.__anonymousTelemetryWrapped=true;window[name]=wrapped;
+    }
+    installExamHooks();
     // Capture ownership before launch helpers clear any run-local save state.
     for (const name of ["startNewRun", "startSelectedMode", "startGame"]) {
       const original = window[name];
@@ -410,8 +766,12 @@
     if (state.flushing || !state.queue.length) return { ok: true, queued: state.queue.length };
     state.flushing = true;
     const batch = state.queue.slice(0, BATCH_SIZE);
+    let timeout;
     try {
+      const controller=new AbortController();
+      timeout=setTimeout(()=>controller.abort(),10000);
       const response = await fetch(endpoint, {
+        signal:controller.signal,
         method: "POST",
         headers: { "content-type": "application/json", "x-telemetry-phase": PHASE },
         body: JSON.stringify({ phase: PHASE, events: batch }),
@@ -437,6 +797,7 @@
       scheduleFlush(Math.min(30000, 1000 * 2 ** Math.min(state.retryAttempt, 5)));
       return { ok: false, error: String(error?.message || error), queued: state.queue.length };
     } finally {
+      clearTimeout(timeout);
       state.flushing = false;
     }
   }
@@ -444,7 +805,7 @@
   function addDisclosure() {
     const disclosure = document.createElement("div");
     disclosure.id = "anonymousTelemetryDisclosure";
-    disclosure.innerHTML = "<button type='button' class='game-menu-option' aria-expanded='false' aria-controls='anonymousTelemetryDetails'>About this class build</button><p id='anonymousTelemetryDetails' hidden>This private class build records anonymous gameplay activity to help evaluate and improve the game. It does not collect your name, email, student ID, or course identity.</p>";
+    disclosure.innerHTML = "<button type='button' class='game-menu-option' aria-expanded='false' aria-controls='anonymousTelemetryDetails'>About this class build</button><p id='anonymousTelemetryDetails' hidden>This private class build records anonymous gameplay activity to help evaluate and improve the game. It records visibility/focus timing and counts of question-area selection/copy actions, never selected or copied text. It does not collect your name, email, student ID, or course identity.</p>";
     disclosure.querySelector("button").onclick = event => {
       const details = disclosure.querySelector("p");
       details.hidden = !details.hidden;
@@ -454,16 +815,23 @@
   }
 
   function pauseForLifecycle(reason) {
-    if (!state.activeRunId || state.visibilityPaused) return;
+    if (!state.activeRunId || state.visibilityPaused || runClosed) return;
     state.visibilityPaused = true;
     emit("run_paused", { lifecycleReason: reason });
   }
 
 
   installHooks();
+  document.addEventListener('DOMContentLoaded',()=>{try{installExamHooks();}catch(_){}});
+  document.addEventListener('selectionchange',()=>safeBehavior(()=>{if(!globalValue('answerSubmissionPending',false))tracker.selection();}));
+  document.addEventListener('copy',()=>safeBehavior(()=>{if(!globalValue('answerSubmissionPending',false))tracker.copy();}));
+  window.addEventListener('blur',()=>safeBehavior(()=>{if(!globalValue('answerSubmissionPending',false))tracker.blur();}));
+  window.addEventListener('focus',()=>safeBehavior(()=>{if(!globalValue('answerSubmissionPending',false))tracker.focus();}));
   addDisclosure();
   window.addEventListener("online", () => scheduleFlush(0));
   window.addEventListener("pagehide", () => {
+    if(runClosed)return;
+    safeBehavior(()=>{if(tracker.active())emit("question_interrupted",{...intervalContext,...tracker.snapshot(),lifecycleReason:"pagehide"});});
     pauseForLifecycle("pagehide");
     flush({ keepalive: true });
   });
@@ -474,7 +842,8 @@
     }
   });
   document.addEventListener("visibilitychange", () => {
-    if (!state.activeRunId) return;
+    if (!state.activeRunId || runClosed) return;
+    safeBehavior(()=>tracker.visibility());
     if (document.visibilityState === "hidden" && !state.visibilityPaused) {
       pauseForLifecycle("visibility-hidden");
       flush({ keepalive: true });
