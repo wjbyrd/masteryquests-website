@@ -58,7 +58,7 @@ REVIEWS: list[dict[str, Any]] = [
         ],
         "watch": "Do not shift SRAS merely because the current price level changes. Ask whether production conditions changed at every price level.",
         "workedLabel": "AN ADVERSE COST SHOCK",
-        "worked": "Higher energy prices raise firms' costs. The graph shifts SRAS from AS0 to AS1, upward and left. At real GDP 150, the price level associated with supply rises from 150 to 190. With aggregate demand fixed, the new short-run equilibrium would have lower real GDP and a higher price level.",
+        "worked": "Higher energy prices raise firms' costs. The graph shifts SRAS from AS0 to AS1, upward and left. At real GDP 150, the price level associated with supply rises from roughly 150 to roughly 190. With aggregate demand fixed, the new short-run equilibrium would have lower real GDP and a higher price level.",
         "check": "Expected input prices fall. Does the economy move along SRAS or does SRAS shift?",
         "difficulty": "Intermediate", "time": "5 minutes", "calculation": False,
         "graphAsset": "question-assets/aggregate-supply/AS-01.webp",
@@ -400,7 +400,7 @@ REVIEWS: list[dict[str, Any]] = [
         "code": "MACRO-57", "concept": "open-economy-policy-transmission",
         "title": "Open-Economy Policy and Macroeconomic Transmission",
         "outcome": "Trace fiscal and financial shocks through saving, NCO, FX, NX, and AD.",
-        "core": "Open-economy policy analysis connects several markets. A larger budget deficit lowers public and national saving, raises the real interest rate, reduces investment and NCO, and shifts the supply of dollars left. With dollar demand fixed, the dollar appreciates and net exports fall. The NX decline and investment crowding out can partly offset the direct aggregate-demand effect of higher government purchases.",
+        "core": "Open-economy policy analysis connects several markets. Here the FX panel uses vertical dollar supply fixed by NCO at a given real interest rate, rather than the upward-sloping gross-flow supply in the basic FX market. Hold domestic and foreign price levels fixed when interpreting the nominal exchange-rate change. A larger budget deficit lowers public and national saving, raises the real interest rate, reduces investment and NCO, and shifts the supply of dollars left. With dollar demand fixed, the dollar appreciates and net exports fall. The NX decline and investment crowding out can partly offset the direct aggregate-demand effect of higher government purchases.",
         "recognition": [
             "Write the chain market by market; do not skip from policy directly to the exchange rate.",
             "Higher domestic real rates lower NCO by making domestic assets relatively attractive.",

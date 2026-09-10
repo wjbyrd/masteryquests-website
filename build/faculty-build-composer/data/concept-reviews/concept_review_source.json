@@ -114,7 +114,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Predict behavioral responses and unintended consequences created by incentives.",
-        "core": "Incentives change the expected benefits or costs of a choice, so they can alter behavior at the margin. Incentives shows how to predict behavioral responses and unintended consequences created by incentives. The fee alters the next trip's marginal cost, which can change the decision. With limited time, the higher wage makes study more costly in forgone earnings. People respond to incentives, but they may respond in ways that improve the metric while hurting the real goal. The toll raises the cost of using the road, which gives drivers an incentive to change behavior.",
+        "core": "Incentives change the expected benefits or costs of a choice, so they can alter behavior at the margin. The fee alters the next trip's marginal cost, which can change the decision. With limited time, the higher wage makes study more costly in forgone earnings. People respond to incentives, but they may respond in ways that improve the metric while hurting the real goal. The toll raises the cost of using the road, which gives drivers an incentive to change behavior.",
         "recognition": [
           "A speed bonus makes workers finish faster, but quality falls.",
           "A new toll reduces traffic on a busy road.",
@@ -308,7 +308,7 @@
         ],
         "watch": "A common mistake is to decide from total benefit or total cost. Marginal analysis compares the additional benefit and additional cost of the next unit.",
         "worked": "A warehouse earns $15 from handling one additional box, and the marginal cost of that box is $13. Marginal net benefit is $15 - $13 = $2, so handling the box increases profit. If the next box cost $17 instead, its marginal net benefit would be -$2 and the warehouse should stop before that box.",
-        "check": "Which value is average rather than marginal?",
+        "check": "Total cost is $100 for 10 units, and producing an eleventh unit adds $15. Which number is average cost, and which is marginal cost?",
         "graph": false,
         "calculation": true,
         "difficulty": "Beginner",
@@ -402,7 +402,7 @@
         ],
         "watch": "A common mistake is to label any large organization as macroeconomic. The classification depends on the unit of analysis: one decision-maker is micro; economy-wide aggregates are macro.",
         "worked": "A restaurant deciding whether to hire one more server is a microeconomic question because it concerns one firm's choice. The national unemployment rate is a macroeconomic outcome because it aggregates labor-market conditions across the economy. The subject's size is not decisive; the unit of analysis is.",
-        "check": "Which set of outcomes is primarily macroeconomic?",
+        "check": "Name three economy-wide outcomes studied in macroeconomics.",
         "graph": false,
         "calculation": false,
         "difficulty": "Beginner",
@@ -485,13 +485,12 @@
       "focusTerms": [],
       "content": {
         "outcome": "Distinguish testable claims from value judgments.",
-        "core": "Positive analysis makes claims that evidence can test, while normative analysis applies value judgments about what should be done. The word should signals a policy judgment, so the statement is normative. Identify what observation could support or contradict the testable component. A positive claim is one that evidence could in principle test, even if the claim is false. This is positive because it makes a testable claim about cause and effect.",
+        "core": "Positive analysis makes claims that evidence can test, while normative analysis applies value judgments about what should be done. Identify what observation could support or contradict a testable claim. A positive claim can be false. A normative claim ranks goals or outcomes using values; evidence can inform that judgment but cannot settle the values alone.",
         "recognition": [
           "A transit study predicts that a lower fare will increase ridership.",
-          "This is positive because it makes a testable claim about cause and effect.",
+          "Ridership data can test the prediction even if it turns out to be wrong.",
           "A council member says parks should receive more funding because access is fair.",
-          "A commissioner says the city ought to favor safer streets even if travel takes longer.",
-          "This is positive because it is a testable cause-and-effect claim."
+          "A commissioner says the city ought to favor safer streets even if travel takes longer."
         ],
         "watch": "Do not treat positive as good, true, or politically neutral. A positive claim is one that evidence could in principle test, even if the claim is false.",
         "worked": "The statement 'A lower bus fare will increase ridership' is positive because ridership data can support or contradict it. The statement 'The city should lower bus fares because access is fair' is normative because it applies a value judgment. Evidence can inform both statements, but only the first is directly testable as written.",
@@ -677,7 +676,7 @@
           "An economy first removes unemployment, then gains new machinery.",
           "Using idle resources changes the production point; resources or technology shift the frontier."
         ],
-        "watch": "Do not confuse ppf with market curve. A PPF shows possible production combinations given current resources and technology. Using idle resources changes the production point; resources or technology shift the frontier.",
+        "watch": "Do not confuse a PPF with a market curve. A PPF shows possible production combinations given current resources and technology. Using idle resources changes the production point; resources or technology shift the frontier.",
         "worked": "On the PPF, moving from point C (15 units of X and 35 of Y) to point D (21 of X and 20 of Y) gains 6 units of X but gives up 15 units of Y. The total opportunity cost is 15 units of Y, or 15/6 = 2.5 units of Y per additional unit of X.",
         "check": "Does moving along a PPF represent economic growth?",
         "graph": true,
@@ -1591,10 +1590,10 @@
         "outcome": "Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
         "core": "When demand and supply shift at the same time, each shift contributes separately to the new equilibrium. Analyze how each change affects price and quantity, then combine the directional effects. If both shifts push one variable in the same direction, that result is determinate; if they push in opposite directions, the result depends on the relative size of the shifts.",
         "recognition": [
-          "Input costs rise for producers of bicycles.",
-          "Price stays the same and quantity rises.",
-          "A coffee shop sees more customers after a celebrity endorsement.",
-          "Demand decreases by more than supply decreases."
+          "Both a demand determinant and a supply determinant change.",
+          "A bicycle endorsement raises demand while higher input costs reduce supply.",
+          "Analyze each shift separately before combining its price and quantity effects.",
+          "Opposing effects on one variable leave its direction ambiguous unless relative shift sizes are known."
         ],
         "watch": "Do not assume an unchanged price means the market experienced no shifts. A demand increase raises price and quantity, while a supply increase lowers price and raises quantity. Equal price effects can cancel while quantity rises.",
         "worked": "The original curves D0 and S0 intersect at a price of $3 and quantity of 150 thousand. After demand shifts right to D1 and supply shifts left to S1, the new intersection is $5 and the same quantity of 150 thousand. Both shifts raise price; their opposing quantity effects happen to offset in this graph, though quantity would otherwise be ambiguous.",
@@ -1710,7 +1709,7 @@
         "assetMetadata": {
           "filename": "ceilingfloor.webp",
           "sourceUrl": "data/question-assets/binding-price-ceilings/ceilingfloor.webp",
-          "sha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
+          "sha256": "f483f0c5fbae3b5793ceea124e10fb4b3de8338f4c0d58cd6ba07d8ac936ae6b",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve intersect at price $30 and quantity 200. Dashed guides also show demand and supply quantities at prices $10, $20, $40, and $50: at $10, supply is 100 and demand is 300; at $20, supply is 150 and demand is 250; at $40, supply is 250 and demand is 150; at $50, supply is 300 and demand is 100.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve intersect at price $30 and quantity 200. Dashed guides also show demand and supply quantities at prices $10, $20, $40, and $50: at $10, supply is 100 and demand is 300; at $20, supply is 150 and demand is 250; at $40, supply is 250 and demand is 150; at $50, supply is 300 and demand is 100."
         }
@@ -1809,7 +1808,7 @@
         "assetMetadata": {
           "filename": "ceilingfloor.webp",
           "sourceUrl": "data/question-assets/binding-price-floors/ceilingfloor.webp",
-          "sha256": "82553aedd20814e579fb188e6e39cd476f6e47b94586357b2d611a98bb01184e",
+          "sha256": "f483f0c5fbae3b5793ceea124e10fb4b3de8338f4c0d58cd6ba07d8ac936ae6b",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve intersect at price $30 and quantity 200. Dashed guides also show demand and supply quantities at prices $10, $20, $40, and $50: at $10, supply is 100 and demand is 300; at $20, supply is 150 and demand is 250; at $40, supply is 250 and demand is 150; at $50, supply is 300 and demand is 100.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve intersect at price $30 and quantity 200. Dashed guides also show demand and supply quantities at prices $10, $20, $40, and $50: at $10, supply is 100 and demand is 300; at $20, supply is 150 and demand is 250; at $40, supply is 250 and demand is 150; at $50, supply is 300 and demand is 100."
         }
@@ -2000,11 +1999,11 @@
         "core": "Tax incidence depends on relative elasticity: the less responsive side of the market bears more of the tax burden. That side changes quantity less when the tax alters the price it pays or receives, so more of the tax wedge appears on its side of the market. Legal responsibility for remitting the tax does not determine its economic burden.",
         "recognition": [
           "The more elastic side can respond more easily, so it bears less of the tax burden.",
-          "The less elastic side bears more of the tax burden. Here, that is buyers.",
+          "The less elastic side bears more of the tax burden; identify that side from the market conditions.",
           "A tax on cigarettes causes only a small drop in quantity but a large increase in buyer price.",
           "In one market, demand is much more elastic than supply."
         ],
-        "watch": "A common mistake is to assume that the more elastic side bears more of a tax. The less elastic side bears more of the tax burden. Here, that is buyers.",
+        "watch": "A common mistake is to assume that the more elastic side bears more of a tax. The less elastic side bears more. In this particular worked graph, the price changes show an equal split; do not assume buyers always bear more.",
         "worked": "The untaxed equilibrium price is $15. With the tax, buyers pay $18, sellers receive $12, and 80 units are sold. Buyers bear $18 - $15 = $3 per unit, so their total burden is $3 x 80 = $240. Sellers bear the remaining $3 per unit.",
         "check": "When demand is less elastic than supply, which side is less able to avoid the tax?",
         "graph": true,
@@ -2301,7 +2300,7 @@
           "The gap between the quota price and world price creates quota rent on each permitted import.",
           "Look for deadweight loss from excessive domestic production and reduced consumption."
         ],
-        "watch": "Do not treat tariff revenue as full welfare loss. Part of the consumer loss is transferred to producers and government; the production and consumption distortions are net losses.",
+        "watch": "Do not assume quota rent automatically becomes government revenue. It accrues to whoever holds the import rights; auctioning those rights can transfer the rent to government. The recipient matters for national welfare, while production and consumption distortions create deadweight loss.",
         "worked": "Before trade, domestic supply and demand intersect at a price of $7. With free trade, buyers can purchase at the $3 world price, which creates imports. The quota limits imports, so the domestic price rises to $6. The difference between the $6 quota price and the $3 world price is $3 per imported unit; that $3 gap is quota rent.",
         "check": "A student says equivalent tariffs and quotas remain identical after demand changes. What is the key difference?",
         "graph": true,
@@ -2398,11 +2397,11 @@
         "recognition": [
           "Security can be legitimate, but the claim still requires evidence and comparison.",
           "Compare the free-trade and quota outcomes.",
-          "The argument requires a temporary, evidence-based learning mechanism and net benefits.",
+          "An infant-industry argument requires a temporary, evidence-based learning mechanism and net benefits.",
           "Efficiency concerns total surplus; equity concerns distribution.",
           "Adjustment goals can be pursued through policies with different efficiency costs."
         ],
-        "watch": "Do not ignore efficiency or distribution evidence. Security can be legitimate, but the claim still requires evidence and comparison. The argument requires a temporary, evidence-based learning mechanism and net benefits.",
+        "watch": "Do not ignore efficiency or distribution evidence. Security can be legitimate, but the claim still requires evidence and comparison. An infant-industry argument requires a temporary, evidence-based learning mechanism and net benefits.",
         "worked": "Suppose protection preserves 1,000 domestic jobs but costs consumers $30 million each year. The positive analysis reports both effects and asks whether less costly policies could assist affected workers. The normative decision then weighs security, distribution, and adjustment goals against the efficiency cost. Saying only that protection 'saves jobs' leaves the consumer cost and alternatives unexamined.",
         "check": "What is missing from the claim “protection saves jobs”?",
         "graph": false,
@@ -7587,14 +7586,14 @@
       "focusTerms": [],
       "content": {
         "outcome": "Calculate consumption, investment, government purchases, and net exports.",
-        "core": "The expenditure approach divides GDP into consumption, investment, government purchases, and net exports. Consumption covers household purchases of final goods and services; investment includes business capital, residential construction, and inventory changes; government purchases pay for current goods and services. Net exports add exports and subtract imports so GDP counts only domestic production, while transfer payments are excluded until recipients spend them on current output.",
+        "core": "The expenditure approach divides GDP into consumption, investment, government purchases, and net exports. Consumption covers household purchases of final goods and services; investment includes business capital, residential construction, and inventory changes; government purchases pay for current goods and services. Net exports add exports and subtract imports so GDP counts only domestic production, while transfer payments themselves are excluded. A recipient's later purchase is counted separately if it pays for current domestic output.",
         "recognition": [
           "Classify final spending as consumption, investment, government purchases, or net exports.",
           "Count newly produced capital goods and inventory changes as investment.",
           "Exclude transfer payments because they are not payments for current production.",
           "Subtract imports within net exports so foreign production is not counted in domestic GDP."
         ],
-        "watch": "A common mistake is to count transfer payments as government purchases. Transfers redistribute income; they enter GDP only when recipients later spend them on newly produced final goods or services.",
+        "watch": "A common mistake is to count transfer payments as government purchases. Transfers redistribute income and are never themselves part of GDP. A later purchase is classified by what is bought; imports are subtracted in NX.",
         "worked": "A business buys a newly produced domestic machine for $2 million; this is investment. Government pays contractors $80 million to repair roads; this is government purchases. An $80 million benefit payment is a transfer and is not counted when sent, though any later household purchase of final goods enters consumption. The expenditure identity classifies the counted spending as C + I + G + NX.",
         "check": "Does a government benefit payment enter G when it is sent?",
         "graph": false,
@@ -7779,7 +7778,7 @@
           "A free technology replaces paid translation services, measured GDP falls, and users translate more text with less effort."
         ],
         "watch": "A common mistake is to equate a change in market spending with the same change in total useful services. Moving activity into or out of markets can change GDP even when useful services or consumer benefit move differently.",
-        "worked": "A hurricane destroys homes, and rebuilding adds $2 billion to measured construction. GDP records the new production, so GDP rises by $2 billion. It does not subtract the homes that were destroyed or the loss of security and leisure, so the GDP increase does not prove that well-being improved.",
+        "worked": "A hurricane destroys homes, and rebuilding adds $2 billion to measured construction. Holding other domestic production constant, rebuilding adds $2 billion to GDP. It does not subtract the homes that were destroyed or the loss of security and leisure, so the GDP increase does not prove that well-being improved.",
         "check": "GDP misses which part of well-being?",
         "graph": false,
         "calculation": true,
@@ -7868,7 +7867,7 @@
           "Measure inflation as the percentage change in the index from one period to the next.",
           "Keep basket quantities fixed when calculating the CPI for different years."
         ],
-        "watch": "Do not use the wrong basket cost or forgetting to multiply by 100. The fixed basket costs more today than in the base year.",
+        "watch": "Do not use the wrong basket cost or forget to multiply by 100. Divide the current cost of the fixed basket by its base-year cost; the index can rise or fall as prices change.",
         "worked": "The CPI rises from 125 to 150. The inflation rate is (150 - 125)/125 x 100 = 20%. In a separate basket, base-year cost is 4($10) + 2($20) = $80 and current cost is 4($12) + 2($25) = $98, so CPI is ($98/$80) x 100 = 122.5.",
         "check": "A basket costs $400 in the base year and $500 today. What is today's CPI?",
         "graph": false,
@@ -8215,7 +8214,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Calculate and interpret real and nominal interest rates.",
-        "core": "The real interest rate equals the nominal interest rate minus inflation. The nominal rate states how many additional dollars a lender receives, while the real rate measures the change in purchasing power. Expected inflation determines the ex ante real rate when a loan is made; actual inflation determines the ex post real return and can redistribute purchasing power between borrowers and lenders.",
+        "core": "The real interest rate approximately equals the nominal interest rate minus inflation. The nominal rate states how many additional dollars a lender receives, while the real rate measures the change in purchasing power. Expected inflation determines the ex ante real rate when a loan is made; actual inflation determines the ex post real return and can redistribute purchasing power between borrowers and lenders.",
         "recognition": [
           "Unexpected inflation is higher than lenders and borrowers expected on a fixed-rate loan.",
           "Actual inflation is lower than expected on a fixed nominal loan.",
@@ -8224,7 +8223,7 @@
           "Ex ante real interest uses expected inflation; ex post real interest uses actual inflation."
         ],
         "watch": "Do not use actual inflation to describe an expected return or expected inflation to describe the realized return. Ex ante real interest uses expected inflation; ex post real interest uses actual inflation.",
-        "worked": "Nominal interest is 9% and inflation is 5%. Real interest = 9% - 5% = 4%. Therefore, 4%. Higher-than-expected inflation lowers the realized real repayment burden and shifts purchasing power from lender to borrower.",
+        "worked": "Nominal interest is 9% and inflation is 5%. Using the usual approximation, real interest is 9% - 5% = 4%. The exact real return is (1.09 / 1.05 - 1) x 100 = 3.81%. Higher-than-expected inflation lowers the realized real repayment burden and shifts purchasing power from lender to borrower.",
         "check": "What does a real interest rate describe that a nominal rate does not?",
         "graph": false,
         "calculation": true,
@@ -8310,11 +8309,11 @@
           "Higher productivity lets an economy produce more goods and services from its available labor and resources.",
           "Real GDP per person is commonly used to compare living standards and growth.",
           "Real GDP per person relates inflation-adjusted output to the number of people sharing that output.",
-          "An economist points to two countries."
+          "Compare growth in real GDP with population growth to distinguish total output from output per person."
         ],
         "watch": "A common mistake is to equate more total labor input with higher productivity or complete welfare improvement. Productivity is output per unit of input, and GDP omits important dimensions of well-being.",
         "worked": "If real GDP per person grows at 4% per year, the Rule of 70 estimates a doubling time of 70/4 = 17.5 years. This calculation describes material output growth, not complete well-being: longer work hours can raise GDP per person without raising output per hour or preserving leisure.",
-        "check": "Which doubling-time question can be answered with the Rule of 70?",
+        "check": "At 4% annual growth, about how many years does the Rule of 70 predict for real GDP per person to double?",
         "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
@@ -8397,7 +8396,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Calculate output per worker and interpret productivity changes.",
-        "core": "Labor productivity measures output per worker or per hour worked. 2,400 / 300 = 8 units per hour. Productivity = 500/50 = 10 units per hour. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter. A country can consume more when its workers produce more output per worker.",
+        "core": "Labor productivity measures output per worker or per hour worked. For example, 2,400 units produced in 300 labor hours means 2,400 / 300 = 8 units per hour. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter. A country can consume more when its workers produce more output per worker.",
         "recognition": [
           "Measure labor productivity as real output per worker or per hour worked.",
           "Compare output using the same amount of labor when evaluating a productivity change.",
@@ -8495,7 +8494,7 @@
         ],
         "watch": "Do not treat every increase in capital as producing the same output gain. More capital per worker can raise output per worker, but the production function becomes flatter as capital deepens.",
         "worked": "Increasing capital per worker from 20 to 40 raises output per worker from 28.53 to 36.37, a gain of 7.84. The production function becomes flatter as capital deepens, so equal additions to capital generate progressively smaller output gains. That curvature shows diminishing returns to capital.",
-        "check": "Which option consists entirely of physical capital?",
+        "check": "How does a worker's machine differ from the worker's training as a source of productivity?",
         "graph": true,
         "calculation": false,
         "difficulty": "Intermediate",
@@ -8671,15 +8670,15 @@
       "focusTerms": [],
       "content": {
         "outcome": "Classify labor-force status and calculate unemployment and participation rates.",
-        "core": "Labor-force status depends on paid work and active job search, not simply on whether a person wants a job. Paid work means employed, even if underemployed. Discouraged workers are not in the labor force because they are not actively searching. Discouraged workers leave the labor force, which can lower the measured unemployment rate. Discouraged workers are excluded from unemployment, which can hide labor market weakness.",
+        "core": "Labor-force status depends on work, job attachment, availability, and active job search. Employed people include those working for pay or profit, those temporarily absent from a job, and qualifying unpaid family workers. Unemployed people have no job, are available, and actively searched in the past four weeks; people awaiting recall from temporary layoff need not search. Discouraged workers who have stopped searching are outside the labor force.",
         "recognition": [
-          "Employed people performed paid work; unemployed people did not work but actively searched and were available.",
-          "People without work who are not actively searching are outside the labor force.",
-          "The labor force equals employed plus unemployed people.",
-          "The unemployment rate divides unemployed people by the labor force, not by the total population."
+          "Work for pay or profit during the reference week counts as employment, even if part-time.",
+          "At least 15 hours of unpaid work in a family business also counts as employment.",
+          "Labor force = employed + unemployed; unemployment rate = unemployed / labor force x 100.",
+          "Participation rate = labor force / civilian noninstitutional population age 16 and older x 100."
         ],
-        "watch": "A common mistake is to classify people only by whether they want a job. Employment depends on paid work; unemployment requires no job, availability, and active search.",
-        "worked": "In a group of 100 adults, 60 have paid jobs, 5 have no job but are available and actively searching, and 35 are not working or searching. The labor force is 60 + 5 = 65, and the unemployment rate is 5/65 x 100 = 7.7%. A discouraged worker in the last group is not counted as unemployed.",
+        "watch": "Wanting a job alone does not make a person unemployed. Check job status, availability, and active search, including the temporary-layoff exception. Discouraged workers are outside the labor force.",
+        "worked": "Among 100 people in the civilian noninstitutional population age 16 and older, 60 are employed, 5 are unemployed, and 35 are outside the labor force. Labor force = 60 + 5 = 65. Unemployment rate = 5/65 x 100 = 7.7%; participation rate = 65/100 x 100 = 65%.",
         "check": "Which two groups are added to calculate the labor force?",
         "graph": false,
         "calculation": true,
@@ -8771,7 +8770,7 @@
           "Structural unemployment is about mismatch; frictional unemployment is about normal search.",
           "A college graduate takes two months to find a first job that matches their skills."
         ],
-        "watch": "Do not use the cause of unemployment to decide official employment status, or using official status without identifying the unemployment type. Active job search makes the worker officially unemployed; normal search after leaving a suitable job is frictional unemployment.",
+        "watch": "Do not confuse the cause of unemployment with official labor-force status. For a jobless worker who is available and actively searching, normal search after leaving a job is frictional unemployment; recession-related job loss is cyclical unemployment.",
         "worked": "A worker leaves a job and spends six weeks searching for a better match; that is frictional unemployment. A factory worker whose skills no longer match available technology faces structural unemployment. A restaurant worker laid off because a recession reduces spending experiences cyclical unemployment.",
         "check": "A worker quits and spends two weeks finding a better job match. What type of unemployment is this?",
         "graph": false,
@@ -8852,7 +8851,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Analyze minimum wages, unions, job search, and efficiency wages.",
-        "core": "Labor-market institutions change wages, hiring, search incentives, and the balance between labor supplied and labor demanded. Surplus = 120 - 90 = 30 workers. Efficiency wages can improve effort and reduce turnover. A binding minimum wage can create a surplus of labor, meaning more workers want jobs than firms want to hire. Unemployment insurance can support job seekers, but may also reduce urgency to accept a job quickly.",
+        "core": "Labor-market institutions change wages, hiring, search incentives, and the balance between labor supplied and labor demanded. Efficiency wages can improve effort and reduce turnover. A binding minimum wage can create a surplus of labor, meaning more workers want jobs than firms want to hire. Unemployment insurance can support job seekers, but may also reduce urgency to accept a job quickly.",
         "recognition": [
           "A binding minimum wage can create a surplus of labor, meaning more workers want jobs than firms want to hire.",
           "Unemployment insurance can support job seekers, but may also reduce urgency to accept a job quickly.",
@@ -8861,7 +8860,7 @@
           "Union wage bargaining can raise wages above equilibrium and reduce the quantity of labor demanded."
         ],
         "watch": "Do not forget that a binding wage floor creates a surplus when labor supplied exceeds labor demanded. A binding minimum wage can create a surplus of labor, meaning more workers want jobs than firms want to hire.",
-        "worked": "At a minimum wage, 120 workers want jobs and firms hire 90. Surplus = 120 - 90 = 30 workers. Therefore, 30 workers. Faster matching reduces frictional unemployment; because frictional unemployment is part of the natural rate, the natural rate can fall.",
+        "worked": "At a binding minimum wage, 120 workers want jobs and firms hire 90. The labor surplus is 120 - 90 = 30 workers. The wage is held above equilibrium, so the quantity of labor supplied exceeds the quantity demanded.",
         "check": "Why can more generous unemployment insurance lengthen some unemployment spells even while protecting workers?",
         "graph": false,
         "calculation": true,
@@ -9037,15 +9036,15 @@
           "For a money-supply measure, classify an asset by its liquidity and the measure's stated definition."
         ],
         "watch": "Do not treat movement between M1 and non-M1 M2 assets as a change in total M2. Checking deposits are in M1 and M2, while retail money-market mutual funds are in M2 but not M1. The transfer lowers M1 without changing M2.",
-        "worked": "Currency is $800, checkable deposits are $1,200, and savings deposits are $1,500. M1 = currency + checkable deposits = $2,000. M2 adds savings deposits, so M2 = $3,500. Therefore, m1 = $2,000; M2 = $3,500.",
-        "check": "Which item belongs in M1?",
+        "worked": "Currency is $800, checking deposits are $1,200, and savings deposits are $1,500. Under the U.S. definition used since May 2020, savings deposits are included in M1, so M1 = $3,500. With no other M2 components, M2 is also $3,500. Under the older textbook definition excluding savings from M1, M1 would be $2,000.",
+        "check": "Are retail money-market mutual funds included in M1, M2, or both?",
         "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "LG-B-6001",
         "checkQuestionId": "ECON-SP-DISTINGUISH-M1-M2-5002",
-        "workedLabel": "CLASSIFYING MONEY FUNCTIONS"
+        "workedLabel": "CLASSIFYING MONEY-SUPPLY MEASURES"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Identify money’s functions, forms, and M1/M2 measurement.",
@@ -9121,16 +9120,16 @@
       "focusTerms": [],
       "content": {
         "outcome": "Explain central-bank structure, roles, independence, and the FOMC.",
-        "core": "The Federal Reserve conducts monetary policy, supplies reserve balances, supports payments, and serves as lender of last resort. Changes in reserves and interest rates are monetary policy territory. The Fed acts as the central bank and lender of last resort. The Federal Reserve conducts monetary policy and supports the banking/payments system; the Treasury manages federal finances and debt operations. Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks.",
+        "core": "The Federal Reserve conducts monetary policy, supplies reserve balances, supports payments, and serves as lender of last resort. Changes in reserves and interest rates are monetary policy territory. The Fed acts as the central bank and lender of last resort. The Federal Reserve conducts monetary policy and supports the banking/payments system; the Treasury manages federal finances and debt operations. Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks. The Fed includes the Board of Governors and 12 regional Reserve Banks. The FOMC directs monetary policy. Operational independence allows policy decisions without day-to-day political approval, within a mandate set by Congress.",
         "recognition": [
           "The Federal Reserve conducts monetary policy and supports the banking/payments system; the Treasury manages federal finances and debt operations.",
-          "Which statement best distinguishes the Federal Reserve from the U.S.",
+          "The FOMC sets the monetary-policy stance and directs open-market operations.",
           "A central-bank committee decides to change monetary conditions.",
           "A commercial bank approves a loan and credits the borrower’s checking account.",
           "Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks."
         ],
         "watch": "Do not treat commercial-bank deposits and central-bank reserves as the same liability issued by the same institution. Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks.",
-        "worked": "The Federal Reserve buys Treasury securities from a bank. The bank receives additional reserve balances, so the action changes reserves and tends to lower short-term interest rates. Because the Fed initiated the operation through its balance sheet, this is monetary policy, not a change in federal taxes or spending.",
+        "worked": "The Federal Reserve buys Treasury securities from a bank, adding reserve balances. In the limited-reserves textbook model, this tends to lower short-term rates; in an ample-reserves system, administered rates are the main rate-control tool. The purchase is monetary policy, not a change in federal taxes or spending.",
         "check": "Which group directs open-market operations?",
         "graph": false,
         "calculation": false,
@@ -9286,13 +9285,13 @@
         "outcome": "Apply open-market operations, administered rates, and reserve tools.",
         "core": "The Federal Reserve influences bank reserves, the money supply, and short-term interest rates through several policy tools. Open-market purchases add reserves to the banking system, while open-market sales remove them. Administered rates change the incentives banks face when borrowing or holding reserves. Changes in reserves can affect bank lending and deposit creation, although the actual expansion of money may be smaller than the simple textbook multiplier predicts.",
         "recognition": [
-          "An open-market purchase adds reserves and tends to lower short-term interest rates.",
-          "An open-market sale removes reserves and tends to raise short-term interest rates.",
-          "Lower administered rates encourage lending and monetary expansion; higher rates restrain them.",
-          "Trace the direction of reserves, bank lending, money, and interest rates for each policy tool."
+          "An open-market purchase adds reserves; in the limited-reserves model this tends to lower short-term rates.",
+          "An open-market sale removes reserves; in the limited-reserves model this tends to raise short-term rates.",
+          "Lower administered rates ease monetary conditions; higher administered rates restrain them.",
+          "In an ample-reserves system, administered rates are the main tool for controlling short-term rates."
         ],
         "watch": "Do not assume every tool in a policy package pushes bank lending in the same direction. The open-market purchase is expansionary, while a higher return on reserves can weaken the lending response.",
-        "worked": "The central bank buys $50 million of securities, adding $50 million to bank reserves. If banks lend 80% of new reserves and the deposit multiplier is 5, the effective multiplier is 0.80 x 5 = 4. The potential increase in deposits is therefore $50 million x 4 = $200 million, smaller than the $250 million simple-model maximum.",
+        "worked": "The central bank buys $50 million of securities, adding $50 million to bank reserves. With a 20% required reserve ratio, no excess reserves, and full redepositing, the simple deposit multiplier is 1 / 0.20 = 5. Maximum deposit expansion is $50 million x 5 = $250 million. Currency drain or additional reserve holding makes the result smaller; it cannot be calculated by multiplying 5 by the lending share.",
         "check": "If the central bank lowers the rate it charges banks for direct loans, what is the immediate textbook effect?",
         "graph": false,
         "calculation": true,
@@ -9300,7 +9299,7 @@
         "time": "5 minutes",
         "exampleQuestionId": "ECON-SP-CHOOSE-FED-TOOL-EFFECT-6007",
         "checkQuestionId": "LG-R-5020",
-        "workedLabel": "MONEY MULTIPLIER IN ACTION"
+        "workedLabel": "OPEN-MARKET PURCHASE AND DEPOSIT EXPANSION"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Apply open-market operations, administered rates, and reserve tools.",
@@ -9670,14 +9669,14 @@
         "outcome": "Connect expected inflation to nominal and real interest rates.",
         "core": "The Fisher effect links the nominal interest rate to the real interest rate and expected inflation. The nominal rate approximately equals the real rate plus expected inflation, so lenders generally require a higher nominal rate when they expect faster price growth. This adjustment helps preserve the expected real return, though unexpected inflation can still redistribute purchasing power.",
         "recognition": [
-          "The Fisher equation links nominal rates, real rates, and expected inflation: nominal rate equals real rate plus expected inflation.",
+          "The Fisher equation links nominal rates, real rates, and expected inflation: nominal rate approximately equals real rate plus expected inflation.",
           "Nominal interest rates include expected inflation, so they rise when expected inflation rises.",
           "The Fisher effect says higher expected inflation tends to raise nominal interest rates.",
           "Higher expected inflation tends to be built into higher nominal interest rates.",
           "A bank sets a fixed nominal loan rate today for next year."
         ],
         "watch": "Do not use realized inflation to explain a nominal rate chosen before the loan was made. The nominal rate written into a contract reflects expected inflation at the time the contract is set; realized inflation determines the ex post real return.",
-        "worked": "Real interest is 2% and expected inflation is 6%. Nominal interest is 2% + 6% = 8%. Therefore, 8%. The Fisher equation links nominal rates, real rates, and expected inflation: nominal rate equals real rate plus expected inflation.",
+        "worked": "Real interest is 2% and expected inflation is 6%. The usual approximation gives nominal interest of 2% + 6% = 8%. The exact compounding calculation is (1.02 x 1.06 - 1) x 100 = 8.12%. At a given real rate, higher expected inflation raises the nominal rate lenders require.",
         "check": "A borrower says the Fisher effect is found by subtracting this year’s actual inflation from a loan rate set last year. What is the key mistake?",
         "graph": false,
         "calculation": true,
@@ -9766,7 +9765,7 @@
           "Shoe-leather costs refer to the time and effort people spend reducing money holdings when inflation is high.",
           "Shoeleather costs are the wasted effort people spend trying to hold less money during inflation.",
           "Menu costs are the costs firms face when they change posted prices.",
-          "The graph shows inflation after monetary expansion. Firms repeatedly changing posted prices is menu cost.",
+          "Firms repeatedly changing posted prices incur menu costs.",
           "Menu costs are the costs of changing posted prices."
         ],
         "watch": "Do not confuse shoeleather costs with menu costs. Shoeleather costs are the wasted effort people spend trying to hold less money during inflation.",
@@ -9854,16 +9853,15 @@
       "focusTerms": [],
       "content": {
         "outcome": "Analyze seigniorage, the inflation tax, disinflation, and deflation burdens.",
-        "core": "Money creation can finance government spending by reducing the purchasing power of existing money balances, an effect called the inflation tax. The inflation tax reduces the purchasing power of money people already hold. Money-financed government spending can erode the purchasing power of existing money balances; that loss is called the inflation tax. Printing money can finance spending, but it reduces the value of money and can create high inflation. Inflation acts like a tax on money holders by reducing the purchasing power of their cash balances.",
+        "core": "Money creation can finance government spending; the revenue from creating money is seigniorage. When prices rise, existing money balances lose purchasing power, creating an inflation tax on money holders. Disinflation means slower inflation; deflation means a falling price level. Deflation raises the purchasing power of cash but also raises the real burden of a fixed nominal debt.",
         "recognition": [
-          "Printing money can finance spending, but it reduces the value of money and can create high inflation.",
-          "Inflation acts like a tax on money holders by reducing the purchasing power of their cash balances.",
-          "Printing money to finance spending creates an inflation tax because it reduces the purchasing power of money people already hold.",
-          "A government creates money to finance purchases, the price level rises, and households’ existing cash buys less.",
-          "Printing money can act like an inflation tax by reducing the purchasing power of money."
+          "Money-financed government spending can erode the purchasing power of existing cash balances.",
+          "A fall from 6% to 2% inflation is disinflation: prices still rise.",
+          "Negative inflation means deflation: the price level falls.",
+          "With a fixed nominal debt, lower prices raise the amount of goods needed to repay it."
         ],
         "watch": "Do not assume a tax must always be explicit and legislative. Inflation acts like a tax on money holders by reducing the purchasing power of their cash balances.",
-        "worked": "A household holds $1,000 in cash while the price level rises 10%. The cash balance still says $1,000, but it now buys roughly 10% less. That loss of purchasing power is the inflation-tax burden on money holders when money creation helps finance government spending.",
+        "worked": "A household holds $1,000 in cash while the price level rises 10%. Its purchasing power becomes $1,000 / 1.10 = $909.09 in initial-price dollars, a 9.09% loss. If the price level instead falls 10%, a fixed $1,000 debt has a real repayment burden of $1,000 / 0.90 = $1,111.11 in initial-price dollars.",
         "check": "A student looks for an “inflation tax” line on a tax return. What is the best correction?",
         "graph": false,
         "calculation": true,
@@ -10054,8 +10052,8 @@
           "Connect interest rates to interest-sensitive spending, especially investment and durable consumption.",
           "The spending change shifts aggregate demand and affects output and the price level in the short run."
         ],
-        "watch": "Do not assume the graph shift alone gives the size of the AD effect. The graph shows MS left and AD left. MPC = 0.8 gives multiplier 5, so a $20 billion investment fall lowers AD by $100 billion.",
-        "worked": "In the money-market panel, contraction from MS1 to MS2 raises the interest rate from r1 to r2. Higher borrowing costs reduce interest-sensitive spending, so aggregate demand shifts from AD1 to AD2. At price level P1, output falls from Y1 to Y2. The panels display the complete monetary-policy transmission chain.",
+        "watch": "The graph identifies the direction of the monetary-policy effect, not its size. A multiplier calculation also needs an initial spending change and assumptions about induced consumption and other offsets.",
+        "worked": "In the money-market panel, contraction from MS1 to MS2 raises the interest rate from r1 to r2. Higher borrowing costs reduce interest-sensitive spending, so aggregate demand shifts from AD1 to AD2. At price level P1, real output demanded falls from Y1 to Y2. The panels display the complete monetary-policy transmission chain.",
         "check": "A student writes only “the central bank increases money supply, so aggregate demand rises.” Which missing links are essential to the standard short-run transmission mechanism?",
         "graph": true,
         "calculation": true,
@@ -10154,7 +10152,7 @@
           "Distinguish a shift of aggregate demand from a movement along the curve caused by the price level."
         ],
         "watch": "A common mistake is to classify fiscal policy from the economy's condition rather than the government's action. Higher purchases or lower taxes are expansionary; lower purchases or higher taxes are contractionary.",
-        "worked": "At the displayed price level P, an expansionary fiscal action shifts aggregate demand from AD1 to AD2. Real output rises from Y1 to Y2. A larger action could shift demand to AD3 and output to Y3, but the graph does not establish which package is desirable; that depends on the output gap and timing.",
+        "worked": "At the displayed price level P, an expansionary fiscal action shifts aggregate demand from AD1 to AD2. Real output demanded rises from Y1 to Y2 at that fixed price level. A larger action could shift demand to AD3 and quantity demanded to Y3, but the graph does not establish which package is desirable; that depends on the output gap and timing.",
         "check": "Why can a tax cut shift aggregate demand to the right in the short run?",
         "graph": true,
         "calculation": true,
@@ -10167,7 +10165,7 @@
         "assetMetadata": {
           "filename": "moneymultiplier.webp",
           "sourceUrl": "data/question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp",
-          "sha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
+          "sha256": "b8371794ea980d9cdb463314a72969379fa334ef908ed171035c1b79de0d9830",
           "imageAlt": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
           "graphDescription": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3."
         }
@@ -10245,7 +10243,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Calculate multiplier effects and evaluate crowding out.",
-        "core": "A spending or tax change can create a multiplied demand response, while higher interest rates can crowd out part of the expansion. Fiscal policy can shift AD right, the multiplier can push it farther, and crowding out can pull the final effect back. Crowding out offsets fiscal expansion by reducing private investment when interest rates rise. Crowding out reduces private investment when fiscal expansion raises interest rates.",
+        "core": "A spending or tax change can create a multiplied demand response, while higher interest rates can crowd out part of the expansion. Fiscal policy can shift AD right, the multiplier can push it farther, and crowding out can pull the final effect back. Crowding out offsets fiscal expansion by reducing private investment when interest rates rise. Crowding out reduces private investment when fiscal expansion raises interest rates. In the simple fixed-price model with lump-sum taxes and no import leakage, the spending multiplier is 1 / (1 - MPC), and the tax multiplier is -MPC / (1 - MPC).",
         "recognition": [
           "Initial fiscal shift, multiplier expansion, then crowding out offset.",
           "Crowding out offsets fiscal expansion by reducing private investment when interest rates rise.",
@@ -10253,7 +10251,7 @@
           "Crowding out occurs when higher interest rates reduce private investment spending."
         ],
         "watch": "A common mistake is to report a gross multiplier effect without subtracting private spending displaced by higher interest rates. Crowding out makes the net demand increase smaller.",
-        "worked": "Suppose a fiscal expansion would move aggregate demand from AD1 to AD3 if no private spending were displaced. Higher interest rates crowd out some investment, so the final curve is only AD2. Output rises from Y1 to Y2 rather than Y3; the distance from Y2 to Y3 is the crowding-out offset.",
+        "worked": "With MPC = 0.8, the simple spending multiplier is 5. A $20 billion increase in purchases raises demand by $100 billion before offsets. In the graph, AD1 to AD3 is the gross expansion; crowding out leaves AD2. At fixed P, real output demanded rises to Y2 rather than Y3. Actual equilibrium output also depends on aggregate supply.",
         "check": "Why might a tax cut have a smaller immediate effect than an equal increase in government purchases?",
         "graph": true,
         "calculation": true,
@@ -10440,13 +10438,13 @@
         "outcome": "Explain the slope and shifters of aggregate demand.",
         "core": "Aggregate demand shows the total quantity of domestically produced goods and services demanded at each price level. It slopes downward because a lower price level increases the purchasing power of money balances, tends to reduce interest rates, and makes domestic goods relatively cheaper abroad. Consumption, investment, government purchases, or net exports can change for reasons other than the price level; those changes shift the entire aggregate-demand curve.",
         "recognition": [
-          "At each price level, AD1 shows more real GDP demanded.",
-          "AD2 lies to the right of AD1, so the graph shows an increase in aggregate demand.",
+          "At each price level, a rightward AD shift means more real GDP demanded.",
+          "In the displayed graph, AD1 lies left of AD0, showing a decrease in aggregate demand.",
           "A lower domestic price level makes domestic goods relatively cheaper to foreign buyers.",
           "A rise in the price level reduces consumption because money holdings buy less."
         ],
         "watch": "Do not confuse the three reasons aggregate demand slopes downward. A lower domestic price level can lower interest rates and the currency value, raising net exports.",
-        "worked": "A fall in planned consumption shifts aggregate demand left from AD0 to AD1. At a price level of 60, real GDP falls from about 120 to 80, a 40-unit decrease. Because spending changes at every price level, the economy shifts to a new AD curve rather than moving along AD0.",
+        "worked": "A fall in planned consumption shifts aggregate demand left from AD0 to AD1. At a price level of 60, real GDP demanded falls from about 120 to about 70, a decrease of about 50 units. Spending changes at every price level, so this is a shift to a new AD curve, not movement along AD0.",
         "check": "What change from AD0 to AD1 is shown?",
         "graph": true,
         "calculation": true,
@@ -10454,12 +10452,12 @@
         "time": "5 minutes",
         "exampleQuestionId": "PG3-AD-M-004",
         "checkQuestionId": "PG3-AD-E-001",
-        "workedLabel": "MOVEMENT ALONG AGGREGATE DEMAND",
+        "workedLabel": "A LEFTWARD SHIFT OF AGGREGATE DEMAND",
         "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/aggregate-demand/ad-02.webp",
         "assetMetadata": {
           "filename": "ad-02.webp",
           "sourceUrl": "data/question-assets/aggregate-demand/AD-02.webp",
-          "sha256": "1b23e95de217b5521d827d0d59471e9deb6fc5ec782cb2c421d25b540d736f81",
+          "sha256": "56dc8f0e2484a3220f53da4a0fee1fc31130a42475dde27fcdbe7147c63297d1",
           "imageAlt": "The horizontal axis is real GDP and the vertical axis is price level. AD0 slopes downward from price level 120 at real GDP 0 to price level 0 at real GDP 240. A dashed curve AD1 lies to the left of AD0, running from about 95 at real GDP 0 to 0 at real GDP 190. This indicates a decrease in aggregate demand. At price level 45, AD0 corresponds to real GDP 150 and AD1 corresponds to real GDP 100.",
           "graphDescription": "The horizontal axis is real GDP and the vertical axis is price level. AD0 slopes downward from price level 120 at real GDP 0 to price level 0 at real GDP 240. A dashed curve AD1 lies to the left of AD0, running from about 95 at real GDP 0 to 0 at real GDP 190. This indicates a decrease in aggregate demand. At price level 45, AD0 corresponds to real GDP 150 and AD1 corresponds to real GDP 100."
         }
@@ -10548,7 +10546,7 @@
           "Short-run output can lie above or below potential output because adjustment is incomplete."
         ],
         "watch": "Do not shift SRAS merely because the current price level changes. Ask whether production conditions changed at every price level.",
-        "worked": "Higher energy prices raise firms' costs. The graph shifts SRAS from AS0 to AS1, upward and left. At real GDP 150, the price level associated with supply rises from 150 to 190. With aggregate demand fixed, the new short-run equilibrium would have lower real GDP and a higher price level.",
+        "worked": "Higher energy prices raise firms' costs. The graph shifts SRAS from AS0 to AS1, upward and left. At real GDP 150, the price level associated with supply rises from roughly 150 to roughly 190. With aggregate demand fixed, the new short-run equilibrium would have lower real GDP and a higher price level.",
         "check": "Expected input prices fall. Does the economy move along SRAS or does SRAS shift?",
         "graph": true,
         "calculation": false,
@@ -10755,7 +10753,7 @@
           "A short-run tradeoff between inflation and unemployment.",
           "Higher AD raises output and prices, which maps to lower unemployment and higher inflation.",
           "The short-run Phillips curve shows a trade-off between inflation and unemployment.",
-          "Points A and B lie on the same short-run Phillips curve."
+          "A move up and left along the displayed SRPC means lower unemployment and higher inflation."
         ],
         "watch": "Do not confuse the Phillips curve with the AD-AS model. The short-run Phillips curve shows that lower unemployment is associated with higher inflation, and higher unemployment is associated with lower inflation.",
         "worked": "Point A is at 5 percent unemployment and 2.5 percent inflation. The horizontal guide through point A hits the inflation axis at 2.5 percent. Therefore, 2.5 percent. A downward-sloping SRPC shows an inverse short-run relationship: less unemployment comes with more inflation.",
@@ -13330,7 +13328,7 @@
       ],
       "content": {
         "outcome": "Trace fiscal and financial shocks through saving, NCO, FX, NX, and AD.",
-        "core": "Open-economy policy analysis connects several markets. A larger budget deficit lowers public and national saving, raises the real interest rate, reduces investment and NCO, and shifts the supply of dollars left. With dollar demand fixed, the dollar appreciates and net exports fall. The NX decline and investment crowding out can partly offset the direct aggregate-demand effect of higher government purchases.",
+        "core": "Open-economy policy analysis connects several markets. Here the FX panel uses vertical dollar supply fixed by NCO at a given real interest rate, rather than the upward-sloping gross-flow supply in the basic FX market. Hold domestic and foreign price levels fixed when interpreting the nominal exchange-rate change. A larger budget deficit lowers public and national saving, raises the real interest rate, reduces investment and NCO, and shifts the supply of dollars left. With dollar demand fixed, the dollar appreciates and net exports fall. The NX decline and investment crowding out can partly offset the direct aggregate-demand effect of higher government purchases.",
         "recognition": [
           "Write the chain market by market; do not skip from policy directly to the exchange rate.",
           "Higher domestic real rates lower NCO by making domestic assets relatively attractive.",
