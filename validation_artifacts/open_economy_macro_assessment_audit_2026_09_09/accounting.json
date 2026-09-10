@@ -1,0 +1,1202 @@
+{
+  "before": 240,
+  "after": 240,
+  "added": 0,
+  "removed": 0,
+  "content-revised": 77,
+  "accessibility-only": 4,
+  "path-only": 0,
+  "unchanged": 159,
+  "byConcept": {
+    "capital-flows-and-net-capital-outflow": {
+      "content-revised": 9,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 31
+    },
+    "foreign-exchange-market": {
+      "content-revised": 18,
+      "accessibility-only": 4,
+      "path-only": 0,
+      "unchanged": 18
+    },
+    "international-transactions-and-identities": {
+      "content-revised": 8,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 32
+    },
+    "nominal-exchange-rates": {
+      "content-revised": 10,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 30
+    },
+    "open-economy-policy-transmission": {
+      "content-revised": 12,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 28
+    },
+    "real-exchange-rates-and-purchasing-power": {
+      "content-revised": 20,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 20
+    }
+  },
+  "byObjective": {
+    "FX.analyze_magnitude_bounded_fx_shifts": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.analyze_reinforcing_fx_shifts": {
+      "content-revised": 2,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.analyze_simultaneous_fx_shifts": {
+      "content-revised": 2,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.bridge_fx_nx_ad": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "FX.calculate_fx_quantity_change": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "FX.calculate_fx_rate_change": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "FX.calculate_simultaneous_fx_change": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.diagnose_vertical_supply_misconception": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.explain_fx_indeterminacy": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.identify_fx_demand": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.identify_fx_equilibrium": {
+      "content-revised": 0,
+      "accessibility-only": 2,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.identify_fx_supply": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.infer_fx_demand_shifter": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "FX.infer_fx_supply_shifter": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "FX.infer_simultaneous_fx_shifters": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.integrate_trade_and_nco_shifts": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.interpret_fx_axis": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "FX.interpret_offsetting_fx_shifts": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.map_nco_to_fx_supply": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 3
+    },
+    "FX.map_trade_shock_to_fx_demand": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "FX.predict_fx_demand_shift": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.read_fx_demand_shift": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "FX.read_fx_equilibrium": {
+      "content-revised": 0,
+      "accessibility-only": 2,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.read_fx_supply_shift": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "FX.read_simultaneous_fx_outcome": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "FX.reason_about_shift_order": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.repair_movement_shift_confusion": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "FX.trace_fx_feedback_to_nx": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "FX.trace_interest_nco_fx_nx_chain": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NCO.analyze_competing_nco_forces": {
+      "content-revised": 2,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NCO.analyze_reinforcing_nco_forces": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.bridge_interest_nco_fx_supply": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.calculate_capital_flight_shift": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NCO.calculate_compound_nco": {
+      "content-revised": 2,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NCO.calculate_nco": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 4
+    },
+    "NCO.calculate_nco_change": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.classify_asset_transaction": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "NCO.classify_foreign_direct_investment": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "NCO.connect_capital_inflow_investment": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.connect_interest_rate_asset_demand": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.define_capital_flight": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.define_nco": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.diagnose_inflow_outflow_reversal": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.distinguish_gross_net_capital_flows": {
+      "content-revised": 2,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.evaluate_risk_adjusted_capital_flows": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.explain_interest_rate_nco_slope": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NCO.interpret_nco_sign": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.reconcile_saving_and_gross_flows": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.repair_inflow_outflow_sign": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.solve_asset_flows_from_saving": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.solve_gross_asset_flows": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.solve_gross_flow_change": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.trace_capital_flight_feedback": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.trace_foreign_rate_to_nco": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NCO.trace_interest_rate_to_nco": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "NCO.trace_portfolio_reallocation": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "NCO.trace_risk_to_nco": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.apply_appreciation_to_buyers": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 3
+    },
+    "NER.apply_exchange_rate_to_asset_value": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.bridge_nominal_to_real_rate": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.calculate_appreciation_purchasing_power": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NER.calculate_currency_percentage_change": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 4
+    },
+    "NER.calculate_reciprocal_rate": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 3
+    },
+    "NER.classify_appreciation_depreciation": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "NER.combine_asset_and_currency_returns": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.combine_price_and_exchange_changes": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.compare_bilateral_currency_changes": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NER.compare_conversion_costs": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NER.compare_reciprocal_percentage_changes": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 3
+    },
+    "NER.compound_currency_changes": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NER.connect_currency_value_purchasing_power": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.connect_depreciation_to_foreign_price": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.convert_currency": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "NER.convert_export_revenue": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NER.convert_foreign_price": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.diagnose_quote_direction": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.evaluate_price_exchange_interaction": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.infer_currency_change_from_prices": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.interpret_exchange_rate_quote": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "NER.interpret_stronger_currency": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.repair_quote_direction": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "NER.trace_export_price_conversion": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.analyze_competing_policy_channels": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "POL.analyze_trade_policy_offset": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "POL.bridge_budget_fx_nx_ad": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.calculate_budget_external_effect": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.calculate_capital_flight_feedback": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.calculate_trade_policy_offset": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.connect_capital_flight_loanable_funds": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.connect_exchange_rate_to_ad": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.integrate_identity_and_fx_shifts": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "POL.integrate_monetary_foreign_demand": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.integrate_trade_fiscal_policy": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.integrate_trade_policy_capital_flight": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.qualify_budget_deficit_chain": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.repair_deficit_nco_direction": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.start_budget_deficit_chain": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "POL.start_capital_flight_chain": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "POL.test_budget_chain_assumption": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.trace_budget_deficit_chain": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "POL.trace_capital_flight_feedback": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.trace_capital_flight_to_fx": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.trace_capital_flight_two_markets": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "POL.trace_deficit_to_exchange_rate": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.trace_deficit_to_fx_supply": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "POL.trace_exchange_rate_to_nx": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.trace_foreign_demand_shock": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.trace_interest_rate_to_nco": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.trace_monetary_open_economy_channel": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.trace_nco_to_exchange_rate": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "POL.trace_nco_to_fx_supply": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "POL.trace_saving_to_interest_rate": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.apply_real_exchange_rate_formula": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "RER.apply_relative_ppp": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 3
+    },
+    "RER.approximate_real_rate_change": {
+      "content-revised": 4,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.bridge_real_rate_to_net_exports": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.calculate_compound_real_rate_change": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.calculate_real_exchange_rate": {
+      "content-revised": 4,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.calculate_real_rate_change": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.calculate_real_rate_from_inflation": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.classify_real_appreciation": {
+      "content-revised": 2,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.compare_price_indexes_ppp": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.compare_traded_nontraded_goods": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.define_real_exchange_rate": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.diagnose_nominal_real_confusion": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.evaluate_ppp_evidence": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.evaluate_relative_ppp_prediction": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.explain_ppp": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.identify_ppp_limitation": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 4
+    },
+    "RER.infer_nominal_change_from_real_stability": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.interpret_real_rate_goods_prices": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.reason_about_offsetting_real_rate_forces": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.reason_about_reinforcing_real_rate_forces": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.repair_real_rate_formula": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.separate_nominal_real_changes": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "RER.test_absolute_ppp": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "RER.trace_price_level_to_real_rate": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "TX.apply_nx_nco_identity": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 3
+    },
+    "TX.apply_saving_identity": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.audit_open_economy_data": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.bridge_nco_to_fx_supply": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.calculate_nco_from_saving_investment": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.calculate_nco_transactions": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.calculate_net_exports": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 3
+    },
+    "TX.calculate_trade_change": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.classify_imported_investment": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.classify_international_transaction": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.classify_trade_balance": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.compare_external_balances": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "TX.connect_saving_investment_trade_balance": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.diagnose_import_misconception": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.evaluate_trade_balance_claim": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "TX.explain_import_adjustment": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "TX.interpret_nco_sign": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "TX.reason_about_indeterminate_balances": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.reconcile_asset_and_trade_flows": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "TX.reconcile_open_economy_accounts": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "TX.repair_nx_sign": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.solve_full_external_accounts": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.solve_open_economy_identity": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "TX.solve_saving_from_trade_balance": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.solve_saving_nco_chain": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 2
+    },
+    "TX.synthesize_gdp_import_accounting": {
+      "content-revised": 2,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "TX.trace_asset_purchase_identity": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    },
+    "TX.trace_saving_investment_external_balance": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 0
+    }
+  },
+  "byCanonicalDifficulty": {
+    "easy": {
+      "content-revised": 10,
+      "accessibility-only": 3,
+      "path-only": 0,
+      "unchanged": 41
+    },
+    "elite": {
+      "content-revised": 5,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 7
+    },
+    "hard": {
+      "content-revised": 15,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 44
+    },
+    "legendary": {
+      "content-revised": 39,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 16
+    },
+    "medium": {
+      "content-revised": 8,
+      "accessibility-only": 1,
+      "path-only": 0,
+      "unchanged": 51
+    }
+  },
+  "byType": {
+    "analysis": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    },
+    "application": {
+      "content-revised": 29,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 68
+    },
+    "bridge": {
+      "content-revised": 1,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 5
+    },
+    "calculation": {
+      "content-revised": 29,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 48
+    },
+    "definition": {
+      "content-revised": 7,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 19
+    },
+    "diagnosis": {
+      "content-revised": 6,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 9
+    },
+    "graph": {
+      "content-revised": 4,
+      "accessibility-only": 4,
+      "path-only": 0,
+      "unchanged": 8
+    },
+    "multi-step": {
+      "content-revised": 0,
+      "accessibility-only": 0,
+      "path-only": 0,
+      "unchanged": 1
+    }
+  },
+  "graphLinkedBefore": 22,
+  "graphLinkedAfter": 22,
+  "trialGraphBefore": 15,
+  "trialGraphAfter": 15,
+  "referencesRepaired": 0,
+  "unresolvedReferences": 0,
+  "distinctImagesInspected": 10,
+  "assetRegistrationsInspected": 10,
+  "revisedQuantitativeIndependentlyVerified": 39,
+  "accessibilityRuntimeContractsCorrected": 3,
+  "conceptAssetMetadataEntriesCorrected": 3,
+  "defectCategories": {
+    "exchangeRateQuoteOrUnitClarifications": {
+      "count": 13,
+      "ids": [
+        "PMOE-RER-M-001",
+        "PMOE-RER-B2-001",
+        "PMOE-RER-H-001",
+        "PMOE-RER-B3-001",
+        "PMOE-RER-LB-002",
+        "PMOE-RER-E-003",
+        "PMOE-RER-E-005",
+        "PMOE-RER-M-002",
+        "PMOE-RER-H-002",
+        "PMOE-RER-B1-002",
+        "PMOE-FX-E-006",
+        "PMOE-FX-B1-002",
+        "PMOE-POL-B1-002"
+      ],
+      "definition": "Explicit audited record set; categories overlap and are not additive to exclusive record accounting."
+    },
+    "signDirectionDefects": {
+      "count": 1,
+      "ids": [
+        "PMOE-RER-M-004"
+      ],
+      "definition": "Explicit audited record set; categories overlap and are not additive to exclusive record accounting."
+    },
+    "ambiguousIdentificationOrModelCorrections": {
+      "count": 11,
+      "ids": [
+        "PMOE-TX-H-006",
+        "PMOE-FX-E-001",
+        "PMOE-FX-E-002",
+        "PMOE-FX-H-005",
+        "PMOE-FX-H-006",
+        "PMOE-FX-B3-002",
+        "PMOE-FX-LB-001",
+        "PMOE-FX-R-001",
+        "PMOE-POL-B2-003",
+        "PMOE-POL-EL-002",
+        "PMOE-POL-LB-002"
+      ],
+      "definition": "Explicit audited record set; categories overlap and are not additive to exclusive record accounting."
+    },
+    "multipleValidOptionDefects": {
+      "count": 2,
+      "ids": [
+        "PMOE-RER-R-001",
+        "PMOE-RER-EL-001"
+      ],
+      "definition": "Explicit audited record set; categories overlap and are not additive to exclusive record accounting."
+    },
+    "graphPrecisionClarifications": {
+      "count": 1,
+      "ids": [
+        "PMOE-FX-L-006"
+      ],
+      "definition": "Explicit audited record set; categories overlap and are not additive to exclusive record accounting."
+    },
+    "flowOrRateTerminologyCorrections": {
+      "count": 3,
+      "ids": [
+        "PMOE-NCO-B3-003",
+        "PMOE-POL-H-002",
+        "PMOE-NER-H-005"
+      ],
+      "definition": "Explicit audited record set; categories overlap and are not additive to exclusive record accounting."
+    }
+  }
+}

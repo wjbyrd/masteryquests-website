@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "PMOE-TX-E-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.calculate_net_exports",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-E-002",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.classify_trade_balance",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-E-003",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.classify_international_transaction",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-E-004",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.apply_nx_nco_identity",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-E-005",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.interpret_nco_sign",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-E-006",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.explain_import_adjustment",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-M-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.calculate_net_exports",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-M-002",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.calculate_nco_from_saving_investment",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-M-003",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.apply_nx_nco_identity",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-M-004",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.calculate_nco_transactions",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-M-005",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.explain_import_adjustment",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-M-006",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.connect_saving_investment_trade_balance",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-H-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.solve_open_economy_identity",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-H-002",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.solve_saving_nco_chain",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-H-003",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.diagnose_import_misconception",
+    "canonicalDifficulty": "hard",
+    "type": "diagnosis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-H-004",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.calculate_trade_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-H-005",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.solve_saving_from_trade_balance",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-H-006",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.trace_asset_purchase_identity",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Initially wording conflates period accounting with immediate causal adjustment."
+  },
+  {
+    "id": "PMOE-TX-EL-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.reason_about_indeterminate_balances",
+    "canonicalDifficulty": "elite",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-EL-002",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.reconcile_open_economy_accounts",
+    "canonicalDifficulty": "elite",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-L-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.synthesize_gdp_import_accounting",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-TX-L-002",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.compare_external_balances",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-TX-L-003",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.reconcile_asset_and_trade_flows",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-TX-L-004",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.evaluate_trade_balance_claim",
+    "canonicalDifficulty": "legendary",
+    "type": "diagnosis",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-TX-L-005",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.trace_saving_investment_external_balance",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-TX-L-006",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.audit_open_economy_data",
+    "canonicalDifficulty": "legendary",
+    "type": "diagnosis",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-TX-B1-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.calculate_net_exports",
+    "canonicalDifficulty": "easy",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-B1-002",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.apply_saving_identity",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-B1-003",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.interpret_nco_sign",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-B2-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.solve_open_economy_identity",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-B2-002",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.classify_imported_investment",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-B2-003",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.apply_nx_nco_identity",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-B3-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.solve_saving_nco_chain",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-B3-002",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.synthesize_gdp_import_accounting",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-B3-003",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.audit_open_economy_data",
+    "canonicalDifficulty": "hard",
+    "type": "diagnosis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-LB-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.solve_full_external_accounts",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-LB-002",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.reconcile_open_economy_accounts",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-LB-003",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.synthesize_gdp_import_accounting",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-TX-R-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.repair_nx_sign",
+    "canonicalDifficulty": "medium",
+    "type": "diagnosis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-TX-BR-001",
+    "concept": "international-transactions-and-identities",
+    "objective": "TX.bridge_nco_to_fx_supply",
+    "canonicalDifficulty": "hard",
+    "type": "bridge",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-E-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.interpret_exchange_rate_quote",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Weak distractors use irrelevant units instead of reciprocal-quote misconceptions."
+  },
+  {
+    "id": "PMOE-NER-E-002",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.classify_appreciation_depreciation",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Reciprocal answer is meaningless as a currency outcome."
+  },
+  {
+    "id": "PMOE-NER-E-003",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.connect_currency_value_purchasing_power",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-E-004",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.calculate_reciprocal_rate",
+    "canonicalDifficulty": "easy",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-E-005",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.interpret_stronger_currency",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-E-006",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.apply_appreciation_to_buyers",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-M-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.convert_currency",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-M-002",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.classify_appreciation_depreciation",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-M-003",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.convert_foreign_price",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-M-004",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.apply_appreciation_to_buyers",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-M-005",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.calculate_reciprocal_rate",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-M-006",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.calculate_currency_percentage_change",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-H-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.calculate_currency_percentage_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-H-002",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.compare_reciprocal_percentage_changes",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-H-003",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.trace_export_price_conversion",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-H-004",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.diagnose_quote_direction",
+    "canonicalDifficulty": "hard",
+    "type": "diagnosis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-H-005",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.convert_export_revenue",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify alternative conversion dates; already-converted receipts do not change value retrospectively."
+  },
+  {
+    "id": "PMOE-NER-H-006",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.connect_depreciation_to_foreign_price",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-EL-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.compare_reciprocal_percentage_changes",
+    "canonicalDifficulty": "elite",
+    "type": "analysis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-EL-002",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.compare_bilateral_currency_changes",
+    "canonicalDifficulty": "elite",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NER-L-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.calculate_appreciation_purchasing_power",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NER-L-002",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.combine_asset_and_currency_returns",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Explicit conversion quote and rounding exclude the 3-percent additive approximation distractor."
+  },
+  {
+    "id": "PMOE-NER-L-003",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.combine_price_and_exchange_changes",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NER-L-004",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.evaluate_price_exchange_interaction",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-L-005",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.diagnose_quote_direction",
+    "canonicalDifficulty": "legendary",
+    "type": "diagnosis",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NER-L-006",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.compare_conversion_costs",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NER-B1-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.classify_appreciation_depreciation",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-B1-002",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.convert_currency",
+    "canonicalDifficulty": "easy",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-B1-003",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.apply_appreciation_to_buyers",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-B2-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.calculate_currency_percentage_change",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-B2-002",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.calculate_reciprocal_rate",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-B2-003",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.apply_exchange_rate_to_asset_value",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-B3-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.infer_currency_change_from_prices",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-B3-002",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.calculate_currency_percentage_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-B3-003",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.compare_reciprocal_percentage_changes",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-LB-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.combine_asset_and_currency_returns",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-LB-002",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.combine_price_and_exchange_changes",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-LB-003",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.compound_currency_changes",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NER-R-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.repair_quote_direction",
+    "canonicalDifficulty": "medium",
+    "type": "diagnosis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NER-BR-001",
+    "concept": "nominal-exchange-rates",
+    "objective": "NER.bridge_nominal_to_real_rate",
+    "canonicalDifficulty": "hard",
+    "type": "bridge",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-E-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.define_real_exchange_rate",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-E-002",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.apply_real_exchange_rate_formula",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-E-003",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.classify_real_appreciation",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective."
+  },
+  {
+    "id": "PMOE-RER-E-004",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.explain_ppp",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-E-005",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.trace_price_level_to_real_rate",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective."
+  },
+  {
+    "id": "PMOE-RER-E-006",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.identify_ppp_limitation",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-M-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.calculate_real_exchange_rate",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Index levels do not justify literal foreign-basket units without currency-denominated basket prices."
+  },
+  {
+    "id": "PMOE-RER-M-002",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.approximate_real_rate_change",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective."
+  },
+  {
+    "id": "PMOE-RER-M-003",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.apply_relative_ppp",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-M-004",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.separate_nominal_real_changes",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Actual sign defect: nominal depreciation and lower relative domestic inflation reinforce; they do not offset."
+  },
+  {
+    "id": "PMOE-RER-M-005",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.test_absolute_ppp",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-M-006",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.identify_ppp_limitation",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-H-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.approximate_real_rate_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Numerical rise in nominal quote needs explicit foreign/domestic units."
+  },
+  {
+    "id": "PMOE-RER-H-002",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.calculate_real_rate_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective."
+  },
+  {
+    "id": "PMOE-RER-H-003",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.approximate_real_rate_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-H-004",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.diagnose_nominal_real_confusion",
+    "canonicalDifficulty": "hard",
+    "type": "diagnosis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-H-005",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.compare_traded_nontraded_goods",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-H-006",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.calculate_real_exchange_rate",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Duplicates the Concept Review worked example exactly; replace scenario and operation."
+  },
+  {
+    "id": "PMOE-RER-EL-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.infer_nominal_change_from_real_stability",
+    "canonicalDifficulty": "elite",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Final uniqueness review found the former additional-depreciation/inflation alternative could also describe offsetting movements. Specify inadequate depreciation to make the misconception unique."
+  },
+  {
+    "id": "PMOE-RER-EL-002",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.evaluate_ppp_evidence",
+    "canonicalDifficulty": "elite",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-L-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.calculate_compound_real_rate_change",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-L-002",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.calculate_real_exchange_rate",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-RER-L-003",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.calculate_real_rate_from_inflation",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-RER-L-004",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.compare_price_indexes_ppp",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-RER-L-005",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.reason_about_offsetting_real_rate_forces",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-L-006",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.evaluate_relative_ppp_prediction",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-RER-B1-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.apply_real_exchange_rate_formula",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-B1-002",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.classify_real_appreciation",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective."
+  },
+  {
+    "id": "PMOE-RER-B1-003",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.identify_ppp_limitation",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-B2-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.calculate_real_exchange_rate",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Standalone formula inputs omit quote orientation and price units."
+  },
+  {
+    "id": "PMOE-RER-B2-002",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.apply_relative_ppp",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-B2-003",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.interpret_real_rate_goods_prices",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-B3-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.approximate_real_rate_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Nominal quote direction omitted."
+  },
+  {
+    "id": "PMOE-RER-B3-002",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.apply_relative_ppp",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-B3-003",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.identify_ppp_limitation",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-RER-LB-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.approximate_real_rate_change",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-RER-LB-002",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.calculate_compound_real_rate_change",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Quote and basket-price currency units omitted."
+  },
+  {
+    "id": "PMOE-RER-LB-003",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.reason_about_reinforcing_real_rate_forces",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-RER-R-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.repair_real_rate_formula",
+    "canonicalDifficulty": "medium",
+    "type": "diagnosis",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Distractor inverting both price levels is algebraically another valid correction."
+  },
+  {
+    "id": "PMOE-RER-BR-001",
+    "concept": "real-exchange-rates-and-purchasing-power",
+    "objective": "RER.bridge_real_rate_to_net_exports",
+    "canonicalDifficulty": "hard",
+    "type": "bridge",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-E-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.define_nco",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-E-002",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.classify_asset_transaction",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-E-003",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.classify_asset_transaction",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-E-004",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.interpret_nco_sign",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-E-005",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.connect_interest_rate_asset_demand",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-E-006",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.define_capital_flight",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-M-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.calculate_nco",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-M-002",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.calculate_nco",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-M-003",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.trace_interest_rate_to_nco",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-M-004",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.trace_foreign_rate_to_nco",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-M-005",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.classify_foreign_direct_investment",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-M-006",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.trace_risk_to_nco",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-H-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.calculate_nco_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-H-002",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.analyze_competing_nco_forces",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Distractors about word order and the word sharply are giveaways."
+  },
+  {
+    "id": "PMOE-NCO-H-003",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.diagnose_inflow_outflow_reversal",
+    "canonicalDifficulty": "hard",
+    "type": "diagnosis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-H-004",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.solve_asset_flows_from_saving",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-H-005",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.trace_portfolio_reallocation",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-H-006",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.explain_interest_rate_nco_slope",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Distractors do not represent plausible return/outflow reasoning."
+  },
+  {
+    "id": "PMOE-NCO-EL-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.evaluate_risk_adjusted_capital_flows",
+    "canonicalDifficulty": "elite",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-EL-002",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.distinguish_gross_net_capital_flows",
+    "canonicalDifficulty": "elite",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-L-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.calculate_compound_nco",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NCO-L-002",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.analyze_competing_nco_forces",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NCO-L-003",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.solve_gross_flow_change",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-L-004",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.distinguish_gross_net_capital_flows",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NCO-L-005",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.trace_capital_flight_feedback",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-L-006",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.distinguish_gross_net_capital_flows",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NCO-B1-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.classify_foreign_direct_investment",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-B1-002",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.calculate_nco",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-B1-003",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.trace_interest_rate_to_nco",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-B2-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.calculate_nco",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-B2-002",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.trace_portfolio_reallocation",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-B2-003",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.connect_capital_inflow_investment",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-B3-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.solve_gross_asset_flows",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-B3-002",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.analyze_reinforcing_nco_forces",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-B3-003",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.trace_portfolio_reallocation",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Distinguish net acquisition including asset sales from gross purchases or changes in the stock of holdings."
+  },
+  {
+    "id": "PMOE-NCO-LB-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.calculate_compound_nco",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NCO-LB-002",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.calculate_capital_flight_shift",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-NCO-LB-003",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.reconcile_saving_and_gross_flows",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-R-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.repair_inflow_outflow_sign",
+    "canonicalDifficulty": "medium",
+    "type": "diagnosis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-NCO-BR-001",
+    "concept": "capital-flows-and-net-capital-outflow",
+    "objective": "NCO.bridge_interest_nco_fx_supply",
+    "canonicalDifficulty": "hard",
+    "type": "bridge",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-E-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.identify_fx_demand",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Name NCO-based model to distinguish gross currency market."
+  },
+  {
+    "id": "PMOE-FX-E-002",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.identify_fx_supply",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Name NCO-based model to distinguish upward-sloping supply family."
+  },
+  {
+    "id": "PMOE-FX-E-003",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.read_fx_equilibrium",
+    "canonicalDifficulty": "easy",
+    "type": "graph",
+    "action": "accessibility-only",
+    "imagePathCorrected": false,
+    "reason": "Complete inline accessibility with the inspected graph evidence."
+  },
+  {
+    "id": "PMOE-FX-E-004",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.read_fx_equilibrium",
+    "canonicalDifficulty": "easy",
+    "type": "graph",
+    "action": "accessibility-only",
+    "imagePathCorrected": false,
+    "reason": "Complete inline accessibility with the inspected graph evidence."
+  },
+  {
+    "id": "PMOE-FX-E-005",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.interpret_fx_axis",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-E-006",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.predict_fx_demand_shift",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "No image or explicit quote orientation."
+  },
+  {
+    "id": "PMOE-FX-M-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.read_fx_demand_shift",
+    "canonicalDifficulty": "medium",
+    "type": "graph",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-M-002",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.calculate_fx_quantity_change",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-M-003",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.read_fx_supply_shift",
+    "canonicalDifficulty": "medium",
+    "type": "graph",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-M-004",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.map_trade_shock_to_fx_demand",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-M-005",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.map_nco_to_fx_supply",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-M-006",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.identify_fx_equilibrium",
+    "canonicalDifficulty": "medium",
+    "type": "graph",
+    "action": "accessibility-only",
+    "imagePathCorrected": false,
+    "reason": "Complete inline accessibility with the inspected graph evidence."
+  },
+  {
+    "id": "PMOE-FX-H-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.calculate_fx_rate_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-H-002",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.calculate_fx_quantity_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-H-003",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.infer_fx_demand_shifter",
+    "canonicalDifficulty": "hard",
+    "type": "graph",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-H-004",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.infer_fx_supply_shifter",
+    "canonicalDifficulty": "hard",
+    "type": "graph",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-H-005",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.analyze_simultaneous_fx_shifts",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Quantity conclusion requires upward-sloping supply model; scope contains vertical supply too."
+  },
+  {
+    "id": "PMOE-FX-H-006",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.analyze_reinforcing_fx_shifts",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Quantity ambiguity is for upward-sloping supply, not fixed vertical NCO supply."
+  },
+  {
+    "id": "PMOE-FX-EL-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.analyze_simultaneous_fx_shifts",
+    "canonicalDifficulty": "elite",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-FX-EL-002",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.interpret_offsetting_fx_shifts",
+    "canonicalDifficulty": "elite",
+    "type": "graph",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-FX-L-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.integrate_trade_and_nco_shifts",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective."
+  },
+  {
+    "id": "PMOE-FX-L-002",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.trace_fx_feedback_to_nx",
+    "canonicalDifficulty": "legendary",
+    "type": "graph",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-L-003",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.trace_interest_nco_fx_nx_chain",
+    "canonicalDifficulty": "legendary",
+    "type": "graph",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-FX-L-004",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.analyze_reinforcing_fx_shifts",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-FX-L-005",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.diagnose_vertical_supply_misconception",
+    "canonicalDifficulty": "legendary",
+    "type": "diagnosis",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-FX-L-006",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.calculate_simultaneous_fx_change",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-FX-B1-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.identify_fx_equilibrium",
+    "canonicalDifficulty": "easy",
+    "type": "graph",
+    "action": "accessibility-only",
+    "imagePathCorrected": false,
+    "reason": "Complete inline accessibility with the inspected graph evidence."
+  },
+  {
+    "id": "PMOE-FX-B1-002",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.interpret_fx_axis",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "References a graph vertical axis without an image or quote definition."
+  },
+  {
+    "id": "PMOE-FX-B1-003",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.map_nco_to_fx_supply",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-B2-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.read_fx_demand_shift",
+    "canonicalDifficulty": "medium",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-B2-002",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.map_trade_shock_to_fx_demand",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-B2-003",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.map_nco_to_fx_supply",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-B3-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.read_simultaneous_fx_outcome",
+    "canonicalDifficulty": "hard",
+    "type": "graph",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-B3-002",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.explain_fx_indeterminacy",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Specify quote and ordinary upward-sloping model."
+  },
+  {
+    "id": "PMOE-FX-B3-003",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.calculate_fx_rate_change",
+    "canonicalDifficulty": "hard",
+    "type": "calculation",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-FX-LB-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.infer_simultaneous_fx_shifters",
+    "canonicalDifficulty": "legendary",
+    "type": "graph",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Gross dollar-market quantity does not itself identify NCO; constrain net asset flows independently."
+  },
+  {
+    "id": "PMOE-FX-LB-002",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.analyze_magnitude_bounded_fx_shifts",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-FX-LB-003",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.reason_about_shift_order",
+    "canonicalDifficulty": "legendary",
+    "type": "graph",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-FX-R-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.repair_movement_shift_confusion",
+    "canonicalDifficulty": "medium",
+    "type": "diagnosis",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Moving up a vertical curve is possible: original key incorrectly treats movement along demand as alternative to movement along supply."
+  },
+  {
+    "id": "PMOE-FX-BR-001",
+    "concept": "foreign-exchange-market",
+    "objective": "FX.bridge_fx_nx_ad",
+    "canonicalDifficulty": "hard",
+    "type": "bridge",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-E-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.start_budget_deficit_chain",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-E-002",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_saving_to_interest_rate",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-E-003",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_interest_rate_to_nco",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-E-004",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_nco_to_fx_supply",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-E-005",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_exchange_rate_to_nx",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-E-006",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.start_capital_flight_chain",
+    "canonicalDifficulty": "easy",
+    "type": "definition",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-M-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_budget_deficit_chain",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-M-002",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_deficit_to_fx_supply",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-M-003",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_deficit_to_exchange_rate",
+    "canonicalDifficulty": "medium",
+    "type": "graph",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-M-004",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.connect_exchange_rate_to_ad",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Distinguish real appreciation from nominal movement offset by price changes."
+  },
+  {
+    "id": "PMOE-POL-M-005",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.analyze_trade_policy_offset",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-M-006",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_capital_flight_to_fx",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-H-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_budget_deficit_chain",
+    "canonicalDifficulty": "hard",
+    "type": "multi-step",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-H-002",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.analyze_trade_policy_offset",
+    "canonicalDifficulty": "hard",
+    "type": "analysis",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Feedback calls real exchange rate real rate, confusable with loanable-funds real interest rate."
+  },
+  {
+    "id": "PMOE-POL-H-003",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.connect_capital_flight_loanable_funds",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-H-004",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_capital_flight_two_markets",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-H-005",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_monetary_open_economy_channel",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective."
+  },
+  {
+    "id": "PMOE-POL-H-006",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.analyze_competing_policy_channels",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-EL-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.integrate_trade_fiscal_policy",
+    "canonicalDifficulty": "elite",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-EL-002",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.analyze_competing_policy_channels",
+    "canonicalDifficulty": "elite",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Distinguish short-run AD comparison from fixed-NCO long-run trade offset."
+  },
+  {
+    "id": "PMOE-POL-L-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.qualify_budget_deficit_chain",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-L-002",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.calculate_capital_flight_feedback",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-POL-L-003",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.calculate_trade_policy_offset",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-POL-L-004",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.analyze_competing_policy_channels",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-L-005",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.integrate_identity_and_fx_shifts",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-L-006",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_capital_flight_feedback",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-B1-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.start_budget_deficit_chain",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-B1-002",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_nco_to_exchange_rate",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective."
+  },
+  {
+    "id": "PMOE-POL-B1-003",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.start_capital_flight_chain",
+    "canonicalDifficulty": "easy",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-B2-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_deficit_to_fx_supply",
+    "canonicalDifficulty": "medium",
+    "type": "graph",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-B2-002",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.analyze_trade_policy_offset",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-B2-003",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_foreign_demand_shock",
+    "canonicalDifficulty": "medium",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Partial NX offset belongs to short-run/gross-market response, not vertical fixed-NCO full adjustment."
+  },
+  {
+    "id": "PMOE-POL-B3-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.test_budget_chain_assumption",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-B3-002",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.trace_capital_flight_two_markets",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-B3-003",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.integrate_monetary_foreign_demand",
+    "canonicalDifficulty": "hard",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective."
+  },
+  {
+    "id": "PMOE-POL-LB-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.calculate_budget_external_effect",
+    "canonicalDifficulty": "legendary",
+    "type": "calculation",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  },
+  {
+    "id": "PMOE-POL-LB-002",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.integrate_trade_policy_capital_flight",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Compare horizontal shifts at the same initial exchange rate; add remaining-model assumptions."
+  },
+  {
+    "id": "PMOE-POL-LB-003",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.integrate_identity_and_fx_shifts",
+    "canonicalDifficulty": "legendary",
+    "type": "application",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-R-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.repair_deficit_nco_direction",
+    "canonicalDifficulty": "medium",
+    "type": "diagnosis",
+    "action": "unchanged",
+    "imagePathCorrected": false,
+    "reason": "Retain appropriate selected coverage; quality and tier limitations separately disclosed."
+  },
+  {
+    "id": "PMOE-POL-BR-001",
+    "concept": "open-economy-policy-transmission",
+    "objective": "POL.bridge_budget_fx_nx_ad",
+    "canonicalDifficulty": "legendary",
+    "type": "bridge",
+    "action": "content-revised",
+    "imagePathCorrected": false,
+    "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective."
+  }
+]

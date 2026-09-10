@@ -1,0 +1,758 @@
+{
+  "uniqueBefore": 240,
+  "uniqueAfter": 240,
+  "contentRevised": 77,
+  "pathRevised": 0,
+  "pathOnly": 0,
+  "assetMetadataOnly": 4,
+  "recordUnchanged": 159,
+  "added": 0,
+  "removed": 0,
+  "contentByConcept": {
+    "international-transactions-and-identities": 8,
+    "nominal-exchange-rates": 10,
+    "real-exchange-rates-and-purchasing-power": 20,
+    "capital-flows-and-net-capital-outflow": 9,
+    "foreign-exchange-market": 18,
+    "open-economy-policy-transmission": 12
+  },
+  "contentByDifficulty": {
+    "hard": 15,
+    "legendary": 39,
+    "easy": 10,
+    "elite": 5,
+    "medium": 8
+  },
+  "contentByType": {
+    "application": 29,
+    "calculation": 29,
+    "diagnosis": 6,
+    "definition": 7,
+    "graph": 4,
+    "analysis": 1,
+    "bridge": 1
+  },
+  "contentByObjective": {
+    "TX.trace_asset_purchase_identity": 1,
+    "TX.synthesize_gdp_import_accounting": 2,
+    "TX.compare_external_balances": 1,
+    "TX.reconcile_asset_and_trade_flows": 1,
+    "TX.evaluate_trade_balance_claim": 1,
+    "TX.trace_saving_investment_external_balance": 1,
+    "TX.audit_open_economy_data": 1,
+    "NER.interpret_exchange_rate_quote": 1,
+    "NER.classify_appreciation_depreciation": 1,
+    "NER.convert_export_revenue": 1,
+    "NER.compare_bilateral_currency_changes": 1,
+    "NER.calculate_appreciation_purchasing_power": 1,
+    "NER.combine_asset_and_currency_returns": 1,
+    "NER.combine_price_and_exchange_changes": 1,
+    "NER.diagnose_quote_direction": 1,
+    "NER.compare_conversion_costs": 1,
+    "NER.compound_currency_changes": 1,
+    "RER.classify_real_appreciation": 2,
+    "RER.trace_price_level_to_real_rate": 1,
+    "RER.calculate_real_exchange_rate": 4,
+    "RER.approximate_real_rate_change": 4,
+    "RER.separate_nominal_real_changes": 1,
+    "RER.calculate_real_rate_change": 1,
+    "RER.infer_nominal_change_from_real_stability": 1,
+    "RER.calculate_real_rate_from_inflation": 1,
+    "RER.compare_price_indexes_ppp": 1,
+    "RER.evaluate_relative_ppp_prediction": 1,
+    "RER.calculate_compound_real_rate_change": 1,
+    "RER.reason_about_reinforcing_real_rate_forces": 1,
+    "RER.repair_real_rate_formula": 1,
+    "NCO.analyze_competing_nco_forces": 2,
+    "NCO.explain_interest_rate_nco_slope": 1,
+    "NCO.calculate_compound_nco": 2,
+    "NCO.distinguish_gross_net_capital_flows": 2,
+    "NCO.trace_portfolio_reallocation": 1,
+    "NCO.calculate_capital_flight_shift": 1,
+    "FX.identify_fx_demand": 1,
+    "FX.identify_fx_supply": 1,
+    "FX.predict_fx_demand_shift": 1,
+    "FX.analyze_simultaneous_fx_shifts": 2,
+    "FX.analyze_reinforcing_fx_shifts": 2,
+    "FX.interpret_offsetting_fx_shifts": 1,
+    "FX.integrate_trade_and_nco_shifts": 1,
+    "FX.trace_interest_nco_fx_nx_chain": 1,
+    "FX.diagnose_vertical_supply_misconception": 1,
+    "FX.calculate_simultaneous_fx_change": 1,
+    "FX.interpret_fx_axis": 1,
+    "FX.explain_fx_indeterminacy": 1,
+    "FX.infer_simultaneous_fx_shifters": 1,
+    "FX.analyze_magnitude_bounded_fx_shifts": 1,
+    "FX.reason_about_shift_order": 1,
+    "FX.repair_movement_shift_confusion": 1,
+    "POL.connect_exchange_rate_to_ad": 1,
+    "POL.analyze_trade_policy_offset": 1,
+    "POL.trace_monetary_open_economy_channel": 1,
+    "POL.analyze_competing_policy_channels": 1,
+    "POL.calculate_capital_flight_feedback": 1,
+    "POL.calculate_trade_policy_offset": 1,
+    "POL.trace_nco_to_exchange_rate": 1,
+    "POL.trace_foreign_demand_shock": 1,
+    "POL.integrate_monetary_foreign_demand": 1,
+    "POL.calculate_budget_external_effect": 1,
+    "POL.integrate_trade_policy_capital_flight": 1,
+    "POL.bridge_budget_fx_nx_ad": 1
+  },
+  "allChangesByDifficulty": {
+    "hard": 15,
+    "legendary": 39,
+    "easy": 13,
+    "elite": 5,
+    "medium": 9
+  },
+  "accessibilityAssetRecords": 3,
+  "graphCount": 22,
+  "assetRuntimeCount": 10,
+  "oldLibrarySha256": "e04ec4254f937424d82735ce62d307d7efb1d7c0a26713ece3b5d35969738773",
+  "newLibrarySha256": "eb31a559d75564f6d356ff3eceb55eb2383654b48363a2691eab0c72c1b399e0",
+  "compositionCounts": {
+    "easy": 36,
+    "medium": 36,
+    "hard": 36,
+    "elite": 12,
+    "legendary": 36,
+    "easyBoss": 18,
+    "mediumBoss": 18,
+    "finalBoss": 18,
+    "legendaryBoss": 18,
+    "repair": 6,
+    "repairSeed": 0,
+    "bridge": 6,
+    "calculation": 0,
+    "integration": 0,
+    "challengeOpening": 0,
+    "challengeMiddle": 0,
+    "challengeFinal": 0,
+    "challengeLegendary": 0,
+    "challengeTotal": 0,
+    "graph": 22,
+    "graphSafe": 15,
+    "graphSafeByDifficulty": {
+      "easy": 2,
+      "medium": 5,
+      "hard": 4,
+      "elite": 1,
+      "legendary": 3
+    },
+    "fadingFortuneEligible": 156,
+    "fadingFortuneByDifficulty": {
+      "easy": 36,
+      "medium": 36,
+      "hard": 36,
+      "elite": 12,
+      "legendary": 36
+    },
+    "riskRewardEligible": 156,
+    "riskRewardByDifficulty": {
+      "easy": 36,
+      "medium": 36,
+      "hard": 36,
+      "elite": 12,
+      "legendary": 36
+    },
+    "assets": 10,
+    "totalCanonical": 240
+  },
+  "modeValidation": {
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 36
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 18
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 15
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 156
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 156
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ]
+  },
+  "fullPresetReadiness": {
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 36
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 18
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 15
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 156
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 156
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ]
+  },
+  "fullPresetErrors": [],
+  "answerVerification": {
+    "ok": true,
+    "questionCount": 240,
+    "issues": []
+  },
+  "graphValidation": {
+    "ok": true,
+    "questionCount": 22,
+    "assetCount": 10,
+    "issues": []
+  },
+  "warnings": [],
+  "unrelatedAndDerivedDefinitionsUnchanged": 143,
+  "conceptReviewRoutesUnchanged": true,
+  "allSourceRecordRoutingUnchanged": true,
+  "allPoolMembershipsAndOrderUnchanged": true,
+  "allResolvedViewMembershipsUnchanged": true,
+  "graphBytesUnchanged": true
+}

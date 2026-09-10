@@ -1,0 +1,101 @@
+[
+  {
+    "concept": "foreign-exchange-market",
+    "runtimePath": "question-assets/foreign-exchange-market/FX-01.webp",
+    "reason": "Remove economic appreciation inference while preserving all observable coordinates and curves.",
+    "before": {
+      "conceptId": "foreign-exchange-market",
+      "filename": "FX-01.webp",
+      "sourceAssetPath": "question-assets/foreign-exchange-market/FX-01.webp",
+      "sourceUrl": "data/question-assets/foreign-exchange-market/FX-01.webp",
+      "runtimePath": "question-assets/foreign-exchange-market/FX-01.webp",
+      "sha256": "b2b2d7f8736ea0a6219a87cbacd9fad068e0b9f8283bf4ebbe3158afb0e38860",
+      "sizeBytes": 64906,
+      "width": 1773,
+      "height": 1200,
+      "imageAlt": "U.S. dollar market with downward-sloping demand D0 and upward-sloping supply S0 intersecting at A.",
+      "graphDescription": "The vertical axis is foreign currency per U.S. dollar, so a higher value is a dollar appreciation. The horizontal axis is the quantity of U.S. dollars exchanged. Downward-sloping D0 and upward-sloping S0 intersect at A, quantity 100 and exchange rate 1.0.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+    },
+    "after": {
+      "conceptId": "foreign-exchange-market",
+      "filename": "FX-01.webp",
+      "sourceAssetPath": "question-assets/foreign-exchange-market/FX-01.webp",
+      "sourceUrl": "data/question-assets/foreign-exchange-market/FX-01.webp",
+      "runtimePath": "question-assets/foreign-exchange-market/FX-01.webp",
+      "sha256": "b2b2d7f8736ea0a6219a87cbacd9fad068e0b9f8283bf4ebbe3158afb0e38860",
+      "sizeBytes": 64906,
+      "width": 1773,
+      "height": 1200,
+      "imageAlt": "U.S. dollar market with downward-sloping demand D0 and upward-sloping supply S0 intersecting at A.",
+      "graphDescription": "The vertical axis is foreign currency per U.S. dollar. The horizontal axis is the quantity of U.S. dollars exchanged. Downward-sloping D0 and upward-sloping S0 intersect at A, quantity 100 and exchange rate 1.0.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+    }
+  },
+  {
+    "concept": "foreign-exchange-market",
+    "runtimePath": "question-assets/foreign-exchange-market/FX-04.webp",
+    "reason": "Add observable intermediate intersections needed by the revised path-comparison task, with approximate precision and no economic inference.",
+    "before": {
+      "conceptId": "foreign-exchange-market",
+      "filename": "FX-04.webp",
+      "sourceAssetPath": "question-assets/foreign-exchange-market/FX-04.webp",
+      "sourceUrl": "data/question-assets/foreign-exchange-market/FX-04.webp",
+      "runtimePath": "question-assets/foreign-exchange-market/FX-04.webp",
+      "sha256": "1f74ef805f8bd0e0aebee5a166e230d660a431ee92e4f228cb05f60d38898ad0",
+      "sizeBytes": 84664,
+      "width": 1706,
+      "height": 1200,
+      "imageAlt": "Dollar demand and upward-sloping supply both shift right, from D0 and S0 to D1 and S1.",
+      "graphDescription": "The vertical axis is foreign currency per U.S. dollar and the horizontal axis is the quantity of dollars exchanged. Demand and supply both shift right. Original equilibrium A is quantity 100 and rate 1.0; final equilibrium B is quantity 200 and rate 1.0.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+    },
+    "after": {
+      "conceptId": "foreign-exchange-market",
+      "filename": "FX-04.webp",
+      "sourceAssetPath": "question-assets/foreign-exchange-market/FX-04.webp",
+      "sourceUrl": "data/question-assets/foreign-exchange-market/FX-04.webp",
+      "runtimePath": "question-assets/foreign-exchange-market/FX-04.webp",
+      "sha256": "1f74ef805f8bd0e0aebee5a166e230d660a431ee92e4f228cb05f60d38898ad0",
+      "sizeBytes": 84664,
+      "width": 1706,
+      "height": 1200,
+      "imageAlt": "Dollar demand and upward-sloping supply both shift right, from D0 and S0 to D1 and S1.",
+      "graphDescription": "The vertical axis is foreign currency per U.S. dollar and the horizontal axis is the quantity of dollars exchanged. Demand and supply both shift right. Original equilibrium A is quantity 100 and rate 1.0; final equilibrium B is quantity 200 and rate 1.0. Solid curves are D0 and S0; dashed curves are D1 and S1. D1 crosses S0 at approximately quantity 150 and rate 1.2; D0 crosses S1 at approximately quantity 150 and rate 0.8. These two crossings have no point labels or dashed coordinate guides.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+    }
+  },
+  {
+    "concept": "foreign-exchange-market",
+    "runtimePath": "question-assets/foreign-exchange-market/FX-05.webp",
+    "reason": "Remove economic appreciation inference while preserving all observable coordinates and curves.",
+    "before": {
+      "conceptId": "foreign-exchange-market",
+      "filename": "FX-05.webp",
+      "sourceAssetPath": "question-assets/foreign-exchange-market/FX-05.webp",
+      "sourceUrl": "data/question-assets/foreign-exchange-market/FX-05.webp",
+      "runtimePath": "question-assets/foreign-exchange-market/FX-05.webp",
+      "sha256": "0e4e257a6287e618dcf566a0f7b9acb95cd46a63fd6167037606549a69fb81f2",
+      "sizeBytes": 48240,
+      "width": 1659,
+      "height": 1147,
+      "imageAlt": "Conceptual dollar market with downward-sloping demand D0 and upward-sloping supply S0.",
+      "graphDescription": "The vertical axis is foreign currency per U.S. dollar, with higher positions indicating dollar appreciation. The horizontal axis is the quantity of dollars exchanged. Downward-sloping D0 intersects upward-sloping S0. No numerical ticks or point labels are shown.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+    },
+    "after": {
+      "conceptId": "foreign-exchange-market",
+      "filename": "FX-05.webp",
+      "sourceAssetPath": "question-assets/foreign-exchange-market/FX-05.webp",
+      "sourceUrl": "data/question-assets/foreign-exchange-market/FX-05.webp",
+      "runtimePath": "question-assets/foreign-exchange-market/FX-05.webp",
+      "sha256": "0e4e257a6287e618dcf566a0f7b9acb95cd46a63fd6167037606549a69fb81f2",
+      "sizeBytes": 48240,
+      "width": 1659,
+      "height": 1147,
+      "imageAlt": "Conceptual dollar market with downward-sloping demand D0 and upward-sloping supply S0.",
+      "graphDescription": "The vertical axis is foreign currency per U.S. dollar. The horizontal axis is the quantity of dollars exchanged. Downward-sloping D0 intersects upward-sloping S0. No numerical ticks or point labels are shown.",
+      "sourceCurationPhase": "phaseMacroOpenEconomy-v1"
+    }
+  }
+]

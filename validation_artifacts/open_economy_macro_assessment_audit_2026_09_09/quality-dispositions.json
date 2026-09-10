@@ -1,0 +1,151 @@
+{
+  "before": {
+    "errors": 0,
+    "warnings": 0,
+    "reviews": 2
+  },
+  "after": {
+    "errors": 0,
+    "warnings": 0,
+    "reviews": 8
+  },
+  "method": "Unmodified current repository auditor over all six direct concepts and every pool. Every initial/final record-rule pair is individually dispositioned; no retagging, option padding or auditor modifications.",
+  "findings": [
+    {
+      "questionId": "PMOE-FX-H-003",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "status": "retained",
+      "reason": "Retain. The learner infers a plausible demand-origin shock from an unnumbered shift and then translates both axes into appreciation and quantity. This is ordinary Hard application, though scaffolded and less demanding than integrated policy Hard items.",
+      "stem": "Refer to the conceptual graph. Which event and equilibrium response fit the displayed demand shift?",
+      "keyedOption": "Stronger foreign demand for domestic exports; the dollar appreciates and quantity rises",
+      "options": [
+        "Higher domestic NCO; the dollar depreciates and quantity rises",
+        "Weaker foreign demand for domestic exports; the dollar depreciates and quantity falls",
+        "More domestic purchases of foreign assets; the dollar appreciates and quantity falls",
+        "Stronger foreign demand for domestic exports; the dollar appreciates and quantity rises"
+      ],
+      "feedback": "D1 lies right of D0 with S0 fixed, consistent with stronger foreign demand for domestic output and a new intersection above and right of the old one.",
+      "auditorMessage": "hard metadata may overstate a direct recognition or graph-reading task."
+    },
+    {
+      "questionId": "PMOE-FX-L-003",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "status": "newly-reported",
+      "reason": "Retain with calibration limitation: the new task distinguishes two observationally equivalent causes and identifies missing evidence, but it is a relatively accessible Legendary identification item rather than a long quantitative synthesis.",
+      "stem": "Refer to the graph showing S0 shifting right to S1 along D0. Prices are fixed. One explanation is lower domestic real returns; another is higher domestic political risk. What do the displayed rate and quantity changes identify, and what additional evidence distinguishes these explanations?",
+      "keyedOption": "A larger dollar supply and real depreciation; independent return or risk evidence is needed to identify the cause",
+      "options": [
+        "Lower domestic real returns uniquely; the supply shift rules out political risk",
+        "Higher political risk uniquely; depreciation rules out a return change",
+        "A rise in dollar demand; the same image cannot be produced by a supply shock",
+        "A larger dollar supply and real depreciation; independent return or risk evidence is needed to identify the cause"
+      ],
+      "feedback": "The new intersection is rightward and lower, so with fixed prices the dollar depreciates in nominal and real terms. Both lower domestic returns and greater domestic risk can raise supply through asset purchases; the graph alone does not choose the source.",
+      "auditorMessage": "legendary metadata may overstate a direct recognition or graph-reading task."
+    },
+    {
+      "questionId": "PMOE-FX-L-006",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "newly-reported",
+      "reason": "Retain with a distractor limitation. The alternatives confuse the path with the final unchanged rate or confuse 50-percent intermediate quantity growth with doubling. Words such as must/only help elimination; this residual cue is acknowledged.",
+      "stem": "Refer to the numbered graph showing A to B after both dollar-market curves shift right. If demand shifts first and supply second, estimate the intermediate rate to the nearest tenth from the displayed straight lines and compare the intermediate and final outcomes with A. Which statement fits?",
+      "keyedOption": "The intermediate rate rises 20 percent; the final rate returns to its initial value while quantity doubles",
+      "options": [
+        "The intermediate rate rises 20 percent; the final rate returns to its initial value while quantity doubles",
+        "The intermediate rate falls 20 percent; the final rate returns to its initial value while quantity doubles",
+        "The intermediate rate rises 20 percent; the final quantity rises only 50 percent",
+        "The final rate is unchanged, so the intermediate rate must also be unchanged"
+      ],
+      "feedback": "D1 intersects S0 at approximately quantity 150 and rate 1.2, compared with A=(100,1.0). Final B=(200,1.0). Thus the rate initially rises about 20 percent and later returns, while final quantity rises 100 percent. These are displayed straight-line crossings, not values borrowed from an unnumbered asset.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "PMOE-FX-LB-002",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "status": "newly-reported",
+      "reason": "Retain. The task evaluates unequal horizontal shifts at the same initial rate, infers both equilibrium directions and recognizes that magnitudes remain unidentified without slopes. Calculation is small; identification is the upper-tier demand. This is among the more scaffolded Legendary checkpoints.",
+      "stem": "Use the dollar market with downward-sloping demand, upward-sloping supply, and e quoted in foreign currency per U.S. dollar. At the original exchange rate, an export-demand shock increases dollars demanded by 70 units and an asset-purchase shock increases dollars supplied by 45 units. What happens to equilibrium e and quantity, and do those two shift amounts identify their exact changes?",
+      "keyedOption": "Both rise; curve slopes are needed for exact changes",
+      "options": [
+        "Both rise; e rises exactly 25 percent",
+        "e falls and quantity rises; supply determines the rate independently",
+        "Both rise; curve slopes are needed for exact changes",
+        "e is unchanged and quantity rises exactly 115 units"
+      ],
+      "feedback": "At the old rate, excess demand is 70 − 45 = 25 units, so e rises. Both rightward shifts increase equilibrium quantity. Horizontal shift amounts at a common rate sign the change but do not determine exact rate or quantity changes without slopes.",
+      "auditorMessage": "legendary metadata may overstate a direct recognition or graph-reading task."
+    },
+    {
+      "questionId": "PMOE-NCO-L-004",
+      "rule": "weak-absolute-distractors",
+      "severity": "REVIEW",
+      "status": "newly-reported",
+      "reason": "Retain with a distractor limitation. The two wrong sign-certainty claims encode ignoring combined inflows and counting transaction types; their absolute wording also makes elimination easier. The valid answer derives a range crossing zero.",
+      "stem": "In a period, residents acquire $300 billion of foreign securities. Foreign acquisitions of domestic factories are known only to lie between $180 and $240 billion; foreign acquisitions of domestic bonds lie between $50 and $90 billion. There are no other asset flows. What can be inferred about NCO?",
+      "keyedOption": "It lies between −$30 and +$70 billion; its sign needs the combined inflow",
+      "options": [
+        "It lies between −$30 and +$70 billion; its sign needs the combined inflow",
+        "It must be positive because securities purchases exceed either inflow separately",
+        "It must be negative because there are two types of inward purchases",
+        "It equals $30 billion because the component ranges cancel"
+      ],
+      "feedback": "Total inflow is between 230 and 330, so NCO = 300 − inflow lies between −30 and +70. The sign depends on whether combined inflow exceeds 300; counting the types of transactions is insufficient.",
+      "auditorMessage": "2 distractors rely on absolute wording while the correct answer does not."
+    },
+    {
+      "questionId": "PMOE-NER-EL-002",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "status": "newly-reported",
+      "reason": "Retain. Cross-rate inference requires (EUR/USD)/(JPY/USD), combining opposite bilateral dollar changes. The derived factor 1.10/0.95 exceeds one; this is more than recognizing one quoted currency movement.",
+      "stem": "The U.S. dollar buys 10 percent more euros but 5 percent fewer yen. From these bilateral changes alone, what follows about the euro price of one yen?",
+      "keyedOption": "It rises because one yen buys more dollars and each dollar buys more euros",
+      "options": [
+        "It rises because one yen buys more dollars and each dollar buys more euros",
+        "It falls because a stronger dollar against the euro makes every other currency cheaper",
+        "It is unchanged because the two dollar quotations use reciprocal units",
+        "Its direction is indeterminate because one dollar quote rises and the other falls"
+      ],
+      "feedback": "Euros per yen equals (euros per dollar)/(yen per dollar). Its factor is 1.10/0.95 > 1; the yen appreciates against the euro. Both bilateral dollar quotations are needed.",
+      "auditorMessage": "elite metadata may overstate a direct recognition or graph-reading task."
+    },
+    {
+      "questionId": "PMOE-NER-H-006",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "status": "retained",
+      "reason": "Retain. The learner combines the foreign good’s local price factor with the named currency’s dollar-value factor: 1.04 × 0.90 − 1 = −6.4 percent. This two-factor conversion is legitimate ordinary Hard reasoning.",
+      "stem": "A Japanese product's yen price rises 4 percent while the yen depreciates 10 percent against the dollar. Approximately what happens to its dollar price?",
+      "keyedOption": "It falls about 6.4 percent",
+      "options": [
+        "It rises about 6 percent",
+        "It falls about 6.4 percent",
+        "It rises about 14.4 percent",
+        "It falls about 14 percent"
+      ],
+      "feedback": "The dollar price changes by 1.04×0.90 − 1 = −0.064, so it falls about 6.4 percent.",
+      "auditorMessage": "hard metadata may overstate a direct recognition or graph-reading task."
+    },
+    {
+      "questionId": "PMOE-RER-L-002",
+      "rule": "possible-difficulty-overstatement",
+      "severity": "REVIEW",
+      "status": "newly-reported",
+      "reason": "Retain. The learner reconstructs a missing domestic price under an unchanged-real-rate constraint, then evaluates an alternative actual price. Exact proof gives threshold 240 and ε about 0.9583 at 230. It is a structured upper-tier inverse calculation.",
+      "stem": "A domestic basket costs 200 domestic units and a comparable foreign basket costs 300 foreign units. Initially e is 1.50 foreign units per domestic unit. Later e falls to 1.35 and the foreign basket rises 8 percent. What domestic basket price would keep ε = eP/P* unchanged, and what if the actual price were 230?",
+      "keyedOption": "240 domestic units; at 230, ε is below its initial value",
+      "options": [
+        "216 domestic units; at 230, ε is below its initial value",
+        "240 domestic units; at 230, ε is below its initial value",
+        "240 domestic units; at 230, ε is above its initial value",
+        "200 domestic units; at 230, ε is above its initial value"
+      ],
+      "feedback": "Initial ε=1. The later foreign basket is 324 foreign units, so maintaining ε requires P=324/1.35=240 domestic units. At P=230, ε=1.35×230/324≈0.9583, a real depreciation.",
+      "auditorMessage": "legendary metadata may overstate a direct recognition or graph-reading task."
+    }
+  ]
+}

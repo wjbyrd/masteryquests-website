@@ -1,0 +1,3586 @@
+{
+  "allScopedRecordsStructurallyChecked": 240,
+  "unselectedDefinitionsUnchanged": 143,
+  "allIdsDifficultyObjectivesSkillsTagsProvenanceAndAliasesPreserved": true,
+  "orderedPoolsRepairBridgeCheckpointsRetestAndEligibilityPreserved": true,
+  "reviewRoutesPreserved": true,
+  "reviewAssets": [
+    {
+      "code": "MACRO-52",
+      "title": "International Transactions and Open-Economy Identities",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-52.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-52.pdf",
+      "sha256": "a8043c1a719fcc4858c7b9bb358fb56c9f59d19a342da5adc8c5ae37b08fb947",
+      "sizeBytes": 244893,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-53",
+      "title": "Nominal Exchange Rates and Currency Values",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-53.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-53.pdf",
+      "sha256": "857a96cc1f06df356154a8b1c21603df84ae96cc7da87a72d2c8694f4c83d2e5",
+      "sizeBytes": 244893,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-54",
+      "title": "Real Exchange Rates and Purchasing Power",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-54.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-54.pdf",
+      "sha256": "564bdaebc6bcb726ac9b25cfac61d39c7a68a30d3395ba3ec63ebfd82539ed63",
+      "sizeBytes": 245070,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-55",
+      "title": "Capital Flows and Net Capital Outflow",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-55.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-55.pdf",
+      "sha256": "2d9ca3d7fde0b4977767e710ef8aa7619607cde907dd51c3e3a6ada6b924eb63",
+      "sizeBytes": 244938,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-56",
+      "title": "Foreign-Exchange Market Equilibrium",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-56.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-56.pdf",
+      "sha256": "a73da511a301a6a0150017a6f0cf70118feb9ad5fed943cdb400d9d10f4dbaf2",
+      "sizeBytes": 646829,
+      "bytesVerified": true
+    },
+    {
+      "code": "MACRO-57",
+      "title": "Open-Economy Policy and Macroeconomic Transmission",
+      "discipline": "macro",
+      "sourcePath": "data/concept-reviews/MACRO-57.pdf",
+      "publicUrl": "https://masteryquests.org/concept-reviews/MACRO-57.pdf",
+      "sha256": "13734fb3d523df97e80940fc27f1808674883d32149eb6800fb42a36fdf8ace9",
+      "sizeBytes": 596692,
+      "bytesVerified": true
+    }
+  ],
+  "reviewRuntimeIndex": {
+    "schemaVersion": "2.1.0",
+    "sourceManifestSchemaVersion": "8.0.0-composer-integration",
+    "delivery": "central-https",
+    "baseUrl": "https://masteryquests.org/concept-reviews/",
+    "selectedConceptIds": [
+      "capital-flows-and-net-capital-outflow",
+      "foreign-exchange-market",
+      "international-transactions-and-identities",
+      "nominal-exchange-rates",
+      "open-economy-policy-transmission",
+      "real-exchange-rates-and-purchasing-power"
+    ],
+    "diagnosticConceptIds": [
+      "capital-flows-and-net-capital-outflow",
+      "foreign-exchange-market",
+      "international-transactions-and-identities",
+      "nominal-exchange-rates",
+      "open-economy-policy-transmission",
+      "real-exchange-rates-and-purchasing-power"
+    ],
+    "reviewCodes": [
+      "MACRO-52",
+      "MACRO-53",
+      "MACRO-54",
+      "MACRO-55",
+      "MACRO-56",
+      "MACRO-57"
+    ],
+    "assetInventory": [
+      {
+        "code": "MACRO-52",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-52.pdf",
+        "sha256": "a8043c1a719fcc4858c7b9bb358fb56c9f59d19a342da5adc8c5ae37b08fb947",
+        "sizeBytes": 244893
+      },
+      {
+        "code": "MACRO-53",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-53.pdf",
+        "sha256": "857a96cc1f06df356154a8b1c21603df84ae96cc7da87a72d2c8694f4c83d2e5",
+        "sizeBytes": 244893
+      },
+      {
+        "code": "MACRO-54",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-54.pdf",
+        "sha256": "564bdaebc6bcb726ac9b25cfac61d39c7a68a30d3395ba3ec63ebfd82539ed63",
+        "sizeBytes": 245070
+      },
+      {
+        "code": "MACRO-55",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-55.pdf",
+        "sha256": "2d9ca3d7fde0b4977767e710ef8aa7619607cde907dd51c3e3a6ada6b924eb63",
+        "sizeBytes": 244938
+      },
+      {
+        "code": "MACRO-56",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-56.pdf",
+        "sha256": "a73da511a301a6a0150017a6f0cf70118feb9ad5fed943cdb400d9d10f4dbaf2",
+        "sizeBytes": 646829
+      },
+      {
+        "code": "MACRO-57",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-57.pdf",
+        "sha256": "13734fb3d523df97e80940fc27f1808674883d32149eb6800fb42a36fdf8ace9",
+        "sizeBytes": 596692
+      }
+    ],
+    "concepts": {
+      "capital-flows-and-net-capital-outflow": {
+        "title": "Capital Flows and Net Capital Outflow",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-55"
+        ],
+        "primaryReviewCode": "MACRO-55",
+        "assets": [
+          {
+            "code": "MACRO-55",
+            "title": "Capital Flows and Net Capital Outflow",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-55.pdf",
+            "sha256": "2d9ca3d7fde0b4977767e710ef8aa7619607cde907dd51c3e3a6ada6b924eb63"
+          }
+        ]
+      },
+      "foreign-exchange-market": {
+        "title": "Foreign-Exchange Market Equilibrium",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-56"
+        ],
+        "primaryReviewCode": "MACRO-56",
+        "assets": [
+          {
+            "code": "MACRO-56",
+            "title": "Foreign-Exchange Market Equilibrium",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-56.pdf",
+            "sha256": "a73da511a301a6a0150017a6f0cf70118feb9ad5fed943cdb400d9d10f4dbaf2"
+          }
+        ]
+      },
+      "international-transactions-and-identities": {
+        "title": "International Transactions and Open-Economy Identities",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-52"
+        ],
+        "primaryReviewCode": "MACRO-52",
+        "assets": [
+          {
+            "code": "MACRO-52",
+            "title": "International Transactions and Open-Economy Identities",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-52.pdf",
+            "sha256": "a8043c1a719fcc4858c7b9bb358fb56c9f59d19a342da5adc8c5ae37b08fb947"
+          }
+        ]
+      },
+      "nominal-exchange-rates": {
+        "title": "Nominal Exchange Rates and Currency Values",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-53"
+        ],
+        "primaryReviewCode": "MACRO-53",
+        "assets": [
+          {
+            "code": "MACRO-53",
+            "title": "Nominal Exchange Rates and Currency Values",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-53.pdf",
+            "sha256": "857a96cc1f06df356154a8b1c21603df84ae96cc7da87a72d2c8694f4c83d2e5"
+          }
+        ]
+      },
+      "open-economy-policy-transmission": {
+        "title": "Open-Economy Policy and Macroeconomic Transmission",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-57"
+        ],
+        "primaryReviewCode": "MACRO-57",
+        "assets": [
+          {
+            "code": "MACRO-57",
+            "title": "Open-Economy Policy and Macroeconomic Transmission",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-57.pdf",
+            "sha256": "13734fb3d523df97e80940fc27f1808674883d32149eb6800fb42a36fdf8ace9"
+          }
+        ]
+      },
+      "real-exchange-rates-and-purchasing-power": {
+        "title": "Real Exchange Rates and Purchasing Power",
+        "discipline": "macro",
+        "disposition": "REVIEW_SHEET",
+        "reviewCodes": [
+          "MACRO-54"
+        ],
+        "primaryReviewCode": "MACRO-54",
+        "assets": [
+          {
+            "code": "MACRO-54",
+            "title": "Real Exchange Rates and Purchasing Power",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-54.pdf",
+            "sha256": "564bdaebc6bcb726ac9b25cfac61d39c7a68a30d3395ba3ec63ebfd82539ed63"
+          }
+        ]
+      }
+    },
+    "reviews": {
+      "capital-flows-and-net-capital-outflow": {
+        "reviewCodes": [
+          "MACRO-55"
+        ],
+        "primaryReviewCode": "MACRO-55",
+        "assets": [
+          {
+            "code": "MACRO-55",
+            "title": "Capital Flows and Net Capital Outflow",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-55.pdf",
+            "sha256": "2d9ca3d7fde0b4977767e710ef8aa7619607cde907dd51c3e3a6ada6b924eb63"
+          }
+        ],
+        "code": "MACRO-55",
+        "title": "Capital Flows and Net Capital Outflow",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-55.pdf"
+      },
+      "foreign-exchange-market": {
+        "reviewCodes": [
+          "MACRO-56"
+        ],
+        "primaryReviewCode": "MACRO-56",
+        "assets": [
+          {
+            "code": "MACRO-56",
+            "title": "Foreign-Exchange Market Equilibrium",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-56.pdf",
+            "sha256": "a73da511a301a6a0150017a6f0cf70118feb9ad5fed943cdb400d9d10f4dbaf2"
+          }
+        ],
+        "code": "MACRO-56",
+        "title": "Foreign-Exchange Market Equilibrium",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-56.pdf"
+      },
+      "international-transactions-and-identities": {
+        "reviewCodes": [
+          "MACRO-52"
+        ],
+        "primaryReviewCode": "MACRO-52",
+        "assets": [
+          {
+            "code": "MACRO-52",
+            "title": "International Transactions and Open-Economy Identities",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-52.pdf",
+            "sha256": "a8043c1a719fcc4858c7b9bb358fb56c9f59d19a342da5adc8c5ae37b08fb947"
+          }
+        ],
+        "code": "MACRO-52",
+        "title": "International Transactions and Open-Economy Identities",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-52.pdf"
+      },
+      "nominal-exchange-rates": {
+        "reviewCodes": [
+          "MACRO-53"
+        ],
+        "primaryReviewCode": "MACRO-53",
+        "assets": [
+          {
+            "code": "MACRO-53",
+            "title": "Nominal Exchange Rates and Currency Values",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-53.pdf",
+            "sha256": "857a96cc1f06df356154a8b1c21603df84ae96cc7da87a72d2c8694f4c83d2e5"
+          }
+        ],
+        "code": "MACRO-53",
+        "title": "Nominal Exchange Rates and Currency Values",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-53.pdf"
+      },
+      "open-economy-policy-transmission": {
+        "reviewCodes": [
+          "MACRO-57"
+        ],
+        "primaryReviewCode": "MACRO-57",
+        "assets": [
+          {
+            "code": "MACRO-57",
+            "title": "Open-Economy Policy and Macroeconomic Transmission",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-57.pdf",
+            "sha256": "13734fb3d523df97e80940fc27f1808674883d32149eb6800fb42a36fdf8ace9"
+          }
+        ],
+        "code": "MACRO-57",
+        "title": "Open-Economy Policy and Macroeconomic Transmission",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-57.pdf"
+      },
+      "real-exchange-rates-and-purchasing-power": {
+        "reviewCodes": [
+          "MACRO-54"
+        ],
+        "primaryReviewCode": "MACRO-54",
+        "assets": [
+          {
+            "code": "MACRO-54",
+            "title": "Real Exchange Rates and Purchasing Power",
+            "path": "https://masteryquests.org/concept-reviews/MACRO-54.pdf",
+            "sha256": "564bdaebc6bcb726ac9b25cfac61d39c7a68a30d3395ba3ec63ebfd82539ed63"
+          }
+        ],
+        "code": "MACRO-54",
+        "title": "Real Exchange Rates and Purchasing Power",
+        "path": "https://masteryquests.org/concept-reviews/MACRO-54.pdf"
+      }
+    },
+    "evidenceRoutes": {
+      "questionToConceptIds": {
+        "PMOE-TX-E-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-E-002": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-E-003": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-E-004": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-E-005": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-E-006": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-M-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-M-002": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-M-003": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-M-004": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-M-005": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-M-006": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-H-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-H-002": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-H-003": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-H-004": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-H-005": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-H-006": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-EL-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-EL-002": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-L-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-L-002": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-L-003": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-L-004": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-L-005": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-L-006": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-B1-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-B1-002": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-B1-003": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-B2-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-B2-002": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-B2-003": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-B3-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-B3-002": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-B3-003": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-LB-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-LB-002": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-LB-003": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-R-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-TX-BR-001": [
+          "international-transactions-and-identities"
+        ],
+        "PMOE-NER-E-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-E-002": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-E-003": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-E-004": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-E-005": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-E-006": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-M-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-M-002": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-M-003": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-M-004": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-M-005": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-M-006": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-H-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-H-002": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-H-003": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-H-004": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-H-005": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-H-006": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-EL-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-EL-002": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-L-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-L-002": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-L-003": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-L-004": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-L-005": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-L-006": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-B1-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-B1-002": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-B1-003": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-B2-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-B2-002": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-B2-003": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-B3-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-B3-002": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-B3-003": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-LB-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-LB-002": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-LB-003": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-R-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-NER-BR-001": [
+          "nominal-exchange-rates"
+        ],
+        "PMOE-RER-E-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-E-002": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-E-003": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-E-004": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-E-005": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-E-006": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-M-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-M-002": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-M-003": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-M-004": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-M-005": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-M-006": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-H-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-H-002": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-H-003": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-H-004": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-H-005": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-H-006": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-EL-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-EL-002": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-L-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-L-002": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-L-003": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-L-004": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-L-005": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-L-006": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-B1-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-B1-002": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-B1-003": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-B2-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-B2-002": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-B2-003": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-B3-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-B3-002": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-B3-003": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-LB-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-LB-002": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-LB-003": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-R-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-RER-BR-001": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "PMOE-NCO-E-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-E-002": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-E-003": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-E-004": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-E-005": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-E-006": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-M-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-M-002": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-M-003": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-M-004": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-M-005": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-M-006": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-H-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-H-002": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-H-003": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-H-004": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-H-005": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-H-006": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-EL-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-EL-002": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-L-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-L-002": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-L-003": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-L-004": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-L-005": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-L-006": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-B1-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-B1-002": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-B1-003": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-B2-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-B2-002": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-B2-003": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-B3-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-B3-002": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-B3-003": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-LB-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-LB-002": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-LB-003": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-R-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-NCO-BR-001": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "PMOE-FX-E-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-E-002": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-E-003": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-E-004": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-E-005": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-E-006": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-M-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-M-002": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-M-003": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-M-004": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-M-005": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-M-006": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-H-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-H-002": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-H-003": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-H-004": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-H-005": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-H-006": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-EL-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-EL-002": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-L-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-L-002": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-L-003": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-L-004": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-L-005": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-L-006": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-B1-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-B1-002": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-B1-003": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-B2-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-B2-002": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-B2-003": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-B3-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-B3-002": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-B3-003": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-LB-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-LB-002": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-LB-003": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-R-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-FX-BR-001": [
+          "foreign-exchange-market"
+        ],
+        "PMOE-POL-E-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-E-002": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-E-003": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-E-004": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-E-005": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-E-006": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-M-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-M-002": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-M-003": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-M-004": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-M-005": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-M-006": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-H-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-H-002": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-H-003": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-H-004": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-H-005": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-H-006": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-EL-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-EL-002": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-L-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-L-002": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-L-003": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-L-004": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-L-005": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-L-006": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-B1-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-B1-002": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-B1-003": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-B2-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-B2-002": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-B2-003": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-B3-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-B3-002": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-B3-003": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-LB-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-LB-002": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-LB-003": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-R-001": [
+          "open-economy-policy-transmission"
+        ],
+        "PMOE-POL-BR-001": [
+          "open-economy-policy-transmission"
+        ]
+      },
+      "tagToConceptIds": {
+        "calculate_net_exports": [
+          "international-transactions-and-identities"
+        ],
+        "classify_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "classify_international_transaction": [
+          "international-transactions-and-identities"
+        ],
+        "apply_nx_nco_identity": [
+          "international-transactions-and-identities"
+        ],
+        "interpret_nco_sign": [
+          "international-transactions-and-identities",
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "explain_import_adjustment": [
+          "international-transactions-and-identities"
+        ],
+        "calculate_nco_from_saving_investment": [
+          "international-transactions-and-identities"
+        ],
+        "calculate_nco_transactions": [
+          "international-transactions-and-identities"
+        ],
+        "connect_saving_investment_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "solve_open_economy_identity": [
+          "international-transactions-and-identities"
+        ],
+        "solve_saving_nco_chain": [
+          "international-transactions-and-identities"
+        ],
+        "diagnose_import_misconception": [
+          "international-transactions-and-identities"
+        ],
+        "calculate_trade_change": [
+          "international-transactions-and-identities"
+        ],
+        "solve_saving_from_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "trace_asset_purchase_identity": [
+          "international-transactions-and-identities"
+        ],
+        "reason_about_indeterminate_balances": [
+          "international-transactions-and-identities"
+        ],
+        "reconcile_open_economy_accounts": [
+          "international-transactions-and-identities"
+        ],
+        "synthesize_gdp_import_accounting": [
+          "international-transactions-and-identities"
+        ],
+        "compare_external_balances": [
+          "international-transactions-and-identities"
+        ],
+        "reconcile_asset_and_trade_flows": [
+          "international-transactions-and-identities"
+        ],
+        "evaluate_trade_balance_claim": [
+          "international-transactions-and-identities"
+        ],
+        "trace_saving_investment_external_balance": [
+          "international-transactions-and-identities"
+        ],
+        "audit_open_economy_data": [
+          "international-transactions-and-identities"
+        ],
+        "apply_saving_identity": [
+          "international-transactions-and-identities"
+        ],
+        "classify_imported_investment": [
+          "international-transactions-and-identities"
+        ],
+        "solve_full_external_accounts": [
+          "international-transactions-and-identities"
+        ],
+        "repair_nx_sign": [
+          "international-transactions-and-identities"
+        ],
+        "bridge_nco_to_fx_supply": [
+          "international-transactions-and-identities"
+        ],
+        "interpret_exchange_rate_quote": [
+          "nominal-exchange-rates"
+        ],
+        "classify_appreciation_depreciation": [
+          "nominal-exchange-rates"
+        ],
+        "connect_currency_value_purchasing_power": [
+          "nominal-exchange-rates"
+        ],
+        "calculate_reciprocal_rate": [
+          "nominal-exchange-rates"
+        ],
+        "interpret_stronger_currency": [
+          "nominal-exchange-rates"
+        ],
+        "apply_appreciation_to_buyers": [
+          "nominal-exchange-rates"
+        ],
+        "convert_currency": [
+          "nominal-exchange-rates"
+        ],
+        "convert_foreign_price": [
+          "nominal-exchange-rates"
+        ],
+        "calculate_currency_percentage_change": [
+          "nominal-exchange-rates"
+        ],
+        "compare_reciprocal_percentage_changes": [
+          "nominal-exchange-rates"
+        ],
+        "trace_export_price_conversion": [
+          "nominal-exchange-rates"
+        ],
+        "diagnose_quote_direction": [
+          "nominal-exchange-rates"
+        ],
+        "convert_export_revenue": [
+          "nominal-exchange-rates"
+        ],
+        "connect_depreciation_to_foreign_price": [
+          "nominal-exchange-rates"
+        ],
+        "compare_bilateral_currency_changes": [
+          "nominal-exchange-rates"
+        ],
+        "calculate_appreciation_purchasing_power": [
+          "nominal-exchange-rates"
+        ],
+        "combine_asset_and_currency_returns": [
+          "nominal-exchange-rates"
+        ],
+        "combine_price_and_exchange_changes": [
+          "nominal-exchange-rates"
+        ],
+        "evaluate_price_exchange_interaction": [
+          "nominal-exchange-rates"
+        ],
+        "compare_conversion_costs": [
+          "nominal-exchange-rates"
+        ],
+        "apply_exchange_rate_to_asset_value": [
+          "nominal-exchange-rates"
+        ],
+        "infer_currency_change_from_prices": [
+          "nominal-exchange-rates"
+        ],
+        "compound_currency_changes": [
+          "nominal-exchange-rates"
+        ],
+        "repair_quote_direction": [
+          "nominal-exchange-rates"
+        ],
+        "bridge_nominal_to_real_rate": [
+          "nominal-exchange-rates"
+        ],
+        "define_real_exchange_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "apply_real_exchange_rate_formula": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "classify_real_appreciation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "explain_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "trace_price_level_to_real_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "identify_ppp_limitation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_real_exchange_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "approximate_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "apply_relative_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "separate_nominal_real_changes": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "test_absolute_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "diagnose_nominal_real_confusion": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "compare_traded_nontraded_goods": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "infer_nominal_change_from_real_stability": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "evaluate_ppp_evidence": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_compound_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_real_rate_from_inflation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "compare_price_indexes_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "reason_about_offsetting_real_rate_forces": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "evaluate_relative_ppp_prediction": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "interpret_real_rate_goods_prices": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "reason_about_reinforcing_real_rate_forces": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "repair_real_rate_formula": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "bridge_real_rate_to_net_exports": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "define_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "classify_asset_transaction": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "connect_interest_rate_asset_demand": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "define_capital_flight": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_interest_rate_to_nco": [
+          "capital-flows-and-net-capital-outflow",
+          "open-economy-policy-transmission"
+        ],
+        "trace_foreign_rate_to_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "classify_foreign_direct_investment": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_risk_to_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_nco_change": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "analyze_competing_nco_forces": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "diagnose_inflow_outflow_reversal": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "solve_asset_flows_from_saving": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_portfolio_reallocation": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "explain_interest_rate_nco_slope": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "evaluate_risk_adjusted_capital_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "distinguish_gross_net_capital_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_compound_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "solve_gross_flow_change": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_capital_flight_feedback": [
+          "capital-flows-and-net-capital-outflow",
+          "open-economy-policy-transmission"
+        ],
+        "connect_capital_inflow_investment": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "solve_gross_asset_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "analyze_reinforcing_nco_forces": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_capital_flight_shift": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "reconcile_saving_and_gross_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "repair_inflow_outflow_sign": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "bridge_interest_nco_fx_supply": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "identify_fx_demand": [
+          "foreign-exchange-market"
+        ],
+        "identify_fx_supply": [
+          "foreign-exchange-market"
+        ],
+        "read_fx_equilibrium": [
+          "foreign-exchange-market"
+        ],
+        "interpret_fx_axis": [
+          "foreign-exchange-market"
+        ],
+        "predict_fx_demand_shift": [
+          "foreign-exchange-market"
+        ],
+        "read_fx_demand_shift": [
+          "foreign-exchange-market"
+        ],
+        "calculate_fx_quantity_change": [
+          "foreign-exchange-market"
+        ],
+        "read_fx_supply_shift": [
+          "foreign-exchange-market"
+        ],
+        "map_trade_shock_to_fx_demand": [
+          "foreign-exchange-market"
+        ],
+        "map_nco_to_fx_supply": [
+          "foreign-exchange-market"
+        ],
+        "identify_fx_equilibrium": [
+          "foreign-exchange-market"
+        ],
+        "calculate_fx_rate_change": [
+          "foreign-exchange-market"
+        ],
+        "infer_fx_demand_shifter": [
+          "foreign-exchange-market"
+        ],
+        "infer_fx_supply_shifter": [
+          "foreign-exchange-market"
+        ],
+        "analyze_simultaneous_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "analyze_reinforcing_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "interpret_offsetting_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "integrate_trade_and_nco_shifts": [
+          "foreign-exchange-market"
+        ],
+        "trace_fx_feedback_to_nx": [
+          "foreign-exchange-market"
+        ],
+        "trace_interest_nco_fx_nx_chain": [
+          "foreign-exchange-market"
+        ],
+        "diagnose_vertical_supply_misconception": [
+          "foreign-exchange-market"
+        ],
+        "calculate_simultaneous_fx_change": [
+          "foreign-exchange-market"
+        ],
+        "read_simultaneous_fx_outcome": [
+          "foreign-exchange-market"
+        ],
+        "explain_fx_indeterminacy": [
+          "foreign-exchange-market"
+        ],
+        "infer_simultaneous_fx_shifters": [
+          "foreign-exchange-market"
+        ],
+        "analyze_magnitude_bounded_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "reason_about_shift_order": [
+          "foreign-exchange-market"
+        ],
+        "repair_movement_shift_confusion": [
+          "foreign-exchange-market"
+        ],
+        "bridge_fx_nx_ad": [
+          "foreign-exchange-market"
+        ],
+        "start_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_saving_to_interest_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_nco_to_fx_supply": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_exchange_rate_to_nx": [
+          "open-economy-policy-transmission"
+        ],
+        "start_capital_flight_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_deficit_to_fx_supply": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_deficit_to_exchange_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "connect_exchange_rate_to_ad": [
+          "open-economy-policy-transmission"
+        ],
+        "analyze_trade_policy_offset": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_capital_flight_to_fx": [
+          "open-economy-policy-transmission"
+        ],
+        "connect_capital_flight_loanable_funds": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_capital_flight_two_markets": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_monetary_open_economy_channel": [
+          "open-economy-policy-transmission"
+        ],
+        "analyze_competing_policy_channels": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_trade_fiscal_policy": [
+          "open-economy-policy-transmission"
+        ],
+        "qualify_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "calculate_capital_flight_feedback": [
+          "open-economy-policy-transmission"
+        ],
+        "calculate_trade_policy_offset": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_identity_and_fx_shifts": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_nco_to_exchange_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_foreign_demand_shock": [
+          "open-economy-policy-transmission"
+        ],
+        "test_budget_chain_assumption": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_monetary_foreign_demand": [
+          "open-economy-policy-transmission"
+        ],
+        "calculate_budget_external_effect": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_trade_policy_capital_flight": [
+          "open-economy-policy-transmission"
+        ],
+        "repair_deficit_nco_direction": [
+          "open-economy-policy-transmission"
+        ],
+        "bridge_budget_fx_nx_ad": [
+          "open-economy-policy-transmission"
+        ]
+      },
+      "repairSkillToConceptIds": {
+        "calculate_net_exports": [
+          "international-transactions-and-identities"
+        ],
+        "classify_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "classify_international_transaction": [
+          "international-transactions-and-identities"
+        ],
+        "apply_nx_nco_identity": [
+          "international-transactions-and-identities"
+        ],
+        "interpret_nco_sign": [
+          "international-transactions-and-identities",
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "explain_import_adjustment": [
+          "international-transactions-and-identities"
+        ],
+        "calculate_nco_from_saving_investment": [
+          "international-transactions-and-identities"
+        ],
+        "calculate_nco_transactions": [
+          "international-transactions-and-identities"
+        ],
+        "connect_saving_investment_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "solve_open_economy_identity": [
+          "international-transactions-and-identities"
+        ],
+        "solve_saving_nco_chain": [
+          "international-transactions-and-identities"
+        ],
+        "diagnose_import_misconception": [
+          "international-transactions-and-identities"
+        ],
+        "calculate_trade_change": [
+          "international-transactions-and-identities"
+        ],
+        "solve_saving_from_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "trace_asset_purchase_identity": [
+          "international-transactions-and-identities"
+        ],
+        "reason_about_indeterminate_balances": [
+          "international-transactions-and-identities"
+        ],
+        "reconcile_open_economy_accounts": [
+          "international-transactions-and-identities"
+        ],
+        "synthesize_gdp_import_accounting": [
+          "international-transactions-and-identities"
+        ],
+        "compare_external_balances": [
+          "international-transactions-and-identities"
+        ],
+        "reconcile_asset_and_trade_flows": [
+          "international-transactions-and-identities"
+        ],
+        "evaluate_trade_balance_claim": [
+          "international-transactions-and-identities"
+        ],
+        "trace_saving_investment_external_balance": [
+          "international-transactions-and-identities"
+        ],
+        "audit_open_economy_data": [
+          "international-transactions-and-identities"
+        ],
+        "apply_saving_identity": [
+          "international-transactions-and-identities"
+        ],
+        "classify_imported_investment": [
+          "international-transactions-and-identities"
+        ],
+        "solve_full_external_accounts": [
+          "international-transactions-and-identities"
+        ],
+        "repair_nx_sign": [
+          "international-transactions-and-identities"
+        ],
+        "bridge_nco_to_fx_supply": [
+          "international-transactions-and-identities"
+        ],
+        "interpret_exchange_rate_quote": [
+          "nominal-exchange-rates"
+        ],
+        "classify_appreciation_depreciation": [
+          "nominal-exchange-rates"
+        ],
+        "connect_currency_value_purchasing_power": [
+          "nominal-exchange-rates"
+        ],
+        "calculate_reciprocal_rate": [
+          "nominal-exchange-rates"
+        ],
+        "interpret_stronger_currency": [
+          "nominal-exchange-rates"
+        ],
+        "apply_appreciation_to_buyers": [
+          "nominal-exchange-rates"
+        ],
+        "convert_currency": [
+          "nominal-exchange-rates"
+        ],
+        "convert_foreign_price": [
+          "nominal-exchange-rates"
+        ],
+        "calculate_currency_percentage_change": [
+          "nominal-exchange-rates"
+        ],
+        "compare_reciprocal_percentage_changes": [
+          "nominal-exchange-rates"
+        ],
+        "trace_export_price_conversion": [
+          "nominal-exchange-rates"
+        ],
+        "diagnose_quote_direction": [
+          "nominal-exchange-rates"
+        ],
+        "convert_export_revenue": [
+          "nominal-exchange-rates"
+        ],
+        "connect_depreciation_to_foreign_price": [
+          "nominal-exchange-rates"
+        ],
+        "compare_bilateral_currency_changes": [
+          "nominal-exchange-rates"
+        ],
+        "calculate_appreciation_purchasing_power": [
+          "nominal-exchange-rates"
+        ],
+        "combine_asset_and_currency_returns": [
+          "nominal-exchange-rates"
+        ],
+        "combine_price_and_exchange_changes": [
+          "nominal-exchange-rates"
+        ],
+        "evaluate_price_exchange_interaction": [
+          "nominal-exchange-rates"
+        ],
+        "compare_conversion_costs": [
+          "nominal-exchange-rates"
+        ],
+        "apply_exchange_rate_to_asset_value": [
+          "nominal-exchange-rates"
+        ],
+        "infer_currency_change_from_prices": [
+          "nominal-exchange-rates"
+        ],
+        "compound_currency_changes": [
+          "nominal-exchange-rates"
+        ],
+        "repair_quote_direction": [
+          "nominal-exchange-rates"
+        ],
+        "bridge_nominal_to_real_rate": [
+          "nominal-exchange-rates"
+        ],
+        "define_real_exchange_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "apply_real_exchange_rate_formula": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "classify_real_appreciation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "explain_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "trace_price_level_to_real_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "identify_ppp_limitation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_real_exchange_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "approximate_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "apply_relative_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "separate_nominal_real_changes": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "test_absolute_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "diagnose_nominal_real_confusion": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "compare_traded_nontraded_goods": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "infer_nominal_change_from_real_stability": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "evaluate_ppp_evidence": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_compound_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_real_rate_from_inflation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "compare_price_indexes_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "reason_about_offsetting_real_rate_forces": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "evaluate_relative_ppp_prediction": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "interpret_real_rate_goods_prices": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "reason_about_reinforcing_real_rate_forces": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "repair_real_rate_formula": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "bridge_real_rate_to_net_exports": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "define_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "classify_asset_transaction": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "connect_interest_rate_asset_demand": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "define_capital_flight": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_interest_rate_to_nco": [
+          "capital-flows-and-net-capital-outflow",
+          "open-economy-policy-transmission"
+        ],
+        "trace_foreign_rate_to_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "classify_foreign_direct_investment": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_risk_to_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_nco_change": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "analyze_competing_nco_forces": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "diagnose_inflow_outflow_reversal": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "solve_asset_flows_from_saving": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_portfolio_reallocation": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "explain_interest_rate_nco_slope": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "evaluate_risk_adjusted_capital_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "distinguish_gross_net_capital_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_compound_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "solve_gross_flow_change": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_capital_flight_feedback": [
+          "capital-flows-and-net-capital-outflow",
+          "open-economy-policy-transmission"
+        ],
+        "connect_capital_inflow_investment": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "solve_gross_asset_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "analyze_reinforcing_nco_forces": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_capital_flight_shift": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "reconcile_saving_and_gross_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "repair_inflow_outflow_sign": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "bridge_interest_nco_fx_supply": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "identify_fx_demand": [
+          "foreign-exchange-market"
+        ],
+        "identify_fx_supply": [
+          "foreign-exchange-market"
+        ],
+        "read_fx_equilibrium": [
+          "foreign-exchange-market"
+        ],
+        "interpret_fx_axis": [
+          "foreign-exchange-market"
+        ],
+        "predict_fx_demand_shift": [
+          "foreign-exchange-market"
+        ],
+        "read_fx_demand_shift": [
+          "foreign-exchange-market"
+        ],
+        "calculate_fx_quantity_change": [
+          "foreign-exchange-market"
+        ],
+        "read_fx_supply_shift": [
+          "foreign-exchange-market"
+        ],
+        "map_trade_shock_to_fx_demand": [
+          "foreign-exchange-market"
+        ],
+        "map_nco_to_fx_supply": [
+          "foreign-exchange-market"
+        ],
+        "identify_fx_equilibrium": [
+          "foreign-exchange-market"
+        ],
+        "calculate_fx_rate_change": [
+          "foreign-exchange-market"
+        ],
+        "infer_fx_demand_shifter": [
+          "foreign-exchange-market"
+        ],
+        "infer_fx_supply_shifter": [
+          "foreign-exchange-market"
+        ],
+        "analyze_simultaneous_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "analyze_reinforcing_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "interpret_offsetting_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "integrate_trade_and_nco_shifts": [
+          "foreign-exchange-market"
+        ],
+        "trace_fx_feedback_to_nx": [
+          "foreign-exchange-market"
+        ],
+        "trace_interest_nco_fx_nx_chain": [
+          "foreign-exchange-market"
+        ],
+        "diagnose_vertical_supply_misconception": [
+          "foreign-exchange-market"
+        ],
+        "calculate_simultaneous_fx_change": [
+          "foreign-exchange-market"
+        ],
+        "read_simultaneous_fx_outcome": [
+          "foreign-exchange-market"
+        ],
+        "explain_fx_indeterminacy": [
+          "foreign-exchange-market"
+        ],
+        "infer_simultaneous_fx_shifters": [
+          "foreign-exchange-market"
+        ],
+        "analyze_magnitude_bounded_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "reason_about_shift_order": [
+          "foreign-exchange-market"
+        ],
+        "repair_movement_shift_confusion": [
+          "foreign-exchange-market"
+        ],
+        "bridge_fx_nx_ad": [
+          "foreign-exchange-market"
+        ],
+        "start_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_saving_to_interest_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_nco_to_fx_supply": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_exchange_rate_to_nx": [
+          "open-economy-policy-transmission"
+        ],
+        "start_capital_flight_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_deficit_to_fx_supply": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_deficit_to_exchange_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "connect_exchange_rate_to_ad": [
+          "open-economy-policy-transmission"
+        ],
+        "analyze_trade_policy_offset": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_capital_flight_to_fx": [
+          "open-economy-policy-transmission"
+        ],
+        "connect_capital_flight_loanable_funds": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_capital_flight_two_markets": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_monetary_open_economy_channel": [
+          "open-economy-policy-transmission"
+        ],
+        "analyze_competing_policy_channels": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_trade_fiscal_policy": [
+          "open-economy-policy-transmission"
+        ],
+        "qualify_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "calculate_capital_flight_feedback": [
+          "open-economy-policy-transmission"
+        ],
+        "calculate_trade_policy_offset": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_identity_and_fx_shifts": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_nco_to_exchange_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_foreign_demand_shock": [
+          "open-economy-policy-transmission"
+        ],
+        "test_budget_chain_assumption": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_monetary_foreign_demand": [
+          "open-economy-policy-transmission"
+        ],
+        "calculate_budget_external_effect": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_trade_policy_capital_flight": [
+          "open-economy-policy-transmission"
+        ],
+        "repair_deficit_nco_direction": [
+          "open-economy-policy-transmission"
+        ],
+        "bridge_budget_fx_nx_ad": [
+          "open-economy-policy-transmission"
+        ]
+      },
+      "primarySkillToConceptIds": {
+        "calculate_net_exports": [
+          "international-transactions-and-identities"
+        ],
+        "classify_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "classify_international_transaction": [
+          "international-transactions-and-identities"
+        ],
+        "apply_nx_nco_identity": [
+          "international-transactions-and-identities"
+        ],
+        "interpret_nco_sign": [
+          "international-transactions-and-identities",
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "explain_import_adjustment": [
+          "international-transactions-and-identities"
+        ],
+        "calculate_nco_from_saving_investment": [
+          "international-transactions-and-identities"
+        ],
+        "calculate_nco_transactions": [
+          "international-transactions-and-identities"
+        ],
+        "connect_saving_investment_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "solve_open_economy_identity": [
+          "international-transactions-and-identities"
+        ],
+        "solve_saving_nco_chain": [
+          "international-transactions-and-identities"
+        ],
+        "diagnose_import_misconception": [
+          "international-transactions-and-identities"
+        ],
+        "calculate_trade_change": [
+          "international-transactions-and-identities"
+        ],
+        "solve_saving_from_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "trace_asset_purchase_identity": [
+          "international-transactions-and-identities"
+        ],
+        "reason_about_indeterminate_balances": [
+          "international-transactions-and-identities"
+        ],
+        "reconcile_open_economy_accounts": [
+          "international-transactions-and-identities"
+        ],
+        "synthesize_gdp_import_accounting": [
+          "international-transactions-and-identities"
+        ],
+        "compare_external_balances": [
+          "international-transactions-and-identities"
+        ],
+        "reconcile_asset_and_trade_flows": [
+          "international-transactions-and-identities"
+        ],
+        "evaluate_trade_balance_claim": [
+          "international-transactions-and-identities"
+        ],
+        "trace_saving_investment_external_balance": [
+          "international-transactions-and-identities"
+        ],
+        "audit_open_economy_data": [
+          "international-transactions-and-identities"
+        ],
+        "apply_saving_identity": [
+          "international-transactions-and-identities"
+        ],
+        "classify_imported_investment": [
+          "international-transactions-and-identities"
+        ],
+        "solve_full_external_accounts": [
+          "international-transactions-and-identities"
+        ],
+        "repair_nx_sign": [
+          "international-transactions-and-identities"
+        ],
+        "bridge_nco_to_fx_supply": [
+          "international-transactions-and-identities"
+        ],
+        "interpret_exchange_rate_quote": [
+          "nominal-exchange-rates"
+        ],
+        "classify_appreciation_depreciation": [
+          "nominal-exchange-rates"
+        ],
+        "connect_currency_value_purchasing_power": [
+          "nominal-exchange-rates"
+        ],
+        "calculate_reciprocal_rate": [
+          "nominal-exchange-rates"
+        ],
+        "interpret_stronger_currency": [
+          "nominal-exchange-rates"
+        ],
+        "apply_appreciation_to_buyers": [
+          "nominal-exchange-rates"
+        ],
+        "convert_currency": [
+          "nominal-exchange-rates"
+        ],
+        "convert_foreign_price": [
+          "nominal-exchange-rates"
+        ],
+        "calculate_currency_percentage_change": [
+          "nominal-exchange-rates"
+        ],
+        "compare_reciprocal_percentage_changes": [
+          "nominal-exchange-rates"
+        ],
+        "trace_export_price_conversion": [
+          "nominal-exchange-rates"
+        ],
+        "diagnose_quote_direction": [
+          "nominal-exchange-rates"
+        ],
+        "convert_export_revenue": [
+          "nominal-exchange-rates"
+        ],
+        "connect_depreciation_to_foreign_price": [
+          "nominal-exchange-rates"
+        ],
+        "compare_bilateral_currency_changes": [
+          "nominal-exchange-rates"
+        ],
+        "calculate_appreciation_purchasing_power": [
+          "nominal-exchange-rates"
+        ],
+        "combine_asset_and_currency_returns": [
+          "nominal-exchange-rates"
+        ],
+        "combine_price_and_exchange_changes": [
+          "nominal-exchange-rates"
+        ],
+        "evaluate_price_exchange_interaction": [
+          "nominal-exchange-rates"
+        ],
+        "compare_conversion_costs": [
+          "nominal-exchange-rates"
+        ],
+        "apply_exchange_rate_to_asset_value": [
+          "nominal-exchange-rates"
+        ],
+        "infer_currency_change_from_prices": [
+          "nominal-exchange-rates"
+        ],
+        "compound_currency_changes": [
+          "nominal-exchange-rates"
+        ],
+        "repair_quote_direction": [
+          "nominal-exchange-rates"
+        ],
+        "bridge_nominal_to_real_rate": [
+          "nominal-exchange-rates"
+        ],
+        "define_real_exchange_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "apply_real_exchange_rate_formula": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "classify_real_appreciation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "explain_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "trace_price_level_to_real_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "identify_ppp_limitation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_real_exchange_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "approximate_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "apply_relative_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "separate_nominal_real_changes": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "test_absolute_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "diagnose_nominal_real_confusion": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "compare_traded_nontraded_goods": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "infer_nominal_change_from_real_stability": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "evaluate_ppp_evidence": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_compound_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "calculate_real_rate_from_inflation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "compare_price_indexes_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "reason_about_offsetting_real_rate_forces": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "evaluate_relative_ppp_prediction": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "interpret_real_rate_goods_prices": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "reason_about_reinforcing_real_rate_forces": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "repair_real_rate_formula": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "bridge_real_rate_to_net_exports": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "define_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "classify_asset_transaction": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "connect_interest_rate_asset_demand": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "define_capital_flight": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_interest_rate_to_nco": [
+          "capital-flows-and-net-capital-outflow",
+          "open-economy-policy-transmission"
+        ],
+        "trace_foreign_rate_to_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "classify_foreign_direct_investment": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_risk_to_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_nco_change": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "analyze_competing_nco_forces": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "diagnose_inflow_outflow_reversal": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "solve_asset_flows_from_saving": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_portfolio_reallocation": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "explain_interest_rate_nco_slope": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "evaluate_risk_adjusted_capital_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "distinguish_gross_net_capital_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_compound_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "solve_gross_flow_change": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "trace_capital_flight_feedback": [
+          "capital-flows-and-net-capital-outflow",
+          "open-economy-policy-transmission"
+        ],
+        "connect_capital_inflow_investment": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "solve_gross_asset_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "analyze_reinforcing_nco_forces": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "calculate_capital_flight_shift": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "reconcile_saving_and_gross_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "repair_inflow_outflow_sign": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "bridge_interest_nco_fx_supply": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "identify_fx_demand": [
+          "foreign-exchange-market"
+        ],
+        "identify_fx_supply": [
+          "foreign-exchange-market"
+        ],
+        "read_fx_equilibrium": [
+          "foreign-exchange-market"
+        ],
+        "interpret_fx_axis": [
+          "foreign-exchange-market"
+        ],
+        "predict_fx_demand_shift": [
+          "foreign-exchange-market"
+        ],
+        "read_fx_demand_shift": [
+          "foreign-exchange-market"
+        ],
+        "calculate_fx_quantity_change": [
+          "foreign-exchange-market"
+        ],
+        "read_fx_supply_shift": [
+          "foreign-exchange-market"
+        ],
+        "map_trade_shock_to_fx_demand": [
+          "foreign-exchange-market"
+        ],
+        "map_nco_to_fx_supply": [
+          "foreign-exchange-market"
+        ],
+        "identify_fx_equilibrium": [
+          "foreign-exchange-market"
+        ],
+        "calculate_fx_rate_change": [
+          "foreign-exchange-market"
+        ],
+        "infer_fx_demand_shifter": [
+          "foreign-exchange-market"
+        ],
+        "infer_fx_supply_shifter": [
+          "foreign-exchange-market"
+        ],
+        "analyze_simultaneous_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "analyze_reinforcing_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "interpret_offsetting_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "integrate_trade_and_nco_shifts": [
+          "foreign-exchange-market"
+        ],
+        "trace_fx_feedback_to_nx": [
+          "foreign-exchange-market"
+        ],
+        "trace_interest_nco_fx_nx_chain": [
+          "foreign-exchange-market"
+        ],
+        "diagnose_vertical_supply_misconception": [
+          "foreign-exchange-market"
+        ],
+        "calculate_simultaneous_fx_change": [
+          "foreign-exchange-market"
+        ],
+        "read_simultaneous_fx_outcome": [
+          "foreign-exchange-market"
+        ],
+        "explain_fx_indeterminacy": [
+          "foreign-exchange-market"
+        ],
+        "infer_simultaneous_fx_shifters": [
+          "foreign-exchange-market"
+        ],
+        "analyze_magnitude_bounded_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "reason_about_shift_order": [
+          "foreign-exchange-market"
+        ],
+        "repair_movement_shift_confusion": [
+          "foreign-exchange-market"
+        ],
+        "bridge_fx_nx_ad": [
+          "foreign-exchange-market"
+        ],
+        "start_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_saving_to_interest_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_nco_to_fx_supply": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_exchange_rate_to_nx": [
+          "open-economy-policy-transmission"
+        ],
+        "start_capital_flight_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_deficit_to_fx_supply": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_deficit_to_exchange_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "connect_exchange_rate_to_ad": [
+          "open-economy-policy-transmission"
+        ],
+        "analyze_trade_policy_offset": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_capital_flight_to_fx": [
+          "open-economy-policy-transmission"
+        ],
+        "connect_capital_flight_loanable_funds": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_capital_flight_two_markets": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_monetary_open_economy_channel": [
+          "open-economy-policy-transmission"
+        ],
+        "analyze_competing_policy_channels": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_trade_fiscal_policy": [
+          "open-economy-policy-transmission"
+        ],
+        "qualify_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "calculate_capital_flight_feedback": [
+          "open-economy-policy-transmission"
+        ],
+        "calculate_trade_policy_offset": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_identity_and_fx_shifts": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_nco_to_exchange_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "trace_foreign_demand_shock": [
+          "open-economy-policy-transmission"
+        ],
+        "test_budget_chain_assumption": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_monetary_foreign_demand": [
+          "open-economy-policy-transmission"
+        ],
+        "calculate_budget_external_effect": [
+          "open-economy-policy-transmission"
+        ],
+        "integrate_trade_policy_capital_flight": [
+          "open-economy-policy-transmission"
+        ],
+        "repair_deficit_nco_direction": [
+          "open-economy-policy-transmission"
+        ],
+        "bridge_budget_fx_nx_ad": [
+          "open-economy-policy-transmission"
+        ]
+      },
+      "secondarySkillToConceptIds": {},
+      "objectiveToConceptIds": {
+        "TX.calculate_net_exports": [
+          "international-transactions-and-identities"
+        ],
+        "TX.classify_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "TX.classify_international_transaction": [
+          "international-transactions-and-identities"
+        ],
+        "TX.apply_nx_nco_identity": [
+          "international-transactions-and-identities"
+        ],
+        "TX.interpret_nco_sign": [
+          "international-transactions-and-identities"
+        ],
+        "TX.explain_import_adjustment": [
+          "international-transactions-and-identities"
+        ],
+        "TX.calculate_nco_from_saving_investment": [
+          "international-transactions-and-identities"
+        ],
+        "TX.calculate_nco_transactions": [
+          "international-transactions-and-identities"
+        ],
+        "TX.connect_saving_investment_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "TX.solve_open_economy_identity": [
+          "international-transactions-and-identities"
+        ],
+        "TX.solve_saving_nco_chain": [
+          "international-transactions-and-identities"
+        ],
+        "TX.diagnose_import_misconception": [
+          "international-transactions-and-identities"
+        ],
+        "TX.calculate_trade_change": [
+          "international-transactions-and-identities"
+        ],
+        "TX.solve_saving_from_trade_balance": [
+          "international-transactions-and-identities"
+        ],
+        "TX.trace_asset_purchase_identity": [
+          "international-transactions-and-identities"
+        ],
+        "TX.reason_about_indeterminate_balances": [
+          "international-transactions-and-identities"
+        ],
+        "TX.reconcile_open_economy_accounts": [
+          "international-transactions-and-identities"
+        ],
+        "TX.synthesize_gdp_import_accounting": [
+          "international-transactions-and-identities"
+        ],
+        "TX.compare_external_balances": [
+          "international-transactions-and-identities"
+        ],
+        "TX.reconcile_asset_and_trade_flows": [
+          "international-transactions-and-identities"
+        ],
+        "TX.evaluate_trade_balance_claim": [
+          "international-transactions-and-identities"
+        ],
+        "TX.trace_saving_investment_external_balance": [
+          "international-transactions-and-identities"
+        ],
+        "TX.audit_open_economy_data": [
+          "international-transactions-and-identities"
+        ],
+        "TX.apply_saving_identity": [
+          "international-transactions-and-identities"
+        ],
+        "TX.classify_imported_investment": [
+          "international-transactions-and-identities"
+        ],
+        "TX.solve_full_external_accounts": [
+          "international-transactions-and-identities"
+        ],
+        "TX.repair_nx_sign": [
+          "international-transactions-and-identities"
+        ],
+        "TX.bridge_nco_to_fx_supply": [
+          "international-transactions-and-identities"
+        ],
+        "NER.interpret_exchange_rate_quote": [
+          "nominal-exchange-rates"
+        ],
+        "NER.classify_appreciation_depreciation": [
+          "nominal-exchange-rates"
+        ],
+        "NER.connect_currency_value_purchasing_power": [
+          "nominal-exchange-rates"
+        ],
+        "NER.calculate_reciprocal_rate": [
+          "nominal-exchange-rates"
+        ],
+        "NER.interpret_stronger_currency": [
+          "nominal-exchange-rates"
+        ],
+        "NER.apply_appreciation_to_buyers": [
+          "nominal-exchange-rates"
+        ],
+        "NER.convert_currency": [
+          "nominal-exchange-rates"
+        ],
+        "NER.convert_foreign_price": [
+          "nominal-exchange-rates"
+        ],
+        "NER.calculate_currency_percentage_change": [
+          "nominal-exchange-rates"
+        ],
+        "NER.compare_reciprocal_percentage_changes": [
+          "nominal-exchange-rates"
+        ],
+        "NER.trace_export_price_conversion": [
+          "nominal-exchange-rates"
+        ],
+        "NER.diagnose_quote_direction": [
+          "nominal-exchange-rates"
+        ],
+        "NER.convert_export_revenue": [
+          "nominal-exchange-rates"
+        ],
+        "NER.connect_depreciation_to_foreign_price": [
+          "nominal-exchange-rates"
+        ],
+        "NER.compare_bilateral_currency_changes": [
+          "nominal-exchange-rates"
+        ],
+        "NER.calculate_appreciation_purchasing_power": [
+          "nominal-exchange-rates"
+        ],
+        "NER.combine_asset_and_currency_returns": [
+          "nominal-exchange-rates"
+        ],
+        "NER.combine_price_and_exchange_changes": [
+          "nominal-exchange-rates"
+        ],
+        "NER.evaluate_price_exchange_interaction": [
+          "nominal-exchange-rates"
+        ],
+        "NER.compare_conversion_costs": [
+          "nominal-exchange-rates"
+        ],
+        "NER.apply_exchange_rate_to_asset_value": [
+          "nominal-exchange-rates"
+        ],
+        "NER.infer_currency_change_from_prices": [
+          "nominal-exchange-rates"
+        ],
+        "NER.compound_currency_changes": [
+          "nominal-exchange-rates"
+        ],
+        "NER.repair_quote_direction": [
+          "nominal-exchange-rates"
+        ],
+        "NER.bridge_nominal_to_real_rate": [
+          "nominal-exchange-rates"
+        ],
+        "RER.define_real_exchange_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.apply_real_exchange_rate_formula": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.classify_real_appreciation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.explain_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.trace_price_level_to_real_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.identify_ppp_limitation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.calculate_real_exchange_rate": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.approximate_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.apply_relative_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.separate_nominal_real_changes": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.test_absolute_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.calculate_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.diagnose_nominal_real_confusion": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.compare_traded_nontraded_goods": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.infer_nominal_change_from_real_stability": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.evaluate_ppp_evidence": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.calculate_compound_real_rate_change": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.calculate_real_rate_from_inflation": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.compare_price_indexes_ppp": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.reason_about_offsetting_real_rate_forces": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.evaluate_relative_ppp_prediction": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.interpret_real_rate_goods_prices": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.reason_about_reinforcing_real_rate_forces": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.repair_real_rate_formula": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "RER.bridge_real_rate_to_net_exports": [
+          "real-exchange-rates-and-purchasing-power"
+        ],
+        "NCO.define_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.classify_asset_transaction": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.interpret_nco_sign": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.connect_interest_rate_asset_demand": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.define_capital_flight": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.calculate_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.trace_interest_rate_to_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.trace_foreign_rate_to_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.classify_foreign_direct_investment": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.trace_risk_to_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.calculate_nco_change": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.analyze_competing_nco_forces": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.diagnose_inflow_outflow_reversal": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.solve_asset_flows_from_saving": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.trace_portfolio_reallocation": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.explain_interest_rate_nco_slope": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.evaluate_risk_adjusted_capital_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.distinguish_gross_net_capital_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.calculate_compound_nco": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.solve_gross_flow_change": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.trace_capital_flight_feedback": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.connect_capital_inflow_investment": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.solve_gross_asset_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.analyze_reinforcing_nco_forces": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.calculate_capital_flight_shift": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.reconcile_saving_and_gross_flows": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.repair_inflow_outflow_sign": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "NCO.bridge_interest_nco_fx_supply": [
+          "capital-flows-and-net-capital-outflow"
+        ],
+        "FX.identify_fx_demand": [
+          "foreign-exchange-market"
+        ],
+        "FX.identify_fx_supply": [
+          "foreign-exchange-market"
+        ],
+        "FX.read_fx_equilibrium": [
+          "foreign-exchange-market"
+        ],
+        "FX.interpret_fx_axis": [
+          "foreign-exchange-market"
+        ],
+        "FX.predict_fx_demand_shift": [
+          "foreign-exchange-market"
+        ],
+        "FX.read_fx_demand_shift": [
+          "foreign-exchange-market"
+        ],
+        "FX.calculate_fx_quantity_change": [
+          "foreign-exchange-market"
+        ],
+        "FX.read_fx_supply_shift": [
+          "foreign-exchange-market"
+        ],
+        "FX.map_trade_shock_to_fx_demand": [
+          "foreign-exchange-market"
+        ],
+        "FX.map_nco_to_fx_supply": [
+          "foreign-exchange-market"
+        ],
+        "FX.identify_fx_equilibrium": [
+          "foreign-exchange-market"
+        ],
+        "FX.calculate_fx_rate_change": [
+          "foreign-exchange-market"
+        ],
+        "FX.infer_fx_demand_shifter": [
+          "foreign-exchange-market"
+        ],
+        "FX.infer_fx_supply_shifter": [
+          "foreign-exchange-market"
+        ],
+        "FX.analyze_simultaneous_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "FX.analyze_reinforcing_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "FX.interpret_offsetting_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "FX.integrate_trade_and_nco_shifts": [
+          "foreign-exchange-market"
+        ],
+        "FX.trace_fx_feedback_to_nx": [
+          "foreign-exchange-market"
+        ],
+        "FX.trace_interest_nco_fx_nx_chain": [
+          "foreign-exchange-market"
+        ],
+        "FX.diagnose_vertical_supply_misconception": [
+          "foreign-exchange-market"
+        ],
+        "FX.calculate_simultaneous_fx_change": [
+          "foreign-exchange-market"
+        ],
+        "FX.read_simultaneous_fx_outcome": [
+          "foreign-exchange-market"
+        ],
+        "FX.explain_fx_indeterminacy": [
+          "foreign-exchange-market"
+        ],
+        "FX.infer_simultaneous_fx_shifters": [
+          "foreign-exchange-market"
+        ],
+        "FX.analyze_magnitude_bounded_fx_shifts": [
+          "foreign-exchange-market"
+        ],
+        "FX.reason_about_shift_order": [
+          "foreign-exchange-market"
+        ],
+        "FX.repair_movement_shift_confusion": [
+          "foreign-exchange-market"
+        ],
+        "FX.bridge_fx_nx_ad": [
+          "foreign-exchange-market"
+        ],
+        "POL.start_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_saving_to_interest_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_interest_rate_to_nco": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_nco_to_fx_supply": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_exchange_rate_to_nx": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.start_capital_flight_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_deficit_to_fx_supply": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_deficit_to_exchange_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.connect_exchange_rate_to_ad": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.analyze_trade_policy_offset": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_capital_flight_to_fx": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.connect_capital_flight_loanable_funds": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_capital_flight_two_markets": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_monetary_open_economy_channel": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.analyze_competing_policy_channels": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.integrate_trade_fiscal_policy": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.qualify_budget_deficit_chain": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.calculate_capital_flight_feedback": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.calculate_trade_policy_offset": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.integrate_identity_and_fx_shifts": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_capital_flight_feedback": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_nco_to_exchange_rate": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.trace_foreign_demand_shock": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.test_budget_chain_assumption": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.integrate_monetary_foreign_demand": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.calculate_budget_external_effect": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.integrate_trade_policy_capital_flight": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.repair_deficit_nco_direction": [
+          "open-economy-policy-transmission"
+        ],
+        "POL.bridge_budget_fx_nx_ad": [
+          "open-economy-policy-transmission"
+        ]
+      }
+    },
+    "bundleRoutes": {}
+  },
+  "reviewGlobalWarnings": [
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "consumer-and-producer-surplus"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "costs-of-production"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "elasticity"
+    },
+    {
+      "type": "diagnosable-no-sheet-meta",
+      "canonicalConceptId": "integrated-economic-analysis"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "international-trade-and-trade-policy"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopolistic-competition"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "monopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "oligopoly"
+    },
+    {
+      "type": "diagnosable-parent-covered-by-children",
+      "canonicalConceptId": "perfect-competition"
+    },
+    {
+      "type": "orphan-review",
+      "reviewCode": "MICRO-03"
+    },
+    {
+      "type": "unreachable-review",
+      "reviewCode": "MICRO-03"
+    }
+  ],
+  "allModeValidation": {
+    "modes": [
+      {
+        "mode": "standard",
+        "label": "Standard Campaign",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "timed",
+        "label": "Timed Trial",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "exam",
+        "label": "Exam Drill",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "quiz",
+        "label": "Quiz",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 5,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 5,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 5,
+            "count": 36
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "unlimited",
+        "label": "Unlimited Practice",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "legendary",
+        "label": "Legendary Mode",
+        "requirements": [
+          {
+            "pool": "legendary",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "legendaryBoss",
+            "minimum": 3,
+            "count": 18
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "score",
+        "label": "Score Attack",
+        "requirements": [
+          {
+            "pool": "easy",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "medium",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "hard",
+            "minimum": 6,
+            "count": 36
+          },
+          {
+            "pool": "easyBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "mediumBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "finalBoss",
+            "minimum": 3,
+            "count": 18
+          },
+          {
+            "pool": "repair",
+            "minimum": 1,
+            "count": 6
+          },
+          {
+            "pool": "bridge",
+            "minimum": 1,
+            "count": 6
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "trialGraph",
+        "label": "Trial by Graph",
+        "requirements": [
+          {
+            "pool": "graphSafe",
+            "minimum": 10,
+            "count": 15
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "fadingFortune",
+        "label": "Fading Fortune",
+        "requirements": [
+          {
+            "pool": "fadingFortuneEligible",
+            "minimum": 10,
+            "count": 156
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      },
+      {
+        "mode": "riskReward",
+        "label": "Risk & Reward",
+        "requirements": [
+          {
+            "pool": "riskRewardEligible",
+            "minimum": 10,
+            "count": 156
+          }
+        ],
+        "deficiencies": [],
+        "issues": [],
+        "ok": true
+      }
+    ]
+  },
+  "priorAuditArtifactFilesBeforeApply": {
+    "money_banking_monetary_system_assessment_audit_2026_09_08": {
+      "access.py": "8f2c418d9aeaeb72405d17b8162933e024a04dfbc0d7ab63e02577b89e4da4e8",
+      "accessibility-inspection.json": "05ae6489a56a9f78dd5c080315ae9cc4d9af5bb2c79df5f779a90eb032968e98",
+      "accessibility-spec.json": "e04ec5bdfe11f7d47b878a381132c41868fd116036992887dc1cc894b1dc3385",
+      "accounting.json": "96dd60bb013f1f9b46a051d4592201a281d390692b9e7e0c3e952645a80b0db5",
+      "architecture-validation.json": "3937fb31dfeaa8afd57f2e6abc9d3b1843a5640ff06fc43aebadbdc84d265f66",
+      "asset-accessibility-changes.json": "78c9cabfe1d4fe3cc5d7ef848ecf4bcc66e8d631a5d1bdc67f3caec55c95a160",
+      "audit-projection-provenance.json": "b3ceda08ad5692a0497e3cff4e09a10c8d3f105a9eaccdcc334243679d319db0",
+      "author.py": "510dbe76c956364a5dc1e37e5896f8b1d92b594177d3651d5602166e5e4a05e2",
+      "BEFORE.md": "ab0f40eb03aa6ba038d491f9179239712502856e5268c4bd616f1c6d9b2a029c",
+      "browser-smoke.png": "7c0af07d78b1e8b7579ec0d10338e774be64648bca912fabcd01625fab6f8307",
+      "browser-validation.json": "e4f6ab13d9336ab3952b28c0d80cbf94ad38ec7cd00086b5d9d0df9669ba5519",
+      "browser.cjs": "e2c28227c9fdcbd93ec77a25165c528b0e6118ca82c1452b20ad63d8da9fa769",
+      "changes.json": "2a15e0a34c10f9b718e991650cc6eebbb83027a909f7b2868b84dd396ffa5244",
+      "concepts.json": "8353181534c660caf51f920f8963d3998aa6a65ddb0173e4585fee8ea9b97d49",
+      "exam-source.json": "bc6489214bac78b9a08992f3a4871c7575db2b02c4de500685c0f111f4cd7e53",
+      "FINAL_REPORT.md": "cc88fb2f1db66c004ca19bae35552ad5d42f071cceb6d852136d4bb65f1b3109",
+      "findings.py": "d87b1c43f0d75c86204e5b28525fc72c9b6b553a4884529601906e7e08f00828",
+      "finish.py": "28138b11332c25f6be5fc901d8102455fb55008ffaf526d383ac6d156909c716",
+      "graph-validation.json": "291b76b2ef26e66f9bdb553971421ed1b116dd17dbf020bf7b355c74755be91e",
+      "inspect.cjs": "62172e50b2fa9a94f5f4e430e8da456cafc801617ea651891847e6740bf82f3b",
+      "inventory-after.json": "c7fe042ab40cb2f6bd93316588e976b8920ea1f28bac0331edce67e49565f4b9",
+      "inventory-before.json": "0d68d89f43759389060a2dda14c9881247ed6436ae0b204d99cee4d4e78e5d78",
+      "logical-validation.json": "017ec441d5f7eee316559251943a52435e554dcc943bb7ee21ef0c7699741b5f",
+      "numerical-validation.json": "75bc7431127f3e6577bdcb011973d0ef86b00a6b594bf309550612dadc1880ec",
+      "objective-findings-before.json": "cc6dcbb78e00916d23851a7f9e29e97fd652649b42feee9efb4f88cd649e5fa3",
+      "originality-validation.json": "0ca207540ecc1930a10fd9a0cc59617adc31aa39fc4608b305d81ada53959141",
+      "pool-memberships.json": "60029b976b5c800717581459e615063fba2dccaa1c0c69b296fda42c8815834b",
+      "quality-after.json": "39588180c9a96d408428123ba65518895a855995f9da7b1d33b826194457fe56",
+      "quality-after.md": "e07d86bf7124603a82faff101bd6d74616312715c50661016e91aa7f93876753",
+      "quality-before.json": "019c1c10e11be27ecd3b9e0cbab8c5320896899550c6eada2d26cd5a061f5e3d",
+      "quality-before.md": "3bc7943a763e3528aaf75001457fa4f8c47d4c6d7c3fbd0bb4861a46baa1ffb4",
+      "quality-dispositions.json": "0c128996e2442553ff0c89b482d174ce474c6851acade0a35913c444b6c60a8a",
+      "recipe.json": "bc620cd6153c98709bb3e29e976b03dc12b242e250a66cfab942d7687a66e5e7",
+      "record-actions.json": "67ff433195fd57e5639fc1a6a5b3c7e1df9bf5de4985b3e52fd8fd2a1d604f47",
+      "revisions.json": "ef6d0f9e8e16daf97d17a849bd875642d711c059a5a9c4a56819a4648377280a",
+      "scope-boundary.json": "7c05ef0024450669bc07c64d5a01c07b68e61523331b82baa5c6ba77269d7bb9",
+      "semantic-validation.json": "48d82400f4c598b0f51c3424a89f199820e9e2bd3032b42e75e89cae9a2d3aea",
+      "sources.json": "8353181534c660caf51f920f8963d3998aa6a65ddb0173e4585fee8ea9b97d49",
+      "stage.mjs": "00af2fdb2c48fa0dca78e7b8e339d6a3ad24827d394796a1a396866c5e49826a",
+      "summary-before.json": "01b3654b1bd0813ecaa31b1bb3edd70223dbab65fa4cbab34613cbce2c7621fd",
+      "validation.json": "f3868fdd57b13d09316f08ef907ab4044eb07f2976ea7d3a54160c35c753da0e",
+      "verify.py": "f0f92733a3b545004031a789e0a687b365311b37be33cf664306b83a8cb86c43"
+    },
+    "saving_investment_loanable_funds_assessment_audit_2026_09_09": {
+      "accessibility-inspection.json": "79a8a1f2673ae804cc835ad9afffb33838421c6c146f4c6e18c2e0996e86e3da",
+      "accessibility-spec.json": "8277d0f8d032f7ce36411abf9e647e0ea4d8161806fb661048ac5bc0a2ec8af0",
+      "accessibility.py": "919cc2d0e1b5a6dc73e2a82b912ff92b8365c8dc0b93f30a959737d44ccbefd3",
+      "accounting.json": "5958a5fa7e2104957996a641fc9180179f12dc8a27ffe40403184f163726340d",
+      "architecture-validation.json": "636bce403d0218d1fe7f95187a9cc9f4619feafbeb83c6782b25069a42cfad9c",
+      "asset-accessibility-changes.json": "2d3ca7f589995a6e893efa848c209f128d4041ded2cfccb7453ed8d2d094e89b",
+      "audit-projection-provenance.json": "19b9e103110d464b1b607f99057106319a506b5b9fb5afd5d54e85194cb327e3",
+      "author.py": "bb19f39b6b530a567501a24a542468a314faf175143117298009b098996e8d51",
+      "BEFORE.md": "3fdbd6c9c47110d6a7d5969c9fb99600ce3ce31553063b5adfbe5fc12fbbef2c",
+      "browser-smoke.png": "9a00cfb79119925c55bf6adb1a96c4b6b2b45d335871f482dbbef14aa9c48014",
+      "browser-validation.json": "ff3836a3d5997b20278da455facafe2d60c765f1fa626805eb34f9f437f6e7a9",
+      "browser.cjs": "f7c27344a34a7b4fefa5467e18447bcdea7405c5690d39ecb2d1b3006613503e",
+      "changes.json": "d4558e3a825ead51703c7a6c71ffe506ed5bb7c0faab96c17b1bd1f9daa103b6",
+      "concepts.json": "6d855173bda4fd9102b67331841ef2961b4f1066e0e92ecb157c206c1f7c5eab",
+      "deliverables.json": "3706c6db916c7498c56721ca389161a413b46c37cabc8505d6583fd7c7cf1639",
+      "exam-source.json": "4091147841f707b44bcc493ad8150f81fba5b8249e707fb0ea810e54c2c8e9bb",
+      "FINAL_REPORT.md": "07a42c9df9a2bc91e71a0931970ebb9b83fa8398d727923a580950f89b0090e4",
+      "findings.py": "7a764ace180a0827e0b6fa40af4554c4de65285e992cc07f0234227637af6c82",
+      "finish.py": "6d0d4184b7a0eee8a82a4657426288b53df13a7589711931bc533fc0f83d3e7e",
+      "graph-validation.json": "6793ea1937cf4520e6895684ba7d863b78379d0be3813818fbf2a95b1fccb177",
+      "inventory-after.json": "eda53808f474ac7748514a278134e28ebd595353bf182fe4de82c890c20a3c4d",
+      "inventory-before.json": "39b8c42f4f88168eed49e36f5df1f4041b2e5e99c4552ab7ff9bb78141292727",
+      "logical-validation.json": "e0a9554e344b5df2b9a6f8b1d6f1d2b17ab0357dd882a7b640b7e9a845ccacd4",
+      "numerical-validation.json": "9bfe607c69d36648ee23b5ab807bf321b3e09eab8df9d0c3be53b6a96274fec6",
+      "objective-findings-before.json": "fddb4280903413bde9c6e185238adea03d752e2582e438e6494a700077af95cd",
+      "OBJECTIVE_FINDINGS_BEFORE.md": "f543b2eb39385f71e43a17dd855ca5373a8770a9dd594416e21104d75aecedc2",
+      "originality-validation.json": "7d92ecbf31aecf5d49d8e2555997fb429e83b7ceff7aa45e19a7a0109cacca05",
+      "overlap-mask.json": "a6e5b26007c51c7db68252a493626a695efe5dea0f10e1aec9d393c780527aac",
+      "pool-memberships.json": "4043774f9f6266600a9561cc7dd68605405cfea21e205e2537ba99f712c4529d",
+      "quality-after.json": "5dfdd090ba131493f93209f7c55dadd480d25538bc5bca872c984457276b0ee9",
+      "quality-after.md": "fd20fb021d2ab02591a0fcf4de5dbe1d0d2a3715eb8cdac9adc2bc5e41b8df73",
+      "quality-before.json": "e19dbe4a965308071a9d47b0e79c36d1306c3f29dfc52a6573ff7e685fe5e0b1",
+      "quality-before.md": "9b286d5ce30eafac3e4d41d9deb69d3035a9b6428d32c813f62c2c766c6f3e27",
+      "quality-dispositions.json": "a7f9d3cb2ad4a27f5a6852850f341786e12d8cb66f1a8e3bd4750b24180ffbc9",
+      "recipe.json": "7301c05bda486e90d70bc20bd83e15d8a61a62e7cb16f863ed0b2d649497faa5",
+      "record-actions.json": "44180433c80236cf188fcb1f7bef0ca4e7fac44e0daf372ba9fa2b7a1522eb68",
+      "retained-hard.json": "ea602d1318a22f8794e00c169db099fbb3130667a7401d63b3616a718b38209e",
+      "revisions.json": "f72e91d95b2d9edd3f101ff906992dd15cfbb6fb3e5d8c4a34bae9252c3b6680",
+      "scope-boundary.json": "3730e3ac2d782cc6b964f7fc1c0e136e871f518cee6fcd753c09aeb209a49846",
+      "semantic-validation.json": "9a5b718c3ed980c80e39bcfdb025b0574353132698435c2d4604e4bbcc20a063",
+      "sources.json": "6d855173bda4fd9102b67331841ef2961b4f1066e0e92ecb157c206c1f7c5eab",
+      "stage.mjs": "1817216e9f134417438b40b5e9a1d3e4e434474404cc99fbfd38fd45b8be1c09",
+      "summary-before.json": "d9957a779f74991e08786409fdfedfacc71a7f35735f759811a4eb48194c4685",
+      "validation.json": "a47b115452b1bb3b24d3eb2dd2ccc65ed39e29c816977cd673a571615a630d39",
+      "verify.py": "25c1f8805c82be5edf75abd431e1fadedf2dc317cafd0d599af3ab86435cd20f"
+    },
+    "adas_fiscal_stabilization_assessment_audit_2026_09_09": {
+      "accessibility-inspection.json": "9a9b690c47fc9e8b57861219c47b7603cee94ffa9c916b9e4075669b2b7aca2f",
+      "accessibility-spec.json": "53e97f5b0acf53d04daa1bd378ddba827605af522595a9052c26179d6da9b6ec",
+      "accessibility.py": "644a51701a7e80902377629420bc34b0d3c46c21415adeff81a3d30955041c09",
+      "accounting.json": "edd684bea9c122ae755a97ec54b88db392bfc580a74950632ebee4d39529b420",
+      "architecture-validation.json": "f093f93b999bba05f89828c8545c650cfa5dbf0ad08d7b9da48fe3bc2eee3e60",
+      "asset-accessibility-changes.json": "259405872d69a3f23aab0cac91f625204dbac7de7eea7aef703706451515417a",
+      "audit-projection-provenance.json": "34511e16b01460132445e3104b7c66ba1326ed35f776192867e366cfafa67a04",
+      "author.py": "df8cb8b77569920da65a7f0a66f38d78a628863d4da63a15d0ce3a99b1f08469",
+      "BEFORE.md": "67895e7c213ff8a4435e8723be8dc4da789efbff20ee7b65a5c52e14af7910b0",
+      "browser-smoke.png": "ca18c0f34bcc38e26b43155c380f1a1cac9a3c426d7cb75625d013a6984a5155",
+      "browser-validation.json": "a72a2e4a6768abfe887cb3dce437c388d952b286eff9001c0643a25c1e34a238",
+      "browser.cjs": "c7adfc271c103a41041e69e51f89b8121932952519c3209ba346d0af977effee",
+      "changes.json": "ef7998c797d66d39af585fc9c33e22fb31f6ae053b6091bce56330a5f7622f5b",
+      "concepts.json": "42df23e6f3a9ae9d32904239802729524143fa7433b3116187f18ba652d7154c",
+      "deliverables.json": "d78207312c529b60f49badf0b69a027577bdc3e5a12bc32ce5614588d8b547f0",
+      "exam-source.json": "4091147841f707b44bcc493ad8150f81fba5b8249e707fb0ea810e54c2c8e9bb",
+      "FINAL_REPORT.md": "eb9f423b233ea548af54273ef30897f15c1825c0c1d80fea9365a0c2b904d436",
+      "findings.py": "804439433499a4b1627d2bbd9fbd1f319beb5a306f54f6054c095baae14a5cf1",
+      "finish.py": "c37dc30aefd14a24fba199e6e98d98a211308b32a753cd2545bccba77c6e3ae6",
+      "graph-validation.json": "4d532980d497d06d5e78d48f946870a085fa6c5b1e22e37c9e952a0c7cb2e9e8",
+      "inventory-after.json": "9d65428680cf2948f4e1e60b2da3cd98a58911e21b0fa28880f74e47201593ec",
+      "inventory-before.json": "030e37bb007397aefffa0423ad7c75526d25835e11f91ea38376de79c8e189b8",
+      "logical-validation.json": "c1f47c8850f9666c101efe8bb7ac55314f86cca85772072b9f3ea0aac6facf7e",
+      "numerical-validation.json": "42a1420820e9794a6aace46cc85dd822cccf29480bbde17e81f8b80bde2ade87",
+      "objective-findings-before.json": "92afa43fb91336e190b0de3e4ae2cbd941c1172e2358d8b94cc6ed3b7d50e484",
+      "OBJECTIVE_FINDINGS_BEFORE.md": "fa56c2d4b450a4e0566d8ea65ef7438fa1a1c3f25c5c5b57cb5d03e3e48b319c",
+      "originality-validation.json": "15e6ca477c44a0d0f15f7324f7b2bf1cb73a6abc0a1b76d9697106fe0b91afc1",
+      "overlap-mask.json": "58615fb898249c6872c29e0d8b65ea35b85a4ae9f2685eecdd4ade7f7d427ffd",
+      "phillips-deferred-followup.json": "7d795b70d1cf440383dad45a0c49fb1f89ddc46982896d343ad122cd71d60db3",
+      "pool-memberships.json": "557313a3547d9da4f799d970ce91249809a7ec65dbe3949c4816ec77291c6d51",
+      "quality-after.json": "0a8ef4aa5be618768115632c1e87790a224d17b18fe6e45aaf1cebe86683331c",
+      "quality-after.md": "fb677e96be4ccd7970597c22d18fe185fd1dcdc87637063fd62fdacff5f8b441",
+      "quality-before.json": "944b880ea1843b05070ca15333ad075c462c2bbae64086cbff5e81d169fc8562",
+      "quality-before.md": "6dd3bd71f6b568d68cdaa935cc1b7759fde7eda15660465f297190666f931fb9",
+      "quality-dispositions.json": "a0fb4224a00dca5d3185b8e4cb37be6be674e478491afc124fe477ba4b1fccc0",
+      "recipe.json": "375e53e6ffc4ee5a07f0a8a847a4caabd545d3ca7a6d479bfb912087f2e547d4",
+      "record-actions.json": "8f3dd3a01996e93d75679628f728b8158e3907be5a67e68be93b52eac8b7299e",
+      "retained-hard.json": "5df5cb46653a4f07e0415e8856383bae095dce201b91e06b4b7e2c9c81a7cfda",
+      "revisions.json": "603b2c41239ae6c8e53668cfbeea27b25b15c53c49d96ffbc556af5b40b086a3",
+      "scope-boundary.json": "eccc80911e833df5b90465b9704c395c991c6c9de204ed1250af6fc0ece0428e",
+      "semantic-validation.json": "767ac61c62947e1a5b7a8eaa38e65b7cf30d253d7648ad45872413c41d8554ea",
+      "sources.json": "42df23e6f3a9ae9d32904239802729524143fa7433b3116187f18ba652d7154c",
+      "stage.mjs": "4a0998681a2ce24e2fe65b4c6467add9f962a0a2260110a963d682b225f0d3c3",
+      "summary-before.json": "d4e852c61a01a560a06af8f62ce1e3fb9389360ab68e3b0ab9422077327ea993",
+      "validation.json": "f9463f7f7801bc7ce89db15bf7f957525ba9ed17e5c7834e6cfe5edf3f6a25be",
+      "verify.py": "7abbcf493930945ea0c1e882cf7015c414378a5dc6698ac99e34596799d2103a"
+    },
+    "phillips_expectations_disinflation_assessment_audit_2026_09_09": {
+      "accessibility-inspection.json": "c6de4005c118dc2ccfa32c952416abc88a874331ae6095cf30cee0ee245cfcdf",
+      "accessibility-spec.json": "f689ef0b4753f47a66706df0871587fba4613ed935c1500b002d4cf97d2cd9ce",
+      "accessibility.py": "c9f4dab2d499e79f1c1f751be020d9b69187872541e109262b810dc41ca6326c",
+      "accounting.json": "f97cf35565a2bcc769fe3df4dcb1e1e61718395da221023fef80b2e7d005006d",
+      "architecture-validation.json": "e560334fd566b30066af8ac440bcd20b28e99e75ac8aa85b9936e70238e098cc",
+      "asset-accessibility-changes.json": "d0c354cc32a79dd2f94ec20e5aa7e4715d0817411e0f059232faf952e3850fa4",
+      "audit-projection-provenance.json": "39f05d7bf0c61088a14c6796357d59de68fc2c4728e365eb7d90e610b7d510e0",
+      "author.py": "4cfc87090274a5608beb21de1d05e2dc49dd6b8987000a218a9d92141934509c",
+      "BEFORE.md": "9bc84308ca7cbbed398eae9f706473b158249df7a43e550d570d56038fdcc034",
+      "browser-smoke.png": "43dfc5c4c758d61e3bd4062a4efff0eb7ae3ee1b39d3ded72e70a217d35e8426",
+      "browser-validation.json": "ba1cc7adb49b3c43a3b97bf6d6edc895122ff0e9db3cb3846c2266ea6c14b58a",
+      "browser.cjs": "c7087463c7ac4fb099c7b7fbd3462cba3db61308faea6c1dcd7d08f573e73486",
+      "changes.json": "551df0c3424b3bc10e63cbadd1baf14bdbbfa1454d4504ad1c304b385aaa9fab",
+      "concepts.json": "e32a86f73436d02ee05a486edb80cd813f3365c5d2780649fa7abde737d1c3dc",
+      "deliverables.json": "d2556971db8107cc2a5d5efc51217d9381d8f633b67ee707cf060407f4feed60",
+      "exam-source.json": "4091147841f707b44bcc493ad8150f81fba5b8249e707fb0ea810e54c2c8e9bb",
+      "FINAL_REPORT.md": "bceb8dea907b9245e0518184ed57a70e271c852464bad563d8d5558ec85e3e1f",
+      "findings.py": "af21459229023718bdcc1baa8dc9cda5af2751d56bb29490fe72433cecced3a9",
+      "finish.py": "e9a5d4bbaaa24fac29829c26d1900d014529a643311ddfa973331e8e655a06b7",
+      "graph-validation.json": "3f5652ba7f9a0434e9a5ca23e0a2bcc443022b643831f6dcbfa46dd28cca9eaa",
+      "inventory-after.json": "e34b8aa6af14ef67851a80ccb227a67f63c5bd5abd74c5204c18a31147e2c24d",
+      "inventory-before.json": "95664f442ee1504f87b46423feb17ce7c14c54fe57a85210d988ad2ac755cd88",
+      "known-graph-failures-before.json": "21dc279949cda1a9506348660ab516479e9078b645399040a1077b7b1d0a8c9f",
+      "live-preset.json": "dc06fc4f67f86d528927d4e9baed16252b8dfd1040d8203b2b3be2cdc383795f",
+      "logical-validation.json": "4c5af59c98983080f2e18dd8ee48a7c182a5e27a2a0b44a018e2672977d61c22",
+      "numerical-validation.json": "13f1ba60116f817ab3d735480d44a3ec913efe0742a6bd97953da7f8f51139f4",
+      "objective-findings-before.json": "00f3eb81b06bdcef1563abdd3b5c0584a2d75647e59c09c638fa9fbfc7b706c0",
+      "OBJECTIVE_FINDINGS_BEFORE.md": "78c3257aa9cd9a82f748371ad1716e89bd8515950697c3586334e070c9e0402d",
+      "originality-validation.json": "355a5b479804fea2f5d726254e75e0c8b67815674e853940a3bcd5ecde8c15cb",
+      "overlap-mask.json": "7471c4e61ef5baf8efd41466d7e9b598cc2f37d22db6a21755c1d7278679d497",
+      "parent-preset-validation.json": "6073a6af0330ed1ad9277f72819f39d007f11c35d69761410dba08f70ad26792",
+      "path-repair-validation.json": "2caea5a57fa6caddd18ce1b5c68afb703054825bc37502a2b01d497806c9ed58",
+      "pool-memberships.json": "158d02e2ca8db1b99af11f73338bd230e5dbaafa6716315c51616c3631bc6e04",
+      "quality-after.json": "cd5b4707c97908286c6f20c34fe2be00a6347164b802902de82187acd15b1fb5",
+      "quality-after.md": "4684b8a0d1ea2c807a017ee1c9c3d3898a3c035bed9e0b9c95bff1c75970b1cc",
+      "quality-before.json": "efd40ec5a3f0650a73c3de1dcda5c5d86d30be3b91ec044c66c0e80cc56ff878",
+      "quality-before.md": "3b775722b223cf2744d4df530931951a8f916425cd8220e41f8ea80f0c25cd9e",
+      "quality-dispositions.json": "620e069c079ffcb4eb7e479e604c181cea8c01b0cc0006e0e4b78d48cdca136c",
+      "recipe.json": "7f8954b6706e4c5216d32e42c0ec03320037e5c94cf3d64ed0b151fbbe579e7e",
+      "record-actions.json": "fe2243019fce85959e6667698cb28f95a36fe63c38ea079a4f5ed81def317a59",
+      "retained-hard.json": "b205972547752841aa6b887b32a0c2b02aca91253720b807b5c115886495520d",
+      "revisions.json": "d06993a1457bf49846eafcd4d215b12112473c10af4722a7ff2ad4eda00e9b84",
+      "scope-boundary.json": "a8419237ae9b83505f67e34af36c4f4212347a4481ed2c4021b51d5f79f9b957",
+      "semantic-validation.json": "08d3b63d5435ba4d7e0846885f18fbe3d84e4d8944019405d5982dea8e4332fd",
+      "sources.json": "e32a86f73436d02ee05a486edb80cd813f3365c5d2780649fa7abde737d1c3dc",
+      "stage.mjs": "a2ddf5588ffa9af202e27c919ca20f2807229a817a24a7e15728dfaeacf624dd",
+      "summary-before.json": "2a7168426de5a7933d7f62d5d4cf34007bea431cd7cdb8212a158fdaf5caa1d0",
+      "validation.json": "86a15e6352c915da25aae98b29b394a095739446d65ef17ee4ea66918f0e374e",
+      "verify.py": "4223640dd9f5cbdb51cd1e604ce6a09bb9aba9c8898f02cdbe8f0e1d8e2a6255"
+    }
+  },
+  "baselineSourceFiles": {
+    "data/composer_library.js": "022fa6eae13eaa091c54a1f66d57390de2bf1663245a7796f057b3ddf4ec8ff4",
+    "data/composer_registry.json": "dbeb02da888d5dd53fe5707ae06b79be5a0a52af0b61e114476401dc82722891",
+    "data/composer_library_manifest.json": "1656c794c234c2a77c540e825179df96605c678254e37e2fbadab60d6dec0b36",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  },
+  "finalSourceFiles": {
+    "data/composer_library.js": "7eebf40d51233895f016226fd6e83a3c9a20bfd585e96b4c6717541842077a53",
+    "data/composer_registry.json": "566778dbdcaa8e7fde64bf5c9e0a5216c12bc7e67a7dbfbf249549b64441f349",
+    "data/composer_library_manifest.json": "df7cca0e17191d352700105a672e8bd8ed8b1feff5d962f29102d82d0adfc9ef",
+    "composer.js": "d9fac59cac59b898ce7b6d0d53a019e81de96daecb8eb9ae3a0c6d58240c716b",
+    "composer-core.js": "5a7e50d8c6897c27770f71b4b0596d2c6a43e4f0dac5efe2280c41568f4693c5",
+    "template/mastery-quests-faculty-template-composer-ready.html": "b51d2f952d25dd8b1c734a8d22dac77cffa235adbed6fce025187889a9a89f44",
+    "data/concept-reviews/manifest.json": "f69759b4d91a6227a32963735524cb4fe2eee28d683a8fb5d5542a2fd65f688f"
+  }
+}

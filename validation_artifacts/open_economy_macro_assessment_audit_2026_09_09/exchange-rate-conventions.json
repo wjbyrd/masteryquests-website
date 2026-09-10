@@ -1,0 +1,594 @@
+{
+  "evidence": [
+    "composer.js live preset",
+    "authoring/open_economy_question_pool_author.mjs (read-only provenance)",
+    "data/concept-reviews/MACRO-52.pdf through MACRO-57.pdf",
+    "all ten registered FX images visually inspected",
+    "all 240 current question records"
+  ],
+  "nominal": "Bank supports explicitly named reciprocal quotes. Graphs and default e use foreign currency per domestic currency, U.S. dollar for FX. Increase means domestic appreciation only under this orientation.",
+  "real": "epsilon=eP/P*. For physical baskets, (foreign currency/domestic currency)*(domestic currency/domestic basket)/(foreign currency/foreign basket) = foreign baskets/domestic basket. Index-based epsilon is normalized, not a literal basket exchange quantity.",
+  "models": {
+    "coreFX": "FX-01 through FX-08 and MACRO-56: gross currency demand from foreign goods/assets purchases, supply from domestic purchases abroad. Upward supply; equilibrium gross quantity is not automatically NX or NCO.",
+    "policyFX": "FX-09/10 and MACRO-57: vertical supply=NCO determined in loanable funds, demand=NX; rate plotted as nominal foreign currency/USD. Hold domestic/foreign prices fixed to map to real exchange rate.",
+    "loanableFunds": "Selected POL-H-003 explicitly has saving supply and I+NCO demand, equilibrated by domestic real interest rate.",
+    "trade": "With NCO fixed, tariffs change FX demand/rate but not equilibrium NX.",
+    "shortRun": "Monetary and AD items are conditional short-run channels; distinguish from fixed-NCO long-run trade adjustment."
+  },
+  "graphs": [
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-01.webp",
+      "sha256": "b2b2d7f8736ea0a6219a87cbacd9fad068e0b9f8283bf4ebbe3158afb0e38860",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "Gross dollar market: downward D, upward S",
+      "numbered": true,
+      "coordinates": [
+        [
+          100,
+          1
+        ]
+      ],
+      "precision": "Labeled points and dashed guides encode the listed coordinates. Straight clean plots support these displayed readings; generator provenance is unavailable. No unsupported interpolation used.",
+      "reason": "Remove economic appreciation inference while preserving all observable coordinates and curves.",
+      "descriptionMatchesImage": true
+    },
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-02.webp",
+      "sha256": "b4f3faf1f2c584b687de2741afd1f3ed7990ae252b3f47c6805c8f74e0c6f7af",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "Gross dollar market: downward D, upward S",
+      "numbered": true,
+      "coordinates": [
+        [
+          100,
+          1
+        ],
+        [
+          150,
+          1.2
+        ]
+      ],
+      "precision": "Labeled points and dashed guides encode the listed coordinates. Straight clean plots support these displayed readings; generator provenance is unavailable. No unsupported interpolation used.",
+      "reason": "Existing detailed description matches inspected visual evidence; retain.",
+      "descriptionMatchesImage": true
+    },
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-03.webp",
+      "sha256": "0acd60299f0af3caa64b58ca459c3e17d040523f290f9a9d16b037b41eff1bd1",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "Gross dollar market: downward D, upward S",
+      "numbered": true,
+      "coordinates": [
+        [
+          100,
+          1
+        ],
+        [
+          150,
+          0.8
+        ]
+      ],
+      "precision": "Labeled points and dashed guides encode the listed coordinates. Straight clean plots support these displayed readings; generator provenance is unavailable. No unsupported interpolation used.",
+      "reason": "Existing detailed description matches inspected visual evidence; retain.",
+      "descriptionMatchesImage": true
+    },
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-04.webp",
+      "sha256": "1f74ef805f8bd0e0aebee5a166e230d660a431ee92e4f228cb05f60d38898ad0",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "Gross dollar market: downward D, upward S",
+      "numbered": true,
+      "coordinates": [
+        [
+          100,
+          1
+        ],
+        [
+          200,
+          1
+        ]
+      ],
+      "precision": "Labeled points and dashed guides encode the listed coordinates. Straight clean plots support these displayed readings; generator provenance is unavailable. No unsupported interpolation used.",
+      "reason": "Existing detailed description matches inspected visual evidence; retain.",
+      "descriptionMatchesImage": true
+    },
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-05.webp",
+      "sha256": "0e4e257a6287e618dcf566a0f7b9acb95cd46a63fd6167037606549a69fb81f2",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "Gross dollar market: downward D, upward S",
+      "numbered": false,
+      "coordinates": null,
+      "precision": "Geometry only; no numeric values may be inferred from numbered counterpart.",
+      "reason": "Remove economic appreciation inference while preserving all observable coordinates and curves.",
+      "descriptionMatchesImage": true
+    },
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-06.webp",
+      "sha256": "a8041db421f2731545cef5926f6b3a4d1e73c90fa099460042bfccb4302c95d0",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "Gross dollar market: downward D, upward S",
+      "numbered": false,
+      "coordinates": null,
+      "precision": "Geometry only; no numeric values may be inferred from numbered counterpart.",
+      "reason": "Existing detailed description matches inspected visual evidence; retain.",
+      "descriptionMatchesImage": true
+    },
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-07.webp",
+      "sha256": "0c7d5f88b43175f174ac20dd660eeac964b02c60273140a8dc6420ff74684921",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "Gross dollar market: downward D, upward S",
+      "numbered": false,
+      "coordinates": null,
+      "precision": "Geometry only; no numeric values may be inferred from numbered counterpart.",
+      "reason": "Existing detailed description matches inspected visual evidence; retain.",
+      "descriptionMatchesImage": true
+    },
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-08.webp",
+      "sha256": "41eeb945945e1c724ba190c012c69c08752a6bd9f0156a6e25027e2030c87c03",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "Gross dollar market: downward D, upward S",
+      "numbered": false,
+      "coordinates": null,
+      "precision": "Geometry only; no numeric values may be inferred from numbered counterpart.",
+      "reason": "Existing detailed description matches inspected visual evidence; retain.",
+      "descriptionMatchesImage": true
+    },
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-09.webp",
+      "sha256": "6c19ea240ba2b04069aec158139e172e9c5d838cd3f35358b523dde8b81a54ec",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "NCO-based policy model: vertical S=NCO; downward D=NX; prices held fixed for nominal/real interpretation",
+      "numbered": true,
+      "coordinates": [
+        [
+          100,
+          1
+        ],
+        [
+          50,
+          1.5
+        ]
+      ],
+      "precision": "Labeled points and dashed guides encode the listed coordinates. Straight clean plots support these displayed readings; generator provenance is unavailable. No unsupported interpolation used.",
+      "reason": "Existing detailed description matches inspected visual evidence; retain.",
+      "descriptionMatchesImage": true
+    },
+    {
+      "runtimePath": "question-assets/foreign-exchange-market/FX-10.webp",
+      "sha256": "3db67400eca33cc71ff1f283539232b02b48454ddaa48c12f3bd28af8615cfff",
+      "visuallyInspected": true,
+      "verticalAxis": "Exchange rate (foreign currency per U.S. dollar)",
+      "horizontalAxis": "Quantity of U.S. dollars exchanged; no billions/millions multiplier",
+      "model": "NCO-based policy model: vertical S=NCO; downward D=NX; prices held fixed for nominal/real interpretation",
+      "numbered": false,
+      "coordinates": null,
+      "precision": "Geometry only; no numeric values may be inferred from numbered counterpart.",
+      "reason": "Existing detailed description matches inspected visual evidence; retain.",
+      "descriptionMatchesImage": true
+    }
+  ],
+  "nominalRecordAudit": [
+    {
+      "id": "PMOE-NER-E-001",
+      "stem": "An exchange rate of 1.30 euros per dollar means that one dollar can buy:",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-E-002",
+      "stem": "If the dollar rises from 0.90 euro per dollar to 0.98 euro per dollar, the dollar has:",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-E-003",
+      "stem": "When the domestic currency depreciates, its purchasing power over foreign goods generally:",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-E-004",
+      "stem": "Which quotation is the reciprocal of 2 dollars per pound?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-E-005",
+      "stem": "A stronger domestic currency means that one unit of domestic currency buys:",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-E-006",
+      "stem": "A U.S. traveler benefits directly when the dollar appreciates because:",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-M-001",
+      "stem": "At 120 yen per dollar, how many yen can $75 purchase?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-M-002",
+      "stem": "The rate changes from 1.25 Canadian dollars per U.S. dollar to 1.20. What happened to the U.S. dollar?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-M-003",
+      "stem": "A hotel costs 240 euros. At 0.80 euro per dollar, what is its dollar price?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-M-004",
+      "stem": "The dollar appreciates against the peso. Holding product prices fixed in their own currencies, which buyer gains purchasing power?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-M-005",
+      "stem": "If 1 euro buys $1.25, approximately how many euros does $1 buy?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-M-006",
+      "stem": "The exchange rate rises from 100 to 110 pesos per dollar. By what percentage does the dollar appreciate under this quotation?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-H-001",
+      "stem": "The rate moves from $1.20 per euro to $1.32 per euro. Which statement is correct?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-H-002",
+      "stem": "The pound appreciates from $1.50 to $1.65 per pound. Approximately how much does the dollar depreciate against the pound using reciprocal rates?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-H-003",
+      "stem": "A U.S. machine costs $48,000. The rate changes from 0.90 to 0.80 euro per dollar, with the dollar price fixed. How does its euro price change?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-H-004",
+      "stem": "A student sees the quotation fall from 1.10 dollars per euro to 1.00 dollar per euro and says the dollar depreciated. What is the error?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-H-005",
+      "stem": "A Canadian firm receives US$200,000 and converts at 1.35 Canadian dollars per U.S. dollar. If the rate later becomes 1.28, how does the Canadian-dollar revenue change?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-H-006",
+      "stem": "A Japanese product's yen price rises 4 percent while the yen depreciates 10 percent against the dollar. Approximately what happens to its dollar price?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-EL-001",
+      "stem": "The dollar rises 20 percent in euros per dollar. Must the euro fall 20 percent in dollars per euro?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-EL-002",
+      "stem": "A currency buys more euros but fewer yen than before. Which conclusion is sound?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-L-001",
+      "stem": "A $2,000 trip budget is converted when the rate is 0.90 euro per dollar. After a 5 percent dollar appreciation in this quotation, how many additional euros can the budget buy?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-L-002",
+      "stem": "A foreign asset rises 8 percent in its local currency while that currency depreciates 5 percent against the investor's currency. Ignoring income, what is the investor's approximate home-currency return?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-L-003",
+      "stem": "A firm's dollar export price rises 4 percent while the dollar depreciates 6 percent in foreign-currency-per-dollar terms. Approximately how does the foreign-currency price change?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-L-004",
+      "stem": "The dollar depreciates against the euro, but a U.S. tourist's euro hotel bill falls in dollar terms. Which explanation can reconcile both facts?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-L-005",
+      "stem": "A quotation changes from 80 domestic-currency units per dollar to 88. A report calls this a 10 percent domestic-currency appreciation. What is wrong?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-L-006",
+      "stem": "An exchange rate moves from 0.75 pound per dollar to 0.84. A £420 purchase keeps the same pound price. What happens to its dollar cost?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-B1-001",
+      "stem": "If one dollar buys fewer Swiss francs than before, the dollar has:",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-B1-002",
+      "stem": "At 150 yen per dollar, $20 buys:",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-B1-003",
+      "stem": "Which change makes imported goods cheaper to domestic buyers when foreign prices are fixed?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-B2-001",
+      "stem": "The exchange rate falls from 1.40 to 1.33 foreign-currency units per domestic unit. What is the percentage depreciation?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-B2-002",
+      "stem": "If 4 domestic-currency units buy 5 foreign-currency units, what is the reciprocal quotation?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-B2-003",
+      "stem": "A foreign bond's value is unchanged in euros, but the euro appreciates against the dollar. What happens to its dollar value?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-B3-001",
+      "stem": "A €600 appliance costs $750 at the initial rate and $720 later. What happened to the dollar against the euro?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-B3-002",
+      "stem": "A currency rises from 1.60 to 1.84 foreign units per domestic unit. What is its appreciation rate?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-B3-003",
+      "stem": "A dollar appreciates 25 percent from 0.80 euro per dollar to 1.00. How much does the euro depreciate in reciprocal terms?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-LB-001",
+      "stem": "A €1,000 investment gains 12 percent, while the euro falls from $1.20 to $1.05. What is the investor's dollar return?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-LB-002",
+      "stem": "A British product's pound price rises 6 percent, the pound depreciates 8 percent against the dollar, and U.S. sales volume rises 5 percent. Approximately what happens to the exporter's dollar revenue?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-LB-003",
+      "stem": "The yen appreciates 10 percent against the dollar, then depreciates 10 percent from its new value. Is it back at its initial value?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-R-001",
+      "stem": "A student says a rise in euros per dollar is a dollar depreciation. Which rule corrects the mistake?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-NER-BR-001",
+      "stem": "A nominal exchange rate is 1.25 foreign-currency units per domestic unit. What additional information is needed to find the real exchange rate?",
+      "status": "Explicit named pair, units, or currency-strength direction; percentage direction uses value of named currency."
+    },
+    {
+      "id": "PMOE-RER-E-001",
+      "stem": "The real exchange rate compares the price of:",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-E-002",
+      "stem": "Using e as foreign currency per domestic currency, which formula gives the real exchange rate?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-E-003",
+      "stem": "A higher real exchange rate under the course convention indicates:",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-E-004",
+      "stem": "Purchasing-power parity is best viewed as:",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-E-005",
+      "stem": "If the nominal exchange rate and foreign price level are fixed while the domestic price level rises, the domestic currency experiences:",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-E-006",
+      "stem": "Why can PPP fail for haircuts across countries?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-M-001",
+      "stem": "The nominal rate is 2 foreign units per domestic unit, the domestic price level is 120, and the foreign price level is 150. What is the real exchange rate?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-M-002",
+      "stem": "The nominal rate stays fixed, domestic prices rise 6 percent, and foreign prices rise 2 percent. Approximately what happens to the real exchange rate?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-M-003",
+      "stem": "Domestic inflation is 3 percent and foreign inflation is 8 percent. Under relative PPP, the domestic currency should:",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-M-004",
+      "stem": "A nominal depreciation is exactly offset by lower domestic inflation relative to foreign inflation. What happens to the real exchange rate?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-M-005",
+      "stem": "A domestic basket costs 100 domestic units, a comparable foreign basket costs 250 foreign units, and the nominal rate is 2.5 foreign units per domestic unit. What does PPP imply?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-M-006",
+      "stem": "Which friction most directly allows identical tradable goods to have different converted prices?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-H-001",
+      "stem": "The nominal rate rises 5 percent, domestic prices rise 4 percent, and foreign prices rise 2 percent. Approximately how does the real exchange rate change?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-H-002",
+      "stem": "The nominal rate is unchanged, but the domestic basket rises from 100 to 110 while the foreign basket rises from 200 to 204. What is the approximate real appreciation?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-H-003",
+      "stem": "A currency depreciates 8 percent nominally while domestic inflation exceeds foreign inflation by 3 percentage points. What is the approximate real change?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-H-004",
+      "stem": "A student argues that equal inflation rates guarantee an unchanged real exchange rate. What is missing?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-H-005",
+      "stem": "Why does the law of one price support PPP more strongly for wheat than for apartments?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-H-006",
+      "stem": "A domestic good costs $50 and a comparable foreign good costs €40 when the rate is €0.80 per dollar. If the dollar price rises to $55 with other values fixed, what happens?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-EL-001",
+      "stem": "Domestic inflation exceeds foreign inflation for several years, yet the real exchange rate is nearly unchanged. What nominal pattern is consistent with this outcome?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-EL-002",
+      "stem": "Converted consumer-price baskets differ persistently across two countries. Which inference is most defensible?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-L-001",
+      "stem": "The nominal rate rises from 1.20 to 1.26 foreign units per domestic unit, domestic prices rise 4 percent, and foreign prices rise 10 percent. Approximately what happens to the real exchange rate?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-L-002",
+      "stem": "A basket costs 200 domestic units and 300 foreign units. The nominal rate moves from 1.5 to 1.35 foreign units per domestic unit while prices stay fixed. Which change occurs?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-L-003",
+      "stem": "Country A has 9 percent inflation and Country B has 3 percent inflation. A's currency depreciates only 2 percent against B's. What approximate real change occurs for A?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-L-004",
+      "stem": "A traded-goods price index satisfies PPP closely, but a broad consumer index does not. Which explanation fits best?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-L-005",
+      "stem": "A nominal appreciation occurs while the real exchange rate depreciates. Which combination can produce both?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-L-006",
+      "stem": "Relative PPP predicts a 7 percent depreciation, but the currency depreciates 3 percent. What does the discrepancy show?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-B1-001",
+      "stem": "If ε = eP/P*, which variable is the foreign price level?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-B1-002",
+      "stem": "A decline in the real exchange rate is called:",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-B1-003",
+      "stem": "Which item is least tradable across borders?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-B2-001",
+      "stem": "With e = 0.5, P = 160, and P* = 100, what is ε?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-B2-002",
+      "stem": "Domestic and foreign inflation are both 4 percent. Under relative PPP, the nominal exchange rate should be approximately:",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-B2-003",
+      "stem": "A real appreciation makes domestic goods, relative to foreign goods:",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-B3-001",
+      "stem": "The nominal rate falls 4 percent while domestic inflation is 7 percent and foreign inflation is 2 percent. What is the approximate real change?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-B3-002",
+      "stem": "The real exchange rate is unchanged while domestic inflation is 6 percent and foreign inflation is 2 percent. What does relative PPP imply for the nominal rate?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-B3-003",
+      "stem": "Why can a tariff create a persistent price wedge without disproving the logic behind PPP?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-LB-001",
+      "stem": "The nominal rate appreciates 12 percent, domestic prices fall 3 percent, and foreign prices rise 4 percent. Approximately what is the real change?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-LB-002",
+      "stem": "A domestic basket rises from 250 to 270, a foreign basket rises from 400 to 408, and e falls from 1.60 to 1.50. What is the final real rate compared with the initial rate?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-LB-003",
+      "stem": "Country A's currency appreciates nominally even though A's inflation exceeds B's. Which statement about the real exchange rate is strongest?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-R-001",
+      "stem": "A student uses ε = eP*/P even though e is foreign currency per domestic currency. Which correction is needed?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    },
+    {
+      "id": "PMOE-RER-BR-001",
+      "stem": "A real appreciation makes domestic goods relatively more expensive. How does this connect to net exports?",
+      "status": "Course eP/P* convention; standalone missing units identified in objective findings."
+    }
+  ],
+  "limitations": "No current market exchange rates used. No direct Open Economy exam calibration. Graph authoring equations are unavailable; displayed coordinate guides, not invented source equations, support exact labeled readings."
+}

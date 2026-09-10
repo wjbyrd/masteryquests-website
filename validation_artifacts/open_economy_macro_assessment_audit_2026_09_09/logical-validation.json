@@ -1,0 +1,932 @@
+{
+  "all240NonemptyStemsFeedback": true,
+  "allFourDistinctNormalizedOptions": true,
+  "allOneAnswerHashMatch": true,
+  "revisedStemsUniqueAcrossLibrary": true,
+  "contentRevisions": [
+    {
+      "id": "PMOE-TX-H-006",
+      "reason": "Initially wording conflates period accounting with immediate causal adjustment.",
+      "stem": "Across two consistently measured periods, foreign purchases of domestic bonds rise while domestic purchases of foreign assets are unchanged. Which accounting change follows, without identifying how quickly trade adjusts?",
+      "correct": "NCO falls, and NX must be lower in the accounts",
+      "distractors": [
+        "NCO is unchanged, while NX falls",
+        "NCO falls, while NX must rise",
+        "NCO rises, and NX must be higher"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-M-004",
+      "reason": "Actual sign defect: nominal depreciation and lower relative domestic inflation reinforce; they do not offset.",
+      "stem": "Let e be foreign currency per domestic currency and ε = eP/P*. The domestic currency depreciates nominally while domestic prices grow more slowly than foreign prices. What happens to ε?",
+      "correct": "It falls because both changes cause real depreciation",
+      "distractors": [
+        "It stays fixed because the two changes offset",
+        "It rises because lower domestic inflation raises P/P*",
+        "Its direction is ambiguous because both nominal and real rates change"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-M-001",
+      "reason": "Index levels do not justify literal foreign-basket units without currency-denominated basket prices.",
+      "stem": "A domestic basket costs 120 domestic currency units; a comparable foreign basket costs 150 foreign currency units. With e = 2 foreign currency units per domestic unit and ε = eP/P*, what is ε?",
+      "correct": "1.60 foreign baskets per domestic basket",
+      "distractors": [
+        "1.25 foreign baskets per domestic basket",
+        "0.625 foreign basket per domestic basket",
+        "2.50 foreign baskets per domestic basket"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-B2-001",
+      "reason": "Standalone formula inputs omit quote orientation and price units.",
+      "stem": "A basket costs P = 160 domestic currency units and its foreign counterpart costs P* = 100 foreign units. At e = 0.5 foreign currency unit per domestic unit, what is ε = eP/P*?",
+      "correct": "0.80",
+      "distractors": [
+        "1.60",
+        "80",
+        "1.25"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-H-001",
+      "reason": "Numerical rise in nominal quote needs explicit foreign/domestic units.",
+      "stem": "Use e in foreign currency per domestic currency and ε = eP/P*. The nominal rate rises 5 percent, domestic prices rise 4 percent, and foreign prices rise 2 percent. Approximately how does the real exchange rate change?",
+      "correct": "It appreciates about 7 percent",
+      "distractors": [
+        "It appreciates about 3 percent",
+        "It depreciates about 7 percent",
+        "It depreciates about 1 percent"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-B3-001",
+      "reason": "Nominal quote direction omitted.",
+      "stem": "Use e in foreign currency per domestic currency and ε = eP/P*. The nominal rate falls 4 percent while domestic inflation is 7 percent and foreign inflation is 2 percent. What is the approximate real change?",
+      "correct": "A 1 percent real appreciation",
+      "distractors": [
+        "A 1 percent real depreciation",
+        "A 9 percent real depreciation",
+        "A 5 percent real appreciation"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-LB-002",
+      "reason": "Quote and basket-price currency units omitted.",
+      "stem": "Let e be foreign currency per domestic currency and ε = eP/P*. A domestic basket rises from 250 to 270 domestic currency units, its foreign counterpart rises from 400 to 408 foreign currency units, and e falls from 1.60 to 1.50. What is the final real rate compared with the initial rate?",
+      "correct": "It falls from 1.00 to about 0.993",
+      "distractors": [
+        "It rises from 1.00 to about 1.08",
+        "It falls from 1.60 to 1.50",
+        "It remains exactly 1.00"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-H-006",
+      "reason": "Duplicates the Concept Review worked example exactly; replace scenario and operation.",
+      "stem": "A U.S. instrument costs $84 and a comparable foreign instrument costs 63 crowns. The quote is 0.90 crown per dollar. With both instrument prices fixed, what quote would make their converted prices equal, and how would ε = eP/P* change?",
+      "correct": "0.75 crown per dollar; ε falls from 1.20 to 1.00",
+      "distractors": [
+        "1.20 crowns per dollar; ε rises from 1.20 to 1.60",
+        "0.75 crown per dollar; ε stays at 1.20",
+        "0.90 crown per dollar; ε falls from 1.20 to 1.00"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-R-001",
+      "reason": "Distractor inverting both price levels is algebraically another valid correction.",
+      "stem": "A student uses ε = eP*/P even though e is foreign currency per domestic currency. Which correction is needed?",
+      "correct": "Use ε = eP/P*",
+      "distractors": [
+        "Use ε = P − P*",
+        "Use ε = e/P",
+        "Keep ε = eP*/P because the foreign price belongs in the numerator"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-E-001",
+      "reason": "Weak distractors use irrelevant units instead of reciprocal-quote misconceptions.",
+      "stem": "An exchange rate of 1.30 euros per dollar means that one dollar can buy:",
+      "correct": "1.30 euros",
+      "distractors": [
+        "About 0.77 euro",
+        "0.30 euro",
+        "About 1.77 euros"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-E-002",
+      "reason": "Reciprocal answer is meaningless as a currency outcome.",
+      "stem": "If the dollar rises from 0.90 euro per dollar to 0.98 euro per dollar, the dollar has:",
+      "correct": "Appreciated against the euro",
+      "distractors": [
+        "Depreciated against the euro",
+        "Kept the same value",
+        "Appreciated against every foreign currency"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NCO-H-002",
+      "reason": "Distractors about word order and the word sharply are giveaways.",
+      "stem": "The domestic real interest rate rises, but political risk also rises sharply. What can be concluded about NCO?",
+      "correct": "The direction is ambiguous because the two forces push NCO oppositely",
+      "distractors": [
+        "NCO rises because risk determines flows independently of returns",
+        "NCO is unchanged because NX = NCO forces the channels to cancel",
+        "NCO falls because interest returns determine flows independently of risk"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NCO-H-006",
+      "reason": "Distractors do not represent plausible return/outflow reasoning.",
+      "stem": "Why does a higher domestic real interest rate lower NCO rather than raise it in the standard model?",
+      "correct": "It favors domestic assets over foreign assets for both domestic and foreign investors",
+      "distractors": [
+        "It makes foreign assets relatively more attractive to domestic savers",
+        "It raises outward investment by increasing the return on foreign bonds",
+        "It attracts foreign funds that enter positively in the definition of NCO"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-E-001",
+      "reason": "Name NCO-based model to distinguish gross currency market.",
+      "stem": "In the NCO-based open-economy model, which goods-market activity creates demand for domestic currency?",
+      "correct": "Foreign buyers of domestic net exports",
+      "distractors": [
+        "Domestic residents buying foreign assets",
+        "The domestic central bank buying domestic goods",
+        "Domestic firms purchasing domestic labor"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-E-002",
+      "reason": "Name NCO-based model to distinguish upward-sloping supply family.",
+      "stem": "In the NCO-based model with vertical currency supply, what determines the supplied quantity?",
+      "correct": "Net capital outflow",
+      "distractors": [
+        "Domestic consumption",
+        "Government purchases",
+        "Foreign net exports"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-E-006",
+      "reason": "No image or explicit quote orientation.",
+      "stem": "Use the dollar market with downward-sloping demand, upward-sloping supply, and e quoted in foreign currency per U.S. dollar. If demand for domestic currency rises while supply is fixed, the equilibrium exchange rate:",
+      "correct": "Rises",
+      "distractors": [
+        "Falls",
+        "Stays fixed",
+        "Becomes equal to NCO"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-H-005",
+      "reason": "Quantity conclusion requires upward-sloping supply model; scope contains vertical supply too.",
+      "stem": "Use the dollar market with downward-sloping demand, upward-sloping supply, and e quoted in foreign currency per U.S. dollar. Demand and supply of domestic currency both increase, with no information about relative shift sizes. What is determined?",
+      "correct": "Currency quantity rises, but the exchange-rate direction is ambiguous",
+      "distractors": [
+        "The exchange rate falls while currency quantity is unchanged",
+        "Both currency quantity and the exchange rate rise",
+        "Currency quantity falls while the exchange rate rises"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-H-006",
+      "reason": "Quantity ambiguity is for upward-sloping supply, not fixed vertical NCO supply.",
+      "stem": "Use the dollar market with downward-sloping demand, upward-sloping supply, and e quoted in foreign currency per U.S. dollar. Demand for domestic currency falls while its supply rises. What is determined?",
+      "correct": "The exchange rate falls, while the quantity direction is ambiguous",
+      "distractors": [
+        "The exchange rate rises and quantity falls",
+        "Both the exchange rate and quantity fall",
+        "Both outcomes are ambiguous"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-B3-002",
+      "reason": "Specify quote and ordinary upward-sloping model.",
+      "stem": "Use the dollar market with downward-sloping demand, upward-sloping supply, and e quoted in foreign currency per U.S. dollar. Demand falls while supply also falls. Why is the rate direction ambiguous?",
+      "correct": "Lower demand pushes it down, while lower supply pushes it up",
+      "distractors": [
+        "Both shifts push it down by different amounts",
+        "Supply determines only the rate and demand only quantity",
+        "Supply prevents any exchange-rate change"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-B1-002",
+      "reason": "References a graph vertical axis without an image or quote definition.",
+      "stem": "On a vertical axis quoted in foreign currency per U.S. dollar, which movement represents dollar depreciation?",
+      "correct": "Downward",
+      "distractors": [
+        "No movement",
+        "Upward",
+        "Rightward only"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-R-001",
+      "reason": "Moving up a vertical curve is possible: original key incorrectly treats movement along demand as alternative to movement along supply.",
+      "stem": "In the NCO-based FX model, NCO is fixed. A student says a higher exchange rate must increase the quantity supplied. Which correction distinguishes a movement along vertical supply from a shift?",
+      "correct": "Moving up the vertical supply curve leaves quantity fixed; changing NCO shifts that curve",
+      "distractors": [
+        "Moving up the vertical supply curve raises both NCO and supplied quantity",
+        "A higher exchange rate shifts vertical supply right even with NCO fixed",
+        "Moving along vertical supply requires an increase in foreign demand at every rate"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-H-002",
+      "reason": "Feedback calls real exchange rate real rate, confusable with loanable-funds real interest rate.",
+      "stem": "A tariff is imposed while national saving and domestic investment remain unchanged. What is the general-equilibrium NX result in the textbook model?",
+      "correct": "NX is unchanged after currency appreciation offsets the direct import reduction",
+      "distractors": [
+        "NX rises because lower imports change the trade balance while NCO stays fixed",
+        "NX falls because appreciation reduces exports by more than the tariff changes imports",
+        "NX becomes positive because the tariff shifts currency demand right"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-M-004",
+      "reason": "Distinguish real appreciation from nominal movement offset by price changes.",
+      "stem": "Why does a real currency appreciation tend to reduce aggregate demand, holding its other components fixed?",
+      "correct": "It lowers net exports, a component of aggregate demand",
+      "distractors": [
+        "It lowers the domestic money supply by identity",
+        "It raises government purchases",
+        "It shifts long-run aggregate supply left"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-B1-002",
+      "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective.",
+      "stem": "With dollar demand unchanged and the vertical axis quoted in foreign currency per U.S. dollar, a leftward dollar-supply shift causes the dollar to:",
+      "correct": "Appreciate",
+      "distractors": [
+        "Depreciate",
+        "Remain fixed",
+        "Lose all foreign purchasing power"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-B2-003",
+      "reason": "Partial NX offset belongs to short-run/gross-market response, not vertical fixed-NCO full adjustment.",
+      "stem": "In a short-run dollar market with upward-sloping supply, fixed domestic and foreign prices, and e quoted in foreign currency per dollar, a foreign recession reduces export demand. Which immediate demand and exchange-rate channel follows?",
+      "correct": "Dollar demand falls and depreciation cushions the initial export-demand loss",
+      "distractors": [
+        "Loanable-funds supply rises and appreciation cushions the export-demand loss",
+        "Dollar demand rises and depreciation reinforces the export-demand loss",
+        "Dollar supply falls and appreciation raises net exports"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-EL-002",
+      "reason": "Distinguish short-run AD comparison from fixed-NCO long-run trade offset.",
+      "stem": "In a short-run comparison before full trade and output adjustment, monetary easing lowers domestic real rates while a foreign recession cuts export demand. Prices are fixed, and NCO is not held fixed across the two shocks. Can the net AD change be signed without response magnitudes?",
+      "correct": "Ambiguous without the relative strengths of higher NX from depreciation and lower export demand",
+      "distractors": [
+        "AD falls because foreign income changes exports while monetary policy changes only investment",
+        "AD is unchanged because depreciation offsets the export-demand shift one for one",
+        "AD rises because the monetary channel determines the exchange rate before exports respond"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-TX-L-001",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "In one period, consumption rises $96 billion, of which $72 billion is imported. Measured investment rises $35 billion, including $11 billion of imported equipment. Exports rise $18 billion; G and other imports are unchanged. A report claims GDP rose $149 billion. Which correction also reconciles the change in national saving?",
+      "correct": "GDP rises $66 billion and national saving falls $30 billion",
+      "distractors": [
+        "GDP rises $149 billion and national saving rises $53 billion",
+        "GDP rises $66 billion and national saving rises $30 billion",
+        "GDP rises $83 billion and national saving falls $13 billion"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-TX-L-002",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Two countries initially have S = $700 billion and I = $750 billion. In Alder, saving rises $65 billion while investment rises an unknown amount. In Brin, saving rises $40 billion and investment rises $25 billion. What condition makes Alder end with a smaller trade deficit than Brin but still a deficit?",
+      "correct": "Alder investment rises by more than $15 billion but less than $50 billion",
+      "distractors": [
+        "Alder investment rises by less than $15 billion",
+        "Alder investment rises by more than $50 billion but less than $65 billion",
+        "Alder investment rises by exactly $65 billion"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-TX-L-003",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Initially NX and NCO are zero. Residents increase foreign-asset purchases by $126 billion. Exports then rise $54 billion and imports rise $18 billion. What change in foreign purchases of domestic assets reconciles both accounts, and what does it establish about the causal sequence?",
+      "correct": "They rise $90 billion; the identities do not establish which flow caused the trade change",
+      "distractors": [
+        "They rise $162 billion; capital inflow necessarily causes the export increase",
+        "They fall $90 billion; the identities establish that trade moved first",
+        "They rise $36 billion; the asset and trade balances need not match"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-TX-L-004",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Imports increased, national saving fell, and domestic investment also fell. A commentator says these observations prove that the trade deficit widened. Which additional comparison would resolve the claim while allowing an independent trade-account check?",
+      "correct": "Compare the saving decline with the investment decline, and compare the import rise with the export change",
+      "distractors": [
+        "Compare the saving decline with the import rise; exports are unnecessary",
+        "Compare the investment decline with the import rise; saving is unnecessary",
+        "Compare the levels of saving and exports; their changes are unnecessary"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-TX-L-005",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "A deficit lowers public saving $74 billion. Private saving rises by an unknown amount, domestic investment falls $22 billion, and NX falls $31 billion. Which private-saving response and interpretation reconcile the accounts?",
+      "correct": "Private saving rises $21 billion; the NX decline is smaller than the deficit increase",
+      "distractors": [
+        "Private saving rises $43 billion; NX must fall by the full deficit increase",
+        "Private saving falls $21 billion; investment crowding out enlarges the NX decline",
+        "Private saving rises $105 billion; the deficit necessarily produces a trade surplus"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-TX-L-006",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "For the same period, a data release reports S = $480 billion, I = $525 billion, X = $210 billion, M = $240 billion, foreign-asset purchases by residents of $70 billion, and domestic-asset purchases by foreigners of $115 billion. If exactly one trade figure is wrong and all other figures are correct, which correction is admissible, and is its location identified?",
+      "correct": "Raise M to $255 billion or lower X to $195 billion; the identity does not select between them",
+      "distractors": [
+        "Raise X to $225 billion or lower M to $225 billion; the identity does not select between them",
+        "Raise M to $255 billion; the identity proves that imports alone are wrong",
+        "Lower X to $195 billion; the identity proves that exports alone are wrong"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-TX-LB-003",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "A firm buys imported equipment for $44 million. Measured consumption rises $31 million, of which $19 million is imported. Government purchases are unchanged, and GDP rises $27 million. With no other expenditure changes, reconstruct exports and NX changes.",
+      "correct": "Exports rise $15 million and NX falls $48 million",
+      "distractors": [
+        "Exports rise $27 million and NX falls $36 million",
+        "Exports rise $71 million and NX rises $8 million",
+        "Exports fall $17 million and NX falls $80 million"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-EL-002",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "The U.S. dollar buys 10 percent more euros but 5 percent fewer yen. From these bilateral changes alone, what follows about the euro price of one yen?",
+      "correct": "It rises because one yen buys more dollars and each dollar buys more euros",
+      "distractors": [
+        "It falls because a stronger dollar against the euro makes every other currency cheaper",
+        "It is unchanged because the two dollar quotations use reciprocal units",
+        "Its direction is indeterminate because one dollar quote rises and the other falls"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-L-001",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "A U.S. traveler has $2,400 for a euro-priced package initially costing €1,980. The initial quote is €0.90 per dollar, and the package euro price rises 8 percent. What is the greatest percentage decline in euros per dollar the budget can absorb while still covering the package?",
+      "correct": "1 percent",
+      "distractors": [
+        "8 percent",
+        "9.1 percent",
+        "10 percent"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-L-003",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "A U.S. exporter raises its dollar unit price 4 percent while the dollar depreciates 6 percent in foreign-currency-per-dollar terms. What minimum sales-volume increase preserves its foreign-currency revenue, ignoring fees?",
+      "correct": "About 2.29 percent",
+      "distractors": [
+        "About 2.00 percent",
+        "About 2.24 percent",
+        "About 10.64 percent"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-L-005",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "A foreign dollar costs 80 domestic currency units initially and 88 later. A report calls this a 10 percent domestic-currency appreciation and says a dollar-priced import became 10 percent cheaper domestically. With its dollar price fixed, which paired correction is accurate?",
+      "correct": "The domestic currency depreciates about 9.1 percent in dollars per domestic unit; the import costs 10 percent more domestically",
+      "distractors": [
+        "The domestic currency depreciates 10 percent in reciprocal terms; the import costs 9.1 percent more domestically",
+        "The domestic currency appreciates 10 percent; the import costs 10 percent more domestically",
+        "The domestic currency depreciates about 9.1 percent; the import costs 9.1 percent less domestically"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-L-006",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "An agency quotes £0.75 per U.S. dollar with no fee, then £0.84 per dollar with a 3 percent fee added to the converted dollar charge. A £420 booking keeps its pound price. What is the new dollar cost, and what fee rate would exactly eliminate the benefit of the better quote?",
+      "correct": "$515; a 12 percent fee",
+      "distractors": [
+        "$515; a 10.7 percent fee",
+        "$485; a 12 percent fee",
+        "$560; a 3 percent fee"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-LB-003",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "The yen first appreciates 10 percent and then depreciates 10 percent, each measured in U.S. dollars per yen from the preceding value. A yen-denominated asset meanwhile gains 4 percent. What is its cumulative dollar return, and what final currency rise alone would restore the initial dollars-per-yen quote?",
+      "correct": "A 2.96 percent asset return; about a 1.01 percent currency rise",
+      "distractors": [
+        "A 4 percent asset return; no further currency change",
+        "A 3 percent asset return; exactly a 1 percent currency rise",
+        "A 5.04 percent asset return; about a 1.01 percent currency decline"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-L-002",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "A domestic basket costs 200 domestic units and a comparable foreign basket costs 300 foreign units. Initially e is 1.50 foreign units per domestic unit. Later e falls to 1.35 and the foreign basket rises 8 percent. What domestic basket price would keep ε = eP/P* unchanged, and what if the actual price were 230?",
+      "correct": "240 domestic units; at 230, ε is below its initial value",
+      "distractors": [
+        "216 domestic units; at 230, ε is below its initial value",
+        "240 domestic units; at 230, ε is above its initial value",
+        "200 domestic units; at 230, ε is above its initial value"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-L-003",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Country A has 9 percent inflation and Country B has 3 percent inflation. Let e be B currency per A currency. What exact percentage decline in e keeps A’s real exchange rate unchanged, and would a 2 percent decline instead produce real appreciation?",
+      "correct": "About 5.50 percent; yes",
+      "distractors": [
+        "6 percent; no",
+        "About 5.83 percent; yes",
+        "2 percent; no"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-L-004",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "In common currency, identical traded goods have equal prices across two countries, but broad consumer baskets remain differently priced. An analyst predicts that removing shipping costs alone must equalize the broad baskets. Which missing evidence matters most?",
+      "correct": "Whether remaining basket gaps come from nontraded services, quality differences or local taxes that shipping reform does not remove",
+      "distractors": [
+        "Whether the nominal exchange rate is quoted reciprocally, since taking a reciprocal removes real basket gaps",
+        "Whether domestic saving equals investment, since balanced trade is sufficient for broad-basket PPP",
+        "Whether traded-goods PPP holds, since that alone requires every consumer basket to match"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-L-006",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Relative PPP predicts depreciation of a domestic currency, but it depreciates less over the observed interval. The report gives no horizon or evidence about traded-goods price gaps. Which follow-up best distinguishes short-run deviation from persistent limits to PPP?",
+      "correct": "Examine the horizon and whether gaps are concentrated in nontraded or costly-to-arbitrage goods",
+      "distractors": [
+        "Replace the nominal quote with its reciprocal and treat the discrepancy as resolved",
+        "Infer that inflation data are wrong because depreciation differed from the benchmark",
+        "Infer that capital flows cannot matter because PPP already predicts a direction"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-LB-001",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Initially ε = eP/P* = 1, with e in foreign currency per domestic currency. In year one e rises 12 percent, domestic prices fall 3 percent and foreign prices rise 4 percent. In year two both price levels are fixed. What year-two change in e restores the initial real rate?",
+      "correct": "A decline of about 4.27 percent",
+      "distractors": [
+        "A decline of exactly 5 percent",
+        "A rise of about 4.46 percent",
+        "A decline of about 4.46 percent"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-LB-003",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Country A’s currency rises 3 percent in B currency per A currency, while A’s prices rise 7 percent and B’s rise 2 percent. A second policy can reduce only A’s nominal currency value, measured from that new quote. Approximately how much nominal depreciation is needed to prevent any net real appreciation over both stages?",
+      "correct": "At least 7.45 percent",
+      "distractors": [
+        "At least 8 percent",
+        "At least 3 percent",
+        "At least 4.76 percent"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NCO-L-001",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Residents initially buy $220 billion abroad and foreigners buy $260 billion domestically. Resident purchases later rise 25 percent. What range of growth in foreign purchases would leave a net inflow that is smaller than the initial net inflow?",
+      "correct": "More than about 5.77 percent but less than about 21.15 percent",
+      "distractors": [
+        "Less than about 5.77 percent",
+        "More than about 21.15 percent",
+        "Exactly 25 percent"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NCO-L-002",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Domestic real returns rise while perceived domestic political risk also rises. An analyst observes that NCO increased and concludes that higher interest rates caused capital flight. Holding other determinants fixed, which inference separates the observed change from the interest-rate effect?",
+      "correct": "The risk-driven outward shift dominated the rate-induced reduction in NCO; the observation does not reverse the rate mechanism",
+      "distractors": [
+        "The positive NCO response proves that higher domestic rates increase desired foreign purchases",
+        "The identity NX = NCO requires risk and interest-rate effects to have equal size",
+        "The rate increase must have preceded the risk shock because NCO rose"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NCO-L-004",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "In a period, residents acquire $300 billion of foreign securities. Foreign acquisitions of domestic factories are known only to lie between $180 and $240 billion; foreign acquisitions of domestic bonds lie between $50 and $90 billion. There are no other asset flows. What can be inferred about NCO?",
+      "correct": "It lies between −$30 and +$70 billion; its sign needs the combined inflow",
+      "distractors": [
+        "It must be positive because securities purchases exceed either inflow separately",
+        "It must be negative because there are two types of inward purchases",
+        "It equals $30 billion because the component ranges cancel"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NCO-L-006",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Gross outward and inward asset purchases are reported as $3,045 billion and $3,000 billion. Each figure could independently be revised up or down by $30 billion. Does the reported positive NCO establish a robust direction of net capital flow?",
+      "correct": "No; admissible NCO ranges from −$15 to +$105 billion",
+      "distractors": [
+        "Yes; any revisions preserve the reported +$45 billion",
+        "Yes; the maximum revision to NCO is only $30 billion",
+        "No; the revisions imply exactly zero NCO"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NCO-LB-001",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Initially gross outward purchases are $500 billion and inward purchases $560 billion. Later inward purchases are $650 billion, investment has risen $75 billion and saving has risen $105 billion. What later outward purchases reconcile the accounts, and does the country still receive a net inflow?",
+      "correct": "$620 billion; yes, a $30 billion net inflow",
+      "distractors": [
+        "$680 billion; no, a $30 billion net outflow",
+        "$650 billion; no, the asset account balances",
+        "$590 billion; yes, a $60 billion net inflow"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NCO-LB-002",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "At the original interest rate, a risk shock raises residents’ intended foreign purchases by $140 billion and lowers foreign intended domestic purchases by $60 billion. The new equilibrium shows NCO up $125 billion. What interest-rate feedback is required, and which portfolio pattern could produce it?",
+      "correct": "Feedback lowers NCO $75 billion; resident purchases fall $45 billion and foreign purchases rise $30 billion relative to the shifted schedule",
+      "distractors": [
+        "Feedback raises NCO $75 billion; resident purchases rise $45 billion and foreign purchases fall $30 billion",
+        "Feedback lowers NCO $15 billion; both gross purchase flows fall $75 billion",
+        "Feedback lowers NCO $200 billion; all desired purchases return to their original levels"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-EL-001",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Use the dollar market with downward-sloping demand, upward-sloping supply, and e quoted in foreign currency per U.S. dollar. Equilibrium dollar quantity falls, but the final exchange rate is unavailable. If both curves shifted left, what additional evidence determines whether the dollar appreciated?",
+      "correct": "At the original exchange rate, whether the fall in quantity supplied exceeds the fall in quantity demanded",
+      "distractors": [
+        "Whether both original curves had the same slope sign",
+        "Whether dollar quantity fell, since that alone determines appreciation",
+        "Whether demand shifted before supply, regardless of final curves"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-EL-002",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Refer to the numbered graph with upward-sloping dollar supply and e in foreign currency per dollar. A to B shows unchanged e after both curves shift right. A report attributes this to no change in demand. Which evidence rejects that claim, and can the final rate identify which shift occurred first?",
+      "correct": "D1 differs from D0 and quantity rises; the final rate does not identify shift order",
+      "distractors": [
+        "S1 differs from S0, proving demand did not change; the final rate identifies supply first",
+        "Quantity rises, proving e must have risen; the final rate identifies demand first",
+        "The unchanged rate proves the curves did not move; their order is irrelevant"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-L-003",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Refer to the graph showing S0 shifting right to S1 along D0. Prices are fixed. One explanation is lower domestic real returns; another is higher domestic political risk. What do the displayed rate and quantity changes identify, and what additional evidence distinguishes these explanations?",
+      "correct": "A larger dollar supply and real depreciation; independent return or risk evidence is needed to identify the cause",
+      "distractors": [
+        "Lower domestic real returns uniquely; the supply shift rules out political risk",
+        "Higher political risk uniquely; depreciation rules out a return change",
+        "A rise in dollar demand; the same image cannot be produced by a supply shock"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-L-004",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Use the dollar market with downward-sloping demand, upward-sloping supply, and e quoted in foreign currency per U.S. dollar. Foreign demand for U.S. goods rises while domestic purchases of foreign assets fall. Quantity exchanged nevertheless rises. Which inference uses both the identified rate effect and the observed quantity?",
+      "correct": "The dollar appreciates; at the original quantity, the demand increase exceeds the supply contraction in vertical rate terms",
+      "distractors": [
+        "The dollar depreciates; rising quantity shows the supply contraction dominated",
+        "The dollar appreciates; rising quantity proves that dollar supply actually increased",
+        "The rate remains ambiguous; quantity evidence can never constrain relative shifts"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-L-005",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "In the vertical-NCO FX model, the domestic real interest rate rises while an independent risk shock shifts desired NCO outward. The final FX supply curve is right of its original position. With fixed prices and unchanged NX demand, what can be inferred?",
+      "correct": "The risk shift dominates the rate feedback; the currency depreciates, but the graph alone does not measure either component",
+      "distractors": [
+        "The interest-rate rise caused the supply increase, reversing the usual NCO slope",
+        "Vertical supply means NCO is fixed across both equilibria, so the graph is impossible",
+        "The risk shift and rate feedback cancel exactly because both supply curves are vertical"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-L-006",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Refer to the numbered graph showing A to B after both dollar-market curves shift right. If demand shifts first and supply second, estimate the intermediate rate to the nearest tenth from the displayed straight lines and compare the intermediate and final outcomes with A. Which statement fits?",
+      "correct": "The intermediate rate rises 20 percent; the final rate returns to its initial value while quantity doubles",
+      "distractors": [
+        "The intermediate rate falls 20 percent; the final rate returns to its initial value while quantity doubles",
+        "The intermediate rate rises 20 percent; the final quantity rises only 50 percent",
+        "The final rate is unchanged, so the intermediate rate must also be unchanged"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-LB-001",
+      "reason": "Gross dollar-market quantity does not itself identify NCO; constrain net asset flows independently.",
+      "stem": "Refer to the conceptual graph with upward-sloping supply. Foreign export demand shifts D0 to D1 and residents’ foreign-asset purchases shift S0 to S1. Separately, foreign purchases of domestic assets are known to be unchanged. Which conclusion distinguishes graph evidence from asset accounting?",
+      "correct": "The displayed dollar quantity rises and the rate is unchanged; the separate net-asset evidence establishes higher NCO and therefore NX",
+      "distractors": [
+        "The unchanged rate alone proves unchanged NCO even though residents buy more foreign assets",
+        "The gross dollar quantity alone equals NCO in every upward-sloping currency market",
+        "The displayed quantity rises and the rate rises; the identity permits NX to fall despite higher NCO"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-LB-002",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Use the dollar market with downward-sloping demand, upward-sloping supply, and e quoted in foreign currency per U.S. dollar. At the original exchange rate, an export-demand shock increases dollars demanded by 70 units and an asset-purchase shock increases dollars supplied by 45 units. What happens to equilibrium e and quantity, and do those two shift amounts identify their exact changes?",
+      "correct": "Both rise; curve slopes are needed for exact changes",
+      "distractors": [
+        "Both rise; e rises exactly 25 percent",
+        "e falls and quantity rises; supply determines the rate independently",
+        "e is unchanged and quantity rises exactly 115 units"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-LB-003",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "Refer to the numbered graph. Compare demand-first and supply-first adjustment, assuming each market clears before the second shift and final curves are identical. Which statement distinguishes the paths from the endpoint?",
+      "correct": "Demand first temporarily raises the rate and supply first temporarily lowers it; both end at B",
+      "distractors": [
+        "Both paths temporarily raise the rate because final quantity is larger",
+        "Demand first ends at a permanently higher rate than supply first",
+        "Both paths have a constant rate because A and B have the same rate"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-L-002",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "In the open-economy loanable-funds model, saving is unchanged and capital flight raises desired NCO $150 billion at the original real interest rate. Final domestic investment falls $110 billion. Reconstruct the rate-induced NCO feedback and FX outcome with NX demand and price levels fixed.",
+      "correct": "Feedback lowers NCO $40 billion; final NCO rises $110 billion and the currency depreciates",
+      "distractors": [
+        "Feedback raises NCO $40 billion; final NCO rises $190 billion and the currency depreciates",
+        "Feedback lowers NCO $110 billion; final NCO rises $40 billion and the currency appreciates",
+        "Feedback exactly cancels the shock; NCO and the exchange rate are unchanged"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-L-003",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "A trade restriction initially lowers targeted imports by $64 billion. After exchange-rate adjustment, exports are $37 billion lower. Saving and investment are unchanged. What rebound in other imports reconciles the accounts, and what would a measured rebound of only $20 billion imply if all figures were complete and exact?",
+      "correct": "A $27 billion rebound is required; a $20 billion rebound would conflict with unchanged S and I",
+      "distractors": [
+        "A $101 billion rebound is required; a $20 billion rebound confirms unchanged NX",
+        "A $27 billion rebound is required; a $20 billion rebound would still leave NX unchanged",
+        "A $37 billion rebound is required; a $20 billion rebound proves a larger NCO"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-LB-001",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "A fiscal change reduces public saving by $80 billion. Private saving rises by an unknown amount. Real interest rates rise, domestic investment falls $30 billion, and NX falls $35 billion. What private-saving response reconciles the model, and how does FX supply move?",
+      "correct": "Private saving rises $15 billion; vertical FX supply falls $35 billion",
+      "distractors": [
+        "Private saving rises $45 billion; vertical FX supply falls $80 billion",
+        "Private saving falls $15 billion; vertical FX supply rises $35 billion",
+        "Private saving rises $115 billion; vertical FX supply is unchanged"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-LB-002",
+      "reason": "Compare horizontal shifts at the same initial exchange rate; add remaining-model assumptions.",
+      "stem": "In the vertical-NCO FX model, a tariff and capital flight occur together. At the original exchange rate, the tariff raises currency demand by 40 units while the final NCO increase raises supply by 65 units after interest-rate feedback. Prices and other demand determinants are fixed. What follows, and which extra information would quantify the exchange-rate change?",
+      "correct": "The currency depreciates and NX rises 65 units; the NX-demand slope is needed to quantify depreciation",
+      "distractors": [
+        "The currency appreciates and NX rises 40 units; the loanable-funds supply slope alone measures appreciation",
+        "The currency depreciates but NX is unchanged; tariffs fix the trade balance",
+        "The rate is unchanged and NX rises 105 units; horizontal shifts can simply be added"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-BR-001",
+      "reason": "Upper tier repeats recognition, one-step arithmetic or ordinary Hard chain; use inverse constraints, competing channels or path comparison within existing objective.",
+      "stem": "A deficit-funded increase in government purchases is accompanied by lower domestic investment and a real currency appreciation. A report observes these changes and claims total AD must have fallen. Which conclusion can be defended without response magnitudes?",
+      "correct": "Lower investment and lower NX offset part of the direct government-purchases stimulus; total AD’s direction requires their relative sizes",
+      "distractors": [
+        "Real appreciation proves the NX decline exceeds the government-purchases increase",
+        "Higher government purchases prove total AD rises regardless of crowding out and NX",
+        "Lower domestic investment shifts short-run aggregate supply rather than any AD component"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-E-003",
+      "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective.",
+      "stem": "Use ε = eP/P*, where e is foreign currency per domestic currency, P is the domestic price level and P* the foreign price level. A higher real exchange rate under the course convention indicates:",
+      "correct": "A real appreciation of the domestic currency",
+      "distractors": [
+        "A real depreciation of the domestic currency",
+        "A lower domestic price level by definition",
+        "Purchasing-power parity must hold exactly"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-E-005",
+      "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective.",
+      "stem": "Use ε = eP/P*, where e is foreign currency per domestic currency, P is the domestic price level and P* the foreign price level. If the nominal exchange rate and foreign price level are fixed while the domestic price level rises, the domestic currency experiences:",
+      "correct": "A real appreciation",
+      "distractors": [
+        "A nominal depreciation",
+        "A real depreciation",
+        "No real exchange-rate change"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-M-002",
+      "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective.",
+      "stem": "Use ε = eP/P*, where e is foreign currency per domestic currency, P is the domestic price level and P* the foreign price level. The nominal rate stays fixed, domestic prices rise 6 percent, and foreign prices rise 2 percent. Approximately what happens to the real exchange rate?",
+      "correct": "It appreciates about 4 percent",
+      "distractors": [
+        "It depreciates about 4 percent",
+        "It appreciates 8 percent",
+        "It remains unchanged"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-H-002",
+      "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective.",
+      "stem": "Use ε = eP/P*, where e is foreign currency per domestic currency, P is the domestic price level and P* the foreign price level. The nominal rate is unchanged, but the domestic basket rises from 100 to 110 while the foreign basket rises from 200 to 204. What is the approximate real appreciation?",
+      "correct": "About 7.8 percent",
+      "distractors": [
+        "About 12 percent",
+        "About 2 percent",
+        "About 5.9 percent"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-B1-002",
+      "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective.",
+      "stem": "Use ε = eP/P*, where e is foreign currency per domestic currency, P is the domestic price level and P* the foreign price level. A decline in the real exchange rate is called:",
+      "correct": "A real depreciation",
+      "distractors": [
+        "A nominal appreciation",
+        "Purchasing-power parity",
+        "A real appreciation"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-H-005",
+      "reason": "Clarify alternative conversion dates; already-converted receipts do not change value retrospectively.",
+      "stem": "A Canadian firm compares converting the same US$200,000 receipt at 1.35 versus 1.28 Canadian dollars per U.S. dollar. Ignoring fees, how does its Canadian-dollar revenue change?",
+      "correct": "It falls by C$14,000",
+      "distractors": [
+        "It falls by C$7,000",
+        "It rises by C$27,000",
+        "It rises by C$14,000"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NER-L-002",
+      "reason": "Explicit conversion quote and rounding exclude the 3-percent additive approximation distractor.",
+      "stem": "A foreign asset rises 8 percent in its local currency while the quote in the investor’s home currency per foreign currency unit falls 5 percent. Ignoring income and fees, what is the home-currency return, rounded to one decimal place?",
+      "correct": "About 2.6 percent",
+      "distractors": [
+        "About 13.4 percent",
+        "About 3 percent",
+        "About 8 percent"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-H-005",
+      "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective.",
+      "stem": "Expansionary monetary policy lowers the domestic real interest rate in the short run. Hold domestic and foreign goods prices and other asset-return determinants fixed. Which open-economy channel reinforces aggregate demand?",
+      "correct": "NCO rises, the currency depreciates, and NX rises",
+      "distractors": [
+        "NCO falls, the currency appreciates, and NX falls",
+        "NCO rises, the currency appreciates, and NX falls",
+        "NCO falls, the currency depreciates, and NX falls"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-POL-B3-003",
+      "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective.",
+      "stem": "In a short-run comparison with goods prices fixed, monetary easing lowers domestic real returns while stronger foreign income increases demand for domestic exports. Which FX channels initially support domestic aggregate demand?",
+      "correct": "Easing raises currency supply; stronger foreign income raises currency demand",
+      "distractors": [
+        "Both changes lower currency demand",
+        "Both changes reduce currency supply",
+        "Easing raises currency demand; foreign income raises currency supply"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-FX-L-001",
+      "reason": "Clarify the selected model, quote orientation, units or conditional mechanism without changing the objective.",
+      "stem": "Use the dollar market with downward-sloping demand, upward-sloping supply, and e quoted in foreign currency per U.S. dollar. Foreign demand for domestic exports rises while a lower domestic real interest rate raises NCO. What can be concluded?",
+      "correct": "Currency quantity rises, while the exchange-rate direction depends on the relative demand and supply shifts",
+      "distractors": [
+        "Currency quantity is ambiguous because the rate is fixed",
+        "The exchange rate rises because the export-demand change is stated first",
+        "The exchange rate falls because NCO controls both equilibrium variables"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-RER-EL-001",
+      "reason": "Final uniqueness review found the former additional-depreciation/inflation alternative could also describe offsetting movements. Specify inadequate depreciation to make the misconception unique.",
+      "stem": "Domestic inflation exceeds foreign inflation for several years, yet the real exchange rate is nearly unchanged. What nominal pattern is consistent with this outcome?",
+      "correct": "A nominal depreciation that offsets the inflation differential",
+      "distractors": [
+        "A nominal depreciation too small to offset the inflation differential",
+        "A nominal appreciation equal to the inflation differential",
+        "A fixed nominal rate regardless of the inflation gap"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    },
+    {
+      "id": "PMOE-NCO-B3-003",
+      "reason": "Distinguish net acquisition including asset sales from gross purchases or changes in the stock of holdings.",
+      "stem": "Residents reduce net acquisition of foreign assets by selling assets and repatriating funds. Foreign net acquisition of domestic assets is unchanged. What happens to residents’ net outward asset flow and NCO?",
+      "correct": "Both fall",
+      "distractors": [
+        "Both rise",
+        "The outward asset flow falls while NCO rises",
+        "NCO is unchanged because foreign investors did not act"
+      ],
+      "economicReview": "Reviewed against the named quote, dimensional consistency, accounting versus behavioral inference, model-specific supply/demand, signs, offset versus reinforcement, and option uniqueness."
+    }
+  ]
+}
