@@ -94,7 +94,7 @@ async function build({library, template, composition, baseRecipe, appearance, cu
   };
 
   pass(core.COMPOSER_VERSION === '4.5s.3k', 'Unexpected Composer version');
-  pass(core.RECIPE_SCHEMA_VERSION === '1.5.0', 'Unexpected recipe schema');
+  pass(core.RECIPE_SCHEMA_VERSION === '1.6.0', 'Unexpected recipe schema');
   pass(custom.POLICY === core.CUSTOM_ASSET_POLICY, 'Custom policy is not shared with the Composer core');
   pass(custom.POLICY.allowedSourceTypes.join(',') === 'image/webp,image/png,image/jpeg', 'Supported MIME policy changed');
   pass(!custom.POLICY.allowedSourceTypes.some(type => /svg|gif|avif/.test(type)), 'Rejected MIME policy changed');
@@ -148,7 +148,7 @@ async function build({library, template, composition, baseRecipe, appearance, cu
   const library = loadComposerLibrary();
   const oldRecipe = {schemaVersion:'1.3.0',title:'Phase 3A Recipe',slug:'phase-3a-recipe',supportedModes:['standard'],selectedConceptIds:['perfect-competition'],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null},appearance:{presetId:'arcane-archive',overrides:{boss1:'market-boss-1'}}};
   const migratedOld = core.migrateRecipe(oldRecipe, library, themes).recipe;
-  pass(migratedOld.schemaVersion === '1.5.0' && Object.keys(migratedOld.customAssets).length === 0, 'Phase 3A recipe migration failed');
+  pass(migratedOld.schemaVersion === '1.6.0' && Object.keys(migratedOld.customAssets).length === 0, 'Phase 3A recipe migration failed');
   pass(migratedOld.appearance.overrides.boss1 === 'market-boss-1', 'Phase 3A official override was lost');
 
   const baseRecipe = {schemaVersion:core.RECIPE_SCHEMA_VERSION,title:'Phase 3B Custom Validation',slug:'phase-3b-custom-validation',supportedModes:[...core.MODE_ORDER],selectedConceptIds:['perfect-competition'],checkpointFocus:{checkpointOne:null,checkpointTwo:null,finalCheckpoint:null}};

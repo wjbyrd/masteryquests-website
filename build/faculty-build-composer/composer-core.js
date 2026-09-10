@@ -1,12 +1,12 @@
 (function(root, factory){
-  const api = factory();
+  const api = factory(typeof module === 'object' && module.exports ? require('./faculty-outcome-core.js') : root.MQFacultyOutcomes);
   if(typeof module === 'object' && module.exports) module.exports = api;
   else root.MQComposerCore = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function(){
+})(typeof globalThis !== 'undefined' ? globalThis : this, function(FacultyOutcomes){
 'use strict';
 
 const COMPOSER_VERSION = '4.5s.3k';
-const RECIPE_SCHEMA_VERSION = '1.5.0';
+const RECIPE_SCHEMA_VERSION = '1.6.0';
 
 const ContentScope = (function(){
 
@@ -1425,22 +1425,27 @@ function describeContentScope(library, id){
   return module ? ContentScope.describe(module) : {options:[], brief:[], standard:[], full:[], note:'Unknown concept.'};
 }
 function normalizeContentScopes(source, selectedIds, library){
-  const entries = Object.entries(source.contentScopes || {}).flatMap(([id, value]) => migrateConceptSelectionIds([id]).map(target => [target, {
-    ...value,
-    ...(Array.isArray(value?.skillIds) && target !== id ? {skillIds:value.skillIds.filter(skill => describeContentScope(library, target).full.includes(skill))} : {})
-  }])).filter(([id, value]) => selectedIds.includes(id) || value?.depth === 'exclude');
-  const scopes = Object.fromEntries(entries.map(([id, value]) => [id, {
-    depth:['exclude','brief','standard','full'].includes(value?.depth) ? value.depth : 'exclude',
-    ...(Array.isArray(value?.skillIds) ? {skillIds:uniqueStrings(value.skillIds).sort()} : {})
-  }]));
-  // Recipes predating scope controls retain their exact published pool. New UI
-  // selections explicitly request Standard. No silent loss on legacy import.
-  for(const id of selectedIds) if(!scopes[id]) scopes[id] = {depth:'full'};
+  const scopes = {};
+  for(const [id, value] of Object.entries(source.contentScopes || {})){
+    for(const target of migrateConceptSelectionIds([id])){
+      if(target!==id && Object.hasOwn(source.contentScopes || {},target))continue;
+      if(!selectedIds.includes(target) && value?.depth !== 'exclude')continue;
+      let selection=value;
+      if(target!==id && value?.depth!=='exclude' && (value?.outcomeIds || value?.skillIds || value?.legacySkillIds)){
+        const oldSkills=value.legacySkillIds || value.skillIds || FacultyOutcomes.skills(id,value.outcomeIds);
+        selection={depth:'full',skillIds:oldSkills.filter(skill=>describeContentScope(library,target).full.includes(skill))};
+      }
+      try { scopes[target]=FacultyOutcomes.normalize(target,selection); }
+      catch { scopes[target]={preset:'custom',outcomeIds:[]}; }
+    }
+  }
+  for(const id of selectedIds)if(!scopes[id])scopes[id]=FacultyOutcomes.selectPreset(id,'full');
   return scopes;
 }
+
 function scopedConceptModule(library, id, selection){
   const module = scopeModule(library, id);
-  return module ? ContentScope.filter(module, selection || {depth:'full'}) : null;
+  return module ? ContentScope.filter(module, FacultyOutcomes.compile(id,selection)) : null;
 }
 
 function migrateRecipe(recipe, library, themeLibrary){
@@ -1559,17 +1564,8 @@ function validateRecipeShape(library, recipe){
   }
   for(const [id, scope] of Object.entries(source.contentScopes || {})){
     if(!library?.concepts?.[id]) errors.push('Unknown scope concept: ' + id);
-    if(!scope || !['exclude','brief','standard','full'].includes(scope.depth)) errors.push('Invalid coverage depth for ' + id);
     if(scope?.depth !== 'exclude' && !selected.includes(id)) errors.push('Scope concept is not selected: ' + id);
-    const description = describeContentScope(library, id);
-    if(scope?.depth === 'brief' && !description.brief.length) errors.push('Brief needs curricular metadata for ' + id);
-    if(scope?.skillIds != null){
-      if(!Array.isArray(scope.skillIds)) errors.push('skillIds must be an array for ' + id);
-      else {
-        if(!scope.skillIds.length && scope.depth !== 'exclude') errors.push('Choose at least one subskill or exclude ' + id);
-        for(const skill of scope.skillIds) if(!description.full.includes(skill)) errors.push('Unknown subskill for ' + id + ': ' + skill);
-      }
-    }
+    errors.push(...FacultyOutcomes.validate(id,scope,describeContentScope(library,id).full));
   }
   const selectedSet = new Set(selected.filter(id => source.contentScopes?.[id]?.depth !== 'exclude'));
   for(const id of selected){
@@ -1678,9 +1674,7 @@ function compose(library, inputRecipe){
     for(const question of candidates){
       if(!question?.isCheckpointChallenge) continue;
       if(instructionIds.some(id => {
-        const scope = recipe.contentScopes[id];
-        const description = describeContentScope(library, id);
-        return scope.skillIds != null || scope.depth === 'brief' || (scope.depth === 'standard' && description.standard.length !== description.full.length);
+        return FacultyOutcomes.compile(id,recipe.contentScopes[id]).skillIds != null;
       })) continue;
       const required = Array.isArray(question.requiredConceptIds) ? question.requiredConceptIds : [];
       if(required.length && !required.every(id => {
@@ -2095,6 +2089,7 @@ function canonicalRecipe(inputRecipe, library, themeLibrary){
     supportedModes: MODE_ORDER.filter(mode => migrated.supportedModes.includes(mode)),
     selectedConceptIds: [...migrated.selectedConceptIds],
     contentScopes: deepClone(migrated.contentScopes),
+    facultyOutcomePolicySha256: FacultyOutcomes.policy.policySha256,
     guideName:String(migrated.guideName || '').trim().slice(0, 80),
     checkpointFocus: Object.fromEntries(CHECKPOINT_ORDER.map(checkpointKey => [
       checkpointKey,
@@ -2181,6 +2176,7 @@ async function verifyAnswers(composition){
 }
 
 return {
+  FacultyOutcomes,
   ContentScope,
   describeContentScope,
   scopedConceptModule,

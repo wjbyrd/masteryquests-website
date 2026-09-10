@@ -4,7 +4,18 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 const root = process.env.MQ_SCOPE_COMPOSER_ROOT || path.resolve(__dirname, '..');
-const core = require(path.join(root, 'composer-core.js'));
+const publicCore = require(path.join(root, 'composer-core.js'));
+// This regression continues to exercise the original raw-skill scope policies.
+// Faculty preset migration is covered separately by the learning-outcome suite.
+const core = Object.create(publicCore);
+core.compose = (library,input) => {
+  const contentScopes=Object.fromEntries(Object.entries(input.contentScopes || {}).map(([id,s])=>{
+    if(s.depth==='exclude'||s.outcomeIds||s.legacySkillIds||!['brief','standard','full'].includes(s.depth))return [id,s];
+    const skills=s.skillIds ?? (s.depth==='full'?null:core.describeContentScope(library,id)[s.depth]);
+    return [id,skills==null?s:{preset:'custom',outcomeIds:[],legacySkillIds:skills}];
+  }));
+  return publicCore.compose(library,{...input,contentScopes});
+};
 const helper = require(path.join(root, 'tests/composer-test-helpers.js'));
 const area = require(path.join(root, 'course-area-model.js'));
 const library = helper.loadComposerLibrary();
@@ -74,7 +85,7 @@ async function run(){
     const input={...recipe('demand'),selectedConceptIds:Array.from(preset.conceptIds),supportedModes:[...core.MODE_ORDER]};
     const canonical=core.canonicalRecipe(input,library);
     check(canonical.selectedConceptIds.every(id=>library.concepts[id]),preset.id+' canonical IDs');
-    check(Object.values(canonical.contentScopes).every(s=>s.depth==='full'),preset.id+' preserves original scope');
+    check(Object.values(canonical.contentScopes).every(s=>s.preset==='full'),preset.id+' preserves original scope');
     const legacy=core.compose(library,input), explicit=core.compose(library,canonical);
     check(JSON.stringify(legacy.banks)===JSON.stringify(explicit.banks),preset.id+' pool compatibility');
   }
@@ -85,13 +96,13 @@ async function run(){
   const manualRecipe=core.canonicalRecipe(recipe('demand','standard',['law_of_demand','movement_vs_demand_shift']),library);
   assert.deepStrictEqual(core.canonicalRecipe(JSON.parse(JSON.stringify(manualRecipe)),library),manualRecipe);assertions++;
   const manualConfig=await core.createConfig(manualRecipe,library,'test');
-  check(manualConfig.contentScopes.demand.skillIds.includes('law_of_demand'),'Manual IDs serialized in game config');
+  check(core.FacultyOutcomes.compile('demand',manualConfig.contentScopes.demand).skillIds.includes('law_of_demand'),'Manual IDs serialized in game config');
   const composition=core.compose(library,mixed);
   check(!composition.errors.length,'Mixed-depth quest passes all modes: '+composition.errors.join('; '));
   check(composition.validation.modes.length===10 && composition.validation.modes.every(m=>m.ok),'All ten modes within scoped pool');
   const {html,config}=await helper.buildFacultyGame(core,canonical,{library});
   check(config.contentScopes.supply.depth==='exclude','Runtime config retains explicit exclusion');
-  check(config.contentScopes.demand.depth==='brief','Runtime config retains depth');
+  check(config.contentScopes.demand.preset==='brief','Runtime config retains outcome preset');
   helper.assertInlineScriptsCompile(html);assertions++;
   check(html.includes('"contentScopes"'),'Generated HTML serializes content scope');
   const changed=await core.createConfig({...canonical,contentScopes:{...canonical.contentScopes,demand:{depth:'full'}}},library,'test');

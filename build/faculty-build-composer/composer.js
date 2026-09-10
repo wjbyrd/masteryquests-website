@@ -550,7 +550,7 @@ function setSelected(id, selected){
   if(selected && !state.selectedConceptIds.includes(id)){
     enforceFamilySelectionExclusivity(id);
     state.selectedConceptIds.push(id);
-    state.contentScopes[id] = {depth:'standard'};
+    state.contentScopes[id] = Core.FacultyOutcomes.selectPreset(id,'standard');
   }
   if(!selected){
     removeSelectedConcept(id);
@@ -852,7 +852,7 @@ function applyPreset(presetId){
   const preset = PRESETS.find(item => item.id === presetId);
   if(!preset) return;
   state.selectedConceptIds = preset.conceptIds.filter(id => Library.concepts[id]);
-  state.contentScopes = Object.fromEntries(state.selectedConceptIds.map(id => [id, {depth:'full'}]));
+  state.contentScopes = Object.fromEntries(state.selectedConceptIds.map(id => [id, Core.FacultyOutcomes.selectPreset(id,'full')]));
   state.checkpointFocus = emptyCheckpointFocus();
   state.importWarnings = [];
   $('conceptSearch').value = '';
@@ -926,63 +926,49 @@ function renderConceptRecommendations(){
 }
 
 function renderScopeControls(id){
-  const description = Core.describeContentScope(Library, id);
-  const scope = state.contentScopes[id] || {depth:'standard'};
-  const selected = scope.skillIds ?? description[scope.depth];
+  const description=Core.FacultyOutcomes.describe(id);
+  const scope=state.contentScopes[id];
+  const legacy=Array.isArray(scope.legacySkillIds);
   return `<div class="content-scope">
-    <label class="scope-depth-label">Coverage depth
-      <select data-scope-depth="${esc(id)}" aria-label="Coverage depth for ${esc(metaById.get(id).title)}">
-        ${['exclude','brief','standard','full'].map(depth => `<option value="${depth}" ${scope.depth === depth ? 'selected' : ''}>${depth[0].toUpperCase()+depth.slice(1)}</option>`).join('')}
+    <label class="scope-depth-label">Coverage
+      <select data-outcome-preset="${esc(id)}" aria-label="Coverage preset for ${esc(metaById.get(id).title)}">
+        ${['brief','standard','full','custom'].map(preset=>`<option value="${preset}" ${scope.preset===preset?'selected':''} ${preset==='custom'?'disabled':''}>${preset[0].toUpperCase()+preset.slice(1)}</option>`).join('')}
       </select>
     </label>
-    <small>Brief: core subskills. Standard: normal scope. Full: all available scope.</small>
-    ${description.note ? `<small>${esc(description.note)}</small>` : ''}
-    <details class="scope-customize" data-scope-details="${esc(id)}">
-      <summary>Customize subskills · <span data-scope-count="${esc(id)}">${selected.length}</span> of ${description.full.length}${scope.skillIds ? ' · customized' : ''}</summary>
-      <p>Choose the subskills you teach. Changing depth resets this selection. Difficulty stays separate.</p>
-      ${description.hasUnmappedQuestions ? '<p>Some questions lack skill metadata; customized scope omits them.</p>' : ''}
-      <div class="scope-skills">${description.options.map(option => `<label><input type="checkbox" data-scope-concept="${esc(id)}" data-scope-skill="${esc(option.id)}" ${selected.includes(option.id) ? 'checked' : ''}><span>${esc(option.label)}</span></label>`).join('')}</div>
-      <button type="button" class="secondary" data-scope-reset="${esc(id)}">Reset to depth defaults</button>
+    <small>Presets select learning outcomes. Difficulty stays separate.</small>
+    ${legacy?'<p class="coverage-planning-note">Previous custom coverage is preserved exactly. Choose a coverage preset to switch to learning outcomes.</p>':''}
+    <details class="scope-customize" data-outcome-details="${esc(id)}">
+      <summary>Learning outcomes — <span data-outcome-count="${esc(id)}">${scope.outcomeIds.length}</span> of ${description.outcomes.length} selected</summary>
+      <div class="scope-skills">${description.outcomes.map(outcome=>`<label><input type="checkbox" data-outcome-concept="${esc(id)}" data-outcome-id="${esc(outcome.id)}" ${scope.outcomeIds.includes(outcome.id)?'checked':''} ${legacy?'disabled':''}><span>${esc(outcome.label)}</span></label>`).join('')}</div>
+      ${description.warnings.map(note=>`<p class="scope-note">${esc(note)}</p>`).join('')}
     </details>
   </div>`;
 }
 
 function scopedCountMarkup(id){
-  const module = Core.scopedConceptModule(Library, id, state.contentScopes[id]);
-  const practice = Core.uniqueById(['easy','medium','hard','elite','legendary','calculation','integration'].flatMap(pool => module.questions?.[pool] || [])).length;
-  const checkpoints = (module.questions?.boss || []).length + (module.questions?.legendaryBoss || []).length;
-  const support = (module.repairQuestions || []).length + (module.bridgeQuestions || []).length;
-  return `<span><strong>${practice}</strong> eligible practice</span><span><strong>${checkpoints}</strong> eligible checkpoint</span><span><strong>${support}</strong> eligible support</span>`;
+  const module=Core.scopedConceptModule(Library,id,state.contentScopes[id]);
+  const practice=Core.uniqueById(['easy','medium','hard','elite','legendary','calculation','integration'].flatMap(pool=>module.questions?.[pool]||[])).length;
+  return practice ? `<span>${practice} eligible practice questions · Check Readiness for your game modes.</span>` : '<span role="status">No eligible practice. Select more learning outcomes or deselect this concept.</span>';
 }
 
 function bindScopeControls(){
-  $('conceptGrid').querySelectorAll('[data-scope-depth]').forEach(input => input.addEventListener('change', () => {
-    const id = input.dataset.scopeDepth;
-    state.contentScopes[id] = {depth:input.value};
-    if(input.value === 'exclude') setSelected(id, false);
-    else { renderConcepts(); renderCheckpointBoard(); recalculate(); }
-    const target = [...$('conceptGrid').querySelectorAll('[data-scope-depth], [data-concept]')].find(el => (el.dataset.scopeDepth || el.dataset.concept) === id && (input.value === 'exclude' ? el.dataset.concept : el.dataset.scopeDepth));
-    target?.focus();
-    announce('Coverage updated. Check readiness for available game modes.');
+  $('conceptGrid').querySelectorAll('[data-outcome-preset]').forEach(input=>input.addEventListener('change',()=>{
+    const id=input.dataset.outcomePreset;
+    state.contentScopes[id]=Core.FacultyOutcomes.selectPreset(id,input.value);
+    renderConcepts();renderCheckpointBoard();recalculate();
+    [...$('conceptGrid').querySelectorAll('[data-outcome-preset]')].find(el=>el.dataset.outcomePreset===id)?.focus();
+    announce('Learning outcomes updated. Check readiness for your game modes.');
   }));
-  $('conceptGrid').querySelectorAll('[data-scope-skill]').forEach(input => input.addEventListener('change', () => {
-    const id = input.dataset.scopeConcept;
-    const description = Core.describeContentScope(Library, id);
-    const scope = state.contentScopes[id];
-    const skills = new Set(scope.skillIds ?? description[scope.depth]);
-    if(input.checked) skills.add(input.dataset.scopeSkill); else skills.delete(input.dataset.scopeSkill);
-    scope.skillIds = [...skills].sort();
-    const count = [...$('conceptGrid').querySelectorAll('[data-scope-count]')].find(el => el.dataset.scopeCount === id);
-    count.textContent = scope.skillIds.length;
-    renderCheckpointBoard(); recalculate();
-    announce(scope.skillIds.length ? 'Subskills updated.' : 'Choose at least one subskill or exclude this concept.');
-  }));
-  $('conceptGrid').querySelectorAll('[data-scope-reset]').forEach(button => button.addEventListener('click', () => {
-    const id = button.dataset.scopeReset;
-    delete state.contentScopes[id].skillIds;
-    renderConcepts(); renderCheckpointBoard(); recalculate();
-    const details = [...$('conceptGrid').querySelectorAll('[data-scope-details]')].find(el => el.dataset.scopeDetails === id);
-    details.open = true; details.querySelector('summary').focus();
+  $('conceptGrid').querySelectorAll('[data-outcome-id]').forEach(input=>input.addEventListener('change',()=>{
+    const id=input.dataset.outcomeConcept;
+    const ids=new Set(state.contentScopes[id].outcomeIds);
+    if(input.checked)ids.add(input.dataset.outcomeId);else ids.delete(input.dataset.outcomeId);
+    state.contentScopes[id]=Core.FacultyOutcomes.normalize(id,{preset:'custom',outcomeIds:[...ids]});
+    const card=input.closest('[data-concept-id]');
+    card.querySelector('[data-outcome-count]').textContent=ids.size;
+    card.querySelector('[data-outcome-preset]').value=state.contentScopes[id].preset;
+    renderCheckpointBoard();recalculate();
+    announce(ids.size?'Learning outcomes updated.':'Select at least one learning outcome or deselect this concept.');
   }));
 }
 
@@ -1297,11 +1283,11 @@ function renderCoverageRecommendations(composition){
       .sort((a,b) => b.score-a.score || (metaById.get(a.id)?.title || '').localeCompare(metaById.get(b.id)?.title || ''))
       .slice(0,6);
     if(!candidates.length){
-      container.innerHTML = '<div class="recommendation-heading"><strong>No direct concept recommendation is available.</strong><span>Disable the unsupported mode or expand the library with the missing question type.</span></div>';
+      container.innerHTML = '<div class="recommendation-heading"><strong>No direct concept recommendation is available.</strong><span>Select more learning outcomes if they fit your course, add related content, or disable the unsupported mode.</span></div>';
       return;
     }
     container.innerHTML = `
-      <div class="recommendation-heading"><strong>Concepts that may close the coverage gap</strong><span>Suggestions are based on the missing question pools, not on a required course sequence.</span></div>
+      <div class="recommendation-heading"><strong>Concepts that may close the coverage gap</strong><span>If it fits your course, select more learning outcomes or add a related concept below. Then check Readiness again.</span></div>
       <div class="recommendation-actions">${candidates.map(item => `<button type="button" class="recommendation-button" data-add-coverage="${item.id}">+ ${esc(metaById.get(item.id)?.title || item.id)} <small>${item.pools.map(pool => POOL_LABELS[pool] || pool).join(', ')}</small></button>`).join('')}</div>
     `;
   }
