@@ -207,6 +207,7 @@ const state = {
   slugTouched: false,
   supportedModes: [...Core.MODE_ORDER],
   selectedConceptIds: [],
+  contentScopes: {},
   checkpointFocus: {
     checkpointOne: null,
     checkpointTwo: null,
@@ -270,6 +271,7 @@ function changeActiveCourseArea(area){
     });
     const removedCount = state.selectedConceptIds.length - compatibleIds.length;
     if(removedCount){
+      for(const id of state.selectedConceptIds.filter(id => !compatibleIds.includes(id))) removeSelectedConcept(id);
       state.selectedConceptIds = compatibleIds;
       state.checkpointFocus = Object.fromEntries(Core.CHECKPOINT_ORDER.map(checkpointKey => [
         checkpointKey,
@@ -502,15 +504,16 @@ function selectedInstructionConceptIds(){
   return state.selectedConceptIds.filter(id => !isCheckpointSupplement(id));
 }
 function selectedMacroInstructionIds(){
-  return selectedInstructionConceptIds().filter(id => MACRO_IDS.has(id) && !GENERAL_IDS.has(id) && !MICRO_IDS.has(id));
+  return selectedInstructionConceptIds().filter(id => conceptDiscipline(id) === 'macro');
 }
 function bossCountForConcept(id, checkpointKey){
   if(isCheckpointSupplement(id)) return 0;
-  return Core.bossQuestionsForCheckpoint(Core.resolveConceptModule(Library, id), checkpointKey).length;
+  return Core.bossQuestionsForCheckpoint(Core.scopedConceptModule(Library, id, state.contentScopes[id]), checkpointKey).length;
 }
 
 function removeSelectedConcept(id){
   state.selectedConceptIds = state.selectedConceptIds.filter(value => value !== id);
+  state.contentScopes[id] = {depth:'exclude'};
   removeConceptFromFocus(id);
 }
 
@@ -547,11 +550,12 @@ function setSelected(id, selected){
   if(selected && !state.selectedConceptIds.includes(id)){
     enforceFamilySelectionExclusivity(id);
     state.selectedConceptIds.push(id);
+    state.contentScopes[id] = {depth:'standard'};
   }
   if(!selected){
     removeSelectedConcept(id);
     if(!isCheckpointSupplement(id) && selectedMacroInstructionIds().length === 0){
-      state.selectedConceptIds = state.selectedConceptIds.filter(value => !isCheckpointSupplement(value));
+      for(const supplementId of state.selectedConceptIds.filter(isCheckpointSupplement)) removeSelectedConcept(supplementId);
     }
   }
   state.importWarnings = [];
@@ -848,6 +852,7 @@ function applyPreset(presetId){
   const preset = PRESETS.find(item => item.id === presetId);
   if(!preset) return;
   state.selectedConceptIds = preset.conceptIds.filter(id => Library.concepts[id]);
+  state.contentScopes = Object.fromEntries(state.selectedConceptIds.map(id => [id, {depth:'full'}]));
   state.checkpointFocus = emptyCheckpointFocus();
   state.importWarnings = [];
   $('conceptSearch').value = '';
@@ -920,6 +925,67 @@ function renderConceptRecommendations(){
   });
 }
 
+function renderScopeControls(id){
+  const description = Core.describeContentScope(Library, id);
+  const scope = state.contentScopes[id] || {depth:'standard'};
+  const selected = scope.skillIds ?? description[scope.depth];
+  return `<div class="content-scope">
+    <label class="scope-depth-label">Coverage depth
+      <select data-scope-depth="${esc(id)}" aria-label="Coverage depth for ${esc(metaById.get(id).title)}">
+        ${['exclude','brief','standard','full'].map(depth => `<option value="${depth}" ${scope.depth === depth ? 'selected' : ''}>${depth[0].toUpperCase()+depth.slice(1)}</option>`).join('')}
+      </select>
+    </label>
+    <small>Brief: core subskills. Standard: normal scope. Full: all available scope.</small>
+    ${description.note ? `<small>${esc(description.note)}</small>` : ''}
+    <details class="scope-customize" data-scope-details="${esc(id)}">
+      <summary>Customize subskills · <span data-scope-count="${esc(id)}">${selected.length}</span> of ${description.full.length}${scope.skillIds ? ' · customized' : ''}</summary>
+      <p>Choose the subskills you teach. Changing depth resets this selection. Difficulty stays separate.</p>
+      ${description.hasUnmappedQuestions ? '<p>Some questions lack skill metadata; customized scope omits them.</p>' : ''}
+      <div class="scope-skills">${description.options.map(option => `<label><input type="checkbox" data-scope-concept="${esc(id)}" data-scope-skill="${esc(option.id)}" ${selected.includes(option.id) ? 'checked' : ''}><span>${esc(option.label)}</span></label>`).join('')}</div>
+      <button type="button" class="secondary" data-scope-reset="${esc(id)}">Reset to depth defaults</button>
+    </details>
+  </div>`;
+}
+
+function scopedCountMarkup(id){
+  const module = Core.scopedConceptModule(Library, id, state.contentScopes[id]);
+  const practice = Core.uniqueById(['easy','medium','hard','elite','legendary','calculation','integration'].flatMap(pool => module.questions?.[pool] || [])).length;
+  const checkpoints = (module.questions?.boss || []).length + (module.questions?.legendaryBoss || []).length;
+  const support = (module.repairQuestions || []).length + (module.bridgeQuestions || []).length;
+  return `<span><strong>${practice}</strong> eligible practice</span><span><strong>${checkpoints}</strong> eligible checkpoint</span><span><strong>${support}</strong> eligible support</span>`;
+}
+
+function bindScopeControls(){
+  $('conceptGrid').querySelectorAll('[data-scope-depth]').forEach(input => input.addEventListener('change', () => {
+    const id = input.dataset.scopeDepth;
+    state.contentScopes[id] = {depth:input.value};
+    if(input.value === 'exclude') setSelected(id, false);
+    else { renderConcepts(); renderCheckpointBoard(); recalculate(); }
+    const target = [...$('conceptGrid').querySelectorAll('[data-scope-depth], [data-concept]')].find(el => (el.dataset.scopeDepth || el.dataset.concept) === id && (input.value === 'exclude' ? el.dataset.concept : el.dataset.scopeDepth));
+    target?.focus();
+    announce('Coverage updated. Check readiness for available game modes.');
+  }));
+  $('conceptGrid').querySelectorAll('[data-scope-skill]').forEach(input => input.addEventListener('change', () => {
+    const id = input.dataset.scopeConcept;
+    const description = Core.describeContentScope(Library, id);
+    const scope = state.contentScopes[id];
+    const skills = new Set(scope.skillIds ?? description[scope.depth]);
+    if(input.checked) skills.add(input.dataset.scopeSkill); else skills.delete(input.dataset.scopeSkill);
+    scope.skillIds = [...skills].sort();
+    const count = [...$('conceptGrid').querySelectorAll('[data-scope-count]')].find(el => el.dataset.scopeCount === id);
+    count.textContent = scope.skillIds.length;
+    renderCheckpointBoard(); recalculate();
+    announce(scope.skillIds.length ? 'Subskills updated.' : 'Choose at least one subskill or exclude this concept.');
+  }));
+  $('conceptGrid').querySelectorAll('[data-scope-reset]').forEach(button => button.addEventListener('click', () => {
+    const id = button.dataset.scopeReset;
+    delete state.contentScopes[id].skillIds;
+    renderConcepts(); renderCheckpointBoard(); recalculate();
+    const details = [...$('conceptGrid').querySelectorAll('[data-scope-details]')].find(el => el.dataset.scopeDetails === id);
+    details.open = true; details.querySelector('summary').focus();
+  }));
+}
+
 function renderConcepts(){
   const area = $('areaFilter').value;
   setActiveArea(area);
@@ -951,7 +1017,7 @@ function renderConcepts(){
     const selected = state.selectedConceptIds.includes(id);
     const roles = concept.questionCountByRole || {};
     const difficulties = concept.questionCountByDifficulty || {};
-    const checkpointCounts = Core.CHECKPOINT_ORDER.map(checkpointKey => bossCountForConcept(id, checkpointKey));
+    const checkpointCounts = Core.CHECKPOINT_ORDER.map(checkpointKey => Core.bossQuestionsForCheckpoint(Core.resolveConceptModule(Library, id), checkpointKey).length);
     const practiceTotal = ['main', 'elite', 'legendary', 'calculation', 'integration']
       .reduce((total, role) => total + Number(roles[role] || 0), 0);
     const checkpointTotal = checkpointCounts.reduce((total, count) => total + count, 0)
@@ -977,13 +1043,14 @@ function renderConcepts(){
         </div>
         <p class="concept-description">${esc(concept.description)}</p>
         ${concept.parentConceptId ? `<p class="concept-description"><strong>${esc(concept.familyTitle || 'Family')} subtopic.</strong> Selecting this removes the full ${esc(concept.familyTitle || 'parent')} family so only this slice (plus any sibling subtopics you select) enters the build.${String(concept.standaloneRecommendation || '').startsWith('supporting') ? ` Best used with related ${esc(concept.familyTitle || 'family')} topics rather than as a standalone assessment.` : ''}</p>` : ''}
-        <div class="card-summary">
-          <span><strong>${practiceTotal}</strong> practice</span>
+        ${selected ? renderScopeControls(id) : ''}
+        <div class="card-summary" ${selected ? `data-scope-summary="${esc(id)}"` : ''}>
+          ${selected ? scopedCountMarkup(id) : `<span><strong>${practiceTotal}</strong> practice</span>
           <span><strong>${checkpointTotal}</strong> checkpoint</span>
-          <span><strong>${Number(roles.repair || 0) + Number(roles.bridge || 0)}</strong> adaptive support</span>
+          <span><strong>${Number(roles.repair || 0) + Number(roles.bridge || 0)}</strong> adaptive support</span>`}
         </div>
         <details class="concept-details">
-          <summary>Question coverage details</summary>
+          <summary>Published library coverage</summary>
           ${coveragePlanningNote ? `<p class="coverage-planning-note"><strong>Planning note:</strong> ${esc(coveragePlanningNote)}</p>` : ''}
           <div class="coverage-groups">
             <div>
@@ -1024,6 +1091,7 @@ function renderConcepts(){
   }).join('') || '<p>No concepts match the current filters.</p>';
 
   groupRenderedConceptCards(area, visible);
+  bindScopeControls();
   $('conceptGrid').querySelectorAll('[data-concept]').forEach(input => {
     input.addEventListener('change', () => setSelected(input.dataset.concept, input.checked));
   });
@@ -1154,6 +1222,7 @@ function recipe(){
     guideName: state.guideName.trim(),
     supportedModes: [...state.supportedModes],
     selectedConceptIds: [...state.selectedConceptIds],
+    contentScopes: JSON.parse(JSON.stringify(state.contentScopes)),
     appearance: Core.canonicalThemeSelection(state.appearance, ThemeLibrary, state.customAssets),
     customAssets: Core.pruneCustomAssets(state.customAssets, state.appearance, ThemeLibrary),
     checkpointFocus: Object.fromEntries(Core.CHECKPOINT_ORDER.map(checkpointKey => [
@@ -1171,6 +1240,7 @@ function recalculate(){
   state.slug = $('gameSlug').value;
   state.guideName = $('guideName').value;
   state.composition = Core.compose(Library, recipe());
+  $('conceptGrid').querySelectorAll('[data-scope-summary]').forEach(node => { node.innerHTML = scopedCountMarkup(node.dataset.scopeSummary); });
   state.generatedSizeEstimate = null;
   state.generatedSizeEstimateStatus = 'idle';
   renderCoverage();
@@ -1641,6 +1711,7 @@ async function prepareGeneratedGame({verifyAnswerHashes = false, reportProgress 
     title: config.title,
     slug: config.slug,
     selectedConceptIds: config.selectedConceptIds,
+    contentScopes: config.contentScopes,
     checkpointFocus: config.checkpointFocus,
     bossCoverage: composition.bossCoverage,
     supportedModes: config.supportedModes,
@@ -1789,6 +1860,10 @@ Checkpoint questions are assigned by their published difficulty. Optional checkp
 
 async function importRecipe(file){
   const imported = JSON.parse(await file.text());
+  if(imported.contentScopes != null){
+    const errors = Core.validateRecipeShape(Library, imported);
+    if(errors.length) throw new Error(errors.join('\n'));
+  }
   const migrated = Core.migrateRecipe(imported, Library, ThemeLibrary);
   const next = migrated.recipe;
   const verifiedCustomAssets = {};
@@ -1817,6 +1892,7 @@ async function importRecipe(file){
   state.customStatus = {};
   state.appearance = Core.canonicalThemeSelection(next.appearance, ThemeLibrary, state.customAssets);
   state.selectedConceptIds = next.selectedConceptIds.filter(id => Library.concepts[id]);
+  state.contentScopes = next.contentScopes;
   state.checkpointFocus = Object.fromEntries(Core.CHECKPOINT_ORDER.map(checkpointKey => [
     checkpointKey,
     next.checkpointFocus[checkpointKey] == null
@@ -1908,6 +1984,7 @@ async function init(){
   $('clearComposition').addEventListener('click', () => {
     if(!confirm('Clear the current composition?')) return;
     state.selectedConceptIds = [];
+    state.contentScopes = {};
     state.checkpointFocus = emptyCheckpointFocus();
     state.guideName = '';
     $('guideName').value = '';

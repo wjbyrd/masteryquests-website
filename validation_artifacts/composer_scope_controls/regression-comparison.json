@@ -1,0 +1,212 @@
+{
+  "baseline": [
+    {
+      "test": "run_default_character_set_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_exam_navigation_boss_reveal_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_checkpoint_artifact_exam_integrity_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_guide_intro_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase1_targeted_repair_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase15_production_hardening_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_visibility_aware_telemetry_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_generated_telemetry_smoke.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase3a_official_theme_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase3b_custom_asset_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase3e_graph_question_sync_validation.mjs",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_question_quality_auditor_validation.mjs",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_macro_phase2_taxonomy_validation.mjs",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_checkpoint_remediation_design_change_validation.mjs",
+      "status": "PASS"
+    },
+    {
+      "test": "run_concept_review_integration.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_mastery_report_concept_reviews.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_mastery_report_2_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_mastery_report_state_leak_hotfix.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_mode_availability_fix.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_quiz_mode_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_unlimited_practice_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_trial_by_graph_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_fading_fortune_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_risk_reward_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_risk_reward_state_validation.js",
+      "status": "PASS"
+    }
+  ],
+  "implementation": [
+    {
+      "test": "run_content_scope_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_default_character_set_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_exam_navigation_boss_reveal_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_checkpoint_artifact_exam_integrity_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_guide_intro_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase1_targeted_repair_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase15_production_hardening_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_visibility_aware_telemetry_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_generated_telemetry_smoke.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase3a_official_theme_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase3b_custom_asset_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_phase3e_graph_question_sync_validation.mjs",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_question_quality_auditor_validation.mjs",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_macro_phase2_taxonomy_validation.mjs",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_checkpoint_remediation_design_change_validation.mjs",
+      "status": "PASS"
+    },
+    {
+      "test": "run_concept_review_integration.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_mastery_report_concept_reviews.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_mastery_report_2_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_mastery_report_state_leak_hotfix.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_mode_availability_fix.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_quiz_mode_validation.js",
+      "status": "PASS"
+    },
+    {
+      "test": "run_unlimited_practice_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_trial_by_graph_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_fading_fortune_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_risk_reward_validation.js",
+      "status": "FAIL"
+    },
+    {
+      "test": "run_risk_reward_state_validation.js",
+      "status": "PASS"
+    }
+  ],
+  "baselineMethod": "Run unchanged active runners with a Node preload compiling composer-core.js from git show HEAD; current library/template remain identical to HEAD.",
+  "note": "Three schema assertions updated from 1.4.0 to 1.5.0; eight remaining failures also occur on the pre-change core."
+}

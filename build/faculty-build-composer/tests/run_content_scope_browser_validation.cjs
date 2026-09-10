@@ -1,0 +1,85 @@
+const fs=require('fs'),http=require('http'),path=require('path'),assert=require('assert');
+const {chromium}=require(process.env.MQ_PLAYWRIGHT_MODULE || 'playwright');
+const repo=path.resolve(__dirname,'../../..');
+const output=process.env.MQ_COMPOSER_TEST_OUTPUT_DIR || fs.mkdtempSync(path.join(require('os').tmpdir(),'mq-scope-browser-'));
+fs.mkdirSync(output,{recursive:true});
+require('child_process').execFileSync(process.execPath,[path.join(__dirname,'run_content_scope_validation.js')],{env:{...process.env,MQ_COMPOSER_TEST_OUTPUT_DIR:output},stdio:'pipe'});
+const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml'};
+const server=http.createServer((req,res)=>{let name=decodeURIComponent(new URL(req.url,'http://localhost').pathname);if(name==='/__scope-game.html'){res.setHeader('Content-Type','text/html');res.end(fs.readFileSync(path.join(output,'downloaded-scope-game.html')));return;}if(name.endsWith('/'))name+='index.html';const file=path.resolve(repo,'.'+name);if(!file.startsWith(repo.replaceAll('/',path.sep)+path.sep)){res.writeHead(403).end();return;}fs.readFile(file,(err,buf)=>{if(err){res.writeHead(404).end();return;}res.setHeader('Content-Type',types[path.extname(file)]||'application/octet-stream');res.end(buf);});});
+(async()=>{
+ await new Promise(r=>server.listen(0,'127.0.0.1',r));
+ const browser=await chromium.launch({headless:true,channel:'msedge'});
+ try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.route('**/*',route=>route.request().url().startsWith('http://127.0.0.1:')?route.continue():route.abort());
+ await page.goto(`http://127.0.0.1:${server.address().port}/build/faculty-build-composer/`);
+ await page.locator('#areaFilter').selectOption('general');
+ await page.locator('#conceptSearch').fill('Demand');
+ await page.locator('[data-concept="demand"]').check();
+ const depth=page.locator('[data-scope-depth="demand"]');
+ assert.equal(await depth.inputValue(),'standard');
+ assert.equal(await page.locator('[data-scope-details="demand"]').getAttribute('open'),null);
+ await depth.selectOption('brief');
+ await page.locator('[data-scope-details="demand"] summary').click();
+ await page.locator('[data-concept-id="demand"]').screenshot({path:path.join(output,'desktop-demand.png')});
+ const skill=page.locator('[data-scope-concept="demand"][data-scope-skill="demand_shifters"]');
+ assert.equal(await skill.isChecked(),false);await skill.check();
+ // Native keyboard interaction keeps focus while refining; Tab stays usable.
+ await skill.focus();await page.keyboard.press('Space');assert.equal(await skill.isChecked(),false);
+ await page.keyboard.press('Tab');
+ await page.locator('[data-scope-reset="demand"]').click();
+ await depth.selectOption('full');assert.equal(await depth.inputValue(),'full');
+ await depth.selectOption('exclude');assert.equal(await page.locator('[data-concept="demand"]').isChecked(),false);
+ await page.locator('[data-concept="demand"]').check();assert.equal(await depth.inputValue(),'standard');
+ await page.setViewportSize({width:390,height:844});
+ await page.locator('[data-scope-details="demand"] summary').click();
+ await page.locator('[data-concept-id="demand"]').screenshot({path:path.join(output,'mobile-demand.png')});
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'mobile page overflow');
+ await page.locator('#areaFilter').selectOption('macro');
+ await page.locator('#conceptSearch').fill('Capital Flows');
+ await page.locator('[data-concept="capital-flows-and-net-capital-outflow"]').check();
+ await page.locator('[data-scope-details="capital-flows-and-net-capital-outflow"] summary').click();
+ assert(await page.evaluate(()=>{const ids=[...document.querySelectorAll('[id]')].map(el=>el.id);return new Set(ids).size===ids.length;}),'duplicate DOM IDs');
+ await page.locator('[data-concept-id="capital-flows-and-net-capital-outflow"]').screenshot({path:path.join(output,'mobile-long-concept.png')});
+ assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'long name overflow');
+ // Save/import uses the same public recipe controls faculty use.
+ await page.locator('[data-step="7"]').click();
+ const downloadPromise=page.waitForEvent('download');await page.locator('#downloadRecipe').click();
+ const download=await downloadPromise;const saved=path.join(output,'ui-recipe.json');await download.saveAs(saved);
+ const recipe=JSON.parse(fs.readFileSync(saved,'utf8'));assert.equal(recipe.contentScopes['capital-flows-and-net-capital-outflow'].depth,'standard');
+ await page.locator('#importRecipe').setInputFiles(path.join(output,'scope-test-recipe.json'));
+ await page.locator('[data-step="1"]').click();
+ await page.locator('#conceptSearch').fill('Demand');
+ await page.locator('#areaFilter').selectOption('general');
+ assert.equal(await page.locator('[data-scope-depth="demand"]').inputValue(),'brief');
+ // Switching course area may remove nonshared concepts, so reimport before build.
+ await page.locator('#importRecipe').setInputFiles(path.join(output,'scope-test-recipe.json'));
+ await page.locator('[data-step="7"]').click();
+ await page.waitForFunction(()=>!document.getElementById('downloadPackage').disabled);
+ const packagePromise=page.waitForEvent('download',{timeout:60000});await page.locator('#downloadPackage').click();
+ const zip=await packagePromise;await zip.saveAs(path.join(output,'scope-regression.zip'));
+ // The production ZIP writer uses stored entries. Verify every package checksum.
+ const bytes=fs.readFileSync(path.join(output,'scope-regression.zip')),entries=new Map();
+ let offset=0;while(bytes.readUInt32LE(offset)===0x04034b50){const size=bytes.readUInt32LE(offset+18),n=bytes.readUInt16LE(offset+26),extra=bytes.readUInt16LE(offset+28),name=bytes.subarray(offset+30,offset+30+n).toString();assert.equal(bytes.readUInt16LE(offset+8),0);const start=offset+30+n+extra;entries.set(name,bytes.subarray(start,start+size));offset=start+size;}
+ fs.writeFileSync(path.join(output,'package-entries.json'),JSON.stringify([...entries.keys()],null,2));
+ const gameEntry=[...entries.keys()].find(name=>name.endsWith('.html'));assert(gameEntry);
+ const html=entries.get(gameEntry).toString();assert(html.includes('"contentScopes"'));
+ const manifest=JSON.parse(entries.get('composition_manifest.json').toString());assert.equal(manifest.answerVerification.passed,true);assert.equal(manifest.preflight.modes.length,10);assert(manifest.preflight.modes.every(mode=>mode.ok));
+ const assets=[...html.matchAll(/data:image\/[a-z+.-]+;base64,([A-Za-z0-9+/=]+)/g)].map(match=>require('crypto').createHash('sha256').update(Buffer.from(match[1],'base64')).digest('hex'));
+ for(const asset of manifest.assetInventory)assert(assets.includes(asset.sha256),asset.path+' embedded checksum');
+ fs.writeFileSync(path.join(output,'downloaded-scope-game.html'),html);
+ const sums=[...entries.keys()].find(name=>/sha256|checksum/i.test(name));
+ if(sums){for(const line of entries.get(sums).toString().trim().split(/\r?\n/)){const match=line.match(/^([a-f0-9]{64})\s+\*?(.+)$/i);if(match){assert(entries.has(match[2]),match[2]);assert.equal(require('crypto').createHash('sha256').update(entries.get(match[2])).digest('hex'),match[1]);}}}
+ await page.goto(`http://127.0.0.1:${server.address().port}/__scope-game.html`);
+ const runtime=await page.evaluate(()=>({scope:FACULTY_COMPOSITION_CONFIG.contentScopes,questions:Object.values(questionBanks).flat().map(q=>({id:q.canonicalId||q.id,concept:q.primaryConceptId,skills:[q.primarySkill,...(q.secondarySkills||[])].filter(Boolean)}))}));
+ assert.equal(runtime.scope.demand.depth,'brief');assert.equal(runtime.scope.supply.depth,'exclude');
+ const expectedCore=require(path.join(repo,'build/faculty-build-composer/composer-core.js'));
+ const library=require(path.join(repo,'build/faculty-build-composer/tests/composer-test-helpers.js')).loadComposerLibrary();
+ const expectedComposition=expectedCore.compose(library,JSON.parse(fs.readFileSync(path.join(output,'scope-test-recipe.json'))));
+ assert.deepEqual(runtime.questions.map(q=>String(q.id)).sort(),Object.values(expectedComposition.banks).flat().map(expectedCore.idOf).sort());
+ assert.equal(errors.length,0,errors.join('\n'));
+ fs.writeFileSync(path.join(output,'ui-results.json'),JSON.stringify({ok:true,widths:[1440,390],errors,packageEntries:[...entries.keys()],embeddedAssetsVerified:manifest.assetInventory.length,runtimeQuestionsVerified:runtime.questions.length,checks:['default Standard','collapsed customization','depth reset','manual subskill','keyboard Space/Tab','Exclude/reselect','mobile overflow','long Macro title','no duplicate IDs','recipe download and import','generated ZIP and embedded asset checksums','generated browser runtime exact pool']},null,2));
+ console.log('PASS browser scope workflow, desktop/mobile, keyboard, recipe download');
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;}).finally(()=>server.close());

@@ -6,7 +6,222 @@
 'use strict';
 
 const COMPOSER_VERSION = '4.5s.3k';
-const RECIPE_SCHEMA_VERSION = '1.4.0';
+const RECIPE_SCHEMA_VERSION = '1.5.0';
+
+const ContentScope = (function(){
+
+// Curricular decisions, keyed by published concept and skill IDs. Never infer
+// scope from difficulty, question order, or question counts. New concepts need
+// an explicit Brief profile; missing profiles fail closed when Brief is used.
+const BRIEF = {
+  'ad-as-equilibrium-and-output-gaps':'classify_output_gap read_ad_as_equilibrium',
+  'aggregate-demand':'explain_ad_slope read_ad_as_axes',
+  'applications-of-elasticity':'elasticity_business_pricing elasticity_policy_application',
+  'average-costs':'average_total_cost average_variable_cost',
+  'bank-balance-sheets-reserves-and-capital':'bank_capital_assets_liabilities calculate_bank_capital calculate_required_reserves apply_reserve_ratio required_reserves_formula',
+  'binding-price-ceilings':'price_ceiling_definition binding_price_ceiling binding_ceiling_shortage nonbinding_price_ceiling shortage shortage_identification',
+  'binding-price-floors':'price_floor_definition binding_price_floor binding_floor_surplus nonbinding_price_floor surplus',
+  'budget-accounting-and-public-saving':'calculate_budget_balance calculate_public_saving identify_budget_deficit identify_budget_surplus identify_public_saving_sign define_public_saving_variables',
+  'capital-flows-and-net-capital-outflow':'define_nco calculate_nco classify_asset_transaction interpret_nco_sign',
+  'central-bank-and-federal-reserve':'central_bank_role fed_role fomc_role fed_treasury_distinction identify_fed_role',
+  'competitive-efficiency-limits':'allocative_efficiency productive_efficiency',
+  'competitive-entry-exit-long-run':'entry exit long_run_equilibrium zero_economic_profit normal_profit',
+  'competitive-industry-cost-conditions':'constant_cost_industry increasing_cost_industry',
+  'competitive-market-price-taking-revenue':'perfect_competition_characteristics price_taker price_ar_mr_relationship',
+  'competitive-markets':'competitive_market_definition core_competitive_market price_taker_definition price_taker_application',
+  'competitive-output-choice':'marginal_rule profit_maximizing_output rising_mc_condition',
+  'competitive-profit-loss':'profit_per_unit total_profit loss_per_unit total_loss',
+  'competitive-short-run-supply':'firm_short_run_supply market_supply_aggregation',
+  'competitive-shutdown':'shutdown_rule shutdown_price produce_at_loss',
+  'consumer-and-producer-surplus':'willingness_to_pay willingness_to_accept consumer_surplus_definition producer_surplus_definition total_surplus',
+  'consumer-choice':'construct_budget_constraint affordable_bundle unaffordable_bundle budget_equation budget_boundary budget_slope',
+  'consumer-surplus':'willingness_to_pay consumer_surplus_definition consumer_surplus_discrete',
+  'cost-components-schedules':'fixed_cost variable_cost total_cost',
+  'costs-of-production':'explicit_cost implicit_cost fixed_cost variable_cost total_cost average_total_cost marginal_cost',
+  'cpi-and-inflation-measurement':'cpi_calculation',
+  'cpi-bias':'substitution_bias',
+  'cpi-versus-gdp-deflator':'cpi_vs_gdp_deflator deflator_scope',
+  'cross-price-elasticity-of-demand':'cross_price_elasticity_interpretation',
+  'crowding-out-and-capital-formation':'trace_deficit_crowding_out',
+  'debt-measures-burden-and-fiscal-data':'distinguish_debt_measures identify_debt_held_public identify_gross_debt_components calculate_debt_to_gdp interpret_debt_ratio',
+  'deficits-debt-and-government-borrowing':'distinguish_deficit_and_debt classify_flow_and_stock connect_deficit_borrowing connect_deficit_to_debt',
+  'demand':'law_of_demand movement_vs_demand_shift movement_vs_shift demand_schedule_interpretation',
+  'demand-and-supply-shocks':'classify_demand_shock classify_supply_shock trace_demand_shock trace_supply_shock',
+  'deposit-creation-and-money-multiplier':'identify_fractional_reserve_banking deposit_creation explain_deposit_creation simple_money_multiplier_formula calculate_multiplier',
+  'disinflation-and-policy':'define_disinflation disinflation_definition disinflation_unemployment_cost',
+  'economic-costs':'explicit_cost implicit_cost',
+  'economic-growth-policy':'growth_policy',
+  'economist-policy-role':'economist_policy_role economist_roles scientist_adviser policy_objective_clarification',
+  'efficiency-equity-surplus-limits':'efficiency_equity_distinction',
+  'efficient-quantity-allocation':'efficient_quantity efficient_allocation',
+  'elasticity':'elasticity_definition elasticity_classification ped_interpretation pes_definition income_elasticity_interpretation cross_price_elasticity_interpretation',
+  'elasticity-and-total-revenue':'total_revenue_formula total_revenue_test',
+  'externalities':'externality externality_identification externality_channel negative_externality_efficiency positive_externality positive_externality_efficiency',
+  'factor-markets':'derived_labor_demand calculate_marginal_product_labor calculate_value_marginal_product vmp_wage_hiring_rule',
+  'fiscal-multipliers-and-crowding-out':'explain_multiplier_logic multiplier_effect calculate_spending_multiplier spending_multiplier_formula crowding_out_mechanism',
+  'fiscal-policy-and-aggregate-demand':'expansionary_fiscal_policy_definition contractionary_fiscal_policy_definition government_spending_ad tax_cut_ad fiscal_policy_ad_shift',
+  'fisher-effect':'fisher_effect identify_fisher_effect fisher_equation_simple fisher_expected_inflation fisher_holding_real_rate',
+  'foreign-exchange-market':'identify_fx_demand identify_fx_supply identify_fx_equilibrium read_fx_equilibrium interpret_fx_axis',
+  'gains-from-trade':'absolute_advantage_definition comparative_advantage_definition absolute_vs_comparative lower_opportunity_cost specialization conceptual_gains_from_trade',
+  'gdp-components':'gdp_component_classification component_classification gdp_components_identity expenditure_identity',
+  'gdp-measurement':'gdp_definition final_goods_services domestic_production_boundary income_equals_expenditure',
+  'import-quotas-quota-rents':'quota_quantity_effect quota_rent',
+  'incentives':'core_incentives incentive_definition incentive_identification behavior_response_to_incentives positive_incentive_response negative_incentive_response',
+  'income-elasticity-of-demand':'income_elasticity_interpretation',
+  'income-inequality-poverty-and-redistribution':'measure_income_distribution read_lorenz_curve interpret_gini_coefficient apply_poverty_threshold',
+  'indexing-and-real-values':'inflation_adjustment real_value_comparison',
+  'inflation-costs':'shoeleather_costs menu_costs inflation_costs_overview expected_inflation_costs',
+  'inflation-tax-and-deflation':'inflation_tax identify_inflation_tax disinflation_vs_deflation distinguish_disinflation_deflation',
+  'information-asymmetry-behavioral-and-political-economy':'identify_information_asymmetry analyze_adverse_selection analyze_moral_hazard',
+  'integrated-economic-analysis':'opportunity_cost_identification tradeoff_identification positive_vs_normative micro_vs_macro',
+  'integrated-macroeconomic-analysis':'classify_output_gap choose_stabilization_response',
+  'international-trade-and-trade-policy':'world_price importer_identification exporter_identification trade_foundations small_country_model',
+  'international-transactions-and-identities':'classify_international_transaction calculate_net_exports classify_trade_balance apply_nx_nco_identity',
+  'labor-market-institutions':'frictional_unemployment minimum_wage_surplus',
+  'limits-of-gdp':'gdp_wellbeing_limits gdp_welfare_scope nonmarket_underground',
+  'liquidity-preference-and-money-market':'liquidity_preference_theory liquidity_preference_definition money_demand_interest_rate read_money_market_equilibrium',
+  'living-standards-and-growth':'real_gdp_per_person productivity_and_living_standards real_gdp_per_person_comparison',
+  'loanable-funds-equilibrium':'analyze_loanable_funds_equilibrium',
+  'loanable-funds-shifts':'analyze_saving_supply_shift analyze_investment_demand_shift',
+  'long-run-aggregate-supply-and-potential-output':'identify_lras',
+  'long-run-average-cost-scale':'long_run_average_cost economies_of_scale',
+  'long-run-macroeconomic-self-adjustment':'explain_long_run_adjustment recessionary_gap_self_correction inflationary_gap_self_correction',
+  'long-run-phillips-curve':'identify_lrpc lrpc_vertical identify_natural_unemployment natural_rate_hypothesis',
+  'marginal-analysis':'core_marginal marginal_benefit_cost_rule marginal_benefit_cost_decision marginal_vs_total',
+  'marginal-cost-production-linkages':'marginal_cost',
+  'market-equilibrium':'equilibrium_definition equilibrium_identification equilibrium_calculation shortage_identification surplus_identification surplus_shortage_adjustment',
+  'market-failures':'market_failure_definition market_failure_identification failure_recognition',
+  'market-power':'market_power_definition market_power',
+  'mcomp-advertising-nonprice':'nonprice_competition advertising_informational advertising_persuasive',
+  'mcomp-efficiency-variety-limits':'allocative_inefficiency product_variety',
+  'mcomp-entry-exit-long-run':'entry_after_profit exit_after_loss long_run_zero_profit',
+  'mcomp-short-run-choice':'short_run_output_choice short_run_price short_run_profit',
+  'mcomp-structure-differentiation':'monopolistic_competition_definition product_differentiation close_substitutes',
+  'micro-versus-macro':'microeconomics_definition macroeconomics_definition micro_vs_macro core_micro_macro',
+  'minimum-efficient-scale':'minimum_efficient_scale',
+  'models-and-assumptions':'core_models model_purpose assumptions_role ceteris_paribus model_simplification',
+  'monetary-control-limits':'limits_of_monetary_control public_currency_holdings explain_excess_reserve_limit weak_loan_demand',
+  'monetary-neutrality':'monetary_neutrality monetary_neutrality_definition nominal_vs_real_variables classify_variable classify_variables',
+  'monetary-policy-tools':'fed_buys_bonds_money_supply fed_sells_bonds_money_supply identify_open_market_direction discount_rate_effect reserve_requirement_effect',
+  'monetary-policy-transmission':'monetary_policy_transmission monetary_policy_ad_shift money_supply_shift_interest_rate interest_sensitive_spending_channel',
+  'money-functions-and-measures':'functions_of_money identify_money_functions identify_function_in_context commodity_vs_fiat_money fiat_money_definition',
+  'monopolistic-competition':'monopolistic_competition_definition product_differentiation market_structure_characteristics firm_demand_mc',
+  'monopoly':'monopoly_definition barriers_to_entry monopoly_demand marginal_revenue_monopoly profit_maximizing_output monopoly_price',
+  'monopoly-demand-revenue':'monopoly_demand average_revenue_monopoly marginal_revenue_monopoly',
+  'monopoly-output-price':'profit_maximizing_output monopoly_price',
+  'monopoly-power-barriers':'monopoly_definition barriers_to_entry legal_barrier resource_control',
+  'monopoly-price-discrimination':'price_discrimination_conditions resale_prevention',
+  'monopoly-profit-loss-shutdown':'monopoly_profit monopoly_loss',
+  'monopoly-welfare-efficiency':'allocative_inefficiency monopoly_deadweight_loss',
+  'natural-monopoly-regulation':'natural_monopoly_cost marginal_cost_regulation average_cost_regulation',
+  'natural-rate-of-unemployment':'natural_rate natural_rate_components',
+  'nominal-exchange-rates':'interpret_exchange_rate_quote convert_currency classify_appreciation_depreciation',
+  'oligopoly':'oligopoly_definition strategic_interdependence game_players_strategies_payoffs payoff_matrix_reading',
+  'oligopoly-collusion-cartels':'cartel collusion joint_profit_maximization incentive_to_cheat',
+  'oligopoly-dynamic-strategy':'repeated_games credible_threat',
+  'oligopoly-game-theory-foundations':'game_players_strategies_payoffs payoff_matrix_reading best_response dominant_strategy',
+  'oligopoly-rivalry-coordination':'price_war price_leadership',
+  'oligopoly-structure-concentration':'oligopoly_definition strategic_interdependence market_concentration',
+  'oligopoly-welfare-policy':'cartel_welfare antitrust_rationale',
+  'open-economy-policy-transmission':'start_budget_deficit_chain start_capital_flight_chain trace_saving_to_interest_rate trace_interest_rate_to_nco',
+  'opportunity-cost':'opportunity_cost_definition next_best_alternative core_opportunity_cost opportunity_cost_identification',
+  'perfect-competition':'perfect_competition_characteristics price_taker price_ar_mr_relationship marginal_rule profit_maximizing_output',
+  'phillips-curve-expectations':'expected_inflation_shift expectations_adjustment srpc_shift',
+  'positive-versus-normative-analysis':'positive_normative_distinction positive_statement_definition normative_value_judgment positive_testability',
+  'price-elasticity-of-demand':'elasticity_definition elasticity_classification ped_interpretation',
+  'price-elasticity-of-supply':'pes_definition pes_interpretation',
+  'price-signals':'core_price_signal price_signal_interpretation buyer_response_to_price_signal seller_response_to_price_signal',
+  'producer-surplus':'willingness_to_accept producer_surplus_definition producer_surplus_discrete',
+  'production-possibilities-frontier':'ppf_definition ppf_core attainable_unattainable attainable_vs_unattainable ppf_efficiency_status ppf_tradeoff',
+  'productivity-measurement':'productivity_calculation',
+  'profit-concepts':'accounting_profit economic_profit',
+  'public-goods-and-common-resources':'public_good_definition common_resource_definition determine_excludability determine_rivalry goods_classification free_rider_incentive',
+  'quantity-theory-of-money':'identify_quantity_equation quantity_equation velocity_definition calculate_velocity calculate_price_level solve_quantity_equation_for_p identify_core_prediction',
+  'real-exchange-rates-and-purchasing-power':'define_real_exchange_rate apply_real_exchange_rate_formula calculate_real_exchange_rate explain_ppp',
+  'real-versus-nominal-gdp':'nominal_vs_real_gdp real_gdp_calculation',
+  'real-versus-nominal-interest-rates':'real_interest_rate',
+  'sacrifice-ratio':'define_sacrifice_ratio sacrifice_ratio_meaning',
+  'saving-and-investment-identities':'distinguish_saving_and_investment calculate_national_saving',
+  'scarcity-and-tradeoffs':'scarcity scarcity_definition core_scarcity core_tradeoffs tradeoff_identification',
+  'short-run-aggregate-supply':'explain_sras_upward',
+  'short-run-cost-curves':'cost_curve_relationships marginal_average_relationship',
+  'short-run-phillips-curve':'define_phillips_curve srpc_relation read_pc_axes read_pc_points move_along_srpc srpc_movement',
+  'short-run-production':'production_function total_product marginal_product diminishing_marginal_product',
+  'sources-of-productivity':'physical_capital human_capital',
+  'stabilization-policy':'identify_stabilization_direction choose_stabilization_response stabilization_response_recession stabilization_response_overheating automatic_stabilizers',
+  'statutory-versus-economic-tax-incidence':'statutory_incidence economic_incidence statutory_vs_economic_incidence legal_vs_economic_tax_incidence',
+  'sunk-avoidable-costs':'sunk_cost',
+  'supply':'law_of_supply movement_vs_supply_shift',
+  'surplus-changes-policy-effects':'consumer_surplus_price_change producer_surplus_price_change',
+  'tariffs-revenue-deadweight-loss':'tariff_price_effect tariff_quantity_effect tariff_revenue',
+  'tax-incidence':'tax_incidence_definition tax_incidence tax_burden_less_elastic_side buyer_burden seller_burden',
+  'tax-wedges-and-revenue':'tax_wedge tax_wedge_identification tax_wedge_calculation tax_revenue tax_revenue_calculation',
+  'total-surplus-gains-from-exchange':'total_surplus',
+  'trade-domestic-production-consumption-quantities':'domestic_production_under_trade domestic_consumption_under_trade import_quantity export_quantity',
+  'trade-gains-surplus-winners-losers':'consumer_surplus_trade producer_surplus_trade trade_winners_losers',
+  'trade-policy-efficiency-distribution':'efficiency_equity_trade protectionism_arguments',
+  'trade-world-price-status':'world_price importer_identification exporter_identification',
+  'unemployment-measurement':'employment_classification labor_force_definition labor_force_calculation unemployment_rate',
+  'unemployment-types':'frictional_unemployment structural_unemployment'
+};
+
+// Standard keeps published coverage except these explicitly identified broader
+// applications. Full includes these too. No extension is invented for a small
+// concept whose current bank already fits normal coverage.
+const EXTENSIONS = {
+  demand:'multiple_demand_shifters equilibrium_comparison equilibrium_effects supply_shift_equilibrium_prediction price_signal_allocation',
+  supply:'market_supply_multiple_shifters multiple_supply_shifters short_run_long_run_supply_response equilibrium_comparison equilibrium_prediction demand_shift_equilibrium_prediction',
+  'market-equilibrium':'simultaneous_shifts simultaneous_shift_comparison simultaneous_shift_sequence multi_shift_sequence double_shift_ambiguous_price double_shift_ambiguous_quantity demand_decrease_supply_increase demand_increase_supply_decrease expectations_and_supply_shock',
+  monopoly:'first_degree_price_discrimination third_degree_price_discrimination price_discrimination_conditions price_discrimination_welfare resale_prevention average_cost_regulation marginal_cost_regulation price_cap_regulation regulatory_tradeoff rent_seeking',
+  'real-versus-nominal-gdp':'gdp_welfare_scope price_output_decomposition',
+  'capital-flows-and-net-capital-outflow':'trace_capital_flight_feedback evaluate_risk_adjusted_capital_flows analyze_competing_nco_forces analyze_reinforcing_nco_forces reconcile_saving_and_gross_flows',
+  'quantity-theory-of-money':'quantity_equation_with_velocity_change apply_quantity_equation_with_velocity_change solve_quantity_equation_across_changes solve_price_level_across_multiple_changes synthesize_long_run_money_logic',
+  'consumer-choice':'distinguish_special_preferences apply_marginal_utility_per_dollar equimarginal_rule',
+  'scarcity-and-tradeoffs':'efficiency_equity_policy_tradeoff policy_tradeoff_analysis core_policy_tradeoffs'
+};
+const words = value => String(value || '').split(/\s+/).filter(Boolean);
+const allQuestions = m => [...Object.values(m.questions || {}).flat(), ...(m.repairQuestions || []), ...(m.repairSeedQuestions || []), ...(m.bridgeQuestions || [])];
+const skills = q => [...new Set([q.primarySkill, ...(q.secondarySkills || [])].filter(s => typeof s === 'string' && s))];
+const cache = new WeakMap();
+function describe(module){
+  if(cache.has(module)) return cache.get(module);
+  const ids = [...new Set(allQuestions(module).flatMap(skills))].sort();
+  const core = new Set(words(BRIEF[module.canonicalConceptId]));
+  const extensions = new Set(words(EXTENSIONS[module.canonicalConceptId]));
+  const brief = ids.filter(id => core.has(id));
+  const standard = ids.filter(id => !extensions.has(id));
+  const result = {options:ids.map(id => ({id, label:id.replace(/[_-]/g, ' ')})), brief, standard, full:ids,
+    note: !brief.length ? 'Brief scope is unavailable: this concept needs curricular metadata.' : ids.length === brief.length ? 'This concept has one recorded scope; depth options currently cover the same subskills.' : standard.length === ids.length ? 'Standard already covers all recorded subskills; Full currently has the same scope.' : '',
+    hasUnmappedQuestions:allQuestions(module).some(q => !skills(q).length)};
+  cache.set(module, result);
+  return result;
+}
+function eligible(question, selection, description){
+  if(selection.depth === 'exclude') return false;
+  // Full, with no refinement, preserves legacy and untagged questions exactly.
+  if(selection.depth === 'full' && selection.skillIds == null) return true;
+  const allowed = new Set(selection.skillIds ?? description[selection.depth] ?? []);
+  const required = skills(question);
+  if(!required.length) return selection.skillIds == null && selection.depth === 'standard' && description.standard.length === description.full.length;
+  return required.every(id => allowed.has(id));
+}
+function filter(module, selection){
+  if(selection.depth === 'full' && selection.skillIds == null) return module;
+  const description = describe(module);
+  const accepts = question => eligible(question, selection, description);
+  const result = {...module, questions:Object.fromEntries(Object.entries(module.questions || {}).map(([pool, qs]) => [pool, qs.filter(accepts)]))};
+  for(const key of ['repairQuestions','repairSeedQuestions','bridgeQuestions']) result[key] = (module[key] || []).filter(accepts);
+  const ids = new Set(allQuestions(result).map(q => String(q.canonicalId ?? q.id)));
+  for(const key of ['directSkillRepairRoutes','skillRepairSeedPools','microSkillRepairPools','microSkillBridgePools']){
+    result[key] = Object.fromEntries(Object.entries(module[key] || {}).map(([skill, refs]) => [skill, refs.filter(ref => ids.has(String(typeof ref === 'object' ? ref.canonicalId ?? ref.id : ref)))]).filter(([, refs]) => refs.length));
+  }
+  const objectives = new Set(allQuestions(result).flatMap(q => [q.objective, ...(q.outcomeIds || [])]).filter(Boolean));
+  result.objectiveLabels = Object.fromEntries(Object.entries(module.objectiveLabels || {}).filter(([id]) => objectives.has(id)));
+  return result;
+}
+return {BRIEF, EXTENSIONS, describe, eligible, filter, skills, allQuestions};
+})();
+
 const CUSTOM_ASSET_POLICY = Object.freeze({
   allowedSourceTypes:['image/webp','image/png','image/jpeg'],
   maxSourceBytes:12 * 1024 * 1024,
@@ -1197,10 +1412,43 @@ function migrateConceptSelectionIds(ids){
   return uniqueStrings(uniqueStrings(ids || []).flatMap(id => LEGACY_CONCEPT_SELECTION_MIGRATIONS[id] || [id]));
 }
 
+
+const scopeModuleCache = new WeakMap();
+function scopeModule(library, id){
+  if(!scopeModuleCache.has(library)) scopeModuleCache.set(library, new Map());
+  const cache = scopeModuleCache.get(library);
+  if(!cache.has(id)) cache.set(id, resolveConceptModule(library, id));
+  return cache.get(id);
+}
+function describeContentScope(library, id){
+  const module = scopeModule(library, id);
+  return module ? ContentScope.describe(module) : {options:[], brief:[], standard:[], full:[], note:'Unknown concept.'};
+}
+function normalizeContentScopes(source, selectedIds, library){
+  const entries = Object.entries(source.contentScopes || {}).flatMap(([id, value]) => migrateConceptSelectionIds([id]).map(target => [target, {
+    ...value,
+    ...(Array.isArray(value?.skillIds) && target !== id ? {skillIds:value.skillIds.filter(skill => describeContentScope(library, target).full.includes(skill))} : {})
+  }])).filter(([id, value]) => selectedIds.includes(id) || value?.depth === 'exclude');
+  const scopes = Object.fromEntries(entries.map(([id, value]) => [id, {
+    depth:['exclude','brief','standard','full'].includes(value?.depth) ? value.depth : 'exclude',
+    ...(Array.isArray(value?.skillIds) ? {skillIds:uniqueStrings(value.skillIds).sort()} : {})
+  }]));
+  // Recipes predating scope controls retain their exact published pool. New UI
+  // selections explicitly request Standard. No silent loss on legacy import.
+  for(const id of selectedIds) if(!scopes[id]) scopes[id] = {depth:'full'};
+  return scopes;
+}
+function scopedConceptModule(library, id, selection){
+  const module = scopeModule(library, id);
+  return module ? ContentScope.filter(module, selection || {depth:'full'}) : null;
+}
+
 function migrateRecipe(recipe, library, themeLibrary){
   const source = recipe && typeof recipe === 'object' ? recipe : {};
   const sourceSelectedConceptIds = uniqueStrings(source.selectedConceptIds || source.concepts || []);
-  const selectedConceptIds = migrateConceptSelectionIds(sourceSelectedConceptIds);
+  const migratedIds = migrateConceptSelectionIds(sourceSelectedConceptIds);
+  const contentScopes = normalizeContentScopes(source, migratedIds, library);
+  const selectedConceptIds = migratedIds.filter(id => contentScopes[id].depth !== 'exclude');
   const migrationWarnings = [];
   const migratedTaxonomyIds = sourceSelectedConceptIds.filter(id => LEGACY_CONCEPT_SELECTION_MIGRATIONS[id]);
   if(migratedTaxonomyIds.length){
@@ -1272,6 +1520,7 @@ function migrateRecipe(recipe, library, themeLibrary){
       slug: String(source.slug || ''),
       supportedModes: MODE_ORDER.filter(mode => (source.supportedModes || []).includes(mode)),
       selectedConceptIds,
+      contentScopes,
       guideName,
       checkpointFocus,
       appearance: canonicalThemeSelection(sourceAppearance, themeLibrary, customAssets),
@@ -1305,12 +1554,29 @@ function validateRecipeShape(library, recipe){
     if(!library?.concepts?.[id] && !LEGACY_CONCEPT_SELECTION_MIGRATIONS[id]) errors.push(`Unknown concept: ${id}`);
   }
 
-  const selectedSet = new Set(selected);
+  if(source.contentScopes != null && (typeof source.contentScopes !== 'object' || Array.isArray(source.contentScopes))){
+    errors.push('contentScopes must be an object keyed by canonical concept ID.');
+  }
+  for(const [id, scope] of Object.entries(source.contentScopes || {})){
+    if(!library?.concepts?.[id]) errors.push('Unknown scope concept: ' + id);
+    if(!scope || !['exclude','brief','standard','full'].includes(scope.depth)) errors.push('Invalid coverage depth for ' + id);
+    if(scope?.depth !== 'exclude' && !selected.includes(id)) errors.push('Scope concept is not selected: ' + id);
+    const description = describeContentScope(library, id);
+    if(scope?.depth === 'brief' && !description.brief.length) errors.push('Brief needs curricular metadata for ' + id);
+    if(scope?.skillIds != null){
+      if(!Array.isArray(scope.skillIds)) errors.push('skillIds must be an array for ' + id);
+      else {
+        if(!scope.skillIds.length && scope.depth !== 'exclude') errors.push('Choose at least one subskill or exclude ' + id);
+        for(const skill of scope.skillIds) if(!description.full.includes(skill)) errors.push('Unknown subskill for ' + id + ': ' + skill);
+      }
+    }
+  }
+  const selectedSet = new Set(selected.filter(id => source.contentScopes?.[id]?.depth !== 'exclude'));
   for(const id of selected){
     const module = library?.concepts?.[id];
     const parentId = module?.derivedFromConceptId;
     const parentStatus = library?.registry?.concepts?.find(entry => (entry.canonicalConceptId || entry.id) === parentId)?.status;
-    if(parentId && selectedSet.has(parentId) && parentStatus !== 'legacy'){
+    if(selectedSet.has(id) && parentId && selectedSet.has(parentId) && parentStatus !== 'legacy'){
       errors.push(`${id} cannot be selected together with its parent family ${parentId}. Choose the full family or granular subtopics, not both.`);
     }
   }
@@ -1345,7 +1611,11 @@ function compose(library, inputRecipe){
   const errors = [...sourceErrors];
   const warnings = [...migrated.migrationWarnings];
   const selectedIds = [...recipe.selectedConceptIds];
-  const modules = selectedIds.map(id => resolveConceptModule(library, id)).filter(Boolean);
+  const modules = selectedIds.map(id => scopedConceptModule(library, id, recipe.contentScopes[id])).filter(Boolean);
+  if(!selectedIds.length) errors.push('Select at least one included concept.');
+  for(const module of modules){
+    if(!ContentScope.allQuestions(module).length) errors.push(module.title + ': this scope has no eligible questions. Choose more subskills or a broader depth.');
+  }
   const supplementModules = modules.filter(module => module.supplementType === 'checkpoint-challenge');
   const instructionModules = modules.filter(module => module.supplementType !== 'checkpoint-challenge');
   const instructionIds = instructionModules.map(module => module.canonicalConceptId);
@@ -1407,6 +1677,11 @@ function compose(library, inputRecipe){
     ];
     for(const question of candidates){
       if(!question?.isCheckpointChallenge) continue;
+      if(instructionIds.some(id => {
+        const scope = recipe.contentScopes[id];
+        const description = describeContentScope(library, id);
+        return scope.skillIds != null || scope.depth === 'brief' || (scope.depth === 'standard' && description.standard.length !== description.full.length);
+      })) continue;
       const required = Array.isArray(question.requiredConceptIds) ? question.requiredConceptIds : [];
       if(required.length && !required.every(id => {
         const replacements = LEGACY_CONCEPT_SELECTION_MIGRATIONS[id];
@@ -1819,6 +2094,7 @@ function canonicalRecipe(inputRecipe, library, themeLibrary){
     slug: safeSlug(migrated.slug),
     supportedModes: MODE_ORDER.filter(mode => migrated.supportedModes.includes(mode)),
     selectedConceptIds: [...migrated.selectedConceptIds],
+    contentScopes: deepClone(migrated.contentScopes),
     guideName:String(migrated.guideName || '').trim().slice(0, 80),
     checkpointFocus: Object.fromEntries(CHECKPOINT_ORDER.map(checkpointKey => [
       checkpointKey,
@@ -1905,6 +2181,9 @@ async function verifyAnswers(composition){
 }
 
 return {
+  ContentScope,
+  describeContentScope,
+  scopedConceptModule,
   COMPOSER_VERSION,
   RECIPE_SCHEMA_VERSION,
   CUSTOM_ASSET_POLICY,

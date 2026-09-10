@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260825-phase3c-polish">
+  <link rel="stylesheet" href="composer.css?v=20260910-content-scope">
 </head>
 <body>
   <header class="site-header">
@@ -18,16 +18,16 @@
     </div>
 
     <nav class="step-nav" aria-label="Composer steps">
-      <button data-step="1" class="active">1. Game details</button>
-      <button data-step="2">2. Modes</button>
-      <button data-step="3">3. Concepts</button>
+      <button data-step="1" class="active">1. Concepts &amp; scope</button>
+      <button data-step="2">2. Game details</button>
+      <button data-step="3">3. Modes</button>
       <button data-step="4">4. Checkpoints</button>
       <button data-step="5">5. Appearance</button>
       <button data-step="6">6. Readiness</button>
       <button data-step="7">7. Generate</button>
     </nav>
 
-    <section class="step active" data-step-panel="1">
+    <section class="step" data-step-panel="2">
       <div class="panel">
         <h2>Game details</h2>
         <div class="form-grid">
@@ -44,7 +44,7 @@
       </div>
     </section>
 
-    <section class="step" data-step-panel="2">
+    <section class="step" data-step-panel="3">
       <div class="panel">
         <h2>Game modes</h2>
         <p>Select only the modes you intend to offer. The composer will tell you whether the chosen concepts provide enough questions for each mode.</p>
@@ -52,12 +52,12 @@
       </div>
     </section>
 
-    <section class="step" data-step-panel="3">
+    <section class="step active" data-step-panel="1">
       <div class="panel">
         <div class="panel-heading-row">
           <div>
             <h2>Choose concepts</h2>
-            <p>Start with a course area, then use a starter combination or choose individual concepts.</p>
+            <p>Choose a course area and concepts, then set coverage depth. Customize subskills only when needed.</p>
           </div>
         </div>
 
@@ -221,11 +221,11 @@
 
   <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
 
-  <script src="composer-core.js?v=20260825-phase3c-polish"></script>
-  <script src="course-area-model.js?v=20260813-course-area-step3"></script>
-  <script src="data/composer_library.js?v=20260812-risk-reward-4.5s.2m"></script>
+  <script src="composer-core.js?v=20260910-content-scope"></script>
+  <script src="course-area-model.js?v=20260910-content-scope"></script>
+  <script src="data/composer_library.js?v=20260910-content-scope"></script>
   <script src="data/official_theme_library.js?v=20260830-official-mode-cards"></script>
   <script src="custom-asset-core.js?v=20260824-phase3b"></script>
-  <script src="composer.js?v=20260830-product-copy-cleanup"></script>
+  <script src="composer.js?v=20260910-content-scope"></script>
 </body>
 </html>
