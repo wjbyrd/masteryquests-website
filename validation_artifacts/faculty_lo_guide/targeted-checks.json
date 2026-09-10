@@ -1,0 +1,22 @@
+[
+  {
+    "test": "build/faculty-build-composer/tests/run_faculty_outcome_validation.js",
+    "status": "PASS",
+    "exitCode": 0
+  },
+  {
+    "test": "build/faculty-build-composer/tests/run_content_scope_validation.js",
+    "status": "PASS",
+    "exitCode": 0
+  },
+  {
+    "test": "build/faculty-build-composer/tests/run_generated_telemetry_smoke.js",
+    "status": "PASS",
+    "exitCode": 0
+  },
+  {
+    "test": "audit_tools/faculty_lo/validate-guide.cjs",
+    "status": "PASS",
+    "exitCode": 0
+  }
+]

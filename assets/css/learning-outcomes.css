@@ -1,0 +1,21 @@
+.lo-body{padding-block:48px 64px;max-width:1080px;line-height:1.65}
+.lo-body>section+section{margin-top:44px}.lo-body h2{color:#0a3472}.lo-body h3{margin-top:0}
+.lo-flow{font-size:1.18rem;font-weight:700;color:#0a3472}.lo-flow span{margin-inline:8px;color:#08716d}
+.lo-presets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-block:24px}
+.lo-presets>div{background:#edf5f8;border-top:3px solid #08716d;border-radius:8px;padding:18px}
+.lo-presets dt{font-size:1.12rem;font-weight:800;color:#0a3472}.lo-presets dd{margin:6px 0 0}
+.lo-callout{border-left:4px solid #08716d;background:#f1f8f8;padding:22px 26px;margin-block:24px}
+.lo-callout p:last-child{margin-bottom:0}.lo-area-nav{display:flex;flex-wrap:wrap;gap:10px;margin-block:20px}
+.lo-area-nav a{display:inline-block;background:#edf2f7;padding:10px 16px;border-radius:6px;font-weight:700;color:#0a3472}
+#lo-search-controls{margin-block:24px}#lo-search-controls label{display:block;font-weight:700;margin-bottom:8px}
+.lo-search-row{display:flex;gap:10px}.lo-search-row input{min-width:0;flex:1;border:1px solid #64748b;border-radius:6px;padding:12px;font:inherit;background:white;color:#253247}
+.lo-search-row button{font:inherit;background:#0a3472;color:#fff;border:0;border-radius:6px;padding:12px 18px;cursor:pointer}
+#lo-status{color:#526277;min-height:1.6em;margin-top:8px}
+.lo-area{margin-top:40px}.lo-area,.lo-concept,#explore-heading{scroll-margin-top:150px}.lo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+.lo-concept{min-width:0;border:1px solid #cbd5e0;border-radius:10px;background:#fff;overflow-wrap:anywhere}
+.lo-concept summary{padding:18px 20px;cursor:pointer;font-weight:750;color:#0a3472;line-height:1.4}
+.lo-concept[open] summary{background:#edf5f8;border-radius:10px 10px 0 0}
+.lo-content{padding:4px 20px 18px}.lo-content ul{padding-left:22px}.lo-content li+li{margin-top:12px}
+.lo-shared,.lo-note{font-size:.9rem;color:#526277}.lo-note{border-top:1px solid #e1e8ef;padding-top:12px}
+.lo-body :focus-visible{outline:3px solid #08716d;outline-offset:4px}.lo-body [hidden]{display:none!important}
+@media(max-width:650px){.lo-body{padding-top:30px}.lo-presets{grid-template-columns:repeat(2,minmax(0,1fr))}.lo-grid{grid-template-columns:1fr}.lo-search-row{flex-direction:column}.lo-callout{padding:18px}.lo-flow span{margin-inline:2px}.lo-concept summary{padding:16px}.lo-content{padding-inline:16px}}

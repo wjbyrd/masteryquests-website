@@ -1,0 +1,3611 @@
+[
+  {
+    "courseAreas": [
+      "macro"
+    ],
+    "conceptId": "ad-as-equilibrium-and-output-gaps",
+    "conceptName": "AD-AS Equilibrium and Output Gaps",
+    "outcomeId": "ad-as-equilibrium-and-output-gaps-equilibrium-gaps",
+    "oldLabel": "Read static AD-AS equilibrium and distinguish recessionary and inflationary gaps relative to potential output.",
+    "skillIds": [
+      "classify_output_gap",
+      "connect_output_unemployment",
+      "identify_lras",
+      "identify_natural_output",
+      "lras_shift_vs_gap",
+      "movement_vs_shift",
+      "natural_output_determinants",
+      "read_ad_as_equilibrium"
+    ],
+    "visible": true,
+    "eligibleCount": 30,
+    "representativeQuestions": [
+      {
+        "id": "ECON-SP-EASY-38",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "Refer to the graph. At AD1 and AS2, the economy is at:",
+        "options": [
+          "Y2 and P2",
+          "Y1 and P1",
+          "Y3 and P2",
+          "Y1 and P3"
+        ],
+        "skills": [
+          "read_ad_as_equilibrium"
+        ]
+      },
+      {
+        "id": "PG3-MEQ-E-001",
+        "type": "graph",
+        "difficulty": "easy",
+        "stem": "In the AD-AS-LRAS graph, which labeled point represents the original long-run equilibrium before aggregate demand increases?",
+        "options": [
+          "Point C",
+          "Point A",
+          "Point B",
+          "Point D"
+        ],
+        "skills": [
+          "identify_lras"
+        ]
+      },
+      {
+        "id": "ECON-SP-EASY-45",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "A recessionary gap means output is:",
+        "options": [
+          "Above natural output",
+          "Below natural output",
+          "Equal to the price level",
+          "Always at Y2"
+        ],
+        "skills": [
+          "classify_output_gap"
+        ]
+      }
+    ],
+    "status": "REWORD",
+    "recommendedVerb": "Interpret",
+    "proposedLabel": "Interpret AD-AS equilibrium and distinguish recessionary and inflationary output gaps",
+    "reason": "Graph coordinates and below/above-potential classifications are interpreted, not constructed.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-SP-EASY-38",
+        "task": "Refer to the graph. At AD1 and AS2, the economy is at:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "read_ad_as_equilibrium"
+        ]
+      },
+      {
+        "questionId": "PG3-MEQ-E-001",
+        "task": "In the AD-AS-LRAS graph, which labeled point represents the original long-run equilibrium before aggregate demand increases?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "identify_lras"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-EASY-45",
+        "task": "A recessionary gap means output is:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "classify_output_gap"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "PG3-MEQ-L-002",
+      "stem": "A student says point B can only be explained by higher aggregate demand because real GDP is larger there. Which correction best fits the graph?",
+      "type": "multi-step",
+      "difficulty": "legendary",
+      "options": [
+        "AD shifts right while SRAS and LRAS both stay fixed.",
+        "SRAS shifts left while AD0 and LRAS both stay fixed.",
+        "LRAS shifts left while SRAS and AD0 both stay fixed.",
+        "SRAS and LRAS shift right while AD0 stays fixed."
+      ],
+      "skills": [
+        "identify_lras",
+        "movement_vs_shift"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "macro"
+    ],
+    "conceptId": "capital-flows-and-net-capital-outflow",
+    "conceptName": "Capital Flows and Net Capital Outflow",
+    "outcomeId": "capital-flows-and-net-capital-outflow-transactions",
+    "oldLabel": "Classify asset transactions and calculate net capital outflow",
+    "skillIds": [
+      "calculate_compound_nco",
+      "calculate_nco",
+      "calculate_nco_change",
+      "classify_asset_transaction",
+      "classify_foreign_direct_investment",
+      "connect_capital_inflow_investment",
+      "define_nco",
+      "diagnose_inflow_outflow_reversal",
+      "distinguish_gross_net_capital_flows",
+      "interpret_nco_sign",
+      "reconcile_saving_and_gross_flows",
+      "repair_inflow_outflow_sign",
+      "solve_asset_flows_from_saving",
+      "solve_gross_asset_flows",
+      "solve_gross_flow_change"
+    ],
+    "visible": true,
+    "eligibleCount": 23,
+    "representativeQuestions": [
+      {
+        "id": "PMOE-NCO-E-001",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "Net capital outflow equals domestic purchases of foreign assets minus:",
+        "options": [
+          "Exports of domestic goods",
+          "Domestic investment spending",
+          "Foreign purchases of domestic assets",
+          "Domestic purchases of domestic assets"
+        ],
+        "skills": [
+          "define_nco"
+        ]
+      },
+      {
+        "id": "PMOE-NCO-E-002",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "A U.S. resident buys a bond issued by the German government. This transaction:",
+        "options": [
+          "Counts as U.S. domestic investment",
+          "Increases U.S. NCO",
+          "Decreases U.S. NCO",
+          "Increases U.S. imports"
+        ],
+        "skills": [
+          "classify_asset_transaction"
+        ]
+      },
+      {
+        "id": "PMOE-NCO-M-001",
+        "type": "calculation",
+        "difficulty": "medium",
+        "stem": "Residents buy $180 billion of foreign assets, and foreigners buy $125 billion of domestic assets. What is NCO?",
+        "options": [
+          "$125 billion",
+          "$305 billion",
+          "$55 billion",
+          "−$55 billion"
+        ],
+        "skills": [
+          "calculate_nco"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Classify",
+    "proposedLabel": "Classify asset transactions and calculate net capital outflow",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "PMOE-NCO-E-001",
+        "task": "Net capital outflow equals domestic purchases of foreign assets minus:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "define_nco"
+        ]
+      },
+      {
+        "questionId": "PMOE-NCO-E-002",
+        "task": "A U.S. resident buys a bond issued by the German government. This transaction:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "classify_asset_transaction"
+        ]
+      },
+      {
+        "questionId": "PMOE-NCO-M-001",
+        "task": "Residents buy $180 billion of foreign assets, and foreigners buy $125 billion of domestic assets. What is NCO?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "calculate_nco"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "PMOE-NCO-L-001",
+      "stem": "Residents initially buy $220 billion abroad and foreigners buy $260 billion domestically. Resident purchases later rise 25 percent. What range of growth in foreign purchases would leave a net inflow that is smaller than the initial net inflow?",
+      "type": "calculation",
+      "difficulty": "legendary",
+      "options": [
+        "Less than about 5.77 percent",
+        "More than about 21.15 percent",
+        "Exactly 25 percent",
+        "More than about 5.77 percent but less than about 21.15 percent"
+      ],
+      "skills": [
+        "calculate_compound_nco"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "macro"
+    ],
+    "conceptId": "capital-flows-and-net-capital-outflow",
+    "conceptName": "Capital Flows and Net Capital Outflow",
+    "outcomeId": "capital-flows-and-net-capital-outflow-interest-rates",
+    "oldLabel": "Trace interest rates, risk, and capital flight into investment flows",
+    "skillIds": [
+      "analyze_competing_nco_forces",
+      "analyze_reinforcing_nco_forces",
+      "bridge_interest_nco_fx_supply",
+      "calculate_capital_flight_shift",
+      "connect_interest_rate_asset_demand",
+      "define_capital_flight",
+      "evaluate_risk_adjusted_capital_flows",
+      "explain_interest_rate_nco_slope",
+      "trace_capital_flight_feedback",
+      "trace_foreign_rate_to_nco",
+      "trace_interest_rate_to_nco",
+      "trace_portfolio_reallocation",
+      "trace_risk_to_nco"
+    ],
+    "visible": true,
+    "eligibleCount": 17,
+    "representativeQuestions": [
+      {
+        "id": "PMOE-NCO-E-005",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "In the standard model, a higher domestic real interest rate tends to make domestic assets:",
+        "options": [
+          "Identical to foreign assets",
+          "Unrelated to capital flows",
+          "More attractive relative to foreign assets",
+          "Less attractive relative to foreign assets"
+        ],
+        "skills": [
+          "connect_interest_rate_asset_demand"
+        ]
+      },
+      {
+        "id": "PMOE-NCO-E-006",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "Political instability that causes residents to seek foreign assets is called:",
+        "options": [
+          "Balanced trade",
+          "Capital flight",
+          "Crowding in",
+          "Purchasing-power parity"
+        ],
+        "skills": [
+          "define_capital_flight"
+        ]
+      },
+      {
+        "id": "PMOE-NCO-LB-002",
+        "type": "calculation",
+        "difficulty": "legendary",
+        "stem": "At the original interest rate, a risk shock raises residents’ intended foreign purchases by $140 billion and lowers foreign intended domestic purchases by $60 billion. The new equilibrium shows NCO up $125 billion. What interest-rate feedback is required, and which portfolio pattern could produce it?",
+        "options": [
+          "Feedback lowers NCO $75 billion; resident purchases fall $45 billion and foreign purchases rise $30 billion relative to the shifted schedule",
+          "Feedback raises NCO $75 billion; resident purchases rise $45 billion and foreign purchases fall $30 billion",
+          "Feedback lowers NCO $15 billion; both gross purchase flows fall $75 billion",
+          "Feedback lowers NCO $200 billion; all desired purchases return to their original levels"
+        ],
+        "skills": [
+          "calculate_capital_flight_shift"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Trace",
+    "proposedLabel": "Trace interest rates, risk, and capital flight into investment flows",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "PMOE-NCO-E-005",
+        "task": "In the standard model, a higher domestic real interest rate tends to make domestic assets:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "connect_interest_rate_asset_demand"
+        ]
+      },
+      {
+        "questionId": "PMOE-NCO-E-006",
+        "task": "Political instability that causes residents to seek foreign assets is called:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "define_capital_flight"
+        ]
+      },
+      {
+        "questionId": "PMOE-NCO-LB-002",
+        "task": "At the original interest rate, a risk shock raises residents’ intended foreign purchases by $140 billion and lowers foreign intended domestic purchases by $60 billion. The new equilibrium shows NCO up $125 billion. What interest-rate feedback is required, and which portfolio pattern could produce it?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "calculate_capital_flight_shift"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "PMOE-NCO-L-002",
+      "stem": "Domestic real returns rise while perceived domestic political risk also rises. An analyst observes that NCO increased and concludes that higher interest rates caused capital flight. Holding other determinants fixed, which inference separates the observed change from the interest-rate effect?",
+      "type": "application",
+      "difficulty": "legendary",
+      "options": [
+        "The positive NCO response proves that higher domestic rates increase desired foreign purchases",
+        "The identity NX = NCO requires risk and interest-rate effects to have equal size",
+        "The risk-driven outward shift dominated the rate-induced reduction in NCO; the observation does not reverse the rate mechanism",
+        "The rate increase must have preceded the risk shock because NCO rose"
+      ],
+      "skills": [
+        "analyze_competing_nco_forces"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "competitive-markets",
+    "conceptName": "Competitive Markets",
+    "outcomeId": "competitive-markets-price-taking",
+    "oldLabel": "Identify competitive markets and price-taking behavior.",
+    "skillIds": [
+      "barriers_to_entry",
+      "competition_degree",
+      "competitive_market_definition",
+      "competitive_market_mechanism",
+      "core_competitive_market",
+      "effective_entry",
+      "entry_exit_competition",
+      "information_and_competition",
+      "market_concentration_analysis",
+      "market_power_concentration",
+      "market_power_definition",
+      "market_power_evidence",
+      "price_taker_application",
+      "price_taker_consequence",
+      "price_taker_definition",
+      "small_firm_market_share",
+      "switching_cost_competition"
+    ],
+    "visible": true,
+    "eligibleCount": 26,
+    "representativeQuestions": [
+      {
+        "id": "ECON-MG-EASY-36",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "A competitive market has:",
+        "options": [
+          "Many buyers and sellers, none with much price control",
+          "One seller who controls the price",
+          "Only government buyers",
+          "No price signals"
+        ],
+        "skills": [
+          "competitive_market_definition",
+          "price_taker_definition"
+        ]
+      },
+      {
+        "id": "P52B-COMP-E-001",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "A price-taking seller is one that:",
+        "options": [
+          "Sets any price without losing customers.",
+          "Controls the total market supply.",
+          "Cannot noticeably affect the market price by changing its own output.",
+          "Faces no competitors."
+        ],
+        "skills": [
+          "price_taker_definition"
+        ]
+      },
+      {
+        "id": "ECON-MG-MEDIUMBOSS-3001",
+        "type": "interpretation",
+        "difficulty": "mediumBoss",
+        "stem": "An economist points to a wheat farmer selling at the going market price. Why is the farmer a price taker?",
+        "options": [
+          "The farmer's individual output is too small to control the market price",
+          "The farmer legally sets the national wheat price",
+          "The farmer faces no competitors",
+          "The farmer can ignore supply and demand"
+        ],
+        "skills": [
+          "price_taker_definition",
+          "competitive_market_definition"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Identify",
+    "proposedLabel": "Identify competitive markets and price-taking behavior.",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-MG-EASY-36",
+        "task": "A competitive market has:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "competitive_market_definition",
+          "price_taker_definition"
+        ]
+      },
+      {
+        "questionId": "P52B-COMP-E-001",
+        "task": "A price-taking seller is one that:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "price_taker_definition"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-MEDIUMBOSS-3001",
+        "task": "An economist points to a wheat farmer selling at the going market price. Why is the farmer a price taker?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "price_taker_definition",
+          "competitive_market_definition"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P52B-COMP-L-001",
+      "stem": "Two exchanges each list hundreds of sellers of standardized grain. On X, buyers can immediately compare prices and switch suppliers. On Y, contracts impose large switching charges. Which claim best separates seller count from effective competition?",
+      "type": "application",
+      "difficulty": "legendary",
+      "options": [
+        "An individual seller likely has less pricing discretion on Y because switching charges protect buyer choice.",
+        "The same seller count ensures equal pricing discretion even when switching costs differ.",
+        "An individual seller likely has less pricing discretion on X because buyers can readily use competing offers.",
+        "Standardization gives each seller a unique product, preventing price taking on either exchange."
+      ],
+      "skills": [
+        "competitive_market_mechanism"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "micro"
+    ],
+    "conceptId": "consumer-choice",
+    "conceptName": "Consumer Choice",
+    "outcomeId": "consumer-choice-budget",
+    "oldLabel": "Construct budget constraints and identify affordable bundles",
+    "skillIds": [
+      "affordable_bundle",
+      "budget_boundary",
+      "budget_equation",
+      "budget_slope",
+      "budget_vs_demand",
+      "construct_budget_constraint",
+      "income_intercept",
+      "intercept_logic",
+      "interpret_relative_price",
+      "new_budget_bundle",
+      "parallel_budget_lines",
+      "relative_price",
+      "unaffordable_bundle"
+    ],
+    "visible": true,
+    "eligibleCount": 46,
+    "representativeQuestions": [
+      {
+        "id": "42608",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "In hypothetical consumer-choice case C, a consumer has $64. Bundle (4,3) costs $60. How much income remains after purchasing it?",
+        "options": [
+          "$4",
+          "$60",
+          "$64",
+          "$10"
+        ],
+        "skills": [
+          "construct_budget_constraint"
+        ]
+      },
+      {
+        "id": "42612",
+        "type": "integration",
+        "difficulty": "easy",
+        "stem": "In hypothetical consumer-choice case G, a consumer has $48. Bundle (4,1) costs $28. How much income remains after purchasing it?",
+        "options": [
+          "$20",
+          "$28",
+          "$48",
+          "$24"
+        ],
+        "skills": [
+          "construct_budget_constraint"
+        ]
+      },
+      {
+        "id": "42616",
+        "type": "calculation",
+        "difficulty": "easy",
+        "stem": "In hypothetical consumer-choice case K, a consumer has $80. Bundle (4,2) costs $44. How much income remains after purchasing it?",
+        "options": [
+          "$36",
+          "$44",
+          "$80",
+          "$41"
+        ],
+        "skills": [
+          "construct_budget_constraint"
+        ]
+      }
+    ],
+    "status": "REWORD",
+    "recommendedVerb": "Interpret",
+    "proposedLabel": "Interpret budget constraints and calculate affordable bundles",
+    "reason": "Students read budget lines, select equations and calculate feasibility rather than construct a drawing.",
+    "representativeBehaviors": [
+      {
+        "questionId": "42608",
+        "task": "In hypothetical consumer-choice case C, a consumer has $64. Bundle (4,3) costs $60. How much income remains after purchasing it?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "construct_budget_constraint"
+        ]
+      },
+      {
+        "questionId": "42612",
+        "task": "In hypothetical consumer-choice case G, a consumer has $48. Bundle (4,1) costs $28. How much income remains after purchasing it?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "construct_budget_constraint"
+        ]
+      },
+      {
+        "questionId": "42616",
+        "task": "In hypothetical consumer-choice case K, a consumer has $80. Bundle (4,2) costs $44. How much income remains after purchasing it?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "construct_budget_constraint"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "42581",
+      "stem": "Refer to the graph above. What is maximum yogurt after income falls?",
+      "type": "graph_calculation",
+      "difficulty": "legendary",
+      "options": [
+        "4 units",
+        "8 units",
+        "5 units",
+        "10 units"
+      ],
+      "skills": [
+        "income_intercept"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "micro"
+    ],
+    "conceptId": "consumer-choice",
+    "conceptName": "Consumer Choice",
+    "outcomeId": "consumer-choice-choice",
+    "oldLabel": "Analyze how changing budgets affect optimal consumer choices",
+    "skillIds": [
+      "analyze_budget_change",
+      "apply_marginal_rate_substitution",
+      "apply_marginal_utility_per_dollar",
+      "best_affordable_bundle",
+      "budget_exhaustion_not_enough",
+      "equimarginal_rule",
+      "feasible_set_contraction",
+      "feasible_set_expansion",
+      "fixed_intercept",
+      "highest_attainable_curve",
+      "identify_consumer_optimum",
+      "income_change_shift",
+      "mrs_adjustment",
+      "mrs_price_ratio",
+      "mrs_units",
+      "optimal_bundle_coordinates",
+      "pivot_vs_shift",
+      "price_change_pivot",
+      "price_increase_pivot",
+      "purchasing_power",
+      "relative_price_change",
+      "slope_change",
+      "tangency_condition"
+    ],
+    "visible": true,
+    "eligibleCount": 54,
+    "representativeQuestions": [
+      {
+        "id": "42600",
+        "type": "graph_interpretation",
+        "difficulty": "easy",
+        "stem": "Refer to the graph above. Which bundle is the tangency choice?",
+        "options": [
+          "15 units of X and 10 units of Y",
+          "10 units of X and 15 units of Y",
+          "20 units of X and 40 units of Y",
+          "5 units of X and 30 units of Y"
+        ],
+        "skills": [
+          "optimal_bundle_coordinates"
+        ]
+      },
+      {
+        "id": "42604",
+        "type": "graph_integration",
+        "difficulty": "easy",
+        "stem": "Refer to the graph above. If the consumer's MRS were greater than 2 at a nearby affordable point, what adjustment would raise utility?",
+        "options": [
+          "Choose more X and less Y",
+          "Choose less X and more Y",
+          "Keep the bundle because every boundary point is optimal",
+          "Buy an unaffordable amount of both goods"
+        ],
+        "skills": [
+          "mrs_adjustment"
+        ]
+      },
+      {
+        "id": "42680",
+        "type": "calculation",
+        "difficulty": "easy",
+        "stem": "In hypothetical consumer-choice case A, MUx is 12 and MUy is 6. What does MRSx,y measure?",
+        "options": [
+          "The consumer's marginal willingness to give up Y for X, equal to 12/6",
+          "The market price ratio regardless of preferences",
+          "Total utility 18",
+          "Income divided by 12"
+        ],
+        "skills": [
+          "apply_marginal_rate_substitution"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Analyze",
+    "proposedLabel": "Analyze how changing budgets affect optimal consumer choices",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "42600",
+        "task": "Refer to the graph above. Which bundle is the tangency choice?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "optimal_bundle_coordinates"
+        ]
+      },
+      {
+        "questionId": "42604",
+        "task": "Refer to the graph above. If the consumer's MRS were greater than 2 at a nearby affordable point, what adjustment would raise utility?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "mrs_adjustment"
+        ]
+      },
+      {
+        "questionId": "42680",
+        "task": "In hypothetical consumer-choice case A, MUx is 12 and MUy is 6. What does MRSx,y measure?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "apply_marginal_rate_substitution"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "42701",
+      "stem": "In hypothetical consumer-choice case C, an affordable interior bundle has MRS greater than Px/Py. Which move can raise utility?",
+      "type": "application",
+      "difficulty": "legendary",
+      "options": [
+        "Buy less X and more Y",
+        "Buy more X and less Y until the tradeoffs align",
+        "Keep the bundle because it exhausts income",
+        "Move beyond the budget line"
+      ],
+      "skills": [
+        "identify_consumer_optimum"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "micro"
+    ],
+    "conceptId": "consumer-choice",
+    "conceptName": "Consumer Choice",
+    "outcomeId": "consumer-choice-preferences",
+    "oldLabel": "Explain preferences, indifference curves, and ordinal utility",
+    "skillIds": [
+      "apply_indifference_curve_properties",
+      "attainable_indifference_curve",
+      "convex_preferences",
+      "distinguish_special_preferences",
+      "indifference",
+      "interpret_ordinal_utility",
+      "noncrossing_curves",
+      "ordinal_utility",
+      "preference_and_feasibility",
+      "preference_ranking",
+      "rank_preferences",
+      "unattainable_preference"
+    ],
+    "visible": true,
+    "eligibleCount": 60,
+    "representativeQuestions": [
+      {
+        "id": "42584",
+        "type": "graph_interpretation",
+        "difficulty": "easy",
+        "stem": "Refer to the graph above. Which curve represents the most-preferred bundles under monotonic preferences?",
+        "options": [
+          "IC3",
+          "IC1",
+          "IC2",
+          "All curves are equally ranked"
+        ],
+        "skills": [
+          "preference_ranking"
+        ]
+      },
+      {
+        "id": "42588",
+        "type": "graph_trap",
+        "difficulty": "easy",
+        "stem": "Refer to the graph above. What is economically meaningful about the curve labels?",
+        "options": [
+          "Their ordering, not the numerical distance between them",
+          "The exact utility gap between curves",
+          "Their dollar cost",
+          "The number of goods consumed"
+        ],
+        "skills": [
+          "ordinal_utility"
+        ]
+      },
+      {
+        "id": "42642",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "In hypothetical consumer-choice case B, a consumer can compare every pair of feasible bundles. Which preference property is illustrated?",
+        "options": [
+          "Transitivity",
+          "Convexity",
+          "Completeness",
+          "Cardinal utility"
+        ],
+        "skills": [
+          "rank_preferences"
+        ]
+      }
+    ],
+    "status": "REWORD",
+    "recommendedVerb": "Interpret",
+    "proposedLabel": "Interpret preferences, indifference curves, and ordinal utility",
+    "reason": "Items rank curves, interpret ordinal labels and classify preference properties.",
+    "representativeBehaviors": [
+      {
+        "questionId": "42584",
+        "task": "Refer to the graph above. Which curve represents the most-preferred bundles under monotonic preferences?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "preference_ranking"
+        ]
+      },
+      {
+        "questionId": "42588",
+        "task": "Refer to the graph above. What is economically meaningful about the curve labels?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "ordinal_utility"
+        ]
+      },
+      {
+        "questionId": "42642",
+        "task": "In hypothetical consumer-choice case B, a consumer can compare every pair of feasible bundles. Which preference property is illustrated?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "rank_preferences"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "42647",
+      "stem": "In hypothetical consumer-choice case G, bundle D contains at least as much of both desirable goods as bundle E and more of one. Under more-is-better, how are they ranked?",
+      "type": "integration",
+      "difficulty": "legendary",
+      "options": [
+        "E is strictly preferred to D",
+        "They must be indifferent",
+        "No ranking is possible",
+        "D is strictly preferred to E"
+      ],
+      "skills": [
+        "rank_preferences"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "demand",
+    "conceptName": "Demand",
+    "outcomeId": "demand-core-behavior",
+    "oldLabel": "Explain the law of demand and distinguish movements from shifts",
+    "skillIds": [
+      "demand_schedule_interpretation",
+      "law_of_demand",
+      "movement_vs_demand_shift",
+      "movement_vs_shift"
+    ],
+    "visible": true,
+    "eligibleCount": 23,
+    "representativeQuestions": [
+      {
+        "id": "ECON-MG-EASY-38",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "The law of demand says that, other things equal:",
+        "options": [
+          "As price falls, quantity demanded rises",
+          "As price falls, demand always shifts left",
+          "As price rises, supply shifts left",
+          "As price rises, quantity demanded rises"
+        ],
+        "skills": [
+          "law_of_demand",
+          "movement_vs_demand_shift"
+        ]
+      },
+      {
+        "id": "ECON-MG-EASY-39",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "When the price of a good falls, what happens to quantity demanded?",
+        "options": [
+          "Quantity demanded increases",
+          "Demand decreases",
+          "Supply increases",
+          "The demand curve shifts left"
+        ],
+        "skills": [
+          "movement_vs_demand_shift",
+          "law_of_demand"
+        ]
+      },
+      {
+        "id": "PG1-DMD-E-001",
+        "type": "graph",
+        "difficulty": "easy",
+        "stem": "On the displayed gourmet-donut demand curve, what price and quantity are shown at point A?",
+        "options": [
+          "$10 and 100 thousand donuts",
+          "$5 and 225 thousand donuts",
+          "$10 and 225 thousand donuts",
+          "$14 and 100 thousand donuts"
+        ],
+        "skills": [
+          "demand_schedule_interpretation"
+        ]
+      }
+    ],
+    "status": "REWORD",
+    "recommendedVerb": "Apply",
+    "proposedLabel": "Apply the law of demand and distinguish movements from shifts",
+    "reason": "Questions identify the price–quantity response and classify a movement versus a shifted curve.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-MG-EASY-38",
+        "task": "The law of demand says that, other things equal:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "law_of_demand",
+          "movement_vs_demand_shift"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-EASY-39",
+        "task": "When the price of a good falls, what happens to quantity demanded?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "movement_vs_demand_shift",
+          "law_of_demand"
+        ]
+      },
+      {
+        "questionId": "PG1-DMD-E-001",
+        "task": "On the displayed gourmet-donut demand curve, what price and quantity are shown at point A?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "demand_schedule_interpretation"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "ECON-MG-LEGENDARY-9023",
+      "stem": "The price of tablets falls, and consumers buy more tablets. No non-price determinant changed. What happened?",
+      "type": "trap",
+      "difficulty": "legendary",
+      "options": [
+        "Quantity demanded increased along the existing demand curve.",
+        "Demand increased and the curve shifted right",
+        "Supply increased and the curve shifted right",
+        "Demand decreased because price fell"
+      ],
+      "skills": [
+        "movement_vs_shift",
+        "law_of_demand"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "demand",
+    "conceptName": "Demand",
+    "outcomeId": "demand-related-goods",
+    "oldLabel": "Analyze income effects, substitutes, and complements",
+    "skillIds": [
+      "complement_demand_shift",
+      "complement_good_definition",
+      "demand_shifters_income",
+      "demand_shifters_related_goods",
+      "normal_good_income",
+      "normal_inferior_good_analysis",
+      "related_goods",
+      "related_goods_demand",
+      "related_goods_demand_shift",
+      "substitute_good_definition",
+      "substitutes"
+    ],
+    "visible": true,
+    "eligibleCount": 15,
+    "representativeQuestions": [
+      {
+        "id": "ECON-MG-EASY-41",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "If income rises and tablets are a normal good, what happens to demand for tablets?",
+        "options": [
+          "Demand increases",
+          "Demand decreases",
+          "Quantity demanded decreases because price changed",
+          "Supply decreases"
+        ],
+        "skills": [
+          "demand_shifters_income",
+          "normal_good_income"
+        ]
+      },
+      {
+        "id": "ECON-MG-EASY-42",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "Two goods are substitutes when:",
+        "options": [
+          "One good can be used in place of the other",
+          "The goods are typically consumed together",
+          "The goods use the same raw material in production",
+          "A price change for one good leaves demand for the other unrelated"
+        ],
+        "skills": [
+          "substitute_good_definition",
+          "demand_shifters_related_goods"
+        ]
+      },
+      {
+        "id": "ECON-MG-HARD-216",
+        "type": "application",
+        "difficulty": "hard",
+        "stem": "A consumer's income rises, and meal delivery is a normal good. At every price, consumers now want more meal delivery. What happened?",
+        "options": [
+          "Demand increased",
+          "Quantity demanded increased because price fell",
+          "Supply increased",
+          "Demand decreased"
+        ],
+        "skills": [
+          "demand_shifters_income",
+          "normal_good_income"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Analyze",
+    "proposedLabel": "Analyze income effects, substitutes, and complements",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-MG-EASY-41",
+        "task": "If income rises and tablets are a normal good, what happens to demand for tablets?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "demand_shifters_income",
+          "normal_good_income"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-EASY-42",
+        "task": "Two goods are substitutes when:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "substitute_good_definition",
+          "demand_shifters_related_goods"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-HARD-216",
+        "task": "A consumer's income rises, and meal delivery is a normal good. At every price, consumers now want more meal delivery. What happened?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "demand_shifters_income",
+          "normal_good_income"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "ECON-MG-HARD-216",
+      "stem": "A consumer's income rises, and meal delivery is a normal good. At every price, consumers now want more meal delivery. What happened?",
+      "type": "application",
+      "difficulty": "hard",
+      "options": [
+        "Demand increased",
+        "Quantity demanded increased because price fell",
+        "Supply increased",
+        "Demand decreased"
+      ],
+      "skills": [
+        "demand_shifters_income",
+        "normal_good_income"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "demand",
+    "conceptName": "Demand",
+    "outcomeId": "demand-shifters",
+    "oldLabel": "Analyze demand shifters and combined market effects",
+    "skillIds": [
+      "causal_reasoning",
+      "demand_shift_analysis",
+      "demand_shift_direction",
+      "demand_shifters",
+      "demand_shifters_expectations",
+      "demand_shifters_tastes",
+      "equilibrium_comparison",
+      "equilibrium_effects",
+      "multiple_demand_shifters",
+      "price_signal_allocation",
+      "supply_shift_equilibrium_prediction"
+    ],
+    "visible": true,
+    "eligibleCount": 21,
+    "representativeQuestions": [
+      {
+        "id": "PG1-DMD-E-002",
+        "type": "graph",
+        "difficulty": "easy",
+        "stem": "In the displayed coffee market, the move from D0 to D1 represents:",
+        "options": [
+          "A decrease in demand",
+          "An increase in quantity demanded caused only by a lower price",
+          "An increase in demand",
+          "A decrease in supply"
+        ],
+        "skills": [
+          "demand_shift_direction"
+        ]
+      },
+      {
+        "id": "ECON-MG-MEDIUM-118",
+        "type": "interpretation",
+        "difficulty": "medium",
+        "stem": "Consumers expect laptop prices to rise next month, so more laptops are purchased today. What happens to current demand for laptops?",
+        "options": [
+          "Demand increases",
+          "Quantity demanded decreases",
+          "Supply decreases",
+          "Demand stays fixed because only current price matters"
+        ],
+        "skills": [
+          "demand_shifters_expectations",
+          "demand_shifters"
+        ]
+      },
+      {
+        "id": "ECON-MG-MEDIUM-167",
+        "type": "graph_interpretation",
+        "difficulty": "medium",
+        "stem": "Refer to the graph. Consumer income rises for a normal good while production conditions remain unchanged. Which equilibrium movement provides evidence of the resulting demand change?",
+        "options": [
+          "From P1, Q2 to P2, Q3 along S2, showing demand shifts right from D1 to D2",
+          "From P2, Q1 to P1, Q2 along D1, showing supply shifts right from S1 to S2",
+          "From P3, Q2 to P2, Q3 along D2, showing supply shifts right from S1 to S2",
+          "From P2, Q3 to P1, Q2 along S2, showing demand shifts left from D2 to D1"
+        ],
+        "skills": [
+          "demand_shift_direction",
+          "equilibrium_comparison"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Analyze",
+    "proposedLabel": "Analyze demand shifters and combined market effects",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "PG1-DMD-E-002",
+        "task": "In the displayed coffee market, the move from D0 to D1 represents:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "demand_shift_direction"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-MEDIUM-118",
+        "task": "Consumers expect laptop prices to rise next month, so more laptops are purchased today. What happens to current demand for laptops?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "demand_shifters_expectations",
+          "demand_shifters"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-MEDIUM-167",
+        "task": "Refer to the graph. Consumer income rises for a normal good while production conditions remain unchanged. Which equilibrium movement provides evidence of the resulting demand change?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "demand_shift_direction",
+          "equilibrium_comparison"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P52B-S3-DEM-L-001",
+      "stem": "Coffee is a normal good. Consumer income rises, buyers expect coffee prices to fall next month, and the current price of tea, a substitute, rises. What can be concluded about current coffee demand?",
+      "type": "multi-step",
+      "difficulty": "legendary",
+      "options": [
+        "Demand must rise: two favorable determinants outweigh one unfavorable determinant regardless of their sizes.",
+        "Demand must fall: an expected future price decline outweighs current income and substitute-price effects.",
+        "Demand is indeterminate: income and the substitute price raise it, while waiting for a lower future price reduces it.",
+        "Demand is unchanged: income, expectations, and related-good prices affect only movement along the curve."
+      ],
+      "skills": [
+        "multiple_demand_shifters"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "market-equilibrium",
+    "conceptName": "Market Equilibrium",
+    "outcomeId": "market-equilibrium-equilibrium",
+    "oldLabel": "Determine equilibrium and explain shortage and surplus adjustment",
+    "skillIds": [
+      "algebraic_equilibrium_price",
+      "algebraic_equilibrium_quantity",
+      "curve_pairing",
+      "equilibrium_calculation",
+      "equilibrium_definition",
+      "equilibrium_identification",
+      "graph_reading",
+      "quantity_demanded",
+      "quantity_supplied",
+      "shortage_identification",
+      "shortage_market_adjustment",
+      "shortage_price_pressure",
+      "surplus_identification",
+      "surplus_market_adjustment",
+      "surplus_price_pressure",
+      "surplus_shortage_adjustment",
+      "surplus_shortage_calculation",
+      "surplus_shortage_identification"
+    ],
+    "visible": true,
+    "eligibleCount": 32,
+    "representativeQuestions": [
+      {
+        "id": "ECON-MG-EASY-51",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "Market equilibrium occurs where:",
+        "options": [
+          "Quantity demanded equals quantity supplied",
+          "Quantity demanded exceeds quantity supplied, creating a shortage",
+          "Quantity supplied exceeds quantity demanded, creating a surplus",
+          "The demand curve reaches the price axis"
+        ],
+        "skills": [
+          "equilibrium_definition",
+          "surplus_shortage_identification"
+        ]
+      },
+      {
+        "id": "ECON-MG-EASY-52",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "If the market price is above equilibrium, the market has:",
+        "options": [
+          "A surplus",
+          "A shortage",
+          "A binding price ceiling",
+          "No quantity supplied"
+        ],
+        "skills": [
+          "surplus_identification",
+          "equilibrium_definition"
+        ]
+      },
+      {
+        "id": "PG1-EQ-E-001",
+        "type": "graph",
+        "difficulty": "easy",
+        "stem": "What equilibrium price and quantity are shown in the displayed gas market?",
+        "options": [
+          "$3 per gallon and 150 thousand gallons",
+          "$2 per gallon and 200 thousand gallons",
+          "$4 per gallon and 100 thousand gallons",
+          "$3 per gallon and 300 thousand gallons"
+        ],
+        "skills": [
+          "equilibrium_identification"
+        ]
+      }
+    ],
+    "status": "REWORD",
+    "recommendedVerb": "Determine",
+    "proposedLabel": "Determine equilibrium and predict shortage and surplus adjustment",
+    "reason": "Questions identify/calculate equilibrium and infer price pressure from excess demand or supply.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-MG-EASY-51",
+        "task": "Market equilibrium occurs where:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "equilibrium_definition",
+          "surplus_shortage_identification"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-EASY-52",
+        "task": "If the market price is above equilibrium, the market has:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "surplus_identification",
+          "equilibrium_definition"
+        ]
+      },
+      {
+        "questionId": "PG1-EQ-E-001",
+        "task": "What equilibrium price and quantity are shown in the displayed gas market?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "equilibrium_identification"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "ECON-MG-LEGENDARY-9028",
+      "stem": "A market price is above equilibrium. What pressure does the market create and why?",
+      "type": "interpretation",
+      "difficulty": "legendary",
+      "options": [
+        "Downward pressure on price because quantity supplied exceeds quantity demanded",
+        "Upward pressure on price because quantity demanded exceeds quantity supplied",
+        "No pressure because high prices clear every market",
+        "Downward pressure on quantity demanded because demand shifts left"
+      ],
+      "skills": [
+        "surplus_market_adjustment",
+        "quantity_supplied",
+        "quantity_demanded"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "market-equilibrium",
+    "conceptName": "Market Equilibrium",
+    "outcomeId": "market-equilibrium-single-shifts",
+    "oldLabel": "Predict equilibrium effects of demand or supply changes",
+    "skillIds": [
+      "demand_decrease",
+      "demand_decrease_market_effect",
+      "demand_increase",
+      "demand_increase_market_effect",
+      "demand_shift_equilibrium_prediction",
+      "demand_shift_equilibrium_price",
+      "equilibrium_comparison",
+      "equilibrium_prediction",
+      "input_costs",
+      "market_change_prediction",
+      "market_shift_analysis",
+      "normal_good",
+      "supply_decrease",
+      "supply_decrease_market_effect",
+      "supply_increase",
+      "supply_increase_market_effect",
+      "supply_shift_analysis",
+      "supply_shift_equilibrium_prediction",
+      "supply_shift_equilibrium_price"
+    ],
+    "visible": true,
+    "eligibleCount": 24,
+    "representativeQuestions": [
+      {
+        "id": "ECON-MG-EASY-54",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "A popular endorsement increases demand for a product while production conditions remain unchanged. How does the market's equilibrium price respond?",
+        "options": [
+          "It increases",
+          "It decreases",
+          "It remains unchanged",
+          "It becomes a shortage at every price"
+        ],
+        "skills": [
+          "demand_shift_equilibrium_price",
+          "market_change_prediction"
+        ]
+      },
+      {
+        "id": "ECON-MG-MEDIUM-163",
+        "type": "graph_interpretation",
+        "difficulty": "medium",
+        "stem": "Refer to the graph. A production improvement shifts supply from S1 to S2 while demand remains D1. Which explanation connects the curve shift to the new equilibrium?",
+        "options": [
+          "Equilibrium moves from P2, Q1 to P1, Q2, so price falls and quantity rises",
+          "Equilibrium moves from P1, Q2 to P2, Q3, so price and quantity rise",
+          "Equilibrium moves from P3, Q2 to P2, Q3, so price falls and quantity rises",
+          "Equilibrium moves from P2, Q3 to P3, Q2, so price rises and quantity falls"
+        ],
+        "skills": [
+          "supply_shift_equilibrium_prediction",
+          "equilibrium_comparison"
+        ]
+      },
+      {
+        "id": "PG1-EQ-H-002",
+        "type": "multi-step",
+        "difficulty": "hard",
+        "stem": "Starting from D0/S0, suppose demand shifts to D1 while supply remains at S0. What intermediate equilibrium does the graph show?",
+        "options": [
+          "$4 and 100 thousand units",
+          "$4 and 200 thousand units",
+          "$5 and 150 thousand units",
+          "$3 and 150 thousand units"
+        ],
+        "skills": [
+          "demand_shift_equilibrium_prediction",
+          "market_shift_analysis"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Predict",
+    "proposedLabel": "Predict equilibrium effects of demand or supply changes",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-MG-EASY-54",
+        "task": "A popular endorsement increases demand for a product while production conditions remain unchanged. How does the market's equilibrium price respond?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "demand_shift_equilibrium_price",
+          "market_change_prediction"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-MEDIUM-163",
+        "task": "Refer to the graph. A production improvement shifts supply from S1 to S2 while demand remains D1. Which explanation connects the curve shift to the new equilibrium?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "supply_shift_equilibrium_prediction",
+          "equilibrium_comparison"
+        ]
+      },
+      {
+        "questionId": "PG1-EQ-H-002",
+        "task": "Starting from D0/S0, suppose demand shifts to D1 while supply remains at S0. What intermediate equilibrium does the graph show?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "demand_shift_equilibrium_prediction",
+          "market_shift_analysis"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "ECON-MG-LEGENDARY-9015",
+      "stem": "Refer to the graph. Tastes shift demand from D1 to D2 while supply remains S1. Which explanation uses both intersections to distinguish the demand shift from the market's movement along supply?",
+      "type": "graph_interpretation",
+      "difficulty": "legendary",
+      "options": [
+        "Demand shifts right, and equilibrium moves along S1 from P2, Q1 to P3, Q2",
+        "Supply shifts right, and equilibrium moves along D1 from P2, Q1 to P1, Q2",
+        "Demand shifts left, and equilibrium moves along S1 from P3, Q2 to P2, Q1",
+        "Supply shifts left, and equilibrium moves along D2 from P2, Q3 to P3, Q2"
+      ],
+      "skills": [
+        "market_shift_analysis"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "market-equilibrium",
+    "conceptName": "Market Equilibrium",
+    "outcomeId": "market-equilibrium-combined-shifts",
+    "oldLabel": "Analyze simultaneous demand and supply changes",
+    "skillIds": [
+      "demand_decrease_supply_increase",
+      "demand_increase_supply_decrease",
+      "double_shift_ambiguous_price",
+      "double_shift_ambiguous_quantity",
+      "expectations_and_supply_shock",
+      "multi_shift_sequence",
+      "simultaneous_shift_comparison",
+      "simultaneous_shift_sequence",
+      "simultaneous_shifts"
+    ],
+    "visible": true,
+    "eligibleCount": 22,
+    "representativeQuestions": [
+      {
+        "id": "PG1-EQ-M-003",
+        "type": "interpretation",
+        "difficulty": "medium",
+        "stem": "Which pair of market changes is shown when the graph moves from D0/S0 to D1/S1?",
+        "options": [
+          "Demand decreases while supply increases",
+          "Both demand and supply increase",
+          "Both demand and supply decrease",
+          "Demand increases while supply decreases"
+        ],
+        "skills": [
+          "simultaneous_shifts"
+        ]
+      },
+      {
+        "id": "PG1-EQ-M-004",
+        "type": "graph",
+        "difficulty": "medium",
+        "stem": "After both shifts shown in the graph, what equilibrium is formed by D1 and S1?",
+        "options": [
+          "$5 and 150 thousand units",
+          "$3 and 150 thousand units",
+          "$4 and 100 thousand units",
+          "$4 and 200 thousand units"
+        ],
+        "skills": [
+          "simultaneous_shift_comparison"
+        ]
+      },
+      {
+        "id": "ECON-MG-HARD-258",
+        "type": "graph_interpretation",
+        "difficulty": "hard",
+        "stem": "Refer to the graph. Starting at D1/S1, demand and supply both increase to D2/S2. Which explanation compares the general prediction with the particular equilibrium drawn?",
+        "options": [
+          "Quantity rises for certain; price is generally ambiguous but remains at P2 in this drawing",
+          "Price rises for certain; quantity is generally ambiguous but remains at Q1 in this drawing",
+          "Both price and quantity are generally fixed because the curves shift together",
+          "Quantity falls for certain; price is generally ambiguous but falls to P1 here"
+        ],
+        "skills": [
+          "simultaneous_shift_comparison",
+          "double_shift_ambiguous_price"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Analyze",
+    "proposedLabel": "Analyze simultaneous demand and supply changes",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "PG1-EQ-M-003",
+        "task": "Which pair of market changes is shown when the graph moves from D0/S0 to D1/S1?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "simultaneous_shifts"
+        ]
+      },
+      {
+        "questionId": "PG1-EQ-M-004",
+        "task": "After both shifts shown in the graph, what equilibrium is formed by D1 and S1?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "simultaneous_shift_comparison"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-HARD-258",
+        "task": "Refer to the graph. Starting at D1/S1, demand and supply both increase to D2/S2. Which explanation compares the general prediction with the particular equilibrium drawn?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "simultaneous_shift_comparison",
+          "double_shift_ambiguous_price"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "ECON-MG-LEGENDARY-9019",
+      "stem": "Refer to the graph. Demand and supply both increase from D1/S1 to D2/S2. What does economic theory predict in general, and what does this particular graph show?",
+      "type": "graph_integration",
+      "difficulty": "legendary",
+      "options": [
+        "Quantity rises generally; price is ambiguous generally but stays at P2 here as quantity moves from Q1 to Q3",
+        "Price rises generally; quantity is ambiguous generally but stays at Q1 here as price moves from P1 to P3",
+        "Both variables are ambiguous generally, and the graph shows both unchanged",
+        "Quantity falls generally; price is ambiguous generally but falls to P1 here"
+      ],
+      "skills": [
+        "simultaneous_shifts"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "macro"
+    ],
+    "conceptId": "monetary-policy-transmission",
+    "conceptName": "Monetary-Policy Transmission",
+    "outcomeId": "monetary-policy-transmission-transmission",
+    "oldLabel": "Trace monetary policy through interest rates, investment, aggregate demand, and output.",
+    "skillIds": [
+      "ad_shift",
+      "ad_target",
+      "aggregate_demand",
+      "choose_anti_inflation_policy",
+      "choose_stabilizing_monetary_policy",
+      "combine_monetary_policy_and_multiplier",
+      "contractionary_monetary_policy",
+      "contractionary_monetary_policy_chain",
+      "contractionary_transmission_sequence",
+      "crowding_out",
+      "demand_shock",
+      "distinguish_ad_shift_from_movement_along_ad",
+      "distinguish_money_market_and_ad_model",
+      "distinguish_standard_liquidity_preference_from_liquidity_trap",
+      "evaluate_transmission_strength",
+      "expansionary_monetary_policy",
+      "expansionary_monetary_policy_chain",
+      "explain_liquidity_trap",
+      "explain_policy_limit",
+      "identify_ad_shift",
+      "identify_contractionary_policy_from_graph",
+      "identify_definition",
+      "identify_direct_effect",
+      "identify_expansionary_monetary_effect",
+      "identify_graph_panel",
+      "identify_liquidity_trap_breakpoint",
+      "inflation_pressure",
+      "interest_rate",
+      "interest_rates",
+      "interest_rates_investment",
+      "interest_sensitive_spending_channel",
+      "interpret_monetary_policy_graph",
+      "investment",
+      "investment_expectations_transmission",
+      "investment_sensitivity",
+      "monetary_policy_ad_shift",
+      "monetary_policy_transmission",
+      "money_market",
+      "money_supply",
+      "money_supply_interest_rate",
+      "money_supply_shift",
+      "money_supply_shift_interest_rate",
+      "mpc",
+      "multiplier",
+      "omitted_transmission_link",
+      "open_market_operations",
+      "open_market_purchase_transmission",
+      "order_policy_chain",
+      "output",
+      "overheating",
+      "predict_ad_shift",
+      "predict_direction",
+      "price_level",
+      "read_ad_shift",
+      "read_contractionary_graph_and_calculate_net_ad_effect",
+      "read_contractionary_graph_and_solve_required_rate_change",
+      "read_contractionary_graph_then_calculate_ad_change",
+      "read_contractionary_monetary_policy_graph",
+      "read_graph_and_evaluate_transmission_size",
+      "read_graph_direction_and_apply_multiplier",
+      "read_graph_then_apply_multiplier",
+      "read_money_market_shift",
+      "read_output_change_from_ad_shift",
+      "read_policy_direction_and_solve_required_interest_rate_change",
+      "recession",
+      "reserve_hoarding_transmission_limit",
+      "select_policy_response",
+      "trace_contractionary_monetary_policy_graph",
+      "trace_contractionary_money_graph_with_multiplier",
+      "trace_expansionary_monetary_policy_graph",
+      "trace_monetary_policy_chain",
+      "transmission_strength",
+      "zero_lower_bound"
+    ],
+    "visible": true,
+    "eligibleCount": 87,
+    "representativeQuestions": [
+      {
+        "id": "ECON-SP-EASY-47",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "If the Fed increases the money supply, the interest rate usually:",
+        "options": [
+          "Rises",
+          "Falls",
+          "Becomes the price level",
+          "Equals unemployment"
+        ],
+        "skills": [
+          "monetary_policy_transmission"
+        ]
+      },
+      {
+        "id": "LG-Q-43",
+        "type": "policy_direction",
+        "difficulty": "easy",
+        "stem": "If the Fed increases the money supply in the short run, interest rates tend to",
+        "options": [
+          "fall",
+          "rise",
+          "stay fixed by Congress",
+          "become equal to inflation automatically"
+        ],
+        "skills": [
+          "predict_direction",
+          "money_supply_interest_rate"
+        ]
+      },
+      {
+        "id": "LG-Q-45",
+        "type": "relationship",
+        "difficulty": "easy",
+        "stem": "Lower interest rates tend to make investment spending",
+        "options": [
+          "increase",
+          "decrease",
+          "stay unchanged by definition",
+          "equal money demand"
+        ],
+        "skills": [
+          "predict_direction",
+          "interest_rates_investment"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Trace",
+    "proposedLabel": "Trace monetary policy through interest rates, investment, aggregate demand, and output.",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-SP-EASY-47",
+        "task": "If the Fed increases the money supply, the interest rate usually:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "monetary_policy_transmission"
+        ]
+      },
+      {
+        "questionId": "LG-Q-43",
+        "task": "If the Fed increases the money supply in the short run, interest rates tend to",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "predict_direction",
+          "money_supply_interest_rate"
+        ]
+      },
+      {
+        "questionId": "LG-Q-45",
+        "task": "Lower interest rates tend to make investment spending",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "predict_direction",
+          "interest_rates_investment"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "LG-Q-9053",
+      "stem": "Refer to the graph. The Fed moves the money supply from MS1 to MS2. If the resulting investment change is $60 billion and MPC = 0.75, what is the correct full effect on AD?",
+      "type": "legendary_graph_chain_calculation",
+      "difficulty": "legendary",
+      "options": [
+        "MS shifts left, r rises, investment falls, and AD decreases by $240 billion.",
+        "MS shifts right, r falls, investment rises, and AD increases by $240 billion.",
+        "MS shifts left, r falls, investment rises, and AD increases by $240 billion.",
+        "MS shifts right, r rises, investment falls, and AD decreases by $60 billion."
+      ],
+      "skills": [
+        "read_graph_then_apply_multiplier",
+        "money_supply_shift",
+        "interest_rate",
+        "investment",
+        "mpc",
+        "aggregate_demand"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "micro"
+    ],
+    "conceptId": "monopoly",
+    "conceptName": "Monopoly",
+    "outcomeId": "monopoly-power",
+    "oldLabel": "Explain monopoly power and barriers to entry",
+    "skillIds": [
+      "barriers_to_entry",
+      "legal_barrier",
+      "market_power",
+      "monopoly_definition",
+      "natural_monopoly",
+      "natural_monopoly_cost",
+      "network_effects",
+      "resource_control"
+    ],
+    "visible": true,
+    "eligibleCount": 24,
+    "representativeQuestions": [
+      {
+        "id": "P62G-MON-E-001",
+        "type": "concept",
+        "difficulty": "easy",
+        "stem": "Which feature most directly distinguishes a monopoly from perfect competition?",
+        "options": [
+          "A single seller is protected by substantial barriers to entry",
+          "Many sellers offer an identical product",
+          "Each firm faces a horizontal demand curve",
+          "Entry eliminates economic profit quickly"
+        ],
+        "skills": [
+          "monopoly_definition"
+        ]
+      },
+      {
+        "id": "PM6-MON-E-048",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "A natural monopoly is most likely when average total cost:",
+        "options": [
+          "Is unrelated to scale",
+          "Falls over the relevant range of market demand",
+          "Rises at every output",
+          "Equals price at every output"
+        ],
+        "skills": [
+          "natural_monopoly_cost"
+        ]
+      },
+      {
+        "id": "P62G-MON-H-025",
+        "type": "analysis",
+        "difficulty": "hard",
+        "stem": "Which statement best describes the natural-monopoly policy problem?",
+        "options": [
+          "One firm may minimize production cost, yet unregulated pricing restricts output",
+          "Multiple firms always have lower ATC",
+          "Marginal-cost pricing always covers total cost",
+          "Average-cost pricing always achieves P=MC"
+        ],
+        "skills": [
+          "natural_monopoly_cost"
+        ]
+      }
+    ],
+    "status": "REWORD",
+    "recommendedVerb": "Identify",
+    "proposedLabel": "Identify monopoly power and distinguish barriers to entry",
+    "reason": "Questions recognize monopoly and differentiate natural, legal, resource and network barriers.",
+    "representativeBehaviors": [
+      {
+        "questionId": "P62G-MON-E-001",
+        "task": "Which feature most directly distinguishes a monopoly from perfect competition?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "monopoly_definition"
+        ]
+      },
+      {
+        "questionId": "PM6-MON-E-048",
+        "task": "A natural monopoly is most likely when average total cost:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "natural_monopoly_cost"
+        ]
+      },
+      {
+        "questionId": "P62G-MON-H-025",
+        "task": "Which statement best describes the natural-monopoly policy problem?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "natural_monopoly_cost"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P62G-MON-H-025",
+      "stem": "Which statement best describes the natural-monopoly policy problem?",
+      "type": "analysis",
+      "difficulty": "hard",
+      "options": [
+        "One firm may minimize production cost, yet unregulated pricing restricts output",
+        "Multiple firms always have lower ATC",
+        "Marginal-cost pricing always covers total cost",
+        "Average-cost pricing always achieves P=MC"
+      ],
+      "skills": [
+        "natural_monopoly_cost"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "micro"
+    ],
+    "conceptId": "monopoly",
+    "conceptName": "Monopoly",
+    "outcomeId": "monopoly-revenue-choice",
+    "oldLabel": "Use demand and revenue to choose output and price",
+    "skillIds": [
+      "average_revenue_monopoly",
+      "continuous_monopoly_choice",
+      "discrete_monopoly_choice",
+      "economies_of_scale",
+      "elasticity_and_mr",
+      "entry",
+      "integrated_monopoly_analysis",
+      "marginal_revenue_monopoly",
+      "monopoly_demand",
+      "monopoly_price",
+      "perfect-competition",
+      "price_effect_output_effect",
+      "price_elasticity_of_demand",
+      "profit_maximizing_output",
+      "total_revenue_monopoly"
+    ],
+    "visible": true,
+    "eligibleCount": 164,
+    "representativeQuestions": [
+      {
+        "id": "P62G-MON-E-007",
+        "type": "concept",
+        "difficulty": "easy",
+        "stem": "The demand curve facing a single-price monopolist is:",
+        "options": [
+          "Horizontal at the market price",
+          "The marginal-cost curve",
+          "The market demand curve",
+          "Vertical at the competitive quantity"
+        ],
+        "skills": [
+          "monopoly_demand"
+        ]
+      },
+      {
+        "id": "PM6-MON-E-014",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "For a single-price monopolist, which curve also shows average revenue at each quantity?",
+        "options": [
+          "The marginal-cost curve",
+          "The average-total-cost curve",
+          "A horizontal line at marginal revenue",
+          "The demand curve"
+        ],
+        "skills": [
+          "monopoly_demand"
+        ]
+      },
+      {
+        "id": "P62G-MON-H-001",
+        "type": "analysis",
+        "difficulty": "hard",
+        "stem": "Refer to the graph. Q1 is selected where MR intersects MC. What does P1 represent?",
+        "options": [
+          "The price on the demand curve at Q1",
+          "Marginal revenue at Q1",
+          "Average total cost at Q1",
+          "The competitive price where D=MC"
+        ],
+        "skills": [
+          "monopoly_price"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Use",
+    "proposedLabel": "Use demand and revenue to choose output and price",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "P62G-MON-E-007",
+        "task": "The demand curve facing a single-price monopolist is:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "monopoly_demand"
+        ]
+      },
+      {
+        "questionId": "PM6-MON-E-014",
+        "task": "For a single-price monopolist, which curve also shows average revenue at each quantity?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "monopoly_demand"
+        ]
+      },
+      {
+        "questionId": "P62G-MON-H-001",
+        "task": "Refer to the graph. Q1 is selected where MR intersects MC. What does P1 represent?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "monopoly_price"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P62G-MON-L-001",
+      "stem": "Mesa Water faces demand P=100−2Q. At Q=15, what are price and marginal revenue?",
+      "type": "legendary",
+      "difficulty": "legendary",
+      "options": [
+        "P=$70, MR=$40",
+        "P=$40, MR=$70",
+        "P=$70, MR=$70",
+        "P=$100, MR=$98"
+      ],
+      "skills": [
+        "marginal_revenue_monopoly"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "micro"
+    ],
+    "conceptId": "monopoly",
+    "conceptName": "Monopoly",
+    "outcomeId": "monopoly-policy",
+    "oldLabel": "Evaluate monopoly regulation and price discrimination",
+    "skillIds": [
+      "average_cost_regulation",
+      "first_degree_price_discrimination",
+      "marginal_cost_regulation",
+      "monopoly_policy_evaluation",
+      "price_cap_regulation",
+      "price_discrimination_conditions",
+      "price_discrimination_welfare",
+      "regulatory_tradeoff",
+      "rent_seeking",
+      "resale_prevention",
+      "third_degree_price_discrimination"
+    ],
+    "visible": true,
+    "eligibleCount": 146,
+    "representativeQuestions": [
+      {
+        "id": "P62G-MON-E-026",
+        "type": "concept",
+        "difficulty": "easy",
+        "stem": "Rent seeking occurs when resources are used to:",
+        "options": [
+          "Lower marginal cost through innovation",
+          "Obtain or protect monopoly privileges rather than produce valuable output",
+          "Expand output toward the efficient level",
+          "Calculate consumer surplus"
+        ],
+        "skills": [
+          "rent_seeking"
+        ]
+      },
+      {
+        "id": "PM6-MON-E-039",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "If firms spend resources lobbying for an exclusive monopoly privilege, those expenditures are an example of:",
+        "options": [
+          "Price discrimination",
+          "Marginal-cost pricing",
+          "Rent seeking",
+          "Productive efficiency"
+        ],
+        "skills": [
+          "rent_seeking"
+        ]
+      },
+      {
+        "id": "P62G-MON-H-021",
+        "type": "analysis",
+        "difficulty": "hard",
+        "stem": "A natural monopoly has MC=$12, fixed cost $900, and demand P=100−1.2Q. Under marginal-cost pricing, what is its operating result?",
+        "options": [
+          "An economic loss of $900",
+          "Zero economic profit",
+          "Economic profit of $900",
+          "The unregulated monopoly profit"
+        ],
+        "skills": [
+          "marginal_cost_regulation"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Evaluate",
+    "proposedLabel": "Evaluate monopoly regulation and price discrimination",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "P62G-MON-E-026",
+        "task": "Rent seeking occurs when resources are used to:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "rent_seeking"
+        ]
+      },
+      {
+        "questionId": "PM6-MON-E-039",
+        "task": "If firms spend resources lobbying for an exclusive monopoly privilege, those expenditures are an example of:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "rent_seeking"
+        ]
+      },
+      {
+        "questionId": "P62G-MON-H-021",
+        "task": "A natural monopoly has MC=$12, fixed cost $900, and demand P=100−1.2Q. Under marginal-cost pricing, what is its operating result?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "marginal_cost_regulation"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P62G-MON-L-045",
+      "stem": "Suppose Aurora Port spends $125 lobbying to preserve its exclusive franchise. How should that spending enter welfare analysis?",
+      "type": "legendary",
+      "difficulty": "legendary",
+      "options": [
+        "As an additional real resource cost of maintaining monopoly power",
+        "As consumer surplus",
+        "As a transfer that never affects total surplus",
+        "As a reduction in marginal cost"
+      ],
+      "skills": [
+        "rent_seeking"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "micro"
+    ],
+    "conceptId": "monopoly",
+    "conceptName": "Monopoly",
+    "outcomeId": "monopoly-welfare",
+    "oldLabel": "Compare monopoly and competitive welfare",
+    "skillIds": [
+      "allocative_inefficiency",
+      "competitive_monopoly_comparison",
+      "consumer_surplus_monopoly",
+      "monopoly_deadweight_loss"
+    ],
+    "visible": true,
+    "eligibleCount": 81,
+    "representativeQuestions": [
+      {
+        "id": "P62G-MON-E-023",
+        "type": "concept",
+        "difficulty": "easy",
+        "stem": "Compared with perfect competition, a single-price monopoly generally charges:",
+        "options": [
+          "A lower price and produces a higher quantity",
+          "The same price and quantity",
+          "A higher price and produces a lower quantity",
+          "A price equal to minimum ATC"
+        ],
+        "skills": [
+          "competitive_monopoly_comparison"
+        ]
+      },
+      {
+        "id": "PM6-MON-E-036",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "Compared with an otherwise similar competitive market, a single-price monopoly typically produces:",
+        "options": [
+          "Less output at a lower price",
+          "Less output at a higher price",
+          "More output at a lower price",
+          "The same output at the same price"
+        ],
+        "skills": [
+          "competitive_monopoly_comparison"
+        ]
+      },
+      {
+        "id": "P62G-MON-H-011",
+        "type": "analysis",
+        "difficulty": "hard",
+        "stem": "Refer to the graph. Q1 is monopoly output and Q2 is the D=MC quantity. The interval from Q1 to Q2 consists of units for which:",
+        "options": [
+          "Marginal revenue exceeds demand",
+          "Average total cost is necessarily falling",
+          "Buyer willingness to pay exceeds marginal cost",
+          "Price discrimination is impossible"
+        ],
+        "skills": [
+          "monopoly_deadweight_loss"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Compare",
+    "proposedLabel": "Compare monopoly and competitive welfare",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "P62G-MON-E-023",
+        "task": "Compared with perfect competition, a single-price monopoly generally charges:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "competitive_monopoly_comparison"
+        ]
+      },
+      {
+        "questionId": "PM6-MON-E-036",
+        "task": "Compared with an otherwise similar competitive market, a single-price monopoly typically produces:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "competitive_monopoly_comparison"
+        ]
+      },
+      {
+        "questionId": "P62G-MON-H-011",
+        "task": "Refer to the graph. Q1 is monopoly output and Q2 is the D=MC quantity. The interval from Q1 to Q2 consists of units for which:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "monopoly_deadweight_loss"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P62G-MON-L-043",
+      "stem": "Aurora Port would produce Qc=36.36 under the P=MC benchmark but chooses Qm=19.05 as a monopoly. Which units generate the standard DWL?",
+      "type": "legendary",
+      "difficulty": "legendary",
+      "options": [
+        "All units from zero to Qm",
+        "Only units where MR is negative",
+        "Units between Qm and Qc for which demand exceeds MC",
+        "Units beyond Qc where MC exceeds demand"
+      ],
+      "skills": [
+        "monopoly_deadweight_loss"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "micro"
+    ],
+    "conceptId": "monopoly",
+    "conceptName": "Monopoly",
+    "outcomeId": "monopoly-profit",
+    "oldLabel": "Analyze monopoly profit, loss, and shutdown",
+    "skillIds": [
+      "monopoly_loss",
+      "monopoly_profit",
+      "monopoly_shutdown",
+      "persistent_economic_profit"
+    ],
+    "visible": true,
+    "eligibleCount": 97,
+    "representativeQuestions": [
+      {
+        "id": "P62G-MON-E-019",
+        "type": "concept",
+        "difficulty": "easy",
+        "stem": "Monopoly profit per unit equals:",
+        "options": [
+          "Price minus marginal cost",
+          "Marginal revenue minus average variable cost",
+          "Price minus average total cost",
+          "Total revenue minus quantity"
+        ],
+        "skills": [
+          "monopoly_profit"
+        ]
+      },
+      {
+        "id": "PM6-MON-E-029",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "A monopolist charges $50, has ATC=$38, and sells 100 units. What is total economic profit?",
+        "options": [
+          "$1,200",
+          "$5,000",
+          "$3,800",
+          "$12"
+        ],
+        "skills": [
+          "monopoly_profit"
+        ]
+      },
+      {
+        "id": "P62G-MON-H-002",
+        "type": "analysis",
+        "difficulty": "hard",
+        "stem": "Refer to the graph. Which comparison determines whether the monopolist earns economic profit at Q1?",
+        "options": [
+          "P1 compared with MC at Q1",
+          "P1 compared with ATC at Q1",
+          "MR compared with demand at Q1",
+          "ATC compared with AVC at zero output"
+        ],
+        "skills": [
+          "monopoly_profit"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Analyze",
+    "proposedLabel": "Analyze monopoly profit, loss, and shutdown",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "P62G-MON-E-019",
+        "task": "Monopoly profit per unit equals:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "monopoly_profit"
+        ]
+      },
+      {
+        "questionId": "PM6-MON-E-029",
+        "task": "A monopolist charges $50, has ATC=$38, and sells 100 units. What is total economic profit?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "monopoly_profit"
+        ]
+      },
+      {
+        "questionId": "P62G-MON-H-002",
+        "task": "Refer to the graph. Which comparison determines whether the monopolist earns economic profit at Q1?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "monopoly_profit"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P62G-MON-L-020",
+      "stem": "At Summit Utility’s optimum, Q=20.71, P=$66.59, ATC=$36.11, and AVC=$22.59. What is the correct short-run result?",
+      "type": "legendary",
+      "difficulty": "legendary",
+      "options": [
+        "Profit of $857.47",
+        "Economic loss of $631.06",
+        "Zero economic profit",
+        "Economic profit of $631.06"
+      ],
+      "skills": [
+        "monopoly_profit"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "macro"
+    ],
+    "conceptId": "quantity-theory-of-money",
+    "conceptName": "Quantity Theory of Money",
+    "outcomeId": "quantity-theory-of-money-quantity-equation",
+    "oldLabel": "Apply the quantity equation and interpret money-market adjustment",
+    "skillIds": [
+      "analyze_contractionary_money_graph",
+      "analyze_md_shift_and_convert_to_price_level",
+      "analyze_money_demand_shift",
+      "apply_quantity_theory",
+      "calculate_price_level",
+      "calculate_value_of_money",
+      "calculate_velocity",
+      "compare_price_levels",
+      "connect_graph_result_to_quantity_equation",
+      "connect_graph_to_quantity_equation",
+      "connect_graph_to_quantity_theory",
+      "connect_money_graph_to_quantity_equation",
+      "connect_price_level_money_value",
+      "convert_money_value_to_price_level",
+      "convert_multiple_value_of_money_points_to_price_level",
+      "convert_value_of_money_to_price_level",
+      "correct_axis_and_curve_misreading",
+      "correct_graph_misinterpretation",
+      "diagnose_money_market_adjustment",
+      "distinguish_ms_shift_from_md_shift",
+      "excess_money_supply",
+      "explain_adjustment_process",
+      "explain_curve_slope",
+      "explain_graph_disequilibrium_adjustment",
+      "identify_core_prediction",
+      "identify_curve",
+      "identify_formula",
+      "identify_formula_component",
+      "identify_quantity_equation",
+      "identify_shift_result",
+      "infer_inverse_relationship",
+      "interpret_graph_shift",
+      "inverse_relationship",
+      "money_demand",
+      "money_supply",
+      "money_supply_decrease",
+      "money_supply_fixed",
+      "money_supply_increase",
+      "money_supply_shift",
+      "nominal_gdp",
+      "output",
+      "predict_direction",
+      "price_adjustment",
+      "price_level",
+      "purchasing_power",
+      "quantity_equation",
+      "quantity_equation_output_price_tradeoff",
+      "read_axis",
+      "read_graph_and_convert_value_to_price",
+      "read_graph_convert_value_to_price_and_interpret",
+      "reverse_graph_shift",
+      "scarcity",
+      "solve_quantity_equation",
+      "solve_quantity_equation_for_p",
+      "solve_velocity_formula",
+      "spending",
+      "trace_monetary_injection_graph",
+      "use_quantity_equation",
+      "value_of_money",
+      "value_of_money_formula",
+      "velocity",
+      "velocity_definition"
+    ],
+    "visible": true,
+    "eligibleCount": 52,
+    "representativeQuestions": [
+      {
+        "id": "ECON-SP-EASY-13",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "In the quantity equation MV = PY, what does PY represent?",
+        "options": [
+          "Real GDP",
+          "Nominal GDP",
+          "Money demand",
+          "Bank reserves"
+        ],
+        "skills": [
+          "quantity_equation"
+        ]
+      },
+      {
+        "id": "ECON-SP-EASY-16",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "If the price level rises, what happens to the value of money?",
+        "options": [
+          "It rises",
+          "It stays fixed",
+          "It falls",
+          "It becomes real GDP"
+        ],
+        "skills": [
+          "value_of_money"
+        ]
+      },
+      {
+        "id": "LG-Q-19",
+        "type": "relationship",
+        "difficulty": "easy",
+        "stem": "If the price level rises, the value of money",
+        "options": [
+          "falls",
+          "rises",
+          "stays constant",
+          "becomes equal to velocity"
+        ],
+        "skills": [
+          "predict_direction",
+          "inverse_relationship"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Apply",
+    "proposedLabel": "Apply the quantity equation and interpret money-market adjustment",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-SP-EASY-13",
+        "task": "In the quantity equation MV = PY, what does PY represent?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "quantity_equation"
+        ]
+      },
+      {
+        "questionId": "ECON-SP-EASY-16",
+        "task": "If the price level rises, what happens to the value of money?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "value_of_money"
+        ]
+      },
+      {
+        "questionId": "LG-Q-19",
+        "task": "If the price level rises, the value of money",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "predict_direction",
+          "inverse_relationship"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "LG-Q-9025",
+      "stem": "Money supply shifts from MS1 to MS2. If the value of money falls from 1/2 to 1/4, which price-level change and interpretation are correct?",
+      "type": "legendary_graph_calculation",
+      "difficulty": "legendary",
+      "options": [
+        "P rises from 2 to 4; each dollar buys half as much.",
+        "P falls from 2 to 4; each dollar buys twice as much.",
+        "P rises from 1/2 to 1/4; each dollar buys more.",
+        "P stays at 2 because only money supply shifted."
+      ],
+      "skills": [
+        "read_graph_convert_value_to_price_and_interpret",
+        "value_of_money",
+        "price_level",
+        "purchasing_power"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "macro"
+    ],
+    "conceptId": "quantity-theory-of-money",
+    "conceptName": "Quantity Theory of Money",
+    "outcomeId": "quantity-theory-of-money-growth-inflation",
+    "oldLabel": "Connect money growth, output growth, velocity, and inflation",
+    "skillIds": [
+      "advanced_quantity_growth_calculation",
+      "apply_quantity_equation_growth_form",
+      "apply_quantity_equation_growth_rates",
+      "apply_quantity_equation_with_velocity_change",
+      "basic_quantity_growth_calculation",
+      "calculate_inflation_from_quantity_equation",
+      "compare_price_levels_across_years",
+      "inflation",
+      "monetary_neutrality",
+      "money_growth",
+      "money_growth_inflation_link",
+      "money_growth_to_inflation",
+      "nominal_gdp_growth_from_mv",
+      "output_growth",
+      "predict_long_run_result",
+      "price_level_change_vs_inflation",
+      "quantity_equation_with_velocity_change",
+      "quantity_theory_growth_rates",
+      "quantity_theory_long_run_neutrality",
+      "solve_price_level_across_multiple_changes",
+      "solve_quantity_equation_across_changes",
+      "synthesize_long_run_money_logic",
+      "velocity_growth"
+    ],
+    "visible": true,
+    "eligibleCount": 20,
+    "representativeQuestions": [
+      {
+        "id": "ECON-SP-EASY-15",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "If the money supply rises while velocity and output are unchanged, the quantity theory predicts that:",
+        "options": [
+          "Real output doubles",
+          "The price level rises",
+          "Velocity becomes zero",
+          "The price level falls"
+        ],
+        "skills": [
+          "money_growth_to_inflation"
+        ]
+      },
+      {
+        "id": "LG-Q-133",
+        "type": "concept_application",
+        "difficulty": "medium",
+        "stem": "If central bank money growth continues year after year faster than real output growth, the likely long-run result is",
+        "options": [
+          "ongoing inflation",
+          "permanent unemployment below zero",
+          "a permanent fall in all nominal wages",
+          "no change in prices"
+        ],
+        "skills": [
+          "predict_long_run_result",
+          "money_growth",
+          "inflation"
+        ]
+      },
+      {
+        "id": "LG-Q-255",
+        "type": "synthesis",
+        "difficulty": "hard",
+        "stem": "Which statement best combines quantity theory and monetary neutrality?",
+        "options": [
+          "Money growth mainly affects prices in the long run, while real output depends on real factors.",
+          "Money growth permanently raises real output and leaves prices unchanged.",
+          "Money growth lowers all nominal variables and raises real wages.",
+          "Money growth has no effect on nominal or real variables."
+        ],
+        "skills": [
+          "synthesize_long_run_money_logic",
+          "inflation",
+          "monetary_neutrality"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Connect",
+    "proposedLabel": "Connect money growth, output growth, velocity, and inflation",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-SP-EASY-15",
+        "task": "If the money supply rises while velocity and output are unchanged, the quantity theory predicts that:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "money_growth_to_inflation"
+        ]
+      },
+      {
+        "questionId": "LG-Q-133",
+        "task": "If central bank money growth continues year after year faster than real output growth, the likely long-run result is",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "predict_long_run_result",
+          "money_growth",
+          "inflation"
+        ]
+      },
+      {
+        "questionId": "LG-Q-255",
+        "task": "Which statement best combines quantity theory and monetary neutrality?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "synthesize_long_run_money_logic",
+          "inflation",
+          "monetary_neutrality"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "LG-Q-9031",
+      "stem": "An economy plans for real output to grow 4 percent and the price level to grow 2 percent over one year. A payments change is expected to reduce velocity by 3 percent. Using the exact multiplicative quantity equation, approximately what money-growth rate meets both targets, and why would simply adding 2 and 4 be insufficient?",
+      "type": "legendary_growth_rate_calculation",
+      "difficulty": "legendary",
+      "options": [
+        "9.36 percent; money must also offset the velocity decline.",
+        "6 percent; velocity has no effect when output growth is given.",
+        "3 percent; declining velocity reduces the money needed.",
+        "9 percent exactly; percentage growth rates always add exactly."
+      ],
+      "skills": [
+        "apply_quantity_equation_growth_form",
+        "money_growth",
+        "velocity_growth",
+        "output_growth"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "macro"
+    ],
+    "conceptId": "real-versus-nominal-gdp",
+    "conceptName": "Real versus Nominal GDP",
+    "outcomeId": "real-versus-nominal-gdp-measurement",
+    "oldLabel": "Distinguish nominal and real GDP and calculate the GDP deflator.",
+    "skillIds": [
+      "gdp_deflator",
+      "gdp_deflator_growth",
+      "gdp_welfare_scope",
+      "nominal_vs_real_gdp",
+      "price_output_decomposition",
+      "real_gdp_calculation",
+      "real_growth_rate"
+    ],
+    "visible": true,
+    "eligibleCount": 49,
+    "representativeQuestions": [
+      {
+        "id": "ECON-NL-EASY-16",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "Nominal GDP values output using:",
+        "options": [
+          "Current-year prices",
+          "Base-year prices",
+          "Only imported prices",
+          "Only wage rates"
+        ],
+        "skills": [
+          "nominal_vs_real_gdp",
+          "gdp_deflator"
+        ]
+      },
+      {
+        "id": "ECON-NL-EASY-18",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "If nominal GDP rises but real GDP does not, what likely happened?",
+        "options": [
+          "Prices rose but actual output did not",
+          "Actual output rose but prices fell",
+          "Imports disappeared",
+          "Unemployment must be zero"
+        ],
+        "skills": [
+          "gdp_deflator",
+          "nominal_vs_real_gdp"
+        ]
+      },
+      {
+        "id": "PM2B1-RNGDP-E-001",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "Quantity is unchanged, but the current price of the only final good falls. With the same base year, what happens?",
+        "options": [
+          "Nominal GDP falls while real GDP is unchanged",
+          "Both nominal and real GDP fall",
+          "Nominal GDP is unchanged while real GDP falls",
+          "Both measures remain unchanged"
+        ],
+        "skills": [
+          "price_output_decomposition"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Distinguish",
+    "proposedLabel": "Distinguish nominal and real GDP and calculate the GDP deflator.",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-NL-EASY-16",
+        "task": "Nominal GDP values output using:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "nominal_vs_real_gdp",
+          "gdp_deflator"
+        ]
+      },
+      {
+        "questionId": "ECON-NL-EASY-18",
+        "task": "If nominal GDP rises but real GDP does not, what likely happened?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "gdp_deflator",
+          "nominal_vs_real_gdp"
+        ]
+      },
+      {
+        "questionId": "PM2B1-RNGDP-E-001",
+        "task": "Quantity is unchanged, but the current price of the only final good falls. With the same base year, what happens?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "price_output_decomposition"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "ECON-NL-LEGENDARY-9005",
+      "stem": "A country’s nominal GDP is $468 billion and its deflator is 130. Next year real GDP rises 10%, but nominal GDP is $475.2 billion. Which new deflator and interpretation reconcile these facts?",
+      "type": "calculation",
+      "difficulty": "legendary",
+      "options": [
+        "120; real output rises while the domestic price level falls",
+        "132; nominal and real growth must move together",
+        "145.2; add real growth to the old deflator",
+        "120; the lower deflator proves real production fell"
+      ],
+      "skills": [
+        "gdp_deflator",
+        "nominal_vs_real_gdp"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "macro"
+    ],
+    "conceptId": "scarcity-and-tradeoffs",
+    "conceptName": "Scarcity and Tradeoffs",
+    "outcomeId": "scarcity-and-tradeoffs-scarcity-choice",
+    "oldLabel": "Explain scarcity, tradeoffs, and opportunity cost",
+    "skillIds": [
+      "core_scarcity",
+      "core_tradeoffs",
+      "opportunity_cost",
+      "scarcity",
+      "scarcity_definition",
+      "tradeoff_identification"
+    ],
+    "visible": true,
+    "eligibleCount": 55,
+    "representativeQuestions": [
+      {
+        "id": "ECON-MG-EASY-1",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "A community has one available parcel and can build either an elementary school or a recreation complex this year, but not both. What is illustrated most directly?",
+        "options": [
+          "Scarcity, because one limited parcel has competing valued uses",
+          "A shortage, because the community temporarily ran out of buildings",
+          "Equality, because both projects would serve the same residents",
+          "Abundance, because the parcel can support at least one project"
+        ],
+        "skills": [
+          "scarcity_definition",
+          "tradeoff_identification"
+        ]
+      },
+      {
+        "id": "ECON-MG-EASY-2",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "A student can either study for an exam or work a shift, but not both. What does this illustrate?",
+        "options": [
+          "A tradeoff",
+          "A tax wedge",
+          "A price ceiling",
+          "A surplus"
+        ],
+        "skills": [
+          "tradeoff_identification",
+          "scarcity_definition"
+        ]
+      },
+      {
+        "id": "P52A-SCAR-M-001",
+        "type": "scenario",
+        "difficulty": "medium",
+        "stem": "A city can fund either a new fire station or several neighborhood parks with the same budget. This illustrates:",
+        "options": [
+          "A tradeoff created by competing uses of a limited city budget",
+          "An end to scarcity created by collecting and spending local taxes",
+          "A temporary shortage produced by fixing a public-service price",
+          "A specialization gain created by assigning each project to a district"
+        ],
+        "skills": [
+          "tradeoff_identification"
+        ]
+      }
+    ],
+    "status": "REWORD",
+    "recommendedVerb": "Identify",
+    "proposedLabel": "Identify scarcity, tradeoffs, and opportunity cost",
+    "reason": "Representative tasks identify the binding choice and forgone alternative; avoid overstating analysis in this core slice.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-MG-EASY-1",
+        "task": "A community has one available parcel and can build either an elementary school or a recreation complex this year, but not both. What is illustrated most directly?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "scarcity_definition",
+          "tradeoff_identification"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-EASY-2",
+        "task": "A student can either study for an exam or work a shift, but not both. What does this illustrate?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "tradeoff_identification",
+          "scarcity_definition"
+        ]
+      },
+      {
+        "questionId": "P52A-SCAR-M-001",
+        "task": "A city can fund either a new fire station or several neighborhood parks with the same budget. This illustrates:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "tradeoff_identification"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P52A-SCAR-L-002",
+      "stem": "A government can increase disaster preparedness by diverting engineers from current infrastructure repairs. The preparedness program is highly valuable. What still follows?",
+      "type": "multi-step",
+      "difficulty": "legendary",
+      "options": [
+        "Public projects do not compete for scarce inputs",
+        "Its value does not remove the tradeoff created by limited engineering capacity.",
+        "Only money, not skilled labor, can be scarce",
+        "A highly valuable program has no resource cost."
+      ],
+      "skills": [
+        "tradeoff_identification"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "macro"
+    ],
+    "conceptId": "scarcity-and-tradeoffs",
+    "conceptName": "Scarcity and Tradeoffs",
+    "outcomeId": "scarcity-and-tradeoffs-policy-tradeoffs",
+    "oldLabel": "Evaluate efficiency, equity, and policy tradeoffs",
+    "skillIds": [
+      "core_policy_tradeoffs",
+      "efficiency_definition",
+      "efficiency_equity_policy_tradeoff",
+      "efficiency_equity_tradeoff",
+      "efficiency_vs_equality",
+      "equality_definition",
+      "equality_vs_efficiency",
+      "labor_surplus",
+      "minimum_wage",
+      "policy_tradeoff_analysis",
+      "positive_vs_normative"
+    ],
+    "visible": true,
+    "eligibleCount": 36,
+    "representativeQuestions": [
+      {
+        "id": "ECON-MG-EASY-16",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "A clinic assigns its limited nurse-hours to the cases expected to produce the greatest total health benefit. Which goal is the clinic emphasizing?",
+        "options": [
+          "Efficiency in the use of its limited clinical resources",
+          "Equality through identical treatment time for every patient",
+          "Abundance because the clinic can schedule some patients",
+          "A shortage caused by setting the price of care too low"
+        ],
+        "skills": [
+          "efficiency_definition",
+          "equality_vs_efficiency"
+        ]
+      },
+      {
+        "id": "P52A-SCAR-M-003",
+        "type": "comparison",
+        "difficulty": "medium",
+        "stem": "Which statement best distinguishes efficiency from equality?",
+        "options": [
+          "Efficiency concerns total value; equality concerns its distribution",
+          "Efficiency requires equal shares; equality requires maximum output",
+          "Efficiency and equality describe the same resource-allocation goal",
+          "Efficiency concerns prices; equality concerns physical production"
+        ],
+        "skills": [
+          "efficiency_equity_tradeoff"
+        ]
+      },
+      {
+        "id": "P71-SCAR-M-003",
+        "type": "scenario",
+        "difficulty": "medium",
+        "stem": "A transit agency moves buses from a lightly used route to an overcrowded route. Which statement best captures the tradeoff?",
+        "options": [
+          "Crowded-route riders gain capacity while other riders lose service frequency",
+          "The transfer creates more buses because average ridership rises",
+          "Public ownership means the routes do not compete for vehicles",
+          "The agency eliminates scarcity by serving the larger group first"
+        ],
+        "skills": [
+          "policy_tradeoff_analysis"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Evaluate",
+    "proposedLabel": "Evaluate efficiency, equity, and policy tradeoffs",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-MG-EASY-16",
+        "task": "A clinic assigns its limited nurse-hours to the cases expected to produce the greatest total health benefit. Which goal is the clinic emphasizing?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "efficiency_definition",
+          "equality_vs_efficiency"
+        ]
+      },
+      {
+        "questionId": "P52A-SCAR-M-003",
+        "task": "Which statement best distinguishes efficiency from equality?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "efficiency_equity_tradeoff"
+        ]
+      },
+      {
+        "questionId": "P71-SCAR-M-003",
+        "task": "A transit agency moves buses from a lightly used route to an overcrowded route. Which statement best captures the tradeoff?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "policy_tradeoff_analysis"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "ECON-MG-LEGENDARY-9051",
+      "stem": "A wage floor raises pay for workers who keep jobs but reduces entry-level openings. Which economic idea best frames the policy debate?",
+      "type": "synthesis",
+      "difficulty": "legendary",
+      "options": [
+        "An efficiency-equity tradeoff",
+        "A movement along the PPF with no opportunity cost",
+        "A nonbinding ceiling",
+        "A fixed CPI basket"
+      ],
+      "skills": [
+        "efficiency_equity_tradeoff",
+        "minimum_wage",
+        "labor_surplus"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "supply",
+    "conceptName": "Supply",
+    "outcomeId": "supply-core-behavior",
+    "oldLabel": "Explain the law of supply and distinguish movements from shifts",
+    "skillIds": [
+      "law_of_supply",
+      "movement_vs_supply_shift",
+      "supply_shift_and_movement"
+    ],
+    "visible": true,
+    "eligibleCount": 19,
+    "representativeQuestions": [
+      {
+        "id": "ECON-MG-EASY-46",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "The law of supply says that, other things equal:",
+        "options": [
+          "As price rises, quantity supplied rises",
+          "As price rises, demand rises",
+          "As price falls, quantity supplied rises",
+          "As price falls, supply shifts right"
+        ],
+        "skills": [
+          "law_of_supply",
+          "movement_vs_supply_shift"
+        ]
+      },
+      {
+        "id": "ECON-MG-EASY-47",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "If the price of a good rises, what happens to quantity supplied?",
+        "options": [
+          "Quantity supplied increases",
+          "Supply decreases",
+          "Demand increases",
+          "The supply curve shifts left"
+        ],
+        "skills": [
+          "movement_vs_supply_shift",
+          "law_of_supply"
+        ]
+      },
+      {
+        "id": "ECON-MG-HARD-220",
+        "type": "trap",
+        "difficulty": "hard",
+        "stem": "The price of handmade tables rises, and sellers produce more tables. What happened?",
+        "options": [
+          "Quantity supplied increased",
+          "Supply increased",
+          "Demand increased",
+          "Supply shifted right"
+        ],
+        "skills": [
+          "movement_vs_supply_shift",
+          "law_of_supply"
+        ]
+      }
+    ],
+    "status": "REWORD",
+    "recommendedVerb": "Apply",
+    "proposedLabel": "Apply the law of supply and distinguish movements from shifts",
+    "reason": "Students choose price–quantity responses and classify movements versus shifted supply.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-MG-EASY-46",
+        "task": "The law of supply says that, other things equal:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "law_of_supply",
+          "movement_vs_supply_shift"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-EASY-47",
+        "task": "If the price of a good rises, what happens to quantity supplied?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "movement_vs_supply_shift",
+          "law_of_supply"
+        ]
+      },
+      {
+        "questionId": "ECON-MG-HARD-220",
+        "task": "The price of handmade tables rises, and sellers produce more tables. What happened?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "movement_vs_supply_shift",
+          "law_of_supply"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "PG1-SUP-L-001",
+      "stem": "Refer to the graph. A producer says the move from A to B proves that supply increased by 125 thousand units. What is the correct diagnosis?",
+      "type": "multi-step",
+      "difficulty": "legendary",
+      "options": [
+        "Any quantity increase counts as an increase in supply.",
+        "A and B show a leftward shift of the supply curve.",
+        "The higher quantity means the demand curve shifted right.",
+        "It is more quantity supplied, not an increase in supply."
+      ],
+      "skills": [
+        "movement_vs_supply_shift",
+        "law_of_supply"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "supply",
+    "conceptName": "Supply",
+    "outcomeId": "supply-shifters",
+    "oldLabel": "Analyze supply shifters, aggregation, and combined market effects",
+    "skillIds": [
+      "demand_shift_equilibrium_prediction",
+      "equilibrium_comparison",
+      "equilibrium_prediction",
+      "market_supply_aggregation",
+      "market_supply_multiple_shifters",
+      "multiple_supply_shifters",
+      "net_marginal_cost_supply_shift",
+      "number_of_sellers_calculation",
+      "short_run_long_run_supply_response",
+      "subsidy_as_supply_shifter",
+      "supply_expectations_timing",
+      "supply_shift_analysis",
+      "supply_shift_direction",
+      "supply_shift_equilibrium_prediction",
+      "supply_shifters",
+      "supply_shifters_expectations",
+      "supply_shifters_input_costs",
+      "supply_shifters_number_of_sellers",
+      "supply_shifters_technology",
+      "tax_as_supply_shifter"
+    ],
+    "visible": true,
+    "eligibleCount": 43,
+    "representativeQuestions": [
+      {
+        "id": "ECON-MG-EASY-49",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "If the cost of steel rises for car producers, what happens to the supply of cars?",
+        "options": [
+          "Supply decreases",
+          "Supply increases",
+          "Demand decreases",
+          "Quantity demanded increases"
+        ],
+        "skills": [
+          "supply_shifters_input_costs",
+          "supply_shift_direction"
+        ]
+      },
+      {
+        "id": "P52B-S2-SUP-E-001",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "Market supply at a given price is the:",
+        "options": [
+          "Sum of the quantities all sellers are willing and able to offer.",
+          "Quantity supplied by the single largest seller at that price.",
+          "Average quantity each seller plans to produce at that price.",
+          "Total quantity buyers are willing and able to purchase at that price."
+        ],
+        "skills": [
+          "market_supply_aggregation"
+        ]
+      },
+      {
+        "id": "PG1-SUP-E-001",
+        "type": "graph",
+        "difficulty": "easy",
+        "stem": "On the displayed coffee supply curve, what price and quantity are shown at point A?",
+        "options": [
+          "$11 and 225 thousand units",
+          "$6 and 225 thousand units",
+          "$6 and 100 thousand units",
+          "$2 and 100 thousand units"
+        ],
+        "skills": [
+          "supply_shift_analysis"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Analyze",
+    "proposedLabel": "Analyze supply shifters, aggregation, and combined market effects",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-MG-EASY-49",
+        "task": "If the cost of steel rises for car producers, what happens to the supply of cars?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "supply_shifters_input_costs",
+          "supply_shift_direction"
+        ]
+      },
+      {
+        "questionId": "P52B-S2-SUP-E-001",
+        "task": "Market supply at a given price is the:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "market_supply_aggregation"
+        ]
+      },
+      {
+        "questionId": "PG1-SUP-E-001",
+        "task": "On the displayed coffee supply curve, what price and quantity are shown at point A?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "supply_shift_analysis"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P52B-S2-SUP-L-001",
+      "stem": "At $30, three sellers offer 12, 18, and 25 units; at $35 they offer 16, 24, and 30 units. Calculate both market quantities and infer what the comparison represents.",
+      "type": "calculation",
+      "difficulty": "legendary",
+      "options": [
+        "Market quantity rises from 55 to 70 units, representing movement along market supply",
+        "Market supply shifts right from 55 to 70 units because the number of sellers increases",
+        "Market quantity falls from 70 to 55 units, representing movement down market supply",
+        "Market supply shifts left by 15 units because individual quantities are aggregated vertically"
+      ],
+      "skills": [
+        "market_supply_aggregation"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "tariffs-revenue-deadweight-loss",
+    "conceptName": "Tariffs, Revenue & Deadweight Loss",
+    "outcomeId": "tariffs-revenue-deadweight-loss-welfare",
+    "oldLabel": "Analyze tariff revenue, surplus, and deadweight loss",
+    "skillIds": [
+      "consumer_surplus_trade",
+      "consumption_distortion",
+      "producer_surplus_trade",
+      "production_distortion",
+      "tariff_revenue",
+      "tariff_welfare_effect",
+      "trade_policy_evaluation"
+    ],
+    "visible": true,
+    "eligibleCount": 60,
+    "representativeQuestions": [
+      {
+        "id": "P62D-ITP-E-019",
+        "type": "concept",
+        "difficulty": "easy",
+        "stem": "Tariff revenue equals:",
+        "options": [
+          "Domestic price multiplied by domestic production",
+          "Consumer surplus minus producer surplus",
+          "Tariff per imported unit multiplied by the number of imported units",
+          "The two tariff deadweight-loss triangles"
+        ],
+        "skills": [
+          "tariff_revenue"
+        ]
+      },
+      {
+        "id": "PMA-ITP-E-020",
+        "type": "application",
+        "difficulty": "easy",
+        "stem": "Government tariff revenue is generated by:",
+        "options": [
+          "The tariff multiplied by domestic consumption whether imported or not",
+          "The tariff per imported unit multiplied by the quantity imported",
+          "The world price multiplied by domestic production",
+          "Consumer surplus multiplied by producer surplus"
+        ],
+        "skills": [
+          "tariff_revenue"
+        ]
+      },
+      {
+        "id": "PMA-ITP-M-022",
+        "type": "analysis",
+        "difficulty": "medium",
+        "stem": "A $3 tariff is collected on 40 imported units. How much tariff revenue does the government receive?",
+        "options": [
+          "$43",
+          "$37",
+          "$12",
+          "$120"
+        ],
+        "skills": [
+          "tariff_revenue"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Analyze",
+    "proposedLabel": "Analyze tariff revenue, surplus, and deadweight loss",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "P62D-ITP-E-019",
+        "task": "Tariff revenue equals:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "tariff_revenue"
+        ]
+      },
+      {
+        "questionId": "PMA-ITP-E-020",
+        "task": "Government tariff revenue is generated by:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "tariff_revenue"
+        ]
+      },
+      {
+        "questionId": "PMA-ITP-M-022",
+        "task": "A $3 tariff is collected on 40 imported units. How much tariff revenue does the government receive?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "tariff_revenue"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P62D-ITP-L-062",
+      "stem": "In Arden, a small-country tariff cuts imports from 40 to 24. Straight domestic supply and demand each change by one unit for every $1 price change. A report calls all $368 of consumer loss deadweight loss. What is the correct correction?",
+      "type": "legendary",
+      "difficulty": "legendary",
+      "options": [
+        "The tariff is $8; all $368 is destroyed because consumers pay it",
+        "The tariff is $8; $192 is government revenue and $112 a producer transfer, leaving $64 destroyed",
+        "The tariff is $16; revenue uses the original 40 imports",
+        "The tariff is $8; the $192 revenue is the entire net welfare loss"
+      ],
+      "skills": [
+        "tariff_welfare_effect",
+        "tariff_revenue"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "general",
+      "micro",
+      "macro"
+    ],
+    "conceptId": "tariffs-revenue-deadweight-loss",
+    "conceptName": "Tariffs, Revenue & Deadweight Loss",
+    "outcomeId": "tariffs-revenue-deadweight-loss-prices-quantities",
+    "oldLabel": "Trace tariffs into domestic prices and traded quantities",
+    "skillIds": [
+      "import_quantity",
+      "integrated_trade_analysis",
+      "tariff_price_effect",
+      "tariff_quantity_effect"
+    ],
+    "visible": true,
+    "eligibleCount": 22,
+    "representativeQuestions": [
+      {
+        "id": "P62D-ITP-E-016",
+        "type": "concept",
+        "difficulty": "easy",
+        "stem": "A tariff is:",
+        "options": [
+          "A legal maximum on exports",
+          "A payment to domestic consumers",
+          "A tax on all domestic production",
+          "A tax on imported goods"
+        ],
+        "skills": [
+          "tariff_price_effect"
+        ]
+      },
+      {
+        "id": "P62D-ITP-E-037",
+        "type": "graph",
+        "difficulty": "easy",
+        "stem": "In the displayed trade graph, what domestic price results from the $4 world price plus the tariff?",
+        "options": [
+          "$6",
+          "$4",
+          "$8",
+          "$10"
+        ],
+        "skills": [
+          "tariff_price_effect"
+        ]
+      },
+      {
+        "id": "P62D-ITP-E-038",
+        "type": "calculation",
+        "difficulty": "easy",
+        "stem": "What is the per-unit tariff shown in the displayed trade graph?",
+        "options": [
+          "$4",
+          "$2",
+          "$6",
+          "$8"
+        ],
+        "skills": [
+          "tariff_price_effect"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Trace",
+    "proposedLabel": "Trace tariffs into domestic prices and traded quantities",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "P62D-ITP-E-016",
+        "task": "A tariff is:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "tariff_price_effect"
+        ]
+      },
+      {
+        "questionId": "P62D-ITP-E-037",
+        "task": "In the displayed trade graph, what domestic price results from the $4 world price plus the tariff?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "tariff_price_effect"
+        ]
+      },
+      {
+        "questionId": "P62D-ITP-E-038",
+        "task": "What is the per-unit tariff shown in the displayed trade graph?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "tariff_price_effect"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "P62D-ITP-L-095",
+      "stem": "Which welfare package correctly describes the tariff in the displayed trade graph relative to free trade?",
+      "type": "synthesis",
+      "difficulty": "legendary",
+      "options": [
+        "Consumers lose $450k; producers gain $150k; government gets $200k; net welfare falls $100k",
+        "Consumers lose $200k; producers gain $200k; government gets $100k; net welfare rises $100k",
+        "Consumers lose $450k; producers gain $450k; government gets $200k; net welfare is unchanged",
+        "Consumers lose $100k; producers gain $150k; government gets $200k; net welfare rises $250k"
+      ],
+      "skills": [
+        "integrated_trade_analysis"
+      ]
+    }
+  },
+  {
+    "courseAreas": [
+      "macro"
+    ],
+    "conceptId": "unemployment-measurement",
+    "conceptName": "Unemployment Measurement",
+    "outcomeId": "unemployment-measurement-labor-force",
+    "oldLabel": "Classify labor-force status and calculate unemployment and participation rates.",
+    "skillIds": [
+      "active_search_requirement",
+      "combined_unemployment_participation_calculation",
+      "discouraged_worker_rate_effect",
+      "discouraged_workers",
+      "employment_classification",
+      "employment_to_unemployment_flow",
+      "frictional_unemployment",
+      "labor_force_calculation",
+      "labor_force_definition",
+      "labor_force_participation",
+      "natural_rate",
+      "structural_unemployment",
+      "underemployment_classification",
+      "unemployment_rate"
+    ],
+    "visible": true,
+    "eligibleCount": 79,
+    "representativeQuestions": [
+      {
+        "id": "ECON-NL-EASY-61",
+        "type": "definition",
+        "difficulty": "easy",
+        "stem": "The labor force equals:",
+        "options": [
+          "Employed plus unemployed",
+          "Adult population plus retirees",
+          "Unemployed plus not in labor force",
+          "Employed minus unemployed"
+        ],
+        "skills": [
+          "labor_force_calculation",
+          "unemployment_rate",
+          "labor_force_participation"
+        ]
+      },
+      {
+        "id": "ECON-NL-EASY-69",
+        "type": "interpretation",
+        "difficulty": "easy",
+        "stem": "A retired person who is not looking for work is classified as:",
+        "options": [
+          "Not in the labor force",
+          "Unemployed",
+          "Employed",
+          "Structurally unemployed"
+        ],
+        "skills": [
+          "employment_classification",
+          "discouraged_workers"
+        ]
+      },
+      {
+        "id": "ECON-NL-EASY-64",
+        "type": "calculation",
+        "difficulty": "easy",
+        "stem": "If 90 people are employed and 10 are unemployed, what is the labor force?",
+        "options": [
+          "100",
+          "90",
+          "10",
+          "80"
+        ],
+        "skills": [
+          "labor_force_calculation",
+          "unemployment_rate",
+          "labor_force_participation"
+        ]
+      }
+    ],
+    "status": "KEEP",
+    "recommendedVerb": "Classify",
+    "proposedLabel": "Classify labor-force status and calculate unemployment and participation rates.",
+    "reason": "The mapped skills and sampled selected-response tasks support the existing observable-performance wording.",
+    "representativeBehaviors": [
+      {
+        "questionId": "ECON-NL-EASY-61",
+        "task": "The labor force equals:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "labor_force_calculation",
+          "unemployment_rate",
+          "labor_force_participation"
+        ]
+      },
+      {
+        "questionId": "ECON-NL-EASY-69",
+        "task": "A retired person who is not looking for work is classified as:",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "employment_classification",
+          "discouraged_workers"
+        ]
+      },
+      {
+        "questionId": "ECON-NL-EASY-64",
+        "task": "If 90 people are employed and 10 are unemployed, what is the labor force?",
+        "response": "Select an answer from the provided options",
+        "mappedSkills": [
+          "labor_force_calculation",
+          "unemployment_rate",
+          "labor_force_participation"
+        ]
+      }
+    ],
+    "advancedQuestion": {
+      "id": "ECON-NL-LEGENDARY-9067",
+      "stem": "A labor survey starts with 132 employed, 12 unemployed and 56 other adults. Then 4 unemployed find jobs, 3 stop searching, 5 outsiders start searching without finding work, and 2 employed retire. All job seekers are available. What are the new unemployment and participation rates?",
+      "type": "multi-step",
+      "difficulty": "legendary",
+      "options": [
+        "About 6.9% unemployment and 72% participation",
+        "About 5% unemployment and 72% participation",
+        "About 6.9% unemployment and 75.5% participation",
+        "About 8.3% unemployment and 72% participation"
+      ],
+      "skills": [
+        "unemployment_rate",
+        "labor_force_calculation",
+        "labor_force_participation"
+      ]
+    }
+  }
+]
