@@ -11,8 +11,8 @@ assert.equal(new Set(names).size,names.length,'Duplicate dictionary fields');
 export function compare(columns,entries){return {missing:columns.filter(n=>!entries.includes(n)),stale:entries.filter(n=>!columns.includes(n))};}
 assert.deepEqual(compare(['a','new'],['a','old']),{missing:['new'],stale:['old']},'Drift detection self-test');
 const results=[];
-for(const build of ['managerial-directorate-classroom','managerial-directorate-telemetry-poc']){
- const adapter=read(`play/${build}/telemetry-client.js`);
+for(const build of ['managerial-directorate-classroom','managerial-directorate-telemetry-poc','managerial-intelligence-directorate']){
+ const adapter=read(`play/${build}/${build === 'managerial-intelligence-directorate' ? 'local-telemetry.js' : 'telemetry-client.js'}`);
  const behavior=adapter.match(/const BEHAVIOR_FIELDS\s*=\s*(\[[^;]+\]);/);assert(behavior,'Behavior schema source missing');
  const install=adapter.match(/function installLocalTelemetryColumns\(\)\{[\s\S]*?\n  \}/);assert(install,'Canonical installer changed: update extraction');
  for(const game of ['cost-directive','market-signal','strategy-desk','agency-protocol']){
@@ -29,4 +29,3 @@ assert.deepEqual([...page.matchAll(/data-field="([^"]+)"/g)].map(m=>m[1]),names,
 for(const f of fields){for(const key of ['name','category','type','units','events','definition','possibleValues','blankMeaning','zeroMeaning','notes','caution'])assert(f[key],`${f.name}: missing ${key}`);for(const key of ['facultyNormallyNeeds','technical'])assert.equal(typeof f[key],'boolean');assert(page.includes(f.definition.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;')),`${f.name}: stale rendered definition`);}
 assert(!/ADMIN_TOKEN|\/admin\/|Bearer\s|api\/anonymous/.test(page),'Administrative instructions exposed');
 console.log(JSON.stringify({status:'PASS',dictionaryFields:names.length,driftSelfTest:'PASS',results},null,2));
-

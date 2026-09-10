@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-09-10T19:20:31.820Z",
+  "passed": 22,
+  "failed": 2,
+  "total": 24,
+  "protectedFiles": 684,
+  "externalHotfix": {
+    "path": "play/economic-realm/index.html",
+    "commit": "a564e61",
+    "reason": "Separate committed Hot fix arrived while this task was paused; preserve it."
+  },
+  "results": [
+    {
+      "name": "Protected files match baseline, with separately committed Principles hotfix preserved",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: play/managerial-directorate-telemetry-poc/telemetry-client.js\n+ actual - expected\n\n+ '9d81fec8330e63171b250aafc8e5ecd081d4751d4fd9e19b18e9f397ebe3f681'\n- '046077760aa62a9bb9527ed69d256f1635933bcfae002757f796268c8900e773'\n\n    at file:///C:/Users/Jennings/Documents/Mastery%20Quests%20Website/tmp/published-managerial/run_validation.mjs:16:272\n    at check (file:///C:/Users/Jennings/Documents/Mastery%20Quests%20Website/tmp/published-managerial/run_validation.mjs:11:29)\n    at file:///C:/Users/Jennings/Documents/Mastery%20Quests%20Website/tmp/published-managerial/run_validation.mjs:15:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "name": "cost-directive existing engine scripts unchanged except warning presentation",
+      "status": "PASS"
+    },
+    {
+      "name": "cost-directive inline JavaScript syntax valid",
+      "status": "PASS"
+    },
+    {
+      "name": "cost-directive one existing menu, no separate Fullscreen, both template cinematics present",
+      "status": "PASS"
+    },
+    {
+      "name": "market-signal existing engine scripts unchanged except warning presentation",
+      "status": "PASS"
+    },
+    {
+      "name": "market-signal inline JavaScript syntax valid",
+      "status": "PASS"
+    },
+    {
+      "name": "market-signal one existing menu, no separate Fullscreen, both template cinematics present",
+      "status": "PASS"
+    },
+    {
+      "name": "strategy-desk existing engine scripts unchanged except warning presentation",
+      "status": "PASS"
+    },
+    {
+      "name": "strategy-desk inline JavaScript syntax valid",
+      "status": "PASS"
+    },
+    {
+      "name": "strategy-desk one existing menu, no separate Fullscreen, both template cinematics present",
+      "status": "PASS"
+    },
+    {
+      "name": "agency-protocol existing engine scripts unchanged except warning presentation",
+      "status": "PASS"
+    },
+    {
+      "name": "agency-protocol inline JavaScript syntax valid",
+      "status": "PASS"
+    },
+    {
+      "name": "agency-protocol one existing menu, no separate Fullscreen, both template cinematics present",
+      "status": "PASS"
+    },
+    {
+      "name": "Daily deterministic core copied verbatim from current Principles/faculty template",
+      "status": "PASS"
+    },
+    {
+      "name": "Shared Managerial adapter syntax valid and no new telemetry dispatch",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(!/sendGameData\\(\\{/.test(source))\n\n    at file:///C:/Users/Jennings/Documents/Mastery%20Quests%20Website/tmp/published-managerial/run_validation.mjs:38:112\n    at check (file:///C:/Users/Jennings/Documents/Mastery%20Quests%20Website/tmp/published-managerial/run_validation.mjs:11:29)\n    at file:///C:/Users/Jennings/Documents/Mastery%20Quests%20Website/tmp/published-managerial/run_validation.mjs:38:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "name": "All proven challenge families retained without boss/currency additions",
+      "status": "PASS"
+    },
+    {
+      "name": "Deterministic local calendar scheduling independent of browser history",
+      "status": "PASS"
+    },
+    {
+      "name": "Graph family disabled without sufficient accessible graph questions",
+      "status": "PASS"
+    },
+    {
+      "name": "correct_answers progress completes once and retains post-completion attempts",
+      "status": "PASS"
+    },
+    {
+      "name": "streak progress completes once and retains post-completion attempts",
+      "status": "PASS"
+    },
+    {
+      "name": "accuracy_window progress completes once and retains post-completion attempts",
+      "status": "PASS"
+    },
+    {
+      "name": "perfect_stretch progress completes once and retains post-completion attempts",
+      "status": "PASS"
+    },
+    {
+      "name": "concept_variety progress completes once and retains post-completion attempts",
+      "status": "PASS"
+    },
+    {
+      "name": "Accuracy completes only at fixed-window end; a failed window restarts",
+      "status": "PASS"
+    }
+  ]
+}

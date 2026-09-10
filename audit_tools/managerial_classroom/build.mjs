@@ -12,6 +12,8 @@ export const read=(root,p)=>fs.readFileSync(path.join(root,p),'utf8');
 function replaceOnce(s,a,b){if(!s.includes(a)||s.indexOf(a)!==s.lastIndexOf(a))throw Error('Expected one match: '+a.slice(0,100));return s.replace(a,b);}
 export function instrumentHTML(root,game){
  let s=read(root,`${publicRoot}/${game}/index.html`),poc=read(root,`${pocRoot}/${game}/index.html`);
+ // The public local adapter and private anonymous adapter must never coexist.
+ s=s.replace(/<script src="\.\.\/local-telemetry\.js"><\/script>\r?\n/,'');
  // Transplant the validated POC hooks at existing award sites, not restoration sites.
  const blocks=[...poc.matchAll(/        const artifactAlreadyOwned = localStorage.getItem\([^\n]+\n[\s\S]*?        recordArtifactAward\([^\n]+\n/g)].map(m=>m[0]);
  if(blocks.length!==(game==='agency-protocol'?6:3))throw Error('Unexpected award sites: '+game);

@@ -3,6 +3,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
 import {classroomClient} from '../managerial_classroom/build.mjs';
+import {sync as syncPublicLocal} from '../published_managerial_parity/sync.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8').replace(/\r\n/g,'\n');
@@ -23,3 +24,5 @@ if(process.argv.includes('--check')){
   fs.writeFileSync(path.join(root,'play/managerial-directorate-classroom/telemetry-client.js'),classroomClient(root));
 }
 console.log('PASS: Composer behavioral helpers and derived classroom client are synchronized.');
+
+syncPublicLocal(root,process.argv.includes('--check'));
