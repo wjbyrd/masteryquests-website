@@ -2,6 +2,8 @@
 
 Audit date: September 10, 2026. Scope: current local source repository at `C:/Users/Jennings/Documents/GitHub/masteryquests-website`. This is a QA/correction pass, not a rebuild of the resource system.
 
+> **Update:** The targeted MACRO-23/MACRO-24 repair below resolves the quantity-theory follow-up. Current status for that repair: **PASS**. Earlier audit findings and counts are retained as historical results.
+
 ## Executive Summary
 
 | Measure | Result |
@@ -294,3 +296,39 @@ A matching report is also saved at [the audit workspace FINAL_REPORT.md](<C:/Use
 ## Final Verdict
 
 **NEEDS FOLLOW-UP** — mappings are correct, 32 PDFs and four stale graph-hash records were corrected, and all regression checks pass. One material editorial decision remains for the two quantity-theory/neutrality illustrations. PDF tagging is a separate nonblocking structural note.
+
+
+## Addendum: MACRO-23 / MACRO-24 Targeted Repair — September 10, 2026
+
+**Final status: PASS.** The quantity-theory/neutrality graph issue recorded above is resolved. This addendum supersedes the earlier NEEDS FOLLOW-UP verdict for that issue. The separate, preexisting PDF-tagging note remains outside this narrow repair.
+
+Both worked examples now hold velocity V and real output Y fixed: M rises from 2,500 to 5,000, value of money (1/P) falls from 2 to 1, and P rises from 0.50 to 1.00, a 100% increase. MACRO-24 explicitly states that prices double while long-run real output does not rise. Each sheet briefly distinguishes money's value from velocity V.
+
+The original `moneys_moneyd.webp` assets are also referenced by question-bank/Composer library content. Those images and all question-bank records remain unchanged. A dedicated resource-sheet asset, `quantity-theory-fixed-v-y.png`, replaces them only on these two sheets. Its curved money-demand schedule follows 1/P = 5000/M, with labeled intersections a = (2,500, 2) and b = (5,000, 1). The existing white background, teal lines, red second supply curve, sheet layout, and filenames are retained.
+
+Files changed in the requested repository during this repair:
+
+- `concept-reviews/MACRO-23.pdf`
+- `concept-reviews/MACRO-24.pdf`
+- `build/faculty-build-composer/data/concept-reviews/MACRO-23.pdf`
+- `build/faculty-build-composer/data/concept-reviews/MACRO-24.pdf`
+- `build/faculty-build-composer/data/concept-reviews/concept_review_source.json` — only the two worked-example texts and their asset records.
+- `build/faculty-build-composer/data/concept-reviews/manifest.json` — regenerated PDF fingerprints/sizes; concept mappings unchanged.
+- `build/faculty-build-composer/data/concept-reviews/concept_review_integration_audit.json` — synchronized fingerprints and totals.
+- `build/faculty-build-composer/data/concept-reviews/assets/quantity-theory-fixed-v-y.png` — new dedicated graph.
+- `FINAL_REPORT.md` — this addendum and a status pointer above the original summary.
+
+Also synchronized the local authoring script [apply_final_editorial_pass.py](<C:/Users/Jennings/Documents/Mastery Quests Website/concept_review_build/apply_final_editorial_pass.py>): its two worked-example overrides now use the corrected math, and these two sheets retain the current authoritative resource-specific asset records during regeneration. No completion-script change was needed; that script does not generate these two sheets.
+
+Validation completed:
+
+- Rebuilt only MACRO-23 and MACRO-24 and visually inspected both full-page Poppler renderings: graph, labels, prose, spacing, and clipping checks pass.
+- Verified one page per PDF, complete rendered worked-example text, and page text bounds.
+- Confirmed reciprocal math: 1/2 = 0.50, 1/1 = 1.00, and (1.00 / 0.50 - 1) x 100 = 100%.
+- Public and Composer PDF copies are byte-identical; graph checksum matches source metadata.
+- All 79 active Macro-selector concepts still resolve to the same 83 resource sheets; zero mapping failures. Manifest concept records are unchanged.
+- Existing concept-review integration suite: **12/12 PASS**. Existing mastery-report concept-review regression suite: **26/26 PASS**. The four previously documented full-library warnings are unchanged.
+- Exercised the edited local editorial generator to verify that both corrected texts and dedicated asset references survive regeneration.
+- Compared all 4,541 tracked repository files against hashes captured at the start of this repair: only the seven intended preexisting resource files changed. The dedicated asset is new. Earlier audit changes were preserved. No unrelated tracked files, question banks, shared question assets, routing, concept IDs, or runtime behavior changed during this pass.
+
+Evidence is retained in the audit workspace under `tmp/macro_quantity_repair/`, including baseline hashes, installation plan, renderings, validation results, and regression output. This is an installed local-repository correction; no deployment or live-site update is claimed.
