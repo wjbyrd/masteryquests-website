@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "description": "Scoped source-of-record corrections for the old quantity-theory graph. Apply after legacy publishing/imports with audit_tools/publish_quantity_theory_repair.mjs. Unlisted records are protected.",
+  "builtin": [
+    {
+      "id": 330,
+      "fields": {
+        "q": "If the value of money falls from 1/2 to 1/4 after the money supply shift, what happens to the price level?",
+        "image": null
+      },
+      "expectedAnswerHash": "e91abcf8cd709b2644a5ec2dbf5fb72dfa49a0307d17781484ff3dfe824fe6fd",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 336,
+      "fields": {
+        "q": "If the price level rises from 2 to 4 after MS shifts right, which statement correctly compares nominal and real effects in the long run?",
+        "image": null
+      },
+      "expectedAnswerHash": "ed46e0328c8ad7746801eb251007c0b374441fe9ccc35a0fe99079288de2f230",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 3002,
+      "fields": {
+        "q": "If money supply shifts right and the value of money falls from 1/2 to 1/4, what happens to the price level?",
+        "image": null
+      },
+      "expectedAnswerHash": "e91abcf8cd709b2644a5ec2dbf5fb72dfa49a0307d17781484ff3dfe824fe6fd",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 9025,
+      "fields": {
+        "q": "Money supply shifts from MS1 to MS2. If the value of money falls from 1/2 to 1/4, which price-level change and interpretation are correct?",
+        "image": null
+      },
+      "expectedAnswerHash": "3a916326978ab3273b6c87578aa0830c1e1114ce5de492958ed8484e0f1e17f1",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 9028,
+      "fields": {
+        "q": "If money demand shifts right while money supply is fixed, and the value of money rises from 1/4 to 1/2, what happens to the price level?",
+        "image": null
+      },
+      "expectedAnswerHash": "6efa7bb67148c418ae757695f736960ae56bb5b8f0ccecbcf17b0922a056fa46",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 9042,
+      "fields": {
+        "q": "If MS shifts right and the price level rises from 2 to 4, what inflation cost would become more likely if firms must repeatedly update prices?",
+        "image": null,
+        "feedback": "A monetary expansion can raise prices. Firms repeatedly changing posted prices incur menu costs."
+      },
+      "expectedAnswerHash": "68fa3d177f4a61b4e426b053c7893ee9467c47e23e433b7beb3a6721414c58bf",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 9049,
+      "fields": {
+        "q": "If the Fed contracts money supply and the value of money rises from 1/4 to 1/2, which statement correctly describes the result?",
+        "image": null
+      },
+      "expectedAnswerHash": "5a2796db1f47f617464b5456291c3a1db0696c4150c845a17687ea18cfec6908",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 9115,
+      "fields": {
+        "q": "Money supply shifts right, and the value of money falls from 1/2 to 1/4. If a worker's nominal wage rises from $20 to $30 during the same period, what happens to the real wage?",
+        "image": null
+      },
+      "expectedAnswerHash": "c4f4857d47114899b366e550829346fa75d9d0bf8b21da9b04219a58aeabd523",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 9116,
+      "fields": {
+        "q": "After MS shifts right, P rises from 2 to 4. If M doubled and Y was constant, what must have happened to velocity for these changes to satisfy the quantity equation?",
+        "image": null
+      },
+      "expectedAnswerHash": "d8cd3a8a25d30f835b068828b6fa82dba57d2a551fdabeb4ed92cad3e54a6c0f",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 9121,
+      "fields": {
+        "q": "If money demand shifts right while MS is fixed and the value of money rises from 1/5 to 1/4, what happens to P, and what inflation term does this imply?",
+        "image": null
+      },
+      "expectedAnswerHash": "ee27a2159c33e1ed72c6a26eec44ac1594cd7f518a33076b81bcc2db89029b38",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 9125,
+      "fields": {
+        "q": "MS shifts right, P rises from 2 to 5, and a fixed nominal debt of $10,000 is repaid. What happens to the real burden of that debt?",
+        "image": null
+      },
+      "expectedAnswerHash": "92068a5aea99fd59f1cef62b75d6e3ed4ac917a4d3a56bc941fa9bb3fe0d2073",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 9126,
+      "fields": {
+        "q": "If the value of money falls from 1 to 1/2, then later to 1/4, what happens to the price level over those two moves?",
+        "image": null
+      },
+      "expectedAnswerHash": "167b09dbeac75fa2afd04809cc945961e9c6616b3bcd47f0069c319674c92682",
+      "reason": "Attached graph shows different numerical values or no stated demand shift; the self-contained numerical scenario supplies the answer."
+    },
+    {
+      "id": 335,
+      "fields": {
+        "image": "quantity-theory-fixed-v-y.png",
+        "imageAlt": "Money supply MS1 at 2,500 and MS2 at 5,000 intersect money demand at value of money 2 and 1. The vertical axis measures 1/P, not velocity."
+      },
+      "expectedAnswerHash": "1268824283edfa36b047c0d2d82dfaccb76b20314133f9ad7852ce0846f3ced8",
+      "reason": "Fixed-V/fixed-Y doubling claim contradicted the attached linear graph."
+    },
+    {
+      "id": 9026,
+      "fields": {
+        "image": "quantity-theory-fixed-v-y.png",
+        "imageAlt": "Money supply MS1 at 2,500 and MS2 at 5,000 intersect money demand at value of money 2 and 1. The vertical axis measures 1/P, not velocity."
+      },
+      "expectedAnswerHash": "146eafc3131836691f9ec22516a5a8600d1314a23535144b28528299e330815b",
+      "reason": "Fixed-V/fixed-Y doubling claim contradicted the attached linear graph."
+    }
+  ],
+  "composer": [
+    {
+      "id": "LG-Q-336",
+      "fields": {
+        "q": "Refer to the value-of-money graph. The economy moves from a to b. Velocity is allowed to change. In a long-run comparison, a nominal wage rises by the same proportion as the price level inferred from those points, and technology and labor supplies are unchanged. Which comparison fits monetary neutrality?",
+        "feedback": "The graph gives value of money 2 at a and 1.5 at b. Their reciprocal price levels are 1/2 and 2/3, a one-third increase. Proportional nominal wage growth leaves the real wage unchanged; nominal changes alone do not raise real productive capacity. With real output fixed, this graph requires velocity to fall to two-thirds of its initial value; it is not the fixed-velocity quantity-theory case."
+      },
+      "expectedAnswerHash": "5878172dacda8394c817161e0318c4f22d98e40ea4e7b63f5c9c41ac06a5eccd",
+      "reason": "Make the non-fixed-velocity assumption explicit in the retained one-third nominal-adjustment example."
+    },
+    {
+      "id": "LG-Q-9042",
+      "fields": {
+        "feedback": "A monetary expansion can raise prices. Firms repeatedly changing posted prices incur menu costs."
+      },
+      "expectedAnswerHash": "68fa3d177f4a61b4e426b053c7893ee9467c47e23e433b7beb3a6721414c58bf",
+      "reason": "Feedback referred to a removed graph; use the stated scenario instead."
+    }
+  ]
+}
