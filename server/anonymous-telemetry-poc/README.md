@@ -1,40 +1,30 @@
-# Anonymous telemetry POC backend
+# Private anonymous telemetry Worker
 
-This is a standalone Cloudflare Worker + D1 service for the private Managerial Directorate telemetry proof of concept. It does not alter the public site's existing static deployment.
+Current measurement contract: mq-measurement/1. Current owner-approved governance/disclosure: mq-governance/2 and mq-disclosure/2. This Worker serves the enabled private classroom/POC path; public Managerial/default Composer games remain local-only.
 
-## Provision and deploy
+## Current activation instructions
 
-1. Create a D1 database named `masteryquests-anonymous-telemetry-poc`.
-2. Replace the all-zero `database_id` in `wrangler.jsonc` with the created database ID.
-3. Apply migrations: `npx wrangler d1 migrations apply masteryquests-anonymous-telemetry-poc --remote`.
-4. Create an admin secret: `npx wrangler secret put ADMIN_TOKEN`.
-5. Set `ALLOWED_ORIGINS` to the exact private-build origin(s).
-6. Route `/api/anonymous-telemetry-poc/*` to this Worker, or pass its URL to the private build as `?telemetryEndpoint=https://.../v1/events` during QA.
-7. Deploy with `npx wrangler deploy` from this directory.
+Use [the governance operator guide](../../audit_tools/telemetry_governance/README.md) and [approved owner decisions](../../audit_tools/telemetry_governance/OWNER_DECISIONS.md). Canonical policy is governance-policy.mjs; generated Wrangler vars and cron must match it. The current D1 binding already exists in repository configuration. This governance release requires no new database or migration; do not repeat historical provisioning/migration instructions as part of activation.
 
-The ingestion endpoint is `POST /v1/events` (also available at `/api/anonymous-telemetry-poc/v1/events`). Health is public and contains no records. Every `/v1/admin/*` route requires `Authorization: Bearer <ADMIN_TOKEN>` and returns `no-store`/`noindex` headers.
+The prepared daily Worker trigger calls scheduled-retention.mjs, which uses the same govern() preview/execute logic as manual retention. It enforces the approved whole-run policy using server receipt time. The schedule and duration are defined in the canonical policy and generated Wrangler configuration, not duplicated here. No remote trigger or deployment was registered in this task.
 
-## Private QA and cleanup
+## Access and routes
 
-- `GET /v1/admin/summary` — counts and recent runs.
-- `GET /v1/admin/runs/{runId}` — ordered raw events for one run.
-- `GET /v1/admin/runs/{runId}/reconstruct` — deterministic run summary and timeline.
-- `GET /v1/admin/anomalies` — sequence gaps/out-of-order indicators, duplicate batches, and incomplete runs.
-- `GET /v1/admin/export.csv?buildId=managerial-directorate-telemetry-poc` — normalized export; add `includeSynthetic=1` to include QA fixtures.
-- `POST /v1/admin/cleanup` with `{ "scope": "synthetic", "confirm": "DELETE" }` — delete all synthetic QA rows.
-- `POST /v1/admin/cleanup` with `{ "scope": "build", "buildId": "managerial-directorate-telemetry-poc", "confirm": "DELETE" }` — delete all rows for this build.
+Every HTTP /v1/admin/* route requires ADMIN_TOKEN. Manual maintenance additionally requires a distinct MAINTENANCE_TOKEN in x-telemetry-maintenance; there is no fallback. Routine read/export does not require maintenance capability. Successful admin responses are no-store/noindex. Never embed credential values in games, source, URLs, logs or exported files. Internal scheduled execution does not use an embedded secret and has no public bypass route.
 
-The Worker rejects direct identifiers and free-response fields, caps request/batch size, validates UUIDs and ranges, accepts one anonymous client per batch, rate-limits by opaque client ID, and uses `INSERT OR IGNORE` plus unique event and run-sequence constraints for idempotency. JSON extras are limited to `selectionReason`, a five-row `weaknessEstimate`, `sourceEvent`, and the additive QA fields `sourceRunId`, `lifecycleReason`, `acceptedAttempt`, `artifactName`, `artifactSource`, `artifactAlreadyOwned`, `artifactOwnedBeforeRun`, and `artifactNewlyEarned`; arbitrary extra fields are rejected.
+- POST /v1/events: existing validated private ingestion (also under /api/anonymous-telemetry-poc); public health contains no records.
+- GET /v1/admin/governance: approved current policy/disclosure and environment consistency.
+- GET /v1/admin/summary, /v1/admin/anomalies: existing administrative summaries/quality indicators.
+- GET /v1/admin/runs/{runId} and /reconstruct: existing ordered events and reconstruction.
+- GET /v1/admin/export.csv: current unchanged CSV schema; optional buildId/includeSynthetic filters. Current governance/disclosure/retention headers support the CLI's optional hash-bound sidecar.
+- POST /v1/admin/retention: dry-run by default; explicit reviewed cutoff and PURGE_EXPIRED_RUNS confirmation for manual execution.
+- POST /v1/admin/delete-run: UUID preview; explicit DELETE_RUN:<UUID> confirmation for deletion.
+- POST /v1/admin/cleanup: existing synthetic/build scopes, preview/execute and explicit DELETE compatibility; whole-run selection preserves mixed runs.
 
-## Stabilization patch (2026.09.05-poc2)
+Ingestion still enforces origins, rate/body/batch limits, UUIDs, supported envelopes and typed allowlists. Current envelope 3 retains legacy 1/2 support. New governance context does not add telemetry measurements or CSV columns. The existing telemetry-core.mjs and measurement-contract.mjs remain the authoritative field validation; extras_json persists permitted metadata.
 
-Deploy the updated Worker before the static private build, then apply `0002_completion_semantics.sql` to the existing database (`managerial-telemetry-poc` in the current configuration). This migration repairs historical lifecycle/completion data; it makes no schema changes. New fields use the existing validated `extras_json` storage.
+## Boundaries and history
 
-Reconstruction retains raw `answerCount`, `correctAnswers`, and `accuracy` and adds explicit raw/accepted attempt metrics. Historical source events classify acceptance; missing evidence is reported as `unclassifiedAttempts`. Run completion is durable; lifecycle and adaptive reasons are separate. CSV exposes the additive QA fields alongside the original event columns.
+Prospective opt-out cancels pending transmission but accepted records remain subject to normal retention. Application deletion does not erase downloads, submissions, backups/provider logs or separately designated research datasets. Provider-account verification remains external; see PROVIDER_VERIFICATION.md in governance tooling. No actual provider setting or secret was inspected/changed.
 
-See [the stabilization report](../../validation_artifacts/anonymous_telemetry_poc/STABILIZATION_REPORT.md) for root causes, changed files, 93 passing checks, deployment order, timing/ownership semantics, historical-data limits, and the exact manual QA sequence. No deployment was performed as part of this patch.
-## Private Composer telemetry parity (2026.09.10)
-
-Private clients now send schemaVersion 2 with Composer-equivalent visibility/focus timing and selection/copy counts. No content or clipboard data is sent. Existing schema-1 records remain readable. New nullable measurements use the existing validated extras_json column; **no migration is required**. CSV includes explicit stable measurement columns (including an alias responseTimeMs) and leaves historical missing values blank. Admin reconstruction adds questionResponses and lifecycle reasons.
-
-The canonical helper implementation is extracted from the current Composer template by audit_tools/managerial_telemetry_parity/sync-composer-behavior.mjs. Run it with --check to verify source parity and the derived classroom client. Deploy this Worker before schema-2 private assets; older Workers reject unknown new fields and those events remain queued. No remote deployment was performed in this pass. See [the parity report](../../FINAL_REPORT_managerial_telemetry_parity.md) for definitions, tests, limitations, and deployment commands.
+Historical implementation detail is retained in [Contract 1 report](../../FINAL_REPORT_telemetry_contract_hardening.md), [governance mechanism report](../../FINAL_REPORT_telemetry_governance.md), [parity report](../../FINAL_REPORT_managerial_telemetry_parity.md), and [POC stabilization report](../../validation_artifacts/anonymous_telemetry_poc/STABILIZATION_REPORT.md). Their historical deployment instructions do not replace the current activation sequence. Applied migrations are unchanged.

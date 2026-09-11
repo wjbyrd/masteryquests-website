@@ -1,0 +1,70 @@
+{
+  "passed": 16,
+  "failed": 0,
+  "results": [
+    {
+      "name": "SHA-256 matches independent UTF-8 implementation",
+      "status": "PASS"
+    },
+    {
+      "name": "New manifest, privacy allowlist, immutable export and offline resolution",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical rows retain labels and unknown fields through current download",
+      "status": "PASS"
+    },
+    {
+      "name": "Resume preserves sequence, old manifest and establishes explicit changed-build segment",
+      "status": "PASS"
+    },
+    {
+      "name": "Exam revisit has new view, same attempt, one committed outcome and saved support",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated questions and rejected guesses have distinct attempt identity",
+      "status": "PASS"
+    },
+    {
+      "name": "Canonical option mapping leaves answer verification unchanged; wrong mapping detected",
+      "status": "PASS"
+    },
+    {
+      "name": "Assistance snapshot does not retroactively change earlier answer",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale version, wrong manifest, ambiguous join, duplicate commit, impossible timing and unknown field negatives",
+      "status": "PASS"
+    },
+    {
+      "name": "Disable before start, pending cancellation, refresh, re-enable and no replay",
+      "status": "PASS"
+    },
+    {
+      "name": "Permanent rejection isolates poison event and valid peer progresses",
+      "status": "PASS"
+    },
+    {
+      "name": "Queue bound is counted; transient retries preserve IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Typed private Worker ingestion/export and idempotent synthetic D1 round trip",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual shuffle preserves choices, verification and RNG calls including duplicate text",
+      "status": "PASS"
+    },
+    {
+      "name": "Configuration, content and asset fingerprints react only to analytical changes",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed null queue head cannot block a valid record; stored diagnostics are allowlisted",
+      "status": "PASS"
+    }
+  ]
+}

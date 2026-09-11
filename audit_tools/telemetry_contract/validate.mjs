@@ -70,12 +70,14 @@ export function validateCSV(text){
 export function validateGovernanceExport(text,sidecar){
  if(!sidecar)return {status:'UNKNOWN',policyVersion:null,applicability:'No governance sidecar: policy at export/collection is unknown; do not infer one from a measurement version.',issues:[]};
  const issues=[];const bad=detail=>issues.push({code:'GOVERNANCE_METADATA',detail});
- if(sidecar.format!=='mq-export-governance/1'||sidecar.governancePolicyVersion!==GOVERNANCE_POLICY.version)bad('Unknown governance sidecar/policy version');
+ if(sidecar.format!=='mq-export-governance/1'||!['mq-governance/1',GOVERNANCE_POLICY.version].includes(sidecar.governancePolicyVersion))bad('Unknown governance sidecar/policy version');
  if(sidecar.measurementContract!==GOVERNANCE_POLICY.measurementContract)bad('Policy/measurement contract mismatch');
  if(sidecar.exportSha256!==createHash('sha256').update(text).digest('hex'))bad('Sidecar belongs to different export bytes');
  const retention=sidecar.retention;
- if(!retention||!['manual','disabled'].includes(retention.mode)||retention.unit!=='whole-run'||retention.clock!=='latest-server-receipt'||!(retention.days===null||Number.isInteger(retention.days)&&retention.days>=GOVERNANCE_POLICY.minimumDays&&retention.days<=GOVERNANCE_POLICY.maximumDays))bad('Unsupported retention metadata');
- return {status:issues.length?'NEEDS_REVIEW':'PASS',policyVersion:sidecar.governancePolicyVersion,retention,exportedAt:sidecar.exportedAt,scope:sidecar.scope,applicability:'Current server policy at export only; historical event policy unknown. No retention is enforced on this local file.',issues};
+ if(!retention||!['manual','disabled','automatic'].includes(retention.mode)||retention.unit!=='whole-run'||retention.clock!=='latest-server-receipt'||!(retention.days===null||Number.isInteger(retention.days)&&retention.days>=1&&retention.days<=36500))bad('Unsupported retention metadata');
+ if(sidecar.governancePolicyVersion===GOVERNANCE_POLICY.version&&(sidecar.disclosureVersion!==GOVERNANCE_POLICY.disclosureVersion||retention?.days!==GOVERNANCE_POLICY.retentionDays||retention?.mode!==GOVERNANCE_POLICY.mode))bad('Current approved policy/disclosure mismatch');
+ if(sidecar.governancePolicyVersion==='mq-governance/1'&&retention?.mode==='automatic')bad('Legacy governance did not authorize automatic retention');
+ return {status:issues.length?'NEEDS_REVIEW':'PASS',policyVersion:sidecar.governancePolicyVersion,disclosureVersion:sidecar.disclosureVersion??null,retention,exportedAt:sidecar.exportedAt,scope:sidecar.scope,applicability:'Current server policy at export only; historical event policy unknown. No retention is enforced on this local file.',issues};
 }
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){

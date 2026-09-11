@@ -1,3 +1,4 @@
+import {approvedEnvironment} from '../../server/anonymous-telemetry-poc/governance-policy.mjs';
 import {parseCSV} from '../telemetry_contract/validate.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -65,7 +66,7 @@ await check('Exam commit accumulates only this room’s views',async()=>{const c
 // Execute the real Worker against SQLite through the existing D1 interface.
 const db=new DatabaseSync(':memory:');for(const name of fs.readdirSync(path.join(root,'server/anonymous-telemetry-poc/migrations')).sort())db.exec(fs.readFileSync(path.join(root,'server/anonymous-telemetry-poc/migrations',name),'utf8'));
 class Statement{constructor(sql){this.sql=sql;this.values=[];}bind(...v){this.values=v;return this;}async run(){const r=db.prepare(this.sql).run(...this.values);return {success:true,meta:{changes:Number(r.changes)}};}async all(){return {results:db.prepare(this.sql).all(...this.values)}}async first(){return db.prepare(this.sql).get(...this.values)||null;}}
-const env={TELEMETRY_DB:{prepare:s=>new Statement(s),async batch(a){db.exec('BEGIN');try{const r=[];for(const s of a)r.push(await s.run());db.exec('COMMIT');return r;}catch(e){db.exec('ROLLBACK');throw e;}}},ALLOWED_ORIGINS:'https://private.example.test',MAX_EVENTS_PER_CLIENT_MINUTE:'100000',ADMIN_TOKEN:webcrypto.randomUUID()};
+const env={...approvedEnvironment(),TELEMETRY_DB:{prepare:s=>new Statement(s),async batch(a){db.exec('BEGIN');try{const r=[];for(const s of a)r.push(await s.run());db.exec('COMMIT');return r;}catch(e){db.exec('ROLLBACK');throw e;}}},ALLOWED_ORIGINS:'https://private.example.test',MAX_EVENTS_PER_CLIENT_MINUTE:'100000',ADMIN_TOKEN:webcrypto.randomUUID()};
 const call=(pathname,{method='GET',body,admin=false,origin='https://private.example.test'}={})=>worker.fetch(new Request('https://telemetry.test'+pathname,{method,headers:{origin,...(admin?{authorization:'Bearer '+env.ADMIN_TOKEN}:{}),'content-type':'application/json'},body:body?JSON.stringify(body):undefined}),env);
 await check('M/N Worker ingestion, idempotency, legacy and CSV export',async()=>{
  for(const clientId of new Set(fixtures.map(e=>e.anonymousClientId))){const events=fixtures.filter(e=>e.anonymousClientId===clientId);for(let i=0;i<events.length;i+=25){const body={phase:PHASE,events:events.slice(i,i+25)};const response=await call('/v1/events',{method:'POST',body});assert.equal(response.status,202,await response.text());const dup=await call('/v1/events',{method:'POST',body});assert.equal((await dup.json()).accepted,0);}}

@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "operationId": "785f8fa0-82c7-44c7-b919-9314d1da5d44",
+  "governancePolicyVersion": "mq-governance/2",
+  "measurementContract": "mq-measurement/1",
+  "source": "manual",
+  "action": "dry-run",
+  "scope": "retention",
+  "cutoff": "2024-09-10T12:00:00.000Z",
+  "counts": {
+    "runs": 3,
+    "events": 4,
+    "ingestBatches": 1,
+    "rateLimitWindows": 1
+  },
+  "executedAt": "2026-09-10T12:00:00.000Z",
+  "unit": "whole-run",
+  "retentionDays": 730,
+  "notes": [
+    "Counts in execute are actual database changes; dry-run counts can change before execution.",
+    "No downloaded copies, provider logs or backups are deleted.",
+    "Late arrivals or retries after deletion can recreate a run; deletion is not a permanent collection block.",
+    "Run/build deletion leaves ingestion batch receipts because they do not identify individual runs."
+  ]
+}

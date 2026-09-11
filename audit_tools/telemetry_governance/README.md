@@ -1,49 +1,59 @@
-# Governance operator and maintenance guide
+# Approved governance operations — revision 2
 
-Read TELEMETRY_GOVERNANCE.md and OWNER_DECISIONS.md before activation. Canonical policy/defaults are server/anonymous-telemetry-poc/governance-policy.mjs. These tools never automatically deploy, rotate credentials or invoke a remote operation. Tests use only in-memory SQLite with applied existing migrations and a D1-compatible batch wrapper.
+Read TELEMETRY_GOVERNANCE.md and resolved OWNER_DECISIONS.md. Canonical policy is server/anonymous-telemetry-poc/governance-policy.mjs. The renderer derives owner decisions, public/private disclosures and telemetry Wrangler vars/cron from that source. No secret belongs in source or vars.
 
-## Validate locally
-
-From the repository root, with Node and Playwright/Edge available:
+## Local validation and regeneration
 
 ```text
+node audit_tools/telemetry_governance/render.mjs
+node audit_tools/telemetry_contract/generate.mjs
+node audit_tools/managerial_telemetry_parity/sync-composer-behavior.mjs
 node audit_tools/telemetry_governance/render.mjs --check
 node audit_tools/telemetry_governance/check.mjs
+node audit_tools/telemetry_governance/scheduled-check.mjs
 node audit_tools/telemetry_governance/browser.mjs
 node audit_tools/telemetry_contract/check.mjs
 node audit_tools/telemetry_contract/browser.mjs
 node audit_tools/managerial_telemetry_parity/run-parity.mjs
 node audit_tools/managerial_telemetry_parity/run-browser.mjs
 node audit_tools/published_managerial_parity/browser.mjs
+node audit_tools/telemetry_data_dictionary/check.mjs
 node build/faculty-build-composer/tests/run_active_composer_suite.js
 ```
 
-Set MQ_EVIDENCE_DIR to a new output location and PLAYWRIGHT_MODULE if needed. Do not overwrite historical evidence. Governance rendering updates notices only, then run contract generate.mjs and sync-composer-behavior.mjs to refresh actual source fingerprints and derived adapters. Measurement release/schema/runtime remain frozen. Dictionary render.mjs --check verifies unchanged field content.
+Set MQ_EVIDENCE_DIR to fresh local output, PLAYWRIGHT_MODULE if needed. Tests apply existing migrations only to synthetic in-memory SQLite with serialized transactional batches. No production binding is used. Changes to disclosure source refresh source fingerprints but do not change measurement semantics. Do not regenerate frozen games or overwrite prior reports/evidence.
 
-## Reviewed deployment/configuration sequence — NOT executed
+## Exact activation order — prepared, NOT executed
 
-1. Record owner approvals: duration, manual operational responsibility, access/maintenance custodians, accepted-data treatment, export disposal, local custody notice and provider log/backup responsibility. Update governance/disclosure version and approved wording as needed. Do not activate merely because tests pass.
-2. Configure TELEMETRY_RETENTION_DAYS as the approved positive integer string and TELEMETRY_RETENTION_MODE as manual in the telemetry Worker's reviewed deployment environment/configuration. Leaving days absent refuses time purge; disabled refuses time purge even with days. No schedule is installed. Keep secrets out of vars. Resolve public/course notice alignment with the actual deployed policy before release.
-3. For approved secret provisioning/rotation, from repository root: npx wrangler secret put ADMIN_TOKEN --config server/anonymous-telemetry-poc/wrangler.jsonc. Enter the value at the protected prompt, not in command history/source. Optional write separation: npx wrangler secret put MAINTENANCE_TOKEN --config server/anonymous-telemetry-poc/wrangler.jsonc. These commands change real secrets and require separate owner authorization; none was run here.
-4. To revoke all application admin access after approval: npx wrangler secret delete ADMIN_TOKEN --config server/anonymous-telemetry-poc/wrangler.jsonc. Ingestion is independent. To revoke maintenance holders, rotate MAINTENANCE_TOKEN to a withheld value; deleting it reverts to shared-admin capability. Verify effective access and distribute replacement credentials only through the approved secret channel.
-5. Deploy the reviewed telemetry Worker only after separate approval: npx wrangler deploy --config server/anonymous-telemetry-poc/wrangler.jsonc. No D1 migration is required. Publish the reviewed static notices/derived clients through the established website release process; frozen Macro/Micro files remain unchanged. Verify the actual production configuration and disclosure before institutional/research activation.
-6. In a private operator environment set MQ_ADMIN_ENDPOINT to the approved HTTPS base ending /api/anonymous-telemetry-poc, MQ_ADMIN_TOKEN from approved secret storage, and MQ_MAINTENANCE_TOKEN if separation is configured. Do not include credentials in endpoint URLs. The CLI rejects redirects and insecure nonlocal endpoints. Run node audit_tools/telemetry_governance/admin.mjs policy and compare current settings to approval.
-7. Preview: node audit_tools/telemetry_governance/admin.mjs retention. Review cutoff and counts. Only after explicit operator approval execute: node audit_tools/telemetry_governance/admin.mjs retention --execute --cutoff <reviewed-UTC-ISO-cutoff> --confirm PURGE_EXPIRED_RUNS. The angle-bracket values are placeholders to replace, not shell syntax to copy literally. Save returned operation/count report in the approved administrative record location. Rerun preview to verify the remaining state. No remote preview or execute was run here.
-8. Targeted deletion: node audit_tools/telemetry_governance/admin.mjs delete-run --run-id <UUID> previews only. Execute adds --execute --confirm DELETE_RUN:<same-lowercase-UUID>. Verify scope before invocation. No client/person lookup is provided.
+1. Review the resolved owner decisions dated 2026-09-10, current governance/disclosure versions, provider checklist and research-dataset boundary. The Project Owner is the sole initial telemetry and platform custodian.
+2. Run renderer --check and inspect server/anonymous-telemetry-poc/wrangler.jsonc. Its generated governance identity, duration and automatic mode must exactly match the policy source; triggers.crons must match the canonical daily UTC expression. No environment override may silently change the approved duration/mode. Missing/contradictory settings fail closed. No migration is required.
+3. Through approved secret handling, provision or verify ADMIN_TOKEN. If separately authorized to provision/rotate, from repository root: npx wrangler secret put ADMIN_TOKEN --config server/anonymous-telemetry-poc/wrangler.jsonc. Enter values only at the protected prompt, never as arguments, URL, documentation or source.
+4. Provision/verify a distinct MAINTENANCE_TOKEN with npx wrangler secret put MAINTENANCE_TOKEN --config server/anonymous-telemetry-poc/wrangler.jsonc. Both are required for manual maintenance; routine reads/export need only admin. Neither secret is needed by the internal scheduled entry point. Never use identical values.
+5. Only after separate deployment authorization: npx wrangler deploy --config server/anonymous-telemetry-poc/wrangler.jsonc. This registers the prepared trigger and can begin deleting eligible real data at its next invocation. Review that consequence before this command. No deployment or real deletion occurred during development.
+6. Publish revised static disclosures/governance guidance and derived clients through the established site release process, preserving frozen Macro/Micro bytes.
+7. In an approved private operator environment set MQ_ADMIN_ENDPOINT to the HTTPS base ending /api/anonymous-telemetry-poc and MQ_ADMIN_TOKEN from approved secret storage. Set MQ_MAINTENANCE_TOKEN only for maintenance operations. Run node audit_tools/telemetry_governance/admin.mjs policy and verify policy, disclosure, automatic mode, duration, schedule and role against the source. Do not print or store secret values in evidence.
+8. The platform custodian verifies actual trigger registration and subsequent execution status in the provider account, records evidence and completes the logging/access/backup checklist. Allow provider propagation; code/config alone is not remote registration evidence.
+9. Run a NON-DESTRUCTIVE preview: node audit_tools/telemetry_governance/admin.mjs retention. Review cutoff/eligible counts against the approved policy. This task did not run a remote preview. Routine preview uses the protected maintenance route and both credentials.
+10. Perform the approved synthetic/private smoke test and check current notice, opt-out, local download, export headers/sidecar and accepted-data handling. Do not use learner records for smoke tests.
+11. Verify public Managerial/default Composer remain local-only and Download Game Data remains available. Record deployment/provider evidence before institutional/research or paper-ready claims.
 
-Scheduling is not activated. If the owner later authorizes it, an external authorized runner could invoke the same reviewed mechanism and retain reports; approve cadence, credential custody, failures and notices first. This release intentionally accepts only manual/disabled modes.
+The schedule is daily UTC, as shown in canonical policy/renderer output. Scheduled calls preview then execute the same govern() logic, with aggregate bounded reports and failure rejection. No separate purge SQL or credential bypass route exists. If a failure must be investigated, use policy inspection and non-destructive preview, then review provider status. To suspend a deployed faulty trigger, the custodian must separately authorize configuration/deployment changes. Removing admin/maintenance credentials does not stop the internal schedule or ingestion.
 
-## Exports and validator
+## Manual operations retained
 
-The admin export tool takes --build-id <controlled-build-id>, optional --include-synthetic and --output <new-file.csv>. It saves a separate .governance.json with CSV SHA-256, current policy, timestamp and scope; it refuses to overwrite existing files. No token, URL or local path enters the sidecar. Direct existing browser/API CSV exports remain compatible and simply lack this optional retained sidecar. Export helper policy headers must match its policy fetch or it refuses the export.
+After reviewing a preview, explicit manual purge remains: node audit_tools/telemetry_governance/admin.mjs retention --execute --cutoff <reviewed-UTC-ISO-cutoff> --confirm PURGE_EXPIRED_RUNS. The angle-bracket text is a placeholder, not literal shell syntax. Run deletion: node audit_tools/telemetry_governance/admin.mjs delete-run --run-id <UUID> previews; add --execute --confirm DELETE_RUN:<same-lowercase-UUID> only after review. Cross-scope fields, malformed IDs/cutoffs and missing confirmation are rejected. The broad legacy cleanup remains protected and whole-run safe.
+
+For approved revocation, npx wrangler secret delete MAINTENANCE_TOKEN --config server/anonymous-telemetry-poc/wrangler.jsonc blocks manual maintenance; there is no fallback. Deleting ADMIN_TOKEN similarly blocks application admin routes. These are real secret operations requiring separate authorization and were not run here. Scheduled internal retention and provider account access are distinct capabilities.
+
+## Export context
 
 ```text
 node audit_tools/telemetry_governance/admin.mjs export --build-id managerial-directorate-classroom --output reviewed-export.csv
 node audit_tools/telemetry_contract/validate.mjs reviewed-export.csv validation.json reviewed-export.csv.governance.json
 ```
 
-The existing validator is reused. Governance context does not restamp measurement rows or enforce a deletion policy on local files. The sidecar is an integrity/context aid, not a signed assertion of historical policy. CSV and sidecar files are now the recipient's custody responsibility.
+The helper refuses existing output paths, redirects and insecure nonlocal endpoints. It writes unchanged CSV plus a SHA-256-bound sidecar with current governance/disclosure, measurement identity, retention and scope/time. The existing validator recognizes current and legacy policy context; it never deletes/modifies its input or assigns current policy to old events. The sidecar is not a signature or guarantee of complete historical collection. Ordinary exports follow the approved disposal horizon in restricted storage; longer retention needs RESEARCH_DATASET_DESIGNATION.md completed separately. D1 purge does not delete files/submissions/backups.
 
-## Provider documentation consulted
+## Technical references and external limits
 
-D1 executes batched statements transactionally; the implementation tests rollback and uses prepared bindings: [D1 database API](https://developers.cloudflare.com/d1/worker-api/d1-database/). Credential provisioning/rotation/revocation use the existing mechanisms: [Workers secrets](https://developers.cloudflare.com/workers/configuration/secrets/) and [Wrangler commands](https://developers.cloudflare.com/workers/wrangler/commands/workers/). Repository configuration alone does not establish actual provider logging/retention or backup behavior. These references are technical documentation, not compliance approval.
+[Cloudflare Cron Triggers](https://developers.cloudflare.com/workers/configuration/cron-triggers/) define UTC schedules; [scheduled handler](https://developers.cloudflare.com/workers/runtime-apis/handlers/scheduled/) supports awaiting the job and surfacing rejection. [D1 batch API](https://developers.cloudflare.com/d1/worker-api/d1-database/) supplies transactional execution. [Workers secrets](https://developers.cloudflare.com/workers/configuration/secrets/) describes protected credential configuration. These technical references do not verify account-specific retention/logging or establish institutional approval. Provider verification and PDF structural accessibility remain separate pre-paper gates.

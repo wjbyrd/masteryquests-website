@@ -1,8 +1,8 @@
 import {configuration,cutoffFor} from './governance-policy.mjs';
 import {UUID_PATTERN} from './telemetry-core.mjs';
 const fail=(message,status=400)=>{throw Object.assign(Error(message),{status});};
-export function requireMaintenance(request,env){const expected=env.MAINTENANCE_TOKEN||env.ADMIN_TOKEN;const supplied=(request.headers.get('x-telemetry-maintenance')||request.headers.get('authorization')||'').replace(/^Bearer\s+/i,'');if(!expected||supplied!==expected)fail('maintenance authorization required',403);}
-export async function govern(request,env,kind,now=Date.now()){
+export function requireMaintenance(request,env){const expected=env.MAINTENANCE_TOKEN;const supplied=request.headers.get('x-telemetry-maintenance')||'';if(!expected||expected===env.ADMIN_TOKEN||supplied!==expected)fail('maintenance authorization required',403);}
+export async function govern(request,env,kind,now=Date.now(),source='manual'){
  const config=configuration(env);if(kind==='policy')return {ok:true,governance:config};
  const raw=await request.text();if(raw.length>2048)fail('administrative request too large',413);let body;try{body=JSON.parse(raw);}catch{fail('Invalid JSON');}
  if(!body||typeof body!=='object'||Array.isArray(body))fail('Expected administrative object');
@@ -26,7 +26,7 @@ export async function govern(request,env,kind,now=Date.now()){
   else fail('scope must be synthetic or a bounded build ID');
   if(execute&&body.confirm!=='DELETE')fail('Execute requires confirm DELETE');
  }
- const db=env.TELEMETRY_DB;
+ const db=env.TELEMETRY_DB;if(!db)fail('telemetry storage unavailable',503);
  const selected=kind==='run'?'SELECT ?':'SELECT r.run_id FROM telemetry_runs r WHERE '+selection;
  const plan=[db.prepare('SELECT COUNT(*) AS count FROM telemetry_runs r WHERE '+selection).bind(...bindings),db.prepare('SELECT COUNT(*) AS count FROM telemetry_events WHERE run_id IN ('+selected+')').bind(...bindings)];
  // SELECT batch is a consistent dry-run snapshot. Execute eligibility is recalculated inside its atomic batch.
@@ -38,5 +38,5 @@ export async function govern(request,env,kind,now=Date.now()){
   const result=await db.batch(statements);counts={events:Number(result[0].meta?.changes||0),runs:Number(result[1].meta?.changes||0),ingestBatches:Number(result[2]?.meta?.changes||0),rateLimitWindows:Number(result[3]?.meta?.changes||0)};
  }
  if(!execute&&kind==='retention'){counts.ingestBatches=Number((await db.prepare('SELECT COUNT(*) AS count FROM telemetry_ingest_batches WHERE julianday(received_at)<julianday(?)').bind(cutoff).first()).count);counts.rateLimitWindows=Number((await db.prepare('SELECT COUNT(*) AS count FROM telemetry_rate_limits WHERE window_minute < ?').bind(Math.floor(Date.parse(cutoff)/60000)).first()).count);}
- return {ok:true,operationId:crypto.randomUUID(),governancePolicyVersion:config.version,measurementContract:config.measurementContract,action,scope,cutoff,buildId:scope==='build'?body.buildId:undefined,runId:kind==='run'?body.runId.toLowerCase():undefined,counts,executedAt:new Date(now).toISOString(),unit:config.unit,retentionDays:config.days,notes:['Counts in execute are actual database changes; dry-run counts can change before execution.','No downloaded copies, provider logs or backups are deleted.','Late arrivals or retries after deletion can recreate a run; deletion is not a permanent collection block.','Run/build deletion leaves ingestion batch receipts because they do not identify individual runs.']};
+ return {ok:true,operationId:crypto.randomUUID(),governancePolicyVersion:config.version,measurementContract:config.measurementContract,source,action,scope,cutoff,buildId:scope==='build'?body.buildId:undefined,runId:kind==='run'?body.runId.toLowerCase():undefined,counts,executedAt:new Date(now).toISOString(),unit:config.unit,retentionDays:config.days,notes:['Counts in execute are actual database changes; dry-run counts can change before execution.','No downloaded copies, provider logs or backups are deleted.','Late arrivals or retries after deletion can recreate a run; deletion is not a permanent collection block.','Run/build deletion leaves ingestion batch receipts because they do not identify individual runs.']};
 }

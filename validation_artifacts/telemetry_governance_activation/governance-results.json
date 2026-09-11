@@ -1,0 +1,62 @@
+{
+  "passed": 14,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Approved environment is mandatory; contradictory duration/mode/identity fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Dry run counts exact old/current/legacy/incomplete whole runs; straddling/new/exact boundary survive",
+      "status": "PASS"
+    },
+    {
+      "name": "Execute deletes exact eligible data atomically, preserves newer data, and rerun is idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "Wrong/future/malformed cutoff and missing explicit confirmation fail without deletion",
+      "status": "PASS"
+    },
+    {
+      "name": "Late receipt between preview and execute protects whole run; invalid timestamp also protects",
+      "status": "PASS"
+    },
+    {
+      "name": "Database failure rolls back event and run deletion together",
+      "status": "PASS"
+    },
+    {
+      "name": "Run deletion dry-run/confirmation targets only supplied UUID; malformed IDs rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Every admin route requires ADMIN_TOKEN; required maintenance separation restricts destructive routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy cleanup remains explicitly authenticated and now preserves mixed-synthetic runs",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin export headers and optional offline sidecar disclose policy without changing CSV schema",
+      "status": "PASS"
+    },
+    {
+      "name": "Canonical generated disclosures and frozen schema dictionary have no drift",
+      "status": "PASS"
+    },
+    {
+      "name": "Governance policy/docs negatives and public secret/transmission guards detect drift",
+      "status": "PASS"
+    },
+    {
+      "name": "Deletion rejects misleading cross-scope fields and can remove an orphaned named run",
+      "status": "PASS"
+    },
+    {
+      "name": "Operator CLI exports actual local Worker CSV with policy sidecar and does not log credentials",
+      "status": "PASS"
+    }
+  ]
+}

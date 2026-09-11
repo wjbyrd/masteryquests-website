@@ -1,3 +1,4 @@
+import {scheduledRetention} from './scheduled-retention.mjs';
 import {govern,requireMaintenance} from './governance.mjs';
 import {configuration} from './governance-policy.mjs';
 import {CONTRACT_FIELDS} from './measurement-contract.mjs';
@@ -17,6 +18,7 @@ const API_PREFIXES = ["/api/anonymous-telemetry-poc", ""];
 const COMPLETION_EVENT = "run_completed";
 
 export default {
+  async scheduled(controller,env) { return scheduledRetention(controller,env); },
   async fetch(request, env) {
     try {
       return await route(request, env);
@@ -232,7 +234,7 @@ async function adminRoute(request, env, pathname, url) {
       ORDER BY run_id, sequence_number LIMIT 50000
     `).bind(buildId, includeSynthetic ? 1 : 0).all();
     const response=csv(rows.results || []);const policy=configuration(env);
-    response.headers.set('x-mq-governance-policy',policy.version);response.headers.set('x-mq-retention-mode',policy.mode);response.headers.set('x-mq-retention-days',policy.days===null?'unconfigured':String(policy.days));
+    response.headers.set('x-mq-governance-policy',policy.version);response.headers.set('x-mq-disclosure-version',policy.disclosureVersion);response.headers.set('x-mq-retention-mode',policy.mode);response.headers.set('x-mq-retention-days',policy.days===null?'unconfigured':String(policy.days));
     return noStore(response);
   }
   if(request.method==='GET'&&pathname==='/v1/admin/governance')return json(await govern(request,env,'policy'));

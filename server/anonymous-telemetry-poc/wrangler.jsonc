@@ -9,7 +9,7 @@
       "pattern": "masteryquests.org/api/anonymous-telemetry-poc/*",
       "zone_name": "masteryquests.org"
     }
-],
+  ],
   "d1_databases": [
     {
       "binding": "TELEMETRY_DB",
@@ -20,6 +20,14 @@
   ],
   "vars": {
     "ALLOWED_ORIGINS": "https://masteryquests.org,https://www.masteryquests.org",
-    "MAX_EVENTS_PER_CLIENT_MINUTE": "300"
+    "MAX_EVENTS_PER_CLIENT_MINUTE": "300",
+    "TELEMETRY_RETENTION_DAYS": "730",
+    "TELEMETRY_RETENTION_MODE": "automatic",
+    "TELEMETRY_GOVERNANCE_POLICY": "mq-governance/2"
+  },
+  "triggers": {
+    "crons": [
+      "17 4 * * *"
+    ]
   }
 }
