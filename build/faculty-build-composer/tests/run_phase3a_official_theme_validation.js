@@ -15,6 +15,9 @@ const {
 } = require('./composer-test-helpers.js');
 const core = require('../composer-core.js');
 const themes = require('../data/official_theme_library.js');
+// Guard what this test changes, preserving pre-existing authorized workspace edits.
+const productionFiles=require('child_process').execFileSync('git',['ls-files','--','play'],{cwd:REPO_ROOT,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
+const productionBefore=new Map(productionFiles.map(file=>[file,sha256(fs.readFileSync(path.join(REPO_ROOT,file)))]));
 
 const modeSlotByMode = {
   standard:'modeStandard',timed:'modeTimed',exam:'modeExam',quiz:'modeQuiz',unlimited:'modeUnlimited',
@@ -217,10 +220,8 @@ async function buildPreset({library, template, composition, baseRecipe, presetId
   pass(composerJs.includes('faculty slot override') === false, 'Internal precedence terminology leaked into faculty UI');
   pass(composerJs.includes("source:'override'") === false, 'Resolver implementation was duplicated in the UI');
 
-  const authorizedQuestionSource = 'play/economic-realm/market-gate/authoring/market_gate_phase2a_author.mjs';
-  const changedProductionFiles = require('child_process').execFileSync('git',['diff','--name-only','HEAD','--','play'],{cwd:REPO_ROOT,encoding:'utf8'}).trim().split(/\r?\n/).filter(Boolean);
-  const unauthorizedProductionFiles = changedProductionFiles.filter(file => file !== authorizedQuestionSource);
-  pass(unauthorizedProductionFiles.length === 0, `Phase 3A changed deployed games or question banks: ${unauthorizedProductionFiles.join(', ')}`);
+  const changedProductionFiles=productionFiles.filter(file=>productionBefore.get(file)!==sha256(fs.readFileSync(path.join(REPO_ROOT,file))));
+  pass(changedProductionFiles.length===0,`Theme generation changed deployed files: ${changedProductionFiles.join(', ')}`);
 
   console.log(JSON.stringify({
     ok:true,

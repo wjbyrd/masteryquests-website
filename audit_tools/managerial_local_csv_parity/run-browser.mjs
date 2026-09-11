@@ -1,3 +1,4 @@
+import {CONTRACT_FIELDS} from '../../server/anonymous-telemetry-poc/measurement-contract.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
@@ -25,7 +26,7 @@ async function select(page){await page.locator('#question').evaluate(n=>{const r
 async function visibility(page,hidden){await page.evaluate(hidden=>{Object.defineProperty(document,'hidden',{configurable:true,get:()=>hidden});Object.defineProperty(document,'visibilityState',{configurable:true,get:()=>hidden?'hidden':'visible'});document.dispatchEvent(new Event('visibilitychange'));window.dispatchEvent(new Event(hidden?'blur':'focus'));},hidden);}
 async function download(page,name){
  if(await page.locator("#bossRevealProceed").isVisible().catch(()=>false))await page.locator("#bossRevealProceed").click();
- await page.evaluate(()=>showMasteryReportScreen());
+ await page.evaluate(()=>{beginRunSession();runEnding=true;stopTimedModeClock();return showMasteryReportScreen();});
  const [d]=await Promise.all([page.waitForEvent('download'),page.getByRole('button',{name:'Download Game Data',exact:true}).last().click()]);const file=path.join(out,name+'.csv');await d.saveAs(file);const text=fs.readFileSync(file,'utf8'),rows=parseCsv(text),header=rows.shift();assert.equal(text.charCodeAt(0),0xFEFF,'UTF-8 marker for Excel');assert(new Set(header).size===header.length);assert(rows.every(r=>r.length===header.length));
  return {header,text,rows:rows.map(r=>Object.fromEntries(header.map((k,i)=>[k,r[i]])))};
 }
@@ -51,7 +52,7 @@ try{
    const source=await page.evaluate(()=>String(runID));
    const remote=[...new Map([...harness.received.values(),...queue].filter(e=>e.buildId===branch&&e.gameId===game&&e.sourceRunId===source).map(e=>[e.eventId,e])).values()];
    const csv=await download(page,branch+'-'+game+'-'+scenario);
-   const html=fs.readFileSync(path.join(root,'play/managerial-intelligence-directorate',game,'index.html'),'utf8');const original=vm.runInNewContext(html.match(/const TELEMETRY_COLUMNS = (\[[\s\S]*?\]);/)[1]);assert.deepEqual(csv.header.slice(0,original.length),Array.from(original));assert.deepEqual(csv.header.slice(original.length),[...BEHAVIOR_FIELDS,'gameplayResponseTimeMs']);
+   const html=fs.readFileSync(path.join(root,'play/managerial-intelligence-directorate',game,'index.html'),'utf8');const original=vm.runInNewContext(html.match(/const TELEMETRY_COLUMNS = (\[[\s\S]*?\]);/)[1]);assert.deepEqual(csv.header.slice(0,original.length),Array.from(original));assert.deepEqual(csv.header.slice(original.length),[...BEHAVIOR_FIELDS,'gameplayResponseTimeMs',...CONTRACT_FIELDS]);
    const responseRows=csv.rows.filter(r=>['question','rapid_guessing','exam_answer_initial','exam_answer_revision'].includes(r.event));
    for(const row of responseRows){const candidates=remote.filter(e=>e.position===Number(row.room)&&String(e.questionId)===row.questionID&&(row.event.startsWith('exam_')?e.eventType===row.event:e.eventType==='answer_evaluated'));
     assert(candidates.some(e=>['responseTimeMs',...BEHAVIOR_FIELDS].every(k=>String(e[k]??'')===row[k])),'Exact snapshot match for '+row.event+' room '+row.room);
@@ -70,10 +71,10 @@ try{
    if(scenario==='legacy-quoting'){const old=csv.rows.find(r=>r.event==='legacy');assert.equal(old.tag,'Comma, "quote"\nΩ');assert.equal(old.responseTimeMs,'777');for(const k of BEHAVIOR_FIELDS)assert.equal(old[k],'');}
    for(const forbidden of ['selectedText','copiedText','clipboardContents','questionText','keystrokes','userAgent','browserHistory'])assert(!csv.header.includes(forbidden));
    const stem=await page.evaluate(()=>currentQuestion?.q||'');if(stem&&stem.length>20)assert(!csv.text.includes(stem));
-   const localCount=await page.evaluate(()=>readLocalTelemetry().length);assert.equal(csv.rows.length,localCount,'No export-created rows');
+   const localCount=await page.evaluate(()=>readLocalTelemetry().length);assert.equal(csv.rows.filter(r=>r.event!=='export_manifest').length,localCount,'Original event count is preserved alongside explicit manifest rows');
   });
   harness.setOffline(false);await context.close();
  }
- await check('Worker receives unchanged valid schema 2 and no browser exceptions',()=>{assert.deepEqual(harness.errors,[]);assert.deepEqual(errors,[]);});
+ await check('Worker receives valid schema 3 and no browser exceptions',()=>{assert.deepEqual(harness.errors,[]);assert.deepEqual(errors,[]);});
 }finally{await browser.close();server.close();harness.close();}
 const report={passed:results.filter(r=>r.status==='PASS').length,failed:results.filter(r=>r.status==='FAIL').length,results,examples:examples.map(e=>({...e,anonymous:Object.fromEntries(['eventType','responseTimeMs',...BEHAVIOR_FIELDS].map(k=>[k,e.anonymous?.[k]??null]))}))};fs.writeFileSync(path.join(out,'browser-results.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({passed:report.passed,failed:report.failed,failures:results.filter(r=>r.status==='FAIL')},null,2));if(report.failed)process.exitCode=1;

@@ -54,7 +54,7 @@ If you break something:
 ===================================================== -->
 
 <html lang="en">
-<head><meta name="robots" content="noindex,nofollow,noarchive"><meta name="anonymous-telemetry-phase" content="phaseAnonymousTelemetryPOC-v1"><meta name="anonymous-telemetry-endpoint" content="/api/anonymous-telemetry-poc/v1/events"><base href="/play/managerial-intelligence-directorate/strategy-desk/"><script src="/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js"></script>
+<head><meta name="anonymous-telemetry-collection" content="enabled"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="anonymous-telemetry-phase" content="phaseAnonymousTelemetryPOC-v1"><meta name="anonymous-telemetry-endpoint" content="/api/anonymous-telemetry-poc/v1/events"><base href="/play/managerial-intelligence-directorate/strategy-desk/"><script src="/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js"></script>
 <meta charset="UTF-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <!-- Title can be changed to whatever the game needs -->
@@ -7775,6 +7775,7 @@ function shuffleOptions(question){
     const q = {
         ...question,
         options: [...(question.options || [])],
+        telemetryOptionIndices: [...(question.telemetryOptionIndices || (question.options || []).map((_, index) => index))],
         secondarySkills: [...(question.secondarySkills || [])]
     };
 
@@ -7785,6 +7786,7 @@ function shuffleOptions(question){
     for(let i = q.options.length - 1; i > 0; i--){
         let j = Math.floor(Math.random() * (i + 1));
         [q.options[i], q.options[j]] = [q.options[j], q.options[i]];
+        [q.telemetryOptionIndices[i], q.telemetryOptionIndices[j]] = [q.telemetryOptionIndices[j], q.telemetryOptionIndices[i]];
     }
 
     if(correctText !== null){
@@ -10447,7 +10449,7 @@ function getWeakLearningObjectiveIds(report){ return report?.hasObjectiveWeaknes
 function getInstructionalObjectiveTitle(id){ const normalized=normalizeLearningObjectiveId(id); return objectiveLabels[normalized] || normalized || String(id||""); }
 function getInstructionalResourceActionLabel(resource){ return typeof resource?.actionLabel==="string"&&resource.actionLabel.trim()?resource.actionLabel:(resource?.type==="slides"?"Open Slides":"Watch Video"); }
 function renderInstructionalResourceCards(resources){
-    return resources.map(resource=>{ const type=INSTRUCTIONAL_RESOURCE_TYPE_LABELS[resource.type]||INSTRUCTIONAL_RESOURCE_TYPE_LABELS.other; const desc=resource.description?`<p class="resource-card-description">${escapeHTML(resource.description)}</p>`:""; return `<article class="resource-card"><div class="resource-card-header"><h4 class="resource-card-title">${escapeHTML(resource.title)}</h4><span class="resource-card-type">${escapeHTML(type)}</span></div>${desc}<a class="resource-card-link" href="${escapeHTML(resource.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(getInstructionalResourceActionLabel(resource))}<span class="sr-only">: ${escapeHTML(resource.title)}</span></a></article>`; }).join("");
+    return resources.map(resource=>{ const type=INSTRUCTIONAL_RESOURCE_TYPE_LABELS[resource.type]||INSTRUCTIONAL_RESOURCE_TYPE_LABELS.other; const desc=resource.description?`<p class="resource-card-description">${escapeHTML(resource.description)}</p>`:""; return `<article class="resource-card"><div class="resource-card-header"><h4 class="resource-card-title">${escapeHTML(resource.title)}</h4><span class="resource-card-type">${escapeHTML(type)}</span></div>${desc}<a data-telemetry-resource="${escapeHTML(resource.id)}" class="resource-card-link" href="${escapeHTML(resource.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(getInstructionalResourceActionLabel(resource))}<span class="sr-only">: ${escapeHTML(resource.title)}</span></a></article>`; }).join("");
 }
 function renderInstructionalResourceSection(report){
     const weak=getWeakLearningObjectiveIds(report); if(!weak.length) return "";

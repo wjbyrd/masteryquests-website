@@ -342,6 +342,8 @@ vm.runInContext(`
   ${extractFunction(template, 'createTelemetryEventID')}
   ${extractFunction(template, 'getTelemetryKey')}
   ${extractFunction(template, 'readLocalTelemetry')}
+  ${fs.readFileSync(path.resolve(__dirname,'../../../audit_tools/telemetry_contract/runtime.js'),'utf8')}
+  const MQContract=createTelemetryContract((name,fallback)=>{try{return eval(name);}catch(_){return fallback;}},${fs.readFileSync(path.resolve(__dirname,'../../../audit_tools/telemetry_contract/registry.json'),'utf8')});
   ${extractFunction(template, 'sendGameData')}
 `, telemetryContext);
 runTelemetry(`sendGameData({event:'question',questionId:7,responseTime:13000,activeResponseTime:8000,hiddenTime:5000,tabSwitchCount:1,timeAfterReturn:3000,focusLossCount:2,unfocusedTimeMs:6000,timeAfterFocusMs:2000,selectionCount:1,maxSelectedChars:42,questionSelected:1,answersSelected:0,copyCount:1,questionCopied:1,answersCopied:0,lastCopyElapsedMs:1500,timeCopyToHideMs:300,timeCopyToBlurMs:200,correct:1})`);

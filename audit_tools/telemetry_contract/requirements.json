@@ -1,0 +1,176 @@
+{
+  "statusMeaning": "Baseline classification; action records final disposition.",
+  "rows": [
+    {
+      "area": "Provenance",
+      "analysisQuestion": "Which implementation generated a response?",
+      "existingEvidence": "Legacy gameVersion and reused v5-engine2 label; recipe and phase were independent",
+      "source": "release.json; generate.mjs; runtime.js build/stamp",
+      "exportLocation": "All current CSVs; private extras_json",
+      "status": "MISSING",
+      "action": "Resolved: stamp measurement revision and immutable manifest reference at creation; actual engine/tracker/content/assets/configuration digests."
+    },
+    {
+      "area": "Provenance",
+      "analysisQuestion": "Can configuration be recovered offline after refresh?",
+      "existingEvidence": "Config existed in the generated HTML; no retained export manifest",
+      "source": "runtime.js config/exportRows",
+      "exportLocation": "export_manifest / run_manifest",
+      "status": "MISSING",
+      "action": "Resolved: allowlisted immutable manifest embedded in the same CSV, persisted per run/segment; preserve old segments."
+    },
+    {
+      "area": "Provenance",
+      "analysisQuestion": "Can historical bank contents be reconstructed from a CSV alone?",
+      "existingEvidence": "Original controlled authoring/build artifact and bank identifiers",
+      "source": "TELEMETRY_CONTRACT.md",
+      "exportLocation": "Controlled release archive, outside telemetry",
+      "status": "INTENTIONALLY EXCLUDED",
+      "action": "Keep question/answer text out of telemetry; retain reviewed generated HTML/authoring artifacts. Old unversioned saved questions remain unresolved."
+    },
+    {
+      "area": "Attempts/options",
+      "analysisQuestion": "Which rows are accepted responses?",
+      "existingEvidence": "Local question; private answer_evaluated and acceptedAttempt/legacy rules",
+      "source": "sendGameData; telemetry-client; validate.mjs",
+      "exportLocation": "Stream-specific existing event columns",
+      "status": "ALREADY CAPTURED",
+      "action": "Preserve filters and exclude drafts, rapid guesses, metadata and duplicate transport/feedback from response counts."
+    },
+    {
+      "area": "Attempts/options",
+      "analysisQuestion": "Which view, revision and commitment belong together?",
+      "existingEvidence": "runID + room/questionID ambiguous for repetitions; exam navigation exists",
+      "source": "runtime.js show/stamp; existing reset hook",
+      "exportLocation": "All current streams",
+      "status": "MISSING",
+      "action": "Resolved: view-scoped presentationID, attemptID shared with private stream; exam revisits retain attempt, rapid rejection advances it."
+    },
+    {
+      "area": "Attempts/options",
+      "analysisQuestion": "Which canonical option was selected after shuffling?",
+      "existingEvidence": "selectedIndex is displayed order; questionID alone cannot invert shuffle",
+      "source": "shuffleOptions and runtime.js",
+      "exportLocation": "canonicalSelectedIndex + contentRevision",
+      "status": "MISSING",
+      "action": "Resolved: carry original option ordinals through the exact existing swaps; no extra RNG call, text export or answer-verification change."
+    },
+    {
+      "area": "Attempts/options",
+      "analysisQuestion": "Was this a lifetime-first learner exposure?",
+      "existingEvidence": "Existing firstExposure/priorExposureCount have bounded producer scope",
+      "source": "Dictionary exposure definitions",
+      "exportLocation": "Existing local fields only",
+      "status": "INTENTIONALLY EXCLUDED",
+      "action": "Document actual run/browser scope. No learner identity or cross-device history added."
+    },
+    {
+      "area": "Assistance/remediation",
+      "analysisQuestion": "Was an artifact earned, owned, activated or applied?",
+      "existingEvidence": "Existing artifact award/ownership/action fields distinguish stages",
+      "source": "Existing Composer/private artifact hooks",
+      "exportLocation": "Existing artifact fields; supportJSON",
+      "status": "ALREADY CAPTURED",
+      "action": "Keep award/action events; supplement submission-time effect snapshot, without duplicate reward events."
+    },
+    {
+      "area": "Assistance/remediation",
+      "analysisQuestion": "What help/removal existed before this answer?",
+      "existingEvidence": "Runtime hint, artifact removal and mode-faded state; export insufficient",
+      "source": "runtime.js stamp",
+      "exportLocation": "supportJSON",
+      "status": "MISSING",
+      "action": "Resolved: immutable hint/effect flags, canonical removed-option arrays and remaining count. Exam commitment reuses recorded draft support."
+    },
+    {
+      "area": "Assistance/remediation",
+      "analysisQuestion": "Which miss initiated remediation?",
+      "existingEvidence": "Existing stage and question IDs cannot reliably disambiguate repeated misses",
+      "source": "runtime.js lastMiss/stamp",
+      "exportLocation": "originAttemptID",
+      "status": "MISSING",
+      "action": "Resolved for newly observed ordinary miss to repair/bridge/retest; null for unobserved historical origin."
+    },
+    {
+      "area": "Assistance/remediation",
+      "analysisQuestion": "Was a recommended resource offered or activated?",
+      "existingEvidence": "Existing report anchors and stable authored resource IDs",
+      "source": "report wrapper and delegated activation listener",
+      "exportLocation": "resource_offered/resource_activated + resourceID",
+      "status": "MISSING",
+      "action": "Resolved: observe existing offers/activations, omit raw URLs. Offer once per resource/run."
+    },
+    {
+      "area": "Assistance/remediation",
+      "analysisQuestion": "Was feedback/PDF read or did it improve cognition?",
+      "existingEvidence": "Policy/engine identifies availability; clicks do not prove reading",
+      "source": "Engine manifest; existing mode policy",
+      "exportLocation": "Manifest availability; no reading event",
+      "status": "INTENTIONALLY EXCLUDED",
+      "action": "Remove unobserved duplicate private feedback_shown emission; keep legacy support. No dwell, PDF-load, graph-zoom or cognition inference."
+    },
+    {
+      "area": "Delivery",
+      "analysisQuestion": "Can measured visible/hidden/focus time be interpreted?",
+      "existingEvidence": "Synchronized validated clocks and behavioral counts",
+      "source": "Composer tracker; sync-composer-behavior.mjs",
+      "exportLocation": "Existing timing fields",
+      "status": "ALREADY CAPTURED",
+      "action": "Retain units, overlapping focus, conditional nulls, exam aggregation, reset and readiness boundaries."
+    },
+    {
+      "area": "Delivery",
+      "analysisQuestion": "Can retry duplicates and missing ranges be detected?",
+      "existingEvidence": "Private event UUID/sequence exist; local UUID exists but no creation sequence",
+      "source": "Private queue; runtime.js stamp",
+      "exportLocation": "Existing remote sequence; new localSequence",
+      "status": "MISSING",
+      "action": "Resolved local sequence; preserve private IDs across retries. Validator detects duplicates/gaps, missing manifests and uncertain completion."
+    },
+    {
+      "area": "Delivery",
+      "analysisQuestion": "Is queue/storage loss observable and can valid records progress?",
+      "existingEvidence": "Existing bounded queue silently evicted; poison batch could repeat",
+      "source": "telemetry-client; runtime.js exportRows",
+      "exportLocation": "deliveryQuality, manifest metadata",
+      "status": "MISSING",
+      "action": "Resolved counted overflow/cancellation/storage/rejection, required-manifest retention, singleton poison isolation and explicit acknowledgments."
+    },
+    {
+      "area": "Delivery",
+      "analysisQuestion": "Can we prove completeness after total storage loss?",
+      "existingEvidence": "No surviving browser evidence can prove discarded history",
+      "source": "Contract delivery limits",
+      "exportLocation": "Validator limitations",
+      "status": "INTENTIONALLY EXCLUDED",
+      "action": "Report observed loss and absent completion only; no heartbeat or abandonment inference."
+    },
+    {
+      "area": "Collection",
+      "analysisQuestion": "Does private disabled collection prevent future queue replay?",
+      "existingEvidence": "Private disclosure existed; effective persisted control was insufficient",
+      "source": "Maintained builders and private client",
+      "exportLocation": "Checkbox + build meta; local quality metadata",
+      "status": "MISSING",
+      "action": "Resolved real persisted switch, initialization/enqueue/flush/retry/page-exit guards, pending cancellation and refresh/re-enable tests."
+    },
+    {
+      "area": "Collection",
+      "analysisQuestion": "Are public/default Composer builds local-only?",
+      "existingEvidence": "Public derived adapter excludes transport and private identity",
+      "source": "Public sync and generated Composer browser tests",
+      "exportLocation": "Local storage/CSV only",
+      "status": "ALREADY CAPTURED",
+      "action": "Preserve zero remote telemetry requests and no new persistent browser identity."
+    },
+    {
+      "area": "Collection",
+      "analysisQuestion": "Does disabling erase previously accepted records?",
+      "existingEvidence": "Browser cannot retract in-flight/accepted data",
+      "source": "Contract governance handoff",
+      "exportLocation": "Owner/admin process, outside this task",
+      "status": "INTENTIONALLY EXCLUDED",
+      "action": "Cancel pending events only; owner decides retention, access and treatment of accepted data."
+    }
+  ]
+}

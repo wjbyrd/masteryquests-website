@@ -3,6 +3,8 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
+// Set false before generating a private local-only build. This is an application transmission control, not retrospective deletion.
+const REMOTE_COLLECTION_ENABLED = true;
 export const games=['cost-directive','market-signal','strategy-desk','agency-protocol'];
 export const publicRoot='play/managerial-intelligence-directorate';
 export const pocRoot='play/managerial-directorate-telemetry-poc';
@@ -23,10 +25,11 @@ export function instrumentHTML(root,game){
  const old='        if(storageKey) localStorage.setItem(storageKey, "true");';
  const replacement=poc.match(/        if\(storageKey\)\{\n            const alreadyOwned[\s\S]*?\n        }/)[0];
  s=replaceOnce(s,old,replacement);
- const head=`<meta name="robots" content="noindex,nofollow,noarchive"><meta name="anonymous-telemetry-phase" content="phaseAnonymousTelemetryPOC-v1"><base href="/${publicRoot}/${game}/"><script src="/${classroomRoot}/telemetry-storage-isolation.js"></script>`;
+ const head=`<meta name="robots" content="noindex,nofollow,noarchive"><meta name="anonymous-telemetry-collection" content="${REMOTE_COLLECTION_ENABLED ? 'enabled' : 'disabled'}"><meta name="anonymous-telemetry-phase" content="phaseAnonymousTelemetryPOC-v1"><base href="/${publicRoot}/${game}/"><script src="/${classroomRoot}/telemetry-storage-isolation.js"></script>`;
  s=replaceOnce(s,'<head>','<head>'+head);
  // Install on original engine callbacks before the parity adapter captures them.
  s=replaceOnce(s,'<script src="../managerial-parity.js"></script>',`<script src="/${classroomRoot}/telemetry-client.js" data-game-id="${game}"></script>\n<script src="../managerial-parity.js"></script>`);
+ s=s.replace('try { safeStorageSet(key, JSON.stringify(value)); }','try { if(!safeStorageSet(key, JSON.stringify(value)))state.quality.storageFailures++; }');
  return s;
 }
 export function classroomClient(root){
@@ -35,6 +38,7 @@ export function classroomClient(root){
  s=s.replace(/  const FAILURE_KEY[^\n]+\n/,'');
  s=s.replace(/  const params = new URLSearchParams[\s\S]*?  const syntheticMode[^\n]+\n/,'  const endpoint = DEFAULT_ENDPOINT;\n');
  s=s.replace('    failureSimulation: localStorage.getItem(FAILURE_KEY) === "1",\n','').replace('    debugNode: null\n','');
+ s=s.replace('failureSimulation: readJSON(FAILURE_KEY,0) === 1,\n','');
  s=s.replace('synthetic: Boolean(options.synthetic || syntheticMode)','synthetic: false');
  s=s.replace(/    if \(state.failureSimulation\) \{[\s\S]*?\n    }\n/,'');
  const disclosureStart=s.indexOf('  function addDisclosure()');
@@ -48,6 +52,9 @@ export function classroomClient(root){
       details.hidden = !details.hidden;
       event.currentTarget.setAttribute("aria-expanded", String(!details.hidden));
     };
+    const control=document.createElement('label');control.innerHTML='<input type="checkbox"> Send future anonymous gameplay events';
+    const toggle=control.querySelector('input');toggle.checked=remoteEnabled();
+    toggle.addEventListener('change',()=>{toggle.checked=setRemoteCollection(toggle.checked);});disclosure.appendChild(control);
     document.getElementById("gameMenuOptions")?.appendChild(disclosure);
   }
 
@@ -57,7 +64,7 @@ export function classroomClient(root){
  // Storage can be denied or full; instrumentation must still fail open.
  s=s.replaceAll('localStorage.getItem(', 'safeStorageGet(').replaceAll('localStorage.setItem(', 'safeStorageSet(');
  s=s.replace('  function readJSON(key, fallback) {',`  function safeStorageGet(key) { try { return localStorage.getItem(key); } catch (_) { return null; } }
-  function safeStorageSet(key, value) { try { localStorage.setItem(key, value); } catch (_) {} }
+  function safeStorageSet(key, value) { try { localStorage.setItem(key, value); return true; } catch (_) { return false; } }
   let memoryClientId = "";
 
   function readJSON(key, fallback) {`);

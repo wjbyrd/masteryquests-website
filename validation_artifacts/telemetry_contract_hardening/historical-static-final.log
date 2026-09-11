@@ -1,0 +1,57 @@
+PASS: public local telemetry derived from maintained private helpers; four script includes verified.
+{
+  "passed": 6,
+  "failed": 5,
+  "protectedFiles": 1648,
+  "results": [
+    {
+      "name": "Generated tracker/readiness/snapshot/CSV functions and four public includes are synchronized",
+      "status": "PASS"
+    },
+    {
+      "name": "No network transport, anonymous identity, queue or private endpoint in local adapter",
+      "status": "PASS"
+    },
+    {
+      "name": "cost-directive original engine/answer/mode/save logic unchanged",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '352b9333c050c41857beaf72ea81c0c17148d8f786e4f8a606b0ec1b0b925135'\n- '55b38fe85ce94fee6278dea7ae84bea315ff1efb6f909fa9646369fe77082527'\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:8:252\n    at check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:5:29)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:8:26\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "name": "cost-directive classroom regeneration unchanged, no public tracker duplication",
+      "status": "PASS"
+    },
+    {
+      "name": "market-signal original engine/answer/mode/save logic unchanged",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '9a1cf62618808b2d1db22705e2a3808ff2d6d1c5ef5f55eb5d9bbcfae54c1bb1'\n- '203a3b7654b2b9e99a2885ca5cffeb91d67ab4f245757d3a77808b52d881bbc0'\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:8:252\n    at check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:5:29)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:8:26\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "name": "market-signal classroom regeneration unchanged, no public tracker duplication",
+      "status": "PASS"
+    },
+    {
+      "name": "strategy-desk original engine/answer/mode/save logic unchanged",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '067db1133fbe27bc1ae4fc121f333de010879ce92523c5da15138dc8b462f1e1'\n- '019fff358bc1cf76338f532208cd145e1e7b516db4529bacd2e333f8119af85f'\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:8:252\n    at check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:5:29)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:8:26\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "name": "strategy-desk classroom regeneration unchanged, no public tracker duplication",
+      "status": "PASS"
+    },
+    {
+      "name": "agency-protocol original engine/answer/mode/save logic unchanged",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'd0bb46c079ee85be03f4d19858bc223ec50b72b6dfddb65d879348aca283f6bb'\n- '8064c3e81c08958887cdac6d8173fe25b552ae644444d6295b523273684cf376'\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:8:252\n    at check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:5:29)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:8:26\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    },
+    {
+      "name": "agency-protocol classroom regeneration unchanged, no public tracker duplication",
+      "status": "PASS"
+    },
+    {
+      "name": "All bank files, resources, shared UI, artifacts, private clients, and Composer remain byte-identical",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: build/faculty-build-composer/data/composer_library_manifest.json\n+ actual - expected\n\n+ '3ddf4b7a13ef13359f67d8269ef6b8794810060f728c63c0076a9da2cfa4517d'\n- 'fc99e8f0090846bc3ef4566104ed6e0f0568313486c6474b677b3abbd2f1e4aa'\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:9:282\n    at check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:5:29)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/published_managerial_parity/check.mjs:9:1\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)"
+    }
+  ]
+}

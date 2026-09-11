@@ -1,3 +1,4 @@
+import {parseCSV} from '../telemetry_contract/validate.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -69,7 +70,7 @@ const call=(pathname,{method='GET',body,admin=false,origin='https://private.exam
 await check('M/N Worker ingestion, idempotency, legacy and CSV export',async()=>{
  for(const clientId of new Set(fixtures.map(e=>e.anonymousClientId))){const events=fixtures.filter(e=>e.anonymousClientId===clientId);for(let i=0;i<events.length;i+=25){const body={phase:PHASE,events:events.slice(i,i+25)};const response=await call('/v1/events',{method:'POST',body});assert.equal(response.status,202,await response.text());const dup=await call('/v1/events',{method:'POST',body});assert.equal((await dup.json()).accepted,0);}}
  const legacy={...fixtures[0],eventId:webcrypto.randomUUID(),runId:webcrypto.randomUUID(),sequenceNumber:1,schemaVersion:1};for(const k of BEHAVIOR_FIELDS)delete legacy[k];assert.equal((await call('/v1/events',{method:'POST',body:{phase:PHASE,events:[legacy]}})).status,202);
- const response=await call('/v1/admin/export.csv?includeSynthetic=1',{admin:true});assert.equal(response.status,200);const csv=await response.text();for(const key of [...BEHAVIOR_FIELDS,'responseTimeMs'])assert(csv.split('\r\n')[0].includes('"'+key+'"'));const header=csv.split('\r\n')[0].split(',');const row=csv.split('\r\n').find(r=>r.includes(legacy.eventId)).split(',');for(const key of BEHAVIOR_FIELDS)assert.equal(row[header.indexOf('"'+key+'"')],'""');
+ const response=await call('/v1/admin/export.csv?includeSynthetic=1',{admin:true});assert.equal(response.status,200);const csv=await response.text();for(const key of [...BEHAVIOR_FIELDS,'responseTimeMs'])assert(csv.split('\r\n')[0].includes('"'+key+'"'));const parsed=parseCSV(csv),header=parsed[0],row=parsed.find(r=>r.includes(legacy.eventId));for(const key of BEHAVIOR_FIELDS)assert.equal(row[header.indexOf(key)],'');
  const run=fixtures.find(e=>e.copyCount===1&&e.timeCopyToHideMs!=null).runId;const reconstruction=await(await call('/v1/admin/runs/'+run+'/reconstruct',{admin:true})).json();assert(JSON.stringify(reconstruction).includes('timeCopyToHideMs'));fs.writeFileSync(path.join(out,'reconstruction.json'),JSON.stringify(reconstruction,null,2));fs.writeFileSync(path.join(out,'synthetic-export.csv'),csv);
  assert.equal((await call('/v1/admin/summary')).status,401);assert.equal((await call('/v1/events',{method:'POST',origin:'https://unrelated.test',body:{phase:PHASE,events:[legacy]}})).status,403);assert.equal((await call('/v1/health')).status,200);
  const emptyCsv=await(await call('/v1/admin/export.csv?buildId=no-such-build',{admin:true})).text();assert.equal(emptyCsv.split('\r\n')[0],csv.split('\r\n')[0]);

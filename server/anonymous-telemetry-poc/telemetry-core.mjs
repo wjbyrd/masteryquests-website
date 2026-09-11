@@ -1,3 +1,4 @@
+import {CONTRACT_FIELDS,validateContractField} from './measurement-contract.mjs';
 export const PHASE = "phaseAnonymousTelemetryPOC-v1";
 export const MAX_BATCH_EVENTS = 50;
 export const MAX_BODY_BYTES = 131072;
@@ -24,7 +25,7 @@ export const QA_EXTRA_FIELDS = ["sourceRunId", "lifecycleReason", "acceptedAttem
   "wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"];
 const NUMERIC_EXTRAS = new Set(["wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"]);
 const BOOLEAN_EXTRAS = new Set(["acceptedAttempt", "artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned"]);
-const ALLOWED_EXTRA_KEYS = new Set(["selectionReason", "weaknessEstimate", "sourceEvent", ...QA_EXTRA_FIELDS, ...BEHAVIOR_FIELDS]);
+const ALLOWED_EXTRA_KEYS = new Set(["selectionReason", "weaknessEstimate", "sourceEvent", ...QA_EXTRA_FIELDS, ...BEHAVIOR_FIELDS, ...CONTRACT_FIELDS]);
 
 const FIELD_LIMITS = {
   buildId: 100, buildVersion: 80, phase: 80, gameId: 100, mode: 60, eventType: 80,
@@ -89,6 +90,7 @@ export function validateEnvelope(input) {
 
 export function normalizeEvent(event, index = 0) {
   assert(event && typeof event === "object" && !Array.isArray(event), `events[${index}] must be an object`);
+  assert([1,2,3].includes(event.schemaVersion),'Unsupported anonymous envelope schema');
   rejectForbiddenKeys(event, `events[${index}]`);
   assert(UUID_PATTERN.test(String(event.eventId || "")), `events[${index}].eventId must be a UUID`);
   assert(UUID_PATTERN.test(String(event.runId || "")), `events[${index}].runId must be a UUID`);
@@ -146,6 +148,7 @@ export function normalizeEvent(event, index = 0) {
   for (const [key, value] of Object.entries(event)) {
     if (NORMALIZED_FIELDS.includes(key)) continue;
     assert(ALLOWED_EXTRA_KEYS.has(key), `events[${index}].${key} is not an accepted research field`);
+    if(CONTRACT_FIELDS.includes(key)){try{extras[key]=validateContractField(key,value,event);}catch(error){throw new TelemetryValidationError(error.message);}}
     if(BEHAVIOR_FIELDS.includes(key)){
       assert(value===null || typeof value==='number',key+' must be numeric or null');
       extras[key]=value===null?null:cleanNumber(value,key,{min:0,max:BEHAVIOR_FLAGS.has(key)?1:BEHAVIOR_COUNTS.has(key)?1000000:172800000,integer:BEHAVIOR_FLAGS.has(key)||BEHAVIOR_COUNTS.has(key)});
@@ -185,8 +188,9 @@ export function normalizeEvent(event, index = 0) {
   for(const key of ['activeResponseTimeMs','hiddenTimeMs','unfocusedTimeMs','timeAfterReturnMs','timeAfterFocusMs','lastCopyElapsedMs','timeCopyToHideMs','timeCopyToBlurMs']){
     if(extras[key]!=null)assert(extras[key]<=normalized.responseTimeMs,key+' exceeds response interval');
   }
+  if(normalized.schemaVersion===3)assert(extras.contractID==='mq-measurement/1','Missing measurement contract');
   const extrasJson = JSON.stringify(extras);
-  assert(extrasJson.length <= 16384, `events[${index}] extras are too large`);
+  assert(extrasJson.length <= (normalized.schemaVersion===3?65536:16384), `events[${index}] extras are too large`);
   normalized.extras = extras;
   return normalized;
 }

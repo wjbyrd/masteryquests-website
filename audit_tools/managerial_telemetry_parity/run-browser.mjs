@@ -39,7 +39,7 @@ try{
     await page.evaluate(()=>{Object.defineProperty(document,'hidden',{configurable:true,get:()=>false});Object.defineProperty(document,'visibilityState',{configurable:true,get:()=> 'visible'});document.dispatchEvent(new Event('visibilitychange'));window.dispatchEvent(new Event('focus'));});
     await page.waitForTimeout(100);await answer(page);await flush(page);
     const e=captured().findLast(e=>e.gameId===game&&e.buildId===branch&&e.eventType==='answer_evaluated');assert(e,'answer received');
-    assert.equal(e.schemaVersion,2);assert.equal(e.tabSwitchCount,1);assert(e.hiddenTimeMs>=200);assert.equal(e.copyCount,1);assert(e.selectionCount>=1);assert(e.timeCopyToHideMs!==null);assert.equal(e.activeResponseTimeMs+e.hiddenTimeMs,e.responseTimeMs);assert(e.responseTimeMs<6000,'telemetry ignores mutated gameplay timer');
+    assert.equal(e.schemaVersion,3);assert.equal(e.tabSwitchCount,1);assert(e.hiddenTimeMs>=200);assert.equal(e.copyCount,1);assert(e.selectionCount>=1);assert(e.timeCopyToHideMs!==null);assert.equal(e.activeResponseTimeMs+e.hiddenTimeMs,e.responseTimeMs);assert(e.responseTimeMs<6000,'telemetry ignores mutated gameplay timer');
     for(const key of BEHAVIOR_FIELDS)assert(key in e,key);
    });
    if(game==='cost-directive'){
