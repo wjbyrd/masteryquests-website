@@ -1,0 +1,45 @@
+MICROECONOMICS
+MICRO-66
+Time:
+5 minutes
+Outcome:
+Explain how pairwise majority rule can generate
+cyclic collective preferences.
+Difficulty:
+Intermediate
+Condorcet Paradox & Voting Cycles
++
+THE CORE IDEA
+Even when every voter has a consistent ranking, pairwise majority voting can produce a cycle: A defeats B, B defeats C, and C
+defeats A. The group then has no option that defeats every alternative, and agenda order can affect the final outcome.
+?
+HOW TO RECOGNIZE IT
+-
+There are at least three alternatives and voters rank them differently.
+-
+Compare alternatives two at a time using majority rule.
+-
+The collective relation cycles even though each individual's ranking is consistent.
+-
+Because no option is a universal majority winner, agenda order may matter.
+!
+WATCH OUT
+A voting cycle does not require irrational voters. Individually transitive rankings can aggregate into an intransitive majority relation.
+#
+WORKED EXAMPLE: THREE VOTERS, THREE OPTIONS
+DIAGNOSE
+pairwise majority
+consistent voters
+A beats B
+B beats C
+C beats A
+Voter 1 ranks A > B > C; Voter 2 ranks B > C > A; Voter 3 ranks C > A > B.
+Against B, A wins with Voters 1 and 3. Against C, B wins with Voters 1 and 2.
+Against A, C wins with Voters 2 and 3. Thus the majority relation is A > B > C >
+A, so the agenda can determine which comparison occurs last and which option
+survives.
+?
+CHECK YOURSELF
+Why can changing the order of pairwise votes change the winner when majority preferences form a cycle?
+ READY?
+Return to the game and master this concept.

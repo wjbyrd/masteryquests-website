@@ -1,0 +1,186 @@
+{
+  "tests": [
+    {
+      "test": "missing_real_structure",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\missing_real_structure.pdf",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_REAL_STRUCTURE"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.1-11",
+        "7.1-3"
+      ]
+    },
+    {
+      "test": "meaningful_block_artifacted",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\meaningful_block_artifacted.pdf",
+      "detected": true,
+      "projectErrors": [
+        "BROKEN_CONTENT_ASSOCIATION",
+        "INCOMPLETE_OR_WRONG_READING_ORDER",
+        "MEANINGFUL_TEXT_ARTIFACTED"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.1-1",
+        "7.1-2"
+      ]
+    },
+    {
+      "test": "figure_missing_alternative",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\figure_missing_alternative.pdf",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_ALTERNATIVE"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.3-1"
+      ]
+    },
+    {
+      "test": "figure_placeholder_alternative",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\figure_placeholder_alternative.pdf",
+      "detected": true,
+      "projectErrors": [
+        "PLACEHOLDER_ALTERNATIVE"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "broken_content_association",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\broken_content_association.pdf",
+      "detected": true,
+      "projectErrors": [
+        "BROKEN_CONTENT_ASSOCIATION",
+        "INCOMPLETE_OR_WRONG_READING_ORDER",
+        "UNLINKED_MEANINGFUL_BLOCK"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.1-3"
+      ]
+    },
+    {
+      "test": "missing_language",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\missing_language.pdf",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_LANGUAGE"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.2-34",
+        "7.2-33"
+      ]
+    },
+    {
+      "test": "changed_formula",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\changed_formula.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CONTENT_CHANGED_OR_DUPLICATED",
+        "INCOMPLETE_OR_WRONG_READING_ORDER"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "changed_number",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\changed_number.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CONTENT_CHANGED_OR_DUPLICATED",
+        "INCOMPLETE_OR_WRONG_READING_ORDER"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "duplicated_source_text",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\duplicated_source_text.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CONTENT_CHANGED_OR_DUPLICATED"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "stale_graph_description",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\stale_graph_description.pdf",
+      "detected": true,
+      "projectErrors": [
+        "STALE_OR_UNLINKED_GRAPH"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "wrong_reading_order",
+      "file": "tmp\\pdf_accessibility\\repo_lock_v1\\negative\\wrong_reading_order.pdf",
+      "detected": true,
+      "projectErrors": [
+        "INCOMPLETE_OR_WRONG_READING_ORDER"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "mismatched_copy_bytes",
+      "detected": true,
+      "projectErrors": [
+        "ACTIVE_COPY_MISMATCH",
+        "MANIFEST_CHECKSUM_MISMATCH",
+        "MANIFEST_SIZE_MISMATCH"
+      ],
+      "independentValidatorDetected": null
+    },
+    {
+      "test": "missing_table_headers",
+      "detected": null,
+      "status": "NOT_RUN",
+      "reason": "Pilot has no valid content-linked table fixture; cannot claim isolated header-removal coverage.",
+      "independentValidatorDetected": null
+    },
+    {
+      "test": "new_unvalidated_document",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_OUTPUT",
+        "NEW_OR_UNAUTHORED_DOCUMENT",
+        "NO_REVIEWED_SEMANTIC_SOURCE",
+        "NO_VALIDATED_RELEASE_EVIDENCE"
+      ],
+      "independentValidatorDetected": null
+    },
+    {
+      "test": "missing_output",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_OUTPUT",
+        "NEW_OR_UNAUTHORED_DOCUMENT",
+        "NO_REVIEWED_SEMANTIC_SOURCE",
+        "NO_VALIDATED_RELEASE_EVIDENCE"
+      ],
+      "independentValidatorDetected": null
+    }
+  ],
+  "rootTests": [
+    {
+      "case": "traversal",
+      "passed": true
+    },
+    {
+      "case": "sibling_prefix_collision",
+      "passed": true
+    },
+    {
+      "case": "actual_windows_junction",
+      "passed": true
+    }
+  ]
+}

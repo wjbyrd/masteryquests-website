@@ -1,0 +1,38 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "pdf2image": "1.17.0",
+    "pdfminer.six": "20251230",
+    "pdfplumber": "0.11.9",
+    "pillow": "12.3.0",
+    "pypdf": "6.10.0",
+    "pypdfium2": "5.13.0",
+    "reportlab": "4.4.9"
+  },
+  "node": "24.14.1",
+  "poppler": "26.07.0",
+  "veraPDF": "1.28.2",
+  "java": "Eclipse Temurin JRE 17.0.16+8",
+  "selectedProfile": "ISO 14289-1:2014 / PDF/UA-1",
+  "candidatePdfVersion": "1.7",
+  "newPortableDependencies": [
+    {
+      "name": "veraPDF",
+      "version": "1.28.2",
+      "license": "GPL-3.0-or-later OR MPL-2.0-or-later",
+      "source": "https://software.verapdf.org/releases/1.28/verapdf-greenfield-1.28.2-installer.zip",
+      "downloadSha256": "d1693a5f0bf0997180f6d97e8a5568b0cf39e27eee338d439c8adb58435c1e89"
+    },
+    {
+      "name": "Eclipse Temurin JRE",
+      "version": "17.0.16+8",
+      "license": "GPL-2.0 with Classpath Exception",
+      "source": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jre_x64_windows_hotspot_17.0.16_8.zip",
+      "downloadSha256": "d35b05f4832215d8877d0dbf15c6370c854d7d5b812f890a9c0db8ad412a6bf2",
+      "upstreamChecksumVerified": true
+    }
+  ],
+  "globalChanges": false,
+  "projectToolLocation": "tmp/pdf_accessibility/repo_lock_v1/tools",
+  "temporaryLocations": "Intentional project products and validator java.io.tmpdir are inside the repository. Initial Java version/help invocations used normal JVM defaults, which may use the OS temporary/performance cache; no project output was directed there."
+}

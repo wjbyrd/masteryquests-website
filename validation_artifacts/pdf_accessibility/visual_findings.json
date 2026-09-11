@@ -1,0 +1,20 @@
+{
+  "pilotGeometry": "All seven candidates equal their baseline",
+  "measuredContrast": [
+    {
+      "foreground": "#008F95",
+      "background": "#EAF7F7",
+      "ratio": 3.570012991246963,
+      "rendererFont": "Helvetica-Bold",
+      "sizePt": 13,
+      "affectedPilot": [
+        "MICRO-54",
+        "MACRO-42"
+      ],
+      "where": "WATCH OUT and CHECK YOURSELF headings",
+      "finding": "Below the 4.5:1 normal-text threshold; 13-point bold is below the 14-point bold large-text threshold. Pre-existing and unchanged. Requires accessibility color adjustment and visual review before release."
+    }
+  ],
+  "zoomReview": "Rendered page inspection only. Interactive PDF reader zoom/reflow not tested.",
+  "collectionWideVisualReview": "NOT_COMPLETED: no batch permitted"
+}
