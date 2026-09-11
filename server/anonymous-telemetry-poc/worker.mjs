@@ -1,3 +1,5 @@
+import {govern,requireMaintenance} from './governance.mjs';
+import {configuration} from './governance-policy.mjs';
 import {CONTRACT_FIELDS} from './measurement-contract.mjs';
 import {
   MAX_BODY_BYTES,
@@ -39,7 +41,7 @@ async function route(request, env) {
   }
   if (pathname.startsWith("/v1/admin/")) {
     requireAdmin(request, env);
-    return adminRoute(request, env, pathname, url);
+    return noStore(await adminRoute(request, env, pathname, url));
   }
   return json({ ok: false, error: "not found" }, 404);
 }
@@ -229,23 +231,14 @@ async function adminRoute(request, env, pathname, url) {
       SELECT * FROM telemetry_events WHERE build_id = ? AND (? = 1 OR synthetic = 0)
       ORDER BY run_id, sequence_number LIMIT 50000
     `).bind(buildId, includeSynthetic ? 1 : 0).all();
-    return noStore(csv(rows.results || []));
+    const response=csv(rows.results || []);const policy=configuration(env);
+    response.headers.set('x-mq-governance-policy',policy.version);response.headers.set('x-mq-retention-mode',policy.mode);response.headers.set('x-mq-retention-days',policy.days===null?'unconfigured':String(policy.days));
+    return noStore(response);
   }
-  if (request.method === "POST" && pathname === "/v1/admin/cleanup") {
-    const body = await request.json().catch(() => ({}));
-    if (body.confirm !== "DELETE") return json({ ok: false, error: "confirm must equal DELETE" }, 400);
-    const scope = body.scope;
-    let where;
-    let binding;
-    if (scope === "synthetic") { where = "synthetic = 1"; binding = null; }
-    else if (scope === "build" && body.buildId) { where = "build_id = ?"; binding = String(body.buildId).slice(0, 100); }
-    else return json({ ok: false, error: "scope must be synthetic or a named build" }, 400);
-    const eventStatement = env.TELEMETRY_DB.prepare(`DELETE FROM telemetry_events WHERE ${where}`);
-    const runStatement = env.TELEMETRY_DB.prepare(`DELETE FROM telemetry_runs WHERE ${where}`);
-    const eventResult = binding === null ? await eventStatement.run() : await eventStatement.bind(binding).run();
-    const runResult = binding === null ? await runStatement.run() : await runStatement.bind(binding).run();
-    if (scope === "synthetic") await env.TELEMETRY_DB.prepare("DELETE FROM telemetry_ingest_batches WHERE synthetic = 1").run();
-    return noStore(json({ ok: true, phase: PHASE, deletedEvents: eventResult.meta?.changes || 0, deletedRuns: runResult.meta?.changes || 0 }));
+  if(request.method==='GET'&&pathname==='/v1/admin/governance')return json(await govern(request,env,'policy'));
+  if(request.method==='POST'&&['/v1/admin/retention','/v1/admin/delete-run','/v1/admin/cleanup'].includes(pathname)){
+    requireMaintenance(request,env);
+    return json(await govern(request,env,pathname.endsWith('/retention')?'retention':pathname.endsWith('/delete-run')?'run':'cleanup'));
   }
   return json({ ok: false, error: "admin route not found" }, 404);
 }

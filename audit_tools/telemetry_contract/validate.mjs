@@ -1,3 +1,5 @@
+import {createHash} from 'node:crypto';
+import {POLICY as GOVERNANCE_POLICY} from '../../server/anonymous-telemetry-poc/governance-policy.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -64,7 +66,19 @@ export function validateCSV(text){
  if(!current||records.some(r=>!r.contractID&&(r.event||r.event_type)!=='export_manifest'))limitations.push('Legacy rows have incomplete provenance/attempt linkage. Missing measurements stay unknown; older 57/75 labels are ambiguous.');
  return {status:issues.length?'NEEDS_REVIEW':'PASS',schema:recognized?.id||'unknown',...stats,versions:[...versions],issues,limitations:[...new Set(limitations)]};
 }
+
+export function validateGovernanceExport(text,sidecar){
+ if(!sidecar)return {status:'UNKNOWN',policyVersion:null,applicability:'No governance sidecar: policy at export/collection is unknown; do not infer one from a measurement version.',issues:[]};
+ const issues=[];const bad=detail=>issues.push({code:'GOVERNANCE_METADATA',detail});
+ if(sidecar.format!=='mq-export-governance/1'||sidecar.governancePolicyVersion!==GOVERNANCE_POLICY.version)bad('Unknown governance sidecar/policy version');
+ if(sidecar.measurementContract!==GOVERNANCE_POLICY.measurementContract)bad('Policy/measurement contract mismatch');
+ if(sidecar.exportSha256!==createHash('sha256').update(text).digest('hex'))bad('Sidecar belongs to different export bytes');
+ const retention=sidecar.retention;
+ if(!retention||!['manual','disabled'].includes(retention.mode)||retention.unit!=='whole-run'||retention.clock!=='latest-server-receipt'||!(retention.days===null||Number.isInteger(retention.days)&&retention.days>=GOVERNANCE_POLICY.minimumDays&&retention.days<=GOVERNANCE_POLICY.maximumDays))bad('Unsupported retention metadata');
+ return {status:issues.length?'NEEDS_REVIEW':'PASS',policyVersion:sidecar.governancePolicyVersion,retention,exportedAt:sidecar.exportedAt,scope:sidecar.scope,applicability:'Current server policy at export only; historical event policy unknown. No retention is enforced on this local file.',issues};
+}
+
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
- const input=process.argv[2];if(!input){console.error('Usage: node audit_tools/telemetry_contract/validate.mjs export.csv [report.json]');process.exitCode=2;}
- else{let report;try{report=validateCSV(fs.readFileSync(input,'utf8'));}catch(e){report={status:'NEEDS_REVIEW',issues:[{code:'MALFORMED_EXPORT',detail:e.message}]};}const output=JSON.stringify(report,null,2)+'\n';if(process.argv[3])fs.writeFileSync(process.argv[3],output);console.log(output);console.error(`${report.status}: ${report.rows??0} rows; ${report.acceptedAttempts===null?'uninterpreted':report.acceptedAttempts??0} accepted responses; ${report.issues.length} findings.`);if(report.issues.length)process.exitCode=1;}
+ const input=process.argv[2];if(!input){console.error('Usage: node audit_tools/telemetry_contract/validate.mjs export.csv [report.json] [export.csv.governance.json]');process.exitCode=2;}
+ else{let report;try{const text=fs.readFileSync(input,'utf8');report=validateCSV(text);report.governance=validateGovernanceExport(text,process.argv[4]?JSON.parse(fs.readFileSync(process.argv[4],'utf8')):null);report.issues.push(...report.governance.issues);if(report.governance.issues.length)report.status='NEEDS_REVIEW';}catch(e){report={status:'NEEDS_REVIEW',issues:[{code:'MALFORMED_EXPORT',detail:e.message}]};}const output=JSON.stringify(report,null,2)+'\n';if(process.argv[3])fs.writeFileSync(process.argv[3],output);console.log(output);console.error(`${report.status}: ${report.rows??0} rows; ${report.acceptedAttempts===null?'uninterpreted':report.acceptedAttempts??0} accepted responses; ${report.issues.length} findings.`);if(report.issues.length)process.exitCode=1;}
 }

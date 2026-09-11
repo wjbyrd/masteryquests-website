@@ -1,0 +1,118 @@
+{
+  "phase": "before governance edits",
+  "sources": [
+    "server/anonymous-telemetry-poc/worker.mjs",
+    "server/anonymous-telemetry-poc/migrations/0001_initial.sql",
+    "server/anonymous-telemetry-poc/migrations/0002_completion_semantics.sql",
+    "server/anonymous-telemetry-poc/wrangler.jsonc",
+    "wrangler.jsonc",
+    "privacy/index.html",
+    "how-to/index.html",
+    "how-to/telemetry-data-dictionary/index.html",
+    "audit_tools/managerial_classroom/build.mjs",
+    "TELEMETRY_CONTRACT.md",
+    "FINAL_REPORT_telemetry_contract_hardening.md"
+  ],
+  "rows": [
+    {
+      "area": "Application event/run retention",
+      "currentTechnicalBehavior": "Events received_at and runs last_received_at exist. No age purge; broad explicit cleanup only.",
+      "currentPublicWording": "Privacy defers retention to course/institution; no selected server duration.",
+      "currentPrivateWording": "Research purpose described; no period.",
+      "enforced": "No automatic age enforcement",
+      "documented": "Partial",
+      "gap": "Retention mechanism absent; receipt indexes adequate for small POC, age filtering scans runs.",
+      "recommendedAction": "Manual whole-run purge by latest server receipt; owner duration pending."
+    },
+    {
+      "area": "Auxiliary application records",
+      "currentTechnicalBehavior": "Ingest batches store browser ID/receipt/counts. Rate-limit windows probabilistically remove old windows.",
+      "currentPublicWording": "No detailed table inventory.",
+      "currentPrivateWording": "No detailed table inventory.",
+      "enforced": "Partial",
+      "documented": "No",
+      "gap": "Receipt and rate-limit metadata also require a custody/retention boundary.",
+      "recommendedAction": "Age-purge old batch receipts and rate-limit windows; disclose their separate unit."
+    },
+    {
+      "area": "Administrative access",
+      "currentTechnicalBehavior": "ADMIN_TOKEN protects summary/anomalies/run/reconstruct/export/cleanup; single shared capability.",
+      "currentPublicWording": "High-level security wording.",
+      "currentPrivateWording": "No credential custody guidance.",
+      "enforced": "Yes, single token",
+      "documented": "Partial",
+      "gap": "No named credential custodian, rotation/revocation guidance or optional write separation.",
+      "recommendedAction": "Keep ADMIN_TOKEN; add optional maintenance capability; owner selects holders."
+    },
+    {
+      "area": "Accepted-data deletion",
+      "currentTechnicalBehavior": "POST cleanup supports synthetic/build scopes, explicit DELETE; no run preview.",
+      "currentPublicWording": "Local/site-data choices; no run-specific administrative path.",
+      "currentPrivateWording": "Opt-out disclosure did not fully distinguish accepted/pending.",
+      "enforced": "Broad cleanup only",
+      "documented": "Partial",
+      "gap": "No small scoped dry-run deletion; synthetic rows could partially affect a mixed run.",
+      "recommendedAction": "Run UUID preview/execute; whole-run cleanup selection; no identity lookup."
+    },
+    {
+      "area": "Collection control",
+      "currentTechnicalBehavior": "Contract 1 enabled/disabled flag; pending cancellation and refresh persistence.",
+      "currentPublicWording": "Stale schema-2 reference; distinctions otherwise clear.",
+      "currentPrivateWording": "Checkbox exists; prose always sounds enabled.",
+      "enforced": "Yes",
+      "documented": "Partial",
+      "gap": "Current-state wording and accepted-data consequence incomplete.",
+      "recommendedAction": "Update wording/status only; preserve tested implementation."
+    },
+    {
+      "area": "Local game data",
+      "currentTechnicalBehavior": "Browser state and capped local CSV retained; no public transport; manifests persisted per run.",
+      "currentPublicWording": "Local data and intentional submission described.",
+      "currentPrivateWording": "Local download not prominent in disclosure.",
+      "enforced": "Local-only public boundary",
+      "documented": "Yes",
+      "gap": "Student shared visibility should be explicit.",
+      "recommendedAction": "Preserve download and behavioral fields; explain shared-profile/site-data consequences."
+    },
+    {
+      "area": "Download/export custody",
+      "currentTechnicalBehavior": "Browser downloads and authenticated CSV export create unmanaged copies.",
+      "currentPublicWording": "Submitted copies governed by recipient; admin copies not explicit.",
+      "currentPrivateWording": "No specific disposal guidance.",
+      "enforced": "Cannot control arbitrary files",
+      "documented": "Partial",
+      "gap": "Server deletion could be misunderstood as deleting all copies.",
+      "recommendedAction": "Concise recipient responsibility and disposal guidance; no institutional rule invented."
+    },
+    {
+      "area": "Persistent anonymous browser UUID",
+      "currentTechnicalBehavior": "Existing random client ID links private runs; no identity verification.",
+      "currentPublicWording": "Linkability already acknowledged.",
+      "currentPrivateWording": "Described as anonymous without enough linkage context.",
+      "enforced": "Yes, linkable",
+      "documented": "Partial",
+      "gap": "Avoid overstating anonymity.",
+      "recommendedAction": "Explain linkable browser runs, no deanonymization or client-history delete UI."
+    },
+    {
+      "area": "Provider/infrastructure logging",
+      "currentTechnicalBehavior": "Two Wrangler configs define routes/assets/D1/rate limit; no explicit logs/observability/logpush retention. Worker console.error on 5xx.",
+      "currentPublicWording": "Provider ordinary request metadata may exist.",
+      "currentPrivateWording": "Application-content exclusions only.",
+      "enforced": "Outside verified application scope",
+      "documented": "Partial",
+      "gap": "Account/provider retention and access not inferable from repository.",
+      "recommendedAction": "External owner verification; no provider settings changed."
+    },
+    {
+      "area": "Policy identity and export interpretation",
+      "currentTechnicalBehavior": "Measurement registry exists; no governance identity. Offline validator already performs export QA.",
+      "currentPublicWording": "No governance version.",
+      "currentPrivateWording": "No disclosure version.",
+      "enforced": "No separate policy identity",
+      "documented": "No",
+      "gap": "Need separate policy provenance without restamping events or changing schema.",
+      "recommendedAction": "Governance/disclosure source plus admin headers and optional hash-bound sidecar; reuse validator."
+    }
+  ]
+}

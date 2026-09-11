@@ -9,7 +9,7 @@ export const games=['cost-directive','market-signal','strategy-desk','agency-pro
 export const publicRoot='play/managerial-intelligence-directorate';
 export const pocRoot='play/managerial-directorate-telemetry-poc';
 export const classroomRoot='play/managerial-directorate-classroom';
-export const disclosure='This private class build records anonymous gameplay activity to help evaluate and improve the game. It records visibility/focus timing and counts of question-area selection/copy actions, never selected or copied text. It does not collect your name, email, student ID, or course identity.';
+export const disclosure="This private build records game interactions, including answers, timing, and counts of relevant selection/copy actions. It never stores selected or copied content, clipboard contents, keystrokes, or unrelated-tab activity. A random browser ID can link runs without identifying a person. Use Download Game Data to inspect your own record. A tab switch or copy action alone does not establish misconduct, intent, attention, cognition, or learning. Turning off future transmission cancels pending unsent events and keeps local downloads available; the choice persists after refresh when browser storage is available. Re-enabling does not replay cancelled events. It cannot retract in-flight requests or delete accepted server records, downloaded copies, or backups. Retention and access arrangements require the course or study notice. Disclosure mq-disclosure/1; governance mq-governance/1.";
 export const read=(root,p)=>fs.readFileSync(path.join(root,p),'utf8');
 function replaceOnce(s,a,b){if(!s.includes(a)||s.indexOf(a)!==s.lastIndexOf(a))throw Error('Expected one match: '+a.slice(0,100));return s.replace(a,b);}
 export function instrumentHTML(root,game){
@@ -46,7 +46,7 @@ export function classroomClient(root){
  s=s.slice(0,disclosureStart)+`  function addDisclosure() {
     const disclosure = document.createElement("div");
     disclosure.id = "anonymousTelemetryDisclosure";
-    disclosure.innerHTML = "<button type='button' class='game-menu-option' aria-expanded='false' aria-controls='anonymousTelemetryDetails'>About this class build</button><p id='anonymousTelemetryDetails' hidden>This private class build records anonymous gameplay activity to help evaluate and improve the game. It records visibility/focus timing and counts of question-area selection/copy actions, never selected or copied text. It does not collect your name, email, student ID, or course identity.</p>";
+    disclosure.innerHTML = "<button type='button' class='game-menu-option' aria-expanded='false' aria-controls='anonymousTelemetryDetails'>About this class build</button><p id='anonymousTelemetryDetails' hidden>This private build records game interactions, including answers, timing, and counts of relevant selection/copy actions. It never stores selected or copied content, clipboard contents, keystrokes, or unrelated-tab activity. A random browser ID can link runs without identifying a person. Use Download Game Data to inspect your own record. A tab switch or copy action alone does not establish misconduct, intent, attention, cognition, or learning. Turning off future transmission cancels pending unsent events and keeps local downloads available; the choice persists after refresh when browser storage is available. Re-enabling does not replay cancelled events. It cannot retract in-flight requests or delete accepted server records, downloaded copies, or backups. Retention and access arrangements require the course or study notice. Disclosure mq-disclosure/1; governance mq-governance/1. <a href='/privacy/'>Privacy and your choices</a></p>";
     disclosure.querySelector("button").onclick = event => {
       const details = disclosure.querySelector("p");
       details.hidden = !details.hidden;
@@ -55,6 +55,9 @@ export function classroomClient(root){
     const control=document.createElement('label');control.innerHTML='<input type="checkbox"> Send future anonymous gameplay events';
     const toggle=control.querySelector('input');toggle.checked=remoteEnabled();
     toggle.addEventListener('change',()=>{toggle.checked=setRemoteCollection(toggle.checked);});disclosure.appendChild(control);
+    // BEGIN GOVERNANCE STATUS
+    const collectionStatus=document.createElement('p');const updateCollectionStatus=()=>{collectionStatus.textContent=remoteEnabled()?'Anonymous transmission is enabled. Local Download Game Data remains available.':'Anonymous transmission is disabled. Game data and Download Game Data remain local.';};updateCollectionStatus();toggle?.addEventListener?.('change',updateCollectionStatus);disclosure.appendChild?.(collectionStatus);
+    // END GOVERNANCE STATUS
     document.getElementById("gameMenuOptions")?.appendChild(disclosure);
   }
 

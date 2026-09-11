@@ -1,0 +1,68 @@
+{
+  "governancePolicyVersion": "mq-governance/1",
+  "decisions": [
+    {
+      "decision": "Application telemetry retention period",
+      "options": "A finite owner-approved duration; manual review without configured duration; explicitly disabled retention",
+      "technicalConsequence": "TELEMETRY_RETENTION_DAYS accepts 1–36500 whole days (engineering bounds, not a recommendation). Missing value refuses time purge.",
+      "privacyResearchConsequence": "Shorter retention reduces exposure; longer retention permits longitudinal/reproducibility work.",
+      "recommendedChoice": "Select the shortest duration justified by the approved purpose; no numeric recommendation without that purpose.",
+      "ownerSelection": "Pending; no period selected",
+      "implementationStatus": "Mechanism implemented; unconfigured by default."
+    },
+    {
+      "decision": "Manual or automatic purge",
+      "options": "Manual reviewed invocations; an externally scheduled authenticated job after separate approval",
+      "technicalConsequence": "Only manual/disabled modes exist. No cron or scheduled Worker handler is installed.",
+      "privacyResearchConsequence": "Manual review reduces accidental loss but requires accountable execution; scheduling improves consistency with added destructive operational risk.",
+      "recommendedChoice": "Start with reviewed manual execution; approve scheduling separately if operational need is established.",
+      "ownerSelection": "Pending",
+      "implementationStatus": "Manual mechanism ready; automatic activation intentionally absent."
+    },
+    {
+      "decision": "Who may hold admin/export credentials",
+      "options": "One accountable POC custodian; limited authorized analyst custodians; optional separate maintenance credential",
+      "technicalConsequence": "ADMIN_TOKEN permits all reads and, unless MAINTENANCE_TOKEN is configured, destructive routes. With separation, writes require both admin authentication and maintenance credential.",
+      "privacyResearchConsequence": "Shared tokens provide no individual audit attribution and rotation affects all holders.",
+      "recommendedChoice": "Limit ADMIN_TOKEN holders to named approved custodians; configure separate MAINTENANCE_TOKEN before sharing export access.",
+      "ownerSelection": "Pending; no person or role assigned",
+      "implementationStatus": "Authentication retained; optional capability separation implemented."
+    },
+    {
+      "decision": "Previously accepted records after opt-out",
+      "options": "Retain under approved retention basis; review an authorized run-specific deletion request",
+      "technicalConsequence": "Collection switch cancels pending events only. Admin run deletion is separate, previewable and confirmed. Late retries can recreate records.",
+      "privacyResearchConsequence": "Immediate deletion can harm longitudinal integrity; retention despite opt-out requires transparent approved arrangements.",
+      "recommendedChoice": "Explain accepted-data handling before use; provide a custodian-mediated process where appropriate, without promising identity lookup.",
+      "ownerSelection": "Pending",
+      "implementationStatus": "Run deletion implemented; no automatic retrospective deletion."
+    },
+    {
+      "decision": "Downloaded admin exports",
+      "options": "Approved restricted repository with disposal register; other institution-approved research storage",
+      "technicalConsequence": "D1 cannot delete arbitrary downloaded, submitted or backup copies. Hash-bound sidecar documents export context.",
+      "privacyResearchConsequence": "Extra copies enlarge access/retention scope and need recipient accountability.",
+      "recommendedChoice": "Minimize copies and recipients; track custody and apply the approved disposal schedule to each location.",
+      "ownerSelection": "Pending",
+      "implementationStatus": "Custody guide and export sidecar ready; no invented institutional storage rule."
+    },
+    {
+      "decision": "Browser-local/downloaded-file custody language",
+      "options": "Retain provided factual description; adapt course/study notice under institutional procedures",
+      "technicalConsequence": "Public/default Composer remains local-only; local download alone does not submit. Browser site-data removal can erase progress.",
+      "privacyResearchConsequence": "Shared browser profiles expose local records; submissions shift custody to receiving system/person.",
+      "recommendedChoice": "Use the factual shared-visibility/custody wording and state actual course submission expectations.",
+      "ownerSelection": "Pending approval of notice; local-only/download boundary already required by task and TELEMETRY_CONTRACT.md",
+      "implementationStatus": "Factual wording implemented; policy approval remains open."
+    },
+    {
+      "decision": "Infrastructure/provider logging responsibility",
+      "options": "Designated platform account custodian verifies dashboard settings, access, backups and retention",
+      "technicalConsequence": "Repository has no explicit observability/logpush/log-retention setting; Worker has console.error on server faults. Account settings/provider defaults not inspected.",
+      "privacyResearchConsequence": "Network/provider records can include request information beyond the content-free application table.",
+      "recommendedChoice": "Assign an accountable provider administrator to verify/document real settings before institutional/research use.",
+      "ownerSelection": "Pending",
+      "implementationStatus": "External verification required; provider settings unchanged."
+    }
+  ]
+}

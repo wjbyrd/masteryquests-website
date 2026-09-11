@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "command": "node audit_tools/telemetry_governance/render.mjs --check",
+      "exitCode": 0,
+      "stdout": "PASS: governance disclosures match canonical policy.\n",
+      "stderr": ""
+    },
+    {
+      "command": "node audit_tools/telemetry_contract/generate.mjs --check",
+      "exitCode": 0,
+      "stdout": "PASS: deterministic artifact registry and embedded contract helpers.\n",
+      "stderr": ""
+    },
+    {
+      "command": "node audit_tools/managerial_telemetry_parity/sync-composer-behavior.mjs --check",
+      "exitCode": 0,
+      "stdout": "PASS: Composer behavioral helpers and derived classroom client are synchronized.\nPASS: public local telemetry derived from maintained private helpers; four script includes verified.\n",
+      "stderr": ""
+    },
+    {
+      "command": "node audit_tools/telemetry_contract/inventory.mjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"schemas\": [\n    {\n      \"id\": \"managerial-local-contract1\",\n      \"fields\": 87\n    },\n    {\n      \"id\": \"composer-local-contract1\",\n      \"fields\": 116\n    },\n    {\n      \"id\": \"anonymous-contract1\",\n      \"fields\": 81\n    },\n    {\n      \"id\": \"legacy-managerial-75\",\n      \"fields\": 75\n    },\n    {\n      \"id\": \"legacy-managerial-57\",\n      \"fields\": 57\n    },\n    {\n      \"id\": \"legacy-composer-v4\",\n      \"fields\": 104\n    },\n    {\n      \"id\": \"legacy-anonymous-v1-v2\",\n      \"fields\": 69\n    }\n  ],\n  \"documentedFields\": 179\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node audit_tools/telemetry_data_dictionary/check.mjs",
+      "exitCode": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"dictionaryFields\": 87,\n  \"driftSelfTest\": \"PASS\",\n  \"results\": [\n    {\n      \"build\": \"managerial-directorate-classroom\",\n      \"game\": \"cost-directive\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-directorate-classroom\",\n      \"game\": \"market-signal\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-directorate-classroom\",\n      \"game\": \"strategy-desk\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-directorate-classroom\",\n      \"game\": \"agency-protocol\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-directorate-telemetry-poc\",\n      \"game\": \"cost-directive\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-directorate-telemetry-poc\",\n      \"game\": \"market-signal\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-directorate-telemetry-poc\",\n      \"game\": \"strategy-desk\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-directorate-telemetry-poc\",\n      \"game\": \"agency-protocol\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-intelligence-directorate\",\n      \"game\": \"cost-directive\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-intelligence-directorate\",\n      \"game\": \"market-signal\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-intelligence-directorate\",\n      \"game\": \"strategy-desk\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    },\n    {\n      \"build\": \"managerial-intelligence-directorate\",\n      \"game\": \"agency-protocol\",\n      \"columns\": 87,\n      \"missing\": [],\n      \"stale\": []\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "node audit_tools/telemetry_data_dictionary/render.mjs --check",
+      "exitCode": 0,
+      "stdout": "Rendered inventory: PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": "node audit_tools/anonymous_telemetry_poc/create_private_build.mjs . --check",
+      "exitCode": 0,
+      "stdout": "PASS: POC integration and maintained collection setting; engine/award hooks preserved.\n",
+      "stderr": ""
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

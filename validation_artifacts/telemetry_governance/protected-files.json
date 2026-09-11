@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "baselineFiles": 4911,
+  "changedExisting": 12,
+  "unchangedExisting": 4899,
+  "changed": [
+    "audit_tools/managerial_classroom/build.mjs",
+    "audit_tools/telemetry_contract/registry.json",
+    "audit_tools/telemetry_contract/validate.mjs",
+    "build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html",
+    "how-to/index.html",
+    "how-to/telemetry-data-dictionary/index.html",
+    "play/managerial-directorate-classroom/index.html",
+    "play/managerial-directorate-classroom/telemetry-client.js",
+    "play/managerial-directorate-telemetry-poc/telemetry-client.js",
+    "play/managerial-intelligence-directorate/local-telemetry.js",
+    "privacy/index.html",
+    "server/anonymous-telemetry-poc/worker.mjs"
+  ],
+  "semanticChecks": [
+    {
+      "path": "build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html",
+      "status": "PASS"
+    },
+    {
+      "path": "play/managerial-intelligence-directorate/local-telemetry.js",
+      "status": "PASS"
+    },
+    {
+      "path": "play/managerial-directorate-classroom/telemetry-client.js",
+      "status": "PASS"
+    },
+    {
+      "path": "play/managerial-directorate-telemetry-poc/telemetry-client.js",
+      "status": "PASS"
+    }
+  ],
+  "frozenScope": "All baseline files outside the twelve listed governance integration paths are byte-identical, including all game HTML, banks, assets, PDFs, LO data, measurement release/schema/runtime/core and applied migrations."
+}

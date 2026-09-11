@@ -1,0 +1,13 @@
+{
+  "format": "mq-export-governance/1",
+  "governancePolicyVersion": "mq-governance/1",
+  "measurementContract": "mq-measurement/1",
+  "exportSha256": "4a8beee0f061de10c261b9a96856e1392c7ac6409e5c4834c38e6a2a1d35c753",
+  "exportedAt": "2026-09-10T12:00:00.000Z",
+  "retention": {
+    "days": 30,
+    "mode": "manual",
+    "unit": "whole-run",
+    "clock": "latest-server-receipt"
+  }
+}
