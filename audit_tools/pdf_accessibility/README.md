@@ -1,33 +1,35 @@
-# PDF accessibility pilot tooling
+# Concept Review accessibility pipeline
 
-Task: PDF_ACCESSIBILITY_REPO_LOCK_V1
+Current task: `PDF_ACCESSIBILITY_PILOT_BLOCKERS_V1`. Eight local pilots only. Full-library batching and active installation require separate owner authorization.
 
-**Experimental pilot; no batch approval and no production installer.** Five staged PDFs pass veraPDF 1.28.2's explicit PDF/UA-1 profile. Two fail font embedding. The payoff-table sheet is rejected. Inline formula semantics and human assistive-technology checks remain pending. Successful syntax validation is not release approval.
+Run from `C:\Users\Jennings\Documents\GitHub\masteryquests-website` using the pinned Python dependencies in `requirements.txt`. Every input/output is checked by `repo_guard.py`; no alternate checkout or redirected path is accepted.
 
-All commands must run with working directory `C:\Users\Jennings\Documents\GitHub\masteryquests-website`. `repo_guard.py` verifies the exact checkout, rejects traversal, sibling-prefix collisions and reparse points. Intentional outputs stay in this checkout. Do not supply another workspace or follow historical absolute asset paths.
+## Maintained source
 
-## Preserved evidence and resumption
+`build/faculty-build-composer/data/concept-reviews/concept_review_source.json` owns instructional text. `accessibility_semantics.json` is the sole authored semantic source. It contains field/offset Formula runs and alternatives, graph/image hashes, contextual descriptions, the captured MICRO-49 table values and image-region mapping, and review state.
 
-Use `validation_artifacts/pdf_accessibility/inventory.json` and `baseline_hashes.json`; do not rerun the initial inventory. The inventory script refuses to overwrite an existing baseline. There are 151 manifest records, 151 logical pages, 287 existing copies, and 15 missing expected public copies. Per-copy metadata, fonts, image fingerprints, language, title, annotations and hashes are retained. Original instructional source fields match all Composer PDFs with whitespace-only line-wrap accommodation.
+The six original-layout pilots retain fingerprinted, corrected visual sources in `data/concept-reviews/authoring/visual-sources/`. These are source-aware transformation inputs, excluded from deployment and package-resource resolution. No maintained original-layout visual renderer was identified. Source changes therefore require a corresponding reviewed visual-source update; the tagger rejects drift. This avoids depending on active installation bytes for future rebuilds. The two later-layout pilots render from the maintained Micro/Macro generators with the pinned ReportLab Bitstream Vera fonts. Replacing an active PDF cannot strip the next build's semantics.
 
-The canonical pilot semantic metadata is `build/faculty-build-composer/data/concept-reviews/accessibility_semantics.json`. Its schema, resource codes, source-record hashes, baseline PDF hashes and displayed-image fingerprints are checked before generation. A shared quantity-theory description is referenced by both relevant resources. A description existing does not establish its semantic correctness. Review evidence is separately recorded.
+## Build and validate
 
-## Commands
+- `python -B audit_tools/pdf_accessibility/rebuild_pilot.py` builds the same eight staged candidates.
+- `python -B audit_tools/pdf_accessibility/validate_candidates.py` runs veraPDF 1.28.2 with explicit `--flavour ua1`, independent structural/source checks, and Poppler comparisons.
+- `python -B audit_tools/pdf_accessibility/negative_tests.py` exercises isolated damaged candidates.
+- `python -B audit_tools/pdf_accessibility/test_pipeline.py` requires the byte-bound completed review receipt, checks the pipeline, and installs only into a scratch fixture.
+- `python -B audit_tools/pdf_accessibility/run_regression.py pilot_blockers_v1` runs all current active Composer runners in repository scratch.
 
-Use the available Python 3.12 runtime with `-B` to avoid bytecode products. Prefix script paths with the verified repository root when invoking from PowerShell.
+The legacy Micro/Macro generation commands now require explicit `--review-codes` and a repository-local `--output-dir` inside `tmp/pdf_accessibility/`. They use this same tagging and validation lifecycle. Raw visual generation refuses active output paths. Legacy `--publish`, source replacement helpers and implicit whole-family runs are disabled. The manifest audit command may write only staged evidence; validated installation owns active checksum updates.
 
-- `tag_pilot.py`: regenerates only the selected staging candidates. The image-based payoff table is deliberately rejected. Every meaningful text object must match a canonical source field; unfamiliar text/images fail closed.
-- `validate_pilot.py`: explicit veraPDF `--flavour ua1`, plus exact baseline/candidate text, page geometry and 1400-pixel Poppler rendering comparisons.
-- `accessibility_gate.py`: standalone active-manifest release gate; expected exit code 1 on the current collection. No passing release evidence is supplied. This gate is not yet wired into the production installers.
-- `negative_tests.py`: isolated staged mutations; never modifies active PDFs. Raw independent-validator reports are retained alongside project-specific results. The table-header-removal test is pending because no valid semantic table fixture exists.
-- `run_regression.py baseline` or `run_regression.py final`: reads the current active-runner list and executes those same runners, with test products and TEMP/TMP rooted in task scratch. It does not edit the Composer tests or their telemetry behavior.
+`tag_pilot.py` and `validate_pilot.py` remain compatible entrypoints to the current pilot. The old inventory/baseline scripts preserve the earlier audit and should not be rerun for this task.
 
-Python packages used by the prototype are pinned in `requirements.txt`. Existing rendering uses Poppler 26.07.0. Portable veraPDF 1.28.2 and Temurin JRE 17.0.16+8 are installed only in `tmp/pdf_accessibility/repo_lock_v1/tools`. Versions, download URLs, hashes and licenses are in `validation_artifacts/pdf_accessibility/installed_tools.json`. No global packages were changed.
+## Review and eventual installation
 
-## Why the current production pipeline is not replaced
+`install_validated.py --validation <validation.json> --review <review_receipt.json>` produces a read-only plan. The independent report, exact candidate hash, current instructional/semantic hashes, fonts, graph binding, semantic table/formulas, and completed source/visual review must all pass before installation. `materialize` repeats preflight, writes identical public/Composer bytes, updates only resource hashes/sizes/page/language data and total PDF size, records release evidence, checks equality and rolls back partial failures. Backups remain in repository scratch. No question-bank, telemetry or governance versions are changed.
 
-The maintained completion/expansion tools draw untagged ReportLab PDFs. The former has staging/publication switches; the latter writes source metadata and PDFs directly. Neither was executed here. The original 116-sheet full renderer was not located among the tracked PDF tools. Its corrected PDFs plus their matching maintained JSON are the preserved source-aware pilot input. Do not run an older generator to recover visual resources.
+The optional `--install` operation is for a separately authorized future release. It was NOT executed in this pilot. `test_pipeline.py` exercises the same transaction with scratch destinations, including creation of a missing public copy from validated bytes. `active_gate` reads recorded release evidence when available. Missing/unreviewed documents, changed assets/source, broken semantics or copy mismatches remain failures.
 
-The prototype preserves painting operators and font programs, adding content-linked semantic structure, metadata, and alternatives. It cannot currently create table-cell content associations for a single image containing a payoff matrix. It also does not split mixed prose/math into Formula runs. Standard Helvetica fonts used in 35 later baseline sheets are not embedded. No unapproved font substitution or economic content rewrite was made.
+## Supported implementation and boundaries
 
-Before batch/install work, implement and validate those cases, remedy the documented text contrast, extend semantic review to every graph usage, and integrate the gate into a deterministic build-once/install-identical-copies path with regenerated manifest checksums. A checked structural flag or an experimental candidate's PDF/UA identifier must never be accepted as release evidence.
+PDF 1.7 / PDF/UA-1 (ISO 14289-1:2014). Single-page ReportLab text-show streams with proven single-byte font mappings are supported; unknown encodings/operators or unassigned content reject generation. Inline math splits original text-show bytes without moving or duplicating text. MICRO-49 partitions the existing image into non-overlapping caption/header/cell clips, each owned by its semantic element with replacement text. Table attributes include header scopes, IDs, an ID tree and explicit cell Headers references. The image-region mapping is tied to the displayed image fingerprint and captured source values; it is not OCR or a generic arbitrary-table recognizer.
+
+Machine checks do not establish arbitrary graph semantics or screen-reader usability. Actual assistive-technology verification remains PENDING. See the updated owner pack and final pilot-blocker report. The other 143 logical documents have not been rebuilt or installed in this task.

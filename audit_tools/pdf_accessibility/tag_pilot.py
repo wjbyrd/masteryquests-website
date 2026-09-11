@@ -9,6 +9,8 @@ from pypdf import PdfReader, PdfWriter, PageObject
 from pypdf.generic import (ContentStream,NameObject,DictionaryObject,ArrayObject,
     NumberObject,BooleanObject,TextStringObject,DecodedStreamObject)
 import re, html
+from pypdf.generic import FloatObject
+from semantic_runs import decoded_shows, plan_runs
 
 N=NameObject
 D=DictionaryObject
@@ -61,13 +63,32 @@ def validate_metadata(metadata):
         for formula in entry.get('formulaCard',[]):
             if not formula.get('text') or not formula.get('alternative'):
                 raise ValueError('Incomplete formula source')
+        for formula in entry.get('inlineFormulas',[]):
+            if not re.fullmatch(r'(core|worked|watch|check|outcome|recognition/[0-9]+)',formula.get('sourceField','')):
+                raise ValueError('Invalid Formula source field')
+            if type(formula.get('compactStart')) is not int or formula['compactStart']<0:
+                raise ValueError('Invalid Formula source offset')
+            if not formula.get('text') or not formula.get('alternative') or formula['alternative'].lower().strip() in ('formula','math','placeholder'):
+                raise ValueError('Missing meaningful Formula alternative')
+        if entry.get('tableRequired'):
+            table=entry.get('tableSource',{});regions=entry.get('tableRegions',{})
+            if len(table.get('rowHeaders',[]))!=2 or len(table.get('columnHeaders',[]))!=2 or len(table.get('cells',[]))!=2 or any(len(r)!=2 for r in table['cells']):
+                raise ValueError('Unproven table dimensions')
+            if regions.get('xEdges')!=[0,184,450,728] or regions.get('yEdges')!=[30,90,274,471]:
+                raise ValueError('Table cell regions need asset-specific review')
+        for path_key,hash_key in (('assetSourcePath','assetSourceSha256'),('visualSourcePath','visualSourceSha256')):
+            if entry.get(path_key) and sha(entry[path_key])!=entry.get(hash_key):
+                raise ValueError('Stale canonical source: '+path_key)
 
-def tag_one(record,meta,destination):
-    if meta.get('tableRequired'):
-        raise ValueError('UNSUPPORTED_TABLE: image-only payoff matrix requires content-linked TH/TD structure; refusing a Figure-only substitute')
-    path=contained('build/faculty-build-composer/data/concept-reviews/'+record['code']+'.pdf')
-    if sha(path)!=meta['baselineSha256'] or source_hash(record)!=meta['sourceRecordSha256']:
+def tag_one(record,meta,destination,visual_source=None):
+    path=contained(meta.get('visualSourcePath','build/faculty-build-composer/data/concept-reviews/'+record['code']+'.pdf'))
+    if source_hash(record)!=meta['sourceRecordSha256'] or (visual_source is None and sha(path)!=meta.get('visualSourceSha256',meta['baselineSha256'])):
         raise ValueError('Source or PDF changed since pilot review')
+    if visual_source is not None:
+        visual_source=contained(visual_source)
+        if not visual_source.is_relative_to(contained('tmp/pdf_accessibility')): raise ValueError('Visual input must be staged')
+        path=visual_source
+    if meta.get('assetSourcePath') and sha(meta['assetSourcePath'])!=meta['assetSourceSha256']:raise ValueError('Stale source asset description')
     reader=PdfReader(path,strict=True)
     if len(reader.pages)!=1:raise ValueError('Unsupported page layout')
     if reader.pages[0].get('/Annots'):raise ValueError('Link/annotation support must be proven before processing')
@@ -120,8 +141,30 @@ def tag_one(record,meta,destination):
         node('H3','KEY RELATIONSHIPS')
         for formula in meta['formulaCard']:
             node('Formula',formula['text'],alt=formula['alternative'])
-    graphnode=None
-    if content.get('graph'):
+    graphnode=None; table_regions=[]
+    if meta.get('tableRequired'):
+        table=meta['tableSource']; region=meta['tableRegions']
+        if hashlib.sha256(json.dumps(table,sort_keys=True).encode()).hexdigest()!=meta['tableSourceSha256']:
+            raise ValueError('Stale canonical table values')
+        graphnode=node('Table')
+        caption=node('Caption',parent=graphnode)
+        nodes[caption]['actual']=table['caption']
+        table_regions.append((caption,(0,0,region['imageWidth'],region['captionBottom'])))
+        xs=region['xEdges'];ys=region['yEdges']
+        for ri in range(3):
+            tr=node('TR',parent=graphnode)
+            for ci in range(3):
+                header=(ri==0 and ci>0) or (ci==0 and ri>0)
+                cell=node('TH' if header else 'TD',parent=tr)
+                value=table['columnHeaders'][ci-1] if ri==0 and ci else table['rowHeaders'][ri-1] if ci==0 and ri else table['cells'][ri-1][ci-1] if ri and ci else ''
+                nodes[cell]['actual']=value
+                if header:
+                    nodes[cell]['scope']='Column' if ri==0 else 'Row'
+                    nodes[cell]['id']=('col-' if ri==0 else 'row-')+value
+                elif ri and ci:
+                    nodes[cell]['headers']=['row-'+table['rowHeaders'][ri-1],'col-'+table['columnHeaders'][ci-1]]
+                table_regions.append((cell,(xs[ci],ys[ri],xs[ci+1],ys[ri+1])))
+    elif content.get('graph'):
         alt=meta.get('graphAlternative')
         if meta.get('graphAlternativeFromSource'):
             alt=content['assetMetadata']['graphDescription']
@@ -148,7 +191,7 @@ def tag_one(record,meta,destination):
         fingerprint=hashlib.sha256(obj.get_data()).hexdigest()
         if fingerprint!=meta['graphDecodedSha256']:
             raise ValueError('Graph description stale: displayed asset fingerprint changed')
-        ranges.append((index,index,graphnode))
+        if not table_regions:ranges.append((index,index,graphnode))
     # Every image outside the worked figure must match this pilot's reviewed
     # repeated branding/section-icon inventory. No unfamiliar image is hidden.
     decorative_hashes=set(meta['decorativeImageDecodedSha256'])
@@ -157,6 +200,12 @@ def tag_one(record,meta,destination):
             obj=xobjects[args[0]].get_object()
             if obj.get('/Subtype')!='/Image' or hashlib.sha256(obj.get_data()).hexdigest() not in decorative_hashes:
                 raise ValueError('Unreviewed non-figure image or Form XObject')
+    formulas=[]
+    for formula in meta.get('inlineFormulas',[]):
+        field=formula['sourceField'].split('/')
+        paragraph=content[field[0]] if len(field)==1 else content[field[0]][int(field[1])]
+        formulas.append({**formula,'paragraph':paragraph})
+    inline_plans=plan_runs(nodes,ranges,decoded_shows(reader.pages[0],ops),formulas)
     writer=PdfWriter(clone_from=reader)
     writer.pdf_header=b'%PDF-1.7'
     page=writer.pages[0]
@@ -170,20 +219,49 @@ def tag_one(record,meta,destination):
     for item in nodes:
         elem=D({N('/Type'):N('/StructElem'),N('/S'):N('/'+item['role']),N('/P'):doc_ref,N('/Pg'):page.indirect_reference,N('/K'):A()})
         if item['alt']:elem[N('/Alt')]=T(item['alt'])
+        if 'actual' in item:elem[N('/ActualText')]=T(item['actual'])
+        if item.get('id'):elem[N('/ID')]=T(item['id'])
+        if item.get('scope'):elem[N('/A')]=D({N('/O'):N('/Table'),N('/Scope'):N('/'+item['scope'])})
+        if item.get('headers'):elem[N('/A')]=D({N('/O'):N('/Table'),N('/Headers'):A([T(h) for h in item['headers']])})
         refs.append(writer._add_object(elem))
     for idx,item in enumerate(nodes):
         parent=refs[item['parent']] if item['parent'] is not None else doc_ref
         refs[idx].get_object()[N('/P')]=parent
-        parent.get_object()['/K'].append(refs[idx])
+        if not item.get('inline'):parent.get_object()['/K'].append(refs[idx])
+    ids=[(item['id'],refs[i]) for i,item in enumerate(nodes) if item.get('id')]
+    if ids:tree[N('/IDTree')]=writer._add_object(D({N('/Names'):A([v for key,ref in sorted(ids) for v in (T(key),ref)])}))
     by_start={start:(end,idx) for start,end,idx in ranges}
-    rewritten=[];parents=[];i=0;artifact_open=False
+    rewritten=[];parents=[];i=0;artifact_open=False;inline_attached=set()
+    def emit(owner,painting):
+        mcid=len(parents);parents.append(refs[owner])
+        item=nodes[owner]
+        if item.get('inline') and owner not in inline_attached:
+            refs[item['parent']].get_object()['/K'].append(refs[owner]);inline_attached.add(owner)
+        rewritten.append(([N('/'+item['role']),D({N('/MCID'):I(mcid)})],b'BDC'))
+        rewritten.extend(painting);rewritten.append(([],b'EMC'))
+        refs[owner].get_object()['/K'].append(I(mcid))
     while i<len(ops):
-        if i in by_start:
+        if table_regions and i==graphops[0][0]:
             if artifact_open:rewritten.append(([],b'EMC'));artifact_open=False
-            end,idx=by_start[i];mcid=len(parents);parents.append(refs[idx])
-            rewritten.append(([N('/'+nodes[idx]['role']),D({N('/MCID'):I(mcid)})],b'BDC'))
-            rewritten.extend(ops[i:end+1]);rewritten.append(([],b'EMC'))
-            refs[idx].get_object()['/K'].append(I(mcid));i=end+1
+            width=meta['tableRegions']['imageWidth'];height=meta['tableRegions']['imageHeight']
+            for owner,(x0,y0,x1,y1) in table_regions:
+                # The original image already paints in unit-square coordinates.
+                # Partition it once by reviewed asset pixels. Every pixel remains
+                # visible exactly once; each cell owns its actual painted region.
+                clip=[FloatObject(x0/width),FloatObject(1-y1/height),FloatObject((x1-x0)/width),FloatObject((y1-y0)/height)]
+                emit(owner,[([],b'q'),(clip,b're'),([],b'W'),([],b'n'),ops[i],([],b'Q')])
+            i+=1
+        elif i in by_start:
+            if artifact_open:rewritten.append(([],b'EMC'));artifact_open=False
+            end,idx=by_start[i]
+            if any(j in inline_plans for j in range(i,end+1)):
+                for j in range(i,end+1):
+                    if j in inline_plans:
+                        for owner,raw in inline_plans[j]:emit(owner,[([raw],b'Tj')])
+                    elif ops[j][1]==b'Tj':emit(idx,[ops[j]])
+                    else:rewritten.append(ops[j])
+            else:emit(idx,ops[i:end+1])
+            i=end+1
         else:
             if not artifact_open:rewritten.append(([N('/Artifact')],b'BMC'));artifact_open=True
             rewritten.append(ops[i]);i+=1
@@ -212,20 +290,8 @@ def tag_one(record,meta,destination):
     if not destination.is_relative_to(contained('tmp/pdf_accessibility')):raise ValueError('Pilot outputs must remain in task staging')
     destination.parent.mkdir(parents=True,exist_ok=True)
     writer.write(destination)
-    return {'code':record['code'],'status':'EXPERIMENTAL_CANDIDATE','output':str(destination.relative_to(EXPECTED_ROOT)),'tagCount':len(nodes),'mcids':len(parents),'unassignedMeaningfulBlocks':0,'inlineFormulaSemantics':'PENDING' if content.get('calculation') else 'NOT_APPLICABLE','transcript':transcript}
+    return {'code':record['code'],'status':'EXPERIMENTAL_CANDIDATE','output':str(destination.relative_to(EXPECTED_ROOT)),'tagCount':len(nodes),'mcids':len(parents),'unassignedMeaningfulBlocks':0,'inlineFormulaSemantics':'SOURCE_BOUND_RUNS' if formulas else 'NO_INLINE_EXPRESSIONS_SELECTED','transcript':transcript}
 
 if __name__=='__main__':
-    root_guard()
-    source=read_json('build/faculty-build-composer/data/concept-reviews/concept_review_source.json')
-    metadata=read_json('build/faculty-build-composer/data/concept-reviews/accessibility_semantics.json')
-    validate_metadata(metadata)
-    sources={r['code']:r for r in source['reviews']}
-    results=[]
-    for code,meta in metadata['pilot'].items():
-        try:
-            if meta.get('descriptionKey'):
-                meta={**meta,'graphAlternative':metadata['descriptions'][meta['descriptionKey']]}
-            result=tag_one(sources[code],meta,f'tmp/pdf_accessibility/repo_lock_v1/pilot/after/{code}.pdf')
-        except ValueError as exc:result={'code':code,'status':'REJECTED','reason':str(exc)}
-        results.append(result);print(code,result['status'],result.get('reason',''),flush=True)
-    write_json('validation_artifacts/pdf_accessibility/pilot_results.json',{'task':TASK,'batchAuthorized':False,'results':results})
+    import runpy
+    runpy.run_path(str(contained('audit_tools/pdf_accessibility/rebuild_pilot.py')),run_name='__main__')

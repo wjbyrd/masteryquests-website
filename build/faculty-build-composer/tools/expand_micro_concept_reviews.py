@@ -12,12 +12,14 @@ from reportlab.lib.utils import ImageReader
 from reportlab.pdfbase.pdfdoc import PDFString
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfgen import canvas
+from concept_review_lifecycle import visual_guard, generate_selected, contained
+from concept_review_style import REGULAR, BOLD, HEADING_COLOR, register_fonts
 
 
 GENERATED_AT = "2026-08-28T12:00:00-04:00"
 NAVY = HexColor("#0C2D63")
 TEAL = HexColor("#00A7A7")
-DEEP_TEAL = HexColor("#008F95")
+DEEP_TEAL = HexColor(HEADING_COLOR)
 PALE = HexColor("#EAF7F7")
 INK = HexColor("#182231")
 LIGHT = HexColor("#D8E2EC")
@@ -367,6 +369,7 @@ def wrapped_lines(text: str, font: str, size: float, width: float) -> list[str]:
     lines: list[str] = []
     current = ""
     for word in words:
+        if stringWidth(word, font, size) > width:raise ValueError("Unbreakable text exceeds layout width")
         candidate = f"{current} {word}".strip()
         if current and stringWidth(candidate, font, size) > width:
             lines.append(current)
@@ -379,13 +382,13 @@ def wrapped_lines(text: str, font: str, size: float, width: float) -> list[str]:
 
 
 def draw_wrapped(c: canvas.Canvas, text: str, x: float, y: float, width: float, *, size: float = 9.2,
-                 leading: float = 11.0, font: str = "Helvetica", color: Color = INK,
+                 leading: float = 11.0, font: str = REGULAR, color: Color = INK,
                  max_lines: int | None = None) -> float:
     c.setFont(font, size)
     c.setFillColor(color)
     lines = wrapped_lines(text, font, size, width)
-    if max_lines is not None:
-        lines = lines[:max_lines]
+    if max_lines is not None and len(lines) > max_lines:
+        raise ValueError("Text exceeds the reviewed layout; do not truncate or shrink it")
     for line in lines:
         c.drawString(x, y, line)
         y -= leading
@@ -394,9 +397,9 @@ def draw_wrapped(c: canvas.Canvas, text: str, x: float, y: float, width: float, 
 
 def draw_bullets(c: canvas.Canvas, items: list[str], x: float, y: float, width: float) -> float:
     for item in items:
-        lines = wrapped_lines(item, "Helvetica", 8.5, width - 12)
+        lines = wrapped_lines(item, REGULAR, 8.5, width - 12)
         c.setFillColor(INK)
-        c.setFont("Helvetica", 8.5)
+        c.setFont(REGULAR, 8.5)
         c.drawString(x, y, "-")
         for index, line in enumerate(lines):
             c.drawString(x + 10, y - index * 10, line)
@@ -415,11 +418,12 @@ def draw_icon(c: canvas.Canvas, x: float, y: float, symbol: str, fill: Color = T
     c.setFillColor(fill)
     c.circle(x, y, 15, stroke=0, fill=1)
     c.setFillColor(white)
-    c.setFont("Helvetica-Bold", 15)
+    c.setFont(BOLD, 15)
     c.drawCentredString(x, y - 5, symbol)
 
 
 def draw_graph_asset(c: canvas.Canvas, asset_path: Path, x: float, y: float, w: float, h: float) -> None:
+    asset_path = contained(asset_path)
     if not asset_path.is_file():
         raise FileNotFoundError(f"Concept Review graph asset is missing: {asset_path}")
     with Image.open(asset_path) as source:
@@ -444,7 +448,9 @@ def draw_graph_asset(c: canvas.Canvas, asset_path: Path, x: float, y: float, w: 
 
 
 def draw_review(review: dict[str, Any], output: Path, logo_path: Path, asset_root: Path) -> None:
-    c = canvas.Canvas(str(output), pagesize=letter, pageCompression=1, invariant=1)
+    output = visual_guard(output, logo_path, asset_root)
+    register_fonts()
+    c = canvas.Canvas(str(output), pagesize=letter, pageCompression=1, invariant=1, initialFontName=REGULAR)
     c.setTitle(f"{review['code']} - {review['title']}")
     c.setAuthor("Mastery Quests")
     c.setSubject("Microeconomics Concept Review")
@@ -455,55 +461,55 @@ def draw_review(review: dict[str, Any], output: Path, logo_path: Path, asset_roo
     rounded_box(c, 34, 717, 52, 46, white, white, 7)
     if logo_path.exists():
         c.drawImage(str(logo_path), 38, 720, 44, 40, preserveAspectRatio=True, mask='auto')
-    c.setFillColor(white); c.setFont("Helvetica-Bold", 23); c.drawString(99, 733, "MICROECONOMICS")
+    c.setFillColor(white); c.setFont(BOLD, 23); c.drawString(99, 733, "MICROECONOMICS")
     rounded_box(c, 452, 724, 124, 39, NAVY, TEAL, 9)
-    c.setFillColor(white); c.setFont("Helvetica-Bold", 13); c.drawCentredString(514, 738, review["code"])
+    c.setFillColor(white); c.setFont(BOLD, 13); c.drawCentredString(514, 738, review["code"])
 
     rounded_box(c, 29, 650, 554, 45, white, LIGHT, 9)
     c.setStrokeColor(LIGHT); c.line(171,650,171,695); c.line(407,650,407,695)
-    c.setFillColor(INK); c.setFont("Helvetica-Bold", 8.5); c.drawString(43,673,"Time:")
-    c.setFont("Helvetica",8.5); c.drawString(67,673,review["time"])
-    c.setFont("Helvetica-Bold",8.2); c.drawString(184,681,"Outcome:")
-    draw_wrapped(c, review["outcome"], 226, 681, 170, size=7.4, leading=8.6, max_lines=3)
-    c.setFont("Helvetica-Bold",8.5); c.drawString(419,673,"Difficulty:")
+    c.setFillColor(INK); c.setFont(BOLD, 8.5); c.drawString(43,673,"Time:")
+    c.setFont(REGULAR,8.5); c.drawString(43 + stringWidth("Time:", BOLD, 8.5) + 4, 673, review["time"])
+    c.setFont(BOLD,8.2); c.drawString(184,681,"Outcome:")
+    draw_wrapped(c, review["outcome"], 234, 681, 162, size=7.4, leading=8.6, max_lines=3)
+    c.setFont(BOLD,8.5); c.drawString(419,673,"Difficulty:")
     c.setFillColor(TEAL); c.circle(475,675,3,stroke=0,fill=1); c.circle(484,675,3,stroke=0,fill=1)
     c.setStrokeColor(TEAL); c.circle(493,675,3,stroke=1,fill=0)
-    c.setFillColor(INK); c.setFont("Helvetica",8.2); c.drawString(501,672.5,review["difficulty"])
+    c.setFillColor(INK); c.setFont(REGULAR,8.2); c.drawString(501,672.5,review["difficulty"])
 
     title_size = 17.5
-    while stringWidth(review["title"], "Helvetica-Bold", title_size) > 525 and title_size > 13:
+    while stringWidth(review["title"], BOLD, title_size) > 525 and title_size > 13:
         title_size -= .5
-    c.setFillColor(NAVY); c.setFont("Helvetica-Bold", title_size); c.drawString(40, 624, review["title"])
+    c.setFillColor(NAVY); c.setFont(BOLD, title_size); c.drawString(40, 624, review["title"])
 
     draw_icon(c, 50, 590, "+")
-    c.setFillColor(NAVY); c.setFont("Helvetica-Bold",14); c.drawString(80,595,"THE CORE IDEA")
+    c.setFillColor(NAVY); c.setFont(BOLD,14); c.drawString(80,595,"THE CORE IDEA")
     c.setStrokeColor(TEAL); c.setLineWidth(.8); c.line(80,590,582,590)
     draw_wrapped(c, review["core"], 80, 578, 500, size=8.4, leading=9.6, max_lines=5)
 
     draw_icon(c, 50, 527, "?")
-    c.setFillColor(NAVY); c.setFont("Helvetica-Bold",14); c.drawString(80,532,"HOW TO RECOGNIZE IT")
+    c.setFillColor(NAVY); c.setFont(BOLD,14); c.drawString(80,532,"HOW TO RECOGNIZE IT")
     c.setStrokeColor(TEAL); c.line(80,527,582,527)
     draw_bullets(c, review["recognition"], 85, 516, 492)
 
     rounded_box(c, 79, 408, 503, 49, PALE, TEAL, 8)
     draw_icon(c, 50, 433, "!", DEEP_TEAL)
-    c.setFillColor(DEEP_TEAL); c.setFont("Helvetica-Bold",13); c.drawString(91,439,"WATCH OUT")
+    c.setFillColor(DEEP_TEAL); c.setFont(BOLD,13); c.drawString(91,439,"WATCH OUT")
     draw_wrapped(c, review["watch"], 91, 426, 479, size=8.2, leading=9.3, max_lines=3)
 
     rounded_box(c, 79, 192, 503, 204, white, NAVY, 8)
     draw_icon(c, 50, 372, "#", NAVY)
     label = "WORKED EXAMPLE: " + review["workedLabel"]
     label_size = 12.4
-    while stringWidth(label, "Helvetica-Bold", label_size) > 474 and label_size > 9.5:
+    while stringWidth(label, BOLD, label_size) > 474 and label_size > 9.5:
         label_size -= .4
-    c.setFillColor(NAVY); c.setFont("Helvetica-Bold",label_size); c.drawString(91,373,label)
+    c.setFillColor(NAVY); c.setFont(BOLD,label_size); c.drawString(91,373,label)
     graph_asset = review.get("graphAsset")
     if graph_asset:
         draw_graph_asset(c, asset_root / graph_asset, 91, 206, 255, 154)
         draw_wrapped(c, review["worked"], 358, 337, 206, size=8.2, leading=9.8, max_lines=14)
     else:
         rounded_box(c, 96, 218, 142, 126, PALE, TEAL, 7)
-        c.setFillColor(DEEP_TEAL); c.setFont("Helvetica-Bold",10); c.drawCentredString(167,326,"DIAGNOSE")
+        c.setFillColor(DEEP_TEAL); c.setFont(BOLD,10); c.drawCentredString(167,326,"DIAGNOSE")
         for index, term in enumerate(review["tested"][:5]):
             c.setFillColor(TEAL); c.circle(111,307-index*19,3,stroke=0,fill=1)
             draw_wrapped(c, term, 120, 304-index*19, 105, size=7.5, leading=8.3, max_lines=2)
@@ -511,12 +517,12 @@ def draw_review(review: dict[str, Any], output: Path, logo_path: Path, asset_roo
 
     rounded_box(c, 79, 127, 503, 52, PALE, TEAL, 8)
     draw_icon(c, 50, 153, "?", TEAL)
-    c.setFillColor(DEEP_TEAL); c.setFont("Helvetica-Bold",13); c.drawString(91,158,"CHECK YOURSELF")
+    c.setFillColor(DEEP_TEAL); c.setFont(BOLD,13); c.drawString(91,158,"CHECK YOURSELF")
     draw_wrapped(c, review["check"], 91, 143, 478, size=8.5, leading=9.5, max_lines=2)
 
     c.setFillColor(NAVY); c.roundRect(16, 28, width-32, 72, 9, stroke=0, fill=1)
-    c.setFillColor(TEAL); c.setFont("Helvetica-Bold",15); c.drawString(108,58,"READY?")
-    c.setFillColor(white); c.setFont("Helvetica-Bold",10.5); c.drawString(206,59,"Return to the game and master this concept.")
+    c.setFillColor(TEAL); c.setFont(BOLD,15); c.drawString(108,58,"READY?")
+    c.setFillColor(white); c.setFont(BOLD,10.5); c.drawString(206,59,"Return to the game and master this concept.")
     c.setStrokeColor(white); c.circle(91,63,10,stroke=1,fill=0); c.line(88,68,94,63); c.line(94,63,88,58)
     c.showPage(); c.save()
 
@@ -575,102 +581,16 @@ def source_record(review: dict[str, Any]) -> dict[str, Any]:
 
 
 def update_sources(review_root: Path) -> None:
-    source_path = review_root / "concept_review_source.json"
-    source = json.loads(source_path.read_text(encoding="utf-8"))
-    additions = {item["code"]: source_record(item) for item in REVIEWS}
-    updated: list[dict[str, Any]] = []
-    for record in source["reviews"]:
-        copy = dict(record)
-        if copy.get("code") == "MICRO-03":
-            copy["canonicalConceptIds"] = []
-        if copy.get("code") in additions:
-            copy = additions.pop(copy["code"])
-        updated.append(copy)
-    updated.extend(additions[code] for code in sorted(additions))
-    source["generatedAt"] = GENERATED_AT
-    source["reviews"] = updated
-    overrides = source.setdefault("conceptDispositionOverrides", {})
-    overrides["federal-budgets-and-debt"] = {
-        "disposition": "NO_SHEET_INTEGRATION_META",
-        "discipline": "macro",
-        "reason": "This independently diagnosable production concept was added without an immutable faculty review PDF.",
-    }
-    overrides["market-failures"] = {
-        "disposition": "HIDDEN_SUPPLEMENTAL",
-        "discipline": "micro",
-        "reason": "Legacy compatibility parent retained for migrated recipes and residual records; active child concepts own dedicated review sheets.",
-    }
-    write_json(source_path, source)
-
-    validation_path = review_root / "concept_review_validation.json"
-    validation = json.loads(validation_path.read_text(encoding="utf-8"))
-    validation["generatedAt"] = GENERATED_AT
-    validation["reviewCount"] = len(updated)
-    validation["contactSheetsReviewed"] = []
-    validation["expansionValidation"] = {
-        "newReviewCodes": [item["code"] for item in REVIEWS],
-        "renderAndVisualQaRequired": True,
-        "manualVisualChecksPassed": True,
-    }
-    validation["graphRepairValidation"] = {
-        "reviewCodes": [item["code"] for item in REVIEWS if item.get("graphAsset")],
-        "productionAssets": {
-            item["code"]: item["graphAsset"] for item in REVIEWS if item.get("graphAsset")
-        },
-        "productionAssetsInspected": True,
-        "manualVisualChecksPassed": True,
-        "graphFreeReviewCodes": [item["code"] for item in REVIEWS if not item.get("graphAsset")],
-    }
-    split_reviews = [item for item in REVIEWS if "MICRO-60" <= item["code"] <= "MICRO-68"]
-    validation["micro60To68SplitValidation"] = {
-        "retiredActiveUmbrellaTitle": "Information, Behavior & Public Choice",
-        "canonicalConceptId": "information-asymmetry-behavioral-and-political-economy",
-        "reviewTitles": {item["code"]: item["title"] for item in split_reviews},
-        "onePrimaryMechanismPerReview": True,
-        "oneWorkedExamplePerReview": True,
-        "oneCheckYourselfPerReview": True,
-        "renderAndVisualQaRequired": True,
-        "manualVisualChecksPassed": True,
-    }
-    write_json(validation_path, validation)
-
-    full_path = review_root / "full-library-production" / "concept_review_source.json"
-    full = json.loads(full_path.read_text(encoding="utf-8"))
-    updated_by_code = {item["code"]: item for item in updated}
-    owned_codes = {item["code"] for item in REVIEWS} | {"MICRO-03"}
-    full_codes = {item["code"] for item in full.get("reviews", [])}
-    full["reviews"] = [
-        updated_by_code.get(item["code"], item) if item["code"] in owned_codes else item
-        for item in full.get("reviews", [])
-    ]
-    full["reviews"].extend(item for item in updated if item["code"] not in full_codes)
-    full["generatedAt"] = GENERATED_AT
-    write_json(full_path, full)
+    raise ValueError("Legacy source publication retired; edit canonical instructional source and review semantics explicitly")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate the dedicated Principles Micro Concept Reviews.")
     parser.add_argument("--composer-root", type=Path, required=True)
     parser.add_argument("--review-codes", nargs="*", default=None)
+    parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
-    root = args.composer_root.resolve()
-    review_root = root / "data" / "concept-reviews"
-    logo = root.parent.parent / "assets" / "images" / "mastery-quests-logo-standalone.png"
-    asset_root = root / "data"
-    requested_codes = set(args.review_codes or [item["code"] for item in REVIEWS])
-    unknown_codes = sorted(requested_codes - {item["code"] for item in REVIEWS})
-    if unknown_codes:
-        raise ValueError(f"Unknown dedicated Micro Concept Review codes: {', '.join(unknown_codes)}")
-    selected_reviews = [item for item in REVIEWS if item["code"] in requested_codes]
-    update_sources(review_root)
-    for review in selected_reviews:
-        draw_review(review, review_root / f"{review['code']}.pdf", logo, asset_root)
-    print(json.dumps({
-        "generatedAt": GENERATED_AT,
-        "reviewCodes": [item["code"] for item in selected_reviews],
-        "outputCount": len(selected_reviews),
-        "sourceReviewCount": len(json.loads((review_root / 'concept_review_source.json').read_text(encoding='utf-8'))['reviews']),
-    }, indent=2))
+    print(json.dumps(generate_selected(args.composer_root, args.output_dir, args.review_codes), indent=2))
 
 
 if __name__ == "__main__":

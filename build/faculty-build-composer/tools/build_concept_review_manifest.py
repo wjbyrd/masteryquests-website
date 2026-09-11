@@ -499,7 +499,15 @@ def main() -> None:
     parser.add_argument("--audit-output", type=Path, required=True)
     args = parser.parse_args()
 
-    manifest, audit = build_manifest(args.composer_root.resolve())
+    from concept_review_lifecycle import contained, root_guard
+    root_guard()
+    if contained(args.composer_root)!=contained('build/faculty-build-composer'):
+        raise ValueError('Wrong Composer root')
+    for output in (args.manifest_output,args.audit_output):
+        target=contained(output)
+        if not any(target.is_relative_to(contained(p)) for p in ('tmp/pdf_accessibility','validation_artifacts/pdf_accessibility')):
+            raise ValueError('Manifest audits must be staged; production checksums are updated only by validated installation')
+    manifest, audit = build_manifest(contained(args.composer_root))
     args.manifest_output.parent.mkdir(parents=True, exist_ok=True)
     args.audit_output.parent.mkdir(parents=True, exist_ok=True)
     write_json(args.manifest_output, manifest)

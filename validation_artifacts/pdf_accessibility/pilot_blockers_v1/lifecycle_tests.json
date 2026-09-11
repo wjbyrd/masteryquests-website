@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "test": "validated_fixture_install",
+      "passed": true
+    },
+    {
+      "test": "missing_public_MICRO54_created_in_fixture_only",
+      "passed": true
+    },
+    {
+      "test": "stale_candidate",
+      "passed": true
+    },
+    {
+      "test": "stale_source",
+      "passed": true
+    },
+    {
+      "test": "stale_semantics",
+      "passed": true
+    },
+    {
+      "test": "changed_validator_report",
+      "passed": true
+    },
+    {
+      "test": "wrong_profile",
+      "passed": true
+    },
+    {
+      "test": "direct_untagged_active_write",
+      "passed": true
+    },
+    {
+      "test": "implicit_batch",
+      "passed": true
+    },
+    {
+      "test": "legacy_publish",
+      "passed": true
+    }
+  ],
+  "fixture": {
+    "fixtureOnly": true,
+    "records": 8,
+    "copies": 16,
+    "backupDirectory": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\pilot_blockers_v1\\install-transactions\\9d63e6a3e329441bbc0a7102df21f180"
+  },
+  "installedActiveCopies": 0
+}

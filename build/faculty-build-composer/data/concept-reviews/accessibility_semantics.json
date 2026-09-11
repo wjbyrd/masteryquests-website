@@ -6,7 +6,7 @@
     "GEN-ECON-01": {
       "baselineSha256": "5dac31da45408511293b60b66179929fb18371c26668304d792921528881e332",
       "sourceRecordSha256": "cd4d204de198602f0946aa0b516f4be8ee8c6198d9fe4dfa2965544ccbecb2bd",
-      "reviewStatus": "PILOT_ONLY_NOT_RELEASE_APPROVED",
+      "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
       "decorativeText": [
         "+",
         "?",
@@ -24,12 +24,16 @@
         "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
       ],
       "graphDecodedSha256": null,
-      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_semantic_review.md"
+      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
+      "inlineFormulas": [],
+      "formulaReviewState": "SOURCE_CHECKED_AT_PENDING",
+      "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/GEN-ECON-01.pdf",
+      "visualSourceSha256": "5dac31da45408511293b60b66179929fb18371c26668304d792921528881e332"
     },
     "MICRO-04": {
       "baselineSha256": "2f33113ddafd439efd70e0dda650c99857b2fa488c7ed3558136f537bbf1ca84",
       "sourceRecordSha256": "e8c089420f43ec156445c900c319e45cd40af006f56f0900f3bec5acdb68775b",
-      "reviewStatus": "PILOT_ONLY_NOT_RELEASE_APPROVED",
+      "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
       "decorativeText": [
         "+",
         "?",
@@ -47,13 +51,68 @@
         "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
       ],
       "graphDecodedSha256": "9af0ea5acfc6788081c467b47e3c1d59f1594cf05b9e38ddcb1dce4668b99e30",
-      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_semantic_review.md",
-      "graphAlternative": "Price elasticity of demand. Vertical axis: Price, from 0 to 20. Horizontal axis: Quantity, from 0 to 150. The straight downward Demand curve runs from price 16 at quantity 0 to price 0 at quantity 120. Labeled points are C at quantity 30 and price 12, B at quantity 60 and price 8, and A at quantity 90 and price 4. Dashed guides connect each point to its axis values. C to B supplies the worked example; B to A supplies the self-check."
+      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
+      "graphAlternative": "Price elasticity of demand. Vertical axis: Price, from 0 to 20. Horizontal axis: Quantity, from 0 to 150. The straight downward Demand curve runs from price 16 at quantity 0 to price 0 at quantity 120. Labeled points are C at quantity 30 and price 12, B at quantity 60 and price 8, and A at quantity 90 and price 4. Dashed guides connect each point to its axis values. C to B supplies the worked example; B to A supplies the self-check.",
+      "inlineFormulas": [
+        {
+          "sourceField": "core",
+          "compactStart": 81,
+          "text": "PED = absolute percentage change in quantity demanded divided by percentage change in price",
+          "alternative": "P E D equals the absolute value of the fraction with percentage change in quantity demanded as numerator and percentage change in price as denominator"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 27,
+          "text": "$12",
+          "alternative": "12 dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 32,
+          "text": "$8",
+          "alternative": "8 dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 108,
+          "text": "66.7%",
+          "alternative": "66.7 percent"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 130,
+          "text": "40.0%",
+          "alternative": "40.0 percent"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 138,
+          "text": "PED = 66.7% / 40.0% = 1.67",
+          "alternative": "P E D equals sixty six point seven percent divided by forty point zero percent, which equals one point six seven"
+        },
+        {
+          "sourceField": "check",
+          "compactStart": 13,
+          "text": "P = $8, Q = 60",
+          "alternative": "P equals eight dollars, Q equals sixty"
+        },
+        {
+          "sourceField": "check",
+          "compactStart": 28,
+          "text": "P = $4, Q = 90",
+          "alternative": "P equals four dollars, Q equals ninety"
+        }
+      ],
+      "formulaReviewState": "SOURCE_CHECKED_AT_PENDING",
+      "assetSourcePath": "build/faculty-build-composer/data/question-assets/elasticity/ELAS-01.webp",
+      "assetSourceSha256": "1804cb5937b71622452094ed43181e8cebc92e2fe5988ba18434776f2d4b91a4",
+      "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/MICRO-04.pdf",
+      "visualSourceSha256": "2f33113ddafd439efd70e0dda650c99857b2fa488c7ed3558136f537bbf1ca84"
     },
     "MICRO-49": {
       "baselineSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
       "sourceRecordSha256": "2a33c2b714404822d0c78487b521708da05feabe8b8bd34e56f1d605f257515b",
-      "reviewStatus": "PILOT_ONLY_NOT_RELEASE_APPROVED",
+      "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
       "decorativeText": [
         "+",
         "?",
@@ -71,7 +130,7 @@
         "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
       ],
       "graphDecodedSha256": "c2d2eedc9b2cd9826655aa1b6cdc237b2271bf83621e2aecbb351c6db5eda6e1",
-      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_semantic_review.md",
+      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
       "tableRequired": true,
       "tableSource": {
         "caption": "Payoff order: (Row firm, Column firm)",
@@ -93,12 +152,37 @@
             "(7, 7)"
           ]
         ]
-      }
+      },
+      "inlineFormulas": [],
+      "formulaReviewState": "SOURCE_CHECKED_AT_PENDING",
+      "tableRegions": {
+        "imageWidth": 728,
+        "imageHeight": 471,
+        "xEdges": [
+          0,
+          184,
+          450,
+          728
+        ],
+        "yEdges": [
+          30,
+          90,
+          274,
+          471
+        ],
+        "captionBottom": 30,
+        "coordinateSystem": "source image pixels, top-left origin; complete nonoverlapping partition"
+      },
+      "tableSourceSha256": "ef0faab48473b0d3da5f8c05ea52448e144398987c7087d560e73829bc947eb1",
+      "assetSourcePath": "build/faculty-build-composer/data/question-assets/oligopoly/matrix_multi_ne_1.webp",
+      "assetSourceSha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
+      "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/MICRO-49.pdf",
+      "visualSourceSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a"
     },
     "MICRO-54": {
       "baselineSha256": "250071d6d8c5fef71d7f31b48656a484b204d2de606306c118dd8341f66a2c7e",
       "sourceRecordSha256": "ee164f30f76416362e59b2f8b5554bffcd0c3c2b5e10efa1b71faefeea73fd5d",
-      "reviewStatus": "PILOT_ONLY_NOT_RELEASE_APPROVED",
+      "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
       "decorativeText": [
         "+",
         "?",
@@ -109,13 +193,84 @@
         "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2"
       ],
       "graphDecodedSha256": "0a986d3037d0516dd5f24a2689ca39d3891cf3908587c5e56aedd478c62be731",
-      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_semantic_review.md",
-      "graphAlternative": "Negative production externality in fast-fashion garments. Horizontal axis: quantity of garments in millions, with labeled ticks from 40 to 320. Vertical axis: marginal benefit and cost, with labeled dollar ticks from 3 to 24. MPB slopes downward from 21 to 9; MPC slopes upward from 3 to 15; MSC slopes upward from 9 to 21, six dollars above MPC throughout. MPB and MPC intersect at 240 million garments and 12 dollars. MPB and MSC intersect at 160 million garments and 15 dollars. Dashed guides mark both quantities and values."
+      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
+      "graphAlternative": "Negative production externality in fast-fashion garments. Horizontal axis: quantity of garments in millions, with labeled ticks from 40 to 320. Vertical axis: marginal benefit and cost, with labeled dollar ticks from 3 to 24. MPB slopes downward from 21 to 9; MPC slopes upward from 3 to 15; MSC slopes upward from 9 to 21, six dollars above MPC throughout. MPB and MPC intersect at 240 million garments and 12 dollars. MPB and MSC intersect at 160 million garments and 15 dollars. Dashed guides mark both quantities and values.",
+      "inlineFormulas": [
+        {
+          "sourceField": "worked",
+          "compactStart": 30,
+          "text": "$6",
+          "alternative": "6 dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 64,
+          "text": "$6",
+          "alternative": "6 dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 115,
+          "text": "MPB = MPC",
+          "alternative": "M P B equals M P C"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 124,
+          "text": "$12",
+          "alternative": "12 dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 169,
+          "text": "MPB = MSC",
+          "alternative": "M P B equals M S C"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 178,
+          "text": "$15,",
+          "alternative": "15, dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 225,
+          "text": "$6",
+          "alternative": "6 dollars"
+        },
+        {
+          "sourceField": "recognition/1",
+          "compactStart": 9,
+          "text": "MSC > MPC",
+          "alternative": "M S C is greater than M P C"
+        },
+        {
+          "sourceField": "recognition/1",
+          "compactStart": 18,
+          "text": "MPB > MSB",
+          "alternative": "M P B is greater than M S B"
+        },
+        {
+          "sourceField": "recognition/2",
+          "compactStart": 9,
+          "text": "MSB > MPB",
+          "alternative": "M S B is greater than M P B"
+        },
+        {
+          "sourceField": "recognition/2",
+          "compactStart": 18,
+          "text": "MPC > MSC",
+          "alternative": "M P C is greater than M S C"
+        }
+      ],
+      "formulaReviewState": "SOURCE_CHECKED_AT_PENDING",
+      "assetSourcePath": "build/faculty-build-composer/data/question-assets/market-failures/EXTERNALITY-B-01.webp",
+      "assetSourceSha256": "080e46bbcd0e26fa0e1f94e85bf8319a2afd1bafe95ec6832e6b86bdbae65aeb"
     },
     "MACRO-23": {
       "baselineSha256": "a952d43370533c450360e4fd78077567ebde46f053c659d5ec9b1c44cb84e82e",
       "sourceRecordSha256": "a8f2d062275d0eec4a07880e3ee9f423217523c3305f05a31b2e1ab42278a9d5",
-      "reviewStatus": "PILOT_ONLY_NOT_RELEASE_APPROVED",
+      "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
       "decorativeText": [
         "+",
         "?",
@@ -133,13 +288,80 @@
         "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
       ],
       "graphDecodedSha256": "cd5f50028686226538829495597ffcdcac04fe23a412ce70c098535f618e73a2",
-      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_semantic_review.md",
-      "descriptionKey": "quantity-theory-fixed-v-y:9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d"
+      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
+      "descriptionKey": "quantity-theory-fixed-v-y:9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d",
+      "inlineFormulas": [
+        {
+          "sourceField": "core",
+          "compactStart": 19,
+          "text": "MV = PY",
+          "alternative": "M times V equals P times Y; V denotes velocity."
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 91,
+          "text": "MS1",
+          "alternative": "money supply one"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 103,
+          "text": "MS2",
+          "alternative": "money supply two"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 175,
+          "text": "1/2 = 0.50",
+          "alternative": "one divided by two equals zero point five zero"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 185,
+          "text": "1/1 = 1.00",
+          "alternative": "one divided by one equals one point zero zero"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 195,
+          "text": "100%",
+          "alternative": "100 percent"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 234,
+          "text": "1/P",
+          "alternative": "one divided by P, the value of money"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 253,
+          "text": "MV = PY",
+          "alternative": "M times V equals P times Y; V denotes velocity."
+        },
+        {
+          "sourceField": "check",
+          "compactStart": 2,
+          "text": "MV = PY",
+          "alternative": "M times V equals P times Y; V denotes velocity."
+        },
+        {
+          "sourceField": "recognition/0",
+          "compactStart": 14,
+          "text": "MV = PY",
+          "alternative": "M times V equals P times Y; V denotes velocity."
+        }
+      ],
+      "formulaReviewState": "SOURCE_CHECKED_AT_PENDING",
+      "assetSourcePath": "build/faculty-build-composer/data/concept-reviews/assets/quantity-theory-fixed-v-y.png",
+      "assetSourceSha256": "9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d",
+      "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/MACRO-23.pdf",
+      "visualSourceSha256": "a952d43370533c450360e4fd78077567ebde46f053c659d5ec9b1c44cb84e82e"
     },
     "MACRO-24": {
       "baselineSha256": "2e44ec93a405b3e176fef1e982208b2f48bfca1bf0e92edd3d4833f27ed5f686",
       "sourceRecordSha256": "7adadf88af293221a790e099bc0474b860c2cce7bfa75b9700f2edd5013a6a11",
-      "reviewStatus": "PILOT_ONLY_NOT_RELEASE_APPROVED",
+      "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
       "decorativeText": [
         "+",
         "?",
@@ -157,13 +379,50 @@
         "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
       ],
       "graphDecodedSha256": "cd5f50028686226538829495597ffcdcac04fe23a412ce70c098535f618e73a2",
-      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_semantic_review.md",
-      "descriptionKey": "quantity-theory-fixed-v-y:9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d"
+      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
+      "descriptionKey": "quantity-theory-fixed-v-y:9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d",
+      "inlineFormulas": [
+        {
+          "sourceField": "worked",
+          "compactStart": 123,
+          "text": "1/2 = 0.50",
+          "alternative": "one divided by two equals zero point five zero"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 133,
+          "text": "1/1 = 1.00",
+          "alternative": "one divided by one equals one point zero zero"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 143,
+          "text": "100%",
+          "alternative": "100 percent"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 241,
+          "text": "1/P",
+          "alternative": "one divided by P, the value of money"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 261,
+          "text": "MV = PY",
+          "alternative": "M times V equals P times Y; V denotes velocity."
+        }
+      ],
+      "formulaReviewState": "SOURCE_CHECKED_AT_PENDING",
+      "assetSourcePath": "build/faculty-build-composer/data/concept-reviews/assets/quantity-theory-fixed-v-y.png",
+      "assetSourceSha256": "9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d",
+      "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/MACRO-24.pdf",
+      "visualSourceSha256": "2e44ec93a405b3e176fef1e982208b2f48bfca1bf0e92edd3d4833f27ed5f686"
     },
     "MACRO-29": {
       "baselineSha256": "82764f9b8da1d0ad2aeb0e12098ace03ed9e2a7d828047bcab265fce24cac40d",
       "sourceRecordSha256": "9e7c87de8a255735563f20205eaccba30fb5ea34ba4049d99684202b5aadd11e",
-      "reviewStatus": "PILOT_ONLY_NOT_RELEASE_APPROVED",
+      "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
       "decorativeText": [
         "+",
         "?",
@@ -181,13 +440,74 @@
         "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
       ],
       "graphDecodedSha256": "8da4fab9d331c47a9c2252fd55119168c55b6274fe30602dacaee0e1f8f14b6c",
-      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_semantic_review.md",
-      "graphAlternative": "Two panels show monetary-policy transmission. Left, interest rate r is vertical and money M horizontal. Money demand MD slopes downward. Vertical MS2 is left of MS1. Their intersections with MD are at the higher rate r2 for MS2 and lower rate r1 for MS1. Right, price level P is vertical and real output Y horizontal. Downward AD2 lies left of AD1. At the same marked price level P1, the point on AD2 is at Y2, left of Y1 on AD1. The contraction from MS1 to MS2 raises the interest rate and is paired with the leftward shift from AD1 to AD2; no numerical magnitudes are shown."
+      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
+      "graphAlternative": "Two panels show monetary-policy transmission. Left, interest rate r is vertical and money M horizontal. Money demand MD slopes downward. Vertical MS2 is left of MS1. Their intersections with MD are at the higher rate r2 for MS2 and lower rate r1 for MS1. Right, price level P is vertical and real output Y horizontal. Downward AD2 lies left of AD1. At the same marked price level P1, the point on AD2 is at Y2, left of Y1 on AD1. The contraction from MS1 to MS2 raises the interest rate and is paired with the leftward shift from AD1 to AD2; no numerical magnitudes are shown.",
+      "inlineFormulas": [
+        {
+          "sourceField": "worked",
+          "compactStart": 38,
+          "text": "MS1",
+          "alternative": "money supply one"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 43,
+          "text": "MS2",
+          "alternative": "money supply two"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 71,
+          "text": "r1",
+          "alternative": "interest rate r one"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 75,
+          "text": "r2",
+          "alternative": "interest rate r two"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 158,
+          "text": "AD1",
+          "alternative": "aggregate demand one"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 163,
+          "text": "AD2",
+          "alternative": "aggregate demand two"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 179,
+          "text": "P1",
+          "alternative": "price level P one"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 209,
+          "text": "Y1",
+          "alternative": "real output Y one"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 213,
+          "text": "Y2",
+          "alternative": "real output Y two"
+        }
+      ],
+      "formulaReviewState": "SOURCE_CHECKED_AT_PENDING",
+      "assetSourcePath": "build/faculty-build-composer/data/question-assets/monetary-policy-transmission/ad_ms_md.webp",
+      "assetSourceSha256": "d70ef13ab6a98967e9695cc8d50b707ac8ccfaf3a913527b04ca1485a8e047a4",
+      "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/MACRO-29.pdf",
+      "visualSourceSha256": "82764f9b8da1d0ad2aeb0e12098ace03ed9e2a7d828047bcab265fce24cac40d"
     },
     "MACRO-42": {
       "baselineSha256": "bbe628f9f3a2ff6056720a72c7bc8965be1d66669e7ecfd4d8fb5647a3cea229",
       "sourceRecordSha256": "cfe5fd542d667ffb619b28ffee0ccc4946bdc6353dbfa3aa4ae036fdbf5fd99a",
-      "reviewStatus": "PILOT_ONLY_NOT_RELEASE_APPROVED",
+      "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
       "decorativeText": [
         "+",
         "?",
@@ -198,7 +518,7 @@
         "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2"
       ],
       "graphDecodedSha256": null,
-      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_semantic_review.md",
+      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
       "formulaCard": [
         {
           "text": "Private saving = Y - T - C",
@@ -220,10 +540,164 @@
           "text": "Open: S = I + NCO; NX = NCO",
           "alternative": "Open economy: S equals I plus N C O; N X equals N C O."
         }
-      ]
+      ],
+      "inlineFormulas": [
+        {
+          "sourceField": "core",
+          "compactStart": 29,
+          "text": "Y - T - C",
+          "alternative": "Y minus T minus C"
+        },
+        {
+          "sourceField": "core",
+          "compactStart": 51,
+          "text": "T - G",
+          "alternative": "T minus G"
+        },
+        {
+          "sourceField": "core",
+          "compactStart": 80,
+          "text": "S = Y - C - G",
+          "alternative": "S equals Y minus C minus G"
+        },
+        {
+          "sourceField": "core",
+          "compactStart": 105,
+          "text": "S = I",
+          "alternative": "S equals I"
+        },
+        {
+          "sourceField": "core",
+          "compactStart": 125,
+          "text": "S = I + NCO",
+          "alternative": "S equals I plus N C O"
+        },
+        {
+          "sourceField": "core",
+          "compactStart": 140,
+          "text": "NX = NCO",
+          "alternative": "N X equals N C O"
+        },
+        {
+          "sourceField": "core",
+          "compactStart": 163,
+          "text": "S = I + NX",
+          "alternative": "S equals I plus N X"
+        },
+        {
+          "sourceField": "watch",
+          "compactStart": 33,
+          "text": "T - G",
+          "alternative": "T minus G"
+        },
+        {
+          "sourceField": "watch",
+          "compactStart": 51,
+          "text": "G - T",
+          "alternative": "G minus T"
+        },
+        {
+          "sourceField": "watch",
+          "compactStart": 122,
+          "text": "S = I",
+          "alternative": "S equals I"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 3,
+          "text": "Y = $1,200",
+          "alternative": "Y equals one thousand two hundred dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 12,
+          "text": "T = $150",
+          "alternative": "T equals one hundred fifty dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 19,
+          "text": "C = $760",
+          "alternative": "C equals seven hundred sixty dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 29,
+          "text": "G = $260",
+          "alternative": "G equals two hundred sixty dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 51,
+          "text": "$290",
+          "alternative": "290 dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 70,
+          "text": "-$110",
+          "alternative": "negative 110 dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 92,
+          "text": "$180",
+          "alternative": "180 dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 119,
+          "text": "$140,",
+          "alternative": "140, dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 128,
+          "text": "NCO = S - I = $40",
+          "alternative": "N C O equals S minus I equals forty dollars"
+        },
+        {
+          "sourceField": "worked",
+          "compactStart": 170,
+          "text": "NX = $40",
+          "alternative": "N X equals forty dollars"
+        },
+        {
+          "sourceField": "check",
+          "compactStart": 15,
+          "text": "$220",
+          "alternative": "220 dollars"
+        },
+        {
+          "sourceField": "check",
+          "compactStart": 36,
+          "text": "-$50",
+          "alternative": "negative 50 dollars"
+        },
+        {
+          "sourceField": "recognition/0",
+          "compactStart": 18,
+          "text": "T - G",
+          "alternative": "T minus G"
+        },
+        {
+          "sourceField": "recognition/1",
+          "compactStart": 44,
+          "text": "Y - C - G",
+          "alternative": "Y minus C minus G"
+        },
+        {
+          "sourceField": "recognition/2",
+          "compactStart": 3,
+          "text": "S = I",
+          "alternative": "S equals I"
+        }
+      ],
+      "formulaReviewState": "SOURCE_CHECKED_AT_PENDING"
     }
   },
   "descriptions": {
     "quantity-theory-fixed-v-y:9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d": "Quantity-theory graph. The vertical axis is value of money, one divided by P; the horizontal axis is money supply M. Money demand MD slopes downward and curves toward the horizontal axis. Vertical MS1 is at 2,500 and meets MD at point a, at a money value of 2. Vertical MS2 is at 5,000 and meets MD at point b, at a money value of 1. Dashed horizontal guides mark 2 and 1. MS2 is to the right of MS1 and b is below and to the right of a. The vertical axis shows the reciprocal of the price level, not velocity V."
-  }
+  },
+  "currentTask": "PDF_ACCESSIBILITY_PILOT_BLOCKERS_V1"
 }
