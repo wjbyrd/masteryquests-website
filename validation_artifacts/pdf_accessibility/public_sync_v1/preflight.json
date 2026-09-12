@@ -1,0 +1,1616 @@
+{
+  "task": "CONCEPT_REVIEW_PUBLIC_SYNC_V1",
+  "root": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "branch": "main",
+  "head": "c752a1c4ff023535eecb16537a5ec275be738308",
+  "gitStatus": " M audit_tools/pdf_accessibility/run_regression.py\n?? audit_tools/pdf_accessibility/public_routing_check.js\n?? audit_tools/pdf_accessibility/public_sync.py\n",
+  "writeProbe": "PASS",
+  "source": {
+    "GEN-ECON-01.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-01.pdf",
+      "sha256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+      "size": 367465
+    },
+    "GEN-ECON-02.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-02.pdf",
+      "sha256": "3bed99ec42cd92401e6116d11c9bd0eab605b062b4118f18424378eb1352934c",
+      "size": 369447
+    },
+    "GEN-ECON-03.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-03.pdf",
+      "sha256": "401531b7c34aa73a37e3d8ac5c8eb8106c769605bac590293fe0ac7308b39f8d",
+      "size": 369453
+    },
+    "GEN-ECON-04.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-04.pdf",
+      "sha256": "ac0cd3d0de042ac8a99a5b63ea2bea6a0f7a59f7b4758163fc132cff5c9a7544",
+      "size": 369614
+    },
+    "GEN-ECON-05.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-05.pdf",
+      "sha256": "d590a7b636adf0eb19602db3cdd021df683bccb48b4d211cb71926b3b1d64918",
+      "size": 368061
+    },
+    "GEN-ECON-06.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-06.pdf",
+      "sha256": "c431110e559b4806ac0d941d4896dd8f51e9895c0a22848e7f9a81b5490008b8",
+      "size": 367511
+    },
+    "GEN-ECON-07.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-07.pdf",
+      "sha256": "ae201b24fb4ecfd91e7f32201e86a8054f7a390f0116aea106399ebd40fac45d",
+      "size": 368686
+    },
+    "GEN-ECON-08.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-08.pdf",
+      "sha256": "243ec98f6369f880774f419c62137b8316d9314d7778daac284d147bea2329d1",
+      "size": 385546
+    },
+    "GEN-ECON-09.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-09.pdf",
+      "sha256": "d9d39864adca2edc30126cb45094d0ff72e25e3a54482a02ef93f6b6f725cdfe",
+      "size": 401007
+    },
+    "GEN-ECON-10.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-10.pdf",
+      "sha256": "ac64ad041af1430f17b0b1489013092e1ba65bf5c475084a40b9bf496201adec",
+      "size": 384256
+    },
+    "GEN-ECON-11.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-11.pdf",
+      "sha256": "2fa0511ee13165b8c00147387b180a277633277fa235863a2db706af2bfee970",
+      "size": 370322
+    },
+    "GEN-ECON-12.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-12.pdf",
+      "sha256": "bd2adb538ab3f050005fb2499c360d7dcd696e45d467846641afdca0157d85f2",
+      "size": 594871
+    },
+    "GEN-ECON-13.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-13.pdf",
+      "sha256": "9dda34ed489d90d1739960fbce6af7e0f46a2eac2346ad496e34a81a91d49798",
+      "size": 575589
+    },
+    "GEN-ECON-14.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-14.pdf",
+      "sha256": "4e73cfe1274917a1d62e2b0b20a92d23c9a2dfd0014a3214fcd0f3a6e179a6b2",
+      "size": 574898
+    },
+    "GEN-ECON-15.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-15.pdf",
+      "sha256": "1d67cf7bdd86ee6189ce33f24288ecb9922f8b209456a9c63e4f19f04eb2fbd8",
+      "size": 586329
+    },
+    "GEN-ECON-16.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-16.pdf",
+      "sha256": "384dc6a4a200198d55ef0b1d8e05572c8b4a4cbbf83b1f5504120a0ef40a5a3e",
+      "size": 391615
+    },
+    "GEN-ECON-17.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-17.pdf",
+      "sha256": "8696c4065624db63a75debebb91b9e74f530585d83783df67aa8d62b2f09f40d",
+      "size": 403385
+    },
+    "GEN-ECON-18.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-18.pdf",
+      "sha256": "699c0af6c15b20a1837903a42178eb56fbf321de11eb177a08a41c63e2f53556",
+      "size": 634624
+    },
+    "GEN-ECON-19.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-19.pdf",
+      "sha256": "9a13a124bf65866bb77c43a3b7dc9accc2589d37397454e25f254cabc3550cb6",
+      "size": 677051
+    },
+    "GEN-ECON-20.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-20.pdf",
+      "sha256": "86cb46fa02786610c7914776b4853ae4dfe1fe5ba1795f48188b1f7403d6bcf4",
+      "size": 677144
+    },
+    "GEN-ECON-21.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-21.pdf",
+      "sha256": "b7db97ac0914ba63b9284e66880adfb54bbbffac63db62dc00fa4297f4d0536d",
+      "size": 677484
+    },
+    "GEN-ECON-22.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-22.pdf",
+      "sha256": "f721ce3a85443c7a6c07d82fbb62df3bf1d1afac5d8b810e54f1e1ee4512586d",
+      "size": 401976
+    },
+    "GEN-ECON-23.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-23.pdf",
+      "sha256": "cf76e44b769c42d9759832b00f6f9d66dc53343fa5969f32f8fc18853cfa939d",
+      "size": 668035
+    },
+    "GEN-ECON-24.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-24.pdf",
+      "sha256": "3642c37fdb623bb59d240ad73963c2fd659b9448cdc2cf4c0f024ddd1b565c86",
+      "size": 592105
+    },
+    "GEN-ECON-25.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-25.pdf",
+      "sha256": "33b8d990fd7c7f5844a67421d48c40750e0fa239db1977166a4bb1820722cf9a",
+      "size": 413803
+    },
+    "GEN-ECON-26.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\GEN-ECON-26.pdf",
+      "sha256": "c6d8e829a04405085067d7e5d5a72515af8bfb743f9f68f30f980401730a9e3b",
+      "size": 369828
+    },
+    "MACRO-01.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-01.pdf",
+      "sha256": "a70ae14dd55e60b10a6fe7ebb6c8c03a5c8f24416faad1420c75ab5047251381",
+      "size": 371284
+    },
+    "MACRO-02.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-02.pdf",
+      "sha256": "81f01c720e4feca929a3adac9e4a60715568e6ec204789b0f9a5d80cd5a02092",
+      "size": 370313
+    },
+    "MACRO-03.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-03.pdf",
+      "sha256": "6b89b8bd17b020daa09d4713b54d0fffb82d714de735e9f18c10edf1dd7c23a4",
+      "size": 400319
+    },
+    "MACRO-04.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-04.pdf",
+      "sha256": "d7c40bda1d597195e1ea6aab0d813a64bab8f545275f6607384f84278a289cb8",
+      "size": 369305
+    },
+    "MACRO-05.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-05.pdf",
+      "sha256": "1d4da013ea56c612aa9cc2f905d36d739fed90195ae1ff3f40b21b29c57c4530",
+      "size": 409358
+    },
+    "MACRO-06.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-06.pdf",
+      "sha256": "fc635b74f49465ad4120a99f132eeef9a997776ece085b2fea841bea6edf850a",
+      "size": 368129
+    },
+    "MACRO-07.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-07.pdf",
+      "sha256": "d0b4ab3837d144c5dc5c4a307c1c4aa8aafaa76c737924299aa81f4bee23f01d",
+      "size": 420608
+    },
+    "MACRO-08.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-08.pdf",
+      "sha256": "4dd00d3010bd3f103537c3e31fba2661b707bf9f08c0d9ff39c9fdcf43659446",
+      "size": 368129
+    },
+    "MACRO-09.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-09.pdf",
+      "sha256": "44c27f851261b26deac66410fd1edc1ec90a0e4c1e6c7f6dc50bc949e3eb0ead",
+      "size": 369727
+    },
+    "MACRO-10.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-10.pdf",
+      "sha256": "753b82984c6556f9f714d0389775f097a3a273ba61e7ccae1654384772ebc7c3",
+      "size": 369945
+    },
+    "MACRO-11.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-11.pdf",
+      "sha256": "45eb61150b288f5fea35a3846bcae636a064bdc01abcc318c07a1316a0bcb8b7",
+      "size": 368117
+    },
+    "MACRO-12.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-12.pdf",
+      "sha256": "f5c3eac342bb2c82d539258a090bb0b64f00db56b47399af1c1206ee84e27b09",
+      "size": 518122
+    },
+    "MACRO-13.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-13.pdf",
+      "sha256": "8597af794f3447fe6b95911413ea7a5d24d9a4d6df939c91259675966e38ace4",
+      "size": 367816
+    },
+    "MACRO-14.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-14.pdf",
+      "sha256": "5b9d9b986e53cc80c690371abdff8b75df8f0fa1f55d92f5543902f53260b84b",
+      "size": 404086
+    },
+    "MACRO-15.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-15.pdf",
+      "sha256": "90e173afd93c0d109ffea45f6e41dec14776b8b0a6f208c629b5367f4df549f0",
+      "size": 368596
+    },
+    "MACRO-16.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-16.pdf",
+      "sha256": "07e06c327f486a2e9f3bd1b3bac4cf0b802e995d960241385f1ca8a855b0dfcc",
+      "size": 404856
+    },
+    "MACRO-17.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-17.pdf",
+      "sha256": "31d79cde9c40bc4a5a0ce1db2409cfdcea2db3319b17616604918144d13e72f1",
+      "size": 370992
+    },
+    "MACRO-18.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-18.pdf",
+      "sha256": "2780d554fe05273832ac26c25c7dc8221023f15af9b6497ecfaf48cc025d3fed",
+      "size": 422443
+    },
+    "MACRO-19.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-19.pdf",
+      "sha256": "cf2ed9459cc9c77f02a477c42fb2bd9ed43fc3e3c78e923d523d0faf179b40f2",
+      "size": 383141
+    },
+    "MACRO-20.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-20.pdf",
+      "sha256": "a5a7ff5f4ff44cf12baa2ecd7e213fed31f12109ef2126248957e8d512416a61",
+      "size": 426893
+    },
+    "MACRO-21.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-21.pdf",
+      "sha256": "3b7e2f6ff8d482bea2016c6066e6eeda05e4eaa188618bcbd16c663845c53074",
+      "size": 428841
+    },
+    "MACRO-22.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-22.pdf",
+      "sha256": "071828a1c16b6d003dafd7bf2d379b747bb0cd24715ef492d30f5e04473eddb1",
+      "size": 369435
+    },
+    "MACRO-23.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-23.pdf",
+      "sha256": "3621387a928e25465ec6910b90b38d612c2167befea7168ae0993f553fa34603",
+      "size": 391983
+    },
+    "MACRO-24.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-24.pdf",
+      "sha256": "5be14694d46240136fde402c4ad51830009272e039539d55ed70da2e70ef0621",
+      "size": 432310
+    },
+    "MACRO-25.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-25.pdf",
+      "sha256": "566adc406a9aaaacd410cb011de567464b433c71c22937b879715dc0588dc655",
+      "size": 369879
+    },
+    "MACRO-26.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-26.pdf",
+      "sha256": "6bb4ed31aba672abdf508a72b5268015b5895be701cb2ba32e9db9ab6f334171",
+      "size": 383408
+    },
+    "MACRO-27.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-27.pdf",
+      "sha256": "1b9984085b11470a4541ab19fb410a5941facc66aeff25349e6582c411b3ad2e",
+      "size": 370133
+    },
+    "MACRO-28.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-28.pdf",
+      "sha256": "53c6298c704ac11358bac520bb5ebe41a2ef02fe5b5714eb7b9c1a1d28b977b2",
+      "size": 610289
+    },
+    "MACRO-29.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-29.pdf",
+      "sha256": "64c9ed2467ea2120aad2028671a01895fb0fdb3e409f774688c5bf5523f71805",
+      "size": 705591
+    },
+    "MACRO-30.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-30.pdf",
+      "sha256": "c936d94b327e6e4ff0c65b9c9e5d86b009d451f2c4b9574f5df5358e5119afc1",
+      "size": 386921
+    },
+    "MACRO-31.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-31.pdf",
+      "sha256": "b9093d63bdc9a9f23135d9adf4a39dab6fb334e85590d5103968e31b969d31ff",
+      "size": 554304
+    },
+    "MACRO-32.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-32.pdf",
+      "sha256": "02334be093ae6d37f9afd55b72e0863a6a7e0a0ab29c02a8ffb2d1f0536c38f6",
+      "size": 369577
+    },
+    "MACRO-33.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-33.pdf",
+      "sha256": "4b73bd86c707618e2d2c3d0695ef19f59e584c3cc4a8854b4427a9a040c1472c",
+      "size": 713158
+    },
+    "MACRO-34.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-34.pdf",
+      "sha256": "9ef2b3ac8801846a9647372ab1c28797e13e9df087b657827847de79c2b1a75e",
+      "size": 661569
+    },
+    "MACRO-35.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-35.pdf",
+      "sha256": "afcdf883eabf3523b92ec6472bd5a0569d62cf17ac362a8319950e653be7ce6e",
+      "size": 624958
+    },
+    "MACRO-36.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-36.pdf",
+      "sha256": "78729a55e1ab4445dc114446f0581ed4aac263a6be37ee1ce48ae628ce3bd4f5",
+      "size": 414682
+    },
+    "MACRO-37.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-37.pdf",
+      "sha256": "75212d255f1eeb5b2c0f819318ea32b2361032d83591a97a58b94513cd362449",
+      "size": 393212
+    },
+    "MACRO-38.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-38.pdf",
+      "sha256": "9af873f08259922edf80be13a2b8e8778f7b0e33ec7ad5db183fcd463d5e7338",
+      "size": 396528
+    },
+    "MACRO-39.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-39.pdf",
+      "sha256": "b9a8a4dbb2c048c8799fde62b668e5414fadcd9a4a2461b00e0ff44625a4546f",
+      "size": 390157
+    },
+    "MACRO-40.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-40.pdf",
+      "sha256": "0bcb7cebee08bb5ff0d4e73d81ec9358b54ec363113f1af538b369a203809ada",
+      "size": 654276
+    },
+    "MACRO-41.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-41.pdf",
+      "sha256": "addcb9ce3f03de4563b8122e4aa74d3310e79a48348a10832f2b2ed9b9340183",
+      "size": 410017
+    },
+    "MACRO-42.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-42.pdf",
+      "sha256": "cde3e41b3fa4df5ae65d6243ce2196013e505087640746d087da79da5b9c4aa4",
+      "size": 427347
+    },
+    "MACRO-43.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-43.pdf",
+      "sha256": "b85c3672abf726821ac19ca3e769040f93fda8e4bda6671268b2ba006e70f57b",
+      "size": 556346
+    },
+    "MACRO-44.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-44.pdf",
+      "sha256": "ac734fbba53618c3186fad51f1ee07e0ae2aff7ee11d587029fcf6b953d1b440",
+      "size": 598574
+    },
+    "MACRO-45.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-45.pdf",
+      "sha256": "ff9c0cb19db242cc58ac5446de32de560e939565e6039df54a4cbed4cf310d2c",
+      "size": 625356
+    },
+    "MACRO-46.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-46.pdf",
+      "sha256": "4446d646153ca54c5bca319987a87bba98eeed4db4e393dc311f1286fbe2eaa3",
+      "size": 305759
+    },
+    "MACRO-47.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-47.pdf",
+      "sha256": "51f0d668da2273edeef0dec46a38d98494103513cd170fe26aa92662af17ccf7",
+      "size": 369148
+    },
+    "MACRO-48.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-48.pdf",
+      "sha256": "7e6244bf4e5154f8155aea7cdcf260dada2b06986ba12e56e68d5a492af97048",
+      "size": 403512
+    },
+    "MACRO-49.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-49.pdf",
+      "sha256": "2895c52992e78655957fa3ed657a88c82b714cb85fec37dc65aaa93d8583b529",
+      "size": 418894
+    },
+    "MACRO-50.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-50.pdf",
+      "sha256": "58fc80217a7d406a8071c453300bbf6ab1f985b3bd679644469c7f2629e9e233",
+      "size": 698072
+    },
+    "MACRO-51.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-51.pdf",
+      "sha256": "e51d71b35aa110346b7ff585d6c9ddbb71ceba4e0fb3a2e05fb672e80ea636a6",
+      "size": 625091
+    },
+    "MACRO-52.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-52.pdf",
+      "sha256": "74c8b1e13befd4c51e8d7fb91bac62db0d6977f615ba371e6759638758041702",
+      "size": 409096
+    },
+    "MACRO-53.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-53.pdf",
+      "sha256": "f938ba98a0181cfe7ceb2ac1b96420281bd0f76bd37cf9c91aab4bb47630d717",
+      "size": 304799
+    },
+    "MACRO-54.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-54.pdf",
+      "sha256": "3d166786cb1bc0831242e7b7b7a3d92df93bc887b5c8ad6ac8d47a6d757a181f",
+      "size": 306038
+    },
+    "MACRO-55.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-55.pdf",
+      "sha256": "a726051fd22eae2579048569d3e298c26660dad31444425c495b9c5e3265e6b4",
+      "size": 369628
+    },
+    "MACRO-56.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-56.pdf",
+      "sha256": "715ea54d715dbf1187df76dfcfd9a370e63c0c70f08055affefc6032be9dbf52",
+      "size": 701485
+    },
+    "MACRO-57.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MACRO-57.pdf",
+      "sha256": "12a4fbd49a774c7f232a4b84371f0ab47de5beb2319582a0fb3fbb593cdf86ab",
+      "size": 404098
+    },
+    "MICRO-01.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-01.pdf",
+      "sha256": "f56f61a1a48f9683a93b0b0360b17bf0df1c50e5546c015fcb8dc6886b21c6ed",
+      "size": 382761
+    },
+    "MICRO-02.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-02.pdf",
+      "sha256": "84d17f96df21f272380954521b4216d90ccb3d3fc0ac04c291c1cd404c297c1a",
+      "size": 394632
+    },
+    "MICRO-03.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-03.pdf",
+      "sha256": "7229993841056599846219761c7234c8f40d67ed06869bf6b28b4aee6a3546e0",
+      "size": 369770
+    },
+    "MICRO-04.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-04.pdf",
+      "sha256": "45d1cfaeafa2d195e6b3545d911521b91ae32ff0df9e892cd47dc4814d22cf3d",
+      "size": 517597
+    },
+    "MICRO-05.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-05.pdf",
+      "sha256": "4b51e3c55a8063ccf37aeca8200a6167b35421f91e5e402407267154e171ff78",
+      "size": 645828
+    },
+    "MICRO-06.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-06.pdf",
+      "sha256": "ffaf1120c567ca792ce64578197763ba51300e06db5164722f4d8c9268832a77",
+      "size": 369512
+    },
+    "MICRO-07.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-07.pdf",
+      "sha256": "9ba5e0cb232b9bb5b2fb8b6e05e7308780a14150680877d1b84cbcbd37844fa6",
+      "size": 384681
+    },
+    "MICRO-08.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-08.pdf",
+      "sha256": "931f5085a5229dc435d854181d412b40bff5e333be17970fd3f7dd9c90a30a51",
+      "size": 392231
+    },
+    "MICRO-09.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-09.pdf",
+      "sha256": "93134c5a47789d903d04687d2093b51cad0106c405905d93e6f4057192e7b63f",
+      "size": 368706
+    },
+    "MICRO-10.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-10.pdf",
+      "sha256": "9ba738ca798bae76f395e8bd4789d458f01599870479b778a82e9b62b04886e7",
+      "size": 488609
+    },
+    "MICRO-11.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-11.pdf",
+      "sha256": "d82d07cac90e31e88d8c7df1cf4b6d9c02227e0d3b640c2727357642b1954433",
+      "size": 398102
+    },
+    "MICRO-12.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-12.pdf",
+      "sha256": "c584a9cbc55f1a545ce8b2697a9efa4d2a701fe77a3f16d95f9fe27c7ba95dab",
+      "size": 384433
+    },
+    "MICRO-13.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-13.pdf",
+      "sha256": "e83bc7ad976fc609b72fdf059d795f7bfbb06c3d740441d867e098ee8c44eef8",
+      "size": 386513
+    },
+    "MICRO-14.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-14.pdf",
+      "sha256": "2e864a634a9c1d49366f41684fd222b860be6dd9a2b18736576369032bfc5256",
+      "size": 391040
+    },
+    "MICRO-15.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-15.pdf",
+      "sha256": "4d7d28ac7199bd85a3d836a1d8272121584ee42ee5ff84c807e6a0a4de926071",
+      "size": 394385
+    },
+    "MICRO-16.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-16.pdf",
+      "sha256": "3a1aad21f1f7ba9fec95b38920d352caac943311f1e585cc1bfe6c94c81258d4",
+      "size": 410204
+    },
+    "MICRO-17.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-17.pdf",
+      "sha256": "63f4a341fb05a8474f7599a92d8b1a08814aad9d3dfccacd4ceac049ee64be9b",
+      "size": 469931
+    },
+    "MICRO-18.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-18.pdf",
+      "sha256": "8c95d5f32ca2c5a948a7779c872f5cf8f07fa021190b8fb6b7510e46e65b803b",
+      "size": 369671
+    },
+    "MICRO-19.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-19.pdf",
+      "sha256": "a9c0a14ae33532922d6ba7456fe3d8112e90754762df01fc8b255704d7c8b7b6",
+      "size": 370063
+    },
+    "MICRO-20.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-20.pdf",
+      "sha256": "be3e389772aad64a6a110a03de3a9e92322ee9282767e76d974d3b268108f6e4",
+      "size": 402415
+    },
+    "MICRO-21.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-21.pdf",
+      "sha256": "de18eea3f73349efc2a6affff3a8f7f6ffd6dc7cebf44ec3d83daf169c842105",
+      "size": 397099
+    },
+    "MICRO-22.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-22.pdf",
+      "sha256": "4441b4cfcf1eab7032a72cfdf5fe1eb67112b7e7c6f5ef42cd5123625f6ccd71",
+      "size": 400307
+    },
+    "MICRO-23.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-23.pdf",
+      "sha256": "c1351abb1e44e3a9921de6df155a22c7b64d61c9efaa006fa83f319b01dbb82e",
+      "size": 401064
+    },
+    "MICRO-24.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-24.pdf",
+      "sha256": "dabbcee9ceae13445291c4893314e51a0461f6d87836b1425de3d5fc6df4be02",
+      "size": 396905
+    },
+    "MICRO-25.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-25.pdf",
+      "sha256": "a9b32835116185c38a4fbc3c32b83cf12944c8bda8243e1cd4ac982f375b53c1",
+      "size": 369692
+    },
+    "MICRO-26.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-26.pdf",
+      "sha256": "97d74729a47cb81fc927f22e7a7831cba4f6a1123b6c9662ee13d5f2e772c023",
+      "size": 621632
+    },
+    "MICRO-27.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-27.pdf",
+      "sha256": "cb7e9fa9cc69e605844f71013a69351f3421af74911c6edcec6b29ca23d0a1a4",
+      "size": 391674
+    },
+    "MICRO-28.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-28.pdf",
+      "sha256": "60db92a48cb6f15a6f221864f20becae19696699d2fceb1c135cf5daeb63f83e",
+      "size": 404163
+    },
+    "MICRO-29.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-29.pdf",
+      "sha256": "af23d2644f9bd24e4fb20d1fd93cac11b886392da091f92c2f5dcd72f9f064d4",
+      "size": 683016
+    },
+    "MICRO-30.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-30.pdf",
+      "sha256": "525f3add522de0c304ff5c8fea67403556a6d8dd0fb19f0bfdfc7e30d4be5b62",
+      "size": 798263
+    },
+    "MICRO-31.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-31.pdf",
+      "sha256": "397f2424086c938a027968b4023addc3e002469222ddbad7c4c1c9d51cbce6e8",
+      "size": 650233
+    },
+    "MICRO-32.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-32.pdf",
+      "sha256": "0d84c7a66e230802ce8ddc93df86d011011a8b2110f50d4854a0aefbaf3c1a97",
+      "size": 399676
+    },
+    "MICRO-33.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-33.pdf",
+      "sha256": "f5713547290107b9a9a9c34a62fb8ac2e78c5ab119e32d5dc7ae3c3bc59631e0",
+      "size": 412983
+    },
+    "MICRO-34.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-34.pdf",
+      "sha256": "81357c578b057099b674c68345d812ad1d70cb61f6a209d5b65fe20580431577",
+      "size": 436198
+    },
+    "MICRO-35.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-35.pdf",
+      "sha256": "f4246d1ac2d472b50492994e32e6fa96d603f8b935430a5e7f2ddac7e3d4d57c",
+      "size": 796260
+    },
+    "MICRO-36.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-36.pdf",
+      "sha256": "b4baf699b0f04aef2450be01b219495da94d8ea8d9e221eaf1faf883fe19dbd0",
+      "size": 367796
+    },
+    "MICRO-37.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-37.pdf",
+      "sha256": "d4cd05c41f8574cf901de1cd74da371edbe33cc4333434ca6fbe891f6cc855f5",
+      "size": 767270
+    },
+    "MICRO-38.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-38.pdf",
+      "sha256": "2a3599ff53e2d969f4a3bf383348c255038b64068e64d1fdbd0fa5dfb31fd8c5",
+      "size": 399593
+    },
+    "MICRO-39.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-39.pdf",
+      "sha256": "d9a01e3c67c2e6a3a9a26d9c461615a045cf8bd9b611d3eb16f429e7e9a72490",
+      "size": 730115
+    },
+    "MICRO-40.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-40.pdf",
+      "sha256": "234b9ab36aa6a68b8888a04e23ba2c4a1bc422aa9e7f5331c06b696e13b8fa67",
+      "size": 396584
+    },
+    "MICRO-41.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-41.pdf",
+      "sha256": "f43904710893c5e143072e6121706f7c210db030d4cfd180dfcea2fa483fa95a",
+      "size": 689086
+    },
+    "MICRO-42.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-42.pdf",
+      "sha256": "e753a441e3f8f060cb9128fc3c51440824e559d4cc1266715a7ccfd1c3c97cdb",
+      "size": 369224
+    },
+    "MICRO-43.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-43.pdf",
+      "sha256": "a071a00353a42117c675f2f2179d9c66a1c3401167092770ecf52edbde5ab348",
+      "size": 368855
+    },
+    "MICRO-44.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-44.pdf",
+      "sha256": "6fbcc13ef0efa753313b5c71513f33a76ca21d0f92705c684e5b561cdaebe548",
+      "size": 394216
+    },
+    "MICRO-45.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-45.pdf",
+      "sha256": "82a671bef70b1ec85203ef8ad626a38c6857e8dde90499bf870fe468c3873b9a",
+      "size": 392583
+    },
+    "MICRO-46.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-46.pdf",
+      "sha256": "69e507695b300aaac005a4b7cc9f1e1c7ffc8cd8f4cf253a8d664d8685418ded",
+      "size": 368914
+    },
+    "MICRO-47.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-47.pdf",
+      "sha256": "53fab327b4fb43688f53dc3c4b7c1f83627ea9bad48d40e67085f99af79f846c",
+      "size": 367595
+    },
+    "MICRO-48.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-48.pdf",
+      "sha256": "8e2f74241fa694699222a479fa7612817cb30c386c629e7b9fe9217f9cc43b55",
+      "size": 411981
+    },
+    "MICRO-49.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-49.pdf",
+      "sha256": "512ee726f9d7f4383f2534f4816b9a8b7276f4b563689a4ed7ba32d53de1cd17",
+      "size": 392496
+    },
+    "MICRO-50.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-50.pdf",
+      "sha256": "e9bfb964da736d101002f34f397040413a511a105ae2e64c2114c3086027136d",
+      "size": 410685
+    },
+    "MICRO-51.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-51.pdf",
+      "sha256": "fec636313e5b58f39eece9aac53b6cc37b0df66f64d20505919c84e0552de5aa",
+      "size": 391696
+    },
+    "MICRO-52.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-52.pdf",
+      "sha256": "1ba066b695c7179a7317bf1766726770d299694391165d8628ccbe99658c2a7e",
+      "size": 396895
+    },
+    "MICRO-53.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-53.pdf",
+      "sha256": "d435580810f2a04d785921f9ac9d126132e2023d9628c5db97ada170a1341cae",
+      "size": 369705
+    },
+    "MICRO-54.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-54.pdf",
+      "sha256": "384e176d7b659680b81294073eb3bc73f8e61adbe790b34f807cb2ed531fdfef",
+      "size": 540246
+    },
+    "MICRO-55.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-55.pdf",
+      "sha256": "fc765a350e0619283c92c6ca4b45e1b9185cde4bbed839e2c39d7d20f0e0b6a4",
+      "size": 561230
+    },
+    "MICRO-56.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-56.pdf",
+      "sha256": "cf649925209a78c42df75131038ed4cc98fcab2afb2a6db363c49d79093e322d",
+      "size": 301930
+    },
+    "MICRO-57.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-57.pdf",
+      "sha256": "3839043f0080e413b1000f18a4e587f0c7c370695b589282cb6eba351d2c8461",
+      "size": 395030
+    },
+    "MICRO-58.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-58.pdf",
+      "sha256": "bfbaa8b6056709887b4b011505435f34640b24b5f8428f9fc6fa3b8cea91d56d",
+      "size": 390467
+    },
+    "MICRO-59.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-59.pdf",
+      "sha256": "76c299411200f3716f8b742549921c6e5994750a12deb287d3ac41ebd83b6837",
+      "size": 650717
+    },
+    "MICRO-60.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-60.pdf",
+      "sha256": "4aa56d43a7a7a30741b16ba93627a90b0ecfc305e8189f126ccc4885f57310d6",
+      "size": 302441
+    },
+    "MICRO-61.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-61.pdf",
+      "sha256": "9db213b565542d83df4e53954ea53ca448432bbb626486f856849b60c059b50f",
+      "size": 302282
+    },
+    "MICRO-62.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-62.pdf",
+      "sha256": "b0682983cdfd27bb05e4afbf3d10bc79f60d7a976cbdb2ebabcc08168b743f19",
+      "size": 302257
+    },
+    "MICRO-63.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-63.pdf",
+      "sha256": "d971566a54845a228003f2609324b20f68b684ea7dd2b7326089986240cd65af",
+      "size": 302303
+    },
+    "MICRO-64.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-64.pdf",
+      "sha256": "497712eed8b5ccd30ce8477884dc4661afd72efb57bf73b5a471778e61844b0b",
+      "size": 303730
+    },
+    "MICRO-65.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-65.pdf",
+      "sha256": "9567e607464cf0a3395c860f8f977ed599f84b9cf80b906237162a6a1137fec0",
+      "size": 303548
+    },
+    "MICRO-66.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-66.pdf",
+      "sha256": "51ac896f507a8d3226e739c4a3ed66180c31708904ba514b143ac028c0877529",
+      "size": 398430
+    },
+    "MICRO-67.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-67.pdf",
+      "sha256": "4d39ce0f4c718d0dba251233eed0255729917d7dac40d58c0f2b55c4c7da9427",
+      "size": 441586
+    },
+    "MICRO-68.pdf": {
+      "path": "build\\faculty-build-composer\\data\\concept-reviews\\MICRO-68.pdf",
+      "sha256": "2cf6235883294c2286f540c290d1f67e584b4a0489c0f6b1ea65246b86966a62",
+      "size": 392630
+    }
+  },
+  "public": {
+    "GEN-ECON-01.pdf": {
+      "path": "concept-reviews\\GEN-ECON-01.pdf",
+      "sha256": "5dac31da45408511293b60b66179929fb18371c26668304d792921528881e332",
+      "size": 353549
+    },
+    "GEN-ECON-02.pdf": {
+      "path": "concept-reviews\\GEN-ECON-02.pdf",
+      "sha256": "8ed871121c684a6b04f89b2d9e1324853a33d5339999bb6fc88cd66f2103b6fd",
+      "size": 353883
+    },
+    "GEN-ECON-03.pdf": {
+      "path": "concept-reviews\\GEN-ECON-03.pdf",
+      "sha256": "b6b15c6e6d33a281c1711dadc75a60d829be215455fd31d5bb8e0b405d1a48cb",
+      "size": 353443
+    },
+    "GEN-ECON-04.pdf": {
+      "path": "concept-reviews\\GEN-ECON-04.pdf",
+      "sha256": "ce7dfb70af10d71533c32938623b7c9caea606f7f75ed8ae1dbc74f94737d6b1",
+      "size": 353511
+    },
+    "GEN-ECON-05.pdf": {
+      "path": "concept-reviews\\GEN-ECON-05.pdf",
+      "sha256": "ffa72935cde20fb5505ca58ce647f855891adb858a3ba905b42480135b875969",
+      "size": 353576
+    },
+    "GEN-ECON-06.pdf": {
+      "path": "concept-reviews\\GEN-ECON-06.pdf",
+      "sha256": "db96e0a69e9da76542064c64ae30d0b5817fb256a702f4b4c3501c4cd2c45205",
+      "size": 353530
+    },
+    "GEN-ECON-07.pdf": {
+      "path": "concept-reviews\\GEN-ECON-07.pdf",
+      "sha256": "40dd71c284a0dfa52b82aba73bbe8781b448406429e70caa7ae1d4c214dd1bc8",
+      "size": 353808
+    },
+    "GEN-ECON-08.pdf": {
+      "path": "concept-reviews\\GEN-ECON-08.pdf",
+      "sha256": "a4cdead63aefb1a883353a1186bd89071953976847db027db99e785c1e349967",
+      "size": 605917
+    },
+    "GEN-ECON-09.pdf": {
+      "path": "concept-reviews\\GEN-ECON-09.pdf",
+      "sha256": "9d5940f42216ea2399aaa3ea4721289e407c358c794784cb7a16840695e0bb83",
+      "size": 353653
+    },
+    "GEN-ECON-10.pdf": {
+      "path": "concept-reviews\\GEN-ECON-10.pdf",
+      "sha256": "7de5e5caba8749f23c230db0c80dcb9050d7e34286b2661d6852b39e477d6056",
+      "size": 353723
+    },
+    "GEN-ECON-11.pdf": {
+      "path": "concept-reviews\\GEN-ECON-11.pdf",
+      "sha256": "82561ba8f8f1c9ec506337843d3af3f24d1374935ec5beb5315c02bcabcd7b4c",
+      "size": 353939
+    },
+    "GEN-ECON-12.pdf": {
+      "path": "concept-reviews\\GEN-ECON-12.pdf",
+      "sha256": "4c0bdf4a15e0cda4838e0603e5f4ad1b7a01f4ff32fd2c2b9595d185082c381f",
+      "size": 578841
+    },
+    "GEN-ECON-13.pdf": {
+      "path": "concept-reviews\\GEN-ECON-13.pdf",
+      "sha256": "aa8df46c439efd810823b06203dcd5bf330cb0c7c8ac2683a5a9c024d9b154bb",
+      "size": 611599
+    },
+    "GEN-ECON-14.pdf": {
+      "path": "concept-reviews\\GEN-ECON-14.pdf",
+      "sha256": "68434f4acfb52f72343bc0753cacb9381cee988d76fa0ffd451a5d5b61ac10a1",
+      "size": 559063
+    },
+    "GEN-ECON-15.pdf": {
+      "path": "concept-reviews\\GEN-ECON-15.pdf",
+      "sha256": "9822d54120677d005ff5e648884e0fe4fb890b60ec009627f16dfee1dfa06fea",
+      "size": 624377
+    },
+    "GEN-ECON-16.pdf": {
+      "path": "concept-reviews\\GEN-ECON-16.pdf",
+      "sha256": "277188fd9ce7764d6a52483424e4a59daa9b7d24e547f1ce6ff5ca03f0adc088",
+      "size": 684586
+    },
+    "GEN-ECON-17.pdf": {
+      "path": "concept-reviews\\GEN-ECON-17.pdf",
+      "sha256": "dacae7a0491d0859cdc5e9239916c975c80706b3b5ccbfdfcf0012ab2e4a95fb",
+      "size": 618891
+    },
+    "GEN-ECON-18.pdf": {
+      "path": "concept-reviews\\GEN-ECON-18.pdf",
+      "sha256": "98a43f4f5216dc5b65cb8b028cd66a8ecd10a02a13cc0fbb3decda107cc5c2c6",
+      "size": 684879
+    },
+    "GEN-ECON-19.pdf": {
+      "path": "concept-reviews\\GEN-ECON-19.pdf",
+      "sha256": "5e0dda5f6099a2f900bccce6f982408cd589d6779ed98ccc752a8c7f9ab60de9",
+      "size": 660121
+    },
+    "GEN-ECON-20.pdf": {
+      "path": "concept-reviews\\GEN-ECON-20.pdf",
+      "sha256": "318a5cda4c284af2e3e1f1be16d8173200e47a272c6d754c2510678ce1501602",
+      "size": 660114
+    },
+    "GEN-ECON-21.pdf": {
+      "path": "concept-reviews\\GEN-ECON-21.pdf",
+      "sha256": "635e4092c6a5b5c9f37b4f16928b7d5451185b03aef47b630f306ae6673de7e3",
+      "size": 661037
+    },
+    "GEN-ECON-22.pdf": {
+      "path": "concept-reviews\\GEN-ECON-22.pdf",
+      "sha256": "a6b33a7043dfea25324df9653cb46e525deef9f33dfe8c0f216d5bebba76816b",
+      "size": 713845
+    },
+    "GEN-ECON-23.pdf": {
+      "path": "concept-reviews\\GEN-ECON-23.pdf",
+      "sha256": "1596c9e45cba999decfcc5a0acda5614e10c7a36d5b48a6c1e67da1e3d2248e8",
+      "size": 652360
+    },
+    "GEN-ECON-24.pdf": {
+      "path": "concept-reviews\\GEN-ECON-24.pdf",
+      "sha256": "bb4105413ae19879c5f80cdba9dd9f28b5ce5a307cb674c05c2ebe55bad41f42",
+      "size": 629952
+    },
+    "GEN-ECON-25.pdf": {
+      "path": "concept-reviews\\GEN-ECON-25.pdf",
+      "sha256": "7f33fc8d073172088df56593e880ef1090044da6a01abd263653a13c097e24a2",
+      "size": 678733
+    },
+    "GEN-ECON-26.pdf": {
+      "path": "concept-reviews\\GEN-ECON-26.pdf",
+      "sha256": "d8f8574b60145be9e127eaf6ee0880af15dace1ab4cf088bfdab2c37a3673645",
+      "size": 353975
+    },
+    "MACRO-01.pdf": {
+      "path": "concept-reviews\\MACRO-01.pdf",
+      "sha256": "5e0479e0e24bc9c340c108eaf2124ddd03e44e64ad93fcaa1dcf06589a7aec8e",
+      "size": 354054
+    },
+    "MACRO-02.pdf": {
+      "path": "concept-reviews\\MACRO-02.pdf",
+      "sha256": "8c75ce58c20fdf370a7d0b27f56b8ff19b3f8744bc682178284aee741c8d24ee",
+      "size": 353572
+    },
+    "MACRO-03.pdf": {
+      "path": "concept-reviews\\MACRO-03.pdf",
+      "sha256": "3633a38d91344c53c3d35c749276e06048ebd4d1b56f2137d09e143915ca0f4b",
+      "size": 353547
+    },
+    "MACRO-04.pdf": {
+      "path": "concept-reviews\\MACRO-04.pdf",
+      "sha256": "4d66e3b4fd2dbf45b4a6ff9cedb524ab0d315fc3892bfef25fc613779680621a",
+      "size": 353660
+    },
+    "MACRO-05.pdf": {
+      "path": "concept-reviews\\MACRO-05.pdf",
+      "sha256": "39a5370be4009c54bdcf60212140dfae7728a8078f93ee36a93a75d433a71aeb",
+      "size": 353484
+    },
+    "MACRO-06.pdf": {
+      "path": "concept-reviews\\MACRO-06.pdf",
+      "sha256": "50caf2c4afea6a86ba6b7844719319b1a71c1ce58af9e814f68efd4d2e4cbcd4",
+      "size": 353668
+    },
+    "MACRO-07.pdf": {
+      "path": "concept-reviews\\MACRO-07.pdf",
+      "sha256": "46be6f9a77d1e1bcce79f5f90708b9761cbd74d08487b8d53b3c000e1941dc2b",
+      "size": 353621
+    },
+    "MACRO-08.pdf": {
+      "path": "concept-reviews\\MACRO-08.pdf",
+      "sha256": "17efdf5304c1008b923aee8e528f8bd656a7234817b20b701ef783f3f28390f4",
+      "size": 353495
+    },
+    "MACRO-09.pdf": {
+      "path": "concept-reviews\\MACRO-09.pdf",
+      "sha256": "81b22bb750257d99dd4318567dd775bab5fb46c2e3e2bdf44fdd433ea8a85bf0",
+      "size": 353546
+    },
+    "MACRO-10.pdf": {
+      "path": "concept-reviews\\MACRO-10.pdf",
+      "sha256": "2a8e1d4bc3589c25cdc6117e4ed7979e78e48577219ecb769549112bf801f1e1",
+      "size": 353716
+    },
+    "MACRO-11.pdf": {
+      "path": "concept-reviews\\MACRO-11.pdf",
+      "sha256": "41c685c48fb8e48fa206b0ecc03b11c0ba8063214c25b476d0b059638dc28a1f",
+      "size": 503180
+    },
+    "MACRO-12.pdf": {
+      "path": "concept-reviews\\MACRO-12.pdf",
+      "sha256": "d84e3ede35db6e4d4915d72d0b04e5c1b1fcde68d43d8850f93092fe9b3b4002",
+      "size": 503248
+    },
+    "MACRO-13.pdf": {
+      "path": "concept-reviews\\MACRO-13.pdf",
+      "sha256": "49d256cf53848968f3dce266a3fbeda024a31b803153cda9504a69c0dba67081",
+      "size": 503257
+    },
+    "MACRO-14.pdf": {
+      "path": "concept-reviews\\MACRO-14.pdf",
+      "sha256": "26fd36f8aeee9e497c2bde2cd83a40e948a6a7774cd9bb2553f9e41b71d83774",
+      "size": 353550
+    },
+    "MACRO-15.pdf": {
+      "path": "concept-reviews\\MACRO-15.pdf",
+      "sha256": "ab11e963bd35c57a8b00b2378ceac89934ed99d271b6f2299bb07311bc77d47f",
+      "size": 353646
+    },
+    "MACRO-16.pdf": {
+      "path": "concept-reviews\\MACRO-16.pdf",
+      "sha256": "0a28b8b4b02a8e230c577afb27e01eb3fa35c25857e322b6e9a0e3f7c413fa16",
+      "size": 353554
+    },
+    "MACRO-17.pdf": {
+      "path": "concept-reviews\\MACRO-17.pdf",
+      "sha256": "6d3f90895f03cdf47ce6911d072f5b7f3bf81f3c3176597a64ab07d59c058d8b",
+      "size": 353932
+    },
+    "MACRO-18.pdf": {
+      "path": "concept-reviews\\MACRO-18.pdf",
+      "sha256": "6ce6bc260c2eb7ba73f08cce5232144f339758fef60790c5ede58c5e37d2cdf2",
+      "size": 353595
+    },
+    "MACRO-19.pdf": {
+      "path": "concept-reviews\\MACRO-19.pdf",
+      "sha256": "a2cbf27227b4c0f2505f81975a5b9584999a108ffa7fa29214d30b5a2bd81c7c",
+      "size": 353851
+    },
+    "MACRO-20.pdf": {
+      "path": "concept-reviews\\MACRO-20.pdf",
+      "sha256": "075409542219abcb19bae4f8c88ad81ac6fc6d932dc8f97207d97e55aca66060",
+      "size": 244907
+    },
+    "MACRO-21.pdf": {
+      "path": "concept-reviews\\MACRO-21.pdf",
+      "sha256": "d7f88d7558b2a77c4e03cac2756875809159ba13032346b1bf6bcf0ff8b7248b",
+      "size": 353756
+    },
+    "MACRO-22.pdf": {
+      "path": "concept-reviews\\MACRO-22.pdf",
+      "sha256": "fd87e6d4c56fe4e0736369ee64d75c3728f3a597ef344a1b1738d9f7619e9918",
+      "size": 353677
+    },
+    "MACRO-23.pdf": {
+      "path": "concept-reviews\\MACRO-23.pdf",
+      "sha256": "a952d43370533c450360e4fd78077567ebde46f053c659d5ec9b1c44cb84e82e",
+      "size": 413808
+    },
+    "MACRO-24.pdf": {
+      "path": "concept-reviews\\MACRO-24.pdf",
+      "sha256": "2e44ec93a405b3e176fef1e982208b2f48bfca1bf0e92edd3d4833f27ed5f686",
+      "size": 414060
+    },
+    "MACRO-25.pdf": {
+      "path": "concept-reviews\\MACRO-25.pdf",
+      "sha256": "ba0ac0d044922a47d8c8271293112499272c74f3d8a46eafcaf15c06eb4e2165",
+      "size": 353664
+    },
+    "MACRO-26.pdf": {
+      "path": "concept-reviews\\MACRO-26.pdf",
+      "sha256": "f0b9a0bced6960bd4e893756bcf49cc9cbb82c5808f5378341b6ee5be30b74db",
+      "size": 353705
+    },
+    "MACRO-27.pdf": {
+      "path": "concept-reviews\\MACRO-27.pdf",
+      "sha256": "6378512de77e7ddbf93ad6308848aaaf0ad5713a444c2a966e48cb438d3cfbf2",
+      "size": 353694
+    },
+    "MACRO-28.pdf": {
+      "path": "concept-reviews\\MACRO-28.pdf",
+      "sha256": "222cd55dea67f0b0d0002df38a934e19bc6bd6abe63572a51710d5ebec6689c7",
+      "size": 594146
+    },
+    "MACRO-29.pdf": {
+      "path": "concept-reviews\\MACRO-29.pdf",
+      "sha256": "82764f9b8da1d0ad2aeb0e12098ace03ed9e2a7d828047bcab265fce24cac40d",
+      "size": 687846
+    },
+    "MACRO-30.pdf": {
+      "path": "concept-reviews\\MACRO-30.pdf",
+      "sha256": "34052024c1c5d3640f3e3dfb48f551d2f9efdf0d8559bcead9ff34ddcd2785bc",
+      "size": 615164
+    },
+    "MACRO-31.pdf": {
+      "path": "concept-reviews\\MACRO-31.pdf",
+      "sha256": "b74607f146518d505b4a648c37694fcec9f591b57fd1840cfe5df71360e4eb0c",
+      "size": 582160
+    },
+    "MACRO-32.pdf": {
+      "path": "concept-reviews\\MACRO-32.pdf",
+      "sha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc",
+      "size": 353773
+    },
+    "MACRO-33.pdf": {
+      "path": "concept-reviews\\MACRO-33.pdf",
+      "sha256": "7eba640cdeafef1e4f3ec35c48129f4c6d47d57376228fb2328f188dcb6953fe",
+      "size": 698432
+    },
+    "MACRO-34.pdf": {
+      "path": "concept-reviews\\MACRO-34.pdf",
+      "sha256": "75d2aa72a0e03a1aa492c243e9802fa63204701d65baafd6d77ed8d0df7cedd4",
+      "size": 606805
+    },
+    "MACRO-35.pdf": {
+      "path": "concept-reviews\\MACRO-35.pdf",
+      "sha256": "1dd44c2d07a569f0fc5b29bc266dd885fb24dc1ecba19868c64d0960b9fdafc2",
+      "size": 570424
+    },
+    "MACRO-36.pdf": {
+      "path": "concept-reviews\\MACRO-36.pdf",
+      "sha256": "86e6ad50fcf9c5e1b274e3da6822fc978aa75fd56456e599e90ab21befdec3d2",
+      "size": 359915
+    },
+    "MACRO-37.pdf": {
+      "path": "concept-reviews\\MACRO-37.pdf",
+      "sha256": "d2c40350b270928c84c72ba50175e8eba8f6041b4ea6baf3455d98b17815f913",
+      "size": 565289
+    },
+    "MACRO-38.pdf": {
+      "path": "concept-reviews\\MACRO-38.pdf",
+      "sha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731",
+      "size": 642014
+    },
+    "MACRO-39.pdf": {
+      "path": "concept-reviews\\MACRO-39.pdf",
+      "sha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4",
+      "size": 638816
+    },
+    "MACRO-40.pdf": {
+      "path": "concept-reviews\\MACRO-40.pdf",
+      "sha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e",
+      "size": 638729
+    },
+    "MACRO-41.pdf": {
+      "path": "concept-reviews\\MACRO-41.pdf",
+      "sha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7",
+      "size": 353540
+    },
+    "MACRO-42.pdf": {
+      "path": "concept-reviews\\MACRO-42.pdf",
+      "sha256": "bbe628f9f3a2ff6056720a72c7bc8965be1d66669e7ecfd4d8fb5647a3cea229",
+      "size": 244878
+    },
+    "MACRO-43.pdf": {
+      "path": "concept-reviews\\MACRO-43.pdf",
+      "sha256": "de4574a2cd5d02029d182e4d5a56c3025340343e1f2e7ea407a1e30d17436afa",
+      "size": 501475
+    },
+    "MACRO-44.pdf": {
+      "path": "concept-reviews\\MACRO-44.pdf",
+      "sha256": "1eec8a3f7fd15358095f2d429fca7a6f469ec1bbc947af0cd830a09a70d0c04c",
+      "size": 544124
+    },
+    "MACRO-45.pdf": {
+      "path": "concept-reviews\\MACRO-45.pdf",
+      "sha256": "c459039887c63fee8dff5a7e0c1b8562796c0b8e73c9286922fac1129d703255",
+      "size": 570440
+    },
+    "MACRO-46.pdf": {
+      "path": "concept-reviews\\MACRO-46.pdf",
+      "sha256": "6475cead1fe9d7d80ca9ab152cd429f836f4aff72d0f19a7fe97f9dea2a6ffa2",
+      "size": 244836
+    },
+    "MACRO-47.pdf": {
+      "path": "concept-reviews\\MACRO-47.pdf",
+      "sha256": "2eab645e75d56d0f730d319c822bca79045d110b4e8c609fad3a116b0f5c97ac",
+      "size": 245050
+    },
+    "MACRO-48.pdf": {
+      "path": "concept-reviews\\MACRO-48.pdf",
+      "sha256": "d14330ce3e111ef82c384a5b433e2e532678557463e40ef74f27ad433b47a2b4",
+      "size": 245006
+    },
+    "MACRO-49.pdf": {
+      "path": "concept-reviews\\MACRO-49.pdf",
+      "sha256": "55e7f512712d5788361951d253fd3b38a97f7d50cf4549d16d16fad307f9aac0",
+      "size": 244951
+    },
+    "MACRO-50.pdf": {
+      "path": "concept-reviews\\MACRO-50.pdf",
+      "sha256": "d10c7a9dde725f47c19ea9014f5c29cf327cb2f28c8dee6f368f7f55500813aa",
+      "size": 643451
+    },
+    "MACRO-51.pdf": {
+      "path": "concept-reviews\\MACRO-51.pdf",
+      "sha256": "ddb43f6e77f3822dc619d88cf7f37ff74f5bb10467b0b25737eedf1c63a46c02",
+      "size": 570547
+    },
+    "MACRO-52.pdf": {
+      "path": "concept-reviews\\MACRO-52.pdf",
+      "sha256": "a8043c1a719fcc4858c7b9bb358fb56c9f59d19a342da5adc8c5ae37b08fb947",
+      "size": 244893
+    },
+    "MACRO-53.pdf": {
+      "path": "concept-reviews\\MACRO-53.pdf",
+      "sha256": "857a96cc1f06df356154a8b1c21603df84ae96cc7da87a72d2c8694f4c83d2e5",
+      "size": 244893
+    },
+    "MACRO-54.pdf": {
+      "path": "concept-reviews\\MACRO-54.pdf",
+      "sha256": "564bdaebc6bcb726ac9b25cfac61d39c7a68a30d3395ba3ec63ebfd82539ed63",
+      "size": 245070
+    },
+    "MACRO-55.pdf": {
+      "path": "concept-reviews\\MACRO-55.pdf",
+      "sha256": "2d9ca3d7fde0b4977767e710ef8aa7619607cde907dd51c3e3a6ada6b924eb63",
+      "size": 244938
+    },
+    "MACRO-56.pdf": {
+      "path": "concept-reviews\\MACRO-56.pdf",
+      "sha256": "a73da511a301a6a0150017a6f0cf70118feb9ad5fed943cdb400d9d10f4dbaf2",
+      "size": 646829
+    },
+    "MACRO-57.pdf": {
+      "path": "concept-reviews\\MACRO-57.pdf",
+      "sha256": "7dd6f7e70c7025e10f59860dc8e11e790123125febc0c61238a6504d1b9503bb",
+      "size": 596832
+    },
+    "MICRO-01.pdf": {
+      "path": "concept-reviews\\MICRO-01.pdf",
+      "sha256": "0594ae8947fd115ab1a2c88c8f1300159fbb30f3c6dde2f1e982579f81ee8fb7",
+      "size": 353694
+    },
+    "MICRO-02.pdf": {
+      "path": "concept-reviews\\MICRO-02.pdf",
+      "sha256": "24a93b259f112f5721392c8f587224ba98dd098e59f24e07bed7e915f018a917",
+      "size": 713764
+    },
+    "MICRO-03.pdf": {
+      "path": "concept-reviews\\MICRO-03.pdf",
+      "sha256": "fa982a28f33bb6cf4dec0b62537e22dcb5ef3eea32fe18c9376dc2dd180020c2",
+      "size": 353603
+    },
+    "MICRO-04.pdf": {
+      "path": "concept-reviews\\MICRO-04.pdf",
+      "sha256": "2f33113ddafd439efd70e0dda650c99857b2fa488c7ed3558136f537bbf1ca84",
+      "size": 533875
+    },
+    "MICRO-05.pdf": {
+      "path": "concept-reviews\\MICRO-05.pdf",
+      "sha256": "3aa5d2eedf9a3cee4920adebdb026c47be767bd6bd341c25526ef1a5e096c331",
+      "size": 628588
+    },
+    "MICRO-06.pdf": {
+      "path": "concept-reviews\\MICRO-06.pdf",
+      "sha256": "b50fe275d821e1078c2698ff6bce827e70dfaea466ddee573007f08704659227",
+      "size": 353477
+    },
+    "MICRO-07.pdf": {
+      "path": "concept-reviews\\MICRO-07.pdf",
+      "sha256": "49ef907e57fa79e006ec4ae0a6e7981bae71853305c304d7e5d67fffc7166559",
+      "size": 353611
+    },
+    "MICRO-08.pdf": {
+      "path": "concept-reviews\\MICRO-08.pdf",
+      "sha256": "5c7e92102251048f5fdbc8722112757e186345c7f03f26f43795aa3f69e384f9",
+      "size": 533432
+    },
+    "MICRO-09.pdf": {
+      "path": "concept-reviews\\MICRO-09.pdf",
+      "sha256": "af90729ee8c23c9630fd153b3eb8f3b1397a018baa238c084f02d7ffe9d9928d",
+      "size": 353569
+    },
+    "MICRO-10.pdf": {
+      "path": "concept-reviews\\MICRO-10.pdf",
+      "sha256": "fc1a7e31fe4dd4a15718ef4c32e480e0d368e81907bf63331b60e6cfa172d57c",
+      "size": 499984
+    },
+    "MICRO-11.pdf": {
+      "path": "concept-reviews\\MICRO-11.pdf",
+      "sha256": "3732cd350bcae9b18ed4ba9496aa5572f789ce4bb4d65ad61774113508f3f3c9",
+      "size": 499954
+    },
+    "MICRO-12.pdf": {
+      "path": "concept-reviews\\MICRO-12.pdf",
+      "sha256": "b454d41b5d9607145c03a7252afd184a76e0c5a6bf5729b4204ffc0c1574098d",
+      "size": 499948
+    },
+    "MICRO-13.pdf": {
+      "path": "concept-reviews\\MICRO-13.pdf",
+      "sha256": "85f95a7e0f7f3a3c318c635400d3713593f1906defc0a7bd66799b23d436e8d1",
+      "size": 503840
+    },
+    "MICRO-14.pdf": {
+      "path": "concept-reviews\\MICRO-14.pdf",
+      "sha256": "67d8fbd4eaadaddc77389fcb4c57b759fb8df3abcd0cd3fad0b44c5d6998f5c3",
+      "size": 469008
+    },
+    "MICRO-15.pdf": {
+      "path": "concept-reviews\\MICRO-15.pdf",
+      "sha256": "c5e35d67d396c93f878fce0c85660017c10622da86afc8fd1b95a0883f6a29fa",
+      "size": 353707
+    },
+    "MICRO-16.pdf": {
+      "path": "concept-reviews\\MICRO-16.pdf",
+      "sha256": "ffdd7e45c23e62f3fe83dcbb0ea356e8b2a59f72b197c5d7a81fdd533b919e0c",
+      "size": 600485
+    },
+    "MICRO-17.pdf": {
+      "path": "concept-reviews\\MICRO-17.pdf",
+      "sha256": "6f9db5c59dbf614c088aba8e78111e2b03586b3ce09b5f9e82718bf30c2d3576",
+      "size": 477282
+    },
+    "MICRO-18.pdf": {
+      "path": "concept-reviews\\MICRO-18.pdf",
+      "sha256": "1e755f4fedf3c4a1f5ebcbac245a635aa09e9199ebd1fbd6043538d9e21f81a7",
+      "size": 353521
+    },
+    "MICRO-19.pdf": {
+      "path": "concept-reviews\\MICRO-19.pdf",
+      "sha256": "93a17d663b88cb0dcf04b4696dba224b56e9f169b44180077d91df388eba48ba",
+      "size": 353524
+    },
+    "MICRO-20.pdf": {
+      "path": "concept-reviews\\MICRO-20.pdf",
+      "sha256": "0724b92d6e72ea26219eabcc0fccd389a80e39aace9386bc852459c806443d20",
+      "size": 429082
+    },
+    "MICRO-21.pdf": {
+      "path": "concept-reviews\\MICRO-21.pdf",
+      "sha256": "2addf3db5e0c084f27a8e61c26bdcf9552adb7a403831f7dfc2fc0b634ee94e1",
+      "size": 821195
+    },
+    "MICRO-22.pdf": {
+      "path": "concept-reviews\\MICRO-22.pdf",
+      "sha256": "7f6e07f5a8ba76428aa3ce7bb7646d94e92c85147d690bf092a7989d93381105",
+      "size": 568872
+    },
+    "MICRO-23.pdf": {
+      "path": "concept-reviews\\MICRO-23.pdf",
+      "sha256": "8d6b88b72c06d2b41d78b9beff4a3bead4b61fce12ad32010a1408b273628cc0",
+      "size": 568829
+    },
+    "MICRO-24.pdf": {
+      "path": "concept-reviews\\MICRO-24.pdf",
+      "sha256": "f9c43b5269696ffd016849725812d82f20c9af43a4144099de8d9566f6feea24",
+      "size": 503897
+    },
+    "MICRO-25.pdf": {
+      "path": "concept-reviews\\MICRO-25.pdf",
+      "sha256": "41c7f4e94f080c122ad178e92c83df5c0c4aeffa3a31029a52f041ee5aab7503",
+      "size": 353542
+    },
+    "MICRO-26.pdf": {
+      "path": "concept-reviews\\MICRO-26.pdf",
+      "sha256": "fff581cc87ef2a611df4a3a5a4b1fabb7ffb6f9bf9fd12fcf68d6da62c3fbe1f",
+      "size": 605434
+    },
+    "MICRO-27.pdf": {
+      "path": "concept-reviews\\MICRO-27.pdf",
+      "sha256": "cc83e3bfee5644848c8968aaca1dad0c16ef7165dc6d68e7453b34d93a379d5e",
+      "size": 605417
+    },
+    "MICRO-28.pdf": {
+      "path": "concept-reviews\\MICRO-28.pdf",
+      "sha256": "7da8934c4a1717ef467fd06d0b6fff9fb8642e8f374a830542dfd15d646d778d",
+      "size": 665946
+    },
+    "MICRO-29.pdf": {
+      "path": "concept-reviews\\MICRO-29.pdf",
+      "sha256": "12a0e8066ade335347598db1f3255252477a83ae665a6128315505863af16370",
+      "size": 666049
+    },
+    "MICRO-30.pdf": {
+      "path": "concept-reviews\\MICRO-30.pdf",
+      "sha256": "1752f9ca8ec530d303970590bf671e797cd598e1b9b02c2c22507a642b4fa70c",
+      "size": 781714
+    },
+    "MICRO-31.pdf": {
+      "path": "concept-reviews\\MICRO-31.pdf",
+      "sha256": "fc05ca1af10a0dd5df2f373f4fa66a00a94598c3351405c278a46a17b2791c17",
+      "size": 634695
+    },
+    "MICRO-32.pdf": {
+      "path": "concept-reviews\\MICRO-32.pdf",
+      "sha256": "8294847a3f3496953f8e30b63a34eb8a1d6acfe6b679dd056d87010789d672ec",
+      "size": 634679
+    },
+    "MICRO-33.pdf": {
+      "path": "concept-reviews\\MICRO-33.pdf",
+      "sha256": "da4a205e051b47b57ca053fbd9a1d294280b0f0688f3eb0bac1c45fa04704033",
+      "size": 779627
+    },
+    "MICRO-34.pdf": {
+      "path": "concept-reviews\\MICRO-34.pdf",
+      "sha256": "12d44e3c982c5d4464872383a4df4728efef1640f36ba35ff59eccc967760d41",
+      "size": 420593
+    },
+    "MICRO-35.pdf": {
+      "path": "concept-reviews\\MICRO-35.pdf",
+      "sha256": "df77db0504f3580ff48739410109c353d9e56c523e740c0a7a530c68497cef62",
+      "size": 779679
+    },
+    "MICRO-36.pdf": {
+      "path": "concept-reviews\\MICRO-36.pdf",
+      "sha256": "4e8f658fe4fcc32323d8eee853d31cddbada5219d4146aee0f6e1a0ac0c86c50",
+      "size": 671184
+    },
+    "MICRO-37.pdf": {
+      "path": "concept-reviews\\MICRO-37.pdf",
+      "sha256": "c519602167d085afee48aae6423d674d0d31174739157ccfbc0d9a1b745dbb80",
+      "size": 751263
+    },
+    "MICRO-38.pdf": {
+      "path": "concept-reviews\\MICRO-38.pdf",
+      "sha256": "c05e1e496727fe6b057195a2a39d8a3ec36198824d9785a983fd3eefa09b90e7",
+      "size": 751255
+    },
+    "MICRO-39.pdf": {
+      "path": "concept-reviews\\MICRO-39.pdf",
+      "sha256": "665923def0302bc57b619404813c797c00770778755a9acdfd7c0be3ab32822c",
+      "size": 712900
+    },
+    "MICRO-40.pdf": {
+      "path": "concept-reviews\\MICRO-40.pdf",
+      "sha256": "7adcbcfb4759c165a9438844cf775f8e6fc52ac12a8c42a26ed21ac9a8332048",
+      "size": 671095
+    },
+    "MICRO-41.pdf": {
+      "path": "concept-reviews\\MICRO-41.pdf",
+      "sha256": "d9b63219b87949dade8a0b1cb62e14e413e13c2335056555d0749a7fca35c2bb",
+      "size": 672024
+    },
+    "MICRO-42.pdf": {
+      "path": "concept-reviews\\MICRO-42.pdf",
+      "sha256": "a03eb1af93eaa0c91e612ce15af269707f90e2fba1ffb75d61b8a5d93bebb47b",
+      "size": 353569
+    },
+    "MICRO-43.pdf": {
+      "path": "concept-reviews\\MICRO-43.pdf",
+      "sha256": "86924159f46232a5587b7d662467b4130aeb3197ec226ef28f579a0f14fa13c5",
+      "size": 353813
+    },
+    "MICRO-44.pdf": {
+      "path": "concept-reviews\\MICRO-44.pdf",
+      "sha256": "2731eb56d4f1dc1060e36a1f9be07a9b2529ff501272db24cca0fce855be7872",
+      "size": 690056
+    },
+    "MICRO-45.pdf": {
+      "path": "concept-reviews\\MICRO-45.pdf",
+      "sha256": "47b761401c04b03b11c93b23b66321bc216ea866c377accb26a8cd55452c70fc",
+      "size": 689950
+    },
+    "MICRO-46.pdf": {
+      "path": "concept-reviews\\MICRO-46.pdf",
+      "sha256": "d5d28e0d374a05f9b6099a8b8dacd442295d8a14e13de0c3e3584e6abea2c140",
+      "size": 353902
+    },
+    "MICRO-47.pdf": {
+      "path": "concept-reviews\\MICRO-47.pdf",
+      "sha256": "4214d54092035e9d404e3797952219df935fe8b991fc847755a7967366c1a61b",
+      "size": 690024
+    },
+    "MICRO-48.pdf": {
+      "path": "concept-reviews\\MICRO-48.pdf",
+      "sha256": "176997142487a8a5476223a8d77381d34e746d4d77d1ddb88ee30d8dcf8b1606",
+      "size": 398136
+    },
+    "MICRO-49.pdf": {
+      "path": "concept-reviews\\MICRO-49.pdf",
+      "sha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
+      "size": 379984
+    },
+    "MICRO-50.pdf": {
+      "path": "concept-reviews\\MICRO-50.pdf",
+      "sha256": "188e5d55b00ad1a2cff44f3da36d153fec895c8a4c6875609fe211629179ef58",
+      "size": 460161
+    },
+    "MICRO-51.pdf": {
+      "path": "concept-reviews\\MICRO-51.pdf",
+      "sha256": "d396e96d8831fe4b78b40b35f35795b54f4c39ec5ee9ffb4534540802fe63f06",
+      "size": 403409
+    },
+    "MICRO-52.pdf": {
+      "path": "concept-reviews\\MICRO-52.pdf",
+      "sha256": "93b8a89028f55f40844ea5221dc22135c762496c7a30a20eaa285bef6cb5046c",
+      "size": 467822
+    },
+    "MICRO-53.pdf": {
+      "path": "concept-reviews\\MICRO-53.pdf",
+      "sha256": "0f407010039c171401dd1c7776548f8632a968e250860bf951b4e4b95fbb3ebd",
+      "size": 353811
+    }
+  },
+  "missing": [
+    "MICRO-54.pdf",
+    "MICRO-55.pdf",
+    "MICRO-56.pdf",
+    "MICRO-57.pdf",
+    "MICRO-58.pdf",
+    "MICRO-59.pdf",
+    "MICRO-60.pdf",
+    "MICRO-61.pdf",
+    "MICRO-62.pdf",
+    "MICRO-63.pdf",
+    "MICRO-64.pdf",
+    "MICRO-65.pdf",
+    "MICRO-66.pdf",
+    "MICRO-67.pdf",
+    "MICRO-68.pdf"
+  ],
+  "stale": [],
+  "mismatches": [
+    "GEN-ECON-01.pdf",
+    "GEN-ECON-02.pdf",
+    "GEN-ECON-03.pdf",
+    "GEN-ECON-04.pdf",
+    "GEN-ECON-05.pdf",
+    "GEN-ECON-06.pdf",
+    "GEN-ECON-07.pdf",
+    "GEN-ECON-08.pdf",
+    "GEN-ECON-09.pdf",
+    "GEN-ECON-10.pdf",
+    "GEN-ECON-11.pdf",
+    "GEN-ECON-12.pdf",
+    "GEN-ECON-13.pdf",
+    "GEN-ECON-14.pdf",
+    "GEN-ECON-15.pdf",
+    "GEN-ECON-16.pdf",
+    "GEN-ECON-17.pdf",
+    "GEN-ECON-18.pdf",
+    "GEN-ECON-19.pdf",
+    "GEN-ECON-20.pdf",
+    "GEN-ECON-21.pdf",
+    "GEN-ECON-22.pdf",
+    "GEN-ECON-23.pdf",
+    "GEN-ECON-24.pdf",
+    "GEN-ECON-25.pdf",
+    "GEN-ECON-26.pdf",
+    "MACRO-01.pdf",
+    "MACRO-02.pdf",
+    "MACRO-03.pdf",
+    "MACRO-04.pdf",
+    "MACRO-05.pdf",
+    "MACRO-06.pdf",
+    "MACRO-07.pdf",
+    "MACRO-08.pdf",
+    "MACRO-09.pdf",
+    "MACRO-10.pdf",
+    "MACRO-11.pdf",
+    "MACRO-12.pdf",
+    "MACRO-13.pdf",
+    "MACRO-14.pdf",
+    "MACRO-15.pdf",
+    "MACRO-16.pdf",
+    "MACRO-17.pdf",
+    "MACRO-18.pdf",
+    "MACRO-19.pdf",
+    "MACRO-20.pdf",
+    "MACRO-21.pdf",
+    "MACRO-22.pdf",
+    "MACRO-23.pdf",
+    "MACRO-24.pdf",
+    "MACRO-25.pdf",
+    "MACRO-26.pdf",
+    "MACRO-27.pdf",
+    "MACRO-28.pdf",
+    "MACRO-29.pdf",
+    "MACRO-30.pdf",
+    "MACRO-31.pdf",
+    "MACRO-32.pdf",
+    "MACRO-33.pdf",
+    "MACRO-34.pdf",
+    "MACRO-35.pdf",
+    "MACRO-36.pdf",
+    "MACRO-37.pdf",
+    "MACRO-38.pdf",
+    "MACRO-39.pdf",
+    "MACRO-40.pdf",
+    "MACRO-41.pdf",
+    "MACRO-42.pdf",
+    "MACRO-43.pdf",
+    "MACRO-44.pdf",
+    "MACRO-45.pdf",
+    "MACRO-46.pdf",
+    "MACRO-47.pdf",
+    "MACRO-48.pdf",
+    "MACRO-49.pdf",
+    "MACRO-50.pdf",
+    "MACRO-51.pdf",
+    "MACRO-52.pdf",
+    "MACRO-53.pdf",
+    "MACRO-54.pdf",
+    "MACRO-55.pdf",
+    "MACRO-56.pdf",
+    "MACRO-57.pdf",
+    "MICRO-01.pdf",
+    "MICRO-02.pdf",
+    "MICRO-03.pdf",
+    "MICRO-04.pdf",
+    "MICRO-05.pdf",
+    "MICRO-06.pdf",
+    "MICRO-07.pdf",
+    "MICRO-08.pdf",
+    "MICRO-09.pdf",
+    "MICRO-10.pdf",
+    "MICRO-11.pdf",
+    "MICRO-12.pdf",
+    "MICRO-13.pdf",
+    "MICRO-14.pdf",
+    "MICRO-15.pdf",
+    "MICRO-16.pdf",
+    "MICRO-17.pdf",
+    "MICRO-18.pdf",
+    "MICRO-19.pdf",
+    "MICRO-20.pdf",
+    "MICRO-21.pdf",
+    "MICRO-22.pdf",
+    "MICRO-23.pdf",
+    "MICRO-24.pdf",
+    "MICRO-25.pdf",
+    "MICRO-26.pdf",
+    "MICRO-27.pdf",
+    "MICRO-28.pdf",
+    "MICRO-29.pdf",
+    "MICRO-30.pdf",
+    "MICRO-31.pdf",
+    "MICRO-32.pdf",
+    "MICRO-33.pdf",
+    "MICRO-34.pdf",
+    "MICRO-35.pdf",
+    "MICRO-36.pdf",
+    "MICRO-37.pdf",
+    "MICRO-38.pdf",
+    "MICRO-39.pdf",
+    "MICRO-40.pdf",
+    "MICRO-41.pdf",
+    "MICRO-42.pdf",
+    "MICRO-43.pdf",
+    "MICRO-44.pdf",
+    "MICRO-45.pdf",
+    "MICRO-46.pdf",
+    "MICRO-47.pdf",
+    "MICRO-48.pdf",
+    "MICRO-49.pdf",
+    "MICRO-50.pdf",
+    "MICRO-51.pdf",
+    "MICRO-52.pdf",
+    "MICRO-53.pdf"
+  ],
+  "metadata": {
+    "build\\faculty-build-composer\\data\\concept-reviews\\accessibility_releases.json": "09a2bac7038642742b8c05884fb54ff928f4fa06795eb6f92207c7901bae87f5",
+    "build\\faculty-build-composer\\data\\concept-reviews\\accessibility_semantics.json": "a66c48f2068493412e0226df791ccc6481638b019e0500c70dba6119d7d13cce",
+    "build\\faculty-build-composer\\data\\concept-reviews\\concept_review_integration_audit.json": "240b68993f40bca20ea1f87709cd70fbfe0c51ca963fe454b7b2b8c7db39419c",
+    "build\\faculty-build-composer\\data\\concept-reviews\\concept_review_source.json": "b3bae4b70f5866693464820196f4bda6952cec8453be2878605121b77c7710dc",
+    "build\\faculty-build-composer\\data\\concept-reviews\\concept_review_validation.json": "1598b621f20cbc3601122bc3d6352cd2f68af42a5abfc5a48f23dfe606e5b437",
+    "build\\faculty-build-composer\\data\\concept-reviews\\final_pedagogy_spacing_summary.json": "8bc1dd496becea2c070eac3d319ccb8da5f84c7b056e007ffd48db01e493379d",
+    "build\\faculty-build-composer\\data\\concept-reviews\\layout_spacing_qa_report.json": "2f558d30d13e554eb85b93965a450a92fd9ed736605630f7aec20cd8593daed9",
+    "build\\faculty-build-composer\\data\\concept-reviews\\manifest.json": "6d3b4a68bc7a5a40b229888e0f2e72d7938fbb4d8eadbb859a62cf085016eb09",
+    "build\\faculty-build-composer\\data\\concept-reviews\\semantic_qa_report.json": "d1184694b827b3694c1f61bd502c9c35b5aaa7c5241f96543cb32c832ea4c9c0",
+    "build\\faculty-build-composer\\data\\concept-reviews\\visual_template_qa_report.json": "c6c64a4f883b27c2349e4e5f48b69c871c1aec43bc45847f5dc4e43a6fbb252f"
+  },
+  "nonPDF": {}
+}
