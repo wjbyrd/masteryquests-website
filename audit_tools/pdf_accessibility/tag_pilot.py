@@ -115,6 +115,9 @@ def tag_one(record,meta,destination,visual_source=None):
     reader=PdfReader(path,strict=True)
     if len(reader.pages)!=1:raise ValueError('Unsupported page layout')
     if reader.pages[0].get('/Annots'):raise ValueError('Link/annotation support must be proven before processing')
+    if any(meta.get(k) for k in ('visualRepair','wordingCorrection','sourceFigureContext')):
+        from visual_repairs import apply
+        apply(reader,record,meta)
     ops,blocks=text_blocks(reader.pages[0],reader)
     used=set();nodes=[];ranges=[];transcript=[]
     def match(text):

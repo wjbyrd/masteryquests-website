@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "checks": 51,
+  "composerVersion": "4.5s.3k",
+  "recipeSchemaVersion": "1.6.0",
+  "policy": {
+    "allowedSourceTypes": [
+      "image/webp",
+      "image/png",
+      "image/jpeg"
+    ],
+    "maxSourceBytes": 12582912,
+    "maxNormalizedBytes": 6291456,
+    "maxTotalBytes": 25165824,
+    "maxDimension": 8192,
+    "maxPixels": 40000000,
+    "sceneLongEdge": 2560,
+    "objectLongEdge": 2048,
+    "webpQuality": 0.9
+  },
+  "normalizedCustomBytes": 1552294,
+  "generatedBytes": {
+    "officialOnly": 16844869,
+    "light": 17257054,
+    "moderate": 16129644,
+    "heavy": 14390094
+  }
+}

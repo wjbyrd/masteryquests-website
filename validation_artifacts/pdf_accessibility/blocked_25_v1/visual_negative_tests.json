@@ -1,0 +1,96 @@
+{
+  "task": "PDF_ACCESSIBILITY_BLOCKED_25_V1",
+  "negativeTests": [
+    {
+      "test": "contrast_regression_label",
+      "detected": true,
+      "errors": [
+        "CONTRAST_REGRESSION",
+        "CONTRAST_REGRESSION"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    },
+    {
+      "test": "contrast_regression_curve",
+      "detected": true,
+      "errors": [
+        "CONTRAST_REGRESSION",
+        "CONTRAST_REGRESSION"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    },
+    {
+      "test": "stale_derived_graph_fingerprint",
+      "detected": true,
+      "errors": [
+        "STALE_DERIVED_GRAPH_FINGERPRINT",
+        "STALE_DERIVED_GRAPH_FINGERPRINT"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    },
+    {
+      "test": "stale_original_graph_fingerprint",
+      "detected": true,
+      "errors": [
+        "STALE_DERIVED_GRAPH_ORIGINAL"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    },
+    {
+      "test": "stale_owner_context_source",
+      "detected": true,
+      "errors": [
+        "STALE_VISUALREPAIR_SOURCE",
+        "STALE_SOURCEFIGURECONTEXT_SOURCE"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    },
+    {
+      "test": "stale_owner_context_asset",
+      "detected": true,
+      "errors": [
+        "STALE_VISUALREPAIR_ASSET",
+        "STALE_SOURCEFIGURECONTEXT_ASSET"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    },
+    {
+      "test": "stale_owner_context_graph",
+      "detected": true,
+      "errors": [
+        "STALE_OWNER_CONTEXT_GRAPH",
+        "STALE_DERIVED_GRAPH_FINGERPRINT"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    },
+    {
+      "test": "unreviewed_owner_context",
+      "detected": true,
+      "errors": [
+        "OWNER_CONTEXT_REVIEW_REQUIRED"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    },
+    {
+      "test": "reverted_wording_MICRO-16",
+      "detected": true,
+      "errors": [
+        "STALE_WORDINGCORRECTION_SOURCE",
+        "WORDING_CONTEXT_REGRESSION"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    },
+    {
+      "test": "reverted_wording_MICRO-34",
+      "detected": true,
+      "errors": [
+        "STALE_WORDINGCORRECTION_SOURCE",
+        "WORDING_CONTEXT_REGRESSION"
+      ],
+      "responsibility": "project semantic/visual gate; not veraPDF"
+    }
+  ],
+  "positiveCandidates": 25,
+  "allPassed": true,
+  "screenReaderTest": false
+}

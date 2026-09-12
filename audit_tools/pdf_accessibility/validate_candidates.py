@@ -40,6 +40,7 @@ def validate(rows, output):
         a=Image.open(output/'rendered_before'/(code+'.png')).convert('RGB');b=Image.open(output/'rendered_after'/(code+'.png')).convert('RGB')
         diff=ImageChops.difference(a,b);changed=sum(pixel!=(0,0,0) for pixel in diff.get_flattened_data())
         old=PdfReader(baseline);new=PdfReader(path)
+        from visual_repairs import approved_text_equal
         record={**row,'passed':compliant and not checked['errors'],'independentProfile':'ISO 14289-1:2014',
                 'validator':'veraPDF 1.28.2 --flavour ua1','independentPass':compliant,'projectErrors':checked['errors'],
                 'sourceRecordSha256':source_hash(source),'semanticsSha256':sha(SEMANTICS),'baselineSha256':sha(baseline),
@@ -48,6 +49,7 @@ def validate(rows, output):
                 'pageCounts':[len(old.pages),len(new.pages)],'geometryEqual':list(old.pages[0].mediabox)==list(new.pages[0].mediabox),
                 'textExact':old.pages[0].extract_text()==new.pages[0].extract_text(),
                 'textWhitespaceOnlyEqual':normalized(old.pages[0].extract_text())==normalized(new.pages[0].extract_text()),
+                'ownerApprovedWordingOnly':approved_text_equal(old.pages[0].extract_text(),new.pages[0].extract_text(),meta),
                 'changedPixels':changed,'differenceBounds':diff.getbbox(),'renderReview':'PENDING','assistiveTechnology':'PENDING'}
         write_json(output/'transcripts'/(code+'.json'),checked)
         records.append(record);print(code,'PASS' if record['passed'] else 'FAIL',checked['errors'],flush=True)

@@ -1,6 +1,6 @@
 # Concept Review accessibility pipeline
 
-Current task: `PDF_ACCESSIBILITY_FULL_BATCH_V1`. The active manifest contains 151 resources. All have staged PDF/UA-1 machine-profile passes; the byte-bound semantic/visual gate currently accepts 126 and blocks 25. No active PDF was installed. Installation and human AT verification remain separate owner gates.
+Current task: `PDF_ACCESSIBILITY_BLOCKED_25_V1`. The complete staged gate accepts 151/151 current Concept Review candidates. This closeout changed only the 25 inherited blocked resources; 126 accepted candidate bytes and their evidence were reused. No active PDF was installed. Human AT verification is PENDING.
 
 Run from `C:\Users\Jennings\Documents\GitHub\masteryquests-website` using the pinned Python dependencies in `requirements.txt`. Every input/output is checked by `repo_guard.py`; no alternate checkout or redirected path is accepted.
 
@@ -46,3 +46,21 @@ The optional `--install` operation is for a separately authorized future release
 PDF 1.7 / PDF/UA-1 (ISO 14289-1:2014). Single-page ReportLab text-show streams with proven single-byte font mappings are supported; unknown encodings/operators or unassigned content reject generation. Inline math splits original text-show bytes without moving or duplicating text. MICRO-49 partitions the existing image into non-overlapping caption/header/cell clips, each owned by its semantic element with replacement text. Table attributes include header scopes, IDs, an ID tree and explicit cell Headers references. The image-region mapping is tied to the displayed image fingerprint and captured source values; it is not OCR or a generic arbitrary-table recognizer.
 
 Machine checks do not establish arbitrary graph semantics, visual contrast or screen-reader usability. Actual assistive-technology verification remains PENDING. See `FINAL_REPORT_pdf_accessibility_full_batch.md`, the full-batch evidence directory and the versioned owner pack. The 25 blocked resources retain their machine-passing diagnostic candidates, exact visual/context findings and current production bytes; no weak substitute has been installed.
+
+
+## Targeted blocked-document closeout
+
+The canonical semantics file now includes optional `visualRepair`, `wordingCorrection` and `sourceFigureContext` records for affected resources only. `visual_repairs.py` runs inside the existing source-aware tagger before semantic linking. Shared graph image files and retained visual-input PDFs remain untouched. Resource-specific color rules bind original/derived decoded image hashes, source/asset hashes, reviewed semantic regions, palette anchors, mask sample counts and measured contrast. The original antialias coverage and pixel coordinates remain fixed; the result is losslessly embedded. This is not an arbitrary graph recoloring or recognition tool.
+
+The two owner-authorized self-check changes are applied from canonical instructional source through exact old-paragraph matches, existing subset-font character maps and widths, and the existing line boxes. All other text-show bytes are preserved. Independent preservation checks allow only the recorded replacement, not arbitrary content differences. MICRO-52 carries a source/asset/graph-bound owner adjudication; a fingerprint change requires review again.
+
+Current commands (explicit authorized repository working directory required):
+
+- `closeout_candidates.py` reuses the current 25 completed candidates after checking their evidence; it does not rebuild the 126 accepted candidates. If current evidence is stale, it stops for a scoped revision instead of overwriting prior results.
+- `test_visual_repairs.py` checks actual maintained-image derivation and the 10 new contrast, fingerprint, wording and owner-context negatives.
+- `negative_tests.py --run blocked_25_v1 --validation validation_artifacts/pdf_accessibility/blocked_25_v1/final_validation.json` runs all 27 inherited negatives in isolated scratch.
+- `test_pipeline.py --run blocked_25_v1` runs fixture-only installation/guard tests.
+- `staged_gate.py --validation validation_artifacts/pdf_accessibility/blocked_25_v1/final_validation.json --review validation_artifacts/pdf_accessibility/blocked_25_v1/review_receipt.json --output validation_artifacts/pdf_accessibility/blocked_25_v1/staged_gate.json` checks all 151 resources without generation or installation.
+- `run_regression.py blocked_25_v1` runs the active Composer suite in task-local scratch.
+
+Use the current closeout evidence and installation preview. Older full-batch/pilot evidence is retained as history and must not be overwritten. No active installation is authorized by these commands or by the preview. NumPy 2.3.5, already in the runtime, is now pinned for deterministic color-array calculations; its distribution license is retained in closeout evidence.

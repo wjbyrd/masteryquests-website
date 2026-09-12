@@ -35,7 +35,7 @@ def assess(validation, review_path):
         results.append({'code': code, 'status': 'BLOCKED' if errors else 'PASS',
                         'errors': errors, 'reviewBlockers': approved.get('blockers', []),
                         'candidateSha256': row.get('sha256') if row else None})
-    return {'task': 'PDF_ACCESSIBILITY_FULL_BATCH_V1', 'manifestSha256': sha(MANIFEST),
+    return {'task': review.get('task','PDF_ACCESSIBILITY_FULL_BATCH_V1'), 'manifestSha256': sha(MANIFEST),
             'activeCount': len(expected), 'records': results,
             'passed': sum(r['status'] == 'PASS' for r in results),
             'blocked': sum(r['status'] != 'PASS' for r in results),

@@ -104,9 +104,16 @@ def inspect(path,source=None,reference=None,metadata=None):
         before=PdfReader(contained(reference))
         if len(reader.pages)!=len(before.pages):errors.append('PAGE_COUNT_CHANGED')
         else:
-            if any(clean(a.extract_text())!=clean(b.extract_text()) for a,b in zip(reader.pages,before.pages)):errors.append('CONTENT_CHANGED_OR_DUPLICATED')
+            from visual_repairs import approved_text_equal
+            if any(clean(a.extract_text())!=clean(b.extract_text()) and not approved_text_equal(b.extract_text(),a.extract_text(),metadata or {}) for a,b in zip(reader.pages,before.pages)):errors.append('CONTENT_CHANGED_OR_DUPLICATED')
             if any(list(a.mediabox)!=list(b.mediabox) for a,b in zip(reader.pages,before.pages)):errors.append('PAGE_GEOMETRY_CHANGED')
     if metadata:
+        if source:
+            from visual_repairs import validate_bindings,verify_derivation
+            errors.extend(validate_bindings(source,metadata))
+            if metadata.get('visualRepair'):
+                try:verify_derivation(metadata)
+                except ValueError as exc:errors.append(str(exc))
         if source:
             from formula_coverage import check
             errors.extend(check(source,metadata))

@@ -1,0 +1,103 @@
+{"report":{"buildInformation":{"releaseDetails":[{
+  "id" : "core",
+  "version" : "1.28.2",
+  "buildDate" : 1752610020000
+},{
+  "id" : "validation-model",
+  "version" : "1.28.2",
+  "buildDate" : 1752610320000
+},{
+  "id" : "gui",
+  "version" : "1.28.2",
+  "buildDate" : 1752613140000
+}]},"jobs":[{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_later\\revisions\\d840552cc1fc4feed69f70363fcbd99dcccae7a6363aa585026d77c97550870e\\after\\MICRO-54.pdf",
+  "size" : 540246
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 4177,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789173167032,
+  "finish" : 1789173167583,
+  "duration" : "00:00:00.551",
+  "difference" : 551
+}},{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_later\\revisions\\d840552cc1fc4feed69f70363fcbd99dcccae7a6363aa585026d77c97550870e\\after\\MICRO-55.pdf",
+  "size" : 561230
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 3804,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789173167600,
+  "finish" : 1789173167734,
+  "duration" : "00:00:00.134",
+  "difference" : 134
+}},{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_later\\revisions\\d840552cc1fc4feed69f70363fcbd99dcccae7a6363aa585026d77c97550870e\\after\\MICRO-58.pdf",
+  "size" : 495603
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 3526,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789173167737,
+  "finish" : 1789173167823,
+  "duration" : "00:00:00.086",
+  "difference" : 86
+}}],"batchSummary":{
+  "duration" : {
+    "start" : 1789173166949,
+    "finish" : 1789173167825,
+    "duration" : "00:00:00.876",
+    "difference" : 876
+  },
+  "totalJobs" : 3,
+  "outOfMemory" : 0,
+  "veraExceptions" : 0,
+  "repairSummary" : {
+    "failedJobCount" : 0,
+    "totalJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "featuresSummary" : {
+    "failedJobCount" : 0,
+    "totalJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "multiJob" : true,
+  "failedEncryptedJobs" : 0,
+  "failedParsingJobs" : 0,
+  "validationSummary" : {
+    "failedJobCount" : 0,
+    "totalJobCount" : 3,
+    "nonCompliantPdfaCount" : 0,
+    "compliantPdfaCount" : 3,
+    "successfulJobCount" : 3
+  }
+}}}

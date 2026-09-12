@@ -13,7 +13,7 @@ RUN='full_batch_v1'
 TASK_ID='PDF_ACCESSIBILITY_FULL_BATCH_V1'
 
 def tooling_hash():
-    names=['tag_pilot.py','semantic_runs.py','formula_coverage.py','accessibility_gate.py','rebuild_pilot.py','validate_candidates.py','repo_guard.py','batch_candidates.py']
+    names=['tag_pilot.py','semantic_runs.py','formula_coverage.py','accessibility_gate.py','rebuild_pilot.py','validate_candidates.py','repo_guard.py','batch_candidates.py','visual_repairs.py']
     paths=['audit_tools/pdf_accessibility/'+n for n in names]
     paths+=['build/faculty-build-composer/tools/'+n for n in ['concept_review_style.py','concept_review_lifecycle.py','expand_micro_concept_reviews.py','complete_macro_concept_reviews.py']]
     return source_hash({p:sha(p) for p in paths})

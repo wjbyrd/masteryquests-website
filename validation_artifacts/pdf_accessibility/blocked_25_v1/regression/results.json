@@ -1,0 +1,144 @@
+{
+  "task": "PDF_ACCESSIBILITY_BLOCKED_25_V1",
+  "phase": "blocked_25_v1",
+  "total": 27,
+  "passed": 27,
+  "results": [
+    {
+      "runner": "run_faculty_outcome_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_content_scope_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_default_character_set_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_exam_navigation_boss_reveal_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_checkpoint_artifact_exam_integrity_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_guide_intro_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_phase1_targeted_repair_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_phase15_production_hardening_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_visibility_aware_telemetry_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_generated_telemetry_smoke.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_phase3a_official_theme_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_phase3b_custom_asset_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_phase3e_graph_question_sync_validation.mjs",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_question_quality_auditor_validation.mjs",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_macro_phase2_taxonomy_validation.mjs",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_checkpoint_remediation_design_change_validation.mjs",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_concept_review_integration.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_mastery_report_concept_reviews.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_mastery_report_2_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_mastery_report_state_leak_hotfix.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_mode_availability_fix.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_quiz_mode_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_unlimited_practice_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_trial_by_graph_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_fading_fortune_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_risk_reward_validation.js",
+      "exitCode": 0,
+      "passed": true
+    },
+    {
+      "runner": "run_risk_reward_state_validation.js",
+      "exitCode": 0,
+      "passed": true
+    }
+  ],
+  "temporaryDirectory": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\blocked_25_v1\\regression"
+}

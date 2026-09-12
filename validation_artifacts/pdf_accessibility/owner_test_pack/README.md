@@ -1,5 +1,5 @@
 # PDF accessibility owner test packs
 
-Current full-batch pack: [instructions and candidates](full_batch_v1/README.md). Actual human / assistive-technology verification: **PENDING**. The collection is partial; two retained pilot files are clearly labeled blocked diagnostic examples.
+Current: [blocked-document closeout](blocked_25_v1/README.md), 18 representative final candidates. Full staged collection: 151/151 accepted. Human AT verification: **PENDING**. Installation is not authorized.
 
-Earlier evidence remains preserved: [pilot blockers pack](pilot_blockers_v1/README.md) and [original instructions](README.repo_lock_v1.md).
+Historical: [full-batch pack](full_batch_v1/README.md). Earlier pilot files are retained in this directory.

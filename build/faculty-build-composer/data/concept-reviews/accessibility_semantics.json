@@ -52,7 +52,7 @@
         "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
         "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
       ],
-      "graphDecodedSha256": "9af0ea5acfc6788081c467b47e3c1d59f1594cf05b9e38ddcb1dce4668b99e30",
+      "graphDecodedSha256": "917e86f280e84ae2bc9bac8954e403c2862d9931376aac4751748b05e718b1ac",
       "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
       "graphAlternative": "Price elasticity of demand. Vertical axis: Price, from 0 to 20. Horizontal axis: Quantity, from 0 to 150. The straight downward Demand curve runs from price 16 at quantity 0 to price 0 at quantity 120. Labeled points are C at quantity 30 and price 12, B at quantity 60 and price 8, and A at quantity 90 and price 4. Dashed guides connect each point to its axis values. C to B supplies the worked example; B to A supplies the self-check.",
       "inlineFormulas": [
@@ -111,7 +111,48 @@
       "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/MICRO-04.pdf",
       "visualSourceSha256": "2f33113ddafd439efd70e0dda650c99857b2fa488c7ed3558136f537bbf1ca84",
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "e8c089420f43ec156445c900c319e45cd40af006f56f0900f3bec5acdb68775b",
+        "originalAssetSha256": "1804cb5937b71622452094ed43181e8cebc92e2fe5988ba18434776f2d4b91a4",
+        "originalDecodedSha256": "9af0ea5acfc6788081c467b47e3c1d59f1594cf05b9e38ddcb1dce4668b99e30",
+        "dimensions": [
+          1442,
+          969
+        ],
+        "rules": [
+          {
+            "element": "C",
+            "type": "text",
+            "region": [
+              432,
+              298,
+              466,
+              334
+            ],
+            "oldRGB": [
+              5,
+              150,
+              105
+            ],
+            "newRGB": [
+              4,
+              122,
+              86
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 328
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "917e86f280e84ae2bc9bac8954e403c2862d9931376aac4751748b05e718b1ac"
+      }
     },
     "MICRO-49": {
       "baselineSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
@@ -198,7 +239,7 @@
       "decorativeImageDecodedSha256": [
         "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2"
       ],
-      "graphDecodedSha256": "0a986d3037d0516dd5f24a2689ca39d3891cf3908587c5e56aedd478c62be731",
+      "graphDecodedSha256": "1bcbbb95f42c8c365aa527bb8c539889894106cf9ddf2d63fa423085e50e4307",
       "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
       "graphAlternative": "Negative production externality in fast-fashion garments. Horizontal axis: quantity of garments in millions, with labeled ticks from 40 to 320. Vertical axis: marginal benefit and cost, with labeled dollar ticks from 3 to 24. MPB slopes downward from 21 to 9; MPC slopes upward from 3 to 15; MSC slopes upward from 9 to 21, six dollars above MPC throughout. MPB and MPC intersect at 240 million garments and 12 dollars. MPB and MSC intersect at 160 million garments and 15 dollars. Dashed guides mark both quantities and values.",
       "inlineFormulas": [
@@ -273,7 +314,75 @@
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/market-failures/EXTERNALITY-B-01.webp",
       "assetSourceSha256": "080e46bbcd0e26fa0e1f94e85bf8319a2afd1bafe95ec6832e6b86bdbae65aeb",
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "ee164f30f76416362e59b2f8b5554bffcd0c3c2b5e10efa1b71faefeea73fd5d",
+        "originalAssetSha256": "080e46bbcd0e26fa0e1f94e85bf8319a2afd1bafe95ec6832e6b86bdbae65aeb",
+        "originalDecodedSha256": "0a986d3037d0516dd5f24a2689ca39d3891cf3908587c5e56aedd478c62be731",
+        "dimensions": [
+          1583,
+          1125
+        ],
+        "rules": [
+          {
+            "element": "MSC",
+            "type": "text",
+            "region": [
+              1457,
+              91,
+              1537,
+              126
+            ],
+            "oldRGB": [
+              38,
+              174,
+              96
+            ],
+            "newRGB": [
+              27,
+              122,
+              67
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 879
+          },
+          {
+            "element": "MSC curve and point",
+            "type": "non-text",
+            "region": [
+              0,
+              140,
+              1583,
+              1125
+            ],
+            "oldRGB": [
+              38,
+              174,
+              96
+            ],
+            "newRGB": [
+              32,
+              148,
+              82
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 8745
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "1bcbbb95f42c8c365aa527bb8c539889894106cf9ddf2d63fa423085e50e4307"
+      }
     },
     "MACRO-23": {
       "baselineSha256": "a952d43370533c450360e4fd78077567ebde46f053c659d5ec9b1c44cb84e82e",
@@ -1256,10 +1365,51 @@
       ],
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/demand/DEMAND-02.webp",
       "assetSourceSha256": "14505844471906a322080ac5cb52327500748dfba46a994a3794d39bcc6aef32",
-      "graphDecodedSha256": "ed4e373275779590d50f5fc686eed84cf1620fa654a345953183b043c8170843",
+      "graphDecodedSha256": "79b0a72e8015d61da3734397c284ed584c3e0fb935a83729071629da75d88c7b",
       "graphAlternative": "Horizontal axis: quantity of coffee in thousands. Vertical axis: price of coffee in dollars. Two parallel coffee demand curves. D1 lies to the right of D0; at price $10, quantity demanded rises from 50 thousand on D0 to 125 thousand on D1.",
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "f43d7afc69fbe628d8906e2c2566cef040154440250ac28e485722d054a05dd0",
+        "originalAssetSha256": "14505844471906a322080ac5cb52327500748dfba46a994a3794d39bcc6aef32",
+        "originalDecodedSha256": "ed4e373275779590d50f5fc686eed84cf1620fa654a345953183b043c8170843",
+        "dimensions": [
+          1447,
+          1117
+        ],
+        "rules": [
+          {
+            "element": "D1",
+            "type": "text",
+            "region": [
+              1377,
+              925,
+              1422,
+              960
+            ],
+            "oldRGB": [
+              52,
+              152,
+              219
+            ],
+            "newRGB": [
+              38,
+              112,
+              162
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 387
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "79b0a72e8015d61da3734397c284ed584c3e0fb935a83729071629da75d88c7b"
+      }
     },
     "GEN-ECON-14": {
       "baselineSha256": "68434f4acfb52f72343bc0753cacb9381cee988d76fa0ffd451a5d5b61ac10a1",
@@ -1340,10 +1490,51 @@
       ],
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/supply/SUPPLY-02.webp",
       "assetSourceSha256": "30364c9cedfcdf0ba376fe4de39523fa4d73d06eae147e0b5d6c59f82eb872d0",
-      "graphDecodedSha256": "7f63b29782cb0b00e7e9c3be54745df2c483ac0d187df215337d5c7785401eee",
+      "graphDecodedSha256": "b80aaa0ee26ab7feee6a0fd2750590d151b16d7a593a6afb41b2e15f42174fdd",
       "graphAlternative": "Horizontal axis: quantity of hamburgers in thousands. Vertical axis: price of hamburgers in dollars. Two parallel hamburger supply curves. S1 lies to the left of S0; at price $9, quantity supplied falls from 200 thousand on S0 to 100 thousand on S1.",
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "ae3f8bc191a0e7798bf964d897550234d7f9301170f2b52c808fd56c3f70eb82",
+        "originalAssetSha256": "30364c9cedfcdf0ba376fe4de39523fa4d73d06eae147e0b5d6c59f82eb872d0",
+        "originalDecodedSha256": "7f63b29782cb0b00e7e9c3be54745df2c483ac0d187df215337d5c7785401eee",
+        "dimensions": [
+          1506,
+          1150
+        ],
+        "rules": [
+          {
+            "element": "S1",
+            "type": "text",
+            "region": [
+              1360,
+              5,
+              1405,
+              40
+            ],
+            "oldRGB": [
+              231,
+              76,
+              60
+            ],
+            "newRGB": [
+              189,
+              62,
+              49
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 488
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "b80aaa0ee26ab7feee6a0fd2750590d151b16d7a593a6afb41b2e15f42174fdd"
+      }
     },
     "GEN-ECON-16": {
       "baselineSha256": "277188fd9ce7764d6a52483424e4a59daa9b7d24e547f1ce6ff5ca03f0adc088",
@@ -1391,10 +1582,78 @@
       ],
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
       "assetSourceSha256": "2c0487a337c1dcfce2070f37c1ac0b7d561f104f27f7df91251e351a3778408f",
-      "graphDecodedSha256": "2e1f8459225983730dd9515a36c9cdd52c99d58ebbcd30a807b9868e702abba8",
+      "graphDecodedSha256": "c8e8ed4302b93e9a2dc7a91e7d11c1b8e94c338dc272f8d987ad276235eb9047",
       "graphAlternative": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "605932f3532a587709ebf273958216584702dad1a086f94c3bd843818292fe60",
+        "originalAssetSha256": "2c0487a337c1dcfce2070f37c1ac0b7d561f104f27f7df91251e351a3778408f",
+        "originalDecodedSha256": "2e1f8459225983730dd9515a36c9cdd52c99d58ebbcd30a807b9868e702abba8",
+        "dimensions": [
+          1500,
+          1117
+        ],
+        "rules": [
+          {
+            "element": "S1",
+            "type": "text",
+            "region": [
+              904,
+              39,
+              950,
+              74
+            ],
+            "oldRGB": [
+              231,
+              76,
+              60
+            ],
+            "newRGB": [
+              189,
+              62,
+              49
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 488
+          },
+          {
+            "element": "D1",
+            "type": "text",
+            "region": [
+              1450,
+              764,
+              1495,
+              799
+            ],
+            "oldRGB": [
+              52,
+              152,
+              219
+            ],
+            "newRGB": [
+              38,
+              112,
+              162
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 374
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "c8e8ed4302b93e9a2dc7a91e7d11c1b8e94c338dc272f8d987ad276235eb9047"
+      }
     },
     "GEN-ECON-17": {
       "baselineSha256": "dacae7a0491d0859cdc5e9239916c975c80706b3b5ccbfdfcf0012ab2e4a95fb",
@@ -1481,7 +1740,7 @@
       ],
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
       "assetSourceSha256": "2c0487a337c1dcfce2070f37c1ac0b7d561f104f27f7df91251e351a3778408f",
-      "graphDecodedSha256": "2e1f8459225983730dd9515a36c9cdd52c99d58ebbcd30a807b9868e702abba8",
+      "graphDecodedSha256": "c8e8ed4302b93e9a2dc7a91e7d11c1b8e94c338dc272f8d987ad276235eb9047",
       "graphAlternative": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
       "formulaCoverageReviewed": true,
       "nonMathSymbols": [
@@ -1497,7 +1756,75 @@
           "symbol": "/",
           "reason": "Reviewed prose separator, not a mathematical operator"
         }
-      ]
+      ],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "a33c5f388cacb77f8921182bef2c9003a7e6ff7ae7dc767c83c7c816cc080d74",
+        "originalAssetSha256": "2c0487a337c1dcfce2070f37c1ac0b7d561f104f27f7df91251e351a3778408f",
+        "originalDecodedSha256": "2e1f8459225983730dd9515a36c9cdd52c99d58ebbcd30a807b9868e702abba8",
+        "dimensions": [
+          1500,
+          1117
+        ],
+        "rules": [
+          {
+            "element": "S1",
+            "type": "text",
+            "region": [
+              904,
+              39,
+              950,
+              74
+            ],
+            "oldRGB": [
+              231,
+              76,
+              60
+            ],
+            "newRGB": [
+              189,
+              62,
+              49
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 488
+          },
+          {
+            "element": "D1",
+            "type": "text",
+            "region": [
+              1450,
+              764,
+              1495,
+              799
+            ],
+            "oldRGB": [
+              52,
+              152,
+              219
+            ],
+            "newRGB": [
+              38,
+              112,
+              162
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 374
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "c8e8ed4302b93e9a2dc7a91e7d11c1b8e94c338dc272f8d987ad276235eb9047"
+      }
     },
     "GEN-ECON-19": {
       "baselineSha256": "5e0dda5f6099a2f900bccce6f982408cd589d6779ed98ccc752a8c7f9ab60de9",
@@ -1884,10 +2211,51 @@
       ],
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/TRD-03.webp",
       "assetSourceSha256": "725a867bea5966fa8327547755e32df80080e622e90e22644c2ea772e64f32f1",
-      "graphDecodedSha256": "5835d856eb320c6d95f965d49aec7b6aeb9c0691a8f4f2e3f4847826c260814a",
+      "graphDecodedSha256": "ef00592d0d2f830e56742317f7a31bd453420c2029f1fb7c8f404f3b6cf19144",
       "graphAlternative": "The horizontal axis is quantity of phone cases and the vertical axis is their price in dollars. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at point e, price $8 and quantity 150 thousand. Horizontal lines mark world price $4 and domestic price with tariff $6. At $4, supply is 50 thousand and demand is 250 thousand; at $6, supply is 100 thousand and demand is 200 thousand.",
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "ac6dc5a727ea00819cd4108fe940c46b0905eccf245ef48bacf9e8679650ac9b",
+        "originalAssetSha256": "725a867bea5966fa8327547755e32df80080e622e90e22644c2ea772e64f32f1",
+        "originalDecodedSha256": "5835d856eb320c6d95f965d49aec7b6aeb9c0691a8f4f2e3f4847826c260814a",
+        "dimensions": [
+          1466,
+          1117
+        ],
+        "rules": [
+          {
+            "element": "Domestic Price = Pw + tariff",
+            "type": "text",
+            "region": [
+              1109,
+              582,
+              1436,
+              611
+            ],
+            "oldRGB": [
+              196,
+              123,
+              38
+            ],
+            "newRGB": [
+              150,
+              94,
+              29
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 2015
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "ef00592d0d2f830e56742317f7a31bd453420c2029f1fb7c8f404f3b6cf19144"
+      }
     },
     "GEN-ECON-25": {
       "baselineSha256": "7f33fc8d073172088df56593e880ef1090044da6a01abd263653a13c097e24a2",
@@ -1959,10 +2327,51 @@
       ],
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/TRD-04.webp",
       "assetSourceSha256": "2dcfacad1cea8cb6e52173de9bd30b87b509ff684bccb6569d31a9bd73f7dbfa",
-      "graphDecodedSha256": "0dd4af8924d6fa494c49e9fbdf46783e25797caff80ec04387e5e4e26a91a17d",
+      "graphDecodedSha256": "88e24529db04082b1e5517024b7978f12a6d260f47547dbad48dbe842cc989ef",
       "graphAlternative": "The horizontal axis is quantity of phone cases and the vertical axis is their price in dollars. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at price $7 and quantity 175 thousand. Horizontal lines mark world price $3 and domestic price under quota $6. At $3, supply is 75 thousand and demand is 275 thousand; at $6, supply is 150 thousand and demand is 200 thousand.",
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "424ce72b75d8846651842a0012698b0a38e9900e05fba9a0984024969287aad8",
+        "originalAssetSha256": "2dcfacad1cea8cb6e52173de9bd30b87b509ff684bccb6569d31a9bd73f7dbfa",
+        "originalDecodedSha256": "0dd4af8924d6fa494c49e9fbdf46783e25797caff80ec04387e5e4e26a91a17d",
+        "dimensions": [
+          1466,
+          1117
+        ],
+        "rules": [
+          {
+            "element": "World Price",
+            "type": "text",
+            "region": [
+              1292,
+              762,
+              1435,
+              791
+            ],
+            "oldRGB": [
+              61,
+              161,
+              104
+            ],
+            "newRGB": [
+              45,
+              120,
+              77
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 1073
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "88e24529db04082b1e5517024b7978f12a6d260f47547dbad48dbe842cc989ef"
+      }
     },
     "GEN-ECON-26": {
       "baselineSha256": "d8f8574b60145be9e127eaf6ee0880af15dace1ab4cf088bfdab2c37a3673645",
@@ -2386,7 +2795,7 @@
       "visualSourceSha256": "5c7e92102251048f5fdbc8722112757e186345c7f03f26f43795aa3f69e384f9",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/elasticity/ELAS-01.webp",
       "assetSourceSha256": "1804cb5937b71622452094ed43181e8cebc92e2fe5988ba18434776f2d4b91a4",
-      "graphDecodedSha256": "9af0ea5acfc6788081c467b47e3c1d59f1594cf05b9e38ddcb1dce4668b99e30",
+      "graphDecodedSha256": "917e86f280e84ae2bc9bac8954e403c2862d9931376aac4751748b05e718b1ac",
       "graphAlternative": "Horizontal axis: quantity; vertical axis: price. A straight downward-sloping Demand line runs from price 16 at quantity 0 to price 0 at quantity 120. Its marked points are C at quantity 30, price 12; B at quantity 60, price 8; and A at quantity 90, price 4. Dashed guides show each point on both axes.",
       "inlineFormulas": [
         {
@@ -2433,7 +2842,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "3340b5ed9743717209bf879562d6ef2ac7f6b833189fc44197757da37ceb3c0a",
+        "originalAssetSha256": "1804cb5937b71622452094ed43181e8cebc92e2fe5988ba18434776f2d4b91a4",
+        "originalDecodedSha256": "9af0ea5acfc6788081c467b47e3c1d59f1594cf05b9e38ddcb1dce4668b99e30",
+        "dimensions": [
+          1442,
+          969
+        ],
+        "rules": [
+          {
+            "element": "C",
+            "type": "text",
+            "region": [
+              432,
+              298,
+              466,
+              334
+            ],
+            "oldRGB": [
+              5,
+              150,
+              105
+            ],
+            "newRGB": [
+              4,
+              122,
+              86
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 328
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "917e86f280e84ae2bc9bac8954e403c2862d9931376aac4751748b05e718b1ac"
+      }
     },
     "MICRO-09": {
       "baselineSha256": "af90729ee8c23c9630fd153b3eb8f3b1397a018baa238c084f02d7ffe9d9928d",
@@ -2496,7 +2946,7 @@
       "visualSourceSha256": "fc1a7e31fe4dd4a15718ef4c32e480e0d368e81907bf63331b60e6cfa172d57c",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
       "assetSourceSha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
-      "graphDecodedSha256": "90b651323f49190be1891184b8747c8381c49510cce237b240e0758bc3126bf5",
+      "graphDecodedSha256": "88307154a7e1797f55a9224b79a719ff7c3553e5a3db08dd227f07b6ab0de702",
       "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 30, and upward-sloping S starts at price 6. They meet at E, quantity 8 and price 14. Dashed guides connect E to both axes. The demand segment above price 14 runs from quantity 0 to 8; the supply segment below price 14 runs over that same quantity interval.",
       "inlineFormulas": [
         {
@@ -2519,7 +2969,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "4edf5b8e50d87605a6f51bc5aad5a5bcef9d9c6055bf6abe6b338a05fc271c46",
+        "originalAssetSha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
+        "originalDecodedSha256": "90b651323f49190be1891184b8747c8381c49510cce237b240e0758bc3126bf5",
+        "dimensions": [
+          1299,
+          853
+        ],
+        "rules": [
+          {
+            "element": "orange supply",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1299,
+              853
+            ],
+            "oldRGB": [
+              255,
+              127,
+              14
+            ],
+            "newRGB": [
+              203,
+              101,
+              11
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 7137
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "88307154a7e1797f55a9224b79a719ff7c3553e5a3db08dd227f07b6ab0de702"
+      }
     },
     "MICRO-11": {
       "baselineSha256": "3732cd350bcae9b18ed4ba9496aa5572f789ce4bb4d65ad61774113508f3f3c9",
@@ -2547,7 +3038,7 @@
       "visualSourceSha256": "3732cd350bcae9b18ed4ba9496aa5572f789ce4bb4d65ad61774113508f3f3c9",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
       "assetSourceSha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
-      "graphDecodedSha256": "90b651323f49190be1891184b8747c8381c49510cce237b240e0758bc3126bf5",
+      "graphDecodedSha256": "88307154a7e1797f55a9224b79a719ff7c3553e5a3db08dd227f07b6ab0de702",
       "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 30, and upward-sloping S starts at price 6. They meet at E, quantity 8 and price 14. Dashed guides connect E to both axes. The demand segment above price 14 runs from quantity 0 to 8; the supply segment below price 14 runs over that same quantity interval.",
       "inlineFormulas": [
         {
@@ -2570,7 +3061,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "69092b92f7248a4b8c0e887eef8df5003a43e633683312e59309d51ac044397f",
+        "originalAssetSha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
+        "originalDecodedSha256": "90b651323f49190be1891184b8747c8381c49510cce237b240e0758bc3126bf5",
+        "dimensions": [
+          1299,
+          853
+        ],
+        "rules": [
+          {
+            "element": "orange supply",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1299,
+              853
+            ],
+            "oldRGB": [
+              255,
+              127,
+              14
+            ],
+            "newRGB": [
+              203,
+              101,
+              11
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 7137
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "88307154a7e1797f55a9224b79a719ff7c3553e5a3db08dd227f07b6ab0de702"
+      }
     },
     "MICRO-12": {
       "baselineSha256": "b454d41b5d9607145c03a7252afd184a76e0c5a6bf5729b4204ffc0c1574098d",
@@ -2598,7 +3130,7 @@
       "visualSourceSha256": "b454d41b5d9607145c03a7252afd184a76e0c5a6bf5729b4204ffc0c1574098d",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_eq_asymmetric.webp",
       "assetSourceSha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
-      "graphDecodedSha256": "90b651323f49190be1891184b8747c8381c49510cce237b240e0758bc3126bf5",
+      "graphDecodedSha256": "88307154a7e1797f55a9224b79a719ff7c3553e5a3db08dd227f07b6ab0de702",
       "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 30, and upward-sloping S starts at price 6. They meet at E, quantity 8 and price 14. Dashed guides connect E to both axes. The demand segment above price 14 runs from quantity 0 to 8; the supply segment below price 14 runs over that same quantity interval.",
       "inlineFormulas": [
         {
@@ -2657,7 +3189,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "b9466bb8f67b99ef5dfce9f5414502146a37031397ebe5805203cbafb351dc68",
+        "originalAssetSha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
+        "originalDecodedSha256": "90b651323f49190be1891184b8747c8381c49510cce237b240e0758bc3126bf5",
+        "dimensions": [
+          1299,
+          853
+        ],
+        "rules": [
+          {
+            "element": "orange supply",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1299,
+              853
+            ],
+            "oldRGB": [
+              255,
+              127,
+              14
+            ],
+            "newRGB": [
+              203,
+              101,
+              11
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 7137
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "88307154a7e1797f55a9224b79a719ff7c3553e5a3db08dd227f07b6ab0de702"
+      }
     },
     "MICRO-13": {
       "baselineSha256": "85f95a7e0f7f3a3c318c635400d3713593f1906defc0a7bd66799b23d436e8d1",
@@ -2685,7 +3258,7 @@
       "visualSourceSha256": "85f95a7e0f7f3a3c318c635400d3713593f1906defc0a7bd66799b23d436e8d1",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_eq_balanced.webp",
       "assetSourceSha256": "e7ad3b5e0934eb62695fc69308d0991371a4989e16fc30bda3e5653823cbf9bc",
-      "graphDecodedSha256": "41d2cb53d95ca177df55ca150e05d9520376ee6ffe9b12af8e31e7edd9435f85",
+      "graphDecodedSha256": "c8dff9a000da397b5b4005e642cc1150562881fcac41f6b3826ed9a8b9a68d22",
       "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 18 at quantity 0 and reaches price 2 at quantity 16. Upward-sloping S starts at price 2 and reaches price 18 at quantity 16. They intersect at E, quantity 8 and price 10, with dashed guides to the axes. Demand lies above supply to the left of E and below supply to its right.",
       "inlineFormulas": [
         {
@@ -2702,7 +3275,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "8c885340816d6f675c80d6235de03045e9ec983a4d6a2ae59e5ed7485bb3b514",
+        "originalAssetSha256": "e7ad3b5e0934eb62695fc69308d0991371a4989e16fc30bda3e5653823cbf9bc",
+        "originalDecodedSha256": "41d2cb53d95ca177df55ca150e05d9520376ee6ffe9b12af8e31e7edd9435f85",
+        "dimensions": [
+          1299,
+          853
+        ],
+        "rules": [
+          {
+            "element": "orange supply",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1299,
+              853
+            ],
+            "oldRGB": [
+              255,
+              127,
+              14
+            ],
+            "newRGB": [
+              203,
+              101,
+              11
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 7477
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "c8dff9a000da397b5b4005e642cc1150562881fcac41f6b3826ed9a8b9a68d22"
+      }
     },
     "MICRO-14": {
       "baselineSha256": "67d8fbd4eaadaddc77389fcb4c57b759fb8df3abcd0cd3fad0b44c5d6998f5c3",
@@ -2852,7 +3466,7 @@
     },
     "MICRO-16": {
       "baselineSha256": "ffdd7e45c23e62f3fe83dcbb0ea356e8b2a59f72b197c5d7a81fdd533b919e0c",
-      "sourceRecordSha256": "b05e4ba9ed84c2d643fdfe69cec1616ba44c7b8d99f9f13638d1357ed1973f1d",
+      "sourceRecordSha256": "c83302b33376257b0d6b0f55590865c2dcee2577cf9f4c1eee7a427e82630253",
       "decorativeText": [
         "+",
         "?",
@@ -2905,9 +3519,9 @@
         },
         {
           "sourceField": "check",
-          "compactStart": 85,
-          "text": "Pw=$30",
-          "alternative": "P subscript w equals 30 dollars"
+          "compactStart": 92,
+          "text": "Pw=$10",
+          "alternative": "P subscript w equals 10 dollars"
         },
         {
           "sourceField": "watch",
@@ -2917,7 +3531,16 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "wordingCorrection": {
+        "status": "owner_authorized",
+        "field": "check",
+        "oldText": "Using the import-market graph, what are domestic production, domestic consumption, and imports at Pw=$30?",
+        "newText": "Using the avocado export-market graph, what are domestic production, domestic consumption, and exports at Pw=$10?",
+        "sourceRecordSha256": "c83302b33376257b0d6b0f55590865c2dcee2577cf9f4c1eee7a427e82630253",
+        "originalAssetSha256": "90bed401193282f30b5ddc6a11b38c80c7c393233e78cf68911e7fe4e1140306",
+        "reason": "Align self-check with the current displayed graph; owner instruction PDF_ACCESSIBILITY_BLOCKED_25_V1"
+      }
     },
     "MICRO-17": {
       "baselineSha256": "6f9db5c59dbf614c088aba8e78111e2b03586b3ce09b5f9e82718bf30c2d3576",
@@ -2945,7 +3568,7 @@
       "visualSourceSha256": "6f9db5c59dbf614c088aba8e78111e2b03586b3ce09b5f9e82718bf30c2d3576",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/itp_import_surplus.webp",
       "assetSourceSha256": "ce404954351170b09012182273ad2ff73f1c7ccccf2481dc063620207e747b60",
-      "graphDecodedSha256": "6fd152a1171a6a0f255475da65fb8ac1372126c901823795d31551f06e41363b",
+      "graphDecodedSha256": "6e40aeef21b4e5d6f611cc879cdf0005326e7bf8957c724b0eb3098d5cf1b401",
       "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Demand D falls from price 80 at quantity 0 to price 0 at quantity 80. Supply S rises from price 20 and crosses D at quantity 30 and price 50. The horizontal world-price line Pw at price 30 meets S at quantity 10 and D at quantity 50; dashed vertical guides mark both quantities.",
       "inlineFormulas": [
         {
@@ -2981,7 +3604,48 @@
           "symbol": "/",
           "reason": "Reviewed prose separator, not a mathematical operator"
         }
-      ]
+      ],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "7e41d62644b975c926b36ecfb916d97980d7e131b0e1d420585314c59c9f411a",
+        "originalAssetSha256": "ce404954351170b09012182273ad2ff73f1c7ccccf2481dc063620207e747b60",
+        "originalDecodedSha256": "6fd152a1171a6a0f255475da65fb8ac1372126c901823795d31551f06e41363b",
+        "dimensions": [
+          1052,
+          781
+        ],
+        "rules": [
+          {
+            "element": "orange supply",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1052,
+              781
+            ],
+            "oldRGB": [
+              255,
+              127,
+              14
+            ],
+            "newRGB": [
+              203,
+              101,
+              11
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 5316
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "6e40aeef21b4e5d6f611cc879cdf0005326e7bf8957c724b0eb3098d5cf1b401"
+      }
     },
     "MICRO-18": {
       "baselineSha256": "1e755f4fedf3c4a1f5ebcbac245a635aa09e9199ebd1fbd6043538d9e21f81a7",
@@ -3337,7 +4001,7 @@
       "visualSourceSha256": "7f6e07f5a8ba76428aa3ce7bb7646d94e92c85147d690bf092a7989d93381105",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/costs-of-production/COST-02.webp",
       "assetSourceSha256": "5b568aede942b6906a2195c799d026ef00ff09d7987d7d5e15f64e850c25cba9",
-      "graphDecodedSha256": "19cac8ae02a1a144d52d165fea886d1368c66d9058223d8148abc6a5d0bd9477",
+      "graphDecodedSha256": "199f16d92593f940d67a93c9d67cdf586e525305da86cf6479df34367fcf3893",
       "graphAlternative": "Horizontal axis: quantity; vertical axis: costs in dollars. Curves are labeled MC, AC and AVC. MC first dips slightly and then rises. It crosses AVC at its minimum, quantity 200 and cost 10. At quantity 400, MC crosses AC at its minimum of 20, while AVC is 12. Dashed guides mark the quantities and costs. AC remains above AVC.",
       "inlineFormulas": [
         {
@@ -3426,7 +4090,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "5f332a17b0d8ddb5d5c1933206d16286966fd0afd9227202d1cb9238dd831c3e",
+        "originalAssetSha256": "5b568aede942b6906a2195c799d026ef00ff09d7987d7d5e15f64e850c25cba9",
+        "originalDecodedSha256": "19cac8ae02a1a144d52d165fea886d1368c66d9058223d8148abc6a5d0bd9477",
+        "dimensions": [
+          1516,
+          1106
+        ],
+        "rules": [
+          {
+            "element": "MC",
+            "type": "text",
+            "region": [
+              1442,
+              14,
+              1497,
+              48
+            ],
+            "oldRGB": [
+              231,
+              76,
+              60
+            ],
+            "newRGB": [
+              189,
+              62,
+              49
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 725
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "199f16d92593f940d67a93c9d67cdf586e525305da86cf6479df34367fcf3893"
+      }
     },
     "MICRO-23": {
       "baselineSha256": "8d6b88b72c06d2b41d78b9beff4a3bead4b61fce12ad32010a1408b273628cc0",
@@ -3454,7 +4159,7 @@
       "visualSourceSha256": "8d6b88b72c06d2b41d78b9beff4a3bead4b61fce12ad32010a1408b273628cc0",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/costs-of-production/COST-02.webp",
       "assetSourceSha256": "5b568aede942b6906a2195c799d026ef00ff09d7987d7d5e15f64e850c25cba9",
-      "graphDecodedSha256": "19cac8ae02a1a144d52d165fea886d1368c66d9058223d8148abc6a5d0bd9477",
+      "graphDecodedSha256": "199f16d92593f940d67a93c9d67cdf586e525305da86cf6479df34367fcf3893",
       "graphAlternative": "Horizontal axis: quantity; vertical axis: costs in dollars. Curves are labeled MC, AC and AVC. MC first dips slightly and then rises. It crosses AVC at its minimum, quantity 200 and cost 10. At quantity 400, MC crosses AC at its minimum of 20, while AVC is 12. Dashed guides mark the quantities and costs. AC remains above AVC.",
       "inlineFormulas": [
         {
@@ -3477,7 +4182,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "ce3f38985d5c4ccff7a295dc65f866e3fa8220e466d99787616e9aa692f9d42f",
+        "originalAssetSha256": "5b568aede942b6906a2195c799d026ef00ff09d7987d7d5e15f64e850c25cba9",
+        "originalDecodedSha256": "19cac8ae02a1a144d52d165fea886d1368c66d9058223d8148abc6a5d0bd9477",
+        "dimensions": [
+          1516,
+          1106
+        ],
+        "rules": [
+          {
+            "element": "MC",
+            "type": "text",
+            "region": [
+              1442,
+              14,
+              1497,
+              48
+            ],
+            "oldRGB": [
+              231,
+              76,
+              60
+            ],
+            "newRGB": [
+              189,
+              62,
+              49
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 725
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "199f16d92593f940d67a93c9d67cdf586e525305da86cf6479df34367fcf3893"
+      }
     },
     "MICRO-24": {
       "baselineSha256": "f9c43b5269696ffd016849725812d82f20c9af43a4144099de8d9566f6feea24",
@@ -3505,11 +4251,52 @@
       "visualSourceSha256": "f9c43b5269696ffd016849725812d82f20c9af43a4144099de8d9566f6feea24",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/costs-of-production/cop_cost_family_main.webp",
       "assetSourceSha256": "e8fa4e8e56c2f8c1343b76959e6844a87d5fb4c1631778953d1041cd84854daf",
-      "graphDecodedSha256": "4d0c630958dbcbcc90d2595aae505b743ce3d607125ed5e2ee088dd200fe4368",
+      "graphDecodedSha256": "ff35bb22c13cda6fb0d76cf2ce9723a942578a704c167ef89e4d3c66090b2549",
       "graphAlternative": "Horizontal axis: quantity, from 0 to 80; vertical axis: cost per unit, from 0 to 120. ATC and AVC are U-shaped, with ATC above AVC. MC falls to a minimum around quantity 20, then rises, crossing AVC near its minimum around quantity 32 and cost 20 and ATC near its minimum around quantity 40 and cost 27. At quantity 80, MC is around 120, ATC around 46 and AVC around 43. These unmarked intersections are approximate readings. No shifted curves are drawn.",
       "inlineFormulas": [],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "6f0275bd0ecf4ffac6a20598472088a91094a010242060ff86d44597ed681b5c",
+        "originalAssetSha256": "e8fa4e8e56c2f8c1343b76959e6844a87d5fb4c1631778953d1041cd84854daf",
+        "originalDecodedSha256": "4d0c630958dbcbcc90d2595aae505b743ce3d607125ed5e2ee088dd200fe4368",
+        "dimensions": [
+          1039,
+          749
+        ],
+        "rules": [
+          {
+            "element": "orange ATC",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1039,
+              749
+            ],
+            "oldRGB": [
+              255,
+              127,
+              14
+            ],
+            "newRGB": [
+              203,
+              101,
+              11
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 6537
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "ff35bb22c13cda6fb0d76cf2ce9723a942578a704c167ef89e4d3c66090b2549"
+      }
     },
     "MICRO-25": {
       "baselineSha256": "41c7f4e94f080c122ad178e92c83df5c0c4aeffa3a31029a52f041ee5aab7503",
@@ -4054,7 +4841,7 @@
     },
     "MICRO-34": {
       "baselineSha256": "12d44e3c982c5d4464872383a4df4728efef1640f36ba35ff59eccc967760d41",
-      "sourceRecordSha256": "bd8a86cbbb80ef574959f895f603b08d2d6d6993eaa67c9905ed0eca6e3c3cfc",
+      "sourceRecordSha256": "c869a96c942b2db0876db0157f508bee8aaf6a95dfd27faf0296ccaa41d237fd",
       "decorativeText": [
         "+",
         "?",
@@ -4095,7 +4882,16 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "wordingCorrection": {
+        "status": "owner_authorized",
+        "field": "check",
+        "oldText": "Graph analysis 13: What can produce the downward-sloping long-run industry supply shown?",
+        "newText": "Graph analysis 13: What can produce the upward-sloping long-run industry supply shown?",
+        "sourceRecordSha256": "c869a96c942b2db0876db0157f508bee8aaf6a95dfd27faf0296ccaa41d237fd",
+        "originalAssetSha256": "16e82185171d2af4c42586bd3e817372affb67f465a045d93057383edd5bc9dc",
+        "reason": "Align self-check with the current displayed graph; owner instruction PDF_ACCESSIBILITY_BLOCKED_25_V1"
+      }
     },
     "MICRO-35": {
       "baselineSha256": "df77db0504f3580ff48739410109c353d9e56c523e740c0a7a530c68497cef62",
@@ -4914,7 +5710,7 @@
       "visualSourceSha256": "188e5d55b00ad1a2cff44f3da36d153fec895c8a4c6875609fe211629179ef58",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/oligopoly/cartel_1.webp",
       "assetSourceSha256": "1fa89099c93edd9205251386887ef940433fba8536dea3b4cf9e9e9478a2858c",
-      "graphDecodedSha256": "8279a94ad56feee1925d793af985ebe87aa3eb6e61cc2c0a35ae98b6f915a277",
+      "graphDecodedSha256": "946f372870dd427c8b3d22b5a5ba9d89cf5afd526806158ea292b925b0a1820f",
       "graphAlternative": "Horizontal axis: market quantity; vertical axis: price and cost. Demand D slopes down from price 100 at quantity 0 and crosses horizontal MC at price 20 and quantity 40. MR slopes down more steeply from 100 to zero near quantity 25, crossing MC at quantity 20. At quantity 20, demand is near price 60. Values without point guides are approximate readings from the scale.",
       "inlineFormulas": [
         {
@@ -4925,7 +5721,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "35ecbb897e9e4b446a732422adb248654e25f632325db974ace901d55a480afb",
+        "originalAssetSha256": "1fa89099c93edd9205251386887ef940433fba8536dea3b4cf9e9e9478a2858c",
+        "originalDecodedSha256": "8279a94ad56feee1925d793af985ebe87aa3eb6e61cc2c0a35ae98b6f915a277",
+        "dimensions": [
+          1039,
+          749
+        ],
+        "rules": [
+          {
+            "element": "orange MR",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1039,
+              749
+            ],
+            "oldRGB": [
+              255,
+              127,
+              14
+            ],
+            "newRGB": [
+              203,
+              101,
+              11
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 4026
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "946f372870dd427c8b3d22b5a5ba9d89cf5afd526806158ea292b925b0a1820f"
+      }
     },
     "MICRO-51": {
       "baselineSha256": "d396e96d8831fe4b78b40b35f35795b54f4c39ec5ee9ffb4534540802fe63f06",
@@ -4998,8 +5835,8 @@
       "visualSourceSha256": "93b8a89028f55f40844ea5221dc22135c762496c7a30a20eaa285bef6cb5046c",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/oligopoly/kinked_2.webp",
       "assetSourceSha256": "145c94b81677a78296785db027551b1134e872021a692b89e6a3a336ea4c1685",
-      "graphDecodedSha256": "3b9fdce03dc3bcf2ac344d43716855c56136d31befbe343558216bd99a49f3e5",
-      "graphAlternative": "Horizontal axis: quantity; vertical axis: price and cost. Demand D has a kink at approximately quantity 20 and price 50: it is steeper to the left and flatter to the right. MR has two downward-sloping segments separated by a gap at quantity 20, from approximately 10 to 32. Horizontal MC is around 37. These are approximate readings, and the MC line is visibly above the top of the MR gap.",
+      "graphDecodedSha256": "186b02a2ac8c644152c03a2dab8e310fc88300801d3b7efbccde4892ad8241a7",
+      "graphAlternative": "Horizontal axis: quantity; vertical axis: price and cost. Demand D has a kink at approximately quantity 20 and price 50: it is steeper to the left and flatter to the right. MR has two downward-sloping branches separated by a discontinuity at the kink quantity. MC is horizontal at approximately $36. The owner-reviewed worked example treats MC as lying within the MR gap to illustrate price rigidity. The graph geometry is retained as reviewed.",
       "inlineFormulas": [
         {
           "sourceField": "worked",
@@ -5015,7 +5852,56 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "a1f88fdf512140e314d6b38d8f92d4fe7f3d1456eb36c47a7e4cc75031d191f0",
+        "originalAssetSha256": "145c94b81677a78296785db027551b1134e872021a692b89e6a3a336ea4c1685",
+        "originalDecodedSha256": "3b9fdce03dc3bcf2ac344d43716855c56136d31befbe343558216bd99a49f3e5",
+        "dimensions": [
+          1039,
+          757
+        ],
+        "rules": [
+          {
+            "element": "orange demand segment",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1039,
+              757
+            ],
+            "oldRGB": [
+              255,
+              127,
+              14
+            ],
+            "newRGB": [
+              203,
+              101,
+              11
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 2593
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "186b02a2ac8c644152c03a2dab8e310fc88300801d3b7efbccde4892ad8241a7"
+      },
+      "sourceFigureContext": {
+        "status": "owner_reviewed_accepted",
+        "sourceRecordSha256": "a1f88fdf512140e314d6b38d8f92d4fe7f3d1456eb36c47a7e4cc75031d191f0",
+        "originalAssetSha256": "145c94b81677a78296785db027551b1134e872021a692b89e6a3a336ea4c1685",
+        "graphDecodedSha256": "186b02a2ac8c644152c03a2dab8e310fc88300801d3b7efbccde4892ad8241a7",
+        "rationale": "Owner adjudication: MC is approximately $36 and lies within the displayed kinked-MR gap; the current graph is accepted without redesign. Geometry and economics preserved; only orange demand-segment contrast changes.",
+        "authority": "Owner instruction PDF_ACCESSIBILITY_BLOCKED_25_V1"
+      }
     },
     "MICRO-53": {
       "baselineSha256": "0f407010039c171401dd1c7776548f8632a968e250860bf951b4e4b95fbb3ebd",
@@ -5069,7 +5955,7 @@
       "reviewEvidence": "validation_artifacts/pdf_accessibility/full_batch_v1/micro_semantic_review.json",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/market-failures/PUBLIC-04.webp",
       "assetSourceSha256": "ade235c1c2ec006e997f95cbaa3e6139ab5be69bb36c029703812eed030f0dfc",
-      "graphDecodedSha256": "eaa38d1c3d4354573486110d20e76fa01edaf6d8190f498c863d635673ae3ec7",
+      "graphDecodedSha256": "020b7acf58de1aa1bf1be7de0d401edccebda29a415003c2d7bd3782bd900666",
       "graphAlternative": "Horizontal axis: community fireworks displays per summer; vertical axis: marginal benefit / cost in thousands of dollars per display. Dashed North MB falls from 50 at zero displays to 30 at four; dashed South MB falls from 40 to 20 at four and reaches zero at eight. Solid MSB is their vertical sum: 90 at zero and 50 at four. Horizontal MC is 50. At four displays, guides mark North 30, South 20 and the MSB-MC intersection at 50. MSB then falls to zero at ten displays.",
       "inlineFormulas": [
         {
@@ -5117,7 +6003,75 @@
           "symbol": "/",
           "reason": "Reviewed prose separator, not a mathematical operator"
         }
-      ]
+      ],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "10321f25eb6ed1075da3f1aba88c68d6ddd792d64dc7e76f7da7384dbdc19184",
+        "originalAssetSha256": "ade235c1c2ec006e997f95cbaa3e6139ab5be69bb36c029703812eed030f0dfc",
+        "originalDecodedSha256": "eaa38d1c3d4354573486110d20e76fa01edaf6d8190f498c863d635673ae3ec7",
+        "dimensions": [
+          1472,
+          1105
+        ],
+        "rules": [
+          {
+            "element": "North MB dashed curve and legend",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1472,
+              1105
+            ],
+            "oldRGB": [
+              96,
+              165,
+              250
+            ],
+            "newRGB": [
+              77,
+              132,
+              200
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 5849
+          },
+          {
+            "element": "South MB dashed curve and legend",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1472,
+              1105
+            ],
+            "oldRGB": [
+              245,
+              158,
+              11
+            ],
+            "newRGB": [
+              180,
+              116,
+              8
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 3020
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "020b7acf58de1aa1bf1be7de0d401edccebda29a415003c2d7bd3782bd900666"
+      }
     },
     "MICRO-56": {
       "baselineSha256": "5e3ae831058a43d294e70178a757c73e5bfd6e93c8e7f7d33c2ce0ce5ab68dfb",
@@ -5213,7 +6167,7 @@
       "reviewEvidence": "validation_artifacts/pdf_accessibility/full_batch_v1/micro_semantic_review.json",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/consumer-choice/CHOICE-07.webp",
       "assetSourceSha256": "39c70b0e2895222e41303a1b70f556b7de3482756453dcc6742cf4f686a26fdd",
-      "graphDecodedSha256": "2c28411fcbfbd9f782c46648b95f113a3b60c48b1be8f331072e169a1b828968",
+      "graphDecodedSha256": "8a766cebfee2516d8a09b0824758ccfe7a55d55deec74f923024d066b52da862",
       "graphAlternative": "Horizontal axis: Good X; vertical axis: Good Y. A straight budget line runs from 40 units of Y at X = 0 to 20 units of X at Y = 0. Marked bundle A is X = 10 and Y = 20. At A the budget line is tangent to solid IC2. Dashed IC1 lies below IC2 and intersects the feasible set; dashed IC3 lies above IC2 and outside the budget line. All three indifference curves slope down and are convex toward the origin.",
       "inlineFormulas": [
         {
@@ -5224,7 +6178,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "62d3cb391abb0c3a1d5dfb2d325bfb4a5fdf74629d5f5e2b020c78ff0e4d37db",
+        "originalAssetSha256": "39c70b0e2895222e41303a1b70f556b7de3482756453dcc6742cf4f686a26fdd",
+        "originalDecodedSha256": "2c28411fcbfbd9f782c46648b95f113a3b60c48b1be8f331072e169a1b828968",
+        "dimensions": [
+          1442,
+          968
+        ],
+        "rules": [
+          {
+            "element": "IC1 and IC3 dashed curves",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1442,
+              968
+            ],
+            "oldRGB": [
+              167,
+              139,
+              250
+            ],
+            "newRGB": [
+              139,
+              115,
+              207
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 10786
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "8a766cebfee2516d8a09b0824758ccfe7a55d55deec74f923024d066b52da862"
+      }
     },
     "MICRO-59": {
       "baselineSha256": "edd4e1cdcca9b0806db56f091884e5567c396694766160a9e813514e0f035986",
@@ -6984,11 +7979,52 @@
       "visualSourceSha256": "34052024c1c5d3640f3e3dfb48f551d2f9efdf0d8559bcead9ff34ddcd2785bc",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp",
       "assetSourceSha256": "b8371794ea980d9cdb463314a72969379fa334ef908ed171035c1b79de0d9830",
-      "graphDecodedSha256": "95903d6768e79f95201a40502220b2f12b9340d2ba7dac95b1c5974a29d39265",
+      "graphDecodedSha256": "db6469b5e5c148b58eb018f91f4cf95f446a96a9f089e4c3ecd25daa1ab20a80",
       "graphAlternative": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
       "inlineFormulas": [],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "f0ffdadd44c48f10ac091802d8c014e3d617ab120cea2de7fa33dfc3e17a05f5",
+        "originalAssetSha256": "b8371794ea980d9cdb463314a72969379fa334ef908ed171035c1b79de0d9830",
+        "originalDecodedSha256": "95903d6768e79f95201a40502220b2f12b9340d2ba7dac95b1c5974a29d39265",
+        "dimensions": [
+          1634,
+          1397
+        ],
+        "rules": [
+          {
+            "element": "AD3",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1634,
+              1397
+            ],
+            "oldRGB": [
+              0,
+              204,
+              0
+            ],
+            "newRGB": [
+              0,
+              151,
+              0
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 11071
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "db6469b5e5c148b58eb018f91f4cf95f446a96a9f089e4c3ecd25daa1ab20a80"
+      }
     },
     "MACRO-31": {
       "baselineSha256": "b74607f146518d505b4a648c37694fcec9f591b57fd1840cfe5df71360e4eb0c",
@@ -7016,7 +8052,7 @@
       "visualSourceSha256": "b74607f146518d505b4a648c37694fcec9f591b57fd1840cfe5df71360e4eb0c",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/fiscal-multipliers-and-crowding-out/moneymultiplier.webp",
       "assetSourceSha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
-      "graphDecodedSha256": "7dcf5315bd240c200f526d1d731b200cb1c241c3d4810c28d33bd42e708adcfb",
+      "graphDecodedSha256": "f51a4bb664643a1798d1202dc72cab661737ed23a3cc5119fcdfd414219fb21d",
       "graphAlternative": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
       "inlineFormulas": [
         {
@@ -7051,7 +8087,48 @@
         }
       ],
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "visualRepair": {
+        "method": "reviewed_palette_ray_v1",
+        "sourceRecordSha256": "2977a867e9db32522b4e9a65cd48befdc59c8441c29a2caee527caaae975a028",
+        "originalAssetSha256": "5eee7a4d83f6869b62b7d878797f4dca4c607f5ee2a53cbca323d01c663fd911",
+        "originalDecodedSha256": "7dcf5315bd240c200f526d1d731b200cb1c241c3d4810c28d33bd42e708adcfb",
+        "dimensions": [
+          1778,
+          1528
+        ],
+        "rules": [
+          {
+            "element": "AD3",
+            "type": "non-text",
+            "region": [
+              0,
+              0,
+              1778,
+              1528
+            ],
+            "oldRGB": [
+              0,
+              204,
+              0
+            ],
+            "newRGB": [
+              0,
+              151,
+              0
+            ],
+            "backgroundRGB": [
+              255,
+              255,
+              255
+            ],
+            "paletteTolerance": 32,
+            "sampleCount": 11699
+          }
+        ],
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/blocked_25_v1/contrast_review.json",
+        "derivedDecodedSha256": "f51a4bb664643a1798d1202dc72cab661737ed23a3cc5119fcdfd414219fb21d"
+      }
     },
     "MACRO-32": {
       "baselineSha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc",
@@ -8464,5 +9541,5 @@
   "descriptions": {
     "quantity-theory-fixed-v-y:9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d": "Quantity-theory graph. The vertical axis is value of money, one divided by P; the horizontal axis is money supply M. Money demand MD slopes downward and curves toward the horizontal axis. Vertical MS1 is at 2,500 and meets MD at point a, at a money value of 2. Vertical MS2 is at 5,000 and meets MD at point b, at a money value of 1. Dashed horizontal guides mark 2 and 1. MS2 is to the right of MS1 and b is below and to the right of a. The vertical axis shows the reciprocal of the price level, not velocity V."
   },
-  "currentTask": "PDF_ACCESSIBILITY_FULL_BATCH_V1"
+  "currentTask": "PDF_ACCESSIBILITY_BLOCKED_25_V1"
 }

@@ -1,0 +1,2064 @@
+[
+  {
+    "code": "MICRO-04",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-04.pdf",
+    "tagCount": 42,
+    "mcids": 57,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Price Elasticity of Demand",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-04",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 6 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate midpoint price elasticity of demand and interpret the result",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Price elasticity of demand measures how strongly quantity demanded responds to a price change: PED = absolute percentage change in quantity demanded divided by percentage change in price. The midpoint method uses the average of the two quantities and the average of the two prices, so reversing the direction gives the same result. Demand is elastic when PED is greater than 1, unit elastic at 1, and inelastic below 1. Elasticity uses percentages, not raw unit changes or visual slope. Close substitutes, a longer adjustment period, a larger budget share, and a narrower market definition generally make demand more elastic.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Two price-quantity points are provided for a midpoint calculation.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "The problem asks whether the quantity response is elastic, unit elastic, or inelastic.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Substitutes, time to adjust, budget share, or market scope are changing.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A linear demand curve has constant slope but different elasticity along the line.",
+        "node": 21
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 23
+      },
+      {
+        "role": "LBody",
+        "text": "A horizontal or vertical demand curve represents a limiting elasticity case.",
+        "node": 24
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "A steeper-looking curve is not automatically less elastic. Slope uses the original price and quantity units, while elasticity compares percentage changes and depends on the price-quantity location. Put percentage quantity change in the numerator, use midpoint averages in both denominators, and classify demand using the absolute value of PED.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: MIDPOINT ELASTICITY",
+        "node": 27
+      },
+      {
+        "role": "Figure",
+        "text": "Price elasticity of demand. Vertical axis: Price, from 0 to 20. Horizontal axis: Quantity, from 0 to 150. The straight downward Demand curve runs from price 16 at quantity 0 to price 0 at quantity 120. Labeled points are C at quantity 30 and price 12, B at quantity 60 and price 8, and A at quantity 90 and price 4. Dashed guides connect each point to its axis values. C to B supplies the worked example; B to A supplies the self-check.",
+        "node": 28
+      },
+      {
+        "role": "P",
+        "text": "Between C and B, price falls from $12 to $8 while quantity demanded rises from 30 to 60. Using midpoint values, quantity changes by 66.7% and price changes by 40.0%, so PED = 66.7% / 40.0% = 1.67. Because 1.67 is greater than 1, demand is elastic over this interval: quantity responds proportionally more than price changes.",
+        "node": 29
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 30
+      },
+      {
+        "role": "P",
+        "text": "Using points B (P = $8, Q = 60) and A (P = $4, Q = 90), what is midpoint PED, and how should demand be classified over that interval?",
+        "node": 31
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 32
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 33
+      }
+    ],
+    "visualSource": null,
+    "sha256": "45d1cfaeafa2d195e6b3545d911521b91ae32ff0df9e892cd47dc4814d22cf3d",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "e8c089420f43ec156445c900c319e45cd40af006f56f0900f3bec5acdb68775b",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "2f33113ddafd439efd70e0dda650c99857b2fa488c7ed3558136f537bbf1ca84",
+    "resourceSemanticsSha256": "480310d84443d987e04266ec2f7c00d3b84278a0d7874eee0594250a665ebe7f",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 39,
+    "differenceBounds": [
+      278,
+      975,
+      285,
+      982
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-08",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-08.pdf",
+    "tagCount": 38,
+    "mcids": 46,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Elasticity and Total Revenue",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-08",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Connect Elasticity and Total Revenue.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Total revenue equals price multiplied by quantity, and the effect of a price change depends on demand elasticity. A point on demand supplies the price and quantity needed to calculate revenue. At unit elasticity the price and quantity percentage effects offset, marking the revenue peak on a standard linear demand curve.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Calculate total revenue as price multiplied by quantity at each relevant point.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "If price and total revenue move in opposite directions, demand is elastic over that range.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "If price and total revenue move in the same direction, demand is inelastic over that range.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "At unit elasticity, a small price change leaves total revenue approximately unchanged.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to compute elasticity without checking the associated total-revenue change. With elastic demand, price and total revenue move in opposite directions; with inelastic demand, they move together.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: ELASTICITY AND REVENUE",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price. A straight downward-sloping Demand line runs from price 16 at quantity 0 to price 0 at quantity 120. Its marked points are C at quantity 30, price 12; B at quantity 60, price 8; and A at quantity 90, price 4. Dashed guides show each point on both axes.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "At point C, price is $12 and quantity is 30, so total revenue is $12 x 30 = $360. At point B, price is $8 and quantity is 60, so revenue is $480. Moving from C to B lowers price but raises total revenue by $120, indicating elastic demand over that segment.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "For luxury cruise cabins, price changes from $3200 to $2880 while quantity demanded changes from 1,500 to 1,900. Use the midpoint method and the observed revenue totals. Which statement is correct?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "29f6eef4c96e8c6c8acacc89ee42dc22077749a99940eeb061be06b73c3e5c10",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "3340b5ed9743717209bf879562d6ef2ac7f6b833189fc44197757da37ceb3c0a",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "5c7e92102251048f5fdbc8722112757e186345c7f03f26f43795aa3f69e384f9",
+    "resourceSemanticsSha256": "201eab9b30cb1383f2afc8601e75c99a668ca376c5fd150999665e6136177352",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 39,
+    "differenceBounds": [
+      278,
+      958,
+      285,
+      965
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-10",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-10.pdf",
+    "tagCount": 34,
+    "mcids": 38,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Consumer Surplus & Willingness to Pay",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-10",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Explain Consumer Surplus & Willingness to Pay.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Consumer surplus is the difference between a buyer's willingness to pay and the price actually paid. Surplus analysis compares value created with the opportunity cost of the resources used. Demand can be interpreted as buyers' marginal willingness to pay. The gain from an additional trade is the buyer’s willingness to pay minus the seller’s cost, not either side’s individual surplus alone.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Look for a buyer's willingness to pay and the market price actually paid.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Individual consumer surplus equals willingness to pay minus price.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "On a graph, consumer surplus is the area below demand and above the market price up to the quantity traded.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A buyer whose willingness to pay is below price does not purchase and earns no consumer surplus.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not assume every trade creates surplus. The gain from an additional trade is the buyer’s willingness to pay minus the seller’s cost, not either side’s individual surplus alone.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: CALCULATING CONSUMER SURPLUS",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 30, and upward-sloping S starts at price 6. They meet at E, quantity 8 and price 14. Dashed guides connect E to both axes. The demand segment above price 14 runs from quantity 0 to 8; the supply segment below price 14 runs over that same quantity interval.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "At equilibrium, price is $14 and quantity is 8. The demand intercept of $30 represents the highest willingness to pay. Consumer surplus is the triangle above price and below demand: 1/2 x 8 x ($30 - $14) = $64.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Why is the rectangle below market price not consumer surplus?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "9ba738ca798bae76f395e8bd4789d458f01599870479b778a82e9b62b04886e7",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "4edf5b8e50d87605a6f51bc5aad5a5bcef9d9c6055bf6abe6b338a05fc271c46",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "fc1a7e31fe4dd4a15718ef4c32e480e0d368e81907bf63331b60e6cfa172d57c",
+    "resourceSemanticsSha256": "01f955caf4a9465caf0a52e906e6d39c2ffeddb4a4b01b1ce15733ac6fa52323",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 1027,
+    "differenceBounds": [
+      189,
+      977,
+      538,
+      1076
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-11",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-11.pdf",
+    "tagCount": 34,
+    "mcids": 37,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Producer Surplus & Willingness to Accept",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-11",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Explain Producer Surplus & Willingness to Accept.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Producer surplus is the difference between the price a seller receives and the seller's willingness to accept. Surplus analysis compares value created with the opportunity cost of the resources used. Producer surplus is the price-cost gap across units supplied. Producer surplus measures the price received above the seller’s willingness to accept for that unit.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Look for a seller's willingness to accept or marginal cost and the price received.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Individual producer surplus equals price received minus willingness to accept.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "On a graph, producer surplus is the area above supply and below the market price up to the quantity traded.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A seller whose cost exceeds the market price does not make that trade.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not confuse wta price gap. Producer surplus measures the price received above the seller’s willingness to accept for that unit.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: CALCULATING PRODUCER SURPLUS",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 30, and upward-sloping S starts at price 6. They meet at E, quantity 8 and price 14. Dashed guides connect E to both axes. The demand segment above price 14 runs from quantity 0 to 8; the supply segment below price 14 runs over that same quantity interval.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "At equilibrium, price is $14 and quantity is 8. The supply intercept is $6, so producer surplus is the triangle above supply and below price: 1/2 x 8 x ($14 - $6) = $32.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Why is the full area above supply not producer surplus?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "19b71c1914a372244b4ad1afa25bc704147f58b0d4e6f06ae9fb612af7876c51",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "69092b92f7248a4b8c0e887eef8df5003a43e633683312e59309d51ac044397f",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "3732cd350bcae9b18ed4ba9496aa5572f789ce4bb4d65ad61774113508f3f3c9",
+    "resourceSemanticsSha256": "b27df61995950423c4f53d0b372c2b74cdecb488d2b5c0095a301dbbad82dbce",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 1027,
+    "differenceBounds": [
+      189,
+      977,
+      538,
+      1076
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-12",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-12.pdf",
+    "tagCount": 40,
+    "mcids": 52,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Total Surplus & Gains from Exchange",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-12",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate Total Surplus & Gains from Exchange.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Total surplus equals consumer surplus plus producer surplus and measures the gains created by exchange. Each trade adds to total surplus when the buyer's willingness to pay exceeds the seller's opportunity cost. Total surplus is maximized when every mutually beneficial trade occurs and no trade with a cost above its value is completed.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Add consumer surplus and producer surplus to obtain total surplus.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "For each possible trade, compare the buyer's willingness to pay with the seller's opportunity cost.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A trade creates gains when buyer value exceeds seller cost.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "On a graph, total surplus is the area between demand and supply up to the quantity traded.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to fail to separate transfer from total loss. Consumer surplus is $10 and producer surplus is $8; their sum equals the $18 gain from exchange.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: CALCULATING TOTAL SURPLUS",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 30, and upward-sloping S starts at price 6. They meet at E, quantity 8 and price 14. Dashed guides connect E to both axes. The demand segment above price 14 runs from quantity 0 to 8; the supply segment below price 14 runs over that same quantity interval.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The graph's equilibrium is 8 units at $14. Consumer surplus is 1/2 x 8 x ($30 - $14) = $64, and producer surplus is 1/2 x 8 x ($14 - $6) = $32. Total surplus is therefore $64 + $32 = $96.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Buyer value is $17 and seller cost is $22. Efficient action?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "441e0a1f806486b5ebcdbfef85cdf95e28942b7e394fb13ae0f5ca6f2bbd8f7e",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "b9466bb8f67b99ef5dfce9f5414502146a37031397ebe5805203cbafb351dc68",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "b454d41b5d9607145c03a7252afd184a76e0c5a6bf5729b4204ffc0c1574098d",
+    "resourceSemanticsSha256": "bd08126e7c9f683d85b7600e432e3434ab18aa01326717d327854e3861f80886",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 1022,
+    "differenceBounds": [
+      189,
+      971,
+      538,
+      1071
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-13",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-13.pdf",
+    "tagCount": 33,
+    "mcids": 42,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Efficient Quantity & Allocation",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-13",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Identify Efficient Quantity & Allocation.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "The efficient quantity includes every unit whose buyer value is at least as large as its opportunity cost. Efficiency pairs the highest-value buyers with the lowest-cost sellers and continues exchange while the next buyer's willingness to pay covers the next seller's cost. Producing beyond that point destroys surplus, while stopping before it leaves gains unrealized.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Order potential trades from the highest buyer value and the lowest seller cost.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Complete every trade for which willingness to pay is at least as large as opportunity cost.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Stop when the next seller's cost exceeds the next buyer's value.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "An efficient allocation sends the good to the highest-value buyers and production to the lowest-cost sellers.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to equate more output with more efficiency. The forced extra unit contributes $23 - $29 = -$6 to total surplus.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: FINDING THE EFFICIENT QUANTITY",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 18 at quantity 0 and reaches price 2 at quantity 16. Upward-sloping S starts at price 2 and reaches price 18 at quantity 16. They intersect at E, quantity 8 and price 10, with dashed guides to the axes. Demand lies above supply to the left of E and below supply to its right.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "Demand and supply intersect at 8 units and $10. At that quantity, the marginal buyer's value equals the marginal seller's cost. Units below 8 create positive gains from trade; units above 8 cost more than buyers value them. The efficient allocation therefore produces 8 units.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Five buyers each want one studio pass, with willingness-to-pay values [27, 23, 18, 13, 8]. Five sellers can each supply one, with costs [4, 10, 15, 21, 25]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "ff437b875467c45216e7aed1fe1dfa577a4f4f0fa9e52032286b421a15f1dbdb",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "8c885340816d6f675c80d6235de03045e9ec983a4d6a2ae59e5ed7485bb3b514",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "85f95a7e0f7f3a3c318c635400d3713593f1906defc0a7bd66799b23d436e8d1",
+    "resourceSemanticsSha256": "88ad486ec7830cbf24ef606cfcaef5491b22955995a23e75a991e87e6465d4fa",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 1081,
+    "differenceBounds": [
+      189,
+      875,
+      519,
+      1051
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-17",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-17.pdf",
+    "tagCount": 34,
+    "mcids": 38,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Gains from Trade, Surplus & Winners/Losers",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-17",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate Gains from Trade, Surplus & Winners/Losers.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "International trade changes consumer and producer surplus and creates net gains when the world price differs from the no-trade equilibrium price. The surplus framework converts distributional changes into a net total-surplus comparison. Trade creates net gains while redistributing surplus between buyers and sellers.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Trade creates net gains while redistributing surplus between buyers and sellers.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "The efficiency result is based on the net change in combined surplus, not on every group winning.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Higher export prices redistribute surplus toward producers while creating a positive net gain in the standard model.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Aggregate gains do not imply universal gains.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not assume trade has only winners or only losers. Trade creates net gains while redistributing surplus between buyers and sellers. The efficiency result is based on the net change in combined surplus, not on every group winning.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: TRACING TRADE WINNERS AND LOSERS",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price. Demand D falls from price 80 at quantity 0 to price 0 at quantity 80. Supply S rises from price 20 and crosses D at quantity 30 and price 50. The horizontal world-price line Pw at price 30 meets S at quantity 10 and D at quantity 50; dashed vertical guides mark both quantities.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "At the $30 world price, domestic producers supply 10 units and domestic consumers demand 50, so imports equal 40. Relative to the $50 no-trade equilibrium, the two gain-from-trade triangles each have base 20 and height 20. Their combined area is $200 + $200 = $400.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Why do consumers gain when a lower world price opens an import market?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "63f4a341fb05a8474f7599a92d8b1a08814aad9d3dfccacd4ceac049ee64be9b",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "7e41d62644b975c926b36ecfb916d97980d7e131b0e1d420585314c59c9f411a",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "6f9db5c59dbf614c088aba8e78111e2b03586b3ce09b5f9e82718bf30c2d3576",
+    "resourceSemanticsSha256": "9cfcba44af922a32a429f2f114a8b50a195af2221e99b5dea3580d28e4f26316",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 1062,
+    "differenceBounds": [
+      196,
+      867,
+      466,
+      1113
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-22",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-22.pdf",
+    "tagCount": 45,
+    "mcids": 62,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Average Costs: AFC, AVC & ATC",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-22",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate Average Costs: AFC, AVC & ATC.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Average fixed cost, average variable cost, and average total cost express costs per unit of output. Average total cost equals average fixed cost plus average variable cost. Average fixed cost falls as output spreads the same fixed cost across more units, while average variable cost changes with the productivity and price of variable inputs.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Divide fixed cost by output for average fixed cost and variable cost by output for average variable cost.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Average total cost equals average fixed cost plus average variable cost.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Average fixed cost falls continuously as output spreads the same fixed cost across more units.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Use per-unit measures only when output is positive.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to misuse average cost formula. AVC = $300/20 = $15; AFC = $5; ATC = $20. TVC = $1,000; AVC = $20, AFC = $8, and ATC = $28.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: READING AVERAGE-COST CURVES",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: costs in dollars. Curves are labeled MC, AC and AVC. MC first dips slightly and then rises. It crosses AVC at its minimum, quantity 200 and cost 10. At quantity 400, MC crosses AC at its minimum of 20, while AVC is 12. Dashed guides mark the quantities and costs. AC remains above AVC.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "At 400 units, the graph shows average cost of $20 and average variable cost of $12. Because AC = AVC + AFC, average fixed cost is $20 - $12 = $8 per unit. The gap between AC and AVC is therefore the firm's average fixed cost.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Cost schedule 2: At Q=29, Ironwood Furniture has AVC=$13.97 and ATC=$24.31. What fixed-cost conclusion follows?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "2838c835fa951582363b5a5371f6f5da047efcf5ba94ac45107206e4fa1a08a6",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "5f332a17b0d8ddb5d5c1933206d16286966fd0afd9227202d1cb9238dd831c3e",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "7f6e07f5a8ba76428aa3ce7bb7646d94e92c85147d690bf092a7989d93381105",
+    "resourceSemanticsSha256": "a4f77c00c788a3ff9f4bbc8cd4ce3acc6aeede4359c49761c31744a0603f92f8",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 71,
+    "differenceBounds": [
+      527,
+      859,
+      540,
+      865
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-23",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-23.pdf",
+    "tagCount": 34,
+    "mcids": 40,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Marginal Cost & Production-Cost Linkages",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-23",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate Marginal Cost & Production-Cost Linkages.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Marginal cost is the change in total cost caused by producing one more unit. Divide the input cost by marginal product. Higher MP lowers variable input cost per extra unit. A constant addition to cost at every output does not change the cost of producing one more unit.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Look for the change in total cost caused by producing one additional unit.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Compute marginal cost as the change in total cost divided by the change in output.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A fixed-cost change does not change marginal cost, but a variable-input cost change usually does.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "When marginal product falls, marginal cost tends to rise if the input price is unchanged.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to move mp and mc together. Higher MP lowers variable input cost per extra unit. A constant addition to cost at every output does not change the cost of producing one more unit.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: LINKING MARGINAL PRODUCT AND COST",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: costs in dollars. Curves are labeled MC, AC and AVC. MC first dips slightly and then rises. It crosses AVC at its minimum, quantity 200 and cost 10. At quantity 400, MC crosses AC at its minimum of 20, while AVC is 12. Dashed guides mark the quantities and costs. AC remains above AVC.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "Marginal cost crosses AVC at AVC's minimum of $10 and 200 units, then crosses AC at AC's minimum of $20 and 400 units. When marginal cost is below an average, it pulls that average down; when marginal cost rises above it, the average begins to increase.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "If output rises by 1 unit and total cost rises by $18, marginal cost of that unit is:?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "b8b339a626d056165b835272b21d72a6806576cacf615fc0cbfd7ca7f1d49c9a",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "ce3f38985d5c4ccff7a295dc65f866e3fa8220e466d99787616e9aa692f9d42f",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "8d6b88b72c06d2b41d78b9beff4a3bead4b61fce12ad32010a1408b273628cc0",
+    "resourceSemanticsSha256": "274c24692ca14aa466e523e55fadbc661274fa239d0d4c6debc789bab6cc7d3f",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 71,
+    "differenceBounds": [
+      527,
+      861,
+      540,
+      867
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-24",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-24.pdf",
+    "tagCount": 31,
+    "mcids": 28,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "NO_INLINE_EXPRESSIONS_SELECTED",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Short-Run Cost Curves: Relationships & Shifts",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-24",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Analyze Short-Run Cost Curves: Relationships & Shifts.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Short-run cost curves move differently because fixed costs affect AFC and ATC, while variable-input costs affect AVC, ATC, and MC. A below-average marginal observation pulls the average down. Labor is the variable input in the standard short-run model. A fixed-cost increase raises fixed cost per unit and total cost per unit but leaves variable and marginal cost unchanged.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "A fixed-cost increase raises fixed cost per unit and total cost per unit but leaves variable and marginal cost unchanged.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A technology improvement reduces the variable input needed at every output.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Labor is the variable input in the standard short-run model.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A firm receives a property-tax increase that does not depend on output.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to mix fixed and variable shifts. A fixed-cost increase raises fixed cost per unit and total cost per unit but leaves variable and marginal cost unchanged.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: SHIFTING SHORT-RUN COST CURVES",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity, from 0 to 80; vertical axis: cost per unit, from 0 to 120. ATC and AVC are U-shaped, with ATC above AVC. MC falls to a minimum around quantity 20, then rises, crossing AVC near its minimum around quantity 32 and cost 20 and ATC near its minimum around quantity 40 and cost 27. At quantity 80, MC is around 120, ATC around 46 and AVC around 43. These unmarked intersections are approximate readings. No shifted curves are drawn.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "Suppose the firm signs a more expensive lease while output and variable input prices are unchanged. The higher fixed cost raises average fixed cost and therefore shifts ATC upward. AVC and MC remain in the positions shown because neither depends on fixed cost. The production decision at the margin is unchanged.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Why does the ATC–AVC gap shrink?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "a3a8258ec4c1b3116a5a28f0e249a46f2ccf5debd94a445e48cfd9513d017076",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "6f0275bd0ecf4ffac6a20598472088a91094a010242060ff86d44597ed681b5c",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "f9c43b5269696ffd016849725812d82f20c9af43a4144099de8d9566f6feea24",
+    "resourceSemanticsSha256": "1f377b1172595bb9ea0ff0f34f457776069582e13d9b6f3d9916b2a7d395294f",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 1325,
+    "differenceBounds": [
+      210,
+      872,
+      535,
+      1065
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-50",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-50.pdf",
+    "tagCount": 32,
+    "mcids": 35,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Collusion, Cartels & Prisoner's-Dilemma Incentives",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-50",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Analyze Collusion, Cartels & Prisoner's-Dilemma Incentives.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A cartel coordinates firms to restrict industry output and raise price as a monopolist would. Individual incentives can push both firms toward a lower-payoff noncooperative outcome. The conflict is between individual and collective incentives. A prisoner’s dilemma exists precisely because individual incentives can undermine a jointly better outcome.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Individual incentives can push both firms toward a lower-payoff noncooperative outcome.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "The conflict is between individual and collective incentives.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A prisoner’s dilemma exists precisely because individual incentives can undermine a jointly better outcome.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Three firms agree to keep prices high.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not miss individual incentive to defect. The conflict is between individual and collective incentives. Private incentives can conflict with the cartel’s collective restriction.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: WHY CARTELS BREAK DOWN",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: market quantity; vertical axis: price and cost. Demand D slopes down from price 100 at quantity 0 and crosses horizontal MC at price 20 and quantity 40. MR slopes down more steeply from 100 to zero near quantity 25, crossing MC at quantity 20. At quantity 20, demand is near price 60. Values without point guides are approximate readings from the scale.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "A cartel acts like one monopolist and selects industry output where industry MR equals MC. On the graph, the downward-sloping MR curve meets the $20 MC line at 20 units. The cartel then uses demand to set price. Each member has an incentive to sell extra units, which makes the agreement unstable.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "What does mutual defection show?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "36e3a9ac45c12b20c887d10b9c3d107e1b4c32114e452e313c741277f03586ba",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "35ecbb897e9e4b446a732422adb248654e25f632325db974ace901d55a480afb",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "188e5d55b00ad1a2cff44f3da36d153fec895c8a4c6875609fe211629179ef58",
+    "resourceSemanticsSha256": "417e05f73be7d0651fb7531a4f2128616355ac2cabb8f58ea9c859171dafd839",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 861,
+    "differenceBounds": [
+      201,
+      884,
+      375,
+      1107
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-52",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-52.pdf",
+    "tagCount": 33,
+    "mcids": 37,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Tacit Coordination, Price Leadership & Nonprice Competition",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-52",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Analyze Tacit Coordination, Price Leadership & Nonprice Competition.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Tacit coordination occurs when firms align behavior without an explicit agreement, while nonprice competition uses quality, service, or advertising rather than price cuts. Advertising can shape demand in both markets. Strategic interdependence applies to quality, advertising, service, and other competitive dimensions as well as price. Tacit coordination refers to aligned behavior without the explicit agreement that defines collusion.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "A student has learned that oligopoly firms react strategically to price changes.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A student says tacit coordination and explicit collusion are identical.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Tacit coordination can arise through expectations and repeated conduct.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A firm increases product quality rather than cutting price.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not assume price is irrelevant. Oligopolists can compete on quality and other dimensions. A leader’s announced price can become a focal point.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: RECOGNIZING NONPRICE COMPETITION",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price and cost. Demand D has a kink at approximately quantity 20 and price 50: it is steeper to the left and flatter to the right. MR has two downward-sloping segments separated by a gap at quantity 20, from approximately 10 to 32. Horizontal MC is around 37. These are approximate readings, and the MC line is visibly above the top of the MR gap.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The kink in demand occurs near 20 units and a price of $50. Because the marginal-revenue curve has a gap at that output, modest changes in MC around $36 need not change the chosen price or quantity. The model explains price rigidity while reminding us that oligopolists can still compete through quality, service, and advertising.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Does parallel pricing prove collusion?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "2174264d8d2645b4aa36175946a211f515d7a36abd49325877ba2af34ecfaf02",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "a1f88fdf512140e314d6b38d8f92d4fe7f3d1456eb36c47a7e4cc75031d191f0",
+    "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+    "baselineSha256": "93b8a89028f55f40844ea5221dc22135c762496c7a30a20eaa285bef6cb5046c",
+    "resourceSemanticsSha256": "d90a6e39f1b5eea261013556d18250183d5b0cf3db3bac0b2336bd77ff2525ae",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\validation\\verapdf.json",
+    "validatorReportSha256": "2298841076d3bbba1f3b07b2b60453a8ea665a7f022075122f735d6fd42133ea",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "ownerApprovedWordingOnly": false,
+    "changedPixels": 557,
+    "differenceBounds": [
+      330,
+      984,
+      497,
+      1105
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  }
+]

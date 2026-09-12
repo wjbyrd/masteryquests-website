@@ -1,0 +1,61 @@
+{
+  "task": "PDF_ACCESSIBILITY_BLOCKED_25_V1",
+  "baselineCommit": "84c5b6f45246a420b3d6748f4059b2b28ab1f690",
+  "initialTrackedFiles": 6639,
+  "changedTrackedFiles": [
+    ".assetsignore",
+    "audit_tools/pdf_accessibility/README.md",
+    "audit_tools/pdf_accessibility/accessibility_gate.py",
+    "audit_tools/pdf_accessibility/batch_candidates.py",
+    "audit_tools/pdf_accessibility/install_validated.py",
+    "audit_tools/pdf_accessibility/negative_tests.py",
+    "audit_tools/pdf_accessibility/requirements.txt",
+    "audit_tools/pdf_accessibility/run_regression.py",
+    "audit_tools/pdf_accessibility/staged_gate.py",
+    "audit_tools/pdf_accessibility/tag_pilot.py",
+    "audit_tools/pdf_accessibility/test_pipeline.py",
+    "audit_tools/pdf_accessibility/validate_candidates.py",
+    "build/faculty-build-composer/data/concept-reviews/accessibility_semantics.json",
+    "build/faculty-build-composer/data/concept-reviews/concept_review_source.json",
+    "validation_artifacts/pdf_accessibility/owner_test_pack/README.md"
+  ],
+  "unexpectedChanges": [],
+  "missingFiles": [],
+  "activeCopiesUnchanged": 287,
+  "missingPublicStillAbsent": [
+    "concept-reviews\\MICRO-54.pdf",
+    "concept-reviews\\MICRO-55.pdf",
+    "concept-reviews\\MICRO-56.pdf",
+    "concept-reviews\\MICRO-57.pdf",
+    "concept-reviews\\MICRO-58.pdf",
+    "concept-reviews\\MICRO-59.pdf",
+    "concept-reviews\\MICRO-60.pdf",
+    "concept-reviews\\MICRO-61.pdf",
+    "concept-reviews\\MICRO-62.pdf",
+    "concept-reviews\\MICRO-63.pdf",
+    "concept-reviews\\MICRO-64.pdf",
+    "concept-reviews\\MICRO-65.pdf",
+    "concept-reviews\\MICRO-66.pdf",
+    "concept-reviews\\MICRO-67.pdf",
+    "concept-reviews\\MICRO-68.pdf"
+  ],
+  "protectedSystemsUnchanged": true,
+  "sharedGraphAssetsUnchanged": true,
+  "priorReportsAndEvidenceUnchanged": true,
+  "sourceChangesOnly": [
+    {
+      "code": "MICRO-16",
+      "field": "content.check",
+      "old": "Using the import-market graph, what are domestic production, domestic consumption, and imports at Pw=$30?",
+      "new": "Using the avocado export-market graph, what are domestic production, domestic consumption, and exports at Pw=$10?"
+    },
+    {
+      "code": "MICRO-34",
+      "field": "content.check",
+      "old": "Graph analysis 13: What can produce the downward-sloping long-run industry supply shown?",
+      "new": "Graph analysis 13: What can produce the upward-sloping long-run industry supply shown?"
+    }
+  ],
+  "gitDiffCheck": "PASS",
+  "finalRecheck": true
+}

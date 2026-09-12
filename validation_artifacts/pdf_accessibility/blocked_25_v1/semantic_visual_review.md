@@ -1,0 +1,15 @@
+# Targeted semantic and visual review
+
+Task: PDF_ACCESSIBILITY_BLOCKED_25_V1. Actual assistive-technology testing: PENDING.
+
+All 23 before/after graph pairs were inspected at enlarged scale, then all 25 final full-page renders. Curves, line styles, labels, points, intersections and numerical values remain in their original positions. No new clipping, overflow, page growth or font substitution was introduced. The later-layout font and heading repairs remain intact. Retained graph resolution is unchanged; zoom still exposes the original raster resolution rather than newly invented detail.
+
+Semantic review reuses the prior source-reviewed order and graph descriptions, with three explicit exceptions: MICRO-16 self-check now refers to avocado exports at Pw=$10; MICRO-34 self-check now refers to upward-sloping LRS; MICRO-52 graph alternative now describes the owner's accepted interpretation and explicitly identifies the worked example's use of the MR gap. The latter is an owner adjudication, not an independently measured change in geometry. Original approximate gap coordinates from the disputed prior description are not silently presented as accepted facts. Graph geometry and economics were not changed.
+
+MICRO-16 and MICRO-34 use the same embedded font, size, line boxes and logical check paragraph. The exact authorized old-to-new replacement is independently checked against all extracted text; other content, punctuation and mathematics remain unchanged. MICRO-16's check Formula now says P subscript w equals 10 dollars. All unrelated Formula selectors remain identical. Initial text-operand serialization exposed subset-glyph corruption; rejected attempts were retained, and the repaired transformation preserves every original non-target text-show byte before reserialization. Both final candidates pass the source/structure/font/reading-order tests.
+
+All 25 final transcripts expose the original heading/list order, informative Figure before the worked explanation, the complete worked example, self-check and return instruction. Mathematical alternatives are unchanged except the explicitly authorized MICRO-16 price. No tables or links were added. Existing table/formula-card/quantity-theory evidence for the 126 unchanged candidates remains byte-identical and was reused.
+
+The new raster correction is intentionally narrow: hash-bound reviewed semantic regions and color rays, fixed sample-count masks, RGB adjustment with original antialias coverage and compression residual, then lossless PDF Flate encoding. It does not move pixels, repaint geometry, generate replacement text labels, or recognize arbitrary graphs. Gray axes, grids and unrelated colors remain outside the masks. Existing labels, directions, curve positions and dashed/solid distinctions still identify the curves. MICRO-55's legend samples follow the same correction as their associated dashed curves.
+
+All production PDFs, shared graph assets, prior reports and prior evidence are read-only in this task. Review acceptance here concerns the staged collection and stated project checks; it is not a claim of WCAG certification or completed screen-reader testing.

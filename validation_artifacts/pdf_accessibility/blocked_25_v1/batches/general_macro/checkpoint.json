@@ -1,0 +1,3824 @@
+{
+  "task": "PDF_ACCESSIBILITY_BLOCKED_25_V1",
+  "batch": "general_macro",
+  "documentIds": [
+    "GEN-ECON-13",
+    "GEN-ECON-15",
+    "GEN-ECON-16",
+    "GEN-ECON-18",
+    "GEN-ECON-24",
+    "GEN-ECON-25",
+    "MACRO-30",
+    "MACRO-31"
+  ],
+  "installed": false,
+  "records": [
+    {
+      "code": "GEN-ECON-13",
+      "inputs": {
+        "source": "f43d7afc69fbe628d8906e2c2566cef040154440250ac28e485722d054a05dd0",
+        "semantics": "47f741bef0deab12b6e2cb7d011812b2a4bc42ae6539fa78d72480e3b6cf5f7e",
+        "tooling": "49749b7e66135bdb8285b92e4e52376d28de20be213a8e4c4cfa4bfb06953684",
+        "active": "aa8df46c439efd810823b06203dcd5bf330cb0c7c8ac2683a5a9c024d9b154bb"
+      },
+      "result": "MACHINE_PASS_REVIEW_PENDING",
+      "generation": {
+        "code": "GEN-ECON-13",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-13.pdf",
+        "tagCount": 32,
+        "mcids": 35,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Determinants of Demand",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-13",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Identify nonprice determinants that shift demand left or right.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Demand shifts when a nonprice determinant changes. Demand increases and shifts right when buyers want more at every price; demand decreases and shifts left when they want less at every price. Important determinants include income, tastes and preferences, expectations, the number of buyers, and the prices of substitutes and complements. The direction of an income effect depends on whether the good is normal or inferior, and the effect of a related-good price depends on whether the goods are substitutes or complements.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Consumer income, preferences, expectations, or the number of buyers changes.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "The price of a substitute or complement changes.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Quantity demanded changes at the same price.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "The entire demand curve moves left or right rather than moving to another point on one curve.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not treat a change in the good's own price as a demand shifter. Own-price changes create movements along the existing curve. A nonprice determinant changes how much buyers want at every price and shifts the entire curve.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: DEMAND SHIFT",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "Horizontal axis: quantity of coffee in thousands. Vertical axis: price of coffee in dollars. Two parallel coffee demand curves. D1 lies to the right of D0; at price $10, quantity demanded rises from 50 thousand on D0 to 125 thousand on D1.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "At a coffee price of $10, the original curve D0 shows quantity demanded of 50 thousand, while D1 shows 125 thousand. The price of coffee is held constant, so the 75-thousand increase cannot be a movement along D0. It is a rightward shift from D0 to D1, meaning a nonprice determinant has increased demand.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Income rises for buyers of a normal good. Which direction does its demand curve shift, and why?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "9dda34ed489d90d1739960fbce6af7e0f46a2eac2346ad496e34a81a91d49798"
+      },
+      "validation": {
+        "code": "GEN-ECON-13",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-13.pdf",
+        "tagCount": 32,
+        "mcids": 35,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Determinants of Demand",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-13",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Identify nonprice determinants that shift demand left or right.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Demand shifts when a nonprice determinant changes. Demand increases and shifts right when buyers want more at every price; demand decreases and shifts left when they want less at every price. Important determinants include income, tastes and preferences, expectations, the number of buyers, and the prices of substitutes and complements. The direction of an income effect depends on whether the good is normal or inferior, and the effect of a related-good price depends on whether the goods are substitutes or complements.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Consumer income, preferences, expectations, or the number of buyers changes.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "The price of a substitute or complement changes.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Quantity demanded changes at the same price.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "The entire demand curve moves left or right rather than moving to another point on one curve.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not treat a change in the good's own price as a demand shifter. Own-price changes create movements along the existing curve. A nonprice determinant changes how much buyers want at every price and shifts the entire curve.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: DEMAND SHIFT",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "Horizontal axis: quantity of coffee in thousands. Vertical axis: price of coffee in dollars. Two parallel coffee demand curves. D1 lies to the right of D0; at price $10, quantity demanded rises from 50 thousand on D0 to 125 thousand on D1.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "At a coffee price of $10, the original curve D0 shows quantity demanded of 50 thousand, while D1 shows 125 thousand. The price of coffee is held constant, so the 75-thousand increase cannot be a movement along D0. It is a rightward shift from D0 to D1, meaning a nonprice determinant has increased demand.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Income rises for buyers of a normal good. Which direction does its demand curve shift, and why?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "9dda34ed489d90d1739960fbce6af7e0f46a2eac2346ad496e34a81a91d49798",
+        "passed": true,
+        "independentProfile": "ISO 14289-1:2014",
+        "validator": "veraPDF 1.28.2 --flavour ua1",
+        "independentPass": true,
+        "projectErrors": [],
+        "sourceRecordSha256": "f43d7afc69fbe628d8906e2c2566cef040154440250ac28e485722d054a05dd0",
+        "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+        "baselineSha256": "aa8df46c439efd810823b06203dcd5bf330cb0c7c8ac2683a5a9c024d9b154bb",
+        "resourceSemanticsSha256": "47f741bef0deab12b6e2cb7d011812b2a4bc42ae6539fa78d72480e3b6cf5f7e",
+        "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\validation\\verapdf.json",
+        "validatorReportSha256": "70b8ed765b9bd5c12de7cff2b151803e1e331da73614d8f218a8b62367237aad",
+        "pageCounts": [
+          1,
+          1
+        ],
+        "geometryEqual": true,
+        "textExact": true,
+        "textWhitespaceOnlyEqual": true,
+        "ownerApprovedWordingOnly": false,
+        "changedPixels": 50,
+        "differenceBounds": [
+          527,
+          1108,
+          537,
+          1115
+        ],
+        "renderReview": "PENDING",
+        "assistiveTechnology": "PENDING"
+      },
+      "deterministic": true,
+      "rebuild": {
+        "code": "GEN-ECON-13",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\determinism\\after\\GEN-ECON-13.pdf",
+        "tagCount": 32,
+        "mcids": 35,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Determinants of Demand",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-13",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Identify nonprice determinants that shift demand left or right.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Demand shifts when a nonprice determinant changes. Demand increases and shifts right when buyers want more at every price; demand decreases and shifts left when they want less at every price. Important determinants include income, tastes and preferences, expectations, the number of buyers, and the prices of substitutes and complements. The direction of an income effect depends on whether the good is normal or inferior, and the effect of a related-good price depends on whether the goods are substitutes or complements.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Consumer income, preferences, expectations, or the number of buyers changes.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "The price of a substitute or complement changes.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Quantity demanded changes at the same price.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "The entire demand curve moves left or right rather than moving to another point on one curve.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not treat a change in the good's own price as a demand shifter. Own-price changes create movements along the existing curve. A nonprice determinant changes how much buyers want at every price and shifts the entire curve.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: DEMAND SHIFT",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "Horizontal axis: quantity of coffee in thousands. Vertical axis: price of coffee in dollars. Two parallel coffee demand curves. D1 lies to the right of D0; at price $10, quantity demanded rises from 50 thousand on D0 to 125 thousand on D1.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "At a coffee price of $10, the original curve D0 shows quantity demanded of 50 thousand, while D1 shows 125 thousand. The price of coffee is held constant, so the 75-thousand increase cannot be a movement along D0. It is a rightward shift from D0 to D1, meaning a nonprice determinant has increased demand.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Income rises for buyers of a normal good. Which direction does its demand curve shift, and why?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "9dda34ed489d90d1739960fbce6af7e0f46a2eac2346ad496e34a81a91d49798"
+      }
+    },
+    {
+      "code": "GEN-ECON-15",
+      "inputs": {
+        "source": "ae3f8bc191a0e7798bf964d897550234d7f9301170f2b52c808fd56c3f70eb82",
+        "semantics": "14b0f138429b9e5ef1377e9e51a78151612c6fdf23b2645c062946a06af1232a",
+        "tooling": "49749b7e66135bdb8285b92e4e52376d28de20be213a8e4c4cfa4bfb06953684",
+        "active": "9822d54120677d005ff5e648884e0fe4fb890b60ec009627f16dfee1dfa06fea"
+      },
+      "result": "MACHINE_PASS_REVIEW_PENDING",
+      "generation": {
+        "code": "GEN-ECON-15",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-15.pdf",
+        "tagCount": 32,
+        "mcids": 37,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Determinants of Supply",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-15",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Identify nonprice determinants that shift supply left or right.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Supply shifts when a nonprice determinant changes. Supply increases and shifts right when sellers can provide more at every price; supply decreases and shifts left when they provide less at every price. Important determinants include input and resource costs, technology and productivity, taxes and subsidies, expectations, the number of sellers, and natural or regulatory production conditions. A change that lowers marginal production cost generally increases supply, while a change that raises marginal cost generally decreases it.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Input prices, technology, productivity, taxes, or subsidies change.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Producers' expectations or the number of sellers changes.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Quantity supplied changes at the same price.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "The entire supply curve moves left or right rather than moving to another point on one curve.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not treat a change in the good's own price as a supply shifter. Own-price changes create movements along the existing curve. A change in production cost, technology, expectations, or the number of sellers changes how much firms offer at every price and shifts the curve.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: SUPPLY SHIFT",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "Horizontal axis: quantity of hamburgers in thousands. Vertical axis: price of hamburgers in dollars. Two parallel hamburger supply curves. S1 lies to the left of S0; at price $9, quantity supplied falls from 200 thousand on S0 to 100 thousand on S1.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "At a hamburger price of $9, the original curve S0 shows quantity supplied of 200 thousand, while S1 shows 100 thousand. The product's price is unchanged, so the 100-thousand decrease is not a movement along S0. It is a leftward shift from S0 to S1, consistent with a determinant such as higher input costs reducing supply.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "A new technology lowers the cost of producing solar panels. Which direction does supply shift, and why?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "1d67cf7bdd86ee6189ce33f24288ecb9922f8b209456a9c63e4f19f04eb2fbd8"
+      },
+      "validation": {
+        "code": "GEN-ECON-15",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-15.pdf",
+        "tagCount": 32,
+        "mcids": 37,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Determinants of Supply",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-15",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Identify nonprice determinants that shift supply left or right.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Supply shifts when a nonprice determinant changes. Supply increases and shifts right when sellers can provide more at every price; supply decreases and shifts left when they provide less at every price. Important determinants include input and resource costs, technology and productivity, taxes and subsidies, expectations, the number of sellers, and natural or regulatory production conditions. A change that lowers marginal production cost generally increases supply, while a change that raises marginal cost generally decreases it.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Input prices, technology, productivity, taxes, or subsidies change.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Producers' expectations or the number of sellers changes.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Quantity supplied changes at the same price.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "The entire supply curve moves left or right rather than moving to another point on one curve.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not treat a change in the good's own price as a supply shifter. Own-price changes create movements along the existing curve. A change in production cost, technology, expectations, or the number of sellers changes how much firms offer at every price and shifts the curve.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: SUPPLY SHIFT",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "Horizontal axis: quantity of hamburgers in thousands. Vertical axis: price of hamburgers in dollars. Two parallel hamburger supply curves. S1 lies to the left of S0; at price $9, quantity supplied falls from 200 thousand on S0 to 100 thousand on S1.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "At a hamburger price of $9, the original curve S0 shows quantity supplied of 200 thousand, while S1 shows 100 thousand. The product's price is unchanged, so the 100-thousand decrease is not a movement along S0. It is a leftward shift from S0 to S1, consistent with a determinant such as higher input costs reducing supply.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "A new technology lowers the cost of producing solar panels. Which direction does supply shift, and why?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "1d67cf7bdd86ee6189ce33f24288ecb9922f8b209456a9c63e4f19f04eb2fbd8",
+        "passed": true,
+        "independentProfile": "ISO 14289-1:2014",
+        "validator": "veraPDF 1.28.2 --flavour ua1",
+        "independentPass": true,
+        "projectErrors": [],
+        "sourceRecordSha256": "ae3f8bc191a0e7798bf964d897550234d7f9301170f2b52c808fd56c3f70eb82",
+        "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+        "baselineSha256": "9822d54120677d005ff5e648884e0fe4fb890b60ec009627f16dfee1dfa06fea",
+        "resourceSemanticsSha256": "14b0f138429b9e5ef1377e9e51a78151612c6fdf23b2645c062946a06af1232a",
+        "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\validation\\verapdf.json",
+        "validatorReportSha256": "70b8ed765b9bd5c12de7cff2b151803e1e331da73614d8f218a8b62367237aad",
+        "pageCounts": [
+          1,
+          1
+        ],
+        "geometryEqual": true,
+        "textExact": true,
+        "textWhitespaceOnlyEqual": true,
+        "ownerApprovedWordingOnly": false,
+        "changedPixels": 53,
+        "differenceBounds": [
+          509,
+          858,
+          519,
+          865
+        ],
+        "renderReview": "PENDING",
+        "assistiveTechnology": "PENDING"
+      },
+      "deterministic": true,
+      "rebuild": {
+        "code": "GEN-ECON-15",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\determinism\\after\\GEN-ECON-15.pdf",
+        "tagCount": 32,
+        "mcids": 37,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Determinants of Supply",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-15",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Identify nonprice determinants that shift supply left or right.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Supply shifts when a nonprice determinant changes. Supply increases and shifts right when sellers can provide more at every price; supply decreases and shifts left when they provide less at every price. Important determinants include input and resource costs, technology and productivity, taxes and subsidies, expectations, the number of sellers, and natural or regulatory production conditions. A change that lowers marginal production cost generally increases supply, while a change that raises marginal cost generally decreases it.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Input prices, technology, productivity, taxes, or subsidies change.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Producers' expectations or the number of sellers changes.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Quantity supplied changes at the same price.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "The entire supply curve moves left or right rather than moving to another point on one curve.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not treat a change in the good's own price as a supply shifter. Own-price changes create movements along the existing curve. A change in production cost, technology, expectations, or the number of sellers changes how much firms offer at every price and shifts the curve.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: SUPPLY SHIFT",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "Horizontal axis: quantity of hamburgers in thousands. Vertical axis: price of hamburgers in dollars. Two parallel hamburger supply curves. S1 lies to the left of S0; at price $9, quantity supplied falls from 200 thousand on S0 to 100 thousand on S1.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "At a hamburger price of $9, the original curve S0 shows quantity supplied of 200 thousand, while S1 shows 100 thousand. The product's price is unchanged, so the 100-thousand decrease is not a movement along S0. It is a leftward shift from S0 to S1, consistent with a determinant such as higher input costs reducing supply.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "A new technology lowers the cost of producing solar panels. Which direction does supply shift, and why?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "1d67cf7bdd86ee6189ce33f24288ecb9922f8b209456a9c63e4f19f04eb2fbd8"
+      }
+    },
+    {
+      "code": "GEN-ECON-16",
+      "inputs": {
+        "source": "605932f3532a587709ebf273958216584702dad1a086f94c3bd843818292fe60",
+        "semantics": "d171d568721546c94231d19da057ab955711f7642a2ece8f6b9ca9b89b76505e",
+        "tooling": "49749b7e66135bdb8285b92e4e52376d28de20be213a8e4c4cfa4bfb06953684",
+        "active": "277188fd9ce7764d6a52483424e4a59daa9b7d24e547f1ce6ff5ca03f0adc088"
+      },
+      "result": "MACHINE_PASS_REVIEW_PENDING",
+      "generation": {
+        "code": "GEN-ECON-16",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-16.pdf",
+        "tagCount": 34,
+        "mcids": 40,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Market Equilibrium",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-16",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Market equilibrium occurs where quantity demanded equals quantity supplied. At that price, buyers can purchase the amount they want and sellers can sell the amount they offer, so there is no pressure for price to change. A demand or supply shift creates a new intersection and can change both equilibrium price and equilibrium quantity.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Find the price at which quantity demanded equals quantity supplied.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "On a graph, use the intersection of the demand and supply curves.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "A price below equilibrium creates a shortage; a price above equilibrium creates a surplus.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Report both the equilibrium price and the corresponding equilibrium quantity.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "A common mistake is to call any intersection or stated price an equilibrium. Equilibrium occurs only where quantity demanded equals quantity supplied.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: FINDING MARKET EQUILIBRIUM",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "On the graph, the new demand and supply curves intersect at a price of $5 and quantity of 150 thousand. The intersection is the only point at which quantity demanded equals quantity supplied, so it is the new market equilibrium. A price above $5 would create a surplus, while a price below $5 would create a shortage.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Holding supply constant, which equilibrium outcome follows from an increase in demand?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "8496532c02d196245fe11881a22163022811c1c1b5286574ffa88ae211d65000"
+      },
+      "validation": {
+        "code": "GEN-ECON-16",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-16.pdf",
+        "tagCount": 34,
+        "mcids": 40,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Market Equilibrium",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-16",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Market equilibrium occurs where quantity demanded equals quantity supplied. At that price, buyers can purchase the amount they want and sellers can sell the amount they offer, so there is no pressure for price to change. A demand or supply shift creates a new intersection and can change both equilibrium price and equilibrium quantity.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Find the price at which quantity demanded equals quantity supplied.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "On a graph, use the intersection of the demand and supply curves.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "A price below equilibrium creates a shortage; a price above equilibrium creates a surplus.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Report both the equilibrium price and the corresponding equilibrium quantity.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "A common mistake is to call any intersection or stated price an equilibrium. Equilibrium occurs only where quantity demanded equals quantity supplied.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: FINDING MARKET EQUILIBRIUM",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "On the graph, the new demand and supply curves intersect at a price of $5 and quantity of 150 thousand. The intersection is the only point at which quantity demanded equals quantity supplied, so it is the new market equilibrium. A price above $5 would create a surplus, while a price below $5 would create a shortage.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Holding supply constant, which equilibrium outcome follows from an increase in demand?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "8496532c02d196245fe11881a22163022811c1c1b5286574ffa88ae211d65000",
+        "passed": true,
+        "independentProfile": "ISO 14289-1:2014",
+        "validator": "veraPDF 1.28.2 --flavour ua1",
+        "independentPass": true,
+        "projectErrors": [],
+        "sourceRecordSha256": "605932f3532a587709ebf273958216584702dad1a086f94c3bd843818292fe60",
+        "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+        "baselineSha256": "277188fd9ce7764d6a52483424e4a59daa9b7d24e547f1ce6ff5ca03f0adc088",
+        "resourceSemanticsSha256": "d171d568721546c94231d19da057ab955711f7642a2ece8f6b9ca9b89b76505e",
+        "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\validation\\verapdf.json",
+        "validatorReportSha256": "70b8ed765b9bd5c12de7cff2b151803e1e331da73614d8f218a8b62367237aad",
+        "pageCounts": [
+          1,
+          1
+        ],
+        "geometryEqual": true,
+        "textExact": true,
+        "textWhitespaceOnlyEqual": true,
+        "ownerApprovedWordingOnly": false,
+        "changedPixels": 111,
+        "differenceBounds": [
+          394,
+          870,
+          542,
+          1062
+        ],
+        "renderReview": "PENDING",
+        "assistiveTechnology": "PENDING"
+      },
+      "deterministic": true,
+      "rebuild": {
+        "code": "GEN-ECON-16",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\determinism\\after\\GEN-ECON-16.pdf",
+        "tagCount": 34,
+        "mcids": 40,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Market Equilibrium",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-16",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Market equilibrium occurs where quantity demanded equals quantity supplied. At that price, buyers can purchase the amount they want and sellers can sell the amount they offer, so there is no pressure for price to change. A demand or supply shift creates a new intersection and can change both equilibrium price and equilibrium quantity.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Find the price at which quantity demanded equals quantity supplied.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "On a graph, use the intersection of the demand and supply curves.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "A price below equilibrium creates a shortage; a price above equilibrium creates a surplus.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Report both the equilibrium price and the corresponding equilibrium quantity.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "A common mistake is to call any intersection or stated price an equilibrium. Equilibrium occurs only where quantity demanded equals quantity supplied.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: FINDING MARKET EQUILIBRIUM",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "On the graph, the new demand and supply curves intersect at a price of $5 and quantity of 150 thousand. The intersection is the only point at which quantity demanded equals quantity supplied, so it is the new market equilibrium. A price above $5 would create a surplus, while a price below $5 would create a shortage.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Holding supply constant, which equilibrium outcome follows from an increase in demand?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "8496532c02d196245fe11881a22163022811c1c1b5286574ffa88ae211d65000"
+      }
+    },
+    {
+      "code": "GEN-ECON-18",
+      "inputs": {
+        "source": "a33c5f388cacb77f8921182bef2c9003a7e6ff7ae7dc767c83c7c816cc080d74",
+        "semantics": "edd79b5d1620cbb51ea13e7c981c67451df1d3b793b5e84517b1ec5c1363d14e",
+        "tooling": "49749b7e66135bdb8285b92e4e52376d28de20be213a8e4c4cfa4bfb06953684",
+        "active": "98a43f4f5216dc5b65cb8b028cd66a8ecd10a02a13cc0fbb3decda107cc5c2c6"
+      },
+      "result": "MACHINE_PASS_REVIEW_PENDING",
+      "generation": {
+        "code": "GEN-ECON-18",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-18.pdf",
+        "tagCount": 33,
+        "mcids": 37,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Simultaneous Shifts",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-18",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "When demand and supply shift at the same time, each shift contributes separately to the new equilibrium. Analyze how each change affects price and quantity, then combine the directional effects. If both shifts push one variable in the same direction, that result is determinate; if they push in opposite directions, the result depends on the relative size of the shifts.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Both a demand determinant and a supply determinant change.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "A bicycle endorsement raises demand while higher input costs reduce supply.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Analyze each shift separately before combining its price and quantity effects.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Opposing effects on one variable leave its direction ambiguous unless relative shift sizes are known.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not assume an unchanged price means the market experienced no shifts. A demand increase raises price and quantity, while a supply increase lowers price and raises quantity. Equal price effects can cancel while quantity rises.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: COMBINING DEMAND AND SUPPLY SHIFTS",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "The original curves D0 and S0 intersect at a price of $3 and quantity of 150 thousand. After demand shifts right to D1 and supply shifts left to S1, the new intersection is $5 and the same quantity of 150 thousand. Both shifts raise price; their opposing quantity effects happen to offset in this graph, though quantity would otherwise be ambiguous.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Which pair of market changes is shown when the graph moves from D0/S0 to D1/S1?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "699c0af6c15b20a1837903a42178eb56fbf321de11eb177a08a41c63e2f53556"
+      },
+      "validation": {
+        "code": "GEN-ECON-18",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-18.pdf",
+        "tagCount": 33,
+        "mcids": 37,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Simultaneous Shifts",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-18",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "When demand and supply shift at the same time, each shift contributes separately to the new equilibrium. Analyze how each change affects price and quantity, then combine the directional effects. If both shifts push one variable in the same direction, that result is determinate; if they push in opposite directions, the result depends on the relative size of the shifts.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Both a demand determinant and a supply determinant change.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "A bicycle endorsement raises demand while higher input costs reduce supply.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Analyze each shift separately before combining its price and quantity effects.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Opposing effects on one variable leave its direction ambiguous unless relative shift sizes are known.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not assume an unchanged price means the market experienced no shifts. A demand increase raises price and quantity, while a supply increase lowers price and raises quantity. Equal price effects can cancel while quantity rises.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: COMBINING DEMAND AND SUPPLY SHIFTS",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "The original curves D0 and S0 intersect at a price of $3 and quantity of 150 thousand. After demand shifts right to D1 and supply shifts left to S1, the new intersection is $5 and the same quantity of 150 thousand. Both shifts raise price; their opposing quantity effects happen to offset in this graph, though quantity would otherwise be ambiguous.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Which pair of market changes is shown when the graph moves from D0/S0 to D1/S1?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "699c0af6c15b20a1837903a42178eb56fbf321de11eb177a08a41c63e2f53556",
+        "passed": true,
+        "independentProfile": "ISO 14289-1:2014",
+        "validator": "veraPDF 1.28.2 --flavour ua1",
+        "independentPass": true,
+        "projectErrors": [],
+        "sourceRecordSha256": "a33c5f388cacb77f8921182bef2c9003a7e6ff7ae7dc767c83c7c816cc080d74",
+        "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+        "baselineSha256": "98a43f4f5216dc5b65cb8b028cd66a8ecd10a02a13cc0fbb3decda107cc5c2c6",
+        "resourceSemanticsSha256": "edd79b5d1620cbb51ea13e7c981c67451df1d3b793b5e84517b1ec5c1363d14e",
+        "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\validation\\verapdf.json",
+        "validatorReportSha256": "70b8ed765b9bd5c12de7cff2b151803e1e331da73614d8f218a8b62367237aad",
+        "pageCounts": [
+          1,
+          1
+        ],
+        "geometryEqual": true,
+        "textExact": true,
+        "textWhitespaceOnlyEqual": true,
+        "ownerApprovedWordingOnly": false,
+        "changedPixels": 110,
+        "differenceBounds": [
+          394,
+          875,
+          542,
+          1068
+        ],
+        "renderReview": "PENDING",
+        "assistiveTechnology": "PENDING"
+      },
+      "deterministic": true,
+      "rebuild": {
+        "code": "GEN-ECON-18",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\determinism\\after\\GEN-ECON-18.pdf",
+        "tagCount": 33,
+        "mcids": 37,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Simultaneous Shifts",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-18",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "When demand and supply shift at the same time, each shift contributes separately to the new equilibrium. Analyze how each change affects price and quantity, then combine the directional effects. If both shifts push one variable in the same direction, that result is determinate; if they push in opposite directions, the result depends on the relative size of the shifts.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Both a demand determinant and a supply determinant change.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "A bicycle endorsement raises demand while higher input costs reduce supply.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Analyze each shift separately before combining its price and quantity effects.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Opposing effects on one variable leave its direction ambiguous unless relative shift sizes are known.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not assume an unchanged price means the market experienced no shifts. A demand increase raises price and quantity, while a supply increase lowers price and raises quantity. Equal price effects can cancel while quantity rises.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: COMBINING DEMAND AND SUPPLY SHIFTS",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "The original curves D0 and S0 intersect at a price of $3 and quantity of 150 thousand. After demand shifts right to D1 and supply shifts left to S1, the new intersection is $5 and the same quantity of 150 thousand. Both shifts raise price; their opposing quantity effects happen to offset in this graph, though quantity would otherwise be ambiguous.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Which pair of market changes is shown when the graph moves from D0/S0 to D1/S1?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "699c0af6c15b20a1837903a42178eb56fbf321de11eb177a08a41c63e2f53556"
+      }
+    },
+    {
+      "code": "GEN-ECON-24",
+      "inputs": {
+        "source": "ac6dc5a727ea00819cd4108fe940c46b0905eccf245ef48bacf9e8679650ac9b",
+        "semantics": "e6ace332d7ad6b8160adce6fed0efe24e5a5f2d0a52610a2ec8ab02b964d98b6",
+        "tooling": "49749b7e66135bdb8285b92e4e52376d28de20be213a8e4c4cfa4bfb06953684",
+        "active": "bb4105413ae19879c5f80cdba9dd9f28b5ce5a307cb674c05c2ebe55bad41f42"
+      },
+      "result": "MACHINE_PASS_REVIEW_PENDING",
+      "generation": {
+        "code": "GEN-ECON-24",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-24.pdf",
+        "tagCount": 38,
+        "mcids": 44,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "International Trade: Tariffs",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-24",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Analyze International Trade: Tariffs.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "A tariff is a tax on imported goods that raises the domestic price above the world price. Domestic firms respond by producing more, consumers buy less, and imports fall. Consumers lose surplus, domestic producers gain surplus, and the government collects tariff revenue. The tariff also prevents mutually beneficial trades, creating deadweight loss from excessive domestic production and reduced consumption.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Begin with an importing country whose world price is below the domestic no-trade price.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Add the tariff per unit to the world price to find the tariff-inclusive domestic price.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "At that higher price, read domestic quantity demanded and quantity supplied; imports equal their difference.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Tariff revenue equals the tariff per unit multiplied by the number of units imported.",
+            "node": 21
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 23
+          },
+          {
+            "role": "LBody",
+            "text": "Look for lower consumer surplus, higher producer surplus, government revenue, and deadweight loss from overproduction and underconsumption.",
+            "node": 24
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "Do not treat tariff revenue as full welfare loss. Part of the consumer loss is transferred to producers and government; the production and consumption distortions are net losses.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: FINDING TARIFF REVENUE",
+            "node": 27
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of phone cases and the vertical axis is their price in dollars. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at point e, price $8 and quantity 150 thousand. Horizontal lines mark world price $4 and domestic price with tariff $6. At $4, supply is 50 thousand and demand is 250 thousand; at $6, supply is 100 thousand and demand is 200 thousand.",
+            "node": 28
+          },
+          {
+            "role": "P",
+            "text": "At the $4 world price, domestic quantity demanded is 250 thousand and domestic quantity supplied is 50 thousand, so free-trade imports are 200 thousand. A $2 tariff raises the domestic price to $6; quantity demanded falls to 200 thousand and quantity supplied rises to 100 thousand. Imports fall to 100 thousand, and government tariff revenue is $2 x 100 thousand = $200 thousand.",
+            "node": 29
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 30
+          },
+          {
+            "role": "P",
+            "text": "Which two effects create tariff deadweight loss?",
+            "node": 31
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 32
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 33
+          }
+        ],
+        "visualSource": null,
+        "sha256": "3642c37fdb623bb59d240ad73963c2fd659b9448cdc2cf4c0f024ddd1b565c86"
+      },
+      "validation": {
+        "code": "GEN-ECON-24",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-24.pdf",
+        "tagCount": 38,
+        "mcids": 44,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "International Trade: Tariffs",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-24",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Analyze International Trade: Tariffs.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "A tariff is a tax on imported goods that raises the domestic price above the world price. Domestic firms respond by producing more, consumers buy less, and imports fall. Consumers lose surplus, domestic producers gain surplus, and the government collects tariff revenue. The tariff also prevents mutually beneficial trades, creating deadweight loss from excessive domestic production and reduced consumption.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Begin with an importing country whose world price is below the domestic no-trade price.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Add the tariff per unit to the world price to find the tariff-inclusive domestic price.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "At that higher price, read domestic quantity demanded and quantity supplied; imports equal their difference.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Tariff revenue equals the tariff per unit multiplied by the number of units imported.",
+            "node": 21
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 23
+          },
+          {
+            "role": "LBody",
+            "text": "Look for lower consumer surplus, higher producer surplus, government revenue, and deadweight loss from overproduction and underconsumption.",
+            "node": 24
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "Do not treat tariff revenue as full welfare loss. Part of the consumer loss is transferred to producers and government; the production and consumption distortions are net losses.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: FINDING TARIFF REVENUE",
+            "node": 27
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of phone cases and the vertical axis is their price in dollars. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at point e, price $8 and quantity 150 thousand. Horizontal lines mark world price $4 and domestic price with tariff $6. At $4, supply is 50 thousand and demand is 250 thousand; at $6, supply is 100 thousand and demand is 200 thousand.",
+            "node": 28
+          },
+          {
+            "role": "P",
+            "text": "At the $4 world price, domestic quantity demanded is 250 thousand and domestic quantity supplied is 50 thousand, so free-trade imports are 200 thousand. A $2 tariff raises the domestic price to $6; quantity demanded falls to 200 thousand and quantity supplied rises to 100 thousand. Imports fall to 100 thousand, and government tariff revenue is $2 x 100 thousand = $200 thousand.",
+            "node": 29
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 30
+          },
+          {
+            "role": "P",
+            "text": "Which two effects create tariff deadweight loss?",
+            "node": 31
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 32
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 33
+          }
+        ],
+        "visualSource": null,
+        "sha256": "3642c37fdb623bb59d240ad73963c2fd659b9448cdc2cf4c0f024ddd1b565c86",
+        "passed": true,
+        "independentProfile": "ISO 14289-1:2014",
+        "validator": "veraPDF 1.28.2 --flavour ua1",
+        "independentPass": true,
+        "projectErrors": [],
+        "sourceRecordSha256": "ac6dc5a727ea00819cd4108fe940c46b0905eccf245ef48bacf9e8679650ac9b",
+        "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+        "baselineSha256": "bb4105413ae19879c5f80cdba9dd9f28b5ce5a307cb674c05c2ebe55bad41f42",
+        "resourceSemanticsSha256": "e6ace332d7ad6b8160adce6fed0efe24e5a5f2d0a52610a2ec8ab02b964d98b6",
+        "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\validation\\verapdf.json",
+        "validatorReportSha256": "70b8ed765b9bd5c12de7cff2b151803e1e331da73614d8f218a8b62367237aad",
+        "pageCounts": [
+          1,
+          1
+        ],
+        "geometryEqual": true,
+        "textExact": true,
+        "textWhitespaceOnlyEqual": true,
+        "ownerApprovedWordingOnly": false,
+        "changedPixels": 287,
+        "differenceBounds": [
+          453,
+          1020,
+          536,
+          1026
+        ],
+        "renderReview": "PENDING",
+        "assistiveTechnology": "PENDING"
+      },
+      "deterministic": true,
+      "rebuild": {
+        "code": "GEN-ECON-24",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\determinism\\after\\GEN-ECON-24.pdf",
+        "tagCount": 38,
+        "mcids": 44,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "International Trade: Tariffs",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-24",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Analyze International Trade: Tariffs.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "A tariff is a tax on imported goods that raises the domestic price above the world price. Domestic firms respond by producing more, consumers buy less, and imports fall. Consumers lose surplus, domestic producers gain surplus, and the government collects tariff revenue. The tariff also prevents mutually beneficial trades, creating deadweight loss from excessive domestic production and reduced consumption.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Begin with an importing country whose world price is below the domestic no-trade price.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Add the tariff per unit to the world price to find the tariff-inclusive domestic price.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "At that higher price, read domestic quantity demanded and quantity supplied; imports equal their difference.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Tariff revenue equals the tariff per unit multiplied by the number of units imported.",
+            "node": 21
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 23
+          },
+          {
+            "role": "LBody",
+            "text": "Look for lower consumer surplus, higher producer surplus, government revenue, and deadweight loss from overproduction and underconsumption.",
+            "node": 24
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "Do not treat tariff revenue as full welfare loss. Part of the consumer loss is transferred to producers and government; the production and consumption distortions are net losses.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: FINDING TARIFF REVENUE",
+            "node": 27
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of phone cases and the vertical axis is their price in dollars. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at point e, price $8 and quantity 150 thousand. Horizontal lines mark world price $4 and domestic price with tariff $6. At $4, supply is 50 thousand and demand is 250 thousand; at $6, supply is 100 thousand and demand is 200 thousand.",
+            "node": 28
+          },
+          {
+            "role": "P",
+            "text": "At the $4 world price, domestic quantity demanded is 250 thousand and domestic quantity supplied is 50 thousand, so free-trade imports are 200 thousand. A $2 tariff raises the domestic price to $6; quantity demanded falls to 200 thousand and quantity supplied rises to 100 thousand. Imports fall to 100 thousand, and government tariff revenue is $2 x 100 thousand = $200 thousand.",
+            "node": 29
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 30
+          },
+          {
+            "role": "P",
+            "text": "Which two effects create tariff deadweight loss?",
+            "node": 31
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 32
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 33
+          }
+        ],
+        "visualSource": null,
+        "sha256": "3642c37fdb623bb59d240ad73963c2fd659b9448cdc2cf4c0f024ddd1b565c86"
+      }
+    },
+    {
+      "code": "GEN-ECON-25",
+      "inputs": {
+        "source": "424ce72b75d8846651842a0012698b0a38e9900e05fba9a0984024969287aad8",
+        "semantics": "09950ed002a1d16241ca27d79ba30f9c7e1f9a03a49b008166c93c19c5ed6b4f",
+        "tooling": "49749b7e66135bdb8285b92e4e52376d28de20be213a8e4c4cfa4bfb06953684",
+        "active": "7f33fc8d073172088df56593e880ef1090044da6a01abd263653a13c097e24a2"
+      },
+      "result": "MACHINE_PASS_REVIEW_PENDING",
+      "generation": {
+        "code": "GEN-ECON-25",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-25.pdf",
+        "tagCount": 41,
+        "mcids": 48,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "International Trade: Quotas",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-25",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Analyze International Trade: Quotas.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "An import quota directly limits the quantity of a good that may enter the country. A binding quota reduces imports below their free-trade level, raises the domestic price, increases domestic production, and reduces domestic consumption. The price gap between the domestic quota price and the world price creates quota rent. Who receives that rent affects the country's national-surplus result, while the production and consumption distortions create deadweight loss.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Begin with the free-trade outcome at the world price.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "A binding import quota limits imports below their free-trade quantity.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "The restriction raises domestic price, increases domestic production, and reduces domestic consumption.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "The gap between the quota price and world price creates quota rent on each permitted import.",
+            "node": 21
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 23
+          },
+          {
+            "role": "LBody",
+            "text": "Look for deadweight loss from excessive domestic production and reduced consumption.",
+            "node": 24
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "Do not assume quota rent automatically becomes government revenue. It accrues to whoever holds the import rights; auctioning those rights can transfer the rent to government. The recipient matters for national welfare, while production and consumption distortions create deadweight loss.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: QUOTA PRICE AND IMPORTS",
+            "node": 27
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of phone cases and the vertical axis is their price in dollars. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at price $7 and quantity 175 thousand. Horizontal lines mark world price $3 and domestic price under quota $6. At $3, supply is 75 thousand and demand is 275 thousand; at $6, supply is 150 thousand and demand is 200 thousand.",
+            "node": 28
+          },
+          {
+            "role": "P",
+            "text": "Before trade, domestic supply and demand intersect at a price of $7. With free trade, buyers can purchase at the $3 world price, which creates imports. The quota limits imports, so the domestic price rises to $6. The difference between the $6 quota price and the $3 world price is $3 per imported unit; that $3 gap is quota rent.",
+            "node": 29
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 30
+          },
+          {
+            "role": "P",
+            "text": "A student says equivalent tariffs and quotas remain identical after demand changes. What is the key difference?",
+            "node": 31
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 32
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 33
+          }
+        ],
+        "visualSource": null,
+        "sha256": "5e78c9897f3c7ce527d29e2cc23e5237aa4603443b9d7f2963354ac27cd71c30"
+      },
+      "validation": {
+        "code": "GEN-ECON-25",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-25.pdf",
+        "tagCount": 41,
+        "mcids": 48,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "International Trade: Quotas",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-25",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Analyze International Trade: Quotas.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "An import quota directly limits the quantity of a good that may enter the country. A binding quota reduces imports below their free-trade level, raises the domestic price, increases domestic production, and reduces domestic consumption. The price gap between the domestic quota price and the world price creates quota rent. Who receives that rent affects the country's national-surplus result, while the production and consumption distortions create deadweight loss.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Begin with the free-trade outcome at the world price.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "A binding import quota limits imports below their free-trade quantity.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "The restriction raises domestic price, increases domestic production, and reduces domestic consumption.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "The gap between the quota price and world price creates quota rent on each permitted import.",
+            "node": 21
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 23
+          },
+          {
+            "role": "LBody",
+            "text": "Look for deadweight loss from excessive domestic production and reduced consumption.",
+            "node": 24
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "Do not assume quota rent automatically becomes government revenue. It accrues to whoever holds the import rights; auctioning those rights can transfer the rent to government. The recipient matters for national welfare, while production and consumption distortions create deadweight loss.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: QUOTA PRICE AND IMPORTS",
+            "node": 27
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of phone cases and the vertical axis is their price in dollars. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at price $7 and quantity 175 thousand. Horizontal lines mark world price $3 and domestic price under quota $6. At $3, supply is 75 thousand and demand is 275 thousand; at $6, supply is 150 thousand and demand is 200 thousand.",
+            "node": 28
+          },
+          {
+            "role": "P",
+            "text": "Before trade, domestic supply and demand intersect at a price of $7. With free trade, buyers can purchase at the $3 world price, which creates imports. The quota limits imports, so the domestic price rises to $6. The difference between the $6 quota price and the $3 world price is $3 per imported unit; that $3 gap is quota rent.",
+            "node": 29
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 30
+          },
+          {
+            "role": "P",
+            "text": "A student says equivalent tariffs and quotas remain identical after demand changes. What is the key difference?",
+            "node": 31
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 32
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 33
+          }
+        ],
+        "visualSource": null,
+        "sha256": "5e78c9897f3c7ce527d29e2cc23e5237aa4603443b9d7f2963354ac27cd71c30",
+        "passed": true,
+        "independentProfile": "ISO 14289-1:2014",
+        "validator": "veraPDF 1.28.2 --flavour ua1",
+        "independentPass": true,
+        "projectErrors": [],
+        "sourceRecordSha256": "424ce72b75d8846651842a0012698b0a38e9900e05fba9a0984024969287aad8",
+        "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+        "baselineSha256": "7f33fc8d073172088df56593e880ef1090044da6a01abd263653a13c097e24a2",
+        "resourceSemanticsSha256": "09950ed002a1d16241ca27d79ba30f9c7e1f9a03a49b008166c93c19c5ed6b4f",
+        "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\validation\\verapdf.json",
+        "validatorReportSha256": "70b8ed765b9bd5c12de7cff2b151803e1e331da73614d8f218a8b62367237aad",
+        "pageCounts": [
+          1,
+          1
+        ],
+        "geometryEqual": true,
+        "textExact": true,
+        "textWhitespaceOnlyEqual": true,
+        "ownerApprovedWordingOnly": false,
+        "changedPixels": 130,
+        "differenceBounds": [
+          501,
+          1057,
+          536,
+          1063
+        ],
+        "renderReview": "PENDING",
+        "assistiveTechnology": "PENDING"
+      },
+      "deterministic": true,
+      "rebuild": {
+        "code": "GEN-ECON-25",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\determinism\\after\\GEN-ECON-25.pdf",
+        "tagCount": 41,
+        "mcids": 48,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "International Trade: Quotas",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "GENERAL ECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "GEN-ECON-25",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Analyze International Trade: Quotas.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Beginner",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "An import quota directly limits the quantity of a good that may enter the country. A binding quota reduces imports below their free-trade level, raises the domestic price, increases domestic production, and reduces domestic consumption. The price gap between the domestic quota price and the world price creates quota rent. Who receives that rent affects the country's national-surplus result, while the production and consumption distortions create deadweight loss.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Begin with the free-trade outcome at the world price.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "A binding import quota limits imports below their free-trade quantity.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "The restriction raises domestic price, increases domestic production, and reduces domestic consumption.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "The gap between the quota price and world price creates quota rent on each permitted import.",
+            "node": 21
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 23
+          },
+          {
+            "role": "LBody",
+            "text": "Look for deadweight loss from excessive domestic production and reduced consumption.",
+            "node": 24
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "Do not assume quota rent automatically becomes government revenue. It accrues to whoever holds the import rights; auctioning those rights can transfer the rent to government. The recipient matters for national welfare, while production and consumption distortions create deadweight loss.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: QUOTA PRICE AND IMPORTS",
+            "node": 27
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is quantity of phone cases and the vertical axis is their price in dollars. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at price $7 and quantity 175 thousand. Horizontal lines mark world price $3 and domestic price under quota $6. At $3, supply is 75 thousand and demand is 275 thousand; at $6, supply is 150 thousand and demand is 200 thousand.",
+            "node": 28
+          },
+          {
+            "role": "P",
+            "text": "Before trade, domestic supply and demand intersect at a price of $7. With free trade, buyers can purchase at the $3 world price, which creates imports. The quota limits imports, so the domestic price rises to $6. The difference between the $6 quota price and the $3 world price is $3 per imported unit; that $3 gap is quota rent.",
+            "node": 29
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 30
+          },
+          {
+            "role": "P",
+            "text": "A student says equivalent tariffs and quotas remain identical after demand changes. What is the key difference?",
+            "node": 31
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 32
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 33
+          }
+        ],
+        "visualSource": null,
+        "sha256": "5e78c9897f3c7ce527d29e2cc23e5237aa4603443b9d7f2963354ac27cd71c30"
+      }
+    },
+    {
+      "code": "MACRO-30",
+      "inputs": {
+        "source": "f0ffdadd44c48f10ac091802d8c014e3d617ab120cea2de7fa33dfc3e17a05f5",
+        "semantics": "8826a72b88a7a481ef07ffd3260fdecefb2baa5033cb94be7d8294180baafd1d",
+        "tooling": "49749b7e66135bdb8285b92e4e52376d28de20be213a8e4c4cfa4bfb06953684",
+        "active": "34052024c1c5d3640f3e3dfb48f551d2f9efdf0d8559bcead9ff34ddcd2785bc"
+      },
+      "result": "MACHINE_PASS_REVIEW_PENDING",
+      "generation": {
+        "code": "MACRO-30",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\MACRO-30.pdf",
+        "tagCount": 31,
+        "mcids": 28,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "NO_INLINE_EXPRESSIONS_SELECTED",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Fiscal Policy and Aggregate Demand",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "MACROECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "MACRO-30",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Trace government purchases and taxes into aggregate demand.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Intermediate",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Fiscal policy shifts aggregate demand through changes in government purchases, taxes, and their effects on consumption. Lower purchases and higher taxes both push aggregate demand left. After the first-round spending change, the multiplier process traces additional income-consumption rounds; crowding out can then reduce the net effect. A tax cut raises disposable income, which can increase consumption and shift AD right.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Higher government purchases directly raise aggregate demand; lower purchases reduce it.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Tax changes affect aggregate demand indirectly by changing disposable income and consumption.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Expansionary fiscal policy shifts aggregate demand right; contractionary policy shifts it left.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Distinguish a shift of aggregate demand from a movement along the curve caused by the price level.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "A common mistake is to classify fiscal policy from the economy's condition rather than the government's action. Higher purchases or lower taxes are expansionary; lower purchases or higher taxes are contractionary.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: SHIFTING AGGREGATE DEMAND",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "At the displayed price level P, an expansionary fiscal action shifts aggregate demand from AD1 to AD2. Real output demanded rises from Y1 to Y2 at that fixed price level. A larger action could shift demand to AD3 and quantity demanded to Y3, but the graph does not establish which package is desirable; that depends on the output gap and timing.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Why can a tax cut shift aggregate demand to the right in the short run?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "5a64bd49c0a2d34a3cb70fb8cf98fdcabfdd30cd523cc91247bc2bdc040a9473"
+      },
+      "validation": {
+        "code": "MACRO-30",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\MACRO-30.pdf",
+        "tagCount": 31,
+        "mcids": 28,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "NO_INLINE_EXPRESSIONS_SELECTED",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Fiscal Policy and Aggregate Demand",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "MACROECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "MACRO-30",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Trace government purchases and taxes into aggregate demand.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Intermediate",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Fiscal policy shifts aggregate demand through changes in government purchases, taxes, and their effects on consumption. Lower purchases and higher taxes both push aggregate demand left. After the first-round spending change, the multiplier process traces additional income-consumption rounds; crowding out can then reduce the net effect. A tax cut raises disposable income, which can increase consumption and shift AD right.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Higher government purchases directly raise aggregate demand; lower purchases reduce it.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Tax changes affect aggregate demand indirectly by changing disposable income and consumption.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Expansionary fiscal policy shifts aggregate demand right; contractionary policy shifts it left.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Distinguish a shift of aggregate demand from a movement along the curve caused by the price level.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "A common mistake is to classify fiscal policy from the economy's condition rather than the government's action. Higher purchases or lower taxes are expansionary; lower purchases or higher taxes are contractionary.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: SHIFTING AGGREGATE DEMAND",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "At the displayed price level P, an expansionary fiscal action shifts aggregate demand from AD1 to AD2. Real output demanded rises from Y1 to Y2 at that fixed price level. A larger action could shift demand to AD3 and quantity demanded to Y3, but the graph does not establish which package is desirable; that depends on the output gap and timing.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Why can a tax cut shift aggregate demand to the right in the short run?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "5a64bd49c0a2d34a3cb70fb8cf98fdcabfdd30cd523cc91247bc2bdc040a9473",
+        "passed": true,
+        "independentProfile": "ISO 14289-1:2014",
+        "validator": "veraPDF 1.28.2 --flavour ua1",
+        "independentPass": true,
+        "projectErrors": [],
+        "sourceRecordSha256": "f0ffdadd44c48f10ac091802d8c014e3d617ab120cea2de7fa33dfc3e17a05f5",
+        "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+        "baselineSha256": "34052024c1c5d3640f3e3dfb48f551d2f9efdf0d8559bcead9ff34ddcd2785bc",
+        "resourceSemanticsSha256": "8826a72b88a7a481ef07ffd3260fdecefb2baa5033cb94be7d8294180baafd1d",
+        "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\validation\\verapdf.json",
+        "validatorReportSha256": "70b8ed765b9bd5c12de7cff2b151803e1e331da73614d8f218a8b62367237aad",
+        "pageCounts": [
+          1,
+          1
+        ],
+        "geometryEqual": true,
+        "textExact": true,
+        "textWhitespaceOnlyEqual": true,
+        "ownerApprovedWordingOnly": false,
+        "changedPixels": 849,
+        "differenceBounds": [
+          400,
+          923,
+          535,
+          1081
+        ],
+        "renderReview": "PENDING",
+        "assistiveTechnology": "PENDING"
+      },
+      "deterministic": true,
+      "rebuild": {
+        "code": "MACRO-30",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\determinism\\after\\MACRO-30.pdf",
+        "tagCount": 31,
+        "mcids": 28,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "NO_INLINE_EXPRESSIONS_SELECTED",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Fiscal Policy and Aggregate Demand",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "MACROECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "MACRO-30",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Trace government purchases and taxes into aggregate demand.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Intermediate",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Fiscal policy shifts aggregate demand through changes in government purchases, taxes, and their effects on consumption. Lower purchases and higher taxes both push aggregate demand left. After the first-round spending change, the multiplier process traces additional income-consumption rounds; crowding out can then reduce the net effect. A tax cut raises disposable income, which can increase consumption and shift AD right.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Higher government purchases directly raise aggregate demand; lower purchases reduce it.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Tax changes affect aggregate demand indirectly by changing disposable income and consumption.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Expansionary fiscal policy shifts aggregate demand right; contractionary policy shifts it left.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Distinguish a shift of aggregate demand from a movement along the curve caused by the price level.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "A common mistake is to classify fiscal policy from the economy's condition rather than the government's action. Higher purchases or lower taxes are expansionary; lower purchases or higher taxes are contractionary.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: SHIFTING AGGREGATE DEMAND",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "At the displayed price level P, an expansionary fiscal action shifts aggregate demand from AD1 to AD2. Real output demanded rises from Y1 to Y2 at that fixed price level. A larger action could shift demand to AD3 and quantity demanded to Y3, but the graph does not establish which package is desirable; that depends on the output gap and timing.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Why can a tax cut shift aggregate demand to the right in the short run?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "5a64bd49c0a2d34a3cb70fb8cf98fdcabfdd30cd523cc91247bc2bdc040a9473"
+      }
+    },
+    {
+      "code": "MACRO-31",
+      "inputs": {
+        "source": "2977a867e9db32522b4e9a65cd48befdc59c8441c29a2caee527caaae975a028",
+        "semantics": "99cf1d9415d68b082e5483ccb23b8417939228dae5bfef61b1b578e903fe76b9",
+        "tooling": "49749b7e66135bdb8285b92e4e52376d28de20be213a8e4c4cfa4bfb06953684",
+        "active": "b74607f146518d505b4a648c37694fcec9f591b57fd1840cfe5df71360e4eb0c"
+      },
+      "result": "MACHINE_PASS_REVIEW_PENDING",
+      "generation": {
+        "code": "MACRO-31",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\MACRO-31.pdf",
+        "tagCount": 36,
+        "mcids": 46,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Fiscal Multipliers and Crowding Out",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "MACROECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "MACRO-31",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Calculate multiplier effects and evaluate crowding out.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Intermediate",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "A spending or tax change can create a multiplied demand response, while higher interest rates can crowd out part of the expansion. Fiscal policy can shift AD right, the multiplier can push it farther, and crowding out can pull the final effect back. Crowding out offsets fiscal expansion by reducing private investment when interest rates rise. Crowding out reduces private investment when fiscal expansion raises interest rates. In the simple fixed-price model with lump-sum taxes and no import leakage, the spending multiplier is 1 / (1 - MPC), and the tax multiplier is -MPC / (1 - MPC).",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Initial fiscal shift, multiplier expansion, then crowding out offset.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Crowding out offsets fiscal expansion by reducing private investment when interest rates rise.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Crowding out reduces private investment when fiscal expansion raises interest rates.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Crowding out occurs when higher interest rates reduce private investment spending.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "A common mistake is to report a gross multiplier effect without subtracting private spending displaced by higher interest rates. Crowding out makes the net demand increase smaller.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: MULTIPLIER VERSUS CROWDING OUT",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "With MPC = 0.8, the simple spending multiplier is 5. A $20 billion increase in purchases raises demand by $100 billion before offsets. In the graph, AD1 to AD3 is the gross expansion; crowding out leaves AD2. At fixed P, real output demanded rises to Y2 rather than Y3. Actual equilibrium output also depends on aggregate supply.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Why might a tax cut have a smaller immediate effect than an equal increase in government purchases?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "b9093d63bdc9a9f23135d9adf4a39dab6fb334e85590d5103968e31b969d31ff"
+      },
+      "validation": {
+        "code": "MACRO-31",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\MACRO-31.pdf",
+        "tagCount": 36,
+        "mcids": 46,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Fiscal Multipliers and Crowding Out",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "MACROECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "MACRO-31",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Calculate multiplier effects and evaluate crowding out.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Intermediate",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "A spending or tax change can create a multiplied demand response, while higher interest rates can crowd out part of the expansion. Fiscal policy can shift AD right, the multiplier can push it farther, and crowding out can pull the final effect back. Crowding out offsets fiscal expansion by reducing private investment when interest rates rise. Crowding out reduces private investment when fiscal expansion raises interest rates. In the simple fixed-price model with lump-sum taxes and no import leakage, the spending multiplier is 1 / (1 - MPC), and the tax multiplier is -MPC / (1 - MPC).",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Initial fiscal shift, multiplier expansion, then crowding out offset.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Crowding out offsets fiscal expansion by reducing private investment when interest rates rise.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Crowding out reduces private investment when fiscal expansion raises interest rates.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Crowding out occurs when higher interest rates reduce private investment spending.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "A common mistake is to report a gross multiplier effect without subtracting private spending displaced by higher interest rates. Crowding out makes the net demand increase smaller.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: MULTIPLIER VERSUS CROWDING OUT",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "With MPC = 0.8, the simple spending multiplier is 5. A $20 billion increase in purchases raises demand by $100 billion before offsets. In the graph, AD1 to AD3 is the gross expansion; crowding out leaves AD2. At fixed P, real output demanded rises to Y2 rather than Y3. Actual equilibrium output also depends on aggregate supply.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Why might a tax cut have a smaller immediate effect than an equal increase in government purchases?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "b9093d63bdc9a9f23135d9adf4a39dab6fb334e85590d5103968e31b969d31ff",
+        "passed": true,
+        "independentProfile": "ISO 14289-1:2014",
+        "validator": "veraPDF 1.28.2 --flavour ua1",
+        "independentPass": true,
+        "projectErrors": [],
+        "sourceRecordSha256": "2977a867e9db32522b4e9a65cd48befdc59c8441c29a2caee527caaae975a028",
+        "semanticsSha256": "f03e9c28b118a2906003fdb971c7d8d38f63cc5235173e16e0fe9c791b7a278c",
+        "baselineSha256": "b74607f146518d505b4a648c37694fcec9f591b57fd1840cfe5df71360e4eb0c",
+        "resourceSemanticsSha256": "99cf1d9415d68b082e5483ccb23b8417939228dae5bfef61b1b578e903fe76b9",
+        "validatorReport": "validation_artifacts\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\validation\\verapdf.json",
+        "validatorReportSha256": "70b8ed765b9bd5c12de7cff2b151803e1e331da73614d8f218a8b62367237aad",
+        "pageCounts": [
+          1,
+          1
+        ],
+        "geometryEqual": true,
+        "textExact": true,
+        "textWhitespaceOnlyEqual": true,
+        "ownerApprovedWordingOnly": false,
+        "changedPixels": 739,
+        "differenceBounds": [
+          402,
+          928,
+          526,
+          1074
+        ],
+        "renderReview": "PENDING",
+        "assistiveTechnology": "PENDING"
+      },
+      "deterministic": true,
+      "rebuild": {
+        "code": "MACRO-31",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\determinism\\after\\MACRO-31.pdf",
+        "tagCount": 36,
+        "mcids": 46,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "Fiscal Multipliers and Crowding Out",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "MACROECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "MACRO-31",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 5 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Calculate multiplier effects and evaluate crowding out.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Intermediate",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "A spending or tax change can create a multiplied demand response, while higher interest rates can crowd out part of the expansion. Fiscal policy can shift AD right, the multiplier can push it farther, and crowding out can pull the final effect back. Crowding out offsets fiscal expansion by reducing private investment when interest rates rise. Crowding out reduces private investment when fiscal expansion raises interest rates. In the simple fixed-price model with lump-sum taxes and no import leakage, the spending multiplier is 1 / (1 - MPC), and the tax multiplier is -MPC / (1 - MPC).",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Initial fiscal shift, multiplier expansion, then crowding out offset.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "Crowding out offsets fiscal expansion by reducing private investment when interest rates rise.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "Crowding out reduces private investment when fiscal expansion raises interest rates.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "•",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "Crowding out occurs when higher interest rates reduce private investment spending.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "A common mistake is to report a gross multiplier effect without subtracting private spending displaced by higher interest rates. Crowding out makes the net demand increase smaller.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: MULTIPLIER VERSUS CROWDING OUT",
+            "node": 24
+          },
+          {
+            "role": "Figure",
+            "text": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+            "node": 25
+          },
+          {
+            "role": "P",
+            "text": "With MPC = 0.8, the simple spending multiplier is 5. A $20 billion increase in purchases raises demand by $100 billion before offsets. In the graph, AD1 to AD3 is the gross expansion; crowding out leaves AD2. At fixed P, real output demanded rises to Y2 rather than Y3. Actual equilibrium output also depends on aggregate supply.",
+            "node": 26
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 27
+          },
+          {
+            "role": "P",
+            "text": "Why might a tax cut have a smaller immediate effect than an equal increase in government purchases?",
+            "node": 28
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 29
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 30
+          }
+        ],
+        "visualSource": null,
+        "sha256": "b9093d63bdc9a9f23135d9adf4a39dab6fb334e85590d5103968e31b969d31ff"
+      }
+    }
+  ],
+  "machinePass": 8,
+  "blocked": 0,
+  "complete": true
+}
