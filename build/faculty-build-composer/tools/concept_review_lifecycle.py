@@ -27,8 +27,13 @@ def generate_selected(composer_root, output_dir, codes, publish=False):
         raise ValueError('Explicit review codes required; implicit library batches are disabled')
     from rebuild_pilot import build
     from validate_candidates import validate
+    output_dir=contained(output_dir)
+    staging=contained('tmp/pdf_accessibility')
+    if not output_dir.is_relative_to(staging) or output_dir==staging:
+        raise ValueError('A task-specific accessibility staging directory is required')
+    evidence=contained('validation_artifacts/pdf_accessibility')/output_dir.relative_to(staging)/'validation'
     rows=build(output_dir,codes)
     if any(r['status']=='REJECTED' for r in rows):raise ValueError('Rejected candidate; active copies unchanged')
-    result=validate(rows,contained(output_dir)/'validation')
+    result=validate(rows,contained(evidence))
     if not all(r['passed'] for r in result):raise ValueError('Accessibility validation failed; active copies unchanged')
     return result

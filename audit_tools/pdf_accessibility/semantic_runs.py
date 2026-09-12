@@ -34,7 +34,7 @@ def plan_runs(nodes, ranges, shows, formulas):
     """Return each text-show's byte slices and semantic owner in source order."""
     plans={}; matched=set()
     for ni,item in enumerate(list(nodes)):
-        if item['role'] not in ('P','LBody') or not item['text']: continue
+        if item['role'] not in ('P','LBody','H1','H2','H3') or not item['text']: continue
         relevant=[(j,raw,text) for start,end,owner in ranges if owner==ni
                   for j,(raw,text) in shows.items() if start<=j<=end]
         relevant.sort()
@@ -42,6 +42,7 @@ def plan_runs(nodes, ranges, shows, formulas):
         if flat!=compact(item['text']): raise ValueError('Run decoding differs from canonical paragraph')
         selected=[]
         for fi,formula in enumerate(formulas):
+            if formula.get('sourceField') and item.get('sourceField')!=formula['sourceField']:continue
             if formula['paragraph']!=item['text']: continue
             target=compact(formula['text']); start=formula['compactStart']; end=start+len(target)
             if flat[start:end]!=target: raise ValueError('Stale inline Formula selector')

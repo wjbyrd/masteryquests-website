@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "htmlTargets": 16,
+  "games": 14,
+  "templates": 2,
+  "checks": [
+    "syntax",
+    "save-resume",
+    "legacy save migration",
+    "double-score lifecycle",
+    "elapsed/offline/hidden time",
+    "completion freeze",
+    "mode isolation",
+    "media",
+    "mastery wording",
+    "artwork",
+    "realm re-entry",
+    "audits",
+    "Micro exclusions"
+  ]
+}

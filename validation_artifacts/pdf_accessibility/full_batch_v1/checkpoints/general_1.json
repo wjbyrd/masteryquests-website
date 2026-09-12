@@ -1,0 +1,1073 @@
+{
+  "task": "PDF_ACCESSIBILITY_FULL_BATCH_V1",
+  "batch": "general_1",
+  "documentIds": [
+    "GEN-ECON-01",
+    "GEN-ECON-02",
+    "GEN-ECON-03",
+    "GEN-ECON-04",
+    "GEN-ECON-05",
+    "GEN-ECON-06",
+    "GEN-ECON-07",
+    "GEN-ECON-08",
+    "GEN-ECON-09",
+    "GEN-ECON-10",
+    "GEN-ECON-11",
+    "GEN-ECON-12",
+    "GEN-ECON-13",
+    "GEN-ECON-14",
+    "GEN-ECON-15",
+    "GEN-ECON-16",
+    "GEN-ECON-17",
+    "GEN-ECON-18",
+    "GEN-ECON-19",
+    "GEN-ECON-20"
+  ],
+  "pass": 16,
+  "blocked": 4,
+  "records": [
+    {
+      "code": "GEN-ECON-01",
+      "title": "Scarcity",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-01\\after\\GEN-ECON-01.pdf",
+      "sha256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-01\\verapdf.json",
+      "validatorReportSha256": "59a0028559c54fe51702deca474297221a7b2dc082b23f1c44525e077ff45e21",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "cd4d204de198602f0946aa0b516f4be8ee8c6198d9fe4dfa2965544ccbecb2bd",
+      "resourceSemanticsSha256": "d162be2be00cf6f119c08d6bf76378950890634fbf830b3d7163d9334dffc2e6",
+      "publicTarget": "concept-reviews/GEN-ECON-01.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-01.pdf",
+      "plannedManifest": {
+        "oldSha256": "5dac31da45408511293b60b66179929fb18371c26668304d792921528881e332",
+        "sha256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+        "sizeBytes": 367465,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-02",
+      "title": "Incentives",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-02\\after\\GEN-ECON-02.pdf",
+      "sha256": "e63e333c15907fa5f159d9455fd59a3ce8339056b2af751e088bcc62f56297a8",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-02\\verapdf.json",
+      "validatorReportSha256": "860956c7eacd320bbda242b0a605b0b17ecf7bc73aa7f2a65f01ab3783c964bf",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 4,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "3d36040d8a27019b12dc1365e1f60e7b63265d043daff846ecb27306d7e37046",
+      "resourceSemanticsSha256": "ddd93e481f4ae661df680f516965d45932025254f3fd9c579e3b99cdbe5bc3c5",
+      "publicTarget": "concept-reviews/GEN-ECON-02.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-02.pdf",
+      "plannedManifest": {
+        "oldSha256": "8ed871121c684a6b04f89b2d9e1324853a33d5339999bb6fc88cd66f2103b6fd",
+        "sha256": "e63e333c15907fa5f159d9455fd59a3ce8339056b2af751e088bcc62f56297a8",
+        "sizeBytes": 370109,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-03",
+      "title": "Opportunity Cost",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-03\\after\\GEN-ECON-03.pdf",
+      "sha256": "401531b7c34aa73a37e3d8ac5c8eb8106c769605bac590293fe0ac7308b39f8d",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-03\\verapdf.json",
+      "validatorReportSha256": "1ab1ade206bdf13880d03fb7bd8f0c6b71e17841fca6ec934c72e74806ae1fc6",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 7,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "75c0d2fef28c3bc1834aebaa19c92b5c84741cb8d3c5212554fb2cb79ff4d4f2",
+      "resourceSemanticsSha256": "219c41b76d5a83e433f4c1c654d95a52b944dda5322658eccabde27553a12980",
+      "publicTarget": "concept-reviews/GEN-ECON-03.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-03.pdf",
+      "plannedManifest": {
+        "oldSha256": "b6b15c6e6d33a281c1711dadc75a60d829be215455fd31d5bb8e0b405d1a48cb",
+        "sha256": "401531b7c34aa73a37e3d8ac5c8eb8106c769605bac590293fe0ac7308b39f8d",
+        "sizeBytes": 369453,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-04",
+      "title": "Marginal Analysis",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-04\\after\\GEN-ECON-04.pdf",
+      "sha256": "ac0cd3d0de042ac8a99a5b63ea2bea6a0f7a59f7b4758163fc132cff5c9a7544",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-04\\verapdf.json",
+      "validatorReportSha256": "f53617e7568809872b610f53b0e54f975180c4e0f116f5779b42717db01d04ed",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 7,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "56e116d97bbb46563de5884fd73c7387536240ba47fb46cbb1039c220f064ab2",
+      "resourceSemanticsSha256": "5e2162cc834027b7cda464aca04657f4532a00d5794c8d0042da8b84ac1c0a48",
+      "publicTarget": "concept-reviews/GEN-ECON-04.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-04.pdf",
+      "plannedManifest": {
+        "oldSha256": "ce7dfb70af10d71533c32938623b7c9caea606f7f75ed8ae1dbc74f94737d6b1",
+        "sha256": "ac0cd3d0de042ac8a99a5b63ea2bea6a0f7a59f7b4758163fc132cff5c9a7544",
+        "sizeBytes": 369614,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-05",
+      "title": "Microeconomics vs. Macroeconomics",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-05\\after\\GEN-ECON-05.pdf",
+      "sha256": "d18b8d93a173646b2b750944055ed5c101a7e8631bae2b7dc35d79357b0e614f",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-05\\verapdf.json",
+      "validatorReportSha256": "191fdb963add95a867c8bd10abd07ef73ab9cf68718c0388139b591751b0c7fc",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "aff8ec14c55453ffa6eb3b6a94561e33ded64bf2fef0de99290babf41055a780",
+      "resourceSemanticsSha256": "271f0e94b524039089293b3a5718ae3aba4e8ab90a4efd00f3c4305f2b900368",
+      "publicTarget": "concept-reviews/GEN-ECON-05.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-05.pdf",
+      "plannedManifest": {
+        "oldSha256": "ffa72935cde20fb5505ca58ce647f855891adb858a3ba905b42480135b875969",
+        "sha256": "d18b8d93a173646b2b750944055ed5c101a7e8631bae2b7dc35d79357b0e614f",
+        "sizeBytes": 368579,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-06",
+      "title": "Positive vs. Normative Analysis",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-06\\after\\GEN-ECON-06.pdf",
+      "sha256": "c431110e559b4806ac0d941d4896dd8f51e9895c0a22848e7f9a81b5490008b8",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-06\\verapdf.json",
+      "validatorReportSha256": "d32cdfc44dadca79ae12d8103664dcf8fe950272fa825b8ca6be2db83df5e0bd",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "c1895f55fb3479cdf86b467e48431684bee3281465440c1e5679a3137b2cb395",
+      "resourceSemanticsSha256": "857805ec8958cd050c0595adb3f57c722ce1da5db0fc67233ac71350b5023513",
+      "publicTarget": "concept-reviews/GEN-ECON-06.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-06.pdf",
+      "plannedManifest": {
+        "oldSha256": "db96e0a69e9da76542064c64ae30d0b5817fb256a702f4b4c3501c4cd2c45205",
+        "sha256": "c431110e559b4806ac0d941d4896dd8f51e9895c0a22848e7f9a81b5490008b8",
+        "sizeBytes": 367511,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-07",
+      "title": "Models and Assumptions",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-07\\after\\GEN-ECON-07.pdf",
+      "sha256": "ae201b24fb4ecfd91e7f32201e86a8054f7a390f0116aea106399ebd40fac45d",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-07\\verapdf.json",
+      "validatorReportSha256": "669bf6550b7448f1aab65789b4699ee86685743e9fb2225924e94a6cd04e737d",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "26a76e22a1c6fba27424a7be31293b39dc0782a3738806b34afad26ebc4d9595",
+      "resourceSemanticsSha256": "3b15eefd04fb8e50457d629edcb3dcca3c51ee130a466837575a50cd01e8227a",
+      "publicTarget": "concept-reviews/GEN-ECON-07.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-07.pdf",
+      "plannedManifest": {
+        "oldSha256": "40dd71c284a0dfa52b82aba73bbe8781b448406429e70caa7ae1d4c214dd1bc8",
+        "sha256": "ae201b24fb4ecfd91e7f32201e86a8054f7a390f0116aea106399ebd40fac45d",
+        "sizeBytes": 368686,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-08",
+      "title": "Production Possibilities Frontier (PPF)",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-08\\after\\GEN-ECON-08.pdf",
+      "sha256": "164466c1355fe8c0fea4f763243edb08e248b199c4e571476971b1974f166f63",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-08\\verapdf.json",
+      "validatorReportSha256": "cdadc838441e44e2c81e0be3ec27282a6dc2663be0d880da6bca1279e811a8d8",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 1,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "3382ccce25a5ef88122020a9a0ba7a247c403fd7d7217a7d3e5e7bdb26917c1c",
+      "resourceSemanticsSha256": "19a87914e9960101c7683fced4b2b7630fa92b900122a393bdaf9acb9ddd58bb",
+      "publicTarget": "concept-reviews/GEN-ECON-08.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-08.pdf",
+      "plannedManifest": {
+        "oldSha256": "a4cdead63aefb1a883353a1186bd89071953976847db027db99e785c1e349967",
+        "sha256": "164466c1355fe8c0fea4f763243edb08e248b199c4e571476971b1974f166f63",
+        "sizeBytes": 621139,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-09",
+      "title": "Comparative Advantage and Gains from Trade",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-09\\after\\GEN-ECON-09.pdf",
+      "sha256": "9f1d47675e379a1b218a55f95acda87a09ccb867d1882893d563212a0f3267ad",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-09\\verapdf.json",
+      "validatorReportSha256": "48eee185bbe1083f3ec524d7256eae9896e9faa29b4635189fb0caf88e90ff5e",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 4,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "24de7dd6812f37f504b0a28371f50683b0343b7948659046390de69b0b99e378",
+      "resourceSemanticsSha256": "b3816a600ea9359b71fe62a11019eab5054511aff5b11ec8b8f1653ba29cf62d",
+      "publicTarget": "concept-reviews/GEN-ECON-09.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-09.pdf",
+      "plannedManifest": {
+        "oldSha256": "9d5940f42216ea2399aaa3ea4721289e407c358c794784cb7a16840695e0bb83",
+        "sha256": "9f1d47675e379a1b218a55f95acda87a09ccb867d1882893d563212a0f3267ad",
+        "sizeBytes": 370247,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-10",
+      "title": "Economists and Policy",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-10\\after\\GEN-ECON-10.pdf",
+      "sha256": "50e61c64134739bc2eabec6da204495144d92e36a15f6e973b6e8d92695af5a3",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-10\\verapdf.json",
+      "validatorReportSha256": "26f483d9750fdc7d517b6c2a007abdfd38cfb3790aaa1cfb16d118c5e6ea702d",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 1,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "87365f62e46dfac28147271dfc587f34f128d59d447b9c9d80df45e45d79777a",
+      "resourceSemanticsSha256": "3c9bbd1cc2b33447f4249118082960365a3c81885b2cea06f8686f21fb1446c8",
+      "publicTarget": "concept-reviews/GEN-ECON-10.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-10.pdf",
+      "plannedManifest": {
+        "oldSha256": "7de5e5caba8749f23c230db0c80dcb9050d7e34286b2661d6852b39e477d6056",
+        "sha256": "50e61c64134739bc2eabec6da204495144d92e36a15f6e973b6e8d92695af5a3",
+        "sizeBytes": 369414,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-11",
+      "title": "Competitive Markets",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-11\\after\\GEN-ECON-11.pdf",
+      "sha256": "2fa0511ee13165b8c00147387b180a277633277fa235863a2db706af2bfee970",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-11\\verapdf.json",
+      "validatorReportSha256": "939cf0dd2e7c5fcba95fe35ae4d0bccf838300e5dadfa435d3b1f1d68268c956",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 3,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "8102348217e039679cbf7b1d0be072a8212649bb1dd43f5b5d85ec1d255718ac",
+      "resourceSemanticsSha256": "c2a14a03c9963a4dc1e48c89bce54132b8bb4468969b7eb3a5a6014f0bc7b08b",
+      "publicTarget": "concept-reviews/GEN-ECON-11.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-11.pdf",
+      "plannedManifest": {
+        "oldSha256": "82561ba8f8f1c9ec506337843d3af3f24d1374935ec5beb5315c02bcabcd7b4c",
+        "sha256": "2fa0511ee13165b8c00147387b180a277633277fa235863a2db706af2bfee970",
+        "sizeBytes": 370322,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-12",
+      "title": "Demand & the Law of Demand",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-12\\after\\GEN-ECON-12.pdf",
+      "sha256": "bd2adb538ab3f050005fb2499c360d7dcd696e45d467846641afdca0157d85f2",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-12\\verapdf.json",
+      "validatorReportSha256": "65777fd16ff9e7bb6c8b3267bf30250a29512c563f774fefe0b37b97e212c5c5",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "8ebeb4666a595e5499f337d61a028de03a110f1b3a3c5cb523cee416466e47ce",
+      "resourceSemanticsSha256": "8fdb6f03571d3e7a0c0bf551b8b04de0115c49cafe8891c3dc27fc7d08a79af7",
+      "publicTarget": "concept-reviews/GEN-ECON-12.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-12.pdf",
+      "plannedManifest": {
+        "oldSha256": "4c0bdf4a15e0cda4838e0603e5f4ad1b7a01f4ff32fd2c2b9595d185082c381f",
+        "sha256": "bd2adb538ab3f050005fb2499c360d7dcd696e45d467846641afdca0157d85f2",
+        "sizeBytes": 594871,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-13",
+      "title": "Determinants of Demand",
+      "domain": "general",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-13\\after\\GEN-ECON-13.pdf",
+      "sha256": "c026bd239080df92605ff49d98573545c234cad2f524a9e80eae0159debb2d3c",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-13\\verapdf.json",
+      "validatorReportSha256": "3c58a2d1418f0e54de4c66c1c2f49d34541b41d0399daa07ee4089344dcafb3e",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 1,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_LABEL_CONTRAST: D1 is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "sourceRecordSha256": "f43d7afc69fbe628d8906e2c2566cef040154440250ac28e485722d054a05dd0",
+      "resourceSemanticsSha256": "65829ed589bbefa74e7b322763f48abe827bb7c73c9d4a6e6feab3bdf031970b",
+      "publicTarget": "concept-reviews/GEN-ECON-13.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-13.pdf",
+      "plannedManifest": {
+        "oldSha256": "aa8df46c439efd810823b06203dcd5bf330cb0c7c8ac2683a5a9c024d9b154bb",
+        "sha256": "c026bd239080df92605ff49d98573545c234cad2f524a9e80eae0159debb2d3c",
+        "sizeBytes": 627021,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-14",
+      "title": "Supply & the Law of Supply",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-14\\after\\GEN-ECON-14.pdf",
+      "sha256": "4e73cfe1274917a1d62e2b0b20a92d23c9a2dfd0014a3214fcd0f3a6e179a6b2",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-14\\verapdf.json",
+      "validatorReportSha256": "feed32e2f6eb05cc198abd7d03d36316f70411279d0bbf4e42a80317d7a0b027",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "3d9c14679f905ca257a9811d53e24e8dfe505ed76972b6bd3e1f563550a467b1",
+      "resourceSemanticsSha256": "33b0a4280e43cf846bcfd5ee2452795fa390e1d004cd932b7bdcbf546868741e",
+      "publicTarget": "concept-reviews/GEN-ECON-14.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-14.pdf",
+      "plannedManifest": {
+        "oldSha256": "68434f4acfb52f72343bc0753cacb9381cee988d76fa0ffd451a5d5b61ac10a1",
+        "sha256": "4e73cfe1274917a1d62e2b0b20a92d23c9a2dfd0014a3214fcd0f3a6e179a6b2",
+        "sizeBytes": 574898,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-15",
+      "title": "Determinants of Supply",
+      "domain": "general",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-15\\after\\GEN-ECON-15.pdf",
+      "sha256": "ad6b67a72425e04f7ea46d87fead00ac4355dd8c80d89c233397a53551dd2b80",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-15\\verapdf.json",
+      "validatorReportSha256": "a8fb3fdd6ba4674839049f2372c92f973b09d4f2eca0d3ed7eb8871b58dbb81b",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 1,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_LABEL_CONTRAST: S1 is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "sourceRecordSha256": "ae3f8bc191a0e7798bf964d897550234d7f9301170f2b52c808fd56c3f70eb82",
+      "resourceSemanticsSha256": "55fdd8528169a81695c575472ecfd79a74998af61036c0335f211eb792e7a9aa",
+      "publicTarget": "concept-reviews/GEN-ECON-15.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-15.pdf",
+      "plannedManifest": {
+        "oldSha256": "9822d54120677d005ff5e648884e0fe4fb890b60ec009627f16dfee1dfa06fea",
+        "sha256": "ad6b67a72425e04f7ea46d87fead00ac4355dd8c80d89c233397a53551dd2b80",
+        "sizeBytes": 640044,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-16",
+      "title": "Market Equilibrium",
+      "domain": "general",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-16\\after\\GEN-ECON-16.pdf",
+      "sha256": "adced4bbfb0f52c55d6450406120d0f59c67c5f7d2f620465dcea5dd32d80e69",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-16\\verapdf.json",
+      "validatorReportSha256": "04023d1a1a52034ef29374358b10f102bd71e42eac0576b4baf98e029f5930dd",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 3,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_LABEL_CONTRAST: S1 and D1 is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "sourceRecordSha256": "605932f3532a587709ebf273958216584702dad1a086f94c3bd843818292fe60",
+      "resourceSemanticsSha256": "0b0b0a873c556f60611a8455f5e59239770deb5f20b567f9509a2eabf36c4b34",
+      "publicTarget": "concept-reviews/GEN-ECON-16.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-16.pdf",
+      "plannedManifest": {
+        "oldSha256": "277188fd9ce7764d6a52483424e4a59daa9b7d24e547f1ce6ff5ca03f0adc088",
+        "sha256": "adced4bbfb0f52c55d6450406120d0f59c67c5f7d2f620465dcea5dd32d80e69",
+        "sizeBytes": 700492,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-17",
+      "title": "Shortages and Surpluses",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-17\\after\\GEN-ECON-17.pdf",
+      "sha256": "7aea0a0d3de4c3b628f0e09afd622e593d9f7d07be9b40d4a83670c26e645cae",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-17\\verapdf.json",
+      "validatorReportSha256": "acf22c2b017f899a6de26d9b2c6d7cb870941bc236350289618f90b82f2f2026",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "6f6325db6b67a2ffe205feda14bb7797b8166805319e8007e855b12a655aa10a",
+      "resourceSemanticsSha256": "66722d5b1f2d601730befd995d604b1fcbd922436d38f70694dbdda9d72b5008",
+      "publicTarget": "concept-reviews/GEN-ECON-17.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-17.pdf",
+      "plannedManifest": {
+        "oldSha256": "dacae7a0491d0859cdc5e9239916c975c80706b3b5ccbfdfcf0012ab2e4a95fb",
+        "sha256": "7aea0a0d3de4c3b628f0e09afd622e593d9f7d07be9b40d4a83670c26e645cae",
+        "sizeBytes": 634747,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-18",
+      "title": "Simultaneous Shifts",
+      "domain": "general",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-18\\after\\GEN-ECON-18.pdf",
+      "sha256": "370802a011f3895a4c1e863f14f794cbe978257392129a9e032b0d8fc7ebefdd",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-18\\verapdf.json",
+      "validatorReportSha256": "e20787d7a74d3014e6d328285a82d1b8e227fc7672e3d4ca1593b54fdff221da",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_LABEL_CONTRAST: S1 and D1 is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "sourceRecordSha256": "a33c5f388cacb77f8921182bef2c9003a7e6ff7ae7dc767c83c7c816cc080d74",
+      "resourceSemanticsSha256": "020ff77278a7d158d71e2085cb81b0d5c73263c671167f0b2a766dd17691f120",
+      "publicTarget": "concept-reviews/GEN-ECON-18.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-18.pdf",
+      "plannedManifest": {
+        "oldSha256": "98a43f4f5216dc5b65cb8b028cd66a8ecd10a02a13cc0fbb3decda107cc5c2c6",
+        "sha256": "370802a011f3895a4c1e863f14f794cbe978257392129a9e032b0d8fc7ebefdd",
+        "sizeBytes": 700703,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-19",
+      "title": "Price Ceilings",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-19\\after\\GEN-ECON-19.pdf",
+      "sha256": "9a13a124bf65866bb77c43a3b7dc9accc2589d37397454e25f254cabc3550cb6",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-19\\verapdf.json",
+      "validatorReportSha256": "3635564ebf4d52689b9c75380c19c093c5a54e3cffe5696498f30d9a8d5b17aa",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 7,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "0fc36ed31ccf6cccac5367bd881a4adbdcc8496e5a09c30778989d22f6bf404e",
+      "resourceSemanticsSha256": "831a34edb0b9078b68159493a4fefc2ed2087427c66cb51462337638cd091510",
+      "publicTarget": "concept-reviews/GEN-ECON-19.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-19.pdf",
+      "plannedManifest": {
+        "oldSha256": "5e0dda5f6099a2f900bccce6f982408cd589d6779ed98ccc752a8c7f9ab60de9",
+        "sha256": "9a13a124bf65866bb77c43a3b7dc9accc2589d37397454e25f254cabc3550cb6",
+        "sizeBytes": 677051,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-20",
+      "title": "Price Floors",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-20\\after\\GEN-ECON-20.pdf",
+      "sha256": "86cb46fa02786610c7914776b4853ae4dfe1fe5ba1795f48188b1f7403d6bcf4",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-20\\verapdf.json",
+      "validatorReportSha256": "f54acf9909f8725f9425a04d15425f5d521f0188b77129b0720837c60044cd4f",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 8,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "147e4b528a1f0fffaf395c3a2dc72264af018b0bea6ebb76d2513af767c6a63d",
+      "resourceSemanticsSha256": "21d4df6ba8fd54da9c0d1ae7cc0cf51e4aa4aaf1b7365472ae088c8515f5c659",
+      "publicTarget": "concept-reviews/GEN-ECON-20.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-20.pdf",
+      "plannedManifest": {
+        "oldSha256": "318a5cda4c284af2e3e1f1be16d8173200e47a272c6d754c2510678ce1501602",
+        "sha256": "86cb46fa02786610c7914776b4853ae4dfe1fe5ba1795f48188b1f7403d6bcf4",
+        "sizeBytes": 677144,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    }
+  ],
+  "newPatterns": [
+    "heading Formula",
+    "diagnostic list card",
+    "continued Formula card",
+    "long formula-card line",
+    "six-line core reflow"
+  ],
+  "ownerFollowUp": [
+    "GEN-ECON-13",
+    "GEN-ECON-15",
+    "GEN-ECON-16",
+    "GEN-ECON-18"
+  ],
+  "activeInstallPerformed": false,
+  "complete": true
+}

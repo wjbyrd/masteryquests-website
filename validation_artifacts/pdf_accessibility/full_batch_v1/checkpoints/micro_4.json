@@ -1,0 +1,436 @@
+{
+  "task": "PDF_ACCESSIBILITY_FULL_BATCH_V1",
+  "batch": "micro_4",
+  "documentIds": [
+    "MICRO-61",
+    "MICRO-62",
+    "MICRO-63",
+    "MICRO-64",
+    "MICRO-65",
+    "MICRO-66",
+    "MICRO-67",
+    "MICRO-68"
+  ],
+  "pass": 8,
+  "blocked": 0,
+  "records": [
+    {
+      "code": "MICRO-61",
+      "title": "Moral Hazard",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-61.pdf",
+      "sha256": "9db213b565542d83df4e53954ea53ca448432bbb626486f856849b60c059b50f",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\validation\\verapdf.json",
+      "validatorReportSha256": "cae80bb67e46b1f731df4a4877a1e320f385ebdf23b9faa471d8c807af0c5985",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "71a1ef870234845a6be73a29ba4f795b0aba210d2caa662df4de4dd51a755be4",
+      "resourceSemanticsSha256": "701ba62be8660ce914343fec2b354c520e3dc659925672e2648db1fb1e5dd8a6",
+      "publicTarget": "concept-reviews/MICRO-61.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-61.pdf",
+      "plannedManifest": {
+        "oldSha256": "41f2b76b62e0943f5901ace695deeea9d1530c587477d306b0b30c721885a3c8",
+        "sha256": "9db213b565542d83df4e53954ea53ca448432bbb626486f856849b60c059b50f",
+        "sizeBytes": 302282,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": true
+    },
+    {
+      "code": "MICRO-62",
+      "title": "Signaling & Screening",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-62.pdf",
+      "sha256": "b0682983cdfd27bb05e4afbf3d10bc79f60d7a976cbdb2ebabcc08168b743f19",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\validation\\verapdf.json",
+      "validatorReportSha256": "cae80bb67e46b1f731df4a4877a1e320f385ebdf23b9faa471d8c807af0c5985",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "8ee05b5329b411d5966fed538b8835bef99bd0e6b77687f2608fb86491d10f35",
+      "resourceSemanticsSha256": "54506f3293f0155846e4eea2fb84aca5c90deddeeb4b9278a675bb6576f8470c",
+      "publicTarget": "concept-reviews/MICRO-62.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-62.pdf",
+      "plannedManifest": {
+        "oldSha256": "f72792fe2697a205b89f64712aad204d404e161fc28e305eae8770fbe7f2aa64",
+        "sha256": "b0682983cdfd27bb05e4afbf3d10bc79f60d7a976cbdb2ebabcc08168b743f19",
+        "sizeBytes": 302257,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": true
+    },
+    {
+      "code": "MICRO-63",
+      "title": "Present Bias",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-63.pdf",
+      "sha256": "d971566a54845a228003f2609324b20f68b684ea7dd2b7326089986240cd65af",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\validation\\verapdf.json",
+      "validatorReportSha256": "cae80bb67e46b1f731df4a4877a1e320f385ebdf23b9faa471d8c807af0c5985",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "22315d04d809aafc8a8dec70989ab0c9054a8dcdfd5cbc33c00f1c3d5b98f24a",
+      "resourceSemanticsSha256": "cf0576e93c69c6a5af5f655f8af072a69da6f0ca9e63181c33d4cfd2350e279c",
+      "publicTarget": "concept-reviews/MICRO-63.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-63.pdf",
+      "plannedManifest": {
+        "oldSha256": "5466c7c98f156050e21683a8892d4e22a8762555a4c3073fd5366fe336bcdf09",
+        "sha256": "d971566a54845a228003f2609324b20f68b684ea7dd2b7326089986240cd65af",
+        "sizeBytes": 302303,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": true
+    },
+    {
+      "code": "MICRO-64",
+      "title": "Loss Aversion",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-64.pdf",
+      "sha256": "497712eed8b5ccd30ce8477884dc4661afd72efb57bf73b5a471778e61844b0b",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\validation\\verapdf.json",
+      "validatorReportSha256": "cae80bb67e46b1f731df4a4877a1e320f385ebdf23b9faa471d8c807af0c5985",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 6,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "70c4f79ca84439c452dcd3215158df32563b38ea0af19ecbe3487b82c22c4c7d",
+      "resourceSemanticsSha256": "54b72d48c392951fc4da38af4ce7f7f90595a6cf19eeead5631f67e531ad63cd",
+      "publicTarget": "concept-reviews/MICRO-64.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-64.pdf",
+      "plannedManifest": {
+        "oldSha256": "3333c429eaa54e5a07410ff1896934f97430b93a60643075596481711c98b8b7",
+        "sha256": "497712eed8b5ccd30ce8477884dc4661afd72efb57bf73b5a471778e61844b0b",
+        "sizeBytes": 303730,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": true
+    },
+    {
+      "code": "MICRO-65",
+      "title": "Framing Effects",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-65.pdf",
+      "sha256": "9567e607464cf0a3395c860f8f977ed599f84b9cf80b906237162a6a1137fec0",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\validation\\verapdf.json",
+      "validatorReportSha256": "cae80bb67e46b1f731df4a4877a1e320f385ebdf23b9faa471d8c807af0c5985",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 4,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "3a3631a69c3bb1a9785ed854e4de7e306f254e661373214c034c14a737926d16",
+      "resourceSemanticsSha256": "86c7d18167ccb3f9b3f80f349ee02b5ddb7823dd5f510966dd76e5c2823aa1b3",
+      "publicTarget": "concept-reviews/MICRO-65.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-65.pdf",
+      "plannedManifest": {
+        "oldSha256": "fd8aaccc5ba4720a3c2833741f6f2afbed479fd99a11a8620e13c0bac7bd974c",
+        "sha256": "9567e607464cf0a3395c860f8f977ed599f84b9cf80b906237162a6a1137fec0",
+        "sizeBytes": 303548,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": true
+    },
+    {
+      "code": "MICRO-66",
+      "title": "Condorcet Paradox & Voting Cycles",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-66.pdf",
+      "sha256": "20ad060edd7d4c11af6ee01fc486422444c475bf5996b94c43b927b03229157c",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\validation\\verapdf.json",
+      "validatorReportSha256": "cae80bb67e46b1f731df4a4877a1e320f385ebdf23b9faa471d8c807af0c5985",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 4,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "b4e611e17863382ba57447687c5ea17424c205f4eac4a10cac59cfa09d2b1850",
+      "resourceSemanticsSha256": "325387cead1349ed4a3cc94cb7bcb0af9b54ecc3fa5d747962f775b575062455",
+      "publicTarget": "concept-reviews/MICRO-66.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-66.pdf",
+      "plannedManifest": {
+        "oldSha256": "3ea0b9635787e39daac93f02730a21e94377e319d55c465c3533f0973144b3c1",
+        "sha256": "20ad060edd7d4c11af6ee01fc486422444c475bf5996b94c43b927b03229157c",
+        "sizeBytes": 303052,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": true
+    },
+    {
+      "code": "MICRO-67",
+      "title": "Arrow's Impossibility Theorem",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-67.pdf",
+      "sha256": "222c3b2b428c8ccad3c83c25148943335f9bdbf93adb2c361d8b43091560813d",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\validation\\verapdf.json",
+      "validatorReportSha256": "cae80bb67e46b1f731df4a4877a1e320f385ebdf23b9faa471d8c807af0c5985",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "355c40d95f8b9713a49f296042521447e4c27966351ad7a04799fd45a27b433c",
+      "resourceSemanticsSha256": "59f098a353167c34d4c1c95a25b5053119b6a40503601734497014428b8a768f",
+      "publicTarget": "concept-reviews/MICRO-67.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-67.pdf",
+      "plannedManifest": {
+        "oldSha256": "2ed1b090e37625ad19807a88b9d2caca402208bd78bacf4a8857a1dad811bc11",
+        "sha256": "222c3b2b428c8ccad3c83c25148943335f9bdbf93adb2c361d8b43091560813d",
+        "sizeBytes": 302718,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": true
+    },
+    {
+      "code": "MICRO-68",
+      "title": "Median Voter Theorem",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-68.pdf",
+      "sha256": "aee02d9f70b4de95808b58e29a18f5da5041f75f1d23df98a506f8e1915a7185",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\validation\\verapdf.json",
+      "validatorReportSha256": "cae80bb67e46b1f731df4a4877a1e320f385ebdf23b9faa471d8c807af0c5985",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "fd8997449a31f9387bf1c20e753e4bcabd3ecb001788df807126788dbfd33f51",
+      "resourceSemanticsSha256": "06e9f1c6f869eb9b66f36783d35a1ec3762948bb6aa0586da593eba1bad02d6b",
+      "publicTarget": "concept-reviews/MICRO-68.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-68.pdf",
+      "plannedManifest": {
+        "oldSha256": "5193e56085fdfbc0a733d8397b6fd8b8e7799f5ed61667b3d4cf0382a5fbdf34",
+        "sha256": "aee02d9f70b4de95808b58e29a18f5da5041f75f1d23df98a506f8e1915a7185",
+        "sizeBytes": 302238,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": true
+    }
+  ],
+  "newPatterns": [
+    "heading Formula",
+    "diagnostic list card",
+    "continued Formula card",
+    "long formula-card line",
+    "six-line core reflow"
+  ],
+  "ownerFollowUp": [],
+  "activeInstallPerformed": false,
+  "complete": true
+}

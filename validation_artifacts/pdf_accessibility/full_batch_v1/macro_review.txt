@@ -1,0 +1,512 @@
+MACRO-01 GDP Measurement [original]
+CORE: Gross domestic product is the market value of final goods and services produced within a country's borders during a specific period. Current production matters: used goods, stocks, bonds, and transfer payments do not represent newly produced output. Final goods are counted instead of adding intermediate goods separately, because the intermediate value is already included in the final product. The location of production, not the owner's nationality, determines whether output is domestic. Measured expenditure equals measured income because a buyer's spending becomes income to the sellers and workers who produced the output.
+RECOGNITION: The good or service was produced during the period being measured. | Production occurred inside the country's borders, regardless of ownership. | A final product is distinguished from an input used to make another product. | A resale, financial trade, or transfer changes ownership but adds no current output. | One transaction is viewed as both buyer expenditure and seller income.
+WATCH: Spending money does not automatically create GDP. A used-car sale, stock purchase, or cash transfer may be a transaction without current production. Also, adding the value of an intermediate input and the final good double counts the input. Imports are excluded because they were produced abroad, even when domestic residents buy them.
+WORKED: A mill sells flour to a bakery for $50, and the bakery sells the finished bread to households for $120. Final-goods accounting counts $120, not $170, because the flour's value is already embodied in the bread. The households' $120 of expenditure becomes revenue and income for the producers involved. Counting the same production from the expenditure side or the income side therefore gives the same GDP amount.
+CHECK: A U.S.-owned factory makes a car in Mexico, while a Japanese-owned factory makes a car in Ohio. Which car belongs in U.S. GDP, and what rule determines the answer?
+FIGURE DESCRIPTION: 
+
+
+MACRO-02 GDP Components [original]
+CORE: The expenditure approach divides GDP into consumption, investment, government purchases, and net exports. Consumption covers household purchases of final goods and services; investment includes business capital, residential construction, and inventory changes; government purchases pay for current goods and services. Net exports add exports and subtract imports so GDP counts only domestic production, while transfer payments themselves are excluded. A recipient's later purchase is counted separately if it pays for current domestic output.
+RECOGNITION: Classify final spending as consumption, investment, government purchases, or net exports. | Count newly produced capital goods and inventory changes as investment. | Exclude transfer payments because they are not payments for current production. | Subtract imports within net exports so foreign production is not counted in domestic GDP.
+WATCH: A common mistake is to count transfer payments as government purchases. Transfers redistribute income and are never themselves part of GDP. A later purchase is classified by what is bought; imports are subtracted in NX.
+WORKED: A business buys a newly produced domestic machine for $2 million; this is investment. Government pays contractors $80 million to repair roads; this is government purchases. An $80 million benefit payment is a transfer and is not counted when sent, though any later household purchase of final goods enters consumption. The expenditure identity classifies the counted spending as C + I + G + NX.
+CHECK: Does a government benefit payment enter G when it is sent?
+FIGURE DESCRIPTION: 
+
+
+MACRO-03 Real versus Nominal GDP [original]
+CORE: Nominal GDP values current production at current prices, while real GDP values it at base-year prices. Multiply current quantities by the designated base-year prices and add across final goods. GDP is a strong measure of market production for its purpose, but it omits some dimensions of welfare. Compare nominal and real GDP to separate price changes from changes in production. Real-GDP growth equals the change in real GDP divided by the initial real GDP.
+RECOGNITION: Nominal GDP uses current-year prices and current-year quantities. | Real GDP uses base-year prices with current-year quantities. | A change in nominal GDP can reflect prices, quantities, or both; a change in real GDP reflects quantities. | Use the GDP deflator to compare nominal GDP with real GDP for the same year.
+WATCH: Do not use the new level rather than the initial real-GDP level as the percentage-growth denominator. Real-GDP growth equals the change in real GDP divided by the initial real GDP.
+WORKED: An economy produces 100 units in the base year at $5 each and 110 units this year at $6 each. Nominal GDP this year is 110 x $6 = $660. Real GDP at base-year prices is 110 x $5 = $550. The GDP deflator is ($660 / $550) x 100 = 120, separating the price increase from the output increase.
+CHECK: Is real GDP calculated by simply subtracting the inflation rate from nominal GDP?
+FIGURE DESCRIPTION: 
+
+
+MACRO-04 Limits of GDP [original]
+CORE: GDP measures market production, not every dimension of well-being. GDP can rise from replacement activity even if people are worse off. GDP is useful, but it is not a complete measure of well-being. Moving activity into or out of markets can change GDP even when useful services or consumer benefit move differently. GDP is useful because income matters, but it leaves out things like leisure, environmental quality, and some nonmarket activity.
+RECOGNITION: A family replaces unpaid home cooking with otherwise similar restaurant meals. | Unpaid elder care becomes an otherwise similar paid service. | A country has higher GDP, but also more pollution and longer work hours. | A free digital service replaces a paid service while users receive greater benefit. | A free technology replaces paid translation services, measured GDP falls, and users translate more text with less effort.
+WATCH: A common mistake is to equate a change in market spending with the same change in total useful services. Moving activity into or out of markets can change GDP even when useful services or consumer benefit move differently.
+WORKED: A hurricane destroys homes, and rebuilding adds $2 billion to measured construction. Holding other domestic production constant, rebuilding adds $2 billion to GDP. It does not subtract the homes that were destroyed or the loss of security and leisure, so the GDP increase does not prove that well-being improved.
+CHECK: GDP misses which part of well-being?
+FIGURE DESCRIPTION: 
+
+
+MACRO-05 CPI and Inflation Measurement [original]
+CORE: The consumer price index compares the current cost of a fixed consumer basket with its base-year cost. The index equals the current basket cost divided by the base-year basket cost, multiplied by one hundred. Inflation is the percentage change in the index between periods. Holding basket quantities fixed isolates price change from changes in what consumers buy.
+RECOGNITION: Identify the fixed basket, its base-year cost, and its current-year cost. | Compute the price index by comparing the current basket cost with the base-year basket cost. | Measure inflation as the percentage change in the index from one period to the next. | Keep basket quantities fixed when calculating the CPI for different years.
+WATCH: Do not use the wrong basket cost or forget to multiply by 100. Divide the current cost of the fixed basket by its base-year cost; the index can rise or fall as prices change.
+WORKED: The CPI rises from 125 to 150. The inflation rate is (150 - 125)/125 x 100 = 20%. In a separate basket, base-year cost is 4($10) + 2($20) = $80 and current cost is 4($12) + 2($25) = $98, so CPI is ($98/$80) x 100 = 122.5.
+CHECK: A basket costs $400 in the base year and $500 today. What is today's CPI?
+FIGURE DESCRIPTION: 
+
+
+MACRO-06 CPI Bias [original]
+CORE: The CPI can overstate changes in the cost of living when a fixed basket misses substitution, quality improvements, or new goods. Substitution bias arises when consumers shift toward relatively cheaper alternatives but the fixed basket does not fully reflect that response. CPI remains useful, while substitution, new-good, and quality challenges can make measured inflation differ from true cost-of-living growth. If goods improve in quality, price increases may overstate the rise in the cost of living. If consumers substitute, their actual cost of living may rise less than the fixed basket suggests.
+RECOGNITION: If goods improve in quality, price increases may overstate the rise in the cost of living. | If consumers substitute, their actual cost of living may rise less than the fixed basket suggests. | A new product gives consumers a useful option that did not previously exist. | A product becomes more expensive but also much higher quality. | A laptop price rises while speed and battery life improve.
+WATCH: Do not treat all price increases as inflation even when quality or product variety improves. If goods improve in quality, price increases may overstate the rise in the cost of living.
+WORKED: A fixed basket contains beef even after beef prices rise sharply. Consumers substitute toward chicken, but the CPI continues pricing the original beef quantity. Because the fixed basket misses that cost-saving response, measured inflation can exceed the increase in the cost of maintaining consumers' actual purchasing pattern.
+CHECK: A refrigerator sells for the same price but uses much less electricity and lasts longer. Which CPI issue matters?
+FIGURE DESCRIPTION: 
+
+
+MACRO-07 CPI versus GDP Deflator [original]
+CORE: The CPI tracks prices paid for a consumer basket, while the GDP deflator tracks prices of currently produced domestic final output. Imported consumer goods affect CPI but not the GDP deflator directly. Use CPI for consumer purchasing-power questions and the GDP deflator for the price level of current domestic GDP. Identify the buyer and production location, then match the price change to the index whose scope includes it. CPI follows a consumer-basket framework; the GDP deflator follows prices of current domestically produced final output.
+RECOGNITION: Use CPI for consumer purchasing-power questions and the GDP deflator for the price level of current domestic GDP. | A domestic firm buys newly produced business software whose price rises. | Imported prescription-drug prices rise while prices of domestic hospital services are unchanged. | A city buys domestic transit vehicles while households buy imported fuel. | Domestic food-export prices rise and imported-clothing prices fall.
+WATCH: Do not treat CPI and the GDP deflator as interchangeable measures of the same set of prices. CPI follows a consumer-basket framework; the GDP deflator follows prices of current domestically produced final output.
+WORKED: The price of imported coffee rises while prices of domestically produced goods are unchanged. Coffee is in the consumer basket, so the increase can raise CPI. Because the coffee was produced abroad, it is not part of domestic GDP and does not directly raise the GDP deflator.
+CHECK: Which price index uses a fixed basket of consumer goods?
+FIGURE DESCRIPTION: 
+
+
+MACRO-08 Indexing and Real Values [original]
+CORE: A price index converts nominal amounts across time and can be used to index wages, benefits, rents, or tax thresholds. Converting an earlier nominal amount into later dollars requires multiplying by the later index divided by the earlier index. Indexation preserves purchasing power only when the chosen index and adjustment timing closely match the prices relevant to the recipient.
+RECOGNITION: Identify the nominal amount, the starting index, and the ending index. | Scale the nominal amount by the ratio of the ending index to the starting index. | Check whether the contract uses the same index and adjustment timing as the prices relevant to the recipient. | A fully indexed nominal payment preserves purchasing power only to the extent that the index matches actual costs.
+WATCH: Do not assume an indexed contract guarantees an exact real outcome in every circumstance. Indexation adjusts a nominal amount using a specified index; lags or an imperfectly matched index can still change real value.
+WORKED: A salary was $40,000 when CPI was 100. CPI is now 160. 40,000 x 160/100 = 64,000. Therefore, $64,000. Indexation adjusts a nominal amount using a specified index; lags or an imperfectly matched index can still change real value.
+CHECK: Why might a tax threshold be indexed to a price index?
+FIGURE DESCRIPTION: 
+
+
+MACRO-09 Real versus Nominal Interest Rates [original]
+CORE: The real interest rate approximately equals the nominal interest rate minus inflation. The nominal rate states how many additional dollars a lender receives, while the real rate measures the change in purchasing power. Expected inflation determines the ex ante real rate when a loan is made; actual inflation determines the ex post real return and can redistribute purchasing power between borrowers and lenders.
+RECOGNITION: Unexpected inflation is higher than lenders and borrowers expected on a fixed-rate loan. | Actual inflation is lower than expected on a fixed nominal loan. | Unexpected inflation rises on a fixed-rate loan. | Actual inflation exceeds expected inflation while a loan’s nominal rate is fixed. | Ex ante real interest uses expected inflation; ex post real interest uses actual inflation.
+WATCH: Do not use actual inflation to describe an expected return or expected inflation to describe the realized return. Ex ante real interest uses expected inflation; ex post real interest uses actual inflation.
+WORKED: Nominal interest is 9% and inflation is 5%. Using the usual approximation, real interest is 9% - 5% = 4%. The exact real return is (1.09 / 1.05 - 1) x 100 = 3.81%. Higher-than-expected inflation lowers the realized real repayment burden and shifts purchasing power from lender to borrower.
+CHECK: What does a real interest rate describe that a nominal rate does not?
+FIGURE DESCRIPTION: 
+
+
+MACRO-10 Living Standards and Growth [original]
+CORE: Real GDP per person is a common measure of material living standards, and compounding makes sustained growth powerful over time. Dividing real output by population distinguishes growth in total production from growth in average material resources. Productivity growth can raise output per person without requiring proportionally more work, although this measure does not capture every dimension of well-being.
+RECOGNITION: A country raises output mainly by requiring much longer workweeks, while output per hour is unchanged. | Higher productivity lets an economy produce more goods and services from its available labor and resources. | Real GDP per person is commonly used to compare living standards and growth. | Real GDP per person relates inflation-adjusted output to the number of people sharing that output. | Compare growth in real GDP with population growth to distinguish total output from output per person.
+WATCH: A common mistake is to equate more total labor input with higher productivity or complete welfare improvement. Productivity is output per unit of input, and GDP omits important dimensions of well-being.
+WORKED: If real GDP per person grows at 4% per year, the Rule of 70 estimates a doubling time of 70/4 = 17.5 years. This calculation describes material output growth, not complete well-being: longer work hours can raise GDP per person without raising output per hour or preserving leisure.
+CHECK: At 4% annual growth, about how many years does the Rule of 70 predict for real GDP per person to double?
+FIGURE DESCRIPTION: 
+
+
+MACRO-11 Productivity Measurement [original]
+CORE: Labor productivity measures output per worker or per hour worked. For example, 2,400 units produced in 300 labor hours means 2,400 / 300 = 8 units per hour. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter. A country can consume more when its workers produce more output per worker.
+RECOGNITION: Measure labor productivity as real output per worker or per hour worked. | Compare output using the same amount of labor when evaluating a productivity change. | An increase in total output is not necessarily a productivity increase if labor input also rises. | On a production-function graph, diminishing returns make equal additions of capital add progressively less output.
+WATCH: Do not confuse total output with output per unit of labor. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter.
+WORKED: The graph shows output per worker of 28.53 when capital per worker is 20 and 36.37 when capital per worker is 40. The increase in labor productivity is 36.37 - 28.53 = 7.84 units per worker. Productivity measures output relative to labor input, not total output alone.
+CHECK: A business uses more labor hours but produces the same amount of output. What happens to labor productivity?
+FIGURE DESCRIPTION: The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values.
+
+
+MACRO-12 Sources of Productivity [original]
+CORE: Productivity rises with physical capital, human capital, natural resources, and technological knowledge. Capital can have high returns where it is scarce. More capital per worker can raise output per worker, but the production function becomes flatter as capital deepens. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter.
+RECOGNITION: A worker receives a new machine that raises output with the same labor time. | More capital per worker can raise output per worker, but the production function becomes flatter as capital deepens. | The graph is upward sloping but becomes flatter as capital per worker rises. | A low-capital country buys machinery, but workers lack training and firms cannot reliably obtain electricity.
+WATCH: Do not treat every increase in capital as producing the same output gain. More capital per worker can raise output per worker, but the production function becomes flatter as capital deepens.
+WORKED: Increasing capital per worker from 20 to 40 raises output per worker from 28.53 to 36.37, a gain of 7.84. The production function becomes flatter as capital deepens, so equal additions to capital generate progressively smaller output gains. That curvature shows diminishing returns to capital.
+CHECK: How does a worker's machine differ from the worker's training as a source of productivity?
+FIGURE DESCRIPTION: The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values.
+
+
+MACRO-13 Economic Growth Policy [original]
+CORE: Long-run growth policy raises productive capacity rather than current spending alone. Saving and reliable finance support capital formation; education builds human capital; research and competition can advance technology. Stable property rights and institutions make firms more willing to invest. Because physical capital faces diminishing returns, sustained growth usually depends on several of these channels working together.
+RECOGNITION: The policy changes capital formation, human capital, technology, or institutions. | The question distinguishes productive capacity from a temporary demand increase. | Reliable finance and property rights affect whether saving becomes productive investment. | The proposed change can raise output per worker over time.
+WATCH: Do not treat a one-time demand boost as a substitute for policies that raise productive capacity. Long-run growth policy works through productivity, capital formation, human capital, technology, and institutions.
+WORKED: Capital deepening from 20 to 40 units per worker raises output per worker from 28.53 to 36.37, a gain of 7.84. Because the curve flattens, capital accumulation alone faces diminishing returns. Sustained growth also requires human capital, technology, and institutions that raise productivity.
+CHECK: Which policy supports long-run productivity growth?
+FIGURE DESCRIPTION: The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values.
+
+
+MACRO-14 Unemployment Measurement [original]
+CORE: Labor-force status depends on work, job attachment, availability, and active job search. Employed people include those working for pay or profit, those temporarily absent from a job, and qualifying unpaid family workers. Unemployed people have no job, are available, and actively searched in the past four weeks; people awaiting recall from temporary layoff need not search. Discouraged workers who have stopped searching are outside the labor force.
+RECOGNITION: Work for pay or profit during the reference week counts as employment, even if part-time. | At least 15 hours of unpaid work in a family business also counts as employment. | Labor force = employed + unemployed; unemployment rate = unemployed / labor force x 100. | Participation rate = labor force / civilian noninstitutional population age 16 and older x 100.
+WATCH: Wanting a job alone does not make a person unemployed. Check job status, availability, and active search, including the temporary-layoff exception. Discouraged workers are outside the labor force.
+WORKED: Among 100 people in the civilian noninstitutional population age 16 and older, 60 are employed, 5 are unemployed, and 35 are outside the labor force. Labor force = 60 + 5 = 65. Unemployment rate = 5/65 x 100 = 7.7%; participation rate = 65/100 x 100 = 65%.
+CHECK: Which two groups are added to calculate the labor force?
+FIGURE DESCRIPTION: 
+
+
+MACRO-15 Types of Unemployment [original]
+CORE: Frictional unemployment comes from ordinary job search, structural unemployment from lasting mismatches, and cyclical unemployment from recessions. Layoffs caused by recession are cyclical unemployment. Short-term search between jobs is frictional unemployment. Job loss from weak demand during a recession is cyclical unemployment. A long-term mismatch between skills and available jobs is structural unemployment.
+RECOGNITION: A worker loses a job because a recession causes customers to spend less. | A coal miner loses work because the economy shifts permanently toward other energy sources and the miner lacks transferable skills. | Frictional unemployment exists because workers and firms take time to match. | Structural unemployment is about mismatch; frictional unemployment is about normal search. | A college graduate takes two months to find a first job that matches their skills.
+WATCH: Do not confuse the cause of unemployment with official labor-force status. For a jobless worker who is available and actively searching, normal search after leaving a job is frictional unemployment; recession-related job loss is cyclical unemployment.
+WORKED: A worker leaves a job and spends six weeks searching for a better match; that is frictional unemployment. A factory worker whose skills no longer match available technology faces structural unemployment. A restaurant worker laid off because a recession reduces spending experiences cyclical unemployment.
+CHECK: A worker quits and spends two weeks finding a better job match. What type of unemployment is this?
+FIGURE DESCRIPTION: 
+
+
+MACRO-16 Labor-Market Institutions [original]
+CORE: Labor-market institutions change wages, hiring, search incentives, and the balance between labor supplied and labor demanded. Efficiency wages can improve effort and reduce turnover. A binding minimum wage can create a surplus of labor, meaning more workers want jobs than firms want to hire. Unemployment insurance can support job seekers, but may also reduce urgency to accept a job quickly.
+RECOGNITION: A binding minimum wage can create a surplus of labor, meaning more workers want jobs than firms want to hire. | Unemployment insurance can support job seekers, but may also reduce urgency to accept a job quickly. | A firm raises wages above equilibrium and worker effort rises enough to improve productivity, but fewer workers are hired at the higher wage. | Unemployment insurance can reduce the cost of continued job search, which may lengthen unemployment spells. | Union wage bargaining can raise wages above equilibrium and reduce the quantity of labor demanded.
+WATCH: Do not forget that a binding wage floor creates a surplus when labor supplied exceeds labor demanded. A binding minimum wage can create a surplus of labor, meaning more workers want jobs than firms want to hire.
+WORKED: At a binding minimum wage, 120 workers want jobs and firms hire 90. The labor surplus is 120 - 90 = 30 workers. The wage is held above equilibrium, so the quantity of labor supplied exceeds the quantity demanded.
+CHECK: Why can more generous unemployment insurance lengthen some unemployment spells even while protecting workers?
+FIGURE DESCRIPTION: 
+
+
+MACRO-17 Natural Rate of Unemployment [original]
+CORE: The natural rate of unemployment is the unemployment that remains when the economy is operating near its normal long-run level. It includes frictional unemployment from ordinary job search and structural unemployment from mismatches between workers and available jobs. It excludes cyclical unemployment caused by recessions or unusually strong expansions. Actual unemployment can move above or below the natural rate over the business cycle. Cyclical unemployment equals actual unemployment minus the natural rate. The natural rate can also change as demographics, labor-market institutions, matching technology, or persistent skill mismatches change.
+RECOGNITION: Frictional and structural unemployment are combined into a long-run benchmark. | A recession pushes actual unemployment above the benchmark. | An unusually tight labor market pushes actual unemployment below the benchmark. | Job matching, worker skills, demographics, or institutions change over time. | The problem asks for the gap between actual and natural unemployment.
+WATCH: The natural rate is neither zero nor permanently fixed. Workers still search for jobs and industries still change in a healthy economy. A temporary recession raises cyclical unemployment, not automatically the natural rate; however, lasting skill loss or labor-force detachment can eventually raise structural unemployment and the natural rate.
+WORKED: Suppose actual unemployment is 7% and the natural rate is 5%. Cyclical unemployment = 7% - 5% = 2 percentage points. The positive gap indicates recession-related unemployment on top of normal frictional and structural unemployment. If demand recovers and the natural rate remains 5%, actual unemployment should move back toward 5%. It need not fall to zero because normal job search and skill mismatch remain.
+CHECK: A job-matching platform shortens job searches, but a major industry shift leaves many workers without the skills employers need. How could each change affect the natural rate?
+FIGURE DESCRIPTION: 
+
+
+MACRO-18 Money Functions and Measures [original]
+CORE: Money serves as a medium of exchange, a unit of account, and a store of value. As a medium of exchange it facilitates purchases; as a unit of account it provides a common way to quote prices and debts; as a store of value it carries purchasing power into the future. Money-supply measures group liquid assets by how readily they can perform these functions.
+RECOGNITION: A medium of exchange is used to buy and sell goods and services. | A unit of account provides the common measure in which prices and debts are stated. | A store of value transfers purchasing power from the present into the future. | For a money-supply measure, classify an asset by its liquidity and the measure's stated definition.
+WATCH: Do not treat movement between M1 and non-M1 M2 assets as a change in total M2. Checking deposits are in M1 and M2, while retail money-market mutual funds are in M2 but not M1. The transfer lowers M1 without changing M2.
+WORKED: Currency is $800, checking deposits are $1,200, and savings deposits are $1,500. Under the U.S. definition used since May 2020, savings deposits are included in M1, so M1 = $3,500. With no other M2 components, M2 is also $3,500. Under the older textbook definition excluding savings from M1, M1 would be $2,000.
+CHECK: Are retail money-market mutual funds included in M1, M2, or both?
+FIGURE DESCRIPTION: 
+
+
+MACRO-19 Central Banking and the Federal Reserve [original]
+CORE: The Federal Reserve conducts monetary policy, supplies reserve balances, supports payments, and serves as lender of last resort. Changes in reserves and interest rates are monetary policy territory. The Fed acts as the central bank and lender of last resort. The Federal Reserve conducts monetary policy and supports the banking/payments system; the Treasury manages federal finances and debt operations. Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks. The Fed includes the Board of Governors and 12 regional Reserve Banks. The FOMC directs monetary policy. Operational independence allows policy decisions without day-to-day political approval, within a mandate set by Congress.
+RECOGNITION: The Federal Reserve conducts monetary policy and supports the banking/payments system; the Treasury manages federal finances and debt operations. | The FOMC sets the monetary-policy stance and directs open-market operations. | A central-bank committee decides to change monetary conditions. | A commercial bank approves a loan and credits the borrower’s checking account. | Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks.
+WATCH: Do not treat commercial-bank deposits and central-bank reserves as the same liability issued by the same institution. Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks.
+WORKED: The Federal Reserve buys Treasury securities from a bank, adding reserve balances. In the limited-reserves textbook model, this tends to lower short-term rates; in an ample-reserves system, administered rates are the main rate-control tool. The purchase is monetary policy, not a change in federal taxes or spending.
+CHECK: Which group directs open-market operations?
+FIGURE DESCRIPTION: 
+
+
+MACRO-20 Bank Balance Sheets, Reserves, and Capital [later]
+CORE: A bank balance sheet satisfies assets = liabilities + capital. Reserves, loans, and securities are assets. Deposits and bank borrowing are liabilities. Bank capital is owners' equity: assets minus liabilities. Reserves provide liquidity and help meet withdrawals; capital absorbs asset losses. Required reserves and capital requirements therefore constrain different parts of the balance sheet.
+RECOGNITION: A customer's deposit is a bank liability; the cash or reserve balance received is an asset. | A cash withdrawal reduces both reserves and deposits by the same amount. | A loan is a bank asset because the borrower owes the bank repayment. | An asset loss reduces capital when liabilities do not change.
+WATCH: Do not call reserves bank capital. Reserves are assets available for payments; capital is the residual claim, assets minus liabilities, that cushions losses.
+WORKED: A bank holds $120 in reserves, $780 in loans, and $100 in securities: assets are $1,000. Deposits of $900 and borrowing of $40 make liabilities $940, so capital is $60. A $25 loan loss cuts assets to $975 while liabilities stay $940. Capital falls to $35; reserves remain $120.
+CHECK: If a depositor withdraws $20 in cash, which asset and which liability fall?
+FIGURE DESCRIPTION: 
+CARD: ['assets and liabilities', 'reserves', 'bank capital', 'deposits and withdrawals', 'asset losses']
+
+MACRO-21 Monetary-Policy Tools [original]
+CORE: The Federal Reserve influences bank reserves, the money supply, and short-term interest rates through several policy tools. Open-market purchases add reserves to the banking system, while open-market sales remove them. Administered rates change the incentives banks face when borrowing or holding reserves. Changes in reserves can affect bank lending and deposit creation, although the actual expansion of money may be smaller than the simple textbook multiplier predicts.
+RECOGNITION: An open-market purchase adds reserves; in the limited-reserves model this tends to lower short-term rates. | An open-market sale removes reserves; in the limited-reserves model this tends to raise short-term rates. | Lower administered rates ease monetary conditions; higher administered rates restrain them. | In an ample-reserves system, administered rates are the main tool for controlling short-term rates.
+WATCH: Do not assume every tool in a policy package pushes bank lending in the same direction. The open-market purchase is expansionary, while a higher return on reserves can weaken the lending response.
+WORKED: The central bank buys $50 million of securities, adding $50 million to bank reserves. With a 20% required reserve ratio, no excess reserves, and full redepositing, the simple deposit multiplier is 1 / 0.20 = 5. Maximum deposit expansion is $50 million x 5 = $250 million. Currency drain or additional reserve holding makes the result smaller; it cannot be calculated by multiplying 5 by the lending share.
+CHECK: If the central bank lowers the rate it charges banks for direct loans, what is the immediate textbook effect?
+FIGURE DESCRIPTION: 
+
+
+MACRO-22 Limits of Monetary Control [original]
+CORE: The central bank influences rather than perfectly controls broad money because banks and the public choose how much to lend, hold, deposit, or keep as cash. Excess reserve holding weakens the multiplier process. If banks do not lend excess reserves, the deposit expansion process weakens. The Fed influences the money supply, but banks and depositors affect reserves, lending, and deposits. When banks hold more excess reserves, they lend less, so deposit creation weakens.
+RECOGNITION: The Fed influences the money supply, but banks and depositors affect reserves, lending, and deposits. | When banks hold more excess reserves, they lend less, so deposit creation weakens. | The Fed can influence money creation, but banks and the public also matter. | The central bank adds reserves, but banks choose to hold much of them as excess reserves. | Households convert part of each new bank deposit into currency rather than leaving the funds in banks.
+WATCH: Do not treat the central bank as having mechanical one-for-one control over broad money. The central bank controls its own balance sheet and reserve conditions more directly than broad money, which also depends on banks, borrowers, and the public.
+WORKED: The Fed adds $40 million of reserves, but banks hold half as excess reserves and the public keeps some funds as cash. Because only part of the injection supports new loans and redeposits, broad money rises by less than the simple multiplier predicts. The Fed controls reserves more directly than it controls deposits held by the public.
+CHECK: Why is Fed control of the money supply imperfect?
+FIGURE DESCRIPTION: 
+
+
+MACRO-23 Quantity Theory of Money [original]
+CORE: The quantity equation MV = PY links the money stock and velocity to nominal output. Its growth-rate form separates growth in money and velocity from growth in real output and the price level. When velocity is stable and real output is determined by productive capacity, persistent money growth above real-output growth produces long-run inflation rather than permanently higher real output.
+RECOGNITION: The problem uses MV = PY or relates money growth to inflation. | Velocity measures how often money supports transactions during a period. | With velocity and real output fixed, more money raises the price level. | The question distinguishes a nominal price change from a lasting real-output change.
+WATCH: Do not assume money growth permanently raises real output. The quantity theory connects persistent money growth to inflation, especially in the long run.
+WORKED: In this clean quantity-theory case, velocity V and real output Y are fixed. Money supply doubles from 2,500 (MS1) to 5,000 (MS2). The value of money falls from 2 at a to 1 at b. Since P is its reciprocal, P rises from 1/2 = 0.50 to 1/1 = 1.00: a 100% increase. The graph shows value of money (1/P), not velocity V in MV = PY.
+CHECK: In MV = PY, what does P represent?
+FIGURE DESCRIPTION: With velocity V and real output Y fixed, reciprocal money demand is 1/P = 5000/M. Vertical MS1 at M = 2,500 intersects MD at a, where 1/P = 2. Vertical MS2 at M = 5,000 intersects MD at b, where 1/P = 1. The price level doubles from 0.50 to 1.00; long-run real output is unchanged.
+
+
+MACRO-24 Monetary Neutrality [original]
+CORE: Monetary neutrality means that a lasting change in the money supply changes nominal variables but not real output or employment in the long run. Nominal variables changed, but real output did not. Monetary neutrality means nominal variables can change without changing real variables in the long run. Separate nominal from real variables. A proportional change in nominal wages and prices can leave purchasing power unchanged.
+RECOGNITION: Separate nominal variables, measured in money, from real variables, measured in goods, services, or purchasing power. | A lasting money-supply change can alter the price level and other nominal values in the long run. | Under monetary neutrality, long-run real output and employment remain determined by real resources and technology. | Do not apply long-run neutrality to the short run, when sticky prices can make money affect real activity.
+WATCH: Do not assume money changes real variables permanently in the long run. Monetary neutrality means money affects nominal variables in the long run, not real output or employment.
+WORKED: With velocity V and long-run real output Y fixed, money supply doubles from 2,500 to 5,000. The value of money falls from 2 at a to 1 at b, so P rises from 1/2 = 0.50 to 1/1 = 1.00: a 100% increase. Prices double while long-run real output does not rise. This is monetary neutrality. Value of money (1/P) is not velocity V in MV = PY.
+CHECK: A student says, “If money is neutral, monetary policy can never affect real output.” What is the best correction?
+FIGURE DESCRIPTION: With velocity V and real output Y fixed, reciprocal money demand is 1/P = 5000/M. Vertical MS1 at M = 2,500 intersects MD at a, where 1/P = 2. Vertical MS2 at M = 5,000 intersects MD at b, where 1/P = 1. The price level doubles from 0.50 to 1.00; long-run real output is unchanged.
+
+
+MACRO-25 Fisher Effect [original]
+CORE: The Fisher effect links the nominal interest rate to the real interest rate and expected inflation. The nominal rate approximately equals the real rate plus expected inflation, so lenders generally require a higher nominal rate when they expect faster price growth. This adjustment helps preserve the expected real return, though unexpected inflation can still redistribute purchasing power.
+RECOGNITION: The Fisher equation links nominal rates, real rates, and expected inflation: nominal rate approximately equals real rate plus expected inflation. | Nominal interest rates include expected inflation, so they rise when expected inflation rises. | The Fisher effect says higher expected inflation tends to raise nominal interest rates. | Higher expected inflation tends to be built into higher nominal interest rates. | A bank sets a fixed nominal loan rate today for next year.
+WATCH: Do not use realized inflation to explain a nominal rate chosen before the loan was made. The nominal rate written into a contract reflects expected inflation at the time the contract is set; realized inflation determines the ex post real return.
+WORKED: Real interest is 2% and expected inflation is 6%. The usual approximation gives nominal interest of 2% + 6% = 8%. The exact compounding calculation is (1.02 x 1.06 - 1) x 100 = 8.12%. At a given real rate, higher expected inflation raises the nominal rate lenders require.
+CHECK: A borrower says the Fisher effect is found by subtracting this year’s actual inflation from a loan rate set last year. What is the key mistake?
+FIGURE DESCRIPTION: 
+
+
+MACRO-26 Costs of Inflation [original]
+CORE: Inflation redistributes purchasing power when it differs from expectations and creates shoeleather, menu, and relative-price costs. Actual inflation was higher than expected, so borrowers repay with less valuable dollars. Menu costs are costs of changing posted prices. Shoe-leather costs refer to the time and effort people spend reducing money holdings when inflation is high. Shoeleather costs are the wasted effort people spend trying to hold less money during inflation.
+RECOGNITION: Shoe-leather costs refer to the time and effort people spend reducing money holdings when inflation is high. | Shoeleather costs are the wasted effort people spend trying to hold less money during inflation. | Menu costs are the costs firms face when they change posted prices. | Firms repeatedly changing posted prices incur menu costs. | Menu costs are the costs of changing posted prices.
+WATCH: Do not confuse shoeleather costs with menu costs. Shoeleather costs are the wasted effort people spend trying to hold less money during inflation.
+WORKED: A lender makes a 9% loan expecting 3% inflation, so the expected real return is 6%. Actual inflation turns out to be 10%, making the realized real return approximately 9% - 10% = -1%. Unexpected inflation transfers purchasing power from the lender to the borrower.
+CHECK: A student says, “If everyone correctly expects 6 percent inflation, inflation has no economic costs.” Which response is best?
+FIGURE DESCRIPTION: 
+
+
+MACRO-27 Inflation Tax and Deflation [original]
+CORE: Money creation can finance government spending; the revenue from creating money is seigniorage. When prices rise, existing money balances lose purchasing power, creating an inflation tax on money holders. Disinflation means slower inflation; deflation means a falling price level. Deflation raises the purchasing power of cash but also raises the real burden of a fixed nominal debt.
+RECOGNITION: Money-financed government spending can erode the purchasing power of existing cash balances. | A fall from 6% to 2% inflation is disinflation: prices still rise. | Negative inflation means deflation: the price level falls. | With a fixed nominal debt, lower prices raise the amount of goods needed to repay it.
+WATCH: Do not assume a tax must always be explicit and legislative. Inflation acts like a tax on money holders by reducing the purchasing power of their cash balances.
+WORKED: A household holds $1,000 in cash while the price level rises 10%. Its purchasing power becomes $1,000 / 1.10 = $909.09 in initial-price dollars, a 9.09% loss. If the price level instead falls 10%, a fixed $1,000 debt has a real repayment burden of $1,000 / 0.90 = $1,111.11 in initial-price dollars.
+CHECK: A student looks for an “inflation tax” line on a tax return. What is the best correction?
+FIGURE DESCRIPTION: 
+
+
+MACRO-28 Liquidity Preference and the Money Market [original]
+CORE: Money-market equilibrium occurs where the quantity of money supplied equals the quantity demanded at a particular interest rate. With fixed money supply, higher money demand pushes the interest rate up. Higher money demand with fixed money supply raises interest rates. Liquidity preference theory explains the interest rate as the price that balances money supply and money demand.
+RECOGNITION: Treat the money supply as fixed by policy in the basic liquidity-preference model. | Money demand slopes downward because a higher interest rate raises the opportunity cost of holding money. | The equilibrium interest rate occurs where quantity of money demanded equals quantity supplied. | A money-supply increase lowers the equilibrium interest rate; stronger money demand raises it.
+WATCH: Do not treat a labeled point on a money-supply line as an equilibrium even when it is not on the active money-demand curve. At an interest rate above equilibrium, money supplied exceeds money demanded and asset-market adjustment pushes the rate down; below equilibrium, excess money demand pushes it up.
+WORKED: Money supply increases from 100 to 125 while the money-demand curve is unchanged. The added 25 units move equilibrium down the demand curve, lowering the nominal interest rate from 4% to 2%. The graph therefore illustrates how an expansionary money-supply change reduces the short-term interest rate.
+CHECK: At the current interest rate, households want to hold more money than the fixed money supply provides. Which adjustment moves the market toward equilibrium?
+FIGURE DESCRIPTION: The horizontal axis is quantity of money and the vertical axis is nominal interest rate. Money demand MD0 slopes downward from 12 at quantity 0 to 0 at quantity 150. Original money supply MS0 is vertical at quantity 100, where the equilibrium interest rate is 4. Dashed money supply MS1 is vertical at quantity 125, where the equilibrium interest rate is 2. The graph shows an increase in money supply lowering the equilibrium nominal interest rate by 2 percentage points.
+
+
+MACRO-29 Monetary-Policy Transmission [original]
+CORE: Monetary policy affects output by changing reserves and short-term interest rates, which influence investment, interest-sensitive consumption, and aggregate demand. Expansionary policy increases reserves and tends to lower interest rates, encouraging spending and shifting aggregate demand right. Contractionary policy works in the opposite direction. The strength of the transmission depends on bank lending, borrower response, and spending sensitivity to interest rates.
+RECOGNITION: Begin with the central bank's change in reserves or the money supply. | Trace the resulting change in short-term interest rates. | Connect interest rates to interest-sensitive spending, especially investment and durable consumption. | The spending change shifts aggregate demand and affects output and the price level in the short run.
+WATCH: The graph identifies the direction of the monetary-policy effect, not its size. A multiplier calculation also needs an initial spending change and assumptions about induced consumption and other offsets.
+WORKED: In the money-market panel, contraction from MS1 to MS2 raises the interest rate from r1 to r2. Higher borrowing costs reduce interest-sensitive spending, so aggregate demand shifts from AD1 to AD2. At price level P1, real output demanded falls from Y1 to Y2. The panels display the complete monetary-policy transmission chain.
+CHECK: A student writes only “the central bank increases money supply, so aggregate demand rises.” Which missing links are essential to the standard short-run transmission mechanism?
+FIGURE DESCRIPTION: Left panel: interest rate r is on the vertical axis and money M on the horizontal axis. A downward-sloping MD curve intersects MS1 at r1; MS2 is left of MS1 and intersects MD at the higher rate r2. Right panel: price level P is on the vertical axis and output Y on the horizontal axis. AD2 lies left of AD1. At price level P1, output is Y1 on AD1 and Y2 on AD2.
+
+
+MACRO-30 Fiscal Policy and Aggregate Demand [original]
+CORE: Fiscal policy shifts aggregate demand through changes in government purchases, taxes, and their effects on consumption. Lower purchases and higher taxes both push aggregate demand left. After the first-round spending change, the multiplier process traces additional income-consumption rounds; crowding out can then reduce the net effect. A tax cut raises disposable income, which can increase consumption and shift AD right.
+RECOGNITION: Higher government purchases directly raise aggregate demand; lower purchases reduce it. | Tax changes affect aggregate demand indirectly by changing disposable income and consumption. | Expansionary fiscal policy shifts aggregate demand right; contractionary policy shifts it left. | Distinguish a shift of aggregate demand from a movement along the curve caused by the price level.
+WATCH: A common mistake is to classify fiscal policy from the economy's condition rather than the government's action. Higher purchases or lower taxes are expansionary; lower purchases or higher taxes are contractionary.
+WORKED: At the displayed price level P, an expansionary fiscal action shifts aggregate demand from AD1 to AD2. Real output demanded rises from Y1 to Y2 at that fixed price level. A larger action could shift demand to AD3 and quantity demanded to Y3, but the graph does not establish which package is desirable; that depends on the output gap and timing.
+CHECK: Why can a tax cut shift aggregate demand to the right in the short run?
+FIGURE DESCRIPTION: The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.
+
+
+MACRO-31 Fiscal Multipliers and Crowding Out [original]
+CORE: A spending or tax change can create a multiplied demand response, while higher interest rates can crowd out part of the expansion. Fiscal policy can shift AD right, the multiplier can push it farther, and crowding out can pull the final effect back. Crowding out offsets fiscal expansion by reducing private investment when interest rates rise. Crowding out reduces private investment when fiscal expansion raises interest rates. In the simple fixed-price model with lump-sum taxes and no import leakage, the spending multiplier is 1 / (1 - MPC), and the tax multiplier is -MPC / (1 - MPC).
+RECOGNITION: Initial fiscal shift, multiplier expansion, then crowding out offset. | Crowding out offsets fiscal expansion by reducing private investment when interest rates rise. | Crowding out reduces private investment when fiscal expansion raises interest rates. | Crowding out occurs when higher interest rates reduce private investment spending.
+WATCH: A common mistake is to report a gross multiplier effect without subtracting private spending displaced by higher interest rates. Crowding out makes the net demand increase smaller.
+WORKED: With MPC = 0.8, the simple spending multiplier is 5. A $20 billion increase in purchases raises demand by $100 billion before offsets. In the graph, AD1 to AD3 is the gross expansion; crowding out leaves AD2. At fixed P, real output demanded rises to Y2 rather than Y3. Actual equilibrium output also depends on aggregate supply.
+CHECK: Why might a tax cut have a smaller immediate effect than an equal increase in government purchases?
+FIGURE DESCRIPTION: The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.
+
+
+MACRO-32 Stabilization Policy [original]
+CORE: Stabilization policy uses fiscal or monetary tools and automatic stabilizers to reduce output gaps and inflation pressure. Expansionary policy supports aggregate demand when output is below potential, while contractionary policy restrains demand when the economy is overheating. Recognition, decision, implementation, and impact lags can weaken or even reverse the intended effect if conditions change before policy takes hold.
+RECOGNITION: Identify whether output is below or above potential and whether inflation pressure is weak or strong. | Expansionary policy supports demand in a recession; contractionary policy restrains excessive demand and inflation. | Automatic stabilizers respond without new legislation, while discretionary policy requires a deliberate decision. | Consider recognition, decision, implementation, and impact lags before judging likely stabilization effects.
+WATCH: Do not treat a negative supply shock as if policymakers can simultaneously eliminate its inflation and output effects by shifting AD. Demand stabilization during a negative supply shock involves a tradeoff: supporting output can worsen price pressure, while reducing inflation can deepen the output loss.
+WORKED: A $30 billion spending increase is enacted during a recession but takes effect after recovery. With MPC = 0.8, the simple multiplier is 1 / (1 - 0.8) = 5, so the planned AD increase is $30 billion x 5 = $150 billion. Arriving after the recession, the stimulus can worsen an overheating gap rather than stabilize output.
+CHECK: Which policy acts automatically to cushion a recession without a new vote by Congress?
+FIGURE DESCRIPTION: 
+
+
+MACRO-33 Aggregate Demand [original]
+CORE: Aggregate demand shows the total quantity of domestically produced goods and services demanded at each price level. It slopes downward because a lower price level increases the purchasing power of money balances, tends to reduce interest rates, and makes domestic goods relatively cheaper abroad. Consumption, investment, government purchases, or net exports can change for reasons other than the price level; those changes shift the entire aggregate-demand curve.
+RECOGNITION: At each price level, a rightward AD shift means more real GDP demanded. | In the displayed graph, AD1 lies left of AD0, showing a decrease in aggregate demand. | A lower domestic price level makes domestic goods relatively cheaper to foreign buyers. | A rise in the price level reduces consumption because money holdings buy less.
+WATCH: Do not confuse the three reasons aggregate demand slopes downward. A lower domestic price level can lower interest rates and the currency value, raising net exports.
+WORKED: A fall in planned consumption shifts aggregate demand left from AD0 to AD1. At a price level of 60, real GDP demanded falls from about 120 to about 70, a decrease of about 50 units. Spending changes at every price level, so this is a shift to a new AD curve, not movement along AD0.
+CHECK: What change from AD0 to AD1 is shown?
+FIGURE DESCRIPTION: The horizontal axis is real GDP and the vertical axis is price level. AD0 slopes downward from price level 120 at real GDP 0 to price level 0 at real GDP 240. A dashed curve AD1 lies to the left of AD0, running from about 95 at real GDP 0 to 0 at real GDP 190. This indicates a decrease in aggregate demand. At price level 45, AD0 corresponds to real GDP 150 and AD1 corresponds to real GDP 100.
+
+
+MACRO-34 Short-Run Aggregate Supply [later]
+CORE: Short-run aggregate supply shows the real GDP firms produce at each price level while some wages, input prices, and expectations adjust slowly. It slopes upward because an unexpected rise in the price level can temporarily raise production profitability. A price-level change moves along SRAS; changes in input costs, expected prices, productivity, or business taxes shift the entire curve.
+RECOGNITION: A higher current price level, with determinants fixed, means movement up along SRAS. | Higher expected prices or higher input costs shift SRAS left/up. | Lower input costs or higher productivity shift SRAS right/down. | Short-run output can lie above or below potential output because adjustment is incomplete.
+WATCH: Do not shift SRAS merely because the current price level changes. Ask whether production conditions changed at every price level.
+WORKED: Higher energy prices raise firms' costs. The graph shifts SRAS from AS0 to AS1, upward and left. At real GDP 150, the price level associated with supply rises from roughly 150 to roughly 190. With aggregate demand fixed, the new short-run equilibrium would have lower real GDP and a higher price level.
+CHECK: Expected input prices fall. Does the economy move along SRAS or does SRAS shift?
+FIGURE DESCRIPTION: Price level is vertical and real GDP horizontal. Upward-sloping AS1 lies above and left of AS0, showing a decrease in short-run aggregate supply.
+CARD: ['upward SRAS', 'sticky adjustment', 'SRAS shifters', 'movement versus shift', 'cost shocks']
+
+MACRO-35 Demand and Supply Shocks [later]
+CORE: An aggregate-demand shock shifts AD and moves real GDP and the price level in the same direction. A short-run aggregate-supply shock shifts SRAS and moves real GDP and the price level in opposite directions. Favorable supply shocks raise output and lower the price level; adverse supply shocks lower output and raise the price level, producing stagflation when lower output accompanies inflation.
+RECOGNITION: Spending changes shift AD: consumption, investment, government purchases, or net exports. | Production-cost or expected-price changes shift SRAS. | Demand shock: output and price level move together in the short run. | Supply shock: output and price level move in opposite directions.
+WATCH: Do not classify a shock from the outcome alone when several curves move. Identify the initiating event, shift each curve separately, then combine the effects.
+WORKED: From A, an AD increase alone moves equilibrium to B: output rises from 75 to 100 and the price level from 100 to 125. An adverse SRAS shift alone moves A to D: output falls from 75 to 50 while the price level rises to 125. The second pattern is stagflation.
+CHECK: Oil prices fall sharply. Which curve shifts, and what happens to output and the price level?
+FIGURE DESCRIPTION: AD0 and AD1 slope downward; AS0 and AS1 slope upward. A to B isolates an AD increase. A to D isolates an adverse SRAS shift.
+CARD: ['AD shocks', 'SRAS shocks', 'favorable and adverse shocks', 'stagflation', 'comparative statics']
+
+MACRO-36 Long-Run Macroeconomic Self-Adjustment [later]
+CORE: A recessionary gap has short-run output below potential; an inflationary gap has output above potential. With no new demand shock or discretionary policy, labor-market and input-price adjustment changes SRAS over time. Weak demand for labor in a recessionary gap reduces wage-cost pressure and shifts SRAS right; an inflationary gap raises wage-cost pressure and shifts SRAS left. Output returns toward LRAS.
+RECOGNITION: Compare short-run equilibrium output with the LRAS position to classify the gap. | Below potential: wages and input costs adjust downward, shifting SRAS right. | Above potential: wages and input costs adjust upward, shifting SRAS left. | Self-adjustment changes SRAS; discretionary stabilization deliberately shifts AD.
+WATCH: Do not assume aggregate demand must reverse itself. In the textbook self-correction mechanism, wage and input-price adjustment shifts SRAS along the existing AD curve.
+WORKED: After AD falls to AD1, the short-run equilibrium is Y3, left of LRAS at Y1. Elevated unemployment reduces wage and input-cost pressure, shifting SRAS from AS1 to AS2. The economy moves along AD1 to Y1 at the lower price level P1 without discretionary policy.
+CHECK: Output is above potential and AD is unchanged. Which direction must SRAS move during self-adjustment?
+FIGURE DESCRIPTION: LRAS is vertical at Y1. At AD1 and AS1, output Y3 is below potential. A rightward SRAS shift to AS2 restores output Y1 at a lower price level.
+CARD: ['recessionary gap', 'inflationary gap', 'wage adjustment', 'SRAS self-correction', 'policy distinction']
+
+MACRO-37 Short-Run Phillips Curve [original]
+CORE: The short-run Phillips curve shows an inverse relationship between inflation and unemployment when expected inflation is fixed. With expected inflation initially fixed, a demand change moves the economy along the current SRPC. The LRPC is vertical at the natural rate because expected inflation adjusts in the long run. The short-run Phillips curve shows that lower unemployment is associated with higher inflation, and higher unemployment is associated with lower inflation.
+RECOGNITION: A short-run tradeoff between inflation and unemployment. | Higher AD raises output and prices, which maps to lower unemployment and higher inflation. | The short-run Phillips curve shows a trade-off between inflation and unemployment. | A move up and left along the displayed SRPC means lower unemployment and higher inflation.
+WATCH: Do not confuse the Phillips curve with the AD-AS model. The short-run Phillips curve shows that lower unemployment is associated with higher inflation, and higher unemployment is associated with lower inflation.
+WORKED: Point A is at 5 percent unemployment and 2.5 percent inflation. The horizontal guide through point A hits the inflation axis at 2.5 percent. Therefore, 2.5 percent. A downward-sloping SRPC shows an inverse short-run relationship: less unemployment comes with more inflation.
+CHECK: On a Phillips graph, moving upward and left along one SRPC means what?
+FIGURE DESCRIPTION: Point A is at 5 percent unemployment and 2.5 percent inflation. LRPC is vertical at 5 percent unemployment.
+
+
+MACRO-38 Long-Run Phillips Curve [original]
+CORE: The long-run Phillips curve is vertical at the natural unemployment rate because expected inflation eventually adjusts. A change in labor-market structure can shift the vertical LRPC to a new natural rate. Expected inflation adjusts, the SRPC shifts, and unemployment returns toward its natural rate. The long-run Phillips curve is vertical at the natural rate of unemployment.
+RECOGNITION: The long-run Phillips curve is vertical at the natural rate of unemployment. | Expected inflation rises from 2 percent to 5 percent while unemployment remains at its natural rate. | The LRPC is vertical at the natural rate because expected inflation adjusts in the long run. | A national job-matching system reduces the time workers spend searching for suitable positions.
+WATCH: Do not treat a higher expected inflation rate as a permanent way to lower unemployment. Along the long-run Phillips curve, different inflation rates can coexist with the same natural rate of unemployment.
+WORKED: The vertical LRPC is drawn at 5% unemployment. A temporary demand expansion can move unemployment below 5% along a short-run Phillips curve, but expected inflation eventually adjusts and the short-run curve shifts. Unemployment returns to the 5% natural rate at a higher inflation rate, so no permanent tradeoff remains.
+CHECK: Why does higher inflation not permanently lower unemployment in the natural-rate model?
+FIGURE DESCRIPTION: Phillips curve graph with SRPC0, shifted SRPC1, LRPC at 5 percent unemployment, point A at 5 percent unemployment and 3 percent inflation, and point B at 6 percent unemployment and 6 percent inflation.
+
+
+MACRO-39 Phillips-Curve Expectations [original]
+CORE: Expected inflation and supply shocks shift the short-run Phillips curve rather than moving the economy along one curve. Higher expected inflation raises actual inflation at each unemployment rate and shifts the curve upward; lower expectations shift it downward. Adverse supply shocks can also raise inflation at a given unemployment rate. A demand change, by contrast, moves the economy along the current short-run curve while expectations remain fixed.
+RECOGNITION: A movement along one short-run Phillips curve reflects a change in aggregate demand with expected inflation fixed. | Higher expected inflation shifts the short-run Phillips curve upward; lower expected inflation shifts it downward. | An adverse supply shock can shift the curve upward by raising inflation at each unemployment rate. | Compare inflation at the same unemployment rate to identify a shift rather than a movement along the curve.
+WATCH: Do not confuse a curve shift with movement along one curve. At the same unemployment rate, a higher SRPC reflects higher expected inflation or a worse tradeoff.
+WORKED: The economy begins at point b on SRPC2 with unemployment U2 and inflation I2. When expected inflation falls, the short-run Phillips curve shifts downward to SRPC1. At the natural unemployment rate U2, the economy reaches point c with lower inflation I1. Expectations, not a permanent unemployment change, drive the shift.
+CHECK: Does a credible announcement guarantee costless disinflation?
+FIGURE DESCRIPTION: The horizontal axis is unemployment rate and the vertical axis is inflation rate. A vertical LRPC stands at U2. SRPC1 is the lower/left downward-sloping curve and SRPC2 is the higher/right downward-sloping curve. Point a is at U1/I2 on SRPC1, point b is at U2/I2 where SRPC2 meets the LRPC, point c is at U2/I1 where SRPC1 meets the LRPC, and point d is at U3/I1 on SRPC2. Dashed guides mark unemployment rates U1-U3 and inflation rates I1-I2.
+
+
+MACRO-40 Disinflation and Policy [original]
+CORE: Disinflation lowers the inflation rate but usually creates temporary output and employment costs while expectations adjust. Contraction reduces aggregate demand and inflation pressure, normally creating a short-run output gap and higher unemployment. Expected inflation adjusts, the SRPC shifts, and unemployment returns toward its natural rate. Disinflation is a decline in the inflation rate; deflation is a decline in the price level.
+RECOGNITION: Disinflation means the inflation rate is falling, not that the price level is falling. | Contractionary policy initially moves the economy along the existing short-run Phillips curve toward higher unemployment. | As expected inflation falls, the short-run Phillips curve shifts downward. | Credible policy and flexible expectations can reduce the output and employment cost of lowering inflation.
+WATCH: Do not confuse a lower positive inflation rate with a falling price level. Disinflation is a decline in the inflation rate; deflation is a decline in the price level.
+WORKED: Contractionary policy first moves the economy along SRPC2 from b to d, lowering inflation from I2 to I1 while unemployment rises from U2 to U3. As expected inflation adjusts downward, SRPC shifts to SRPC1 and unemployment returns to U2 at point c. Disinflation creates a temporary employment cost.
+CHECK: Inflation falls from 5% to 2% but remains positive. Did the price level fall?
+FIGURE DESCRIPTION: The horizontal axis is unemployment rate and the vertical axis is inflation rate. A vertical LRPC stands at U2. SRPC1 is the lower/left downward-sloping curve and SRPC2 is the higher/right downward-sloping curve. Point a is at U1/I2 on SRPC1, point b is at U2/I2 where SRPC2 meets the LRPC, point c is at U2/I1 where SRPC1 meets the LRPC, and point d is at U3/I1 on SRPC2. Dashed guides mark unemployment rates U1-U3 and inflation rates I1-I2.
+
+
+MACRO-41 Sacrifice Ratio [original]
+CORE: The sacrifice ratio measures cumulative output lost for each percentage-point reduction in inflation. Credibility can speed expectations adjustment, but disinflation costs depend on model assumptions and wage-price adjustment. The preferred path depends on credibility, expectations, adjustment speed, uncertainty, and cumulative costs. The sacrifice ratio measures how much output is lost when inflation is reduced. If expected inflation falls faster, the short-run cost of disinflation can be smaller.
+RECOGNITION: The sacrifice ratio measures how much output is lost when inflation is reduced. | If expected inflation falls faster, the short-run cost of disinflation can be smaller. | The sacrifice ratio measures cumulative output loss per percentage-point reduction in inflation. | A disinflation has a lower sacrifice ratio than another. | Faster adjustment of expected inflation reduces the output cost of disinflation.
+WATCH: A common mistake is to divide the dollar output loss directly by the inflation change. First express the loss as a percentage of potential output, then divide by the percentage-point reduction in inflation.
+WORKED: Potential output is $400 billion and cumulative output loss during disinflation is $24 billion. The loss is $24 / $400 = 6% of potential output. Inflation falls by 3 percentage points, so the sacrifice ratio is 6 / 3 = 2: the economy loses 2% of one year's output per percentage-point reduction in inflation.
+CHECK: Should annual output gaps be added before calculating a multi-year sacrifice ratio?
+FIGURE DESCRIPTION: 
+
+
+MACRO-42 Saving, Investment, and National-Saving Identities [later]
+CORE: With net taxes T, private saving is Y - T - C and public saving is T - G. National saving is their sum: S = Y - C - G. In a closed economy, S = I. In an open economy, S = I + NCO; because NX = NCO in the course model, S = I + NX. These are aggregate identities, not claims that each saver directly funds one investor.
+RECOGNITION: Budget surplus means T - G is positive; a deficit makes public saving negative. | Adding private and public saving cancels T and gives Y - C - G. | Use S = I only for the closed-economy model. | In an open economy, saving can finance domestic investment or net capital outflow.
+WATCH: Do not reverse the public-saving sign. T - G is public saving; G - T is the budget deficit. Also state the closed-economy assumption before writing S = I.
+WORKED: Let Y = $1,200, T = $150, C = $760, and G = $260. Private saving is $290; public saving is -$110; national saving is $180. If domestic investment is $140, then NCO = S - I = $40. The accounting identity also gives NX = $40.
+CHECK: Private saving is $220 and public saving is -$50. What is national saving?
+FIGURE DESCRIPTION: 
+CARD: ['Private saving = Y - T - C', 'Public saving = T - G', 'National saving = Y - C - G', 'Closed: S = I', 'Open: S = I + NCO; NX = NCO']
+
+MACRO-43 Loanable-Funds Equilibrium [later]
+CORE: In the closed-economy loanable-funds model, national saving supplies funds and desired investment demands them. A higher real interest rate encourages saving and makes fewer investment projects profitable, so supply slopes upward and demand downward. Equilibrium occurs where desired saving equals desired investment; the real rate coordinates the two plans.
+RECOGNITION: Vertical axis: real interest rate; horizontal axis: quantity of loanable funds. | Saving is the source of supply; investment is an important source of demand. | Below equilibrium, desired investment exceeds desired saving and the real rate is pushed up. | Above equilibrium, desired saving exceeds desired investment and the real rate is pushed down.
+WATCH: S = I at equilibrium does not mean desired saving equals desired investment at every possible real rate. The real rate adjusts to reconcile the plans.
+WORKED: The upward saving curve S0 and downward investment curve D0 meet at A. The equilibrium quantity is 140 and the real interest rate is 8 percent. A rate below 8 percent would create excess demand for funds; a rate above 8 percent would create excess supply.
+CHECK: At a real rate below equilibrium, which planned quantity is larger: saving or investment?
+FIGURE DESCRIPTION: Upward saving supply S0 and downward investment demand D0 intersect at quantity 140 and real interest rate 8 percent.
+CARD: ['saving supply', 'investment demand', 'real rate', 'equilibrium quantity', 'market adjustment']
+
+MACRO-44 Loanable-Funds Shifts [later]
+CORE: A change in national saving shifts loanable-funds supply; a change in expected investment profitability shifts demand. Saving incentives or higher public saving can shift supply right. A larger budget deficit can shift supply left. Investment tax incentives, technology, or stronger expected sales can shift demand right. The real interest rate itself causes movement along both curves.
+RECOGNITION: More saving at every real rate shifts supply right; less saving shifts it left. | More profitable investment projects shift demand right; fewer shift it left. | Supply right lowers the real rate and raises equilibrium funds. | Demand right raises both the real rate and equilibrium funds.
+WATCH: Do not shift a curve because the equilibrium real rate changed. First identify the non-rate event; then move along the other unchanged curve to the new equilibrium.
+WORKED: A tax incentive makes households more willing to save at every real rate. Supply shifts right from S0 to S1 while investment demand D0 stays fixed. Equilibrium moves from A to B: the real rate falls from 8 to 6 percent and loanable funds rise from 80 to 120.
+CHECK: New technology raises expected returns on capital. Which curve shifts, and what happens to the real rate?
+FIGURE DESCRIPTION: Loanable-funds supply shifts right from S0 to S1 along demand D0. The real rate falls from 8 to 6 and quantity rises from 80 to 120.
+CARD: ['supply shifters', 'demand shifters', 'saving incentives', 'investment incentives', 'shift versus movement']
+
+MACRO-45 Crowding Out and Capital Formation [later]
+CORE: A larger budget deficit reduces public saving and, other things equal, national saving. Loanable-funds supply shifts left, raising the equilibrium real interest rate. Some private investment projects become unprofitable, so investment falls along the demand curve: crowding out. Less investment can slow capital accumulation, productivity growth, and future potential output.
+RECOGNITION: Begin with deficit up -> public saving down -> national saving down. | Lower national saving shifts loanable-funds supply left. | A higher real rate reduces investment through movement along demand. | The long-run concern is less capital formation, not an automatic collapse of all investment.
+WATCH: Do not say every dollar of deficit eliminates one dollar of investment. The size of crowding out depends on market responses and, in an open economy, international capital flows.
+WORKED: The deficit reduces national saving, shifting supply left from S0 to S1. With demand D0 fixed, equilibrium moves from A to B: the real rate rises from 7 to 8 percent and investment falls from 100 to 80. Repeatedly lower investment can leave a smaller future capital stock.
+CHECK: Why does a higher real interest rate reduce private investment in this model?
+FIGURE DESCRIPTION: Loanable-funds supply shifts left from S0 to S1 along D0. The real rate rises from 7 to 8 and equilibrium investment falls from 100 to 80.
+CARD: ['budget deficit', 'national saving', 'real interest rate', 'crowding out', 'capital accumulation']
+
+MACRO-46 Budget Accounting and Public Saving [later]
+CORE: In the course saving model, T is net tax revenue and G is government purchases. Public saving is T - G. A positive value is a budget surplus; a negative value is a budget deficit. The deficit is G - T, the opposite sign. When fiscal data use total outlays instead, use the categories stated in that dataset rather than silently mixing definitions.
+RECOGNITION: Revenue above spending: surplus and positive public saving. | Spending above revenue: deficit and negative public saving. | Equal revenue and spending: balanced budget and zero public saving. | A deficit is a flow measured over a period; debt is an accumulated stock.
+WATCH: Keep signs straight: a $40 deficit means public saving is -$40, not +$40. State whether G means government purchases or the source's broader outlays measure.
+WORKED: Net tax revenue is $520 billion and government purchases are $560 billion. Public saving is T - G = -$40 billion. The budget deficit is G - T = +$40 billion. Both statements describe the same imbalance using opposite signs.
+CHECK: If T = $680 billion and G = $650 billion, what are public saving and the budget balance?
+FIGURE DESCRIPTION: 
+CARD: ['Public saving = T - G', 'Surplus = T - G > 0', 'Deficit = G - T > 0', 'Balanced budget: T = G', 'Deficit is a flow; debt is a stock']
+
+MACRO-47 Deficits, Debt, and Government Borrowing [later]
+CORE: A budget deficit occurs when government outlays exceed revenues during a period; it is financed by borrowing and tends to add to public debt. A surplus can reduce debt if used for repayment. Debt is the accumulated stock of outstanding borrowing, not the current year's deficit. Borrowing can finance valuable investment or current spending, so its effects depend on use, scale, interest costs, and economic conditions.
+RECOGNITION: Deficit: one period's negative budget balance; debt: outstanding stock at a date. | New borrowing generally rises with a deficit and adds to debt. | Interest payments can absorb future budget resources. | Lower public saving links deficits to loanable funds and possible crowding out.
+WATCH: Do not call the debt the sum of all past spending or claim all debt is automatically harmful. Debt changes with deficits, surpluses, interest, repayments, and accounting adjustments.
+WORKED: Public debt begins at $900 billion. A $120 billion deficit adds borrowing; the next year's $20 billion surplus is used to repay debt. Ignoring other adjustments, debt becomes $900 + $120 - $20 = $1,000 billion. The two annual balances are flows; $1,000 billion is the ending stock.
+CHECK: Can the debt remain positive in a year with a budget surplus? Explain briefly.
+FIGURE DESCRIPTION: 
+CARD: ['Deficit adds to borrowing', 'Surplus can repay debt', 'Ending debt = beginning debt + deficit - surplus', 'Interest costs use future resources', 'Economic effects depend on context']
+
+MACRO-48 Debt Measures, Debt Burden, and Fiscal Data [later]
+CORE: The debt level is a nominal dollar stock; the debt-to-GDP ratio compares that stock with the economy's annual income and productive capacity. Ratios support comparisons across time and economies, but they do not by themselves prove sustainability. Interest rates, economic growth, revenues, primary balances, maturity, and investor confidence also matter at a Principles level.
+RECOGNITION: Debt-to-GDP = public debt divided by nominal GDP, multiplied by 100 percent. | Debt can rise while debt-to-GDP falls if nominal GDP grows faster. | Interest burden can be compared with GDP, revenue, or total outlays. | Nominal levels answer size questions; ratios answer size-relative-to-capacity questions.
+WATCH: Do not interpret one ratio as a mechanical crisis threshold. Use consistent definitions and dates, then combine the ratio with growth, interest costs, and budget information.
+WORKED: Debt rises from $6.0 trillion to $6.6 trillion while nominal GDP rises from $24.0 trillion to $27.5 trillion. Debt-to-GDP moves from 25.0% to 24.0%. The debt level increased, but the economy's nominal scale grew faster, so the relative measure fell.
+CHECK: Debt is $9 trillion and nominal GDP is $30 trillion. What is the debt-to-GDP ratio?
+FIGURE DESCRIPTION: 
+CARD: ['Debt-to-GDP = debt / nominal GDP x 100%', 'Level: nominal stock', 'Ratio: stock relative to economic scale', 'Interest burden = interest / chosen base', 'Sustainability depends on several conditions']
+
+MACRO-49 Deposit Creation and the Money Multiplier [later]
+CORE: In the simple textbook model, banks keep the required fraction of deposits as reserves and lend the rest. When loan proceeds are redeposited, another bank can lend part again. The repeated process creates deposits. The simple money multiplier m = 1 / rr gives the theoretical maximum total deposit expansion per dollar of new reserves under full lending and redepositing.
+RECOGNITION: Required reserves = reserve ratio x deposits; excess reserves can support new lending. | A lower reserve ratio produces a larger simple multiplier. | Each lending round is smaller because a fraction is retained as reserves. | Currency holding and excess reserves make actual expansion smaller than the maximum.
+WATCH: Do not confuse the multiplier with bank capital or claim that one bank lends the entire multiplied amount. The multiplier summarizes repeated system-wide rounds under restrictive assumptions.
+WORKED: With rr = 10%, the simple multiplier is 1 / 0.10 = 10. If $1,000 of new reserves enters the banking system, maximum total deposits are $10,000. Banks collectively retain $1,000 as required reserves and can support up to $9,000 of new loans. Cash holding or excess reserves lowers the result.
+CHECK: If rr rises from 10% to 20%, what happens to the simple multiplier?
+FIGURE DESCRIPTION: 
+CARD: ['Required reserves = rr x deposits', 'Excess reserves = actual - required', 'Simple multiplier m = 1 / rr', 'Maximum deposits = new reserves x m', 'Actual expansion can be smaller']
+
+MACRO-50 Long-Run Aggregate Supply and Potential Output [later]
+CORE: Long-run aggregate supply is vertical at potential output, the sustainable output level associated with normal resource use and the natural rate of unemployment. In the long run, the price level does not determine real productive capacity. Labor, physical and human capital, natural resources, institutions, and technology or productivity determine LRAS.
+RECOGNITION: A current-output change is not automatically a change in potential output. | More labor, capital, resources, or productivity shifts LRAS right. | Loss of productive resources or persistent lower productivity can shift LRAS left. | A vertical LRAS means higher prices alone do not create more long-run real output.
+WATCH: Do not shift LRAS because aggregate demand changes. Demand can move actual output away from potential in the short run; productive-capacity changes move the LRAS line.
+WORKED: A lasting productivity improvement shifts LRAS from 100 to 115. The graph also shows SRAS shifting right/down. With AD0 unchanged, long-run equilibrium moves from A to B: potential output rises to 115 and the price level falls from 125 to 110. The key LRAS result is higher sustainable real GDP.
+CHECK: A recession lowers actual output but leaves labor, capital, and technology unchanged. Does LRAS shift?
+FIGURE DESCRIPTION: Vertical LRAS shifts right from output 100 to 115 after a positive supply-side change; the new long-run equilibrium has higher output.
+CARD: ['vertical LRAS', 'potential output', 'productive capacity', 'LRAS shifters', 'actual versus potential output']
+
+MACRO-51 AD-AS Equilibrium and Output Gaps [later]
+CORE: Short-run macroeconomic equilibrium occurs where AD intersects SRAS, determining real GDP and the price level. LRAS marks potential output. If the short-run intersection lies left of LRAS, the economy has a recessionary gap; if it lies right, an inflationary gap. Long-run equilibrium requires AD, SRAS, and LRAS to meet at potential output.
+RECOGNITION: First locate the active AD-SRAS intersection; then compare its output with LRAS. | Left of LRAS: recessionary gap and output below potential. | Right of LRAS: inflationary gap and output above potential. | At LRAS: output equals potential, though the equilibrium price level can differ across scenarios.
+WATCH: Do not call the rightmost or highest labeled point long-run equilibrium. A point is long-run equilibrium only when its output lies on LRAS and both AD and SRAS pass through it.
+WORKED: Point C is initial long-run equilibrium at output 100 and price level 125. AD rises from AD0 to AD1, moving short-run equilibrium to D at output 125 and price level 150: an inflationary gap. Later SRAS shifts left to SRAS1, moving equilibrium to B on LRAS at output 100 and price level 175.
+CHECK: An AD-SRAS intersection lies left of LRAS. What gap exists, and how does actual output compare with potential?
+FIGURE DESCRIPTION: AD, SRAS, and vertical LRAS are shown together. Point C is long-run equilibrium; D lies right of LRAS; B returns to LRAS after SRAS adjustment.
+CARD: ['short-run equilibrium', 'long-run equilibrium', 'potential output', 'recessionary gap', 'inflationary gap']
+
+MACRO-52 International Transactions and Open-Economy Identities [later]
+CORE: Net exports are exports minus imports: NX = X - M. Positive NX is a trade surplus; negative NX is a trade deficit. Net capital outflow is domestic purchases of foreign assets minus foreign purchases of domestic assets. In the course accounting model, NX = NCO. National saving finances domestic investment and NCO, so S = I + NCO = I + NX.
+RECOGNITION: Exports add to NX; imports subtract from NX. | A domestic resident buying a foreign asset raises capital outflow and NCO. | A foreign resident buying a domestic asset lowers NCO and is a capital inflow. | If S exceeds I, the difference is positive NCO and positive NX.
+WATCH: Do not import Micro tariff or comparative-advantage analysis into these identities. Also do not call a trade deficit a mathematical error: it corresponds to negative NCO in the accounting model.
+WORKED: Exports are $300 billion and imports are $360 billion, so NX = -$60 billion. Residents buy $90 billion of foreign assets while foreigners buy $150 billion of domestic assets, so NCO = $90 - $150 = -$60 billion. If investment is $240 billion, saving is I + NCO = $180 billion.
+CHECK: National saving is $250 billion and investment is $210 billion. What are NCO and NX?
+FIGURE DESCRIPTION: 
+CARD: ['NX = exports - imports', 'NCO = domestic foreign-asset purchases - foreign domestic-asset purchases', 'NX = NCO', 'S = I + NCO', 'Therefore S = I + NX']
+
+MACRO-53 Nominal Exchange Rates and Currency Values [later]
+CORE: The nominal exchange rate states how much one currency trades for another. This course uses foreign currency per U.S. dollar for its dollar-market graphs. A higher value means one dollar buys more foreign currency, so the dollar appreciates; a lower value means dollar depreciation. Always write the units before converting or interpreting a percentage change.
+RECOGNITION: Foreign currency per dollar: multiply dollars by the quoted rate to obtain foreign currency. | To convert foreign currency back to dollars, divide by foreign currency per dollar. | A rise from 0.90 to 0.99 foreign units per dollar is a 10% dollar appreciation. | The reciprocal quotation moves in the opposite direction.
+WATCH: Never say only 'the exchange rate rose.' Name the quotation. A rise in foreign currency per dollar is dollar appreciation, but a rise in dollars per foreign currency means dollar depreciation.
+WORKED: At 0.90 euros per U.S. dollar, $200 buys 200 x 0.90 = 180 euros. If the quote rises to 0.99 euros per dollar, the dollar appreciates by (0.99 - 0.90) / 0.90 = 10%. The same $200 then buys 198 euros.
+CHECK: The quote falls from 1.20 to 1.08 foreign units per dollar. Did the dollar appreciate or depreciate, and by what percent?
+FIGURE DESCRIPTION: 
+CARD: ['Course quote: foreign currency / U.S. dollar', 'Foreign currency = dollars x quote', 'Dollars = foreign currency / quote', '% change = (new - old) / old x 100', 'Higher quote = dollar appreciation']
+
+MACRO-54 Real Exchange Rates and Purchasing Power [later]
+CORE: Let e be foreign currency per domestic currency, P the domestic price level, and P* the foreign price level. The course convention is epsilon = e x P / P*. A higher epsilon is a real appreciation: domestic goods are relatively more expensive. Purchasing-power parity suggests epsilon tends toward 1 when comparable traded goods can be arbitraged, but transport costs, trade barriers, nontraded goods, and market frictions prevent exact short-run equality.
+RECOGNITION: Nominal e compares currencies; real epsilon compares basket prices after conversion. | A higher e or P raises epsilon; a higher P* lowers epsilon, other things equal. | Real appreciation tends to reduce exports and raise imports. | Relative PPP links currency changes to inflation differentials over longer horizons.
+WATCH: Do not invert the formula by importing another textbook's quotation. Write e's units first. Here e is foreign currency per domestic currency, so epsilon = eP/P*.
+WORKED: A U.S. basket costs $50, a comparable foreign basket costs 40 foreign units, and e = 0.80 foreign units per dollar. Then epsilon = 0.80 x 50 / 40 = 1.00. If the U.S. price rises to $55 with e and P* fixed, epsilon becomes 1.10: a 10% real appreciation.
+CHECK: With e and P fixed, foreign prices rise. Does epsilon rise or fall under the course formula?
+FIGURE DESCRIPTION: 
+CARD: ['e: foreign currency / domestic currency', 'epsilon = e x P / P*', 'Higher epsilon = real appreciation', 'PPP benchmark: epsilon near 1', 'Approx.: % change epsilon = %e + domestic inflation - foreign inflation']
+
+MACRO-55 Capital Flows and Net Capital Outflow [later]
+CORE: Net capital outflow equals domestic residents' purchases of foreign assets minus foreign residents' purchases of domestic assets. Positive NCO is net capital outflow; negative NCO is net capital inflow. Capital tends to move toward more attractive risk-adjusted returns. In the textbook model, a higher domestic real interest rate lowers NCO and therefore reduces the supply of dollars in the foreign-exchange market.
+RECOGNITION: A U.S. resident buying a foreign bond raises U.S. NCO. | A foreign resident buying a U.S. asset lowers U.S. NCO. | Higher domestic real returns attract inflow and discourage outflow, lowering NCO. | NCO supplies dollars to the FX market as residents acquire foreign assets.
+WATCH: NCO and NX describe different transactions: assets versus goods and services. They are equal as an accounting relationship in the course model, not because every asset purchase is an export.
+WORKED: U.S. residents buy $140 billion of foreign assets; foreigners buy $90 billion of U.S. assets. U.S. NCO is $140 - $90 = +$50 billion, a net outflow. That positive NCO supplies dollars in exchange for foreign currency and corresponds to NX of +$50 billion.
+CHECK: Foreign purchases of U.S. assets rise while U.S. foreign-asset purchases are fixed. What happens to U.S. NCO?
+FIGURE DESCRIPTION: 
+CARD: ['NCO = domestic purchases of foreign assets', '      - foreign purchases of domestic assets', 'Positive NCO = net outflow', 'Higher domestic real rate -> lower NCO', 'In the course model: NCO = NX']
+
+MACRO-56 Foreign-Exchange Market Equilibrium [later]
+CORE: The foreign-exchange market determines the exchange rate and quantity of dollars exchanged. The course graphs place foreign currency per U.S. dollar vertically, so a higher value is dollar appreciation. Demand for dollars slopes downward; the core graph family uses upward-sloping supply. Foreign demand for U.S. goods or assets can raise dollar demand, while stronger U.S. demand for foreign goods or assets can raise dollar supply.
+RECOGNITION: Demand right raises the exchange rate and quantity: dollar appreciation. | Supply right lowers the exchange rate and raises quantity: dollar depreciation. | Simultaneous shifts can make one equilibrium outcome indeterminate. | Read the axis convention before translating up/down into appreciation/depreciation.
+WATCH: Do not use an inverse quotation. On these graphs, moving upward means more foreign currency per dollar and therefore appreciation of the U.S. dollar.
+WORKED: Dollar demand shifts from D0 to D1 while S0 remains fixed. Equilibrium moves from A to B: quantity rises from 100 to 150 and the exchange rate rises from 1.0 to 1.2 foreign units per dollar. The higher quote means the U.S. dollar appreciates.
+CHECK: Dollar supply shifts right while demand stays fixed. What happens to the dollar and to quantity exchanged?
+FIGURE DESCRIPTION: Foreign currency per U.S. dollar is vertical and quantity of dollars horizontal. Demand shifts right from D0 to D1 along S0, raising the rate from 1.0 to 1.2 and quantity from 100 to 150.
+CARD: ['dollar demand', 'dollar supply', 'equilibrium', 'appreciation and depreciation', 'simultaneous shifts']
+
+MACRO-57 Open-Economy Policy and Macroeconomic Transmission [later]
+CORE: Open-economy policy analysis connects several markets. Here the FX panel uses vertical dollar supply fixed by NCO at a given real interest rate, rather than the upward-sloping gross-flow supply in the basic FX market. Hold domestic and foreign price levels fixed when interpreting the nominal exchange-rate change. A larger budget deficit lowers public and national saving, raises the real interest rate, reduces investment and NCO, and shifts the supply of dollars left. With dollar demand fixed, the dollar appreciates and net exports fall. The NX decline and investment crowding out can partly offset the direct aggregate-demand effect of higher government purchases.
+RECOGNITION: Write the chain market by market; do not skip from policy directly to the exchange rate. | Higher domestic real rates lower NCO by making domestic assets relatively attractive. | Lower NCO means fewer dollars supplied in the FX market. | Dollar appreciation makes U.S. goods relatively dearer and reduces NX.
+WATCH: Do not claim a fixed quantitative offset or that every fiscal expansion changes output by the same amount. The model identifies directions; magnitudes depend on responses across markets.
+WORKED: Suppose a deficit raises the real rate and lowers NCO. In the graph, dollar supply falls from NCO0 = 100 to NCO1 = 50. Equilibrium moves from A to B, and the exchange rate rises from 1.0 to 1.5 foreign units per dollar. Dollar appreciation reduces NX; higher rates also crowd out some investment.
+CHECK: Capital flight raises NCO. Trace the likely directions of dollar supply, the dollar's value, and NX.
+FIGURE DESCRIPTION: With D0 = NX0 fixed, vertical dollar supply shifts left from S0 = NCO0 at 100 to S1 = NCO1 at 50. The foreign-currency-per-dollar rate rises from 1.0 to 1.5.
+CARD: ['fiscal policy', 'real interest rate', 'NCO', 'FX supply', 'exchange rate and NX', 'aggregate demand']

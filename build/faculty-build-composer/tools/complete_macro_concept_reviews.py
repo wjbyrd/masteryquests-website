@@ -471,6 +471,24 @@ def draw_bullets(c: canvas.Canvas, items: list[str], x: float, y: float, width: 
     return y
 
 
+def recognition_layout(core: str, items: list[str]) -> tuple[float, float]:
+    """Use available section space for a sixth core line without shrinking text."""
+    core_lines = len(wrapped_lines(core, REGULAR, 8.15, 500))
+    heading_y = 526 - max(0, core_lines - 5) * 12
+    baseline = heading_y - 16
+    cursor = baseline
+    last = cursor
+    for item in items:
+        count = len(wrapped_lines(item, REGULAR, 8.35, 480))
+        if count > 2:
+            raise ValueError("Recognition item exceeds the reviewed layout")
+        last = cursor - (count - 1) * 9.8
+        cursor -= count * 9.8 + 2
+    if core_lines > 6 or last < 459:
+        raise ValueError("Core/recognition sections need more space; do not overlap or shrink")
+    return heading_y, baseline
+
+
 def rounded_box(c: canvas.Canvas, x: float, y: float, w: float, h: float, fill: Color, stroke: Color, radius: float = 8) -> None:
     c.setFillColor(fill)
     c.setStrokeColor(stroke)
@@ -512,15 +530,23 @@ def draw_graph_asset(c: canvas.Canvas, asset_path: Path, x: float, y: float, w: 
 
 
 def draw_formula_card(c: canvas.Canvas, review: dict[str, Any]) -> None:
+    items = review.get("formulaLines", review["tested"][:5])
+    line_counts = [len(wrapped_lines(line, REGULAR, 7.2, 138)) for line in items]
+    # Embedded Vera can wrap a long identity onto a third line. Use the
+    # existing card's available height, without shrinking or dropping text.
+    # draw_wrapped returns the next baseline, followed by a four-point gap.
+    # Check the last painted baseline rather than that unused next cursor.
+    if 307 - sum(count * 8.0 + 4 for count in line_counts) + 12 < 226:
+        raise ValueError("Formula card exceeds available height; do not truncate or shrink it")
     rounded_box(c, 94, 218, 170, 126, PALE, TEAL, 7)
     c.setFillColor(DEEP_TEAL)
     c.setFont(BOLD, 9.5)
     c.drawCentredString(179, 326, "KEY RELATIONSHIPS")
     y = 307
-    for line in review.get("formulaLines", review["tested"][:5]):
+    for line, line_count in zip(items, line_counts):
         c.setFillColor(TEAL)
         c.circle(107, y + 2, 2.5, stroke=0, fill=1)
-        y = draw_wrapped(c, line, 116, y, 138, size=7.2, leading=8.0, max_lines=2) - 4
+        y = draw_wrapped(c, line, 116, y, 138, size=7.2, leading=8.0, max_lines=line_count) - 4
 
 
 def draw_review(review: dict[str, Any], output: Path, logo_path: Path, asset_root: Path) -> None:
@@ -553,8 +579,8 @@ def draw_review(review: dict[str, Any], output: Path, logo_path: Path, asset_roo
     c.setFillColor(INK); c.setFont(REGULAR, 8.2); c.drawString(501, 672.5, review["difficulty"])
 
     title_size = 17.2
-    while stringWidth(review["title"], BOLD, title_size) > 540 and title_size > 10.5:
-        title_size -= 0.4
+    if stringWidth(review["title"], BOLD, title_size) > width - 48:
+        raise ValueError("Title needs a reviewed wrap; do not shrink it to fit")
     c.setFillColor(NAVY); c.setFont(BOLD, title_size)
     c.drawCentredString(width / 2, 624, review["title"])
 
@@ -563,10 +589,11 @@ def draw_review(review: dict[str, Any], output: Path, logo_path: Path, asset_roo
     c.setStrokeColor(TEAL); c.setLineWidth(0.8); c.line(80, 590, 582, 590)
     draw_wrapped(c, review["core"], 80, 578, 500, size=8.15, leading=9.2, max_lines=6)
 
-    draw_icon(c, 50, 521, "?")
-    c.setFillColor(NAVY); c.setFont(BOLD, 14); c.drawString(80, 526, "HOW TO RECOGNIZE IT")
-    c.setStrokeColor(TEAL); c.line(80, 521, 582, 521)
-    draw_bullets(c, review["recognition"], 85, 510, 492)
+    recognition_y, recognition_baseline = recognition_layout(review["core"], review["recognition"])
+    draw_icon(c, 50, recognition_y - 5, "?")
+    c.setFillColor(NAVY); c.setFont(BOLD, 14); c.drawString(80, recognition_y, "HOW TO RECOGNIZE IT")
+    c.setStrokeColor(TEAL); c.line(80, recognition_y - 5, 582, recognition_y - 5)
+    draw_bullets(c, review["recognition"], 85, recognition_baseline, 492)
 
     rounded_box(c, 79, 408, 503, 47, PALE, TEAL, 8)
     draw_icon(c, 50, 431, "!", DEEP_TEAL)

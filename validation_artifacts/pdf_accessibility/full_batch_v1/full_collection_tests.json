@@ -1,0 +1,23 @@
+{
+  "checks": [
+    {
+      "test": "maintained_lifecycle_reaches_reviewable_install_plan",
+      "passed": true,
+      "activeInstall": false
+    },
+    {
+      "test": "maintained_lifecycle_reproduces_final_bytes",
+      "passed": true
+    },
+    {
+      "test": "active_manifest_missing_staged_outputs_fail_closed",
+      "passed": true
+    },
+    {
+      "test": "machine_pass_with_failed_visual_review_cannot_be_planned",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "activeInstallPerformed": false
+}

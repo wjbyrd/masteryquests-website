@@ -30,6 +30,11 @@ def build(output_directory=None,codes=None):
                     if definition[key]!=source['content'][key]:raise ValueError('Generator/source drift: '+key)
                 if meta.get('formulaCard') and definition.get('formulaLines')!=[f['text'] for f in meta['formulaCard']]:
                     raise ValueError('Formula card/source drift')
+                if meta.get('instructionCard'):
+                    expected=definition.get('formulaLines',definition['tested'])[:5]
+                    heading='DIAGNOSE' if code.startswith('MICRO') else 'KEY RELATIONSHIPS'
+                    if meta['instructionCard']['heading']!=heading or meta['instructionCard']['items']!=expected:
+                        raise ValueError('Instruction card/source drift')
                 visual=stage/'visual'/(code+'.pdf')
                 module.draw_review(definition,visual,contained('assets/images/mastery-quests-logo-standalone.png'),contained('build/faculty-build-composer/data'))
                 old=PdfReader(contained('build/faculty-build-composer/data/concept-reviews/'+code+'.pdf')).pages[0].extract_text()

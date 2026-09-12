@@ -1,0 +1,1073 @@
+{
+  "task": "PDF_ACCESSIBILITY_FULL_BATCH_V1",
+  "batch": "micro_2",
+  "documentIds": [
+    "MICRO-21",
+    "MICRO-22",
+    "MICRO-23",
+    "MICRO-24",
+    "MICRO-25",
+    "MICRO-26",
+    "MICRO-27",
+    "MICRO-28",
+    "MICRO-29",
+    "MICRO-30",
+    "MICRO-31",
+    "MICRO-32",
+    "MICRO-33",
+    "MICRO-34",
+    "MICRO-35",
+    "MICRO-36",
+    "MICRO-37",
+    "MICRO-38",
+    "MICRO-39",
+    "MICRO-40"
+  ],
+  "pass": 16,
+  "blocked": 4,
+  "records": [
+    {
+      "code": "MICRO-21",
+      "title": "Cost Components & Cost Schedules",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-21.pdf",
+      "sha256": "44367055d71f462325ffd25310326c52c4d2d2b6121d741f40795fdd90e377c8",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 19,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "eb34b301cf8d7e8481a1bea193c46329e8b1d4d93c42b39203e9809826929a5d",
+      "resourceSemanticsSha256": "62b9c32e21c5ceb5cc15cb1243b707249b2563b36d8571b98ba8104dec5ba479",
+      "publicTarget": "concept-reviews/MICRO-21.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-21.pdf",
+      "plannedManifest": {
+        "oldSha256": "2addf3db5e0c084f27a8e61c26bdcf9552adb7a403831f7dfc2fc0b634ee94e1",
+        "sha256": "44367055d71f462325ffd25310326c52c4d2d2b6121d741f40795fdd90e377c8",
+        "sizeBytes": 842838,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-22",
+      "title": "Average Costs: AFC, AVC & ATC",
+      "domain": "micro",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-22.pdf",
+      "sha256": "dca5ec5d555de1db82ffa14807dacbb824781fe65c4501e7433636f9c7a4119e",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 14,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_LABEL_CONTRAST: MC is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "sourceRecordSha256": "5f332a17b0d8ddb5d5c1933206d16286966fd0afd9227202d1cb9238dd831c3e",
+      "resourceSemanticsSha256": "957de21af976e2fec61a4e2bb8e9ee62a74831f348be364852484592ed97e1b6",
+      "publicTarget": "concept-reviews/MICRO-22.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-22.pdf",
+      "plannedManifest": {
+        "oldSha256": "7f6e07f5a8ba76428aa3ce7bb7646d94e92c85147d690bf092a7989d93381105",
+        "sha256": "dca5ec5d555de1db82ffa14807dacbb824781fe65c4501e7433636f9c7a4119e",
+        "sizeBytes": 587353,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-23",
+      "title": "Marginal Cost & Production-Cost Linkages",
+      "domain": "micro",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-23.pdf",
+      "sha256": "e65a881f07a55e1fb6a35740968a69c0d1df8009d31cdf56397ca9759915a836",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 3,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_LABEL_CONTRAST: MC is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "sourceRecordSha256": "ce3f38985d5c4ccff7a295dc65f866e3fa8220e466d99787616e9aa692f9d42f",
+      "resourceSemanticsSha256": "402df3a6acff2a08fe9bae288ab5d7e85ee22e25aa7d26a8cc3bb79c09585156",
+      "publicTarget": "concept-reviews/MICRO-23.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-23.pdf",
+      "plannedManifest": {
+        "oldSha256": "8d6b88b72c06d2b41d78b9beff4a3bead4b61fce12ad32010a1408b273628cc0",
+        "sha256": "e65a881f07a55e1fb6a35740968a69c0d1df8009d31cdf56397ca9759915a836",
+        "sizeBytes": 584651,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-24",
+      "title": "Short-Run Cost Curves: Relationships & Shifts",
+      "domain": "micro",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-24.pdf",
+      "sha256": "dd8fa65b03d915de871006f6264839a590a3fd4cd0a0eee066e0485a246a116f",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_CURVE_CONTRAST: orange ATC is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "sourceRecordSha256": "6f0275bd0ecf4ffac6a20598472088a91094a010242060ff86d44597ed681b5c",
+      "resourceSemanticsSha256": "6c35fe5c3b3350bc88b5bce13f5a47b00cf2f7630e90c0b536bdc253097df1b8",
+      "publicTarget": "concept-reviews/MICRO-24.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-24.pdf",
+      "plannedManifest": {
+        "oldSha256": "f9c43b5269696ffd016849725812d82f20c9af43a4144099de8d9566f6feea24",
+        "sha256": "dd8fa65b03d915de871006f6264839a590a3fd4cd0a0eee066e0485a246a116f",
+        "sizeBytes": 518758,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-25",
+      "title": "Sunk & Avoidable Costs",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-25.pdf",
+      "sha256": "a9b32835116185c38a4fbc3c32b83cf12944c8bda8243e1cd4ac982f375b53c1",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 6,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "a4d202e0894fa722ebc8064ac1292d3acb9ac633f5631e0a13c4c5095768f823",
+      "resourceSemanticsSha256": "82435f10d49833e701bb9084abc8272c899eb8ef58ff87a9937604f33e96cf8d",
+      "publicTarget": "concept-reviews/MICRO-25.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-25.pdf",
+      "plannedManifest": {
+        "oldSha256": "41c7f4e94f080c122ad178e92c83df5c0c4aeffa3a31029a52f041ee5aab7503",
+        "sha256": "a9b32835116185c38a4fbc3c32b83cf12944c8bda8243e1cd4ac982f375b53c1",
+        "sizeBytes": 369692,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-26",
+      "title": "LRAC, Economies & Diseconomies of Scale",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-26.pdf",
+      "sha256": "97d74729a47cb81fc927f22e7a7831cba4f6a1123b6c9662ee13d5f2e772c023",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 5,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "9daecc5810d8942a340122d296e1b5a51c42d5a58c5c8044f58e796b47a92a0d",
+      "resourceSemanticsSha256": "b7f933ae6c332a3a3c5169cca6c3bfa1f0da7ef0ff85027b95052faf0b106c35",
+      "publicTarget": "concept-reviews/MICRO-26.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-26.pdf",
+      "plannedManifest": {
+        "oldSha256": "fff581cc87ef2a611df4a3a5a4b1fabb7ffb6f9bf9fd12fcf68d6da62c3fbe1f",
+        "sha256": "97d74729a47cb81fc927f22e7a7831cba4f6a1123b6c9662ee13d5f2e772c023",
+        "sizeBytes": 621632,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-27",
+      "title": "Minimum Efficient Scale & Constant Returns to Scale",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-27.pdf",
+      "sha256": "cf859b64accd942006ec73d6dceff980c90f36203857b46aeca70e775fb62f3a",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 1,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "41e6c5cbdd0958d6ea8d0cac11aabe314de1df04583fc507390dffe75e491b07",
+      "resourceSemanticsSha256": "454bb2b13a390848724c7841925d57f4c74e67cd2166e8b1b24fe5b7fa5ad64e",
+      "publicTarget": "concept-reviews/MICRO-27.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-27.pdf",
+      "plannedManifest": {
+        "oldSha256": "cc83e3bfee5644848c8968aaca1dad0c16ef7165dc6d68e7453b34d93a379d5e",
+        "sha256": "cf859b64accd942006ec73d6dceff980c90f36203857b46aeca70e775fb62f3a",
+        "sizeBytes": 620557,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-28",
+      "title": "Market Structure, Price Taking & Firm Revenue",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-28.pdf",
+      "sha256": "e469f3d652c9362de40fe62f14787803a78822b09d951a60eacb54d21c3aeb51",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 5,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "b1db0236301736cf1c21e83e706d3eec88bc25fe1fcad7cb7fc5cbd17bb18689",
+      "resourceSemanticsSha256": "26c626ab1f2b7fb148161e329e770b306f5c11447e580d29aae1605bf91aba58",
+      "publicTarget": "concept-reviews/MICRO-28.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-28.pdf",
+      "plannedManifest": {
+        "oldSha256": "7da8934c4a1717ef467fd06d0b6fff9fb8642e8f374a830542dfd15d646d778d",
+        "sha256": "e469f3d652c9362de40fe62f14787803a78822b09d951a60eacb54d21c3aeb51",
+        "sizeBytes": 682102,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-29",
+      "title": "Profit-Maximizing Output & the MR = MC Rule",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-29.pdf",
+      "sha256": "af23d2644f9bd24e4fb20d1fd93cac11b886392da091f92c2f5dcd72f9f064d4",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 7,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "026d9e94af79a5d2580583d4d4dc75e7d186c05ac6aa280dac02a393370e9b05",
+      "resourceSemanticsSha256": "9762facd56a3927103a6f5038bdc373fa76567f20902b4e27d4276360bf0d7df",
+      "publicTarget": "concept-reviews/MICRO-29.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-29.pdf",
+      "plannedManifest": {
+        "oldSha256": "12a0e8066ade335347598db1f3255252477a83ae665a6128315505863af16370",
+        "sha256": "af23d2644f9bd24e4fb20d1fd93cac11b886392da091f92c2f5dcd72f9f064d4",
+        "sizeBytes": 683016,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-30",
+      "title": "Profit, Loss & Break-Even",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-30.pdf",
+      "sha256": "525f3add522de0c304ff5c8fea67403556a6d8dd0fb19f0bfdfc7e30d4be5b62",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 5,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "a772c1419369ac16f8dde33d8314f83e50fb0bf81cb2cf2cd747a94bc56c1ae0",
+      "resourceSemanticsSha256": "3ee3f9bb3471fd9d08ae7edd22bb36776aa834910a7f502236f9d9ca3b5963ca",
+      "publicTarget": "concept-reviews/MICRO-30.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-30.pdf",
+      "plannedManifest": {
+        "oldSha256": "1752f9ca8ec530d303970590bf671e797cd598e1b9b02c2c22507a642b4fa70c",
+        "sha256": "525f3add522de0c304ff5c8fea67403556a6d8dd0fb19f0bfdfc7e30d4be5b62",
+        "sizeBytes": 798263,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-31",
+      "title": "Shutdown & Short-Run Loss Minimization",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-31.pdf",
+      "sha256": "397f2424086c938a027968b4023addc3e002469222ddbad7c4c1c9d51cbce6e8",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "e72f50d9203352303d2b242ebbcb9f68112ecd801ebcc49adaea2108ce7bfda1",
+      "resourceSemanticsSha256": "67dc434be8aadc05fe227162a7b84fa13b0f1ddb6d5db8b24cc9498742019c4a",
+      "publicTarget": "concept-reviews/MICRO-31.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-31.pdf",
+      "plannedManifest": {
+        "oldSha256": "fc05ca1af10a0dd5df2f373f4fa66a00a94598c3351405c278a46a17b2791c17",
+        "sha256": "397f2424086c938a027968b4023addc3e002469222ddbad7c4c1c9d51cbce6e8",
+        "sizeBytes": 650233,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-32",
+      "title": "Short-Run Supply & Cost Shifts",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-32.pdf",
+      "sha256": "dff67da95808d3a26f98b6de12accc28b36832a9dfa1cd223519909391ba5a9e",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "1e3c0eadd6829bdaa87c8bae8365335881d74ea0fd8530eef71e1edeb48fb4e1",
+      "resourceSemanticsSha256": "a18e05e26a3a52e1ad4a14a59036bbdc5802bde28cf810f229b4a55416cae3b1",
+      "publicTarget": "concept-reviews/MICRO-32.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-32.pdf",
+      "plannedManifest": {
+        "oldSha256": "8294847a3f3496953f8e30b63a34eb8a1d6acfe6b679dd056d87010789d672ec",
+        "sha256": "dff67da95808d3a26f98b6de12accc28b36832a9dfa1cd223519909391ba5a9e",
+        "sizeBytes": 650328,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-33",
+      "title": "Entry, Exit & Long-Run Equilibrium",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-33.pdf",
+      "sha256": "8cbec2e4a6f27ad429ddc66ffc06fb5058d117449eeab375cd5a28be3decebb9",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 3,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "2b65f20dcf20ca1da742a00285ff938e57823fd6ef9e0dab349cc32d22a056c7",
+      "resourceSemanticsSha256": "019baf7de79abe6d777c13ea54d8032121ab751877c98cc0899ec15a65796604",
+      "publicTarget": "concept-reviews/MICRO-33.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-33.pdf",
+      "plannedManifest": {
+        "oldSha256": "da4a205e051b47b57ca053fbd9a1d294280b0f0688f3eb0bac1c45fa04704033",
+        "sha256": "8cbec2e4a6f27ad429ddc66ffc06fb5058d117449eeab375cd5a28be3decebb9",
+        "sizeBytes": 795509,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-34",
+      "title": "Long-Run Industry Supply & Cost Conditions",
+      "domain": "micro",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-34.pdf",
+      "sha256": "3b9fb2c5a56853ad6241bfead5b5a647a83b97cf7afafda6ba4c5fdb50b700ac",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": false,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "SOURCE_FIGURE_CONTEXT: Self-check refers to a downward-sloping long-run industry supply shown, while the displayed LRS slopes upward. Resolve this inherited source/figure reference."
+      ],
+      "sourceRecordSha256": "bd8a86cbbb80ef574959f895f603b08d2d6d6993eaa67c9905ed0eca6e3c3cfc",
+      "resourceSemanticsSha256": "89a4c31fe9da53685599fae7d0b61873ec095b753e940d4a39a0835044012e82",
+      "publicTarget": "concept-reviews/MICRO-34.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-34.pdf",
+      "plannedManifest": {
+        "oldSha256": "12d44e3c982c5d4464872383a4df4728efef1640f36ba35ff59eccc967760d41",
+        "sha256": "3b9fb2c5a56853ad6241bfead5b5a647a83b97cf7afafda6ba4c5fdb50b700ac",
+        "sizeBytes": 436200,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-35",
+      "title": "Competitive Efficiency & Model Limits",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-35.pdf",
+      "sha256": "f4246d1ac2d472b50492994e32e6fa96d603f8b935430a5e7f2ddac7e3d4d57c",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 4,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "5291fb3fdba16a4c74d320698c3a840201fdb98a1a242e1ec2bebd12f2e1121a",
+      "resourceSemanticsSha256": "4942026b8a2f18c5bcb3b68655de76f24790758bb2dbb0cb29e53616810ac8eb",
+      "publicTarget": "concept-reviews/MICRO-35.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-35.pdf",
+      "plannedManifest": {
+        "oldSha256": "df77db0504f3580ff48739410109c353d9e56c523e740c0a7a530c68497cef62",
+        "sha256": "f4246d1ac2d472b50492994e32e6fa96d603f8b935430a5e7f2ddac7e3d4d57c",
+        "sizeBytes": 796260,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-36",
+      "title": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-36.pdf",
+      "sha256": "18a6c02c3653ca1cde03876a478dc964a3e38d8ecc54fc771fb8b579b5e23320",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "c8c794eee27358b90dc0199bceecd7c71c418c20936e7c8208b2190d00e78ab4",
+      "resourceSemanticsSha256": "f8066c45f8ae7db05ccdb0d37ad4f52388c6716fc7584a16e78ff8224ea6c6f4",
+      "publicTarget": "concept-reviews/MICRO-36.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-36.pdf",
+      "plannedManifest": {
+        "oldSha256": "4e8f658fe4fcc32323d8eee853d31cddbada5219d4146aee0f6e1a0ac0c86c50",
+        "sha256": "18a6c02c3653ca1cde03876a478dc964a3e38d8ecc54fc771fb8b579b5e23320",
+        "sizeBytes": 686088,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-37",
+      "title": "Monopoly Demand, Revenue & Marginal Revenue",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-37.pdf",
+      "sha256": "d4cd05c41f8574cf901de1cd74da371edbe33cc4333434ca6fbe891f6cc855f5",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 3,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "0b8ac909e4274b191c6c6dd1f3913d3821395a31bf9252f0ca46e756a6086edd",
+      "resourceSemanticsSha256": "5a644e2d0327d7855214e11c3674f091b20be2a16b710491dcef93a9618b919f",
+      "publicTarget": "concept-reviews/MICRO-37.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-37.pdf",
+      "plannedManifest": {
+        "oldSha256": "c519602167d085afee48aae6423d674d0d31174739157ccfbc0d9a1b745dbb80",
+        "sha256": "d4cd05c41f8574cf901de1cd74da371edbe33cc4333434ca6fbe891f6cc855f5",
+        "sizeBytes": 767270,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-38",
+      "title": "Profit-Maximizing Output & Monopoly Price",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-38.pdf",
+      "sha256": "60fd7d680470e88abaca3e9387aee9103c5ccffa7136865c7d0e07ccd08294ef",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 8,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "8485d685a5a377ee5252205fb87524b42d56dadc7adb2d6674cbf1e15016094f",
+      "resourceSemanticsSha256": "bee9f48b780b2789f5561f3774f5924eefbd4a66b189c6cab286ded7fe09c7cc",
+      "publicTarget": "concept-reviews/MICRO-38.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-38.pdf",
+      "plannedManifest": {
+        "oldSha256": "c05e1e496727fe6b057195a2a39d8a3ec36198824d9785a983fd3eefa09b90e7",
+        "sha256": "60fd7d680470e88abaca3e9387aee9103c5ccffa7136865c7d0e07ccd08294ef",
+        "sizeBytes": 768834,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-39",
+      "title": "Monopoly Profit, Loss & Shutdown",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\7\\after\\MICRO-39.pdf",
+      "sha256": "d9a01e3c67c2e6a3a9a26d9c461615a045cf8bd9b611d3eb16f429e7e9a72490",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\final_changes\\7\\verapdf.json",
+      "validatorReportSha256": "149be3dfd888dcca81648543ad1902c71a56912159c3259be953914ed3de2359",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 7,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "9a81dc4dd3b3b852b48e377f624b6f8dafb8f76e7b0efdc9625d80f1ce146748",
+      "resourceSemanticsSha256": "254c382d8e841f119b4ad74f9e479fd461050d45c9933153e4cf89c0dbc85df8",
+      "publicTarget": "concept-reviews/MICRO-39.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-39.pdf",
+      "plannedManifest": {
+        "oldSha256": "665923def0302bc57b619404813c797c00770778755a9acdfd7c0be3ab32822c",
+        "sha256": "d9a01e3c67c2e6a3a9a26d9c461615a045cf8bd9b611d3eb16f429e7e9a72490",
+        "sizeBytes": 730115,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MICRO-40",
+      "title": "Monopoly Welfare, Efficiency & Competitive Comparison",
+      "domain": "micro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-40.pdf",
+      "sha256": "9d6319a9e27ef6a46f8dffa2eda116a9d06bd82d5d7aed31a0094d61cd978b00",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 3,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "ee5a1c4b9f9f0e676e77e9536f369743d99759ac9eab59acd1956a41db0c451c",
+      "resourceSemanticsSha256": "d3a39068bcbe13d1a733af35df2f3d663348c7c86352668cf75b2c567bc6f07a",
+      "publicTarget": "concept-reviews/MICRO-40.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MICRO-40.pdf",
+      "plannedManifest": {
+        "oldSha256": "7adcbcfb4759c165a9438844cf775f8e6fc52ac12a8c42a26ed21ac9a8332048",
+        "sha256": "9d6319a9e27ef6a46f8dffa2eda116a9d06bd82d5d7aed31a0094d61cd978b00",
+        "sizeBytes": 687148,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    }
+  ],
+  "newPatterns": [
+    "heading Formula",
+    "diagnostic list card",
+    "continued Formula card",
+    "long formula-card line",
+    "six-line core reflow"
+  ],
+  "ownerFollowUp": [
+    "MICRO-22",
+    "MICRO-23",
+    "MICRO-24",
+    "MICRO-34"
+  ],
+  "activeInstallPerformed": false,
+  "complete": true
+}

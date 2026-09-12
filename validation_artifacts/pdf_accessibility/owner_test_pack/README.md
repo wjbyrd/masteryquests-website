@@ -1,7 +1,5 @@
-# PDF accessibility owner test pack
+# PDF accessibility owner test packs
 
-Current repaired pilot: [instructions and all eight PDFs](pilot_blockers_v1/README.md).
+Current full-batch pack: [instructions and candidates](full_batch_v1/README.md). Actual human / assistive-technology verification: **PENDING**. The collection is partial; two retained pilot files are clearly labeled blocked diagnostic examples.
 
-Actual human / assistive-technology verification: **PENDING**. The current PDFs passed the explicit PDF/UA-1 machine profile and project source/semantic checks. They are local experimental candidates, not deployed resources or an accessibility certification.
-
-The previous pilot files remain untouched in `pdfs/`; its original instructions are preserved in `README.repo_lock_v1.md`. Use the new versioned pack for this task.
+Earlier evidence remains preserved: [pilot blockers pack](pilot_blockers_v1/README.md) and [original instructions](README.repo_lock_v1.md).

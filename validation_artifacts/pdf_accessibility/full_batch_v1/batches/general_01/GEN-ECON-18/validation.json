@@ -1,0 +1,167 @@
+[
+  {
+    "code": "GEN-ECON-18",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-18\\after\\GEN-ECON-18.pdf",
+    "tagCount": 33,
+    "mcids": 37,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Simultaneous Shifts",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "GENERAL ECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "GEN-ECON-18",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Beginner",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "When demand and supply shift at the same time, each shift contributes separately to the new equilibrium. Analyze how each change affects price and quantity, then combine the directional effects. If both shifts push one variable in the same direction, that result is determinate; if they push in opposite directions, the result depends on the relative size of the shifts.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Both a demand determinant and a supply determinant change.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A bicycle endorsement raises demand while higher input costs reduce supply.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Analyze each shift separately before combining its price and quantity effects.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Opposing effects on one variable leave its direction ambiguous unless relative shift sizes are known.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not assume an unchanged price means the market experienced no shifts. A demand increase raises price and quantity, while a supply increase lowers price and raises quantity. Equal price effects can cancel while quantity rises.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: COMBINING DEMAND AND SUPPLY SHIFTS",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The original curves D0 and S0 intersect at a price of $3 and quantity of 150 thousand. After demand shifts right to D1 and supply shifts left to S1, the new intersection is $5 and the same quantity of 150 thousand. Both shifts raise price; their opposing quantity effects happen to offset in this graph, though quantity would otherwise be ambiguous.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Which pair of market changes is shown when the graph moves from D0/S0 to D1/S1?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "370802a011f3895a4c1e863f14f794cbe978257392129a9e032b0d8fc7ebefdd",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "a33c5f388cacb77f8921182bef2c9003a7e6ff7ae7dc767c83c7c816cc080d74",
+    "semanticsSha256": "ec175c6006ceb8a6ac057facf2bdf287f8f8b9a5671172554fe324a8b73df015",
+    "baselineSha256": "98a43f4f5216dc5b65cb8b028cd66a8ecd10a02a13cc0fbb3decda107cc5c2c6",
+    "resourceSemanticsSha256": "87e20409e8ce6a047760e71b31caa087fc29fa9744086b076d2e77014cc3e849",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-18\\verapdf.json",
+    "validatorReportSha256": "e20787d7a74d3014e6d328285a82d1b8e227fc7672e3d4ca1593b54fdff221da",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  }
+]

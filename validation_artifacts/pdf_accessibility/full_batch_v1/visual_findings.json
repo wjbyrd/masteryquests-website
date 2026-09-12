@@ -1,0 +1,68 @@
+{
+  "labelFindings": {
+    "GEN-ECON-13": "D1",
+    "GEN-ECON-15": "S1",
+    "GEN-ECON-16": "S1 and D1",
+    "GEN-ECON-18": "S1 and D1",
+    "GEN-ECON-24": "Domestic Price = Pw + tariff",
+    "GEN-ECON-25": "World Price",
+    "MICRO-04": "C",
+    "MICRO-08": "C",
+    "MICRO-22": "MC",
+    "MICRO-23": "MC",
+    "MICRO-54": "MSC"
+  },
+  "curveFindings": {
+    "MICRO-10": "orange supply",
+    "MICRO-11": "orange supply",
+    "MICRO-12": "orange supply",
+    "MICRO-13": "orange supply",
+    "MICRO-17": "orange supply",
+    "MICRO-24": "orange ATC",
+    "MICRO-50": "orange MR",
+    "MICRO-52": "orange demand segment",
+    "MICRO-55": "pale North MB and orange South MB",
+    "MICRO-58": "dashed IC1 and IC3",
+    "MACRO-30": "bright-green AD3",
+    "MACRO-31": "bright-green AD3"
+  },
+  "contextFindings": {
+    "MICRO-16": "Self-check requests an import-market graph at Pw=$30, while this sheet displays an avocado export-market graph with Pw=$10. Resolve the source/figure reference before approving equivalent access.",
+    "MICRO-34": "Self-check refers to a downward-sloping long-run industry supply shown, while the displayed LRS slopes upward. Resolve this inherited source/figure reference.",
+    "MICRO-52": "Worked example describes MC around $36 within the marginal-revenue gap, but the current horizontal MC is above the displayed gap. A truthful figure alternative cannot reconcile this inherited visual/instructional inconsistency."
+  },
+  "diagnosticFalsePositives": {
+    "MACRO-50": "Small disconnected curve components, not text; exceed the 3:1 curve target.",
+    "MICRO-14": "Guide dashes, not text; exceed 3:1.",
+    "MICRO-39": "Point marker, not text; exceeds 3:1.",
+    "MICRO-59": "Orange curve fragments/markers, not text; exceed 3:1. The darker orange 22 label was separately visually checked."
+  },
+  "confirmedBlockedCodes": [
+    "GEN-ECON-13",
+    "GEN-ECON-15",
+    "GEN-ECON-16",
+    "GEN-ECON-18",
+    "GEN-ECON-24",
+    "GEN-ECON-25",
+    "MACRO-30",
+    "MACRO-31",
+    "MICRO-04",
+    "MICRO-08",
+    "MICRO-10",
+    "MICRO-11",
+    "MICRO-12",
+    "MICRO-13",
+    "MICRO-16",
+    "MICRO-17",
+    "MICRO-22",
+    "MICRO-23",
+    "MICRO-24",
+    "MICRO-34",
+    "MICRO-50",
+    "MICRO-52",
+    "MICRO-54",
+    "MICRO-55",
+    "MICRO-58"
+  ],
+  "method": "All full pages and 84 graph uses inspected; 35 before/after font/layout pairs inspected. Colored connected-component screening was visually classified, never treated as automatic semantic proof. Ratios are diagnostics from stored original image pixels; no re-encoded repair was attempted."
+}

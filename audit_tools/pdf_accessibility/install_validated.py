@@ -5,7 +5,7 @@ separate owner authorization. This pilot task exercises only fixture destination
 """
 from repo_guard import *
 from accessibility_gate import inspect,check_copies
-from tag_pilot import source_hash
+from tag_pilot import source_hash,semantic_hash
 from validate_candidates import SEMANTICS,SOURCE
 import argparse,uuid
 
@@ -21,7 +21,8 @@ def prepare(records,review_path):
         code=row['code'];candidate=contained(row['output']);meta=metadata['pilot'].get(code)
         if code not in known or not meta:raise ValueError('New/unreviewed active resource')
         if not candidate.is_relative_to(contained('tmp/pdf_accessibility')):raise ValueError('Candidate must be staged')
-        if sha(candidate)!=row['sha256'] or row['semanticsSha256']!=sha(SEMANTICS):raise ValueError('Stale candidate/semantic evidence')
+        semantic_matches=(row['resourceSemanticsSha256']==semantic_hash(metadata,code)) if row.get('resourceSemanticsSha256') else row['semanticsSha256']==sha(SEMANTICS)
+        if sha(candidate)!=row['sha256'] or not semantic_matches:raise ValueError('Stale candidate/semantic evidence')
         if source_hash(sources[code])!=row['sourceRecordSha256']:raise ValueError('Stale instructional source')
         report=contained(row['validatorReport'])
         if not report.is_relative_to(contained('validation_artifacts/pdf_accessibility')):raise ValueError('Retain validator evidence before installation')
@@ -79,7 +80,8 @@ def materialize(plan,fixture_directory=None):
     for name,value in ((MANIFEST,manifest),(RELEASES,releases)):
         target=contained(fixture/Path(name).name) if fixture else contained(name)
         writes.append((target,(json.dumps(value,indent=2,ensure_ascii=False)+'\n').encode('utf-8')))
-    scratch=contained('tmp/pdf_accessibility/pilot_blockers_v1/install-transactions')/uuid.uuid4().hex;scratch.mkdir(parents=True)
+    transaction_root=fixture.parent if fixture else contained('tmp/pdf_accessibility/install')
+    scratch=contained(transaction_root/'install-transactions')/uuid.uuid4().hex;scratch.mkdir(parents=True)
     originals={str(p):p.read_bytes() if p.exists() else None for p,_ in writes}
     for i,(target,_) in enumerate(writes):
         if originals[str(target)] is not None:(scratch/f'backup-{i}').write_bytes(originals[str(target)])

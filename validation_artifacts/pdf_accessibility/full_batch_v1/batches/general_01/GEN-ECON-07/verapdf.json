@@ -1,0 +1,63 @@
+{"report":{"buildInformation":{"releaseDetails":[{
+  "id" : "core",
+  "version" : "1.28.2",
+  "buildDate" : 1752610020000
+},{
+  "id" : "validation-model",
+  "version" : "1.28.2",
+  "buildDate" : 1752610320000
+},{
+  "id" : "gui",
+  "version" : "1.28.2",
+  "buildDate" : 1752613140000
+}]},"jobs":[{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-07\\after\\GEN-ECON-07.pdf",
+  "size" : 368686
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 2712,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789167049906,
+  "finish" : 1789167050526,
+  "duration" : "00:00:00.620",
+  "difference" : 620
+}}],"batchSummary":{
+  "duration" : {
+    "start" : 1789167049826,
+    "finish" : 1789167050553,
+    "duration" : "00:00:00.727",
+    "difference" : 727
+  },
+  "totalJobs" : 1,
+  "outOfMemory" : 0,
+  "veraExceptions" : 0,
+  "validationSummary" : {
+    "nonCompliantPdfaCount" : 0,
+    "totalJobCount" : 1,
+    "failedJobCount" : 0,
+    "compliantPdfaCount" : 1,
+    "successfulJobCount" : 1
+  },
+  "failedEncryptedJobs" : 0,
+  "failedParsingJobs" : 0,
+  "repairSummary" : {
+    "totalJobCount" : 0,
+    "failedJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "multiJob" : false,
+  "featuresSummary" : {
+    "totalJobCount" : 0,
+    "failedJobCount" : 0,
+    "successfulJobCount" : 0
+  }
+}}}

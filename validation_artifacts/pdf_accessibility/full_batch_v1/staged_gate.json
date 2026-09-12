@@ -1,0 +1,1168 @@
+{
+  "task": "PDF_ACCESSIBILITY_FULL_BATCH_V1",
+  "manifestSha256": "40639618f10de00d65a2f09a31a8055fdc1f01e7a2367a8a882452cf056d7639",
+  "activeCount": 151,
+  "records": [
+    {
+      "code": "GEN-ECON-01",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0"
+    },
+    {
+      "code": "GEN-ECON-02",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "e63e333c15907fa5f159d9455fd59a3ce8339056b2af751e088bcc62f56297a8"
+    },
+    {
+      "code": "GEN-ECON-03",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "401531b7c34aa73a37e3d8ac5c8eb8106c769605bac590293fe0ac7308b39f8d"
+    },
+    {
+      "code": "GEN-ECON-04",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "ac0cd3d0de042ac8a99a5b63ea2bea6a0f7a59f7b4758163fc132cff5c9a7544"
+    },
+    {
+      "code": "GEN-ECON-05",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "d18b8d93a173646b2b750944055ed5c101a7e8631bae2b7dc35d79357b0e614f"
+    },
+    {
+      "code": "GEN-ECON-06",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "c431110e559b4806ac0d941d4896dd8f51e9895c0a22848e7f9a81b5490008b8"
+    },
+    {
+      "code": "GEN-ECON-07",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "ae201b24fb4ecfd91e7f32201e86a8054f7a390f0116aea106399ebd40fac45d"
+    },
+    {
+      "code": "GEN-ECON-08",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "164466c1355fe8c0fea4f763243edb08e248b199c4e571476971b1974f166f63"
+    },
+    {
+      "code": "GEN-ECON-09",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "9f1d47675e379a1b218a55f95acda87a09ccb867d1882893d563212a0f3267ad"
+    },
+    {
+      "code": "GEN-ECON-10",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "50e61c64134739bc2eabec6da204495144d92e36a15f6e973b6e8d92695af5a3"
+    },
+    {
+      "code": "GEN-ECON-11",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "2fa0511ee13165b8c00147387b180a277633277fa235863a2db706af2bfee970"
+    },
+    {
+      "code": "GEN-ECON-12",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "bd2adb538ab3f050005fb2499c360d7dcd696e45d467846641afdca0157d85f2"
+    },
+    {
+      "code": "GEN-ECON-13",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: D1 is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "c026bd239080df92605ff49d98573545c234cad2f524a9e80eae0159debb2d3c"
+    },
+    {
+      "code": "GEN-ECON-14",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "4e73cfe1274917a1d62e2b0b20a92d23c9a2dfd0014a3214fcd0f3a6e179a6b2"
+    },
+    {
+      "code": "GEN-ECON-15",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: S1 is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "ad6b67a72425e04f7ea46d87fead00ac4355dd8c80d89c233397a53551dd2b80"
+    },
+    {
+      "code": "GEN-ECON-16",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: S1 and D1 is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "adced4bbfb0f52c55d6450406120d0f59c67c5f7d2f620465dcea5dd32d80e69"
+    },
+    {
+      "code": "GEN-ECON-17",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "7aea0a0d3de4c3b628f0e09afd622e593d9f7d07be9b40d4a83670c26e645cae"
+    },
+    {
+      "code": "GEN-ECON-18",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: S1 and D1 is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "370802a011f3895a4c1e863f14f794cbe978257392129a9e032b0d8fc7ebefdd"
+    },
+    {
+      "code": "GEN-ECON-19",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "9a13a124bf65866bb77c43a3b7dc9accc2589d37397454e25f254cabc3550cb6"
+    },
+    {
+      "code": "GEN-ECON-20",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "86cb46fa02786610c7914776b4853ae4dfe1fe5ba1795f48188b1f7403d6bcf4"
+    },
+    {
+      "code": "GEN-ECON-21",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "b7db97ac0914ba63b9284e66880adfb54bbbffac63db62dc00fa4297f4d0536d"
+    },
+    {
+      "code": "GEN-ECON-22",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "b137fda45c49bb23731068594c8dcb195d24a9e194a863cded203aab00d550df"
+    },
+    {
+      "code": "GEN-ECON-23",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "cf76e44b769c42d9759832b00f6f9d66dc53343fa5969f32f8fc18853cfa939d"
+    },
+    {
+      "code": "GEN-ECON-24",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: Domestic Price = Pw + tariff is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "97702c736addcd58a97c6ed5219d9c3f7fcdd55cc6847d8f02679e97b089754d"
+    },
+    {
+      "code": "GEN-ECON-25",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: World Price is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "b44922ce4499ffe0242687932d7bbb868e891abc3f5fab83f4de40a63eef3402"
+    },
+    {
+      "code": "GEN-ECON-26",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "c6d8e829a04405085067d7e5d5a72515af8bfb743f9f68f30f980401730a9e3b"
+    },
+    {
+      "code": "MACRO-01",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "a70ae14dd55e60b10a6fe7ebb6c8c03a5c8f24416faad1420c75ab5047251381"
+    },
+    {
+      "code": "MACRO-02",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "fd80020242d98ac589bc63c9de91b431f59f7b926429495b2fedb47b776d6346"
+    },
+    {
+      "code": "MACRO-03",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "ad6c6d600fd0ed1216ba160cc9e691ab66d683640dfedc9440ac1f3cb2e9a06e"
+    },
+    {
+      "code": "MACRO-04",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "64c42629ce5a10cc1be253a9e7e609a7faf3c66f9f765e31a6134b0dc59a93c8"
+    },
+    {
+      "code": "MACRO-05",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "8b80775179fb77d5e8793d615e2b8338695838dade0b434ce20d234f1955e9e5"
+    },
+    {
+      "code": "MACRO-06",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "219e10e207631d6e5e53bc25c23442b8a9fc0046677aeafcac720767ea9b89f8"
+    },
+    {
+      "code": "MACRO-07",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "0c609858a551e96cb7763c9668c5b3551b09dcdfe2d08b697a1dd626235001f7"
+    },
+    {
+      "code": "MACRO-08",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "07bbbd33f6727d9beb7dcf433c9bec18b5b61203801786115fabc62a57d6feb6"
+    },
+    {
+      "code": "MACRO-09",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "44c27f851261b26deac66410fd1edc1ec90a0e4c1e6c7f6dc50bc949e3eb0ead"
+    },
+    {
+      "code": "MACRO-10",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "3393efc5a95def6eba9ad502b7a905c809e9216efce49662b2b21b735e77ab20"
+    },
+    {
+      "code": "MACRO-11",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "e1ab76b57e73c6557d29741b53babdca09d08320d6aa78269858dd759d4eb7e8"
+    },
+    {
+      "code": "MACRO-12",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "f5c3eac342bb2c82d539258a090bb0b64f00db56b47399af1c1206ee84e27b09"
+    },
+    {
+      "code": "MACRO-13",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "6871cb7826b4f1a2d7b5b0cbb284d9f8206a99eecc238fef216f749ea78340b6"
+    },
+    {
+      "code": "MACRO-14",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "2d6710186ef2107245f6a7e85f9d6e0280a1890aecad2bf64f675d2a9a49a0e0"
+    },
+    {
+      "code": "MACRO-15",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "7f83939f5bbb5f5f9d0e7ce87b95d6164de8905260c12a362b1acad36b983f36"
+    },
+    {
+      "code": "MACRO-16",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "334441ff2dc0ec0c6c01db39dea883bf0651010614cd125d3e88bd60974b1e2e"
+    },
+    {
+      "code": "MACRO-17",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "31d79cde9c40bc4a5a0ce1db2409cfdcea2db3319b17616604918144d13e72f1"
+    },
+    {
+      "code": "MACRO-18",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "d1a32ef8731f87563b6898df70e79d2781ce7681ecbe8967a6787c7092ee57d7"
+    },
+    {
+      "code": "MACRO-19",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "8c34b12318dc70948782242e25b881310f1fe43bca0d6635ed799056a3a52d31"
+    },
+    {
+      "code": "MACRO-20",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "ffc0ab32e34180bbfdc08acbe70ed6d36dd34b125471e3b6d4a0c3aeeb7491d7"
+    },
+    {
+      "code": "MACRO-21",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "c333589b11177ea1ff2acb76f47effe5eed47ad22d1e9301018e0205f77e50de"
+    },
+    {
+      "code": "MACRO-22",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "b769dfeed954812c4ab6b4e78a0c8977f5cf1a2db188d0c79a10ba160fb56c69"
+    },
+    {
+      "code": "MACRO-23",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "c640fe143935d6ce5248749b8658f7ea55b0a3653406cfad25eda287a28a4d59"
+    },
+    {
+      "code": "MACRO-24",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "72b1ea705f7ff9e33d624f5293c1143c05ae1472882c0ddb10efb3a435087a5f"
+    },
+    {
+      "code": "MACRO-25",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "566adc406a9aaaacd410cb011de567464b433c71c22937b879715dc0588dc655"
+    },
+    {
+      "code": "MACRO-26",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "803c909e6c37b3e58c2076f8109c97ff9be8254381841e17854520635c2a2632"
+    },
+    {
+      "code": "MACRO-27",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "1b9984085b11470a4541ab19fb410a5941facc66aeff25349e6582c411b3ad2e"
+    },
+    {
+      "code": "MACRO-28",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "53c6298c704ac11358bac520bb5ebe41a2ef02fe5b5714eb7b9c1a1d28b977b2"
+    },
+    {
+      "code": "MACRO-29",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "64c9ed2467ea2120aad2028671a01895fb0fdb3e409f774688c5bf5523f71805"
+    },
+    {
+      "code": "MACRO-30",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: bright-green AD3 is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "fa4accd46255ce81ec8f6a6aef27e145c2d62188ef31b23f7f8388f9b1057027"
+    },
+    {
+      "code": "MACRO-31",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: bright-green AD3 is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "2791fbb6008cbf0b34ef6bd6acc50f5dfc20b163cb1c6bf158e6a92da37da076"
+    },
+    {
+      "code": "MACRO-32",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "02334be093ae6d37f9afd55b72e0863a6a7e0a0ab29c02a8ffb2d1f0536c38f6"
+    },
+    {
+      "code": "MACRO-33",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "4b73bd86c707618e2d2c3d0695ef19f59e584c3cc4a8854b4427a9a040c1472c"
+    },
+    {
+      "code": "MACRO-34",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "9ef2b3ac8801846a9647372ab1c28797e13e9df087b657827847de79c2b1a75e"
+    },
+    {
+      "code": "MACRO-35",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "afcdf883eabf3523b92ec6472bd5a0569d62cf17ac362a8319950e653be7ce6e"
+    },
+    {
+      "code": "MACRO-36",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "78729a55e1ab4445dc114446f0581ed4aac263a6be37ee1ce48ae628ce3bd4f5"
+    },
+    {
+      "code": "MACRO-37",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "000d60ab56ae2185425d8cb358b8a028e37b7b85d60c44d76e655d3479eef48f"
+    },
+    {
+      "code": "MACRO-38",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "f663776ded3ba1d35c81a97f7138f5265c7b45c0f3099f889858b21064e5dc78"
+    },
+    {
+      "code": "MACRO-39",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "4d3adc8146d1f5d65b091a72d222136bc2d9095fa4f1bd86de41da66ce1835d1"
+    },
+    {
+      "code": "MACRO-40",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "0bcb7cebee08bb5ff0d4e73d81ec9358b54ec363113f1af538b369a203809ada"
+    },
+    {
+      "code": "MACRO-41",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "70ac4df3360853b339b49d3291aa340fd9a46608758e293c54695f8f2f46740d"
+    },
+    {
+      "code": "MACRO-42",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "502900635047914aae4698aa4ec6875d2e79a058fdcd807d6081193be956be3c"
+    },
+    {
+      "code": "MACRO-43",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "b85c3672abf726821ac19ca3e769040f93fda8e4bda6671268b2ba006e70f57b"
+    },
+    {
+      "code": "MACRO-44",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "ac734fbba53618c3186fad51f1ee07e0ae2aff7ee11d587029fcf6b953d1b440"
+    },
+    {
+      "code": "MACRO-45",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "ff9c0cb19db242cc58ac5446de32de560e939565e6039df54a4cbed4cf310d2c"
+    },
+    {
+      "code": "MACRO-46",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "4446d646153ca54c5bca319987a87bba98eeed4db4e393dc311f1286fbe2eaa3"
+    },
+    {
+      "code": "MACRO-47",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "761cad1ea973a853e4a8540b71860a09fb50b2794094c414e2faa170bd1a6763"
+    },
+    {
+      "code": "MACRO-48",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "cc0f78b77f704d7cdb4df84b72bbe5183a4fc64f168145016d5e4f0ececc95a1"
+    },
+    {
+      "code": "MACRO-49",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "d73e28cf1783fc71361cae38aea5e6081878b149aade49f408172b108bc0b0f0"
+    },
+    {
+      "code": "MACRO-50",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "58fc80217a7d406a8071c453300bbf6ab1f985b3bd679644469c7f2629e9e233"
+    },
+    {
+      "code": "MACRO-51",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "e51d71b35aa110346b7ff585d6c9ddbb71ceba4e0fb3a2e05fb672e80ea636a6"
+    },
+    {
+      "code": "MACRO-52",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "fb0200ffa57797c4a1180b9120ba8952837281e8eebe2db45e59432b71202e46"
+    },
+    {
+      "code": "MACRO-53",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "f938ba98a0181cfe7ceb2ac1b96420281bd0f76bd37cf9c91aab4bb47630d717"
+    },
+    {
+      "code": "MACRO-54",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "3d166786cb1bc0831242e7b7b7a3d92df93bc887b5c8ad6ac8d47a6d757a181f"
+    },
+    {
+      "code": "MACRO-55",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "3c528473f20884da705360e428cf99c23344ccb1dc80781d51c2568f80fcd382"
+    },
+    {
+      "code": "MACRO-56",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "715ea54d715dbf1187df76dfcfd9a370e63c0c70f08055affefc6032be9dbf52"
+    },
+    {
+      "code": "MACRO-57",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "04a82d1331140c79340aee960602c335b2549afa19d2821b255eb47ec2b3ceea"
+    },
+    {
+      "code": "MICRO-01",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "dcbf79cb824d88ed41d5b8e6dcd8824f2845facf66e805f3df4c11fd9177c85c"
+    },
+    {
+      "code": "MICRO-02",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "2041ce48c51101a737d5fbd064fb7cd523a2d6b68b79f098e6eed35321399f09"
+    },
+    {
+      "code": "MICRO-03",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "f99324b114ed6b2b389def8aafcbd2aae26fb615866850779111b520d6ac5304"
+    },
+    {
+      "code": "MICRO-04",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: C is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "a08a9d24a34efda1b5f9296297acb72e31813c3aa8140b7d7af4b6a3d201bd50"
+    },
+    {
+      "code": "MICRO-05",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "4b51e3c55a8063ccf37aeca8200a6167b35421f91e5e402407267154e171ff78"
+    },
+    {
+      "code": "MICRO-06",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "ffaf1120c567ca792ce64578197763ba51300e06db5164722f4d8c9268832a77"
+    },
+    {
+      "code": "MICRO-07",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "e5eedd0dab70dd4becb957759dcdb763f5b61c9ed6f885e74112d7324a40dd3a"
+    },
+    {
+      "code": "MICRO-08",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: C is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "1688d18dbe0b6aab33fd2bb78a39aec6e3c8e6f27ffc99a30eb569044ecbe340"
+    },
+    {
+      "code": "MICRO-09",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "cfadb2b4e31c44cf20b7c5ac67b544fada3bc83205004d08c83a657f43d890f7"
+    },
+    {
+      "code": "MICRO-10",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: orange supply is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "d81787f7f8fc623279db15854af314fdfaa0cea9bb35558a60f57db02133c99f"
+    },
+    {
+      "code": "MICRO-11",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: orange supply is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "05c93b716dc01a4a240348ea74dabd588c41f68893fb6820c31a04626bd052f7"
+    },
+    {
+      "code": "MICRO-12",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: orange supply is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "3242f53499fbc63ab9243614b2e6937779319e76c74743fa9cafd7f956988621"
+    },
+    {
+      "code": "MICRO-13",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: orange supply is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "8d1a4b8ce34ace29d60a0e2e3413ee837a2dbd5bf7a686346b04fdb01769f2f1"
+    },
+    {
+      "code": "MICRO-14",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "3b5ab9e3140eb0fd1b704d52af2bfaa4780841673166090232246a50085fee40"
+    },
+    {
+      "code": "MICRO-15",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "5d4bbd4cd01b008a03534696feeeaf60647fae7f92fb9a072f60892d0eb1e182"
+    },
+    {
+      "code": "MICRO-16",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "SOURCE_FIGURE_CONTEXT: Self-check requests an import-market graph at Pw=$30, while this sheet displays an avocado export-market graph with Pw=$10. Resolve the source/figure reference before approving equivalent access."
+      ],
+      "candidateSha256": "3b9d9ae89f2ac85cd0126b3e97821b07be565bbc050327799403f006860a35b1"
+    },
+    {
+      "code": "MICRO-17",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: orange supply is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "90a4706f5e2aebd6b47738e3c6638509fe1fbd31dd5f66841d665be6ffaf33b3"
+    },
+    {
+      "code": "MICRO-18",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "8c95d5f32ca2c5a948a7779c872f5cf8f07fa021190b8fb6b7510e46e65b803b"
+    },
+    {
+      "code": "MICRO-19",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "a9c0a14ae33532922d6ba7456fe3d8112e90754762df01fc8b255704d7c8b7b6"
+    },
+    {
+      "code": "MICRO-20",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "9d5588afade790d5f4d5c9cef7213c2898e7520ae7f6f0c03dae4b2da635e6a4"
+    },
+    {
+      "code": "MICRO-21",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "44367055d71f462325ffd25310326c52c4d2d2b6121d741f40795fdd90e377c8"
+    },
+    {
+      "code": "MICRO-22",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: MC is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "dca5ec5d555de1db82ffa14807dacbb824781fe65c4501e7433636f9c7a4119e"
+    },
+    {
+      "code": "MICRO-23",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: MC is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "e65a881f07a55e1fb6a35740968a69c0d1df8009d31cdf56397ca9759915a836"
+    },
+    {
+      "code": "MICRO-24",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: orange ATC is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "dd8fa65b03d915de871006f6264839a590a3fd4cd0a0eee066e0485a246a116f"
+    },
+    {
+      "code": "MICRO-25",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "a9b32835116185c38a4fbc3c32b83cf12944c8bda8243e1cd4ac982f375b53c1"
+    },
+    {
+      "code": "MICRO-26",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "97d74729a47cb81fc927f22e7a7831cba4f6a1123b6c9662ee13d5f2e772c023"
+    },
+    {
+      "code": "MICRO-27",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "cf859b64accd942006ec73d6dceff980c90f36203857b46aeca70e775fb62f3a"
+    },
+    {
+      "code": "MICRO-28",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "e469f3d652c9362de40fe62f14787803a78822b09d951a60eacb54d21c3aeb51"
+    },
+    {
+      "code": "MICRO-29",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "af23d2644f9bd24e4fb20d1fd93cac11b886392da091f92c2f5dcd72f9f064d4"
+    },
+    {
+      "code": "MICRO-30",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "525f3add522de0c304ff5c8fea67403556a6d8dd0fb19f0bfdfc7e30d4be5b62"
+    },
+    {
+      "code": "MICRO-31",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "397f2424086c938a027968b4023addc3e002469222ddbad7c4c1c9d51cbce6e8"
+    },
+    {
+      "code": "MICRO-32",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "dff67da95808d3a26f98b6de12accc28b36832a9dfa1cd223519909391ba5a9e"
+    },
+    {
+      "code": "MICRO-33",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "8cbec2e4a6f27ad429ddc66ffc06fb5058d117449eeab375cd5a28be3decebb9"
+    },
+    {
+      "code": "MICRO-34",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "SOURCE_FIGURE_CONTEXT: Self-check refers to a downward-sloping long-run industry supply shown, while the displayed LRS slopes upward. Resolve this inherited source/figure reference."
+      ],
+      "candidateSha256": "3b9fb2c5a56853ad6241bfead5b5a647a83b97cf7afafda6ba4c5fdb50b700ac"
+    },
+    {
+      "code": "MICRO-35",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "f4246d1ac2d472b50492994e32e6fa96d603f8b935430a5e7f2ddac7e3d4d57c"
+    },
+    {
+      "code": "MICRO-36",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "18a6c02c3653ca1cde03876a478dc964a3e38d8ecc54fc771fb8b579b5e23320"
+    },
+    {
+      "code": "MICRO-37",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "d4cd05c41f8574cf901de1cd74da371edbe33cc4333434ca6fbe891f6cc855f5"
+    },
+    {
+      "code": "MICRO-38",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "60fd7d680470e88abaca3e9387aee9103c5ccffa7136865c7d0e07ccd08294ef"
+    },
+    {
+      "code": "MICRO-39",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "d9a01e3c67c2e6a3a9a26d9c461615a045cf8bd9b611d3eb16f429e7e9a72490"
+    },
+    {
+      "code": "MICRO-40",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "9d6319a9e27ef6a46f8dffa2eda116a9d06bd82d5d7aed31a0094d61cd978b00"
+    },
+    {
+      "code": "MICRO-41",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "f43904710893c5e143072e6121706f7c210db030d4cfd180dfcea2fa483fa95a"
+    },
+    {
+      "code": "MICRO-42",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "c1e5e78644a246182b261f5a768128b9112da4390c5b91cac63b116f68c100ec"
+    },
+    {
+      "code": "MICRO-43",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "a071a00353a42117c675f2f2179d9c66a1c3401167092770ecf52edbde5ab348"
+    },
+    {
+      "code": "MICRO-44",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "d8a2f41a85b6a40b20581e362dca4910b39b47f8b2b9554452f87338538e94f5"
+    },
+    {
+      "code": "MICRO-45",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "52d5e249d0d0dbbeaca3590e834726f1cff10fc81b846a5062f7e654ccbf5323"
+    },
+    {
+      "code": "MICRO-46",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "88d2d3466d6f293457007b9caed68eb5943f1974fb5f27a724cba2223ebea75d"
+    },
+    {
+      "code": "MICRO-47",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "1def57d44726e4c7fe8e55e008b78b59130602fa90df85b9738046a46a00abc9"
+    },
+    {
+      "code": "MICRO-48",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "f2a94860ad2313eb87b525da688f93fe5a310bf67284ebe6191e7c81282f7193"
+    },
+    {
+      "code": "MICRO-49",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "6ab5980450073621f71f480c932ecdd32ab37206e956bb5b71abc09f2e90545e"
+    },
+    {
+      "code": "MICRO-50",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: orange MR is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "06a9cad6eaba57f5402332f8e9a81e236564cb9056c1e5e8994da0be2fbac465"
+    },
+    {
+      "code": "MICRO-51",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "d51f7be0799894115c5c05dc7b228bc16c967260437ec2ea4cf4d36a3f2e5a5e"
+    },
+    {
+      "code": "MICRO-52",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: orange demand segment is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets.",
+        "SOURCE_FIGURE_CONTEXT: Worked example describes MC around $36 within the marginal-revenue gap, but the current horizontal MC is above the displayed gap. A truthful figure alternative cannot reconcile this inherited visual/instructional inconsistency."
+      ],
+      "candidateSha256": "35caf0da212ae21090fafd880f9903849068f5a4387a7703f4ac9ece80722c74"
+    },
+    {
+      "code": "MICRO-53",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "d435580810f2a04d785921f9ac9d126132e2023d9628c5db97ada170a1341cae"
+    },
+    {
+      "code": "MICRO-54",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_LABEL_CONTRAST: MSC is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "candidateSha256": "9e1502539fc27decc9215c0ec2c9b938d50c89443ec19ef53b0bf386cd52a66c"
+    },
+    {
+      "code": "MICRO-55",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: pale North MB and orange South MB is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "98bf041c178a341f3546f2fabd6a76a40466d959bc84369fefc69582e21f110d"
+    },
+    {
+      "code": "MICRO-56",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "cf649925209a78c42df75131038ed4cc98fcab2afb2a6db363c49d79093e322d"
+    },
+    {
+      "code": "MICRO-57",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "8f484bb50b6e9995e152198b35b673d6157dc21d77b216bd60c30229a9ff2eb7"
+    },
+    {
+      "code": "MICRO-58",
+      "status": "BLOCKED",
+      "errors": [
+        "Missing byte-bound semantic/visual review"
+      ],
+      "reviewBlockers": [
+        "GRAPH_CURVE_CONTRAST: dashed IC1 and IC3 is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "candidateSha256": "98f8f46363570dfaf1fe61324e4b841074582e765a237a546515e2c9b7605f0b"
+    },
+    {
+      "code": "MICRO-59",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "76c299411200f3716f8b742549921c6e5994750a12deb287d3ac41ebd83b6837"
+    },
+    {
+      "code": "MICRO-60",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "4aa56d43a7a7a30741b16ba93627a90b0ecfc305e8189f126ccc4885f57310d6"
+    },
+    {
+      "code": "MICRO-61",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "9db213b565542d83df4e53954ea53ca448432bbb626486f856849b60c059b50f"
+    },
+    {
+      "code": "MICRO-62",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "b0682983cdfd27bb05e4afbf3d10bc79f60d7a976cbdb2ebabcc08168b743f19"
+    },
+    {
+      "code": "MICRO-63",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "d971566a54845a228003f2609324b20f68b684ea7dd2b7326089986240cd65af"
+    },
+    {
+      "code": "MICRO-64",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "497712eed8b5ccd30ce8477884dc4661afd72efb57bf73b5a471778e61844b0b"
+    },
+    {
+      "code": "MICRO-65",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "9567e607464cf0a3395c860f8f977ed599f84b9cf80b906237162a6a1137fec0"
+    },
+    {
+      "code": "MICRO-66",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "20ad060edd7d4c11af6ee01fc486422444c475bf5996b94c43b927b03229157c"
+    },
+    {
+      "code": "MICRO-67",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "222c3b2b428c8ccad3c83c25148943335f9bdbf93adb2c361d8b43091560813d"
+    },
+    {
+      "code": "MICRO-68",
+      "status": "PASS",
+      "errors": [],
+      "reviewBlockers": [],
+      "candidateSha256": "aee02d9f70b4de95808b58e29a18f5da5041f75f1d23df98a506f8e1915a7185"
+    }
+  ],
+  "passed": 126,
+  "blocked": 25,
+  "activeInstallPerformed": false
+}

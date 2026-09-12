@@ -1,0 +1,500 @@
+{
+  "status": "PASS",
+  "integrity": {
+    "concepts": 149,
+    "questions": 9779,
+    "graphs": 1077,
+    "assets": 507
+  },
+  "checks": 4158,
+  "originalMacro": {
+    "total": 2870,
+    "practice": 1778,
+    "checkpoint": 620,
+    "adaptiveSupport": 360,
+    "supplemental": 112,
+    "imageBearing": 327,
+    "graphRequired": 174,
+    "calculation": 326,
+    "difficulty": {
+      "easy": 550,
+      "medium": 605,
+      "hard": 588,
+      "elite": 280,
+      "legendary": 515,
+      "unknown": 332
+    }
+  },
+  "originalChildren": 51,
+  "openEconomyQuestions": 240,
+  "sharedGeneralConcepts": 22,
+  "selectableMacroConcepts": 79,
+  "familySummaries": {
+    "gdp-national-income": {
+      "childCount": 4,
+      "questionCount": 230,
+      "childIds": [
+        "gdp-measurement",
+        "gdp-components",
+        "real-versus-nominal-gdp",
+        "limits-of-gdp"
+      ]
+    },
+    "inflation-real-values": {
+      "childCount": 6,
+      "questionCount": 303,
+      "childIds": [
+        "cpi-and-inflation-measurement",
+        "cpi-bias",
+        "cpi-versus-gdp-deflator",
+        "indexing-and-real-values",
+        "real-versus-nominal-interest-rates",
+        "inflation-costs"
+      ]
+    },
+    "growth-productivity": {
+      "childCount": 4,
+      "questionCount": 231,
+      "childIds": [
+        "living-standards-and-growth",
+        "productivity-measurement",
+        "sources-of-productivity",
+        "economic-growth-policy"
+      ]
+    },
+    "unemployment-labor": {
+      "childCount": 4,
+      "questionCount": 238,
+      "childIds": [
+        "unemployment-measurement",
+        "unemployment-types",
+        "labor-market-institutions",
+        "natural-rate-of-unemployment"
+      ]
+    },
+    "saving-fiscal-foundations": {
+      "childCount": 7,
+      "questionCount": 268,
+      "childIds": [
+        "saving-and-investment-identities",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "crowding-out-and-capital-formation",
+        "budget-accounting-and-public-saving",
+        "deficits-debt-and-government-borrowing",
+        "debt-measures-burden-and-fiscal-data"
+      ]
+    },
+    "money-banking-fed": {
+      "childCount": 6,
+      "questionCount": 326,
+      "childIds": [
+        "money-functions-and-measures",
+        "central-bank-and-federal-reserve",
+        "bank-balance-sheets-reserves-and-capital",
+        "deposit-creation-and-money-multiplier",
+        "monetary-policy-tools",
+        "monetary-control-limits"
+      ]
+    },
+    "money-growth-inflation": {
+      "childCount": 4,
+      "questionCount": 243,
+      "childIds": [
+        "quantity-theory-of-money",
+        "monetary-neutrality",
+        "fisher-effect",
+        "inflation-tax-and-deflation"
+      ]
+    },
+    "ad-as-equilibrium": {
+      "childCount": 6,
+      "questionCount": 254,
+      "childIds": [
+        "aggregate-demand",
+        "short-run-aggregate-supply",
+        "long-run-aggregate-supply-and-potential-output",
+        "ad-as-equilibrium-and-output-gaps",
+        "demand-and-supply-shocks",
+        "long-run-macroeconomic-self-adjustment"
+      ]
+    },
+    "stabilization-policy": {
+      "childCount": 5,
+      "questionCount": 403,
+      "childIds": [
+        "liquidity-preference-and-money-market",
+        "monetary-policy-transmission",
+        "fiscal-policy-and-aggregate-demand",
+        "fiscal-multipliers-and-crowding-out",
+        "stabilization-policy"
+      ]
+    },
+    "phillips-disinflation": {
+      "childCount": 5,
+      "questionCount": 262,
+      "childIds": [
+        "short-run-phillips-curve",
+        "long-run-phillips-curve",
+        "phillips-curve-expectations",
+        "disinflation-and-policy",
+        "sacrifice-ratio"
+      ]
+    }
+  },
+  "newConceptBreakdowns": {
+    "saving-and-investment-identities": {
+      "total": 49,
+      "practice": 22,
+      "checkpoint": 21,
+      "adaptiveSupport": 6,
+      "supplemental": 0,
+      "imageBearing": 0,
+      "graphRequired": 0,
+      "calculation": 7,
+      "difficulty": {
+        "easy": 11,
+        "medium": 21,
+        "hard": 11,
+        "elite": 3,
+        "legendary": 3,
+        "unknown": 0
+      }
+    },
+    "loanable-funds-equilibrium": {
+      "total": 32,
+      "practice": 25,
+      "checkpoint": 3,
+      "adaptiveSupport": 4,
+      "supplemental": 0,
+      "imageBearing": 10,
+      "graphRequired": 10,
+      "calculation": 0,
+      "difficulty": {
+        "easy": 7,
+        "medium": 13,
+        "hard": 6,
+        "elite": 3,
+        "legendary": 3,
+        "unknown": 0
+      }
+    },
+    "loanable-funds-shifts": {
+      "total": 52,
+      "practice": 50,
+      "checkpoint": 0,
+      "adaptiveSupport": 2,
+      "supplemental": 0,
+      "imageBearing": 36,
+      "graphRequired": 36,
+      "calculation": 0,
+      "difficulty": {
+        "easy": 12,
+        "medium": 18,
+        "hard": 13,
+        "elite": 5,
+        "legendary": 4,
+        "unknown": 0
+      }
+    },
+    "crowding-out-and-capital-formation": {
+      "total": 27,
+      "practice": 27,
+      "checkpoint": 0,
+      "adaptiveSupport": 0,
+      "supplemental": 0,
+      "imageBearing": 14,
+      "graphRequired": 14,
+      "calculation": 0,
+      "difficulty": {
+        "easy": 10,
+        "medium": 8,
+        "hard": 6,
+        "elite": 1,
+        "legendary": 2,
+        "unknown": 0
+      }
+    },
+    "budget-accounting-and-public-saving": {
+      "total": 37,
+      "practice": 25,
+      "checkpoint": 6,
+      "adaptiveSupport": 6,
+      "supplemental": 0,
+      "imageBearing": 0,
+      "graphRequired": 0,
+      "calculation": 7,
+      "difficulty": {
+        "easy": 12,
+        "medium": 12,
+        "hard": 7,
+        "elite": 4,
+        "legendary": 2,
+        "unknown": 0
+      }
+    },
+    "deficits-debt-and-government-borrowing": {
+      "total": 28,
+      "practice": 20,
+      "checkpoint": 4,
+      "adaptiveSupport": 4,
+      "supplemental": 0,
+      "imageBearing": 0,
+      "graphRequired": 0,
+      "calculation": 0,
+      "difficulty": {
+        "easy": 7,
+        "medium": 7,
+        "hard": 7,
+        "elite": 2,
+        "legendary": 5,
+        "unknown": 0
+      }
+    },
+    "debt-measures-burden-and-fiscal-data": {
+      "total": 43,
+      "practice": 31,
+      "checkpoint": 6,
+      "adaptiveSupport": 6,
+      "supplemental": 0,
+      "imageBearing": 0,
+      "graphRequired": 0,
+      "calculation": 9,
+      "difficulty": {
+        "easy": 13,
+        "medium": 13,
+        "hard": 8,
+        "elite": 4,
+        "legendary": 5,
+        "unknown": 0
+      }
+    },
+    "bank-balance-sheets-reserves-and-capital": {
+      "total": 53,
+      "practice": 37,
+      "checkpoint": 7,
+      "adaptiveSupport": 9,
+      "supplemental": 0,
+      "imageBearing": 0,
+      "graphRequired": 0,
+      "calculation": 20,
+      "difficulty": {
+        "easy": 9,
+        "medium": 10,
+        "hard": 12,
+        "elite": 8,
+        "legendary": 5,
+        "unknown": 9
+      }
+    },
+    "deposit-creation-and-money-multiplier": {
+      "total": 37,
+      "practice": 23,
+      "checkpoint": 7,
+      "adaptiveSupport": 7,
+      "supplemental": 0,
+      "imageBearing": 0,
+      "graphRequired": 0,
+      "calculation": 10,
+      "difficulty": {
+        "easy": 5,
+        "medium": 7,
+        "hard": 6,
+        "elite": 5,
+        "legendary": 7,
+        "unknown": 7
+      }
+    },
+    "short-run-aggregate-supply": {
+      "total": 48,
+      "practice": 32,
+      "checkpoint": 8,
+      "adaptiveSupport": 8,
+      "supplemental": 0,
+      "imageBearing": 13,
+      "graphRequired": 12,
+      "calculation": 2,
+      "difficulty": {
+        "easy": 8,
+        "medium": 10,
+        "hard": 10,
+        "elite": 5,
+        "legendary": 7,
+        "unknown": 8
+      }
+    },
+    "long-run-aggregate-supply-and-potential-output": {
+      "total": 15,
+      "practice": 9,
+      "checkpoint": 4,
+      "adaptiveSupport": 2,
+      "supplemental": 0,
+      "imageBearing": 0,
+      "graphRequired": 0,
+      "calculation": 0,
+      "difficulty": {
+        "easy": 3,
+        "medium": 2,
+        "hard": 3,
+        "elite": 1,
+        "legendary": 4,
+        "unknown": 2
+      }
+    },
+    "ad-as-equilibrium-and-output-gaps": {
+      "total": 30,
+      "practice": 20,
+      "checkpoint": 4,
+      "adaptiveSupport": 6,
+      "supplemental": 0,
+      "imageBearing": 18,
+      "graphRequired": 7,
+      "calculation": 0,
+      "difficulty": {
+        "easy": 11,
+        "medium": 6,
+        "hard": 3,
+        "elite": 2,
+        "legendary": 2,
+        "unknown": 6
+      }
+    },
+    "demand-and-supply-shocks": {
+      "total": 69,
+      "practice": 47,
+      "checkpoint": 12,
+      "adaptiveSupport": 10,
+      "supplemental": 0,
+      "imageBearing": 33,
+      "graphRequired": 16,
+      "calculation": 2,
+      "difficulty": {
+        "easy": 9,
+        "medium": 17,
+        "hard": 13,
+        "elite": 8,
+        "legendary": 12,
+        "unknown": 10
+      }
+    },
+    "long-run-macroeconomic-self-adjustment": {
+      "total": 33,
+      "practice": 22,
+      "checkpoint": 8,
+      "adaptiveSupport": 3,
+      "supplemental": 0,
+      "imageBearing": 11,
+      "graphRequired": 1,
+      "calculation": 0,
+      "difficulty": {
+        "easy": 3,
+        "medium": 6,
+        "hard": 6,
+        "elite": 7,
+        "legendary": 8,
+        "unknown": 3
+      }
+    }
+  },
+  "legacyAliases": [
+    {
+      "removedFacultyFacingId": "saving-investment-and-loanable-funds",
+      "replacementIds": [
+        "saving-and-investment-identities",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "crowding-out-and-capital-formation"
+      ],
+      "migratedSelectionIds": [
+        "saving-and-investment-identities",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "crowding-out-and-capital-formation"
+      ],
+      "oldQuestionUniverseCount": 160,
+      "resolvedUniqueQuestionUniverseCount": 160,
+      "selectionResolves": true,
+      "compatibilityBehavior": "EXACT_PARTITION"
+    },
+    {
+      "removedFacultyFacingId": "federal-budgets-and-debt",
+      "replacementIds": [
+        "budget-accounting-and-public-saving",
+        "deficits-debt-and-government-borrowing",
+        "debt-measures-burden-and-fiscal-data"
+      ],
+      "migratedSelectionIds": [
+        "budget-accounting-and-public-saving",
+        "deficits-debt-and-government-borrowing",
+        "debt-measures-burden-and-fiscal-data"
+      ],
+      "oldQuestionUniverseCount": 108,
+      "resolvedUniqueQuestionUniverseCount": 108,
+      "selectionResolves": true,
+      "compatibilityBehavior": "EXACT_PARTITION"
+    },
+    {
+      "removedFacultyFacingId": "bank-money-creation",
+      "replacementIds": [
+        "bank-balance-sheets-reserves-and-capital",
+        "deposit-creation-and-money-multiplier"
+      ],
+      "migratedSelectionIds": [
+        "bank-balance-sheets-reserves-and-capital",
+        "deposit-creation-and-money-multiplier"
+      ],
+      "oldQuestionUniverseCount": 90,
+      "resolvedUniqueQuestionUniverseCount": 90,
+      "selectionResolves": true,
+      "compatibilityBehavior": "EXACT_PARTITION"
+    },
+    {
+      "removedFacultyFacingId": "aggregate-supply",
+      "replacementIds": [
+        "short-run-aggregate-supply",
+        "long-run-aggregate-supply-and-potential-output"
+      ],
+      "migratedSelectionIds": [
+        "short-run-aggregate-supply",
+        "long-run-aggregate-supply-and-potential-output"
+      ],
+      "oldQuestionUniverseCount": 63,
+      "resolvedUniqueQuestionUniverseCount": 63,
+      "selectionResolves": true,
+      "compatibilityBehavior": "EXACT_PARTITION"
+    },
+    {
+      "removedFacultyFacingId": "macroeconomic-equilibrium-and-shocks",
+      "replacementIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "demand-and-supply-shocks",
+        "long-run-macroeconomic-self-adjustment"
+      ],
+      "migratedSelectionIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "demand-and-supply-shocks",
+        "long-run-macroeconomic-self-adjustment"
+      ],
+      "oldQuestionUniverseCount": 83,
+      "resolvedUniqueQuestionUniverseCount": 132,
+      "selectionResolves": true,
+      "compatibilityBehavior": "SUPERSET_DUE_TO_APPROVED_CHILDREN_DRAWING_FROM_BOTH_LEGACY_POOLS"
+    },
+    {
+      "removedFacultyFacingId": "long-run-macroeconomic-adjustment",
+      "replacementIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "long-run-macroeconomic-self-adjustment"
+      ],
+      "migratedSelectionIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "long-run-macroeconomic-self-adjustment"
+      ],
+      "oldQuestionUniverseCount": 49,
+      "resolvedUniqueQuestionUniverseCount": 63,
+      "selectionResolves": true,
+      "compatibilityBehavior": "SUPERSET_DUE_TO_APPROVED_CHILDREN_DRAWING_FROM_BOTH_LEGACY_POOLS"
+    }
+  ],
+  "artifact": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\full_batch_v1\\regression\\full_batch_v1_micro\\tests\\macro-taxonomy-current-validation.json"
+}

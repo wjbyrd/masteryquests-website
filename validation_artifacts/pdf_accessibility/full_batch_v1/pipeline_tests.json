@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "test": "syntax_and_metadata",
+      "passed": true,
+      "files": 26
+    },
+    {
+      "test": "equal_fixture_copies_and_manifest",
+      "passed": true,
+      "copies": 16
+    },
+    {
+      "test": "forged_plan_rejected_before_writes",
+      "passed": true
+    },
+    {
+      "test": "stale_candidate",
+      "passed": true
+    },
+    {
+      "test": "stale_source",
+      "passed": true
+    },
+    {
+      "test": "stale_semantics",
+      "passed": true
+    },
+    {
+      "test": "changed_validator_report",
+      "passed": true
+    },
+    {
+      "test": "wrong_profile",
+      "passed": true
+    },
+    {
+      "test": "heading_contrast",
+      "passed": true
+    },
+    {
+      "test": "long_list_item_rejected_without_truncation",
+      "passed": true
+    },
+    {
+      "test": "core_recognition_overlap_rejected",
+      "passed": true
+    },
+    {
+      "test": "formula_card_overflow_rejected",
+      "passed": true
+    },
+    {
+      "test": "mismatched_active_copy_plan_rejected",
+      "passed": true
+    },
+    {
+      "test": "distinct_refresh_groups_keep_distinct_raw_reports",
+      "passed": true
+    },
+    {
+      "test": "changed_batch_inputs_preserve_previous_candidate_paths",
+      "passed": true
+    },
+    {
+      "test": "direct_untagged_write",
+      "passed": true
+    },
+    {
+      "test": "implicit_batch",
+      "passed": true
+    },
+    {
+      "test": "legacy_publish",
+      "passed": true
+    },
+    {
+      "test": "public_missing_range_unchanged",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "activeCopiesInstalled": 0
+}

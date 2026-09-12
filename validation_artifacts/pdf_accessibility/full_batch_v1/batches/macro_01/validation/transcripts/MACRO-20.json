@@ -1,0 +1,766 @@
+{
+  "errors": [],
+  "transcript": [
+    {
+      "role": "H1",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Bank Balance Sheets, Reserves, and Capital    ",
+          "sourceText": "Bank Balance Sheets, Reserves, and Capital    "
+        }
+      ],
+      "sourceText": "Bank Balance Sheets, Reserves, and Capital",
+      "text": "Bank Balance Sheets, Reserves, and Capital"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MACROECONOMICS  ",
+          "sourceText": "MACROECONOMICS  "
+        }
+      ],
+      "sourceText": "MACROECONOMICS",
+      "text": "MACROECONOMICS"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MACRO-20  ",
+          "sourceText": "MACRO-20  "
+        }
+      ],
+      "sourceText": "MACRO-20",
+      "text": "MACRO-20"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Time:  ",
+          "sourceText": "Time:  "
+        },
+        {
+          "role": "Span",
+          "text": "5 minutes  ",
+          "sourceText": "5 minutes  "
+        }
+      ],
+      "sourceText": "Time: 5 minutes",
+      "text": "Time: 5 minutes"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Outcome:  ",
+          "sourceText": "Outcome:  "
+        },
+        {
+          "role": "Span",
+          "text": "Classify bank accounts and trace how  ",
+          "sourceText": "Classify bank accounts and trace how  "
+        },
+        {
+          "role": "Span",
+          "text": "transactions change reserves and capital.  ",
+          "sourceText": "transactions change reserves and capital.  "
+        }
+      ],
+      "sourceText": "Outcome: Classify bank accounts and trace how transactions change reserves and capital.",
+      "text": "Outcome: Classify bank accounts and trace how transactions change reserves and capital."
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Difficulty:  ",
+          "sourceText": "Difficulty:  "
+        },
+        {
+          "role": "Span",
+          "text": "Intermediate  ",
+          "sourceText": "Intermediate  "
+        }
+      ],
+      "sourceText": "Difficulty: Intermediate",
+      "text": "Difficulty: Intermediate"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "THE CORE IDEA  ",
+          "sourceText": "THE CORE IDEA  "
+        }
+      ],
+      "sourceText": "THE CORE IDEA",
+      "text": "THE CORE IDEA"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A bank balance sheet satisfies",
+          "sourceText": "A bank balance sheet satisfies"
+        },
+        {
+          "role": "Formula",
+          "text": "assets equals liabilities plus capital",
+          "sourceText": " assets = liabilities + capital"
+        },
+        {
+          "role": "Span",
+          "text": ". Reserves, loans, and securities are assets. Deposits and bank  ",
+          "sourceText": ". Reserves, loans, and securities are assets. Deposits and bank  "
+        },
+        {
+          "role": "Span",
+          "text": "borrowing are liabilities. Bank capital is owners' equity: assets minus liabilities. Reserves provide liquidity and help meet  ",
+          "sourceText": "borrowing are liabilities. Bank capital is owners' equity: assets minus liabilities. Reserves provide liquidity and help meet  "
+        },
+        {
+          "role": "Span",
+          "text": "withdrawals; capital absorbs asset losses. Required reserves and capital requirements therefore constrain different parts  ",
+          "sourceText": "withdrawals; capital absorbs asset losses. Required reserves and capital requirements therefore constrain different parts  "
+        },
+        {
+          "role": "Span",
+          "text": "of the balance sheet.    ",
+          "sourceText": "of the balance sheet.    "
+        }
+      ],
+      "sourceText": "A bank balance sheet satisfies assets = liabilities + capital. Reserves, loans, and securities are assets. Deposits and bank borrowing are liabilities. Bank capital is owners' equity: assets minus liabilities. Reserves provide liquidity and help meet withdrawals; capital absorbs asset losses. Required reserves and capital requirements therefore constrain different parts of the balance sheet.",
+      "text": "A bank balance sheet satisfies assets equals liabilities plus capital . Reserves, loans, and securities are assets. Deposits and bank borrowing are liabilities. Bank capital is owners' equity: assets minus liabilities. Reserves provide liquidity and help meet withdrawals; capital absorbs asset losses. Required reserves and capital requirements therefore constrain different parts of the balance sheet."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "HOW TO RECOGNIZE IT  ",
+          "sourceText": "HOW TO RECOGNIZE IT  "
+        }
+      ],
+      "sourceText": "HOW TO RECOGNIZE IT",
+      "text": "HOW TO RECOGNIZE IT"
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "-  ",
+          "sourceText": "-  "
+        }
+      ],
+      "sourceText": "-",
+      "text": "-"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A customer's deposit is a bank liability; the cash or reserve balance received is an asset.  ",
+          "sourceText": "A customer's deposit is a bank liability; the cash or reserve balance received is an asset.  "
+        }
+      ],
+      "sourceText": "A customer's deposit is a bank liability; the cash or reserve balance received is an asset.",
+      "text": "A customer's deposit is a bank liability; the cash or reserve balance received is an asset."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "-  ",
+          "sourceText": "-  "
+        }
+      ],
+      "sourceText": "-",
+      "text": "-"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A cash withdrawal reduces both reserves and deposits by the same amount.  ",
+          "sourceText": "A cash withdrawal reduces both reserves and deposits by the same amount.  "
+        }
+      ],
+      "sourceText": "A cash withdrawal reduces both reserves and deposits by the same amount.",
+      "text": "A cash withdrawal reduces both reserves and deposits by the same amount."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "-  ",
+          "sourceText": "-  "
+        }
+      ],
+      "sourceText": "-",
+      "text": "-"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A loan is a bank asset because the borrower owes the bank repayment.  ",
+          "sourceText": "A loan is a bank asset because the borrower owes the bank repayment.  "
+        }
+      ],
+      "sourceText": "A loan is a bank asset because the borrower owes the bank repayment.",
+      "text": "A loan is a bank asset because the borrower owes the bank repayment."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "-  ",
+          "sourceText": "-  "
+        }
+      ],
+      "sourceText": "-",
+      "text": "-"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "An asset loss reduces capital when liabilities do not change.    ",
+          "sourceText": "An asset loss reduces capital when liabilities do not change.    "
+        }
+      ],
+      "sourceText": "An asset loss reduces capital when liabilities do not change.",
+      "text": "An asset loss reduces capital when liabilities do not change."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WATCH OUT  ",
+          "sourceText": "WATCH OUT  "
+        }
+      ],
+      "sourceText": "WATCH OUT",
+      "text": "WATCH OUT"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Do not call reserves bank capital. Reserves are assets available for payments; capital is the residual claim, assets  ",
+          "sourceText": "Do not call reserves bank capital. Reserves are assets available for payments; capital is the residual claim, assets  "
+        },
+        {
+          "role": "Span",
+          "text": "minus liabilities, that cushions losses.    ",
+          "sourceText": "minus liabilities, that cushions losses.    "
+        }
+      ],
+      "sourceText": "Do not call reserves bank capital. Reserves are assets available for payments; capital is the residual claim, assets minus liabilities, that cushions losses.",
+      "text": "Do not call reserves bank capital. Reserves are assets available for payments; capital is the residual claim, assets minus liabilities, that cushions losses."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WORKED EXAMPLE: CAPITAL ABSORBS AN ASSET LOSS  ",
+          "sourceText": "WORKED EXAMPLE: CAPITAL ABSORBS AN ASSET LOSS  "
+        }
+      ],
+      "sourceText": "WORKED EXAMPLE: CAPITAL ABSORBS AN ASSET LOSS",
+      "text": "WORKED EXAMPLE: CAPITAL ABSORBS AN ASSET LOSS"
+    },
+    {
+      "role": "H3",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "KEY RELATIONSHIPS  ",
+          "sourceText": "KEY RELATIONSHIPS  "
+        }
+      ],
+      "sourceText": "KEY RELATIONSHIPS",
+      "text": "KEY RELATIONSHIPS"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "assets and liabilities  ",
+          "sourceText": "assets and liabilities  "
+        }
+      ],
+      "sourceText": "assets and liabilities",
+      "text": "assets and liabilities"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "reserves  ",
+          "sourceText": "reserves  "
+        }
+      ],
+      "sourceText": "reserves",
+      "text": "reserves"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "bank capital  ",
+          "sourceText": "bank capital  "
+        }
+      ],
+      "sourceText": "bank capital",
+      "text": "bank capital"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "deposits and withdrawals  ",
+          "sourceText": "deposits and withdrawals  "
+        }
+      ],
+      "sourceText": "deposits and withdrawals",
+      "text": "deposits and withdrawals"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "asset losses  ",
+          "sourceText": "asset losses  "
+        }
+      ],
+      "sourceText": "asset losses",
+      "text": "asset losses"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A bank holds",
+          "sourceText": "A bank holds"
+        },
+        {
+          "role": "Formula",
+          "text": "120 dollars",
+          "sourceText": " $120"
+        },
+        {
+          "role": "Span",
+          "text": " in reserves,",
+          "sourceText": " in reserves,"
+        },
+        {
+          "role": "Formula",
+          "text": "780 dollars",
+          "sourceText": " $780"
+        },
+        {
+          "role": "Span",
+          "text": " in loans, and",
+          "sourceText": " in loans, and"
+        },
+        {
+          "role": "Formula",
+          "text": "100 dollars",
+          "sourceText": " $100"
+        },
+        {
+          "role": "Span",
+          "text": " in  ",
+          "sourceText": " in  "
+        },
+        {
+          "role": "Span",
+          "text": "securities: assets are",
+          "sourceText": "securities: assets are"
+        },
+        {
+          "role": "Formula",
+          "text": "1,000 dollars",
+          "sourceText": " $1,000"
+        },
+        {
+          "role": "Span",
+          "text": ". Deposits of",
+          "sourceText": ". Deposits of"
+        },
+        {
+          "role": "Formula",
+          "text": "900 dollars",
+          "sourceText": " $900"
+        },
+        {
+          "role": "Span",
+          "text": " and borrowing of  ",
+          "sourceText": " and borrowing of  "
+        },
+        {
+          "role": "Formula",
+          "text": "40 dollars",
+          "sourceText": "$40"
+        },
+        {
+          "role": "Span",
+          "text": " make liabilities",
+          "sourceText": " make liabilities"
+        },
+        {
+          "role": "Formula",
+          "text": "940 dollars",
+          "sourceText": " $940"
+        },
+        {
+          "role": "Span",
+          "text": ", so capital is",
+          "sourceText": ", so capital is"
+        },
+        {
+          "role": "Formula",
+          "text": "60 dollars",
+          "sourceText": " $60"
+        },
+        {
+          "role": "Span",
+          "text": ". A",
+          "sourceText": ". A"
+        },
+        {
+          "role": "Formula",
+          "text": "25 dollars",
+          "sourceText": " $25"
+        },
+        {
+          "role": "Span",
+          "text": " loan loss cuts  ",
+          "sourceText": " loan loss cuts  "
+        },
+        {
+          "role": "Span",
+          "text": "assets to",
+          "sourceText": "assets to"
+        },
+        {
+          "role": "Formula",
+          "text": "975 dollars",
+          "sourceText": " $975"
+        },
+        {
+          "role": "Span",
+          "text": " while liabilities stay",
+          "sourceText": " while liabilities stay"
+        },
+        {
+          "role": "Formula",
+          "text": "940 dollars",
+          "sourceText": " $940"
+        },
+        {
+          "role": "Span",
+          "text": ". Capital falls to",
+          "sourceText": ". Capital falls to"
+        },
+        {
+          "role": "Formula",
+          "text": "35 dollars",
+          "sourceText": " $35"
+        },
+        {
+          "role": "Span",
+          "text": ";  ",
+          "sourceText": ";  "
+        },
+        {
+          "role": "Span",
+          "text": "reserves remain",
+          "sourceText": "reserves remain"
+        },
+        {
+          "role": "Formula",
+          "text": "120 dollars",
+          "sourceText": " $120"
+        },
+        {
+          "role": "Span",
+          "text": ".    ",
+          "sourceText": ".    "
+        }
+      ],
+      "sourceText": "A bank holds $120 in reserves, $780 in loans, and $100 in securities: assets are $1,000. Deposits of $900 and borrowing of $40 make liabilities $940, so capital is $60. A $25 loan loss cuts assets to $975 while liabilities stay $940. Capital falls to $35; reserves remain $120.",
+      "text": "A bank holds 120 dollars in reserves, 780 dollars in loans, and 100 dollars in securities: assets are 1,000 dollars . Deposits of 900 dollars and borrowing of 40 dollars make liabilities 940 dollars , so capital is 60 dollars . A 25 dollars loan loss cuts assets to 975 dollars while liabilities stay 940 dollars . Capital falls to 35 dollars ; reserves remain 120 dollars ."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "CHECK YOURSELF  ",
+          "sourceText": "CHECK YOURSELF  "
+        }
+      ],
+      "sourceText": "CHECK YOURSELF",
+      "text": "CHECK YOURSELF"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "If a depositor withdraws",
+          "sourceText": "If a depositor withdraws"
+        },
+        {
+          "role": "Formula",
+          "text": "20 dollars",
+          "sourceText": " $20"
+        },
+        {
+          "role": "Span",
+          "text": " in cash, which asset and which liability fall?  ",
+          "sourceText": " in cash, which asset and which liability fall?  "
+        }
+      ],
+      "sourceText": "If a depositor withdraws $20 in cash, which asset and which liability fall?",
+      "text": "If a depositor withdraws 20 dollars in cash, which asset and which liability fall?"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "READY?  ",
+          "sourceText": "READY?  "
+        }
+      ],
+      "sourceText": "READY?",
+      "text": "READY?"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Return to the game and master this concept.  ",
+          "sourceText": "Return to the game and master this concept.  "
+        }
+      ],
+      "sourceText": "Return to the game and master this concept.",
+      "text": "Return to the game and master this concept."
+    }
+  ],
+  "roles": [
+    "/Document",
+    "/H1",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/H2",
+    "/P",
+    "/Formula",
+    "/H2",
+    "/L",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/H2",
+    "/P",
+    "/H2",
+    "/H3",
+    "/L",
+    "/LI",
+    "/LBody",
+    "/LI",
+    "/LBody",
+    "/LI",
+    "/LBody",
+    "/LI",
+    "/LBody",
+    "/LI",
+    "/LBody",
+    "/P",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/H2",
+    "/P",
+    "/Formula",
+    "/H2",
+    "/P"
+  ],
+  "linkedContentCount": 72,
+  "figureAlternatives": [],
+  "formulas": [
+    {
+      "text": "assets = liabilities + capital",
+      "alternative": "assets equals liabilities plus capital",
+      "parent": "/P"
+    },
+    {
+      "text": "$120",
+      "alternative": "120 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$780",
+      "alternative": "780 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$100",
+      "alternative": "100 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$1,000",
+      "alternative": "1,000 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$900",
+      "alternative": "900 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$40",
+      "alternative": "40 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$940",
+      "alternative": "940 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$60",
+      "alternative": "60 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$25",
+      "alternative": "25 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$975",
+      "alternative": "975 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$940",
+      "alternative": "940 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$35",
+      "alternative": "35 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$120",
+      "alternative": "120 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$20",
+      "alternative": "20 dollars",
+      "parent": "/P"
+    }
+  ],
+  "fonts": [
+    {
+      "font": "/AAAAAA+BitstreamVeraSans-Bold",
+      "embedded": true,
+      "unicodeMap": true
+    },
+    {
+      "font": "/AAAAAA+BitstreamVeraSans-Roman",
+      "embedded": true,
+      "unicodeMap": true
+    }
+  ],
+  "rawReadingSequence": [
+    "Bank Balance Sheets, Reserves, and Capital",
+    "MACROECONOMICS",
+    "MACRO-20",
+    "Time: 5 minutes",
+    "Outcome: Classify bank accounts and trace how transactions change reserves and capital.",
+    "Difficulty: Intermediate",
+    "THE CORE IDEA",
+    "A bank balance sheet satisfies assets = liabilities + capital. Reserves, loans, and securities are assets. Deposits and bank borrowing are liabilities. Bank capital is owners' equity: assets minus liabilities. Reserves provide liquidity and help meet withdrawals; capital absorbs asset losses. Required reserves and capital requirements therefore constrain different parts of the balance sheet.",
+    "HOW TO RECOGNIZE IT",
+    "-",
+    "A customer's deposit is a bank liability; the cash or reserve balance received is an asset.",
+    "-",
+    "A cash withdrawal reduces both reserves and deposits by the same amount.",
+    "-",
+    "A loan is a bank asset because the borrower owes the bank repayment.",
+    "-",
+    "An asset loss reduces capital when liabilities do not change.",
+    "WATCH OUT",
+    "Do not call reserves bank capital. Reserves are assets available for payments; capital is the residual claim, assets minus liabilities, that cushions losses.",
+    "WORKED EXAMPLE: CAPITAL ABSORBS AN ASSET LOSS",
+    "KEY RELATIONSHIPS",
+    "assets and liabilities",
+    "reserves",
+    "bank capital",
+    "deposits and withdrawals",
+    "asset losses",
+    "A bank holds $120 in reserves, $780 in loans, and $100 in securities: assets are $1,000. Deposits of $900 and borrowing of $40 make liabilities $940, so capital is $60. A $25 loan loss cuts assets to $975 while liabilities stay $940. Capital falls to $35; reserves remain $120.",
+    "CHECK YOURSELF",
+    "If a depositor withdraws $20 in cash, which asset and which liability fall?",
+    "READY?",
+    "Return to the game and master this concept."
+  ]
+}

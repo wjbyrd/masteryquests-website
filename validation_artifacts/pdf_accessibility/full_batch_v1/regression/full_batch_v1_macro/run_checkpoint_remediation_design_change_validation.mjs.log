@@ -1,0 +1,245 @@
+{
+  "status": "PASS",
+  "checks": 28,
+  "errors": [],
+  "simulation": {
+    "oneMiss": {
+      "room": 11,
+      "checkpointActive": false,
+      "remaining": 0,
+      "evidence": [
+        {
+          "correct": false,
+          "location": "checkpoint",
+          "questionId": 100,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": true,
+          "location": "checkpoint",
+          "questionId": 101,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": true,
+          "location": "checkpoint",
+          "questionId": 102,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        }
+      ],
+      "transitions": [
+        "checkpoint-q1",
+        "checkpoint-q2",
+        "checkpoint-q3",
+        "checkpoint-complete"
+      ],
+      "remediation": null
+    },
+    "twoMisses": {
+      "room": 11,
+      "checkpointActive": false,
+      "remaining": 0,
+      "evidence": [
+        {
+          "correct": false,
+          "location": "checkpoint",
+          "questionId": 100,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": false,
+          "location": "checkpoint",
+          "questionId": 101,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": true,
+          "location": "checkpoint",
+          "questionId": 102,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        }
+      ],
+      "transitions": [
+        "checkpoint-q1",
+        "checkpoint-q2",
+        "checkpoint-q3",
+        "checkpoint-complete"
+      ],
+      "remediation": null
+    },
+    "finalMiss": {
+      "room": 11,
+      "checkpointActive": false,
+      "remaining": 0,
+      "evidence": [
+        {
+          "correct": true,
+          "location": "checkpoint",
+          "questionId": 100,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": true,
+          "location": "checkpoint",
+          "questionId": 101,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": false,
+          "location": "checkpoint",
+          "questionId": 102,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        }
+      ],
+      "transitions": [
+        "checkpoint-q1",
+        "checkpoint-q2",
+        "checkpoint-q3",
+        "checkpoint-complete"
+      ],
+      "remediation": null
+    },
+    "clean": {
+      "room": 11,
+      "checkpointActive": false,
+      "remaining": 0,
+      "evidence": [
+        {
+          "correct": true,
+          "location": "checkpoint",
+          "questionId": 100,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": true,
+          "location": "checkpoint",
+          "questionId": 101,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": true,
+          "location": "checkpoint",
+          "questionId": 102,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        }
+      ],
+      "transitions": [
+        "checkpoint-q1",
+        "checkpoint-q2",
+        "checkpoint-q3",
+        "checkpoint-complete"
+      ],
+      "remediation": null
+    },
+    "deferred": {
+      "room": 11,
+      "checkpointActive": false,
+      "remaining": 0,
+      "evidence": [
+        {
+          "correct": false,
+          "location": "checkpoint",
+          "questionId": 100,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": false,
+          "location": "checkpoint",
+          "questionId": 101,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": true,
+          "location": "checkpoint",
+          "questionId": 102,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        },
+        {
+          "correct": false,
+          "location": "ordinary",
+          "questionId": 103,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        }
+      ],
+      "transitions": [
+        "checkpoint-q1",
+        "checkpoint-q2",
+        "checkpoint-q3",
+        "checkpoint-complete",
+        "repair",
+        "bridge",
+        "retest",
+        "resume-post-checkpoint"
+      ],
+      "remediation": {
+        "returnRoom": 11,
+        "path": [
+          "repair",
+          "bridge",
+          "retest"
+        ]
+      }
+    },
+    "ordinary": {
+      "room": 9,
+      "checkpointActive": false,
+      "remaining": 0,
+      "evidence": [
+        {
+          "correct": false,
+          "location": "ordinary",
+          "questionId": 100,
+          "concept": "consumer-choice",
+          "objective": "CC.1",
+          "skill": "construct_budget_constraint"
+        }
+      ],
+      "transitions": [
+        "repair",
+        "bridge",
+        "retest",
+        "resume-origin-room"
+      ],
+      "remediation": {
+        "returnRoom": 9,
+        "path": [
+          "repair",
+          "bridge",
+          "retest"
+        ]
+      }
+    }
+  }
+}

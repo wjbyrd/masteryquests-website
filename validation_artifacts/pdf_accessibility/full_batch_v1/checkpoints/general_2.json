@@ -1,0 +1,339 @@
+{
+  "task": "PDF_ACCESSIBILITY_FULL_BATCH_V1",
+  "batch": "general_2",
+  "documentIds": [
+    "GEN-ECON-21",
+    "GEN-ECON-22",
+    "GEN-ECON-23",
+    "GEN-ECON-24",
+    "GEN-ECON-25",
+    "GEN-ECON-26"
+  ],
+  "pass": 4,
+  "blocked": 2,
+  "records": [
+    {
+      "code": "GEN-ECON-21",
+      "title": "Tax Incidence without Elasticity",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-21\\after\\GEN-ECON-21.pdf",
+      "sha256": "b7db97ac0914ba63b9284e66880adfb54bbbffac63db62dc00fa4297f4d0536d",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-21\\verapdf.json",
+      "validatorReportSha256": "e1f6258a2ef15c0b75a1136a5644a9daaba4aef50e4f68048a57c4a0c3e4d009",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 5,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "8f0bbf69939b49b91b618e69eff49835f930b16c95a83c3290e4566a5a82484e",
+      "resourceSemanticsSha256": "3ca852e75e68b3fc67922790acd1fd0adac92ea59953bed2b4fbf43be0af0e1e",
+      "publicTarget": "concept-reviews/GEN-ECON-21.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-21.pdf",
+      "plannedManifest": {
+        "oldSha256": "635e4092c6a5b5c9f37b4f16928b7d5451185b03aef47b630f306ae6673de7e3",
+        "sha256": "b7db97ac0914ba63b9284e66880adfb54bbbffac63db62dc00fa4297f4d0536d",
+        "sizeBytes": 677484,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-22",
+      "title": "Tax Incidence with Elasticity",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-22\\after\\GEN-ECON-22.pdf",
+      "sha256": "b137fda45c49bb23731068594c8dcb195d24a9e194a863cded203aab00d550df",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-22\\verapdf.json",
+      "validatorReportSha256": "3d89b23af64127c31535743b6b7e5199945ef99ecc8b2364db0917c2f3d48efc",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 6,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "059a258f7a4516a505916cc779618fe8c00bdcfdda3fb6312893a50a91b44cbe",
+      "resourceSemanticsSha256": "d72abf346569f507a0ab992a175f4cfdc8b2dd47fac9f2a2b8e55168243e4c5b",
+      "publicTarget": "concept-reviews/GEN-ECON-22.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-22.pdf",
+      "plannedManifest": {
+        "oldSha256": "a6b33a7043dfea25324df9653cb46e525deef9f33dfe8c0f216d5bebba76816b",
+        "sha256": "b137fda45c49bb23731068594c8dcb195d24a9e194a863cded203aab00d550df",
+        "sizeBytes": 730218,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-23",
+      "title": "International Trade: World Prices",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-23\\after\\GEN-ECON-23.pdf",
+      "sha256": "cf76e44b769c42d9759832b00f6f9d66dc53343fa5969f32f8fc18853cfa939d",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-23\\verapdf.json",
+      "validatorReportSha256": "94fad48541732efe2791c23acaf023c027e3bfb1ee0122f48a58ac8cb0f0985e",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "9938523a24ea8368efac386d5de8e4db5e770ec3b5ecdb824376c508b7ba51ab",
+      "resourceSemanticsSha256": "dcf10cd5608010fecd5f9945fd2b43ac4668f8418190391a0ffc68fdad4feb3d",
+      "publicTarget": "concept-reviews/GEN-ECON-23.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-23.pdf",
+      "plannedManifest": {
+        "oldSha256": "1596c9e45cba999decfcc5a0acda5614e10c7a36d5b48a6c1e67da1e3d2248e8",
+        "sha256": "cf76e44b769c42d9759832b00f6f9d66dc53343fa5969f32f8fc18853cfa939d",
+        "sizeBytes": 668035,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-24",
+      "title": "International Trade: Tariffs",
+      "domain": "general",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-24\\after\\GEN-ECON-24.pdf",
+      "sha256": "97702c736addcd58a97c6ed5219d9c3f7fcdd55cc6847d8f02679e97b089754d",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-24\\verapdf.json",
+      "validatorReportSha256": "844d536f95616e0a37a09a1689ca0afa08b7d1e82f6526c8c0dad711771d8216",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 4,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_LABEL_CONTRAST: Domestic Price = Pw + tariff is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "sourceRecordSha256": "ac6dc5a727ea00819cd4108fe940c46b0905eccf245ef48bacf9e8679650ac9b",
+      "resourceSemanticsSha256": "dce46e838cd215bf0e1948a7acd44001a5bb96fb6966efa7b4872a1cc30f1fef",
+      "publicTarget": "concept-reviews/GEN-ECON-24.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-24.pdf",
+      "plannedManifest": {
+        "oldSha256": "bb4105413ae19879c5f80cdba9dd9f28b5ce5a307cb674c05c2ebe55bad41f42",
+        "sha256": "97702c736addcd58a97c6ed5219d9c3f7fcdd55cc6847d8f02679e97b089754d",
+        "sizeBytes": 647103,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-25",
+      "title": "International Trade: Quotas",
+      "domain": "general",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-25\\after\\GEN-ECON-25.pdf",
+      "sha256": "b44922ce4499ffe0242687932d7bbb868e891abc3f5fab83f4de40a63eef3402",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-25\\verapdf.json",
+      "validatorReportSha256": "125b9e3d12754ed96bae481c39674cbba124745e0e6473716edf9bc44ac3ed0d",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 7,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_LABEL_CONTRAST: World Price is small colored image text below the 4.5:1 target; darken the label in a reviewed accessible rendering while preserving graph meaning."
+      ],
+      "sourceRecordSha256": "424ce72b75d8846651842a0012698b0a38e9900e05fba9a0984024969287aad8",
+      "resourceSemanticsSha256": "f37f51d9e51721f82e46b1d1b2e4d0d89a6837c4706f9eec7e3cfa03f6ec2ad0",
+      "publicTarget": "concept-reviews/GEN-ECON-25.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-25.pdf",
+      "plannedManifest": {
+        "oldSha256": "7f33fc8d073172088df56593e880ef1090044da6a01abd263653a13c097e24a2",
+        "sha256": "b44922ce4499ffe0242687932d7bbb868e891abc3f5fab83f4de40a63eef3402",
+        "sizeBytes": 696459,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "GEN-ECON-26",
+      "title": "International Trade: Policy and Distribution",
+      "domain": "general",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-26\\after\\GEN-ECON-26.pdf",
+      "sha256": "c6d8e829a04405085067d7e5d5a72515af8bfb743f9f68f30f980401730a9e3b",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-26\\verapdf.json",
+      "validatorReportSha256": "080e896f6106f7144c2f1b30a82430475922dc70262e487b2dc3f0974453d9c6",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 1,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "064e69d22bd4820c30541451105f592ec476829367ca914eb04a31eac0066a3c",
+      "resourceSemanticsSha256": "88d3f12b6efe4e37a84280dd907b1ee6b56f87a4b33fe36098ff74c7a1499952",
+      "publicTarget": "concept-reviews/GEN-ECON-26.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/GEN-ECON-26.pdf",
+      "plannedManifest": {
+        "oldSha256": "d8f8574b60145be9e127eaf6ee0880af15dace1ab4cf088bfdab2c37a3673645",
+        "sha256": "c6d8e829a04405085067d7e5d5a72515af8bfb743f9f68f30f980401730a9e3b",
+        "sizeBytes": 369828,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    }
+  ],
+  "newPatterns": [
+    "heading Formula",
+    "diagnostic list card",
+    "continued Formula card",
+    "long formula-card line",
+    "six-line core reflow"
+  ],
+  "ownerFollowUp": [
+    "GEN-ECON-24",
+    "GEN-ECON-25"
+  ],
+  "activeInstallPerformed": false,
+  "complete": true
+}

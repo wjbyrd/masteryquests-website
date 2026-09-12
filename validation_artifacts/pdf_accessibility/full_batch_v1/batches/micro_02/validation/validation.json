@@ -1,0 +1,3307 @@
+[
+  {
+    "code": "MICRO-21",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-21.pdf",
+    "tagCount": 53,
+    "mcids": 79,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Cost Components & Cost Schedules",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-21",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 6 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Complete short-run cost schedules using total and average cost identities",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "In the short run, total fixed cost (TFC) does not change with output, while total variable cost (TVC) rises or falls as production changes. Total cost combines both components: TC = TFC + TVC. For positive output Q, divide each total by Q: AFC = TFC / Q, AVC = TVC / Q, and ATC = TC / Q = AFC + AVC. At zero output, TVC is normally zero, TC equals TFC, and average costs are undefined because division by zero is impossible. On a total-cost graph, the vertical distance between TC and TVC equals TFC at every quantity.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "A cost-schedule row is missing TFC, TVC, or TC.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A fixed payment remains even when current output is zero.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A cost changes when labor, materials, or production changes.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "The vertical gap between TC and TVC is compared across quantities.",
+        "node": 21
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 23
+      },
+      {
+        "role": "LBody",
+        "text": "Total costs must be converted to per-unit AFC, AVC, or ATC.",
+        "node": 24
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "Do not subtract or multiply fixed and variable cost when finding total cost: add them. Also distinguish total fixed cost from average fixed cost. TFC stays constant as output changes, but AFC = TFC / Q falls as the same fixed amount is spread across more units. Average costs are not defined at Q = 0.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: BUILDING A COST SCHEDULE",
+        "node": 27
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: total cost. The upper rising total-cost curve begins at 400. The lower rising total-variable-cost curve begins at zero. A horizontal total-fixed-cost line is at 400. At quantity 120, marked point A on total cost is 1,200, B on total variable cost is 800, and C on total fixed cost is 400. The two rising curves remain 400 apart vertically.",
+        "node": 28
+      },
+      {
+        "role": "P",
+        "text": "At Q = 120, the graph shows total cost of $1,200 and total variable cost of $800. The $400 vertical gap between the two curves is total fixed cost because TC = TFC + TVC. Dividing each cost by 120 gives AFC = $3.33, AVC = $6.67, and ATC = $10.00. As a check, AFC + AVC = ATC.",
+        "node": 29
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 30
+      },
+      {
+        "role": "P",
+        "text": "At Q = 10, a schedule shows TFC = $90 and TC = $250. What are TVC, AFC, AVC, and ATC, and how can you verify that AFC + AVC = ATC?",
+        "node": 31
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 32
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 33
+      }
+    ],
+    "visualSource": null,
+    "sha256": "44367055d71f462325ffd25310326c52c4d2d2b6121d741f40795fdd90e377c8",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "eb34b301cf8d7e8481a1bea193c46329e8b1d4d93c42b39203e9809826929a5d",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "2addf3db5e0c084f27a8e61c26bdcf9552adb7a403831f7dfc2fc0b634ee94e1",
+    "resourceSemanticsSha256": "6da4e9edbe63658d9582edba86512e401914b71b73a8b7332393627758ac82e2",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-22",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-22.pdf",
+    "tagCount": 45,
+    "mcids": 62,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Average Costs: AFC, AVC & ATC",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-22",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate Average Costs: AFC, AVC & ATC.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Average fixed cost, average variable cost, and average total cost express costs per unit of output. Average total cost equals average fixed cost plus average variable cost. Average fixed cost falls as output spreads the same fixed cost across more units, while average variable cost changes with the productivity and price of variable inputs.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Divide fixed cost by output for average fixed cost and variable cost by output for average variable cost.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Average total cost equals average fixed cost plus average variable cost.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Average fixed cost falls continuously as output spreads the same fixed cost across more units.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Use per-unit measures only when output is positive.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to misuse average cost formula. AVC = $300/20 = $15; AFC = $5; ATC = $20. TVC = $1,000; AVC = $20, AFC = $8, and ATC = $28.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: READING AVERAGE-COST CURVES",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: costs in dollars. Curves are labeled MC, AC and AVC. MC first dips slightly and then rises. It crosses AVC at its minimum, quantity 200 and cost 10. At quantity 400, MC crosses AC at its minimum of 20, while AVC is 12. Dashed guides mark the quantities and costs. AC remains above AVC.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "At 400 units, the graph shows average cost of $20 and average variable cost of $12. Because AC = AVC + AFC, average fixed cost is $20 - $12 = $8 per unit. The gap between AC and AVC is therefore the firm's average fixed cost.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Cost schedule 2: At Q=29, Ironwood Furniture has AVC=$13.97 and ATC=$24.31. What fixed-cost conclusion follows?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "dca5ec5d555de1db82ffa14807dacbb824781fe65c4501e7433636f9c7a4119e",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "5f332a17b0d8ddb5d5c1933206d16286966fd0afd9227202d1cb9238dd831c3e",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "7f6e07f5a8ba76428aa3ce7bb7646d94e92c85147d690bf092a7989d93381105",
+    "resourceSemanticsSha256": "da25261dabc95f6d4d48438bbb4a1ea7dbc942796f4439e14e5fc23c1639ff25",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-23",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-23.pdf",
+    "tagCount": 34,
+    "mcids": 40,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Marginal Cost & Production-Cost Linkages",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-23",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate Marginal Cost & Production-Cost Linkages.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Marginal cost is the change in total cost caused by producing one more unit. Divide the input cost by marginal product. Higher MP lowers variable input cost per extra unit. A constant addition to cost at every output does not change the cost of producing one more unit.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Look for the change in total cost caused by producing one additional unit.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Compute marginal cost as the change in total cost divided by the change in output.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A fixed-cost change does not change marginal cost, but a variable-input cost change usually does.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "When marginal product falls, marginal cost tends to rise if the input price is unchanged.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to move mp and mc together. Higher MP lowers variable input cost per extra unit. A constant addition to cost at every output does not change the cost of producing one more unit.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: LINKING MARGINAL PRODUCT AND COST",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: costs in dollars. Curves are labeled MC, AC and AVC. MC first dips slightly and then rises. It crosses AVC at its minimum, quantity 200 and cost 10. At quantity 400, MC crosses AC at its minimum of 20, while AVC is 12. Dashed guides mark the quantities and costs. AC remains above AVC.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "Marginal cost crosses AVC at AVC's minimum of $10 and 200 units, then crosses AC at AC's minimum of $20 and 400 units. When marginal cost is below an average, it pulls that average down; when marginal cost rises above it, the average begins to increase.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "If output rises by 1 unit and total cost rises by $18, marginal cost of that unit is:?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "e65a881f07a55e1fb6a35740968a69c0d1df8009d31cdf56397ca9759915a836",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "ce3f38985d5c4ccff7a295dc65f866e3fa8220e466d99787616e9aa692f9d42f",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "8d6b88b72c06d2b41d78b9beff4a3bead4b61fce12ad32010a1408b273628cc0",
+    "resourceSemanticsSha256": "6be21ba5b04d3db9c75f016572901d9164a890548d1796ecd92617a2dabdc330",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-24",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-24.pdf",
+    "tagCount": 31,
+    "mcids": 28,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "NO_INLINE_EXPRESSIONS_SELECTED",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Short-Run Cost Curves: Relationships & Shifts",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-24",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Analyze Short-Run Cost Curves: Relationships & Shifts.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Short-run cost curves move differently because fixed costs affect AFC and ATC, while variable-input costs affect AVC, ATC, and MC. A below-average marginal observation pulls the average down. Labor is the variable input in the standard short-run model. A fixed-cost increase raises fixed cost per unit and total cost per unit but leaves variable and marginal cost unchanged.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "A fixed-cost increase raises fixed cost per unit and total cost per unit but leaves variable and marginal cost unchanged.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A technology improvement reduces the variable input needed at every output.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Labor is the variable input in the standard short-run model.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A firm receives a property-tax increase that does not depend on output.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to mix fixed and variable shifts. A fixed-cost increase raises fixed cost per unit and total cost per unit but leaves variable and marginal cost unchanged.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: SHIFTING SHORT-RUN COST CURVES",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity, from 0 to 80; vertical axis: cost per unit, from 0 to 120. ATC and AVC are U-shaped, with ATC above AVC. MC falls to a minimum around quantity 20, then rises, crossing AVC near its minimum around quantity 32 and cost 20 and ATC near its minimum around quantity 40 and cost 27. At quantity 80, MC is around 120, ATC around 46 and AVC around 43. These unmarked intersections are approximate readings. No shifted curves are drawn.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "Suppose the firm signs a more expensive lease while output and variable input prices are unchanged. The higher fixed cost raises average fixed cost and therefore shifts ATC upward. AVC and MC remain in the positions shown because neither depends on fixed cost. The production decision at the margin is unchanged.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Why does the ATC–AVC gap shrink?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "dd8fa65b03d915de871006f6264839a590a3fd4cd0a0eee066e0485a246a116f",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "6f0275bd0ecf4ffac6a20598472088a91094a010242060ff86d44597ed681b5c",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "f9c43b5269696ffd016849725812d82f20c9af43a4144099de8d9566f6feea24",
+    "resourceSemanticsSha256": "551a703826dd54514f130c0e2e4402ce790a9ca345bcf21e652b585d500486ad",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-25",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-25.pdf",
+    "tagCount": 36,
+    "mcids": 43,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Sunk & Avoidable Costs",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-25",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 4 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Distinguish Sunk & Avoidable Costs.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Sunk costs cannot be recovered and should not affect a current decision; avoidable costs change with the option chosen. Past unrecoverable costs do not change the marginal consequences of the current decision. The relevant comparison is forward-looking, not an attempt to reverse an unrecoverable past payment. The current payment is sunk; the future renewal is avoidable and differs across options. Avoidable costs differ across the alternatives being considered.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Ask whether a cost has already been incurred and cannot be recovered.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Exclude sunk costs from the comparison among current options.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Include avoidable costs because they differ depending on which option is chosen.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Focus on future benefits and future costs that change with the decision.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not treat fixed as sunk. The current payment is sunk; the future renewal is avoidable and differs across options. Avoidable costs differ across the alternatives being considered.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: IGNORE OR INCLUDE THE COST?",
+        "node": 24
+      },
+      {
+        "role": "P",
+        "text": "A theater has already paid a nonrefundable $4,000 license fee. Canceling tonight's show avoids $3,000 of staffing and utility costs but gives up $5,500 of ticket revenue. The sunk $4,000 does not affect the current decision. Because operating adds $5,500 - $3,000 = $2,500, the theater should hold the show.",
+        "node": 25
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 26
+      },
+      {
+        "role": "P",
+        "text": "A fixed annual license can be surrendered halfway through the year for a $4,000 refund. For a midyear shutdown decision, which amount is relevant?",
+        "node": 27
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 28
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 29
+      }
+    ],
+    "visualSource": null,
+    "sha256": "a9b32835116185c38a4fbc3c32b83cf12944c8bda8243e1cd4ac982f375b53c1",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "a4d202e0894fa722ebc8064ac1292d3acb9ac633f5631e0a13c4c5095768f823",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "41c7f4e94f080c122ad178e92c83df5c0c4aeffa3a31029a52f041ee5aab7503",
+    "resourceSemanticsSha256": "69eb1b15d7222614d8501b024adaf4273c9bf846464a76e7b9e6e603b9fb1ce8",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-26",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-26.pdf",
+    "tagCount": 36,
+    "mcids": 43,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "LRAC, Economies & Diseconomies of Scale",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-26",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Interpret LRAC, Economies & Diseconomies of Scale.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Long-run average cost shows the lowest attainable cost per unit when every input and plant size can vary. Scale can make specialized tasks and equipment economical, lowering LRAC over a range. Diminishing marginal product is a short-run concept; diseconomies concern scale when all inputs can vary. Falling long-run average cost as output expands is economies of scale.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Diminishing marginal product is a short-run concept; diseconomies concern scale when all inputs can vary.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A learner reads a downward-sloping LRAC segment as diseconomies of scale.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "The concepts apply to different horizons and input changes.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A very large firm becomes harder to coordinate.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not confuse scale and diminishing returns. Diminishing marginal product is a short-run concept; diseconomies concern scale when all inputs can vary.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: READING LONG-RUN AVERAGE COST",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity, from 0 to 120; vertical axis: long-run average cost. A U-shaped curve labeled LRAC falls from about 44 at quantity 0 to about 20 at 30, reaches its minimum about 12 at 60, then rises through about 20 at 90 to about 44 at 120. The values are approximate readings; there is no flat minimum-cost segment.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The LRAC curve falls from about $20 at 30 units to its minimum of about $12 at 60 units, showing economies of scale. It then rises back toward $20 by 90 units, showing diseconomies of scale. The cost-minimizing scale is approximately 60 units.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "The graph gives roughly the same LRAC at Q=30 and Q=90. Which statement distinguishes those two positions?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "97d74729a47cb81fc927f22e7a7831cba4f6a1123b6c9662ee13d5f2e772c023",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "9daecc5810d8942a340122d296e1b5a51c42d5a58c5c8044f58e796b47a92a0d",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "fff581cc87ef2a611df4a3a5a4b1fabb7ffb6f9bf9fd12fcf68d6da62c3fbe1f",
+    "resourceSemanticsSha256": "23a9e7eb016204ed6504609272314dd513330bbdbe4a4294880b37709f0dd245",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-27",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-27.pdf",
+    "tagCount": 32,
+    "mcids": 35,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Minimum Efficient Scale & Constant Returns to Scale",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-27",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Identify Minimum Efficient Scale & Constant Returns to Scale.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Minimum efficient scale is the smallest output at which long-run average cost reaches its minimum. Before MES, additional scale can still lower long-run average cost; at MES the minimum has been reached. MES summarizes how much output a firm must reach before it captures all available scale economies.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Find the lowest point of the long-run average-cost curve.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Minimum efficient scale is the smallest output at which that minimum cost is attained.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A flat minimum indicates a range of outputs with constant returns to scale.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Do not confuse a flat average-cost segment with output remaining unchanged.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to invent flat lrac region. The graph has a single rounded minimum rather than a visibly flat minimum-cost interval.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: FINDING MINIMUM EFFICIENT SCALE",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity, from 0 to 120; vertical axis: long-run average cost. A U-shaped curve labeled LRAC falls from about 44 at quantity 0 to about 20 at 30, reaches its minimum about 12 at 60, then rises through about 20 at 90 to about 44 at 120. The values are approximate readings; there is no flat minimum-cost segment.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The LRAC curve reaches its lowest value, about $12 per unit, at an output of 60. Minimum efficient scale is the smallest output that attains minimum long-run average cost, so the graph's MES is 60 units. Outputs below 60 have not exhausted economies of scale.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "If LRAC first reaches its minimum at 5,000 units and remains flat until 8,000, MES is:?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "cf859b64accd942006ec73d6dceff980c90f36203857b46aeca70e775fb62f3a",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "41e6c5cbdd0958d6ea8d0cac11aabe314de1df04583fc507390dffe75e491b07",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "cc83e3bfee5644848c8968aaca1dad0c16ef7165dc6d68e7453b34d93a379d5e",
+    "resourceSemanticsSha256": "40ce92e37a454efbc6c5a81169cb92aa34d55c2fb1a72b0480008c64688d22fa",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-28",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-28.pdf",
+    "tagCount": 36,
+    "mcids": 42,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Market Structure, Price Taking & Firm Revenue",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-28",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Connect Market Structure, Price Taking & Firm Revenue.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A perfectly competitive firm takes the market price as given, so price, average revenue, and marginal revenue are equal. Market power changes the firm's revenue conditions; the competitive firm takes price. Price taking makes each sold unit add the same amount to revenue, setting up the later MR-versus-MC output rule.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Look for many firms, a standardized product, easy entry, and no control over market price.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A price-taking firm can sell another unit without lowering its price.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "For the competitive firm, price, average revenue, and marginal revenue are equal.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Treat market price as a horizontal line in the individual firm's graph.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to separate price, average revenue, and marginal revenue for a price-taking firm. Under perfect competition, P = AR = MR.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: REVENUE FOR A PRICE TAKER",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: firm quantity; vertical axis: cost / revenue. The horizontal P = MR = AR line is at 25. It intersects rising MC and minimum ATC at quantity 50 and cost 25. At quantity 50, AVC is 15. Dashed guides mark these values. ATC and AVC are U-shaped, and ATC lies above AVC.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The competitive firm takes the market price of $25, so P = MR = AR. The horizontal price line meets marginal cost at 50 units, and total revenue is $25 x 50 = $1,250. Because ATC is also $25 at that output, the firm earns zero economic profit.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Why does total revenue rise linearly with output?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "e469f3d652c9362de40fe62f14787803a78822b09d951a60eacb54d21c3aeb51",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "b1db0236301736cf1c21e83e706d3eec88bc25fe1fcad7cb7fc5cbd17bb18689",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "7da8934c4a1717ef467fd06d0b6fff9fb8642e8f374a830542dfd15d646d778d",
+    "resourceSemanticsSha256": "0030b4dbcac9c933af99695e3b96cbe0339f797e23a1c5d35905ae7d2cc17f86",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-29",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-29.pdf",
+    "tagCount": 38,
+    "mcids": 50,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Profit-Maximizing Output & the MR = MC Rule",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-29",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Analyze Profit-Maximizing Output & the MR = MC Rule.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A firm maximizes profit or minimizes loss by producing the quantity where rising marginal cost equals marginal revenue. The local profit maximum occurs where MC rises through MR. Marginal benefit to the firm exceeds marginal cost. Market price becomes the firm’s MR, linking market equilibrium to the firm’s marginal output choice.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Use the firm's marginal-revenue curve and the rising portion of marginal cost.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Choose the output where marginal cost equals marginal revenue, provided the firm should operate.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "If marginal revenue exceeds marginal cost, another unit raises profit; if marginal cost exceeds marginal revenue, it lowers profit.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Do not choose output by minimizing average total cost unless that output also satisfies the marginal rule.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to misapply competitive firm rule. Market price becomes the firm’s MR, linking market equilibrium to the firm’s marginal output choice.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: USING THE MR = MC RULE",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: firm quantity; vertical axis: cost / revenue. The horizontal P = MR = AR line is at 25. It intersects rising MC and minimum ATC at quantity 50 and cost 25. At quantity 50, AVC is 15. Dashed guides mark these values. ATC and AVC are U-shaped, and ATC lies above AVC.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The firm's market price and marginal revenue are $25. The rising marginal-cost curve reaches $25 at 50 units, so the last unit adds exactly as much revenue as cost. Producing fewer units leaves profitable output unmade; producing more makes MC exceed MR. Profit-maximizing output is 50.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "MR is $25 and the next unit’s MC is $19. What should the firm do?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "af23d2644f9bd24e4fb20d1fd93cac11b886392da091f92c2f5dcd72f9f064d4",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "026d9e94af79a5d2580583d4d4dc75e7d186c05ac6aa280dac02a393370e9b05",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "12a0e8066ade335347598db1f3255252477a83ae665a6128315505863af16370",
+    "resourceSemanticsSha256": "a3214f92e93eeb334cfb4534bd2d078b7d661c5fd8e212dcdfb70bacf14af0d9",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-30",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-30.pdf",
+    "tagCount": 36,
+    "mcids": 42,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Profit, Loss & Break-Even",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-30",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Measure Profit, Loss & Break-Even.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Economic profit or loss equals the gap between price and average total cost multiplied by output. Profit, Loss & Break-Even measures per-unit and total economic profit or loss and interpret break-even and zero economic profit. The firm combines its revenue from price and quantity with all economic costs to measure profit. Profit/loss measurement and the short-run shutdown decision use different comparisons. Separate output, operating status, profit or loss, and long-run entry or exit pressure.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "First find the firm's chosen output using the marginal-revenue and marginal-cost rule.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "At that output, compare price with average total cost.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Price above average total cost means profit; equality means break-even; price below average total cost means loss.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Measure profit or loss as the per-unit gap multiplied by output.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not confuse loss with shutdown. Profit/loss measurement and the short-run shutdown decision use different comparisons. Economic cost includes implicit opportunity costs, including the normal return needed to keep owner resources in the firm.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: PROFIT, LOSS, OR BREAK-EVEN?",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Two panels. Left, Market: horizontal axis market quantity in thousands; vertical axis price. Rising S and falling D intersect at quantity 75 thousand and price 15. Right, Representative firm: horizontal axis firm quantity; vertical axis cost / revenue. Horizontal P = MR = AR at 15 meets rising MC at quantity 50. At quantity 50, ATC is 18 and AVC is 10; dashed guides mark all three levels. ATC and AVC are U-shaped. The same price 15 connects the market and firm panels.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The market sets a price of $15. The representative firm produces 50 units where P = MR = MC, but its ATC is $18. Loss per unit is $18 - $15 = $3, so total loss is $3 x 50 = $150. The firm may still operate because price exceeds AVC.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "How does the price-versus-ATC comparison connect a cost curve to the firm’s profit status?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "525f3add522de0c304ff5c8fea67403556a6d8dd0fb19f0bfdfc7e30d4be5b62",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "a772c1419369ac16f8dde33d8314f83e50fb0bf81cb2cf2cd747a94bc56c1ae0",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "1752f9ca8ec530d303970590bf671e797cd598e1b9b02c2c22507a642b4fa70c",
+    "resourceSemanticsSha256": "9b3b39b5d88d744f7fbf2a87b9b30a4dab39428fafb41c3afaf971dc5a9d3fa2",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-31",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-31.pdf",
+    "tagCount": 33,
+    "mcids": 36,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Shutdown & Short-Run Loss Minimization",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-31",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Apply Shutdown & Short-Run Loss Minimization.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A firm should operate in the short run when price covers average variable cost, even if price is below average total cost. A lump-sum tax acts like fixed cost. AVC represents avoidable cost in the short run. Short-run loss minimization compares the incremental benefit and avoidable cost of operating.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Find the profit-maximizing or loss-minimizing output where marginal revenue equals rising marginal cost.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "At that output, compare price with average variable cost.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Operate in the short run when price covers average variable cost; shut down when price falls below it.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A firm may operate at a loss when it covers variable cost and contributes something toward fixed cost.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to misapply competitive firm rule. Short-run loss minimization compares the incremental benefit and avoidable cost of operating. A fixed-cost change affects profit and ATC but not MC or AVC, so it does not change the marginal output choice or shutdown threshold.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: SHUT DOWN OR OPERATE?",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: firm quantity; vertical axis: cost / revenue. Horizontal P = MR = AR is at 10, below the entire AVC curve. MC crosses minimum AVC at A, quantity 22 and cost 20. Other marked points on rising MC are B near quantity 36 and cost 30, C near quantity 44 and cost 41 at minimum ATC, and D near quantity 50 and cost 50. Unprinted coordinates are approximate. ATC is above AVC.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The horizontal price line is $10, below minimum AVC of $20 at point A. At every positive output, revenue per unit would be less than avoidable variable cost. The firm minimizes its short-run loss by shutting down and paying only fixed cost.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "P is below minimum AVC. What should the firm do?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "397f2424086c938a027968b4023addc3e002469222ddbad7c4c1c9d51cbce6e8",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "e72f50d9203352303d2b242ebbcb9f68112ecd801ebcc49adaea2108ce7bfda1",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "fc05ca1af10a0dd5df2f373f4fa66a00a94598c3351405c278a46a17b2791c17",
+    "resourceSemanticsSha256": "7f04348e8cd7452520d150c062e5b7918d726bbe60ade60bb47e1556475f618f",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-32",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-32.pdf",
+    "tagCount": 33,
+    "mcids": 38,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Short-Run Supply & Cost Shifts",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-32",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Analyze Short-Run Supply & Cost Shifts.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A competitive firm's short-run supply curve is the rising portion of marginal cost at and above minimum average variable cost. The tax is tied to each unit produced. MC gives the additional cost of supply. The short-run supply schedule depends on marginal and variable costs, not fixed cost.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Use the rising portion of marginal cost at and above minimum average variable cost as firm supply.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A variable-input cost increase shifts marginal cost and short-run supply upward or left.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A fixed-cost change shifts average total cost but leaves marginal cost and short-run supply unchanged.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Distinguish a movement along supply caused by price from a shift caused by production conditions.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not assume fixed cost shifts supply. The short-run supply schedule depends on marginal and variable costs, not fixed cost. Fixed cost affects profit but not the short-run MC-above-AVC supply schedule.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: SHIFTING FIRM SUPPLY",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: firm quantity; vertical axis: cost / revenue. Horizontal P = MR = AR is at 10, below the entire AVC curve. MC crosses minimum AVC at A, quantity 22 and cost 20. Other marked points on rising MC are B near quantity 36 and cost 30, C near quantity 44 and cost 41 at minimum ATC, and D near quantity 50 and cost 50. Unprinted coordinates are approximate. ATC is above AVC.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The firm's short-run supply curve is the portion of MC at and above minimum AVC, which begins at point A: 22 units and $20. For example, if market price rises to $30, the firm supplies the quantity at point B, about 33 units. MC below A is not part of supply because the firm shuts down.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Which MC segment is competitive short-run supply?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "dff67da95808d3a26f98b6de12accc28b36832a9dfa1cd223519909391ba5a9e",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "1e3c0eadd6829bdaa87c8bae8365335881d74ea0fd8530eef71e1edeb48fb4e1",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "8294847a3f3496953f8e30b63a34eb8a1d6acfe6b679dd056d87010789d672ec",
+    "resourceSemanticsSha256": "f1c94ee6510b8c08162835f97f5bdd6e1d03999343ef5ecaebc43d91881f0fd3",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-33",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-33.pdf",
+    "tagCount": 34,
+    "mcids": 38,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Entry, Exit & Long-Run Equilibrium",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-33",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Trace entry, exit, zero economic profit, normal profit, and long-run competitive adjustment.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Entry and exit move a competitive industry toward long-run equilibrium with zero economic profit. More firms supply more total output at each price. At long-run equilibrium the firm maximizes profit and entry/exit has eliminated economic profit. Entry and exit remove persistent economic profit or loss in the benchmark model.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "At long-run equilibrium the firm maximizes profit and entry/exit has eliminated economic profit.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Entry and exit remove persistent economic profit or loss in the benchmark model.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Long-run industry assessment 10: Demand falls in a constant-cost industry and some firms leave.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Long-run industry assessment 11: Demand rises in a constant-cost industry and entry is unrestricted.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not miss long run equilibrium conditions. At long-run equilibrium the firm maximizes profit and entry/exit has eliminated economic profit. Entry and exit remove persistent economic profit or loss in the benchmark model.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: ENTRY AND ZERO ECONOMIC PROFIT",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Two panels. Left, Market: horizontal axis market quantity; vertical axis price. S slopes up and D slopes down, intersecting at quantity 100 and price 25. Right, Representative firm: horizontal axis firm quantity; vertical axis cost / revenue. Horizontal P = MR = AR at 25 meets MC and minimum ATC at quantity 50. At that quantity, AVC is 17, explicitly labeled and connected by dashed guides. ATC and AVC are U-shaped. Both panels share price 25.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The market equilibrium price is $25. At that price, the representative firm produces 50 units where P = MC, and $25 is also the minimum ATC. Revenue covers all explicit and implicit costs, so economic profit is zero and no entry or exit pressure remains.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Why can accounting profit be positive at zero economic profit?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "8cbec2e4a6f27ad429ddc66ffc06fb5058d117449eeab375cd5a28be3decebb9",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "2b65f20dcf20ca1da742a00285ff938e57823fd6ef9e0dab349cc32d22a056c7",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "da4a205e051b47b57ca053fbd9a1d294280b0f0688f3eb0bac1c45fa04704033",
+    "resourceSemanticsSha256": "285f32b272b723c341072eeb88e47155e12e1af970aa2a2d47e7621d34f9e53c",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-34",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-34.pdf",
+    "tagCount": 33,
+    "mcids": 37,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Long-Run Industry Supply & Cost Conditions",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-34",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Distinguish Long-Run Industry Supply & Cost Conditions.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Long-run industry supply depends on how industry expansion changes firms' input costs. The long-run industry response can feed back through shared input markets. The slope depends on how industry expansion affects input costs and firms' cost curves.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "In a constant-cost competitive industry, industry expansion leaves input prices and firms’ cost curves essentially unchanged.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A learner interprets a downward-sloping long-run industry supply curve as a violation of competition.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Short-run market adjustment creates the profit signal; entry and cost conditions determine the long-run destination.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Read only the relationships displayed and apply the competitive-firm sequence in the correct order.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not confuse industry cost conditions. If expansion does not change input costs, the long-run equilibrium price can return to the original cost level.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: READING LONG-RUN INDUSTRY SUPPLY",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: industry quantity; vertical axis: price. The single line labeled LRS slopes upward from about price 18 at quantity 0 to just above price 50 near quantity 105. There are no demand curves or marked equilibrium points. Values are approximate readings from the displayed scale.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The long-run industry supply curve slopes upward, rising from roughly $18 at very low output to above $50 near 105 units. Industry expansion therefore raises the long-run equilibrium price. That pattern is consistent with an increasing-cost industry in which entry bids up specialized inputs or other production costs.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Graph analysis 13: What can produce the downward-sloping long-run industry supply shown?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "3b9fb2c5a56853ad6241bfead5b5a647a83b97cf7afafda6ba4c5fdb50b700ac",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "bd8a86cbbb80ef574959f895f603b08d2d6d6993eaa67c9905ed0eca6e3c3cfc",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "12d44e3c982c5d4464872383a4df4728efef1640f36ba35ff59eccc967760d41",
+    "resourceSemanticsSha256": "c13a48175ae1cd6f320803f128f53d38ca28c9e0dc349b7466e7305729eb514f",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-35",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-35.pdf",
+    "tagCount": 35,
+    "mcids": 44,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Competitive Efficiency & Model Limits",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-35",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Interpret Competitive Efficiency & Model Limits.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Perfect competition is allocatively efficient when price equals marginal cost and productively efficient when firms produce at minimum average total cost. The benchmark requires private and social marginal costs to align. Apply the exact efficiency conditions and distinguish behavioral assumptions from welfare assumptions. Minimum average total cost represents the least-cost scale for producing that output in the benchmark.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Apply the exact efficiency conditions and distinguish behavioral assumptions from welfare assumptions.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Minimum average total cost represents the least-cost scale for producing that output in the benchmark.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A representative competitive firm is in long-run equilibrium at the minimum point of ATC.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Price reflects marginal willingness to pay while MC reflects marginal opportunity cost.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to equate efficiency with equity. Apply the exact efficiency conditions and distinguish behavioral assumptions from welfare assumptions. Minimum average total cost represents the least-cost scale for producing that output in the benchmark.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: TESTING COMPETITIVE EFFICIENCY",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Two panels. Left, Market: horizontal axis market quantity; vertical axis price. S slopes up and D slopes down, intersecting at quantity 100 and price 25. Right, Representative firm: horizontal axis firm quantity; vertical axis cost / revenue. Horizontal P = MR = AR at 25 meets MC and minimum ATC at quantity 50. At that quantity, AVC is 17, explicitly labeled and connected by dashed guides. ATC and AVC are U-shaped. Both panels share price 25.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "At the long-run competitive outcome, the firm produces 50 units where price equals marginal cost and price also equals minimum ATC at $25. P = MC gives allocative efficiency, while production at minimum ATC gives productive efficiency. These conclusions depend on the competitive model's assumptions.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "P=MC and P>min ATC. Which interpretation is strongest?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "f4246d1ac2d472b50492994e32e6fa96d603f8b935430a5e7f2ddac7e3d4d57c",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "5291fb3fdba16a4c74d320698c3a840201fdb98a1a242e1ec2bebd12f2e1121a",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "df77db0504f3580ff48739410109c353d9e56c523e740c0a7a530c68497cef62",
+    "resourceSemanticsSha256": "4342968c206e669f565e46508449f0aec815c4899520d2cb1c500a54f5295f61",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-36",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-36.pdf",
+    "tagCount": 31,
+    "mcids": 28,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "NO_INLINE_EXPRESSIONS_SELECTED",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Monopoly Power, Barriers to Entry & Sources of Monopoly",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-36",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Identify Monopoly Power, Barriers to Entry & Sources of Monopoly.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A monopoly has durable market power because barriers prevent close rivals from entering and eroding that power. Barriers can keep profit from triggering the entry response that erodes profit in competitive markets. Natural monopoly can make one-firm production cost-efficient while still creating a market-power problem.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "A city has one coffee shop today, but entry is easy and several rivals are preparing to open.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A software firm is the only seller this year.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "The current one-seller market does not by itself establish durable monopoly power.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "One seller becomes a durable monopoly only when entry is meaningfully blocked.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not treat any large firm as monopoly. Durable monopoly power depends on the relevant market and barriers to entry. A monopoly requires meaningful barriers to entry, not merely one seller at a moment in time.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: IDENTIFYING MONOPOLY POWER",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down, and MR slopes down more steeply from the same vertical intercept. MC is horizontal at 20. MR meets MC near quantity 45; at that quantity, guides mark demand price about 47 and ATC about 24. Demand meets MC at quantity 90 and price 20; ATC there is slightly above 20. ATC declines throughout the displayed relevant range. The marked demand price at 45 is approximately 47.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "Across the relevant output range, the graph's ATC curve declines as output expands, so one large producer can supply the market at lower average cost than several small firms. That cost structure supports natural monopoly. At the efficient point where demand meets MC, price would be below ATC, creating a regulatory funding problem.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Which fact most strongly supports classifying a firm as a monopoly?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "18a6c02c3653ca1cde03876a478dc964a3e38d8ecc54fc771fb8b579b5e23320",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "c8c794eee27358b90dc0199bceecd7c71c418c20936e7c8208b2190d00e78ab4",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "4e8f658fe4fcc32323d8eee853d31cddbada5219d4146aee0f6e1a0ac0c86c50",
+    "resourceSemanticsSha256": "7da36eac1fe21501d5b0fc7932dd062ec6e237b1d9196a5d80e2875244fce701",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-37",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-37.pdf",
+    "tagCount": 34,
+    "mcids": 41,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Monopoly Demand, Revenue & Marginal Revenue",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-37",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Interpret Monopoly Demand, Revenue & Marginal Revenue.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A monopolist faces the market demand curve, so selling another unit requires a lower price and makes marginal revenue less than price. A price taker sells each unit at the same price; a monopolist lowers price to expand output. Price taking removes the price effect that drives monopoly MR below price.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Start with the monopolist's downward-sloping market demand curve.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Because selling another unit requires a lower price, marginal revenue lies below demand.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "For a linear demand curve, marginal revenue shares the vertical intercept and falls twice as quickly.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Marginal revenue is positive where demand is elastic and negative where demand is inelastic.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to equate mr and price. Linear MR shares demand’s vertical intercept and is twice as steep. For a downward-sloping demand curve, MR is positive on the elastic portion.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: WHY MR FALLS BELOW PRICE",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down from price 60 at quantity 0 to zero at 120. MR slopes down more steeply, reaching zero at 60. At quantity 40, MR and rising MC meet at 20; demand is at 40 and ATC at 45, with dashed guides. Demand and MC intersect near quantity 67 and price 27. ATC is U-shaped, reaching its minimum to the right of quantity 40. The 67 and 27 intersection values are approximate as labeled.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "At 40 units, the demand curve shows a price of $40, while the marginal-revenue curve shows MR of $20. Total revenue is $40 x 40 = $1,600. The gap between price and marginal revenue illustrates why a monopolist's MR lies below demand when lowering price is necessary to sell another unit.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "For a single-price monopolist, which curve gives price at each output?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "d4cd05c41f8574cf901de1cd74da371edbe33cc4333434ca6fbe891f6cc855f5",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "0b8ac909e4274b191c6c6dd1f3913d3821395a31bf9252f0ca46e756a6086edd",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "c519602167d085afee48aae6423d674d0d31174739157ccfbc0d9a1b745dbb80",
+    "resourceSemanticsSha256": "9e16c07f3bdfd139e471c67ebca07997279f5c68faf22c96bb9f9c39034866cf",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-38",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-38.pdf",
+    "tagCount": 39,
+    "mcids": 53,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Profit-Maximizing Output & Monopoly Price",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-38",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Apply Profit-Maximizing Output & Monopoly Price.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A monopolist chooses output where rising marginal cost equals marginal revenue, then uses demand to determine price. Produce units whose marginal revenue covers marginal cost. MR is compared with MC for output choice. Find Q from MR=MC, then read price from demand. Monopoly analysis is a two-step decision: marginal output choice first, demand-based price second.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Find output where rising marginal cost equals marginal revenue.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Move vertically from that output to the demand curve to find the monopoly price.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Keep the output decision and price decision separate: marginal conditions determine quantity, demand determines price.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Do not set price equal to marginal revenue or marginal cost unless the graph happens to imply it.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to read monopoly price from the marginal-revenue curve. Find output where MR = MC, then read the price buyers will pay from demand.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: FINDING MONOPOLY PRICE",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down from price 60 at quantity 0 to zero at 120. MR slopes down more steeply, reaching zero at 60. At quantity 40, MR and rising MC meet at 20; demand is at 40 and ATC at 45, with dashed guides. Demand and MC intersect near quantity 67 and price 27. ATC is U-shaped, reaching its minimum to the right of quantity 40. The 67 and 27 intersection values are approximate as labeled.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The monopolist first finds output where MR = MC, which occurs at 40 units and a marginal value of $20. It then moves up to the demand curve, where buyers will pay $40 for 40 units. The profit-maximizing choice is therefore Q = 40 and P = $40, not the $20 MR value.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "What is the correct order for solving a monopoly graph?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "60fd7d680470e88abaca3e9387aee9103c5ccffa7136865c7d0e07ccd08294ef",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "8485d685a5a377ee5252205fb87524b42d56dadc7adb2d6674cbf1e15016094f",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "c05e1e496727fe6b057195a2a39d8a3ec36198824d9785a983fd3eefa09b90e7",
+    "resourceSemanticsSha256": "b58f13d181b76d2afda3a8b83b29ceb0cfe90536b4fe6b3810fd8bc1ff5687e1",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-39",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-39.pdf",
+    "tagCount": 36,
+    "mcids": 42,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Monopoly Profit, Loss & Shutdown",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-39",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate Monopoly Profit, Loss & Shutdown.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Monopoly profit or loss is measured after the profit-maximizing output and demand-based price have been found. The firm must cover avoidable variable cost. Output optimization and profit measurement are separate steps in monopoly analysis. Profit or loss equals (P−ATC)Q at the chosen output.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Choose monopoly output where rising marginal cost equals marginal revenue, then read price from demand.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "At that output, compare price with average total cost to determine profit or loss.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Compare price with average variable cost to decide whether a loss-making monopolist operates in the short run.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Measure profit or loss as the price-cost gap multiplied by output.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to mix output choice with profit measurement. Output optimization and profit measurement are separate steps in monopoly analysis. Profit or loss equals (P−ATC)Q at the chosen output.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: MONOPOLY PROFIT OR LOSS",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes downward from price 60 to zero at quantity 120; MR reaches zero at quantity 60. At quantity 36, MR and rising MC meet at 24, demand is at 42, and ATC is at 27. Dashed guides mark those values. Demand and MC intersect at quantity 60 and price 30. ATC is U-shaped with its minimum near quantity 48.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The firm chooses 36 units where MR equals MC. At that output, demand gives a price of $42 and ATC is $27. Profit per unit is $42 - $27 = $15, so total economic profit is $15 x 36 = $540.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Why does P>MC not prove positive economic profit?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "134cd85baf4999834b35f2fe900792ac2db3c5eb229def6eceb64107acef69ea",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "9a81dc4dd3b3b852b48e377f624b6f8dafb8f76e7b0efdc9625d80f1ce146748",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "665923def0302bc57b619404813c797c00770778755a9acdfd7c0be3ab32822c",
+    "resourceSemanticsSha256": "f4f0f006a42aa48d496de5b6074172273a9fe2fe606a6c7fa512bf5917097b43",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  },
+  {
+    "code": "MICRO-40",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-40.pdf",
+    "tagCount": 34,
+    "mcids": 40,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Monopoly Welfare, Efficiency & Competitive Comparison",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-40",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Compare Monopoly Welfare, Efficiency & Competitive Comparison.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Compared with competition, monopoly usually restricts output, raises price, transfers surplus, and creates deadweight loss. Transfers remain in total surplus; unrealized trades do not. The omitted units would generate positive gains from trade. Market power generally leads the monopolist to restrict output and charge a higher price than the competitive benchmark.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Compare monopoly output and price with the competitive benchmark where price equals marginal cost.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Monopoly normally produces less and charges more than a competitive market.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Separate the transfer of surplus to the monopolist from surplus lost through reduced output.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Deadweight loss is the value of trades between monopoly output and the efficient quantity that no longer occur.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to reverse monopoly competitive comparison. Market power generally leads the monopolist to restrict output and charge a higher price than the competitive benchmark.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: MEASURING MONOPOLY DEADWEIGHT LOSS",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down, and MR slopes down more steeply from the same vertical intercept. MC is horizontal at 20. MR meets MC near quantity 45; at that quantity, guides mark demand price about 47 and ATC about 24. Demand meets MC at quantity 90 and price 20; ATC there is slightly above 20. ATC declines throughout the displayed relevant range. The marked demand price at 45 is approximately 47.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The unregulated monopoly chooses about 45 units where MR = MC and charges the demand price of about $47. The efficient outcome occurs where demand meets MC: 90 units at $20. Monopoly therefore restricts output and raises price, leaving mutually beneficial units between 45 and 90 unproduced.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Which part of lost consumer surplus is deadweight loss?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "9d6319a9e27ef6a46f8dffa2eda116a9d06bd82d5d7aed31a0094d61cd978b00",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "ee5a1c4b9f9f0e676e77e9536f369743d99759ac9eab59acd1956a41db0c451c",
+    "semanticsSha256": "5a32e76e90fddef70f51b5e9298b6ede771c2c4b96aa2c540567e89fdfa405a6",
+    "baselineSha256": "7adcbcfb4759c165a9438844cf775f8e6fc52ac12a8c42a26ed21ac9a8332048",
+    "resourceSemanticsSha256": "0dd3fa19e4f765d5f3eaf4afc2eabbdb9e7806d4abfbcf7f3e604eb72ed0435d",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\validation\\verapdf.json",
+    "validatorReportSha256": "8444812969d0bd7a0983a3351d0a761d9dcd9ff8ea465167d6d25587c5ad0e82",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  }
+]

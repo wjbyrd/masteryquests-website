@@ -1,7 +1,7 @@
 """Independent UA-1 validation plus source/semantic/render evidence for staged PDFs."""
 from repo_guard import *
 from accessibility_gate import inspect
-from tag_pilot import normalized, source_hash
+from tag_pilot import normalized, source_hash, semantic_hash
 from pypdf import PdfReader
 from PIL import Image,ImageChops
 
@@ -17,7 +17,7 @@ def validate(rows, output):
     if any(not p.is_relative_to(contained('tmp/pdf_accessibility')) for p in paths):raise ValueError('Only staged candidates can be validated')
     tools=contained('tmp/pdf_accessibility/repo_lock_v1/tools')
     java=tools/'java/jdk-17.0.16+8-jre/bin/java.exe';jar=tools/'verapdf/bin/greenfield-apps-1.28.2.jar'
-    scratch=contained('tmp/pdf_accessibility/pilot_blockers_v1/validator');scratch.mkdir(parents=True,exist_ok=True)
+    scratch=contained(paths[0].parent.parent/'validator');scratch.mkdir(parents=True,exist_ok=True)
     command=[str(java),'-Djava.awt.headless=true',f'-Djava.io.tmpdir={scratch}',f'-Dapp.home={tools / "verapdf"}',
              '-cp',str(jar),'org.verapdf.apps.GreenfieldCliWrapper','--flavour','ua1','--format','json',*[str(p) for p in paths]]
     result=subprocess.run(command,cwd=root,capture_output=True,text=True,encoding='utf-8')
@@ -43,6 +43,7 @@ def validate(rows, output):
         record={**row,'passed':compliant and not checked['errors'],'independentProfile':'ISO 14289-1:2014',
                 'validator':'veraPDF 1.28.2 --flavour ua1','independentPass':compliant,'projectErrors':checked['errors'],
                 'sourceRecordSha256':source_hash(source),'semanticsSha256':sha(SEMANTICS),'baselineSha256':sha(baseline),
+                'resourceSemanticsSha256':semantic_hash(metadata,code),
                 'validatorReport':str(report.relative_to(root)),'validatorReportSha256':sha(report),'sha256':sha(path),
                 'pageCounts':[len(old.pages),len(new.pages)],'geometryEqual':list(old.pages[0].mediabox)==list(new.pages[0].mediabox),
                 'textExact':old.pages[0].extract_text()==new.pages[0].extract_text(),

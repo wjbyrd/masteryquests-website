@@ -1,0 +1,482 @@
+{
+  "errors": [],
+  "transcript": [
+    {
+      "role": "H1",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Unemployment Measurement  ",
+          "sourceText": "Unemployment Measurement  "
+        }
+      ],
+      "sourceText": "Unemployment Measurement",
+      "text": "Unemployment Measurement"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MACROECONOMICS  ",
+          "sourceText": "MACROECONOMICS  "
+        }
+      ],
+      "sourceText": "MACROECONOMICS",
+      "text": "MACROECONOMICS"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MACRO-14  ",
+          "sourceText": "MACRO-14  "
+        }
+      ],
+      "sourceText": "MACRO-14",
+      "text": "MACRO-14"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Time:  ",
+          "sourceText": "Time:  "
+        },
+        {
+          "role": "Span",
+          "text": "5 minutes  ",
+          "sourceText": "5 minutes  "
+        }
+      ],
+      "sourceText": "Time: 5 minutes",
+      "text": "Time: 5 minutes"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Outcome: Classify labor-force status and calculate unemployment and participation rates.  ",
+          "sourceText": "Outcome: Classify labor-force status and calculate unemployment and participation rates.  "
+        }
+      ],
+      "sourceText": "Outcome: Classify labor-force status and calculate unemployment and participation rates.",
+      "text": "Outcome: Classify labor-force status and calculate unemployment and participation rates."
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Difficulty:  ",
+          "sourceText": "Difficulty:  "
+        },
+        {
+          "role": "Span",
+          "text": "Intermediate  ",
+          "sourceText": "Intermediate  "
+        }
+      ],
+      "sourceText": "Difficulty: Intermediate",
+      "text": "Difficulty: Intermediate"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "THE CORE IDEA  ",
+          "sourceText": "THE CORE IDEA  "
+        }
+      ],
+      "sourceText": "THE CORE IDEA",
+      "text": "THE CORE IDEA"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Labor-force status depends on work, job attachment, availability, and active job search. Employed people include those working for pay or profit, those temporarily absent from a job, and qualifying unpaid family workers. Unemployed people have no job, are available, and actively searched in the past four weeks; people awaiting recall from temporary layoff need not search. Discouraged workers who have stopped searching are outside the labor force.  ",
+          "sourceText": "Labor-force status depends on work, job attachment, availability, and active job search. Employed people include those working for pay or profit, those temporarily absent from a job, and qualifying unpaid family workers. Unemployed people have no job, are available, and actively searched in the past four weeks; people awaiting recall from temporary layoff need not search. Discouraged workers who have stopped searching are outside the labor force.  "
+        }
+      ],
+      "sourceText": "Labor-force status depends on work, job attachment, availability, and active job search. Employed people include those working for pay or profit, those temporarily absent from a job, and qualifying unpaid family workers. Unemployed people have no job, are available, and actively searched in the past four weeks; people awaiting recall from temporary layoff need not search. Discouraged workers who have stopped searching are outside the labor force.",
+      "text": "Labor-force status depends on work, job attachment, availability, and active job search. Employed people include those working for pay or profit, those temporarily absent from a job, and qualifying unpaid family workers. Unemployed people have no job, are available, and actively searched in the past four weeks; people awaiting recall from temporary layoff need not search. Discouraged workers who have stopped searching are outside the labor force."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "HOW TO RECOGNIZE IT  ",
+          "sourceText": "HOW TO RECOGNIZE IT  "
+        }
+      ],
+      "sourceText": "HOW TO RECOGNIZE IT",
+      "text": "HOW TO RECOGNIZE IT"
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Work for pay or profit during the reference week counts as employment, even if part-time.  ",
+          "sourceText": "Work for pay or profit during the reference week counts as employment, even if part-time.  "
+        }
+      ],
+      "sourceText": "Work for pay or profit during the reference week counts as employment, even if part-time.",
+      "text": "Work for pay or profit during the reference week counts as employment, even if part-time."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "At least 15 hours of unpaid work in a family business also counts as employment.  ",
+          "sourceText": "At least 15 hours of unpaid work in a family business also counts as employment.  "
+        }
+      ],
+      "sourceText": "At least 15 hours of unpaid work in a family business also counts as employment.",
+      "text": "At least 15 hours of unpaid work in a family business also counts as employment."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Formula",
+          "text": "Labor force equals employed plus unemployed",
+          "sourceText": "Labor force = employed + unemployed"
+        },
+        {
+          "role": "Span",
+          "text": ";",
+          "sourceText": ";"
+        },
+        {
+          "role": "Formula",
+          "text": "unemployment rate equals the fraction unemployed over labor force, times 100",
+          "sourceText": " unemployment rate = unemployed / labor force x 100"
+        },
+        {
+          "role": "Span",
+          "text": ".  ",
+          "sourceText": ".  "
+        }
+      ],
+      "sourceText": "Labor force = employed + unemployed; unemployment rate = unemployed / labor force x 100.",
+      "text": "Labor force equals employed plus unemployed ; unemployment rate equals the fraction unemployed over labor force, times 100 ."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Formula",
+          "text": "Participation rate equals the fraction with labor force as numerator and civilian noninstitutional population age 16 and older as denominator, times 100",
+          "sourceText": "Participation rate = labor force / civilian noninstitutional population age 16 and older x 100"
+        },
+        {
+          "role": "Span",
+          "text": ".  ",
+          "sourceText": ".  "
+        }
+      ],
+      "sourceText": "Participation rate = labor force / civilian noninstitutional population age 16 and older x 100.",
+      "text": "Participation rate equals the fraction with labor force as numerator and civilian noninstitutional population age 16 and older as denominator, times 100 ."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WATCH OUT  ",
+          "sourceText": "WATCH OUT  "
+        }
+      ],
+      "sourceText": "WATCH OUT",
+      "text": "WATCH OUT"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Wanting a job alone does not make a person unemployed. Check job status, availability, and active search, including the temporary-layoff exception. Discouraged workers are outside the labor force.  ",
+          "sourceText": "Wanting a job alone does not make a person unemployed. Check job status, availability, and active search, including the temporary-layoff exception. Discouraged workers are outside the labor force.  "
+        }
+      ],
+      "sourceText": "Wanting a job alone does not make a person unemployed. Check job status, availability, and active search, including the temporary-layoff exception. Discouraged workers are outside the labor force.",
+      "text": "Wanting a job alone does not make a person unemployed. Check job status, availability, and active search, including the temporary-layoff exception. Discouraged workers are outside the labor force."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WORKED EXAMPLE: CLASSIFYING LABOR-FORCE STATUS  ",
+          "sourceText": "WORKED EXAMPLE: CLASSIFYING LABOR-FORCE STATUS  "
+        }
+      ],
+      "sourceText": "WORKED EXAMPLE: CLASSIFYING LABOR-FORCE STATUS",
+      "text": "WORKED EXAMPLE: CLASSIFYING LABOR-FORCE STATUS"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Among 100 people in the civilian noninstitutional population age 16 and older, 60 are employed, 5 are ",
+          "sourceText": "Among 100 people in the civilian noninstitutional population age 16 and older, 60 are employed, 5 are "
+        },
+        {
+          "role": "Span",
+          "text": "unemployed, and 35 are outside the labor force.",
+          "sourceText": "unemployed, and 35 are outside the labor force."
+        },
+        {
+          "role": "Formula",
+          "text": "Labor force equals 60 plus 5 equals 65",
+          "sourceText": " Labor force = 60 + 5 = 65"
+        },
+        {
+          "role": "Span",
+          "text": ".",
+          "sourceText": "."
+        },
+        {
+          "role": "Formula",
+          "text": "Unemployment rate equals 5 divided by 65 times 100 equals 7.7 percent",
+          "sourceText": " Unemployment rate = 5/65 x 100 = 7.7%"
+        },
+        {
+          "role": "Span",
+          "text": ";",
+          "sourceText": ";"
+        },
+        {
+          "role": "Formula",
+          "text": "participation rate equals 65 divided by 100 times 100 equals 65 percent",
+          "sourceText": " participation rate = 65/100 x 100 = 65%"
+        },
+        {
+          "role": "Span",
+          "text": ".  ",
+          "sourceText": ".  "
+        }
+      ],
+      "sourceText": "Among 100 people in the civilian noninstitutional population age 16 and older, 60 are employed, 5 are unemployed, and 35 are outside the labor force. Labor force = 60 + 5 = 65. Unemployment rate = 5/65 x 100 = 7.7%; participation rate = 65/100 x 100 = 65%.",
+      "text": "Among 100 people in the civilian noninstitutional population age 16 and older, 60 are employed, 5 are unemployed, and 35 are outside the labor force. Labor force equals 60 plus 5 equals 65 . Unemployment rate equals 5 divided by 65 times 100 equals 7.7 percent ; participation rate equals 65 divided by 100 times 100 equals 65 percent ."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "CHECK YOURSELF  ",
+          "sourceText": "CHECK YOURSELF  "
+        }
+      ],
+      "sourceText": "CHECK YOURSELF",
+      "text": "CHECK YOURSELF"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Which two groups are added to calculate the labor force?  ",
+          "sourceText": "Which two groups are added to calculate the labor force?  "
+        }
+      ],
+      "sourceText": "Which two groups are added to calculate the labor force?",
+      "text": "Which two groups are added to calculate the labor force?"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "READY?  ",
+          "sourceText": "READY?  "
+        }
+      ],
+      "sourceText": "READY?",
+      "text": "READY?"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Return to the game and master this concept.  ",
+          "sourceText": "Return to the game and master this concept.  "
+        }
+      ],
+      "sourceText": "Return to the game and master this concept.",
+      "text": "Return to the game and master this concept."
+    }
+  ],
+  "roles": [
+    "/Document",
+    "/H1",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/H2",
+    "/P",
+    "/H2",
+    "/L",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/Formula",
+    "/Formula",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/Formula",
+    "/H2",
+    "/P",
+    "/H2",
+    "/P",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/H2",
+    "/P",
+    "/H2",
+    "/P"
+  ],
+  "linkedContentCount": 39,
+  "figureAlternatives": [],
+  "formulas": [
+    {
+      "text": "Labor force = employed + unemployed",
+      "alternative": "Labor force equals employed plus unemployed",
+      "parent": "/LBody"
+    },
+    {
+      "text": "unemployment rate = unemployed / labor force x 100",
+      "alternative": "unemployment rate equals the fraction unemployed over labor force, times 100",
+      "parent": "/LBody"
+    },
+    {
+      "text": "Participation rate = labor force / civilian noninstitutional population age 16 and older x 100",
+      "alternative": "Participation rate equals the fraction with labor force as numerator and civilian noninstitutional population age 16 and older as denominator, times 100",
+      "parent": "/LBody"
+    },
+    {
+      "text": "Labor force = 60 + 5 = 65",
+      "alternative": "Labor force equals 60 plus 5 equals 65",
+      "parent": "/P"
+    },
+    {
+      "text": "Unemployment rate = 5/65 x 100 = 7.7%",
+      "alternative": "Unemployment rate equals 5 divided by 65 times 100 equals 7.7 percent",
+      "parent": "/P"
+    },
+    {
+      "text": "participation rate = 65/100 x 100 = 65%",
+      "alternative": "participation rate equals 65 divided by 100 times 100 equals 65 percent",
+      "parent": "/P"
+    }
+  ],
+  "fonts": [
+    {
+      "font": "/AAAAAA+Arimo-Bold",
+      "embedded": true,
+      "unicodeMap": true
+    },
+    {
+      "font": "/AAAAAA+Arimo-Regular",
+      "embedded": true,
+      "unicodeMap": true
+    }
+  ],
+  "rawReadingSequence": [
+    "Unemployment Measurement",
+    "MACROECONOMICS",
+    "MACRO-14",
+    "Time: 5 minutes",
+    "Outcome: Classify labor-force status and calculate unemployment and participation rates.",
+    "Difficulty: Intermediate",
+    "THE CORE IDEA",
+    "Labor-force status depends on work, job attachment, availability, and active job search. Employed people include those working for pay or profit, those temporarily absent from a job, and qualifying unpaid family workers. Unemployed people have no job, are available, and actively searched in the past four weeks; people awaiting recall from temporary layoff need not search. Discouraged workers who have stopped searching are outside the labor force.",
+    "HOW TO RECOGNIZE IT",
+    "•",
+    "Work for pay or profit during the reference week counts as employment, even if part-time.",
+    "•",
+    "At least 15 hours of unpaid work in a family business also counts as employment.",
+    "•",
+    "Labor force = employed + unemployed; unemployment rate = unemployed / labor force x 100.",
+    "•",
+    "Participation rate = labor force / civilian noninstitutional population age 16 and older x 100.",
+    "WATCH OUT",
+    "Wanting a job alone does not make a person unemployed. Check job status, availability, and active search, including the temporary-layoff exception. Discouraged workers are outside the labor force.",
+    "WORKED EXAMPLE: CLASSIFYING LABOR-FORCE STATUS",
+    "Among 100 people in the civilian noninstitutional population age 16 and older, 60 are employed, 5 are unemployed, and 35 are outside the labor force. Labor force = 60 + 5 = 65. Unemployment rate = 5/65 x 100 = 7.7%; participation rate = 65/100 x 100 = 65%.",
+    "CHECK YOURSELF",
+    "Which two groups are added to calculate the labor force?",
+    "READY?",
+    "Return to the game and master this concept."
+  ]
+}

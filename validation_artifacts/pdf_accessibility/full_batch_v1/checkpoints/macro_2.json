@@ -1,0 +1,1067 @@
+{
+  "task": "PDF_ACCESSIBILITY_FULL_BATCH_V1",
+  "batch": "macro_2",
+  "documentIds": [
+    "MACRO-21",
+    "MACRO-22",
+    "MACRO-23",
+    "MACRO-24",
+    "MACRO-25",
+    "MACRO-26",
+    "MACRO-27",
+    "MACRO-28",
+    "MACRO-29",
+    "MACRO-30",
+    "MACRO-31",
+    "MACRO-32",
+    "MACRO-33",
+    "MACRO-34",
+    "MACRO-35",
+    "MACRO-36",
+    "MACRO-37",
+    "MACRO-38",
+    "MACRO-39",
+    "MACRO-40"
+  ],
+  "pass": 18,
+  "blocked": 2,
+  "records": [
+    {
+      "code": "MACRO-21",
+      "title": "Monetary-Policy Tools",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-21.pdf",
+      "sha256": "c333589b11177ea1ff2acb76f47effe5eed47ad22d1e9301018e0205f77e50de",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 5,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "46d90d3224e310e1c8c13fa667b086e61548838a00b28c1db55be279dc92d8af",
+      "resourceSemanticsSha256": "86cd8e238ceb5aa7d3be44d48a69ce7275163207d56da0cb4820ca25a4900503",
+      "publicTarget": "concept-reviews/MACRO-21.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-21.pdf",
+      "plannedManifest": {
+        "oldSha256": "d7f88d7558b2a77c4e03cac2756875809159ba13032346b1bf6bcf0ff8b7248b",
+        "sha256": "c333589b11177ea1ff2acb76f47effe5eed47ad22d1e9301018e0205f77e50de",
+        "sizeBytes": 369879,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-22",
+      "title": "Limits of Monetary Control",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-22.pdf",
+      "sha256": "b769dfeed954812c4ab6b4e78a0c8977f5cf1a2db188d0c79a10ba160fb56c69",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 1,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "6f9894af3db404939fa6d590d92fb7e05161ea931b45d1fc06105ec06d1c9646",
+      "resourceSemanticsSha256": "138dec9bcbd56cd61a2f658a255f191dbafd2ad88e985130e4ed2cc8f8f7de40",
+      "publicTarget": "concept-reviews/MACRO-22.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-22.pdf",
+      "plannedManifest": {
+        "oldSha256": "fd87e6d4c56fe4e0736369ee64d75c3728f3a597ef344a1b1738d9f7619e9918",
+        "sha256": "b769dfeed954812c4ab6b4e78a0c8977f5cf1a2db188d0c79a10ba160fb56c69",
+        "sizeBytes": 369388,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-23",
+      "title": "Quantity Theory of Money",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-23.pdf",
+      "sha256": "c640fe143935d6ce5248749b8658f7ea55b0a3653406cfad25eda287a28a4d59",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 10,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "a8f2d062275d0eec4a07880e3ee9f423217523c3305f05a31b2e1ab42278a9d5",
+      "resourceSemanticsSha256": "a5bda80e0c74f079bbda81ca514e2c1d124032bd97985047fb1590cae7d68801",
+      "publicTarget": "concept-reviews/MACRO-23.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-23.pdf",
+      "plannedManifest": {
+        "oldSha256": "a952d43370533c450360e4fd78077567ebde46f053c659d5ec9b1c44cb84e82e",
+        "sha256": "c640fe143935d6ce5248749b8658f7ea55b0a3653406cfad25eda287a28a4d59",
+        "sizeBytes": 432112,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-24",
+      "title": "Monetary Neutrality",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-24.pdf",
+      "sha256": "72b1ea705f7ff9e33d624f5293c1143c05ae1472882c0ddb10efb3a435087a5f",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 5,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "7adadf88af293221a790e099bc0474b860c2cce7bfa75b9700f2edd5013a6a11",
+      "resourceSemanticsSha256": "a5d0f62f8c6d8845d9ae9f83027b1d03e54b63c6383da5e36410f9c3403f0f7e",
+      "publicTarget": "concept-reviews/MACRO-24.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-24.pdf",
+      "plannedManifest": {
+        "oldSha256": "2e44ec93a405b3e176fef1e982208b2f48bfca1bf0e92edd3d4833f27ed5f686",
+        "sha256": "72b1ea705f7ff9e33d624f5293c1143c05ae1472882c0ddb10efb3a435087a5f",
+        "sizeBytes": 430916,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-25",
+      "title": "Fisher Effect",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-25.pdf",
+      "sha256": "566adc406a9aaaacd410cb011de567464b433c71c22937b879715dc0588dc655",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 4,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "0a61f16578ab5ec1df08cd7ce7f02b2761df1a0640f35a0fcf226be0def15933",
+      "resourceSemanticsSha256": "c37fc0622412ccfbf1adcf97fc9547980ea638455f6779f2614a3263ed3e0fea",
+      "publicTarget": "concept-reviews/MACRO-25.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-25.pdf",
+      "plannedManifest": {
+        "oldSha256": "ba0ac0d044922a47d8c8271293112499272c74f3d8a46eafcaf15c06eb4e2165",
+        "sha256": "566adc406a9aaaacd410cb011de567464b433c71c22937b879715dc0588dc655",
+        "sizeBytes": 369879,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-26",
+      "title": "Costs of Inflation",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-26.pdf",
+      "sha256": "803c909e6c37b3e58c2076f8109c97ff9be8254381841e17854520635c2a2632",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 5,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "85e5be3016ef1127c2b58df7548405e154105ad673c2b2348155a1be45f94a6f",
+      "resourceSemanticsSha256": "23fccdf4b5c910e612354503ddbe4b08e6d114950cc87b1049b43e0d63cfd505",
+      "publicTarget": "concept-reviews/MACRO-26.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-26.pdf",
+      "plannedManifest": {
+        "oldSha256": "f0b9a0bced6960bd4e893756bcf49cc9cbb82c5808f5378341b6ee5be30b74db",
+        "sha256": "803c909e6c37b3e58c2076f8109c97ff9be8254381841e17854520635c2a2632",
+        "sizeBytes": 370000,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-27",
+      "title": "Inflation Tax and Deflation",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-27.pdf",
+      "sha256": "1b9984085b11470a4541ab19fb410a5941facc66aeff25349e6582c411b3ad2e",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 9,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "7136070c3667b3c813025ce33a7e66566a1a83c16c193a336855bacaf9ce303d",
+      "resourceSemanticsSha256": "b8221826174807cf82b15c328753504ab2e1e94cc78c4116e96aafd15a97707d",
+      "publicTarget": "concept-reviews/MACRO-27.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-27.pdf",
+      "plannedManifest": {
+        "oldSha256": "6378512de77e7ddbf93ad6308848aaaf0ad5713a444c2a966e48cb438d3cfbf2",
+        "sha256": "1b9984085b11470a4541ab19fb410a5941facc66aeff25349e6582c411b3ad2e",
+        "sizeBytes": 370133,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-28",
+      "title": "Liquidity Preference and the Money Market",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-28.pdf",
+      "sha256": "53c6298c704ac11358bac520bb5ebe41a2ef02fe5b5714eb7b9c1a1d28b977b2",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "bf60027c32935b9cd65bcb261dbc54571253da40808437b2c6d76d6804058d57",
+      "resourceSemanticsSha256": "53ccdfd172d76f26dbd3bc15016c7009309a0842dc59f53195d61751cad695ab",
+      "publicTarget": "concept-reviews/MACRO-28.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-28.pdf",
+      "plannedManifest": {
+        "oldSha256": "222cd55dea67f0b0d0002df38a934e19bc6bd6abe63572a51710d5ebec6689c7",
+        "sha256": "53c6298c704ac11358bac520bb5ebe41a2ef02fe5b5714eb7b9c1a1d28b977b2",
+        "sizeBytes": 610289,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-29",
+      "title": "Monetary-Policy Transmission",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-29.pdf",
+      "sha256": "64c9ed2467ea2120aad2028671a01895fb0fdb3e409f774688c5bf5523f71805",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 9,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "9e7c87de8a255735563f20205eaccba30fb5ea34ba4049d99684202b5aadd11e",
+      "resourceSemanticsSha256": "6be68173c61b4e87101420c1ef033744db3f215d3da59793e223b02428ffbd30",
+      "publicTarget": "concept-reviews/MACRO-29.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-29.pdf",
+      "plannedManifest": {
+        "oldSha256": "82764f9b8da1d0ad2aeb0e12098ace03ed9e2a7d828047bcab265fce24cac40d",
+        "sha256": "64c9ed2467ea2120aad2028671a01895fb0fdb3e409f774688c5bf5523f71805",
+        "sizeBytes": 705591,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-30",
+      "title": "Fiscal Policy and Aggregate Demand",
+      "domain": "macro",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-30.pdf",
+      "sha256": "fa4accd46255ce81ec8f6a6aef27e145c2d62188ef31b23f7f8388f9b1057027",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_CURVE_CONTRAST: bright-green AD3 is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "sourceRecordSha256": "f0ffdadd44c48f10ac091802d8c014e3d617ab120cea2de7fa33dfc3e17a05f5",
+      "resourceSemanticsSha256": "357109c932f139fab1feb694460f519ef4df8fcfc3c2ea715b8ab63ec4f5a307",
+      "publicTarget": "concept-reviews/MACRO-30.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-30.pdf",
+      "plannedManifest": {
+        "oldSha256": "34052024c1c5d3640f3e3dfb48f551d2f9efdf0d8559bcead9ff34ddcd2785bc",
+        "sha256": "fa4accd46255ce81ec8f6a6aef27e145c2d62188ef31b23f7f8388f9b1057027",
+        "sizeBytes": 630041,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-31",
+      "title": "Fiscal Multipliers and Crowding Out",
+      "domain": "macro",
+      "status": "BLOCKED",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-31.pdf",
+      "sha256": "2791fbb6008cbf0b34ef6bd6acc50f5dfc20b163cb1c6bf158e6a92da37da076",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": false,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 5,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [
+        "GRAPH_CURVE_CONTRAST: bright-green AD3 is below the 3:1 graphical-object target; prepare and validate a source-aware contrast repair without changing protected shared assets."
+      ],
+      "sourceRecordSha256": "2977a867e9db32522b4e9a65cd48befdc59c8441c29a2caee527caaae975a028",
+      "resourceSemanticsSha256": "22cccfd6e0619aebfd828db1f0a0502006e5f15799bf177be13fdd1768264d48",
+      "publicTarget": "concept-reviews/MACRO-31.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-31.pdf",
+      "plannedManifest": {
+        "oldSha256": "b74607f146518d505b4a648c37694fcec9f591b57fd1840cfe5df71360e4eb0c",
+        "sha256": "2791fbb6008cbf0b34ef6bd6acc50f5dfc20b163cb1c6bf158e6a92da37da076",
+        "sizeBytes": 599535,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-32",
+      "title": "Stabilization Policy",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-32.pdf",
+      "sha256": "02334be093ae6d37f9afd55b72e0863a6a7e0a0ab29c02a8ffb2d1f0536c38f6",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 0,
+      "formulaRuns": 4,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "a06e9683170b5ff7fb4bd41842aab4d6e9431af0bdee06b11f20f209630dfc82",
+      "resourceSemanticsSha256": "f336db740676276fa8bb95ab999ddb5b9fac4ab940f0656501f6ad142276f07a",
+      "publicTarget": "concept-reviews/MACRO-32.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-32.pdf",
+      "plannedManifest": {
+        "oldSha256": "ce68a7ad0ee4fdde3000b182124f612ce9f59ad9217149e97df45995ea33b7fc",
+        "sha256": "02334be093ae6d37f9afd55b72e0863a6a7e0a0ab29c02a8ffb2d1f0536c38f6",
+        "sizeBytes": 369577,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-33",
+      "title": "Aggregate Demand",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-33.pdf",
+      "sha256": "4b73bd86c707618e2d2c3d0695ef19f59e584c3cc4a8854b4427a9a040c1472c",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "8a72dce1f17504359e0c91bf3e70ac5faa24874e7d5be00b158f81a8c2887692",
+      "resourceSemanticsSha256": "6b499b0ca6d6f4efba4d840348a2551f7a3e3375907eb0290475a2b28d2bfa19",
+      "publicTarget": "concept-reviews/MACRO-33.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-33.pdf",
+      "plannedManifest": {
+        "oldSha256": "7eba640cdeafef1e4f3ec35c48129f4c6d47d57376228fb2328f188dcb6953fe",
+        "sha256": "4b73bd86c707618e2d2c3d0695ef19f59e584c3cc4a8854b4427a9a040c1472c",
+        "sizeBytes": 713158,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-34",
+      "title": "Short-Run Aggregate Supply",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-34.pdf",
+      "sha256": "9ef2b3ac8801846a9647372ab1c28797e13e9df087b657827847de79c2b1a75e",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "bd1948a05d724d1651b60f41dd692182863b62ad7d8fef5124631e42282b1705",
+      "resourceSemanticsSha256": "90d1060792aace60f2e3fdb6e2e700e7f149a460bd5135cfa02710b71c183d68",
+      "publicTarget": "concept-reviews/MACRO-34.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-34.pdf",
+      "plannedManifest": {
+        "oldSha256": "75d2aa72a0e03a1aa492c243e9802fa63204701d65baafd6d77ed8d0df7cedd4",
+        "sha256": "9ef2b3ac8801846a9647372ab1c28797e13e9df087b657827847de79c2b1a75e",
+        "sizeBytes": 661569,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-35",
+      "title": "Demand and Supply Shocks",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-35.pdf",
+      "sha256": "afcdf883eabf3523b92ec6472bd5a0569d62cf17ac362a8319950e653be7ce6e",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "71beb07103a801ccf2f6a994a6b927b55470bd960e13b4cdf645091f2ea0dda6",
+      "resourceSemanticsSha256": "7e6eff8d12459761b0efbdd8d49ebb3eb251486ea5aa598e78519f38ed5ea26a",
+      "publicTarget": "concept-reviews/MACRO-35.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-35.pdf",
+      "plannedManifest": {
+        "oldSha256": "1dd44c2d07a569f0fc5b29bc266dd885fb24dc1ecba19868c64d0960b9fdafc2",
+        "sha256": "afcdf883eabf3523b92ec6472bd5a0569d62cf17ac362a8319950e653be7ce6e",
+        "sizeBytes": 624958,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-36",
+      "title": "Long-Run Macroeconomic Self-Adjustment",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-36.pdf",
+      "sha256": "78729a55e1ab4445dc114446f0581ed4aac263a6be37ee1ce48ae628ce3bd4f5",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+BitstreamVeraSans-Roman",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "later",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "0b937cd1a3bf0562d6e333d8afa6ce169f247d52ed00a9443e5803a494faf9a8",
+      "resourceSemanticsSha256": "d9d698a0cae3b5fc9ee3d78c1ce7c36842084de735b2e962ad7fa9a86927d092",
+      "publicTarget": "concept-reviews/MACRO-36.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-36.pdf",
+      "plannedManifest": {
+        "oldSha256": "86e6ad50fcf9c5e1b274e3da6822fc978aa75fd56456e599e90ab21befdec3d2",
+        "sha256": "78729a55e1ab4445dc114446f0581ed4aac263a6be37ee1ce48ae628ce3bd4f5",
+        "sizeBytes": 414682,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-37",
+      "title": "Short-Run Phillips Curve",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-37.pdf",
+      "sha256": "000d60ab56ae2185425d8cb358b8a028e37b7b85d60c44d76e655d3479eef48f",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "03915103c674e2f9ecb99a1edb3c259d063f198dfe6b1ad1cbdaf41d953f770b",
+      "resourceSemanticsSha256": "ed5ef3ff7ec5ed769cf525cf469ee7c0778b24a23518cec6edde3d3e3f89036e",
+      "publicTarget": "concept-reviews/MACRO-37.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-37.pdf",
+      "plannedManifest": {
+        "oldSha256": "d2c40350b270928c84c72ba50175e8eba8f6041b4ea6baf3455d98b17815f913",
+        "sha256": "000d60ab56ae2185425d8cb358b8a028e37b7b85d60c44d76e655d3479eef48f",
+        "sizeBytes": 580091,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-38",
+      "title": "Long-Run Phillips Curve",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-38.pdf",
+      "sha256": "f663776ded3ba1d35c81a97f7138f5265c7b45c0f3099f889858b21064e5dc78",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\validation\\verapdf.json",
+      "validatorReportSha256": "0ce5cb6775ac662ae90d113e86db416d1d7c92d9b1be8df8093f53c4ff608a32",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 3,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "e21e4ca6f900a0db3120b99767b59645d885cb4f650c9e05ba3787009d3dbc4e",
+      "resourceSemanticsSha256": "4313b2b58715a48af5c1c2ea50def4b6e016a936bab69db7f0ba3ec076a90d75",
+      "publicTarget": "concept-reviews/MACRO-38.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-38.pdf",
+      "plannedManifest": {
+        "oldSha256": "d0f0c8b818fe28b2f303c18cbff0305ad5959b03dcfd0cb2f6786f4914d60731",
+        "sha256": "f663776ded3ba1d35c81a97f7138f5265c7b45c0f3099f889858b21064e5dc78",
+        "sizeBytes": 658074,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-39",
+      "title": "Phillips-Curve Expectations",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\4\\after\\MACRO-39.pdf",
+      "sha256": "4d3adc8146d1f5d65b091a72d222136bc2d9095fa4f1bd86de41da66ce1835d1",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\final_changes\\4\\verapdf.json",
+      "validatorReportSha256": "a3489afaad218b1bc9592133180745a6a61cf9dfce311edff3407fdaa6fffa8c",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 0,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "0e98deedbb92a299e2dec9d04d3e24d6a33f6d36742505444076a11ad9bfed5f",
+      "resourceSemanticsSha256": "4f801c91bd4aba200cab0033251cf334e9acec4acbda59d321a6929c46dcd72c",
+      "publicTarget": "concept-reviews/MACRO-39.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-39.pdf",
+      "plannedManifest": {
+        "oldSha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4",
+        "sha256": "4d3adc8146d1f5d65b091a72d222136bc2d9095fa4f1bd86de41da66ce1835d1",
+        "sizeBytes": 653995,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    },
+    {
+      "code": "MACRO-40",
+      "title": "Disinflation and Policy",
+      "domain": "macro",
+      "status": "PASS",
+      "candidate": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\4\\after\\MACRO-40.pdf",
+      "sha256": "0bcb7cebee08bb5ff0d4e73d81ec9358b54ec363113f1af538b369a203809ada",
+      "validator": "veraPDF 1.28.2 --flavour ua1",
+      "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\final_changes\\4\\verapdf.json",
+      "validatorReportSha256": "a3489afaad218b1bc9592133180745a6a61cf9dfce311edff3407fdaa6fffa8c",
+      "machinePass": true,
+      "semanticPass": true,
+      "contentPreservation": true,
+      "renderPreservation": true,
+      "contrast": true,
+      "deterministic": true,
+      "figures": 1,
+      "formulaRuns": 2,
+      "tables": 0,
+      "fonts": [
+        {
+          "font": "/AAAAAA+Arimo-Bold",
+          "embedded": true,
+          "unicodeMap": true
+        },
+        {
+          "font": "/AAAAAA+Arimo-Regular",
+          "embedded": true,
+          "unicodeMap": true
+        }
+      ],
+      "layout": "original",
+      "pageCounts": [
+        1,
+        1
+      ],
+      "blockers": [],
+      "sourceRecordSha256": "0b4ffd3f1410523a154bcba33d8c191d399257d62392800616b3faf8fe812c02",
+      "resourceSemanticsSha256": "c6f887c473152befb6660043862a70ae5b1ed3d131221c751f230507a9f749ab",
+      "publicTarget": "concept-reviews/MACRO-40.pdf",
+      "composerTarget": "build/faculty-build-composer/data/concept-reviews/MACRO-40.pdf",
+      "plannedManifest": {
+        "oldSha256": "6fb76a350c02a7ea0d37910ffcc3b3f880956e9f7feb7c9dbfc426ab8d263a2e",
+        "sha256": "0bcb7cebee08bb5ff0d4e73d81ec9358b54ec363113f1af538b369a203809ada",
+        "sizeBytes": 654276,
+        "pageCount": 1,
+        "documentLanguage": "en-US",
+        "hasSelectableText": true
+      },
+      "plannedPublicCreation": false
+    }
+  ],
+  "newPatterns": [
+    "heading Formula",
+    "diagnostic list card",
+    "continued Formula card",
+    "long formula-card line",
+    "six-line core reflow"
+  ],
+  "ownerFollowUp": [
+    "MACRO-30",
+    "MACRO-31"
+  ],
+  "activeInstallPerformed": false,
+  "complete": true
+}

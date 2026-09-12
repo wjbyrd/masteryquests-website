@@ -1,0 +1,2323 @@
+[
+  {
+    "code": "MICRO-01",
+    "sourceHash": "6eba1d519e2945eed4188f824dd5b828ab7111a965389c398db4309d2bdd7e98",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-02",
+    "sourceHash": "6e11e94edc25772ae517d369c24d79ddf50ea36f7a93e61f483229d1b88e247b",
+    "displayedGraphHash": "56893682047d4bc0f5adb32336fb7333c89533a1349a727bf42e60f97b431a13",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price in dollars. Demand slopes down. Supply slopes up, intersecting demand at quantity 100 and price 15. A parallel Supply + tax curve above supply intersects demand at quantity 80 and price 18. At quantity 80, original supply is at price 12. Dashed guides also mark prices 10 and 20 and quantities 65, 120 and 150.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 23,
+        "text": "$15",
+        "alternative": "15 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 58,
+        "text": "$18",
+        "alternative": "18 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 76,
+        "text": "$12",
+        "alternative": "12 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 114,
+        "text": "$18 - $12 = $6",
+        "alternative": "18 dollars minus 12 dollars equals 6 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 153,
+        "text": "$6 x 80 = $480",
+        "alternative": "6 dollars times 80 equals 480 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 53,
+        "text": "$46 - $34 = $12",
+        "alternative": "46 dollars minus 34 dollars equals 12 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 77,
+        "text": "$12 × 420 = $5,040",
+        "alternative": "12 dollars times 420 equals 5,040 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 9,
+        "text": "$18",
+        "alternative": "18 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 38,
+        "text": "$12",
+        "alternative": "12 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-03",
+    "sourceHash": "975d762428e33d10d7f7da2add0a58f24fafea50db8d58c8b7f776620e409a16",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 27,
+        "text": "$8",
+        "alternative": "8 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 95,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 138,
+        "text": "$20 + $8 = $28",
+        "alternative": "20 dollars plus 8 dollars equals 28 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 175,
+        "text": "$24",
+        "alternative": "24 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 221,
+        "text": "$4",
+        "alternative": "4 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-05",
+    "sourceHash": "baa044bb3054d9d471bd5d88ed2af960c9549a7eeeac5a6ae49d2e4d9490b7d9",
+    "displayedGraphHash": "f8aa1a95d68f4465a0d7c875fef17ad36422c0aa9c65e7ff5193070b997e50ca",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Upward-sloping SR supply is steeper than upward-sloping LR supply. Both pass through quantity 60 and price 4. At price 8, point A on SR supply is at quantity 70 and point B on LR supply is at quantity 100. Dashed guides connect those values to the axes.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 17,
+        "text": "$4",
+        "alternative": "4 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 21,
+        "text": "$8",
+        "alternative": "8 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 97,
+        "text": "10/65 = 15.4%",
+        "alternative": "10 divided by 65 equals 15.4 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 133,
+        "text": "4/6 = 66.7%",
+        "alternative": "4 divided by 6 equals 66.7 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 170,
+        "text": "15.4%/66.7% = 0.23",
+        "alternative": "15.4 percent divided by 66.7 percent equals 0.23"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 62,
+        "text": "$4",
+        "alternative": "4 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 66,
+        "text": "$5",
+        "alternative": "5 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-06",
+    "sourceHash": "f4f0ace9eef62486b293226e46f287de5fd9d1e715d9334d1d339446348a970f",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 22,
+        "text": "10%",
+        "alternative": "10 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 60,
+        "text": "15%",
+        "alternative": "15 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 82,
+        "text": "15% / 10% = 1.5",
+        "alternative": "15 percent divided by 10 percent equals 1.5"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-07",
+    "sourceHash": "5fb69b6170b2746ba7764be4a6275fb6cd8501062fcee2812f1fc58e94bf78c0",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 25,
+        "text": "10%",
+        "alternative": "10 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 61,
+        "text": "7%",
+        "alternative": "7 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 87,
+        "text": "-7% / 10% = -0.7",
+        "alternative": "minus 7 percent divided by 10 percent equals minus 0.7"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-08",
+    "sourceHash": "3340b5ed9743717209bf879562d6ef2ac7f6b833189fc44197757da37ceb3c0a",
+    "displayedGraphHash": "9af0ea5acfc6788081c467b47e3c1d59f1594cf05b9e38ddcb1dce4668b99e30",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price. A straight downward-sloping Demand line runs from price 16 at quantity 0 to price 0 at quantity 120. Its marked points are C at quantity 30, price 12; B at quantity 60, price 8; and A at quantity 90, price 4. Dashed guides show each point on both axes.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 16,
+        "text": "$12",
+        "alternative": "12 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 51,
+        "text": "$12 x 30 = $360",
+        "alternative": "12 dollars times 30 equals 360 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 79,
+        "text": "$8",
+        "alternative": "8 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 108,
+        "text": "$480",
+        "alternative": "480 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 161,
+        "text": "$120",
+        "alternative": "120 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 38,
+        "text": "$3200",
+        "alternative": "3200 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 45,
+        "text": "$2880",
+        "alternative": "2880 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-09",
+    "sourceHash": "987d817c4436fc2a4dddfb4d80c3cff07affcbdff0ebed1f757f8ade234b7880",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 22,
+        "text": "$6",
+        "alternative": "6 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-10",
+    "sourceHash": "4edf5b8e50d87605a6f51bc5aad5a5bcef9d9c6055bf6abe6b338a05fc271c46",
+    "displayedGraphHash": "90b651323f49190be1891184b8747c8381c49510cce237b240e0758bc3126bf5",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 30, and upward-sloping S starts at price 6. They meet at E, quantity 8 and price 14. Dashed guides connect E to both axes. The demand segment above price 14 runs from quantity 0 to 8; the supply segment below price 14 runs over that same quantity interval.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 21,
+        "text": "$14",
+        "alternative": "14 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 59,
+        "text": "$30",
+        "alternative": "30 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 152,
+        "text": "1/2 x 8 x ($30 - $14) = $64",
+        "alternative": "1 divided by 2 times 8 times open parenthesis 30 dollars minus 14 dollars close parenthesis equals 64 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-11",
+    "sourceHash": "69092b92f7248a4b8c0e887eef8df5003a43e633683312e59309d51ac044397f",
+    "displayedGraphHash": "90b651323f49190be1891184b8747c8381c49510cce237b240e0758bc3126bf5",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 30, and upward-sloping S starts at price 6. They meet at E, quantity 8 and price 14. Dashed guides connect E to both axes. The demand segment above price 14 runs from quantity 0 to 8; the supply segment below price 14 runs over that same quantity interval.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 21,
+        "text": "$14",
+        "alternative": "14 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 59,
+        "text": "$6",
+        "alternative": "6 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 117,
+        "text": "1/2 x 8 x ($14 - $6) = $32",
+        "alternative": "1 divided by 2 times 8 times open parenthesis 14 dollars minus 6 dollars close parenthesis equals 32 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-12",
+    "sourceHash": "b9466bb8f67b99ef5dfce9f5414502146a37031397ebe5805203cbafb351dc68",
+    "displayedGraphHash": "90b651323f49190be1891184b8747c8381c49510cce237b240e0758bc3126bf5",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 30, and upward-sloping S starts at price 6. They meet at E, quantity 8 and price 14. Dashed guides connect E to both axes. The demand segment above price 14 runs from quantity 0 to 8; the supply segment below price 14 runs over that same quantity interval.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 31,
+        "text": "$14",
+        "alternative": "14 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 52,
+        "text": "1/2 x 8 x ($30 - $14) = $64",
+        "alternative": "1 divided by 2 times 8 times open parenthesis 30 dollars minus 14 dollars close parenthesis equals 64 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 92,
+        "text": "1/2 x 8 x ($14 - $6) = $32",
+        "alternative": "1 divided by 2 times 8 times open parenthesis 14 dollars minus 6 dollars close parenthesis equals 32 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 134,
+        "text": "$64 + $32 = $96",
+        "alternative": "64 dollars plus 32 dollars equals 96 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 71,
+        "text": "$10",
+        "alternative": "10 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 94,
+        "text": "$8",
+        "alternative": "8 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 114,
+        "text": "$18",
+        "alternative": "18 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 12,
+        "text": "$17",
+        "alternative": "17 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 30,
+        "text": "$22",
+        "alternative": "22 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-13",
+    "sourceHash": "8c885340816d6f675c80d6235de03045e9ec983a4d6a2ae59e5ed7485bb3b514",
+    "displayedGraphHash": "41d2cb53d95ca177df55ca150e05d9520376ee6ffe9b12af8e31e7edd9435f85",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Downward-sloping D starts at price 18 at quantity 0 and reaches price 2 at quantity 16. Upward-sloping S starts at price 2 and reaches price 18 at quantity 16. They intersect at E, quantity 8 and price 10, with dashed guides to the axes. Demand lies above supply to the left of E and below supply to its right.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 35,
+        "text": "$10",
+        "alternative": "10 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 82,
+        "text": "$23 - $29 = -$6",
+        "alternative": "23 dollars minus 29 dollars equals minus 6 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-14",
+    "sourceHash": "c77890fb78c22d313dd775253cf8d8e4e60e22415e7d492f26445faa18ceec72",
+    "displayedGraphHash": "173cd08878543c6372e50048e0490ad6b20c0e7e5e74f19dcc3c14f726f7e53d",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price. A downward-sloping D line runs from price 20 at quantity 0 to price 0 at quantity 20. Horizontal guide P1 at price 12 meets D at quantity 8; guide P2 at price 8 meets D at quantity 12. Vertical guides connect these points to the quantity axis.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 7,
+        "text": "P1 = $12",
+        "alternative": "P subscript 1 equals 12 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 45,
+        "text": "1/2 x 8 x ($20 - $12) = $32",
+        "alternative": "1 divided by 2 times 8 times open parenthesis 20 dollars minus 12 dollars close parenthesis equals 32 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 67,
+        "text": "P2 = $8",
+        "alternative": "P subscript 2 equals 8 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 115,
+        "text": "1/2 x 12 x ($20 - $8) = $72",
+        "alternative": "1 divided by 2 times 12 times open parenthesis 20 dollars minus 8 dollars close parenthesis equals 72 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 174,
+        "text": "$40",
+        "alternative": "40 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 16,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 41,
+        "text": "$6",
+        "alternative": "6 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-15",
+    "sourceHash": "1934e7a98d02ae29b82602b0756b5294c68d5f11956710da4a358a715c2051ac",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 14,
+        "text": "$500",
+        "alternative": "500 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 83,
+        "text": "$520",
+        "alternative": "520 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 109,
+        "text": "$500",
+        "alternative": "500 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 125,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 99,
+        "text": "$150",
+        "alternative": "150 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 120,
+        "text": "$110",
+        "alternative": "110 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 149,
+        "text": "$140",
+        "alternative": "140 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-16",
+    "sourceHash": "b05e4ba9ed84c2d643fdfe69cec1616ba44c7b8d99f9f13638d1357ed1973f1d",
+    "displayedGraphHash": "b5bfcf699d5c8d035e767e208a65e929b5c14c8baa0baccace54ed45324c9d42",
+    "graphAlternative": "Horizontal axis: quantity of avocados in thousands; vertical axis: price of avocados in dollars. Domestic demand slopes down and domestic supply slopes up. They intersect at A, quantity 175 thousand and price 7. A horizontal world-price line marked Pw = $10 meets demand at 100 thousand and supply at 250 thousand. Dashed vertical guides show those quantities.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 47,
+        "text": "$7",
+        "alternative": "7 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 77,
+        "text": "$10",
+        "alternative": "10 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 193,
+        "text": "250 - 100 = 150",
+        "alternative": "250 minus 100 equals 150"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 113,
+        "text": "$144",
+        "alternative": "144 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 85,
+        "text": "Pw=$30",
+        "alternative": "P subscript w equals 30 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-17",
+    "sourceHash": "7e41d62644b975c926b36ecfb916d97980d7e131b0e1d420585314c59c9f411a",
+    "displayedGraphHash": "6fd152a1171a6a0f255475da65fb8ac1372126c901823795d31551f06e41363b",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price. Demand D falls from price 80 at quantity 0 to price 0 at quantity 80. Supply S rises from price 20 and crosses D at quantity 30 and price 50. The horizontal world-price line Pw at price 30 meets S at quantity 10 and D at quantity 50; dashed vertical guides mark both quantities.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 5,
+        "text": "$30",
+        "alternative": "30 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 108,
+        "text": "$50",
+        "alternative": "50 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 206,
+        "text": "$200 + $200 = $400",
+        "alternative": "200 dollars plus 200 dollars equals 400 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-18",
+    "sourceHash": "9ff2b27c2bf2709a4b547919783a14e465ef0a39a1034a072143ac663e565df1",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 13,
+        "text": "$70,000",
+        "alternative": "70,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 55,
+        "text": "$40,000",
+        "alternative": "40,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 71,
+        "text": "$5,000",
+        "alternative": "5,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 145,
+        "text": "$70,000",
+        "alternative": "70,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 167,
+        "text": "$45,000",
+        "alternative": "45,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 189,
+        "text": "$70,000 + $45,000 = $115,000",
+        "alternative": "70,000 dollars plus 45,000 dollars equals 115,000 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 105,
+        "text": "$70,000 + $40,000 + $5,000",
+        "alternative": "70,000 dollars plus 40,000 dollars plus 5,000 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-19",
+    "sourceHash": "9866b8387f2aa2bc7674dc6a9edb553374977690780fe4ff4744defe931ef5b3",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 10,
+        "text": "$200,000",
+        "alternative": "200,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 34,
+        "text": "$115,000",
+        "alternative": "115,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 78,
+        "text": "$85,000",
+        "alternative": "85,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 137,
+        "text": "$85,000",
+        "alternative": "85,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 161,
+        "text": "$85,000 - $85,000 = $0",
+        "alternative": "85,000 dollars minus 85,000 dollars equals 0 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 103,
+        "text": "$85,000",
+        "alternative": "85,000 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 142,
+        "text": "$85,000",
+        "alternative": "85,000 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-20",
+    "sourceHash": "f2c2e38c0e1886874b49e03d70386a8f0df5291501a0e98ff65d690ab2a43315",
+    "displayedGraphHash": "c9108e52d0f2f7c4a72e91ff6ead0c4a51a252136a4bf07ba656297532d18b04",
+    "graphAlternative": "Horizontal axis: Workers; vertical axis: Total output. The TP line connects output 0 with no workers, about 8 with 1, 20 with 2, 34 with 3, 46 with 4, 56 with 5, 64 with 6, 70 with 7 and 74 with 8 workers. Output rises throughout; the line becomes flatter after the third worker. Values without printed point labels are approximate readings from the scale.",
+    "formulaRuns": [],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-21",
+    "sourceHash": "eb34b301cf8d7e8481a1bea193c46329e8b1d4d93c42b39203e9809826929a5d",
+    "displayedGraphHash": "693398c12c94889785783802adda875f317e36944837a6bbc576e137380724ce",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: total cost. The upper rising total-cost curve begins at 400. The lower rising total-variable-cost curve begins at zero. A horizontal total-fixed-cost line is at 400. At quantity 120, marked point A on total cost is 1,200, B on total variable cost is 800, and C on total fixed cost is 400. The two rising curves remain 400 apart vertically.",
+    "formulaRuns": [
+      {
+        "sourceField": "core",
+        "compactStart": 148,
+        "text": "TC = TFC + TVC",
+        "alternative": "T C equals T F C plus T V C"
+      },
+      {
+        "sourceField": "core",
+        "compactStart": 197,
+        "text": "AFC = TFC / Q",
+        "alternative": "A F C equals T F C divided by Q"
+      },
+      {
+        "sourceField": "core",
+        "compactStart": 207,
+        "text": "AVC = TVC / Q",
+        "alternative": "A V C equals T V C divided by Q"
+      },
+      {
+        "sourceField": "core",
+        "compactStart": 220,
+        "text": "ATC = TC / Q = AFC + AVC",
+        "alternative": "A T C equals T C divided by Q equals A F C plus A V C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 2,
+        "text": "Q = 120",
+        "alternative": "Q equals 120"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 32,
+        "text": "$1,200",
+        "alternative": "1,200 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 60,
+        "text": "$800",
+        "alternative": "800 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 68,
+        "text": "$400",
+        "alternative": "400 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 125,
+        "text": "TC = TFC + TVC",
+        "alternative": "T C equals T F C plus T V C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 162,
+        "text": "AFC = $3.33",
+        "alternative": "A F C equals 3.33 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 172,
+        "text": "AVC = $6.67",
+        "alternative": "A V C equals 6.67 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 185,
+        "text": "ATC = $10.00",
+        "alternative": "A T C equals 10.00 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 205,
+        "text": "AFC + AVC = ATC",
+        "alternative": "A F C plus A V C equals A T C"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 157,
+        "text": "AFC = TFC / Q",
+        "alternative": "A F C equals T F C divided by Q"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 242,
+        "text": "Q = 0",
+        "alternative": "Q equals 0"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 2,
+        "text": "Q = 10",
+        "alternative": "Q equals 10"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 21,
+        "text": "TFC = $90",
+        "alternative": "T F C equals 90 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 31,
+        "text": "TC = $250",
+        "alternative": "T C equals 250 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 87,
+        "text": "AFC + AVC = ATC",
+        "alternative": "A F C plus A V C equals A T C"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-22",
+    "sourceHash": "5f332a17b0d8ddb5d5c1933206d16286966fd0afd9227202d1cb9238dd831c3e",
+    "displayedGraphHash": "19cac8ae02a1a144d52d165fea886d1368c66d9058223d8148abc6a5d0bd9477",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: costs in dollars. Curves are labeled MC, AC and AVC. MC first dips slightly and then rises. It crosses AVC at its minimum, quantity 200 and cost 10. At quantity 400, MC crosses AC at its minimum of 20, while AVC is 12. Dashed guides mark the quantities and costs. AC remains above AVC.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 37,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 64,
+        "text": "$12",
+        "alternative": "12 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 75,
+        "text": "AC = AVC + AFC",
+        "alternative": "A C equals A V C plus A F C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 104,
+        "text": "$20 - $12 = $8",
+        "alternative": "20 dollars minus 12 dollars equals 8 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 43,
+        "text": "AVC = $300/20 = $15",
+        "alternative": "A V C equals 300 dollars divided by 20 equals 15 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 59,
+        "text": "AFC = $5",
+        "alternative": "A F C equals 5 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 66,
+        "text": "ATC = $20",
+        "alternative": "A T C equals 20 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 74,
+        "text": "TVC = $1,000",
+        "alternative": "T V C equals 1,000 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 85,
+        "text": "AVC = $20",
+        "alternative": "A V C equals 20 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 93,
+        "text": "AFC = $8",
+        "alternative": "A F C equals 8 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 103,
+        "text": "ATC = $28",
+        "alternative": "A T C equals 28 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 16,
+        "text": "Q=29",
+        "alternative": "Q equals 29"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 41,
+        "text": "AVC=$13.97",
+        "alternative": "A V C equals 13.97 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 54,
+        "text": "ATC=$24.31",
+        "alternative": "A T C equals 24.31 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-23",
+    "sourceHash": "ce3f38985d5c4ccff7a295dc65f866e3fa8220e466d99787616e9aa692f9d42f",
+    "displayedGraphHash": "19cac8ae02a1a144d52d165fea886d1368c66d9058223d8148abc6a5d0bd9477",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: costs in dollars. Curves are labeled MC, AC and AVC. MC first dips slightly and then rises. It crosses AVC at its minimum, quantity 200 and cost 10. At quantity 400, MC crosses AC at its minimum of 20, while AVC is 12. Dashed guides mark the quantities and costs. AC remains above AVC.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 38,
+        "text": "$10",
+        "alternative": "10 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 81,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 39,
+        "text": "$18",
+        "alternative": "18 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-24",
+    "sourceHash": "6f0275bd0ecf4ffac6a20598472088a91094a010242060ff86d44597ed681b5c",
+    "displayedGraphHash": "4d0c630958dbcbcc90d2595aae505b743ce3d607125ed5e2ee088dd200fe4368",
+    "graphAlternative": "Horizontal axis: quantity, from 0 to 80; vertical axis: cost per unit, from 0 to 120. ATC and AVC are U-shaped, with ATC above AVC. MC falls to a minimum around quantity 20, then rises, crossing AVC near its minimum around quantity 32 and cost 20 and ATC near its minimum around quantity 40 and cost 27. At quantity 80, MC is around 120, ATC around 46 and AVC around 43. These unmarked intersections are approximate readings. No shifted curves are drawn.",
+    "formulaRuns": [],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-25",
+    "sourceHash": "a4d202e0894fa722ebc8064ac1292d3acb9ac633f5631e0a13c4c5095768f823",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 36,
+        "text": "$4,000",
+        "alternative": "4,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 81,
+        "text": "$3,000",
+        "alternative": "3,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 122,
+        "text": "$5,500",
+        "alternative": "5,500 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 151,
+        "text": "$4,000",
+        "alternative": "4,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 209,
+        "text": "$5,500 - $3,000 = $2,500",
+        "alternative": "5,500 dollars minus 3,000 dollars equals 2,500 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 60,
+        "text": "$4,000",
+        "alternative": "4,000 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-26",
+    "sourceHash": "9daecc5810d8942a340122d296e1b5a51c42d5a58c5c8044f58e796b47a92a0d",
+    "displayedGraphHash": "3d1e9a82ae108a31f44150f0bf8db4f7afb167f7901d6ff2d77ee52350124d1b",
+    "graphAlternative": "Horizontal axis: quantity, from 0 to 120; vertical axis: long-run average cost. A U-shaped curve labeled LRAC falls from about 44 at quantity 0 to about 20 at 30, reaches its minimum about 12 at 60, then rises through about 20 at 90 to about 44 at 120. The values are approximate readings; there is no flat minimum-cost segment.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 26,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 57,
+        "text": "$12",
+        "alternative": "12 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 115,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 33,
+        "text": "Q=30",
+        "alternative": "Q equals 30"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 40,
+        "text": "Q=90",
+        "alternative": "Q equals 90"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-27",
+    "sourceHash": "41e6c5cbdd0958d6ea8d0cac11aabe314de1df04583fc507390dffe75e491b07",
+    "displayedGraphHash": "3d1e9a82ae108a31f44150f0bf8db4f7afb167f7901d6ff2d77ee52350124d1b",
+    "graphAlternative": "Horizontal axis: quantity, from 0 to 120; vertical axis: long-run average cost. A U-shaped curve labeled LRAC falls from about 44 at quantity 0 to about 20 at 30, reaches its minimum about 12 at 60, then rises through about 20 at 90 to about 44 at 120. The values are approximate readings; there is no flat minimum-cost segment.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 39,
+        "text": "$12",
+        "alternative": "12 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-28",
+    "sourceHash": "b1db0236301736cf1c21e83e706d3eec88bc25fe1fcad7cb7fc5cbd17bb18689",
+    "displayedGraphHash": "ce5c85393ea0d1b112bf72933ffd01b4666baf07c118e64453ba9d80fcefb844",
+    "graphAlternative": "Horizontal axis: firm quantity; vertical axis: cost / revenue. The horizontal P = MR = AR line is at 25. It intersects rising MC and minimum ATC at quantity 50 and cost 25. At quantity 50, AVC is 15. Dashed guides mark these values. ATC and AVC are U-shaped, and ATC lies above AVC.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 39,
+        "text": "$25",
+        "alternative": "25 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 45,
+        "text": "P = MR = AR",
+        "alternative": "P equals M R equals A R"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 119,
+        "text": "$25 x 50 = $1,250",
+        "alternative": "25 dollars times 50 equals 1,250 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 149,
+        "text": "$25",
+        "alternative": "25 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 110,
+        "text": "P = AR = MR",
+        "alternative": "P equals A R equals M R"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-29",
+    "sourceHash": "026d9e94af79a5d2580583d4d4dc75e7d186c05ac6aa280dac02a393370e9b05",
+    "displayedGraphHash": "ce5c85393ea0d1b112bf72933ffd01b4666baf07c118e64453ba9d80fcefb844",
+    "graphAlternative": "Horizontal axis: firm quantity; vertical axis: cost / revenue. The horizontal P = MR = AR line is at 25. It intersects rising MC and minimum ATC at quantity 50 and cost 25. At quantity 50, AVC is 15. Dashed guides mark these values. ATC and AVC are U-shaped, and ATC lies above AVC.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 41,
+        "text": "$25",
+        "alternative": "25 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 79,
+        "text": "$25",
+        "alternative": "25 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 4,
+        "text": "$25",
+        "alternative": "25 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 27,
+        "text": "$19",
+        "alternative": "19 dollars"
+      },
+      {
+        "sourceField": "outcome",
+        "compactStart": 34,
+        "text": "MR = MC",
+        "alternative": "M R equals M C"
+      },
+      {
+        "sourceField": "workedLabel",
+        "compactStart": 8,
+        "text": "MR = MC",
+        "alternative": "M R equals M C"
+      },
+      {
+        "sourceField": "title",
+        "compactStart": 27,
+        "text": "MR = MC",
+        "alternative": "M R equals M C"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Equation in title/outcome"
+  },
+  {
+    "code": "MICRO-30",
+    "sourceHash": "a772c1419369ac16f8dde33d8314f83e50fb0bf81cb2cf2cd747a94bc56c1ae0",
+    "displayedGraphHash": "2a9d0860565e53b4e3306e995a99a3dd8e9f623bd882d5701fcb9ff813cb7676",
+    "graphAlternative": "Two panels. Left, Market: horizontal axis market quantity in thousands; vertical axis price. Rising S and falling D intersect at quantity 75 thousand and price 15. Right, Representative firm: horizontal axis firm quantity; vertical axis cost / revenue. Horizontal P = MR = AR at 15 meets rising MC at quantity 50. At quantity 50, ATC is 18 and AVC is 10; dashed guides mark all three levels. ATC and AVC are U-shaped. The same price 15 connects the market and firm panels.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 21,
+        "text": "$15",
+        "alternative": "15 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 66,
+        "text": "P = MR = MC",
+        "alternative": "P equals M R equals M C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 85,
+        "text": "$18",
+        "alternative": "18 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 102,
+        "text": "$18 - $15 = $3",
+        "alternative": "18 dollars minus 15 dollars equals 3 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 126,
+        "text": "$3 x 50 = $150",
+        "alternative": "3 dollars times 50 equals 150 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-31",
+    "sourceHash": "e72f50d9203352303d2b242ebbcb9f68112ecd801ebcc49adaea2108ce7bfda1",
+    "displayedGraphHash": "5b119345853700bb31d03de426684353275a6ad295f2b62eb6308ecdb11a9f78",
+    "graphAlternative": "Horizontal axis: firm quantity; vertical axis: cost / revenue. Horizontal P = MR = AR is at 10, below the entire AVC curve. MC crosses minimum AVC at A, quantity 22 and cost 20. Other marked points on rising MC are B near quantity 36 and cost 30, C near quantity 44 and cost 41 at minimum ATC, and D near quantity 50 and cost 50. Unprinted coordinates are approximate. ATC is above AVC.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 24,
+        "text": "$10",
+        "alternative": "10 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 45,
+        "text": "$20",
+        "alternative": "20 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-32",
+    "sourceHash": "1e3c0eadd6829bdaa87c8bae8365335881d74ea0fd8530eef71e1edeb48fb4e1",
+    "displayedGraphHash": "5b119345853700bb31d03de426684353275a6ad295f2b62eb6308ecdb11a9f78",
+    "graphAlternative": "Horizontal axis: firm quantity; vertical axis: cost / revenue. Horizontal P = MR = AR is at 10, below the entire AVC curve. MC crosses minimum AVC at A, quantity 22 and cost 20. Other marked points on rising MC are B near quantity 36 and cost 30, C near quantity 44 and cost 41 at minimum ATC, and D near quantity 50 and cost 50. Unprinted coordinates are approximate. ATC is above AVC.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 96,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 131,
+        "text": "$30",
+        "alternative": "30 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-33",
+    "sourceHash": "2b65f20dcf20ca1da742a00285ff938e57823fd6ef9e0dab349cc32d22a056c7",
+    "displayedGraphHash": "b1d02e033555b0a4a2c65e3105407c0c0acd675a180f644fb476c37913359820",
+    "graphAlternative": "Two panels. Left, Market: horizontal axis market quantity; vertical axis price. S slopes up and D slopes down, intersecting at quantity 100 and price 25. Right, Representative firm: horizontal axis firm quantity; vertical axis cost / revenue. Horizontal P = MR = AR at 25 meets MC and minimum ATC at quantity 50. At that quantity, AVC is 17, explicitly labeled and connected by dashed guides. ATC and AVC are U-shaped. Both panels share price 25.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 27,
+        "text": "$25",
+        "alternative": "25 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 84,
+        "text": "P = MC",
+        "alternative": "P equals M C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 92,
+        "text": "$25",
+        "alternative": "25 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-34",
+    "sourceHash": "bd8a86cbbb80ef574959f895f603b08d2d6d6993eaa67c9905ed0eca6e3c3cfc",
+    "displayedGraphHash": "863e8e0b27bd8148d2071dd79dfa222ca9a6710693ff136d141ec86a89e40d3c",
+    "graphAlternative": "Horizontal axis: industry quantity; vertical axis: price. The single line labeled LRS slopes upward from about price 18 at quantity 0 to just above price 50 near quantity 105. There are no demand curves or marked equilibrium points. Values are approximate readings from the displayed scale.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 60,
+        "text": "$18",
+        "alternative": "18 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 85,
+        "text": "$50",
+        "alternative": "50 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-35",
+    "sourceHash": "5291fb3fdba16a4c74d320698c3a840201fdb98a1a242e1ec2bebd12f2e1121a",
+    "displayedGraphHash": "b1d02e033555b0a4a2c65e3105407c0c0acd675a180f644fb476c37913359820",
+    "graphAlternative": "Two panels. Left, Market: horizontal axis market quantity; vertical axis price. S slopes up and D slopes down, intersecting at quantity 100 and price 25. Right, Representative firm: horizontal axis firm quantity; vertical axis cost / revenue. Horizontal P = MR = AR at 25 meets MC and minimum ATC at quantity 50. At that quantity, AVC is 17, explicitly labeled and connected by dashed guides. ATC and AVC are U-shaped. Both panels share price 25.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 112,
+        "text": "$25",
+        "alternative": "25 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 116,
+        "text": "P = MC",
+        "alternative": "P equals M C"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 0,
+        "text": "P=MC",
+        "alternative": "P equals M C"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 7,
+        "text": "P>min ATC",
+        "alternative": "P is greater than min A T C"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-36",
+    "sourceHash": "c8c794eee27358b90dc0199bceecd7c71c418c20936e7c8208b2190d00e78ab4",
+    "displayedGraphHash": "19a2e86bff0bf5233c643fa3a811cb4f18eb856bfa9d142f784b835fadde7105",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down, and MR slopes down more steeply from the same vertical intercept. MC is horizontal at 20. MR meets MC near quantity 45; at that quantity, guides mark demand price about 47 and ATC about 24. Demand meets MC at quantity 90 and price 20; ATC there is slightly above 20. ATC declines throughout the displayed relevant range. The marked demand price at 45 is approximately 47.",
+    "formulaRuns": [],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-37",
+    "sourceHash": "0b8ac909e4274b191c6c6dd1f3913d3821395a31bf9252f0ca46e756a6086edd",
+    "displayedGraphHash": "bd3e37189879cd8182b7a7d8ff3d2c7ecb57f9b3aa0f01c174a007347711b53c",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down from price 60 at quantity 0 to zero at 120. MR slopes down more steeply, reaching zero at 60. At quantity 40, MR and rising MC meet at 20; demand is at 40 and ATC at 45, with dashed guides. Demand and MC intersect near quantity 67 and price 27. ATC is U-shaped, reaching its minimum to the right of quantity 40. The 67 and 27 intersection values are approximate as labeled.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 37,
+        "text": "$40",
+        "alternative": "40 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 79,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 97,
+        "text": "$40 x 40 = $1,600",
+        "alternative": "40 dollars times 40 equals 1,600 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-38",
+    "sourceHash": "8485d685a5a377ee5252205fb87524b42d56dadc7adb2d6674cbf1e15016094f",
+    "displayedGraphHash": "bd3e37189879cd8182b7a7d8ff3d2c7ecb57f9b3aa0f01c174a007347711b53c",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down from price 60 at quantity 0 to zero at 120. MR slopes down more steeply, reaching zero at 60. At quantity 40, MR and rising MC meet at 20; demand is at 40 and ATC at 45, with dashed guides. Demand and MC intersect near quantity 67 and price 27. ATC is U-shaped, reaching its minimum to the right of quantity 40. The 67 and 27 intersection values are approximate as labeled.",
+    "formulaRuns": [
+      {
+        "sourceField": "core",
+        "compactStart": 194,
+        "text": "MR=MC",
+        "alternative": "M R equals M C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 34,
+        "text": "MR = MC",
+        "alternative": "M R equals M C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 79,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 131,
+        "text": "$40",
+        "alternative": "40 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 182,
+        "text": "Q = 40",
+        "alternative": "Q equals 40"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 189,
+        "text": "P = $40",
+        "alternative": "P equals 40 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 201,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 79,
+        "text": "MR = MC",
+        "alternative": "M R equals M C"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-39",
+    "sourceHash": "9a81dc4dd3b3b852b48e377f624b6f8dafb8f76e7b0efdc9625d80f1ce146748",
+    "displayedGraphHash": "a328f87bd5d43e526cd220d01017352766c4354ce08e8e3156304f48af67ccf5",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes downward from price 60 to zero at quantity 120; MR reaches zero at quantity 60. At quantity 36, MR and rising MC meet at 24, demand is at 42, and ATC is at 27. Dashed guides mark those values. Demand and MC intersect at quantity 60 and price 30. ATC is U-shaped with its minimum near quantity 48.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 69,
+        "text": "$42",
+        "alternative": "42 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 80,
+        "text": "$27",
+        "alternative": "27 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 99,
+        "text": "$42 - $27 = $15",
+        "alternative": "42 dollars minus 27 dollars equals 15 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 134,
+        "text": "$15 x 36 = $540",
+        "alternative": "15 dollars times 36 equals 540 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 7,
+        "text": "P>MC",
+        "alternative": "P is greater than M C"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-40",
+    "sourceHash": "ee5a1c4b9f9f0e676e77e9536f369743d99759ac9eab59acd1956a41db0c451c",
+    "displayedGraphHash": "19a2e86bff0bf5233c643fa3a811cb4f18eb856bfa9d142f784b835fadde7105",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down, and MR slopes down more steeply from the same vertical intercept. MC is horizontal at 20. MR meets MC near quantity 45; at that quantity, guides mark demand price about 47 and ATC about 24. Demand meets MC at quantity 90 and price 20; ATC there is slightly above 20. ATC declines throughout the displayed relevant range. The marked demand price at 45 is approximately 47.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 46,
+        "text": "MR = MC",
+        "alternative": "M R equals M C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 82,
+        "text": "$47",
+        "alternative": "47 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 139,
+        "text": "$20",
+        "alternative": "20 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-41",
+    "sourceHash": "491fade4e0ce3deb489e56ccaef15cb81de8ab36ea876b5779f91fce8a8b5ab9",
+    "displayedGraphHash": "f2099681dc2f0ce2d4fa1ebe470522b8439d21c842534a77f15f301728350565",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down and MR slopes down more steeply. MC is horizontal at 10; ATC declines. Guides show MR meeting MC near quantity 70, where demand is near 27. Demand meets ATC near quantity 115 and price 16. Demand meets MC at quantity 140 and price 10, while ATC at 140 is about 15. The values near 70, 115, 27, 16 and 15 are approximate readings from the marked guides.",
+    "formulaRuns": [
+      {
+        "sourceField": "core",
+        "compactStart": 271,
+        "text": "P=MC",
+        "alternative": "P equals M C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 71,
+        "text": "$10",
+        "alternative": "10 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 90,
+        "text": "$15",
+        "alternative": "15 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 126,
+        "text": "($15 - $10) x 140 = $700",
+        "alternative": "open parenthesis 15 dollars minus 10 dollars close parenthesis times 140 equals 700 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 179,
+        "text": "$16",
+        "alternative": "16 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-42",
+    "sourceHash": "d2b926a10475412978fa0cc8c7420faae3f67d870b222e6a31d0c2e051c5742c",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 23,
+        "text": "$8",
+        "alternative": "8 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 39,
+        "text": "$14",
+        "alternative": "14 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-43",
+    "sourceHash": "0bde6224ac431db60d14564712271b0ea6f9ba73cd254031aabf20d90dafe04f",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-44",
+    "sourceHash": "8324d799f0c25136501831d618594160f29b7850d436d7b3527042c263c29450",
+    "displayedGraphHash": "924cffbc6125449ff8d1dafc1f667b517715078d71ef9355334af6065e42cda8",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D = AR slopes down; MR slopes down more steeply and reaches zero at quantity 60. At marked quantity 36, MR and MC meet at 15, while demand and ATC meet at 27. Dashed horizontal and vertical guides mark those values. ATC continues downward to a minimum near quantity 50 before rising; MC rises to the right of 36.",
+    "formulaRuns": [
+      {
+        "sourceField": "core",
+        "compactStart": 44,
+        "text": "MR = MC",
+        "alternative": "M R equals M C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 26,
+        "text": "MR = MC",
+        "alternative": "M R equals M C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 33,
+        "text": "$15",
+        "alternative": "15 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 48,
+        "text": "$27",
+        "alternative": "27 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 77,
+        "text": "$27",
+        "alternative": "27 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 114,
+        "text": "$27 x 36 = $972",
+        "alternative": "27 dollars times 36 equals 972 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 150,
+        "text": "P > MC",
+        "alternative": "P is greater than M C"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 8,
+        "text": "P>MC",
+        "alternative": "P is greater than M C"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 15,
+        "text": "P<ATC",
+        "alternative": "P is less than A T C"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-45",
+    "sourceHash": "3b6db233b1446aed9ac3638be78ba1a610c6707ad290cea7a95e70b0ea53c72c",
+    "displayedGraphHash": "924cffbc6125449ff8d1dafc1f667b517715078d71ef9355334af6065e42cda8",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D = AR slopes down; MR slopes down more steeply and reaches zero at quantity 60. At marked quantity 36, MR and MC meet at 15, while demand and ATC meet at 27. Dashed horizontal and vertical guides mark those values. ATC continues downward to a minimum near quantity 50 before rising; MC rises to the right of 36.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 24,
+        "text": "$27",
+        "alternative": "27 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 38,
+        "text": "$27",
+        "alternative": "27 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 56,
+        "text": "$27 x 36 = $972",
+        "alternative": "27 dollars times 36 equals 972 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 86,
+        "text": "$972",
+        "alternative": "972 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-46",
+    "sourceHash": "2e56cb6494c805954c163086c1333d3a8a5b6d605371ebdeccad8e5e73b546fa",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 41,
+        "text": "$8",
+        "alternative": "8 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-47",
+    "sourceHash": "9d3ca6abde21b730ce31be0b76520ada81dff50b4b1cf8d850e2dfc4fe7afc31",
+    "displayedGraphHash": "924cffbc6125449ff8d1dafc1f667b517715078d71ef9355334af6065e42cda8",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D = AR slopes down; MR slopes down more steeply and reaches zero at quantity 60. At marked quantity 36, MR and MC meet at 15, while demand and ATC meet at 27. Dashed horizontal and vertical guides mark those values. ATC continues downward to a minimum near quantity 50 before rising; MC rises to the right of 36.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 46,
+        "text": "$27",
+        "alternative": "27 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 91,
+        "text": "$15",
+        "alternative": "15 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-48",
+    "sourceHash": "b2a4895c9b011aca502493e413132ac46753c3d96fd66ccaf2e12e8a21dbf2fd",
+    "displayedGraphHash": "84b3dc09833d50ff1bf8b23ada66200aef9574404266b559ed727aa3354d9ecd",
+    "graphAlternative": "Horizontal axis: Firm or fringe, with categories A, B, C, D and Other; vertical axis: Market share in percent. The five bars have printed values A 38 percent, B 32 percent, C 12 percent, D 9 percent, and Other 9 percent. Other is a separate aggregate category, not labeled as a single firm.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 27,
+        "text": "38%",
+        "alternative": "38 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 31,
+        "text": "32%",
+        "alternative": "32 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 35,
+        "text": "12%",
+        "alternative": "12 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 39,
+        "text": "9%",
+        "alternative": "9 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 45,
+        "text": "9%",
+        "alternative": "9 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 79,
+        "text": "38^2 + 32^2 + 12^2 + 9^2 + 9^2 = 1,444 + 1,024 + 144 + 81 + 81 = 2,774",
+        "alternative": "38 squared plus 32 squared plus 12 squared plus 9 squared plus 9 squared equals 1,444 plus 1,024 plus 144 plus 81 plus 81 equals 2,774"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-50",
+    "sourceHash": "35ecbb897e9e4b446a732422adb248654e25f632325db974ace901d55a480afb",
+    "displayedGraphHash": "8279a94ad56feee1925d793af985ebe87aa3eb6e61cc2c0a35ae98b6f915a277",
+    "graphAlternative": "Horizontal axis: market quantity; vertical axis: price and cost. Demand D slopes down from price 100 at quantity 0 and crosses horizontal MC at price 20 and quantity 40. MR slopes down more steeply from 100 to zero near quantity 25, crossing MC at quantity 20. At quantity 20, demand is near price 60. Values without point guides are approximate readings from the scale.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 121,
+        "text": "$20",
+        "alternative": "20 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-51",
+    "sourceHash": "e4fbfa7bc4c9eefa92d83bef09fbbd8ebdc2427f9c081d283660a430f2461f48",
+    "displayedGraphHash": "23f76e463bceb776ed42e7a7881db866e55e9d7b106aac23ce030690333bcf0c",
+    "graphAlternative": "Sequential game tree; payoffs are ordered Entrant, Incumbent. The Entrant moves first. Stay out ends with payoffs (0, 12). Enter leads to the Incumbent decision node. From that node, Accommodate ends with (6, 7), and Fight ends with (negative 3, 3). Branch labels identify the actions; each payoff belongs to its branch endpoint.",
+    "formulaRuns": [
+      {
+        "sourceField": "core",
+        "compactStart": 300,
+        "text": "Net gain = 25 − 8 − 14 = 3 million",
+        "alternative": "Net gain equals 25 minus 8 minus 14 equals 3 million"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 36,
+        "text": "Net gain = 25 − 8 − 14 = 3 million",
+        "alternative": "Net gain equals 25 minus 8 minus 14 equals 3 million"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-52",
+    "sourceHash": "a1f88fdf512140e314d6b38d8f92d4fe7f3d1456eb36c47a7e4cc75031d191f0",
+    "displayedGraphHash": "3b9fdce03dc3bcf2ac344d43716855c56136d31befbe343558216bd99a49f3e5",
+    "graphAlternative": "Horizontal axis: quantity; vertical axis: price and cost. Demand D has a kink at approximately quantity 20 and price 50: it is steeper to the left and flatter to the right. MR has two downward-sloping segments separated by a gap at quantity 20, from approximately 10 to 32. Horizontal MC is around 37. These are approximate readings, and the MC line is visibly above the top of the MR gap.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 43,
+        "text": "$50",
+        "alternative": "50 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 121,
+        "text": "$36",
+        "alternative": "36 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-53",
+    "sourceHash": "6ca340a66866785c0f3026083a6da50cd2ec3f6e67bb121a17d65f343a8074ba",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 121,
+        "text": "$4",
+        "alternative": "4 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-55",
+    "sourceHash": "10321f25eb6ed1075da3f1aba88c68d6ddd792d64dc7e76f7da7384dbdc19184",
+    "displayedGraphHash": "eaa38d1c3d4354573486110d20e76fa01edaf6d8190f498c863d635673ae3ec7",
+    "graphAlternative": "Horizontal axis: community fireworks displays per summer; vertical axis: marginal benefit / cost in thousands of dollars per display. Dashed North MB falls from 50 at zero displays to 30 at four; dashed South MB falls from 40 to 20 at four and reaches zero at eight. Solid MSB is their vertical sum: 90 at zero and 50 at four. Horizontal MC is 50. At four displays, guides mark North 30, South 20 and the MSB-MC intersection at 50. MSB then falls to zero at ten displays.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 57,
+        "text": "$30,000",
+        "alternative": "30,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 76,
+        "text": "$20,000",
+        "alternative": "20,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 155,
+        "text": "$50,000",
+        "alternative": "50,000 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 171,
+        "text": "$50,000",
+        "alternative": "50,000 dollars"
+      },
+      {
+        "sourceField": "recognition/2",
+        "compactStart": 43,
+        "text": "MSB = MC",
+        "alternative": "M S B equals M C"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-56",
+    "sourceHash": "c6c37ce0b2a30d1062be5a2a64a21aab5b19b01ccfbd510c78c847796f1158a2",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "price influence",
+        "imperfect competition",
+        "entry barriers",
+        "output restriction",
+        "inefficiency"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  },
+  {
+    "code": "MICRO-57",
+    "sourceHash": "346b143727068339b277256b5a2ae9c828b7daad2f09307421580040788a8da6",
+    "displayedGraphHash": "caf41589f04168eaace7729978cab67cc74f22e7cf3e8409439d5d49f582e731",
+    "graphAlternative": "Horizontal axis: hundreds of warehouse workers; vertical axis: hourly wage in dollars. Labor Demand slopes down from wage 30 at quantity 0 to zero at 120 hundreds. Labor Supply slopes up from wage 10. They intersect at wage 20 and quantity 40 hundreds of workers, with dashed guides to both axes. Supply lies above demand to the right of that intersection.",
+    "formulaRuns": [
+      {
+        "sourceField": "core",
+        "compactStart": 130,
+        "text": "VMP = output price x MPL",
+        "alternative": "V M P equals output price times M P L"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 59,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 171,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 218,
+        "text": "$20",
+        "alternative": "20 dollars"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-58",
+    "sourceHash": "62d3cb391abb0c3a1d5dfb2d325bfb4a5fdf74629d5f5e2b020c78ff0e4d37db",
+    "displayedGraphHash": "2c28411fcbfbd9f782c46648b95f113a3b60c48b1be8f331072e169a1b828968",
+    "graphAlternative": "Horizontal axis: Good X; vertical axis: Good Y. A straight budget line runs from 40 units of Y at X = 0 to 20 units of X at Y = 0. Marked bundle A is X = 10 and Y = 20. At A the budget line is tangent to solid IC2. Dashed IC1 lies below IC2 and intersects the feasible set; dashed IC3 lies above IC2 and outside the budget line. All three indifference curves slope down and are convex toward the origin.",
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 55,
+        "text": "-2",
+        "alternative": "negative 2"
+      }
+    ],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-59",
+    "sourceHash": "eeadafb3eabf65f821ef8a92af5a3f1bd27d56b9abc4217841dcad52e4413bf1",
+    "displayedGraphHash": "6f9a8c6c04ab59634c668823109e01c13008866b83597ed5138e240ae909dd63",
+    "graphAlternative": "Horizontal axis: cumulative percentage of households; vertical axis: cumulative percentage of income. A dashed line of equality connects (0, 0) and (100, 100). Before Transfers, the Lorenz curve passes through (20, 5), (40, 15), (60, 30), (80, 55), and (100, 100). After Transfers, it passes through (20, 10), (40, 22), (60, 40), (80, 65), and (100, 100), closer to equality. Guides emphasize the bottom 40 percent shares of 15 and 22 percent. Printed Gini values are 0.380 before transfers and 0.252 after transfers.",
+    "formulaRuns": [],
+    "card": null,
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": null
+  },
+  {
+    "code": "MICRO-60",
+    "sourceHash": "12cd246128184fb7b2a009fc036c92b35b0b2dc7b4c272dacc4dcef3ce688214",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "hidden characteristics",
+        "before agreement",
+        "private risk",
+        "selection into the pool",
+        "market response"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  },
+  {
+    "code": "MICRO-61",
+    "sourceHash": "71a1ef870234845a6be73a29ba4f795b0aba210d2caa662df4de4dd51a755be4",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "after agreement",
+        "hidden action",
+        "protection",
+        "reduced precaution",
+        "changed incentives"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  },
+  {
+    "code": "MICRO-62",
+    "sourceHash": "8ee05b5329b411d5966fed538b8835bef99bd0e6b77687f2608fb86491d10f35",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "informed party",
+        "uninformed party",
+        "signal",
+        "screen",
+        "who initiates"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  },
+  {
+    "code": "MICRO-63",
+    "sourceHash": "22315d04d809aafc8a8dec70989ab0c9054a8dcdfd5cbc33c00f1c3d5b98f24a",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "immediate present",
+        "procrastination",
+        "preference reversal",
+        "undersaving",
+        "commitment device"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  },
+  {
+    "code": "MICRO-64",
+    "sourceHash": "70c4f79ca84439c452dcd3215158df32563b38ea0af19ecbe3487b82c22c4c7d",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 67,
+        "text": "$50",
+        "alternative": "50 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 114,
+        "text": "$50",
+        "alternative": "50 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 190,
+        "text": "$50",
+        "alternative": "50 dollars"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 238,
+        "text": "$50",
+        "alternative": "50 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 30,
+        "text": "$20",
+        "alternative": "20 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 53,
+        "text": "$20",
+        "alternative": "20 dollars"
+      }
+    ],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "reference point",
+        "equal magnitude",
+        "gain",
+        "loss",
+        "asymmetric reaction"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  },
+  {
+    "code": "MICRO-65",
+    "sourceHash": "3a3631a69c3bb1a9785ed854e4de7e306f254e661373214c034c14a737926d16",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 40,
+        "text": "90%",
+        "alternative": "90 percent"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 76,
+        "text": "10%",
+        "alternative": "10 percent"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 24,
+        "text": "$5",
+        "alternative": "5 dollars"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 46,
+        "text": "$5",
+        "alternative": "5 dollars"
+      }
+    ],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "equivalent outcomes",
+        "presentation",
+        "gain frame",
+        "loss frame",
+        "choice reversal"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  },
+  {
+    "code": "MICRO-66",
+    "sourceHash": "b4e611e17863382ba57447687c5ea17424c205f4eac4a10cac59cfa09d2b1850",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [
+      {
+        "sourceField": "worked",
+        "compactStart": 11,
+        "text": "A > B > C",
+        "alternative": "A is preferred to B, and B is preferred to C"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 28,
+        "text": "B > C > A",
+        "alternative": "B is preferred to C, and C is preferred to A"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 45,
+        "text": "C > A > B",
+        "alternative": "C is preferred to A, and A is preferred to B"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 166,
+        "text": "A > B > C > A",
+        "alternative": "A beats B by majority, B beats C by majority, and C beats A by majority"
+      }
+    ],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "pairwise majority",
+        "consistent voters",
+        "A beats B",
+        "B beats C",
+        "C beats A"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  },
+  {
+    "code": "MICRO-67",
+    "sourceHash": "355c40d95f8b9713a49f296042521447e4c27966351ad7a04799fd45a27b433c",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "social ranking",
+        "unanimity",
+        "nondictatorship",
+        "consistency",
+        "irrelevant alternatives"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  },
+  {
+    "code": "MICRO-68",
+    "sourceHash": "fd8997449a31f9387bf1c20e753e4bcabd3ecb001788df807126788dbfd33f51",
+    "displayedGraphHash": null,
+    "graphAlternative": null,
+    "formulaRuns": [],
+    "card": {
+      "heading": "DIAGNOSE",
+      "items": [
+        "one dimension",
+        "single-peaked",
+        "majority rule",
+        "ordered voters",
+        "median position"
+      ]
+    },
+    "reviewer": "Codex source and displayed-image review; not human AT",
+    "reviewState": "CANDIDATE_VALIDATION_PENDING",
+    "newPattern": "Diagnostic card"
+  }
+]

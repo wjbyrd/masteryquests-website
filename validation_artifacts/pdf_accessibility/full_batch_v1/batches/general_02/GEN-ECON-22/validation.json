@@ -1,0 +1,167 @@
+[
+  {
+    "code": "GEN-ECON-22",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-22\\after\\GEN-ECON-22.pdf",
+    "tagCount": 37,
+    "mcids": 44,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Tax Incidence with Elasticity",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "GENERAL ECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "GEN-ECON-22",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Use elasticity to determine and calculate the distribution of tax burdens.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Beginner",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Tax incidence depends on relative elasticity: the less responsive side of the market bears more of the tax burden. That side changes quantity less when the tax alters the price it pays or receives, so more of the tax wedge appears on its side of the market. Legal responsibility for remitting the tax does not determine its economic burden.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "The more elastic side can respond more easily, so it bears less of the tax burden.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "The less elastic side bears more of the tax burden; identify that side from the market conditions.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A tax on cigarettes causes only a small drop in quantity but a large increase in buyer price.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "In one market, demand is much more elastic than supply.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to assume that the more elastic side bears more of a tax. The less elastic side bears more. In this particular worked graph, the price changes show an equal split; do not assume buyers always bear more.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: COMPARING TAX BURDENS",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The untaxed equilibrium price is $15. With the tax, buyers pay $18, sellers receive $12, and 80 units are sold. Buyers bear $18 - $15 = $3 per unit, so their total burden is $3 x 80 = $240. Sellers bear the remaining $3 per unit.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "When demand is less elastic than supply, which side is less able to avoid the tax?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "b137fda45c49bb23731068594c8dcb195d24a9e194a863cded203aab00d550df",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "059a258f7a4516a505916cc779618fe8c00bdcfdda3fb6312893a50a91b44cbe",
+    "semanticsSha256": "ec175c6006ceb8a6ac057facf2bdf287f8f8b9a5671172554fe324a8b73df015",
+    "baselineSha256": "a6b33a7043dfea25324df9653cb46e525deef9f33dfe8c0f216d5bebba76816b",
+    "resourceSemanticsSha256": "bd26b085eca2919d35f1ffdf8bd2f1dc34c1647a24c723c1eee83911b89b6453",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-22\\verapdf.json",
+    "validatorReportSha256": "3d89b23af64127c31535743b6b7e5199945ef99ecc8b2364db0917c2f3d48efc",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  }
+]

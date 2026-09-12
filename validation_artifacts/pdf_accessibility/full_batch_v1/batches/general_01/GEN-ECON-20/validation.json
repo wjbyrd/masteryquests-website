@@ -1,0 +1,167 @@
+[
+  {
+    "code": "GEN-ECON-20",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-20\\after\\GEN-ECON-20.pdf",
+    "tagCount": 39,
+    "mcids": 49,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Price Floors",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "GENERAL ECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "GEN-ECON-20",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Distinguish binding and nonbinding floors and analyze surpluses and unintended effects.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Beginner",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A price floor sets a legal minimum price and is binding only when it lies above the market equilibrium price. A binding floor keeps price from falling to equilibrium, so quantity supplied exceeds quantity demanded and a surplus develops. A floor at or below equilibrium is nonbinding because the market can still reach its equilibrium price.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Compare the legal minimum price with the market equilibrium price.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A floor above equilibrium is binding and creates excess supply.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "At the floor price, read quantity supplied and quantity demanded; their difference is the surplus.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A floor at or below equilibrium is nonbinding and does not change the market outcome.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to assume that every price floor is binding. Equilibrium is $30. A floor at $20 is below equilibrium, so it does not prevent the market from reaching $30.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: BINDING PRICE FLOOR",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve intersect at price $30 and quantity 200. Dashed guides also show demand and supply quantities at prices $10, $20, $40, and $50: at $10, supply is 100 and demand is 300; at $20, supply is 150 and demand is 250; at $40, supply is 250 and demand is 150; at $50, supply is 300 and demand is 100.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The market equilibrium is $30 and 200 units. A binding floor of $40 holds price above equilibrium; sellers offer 250 units while buyers demand 150. The resulting surplus is 250 - 150 = 100 units, so some output remains unsold at the controlled price.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "At a binding price floor, Qs = 110 and Qd = 80. What is the surplus?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "86cb46fa02786610c7914776b4853ae4dfe1fe5ba1795f48188b1f7403d6bcf4",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "147e4b528a1f0fffaf395c3a2dc72264af018b0bea6ebb76d2513af767c6a63d",
+    "semanticsSha256": "ec175c6006ceb8a6ac057facf2bdf287f8f8b9a5671172554fe324a8b73df015",
+    "baselineSha256": "318a5cda4c284af2e3e1f1be16d8173200e47a272c6d754c2510678ce1501602",
+    "resourceSemanticsSha256": "a2f5e88b35b8a76ff9539e2d1e3a09f049d84acf541e6a2e9abba295ead78e56",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-20\\verapdf.json",
+    "validatorReportSha256": "f54acf9909f8725f9425a04d15425f5d521f0188b77129b0720837c60044cd4f",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  }
+]

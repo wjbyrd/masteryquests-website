@@ -24,6 +24,23 @@ def normalized(text):
 def source_hash(record):
     return hashlib.sha256(json.dumps(record,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
 
+def semantic_hash(metadata, code):
+    """Bind evidence to one resource, including its resolved shared description.
+
+    Unrelated batch additions must not invalidate an already reviewed candidate.
+    """
+    entry=metadata['pilot'][code].copy()
+    if entry.get('descriptionKey'):
+        entry['resolvedDescription']=metadata['descriptions'][entry['descriptionKey']]
+    return source_hash(entry)
+
+def card_items(card):
+    """Join only explicitly reviewed continuation lines in a displayed card."""
+    groups=card.get('groups',[[i] for i in range(len(card['items']))])
+    if [i for group in groups for i in group]!=list(range(len(card['items']))):
+        raise ValueError('Card groups must cover source items once and in order')
+    return [(group[0],' '.join(card['items'][i].strip() for i in group)) for group in groups]
+
 def text_blocks(page,reader):
     ops=ContentStream(page['/Contents'],reader).operations
     # Decode in the complete page graphics/font state. Isolated BT fragments
@@ -63,8 +80,14 @@ def validate_metadata(metadata):
         for formula in entry.get('formulaCard',[]):
             if not formula.get('text') or not formula.get('alternative'):
                 raise ValueError('Incomplete formula source')
+        if entry.get('instructionCard'):
+            if entry.get('formulaCard'):raise ValueError('Competing card representations')
+            card=entry['instructionCard']
+            if card.get('heading') not in ('DIAGNOSE','KEY RELATIONSHIPS') or not card.get('items'):
+                raise ValueError('Unknown instruction card')
+            card_items(card)
         for formula in entry.get('inlineFormulas',[]):
-            if not re.fullmatch(r'(core|worked|watch|check|outcome|recognition/[0-9]+)',formula.get('sourceField','')):
+            if not re.fullmatch(r'(title|workedLabel|core|worked|watch|check|outcome|recognition/[0-9]+|card/[0-9]+)',formula.get('sourceField','')):
                 raise ValueError('Invalid Formula source field')
             if type(formula.get('compactStart')) is not int or formula['compactStart']<0:
                 raise ValueError('Invalid Formula source offset')
@@ -107,9 +130,9 @@ def tag_one(record,meta,destination,visual_source=None):
                     return collected
                 if not target.startswith(joined):break
         raise ValueError('Unmatched canonical content: '+repr(target))
-    def node(role,text=None,parent=None,alt=None,indices=None):
+    def node(role,text=None,parent=None,alt=None,indices=None,source_field=None):
         idx=len(nodes)
-        nodes.append({'role':role,'parent':parent,'alt':alt,'text':text,'ranges':[]})
+        nodes.append({'role':role,'parent':parent,'alt':alt,'text':text,'ranges':[],'sourceField':source_field})
         if text is not None:
             found=match(text) if indices is None else indices
             for bi in found:
@@ -117,16 +140,16 @@ def tag_one(record,meta,destination,visual_source=None):
             transcript.append({'role':role,'text':text,'node':idx})
         return idx
     content=record['content']
-    node('H1',record['title'])
+    node('H1',record['title'],source_field='title')
     node('P',record['disciplineLabel'])
     node('P',record['code'])
     node('P','Time: '+content['time'])
-    node('P','Outcome: '+content['outcome'])
+    node('P','Outcome: '+content['outcome'],source_field='outcome')
     node('P','Difficulty: '+content['difficulty'])
-    node('H2','THE CORE IDEA');node('P',content['core'])
+    node('H2','THE CORE IDEA');node('P',content['core'],source_field='core')
     node('H2','HOW TO RECOGNIZE IT')
     listnode=node('L')
-    for item in content['recognition']:
+    for item_index,item in enumerate(content['recognition']):
         li=node('LI',parent=listnode)
         indices=match(item)
         first=indices[0]
@@ -134,13 +157,19 @@ def tag_one(record,meta,destination,visual_source=None):
             raise ValueError('List item lacks an unambiguous preceding label')
         used.add(first-1)
         node('Lbl',blocks[first-1]['text'],parent=li,indices=[first-1])
-        node('LBody',item,parent=li,indices=indices)
-    node('H2','WATCH OUT');node('P',content['watch'])
-    worked_heading=node('H2','WORKED EXAMPLE: '+content['workedLabel'])
+        node('LBody',item,parent=li,indices=indices,source_field='recognition/'+str(item_index))
+    node('H2','WATCH OUT');node('P',content['watch'],source_field='watch')
+    worked_heading=node('H2','WORKED EXAMPLE: '+content['workedLabel'],source_field='workedLabel')
     if meta.get('formulaCard'):
         node('H3','KEY RELATIONSHIPS')
         for formula in meta['formulaCard']:
             node('Formula',formula['text'],alt=formula['alternative'])
+    if meta.get('instructionCard'):
+        card=meta['instructionCard'];node('H3',card['heading'])
+        card_list=node('L')
+        for card_index,text in card_items(card):
+            li=node('LI',parent=card_list)
+            node('LBody',text,parent=li,source_field='card/'+str(card_index))
     graphnode=None; table_regions=[]
     if meta.get('tableRequired'):
         table=meta['tableSource']; region=meta['tableRegions']
@@ -172,8 +201,8 @@ def tag_one(record,meta,destination,visual_source=None):
             raise ValueError('Invalid informative graph alternative')
         graphnode=node('Figure',alt=alt)
         transcript.append({'role':'Figure','text':alt,'node':graphnode})
-    worked=node('P',content['worked'])
-    node('H2','CHECK YOURSELF');node('P',content['check'])
+    worked=node('P',content['worked'],source_field='worked')
+    node('H2','CHECK YOURSELF');node('P',content['check'],source_field='check')
     node('H2','READY?');node('P','Return to the game and master this concept.')
     # Treat only visually reviewed, repeated section glyphs as decorative.
     unused=[(i,b) for i,b in enumerate(blocks) if i not in used]
@@ -203,8 +232,9 @@ def tag_one(record,meta,destination,visual_source=None):
     formulas=[]
     for formula in meta.get('inlineFormulas',[]):
         field=formula['sourceField'].split('/')
-        paragraph=content[field[0]] if len(field)==1 else content[field[0]][int(field[1])]
-        formulas.append({**formula,'paragraph':paragraph})
+        paragraph=record['title'] if field[0]=='title' else dict(card_items(meta['instructionCard']))[int(field[1])] if field[0]=='card' else content[field[0]] if len(field)==1 else content[field[0]][int(field[1])]
+        prefix={'outcome':'Outcome: ','workedLabel':'WORKED EXAMPLE: '}.get(field[0],'')
+        formulas.append({**formula,'paragraph':prefix+paragraph,'compactStart':formula['compactStart']+len(re.sub(r'\s+','',prefix))})
     inline_plans=plan_runs(nodes,ranges,decoded_shows(reader.pages[0],ops),formulas)
     writer=PdfWriter(clone_from=reader)
     writer.pdf_header=b'%PDF-1.7'

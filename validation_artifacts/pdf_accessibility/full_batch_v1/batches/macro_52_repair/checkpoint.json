@@ -1,0 +1,555 @@
+{
+  "task": "PDF_ACCESSIBILITY_FULL_BATCH_V1",
+  "batch": "macro_52_repair",
+  "documentIds": [
+    "MACRO-52"
+  ],
+  "installed": false,
+  "records": [
+    {
+      "code": "MACRO-52",
+      "inputs": {
+        "source": "085adf76a1515f89c1798055de4716083b2a0934068e053e1959c0891c3eefac",
+        "semantics": "4fbe9743983dbe6c937fdb4c890512e727fd30544c1577d8e2d3d229e16713bc",
+        "tooling": "964dd649e552ccdc77af0b567050328491c716636df868c0ff7c74666f16cc63",
+        "active": "a8043c1a719fcc4858c7b9bb358fb56c9f59d19a342da5adc8c5ae37b08fb947"
+      },
+      "result": "MACHINE_PASS_REVIEW_PENDING",
+      "generation": {
+        "code": "MACRO-52",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_52_repair\\after\\MACRO-52.pdf",
+        "tagCount": 60,
+        "mcids": 71,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "International Transactions and Open-Economy Identities",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "MACROECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "MACRO-52",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 6 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Calculate trade and capital balances and connect NX, NCO, saving, and investment.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Intermediate",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Net exports are exports minus imports: NX = X - M. Positive NX is a trade surplus; negative NX is a trade deficit. Net capital outflow is domestic purchases of foreign assets minus foreign purchases of domestic assets. In the course accounting model, NX = NCO. National saving finances domestic investment and NCO, so S = I + NCO = I + NX.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Exports add to NX; imports subtract from NX.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "A domestic resident buying a foreign asset raises capital outflow and NCO.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "A foreign resident buying a domestic asset lowers NCO and is a capital inflow.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "If S exceeds I, the difference is positive NCO and positive NX.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not import Micro tariff or comparative-advantage analysis into these identities. Also do not call a trade deficit a mathematical error: it corresponds to negative NCO in the accounting model.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: MATCHING THE TWO SIDES",
+            "node": 24
+          },
+          {
+            "role": "H3",
+            "text": "KEY RELATIONSHIPS",
+            "node": 25
+          },
+          {
+            "role": "LBody",
+            "text": "NX = exports - imports",
+            "node": 28
+          },
+          {
+            "role": "LBody",
+            "text": "NCO = domestic foreign-asset purchases - foreign domestic-asset purchases",
+            "node": 30
+          },
+          {
+            "role": "LBody",
+            "text": "NX = NCO",
+            "node": 32
+          },
+          {
+            "role": "LBody",
+            "text": "S = I + NCO",
+            "node": 34
+          },
+          {
+            "role": "LBody",
+            "text": "Therefore S = I + NX",
+            "node": 36
+          },
+          {
+            "role": "P",
+            "text": "Exports are $300 billion and imports are $360 billion, so NX = -$60 billion. Residents buy $90 billion of foreign assets while foreigners buy $150 billion of domestic assets, so NCO = $90 - $150 = -$60 billion. If investment is $240 billion, saving is I + NCO = $180 billion.",
+            "node": 37
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 38
+          },
+          {
+            "role": "P",
+            "text": "National saving is $250 billion and investment is $210 billion. What are NCO and NX?",
+            "node": 39
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 40
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 41
+          }
+        ],
+        "visualSource": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_52_repair\\visual\\MACRO-52.pdf",
+        "sha256": "182eea8855aa90a7a62966603a663f161b7f5d7fd21db11bf96199269f572ea6"
+      },
+      "validation": {
+        "code": "MACRO-52",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_52_repair\\after\\MACRO-52.pdf",
+        "tagCount": 60,
+        "mcids": 71,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "International Transactions and Open-Economy Identities",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "MACROECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "MACRO-52",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 6 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Calculate trade and capital balances and connect NX, NCO, saving, and investment.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Intermediate",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Net exports are exports minus imports: NX = X - M. Positive NX is a trade surplus; negative NX is a trade deficit. Net capital outflow is domestic purchases of foreign assets minus foreign purchases of domestic assets. In the course accounting model, NX = NCO. National saving finances domestic investment and NCO, so S = I + NCO = I + NX.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Exports add to NX; imports subtract from NX.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "A domestic resident buying a foreign asset raises capital outflow and NCO.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "A foreign resident buying a domestic asset lowers NCO and is a capital inflow.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "If S exceeds I, the difference is positive NCO and positive NX.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not import Micro tariff or comparative-advantage analysis into these identities. Also do not call a trade deficit a mathematical error: it corresponds to negative NCO in the accounting model.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: MATCHING THE TWO SIDES",
+            "node": 24
+          },
+          {
+            "role": "H3",
+            "text": "KEY RELATIONSHIPS",
+            "node": 25
+          },
+          {
+            "role": "LBody",
+            "text": "NX = exports - imports",
+            "node": 28
+          },
+          {
+            "role": "LBody",
+            "text": "NCO = domestic foreign-asset purchases - foreign domestic-asset purchases",
+            "node": 30
+          },
+          {
+            "role": "LBody",
+            "text": "NX = NCO",
+            "node": 32
+          },
+          {
+            "role": "LBody",
+            "text": "S = I + NCO",
+            "node": 34
+          },
+          {
+            "role": "LBody",
+            "text": "Therefore S = I + NX",
+            "node": 36
+          },
+          {
+            "role": "P",
+            "text": "Exports are $300 billion and imports are $360 billion, so NX = -$60 billion. Residents buy $90 billion of foreign assets while foreigners buy $150 billion of domestic assets, so NCO = $90 - $150 = -$60 billion. If investment is $240 billion, saving is I + NCO = $180 billion.",
+            "node": 37
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 38
+          },
+          {
+            "role": "P",
+            "text": "National saving is $250 billion and investment is $210 billion. What are NCO and NX?",
+            "node": 39
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 40
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 41
+          }
+        ],
+        "visualSource": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_52_repair\\visual\\MACRO-52.pdf",
+        "sha256": "182eea8855aa90a7a62966603a663f161b7f5d7fd21db11bf96199269f572ea6",
+        "passed": true,
+        "independentProfile": "ISO 14289-1:2014",
+        "validator": "veraPDF 1.28.2 --flavour ua1",
+        "independentPass": true,
+        "projectErrors": [],
+        "sourceRecordSha256": "085adf76a1515f89c1798055de4716083b2a0934068e053e1959c0891c3eefac",
+        "semanticsSha256": "4f39880302910eb79cf1dbdc64f0258bcae121d60e1a1c71c3a6f39e67af15ef",
+        "baselineSha256": "a8043c1a719fcc4858c7b9bb358fb56c9f59d19a342da5adc8c5ae37b08fb947",
+        "resourceSemanticsSha256": "4fbe9743983dbe6c937fdb4c890512e727fd30544c1577d8e2d3d229e16713bc",
+        "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\macro_52_repair\\validation\\verapdf.json",
+        "validatorReportSha256": "d4fa5ff79a7a3ce3f4244b88cbb146f2ccb16b42b7d40f6d6b9346b10a1d31cb",
+        "pageCounts": [
+          1,
+          1
+        ],
+        "geometryEqual": true,
+        "textExact": false,
+        "textWhitespaceOnlyEqual": true,
+        "changedPixels": 132158,
+        "differenceBounds": [
+          61,
+          73,
+          1014,
+          1299
+        ],
+        "renderReview": "PENDING",
+        "assistiveTechnology": "PENDING"
+      },
+      "deterministic": true,
+      "rebuild": {
+        "code": "MACRO-52",
+        "status": "EXPERIMENTAL_CANDIDATE",
+        "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_52_repair\\determinism\\after\\MACRO-52.pdf",
+        "tagCount": 60,
+        "mcids": 71,
+        "unassignedMeaningfulBlocks": 0,
+        "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+        "transcript": [
+          {
+            "role": "H1",
+            "text": "International Transactions and Open-Economy Identities",
+            "node": 0
+          },
+          {
+            "role": "P",
+            "text": "MACROECONOMICS",
+            "node": 1
+          },
+          {
+            "role": "P",
+            "text": "MACRO-52",
+            "node": 2
+          },
+          {
+            "role": "P",
+            "text": "Time: 6 minutes",
+            "node": 3
+          },
+          {
+            "role": "P",
+            "text": "Outcome: Calculate trade and capital balances and connect NX, NCO, saving, and investment.",
+            "node": 4
+          },
+          {
+            "role": "P",
+            "text": "Difficulty: Intermediate",
+            "node": 5
+          },
+          {
+            "role": "H2",
+            "text": "THE CORE IDEA",
+            "node": 6
+          },
+          {
+            "role": "P",
+            "text": "Net exports are exports minus imports: NX = X - M. Positive NX is a trade surplus; negative NX is a trade deficit. Net capital outflow is domestic purchases of foreign assets minus foreign purchases of domestic assets. In the course accounting model, NX = NCO. National saving finances domestic investment and NCO, so S = I + NCO = I + NX.",
+            "node": 7
+          },
+          {
+            "role": "H2",
+            "text": "HOW TO RECOGNIZE IT",
+            "node": 8
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 11
+          },
+          {
+            "role": "LBody",
+            "text": "Exports add to NX; imports subtract from NX.",
+            "node": 12
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 14
+          },
+          {
+            "role": "LBody",
+            "text": "A domestic resident buying a foreign asset raises capital outflow and NCO.",
+            "node": 15
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 17
+          },
+          {
+            "role": "LBody",
+            "text": "A foreign resident buying a domestic asset lowers NCO and is a capital inflow.",
+            "node": 18
+          },
+          {
+            "role": "Lbl",
+            "text": "-",
+            "node": 20
+          },
+          {
+            "role": "LBody",
+            "text": "If S exceeds I, the difference is positive NCO and positive NX.",
+            "node": 21
+          },
+          {
+            "role": "H2",
+            "text": "WATCH OUT",
+            "node": 22
+          },
+          {
+            "role": "P",
+            "text": "Do not import Micro tariff or comparative-advantage analysis into these identities. Also do not call a trade deficit a mathematical error: it corresponds to negative NCO in the accounting model.",
+            "node": 23
+          },
+          {
+            "role": "H2",
+            "text": "WORKED EXAMPLE: MATCHING THE TWO SIDES",
+            "node": 24
+          },
+          {
+            "role": "H3",
+            "text": "KEY RELATIONSHIPS",
+            "node": 25
+          },
+          {
+            "role": "LBody",
+            "text": "NX = exports - imports",
+            "node": 28
+          },
+          {
+            "role": "LBody",
+            "text": "NCO = domestic foreign-asset purchases - foreign domestic-asset purchases",
+            "node": 30
+          },
+          {
+            "role": "LBody",
+            "text": "NX = NCO",
+            "node": 32
+          },
+          {
+            "role": "LBody",
+            "text": "S = I + NCO",
+            "node": 34
+          },
+          {
+            "role": "LBody",
+            "text": "Therefore S = I + NX",
+            "node": 36
+          },
+          {
+            "role": "P",
+            "text": "Exports are $300 billion and imports are $360 billion, so NX = -$60 billion. Residents buy $90 billion of foreign assets while foreigners buy $150 billion of domestic assets, so NCO = $90 - $150 = -$60 billion. If investment is $240 billion, saving is I + NCO = $180 billion.",
+            "node": 37
+          },
+          {
+            "role": "H2",
+            "text": "CHECK YOURSELF",
+            "node": 38
+          },
+          {
+            "role": "P",
+            "text": "National saving is $250 billion and investment is $210 billion. What are NCO and NX?",
+            "node": 39
+          },
+          {
+            "role": "H2",
+            "text": "READY?",
+            "node": 40
+          },
+          {
+            "role": "P",
+            "text": "Return to the game and master this concept.",
+            "node": 41
+          }
+        ],
+        "visualSource": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_52_repair\\determinism\\visual\\MACRO-52.pdf",
+        "sha256": "182eea8855aa90a7a62966603a663f161b7f5d7fd21db11bf96199269f572ea6"
+      }
+    }
+  ],
+  "machinePass": 1,
+  "blocked": 0,
+  "complete": true
+}

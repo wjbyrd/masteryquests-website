@@ -1,0 +1,502 @@
+{
+  "errors": [],
+  "transcript": [
+    {
+      "role": "H1",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "CPI and Inflation Measurement  ",
+          "sourceText": "CPI and Inflation Measurement  "
+        }
+      ],
+      "sourceText": "CPI and Inflation Measurement",
+      "text": "CPI and Inflation Measurement"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MACROECONOMICS  ",
+          "sourceText": "MACROECONOMICS  "
+        }
+      ],
+      "sourceText": "MACROECONOMICS",
+      "text": "MACROECONOMICS"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MACRO-05  ",
+          "sourceText": "MACRO-05  "
+        }
+      ],
+      "sourceText": "MACRO-05",
+      "text": "MACRO-05"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Time:  ",
+          "sourceText": "Time:  "
+        },
+        {
+          "role": "Span",
+          "text": "5 minutes  ",
+          "sourceText": "5 minutes  "
+        }
+      ],
+      "sourceText": "Time: 5 minutes",
+      "text": "Time: 5 minutes"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Outcome: Calculate CPI and inflation using a market basket.  ",
+          "sourceText": "Outcome: Calculate CPI and inflation using a market basket.  "
+        }
+      ],
+      "sourceText": "Outcome: Calculate CPI and inflation using a market basket.",
+      "text": "Outcome: Calculate CPI and inflation using a market basket."
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Difficulty:  ",
+          "sourceText": "Difficulty:  "
+        },
+        {
+          "role": "Span",
+          "text": "Intermediate  ",
+          "sourceText": "Intermediate  "
+        }
+      ],
+      "sourceText": "Difficulty: Intermediate",
+      "text": "Difficulty: Intermediate"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "THE CORE IDEA  ",
+          "sourceText": "THE CORE IDEA  "
+        }
+      ],
+      "sourceText": "THE CORE IDEA",
+      "text": "THE CORE IDEA"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "The consumer price index compares the current cost of a fixed consumer basket with its base-year cost. The index equals the current basket cost divided by the base-year basket cost, multiplied by one hundred. Inflation is the percentage change in the index between periods. Holding basket quantities fixed isolates price change from changes in what consumers buy.  ",
+          "sourceText": "The consumer price index compares the current cost of a fixed consumer basket with its base-year cost. The index equals the current basket cost divided by the base-year basket cost, multiplied by one hundred. Inflation is the percentage change in the index between periods. Holding basket quantities fixed isolates price change from changes in what consumers buy.  "
+        }
+      ],
+      "sourceText": "The consumer price index compares the current cost of a fixed consumer basket with its base-year cost. The index equals the current basket cost divided by the base-year basket cost, multiplied by one hundred. Inflation is the percentage change in the index between periods. Holding basket quantities fixed isolates price change from changes in what consumers buy.",
+      "text": "The consumer price index compares the current cost of a fixed consumer basket with its base-year cost. The index equals the current basket cost divided by the base-year basket cost, multiplied by one hundred. Inflation is the percentage change in the index between periods. Holding basket quantities fixed isolates price change from changes in what consumers buy."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "HOW TO RECOGNIZE IT  ",
+          "sourceText": "HOW TO RECOGNIZE IT  "
+        }
+      ],
+      "sourceText": "HOW TO RECOGNIZE IT",
+      "text": "HOW TO RECOGNIZE IT"
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Identify the fixed basket, its base-year cost, and its current-year cost.  ",
+          "sourceText": "Identify the fixed basket, its base-year cost, and its current-year cost.  "
+        }
+      ],
+      "sourceText": "Identify the fixed basket, its base-year cost, and its current-year cost.",
+      "text": "Identify the fixed basket, its base-year cost, and its current-year cost."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Compute the price index by comparing the current basket cost with the base-year basket cost.  ",
+          "sourceText": "Compute the price index by comparing the current basket cost with the base-year basket cost.  "
+        }
+      ],
+      "sourceText": "Compute the price index by comparing the current basket cost with the base-year basket cost.",
+      "text": "Compute the price index by comparing the current basket cost with the base-year basket cost."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Measure inflation as the percentage change in the index from one period to the next.  ",
+          "sourceText": "Measure inflation as the percentage change in the index from one period to the next.  "
+        }
+      ],
+      "sourceText": "Measure inflation as the percentage change in the index from one period to the next.",
+      "text": "Measure inflation as the percentage change in the index from one period to the next."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Keep basket quantities fixed when calculating the CPI for different years.  ",
+          "sourceText": "Keep basket quantities fixed when calculating the CPI for different years.  "
+        }
+      ],
+      "sourceText": "Keep basket quantities fixed when calculating the CPI for different years.",
+      "text": "Keep basket quantities fixed when calculating the CPI for different years."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WATCH OUT  ",
+          "sourceText": "WATCH OUT  "
+        }
+      ],
+      "sourceText": "WATCH OUT",
+      "text": "WATCH OUT"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Do not use the wrong basket cost or forget to multiply by 100. Divide the current cost of the fixed basket by its base-year cost; the index can rise or fall as prices change.  ",
+          "sourceText": "Do not use the wrong basket cost or forget to multiply by 100. Divide the current cost of the fixed basket by its base-year cost; the index can rise or fall as prices change.  "
+        }
+      ],
+      "sourceText": "Do not use the wrong basket cost or forget to multiply by 100. Divide the current cost of the fixed basket by its base-year cost; the index can rise or fall as prices change.",
+      "text": "Do not use the wrong basket cost or forget to multiply by 100. Divide the current cost of the fixed basket by its base-year cost; the index can rise or fall as prices change."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WORKED EXAMPLE: CALCULATING CPI AND INFLATION  ",
+          "sourceText": "WORKED EXAMPLE: CALCULATING CPI AND INFLATION  "
+        }
+      ],
+      "sourceText": "WORKED EXAMPLE: CALCULATING CPI AND INFLATION",
+      "text": "WORKED EXAMPLE: CALCULATING CPI AND INFLATION"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "The CPI rises from 125 to 150. The inflation rate is",
+          "sourceText": "The CPI rises from 125 to 150. The inflation rate is"
+        },
+        {
+          "role": "Formula",
+          "text": "open parenthesis 150 minus 125 close parenthesis divided by 125 times 100 equals 20 percent",
+          "sourceText": " (150 - 125)/125 x 100 = 20%"
+        },
+        {
+          "role": "Span",
+          "text": ". In a separate basket, ",
+          "sourceText": ". In a separate basket, "
+        },
+        {
+          "role": "Span",
+          "text": "base-year cost is",
+          "sourceText": "base-year cost is"
+        },
+        {
+          "role": "Formula",
+          "text": "4 times open parenthesis 10 dollars close parenthesis plus 2 times open parenthesis 20 dollars close parenthesis equals 80 dollars",
+          "sourceText": " 4($10) + 2($20) = $80"
+        },
+        {
+          "role": "Span",
+          "text": " and current cost is",
+          "sourceText": " and current cost is"
+        },
+        {
+          "role": "Formula",
+          "text": "4 times open parenthesis 12 dollars close parenthesis plus 2 times open parenthesis 25 dollars close parenthesis equals 98 dollars",
+          "sourceText": " 4($12) + 2($25) = $98"
+        },
+        {
+          "role": "Span",
+          "text": ", so CPI is",
+          "sourceText": ", so CPI is"
+        },
+        {
+          "role": "Formula",
+          "text": "open parenthesis 98 dollars divided by 80 dollars close parenthesis times 100 equals 122.5",
+          "sourceText": " ($98/$80) x 100 = 122.5"
+        },
+        {
+          "role": "Span",
+          "text": ".  ",
+          "sourceText": ".  "
+        }
+      ],
+      "sourceText": "The CPI rises from 125 to 150. The inflation rate is (150 - 125)/125 x 100 = 20%. In a separate basket, base-year cost is 4($10) + 2($20) = $80 and current cost is 4($12) + 2($25) = $98, so CPI is ($98/$80) x 100 = 122.5.",
+      "text": "The CPI rises from 125 to 150. The inflation rate is open parenthesis 150 minus 125 close parenthesis divided by 125 times 100 equals 20 percent . In a separate basket, base-year cost is 4 times open parenthesis 10 dollars close parenthesis plus 2 times open parenthesis 20 dollars close parenthesis equals 80 dollars and current cost is 4 times open parenthesis 12 dollars close parenthesis plus 2 times open parenthesis 25 dollars close parenthesis equals 98 dollars , so CPI is open parenthesis 98 dollars divided by 80 dollars close parenthesis times 100 equals 122.5 ."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "CHECK YOURSELF  ",
+          "sourceText": "CHECK YOURSELF  "
+        }
+      ],
+      "sourceText": "CHECK YOURSELF",
+      "text": "CHECK YOURSELF"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A basket costs",
+          "sourceText": "A basket costs"
+        },
+        {
+          "role": "Formula",
+          "text": "400 dollars",
+          "sourceText": " $400"
+        },
+        {
+          "role": "Span",
+          "text": " in the base year and",
+          "sourceText": " in the base year and"
+        },
+        {
+          "role": "Formula",
+          "text": "500 dollars",
+          "sourceText": " $500"
+        },
+        {
+          "role": "Span",
+          "text": " today. What is today",
+          "sourceText": " today. What is today"
+        },
+        {
+          "role": "Span",
+          "text": "'",
+          "sourceText": "'"
+        },
+        {
+          "role": "Span",
+          "text": "s CPI?  ",
+          "sourceText": "s CPI?  "
+        }
+      ],
+      "sourceText": "A basket costs $400 in the base year and $500 today. What is today's CPI?",
+      "text": "A basket costs 400 dollars in the base year and 500 dollars today. What is today's CPI?"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "READY?  ",
+          "sourceText": "READY?  "
+        }
+      ],
+      "sourceText": "READY?",
+      "text": "READY?"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Return to the game and master this concept.  ",
+          "sourceText": "Return to the game and master this concept.  "
+        }
+      ],
+      "sourceText": "Return to the game and master this concept.",
+      "text": "Return to the game and master this concept."
+    }
+  ],
+  "roles": [
+    "/Document",
+    "/H1",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/H2",
+    "/P",
+    "/H2",
+    "/L",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/H2",
+    "/P",
+    "/H2",
+    "/P",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/H2",
+    "/P",
+    "/Formula",
+    "/Formula",
+    "/H2",
+    "/P"
+  ],
+  "linkedContentCount": 43,
+  "figureAlternatives": [],
+  "formulas": [
+    {
+      "text": "(150 - 125)/125 x 100 = 20%",
+      "alternative": "open parenthesis 150 minus 125 close parenthesis divided by 125 times 100 equals 20 percent",
+      "parent": "/P"
+    },
+    {
+      "text": "4($10) + 2($20) = $80",
+      "alternative": "4 times open parenthesis 10 dollars close parenthesis plus 2 times open parenthesis 20 dollars close parenthesis equals 80 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "4($12) + 2($25) = $98",
+      "alternative": "4 times open parenthesis 12 dollars close parenthesis plus 2 times open parenthesis 25 dollars close parenthesis equals 98 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "($98/$80) x 100 = 122.5",
+      "alternative": "open parenthesis 98 dollars divided by 80 dollars close parenthesis times 100 equals 122.5",
+      "parent": "/P"
+    },
+    {
+      "text": "$400",
+      "alternative": "400 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "$500",
+      "alternative": "500 dollars",
+      "parent": "/P"
+    }
+  ],
+  "fonts": [
+    {
+      "font": "/AAAAAA+Arimo-Bold",
+      "embedded": true,
+      "unicodeMap": true
+    },
+    {
+      "font": "/AAAAAA+Arimo-Regular",
+      "embedded": true,
+      "unicodeMap": true
+    }
+  ],
+  "rawReadingSequence": [
+    "CPI and Inflation Measurement",
+    "MACROECONOMICS",
+    "MACRO-05",
+    "Time: 5 minutes",
+    "Outcome: Calculate CPI and inflation using a market basket.",
+    "Difficulty: Intermediate",
+    "THE CORE IDEA",
+    "The consumer price index compares the current cost of a fixed consumer basket with its base-year cost. The index equals the current basket cost divided by the base-year basket cost, multiplied by one hundred. Inflation is the percentage change in the index between periods. Holding basket quantities fixed isolates price change from changes in what consumers buy.",
+    "HOW TO RECOGNIZE IT",
+    "•",
+    "Identify the fixed basket, its base-year cost, and its current-year cost.",
+    "•",
+    "Compute the price index by comparing the current basket cost with the base-year basket cost.",
+    "•",
+    "Measure inflation as the percentage change in the index from one period to the next.",
+    "•",
+    "Keep basket quantities fixed when calculating the CPI for different years.",
+    "WATCH OUT",
+    "Do not use the wrong basket cost or forget to multiply by 100. Divide the current cost of the fixed basket by its base-year cost; the index can rise or fall as prices change.",
+    "WORKED EXAMPLE: CALCULATING CPI AND INFLATION",
+    "The CPI rises from 125 to 150. The inflation rate is (150 - 125)/125 x 100 = 20%. In a separate basket, base-year cost is 4($10) + 2($20) = $80 and current cost is 4($12) + 2($25) = $98, so CPI is ($98/$80) x 100 = 122.5.",
+    "CHECK YOURSELF",
+    "A basket costs $400 in the base year and $500 today. What is today's CPI?",
+    "READY?",
+    "Return to the game and master this concept."
+  ]
+}

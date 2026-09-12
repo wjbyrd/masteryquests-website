@@ -1,0 +1,667 @@
+{
+  "errors": [],
+  "transcript": [
+    {
+      "role": "H1",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Real Exchange Rates and Purchasing Power    ",
+          "sourceText": "Real Exchange Rates and Purchasing Power    "
+        }
+      ],
+      "sourceText": "Real Exchange Rates and Purchasing Power",
+      "text": "Real Exchange Rates and Purchasing Power"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MACROECONOMICS  ",
+          "sourceText": "MACROECONOMICS  "
+        }
+      ],
+      "sourceText": "MACROECONOMICS",
+      "text": "MACROECONOMICS"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MACRO-54  ",
+          "sourceText": "MACRO-54  "
+        }
+      ],
+      "sourceText": "MACRO-54",
+      "text": "MACRO-54"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Time:  ",
+          "sourceText": "Time:  "
+        },
+        {
+          "role": "Span",
+          "text": "6 minutes  ",
+          "sourceText": "6 minutes  "
+        }
+      ],
+      "sourceText": "Time: 6 minutes",
+      "text": "Time: 6 minutes"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Outcome:  ",
+          "sourceText": "Outcome:  "
+        },
+        {
+          "role": "Span",
+          "text": "Calculate the real exchange rate and use  ",
+          "sourceText": "Calculate the real exchange rate and use  "
+        },
+        {
+          "role": "Span",
+          "text": "PPP as a long-run benchmark.  ",
+          "sourceText": "PPP as a long-run benchmark.  "
+        }
+      ],
+      "sourceText": "Outcome: Calculate the real exchange rate and use PPP as a long-run benchmark.",
+      "text": "Outcome: Calculate the real exchange rate and use PPP as a long-run benchmark."
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Difficulty:  ",
+          "sourceText": "Difficulty:  "
+        },
+        {
+          "role": "Span",
+          "text": "Intermediate  ",
+          "sourceText": "Intermediate  "
+        }
+      ],
+      "sourceText": "Difficulty: Intermediate",
+      "text": "Difficulty: Intermediate"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "THE CORE IDEA  ",
+          "sourceText": "THE CORE IDEA  "
+        }
+      ],
+      "sourceText": "THE CORE IDEA",
+      "text": "THE CORE IDEA"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Let e be foreign currency per domestic currency, P the domestic price level, and P* the foreign price level. The course  ",
+          "sourceText": "Let e be foreign currency per domestic currency, P the domestic price level, and P* the foreign price level. The course  "
+        },
+        {
+          "role": "Span",
+          "text": "convention is",
+          "sourceText": "convention is"
+        },
+        {
+          "role": "Formula",
+          "text": "epsilon equals e times P divided by P star",
+          "sourceText": " epsilon = e x P / P*"
+        },
+        {
+          "role": "Span",
+          "text": ". A higher epsilon is a real appreciation: domestic goods are relatively more expensive.  ",
+          "sourceText": ". A higher epsilon is a real appreciation: domestic goods are relatively more expensive.  "
+        },
+        {
+          "role": "Span",
+          "text": "Purchasing-power parity suggests epsilon tends toward 1 when comparable traded goods can be arbitraged, but  ",
+          "sourceText": "Purchasing-power parity suggests epsilon tends toward 1 when comparable traded goods can be arbitraged, but  "
+        },
+        {
+          "role": "Span",
+          "text": "transport costs, trade barriers, nontraded goods, and market frictions prevent exact short-run equality.    ",
+          "sourceText": "transport costs, trade barriers, nontraded goods, and market frictions prevent exact short-run equality.    "
+        }
+      ],
+      "sourceText": "Let e be foreign currency per domestic currency, P the domestic price level, and P* the foreign price level. The course convention is epsilon = e x P / P*. A higher epsilon is a real appreciation: domestic goods are relatively more expensive. Purchasing-power parity suggests epsilon tends toward 1 when comparable traded goods can be arbitraged, but transport costs, trade barriers, nontraded goods, and market frictions prevent exact short-run equality.",
+      "text": "Let e be foreign currency per domestic currency, P the domestic price level, and P* the foreign price level. The course convention is epsilon equals e times P divided by P star . A higher epsilon is a real appreciation: domestic goods are relatively more expensive. Purchasing-power parity suggests epsilon tends toward 1 when comparable traded goods can be arbitraged, but transport costs, trade barriers, nontraded goods, and market frictions prevent exact short-run equality."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "HOW TO RECOGNIZE IT  ",
+          "sourceText": "HOW TO RECOGNIZE IT  "
+        }
+      ],
+      "sourceText": "HOW TO RECOGNIZE IT",
+      "text": "HOW TO RECOGNIZE IT"
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "-  ",
+          "sourceText": "-  "
+        }
+      ],
+      "sourceText": "-",
+      "text": "-"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Nominal e compares currencies; real epsilon compares basket prices after conversion.  ",
+          "sourceText": "Nominal e compares currencies; real epsilon compares basket prices after conversion.  "
+        }
+      ],
+      "sourceText": "Nominal e compares currencies; real epsilon compares basket prices after conversion.",
+      "text": "Nominal e compares currencies; real epsilon compares basket prices after conversion."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "-  ",
+          "sourceText": "-  "
+        }
+      ],
+      "sourceText": "-",
+      "text": "-"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A higher e or P raises epsilon; a higher P* lowers epsilon, other things equal.  ",
+          "sourceText": "A higher e or P raises epsilon; a higher P* lowers epsilon, other things equal.  "
+        }
+      ],
+      "sourceText": "A higher e or P raises epsilon; a higher P* lowers epsilon, other things equal.",
+      "text": "A higher e or P raises epsilon; a higher P* lowers epsilon, other things equal."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "-  ",
+          "sourceText": "-  "
+        }
+      ],
+      "sourceText": "-",
+      "text": "-"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Real appreciation tends to reduce exports and raise imports.  ",
+          "sourceText": "Real appreciation tends to reduce exports and raise imports.  "
+        }
+      ],
+      "sourceText": "Real appreciation tends to reduce exports and raise imports.",
+      "text": "Real appreciation tends to reduce exports and raise imports."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "-  ",
+          "sourceText": "-  "
+        }
+      ],
+      "sourceText": "-",
+      "text": "-"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Relative PPP links currency changes to inflation differentials over longer horizons.    ",
+          "sourceText": "Relative PPP links currency changes to inflation differentials over longer horizons.    "
+        }
+      ],
+      "sourceText": "Relative PPP links currency changes to inflation differentials over longer horizons.",
+      "text": "Relative PPP links currency changes to inflation differentials over longer horizons."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WATCH OUT  ",
+          "sourceText": "WATCH OUT  "
+        }
+      ],
+      "sourceText": "WATCH OUT",
+      "text": "WATCH OUT"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Do not invert the formula by importing another textbook's quotation. Write e's units first. Here e is foreign currency  ",
+          "sourceText": "Do not invert the formula by importing another textbook's quotation. Write e's units first. Here e is foreign currency  "
+        },
+        {
+          "role": "Span",
+          "text": "per domestic currency, so",
+          "sourceText": "per domestic currency, so"
+        },
+        {
+          "role": "Formula",
+          "text": "epsilon equals the fraction e times P over P star",
+          "sourceText": " epsilon = eP/P*"
+        },
+        {
+          "role": "Span",
+          "text": ".    ",
+          "sourceText": ".    "
+        }
+      ],
+      "sourceText": "Do not invert the formula by importing another textbook's quotation. Write e's units first. Here e is foreign currency per domestic currency, so epsilon = eP/P*.",
+      "text": "Do not invert the formula by importing another textbook's quotation. Write e's units first. Here e is foreign currency per domestic currency, so epsilon equals the fraction e times P over P star ."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WORKED EXAMPLE: CONVERTING TWO BASKETS  ",
+          "sourceText": "WORKED EXAMPLE: CONVERTING TWO BASKETS  "
+        }
+      ],
+      "sourceText": "WORKED EXAMPLE: CONVERTING TWO BASKETS",
+      "text": "WORKED EXAMPLE: CONVERTING TWO BASKETS"
+    },
+    {
+      "role": "H3",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "KEY RELATIONSHIPS  ",
+          "sourceText": "KEY RELATIONSHIPS  "
+        }
+      ],
+      "sourceText": "KEY RELATIONSHIPS",
+      "text": "KEY RELATIONSHIPS"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "e:",
+          "sourceText": "e:"
+        },
+        {
+          "role": "Formula",
+          "text": "foreign currency divided by domestic currency",
+          "sourceText": " foreign currency / domestic  currency  "
+        }
+      ],
+      "sourceText": "e: foreign currency / domestic currency",
+      "text": "e: foreign currency divided by domestic currency"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Formula",
+          "text": "epsilon equals e times P divided by P star",
+          "sourceText": "epsilon = e x P / P*  "
+        }
+      ],
+      "sourceText": "epsilon = e x P / P*",
+      "text": "epsilon equals e times P divided by P star"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Formula",
+          "text": "Higher epsilon equals real appreciation",
+          "sourceText": "Higher epsilon = real appreciation  "
+        }
+      ],
+      "sourceText": "Higher epsilon = real appreciation",
+      "text": "Higher epsilon equals real appreciation"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "PPP benchmark: epsilon near 1  ",
+          "sourceText": "PPP benchmark: epsilon near 1  "
+        }
+      ],
+      "sourceText": "PPP benchmark: epsilon near 1",
+      "text": "PPP benchmark: epsilon near 1"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Approx.:",
+          "sourceText": "Approx.:"
+        },
+        {
+          "role": "Formula",
+          "text": "percentage change in epsilon equals percentage change in e plus domestic inflation minus foreign inflation",
+          "sourceText": " % change epsilon = %e +  domestic inflation - foreign inflation  "
+        }
+      ],
+      "sourceText": "Approx.: % change epsilon = %e + domestic inflation - foreign inflation",
+      "text": "Approx.: percentage change in epsilon equals percentage change in e plus domestic inflation minus foreign inflation"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A U.S. basket costs",
+          "sourceText": "A U.S. basket costs"
+        },
+        {
+          "role": "Formula",
+          "text": "50 dollars",
+          "sourceText": " $50"
+        },
+        {
+          "role": "Span",
+          "text": ", a comparable foreign basket costs 40  ",
+          "sourceText": ", a comparable foreign basket costs 40  "
+        },
+        {
+          "role": "Span",
+          "text": "foreign units, and",
+          "sourceText": "foreign units, and"
+        },
+        {
+          "role": "Formula",
+          "text": "e equals 0.80",
+          "sourceText": " e = 0.80"
+        },
+        {
+          "role": "Span",
+          "text": " foreign units per dollar. Then",
+          "sourceText": " foreign units per dollar. Then"
+        },
+        {
+          "role": "Formula",
+          "text": "epsilon equals 0.80 times 50 divided by 40 equals 1.00",
+          "sourceText": " epsilon =  0.80 x 50 / 40 = 1.00"
+        },
+        {
+          "role": "Span",
+          "text": ". If the U.S. price rises to",
+          "sourceText": ". If the U.S. price rises to"
+        },
+        {
+          "role": "Formula",
+          "text": "55 dollars",
+          "sourceText": " $55"
+        },
+        {
+          "role": "Span",
+          "text": " with e and P*  ",
+          "sourceText": " with e and P*  "
+        },
+        {
+          "role": "Span",
+          "text": "fixed, epsilon becomes 1.10: a",
+          "sourceText": "fixed, epsilon becomes 1.10: a"
+        },
+        {
+          "role": "Formula",
+          "text": "10 percent",
+          "sourceText": " 10%"
+        },
+        {
+          "role": "Span",
+          "text": " real appreciation.    ",
+          "sourceText": " real appreciation.    "
+        }
+      ],
+      "sourceText": "A U.S. basket costs $50, a comparable foreign basket costs 40 foreign units, and e = 0.80 foreign units per dollar. Then epsilon = 0.80 x 50 / 40 = 1.00. If the U.S. price rises to $55 with e and P* fixed, epsilon becomes 1.10: a 10% real appreciation.",
+      "text": "A U.S. basket costs 50 dollars , a comparable foreign basket costs 40 foreign units, and e equals 0.80 foreign units per dollar. Then epsilon equals 0.80 times 50 divided by 40 equals 1.00 . If the U.S. price rises to 55 dollars with e and P* fixed, epsilon becomes 1.10: a 10 percent real appreciation."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "CHECK YOURSELF  ",
+          "sourceText": "CHECK YOURSELF  "
+        }
+      ],
+      "sourceText": "CHECK YOURSELF",
+      "text": "CHECK YOURSELF"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "With e and P fixed, foreign prices rise. Does epsilon rise or fall under the course formula?  ",
+          "sourceText": "With e and P fixed, foreign prices rise. Does epsilon rise or fall under the course formula?  "
+        }
+      ],
+      "sourceText": "With e and P fixed, foreign prices rise. Does epsilon rise or fall under the course formula?",
+      "text": "With e and P fixed, foreign prices rise. Does epsilon rise or fall under the course formula?"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "READY?  ",
+          "sourceText": "READY?  "
+        }
+      ],
+      "sourceText": "READY?",
+      "text": "READY?"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Return to the game and master this concept.  ",
+          "sourceText": "Return to the game and master this concept.  "
+        }
+      ],
+      "sourceText": "Return to the game and master this concept.",
+      "text": "Return to the game and master this concept."
+    }
+  ],
+  "roles": [
+    "/Document",
+    "/H1",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/H2",
+    "/P",
+    "/Formula",
+    "/H2",
+    "/L",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/H2",
+    "/P",
+    "/Formula",
+    "/H2",
+    "/H3",
+    "/L",
+    "/LI",
+    "/LBody",
+    "/Formula",
+    "/LI",
+    "/LBody",
+    "/Formula",
+    "/LI",
+    "/LBody",
+    "/Formula",
+    "/LI",
+    "/LBody",
+    "/LI",
+    "/LBody",
+    "/Formula",
+    "/P",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/Formula",
+    "/H2",
+    "/P",
+    "/H2",
+    "/P"
+  ],
+  "linkedContentCount": 60,
+  "figureAlternatives": [],
+  "formulas": [
+    {
+      "text": "epsilon = e x P / P*",
+      "alternative": "epsilon equals e times P divided by P star",
+      "parent": "/P"
+    },
+    {
+      "text": "epsilon = eP/P*",
+      "alternative": "epsilon equals the fraction e times P over P star",
+      "parent": "/P"
+    },
+    {
+      "text": "foreign currency / domestic currency",
+      "alternative": "foreign currency divided by domestic currency",
+      "parent": "/LBody"
+    },
+    {
+      "text": "epsilon = e x P / P*",
+      "alternative": "epsilon equals e times P divided by P star",
+      "parent": "/LBody"
+    },
+    {
+      "text": "Higher epsilon = real appreciation",
+      "alternative": "Higher epsilon equals real appreciation",
+      "parent": "/LBody"
+    },
+    {
+      "text": "% change epsilon = %e + domestic inflation - foreign inflation",
+      "alternative": "percentage change in epsilon equals percentage change in e plus domestic inflation minus foreign inflation",
+      "parent": "/LBody"
+    },
+    {
+      "text": "$50",
+      "alternative": "50 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "e = 0.80",
+      "alternative": "e equals 0.80",
+      "parent": "/P"
+    },
+    {
+      "text": "epsilon = 0.80 x 50 / 40 = 1.00",
+      "alternative": "epsilon equals 0.80 times 50 divided by 40 equals 1.00",
+      "parent": "/P"
+    },
+    {
+      "text": "$55",
+      "alternative": "55 dollars",
+      "parent": "/P"
+    },
+    {
+      "text": "10%",
+      "alternative": "10 percent",
+      "parent": "/P"
+    }
+  ],
+  "fonts": [
+    {
+      "font": "/AAAAAA+BitstreamVeraSans-Bold",
+      "embedded": true,
+      "unicodeMap": true
+    },
+    {
+      "font": "/AAAAAA+BitstreamVeraSans-Roman",
+      "embedded": true,
+      "unicodeMap": true
+    }
+  ],
+  "rawReadingSequence": [
+    "Real Exchange Rates and Purchasing Power",
+    "MACROECONOMICS",
+    "MACRO-54",
+    "Time: 6 minutes",
+    "Outcome: Calculate the real exchange rate and use PPP as a long-run benchmark.",
+    "Difficulty: Intermediate",
+    "THE CORE IDEA",
+    "Let e be foreign currency per domestic currency, P the domestic price level, and P* the foreign price level. The course convention is epsilon = e x P / P*. A higher epsilon is a real appreciation: domestic goods are relatively more expensive. Purchasing-power parity suggests epsilon tends toward 1 when comparable traded goods can be arbitraged, but transport costs, trade barriers, nontraded goods, and market frictions prevent exact short-run equality.",
+    "HOW TO RECOGNIZE IT",
+    "-",
+    "Nominal e compares currencies; real epsilon compares basket prices after conversion.",
+    "-",
+    "A higher e or P raises epsilon; a higher P* lowers epsilon, other things equal.",
+    "-",
+    "Real appreciation tends to reduce exports and raise imports.",
+    "-",
+    "Relative PPP links currency changes to inflation differentials over longer horizons.",
+    "WATCH OUT",
+    "Do not invert the formula by importing another textbook's quotation. Write e's units first. Here e is foreign currency per domestic currency, so epsilon = eP/P*.",
+    "WORKED EXAMPLE: CONVERTING TWO BASKETS",
+    "KEY RELATIONSHIPS",
+    "e: foreign currency / domestic currency",
+    "epsilon = e x P / P*",
+    "Higher epsilon = real appreciation",
+    "PPP benchmark: epsilon near 1",
+    "Approx.: % change epsilon = %e + domestic inflation - foreign inflation",
+    "A U.S. basket costs $50, a comparable foreign basket costs 40 foreign units, and e = 0.80 foreign units per dollar. Then epsilon = 0.80 x 50 / 40 = 1.00. If the U.S. price rises to $55 with e and P* fixed, epsilon becomes 1.10: a 10% real appreciation.",
+    "CHECK YOURSELF",
+    "With e and P fixed, foreign prices rise. Does epsilon rise or fall under the course formula?",
+    "READY?",
+    "Return to the game and master this concept."
+  ]
+}

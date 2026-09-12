@@ -107,6 +107,9 @@ def inspect(path,source=None,reference=None,metadata=None):
             if any(clean(a.extract_text())!=clean(b.extract_text()) for a,b in zip(reader.pages,before.pages)):errors.append('CONTENT_CHANGED_OR_DUPLICATED')
             if any(list(a.mediabox)!=list(b.mediabox) for a,b in zip(reader.pages,before.pages)):errors.append('PAGE_GEOMETRY_CHANGED')
     if metadata:
+        if source:
+            from formula_coverage import check
+            errors.extend(check(source,metadata))
         if metadata.get('assetSourcePath') and sha(metadata['assetSourcePath'])!=metadata.get('assetSourceSha256'):errors.append('STALE_SOURCE_ASSET_DESCRIPTION')
         expected_alt=metadata.get('graphAlternative')
         if metadata.get('descriptionKey'):
@@ -119,7 +122,7 @@ def inspect(path,source=None,reference=None,metadata=None):
         actual=[(compact(f['text']),f['alternative']) for f in formulas]
         expected=[(compact(f['text']),f['alternative']) for f in expected_formulas]
         if sorted(actual)!=sorted(expected):errors.append('FORMULA_STRUCTURE_TEXT_OR_ALTERNATIVE_MISMATCH')
-        if any(f['parent'] not in ('/P','/LBody') for f in formulas if (compact(f['text']),f['alternative']) in [(compact(x['text']),x['alternative']) for x in metadata.get('inlineFormulas',[])]):errors.append('INLINE_FORMULA_PARENT_INVALID')
+        if any(f['parent'] not in ('/P','/LBody','/H1','/H2','/H3') for f in formulas if (compact(f['text']),f['alternative']) in [(compact(x['text']),x['alternative']) for x in metadata.get('inlineFormulas',[])]):errors.append('INLINE_FORMULA_PARENT_INVALID')
         if metadata.get('tableRequired'):
             if len(tables)!=1:errors.append('MISSING_SEMANTIC_TABLE')
             else:
@@ -171,7 +174,16 @@ def inspect(path,source=None,reference=None,metadata=None):
                            ('H2','CHECK YOURSELF'),('H2','READY?')]
         actual_headings=[(b['role'],b['sourceText']) for b in reading if b['role'] in ('H1','H2')]
         if actual_headings!=expected_headings:errors.append('HEADING_STRUCTURE_CHANGED')
-        if roles.count('/L')!=1 or roles.count('/LI')!=len(source['content']['recognition']):errors.append('LIST_STRUCTURE_CHANGED')
+        card=(metadata or {}).get('instructionCard')
+        from tag_pilot import card_items
+        expected_items=[clean(text) for _,text in card_items(card)] if card else []
+        if roles.count('/L')!=1+bool(card) or roles.count('/LI')!=len(source['content']['recognition'])+len(expected_items):errors.append('LIST_STRUCTURE_CHANGED')
+        if card:
+            sequence=[b['sourceText'] for b in reading]
+            try:
+                pos=sequence.index(card['heading'])
+                if sequence[pos+1:pos+1+len(expected_items)]!=expected_items:errors.append('CARD_READING_ORDER_CHANGED')
+            except ValueError:errors.append('MISSING_INSTRUCTION_CARD')
     return {'errors':sorted(set(errors)),'transcript':reading,'roles':roles,'linkedContentCount':len(linked),'figureAlternatives':figures,'formulas':formulas,'fonts':font_report,'rawReadingSequence':[clean(x) for x in raw_blocks]}
 
 def check_copies(paths,expected_sha,expected_size):

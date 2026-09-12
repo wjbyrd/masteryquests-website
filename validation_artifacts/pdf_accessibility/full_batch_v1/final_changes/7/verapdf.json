@@ -1,0 +1,63 @@
+{"report":{"buildInformation":{"releaseDetails":[{
+  "id" : "core",
+  "version" : "1.28.2",
+  "buildDate" : 1752610020000
+},{
+  "id" : "validation-model",
+  "version" : "1.28.2",
+  "buildDate" : 1752610320000
+},{
+  "id" : "gui",
+  "version" : "1.28.2",
+  "buildDate" : 1752613140000
+}]},"jobs":[{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\7\\after\\MICRO-39.pdf",
+  "size" : 730115
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 3737,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789168432760,
+  "finish" : 1789168433365,
+  "difference" : 605,
+  "duration" : "00:00:00.605"
+}}],"batchSummary":{
+  "duration" : {
+    "start" : 1789168432678,
+    "finish" : 1789168433391,
+    "difference" : 713,
+    "duration" : "00:00:00.713"
+  },
+  "totalJobs" : 1,
+  "outOfMemory" : 0,
+  "veraExceptions" : 0,
+  "featuresSummary" : {
+    "totalJobCount" : 0,
+    "failedJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "repairSummary" : {
+    "totalJobCount" : 0,
+    "failedJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "multiJob" : false,
+  "failedParsingJobs" : 0,
+  "validationSummary" : {
+    "totalJobCount" : 1,
+    "failedJobCount" : 0,
+    "nonCompliantPdfaCount" : 0,
+    "compliantPdfaCount" : 1,
+    "successfulJobCount" : 1
+  },
+  "failedEncryptedJobs" : 0
+}}}

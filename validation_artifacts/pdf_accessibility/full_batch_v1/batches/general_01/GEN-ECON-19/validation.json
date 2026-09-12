@@ -1,0 +1,167 @@
+[
+  {
+    "code": "GEN-ECON-19",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-19\\after\\GEN-ECON-19.pdf",
+    "tagCount": 38,
+    "mcids": 48,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Price Ceilings",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "GENERAL ECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "GEN-ECON-19",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Distinguish binding and nonbinding ceilings and analyze shortages and rationing.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Beginner",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "A price ceiling sets a legal maximum price and is binding only when it lies below the market equilibrium price. A binding ceiling keeps price from rising to equilibrium, so quantity demanded exceeds quantity supplied and a shortage develops. A ceiling at or above equilibrium is nonbinding because the market can still reach its equilibrium price.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Compare the legal maximum price with the market equilibrium price.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "A ceiling below equilibrium is binding and creates excess demand.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "At the ceiling price, read quantity demanded and quantity supplied; their difference is the shortage.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A ceiling at or above equilibrium is nonbinding and does not change the market outcome.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to assume that every price ceiling is binding. A price ceiling above equilibrium is not binding. Since $40 is above the $30 equilibrium price, it does not affect the market.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: BINDING PRICE CEILING",
+        "node": 24
+      },
+      {
+        "role": "Figure",
+        "text": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve intersect at price $30 and quantity 200. Dashed guides also show demand and supply quantities at prices $10, $20, $40, and $50: at $10, supply is 100 and demand is 300; at $20, supply is 150 and demand is 250; at $40, supply is 250 and demand is 150; at $50, supply is 300 and demand is 100.",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "The market equilibrium is $30 and 200 units. A binding ceiling of $20 holds price below equilibrium; buyers demand 250 units while sellers supply 150. The resulting shortage is 250 - 150 = 100 units, so some willing buyers cannot purchase at the controlled price.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "At a binding price ceiling, Qd = 90 and Qs = 60. What is the shortage?",
+        "node": 28
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 29
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 30
+      }
+    ],
+    "visualSource": null,
+    "sha256": "9a13a124bf65866bb77c43a3b7dc9accc2589d37397454e25f254cabc3550cb6",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "0fc36ed31ccf6cccac5367bd881a4adbdcc8496e5a09c30778989d22f6bf404e",
+    "semanticsSha256": "ec175c6006ceb8a6ac057facf2bdf287f8f8b9a5671172554fe324a8b73df015",
+    "baselineSha256": "5e0dda5f6099a2f900bccce6f982408cd589d6779ed98ccc752a8c7f9ab60de9",
+    "resourceSemanticsSha256": "62d8eb266597ac09f0ce807a9687eccf88f430578f7a29d5566dde4ee77f00d4",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-19\\verapdf.json",
+    "validatorReportSha256": "3635564ebf4d52689b9c75380c19c093c5a54e3cffe5696498f30d9a8d5b17aa",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": true,
+    "textWhitespaceOnlyEqual": true,
+    "changedPixels": 0,
+    "differenceBounds": null,
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  }
+]

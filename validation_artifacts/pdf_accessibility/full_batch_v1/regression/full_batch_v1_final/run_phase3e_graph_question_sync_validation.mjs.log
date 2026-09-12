@@ -1,0 +1,80 @@
+{
+  "phase": "phase3e-market-gate-graph-sync-v1",
+  "ok": true,
+  "composerVersion": "4.5s.3k",
+  "recipeSchemaVersion": "1.6.0",
+  "canonicalQuestionCount": 9779,
+  "synchronizedQuestions": 48,
+  "difficulty": {
+    "medium": 7,
+    "hard": 16,
+    "elite": 20,
+    "legendary": 5
+  },
+  "types": {
+    "graph_calculation": 11,
+    "graph_interpretation": 10,
+    "graph_integration": 17,
+    "graph_trap": 10
+  },
+  "conceptIds": [
+    "production-possibilities-frontier",
+    "supply",
+    "demand",
+    "market-equilibrium",
+    "binding-price-ceilings",
+    "binding-price-floors",
+    "tax-wedges-and-revenue",
+    "tax-incidence",
+    "statutory-versus-economic-tax-incidence"
+  ],
+  "phaseAssetRegistrations": 21,
+  "physicalAssetsCopied": 0,
+  "cleanedGraphs": 11,
+  "generatedBytes": 7497142,
+  "inlineScripts": 1,
+  "generatedArtifact": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\full_batch_v1\\regression\\full_batch_v1_final\\tests\\phase3e-market-gate-sample.html",
+  "modes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "issues": []
+}

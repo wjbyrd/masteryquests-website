@@ -1,0 +1,218 @@
+{
+  "reviewer": "Codex source review, not human AT",
+  "coveredDocuments": 151,
+  "exceptions": {
+    "GEN-ECON-11": [
+      {
+        "sourceField": "worked",
+        "compactStart": 269,
+        "symbol": "-",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "worked",
+        "compactStart": 319,
+        "symbol": "-",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "GEN-ECON-18": [
+      {
+        "sourceField": "check",
+        "compactStart": 54,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 61,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MICRO-17": [
+      {
+        "sourceField": "outcome",
+        "compactStart": 39,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "title",
+        "compactStart": 30,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MICRO-30": [
+      {
+        "sourceField": "core",
+        "compactStart": 279,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 35,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MICRO-33": [
+      {
+        "sourceField": "core",
+        "compactStart": 177,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 89,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "recognition/0",
+        "compactStart": 51,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MICRO-44": [
+      {
+        "sourceField": "core",
+        "compactStart": 26,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "outcome",
+        "compactStart": 29,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "title",
+        "compactStart": 26,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MICRO-55": [
+      {
+        "sourceField": "check",
+        "compactStart": 51,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "check",
+        "compactStart": 75,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MACRO-18": [
+      {
+        "sourceField": "outcome",
+        "compactStart": 36,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MACRO-19": [
+      {
+        "sourceField": "core",
+        "compactStart": 279,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "core",
+        "compactStart": 434,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "watch",
+        "compactStart": 189,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "recognition/0",
+        "compactStart": 60,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "recognition/4",
+        "compactStart": 88,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MACRO-34": [
+      {
+        "sourceField": "recognition/1",
+        "compactStart": 51,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "recognition/2",
+        "compactStart": 49,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MACRO-50": [
+      {
+        "sourceField": "worked",
+        "compactStart": 88,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ],
+    "MACRO-56": [
+      {
+        "sourceField": "recognition/3",
+        "compactStart": 40,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      },
+      {
+        "sourceField": "recognition/3",
+        "compactStart": 61,
+        "symbol": "/",
+        "reason": "Reviewed prose separator, not a mathematical operator"
+      }
+    ]
+  },
+  "corrections": {
+    "MICRO-07": [
+      [
+        "−0.5",
+        "negative 0.5"
+      ]
+    ],
+    "MICRO-16": [
+      [
+        "tariff×imports",
+        "tariff times imports"
+      ]
+    ],
+    "MICRO-39": [
+      [
+        "(P−ATC)Q",
+        "open parenthesis P minus A T C close parenthesis times Q"
+      ]
+    ],
+    "MACRO-48": [
+      [
+        "Interest burden = interest / chosen base",
+        "Interest burden equals interest divided by chosen base"
+      ]
+    ]
+  }
+}
