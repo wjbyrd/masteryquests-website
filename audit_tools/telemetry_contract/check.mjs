@@ -49,11 +49,11 @@ await test('Configuration, content and asset fingerprints react only to analytic
  const d=fixture();d.values.questionBanks.easy[0].options[0]='DIFFERENT_AUTHORED_OPTION';assert.notEqual(d.api.build().contentRevision,a.api.build().contentRevision);
  const changed=JSON.parse(JSON.stringify(registry));changed.games['cost-directive'].assetRevision='a'.repeat(64);assert.notEqual(fixture(new Map(),changed).api.build().buildRevision,a.api.build().buildRevision);
 });
-await test('Malformed null queue head cannot block a valid record; stored diagnostics are allowlisted',async()=>{
+await test('Legacy family queue is not replayed or adopted; new build diagnostics are allowlisted',async()=>{
  const source=clientCode.replace('const storage=new Map()', 'const storage=new Map([["anonymousTelemetry:queue:v1","[null]"],["anonymousTelemetry:quality:v1",JSON.stringify({storageFailures:2,selectedText:"PRIVATE_SENTINEL"})]])');
  const box=vm.createContext({vm,fs,path,webcrypto,root,URLSearchParams,AbortController,console,assert});vm.runInContext(source+'\nmakeClient=client;',box);const c=box.makeClient();const good=c.api.emit('synthetic_good',{});
  c.context.fetch=async(url,opts)=>{const events=JSON.parse(opts.body).events;return events.some(e=>e===null)?{ok:false,status:400}:{ok:true,status:202,json:async()=>({acknowledgedEventIds:events.map(e=>e.eventId)})};};
- assert(!JSON.stringify(c.events()).includes('PRIVATE_SENTINEL'));await c.api.flush();await c.api.flush();await c.api.flush();assert.equal(c.events().length,0);assert.equal(c.api.getQuality().permanentlyRejected,1);assert(good.eventId);
+ assert(!JSON.stringify(c.events()).includes('PRIVATE_SENTINEL'));await c.api.flush();await c.api.flush();await c.api.flush();assert.equal(c.events().length,0);assert.equal(c.api.getQuality().permanentlyRejected,0);assert(good.eventId);
 });
 
 const report={passed:results.filter(r=>r.status==='PASS').length,failed:results.filter(r=>r.status==='FAIL').length,results};fs.writeFileSync(path.join(out,'targeted-results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(report.failed)process.exitCode=1;

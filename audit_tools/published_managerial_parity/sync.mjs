@@ -12,7 +12,7 @@ export function localClient(root){
  const fn=name=>{const match=source.match(new RegExp('^  function '+name+'\\([^]*?^  }','m'));assert(match,`Missing maintained function ${name}`);return match[0];};
  const tracker=between('  // BEGIN GENERATED COMPOSER BEHAVIOR','  function readJSON(');
  const csv=['installLocalTelemetryColumns','installLocalCsvDownload','localTelemetryTail','attachLocalMeasurements'].map(fn).join('\n\n');
- let hooks=fn('installHooks');
+ let hooks=fn('installHooks').replace('    if(IS_COMPOSER){installComposerHooks();return;}\n','');
  hooks=hooks.replace('mapGameEvent(data || {},measurements)','localEvent(data || {})').replace('    wrapAfter("showMasteryReportScreen", masterySummary);\n','    wrapAfter("showMasteryReportScreen", ()=>MQContract.resources());\n');
  const launch=hooks.indexOf('    // Capture ownership before launch helpers');assert(launch>0);hooks=hooks.slice(0,launch)+'  }';
  const completed=source.match(/  const COMPLETION_EVENTS = new Set\(\[[\s\S]*?\]\);/)[0];

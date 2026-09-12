@@ -14,7 +14,7 @@ const server=http.createServer(async(req,res)=>{
  if(req.url.startsWith('/api/anonymous-telemetry-poc/'))return harness.serve(req,res);
  let p=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));
  if(!p.startsWith(root+path.sep)){res.writeHead(403);res.end();return;}
- try{if(fs.statSync(p).isDirectory())p=path.join(p,'index.html');res.setHeader('content-type',({'.html':'text/html','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.mp3':'audio/mpeg'})[path.extname(p)]||'application/octet-stream');fs.createReadStream(p).pipe(res);}catch{res.writeHead(404);res.end();}
+ try{if(fs.statSync(p).isDirectory())p=path.join(p,'index.html');res.setHeader('content-type',({'.html':'text/html','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.mp3':'audio/mpeg'})[path.extname(p)]||'application/octet-stream');if(p.endsWith('.html')&&/managerial-directorate-(?:classroom|telemetry-poc)/.test(p))res.end(fs.readFileSync(p,'utf8').replace('name="anonymous-telemetry-collection" content="disabled"','name="anonymous-telemetry-collection" content="enabled"'));else fs.createReadStream(p).pipe(res);}catch{res.writeHead(404);res.end();}
 });
 await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin='http://127.0.0.1:'+server.address().port;
 const browser=await chromium.launch({channel:'msedge',headless:true});

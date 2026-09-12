@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260910-faculty-lo">
+  <link rel="stylesheet" href="composer.css?v=20260912-telemetry-control">
 </head>
 <body>
   <header class="site-header">
@@ -30,6 +30,10 @@
     <section class="step" data-step-panel="2">
       <div class="panel">
         <h2>Game details</h2>
+        <div class="collection-setting">
+            <label><input id="allowAnonymousDataCollection" type="checkbox" aria-describedby="anonymousCollectionHelp"> Allow anonymous data collection</label>
+            <p id="anonymousCollectionHelp">When enabled, anonymous gameplay events may be sent to Mastery Quests to improve the games and support aggregate instructional analytics. Names, email addresses, Canvas user IDs, Troy IDs, and free-text responses are not intentionally included in application telemetry.</p>
+        </div>
         <div class="form-grid">
           <div class="field">
             <label for="gameTitle">Game title</label>
@@ -223,11 +227,12 @@
 
   <script src="data/faculty-outcomes.js?v=20260910-faculty-lo-labels"></script>
   <script src="faculty-outcome-core.js?v=20260910-faculty-lo"></script>
-  <script src="composer-core.js?v=20260910-faculty-lo"></script>
+  <script src="anonymous-telemetry-source.js?v=20260912-opt-in"></script>
+  <script src="composer-core.js?v=20260912-telemetry-control"></script>
   <script src="course-area-model.js?v=20260910-faculty-lo"></script>
   <script src="data/composer_library.js?v=20260910-faculty-lo"></script>
   <script src="data/official_theme_library.js?v=20260830-official-mode-cards"></script>
   <script src="custom-asset-core.js?v=20260824-phase3b"></script>
-  <script src="composer.js?v=20260910-faculty-lo"></script>
+  <script src="composer.js?v=20260912-telemetry-control"></script>
 </body>
 </html>

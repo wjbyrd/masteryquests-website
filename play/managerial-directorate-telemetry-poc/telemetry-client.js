@@ -2,24 +2,25 @@
   "use strict";
 
   const PHASE = "phaseAnonymousTelemetryPOC-v1";
+  const IS_COMPOSER = false;
   const BUILD_ID = "managerial-directorate-telemetry-poc";
   const BUILD_VERSION = "2026.09.10-parity3";
   const SCHEMA_VERSION = 3;
   const DEFAULT_ENDPOINT = "/api/anonymous-telemetry-poc/v1/events";
-  const QUEUE_KEY = "anonymousTelemetry:queue:v1";
-  const CLIENT_KEY = "anonymousTelemetry:clientId:v1";
-  const RUNS_KEY = "anonymousTelemetry:runs:v1";
-  const SEQUENCES_KEY = "anonymousTelemetry:sequences:v1";
-  const ACTIVE_RUN_KEY_PREFIX = "anonymousTelemetry:activeRun:v1:";
-  const FAILURE_KEY = "anonymousTelemetry:debugFailure:v1";
-  const COLLECTION_KEY = "anonymousTelemetry:remoteDisabled:v1";
-  const QUALITY_KEY = "anonymousTelemetry:quality:v1";
   const MAX_QUEUE = 2000;
   let collectionEpoch=0, memoryRemoteDisabled=false;
   function remoteEnabled(){
-    if(memoryRemoteDisabled)return false;
-    if(document.querySelector('meta[name="anonymous-telemetry-collection"]')?.content==='disabled')return false;
-    try{return localStorage['getItem'](COLLECTION_KEY)!=='1';}catch(_){return false;}
+    try {
+      if(memoryRemoteDisabled || !BUILD_SCOPE)return false;
+      const allowed=IS_COMPOSER
+        ? globalValue('FACULTY_COMPOSITION_CONFIG',{}).allowAnonymousDataCollection === true
+        : document.querySelector('meta[name="anonymous-telemetry-collection"]')?.content === 'enabled';
+      if(!allowed)return false;
+      const preference=localStorage['getItem'](COLLECTION_KEY);
+      // Carry only the old restrictive opt-out forward; never its UUID or queue.
+      if(preference===null)return localStorage['getItem']('anonymousTelemetry:remoteDisabled:v1')!=='1';
+      return preference==='0';
+    } catch(_){return false;}
   }
   function setRemoteCollection(enabled){
     collectionEpoch++;memoryRemoteDisabled=!enabled;
@@ -40,40 +41,11 @@
   ]);
   const script = document.currentScript;
   const gameId = String(script?.dataset?.gameId || document.documentElement.dataset.telemetryGameId || "managerial-hub");
-  const ACTIVE_RUN_KEY = ACTIVE_RUN_KEY_PREFIX + gameId;
   const params = new URLSearchParams(location.search);
   const debugEnabled = params.get("telemetryDebug") === "1";
   const configuredEndpoint = params.get("telemetryEndpoint") || document.querySelector('meta[name="anonymous-telemetry-endpoint"]')?.content;
   const endpoint = configuredEndpoint || DEFAULT_ENDPOINT;
   const syntheticMode = params.get("telemetrySynthetic") === "1";
-  const state = {
-    queue: readJSON(QUEUE_KEY, []),
-    quality: (()=>{const saved=readJSON(QUALITY_KEY,{});return Object.fromEntries(['overflow','permanentlyRejected','cancelled','storageFailures'].map(key=>[key,Number.isSafeInteger(saved?.[key])&&saved[key]>=0?saved[key]:0]));})(),
-    singletonRetry:false,
-    sentManifests:new Set(),
-    lastMeasurement:null,
-    runs: readJSON(RUNS_KEY, {}),
-    sequences: readJSON(SEQUENCES_KEY, {}),
-    activeRunId: readJSON(ACTIVE_RUN_KEY, "") || "",
-    sourceRunId: "",
-    flushing: false,
-    retryAttempt: 0,
-    retryTimer: 0,
-    lastStatus: "idle",
-    artifactOwnership: null,
-    launchDepth: 0,
-    lastStage: "",
-    lastBossStage: "",
-    lastPosition: 0,
-    lastScore: null,
-    lastStreak: null,
-    lastSuccessfulSend: "",
-    lastServerResponse: "none",
-    failedSendCount: 0,
-    visibilityPaused: false,
-    failureSimulation: readJSON(FAILURE_KEY,0) === 1,
-    debugNode: null
-  };
 
   // BEGIN GENERATED COMPOSER BEHAVIOR (sync-composer-behavior.mjs)
   function createComposerQuestionTracker(){
@@ -467,7 +439,7 @@ function createTelemetryContract(get, registry) {
   return {fields,stamp,show,exportRows,wrapShuffle,hash,stable,build,state,resources,installResources};
 }
 
-  const MQContract=createTelemetryContract(globalValue, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.09.10-contract1","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"1023a767020cb5cea0d6e82f8ad0f41a56dccae2a24ed80fe25ee5131bddb762","games":{"cost-directive":{"engineRevision":"1aa3b13ff3f5f3bc605f8ac7eef313bed970909421b3899cea16d2050205e703","pocEngineRevision":"2b9af4ca1bc6e93f2481215053849e079ec5d474ceeb6f5972e00e389b72defc","classroomEngineRevision":"eaacaa493b7c3389e2edfda5845e61e557586266a5e106eb2cae081447ee17b0","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"8d3922950fac1b8419b034467e005fa5179312535ec912d990091eb8f7fa73e7","pocEngineRevision":"13ab6fdf6bba07a5ac355e6114f239c36339e10d700317c032c57e1b6841ba5c","classroomEngineRevision":"471a5d84225f66b6c22fbda33b760683a02863e755a63be162dff798856ba0df","assetRevision":"b08933cae7a38a40c1ab82a012b5ef2ca45a3271a467be2ea303532e635333fa"},"strategy-desk":{"engineRevision":"8c831eca82af41b0433bbc45e9fa01f503a87deaf124fc2ab94c6dd351e8ab29","pocEngineRevision":"57d7d218a3b711cc7b1bcc344f33ba7626b3294b8a67c0653976375cd69b1f2f","classroomEngineRevision":"5c795fb2ba0dbeec400981199732b3b8f5e26afdc1d509a3e0ea8789ecf473e9","assetRevision":"fee2394b66f0bccdd4ad9c5289d9ea6e09e0cf58b56987b59c510c9bf738b6cf"},"agency-protocol":{"engineRevision":"f5fad05193dc16d79007ee8733fbdcbf62b266f091aac11231c89bea3fe1b632","pocEngineRevision":"8dfa2532424c30cbdc6c4f69f6325ac03510e43be83f5edebb5b12b3f97aa5ad","classroomEngineRevision":"685a5850f5e0653a44431a5f5c2d21bf0d7ae4b77617670c00f2ed0e0b5037ff","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"e09f9b640310dbb3b3962007f10e9efae1f63243a4d6b15cd1f59273cf07503e","assetRevision":"cbeeea56e054a29eb211219b581e7e08a7485e65dfbfe0a971105ce2192ec716"}}});
+  const MQContract=createTelemetryContract(globalValue, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.09.10-contract1","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"33bf4db9a4cf96c74df3aba37e20e902c6b0293293cb9285522900d8eee25e0f","games":{"cost-directive":{"engineRevision":"1aa3b13ff3f5f3bc605f8ac7eef313bed970909421b3899cea16d2050205e703","pocEngineRevision":"679e1fcd2623cfafc339613e2e146925f9c301d7d23dd11744c94689218c8d3a","classroomEngineRevision":"1653a909f41321752b2432ee44132151a4569e33dc161d4e7f1e98504faa5cd8","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"8d3922950fac1b8419b034467e005fa5179312535ec912d990091eb8f7fa73e7","pocEngineRevision":"60cca7d21188ee070aed2b3ef12c3157025dc3b68881546df5a671f9608e2626","classroomEngineRevision":"7d5eadf08176e03316f0d3061d8da1f82fd03e9804c033eb8e1a8680aaa8db7a","assetRevision":"b08933cae7a38a40c1ab82a012b5ef2ca45a3271a467be2ea303532e635333fa"},"strategy-desk":{"engineRevision":"8c831eca82af41b0433bbc45e9fa01f503a87deaf124fc2ab94c6dd351e8ab29","pocEngineRevision":"4f4e066f8b564f949bd0bce2dc3005eb3f94db7cca089871b1073478541cb712","classroomEngineRevision":"17ae7e848e1957c82616889cee6c1797a521ba4a56db8775b66c5268d54fff1d","assetRevision":"fee2394b66f0bccdd4ad9c5289d9ea6e09e0cf58b56987b59c510c9bf738b6cf"},"agency-protocol":{"engineRevision":"f5fad05193dc16d79007ee8733fbdcbf62b266f091aac11231c89bea3fe1b632","pocEngineRevision":"31e5106ce30c8a32a3d2229a3f5bbc1ce1597e26fd6697786081302372bba022","classroomEngineRevision":"ce65745dfa3b1966149d4c1bdb8c5d476b934c4dd07a9d3d1d2d3b6456b13169","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"e09f9b640310dbb3b3962007f10e9efae1f63243a4d6b15cd1f59273cf07503e","assetRevision":"cbeeea56e054a29eb211219b581e7e08a7485e65dfbfe0a971105ce2192ec716"}}});
   // END MEASUREMENT CONTRACT
 
   const BEHAVIOR_FIELDS = ["activeResponseTimeMs","hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","focusLossCount","unfocusedTimeMs","timeAfterFocusMs","selectionCount","maxSelectedChars","questionSelected","answersSelected","copyCount","questionCopied","answersCopied","lastCopyElapsedMs","timeCopyToHideMs","timeCopyToBlurMs"];
@@ -529,12 +501,54 @@ function createTelemetryContract(get, registry) {
     try {
       const parsed = JSON.parse(localStorage.getItem(key) || "null");
       return parsed === null ? fallback : parsed;
-    } catch (_) { return fallback; }
+    } catch (_) { memoryRemoteDisabled=true; return fallback; }
   }
 
   function writeJSON(key, value) {
     try { localStorage.setItem(key, JSON.stringify(value)); } catch (_) { state.quality.storageFailures++; }
   }
+
+  // New transport state never reads or rewrites the old family-scoped queue/UUID.
+  const BUILD_SCOPE = (()=>{try{const config=globalValue("FACULTY_COMPOSITION_CONFIG",{});if(IS_COMPOSER&&!/^[a-f0-9]{64}$/.test(config.compositionFingerprint))return "";const value=IS_COMPOSER?MQContract.hash([config.compositionFingerprint,MQContract.build().buildRevision]):MQContract.build().buildRevision;return /^[a-f0-9]{64}$/.test(value)?value:"";}catch(_){return "";}})();
+  const STORAGE_PREFIX = "anonymousTelemetry:build:v2:" + BUILD_ID + ":" + BUILD_SCOPE + ":";
+  const QUEUE_KEY = STORAGE_PREFIX + "queue:v1";
+  const CLIENT_KEY = STORAGE_PREFIX + "clientId:v1";
+  const RUNS_KEY = STORAGE_PREFIX + "runs:v1";
+  const SEQUENCES_KEY = STORAGE_PREFIX + "sequences:v1";
+  const ACTIVE_RUN_KEY_PREFIX = STORAGE_PREFIX + "activeRun:v1:";
+  const FAILURE_KEY = STORAGE_PREFIX + "debugFailure:v1";
+  const COLLECTION_KEY = STORAGE_PREFIX + "remoteDisabled:v1";
+  const QUALITY_KEY = STORAGE_PREFIX + "quality:v1";
+  const ACTIVE_RUN_KEY = ACTIVE_RUN_KEY_PREFIX + gameId;
+  const state = {
+    queue: readJSON(QUEUE_KEY, []),
+    quality: (()=>{const saved=readJSON(QUALITY_KEY,{});return Object.fromEntries(['overflow','permanentlyRejected','cancelled','storageFailures'].map(key=>[key,Number.isSafeInteger(saved?.[key])&&saved[key]>=0?saved[key]:0]));})(),
+    singletonRetry:false,
+    sentManifests:new Set(),
+    lastMeasurement:null,
+    runs: readJSON(RUNS_KEY, {}),
+    sequences: readJSON(SEQUENCES_KEY, {}),
+    activeRunId: readJSON(ACTIVE_RUN_KEY, "") || "",
+    sourceRunId: "",
+    flushing: false,
+    retryAttempt: 0,
+    retryTimer: 0,
+    lastStatus: "idle",
+    artifactOwnership: null,
+    launchDepth: 0,
+    lastStage: "",
+    lastBossStage: "",
+    lastPosition: 0,
+    lastScore: null,
+    lastStreak: null,
+    lastSuccessfulSend: "",
+    lastServerResponse: "none",
+    failedSendCount: 0,
+    visibilityPaused: false,
+    failureSimulation: readJSON(FAILURE_KEY,0) === 1,
+    debugNode: null
+  };
+
 
   function uuid() {
     if (crypto?.randomUUID) return crypto.randomUUID();
@@ -941,7 +955,30 @@ function createTelemetryContract(get, registry) {
     localStorage.setItem(key(prior.runId),JSON.stringify(records));
   }
 
+  function installComposerHooks() {
+    // Composer already owns all clocks, local rows and measurement stamping.
+    // Map its completed local row; never install a second tracker or stamp it twice.
+    const original=window.sendGameData;
+    if(typeof original!=='function'||original.__anonymousTelemetryWrapped)return;
+    const wrapped=function(data={}){
+      const result=original.apply(this,arguments);
+      try {
+        const localRun=data.runID||globalValue('runID','');
+        const row=globalValue('readLocalTelemetry',()=>[])(localRun).at(-1);
+        if(row?.event===data.event){
+          const mapped={...data,__measurement:Object.fromEntries(MQContract.fields.map(k=>[k,row[k]??null]))};
+          const timing=Object.fromEntries(['responseTimeMs',...BEHAVIOR_FIELDS].map(k=>[k,typeof row[k]==='number'&&Number.isFinite(row[k])?row[k]:null]));
+          if(data.event==='question_presented')emit('question_shown',{...currentContext(data),...timing,__measurement:mapped.__measurement});
+          else mapGameEvent(mapped,timing);
+        }
+      } catch(_){}
+      return result;
+    };
+    wrapped.__anonymousTelemetryWrapped=true;window.sendGameData=wrapped;
+  }
+
   function installHooks() {
+    if(IS_COMPOSER){installComposerHooks();return;}
     try { MQContract.build(); MQContract.wrapShuffle(); MQContract.installResources(); } catch (_) {}
     try { installLocalTelemetryColumns(); } catch (_) {}
     try { installLocalCsvDownload(); } catch (_) {}
@@ -1168,7 +1205,12 @@ function createTelemetryContract(get, registry) {
     installHooks
   });
 
-  if(!Array.isArray(state.queue)){state.queue=[];state.quality.storageFailures++;persistQueue();saveQuality();}
+  if(!Array.isArray(state.queue)){memoryRemoteDisabled=true;state.queue=[];state.quality.storageFailures++;persistQueue();saveQuality();}
+  // An inconsistent v2 queue is quarantined, never restamped/replayed under a new ID.
+  try {
+    const client=localStorage.getItem(CLIENT_KEY);
+    if(state.queue.length && (!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(client||'') || state.queue.some(e=>!e || e.anonymousClientId!==client || e.buildId!==BUILD_ID)))memoryRemoteDisabled=true;
+  } catch(_){memoryRemoteDisabled=true;}
   if(!remoteEnabled())setRemoteCollection(false);
   installHooks();
   document.addEventListener('DOMContentLoaded',()=>{try{installExamHooks();}catch(_){}});

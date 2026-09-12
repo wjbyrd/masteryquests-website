@@ -3,7 +3,7 @@
 import fs from 'node:fs';import path from 'node:path';
 const repo=path.resolve(process.argv[2]||'.');
 // A build-level faculty/deployer switch; browser overrides cannot enable a disabled build.
-const REMOTE_COLLECTION_ENABLED=true;
+const REMOTE_COLLECTION_ENABLED=process.argv.includes('--allow-anonymous-data-collection');
 const check=process.argv.includes('--check');
 for(const game of ['cost-directive','market-signal','strategy-desk','agency-protocol']){
  const file=path.join(repo,'play/managerial-directorate-telemetry-poc',game,'index.html');

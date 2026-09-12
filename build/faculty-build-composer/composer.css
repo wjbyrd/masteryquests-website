@@ -124,3 +124,5 @@
 .scope-skills { max-height: none; }
 .scope-note { font-size: .85rem; line-height: 1.45; }
 .content-scope + .card-summary { display:block; font-size:.85rem; line-height:1.45; }
+
+.collection-setting{margin:0 0 20px;padding:14px;border:1px solid var(--line);border-radius:8px;background:#f3f7fa}.collection-setting label{display:flex;align-items:center;gap:9px;font-weight:700}.collection-setting input{width:auto;flex:0 0 auto}.collection-setting p{max-width:900px;margin:8px 0 0;color:var(--muted);font-size:.9rem}

@@ -1,8 +1,8 @@
 (function(root, factory){
-  const api = factory(typeof module === 'object' && module.exports ? require('./faculty-outcome-core.js') : root.MQFacultyOutcomes);
+  const api = factory(typeof module === 'object' && module.exports ? require('./faculty-outcome-core.js') : root.MQFacultyOutcomes, typeof module === 'object' && module.exports ? require('./anonymous-telemetry-source.js') : root.MQAnonymousTelemetrySource);
   if(typeof module === 'object' && module.exports) module.exports = api;
   else root.MQComposerCore = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function(FacultyOutcomes){
+})(typeof globalThis !== 'undefined' ? globalThis : this, function(FacultyOutcomes, AnonymousTelemetrySource){
 'use strict';
 
 const COMPOSER_VERSION = '4.5s.3k';
@@ -1521,6 +1521,7 @@ function migrateRecipe(recipe, library, themeLibrary){
   return {
     recipe: {
       schemaVersion: RECIPE_SCHEMA_VERSION,
+      allowAnonymousDataCollection: source.allowAnonymousDataCollection === true,
       title: String(source.title || ''),
       slug: String(source.slug || ''),
       supportedModes: MODE_ORDER.filter(mode => (source.supportedModes || []).includes(mode)),
@@ -2064,6 +2065,8 @@ function conceptReviewRuntimeRegion(composition){
 }
 
 function buildHtml(template, composition, config, metadata){
+  // Transport permission is build configuration, never part of the event schema.
+  config={...config,allowAnonymousDataCollection:config?.allowAnonymousDataCollection===true};
   let output = replaceMarkedRegion(
     template,
     '// FACULTY COMPOSITION CONFIG — GENERATED',
@@ -2076,6 +2079,10 @@ function buildHtml(template, composition, config, metadata){
     '// END FACULTY QUESTION BANKS',
     `${conceptReviewRuntimeRegion(composition)}\n${questionMarkerRegion(composition, metadata)}`
   );
+  if(config.allowAnonymousDataCollection===true){
+    if(typeof AnonymousTelemetrySource!=='string')throw new Error('Maintained anonymous transport source unavailable.');
+    output=output.replace('</body>', '<script>\n'+AnonymousTelemetrySource.replace(/<\/script/gi,'<\\/script')+'\n</script>\n</body>');
+  }
   return output;
 }
 
@@ -2084,6 +2091,7 @@ function canonicalRecipe(inputRecipe, library, themeLibrary){
   const customAssets = pruneCustomAssets(migrated.customAssets, migrated.appearance, themeLibrary);
   return {
     schemaVersion: RECIPE_SCHEMA_VERSION,
+    allowAnonymousDataCollection: migrated.allowAnonymousDataCollection === true,
     title: String(migrated.title).trim(),
     slug: safeSlug(migrated.slug),
     supportedModes: MODE_ORDER.filter(mode => migrated.supportedModes.includes(mode)),

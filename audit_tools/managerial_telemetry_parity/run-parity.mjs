@@ -20,7 +20,7 @@ function client(){
   localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,String(v)),removeItem:k=>storage.delete(k)},
   setTimeout:(fn,delay)=>{timers.set(++seq,{fn,delay});return seq;},clearTimeout:id=>timers.delete(id),
   document:{currentScript:{dataset:{gameId:'cost-directive'}},documentElement:{dataset:{}},hidden:false,visibilityState:'visible',
-   addEventListener:(type,fn)=>{(listeners[type]||=[]).push(fn);},querySelector:()=>null,
+   addEventListener:(type,fn)=>{(listeners[type]||=[]).push(fn);},querySelector:selector=>selector.includes("anonymous-telemetry-collection")?{content:"enabled"}:null,
    getElementById:id=>nodes.get(id),createElement:()=>({style:{},addEventListener(){}}),body:{appendChild(){}},
    createRange:()=>({selectNodeContents(){},startContainer:0,endContainer:0,startOffset:0,endOffset:10})},
   Range:{START_TO_START:0,END_TO_END:2},getSelection:()=>selection,

@@ -2,6 +2,7 @@ import {scheduledRetention} from './scheduled-retention.mjs';
 import {govern,requireMaintenance} from './governance.mjs';
 import {configuration} from './governance-policy.mjs';
 import {CONTRACT_FIELDS} from './measurement-contract.mjs';
+import {spreadsheetCell,eventRateLimit} from './transport-safety.mjs';
 import {
   MAX_BODY_BYTES,
   QA_EXTRA_FIELDS,
@@ -152,7 +153,7 @@ function runUpsert(env, event) {
 
 async function enforceRateLimit(env, anonymousClientId, increment) {
   const windowMinute = Math.floor(Date.now() / 60000);
-  const limit = Math.max(50, Number(env.MAX_EVENTS_PER_CLIENT_MINUTE || 300));
+  const limit = eventRateLimit(env.MAX_EVENTS_PER_CLIENT_MINUTE);
   const current = await env.TELEMETRY_DB.prepare(
     "SELECT event_count FROM telemetry_rate_limits WHERE anonymous_client_id = ? AND window_minute = ?"
   ).bind(anonymousClientId, windowMinute).first();
@@ -306,7 +307,7 @@ function csv(rows) {
       acceptedAttempt: row.event_type === "answer_evaluated" ? acceptedAttempt(row) : null };
   });
   const columns = ["event_id","run_id","anonymous_client_id","build_id","build_version","schema_version","phase","game_id","mode","event_type","sequence_number","event_timestamp","received_at","elapsed_time_ms","position","question_id","concept_id","learning_objective","question_type","difficulty","selected_response","correct","response_time_ms","rapid_guess","remediation_stage","bridge_stage","retest_stage","boss_stage","graph_question","score","streak","daily_progress","artifact","completion_status","mastery_attempts","mastery_correct","mastery_accuracy","synthetic","extras_json","sourceRunId","lifecycleReason","acceptedAttempt","artifactName","artifactSource","artifactAlreadyOwned","artifactOwnedBeforeRun","artifactNewlyEarned","wagerAmount","scoreBeforeWager","removedOptionIndex","remainingOptionCount","activeResponseTimeMs","hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","focusLossCount","unfocusedTimeMs","timeAfterFocusMs","selectionCount","maxSelectedChars","questionSelected","answersSelected","copyCount","questionCopied","answersCopied","lastCopyElapsedMs","timeCopyToHideMs","timeCopyToBlurMs","responseTimeMs",...CONTRACT_FIELDS];
-  const escape = value => `"${String(value ?? "").replace(/"/g, '""')}"`;
+  const escape = value => `"${String(spreadsheetCell(value) ?? "").replace(/"/g, '""')}"`;
   const body = [columns.map(escape).join(","), ...rows.map(row => columns.map(column => escape(row[column])).join(","))].join("\r\n");
   return new Response(body, {
     headers: {

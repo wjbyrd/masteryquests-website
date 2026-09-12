@@ -16,7 +16,7 @@ function client(storage = new Map()) {
   const context = vm.createContext({crypto:webcrypto, AbortController, URLSearchParams, location:{search:'?telemetryDebug=1&telemetrySynthetic=1'},
     localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,String(v)),removeItem:k=>storage.delete(k)},
     document:{currentScript:{dataset:{gameId:'cost-directive'}},documentElement:{dataset:{}},visibilityState:'visible',
-      querySelector:()=>null,getElementById:id=>nodes.get(id),createElement:node,body:{appendChild(n){nodes.set(n.id,n);}},
+      querySelector:selector=>selector.includes("anonymous-telemetry-collection")?{content:"enabled"}:null,getElementById:id=>nodes.get(id),createElement:node,body:{appendChild(n){nodes.set(n.id,n);}},
       addEventListener(type,fn){listeners[type]=fn;}},
     setTimeout:(fn,delay)=>{timers.set(++timer,{fn,delay});return timer;},clearTimeout:id=>timers.delete(id),
     addEventListener:(type,fn)=>listeners[type]=fn,

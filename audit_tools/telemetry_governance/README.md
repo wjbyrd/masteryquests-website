@@ -47,12 +47,14 @@ For approved revocation, npx wrangler secret delete MAINTENANCE_TOKEN --config s
 
 ## Export context
 
+Admin CSV is a spreadsheet-safe representation: dangerous string prefixes are neutralized with an apostrophe only at serialization. D1 and the existing authenticated run JSON retain raw values; numbers and column sets do not change. The sidecar hashes the exact emitted file, including any safety prefix. Do not strip neutralization before opening untrusted text in a spreadsheet. This is export hardening, not a measurement revision.
+
 ```text
 node audit_tools/telemetry_governance/admin.mjs export --build-id managerial-directorate-classroom --output reviewed-export.csv
 node audit_tools/telemetry_contract/validate.mjs reviewed-export.csv validation.json reviewed-export.csv.governance.json
 ```
 
-The helper refuses existing output paths, redirects and insecure nonlocal endpoints. It writes unchanged CSV plus a SHA-256-bound sidecar with current governance/disclosure, measurement identity, retention and scope/time. The existing validator recognizes current and legacy policy context; it never deletes/modifies its input or assigns current policy to old events. The sidecar is not a signature or guarantee of complete historical collection. Ordinary exports follow the approved disposal horizon in restricted storage; longer retention needs RESEARCH_DATASET_DESIGNATION.md completed separately. D1 purge does not delete files/submissions/backups.
+The helper refuses existing output paths, redirects and insecure nonlocal endpoints. It writes the spreadsheet-safe CSV plus a SHA-256-bound sidecar with current governance/disclosure, measurement identity, retention and scope/time. The existing validator recognizes current and legacy policy context; it never deletes/modifies its input or assigns current policy to old events. The sidecar is not a signature or guarantee of complete historical collection. Ordinary exports follow the approved disposal horizon in restricted storage; longer retention needs RESEARCH_DATASET_DESIGNATION.md completed separately. D1 purge does not delete files/submissions/backups.
 
 ## Technical references and external limits
 

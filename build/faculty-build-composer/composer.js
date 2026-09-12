@@ -205,6 +205,7 @@ const state = {
   slug: 'my-faculty-mastery-quest',
   guideName: '',
   slugTouched: false,
+  allowAnonymousDataCollection: false,
   supportedModes: [...Core.MODE_ORDER],
   selectedConceptIds: [],
   contentScopes: {},
@@ -1206,6 +1207,7 @@ function recipe(){
     title: state.title.trim(),
     slug: state.slug.trim(),
     guideName: state.guideName.trim(),
+    allowAnonymousDataCollection: state.allowAnonymousDataCollection === true,
     supportedModes: [...state.supportedModes],
     selectedConceptIds: [...state.selectedConceptIds],
     contentScopes: JSON.parse(JSON.stringify(state.contentScopes)),
@@ -1872,6 +1874,7 @@ async function importRecipe(file){
   state.title = next.title || 'Imported Faculty Quest';
   state.slug = Core.safeSlug(next.slug || state.title);
   state.guideName = next.guideName || '';
+  state.allowAnonymousDataCollection = next.allowAnonymousDataCollection === true;
   state.slugTouched = true;
   state.supportedModes = [...next.supportedModes];
   state.customAssets = verifiedCustomAssets;
@@ -1900,6 +1903,7 @@ async function importRecipe(file){
   $('gameTitle').value = state.title;
   $('gameSlug').value = state.slug;
   $('guideName').value = state.guideName;
+  $('allowAnonymousDataCollection').checked = state.allowAnonymousDataCollection;
   setActiveArea(inferAreaForConceptIds(state.selectedConceptIds));
   renderModeOptions();
   renderThemePresets();
@@ -1915,6 +1919,8 @@ async function importRecipe(file){
 }
 
 async function init(){
+  $('allowAnonymousDataCollection').checked=false;
+  $('allowAnonymousDataCollection').addEventListener('change',event=>{state.allowAnonymousDataCollection=event.target.checked===true;recalculate();});
   renderModeOptions();
   renderThemePresets();
   renderThemeSlots();

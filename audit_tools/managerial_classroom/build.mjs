@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 // Set false before generating a private local-only build. This is an application transmission control, not retrospective deletion.
-const REMOTE_COLLECTION_ENABLED = true;
+const collectionEnabled = options => options?.allowAnonymousDataCollection === true;
 export const games=['cost-directive','market-signal','strategy-desk','agency-protocol'];
 export const publicRoot='play/managerial-intelligence-directorate';
 export const pocRoot='play/managerial-directorate-telemetry-poc';
@@ -12,7 +12,7 @@ export const classroomRoot='play/managerial-directorate-classroom';
 export const disclosure="This private build records game interactions, including answers, timing, and counts of relevant selection/copy actions. It never stores selected or copied content, clipboard contents, keystrokes, or unrelated-tab activity. A random browser ID can link runs without identifying a person. Use Download Game Data to inspect your own record. A tab switch or copy action alone does not establish misconduct, intent, attention, cognition, or learning. Turning off future transmission cancels pending unsent events and keeps local downloads available; the choice persists after refresh when browser storage is available. Re-enabling does not replay cancelled events. It cannot retract in-flight requests or delete accepted server records, downloaded copies, or backups. Already accepted application data remains under our 730-day whole-run policy, automatically evaluated daily from the latest stored server receipt. Disclosure mq-disclosure/2; governance mq-governance/2.";
 export const read=(root,p)=>fs.readFileSync(path.join(root,p),'utf8');
 function replaceOnce(s,a,b){if(!s.includes(a)||s.indexOf(a)!==s.lastIndexOf(a))throw Error('Expected one match: '+a.slice(0,100));return s.replace(a,b);}
-export function instrumentHTML(root,game){
+export function instrumentHTML(root,game,options={}){
  let s=read(root,`${publicRoot}/${game}/index.html`),poc=read(root,`${pocRoot}/${game}/index.html`);
  // The public local adapter and private anonymous adapter must never coexist.
  s=s.replace(/<script src="\.\.\/local-telemetry\.js"><\/script>\r?\n/,'');
@@ -25,7 +25,7 @@ export function instrumentHTML(root,game){
  const old='        if(storageKey) localStorage.setItem(storageKey, "true");';
  const replacement=poc.match(/        if\(storageKey\)\{\n            const alreadyOwned[\s\S]*?\n        }/)[0];
  s=replaceOnce(s,old,replacement);
- const head=`<meta name="robots" content="noindex,nofollow,noarchive"><meta name="anonymous-telemetry-collection" content="${REMOTE_COLLECTION_ENABLED ? 'enabled' : 'disabled'}"><meta name="anonymous-telemetry-phase" content="phaseAnonymousTelemetryPOC-v1"><base href="/${publicRoot}/${game}/"><script src="/${classroomRoot}/telemetry-storage-isolation.js"></script>`;
+ const head=`<meta name="robots" content="noindex,nofollow,noarchive"><meta name="anonymous-telemetry-collection" content="${collectionEnabled(options) ? 'enabled' : 'disabled'}"><meta name="anonymous-telemetry-phase" content="phaseAnonymousTelemetryPOC-v1"><base href="/${publicRoot}/${game}/"><script src="/${classroomRoot}/telemetry-storage-isolation.js"></script>`;
  s=replaceOnce(s,'<head>','<head>'+head);
  // Install on original engine callbacks before the parity adapter captures them.
  s=replaceOnce(s,'<script src="../managerial-parity.js"></script>',`<script src="/${classroomRoot}/telemetry-client.js" data-game-id="${game}"></script>\n<script src="../managerial-parity.js"></script>`);
@@ -76,14 +76,14 @@ export function classroomClient(root){
    '"artifactAlreadyOwned", "artifactOwnedBeforeRun", "artifactNewlyEarned",\n        "wagerAmount", "scoreBeforeWager", "removedOptionIndex", "remainingOptionCount"\n');
  return s;
 }
-export function build(root){
+export function build(root,options={}){
  const out=path.join(root,'validation_artifacts/managerial_classroom');fs.mkdirSync(out,{recursive:true});
  const baseline=path.join(out,'baseline_hashes.json');
  if(!fs.existsSync(baseline)){
   const files=execFileSync('git',['ls-files'],{cwd:root,encoding:'utf8'}).trim().split('\n');
   fs.writeFileSync(baseline,JSON.stringify(Object.fromEntries(files.filter(p=>!p.startsWith(classroomRoot+'/')&&!p.startsWith('audit_tools/managerial_classroom/')&&!p.startsWith('validation_artifacts/managerial_classroom/')).map(p=>[p,crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex')])),null,2)+'\n');
  }
- for(const game of games){fs.mkdirSync(path.join(root,classroomRoot,game),{recursive:true});fs.writeFileSync(path.join(root,classroomRoot,game,'index.html'),instrumentHTML(root,game));}
+ for(const game of games){fs.mkdirSync(path.join(root,classroomRoot,game),{recursive:true});fs.writeFileSync(path.join(root,classroomRoot,game,'index.html'),instrumentHTML(root,game,options));}
  fs.writeFileSync(path.join(root,classroomRoot,'telemetry-client.js'),classroomClient(root));
  fs.writeFileSync(path.join(root,classroomRoot,'telemetry-storage-isolation.js'),read(root,`${pocRoot}/telemetry-storage-isolation.js`).replace('mq:managerial-directorate-telemetry-poc:','mq:managerial-directorate-classroom:'));
  const names=['Cost Directive','Market Signal','Strategy Desk','Agency Protocol'];
@@ -93,4 +93,4 @@ export function build(root){
 <body><main><p class="label">Private class build</p><h1>Managerial Intelligence Directorate</h1><p>Choose an operation to begin or continue your game.</p><nav aria-label="Managerial games">${games.map((g,i)=>`<a href="./${g}/">${names[i]}</a>`).join('')}</nav><details><summary>About this class build</summary><p>${disclosure}</p></details></main></body></html>\n`);
  console.log('Built '+classroomRoot+' from current public pages and validated POC hooks.');
 }
-if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url))build(path.resolve(process.argv[2]||'.'));
+if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url))build(path.resolve(process.argv[2]||'.'),{allowAnonymousDataCollection:process.argv.includes('--allow-anonymous-data-collection')});
