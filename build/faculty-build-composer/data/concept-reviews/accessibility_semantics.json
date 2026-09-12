@@ -156,7 +156,7 @@
     },
     "MICRO-49": {
       "baselineSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
-      "sourceRecordSha256": "2a33c2b714404822d0c78487b521708da05feabe8b8bd34e56f1d605f257515b",
+      "sourceRecordSha256": "8bf60e1fedaca3ece2a9ae4a94361f83dcb7575e62d205dd9da21d2a52c588f4",
       "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
       "decorativeText": [
         "+",
@@ -174,8 +174,8 @@
         "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
         "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
       ],
-      "graphDecodedSha256": "c2d2eedc9b2cd9826655aa1b6cdc237b2271bf83621e2aecbb351c6db5eda6e1",
-      "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
+      "graphDecodedSha256": "701f3142fbb94f59befb739b1f6a196543e04625f66522d1da17412f6fb28a5a",
+      "reviewEvidence": "validation_artifacts/pdf_accessibility/micro49_unique_nash_v2/visual_review.json",
       "tableRequired": true,
       "tableSource": {
         "caption": "Payoff order: (Row firm, Column firm)",
@@ -194,7 +194,7 @@
           ],
           [
             "(3, 2)",
-            "(7, 7)"
+            "(1, 1)"
           ]
         ]
       },
@@ -218,13 +218,54 @@
         "captionBottom": 30,
         "coordinateSystem": "source image pixels, top-left origin; complete nonoverlapping partition"
       },
-      "tableSourceSha256": "ef0faab48473b0d3da5f8c05ea52448e144398987c7087d560e73829bc947eb1",
+      "tableSourceSha256": "38a07e3cefeb475846cc1efe729ab71a31a9d6b2af7f4ce7a614a2fa6251e8eb",
       "assetSourcePath": "build/faculty-build-composer/data/question-assets/oligopoly/matrix_multi_ne_1.webp",
       "assetSourceSha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
       "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/MICRO-49.pdf",
       "visualSourceSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
       "formulaCoverageReviewed": true,
-      "nonMathSymbols": []
+      "nonMathSymbols": [],
+      "wordingCorrection": {
+        "status": "owner_authorized",
+        "field": "worked",
+        "oldText": "For each strategy of the other player, mark the action that gives a player the larger payoff. In the displayed matrix, row A against column X gives (9, 9), while switching unilaterally to row B would lower the row player's payoff from 9 to 3. The column player also prefers X to Y when row A is chosen, so (A, X) is a cell of mutual best responses and is a Nash equilibrium.",
+        "newText": "For each rival strategy, identify the action with the larger payoff. If column X is chosen, row A gives 9 rather than 3 from row B. If column Y is chosen, row A gives 2 rather than 1 from row B. Thus, A is the row player's strictly dominant strategy. For the column player, X gives 9 rather than 3 when row A is chosen, and 2 rather than 1 when row B is chosen. Thus, X is the column player's strictly dominant strategy. Because A and X are mutual best responses, (A, X) is the unique Nash equilibrium.",
+        "sourceRecordSha256": "8bf60e1fedaca3ece2a9ae4a94361f83dcb7575e62d205dd9da21d2a52c588f4",
+        "originalAssetSha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
+        "layout": "micro49_unique_nash_v2",
+        "heading": {
+          "oldText": "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM",
+          "newText": "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM"
+        },
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/micro49_unique_nash_v2/visual_review.json"
+      },
+      "matrixCorrection": {
+        "status": "owner_authorized",
+        "cell": "B/Y",
+        "oldCell": "(7, 7)",
+        "newCell": "(1, 1)",
+        "sourceRecordSha256": "8bf60e1fedaca3ece2a9ae4a94361f83dcb7575e62d205dd9da21d2a52c588f4",
+        "originalAssetSha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
+        "originalDecodedSha256": "c2d2eedc9b2cd9826655aa1b6cdc237b2271bf83621e2aecbb351c6db5eda6e1",
+        "derivedDecodedSha256": "701f3142fbb94f59befb739b1f6a196543e04625f66522d1da17412f6fb28a5a",
+        "digitBoxes": [
+          [
+            554,
+            352,
+            574,
+            378
+          ],
+          [
+            593,
+            352,
+            613,
+            378
+          ]
+        ],
+        "glyphFontSha256": "c4c45690b345435b2cba52ecabe275f05e49b389b39fe68ad03afbb551288d3d",
+        "glyphPixelSize": 32,
+        "reviewEvidence": "validation_artifacts/pdf_accessibility/micro49_unique_nash_v2/visual_review.json"
+      }
     },
     "MICRO-54": {
       "baselineSha256": "250071d6d8c5fef71d7f31b48656a484b204d2de606306c118dd8341f66a2c7e",

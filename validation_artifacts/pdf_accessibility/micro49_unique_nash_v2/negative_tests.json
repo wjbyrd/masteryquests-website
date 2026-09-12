@@ -1,0 +1,319 @@
+{
+  "tests": [
+    {
+      "test": "missing_real_structure",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\missing_real_structure.pdf",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_REAL_STRUCTURE"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.1-3",
+        "7.1-11"
+      ]
+    },
+    {
+      "test": "meaningful_block_artifacted",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\meaningful_block_artifacted.pdf",
+      "detected": true,
+      "projectErrors": [
+        "BROKEN_CONTENT_ASSOCIATION",
+        "INCOMPLETE_OR_WRONG_READING_ORDER",
+        "MEANINGFUL_TEXT_ARTIFACTED"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.1-1",
+        "7.1-2"
+      ]
+    },
+    {
+      "test": "figure_missing_alternative",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\figure_missing_alternative.pdf",
+      "detected": true,
+      "projectErrors": [
+        "FIGURE_ALTERNATIVE_CHANGED",
+        "MISSING_ALTERNATIVE"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.3-1"
+      ]
+    },
+    {
+      "test": "figure_placeholder_alternative",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\figure_placeholder_alternative.pdf",
+      "detected": true,
+      "projectErrors": [
+        "FIGURE_ALTERNATIVE_CHANGED",
+        "PLACEHOLDER_ALTERNATIVE"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "broken_content_association",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\broken_content_association.pdf",
+      "detected": true,
+      "projectErrors": [
+        "BROKEN_CONTENT_ASSOCIATION",
+        "INCOMPLETE_OR_WRONG_READING_ORDER",
+        "UNLINKED_MEANINGFUL_BLOCK"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.1-3"
+      ]
+    },
+    {
+      "test": "missing_language",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\missing_language.pdf",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_LANGUAGE"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.2-34",
+        "7.2-33"
+      ]
+    },
+    {
+      "test": "missing_formula_structure",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\missing_formula_structure.pdf",
+      "detected": true,
+      "projectErrors": [
+        "FORMULA_STRUCTURE_TEXT_OR_ALTERNATIVE_MISMATCH"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "changed_number",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\changed_number.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CONTENT_CHANGED_OR_DUPLICATED",
+        "INCOMPLETE_OR_WRONG_READING_ORDER"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "duplicated_source_text",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\duplicated_source_text.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CONTENT_CHANGED_OR_DUPLICATED"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "stale_graph_description",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\stale_graph_description.pdf",
+      "detected": true,
+      "projectErrors": [
+        "STALE_OR_UNLINKED_GRAPH"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "wrong_reading_order",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\wrong_reading_order.pdf",
+      "detected": true,
+      "projectErrors": [
+        "INCOMPLETE_OR_WRONG_READING_ORDER"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "mismatched_copy_bytes",
+      "detected": true,
+      "projectErrors": [
+        "ACTIVE_COPY_MISMATCH",
+        "MANIFEST_CHECKSUM_MISMATCH",
+        "MANIFEST_SIZE_MISMATCH"
+      ],
+      "independentValidatorDetected": null
+    },
+    {
+      "test": "missing_table_headers",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\missing_table_headers.pdf",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_TABLE_HEADERS"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "broken_table_header_scope",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\broken_table_header_scope.pdf",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_TABLE_HEADERS"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.5-1"
+      ]
+    },
+    {
+      "test": "changed_table_cell",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\changed_table_cell.pdf",
+      "detected": true,
+      "projectErrors": [
+        "TABLE_CELL_VALUE_CHANGED"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "changed_formula_sign",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\changed_formula_sign.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CONTENT_CHANGED_OR_DUPLICATED",
+        "FORMULA_STRUCTURE_TEXT_OR_ALTERNATIVE_MISMATCH",
+        "INCOMPLETE_OR_WRONG_READING_ORDER"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "changed_formula_number",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\changed_formula_number.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CONTENT_CHANGED_OR_DUPLICATED",
+        "FORMULA_STRUCTURE_TEXT_OR_ALTERNATIVE_MISMATCH",
+        "INCOMPLETE_OR_WRONG_READING_ORDER"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "broken_fraction_grouping",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\broken_fraction_grouping.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CONTENT_CHANGED_OR_DUPLICATED",
+        "FORMULA_STRUCTURE_TEXT_OR_ALTERNATIVE_MISMATCH",
+        "INCOMPLETE_OR_WRONG_READING_ORDER"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "stale_formula_alternative",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\stale_formula_alternative.pdf",
+      "detected": true,
+      "projectErrors": [
+        "FORMULA_STRUCTURE_TEXT_OR_ALTERNATIVE_MISMATCH"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "missing_font_embedding",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\missing_font_embedding.pdf",
+      "detected": true,
+      "projectErrors": [
+        "UNEMBEDDED_USED_FONT"
+      ],
+      "independentValidatorDetected": true,
+      "independentFailedRules": [
+        "7.21.4.1-1"
+      ]
+    },
+    {
+      "test": "new_unvalidated_document",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_OUTPUT",
+        "NEW_OR_UNAUTHORED_DOCUMENT",
+        "NO_REVIEWED_SEMANTIC_SOURCE",
+        "NO_VALIDATED_RELEASE_EVIDENCE"
+      ],
+      "independentValidatorDetected": null
+    },
+    {
+      "test": "missing_output",
+      "detected": true,
+      "projectErrors": [
+        "MISSING_OUTPUT",
+        "NEW_OR_UNAUTHORED_DOCUMENT",
+        "NO_REVIEWED_SEMANTIC_SOURCE",
+        "NO_VALIDATED_RELEASE_EVIDENCE"
+      ],
+      "independentValidatorDetected": null
+    },
+    {
+      "test": "heading_formula_removed",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\heading_formula_removed.pdf",
+      "detected": true,
+      "projectErrors": [
+        "FORMULA_STRUCTURE_TEXT_OR_ALTERNATIVE_MISMATCH"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "diagnostic_card_order_broken",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\diagnostic_card_order_broken.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CARD_READING_ORDER_CHANGED"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "continued_formula_card_order_broken",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\continued_formula_card_order_broken.pdf",
+      "detected": true,
+      "projectErrors": [
+        "CARD_READING_ORDER_CHANGED"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "table_header_association_broken",
+      "file": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\negative\\table_header_association_broken.pdf",
+      "detected": true,
+      "projectErrors": [
+        "BROKEN_TABLE_HEADER_ASSOCIATION"
+      ],
+      "independentValidatorDetected": false,
+      "independentFailedRules": []
+    },
+    {
+      "test": "omitted_canonical_formula_selector",
+      "detected": true,
+      "projectErrors": [
+        "FORMULA_STRUCTURE_TEXT_OR_ALTERNATIVE_MISMATCH",
+        "SOURCE_FORMULA_COVERAGE_CHANGED"
+      ],
+      "independentValidatorDetected": null
+    }
+  ],
+  "rootTests": [
+    {
+      "case": "traversal",
+      "passed": true
+    },
+    {
+      "case": "sibling_prefix_collision",
+      "passed": true
+    },
+    {
+      "case": "actual_windows_junction",
+      "passed": true
+    }
+  ]
+}

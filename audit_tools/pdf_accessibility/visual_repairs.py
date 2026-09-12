@@ -65,7 +65,7 @@ def derive(data,width,height,repair):
 def validate_bindings(source,meta):
     from tag_pilot import source_hash
     errors=[]
-    for name in ('visualRepair','wordingCorrection','sourceFigureContext'):
+    for name in ('visualRepair','wordingCorrection','sourceFigureContext','matrixCorrection'):
         value=meta.get(name)
         if not value:continue
         if value.get('sourceRecordSha256')!=source_hash(source):errors.append('STALE_'+name.upper()+'_SOURCE')
@@ -82,6 +82,11 @@ def validate_bindings(source,meta):
         for rule in repair['rules']:
             minimum=4.5 if rule['type']=='text' else 3
             if contrast(rule['newRGB'],rule['backgroundRGB'])<minimum+.15:errors.append('CONTRAST_REGRESSION')
+    if meta.get('matrixCorrection'):
+        from micro49_matrix import validate
+        if source['code']!='MICRO-49':errors.append('MATRIX_CORRECTION_WRONG_RESOURCE')
+        try:validate(meta)
+        except ValueError as exc:errors.append(str(exc))
     return errors
 
 
@@ -119,7 +124,12 @@ def approved_text_equal(old,new,meta):
     if not edit:return False
     a=normalized(old);b=normalized(new)
     if a.count(edit['oldText'])!=1:return False
-    return a.replace(edit['oldText'],edit['newText'])==b
+    a=a.replace(edit['oldText'],edit['newText'])
+    if edit.get('heading'):
+        heading=edit['heading']
+        if a.count(heading['oldText'])!=1:return False
+        a=a.replace(heading['oldText'],heading['newText'])
+    return a==b
 
 
 def apply(reader,source,meta):
@@ -128,6 +138,9 @@ def apply(reader,source,meta):
     from pypdf._cmap import get_encoding
     errors=validate_bindings(source,meta)
     if errors:raise ValueError('; '.join(errors))
+    if meta.get('matrixCorrection'):
+        from micro49_matrix import apply as correct_matrix
+        correct_matrix(reader,meta)
     page=reader.pages[0]; repair=meta.get('visualRepair')
     if repair:
         found=[]
@@ -144,6 +157,12 @@ def apply(reader,source,meta):
         if len(found)!=1:raise ValueError('Ambiguous/missing reviewed image use')
     edit=meta.get('wordingCorrection')
     if edit:
+        if edit.get('layout') in ('micro49_pure_strategy_v1','micro49_unique_nash_v2'):
+            from micro49_wording import apply as reflow
+            if edit['heading']['newText'] != 'WORKED EXAMPLE: '+source['content']['workedLabel']:
+                raise ValueError('MICRO-49 heading/source drift')
+            reflow(reader,source,edit)
+            return
         ops,blocks=text_blocks(page,reader)
         matches=[b for b in blocks if b['text']==edit['oldText']]
         if len(matches)!=1:raise ValueError('Retained wording source drift')

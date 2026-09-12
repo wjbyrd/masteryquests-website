@@ -1,0 +1,63 @@
+{"report":{"buildInformation":{"releaseDetails":[{
+  "id" : "core",
+  "version" : "1.28.2",
+  "buildDate" : 1752610020000
+},{
+  "id" : "validation-model",
+  "version" : "1.28.2",
+  "buildDate" : 1752610320000
+},{
+  "id" : "gui",
+  "version" : "1.28.2",
+  "buildDate" : 1752613140000
+}]},"jobs":[{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\micro49_unique_nash_v2\\batches\\micro49\\revisions\\03e06890097d055c446385126b1b969c1c60a800a3c825761136eea598619eed\\after\\MICRO-49.pdf",
+  "size" : 392496
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 2943,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789219867693,
+  "finish" : 1789219868460,
+  "difference" : 767,
+  "duration" : "00:00:00.767"
+}}],"batchSummary":{
+  "duration" : {
+    "start" : 1789219867579,
+    "finish" : 1789219868483,
+    "difference" : 904,
+    "duration" : "00:00:00.904"
+  },
+  "totalJobs" : 1,
+  "outOfMemory" : 0,
+  "veraExceptions" : 0,
+  "multiJob" : false,
+  "repairSummary" : {
+    "totalJobCount" : 0,
+    "failedJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "featuresSummary" : {
+    "totalJobCount" : 0,
+    "failedJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "failedEncryptedJobs" : 0,
+  "failedParsingJobs" : 0,
+  "validationSummary" : {
+    "totalJobCount" : 1,
+    "failedJobCount" : 0,
+    "nonCompliantPdfaCount" : 0,
+    "compliantPdfaCount" : 1,
+    "successfulJobCount" : 1
+  }
+}}}

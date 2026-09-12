@@ -1,0 +1,168 @@
+[
+  {
+    "code": "MICRO-49",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\micro49_unique_nash_v2\\batches\\micro49\\revisions\\03e06890097d055c446385126b1b969c1c60a800a3c825761136eea598619eed\\after\\MICRO-49.pdf",
+    "tagCount": 44,
+    "mcids": 37,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "NO_INLINE_EXPRESSIONS_SELECTED",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MICROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MICRO-49",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Read payoff matrices and identify best responses, dominant strategies, and Nash equilibrium.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "Game theory represents strategic choices with players, actions, and payoffs that depend on what others do. Correctly reading the matrix is the prerequisite for identifying best responses and equilibrium. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Identify the players, each player's available actions, and the payoff associated with every action combination.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "For each possible rival action, mark the action that gives a player the highest payoff.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "A dominant strategy is best regardless of the rival's action.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A Nash equilibrium is a cell where every player's action is a best response to the others.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not assume equilibrium is efficient. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM",
+        "node": 24
+      },
+      {
+        "role": "P",
+        "text": "For each rival strategy, identify the action with the larger payoff. If column X is chosen, row A gives 9 rather than 3 from row B. If column Y is chosen, row A gives 2 rather than 1 from row B. Thus, A is the row player's strictly dominant strategy. For the column player, X gives 9 rather than 3 when row A is chosen, and 2 rather than 1 when row B is chosen. Thus, X is the column player's strictly dominant strategy. Because A and X are mutual best responses, (A, X) is the unique Nash equilibrium.",
+        "node": 39
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 40
+      },
+      {
+        "role": "P",
+        "text": "Why must payoff order be stated?",
+        "node": 41
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 42
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 43
+      }
+    ],
+    "visualSource": null,
+    "sha256": "512ee726f9d7f4383f2534f4816b9a8b7276f4b563689a4ed7ba32d53de1cd17",
+    "passed": true,
+    "independentProfile": "ISO 14289-1:2014",
+    "validator": "veraPDF 1.28.2 --flavour ua1",
+    "independentPass": true,
+    "projectErrors": [],
+    "sourceRecordSha256": "8bf60e1fedaca3ece2a9ae4a94361f83dcb7575e62d205dd9da21d2a52c588f4",
+    "semanticsSha256": "00a509913dcfc7013f00040d9b75bf9615c8b4779f48345560307105bbf7b6e6",
+    "baselineSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
+    "resourceSemanticsSha256": "c4441841c9ff2946670ef8f434a4de531086582089102f00bf0c6505483cdd00",
+    "validatorReport": "validation_artifacts\\pdf_accessibility\\micro49_unique_nash_v2\\batches\\micro49\\revisions\\03e06890097d055c446385126b1b969c1c60a800a3c825761136eea598619eed\\validation\\verapdf.json",
+    "validatorReportSha256": "4bbc82c58b92a3b5c55375f1a897ee5bbb06f22d739d874b1284cbeca92cc03e",
+    "pageCounts": [
+      1,
+      1
+    ],
+    "geometryEqual": true,
+    "textExact": false,
+    "textWhitespaceOnlyEqual": false,
+    "ownerApprovedWordingOnly": true,
+    "changedPixels": 37716,
+    "differenceBounds": [
+      258,
+      895,
+      1002,
+      1130
+    ],
+    "renderReview": "PENDING",
+    "assistiveTechnology": "PENDING"
+  }
+]

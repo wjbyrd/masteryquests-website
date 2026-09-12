@@ -7027,7 +7027,7 @@
           "A Nash equilibrium is a cell where every player's action is a best response to the others."
         ],
         "watch": "Do not assume equilibrium is efficient. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.",
-        "worked": "For each strategy of the other player, mark the action that gives a player the larger payoff. In the displayed matrix, row A against column X gives (9, 9), while switching unilaterally to row B would lower the row player's payoff from 9 to 3. The column player also prefers X to Y when row A is chosen, so (A, X) is a cell of mutual best responses and is a Nash equilibrium.",
+        "worked": "For each rival strategy, identify the action with the larger payoff. If column X is chosen, row A gives 9 rather than 3 from row B. If column Y is chosen, row A gives 2 rather than 1 from row B. Thus, A is the row player's strictly dominant strategy. For the column player, X gives 9 rather than 3 when row A is chosen, and 2 rather than 1 when row B is chosen. Thus, X is the column player's strictly dominant strategy. Because A and X are mutual best responses, (A, X) is the unique Nash equilibrium.",
         "check": "Why must payoff order be stated?",
         "graph": true,
         "calculation": true,
@@ -7041,8 +7041,8 @@
           "filename": "matrix_multi_ne_1.webp",
           "sourceUrl": "data/question-assets/oligopoly/matrix_multi_ne_1.webp",
           "sha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
-          "imageAlt": "A two-by-two payoff matrix. Payoff order (Row firm, Column firm); Xx Y; A (9, 9) (2, 3); B (3, 2) (7, 7).",
-          "graphDescription": "A two-by-two payoff matrix. Payoff order (Row firm, Column firm); Xx Y; A (9, 9) (2, 3); B (3, 2) (7, 7)."
+          "imageAlt": "A two-by-two payoff matrix. Payoff order (Row firm, Column firm); Xx Y; A (9, 9) (2, 3); B (3, 2) (1, 1).",
+          "graphDescription": "A two-by-two payoff matrix. Payoff order (Row firm, Column firm); Xx Y; A (9, 9) (2, 3); B (3, 2) (1, 1)."
         }
       },
       "instructionalEvidence": {

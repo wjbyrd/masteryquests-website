@@ -4,7 +4,7 @@ from accessibility_gate import inspect,check_copies,active_gate
 from pypdf import PdfReader,PdfWriter
 from pypdf.generic import NameObject,TextStringObject,NumberObject,ContentStream,DecodedStreamObject,ArrayObject
 import copy,argparse
-parser=argparse.ArgumentParser();parser.add_argument("--run",choices=["pilot_blockers_v1","full_batch_v1","blocked_25_v1"],default="pilot_blockers_v1");parser.add_argument("--validation")
+parser=argparse.ArgumentParser();parser.add_argument("--run",choices=["pilot_blockers_v1","full_batch_v1","blocked_25_v1","micro49_nash_fix_v1","micro49_unique_nash_v2"],default="pilot_blockers_v1");parser.add_argument("--validation")
 args=parser.parse_args();RUN=args.run
 candidates={r["code"]:r["output"] for r in read_json(args.validation)} if args.validation else {}
 root=root_guard();out=contained(f'tmp/pdf_accessibility/{RUN}/negative');out.mkdir(parents=True,exist_ok=True)
@@ -103,7 +103,7 @@ probe=active_gate({'reviews':[fixture]})[0]
 rows.extend([
     {'test':'new_unvalidated_document','detected':'NO_VALIDATED_RELEASE_EVIDENCE' in probe['errors'],'projectErrors':probe['errors']},
     {'test':'missing_output','detected':'MISSING_OUTPUT' in probe['errors'],'projectErrors':probe['errors']}])
-if RUN in ('full_batch_v1','blocked_25_v1'):
+if RUN in ('full_batch_v1','blocked_25_v1','micro49_nash_fix_v1','micro49_unique_nash_v2'):
     rows.append(mutate('heading_formula_removed','MICRO-29',lambda w:first_role(w,'Formula').__setitem__(N('/S'),N('/Span'))))
     def reorder_card(w):
         lists=[e for e in elements(w._root_object['/StructTreeRoot']) if e.get('/S')=='/L']

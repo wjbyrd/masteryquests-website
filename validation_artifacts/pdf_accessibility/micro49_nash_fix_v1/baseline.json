@@ -1,0 +1,1085 @@
+{
+  "task": "MICRO49_PURE_STRATEGY_NASH_FIX_V1",
+  "root": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "branch": "main",
+  "head": "f1227000551377087d4f592fe2ea4ee75c60de6c",
+  "gitStatus": "clean",
+  "writable": true,
+  "source": {
+    "code": "MICRO-49",
+    "canonicalConceptIds": [
+      "oligopoly-game-theory-foundations"
+    ],
+    "title": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
+    "discipline": "micro",
+    "disciplineLabel": "MICROECONOMICS",
+    "focusTerms": [],
+    "content": {
+      "outcome": "Read payoff matrices and identify best responses, dominant strategies, and Nash equilibrium.",
+      "core": "Game theory represents strategic choices with players, actions, and payoffs that depend on what others do. Correctly reading the matrix is the prerequisite for identifying best responses and equilibrium. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.",
+      "recognition": [
+        "Identify the players, each player's available actions, and the payoff associated with every action combination.",
+        "For each possible rival action, mark the action that gives a player the highest payoff.",
+        "A dominant strategy is best regardless of the rival's action.",
+        "A Nash equilibrium is a cell where every player's action is a best response to the others."
+      ],
+      "watch": "Do not assume equilibrium is efficient. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.",
+      "worked": "For each strategy of the other player, mark the action that gives a player the larger payoff. In the displayed matrix, row A against column X gives (9, 9), while switching unilaterally to row B would lower the row player's payoff from 9 to 3. The column player also prefers X to Y when row A is chosen, so (A, X) is a cell of mutual best responses and is a Nash equilibrium.",
+      "check": "Why must payoff order be stated?",
+      "graph": true,
+      "calculation": true,
+      "difficulty": "Intermediate",
+      "time": "5 minutes",
+      "exampleQuestionId": "P62I-OLI-H-017",
+      "checkQuestionId": "P62I-OLI-R-006",
+      "workedLabel": "FINDING A NASH EQUILIBRIUM",
+      "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/matrix_multi_ne_1.webp",
+      "assetMetadata": {
+        "filename": "matrix_multi_ne_1.webp",
+        "sourceUrl": "data/question-assets/oligopoly/matrix_multi_ne_1.webp",
+        "sha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
+        "imageAlt": "A two-by-two payoff matrix. Payoff order (Row firm, Column firm); Xx Y; A (9, 9) (2, 3); B (3, 2) (7, 7).",
+        "graphDescription": "A two-by-two payoff matrix. Payoff order (Row firm, Column firm); Xx Y; A (9, 9) (2, 3); B (3, 2) (7, 7)."
+      }
+    },
+    "instructionalEvidence": {
+      "canonicalDefinition": "Read payoff matrices and analyze players, strategies, payoffs, conditional best responses, dominant strategies, pure-strategy Nash equilibrium, and cooperative versus noncooperative outcomes.",
+      "selectedQuestionIds": [
+        "P62I-OLI-EL-002",
+        "P62I-OLI-H-018",
+        "PM8-OLI-M-020",
+        "PM8-OLI-BR-023",
+        "P62I-OLI-H-017",
+        "P62I-OLI-R-006"
+      ],
+      "testedDistinctions": [
+        "best response",
+        "cooperative outcome",
+        "dominant strategy",
+        "game players strategies payoffs",
+        "nash equilibrium",
+        "noncooperative outcome",
+        "payoff matrix reading"
+      ],
+      "observedMisconceptions": [
+        "chooses_jointly_best_cell_instead_of_best_response",
+        "confuses_dominance_with_highest_single_payoff",
+        "equates_nash_with_joint_maximum",
+        "assumes_cooperation_is_stable",
+        "assumes_equilibrium_is_efficient"
+      ],
+      "questionsInspected": 106
+    },
+    "manualQuality": {
+      "normalWrittenEnglish": true,
+      "economicsConceptuallyClear": true,
+      "coreIdeaCoherent": true,
+      "recognitionCluesCompleteAndUseful": true,
+      "watchOutNaturalAndEvidenceBased": true,
+      "workedExampleTrulyWorked": true,
+      "workedExampleHasSetupReasoningConclusion": true,
+      "graphExplanationMatchesVisibleGraph": true,
+      "checkYourselfAligned": true,
+      "noStitchedFragments": true,
+      "noUnnecessaryAxisRestatement": true,
+      "noConclusionWithoutReasoning": true,
+      "noInvisiblePointOrCurveReferences": true,
+      "proseRevised": true,
+      "workedExampleSubstantiallyRewritten": true,
+      "coreIdeaStartsDirectly": true,
+      "conceptContaminationDetected": false,
+      "recognitionIsPedagogical": true,
+      "recognitionContainsUnexplainedGraphValues": false,
+      "workedExampleMatchesConcept": true,
+      "workedExampleMatchesVisibleGraph": true,
+      "numericValuesInternallyConsistent": true,
+      "subtitleIsConceptual": true,
+      "proseReadsNaturally": true,
+      "coreIdeaEstablishesTopicFirst": true,
+      "coreIdeaContainsPrematureExample": false,
+      "workedExampleLabelIsDescriptive": true,
+      "workedExampleDetailsNotDuplicatedInCoreIdea": true,
+      "subtitleRetiredFromStudentFacingModel": true
+    }
+  },
+  "semantics": {
+    "baselineSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
+    "sourceRecordSha256": "2a33c2b714404822d0c78487b521708da05feabe8b8bd34e56f1d605f257515b",
+    "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
+    "decorativeText": [
+      "+",
+      "?",
+      "!",
+      "#"
+    ],
+    "decorativeImageDecodedSha256": [
+      "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+      "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e",
+      "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+      "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+      "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+      "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+      "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+      "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
+    ],
+    "graphDecodedSha256": "c2d2eedc9b2cd9826655aa1b6cdc237b2271bf83621e2aecbb351c6db5eda6e1",
+    "reviewEvidence": "validation_artifacts/pdf_accessibility/pilot_blockers_v1/semantic_review.md",
+    "tableRequired": true,
+    "tableSource": {
+      "caption": "Payoff order: (Row firm, Column firm)",
+      "columnHeaders": [
+        "X",
+        "Y"
+      ],
+      "rowHeaders": [
+        "A",
+        "B"
+      ],
+      "cells": [
+        [
+          "(9, 9)",
+          "(2, 3)"
+        ],
+        [
+          "(3, 2)",
+          "(7, 7)"
+        ]
+      ]
+    },
+    "inlineFormulas": [],
+    "formulaReviewState": "SOURCE_CHECKED_AT_PENDING",
+    "tableRegions": {
+      "imageWidth": 728,
+      "imageHeight": 471,
+      "xEdges": [
+        0,
+        184,
+        450,
+        728
+      ],
+      "yEdges": [
+        30,
+        90,
+        274,
+        471
+      ],
+      "captionBottom": 30,
+      "coordinateSystem": "source image pixels, top-left origin; complete nonoverlapping partition"
+    },
+    "tableSourceSha256": "ef0faab48473b0d3da5f8c05ea52448e144398987c7087d560e73829bc947eb1",
+    "assetSourcePath": "build/faculty-build-composer/data/question-assets/oligopoly/matrix_multi_ne_1.webp",
+    "assetSourceSha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
+    "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/MICRO-49.pdf",
+    "visualSourceSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
+    "formulaCoverageReviewed": true,
+    "nonMathSymbols": []
+  },
+  "candidates": [
+    {
+      "code": "GEN-ECON-01",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-01\\after\\GEN-ECON-01.pdf",
+      "sha256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+      "mtimeNs": 1789166966605527300
+    },
+    {
+      "code": "GEN-ECON-02",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-02\\after\\GEN-ECON-02.pdf",
+      "sha256": "e63e333c15907fa5f159d9455fd59a3ce8339056b2af751e088bcc62f56297a8",
+      "mtimeNs": 1789166978785097200
+    },
+    {
+      "code": "GEN-ECON-03",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-03\\after\\GEN-ECON-03.pdf",
+      "sha256": "401531b7c34aa73a37e3d8ac5c8eb8106c769605bac590293fe0ac7308b39f8d",
+      "mtimeNs": 1789166990928834700
+    },
+    {
+      "code": "GEN-ECON-04",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-04\\after\\GEN-ECON-04.pdf",
+      "sha256": "ac0cd3d0de042ac8a99a5b63ea2bea6a0f7a59f7b4758163fc132cff5c9a7544",
+      "mtimeNs": 1789167003084141200
+    },
+    {
+      "code": "GEN-ECON-05",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-05\\after\\GEN-ECON-05.pdf",
+      "sha256": "d18b8d93a173646b2b750944055ed5c101a7e8631bae2b7dc35d79357b0e614f",
+      "mtimeNs": 1789167015167260100
+    },
+    {
+      "code": "GEN-ECON-06",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-06\\after\\GEN-ECON-06.pdf",
+      "sha256": "c431110e559b4806ac0d941d4896dd8f51e9895c0a22848e7f9a81b5490008b8",
+      "mtimeNs": 1789167027806980200
+    },
+    {
+      "code": "GEN-ECON-07",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-07\\after\\GEN-ECON-07.pdf",
+      "sha256": "ae201b24fb4ecfd91e7f32201e86a8054f7a390f0116aea106399ebd40fac45d",
+      "mtimeNs": 1789167040423630600
+    },
+    {
+      "code": "GEN-ECON-08",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-08\\after\\GEN-ECON-08.pdf",
+      "sha256": "164466c1355fe8c0fea4f763243edb08e248b199c4e571476971b1974f166f63",
+      "mtimeNs": 1789167053086476500
+    },
+    {
+      "code": "GEN-ECON-09",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-09\\after\\GEN-ECON-09.pdf",
+      "sha256": "9f1d47675e379a1b218a55f95acda87a09ccb867d1882893d563212a0f3267ad",
+      "mtimeNs": 1789167066439220100
+    },
+    {
+      "code": "GEN-ECON-10",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-10\\after\\GEN-ECON-10.pdf",
+      "sha256": "50e61c64134739bc2eabec6da204495144d92e36a15f6e973b6e8d92695af5a3",
+      "mtimeNs": 1789167079183171700
+    },
+    {
+      "code": "GEN-ECON-11",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-11\\after\\GEN-ECON-11.pdf",
+      "sha256": "2fa0511ee13165b8c00147387b180a277633277fa235863a2db706af2bfee970",
+      "mtimeNs": 1789167092020605000
+    },
+    {
+      "code": "GEN-ECON-12",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-12\\after\\GEN-ECON-12.pdf",
+      "sha256": "bd2adb538ab3f050005fb2499c360d7dcd696e45d467846641afdca0157d85f2",
+      "mtimeNs": 1789167105012529100
+    },
+    {
+      "code": "GEN-ECON-13",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-13.pdf",
+      "sha256": "9dda34ed489d90d1739960fbce6af7e0f46a2eac2346ad496e34a81a91d49798",
+      "mtimeNs": 1789173075335911400
+    },
+    {
+      "code": "GEN-ECON-14",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-14\\after\\GEN-ECON-14.pdf",
+      "sha256": "4e73cfe1274917a1d62e2b0b20a92d23c9a2dfd0014a3214fcd0f3a6e179a6b2",
+      "mtimeNs": 1789167133142093700
+    },
+    {
+      "code": "GEN-ECON-15",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-15.pdf",
+      "sha256": "1d67cf7bdd86ee6189ce33f24288ecb9922f8b209456a9c63e4f19f04eb2fbd8",
+      "mtimeNs": 1789173075730323200
+    },
+    {
+      "code": "GEN-ECON-16",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-16.pdf",
+      "sha256": "8496532c02d196245fe11881a22163022811c1c1b5286574ffa88ae211d65000",
+      "mtimeNs": 1789173076125510800
+    },
+    {
+      "code": "GEN-ECON-17",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-17\\after\\GEN-ECON-17.pdf",
+      "sha256": "7aea0a0d3de4c3b628f0e09afd622e593d9f7d07be9b40d4a83670c26e645cae",
+      "mtimeNs": 1789167171906055900
+    },
+    {
+      "code": "GEN-ECON-18",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-18.pdf",
+      "sha256": "699c0af6c15b20a1837903a42178eb56fbf321de11eb177a08a41c63e2f53556",
+      "mtimeNs": 1789173076537237500
+    },
+    {
+      "code": "GEN-ECON-19",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-19\\after\\GEN-ECON-19.pdf",
+      "sha256": "9a13a124bf65866bb77c43a3b7dc9accc2589d37397454e25f254cabc3550cb6",
+      "mtimeNs": 1789167198558733500
+    },
+    {
+      "code": "GEN-ECON-20",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-20\\after\\GEN-ECON-20.pdf",
+      "sha256": "86cb46fa02786610c7914776b4853ae4dfe1fe5ba1795f48188b1f7403d6bcf4",
+      "mtimeNs": 1789167212586733200
+    },
+    {
+      "code": "GEN-ECON-21",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-21\\after\\GEN-ECON-21.pdf",
+      "sha256": "b7db97ac0914ba63b9284e66880adfb54bbbffac63db62dc00fa4297f4d0536d",
+      "mtimeNs": 1789167298215408800
+    },
+    {
+      "code": "GEN-ECON-22",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-22\\after\\GEN-ECON-22.pdf",
+      "sha256": "b137fda45c49bb23731068594c8dcb195d24a9e194a863cded203aab00d550df",
+      "mtimeNs": 1789167310904531000
+    },
+    {
+      "code": "GEN-ECON-23",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-23\\after\\GEN-ECON-23.pdf",
+      "sha256": "cf76e44b769c42d9759832b00f6f9d66dc53343fa5969f32f8fc18853cfa939d",
+      "mtimeNs": 1789167323655846900
+    },
+    {
+      "code": "GEN-ECON-24",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-24.pdf",
+      "sha256": "3642c37fdb623bb59d240ad73963c2fd659b9448cdc2cf4c0f024ddd1b565c86",
+      "mtimeNs": 1789173076985232000
+    },
+    {
+      "code": "GEN-ECON-25",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-25.pdf",
+      "sha256": "5e78c9897f3c7ce527d29e2cc23e5237aa4603443b9d7f2963354ac27cd71c30",
+      "mtimeNs": 1789173077430856700
+    },
+    {
+      "code": "GEN-ECON-26",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-26\\after\\GEN-ECON-26.pdf",
+      "sha256": "c6d8e829a04405085067d7e5d5a72515af8bfb743f9f68f30f980401730a9e3b",
+      "mtimeNs": 1789167360942725700
+    },
+    {
+      "code": "MACRO-01",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-01.pdf",
+      "sha256": "a70ae14dd55e60b10a6fe7ebb6c8c03a5c8f24416faad1420c75ab5047251381",
+      "mtimeNs": 1789167800805117000
+    },
+    {
+      "code": "MACRO-02",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-02.pdf",
+      "sha256": "fd80020242d98ac589bc63c9de91b431f59f7b926429495b2fedb47b776d6346",
+      "mtimeNs": 1789167800979225200
+    },
+    {
+      "code": "MACRO-03",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-03.pdf",
+      "sha256": "ad6c6d600fd0ed1216ba160cc9e691ab66d683640dfedc9440ac1f3cb2e9a06e",
+      "mtimeNs": 1789167801149363900
+    },
+    {
+      "code": "MACRO-04",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-04.pdf",
+      "sha256": "64c42629ce5a10cc1be253a9e7e609a7faf3c66f9f765e31a6134b0dc59a93c8",
+      "mtimeNs": 1789167801328713100
+    },
+    {
+      "code": "MACRO-05",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-05.pdf",
+      "sha256": "8b80775179fb77d5e8793d615e2b8338695838dade0b434ce20d234f1955e9e5",
+      "mtimeNs": 1789167801509757100
+    },
+    {
+      "code": "MACRO-06",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-06.pdf",
+      "sha256": "219e10e207631d6e5e53bc25c23442b8a9fc0046677aeafcac720767ea9b89f8",
+      "mtimeNs": 1789167801686487000
+    },
+    {
+      "code": "MACRO-07",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-07.pdf",
+      "sha256": "0c609858a551e96cb7763c9668c5b3551b09dcdfe2d08b697a1dd626235001f7",
+      "mtimeNs": 1789167801887314600
+    },
+    {
+      "code": "MACRO-08",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-08.pdf",
+      "sha256": "07bbbd33f6727d9beb7dcf433c9bec18b5b61203801786115fabc62a57d6feb6",
+      "mtimeNs": 1789167802063591300
+    },
+    {
+      "code": "MACRO-09",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-09.pdf",
+      "sha256": "44c27f851261b26deac66410fd1edc1ec90a0e4c1e6c7f6dc50bc949e3eb0ead",
+      "mtimeNs": 1789167802266658400
+    },
+    {
+      "code": "MACRO-10",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-10.pdf",
+      "sha256": "3393efc5a95def6eba9ad502b7a905c809e9216efce49662b2b21b735e77ab20",
+      "mtimeNs": 1789167802470921600
+    },
+    {
+      "code": "MACRO-11",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-11.pdf",
+      "sha256": "e1ab76b57e73c6557d29741b53babdca09d08320d6aa78269858dd759d4eb7e8",
+      "mtimeNs": 1789167802702266200
+    },
+    {
+      "code": "MACRO-12",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-12.pdf",
+      "sha256": "f5c3eac342bb2c82d539258a090bb0b64f00db56b47399af1c1206ee84e27b09",
+      "mtimeNs": 1789167802928995800
+    },
+    {
+      "code": "MACRO-13",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-13.pdf",
+      "sha256": "6871cb7826b4f1a2d7b5b0cbb284d9f8206a99eecc238fef216f749ea78340b6",
+      "mtimeNs": 1789167803152027500
+    },
+    {
+      "code": "MACRO-14",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-14.pdf",
+      "sha256": "2d6710186ef2107245f6a7e85f9d6e0280a1890aecad2bf64f675d2a9a49a0e0",
+      "mtimeNs": 1789167803334846300
+    },
+    {
+      "code": "MACRO-15",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-15.pdf",
+      "sha256": "7f83939f5bbb5f5f9d0e7ce87b95d6164de8905260c12a362b1acad36b983f36",
+      "mtimeNs": 1789167803515677900
+    },
+    {
+      "code": "MACRO-16",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-16.pdf",
+      "sha256": "334441ff2dc0ec0c6c01db39dea883bf0651010614cd125d3e88bd60974b1e2e",
+      "mtimeNs": 1789167803695123200
+    },
+    {
+      "code": "MACRO-17",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-17.pdf",
+      "sha256": "31d79cde9c40bc4a5a0ce1db2409cfdcea2db3319b17616604918144d13e72f1",
+      "mtimeNs": 1789167803934028500
+    },
+    {
+      "code": "MACRO-18",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-18.pdf",
+      "sha256": "d1a32ef8731f87563b6898df70e79d2781ce7681ecbe8967a6787c7092ee57d7",
+      "mtimeNs": 1789167804161122600
+    },
+    {
+      "code": "MACRO-19",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-19.pdf",
+      "sha256": "8c34b12318dc70948782242e25b881310f1fe43bca0d6635ed799056a3a52d31",
+      "mtimeNs": 1789167804372110500
+    },
+    {
+      "code": "MACRO-20",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-20.pdf",
+      "sha256": "ffc0ab32e34180bbfdc08acbe70ed6d36dd34b125471e3b6d4a0c3aeeb7491d7",
+      "mtimeNs": 1789167804850890100
+    },
+    {
+      "code": "MACRO-21",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-21.pdf",
+      "sha256": "c333589b11177ea1ff2acb76f47effe5eed47ad22d1e9301018e0205f77e50de",
+      "mtimeNs": 1789167947143756100
+    },
+    {
+      "code": "MACRO-22",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-22.pdf",
+      "sha256": "b769dfeed954812c4ab6b4e78a0c8977f5cf1a2db188d0c79a10ba160fb56c69",
+      "mtimeNs": 1789167947313066900
+    },
+    {
+      "code": "MACRO-23",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-23.pdf",
+      "sha256": "c640fe143935d6ce5248749b8658f7ea55b0a3653406cfad25eda287a28a4d59",
+      "mtimeNs": 1789167947530417700
+    },
+    {
+      "code": "MACRO-24",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-24.pdf",
+      "sha256": "72b1ea705f7ff9e33d624f5293c1143c05ae1472882c0ddb10efb3a435087a5f",
+      "mtimeNs": 1789167947756660500
+    },
+    {
+      "code": "MACRO-25",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-25.pdf",
+      "sha256": "566adc406a9aaaacd410cb011de567464b433c71c22937b879715dc0588dc655",
+      "mtimeNs": 1789167947941408300
+    },
+    {
+      "code": "MACRO-26",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-26.pdf",
+      "sha256": "803c909e6c37b3e58c2076f8109c97ff9be8254381841e17854520635c2a2632",
+      "mtimeNs": 1789167948130226500
+    },
+    {
+      "code": "MACRO-27",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-27.pdf",
+      "sha256": "1b9984085b11470a4541ab19fb410a5941facc66aeff25349e6582c411b3ad2e",
+      "mtimeNs": 1789167948290166900
+    },
+    {
+      "code": "MACRO-28",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-28.pdf",
+      "sha256": "53c6298c704ac11358bac520bb5ebe41a2ef02fe5b5714eb7b9c1a1d28b977b2",
+      "mtimeNs": 1789167948557674400
+    },
+    {
+      "code": "MACRO-29",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-29.pdf",
+      "sha256": "64c9ed2467ea2120aad2028671a01895fb0fdb3e409f774688c5bf5523f71805",
+      "mtimeNs": 1789167948924954600
+    },
+    {
+      "code": "MACRO-30",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\MACRO-30.pdf",
+      "sha256": "5a64bd49c0a2d34a3cb70fb8cf98fdcabfdd30cd523cc91247bc2bdc040a9473",
+      "mtimeNs": 1789173078687093600
+    },
+    {
+      "code": "MACRO-31",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\MACRO-31.pdf",
+      "sha256": "b9093d63bdc9a9f23135d9adf4a39dab6fb334e85590d5103968e31b969d31ff",
+      "mtimeNs": 1789173080106816300
+    },
+    {
+      "code": "MACRO-32",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-32.pdf",
+      "sha256": "02334be093ae6d37f9afd55b72e0863a6a7e0a0ab29c02a8ffb2d1f0536c38f6",
+      "mtimeNs": 1789167949642092300
+    },
+    {
+      "code": "MACRO-33",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-33.pdf",
+      "sha256": "4b73bd86c707618e2d2c3d0695ef19f59e584c3cc4a8854b4427a9a040c1472c",
+      "mtimeNs": 1789167949912512400
+    },
+    {
+      "code": "MACRO-34",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-34.pdf",
+      "sha256": "9ef2b3ac8801846a9647372ab1c28797e13e9df087b657827847de79c2b1a75e",
+      "mtimeNs": 1789167950642403800
+    },
+    {
+      "code": "MACRO-35",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-35.pdf",
+      "sha256": "afcdf883eabf3523b92ec6472bd5a0569d62cf17ac362a8319950e653be7ce6e",
+      "mtimeNs": 1789167951339123000
+    },
+    {
+      "code": "MACRO-36",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-36.pdf",
+      "sha256": "78729a55e1ab4445dc114446f0581ed4aac263a6be37ee1ce48ae628ce3bd4f5",
+      "mtimeNs": 1789167951841956600
+    },
+    {
+      "code": "MACRO-37",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-37.pdf",
+      "sha256": "000d60ab56ae2185425d8cb358b8a028e37b7b85d60c44d76e655d3479eef48f",
+      "mtimeNs": 1789167952091099700
+    },
+    {
+      "code": "MACRO-38",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-38.pdf",
+      "sha256": "f663776ded3ba1d35c81a97f7138f5265c7b45c0f3099f889858b21064e5dc78",
+      "mtimeNs": 1789167952356597700
+    },
+    {
+      "code": "MACRO-39",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\4\\after\\MACRO-39.pdf",
+      "sha256": "4d3adc8146d1f5d65b091a72d222136bc2d9095fa4f1bd86de41da66ce1835d1",
+      "mtimeNs": 1789169731821706300
+    },
+    {
+      "code": "MACRO-40",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\4\\after\\MACRO-40.pdf",
+      "sha256": "0bcb7cebee08bb5ff0d4e73d81ec9358b54ec363113f1af538b369a203809ada",
+      "mtimeNs": 1789169732120977200
+    },
+    {
+      "code": "MACRO-41",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-41.pdf",
+      "sha256": "70ac4df3360853b339b49d3291aa340fd9a46608758e293c54695f8f2f46740d",
+      "mtimeNs": 1789167947329558000
+    },
+    {
+      "code": "MACRO-42",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-42.pdf",
+      "sha256": "502900635047914aae4698aa4ec6875d2e79a058fdcd807d6081193be956be3c",
+      "mtimeNs": 1789167947742573100
+    },
+    {
+      "code": "MACRO-43",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-43.pdf",
+      "sha256": "b85c3672abf726821ac19ca3e769040f93fda8e4bda6671268b2ba006e70f57b",
+      "mtimeNs": 1789167948413868700
+    },
+    {
+      "code": "MACRO-44",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-44.pdf",
+      "sha256": "ac734fbba53618c3186fad51f1ee07e0ae2aff7ee11d587029fcf6b953d1b440",
+      "mtimeNs": 1789167949097541300
+    },
+    {
+      "code": "MACRO-45",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-45.pdf",
+      "sha256": "ff9c0cb19db242cc58ac5446de32de560e939565e6039df54a4cbed4cf310d2c",
+      "mtimeNs": 1789167949808190000
+    },
+    {
+      "code": "MACRO-46",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-46.pdf",
+      "sha256": "4446d646153ca54c5bca319987a87bba98eeed4db4e393dc311f1286fbe2eaa3",
+      "mtimeNs": 1789167950173313600
+    },
+    {
+      "code": "MACRO-47",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-47.pdf",
+      "sha256": "761cad1ea973a853e4a8540b71860a09fb50b2794094c414e2faa170bd1a6763",
+      "mtimeNs": 1789167950558139300
+    },
+    {
+      "code": "MACRO-48",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-48.pdf",
+      "sha256": "cc0f78b77f704d7cdb4df84b72bbe5183a4fc64f168145016d5e4f0ececc95a1",
+      "mtimeNs": 1789167950955285900
+    },
+    {
+      "code": "MACRO-49",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-49.pdf",
+      "sha256": "d73e28cf1783fc71361cae38aea5e6081878b149aade49f408172b108bc0b0f0",
+      "mtimeNs": 1789167951339123000
+    },
+    {
+      "code": "MACRO-50",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-50.pdf",
+      "sha256": "58fc80217a7d406a8071c453300bbf6ab1f985b3bd679644469c7f2629e9e233",
+      "mtimeNs": 1789167952091099700
+    },
+    {
+      "code": "MACRO-51",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-51.pdf",
+      "sha256": "e51d71b35aa110346b7ff585d6c9ddbb71ceba4e0fb3a2e05fb672e80ea636a6",
+      "mtimeNs": 1789167952789079400
+    },
+    {
+      "code": "MACRO-52",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\layout_final\\after\\MACRO-52.pdf",
+      "sha256": "fb0200ffa57797c4a1180b9120ba8952837281e8eebe2db45e59432b71202e46",
+      "mtimeNs": 1789169293325042800
+    },
+    {
+      "code": "MACRO-53",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-53.pdf",
+      "sha256": "f938ba98a0181cfe7ceb2ac1b96420281bd0f76bd37cf9c91aab4bb47630d717",
+      "mtimeNs": 1789167953341920600
+    },
+    {
+      "code": "MACRO-54",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-54.pdf",
+      "sha256": "3d166786cb1bc0831242e7b7b7a3d92df93bc887b5c8ad6ac8d47a6d757a181f",
+      "mtimeNs": 1789167953795223700
+    },
+    {
+      "code": "MACRO-55",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\5\\after\\MACRO-55.pdf",
+      "sha256": "3c528473f20884da705360e428cf99c23344ccb1dc80781d51c2568f80fcd382",
+      "mtimeNs": 1789169742650917000
+    },
+    {
+      "code": "MACRO-56",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-56.pdf",
+      "sha256": "715ea54d715dbf1187df76dfcfd9a370e63c0c70f08055affefc6032be9dbf52",
+      "mtimeNs": 1789167955046449200
+    },
+    {
+      "code": "MACRO-57",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\layout_final\\after\\MACRO-57.pdf",
+      "sha256": "04a82d1331140c79340aee960602c335b2549afa19d2821b255eb47ec2b3ceea",
+      "mtimeNs": 1789169294010982500
+    },
+    {
+      "code": "MICRO-01",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-01.pdf",
+      "sha256": "dcbf79cb824d88ed41d5b8e6dcd8824f2845facf66e805f3df4c11fd9177c85c",
+      "mtimeNs": 1789167571111120000
+    },
+    {
+      "code": "MICRO-02",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-02.pdf",
+      "sha256": "2041ce48c51101a737d5fbd064fb7cd523a2d6b68b79f098e6eed35321399f09",
+      "mtimeNs": 1789167571405994700
+    },
+    {
+      "code": "MICRO-03",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-03.pdf",
+      "sha256": "f99324b114ed6b2b389def8aafcbd2aae26fb615866850779111b520d6ac5304",
+      "mtimeNs": 1789167571568334300
+    },
+    {
+      "code": "MICRO-04",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-04.pdf",
+      "sha256": "45d1cfaeafa2d195e6b3545d911521b91ae32ff0df9e892cd47dc4814d22cf3d",
+      "mtimeNs": 1789173110730942600
+    },
+    {
+      "code": "MICRO-05",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-05.pdf",
+      "sha256": "4b51e3c55a8063ccf37aeca8200a6167b35421f91e5e402407267154e171ff78",
+      "mtimeNs": 1789167572029638600
+    },
+    {
+      "code": "MICRO-06",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\5\\after\\MICRO-06.pdf",
+      "sha256": "ffaf1120c567ca792ce64578197763ba51300e06db5164722f4d8c9268832a77",
+      "mtimeNs": 1789169745946776300
+    },
+    {
+      "code": "MICRO-07",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\5\\after\\MICRO-07.pdf",
+      "sha256": "e5eedd0dab70dd4becb957759dcdb763f5b61c9ed6f885e74112d7324a40dd3a",
+      "mtimeNs": 1789169746148201600
+    },
+    {
+      "code": "MICRO-08",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-08.pdf",
+      "sha256": "29f6eef4c96e8c6c8acacc89ee42dc22077749a99940eeb061be06b73c3e5c10",
+      "mtimeNs": 1789173111056189500
+    },
+    {
+      "code": "MICRO-09",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-09.pdf",
+      "sha256": "cfadb2b4e31c44cf20b7c5ac67b544fada3bc83205004d08c83a657f43d890f7",
+      "mtimeNs": 1789167572764178200
+    },
+    {
+      "code": "MICRO-10",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-10.pdf",
+      "sha256": "9ba738ca798bae76f395e8bd4789d458f01599870479b778a82e9b62b04886e7",
+      "mtimeNs": 1789173111740010500
+    },
+    {
+      "code": "MICRO-11",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-11.pdf",
+      "sha256": "19b71c1914a372244b4ad1afa25bc704147f58b0d4e6f06ae9fb612af7876c51",
+      "mtimeNs": 1789173112434162800
+    },
+    {
+      "code": "MICRO-12",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-12.pdf",
+      "sha256": "441e0a1f806486b5ebcdbfef85cdf95e28942b7e394fb13ae0f5ca6f2bbd8f7e",
+      "mtimeNs": 1789173113129262000
+    },
+    {
+      "code": "MICRO-13",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-13.pdf",
+      "sha256": "ff437b875467c45216e7aed1fe1dfa577a4f4f0fa9e52032286b421a15f1dbdb",
+      "mtimeNs": 1789173113963114800
+    },
+    {
+      "code": "MICRO-14",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-14.pdf",
+      "sha256": "3b5ab9e3140eb0fd1b704d52af2bfaa4780841673166090232246a50085fee40",
+      "mtimeNs": 1789167573823467800
+    },
+    {
+      "code": "MICRO-15",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-15.pdf",
+      "sha256": "5d4bbd4cd01b008a03534696feeeaf60647fae7f92fb9a072f60892d0eb1e182",
+      "mtimeNs": 1789167573982173000
+    },
+    {
+      "code": "MICRO-16",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\wording_context\\after\\MICRO-16.pdf",
+      "sha256": "1581c8764d956b75fec5f159b557a3410ac53c9f52838c59eda1df44f422053f",
+      "mtimeNs": 1789173214559135200
+    },
+    {
+      "code": "MICRO-17",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-17.pdf",
+      "sha256": "63f4a341fb05a8474f7599a92d8b1a08814aad9d3dfccacd4ceac049ee64be9b",
+      "mtimeNs": 1789173114728676900
+    },
+    {
+      "code": "MICRO-18",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-18.pdf",
+      "sha256": "8c95d5f32ca2c5a948a7779c872f5cf8f07fa021190b8fb6b7510e46e65b803b",
+      "mtimeNs": 1789167574569673800
+    },
+    {
+      "code": "MICRO-19",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-19.pdf",
+      "sha256": "a9c0a14ae33532922d6ba7456fe3d8112e90754762df01fc8b255704d7c8b7b6",
+      "mtimeNs": 1789167574743926900
+    },
+    {
+      "code": "MICRO-20",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\6\\after\\MICRO-20.pdf",
+      "sha256": "9d5588afade790d5f4d5c9cef7213c2898e7520ae7f6f0c03dae4b2da635e6a4",
+      "mtimeNs": 1789169768824016700
+    },
+    {
+      "code": "MICRO-21",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-21.pdf",
+      "sha256": "44367055d71f462325ffd25310326c52c4d2d2b6121d741f40795fdd90e377c8",
+      "mtimeNs": 1789167598914987700
+    },
+    {
+      "code": "MICRO-22",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-22.pdf",
+      "sha256": "2838c835fa951582363b5a5371f6f5da047efcf5ba94ac45107206e4fa1a08a6",
+      "mtimeNs": 1789173115145719200
+    },
+    {
+      "code": "MICRO-23",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-23.pdf",
+      "sha256": "b8b339a626d056165b835272b21d72a6806576cacf615fc0cbfd7ca7f1d49c9a",
+      "mtimeNs": 1789173115524578800
+    },
+    {
+      "code": "MICRO-24",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-24.pdf",
+      "sha256": "a3a8258ec4c1b3116a5a28f0e249a46f2ccf5debd94a445e48cfd9513d017076",
+      "mtimeNs": 1789173116110726000
+    },
+    {
+      "code": "MICRO-25",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-25.pdf",
+      "sha256": "a9b32835116185c38a4fbc3c32b83cf12944c8bda8243e1cd4ac982f375b53c1",
+      "mtimeNs": 1789167599852523800
+    },
+    {
+      "code": "MICRO-26",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-26.pdf",
+      "sha256": "97d74729a47cb81fc927f22e7a7831cba4f6a1123b6c9662ee13d5f2e772c023",
+      "mtimeNs": 1789167600153782800
+    },
+    {
+      "code": "MICRO-27",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-27.pdf",
+      "sha256": "cf859b64accd942006ec73d6dceff980c90f36203857b46aeca70e775fb62f3a",
+      "mtimeNs": 1789167600429264400
+    },
+    {
+      "code": "MICRO-28",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-28.pdf",
+      "sha256": "e469f3d652c9362de40fe62f14787803a78822b09d951a60eacb54d21c3aeb51",
+      "mtimeNs": 1789167600725763200
+    },
+    {
+      "code": "MICRO-29",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-29.pdf",
+      "sha256": "af23d2644f9bd24e4fb20d1fd93cac11b886392da091f92c2f5dcd72f9f064d4",
+      "mtimeNs": 1789167601020169100
+    },
+    {
+      "code": "MICRO-30",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-30.pdf",
+      "sha256": "525f3add522de0c304ff5c8fea67403556a6d8dd0fb19f0bfdfc7e30d4be5b62",
+      "mtimeNs": 1789167601333162000
+    },
+    {
+      "code": "MICRO-31",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-31.pdf",
+      "sha256": "397f2424086c938a027968b4023addc3e002469222ddbad7c4c1c9d51cbce6e8",
+      "mtimeNs": 1789167601640078200
+    },
+    {
+      "code": "MICRO-32",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-32.pdf",
+      "sha256": "dff67da95808d3a26f98b6de12accc28b36832a9dfa1cd223519909391ba5a9e",
+      "mtimeNs": 1789167601909978100
+    },
+    {
+      "code": "MICRO-33",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-33.pdf",
+      "sha256": "8cbec2e4a6f27ad429ddc66ffc06fb5058d117449eeab375cd5a28be3decebb9",
+      "mtimeNs": 1789167602193680300
+    },
+    {
+      "code": "MICRO-34",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\wording_context\\after\\MICRO-34.pdf",
+      "sha256": "81357c578b057099b674c68345d812ad1d70cb61f6a209d5b65fe20580431577",
+      "mtimeNs": 1789173214798706000
+    },
+    {
+      "code": "MICRO-35",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-35.pdf",
+      "sha256": "f4246d1ac2d472b50492994e32e6fa96d603f8b935430a5e7f2ddac7e3d4d57c",
+      "mtimeNs": 1789167602735175900
+    },
+    {
+      "code": "MICRO-36",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-36.pdf",
+      "sha256": "18a6c02c3653ca1cde03876a478dc964a3e38d8ecc54fc771fb8b579b5e23320",
+      "mtimeNs": 1789167603077308600
+    },
+    {
+      "code": "MICRO-37",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-37.pdf",
+      "sha256": "d4cd05c41f8574cf901de1cd74da371edbe33cc4333434ca6fbe891f6cc855f5",
+      "mtimeNs": 1789167603374183900
+    },
+    {
+      "code": "MICRO-38",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-38.pdf",
+      "sha256": "60fd7d680470e88abaca3e9387aee9103c5ccffa7136865c7d0e07ccd08294ef",
+      "mtimeNs": 1789167603691932500
+    },
+    {
+      "code": "MICRO-39",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\7\\after\\MICRO-39.pdf",
+      "sha256": "d9a01e3c67c2e6a3a9a26d9c461615a045cf8bd9b611d3eb16f429e7e9a72490",
+      "mtimeNs": 1789169778943038300
+    },
+    {
+      "code": "MICRO-40",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-40.pdf",
+      "sha256": "9d6319a9e27ef6a46f8dffa2eda116a9d06bd82d5d7aed31a0094d61cd978b00",
+      "mtimeNs": 1789167604311626200
+    },
+    {
+      "code": "MICRO-41",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-41.pdf",
+      "sha256": "f43904710893c5e143072e6121706f7c210db030d4cfd180dfcea2fa483fa95a",
+      "mtimeNs": 1789167800436319600
+    },
+    {
+      "code": "MICRO-42",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-42.pdf",
+      "sha256": "c1e5e78644a246182b261f5a768128b9112da4390c5b91cac63b116f68c100ec",
+      "mtimeNs": 1789167800624499400
+    },
+    {
+      "code": "MICRO-43",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-43.pdf",
+      "sha256": "a071a00353a42117c675f2f2179d9c66a1c3401167092770ecf52edbde5ab348",
+      "mtimeNs": 1789167800797137500
+    },
+    {
+      "code": "MICRO-44",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-44.pdf",
+      "sha256": "d8a2f41a85b6a40b20581e362dca4910b39b47f8b2b9554452f87338538e94f5",
+      "mtimeNs": 1789167801094830100
+    },
+    {
+      "code": "MICRO-45",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-45.pdf",
+      "sha256": "52d5e249d0d0dbbeaca3590e834726f1cff10fc81b846a5062f7e654ccbf5323",
+      "mtimeNs": 1789167801391227700
+    },
+    {
+      "code": "MICRO-46",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-46.pdf",
+      "sha256": "88d2d3466d6f293457007b9caed68eb5943f1974fb5f27a724cba2223ebea75d",
+      "mtimeNs": 1789167801576534800
+    },
+    {
+      "code": "MICRO-47",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-47.pdf",
+      "sha256": "1def57d44726e4c7fe8e55e008b78b59130602fa90df85b9738046a46a00abc9",
+      "mtimeNs": 1789167801866722300
+    },
+    {
+      "code": "MICRO-48",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-48.pdf",
+      "sha256": "f2a94860ad2313eb87b525da688f93fe5a310bf67284ebe6191e7c81282f7193",
+      "mtimeNs": 1789167802079024500
+    },
+    {
+      "code": "MICRO-49",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-49.pdf",
+      "sha256": "6ab5980450073621f71f480c932ecdd32ab37206e956bb5b71abc09f2e90545e",
+      "mtimeNs": 1789167802313351200
+    },
+    {
+      "code": "MICRO-50",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-50.pdf",
+      "sha256": "36e3a9ac45c12b20c887d10b9c3d107e1b4c32114e452e313c741277f03586ba",
+      "mtimeNs": 1789173116708395600
+    },
+    {
+      "code": "MICRO-51",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-51.pdf",
+      "sha256": "d51f7be0799894115c5c05dc7b228bc16c967260437ec2ea4cf4d36a3f2e5a5e",
+      "mtimeNs": 1789167802753273300
+    },
+    {
+      "code": "MICRO-52",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\wording_context\\after\\MICRO-52.pdf",
+      "sha256": "42ee6e3daa65e822a935c06460c4810edff08b2e0ef82df4b12598ff87c99ac9",
+      "mtimeNs": 1789173215303675600
+    },
+    {
+      "code": "MICRO-53",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-53.pdf",
+      "sha256": "d435580810f2a04d785921f9ac9d126132e2023d9628c5db97ada170a1341cae",
+      "mtimeNs": 1789167803143675500
+    },
+    {
+      "code": "MICRO-54",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_later\\revisions\\d840552cc1fc4feed69f70363fcbd99dcccae7a6363aa585026d77c97550870e\\after\\MICRO-54.pdf",
+      "sha256": "384e176d7b659680b81294073eb3bc73f8e61adbe790b34f807cb2ed531fdfef",
+      "mtimeNs": 1789173154793702600
+    },
+    {
+      "code": "MICRO-55",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_later\\revisions\\d840552cc1fc4feed69f70363fcbd99dcccae7a6363aa585026d77c97550870e\\after\\MICRO-55.pdf",
+      "sha256": "fc765a350e0619283c92c6ca4b45e1b9185cde4bbed839e2c39d7d20f0e0b6a4",
+      "mtimeNs": 1789173156493802200
+    },
+    {
+      "code": "MICRO-56",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-56.pdf",
+      "sha256": "cf649925209a78c42df75131038ed4cc98fcab2afb2a6db363c49d79093e322d",
+      "mtimeNs": 1789167802262630000
+    },
+    {
+      "code": "MICRO-57",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-57.pdf",
+      "sha256": "8f484bb50b6e9995e152198b35b673d6157dc21d77b216bd60c30229a9ff2eb7",
+      "mtimeNs": 1789167802962772200
+    },
+    {
+      "code": "MICRO-58",
+      "path": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_later\\revisions\\d840552cc1fc4feed69f70363fcbd99dcccae7a6363aa585026d77c97550870e\\after\\MICRO-58.pdf",
+      "sha256": "9e86496e2d8a10084b583833690930ef5561b6327494bce9e5809a69c9454e5b",
+      "mtimeNs": 1789173157731093500
+    },
+    {
+      "code": "MICRO-59",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-59.pdf",
+      "sha256": "76c299411200f3716f8b742549921c6e5994750a12deb287d3ac41ebd83b6837",
+      "mtimeNs": 1789167804551688400
+    },
+    {
+      "code": "MICRO-60",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-60.pdf",
+      "sha256": "4aa56d43a7a7a30741b16ba93627a90b0ecfc305e8189f126ccc4885f57310d6",
+      "mtimeNs": 1789167804950273400
+    },
+    {
+      "code": "MICRO-61",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-61.pdf",
+      "sha256": "9db213b565542d83df4e53954ea53ca448432bbb626486f856849b60c059b50f",
+      "mtimeNs": 1789167805356085800
+    },
+    {
+      "code": "MICRO-62",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-62.pdf",
+      "sha256": "b0682983cdfd27bb05e4afbf3d10bc79f60d7a976cbdb2ebabcc08168b743f19",
+      "mtimeNs": 1789167805991229900
+    },
+    {
+      "code": "MICRO-63",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-63.pdf",
+      "sha256": "d971566a54845a228003f2609324b20f68b684ea7dd2b7326089986240cd65af",
+      "mtimeNs": 1789167806500138400
+    },
+    {
+      "code": "MICRO-64",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-64.pdf",
+      "sha256": "497712eed8b5ccd30ce8477884dc4661afd72efb57bf73b5a471778e61844b0b",
+      "mtimeNs": 1789167806948778000
+    },
+    {
+      "code": "MICRO-65",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-65.pdf",
+      "sha256": "9567e607464cf0a3395c860f8f977ed599f84b9cf80b906237162a6a1137fec0",
+      "mtimeNs": 1789167807379860200
+    },
+    {
+      "code": "MICRO-66",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-66.pdf",
+      "sha256": "20ad060edd7d4c11af6ee01fc486422444c475bf5996b94c43b927b03229157c",
+      "mtimeNs": 1789167807782314900
+    },
+    {
+      "code": "MICRO-67",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-67.pdf",
+      "sha256": "222c3b2b428c8ccad3c83c25148943335f9bdbf93adb2c361d8b43091560813d",
+      "mtimeNs": 1789167808191423600
+    },
+    {
+      "code": "MICRO-68",
+      "path": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-68.pdf",
+      "sha256": "aee02d9f70b4de95808b58e29a18f5da5041f75f1d23df98a506f8e1915a7185",
+      "mtimeNs": 1789167808583194400
+    }
+  ]
+}

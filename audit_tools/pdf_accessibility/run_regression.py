@@ -3,13 +3,15 @@ from repo_guard import *
 import re, sys
 root = root_guard()
 phase = sys.argv[1] if len(sys.argv)>1 else 'baseline'
-if phase not in ('baseline','final','pilot_blockers_v1','full_batch_v1_baseline','full_batch_v1_general','full_batch_v1_micro','full_batch_v1_macro','full_batch_v1_final','blocked_25_v1'):
+if phase not in ('baseline','final','pilot_blockers_v1','full_batch_v1_baseline','full_batch_v1_general','full_batch_v1_micro','full_batch_v1_macro','full_batch_v1_final','blocked_25_v1','micro49_nash_fix_v1','micro49_unique_nash_v2'):
     raise ValueError('Unexpected phase')
 scratch = contained(f'tmp/pdf_accessibility/full_batch_v1/regression/{phase}' if phase.startswith('full_batch_v1') else f'tmp/pdf_accessibility/{phase}/regression' if phase=='pilot_blockers_v1' else f'tmp/pdf_accessibility/repo_lock_v1/{phase}')
 if phase=='blocked_25_v1':scratch=contained('tmp/pdf_accessibility/blocked_25_v1/regression')
+if phase in ('micro49_nash_fix_v1','micro49_unique_nash_v2'):scratch=contained(f'tmp/pdf_accessibility/{phase}/regression')
 scratch.mkdir(parents=True,exist_ok=True)
 out = contained(f'validation_artifacts/pdf_accessibility/full_batch_v1/regression/{phase}' if phase.startswith('full_batch_v1') else f'validation_artifacts/pdf_accessibility/{phase}/regression' if phase=='pilot_blockers_v1' else f'validation_artifacts/pdf_accessibility/{phase}_regression')
 if phase=='blocked_25_v1':out=contained('validation_artifacts/pdf_accessibility/blocked_25_v1/regression')
+if phase in ('micro49_nash_fix_v1','micro49_unique_nash_v2'):out=contained(f'validation_artifacts/pdf_accessibility/{phase}/regression')
 out.mkdir(parents=True,exist_ok=True)
 runner = contained('build/faculty-build-composer/tests/run_active_composer_suite.js')
 names = re.findall(r"'((?:run_)[^']+\.(?:js|mjs))'",runner.read_text(encoding='utf-8'))

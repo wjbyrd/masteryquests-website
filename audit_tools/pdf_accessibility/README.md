@@ -1,5 +1,15 @@
 # Concept Review accessibility pipeline
 
+## MICRO-49 content correction (current staged collection)
+
+`MICRO49_UNIQUE_NASH_FIX_V2` supersedes only MICRO-49 in the closeout collection. Current aggregate evidence and the PREVIEW ONLY plan are under `validation_artifacts/pdf_accessibility/micro49_unique_nash_v2/`. The other 150 candidates and their original validation evidence are reused. Production is unchanged; human AT remains PENDING. V1 evidence is historical.
+
+Canonical `content.worked` and `content.workedLabel` establish strict dominance of A and X and unique equilibrium (A, X). MICRO-49's source image alternatives and semantic B/Y cell now say (1, 1). Its `matrixCorrection` record binds the old retained image, source record and derived image. `micro49_matrix.py` deterministically replaces only two reviewed digit boxes with 23-pixel-high glyphs from the already pinned Vera font; shared graph assets and original authoring inputs remain immutable. All image samples outside those boxes, table geometry, header IDs, scopes and associations are unchanged. `micro49_wording.py`, called through `visual_repairs.py` inside the tagger, reflows only the authorized worked text using the original embedded fonts. The singular worked heading is restored. Preservation accepts these exact changes and rejects source/image drift.
+
+Focused regression: `python -B audit_tools/pdf_accessibility/test_micro49_content.py`. To regenerate only MICRO-49, call `batch_candidates.run('micro49', ['MICRO-49'])` with `RUN='micro49_unique_nash_v2'` and task ID `MICRO49_UNIQUE_NASH_FIX_V2`. Inspect the resulting before/after renders before running `review_micro49.py`; then run `staged_gate.py` with this run's `final_validation.json`, `review_receipt.json`, and `staged_gate.json`. Use `--run micro49_unique_nash_v2` for pipeline and negative tests and the matching argument for `run_regression.py`. No full-library generation or installation is required.
+
+The current owner pack remains `owner_test_pack/blocked_25_v1`; only its MICRO-49 PDF, hash and reading instructions have been refreshed. Earlier packs are historical.
+
 Current task: `PDF_ACCESSIBILITY_BLOCKED_25_V1`. The complete staged gate accepts 151/151 current Concept Review candidates. This closeout changed only the 25 inherited blocked resources; 126 accepted candidate bytes and their evidence were reused. No active PDF was installed. Human AT verification is PENDING.
 
 Run from `C:\Users\Jennings\Documents\GitHub\masteryquests-website` using the pinned Python dependencies in `requirements.txt`. Every input/output is checked by `repo_guard.py`; no alternate checkout or redirected path is accepted.

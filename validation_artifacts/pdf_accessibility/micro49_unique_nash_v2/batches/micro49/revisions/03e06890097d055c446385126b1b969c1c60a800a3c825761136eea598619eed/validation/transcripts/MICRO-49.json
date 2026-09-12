@@ -1,0 +1,524 @@
+{
+  "errors": [],
+  "transcript": [
+    {
+      "role": "H1",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium  ",
+          "sourceText": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium  "
+        }
+      ],
+      "sourceText": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
+      "text": "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MICROECONOMICS  ",
+          "sourceText": "MICROECONOMICS  "
+        }
+      ],
+      "sourceText": "MICROECONOMICS",
+      "text": "MICROECONOMICS"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MICRO-49  ",
+          "sourceText": "MICRO-49  "
+        }
+      ],
+      "sourceText": "MICRO-49",
+      "text": "MICRO-49"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Time:  ",
+          "sourceText": "Time:  "
+        },
+        {
+          "role": "Span",
+          "text": "5 minutes  ",
+          "sourceText": "5 minutes  "
+        }
+      ],
+      "sourceText": "Time: 5 minutes",
+      "text": "Time: 5 minutes"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Outcome: Read payoff matrices and identify best responses, dominant strategies, and Nash equilibrium.  ",
+          "sourceText": "Outcome: Read payoff matrices and identify best responses, dominant strategies, and Nash equilibrium.  "
+        }
+      ],
+      "sourceText": "Outcome: Read payoff matrices and identify best responses, dominant strategies, and Nash equilibrium.",
+      "text": "Outcome: Read payoff matrices and identify best responses, dominant strategies, and Nash equilibrium."
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Difficulty:  ",
+          "sourceText": "Difficulty:  "
+        },
+        {
+          "role": "Span",
+          "text": "Intermediate  ",
+          "sourceText": "Intermediate  "
+        }
+      ],
+      "sourceText": "Difficulty: Intermediate",
+      "text": "Difficulty: Intermediate"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "THE CORE IDEA  ",
+          "sourceText": "THE CORE IDEA  "
+        }
+      ],
+      "sourceText": "THE CORE IDEA",
+      "text": "THE CORE IDEA"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Game theory represents strategic choices with players, actions, and payoffs that depend on what others do. Correctly reading the matrix is the prerequisite for identifying best responses and equilibrium. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.  ",
+          "sourceText": "Game theory represents strategic choices with players, actions, and payoffs that depend on what others do. Correctly reading the matrix is the prerequisite for identifying best responses and equilibrium. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.  "
+        }
+      ],
+      "sourceText": "Game theory represents strategic choices with players, actions, and payoffs that depend on what others do. Correctly reading the matrix is the prerequisite for identifying best responses and equilibrium. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.",
+      "text": "Game theory represents strategic choices with players, actions, and payoffs that depend on what others do. Correctly reading the matrix is the prerequisite for identifying best responses and equilibrium. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "HOW TO RECOGNIZE IT  ",
+          "sourceText": "HOW TO RECOGNIZE IT  "
+        }
+      ],
+      "sourceText": "HOW TO RECOGNIZE IT",
+      "text": "HOW TO RECOGNIZE IT"
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Identify the players, each player's available actions, and the payoff associated with every action combination.  ",
+          "sourceText": "Identify the players, each player's available actions, and the payoff associated with every action combination.  "
+        }
+      ],
+      "sourceText": "Identify the players, each player's available actions, and the payoff associated with every action combination.",
+      "text": "Identify the players, each player's available actions, and the payoff associated with every action combination."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "For each possible rival action, mark the action that gives a player the highest payoff.  ",
+          "sourceText": "For each possible rival action, mark the action that gives a player the highest payoff.  "
+        }
+      ],
+      "sourceText": "For each possible rival action, mark the action that gives a player the highest payoff.",
+      "text": "For each possible rival action, mark the action that gives a player the highest payoff."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A dominant strategy is best regardless of the rival's action.  ",
+          "sourceText": "A dominant strategy is best regardless of the rival's action.  "
+        }
+      ],
+      "sourceText": "A dominant strategy is best regardless of the rival's action.",
+      "text": "A dominant strategy is best regardless of the rival's action."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A Nash equilibrium is a cell where every player's action is a best response to the others.  ",
+          "sourceText": "A Nash equilibrium is a cell where every player's action is a best response to the others.  "
+        }
+      ],
+      "sourceText": "A Nash equilibrium is a cell where every player's action is a best response to the others.",
+      "text": "A Nash equilibrium is a cell where every player's action is a best response to the others."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WATCH OUT  ",
+          "sourceText": "WATCH OUT  "
+        }
+      ],
+      "sourceText": "WATCH OUT",
+      "text": "WATCH OUT"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Do not assume equilibrium is efficient. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.  ",
+          "sourceText": "Do not assume equilibrium is efficient. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.  "
+        }
+      ],
+      "sourceText": "Do not assume equilibrium is efficient. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.",
+      "text": "Do not assume equilibrium is efficient. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM  ",
+          "sourceText": "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM  "
+        }
+      ],
+      "sourceText": "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM",
+      "text": "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM"
+    },
+    {
+      "role": "Caption",
+      "runs": [
+        {
+          "role": "Caption",
+          "text": "Payoff order: (Row firm, Column firm)",
+          "sourceText": "Payoff order: (Row firm, Column firm)"
+        }
+      ],
+      "sourceText": "Payoff order: (Row firm, Column firm)",
+      "text": "Payoff order: (Row firm, Column firm)"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "",
+          "sourceText": ""
+        }
+      ],
+      "sourceText": "",
+      "text": ""
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "X",
+          "sourceText": "X"
+        }
+      ],
+      "sourceText": "X",
+      "text": "X"
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "Y",
+          "sourceText": "Y"
+        }
+      ],
+      "sourceText": "Y",
+      "text": "Y"
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "A",
+          "sourceText": "A"
+        }
+      ],
+      "sourceText": "A",
+      "text": "A"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "(9, 9)",
+          "sourceText": "(9, 9)"
+        }
+      ],
+      "sourceText": "(9, 9)",
+      "text": "(9, 9)"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "(2, 3)",
+          "sourceText": "(2, 3)"
+        }
+      ],
+      "sourceText": "(2, 3)",
+      "text": "(2, 3)"
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "B",
+          "sourceText": "B"
+        }
+      ],
+      "sourceText": "B",
+      "text": "B"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "(3, 2)",
+          "sourceText": "(3, 2)"
+        }
+      ],
+      "sourceText": "(3, 2)",
+      "text": "(3, 2)"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "(1, 1)",
+          "sourceText": "(1, 1)"
+        }
+      ],
+      "sourceText": "(1, 1)",
+      "text": "(1, 1)"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "For each rival strategy, identify the action with the larger payoff. If column X is chosen, row A gives 9 rather than 3 from row B. If column Y is chosen, row A gives 2 rather than 1 from row B. Thus, A is the row player's strictly dominant strategy. For the column player, X gives 9 rather than 3 when row A is chosen, and 2 rather than 1 when row B is chosen. Thus, X is the column player's strictly dominant strategy. Because A and X are mutual best responses, (A, X) is the unique Nash equilibrium.  ",
+          "sourceText": "For each rival strategy, identify the action with the larger payoff. If column X is chosen, row A gives 9 rather than 3 from row B. If column Y is chosen, row A gives 2 rather than 1 from row B. Thus, A is the row player's strictly dominant strategy. For the column player, X gives 9 rather than 3 when row A is chosen, and 2 rather than 1 when row B is chosen. Thus, X is the column player's strictly dominant strategy. Because A and X are mutual best responses, (A, X) is the unique Nash equilibrium.  "
+        }
+      ],
+      "sourceText": "For each rival strategy, identify the action with the larger payoff. If column X is chosen, row A gives 9 rather than 3 from row B. If column Y is chosen, row A gives 2 rather than 1 from row B. Thus, A is the row player's strictly dominant strategy. For the column player, X gives 9 rather than 3 when row A is chosen, and 2 rather than 1 when row B is chosen. Thus, X is the column player's strictly dominant strategy. Because A and X are mutual best responses, (A, X) is the unique Nash equilibrium.",
+      "text": "For each rival strategy, identify the action with the larger payoff. If column X is chosen, row A gives 9 rather than 3 from row B. If column Y is chosen, row A gives 2 rather than 1 from row B. Thus, A is the row player's strictly dominant strategy. For the column player, X gives 9 rather than 3 when row A is chosen, and 2 rather than 1 when row B is chosen. Thus, X is the column player's strictly dominant strategy. Because A and X are mutual best responses, (A, X) is the unique Nash equilibrium."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "CHECK YOURSELF  ",
+          "sourceText": "CHECK YOURSELF  "
+        }
+      ],
+      "sourceText": "CHECK YOURSELF",
+      "text": "CHECK YOURSELF"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Why must payoff order be stated?  ",
+          "sourceText": "Why must payoff order be stated?  "
+        }
+      ],
+      "sourceText": "Why must payoff order be stated?",
+      "text": "Why must payoff order be stated?"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "READY?  ",
+          "sourceText": "READY?  "
+        }
+      ],
+      "sourceText": "READY?",
+      "text": "READY?"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Return to the game and master this concept.  ",
+          "sourceText": "Return to the game and master this concept.  "
+        }
+      ],
+      "sourceText": "Return to the game and master this concept.",
+      "text": "Return to the game and master this concept."
+    }
+  ],
+  "roles": [
+    "/Document",
+    "/H1",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/H2",
+    "/P",
+    "/H2",
+    "/L",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/H2",
+    "/P",
+    "/H2",
+    "/Table",
+    "/Caption",
+    "/TR",
+    "/TD",
+    "/TH",
+    "/TH",
+    "/TR",
+    "/TH",
+    "/TD",
+    "/TD",
+    "/TR",
+    "/TH",
+    "/TD",
+    "/TD",
+    "/P",
+    "/H2",
+    "/P",
+    "/H2",
+    "/P"
+  ],
+  "linkedContentCount": 37,
+  "figureAlternatives": [],
+  "formulas": [],
+  "fonts": [
+    {
+      "font": "/AAAAAA+Arimo-Bold",
+      "embedded": true,
+      "unicodeMap": true
+    },
+    {
+      "font": "/AAAAAA+Arimo-Regular",
+      "embedded": true,
+      "unicodeMap": true
+    }
+  ],
+  "rawReadingSequence": [
+    "Game Theory Foundations: Payoff Matrices, Best Responses & Nash Equilibrium",
+    "MICROECONOMICS",
+    "MICRO-49",
+    "Time: 5 minutes",
+    "Outcome: Read payoff matrices and identify best responses, dominant strategies, and Nash equilibrium.",
+    "Difficulty: Intermediate",
+    "THE CORE IDEA",
+    "Game theory represents strategic choices with players, actions, and payoffs that depend on what others do. Correctly reading the matrix is the prerequisite for identifying best responses and equilibrium. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.",
+    "HOW TO RECOGNIZE IT",
+    "•",
+    "Identify the players, each player's available actions, and the payoff associated with every action combination.",
+    "•",
+    "For each possible rival action, mark the action that gives a player the highest payoff.",
+    "•",
+    "A dominant strategy is best regardless of the rival's action.",
+    "•",
+    "A Nash equilibrium is a cell where every player's action is a best response to the others.",
+    "WATCH OUT",
+    "Do not assume equilibrium is efficient. Compare mutual best responses with the combined-payoff maximum. A Nash equilibrium is a cell containing mutual best responses.",
+    "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM",
+    "For each rival strategy, identify the action with the larger payoff. If column X is chosen, row A gives 9 rather than 3 from row B. If column Y is chosen, row A gives 2 rather than 1 from row B. Thus, A is the row player's strictly dominant strategy. For the column player, X gives 9 rather than 3 when row A is chosen, and 2 rather than 1 when row B is chosen. Thus, X is the column player's strictly dominant strategy. Because A and X are mutual best responses, (A, X) is the unique Nash equilibrium.",
+    "CHECK YOURSELF",
+    "Why must payoff order be stated?",
+    "READY?",
+    "Return to the game and master this concept."
+  ]
+}

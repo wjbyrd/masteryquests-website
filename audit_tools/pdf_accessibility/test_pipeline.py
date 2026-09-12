@@ -6,7 +6,7 @@ from tag_pilot import validate_metadata
 import copy,ast,sys,argparse
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--run',choices=['pilot_blockers_v1','full_batch_v1','blocked_25_v1'],default='pilot_blockers_v1')
+    parser=argparse.ArgumentParser();parser.add_argument('--run',choices=['pilot_blockers_v1','full_batch_v1','blocked_25_v1','micro49_nash_fix_v1','micro49_unique_nash_v2'],default='pilot_blockers_v1')
     args=parser.parse_args();run=args.run
     root_guard();out=contained('validation_artifacts/pdf_accessibility/'+run)
     scratch='tmp/pdf_accessibility/'+run
@@ -16,7 +16,7 @@ def main():
         contained('build/faculty-build-composer/tools/'+n+'.py') for n in
         ('concept_review_style','concept_review_lifecycle','expand_micro_concept_reviews','complete_macro_concept_reviews','build_concept_review_manifest')]
     for file in files:ast.parse(file.read_text(encoding='utf-8-sig'))
-    records=read_json(out/('fixture_validation.json' if run in ('full_batch_v1','blocked_25_v1') else 'validation.json'));receipt=out/'review_receipt.json'
+    records=read_json(out/('fixture_validation.json' if run in ('full_batch_v1','blocked_25_v1','micro49_nash_fix_v1','micro49_unique_nash_v2') else 'validation.json'));receipt=out/'review_receipt.json'
     plan=prepare(records,receipt)
     result=materialize(plan,scratch+'/install-fixture')
     checks=[{'test':'syntax_and_metadata','passed':True,'files':len(files)},
