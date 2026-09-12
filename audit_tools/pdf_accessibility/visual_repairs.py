@@ -65,6 +65,9 @@ def derive(data,width,height,repair):
 def validate_bindings(source,meta):
     from tag_pilot import source_hash
     errors=[]
+    if meta.get('qaRemediation'):
+        from qa_remediation import validate_source_binding
+        errors.extend(validate_source_binding(source,meta))
     for name in ('visualRepair','wordingCorrection','sourceFigureContext','matrixCorrection'):
         value=meta.get(name)
         if not value:continue
@@ -120,6 +123,11 @@ def verify_derivation(meta):
 
 def approved_text_equal(old,new,meta):
     from tag_pilot import normalized
+    if meta.get('qaRemediation'):
+        binding=meta['qaRemediation']
+        return (binding.get('authorization')=='CONCEPT_REVIEW_QA_REMEDIATION_V1'
+                and digest(normalized(old).encode())==binding.get('baselineTextSha256')
+                and digest(normalized(new).encode())==binding.get('authorizedTextSha256'))
     edit=meta.get('wordingCorrection')
     if not edit:return False
     a=normalized(old);b=normalized(new)

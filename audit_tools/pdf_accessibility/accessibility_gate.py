@@ -135,7 +135,7 @@ def inspect(path,source=None,reference=None,metadata=None):
             else:
                 table=tables[0];rows=[r.get_object() for r in table['/K'] if r.get_object().get('/S')=='/TR']
                 expected=metadata['tableSource'];values=[['',*expected['columnHeaders']]]+[[h,*v] for h,v in zip(expected['rowHeaders'],expected['cells'])]
-                if len(rows)!=3 or any(len(r['/K'])!=3 for r in rows):errors.append('TABLE_DIMENSIONS_CHANGED')
+                if len(rows)!=len(values) or any(len(r['/K'])!=len(values[0]) for r in rows):errors.append('TABLE_DIMENSIONS_CHANGED')
                 else:
                     ids={}
                     for ri,row in enumerate(rows):

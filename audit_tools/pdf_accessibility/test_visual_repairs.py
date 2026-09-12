@@ -3,13 +3,18 @@ from repo_guard import *
 from visual_repairs import validate_bindings,verify_derivation,approved_text_equal
 from accessibility_gate import inspect
 from pypdf import PdfReader
-import copy
+import copy,argparse
 
 
 def main():
     root_guard();base='build/faculty-build-composer/data/concept-reviews/'
-    metadata=read_json(base+'accessibility_semantics.json')['pilot']
-    sources={r['code']:r for r in read_json(base+'concept_review_source.json')['reviews']}
+    parser=argparse.ArgumentParser();parser.add_argument('--historical-qa-fixtures',action='store_true');args=parser.parse_args()
+    # The old closeout's repaired pixels and context are now superseded on some
+    # resources. Exercise that legacy adapter against its archived source inputs;
+    # current QA candidates are exercised by test_qa_instruction/test_qa_tables.
+    snapshot='validation_artifacts/pdf_accessibility/owner_qa_remediation_v1/'
+    metadata=read_json(snapshot+'semantics_before.json' if args.historical_qa_fixtures else base+'accessibility_semantics.json')['pilot']
+    sources={r['code']:r for r in read_json(snapshot+'source_before.json' if args.historical_qa_fixtures else base+'concept_review_source.json')['reviews']}
     rows=read_json('validation_artifacts/pdf_accessibility/blocked_25_v1/targeted_final.json')
     results=[]
     def rejected(label,code,change):
@@ -37,10 +42,10 @@ def main():
             assert not approved_text_equal(old,new+' extra instructional text',m)
             assert sources[code]['content']['check'] in r['rawReadingSequence']
         assert row['deterministic'] and sha(row['determinismRebuild'])==row['sha256']
-    write_json('validation_artifacts/pdf_accessibility/blocked_25_v1/visual_negative_tests.json',
+    write_json(snapshot+'legacy_visual_negative_tests.json' if args.historical_qa_fixtures else 'validation_artifacts/pdf_accessibility/blocked_25_v1/visual_negative_tests.json',
                {'task':'PDF_ACCESSIBILITY_BLOCKED_25_V1','negativeTests':results,'positiveCandidates':len(rows),
-                'allPassed':all(r['detected'] for r in results),'screenReaderTest':False})
-    print(len(results),'negative detections;',len(rows),'current positive candidates PASS')
+                'allPassed':all(r['detected'] for r in results),'screenReaderTest':False,'historicalFixtures':args.historical_qa_fixtures})
+    print(len(results),'negative detections;',len(rows),'historical positive fixtures PASS' if args.historical_qa_fixtures else 'current positive candidates PASS')
     if not all(r['detected'] for r in results):raise SystemExit(1)
 
 

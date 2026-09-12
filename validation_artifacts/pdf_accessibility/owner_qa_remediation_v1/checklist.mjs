@@ -1,0 +1,22 @@
+import fs from 'node:fs/promises';
+import { Workbook } from '@oai/artifact-tool';
+const source=JSON.parse(await fs.readFile(new URL('./checklist_rows.json',import.meta.url),'utf8'));
+const values=[source.columns,...source.rows.map(r=>source.columns.map(c=>r[c]??''))];
+if(values.length!==152 || source.columns.length!==37)throw Error('Unexpected checklist shape');
+const workbook=Workbook.create();const sheet=workbook.worksheets.add('Owner review');
+const range=sheet.getRange('A1:AK152');range.values=values;
+range.format.font={name:'Arial',size:11};range.format.columnWidth=22;range.format.wrapText=true;
+sheet.getRange('A1:AK1').format.font={name:'Arial',size:11,bold:true,color:'#FFFFFF'};
+sheet.getRange('A1:AK1').format.fill='#102E55';sheet.getRange('AD1:AD152').format.columnWidth=70;sheet.getRange('AF1:AF152').format.columnWidth=90;
+sheet.getRange('AC1:AF8').format.rowHeight=110;sheet.getRange('AC1:AF1').format.rowHeight=35;
+await workbook.recalculate();
+if(JSON.stringify(range.values)!==JSON.stringify(values))throw Error('Cell values changed');
+for(const row of source.rows){if(row.OwnerFinalReview||row.ApprovedForInstall||row.OwnerDecision)throw Error('Owner approval must remain blank');}
+const scan=await workbook.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#SPILL!',options:{useRegex:true,maxResults:10},maxChars:1000});
+await fs.writeFile(new URL('./checklist_scan.json',import.meta.url),scan.ndjson);
+const preview=await workbook.render({sheetName:'Owner review',range:'AC1:AF8',scale:1,format:'png'});
+await fs.writeFile(new URL('./checklist_preview.png',import.meta.url),new Uint8Array(await preview.arrayBuffer()));
+const quote=v=>'"'+String(v??'').replaceAll('"','""')+'"';
+const csv='\ufeff'+range.values.map(row=>row.map(quote).join(',')).join('\r\n')+'\r\n';
+await fs.writeFile(new URL('../../concept_review_owner_review/v2/REVIEW_CHECKLIST.csv',import.meta.url),csv,'utf8');
+console.log('151 rows x 37 columns authored, recalculated, checked, and exported as CSV. Owner fields blank.');

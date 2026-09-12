@@ -95,9 +95,14 @@ def validate_metadata(metadata):
                 raise ValueError('Missing meaningful Formula alternative')
         if entry.get('tableRequired'):
             table=entry.get('tableSource',{});regions=entry.get('tableRegions',{})
-            if len(table.get('rowHeaders',[]))!=2 or len(table.get('columnHeaders',[]))!=2 or len(table.get('cells',[]))!=2 or any(len(r)!=2 for r in table['cells']):
+            if entry.get('qaRemediation'):
+                from qa_renderer import table_image
+                image,expected_regions=table_image(table)
+                if regions!=expected_regions or hashlib.sha256(image.tobytes()).hexdigest()!=entry.get('graphDecodedSha256'):
+                    raise ValueError('Source-generated table regions or fingerprint changed')
+            elif len(table.get('rowHeaders',[]))!=2 or len(table.get('columnHeaders',[]))!=2 or len(table.get('cells',[]))!=2 or any(len(r)!=2 for r in table['cells']):
                 raise ValueError('Unproven table dimensions')
-            if regions.get('xEdges')!=[0,184,450,728] or regions.get('yEdges')!=[30,90,274,471]:
+            if not entry.get('qaRemediation') and (regions.get('xEdges')!=[0,184,450,728] or regions.get('yEdges')!=[30,90,274,471]):
                 raise ValueError('Table cell regions need asset-specific review')
         for path_key,hash_key in (('assetSourcePath','assetSourceSha256'),('visualSourcePath','visualSourceSha256')):
             if entry.get(path_key) and sha(entry[path_key])!=entry.get(hash_key):
@@ -183,9 +188,9 @@ def tag_one(record,meta,destination,visual_source=None):
         nodes[caption]['actual']=table['caption']
         table_regions.append((caption,(0,0,region['imageWidth'],region['captionBottom'])))
         xs=region['xEdges'];ys=region['yEdges']
-        for ri in range(3):
+        for ri in range(len(table['rowHeaders'])+1):
             tr=node('TR',parent=graphnode)
-            for ci in range(3):
+            for ci in range(len(table['columnHeaders'])+1):
                 header=(ri==0 and ci>0) or (ci==0 and ri>0)
                 cell=node('TH' if header else 'TD',parent=tr)
                 value=table['columnHeaders'][ci-1] if ri==0 and ci else table['rowHeaders'][ri-1] if ci==0 and ri else table['cells'][ri-1][ci-1] if ri and ci else ''

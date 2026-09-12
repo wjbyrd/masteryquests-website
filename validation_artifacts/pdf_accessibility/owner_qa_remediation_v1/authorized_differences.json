@@ -1,0 +1,3113 @@
+[
+  {
+    "code": "GEN-ECON-02",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "Incentives change the expected benefits or costs of a choice, so they can alter behavior at the margin. The fee alters the next trip's marginal cost, which can change the decision. With limited time, the higher wage makes study more costly in forgone earnings. People respond to incentives, but they may respond in ways that improve the metric while hurting the real goal. The toll raises the cost of using the road, which gives drivers an incentive to change behavior.",
+        "after": "Incentives change the expected benefits or costs of a choice, so they can alter behavior at the margin. A congestion fee raises the cost of the next downtown trip. Incentives can be monetary or nonmonetary, and different people may respond differently. A reward can also improve a measured result while harming the underlying goal."
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "A city charges a $4 congestion fee for downtown trips during rush hour. A driver whose next trip provides only $3 of benefit will now avoid that trip because its marginal cost has risen by $4. A commuter whose trip is worth $10 will still travel. The fee changes behavior at the margin without guaranteeing that every driver responds in the same way.",
+        "after": "A city adds a $4 congestion fee for a rush-hour trip. Assume other trip costs are already deducted from each driver's benefit. A driver with a remaining benefit of $3 avoids the trip because the fee exceeds that benefit. A commuter with a remaining benefit of $10 still travels. The fee changes choices at the margin without making every driver respond alike."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-02\\after\\GEN-ECON-02.pdf",
+    "beforeSHA256": "e63e333c15907fa5f159d9455fd59a3ce8339056b2af751e088bcc62f56297a8",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\gen_econ_1\\revisions\\5d3b99b8a3876119da608346d395d64841acb2d74688efd2196fe0955b192e44\\after\\GEN-ECON-02.pdf",
+    "afterSHA256": "e4a279ab1ec25453a8120a4bba89459020ac2a03020796964eb80d8eae0d5ae3",
+    "expectedTextSHA256": "afbdeefb7bd07c2612612c53bbb9a3a4979debbfd294d742ad631e330496ebea",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "GEN-ECON-05",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "Name three economy-wide outcomes studied in macroeconomics.",
+        "after": "A national retailer studies how its own customers respond to a price increase. Is that question microeconomic or macroeconomic, and why?"
+      },
+      "core": {
+        "before": "Microeconomics studies choices by individual households, firms, workers, and markets, while macroeconomics studies economy-wide outcomes such as output, inflation, and unemployment. One event can require both market-level and economy-wide analysis. Macro conclusions require appropriate aggregation across people, firms, and markets. Macroeconomics examines economy-wide aggregates such as output, inflation, and unemployment. A single firm's hiring decision is microeconomics.",
+        "after": "Microeconomics studies choices by households, firms, workers, and individual markets. Macroeconomics studies economy-wide outcomes such as output, inflation, and unemployment. One event can require both kinds of analysis. The distinction is the unit of analysis, not the size of an organization or dataset."
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-05\\after\\GEN-ECON-05.pdf",
+    "beforeSHA256": "d18b8d93a173646b2b750944055ed5c101a7e8631bae2b7dc35d79357b0e614f",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\gen_econ_1\\revisions\\5d3b99b8a3876119da608346d395d64841acb2d74688efd2196fe0955b192e44\\after\\GEN-ECON-05.pdf",
+    "afterSHA256": "ee3b2986f84cde278f721d502e47fa76d465cf72ccaa0aee361eac4a4ea52e87",
+    "expectedTextSHA256": "3300761f3a3811dcd69d53f45cfb69cad8859431a93be1e60df144a8eaf7e0f7",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "GEN-ECON-08",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "A production possibilities frontier shows the combinations of two goods an economy can produce with its current resources and technology. A bowed-out PPF shows increasing opportunity cost as resources are shifted toward one good. Opportunity cost rises because resources are specialized and become less well suited as they are shifted into the other good. A PPF shows possible production combinations given current resources and technology.",
+        "after": "A production possibilities frontier shows the combinations of two goods an economy can produce with its current resources and technology. A bowed-out PPF shows increasing opportunity cost: specialized resources become less well suited as production shifts toward the other good. Points inside indicate unused capacity; points outside are currently infeasible."
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-08.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-08\\after\\GEN-ECON-08.pdf",
+    "beforeSHA256": "164466c1355fe8c0fea4f763243edb08e248b199c4e571476971b1974f166f63",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\gen_econ_1\\revisions\\5d3b99b8a3876119da608346d395d64841acb2d74688efd2196fe0955b192e44\\after\\GEN-ECON-08.pdf",
+    "afterSHA256": "46f5f04450e2503b0f005546e5786671900880ff6811c48e9f00dc660bfb3bf0",
+    "expectedTextSHA256": "322cd4532eccef9c743e4578be8b85a78f697ad21db07f838fd2419d9188e942",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "GEN-ECON-09",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Production possibilities and opportunity costs",
+          "columnHeaders": [
+            "Max lamps",
+            "Max rugs",
+            "Cost of 1 lamp",
+            "Cost of 1 rug"
+          ],
+          "rowHeaders": [
+            "Ari",
+            "Bea"
+          ],
+          "cells": [
+            [
+              "12",
+              "24",
+              "2 rugs",
+              "1/2 lamp"
+            ],
+            [
+              "10",
+              "60",
+              "6 rugs",
+              "1/6 lamp"
+            ]
+          ],
+          "columnWidths": [
+            0.14,
+            0.15,
+            0.15,
+            0.28,
+            0.28
+          ]
+        }
+      },
+      "worked": {
+        "before": "Ari can produce either 12 lamps or 24 rugs, so one lamp costs Ari 24/12 = 2 rugs. Bea can produce either 10 lamps or 60 rugs, so one lamp costs Bea 60/10 = 6 rugs. Ari has comparative advantage in lamps because 2 rugs is the lower opportunity cost; Bea has comparative advantage in rugs because one rug costs Bea 10/60 = 1/6 lamp, below Ari's 12/24 = 1/2 lamp. Specialization according to those lower opportunity costs can increase combined output.",
+        "after": "Ari gives up 24/12 = 2 rugs per lamp; Bea gives up 60/10 = 6 rugs per lamp. Ari has comparative advantage in lamps. For rugs, Bea gives up 1/6 lamp, below Ari's 1/2 lamp. A trade of one lamp for four rugs lies between the two lamp costs, so both can gain from specializing and exchanging."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-09\\after\\GEN-ECON-09.pdf",
+    "beforeSHA256": "9f1d47675e379a1b218a55f95acda87a09ccb867d1882893d563212a0f3267ad",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\gen_econ_1\\revisions\\5d3b99b8a3876119da608346d395d64841acb2d74688efd2196fe0955b192e44\\after\\GEN-ECON-09.pdf",
+    "afterSHA256": "346e2a0b3174c104660ca11807e1688003526c0ff0a6ac085a81232a6de5154b",
+    "expectedTextSHA256": "c8f30cf76292baaf798bc7f0346e363ca134e90328ac6d72c551cb9f5317ce63",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "GEN-ECON-10",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "Is a policy forecast a guarantee?",
+        "after": "An estimate from a dense city predicts an 8% ridership gain in a rural area. Which assumption about travel alternatives should the economist examine before applying that estimate?"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-10\\after\\GEN-ECON-10.pdf",
+    "beforeSHA256": "50e61c64134739bc2eabec6da204495144d92e36a15f6e973b6e8d92695af5a3",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\gen_econ_1\\revisions\\5d3b99b8a3876119da608346d395d64841acb2d74688efd2196fe0955b192e44\\after\\GEN-ECON-10.pdf",
+    "afterSHA256": "99b3fec99d2a8a9ca40341b7b67a0f92310149b9de2a45be303ef0b3faac708c",
+    "expectedTextSHA256": "84b7dc6f70327dc1b7bb2a59cb87466df1931f6e1a16527f788bf00468555795",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "GEN-ECON-16",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "demand-supply-02.webp",
+          "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
+          "sha256": "2c0487a337c1dcfce2070f37c1ac0b7d561f104f27f7df91251e351a3778408f",
+          "imageAlt": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
+          "graphDescription": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/market-equilibrium/demand-supply-02.webp",
+        "after": null
+      },
+      "check": {
+        "before": "Holding supply constant, which equilibrium outcome follows from an increase in demand?",
+        "after": "At a price below $5 on this graph, which quantity is larger, and what pressure does that create on price?"
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "equilibrium"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-16.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "On the graph, the new demand and supply curves intersect at a price of $5 and quantity of 150 thousand. The intersection is the only point at which quantity demanded equals quantity supplied, so it is the new market equilibrium. A price above $5 would create a surplus, while a price below $5 would create a shortage.",
+        "after": "Demand and supply intersect at a price of $5 and quantity of 150 thousand. Buyers want exactly the amount sellers offer at that point. A price above $5 creates a surplus; a price below $5 creates a shortage. This example finds equilibrium without shifting either curve."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-16.pdf",
+    "beforeSHA256": "8496532c02d196245fe11881a22163022811c1c1b5286574ffa88ae211d65000",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\gen_econ_1\\revisions\\5d3b99b8a3876119da608346d395d64841acb2d74688efd2196fe0955b192e44\\after\\GEN-ECON-16.pdf",
+    "afterSHA256": "8314f058d18f8af9ff649b9cccd4018c51f5479dd0ae60e58ec2a19cd71562d5",
+    "expectedTextSHA256": "78a30058b8ccddfb864c26c86ebbc9c1e364b83c7a98b2dd58a7a56bdbea41ae",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "GEN-ECON-17",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "At the current price, quantity demanded exceeds quantity supplied. What market condition exists?",
+        "after": "At a price of $4, buyers want 100 thousand gallons and sellers offer 200 thousand. Calculate the imbalance and predict the pressure on price."
+      },
+      "core": {
+        "before": "A shortage occurs when quantity demanded exceeds quantity supplied; a surplus occurs when quantity supplied exceeds quantity demanded. A surplus occurs when quantity supplied exceeds quantity demanded. A shortage occurs when quantity demanded exceeds quantity supplied. Quantity demanded exceeds quantity supplied, so there is a shortage. Shortages push price upward. A price above equilibrium creates a surplus because quantity supplied exceeds quantity demanded.",
+        "after": "A shortage occurs when quantity demanded exceeds quantity supplied at the current price. Buyers competing for limited supply put upward pressure on price. A surplus occurs when quantity supplied exceeds quantity demanded; sellers then face pressure to lower price. Adjustment tends toward the price where the two quantities are equal."
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-17.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-17\\after\\GEN-ECON-17.pdf",
+    "beforeSHA256": "7aea0a0d3de4c3b628f0e09afd622e593d9f7d07be9b40d4a83670c26e645cae",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\gen_econ_1\\revisions\\5d3b99b8a3876119da608346d395d64841acb2d74688efd2196fe0955b192e44\\after\\GEN-ECON-17.pdf",
+    "afterSHA256": "ead36dd2c49602d742c2802c197f9e43804d2adfd126a04a7ad1aa8f26ca9f12",
+    "expectedTextSHA256": "256e0d672cc6daea76b21fcd25ff3219e29a79827fca411ad4cceb7d893d0d63",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "GEN-ECON-22",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "taxincidence.webp",
+          "sourceUrl": "data/question-assets/tax-incidence/taxincidence.webp",
+          "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
+          "imageAlt": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20.",
+          "graphDescription": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/tax-incidence/taxincidence.webp",
+        "after": null
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "tax_incidence"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-22.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to assume that the more elastic side bears more of a tax. The less elastic side bears more. In this particular worked graph, the price changes show an equal split; do not assume buyers always bear more.",
+        "after": "The less elastic side bears more of a tax because it changes quantity less readily. The side that legally sends the payment to government need not bear most of the burden."
+      },
+      "worked": {
+        "before": "The untaxed equilibrium price is $15. With the tax, buyers pay $18, sellers receive $12, and 80 units are sold. Buyers bear $18 - $15 = $3 per unit, so their total burden is $3 x 80 = $240. Sellers bear the remaining $3 per unit.",
+        "after": "Before tax, price is $15 and quantity is 100. A $6 tax reduces quantity to 80; buyers pay $19 and sellers receive $13. Buyers bear $4 per unit, or $320, while sellers bear $2 per unit, or $160. At the initial equilibrium, demand is less elastic than supply, so buyers bear more of the wedge."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_02\\GEN-ECON-22\\after\\GEN-ECON-22.pdf",
+    "beforeSHA256": "b137fda45c49bb23731068594c8dcb195d24a9e194a863cded203aab00d550df",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\gen_econ_1\\revisions\\5d3b99b8a3876119da608346d395d64841acb2d74688efd2196fe0955b192e44\\after\\GEN-ECON-22.pdf",
+    "afterSHA256": "17b5b8abe6c39551ea70c2a7468d2bb8f564138e7d172ca9e1ced2c76a3f46ea",
+    "expectedTextSHA256": "11c634a8136b7d1a87d1b3912f929492bc39aa1dced499cd41fdaa495c4785e5",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "GEN-ECON-25",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "A student says equivalent tariffs and quotas remain identical after demand changes. What is the key difference?",
+        "after": "World price is $3 and the quota raises domestic price to $6. What is the rent per imported unit, and why does the identity of the license holder matter for national surplus?"
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-25.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\GEN-ECON-25.pdf",
+    "beforeSHA256": "5e78c9897f3c7ce527d29e2cc23e5237aa4603443b9d7f2963354ac27cd71c30",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\gen_econ_1\\revisions\\5d3b99b8a3876119da608346d395d64841acb2d74688efd2196fe0955b192e44\\after\\GEN-ECON-25.pdf",
+    "afterSHA256": "5e4c1e3e593595b18c169800da8bcf682ea568d9a8aff430174a6766d6dce707",
+    "expectedTextSHA256": "cf075b919821e80e27755c953ac5afe400b3b5fe884eabddc5865c9532ab8131",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-02",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "A business buys a newly produced domestic machine for $2 million; this is investment. Government pays contractors $80 million to repair roads; this is government purchases. An $80 million benefit payment is a transfer and is not counted when sent, though any later household purchase of final goods enters consumption. The expenditure identity classifies the counted spending as C + I + G + NX.",
+        "after": "A business buys a newly produced domestic machine for $2 million; this is investment. Government pays contractors $80 million to repair roads; this is government purchases. An $80 million benefit payment is a transfer and is not counted when sent, though any later household purchase of final goods enters consumption. The expenditure identity classifies the counted spending as C + I + G + NX. These purchases contribute $2 million to I and $80 million to G, or $82 million directly to GDP; the transfer is not an additional government purchase."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-02.pdf",
+    "beforeSHA256": "fd80020242d98ac589bc63c9de91b431f59f7b926429495b2fedb47b776d6346",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-02.pdf",
+    "afterSHA256": "9d3d8fab0b85bde5155eb3b7f75028e9341ac723a27e8ccf98df1555ec2eeeeb",
+    "expectedTextSHA256": "2540b8576b09e82f30e0587b993d08f27c8c1e4695445ade1b9ed74775bf4c14",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-03",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "One-good economy: price and output",
+          "columnHeaders": [
+            "Quantity",
+            "Price",
+            "Nominal GDP",
+            "Real GDP"
+          ],
+          "rowHeaders": [
+            "Base year",
+            "Current year"
+          ],
+          "cells": [
+            [
+              "100",
+              "$5",
+              "$500",
+              "$500"
+            ],
+            [
+              "110",
+              "$6",
+              "$660",
+              "$550"
+            ]
+          ],
+          "columnWidths": [
+            0.2,
+            0.14,
+            0.14,
+            0.26,
+            0.26
+          ]
+        }
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-03.pdf",
+    "beforeSHA256": "ad6c6d600fd0ed1216ba160cc9e691ab66d683640dfedc9440ac1f3cb2e9a06e",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-03.pdf",
+    "afterSHA256": "2ce670ab94da76dc667c62caffa08da5fd496154c13481c55a8eae93464fcc83",
+    "expectedTextSHA256": "3dde639a61f6944aaafb80ebb9e56f5e12978ea8e7d1a9c7d1941b0fd80234f8",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-04",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "GDP misses which part of well-being?",
+        "after": "A hurricane destroys homes, and rebuilding raises measured GDP. Name one loss the GDP increase does not subtract and explain why higher GDP does not prove higher well-being."
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-04.pdf",
+    "beforeSHA256": "64c42629ce5a10cc1be253a9e7e609a7faf3c66f9f765e31a6134b0dc59a93c8",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-04.pdf",
+    "afterSHA256": "fe1bbf47a5c34ba2990fb2cdff6bba3c1dff365fc9360db35a0b6986c8995faa",
+    "expectedTextSHA256": "bcce1b7d0801ba8299c495d7887f9091b0fd8edd642d9b58e9958d647071a8f5",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-05",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Fixed basket: quantities do not change",
+          "columnHeaders": [
+            "Quantity",
+            "Base price",
+            "Current price",
+            "Base cost",
+            "Current cost"
+          ],
+          "rowHeaders": [
+            "Item A",
+            "Item B",
+            "Basket total"
+          ],
+          "cells": [
+            [
+              "4",
+              "$10",
+              "$12",
+              "$40",
+              "$48"
+            ],
+            [
+              "2",
+              "$20",
+              "$25",
+              "$40",
+              "$50"
+            ],
+            [
+              "—",
+              "—",
+              "—",
+              "$80",
+              "$98"
+            ]
+          ],
+          "columnWidths": [
+            0.2,
+            0.12,
+            0.17,
+            0.17,
+            0.17,
+            0.17
+          ]
+        }
+      },
+      "worked": {
+        "before": "The CPI rises from 125 to 150. The inflation rate is (150 - 125)/125 x 100 = 20%. In a separate basket, base-year cost is 4($10) + 2($20) = $80 and current cost is 4($12) + 2($25) = $98, so CPI is ($98/$80) x 100 = 122.5.",
+        "after": "The fixed basket costs $80 in the base year and $98 now. CPI = ($98 / $80) x 100 = 122.5. Relative to the base-year index of 100, prices rose 22.5%. Separately, an index rising from 125 to 150 implies inflation of (150 - 125) / 125 x 100 = 20%."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-05.pdf",
+    "beforeSHA256": "8b80775179fb77d5e8793d615e2b8338695838dade0b434ce20d234f1955e9e5",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-05.pdf",
+    "afterSHA256": "448c1e956b0369f54151de2f48915857b25df65a964c57a27ed406b023b054f7",
+    "expectedTextSHA256": "5e9c0c8802b14cf62de1780cabc18a26ab5839c1da1a1870e1948a04ede44009",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-06",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "The CPI can overstate changes in the cost of living when a fixed basket misses substitution, quality improvements, or new goods. Substitution bias arises when consumers shift toward relatively cheaper alternatives but the fixed basket does not fully reflect that response. CPI remains useful, while substitution, new-good, and quality challenges can make measured inflation differ from true cost-of-living growth. If goods improve in quality, price increases may overstate the rise in the cost of living. If consumers substitute, their actual cost of living may rise less than the fixed basket suggests.",
+        "after": "A fixed-basket index can overstate growth in the cost of maintaining a living standard when buyers substitute toward relatively cheaper goods. Quality improvements and new goods also complicate price comparisons. These issues distinguish a change in posted prices from a change in the cost of obtaining comparable benefits."
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-06.pdf",
+    "beforeSHA256": "219e10e207631d6e5e53bc25c23442b8a9fc0046677aeafcac720767ea9b89f8",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-06.pdf",
+    "afterSHA256": "32620223c8e632b0453739e008dcaa58b5d4cf3e29e9d38902c213a54caf68ce",
+    "expectedTextSHA256": "6aa4dc293ad62dd9e5ac3e1d4508916de2d9381bb8349c5b1fe5e0cef5ef96a9",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-07",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Coverage in the simplified index comparison",
+          "columnHeaders": [
+            "CPI",
+            "GDP deflator"
+          ],
+          "rowHeaders": [
+            "Imported consumer coffee",
+            "Domestic investment machine",
+            "Domestic goods exported"
+          ],
+          "cells": [
+            [
+              "Included in consumer basket",
+              "Not domestic output"
+            ],
+            [
+              "Not consumer purchase",
+              "Included in domestic output"
+            ],
+            [
+              "Not domestic consumer purchase",
+              "Included in domestic output"
+            ]
+          ],
+          "columnWidths": [
+            0.34,
+            0.33,
+            0.33
+          ]
+        }
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-07.pdf",
+    "beforeSHA256": "0c609858a551e96cb7763c9668c5b3551b09dcdfe2d08b697a1dd626235001f7",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-07.pdf",
+    "afterSHA256": "df825aaf5ec19574367b42c6611ea1392a545eaa583c2bf5bac28752bd7161c8",
+    "expectedTextSHA256": "dd369f284c43ea662a001b58a373e8f2c96b3e464199e37d12513587126192ae",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-08",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "A salary was $40,000 when CPI was 100. CPI is now 160. 40,000 x 160/100 = 64,000. Therefore, $64,000. Indexation adjusts a nominal amount using a specified index; lags or an imperfectly matched index can still change real value.",
+        "after": "A salary was $40,000 when CPI was 100. CPI is now 160. 40,000 x 160/100 = 64,000.  Indexation adjusts a nominal amount using a specified index; lags or an imperfectly matched index can still change real value."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-08.pdf",
+    "beforeSHA256": "07bbbd33f6727d9beb7dcf433c9bec18b5b61203801786115fabc62a57d6feb6",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-08.pdf",
+    "afterSHA256": "4e9b23f1aa9f7926ca8613ce5cb5cfbe6187e5380abb7a0670aaea2ea436a880",
+    "expectedTextSHA256": "bac577ddf3cee7482e8d03b07aa839c51e58e275e1fe17bd2cf8a47a08c6010a",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-10",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "At 4% annual growth, about how many years does the Rule of 70 predict for real GDP per person to double?",
+        "after": "Country A grows at 2% per year and Country B at 4%. Use the Rule of 70 to compare approximate doubling times. Why does a small growth-rate difference matter over decades?"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-10.pdf",
+    "beforeSHA256": "3393efc5a95def6eba9ad502b7a905c809e9216efce49662b2b21b735e77ab20",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-10.pdf",
+    "afterSHA256": "83568b17bdf46247c175577f37001d64fc6151e116f7e399ee7a63f613e65b18",
+    "expectedTextSHA256": "86872b703dbc8f6ed6fb04efd8386236291086cad734ef827468bf8f7d6f10b2",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-11",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "growth-01.webp",
+          "sourceUrl": "data/question-assets/productivity-measurement/GROWTH-01.webp",
+          "sha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+          "imageAlt": "The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values.",
+          "graphDescription": "The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/productivity-measurement/growth-01.webp",
+        "after": null
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "recognition": {
+        "before": [
+          "Measure labor productivity as real output per worker or per hour worked.",
+          "Compare output using the same amount of labor when evaluating a productivity change.",
+          "An increase in total output is not necessarily a productivity increase if labor input also rises.",
+          "On a production-function graph, diminishing returns make equal additions of capital add progressively less output."
+        ],
+        "after": [
+          "Measure labor productivity as real output per worker or per hour worked.",
+          "Use the same output and labor units when comparing periods.",
+          "An increase in total output need not raise productivity if labor input also rises."
+        ]
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "The graph shows output per worker of 28.53 when capital per worker is 20 and 36.37 when capital per worker is 40. The increase in labor productivity is 36.37 - 28.53 = 7.84 units per worker. Productivity measures output relative to labor input, not total output alone.",
+        "after": "A workshop produces 2,400 units using 300 labor hours, so productivity is 2,400 / 300 = 8 units per hour. Next month it produces 2,700 units using the same 300 hours: 9 units per hour. Productivity rises by (9 - 8) / 8 x 100 = 12.5%. More output per labor hour, not simply more total hours, is the improvement."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-11.pdf",
+    "beforeSHA256": "e1ab76b57e73c6557d29741b53babdca09d08320d6aa78269858dd759d4eb7e8",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MACRO-11.pdf",
+    "afterSHA256": "533d28469215e30a29f11b9328a53e1d89d0b2fc701c3ae9b49e7dbfe01996cc",
+    "expectedTextSHA256": "96f37e0a8e2bc048733c8ee6c65b39ef52850dd8f234fc7d8010e4960a2dfdf6",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-13",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "growth-01.webp",
+          "sourceUrl": "data/question-assets/economic-growth-policy/GROWTH-01.webp",
+          "sha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
+          "imageAlt": "The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values.",
+          "graphDescription": "The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/economic-growth-policy/growth-01.webp",
+        "after": null
+      },
+      "check": {
+        "before": "Which policy supports long-run productivity growth?",
+        "after": "Why might worker training raise long-run productive capacity while a temporary shopping rebate mainly changes current demand?"
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "Capital deepening from 20 to 40 units per worker raises output per worker from 28.53 to 36.37, a gain of 7.84. Because the curve flattens, capital accumulation alone faces diminishing returns. Sustained growth also requires human capital, technology, and institutions that raise productivity.",
+        "after": "A government compares a temporary shopping rebate with worker training and reliable electricity for firms. The rebate can raise current spending, but training can improve skills and reliable power can reduce lost production. For long-run growth, evaluate the latter policies by their likely productivity gains, resource costs, implementation quality, and time to deliver results."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-13.pdf",
+    "beforeSHA256": "6871cb7826b4f1a2d7b5b0cbb284d9f8206a99eecc238fef216f749ea78340b6",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MACRO-13.pdf",
+    "afterSHA256": "db4b9019639534db0bd375ecf1f61100c5c0cb01e8392e8c6be78bb3cfb88d6c",
+    "expectedTextSHA256": "a0cf3b9c8f266060e67eb6f5a7337f8145877d6dbe2ee1e7d0623831f9ffeb67",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-14",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Population age 16 and over: 100 people",
+          "columnHeaders": [
+            "People"
+          ],
+          "rowHeaders": [
+            "Employed",
+            "Unemployed",
+            "Outside labor force",
+            "Labor force"
+          ],
+          "cells": [
+            [
+              "60"
+            ],
+            [
+              "5"
+            ],
+            [
+              "35"
+            ],
+            [
+              "65"
+            ]
+          ]
+        }
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-14.pdf",
+    "beforeSHA256": "2d6710186ef2107245f6a7e85f9d6e0280a1890aecad2bf64f675d2a9a49a0e0",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-14.pdf",
+    "afterSHA256": "142f2f87097e98f000fafbfb076df46d9c289c3621235b860a0fc508fe4c6aca",
+    "expectedTextSHA256": "cedf599b9257b03cd2b1186dcb6ea30b251ea7ee33a125eb4564793110158c4d",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-15",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "A worker quits and spends two weeks finding a better job match. What type of unemployment is this?",
+        "after": "A worker's occupation disappears after a lasting technology change, and their skills do not match new vacancies. Which type of unemployment is this, and how does it differ from ordinary job search?"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-15.pdf",
+    "beforeSHA256": "7f83939f5bbb5f5f9d0e7ce87b95d6164de8905260c12a362b1acad36b983f36",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-15.pdf",
+    "afterSHA256": "f30da07c8e4dac39d4b3fcf5f14289283cf595f722ae761c81e86cfca4dd9c48",
+    "expectedTextSHA256": "21829925160d8948645b2522e6110e0941439aa2667181d16d702b45334fb006",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-16",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "graph": {
+        "before": false,
+        "after": true
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "minimum_wage"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-16.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-16.pdf",
+    "beforeSHA256": "334441ff2dc0ec0c6c01db39dea883bf0651010614cd125d3e88bd60974b1e2e",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MACRO-16.pdf",
+    "afterSHA256": "0691f60098fcc078345f4e212c25f0aabacde98eab9fdb4447d8ca5c47d8e54f",
+    "expectedTextSHA256": "388ceb4191003cb7afd77d8be8d5f0ae3a8d8a6401ef8502e7ae4232baf0e7fc",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-18",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "U.S. definition used since May 2020",
+          "columnHeaders": [
+            "Amount",
+            "In M1?",
+            "In M2?"
+          ],
+          "rowHeaders": [
+            "Currency",
+            "Checking deposits",
+            "Savings deposits",
+            "Retail money-market funds"
+          ],
+          "cells": [
+            [
+              "$800",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "$1,200",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "$1,500",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "$0 here",
+              "No",
+              "Yes"
+            ]
+          ],
+          "columnWidths": [
+            0.4,
+            0.2,
+            0.2,
+            0.2
+          ]
+        }
+      },
+      "watch": {
+        "before": "Do not treat movement between M1 and non-M1 M2 assets as a change in total M2. Checking deposits are in M1 and M2, while retail money-market mutual funds are in M2 but not M1. The transfer lowers M1 without changing M2.",
+        "after": "A transfer from a checking deposit to a retail money-market fund lowers M1 but leaves M2 unchanged. Checking and savings deposits are included in both under the stated post-2020 definition; retail money-market funds are only in M2."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-18.pdf",
+    "beforeSHA256": "d1a32ef8731f87563b6898df70e79d2781ce7681ecbe8967a6787c7092ee57d7",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-18.pdf",
+    "afterSHA256": "feec7ed7d0dcb03a15b99054a4d696e8d1577cf6868edff756da4f883fdc2fc5",
+    "expectedTextSHA256": "796ce03b9eb6b63a95bc4e8c2152d190d2062e893686fe065af3ebf417e6aeba",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-19",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "The Federal Reserve conducts monetary policy, supplies reserve balances, supports payments, and serves as lender of last resort. Changes in reserves and interest rates are monetary policy territory. The Fed acts as the central bank and lender of last resort. The Federal Reserve conducts monetary policy and supports the banking/payments system; the Treasury manages federal finances and debt operations. Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks. The Fed includes the Board of Governors and 12 regional Reserve Banks. The FOMC directs monetary policy. Operational independence allows policy decisions without day-to-day political approval, within a mandate set by Congress.",
+        "after": "The Federal Reserve conducts monetary policy, supplies reserve balances, supports payments, and serves as lender of last resort. Its structure includes the Board of Governors and 12 regional Reserve Banks; the FOMC directs monetary policy. Operational independence allows policy decisions without day-to-day political approval within a mandate set by Congress. The Treasury manages federal finances rather than monetary policy."
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-19.pdf",
+    "beforeSHA256": "8c34b12318dc70948782242e25b881310f1fe43bca0d6635ed799056a3a52d31",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-19.pdf",
+    "afterSHA256": "7b09ae543772e2347b0f613c1e1dfef1f9b164d4abe875da425c92bd724c7264",
+    "expectedTextSHA256": "3193a607bda31aa2e8d2c743cae23ca48e2a72144c7015f9423746e053b8357c",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-20",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Bank balance sheet (dollars)",
+          "columnHeaders": [
+            "Before loss",
+            "After $25 loan loss"
+          ],
+          "rowHeaders": [
+            "Reserves",
+            "Loans",
+            "Securities",
+            "Total assets",
+            "Deposits",
+            "Borrowing",
+            "Total liabilities",
+            "Capital"
+          ],
+          "cells": [
+            [
+              "120",
+              "120"
+            ],
+            [
+              "780",
+              "755"
+            ],
+            [
+              "100",
+              "100"
+            ],
+            [
+              "1000",
+              "975"
+            ],
+            [
+              "900",
+              "900"
+            ],
+            [
+              "40",
+              "40"
+            ],
+            [
+              "940",
+              "940"
+            ],
+            [
+              "60",
+              "35"
+            ]
+          ],
+          "columnWidths": [
+            0.4,
+            0.28,
+            0.32
+          ]
+        }
+      },
+      "worked": {
+        "before": "A bank holds $120 in reserves, $780 in loans, and $100 in securities: assets are $1,000. Deposits of $900 and borrowing of $40 make liabilities $940, so capital is $60. A $25 loan loss cuts assets to $975 while liabilities stay $940. Capital falls to $35; reserves remain $120.",
+        "after": "Before the loss, assets equal liabilities plus capital: $1,000 = $940 + $60. A $25 loan loss reduces loans and total assets while liabilities are unchanged. Afterward, $975 = $940 + $35. Capital absorbs the loss; reserves remain $120."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_01\\after\\MACRO-20.pdf",
+    "beforeSHA256": "ffc0ab32e34180bbfdc08acbe70ed6d36dd34b125471e3b6d4a0c3aeeb7491d7",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MACRO-20.pdf",
+    "afterSHA256": "9bd922edb95723efbcf4cb9dcc3ef2c17210f7a3ad32c72f65a3b591651969e2",
+    "expectedTextSHA256": "b45f37cc2435bd92a32e87022ce38d1296f13a9677f78960d0195abab6d44187",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-21",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Policy action and immediate textbook effect",
+          "columnHeaders": [
+            "Immediate effect"
+          ],
+          "rowHeaders": [
+            "Open-market purchase",
+            "Open-market sale",
+            "Lower administered rates",
+            "Higher administered rates"
+          ],
+          "cells": [
+            [
+              "Adds bank reserves; can lower rates when reserves are limited."
+            ],
+            [
+              "Removes reserves; can raise rates when reserves are limited."
+            ],
+            [
+              "Lowers the rates guiding short-term market rates."
+            ],
+            [
+              "Raises the rates guiding short-term market rates."
+            ]
+          ],
+          "columnWidths": [
+            0.37,
+            0.63
+          ]
+        }
+      },
+      "watch": {
+        "before": "Do not assume every tool in a policy package pushes bank lending in the same direction. The open-market purchase is expansionary, while a higher return on reserves can weaken the lending response.",
+        "after": "More reserves do not guarantee a fixed expansion of broad money. Banks, borrowers, and depositors affect the response; the simple multiplier is a separate restrictive model."
+      },
+      "worked": {
+        "before": "The central bank buys $50 million of securities, adding $50 million to bank reserves. With a 20% required reserve ratio, no excess reserves, and full redepositing, the simple deposit multiplier is 1 / 0.20 = 5. Maximum deposit expansion is $50 million x 5 = $250 million. Currency drain or additional reserve holding makes the result smaller; it cannot be calculated by multiplying 5 by the lending share.",
+        "after": "A $50 million security purchase adds $50 million of reserves. In a limited-reserves textbook market, that tends to lower short-term interest rates. In an ample-reserves system, administered rates are the main rate-control tool. Distinguish each tool's immediate effect from the eventual lending and spending response."
+      },
+      "workedLabel": {
+        "before": "OPEN-MARKET PURCHASE AND DEPOSIT EXPANSION",
+        "after": "MATCHING THE TOOL TO ITS EFFECT"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-21.pdf",
+    "beforeSHA256": "c333589b11177ea1ff2acb76f47effe5eed47ad22d1e9301018e0205f77e50de",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-21.pdf",
+    "afterSHA256": "f6310ff8a375fcc55f30f2762b46894c7554edaea1c959824de97c3b40102650",
+    "expectedTextSHA256": "7ccc13a5ca099b88ea0842fdf23d098d7dd5a19e74d13670198f1410d6549871",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-22",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "The central bank influences rather than perfectly controls broad money because banks and the public choose how much to lend, hold, deposit, or keep as cash. Excess reserve holding weakens the multiplier process. If banks do not lend excess reserves, the deposit expansion process weakens. The Fed influences the money supply, but banks and depositors affect reserves, lending, and deposits. When banks hold more excess reserves, they lend less, so deposit creation weakens.",
+        "after": "The central bank influences broad money, but banks and the public also determine lending, deposits, and currency holdings. Excess reserve holding and currency drain weaken the simple deposit-expansion process. Banks with little capital may be especially cautious about losses and lending. These choices prevent a mechanical link from new reserves to a fixed amount of broad money."
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "The Fed adds $40 million of reserves, but banks hold half as excess reserves and the public keeps some funds as cash. Because only part of the injection supports new loans and redeposits, broad money rises by less than the simple multiplier predicts. The Fed controls reserves more directly than it controls deposits held by the public.",
+        "after": "The Fed adds $40 million of reserves, but banks hold half as excess reserves and the public keeps some funds as cash. Because only part of the injection supports new loans and redeposits, broad money rises by less than the simple multiplier predicts. The Fed controls reserves more directly than it controls deposits held by the public. A bank with a thin capital cushion may also limit new lending to reduce its exposure to losses."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-22.pdf",
+    "beforeSHA256": "b769dfeed954812c4ab6b4e78a0c8977f5cf1a2db188d0c79a10ba160fb56c69",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-22.pdf",
+    "afterSHA256": "cf89202ca77c7953990910ffadb203ebcb29aab67583c3841a6be43ad235fbc0",
+    "expectedTextSHA256": "398bf9808374b5ac1799f95c1e7d38b50d25ac6e56c21c67a14c38922ac8fda4",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-23",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "In MV = PY, what does P represent?",
+        "after": "With velocity and real output fixed, money grows by 10%. What happens to the price level in this quantity-theory example, and why does real output not rise?"
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-23.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-23.pdf",
+    "beforeSHA256": "c640fe143935d6ce5248749b8658f7ea55b0a3653406cfad25eda287a28a4d59",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_1\\revisions\\b3163609d98a148bea1dcd718fd7a8e77b90465540b689d5ac72b90c0dc4f894\\after\\MACRO-23.pdf",
+    "afterSHA256": "9286e9e55fafac6495e6e5660575dc74a5bac2bb4b76ab848842e44cc83f1616",
+    "expectedTextSHA256": "54c8b83134634ea3de1581110f2d63df3bdb6bea1143f8fcc549a39cd6f6752e",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-24",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "quantity-theory-fixed-v-y.png",
+          "sourceUrl": "data/concept-reviews/assets/quantity-theory-fixed-v-y.png",
+          "sha256": "9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d",
+          "imageAlt": "With velocity V and real output Y fixed, reciprocal money demand is 1/P = 5000/M. Vertical MS1 at M = 2,500 intersects MD at a, where 1/P = 2. Vertical MS2 at M = 5,000 intersects MD at b, where 1/P = 1. The price level doubles from 0.50 to 1.00; long-run real output is unchanged.",
+          "graphDescription": "With velocity V and real output Y fixed, reciprocal money demand is 1/P = 5000/M. Vertical MS1 at M = 2,500 intersects MD at a, where 1/P = 2. Vertical MS2 at M = 5,000 intersects MD at b, where 1/P = 1. The price level doubles from 0.50 to 1.00; long-run real output is unchanged."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/concept-reviews/assets/quantity-theory-fixed-v-y.png",
+        "after": null
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Illustrative long-run neutrality comparison",
+          "columnHeaders": [
+            "Before",
+            "After"
+          ],
+          "rowHeaders": [
+            "Money stock",
+            "Price per unit",
+            "Nominal wage per hour",
+            "Real wage (units/hour)",
+            "Real output"
+          ],
+          "cells": [
+            [
+              "2,500",
+              "5,000"
+            ],
+            [
+              "$5",
+              "$10"
+            ],
+            [
+              "$20",
+              "$40"
+            ],
+            [
+              "4",
+              "4"
+            ],
+            [
+              "100 units",
+              "100 units"
+            ]
+          ],
+          "columnWidths": [
+            0.48,
+            0.26,
+            0.26
+          ]
+        }
+      },
+      "worked": {
+        "before": "With velocity V and long-run real output Y fixed, money supply doubles from 2,500 to 5,000. The value of money falls from 2 at a to 1 at b, so P rises from 1/2 = 0.50 to 1/1 = 1.00: a 100% increase. Prices double while long-run real output does not rise. This is monetary neutrality. Value of money (1/P) is not velocity V in MV = PY.",
+        "after": "Under the stated long-run neutrality assumptions, doubling money doubles prices and nominal wages. The real wage is unchanged: $20 / $5 = 4 units per hour before and $40 / $10 = 4 afterward. Real output remains 100 units. Nominal amounts change while real purchasing power and productive capacity do not."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-24.pdf",
+    "beforeSHA256": "72b1ea705f7ff9e33d624f5293c1143c05ae1472882c0ddb10efb3a435087a5f",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-24.pdf",
+    "afterSHA256": "4b4e777c6e91e3e4cc135225b59b69b09ee02b8f7f59052124d95297eba06c26",
+    "expectedTextSHA256": "c9e3edb96510d179060c23ed6c3f987d5195bbb5e8bd36320e2ccf3c225a98c3",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-26",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "Inflation redistributes purchasing power when it differs from expectations and creates shoeleather, menu, and relative-price costs. Actual inflation was higher than expected, so borrowers repay with less valuable dollars. Menu costs are costs of changing posted prices. Shoe-leather costs refer to the time and effort people spend reducing money holdings when inflation is high. Shoeleather costs are the wasted effort people spend trying to hold less money during inflation.",
+        "after": "Unexpected inflation redistributes purchasing power between borrowers and lenders on fixed nominal contracts. Even expected inflation can create costs: changing posted prices uses resources (menu costs), economizing on cash takes time and effort (shoeleather costs), and uneven price changes can obscure relative-price signals."
+      },
+      "recognition": {
+        "before": [
+          "Shoe-leather costs refer to the time and effort people spend reducing money holdings when inflation is high.",
+          "Shoeleather costs are the wasted effort people spend trying to hold less money during inflation.",
+          "Menu costs are the costs firms face when they change posted prices.",
+          "Firms repeatedly changing posted prices incur menu costs.",
+          "Menu costs are the costs of changing posted prices."
+        ],
+        "after": [
+          "Unexpected inflation lowers the real repayment on a fixed nominal debt.",
+          "Menu costs are resources spent changing posted prices.",
+          "Shoeleather costs arise from efforts to hold less money during inflation.",
+          "Relative-price confusion can make economic decisions harder."
+        ]
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "A lender makes a 9% loan expecting 3% inflation, so the expected real return is 6%. Actual inflation turns out to be 10%, making the realized real return approximately 9% - 10% = -1%. Unexpected inflation transfers purchasing power from the lender to the borrower.",
+        "after": "A lender makes a 9% loan expecting 3% inflation, so the expected real return is approximately 6%. Actual inflation turns out to be 10%, making the realized real return approximately 9% - 10% = -1%. Unexpected inflation transfers purchasing power from the lender to the borrower."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-26.pdf",
+    "beforeSHA256": "803c909e6c37b3e58c2076f8109c97ff9be8254381841e17854520635c2a2632",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-26.pdf",
+    "afterSHA256": "67d34a1c7087c75468e8c72f47a3a7169d23fdc75f030a0ead6d04dccb9fe955",
+    "expectedTextSHA256": "f9bfc1f5ae27ee84c82ab78d6a0e1e4c141e9933ce2f1ca97d17b60562d4cdc8",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-30",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "moneymultiplier.webp",
+          "sourceUrl": "data/question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp",
+          "sha256": "b8371794ea980d9cdb463314a72969379fa334ef908ed171035c1b79de0d9830",
+          "imageAlt": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
+          "graphDescription": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp",
+        "after": null
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "fiscal_ad"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-30.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "At the displayed price level P, an expansionary fiscal action shifts aggregate demand from AD1 to AD2. Real output demanded rises from Y1 to Y2 at that fixed price level. A larger action could shift demand to AD3 and quantity demanded to Y3, but the graph does not establish which package is desirable; that depends on the output gap and timing.",
+        "after": "At the displayed price level P, higher government purchases shift aggregate demand from AD1 to AD2. Real output demanded rises from Y1 to Y2 at that fixed price level. A tax cut can also shift AD right by raising disposable income and consumption. This graph isolates the direction of the shift; the multiplier and offsets are considered separately."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\general_macro\\revisions\\0d5eb4c1629e0b93f3e29bcd5afca1f8ed554894cb35116ec0fd278bf339e4a2\\after\\MACRO-30.pdf",
+    "beforeSHA256": "5a64bd49c0a2d34a3cb70fb8cf98fdcabfdd30cd523cc91247bc2bdc040a9473",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-30.pdf",
+    "afterSHA256": "ebc2ab8bcb2aae43b0302833470b362c2920c371e6550ca3b43e83d0dda854f7",
+    "expectedTextSHA256": "da96d0c1c311e8591992efb5955a4e4ba8662b8989bd6c5a73c12ef9edb480b4",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-37",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-37.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "Point A is at 5 percent unemployment and 2.5 percent inflation. The horizontal guide through point A hits the inflation axis at 2.5 percent. Therefore, 2.5 percent. A downward-sloping SRPC shows an inverse short-run relationship: less unemployment comes with more inflation.",
+        "after": "Point A has 5% unemployment and 2.5% inflation. With expected inflation fixed, stronger aggregate demand moves the economy up and left along this same SRPC: unemployment falls while inflation rises. Weaker demand moves it down and right. A change in expectations would instead shift the curve."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-37.pdf",
+    "beforeSHA256": "000d60ab56ae2185425d8cb358b8a028e37b7b85d60c44d76e655d3479eef48f",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-37.pdf",
+    "afterSHA256": "4b6744b5e8bf0e225c2855a7621d9574f1ed59eeebc1340d295355508247e383",
+    "expectedTextSHA256": "885e354c8fc99538413a92bed3d1fbc8c8be11506f13ed02cb9982ab6da4e811",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-38",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "SRPC-04.webp",
+          "sourceUrl": "data/question-assets/phillips-curve-expectations/SRPC-04.webp",
+          "sha256": "b32bd9e8e1398ae7a454d34a1720a44bfeb30f013a3a264aa20ed563edf6fce2",
+          "imageAlt": "Phillips curve graph with SRPC0, shifted SRPC1, LRPC at 5 percent unemployment, point A at 5 percent unemployment and 3 percent inflation, and point B at 6 percent unemployment and 6 percent inflation.",
+          "graphDescription": "Phillips curve graph with SRPC0, shifted SRPC1, LRPC at 5 percent unemployment, point A at 5 percent unemployment and 3 percent inflation, and point B at 6 percent unemployment and 6 percent inflation."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/phillips-curve-expectations/SRPC-04.webp",
+        "after": null
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "phillips_return"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-38.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "The vertical LRPC is drawn at 5% unemployment. A temporary demand expansion can move unemployment below 5% along a short-run Phillips curve, but expected inflation eventually adjusts and the short-run curve shifts. Unemployment returns to the 5% natural rate at a higher inflation rate, so no permanent tradeoff remains.",
+        "after": "The economy starts at A: 5% unemployment and 3% inflation. A demand expansion moves it along SRPC0 to B, at 3% unemployment and 5% inflation. As expected inflation rises, SRPC shifts up to SRPC1. The final point C is on LRPC at 5% unemployment and 5% inflation. Unemployment returns to its natural rate; there is no permanent inflation-unemployment tradeoff."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_02\\after\\MACRO-38.pdf",
+    "beforeSHA256": "f663776ded3ba1d35c81a97f7138f5265c7b45c0f3099f889858b21064e5dc78",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MACRO-38.pdf",
+    "afterSHA256": "c7ac18f2e5118f4dcb73221a9226460bbbb26b24d7c75220286634031e221c03",
+    "expectedTextSHA256": "28f24418c661b2c74082d2e340bf50c51da5e9fdafe1031e509f07058c562893",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-39",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "Does a credible announcement guarantee costless disinflation?",
+        "after": "With unemployment held at U2, expected inflation falls. Does the economy move along SRPC2 or shift to SRPC1, and what happens to inflation?"
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-39.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\4\\after\\MACRO-39.pdf",
+    "beforeSHA256": "4d3adc8146d1f5d65b091a72d222136bc2d9095fa4f1bd86de41da66ce1835d1",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-39.pdf",
+    "afterSHA256": "a8809e42b0a7651df6b4a6c2c3ea1defaf8c2841665d01194eed1cb25b157a46",
+    "expectedTextSHA256": "c6cb6b349936691b3e0c86624a03cf9dfe78586502687b65503f0eb7916568b0",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-41",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Disinflation output losses (billions of dollars)",
+          "columnHeaders": [
+            "Potential",
+            "Actual",
+            "Output loss",
+            "Gap / potential"
+          ],
+          "rowHeaders": [
+            "Year 1",
+            "Year 2",
+            "Total loss"
+          ],
+          "cells": [
+            [
+              "400",
+              "388",
+              "12",
+              "3%"
+            ],
+            [
+              "400",
+              "388",
+              "12",
+              "3%"
+            ],
+            [
+              "—",
+              "—",
+              "24",
+              "6% of one year"
+            ]
+          ],
+          "columnWidths": [
+            0.2,
+            0.16,
+            0.16,
+            0.19,
+            0.29
+          ]
+        }
+      },
+      "worked": {
+        "before": "Potential output is $400 billion and cumulative output loss during disinflation is $24 billion. The loss is $24 / $400 = 6% of potential output. Inflation falls by 3 percentage points, so the sacrifice ratio is 6 / 3 = 2: the economy loses 2% of one year's output per percentage-point reduction in inflation.",
+        "after": "Each year loses $12 billion relative to $400 billion potential output, a 3% gap. Add the two annual gaps: cumulative loss is 6% of one year's potential output. Inflation falls by 3 percentage points, so the sacrifice ratio is 6 / 3 = 2. Keep percentage output losses distinct from percentage-point inflation changes."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-41.pdf",
+    "beforeSHA256": "70ac4df3360853b339b49d3291aa340fd9a46608758e293c54695f8f2f46740d",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-41.pdf",
+    "afterSHA256": "fe1e47f63e33ff10ed07aa5fa466cc02aa27da2036d85259b95b3cff0da5422a",
+    "expectedTextSHA256": "de4a7fb2a7212b411590374fd24c842ad4f2095fe0565edcde5d04802b0bf166",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-42",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Saving and its allocation (dollars)",
+          "columnHeaders": [
+            "Calculation",
+            "Value"
+          ],
+          "rowHeaders": [
+            "Private saving",
+            "Public saving",
+            "National saving",
+            "Domestic investment",
+            "NCO and NX"
+          ],
+          "cells": [
+            [
+              "1200 - 150 - 760",
+              "290"
+            ],
+            [
+              "150 - 260",
+              "-110"
+            ],
+            [
+              "290 - 110",
+              "180"
+            ],
+            [
+              "Given",
+              "140"
+            ],
+            [
+              "180 - 140",
+              "40"
+            ]
+          ],
+          "columnWidths": [
+            0.35,
+            0.4,
+            0.25
+          ]
+        }
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-42.pdf",
+    "beforeSHA256": "502900635047914aae4698aa4ec6875d2e79a058fdcd807d6081193be956be3c",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-42.pdf",
+    "afterSHA256": "9ce58d4f314446282bdb6154541a26c4574bd312b77c1b7861a57e425791e82b",
+    "expectedTextSHA256": "b8d03087b68fc40c7dcb5104d9efbdba3a823456633730c229036045117cebcc",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-47",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "Do not call the debt the sum of all past spending or claim all debt is automatically harmful. Debt changes with deficits, surpluses, interest, repayments, and accounting adjustments.",
+        "after": "Debt is a stock, not this year's deficit or the sum of all past spending. When a deficit is measured using total outlays, interest is already included: do not add it again when updating debt. Other accounting adjustments may also matter."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-47.pdf",
+    "beforeSHA256": "761cad1ea973a853e4a8540b71860a09fb50b2794094c414e2faa170bd1a6763",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-47.pdf",
+    "afterSHA256": "df52ebdc8662f75ce2b5ca93398de035b4b1df1a94e122c7127ccc07bd06e3b2",
+    "expectedTextSHA256": "6e31717534bf8753456180e83d42392e3b3a7b75b1b24ad24ce4c78042a72e36",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-48",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Debt levels versus debt-to-GDP",
+          "columnHeaders": [
+            "Before",
+            "After"
+          ],
+          "rowHeaders": [
+            "Debt",
+            "Nominal GDP",
+            "Debt / GDP"
+          ],
+          "cells": [
+            [
+              "$6.0 trillion",
+              "$6.6 trillion"
+            ],
+            [
+              "$24.0 trillion",
+              "$27.5 trillion"
+            ],
+            [
+              "25.0%",
+              "24.0%"
+            ]
+          ]
+        }
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-48.pdf",
+    "beforeSHA256": "cc0f78b77f704d7cdb4df84b72bbe5183a4fc64f168145016d5e4f0ececc95a1",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-48.pdf",
+    "afterSHA256": "8552ff3761a6d17873106f3e5dbc8d609d60eb3f41af8a1c99bbcd405f3a0c35",
+    "expectedTextSHA256": "ca265f92a55317c4e4ef7a88b602d50eb5753850b0dd22a09e61b5655f28876a",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-49",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Textbook deposit rounds: reserve ratio 10%",
+          "columnHeaders": [
+            "New deposit",
+            "Reserves",
+            "New loan"
+          ],
+          "rowHeaders": [
+            "First bank",
+            "Second bank",
+            "Third bank",
+            "All rounds total"
+          ],
+          "cells": [
+            [
+              "$1,000",
+              "$100",
+              "$900"
+            ],
+            [
+              "$900",
+              "$90",
+              "$810"
+            ],
+            [
+              "$810",
+              "$81",
+              "$729"
+            ],
+            [
+              "$10,000",
+              "$1,000",
+              "$9,000"
+            ]
+          ],
+          "columnWidths": [
+            0.34,
+            0.22,
+            0.22,
+            0.22
+          ]
+        }
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\macro_03\\after\\MACRO-49.pdf",
+    "beforeSHA256": "d73e28cf1783fc71361cae38aea5e6081878b149aade49f408172b108bc0b0f0",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-49.pdf",
+    "afterSHA256": "90fee1bbffe76ee7ce45e929d17c2e5d0ca2667c8b76aeb4a42a9199549fa17a",
+    "expectedTextSHA256": "ff3c2a72567edae9f77d515b34093b7831e958daac0d3d1a378b6109c3908511",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-52",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Trade and asset transactions (billions of dollars)",
+          "columnHeaders": [
+            "Positive flow",
+            "Negative flow",
+            "Net"
+          ],
+          "rowHeaders": [
+            "Goods: NX",
+            "Assets: NCO"
+          ],
+          "cells": [
+            [
+              "Exports 300",
+              "Imports 360",
+              "-60"
+            ],
+            [
+              "Residents buy foreign 90",
+              "Foreigners buy domestic 150",
+              "-60"
+            ]
+          ],
+          "columnWidths": [
+            0.18,
+            0.3,
+            0.34,
+            0.18
+          ]
+        }
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\layout_final\\after\\MACRO-52.pdf",
+    "beforeSHA256": "fb0200ffa57797c4a1180b9120ba8952837281e8eebe2db45e59432b71202e46",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-52.pdf",
+    "afterSHA256": "f50176ce7de88371959bd332d719083428144b862a8b3f7534f8ac4c7886113c",
+    "expectedTextSHA256": "925f66c1e8318fa227481d6c810d86677aecacf4a6bda6880bf4051c685b34c6",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-55",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "U.S. residents buy $140 billion of foreign assets; foreigners buy $90 billion of U.S. assets. U.S. NCO is $140 - $90 = +$50 billion, a net outflow. That positive NCO supplies dollars in exchange for foreign currency and corresponds to NX of +$50 billion.",
+        "after": "Initially residents buy $140 billion of foreign assets and foreigners buy $90 billion of domestic assets, giving NCO of $50 billion. Suppose a higher domestic real interest rate makes domestic assets more attractive: residents' foreign purchases fall to $130 billion and foreigners' domestic purchases rise to $100 billion. NCO falls to $30 billion. These illustrative flows show the direction; the model does not predict a fixed response size."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\5\\after\\MACRO-55.pdf",
+    "beforeSHA256": "3c528473f20884da705360e428cf99c23344ccb1dc80781d51c2568f80fcd382",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-55.pdf",
+    "afterSHA256": "5f767f1487da645aa71502858c917bc3182d7b04dc776dd5ed167a07754ee291",
+    "expectedTextSHA256": "f872b2aaff87b6e31fef1f99760cb85cb4e6bb78475e5d5df5344dd778fc262a",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MACRO-57",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "Open-economy policy analysis connects several markets. Here the FX panel uses vertical dollar supply fixed by NCO at a given real interest rate, rather than the upward-sloping gross-flow supply in the basic FX market. Hold domestic and foreign price levels fixed when interpreting the nominal exchange-rate change. A larger budget deficit lowers public and national saving, raises the real interest rate, reduces investment and NCO, and shifts the supply of dollars left. With dollar demand fixed, the dollar appreciates and net exports fall. The NX decline and investment crowding out can partly offset the direct aggregate-demand effect of higher government purchases.",
+        "after": "Use one chain at a time. In this model, a larger budget deficit reduces national saving and raises the real interest rate. Domestic assets become more attractive, so net capital outflow (NCO) falls. Fewer dollars are supplied for foreign assets, the dollar appreciates, and net exports fall. The FX graph holds price levels fixed and uses vertical dollar supply determined by NCO, unlike the basic gross-flow graph on MACRO-56."
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-57.png"
+      },
+      "recognition": {
+        "before": [
+          "Write the chain market by market; do not skip from policy directly to the exchange rate.",
+          "Higher domestic real rates lower NCO by making domestic assets relatively attractive.",
+          "Lower NCO means fewer dollars supplied in the FX market.",
+          "Dollar appreciation makes U.S. goods relatively dearer and reduces NX."
+        ],
+        "after": [
+          "Less national saving can raise the real interest rate.",
+          "A higher domestic real rate lowers NCO.",
+          "Lower NCO shifts vertical dollar supply left.",
+          "Dollar appreciation reduces net exports, holding price levels fixed."
+        ]
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\layout_final\\after\\MACRO-57.pdf",
+    "beforeSHA256": "04a82d1331140c79340aee960602c335b2549afa19d2821b255eb47ec2b3ceea",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\macro_2\\revisions\\6514153d67cfe560aee67ae2750065796267a5f87c6dd77b6514ff8f50c55dfc\\after\\MACRO-57.pdf",
+    "afterSHA256": "3fa72112d1a31c3120b4f99c6cd124c1e6fe033437fe1a48c68f920283264021",
+    "expectedTextSHA256": "d095aff08fff2415e3641b0f70b3a5fd09b69816d4759af0c21d6ccac1440fc1",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-01",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "A hospital posts current wait times of 90 minutes at Clinic A and 20 minutes at Clinic B. Patients who can use either location shift toward Clinic B. The posted wait acts like a nonmoney price signal: it communicates relative congestion and reallocates demand without changing the medical fee.",
+        "after": "A shortage develops at the current market price. Buyers compete for the limited units, putting upward pressure on price. As price rises, quantity demanded falls and quantity supplied rises, reducing the shortage. The price signal helps coordinate buyers and sellers without a central allocation decision."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-01.pdf",
+    "beforeSHA256": "dcbf79cb824d88ed41d5b8e6dcd8824f2845facf66e805f3df4c11fd9177c85c",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-01.pdf",
+    "afterSHA256": "f4273fddd78a609884559ee234a189d8bcc2e68f979ba8ae8213cd58f23a5658",
+    "expectedTextSHA256": "1333f84b427c4a93741b29a550de9bea0ec40dec3b868a3fb0227dd935a49304",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-02",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-02.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "Do not use pre tax quantity or buyer price change only. The tax is $46 - $34 = $12. Tax revenue is $12 × 420 = $5,040.",
+        "after": "Tax revenue equals the per-unit tax times the quantity actually traded after the tax. Use the $6 wedge and 80 units here; do not multiply by the original untaxed quantity."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-02.pdf",
+    "beforeSHA256": "2041ce48c51101a737d5fbd064fb7cd523a2d6b68b79f098e6eed35321399f09",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-02.pdf",
+    "afterSHA256": "723e7d83f2f8727204073e1c5a521929cf7e1d8b9bc512c76dfbe8cbc30a1699",
+    "expectedTextSHA256": "242bb8dccf4b49a7cc94d2f4d67955f0db48869eda5969bd38f9497ac074b1ff",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-03",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "A market failure occurs when private decisions do not produce an efficient allocation of resources. An externality affects people outside the transaction. Public goods are nonrival and nonexcludable; common resources are rival and hard to exclude. Identify the wedge between private incentives and social value or cost. Public goods are characterized by nonrivalry and nonexcludability.",
+        "after": "Markets may fail to maximize total surplus when prices omit external costs or benefits, when market power restricts trade, or when information is incomplete. Public goods are nonrival and nonexcludable, creating a free-rider problem. Evaluate social marginal benefits and costs rather than assuming private incentives capture every consequence."
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-03.pdf",
+    "beforeSHA256": "f99324b114ed6b2b389def8aafcbd2aae26fb615866850779111b520d6ac5304",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-03.pdf",
+    "afterSHA256": "aebe2bd7a40ab9c6dc73fcc11873ceaacbdfd467ed2f8e704953c203d7b2dea1",
+    "expectedTextSHA256": "ce6a7f86a611f34345984e02580703ba16b1593132e408f785bacd9ce4527b59",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-07",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "The price of Product Y rises 10 percent. Cross-price elasticity of demand for Product X is −0.5. Demand for X is predicted to:?",
+        "after": "Cross-price elasticity of ink demand with respect to printer price is -0.7. If printer price falls 5%, calculate the predicted percentage change in ink demand and state its direction."
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "workedLabel": {
+        "before": "IDENTIFYING SUBSTITUTES",
+        "after": "IDENTIFYING COMPLEMENTS"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\5\\after\\MICRO-07.pdf",
+    "beforeSHA256": "e5eedd0dab70dd4becb957759dcdb763f5b61c9ed6f885e74112d7324a40dd3a",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-07.pdf",
+    "afterSHA256": "bb922bb38a2539e617d3d2e30c6e431bb2096407c9df611e696c75717d3c05fb",
+    "expectedTextSHA256": "5d37ae732ac4db20a67efc5f490e74f46ba19d31bd12b5f1c37ebe0bf4ec4a60",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-08",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "For luxury cruise cabins, price changes from $3200 to $2880 while quantity demanded changes from 1,500 to 1,900. Use the midpoint method and the observed revenue totals. Which statement is correct?",
+        "after": "Cruise-cabin price falls from $3,200 to $2,880 while quantity rises from 1,500 to 1,900. Calculate midpoint elasticity and both revenue totals. Is demand elastic over this range, and does revenue rise or fall?"
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-08.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-08.pdf",
+    "beforeSHA256": "29f6eef4c96e8c6c8acacc89ee42dc22077749a99940eeb061be06b73c3e5c10",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-08.pdf",
+    "afterSHA256": "1abcdb134eea7935537b3892187dbd9082dc34ecf580a893dd65868176f9ef51",
+    "expectedTextSHA256": "71af7a82ebff134626b9ad9aba53c12e077d4c59f21270255cd1a0b780ab231c",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-09",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to fail to connect output and input demand. When customers readily reduce output purchases, firms more strongly reduce input use after cost increases.",
+        "after": "Distinguish who sends the tax payment from who bears its economic burden. The less responsive side has fewer ways to avoid the tax, so compare demand and supply elasticities before assigning the burden."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-09.pdf",
+    "beforeSHA256": "cfadb2b4e31c44cf20b7c5ac67b544fada3bc83205004d08c83a657f43d890f7",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-09.pdf",
+    "afterSHA256": "8fc1064ee51d21f766e139ec25187dd809b32cb57d981fb8712f78310152a088",
+    "expectedTextSHA256": "f4e4126220e70567b3051b7ae1a2102b15410fd7ec1e3116ecd70580173030c6",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-11",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-11.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "Do not confuse wta price gap. Producer surplus measures the price received above the seller’s willingness to accept for that unit.",
+        "after": "Producer surplus is the price received minus willingness to accept, summed over units sold. Do not confuse this per-unit price-cost gap with total revenue."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-11.pdf",
+    "beforeSHA256": "19b71c1914a372244b4ad1afa25bc704147f58b0d4e6f06ae9fb612af7876c51",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-11.pdf",
+    "afterSHA256": "98cbc4a95efbf8fd8084281bed8b16ee2e7a0ff454f7f3be21d1568e68439b68",
+    "expectedTextSHA256": "0771b54c2b2b63f2bda3b604262b0a3cdf59aa987edc7a2511676e47cb023e88",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-12",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-12.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to fail to separate transfer from total loss. Consumer surplus is $10 and producer surplus is $8; their sum equals the $18 gain from exchange.",
+        "after": "Total surplus adds consumer and producer surplus. A payment between buyers and sellers changes its distribution; a trade whose cost exceeds buyer value reduces total surplus."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-12.pdf",
+    "beforeSHA256": "441e0a1f806486b5ebcdbfef85cdf95e28942b7e394fb13ae0f5ca6f2bbd8f7e",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-12.pdf",
+    "afterSHA256": "4faba118f4ec2c992830e996ba0fea60a41f244663bca596c0b606374a935926",
+    "expectedTextSHA256": "b8b794d64fc01876f83a4e34b4d92cae0d028c95f0dc6851e34da7d08ab33c26",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-13",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "Five buyers each want one studio pass, with willingness-to-pay values [27, 23, 18, 13, 8]. Five sellers can each supply one, with costs [4, 10, 15, 21, 25]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+        "after": "Five buyers value one pass each at $27, $23, $18, $13, and $8. Five sellers have costs of $4, $10, $15, $21, and $25. How many trades create nonnegative gains, and why should the next trade not occur?"
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-13.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to equate more output with more efficiency. The forced extra unit contributes $23 - $29 = -$6 to total surplus.",
+        "after": "More output is not always more efficient. Stop when the next unit costs more to produce than its buyer is willing to pay."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-13.pdf",
+    "beforeSHA256": "ff437b875467c45216e7aed1fe1dfa577a4f4f0fa9e52032286b421a15f1dbdb",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-13.pdf",
+    "afterSHA256": "7412f4378588f4a3a02d79fda13155ad9d74dd556e72aab9680a058656681ec0",
+    "expectedTextSHA256": "f5f7484a834af36994623e5f1c623a4796aa219672e40ff245216b196a026ca4",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-14",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "cps_consumer_prices.webp",
+          "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
+          "sha256": "8524e29fadce0d985c8800948e5e5b7844b82b3d2fb1135b2301279037a8d013",
+          "imageAlt": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve has horizontal reference lines P1 and P2 with vertical quantity guides, showing two price-quantity positions. Visible numeric scale markings include 20, 16, 1, 122, 2, 8, 4, 0, 12.",
+          "graphDescription": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve has horizontal reference lines P1 and P2 with vertical quantity guides, showing two price-quantity positions. Visible numeric scale markings include 20, 16, 1, 122, 2, 8, 4, 0, 12."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
+        "after": null
+      },
+      "check": {
+        "before": "A policy transfers $20 to consumers and prevents $6 of gains. Total-surplus loss?",
+        "after": "Consumer surplus rises from $32 to $72 after a price decrease. What is the gain, and can this information alone establish the change in total surplus?"
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "consumer_surplus"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-14.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to count only existing buyers or only new buyers. With the same trades still occurring, the price change transfers surplus dollar for dollar from sellers to buyers; it does not change total surplus.",
+        "after": "A demand curve and price are enough to calculate consumer surplus. A change in consumer surplus alone does not establish the change in producer surplus, total surplus, or deadweight loss."
+      },
+      "worked": {
+        "before": "At price P1 = $12, quantity is 8 and consumer surplus is 1/2 x 8 x ($20 - $12) = $32. At P2 = $8, quantity rises to 12 and consumer surplus becomes 1/2 x 12 x ($20 - $8) = $72. The price decrease raises consumer surplus by $40.",
+        "after": "At price P1 = $12, quantity is 8 and consumer surplus is 1/2 x 8 x ($20 - $12) = $32. At P2 = $8, quantity rises to 12 and consumer surplus becomes 1/2 x 12 x ($20 - $8) = $72. The price decrease raises consumer surplus by $40. These demand-side areas do not identify a transfer or deadweight loss without supply-side information."
+      },
+      "workedLabel": {
+        "before": "TRANSFER OR DEADWEIGHT LOSS?",
+        "after": "MEASURING A CHANGE IN CONSUMER SURPLUS"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-14.pdf",
+    "beforeSHA256": "3b5ab9e3140eb0fd1b704d52af2bfaa4780841673166090232246a50085fee40",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-14.pdf",
+    "afterSHA256": "deffe7252e98c0cd45d2b3b2faff410ac330c9ce5dbd679d2562983b34d3eab8",
+    "expectedTextSHA256": "383977a2d75475020499bcd07f4b55f810e3a9092cf3388cd75d4bf876edeb62",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-15",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Surplus by policy (dollars)",
+          "columnHeaders": [
+            "Buyers",
+            "Sellers",
+            "Total"
+          ],
+          "rowHeaders": [
+            "Policy A",
+            "Policy B"
+          ],
+          "cells": [
+            [
+              "250",
+              "250",
+              "500"
+            ],
+            [
+              "20",
+              "500",
+              "520"
+            ]
+          ]
+        }
+      },
+      "watch": {
+        "before": "Do not treat efficiency as equity. Observed willingness to pay reflects both preferences and purchasing power. A has $150 private surplus but $110 after the external cost; B has $140 and no stated external cost.",
+        "after": "Efficiency compares total gains; equity evaluates their distribution. Greater total surplus does not by itself establish that a policy is fair."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_01\\after\\MICRO-15.pdf",
+    "beforeSHA256": "5d4bbd4cd01b008a03534696feeeaf60647fae7f92fb9a072f60892d0eb1e182",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-15.pdf",
+    "afterSHA256": "1d9ecc0dc3cf0b79aa7ea95261716bbe1b84e65f5813ed87ed616320dc4a073c",
+    "expectedTextSHA256": "7849ee0f5e689442f9f67d9e09243d6c3066029ce8c29b4f58a5394342a62654",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-16",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-16.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to omit one or more welfare components. Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $144.",
+        "after": "When the world price exceeds the domestic no-trade equilibrium price, domestic supply exceeds domestic demand. The difference is exports, not imports. Do not infer tariff revenue or deadweight loss from this free-trade example."
+      },
+      "workedLabel": {
+        "before": "CALCULATING IMPORTS",
+        "after": "CALCULATING EXPORTS"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\wording_context\\after\\MICRO-16.pdf",
+    "beforeSHA256": "1581c8764d956b75fec5f159b557a3410ac53c9f52838c59eda1df44f422053f",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-16.pdf",
+    "afterSHA256": "ba0341d5c26302152b9a0fd0a6017e31f203c8aeb973439856cf85a2a0d01fc0",
+    "expectedTextSHA256": "63f029f8980a7323efb35fd507b410d15e3d8d2e76485e7aa0db5ecf145b4740",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-20",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "cop_tp_standard.webp",
+          "sourceUrl": "data/question-assets/costs-of-production/cop_tp_standard.webp",
+          "sha256": "b7d7c5fdbd1c86ea29cadd7df17447e2dde6a773225ce492c0f0e622994809b9",
+          "imageAlt": "The horizontal axis is labor or workers and the vertical axis is total product or output. A total-product curve rises with labor, changes curvature, and then either flattens or turns downward as shown. Visible numeric scale markings include 80, 1, 70, 60, 2, 50, 5, 40, 30, 20, 10, 0, 3, 4, 6, 7, 8.",
+          "graphDescription": "The horizontal axis is labor or workers and the vertical axis is total product or output. A total-product curve rises with labor, changes curvature, and then either flattens or turns downward as shown. Visible numeric scale markings include 80, 1, 70, 60, 2, 50, 5, 40, 30, 20, 10, 0, 3, 4, 6, 7, 8."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/cop_tp_standard.webp",
+        "after": null
+      },
+      "check": {
+        "before": "In the short run, which statement must be true?",
+        "after": "A sixth worker raises output from 56 to 64. Calculate that worker's marginal product. Is marginal product diminishing, and is total product still rising?"
+      },
+      "core": {
+        "before": "In the short run, at least one input is fixed, so output changes as additional units of a variable input are employed. Input flexibility is the production-side basis for distinguishing fixed and variable cost. The same arithmetic relationship governs MP versus AP and MC versus AVC or ATC.",
+        "after": "In the short run, at least one input is fixed. Marginal product is the extra output from one more unit of a variable input. With fixed equipment, additional workers may eventually add less output than earlier workers. Diminishing marginal product means the addition falls; total product can still rise."
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "recognition": {
+        "before": [
+          "Production case 2: Ironwood Furniture has MP sequence 6, 10, 13, 12, 10, 8, 6, 4.",
+          "Production case 4: Cedar Trail Bikes has MP sequence 9, 12, 13, 11, 9, 6, 2, -2.",
+          "Production case 6: Riverbend Textiles has MP sequence 11, 14, 15, 13, 11, 9, 7, 5.",
+          "Production case 8: Summit Glassworks has MP sequence 12, 15, 16, 14, 12, 10, 8, 6."
+        ],
+        "after": [
+          "Identify the fixed input and the variable input.",
+          "Marginal product is the change in total product from one more worker.",
+          "Diminishing marginal product begins when successive output additions fall.",
+          "Negative marginal product means another worker actually reduces total output."
+        ]
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Successive workers and output",
+          "columnHeaders": [
+            "Total product",
+            "Marginal product"
+          ],
+          "rowHeaders": [
+            "3 workers",
+            "4 workers",
+            "5 workers"
+          ],
+          "cells": [
+            [
+              "34",
+              "Not given"
+            ],
+            [
+              "46",
+              "12"
+            ],
+            [
+              "56",
+              "10"
+            ]
+          ]
+        }
+      },
+      "watch": {
+        "before": "A common mistake is to wait until mp negative. Identify the first decline in MP and separate it from negative MP and long-run scale.",
+        "after": "Do not wait for marginal product to become negative. It is diminishing as soon as the next worker adds less output than the previous worker."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\final_rebuild\\6\\after\\MICRO-20.pdf",
+    "beforeSHA256": "9d5588afade790d5f4d5c9cef7213c2898e7520ae7f6f0c03dae4b2da635e6a4",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-20.pdf",
+    "afterSHA256": "7d9d56b4c20818c08b6609eee3f9d074051d69090f35edc7e032a4f2d93cc346",
+    "expectedTextSHA256": "f8b1f83e21272b1f69e52976e42ef6503d9ae943f48dd9b27eca9c0c5b28ebf0",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-21",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "COST-03.webp",
+          "sourceUrl": "data/question-assets/costs-of-production/COST-03.webp",
+          "sha256": "2e60f97d02447bd27b6e64eb90f52e269ea37b9220efea4fd2a3e1581eebf7ed",
+          "imageAlt": "Short-run total-cost graph with quantity on the horizontal axis and total cost on the vertical axis. At quantity 120, point A on total cost is $1,200, point B on total variable cost is $800, and point C on the horizontal total fixed cost line is $400. The vertical distance between total cost and total variable cost equals the constant $400 fixed cost.",
+          "graphDescription": "Short-run total-cost graph with quantity on the horizontal axis and total cost on the vertical axis. At quantity 120, point A on total cost is $1,200, point B on total variable cost is $800, and point C on the horizontal total fixed cost line is $400. The vertical distance between total cost and total variable cost equals the constant $400 fixed cost."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-03.webp",
+        "after": null
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "One completed cost-schedule row (dollars)",
+          "columnHeaders": [
+            "TFC",
+            "TVC",
+            "TC",
+            "AFC",
+            "AVC",
+            "ATC"
+          ],
+          "rowHeaders": [
+            "Q = 120"
+          ],
+          "cells": [
+            [
+              "400",
+              "800",
+              "1200",
+              "3.33",
+              "6.67",
+              "10.00"
+            ]
+          ],
+          "columnWidths": [
+            0.16,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14
+          ]
+        }
+      },
+      "worked": {
+        "before": "At Q = 120, the graph shows total cost of $1,200 and total variable cost of $800. The $400 vertical gap between the two curves is total fixed cost because TC = TFC + TVC. Dividing each cost by 120 gives AFC = $3.33, AVC = $6.67, and ATC = $10.00. As a check, AFC + AVC = ATC.",
+        "after": "At Q = 120, TC is $1,200 and TVC is $800. TFC is the difference: $400. Divide each total by output to obtain AFC = $3.33, AVC = $6.67, and ATC = $10.00, rounded to cents. The completed row satisfies TC = TFC + TVC and ATC = AFC + AVC."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-21.pdf",
+    "beforeSHA256": "44367055d71f462325ffd25310326c52c4d2d2b6121d741f40795fdd90e377c8",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-21.pdf",
+    "afterSHA256": "c337118347f8663d2f64e1ae1ba6bb4286a4a9863465e69ec8ced0e088395310",
+    "expectedTextSHA256": "46d387be26504a3ff525e5996779b2d51042581bc304a1ab814ebed140fd03cb",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-22",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "Cost schedule 2: At Q=29, Ironwood Furniture has AVC=$13.97 and ATC=$24.31. What fixed-cost conclusion follows?",
+        "after": "At Q = 30, AVC is $14 and ATC is $24. Calculate AFC and total fixed cost. Verify your answer by multiplying the per-unit gap by output."
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-22.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to misuse average cost formula. AVC = $300/20 = $15; AFC = $5; ATC = $20. TVC = $1,000; AVC = $20, AFC = $8, and ATC = $28.",
+        "after": "Average costs are per unit; total costs are not. Subtract AVC from ATC to find AFC, then multiply AFC by positive output to recover total fixed cost."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-22.pdf",
+    "beforeSHA256": "2838c835fa951582363b5a5371f6f5da047efcf5ba94ac45107206e4fa1a08a6",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-22.pdf",
+    "afterSHA256": "1706146a2d45218d62eee4b043b38fe13371307b6b1850590f27f5375b7d9be8",
+    "expectedTextSHA256": "a2bd4361f1869e5827adaaeb5ee7fe5b478ce7640ad2f9e47827177d01b3475a",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-23",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "COST-02.webp",
+          "sourceUrl": "data/question-assets/costs-of-production/COST-02.webp",
+          "sha256": "5b568aede942b6906a2195c799d026ef00ff09d7987d7d5e15f64e850c25cba9",
+          "imageAlt": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include $24, $22, $20, 4, $18, 2, $16, 1, $14, $12, $8, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420, 440.",
+          "graphDescription": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include $24, $22, $20, 4, $18, 2, $16, 1, $14, $12, $8, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420, 440."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-02.webp",
+        "after": null
+      },
+      "check": {
+        "before": "If output rises by 1 unit and total cost rises by $18, marginal cost of that unit is:?",
+        "after": "At a wage of $120, another worker adds 8 units. What is the added labor cost per unit of output?"
+      },
+      "core": {
+        "before": "Marginal cost is the change in total cost caused by producing one more unit. Divide the input cost by marginal product. Higher MP lowers variable input cost per extra unit. A constant addition to cost at every output does not change the cost of producing one more unit.",
+        "after": "Marginal cost is the change in total cost divided by the change in output. If labor is the only variable input and its wage is fixed, divide the added worker's wage by that worker's marginal product. Lower marginal product then means higher cost per extra unit."
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Constant wage: $120 per additional worker",
+          "columnHeaders": [
+            "Marginal product",
+            "Added labor cost",
+            "Cost per extra unit"
+          ],
+          "rowHeaders": [
+            "Fourth worker",
+            "Fifth worker"
+          ],
+          "cells": [
+            [
+              "12",
+              "$120",
+              "$10"
+            ],
+            [
+              "10",
+              "$120",
+              "$12"
+            ]
+          ],
+          "columnWidths": [
+            0.24,
+            0.22,
+            0.25,
+            0.29
+          ]
+        }
+      },
+      "watch": {
+        "before": "A common mistake is to move mp and mc together. Higher MP lowers variable input cost per extra unit. A constant addition to cost at every output does not change the cost of producing one more unit.",
+        "after": "Hold the wage and other input conditions fixed when linking marginal product to marginal cost. A fixed-cost change alone does not change the cost of an extra unit."
+      },
+      "worked": {
+        "before": "Marginal cost crosses AVC at AVC's minimum of $10 and 200 units, then crosses AC at AC's minimum of $20 and 400 units. When marginal cost is below an average, it pulls that average down; when marginal cost rises above it, the average begins to increase.",
+        "after": "Each additional worker costs $120. The fourth adds 12 units, so added cost per unit is $120 / 12 = $10. The fifth adds 10 units, so it is $120 / 10 = $12. With the wage unchanged, diminishing marginal product raises marginal cost."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-23.pdf",
+    "beforeSHA256": "b8b339a626d056165b835272b21d72a6806576cacf615fc0cbfd7ca7f1d49c9a",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-23.pdf",
+    "afterSHA256": "f9b0f0c8ffff4a40988ca7bdf0c09ba278295abac8a012fc9770a4296344355f",
+    "expectedTextSHA256": "3e8ca5821b1ea535fba1d0731a0edd1ec68d6e1c367cd8e166f3b57a05a4ffb6",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-24",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "cop_cost_family_main.webp",
+          "sourceUrl": "data/question-assets/costs-of-production/cop_cost_family_main.webp",
+          "sha256": "e8fa4e8e56c2f8c1343b76959e6844a87d5fb4c1631778953d1041cd84854daf",
+          "imageAlt": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include 120, 100, 80, 2, 60, 6, 0, 40, 20, 10, 30, 50, 70.",
+          "graphDescription": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include 120, 100, 80, 2, 60, 6, 0, 40, 20, 10, 30, 50, 70."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/cop_cost_family_main.webp",
+        "after": null
+      },
+      "check": {
+        "before": "Why does the ATC–AVC gap shrink?",
+        "after": "With fixed cost unchanged, why does the ATC-AVC gap shrink as output rises? How is that different from an increase in the lease payment at a fixed output?"
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "fixed_cost"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-24.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-24.pdf",
+    "beforeSHA256": "a3a8258ec4c1b3116a5a28f0e249a46f2ccf5debd94a445e48cfd9513d017076",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-24.pdf",
+    "afterSHA256": "72ae8da7d3dbdcd9cbd95ad5823458bb4e3bc255b20cd8f89f1c07bb98e05e9a",
+    "expectedTextSHA256": "deb2979ebfb34d406e4256b14b68e822f579c9586b53f0fe38a829b6451af8bd",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-27",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "COST-06.webp",
+          "sourceUrl": "data/question-assets/costs-of-production/COST-06.webp",
+          "sha256": "8014184ebafb1b2068d8561be02d3d2d59fa133f80a079bdd9f3570830b67ae4",
+          "imageAlt": "The horizontal axis is quantity and the vertical axis is cost per unit. A U-shaped long-run average-cost curve is plotted against quantity, with labeled regions or quantity guides where shown. Visible numeric scale markings include 48, 44, 40, 8, 36, 3, 32, 28, 24, 5, 20, 16, 12, 4, 0, 10, 30, 50, 60, 70, 80, 90, 100, 110, 120.",
+          "graphDescription": "The horizontal axis is quantity and the vertical axis is cost per unit. A U-shaped long-run average-cost curve is plotted against quantity, with labeled regions or quantity guides where shown. Visible numeric scale markings include 48, 44, 40, 8, 36, 3, 32, 28, 24, 5, 20, 16, 12, 4, 0, 10, 30, 50, 60, 70, 80, 90, 100, 110, 120."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-06.webp",
+        "after": null
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "flat_lrac"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-27.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to invent flat lrac region. The graph has a single rounded minimum rather than a visibly flat minimum-cost interval.",
+        "after": "Minimum efficient scale is the first output attaining minimum LRAC, not the midpoint or end of a flat minimum-cost interval."
+      },
+      "worked": {
+        "before": "The LRAC curve reaches its lowest value, about $12 per unit, at an output of 60. Minimum efficient scale is the smallest output that attains minimum long-run average cost, so the graph's MES is 60 units. Outputs below 60 have not exhausted economies of scale.",
+        "after": "LRAC first reaches $12 at 60 units and remains at $12 through 90 units. Minimum efficient scale is therefore 60. The flat 60-to-90 interval illustrates constant returns to scale: output can expand proportionally without changing long-run cost per unit."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-27.pdf",
+    "beforeSHA256": "cf859b64accd942006ec73d6dceff980c90f36203857b46aeca70e775fb62f3a",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-27.pdf",
+    "afterSHA256": "3b960b9d617d4bff376e5a34bd64bf604d15ed039a0ecf7bd1d2a8cb15820416",
+    "expectedTextSHA256": "2f583b843d203868d9727a9084eb8957993b09661db730e94f620fd93672b610",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-28",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "PC-02.webp",
+          "sourceUrl": "data/question-assets/perfect-competition/PC-02.webp",
+          "sha256": "2823d69bbd80dc030db71afd524fc32c6ea607b58b13819edee26053b7d08cdd",
+          "imageAlt": "The horizontal axis is firm or market quantity and the vertical axis is price or cost per unit. The firm graph shows an upward-sloping MC curve, U-shaped ATC and AVC curves, and a horizontal line labeled D equals AR equals MR or P equals MR equals AR, with the marked quantity and price or cost levels. Visible numeric scale markings include 60, 55, 50, 45, 3, 40, 35, 30, 28, 7, 20, 10, 5, 0, 70, 80, 90, 100.",
+          "graphDescription": "The horizontal axis is firm or market quantity and the vertical axis is price or cost per unit. The firm graph shows an upward-sloping MC curve, U-shaped ATC and AVC curves, and a horizontal line labeled D equals AR equals MR or P equals MR equals AR, with the marked quantity and price or cost levels. Visible numeric scale markings include 60, 55, 50, 45, 3, 40, 35, 30, 28, 7, 20, 10, 5, 0, 70, 80, 90, 100."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-02.webp",
+        "after": null
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Price-taking firm at a market price of $25",
+          "columnHeaders": [
+            "Price",
+            "Total revenue",
+            "MR per extra unit"
+          ],
+          "rowHeaders": [
+            "Q = 48",
+            "Q = 49",
+            "Q = 50"
+          ],
+          "cells": [
+            [
+              "$25",
+              "$1,200",
+              "$25"
+            ],
+            [
+              "$25",
+              "$1,225",
+              "$25"
+            ],
+            [
+              "$25",
+              "$1,250",
+              "$25"
+            ]
+          ]
+        }
+      },
+      "worked": {
+        "before": "The competitive firm takes the market price of $25, so P = MR = AR. The horizontal price line meets marginal cost at 50 units, and total revenue is $25 x 50 = $1,250. Because ATC is also $25 at that output, the firm earns zero economic profit.",
+        "after": "The firm takes a market price of $25. Selling 50 units yields total revenue of $25 x 50 = $1,250. Each additional unit adds $25 to revenue without lowering the price on earlier units. Thus P = AR = MR. Choosing the profit-maximizing output is a separate later step."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-28.pdf",
+    "beforeSHA256": "e469f3d652c9362de40fe62f14787803a78822b09d951a60eacb54d21c3aeb51",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-28.pdf",
+    "afterSHA256": "a3f2a928e9405aa3b5ab6ff7ed8a7b92204ba984e6eabcbb9de0b8c5f4ad659f",
+    "expectedTextSHA256": "2b6830390eb7ee19568b677582b88b43f64bbdc3db9ed562e3a398fb90ce8187",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-32",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-32.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "The firm's short-run supply curve is the portion of MC at and above minimum AVC, which begins at point A: 22 units and $20. For example, if market price rises to $30, the firm supplies the quantity at point B, about 33 units. MC below A is not part of supply because the firm shuts down.",
+        "after": "The firm's short-run supply curve is the portion of MC at and above minimum AVC, which begins at point A: 22 units and $20. For example, if market price rises to $30, the firm supplies the quantity at point B, about 36 units. MC below A is not part of supply because the firm shuts down."
+      },
+      "workedLabel": {
+        "before": "SHIFTING FIRM SUPPLY",
+        "after": "READING SHORT-RUN FIRM SUPPLY"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-32.pdf",
+    "beforeSHA256": "dff67da95808d3a26f98b6de12accc28b36832a9dfa1cd223519909391ba5a9e",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-32.pdf",
+    "afterSHA256": "e08d55519d76a84e0d3ebd74eb309c2673ab43ae14db9d3b10a0e39ca0baf66a",
+    "expectedTextSHA256": "35f7406cb6018f7ce123723444102d58cf7c386896fed959e3ea2c9af959f35e",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-33",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-33.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "The market equilibrium price is $25. At that price, the representative firm produces 50 units where P = MC, and $25 is also the minimum ATC. Revenue covers all explicit and implicit costs, so economic profit is zero and no entry or exit pressure remains.",
+        "after": "If firms initially earn economic profit, entry expands market supply and pushes price down. If they incur losses, exit reduces supply and pushes price up. The graph shows the endpoint: P = MC, and price equals minimum ATC at $25 and 50 units. Revenue covers explicit and implicit costs, so no entry or exit pressure remains."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-33.pdf",
+    "beforeSHA256": "8cbec2e4a6f27ad429ddc66ffc06fb5058d117449eeab375cd5a28be3decebb9",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-33.pdf",
+    "afterSHA256": "6164df26f05692bde2f84943590081567ff2466f71de056f7c7356dfd7492b39",
+    "expectedTextSHA256": "12e58e6a307dae15a7c4cfc4b171d972653eb39e6b2f0ddd07d11215d70d9694",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-36",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "MON-03.webp",
+          "sourceUrl": "data/question-assets/monopoly/MON-03.webp",
+          "sha256": "37f4d2e1885412d166823749a7fa2757c0ad8b030e6484171c326f3812b088f5",
+          "imageAlt": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper downward-sloping MR curve are shown with MC and, where present, ATC and AVC. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 80, 70, 60, 4, 50, 8, 47, 3, 40, 30, 10, 0, 15, 45, 75, 90, 105, 120.",
+          "graphDescription": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper downward-sloping MR curve are shown with MC and, where present, ATC and AVC. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 80, 70, 60, 4, 50, 8, 47, 3, 40, 30, 10, 0, 15, 45, 75, 90, 105, 120."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopoly/MON-03.webp",
+        "after": null
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "Across the relevant output range, the graph's ATC curve declines as output expands, so one large producer can supply the market at lower average cost than several small firms. That cost structure supports natural monopoly. At the efficient point where demand meets MC, price would be below ATC, creating a regulatory funding problem.",
+        "after": "A city grants one firm the exclusive right to distribute water through its pipe network. Even if another firm could supply water, the exclusive license prevents legal entry. This is a legal barrier, distinct from economies of scale that can also make a single network less costly. Identifying the barrier does not by itself determine the best regulated price."
+      },
+      "workedLabel": {
+        "before": "IDENTIFYING MONOPOLY POWER",
+        "after": "IDENTIFYING A BARRIER TO ENTRY"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-36.pdf",
+    "beforeSHA256": "18a6c02c3653ca1cde03876a478dc964a3e38d8ecc54fc771fb8b579b5e23320",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_1\\revisions\\6fba4fd93b4a635e5f7d745b157e3ca1d130a990ea337278011c3a0053fc84c1\\after\\MICRO-36.pdf",
+    "afterSHA256": "7e004912d53acc7bf1d7603258aecddbb9f14e188cd69850b354adff5f6f7ca3",
+    "expectedTextSHA256": "9833e7a85a38749a62e92a508bcdebf4c5d0ebebd2aad6970718106c68035864",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-38",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "A monopolist chooses output where rising marginal cost equals marginal revenue, then uses demand to determine price. Produce units whose marginal revenue covers marginal cost. MR is compared with MC for output choice. Find Q from MR=MC, then read price from demand. Monopoly analysis is a two-step decision: marginal output choice first, demand-based price second.",
+        "after": "A monopolist compares marginal revenue with marginal cost to choose output, then reads the corresponding price from demand. In the displayed interior solution, MR exceeds MC before their crossing and falls below MC afterward. The output decision and the price decision are separate; marginal cost need not always slope upward."
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-38.png"
+      },
+      "recognition": {
+        "before": [
+          "Find output where rising marginal cost equals marginal revenue.",
+          "Move vertically from that output to the demand curve to find the monopoly price.",
+          "Keep the output decision and price decision separate: marginal conditions determine quantity, demand determines price.",
+          "Do not set price equal to marginal revenue or marginal cost unless the graph happens to imply it."
+        ],
+        "after": [
+          "Find the output where MR crosses MC from above in the interior solution.",
+          "Move vertically from that output to the demand curve to find the monopoly price.",
+          "Keep the output decision and price decision separate: marginal conditions determine quantity, demand determines price.",
+          "Do not set price equal to marginal revenue or marginal cost unless the graph happens to imply it."
+        ]
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-38.pdf",
+    "beforeSHA256": "60fd7d680470e88abaca3e9387aee9103c5ccffa7136865c7d0e07ccd08294ef",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-38.pdf",
+    "afterSHA256": "7f8159b05c3a7e4feb7d215ca224d0863e01ad7cc585d10d8c090af5503031aa",
+    "expectedTextSHA256": "eedd34bc463b7aa7ea23d4221a332f5bbcad4144cfc3f634f8fcbf3f4615663b",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-40",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-40.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "workedLabel": {
+        "before": "MEASURING MONOPOLY DEADWEIGHT LOSS",
+        "after": "IDENTIFYING MONOPOLY DEADWEIGHT LOSS"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_02\\after\\MICRO-40.pdf",
+    "beforeSHA256": "9d6319a9e27ef6a46f8dffa2eda116a9d06bd82d5d7aed31a0094d61cd978b00",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-40.pdf",
+    "afterSHA256": "6d41486fcad41c5cce3fb31891016f9504d9620f3c492685448cc49f7dee905c",
+    "expectedTextSHA256": "68363af5bb4e09a67bdcad049d6dd23d595930b8b1b9da493724da4eb03d1e1a",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-42",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "Can ordinary group price discrimination increase total welfare?",
+        "after": "A seller charges students less than other buyers. Why must it be able to identify the groups and prevent resale for this pricing policy to persist?"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-42.pdf",
+    "beforeSHA256": "c1e5e78644a246182b261f5a768128b9112da4390c5b91cac63b116f68c100ec",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-42.pdf",
+    "afterSHA256": "d90ab44fb035a93a77027a413712823241ec96a7f8d76f97b4fa6f141fd3ed19",
+    "expectedTextSHA256": "896434cf0d642d4b89307d681a593d3571426f2b0ccc684d085ff8410af6075e",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-44",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "A firm has P>MC but P<ATC. Which statement is correct?",
+        "after": "A firm earns a loss because P is below ATC. What additional cost comparison is needed to decide whether it should shut down in the short run?"
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-44.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to misapply monopolistic competition rule. At the chosen output, price above ATC means profit, price below ATC means loss, and equality means zero economic profit.",
+        "after": "Separate profit from shutdown. A fixed-cost increase can create an economic loss without changing marginal cost or the benefit of operating; compare revenue with variable cost."
+      },
+      "worked": {
+        "before": "The firm chooses 36 units where MR = MC at $15, then charges $27 on its demand curve. ATC is also $27, so total revenue and total cost are both $27 x 36 = $972. Economic profit is zero, but P > MC shows the outcome is not allocatively efficient.",
+        "after": "The displayed baseline has Q = 36 and P = ATC = $27, so economic profit is zero. Consider a higher fixed lease cost of $108, with demand and variable costs unchanged. Output and price stay at that baseline, but ATC rises by $3 and the loss is $108. The firm still operates if revenue covers variable cost; loss alone does not imply shutdown."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-44.pdf",
+    "beforeSHA256": "d8a2f41a85b6a40b20581e362dca4910b39b47f8b2b9554452f87338538e94f5",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-44.pdf",
+    "afterSHA256": "ff1bb3404c009f53762960cc4fa48841d709bbd6aaafbcc28aee7ca07243bcf9",
+    "expectedTextSHA256": "7df2cb4135cf530a139084f500dc506bfa90d7fb112df73927eb908c402f3f6c",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-45",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-45.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "At 36 units, the firm charges $27 and has ATC of $27. Total revenue is $27 x 36 = $972, and total cost is also $972, so economic profit is zero. With no profit attracting entry and no loss causing exit, the industry is in long-run equilibrium.",
+        "after": "Short-run profit attracts competing varieties, reducing demand for each incumbent. Adjustment continues until demand is tangent to ATC at the chosen output. The graph shows that endpoint at 36 units and $27, where revenue and cost both equal $972. Tangency eliminates economic profit; it does not put output at minimum ATC."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-45.pdf",
+    "beforeSHA256": "52d5e249d0d0dbbeaca3590e834726f1cff10fc81b846a5062f7e654ccbf5323",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-45.pdf",
+    "afterSHA256": "5324fee3209a639c184c5755be089c16f0af38a958a1e76764707c23d76197f3",
+    "expectedTextSHA256": "7f37ea6dc69af8999c6950d7d29ff535a73e27044e644e79bb54e0c542826359",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-46",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "Advertising can provide information, persuade buyers, build a brand, and change the elasticity or position of a firm's demand curve. The firm is competing through product features and service rather than changing price. In signaling models, willingness to incur a visible selling cost can sometimes convey information when higher quality supports repeat sales. A fixed selling cost raises fixed and average total cost but does not directly raise MC or AVC. The ad is trying to shape preferences and brand perception rather than mainly transmit facts.",
+        "after": "Advertising can give buyers product information, persuade them, or build a brand. Information about prices, hours, or features can reduce search costs. Persuasive messages can change preferences or price sensitivity. Nonprice competition also includes quality, convenience, service, and variety."
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "A common mistake is to misapply monopolistic competition rule. The firm is competing through product features and service rather than changing price. In signaling models, willingness to incur a visible selling cost can sometimes convey information when higher quality supports repeat sales.",
+        "after": "Do not treat every advertisement as useful information or as waste. Ask what it tells buyers and whether it changes their ability to compare products."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-46.pdf",
+    "beforeSHA256": "88d2d3466d6f293457007b9caed68eb5943f1974fb5f27a724cba2223ebea75d",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-46.pdf",
+    "afterSHA256": "cb6a8bc0875be8578e156f5e616775d85516013f0c96c9f844bc9f121402702b",
+    "expectedTextSHA256": "0a2ba1de9e54f710dfb9acf809e9d317dd0b33580c5f4f39d01ed09c05513425",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-47",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "MCOMP-02.webp",
+          "sourceUrl": "data/question-assets/monopolistic-competition/MCOMP-02.webp",
+          "sha256": "83f2a5f682121e65140c1e4653b672e0136b0b0cf29315fcadd437ca5823ce73",
+          "imageAlt": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper MR curve are shown with MC and a U-shaped ATC curve. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 45, 36, 0, 27, 18, 9, 1, 10, 20, 30, 40, 50, 60, 70, 80.",
+          "graphDescription": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper MR curve are shown with MC and a U-shaped ATC curve. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 45, 36, 0, 27, 18, 9, 1, 10, 20, 30, 40, 50, 60, 70, 80."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopolistic-competition/MCOMP-02.webp",
+        "after": null
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "The long-run firm produces 36 units at a price and ATC of $27, so economic profit is zero. Marginal cost is only $15, meaning price exceeds MC, and output lies left of minimum ATC. Product variety may benefit consumers, but the model also predicts markup and excess capacity.",
+        "after": "Two bakeries offer different breads. A neighborhood values having both varieties, but dividing sales between the bakeries can leave each producing below its lowest-cost scale. More variety can therefore benefit buyers while raising cost per loaf. A welfare judgment weighs those benefits against the extra resource cost; a markup alone does not measure the value of variety."
+      },
+      "workedLabel": {
+        "before": "VARIETY VERSUS EFFICIENCY",
+        "after": "WEIGHING THE VALUE OF VARIETY"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-47.pdf",
+    "beforeSHA256": "1def57d44726e4c7fe8e55e008b78b59130602fa90df85b9738046a46a00abc9",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-47.pdf",
+    "afterSHA256": "66c7b5b593ec569b9561d1514b7fa051bec27c808606316a36bf117bccd24286",
+    "expectedTextSHA256": "910a015e21ba9b25a726d303ba9566feb9f417431adf515bf57417c2c95dc92a",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-48",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "Which measure squares market shares?",
+        "after": "Why can an aggregate Other category not generally be squared as if it were one firm when calculating exact HHI?"
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-48.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "The graph shows market shares of 38%, 32%, 12%, 9%, and 9%. HHI equals the sum of squared shares: 38^2 + 32^2 + 12^2 + 9^2 + 9^2 = 1,444 + 1,024 + 144 + 81 + 81 = 2,774. That value indicates substantial concentration.",
+        "after": "The named firms contribute 38^2 + 32^2 + 12^2 + 9^2 = 2,693 HHI points. The remaining 9% is labeled Other, an unspecified fringe. If it were one firm, it would add 9^2 = 81 points. Thus 2,774 is an upper bound, not an exact HHI. An exact calculation requires the individual fringe shares."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-48.pdf",
+    "beforeSHA256": "f2a94860ad2313eb87b525da688f93fe5a310bf67284ebe6191e7c81282f7193",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-48.pdf",
+    "afterSHA256": "af045e42c225b4de6a5fc61834c9fc2f08a1d411844c6796328ff4dec905dfd6",
+    "expectedTextSHA256": "176c9bd8da26550fc467ce3793d9fa2b1d326566592076c73e34db76c550f5ec",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-50",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "cartel_1.webp",
+          "sourceUrl": "data/question-assets/oligopoly/cartel_1.webp",
+          "sha256": "1fa89099c93edd9205251386887ef940433fba8536dea3b4cf9e9e9478a2858c",
+          "imageAlt": "The horizontal axis is market quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve and steeper downward-sloping MR curve are shown with an MC curve against market quantity. Visible numeric scale markings include 100, 80, 60, 2, 40, 20, 0, 10, 30.",
+          "graphDescription": "The horizontal axis is market quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve and steeper downward-sloping MR curve are shown with an MC curve against market quantity. Visible numeric scale markings include 100, 80, 60, 2, 40, 20, 0, 10, 30."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/cartel_1.webp",
+        "after": null
+      },
+      "check": {
+        "before": "What does mutual defection show?",
+        "after": "If the other firm keeps the agreement, why is a one-time promise to keep it vulnerable to undercutting?"
+      },
+      "graph": {
+        "before": true,
+        "after": false
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Payoffs: (Row firm, Column firm)",
+          "columnHeaders": [
+            "Keep agreement",
+            "Undercut"
+          ],
+          "rowHeaders": [
+            "Keep agreement",
+            "Undercut"
+          ],
+          "cells": [
+            [
+              "(6, 6)",
+              "(2, 8)"
+            ],
+            [
+              "(8, 2)",
+              "(3, 3)"
+            ]
+          ],
+          "columnWidths": [
+            0.36,
+            0.32,
+            0.32
+          ]
+        }
+      },
+      "worked": {
+        "before": "A cartel acts like one monopolist and selects industry output where industry MR equals MC. On the graph, the downward-sloping MR curve meets the $20 MC line at 20 units. The cartel then uses demand to set price. Each member has an incentive to sell extra units, which makes the agreement unstable.",
+        "after": "If Column keeps the agreement, Row gets 8 by undercutting rather than 6 by keeping it. If Column undercuts, Row gets 3 rather than 2 by undercutting. Column faces the same incentives. Both undercut and receive 3 each, although keeping the agreement would give 6 each. Individual incentives can undermine a mutually beneficial agreement."
+      },
+      "workedLabel": {
+        "before": "WHY CARTELS BREAK DOWN",
+        "after": "INDIVIDUAL INCENTIVES VERSUS JOINT GAINS"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_original\\revisions\\3ecbd39cc69e51500949acbadbbf2b7a7397bbf05fa1d7684d0a3b412abfd9f2\\after\\MICRO-50.pdf",
+    "beforeSHA256": "36e3a9ac45c12b20c887d10b9c3d107e1b4c32114e452e313c741277f03586ba",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-50.pdf",
+    "afterSHA256": "71d9c038b36df9bcb8d855883903bb53275a3ae396bf5312d037e3e7facaee49",
+    "expectedTextSHA256": "474c72300b258a7bfc63a340f446458b79f8cfd0e57621cdf77288892cb7da7b",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-51",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "check": {
+        "before": "Does low pricing prove predation?",
+        "after": "After entry, why will the incumbent accommodate rather than fight, and how does that affect the entrant's first decision?"
+      },
+      "core": {
+        "before": "Dynamic Strategy: Repeated Games, Credibility & Entry Deterrence examines repeated interaction, credibility, commitments, limit pricing, entry deterrence, continuation incentives, and sequential strategic reasoning. A higher continuation factor increases the weight on future consequences. Cooperation PV is 12.50; cheating path PV is 16.25. Net gain = 25 − 8 − 14 = 3 million. Aggressive competition and predation must be distinguished with evidence.",
+        "after": "In a sequential game, one player acts before another. Work backward from the last decision: identify the action that the later player will actually prefer, then use that response to evaluate the first move. A threat is credible only if carrying it out would be worthwhile when the decision arrives. Repeated interaction can make future consequences matter, but no present-value calculation is needed here."
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-51.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "Do not assume every low price is predatory. Net gain = 25 − 8 − 14 = 3 million. Aggressive competition and predation must be distinguished with evidence.",
+        "after": "A threatened response is not automatically credible. Compare the later player's payoffs at the decision point before using the threat to predict the first move."
+      },
+      "worked": {
+        "before": "The game tree is solved backward. If entry occurs, the incumbent receives 7 by accommodating and 3 by fighting, so accommodation is the credible response on that branch. Anticipating it, the entrant compares 6 from entering with 0 from staying out and enters. The subgame-perfect outcome is Enter, then Accommodate.",
+        "after": "The game tree is solved backward. If entry occurs, the incumbent receives 7 by accommodating and 3 by fighting, so accommodation is the credible response on that branch. Anticipating it, the entrant compares 6 from entering with 0 from staying out and enters. The backward-induction outcome is Enter, then Accommodate."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_03\\after\\MICRO-51.pdf",
+    "beforeSHA256": "d51f7be0799894115c5c05dc7b228bc16c967260437ec2ea4cf4d36a3f2e5a5e",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-51.pdf",
+    "afterSHA256": "78a16f61ca99d2b249134ab41bb0f173a852f4092d4003dd93791063a04e0611",
+    "expectedTextSHA256": "e620ad9d7f362a307b5e30e63f364b9bee68d59d9cdb8b6e2fb7987a34f51e0b",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-52",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "assetMetadata": {
+        "before": {
+          "filename": "kinked_2.webp",
+          "sourceUrl": "data/question-assets/oligopoly/kinked_2.webp",
+          "sha256": "145c94b81677a78296785db027551b1134e872021a692b89e6a3a336ea4c1685",
+          "imageAlt": "The horizontal axis is market quantity and the vertical axis is price or cost per unit. A demand curve labeled D changes slope at a visible kink; the MR curve has a vertical gap, and MC passes through the displayed range. Visible numeric scale markings include 100, 80, 60, 2, 40, 20, 0, 10, 30, 50.",
+          "graphDescription": "The horizontal axis is market quantity and the vertical axis is price or cost per unit. A demand curve labeled D changes slope at a visible kink; the MR curve has a vertical gap, and MC passes through the displayed range. Visible numeric scale markings include 100, 80, 60, 2, 40, 20, 0, 10, 30, 50."
+        },
+        "after": null
+      },
+      "assetPath": {
+        "before": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/kinked_2.webp",
+        "after": null
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "kinked_demand"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-52.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "watch": {
+        "before": "Do not assume price is irrelevant. Oligopolists can compete on quality and other dimensions. A leader’s announced price can become a focal point.",
+        "after": "This is one simple model of price rigidity, not a claim that all oligopoly prices stay fixed. Firms can also compete through quality, service, and advertising."
+      },
+      "worked": {
+        "before": "The kink in demand occurs near 20 units and a price of $50. Because the marginal-revenue curve has a gap at that output, modest changes in MC around $36 need not change the chosen price or quantity. The model explains price rigidity while reminding us that oligopolists can still compete through quality, service, and advertising.",
+        "after": "Demand has a kink at Q = 20 and P = $50. Above that price, customers respond more strongly to a price increase; below it, rivals matching a cut limit the quantity gain. The corresponding MR gap runs from $20 to $40 at Q = 20. MC = $36 passes through that gap, so modest cost changes within it leave this model's chosen price and quantity unchanged."
+      },
+      "workedLabel": {
+        "before": "RECOGNIZING NONPRICE COMPETITION",
+        "after": "AN INTRODUCTORY PRICE-RIGIDITY EXAMPLE"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\wording_context\\after\\MICRO-52.pdf",
+    "beforeSHA256": "42ee6e3daa65e822a935c06460c4810edff08b2e0ef82df4b12598ff87c99ac9",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\batch1_high\\revisions\\fc6bdef0fdc4cb5fa2e6b1e819126f8bf94aef4df1b32c6cf93394deed2cc46f\\after\\MICRO-52.pdf",
+    "afterSHA256": "3fa19552913e1bc9d7eda6d278346792024b037ae0d748ff120f0b630f667f60",
+    "expectedTextSHA256": "3179f84ee6b047cf6244f16452566aabc991ca52bd332fcc60d6c0609670b22d",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-57",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-57.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "worked": {
+        "before": "Warehouse labor demand and labor supply intersect at an hourly wage of $20 and 40 hundreds of workers. Because the horizontal axis is measured in hundreds, equilibrium employment is 4,000 workers. Below $20, firms demand more labor than workers supply; above $20, labor supplied exceeds labor demanded.",
+        "after": "Suppose output sells for $5 and the marginal worker adds 4 units per hour. VMP is $5 x 4 = $20 per hour, matching a $20 wage. The graph shows market equilibrium at that wage and 40 hundreds of workers, or 4,000 workers. A higher output price raises VMP at each employment level and shifts labor demand right."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-57.pdf",
+    "beforeSHA256": "8f484bb50b6e9995e152198b35b673d6157dc21d77b216bd60c30229a9ff2eb7",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-57.pdf",
+    "afterSHA256": "a62369b0a3b9120c2bab0beab018654cd5424637e8280127b9c7fcc43187d57e",
+    "expectedTextSHA256": "97c647663df645986d09f98e6f8f390cc9e36f20ddc8a0a3f0a41ecdbdebed49",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-58",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "core": {
+        "before": "A budget constraint shows every bundle a consumer can afford at given income and prices. Its intercepts are income divided by each good's price, and its slope is the negative relative price. Preferences rank feasible bundles; the optimum is the highest attainable indifference curve, usually where MRS equals the price ratio.",
+        "after": "A budget constraint shows affordable bundles at given income and prices. Its intercepts show the most of either good a consumer can buy. An indifference curve connects bundles the consumer ranks equally. The best affordable bundle reaches the highest available preference level; in this example, its curve just touches the budget line."
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-58.png"
+      },
+      "recognition": {
+        "before": [
+          "Bundles inside or on the budget line are feasible; bundles outside it are infeasible.",
+          "An income change shifts the line in parallel when prices are fixed.",
+          "A change in one price pivots the line around the unchanged intercept.",
+          "At an interior optimum, marginal utility per dollar is equal across goods."
+        ],
+        "after": [
+          "Bundles inside or on the budget line are feasible; bundles outside it are infeasible.",
+          "An income change shifts the line in parallel when prices are fixed.",
+          "A change in one price pivots the line around the unchanged intercept.",
+          "Compare the highest preference curve that can be reached without exceeding the budget."
+        ]
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\blocked_25_v1\\batches\\micro_later\\revisions\\d840552cc1fc4feed69f70363fcbd99dcccae7a6363aa585026d77c97550870e\\after\\MICRO-58.pdf",
+    "beforeSHA256": "9e86496e2d8a10084b583833690930ef5561b6327494bce9e5809a69c9454e5b",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-58.pdf",
+    "afterSHA256": "9b508fce8b406a8c38e83e2b61283595789faaf06e7894392cb7c487a9229f49",
+    "expectedTextSHA256": "93000f077557ecb1400968b76e0d48df3ac7bd4b24ad77a5537f4d636dd0e122",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-66",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Individual rankings (first to third)",
+          "columnHeaders": [
+            "First choice",
+            "Second choice",
+            "Third choice"
+          ],
+          "rowHeaders": [
+            "Voter 1",
+            "Voter 2",
+            "Voter 3"
+          ],
+          "cells": [
+            [
+              "A",
+              "B",
+              "C"
+            ],
+            [
+              "B",
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "A",
+              "B"
+            ]
+          ]
+        }
+      },
+      "worked": {
+        "before": "Voter 1 ranks A > B > C; Voter 2 ranks B > C > A; Voter 3 ranks C > A > B. Against B, A wins with Voters 1 and 3. Against C, B wins with Voters 1 and 2. Against A, C wins with Voters 2 and 3. Thus the majority relation is A > B > C > A, so the agenda can determine which comparison occurs last and which option survives.",
+        "after": "Using the rankings, A defeats B by 2 votes to 1; B defeats C by 2 to 1; and C defeats A by 2 to 1. Each voter has a consistent ranking, yet the group cycles. With no option beating every rival, the order of pairwise votes can affect the final survivor."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-66.pdf",
+    "beforeSHA256": "20ad060edd7d4c11af6ee01fc486422444c475bf5996b94c43b927b03229157c",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-66.pdf",
+    "afterSHA256": "66141abf02b6f80d6463b5aba77f02b376d396cddcb5d2985dc1b5df0faf4385",
+    "expectedTextSHA256": "53cd614ea8aa99704661c719e5deae719ac30b5bd58edba3df954baa2ea386da",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-67",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      },
+      "table": {
+        "before": null,
+        "after": {
+          "caption": "Desirable guarantees and their meanings",
+          "columnHeaders": [
+            "Meaning"
+          ],
+          "rowHeaders": [
+            "Unrestricted rankings",
+            "Consistent social ranking",
+            "Unanimity",
+            "No dictator",
+            "Independence"
+          ],
+          "cells": [
+            [
+              "Allow any consistent individual rankings."
+            ],
+            [
+              "Rank every pair without a group cycle."
+            ],
+            [
+              "Respect a comparison everyone agrees on."
+            ],
+            [
+              "No one voter always determines the ranking."
+            ],
+            [
+              "If each voter keeps A versus B unchanged, the social A-versus-B ranking stays unchanged."
+            ]
+          ],
+          "columnWidths": [
+            0.3,
+            0.7
+          ]
+        }
+      },
+      "worked": {
+        "before": "A community wants a ranked-choice rule that respects unanimous rankings, is not controlled by one voter, produces a consistent social ranking, and treats irrelevant alternatives appropriately. Each property seems reasonable. Arrow's theorem says that, with at least three alternatives and unrestricted individual rankings, no aggregation rule can guarantee all of them simultaneously. The lesson is an unavoidable design tradeoff, not a claim that collective choice is meaningless.",
+        "after": "A community wants all five guarantees in the table. With at least three alternatives, Arrow's theorem says no rule combining unrestricted individual rankings can always provide every guarantee. The introductory lesson is a design tradeoff among reasonable goals, not that elections cannot produce winners."
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-67.pdf",
+    "beforeSHA256": "222c3b2b428c8ccad3c83c25148943335f9bdbf93adb2c361d8b43091560813d",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-67.pdf",
+    "afterSHA256": "56622f4fa2d484b9d4923127edb9194bb4852da76cd0af58adb0be89dc57e357",
+    "expectedTextSHA256": "9e99c3cc2785b83385160a770f42fbc0df62362c2a2ab6cc05d80f3976833119",
+    "unexpectedContentChange": false
+  },
+  {
+    "code": "MICRO-68",
+    "classification": "AUTHORIZED CONTENT / LAYOUT / SEMANTIC CHANGE",
+    "sourceFields": {
+      "graph": {
+        "before": false,
+        "after": true
+      },
+      "graphSpec": {
+        "before": null,
+        "after": {
+          "kind": "median_voter"
+        }
+      },
+      "maintainedGraphPath": {
+        "before": null,
+        "after": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-68.png"
+      },
+      "renderProfile": {
+        "before": null,
+        "after": "owner_qa_v1"
+      }
+    },
+    "beforeCandidate": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\micro_later\\after\\MICRO-68.pdf",
+    "beforeSHA256": "aee02d9f70b4de95808b58e29a18f5da5041f75f1d23df98a506f8e1915a7185",
+    "afterCandidate": "tmp\\pdf_accessibility\\owner_qa_remediation_v1\\batches\\micro_2\\revisions\\441cf92a942d447e7cc816ecf186696c67decb30016a228055da7840c0005e1f\\after\\MICRO-68.pdf",
+    "afterSHA256": "0542e78a32a01bc0a9d1272cc64f0b5075ceb4cfe81054b7a0ac101ceec12b09",
+    "expectedTextSHA256": "e2ac9ff9ff06b835c6f0b0f4b87e34e42a30e15c9fb61d0f40661e32652b9728",
+    "unexpectedContentChange": false
+  }
+]

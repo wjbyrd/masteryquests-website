@@ -114,7 +114,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Predict behavioral responses and unintended consequences created by incentives.",
-        "core": "Incentives change the expected benefits or costs of a choice, so they can alter behavior at the margin. The fee alters the next trip's marginal cost, which can change the decision. With limited time, the higher wage makes study more costly in forgone earnings. People respond to incentives, but they may respond in ways that improve the metric while hurting the real goal. The toll raises the cost of using the road, which gives drivers an incentive to change behavior.",
+        "core": "Incentives change the expected benefits or costs of a choice, so they can alter behavior at the margin. A congestion fee raises the cost of the next downtown trip. Incentives can be monetary or nonmonetary, and different people may respond differently. A reward can also improve a measured result while harming the underlying goal.",
         "recognition": [
           "A speed bonus makes workers finish faster, but quality falls.",
           "A new toll reduces traffic on a busy road.",
@@ -123,7 +123,7 @@
           "An incentive changes the payoff to a choice; it need not be monetary or guarantee a result."
         ],
         "watch": "A common mistake is to define incentives as cash payments or guaranteed behavior. An incentive changes the expected payoff to a choice; it may be monetary or nonmonetary, and people can respond differently.",
-        "worked": "A city charges a $4 congestion fee for downtown trips during rush hour. A driver whose next trip provides only $3 of benefit will now avoid that trip because its marginal cost has risen by $4. A commuter whose trip is worth $10 will still travel. The fee changes behavior at the margin without guaranteeing that every driver responds in the same way.",
+        "worked": "A city adds a $4 congestion fee for a rush-hour trip. Assume other trip costs are already deducted from each driver's benefit. A driver with a remaining benefit of $3 avoids the trip because the fee exceeds that benefit. A commuter with a remaining benefit of $10 still travels. The fee changes choices at the margin without making every driver respond alike.",
         "check": "A neighborhood app awards a visible badge for weekly recycling. Participation rises among users who value recognition but barely changes for others. What is the best interpretation?",
         "graph": false,
         "calculation": false,
@@ -131,7 +131,8 @@
         "time": "4 minutes",
         "exampleQuestionId": "P74-INC-BR-003",
         "checkQuestionId": "ECON-MG-MEDIUM-102",
-        "workedLabel": "RESPONDING TO INCENTIVES"
+        "workedLabel": "RESPONDING TO INCENTIVES",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Predict behavioral responses and unintended consequences created by incentives.",
@@ -392,7 +393,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Distinguish microeconomic and macroeconomic questions.",
-        "core": "Microeconomics studies choices by individual households, firms, workers, and markets, while macroeconomics studies economy-wide outcomes such as output, inflation, and unemployment. One event can require both market-level and economy-wide analysis. Macro conclusions require appropriate aggregation across people, firms, and markets. Macroeconomics examines economy-wide aggregates such as output, inflation, and unemployment. A single firm's hiring decision is microeconomics.",
+        "core": "Microeconomics studies choices by households, firms, workers, and individual markets. Macroeconomics studies economy-wide outcomes such as output, inflation, and unemployment. One event can require both kinds of analysis. The distinction is the unit of analysis, not the size of an organization or dataset.",
         "recognition": [
           "A report tracks national inflation, unemployment, and total output.",
           "A firm decides how much labor to hire at one restaurant.",
@@ -402,14 +403,15 @@
         ],
         "watch": "A common mistake is to label any large organization as macroeconomic. The classification depends on the unit of analysis: one decision-maker is micro; economy-wide aggregates are macro.",
         "worked": "A restaurant deciding whether to hire one more server is a microeconomic question because it concerns one firm's choice. The national unemployment rate is a macroeconomic outcome because it aggregates labor-market conditions across the economy. The subject's size is not decisive; the unit of analysis is.",
-        "check": "Name three economy-wide outcomes studied in macroeconomics.",
+        "check": "A national retailer studies how its own customers respond to a price increase. Is that question microeconomic or macroeconomic, and why?",
         "graph": false,
         "calculation": false,
         "difficulty": "Beginner",
         "time": "4 minutes",
         "exampleQuestionId": "P77-MVM-BR-040",
         "checkQuestionId": "P52B-MVM-R-002",
-        "workedLabel": "MICRO OR MACRO?"
+        "workedLabel": "MICRO OR MACRO?",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Distinguish microeconomic and macroeconomic questions.",
@@ -669,7 +671,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Interpret PPF points, slopes, shifts, efficiency, growth, and opportunity cost.",
-        "core": "A production possibilities frontier shows the combinations of two goods an economy can produce with its current resources and technology. A bowed-out PPF shows increasing opportunity cost as resources are shifted toward one good. Opportunity cost rises because resources are specialized and become less well suited as they are shifted into the other good. A PPF shows possible production combinations given current resources and technology.",
+        "core": "A production possibilities frontier shows the combinations of two goods an economy can produce with its current resources and technology. A bowed-out PPF shows increasing opportunity cost: specialized resources become less well suited as production shifts toward the other good. Points inside indicate unused capacity; points outside are currently infeasible.",
         "recognition": [
           "A PPF shows possible production combinations given current resources and technology.",
           "A new technology improves only medical production.",
@@ -693,7 +695,9 @@
           "sha256": "961e4a0c034de2ee5662f004cb0a343825290ca663dbe80b9ae6ad7dd0617a5a",
           "imageAlt": "The horizontal axis is Good X and the vertical axis is Good Y. A bowed-out frontier passes through A at (0, 50), B at (8, 45), C at (15, 35), D at (21, 20), and E at (25, 0). F is inside the frontier near (8, 20), and G is outside it near (21, 48).",
           "graphDescription": "The horizontal axis is Good X and the vertical axis is Good Y. A bowed-out frontier passes through A at (0, 50), B at (8, 45), C at (15, 35), D at (21, 20), and E at (25, 0). F is inside the frontier near (8, 20), and G is outside it near (21, 48)."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-08.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Interpret PPF points, slopes, shifts, efficiency, growth, and opportunity cost.",
@@ -777,7 +781,7 @@
           "Two firms specialize and create 40 extra units of combined output."
         ],
         "watch": "A common mistake is to choose the producer with the greatest absolute output. Comparative advantage depends on lower opportunity cost, and a mutually beneficial terms-of-trade ratio lies between the two opportunity costs.",
-        "worked": "Ari can produce either 12 lamps or 24 rugs, so one lamp costs Ari 24/12 = 2 rugs. Bea can produce either 10 lamps or 60 rugs, so one lamp costs Bea 60/10 = 6 rugs. Ari has comparative advantage in lamps because 2 rugs is the lower opportunity cost; Bea has comparative advantage in rugs because one rug costs Bea 10/60 = 1/6 lamp, below Ari's 12/24 = 1/2 lamp. Specialization according to those lower opportunity costs can increase combined output.",
+        "worked": "Ari gives up 24/12 = 2 rugs per lamp; Bea gives up 60/10 = 6 rugs per lamp. Ari has comparative advantage in lamps. For rugs, Bea gives up 1/6 lamp, below Ari's 1/2 lamp. A trade of one lamp for four rugs lies between the two lamp costs, so both can gain from specializing and exchanging.",
         "check": "If 1 X costs 2 Y, what is the cost of 1 Y?",
         "graph": false,
         "calculation": true,
@@ -785,7 +789,42 @@
         "time": "5 minutes",
         "exampleQuestionId": "P75-TRADE-BR-004",
         "checkQuestionId": "P75-TRADE-R-006",
-        "workedLabel": "FINDING COMPARATIVE ADVANTAGE"
+        "workedLabel": "FINDING COMPARATIVE ADVANTAGE",
+        "table": {
+          "caption": "Production possibilities and opportunity costs",
+          "columnHeaders": [
+            "Max lamps",
+            "Max rugs",
+            "Cost of 1 lamp",
+            "Cost of 1 rug"
+          ],
+          "rowHeaders": [
+            "Ari",
+            "Bea"
+          ],
+          "cells": [
+            [
+              "12",
+              "24",
+              "2 rugs",
+              "1/2 lamp"
+            ],
+            [
+              "10",
+              "60",
+              "6 rugs",
+              "1/6 lamp"
+            ]
+          ],
+          "columnWidths": [
+            0.14,
+            0.15,
+            0.15,
+            0.28,
+            0.28
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze comparative advantage, specialization, mutually beneficial terms of trade, and the distribution of gains from exchange.",
@@ -871,14 +910,15 @@
         ],
         "watch": "A common mistake is to give economists authority to choose society's values. Economists can estimate consequences and tradeoffs; the policy choice also requires normative judgments.",
         "worked": "An economist estimates that a proposed transit subsidy will increase ridership by 8%, but the estimate comes from a city with denser development. Professional advice reports the predicted benefit, explains the uncertain transfer to the local setting, and identifies fiscal costs. Whether those consequences justify the policy also depends on public values and priorities.",
-        "check": "Is a policy forecast a guarantee?",
+        "check": "An estimate from a dense city predicts an 8% ridership gain in a rural area. Which assumption about travel alternatives should the economist examine before applying that estimate?",
         "graph": false,
         "calculation": false,
         "difficulty": "Beginner",
         "time": "4 minutes",
         "exampleQuestionId": "P77-EPOL-BR-041",
         "checkQuestionId": "P77-EPOL-R-038",
-        "workedLabel": "EVALUATING POLICY ADVICE"
+        "workedLabel": "EVALUATING POLICY ADVICE",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze the economist’s role in policy advice.",
@@ -1388,8 +1428,8 @@
           "Report both the equilibrium price and the corresponding equilibrium quantity."
         ],
         "watch": "A common mistake is to call any intersection or stated price an equilibrium. Equilibrium occurs only where quantity demanded equals quantity supplied.",
-        "worked": "On the graph, the new demand and supply curves intersect at a price of $5 and quantity of 150 thousand. The intersection is the only point at which quantity demanded equals quantity supplied, so it is the new market equilibrium. A price above $5 would create a surplus, while a price below $5 would create a shortage.",
-        "check": "Holding supply constant, which equilibrium outcome follows from an increase in demand?",
+        "worked": "Demand and supply intersect at a price of $5 and quantity of 150 thousand. Buyers want exactly the amount sellers offer at that point. A price above $5 creates a surplus; a price below $5 creates a shortage. This example finds equilibrium without shifting either curve.",
+        "check": "At a price below $5 on this graph, which quantity is larger, and what pressure does that create on price?",
         "graph": true,
         "calculation": true,
         "difficulty": "Beginner",
@@ -1397,14 +1437,11 @@
         "exampleQuestionId": "PG1-EQ-M-004",
         "checkQuestionId": "ECON-MG-EQUILIBRIUM-PREDICTION-5008",
         "workedLabel": "FINDING MARKET EQUILIBRIUM",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/market-equilibrium/demand-supply-02.webp",
-        "assetMetadata": {
-          "filename": "demand-supply-02.webp",
-          "sourceUrl": "data/question-assets/market-equilibrium/DEMAND-SUPPLY-02.webp",
-          "sha256": "2c0487a337c1dcfce2070f37c1ac0b7d561f104f27f7df91251e351a3778408f",
-          "imageAlt": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand.",
-          "graphDescription": "The horizontal axis is quantity of gas in thousands and the vertical axis is price of gas. Original demand D0 and original supply S0 intersect at price $3 and quantity 150 thousand. Demand shifts right to D1 while supply shifts left to S1. D1 and S1 intersect at price $5 and quantity 150 thousand. Holding S0 fixed, D1 intersects S0 at price $4 and quantity 200 thousand. Holding D0 fixed, S1 intersects D0 at price $4 and quantity 100 thousand."
-        }
+        "graphSpec": {
+          "kind": "equilibrium"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-16.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
@@ -1484,7 +1521,7 @@
       ],
       "content": {
         "outcome": "Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
-        "core": "A shortage occurs when quantity demanded exceeds quantity supplied; a surplus occurs when quantity supplied exceeds quantity demanded. A surplus occurs when quantity supplied exceeds quantity demanded. A shortage occurs when quantity demanded exceeds quantity supplied. Quantity demanded exceeds quantity supplied, so there is a shortage. Shortages push price upward. A price above equilibrium creates a surplus because quantity supplied exceeds quantity demanded.",
+        "core": "A shortage occurs when quantity demanded exceeds quantity supplied at the current price. Buyers competing for limited supply put upward pressure on price. A surplus occurs when quantity supplied exceeds quantity demanded; sellers then face pressure to lower price. Adjustment tends toward the price where the two quantities are equal.",
         "recognition": [
           "At the current price, buyers want 180 units and sellers offer 120 units.",
           "A price above equilibrium creates a surplus because quantity supplied exceeds quantity demanded.",
@@ -1493,7 +1530,7 @@
         ],
         "watch": "A common mistake is to reverse shortage and price pressure. Quantity demanded exceeds quantity supplied, so there is a shortage. Shortages push price upward.",
         "worked": "At a price of $2 per gallon, the graph shows quantity demanded of 200 thousand gallons and quantity supplied of 100 thousand. Because buyers want 100 thousand more gallons than sellers offer, the market has a shortage of 200 - 100 = 100 thousand gallons. Upward pressure on price follows.",
-        "check": "At the current price, quantity demanded exceeds quantity supplied. What market condition exists?",
+        "check": "At a price of $4, buyers want 100 thousand gallons and sellers offer 200 thousand. Calculate the imbalance and predict the pressure on price.",
         "graph": true,
         "calculation": true,
         "difficulty": "Beginner",
@@ -1508,7 +1545,9 @@
           "sha256": "5870d2240f2447bf5f113d3019f4b4be6920cc05ac5ee8b9f6e3eab3e4722b3c",
           "imageAlt": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand.",
           "graphDescription": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-17.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Determine equilibrium, shortages, surpluses, adjustment, and comparative statics.",
@@ -2003,8 +2042,8 @@
           "A tax on cigarettes causes only a small drop in quantity but a large increase in buyer price.",
           "In one market, demand is much more elastic than supply."
         ],
-        "watch": "A common mistake is to assume that the more elastic side bears more of a tax. The less elastic side bears more. In this particular worked graph, the price changes show an equal split; do not assume buyers always bear more.",
-        "worked": "The untaxed equilibrium price is $15. With the tax, buyers pay $18, sellers receive $12, and 80 units are sold. Buyers bear $18 - $15 = $3 per unit, so their total burden is $3 x 80 = $240. Sellers bear the remaining $3 per unit.",
+        "watch": "The less elastic side bears more of a tax because it changes quantity less readily. The side that legally sends the payment to government need not bear most of the burden.",
+        "worked": "Before tax, price is $15 and quantity is 100. A $6 tax reduces quantity to 80; buyers pay $19 and sellers receive $13. Buyers bear $4 per unit, or $320, while sellers bear $2 per unit, or $160. At the initial equilibrium, demand is less elastic than supply, so buyers bear more of the wedge.",
         "check": "When demand is less elastic than supply, which side is less able to avoid the tax?",
         "graph": true,
         "calculation": true,
@@ -2013,14 +2052,11 @@
         "exampleQuestionId": "ECON-MG-HARD-275",
         "checkQuestionId": "ECON-MG-TAX-INCIDENCE-LESS-ELASTIC-SIDE-5025",
         "workedLabel": "COMPARING TAX BURDENS",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/tax-incidence/taxincidence.webp",
-        "assetMetadata": {
-          "filename": "taxincidence.webp",
-          "sourceUrl": "data/question-assets/tax-incidence/taxincidence.webp",
-          "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
-          "imageAlt": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20.",
-          "graphDescription": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20."
-        }
+        "graphSpec": {
+          "kind": "tax_incidence"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-22.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Use elasticity to determine and calculate the distribution of tax burdens.",
@@ -2302,7 +2338,7 @@
         ],
         "watch": "Do not assume quota rent automatically becomes government revenue. It accrues to whoever holds the import rights; auctioning those rights can transfer the rent to government. The recipient matters for national welfare, while production and consumption distortions create deadweight loss.",
         "worked": "Before trade, domestic supply and demand intersect at a price of $7. With free trade, buyers can purchase at the $3 world price, which creates imports. The quota limits imports, so the domestic price rises to $6. The difference between the $6 quota price and the $3 world price is $3 per imported unit; that $3 gap is quota rent.",
-        "check": "A student says equivalent tariffs and quotas remain identical after demand changes. What is the key difference?",
+        "check": "World price is $3 and the quota raises domestic price to $6. What is the rent per imported unit, and why does the identity of the license holder matter for national surplus?",
         "graph": true,
         "calculation": true,
         "difficulty": "Beginner",
@@ -2317,7 +2353,9 @@
           "sha256": "2dcfacad1cea8cb6e52173de9bd30b87b509ff684bccb6569d31a9bd73f7dbfa",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at price $7 and quantity 175 thousand. Horizontal lines mark world price $3 and domestic price under quota $6. At $3, supply is 75 thousand and demand is 275 thousand; at $6, supply is 150 thousand and demand is 200 thousand.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at price $7 and quantity 175 thousand. Horizontal lines mark world price $3 and domestic price under quota $6. At $3, supply is 75 thousand and demand is 275 thousand; at $6, supply is 150 thousand and demand is 200 thousand."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-25.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze import quotas, quota rents, domestic price and quantity effects, welfare consequences, and tariff-versus-quota differences.",
@@ -2491,7 +2529,7 @@
           "A shortage persists because a legal ceiling prevents price from rising."
         ],
         "watch": "A common mistake is to assume that a higher price always tells buyers and sellers to do the same thing. It discourages quantity demanded while encouraging quantity supplied, coordinating opposite responses.",
-        "worked": "A hospital posts current wait times of 90 minutes at Clinic A and 20 minutes at Clinic B. Patients who can use either location shift toward Clinic B. The posted wait acts like a nonmoney price signal: it communicates relative congestion and reallocates demand without changing the medical fee.",
+        "worked": "A shortage develops at the current market price. Buyers compete for the limited units, putting upward pressure on price. As price rises, quantity demanded falls and quantity supplied rises, reducing the shortage. The price signal helps coordinate buyers and sellers without a central allocation decision.",
         "check": "What response does a higher market price normally encourage from sellers?",
         "graph": false,
         "calculation": false,
@@ -2499,7 +2537,8 @@
         "time": "4 minutes",
         "exampleQuestionId": "P52B-PSIG-BR-001",
         "checkQuestionId": "P52B-PSIG-R-002",
-        "workedLabel": "USING A PRICE SIGNAL"
+        "workedLabel": "USING A PRICE SIGNAL",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Explain how prices coordinate buyers, sellers, and resource allocation.",
@@ -2582,7 +2621,7 @@
           "Tax revenue equals the per-unit tax multiplied by the quantity traded after the tax.",
           "A tax normally reduces quantity traded and creates deadweight loss from forgone exchanges."
         ],
-        "watch": "Do not use pre tax quantity or buyer price change only. The tax is $46 - $34 = $12. Tax revenue is $12 × 420 = $5,040.",
+        "watch": "Tax revenue equals the per-unit tax times the quantity actually traded after the tax. Use the $6 wedge and 80 units here; do not multiply by the original untaxed quantity.",
         "worked": "The untaxed equilibrium is $15 at 100 units. After the tax, buyers pay $18, sellers receive $12, and quantity falls to 80. The tax wedge is $18 - $12 = $6 per unit, so government revenue is $6 x 80 = $480.",
         "check": "Buyers pay $18 after a tax and sellers receive $12. What is the tax per unit?",
         "graph": true,
@@ -2599,7 +2638,9 @@
           "sha256": "7f06a964e72a1661aa4778395042ea189181654d59d996721a86979b086af1ed",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve intersects the original upward-sloping supply curve at price $15 and quantity 100. A parallel curve labeled Supply plus tax lies above supply and intersects demand at price $18 and quantity 80. At quantity 80 the original supply curve is at $12; dashed guides also mark quantities 65, 120, and 150 and prices $10 and $20."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-02.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate tax wedges, buyer and seller prices, quantity effects, and revenue.",
@@ -2673,7 +2714,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Identify externalities, public goods, market power, and corrective policy logic.",
-        "core": "A market failure occurs when private decisions do not produce an efficient allocation of resources. An externality affects people outside the transaction. Public goods are nonrival and nonexcludable; common resources are rival and hard to exclude. Identify the wedge between private incentives and social value or cost. Public goods are characterized by nonrivalry and nonexcludability.",
+        "core": "Markets may fail to maximize total surplus when prices omit external costs or benefits, when market power restricts trade, or when information is incomplete. Public goods are nonrival and nonexcludable, creating a free-rider problem. Evaluate social marginal benefits and costs rather than assuming private incentives capture every consequence.",
         "recognition": [
           "Identify the wedge between private incentives and social value or cost.",
           "Public goods are characterized by nonrivalry and nonexcludability.",
@@ -2690,7 +2731,8 @@
         "time": "4 minutes",
         "exampleQuestionId": "P77-MFAIL-BR-038",
         "checkQuestionId": "P77-MFAIL-R-035",
-        "workedLabel": "IDENTIFYING AN EXTERNALITY"
+        "workedLabel": "IDENTIFYING AN EXTERNALITY",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Identify externalities, public goods, market power, and corrective policy logic.",
@@ -3059,14 +3101,15 @@
         ],
         "watch": "Do not confuse cross price with income or own price. A negative cross-price elasticity indicates complements, so higher printer prices reduce demand for ink.",
         "worked": "The price of printers rises by 10%, and demand for ink cartridges falls by 7%. Cross-price elasticity is -7% / 10% = -0.7. The negative sign indicates that printers and ink cartridges are complements because a higher price for printers reduces demand for ink.",
-        "check": "The price of Product Y rises 10 percent. Cross-price elasticity of demand for Product X is −0.5. Demand for X is predicted to:?",
+        "check": "Cross-price elasticity of ink demand with respect to printer price is -0.7. If printer price falls 5%, calculate the predicted percentage change in ink demand and state its direction.",
         "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "PMS-ELAS-BR-018",
         "checkQuestionId": "P62B-ELAS-EL-027",
-        "workedLabel": "IDENTIFYING SUBSTITUTES"
+        "workedLabel": "IDENTIFYING COMPLEMENTS",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate and interpret how demand for one good responds to a price change in another, including substitutes and complements.",
@@ -3145,7 +3188,7 @@
         ],
         "watch": "A common mistake is to compute elasticity without checking the associated total-revenue change. With elastic demand, price and total revenue move in opposite directions; with inelastic demand, they move together.",
         "worked": "At point C, price is $12 and quantity is 30, so total revenue is $12 x 30 = $360. At point B, price is $8 and quantity is 60, so revenue is $480. Moving from C to B lowers price but raises total revenue by $120, indicating elastic demand over that segment.",
-        "check": "For luxury cruise cabins, price changes from $3200 to $2880 while quantity demanded changes from 1,500 to 1,900. Use the midpoint method and the observed revenue totals. Which statement is correct?",
+        "check": "Cruise-cabin price falls from $3,200 to $2,880 while quantity rises from 1,500 to 1,900. Calculate midpoint elasticity and both revenue totals. Is demand elastic over this range, and does revenue rise or fall?",
         "graph": true,
         "calculation": true,
         "difficulty": "Intermediate",
@@ -3160,7 +3203,9 @@
           "sha256": "1804cb5937b71622452094ed43181e8cebc92e2fe5988ba18434776f2d4b91a4",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price. One downward-sloping demand line contains point C at price $12 and quantity 30, point B at price $8 and quantity 60, and point A at price $4 and quantity 90."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-08.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Connect demand elasticity to total revenue, unit elasticity, revenue maximization, and the marginal-revenue relationship.",
@@ -3238,7 +3283,7 @@
           "A firm estimates demand elasticity at 2.1.",
           "Elastic demand produces a larger percentage quantity response to a given percentage price change."
         ],
-        "watch": "A common mistake is to fail to connect output and input demand. When customers readily reduce output purchases, firms more strongly reduce input use after cost increases.",
+        "watch": "Distinguish who sends the tax payment from who bears its economic burden. The less responsive side has fewer ways to avoid the tax, so compare demand and supply elasticities before assigning the burden.",
         "worked": "Two sides of a market face a $6 tax. Buyers have few substitutes and reduce purchases only slightly, while sellers can redirect output to other markets. Demand is less elastic than supply, so buyers bear more of the tax through a larger increase in the price they pay.",
         "check": "If supply is much less elastic than demand, sellers usually bear:?",
         "graph": false,
@@ -3247,7 +3292,8 @@
         "time": "4 minutes",
         "exampleQuestionId": "P62B-ELAS-BR-003",
         "checkQuestionId": "PMA-ELAS-E-032",
-        "workedLabel": "PREDICTING TAX INCIDENCE"
+        "workedLabel": "PREDICTING TAX INCIDENCE",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Apply elasticity to tax incidence, deadweight-loss sensitivity, business pricing, policy, trade, and factor-market decisions.",
@@ -3424,7 +3470,7 @@
           "On a graph, producer surplus is the area above supply and below the market price up to the quantity traded.",
           "A seller whose cost exceeds the market price does not make that trade."
         ],
-        "watch": "Do not confuse wta price gap. Producer surplus measures the price received above the seller’s willingness to accept for that unit.",
+        "watch": "Producer surplus is the price received minus willingness to accept, summed over units sold. Do not confuse this per-unit price-cost gap with total revenue.",
         "worked": "At equilibrium, price is $14 and quantity is 8. The supply intercept is $6, so producer surplus is the triangle above supply and below price: 1/2 x 8 x ($14 - $6) = $32.",
         "check": "Why is the full area above supply not producer surplus?",
         "graph": true,
@@ -3441,7 +3487,9 @@
           "sha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve cross at labeled point E, with dashed guides to its price and quantity. Visible numeric scale markings include 30, 22, 0, 14, 1, 6, 4, 8, 12.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve cross at labeled point E, with dashed guides to its price and quantity. Visible numeric scale markings include 30, 22, 0, 14, 1, 6, 4, 8, 12."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-11.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Explain willingness to accept and producer surplus, including discrete-seller and graph-area calculations.",
@@ -3519,7 +3567,7 @@
           "A trade creates gains when buyer value exceeds seller cost.",
           "On a graph, total surplus is the area between demand and supply up to the quantity traded."
         ],
-        "watch": "A common mistake is to fail to separate transfer from total loss. Consumer surplus is $10 and producer surplus is $8; their sum equals the $18 gain from exchange.",
+        "watch": "Total surplus adds consumer and producer surplus. A payment between buyers and sellers changes its distribution; a trade whose cost exceeds buyer value reduces total surplus.",
         "worked": "The graph's equilibrium is 8 units at $14. Consumer surplus is 1/2 x 8 x ($30 - $14) = $64, and producer surplus is 1/2 x 8 x ($14 - $6) = $32. Total surplus is therefore $64 + $32 = $96.",
         "check": "Buyer value is $17 and seller cost is $22. Efficient action?",
         "graph": true,
@@ -3536,7 +3584,9 @@
           "sha256": "f2719a20af01298fbd4b2f84c5753958f1d9bc1d286761b00f78251c24846f09",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve cross at labeled point E, with dashed guides to its price and quantity. Visible numeric scale markings include 30, 22, 0, 14, 1, 6, 4, 8, 12.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve cross at labeled point E, with dashed guides to its price and quantity. Visible numeric scale markings include 30, 22, 0, 14, 1, 6, 4, 8, 12."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-12.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate and interpret total surplus and mutually beneficial gains from exchange without invoking later international-trade machinery.",
@@ -3611,9 +3661,9 @@
           "Stop when the next seller's cost exceeds the next buyer's value.",
           "An efficient allocation sends the good to the highest-value buyers and production to the lowest-cost sellers."
         ],
-        "watch": "A common mistake is to equate more output with more efficiency. The forced extra unit contributes $23 - $29 = -$6 to total surplus.",
+        "watch": "More output is not always more efficient. Stop when the next unit costs more to produce than its buyer is willing to pay.",
         "worked": "Demand and supply intersect at 8 units and $10. At that quantity, the marginal buyer's value equals the marginal seller's cost. Units below 8 create positive gains from trade; units above 8 cost more than buyers value them. The efficient allocation therefore produces 8 units.",
-        "check": "Five buyers each want one studio pass, with willingness-to-pay values [27, 23, 18, 13, 8]. Five sellers can each supply one, with costs [4, 10, 15, 21, 25]. Ignore any announced market price. Rank buyers from highest to lowest value and sellers from lowest to highest cost. Which statement correctly identifies the efficient cutoff?",
+        "check": "Five buyers value one pass each at $27, $23, $18, $13, and $8. Five sellers have costs of $4, $10, $15, $21, and $25. How many trades create nonnegative gains, and why should the next trade not occur?",
         "graph": true,
         "calculation": true,
         "difficulty": "Intermediate",
@@ -3628,7 +3678,9 @@
           "sha256": "e7ad3b5e0934eb62695fc69308d0991371a4989e16fc30bda3e5653823cbf9bc",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve cross at labeled point E, with dashed guides to its price and quantity. Visible numeric scale markings include 18, 14, 0, 2, 10, 1, 6, 4, 8, 12, 16.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price. An upward-sloping supply curve and downward-sloping demand curve cross at labeled point E, with dashed guides to its price and quantity. Visible numeric scale markings include 18, 14, 0, 2, 10, 1, 6, 4, 8, 12, 16."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-13.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Identify marginal buyers and sellers, efficient quantity, efficient allocation, and competitive-market efficiency.",
@@ -3707,24 +3759,21 @@
           "Separate transfers between buyers and sellers from surplus that disappears entirely.",
           "Deadweight loss represents mutually beneficial trades prevented by the change."
         ],
-        "watch": "A common mistake is to count only existing buyers or only new buyers. With the same trades still occurring, the price change transfers surplus dollar for dollar from sellers to buyers; it does not change total surplus.",
-        "worked": "At price P1 = $12, quantity is 8 and consumer surplus is 1/2 x 8 x ($20 - $12) = $32. At P2 = $8, quantity rises to 12 and consumer surplus becomes 1/2 x 12 x ($20 - $8) = $72. The price decrease raises consumer surplus by $40.",
-        "check": "A policy transfers $20 to consumers and prevents $6 of gains. Total-surplus loss?",
+        "watch": "A demand curve and price are enough to calculate consumer surplus. A change in consumer surplus alone does not establish the change in producer surplus, total surplus, or deadweight loss.",
+        "worked": "At price P1 = $12, quantity is 8 and consumer surplus is 1/2 x 8 x ($20 - $12) = $32. At P2 = $8, quantity rises to 12 and consumer surplus becomes 1/2 x 12 x ($20 - $8) = $72. The price decrease raises consumer surplus by $40. These demand-side areas do not identify a transfer or deadweight loss without supply-side information.",
+        "check": "Consumer surplus rises from $32 to $72 after a price decrease. What is the gain, and can this information alone establish the change in total surplus?",
         "graph": true,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "P62C-CPS-C-028",
         "checkQuestionId": "P62C-CPS-R-020",
-        "workedLabel": "TRANSFER OR DEADWEIGHT LOSS?",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
-        "assetMetadata": {
-          "filename": "cps_consumer_prices.webp",
-          "sourceUrl": "data/question-assets/consumer-and-producer-surplus/cps_consumer_prices.webp",
-          "sha256": "8524e29fadce0d985c8800948e5e5b7844b82b3d2fb1135b2301279037a8d013",
-          "imageAlt": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve has horizontal reference lines P1 and P2 with vertical quantity guides, showing two price-quantity positions. Visible numeric scale markings include 20, 16, 1, 122, 2, 8, 4, 0, 12.",
-          "graphDescription": "The horizontal axis is quantity and the vertical axis is price. A downward-sloping demand curve has horizontal reference lines P1 and P2 with vertical quantity guides, showing two price-quantity positions. Visible numeric scale markings include 20, 16, 1, 122, 2, 8, 4, 0, 12."
-        }
+        "workedLabel": "MEASURING A CHANGE IN CONSUMER SURPLUS",
+        "graphSpec": {
+          "kind": "consumer_surplus"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-14.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Trace how price, quantity, and bounded policy changes redistribute or reduce consumer, producer, and total surplus.",
@@ -3802,7 +3851,7 @@
           "Remember that measured willingness to pay depends partly on ability to pay.",
           "A policy judgment requires an explicit value choice when efficiency and equity point in different directions."
         ],
-        "watch": "Do not treat efficiency as equity. Observed willingness to pay reflects both preferences and purchasing power. A has $150 private surplus but $110 after the external cost; B has $140 and no stated external cost.",
+        "watch": "Efficiency compares total gains; equity evaluates their distribution. Greater total surplus does not by itself establish that a policy is fair.",
         "worked": "Policy A creates $500 of total surplus divided evenly between buyers and sellers. Policy B creates $520 of total surplus but gives $500 to sellers and $20 to buyers. Policy B is more efficient because total surplus is larger, but whether its distribution is more equitable is a separate normative judgment.",
         "check": "A student says efficiency requires equal gains. Correction?",
         "graph": false,
@@ -3811,7 +3860,32 @@
         "time": "4 minutes",
         "exampleQuestionId": "PMS-CPS-BR-027",
         "checkQuestionId": "P62C-CPS-R-017",
-        "workedLabel": "WEIGHING EFFICIENCY AND EQUITY"
+        "workedLabel": "WEIGHING EFFICIENCY AND EQUITY",
+        "table": {
+          "caption": "Surplus by policy (dollars)",
+          "columnHeaders": [
+            "Buyers",
+            "Sellers",
+            "Total"
+          ],
+          "rowHeaders": [
+            "Policy A",
+            "Policy B"
+          ],
+          "cells": [
+            [
+              "250",
+              "250",
+              "500"
+            ],
+            [
+              "20",
+              "500",
+              "520"
+            ]
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Distinguish efficiency from equity and evaluate limits of willingness-to-pay and surplus measures as welfare tools.",
@@ -3888,7 +3962,7 @@
           "When consumption exceeds production, imports equal domestic consumption minus domestic production.",
           "When production exceeds consumption, exports equal domestic production minus domestic consumption."
         ],
-        "watch": "A common mistake is to omit one or more welfare components. Revenue is tariff×imports; each side distortion is a triangle. Total DWL is $144.",
+        "watch": "When the world price exceeds the domestic no-trade equilibrium price, domestic supply exceeds domestic demand. The difference is exports, not imports. Do not infer tariff revenue or deadweight loss from this free-trade example.",
         "worked": "Without trade, domestic supply and demand intersect at $7 and 175 thousand avocados. At the $10 world price, domestic consumers buy 100 thousand while domestic producers supply 250 thousand. The country exports the difference: 250 - 100 = 150 thousand avocados.",
         "check": "Using the avocado export-market graph, what are domestic production, domestic consumption, and exports at Pw=$10?",
         "graph": true,
@@ -3897,7 +3971,7 @@
         "time": "5 minutes",
         "exampleQuestionId": "P62D-ITP-M-033",
         "checkQuestionId": "P62D-ITP-H-001",
-        "workedLabel": "CALCULATING IMPORTS",
+        "workedLabel": "CALCULATING EXPORTS",
         "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/international-trade-and-trade-policy/TRD-02.webp",
         "assetMetadata": {
           "filename": "TRD-02.webp",
@@ -3905,7 +3979,9 @@
           "sha256": "90bed401193282f30b5ddc6a11b38c80c7c393233e78cf68911e7fe4e1140306",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at point A, price $7 and quantity 175 thousand. A horizontal world-price line at $10 crosses demand at 100 thousand and supply at 250 thousand.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price. Quantity is measured in thousands as printed on the axis. Domestic demand slopes down and domestic supply slopes up, crossing at point A, price $7 and quantity 175 thousand. A horizontal world-price line at $10 crosses demand at 100 thousand and supply at 250 thousand."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-16.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Determine domestic production, domestic consumption, imports, and exports when a country trades at the world price.",
@@ -4244,31 +4320,50 @@
       "focusTerms": [],
       "content": {
         "outcome": "Analyze Short-Run Production & Diminishing Marginal Product.",
-        "core": "In the short run, at least one input is fixed, so output changes as additional units of a variable input are employed. Input flexibility is the production-side basis for distinguishing fixed and variable cost. The same arithmetic relationship governs MP versus AP and MC versus AVC or ATC.",
+        "core": "In the short run, at least one input is fixed. Marginal product is the extra output from one more unit of a variable input. With fixed equipment, additional workers may eventually add less output than earlier workers. Diminishing marginal product means the addition falls; total product can still rise.",
         "recognition": [
-          "Production case 2: Ironwood Furniture has MP sequence 6, 10, 13, 12, 10, 8, 6, 4.",
-          "Production case 4: Cedar Trail Bikes has MP sequence 9, 12, 13, 11, 9, 6, 2, -2.",
-          "Production case 6: Riverbend Textiles has MP sequence 11, 14, 15, 13, 11, 9, 7, 5.",
-          "Production case 8: Summit Glassworks has MP sequence 12, 15, 16, 14, 12, 10, 8, 6."
+          "Identify the fixed input and the variable input.",
+          "Marginal product is the change in total product from one more worker.",
+          "Diminishing marginal product begins when successive output additions fall.",
+          "Negative marginal product means another worker actually reduces total output."
         ],
-        "watch": "A common mistake is to wait until mp negative. Identify the first decline in MP and separate it from negative MP and long-run scale.",
+        "watch": "Do not wait for marginal product to become negative. It is diminishing as soon as the next worker adds less output than the previous worker.",
         "worked": "Total product rises from 34 units with three workers to 46 with four, so the fourth worker's marginal product is 12. The fifth worker raises output from 46 to 56, giving marginal product of 10. Output still increases, but the smaller addition shows diminishing marginal product.",
-        "check": "In the short run, which statement must be true?",
-        "graph": true,
+        "check": "A sixth worker raises output from 56 to 64. Calculate that worker's marginal product. Is marginal product diminishing, and is total product still rising?",
+        "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "P62E-COP-M-021",
         "checkQuestionId": "P62E-COP-R-006",
         "workedLabel": "DIMINISHING MARGINAL PRODUCT",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/cop_tp_standard.webp",
-        "assetMetadata": {
-          "filename": "cop_tp_standard.webp",
-          "sourceUrl": "data/question-assets/costs-of-production/cop_tp_standard.webp",
-          "sha256": "b7d7c5fdbd1c86ea29cadd7df17447e2dde6a773225ce492c0f0e622994809b9",
-          "imageAlt": "The horizontal axis is labor or workers and the vertical axis is total product or output. A total-product curve rises with labor, changes curvature, and then either flattens or turns downward as shown. Visible numeric scale markings include 80, 1, 70, 60, 2, 50, 5, 40, 30, 20, 10, 0, 3, 4, 6, 7, 8.",
-          "graphDescription": "The horizontal axis is labor or workers and the vertical axis is total product or output. A total-product curve rises with labor, changes curvature, and then either flattens or turns downward as shown. Visible numeric scale markings include 80, 1, 70, 60, 2, 50, 5, 40, 30, 20, 10, 0, 3, 4, 6, 7, 8."
-        }
+        "table": {
+          "caption": "Successive workers and output",
+          "columnHeaders": [
+            "Total product",
+            "Marginal product"
+          ],
+          "rowHeaders": [
+            "3 workers",
+            "4 workers",
+            "5 workers"
+          ],
+          "cells": [
+            [
+              "34",
+              "Not given"
+            ],
+            [
+              "46",
+              "12"
+            ],
+            [
+              "56",
+              "10"
+            ]
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze fixed and variable inputs, total product, marginal product, average product, and diminishing marginal product in the short run.",
@@ -4353,23 +4448,49 @@
           "Total costs must be converted to per-unit AFC, AVC, or ATC."
         ],
         "watch": "Do not subtract or multiply fixed and variable cost when finding total cost: add them. Also distinguish total fixed cost from average fixed cost. TFC stays constant as output changes, but AFC = TFC / Q falls as the same fixed amount is spread across more units. Average costs are not defined at Q = 0.",
-        "worked": "At Q = 120, the graph shows total cost of $1,200 and total variable cost of $800. The $400 vertical gap between the two curves is total fixed cost because TC = TFC + TVC. Dividing each cost by 120 gives AFC = $3.33, AVC = $6.67, and ATC = $10.00. As a check, AFC + AVC = ATC.",
+        "worked": "At Q = 120, TC is $1,200 and TVC is $800. TFC is the difference: $400. Divide each total by output to obtain AFC = $3.33, AVC = $6.67, and ATC = $10.00, rounded to cents. The completed row satisfies TC = TFC + TVC and ATC = AFC + AVC.",
         "check": "At Q = 10, a schedule shows TFC = $90 and TC = $250. What are TVC, AFC, AVC, and ATC, and how can you verify that AFC + AVC = ATC?",
-        "graph": true,
+        "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "6 minutes",
         "exampleQuestionId": "PMC-COP-BR-049",
         "checkQuestionId": "PMC-COP-BR-051",
         "workedLabel": "BUILDING A COST SCHEDULE",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-03.webp",
-        "assetMetadata": {
-          "filename": "COST-03.webp",
-          "sourceUrl": "data/question-assets/costs-of-production/COST-03.webp",
-          "sha256": "2e60f97d02447bd27b6e64eb90f52e269ea37b9220efea4fd2a3e1581eebf7ed",
-          "imageAlt": "Short-run total-cost graph with quantity on the horizontal axis and total cost on the vertical axis. At quantity 120, point A on total cost is $1,200, point B on total variable cost is $800, and point C on the horizontal total fixed cost line is $400. The vertical distance between total cost and total variable cost equals the constant $400 fixed cost.",
-          "graphDescription": "Short-run total-cost graph with quantity on the horizontal axis and total cost on the vertical axis. At quantity 120, point A on total cost is $1,200, point B on total variable cost is $800, and point C on the horizontal total fixed cost line is $400. The vertical distance between total cost and total variable cost equals the constant $400 fixed cost."
-        }
+        "table": {
+          "caption": "One completed cost-schedule row (dollars)",
+          "columnHeaders": [
+            "TFC",
+            "TVC",
+            "TC",
+            "AFC",
+            "AVC",
+            "ATC"
+          ],
+          "rowHeaders": [
+            "Q = 120"
+          ],
+          "cells": [
+            [
+              "400",
+              "800",
+              "1200",
+              "3.33",
+              "6.67",
+              "10.00"
+            ]
+          ],
+          "columnWidths": [
+            0.16,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14,
+            0.14
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Work with total fixed cost, total variable cost, total cost, and short-run cost schedules.",
@@ -4449,9 +4570,9 @@
           "Average fixed cost falls continuously as output spreads the same fixed cost across more units.",
           "Use per-unit measures only when output is positive."
         ],
-        "watch": "A common mistake is to misuse average cost formula. AVC = $300/20 = $15; AFC = $5; ATC = $20. TVC = $1,000; AVC = $20, AFC = $8, and ATC = $28.",
+        "watch": "Average costs are per unit; total costs are not. Subtract AVC from ATC to find AFC, then multiply AFC by positive output to recover total fixed cost.",
         "worked": "At 400 units, the graph shows average cost of $20 and average variable cost of $12. Because AC = AVC + AFC, average fixed cost is $20 - $12 = $8 per unit. The gap between AC and AVC is therefore the firm's average fixed cost.",
-        "check": "Cost schedule 2: At Q=29, Ironwood Furniture has AVC=$13.97 and ATC=$24.31. What fixed-cost conclusion follows?",
+        "check": "At Q = 30, AVC is $14 and ATC is $24. Calculate AFC and total fixed cost. Verify your answer by multiplying the per-unit gap by output.",
         "graph": true,
         "calculation": true,
         "difficulty": "Intermediate",
@@ -4466,7 +4587,9 @@
           "sha256": "5b568aede942b6906a2195c799d026ef00ff09d7987d7d5e15f64e850c25cba9",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include $24, $22, $20, 4, $18, 2, $16, 1, $14, $12, $8, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420, 440.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include $24, $22, $20, 4, $18, 2, $16, 1, $14, $12, $8, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420, 440."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-22.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate and interpret average fixed cost, average variable cost, average total cost, and their arithmetic relationships.",
@@ -4536,31 +4659,54 @@
       "focusTerms": [],
       "content": {
         "outcome": "Calculate Marginal Cost & Production-Cost Linkages.",
-        "core": "Marginal cost is the change in total cost caused by producing one more unit. Divide the input cost by marginal product. Higher MP lowers variable input cost per extra unit. A constant addition to cost at every output does not change the cost of producing one more unit.",
+        "core": "Marginal cost is the change in total cost divided by the change in output. If labor is the only variable input and its wage is fixed, divide the added worker's wage by that worker's marginal product. Lower marginal product then means higher cost per extra unit.",
         "recognition": [
           "Look for the change in total cost caused by producing one additional unit.",
           "Compute marginal cost as the change in total cost divided by the change in output.",
           "A fixed-cost change does not change marginal cost, but a variable-input cost change usually does.",
           "When marginal product falls, marginal cost tends to rise if the input price is unchanged."
         ],
-        "watch": "A common mistake is to move mp and mc together. Higher MP lowers variable input cost per extra unit. A constant addition to cost at every output does not change the cost of producing one more unit.",
-        "worked": "Marginal cost crosses AVC at AVC's minimum of $10 and 200 units, then crosses AC at AC's minimum of $20 and 400 units. When marginal cost is below an average, it pulls that average down; when marginal cost rises above it, the average begins to increase.",
-        "check": "If output rises by 1 unit and total cost rises by $18, marginal cost of that unit is:?",
-        "graph": true,
+        "watch": "Hold the wage and other input conditions fixed when linking marginal product to marginal cost. A fixed-cost change alone does not change the cost of an extra unit.",
+        "worked": "Each additional worker costs $120. The fourth adds 12 units, so added cost per unit is $120 / 12 = $10. The fifth adds 10 units, so it is $120 / 10 = $12. With the wage unchanged, diminishing marginal product raises marginal cost.",
+        "check": "At a wage of $120, another worker adds 8 units. What is the added labor cost per unit of output?",
+        "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "P62E-COP-M-035",
         "checkQuestionId": "PMC-COP-E-077",
         "workedLabel": "LINKING MARGINAL PRODUCT AND COST",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-02.webp",
-        "assetMetadata": {
-          "filename": "COST-02.webp",
-          "sourceUrl": "data/question-assets/costs-of-production/COST-02.webp",
-          "sha256": "5b568aede942b6906a2195c799d026ef00ff09d7987d7d5e15f64e850c25cba9",
-          "imageAlt": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include $24, $22, $20, 4, $18, 2, $16, 1, $14, $12, $8, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420, 440.",
-          "graphDescription": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include $24, $22, $20, 4, $18, 2, $16, 1, $14, $12, $8, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360, 380, 400, 420, 440."
-        }
+        "table": {
+          "caption": "Constant wage: $120 per additional worker",
+          "columnHeaders": [
+            "Marginal product",
+            "Added labor cost",
+            "Cost per extra unit"
+          ],
+          "rowHeaders": [
+            "Fourth worker",
+            "Fifth worker"
+          ],
+          "cells": [
+            [
+              "12",
+              "$120",
+              "$10"
+            ],
+            [
+              "10",
+              "$120",
+              "$12"
+            ]
+          ],
+          "columnWidths": [
+            0.24,
+            0.22,
+            0.25,
+            0.29
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate marginal cost and connect marginal product changes to the short-run marginal-cost curve.",
@@ -4637,7 +4783,7 @@
         ],
         "watch": "A common mistake is to mix fixed and variable shifts. A fixed-cost increase raises fixed cost per unit and total cost per unit but leaves variable and marginal cost unchanged.",
         "worked": "Suppose the firm signs a more expensive lease while output and variable input prices are unchanged. The higher fixed cost raises average fixed cost and therefore shifts ATC upward. AVC and MC remain in the positions shown because neither depends on fixed cost. The production decision at the margin is unchanged.",
-        "check": "Why does the ATC–AVC gap shrink?",
+        "check": "With fixed cost unchanged, why does the ATC-AVC gap shrink as output rises? How is that different from an increase in the lease payment at a fixed output?",
         "graph": true,
         "calculation": false,
         "difficulty": "Intermediate",
@@ -4645,14 +4791,11 @@
         "exampleQuestionId": "P62E-COP-H-014",
         "checkQuestionId": "P62E-COP-R-014",
         "workedLabel": "SHIFTING SHORT-RUN COST CURVES",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/cop_cost_family_main.webp",
-        "assetMetadata": {
-          "filename": "cop_cost_family_main.webp",
-          "sourceUrl": "data/question-assets/costs-of-production/cop_cost_family_main.webp",
-          "sha256": "e8fa4e8e56c2f8c1343b76959e6844a87d5fb4c1631778953d1041cd84854daf",
-          "imageAlt": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include 120, 100, 80, 2, 60, 6, 0, 40, 20, 10, 30, 50, 70.",
-          "graphDescription": "The horizontal axis is quantity and the vertical axis is cost per unit. The graph shows upward-sloping MC and U-shaped average-cost curves labeled AC or ATC and AVC, with their crossings and any reference lines visible. Visible numeric scale markings include 120, 100, 80, 2, 60, 6, 0, 40, 20, 10, 30, 50, 70."
-        }
+        "graphSpec": {
+          "kind": "fixed_cost"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-24.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze relationships among AFC, AVC, ATC, and MC and distinguish fixed-cost from variable-cost curve shifts.",
@@ -4906,8 +5049,8 @@
           "A flat minimum indicates a range of outputs with constant returns to scale.",
           "Do not confuse a flat average-cost segment with output remaining unchanged."
         ],
-        "watch": "A common mistake is to invent flat lrac region. The graph has a single rounded minimum rather than a visibly flat minimum-cost interval.",
-        "worked": "The LRAC curve reaches its lowest value, about $12 per unit, at an output of 60. Minimum efficient scale is the smallest output that attains minimum long-run average cost, so the graph's MES is 60 units. Outputs below 60 have not exhausted economies of scale.",
+        "watch": "Minimum efficient scale is the first output attaining minimum LRAC, not the midpoint or end of a flat minimum-cost interval.",
+        "worked": "LRAC first reaches $12 at 60 units and remains at $12 through 90 units. Minimum efficient scale is therefore 60. The flat 60-to-90 interval illustrates constant returns to scale: output can expand proportionally without changing long-run cost per unit.",
         "check": "If LRAC first reaches its minimum at 5,000 units and remains flat until 8,000, MES is:?",
         "graph": true,
         "calculation": false,
@@ -4916,14 +5059,11 @@
         "exampleQuestionId": "P62E-COP-B3-055",
         "checkQuestionId": "PMC-COP-E-152",
         "workedLabel": "FINDING MINIMUM EFFICIENT SCALE",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/costs-of-production/COST-06.webp",
-        "assetMetadata": {
-          "filename": "COST-06.webp",
-          "sourceUrl": "data/question-assets/costs-of-production/COST-06.webp",
-          "sha256": "8014184ebafb1b2068d8561be02d3d2d59fa133f80a079bdd9f3570830b67ae4",
-          "imageAlt": "The horizontal axis is quantity and the vertical axis is cost per unit. A U-shaped long-run average-cost curve is plotted against quantity, with labeled regions or quantity guides where shown. Visible numeric scale markings include 48, 44, 40, 8, 36, 3, 32, 28, 24, 5, 20, 16, 12, 4, 0, 10, 30, 50, 60, 70, 80, 90, 100, 110, 120.",
-          "graphDescription": "The horizontal axis is quantity and the vertical axis is cost per unit. A U-shaped long-run average-cost curve is plotted against quantity, with labeled regions or quantity guides where shown. Visible numeric scale markings include 48, 44, 40, 8, 36, 3, 32, 28, 24, 5, 20, 16, 12, 4, 0, 10, 30, 50, 60, 70, 80, 90, 100, 110, 120."
-        }
+        "graphSpec": {
+          "kind": "flat_lrac"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-27.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Identify minimum efficient scale and interpret flat minimum-LRAC ranges as constant returns to scale.",
@@ -4996,23 +5136,46 @@
           "Treat market price as a horizontal line in the individual firm's graph."
         ],
         "watch": "A common mistake is to separate price, average revenue, and marginal revenue for a price-taking firm. Under perfect competition, P = AR = MR.",
-        "worked": "The competitive firm takes the market price of $25, so P = MR = AR. The horizontal price line meets marginal cost at 50 units, and total revenue is $25 x 50 = $1,250. Because ATC is also $25 at that output, the firm earns zero economic profit.",
+        "worked": "The firm takes a market price of $25. Selling 50 units yields total revenue of $25 x 50 = $1,250. Each additional unit adds $25 to revenue without lowering the price on earlier units. Thus P = AR = MR. Choosing the profit-maximizing output is a separate later step.",
         "check": "Why does total revenue rise linearly with output?",
-        "graph": true,
+        "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "P62F-PC-M-035",
         "checkQuestionId": "P62F-PC-R-006",
         "workedLabel": "REVENUE FOR A PRICE TAKER",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-02.webp",
-        "assetMetadata": {
-          "filename": "PC-02.webp",
-          "sourceUrl": "data/question-assets/perfect-competition/PC-02.webp",
-          "sha256": "2823d69bbd80dc030db71afd524fc32c6ea607b58b13819edee26053b7d08cdd",
-          "imageAlt": "The horizontal axis is firm or market quantity and the vertical axis is price or cost per unit. The firm graph shows an upward-sloping MC curve, U-shaped ATC and AVC curves, and a horizontal line labeled D equals AR equals MR or P equals MR equals AR, with the marked quantity and price or cost levels. Visible numeric scale markings include 60, 55, 50, 45, 3, 40, 35, 30, 28, 7, 20, 10, 5, 0, 70, 80, 90, 100.",
-          "graphDescription": "The horizontal axis is firm or market quantity and the vertical axis is price or cost per unit. The firm graph shows an upward-sloping MC curve, U-shaped ATC and AVC curves, and a horizontal line labeled D equals AR equals MR or P equals MR equals AR, with the marked quantity and price or cost levels. Visible numeric scale markings include 60, 55, 50, 45, 3, 40, 35, 30, 28, 7, 20, 10, 5, 0, 70, 80, 90, 100."
-        }
+        "table": {
+          "caption": "Price-taking firm at a market price of $25",
+          "columnHeaders": [
+            "Price",
+            "Total revenue",
+            "MR per extra unit"
+          ],
+          "rowHeaders": [
+            "Q = 48",
+            "Q = 49",
+            "Q = 50"
+          ],
+          "cells": [
+            [
+              "$25",
+              "$1,200",
+              "$25"
+            ],
+            [
+              "$25",
+              "$1,225",
+              "$25"
+            ],
+            [
+              "$25",
+              "$1,250",
+              "$25"
+            ]
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Connect competitive-market assumptions to price taking, the horizontal firm demand curve, and P = AR = MR.",
@@ -5388,7 +5551,7 @@
           "Distinguish a movement along supply caused by price from a shift caused by production conditions."
         ],
         "watch": "Do not assume fixed cost shifts supply. The short-run supply schedule depends on marginal and variable costs, not fixed cost. Fixed cost affects profit but not the short-run MC-above-AVC supply schedule.",
-        "worked": "The firm's short-run supply curve is the portion of MC at and above minimum AVC, which begins at point A: 22 units and $20. For example, if market price rises to $30, the firm supplies the quantity at point B, about 33 units. MC below A is not part of supply because the firm shuts down.",
+        "worked": "The firm's short-run supply curve is the portion of MC at and above minimum AVC, which begins at point A: 22 units and $20. For example, if market price rises to $30, the firm supplies the quantity at point B, about 36 units. MC below A is not part of supply because the firm shuts down.",
         "check": "Which MC segment is competitive short-run supply?",
         "graph": true,
         "calculation": true,
@@ -5396,7 +5559,7 @@
         "time": "5 minutes",
         "exampleQuestionId": "P62F-PC-M-040",
         "checkQuestionId": "P62F-PC-R-015",
-        "workedLabel": "SHIFTING FIRM SUPPLY",
+        "workedLabel": "READING SHORT-RUN FIRM SUPPLY",
         "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/perfect-competition/PC-04.webp",
         "assetMetadata": {
           "filename": "PC-04.webp",
@@ -5404,7 +5567,9 @@
           "sha256": "68de3c8aa8070cc2a29ce1ddf8b8ddfdef0657f703793bed63d74eaf911b0286",
           "imageAlt": "The horizontal axis is firm or market quantity and the vertical axis is price or cost per unit. The firm graph shows an upward-sloping MC curve, U-shaped ATC and AVC curves, and a horizontal line labeled D equals AR equals MR or P equals MR equals AR, with the marked quantity and price or cost levels. Visible numeric scale markings include 60, 50, 0, 40, 35, 30, 2, 3, 20, 10, 5, 1, 22, 33, 44, 55, 66, 77, 88, 99.",
           "graphDescription": "The horizontal axis is firm or market quantity and the vertical axis is price or cost per unit. The firm graph shows an upward-sloping MC curve, U-shaped ATC and AVC curves, and a horizontal line labeled D equals AR equals MR or P equals MR equals AR, with the marked quantity and price or cost levels. Visible numeric scale markings include 60, 50, 0, 40, 35, 30, 2, 3, 20, 10, 5, 1, 22, 33, 44, 55, 66, 77, 88, 99."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-32.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Derive the firm’s short-run supply from rising MC above AVC, aggregate firm supply, and distinguish fixed- from variable-cost shifts.",
@@ -5485,7 +5650,7 @@
           "Long-run industry assessment 11: Demand rises in a constant-cost industry and entry is unrestricted."
         ],
         "watch": "Do not miss long run equilibrium conditions. At long-run equilibrium the firm maximizes profit and entry/exit has eliminated economic profit. Entry and exit remove persistent economic profit or loss in the benchmark model.",
-        "worked": "The market equilibrium price is $25. At that price, the representative firm produces 50 units where P = MC, and $25 is also the minimum ATC. Revenue covers all explicit and implicit costs, so economic profit is zero and no entry or exit pressure remains.",
+        "worked": "If firms initially earn economic profit, entry expands market supply and pushes price down. If they incur losses, exit reduces supply and pushes price up. The graph shows the endpoint: P = MC, and price equals minimum ATC at $25 and 50 units. Revenue covers explicit and implicit costs, so no entry or exit pressure remains.",
         "check": "Why can accounting profit be positive at zero economic profit?",
         "graph": true,
         "calculation": true,
@@ -5501,7 +5666,9 @@
           "sha256": "8d4dfbc2b97a78d55f9dde857d6abec01391dfc63df30c0a97802549101a2827",
           "imageAlt": "The horizontal axis is firm or market quantity and the vertical axis is price or cost per unit. A two-panel figure pairs a market supply-and-demand graph with a representative-firm graph. The firm panel shows MC, ATC, AVC, and a horizontal P equals MR equals AR line; dashed guides connect the displayed market price and quantities. Visible numeric scale markings include 50, 60, 55, 40, 9, 45, 30, 20, 25, 17, 7, 10, 0, 100, 150, 70, 80, 90.",
           "graphDescription": "The horizontal axis is firm or market quantity and the vertical axis is price or cost per unit. A two-panel figure pairs a market supply-and-demand graph with a representative-firm graph. The firm panel shows MC, ATC, AVC, and a horizontal P equals MR equals AR line; dashed guides connect the displayed market price and quantities. Visible numeric scale markings include 50, 60, 55, 40, 9, 45, 30, 20, 25, 17, 7, 10, 0, 100, 150, 70, 80, 90."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-33.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Trace entry, exit, zero economic profit, normal profit, and long-run competitive adjustment.",
@@ -5774,23 +5941,16 @@
           "One seller becomes a durable monopoly only when entry is meaningfully blocked."
         ],
         "watch": "Do not treat any large firm as monopoly. Durable monopoly power depends on the relevant market and barriers to entry. A monopoly requires meaningful barriers to entry, not merely one seller at a moment in time.",
-        "worked": "Across the relevant output range, the graph's ATC curve declines as output expands, so one large producer can supply the market at lower average cost than several small firms. That cost structure supports natural monopoly. At the efficient point where demand meets MC, price would be below ATC, creating a regulatory funding problem.",
+        "worked": "A city grants one firm the exclusive right to distribute water through its pipe network. Even if another firm could supply water, the exclusive license prevents legal entry. This is a legal barrier, distinct from economies of scale that can also make a single network less costly. Identifying the barrier does not by itself determine the best regulated price.",
         "check": "Which fact most strongly supports classifying a firm as a monopoly?",
-        "graph": true,
+        "graph": false,
         "calculation": false,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "P62G-MON-H-041",
         "checkQuestionId": "P62G-MON-R-002",
-        "workedLabel": "IDENTIFYING MONOPOLY POWER",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopoly/MON-03.webp",
-        "assetMetadata": {
-          "filename": "MON-03.webp",
-          "sourceUrl": "data/question-assets/monopoly/MON-03.webp",
-          "sha256": "37f4d2e1885412d166823749a7fa2757c0ad8b030e6484171c326f3812b088f5",
-          "imageAlt": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper downward-sloping MR curve are shown with MC and, where present, ATC and AVC. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 80, 70, 60, 4, 50, 8, 47, 3, 40, 30, 10, 0, 15, 45, 75, 90, 105, 120.",
-          "graphDescription": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper downward-sloping MR curve are shown with MC and, where present, ATC and AVC. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 80, 70, 60, 4, 50, 8, 47, 3, 40, 30, 10, 0, 15, 45, 75, 90, 105, 120."
-        }
+        "workedLabel": "IDENTIFYING A BARRIER TO ENTRY",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Identify durable monopoly power and distinguish legal barriers, resource control, network effects, and natural-monopoly cost conditions.",
@@ -5963,9 +6123,9 @@
       "focusTerms": [],
       "content": {
         "outcome": "Apply Profit-Maximizing Output & Monopoly Price.",
-        "core": "A monopolist chooses output where rising marginal cost equals marginal revenue, then uses demand to determine price. Produce units whose marginal revenue covers marginal cost. MR is compared with MC for output choice. Find Q from MR=MC, then read price from demand. Monopoly analysis is a two-step decision: marginal output choice first, demand-based price second.",
+        "core": "A monopolist compares marginal revenue with marginal cost to choose output, then reads the corresponding price from demand. In the displayed interior solution, MR exceeds MC before their crossing and falls below MC afterward. The output decision and the price decision are separate; marginal cost need not always slope upward.",
         "recognition": [
-          "Find output where rising marginal cost equals marginal revenue.",
+          "Find the output where MR crosses MC from above in the interior solution.",
           "Move vertically from that output to the demand curve to find the monopoly price.",
           "Keep the output decision and price decision separate: marginal conditions determine quantity, demand determines price.",
           "Do not set price equal to marginal revenue or marginal cost unless the graph happens to imply it."
@@ -5987,7 +6147,9 @@
           "sha256": "9e85a3693b3c746349d0790ad337f3f6bc4355fec38b92595ef0ea13d4d3625a",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper downward-sloping MR curve are shown with MC and, where present, ATC and AVC. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 60, 50, 45, 40, 4, 30, 20, 338, 10, 0, 6770, 80, 90, 100, 110, 120.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper downward-sloping MR curve are shown with MC and, where present, ATC and AVC. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 60, 50, 45, 40, 4, 30, 20, 338, 10, 0, 6770, 80, 90, 100, 110, 120."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-38.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Apply MR = MC with the rising-MC condition to choose monopoly output, then use demand to determine the corresponding price.",
@@ -6170,7 +6332,7 @@
         "time": "5 minutes",
         "exampleQuestionId": "P62G-MON-M-041",
         "checkQuestionId": "P62G-MON-R-013",
-        "workedLabel": "MEASURING MONOPOLY DEADWEIGHT LOSS",
+        "workedLabel": "IDENTIFYING MONOPOLY DEADWEIGHT LOSS",
         "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopoly/MON-03.webp",
         "assetMetadata": {
           "filename": "MON-03.webp",
@@ -6178,7 +6340,9 @@
           "sha256": "37f4d2e1885412d166823749a7fa2757c0ad8b030e6484171c326f3812b088f5",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper downward-sloping MR curve are shown with MC and, where present, ATC and AVC. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 80, 70, 60, 4, 50, 8, 47, 3, 40, 30, 10, 0, 15, 45, 75, 90, 105, 120.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper downward-sloping MR curve are shown with MC and, where present, ATC and AVC. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 80, 70, 60, 4, 50, 8, 47, 3, 40, 30, 10, 0, 15, 45, 75, 90, 105, 120."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-40.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Compare monopoly with competition using output, price, consumer surplus, deadweight loss, allocative inefficiency, and rent seeking.",
@@ -6359,14 +6523,15 @@
         ],
         "watch": "A common mistake is to disconnect wtp from first degree efficiency. Charging each unit up to willingness to pay can make serving all units with value at least MC profitable.",
         "worked": "A theater charges students $8 and other adults $14 for the same seat. The policy can persist only if students cannot resell discounted tickets to adults; otherwise arbitrage would erase the price difference. Verification separates the groups, and the different prices reflect different demand elasticities.",
-        "check": "Can ordinary group price discrimination increase total welfare?",
+        "check": "A seller charges students less than other buyers. Why must it be able to identify the groups and prevent resale for this pricing policy to persist?",
         "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "PM6-MON-BR-092",
         "checkQuestionId": "P62G-MON-R-020",
-        "workedLabel": "TESTING PRICE DISCRIMINATION"
+        "workedLabel": "TESTING PRICE DISCRIMINATION",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze the conditions for discrimination, resale prevention, third-degree pricing, first-degree discrimination, elasticity, and welfare effects.",
@@ -6538,9 +6703,9 @@
           "Use average variable cost to determine whether the firm operates or shuts down in the short run.",
           "Keep output choice, profit measurement, and shutdown analysis as three distinct steps."
         ],
-        "watch": "A common mistake is to misapply monopolistic competition rule. At the chosen output, price above ATC means profit, price below ATC means loss, and equality means zero economic profit.",
-        "worked": "The firm chooses 36 units where MR = MC at $15, then charges $27 on its demand curve. ATC is also $27, so total revenue and total cost are both $27 x 36 = $972. Economic profit is zero, but P > MC shows the outcome is not allocatively efficient.",
-        "check": "A firm has P>MC but P<ATC. Which statement is correct?",
+        "watch": "Separate profit from shutdown. A fixed-cost increase can create an economic loss without changing marginal cost or the benefit of operating; compare revenue with variable cost.",
+        "worked": "The displayed baseline has Q = 36 and P = ATC = $27, so economic profit is zero. Consider a higher fixed lease cost of $108, with demand and variable costs unchanged. Output and price stay at that baseline, but ATC rises by $3 and the loss is $108. The firm still operates if revenue covers variable cost; loss alone does not imply shutdown.",
+        "check": "A firm earns a loss because P is below ATC. What additional cost comparison is needed to decide whether it should shut down in the short run?",
         "graph": true,
         "calculation": true,
         "difficulty": "Intermediate",
@@ -6555,7 +6720,9 @@
           "sha256": "83f2a5f682121e65140c1e4653b672e0136b0b0cf29315fcadd437ca5823ce73",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper MR curve are shown with MC and a U-shaped ATC curve. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 45, 36, 0, 27, 18, 9, 1, 10, 20, 30, 40, 50, 60, 70, 80.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper MR curve are shown with MC and a U-shaped ATC curve. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 45, 36, 0, 27, 18, 9, 1, 10, 20, 30, 40, 50, 60, 70, 80."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-44.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Use MR = MC, firm demand, ATC, and AVC to determine output, price, profit or loss, and short-run shutdown.",
@@ -6639,7 +6806,7 @@
           "Distinguish zero economic profit from zero accounting profit."
         ],
         "watch": "A common mistake is to equate zero economic and accounting profit. Entry and exit remove economic profit in both models. Zero economic profit is an entry condition, not proof of allocative or productive efficiency.",
-        "worked": "At 36 units, the firm charges $27 and has ATC of $27. Total revenue is $27 x 36 = $972, and total cost is also $972, so economic profit is zero. With no profit attracting entry and no loss causing exit, the industry is in long-run equilibrium.",
+        "worked": "Short-run profit attracts competing varieties, reducing demand for each incumbent. Adjustment continues until demand is tangent to ATC at the chosen output. The graph shows that endpoint at 36 units and $27, where revenue and cost both equal $972. Tangency eliminates economic profit; it does not put output at minimum ATC.",
         "check": "What does excess capacity measure?",
         "graph": true,
         "calculation": true,
@@ -6655,7 +6822,9 @@
           "sha256": "83f2a5f682121e65140c1e4653b672e0136b0b0cf29315fcadd437ca5823ce73",
           "imageAlt": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper MR curve are shown with MC and a U-shaped ATC curve. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 45, 36, 0, 27, 18, 9, 1, 10, 20, 30, 40, 50, 60, 70, 80.",
           "graphDescription": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper MR curve are shown with MC and a U-shaped ATC curve. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 45, 36, 0, 27, 18, 9, 1, 10, 20, 30, 40, 50, 60, 70, 80."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-45.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Trace how short-run profit or loss induces entry or exit, shifts firm demand, and leads toward long-run zero economic profit, tangency, markup, and excess capacity.",
@@ -6730,7 +6899,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Analyze Advertising, Branding & Nonprice Competition.",
-        "core": "Advertising can provide information, persuade buyers, build a brand, and change the elasticity or position of a firm's demand curve. The firm is competing through product features and service rather than changing price. In signaling models, willingness to incur a visible selling cost can sometimes convey information when higher quality supports repeat sales. A fixed selling cost raises fixed and average total cost but does not directly raise MC or AVC. The ad is trying to shape preferences and brand perception rather than mainly transmit facts.",
+        "core": "Advertising can give buyers product information, persuade them, or build a brand. Information about prices, hours, or features can reduce search costs. Persuasive messages can change preferences or price sensitivity. Nonprice competition also includes quality, convenience, service, and variety.",
         "recognition": [
           "A shoe company introduces custom colors and faster delivery while leaving its posted price unchanged.",
           "Consumers cannot directly observe product durability before purchase.",
@@ -6738,7 +6907,7 @@
           "A perfume ad links the brand with status and excitement but provides almost no factual product information.",
           "A branding campaign leaves the number of buyers unchanged but makes them less price sensitive."
         ],
-        "watch": "A common mistake is to misapply monopolistic competition rule. The firm is competing through product features and service rather than changing price. In signaling models, willingness to incur a visible selling cost can sometimes convey information when higher quality supports repeat sales.",
+        "watch": "Do not treat every advertisement as useful information or as waste. Ask what it tells buyers and whether it changes their ability to compare products.",
         "worked": "A pharmacy advertises that a prescription costs $8 and that it stays open until 10 p.m. Buyers can compare stores more easily, so search costs fall; this is informational advertising. A separate campaign associates the brand with status without adding product facts; that campaign is persuasive advertising. Both compete without directly cutting price.",
         "check": "What does nonprice competition mean?",
         "graph": false,
@@ -6747,7 +6916,8 @@
         "time": "5 minutes",
         "exampleQuestionId": "P62H-MCMP-BR-018",
         "checkQuestionId": "P62H-MCMP-R-020",
-        "workedLabel": "INFORMATIVE OR PERSUASIVE ADVERTISING?"
+        "workedLabel": "INFORMATIVE OR PERSUASIVE ADVERTISING?",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze informational and persuasive advertising, selling costs, branding, quality competition, innovation, demand shifts, and elasticity effects.",
@@ -6831,23 +7001,16 @@
           "Two markets have the same total production cost."
         ],
         "watch": "A common mistake is to misapply monopolistic competition rule. Differentiation can create consumer value through variety even when the standard model shows some productive inefficiency.",
-        "worked": "The long-run firm produces 36 units at a price and ATC of $27, so economic profit is zero. Marginal cost is only $15, meaning price exceeds MC, and output lies left of minimum ATC. Product variety may benefit consumers, but the model also predicts markup and excess capacity.",
+        "worked": "Two bakeries offer different breads. A neighborhood values having both varieties, but dividing sales between the bakeries can leave each producing below its lowest-cost scale. More variety can therefore benefit buyers while raising cost per loaf. A welfare judgment weighs those benefits against the extra resource cost; a markup alone does not measure the value of variety.",
         "check": "Lotus Fitness: A new specialized program better matches a subset of customers. Which classification is most accurate?",
-        "graph": true,
+        "graph": false,
         "calculation": false,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "P62H-MCMP-H-036",
         "checkQuestionId": "P62H-MCMP-B3-052",
-        "workedLabel": "VARIETY VERSUS EFFICIENCY",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/monopolistic-competition/MCOMP-02.webp",
-        "assetMetadata": {
-          "filename": "MCOMP-02.webp",
-          "sourceUrl": "data/question-assets/monopolistic-competition/MCOMP-02.webp",
-          "sha256": "83f2a5f682121e65140c1e4653b672e0136b0b0cf29315fcadd437ca5823ce73",
-          "imageAlt": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper MR curve are shown with MC and a U-shaped ATC curve. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 45, 36, 0, 27, 18, 9, 1, 10, 20, 30, 40, 50, 60, 70, 80.",
-          "graphDescription": "The horizontal axis is quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve labeled D equals AR and a steeper MR curve are shown with MC and a U-shaped ATC curve. Dashed guides mark labeled prices and quantities. Visible numeric scale markings include 45, 36, 0, 27, 18, 9, 1, 10, 20, 30, 40, 50, 60, 70, 80."
-        }
+        "workedLabel": "WEIGHING THE VALUE OF VARIETY",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Evaluate variety benefits, markups, allocative and productive inefficiency, welfare tradeoffs, market classification, and limits of the model.",
@@ -6928,8 +7091,8 @@
           "The defining clue is strategic interdependence among the important firms."
         ],
         "watch": "Do not use firm count alone. Dominant shares and strategic interdependence point to oligopoly. Concentration depends on the boundaries of the relevant market.",
-        "worked": "The graph shows market shares of 38%, 32%, 12%, 9%, and 9%. HHI equals the sum of squared shares: 38^2 + 32^2 + 12^2 + 9^2 + 9^2 = 1,444 + 1,024 + 144 + 81 + 81 = 2,774. That value indicates substantial concentration.",
-        "check": "Which measure squares market shares?",
+        "worked": "The named firms contribute 38^2 + 32^2 + 12^2 + 9^2 = 2,693 HHI points. The remaining 9% is labeled Other, an unspecified fringe. If it were one firm, it would add 9^2 = 81 points. Thus 2,774 is an upper bound, not an exact HHI. An exact calculation requires the individual fringe shares.",
+        "check": "Why can an aggregate Other category not generally be squared as if it were one firm when calculating exact HHI?",
         "graph": true,
         "calculation": true,
         "difficulty": "Intermediate",
@@ -6944,7 +7107,9 @@
           "sha256": "0a2219c35303278946bd4fa4b678a5da62cd9978fd4e4561738b9392116420a6",
           "imageAlt": "The horizontal axis lists firms A, B, C, D, and Other; the vertical axis is market share in percent. The bars and their printed values are: 40 38%; 32%; 30; L; oO; x=; wn; o; 20; oO; 12%; 10 % %; 0; A B Cc D Other; Firm or fringe.",
           "graphDescription": "The horizontal axis lists firms A, B, C, D, and Other; the vertical axis is market share in percent. The bars and their printed values are: 40 38%; 32%; 30; L; oO; x=; wn; o; 20; oO; 12%; 10 % %; 0; A B Cc D Other; Firm or fringe."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-48.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Identify oligopoly, strategic interdependence, barriers to entry, relevant-market definition, concentration ratios, HHI, and what concentration measures do and do not establish.",
@@ -7124,23 +7289,42 @@
           "Three firms agree to keep prices high."
         ],
         "watch": "Do not miss individual incentive to defect. The conflict is between individual and collective incentives. Private incentives can conflict with the cartel’s collective restriction.",
-        "worked": "A cartel acts like one monopolist and selects industry output where industry MR equals MC. On the graph, the downward-sloping MR curve meets the $20 MC line at 20 units. The cartel then uses demand to set price. Each member has an incentive to sell extra units, which makes the agreement unstable.",
-        "check": "What does mutual defection show?",
-        "graph": true,
+        "worked": "If Column keeps the agreement, Row gets 8 by undercutting rather than 6 by keeping it. If Column undercuts, Row gets 3 rather than 2 by undercutting. Column faces the same incentives. Both undercut and receive 3 each, although keeping the agreement would give 6 each. Individual incentives can undermine a mutually beneficial agreement.",
+        "check": "If the other firm keeps the agreement, why is a one-time promise to keep it vulnerable to undercutting?",
+        "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "P62I-OLI-C-023",
         "checkQuestionId": "P62I-OLI-R-012",
-        "workedLabel": "WHY CARTELS BREAK DOWN",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/cartel_1.webp",
-        "assetMetadata": {
-          "filename": "cartel_1.webp",
-          "sourceUrl": "data/question-assets/oligopoly/cartel_1.webp",
-          "sha256": "1fa89099c93edd9205251386887ef940433fba8536dea3b4cf9e9e9478a2858c",
-          "imageAlt": "The horizontal axis is market quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve and steeper downward-sloping MR curve are shown with an MC curve against market quantity. Visible numeric scale markings include 100, 80, 60, 2, 40, 20, 0, 10, 30.",
-          "graphDescription": "The horizontal axis is market quantity and the vertical axis is price or cost per unit. A downward-sloping demand curve and steeper downward-sloping MR curve are shown with an MC curve against market quantity. Visible numeric scale markings include 100, 80, 60, 2, 40, 20, 0, 10, 30."
-        }
+        "workedLabel": "INDIVIDUAL INCENTIVES VERSUS JOINT GAINS",
+        "table": {
+          "caption": "Payoffs: (Row firm, Column firm)",
+          "columnHeaders": [
+            "Keep agreement",
+            "Undercut"
+          ],
+          "rowHeaders": [
+            "Keep agreement",
+            "Undercut"
+          ],
+          "cells": [
+            [
+              "(6, 6)",
+              "(2, 8)"
+            ],
+            [
+              "(8, 2)",
+              "(3, 3)"
+            ]
+          ],
+          "columnWidths": [
+            0.36,
+            0.32,
+            0.32
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze collusion, cartel output and price, joint-profit maximization, incentives to cheat, monitoring, cartel instability, prisoner’s-dilemma logic, and cartel welfare.",
@@ -7215,16 +7399,16 @@
       "focusTerms": [],
       "content": {
         "outcome": "Analyze repeated games, credible commitments, entry deterrence, and sequential strategic choices.",
-        "core": "Dynamic Strategy: Repeated Games, Credibility & Entry Deterrence examines repeated interaction, credibility, commitments, limit pricing, entry deterrence, continuation incentives, and sequential strategic reasoning. A higher continuation factor increases the weight on future consequences. Cooperation PV is 12.50; cheating path PV is 16.25. Net gain = 25 − 8 − 14 = 3 million. Aggressive competition and predation must be distinguished with evidence.",
+        "core": "In a sequential game, one player acts before another. Work backward from the last decision: identify the action that the later player will actually prefer, then use that response to evaluate the first move. A threat is credible only if carrying it out would be worthwhile when the decision arrives. Repeated interaction can make future consequences matter, but no present-value calculation is needed here.",
         "recognition": [
           "Determine whether firms interact once or expect to meet again.",
           "Compare the immediate gain from cheating or entering with future losses from retaliation.",
           "A threat affects behavior only when carrying it out would be credible.",
           "Longer relationships, patience, and observable actions make cooperative outcomes easier to sustain."
         ],
-        "watch": "Do not assume every low price is predatory. Net gain = 25 − 8 − 14 = 3 million. Aggressive competition and predation must be distinguished with evidence.",
-        "worked": "The game tree is solved backward. If entry occurs, the incumbent receives 7 by accommodating and 3 by fighting, so accommodation is the credible response on that branch. Anticipating it, the entrant compares 6 from entering with 0 from staying out and enters. The subgame-perfect outcome is Enter, then Accommodate.",
-        "check": "Does low pricing prove predation?",
+        "watch": "A threatened response is not automatically credible. Compare the later player's payoffs at the decision point before using the threat to predict the first move.",
+        "worked": "The game tree is solved backward. If entry occurs, the incumbent receives 7 by accommodating and 3 by fighting, so accommodation is the credible response on that branch. Anticipating it, the entrant compares 6 from entering with 0 from staying out and enters. The backward-induction outcome is Enter, then Accommodate.",
+        "check": "After entry, why will the incumbent accommodate rather than fight, and how does that affect the entrant's first decision?",
         "graph": true,
         "calculation": true,
         "difficulty": "Advanced",
@@ -7239,7 +7423,9 @@
           "sha256": "c77b34044d6ef343b1eaea24005440b48bf6c04b31f2fa3b9e5fd9b88175dad8",
           "imageAlt": "A sequential game tree. Payoff order (Entrant, Incumbent); (0, 12); Stay out; Accommodate (6, 7); Enter; Entrant Incumbent; Fight; (-3, 3).",
           "graphDescription": "A sequential game tree. Payoff order (Entrant, Incumbent); (0, 12); Stay out; Accommodate (6, 7); Enter; Entrant Incumbent; Fight; (-3, 3)."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-51.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Optional advanced Oligopoly material on repeated interaction, credibility, commitments, limit pricing, entry deterrence, continuation incentives, and sequential strategic reasoning.",
@@ -7317,8 +7503,8 @@
           "Tacit coordination can arise through expectations and repeated conduct.",
           "A firm increases product quality rather than cutting price."
         ],
-        "watch": "Do not assume price is irrelevant. Oligopolists can compete on quality and other dimensions. A leader’s announced price can become a focal point.",
-        "worked": "The kink in demand occurs near 20 units and a price of $50. Because the marginal-revenue curve has a gap at that output, modest changes in MC around $36 need not change the chosen price or quantity. The model explains price rigidity while reminding us that oligopolists can still compete through quality, service, and advertising.",
+        "watch": "This is one simple model of price rigidity, not a claim that all oligopoly prices stay fixed. Firms can also compete through quality, service, and advertising.",
+        "worked": "Demand has a kink at Q = 20 and P = $50. Above that price, customers respond more strongly to a price increase; below it, rivals matching a cut limit the quantity gain. The corresponding MR gap runs from $20 to $40 at Q = 20. MC = $36 passes through that gap, so modest cost changes within it leave this model's chosen price and quantity unchanged.",
         "check": "Does parallel pricing prove collusion?",
         "graph": true,
         "calculation": false,
@@ -7326,15 +7512,12 @@
         "time": "5 minutes",
         "exampleQuestionId": "P62I-OLI-M-027",
         "checkQuestionId": "P62I-OLI-R-017",
-        "workedLabel": "RECOGNIZING NONPRICE COMPETITION",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/oligopoly/kinked_2.webp",
-        "assetMetadata": {
-          "filename": "kinked_2.webp",
-          "sourceUrl": "data/question-assets/oligopoly/kinked_2.webp",
-          "sha256": "145c94b81677a78296785db027551b1134e872021a692b89e6a3a336ea4c1685",
-          "imageAlt": "The horizontal axis is market quantity and the vertical axis is price or cost per unit. A demand curve labeled D changes slope at a visible kink; the MR curve has a vertical gap, and MC passes through the displayed range. Visible numeric scale markings include 100, 80, 60, 2, 40, 20, 0, 10, 30, 50.",
-          "graphDescription": "The horizontal axis is market quantity and the vertical axis is price or cost per unit. A demand curve labeled D changes slope at a visible kink; the MR curve has a vertical gap, and MC passes through the displayed range. Visible numeric scale markings include 100, 80, 60, 2, 40, 20, 0, 10, 30, 50."
-        }
+        "workedLabel": "AN INTRODUCTORY PRICE-RIGIDITY EXAMPLE",
+        "graphSpec": {
+          "kind": "kinked_demand"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-52.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze tacit coordination, price leadership, price wars, nonprice competition, kinked-demand reasoning, and why parallel behavior does not by itself prove explicit collusion.",
@@ -7594,7 +7777,7 @@
           "Subtract imports within net exports so foreign production is not counted in domestic GDP."
         ],
         "watch": "A common mistake is to count transfer payments as government purchases. Transfers redistribute income and are never themselves part of GDP. A later purchase is classified by what is bought; imports are subtracted in NX.",
-        "worked": "A business buys a newly produced domestic machine for $2 million; this is investment. Government pays contractors $80 million to repair roads; this is government purchases. An $80 million benefit payment is a transfer and is not counted when sent, though any later household purchase of final goods enters consumption. The expenditure identity classifies the counted spending as C + I + G + NX.",
+        "worked": "A business buys a newly produced domestic machine for $2 million; this is investment. Government pays contractors $80 million to repair roads; this is government purchases. An $80 million benefit payment is a transfer and is not counted when sent, though any later household purchase of final goods enters consumption. The expenditure identity classifies the counted spending as C + I + G + NX. These purchases contribute $2 million to I and $80 million to G, or $82 million directly to GDP; the transfer is not an additional government purchase.",
         "check": "Does a government benefit payment enter G when it is sent?",
         "graph": false,
         "calculation": true,
@@ -7602,7 +7785,8 @@
         "time": "5 minutes",
         "exampleQuestionId": "ECON-NL-GDP-COMPONENTS-IDENTITY-6003",
         "checkQuestionId": "ECON-NL-INVENTORY-INVESTMENT-5011",
-        "workedLabel": "CLASSIFYING GDP EXPENDITURES"
+        "workedLabel": "CLASSIFYING GDP EXPENDITURES",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate consumption, investment, government purchases, and net exports.",
@@ -7694,7 +7878,42 @@
         "time": "5 minutes",
         "exampleQuestionId": "ECON-NL-GDP-DEFLATOR-6007",
         "checkQuestionId": "ECON-NL-NOMINAL-VS-REAL-GDP-5013",
-        "workedLabel": "SEPARATING PRICE AND OUTPUT CHANGES"
+        "workedLabel": "SEPARATING PRICE AND OUTPUT CHANGES",
+        "table": {
+          "caption": "One-good economy: price and output",
+          "columnHeaders": [
+            "Quantity",
+            "Price",
+            "Nominal GDP",
+            "Real GDP"
+          ],
+          "rowHeaders": [
+            "Base year",
+            "Current year"
+          ],
+          "cells": [
+            [
+              "100",
+              "$5",
+              "$500",
+              "$500"
+            ],
+            [
+              "110",
+              "$6",
+              "$660",
+              "$550"
+            ]
+          ],
+          "columnWidths": [
+            0.2,
+            0.14,
+            0.14,
+            0.26,
+            0.26
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Distinguish nominal and real GDP and calculate the GDP deflator.",
@@ -7779,14 +7998,15 @@
         ],
         "watch": "A common mistake is to equate a change in market spending with the same change in total useful services. Moving activity into or out of markets can change GDP even when useful services or consumer benefit move differently.",
         "worked": "A hurricane destroys homes, and rebuilding adds $2 billion to measured construction. Holding other domestic production constant, rebuilding adds $2 billion to GDP. It does not subtract the homes that were destroyed or the loss of security and leisure, so the GDP increase does not prove that well-being improved.",
-        "check": "GDP misses which part of well-being?",
+        "check": "A hurricane destroys homes, and rebuilding raises measured GDP. Name one loss the GDP increase does not subtract and explain why higher GDP does not prove higher well-being.",
         "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "ECON-NL-GDP-WELLBEING-LIMITS-6008",
         "checkQuestionId": "ECON-NL-GDP-WELLBEING-LIMITS-5016",
-        "workedLabel": "WHAT GDP MISSES"
+        "workedLabel": "WHAT GDP MISSES",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Evaluate GDP as a measure of well-being.",
@@ -7868,7 +8088,7 @@
           "Keep basket quantities fixed when calculating the CPI for different years."
         ],
         "watch": "Do not use the wrong basket cost or forget to multiply by 100. Divide the current cost of the fixed basket by its base-year cost; the index can rise or fall as prices change.",
-        "worked": "The CPI rises from 125 to 150. The inflation rate is (150 - 125)/125 x 100 = 20%. In a separate basket, base-year cost is 4($10) + 2($20) = $80 and current cost is 4($12) + 2($25) = $98, so CPI is ($98/$80) x 100 = 122.5.",
+        "worked": "The fixed basket costs $80 in the base year and $98 now. CPI = ($98 / $80) x 100 = 122.5. Relative to the base-year index of 100, prices rose 22.5%. Separately, an index rising from 125 to 150 implies inflation of (150 - 125) / 125 x 100 = 20%.",
         "check": "A basket costs $400 in the base year and $500 today. What is today's CPI?",
         "graph": false,
         "calculation": true,
@@ -7876,7 +8096,54 @@
         "time": "5 minutes",
         "exampleQuestionId": "ECON-NL-INFLATION-RATE-6010",
         "checkQuestionId": "ECON-NL-CPI-CALCULATION-6009",
-        "workedLabel": "CALCULATING CPI AND INFLATION"
+        "workedLabel": "CALCULATING CPI AND INFLATION",
+        "table": {
+          "caption": "Fixed basket: quantities do not change",
+          "columnHeaders": [
+            "Quantity",
+            "Base price",
+            "Current price",
+            "Base cost",
+            "Current cost"
+          ],
+          "rowHeaders": [
+            "Item A",
+            "Item B",
+            "Basket total"
+          ],
+          "cells": [
+            [
+              "4",
+              "$10",
+              "$12",
+              "$40",
+              "$48"
+            ],
+            [
+              "2",
+              "$20",
+              "$25",
+              "$40",
+              "$50"
+            ],
+            [
+              "—",
+              "—",
+              "—",
+              "$80",
+              "$98"
+            ]
+          ],
+          "columnWidths": [
+            0.2,
+            0.12,
+            0.17,
+            0.17,
+            0.17,
+            0.17
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate CPI and inflation using a market basket.",
@@ -7946,7 +8213,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Analyze substitution, quality, and new-goods bias.",
-        "core": "The CPI can overstate changes in the cost of living when a fixed basket misses substitution, quality improvements, or new goods. Substitution bias arises when consumers shift toward relatively cheaper alternatives but the fixed basket does not fully reflect that response. CPI remains useful, while substitution, new-good, and quality challenges can make measured inflation differ from true cost-of-living growth. If goods improve in quality, price increases may overstate the rise in the cost of living. If consumers substitute, their actual cost of living may rise less than the fixed basket suggests.",
+        "core": "A fixed-basket index can overstate growth in the cost of maintaining a living standard when buyers substitute toward relatively cheaper goods. Quality improvements and new goods also complicate price comparisons. These issues distinguish a change in posted prices from a change in the cost of obtaining comparable benefits.",
         "recognition": [
           "If goods improve in quality, price increases may overstate the rise in the cost of living.",
           "If consumers substitute, their actual cost of living may rise less than the fixed basket suggests.",
@@ -7963,7 +8230,8 @@
         "time": "4 minutes",
         "exampleQuestionId": "ECON-NL-SUBSTITUTION-BIAS-6011",
         "checkQuestionId": "PM2B2-BIAS-E-002",
-        "workedLabel": "RECOGNIZING CPI BIAS"
+        "workedLabel": "RECOGNIZING CPI BIAS",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze substitution, quality, and new-goods bias.",
@@ -8053,7 +8321,39 @@
         "time": "4 minutes",
         "exampleQuestionId": "ECON-NL-CPI-VS-GDP-DEFLATOR-6013",
         "checkQuestionId": "ECON-NL-EASY-30",
-        "workedLabel": "CHOOSING THE RIGHT PRICE INDEX"
+        "workedLabel": "CHOOSING THE RIGHT PRICE INDEX",
+        "table": {
+          "caption": "Coverage in the simplified index comparison",
+          "columnHeaders": [
+            "CPI",
+            "GDP deflator"
+          ],
+          "rowHeaders": [
+            "Imported consumer coffee",
+            "Domestic investment machine",
+            "Domestic goods exported"
+          ],
+          "cells": [
+            [
+              "Included in consumer basket",
+              "Not domestic output"
+            ],
+            [
+              "Not consumer purchase",
+              "Included in domestic output"
+            ],
+            [
+              "Not domestic consumer purchase",
+              "Included in domestic output"
+            ]
+          ],
+          "columnWidths": [
+            0.34,
+            0.33,
+            0.33
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Compare the construction and uses of CPI and the GDP deflator.",
@@ -8132,7 +8432,7 @@
           "A fully indexed nominal payment preserves purchasing power only to the extent that the index matches actual costs."
         ],
         "watch": "Do not assume an indexed contract guarantees an exact real outcome in every circumstance. Indexation adjusts a nominal amount using a specified index; lags or an imperfectly matched index can still change real value.",
-        "worked": "A salary was $40,000 when CPI was 100. CPI is now 160. 40,000 x 160/100 = 64,000. Therefore, $64,000. Indexation adjusts a nominal amount using a specified index; lags or an imperfectly matched index can still change real value.",
+        "worked": "A salary was $40,000 when CPI was 100. CPI is now 160. 40,000 x 160/100 = 64,000.  Indexation adjusts a nominal amount using a specified index; lags or an imperfectly matched index can still change real value.",
         "check": "Why might a tax threshold be indexed to a price index?",
         "graph": false,
         "calculation": true,
@@ -8140,7 +8440,8 @@
         "time": "5 minutes",
         "exampleQuestionId": "ECON-NL-INFLATION-ADJUSTMENT-6014",
         "checkQuestionId": "PM2B2-INDEX-E-003",
-        "workedLabel": "INDEXING A NOMINAL PAYMENT"
+        "workedLabel": "INDEXING A NOMINAL PAYMENT",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Convert nominal values across time and apply indexation.",
@@ -8313,14 +8614,15 @@
         ],
         "watch": "A common mistake is to equate more total labor input with higher productivity or complete welfare improvement. Productivity is output per unit of input, and GDP omits important dimensions of well-being.",
         "worked": "If real GDP per person grows at 4% per year, the Rule of 70 estimates a doubling time of 70/4 = 17.5 years. This calculation describes material output growth, not complete well-being: longer work hours can raise GDP per person without raising output per hour or preserving leisure.",
-        "check": "At 4% annual growth, about how many years does the Rule of 70 predict for real GDP per person to double?",
+        "check": "Country A grows at 2% per year and Country B at 4%. Use the Rule of 70 to compare approximate doubling times. Why does a small growth-rate difference matter over decades?",
         "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "ECON-NL-RULE-OF-70-6016",
         "checkQuestionId": "ECON-NL-RULE-OF-70-5032",
-        "workedLabel": "COMPOUNDING LIVING-STANDARD GROWTH"
+        "workedLabel": "COMPOUNDING LIVING-STANDARD GROWTH",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Use real GDP per person and compounding to compare living standards.",
@@ -8399,28 +8701,20 @@
         "core": "Labor productivity measures output per worker or per hour worked. For example, 2,400 units produced in 300 labor hours means 2,400 / 300 = 8 units per hour. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter. A country can consume more when its workers produce more output per worker.",
         "recognition": [
           "Measure labor productivity as real output per worker or per hour worked.",
-          "Compare output using the same amount of labor when evaluating a productivity change.",
-          "An increase in total output is not necessarily a productivity increase if labor input also rises.",
-          "On a production-function graph, diminishing returns make equal additions of capital add progressively less output."
+          "Use the same output and labor units when comparing periods.",
+          "An increase in total output need not raise productivity if labor input also rises."
         ],
         "watch": "Do not confuse total output with output per unit of labor. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter.",
-        "worked": "The graph shows output per worker of 28.53 when capital per worker is 20 and 36.37 when capital per worker is 40. The increase in labor productivity is 36.37 - 28.53 = 7.84 units per worker. Productivity measures output relative to labor input, not total output alone.",
+        "worked": "A workshop produces 2,400 units using 300 labor hours, so productivity is 2,400 / 300 = 8 units per hour. Next month it produces 2,700 units using the same 300 hours: 9 units per hour. Productivity rises by (9 - 8) / 8 x 100 = 12.5%. More output per labor hour, not simply more total hours, is the improvement.",
         "check": "A business uses more labor hours but produces the same amount of output. What happens to labor productivity?",
-        "graph": true,
+        "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "PM2B3-PROD-M-001",
         "checkQuestionId": "PM2B3-PROD-E-004",
         "workedLabel": "MEASURING LABOR PRODUCTIVITY",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/productivity-measurement/growth-01.webp",
-        "assetMetadata": {
-          "filename": "growth-01.webp",
-          "sourceUrl": "data/question-assets/productivity-measurement/GROWTH-01.webp",
-          "sha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
-          "imageAlt": "The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values.",
-          "graphDescription": "The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values."
-        }
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate output per worker and interpret productivity changes.",
@@ -8589,23 +8883,16 @@
           "The proposed change can raise output per worker over time."
         ],
         "watch": "Do not treat a one-time demand boost as a substitute for policies that raise productive capacity. Long-run growth policy works through productivity, capital formation, human capital, technology, and institutions.",
-        "worked": "Capital deepening from 20 to 40 units per worker raises output per worker from 28.53 to 36.37, a gain of 7.84. Because the curve flattens, capital accumulation alone faces diminishing returns. Sustained growth also requires human capital, technology, and institutions that raise productivity.",
-        "check": "Which policy supports long-run productivity growth?",
-        "graph": true,
+        "worked": "A government compares a temporary shopping rebate with worker training and reliable electricity for firms. The rebate can raise current spending, but training can improve skills and reliable power can reduce lost production. For long-run growth, evaluate the latter policies by their likely productivity gains, resource costs, implementation quality, and time to deliver results.",
+        "check": "Why might worker training raise long-run productive capacity while a temporary shopping rebate mainly changes current demand?",
+        "graph": false,
         "calculation": false,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "PM2B3-POL-H-001",
         "checkQuestionId": "ECON-NL-GROWTH-POLICY-5044",
         "workedLabel": "EVALUATING A GROWTH POLICY",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/economic-growth-policy/growth-01.webp",
-        "assetMetadata": {
-          "filename": "growth-01.webp",
-          "sourceUrl": "data/question-assets/economic-growth-policy/GROWTH-01.webp",
-          "sha256": "e925a0689badf3d0347221f6a08c2e82f2f8d9d73a7026174d60eaf09cb8c31f",
-          "imageAlt": "The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values.",
-          "graphDescription": "The horizontal axis is Capital per worker from 0 to 100 and the vertical axis is Output per worker from 0 to 60. A smooth upward-sloping blue curve becomes flatter as capital per worker increases. Point A is at capital per worker 20 and output per worker 28.53. Point B is at capital per worker 40 and output per worker 36.37. Dashed horizontal and vertical guides connect each point to its axis values."
-        }
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Evaluate policies affecting long-run productivity and growth.",
@@ -8686,7 +8973,34 @@
         "time": "5 minutes",
         "exampleQuestionId": "ECON-NL-EMPLOYMENT-CLASSIFICATION-6029",
         "checkQuestionId": "ECON-NL-LABOR-FORCE-CALCULATION-5046",
-        "workedLabel": "CLASSIFYING LABOR-FORCE STATUS"
+        "workedLabel": "CLASSIFYING LABOR-FORCE STATUS",
+        "table": {
+          "caption": "Population age 16 and over: 100 people",
+          "columnHeaders": [
+            "People"
+          ],
+          "rowHeaders": [
+            "Employed",
+            "Unemployed",
+            "Outside labor force",
+            "Labor force"
+          ],
+          "cells": [
+            [
+              "60"
+            ],
+            [
+              "5"
+            ],
+            [
+              "35"
+            ],
+            [
+              "65"
+            ]
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Classify labor-force status and calculate unemployment and participation rates.",
@@ -8772,14 +9086,15 @@
         ],
         "watch": "Do not confuse the cause of unemployment with official labor-force status. For a jobless worker who is available and actively searching, normal search after leaving a job is frictional unemployment; recession-related job loss is cyclical unemployment.",
         "worked": "A worker leaves a job and spends six weeks searching for a better match; that is frictional unemployment. A factory worker whose skills no longer match available technology faces structural unemployment. A restaurant worker laid off because a recession reduces spending experiences cyclical unemployment.",
-        "check": "A worker quits and spends two weeks finding a better job match. What type of unemployment is this?",
+        "check": "A worker's occupation disappears after a lasting technology change, and their skills do not match new vacancies. Which type of unemployment is this, and how does it differ from ordinary job search?",
         "graph": false,
         "calculation": false,
         "difficulty": "Intermediate",
         "time": "4 minutes",
         "exampleQuestionId": "ECON-NL-CYCLICAL-UNEMPLOYMENT-6033",
         "checkQuestionId": "ECON-NL-FRICTIONAL-UNEMPLOYMENT-6031",
-        "workedLabel": "IDENTIFYING UNEMPLOYMENT TYPES"
+        "workedLabel": "IDENTIFYING UNEMPLOYMENT TYPES",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Distinguish frictional, structural, and cyclical unemployment.",
@@ -8862,13 +9177,18 @@
         "watch": "Do not forget that a binding wage floor creates a surplus when labor supplied exceeds labor demanded. A binding minimum wage can create a surplus of labor, meaning more workers want jobs than firms want to hire.",
         "worked": "At a binding minimum wage, 120 workers want jobs and firms hire 90. The labor surplus is 120 - 90 = 30 workers. The wage is held above equilibrium, so the quantity of labor supplied exceeds the quantity demanded.",
         "check": "Why can more generous unemployment insurance lengthen some unemployment spells even while protecting workers?",
-        "graph": false,
+        "graph": true,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "ECON-NL-MINIMUM-WAGE-SURPLUS-6034",
         "checkQuestionId": "PM2B4-LMI-R-001",
-        "workedLabel": "BINDING MINIMUM WAGE"
+        "workedLabel": "BINDING MINIMUM WAGE",
+        "graphSpec": {
+          "kind": "minimum_wage"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-16.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze minimum wages, unions, job search, and efficiency wages.",
@@ -9035,7 +9355,7 @@
           "A store of value transfers purchasing power from the present into the future.",
           "For a money-supply measure, classify an asset by its liquidity and the measure's stated definition."
         ],
-        "watch": "Do not treat movement between M1 and non-M1 M2 assets as a change in total M2. Checking deposits are in M1 and M2, while retail money-market mutual funds are in M2 but not M1. The transfer lowers M1 without changing M2.",
+        "watch": "A transfer from a checking deposit to a retail money-market fund lowers M1 but leaves M2 unchanged. Checking and savings deposits are included in both under the stated post-2020 definition; retail money-market funds are only in M2.",
         "worked": "Currency is $800, checking deposits are $1,200, and savings deposits are $1,500. Under the U.S. definition used since May 2020, savings deposits are included in M1, so M1 = $3,500. With no other M2 components, M2 is also $3,500. Under the older textbook definition excluding savings from M1, M1 would be $2,000.",
         "check": "Are retail money-market mutual funds included in M1, M2, or both?",
         "graph": false,
@@ -9044,7 +9364,50 @@
         "time": "5 minutes",
         "exampleQuestionId": "LG-B-6001",
         "checkQuestionId": "ECON-SP-DISTINGUISH-M1-M2-5002",
-        "workedLabel": "CLASSIFYING MONEY-SUPPLY MEASURES"
+        "workedLabel": "CLASSIFYING MONEY-SUPPLY MEASURES",
+        "table": {
+          "caption": "U.S. definition used since May 2020",
+          "columnHeaders": [
+            "Amount",
+            "In M1?",
+            "In M2?"
+          ],
+          "rowHeaders": [
+            "Currency",
+            "Checking deposits",
+            "Savings deposits",
+            "Retail money-market funds"
+          ],
+          "cells": [
+            [
+              "$800",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "$1,200",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "$1,500",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "$0 here",
+              "No",
+              "Yes"
+            ]
+          ],
+          "columnWidths": [
+            0.4,
+            0.2,
+            0.2,
+            0.2
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Identify money’s functions, forms, and M1/M2 measurement.",
@@ -9120,7 +9483,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Explain central-bank structure, roles, independence, and the FOMC.",
-        "core": "The Federal Reserve conducts monetary policy, supplies reserve balances, supports payments, and serves as lender of last resort. Changes in reserves and interest rates are monetary policy territory. The Fed acts as the central bank and lender of last resort. The Federal Reserve conducts monetary policy and supports the banking/payments system; the Treasury manages federal finances and debt operations. Commercial banks create deposit liabilities when they lend; the central bank creates reserve balances/base money used by banks. The Fed includes the Board of Governors and 12 regional Reserve Banks. The FOMC directs monetary policy. Operational independence allows policy decisions without day-to-day political approval, within a mandate set by Congress.",
+        "core": "The Federal Reserve conducts monetary policy, supplies reserve balances, supports payments, and serves as lender of last resort. Its structure includes the Board of Governors and 12 regional Reserve Banks; the FOMC directs monetary policy. Operational independence allows policy decisions without day-to-day political approval within a mandate set by Congress. The Treasury manages federal finances rather than monetary policy.",
         "recognition": [
           "The Federal Reserve conducts monetary policy and supports the banking/payments system; the Treasury manages federal finances and debt operations.",
           "The FOMC sets the monetary-policy stance and directs open-market operations.",
@@ -9137,7 +9500,8 @@
         "time": "4 minutes",
         "exampleQuestionId": "LG-B-6002",
         "checkQuestionId": "ECON-SP-FOMC-ROLE-5005",
-        "workedLabel": "CENTRAL BANK OR TREASURY?"
+        "workedLabel": "CENTRAL BANK OR TREASURY?",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Explain central-bank structure, roles, independence, and the FOMC.",
@@ -9227,7 +9591,7 @@
           "An asset loss reduces capital when liabilities do not change."
         ],
         "watch": "Do not call reserves bank capital. Reserves are assets available for payments; capital is the residual claim, assets minus liabilities, that cushions losses.",
-        "worked": "A bank holds $120 in reserves, $780 in loans, and $100 in securities: assets are $1,000. Deposits of $900 and borrowing of $40 make liabilities $940, so capital is $60. A $25 loan loss cuts assets to $975 while liabilities stay $940. Capital falls to $35; reserves remain $120.",
+        "worked": "Before the loss, assets equal liabilities plus capital: $1,000 = $940 + $60. A $25 loan loss reduces loans and total assets while liabilities are unchanged. Afterward, $975 = $940 + $35. Capital absorbs the loss; reserves remain $120.",
         "check": "If a depositor withdraws $20 in cash, which asset and which liability fall?",
         "graph": false,
         "calculation": true,
@@ -9235,7 +9599,64 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "CAPITAL ABSORBS AN ASSET LOSS"
+        "workedLabel": "CAPITAL ABSORBS AN ASSET LOSS",
+        "table": {
+          "caption": "Bank balance sheet (dollars)",
+          "columnHeaders": [
+            "Before loss",
+            "After $25 loan loss"
+          ],
+          "rowHeaders": [
+            "Reserves",
+            "Loans",
+            "Securities",
+            "Total assets",
+            "Deposits",
+            "Borrowing",
+            "Total liabilities",
+            "Capital"
+          ],
+          "cells": [
+            [
+              "120",
+              "120"
+            ],
+            [
+              "780",
+              "755"
+            ],
+            [
+              "100",
+              "100"
+            ],
+            [
+              "1000",
+              "975"
+            ],
+            [
+              "900",
+              "900"
+            ],
+            [
+              "40",
+              "40"
+            ],
+            [
+              "940",
+              "940"
+            ],
+            [
+              "60",
+              "35"
+            ]
+          ],
+          "columnWidths": [
+            0.4,
+            0.28,
+            0.32
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Classify bank accounts and trace how transactions change reserves and capital.",
@@ -9290,8 +9711,8 @@
           "Lower administered rates ease monetary conditions; higher administered rates restrain them.",
           "In an ample-reserves system, administered rates are the main tool for controlling short-term rates."
         ],
-        "watch": "Do not assume every tool in a policy package pushes bank lending in the same direction. The open-market purchase is expansionary, while a higher return on reserves can weaken the lending response.",
-        "worked": "The central bank buys $50 million of securities, adding $50 million to bank reserves. With a 20% required reserve ratio, no excess reserves, and full redepositing, the simple deposit multiplier is 1 / 0.20 = 5. Maximum deposit expansion is $50 million x 5 = $250 million. Currency drain or additional reserve holding makes the result smaller; it cannot be calculated by multiplying 5 by the lending share.",
+        "watch": "More reserves do not guarantee a fixed expansion of broad money. Banks, borrowers, and depositors affect the response; the simple multiplier is a separate restrictive model.",
+        "worked": "A $50 million security purchase adds $50 million of reserves. In a limited-reserves textbook market, that tends to lower short-term interest rates. In an ample-reserves system, administered rates are the main rate-control tool. Distinguish each tool's immediate effect from the eventual lending and spending response.",
         "check": "If the central bank lowers the rate it charges banks for direct loans, what is the immediate textbook effect?",
         "graph": false,
         "calculation": true,
@@ -9299,7 +9720,38 @@
         "time": "5 minutes",
         "exampleQuestionId": "ECON-SP-CHOOSE-FED-TOOL-EFFECT-6007",
         "checkQuestionId": "LG-R-5020",
-        "workedLabel": "OPEN-MARKET PURCHASE AND DEPOSIT EXPANSION"
+        "workedLabel": "MATCHING THE TOOL TO ITS EFFECT",
+        "table": {
+          "caption": "Policy action and immediate textbook effect",
+          "columnHeaders": [
+            "Immediate effect"
+          ],
+          "rowHeaders": [
+            "Open-market purchase",
+            "Open-market sale",
+            "Lower administered rates",
+            "Higher administered rates"
+          ],
+          "cells": [
+            [
+              "Adds bank reserves; can lower rates when reserves are limited."
+            ],
+            [
+              "Removes reserves; can raise rates when reserves are limited."
+            ],
+            [
+              "Lowers the rates guiding short-term market rates."
+            ],
+            [
+              "Raises the rates guiding short-term market rates."
+            ]
+          ],
+          "columnWidths": [
+            0.37,
+            0.63
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Apply open-market operations, administered rates, and reserve tools.",
@@ -9376,7 +9828,7 @@
       "focusTerms": [],
       "content": {
         "outcome": "Evaluate currency drain, excess reserves, leverage risk, and multiplier slippage.",
-        "core": "The central bank influences rather than perfectly controls broad money because banks and the public choose how much to lend, hold, deposit, or keep as cash. Excess reserve holding weakens the multiplier process. If banks do not lend excess reserves, the deposit expansion process weakens. The Fed influences the money supply, but banks and depositors affect reserves, lending, and deposits. When banks hold more excess reserves, they lend less, so deposit creation weakens.",
+        "core": "The central bank influences broad money, but banks and the public also determine lending, deposits, and currency holdings. Excess reserve holding and currency drain weaken the simple deposit-expansion process. Banks with little capital may be especially cautious about losses and lending. These choices prevent a mechanical link from new reserves to a fixed amount of broad money.",
         "recognition": [
           "The Fed influences the money supply, but banks and depositors affect reserves, lending, and deposits.",
           "When banks hold more excess reserves, they lend less, so deposit creation weakens.",
@@ -9385,7 +9837,7 @@
           "Households convert part of each new bank deposit into currency rather than leaving the funds in banks."
         ],
         "watch": "Do not treat the central bank as having mechanical one-for-one control over broad money. The central bank controls its own balance sheet and reserve conditions more directly than broad money, which also depends on banks, borrowers, and the public.",
-        "worked": "The Fed adds $40 million of reserves, but banks hold half as excess reserves and the public keeps some funds as cash. Because only part of the injection supports new loans and redeposits, broad money rises by less than the simple multiplier predicts. The Fed controls reserves more directly than it controls deposits held by the public.",
+        "worked": "The Fed adds $40 million of reserves, but banks hold half as excess reserves and the public keeps some funds as cash. Because only part of the injection supports new loans and redeposits, broad money rises by less than the simple multiplier predicts. The Fed controls reserves more directly than it controls deposits held by the public. A bank with a thin capital cushion may also limit new lending to reduce its exposure to losses.",
         "check": "Why is Fed control of the money supply imperfect?",
         "graph": false,
         "calculation": true,
@@ -9393,7 +9845,8 @@
         "time": "5 minutes",
         "exampleQuestionId": "LG-B-6008",
         "checkQuestionId": "ECON-SP-LIMITS-OF-MONETARY-CONTROL-5011",
-        "workedLabel": "WHY MONEY EXPANSION FALLS SHORT"
+        "workedLabel": "WHY MONEY EXPANSION FALLS SHORT",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Evaluate currency drain, excess reserves, leverage risk, and multiplier slippage.",
@@ -9478,7 +9931,7 @@
         ],
         "watch": "Do not assume money growth permanently raises real output. The quantity theory connects persistent money growth to inflation, especially in the long run.",
         "worked": "In this clean quantity-theory case, velocity V and real output Y are fixed. Money supply doubles from 2,500 (MS1) to 5,000 (MS2). The value of money falls from 2 at a to 1 at b. Since P is its reciprocal, P rises from 1/2 = 0.50 to 1/1 = 1.00: a 100% increase. The graph shows value of money (1/P), not velocity V in MV = PY.",
-        "check": "In MV = PY, what does P represent?",
+        "check": "With velocity and real output fixed, money grows by 10%. What happens to the price level in this quantity-theory example, and why does real output not rise?",
         "graph": true,
         "calculation": true,
         "difficulty": "Intermediate",
@@ -9493,7 +9946,9 @@
           "sha256": "9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d",
           "imageAlt": "With velocity V and real output Y fixed, reciprocal money demand is 1/P = 5000/M. Vertical MS1 at M = 2,500 intersects MD at a, where 1/P = 2. Vertical MS2 at M = 5,000 intersects MD at b, where 1/P = 1. The price level doubles from 0.50 to 1.00; long-run real output is unchanged.",
           "graphDescription": "With velocity V and real output Y fixed, reciprocal money demand is 1/P = 5000/M. Vertical MS1 at M = 2,500 intersects MD at a, where 1/P = 2. Vertical MS2 at M = 5,000 intersects MD at b, where 1/P = 1. The price level doubles from 0.50 to 1.00; long-run real output is unchanged."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-23.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Apply the quantity equation, velocity, money growth, price levels, and inflation.",
@@ -9576,23 +10031,57 @@
           "Do not apply long-run neutrality to the short run, when sticky prices can make money affect real activity."
         ],
         "watch": "Do not assume money changes real variables permanently in the long run. Monetary neutrality means money affects nominal variables in the long run, not real output or employment.",
-        "worked": "With velocity V and long-run real output Y fixed, money supply doubles from 2,500 to 5,000. The value of money falls from 2 at a to 1 at b, so P rises from 1/2 = 0.50 to 1/1 = 1.00: a 100% increase. Prices double while long-run real output does not rise. This is monetary neutrality. Value of money (1/P) is not velocity V in MV = PY.",
+        "worked": "Under the stated long-run neutrality assumptions, doubling money doubles prices and nominal wages. The real wage is unchanged: $20 / $5 = 4 units per hour before and $40 / $10 = 4 afterward. Real output remains 100 units. Nominal amounts change while real purchasing power and productive capacity do not.",
         "check": "A student says, “If money is neutral, monetary policy can never affect real output.” What is the best correction?",
-        "graph": true,
+        "graph": false,
         "calculation": true,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": "LG-Q-336",
         "checkQuestionId": "ECON-SP-MONETARY-NEUTRALITY-5019",
         "workedLabel": "NOMINAL VERSUS REAL EFFECTS",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/concept-reviews/assets/quantity-theory-fixed-v-y.png",
-        "assetMetadata": {
-          "filename": "quantity-theory-fixed-v-y.png",
-          "sourceUrl": "data/concept-reviews/assets/quantity-theory-fixed-v-y.png",
-          "sha256": "9a647b1312131cb74ce5a12f89f7ca18db35bb7101d077224f6d80626c55b31d",
-          "imageAlt": "With velocity V and real output Y fixed, reciprocal money demand is 1/P = 5000/M. Vertical MS1 at M = 2,500 intersects MD at a, where 1/P = 2. Vertical MS2 at M = 5,000 intersects MD at b, where 1/P = 1. The price level doubles from 0.50 to 1.00; long-run real output is unchanged.",
-          "graphDescription": "With velocity V and real output Y fixed, reciprocal money demand is 1/P = 5000/M. Vertical MS1 at M = 2,500 intersects MD at a, where 1/P = 2. Vertical MS2 at M = 5,000 intersects MD at b, where 1/P = 1. The price level doubles from 0.50 to 1.00; long-run real output is unchanged."
-        }
+        "table": {
+          "caption": "Illustrative long-run neutrality comparison",
+          "columnHeaders": [
+            "Before",
+            "After"
+          ],
+          "rowHeaders": [
+            "Money stock",
+            "Price per unit",
+            "Nominal wage per hour",
+            "Real wage (units/hour)",
+            "Real output"
+          ],
+          "cells": [
+            [
+              "2,500",
+              "5,000"
+            ],
+            [
+              "$5",
+              "$10"
+            ],
+            [
+              "$20",
+              "$40"
+            ],
+            [
+              "4",
+              "4"
+            ],
+            [
+              "100 units",
+              "100 units"
+            ]
+          ],
+          "columnWidths": [
+            0.48,
+            0.26,
+            0.26
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Distinguish nominal and real variables and analyze long-run neutrality.",
@@ -9760,16 +10249,15 @@
       "focusTerms": [],
       "content": {
         "outcome": "Analyze redistribution, shoeleather costs, menu costs, and price distortions.",
-        "core": "Inflation redistributes purchasing power when it differs from expectations and creates shoeleather, menu, and relative-price costs. Actual inflation was higher than expected, so borrowers repay with less valuable dollars. Menu costs are costs of changing posted prices. Shoe-leather costs refer to the time and effort people spend reducing money holdings when inflation is high. Shoeleather costs are the wasted effort people spend trying to hold less money during inflation.",
+        "core": "Unexpected inflation redistributes purchasing power between borrowers and lenders on fixed nominal contracts. Even expected inflation can create costs: changing posted prices uses resources (menu costs), economizing on cash takes time and effort (shoeleather costs), and uneven price changes can obscure relative-price signals.",
         "recognition": [
-          "Shoe-leather costs refer to the time and effort people spend reducing money holdings when inflation is high.",
-          "Shoeleather costs are the wasted effort people spend trying to hold less money during inflation.",
-          "Menu costs are the costs firms face when they change posted prices.",
-          "Firms repeatedly changing posted prices incur menu costs.",
-          "Menu costs are the costs of changing posted prices."
+          "Unexpected inflation lowers the real repayment on a fixed nominal debt.",
+          "Menu costs are resources spent changing posted prices.",
+          "Shoeleather costs arise from efforts to hold less money during inflation.",
+          "Relative-price confusion can make economic decisions harder."
         ],
         "watch": "Do not confuse shoeleather costs with menu costs. Shoeleather costs are the wasted effort people spend trying to hold less money during inflation.",
-        "worked": "A lender makes a 9% loan expecting 3% inflation, so the expected real return is 6%. Actual inflation turns out to be 10%, making the realized real return approximately 9% - 10% = -1%. Unexpected inflation transfers purchasing power from the lender to the borrower.",
+        "worked": "A lender makes a 9% loan expecting 3% inflation, so the expected real return is approximately 6%. Actual inflation turns out to be 10%, making the realized real return approximately 9% - 10% = -1%. Unexpected inflation transfers purchasing power from the lender to the borrower.",
         "check": "A student says, “If everyone correctly expects 6 percent inflation, inflation has no economic costs.” Which response is best?",
         "graph": false,
         "calculation": true,
@@ -9777,7 +10265,8 @@
         "time": "5 minutes",
         "exampleQuestionId": "LG-B-6014",
         "checkQuestionId": "LG-R-5036",
-        "workedLabel": "UNEXPECTED INFLATION REDISTRIBUTION"
+        "workedLabel": "UNEXPECTED INFLATION REDISTRIBUTION",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze redistribution, shoeleather costs, menu costs, and price distortions.",
@@ -10152,7 +10641,7 @@
           "Distinguish a shift of aggregate demand from a movement along the curve caused by the price level."
         ],
         "watch": "A common mistake is to classify fiscal policy from the economy's condition rather than the government's action. Higher purchases or lower taxes are expansionary; lower purchases or higher taxes are contractionary.",
-        "worked": "At the displayed price level P, an expansionary fiscal action shifts aggregate demand from AD1 to AD2. Real output demanded rises from Y1 to Y2 at that fixed price level. A larger action could shift demand to AD3 and quantity demanded to Y3, but the graph does not establish which package is desirable; that depends on the output gap and timing.",
+        "worked": "At the displayed price level P, higher government purchases shift aggregate demand from AD1 to AD2. Real output demanded rises from Y1 to Y2 at that fixed price level. A tax cut can also shift AD right by raising disposable income and consumption. This graph isolates the direction of the shift; the multiplier and offsets are considered separately.",
         "check": "Why can a tax cut shift aggregate demand to the right in the short run?",
         "graph": true,
         "calculation": true,
@@ -10161,14 +10650,11 @@
         "exampleQuestionId": "ECON-SP-MEDIUM-151",
         "checkQuestionId": "LG-R-5051",
         "workedLabel": "SHIFTING AGGREGATE DEMAND",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp",
-        "assetMetadata": {
-          "filename": "moneymultiplier.webp",
-          "sourceUrl": "data/question-assets/fiscal-policy-and-aggregate-demand/moneymultiplier.webp",
-          "sha256": "b8371794ea980d9cdb463314a72969379fa334ef908ed171035c1b79de0d9830",
-          "imageAlt": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3.",
-          "graphDescription": "The horizontal axis is real output Y and the vertical axis is the price level P. A horizontal line at price level P crosses three downward-sloping aggregate-demand curves. AD1 intersects at output Y1, AD2 lies to the right and intersects at Y2, and AD3 lies farther right and intersects at Y3, so Y1 is less than Y2, which is less than Y3."
-        }
+        "graphSpec": {
+          "kind": "fiscal_ad"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-30.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Trace government purchases and taxes into aggregate demand.",
@@ -10756,7 +11242,7 @@
           "A move up and left along the displayed SRPC means lower unemployment and higher inflation."
         ],
         "watch": "Do not confuse the Phillips curve with the AD-AS model. The short-run Phillips curve shows that lower unemployment is associated with higher inflation, and higher unemployment is associated with lower inflation.",
-        "worked": "Point A is at 5 percent unemployment and 2.5 percent inflation. The horizontal guide through point A hits the inflation axis at 2.5 percent. Therefore, 2.5 percent. A downward-sloping SRPC shows an inverse short-run relationship: less unemployment comes with more inflation.",
+        "worked": "Point A has 5% unemployment and 2.5% inflation. With expected inflation fixed, stronger aggregate demand moves the economy up and left along this same SRPC: unemployment falls while inflation rises. Weaker demand moves it down and right. A change in expectations would instead shift the curve.",
         "check": "On a Phillips graph, moving upward and left along one SRPC means what?",
         "graph": true,
         "calculation": false,
@@ -10772,7 +11258,9 @@
           "sha256": "7cf82823d4b482002cf65d858c8e7fc00705db538fb5f4e4c7ef4e2495a94b71",
           "imageAlt": "Point A is at 5 percent unemployment and 2.5 percent inflation. LRPC is vertical at 5 percent unemployment.",
           "graphDescription": "Point A is at 5 percent unemployment and 2.5 percent inflation. LRPC is vertical at 5 percent unemployment."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-37.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Interpret movements along the short-run inflation–unemployment tradeoff.",
@@ -10855,7 +11343,7 @@
           "A national job-matching system reduces the time workers spend searching for suitable positions."
         ],
         "watch": "Do not treat a higher expected inflation rate as a permanent way to lower unemployment. Along the long-run Phillips curve, different inflation rates can coexist with the same natural rate of unemployment.",
-        "worked": "The vertical LRPC is drawn at 5% unemployment. A temporary demand expansion can move unemployment below 5% along a short-run Phillips curve, but expected inflation eventually adjusts and the short-run curve shifts. Unemployment returns to the 5% natural rate at a higher inflation rate, so no permanent tradeoff remains.",
+        "worked": "The economy starts at A: 5% unemployment and 3% inflation. A demand expansion moves it along SRPC0 to B, at 3% unemployment and 5% inflation. As expected inflation rises, SRPC shifts up to SRPC1. The final point C is on LRPC at 5% unemployment and 5% inflation. Unemployment returns to its natural rate; there is no permanent inflation-unemployment tradeoff.",
         "check": "Why does higher inflation not permanently lower unemployment in the natural-rate model?",
         "graph": true,
         "calculation": false,
@@ -10864,14 +11352,11 @@
         "exampleQuestionId": "PG5-PC-M-003",
         "checkQuestionId": "ECON-SP-IDENTIFY-LRPC-5051",
         "workedLabel": "RETURNING TO THE NATURAL RATE",
-        "assetPath": "C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/data/question-assets/phillips-curve-expectations/SRPC-04.webp",
-        "assetMetadata": {
-          "filename": "SRPC-04.webp",
-          "sourceUrl": "data/question-assets/phillips-curve-expectations/SRPC-04.webp",
-          "sha256": "b32bd9e8e1398ae7a454d34a1720a44bfeb30f013a3a264aa20ed563edf6fce2",
-          "imageAlt": "Phillips curve graph with SRPC0, shifted SRPC1, LRPC at 5 percent unemployment, point A at 5 percent unemployment and 3 percent inflation, and point B at 6 percent unemployment and 6 percent inflation.",
-          "graphDescription": "Phillips curve graph with SRPC0, shifted SRPC1, LRPC at 5 percent unemployment, point A at 5 percent unemployment and 3 percent inflation, and point B at 6 percent unemployment and 6 percent inflation."
-        }
+        "graphSpec": {
+          "kind": "phillips_return"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-38.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Apply the natural-rate hypothesis and vertical long-run Phillips curve.",
@@ -10955,7 +11440,7 @@
         ],
         "watch": "Do not confuse a curve shift with movement along one curve. At the same unemployment rate, a higher SRPC reflects higher expected inflation or a worse tradeoff.",
         "worked": "The economy begins at point b on SRPC2 with unemployment U2 and inflation I2. When expected inflation falls, the short-run Phillips curve shifts downward to SRPC1. At the natural unemployment rate U2, the economy reaches point c with lower inflation I1. Expectations, not a permanent unemployment change, drive the shift.",
-        "check": "Does a credible announcement guarantee costless disinflation?",
+        "check": "With unemployment held at U2, expected inflation falls. Does the economy move along SRPC2 or shift to SRPC1, and what happens to inflation?",
         "graph": true,
         "calculation": false,
         "difficulty": "Intermediate",
@@ -10970,7 +11455,9 @@
           "sha256": "fe3d363e28a4d8142fb4244a93259c40455cd4146377001b7128d38cdd7e4c3b",
           "imageAlt": "The horizontal axis is unemployment rate and the vertical axis is inflation rate. A vertical LRPC stands at U2. SRPC1 is the lower/left downward-sloping curve and SRPC2 is the higher/right downward-sloping curve. Point a is at U1/I2 on SRPC1, point b is at U2/I2 where SRPC2 meets the LRPC, point c is at U2/I1 where SRPC1 meets the LRPC, and point d is at U3/I1 on SRPC2. Dashed guides mark unemployment rates U1-U3 and inflation rates I1-I2.",
           "graphDescription": "The horizontal axis is unemployment rate and the vertical axis is inflation rate. A vertical LRPC stands at U2. SRPC1 is the lower/left downward-sloping curve and SRPC2 is the higher/right downward-sloping curve. Point a is at U1/I2 on SRPC1, point b is at U2/I2 where SRPC2 meets the LRPC, point c is at U2/I1 where SRPC1 meets the LRPC, and point d is at U3/I1 on SRPC2. Dashed guides mark unemployment rates U1-U3 and inflation rates I1-I2."
-        }
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-39.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Analyze expected inflation and supply shocks as Phillips-curve shifters.",
@@ -11151,7 +11638,7 @@
           "Faster adjustment of expected inflation reduces the output cost of disinflation."
         ],
         "watch": "A common mistake is to divide the dollar output loss directly by the inflation change. First express the loss as a percentage of potential output, then divide by the percentage-point reduction in inflation.",
-        "worked": "Potential output is $400 billion and cumulative output loss during disinflation is $24 billion. The loss is $24 / $400 = 6% of potential output. Inflation falls by 3 percentage points, so the sacrifice ratio is 6 / 3 = 2: the economy loses 2% of one year's output per percentage-point reduction in inflation.",
+        "worked": "Each year loses $12 billion relative to $400 billion potential output, a 3% gap. Add the two annual gaps: cumulative loss is 6% of one year's potential output. Inflation falls by 3 percentage points, so the sacrifice ratio is 6 / 3 = 2. Keep percentage output losses distinct from percentage-point inflation changes.",
         "check": "Should annual output gaps be added before calculating a multi-year sacrifice ratio?",
         "graph": false,
         "calculation": true,
@@ -11159,7 +11646,49 @@
         "time": "5 minutes",
         "exampleQuestionId": "ECON-SP-DEFINE-SACRIFICE-RATIO-6049",
         "checkQuestionId": "ECON-SP-DEFINE-SACRIFICE-RATIO-5058",
-        "workedLabel": "CALCULATING THE SACRIFICE RATIO"
+        "workedLabel": "CALCULATING THE SACRIFICE RATIO",
+        "table": {
+          "caption": "Disinflation output losses (billions of dollars)",
+          "columnHeaders": [
+            "Potential",
+            "Actual",
+            "Output loss",
+            "Gap / potential"
+          ],
+          "rowHeaders": [
+            "Year 1",
+            "Year 2",
+            "Total loss"
+          ],
+          "cells": [
+            [
+              "400",
+              "388",
+              "12",
+              "3%"
+            ],
+            [
+              "400",
+              "388",
+              "12",
+              "3%"
+            ],
+            [
+              "—",
+              "—",
+              "24",
+              "6% of one year"
+            ]
+          ],
+          "columnWidths": [
+            0.2,
+            0.16,
+            0.16,
+            0.19,
+            0.29
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate and interpret output losses associated with disinflation.",
@@ -11454,7 +11983,7 @@
           "Competitive wage and employment occur where market labor demand intersects market labor supply."
         ],
         "watch": "Do not confuse MPL with VMP. MPL is extra physical output; VMP converts that output into dollars by multiplying by the output price.",
-        "worked": "Warehouse labor demand and labor supply intersect at an hourly wage of $20 and 40 hundreds of workers. Because the horizontal axis is measured in hundreds, equilibrium employment is 4,000 workers. Below $20, firms demand more labor than workers supply; above $20, labor supplied exceeds labor demanded.",
+        "worked": "Suppose output sells for $5 and the marginal worker adds 4 units per hour. VMP is $5 x 4 = $20 per hour, matching a $20 wage. The graph shows market equilibrium at that wage and 40 hundreds of workers, or 4,000 workers. A higher output price raises VMP at each employment level and shifts labor demand right.",
         "check": "If the output price rises while worker productivity is unchanged, what happens to labor demand?",
         "graph": true,
         "calculation": true,
@@ -11463,7 +11992,9 @@
         "exampleQuestionId": null,
         "checkQuestionId": null,
         "workedLabel": "COMPETITIVE LABOR-MARKET EQUILIBRIUM",
-        "graphAssetPath": "question-assets/factor-markets/LABOR-01.webp"
+        "graphAssetPath": "question-assets/factor-markets/LABOR-01.webp",
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-57.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Labor demand is derived from the value workers add to output. Marginal product of labor is the extra output from one more worker. For a price-taking seller, VMP = output price x MPL. A profit-maximizing firm hires labor up to the point where VMP equals the wage.",
@@ -11515,12 +12046,12 @@
       ],
       "content": {
         "outcome": "Use a budget constraint and preferences to identify the best affordable bundle.",
-        "core": "A budget constraint shows every bundle a consumer can afford at given income and prices. Its intercepts are income divided by each good's price, and its slope is the negative relative price. Preferences rank feasible bundles; the optimum is the highest attainable indifference curve, usually where MRS equals the price ratio.",
+        "core": "A budget constraint shows affordable bundles at given income and prices. Its intercepts show the most of either good a consumer can buy. An indifference curve connects bundles the consumer ranks equally. The best affordable bundle reaches the highest available preference level; in this example, its curve just touches the budget line.",
         "recognition": [
           "Bundles inside or on the budget line are feasible; bundles outside it are infeasible.",
           "An income change shifts the line in parallel when prices are fixed.",
           "A change in one price pivots the line around the unchanged intercept.",
-          "At an interior optimum, marginal utility per dollar is equal across goods."
+          "Compare the highest preference curve that can be reached without exceeding the budget."
         ],
         "watch": "Spending the whole budget is not enough to prove optimality. The chosen bundle must also provide the highest attainable preference ranking.",
         "worked": "The budget line reaches 20 units of X or 40 units of Y, so its slope is -2. Bundle A contains 10 units of X and 20 of Y. At A, the budget line is tangent to IC2, the highest attainable indifference curve. IC3 is preferred but lies outside the feasible set, while IC1 is attainable but provides a lower ranking.",
@@ -11532,7 +12063,9 @@
         "exampleQuestionId": null,
         "checkQuestionId": null,
         "workedLabel": "BEST AFFORDABLE BUNDLE",
-        "graphAssetPath": "question-assets/consumer-choice/CHOICE-07.webp"
+        "graphAssetPath": "question-assets/consumer-choice/CHOICE-07.webp",
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-58.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "A budget constraint shows every bundle a consumer can afford at given income and prices. Its intercepts are income divided by each good's price, and its slope is the negative relative price. Preferences rank feasible bundles; the optimum is the highest attainable indifference curve, usually where MRS equals the price ratio.",
@@ -12069,7 +12602,7 @@
           "Because no option is a universal majority winner, agenda order may matter."
         ],
         "watch": "A voting cycle does not require irrational voters. Individually transitive rankings can aggregate into an intransitive majority relation.",
-        "worked": "Voter 1 ranks A > B > C; Voter 2 ranks B > C > A; Voter 3 ranks C > A > B. Against B, A wins with Voters 1 and 3. Against C, B wins with Voters 1 and 2. Against A, C wins with Voters 2 and 3. Thus the majority relation is A > B > C > A, so the agenda can determine which comparison occurs last and which option survives.",
+        "worked": "Using the rankings, A defeats B by 2 votes to 1; B defeats C by 2 to 1; and C defeats A by 2 to 1. Each voter has a consistent ranking, yet the group cycles. With no option beating every rival, the order of pairwise votes can affect the final survivor.",
         "check": "Why can changing the order of pairwise votes change the winner when majority preferences form a cycle?",
         "graph": false,
         "calculation": false,
@@ -12077,7 +12610,38 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "THREE VOTERS, THREE OPTIONS"
+        "workedLabel": "THREE VOTERS, THREE OPTIONS",
+        "table": {
+          "caption": "Individual rankings (first to third)",
+          "columnHeaders": [
+            "First choice",
+            "Second choice",
+            "Third choice"
+          ],
+          "rowHeaders": [
+            "Voter 1",
+            "Voter 2",
+            "Voter 3"
+          ],
+          "cells": [
+            [
+              "A",
+              "B",
+              "C"
+            ],
+            [
+              "B",
+              "C",
+              "A"
+            ],
+            [
+              "C",
+              "A",
+              "B"
+            ]
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Even when every voter has a consistent ranking, pairwise majority voting can produce a cycle: A defeats B, B defeats C, and C defeats A. The group then has no option that defeats every alternative, and agenda order can affect the final outcome.",
@@ -12137,7 +12701,7 @@
           "The theorem concerns simultaneous guarantees under its conditions, not whether voting can occur."
         ],
         "watch": "Do not conclude that no voting system works or that democracy is impossible. The theorem applies to ranked aggregation and the simultaneous satisfaction of specified conditions.",
-        "worked": "A community wants a ranked-choice rule that respects unanimous rankings, is not controlled by one voter, produces a consistent social ranking, and treats irrelevant alternatives appropriately. Each property seems reasonable. Arrow's theorem says that, with at least three alternatives and unrestricted individual rankings, no aggregation rule can guarantee all of them simultaneously. The lesson is an unavoidable design tradeoff, not a claim that collective choice is meaningless.",
+        "worked": "A community wants all five guarantees in the table. With at least three alternatives, Arrow's theorem says no rule combining unrestricted individual rankings can always provide every guarantee. The introductory lesson is a design tradeoff among reasonable goals, not that elections cannot produce winners.",
         "check": "Which is accurate: Arrow identifies incompatible guarantees under stated conditions, or proves that no election can produce a winner?",
         "graph": false,
         "calculation": false,
@@ -12145,7 +12709,42 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "DESIRABLE RULES IN TENSION"
+        "workedLabel": "DESIRABLE RULES IN TENSION",
+        "table": {
+          "caption": "Desirable guarantees and their meanings",
+          "columnHeaders": [
+            "Meaning"
+          ],
+          "rowHeaders": [
+            "Unrestricted rankings",
+            "Consistent social ranking",
+            "Unanimity",
+            "No dictator",
+            "Independence"
+          ],
+          "cells": [
+            [
+              "Allow any consistent individual rankings."
+            ],
+            [
+              "Rank every pair without a group cycle."
+            ],
+            [
+              "Respect a comparison everyone agrees on."
+            ],
+            [
+              "No one voter always determines the ranking."
+            ],
+            [
+              "If each voter keeps A versus B unchanged, the social A-versus-B ranking stays unchanged."
+            ]
+          ],
+          "columnWidths": [
+            0.3,
+            0.7
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "With at least three alternatives, Arrow's theorem shows that no ranked-choice social decision rule can guarantee all of a specified set of desirable conditions at once. The result identifies a tradeoff among aggregation properties; it does not prove that democracy or every voting system is impossible.",
@@ -12207,13 +12806,18 @@
         "watch": "The median voter does not always decide elections. Multidimensional policy, non-single-peaked preferences, turnout, institutions, or other departures can break the result.",
         "worked": "Five voters prefer policy levels 10, 20, 30, 40, and 50. The ordered middle preference is 30. Against a proposal below 30, the voters at 30, 40, and 50 form a majority for 30; against one above 30, the voters at 10, 20, and 30 form a majority for 30. Under one-dimensional, single-peaked preferences and majority rule, the median position can defeat alternatives on either side.",
         "check": "For preferred policies 5, 15, 25, 35, and 45, which position is median, and what preference assumption is required?",
-        "graph": false,
+        "graph": true,
         "calculation": false,
         "difficulty": "Intermediate",
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "THE PIVOTAL POLICY POSITION"
+        "workedLabel": "THE PIVOTAL POLICY POSITION",
+        "graphSpec": {
+          "kind": "median_voter"
+        },
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-68.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "When policy lies on one dimension, preferences are single-peaked, and decisions use majority rule, the median voter's preferred position has a special advantage. Policies or candidates may move toward it because alternatives on either side can be defeated by a majority.",
@@ -12281,7 +12885,49 @@
         "time": "6 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "FROM COMPONENTS TO OPEN-ECONOMY SAVING"
+        "workedLabel": "FROM COMPONENTS TO OPEN-ECONOMY SAVING",
+        "table": {
+          "caption": "Saving and its allocation (dollars)",
+          "columnHeaders": [
+            "Calculation",
+            "Value"
+          ],
+          "rowHeaders": [
+            "Private saving",
+            "Public saving",
+            "National saving",
+            "Domestic investment",
+            "NCO and NX"
+          ],
+          "cells": [
+            [
+              "1200 - 150 - 760",
+              "290"
+            ],
+            [
+              "150 - 260",
+              "-110"
+            ],
+            [
+              "290 - 110",
+              "180"
+            ],
+            [
+              "Given",
+              "140"
+            ],
+            [
+              "180 - 140",
+              "40"
+            ]
+          ],
+          "columnWidths": [
+            0.35,
+            0.4,
+            0.25
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate private, public, and national saving in closed and open economies.",
@@ -12628,7 +13274,7 @@
           "Interest payments can absorb future budget resources.",
           "Lower public saving links deficits to loanable funds and possible crowding out."
         ],
-        "watch": "Do not call the debt the sum of all past spending or claim all debt is automatically harmful. Debt changes with deficits, surpluses, interest, repayments, and accounting adjustments.",
+        "watch": "Debt is a stock, not this year's deficit or the sum of all past spending. When a deficit is measured using total outlays, interest is already included: do not add it again when updating debt. Other accounting adjustments may also matter.",
         "worked": "Public debt begins at $900 billion. A $120 billion deficit adds borrowing; the next year's $20 billion surplus is used to repay debt. Ignoring other adjustments, debt becomes $900 + $120 - $20 = $1,000 billion. The two annual balances are flows; $1,000 billion is the ending stock.",
         "check": "Can the debt remain positive in a year with a budget surplus? Explain briefly.",
         "graph": false,
@@ -12637,7 +13283,8 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "UPDATING THE DEBT STOCK"
+        "workedLabel": "UPDATING THE DEBT STOCK",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Distinguish annual budget flows from accumulated public debt.",
@@ -12707,7 +13354,34 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "LEVEL UP, RATIO DOWN"
+        "workedLabel": "LEVEL UP, RATIO DOWN",
+        "table": {
+          "caption": "Debt levels versus debt-to-GDP",
+          "columnHeaders": [
+            "Before",
+            "After"
+          ],
+          "rowHeaders": [
+            "Debt",
+            "Nominal GDP",
+            "Debt / GDP"
+          ],
+          "cells": [
+            [
+              "$6.0 trillion",
+              "$6.6 trillion"
+            ],
+            [
+              "$24.0 trillion",
+              "$27.5 trillion"
+            ],
+            [
+              "25.0%",
+              "24.0%"
+            ]
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Interpret debt levels, debt-to-GDP ratios, and interest burdens.",
@@ -12777,7 +13451,50 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "A THEORETICAL MAXIMUM"
+        "workedLabel": "A THEORETICAL MAXIMUM",
+        "table": {
+          "caption": "Textbook deposit rounds: reserve ratio 10%",
+          "columnHeaders": [
+            "New deposit",
+            "Reserves",
+            "New loan"
+          ],
+          "rowHeaders": [
+            "First bank",
+            "Second bank",
+            "Third bank",
+            "All rounds total"
+          ],
+          "cells": [
+            [
+              "$1,000",
+              "$100",
+              "$900"
+            ],
+            [
+              "$900",
+              "$90",
+              "$810"
+            ],
+            [
+              "$810",
+              "$81",
+              "$729"
+            ],
+            [
+              "$10,000",
+              "$1,000",
+              "$9,000"
+            ]
+          ],
+          "columnWidths": [
+            0.34,
+            0.22,
+            0.22,
+            0.22
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Apply the textbook fractional-reserve deposit-creation process.",
@@ -12991,7 +13708,38 @@
         "time": "6 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "MATCHING THE TWO SIDES"
+        "workedLabel": "MATCHING THE TWO SIDES",
+        "table": {
+          "caption": "Trade and asset transactions (billions of dollars)",
+          "columnHeaders": [
+            "Positive flow",
+            "Negative flow",
+            "Net"
+          ],
+          "rowHeaders": [
+            "Goods: NX",
+            "Assets: NCO"
+          ],
+          "cells": [
+            [
+              "Exports 300",
+              "Imports 360",
+              "-60"
+            ],
+            [
+              "Residents buy foreign 90",
+              "Foreigners buy domestic 150",
+              "-60"
+            ]
+          ],
+          "columnWidths": [
+            0.18,
+            0.3,
+            0.34,
+            0.18
+          ]
+        },
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Calculate trade and capital balances and connect NX, NCO, saving, and investment.",
@@ -13193,7 +13941,7 @@
           "NCO supplies dollars to the FX market as residents acquire foreign assets."
         ],
         "watch": "NCO and NX describe different transactions: assets versus goods and services. They are equal as an accounting relationship in the course model, not because every asset purchase is an export.",
-        "worked": "U.S. residents buy $140 billion of foreign assets; foreigners buy $90 billion of U.S. assets. U.S. NCO is $140 - $90 = +$50 billion, a net outflow. That positive NCO supplies dollars in exchange for foreign currency and corresponds to NX of +$50 billion.",
+        "worked": "Initially residents buy $140 billion of foreign assets and foreigners buy $90 billion of domestic assets, giving NCO of $50 billion. Suppose a higher domestic real interest rate makes domestic assets more attractive: residents' foreign purchases fall to $130 billion and foreigners' domestic purchases rise to $100 billion. NCO falls to $30 billion. These illustrative flows show the direction; the model does not predict a fixed response size.",
         "check": "Foreign purchases of U.S. assets rise while U.S. foreign-asset purchases are fixed. What happens to U.S. NCO?",
         "graph": false,
         "calculation": true,
@@ -13201,7 +13949,8 @@
         "time": "5 minutes",
         "exampleQuestionId": null,
         "checkQuestionId": null,
-        "workedLabel": "CLASSIFY, THEN NET"
+        "workedLabel": "CLASSIFY, THEN NET",
+        "renderProfile": "owner_qa_v1"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Classify international asset purchases and trace interest-rate effects on NCO.",
@@ -13328,12 +14077,12 @@
       ],
       "content": {
         "outcome": "Trace fiscal and financial shocks through saving, NCO, FX, NX, and AD.",
-        "core": "Open-economy policy analysis connects several markets. Here the FX panel uses vertical dollar supply fixed by NCO at a given real interest rate, rather than the upward-sloping gross-flow supply in the basic FX market. Hold domestic and foreign price levels fixed when interpreting the nominal exchange-rate change. A larger budget deficit lowers public and national saving, raises the real interest rate, reduces investment and NCO, and shifts the supply of dollars left. With dollar demand fixed, the dollar appreciates and net exports fall. The NX decline and investment crowding out can partly offset the direct aggregate-demand effect of higher government purchases.",
+        "core": "Use one chain at a time. In this model, a larger budget deficit reduces national saving and raises the real interest rate. Domestic assets become more attractive, so net capital outflow (NCO) falls. Fewer dollars are supplied for foreign assets, the dollar appreciates, and net exports fall. The FX graph holds price levels fixed and uses vertical dollar supply determined by NCO, unlike the basic gross-flow graph on MACRO-56.",
         "recognition": [
-          "Write the chain market by market; do not skip from policy directly to the exchange rate.",
-          "Higher domestic real rates lower NCO by making domestic assets relatively attractive.",
-          "Lower NCO means fewer dollars supplied in the FX market.",
-          "Dollar appreciation makes U.S. goods relatively dearer and reduces NX."
+          "Less national saving can raise the real interest rate.",
+          "A higher domestic real rate lowers NCO.",
+          "Lower NCO shifts vertical dollar supply left.",
+          "Dollar appreciation reduces net exports, holding price levels fixed."
         ],
         "watch": "Do not claim a fixed quantitative offset or that every fiscal expansion changes output by the same amount. The model identifies directions; magnitudes depend on responses across markets.",
         "worked": "Suppose a deficit raises the real rate and lowers NCO. In the graph, dollar supply falls from NCO0 = 100 to NCO1 = 50. Equilibrium moves from A to B, and the exchange rate rises from 1.0 to 1.5 foreign units per dollar. Dollar appreciation reduces NX; higher rates also crowd out some investment.",
@@ -13346,7 +14095,9 @@
         "checkQuestionId": null,
         "workedLabel": "FROM A DEFICIT TO NET EXPORTS",
         "graphAssetPath": "question-assets/foreign-exchange-market/FX-09.webp",
-        "graphDescription": "With D0 = NX0 fixed, vertical dollar supply shifts left from S0 = NCO0 at 100 to S1 = NCO1 at 50. The foreign-currency-per-dollar rate rises from 1.0 to 1.5."
+        "graphDescription": "With D0 = NX0 fixed, vertical dollar supply shifts left from S0 = NCO0 at 100 to S1 = NCO1 at 50. The foreign-currency-per-dollar rate rises from 1.0 to 1.5.",
+        "renderProfile": "owner_qa_v1",
+        "maintainedGraphPath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-57.png"
       },
       "instructionalEvidence": {
         "canonicalDefinition": "Trace fiscal and financial shocks through saving, NCO, FX, NX, and AD.",

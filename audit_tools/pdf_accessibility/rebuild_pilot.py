@@ -22,7 +22,11 @@ def build(output_directory=None,codes=None):
     for code in selected:
         meta=semantics['pilot'][code].copy();source=sources[code];visual=None
         try:
-            if code.startswith('MICRO-') and int(code.split('-')[-1])>=54 or code in {r['code'] for r in importlib.import_module('complete_macro_concept_reviews').REVIEWS}:
+            if meta.get('qaRemediation'):
+                from qa_renderer import draw
+                visual=stage/'visual'/(code+'.pdf')
+                layout=draw(source,visual,meta)
+            elif code.startswith('MICRO-') and int(code.split('-')[-1])>=54 or code in {r['code'] for r in importlib.import_module('complete_macro_concept_reviews').REVIEWS}:
                 module=importlib.import_module('expand_micro_concept_reviews' if code.startswith('MICRO') else 'complete_macro_concept_reviews')
                 definition=next(r for r in module.REVIEWS if r['code']==code)
                 # Current corrected instructional source remains authoritative.
@@ -44,6 +48,7 @@ def build(output_directory=None,codes=None):
             row=tag_one(source,meta,stage/'after'/(code+'.pdf'),visual)
             row['visualSource']=str(visual.relative_to(root)) if visual else None
             row['sha256']=sha(contained(row['output']))
+            if meta.get('qaRemediation'):row['layoutEvidence']=layout
         except (ValueError,KeyError) as exc:
             row={'code':code,'status':'REJECTED','reason':str(exc)}
         results.append(row);print(code,row['status'],row.get('reason',''),flush=True)

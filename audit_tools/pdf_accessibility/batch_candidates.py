@@ -17,6 +17,7 @@ def tooling_hash():
     paths=['audit_tools/pdf_accessibility/'+n for n in names]
     paths.append('audit_tools/pdf_accessibility/micro49_wording.py')
     paths.append('audit_tools/pdf_accessibility/micro49_matrix.py')
+    paths+=['audit_tools/pdf_accessibility/'+n for n in ['qa_remediation.py','qa_renderer.py','qa_plot.py','qa_content.py']]
     paths+=['build/faculty-build-composer/tools/'+n for n in ['concept_review_style.py','concept_review_lifecycle.py','expand_micro_concept_reviews.py','complete_macro_concept_reviews.py']]
     return source_hash({p:sha(p) for p in paths})
 

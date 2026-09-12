@@ -37,7 +37,7 @@ def prepare(records,review_path):
         if approved.get('sha256')!=sha(candidate) or any(approved.get(k) is not True for k in required):raise ValueError('Missing byte-bound semantic/visual review')
         from visual_repairs import approved_text_equal
         from pypdf import PdfReader
-        wording_ok=bool(meta.get('wordingCorrection')) and approved_text_equal(
+        wording_ok=bool(meta.get('wordingCorrection') or meta.get('qaRemediation')) and approved_text_equal(
             PdfReader(contained('build/faculty-build-composer/data/concept-reviews/'+code+'.pdf')).pages[0].extract_text(),
             PdfReader(candidate).pages[0].extract_text(),meta)
         if not (row.get('textWhitespaceOnlyEqual') or wording_ok) or not row.get('geometryEqual') or row['pageCounts']!=[1,1]:raise ValueError('Unreviewed content/layout change')
