@@ -1,0 +1,348 @@
+{
+  "baselineSha256": "7dd6f7e70c7025e10f59860dc8e11e790123125febc0c61238a6504d1b9503bb",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MACRO-57.png",
+  "assetSourceSha256": "93a096d0044f8d35dba6afa88ff0a806d054eaf53edf43876d15a92e1e554a80",
+  "graphDecodedSha256": "6aba055ff1e2eb9533e1efaeea396a69334e0ec0753a65be0abfdc2427c49328",
+  "graphAlternative": "Horizontal axis: quantity of U.S. dollars exchanged; vertical axis: exchange rate in foreign currency per U.S. dollar. Downward-sloping D0 = NX0 meets solid vertical S0 = NCO0 at A, quantity 100 and rate 1.0. Dashed vertical S1 = NCO1 lies to the left at quantity 50 and meets the same demand curve at B, rate 1.5. Dashed horizontal guides mark both rates. The supply lines are vertical in this panel.",
+  "sourceRecordSha256": "db4054cd2370b2c163594d27d7f92e3c7c017c1b8bac3d394294ea1123084e86",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "db4054cd2370b2c163594d27d7f92e3c7c017c1b8bac3d394294ea1123084e86",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "ecbea0f1f200c03900e994d9afbbabeaaf0fd3d89081cf4f7bad2c7f7743a16c",
+    "originalSourceRecordSha256": "356139ef4b1ca7877efea24206ffa2d0a1e591b2ea2399156e6a135423aaf9a3",
+    "changedFields": [
+      "core",
+      "recognition"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "d095aff08fff2415e3641b0f70b3a5fd09b69816d4759af0c21d6ccac1440fc1"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "core",
+      "compactStart": 355,
+      "text": "-56",
+      "alternative": "-56"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 77,
+      "text": "NCO0 = 100",
+      "alternative": "N C O subscript 0 equals 100"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 87,
+      "text": "NCO1 = 50",
+      "alternative": "N C O subscript 1 equals 50"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "572f99af5abe7926f33827171c65c49286eaf6e45d830434a2796444ac6af986",
+    "labels": [
+      {
+        "text": "D0 = NX0",
+        "bounds": [
+          32,
+          3,
+          145,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "S0 = NCO0",
+        "bounds": [
+          189.4375,
+          3,
+          323.4375,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "S1 = NCO1",
+        "bounds": [
+          367.09375,
+          3,
+          501.09375,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Exchange rate (foreign currency per U.S. dollar)",
+        "bounds": [
+          160,
+          82,
+          712,
+          106
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          143.3203125,
+          378.0,
+          157.3203125,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "25",
+        "bounds": [
+          214.92031250000002,
+          378.0,
+          243.92031250000002,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "50",
+        "bounds": [
+          293.52031250000005,
+          378.0,
+          322.52031250000005,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "75",
+        "bounds": [
+          372.12031249999995,
+          378.0,
+          401.12031249999995,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "100",
+        "bounds": [
+          442.72031250000003,
+          378.0,
+          485.72031250000003,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "125",
+        "bounds": [
+          521.3203125,
+          378.0,
+          564.3203125,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "150",
+        "bounds": [
+          599.9203124999999,
+          378.0,
+          642.9203124999999,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "175",
+        "bounds": [
+          678.5203124999999,
+          378.0,
+          721.5203124999999,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "200",
+        "bounds": [
+          757.1203125000001,
+          378.0,
+          800.1203125000001,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "225",
+        "bounds": [
+          835.7203125,
+          378.0,
+          878.7203125,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "250",
+        "bounds": [
+          914.3203125,
+          378.0,
+          957.3203125,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "2",
+        "bounds": [
+          130,
+          111.0,
+          144,
+          129.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "1.8",
+        "bounds": [
+          48,
+          135.9,
+          84,
+          153.9
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "1.5",
+        "bounds": [
+          108,
+          173.25,
+          144,
+          191.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "1.3",
+        "bounds": [
+          48,
+          198.15,
+          84,
+          216.15
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "1",
+        "bounds": [
+          130,
+          235.5,
+          144,
+          253.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0.8",
+        "bounds": [
+          48,
+          260.4,
+          84,
+          278.4
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0.5",
+        "bounds": [
+          108,
+          297.75,
+          144,
+          315.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0.3",
+        "bounds": [
+          48,
+          322.65,
+          84,
+          340.65
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          130,
+          360.0,
+          144,
+          378.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity of U.S. dollars exchanged",
+        "bounds": [
+          352.0,
+          406,
+          754.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "A",
+        "bounds": [
+          480.40000000000003,
+          208.5,
+          498.40000000000003,
+          226.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "B",
+        "bounds": [
+          323.20000000000005,
+          146.25,
+          340.20000000000005,
+          164.25
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "MACRO-57",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-57.png",
+    "originalAssetSha256": "39dbca787eb4372c7e749a846db58f045cabc9c5ad652010080ec2775ec1e1d1"
+  }
+}

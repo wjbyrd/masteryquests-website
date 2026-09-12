@@ -1,0 +1,99 @@
+{
+  "baselineSha256": "2ed1b090e37625ad19807a88b9d2caca402208bd78bacf4a8857a1dad811bc11",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Desirable guarantees and their meanings",
+    "columnHeaders": [
+      "Meaning"
+    ],
+    "rowHeaders": [
+      "Unrestricted rankings",
+      "Consistent social ranking",
+      "Unanimity",
+      "No dictator",
+      "Independence"
+    ],
+    "cells": [
+      [
+        "Allow any consistent individual rankings."
+      ],
+      [
+        "Rank every pair without a group cycle."
+      ],
+      [
+        "Respect a comparison everyone agrees on."
+      ],
+      [
+        "No one voter always determines the ranking."
+      ],
+      [
+        "If each voter keeps A versus B unchanged, the social A-versus-B ranking stays unchanged."
+      ]
+    ],
+    "columnWidths": [
+      0.3,
+      0.7
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 350,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      432,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225,
+      270,
+      350
+    ]
+  },
+  "tableSourceSha256": "21441bb81724acc7d39a8436abbec97c3d75258ef950af5f0ee2d719e6d33ecd",
+  "graphDecodedSha256": "bab72d498127d58e1230d77e60542d737f461827d0ebff436d98dcab38b5e9af",
+  "sourceRecordSha256": "089b31e86370d84511ea69daeb42cb152576f5a85987b7578a391b446113a934",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "089b31e86370d84511ea69daeb42cb152576f5a85987b7578a391b446113a934",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "410e6000a740c4c0af07885e66a14279898c7cdcf3ccc3e1efda859a1cd1ed14",
+    "originalSourceRecordSha256": "355c40d95f8b9713a49f296042521447e4c27966351ad7a04799fd45a27b433c",
+    "changedFields": [
+      "graph",
+      "table",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "9e99c3cc2785b83385160a770f42fbc0df62362c2a2ab6cc05d80f3976833119"
+  },
+  "inlineFormulas": [],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW"
+}

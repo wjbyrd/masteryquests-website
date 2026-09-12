@@ -1,0 +1,112 @@
+{
+  "baselineSha256": "9d5940f42216ea2399aaa3ea4721289e407c358c794784cb7a16840695e0bb83",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Production possibilities and opportunity costs",
+    "columnHeaders": [
+      "Max lamps",
+      "Max rugs",
+      "Cost of 1 lamp",
+      "Cost of 1 rug"
+    ],
+    "rowHeaders": [
+      "Ari",
+      "Bea"
+    ],
+    "cells": [
+      [
+        "12",
+        "24",
+        "2 rugs",
+        "1/2 lamp"
+      ],
+      [
+        "10",
+        "60",
+        "6 rugs",
+        "1/6 lamp"
+      ]
+    ],
+    "columnWidths": [
+      0.14,
+      0.15,
+      0.15,
+      0.28,
+      0.28
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 180,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      201,
+      417,
+      633,
+      1036,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180
+    ]
+  },
+  "tableSourceSha256": "f69950b5ce9328d1770ed7c3393342182d3aa49da21862bb33279ce5d9d3093e",
+  "graphDecodedSha256": "50c26dd847fb244d8c2a2e711db08decba17d642b5b5f6b3d4d226f1bcde65ac",
+  "sourceRecordSha256": "75a18a840a29af9a09bb66126e7d713262f1aef872a1e766f3a3fa14f5ebabc7",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "75a18a840a29af9a09bb66126e7d713262f1aef872a1e766f3a3fa14f5ebabc7",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "5551859fcdae611a396864039af280c7df24e0985aa987dd742dceb28ae8181b",
+    "originalSourceRecordSha256": "24de7dd6812f37f504b0a28371f50683b0343b7948659046390de69b0b99e378",
+    "changedFields": [
+      "graph",
+      "table",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "c8f30cf76292baaf798bc7f0346e363ca134e90328ac6d72c551cb9f5317ce63"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 10,
+      "text": "24/12 = 2",
+      "alternative": "24 divided by 12  equals  2"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 39,
+      "text": "60/10 = 6",
+      "alternative": "60 divided by 10  equals  6"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 110,
+      "text": "1/6",
+      "alternative": "1 divided by 6"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 128,
+      "text": "1/2",
+      "alternative": "1 divided by 2"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": "GEN-ECON-01"
+}

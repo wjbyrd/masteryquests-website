@@ -1,0 +1,77 @@
+{
+  "baselineSha256": "2d9ca3d7fde0b4977767e710ef8aa7619607cde907dd51c3e3a6ada6b924eb63",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "sourceRecordSha256": "2f7a3605cf9036b8d355f57aea28030f6493523d105ebc75a9c6bfa11c12a52b",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "2f7a3605cf9036b8d355f57aea28030f6493523d105ebc75a9c6bfa11c12a52b",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "0f337a4e378ad20b52ae29f21002d1fcbde37b4d487462fd68f3d93557ba88bf",
+    "originalSourceRecordSha256": "2194567eb9c54ef9e20c317a8d61fbc388be0100bdeba58204a8fc145cd8dab2",
+    "changedFields": [
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "f872b2aaff87b6e31fef1f99760cb85cb4e6bb78475e5d5df5344dd778fc262a"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 21,
+      "text": "$140",
+      "alternative": "dollars 140"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 63,
+      "text": "$90",
+      "alternative": "dollars 90"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 101,
+      "text": "$50",
+      "alternative": "dollars 50"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 216,
+      "text": "$130",
+      "alternative": "dollars 130"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 264,
+      "text": "$100",
+      "alternative": "dollars 100"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 286,
+      "text": "$30",
+      "alternative": "dollars 30"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

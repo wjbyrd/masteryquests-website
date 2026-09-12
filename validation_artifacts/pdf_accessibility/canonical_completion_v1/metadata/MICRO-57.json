@@ -1,0 +1,253 @@
+{
+  "baselineSha256": "a842fffb291f408f97a51b2328924cfa284ef0dcb717170f9c83cbed88d26504",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-57.png",
+  "assetSourceSha256": "ad7d527f635e6446f43239cfd2328b7d6d34d3bf7763db65953bfcfad9586a54",
+  "graphDecodedSha256": "40067715356eff9c86f50ebcfb63289f67cadd315ca305527fc957526c960d0b",
+  "graphAlternative": "Horizontal axis: hundreds of warehouse workers; vertical axis: hourly wage in dollars. Labor Demand slopes down from wage 30 at quantity 0 to zero at 120 hundreds. Labor Supply slopes up from wage 10. They intersect at wage 20 and quantity 40 hundreds of workers, with dashed guides to both axes. Supply lies above demand to the right of that intersection.",
+  "sourceRecordSha256": "417f6a2b3e4eab6b0125ba6fd328259827a69eee13d7ae76fcbc692e2e6e2724",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "417f6a2b3e4eab6b0125ba6fd328259827a69eee13d7ae76fcbc692e2e6e2724",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "5b3e2461010279c7138e9ec34cd6f844bd14e63225767ea0ed959e1e5754ec44",
+    "originalSourceRecordSha256": "346b143727068339b277256b5a2ae9c828b7daad2f09307421580040788a8da6",
+    "changedFields": [
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "97c647663df645986d09f98e6f8f390cc9e36f20ddc8a0a3f0a41ecdbdebed49"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "core",
+      "compactStart": 130,
+      "text": "VMP = output price x MPL",
+      "alternative": "V M P equals output price times M P L"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 21,
+      "text": "$5",
+      "alternative": "dollars 5"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 66,
+      "text": "$5 x 4 = $20",
+      "alternative": "dollars 5 times 4  equals   dollars 20"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 91,
+      "text": "$20",
+      "alternative": "dollars 20"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "186571cf308fb29c309b3d2e0b2d5bfe421f3964b7ee808875ddb7667ca59b6e",
+    "labels": [
+      {
+        "text": "Labor Demand",
+        "bounds": [
+          32,
+          3,
+          204,
+          22
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Labor Supply",
+        "bounds": [
+          247.9375,
+          3,
+          400.9375,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Hourly wage ($)",
+        "bounds": [
+          160,
+          82,
+          343,
+          106
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          153.0,
+          378.0,
+          167.0,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          250.8,
+          378.0,
+          279.8,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "40",
+        "bounds": [
+          355.6,
+          378.0,
+          384.6,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "60",
+        "bounds": [
+          460.40000000000003,
+          378.0,
+          489.40000000000003,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "80",
+        "bounds": [
+          565.2,
+          378.0,
+          594.2,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "100",
+        "bounds": [
+          662.0,
+          378.0,
+          705.0,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "120",
+        "bounds": [
+          766.8000000000001,
+          378.0,
+          809.8000000000001,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "140",
+        "bounds": [
+          871.6,
+          378.0,
+          914.6,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "40",
+        "bounds": [
+          115,
+          111.0,
+          144,
+          129.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "30",
+        "bounds": [
+          115,
+          173.25,
+          144,
+          191.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          115,
+          235.5,
+          144,
+          253.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "10",
+        "bounds": [
+          115,
+          297.75,
+          144,
+          315.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          130,
+          360.0,
+          144,
+          378.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Hundreds of warehouse workers",
+        "bounds": [
+          366.0,
+          406,
+          740.0,
+          425
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "MICRO-57",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-57.png",
+    "originalAssetSha256": "ed9664c5230ffb4c0f9311ba22a5a91cb2b2adc4e70542d02b47b362783b076b"
+  }
+}

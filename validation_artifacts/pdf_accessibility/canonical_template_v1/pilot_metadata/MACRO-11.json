@@ -1,0 +1,50 @@
+{
+  "baselineSha256": "41c685c48fb8e48fa206b0ecc03b11c0ba8063214c25b476d0b059638dc28a1f",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2"
+  ],
+  "sourceRecordSha256": "bd38babf1a3904387e35e482fc308218536706a4364c12d4e2fc5f12da28fd0d",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "bd38babf1a3904387e35e482fc308218536706a4364c12d4e2fc5f12da28fd0d",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "1d6efeb09b0aa283aa77624e8b83b0d1f5a1066b95579c9d048bd48434fa97dc",
+    "originalSourceRecordSha256": "45b4ef53d6378f5837efab7d62d60bab2b3f271bfe39174caa8c7696080c3456",
+    "changedFields": [
+      "graph",
+      "recognition",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "96f37e0a8e2bc048733c8ee6c65b39ef52850dd8f234fc7d8010e4960a2dfdf6"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "core",
+      "compactStart": 105,
+      "text": "2,400 / 300 = 8",
+      "alternative": "2,400 divided by 300 equals 8"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 62,
+      "text": "2,400 / 300 = 8",
+      "alternative": "2,400  divided by  300  equals  8"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 169,
+      "text": "(9 - 8) / 8 x 100 = 12.5%",
+      "alternative": "(9 minus 8)  divided by  8 times 100  equals  12.5 percent"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": "GEN-ECON-01"
+}

@@ -1,0 +1,1349 @@
+[
+  {
+    "code": "MACRO-05",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\canonical_completion_v1\\candidates\\MACRO-05.pdf",
+    "tagCount": 67,
+    "mcids": 68,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "CPI and Inflation Measurement",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MACROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MACRO-05",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate CPI and inflation using a market basket.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "The consumer price index compares the current cost of a fixed consumer basket with its base-year cost. The index equals the current basket cost divided by the base-year basket cost, multiplied by one hundred. Inflation is the percentage change in the index between periods. Holding basket quantities fixed isolates price change from changes in what consumers buy.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "Identify the fixed basket, its base-year cost, and its current-year cost.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "Compute the price index by comparing the current basket cost with the base-year basket cost.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "Measure inflation as the percentage change in the index from one period to the next.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "Keep basket quantities fixed when calculating the CPI for different years.",
+        "node": 21
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 22
+      },
+      {
+        "role": "P",
+        "text": "Do not use the wrong basket cost or forget to multiply by 100. Divide the current cost of the fixed basket by its base-year cost; the index can rise or fall as prices change.",
+        "node": 23
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: CALCULATING CPI AND INFLATION",
+        "node": 24
+      },
+      {
+        "role": "P",
+        "text": "The fixed basket costs $80 in the base year and $98 now. CPI = ($98 / $80) x 100 = 122.5. Relative to the base-year index of 100, prices rose 22.5%. Separately, an index rising from 125 to 150 implies inflation of (150 - 125) / 125 x 100 = 20%.",
+        "node": 55
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 56
+      },
+      {
+        "role": "P",
+        "text": "A basket costs $400 in the base year and $500 today. What is today's CPI?",
+        "node": 57
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 58
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 59
+      }
+    ],
+    "layoutEvidence": {
+      "template": "GEN-ECON-01",
+      "referenceSHA256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+      "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+      "bodyFontSize": 10.45,
+      "page": [
+        612,
+        792
+      ],
+      "contentBottom": 88.00664558721337,
+      "components": [
+        {
+          "name": "header",
+          "bounds": [
+            15.84,
+            695.52,
+            596.16,
+            777.6
+          ],
+          "sourceCurve": 0
+        },
+        {
+          "name": "logo-card",
+          "bounds": [
+            37.44,
+            709.2,
+            92.16,
+            763.92
+          ],
+          "sourceCurve": 1
+        },
+        {
+          "name": "icon-logo",
+          "bounds": [
+            41.72538,
+            712.8,
+            87.87461,
+            760.3199999999999
+          ],
+          "assetSHA256": "29c30924e161c41453a1242a0cf2a1fbeb5aed231b43bc5ff4f186ec3c04ef3c"
+        },
+        {
+          "name": "resource-card",
+          "bounds": [
+            449.961,
+            717.159,
+            574.56,
+            755.96
+          ],
+          "sourceCurve": 2
+        },
+        {
+          "name": "metadata",
+          "bounds": [
+            29.52,
+            642.24,
+            582.48,
+            687.6
+          ],
+          "sourceCurve": 3
+        },
+        {
+          "name": "icon-hourglass",
+          "bounds": [
+            39.93862,
+            655.2,
+            58.76148,
+            674.6400000000001
+          ],
+          "assetSHA256": "7087150d09e119b41412caf702ed692fc7f2f92085592541348735c2346b8f61"
+        },
+        {
+          "name": "icon-target",
+          "bounds": [
+            177.18,
+            655.2,
+            196.62,
+            674.6400000000001
+          ],
+          "assetSHA256": "aa50ab412eb2f84dca29a743bbbb6c47fd1c0af255da89972dee42cd14d71f39"
+        },
+        {
+          "name": "difficulty-dots",
+          "centers": [
+            [
+              465,
+              663.6
+            ],
+            [
+              473.2,
+              663.6
+            ],
+            [
+              481.4,
+              663.6
+            ]
+          ],
+          "radius": 3.05,
+          "active": 2
+        },
+        {
+          "name": "title",
+          "baseline": 599.3574,
+          "fontSize": 32,
+          "longMode": false,
+          "bounds": [
+            72.187512,
+            592,
+            539.812488,
+            628
+          ]
+        },
+        {
+          "name": "core",
+          "bounds": [
+            79.92,
+            501.07800000000003,
+            583.2,
+            582.326
+          ]
+        },
+        {
+          "name": "icon-core",
+          "bounds": [
+            32.56744,
+            544.166,
+            68.95256,
+            582.326
+          ],
+          "assetSHA256": "057882bd5ed3933fd0fe00572a696d157f553accfd155a27f37c4d26a5d28481"
+        },
+        {
+          "name": "recognition",
+          "bounds": [
+            79.92,
+            406.69000000000005,
+            583.2,
+            491.07800000000003
+          ]
+        },
+        {
+          "name": "icon-recognition",
+          "bounds": [
+            32.98091,
+            452.918,
+            68.53909,
+            491.07800000000003
+          ],
+          "assetSHA256": "2417d7822a37aa9636a50c821b4e11fa9793d5f50b792ddcd2d0d54797dd7e5a"
+        },
+        {
+          "name": "watch",
+          "bounds": [
+            79.92,
+            328.124,
+            583.2,
+            396.69000000000005
+          ],
+          "fill": [
+            0.918,
+            0.973,
+            0.973
+          ],
+          "stroke": [
+            0.071,
+            0.686,
+            0.663
+          ],
+          "strokeWidth": 1.05,
+          "radius": 8
+        },
+        {
+          "name": "icon-watch",
+          "bounds": [
+            32.56744,
+            358.5300000000001,
+            68.95256,
+            396.69000000000005
+          ],
+          "assetSHA256": "cc44af415e44bd1632d616d7a41417496c170776d934b8f31f3a9b451a0ce151"
+        },
+        {
+          "name": "worked",
+          "bounds": [
+            79.92,
+            153.19664558721337,
+            583.2,
+            318.124
+          ],
+          "fill": [
+            1,
+            1,
+            1
+          ],
+          "stroke": [
+            0.031,
+            0.157,
+            0.373
+          ],
+          "strokeWidth": 1.05,
+          "radius": 8
+        },
+        {
+          "name": "icon-worked",
+          "bounds": [
+            31.68,
+            279.964,
+            69.84,
+            318.124
+          ],
+          "assetSHA256": "8f987f2c7eed462f88380699dbb93fad0e9457637aca446493ace4f189b7ed48"
+        },
+        {
+          "name": "table",
+          "bounds": [
+            91.77365,
+            206.49864558721333,
+            571.34665,
+            281.484
+          ],
+          "pixelWidth": 1439,
+          "pixelHeight": 225
+        },
+        {
+          "name": "check",
+          "bounds": [
+            79.92,
+            88.00664558721337,
+            583.2,
+            143.19664558721337
+          ],
+          "fill": [
+            0.918,
+            0.973,
+            0.973
+          ],
+          "stroke": [
+            0.071,
+            0.686,
+            0.663
+          ],
+          "strokeWidth": 1.05,
+          "radius": 8
+        },
+        {
+          "name": "icon-check",
+          "bounds": [
+            32.99586,
+            105.03664558721337,
+            68.52414,
+            143.19664558721337
+          ],
+          "assetSHA256": "8e42454c430b969f4fa9d74d2e6e76873c0ab8e54e0822d80d0111e3bfdf962e"
+        },
+        {
+          "name": "footer",
+          "bounds": [
+            16.0,
+            15.0,
+            596.0,
+            56.0
+          ],
+          "sourceCurve": 10
+        },
+        {
+          "name": "footer-arrow-circle",
+          "bounds": [
+            82.5,
+            26.0,
+            101.5,
+            45.0
+          ],
+          "sourceCurve": 11
+        }
+      ],
+      "textBounds": [
+        [
+          105.12,
+          721.2573,
+          444.12,
+          751.7673000000001
+        ],
+        [
+          475.70321226404997,
+          728.6260100000001,
+          548.82778773595,
+          744.4454450000001
+        ],
+        [
+          64.47,
+          657.80721,
+          94.35,
+          669.558645
+        ],
+        [
+          94.35,
+          657.80721,
+          162.35,
+          669.558645
+        ],
+        [
+          405.42,
+          658.1499650000001,
+          459.42,
+          669.3361175
+        ],
+        [
+          489.7,
+          658.5429,
+          573.7,
+          669.3344000000001
+        ],
+        [
+          72.187512,
+          592.3174,
+          539.822488,
+          628.4774
+        ],
+        [
+          80.44425,
+          563.1336,
+          583.72425,
+          581.4395999999999
+        ],
+        [
+          80.44365,
+          501.079,
+          583.72365,
+          553.0155
+        ],
+        [
+          80.44425,
+          471.8856,
+          583.72425,
+          490.19160000000005
+        ],
+        [
+          87.6249,
+          451.28900000000004,
+          94.6249,
+          463.0975
+        ],
+        [
+          94.8,
+          451.28900000000004,
+          583.1999999999999,
+          463.0975
+        ],
+        [
+          87.6249,
+          436.42300000000006,
+          94.6249,
+          448.23150000000004
+        ],
+        [
+          94.8,
+          436.42300000000006,
+          583.1999999999999,
+          448.23150000000004
+        ],
+        [
+          87.6249,
+          421.5570000000001,
+          94.6249,
+          433.36550000000005
+        ],
+        [
+          94.8,
+          421.5570000000001,
+          583.1999999999999,
+          433.36550000000005
+        ],
+        [
+          87.6249,
+          406.6910000000001,
+          94.6249,
+          418.49950000000007
+        ],
+        [
+          94.8,
+          406.6910000000001,
+          583.1999999999999,
+          418.49950000000007
+        ],
+        [
+          91.77075,
+          368.77790000000005,
+          571.34375,
+          386.85790000000003
+        ],
+        [
+          91.77365,
+          333.92500000000007,
+          571.34665,
+          359.1095
+        ],
+        [
+          91.77075,
+          290.2119,
+          571.34375,
+          308.2919
+        ],
+        [
+          91.77365,
+          158.99764558721333,
+          571.34665,
+          197.55814558721335
+        ],
+        [
+          91.77075,
+          115.28454558721337,
+          571.34375,
+          133.36454558721337
+        ],
+        [
+          91.77365,
+          93.80764558721336,
+          571.34665,
+          105.61614558721337
+        ],
+        [
+          109,
+          24.98,
+          199,
+          43.06
+        ],
+        [
+          207,
+          27.77,
+          582,
+          40.765
+        ]
+      ],
+      "panelTextBounds": [
+        {
+          "panel": "watch",
+          "bounds": [
+            91.77075,
+            368.77790000000005,
+            571.34375,
+            386.85790000000003
+          ]
+        },
+        {
+          "panel": "watch",
+          "bounds": [
+            91.77365,
+            333.92500000000007,
+            571.34665,
+            359.1095
+          ]
+        },
+        {
+          "panel": "worked",
+          "bounds": [
+            91.77075,
+            290.2119,
+            571.34375,
+            308.2919
+          ]
+        },
+        {
+          "panel": "worked",
+          "bounds": [
+            91.77365,
+            158.99764558721333,
+            571.34665,
+            197.55814558721335
+          ]
+        },
+        {
+          "panel": "check",
+          "bounds": [
+            91.77075,
+            115.28454558721337,
+            571.34375,
+            133.36454558721337
+          ]
+        },
+        {
+          "panel": "check",
+          "bounds": [
+            91.77365,
+            93.80764558721336,
+            571.34665,
+            105.61614558721337
+          ]
+        }
+      ],
+      "layoutMode": "FULL-WIDTH TABLE",
+      "exceptions": [
+        {
+          "component": "spacing",
+          "reason": "Dense frozen content",
+          "gap": 10
+        }
+      ],
+      "budget": {
+        "available": 505,
+        "required": 494.31935441278665,
+        "header": 82.08,
+        "metadata": 45.36,
+        "titleMode": "STANDARD",
+        "sectionHeights": {
+          "core": 81.248,
+          "recognition": 84.388,
+          "watch": 68.566,
+          "worked": 164.92735441278666,
+          "check": 55.190000000000005
+        },
+        "gaps": 40,
+        "footer": 41,
+        "bodyFont": 10.45,
+        "interiorMode": "FULL-WIDTH TABLE"
+      },
+      "denseEvidence": null,
+      "tableTextPt": 9.664779013203614,
+      "clipping": "PENDING_RENDER_REVIEW",
+      "styleAuthority": "GEN-ECON-01",
+      "contentAuthority": "v2/v3"
+    },
+    "deterministic": true,
+    "determinismRebuild": "tmp/pdf_accessibility/canonical_completion_v1/rebuild/MACRO-05.pdf",
+    "fidelityErrors": []
+  },
+  {
+    "code": "MACRO-41",
+    "status": "EXPERIMENTAL_CANDIDATE",
+    "output": "tmp\\pdf_accessibility\\canonical_completion_v1\\candidates\\MACRO-41.pdf",
+    "tagCount": 64,
+    "mcids": 63,
+    "unassignedMeaningfulBlocks": 0,
+    "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+    "transcript": [
+      {
+        "role": "H1",
+        "text": "Sacrifice Ratio",
+        "node": 0
+      },
+      {
+        "role": "P",
+        "text": "MACROECONOMICS",
+        "node": 1
+      },
+      {
+        "role": "P",
+        "text": "MACRO-41",
+        "node": 2
+      },
+      {
+        "role": "P",
+        "text": "Time: 5 minutes",
+        "node": 3
+      },
+      {
+        "role": "P",
+        "text": "Outcome: Calculate and interpret output losses associated with disinflation.",
+        "node": 4
+      },
+      {
+        "role": "P",
+        "text": "Difficulty: Intermediate",
+        "node": 5
+      },
+      {
+        "role": "H2",
+        "text": "THE CORE IDEA",
+        "node": 6
+      },
+      {
+        "role": "P",
+        "text": "The sacrifice ratio measures cumulative output lost for each percentage-point reduction in inflation. Credibility can speed expectations adjustment, but disinflation costs depend on model assumptions and wage-price adjustment. The preferred path depends on credibility, expectations, adjustment speed, uncertainty, and cumulative costs. The sacrifice ratio measures how much output is lost when inflation is reduced. If expected inflation falls faster, the short-run cost of disinflation can be smaller.",
+        "node": 7
+      },
+      {
+        "role": "H2",
+        "text": "HOW TO RECOGNIZE IT",
+        "node": 8
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 11
+      },
+      {
+        "role": "LBody",
+        "text": "The sacrifice ratio measures how much output is lost when inflation is reduced.",
+        "node": 12
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 14
+      },
+      {
+        "role": "LBody",
+        "text": "If expected inflation falls faster, the short-run cost of disinflation can be smaller.",
+        "node": 15
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 17
+      },
+      {
+        "role": "LBody",
+        "text": "The sacrifice ratio measures cumulative output loss per percentage-point reduction in inflation.",
+        "node": 18
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 20
+      },
+      {
+        "role": "LBody",
+        "text": "A disinflation has a lower sacrifice ratio than another.",
+        "node": 21
+      },
+      {
+        "role": "Lbl",
+        "text": "•",
+        "node": 23
+      },
+      {
+        "role": "LBody",
+        "text": "Faster adjustment of expected inflation reduces the output cost of disinflation.",
+        "node": 24
+      },
+      {
+        "role": "H2",
+        "text": "WATCH OUT",
+        "node": 25
+      },
+      {
+        "role": "P",
+        "text": "A common mistake is to divide the dollar output loss directly by the inflation change. First express the loss as a percentage of potential output, then divide by the percentage-point reduction in inflation.",
+        "node": 26
+      },
+      {
+        "role": "H2",
+        "text": "WORKED EXAMPLE: CALCULATING THE SACRIFICE RATIO",
+        "node": 27
+      },
+      {
+        "role": "P",
+        "text": "Each year loses $12 billion relative to $400 billion potential output, a 3% gap. Add the two annual gaps: cumulative loss is 6% of one year's potential output. Inflation falls by 3 percentage points, so the sacrifice ratio is 6 / 3 = 2. Keep percentage output losses distinct from percentage-point inflation changes.",
+        "node": 54
+      },
+      {
+        "role": "H2",
+        "text": "CHECK YOURSELF",
+        "node": 55
+      },
+      {
+        "role": "P",
+        "text": "Should annual output gaps be added before calculating a multi-year sacrifice ratio?",
+        "node": 56
+      },
+      {
+        "role": "H2",
+        "text": "READY?",
+        "node": 57
+      },
+      {
+        "role": "P",
+        "text": "Return to the game and master this concept.",
+        "node": 58
+      }
+    ],
+    "layoutEvidence": {
+      "template": "GEN-ECON-01",
+      "referenceSHA256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+      "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+      "bodyFontSize": 10.4,
+      "page": [
+        612,
+        792
+      ],
+      "contentBottom": 70.53644558721332,
+      "components": [
+        {
+          "name": "header",
+          "bounds": [
+            15.84,
+            695.52,
+            596.16,
+            777.6
+          ],
+          "sourceCurve": 0
+        },
+        {
+          "name": "logo-card",
+          "bounds": [
+            37.44,
+            709.2,
+            92.16,
+            763.92
+          ],
+          "sourceCurve": 1
+        },
+        {
+          "name": "icon-logo",
+          "bounds": [
+            41.72538,
+            712.8,
+            87.87461,
+            760.3199999999999
+          ],
+          "assetSHA256": "29c30924e161c41453a1242a0cf2a1fbeb5aed231b43bc5ff4f186ec3c04ef3c"
+        },
+        {
+          "name": "resource-card",
+          "bounds": [
+            449.961,
+            717.159,
+            574.56,
+            755.96
+          ],
+          "sourceCurve": 2
+        },
+        {
+          "name": "metadata",
+          "bounds": [
+            29.52,
+            642.24,
+            582.48,
+            687.6
+          ],
+          "sourceCurve": 3
+        },
+        {
+          "name": "icon-hourglass",
+          "bounds": [
+            39.93862,
+            655.2,
+            58.76148,
+            674.6400000000001
+          ],
+          "assetSHA256": "7087150d09e119b41412caf702ed692fc7f2f92085592541348735c2346b8f61"
+        },
+        {
+          "name": "icon-target",
+          "bounds": [
+            177.18,
+            655.2,
+            196.62,
+            674.6400000000001
+          ],
+          "assetSHA256": "aa50ab412eb2f84dca29a743bbbb6c47fd1c0af255da89972dee42cd14d71f39"
+        },
+        {
+          "name": "difficulty-dots",
+          "centers": [
+            [
+              465,
+              663.6
+            ],
+            [
+              473.2,
+              663.6
+            ],
+            [
+              481.4,
+              663.6
+            ]
+          ],
+          "radius": 3.05,
+          "active": 2
+        },
+        {
+          "name": "title",
+          "baseline": 599.3574,
+          "fontSize": 32,
+          "longMode": false,
+          "bounds": [
+            194.8437552,
+            592,
+            417.15624479999997,
+            628
+          ]
+        },
+        {
+          "name": "core",
+          "bounds": [
+            79.92,
+            491.286,
+            583.2,
+            582.326
+          ]
+        },
+        {
+          "name": "icon-core",
+          "bounds": [
+            32.56744,
+            544.166,
+            68.95256,
+            582.326
+          ],
+          "assetSHA256": "057882bd5ed3933fd0fe00572a696d157f553accfd155a27f37c4d26a5d28481"
+        },
+        {
+          "name": "recognition",
+          "bounds": [
+            79.92,
+            385.616,
+            583.2,
+            481.286
+          ]
+        },
+        {
+          "name": "icon-recognition",
+          "bounds": [
+            32.98091,
+            443.126,
+            68.53909,
+            481.286
+          ],
+          "assetSHA256": "2417d7822a37aa9636a50c821b4e11fa9793d5f50b792ddcd2d0d54797dd7e5a"
+        },
+        {
+          "name": "watch",
+          "bounds": [
+            79.92,
+            314.6439,
+            583.2,
+            375.616
+          ],
+          "fill": [
+            0.918,
+            0.973,
+            0.973
+          ],
+          "stroke": [
+            0.071,
+            0.686,
+            0.663
+          ],
+          "strokeWidth": 1.05,
+          "radius": 8
+        },
+        {
+          "name": "icon-watch",
+          "bounds": [
+            32.56744,
+            337.456,
+            68.95256,
+            375.616
+          ],
+          "assetSHA256": "cc44af415e44bd1632d616d7a41417496c170776d934b8f31f3a9b451a0ce151"
+        },
+        {
+          "name": "worked",
+          "bounds": [
+            79.92,
+            129.02854558721333,
+            583.2,
+            304.6439
+          ],
+          "fill": [
+            1,
+            1,
+            1
+          ],
+          "stroke": [
+            0.031,
+            0.157,
+            0.373
+          ],
+          "strokeWidth": 1.05,
+          "radius": 8
+        },
+        {
+          "name": "icon-worked",
+          "bounds": [
+            31.68,
+            266.48389999999995,
+            69.84,
+            304.6439
+          ],
+          "assetSHA256": "8f987f2c7eed462f88380699dbb93fad0e9457637aca446493ace4f189b7ed48"
+        },
+        {
+          "name": "table",
+          "bounds": [
+            91.77365,
+            192.96854558721333,
+            571.34665,
+            267.9539
+          ],
+          "pixelWidth": 1439,
+          "pixelHeight": 225
+        },
+        {
+          "name": "check",
+          "bounds": [
+            79.92,
+            70.53644558721332,
+            583.2,
+            119.02854558721333
+          ],
+          "fill": [
+            0.918,
+            0.973,
+            0.973
+          ],
+          "stroke": [
+            0.071,
+            0.686,
+            0.663
+          ],
+          "strokeWidth": 1.05,
+          "radius": 8
+        },
+        {
+          "name": "icon-check",
+          "bounds": [
+            32.99586,
+            80.86854558721333,
+            68.52414,
+            119.02854558721333
+          ],
+          "assetSHA256": "8e42454c430b969f4fa9d74d2e6e76873c0ab8e54e0822d80d0111e3bfdf962e"
+        },
+        {
+          "name": "footer",
+          "bounds": [
+            16.0,
+            15.0,
+            596.0,
+            56.0
+          ],
+          "sourceCurve": 10
+        },
+        {
+          "name": "footer-arrow-circle",
+          "bounds": [
+            82.5,
+            26.0,
+            101.5,
+            45.0
+          ],
+          "sourceCurve": 11
+        }
+      ],
+      "textBounds": [
+        [
+          105.12,
+          721.2573,
+          444.12,
+          751.7673000000001
+        ],
+        [
+          475.70321226404997,
+          728.6260100000001,
+          548.82778773595,
+          744.4454450000001
+        ],
+        [
+          64.47,
+          657.80721,
+          94.35,
+          669.558645
+        ],
+        [
+          94.35,
+          657.80721,
+          162.35,
+          669.558645
+        ],
+        [
+          405.42,
+          658.1499650000001,
+          459.42,
+          669.3361175
+        ],
+        [
+          489.7,
+          658.5429,
+          573.7,
+          669.3344000000001
+        ],
+        [
+          194.8437552,
+          592.3174,
+          417.16624479999996,
+          628.4774
+        ],
+        [
+          80.44425,
+          563.1336,
+          583.72425,
+          581.4395999999999
+        ],
+        [
+          80.44365,
+          491.29799999999994,
+          583.72365,
+          552.97
+        ],
+        [
+          80.44425,
+          462.0936,
+          583.72425,
+          480.3996
+        ],
+        [
+          87.6249,
+          441.508,
+          94.6249,
+          453.26
+        ],
+        [
+          94.8,
+          441.508,
+          583.1999999999999,
+          453.26
+        ],
+        [
+          87.6249,
+          427.53799999999995,
+          94.6249,
+          439.28999999999996
+        ],
+        [
+          94.8,
+          427.53799999999995,
+          583.1999999999999,
+          439.28999999999996
+        ],
+        [
+          87.6249,
+          413.5679999999999,
+          94.6249,
+          425.31999999999994
+        ],
+        [
+          94.8,
+          413.5679999999999,
+          583.1999999999999,
+          425.31999999999994
+        ],
+        [
+          87.6249,
+          399.5979999999999,
+          94.6249,
+          411.3499999999999
+        ],
+        [
+          94.8,
+          399.5979999999999,
+          583.1999999999999,
+          411.3499999999999
+        ],
+        [
+          87.6249,
+          385.6279999999999,
+          94.6249,
+          397.3799999999999
+        ],
+        [
+          94.8,
+          385.6279999999999,
+          583.1999999999999,
+          397.3799999999999
+        ],
+        [
+          91.77075,
+          347.7039,
+          571.34375,
+          365.78389999999996
+        ],
+        [
+          91.77365,
+          320.45589999999993,
+          571.34665,
+          344.68789999999996
+        ],
+        [
+          91.77075,
+          276.7318,
+          571.34375,
+          294.8118
+        ],
+        [
+          91.77365,
+          134.84054558721334,
+          571.34665,
+          184.03254558721335
+        ],
+        [
+          91.77075,
+          91.11644558721333,
+          571.34375,
+          109.19644558721333
+        ],
+        [
+          91.77365,
+          76.34844558721333,
+          571.34665,
+          88.10044558721333
+        ],
+        [
+          109,
+          24.98,
+          199,
+          43.06
+        ],
+        [
+          207,
+          27.77,
+          582,
+          40.765
+        ]
+      ],
+      "panelTextBounds": [
+        {
+          "panel": "watch",
+          "bounds": [
+            91.77075,
+            347.7039,
+            571.34375,
+            365.78389999999996
+          ]
+        },
+        {
+          "panel": "watch",
+          "bounds": [
+            91.77365,
+            320.45589999999993,
+            571.34665,
+            344.68789999999996
+          ]
+        },
+        {
+          "panel": "worked",
+          "bounds": [
+            91.77075,
+            276.7318,
+            571.34375,
+            294.8118
+          ]
+        },
+        {
+          "panel": "worked",
+          "bounds": [
+            91.77365,
+            134.84054558721334,
+            571.34665,
+            184.03254558721335
+          ]
+        },
+        {
+          "panel": "check",
+          "bounds": [
+            91.77075,
+            91.11644558721333,
+            571.34375,
+            109.19644558721333
+          ]
+        },
+        {
+          "panel": "check",
+          "bounds": [
+            91.77365,
+            76.34844558721333,
+            571.34665,
+            88.10044558721333
+          ]
+        }
+      ],
+      "layoutMode": "FULL-WIDTH TABLE",
+      "exceptions": [
+        {
+          "component": "spacing",
+          "reason": "Dense frozen content",
+          "gap": 10
+        },
+        {
+          "component": "body",
+          "reason": "Dense frozen content",
+          "size": 10.4
+        }
+      ],
+      "budget": {
+        "available": 512.326,
+        "required": 511.78955441278663,
+        "header": 82.08,
+        "metadata": 45.36,
+        "titleMode": "STANDARD",
+        "sectionHeights": {
+          "core": 91.04,
+          "recognition": 95.67,
+          "watch": 60.9721,
+          "worked": 175.61535441278664,
+          "check": 48.49210000000001
+        },
+        "gaps": 40,
+        "footer": 41,
+        "bodyFont": 10.4,
+        "interiorMode": "FULL-WIDTH TABLE"
+      },
+      "denseEvidence": null,
+      "tableTextPt": 9.664779013203614,
+      "clipping": "PENDING_RENDER_REVIEW",
+      "styleAuthority": "GEN-ECON-01",
+      "contentAuthority": "v2/v3"
+    },
+    "deterministic": true,
+    "determinismRebuild": "tmp/pdf_accessibility/canonical_completion_v1/rebuild/MACRO-41.pdf",
+    "fidelityErrors": []
+  }
+]

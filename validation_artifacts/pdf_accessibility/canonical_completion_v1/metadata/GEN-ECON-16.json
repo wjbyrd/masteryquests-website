@@ -1,0 +1,214 @@
+{
+  "baselineSha256": "277188fd9ce7764d6a52483424e4a59daa9b7d24e547f1ce6ff5ca03f0adc088",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/GEN-ECON-16.png",
+  "assetSourceSha256": "8169f766c1d937de9653b1c759868cf88262a7a01e6ba0219e361d0e446d0df4",
+  "graphDecodedSha256": "bb4c97324f5cb4cd6f22340cee30b4caf1250f60e35e3ca16d2abee9941da496",
+  "graphAlternative": "Price in dollars is vertical; quantity in thousands is horizontal. Downward demand and upward supply intersect at E, quantity 150 and price 5. No curve shifts are shown. Above 5 supply exceeds demand; below 5 demand exceeds supply.",
+  "sourceRecordSha256": "2c164c8499b02456921239f4ec3a3425ad8402c1923ac3c331c2d3a49c173065",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "2c164c8499b02456921239f4ec3a3425ad8402c1923ac3c331c2d3a49c173065",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "467a8f83cadecf35d426a6cdd94034ba5b84d11551a3e61b3b72650c57c8af6e",
+    "originalSourceRecordSha256": "605932f3532a587709ebf273958216584702dad1a086f94c3bd843818292fe60",
+    "changedFields": [
+      "check",
+      "graph",
+      "graphSpec",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "78a30058b8ccddfb864c26c86ebbc9c1e364b83c7a98b2dd58a7a56bdbea41ae"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 34,
+      "text": "$5",
+      "alternative": "dollars 5"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 122,
+      "text": "$5",
+      "alternative": "dollars 5"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 151,
+      "text": "$5",
+      "alternative": "dollars 5"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 13,
+      "text": "$5",
+      "alternative": "dollars 5"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "bc52677128db2c8c1de80ea89df27ecc49e62e568f787758294c3ebe30e75d6f",
+    "labels": [
+      {
+        "text": "Demand",
+        "bounds": [
+          32,
+          3,
+          130,
+          22
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Supply",
+        "bounds": [
+          174.25,
+          3,
+          253.25,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price ($)",
+        "bounds": [
+          110,
+          108,
+          208,
+          132
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          103,
+          377.0,
+          117,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "150",
+        "bounds": [
+          506.0,
+          377.0,
+          549.0,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "300",
+        "bounds": [
+          911,
+          377.0,
+          954,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "11",
+        "bounds": [
+          65,
+          137.0,
+          94,
+          155.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "8.25",
+        "bounds": [
+          43,
+          192.75,
+          94,
+          210.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "5.5",
+        "bounds": [
+          58,
+          248.5,
+          94,
+          266.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "2.75",
+        "bounds": [
+          43,
+          304.25,
+          94,
+          322.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          80,
+          360.0,
+          94,
+          378.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity (thousands)",
+        "bounds": [
+          407.0,
+          406,
+          648.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "E (150, 5)",
+        "bounds": [
+          533.0,
+          236.63636363636363,
+          647.0,
+          260.6363636363636
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "equilibrium"
+  }
+}

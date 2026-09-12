@@ -1,0 +1,278 @@
+{
+  "baselineSha256": "a6b33a7043dfea25324df9653cb46e525deef9f33dfe8c0f216d5bebba76816b",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/GEN-ECON-22.png",
+  "assetSourceSha256": "881d039b16ab9d4da0656da64f7b3ee04fc0d6e59fd51157275ed994750fa2e2",
+  "graphDecodedSha256": "e85db70e3036c3e03862367e48fc7c34377ee10aedfe09a5fef7c95b5cdc108c",
+  "graphAlternative": "Price vertical and quantity horizontal. Demand is P = 35 minus 0.2 Q; supply is P = 5 plus 0.1 Q. Initially quantity 100 and price 15. A 6 dollar tax shifts supply up to P = 11 plus 0.1 Q. New quantity 80, buyer price 19, seller receipt 13. Buyers bear 4 and sellers 2 per unit; demand is less elastic at the initial equilibrium.",
+  "sourceRecordSha256": "edc371202e7775a2da529bc5aba01c0681cae82a65b291209a15cd5bb6eb9881",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "edc371202e7775a2da529bc5aba01c0681cae82a65b291209a15cd5bb6eb9881",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "3ac85a9559c881a144e9ae76ceefec370547818652618336fad209533143e923",
+    "originalSourceRecordSha256": "059a258f7a4516a505916cc779618fe8c00bdcfdda3fb6312893a50a91b44cbe",
+    "changedFields": [
+      "graph",
+      "graphSpec",
+      "watch",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "11c634a8136b7d1a87d1b3912f929492bc39aa1dced499cd41fdaa495c4785e5"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 17,
+      "text": "$15",
+      "alternative": "dollars 15"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 38,
+      "text": "$6",
+      "alternative": "dollars 6"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 72,
+      "text": "$19",
+      "alternative": "dollars 19"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 92,
+      "text": "$13",
+      "alternative": "dollars 13"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 106,
+      "text": "$4",
+      "alternative": "dollars 4"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 118,
+      "text": "$320,",
+      "alternative": "dollars 320,"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 139,
+      "text": "$2",
+      "alternative": "dollars 2"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 151,
+      "text": "$160",
+      "alternative": "dollars 160"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "611c195ba7d725e5125f55e6fff5113d5af7a77572d6937d0c166f8a07e275c7",
+    "labels": [
+      {
+        "text": "Demand",
+        "bounds": [
+          32,
+          3,
+          130,
+          22
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Supply",
+        "bounds": [
+          174.25,
+          3,
+          253.25,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Supply + $6 tax",
+        "bounds": [
+          297.734375,
+          3,
+          477.734375,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price ($)",
+        "bounds": [
+          110,
+          108,
+          208,
+          132
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          103,
+          377.0,
+          117,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "80",
+        "bounds": [
+          527.483870967742,
+          377.0,
+          556.483870967742,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "100",
+        "bounds": [
+          627.3548387096774,
+          377.0,
+          670.3548387096774,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "150",
+        "bounds": [
+          897.0322580645161,
+          377.0,
+          940.0322580645161,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "37",
+        "bounds": [
+          65,
+          137.0,
+          94,
+          155.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "27.75",
+        "bounds": [
+          29,
+          192.75,
+          94,
+          210.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "18.5",
+        "bounds": [
+          43,
+          248.5,
+          94,
+          266.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "9.25",
+        "bounds": [
+          43,
+          304.25,
+          94,
+          322.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          80,
+          360.0,
+          94,
+          378.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity",
+        "bounds": [
+          480.0,
+          406,
+          577.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Before (100, 15)",
+        "bounds": [
+          657.3548387096774,
+          296.5945945945946,
+          845.3548387096774,
+          320.5945945945946
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Buyers pay 19",
+        "bounds": [
+          546.483870967742,
+          223.4864864864865,
+          712.483870967742,
+          246.4864864864865
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Sellers receive 13",
+        "bounds": [
+          421.48387096774195,
+          310.64864864864865,
+          628.483870967742,
+          329.64864864864865
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "tax_incidence"
+  }
+}

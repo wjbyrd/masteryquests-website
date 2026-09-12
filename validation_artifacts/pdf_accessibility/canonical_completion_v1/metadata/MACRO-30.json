@@ -1,0 +1,188 @@
+{
+  "baselineSha256": "34052024c1c5d3640f3e3dfb48f551d2f9efdf0d8559bcead9ff34ddcd2785bc",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MACRO-30.png",
+  "assetSourceSha256": "47816e9ff694d783d894c0b4f8bbb2bc2941d46bab4e993eff5b28b109c5000d",
+  "graphDecodedSha256": "ae5df3d73f4e52d8bf76f80ea13907db2ee390ba364bc3f7c29e111c7d224e58",
+  "graphAlternative": "Price level vertical and real output demanded horizontal. AD2 lies right of AD1. At the same price level P, quantity demanded rises from Y1 to Y2 after expansionary fiscal action. Only two AD curves are shown; the graph does not determine the new AD-AS equilibrium or a multiplier magnitude.",
+  "sourceRecordSha256": "5bb3d65c7ac4f0a94e14090a4078b249026349fab3de0265dbe0866a36a8189a",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "5bb3d65c7ac4f0a94e14090a4078b249026349fab3de0265dbe0866a36a8189a",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "13419d45407750e14070ab49554bf736207c543a6bfb8273bad07f7d6d5716f3",
+    "originalSourceRecordSha256": "f0ffdadd44c48f10ac091802d8c014e3d617ab120cea2de7fa33dfc3e17a05f5",
+    "changedFields": [
+      "graph",
+      "graphSpec",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "da96d0c1c311e8591992efb5955a4e4ba8662b8989bd6c5a73c12ef9edb480b4"
+  },
+  "inlineFormulas": [],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "7f9d55baf919f15c65997c24af6ea03cff44565bce3356eda6c9eba6dc60a014",
+    "labels": [
+      {
+        "text": "AD1",
+        "bounds": [
+          32,
+          3,
+          83,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "AD2",
+        "bounds": [
+          126.578125,
+          3,
+          177.578125,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price level (P)",
+        "bounds": [
+          110,
+          108,
+          272,
+          132
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          103,
+          377.0,
+          117,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "100",
+        "bounds": [
+          409.53846153846155,
+          377.0,
+          452.53846153846155,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "150",
+        "bounds": [
+          570.3076923076923,
+          377.0,
+          613.3076923076923,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "250",
+        "bounds": [
+          891.8461538461538,
+          377.0,
+          934.8461538461538,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "200",
+        "bounds": [
+          51,
+          181.6,
+          94,
+          199.6
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "100",
+        "bounds": [
+          51,
+          270.8,
+          94,
+          288.8
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          80,
+          360.0,
+          94,
+          378.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Real output demanded (Y)",
+        "bounds": [
+          376.0,
+          406,
+          681.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Y1",
+        "bounds": [
+          407.53846153846155,
+          301.8,
+          439.53846153846155,
+          319.8
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Y2",
+        "bounds": [
+          597.3076923076923,
+          248.8,
+          629.3076923076923,
+          266.8
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "fiscal_ad"
+  }
+}

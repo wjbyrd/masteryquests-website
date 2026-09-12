@@ -1,0 +1,257 @@
+{
+  "baselineSha256": "24a93b259f112f5721392c8f587224ba98dd098e59f24e07bed7e915f018a917",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-02.png",
+  "assetSourceSha256": "80be31a892db3145715eb76ef7d510e723a74b004af778add7eb233e64f6a706",
+  "graphDecodedSha256": "e9a9e20948b071a0e5568b7f24ec1fc1945937efb05b3a0f37454b11c23186f1",
+  "graphAlternative": "Horizontal axis: quantity; vertical axis: price in dollars. Demand slopes down. Supply slopes up, intersecting demand at quantity 100 and price 15. A parallel Supply + tax curve above supply intersects demand at quantity 80 and price 18. At quantity 80, original supply is at price 12. Dashed guides also mark prices 10 and 20 and quantities 65, 120 and 150.",
+  "sourceRecordSha256": "8090dcb15e7c5a965bdac7efba8b6628dda115c324997f2b1d06eb923a620db9",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "8090dcb15e7c5a965bdac7efba8b6628dda115c324997f2b1d06eb923a620db9",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "e41501e66b4323309f23249cfda21b8d840cdbf63e644baaceb7407541248a15",
+    "originalSourceRecordSha256": "6e11e94edc25772ae517d369c24d79ddf50ea36f7a93e61f483229d1b88e247b",
+    "changedFields": [
+      "watch"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "242bb8dccf4b49a7cc94d2f4d67955f0db48869eda5969bd38f9497ac074b1ff"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 23,
+      "text": "$15",
+      "alternative": "15 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 58,
+      "text": "$18",
+      "alternative": "18 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 76,
+      "text": "$12",
+      "alternative": "12 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 114,
+      "text": "$18 - $12 = $6",
+      "alternative": "18 dollars minus 12 dollars equals 6 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 153,
+      "text": "$6 x 80 = $480",
+      "alternative": "6 dollars times 80 equals 480 dollars"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 78,
+      "text": "$6",
+      "alternative": "dollars 6"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 9,
+      "text": "$18",
+      "alternative": "18 dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 38,
+      "text": "$12",
+      "alternative": "12 dollars"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "8f9d249fbe9e4475dd96b96c6d4f68d990ad84fcf1979c2ca18e76bb9a66bb86",
+    "labels": [
+      {
+        "text": "Demand",
+        "bounds": [
+          32,
+          3,
+          130,
+          22
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Supply",
+        "bounds": [
+          174.25,
+          3,
+          253.25,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Supply + tax",
+        "bounds": [
+          297.734375,
+          3,
+          441.734375,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price",
+        "bounds": [
+          160,
+          82,
+          219,
+          101
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "65",
+        "bounds": [
+          327.38461538461536,
+          378.0,
+          356.38461538461536,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "80",
+        "bounds": [
+          418.0769230769231,
+          378.0,
+          447.0769230769231,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "100",
+        "bounds": [
+          531.0,
+          378.0,
+          574.0,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "120",
+        "bounds": [
+          651.9230769230769,
+          378.0,
+          694.9230769230769,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "150",
+        "bounds": [
+          833.3076923076923,
+          378.0,
+          876.3076923076923,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$20",
+        "bounds": [
+          101,
+          167.46153846153845,
+          144,
+          188.46153846153845
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$18",
+        "bounds": [
+          101,
+          196.46153846153845,
+          144,
+          217.46153846153845
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$15",
+        "bounds": [
+          101,
+          225.46153846153845,
+          144,
+          246.46153846153845
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$12",
+        "bounds": [
+          101,
+          254.46153846153845,
+          144,
+          275.46153846153845
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$10",
+        "bounds": [
+          101,
+          283.46153846153845,
+          144,
+          304.46153846153845
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity",
+        "bounds": [
+          505.0,
+          406,
+          602.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "MICRO-02",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-02.png",
+    "originalAssetSha256": "4827a146e45ce021483480e98e21c566b93cbd994a4282b45435a5e45e5e712f"
+  }
+}

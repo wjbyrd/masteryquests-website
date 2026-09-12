@@ -31,9 +31,23 @@ def validate_source_binding(source,meta):
     if sha(QA+'/REVIEW_CHECKLIST.csv')!=b.get('qaChecklistSha256'):errors.append('STALE_QA_QUEUE')
     if source['content'].get('table')!=meta.get('tableSource'):errors.append('QA_TABLE_SOURCE_MISMATCH')
     if source['content'].get('renderProfile')!='owner_qa_v1':errors.append('QA_RENDERER_SOURCE_MISMATCH')
+    if meta.get('canonicalDense',{}).get('retainedDiagram'):
+        from canonical_components.retained_diagrams import render
+        im,evidence=render(source['code']);dense=meta['canonicalDense']
+        if evidence['dataSha256']!=dense.get('dataSha256') or sha(dense['originalAssetSourcePath'])!=dense['originalAssetSha256'] or hashlib.sha256(im.tobytes()).hexdigest()!=meta.get('graphDecodedSha256'):
+            errors.append('CANONICAL_RETAINED_DIAGRAM_BINDING')
+    if meta.get('canonicalDense',{}).get('sourceKind')==source['code']:
+        from canonical_components.dense_modes import graph_image_dense
+        im,alt,evidence=graph_image_dense(source['code']);dense=meta['canonicalDense']
+        if evidence['modelSha256']!=dense.get('modelSha256') or sha(dense['originalAssetSourcePath'])!=dense['originalAssetSha256'] or hashlib.sha256(im.tobytes()).hexdigest()!=meta.get('graphDecodedSha256') or alt!=meta.get('graphAlternative'):
+            errors.append('CANONICAL_RETAINED_MODEL_BINDING')
     if source['content'].get('graphSpec'):
         from qa_renderer import graph_image
-        im,alt=graph_image(source['content']['graphSpec']['kind'])
+        if meta.get('canonicalTemplate') and meta.get('canonicalDense',{}).get('sourceKind'):
+            from canonical_components.dense_modes import graph_image_dense
+            im,alt,evidence=graph_image_dense(source['content']['graphSpec']['kind'])
+            if evidence['modelSha256']!=meta['canonicalDense'].get('modelSha256'):errors.append('QA_DENSE_GRAPH_MODEL_MISMATCH')
+        else:im,alt=graph_image(source['content']['graphSpec']['kind'])
         if hashlib.sha256(im.tobytes()).hexdigest()!=meta.get('graphDecodedSha256') or alt!=meta.get('graphAlternative'):errors.append('QA_GRAPH_SOURCE_MISMATCH')
     return errors
 

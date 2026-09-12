@@ -1,0 +1,58 @@
+{
+  "task": "CONCEPT_REVIEW_CANONICAL_DENSE_LAYOUTS_V1",
+  "decision": "PASS",
+  "count": 8,
+  "records": [
+    {
+      "code": "MACRO-11",
+      "sha256": "45eb61150b288f5fea35a3846bcae636a064bdc01abcc318c07a1316a0bcb8b7",
+      "renderReview": "PASS",
+      "machineValidation": "PASS"
+    },
+    {
+      "code": "MACRO-13",
+      "sha256": "8597af794f3447fe6b95911413ea7a5d24d9a4d6df939c91259675966e38ace4",
+      "renderReview": "PASS",
+      "machineValidation": "PASS"
+    },
+    {
+      "code": "MACRO-16",
+      "sha256": "07e06c327f486a2e9f3bd1b3bac4cf0b802e995d960241385f1ca8a855b0dfcc",
+      "renderReview": "PASS",
+      "machineValidation": "PASS"
+    },
+    {
+      "code": "MACRO-20",
+      "sha256": "a5a7ff5f4ff44cf12baa2ecd7e213fed31f12109ef2126248957e8d512416a61",
+      "renderReview": "PASS",
+      "machineValidation": "PASS"
+    },
+    {
+      "code": "MICRO-52",
+      "sha256": "1ba066b695c7179a7317bf1766726770d299694391165d8628ccbe99658c2a7e",
+      "renderReview": "PASS",
+      "machineValidation": "PASS"
+    },
+    {
+      "code": "GEN-ECON-09",
+      "sha256": "d9d39864adca2edc30126cb45094d0ff72e25e3a54482a02ef93f6b6f725cdfe",
+      "renderReview": "PASS",
+      "machineValidation": "PASS"
+    },
+    {
+      "code": "GEN-ECON-01",
+      "sha256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+      "renderReview": "PASS",
+      "machineValidation": "PASS"
+    },
+    {
+      "code": "MICRO-49",
+      "sha256": "512ee726f9d7f4383f2534f4816b9a8b7276f4b563689a4ed7ba32d53de1cd17",
+      "renderReview": "PASS",
+      "machineValidation": "PASS"
+    }
+  ],
+  "denseNegativeTests": 12,
+  "humanAT": "PENDING",
+  "batchPermitted": true
+}

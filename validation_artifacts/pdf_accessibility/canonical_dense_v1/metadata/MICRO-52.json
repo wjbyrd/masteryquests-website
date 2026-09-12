@@ -1,0 +1,260 @@
+{
+  "baselineSha256": "93b8a89028f55f40844ea5221dc22135c762496c7a30a20eaa285bef6cb5046c",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "tmp\\pdf_accessibility\\canonical_dense_v1\\assets\\MICRO-52.png",
+  "assetSourceSha256": "59e5cd5caa8074583d39d15b2cdad8ddc9daf5a12d2d5db1101fda81fb62afb8",
+  "graphDecodedSha256": "5838701deb3870ec356b0abf46de976d871346b00b0211de77dba71ac3eb1b71",
+  "graphAlternative": "Quantity horizontal; price, cost and revenue vertical. Demand is flatter left of its kink at Q 20, P 50, and steeper right. Left demand is P = 60 minus 0.5 Q and right demand P = 80 minus 1.5 Q. MR branches end at 40 and start at 20 at Q 20. Horizontal MC 36 lies inside this downward MR gap. MR exceeds MC before the kink and is below MC after it.",
+  "sourceRecordSha256": "7882a38af77c3223309244e91e1a30ff4f09799f7450451eee310d3daeeedeba",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "7882a38af77c3223309244e91e1a30ff4f09799f7450451eee310d3daeeedeba",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "9eb2fc8500558ced2325a2cfd3d8d9b3aede5ef2aebdc4a46edfdcd3dcd5ddca",
+    "originalSourceRecordSha256": "a1f88fdf512140e314d6b38d8f92d4fe7f3d1456eb36c47a7e4cc75031d191f0",
+    "changedFields": [
+      "graph",
+      "graphSpec",
+      "watch",
+      "worked",
+      "workedLabel"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "3179f84ee6b047cf6244f16452566aabc991ca52bd332fcc60d6c0609670b22d"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 16,
+      "text": "Q = 20",
+      "alternative": "Q  equals  20"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 23,
+      "text": "P = $50",
+      "alternative": "P  equals   dollars 50"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 165,
+      "text": "$20",
+      "alternative": "dollars 20"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 170,
+      "text": "$40",
+      "alternative": "dollars 40"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 175,
+      "text": "Q = 20",
+      "alternative": "Q  equals  20"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 180,
+      "text": "MC = $36",
+      "alternative": "MC  equals   dollars 36"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 280,
+    "height": 127,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "6b7bcf80515a56a7680e3ca819772b5363ee3872a95d4c429eec65eba6ae1e2d",
+    "labels": [
+      {
+        "text": "Demand",
+        "bounds": [
+          32,
+          3,
+          130,
+          22
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MR",
+        "bounds": [
+          174.25,
+          3,
+          214.25,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MR gap",
+        "bounds": [
+          258.6875,
+          3,
+          349.6875,
+          26
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MC = 36",
+        "bounds": [
+          393.703125,
+          3,
+          492.703125,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price, cost and revenue ($)",
+        "bounds": [
+          66,
+          43,
+          378,
+          67
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          59,
+          323.0,
+          73,
+          341.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          405.48837209302326,
+          323.0,
+          434.48837209302326,
+          341.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "40",
+        "bounds": [
+          758.9767441860465,
+          323.0,
+          787.9767441860465,
+          341.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "80",
+        "bounds": [
+          21,
+          99.88235294117646,
+          50,
+          117.88235294117646
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "60",
+        "bounds": [
+          21,
+          151.41176470588235,
+          50,
+          169.41176470588235
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "50",
+        "bounds": [
+          21,
+          180.41176470588235,
+          50,
+          198.41176470588235
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "40",
+        "bounds": [
+          21,
+          209.41176470588235,
+          50,
+          227.41176470588235
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "36",
+        "bounds": [
+          21,
+          238.41176470588235,
+          50,
+          256.4117647058823
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          21,
+          267.4117647058823,
+          50,
+          285.4117647058823
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          36,
+          306.0,
+          50,
+          324.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity",
+        "bounds": [
+          398.0,
+          352,
+          495.0,
+          376
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Kink (20, 50)",
+        "bounds": [
+          428.48837209302326,
+          155.17647058823528,
+          575.4883720930233,
+          179.17647058823528
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "kinked_demand"
+  }
+}

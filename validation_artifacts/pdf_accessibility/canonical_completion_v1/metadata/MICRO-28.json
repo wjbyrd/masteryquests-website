@@ -1,0 +1,125 @@
+{
+  "baselineSha256": "7da8934c4a1717ef467fd06d0b6fff9fb8642e8f374a830542dfd15d646d778d",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Price-taking firm at a market price of $25",
+    "columnHeaders": [
+      "Price",
+      "Total revenue",
+      "MR per extra unit"
+    ],
+    "rowHeaders": [
+      "Q = 48",
+      "Q = 49",
+      "Q = 50"
+    ],
+    "cells": [
+      [
+        "$25",
+        "$1,200",
+        "$25"
+      ],
+      [
+        "$25",
+        "$1,225",
+        "$25"
+      ],
+      [
+        "$25",
+        "$1,250",
+        "$25"
+      ]
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 225,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      360,
+      720,
+      1080,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225
+    ]
+  },
+  "tableSourceSha256": "32842d8c48f17a75e82def154f1dc8f0f21298818d60a65c882d54117349f1ac",
+  "graphDecodedSha256": "678c40d3739a526a72b69e17eeff941f2c6a9cb43be95700c452ecf4e5a0ebd6",
+  "sourceRecordSha256": "1dad5ce1d63f327a59a1d2f9d66b3fcb69bd77454e353f669ade625fd26677be",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "1dad5ce1d63f327a59a1d2f9d66b3fcb69bd77454e353f669ade625fd26677be",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "a76b1527ceeb3b0763bc66bf156d4992d43eeb0b967c6c2653a9a47c7cb6dc23",
+    "originalSourceRecordSha256": "b1db0236301736cf1c21e83e706d3eec88bc25fe1fcad7cb7fc5cbd17bb18689",
+    "changedFields": [
+      "graph",
+      "table",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "2b6830390eb7ee19568b677582b88b43f64bbdc3db9ed562e3a398fb90ce8187"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 26,
+      "text": "$25",
+      "alternative": "dollars 25"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 64,
+      "text": "$25 x 50 = $1,250",
+      "alternative": "dollars 25 times 50  equals   dollars 1,250"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 100,
+      "text": "$25",
+      "alternative": "dollars 25"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 154,
+      "text": "P = AR = MR",
+      "alternative": "P  equals  AR  equals  MR"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 110,
+      "text": "P = AR = MR",
+      "alternative": "P equals A R equals M R"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

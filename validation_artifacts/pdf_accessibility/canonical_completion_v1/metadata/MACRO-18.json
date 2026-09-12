@@ -1,0 +1,158 @@
+{
+  "baselineSha256": "6ce6bc260c2eb7ba73f08cce5232144f339758fef60790c5ede58c5e37d2cdf2",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "U.S. definition used since May 2020",
+    "columnHeaders": [
+      "Amount",
+      "In M1?",
+      "In M2?"
+    ],
+    "rowHeaders": [
+      "Currency",
+      "Checking deposits",
+      "Savings deposits",
+      "Retail money-market funds"
+    ],
+    "cells": [
+      [
+        "$800",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "$1,200",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "$1,500",
+        "Yes",
+        "Yes"
+      ],
+      [
+        "$0 here",
+        "No",
+        "Yes"
+      ]
+    ],
+    "columnWidths": [
+      0.4,
+      0.2,
+      0.2,
+      0.2
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 270,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      576,
+      864,
+      1152,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225,
+      270
+    ]
+  },
+  "tableSourceSha256": "d62533202ff004eb2f4d5a4c051c819d038014438d08318ad2b3d52a1e3d40ca",
+  "graphDecodedSha256": "25adb0e73b8790b5ea18684e132fefad1788f21e3fb536281432c6b354e81af5",
+  "sourceRecordSha256": "72df92989f84607e980fdeec0c80aeaa3f8b33140c21e0b8bd96c9cc74f86190",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "72df92989f84607e980fdeec0c80aeaa3f8b33140c21e0b8bd96c9cc74f86190",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "335a2b8318a3b05b0795ac3b773d22b1b4585dfcf7d788ea8aa800a2988e262f",
+    "originalSourceRecordSha256": "babb4180ccf2384ee78b75e1ee12d709d12839f2508e68ca058f8234fa9db701",
+    "changedFields": [
+      "graph",
+      "table",
+      "watch"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "796ce03b9eb6b63a95bc4e8c2152d190d2062e893686fe065af3ebf417e6aeba"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 10,
+      "text": "$800",
+      "alternative": "800 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 34,
+      "text": "$1,200",
+      "alternative": "1,200 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 62,
+      "text": "$1,500",
+      "alternative": "1,500 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 141,
+      "text": "M1 = $3,500",
+      "alternative": "M one equals 3,500 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 183,
+      "text": "$3,500",
+      "alternative": "3,500 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 253,
+      "text": "$2,000",
+      "alternative": "2,000 dollars"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 144,
+      "text": "-2020",
+      "alternative": "-2020"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [
+    {
+      "sourceField": "outcome",
+      "compactStart": 36,
+      "symbol": "/",
+      "reason": "Reviewed prose separator, not a mathematical operator"
+    }
+  ],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW"
+}

@@ -8,7 +8,7 @@ from PIL import Image,ImageChops
 SEMANTICS='build/faculty-build-composer/data/concept-reviews/accessibility_semantics.json'
 SOURCE='build/faculty-build-composer/data/concept-reviews/concept_review_source.json'
 
-def validate(rows, output):
+def validate(rows, output, semantics_path=SEMANTICS):
     root=root_guard();output=contained(output)
     if not any(output.is_relative_to(contained(p)) for p in ('tmp/pdf_accessibility','validation_artifacts/pdf_accessibility')):
         raise ValueError('Evidence destination must be non-public')
@@ -25,7 +25,7 @@ def validate(rows, output):
     (output/'verapdf.stderr.log').write_text(result.stderr,encoding='utf-8')
     jobs=json.loads(result.stdout)['report']['jobs']
     by_path={str(Path(j['itemDetails']['name']).resolve()):j for j in jobs}
-    metadata=read_json(SEMANTICS);sources={r['code']:r for r in read_json(SOURCE)['reviews']}
+    metadata=read_json(semantics_path);sources={r['code']:r for r in read_json(SOURCE)['reviews']}
     poppler=Path(r'C:\Users\Jennings\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\poppler\Library\bin\pdftoppm.exe')
     records=[]
     for row,path in zip(rows,paths):
@@ -43,7 +43,7 @@ def validate(rows, output):
         from visual_repairs import approved_text_equal
         record={**row,'passed':compliant and not checked['errors'],'independentProfile':'ISO 14289-1:2014',
                 'validator':'veraPDF 1.28.2 --flavour ua1','independentPass':compliant,'projectErrors':checked['errors'],
-                'sourceRecordSha256':source_hash(source),'semanticsSha256':sha(SEMANTICS),'baselineSha256':sha(baseline),
+                'sourceRecordSha256':source_hash(source),'semanticsSha256':sha(semantics_path),'baselineSha256':sha(baseline),
                 'resourceSemanticsSha256':semantic_hash(metadata,code),
                 'validatorReport':str(report.relative_to(root)),'validatorReportSha256':sha(report),'sha256':sha(path),
                 'pageCounts':[len(old.pages),len(new.pages)],'geometryEqual':list(old.pages[0].mediabox)==list(new.pages[0].mediabox),

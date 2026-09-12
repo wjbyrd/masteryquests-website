@@ -1,0 +1,78 @@
+{
+  "baselineSha256": "49ef907e57fa79e006ec4ae0a6e7981bae71853305c304d7e5d67fffc7166559",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "sourceRecordSha256": "97c9ada219b8ae981727522d93ad9e12ee400f6d0513b51e7ce632ae806b8c98",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "97c9ada219b8ae981727522d93ad9e12ee400f6d0513b51e7ce632ae806b8c98",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "f767d0d8f43c8c548e7fa23368ea520e92b9f95cd0bd52bad11b4caabe58798f",
+    "originalSourceRecordSha256": "5fb69b6170b2746ba7764be4a6275fb6cd8501062fcee2812f1fc58e94bf78c0",
+    "changedFields": [
+      "check",
+      "workedLabel"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "5d37ae732ac4db20a67efc5f490e74f46ba19d31bd12b5f1c37ebe0bf4ec4a60"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 25,
+      "text": "10%",
+      "alternative": "10 percent"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 61,
+      "text": "7%",
+      "alternative": "7 percent"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 87,
+      "text": "-7% / 10% = -0.7",
+      "alternative": "minus 7 percent divided by 10 percent equals minus 0.7"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 59,
+      "text": "-0.7",
+      "alternative": "-0.7"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 83,
+      "text": "5%",
+      "alternative": "5 percent"
+    },
+    {
+      "sourceField": "recognition/2",
+      "compactStart": 54,
+      "text": "-0.7",
+      "alternative": "negative zero point seven"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

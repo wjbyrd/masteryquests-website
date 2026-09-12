@@ -1,0 +1,257 @@
+{
+  "baselineSha256": "bbe628f9f3a2ff6056720a72c7bc8965be1d66669e7ecfd4d8fb5647a3cea229",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Saving and its allocation (dollars)",
+    "columnHeaders": [
+      "Calculation",
+      "Value"
+    ],
+    "rowHeaders": [
+      "Private saving",
+      "Public saving",
+      "National saving",
+      "Domestic investment",
+      "NCO and NX"
+    ],
+    "cells": [
+      [
+        "1200 - 150 - 760",
+        "290"
+      ],
+      [
+        "150 - 260",
+        "-110"
+      ],
+      [
+        "290 - 110",
+        "180"
+      ],
+      [
+        "Given",
+        "140"
+      ],
+      [
+        "180 - 140",
+        "40"
+      ]
+    ],
+    "columnWidths": [
+      0.35,
+      0.4,
+      0.25
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 315,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      504,
+      1080,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225,
+      270,
+      315
+    ]
+  },
+  "tableSourceSha256": "38cf4e05a7965e44c70ce930527cc208c4df48d80c96742224391205d6caf3db",
+  "graphDecodedSha256": "a70d6bb73653c238ab438d412735c457d414d9db9cc422cf36fb0f8fe25c4091",
+  "sourceRecordSha256": "19f63388425634ada8c989d407d5d7818b1e085f017f39e97ea204aee07b0e26",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "19f63388425634ada8c989d407d5d7818b1e085f017f39e97ea204aee07b0e26",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "8ef79dca104f9746c13f7e396c6931a348e1f999157b8f36e7893ba37010d2d3",
+    "originalSourceRecordSha256": "cfe5fd542d667ffb619b28ffee0ccc4946bdc6353dbfa3aa4ae036fdbf5fd99a",
+    "changedFields": [
+      "graph",
+      "table"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "b8d03087b68fc40c7dcb5104d9efbdba3a823456633730c229036045117cebcc"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "core",
+      "compactStart": 29,
+      "text": "Y - T - C",
+      "alternative": "Y minus T minus C"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 51,
+      "text": "T - G",
+      "alternative": "T minus G"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 80,
+      "text": "S = Y - C - G",
+      "alternative": "S equals Y minus C minus G"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 105,
+      "text": "S = I",
+      "alternative": "S equals I"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 125,
+      "text": "S = I + NCO",
+      "alternative": "S equals I plus N C O"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 140,
+      "text": "NX = NCO",
+      "alternative": "N X equals N C O"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 163,
+      "text": "S = I + NX",
+      "alternative": "S equals I plus N X"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 3,
+      "text": "Y = $1,200",
+      "alternative": "Y equals one thousand two hundred dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 12,
+      "text": "T = $150",
+      "alternative": "T equals one hundred fifty dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 19,
+      "text": "C = $760",
+      "alternative": "C equals seven hundred sixty dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 29,
+      "text": "G = $260",
+      "alternative": "G equals two hundred sixty dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 51,
+      "text": "$290",
+      "alternative": "290 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 70,
+      "text": "-$110",
+      "alternative": "negative 110 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 92,
+      "text": "$180",
+      "alternative": "180 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 119,
+      "text": "$140,",
+      "alternative": "140, dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 128,
+      "text": "NCO = S - I = $40",
+      "alternative": "N C O equals S minus I equals forty dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 170,
+      "text": "NX = $40",
+      "alternative": "N X equals forty dollars"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 33,
+      "text": "T - G",
+      "alternative": "T minus G"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 51,
+      "text": "G - T",
+      "alternative": "G minus T"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 122,
+      "text": "S = I",
+      "alternative": "S equals I"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 15,
+      "text": "$220",
+      "alternative": "220 dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 36,
+      "text": "-$50",
+      "alternative": "negative 50 dollars"
+    },
+    {
+      "sourceField": "recognition/0",
+      "compactStart": 18,
+      "text": "T - G",
+      "alternative": "T minus G"
+    },
+    {
+      "sourceField": "recognition/1",
+      "compactStart": 44,
+      "text": "Y - C - G",
+      "alternative": "Y minus C minus G"
+    },
+    {
+      "sourceField": "recognition/2",
+      "compactStart": 3,
+      "text": "S = I",
+      "alternative": "S equals I"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW"
+}

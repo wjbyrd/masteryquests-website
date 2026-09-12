@@ -1,0 +1,444 @@
+{
+  "baselineSha256": "ffdd7e45c23e62f3fe83dcbb0ea356e8b2a59f72b197c5d7a81fdd533b919e0c",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-16.png",
+  "assetSourceSha256": "08af1f279d644b9f24de39d69413fa1e573c578542abc848f36fca907470b961",
+  "graphDecodedSha256": "ef59c29f66f8fcb4f416cd9491090497b751fc828f67338eab3a21403397b34c",
+  "graphAlternative": "Horizontal axis: quantity of avocados in thousands; vertical axis: price of avocados in dollars. Domestic demand slopes down and domestic supply slopes up. They intersect at A, quantity 175 thousand and price 7. A horizontal world-price line marked Pw = $10 meets demand at 100 thousand and supply at 250 thousand. Dashed vertical guides show those quantities.",
+  "sourceRecordSha256": "54d07bfb4dbf4070e4e6a59e8307c1109043fd25f19250a082903a83eb6e523d",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "54d07bfb4dbf4070e4e6a59e8307c1109043fd25f19250a082903a83eb6e523d",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "bcb41cf70997030b10447848ffc4318103c811baf3a2de4bdea4f62f71750936",
+    "originalSourceRecordSha256": "c83302b33376257b0d6b0f55590865c2dcee2577cf9f4c1eee7a427e82630253",
+    "changedFields": [
+      "watch",
+      "workedLabel"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "63f029f8980a7323efb35fd507b410d15e3d8d2e76485e7aa0db5ecf145b4740"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 47,
+      "text": "$7",
+      "alternative": "7 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 77,
+      "text": "$10",
+      "alternative": "10 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 193,
+      "text": "250 - 100 = 150",
+      "alternative": "250 minus 100 equals 150"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 92,
+      "text": "Pw=$10",
+      "alternative": "P subscript w equals 10 dollars"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW_TIGHT",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "0db8c1233cb0cff458960ac6cbb1fdc3a34d08c43f2b6cc4b3b5ad28e15ee3ce",
+    "labels": [
+      {
+        "text": "Ddomestic",
+        "bounds": [
+          32,
+          3,
+          155,
+          22
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Sdomestic",
+        "bounds": [
+          198.796875,
+          3,
+          319.796875,
+          22
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Pw=$10",
+        "bounds": [
+          364.15625,
+          3,
+          459.15625,
+          24
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price of avocados",
+        "bounds": [
+          160,
+          82,
+          367,
+          101
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "25",
+        "bounds": [
+          192.46316964285714,
+          378.0,
+          221.46316964285714,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "50",
+        "bounds": [
+          248.60602678571428,
+          378.0,
+          277.6060267857143,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "75",
+        "bounds": [
+          304.74888392857144,
+          378.0,
+          333.74888392857144,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "100",
+        "bounds": [
+          352.89174107142856,
+          378.0,
+          395.89174107142856,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "125",
+        "bounds": [
+          409.0345982142857,
+          378.0,
+          452.0345982142857,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "150",
+        "bounds": [
+          465.17745535714283,
+          378.0,
+          508.17745535714283,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "175",
+        "bounds": [
+          521.3203125,
+          378.0,
+          564.3203125,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "200",
+        "bounds": [
+          577.4631696428571,
+          378.0,
+          620.4631696428571,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "225",
+        "bounds": [
+          633.6060267857143,
+          378.0,
+          676.6060267857143,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "250",
+        "bounds": [
+          689.7488839285714,
+          378.0,
+          732.7488839285714,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "275",
+        "bounds": [
+          745.8917410714286,
+          378.0,
+          788.8917410714286,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "300",
+        "bounds": [
+          802.0345982142857,
+          378.0,
+          845.0345982142857,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "325",
+        "bounds": [
+          858.1774553571429,
+          378.0,
+          901.1774553571429,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "350",
+        "bounds": [
+          914.3203125,
+          378.0,
+          957.3203125,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$16",
+        "bounds": [
+          101,
+          110.0,
+          144,
+          131.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$15",
+        "bounds": [
+          41,
+          125.5625,
+          84,
+          146.5625
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$14",
+        "bounds": [
+          101,
+          141.125,
+          144,
+          162.125
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$13",
+        "bounds": [
+          41,
+          156.6875,
+          84,
+          177.6875
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$12",
+        "bounds": [
+          101,
+          172.25,
+          144,
+          193.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$11",
+        "bounds": [
+          41,
+          187.8125,
+          84,
+          208.8125
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$10",
+        "bounds": [
+          101,
+          203.375,
+          144,
+          224.375
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$9",
+        "bounds": [
+          55,
+          218.9375,
+          84,
+          239.9375
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$8",
+        "bounds": [
+          115,
+          234.5,
+          144,
+          255.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$7",
+        "bounds": [
+          55,
+          250.0625,
+          84,
+          271.0625
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$6",
+        "bounds": [
+          115,
+          265.625,
+          144,
+          286.625
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$5",
+        "bounds": [
+          55,
+          281.1875,
+          84,
+          302.1875
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$4",
+        "bounds": [
+          115,
+          296.75,
+          144,
+          317.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$3",
+        "bounds": [
+          55,
+          312.3125,
+          84,
+          333.3125
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$2",
+        "bounds": [
+          115,
+          327.875,
+          144,
+          348.875
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$1",
+        "bounds": [
+          55,
+          343.4375,
+          84,
+          364.4375
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity of avocados (in thousands)",
+        "bounds": [
+          345.0,
+          406,
+          761.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "A",
+        "bounds": [
+          559.0,
+          224.0625,
+          577.0,
+          242.0625
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "MICRO-16",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-16.png",
+    "originalAssetSha256": "381771ad9cb0da99f6e79a12447f95a2e2c226c804e2be3093b1fb288ff69265"
+  }
+}

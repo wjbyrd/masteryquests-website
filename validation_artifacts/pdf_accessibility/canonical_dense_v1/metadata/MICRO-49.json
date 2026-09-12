@@ -1,0 +1,113 @@
+{
+  "baselineSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
+  "sourceRecordSha256": "8bf60e1fedaca3ece2a9ae4a94361f83dcb7575e62d205dd9da21d2a52c588f4",
+  "reviewStatus": "PILOT_REPAIR_IN_VALIDATION_NOT_RELEASE_APPROVED",
+  "decorativeText": [
+    "+",
+    "?",
+    "!",
+    "#"
+  ],
+  "decorativeImageDecodedSha256": [
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd"
+  ],
+  "graphDecodedSha256": "701f3142fbb94f59befb739b1f6a196543e04625f66522d1da17412f6fb28a5a",
+  "reviewEvidence": "validation_artifacts/pdf_accessibility/micro49_unique_nash_v2/visual_review.json",
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Payoff order: (Row firm, Column firm)",
+    "columnHeaders": [
+      "X",
+      "Y"
+    ],
+    "rowHeaders": [
+      "A",
+      "B"
+    ],
+    "cells": [
+      [
+        "(9, 9)",
+        "(2, 3)"
+      ],
+      [
+        "(3, 2)",
+        "(1, 1)"
+      ]
+    ]
+  },
+  "inlineFormulas": [],
+  "formulaReviewState": "SOURCE_CHECKED_AT_PENDING",
+  "tableRegions": {
+    "imageWidth": 728,
+    "imageHeight": 471,
+    "xEdges": [
+      0,
+      184,
+      450,
+      728
+    ],
+    "yEdges": [
+      30,
+      90,
+      274,
+      471
+    ],
+    "captionBottom": 30,
+    "coordinateSystem": "source image pixels, top-left origin; complete nonoverlapping partition"
+  },
+  "tableSourceSha256": "38a07e3cefeb475846cc1efe729ab71a31a9d6b2af7f4ce7a614a2fa6251e8eb",
+  "assetSourcePath": "build/faculty-build-composer/data/question-assets/oligopoly/matrix_multi_ne_1.webp",
+  "assetSourceSha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
+  "visualSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/visual-sources/MICRO-49.pdf",
+  "visualSourceSha256": "015fd215ab8cab1fd1faf13fa02d815f3813729c01a0e996992dec5837e5d44a",
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "wordingCorrection": {
+    "status": "owner_authorized",
+    "field": "worked",
+    "oldText": "For each strategy of the other player, mark the action that gives a player the larger payoff. In the displayed matrix, row A against column X gives (9, 9), while switching unilaterally to row B would lower the row player's payoff from 9 to 3. The column player also prefers X to Y when row A is chosen, so (A, X) is a cell of mutual best responses and is a Nash equilibrium.",
+    "newText": "For each rival strategy, identify the action with the larger payoff. If column X is chosen, row A gives 9 rather than 3 from row B. If column Y is chosen, row A gives 2 rather than 1 from row B. Thus, A is the row player's strictly dominant strategy. For the column player, X gives 9 rather than 3 when row A is chosen, and 2 rather than 1 when row B is chosen. Thus, X is the column player's strictly dominant strategy. Because A and X are mutual best responses, (A, X) is the unique Nash equilibrium.",
+    "sourceRecordSha256": "8bf60e1fedaca3ece2a9ae4a94361f83dcb7575e62d205dd9da21d2a52c588f4",
+    "originalAssetSha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
+    "layout": "micro49_unique_nash_v2",
+    "heading": {
+      "oldText": "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM",
+      "newText": "WORKED EXAMPLE: FINDING A NASH EQUILIBRIUM"
+    },
+    "reviewEvidence": "validation_artifacts/pdf_accessibility/micro49_unique_nash_v2/visual_review.json"
+  },
+  "matrixCorrection": {
+    "status": "owner_authorized",
+    "cell": "B/Y",
+    "oldCell": "(7, 7)",
+    "newCell": "(1, 1)",
+    "sourceRecordSha256": "8bf60e1fedaca3ece2a9ae4a94361f83dcb7575e62d205dd9da21d2a52c588f4",
+    "originalAssetSha256": "55a7060c0a585602bd3bd8a40427893a4583d5b70436d0f767b3f0c4f843bf0c",
+    "originalDecodedSha256": "c2d2eedc9b2cd9826655aa1b6cdc237b2271bf83621e2aecbb351c6db5eda6e1",
+    "derivedDecodedSha256": "701f3142fbb94f59befb739b1f6a196543e04625f66522d1da17412f6fb28a5a",
+    "digitBoxes": [
+      [
+        554,
+        352,
+        574,
+        378
+      ],
+      [
+        593,
+        352,
+        613,
+        378
+      ]
+    ],
+    "glyphFontSha256": "c4c45690b345435b2cba52ecabe275f05e49b389b39fe68ad03afbb551288d3d",
+    "glyphPixelSize": 32,
+    "reviewEvidence": "validation_artifacts/pdf_accessibility/micro49_unique_nash_v2/visual_review.json"
+  }
+}

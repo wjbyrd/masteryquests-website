@@ -1,0 +1,94 @@
+{
+  "baselineSha256": "46be6f9a77d1e1bcce79f5f90708b9761cbd74d08487b8d53b3c000e1941dc2b",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Coverage in the simplified index comparison",
+    "columnHeaders": [
+      "CPI",
+      "GDP deflator"
+    ],
+    "rowHeaders": [
+      "Imported consumer coffee",
+      "Domestic investment machine",
+      "Domestic goods exported"
+    ],
+    "cells": [
+      [
+        "Included in consumer basket",
+        "Not domestic output"
+      ],
+      [
+        "Not consumer purchase",
+        "Included in domestic output"
+      ],
+      [
+        "Not domestic consumer purchase",
+        "Included in domestic output"
+      ]
+    ],
+    "columnWidths": [
+      0.34,
+      0.33,
+      0.33
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 225,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      489,
+      964,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225
+    ]
+  },
+  "tableSourceSha256": "7a2d53dacef8ecfa8517592fbd1b8d0d0ffefcfea6e51b3f75b57bf4b4cacd66",
+  "graphDecodedSha256": "17e81bb9c63a4f5f0e3ef2376788e724d9ef62d9a680e508733f19e5f68d7daf",
+  "sourceRecordSha256": "1332579a8b4cd12a6c2b350973215a89648ed60254c3d357a32c11bdc01747c3",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "1332579a8b4cd12a6c2b350973215a89648ed60254c3d357a32c11bdc01747c3",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "dd369f284c43ea662a001b58a373e8f2c96b3e464199e37d12513587126192ae",
+    "originalSourceRecordSha256": "a06fe010cecb5326b75552939dfe52fc32953098e8c007d80b1c3a31f687c2b8",
+    "changedFields": [
+      "graph",
+      "table"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "dd369f284c43ea662a001b58a373e8f2c96b3e464199e37d12513587126192ae"
+  },
+  "inlineFormulas": [],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW"
+}

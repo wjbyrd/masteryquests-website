@@ -8,7 +8,7 @@ from install_validated import prepare, MANIFEST
 import argparse
 
 
-def assess(validation, review_path):
+def assess(validation, review_path, scope='both'):
     root_guard()
     manifest = read_json(MANIFEST)
     expected = {r['code'] for r in manifest['reviews']}
@@ -29,7 +29,7 @@ def assess(validation, review_path):
             try:
                 if not row.get('deterministic') or sha(row['determinismRebuild']) != row['sha256']:
                     errors.append('REPRODUCTION_MISMATCH')
-                prepare([row], review_path)
+                prepare([row], review_path, scope=scope)
             except (ValueError, KeyError, FileNotFoundError) as exc:
                 errors.append(str(exc))
         results.append({'code': code, 'status': 'BLOCKED' if errors else 'PASS',

@@ -1,0 +1,412 @@
+{
+  "baselineSha256": "7f6e07f5a8ba76428aa3ce7bb7646d94e92c85147d690bf092a7989d93381105",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-22.png",
+  "assetSourceSha256": "7bce827fd60b19f6878fe1b8990848328540be5f30df757e3e2ec30e7d1b3d92",
+  "graphDecodedSha256": "2386b4b2120b53d3ba1c077770d926a5037598e56e6e7bd7794902c4793ccabe",
+  "graphAlternative": "Horizontal axis: quantity; vertical axis: costs in dollars. Curves are labeled MC, AC and AVC. MC first dips slightly and then rises. It crosses AVC at its minimum, quantity 200 and cost 10. At quantity 400, MC crosses AC at its minimum of 20, while AVC is 12. Dashed guides mark the quantities and costs. AC remains above AVC.",
+  "sourceRecordSha256": "c173228692c5c190e2e1ab3f8b7f5e51153eea8ae8e7c5364ce3d6e36f64a7af",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "c173228692c5c190e2e1ab3f8b7f5e51153eea8ae8e7c5364ce3d6e36f64a7af",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "98e2edd8e432102dfea5d038d72084d255d41c58c58466b745e3ae00f2416ae2",
+    "originalSourceRecordSha256": "5f332a17b0d8ddb5d5c1933206d16286966fd0afd9227202d1cb9238dd831c3e",
+    "changedFields": [
+      "check",
+      "watch"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "a2bd4361f1869e5827adaaeb5ee7fe5b478ce7640ad2f9e47827177d01b3475a"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 37,
+      "text": "$20",
+      "alternative": "20 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 64,
+      "text": "$12",
+      "alternative": "12 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 75,
+      "text": "AC = AVC + AFC",
+      "alternative": "A C equals A V C plus A F C"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 104,
+      "text": "$20 - $12 = $8",
+      "alternative": "20 dollars minus 12 dollars equals 8 dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 2,
+      "text": "Q = 30,",
+      "alternative": "Q  equals  30,"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 12,
+      "text": "$14",
+      "alternative": "dollars 14"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 23,
+      "text": "$24",
+      "alternative": "dollars 24"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "e7a6818292f5fe34622f9a4e7d3bb4c5d19ab0fe1a452cbe19521ef817788350",
+    "labels": [
+      {
+        "text": "MC",
+        "bounds": [
+          32,
+          3,
+          72,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "AC",
+        "bounds": [
+          116.4375,
+          3,
+          152.4375,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "AVC",
+        "bounds": [
+          196.5625,
+          3,
+          249.5625,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Costs",
+        "bounds": [
+          160,
+          82,
+          226,
+          100
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "120",
+        "bounds": [
+          182.9142857142857,
+          348.0,
+          225.9142857142857,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "140",
+        "bounds": [
+          227.82857142857142,
+          376.0,
+          270.8285714285714,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "160",
+        "bounds": [
+          272.74285714285713,
+          348.0,
+          315.74285714285713,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "180",
+        "bounds": [
+          317.65714285714284,
+          376.0,
+          360.65714285714284,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "200",
+        "bounds": [
+          362.57142857142856,
+          348.0,
+          405.57142857142856,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "220",
+        "bounds": [
+          407.48571428571427,
+          376.0,
+          450.48571428571427,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "240",
+        "bounds": [
+          452.40000000000003,
+          348.0,
+          495.40000000000003,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "260",
+        "bounds": [
+          497.3142857142857,
+          376.0,
+          540.3142857142857,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "280",
+        "bounds": [
+          542.2285714285714,
+          348.0,
+          585.2285714285714,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "300",
+        "bounds": [
+          587.1428571428571,
+          376.0,
+          630.1428571428571,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "320",
+        "bounds": [
+          632.0571428571428,
+          348.0,
+          675.0571428571428,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "340",
+        "bounds": [
+          676.9714285714285,
+          376.0,
+          719.9714285714285,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "360",
+        "bounds": [
+          721.8857142857144,
+          348.0,
+          764.8857142857144,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "380",
+        "bounds": [
+          766.8000000000001,
+          376.0,
+          809.8000000000001,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "400",
+        "bounds": [
+          811.7142857142857,
+          348.0,
+          854.7142857142857,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "420",
+        "bounds": [
+          856.6285714285714,
+          376.0,
+          899.6285714285714,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "440",
+        "bounds": [
+          901.5428571428571,
+          348.0,
+          944.5428571428571,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$24",
+        "bounds": [
+          101,
+          121.5263157894737,
+          144,
+          142.5263157894737
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$22",
+        "bounds": [
+          41,
+          144.57894736842107,
+          84,
+          165.57894736842107
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$20",
+        "bounds": [
+          101,
+          167.63157894736844,
+          144,
+          188.63157894736844
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$18",
+        "bounds": [
+          41,
+          190.6842105263158,
+          84,
+          211.6842105263158
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$16",
+        "bounds": [
+          101,
+          213.73684210526318,
+          144,
+          234.73684210526318
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$14",
+        "bounds": [
+          41,
+          236.78947368421052,
+          84,
+          257.7894736842105
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$12",
+        "bounds": [
+          101,
+          259.8421052631579,
+          144,
+          280.8421052631579
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$10",
+        "bounds": [
+          41,
+          282.89473684210526,
+          84,
+          303.89473684210526
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$8",
+        "bounds": [
+          115,
+          305.94736842105266,
+          144,
+          326.94736842105266
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity",
+        "bounds": [
+          505.0,
+          406,
+          602.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "MICRO-22",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-22.png",
+    "originalAssetSha256": "c2acf06d250d59fb55fcc9e89959ebac047f9f9f1b88d83c1a2cad3e259b351c"
+  }
+}

@@ -18,6 +18,8 @@ def tooling_hash():
     paths.append('audit_tools/pdf_accessibility/micro49_wording.py')
     paths.append('audit_tools/pdf_accessibility/micro49_matrix.py')
     paths+=['audit_tools/pdf_accessibility/'+n for n in ['qa_remediation.py','qa_renderer.py','qa_plot.py','qa_content.py']]
+    paths+=['audit_tools/pdf_accessibility/'+n for n in ['qa_template.py','style_restoration.py']]
+    paths += [str(p.relative_to(EXPECTED_ROOT)) for p in contained('audit_tools/pdf_accessibility/canonical_components').glob('*') if p.is_file() and p.suffix in {'.py','.json','.ttf','.png'}]
     paths+=['build/faculty-build-composer/tools/'+n for n in ['concept_review_style.py','concept_review_lifecycle.py','expand_micro_concept_reviews.py','complete_macro_concept_reviews.py']]
     return source_hash({p:sha(p) for p in paths})
 

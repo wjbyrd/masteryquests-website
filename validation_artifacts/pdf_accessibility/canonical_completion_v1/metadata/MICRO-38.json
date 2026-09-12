@@ -1,0 +1,392 @@
+{
+  "baselineSha256": "c05e1e496727fe6b057195a2a39d8a3ec36198824d9785a983fd3eefa09b90e7",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-38.png",
+  "assetSourceSha256": "49447af0c46b766f856e0daa8dfb26718c484ae66bde5755ad2dfc329bac3ed0",
+  "graphDecodedSha256": "54084e315c86b60ed9a99b049839c94a9a060f99370b801caeae91a2cc20fbca",
+  "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D slopes down from price 60 at quantity 0 to zero at 120. MR slopes down more steeply, reaching zero at 60. At quantity 40, MR and rising MC meet at 20; demand is at 40 and ATC at 45, with dashed guides. Demand and MC intersect near quantity 67 and price 27. ATC is U-shaped, reaching its minimum to the right of quantity 40. The 67 and 27 intersection values are approximate as labeled.",
+  "sourceRecordSha256": "3ff821d218f972b3bb5478c55626f9e797a51d58458e4c66aed33dea1d458341",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "3ff821d218f972b3bb5478c55626f9e797a51d58458e4c66aed33dea1d458341",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "2069adc247d55bcf5783f304b4fcc58a6b6259f56980aa0d8569f230313a9561",
+    "originalSourceRecordSha256": "8485d685a5a377ee5252205fb87524b42d56dadc7adb2d6674cbf1e15016094f",
+    "changedFields": [
+      "core",
+      "recognition"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "eedd34bc463b7aa7ea23d4221a332f5bbcad4144cfc3f634f8fcbf3f4615663b"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 34,
+      "text": "MR = MC",
+      "alternative": "M R equals M C"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 79,
+      "text": "$20",
+      "alternative": "20 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 131,
+      "text": "$40",
+      "alternative": "40 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 182,
+      "text": "Q = 40",
+      "alternative": "Q equals 40"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 189,
+      "text": "P = $40",
+      "alternative": "P equals 40 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 201,
+      "text": "$20",
+      "alternative": "20 dollars"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 79,
+      "text": "MR = MC",
+      "alternative": "M R equals M C"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "886d8e83302e0bc8254767e3b77306a4f0e7f6d6078a03e43570fd25fcb8a19d",
+    "labels": [
+      {
+        "text": "D",
+        "bounds": [
+          32,
+          3,
+          51,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MR",
+        "bounds": [
+          94.78125,
+          3,
+          134.78125,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MC",
+        "bounds": [
+          179.21875,
+          3,
+          219.21875,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "ATC",
+        "bounds": [
+          263.65625,
+          3,
+          315.65625,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price / cost",
+        "bounds": [
+          160,
+          82,
+          289,
+          101
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          153.0,
+          348.0,
+          167.0,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "10",
+        "bounds": [
+          210.4262295081967,
+          376.0,
+          239.4262295081967,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          274.8524590163934,
+          348.0,
+          303.8524590163934,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "30",
+        "bounds": [
+          339.27868852459017,
+          376.0,
+          368.27868852459017,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "40",
+        "bounds": [
+          403.70491803278685,
+          348.0,
+          432.70491803278685,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "50",
+        "bounds": [
+          468.1311475409836,
+          376.0,
+          497.1311475409836,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "60",
+        "bounds": [
+          532.5573770491803,
+          348.0,
+          561.5573770491803,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "67",
+        "bounds": [
+          577.655737704918,
+          376.0,
+          606.655737704918,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "70",
+        "bounds": [
+          596.983606557377,
+          348.0,
+          625.983606557377,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "80",
+        "bounds": [
+          661.4098360655737,
+          376.0,
+          690.4098360655737,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "90",
+        "bounds": [
+          725.8360655737705,
+          348.0,
+          754.8360655737705,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "100",
+        "bounds": [
+          782.2622950819672,
+          376.0,
+          825.2622950819672,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "110",
+        "bounds": [
+          846.688524590164,
+          348.0,
+          889.688524590164,
+          366.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "120",
+        "bounds": [
+          911.1147540983607,
+          376.0,
+          954.1147540983607,
+          394.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "60",
+        "bounds": [
+          115,
+          111.0,
+          144,
+          129.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "50",
+        "bounds": [
+          55,
+          147.5,
+          84,
+          165.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "45",
+        "bounds": [
+          115,
+          165.75,
+          144,
+          183.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "40",
+        "bounds": [
+          55,
+          184.0,
+          84,
+          202.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "30",
+        "bounds": [
+          115,
+          220.5,
+          144,
+          238.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "27",
+        "bounds": [
+          55,
+          231.45,
+          84,
+          249.45
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          115,
+          257.0,
+          144,
+          275.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "10",
+        "bounds": [
+          55,
+          293.5,
+          84,
+          311.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          130,
+          330.0,
+          144,
+          348.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity",
+        "bounds": [
+          505.0,
+          406,
+          602.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "MICRO-38",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-38.png",
+    "originalAssetSha256": "45cf7779950045568039e40b4d42d3c000bfd9cfe7d87a0e6812f28c4307887d"
+  }
+}

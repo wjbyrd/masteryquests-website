@@ -1,0 +1,301 @@
+{
+  "baselineSha256": "47b761401c04b03b11c93b23b66321bc216ea866c377accb26a8cd55452c70fc",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-45.png",
+  "assetSourceSha256": "958ceadc551aedc5a6b8ece34e13dae1aed2fc2c88e837a55a102c7af7ec5b48",
+  "graphDecodedSha256": "de9f69ee494713e5d0c54a2c7cb1b312774f44f479ef9d42dff12121df559da1",
+  "graphAlternative": "Horizontal axis: quantity; vertical axis: price / cost. Demand D = AR slopes down; MR slopes down more steeply and reaches zero at quantity 60. At marked quantity 36, MR and MC meet at 15, while demand and ATC meet at 27. Dashed horizontal and vertical guides mark those values. ATC continues downward to a minimum near quantity 50 before rising; MC rises to the right of 36.",
+  "sourceRecordSha256": "84d0eda11695a822b89d89e31e3dcf100a0e3cfd94f5dfd1af5991e09eef2f51",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "84d0eda11695a822b89d89e31e3dcf100a0e3cfd94f5dfd1af5991e09eef2f51",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "fc11411095d0f7db7917366074cfbb94d870f8e828b45d589615061e5678abfb",
+    "originalSourceRecordSha256": "3b6db233b1446aed9ac3638be78ba1a610c6707ad290cea7a95e70b0ea53c72c",
+    "changedFields": [
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "7f37ea6dc69af8999c6950d7d29ff535a73e27044e644e79bb54e0c542826359"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 172,
+      "text": "$27,",
+      "alternative": "dollars 27,"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 204,
+      "text": "$972",
+      "alternative": "dollars 972"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "c8e713ec7ef779552becc397f4bee3dca3fea7426e4c88ccbbd81c52aa0d0e70",
+    "labels": [
+      {
+        "text": "D = AR",
+        "bounds": [
+          32,
+          3,
+          117,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MR",
+        "bounds": [
+          160.53125,
+          3,
+          200.53125,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MC",
+        "bounds": [
+          244.96875,
+          3,
+          284.96875,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "ATC",
+        "bounds": [
+          329.40625,
+          3,
+          381.40625,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price / cost",
+        "bounds": [
+          160,
+          82,
+          289,
+          101
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          150.546875,
+          378.0,
+          164.546875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "10",
+        "bounds": [
+          241.796875,
+          378.0,
+          270.796875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          340.046875,
+          378.0,
+          369.046875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "30",
+        "bounds": [
+          438.296875,
+          378.0,
+          467.296875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "36",
+        "bounds": [
+          497.24687500000005,
+          378.0,
+          526.246875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "40",
+        "bounds": [
+          536.546875,
+          378.0,
+          565.546875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "50",
+        "bounds": [
+          634.796875,
+          378.0,
+          663.796875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "60",
+        "bounds": [
+          733.046875,
+          378.0,
+          762.046875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "70",
+        "bounds": [
+          831.296875,
+          378.0,
+          860.296875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "80",
+        "bounds": [
+          929.546875,
+          378.0,
+          958.546875,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "45",
+        "bounds": [
+          115,
+          135.9,
+          144,
+          153.9
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "36",
+        "bounds": [
+          115,
+          180.72,
+          144,
+          198.72
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "27",
+        "bounds": [
+          115,
+          225.54,
+          144,
+          243.54
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "18",
+        "bounds": [
+          115,
+          270.36,
+          144,
+          288.36
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "15",
+        "bounds": [
+          115,
+          299.36,
+          144,
+          317.36
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "9",
+        "bounds": [
+          130,
+          328.36,
+          144,
+          346.36
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          130,
+          360.0,
+          144,
+          378.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity",
+        "bounds": [
+          505.0,
+          406,
+          602.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "MICRO-45",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-45.png",
+    "originalAssetSha256": "3acff8755e5e863da92f83d40aa4d3cc71f2f0cb44bcea7c5d2ef4f873a57780"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "baselineSha256": "eb74621e192dfbe790f95daaad5815f2baa7a90db17088d55ff5a4f57708f7d7",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Disinflation output losses (billions of dollars)",
+    "columnHeaders": [
+      "Potential",
+      "Actual",
+      "Output loss",
+      "Gap / potential"
+    ],
+    "rowHeaders": [
+      "Year 1",
+      "Year 2",
+      "Total loss"
+    ],
+    "cells": [
+      [
+        "400",
+        "388",
+        "12",
+        "3%"
+      ],
+      [
+        "400",
+        "388",
+        "12",
+        "3%"
+      ],
+      [
+        "—",
+        "—",
+        "24",
+        "6% of one year"
+      ]
+    ],
+    "columnWidths": [
+      0.2,
+      0.16,
+      0.16,
+      0.19,
+      0.29
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 225,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      288,
+      518,
+      748,
+      1021,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225
+    ]
+  },
+  "tableSourceSha256": "db58e6d1ce3d7dd2913977b937ba915f402d0aed7c16a2faff83823e1c74f7b1",
+  "graphDecodedSha256": "09b9f2fd049c54d5eb9f35f343271bf4834b4dad497c6933cbc47efe22a7fb1e",
+  "sourceRecordSha256": "69e7696624e55d7487233449f8275a48f8f01dfaecb1333330bc52adc22dff6a",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "69e7696624e55d7487233449f8275a48f8f01dfaecb1333330bc52adc22dff6a",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "7d83de170282174910cfb245f9a1be59a26b3d4568398ff656aedd4302d14694",
+    "originalSourceRecordSha256": "7b3e3ade0648787f407b4f5a049d049c857d826829b8aee691e8702694ab159f",
+    "changedFields": [
+      "graph",
+      "table",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "de4a7fb2a7212b411590374fd24c842ad4f2095fe0565edcde5d04802b0bf166"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 13,
+      "text": "$12",
+      "alternative": "dollars 12"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 33,
+      "text": "$400",
+      "alternative": "dollars 400"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 61,
+      "text": "3%",
+      "alternative": "3 percent"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 103,
+      "text": "6%",
+      "alternative": "6 percent"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 187,
+      "text": "6 / 3 = 2",
+      "alternative": "6  divided by  3  equals  2"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW"
+}

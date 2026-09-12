@@ -1,0 +1,3296 @@
+{
+  "task": "CONCEPT_REVIEW_GEN_ECON_01_TEMPLATE_ALIGNMENT_V1",
+  "accepted": false,
+  "batchAuthorizedByPilot": false,
+  "records": [
+    {
+      "code": "MACRO-11",
+      "accepted": false,
+      "layout": {
+        "template": "GEN-ECON-01",
+        "referenceSHA256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+        "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+        "bodyFontSize": 10.45,
+        "page": [
+          612,
+          792
+        ],
+        "contentBottom": 103.106,
+        "components": [
+          {
+            "name": "header",
+            "bounds": [
+              15.84,
+              695.52,
+              596.16,
+              777.6
+            ],
+            "sourceCurve": 0
+          },
+          {
+            "name": "logo-card",
+            "bounds": [
+              37.44,
+              709.2,
+              92.16,
+              763.92
+            ],
+            "sourceCurve": 1
+          },
+          {
+            "name": "icon-logo",
+            "bounds": [
+              41.72538,
+              712.8,
+              87.87461,
+              760.3199999999999
+            ],
+            "assetSHA256": "29c30924e161c41453a1242a0cf2a1fbeb5aed231b43bc5ff4f186ec3c04ef3c"
+          },
+          {
+            "name": "resource-card",
+            "bounds": [
+              449.961,
+              717.159,
+              574.56,
+              755.96
+            ],
+            "sourceCurve": 2
+          },
+          {
+            "name": "metadata",
+            "bounds": [
+              29.52,
+              642.24,
+              582.48,
+              687.6
+            ],
+            "sourceCurve": 3
+          },
+          {
+            "name": "icon-hourglass",
+            "bounds": [
+              39.93862,
+              655.2,
+              58.76148,
+              674.6400000000001
+            ],
+            "assetSHA256": "7087150d09e119b41412caf702ed692fc7f2f92085592541348735c2346b8f61"
+          },
+          {
+            "name": "icon-target",
+            "bounds": [
+              177.18,
+              655.2,
+              196.62,
+              674.6400000000001
+            ],
+            "assetSHA256": "aa50ab412eb2f84dca29a743bbbb6c47fd1c0af255da89972dee42cd14d71f39"
+          },
+          {
+            "name": "difficulty-dots",
+            "centers": [
+              [
+                465,
+                663.6
+              ],
+              [
+                473.2,
+                663.6
+              ],
+              [
+                481.4,
+                663.6
+              ]
+            ],
+            "radius": 3.05,
+            "active": 2
+          },
+          {
+            "name": "title",
+            "baseline": 599.3574,
+            "fontSize": 32,
+            "bounds": [
+              105.9453216,
+              592,
+              506.0546784,
+              628
+            ]
+          },
+          {
+            "name": "core",
+            "bounds": [
+              79.92,
+              501.07800000000003,
+              583.2,
+              582.326
+            ]
+          },
+          {
+            "name": "icon-core",
+            "bounds": [
+              32.56744,
+              544.166,
+              68.95256,
+              582.326
+            ],
+            "assetSHA256": "057882bd5ed3933fd0fe00572a696d157f553accfd155a27f37c4d26a5d28481"
+          },
+          {
+            "name": "recognition",
+            "bounds": [
+              79.92,
+              407.55600000000004,
+              583.2,
+              477.07800000000003
+            ]
+          },
+          {
+            "name": "icon-recognition",
+            "bounds": [
+              32.98091,
+              438.918,
+              68.53909,
+              477.07800000000003
+            ],
+            "assetSHA256": "2417d7822a37aa9636a50c821b4e11fa9793d5f50b792ddcd2d0d54797dd7e5a"
+          },
+          {
+            "name": "watch",
+            "bounds": [
+              79.92,
+              314.99,
+              583.2,
+              383.55600000000004
+            ],
+            "fill": [
+              0.918,
+              0.973,
+              0.973
+            ],
+            "stroke": [
+              0.071,
+              0.686,
+              0.663
+            ],
+            "strokeWidth": 1.05,
+            "radius": 8
+          },
+          {
+            "name": "icon-watch",
+            "bounds": [
+              32.56744,
+              345.3960000000001,
+              68.95256,
+              383.55600000000004
+            ],
+            "assetSHA256": "cc44af415e44bd1632d616d7a41417496c170776d934b8f31f3a9b451a0ce151"
+          },
+          {
+            "name": "worked",
+            "bounds": [
+              79.92,
+              195.672,
+              583.2,
+              290.99
+            ],
+            "fill": [
+              1,
+              1,
+              1
+            ],
+            "stroke": [
+              0.031,
+              0.157,
+              0.373
+            ],
+            "strokeWidth": 1.05,
+            "radius": 8
+          },
+          {
+            "name": "icon-worked",
+            "bounds": [
+              31.68,
+              252.82999999999998,
+              69.84,
+              290.99
+            ],
+            "assetSHA256": "8f987f2c7eed462f88380699dbb93fad0e9457637aca446493ace4f189b7ed48"
+          },
+          {
+            "name": "check",
+            "bounds": [
+              79.92,
+              103.106,
+              583.2,
+              171.672
+            ],
+            "fill": [
+              0.918,
+              0.973,
+              0.973
+            ],
+            "stroke": [
+              0.071,
+              0.686,
+              0.663
+            ],
+            "strokeWidth": 1.05,
+            "radius": 8
+          },
+          {
+            "name": "icon-check",
+            "bounds": [
+              32.99586,
+              133.512,
+              68.52414,
+              171.672
+            ],
+            "assetSHA256": "8e42454c430b969f4fa9d74d2e6e76873c0ab8e54e0822d80d0111e3bfdf962e"
+          },
+          {
+            "name": "footer",
+            "bounds": [
+              16.0,
+              15.0,
+              596.0,
+              56.0
+            ],
+            "sourceCurve": 10
+          },
+          {
+            "name": "footer-arrow-circle",
+            "bounds": [
+              82.5,
+              26.0,
+              101.5,
+              45.0
+            ],
+            "sourceCurve": 11
+          }
+        ],
+        "textBounds": [
+          [
+            105.12,
+            721.2573,
+            444.12,
+            751.7673000000001
+          ],
+          [
+            475.70321226404997,
+            728.6260100000001,
+            548.82778773595,
+            744.4454450000001
+          ],
+          [
+            64.47,
+            657.80721,
+            94.35,
+            669.558645
+          ],
+          [
+            94.35,
+            657.80721,
+            162.35,
+            669.558645
+          ],
+          [
+            405.42,
+            658.1499650000001,
+            459.42,
+            669.3361175
+          ],
+          [
+            489.7,
+            658.5429,
+            573.7,
+            669.3344000000001
+          ],
+          [
+            105.9453216,
+            592.3174,
+            506.0646784,
+            628.4774
+          ],
+          [
+            80.44425,
+            563.1336,
+            583.72425,
+            581.4395999999999
+          ],
+          [
+            80.44365,
+            501.079,
+            583.72365,
+            553.0155
+          ],
+          [
+            80.44425,
+            457.8856,
+            583.72425,
+            476.19160000000005
+          ],
+          [
+            87.6249,
+            437.28900000000004,
+            94.6249,
+            449.0975
+          ],
+          [
+            94.8,
+            437.28900000000004,
+            583.1999999999999,
+            449.0975
+          ],
+          [
+            87.6249,
+            422.42300000000006,
+            94.6249,
+            434.23150000000004
+          ],
+          [
+            94.8,
+            422.42300000000006,
+            583.1999999999999,
+            434.23150000000004
+          ],
+          [
+            87.6249,
+            407.5570000000001,
+            94.6249,
+            419.36550000000005
+          ],
+          [
+            94.8,
+            407.5570000000001,
+            583.1999999999999,
+            419.36550000000005
+          ],
+          [
+            91.77075,
+            355.64390000000003,
+            571.34375,
+            373.7239
+          ],
+          [
+            91.77365,
+            320.79100000000005,
+            571.34665,
+            345.9755
+          ],
+          [
+            91.77075,
+            263.0779,
+            571.34375,
+            281.1579
+          ],
+          [
+            91.77365,
+            201.47299999999998,
+            571.34665,
+            253.40949999999998
+          ],
+          [
+            91.77075,
+            143.7599,
+            571.34375,
+            161.8399
+          ],
+          [
+            91.77365,
+            108.90699999999998,
+            571.34665,
+            134.0915
+          ],
+          [
+            109,
+            24.98,
+            199,
+            43.06
+          ],
+          [
+            207,
+            27.77,
+            582,
+            40.765
+          ]
+        ],
+        "layoutMode": "TEXT",
+        "exceptions": [],
+        "clipping": "PENDING_RENDER_REVIEW",
+        "styleAuthority": "GEN-ECON-01",
+        "contentAuthority": "v2/v3"
+      },
+      "status": "EXPERIMENTAL_CANDIDATE",
+      "output": "tmp\\pdf_accessibility\\canonical_template_v1\\tagged\\MACRO-11.pdf",
+      "tagCount": 30,
+      "mcids": 37,
+      "unassignedMeaningfulBlocks": 0,
+      "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+      "transcript": [
+        {
+          "role": "H1",
+          "text": "Productivity Measurement",
+          "node": 0
+        },
+        {
+          "role": "P",
+          "text": "MACROECONOMICS",
+          "node": 1
+        },
+        {
+          "role": "P",
+          "text": "MACRO-11",
+          "node": 2
+        },
+        {
+          "role": "P",
+          "text": "Time: 5 minutes",
+          "node": 3
+        },
+        {
+          "role": "P",
+          "text": "Outcome: Calculate output per worker and interpret productivity changes.",
+          "node": 4
+        },
+        {
+          "role": "P",
+          "text": "Difficulty: Intermediate",
+          "node": 5
+        },
+        {
+          "role": "H2",
+          "text": "THE CORE IDEA",
+          "node": 6
+        },
+        {
+          "role": "P",
+          "text": "Labor productivity measures output per worker or per hour worked. For example, 2,400 units produced in 300 labor hours means 2,400 / 300 = 8 units per hour. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter. A country can consume more when its workers produce more output per worker.",
+          "node": 7
+        },
+        {
+          "role": "H2",
+          "text": "HOW TO RECOGNIZE IT",
+          "node": 8
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 11
+        },
+        {
+          "role": "LBody",
+          "text": "Measure labor productivity as real output per worker or per hour worked.",
+          "node": 12
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 14
+        },
+        {
+          "role": "LBody",
+          "text": "Use the same output and labor units when comparing periods.",
+          "node": 15
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 17
+        },
+        {
+          "role": "LBody",
+          "text": "An increase in total output need not raise productivity if labor input also rises.",
+          "node": 18
+        },
+        {
+          "role": "H2",
+          "text": "WATCH OUT",
+          "node": 19
+        },
+        {
+          "role": "P",
+          "text": "Do not confuse total output with output per unit of labor. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter.",
+          "node": 20
+        },
+        {
+          "role": "H2",
+          "text": "WORKED EXAMPLE: MEASURING LABOR PRODUCTIVITY",
+          "node": 21
+        },
+        {
+          "role": "P",
+          "text": "A workshop produces 2,400 units using 300 labor hours, so productivity is 2,400 / 300 = 8 units per hour. Next month it produces 2,700 units using the same 300 hours: 9 units per hour. Productivity rises by (9 - 8) / 8 x 100 = 12.5%. More output per labor hour, not simply more total hours, is the improvement.",
+          "node": 22
+        },
+        {
+          "role": "H2",
+          "text": "CHECK YOURSELF",
+          "node": 23
+        },
+        {
+          "role": "P",
+          "text": "A business uses more labor hours but produces the same amount of output. What happens to labor productivity?",
+          "node": 24
+        },
+        {
+          "role": "H2",
+          "text": "READY?",
+          "node": 25
+        },
+        {
+          "role": "P",
+          "text": "Return to the game and master this concept.",
+          "node": 26
+        }
+      ],
+      "semanticCheck": {
+        "errors": [],
+        "transcript": [
+          {
+            "role": "H1",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Productivity Measurement  ",
+                "sourceText": "Productivity Measurement  "
+              }
+            ],
+            "sourceText": "Productivity Measurement",
+            "text": "Productivity Measurement"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "MACROECONOMICS  ",
+                "sourceText": "MACROECONOMICS  "
+              }
+            ],
+            "sourceText": "MACROECONOMICS",
+            "text": "MACROECONOMICS"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "MACRO-11  ",
+                "sourceText": "MACRO-11  "
+              }
+            ],
+            "sourceText": "MACRO-11",
+            "text": "MACRO-11"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Time:  ",
+                "sourceText": "Time:  "
+              },
+              {
+                "role": "Span",
+                "text": "5 minutes  ",
+                "sourceText": "5 minutes  "
+              }
+            ],
+            "sourceText": "Time: 5 minutes",
+            "text": "Time: 5 minutes"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Outcome: Calculate output per worker and interpret productivity changes.  ",
+                "sourceText": "Outcome: Calculate output per worker and interpret productivity changes.  "
+              }
+            ],
+            "sourceText": "Outcome: Calculate output per worker and interpret productivity changes.",
+            "text": "Outcome: Calculate output per worker and interpret productivity changes."
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Difficulty:  ",
+                "sourceText": "Difficulty:  "
+              },
+              {
+                "role": "Span",
+                "text": "Intermediate  ",
+                "sourceText": "Intermediate  "
+              }
+            ],
+            "sourceText": "Difficulty: Intermediate",
+            "text": "Difficulty: Intermediate"
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "THE CORE IDEA  ",
+                "sourceText": "THE CORE IDEA  "
+              }
+            ],
+            "sourceText": "THE CORE IDEA",
+            "text": "THE CORE IDEA"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Labor productivity measures output per worker or per hour worked. For example, 2,400 units produced in ",
+                "sourceText": "Labor productivity measures output per worker or per hour worked. For example, 2,400 units produced in "
+              },
+              {
+                "role": "Span",
+                "text": "300 labor hours means",
+                "sourceText": "300 labor hours means"
+              },
+              {
+                "role": "Formula",
+                "text": "2,400 divided by 300 equals 8",
+                "sourceText": " 2,400 / 300 = 8"
+              },
+              {
+                "role": "Span",
+                "text": " units per hour. Productivity compares output with the labor input ",
+                "sourceText": " units per hour. Productivity compares output with the labor input "
+              },
+              {
+                "role": "Span",
+                "text": "used to produce it, so changes in both output and labor matter. A country can consume more when its ",
+                "sourceText": "used to produce it, so changes in both output and labor matter. A country can consume more when its "
+              },
+              {
+                "role": "Span",
+                "text": "workers produce more output per worker.  ",
+                "sourceText": "workers produce more output per worker.  "
+              }
+            ],
+            "sourceText": "Labor productivity measures output per worker or per hour worked. For example, 2,400 units produced in 300 labor hours means 2,400 / 300 = 8 units per hour. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter. A country can consume more when its workers produce more output per worker.",
+            "text": "Labor productivity measures output per worker or per hour worked. For example, 2,400 units produced in 300 labor hours means 2,400 divided by 300 equals 8 units per hour. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter. A country can consume more when its workers produce more output per worker."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "HOW TO RECOGNIZE IT  ",
+                "sourceText": "HOW TO RECOGNIZE IT  "
+              }
+            ],
+            "sourceText": "HOW TO RECOGNIZE IT",
+            "text": "HOW TO RECOGNIZE IT"
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Measure labor productivity as real output per worker or per hour worked.  ",
+                "sourceText": "Measure labor productivity as real output per worker or per hour worked.  "
+              }
+            ],
+            "sourceText": "Measure labor productivity as real output per worker or per hour worked.",
+            "text": "Measure labor productivity as real output per worker or per hour worked."
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Use the same output and labor units when comparing periods.  ",
+                "sourceText": "Use the same output and labor units when comparing periods.  "
+              }
+            ],
+            "sourceText": "Use the same output and labor units when comparing periods.",
+            "text": "Use the same output and labor units when comparing periods."
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "An increase in total output need not raise productivity if labor input also rises.  ",
+                "sourceText": "An increase in total output need not raise productivity if labor input also rises.  "
+              }
+            ],
+            "sourceText": "An increase in total output need not raise productivity if labor input also rises.",
+            "text": "An increase in total output need not raise productivity if labor input also rises."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "WATCH OUT  ",
+                "sourceText": "WATCH OUT  "
+              }
+            ],
+            "sourceText": "WATCH OUT",
+            "text": "WATCH OUT"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Do not confuse total output with output per unit of labor. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter.  ",
+                "sourceText": "Do not confuse total output with output per unit of labor. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter.  "
+              }
+            ],
+            "sourceText": "Do not confuse total output with output per unit of labor. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter.",
+            "text": "Do not confuse total output with output per unit of labor. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "WORKED EXAMPLE: MEASURING LABOR PRODUCTIVITY  ",
+                "sourceText": "WORKED EXAMPLE: MEASURING LABOR PRODUCTIVITY  "
+              }
+            ],
+            "sourceText": "WORKED EXAMPLE: MEASURING LABOR PRODUCTIVITY",
+            "text": "WORKED EXAMPLE: MEASURING LABOR PRODUCTIVITY"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "A workshop produces 2,400 units using 300 labor hours, so productivity is",
+                "sourceText": "A workshop produces 2,400 units using 300 labor hours, so productivity is"
+              },
+              {
+                "role": "Formula",
+                "text": "2,400  divided by  300  equals  8",
+                "sourceText": " 2,400 / 300 = 8"
+              },
+              {
+                "role": "Span",
+                "text": " units per ",
+                "sourceText": " units per "
+              },
+              {
+                "role": "Span",
+                "text": "hour. Next month it produces 2,700 units using the same 300 hours: 9 units per hour. Productivity rises ",
+                "sourceText": "hour. Next month it produces 2,700 units using the same 300 hours: 9 units per hour. Productivity rises "
+              },
+              {
+                "role": "Span",
+                "text": "by",
+                "sourceText": "by"
+              },
+              {
+                "role": "Formula",
+                "text": "(9 minus 8)  divided by  8 times 100  equals  12.5 percent",
+                "sourceText": " (9 - 8) / 8 x 100 = 12.5%"
+              },
+              {
+                "role": "Span",
+                "text": ". More output per labor hour, not simply more total hours, is the ",
+                "sourceText": ". More output per labor hour, not simply more total hours, is the "
+              },
+              {
+                "role": "Span",
+                "text": "improvement.  ",
+                "sourceText": "improvement.  "
+              }
+            ],
+            "sourceText": "A workshop produces 2,400 units using 300 labor hours, so productivity is 2,400 / 300 = 8 units per hour. Next month it produces 2,700 units using the same 300 hours: 9 units per hour. Productivity rises by (9 - 8) / 8 x 100 = 12.5%. More output per labor hour, not simply more total hours, is the improvement.",
+            "text": "A workshop produces 2,400 units using 300 labor hours, so productivity is 2,400 divided by 300 equals 8 units per hour. Next month it produces 2,700 units using the same 300 hours: 9 units per hour. Productivity rises by (9 minus 8) divided by 8 times 100 equals 12.5 percent . More output per labor hour, not simply more total hours, is the improvement."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "CHECK YOURSELF  ",
+                "sourceText": "CHECK YOURSELF  "
+              }
+            ],
+            "sourceText": "CHECK YOURSELF",
+            "text": "CHECK YOURSELF"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "A business uses more labor hours but produces the same amount of output. What happens to labor productivity?  ",
+                "sourceText": "A business uses more labor hours but produces the same amount of output. What happens to labor productivity?  "
+              }
+            ],
+            "sourceText": "A business uses more labor hours but produces the same amount of output. What happens to labor productivity?",
+            "text": "A business uses more labor hours but produces the same amount of output. What happens to labor productivity?"
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "READY?  ",
+                "sourceText": "READY?  "
+              }
+            ],
+            "sourceText": "READY?",
+            "text": "READY?"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Return to the game and master this concept.  ",
+                "sourceText": "Return to the game and master this concept.  "
+              }
+            ],
+            "sourceText": "Return to the game and master this concept.",
+            "text": "Return to the game and master this concept."
+          }
+        ],
+        "roles": [
+          "/Document",
+          "/H1",
+          "/P",
+          "/P",
+          "/P",
+          "/P",
+          "/P",
+          "/H2",
+          "/P",
+          "/Formula",
+          "/H2",
+          "/L",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/H2",
+          "/P",
+          "/H2",
+          "/P",
+          "/Formula",
+          "/Formula",
+          "/H2",
+          "/P",
+          "/H2",
+          "/P"
+        ],
+        "linkedContentCount": 37,
+        "figureAlternatives": [],
+        "formulas": [
+          {
+            "text": "2,400 / 300 = 8",
+            "alternative": "2,400 divided by 300 equals 8",
+            "parent": "/P"
+          },
+          {
+            "text": "2,400 / 300 = 8",
+            "alternative": "2,400  divided by  300  equals  8",
+            "parent": "/P"
+          },
+          {
+            "text": "(9 - 8) / 8 x 100 = 12.5%",
+            "alternative": "(9 minus 8)  divided by  8 times 100  equals  12.5 percent",
+            "parent": "/P"
+          }
+        ],
+        "fonts": [
+          {
+            "font": "/AAAAAA+Arimo-bold",
+            "embedded": true,
+            "unicodeMap": true
+          },
+          {
+            "font": "/AAAAAA+Arimo-regular",
+            "embedded": true,
+            "unicodeMap": true
+          }
+        ],
+        "rawReadingSequence": [
+          "Productivity Measurement",
+          "MACROECONOMICS",
+          "MACRO-11",
+          "Time: 5 minutes",
+          "Outcome: Calculate output per worker and interpret productivity changes.",
+          "Difficulty: Intermediate",
+          "THE CORE IDEA",
+          "Labor productivity measures output per worker or per hour worked. For example, 2,400 units produced in 300 labor hours means 2,400 / 300 = 8 units per hour. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter. A country can consume more when its workers produce more output per worker.",
+          "HOW TO RECOGNIZE IT",
+          "•",
+          "Measure labor productivity as real output per worker or per hour worked.",
+          "•",
+          "Use the same output and labor units when comparing periods.",
+          "•",
+          "An increase in total output need not raise productivity if labor input also rises.",
+          "WATCH OUT",
+          "Do not confuse total output with output per unit of labor. Productivity compares output with the labor input used to produce it, so changes in both output and labor matter.",
+          "WORKED EXAMPLE: MEASURING LABOR PRODUCTIVITY",
+          "A workshop produces 2,400 units using 300 labor hours, so productivity is 2,400 / 300 = 8 units per hour. Next month it produces 2,700 units using the same 300 hours: 9 units per hour. Productivity rises by (9 - 8) / 8 x 100 = 12.5%. More output per labor hour, not simply more total hours, is the improvement.",
+          "CHECK YOURSELF",
+          "A business uses more labor hours but produces the same amount of output. What happens to labor productivity?",
+          "READY?",
+          "Return to the game and master this concept."
+        ]
+      },
+      "sha256": "45eb61150b288f5fea35a3846bcae636a064bdc01abcc318c07a1316a0bcb8b7",
+      "rebuildSHA256": "45eb61150b288f5fea35a3846bcae636a064bdc01abcc318c07a1316a0bcb8b7",
+      "deterministic": true,
+      "contentComparison": "EXACT V2/V3 NORMALIZED TEXT"
+    },
+    {
+      "code": "MACRO-13",
+      "accepted": false,
+      "layout": {
+        "template": "GEN-ECON-01",
+        "referenceSHA256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+        "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+        "bodyFontSize": 10.45,
+        "page": [
+          612,
+          792
+        ],
+        "contentBottom": 130.86400000000003,
+        "components": [
+          {
+            "name": "header",
+            "bounds": [
+              15.84,
+              695.52,
+              596.16,
+              777.6
+            ],
+            "sourceCurve": 0
+          },
+          {
+            "name": "logo-card",
+            "bounds": [
+              37.44,
+              709.2,
+              92.16,
+              763.92
+            ],
+            "sourceCurve": 1
+          },
+          {
+            "name": "icon-logo",
+            "bounds": [
+              41.72538,
+              712.8,
+              87.87461,
+              760.3199999999999
+            ],
+            "assetSHA256": "29c30924e161c41453a1242a0cf2a1fbeb5aed231b43bc5ff4f186ec3c04ef3c"
+          },
+          {
+            "name": "resource-card",
+            "bounds": [
+              449.961,
+              717.159,
+              574.56,
+              755.96
+            ],
+            "sourceCurve": 2
+          },
+          {
+            "name": "metadata",
+            "bounds": [
+              29.52,
+              642.24,
+              582.48,
+              687.6
+            ],
+            "sourceCurve": 3
+          },
+          {
+            "name": "icon-hourglass",
+            "bounds": [
+              39.93862,
+              655.2,
+              58.76148,
+              674.6400000000001
+            ],
+            "assetSHA256": "7087150d09e119b41412caf702ed692fc7f2f92085592541348735c2346b8f61"
+          },
+          {
+            "name": "icon-target",
+            "bounds": [
+              177.18,
+              655.2,
+              196.62,
+              674.6400000000001
+            ],
+            "assetSHA256": "aa50ab412eb2f84dca29a743bbbb6c47fd1c0af255da89972dee42cd14d71f39"
+          },
+          {
+            "name": "difficulty-dots",
+            "centers": [
+              [
+                465,
+                663.6
+              ],
+              [
+                473.2,
+                663.6
+              ],
+              [
+                481.4,
+                663.6
+              ]
+            ],
+            "radius": 3.05,
+            "active": 2
+          },
+          {
+            "name": "title",
+            "baseline": 599.3574,
+            "fontSize": 32,
+            "bounds": [
+              117.52344640000001,
+              592,
+              494.4765536,
+              628
+            ]
+          },
+          {
+            "name": "core",
+            "bounds": [
+              79.92,
+              501.07800000000003,
+              583.2,
+              582.326
+            ]
+          },
+          {
+            "name": "icon-core",
+            "bounds": [
+              32.56744,
+              544.166,
+              68.95256,
+              582.326
+            ],
+            "assetSHA256": "057882bd5ed3933fd0fe00572a696d157f553accfd155a27f37c4d26a5d28481"
+          },
+          {
+            "name": "recognition",
+            "bounds": [
+              79.92,
+              406.69000000000005,
+              583.2,
+              491.07800000000003
+            ]
+          },
+          {
+            "name": "icon-recognition",
+            "bounds": [
+              32.98091,
+              452.918,
+              68.53909,
+              491.07800000000003
+            ],
+            "assetSHA256": "2417d7822a37aa9636a50c821b4e11fa9793d5f50b792ddcd2d0d54797dd7e5a"
+          },
+          {
+            "name": "watch",
+            "bounds": [
+              79.92,
+              314.74800000000005,
+              583.2,
+              396.69000000000005
+            ],
+            "fill": [
+              0.918,
+              0.973,
+              0.973
+            ],
+            "stroke": [
+              0.071,
+              0.686,
+              0.663
+            ],
+            "strokeWidth": 1.05,
+            "radius": 8
+          },
+          {
+            "name": "icon-watch",
+            "bounds": [
+              32.56744,
+              358.5300000000001,
+              68.95256,
+              396.69000000000005
+            ],
+            "assetSHA256": "cc44af415e44bd1632d616d7a41417496c170776d934b8f31f3a9b451a0ce151"
+          },
+          {
+            "name": "worked",
+            "bounds": [
+              79.92,
+              209.43000000000004,
+              583.2,
+              304.74800000000005
+            ],
+            "fill": [
+              1,
+              1,
+              1
+            ],
+            "stroke": [
+              0.031,
+              0.157,
+              0.373
+            ],
+            "strokeWidth": 1.05,
+            "radius": 8
+          },
+          {
+            "name": "icon-worked",
+            "bounds": [
+              31.68,
+              266.588,
+              69.84,
+              304.74800000000005
+            ],
+            "assetSHA256": "8f987f2c7eed462f88380699dbb93fad0e9457637aca446493ace4f189b7ed48"
+          },
+          {
+            "name": "check",
+            "bounds": [
+              79.92,
+              130.86400000000003,
+              583.2,
+              199.43000000000004
+            ],
+            "fill": [
+              0.918,
+              0.973,
+              0.973
+            ],
+            "stroke": [
+              0.071,
+              0.686,
+              0.663
+            ],
+            "strokeWidth": 1.05,
+            "radius": 8
+          },
+          {
+            "name": "icon-check",
+            "bounds": [
+              32.99586,
+              161.27000000000004,
+              68.52414,
+              199.43000000000004
+            ],
+            "assetSHA256": "8e42454c430b969f4fa9d74d2e6e76873c0ab8e54e0822d80d0111e3bfdf962e"
+          },
+          {
+            "name": "footer",
+            "bounds": [
+              16.0,
+              15.0,
+              596.0,
+              56.0
+            ],
+            "sourceCurve": 10
+          },
+          {
+            "name": "footer-arrow-circle",
+            "bounds": [
+              82.5,
+              26.0,
+              101.5,
+              45.0
+            ],
+            "sourceCurve": 11
+          }
+        ],
+        "textBounds": [
+          [
+            105.12,
+            721.2573,
+            444.12,
+            751.7673000000001
+          ],
+          [
+            475.70321226404997,
+            728.6260100000001,
+            548.82778773595,
+            744.4454450000001
+          ],
+          [
+            64.47,
+            657.80721,
+            94.35,
+            669.558645
+          ],
+          [
+            94.35,
+            657.80721,
+            162.35,
+            669.558645
+          ],
+          [
+            405.42,
+            658.1499650000001,
+            459.42,
+            669.3361175
+          ],
+          [
+            489.7,
+            658.5429,
+            573.7,
+            669.3344000000001
+          ],
+          [
+            117.52344640000001,
+            592.3174,
+            494.4865536,
+            628.4774
+          ],
+          [
+            80.44425,
+            563.1336,
+            583.72425,
+            581.4395999999999
+          ],
+          [
+            80.44365,
+            501.079,
+            583.72365,
+            553.0155
+          ],
+          [
+            80.44425,
+            471.8856,
+            583.72425,
+            490.19160000000005
+          ],
+          [
+            87.6249,
+            451.28900000000004,
+            94.6249,
+            463.0975
+          ],
+          [
+            94.8,
+            451.28900000000004,
+            583.1999999999999,
+            463.0975
+          ],
+          [
+            87.6249,
+            436.42300000000006,
+            94.6249,
+            448.23150000000004
+          ],
+          [
+            94.8,
+            436.42300000000006,
+            583.1999999999999,
+            448.23150000000004
+          ],
+          [
+            87.6249,
+            421.5570000000001,
+            94.6249,
+            433.36550000000005
+          ],
+          [
+            94.8,
+            421.5570000000001,
+            583.1999999999999,
+            433.36550000000005
+          ],
+          [
+            87.6249,
+            406.6910000000001,
+            94.6249,
+            418.49950000000007
+          ],
+          [
+            94.8,
+            406.6910000000001,
+            583.1999999999999,
+            418.49950000000007
+          ],
+          [
+            91.77075,
+            368.77790000000005,
+            571.34375,
+            386.85790000000003
+          ],
+          [
+            91.77365,
+            320.54900000000004,
+            571.34665,
+            359.1095
+          ],
+          [
+            91.77075,
+            276.83590000000004,
+            571.34375,
+            294.9159
+          ],
+          [
+            91.77365,
+            215.23100000000002,
+            571.34665,
+            267.1675
+          ],
+          [
+            91.77075,
+            171.51790000000003,
+            571.34375,
+            189.59790000000004
+          ],
+          [
+            91.77365,
+            136.66500000000002,
+            571.34665,
+            161.84950000000003
+          ],
+          [
+            109,
+            24.98,
+            199,
+            43.06
+          ],
+          [
+            207,
+            27.77,
+            582,
+            40.765
+          ]
+        ],
+        "layoutMode": "TEXT",
+        "exceptions": [
+          {
+            "component": "spacing",
+            "reason": "Dense frozen content",
+            "gap": 10
+          }
+        ],
+        "clipping": "PENDING_RENDER_REVIEW",
+        "styleAuthority": "GEN-ECON-01",
+        "contentAuthority": "v2/v3"
+      },
+      "status": "EXPERIMENTAL_CANDIDATE",
+      "output": "tmp\\pdf_accessibility\\canonical_template_v1\\tagged\\MACRO-13.pdf",
+      "tagCount": 30,
+      "mcids": 27,
+      "unassignedMeaningfulBlocks": 0,
+      "inlineFormulaSemantics": "NO_INLINE_EXPRESSIONS_SELECTED",
+      "transcript": [
+        {
+          "role": "H1",
+          "text": "Economic Growth Policy",
+          "node": 0
+        },
+        {
+          "role": "P",
+          "text": "MACROECONOMICS",
+          "node": 1
+        },
+        {
+          "role": "P",
+          "text": "MACRO-13",
+          "node": 2
+        },
+        {
+          "role": "P",
+          "text": "Time: 5 minutes",
+          "node": 3
+        },
+        {
+          "role": "P",
+          "text": "Outcome: Evaluate policies affecting long-run productivity and growth.",
+          "node": 4
+        },
+        {
+          "role": "P",
+          "text": "Difficulty: Intermediate",
+          "node": 5
+        },
+        {
+          "role": "H2",
+          "text": "THE CORE IDEA",
+          "node": 6
+        },
+        {
+          "role": "P",
+          "text": "Long-run growth policy raises productive capacity rather than current spending alone. Saving and reliable finance support capital formation; education builds human capital; research and competition can advance technology. Stable property rights and institutions make firms more willing to invest. Because physical capital faces diminishing returns, sustained growth usually depends on several of these channels working together.",
+          "node": 7
+        },
+        {
+          "role": "H2",
+          "text": "HOW TO RECOGNIZE IT",
+          "node": 8
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 11
+        },
+        {
+          "role": "LBody",
+          "text": "The policy changes capital formation, human capital, technology, or institutions.",
+          "node": 12
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 14
+        },
+        {
+          "role": "LBody",
+          "text": "The question distinguishes productive capacity from a temporary demand increase.",
+          "node": 15
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 17
+        },
+        {
+          "role": "LBody",
+          "text": "Reliable finance and property rights affect whether saving becomes productive investment.",
+          "node": 18
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 20
+        },
+        {
+          "role": "LBody",
+          "text": "The proposed change can raise output per worker over time.",
+          "node": 21
+        },
+        {
+          "role": "H2",
+          "text": "WATCH OUT",
+          "node": 22
+        },
+        {
+          "role": "P",
+          "text": "Do not treat a one-time demand boost as a substitute for policies that raise productive capacity. Long-run growth policy works through productivity, capital formation, human capital, technology, and institutions.",
+          "node": 23
+        },
+        {
+          "role": "H2",
+          "text": "WORKED EXAMPLE: EVALUATING A GROWTH POLICY",
+          "node": 24
+        },
+        {
+          "role": "P",
+          "text": "A government compares a temporary shopping rebate with worker training and reliable electricity for firms. The rebate can raise current spending, but training can improve skills and reliable power can reduce lost production. For long-run growth, evaluate the latter policies by their likely productivity gains, resource costs, implementation quality, and time to deliver results.",
+          "node": 25
+        },
+        {
+          "role": "H2",
+          "text": "CHECK YOURSELF",
+          "node": 26
+        },
+        {
+          "role": "P",
+          "text": "Why might worker training raise long-run productive capacity while a temporary shopping rebate mainly changes current demand?",
+          "node": 27
+        },
+        {
+          "role": "H2",
+          "text": "READY?",
+          "node": 28
+        },
+        {
+          "role": "P",
+          "text": "Return to the game and master this concept.",
+          "node": 29
+        }
+      ],
+      "semanticCheck": {
+        "errors": [],
+        "transcript": [
+          {
+            "role": "H1",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Economic Growth Policy  ",
+                "sourceText": "Economic Growth Policy  "
+              }
+            ],
+            "sourceText": "Economic Growth Policy",
+            "text": "Economic Growth Policy"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "MACROECONOMICS  ",
+                "sourceText": "MACROECONOMICS  "
+              }
+            ],
+            "sourceText": "MACROECONOMICS",
+            "text": "MACROECONOMICS"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "MACRO-13  ",
+                "sourceText": "MACRO-13  "
+              }
+            ],
+            "sourceText": "MACRO-13",
+            "text": "MACRO-13"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Time:  ",
+                "sourceText": "Time:  "
+              },
+              {
+                "role": "Span",
+                "text": "5 minutes  ",
+                "sourceText": "5 minutes  "
+              }
+            ],
+            "sourceText": "Time: 5 minutes",
+            "text": "Time: 5 minutes"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Outcome: Evaluate policies affecting long-run productivity and growth.  ",
+                "sourceText": "Outcome: Evaluate policies affecting long-run productivity and growth.  "
+              }
+            ],
+            "sourceText": "Outcome: Evaluate policies affecting long-run productivity and growth.",
+            "text": "Outcome: Evaluate policies affecting long-run productivity and growth."
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Difficulty:  ",
+                "sourceText": "Difficulty:  "
+              },
+              {
+                "role": "Span",
+                "text": "Intermediate  ",
+                "sourceText": "Intermediate  "
+              }
+            ],
+            "sourceText": "Difficulty: Intermediate",
+            "text": "Difficulty: Intermediate"
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "THE CORE IDEA  ",
+                "sourceText": "THE CORE IDEA  "
+              }
+            ],
+            "sourceText": "THE CORE IDEA",
+            "text": "THE CORE IDEA"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Long-run growth policy raises productive capacity rather than current spending alone. Saving and reliable finance support capital formation; education builds human capital; research and competition can advance technology. Stable property rights and institutions make firms more willing to invest. Because physical capital faces diminishing returns, sustained growth usually depends on several of these channels working together.  ",
+                "sourceText": "Long-run growth policy raises productive capacity rather than current spending alone. Saving and reliable finance support capital formation; education builds human capital; research and competition can advance technology. Stable property rights and institutions make firms more willing to invest. Because physical capital faces diminishing returns, sustained growth usually depends on several of these channels working together.  "
+              }
+            ],
+            "sourceText": "Long-run growth policy raises productive capacity rather than current spending alone. Saving and reliable finance support capital formation; education builds human capital; research and competition can advance technology. Stable property rights and institutions make firms more willing to invest. Because physical capital faces diminishing returns, sustained growth usually depends on several of these channels working together.",
+            "text": "Long-run growth policy raises productive capacity rather than current spending alone. Saving and reliable finance support capital formation; education builds human capital; research and competition can advance technology. Stable property rights and institutions make firms more willing to invest. Because physical capital faces diminishing returns, sustained growth usually depends on several of these channels working together."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "HOW TO RECOGNIZE IT  ",
+                "sourceText": "HOW TO RECOGNIZE IT  "
+              }
+            ],
+            "sourceText": "HOW TO RECOGNIZE IT",
+            "text": "HOW TO RECOGNIZE IT"
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "The policy changes capital formation, human capital, technology, or institutions.  ",
+                "sourceText": "The policy changes capital formation, human capital, technology, or institutions.  "
+              }
+            ],
+            "sourceText": "The policy changes capital formation, human capital, technology, or institutions.",
+            "text": "The policy changes capital formation, human capital, technology, or institutions."
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "The question distinguishes productive capacity from a temporary demand increase.  ",
+                "sourceText": "The question distinguishes productive capacity from a temporary demand increase.  "
+              }
+            ],
+            "sourceText": "The question distinguishes productive capacity from a temporary demand increase.",
+            "text": "The question distinguishes productive capacity from a temporary demand increase."
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Reliable finance and property rights affect whether saving becomes productive investment.  ",
+                "sourceText": "Reliable finance and property rights affect whether saving becomes productive investment.  "
+              }
+            ],
+            "sourceText": "Reliable finance and property rights affect whether saving becomes productive investment.",
+            "text": "Reliable finance and property rights affect whether saving becomes productive investment."
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "The proposed change can raise output per worker over time.  ",
+                "sourceText": "The proposed change can raise output per worker over time.  "
+              }
+            ],
+            "sourceText": "The proposed change can raise output per worker over time.",
+            "text": "The proposed change can raise output per worker over time."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "WATCH OUT  ",
+                "sourceText": "WATCH OUT  "
+              }
+            ],
+            "sourceText": "WATCH OUT",
+            "text": "WATCH OUT"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Do not treat a one-time demand boost as a substitute for policies that raise productive capacity. Long-run growth policy works through productivity, capital formation, human capital, technology, and institutions.  ",
+                "sourceText": "Do not treat a one-time demand boost as a substitute for policies that raise productive capacity. Long-run growth policy works through productivity, capital formation, human capital, technology, and institutions.  "
+              }
+            ],
+            "sourceText": "Do not treat a one-time demand boost as a substitute for policies that raise productive capacity. Long-run growth policy works through productivity, capital formation, human capital, technology, and institutions.",
+            "text": "Do not treat a one-time demand boost as a substitute for policies that raise productive capacity. Long-run growth policy works through productivity, capital formation, human capital, technology, and institutions."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "WORKED EXAMPLE: EVALUATING A GROWTH POLICY  ",
+                "sourceText": "WORKED EXAMPLE: EVALUATING A GROWTH POLICY  "
+              }
+            ],
+            "sourceText": "WORKED EXAMPLE: EVALUATING A GROWTH POLICY",
+            "text": "WORKED EXAMPLE: EVALUATING A GROWTH POLICY"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "A government compares a temporary shopping rebate with worker training and reliable electricity for firms. The rebate can raise current spending, but training can improve skills and reliable power can reduce lost production. For long-run growth, evaluate the latter policies by their likely productivity gains, resource costs, implementation quality, and time to deliver results.  ",
+                "sourceText": "A government compares a temporary shopping rebate with worker training and reliable electricity for firms. The rebate can raise current spending, but training can improve skills and reliable power can reduce lost production. For long-run growth, evaluate the latter policies by their likely productivity gains, resource costs, implementation quality, and time to deliver results.  "
+              }
+            ],
+            "sourceText": "A government compares a temporary shopping rebate with worker training and reliable electricity for firms. The rebate can raise current spending, but training can improve skills and reliable power can reduce lost production. For long-run growth, evaluate the latter policies by their likely productivity gains, resource costs, implementation quality, and time to deliver results.",
+            "text": "A government compares a temporary shopping rebate with worker training and reliable electricity for firms. The rebate can raise current spending, but training can improve skills and reliable power can reduce lost production. For long-run growth, evaluate the latter policies by their likely productivity gains, resource costs, implementation quality, and time to deliver results."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "CHECK YOURSELF  ",
+                "sourceText": "CHECK YOURSELF  "
+              }
+            ],
+            "sourceText": "CHECK YOURSELF",
+            "text": "CHECK YOURSELF"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Why might worker training raise long-run productive capacity while a temporary shopping rebate mainly changes current demand?  ",
+                "sourceText": "Why might worker training raise long-run productive capacity while a temporary shopping rebate mainly changes current demand?  "
+              }
+            ],
+            "sourceText": "Why might worker training raise long-run productive capacity while a temporary shopping rebate mainly changes current demand?",
+            "text": "Why might worker training raise long-run productive capacity while a temporary shopping rebate mainly changes current demand?"
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "READY?  ",
+                "sourceText": "READY?  "
+              }
+            ],
+            "sourceText": "READY?",
+            "text": "READY?"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Return to the game and master this concept.  ",
+                "sourceText": "Return to the game and master this concept.  "
+              }
+            ],
+            "sourceText": "Return to the game and master this concept.",
+            "text": "Return to the game and master this concept."
+          }
+        ],
+        "roles": [
+          "/Document",
+          "/H1",
+          "/P",
+          "/P",
+          "/P",
+          "/P",
+          "/P",
+          "/H2",
+          "/P",
+          "/H2",
+          "/L",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/H2",
+          "/P",
+          "/H2",
+          "/P",
+          "/H2",
+          "/P",
+          "/H2",
+          "/P"
+        ],
+        "linkedContentCount": 27,
+        "figureAlternatives": [],
+        "formulas": [],
+        "fonts": [
+          {
+            "font": "/AAAAAA+Arimo-bold",
+            "embedded": true,
+            "unicodeMap": true
+          },
+          {
+            "font": "/AAAAAA+Arimo-regular",
+            "embedded": true,
+            "unicodeMap": true
+          }
+        ],
+        "rawReadingSequence": [
+          "Economic Growth Policy",
+          "MACROECONOMICS",
+          "MACRO-13",
+          "Time: 5 minutes",
+          "Outcome: Evaluate policies affecting long-run productivity and growth.",
+          "Difficulty: Intermediate",
+          "THE CORE IDEA",
+          "Long-run growth policy raises productive capacity rather than current spending alone. Saving and reliable finance support capital formation; education builds human capital; research and competition can advance technology. Stable property rights and institutions make firms more willing to invest. Because physical capital faces diminishing returns, sustained growth usually depends on several of these channels working together.",
+          "HOW TO RECOGNIZE IT",
+          "•",
+          "The policy changes capital formation, human capital, technology, or institutions.",
+          "•",
+          "The question distinguishes productive capacity from a temporary demand increase.",
+          "•",
+          "Reliable finance and property rights affect whether saving becomes productive investment.",
+          "•",
+          "The proposed change can raise output per worker over time.",
+          "WATCH OUT",
+          "Do not treat a one-time demand boost as a substitute for policies that raise productive capacity. Long-run growth policy works through productivity, capital formation, human capital, technology, and institutions.",
+          "WORKED EXAMPLE: EVALUATING A GROWTH POLICY",
+          "A government compares a temporary shopping rebate with worker training and reliable electricity for firms. The rebate can raise current spending, but training can improve skills and reliable power can reduce lost production. For long-run growth, evaluate the latter policies by their likely productivity gains, resource costs, implementation quality, and time to deliver results.",
+          "CHECK YOURSELF",
+          "Why might worker training raise long-run productive capacity while a temporary shopping rebate mainly changes current demand?",
+          "READY?",
+          "Return to the game and master this concept."
+        ]
+      },
+      "sha256": "8597af794f3447fe6b95911413ea7a5d24d9a4d6df939c91259675966e38ace4",
+      "rebuildSHA256": "8597af794f3447fe6b95911413ea7a5d24d9a4d6df939c91259675966e38ace4",
+      "deterministic": true,
+      "contentComparison": "EXACT V2/V3 NORMALIZED TEXT"
+    },
+    {
+      "code": "MACRO-16",
+      "accepted": false,
+      "status": "BLOCKED",
+      "reason": "Canonical readable layout does not fit MACRO-16: 519.665"
+    },
+    {
+      "code": "MACRO-20",
+      "accepted": false,
+      "status": "BLOCKED",
+      "reason": "Canonical readable layout does not fit MACRO-20: 526.0699999999999"
+    },
+    {
+      "code": "MICRO-52",
+      "accepted": false,
+      "status": "BLOCKED",
+      "reason": "Canonical readable layout does not fit MICRO-52: 500.895"
+    },
+    {
+      "code": "GEN-ECON-09",
+      "accepted": false,
+      "layout": {
+        "template": "GEN-ECON-01",
+        "referenceSHA256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+        "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+        "bodyFontSize": 9.55,
+        "page": [
+          612,
+          792
+        ],
+        "contentBottom": 87.43371646977067,
+        "components": [
+          {
+            "name": "header",
+            "bounds": [
+              15.84,
+              695.52,
+              596.16,
+              777.6
+            ],
+            "sourceCurve": 0
+          },
+          {
+            "name": "logo-card",
+            "bounds": [
+              37.44,
+              709.2,
+              92.16,
+              763.92
+            ],
+            "sourceCurve": 1
+          },
+          {
+            "name": "icon-logo",
+            "bounds": [
+              41.72538,
+              712.8,
+              87.87461,
+              760.3199999999999
+            ],
+            "assetSHA256": "29c30924e161c41453a1242a0cf2a1fbeb5aed231b43bc5ff4f186ec3c04ef3c"
+          },
+          {
+            "name": "resource-card",
+            "bounds": [
+              449.961,
+              717.159,
+              574.56,
+              755.96
+            ],
+            "sourceCurve": 2
+          },
+          {
+            "name": "metadata",
+            "bounds": [
+              29.52,
+              642.24,
+              582.48,
+              687.6
+            ],
+            "sourceCurve": 3
+          },
+          {
+            "name": "icon-hourglass",
+            "bounds": [
+              39.93862,
+              655.2,
+              58.76148,
+              674.6400000000001
+            ],
+            "assetSHA256": "7087150d09e119b41412caf702ed692fc7f2f92085592541348735c2346b8f61"
+          },
+          {
+            "name": "icon-target",
+            "bounds": [
+              177.18,
+              655.2,
+              196.62,
+              674.6400000000001
+            ],
+            "assetSHA256": "aa50ab412eb2f84dca29a743bbbb6c47fd1c0af255da89972dee42cd14d71f39"
+          },
+          {
+            "name": "difficulty-dots",
+            "centers": [
+              [
+                465,
+                663.6
+              ],
+              [
+                473.2,
+                663.6
+              ],
+              [
+                481.4,
+                663.6
+              ]
+            ],
+            "radius": 3.05,
+            "active": 1
+          },
+          {
+            "name": "title",
+            "baseline": 599.3574,
+            "fontSize": 25.0,
+            "bounds": [
+              30.23707374999998,
+              592,
+              581.76292625,
+              628
+            ]
+          },
+          {
+            "name": "core",
+            "bounds": [
+              79.92,
+              492.31,
+              583.2,
+              582.326
+            ]
+          },
+          {
+            "name": "icon-core",
+            "bounds": [
+              32.56744,
+              544.166,
+              68.95256,
+              582.326
+            ],
+            "assetSHA256": "057882bd5ed3933fd0fe00572a696d157f553accfd155a27f37c4d26a5d28481"
+          },
+          {
+            "name": "recognition",
+            "bounds": [
+              79.92,
+              387.664,
+              583.2,
+              482.31
+            ]
+          },
+          {
+            "name": "icon-recognition",
+            "bounds": [
+              32.98091,
+              444.15,
+              68.53909,
+              482.31
+            ],
+            "assetSHA256": "2417d7822a37aa9636a50c821b4e11fa9793d5f50b792ddcd2d0d54797dd7e5a"
+          },
+          {
+            "name": "watch",
+            "bounds": [
+              79.92,
+              310.25,
+              583.2,
+              377.664
+            ],
+            "fill": [
+              0.918,
+              0.973,
+              0.973
+            ],
+            "stroke": [
+              0.071,
+              0.686,
+              0.663
+            ],
+            "strokeWidth": 1.05,
+            "radius": 8
+          },
+          {
+            "name": "icon-watch",
+            "bounds": [
+              32.56744,
+              339.504,
+              68.95256,
+              377.664
+            ],
+            "assetSHA256": "cc44af415e44bd1632d616d7a41417496c170776d934b8f31f3a9b451a0ce151"
+          },
+          {
+            "name": "worked",
+            "bounds": [
+              79.92,
+              152.62371646977067,
+              583.2,
+              300.25
+            ],
+            "fill": [
+              1,
+              1,
+              1
+            ],
+            "stroke": [
+              0.031,
+              0.157,
+              0.373
+            ],
+            "strokeWidth": 1.05,
+            "radius": 8
+          },
+          {
+            "name": "icon-worked",
+            "bounds": [
+              31.68,
+              262.09,
+              69.84,
+              300.25
+            ],
+            "assetSHA256": "8f987f2c7eed462f88380699dbb93fad0e9457637aca446493ace4f189b7ed48"
+          },
+          {
+            "name": "table",
+            "bounds": [
+              91.77365,
+              202.72171646977066,
+              571.34665,
+              262.71
+            ]
+          },
+          {
+            "name": "check",
+            "bounds": [
+              79.92,
+              87.43371646977067,
+              583.2,
+              142.62371646977067
+            ],
+            "fill": [
+              0.918,
+              0.973,
+              0.973
+            ],
+            "stroke": [
+              0.071,
+              0.686,
+              0.663
+            ],
+            "strokeWidth": 1.05,
+            "radius": 8
+          },
+          {
+            "name": "icon-check",
+            "bounds": [
+              32.99586,
+              104.46371646977067,
+              68.52414,
+              142.62371646977067
+            ],
+            "assetSHA256": "8e42454c430b969f4fa9d74d2e6e76873c0ab8e54e0822d80d0111e3bfdf962e"
+          },
+          {
+            "name": "footer",
+            "bounds": [
+              16.0,
+              15.0,
+              596.0,
+              56.0
+            ],
+            "sourceCurve": 10
+          },
+          {
+            "name": "footer-arrow-circle",
+            "bounds": [
+              82.5,
+              26.0,
+              101.5,
+              45.0
+            ],
+            "sourceCurve": 11
+          }
+        ],
+        "textBounds": [
+          [
+            105.12,
+            721.2573,
+            444.12,
+            751.7673000000001
+          ],
+          [
+            464.42090041815,
+            728.6260100000001,
+            560.11009958185,
+            744.4454450000001
+          ],
+          [
+            64.47,
+            657.80721,
+            94.35,
+            669.558645
+          ],
+          [
+            94.35,
+            657.80721,
+            162.35,
+            669.558645
+          ],
+          [
+            405.42,
+            658.1499650000001,
+            459.42,
+            669.3361175
+          ],
+          [
+            489.7,
+            658.5429,
+            573.7,
+            669.3344000000001
+          ],
+          [
+            30.23707374999998,
+            593.8574,
+            581.77292625,
+            622.1074
+          ],
+          [
+            80.44425,
+            563.1336,
+            583.72425,
+            581.4395999999999
+          ],
+          [
+            80.44365,
+            492.50899999999996,
+            583.72365,
+            552.1965
+          ],
+          [
+            80.44425,
+            463.1176,
+            583.72425,
+            481.4236
+          ],
+          [
+            87.6249,
+            442.719,
+            94.6249,
+            453.5105
+          ],
+          [
+            94.8,
+            442.719,
+            583.1999999999999,
+            453.5105
+          ],
+          [
+            87.6249,
+            429.005,
+            94.6249,
+            439.7965
+          ],
+          [
+            94.8,
+            429.005,
+            583.1999999999999,
+            439.7965
+          ],
+          [
+            87.6249,
+            415.291,
+            94.6249,
+            426.0825
+          ],
+          [
+            94.8,
+            415.291,
+            583.1999999999999,
+            426.0825
+          ],
+          [
+            87.6249,
+            401.577,
+            94.6249,
+            412.3685
+          ],
+          [
+            94.8,
+            401.577,
+            583.1999999999999,
+            412.3685
+          ],
+          [
+            87.6249,
+            387.863,
+            94.6249,
+            398.6545
+          ],
+          [
+            94.8,
+            387.863,
+            583.1999999999999,
+            398.6545
+          ],
+          [
+            91.77075,
+            349.7519,
+            571.34375,
+            367.83189999999996
+          ],
+          [
+            91.77365,
+            316.24899999999997,
+            571.34665,
+            339.26449999999994
+          ],
+          [
+            91.77075,
+            272.3379,
+            571.34375,
+            290.4179
+          ],
+          [
+            91.77365,
+            158.62271646977064,
+            571.34665,
+            193.86221646977066
+          ],
+          [
+            91.77075,
+            114.71161646977068,
+            571.34375,
+            132.79161646977067
+          ],
+          [
+            91.77365,
+            93.43271646977067,
+            571.34665,
+            104.22421646977067
+          ],
+          [
+            109,
+            24.98,
+            199,
+            43.06
+          ],
+          [
+            207,
+            27.77,
+            582,
+            40.765
+          ]
+        ],
+        "layoutMode": "FULL-WIDTH TABLE",
+        "exceptions": [
+          {
+            "component": "title",
+            "reason": "Long resource title",
+            "size": 25.0
+          },
+          {
+            "component": "spacing",
+            "reason": "Dense frozen content",
+            "gap": 10
+          },
+          {
+            "component": "body",
+            "reason": "Dense frozen content",
+            "size": 9.55
+          }
+        ],
+        "clipping": "PENDING_RENDER_REVIEW",
+        "styleAuthority": "GEN-ECON-01",
+        "contentAuthority": "v2/v3"
+      },
+      "status": "EXPERIMENTAL_CANDIDATE",
+      "output": "tmp\\pdf_accessibility\\canonical_template_v1\\tagged\\GEN-ECON-09.pdf",
+      "tagCount": 57,
+      "mcids": 55,
+      "unassignedMeaningfulBlocks": 0,
+      "inlineFormulaSemantics": "SOURCE_BOUND_RUNS",
+      "transcript": [
+        {
+          "role": "H1",
+          "text": "Comparative Advantage and Gains from Trade",
+          "node": 0
+        },
+        {
+          "role": "P",
+          "text": "GENERAL ECONOMICS",
+          "node": 1
+        },
+        {
+          "role": "P",
+          "text": "GEN-ECON-09",
+          "node": 2
+        },
+        {
+          "role": "P",
+          "text": "Time: 5 minutes",
+          "node": 3
+        },
+        {
+          "role": "P",
+          "text": "Outcome: Analyze Comparative Advantage and Gains from Trade.",
+          "node": 4
+        },
+        {
+          "role": "P",
+          "text": "Difficulty: Beginner",
+          "node": 5
+        },
+        {
+          "role": "H2",
+          "text": "THE CORE IDEA",
+          "node": 6
+        },
+        {
+          "role": "P",
+          "text": "Comparative advantage belongs to the producer with the lower opportunity cost, even when another producer has an absolute advantage in both goods. Compute the forgone alternative per unit, then select the lower opportunity cost. Specialization creates potential output gains; the trading terms determine whether both sides gain. Use opportunity cost and net benefits to evaluate specialization and exchange. Different opportunity costs create room for specialization and mutually beneficial exchange.",
+          "node": 7
+        },
+        {
+          "role": "H2",
+          "text": "HOW TO RECOGNIZE IT",
+          "node": 8
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 11
+        },
+        {
+          "role": "LBody",
+          "text": "Use opportunity cost and net benefits to evaluate specialization and exchange.",
+          "node": 12
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 14
+        },
+        {
+          "role": "LBody",
+          "text": "Different opportunity costs create room for specialization and mutually beneficial exchange.",
+          "node": 15
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 17
+        },
+        {
+          "role": "LBody",
+          "text": "One lamp costs Ari 2 rugs and costs Bea 6 rugs.",
+          "node": 18
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 20
+        },
+        {
+          "role": "LBody",
+          "text": "One producer is more productive in both goods.",
+          "node": 21
+        },
+        {
+          "role": "Lbl",
+          "text": "•",
+          "node": 23
+        },
+        {
+          "role": "LBody",
+          "text": "Two firms specialize and create 40 extra units of combined output.",
+          "node": 24
+        },
+        {
+          "role": "H2",
+          "text": "WATCH OUT",
+          "node": 25
+        },
+        {
+          "role": "P",
+          "text": "A common mistake is to choose the producer with the greatest absolute output. Comparative advantage depends on lower opportunity cost, and a mutually beneficial terms-of-trade ratio lies between the two opportunity costs.",
+          "node": 26
+        },
+        {
+          "role": "H2",
+          "text": "WORKED EXAMPLE: FINDING COMPARATIVE ADVANTAGE",
+          "node": 27
+        },
+        {
+          "role": "P",
+          "text": "Ari gives up 24/12 = 2 rugs per lamp; Bea gives up 60/10 = 6 rugs per lamp. Ari has comparative advantage in lamps. For rugs, Bea gives up 1/6 lamp, below Ari's 1/2 lamp. A trade of one lamp for four rugs lies between the two lamp costs, so both can gain from specializing and exchanging.",
+          "node": 48
+        },
+        {
+          "role": "H2",
+          "text": "CHECK YOURSELF",
+          "node": 49
+        },
+        {
+          "role": "P",
+          "text": "If 1 X costs 2 Y, what is the cost of 1 Y?",
+          "node": 50
+        },
+        {
+          "role": "H2",
+          "text": "READY?",
+          "node": 51
+        },
+        {
+          "role": "P",
+          "text": "Return to the game and master this concept.",
+          "node": 52
+        }
+      ],
+      "semanticCheck": {
+        "errors": [],
+        "transcript": [
+          {
+            "role": "H1",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Comparative Advantage and Gains from Trade  ",
+                "sourceText": "Comparative Advantage and Gains from Trade  "
+              }
+            ],
+            "sourceText": "Comparative Advantage and Gains from Trade",
+            "text": "Comparative Advantage and Gains from Trade"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "GENERAL ECONOMICS  ",
+                "sourceText": "GENERAL ECONOMICS  "
+              }
+            ],
+            "sourceText": "GENERAL ECONOMICS",
+            "text": "GENERAL ECONOMICS"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "GEN-ECON-09  ",
+                "sourceText": "GEN-ECON-09  "
+              }
+            ],
+            "sourceText": "GEN-ECON-09",
+            "text": "GEN-ECON-09"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Time:  ",
+                "sourceText": "Time:  "
+              },
+              {
+                "role": "Span",
+                "text": "5 minutes  ",
+                "sourceText": "5 minutes  "
+              }
+            ],
+            "sourceText": "Time: 5 minutes",
+            "text": "Time: 5 minutes"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Outcome: Analyze Comparative Advantage and Gains from Trade.  ",
+                "sourceText": "Outcome: Analyze Comparative Advantage and Gains from Trade.  "
+              }
+            ],
+            "sourceText": "Outcome: Analyze Comparative Advantage and Gains from Trade.",
+            "text": "Outcome: Analyze Comparative Advantage and Gains from Trade."
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Difficulty:  ",
+                "sourceText": "Difficulty:  "
+              },
+              {
+                "role": "Span",
+                "text": "Beginner  ",
+                "sourceText": "Beginner  "
+              }
+            ],
+            "sourceText": "Difficulty: Beginner",
+            "text": "Difficulty: Beginner"
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "THE CORE IDEA  ",
+                "sourceText": "THE CORE IDEA  "
+              }
+            ],
+            "sourceText": "THE CORE IDEA",
+            "text": "THE CORE IDEA"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Comparative advantage belongs to the producer with the lower opportunity cost, even when another producer has an absolute advantage in both goods. Compute the forgone alternative per unit, then select the lower opportunity cost. Specialization creates potential output gains; the trading terms determine whether both sides gain. Use opportunity cost and net benefits to evaluate specialization and exchange. Different opportunity costs create room for specialization and mutually beneficial exchange.  ",
+                "sourceText": "Comparative advantage belongs to the producer with the lower opportunity cost, even when another producer has an absolute advantage in both goods. Compute the forgone alternative per unit, then select the lower opportunity cost. Specialization creates potential output gains; the trading terms determine whether both sides gain. Use opportunity cost and net benefits to evaluate specialization and exchange. Different opportunity costs create room for specialization and mutually beneficial exchange.  "
+              }
+            ],
+            "sourceText": "Comparative advantage belongs to the producer with the lower opportunity cost, even when another producer has an absolute advantage in both goods. Compute the forgone alternative per unit, then select the lower opportunity cost. Specialization creates potential output gains; the trading terms determine whether both sides gain. Use opportunity cost and net benefits to evaluate specialization and exchange. Different opportunity costs create room for specialization and mutually beneficial exchange.",
+            "text": "Comparative advantage belongs to the producer with the lower opportunity cost, even when another producer has an absolute advantage in both goods. Compute the forgone alternative per unit, then select the lower opportunity cost. Specialization creates potential output gains; the trading terms determine whether both sides gain. Use opportunity cost and net benefits to evaluate specialization and exchange. Different opportunity costs create room for specialization and mutually beneficial exchange."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "HOW TO RECOGNIZE IT  ",
+                "sourceText": "HOW TO RECOGNIZE IT  "
+              }
+            ],
+            "sourceText": "HOW TO RECOGNIZE IT",
+            "text": "HOW TO RECOGNIZE IT"
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Use opportunity cost and net benefits to evaluate specialization and exchange.  ",
+                "sourceText": "Use opportunity cost and net benefits to evaluate specialization and exchange.  "
+              }
+            ],
+            "sourceText": "Use opportunity cost and net benefits to evaluate specialization and exchange.",
+            "text": "Use opportunity cost and net benefits to evaluate specialization and exchange."
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Different opportunity costs create room for specialization and mutually beneficial exchange.  ",
+                "sourceText": "Different opportunity costs create room for specialization and mutually beneficial exchange.  "
+              }
+            ],
+            "sourceText": "Different opportunity costs create room for specialization and mutually beneficial exchange.",
+            "text": "Different opportunity costs create room for specialization and mutually beneficial exchange."
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "One lamp costs Ari 2 rugs and costs Bea 6 rugs.  ",
+                "sourceText": "One lamp costs Ari 2 rugs and costs Bea 6 rugs.  "
+              }
+            ],
+            "sourceText": "One lamp costs Ari 2 rugs and costs Bea 6 rugs.",
+            "text": "One lamp costs Ari 2 rugs and costs Bea 6 rugs."
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "One producer is more productive in both goods.  ",
+                "sourceText": "One producer is more productive in both goods.  "
+              }
+            ],
+            "sourceText": "One producer is more productive in both goods.",
+            "text": "One producer is more productive in both goods."
+          },
+          {
+            "role": "Lbl",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "•  ",
+                "sourceText": "•  "
+              }
+            ],
+            "sourceText": "•",
+            "text": "•"
+          },
+          {
+            "role": "LBody",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Two firms specialize and create 40 extra units of combined output.  ",
+                "sourceText": "Two firms specialize and create 40 extra units of combined output.  "
+              }
+            ],
+            "sourceText": "Two firms specialize and create 40 extra units of combined output.",
+            "text": "Two firms specialize and create 40 extra units of combined output."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "WATCH OUT  ",
+                "sourceText": "WATCH OUT  "
+              }
+            ],
+            "sourceText": "WATCH OUT",
+            "text": "WATCH OUT"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "A common mistake is to choose the producer with the greatest absolute output. Comparative advantage depends on lower opportunity cost, and a mutually beneficial terms-of-trade ratio lies between the two opportunity costs.  ",
+                "sourceText": "A common mistake is to choose the producer with the greatest absolute output. Comparative advantage depends on lower opportunity cost, and a mutually beneficial terms-of-trade ratio lies between the two opportunity costs.  "
+              }
+            ],
+            "sourceText": "A common mistake is to choose the producer with the greatest absolute output. Comparative advantage depends on lower opportunity cost, and a mutually beneficial terms-of-trade ratio lies between the two opportunity costs.",
+            "text": "A common mistake is to choose the producer with the greatest absolute output. Comparative advantage depends on lower opportunity cost, and a mutually beneficial terms-of-trade ratio lies between the two opportunity costs."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "WORKED EXAMPLE: FINDING COMPARATIVE ADVANTAGE  ",
+                "sourceText": "WORKED EXAMPLE: FINDING COMPARATIVE ADVANTAGE  "
+              }
+            ],
+            "sourceText": "WORKED EXAMPLE: FINDING COMPARATIVE ADVANTAGE",
+            "text": "WORKED EXAMPLE: FINDING COMPARATIVE ADVANTAGE"
+          },
+          {
+            "role": "Caption",
+            "runs": [
+              {
+                "role": "Caption",
+                "text": "Production possibilities and opportunity costs",
+                "sourceText": "Production possibilities and opportunity costs"
+              }
+            ],
+            "sourceText": "Production possibilities and opportunity costs",
+            "text": "Production possibilities and opportunity costs"
+          },
+          {
+            "role": "TD",
+            "runs": [
+              {
+                "role": "TD",
+                "text": "",
+                "sourceText": ""
+              }
+            ],
+            "sourceText": "",
+            "text": ""
+          },
+          {
+            "role": "TH",
+            "runs": [
+              {
+                "role": "TH",
+                "text": "Max lamps",
+                "sourceText": "Max lamps"
+              }
+            ],
+            "sourceText": "Max lamps",
+            "text": "Max lamps"
+          },
+          {
+            "role": "TH",
+            "runs": [
+              {
+                "role": "TH",
+                "text": "Max rugs",
+                "sourceText": "Max rugs"
+              }
+            ],
+            "sourceText": "Max rugs",
+            "text": "Max rugs"
+          },
+          {
+            "role": "TH",
+            "runs": [
+              {
+                "role": "TH",
+                "text": "Cost of 1 lamp",
+                "sourceText": "Cost of 1 lamp"
+              }
+            ],
+            "sourceText": "Cost of 1 lamp",
+            "text": "Cost of 1 lamp"
+          },
+          {
+            "role": "TH",
+            "runs": [
+              {
+                "role": "TH",
+                "text": "Cost of 1 rug",
+                "sourceText": "Cost of 1 rug"
+              }
+            ],
+            "sourceText": "Cost of 1 rug",
+            "text": "Cost of 1 rug"
+          },
+          {
+            "role": "TH",
+            "runs": [
+              {
+                "role": "TH",
+                "text": "Ari",
+                "sourceText": "Ari"
+              }
+            ],
+            "sourceText": "Ari",
+            "text": "Ari"
+          },
+          {
+            "role": "TD",
+            "runs": [
+              {
+                "role": "TD",
+                "text": "12",
+                "sourceText": "12"
+              }
+            ],
+            "sourceText": "12",
+            "text": "12"
+          },
+          {
+            "role": "TD",
+            "runs": [
+              {
+                "role": "TD",
+                "text": "24",
+                "sourceText": "24"
+              }
+            ],
+            "sourceText": "24",
+            "text": "24"
+          },
+          {
+            "role": "TD",
+            "runs": [
+              {
+                "role": "TD",
+                "text": "2 rugs",
+                "sourceText": "2 rugs"
+              }
+            ],
+            "sourceText": "2 rugs",
+            "text": "2 rugs"
+          },
+          {
+            "role": "TD",
+            "runs": [
+              {
+                "role": "TD",
+                "text": "1/2 lamp",
+                "sourceText": "1/2 lamp"
+              }
+            ],
+            "sourceText": "1/2 lamp",
+            "text": "1/2 lamp"
+          },
+          {
+            "role": "TH",
+            "runs": [
+              {
+                "role": "TH",
+                "text": "Bea",
+                "sourceText": "Bea"
+              }
+            ],
+            "sourceText": "Bea",
+            "text": "Bea"
+          },
+          {
+            "role": "TD",
+            "runs": [
+              {
+                "role": "TD",
+                "text": "10",
+                "sourceText": "10"
+              }
+            ],
+            "sourceText": "10",
+            "text": "10"
+          },
+          {
+            "role": "TD",
+            "runs": [
+              {
+                "role": "TD",
+                "text": "60",
+                "sourceText": "60"
+              }
+            ],
+            "sourceText": "60",
+            "text": "60"
+          },
+          {
+            "role": "TD",
+            "runs": [
+              {
+                "role": "TD",
+                "text": "6 rugs",
+                "sourceText": "6 rugs"
+              }
+            ],
+            "sourceText": "6 rugs",
+            "text": "6 rugs"
+          },
+          {
+            "role": "TD",
+            "runs": [
+              {
+                "role": "TD",
+                "text": "1/6 lamp",
+                "sourceText": "1/6 lamp"
+              }
+            ],
+            "sourceText": "1/6 lamp",
+            "text": "1/6 lamp"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Ari gives up",
+                "sourceText": "Ari gives up"
+              },
+              {
+                "role": "Formula",
+                "text": "24 divided by 12  equals  2",
+                "sourceText": " 24/12 = 2"
+              },
+              {
+                "role": "Span",
+                "text": " rugs per lamp; Bea gives up",
+                "sourceText": " rugs per lamp; Bea gives up"
+              },
+              {
+                "role": "Formula",
+                "text": "60 divided by 10  equals  6",
+                "sourceText": " 60/10 = 6"
+              },
+              {
+                "role": "Span",
+                "text": " rugs per lamp. Ari has comparative advantage in ",
+                "sourceText": " rugs per lamp. Ari has comparative advantage in "
+              },
+              {
+                "role": "Span",
+                "text": "lamps. For rugs, Bea gives up",
+                "sourceText": "lamps. For rugs, Bea gives up"
+              },
+              {
+                "role": "Formula",
+                "text": "1 divided by 6",
+                "sourceText": " 1/6"
+              },
+              {
+                "role": "Span",
+                "text": " lamp, below Ari's",
+                "sourceText": " lamp, below Ari's"
+              },
+              {
+                "role": "Formula",
+                "text": "1 divided by 2",
+                "sourceText": " 1/2"
+              },
+              {
+                "role": "Span",
+                "text": " lamp. A trade of one lamp for four rugs lies between the ",
+                "sourceText": " lamp. A trade of one lamp for four rugs lies between the "
+              },
+              {
+                "role": "Span",
+                "text": "two lamp costs, so both can gain from specializing and exchanging.  ",
+                "sourceText": "two lamp costs, so both can gain from specializing and exchanging.  "
+              }
+            ],
+            "sourceText": "Ari gives up 24/12 = 2 rugs per lamp; Bea gives up 60/10 = 6 rugs per lamp. Ari has comparative advantage in lamps. For rugs, Bea gives up 1/6 lamp, below Ari's 1/2 lamp. A trade of one lamp for four rugs lies between the two lamp costs, so both can gain from specializing and exchanging.",
+            "text": "Ari gives up 24 divided by 12 equals 2 rugs per lamp; Bea gives up 60 divided by 10 equals 6 rugs per lamp. Ari has comparative advantage in lamps. For rugs, Bea gives up 1 divided by 6 lamp, below Ari's 1 divided by 2 lamp. A trade of one lamp for four rugs lies between the two lamp costs, so both can gain from specializing and exchanging."
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "CHECK YOURSELF  ",
+                "sourceText": "CHECK YOURSELF  "
+              }
+            ],
+            "sourceText": "CHECK YOURSELF",
+            "text": "CHECK YOURSELF"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "If 1 X costs 2 Y, what is the cost of 1 Y?  ",
+                "sourceText": "If 1 X costs 2 Y, what is the cost of 1 Y?  "
+              }
+            ],
+            "sourceText": "If 1 X costs 2 Y, what is the cost of 1 Y?",
+            "text": "If 1 X costs 2 Y, what is the cost of 1 Y?"
+          },
+          {
+            "role": "H2",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "READY?  ",
+                "sourceText": "READY?  "
+              }
+            ],
+            "sourceText": "READY?",
+            "text": "READY?"
+          },
+          {
+            "role": "P",
+            "runs": [
+              {
+                "role": "Span",
+                "text": "Return to the game and master this concept.  ",
+                "sourceText": "Return to the game and master this concept.  "
+              }
+            ],
+            "sourceText": "Return to the game and master this concept.",
+            "text": "Return to the game and master this concept."
+          }
+        ],
+        "roles": [
+          "/Document",
+          "/H1",
+          "/P",
+          "/P",
+          "/P",
+          "/P",
+          "/P",
+          "/H2",
+          "/P",
+          "/H2",
+          "/L",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/LI",
+          "/Lbl",
+          "/LBody",
+          "/H2",
+          "/P",
+          "/H2",
+          "/Table",
+          "/Caption",
+          "/TR",
+          "/TD",
+          "/TH",
+          "/TH",
+          "/TH",
+          "/TH",
+          "/TR",
+          "/TH",
+          "/TD",
+          "/TD",
+          "/TD",
+          "/TD",
+          "/TR",
+          "/TH",
+          "/TD",
+          "/TD",
+          "/TD",
+          "/TD",
+          "/P",
+          "/Formula",
+          "/Formula",
+          "/Formula",
+          "/Formula",
+          "/H2",
+          "/P",
+          "/H2",
+          "/P"
+        ],
+        "linkedContentCount": 55,
+        "figureAlternatives": [],
+        "formulas": [
+          {
+            "text": "24/12 = 2",
+            "alternative": "24 divided by 12  equals  2",
+            "parent": "/P"
+          },
+          {
+            "text": "60/10 = 6",
+            "alternative": "60 divided by 10  equals  6",
+            "parent": "/P"
+          },
+          {
+            "text": "1/6",
+            "alternative": "1 divided by 6",
+            "parent": "/P"
+          },
+          {
+            "text": "1/2",
+            "alternative": "1 divided by 2",
+            "parent": "/P"
+          }
+        ],
+        "fonts": [
+          {
+            "font": "/AAAAAA+Arimo-bold",
+            "embedded": true,
+            "unicodeMap": true
+          },
+          {
+            "font": "/AAAAAA+Arimo-regular",
+            "embedded": true,
+            "unicodeMap": true
+          }
+        ],
+        "rawReadingSequence": [
+          "Comparative Advantage and Gains from Trade",
+          "GENERAL ECONOMICS",
+          "GEN-ECON-09",
+          "Time: 5 minutes",
+          "Outcome: Analyze Comparative Advantage and Gains from Trade.",
+          "Difficulty: Beginner",
+          "THE CORE IDEA",
+          "Comparative advantage belongs to the producer with the lower opportunity cost, even when another producer has an absolute advantage in both goods. Compute the forgone alternative per unit, then select the lower opportunity cost. Specialization creates potential output gains; the trading terms determine whether both sides gain. Use opportunity cost and net benefits to evaluate specialization and exchange. Different opportunity costs create room for specialization and mutually beneficial exchange.",
+          "HOW TO RECOGNIZE IT",
+          "•",
+          "Use opportunity cost and net benefits to evaluate specialization and exchange.",
+          "•",
+          "Different opportunity costs create room for specialization and mutually beneficial exchange.",
+          "•",
+          "One lamp costs Ari 2 rugs and costs Bea 6 rugs.",
+          "•",
+          "One producer is more productive in both goods.",
+          "•",
+          "Two firms specialize and create 40 extra units of combined output.",
+          "WATCH OUT",
+          "A common mistake is to choose the producer with the greatest absolute output. Comparative advantage depends on lower opportunity cost, and a mutually beneficial terms-of-trade ratio lies between the two opportunity costs.",
+          "WORKED EXAMPLE: FINDING COMPARATIVE ADVANTAGE",
+          "Ari gives up 24/12 = 2 rugs per lamp; Bea gives up 60/10 = 6 rugs per lamp. Ari has comparative advantage in lamps. For rugs, Bea gives up 1/6 lamp, below Ari's 1/2 lamp. A trade of one lamp for four rugs lies between the two lamp costs, so both can gain from specializing and exchanging.",
+          "CHECK YOURSELF",
+          "If 1 X costs 2 Y, what is the cost of 1 Y?",
+          "READY?",
+          "Return to the game and master this concept."
+        ]
+      },
+      "sha256": "d9d39864adca2edc30126cb45094d0ff72e25e3a54482a02ef93f6b6f725cdfe",
+      "rebuildSHA256": "d9d39864adca2edc30126cb45094d0ff72e25e3a54482a02ef93f6b6f725cdfe",
+      "deterministic": true,
+      "contentComparison": "EXACT V2/V3 NORMALIZED TEXT"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "phase": "mode8-trial-by-graph-v1",
+  "ok": true,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9779,
+  "auditedIds": 612,
+  "graphRequiredFlagged": 1077,
+  "examples": {
+    "perfectCompetition": 76,
+    "demand": 25,
+    "aggregateDemand": 12,
+    "bankMoneyCreation": 0
+  },
+  "generatedGraphIntegrity": {
+    "brokenRejected": true,
+    "omittedRejected": true,
+    "validAccepted": true,
+    "representativeConcepts": [
+      "demand",
+      "supply",
+      "market-equilibrium",
+      "production-possibilities-frontier"
+    ],
+    "graphQuestions": 115,
+    "assets": 20,
+    "smokeQuestions": 10,
+    "smokeAssets": 9,
+    "smokeIds": [
+      "40006",
+      "PG1-DMD-L-002",
+      "40020",
+      "40000",
+      "PG1-DMD-E-001",
+      "PG1-SUP-E-001",
+      "PG1-EQ-E-001",
+      "40003",
+      "40009",
+      "40018"
+    ]
+  },
+  "supportedTargets": {
+    "perfectCompetition": [
+      10,
+      15,
+      20
+    ],
+    "demand": [
+      10,
+      15,
+      20
+    ],
+    "aggregateDemand": [
+      10
+    ]
+  },
+  "allEightModes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "issues": []
+}

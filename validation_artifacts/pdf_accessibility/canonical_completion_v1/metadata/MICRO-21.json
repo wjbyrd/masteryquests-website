@@ -1,0 +1,213 @@
+{
+  "baselineSha256": "2addf3db5e0c084f27a8e61c26bdcf9552adb7a403831f7dfc2fc0b634ee94e1",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "One completed cost-schedule row (dollars)",
+    "columnHeaders": [
+      "TFC",
+      "TVC",
+      "TC",
+      "AFC",
+      "AVC",
+      "ATC"
+    ],
+    "rowHeaders": [
+      "Q = 120"
+    ],
+    "cells": [
+      [
+        "400",
+        "800",
+        "1200",
+        "3.33",
+        "6.67",
+        "10.00"
+      ]
+    ],
+    "columnWidths": [
+      0.16,
+      0.14,
+      0.14,
+      0.14,
+      0.14,
+      0.14,
+      0.14
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 135,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      230,
+      431,
+      632,
+      833,
+      1034,
+      1235,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135
+    ]
+  },
+  "tableSourceSha256": "df5c27720ec387020d397de45de844591eb677b98c511a2fc9c18aca3b4a3bdc",
+  "graphDecodedSha256": "288f853cafef8b52c547732ad626a3cf8d47698e7d1323232637baa5192b7b9a",
+  "sourceRecordSha256": "67075135d584ed2742d87f712d2535fa1d438bc957211f93eae5aea256f66bf5",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "67075135d584ed2742d87f712d2535fa1d438bc957211f93eae5aea256f66bf5",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "042413fdd9450613c1ea99b30af7aaac7a12d26cac839e3219656938e996347a",
+    "originalSourceRecordSha256": "eb34b301cf8d7e8481a1bea193c46329e8b1d4d93c42b39203e9809826929a5d",
+    "changedFields": [
+      "graph",
+      "table",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "46d387be26504a3ff525e5996779b2d51042581bc304a1ab814ebed140fd03cb"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "core",
+      "compactStart": 148,
+      "text": "TC = TFC + TVC",
+      "alternative": "T C equals T F C plus T V C"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 197,
+      "text": "AFC = TFC / Q",
+      "alternative": "A F C equals T F C divided by Q"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 207,
+      "text": "AVC = TVC / Q",
+      "alternative": "A V C equals T V C divided by Q"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 220,
+      "text": "ATC = TC / Q = AFC + AVC",
+      "alternative": "A T C equals T C divided by Q equals A F C plus A V C"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 2,
+      "text": "Q = 120,",
+      "alternative": "Q  equals  120,"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 12,
+      "text": "$1,200",
+      "alternative": "dollars 1,200"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 26,
+      "text": "$800",
+      "alternative": "dollars 800"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 50,
+      "text": "$400",
+      "alternative": "dollars 400"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 86,
+      "text": "AFC = $3.33",
+      "alternative": "AFC  equals   dollars 3.33"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 96,
+      "text": "AVC = $6.67",
+      "alternative": "AVC  equals   dollars 6.67"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 109,
+      "text": "ATC = $10.00",
+      "alternative": "ATC  equals   dollars 10.00"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 159,
+      "text": "TC = TFC + TVC",
+      "alternative": "TC  equals  TFC  plus  TVC"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 172,
+      "text": "ATC = AFC + AVC",
+      "alternative": "ATC  equals  AFC  plus  AVC"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 157,
+      "text": "AFC = TFC / Q",
+      "alternative": "A F C equals T F C divided by Q"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 242,
+      "text": "Q = 0",
+      "alternative": "Q equals 0"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 2,
+      "text": "Q = 10",
+      "alternative": "Q equals 10"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 21,
+      "text": "TFC = $90",
+      "alternative": "T F C equals 90 dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 31,
+      "text": "TC = $250",
+      "alternative": "T C equals 250 dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 87,
+      "text": "AFC + AVC = ATC",
+      "alternative": "A F C plus A V C equals A T C"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

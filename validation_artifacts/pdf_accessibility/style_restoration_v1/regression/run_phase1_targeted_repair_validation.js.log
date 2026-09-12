@@ -1,0 +1,25 @@
+{
+  "phase": "phase-1-composer-targeted-repair-regression",
+  "ok": true,
+  "canonicalVersion": "4.5s.3k",
+  "canonicalTemplate": "template/mastery-quests-faculty-template-composer-ready.html",
+  "conceptReviewManifest": "data/concept-reviews/manifest.json",
+  "genEcon01": "data/concept-reviews/GEN-ECON-01.pdf",
+  "inlineScriptCount": 1,
+  "structuralChecks": {
+    "targetedRepairState": true,
+    "targetDerivation": true,
+    "weakAreaLaunch": true,
+    "repairButton": true,
+    "internalUnlimitedLaunch": true,
+    "hiddenUnlimitedEnable": true,
+    "endPractice": true,
+    "freshMasteryReport": true
+  },
+  "bonuses": [
+    18.5,
+    11.1,
+    5.55
+  ],
+  "generatedHtmlBytes": 895174
+}

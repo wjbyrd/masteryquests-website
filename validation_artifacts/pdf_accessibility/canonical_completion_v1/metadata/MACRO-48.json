@@ -1,0 +1,143 @@
+{
+  "baselineSha256": "d14330ce3e111ef82c384a5b433e2e532678557463e40ef74f27ad433b47a2b4",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Debt levels versus debt-to-GDP",
+    "columnHeaders": [
+      "Before",
+      "After"
+    ],
+    "rowHeaders": [
+      "Debt",
+      "Nominal GDP",
+      "Debt / GDP"
+    ],
+    "cells": [
+      [
+        "$6.0 trillion",
+        "$6.6 trillion"
+      ],
+      [
+        "$24.0 trillion",
+        "$27.5 trillion"
+      ],
+      [
+        "25.0%",
+        "24.0%"
+      ]
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 225,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      480,
+      960,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225
+    ]
+  },
+  "tableSourceSha256": "144b43c822b43ce9fed6215ac17fbae32090629b03ea4919727b74c87a232c52",
+  "graphDecodedSha256": "02efb49ad6b4d414e0663d1720b950180648b5ce6d4957a94ff898758bcf0d75",
+  "sourceRecordSha256": "62f51027d3345b8bf1f71316a3caf8649766b528e54f810aa47d36215a188f43",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "62f51027d3345b8bf1f71316a3caf8649766b528e54f810aa47d36215a188f43",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "0441d24adb9cd5dc5b6f75fe3ca49893ea3a0d3f8ba647ff69637874bcf4359e",
+    "originalSourceRecordSha256": "6da14eb5f098e641b611cd6b235f12b22ca2193a495b351a28c6a116473f5b3f",
+    "changedFields": [
+      "graph",
+      "table"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "ca265f92a55317c4e4ef7a88b602d50eb5753850b0dd22a09e61b5655f28876a"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 13,
+      "text": "$6.0 trillion",
+      "alternative": "6.0 trillion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 27,
+      "text": "$6.6 trillion",
+      "alternative": "6.6 trillion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 63,
+      "text": "$24.0 trillion",
+      "alternative": "24.0 trillion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 78,
+      "text": "$27.5 trillion",
+      "alternative": "27.5 trillion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 112,
+      "text": "25.0%",
+      "alternative": "25.0 percent"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 119,
+      "text": "24.0%",
+      "alternative": "24.0 percent"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 6,
+      "text": "$9 trillion",
+      "alternative": "9 trillion dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 31,
+      "text": "$30 trillion",
+      "alternative": "30 trillion dollars"
+    },
+    {
+      "sourceField": "recognition/0",
+      "compactStart": 0,
+      "text": "Debt-to-GDP = public debt divided by nominal GDP, multiplied by 100 percent",
+      "alternative": "Debt to G D P equals public debt divided by nominal G D P, multiplied by 100 percent"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

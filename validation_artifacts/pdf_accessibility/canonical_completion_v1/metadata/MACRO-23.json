@@ -1,0 +1,228 @@
+{
+  "baselineSha256": "a952d43370533c450360e4fd78077567ebde46f053c659d5ec9b1c44cb84e82e",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MACRO-23.png",
+  "assetSourceSha256": "6099c15cf4d2cd925255cf52ea9cfe706dac5a5c4775bab435d8e7a2c2fa95bc",
+  "graphDecodedSha256": "922702e0b4003e79aa91e0e0fdd411bc965b7c57aa179014526523a31d09960d",
+  "graphAlternative": "Quantity-theory graph. The vertical axis is value of money, one divided by P; the horizontal axis is money supply M. Money demand MD slopes downward and curves toward the horizontal axis. Vertical MS1 is at 2,500 and meets MD at point a, at a money value of 2. Vertical MS2 is at 5,000 and meets MD at point b, at a money value of 1. Dashed horizontal guides mark 2 and 1. MS2 is to the right of MS1 and b is below and to the right of a. The vertical axis shows the reciprocal of the price level, not velocity V.",
+  "sourceRecordSha256": "b23fcf3039343f46fb7b2e6864b20ada3e6bdc3785f7bd656483159ef60f1742",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "b23fcf3039343f46fb7b2e6864b20ada3e6bdc3785f7bd656483159ef60f1742",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "1e01e1b0fd604293ff304c8d839779e6e9de3b676ff31f4abec9b5b6aa80002f",
+    "originalSourceRecordSha256": "a8f2d062275d0eec4a07880e3ee9f423217523c3305f05a31b2e1ab42278a9d5",
+    "changedFields": [
+      "check"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "54c8b83134634ea3de1581110f2d63df3bdb6bea1143f8fcc549a39cd6f6752e"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "core",
+      "compactStart": 19,
+      "text": "MV = PY",
+      "alternative": "M times V equals P times Y; V denotes velocity."
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 91,
+      "text": "MS1",
+      "alternative": "money supply one"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 103,
+      "text": "MS2",
+      "alternative": "money supply two"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 175,
+      "text": "1/2 = 0.50",
+      "alternative": "one divided by two equals zero point five zero"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 185,
+      "text": "1/1 = 1.00",
+      "alternative": "one divided by one equals one point zero zero"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 195,
+      "text": "100%",
+      "alternative": "100 percent"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 234,
+      "text": "1/P",
+      "alternative": "one divided by P, the value of money"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 253,
+      "text": "MV = PY",
+      "alternative": "M times V equals P times Y; V denotes velocity."
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 43,
+      "text": "10%",
+      "alternative": "10 percent"
+    },
+    {
+      "sourceField": "recognition/0",
+      "compactStart": 14,
+      "text": "MV = PY",
+      "alternative": "M times V equals P times Y; V denotes velocity."
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_LABEL_AWARE_DIAGRAM",
+    "width": 320,
+    "height": 130,
+    "minimumLabelPt": 8.666666666666666,
+    "labels": [
+      {
+        "text": "Value of money (1/P)",
+        "bounds": [
+          85,
+          5,
+          329,
+          29
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "2",
+        "bounds": [
+          61,
+          137.66666666666669,
+          75,
+          155.66666666666669
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "2,500",
+        "bounds": [
+          382.7692307692308,
+          328,
+          447.7692307692308,
+          350
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MS1",
+        "bounds": [
+          388.7692307692308,
+          34,
+          441.7692307692308,
+          52
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "a",
+        "bounds": [
+          425.7692307692308,
+          116.66666666666669,
+          440.7692307692308,
+          130.66666666666669
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "1",
+        "bounds": [
+          61,
+          224.33333333333334,
+          75,
+          242.33333333333334
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "5,000",
+        "bounds": [
+          713.5384615384615,
+          328,
+          778.5384615384615,
+          350
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MS2",
+        "bounds": [
+          719.5384615384615,
+          34,
+          772.5384615384615,
+          52
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "b",
+        "bounds": [
+          756.5384615384615,
+          203.33333333333334,
+          770.5384615384615,
+          222.33333333333334
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MD",
+        "bounds": [
+          910,
+          242.77777777777777,
+          950,
+          260.77777777777777
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Money supply (M)",
+        "bounds": [
+          417,
+          360,
+          624,
+          384
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "retainedDiagram": "MACRO-23",
+    "dataSha256": "04fd78aec033139b8121c371fb8bba9f8f4618a458dc6b44a0ac1d8bf53d9055",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-23.png",
+    "originalAssetSha256": "22ac212eefa914067e3bafcbf095774dbb61f8e61ae6f9321cc5ef81b103c2bf"
+  }
+}

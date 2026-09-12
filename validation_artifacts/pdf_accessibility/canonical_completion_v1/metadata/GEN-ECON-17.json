@@ -1,0 +1,368 @@
+{
+  "baselineSha256": "dacae7a0491d0859cdc5e9239916c975c80706b3b5ccbfdfcf0012ab2e4a95fb",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/GEN-ECON-17.png",
+  "assetSourceSha256": "abd2f6478ea5a082ad4ff6a21830385df2b2021f13f11a2f7b6ffed203b89e96",
+  "graphDecodedSha256": "6e219457df26ad6fb3cae12cfcce0ebf2c35e1706cc5c52dabb1c9fcf6d51f5b",
+  "graphAlternative": "The horizontal axis is quantity of gas in thousands of gallons and the vertical axis is price of gas per gallon. D0 slopes downward from price $6 at quantity 0 to quantity 300 thousand at price $0. S0 slopes upward from the origin to price $6 at quantity 300 thousand. The curves intersect at price $3 and quantity 150 thousand. At price $2, quantity demanded is 200 thousand and quantity supplied is 100 thousand. At price $4, quantity demanded is 100 thousand and quantity supplied is 200 thousand.",
+  "sourceRecordSha256": "eecca0517c36f6b96f3e6c723e95935927dd6d075852916d3851447271a309b3",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "eecca0517c36f6b96f3e6c723e95935927dd6d075852916d3851447271a309b3",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "8fc36c3f0454e0624ca153d45a9077c28b2af38687bf4e0b98945daf96b4395f",
+    "originalSourceRecordSha256": "6f6325db6b67a2ffe205feda14bb7797b8166805319e8007e855b12a655aa10a",
+    "changedFields": [
+      "check",
+      "core"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "256e0d672cc6daea76b21fcd25ff3219e29a79827fca411ad4cceb7d893d0d63"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 10,
+      "text": "$2",
+      "alternative": "2 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 183,
+      "text": "200 - 100 = 100",
+      "alternative": "200 minus 100 equals 100"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 10,
+      "text": "$4,",
+      "alternative": "dollars 4,"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "151ff8268eb634876396e79b779352da9e50dc92c4a3f98602afd97b320915a9",
+    "labels": [
+      {
+        "text": "D0",
+        "bounds": [
+          32,
+          3,
+          65,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "S0",
+        "bounds": [
+          109.234375,
+          3,
+          141.234375,
+          21
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price of gas per gallon",
+        "bounds": [
+          160,
+          82,
+          419,
+          106
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "25",
+        "bounds": [
+          196.78185096153845,
+          378.0,
+          225.78185096153845,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "50",
+        "bounds": [
+          257.2433894230769,
+          378.0,
+          286.2433894230769,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "75",
+        "bounds": [
+          317.70492788461536,
+          378.0,
+          346.70492788461536,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "100",
+        "bounds": [
+          370.16646634615387,
+          378.0,
+          413.16646634615387,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "125",
+        "bounds": [
+          430.6280048076923,
+          378.0,
+          473.6280048076923,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "150",
+        "bounds": [
+          491.0895432692307,
+          378.0,
+          534.0895432692307,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "175",
+        "bounds": [
+          551.5510817307693,
+          378.0,
+          594.5510817307693,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "200",
+        "bounds": [
+          612.0126201923077,
+          378.0,
+          655.0126201923077,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "225",
+        "bounds": [
+          672.4741586538462,
+          378.0,
+          715.4741586538462,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "250",
+        "bounds": [
+          732.9356971153846,
+          378.0,
+          775.9356971153846,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "275",
+        "bounds": [
+          793.3972355769231,
+          378.0,
+          836.3972355769231,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "300",
+        "bounds": [
+          853.8587740384615,
+          378.0,
+          896.8587740384615,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "325",
+        "bounds": [
+          914.3203125,
+          378.0,
+          957.3203125,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$6",
+        "bounds": [
+          115,
+          110.0,
+          144,
+          131.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$5.5",
+        "bounds": [
+          33,
+          130.75,
+          84,
+          151.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$5",
+        "bounds": [
+          115,
+          151.5,
+          144,
+          172.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$4.5",
+        "bounds": [
+          33,
+          172.25,
+          84,
+          193.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$4",
+        "bounds": [
+          115,
+          193.0,
+          144,
+          214.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$3.5",
+        "bounds": [
+          33,
+          213.75,
+          84,
+          234.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$3",
+        "bounds": [
+          115,
+          234.5,
+          144,
+          255.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$2.5",
+        "bounds": [
+          33,
+          255.25,
+          84,
+          276.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$2",
+        "bounds": [
+          115,
+          276.0,
+          144,
+          297.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$1.5",
+        "bounds": [
+          33,
+          296.75,
+          84,
+          317.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$1",
+        "bounds": [
+          115,
+          317.5,
+          144,
+          338.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "$0.5",
+        "bounds": [
+          33,
+          338.25,
+          84,
+          359.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity of gas (in thousands of gallons)",
+        "bounds": [
+          320.0,
+          406,
+          785.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "GEN-ECON-17",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-17.png",
+    "originalAssetSha256": "90243409bf77916be2506e9da58578959a9b42eb5d746421c1a9d4e20d6da501"
+  }
+}

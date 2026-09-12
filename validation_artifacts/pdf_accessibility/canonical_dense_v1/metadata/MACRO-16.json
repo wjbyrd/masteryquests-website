@@ -1,0 +1,247 @@
+{
+  "baselineSha256": "0a28b8b4b02a8e230c577afb27e01eb3fa35c25857e322b6e9a0e3f7c413fa16",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "tmp\\pdf_accessibility\\canonical_dense_v1\\assets\\MACRO-16.png",
+  "assetSourceSha256": "48fad73b42687c1f390abbab4976f0e85a9b658edc897d34b19e530a921ca703",
+  "graphDecodedSha256": "e70b47aef860d0e51c59519a490523da19a3fdca638e85bc542d215500309428",
+  "graphAlternative": "Wage per hour vertical, quantity of labor in workers horizontal. Labor supply slopes up and demand down, meeting at wage 12 and 105 workers. A binding minimum wage of 15 is above equilibrium. At that wage QD is 90 and QS is 120; a bracket marks a labor surplus of 30 workers.",
+  "sourceRecordSha256": "da33daf841866e1b1c47bf6f60c5b818b82b5eb4e0854d51d604dcfaa5904292",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "da33daf841866e1b1c47bf6f60c5b818b82b5eb4e0854d51d604dcfaa5904292",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "388ceb4191003cb7afd77d8be8d5f0ae3a8d8a6401ef8502e7ae4232baf0e7fc",
+    "originalSourceRecordSha256": "4eb554d4df9eb5e5b63aee4d4c93943c7ad4ef4018331906c69d7f85048c82a3",
+    "changedFields": [
+      "graph",
+      "graphSpec"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "388ceb4191003cb7afd77d8be8d5f0ae3a8d8a6401ef8502e7ae4232baf0e7fc"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 72,
+      "text": "120 - 90 = 30",
+      "alternative": "120 minus 90 equals 30"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 280,
+    "height": 120,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "96201536b994878efad103b49a3132fd9381ddb517e838a7470efd66cb327f23",
+    "labels": [
+      {
+        "text": "Labor Demand",
+        "bounds": [
+          32,
+          3,
+          204,
+          22
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Labor Supply",
+        "bounds": [
+          247.9375,
+          3,
+          400.9375,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Binding minimum wage",
+        "bounds": [
+          445.109375,
+          3,
+          714.109375,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Wage ($ per hour)",
+        "bounds": [
+          66,
+          43,
+          277,
+          67
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "60",
+        "bounds": [
+          128.0,
+          302.0,
+          157.0,
+          320.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "90",
+        "bounds": [
+          356.0,
+          302.0,
+          385.0,
+          320.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "105",
+        "bounds": [
+          462.00000000000006,
+          302.0,
+          505.00000000000006,
+          320.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "120",
+        "bounds": [
+          576.0,
+          302.0,
+          619.0,
+          320.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "150",
+        "bounds": [
+          791,
+          302.0,
+          834,
+          320.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "24",
+        "bounds": [
+          21,
+          87.0,
+          50,
+          105.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "18",
+        "bounds": [
+          21,
+          136.5,
+          50,
+          154.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "12",
+        "bounds": [
+          21,
+          186.0,
+          50,
+          204.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "6",
+        "bounds": [
+          36,
+          235.5,
+          50,
+          253.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          36,
+          285.0,
+          50,
+          303.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity of labor (workers)",
+        "bounds": [
+          293.0,
+          331,
+          599.0,
+          355
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Equilibrium",
+        "bounds": [
+          488.00000000000006,
+          209.0,
+          617.0,
+          233.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "QD = 90",
+        "bounds": [
+          264.0,
+          148.25,
+          362.0,
+          171.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "QS = 120",
+        "bounds": [
+          606.0,
+          148.25,
+          717.0,
+          171.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Surplus = 30 workers",
+        "bounds": [
+          362.0,
+          100,
+          607.0,
+          124
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "minimum_wage"
+  }
+}

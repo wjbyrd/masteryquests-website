@@ -1,0 +1,331 @@
+{
+  "baselineSha256": "5c7e92102251048f5fdbc8722112757e186345c7f03f26f43795aa3f69e384f9",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-08.png",
+  "assetSourceSha256": "a5d6f6b57f50d8ab1df0b45cf0e87bfd64d5f14b691b2aa76bbabfc1138ab3e1",
+  "graphDecodedSha256": "cb2d38584cbbae8ca0ae67798369afb7f1484127e3d44eca2aad89cf211bad29",
+  "graphAlternative": "Horizontal axis: quantity; vertical axis: price. A straight downward-sloping Demand line runs from price 16 at quantity 0 to price 0 at quantity 120. Its marked points are C at quantity 30, price 12; B at quantity 60, price 8; and A at quantity 90, price 4. Dashed guides show each point on both axes.",
+  "sourceRecordSha256": "835fe7edff389c1615689cd0699b468189f24bc2f75020c64e0fcd07e5fa3c63",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "835fe7edff389c1615689cd0699b468189f24bc2f75020c64e0fcd07e5fa3c63",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "613a8ebb3dcdb6a5bf8261a86cc5886c8c461ba1383b8a997c9faba32ea022e6",
+    "originalSourceRecordSha256": "3340b5ed9743717209bf879562d6ef2ac7f6b833189fc44197757da37ceb3c0a",
+    "changedFields": [
+      "check"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "71af7a82ebff134626b9ad9aba53c12e077d4c59f21270255cd1a0b780ab231c"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 16,
+      "text": "$12",
+      "alternative": "12 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 51,
+      "text": "$12 x 30 = $360",
+      "alternative": "12 dollars times 30 equals 360 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 79,
+      "text": "$8",
+      "alternative": "8 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 108,
+      "text": "$480",
+      "alternative": "480 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 161,
+      "text": "$120",
+      "alternative": "120 dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 26,
+      "text": "$3,200",
+      "alternative": "dollars 3,200"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 34,
+      "text": "$2,880",
+      "alternative": "dollars 2,880"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "448641c3a791bff92bfd8a3098a568705028f032cc936dad892b6acf6c185cc0",
+    "labels": [
+      {
+        "text": "Demand",
+        "bounds": [
+          32,
+          3,
+          130,
+          22
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Price",
+        "bounds": [
+          160,
+          82,
+          219,
+          101
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          143.3203125,
+          378.0,
+          157.3203125,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "30",
+        "bounds": [
+          293.52031250000005,
+          378.0,
+          322.52031250000005,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "60",
+        "bounds": [
+          450.72031250000003,
+          378.0,
+          479.72031250000003,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "90",
+        "bounds": [
+          607.9203124999999,
+          378.0,
+          636.9203124999999,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "120",
+        "bounds": [
+          757.1203125000001,
+          378.0,
+          800.1203125000001,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "150",
+        "bounds": [
+          914.3203125,
+          378.0,
+          957.3203125,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          115,
+          111.0,
+          144,
+          129.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "18",
+        "bounds": [
+          55,
+          135.9,
+          84,
+          153.9
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "16",
+        "bounds": [
+          115,
+          160.79999999999998,
+          144,
+          178.79999999999998
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "14",
+        "bounds": [
+          55,
+          185.70000000000002,
+          84,
+          203.70000000000002
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "12",
+        "bounds": [
+          115,
+          210.6,
+          144,
+          228.6
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "10",
+        "bounds": [
+          55,
+          235.5,
+          84,
+          253.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "8",
+        "bounds": [
+          130,
+          260.4,
+          144,
+          278.4
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "6",
+        "bounds": [
+          70,
+          285.3,
+          84,
+          303.3
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "4",
+        "bounds": [
+          130,
+          310.2,
+          144,
+          328.2
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "2",
+        "bounds": [
+          70,
+          335.1,
+          84,
+          353.1
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          130,
+          360.0,
+          144,
+          378.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity",
+        "bounds": [
+          505.0,
+          406,
+          602.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "C",
+        "bounds": [
+          323.20000000000005,
+          183.6,
+          342.20000000000005,
+          201.6
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "B",
+        "bounds": [
+          480.40000000000003,
+          233.39999999999998,
+          497.40000000000003,
+          251.39999999999998
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "A",
+        "bounds": [
+          637.5999999999999,
+          283.2,
+          655.5999999999999,
+          301.2
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "MICRO-08",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-08.png",
+    "originalAssetSha256": "de76f28d704e621effbb8efd3a2fc69b69dfd8aa456306a3627bf8b633d6807d"
+  }
+}

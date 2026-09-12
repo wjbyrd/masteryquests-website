@@ -97,7 +97,10 @@ def validate_metadata(metadata):
             table=entry.get('tableSource',{});regions=entry.get('tableRegions',{})
             if entry.get('qaRemediation'):
                 from qa_renderer import table_image
-                image,expected_regions=table_image(table)
+                if entry.get('canonicalTemplate'):
+                    from canonical_components.pilot_renderer import canonical_table
+                    image,expected_regions=canonical_table(table,dense=bool(entry.get('canonicalDense')))
+                else:image,expected_regions=table_image(table,styled=bool(entry.get('styleRestoration')))
                 if regions!=expected_regions or hashlib.sha256(image.tobytes()).hexdigest()!=entry.get('graphDecodedSha256'):
                     raise ValueError('Source-generated table regions or fingerprint changed')
             elif len(table.get('rowHeaders',[]))!=2 or len(table.get('columnHeaders',[]))!=2 or len(table.get('cells',[]))!=2 or any(len(r)!=2 for r in table['cells']):

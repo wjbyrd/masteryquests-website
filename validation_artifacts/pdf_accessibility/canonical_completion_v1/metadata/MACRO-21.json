@@ -1,0 +1,109 @@
+{
+  "baselineSha256": "d7f88d7558b2a77c4e03cac2756875809159ba13032346b1bf6bcf0ff8b7248b",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Policy action and immediate textbook effect",
+    "columnHeaders": [
+      "Immediate effect"
+    ],
+    "rowHeaders": [
+      "Open-market purchase",
+      "Open-market sale",
+      "Lower administered rates",
+      "Higher administered rates"
+    ],
+    "cells": [
+      [
+        "Adds bank reserves; can lower rates when reserves are limited."
+      ],
+      [
+        "Removes reserves; can raise rates when reserves are limited."
+      ],
+      [
+        "Lowers the rates guiding short-term market rates."
+      ],
+      [
+        "Raises the rates guiding short-term market rates."
+      ]
+    ],
+    "columnWidths": [
+      0.37,
+      0.63
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 270,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      532,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225,
+      270
+    ]
+  },
+  "tableSourceSha256": "df5d8f0293ca66bf68dc93b5f08e738d45d57694a2f49340a454c2b58827f41f",
+  "graphDecodedSha256": "1cedfb1da6489462b1d69a91f3f9853a566b2939c816f463baf9211730036eea",
+  "sourceRecordSha256": "5519eabd8f1fd35841b0ac84b88e5ac4cc14745b09e11a67ed379fc3fd359eb3",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "5519eabd8f1fd35841b0ac84b88e5ac4cc14745b09e11a67ed379fc3fd359eb3",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "4ecf6ac2a2d2b0838487073cbd79096f64146da2f61d8c8a072207fceabd30e6",
+    "originalSourceRecordSha256": "46d90d3224e310e1c8c13fa667b086e61548838a00b28c1db55be279dc92d8af",
+    "changedFields": [
+      "graph",
+      "table",
+      "watch",
+      "worked",
+      "workedLabel"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "7ccc13a5ca099b88ea0842fdf23d098d7dd5a19e74d13670198f1410d6549871"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 1,
+      "text": "$50",
+      "alternative": "dollars 50"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 31,
+      "text": "$50",
+      "alternative": "dollars 50"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW"
+}

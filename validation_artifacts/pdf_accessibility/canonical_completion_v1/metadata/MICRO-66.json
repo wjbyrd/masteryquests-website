@@ -1,0 +1,94 @@
+{
+  "baselineSha256": "3ea0b9635787e39daac93f02730a21e94377e319d55c465c3533f0973144b3c1",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Individual rankings (first to third)",
+    "columnHeaders": [
+      "First choice",
+      "Second choice",
+      "Third choice"
+    ],
+    "rowHeaders": [
+      "Voter 1",
+      "Voter 2",
+      "Voter 3"
+    ],
+    "cells": [
+      [
+        "A",
+        "B",
+        "C"
+      ],
+      [
+        "B",
+        "C",
+        "A"
+      ],
+      [
+        "C",
+        "A",
+        "B"
+      ]
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 225,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      360,
+      720,
+      1080,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225
+    ]
+  },
+  "tableSourceSha256": "976c33a2bf92887eec7a5210c055f6aec84c2c519a20b180b259e2a1eac97291",
+  "graphDecodedSha256": "7ed496b9f643129be8fbb51f14c12f11260ee2cadde45f1ad21711e8fbe2315c",
+  "sourceRecordSha256": "50263f9f1387faca6d770852cfe1c079a19436723b0afcb3076a28968dad2f50",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "50263f9f1387faca6d770852cfe1c079a19436723b0afcb3076a28968dad2f50",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "bb3d93f76372c13b5e93b57edcaf6bfdbd1ab029e6443dbe57f258b85f0327a5",
+    "originalSourceRecordSha256": "b4e611e17863382ba57447687c5ea17424c205f4eac4a10cac59cfa09d2b1850",
+    "changedFields": [
+      "graph",
+      "table",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "53cd614ea8aa99704661c719e5deae719ac30b5bd58edba3df954baa2ea386da"
+  },
+  "inlineFormulas": [],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

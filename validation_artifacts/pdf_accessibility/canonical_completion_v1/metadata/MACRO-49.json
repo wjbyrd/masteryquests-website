@@ -1,0 +1,167 @@
+{
+  "baselineSha256": "55e7f512712d5788361951d253fd3b38a97f7d50cf4549d16d16fad307f9aac0",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Textbook deposit rounds: reserve ratio 10%",
+    "columnHeaders": [
+      "New deposit",
+      "Reserves",
+      "New loan"
+    ],
+    "rowHeaders": [
+      "First bank",
+      "Second bank",
+      "Third bank",
+      "All rounds total"
+    ],
+    "cells": [
+      [
+        "$1,000",
+        "$100",
+        "$900"
+      ],
+      [
+        "$900",
+        "$90",
+        "$810"
+      ],
+      [
+        "$810",
+        "$81",
+        "$729"
+      ],
+      [
+        "$10,000",
+        "$1,000",
+        "$9,000"
+      ]
+    ],
+    "columnWidths": [
+      0.34,
+      0.22,
+      0.22,
+      0.22
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 270,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      489,
+      806,
+      1123,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180,
+      225,
+      270
+    ]
+  },
+  "tableSourceSha256": "65fc5d41a6102a3200669bfe4418cf894639da2d5c80f5bc2249e4cc2bd5233b",
+  "graphDecodedSha256": "3e8ac13440d3dcb59831eb588ce6a976d5b9498bad7c06fa8106c2c82ce0bfa7",
+  "sourceRecordSha256": "88b8af5fa2195ba687f69d4db2a6e28a00c04e53d639eb9f07841511b46c7a81",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "88b8af5fa2195ba687f69d4db2a6e28a00c04e53d639eb9f07841511b46c7a81",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "9ca5e6e4dd90c1911821f036e36538f4e8a32e364dc17d584962ad0902ce5b6a",
+    "originalSourceRecordSha256": "7c1b14fd253f19dfcb26bb2e65fff85741ab6134401fa3eb75492c026eb89606",
+    "changedFields": [
+      "graph",
+      "table"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "ff3c2a72567edae9f77d515b34093b7831e958daac0d3d1a378b6109c3908511"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "core",
+      "compactStart": 205,
+      "text": "m = 1 / rr",
+      "alternative": "m equals 1 divided by reserve ratio"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 4,
+      "text": "rr = 10%",
+      "alternative": "reserve ratio equals 10 percent"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 32,
+      "text": "1 / 0.10 = 10",
+      "alternative": "1 divided by 0.10 equals 10"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 44,
+      "text": "$1,000",
+      "alternative": "1,000 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 109,
+      "text": "$10,000",
+      "alternative": "10,000 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 140,
+      "text": "$1,000",
+      "alternative": "1,000 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 181,
+      "text": "$9,000",
+      "alternative": "9,000 dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 13,
+      "text": "10%",
+      "alternative": "10 percent"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 18,
+      "text": "20%",
+      "alternative": "20 percent"
+    },
+    {
+      "sourceField": "recognition/0",
+      "compactStart": 0,
+      "text": "Required reserves = reserve ratio x deposits",
+      "alternative": "Required reserves equals reserve ratio times deposits"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

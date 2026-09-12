@@ -24,7 +24,7 @@ def wrap(text,width,font=REGULAR,size=9.5):
         if stringWidth(line,font,size)>width:raise ValueError('Unbreakable text exceeds width: '+line)
     return lines+[line] if line else lines
 
-def table_image(table):
+def table_image(table,styled=False):
     cols=['',*table['columnHeaders']];rows=[cols]+[[h,*v] for h,v in zip(table['rowHeaders'],table['cells'])]
     if len(set(table['rowHeaders']))!=len(table['rowHeaders']) or len(set(cols))!=len(cols):raise ValueError('Unique table headers required')
     if any(len(r)!=len(cols) for r in rows):raise ValueError('Table dimensions')
@@ -50,8 +50,13 @@ def table_image(table):
     for n,line in enumerate(captionlines):d.text((pad,pad+n*36),line,font=bold,fill=NAVY)
     for r,row in enumerate(rows):
         for c,t in enumerate(row):
-            box=(xs[c],ys[r],xs[c+1],ys[r+1]);d.rectangle(box,fill=PALE if r==0 or c==0 else 'white',outline=NAVY,width=2)
-            for n,line in enumerate(cell_lines[r][c]):d.text((xs[c]+pad,ys[r]+pad+n*36),line,font=bold if r==0 or c==0 else reg,fill=INK)
+            box=(xs[c],ys[r],xs[c+1],ys[r+1])
+            if styled:
+                total=r>0 and (str(row[0]).lower().startswith('total') or str(row[0]).lower()=='capital')
+                d.rectangle(box,fill=NAVY if r==0 else PALE if total or c==0 else 'white')
+                d.line((xs[c],ys[r+1]-1,xs[c+1],ys[r+1]-1),fill=TEAL if total else '#D7E4EA',width=2)
+            else:d.rectangle(box,fill=PALE if r==0 or c==0 else 'white',outline=NAVY,width=2)
+            for n,line in enumerate(cell_lines[r][c]):d.text((xs[c]+pad,ys[r]+pad+n*36),line,font=bold if r==0 or c==0 else reg,fill='white' if styled and r==0 else INK)
     regions={'imageWidth':width,'imageHeight':im.height,'captionBottom':caption_h,'xEdges':xs,'yEdges':ys}
     return im,regions
 
@@ -92,6 +97,12 @@ def graph_image(kind):
     return ax.render(),alt
 
 def draw(source,destination,meta):
+    if meta.get('canonicalTemplate'):
+        from canonical_components.pilot_renderer import draw as canonical_draw
+        return canonical_draw(source,destination,meta)
+    if meta.get('styleRestoration'):
+        from qa_template import draw as draw_template
+        return draw_template(source,destination,meta)
     path=contained(destination)
     if not path.is_relative_to(contained('tmp/pdf_accessibility')):raise ValueError('Staged visual output only')
     path.parent.mkdir(parents=True,exist_ok=True)

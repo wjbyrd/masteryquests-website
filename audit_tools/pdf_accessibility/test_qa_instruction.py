@@ -72,7 +72,11 @@ class InstructionalQA(unittest.TestCase):
     def test_all_tables_match_visible_source(self):
         tables=[r for r in self.sources.values() if r['content'].get('table')];self.assertEqual(len(tables),22)
         for r in tables:
-            t=r['content']['table'];m=self.meta[r['code']];im,regions=table_image(t)
+            t=r['content']['table'];m=self.meta[r['code']]
+            if m.get('canonicalTemplate'):
+                from canonical_components.pilot_renderer import canonical_table
+                im,regions=canonical_table(t,dense=bool(m.get('canonicalDense')))
+            else:im,regions=table_image(t,styled=bool(m.get('styleRestoration')))
             self.assertEqual(t,m['tableSource']);self.assertEqual(regions,m['tableRegions'])
             self.assertEqual(hashlib.sha256(im.tobytes()).hexdigest(),m['graphDecodedSha256'])
     def test_bank_identity(self):

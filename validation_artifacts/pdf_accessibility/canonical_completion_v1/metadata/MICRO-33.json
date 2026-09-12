@@ -1,0 +1,520 @@
+{
+  "baselineSha256": "da4a205e051b47b57ca053fbd9a1d294280b0f0688f3eb0bac1c45fa04704033",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-33.png",
+  "assetSourceSha256": "2395efdb4665aade2465b48292cb6fd8cffe934b7d9a8ce7ddafca9697981cea",
+  "graphDecodedSha256": "d16ceb4f05fbe410bf9e35bf65f9f3f16660d91e9e4a77a7479d89fd85c53329",
+  "graphAlternative": "Two panels. Left, Market: horizontal axis market quantity; vertical axis price. S slopes up and D slopes down, intersecting at quantity 100 and price 25. Right, Representative firm: horizontal axis firm quantity; vertical axis cost / revenue. Horizontal P = MR = AR at 25 meets MC and minimum ATC at quantity 50. At that quantity, AVC is 17, explicitly labeled and connected by dashed guides. ATC and AVC are U-shaped. Both panels share price 25.",
+  "sourceRecordSha256": "163b0b4513daf67702889ba1daba0bab11441ec4e6a977f8902ce26c0bf90844",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "163b0b4513daf67702889ba1daba0bab11441ec4e6a977f8902ce26c0bf90844",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "d61bd6e339d9d67b9cfdf37f806a35b9d3e256a79e514b25252a08d33071bda3",
+    "originalSourceRecordSha256": "2b65f20dcf20ca1da742a00285ff938e57823fd6ef9e0dab349cc32d22a056c7",
+    "changedFields": [
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "12e58e6a307dae15a7c4cfc4b171d972653eb39e6b2f0ddd07d11215d70d9694"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 155,
+      "text": "P = MC",
+      "alternative": "P  equals  MC"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 186,
+      "text": "$25",
+      "alternative": "dollars 25"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [
+    {
+      "sourceField": "core",
+      "compactStart": 177,
+      "symbol": "/",
+      "reason": "Reviewed prose separator, not a mathematical operator"
+    },
+    {
+      "sourceField": "watch",
+      "compactStart": 89,
+      "symbol": "/",
+      "reason": "Reviewed prose separator, not a mathematical operator"
+    },
+    {
+      "sourceField": "recognition/0",
+      "compactStart": 51,
+      "symbol": "/",
+      "reason": "Reviewed prose separator, not a mathematical operator"
+    }
+  ],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_TEXT_STACKED",
+    "width": 479.573,
+    "height": 139.87545833333334,
+    "minimumLabelPt": 8.658956944444444,
+    "labels": [
+      {
+        "text": "Market",
+        "bounds": [
+          320,
+          3,
+          400,
+          22
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "Price",
+        "bounds": [
+          110,
+          42,
+          169,
+          61
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "S    D",
+        "bounds": [
+          110,
+          77,
+          175,
+          95
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "0",
+        "bounds": [
+          103,
+          359,
+          117,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "50",
+        "bounds": [
+          294.0,
+          359,
+          323.0,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "100",
+        "bounds": [
+          484.0,
+          359,
+          527.0,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "150",
+        "bounds": [
+          670,
+          359,
+          713,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "0",
+        "bounds": [
+          84,
+          341.0,
+          98,
+          359.0
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "10",
+        "bounds": [
+          69,
+          298.0,
+          98,
+          316.0
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "20",
+        "bounds": [
+          69,
+          255.0,
+          98,
+          273.0
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "30",
+        "bounds": [
+          69,
+          212.0,
+          98,
+          230.0
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "40",
+        "bounds": [
+          69,
+          169.0,
+          98,
+          187.0
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "50",
+        "bounds": [
+          69,
+          126.0,
+          98,
+          144.0
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "Market quantity",
+        "bounds": [
+          306,
+          390,
+          484,
+          414
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "Representative firm",
+        "bounds": [
+          967,
+          3,
+          1192,
+          27
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "Cost / revenue",
+        "bounds": [
+          830,
+          42,
+          999,
+          61
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "MC    ATC    AVC    P = MR = AR",
+        "bounds": [
+          830,
+          77,
+          1216,
+          95
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "AVC=17",
+        "bounds": [
+          830,
+          105,
+          928,
+          123
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "0",
+        "bounds": [
+          823,
+          359,
+          837,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "10",
+        "bounds": [
+          875.4,
+          359,
+          904.4,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "20",
+        "bounds": [
+          934.8,
+          359,
+          963.8,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "30",
+        "bounds": [
+          994.2,
+          359,
+          1023.2,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "40",
+        "bounds": [
+          1053.6,
+          359,
+          1082.6,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "50",
+        "bounds": [
+          1113.0,
+          359,
+          1142.0,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "60",
+        "bounds": [
+          1172.4,
+          359,
+          1201.4,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "70",
+        "bounds": [
+          1231.8,
+          359,
+          1260.8,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "80",
+        "bounds": [
+          1291.2,
+          359,
+          1320.2,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "90",
+        "bounds": [
+          1350.6,
+          359,
+          1379.6,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "100",
+        "bounds": [
+          1390,
+          359,
+          1433,
+          377
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "0",
+        "bounds": [
+          804,
+          341.0,
+          818,
+          359.0
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "5",
+        "bounds": [
+          754,
+          323.0833333333333,
+          768,
+          341.0833333333333
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "10",
+        "bounds": [
+          789,
+          305.1666666666667,
+          818,
+          323.1666666666667
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "15",
+        "bounds": [
+          739,
+          287.25,
+          768,
+          305.25
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "20",
+        "bounds": [
+          789,
+          269.33333333333337,
+          818,
+          287.33333333333337
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "25",
+        "bounds": [
+          739,
+          251.41666666666663,
+          768,
+          269.41666666666663
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "30",
+        "bounds": [
+          789,
+          233.5,
+          818,
+          251.5
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "35",
+        "bounds": [
+          739,
+          215.58333333333331,
+          768,
+          233.58333333333331
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "40",
+        "bounds": [
+          789,
+          197.66666666666669,
+          818,
+          215.66666666666669
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "45",
+        "bounds": [
+          739,
+          179.75,
+          768,
+          197.75
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "50",
+        "bounds": [
+          789,
+          161.83333333333331,
+          818,
+          179.83333333333331
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "55",
+        "bounds": [
+          739,
+          143.91666666666669,
+          768,
+          161.91666666666669
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "60",
+        "bounds": [
+          789,
+          126.0,
+          818,
+          144.0
+        ],
+        "fontSize": 8.658956944444444
+      },
+      {
+        "text": "Firm quantity",
+        "bounds": [
+          1040,
+          390,
+          1190,
+          414
+        ],
+        "fontSize": 8.658956944444444
+      }
+    ],
+    "retainedDiagram": "MICRO-33",
+    "stacked": true,
+    "dataSha256": "7e95d30ca9e5b182a0b348e3b208580938bae51ced5d99547726bbf6dc39007d",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-33.png",
+    "originalAssetSha256": "337b34f9b4e224bbbf63c92c2f3f035002782f8d5cccc2b73d4f97ab1e94a88a"
+  }
+}

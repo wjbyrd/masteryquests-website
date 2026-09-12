@@ -1,0 +1,160 @@
+{
+  "baselineSha256": "075409542219abcb19bae4f8c88ad81ac6fc6d932dc8f97207d97e55aca66060",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Bank balance sheet (dollars)",
+    "columnHeaders": [
+      "Before loss",
+      "After $25 loan loss"
+    ],
+    "rowHeaders": [
+      "Reserves",
+      "Loans",
+      "Securities",
+      "Total assets",
+      "Deposits",
+      "Borrowing",
+      "Total liabilities",
+      "Capital"
+    ],
+    "cells": [
+      [
+        "120",
+        "120"
+      ],
+      [
+        "780",
+        "755"
+      ],
+      [
+        "100",
+        "100"
+      ],
+      [
+        "1000",
+        "975"
+      ],
+      [
+        "900",
+        "900"
+      ],
+      [
+        "40",
+        "40"
+      ],
+      [
+        "940",
+        "940"
+      ],
+      [
+        "60",
+        "35"
+      ]
+    ],
+    "columnWidths": [
+      0.4,
+      0.28,
+      0.32
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 360,
+    "captionBottom": 36,
+    "xEdges": [
+      0,
+      576,
+      979,
+      1439
+    ],
+    "yEdges": [
+      36,
+      72,
+      108,
+      144,
+      180,
+      216,
+      252,
+      288,
+      324,
+      360
+    ]
+  },
+  "tableSourceSha256": "597878747d3667a6529c7b2989bf35307454506bcc63e52861af9ada1160c272",
+  "graphDecodedSha256": "f8b48ae415679468ccc1ab6750d475e90063363d639714b0d0d582a6bff74481",
+  "sourceRecordSha256": "d66015d0c1a6ba301007f7ae59f9891eea43859bc1ff4562b0b3849e8d593070",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "d66015d0c1a6ba301007f7ae59f9891eea43859bc1ff4562b0b3849e8d593070",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "af6ae877b0e0d590bd162462e26c907383e95ef5086264259079d55a561a351c",
+    "originalSourceRecordSha256": "14470cff8213e05b7b3d7c86a9a95f4237d25a65286b1b2a4455fd9ef7688e90",
+    "changedFields": [
+      "graph",
+      "table",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "b45f37cc2435bd92a32e87022ce38d1296f13a9677f78960d0195abab6d44187"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "core",
+      "compactStart": 26,
+      "text": "assets = liabilities + capital",
+      "alternative": "assets equals liabilities plus capital"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 48,
+      "text": "$1,000 = $940 + $60",
+      "alternative": "dollars 1,000  equals   dollars 940  plus   dollars 60"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 65,
+      "text": "$25",
+      "alternative": "dollars 25"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 141,
+      "text": "$975 = $940 + $35",
+      "alternative": "dollars 975  equals   dollars 940  plus   dollars 35"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 191,
+      "text": "$120",
+      "alternative": "dollars 120"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 21,
+      "text": "$20",
+      "alternative": "20 dollars"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalDense": {
+    "mode": "CANONICAL_TABLE_DENSE",
+    "tableTextFloor": 9.5
+  }
+}

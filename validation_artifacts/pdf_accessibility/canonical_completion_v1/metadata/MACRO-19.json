@@ -1,0 +1,59 @@
+{
+  "baselineSha256": "a2cbf27227b4c0f2505f81975a5b9584999a108ffa7fa29214d30b5a2bd81c7c",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "sourceRecordSha256": "76e6984f5f8bc775970787f4502529a5373e13c0cd199ccf76d9df3b42e4f195",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "76e6984f5f8bc775970787f4502529a5373e13c0cd199ccf76d9df3b42e4f195",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "c7849abafc8de0d47f466907e1ffa07911eb361de54289f6b8190e180585ae60",
+    "originalSourceRecordSha256": "a246dc0d1b2ea15df1737bcee75687512a93cc419fdcfcf381deccbb6d0b4abb",
+    "changedFields": [
+      "core"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "3193a607bda31aa2e8d2c743cae23ca48e2a72144c7015f9423746e053b8357c"
+  },
+  "inlineFormulas": [],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [
+    {
+      "sourceField": "watch",
+      "compactStart": 189,
+      "symbol": "/",
+      "reason": "Reviewed prose separator, not a mathematical operator"
+    },
+    {
+      "sourceField": "recognition/0",
+      "compactStart": 60,
+      "symbol": "/",
+      "reason": "Reviewed prose separator, not a mathematical operator"
+    },
+    {
+      "sourceField": "recognition/4",
+      "compactStart": 88,
+      "symbol": "/",
+      "reason": "Reviewed prose separator, not a mathematical operator"
+    }
+  ],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

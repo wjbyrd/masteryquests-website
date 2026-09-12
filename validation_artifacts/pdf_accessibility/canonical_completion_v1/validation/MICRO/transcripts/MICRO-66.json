@@ -1,0 +1,616 @@
+{
+  "errors": [],
+  "transcript": [
+    {
+      "role": "H1",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Condorcet Paradox & Voting Cycles  ",
+          "sourceText": "Condorcet Paradox & Voting Cycles  "
+        }
+      ],
+      "sourceText": "Condorcet Paradox & Voting Cycles",
+      "text": "Condorcet Paradox & Voting Cycles"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MICROECONOMICS  ",
+          "sourceText": "MICROECONOMICS  "
+        }
+      ],
+      "sourceText": "MICROECONOMICS",
+      "text": "MICROECONOMICS"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "MICRO-66  ",
+          "sourceText": "MICRO-66  "
+        }
+      ],
+      "sourceText": "MICRO-66",
+      "text": "MICRO-66"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Time:  ",
+          "sourceText": "Time:  "
+        },
+        {
+          "role": "Span",
+          "text": "5 minutes  ",
+          "sourceText": "5 minutes  "
+        }
+      ],
+      "sourceText": "Time: 5 minutes",
+      "text": "Time: 5 minutes"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Outcome: Explain how pairwise majority rule can generate cyclic collective preferences.  ",
+          "sourceText": "Outcome: Explain how pairwise majority rule can generate cyclic collective preferences.  "
+        }
+      ],
+      "sourceText": "Outcome: Explain how pairwise majority rule can generate cyclic collective preferences.",
+      "text": "Outcome: Explain how pairwise majority rule can generate cyclic collective preferences."
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Difficulty:  ",
+          "sourceText": "Difficulty:  "
+        },
+        {
+          "role": "Span",
+          "text": "Intermediate  ",
+          "sourceText": "Intermediate  "
+        }
+      ],
+      "sourceText": "Difficulty: Intermediate",
+      "text": "Difficulty: Intermediate"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "THE CORE IDEA  ",
+          "sourceText": "THE CORE IDEA  "
+        }
+      ],
+      "sourceText": "THE CORE IDEA",
+      "text": "THE CORE IDEA"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Even when every voter has a consistent ranking, pairwise majority voting can produce a cycle: A defeats B, B defeats C, and C defeats A. The group then has no option that defeats every alternative, and agenda order can affect the final outcome.  ",
+          "sourceText": "Even when every voter has a consistent ranking, pairwise majority voting can produce a cycle: A defeats B, B defeats C, and C defeats A. The group then has no option that defeats every alternative, and agenda order can affect the final outcome.  "
+        }
+      ],
+      "sourceText": "Even when every voter has a consistent ranking, pairwise majority voting can produce a cycle: A defeats B, B defeats C, and C defeats A. The group then has no option that defeats every alternative, and agenda order can affect the final outcome.",
+      "text": "Even when every voter has a consistent ranking, pairwise majority voting can produce a cycle: A defeats B, B defeats C, and C defeats A. The group then has no option that defeats every alternative, and agenda order can affect the final outcome."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "HOW TO RECOGNIZE IT  ",
+          "sourceText": "HOW TO RECOGNIZE IT  "
+        }
+      ],
+      "sourceText": "HOW TO RECOGNIZE IT",
+      "text": "HOW TO RECOGNIZE IT"
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "There are at least three alternatives and voters rank them differently.  ",
+          "sourceText": "There are at least three alternatives and voters rank them differently.  "
+        }
+      ],
+      "sourceText": "There are at least three alternatives and voters rank them differently.",
+      "text": "There are at least three alternatives and voters rank them differently."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Compare alternatives two at a time using majority rule.  ",
+          "sourceText": "Compare alternatives two at a time using majority rule.  "
+        }
+      ],
+      "sourceText": "Compare alternatives two at a time using majority rule.",
+      "text": "Compare alternatives two at a time using majority rule."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "The collective relation cycles even though each individual's ranking is consistent.  ",
+          "sourceText": "The collective relation cycles even though each individual's ranking is consistent.  "
+        }
+      ],
+      "sourceText": "The collective relation cycles even though each individual's ranking is consistent.",
+      "text": "The collective relation cycles even though each individual's ranking is consistent."
+    },
+    {
+      "role": "Lbl",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "•  ",
+          "sourceText": "•  "
+        }
+      ],
+      "sourceText": "•",
+      "text": "•"
+    },
+    {
+      "role": "LBody",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Because no option is a universal majority winner, agenda order may matter.  ",
+          "sourceText": "Because no option is a universal majority winner, agenda order may matter.  "
+        }
+      ],
+      "sourceText": "Because no option is a universal majority winner, agenda order may matter.",
+      "text": "Because no option is a universal majority winner, agenda order may matter."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WATCH OUT  ",
+          "sourceText": "WATCH OUT  "
+        }
+      ],
+      "sourceText": "WATCH OUT",
+      "text": "WATCH OUT"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "A voting cycle does not require irrational voters. Individually transitive rankings can aggregate into an intransitive majority relation.  ",
+          "sourceText": "A voting cycle does not require irrational voters. Individually transitive rankings can aggregate into an intransitive majority relation.  "
+        }
+      ],
+      "sourceText": "A voting cycle does not require irrational voters. Individually transitive rankings can aggregate into an intransitive majority relation.",
+      "text": "A voting cycle does not require irrational voters. Individually transitive rankings can aggregate into an intransitive majority relation."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "WORKED EXAMPLE: THREE VOTERS, THREE OPTIONS  ",
+          "sourceText": "WORKED EXAMPLE: THREE VOTERS, THREE OPTIONS  "
+        }
+      ],
+      "sourceText": "WORKED EXAMPLE: THREE VOTERS, THREE OPTIONS",
+      "text": "WORKED EXAMPLE: THREE VOTERS, THREE OPTIONS"
+    },
+    {
+      "role": "Caption",
+      "runs": [
+        {
+          "role": "Caption",
+          "text": "Individual rankings (first to third)",
+          "sourceText": "Individual rankings (first to third)"
+        }
+      ],
+      "sourceText": "Individual rankings (first to third)",
+      "text": "Individual rankings (first to third)"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "",
+          "sourceText": ""
+        }
+      ],
+      "sourceText": "",
+      "text": ""
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "First choice",
+          "sourceText": "First choice"
+        }
+      ],
+      "sourceText": "First choice",
+      "text": "First choice"
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "Second choice",
+          "sourceText": "Second choice"
+        }
+      ],
+      "sourceText": "Second choice",
+      "text": "Second choice"
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "Third choice",
+          "sourceText": "Third choice"
+        }
+      ],
+      "sourceText": "Third choice",
+      "text": "Third choice"
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "Voter 1",
+          "sourceText": "Voter 1"
+        }
+      ],
+      "sourceText": "Voter 1",
+      "text": "Voter 1"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "A",
+          "sourceText": "A"
+        }
+      ],
+      "sourceText": "A",
+      "text": "A"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "B",
+          "sourceText": "B"
+        }
+      ],
+      "sourceText": "B",
+      "text": "B"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "C",
+          "sourceText": "C"
+        }
+      ],
+      "sourceText": "C",
+      "text": "C"
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "Voter 2",
+          "sourceText": "Voter 2"
+        }
+      ],
+      "sourceText": "Voter 2",
+      "text": "Voter 2"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "B",
+          "sourceText": "B"
+        }
+      ],
+      "sourceText": "B",
+      "text": "B"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "C",
+          "sourceText": "C"
+        }
+      ],
+      "sourceText": "C",
+      "text": "C"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "A",
+          "sourceText": "A"
+        }
+      ],
+      "sourceText": "A",
+      "text": "A"
+    },
+    {
+      "role": "TH",
+      "runs": [
+        {
+          "role": "TH",
+          "text": "Voter 3",
+          "sourceText": "Voter 3"
+        }
+      ],
+      "sourceText": "Voter 3",
+      "text": "Voter 3"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "C",
+          "sourceText": "C"
+        }
+      ],
+      "sourceText": "C",
+      "text": "C"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "A",
+          "sourceText": "A"
+        }
+      ],
+      "sourceText": "A",
+      "text": "A"
+    },
+    {
+      "role": "TD",
+      "runs": [
+        {
+          "role": "TD",
+          "text": "B",
+          "sourceText": "B"
+        }
+      ],
+      "sourceText": "B",
+      "text": "B"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Using the rankings, A defeats B by 2 votes to 1; B defeats C by 2 to 1; and C defeats A by 2 to 1. Each voter has a consistent ranking, yet the group cycles. With no option beating every rival, the order of pairwise votes can affect the final survivor.  ",
+          "sourceText": "Using the rankings, A defeats B by 2 votes to 1; B defeats C by 2 to 1; and C defeats A by 2 to 1. Each voter has a consistent ranking, yet the group cycles. With no option beating every rival, the order of pairwise votes can affect the final survivor.  "
+        }
+      ],
+      "sourceText": "Using the rankings, A defeats B by 2 votes to 1; B defeats C by 2 to 1; and C defeats A by 2 to 1. Each voter has a consistent ranking, yet the group cycles. With no option beating every rival, the order of pairwise votes can affect the final survivor.",
+      "text": "Using the rankings, A defeats B by 2 votes to 1; B defeats C by 2 to 1; and C defeats A by 2 to 1. Each voter has a consistent ranking, yet the group cycles. With no option beating every rival, the order of pairwise votes can affect the final survivor."
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "CHECK YOURSELF  ",
+          "sourceText": "CHECK YOURSELF  "
+        }
+      ],
+      "sourceText": "CHECK YOURSELF",
+      "text": "CHECK YOURSELF"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Why can changing the order of pairwise votes change the winner when majority preferences form a cycle?  ",
+          "sourceText": "Why can changing the order of pairwise votes change the winner when majority preferences form a cycle?  "
+        }
+      ],
+      "sourceText": "Why can changing the order of pairwise votes change the winner when majority preferences form a cycle?",
+      "text": "Why can changing the order of pairwise votes change the winner when majority preferences form a cycle?"
+    },
+    {
+      "role": "H2",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "READY?  ",
+          "sourceText": "READY?  "
+        }
+      ],
+      "sourceText": "READY?",
+      "text": "READY?"
+    },
+    {
+      "role": "P",
+      "runs": [
+        {
+          "role": "Span",
+          "text": "Return to the game and master this concept.  ",
+          "sourceText": "Return to the game and master this concept.  "
+        }
+      ],
+      "sourceText": "Return to the game and master this concept.",
+      "text": "Return to the game and master this concept."
+    }
+  ],
+  "roles": [
+    "/Document",
+    "/H1",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/P",
+    "/H2",
+    "/P",
+    "/H2",
+    "/L",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/LI",
+    "/Lbl",
+    "/LBody",
+    "/H2",
+    "/P",
+    "/H2",
+    "/Table",
+    "/Caption",
+    "/TR",
+    "/TD",
+    "/TH",
+    "/TH",
+    "/TH",
+    "/TR",
+    "/TH",
+    "/TD",
+    "/TD",
+    "/TD",
+    "/TR",
+    "/TH",
+    "/TD",
+    "/TD",
+    "/TD",
+    "/TR",
+    "/TH",
+    "/TD",
+    "/TD",
+    "/TD",
+    "/P",
+    "/H2",
+    "/P",
+    "/H2",
+    "/P"
+  ],
+  "linkedContentCount": 44,
+  "figureAlternatives": [],
+  "formulas": [],
+  "fonts": [
+    {
+      "font": "/AAAAAA+Arimo-bold",
+      "embedded": true,
+      "unicodeMap": true
+    },
+    {
+      "font": "/AAAAAA+Arimo-regular",
+      "embedded": true,
+      "unicodeMap": true
+    }
+  ],
+  "rawReadingSequence": [
+    "Condorcet Paradox & Voting Cycles",
+    "MICROECONOMICS",
+    "MICRO-66",
+    "Time: 5 minutes",
+    "Outcome: Explain how pairwise majority rule can generate cyclic collective preferences.",
+    "Difficulty: Intermediate",
+    "THE CORE IDEA",
+    "Even when every voter has a consistent ranking, pairwise majority voting can produce a cycle: A defeats B, B defeats C, and C defeats A. The group then has no option that defeats every alternative, and agenda order can affect the final outcome.",
+    "HOW TO RECOGNIZE IT",
+    "•",
+    "There are at least three alternatives and voters rank them differently.",
+    "•",
+    "Compare alternatives two at a time using majority rule.",
+    "•",
+    "The collective relation cycles even though each individual's ranking is consistent.",
+    "•",
+    "Because no option is a universal majority winner, agenda order may matter.",
+    "WATCH OUT",
+    "A voting cycle does not require irrational voters. Individually transitive rankings can aggregate into an intransitive majority relation.",
+    "WORKED EXAMPLE: THREE VOTERS, THREE OPTIONS",
+    "Using the rankings, A defeats B by 2 votes to 1; B defeats C by 2 to 1; and C defeats A by 2 to 1. Each voter has a consistent ranking, yet the group cycles. With no option beating every rival, the order of pairwise votes can affect the final survivor.",
+    "CHECK YOURSELF",
+    "Why can changing the order of pairwise votes change the winner when majority preferences form a cycle?",
+    "READY?",
+    "Return to the game and master this concept."
+  ]
+}

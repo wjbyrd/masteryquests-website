@@ -1,0 +1,171 @@
+{
+  "baselineSha256": "a8043c1a719fcc4858c7b9bb358fb56c9f59d19a342da5adc8c5ae37b08fb947",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Trade and asset transactions (billions of dollars)",
+    "columnHeaders": [
+      "Positive flow",
+      "Negative flow",
+      "Net"
+    ],
+    "rowHeaders": [
+      "Goods: NX",
+      "Assets: NCO"
+    ],
+    "cells": [
+      [
+        "Exports 300",
+        "Imports 360",
+        "-60"
+      ],
+      [
+        "Residents buy foreign 90",
+        "Foreigners buy domestic 150",
+        "-60"
+      ]
+    ],
+    "columnWidths": [
+      0.18,
+      0.3,
+      0.34,
+      0.18
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 180,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      259,
+      691,
+      1180,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180
+    ]
+  },
+  "tableSourceSha256": "ff812fda5f7984f60faa61e346cf2b5055359ad2b372cbeac0a13ed138e664e2",
+  "graphDecodedSha256": "7a2b8dd70d6a39e291dfcd0b21a3b6ffa91db7b3aed7b95f489309d5a373292d",
+  "sourceRecordSha256": "675321824a855736ace6827df2a262cfab10e6fb281e2a0203abae0ab1d1cc6c",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "675321824a855736ace6827df2a262cfab10e6fb281e2a0203abae0ab1d1cc6c",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "6b762b43f2e232053017f67ee1e184f7cb30b68d7ce6fefe07ae1982c086a442",
+    "originalSourceRecordSha256": "085adf76a1515f89c1798055de4716083b2a0934068e053e1959c0891c3eefac",
+    "changedFields": [
+      "graph",
+      "table"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "925f66c1e8318fa227481d6c810d86677aecacf4a6bda6880bf4051c685b34c6"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "core",
+      "compactStart": 33,
+      "text": "NX = X - M",
+      "alternative": "N X equals X minus M"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 208,
+      "text": "NX = NCO",
+      "alternative": "N X equals N C O"
+    },
+    {
+      "sourceField": "core",
+      "compactStart": 264,
+      "text": "S = I + NCO = I + NX",
+      "alternative": "S equals I plus N C O equals I plus N X"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 10,
+      "text": "$300 billion",
+      "alternative": "300 billion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 34,
+      "text": "$360 billion",
+      "alternative": "360 billion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 48,
+      "text": "NX = -$60 billion",
+      "alternative": "N X equals minus 60 billion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 75,
+      "text": "$90 billion",
+      "alternative": "90 billion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 118,
+      "text": "$150 billion",
+      "alternative": "150 billion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 148,
+      "text": "NCO = $90 - $150 = -$60 billion",
+      "alternative": "N C O equals 90 minus 150 equals negative 60, all in billions of dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 187,
+      "text": "$240 billion",
+      "alternative": "240 billion dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 207,
+      "text": "I + NCO = $180 billion",
+      "alternative": "I plus N C O equals 180 billion dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 16,
+      "text": "$250 billion",
+      "alternative": "250 billion dollars"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 42,
+      "text": "$210 billion",
+      "alternative": "210 billion dollars"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

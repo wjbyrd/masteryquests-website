@@ -1,0 +1,247 @@
+{
+  "baselineSha256": "176997142487a8a5476223a8d77381d34e746d4d77d1ddb88ee30d8dcf8b1606",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-48.png",
+  "assetSourceSha256": "76c105aaa2052bba5a69eb8e9e693a84a9d96aa793db4c2a3a3e1bf5dfc603a5",
+  "graphDecodedSha256": "74ca1732fdc34e140fdb1245113d5565d69b61ac93caa981895e3722f2fee08a",
+  "graphAlternative": "Horizontal axis: Firm or fringe, with categories A, B, C, D and Other; vertical axis: Market share in percent. The five bars have printed values A 38 percent, B 32 percent, C 12 percent, D 9 percent, and Other 9 percent. Other is a separate aggregate category, not labeled as a single firm.",
+  "sourceRecordSha256": "9ca1ed224922871981700168c39f7684cb358f7095de81509deecd3c5bd5a2b8",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "9ca1ed224922871981700168c39f7684cb358f7095de81509deecd3c5bd5a2b8",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "c1ab2e071b80bdc4c1e4d9f5d73492af6a3d96eabd0e68761e8ce94f6ed28467",
+    "originalSourceRecordSha256": "b2a4895c9b011aca502493e413132ac46753c3d96fd66ccaf2e12e8a21dbf2fd",
+    "changedFields": [
+      "check",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "176c9bd8da26550fc467ce3793d9fa2b1d326566592076c73e34db76c550f5ec"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 23,
+      "text": "38^2 + 32^2 + 12^2 + 9^2 = 2,693",
+      "alternative": "38 squared   plus  32 squared   plus  12 squared   plus  9 squared   equals  2,693"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 69,
+      "text": "9%",
+      "alternative": "9 percent"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 132,
+      "text": "9^2 = 81",
+      "alternative": "9 squared   equals  81"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_LABEL_AWARE_DIAGRAM",
+    "width": 320,
+    "height": 130,
+    "minimumLabelPt": 8.666666666666666,
+    "labels": [
+      {
+        "text": "Market share (%)",
+        "bounds": [
+          110,
+          5,
+          309,
+          29
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          84,
+          311.0,
+          98,
+          329.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "10",
+        "bounds": [
+          69,
+          251.0,
+          98,
+          269.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          69,
+          191.0,
+          98,
+          209.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "30",
+        "bounds": [
+          69,
+          131.0,
+          98,
+          149.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "40",
+        "bounds": [
+          69,
+          71.0,
+          98,
+          89.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "38%",
+        "bounds": [
+          171,
+          67.0,
+          223,
+          85.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "A",
+        "bounds": [
+          188,
+          329,
+          206,
+          347
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "32%",
+        "bounds": [
+          326,
+          103.0,
+          378,
+          121.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "B",
+        "bounds": [
+          343,
+          329,
+          360,
+          347
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "12%",
+        "bounds": [
+          481,
+          223.0,
+          533,
+          241.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "C",
+        "bounds": [
+          498,
+          329,
+          517,
+          347
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "9%",
+        "bounds": [
+          643,
+          241.0,
+          681,
+          259.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "D",
+        "bounds": [
+          653,
+          329,
+          672,
+          347
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "9%",
+        "bounds": [
+          798,
+          241.0,
+          836,
+          259.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Other",
+        "bounds": [
+          784,
+          329,
+          849,
+          348
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Firm or fringe",
+        "bounds": [
+          448,
+          360,
+          603,
+          384
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "retainedDiagram": "MICRO-48",
+    "dataSha256": "df0d2d537431e8a88532664d1c1bb8c868ac3502993d32376e0824b66ab05d7a",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MICRO-48.png",
+    "originalAssetSha256": "0e665c0e2fba99a725efb0e6187239bea34cd177e7e04f9e627bc77844c9e373"
+  }
+}

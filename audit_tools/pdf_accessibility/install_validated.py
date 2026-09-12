@@ -12,7 +12,8 @@ import argparse,uuid
 MANIFEST='build/faculty-build-composer/data/concept-reviews/manifest.json'
 RELEASES='build/faculty-build-composer/data/concept-reviews/accessibility_releases.json'
 
-def prepare(records,review_path):
+def prepare(records,review_path,scope='both'):
+    if scope not in ('both','composer'):raise ValueError('Unknown installation scope')
     root_guard();review_path=contained(review_path);review=read_json(review_path)
     sources={r['code']:r for r in read_json(SOURCE)['reviews']};metadata=read_json(SEMANTICS)
     manifest=read_json(MANIFEST);known={r['code']:r for r in manifest['reviews']};plan=[]
@@ -40,10 +41,16 @@ def prepare(records,review_path):
         wording_ok=bool(meta.get('wordingCorrection') or meta.get('qaRemediation')) and approved_text_equal(
             PdfReader(contained('build/faculty-build-composer/data/concept-reviews/'+code+'.pdf')).pages[0].extract_text(),
             PdfReader(candidate).pages[0].extract_text(),meta)
-        if not (row.get('textWhitespaceOnlyEqual') or wording_ok) or not row.get('geometryEqual') or row['pageCounts']!=[1,1]:raise ValueError('Unreviewed content/layout change')
+        # After exact-byte installation the active PDF is already the reviewed
+        # candidate, not the old input used by the authorized-difference check.
+        # All source, semantic, validator and byte-bound review gates above still
+        # apply; a different active or candidate hash cannot use this branch.
+        already_installed=sha('build/faculty-build-composer/data/concept-reviews/'+code+'.pdf')==row['sha256']
+        if not (row.get('textWhitespaceOnlyEqual') or wording_ok or already_installed) or not row.get('geometryEqual') or row['pageCounts']!=[1,1]:raise ValueError('Unreviewed content/layout change')
         pdfname=known[code]['pdfPath']
         if Path(pdfname).name!=pdfname or pdfname!=code+'.pdf':raise ValueError('Unexpected manifest path')
-        targets=[contained(prefix+'/'+pdfname) for prefix in ('concept-reviews','build/faculty-build-composer/data/concept-reviews')]
+        prefixes=('concept-reviews','build/faculty-build-composer/data/concept-reviews') if scope=='both' else ('build/faculty-build-composer/data/concept-reviews',)
+        targets=[contained(prefix+'/'+pdfname) for prefix in prefixes]
         existing=[sha(p) for p in targets if p.exists()]
         if len(set(existing))>1:raise ValueError('Active copies already disagree')
         if any(h!=known[code]['sha256'] for h in existing):raise ValueError('Active copy differs from manifest')
@@ -53,7 +60,7 @@ def prepare(records,review_path):
                          'independentValidationPassed':True,'semanticReviewPassed':True,'contentPreservationPassed':True,
                          'graphIdentityPassed':True,'renderComparisonPassed':True,'reviewReport':str(review_path.relative_to(EXPECTED_ROOT)),
                          'reviewReportSha256':sha(review_path)}})
-    return {'manifestSha256':sha(MANIFEST),'records':plan}
+    return {'manifestSha256':sha(MANIFEST),'records':plan,**({'scope':'composer'} if scope=='composer' else {})}
 
 def materialize(plan,fixture_directory=None):
     """All gates precede mutation. Roll back on a partial write or equality failure."""
@@ -62,7 +69,7 @@ def materialize(plan,fixture_directory=None):
     # its evidence and current semantic structure immediately before any write.
     for row in plan['records']:
         evidence=row['evidence']
-        fresh=prepare([evidence],evidence['reviewReport'])['records'][0]
+        fresh=prepare([evidence],evidence['reviewReport'],scope=plan.get('scope','both'))['records'][0]
         for key in ('code','candidate','targets','expected','sha256','sizeBytes'):
             if row[key]!=fresh[key]:raise ValueError('Install plan does not match validated evidence')
     if sha(MANIFEST)!=plan['manifestSha256']:raise ValueError('Manifest changed since preflight')
@@ -76,7 +83,7 @@ def materialize(plan,fixture_directory=None):
         for index,(name,expected) in enumerate(zip(row['targets'],row['expected'])):
             target=contained(name)
             if (sha(target) if target.exists() else None)!=expected:raise ValueError('Active copy changed after preflight')
-            if fixture:target=contained(fixture/('public' if index==0 else 'composer')/target.name)
+            if fixture:target=contained(fixture/('composer' if plan.get('scope')=='composer' else 'public' if index==0 else 'composer')/target.name)
             writes.append((target,candidate.read_bytes()))
         record=next(r for r in manifest['reviews'] if r['code']==row['code'])
         record.update(sha256=row['sha256'],sizeBytes=row['sizeBytes'],pageCount=1,documentLanguage='en-US',hasSelectableText=True)
@@ -96,7 +103,7 @@ def materialize(plan,fixture_directory=None):
             root_guard();target=contained(target);target.parent.mkdir(parents=True,exist_ok=True)
             staged=contained(scratch/f'new-{i}');staged.write_bytes(data);os.replace(staged,target);changed.append(target)
         for row in plan['records']:
-            targets=[contained(fixture/sub/(row['code']+'.pdf')) for sub in ('public','composer')] if fixture else row['targets']
+            targets=[contained(fixture/sub/(row['code']+'.pdf')) for sub in (('composer',) if plan.get('scope')=='composer' else ('public','composer'))] if fixture else row['targets']
             errors,_=check_copies(targets,row['sha256'],row['sizeBytes'])
             if errors:raise ValueError('Installed copy mismatch: '+str(errors))
     except BaseException:
@@ -105,7 +112,7 @@ def materialize(plan,fixture_directory=None):
             if old is None:contained(target).unlink()
             else:contained(target).write_bytes(old)
         raise
-    return {'fixtureOnly':bool(fixture),'records':len(plan['records']),'copies':len(plan['records'])*2,'backupDirectory':str(scratch)}
+    return {'fixtureOnly':bool(fixture),'records':len(plan['records']),'copies':sum(len(r['targets']) for r in plan['records']),'backupDirectory':str(scratch)}
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--validation',required=True);parser.add_argument('--review',required=True)

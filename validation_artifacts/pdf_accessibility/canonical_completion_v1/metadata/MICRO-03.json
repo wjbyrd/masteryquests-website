@@ -1,0 +1,71 @@
+{
+  "baselineSha256": "fa982a28f33bb6cf4dec0b62537e22dcb5ef3eea32fe18c9376dc2dd180020c2",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "sourceRecordSha256": "123ada47659033bffed1da9380837f12419624c55f4b8f6c675aa00d73dbd77d",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "123ada47659033bffed1da9380837f12419624c55f4b8f6c675aa00d73dbd77d",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "d228b395cbb928e5c6cfa2420ad4fcbc415bf99bc7649088f7e22b082a569bda",
+    "originalSourceRecordSha256": "975d762428e33d10d7f7da2add0a58f24fafea50db8d58c8b7f776620e409a16",
+    "changedFields": [
+      "core"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "ce6a7f86a611f34345984e02580703ba16b1593132e408f785bacd9ce4527b59"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 27,
+      "text": "$8",
+      "alternative": "8 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 95,
+      "text": "$20",
+      "alternative": "20 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 138,
+      "text": "$20 + $8 = $28",
+      "alternative": "20 dollars plus 8 dollars equals 28 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 175,
+      "text": "$24",
+      "alternative": "24 dollars"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 221,
+      "text": "$4",
+      "alternative": "4 dollars"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

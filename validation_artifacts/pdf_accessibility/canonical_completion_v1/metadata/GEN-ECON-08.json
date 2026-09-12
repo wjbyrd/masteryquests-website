@@ -1,0 +1,255 @@
+{
+  "baselineSha256": "a4cdead63aefb1a883353a1186bd89071953976847db027db99e785c1e349967",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/GEN-ECON-08.png",
+  "assetSourceSha256": "0a249e6f0abd2e19b8bd3a77ea9696863fa2d483862e2b254dc52428e944b055",
+  "graphDecodedSha256": "d3849cc8a087ace15a1364b5667a4ba124d3f6508c30eaebd0c530e2ad931529",
+  "graphAlternative": "The horizontal axis is Good X and the vertical axis is Good Y. A bowed-out frontier passes through A at (0, 50), B at (8, 45), C at (15, 35), D at (21, 20), and E at (25, 0). F is inside the frontier near (8, 20), and G is outside it near (21, 48).",
+  "sourceRecordSha256": "3e24a7082d5770d5cbe87c9c3d7926cebbdad8450d290102eba6f261d7dbad2c",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "3e24a7082d5770d5cbe87c9c3d7926cebbdad8450d290102eba6f261d7dbad2c",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "c3f12de078b115f00b652d1cac0c0db5e39a579140e9da92d198f5491432cc38",
+    "originalSourceRecordSha256": "3382ccce25a5ef88122020a9a0ba7a247c403fd7d7217a7d3e5e7bdb26917c1c",
+    "changedFields": [
+      "core"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "322cd4532eccef9c743e4578be8b85a78f697ad21db07f838fd2419d9188e942"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 141,
+      "text": "15/6 = 2.5",
+      "alternative": "15 divided by 6 equals 2.5"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "472ac5ddc05fde38f93956186a059906e5f69e498c40fceca25e4679e3979382",
+    "labels": [
+      {
+        "text": "Good Y",
+        "bounds": [
+          160,
+          82,
+          248,
+          101
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          153.0,
+          378.0,
+          167.0,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "8",
+        "bounds": [
+          362.6,
+          378.0,
+          376.6,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "15",
+        "bounds": [
+          539.0,
+          378.0,
+          568.0,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "21",
+        "bounds": [
+          696.1999999999999,
+          378.0,
+          725.1999999999999,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "25",
+        "bounds": [
+          801.0,
+          378.0,
+          830.0,
+          396.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "50",
+        "bounds": [
+          115,
+          152.5,
+          144,
+          170.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "45",
+        "bounds": [
+          115,
+          181.5,
+          144,
+          199.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "35",
+        "bounds": [
+          115,
+          214.75,
+          144,
+          232.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "20",
+        "bounds": [
+          115,
+          277.0,
+          144,
+          295.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          130,
+          360.0,
+          144,
+          378.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Good X",
+        "bounds": [
+          509.0,
+          406,
+          597.0,
+          425
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "A",
+        "bounds": [
+          166.0,
+          125.5,
+          184.0,
+          143.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "B",
+        "bounds": [
+          375.6,
+          146.25,
+          392.6,
+          164.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "C",
+        "bounds": [
+          559.0,
+          187.75,
+          578.0,
+          205.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "D",
+        "bounds": [
+          716.1999999999999,
+          250.0,
+          735.1999999999999,
+          268.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "E",
+        "bounds": [
+          821.0,
+          333.0,
+          838.0,
+          351.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "F",
+        "bounds": [
+          375.6,
+          250.0,
+          391.6,
+          268.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "G",
+        "bounds": [
+          716.1999999999999,
+          133.79999999999998,
+          736.1999999999999,
+          151.79999999999998
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "GEN-ECON-08",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/GEN-ECON-08.png",
+    "originalAssetSha256": "b4a3b0389d68b83f1ca34ff83d58c704a01887b6b5a23e2c7572f6305ce71cfe"
+  }
+}

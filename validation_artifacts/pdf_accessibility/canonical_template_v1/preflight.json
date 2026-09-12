@@ -1,0 +1,25 @@
+{
+  "task": "CONCEPT_REVIEW_GEN_ECON_01_TEMPLATE_ALIGNMENT_V1",
+  "root": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "head": "064362140bb6439d044f1c2aa835d841783f75ae",
+  "branch": "main",
+  "status": " M audit_tools/pdf_accessibility/batch_candidates.py\n M audit_tools/pdf_accessibility/negative_tests.py\n M audit_tools/pdf_accessibility/qa_renderer.py\n M audit_tools/pdf_accessibility/run_regression.py\n M audit_tools/pdf_accessibility/tag_pilot.py\n M audit_tools/pdf_accessibility/test_pipeline.py\n M audit_tools/pdf_accessibility/test_qa_instruction.py\n M build/faculty-build-composer/data/concept-reviews/accessibility_semantics.json\n?? FINAL_REPORT_concept_review_style_restoration.md\n?? audit_tools/pdf_accessibility/qa_template.py\n?? audit_tools/pdf_accessibility/style_compare.py\n?? audit_tools/pdf_accessibility/style_finalize.py\n?? audit_tools/pdf_accessibility/style_package.py\n?? audit_tools/pdf_accessibility/style_release.py\n?? audit_tools/pdf_accessibility/style_restoration.py\n?? audit_tools/pdf_accessibility/test_style_template.py\n?? validation_artifacts/concept_review_owner_review/v3/\n?? validation_artifacts/pdf_accessibility/owner_test_pack/style_restoration_v1/\n?? validation_artifacts/pdf_accessibility/style_restoration_v1/\n",
+  "writeAccess": "PASS",
+  "canonical": {
+    "resourceId": "GEN-ECON-01",
+    "domain": "GEN-ECON",
+    "title": "Scarcity",
+    "reviewCopyPath": "validation_artifacts/concept_review_owner_review/v3/GEN-ECON/GEN-ECON-01.pdf",
+    "reviewCopySHA256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+    "sourceStagedCandidatePath": "tmp\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-01\\after\\GEN-ECON-01.pdf",
+    "sourceStagedCandidateSHA256": "3901424bba74d606a1ead9e6d271e110fdfbd4e13015cb99e0e97b400892f2e0",
+    "validationEvidence": "validation_artifacts/pdf_accessibility/style_restoration_v1/staged_gate.json",
+    "rawValidatorEvidence": "validation_artifacts\\pdf_accessibility\\full_batch_v1\\batches\\general_01\\GEN-ECON-01\\verapdf.json",
+    "latestCorrectionSourceReport": "FINAL_REPORT_pdf_accessibility_full_batch.md",
+    "copyEquality": true,
+    "changed": false,
+    "styleRestored": false,
+    "latestStyleReport": null,
+    "contentAuthority": "v2"
+  }
+}

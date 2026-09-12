@@ -1,0 +1,121 @@
+{
+  "baselineSha256": "8d6b88b72c06d2b41d78b9beff4a3bead4b61fce12ad32010a1408b273628cc0",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "tableRequired": true,
+  "tableSource": {
+    "caption": "Constant wage: $120 per additional worker",
+    "columnHeaders": [
+      "Marginal product",
+      "Added labor cost",
+      "Cost per extra unit"
+    ],
+    "rowHeaders": [
+      "Fourth worker",
+      "Fifth worker"
+    ],
+    "cells": [
+      [
+        "12",
+        "$120",
+        "$10"
+      ],
+      [
+        "10",
+        "$120",
+        "$12"
+      ]
+    ],
+    "columnWidths": [
+      0.24,
+      0.22,
+      0.25,
+      0.29
+    ]
+  },
+  "tableRegions": {
+    "imageWidth": 1439,
+    "imageHeight": 180,
+    "captionBottom": 45,
+    "xEdges": [
+      0,
+      345,
+      662,
+      1022,
+      1439
+    ],
+    "yEdges": [
+      45,
+      90,
+      135,
+      180
+    ]
+  },
+  "tableSourceSha256": "5b76353567a9d7bba11657834d853abbfb53ea51b93d65ac6c661b46b617c12d",
+  "graphDecodedSha256": "b7332b2dc1dc1cd0aca0f60b092e0c14a4f1d37a816277b146873be417ec1569",
+  "sourceRecordSha256": "f65b233fcf92fbcd5d0a7cee16426d804c927e6b980d7803a72d455a0e3d2ba9",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "f65b233fcf92fbcd5d0a7cee16426d804c927e6b980d7803a72d455a0e3d2ba9",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "d9eee0fc2d83c5a5a2ebbbfea9e317e4c6ec037176aa57eebec5ae071ed46017",
+    "originalSourceRecordSha256": "ce3f38985d5c4ccff7a295dc65f866e3fa8220e466d99787616e9aa692f9d42f",
+    "changedFields": [
+      "check",
+      "core",
+      "graph",
+      "table",
+      "watch",
+      "worked"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "3e8ca5821b1ea535fba1d0731a0edd1ec68d6e1c367cd8e166f3b57a05a4ffb6"
+  },
+  "inlineFormulas": [
+    {
+      "sourceField": "worked",
+      "compactStart": 25,
+      "text": "$120",
+      "alternative": "dollars 120"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 71,
+      "text": "$120 / 12 = $10",
+      "alternative": "dollars 120  divided by  12  equals   dollars 10"
+    },
+    {
+      "sourceField": "worked",
+      "compactStart": 109,
+      "text": "$120 / 10 = $12",
+      "alternative": "dollars 120  divided by  10  equals   dollars 12"
+    },
+    {
+      "sourceField": "check",
+      "compactStart": 9,
+      "text": "$120,",
+      "alternative": "dollars 120,"
+    }
+  ],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "baselineSha256": "f9c43b5269696ffd016849725812d82f20c9af43a4144099de8d9566f6feea24",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MICRO-24.png",
+  "assetSourceSha256": "0211582d3b2392ce8166f2dc3ed5a7718ebb945a6d742ba7ad4f07f51307a619",
+  "graphDecodedSha256": "cca4e9e47a8b1af841e8c5663b288d8d26ff0d86fdf19903602ef74c88b364bd",
+  "graphAlternative": "Quantity horizontal; cost per unit vertical. Original ATC equals AVC plus 250 divided by Q. Higher fixed cost makes ATC equal AVC plus 500 divided by Q, above original ATC at every positive output. AVC and MC remain unchanged. The ATC-AVC gap declines with Q for either fixed-cost amount.",
+  "sourceRecordSha256": "f580d184be01534319cfd9aa5df03c74592ca877ec12a2ac2c2643ac084c0ede",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "f580d184be01534319cfd9aa5df03c74592ca877ec12a2ac2c2643ac084c0ede",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "f2c0c196f88701c46bc827ba3e59bda86e428522d61c104242fb8887017ddb16",
+    "originalSourceRecordSha256": "6f0275bd0ecf4ffac6a20598472088a91094a010242060ff86d44597ed681b5c",
+    "changedFields": [
+      "check",
+      "graph",
+      "graphSpec"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "deb2979ebfb34d406e4256b14b68e822f579c9586b53f0fe38a829b6451af8bd"
+  },
+  "inlineFormulas": [],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_GRAPH_DENSE",
+    "width": 320.0,
+    "pixelWidth": 960,
+    "height": 145,
+    "minimumLabelPt": 8.666666666666666,
+    "modelSha256": "26206bb79a750f97b05eb6d2466cdc355d3a4049dd07b822e8a34e3ec192140a",
+    "labels": [
+      {
+        "text": "AVC unchanged",
+        "bounds": [
+          32,
+          3,
+          221,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "MC unchanged",
+        "bounds": [
+          265.3125,
+          3,
+          441.3125,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "ATC: original",
+        "bounds": [
+          485.59375,
+          3,
+          635.59375,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "ATC: higher fixed cost",
+        "bounds": [
+          679.84375,
+          3,
+          935.84375,
+          27
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Cost per unit ($)",
+        "bounds": [
+          110,
+          108,
+          296,
+          132
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          103,
+          377.0,
+          117,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "18",
+        "bounds": [
+          305.0,
+          377.0,
+          334.0,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "36",
+        "bounds": [
+          514.0,
+          377.0,
+          543.0,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "54",
+        "bounds": [
+          723.0,
+          377.0,
+          752.0,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "72",
+        "bounds": [
+          919,
+          377.0,
+          948,
+          395.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "65",
+        "bounds": [
+          65,
+          137.0,
+          94,
+          155.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "48.75",
+        "bounds": [
+          29,
+          192.75,
+          94,
+          210.75
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "32.5",
+        "bounds": [
+          43,
+          248.5,
+          94,
+          266.5
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "16.25",
+        "bounds": [
+          29,
+          304.25,
+          94,
+          322.25
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "0",
+        "bounds": [
+          80,
+          360.0,
+          94,
+          378.0
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Quantity",
+        "bounds": [
+          480.0,
+          406,
+          577.0,
+          430
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "sourceKind": "fixed_cost"
+  }
+}

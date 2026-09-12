@@ -1,0 +1,197 @@
+{
+  "baselineSha256": "1aa399fa02e616ff6ddf9213a5dd96f3e0551cab6ad86fb0ba2c3f73e67cfde4",
+  "decorativeText": [],
+  "decorativeImageDecodedSha256": [
+    "81ee5b99be7449057cd2b14db8d5ab1c5662d9451aadf4d49b7276d3f150c38c",
+    "f9c81cc103c04e9ecadbb3d0a92ae06c27eeef91911a149b69c5689ec14197dd",
+    "4fc0c25b008c1d747e56f15196ff1cdd60c0f88748ad061322bf16caa0946aa2",
+    "f30d55aa9e4fcc426e7b48e6f3442efd3d4b965ddaa8d8cc9befdff0dd106a9a",
+    "737a6ca2c7ef34d1ac221ee4bb7b686f943d0c55ce73d79b56ee6a8fc69bb7ea",
+    "ad113de238cb672daae0d3bf946d3ae09c0f82e5ab6aa0022046af59634cdabc",
+    "f86d423b57b131d94aff1d68c9f863d89866cb2ed6f942ddf02bf6b5aefa63d6",
+    "88a51dd2d2254f07ebd0d2a17120ccbc2ce8c4f4a3f77aa65ba023e9ad07128e"
+  ],
+  "assetSourcePath": "audit_tools/pdf_accessibility/canonical_components/figures/MACRO-39.png",
+  "assetSourceSha256": "cc89d8b51e15bac3e831efeb90a5e78109af0790f7ca8ab5fac93269550b242d",
+  "graphDecodedSha256": "dd8905c5a264f1163ec0acbe01667b62b054788917f2372fe92f965bc2bed38c",
+  "graphAlternative": "Horizontal axis: unemployment rate; vertical axis: inflation rate. A vertical LRPC stands at U2. SRPC1 is the lower, leftward downward-sloping curve; SRPC2 is the higher, rightward downward-sloping curve. Point a on SRPC1 is at unemployment U1 and inflation I2. Point b, where SRPC2 meets LRPC, is at U2 and I2. Point c, where SRPC1 meets LRPC, is at U2 and I1. Point d on SRPC2 is at U3 and I1. From left to right the unemployment labels are U1, U2, U3; I2 is above I1. Dashed guides identify all four points. No numerical rates are printed.",
+  "sourceRecordSha256": "ce963b985abab2b81d5037d3227ece6c08eccf777c071a23610e72b4290c936f",
+  "qaRemediation": {
+    "authorization": "CONCEPT_REVIEW_QA_REMEDIATION_V1",
+    "sourceRecordSha256": "ce963b985abab2b81d5037d3227ece6c08eccf777c071a23610e72b4290c936f",
+    "qaChecklistSha256": "d8dd71bb835638de1ec7bbc242a4aff320274136f473271392886ad4a41c1c17",
+    "baselineTextSha256": "c10833679e8cd74e6df21fdf871f62c467271ede0ca68d041154e041276aa534",
+    "originalSourceRecordSha256": "0e98deedbb92a299e2dec9d04d3e24d6a33f6d36742505444076a11ad9bfed5f",
+    "changedFields": [
+      "check"
+    ],
+    "reviewStatus": "PENDING",
+    "authorizedTextSha256": "c6cb6b349936691b3e0c86624a03cf9dfe78586502687b65503f0eb7916568b0"
+  },
+  "inlineFormulas": [],
+  "formulaCoverageReviewed": true,
+  "nonMathSymbols": [],
+  "styleRestoration": {
+    "task": "CONCEPT_REVIEW_STYLE_RESTORATION_V1",
+    "contentAuthority": "v2",
+    "visualAuthority": "v1"
+  },
+  "canonicalTemplate": {
+    "reference": "GEN-ECON-01",
+    "specificationSHA256": "b69027ba792fb68430ac3df54c2c699418c214d34179cf2f2f0e8c3859831765",
+    "task": "CONCEPT_REVIEW_CANONICAL_COMPLETION_COMPOSER_INSTALL_V1"
+  },
+  "canonicalFlow": "CANONICAL_COMPACT_FLOW",
+  "canonicalDense": {
+    "mode": "CANONICAL_LABEL_AWARE_DIAGRAM",
+    "width": 320,
+    "height": 145.0,
+    "minimumLabelPt": 8.666666666666666,
+    "labels": [
+      {
+        "text": "Inflation rate",
+        "bounds": [
+          85,
+          5,
+          228,
+          24
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "Unemployment rate",
+        "bounds": [
+          407,
+          400,
+          634,
+          424
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "LRPC",
+        "bounds": [
+          415,
+          27,
+          484,
+          45
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "SRPC1",
+        "bounds": [
+          780,
+          320,
+          867,
+          338
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "SRPC2",
+        "bounds": [
+          820,
+          253,
+          907,
+          271
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "a",
+        "bounds": [
+          259,
+          151,
+          274,
+          165
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "b",
+        "bounds": [
+          459,
+          151,
+          473,
+          170
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "c",
+        "bounds": [
+          459,
+          231,
+          472,
+          245
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "d",
+        "bounds": [
+          709,
+          231,
+          723,
+          250
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "U1",
+        "bounds": [
+          233,
+          370,
+          266,
+          388
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "U2",
+        "bounds": [
+          433,
+          370,
+          466,
+          388
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "U3",
+        "bounds": [
+          683,
+          370,
+          716,
+          388
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "I2",
+        "bounds": [
+          51,
+          171,
+          73,
+          189
+        ],
+        "fontSize": 8.666666666666666
+      },
+      {
+        "text": "I1",
+        "bounds": [
+          51,
+          251,
+          73,
+          269
+        ],
+        "fontSize": 8.666666666666666
+      }
+    ],
+    "retainedDiagram": "MACRO-39",
+    "dataSha256": "439fad48a29edb720892bbb848d0f616fb360e5e78fc82cd6c34726bd477581f",
+    "originalAssetSourcePath": "build/faculty-build-composer/data/concept-reviews/authoring/qa-visuals/MACRO-39.png",
+    "originalAssetSha256": "8f7c223d1dcba58190ee28b6cf0c48f599d79a108d5cda5e2bea85f42959dd9e"
+  }
+}
