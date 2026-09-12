@@ -1,0 +1,16 @@
+import fs from 'node:fs/promises';
+import { Workbook } from '@oai/artifact-tool';
+const source=JSON.parse(await fs.readFile(new URL('./checklist_rows.json',import.meta.url),'utf8'));
+const values=[source.columns,...source.rows.map(r=>source.columns.map(c=>r[c]))];
+const workbook=Workbook.create();
+const sheet=workbook.worksheets.add('Owner review');
+const range=sheet.getRange('A1:AB152');
+if(source.columns.length!==28 || values.length!==152) throw Error('Unexpected checklist shape');
+range.values=values;
+await workbook.recalculate();
+const result=range.values;
+if(JSON.stringify(result)!==JSON.stringify(values)) throw Error('Cell values changed');
+const quote=v=>'"'+String(v??'').replaceAll('"','""')+'"';
+const csv='\ufeff'+result.map(row=>row.map(quote).join(',')).join('\r\n')+'\r\n';
+await fs.writeFile(new URL('../REVIEW_CHECKLIST.csv',import.meta.url),csv,'utf8');
+console.log('Artifact-tool authored and checked 151 rows x 28 columns; CSV exported without formulas or approvals.');
