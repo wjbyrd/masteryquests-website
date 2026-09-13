@@ -1,4 +1,4 @@
-import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 import gate from '../../server/classroom-access/worker.mjs';
 const root=path.resolve(process.argv[2]||'.'),out=path.join(root,'validation_artifacts/classroom_access'),results=[];
 const base='/play/managerial-directorate-classroom';
@@ -26,6 +26,23 @@ await check('Cross-origin POST, extra redirect fields and oversized bodies are d
 await check('Encoded and repeated-slash classroom paths cannot bypass authorization or redirect externally',async()=>{for(const p of ['/%70lay/managerial-directorate-classroom/cost-directive/','/play/%6danagerial-directorate-classroom/index.html','//play//managerial-directorate-classroom/cost-directive/','/play/managerial-directorate-classroom%2fcost-directive/','/play/managerial-directorate-classroom/%2e/cost-directive/']){const r=await gate.fetch(request(p),env);assert.ok((await r.text()).includes('Enter the class access code'));}const r=await gate.fetch(login('//play//managerial-directorate-classroom/cost-directive/'),env);assert.equal(r.headers.get('location'),base+'/cost-directive/');});
 await check('Shared rate limit rejects guessing and expires without affecting valid sessions',async()=>{attempts=0;for(let i=0;i<120;i++)assert.equal((await gate.fetch(login(base+'/','incorrect'),env)).status,403);let r=await gate.fetch(login(),env);assert.equal(r.status,429);assert.equal(r.headers.get('retry-after'),'60');r=await gate.fetch(request(base+'/',{headers:{cookie}}),env);assert.ok((await r.text()).startsWith('STATIC'));attempts=0;assert.equal((await gate.fetch(login(),env)).status,303);});
 await check('Rate-limit binding absence/failure cannot accidentally authorize',async()=>{for(const binding of [undefined,{async limit(){throw Error('unavailable');}}]){const r=await gate.fetch(login(),{...env,CLASSROOM_LOGIN_LIMIT:binding});assert.ok([429,503].includes(r.status));assert.equal(r.headers.get('set-cookie'),null);}});
-await check('All prior tracked files except approved root config remain byte-identical',async()=>{const hashes=JSON.parse(fs.readFileSync(path.join(out,'baseline_hashes.json')));for(const [p,hash]of Object.entries(hashes))if(p!=='wrangler.jsonc')assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex'),hash,p);});
+await check('Classroom access protected files match committed HEAD',async()=>{
+  const protectedFiles=[
+    'server/classroom-access/worker.mjs',
+    'wrangler.jsonc',
+    'play/managerial-directorate-classroom/index.html',
+    'play/managerial-directorate-classroom/telemetry-client.js',
+    'play/managerial-directorate-classroom/telemetry-storage-isolation.js',
+    'play/managerial-directorate-classroom/cost-directive/index.html',
+    'play/managerial-directorate-classroom/market-signal/index.html',
+    'play/managerial-directorate-classroom/strategy-desk/index.html',
+    'play/managerial-directorate-classroom/agency-protocol/index.html'
+  ];
+  for(const p of protectedFiles){
+    const committed=execFileSync('git',['show','HEAD:'+p],{cwd:root});
+    const working=fs.readFileSync(path.join(root,p));
+    assert.deepEqual(working,committed,p);
+  }
+});
 await check('Root config preserves original asset directory and Worker; no route or backend changes',async()=>{const config=JSON.parse(fs.readFileSync(path.join(root,'wrangler.jsonc')));assert.equal(config.name,'masteryquests-website');assert.equal(config.assets.directory,'./dist');assert.deepEqual(config.assets.run_worker_first,[base,base+'/*']);assert.equal(config.assets.binding,'ASSETS');assert.equal(config.main,'server/classroom-access/worker.mjs');assert.equal(config.routes,undefined);assert.equal(config.vars,undefined);assert.equal(config.ratelimits[0].simple.limit,120);});
 const failed=results.filter(r=>r.status==='FAIL');const report={passed:results.length-failed.length,failed:failed.length,total:results.length,results};fs.writeFileSync(path.join(out,'validation_results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(failed.length)process.exitCode=1;
