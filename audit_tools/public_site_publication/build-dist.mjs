@@ -55,6 +55,10 @@ function publicTreeFilter(rel, entry) {
   const normalized = rel.replaceAll("\\", "/");
   const segments = normalized.split("/");
 
+  // Retired Quiz Converter variants and instructions remain in source only.
+  // Covers hyphenated, underscored and historical space-separated filenames.
+  if (/(?:^|\/)canvas[- _]quiz[- _]converter(?:[- _/.]|$)/i.test(normalized)) return false;
+
   // Historical manual-authoring resources are retained in source, not offered to faculty.
   if ([
     "downloads/resources/mastery-quests-faculty-template-old.html",
@@ -160,6 +164,7 @@ function walk(dir) {
 walk(dist);
 
 const forbidden = files.filter(file =>
+  /(?:^|\/)canvas[- _]quiz[- _]converter(?:[- _/.]|$)/i.test(file) ||
   file.startsWith("audit_tools/") ||
   file.startsWith("server/") ||
   file.startsWith("validation_artifacts/") ||

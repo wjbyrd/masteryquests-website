@@ -25,5 +25,5 @@ are local-only. Operational telemetry is not research by default.
 
 Retired sources, excluded from publication: mastery-quests-faculty-template-old.html,
 javascript-question-pool-code.txt and using-external-javascript-question-pools.docx.
-Use the current JSON package workflow instead. The multi-game hub and Canvas tools
-remain available for their separate course and LMS purposes.
+Use the current JSON package workflow instead. The multi-game hub remains available
+for organizing course games. Only the current resources linked on the website are published.
