@@ -1,0 +1,105 @@
+/* Authoring checks layered on the generated, unchanged Composer field validator. */
+(function(root){
+  'use strict';
+  const modes = ['standard','timed','exam','quiz','unlimited','legendary','score','trialGraph','fadingFortune','riskReward'];
+  const pools = ['easy','medium','hard','elite','legendary','easyBoss','mediumBoss','finalBoss','legendaryBoss'];
+  const record = value => value && typeof value === 'object' && !Array.isArray(value);
+  const text = value => typeof value === 'string' && value.trim().length > 0;
+  const identity = q => q?.id ?? q?.questionId;
+  function validatePackage(data){
+    const errors=[], warnings=[], counts={}, entries=[];
+    const issue=(where,message)=>errors.push(`${where}: ${message}`);
+    if(!record(data)) return {ok:false,errors:['Package: use one JSON object with banks and repairQuestions/bridgeQuestions.'],warnings,counts,modeReadiness:{}};
+    if(!record(data.banks)) issue('banks','provide an object of named question arrays.');
+    const add=(name,items)=>{
+      if(!Array.isArray(items)){issue(name,'must be an array.');return;}
+      counts[name]=(counts[name]||0)+items.length;
+      items.forEach((q,i)=>entries.push({pool:name,q,where:`${name}, item ${i+1} (ID ${identity(q) ?? 'missing'})`}));
+    };
+    for(const key of Object.keys(data.banks||{})) if(!pools.includes(key)) issue(`banks.${key}`,'unknown pool; use repairQuestions or bridgeQuestions for adaptive items.');
+    pools.forEach(p=>add(p,data.banks?.[p] === undefined ? [] : data.banks[p]));
+    add('repair',data.repairQuestions === undefined ? [] : data.repairQuestions); add('bridge',data.bridgeQuestions === undefined ? [] : data.bridgeQuestions);
+    for(const [key,pool] of [['microSkillRepairPools','repair'],['skillRepairSeedPools','repair'],['microSkillBridgePools','bridge']]){
+      if(data[key]!==undefined && !record(data[key])) issue(key,'must be an object of skill-keyed arrays.');
+      else for(const [skill,items] of Object.entries(data[key]||{})){
+        if(!skill.trim()) issue(key,'skill keys cannot be blank.'); add(pool,items);
+      }
+    }
+    for(const key of ['objectiveLabels','embeddedQuestionAssets','questionAssetMetadata']) if(data[key]!==undefined && !record(data[key])) issue(key,'must be an object.');
+    const assets=record(data.embeddedQuestionAssets)?data.embeddedQuestionAssets:{};
+    const metadata=record(data.questionAssetMetadata)?data.questionAssetMetadata:{};
+    const usedIds=new Map(),usedText=new Map();
+    for(const {pool,q,where} of entries){
+      const fields=root.MQFacultyRecordValidator(q,pool);
+      if(fields.length) issue(where,`check ${fields.join(', ')}. See the field guide below.`);
+      if(!record(q)) continue;
+      const id=String(identity(q) ?? '');
+      if(usedIds.has(id)) issue(where,`duplicate ID also used in ${usedIds.get(id)}; assign a unique ID.`); else usedIds.set(id,pool);
+      if(text(q.q)){
+        const normalized=q.q.trim().toLowerCase();
+        if(usedText.has(normalized)) warnings.push(`${where}: repeated question text; review for unintended duplication.`);
+        usedText.set(normalized,id);
+      }
+      // The runtime prioritizes any integer a over aHash, even an out-of-range integer.
+      if(Number.isInteger(q.a) && (q.a<0 || q.a>3)) issue(where,'a must be an integer from 0 to 3; remove a when using only aHash.');
+      if(q.image){
+        if(typeof q.image!=='string'){issue(where,'image must be a path string.');continue;}
+        const key=q.image.replace(/^data\//,'');
+        const inlineImage=/^data:image\/(png|jpeg|webp|gif|svg\+xml);base64,[A-Za-z0-9+/=\s]+$/.test(key);
+        if(!inlineImage && /^(?:[a-z]+:|\/\/|\/)|(?:^|\/)\.\.(?:\/|$)|[\\<>"\x00-\x1f]/i.test(key)) issue(where,'use a relative image path inside your game folder, an embedded asset key, or a base64 image data URL; remote/unsafe paths are not supported by this local-only starter.');
+        const meta=metadata[key] || metadata[key.split('/').pop()] || Object.entries(metadata).find(([k])=>k.split('/').pop()===key.split('/').pop())?.[1];
+        if(!text(meta?.imageAlt) || !text(meta?.graphDescription)) issue(where,'add questionAssetMetadata for this image with imageAlt and graphDescription.');
+        if(!inlineImage && !assets[key] && !assets[q.image]) warnings.push(`${where}: external local image ${key}; confirm it exists next to the HTML at this path and opens before sharing.`);
+      } else if(q.graphRequired===true) issue(where,'graphRequired needs an image and accessibility metadata.');
+      if(q.graphRequired!==undefined && typeof q.graphRequired!=='boolean') issue(where,'graphRequired must be true or false (without quotes).');
+    }
+    for(const [key,value] of Object.entries(assets)) if(!text(value) || !/^data:image\/(png|jpeg|webp|gif|svg\+xml);base64,[A-Za-z0-9+/=\s]+$/.test(value)) issue(`embeddedQuestionAssets.${key}`,'use a base64 image data URL.');
+    const main=entries.filter(e=>['easy','medium','hard','elite','legendary'].includes(e.pool)).map(e=>e.q).filter(record);
+    const special={trialGraph:main.filter(q=>q.graphRequired===true && q.image).length,fadingFortune:main.filter(q=>Array.isArray(q.options)&&q.options.length===4).length,riskReward:main.filter(q=>Array.isArray(q.options)&&q.options.length===4).length};
+    for(const field of Object.keys(data)) if(!['banks','repairQuestions','bridgeQuestions','microSkillRepairPools','skillRepairSeedPools','microSkillBridgePools','objectiveLabels','embeddedQuestionAssets','questionAssetMetadata'].includes(field)) issue(field,'not a supported top-level package field; put game settings in the marked HTML configuration.');
+    const modeReadiness={};
+    modes.forEach(mode=>{
+      const missing=(root.MQFacultyRequirements.modes[mode]||[]).filter(pool=>(counts[pool]||0)<(root.MQFacultyRequirements.overrides[mode]?.[pool] ?? root.MQFacultyRequirements.pools[pool] ?? 0)).map(pool=>`${pool}: ${counts[pool]||0}/${root.MQFacultyRequirements.overrides[mode]?.[pool] ?? root.MQFacultyRequirements.pools[pool]}`);
+      if(mode in special && special[mode]<10) missing.push(`${special[mode]}/10 eligible questions (15 or 20 needed for longer targets)`);
+      modeReadiness[mode]=errors.length?'Fix package errors first':missing.length?`Needs ${missing.join('; ')}`:'Ready for minimum launch count; test your full run';
+    });
+    const skills=new Set(main.map(q=>q.repairSkill||q.repairSkillId||q.primarySkill||q.skillId));
+    for(const skill of skills) for(const pool of ['repair','bridge']) if(!entries.some(e=>e.pool===pool && (e.q?.primarySkill||e.q?.skillId||e.q?.repairSkill||e.q?.repairSkillId)===skill)) warnings.push(`Skill ${skill}: add a matching ${pool} item for direct adaptive routing.`);
+    return {ok:errors.length===0,errors,warnings,counts,modeReadiness,questionCount:entries.length};
+  }
+  function parse(textInput){
+    try{return {data:JSON.parse(textInput),error:null};}
+    catch(error){return {data:null,error:`JSON could not be read: ${error.message}. Use double quotes, no comments, no trailing commas, and no const/JavaScript wrapper.`};}
+  }
+  function fromTSV(input){
+    // Excel clipboard supports quoted multiline/tab-containing cells and doubled quotes.
+    const rows=[];let row=[],cell='',quoted=false;
+    for(let i=0;i<input.length;i++){
+      const c=input[i];
+      if(c==='"' && (quoted || !cell)){if(quoted&&input[i+1]==='"'){cell+='"';i++;}else quoted=!quoted;}
+      else if(!quoted&&(c==='\t'||c==='\n')){row.push(cell.replace(/\r$/,''));cell='';if(c==='\n'){rows.push(row);row=[];}}
+      else cell+=c;
+    }
+    if(quoted) throw Error('Unclosed quoted spreadsheet cell. Copy the complete selection including headers.');
+    row.push(cell.replace(/\r$/,''));if(row.some(Boolean))rows.push(row);
+    const headers=rows.shift();
+    if(!headers?.includes('QuestionID')||!headers.includes('Pool')) throw Error('Copy Question_Bank including its header row.');
+    const data={banks:Object.fromEntries(pools.map(p=>[p,[]])),repairQuestions:[],bridgeQuestions:[],objectiveLabels:{},questionAssetMetadata:{},embeddedQuestionAssets:{}};
+    rows.filter(r=>r.some(Boolean)).forEach((r,index)=>{
+      const v=Object.fromEntries(headers.map((h,i)=>[h,r[i]||'']));
+      if(!v.QuestionID && !v.QuestionText) return;
+      const q={id:v.QuestionID,q:v.QuestionText,options:[v.OptionA,v.OptionB,v.OptionC,v.OptionD],tag:v.Tag,type:v.Type,objective:v.Objective,primarySkill:v.PrimarySkill,repairSkill:v.RepairSkill,feedback:v.Feedback};
+      if(v.Difficulty)q.difficulty=v.Difficulty;
+      if(v.CorrectAnswer){if(!/^[ABCD]$/.test(v.CorrectAnswer)) throw Error(`Row ${index+2}: CorrectAnswer must be A, B, C or D.`);q.a='ABCD'.indexOf(v.CorrectAnswer);}
+      if(v.AnswerHash)q.aHash=v.AnswerHash;
+      for(const [header,key] of [['CommonError','commonError'],['ConceptCluster','conceptCluster'],['Hint','hint'],['ImageFile','image'],['BossStage','bossStage']]) if(v[header])q[key]=v[header];
+      if(v.GraphRequired){if(!/^(true|false)$/i.test(v.GraphRequired))throw Error(`Row ${index+2}: GraphRequired must be TRUE or FALSE.`);q.graphRequired=v.GraphRequired.toLowerCase()==='true';}
+      if(v.ObjectiveLabel)data.objectiveLabels[q.objective]=v.ObjectiveLabel;
+      if(q.image)data.questionAssetMetadata[q.image]={imageAlt:v.ImageAlt,graphDescription:v.GraphDescription};
+      const destination=v.Pool==='repair'?data.repairQuestions:v.Pool==='bridge'?data.bridgeQuestions:data.banks[v.Pool];
+      if(!destination)throw Error(`Row ${index+2}: unknown Pool ${v.Pool}.`); destination.push(q);
+    });
+    return data;
+  }
+  root.MQManualPackage={validatePackage,parse,fromTSV,modes,pools};
+})(globalThis);

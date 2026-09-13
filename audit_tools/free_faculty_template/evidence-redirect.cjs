@@ -1,0 +1,4 @@
+const fs=require('node:fs'),path=require('node:path');
+function destination(file){if(typeof file!=='string')return file;const rel=path.relative(process.cwd(),path.resolve(file));if(rel.startsWith('validation_artifacts'+path.sep)&&!rel.startsWith('validation_artifacts'+path.sep+'free_faculty_template_parity'+path.sep)){file=path.resolve('validation_artifacts/free_faculty_template_parity/classroom',rel.slice('validation_artifacts'.length+1));fs.mkdirSync(path.dirname(file),{recursive:true});}return file;}
+for(const key of ['writeFileSync','writeFile']){const original=fs[key];fs[key]=function(file,...args){return original.call(this,destination(file),...args);};}
+const original=fs.promises.writeFile;fs.promises.writeFile=function(file,...args){return original.call(this,destination(file),...args);};require('node:module').syncBuiltinESMExports();

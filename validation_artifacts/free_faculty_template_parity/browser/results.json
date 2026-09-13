@@ -1,0 +1,175 @@
+{
+  "results": [
+    {
+      "name": "Downloaded standalone file launches offline without server dependencies",
+      "status": "PASS"
+    },
+    {
+      "name": "Blank loads and blocks launch with missing pool guidance",
+      "status": "PASS"
+    },
+    {
+      "name": "standard launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "timed launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "exam launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "quiz launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "unlimited launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "legendary launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "score launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "trialGraph launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "fadingFortune launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "riskReward launches with four answers and accepts an answer",
+      "status": "PASS"
+    },
+    {
+      "name": "Standard keyboard launch, wrong-answer feedback and adaptive route",
+      "status": "PASS"
+    },
+    {
+      "name": "Standard save refresh and resume restores progress and run identity",
+      "status": "PASS"
+    },
+    {
+      "name": "Graph renders embedded asset, descriptive alt, dialog and Escape",
+      "status": "PASS"
+    },
+    {
+      "name": "One-question Quiz completes through answer and offers local CSV download",
+      "status": "PASS"
+    },
+    {
+      "name": "Validator UI valid, malformed, duplicate, graph and bad index; keyboard and narrow layout",
+      "status": "PASS"
+    },
+    {
+      "name": "No runtime errors, bad assets or unintended telemetry requests",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-template.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/downloads/resources/mastery-quests-faculty-starter.html",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/tools/question-bank-validator/",
+      "method": "GET",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:53368/tools/question-bank-validator/validator.js",
+      "method": "GET",
+      "type": "script"
+    }
+  ],
+  "badAssets": []
+}

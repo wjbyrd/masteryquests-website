@@ -11,7 +11,9 @@ for name in names:
         root=ET.fromstring(archive.read('word/document.xml'))
     text=' '.join(n.text or '' for n in root.iter() if n.tag.endswith('}t'))
     assert '30-room practice path' not in text and 'without checkpoints, milestones' not in text,name
-    assert 'checkpoint commitment' in text and 'classroom research' in text,name
+    assert 'checkpoint commitment' in text,name
+    assert 'OFF by default' in text and 'operational telemetry is not research by default' in text,name
+    assert 'Separate classroom research builds' not in text,name
     assert 'https://masteryquests.org/how-to/learning-outcomes/' in text,name
     if name in (names[0],names[2]):
         tables=[' '.join(n.text or '' for n in table.iter() if n.tag.endswith('}t')) for table in root.iter() if table.tag.endswith('}tbl')]

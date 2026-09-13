@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "synchronizedPublicFiles": [
+    "downloads/resources/mastery-quests-faculty-template.html",
+    "downloads/resources/mastery-quests-faculty-starter.html",
+    "downloads/resources/faculty-question-package-blank.json",
+    "downloads/resources/faculty-question-package-example.json",
+    "downloads/resources/manual-faculty-guide.html",
+    "downloads/resources/faculty-question-bank-validator.xlsx",
+    "tools/question-bank-validator/index.html",
+    "tools/question-bank-validator/validator.js",
+    "downloads/resources/faculty-composer-quick-start-guide.docx",
+    "downloads/resources/faculty-game-overview-guide.docx",
+    "downloads/resources/faculty-implementation-guide.docx",
+    "downloads/resources/student-instructions-and-faculty-customization-checklist.docx",
+    "downloads/resources/faculty-question-bank-helper.docx",
+    "downloads/resources/example-question-architecture.docx",
+    "downloads/resources/example-question-generation-prompt.docx"
+  ],
+  "retiredExcluded": [
+    "mastery-quests-faculty-template-old.html",
+    "using-external-javascript-question-pools.docx",
+    "javascript-question-pool-code.txt",
+    "RESOURCE-CLEANUP.txt"
+  ],
+  "protectedPathsUnchanged": [
+    "server",
+    "audit_tools/telemetry_contract",
+    "build/faculty-build-composer",
+    "play"
+  ],
+  "sharedFunctions": 430
+}

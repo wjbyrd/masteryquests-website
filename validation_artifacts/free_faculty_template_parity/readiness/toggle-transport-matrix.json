@@ -1,0 +1,98 @@
+[
+  {
+    "build": "on",
+    "postsAllowed": true,
+    "events": 8,
+    "localCSV": true
+  },
+  {
+    "build": "default",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "missing",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "false",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "empty",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "whitespace",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "unknown",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "string-true",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "number",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "null",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "unreadable",
+    "postsAllowed": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "managerial-intelligence-directorate",
+    "explicitEnable": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "managerial-directorate-telemetry-poc",
+    "explicitEnable": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "managerial-directorate-telemetry-poc",
+    "explicitEnable": true,
+    "events": 7,
+    "localCSV": true
+  },
+  {
+    "build": "managerial-directorate-classroom",
+    "explicitEnable": false,
+    "events": 0,
+    "localCSV": true
+  },
+  {
+    "build": "managerial-directorate-classroom",
+    "explicitEnable": true,
+    "events": 7,
+    "localCSV": true
+  }
+]

@@ -55,6 +55,14 @@ function publicTreeFilter(rel, entry) {
   const normalized = rel.replaceAll("\\", "/");
   const segments = normalized.split("/");
 
+  // Historical manual-authoring resources are retained in source, not offered to faculty.
+  if ([
+    "downloads/resources/mastery-quests-faculty-template-old.html",
+    "downloads/resources/using-external-javascript-question-pools.docx",
+    "downloads/resources/javascript-question-pool-code.txt",
+    "downloads/resources/RESOURCE-CLEANUP.txt"
+  ].includes(normalized)) return false;
+
   // Development/source material that may live beneath otherwise-public trees.
   if (segments.includes("authoring")) return false;
   if (segments.includes("tests")) return false;
