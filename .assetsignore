@@ -18,3 +18,13 @@
 /FINAL_REPORT_pdf_accessibility_blocked_25.md
 
 /build/faculty-build-composer/data/concept-reviews/authoring/**
+
+# Operational telemetry activation artifacts; never publish.
+/operational-smoke-*.csv
+/operational-smoke-*.csv.governance.json
+
+# Source, audit, and local staging material; never publish.
+/server/**
+/audit_tools/**
+/tmp/**
+**/node_modules/**
