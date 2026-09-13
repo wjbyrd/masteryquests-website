@@ -9,7 +9,10 @@ for(const p of pages){const html=read(p);assert(!/>\s*(How To|Deployment Guide)\
 assert(!read('games/index.html').includes('Full-evidence modes'),'Games duplicates engine explanation');assert(read('games/index.html').includes('/how-to/#adaptive-engine'));
 const ui=[...read('build/faculty-build-composer/index.html').matchAll(/<button data-step="\d+"[^>]*>\d+\. ([^<]+)</g)].map(m=>m[1].replace('&amp;','&'));
 const steps=[...read('how-to/composer/index.html').matchAll(/<li><span>0\d<\/span><div><h3>([^<]+)<\/h3>/g)].map(m=>m[1].replace('&amp;','&'));assert.deepEqual(steps,ui,'Composer documentation step order differs from current UI');
-assert(read('privacy/index.html').includes('anonymous schema-2 collection'));assert(read('how-to/telemetry-data-dictionary/index.html').includes('public and classroom Managerial'));
+assert(read('privacy/index.html').includes('Collection is OFF by default.'));
+assert(read('privacy/index.html').includes('mq-disclosure/2'));
+assert(read('privacy/index.html').includes('It is not research by default.'));
+assert(read('how-to/telemetry-data-dictionary/index.html').includes('public and classroom Managerial'));
 assert.throws(()=>checkLinks('index.html','<a href="/missing-documentation-path/">Missing</a>'));
 assert.throws(()=>checkLinks('index.html','<a href="/how-to/#missing-documentation-anchor">Missing</a>'));
 console.log(JSON.stringify({status:'PASS',pages:pages.length,links:links.length,uniqueTargets:new Set(links.map(l=>l.target)).size,brokenLinks:0,negativeControls:2,composerSteps:steps},null,2));

@@ -1,0 +1,2 @@
+const fs=require('node:fs'),path=require('node:path');const original=fs.writeFileSync;
+fs.writeFileSync=function(file,...args){if(typeof file==='string'&&path.resolve(file).includes(path.join('validation_artifacts','classroom_access'))){file=path.join(process.cwd(),'validation_artifacts/telemetry_site_ux_refresh/classroom-access',path.basename(file));fs.mkdirSync(path.dirname(file),{recursive:true});}return original.call(this,file,...args);};require('node:module').syncBuiltinESMExports();

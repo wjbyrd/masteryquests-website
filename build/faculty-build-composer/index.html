@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Faculty Concept Composer</title>
-  <link rel="stylesheet" href="composer.css?v=20260912-telemetry-control">
+  <link rel="stylesheet" href="composer.css?v=20260913-telemetry-ux">
 </head>
 <body>
   <header class="site-header">
@@ -31,8 +31,12 @@
       <div class="panel">
         <h2>Game details</h2>
         <div class="collection-setting">
-            <label><input id="allowAnonymousDataCollection" type="checkbox" aria-describedby="anonymousCollectionHelp"> Allow anonymous data collection</label>
-            <p id="anonymousCollectionHelp">When enabled, anonymous gameplay events may be sent to Mastery Quests to improve the games and support aggregate instructional analytics. Names, email addresses, Canvas user IDs, Troy IDs, and free-text responses are not intentionally included in application telemetry.</p>
+            <h3>Anonymous gameplay data</h3>
+            <label><input id="allowAnonymousDataCollection" type="checkbox" aria-describedby="anonymousCollectionHelp"> Allow anonymous gameplay data collection</label>
+            <p id="anonymousCollectionHelp"><strong>OFF by default.</strong> Enable this option explicitly to configure the generated game to send anonymous gameplay and interaction telemetry to Mastery Quests for instructional and product analytics. Ordinary collection is operational analytics, not automatically research.</p>
+            <p>Names, email addresses, LMS account identifiers, university identifiers, and free-text responses are not intentionally included in application telemetry.</p>
+            <p>Students can inspect supported game data using <strong>Download Game Data</strong>. Where supported, they can turn off future remote transmission in their browser. This does not delete records already accepted by the server.</p>
+            <p><a href="/privacy/">Privacy</a> · <a href="/how-to/responsible-telemetry-use/">Responsible Telemetry Use</a> · <a href="/how-to/telemetry-data-dictionary/">Telemetry Data Dictionary</a></p>
         </div>
         <div class="form-grid">
           <div class="field">
@@ -223,16 +227,16 @@
     <div id="liveRegion" class="screen-reader" aria-live="polite"></div>
   </main>
 
-  <footer class="footer">Runs locally in the browser. Faculty selections are not transmitted.</footer>
+  <footer class="footer">The Composer runs locally in your browser, and your faculty selections are not transmitted. Generated games can optionally send anonymous gameplay data when you enable that setting in Game details.</footer>
 
   <script src="data/faculty-outcomes.js?v=20260910-faculty-lo-labels"></script>
   <script src="faculty-outcome-core.js?v=20260910-faculty-lo"></script>
-  <script src="anonymous-telemetry-source.js?v=20260912-opt-in"></script>
-  <script src="composer-core.js?v=20260912-telemetry-control"></script>
+  <script src="anonymous-telemetry-source.js?v=20260913-disclosure"></script>
+  <script src="composer-core.js?v=20260913-telemetry-ux"></script>
   <script src="course-area-model.js?v=20260910-faculty-lo"></script>
   <script src="data/composer_library.js?v=20260910-faculty-lo"></script>
   <script src="data/official_theme_library.js?v=20260830-official-mode-cards"></script>
   <script src="custom-asset-core.js?v=20260824-phase3b"></script>
-  <script src="composer.js?v=20260912-telemetry-control"></script>
+  <script src="composer.js?v=20260913-telemetry-ux"></script>
 </body>
 </html>

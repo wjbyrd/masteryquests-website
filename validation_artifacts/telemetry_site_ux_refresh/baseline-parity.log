@@ -1,0 +1,173 @@
+(node:50452) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+managerial-directorate-telemetry-poc/cost-directive live selection/copy → answer → Worker/D1: PASS
+managerial-directorate-telemetry-poc save/refresh/Continue resets timing state: FAIL
+managerial-directorate-telemetry-poc timed response instrumentation: FAIL
+managerial-directorate-telemetry-poc exam response instrumentation: FAIL
+managerial-directorate-telemetry-poc quiz response instrumentation: FAIL
+managerial-directorate-telemetry-poc unlimited response instrumentation: FAIL
+managerial-directorate-telemetry-poc legendary response instrumentation: FAIL
+managerial-directorate-telemetry-poc score response instrumentation: FAIL
+managerial-directorate-telemetry-poc fadingFortune response instrumentation: FAIL
+managerial-directorate-telemetry-poc riskReward response instrumentation: FAIL
+managerial-directorate-telemetry-poc/market-signal live selection/copy → answer → Worker/D1: PASS
+managerial-directorate-telemetry-poc trialGraph response instrumentation: PASS
+managerial-directorate-telemetry-poc/strategy-desk live selection/copy → answer → Worker/D1: PASS
+managerial-directorate-telemetry-poc/agency-protocol live selection/copy → answer → Worker/D1: PASS
+managerial-directorate-classroom/cost-directive live selection/copy → answer → Worker/D1: PASS
+managerial-directorate-classroom save/refresh/Continue resets timing state: FAIL
+managerial-directorate-classroom timed response instrumentation: FAIL
+managerial-directorate-classroom exam response instrumentation: FAIL
+managerial-directorate-classroom quiz response instrumentation: FAIL
+managerial-directorate-classroom unlimited response instrumentation: FAIL
+managerial-directorate-classroom legendary response instrumentation: FAIL
+managerial-directorate-classroom score response instrumentation: FAIL
+managerial-directorate-classroom fadingFortune response instrumentation: FAIL
+managerial-directorate-classroom riskReward response instrumentation: FAIL
+managerial-directorate-classroom/market-signal live selection/copy → answer → Worker/D1: PASS
+managerial-directorate-classroom trialGraph response instrumentation: PASS
+managerial-directorate-classroom/strategy-desk live selection/copy → answer → Worker/D1: PASS
+managerial-directorate-classroom/agency-protocol live selection/copy → answer → Worker/D1: PASS
+Actual browser payloads export/reconstruct with privacy allowlist: PASS
+{
+  "passed": 11,
+  "failed": 18,
+  "receivedEvents": 103,
+  "results": [
+    {
+      "name": "managerial-directorate-telemetry-poc/cost-directive live selection/copy → answer → Worker/D1",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc save/refresh/Continue resets timing state",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1 !== 0\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:49:141\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:46:5"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc timed response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc exam response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc quiz response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc unlimited response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc legendary response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc score response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc fadingFortune response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc riskReward response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc/market-signal live selection/copy → answer → Worker/D1",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc trialGraph response instrumentation",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc/strategy-desk live selection/copy → answer → Worker/D1",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc/agency-protocol live selection/copy → answer → Worker/D1",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-classroom/cost-directive live selection/copy → answer → Worker/D1",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-classroom save/refresh/Continue resets timing state",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1 !== 0\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:49:141\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:46:5"
+    },
+    {
+      "name": "managerial-directorate-classroom timed response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-classroom exam response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-classroom quiz response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-classroom unlimited response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-classroom legendary response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-classroom score response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-classroom fadingFortune response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-classroom riskReward response instrumentation",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: mode response received\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:53:155\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:21:35)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/managerial_telemetry_parity/run-browser.mjs:51:108"
+    },
+    {
+      "name": "managerial-directorate-classroom/market-signal live selection/copy → answer → Worker/D1",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-classroom trialGraph response instrumentation",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-classroom/strategy-desk live selection/copy → answer → Worker/D1",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-classroom/agency-protocol live selection/copy → answer → Worker/D1",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual browser payloads export/reconstruct with privacy allowlist",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

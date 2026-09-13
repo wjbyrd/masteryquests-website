@@ -1318,6 +1318,10 @@ function renderCoverage(){
       ? `<strong>Mode coverage passes, but some concepts remain thin.</strong><span>${thinSelected.map(concept => concept.title).join(', ')} ${thinSelected.length === 1 ? 'is' : 'are'} best used only as part of this broader mix until expansion is complete.</span>`
       : `<strong>Ready for all selected modes.</strong><span>The current concept mix meets the required question coverage.</span>`;
 
+  $('readinessMessage').innerHTML += state.allowAnonymousDataCollection === true
+    ? '<span><strong>Anonymous data collection: ON</strong> — this generated game is configured to send anonymous gameplay telemetry when online. Students can turn off future transmission where supported.</span>'
+    : '<span><strong>Anonymous data collection: OFF</strong> — this generated game will not send anonymous gameplay telemetry.</span>';
+
   const keyMetrics = [
     ['Selected concepts', state.selectedConceptIds.length],
     ['Practice questions', practiceTotal],

@@ -1,0 +1,70 @@
+{
+  "passed": 16,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Late classroom initialization does not wrap lifecycle hooks twice",
+      "status": "PASS"
+    },
+    {
+      "name": "A fast visible",
+      "status": "PASS"
+    },
+    {
+      "name": "B slow visible",
+      "status": "PASS"
+    },
+    {
+      "name": "C one tab switch and return",
+      "status": "PASS"
+    },
+    {
+      "name": "D multiple switches; duplicate browser signals do not inflate counts",
+      "status": "PASS"
+    },
+    {
+      "name": "E selection only is debounced",
+      "status": "PASS"
+    },
+    {
+      "name": "F copy while visible has no invented hidden interval",
+      "status": "PASS"
+    },
+    {
+      "name": "G copy to blur/hide captures independent relationships without content",
+      "status": "PASS"
+    },
+    {
+      "name": "H menu pause and resume reset; paused tab activity is ignored",
+      "status": "PASS"
+    },
+    {
+      "name": "I next question resets counts, pending selection and timing",
+      "status": "PASS"
+    },
+    {
+      "name": "J incomplete question stays reconstructable on page exit",
+      "status": "PASS"
+    },
+    {
+      "name": "K completion durable; later visibility cannot resume ended run",
+      "status": "PASS"
+    },
+    {
+      "name": "L unavailable, timeout, rejected, rate-limited and offline posts retain exact IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Exam commit accumulates only this room’s views",
+      "status": "PASS"
+    },
+    {
+      "name": "M/N Worker ingestion, idempotency, legacy and CSV export",
+      "status": "PASS"
+    },
+    {
+      "name": "O privacy allowlist and numeric validation reject content/invalid measurements",
+      "status": "PASS"
+    }
+  ]
+}

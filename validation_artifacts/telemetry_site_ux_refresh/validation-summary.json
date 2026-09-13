@@ -1,0 +1,49 @@
+{
+  "deployment": "NOT DEPLOYED",
+  "acceptance": "BLOCKED by pre-existing private browser parity failures",
+  "composerRunners": {
+    "passed": 27,
+    "failed": 0
+  },
+  "readiness": {
+    "passed": 27,
+    "failed": 0
+  },
+  "governance": {
+    "passed": 14,
+    "failed": 0
+  },
+  "scheduled": {
+    "passed": 11,
+    "failed": 0
+  },
+  "contract": {
+    "passed": 16,
+    "failed": 0
+  },
+  "contractBrowser": {
+    "passed": 17,
+    "failed": 0
+  },
+  "parity": {
+    "passed": 16,
+    "failed": 0
+  },
+  "privateBrowser": {
+    "passed": 11,
+    "failed": 18
+  },
+  "baselinePrivateBrowser": {
+    "passed": 11,
+    "failed": 18
+  },
+  "classroomAccess": {
+    "passed": 27,
+    "failed": 0,
+    "total": 27
+  },
+  "ux": {
+    "status": "PASS",
+    "protectedFiles": 922
+  }
+}
