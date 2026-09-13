@@ -1,0 +1,1329 @@
+{
+  "trace": [
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "parseFailure": "08849fd4-7041-45e6-b241-0840caee2bb1",
+      "stack": "Error\n    at JSON.parse (<anonymous>:4:224)\n    at readJSON (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:502:27)\n    at anonymousTelemetryPOC (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:531:18)\n    at http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1249:3"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at anonymousTelemetryPOC (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1215:23)\n    at http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1249:3"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at Object.flush (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1048:26)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:56)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at flush (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1048:26)\n    at http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1229:5"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "parseFailure": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+      "stack": "Error\n    at JSON.parse (<anonymous>:4:224)\n    at readJSON (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:502:27)\n    at anonymousClassroomTelemetry (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:530:18)\n    at http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1161:3"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at anonymousClassroomTelemetry (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1128:23)\n    at http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1161:3"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at flush (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1045:26)\n    at http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1141:5"
+    }
+  ],
+  "snapshots": [
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "before-save",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "3d9c8c71-be93-435a-a21e-5ac446858642",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed",
+      "activeRun": "08849fd4-7041-45e6-b241-0840caee2bb1",
+      "runID": "1789323485827-qb3o29",
+      "namespace": "mq:managerial-directorate-telemetry-poc:",
+      "localStorageKeys": [
+        "managerialHub_directive_started",
+        "costDirectiveTelemetry_contract:1789323485827-qb3o29",
+        "costDirectiveRunID",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:runs:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:queue:v1",
+        "managerialHub_costDirective_status",
+        "managerialHub_directive_complete",
+        "managerialHub_directive_room",
+        "managerialHub_costDirective_bestStreak",
+        "costDirectiveUser",
+        "costDirectiveTelemetry_1789323485827-qb3o29",
+        "costDirectiveSave_v1_standard",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:clientId:v1",
+        "managerialHub_costDirective_room",
+        "costDirectiveLatestTelemetryRunID",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:sequences:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:activeRun:v1:cost-directive",
+        "costDirectiveCurrentMode"
+      ],
+      "sessionStorageKeys": [],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:runs:v1": "{\"cost-directive:1789323485827-qb3o29\":\"08849fd4-7041-45e6-b241-0840caee2bb1\",\"cost-directive:artifacts:08849fd4-7041-45e6-b241-0840caee2bb1\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:08849fd4-7041-45e6-b241-0840caee2bb1\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:clientId:v1": "3d9c8c71-be93-435a-a21e-5ac446858642",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:sequences:v1": "{\"08849fd4-7041-45e6-b241-0840caee2bb1\":9}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:activeRun:v1:cost-directive": "08849fd4-7041-45e6-b241-0840caee2bb1"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323485827-qb3o29",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 9,
+      "received": [
+        {
+          "eventId": "b73cef01-e3a6-49f1-aba4-2069add68344",
+          "eventType": "run_manifest",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "f4877180-7f1a-4b25-a748-5a9fcc21873e",
+          "eventType": "mode_selected",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "2e921c2a-e0fa-4679-9cdf-fd9bfb5f4632",
+          "eventType": "run_started",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "ba3badb3-cc52-481d-9d30-80de72f87150",
+          "eventType": "question_shown",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "10c2e70e-83a1-487c-8316-a74de3cac3a2",
+          "eventType": "run_paused",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "7d1c3e11-10ba-48ec-9a41-634a8b95a2a5",
+          "eventType": "run_resumed",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "8e7e28d2-de73-4d44-84c4-d2f472d4806c",
+          "eventType": "answer_submitted",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "b1d4e111-e3e9-4702-95ec-0a31c0ae30b0",
+          "eventType": "answer_evaluated",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "5609a061-69a6-4f79-a37e-24d7719c66fc",
+          "eventType": "streak_changed",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "before-reload",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "3d9c8c71-be93-435a-a21e-5ac446858642",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed",
+      "activeRun": "08849fd4-7041-45e6-b241-0840caee2bb1",
+      "runID": "1789323485827-qb3o29",
+      "namespace": "mq:managerial-directorate-telemetry-poc:",
+      "localStorageKeys": [
+        "managerialHub_directive_started",
+        "costDirectiveTelemetry_contract:1789323485827-qb3o29",
+        "costDirectiveRunID",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:runs:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:queue:v1",
+        "managerialHub_costDirective_status",
+        "managerialHub_directive_complete",
+        "managerialHub_directive_room",
+        "managerialHub_costDirective_bestStreak",
+        "costDirectiveUser",
+        "costDirectiveTelemetry_1789323485827-qb3o29",
+        "costDirectiveSave_v1_standard",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:clientId:v1",
+        "managerialHub_costDirective_room",
+        "costDirectiveLatestTelemetryRunID",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:sequences:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:activeRun:v1:cost-directive",
+        "costDirectiveCurrentMode"
+      ],
+      "sessionStorageKeys": [],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:runs:v1": "{\"cost-directive:1789323485827-qb3o29\":\"08849fd4-7041-45e6-b241-0840caee2bb1\",\"cost-directive:artifacts:08849fd4-7041-45e6-b241-0840caee2bb1\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:08849fd4-7041-45e6-b241-0840caee2bb1\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:clientId:v1": "3d9c8c71-be93-435a-a21e-5ac446858642",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:sequences:v1": "{\"08849fd4-7041-45e6-b241-0840caee2bb1\":11}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:activeRun:v1:cost-directive": "08849fd4-7041-45e6-b241-0840caee2bb1"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323485827-qb3o29",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 11,
+      "received": [
+        {
+          "eventId": "b73cef01-e3a6-49f1-aba4-2069add68344",
+          "eventType": "run_manifest",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "f4877180-7f1a-4b25-a748-5a9fcc21873e",
+          "eventType": "mode_selected",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "2e921c2a-e0fa-4679-9cdf-fd9bfb5f4632",
+          "eventType": "run_started",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "ba3badb3-cc52-481d-9d30-80de72f87150",
+          "eventType": "question_shown",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "10c2e70e-83a1-487c-8316-a74de3cac3a2",
+          "eventType": "run_paused",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "7d1c3e11-10ba-48ec-9a41-634a8b95a2a5",
+          "eventType": "run_resumed",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "8e7e28d2-de73-4d44-84c4-d2f472d4806c",
+          "eventType": "answer_submitted",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "b1d4e111-e3e9-4702-95ec-0a31c0ae30b0",
+          "eventType": "answer_evaluated",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "5609a061-69a6-4f79-a37e-24d7719c66fc",
+          "eventType": "streak_changed",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "5efb9af6-f8b8-4f6b-b0b8-952325652c98",
+          "eventType": "question_shown",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "102440c5-75ff-4add-948d-5ffe38a63770",
+          "eventType": "room_advanced",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "after-reload",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": false,
+      "clientId": "3d9c8c71-be93-435a-a21e-5ac446858642",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 3,
+        "storageFailures": 0
+      },
+      "buildScope": "1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed",
+      "activeRun": "",
+      "runID": "",
+      "namespace": "mq:managerial-directorate-telemetry-poc:",
+      "localStorageKeys": [
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:quality:v1",
+        "managerialHub_directive_started",
+        "costDirectiveTelemetry_contract:1789323485827-qb3o29",
+        "costDirectiveRunID",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:runs:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:queue:v1",
+        "managerialHub_costDirective_status",
+        "managerialHub_directive_complete",
+        "managerialHub_directive_room",
+        "managerialHub_costDirective_bestStreak",
+        "costDirectiveUser",
+        "costDirectiveTelemetry_1789323485827-qb3o29",
+        "costDirectiveSave_v1_standard",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:clientId:v1",
+        "managerialHub_costDirective_room",
+        "costDirectiveLatestTelemetryRunID",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:sequences:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:activeRun:v1:cost-directive",
+        "costDirectiveCurrentMode"
+      ],
+      "sessionStorageKeys": [],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:quality:v1": "{\"overflow\":0,\"permanentlyRejected\":0,\"cancelled\":3,\"storageFailures\":0}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:runs:v1": "{\"cost-directive:1789323485827-qb3o29\":\"08849fd4-7041-45e6-b241-0840caee2bb1\",\"cost-directive:artifacts:08849fd4-7041-45e6-b241-0840caee2bb1\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:08849fd4-7041-45e6-b241-0840caee2bb1\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1": "1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:clientId:v1": "3d9c8c71-be93-435a-a21e-5ac446858642",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:sequences:v1": "{\"08849fd4-7041-45e6-b241-0840caee2bb1\":14}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:activeRun:v1:cost-directive": "08849fd4-7041-45e6-b241-0840caee2bb1"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323485827-qb3o29",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 13,
+      "received": [
+        {
+          "eventId": "b73cef01-e3a6-49f1-aba4-2069add68344",
+          "eventType": "run_manifest",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "f4877180-7f1a-4b25-a748-5a9fcc21873e",
+          "eventType": "mode_selected",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "2e921c2a-e0fa-4679-9cdf-fd9bfb5f4632",
+          "eventType": "run_started",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "ba3badb3-cc52-481d-9d30-80de72f87150",
+          "eventType": "question_shown",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "10c2e70e-83a1-487c-8316-a74de3cac3a2",
+          "eventType": "run_paused",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "7d1c3e11-10ba-48ec-9a41-634a8b95a2a5",
+          "eventType": "run_resumed",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "8e7e28d2-de73-4d44-84c4-d2f472d4806c",
+          "eventType": "answer_submitted",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "b1d4e111-e3e9-4702-95ec-0a31c0ae30b0",
+          "eventType": "answer_evaluated",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "5609a061-69a6-4f79-a37e-24d7719c66fc",
+          "eventType": "streak_changed",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "5efb9af6-f8b8-4f6b-b0b8-952325652c98",
+          "eventType": "question_shown",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "102440c5-75ff-4add-948d-5ffe38a63770",
+          "eventType": "room_advanced",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "fe73b176-dd63-4d45-9805-33603d40708a",
+          "eventType": "question_interrupted",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 0
+        },
+        {
+          "eventId": "a49a88ea-e0d2-4f81-8646-67bbf993af4d",
+          "eventType": "run_paused",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "after-continue-answer",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": false,
+      "clientId": "3d9c8c71-be93-435a-a21e-5ac446858642",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 3,
+        "storageFailures": 0
+      },
+      "buildScope": "1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed",
+      "activeRun": "08849fd4-7041-45e6-b241-0840caee2bb1",
+      "runID": "1789323485827-qb3o29",
+      "namespace": "mq:managerial-directorate-telemetry-poc:",
+      "localStorageKeys": [
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:quality:v1",
+        "managerialHub_directive_started",
+        "costDirectiveTelemetry_contract:1789323485827-qb3o29",
+        "costDirectiveRunID",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:runs:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:queue:v1",
+        "managerialHub_costDirective_status",
+        "managerialHub_directive_complete",
+        "managerialHub_directive_room",
+        "managerialHub_costDirective_bestStreak",
+        "costDirectiveUser",
+        "costDirectiveTelemetry_1789323485827-qb3o29",
+        "costDirectiveSave_v1_standard",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:clientId:v1",
+        "managerialHub_costDirective_room",
+        "costDirectiveLatestTelemetryRunID",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:sequences:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:activeRun:v1:cost-directive",
+        "costDirectiveCurrentMode"
+      ],
+      "sessionStorageKeys": [],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:quality:v1": "{\"overflow\":0,\"permanentlyRejected\":0,\"cancelled\":3,\"storageFailures\":0}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:runs:v1": "{\"cost-directive:1789323485827-qb3o29\":\"08849fd4-7041-45e6-b241-0840caee2bb1\",\"cost-directive:artifacts:08849fd4-7041-45e6-b241-0840caee2bb1\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:08849fd4-7041-45e6-b241-0840caee2bb1\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1": "1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:clientId:v1": "3d9c8c71-be93-435a-a21e-5ac446858642",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:sequences:v1": "{\"08849fd4-7041-45e6-b241-0840caee2bb1\":14}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:activeRun:v1:cost-directive": "08849fd4-7041-45e6-b241-0840caee2bb1"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323485827-qb3o29",
+        "room": 3,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 13,
+      "received": [
+        {
+          "eventId": "b73cef01-e3a6-49f1-aba4-2069add68344",
+          "eventType": "run_manifest",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "f4877180-7f1a-4b25-a748-5a9fcc21873e",
+          "eventType": "mode_selected",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "2e921c2a-e0fa-4679-9cdf-fd9bfb5f4632",
+          "eventType": "run_started",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "ba3badb3-cc52-481d-9d30-80de72f87150",
+          "eventType": "question_shown",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "10c2e70e-83a1-487c-8316-a74de3cac3a2",
+          "eventType": "run_paused",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "7d1c3e11-10ba-48ec-9a41-634a8b95a2a5",
+          "eventType": "run_resumed",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "8e7e28d2-de73-4d44-84c4-d2f472d4806c",
+          "eventType": "answer_submitted",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "b1d4e111-e3e9-4702-95ec-0a31c0ae30b0",
+          "eventType": "answer_evaluated",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "5609a061-69a6-4f79-a37e-24d7719c66fc",
+          "eventType": "streak_changed",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 1
+        },
+        {
+          "eventId": "5efb9af6-f8b8-4f6b-b0b8-952325652c98",
+          "eventType": "question_shown",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "102440c5-75ff-4add-948d-5ffe38a63770",
+          "eventType": "room_advanced",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        },
+        {
+          "eventId": "fe73b176-dd63-4d45-9805-33603d40708a",
+          "eventType": "question_interrupted",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": 0
+        },
+        {
+          "eventId": "a49a88ea-e0d2-4f81-8646-67bbf993af4d",
+          "eventType": "run_paused",
+          "runId": "08849fd4-7041-45e6-b241-0840caee2bb1",
+          "copyCount": null
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "before-save",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "a334222d-dbd9-429a-a2a9-a9f293582958",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f",
+      "activeRun": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+      "runID": "1789323489063-ypww2o",
+      "namespace": "mq:managerial-directorate-classroom:",
+      "localStorageKeys": [
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:queue:v1",
+        "managerialHub_bestStreak",
+        "costDirective:daily:v1",
+        "costDirectiveTelemetry_1789323489063-ypww2o",
+        "managerialHub_directive_room",
+        "costDirectiveSave_v1_standard",
+        "costDirectiveLatestTelemetryRunID",
+        "costDirectiveRunID",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:runs:v1",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_directive_complete",
+        "managerialHub_costDirective_status",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:clientId:v1",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:activeRun:v1:cost-directive",
+        "costDirectiveCurrentMode",
+        "managerialHub_directive_started",
+        "costDirectiveTelemetry_contract:1789323489063-ypww2o",
+        "costDirectiveUser",
+        "managerialHub_costDirective_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:sequences:v1",
+        "costDirective:guideIntroSeen",
+        "managerialHub_costDirective_room"
+      ],
+      "sessionStorageKeys": [
+        "costDirective:daily:announced:2026-09-13"
+      ],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:runs:v1": "{\"cost-directive:1789323489063-ypww2o\":\"ea18403d-45d1-4972-97b5-bf1e5ba8695e\",\"cost-directive:artifacts:ea18403d-45d1-4972-97b5-bf1e5ba8695e\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:ea18403d-45d1-4972-97b5-bf1e5ba8695e\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:clientId:v1": "a334222d-dbd9-429a-a2a9-a9f293582958",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:activeRun:v1:cost-directive": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:sequences:v1": "{\"ea18403d-45d1-4972-97b5-bf1e5ba8695e\":9}"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323489063-ypww2o",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 9,
+      "received": [
+        {
+          "eventId": "c90357a6-db4c-49c3-9c75-8576e2f9a926",
+          "eventType": "run_manifest",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "08e9cc1b-2c38-4e97-89ba-18388043ebe5",
+          "eventType": "mode_selected",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "1a8c5f77-856c-4cfd-92fe-ceed24dd4b06",
+          "eventType": "run_started",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "3670a827-3d24-4930-a78a-9fe9bec459c2",
+          "eventType": "question_shown",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "b14288cd-9b58-4db0-a43a-2aded8855da4",
+          "eventType": "run_paused",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "6aa0281b-7863-4044-b86d-7db086f9a1fd",
+          "eventType": "run_resumed",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "5c69bd7b-06ff-4285-bc11-61935c1bdbc8",
+          "eventType": "answer_submitted",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "b65629da-3479-449b-be12-6e58a4a17946",
+          "eventType": "answer_evaluated",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "75a03dd9-9fff-4ce1-ba62-b0c8c46d6d9b",
+          "eventType": "streak_changed",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "before-reload",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "a334222d-dbd9-429a-a2a9-a9f293582958",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f",
+      "activeRun": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+      "runID": "1789323489063-ypww2o",
+      "namespace": "mq:managerial-directorate-classroom:",
+      "localStorageKeys": [
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:queue:v1",
+        "managerialHub_bestStreak",
+        "costDirective:daily:v1",
+        "costDirectiveTelemetry_1789323489063-ypww2o",
+        "managerialHub_directive_room",
+        "costDirectiveSave_v1_standard",
+        "costDirectiveLatestTelemetryRunID",
+        "costDirectiveRunID",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:runs:v1",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_directive_complete",
+        "managerialHub_costDirective_status",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:clientId:v1",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:activeRun:v1:cost-directive",
+        "costDirectiveCurrentMode",
+        "managerialHub_directive_started",
+        "costDirectiveTelemetry_contract:1789323489063-ypww2o",
+        "costDirectiveUser",
+        "managerialHub_costDirective_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:sequences:v1",
+        "costDirective:guideIntroSeen",
+        "managerialHub_costDirective_room"
+      ],
+      "sessionStorageKeys": [
+        "costDirective:daily:announced:2026-09-13"
+      ],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:runs:v1": "{\"cost-directive:1789323489063-ypww2o\":\"ea18403d-45d1-4972-97b5-bf1e5ba8695e\",\"cost-directive:artifacts:ea18403d-45d1-4972-97b5-bf1e5ba8695e\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:ea18403d-45d1-4972-97b5-bf1e5ba8695e\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:clientId:v1": "a334222d-dbd9-429a-a2a9-a9f293582958",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:activeRun:v1:cost-directive": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:sequences:v1": "{\"ea18403d-45d1-4972-97b5-bf1e5ba8695e\":11}"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323489063-ypww2o",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 11,
+      "received": [
+        {
+          "eventId": "c90357a6-db4c-49c3-9c75-8576e2f9a926",
+          "eventType": "run_manifest",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "08e9cc1b-2c38-4e97-89ba-18388043ebe5",
+          "eventType": "mode_selected",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "1a8c5f77-856c-4cfd-92fe-ceed24dd4b06",
+          "eventType": "run_started",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "3670a827-3d24-4930-a78a-9fe9bec459c2",
+          "eventType": "question_shown",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "b14288cd-9b58-4db0-a43a-2aded8855da4",
+          "eventType": "run_paused",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "6aa0281b-7863-4044-b86d-7db086f9a1fd",
+          "eventType": "run_resumed",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "5c69bd7b-06ff-4285-bc11-61935c1bdbc8",
+          "eventType": "answer_submitted",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "b65629da-3479-449b-be12-6e58a4a17946",
+          "eventType": "answer_evaluated",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "75a03dd9-9fff-4ce1-ba62-b0c8c46d6d9b",
+          "eventType": "streak_changed",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "66930db3-3762-4709-95cb-6c609a1b9521",
+          "eventType": "question_shown",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "7fe20a82-74a2-4122-ab26-85f9ed04abae",
+          "eventType": "room_advanced",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "after-reload",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": false,
+      "clientId": "a334222d-dbd9-429a-a2a9-a9f293582958",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 3,
+        "storageFailures": 0
+      },
+      "buildScope": "30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f",
+      "activeRun": "",
+      "runID": "",
+      "namespace": "mq:managerial-directorate-classroom:",
+      "localStorageKeys": [
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:queue:v1",
+        "managerialHub_bestStreak",
+        "costDirective:daily:v1",
+        "costDirectiveTelemetry_1789323489063-ypww2o",
+        "managerialHub_directive_room",
+        "costDirectiveSave_v1_standard",
+        "costDirectiveLatestTelemetryRunID",
+        "costDirectiveRunID",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:runs:v1",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_directive_complete",
+        "managerialHub_costDirective_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:quality:v1",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:clientId:v1",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:activeRun:v1:cost-directive",
+        "costDirectiveCurrentMode",
+        "managerialHub_directive_started",
+        "costDirectiveTelemetry_contract:1789323489063-ypww2o",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:remoteDisabled:v1",
+        "costDirectiveUser",
+        "managerialHub_costDirective_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:sequences:v1",
+        "costDirective:guideIntroSeen",
+        "managerialHub_costDirective_room"
+      ],
+      "sessionStorageKeys": [
+        "costDirective:daily:announced:2026-09-13"
+      ],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:runs:v1": "{\"cost-directive:1789323489063-ypww2o\":\"ea18403d-45d1-4972-97b5-bf1e5ba8695e\",\"cost-directive:artifacts:ea18403d-45d1-4972-97b5-bf1e5ba8695e\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:ea18403d-45d1-4972-97b5-bf1e5ba8695e\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:quality:v1": "{\"overflow\":0,\"permanentlyRejected\":0,\"cancelled\":3,\"storageFailures\":0}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:clientId:v1": "a334222d-dbd9-429a-a2a9-a9f293582958",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:activeRun:v1:cost-directive": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:remoteDisabled:v1": "1",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:sequences:v1": "{\"ea18403d-45d1-4972-97b5-bf1e5ba8695e\":14}"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323489063-ypww2o",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 13,
+      "received": [
+        {
+          "eventId": "c90357a6-db4c-49c3-9c75-8576e2f9a926",
+          "eventType": "run_manifest",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "08e9cc1b-2c38-4e97-89ba-18388043ebe5",
+          "eventType": "mode_selected",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "1a8c5f77-856c-4cfd-92fe-ceed24dd4b06",
+          "eventType": "run_started",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "3670a827-3d24-4930-a78a-9fe9bec459c2",
+          "eventType": "question_shown",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "b14288cd-9b58-4db0-a43a-2aded8855da4",
+          "eventType": "run_paused",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "6aa0281b-7863-4044-b86d-7db086f9a1fd",
+          "eventType": "run_resumed",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "5c69bd7b-06ff-4285-bc11-61935c1bdbc8",
+          "eventType": "answer_submitted",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "b65629da-3479-449b-be12-6e58a4a17946",
+          "eventType": "answer_evaluated",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "75a03dd9-9fff-4ce1-ba62-b0c8c46d6d9b",
+          "eventType": "streak_changed",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "66930db3-3762-4709-95cb-6c609a1b9521",
+          "eventType": "question_shown",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "7fe20a82-74a2-4122-ab26-85f9ed04abae",
+          "eventType": "room_advanced",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "3dff021e-d119-462c-9f1e-bea711df5958",
+          "eventType": "question_interrupted",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 0
+        },
+        {
+          "eventId": "4baa65f9-5237-4e7e-bd4c-fe2bb916e2b1",
+          "eventType": "run_paused",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "after-continue-answer",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": false,
+      "clientId": "a334222d-dbd9-429a-a2a9-a9f293582958",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 3,
+        "storageFailures": 0
+      },
+      "buildScope": "30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f",
+      "activeRun": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+      "runID": "1789323489063-ypww2o",
+      "namespace": "mq:managerial-directorate-classroom:",
+      "localStorageKeys": [
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:queue:v1",
+        "managerialHub_bestStreak",
+        "costDirective:daily:v1",
+        "costDirectiveTelemetry_1789323489063-ypww2o",
+        "managerialHub_directive_room",
+        "costDirectiveSave_v1_standard",
+        "costDirectiveLatestTelemetryRunID",
+        "costDirectiveRunID",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:runs:v1",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_directive_complete",
+        "managerialHub_costDirective_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:quality:v1",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:clientId:v1",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:activeRun:v1:cost-directive",
+        "costDirectiveCurrentMode",
+        "managerialHub_directive_started",
+        "costDirectiveTelemetry_contract:1789323489063-ypww2o",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:remoteDisabled:v1",
+        "costDirectiveUser",
+        "managerialHub_costDirective_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:sequences:v1",
+        "costDirective:guideIntroSeen",
+        "managerialHub_costDirective_room"
+      ],
+      "sessionStorageKeys": [
+        "costDirective:daily:announced:2026-09-13"
+      ],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:runs:v1": "{\"cost-directive:1789323489063-ypww2o\":\"ea18403d-45d1-4972-97b5-bf1e5ba8695e\",\"cost-directive:artifacts:ea18403d-45d1-4972-97b5-bf1e5ba8695e\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:ea18403d-45d1-4972-97b5-bf1e5ba8695e\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:quality:v1": "{\"overflow\":0,\"permanentlyRejected\":0,\"cancelled\":3,\"storageFailures\":0}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:clientId:v1": "a334222d-dbd9-429a-a2a9-a9f293582958",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:activeRun:v1:cost-directive": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:remoteDisabled:v1": "1",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:sequences:v1": "{\"ea18403d-45d1-4972-97b5-bf1e5ba8695e\":14}"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323489063-ypww2o",
+        "room": 3,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 13,
+      "received": [
+        {
+          "eventId": "c90357a6-db4c-49c3-9c75-8576e2f9a926",
+          "eventType": "run_manifest",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "08e9cc1b-2c38-4e97-89ba-18388043ebe5",
+          "eventType": "mode_selected",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "1a8c5f77-856c-4cfd-92fe-ceed24dd4b06",
+          "eventType": "run_started",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "3670a827-3d24-4930-a78a-9fe9bec459c2",
+          "eventType": "question_shown",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "b14288cd-9b58-4db0-a43a-2aded8855da4",
+          "eventType": "run_paused",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "6aa0281b-7863-4044-b86d-7db086f9a1fd",
+          "eventType": "run_resumed",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "5c69bd7b-06ff-4285-bc11-61935c1bdbc8",
+          "eventType": "answer_submitted",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "b65629da-3479-449b-be12-6e58a4a17946",
+          "eventType": "answer_evaluated",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "75a03dd9-9fff-4ce1-ba62-b0c8c46d6d9b",
+          "eventType": "streak_changed",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 1
+        },
+        {
+          "eventId": "66930db3-3762-4709-95cb-6c609a1b9521",
+          "eventType": "question_shown",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "7fe20a82-74a2-4122-ab26-85f9ed04abae",
+          "eventType": "room_advanced",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        },
+        {
+          "eventId": "3dff021e-d119-462c-9f1e-bea711df5958",
+          "eventType": "question_interrupted",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": 0
+        },
+        {
+          "eventId": "4baa65f9-5237-4e7e-bd4c-fe2bb916e2b1",
+          "eventType": "run_paused",
+          "runId": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+          "copyCount": null
+        }
+      ]
+    }
+  ],
+  "workerErrors": []
+}

@@ -44,9 +44,13 @@ try{
    });
    if(game==='cost-directive'){
     await check(branch+' save/refresh/Continue resets timing state',async()=>{
+     const previous=captured().findLast(e=>e.buildId===branch&&e.gameId===game&&e.eventType==='answer_evaluated');
+     assert.match(await page.locator('#anonymousTelemetryDisclosure').textContent(),/Anonymous transmission is enabled/);
      await page.evaluate(()=>{room=2;loadQuestion();saveGameState();});await flush(page);const run=captured().findLast(e=>e.buildId===branch&&e.gameId===game).runId;
-     await page.reload();await page.evaluate(()=>continueSavedRun());await page.waitForTimeout(150);await answer(page);await flush(page);
+     await page.reload();assert.match(await page.locator('#anonymousTelemetryDisclosure').textContent(),/Anonymous transmission is enabled/);await page.evaluate(()=>continueSavedRun());await page.waitForTimeout(150);await answer(page);await flush(page);
      const e=captured().findLast(e=>e.buildId===branch&&e.gameId===game&&e.eventType==='answer_evaluated');assert.equal(e.runId,run);assert.equal(e.copyCount,0);assert.equal(e.hiddenTimeMs,0);assert(e.activeResponseTimeMs>0);assert.equal(e.timeAfterReturnMs,null);
+     assert.notEqual(e.eventId,previous.eventId,'Continue must deliver a NEW answer, not reuse the pre-save record');
+     assert.equal(e.anonymousClientId,previous.anonymousClientId,'Ordinary refresh preserves the build-scoped browser pseudonym');
     });
     for(const mode of ['timed','exam','quiz','unlimited','legendary','score','fadingFortune','riskReward'])await check(branch+' '+mode+' response instrumentation',async()=>{
      await page.evaluate(()=>returnToModeSelectFromRun());await start(page,mode);await page.waitForTimeout(100);await answer(page);await flush(page);

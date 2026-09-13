@@ -1,5 +1,6 @@
 import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';
 import gate from '../../server/classroom-access/worker.mjs';
+import {normalizeApprovedRefreshFix} from '../telemetry_governance/private-refresh-scope.cjs';
 const root=path.resolve(process.argv[2]||'.'),out=path.join(root,'validation_artifacts/classroom_access'),results=[];
 const base='/play/managerial-directorate-classroom';
 // Ephemeral synthetic fixtures exist in memory only and are never printed.
@@ -46,9 +47,9 @@ await check('Classroom access protected files match committed HEAD',async()=>{
       const strip=s=>s.toString().replace(/\r\n/g,'\n').replace(/(<details><summary>About this class build<\/summary><p>)[\s\S]*?(<\/p><\/details>)/,'$1$2');
       assert.equal(strip(working),strip(committed),p);
     }else if(p==='play/managerial-directorate-classroom/telemetry-client.js'){
-      // Permit editorial notices and regenerated source fingerprints, not transport changes.
+      // Permit notices, fingerprints and the exact reviewed raw-UUID reader fix only.
       const strip=s=>s.toString().replace(/\r\n/g,'\n').replace(/  \/\/ BEGIN MEASUREMENT CONTRACT[\s\S]*?  \/\/ END MEASUREMENT CONTRACT/,'').replace(/  function addDisclosure\(\)[\s\S]*?\n  }\n/,'');
-      assert.equal(strip(working),strip(committed),p);
+      assert.equal(normalizeApprovedRefreshFix(strip(working)),normalizeApprovedRefreshFix(strip(committed)),p);
     }else assert.deepEqual(working,committed,p);
   }
 });

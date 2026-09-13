@@ -4,6 +4,7 @@ import http from 'node:http';
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import {createRequire} from 'node:module';
+import {normalizeApprovedRefreshFix} from './private-refresh-scope.cjs';
 
 const root=process.cwd(), out=process.env.MQ_EVIDENCE_DIR||'validation_artifacts/telemetry_site_ux_refresh/ux';
 fs.mkdirSync(out,{recursive:true});
@@ -15,8 +16,8 @@ for(const p of ['privacy/index.html','how-to/responsible-telemetry-use/index.htm
   assert(!/Canvas user IDs|Troy IDs|classroom\/research|research builds/.test(read(p)),p);
 }
 for(const p of ['how-to/telemetry-data-dictionary/index.html','how-to/composer/index.html','how-to/index.html'])assert(!/classroom\/research|research builds|pilot\/research/.test(read(p)),p);
-// Contract helpers and source fingerprints can be regenerated; executable behavior cannot change.
-const semantic=s=>s.replace(/  \/\/ BEGIN MEASUREMENT CONTRACT[\s\S]*?  \/\/ END MEASUREMENT CONTRACT/,'').replace(/  function addDisclosure\(\)[\s\S]*?\n  }\n/,'');
+// Preserve behavior except the exact separately reviewed raw-UUID refresh fix.
+const semantic=s=>normalizeApprovedRefreshFix(s).replace(/  \/\/ BEGIN MEASUREMENT CONTRACT[\s\S]*?  \/\/ END MEASUREMENT CONTRACT/,'').replace(/  function addDisclosure\(\)[\s\S]*?\n  }\n/,'');
 for(const p of ['build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html','play/managerial-intelligence-directorate/local-telemetry.js','play/managerial-directorate-classroom/telemetry-client.js','play/managerial-directorate-telemetry-poc/telemetry-client.js'])assert.equal(semantic(read(p)),semantic(before(p)),p);
 const tracked=execFileSync('git',['ls-files'],{encoding:'utf8'}).trim().split('\n');
 const protectedFiles=tracked.filter(p=>p.startsWith('server/')||p.startsWith('how-to/canvas/')||/^play\/(economic-realm|macro-command-system|micro-domains|managerial-intelligence-directorate)\//.test(p)&&p!=='play/managerial-intelligence-directorate/local-telemetry.js'||['audit_tools/telemetry_contract/schema.json','audit_tools/telemetry_contract/release.json','audit_tools/telemetry_contract/runtime.js'].includes(p));

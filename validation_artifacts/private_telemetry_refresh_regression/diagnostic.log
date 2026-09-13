@@ -1,0 +1,114 @@
+(node:56024) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  "trace": [
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "parseFailure": "08849fd4-7041-45e6-b241-0840caee2bb1",
+      "stack": "Error\n    at JSON.parse (<anonymous>:4:224)\n    at readJSON (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:502:27)\n    at anonymousTelemetryPOC (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:531:18)\n    at http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1249:3"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at anonymousTelemetryPOC (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1215:23)\n    at http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1249:3"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at Object.flush (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1048:26)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:56)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:1c3d4ea47426d3425d83795c33dff4794a7b283b1fc8176814a8049b06d076ed:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at flush (http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1048:26)\n    at http://127.0.0.1:60311/play/managerial-directorate-telemetry-poc/telemetry-client.js:1229:5"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "parseFailure": "ea18403d-45d1-4972-97b5-bf1e5ba8695e",
+      "stack": "Error\n    at JSON.parse (<anonymous>:4:224)\n    at readJSON (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:502:27)\n    at anonymousClassroomTelemetry (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:530:18)\n    at http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1161:3"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at anonymousClassroomTelemetry (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1128:23)\n    at http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1161:3"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:60311/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:30536ef46aa2a1dceeb39bb33b04c8b3485da213efaeb943f39d4ed86cf2b06f:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at flush (http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1045:26)\n    at http://127.0.0.1:60311/play/managerial-directorate-classroom/telemetry-client.js:1141:5"
+    }
+  ],
+  "snapshots": [
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "before-save",
+      "remoteEnabled": true,
+      "receivedCount": 9,
+      "meta": "enabled"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "before-reload",
+      "remoteEnabled": true,
+      "receivedCount": 11,
+      "meta": "enabled"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "after-reload",
+      "remoteEnabled": false,
+      "receivedCount": 13,
+      "meta": "enabled"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "after-continue-answer",
+      "remoteEnabled": false,
+      "receivedCount": 13,
+      "meta": "enabled"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "before-save",
+      "remoteEnabled": true,
+      "receivedCount": 9,
+      "meta": "enabled"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "before-reload",
+      "remoteEnabled": true,
+      "receivedCount": 11,
+      "meta": "enabled"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "after-reload",
+      "remoteEnabled": false,
+      "receivedCount": 13,
+      "meta": "enabled"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "after-continue-answer",
+      "remoteEnabled": false,
+      "receivedCount": 13,
+      "meta": "enabled"
+    }
+  ]
+}

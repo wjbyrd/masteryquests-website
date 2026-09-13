@@ -1,0 +1,1789 @@
+{
+  "trace": [
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:1127:100)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:8)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at anonymousTelemetryPOC (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:1226:23)\n    at http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:1260:3"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:remoteDisabled:v1",
+      "value": "0",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:1127:100)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:8)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?qaEnabled=0&telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:remoteDisabled:v1",
+      "value": "1",
+      "meta": "disabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at anonymousTelemetryPOC (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:1226:23)\n    at http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:1260:3"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?qaEnabled=0&telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:remoteDisabled:v1",
+      "value": "0",
+      "meta": "disabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at Object.setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:27)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?qaEnabled=0&telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-telemetry-poc:anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:remoteDisabled:v1",
+      "value": "1",
+      "meta": "disabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:27:32)\n    at anonymousTelemetryPOC (http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:1226:23)\n    at http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/telemetry-client.js:1260:3"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:1118:58)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:8)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:remoteDisabled:v1",
+      "value": "1",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at anonymousClassroomTelemetry (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:1139:23)\n    at http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:1172:3"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:remoteDisabled:v1",
+      "value": "0",
+      "meta": "enabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at HTMLInputElement.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:1118:58)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:8)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?qaEnabled=0&telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:remoteDisabled:v1",
+      "value": "1",
+      "meta": "disabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at anonymousClassroomTelemetry (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:1139:23)\n    at http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:1172:3"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?qaEnabled=0&telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:remoteDisabled:v1",
+      "value": "0",
+      "meta": "disabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at Object.setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:27)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?qaEnabled=0&telemetrySynthetic=1",
+      "key": "mq:managerial-directorate-classroom:anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:remoteDisabled:v1",
+      "value": "1",
+      "meta": "disabled",
+      "stack": "Error\n    at Storage.setItem (<anonymous>:7:217)\n    at Proxy.<anonymous> (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-storage-isolation.js:28:65)\n    at setRemoteCollection (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:27:32)\n    at anonymousClassroomTelemetry (http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:1139:23)\n    at http://127.0.0.1:61360/play/managerial-directorate-classroom/telemetry-client.js:1172:3"
+    }
+  ],
+  "snapshots": [
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "before-save",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "8ec7f07c-a600-4e5a-b6d1-af56090270c6",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096",
+      "activeRun": "803f430d-d7ca-49cc-b710-61d618399ef7",
+      "runID": "1789323737892-wie7mm",
+      "namespace": "mq:managerial-directorate-telemetry-poc:",
+      "localStorageKeys": [
+        "managerialHub_directive_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:runs:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:sequences:v1",
+        "costDirectiveRunID",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:queue:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:activeRun:v1:cost-directive",
+        "managerialHub_costDirective_status",
+        "managerialHub_directive_complete",
+        "managerialHub_directive_room",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:clientId:v1",
+        "managerialHub_costDirective_bestStreak",
+        "costDirectiveUser",
+        "costDirectiveTelemetry_contract:1789323737892-wie7mm",
+        "costDirectiveSave_v1_standard",
+        "managerialHub_costDirective_started",
+        "costDirectiveTelemetry_1789323737892-wie7mm",
+        "managerialHub_costDirective_room",
+        "costDirectiveLatestTelemetryRunID",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_bestStreak",
+        "costDirectiveCurrentMode"
+      ],
+      "sessionStorageKeys": [],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:runs:v1": "{\"cost-directive:1789323737892-wie7mm\":\"803f430d-d7ca-49cc-b710-61d618399ef7\",\"cost-directive:artifacts:803f430d-d7ca-49cc-b710-61d618399ef7\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:803f430d-d7ca-49cc-b710-61d618399ef7\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:sequences:v1": "{\"803f430d-d7ca-49cc-b710-61d618399ef7\":9}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:activeRun:v1:cost-directive": "803f430d-d7ca-49cc-b710-61d618399ef7",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:clientId:v1": "8ec7f07c-a600-4e5a-b6d1-af56090270c6"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323737892-wie7mm",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 9,
+      "received": [
+        {
+          "eventId": "f9295d96-6eb1-4db1-869e-75121d58f5e2",
+          "eventType": "run_manifest",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "a2909ca2-8070-4421-a866-359eb8808a21",
+          "eventType": "mode_selected",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1e218aa9-d157-4df8-a1a1-1961c29fe26c",
+          "eventType": "run_started",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1e080612-5867-464d-b0c8-ef67cc3a5220",
+          "eventType": "question_shown",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "fa0fbe45-1d4f-42ff-99c7-73be4cfe586e",
+          "eventType": "run_paused",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "efb21747-3d19-4d58-9528-3f7efddb88ee",
+          "eventType": "run_resumed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1b62a0c4-8e2a-48b2-971d-72476d39b3c4",
+          "eventType": "answer_submitted",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "0ef7036c-7790-4019-8188-d91ad37d4d49",
+          "eventType": "answer_evaluated",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "c95d2aee-a2de-4b3f-8a8b-3537e96e3169",
+          "eventType": "streak_changed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "before-reload",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "8ec7f07c-a600-4e5a-b6d1-af56090270c6",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096",
+      "activeRun": "803f430d-d7ca-49cc-b710-61d618399ef7",
+      "runID": "1789323737892-wie7mm",
+      "namespace": "mq:managerial-directorate-telemetry-poc:",
+      "localStorageKeys": [
+        "managerialHub_directive_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:runs:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:sequences:v1",
+        "costDirectiveRunID",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:queue:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:activeRun:v1:cost-directive",
+        "managerialHub_costDirective_status",
+        "managerialHub_directive_complete",
+        "managerialHub_directive_room",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:clientId:v1",
+        "managerialHub_costDirective_bestStreak",
+        "costDirectiveUser",
+        "costDirectiveTelemetry_contract:1789323737892-wie7mm",
+        "costDirectiveSave_v1_standard",
+        "managerialHub_costDirective_started",
+        "costDirectiveTelemetry_1789323737892-wie7mm",
+        "managerialHub_costDirective_room",
+        "costDirectiveLatestTelemetryRunID",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_bestStreak",
+        "costDirectiveCurrentMode"
+      ],
+      "sessionStorageKeys": [],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:runs:v1": "{\"cost-directive:1789323737892-wie7mm\":\"803f430d-d7ca-49cc-b710-61d618399ef7\",\"cost-directive:artifacts:803f430d-d7ca-49cc-b710-61d618399ef7\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:803f430d-d7ca-49cc-b710-61d618399ef7\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:sequences:v1": "{\"803f430d-d7ca-49cc-b710-61d618399ef7\":11}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:activeRun:v1:cost-directive": "803f430d-d7ca-49cc-b710-61d618399ef7",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:clientId:v1": "8ec7f07c-a600-4e5a-b6d1-af56090270c6"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323737892-wie7mm",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 11,
+      "received": [
+        {
+          "eventId": "f9295d96-6eb1-4db1-869e-75121d58f5e2",
+          "eventType": "run_manifest",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "a2909ca2-8070-4421-a866-359eb8808a21",
+          "eventType": "mode_selected",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1e218aa9-d157-4df8-a1a1-1961c29fe26c",
+          "eventType": "run_started",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1e080612-5867-464d-b0c8-ef67cc3a5220",
+          "eventType": "question_shown",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "fa0fbe45-1d4f-42ff-99c7-73be4cfe586e",
+          "eventType": "run_paused",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "efb21747-3d19-4d58-9528-3f7efddb88ee",
+          "eventType": "run_resumed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1b62a0c4-8e2a-48b2-971d-72476d39b3c4",
+          "eventType": "answer_submitted",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "0ef7036c-7790-4019-8188-d91ad37d4d49",
+          "eventType": "answer_evaluated",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "c95d2aee-a2de-4b3f-8a8b-3537e96e3169",
+          "eventType": "streak_changed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "e5fb1740-5265-4ee9-a751-b616a3f910ca",
+          "eventType": "question_shown",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "9c603942-bd9e-4e42-a285-bc7587cf5c9b",
+          "eventType": "room_advanced",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "after-reload",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "8ec7f07c-a600-4e5a-b6d1-af56090270c6",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096",
+      "activeRun": "803f430d-d7ca-49cc-b710-61d618399ef7",
+      "runID": "",
+      "namespace": "mq:managerial-directorate-telemetry-poc:",
+      "localStorageKeys": [
+        "managerialHub_directive_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:runs:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:sequences:v1",
+        "costDirectiveRunID",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:queue:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:activeRun:v1:cost-directive",
+        "managerialHub_costDirective_status",
+        "managerialHub_directive_complete",
+        "managerialHub_directive_room",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:clientId:v1",
+        "managerialHub_costDirective_bestStreak",
+        "costDirectiveUser",
+        "costDirectiveTelemetry_contract:1789323737892-wie7mm",
+        "costDirectiveSave_v1_standard",
+        "managerialHub_costDirective_started",
+        "costDirectiveTelemetry_1789323737892-wie7mm",
+        "managerialHub_costDirective_room",
+        "costDirectiveLatestTelemetryRunID",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_bestStreak",
+        "costDirectiveCurrentMode"
+      ],
+      "sessionStorageKeys": [],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:runs:v1": "{\"cost-directive:1789323737892-wie7mm\":\"803f430d-d7ca-49cc-b710-61d618399ef7\",\"cost-directive:artifacts:803f430d-d7ca-49cc-b710-61d618399ef7\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:803f430d-d7ca-49cc-b710-61d618399ef7\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:sequences:v1": "{\"803f430d-d7ca-49cc-b710-61d618399ef7\":14}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:activeRun:v1:cost-directive": "803f430d-d7ca-49cc-b710-61d618399ef7",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:clientId:v1": "8ec7f07c-a600-4e5a-b6d1-af56090270c6"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323737892-wie7mm",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 14,
+      "received": [
+        {
+          "eventId": "f9295d96-6eb1-4db1-869e-75121d58f5e2",
+          "eventType": "run_manifest",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "a2909ca2-8070-4421-a866-359eb8808a21",
+          "eventType": "mode_selected",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1e218aa9-d157-4df8-a1a1-1961c29fe26c",
+          "eventType": "run_started",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1e080612-5867-464d-b0c8-ef67cc3a5220",
+          "eventType": "question_shown",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "fa0fbe45-1d4f-42ff-99c7-73be4cfe586e",
+          "eventType": "run_paused",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "efb21747-3d19-4d58-9528-3f7efddb88ee",
+          "eventType": "run_resumed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1b62a0c4-8e2a-48b2-971d-72476d39b3c4",
+          "eventType": "answer_submitted",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "0ef7036c-7790-4019-8188-d91ad37d4d49",
+          "eventType": "answer_evaluated",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "c95d2aee-a2de-4b3f-8a8b-3537e96e3169",
+          "eventType": "streak_changed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "e5fb1740-5265-4ee9-a751-b616a3f910ca",
+          "eventType": "question_shown",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "9c603942-bd9e-4e42-a285-bc7587cf5c9b",
+          "eventType": "room_advanced",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "c243fc6a-397d-4960-8ac1-b947080fb506",
+          "eventType": "question_interrupted",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 0
+        },
+        {
+          "eventId": "23b6d675-8450-4ea7-8232-e26b9ff2bb62",
+          "eventType": "run_paused",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "7a08cccb-9ee2-4c7b-b6af-f9090983ff65",
+          "eventType": "run_resumed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "stage": "after-continue-answer",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-telemetry-poc/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "8ec7f07c-a600-4e5a-b6d1-af56090270c6",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096",
+      "activeRun": "803f430d-d7ca-49cc-b710-61d618399ef7",
+      "runID": "1789323737892-wie7mm",
+      "namespace": "mq:managerial-directorate-telemetry-poc:",
+      "localStorageKeys": [
+        "managerialHub_directive_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:runs:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:sequences:v1",
+        "costDirectiveRunID",
+        "managerialHub_directive_status",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:queue:v1",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:activeRun:v1:cost-directive",
+        "managerialHub_costDirective_status",
+        "managerialHub_directive_complete",
+        "managerialHub_directive_room",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:clientId:v1",
+        "managerialHub_costDirective_bestStreak",
+        "costDirectiveUser",
+        "costDirectiveTelemetry_contract:1789323737892-wie7mm",
+        "costDirectiveSave_v1_standard",
+        "managerialHub_costDirective_started",
+        "costDirectiveTelemetry_1789323737892-wie7mm",
+        "managerialHub_costDirective_room",
+        "costDirectiveLatestTelemetryRunID",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_bestStreak",
+        "costDirectiveCurrentMode"
+      ],
+      "sessionStorageKeys": [],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:runs:v1": "{\"cost-directive:1789323737892-wie7mm\":\"803f430d-d7ca-49cc-b710-61d618399ef7\",\"cost-directive:artifacts:803f430d-d7ca-49cc-b710-61d618399ef7\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:803f430d-d7ca-49cc-b710-61d618399ef7\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:sequences:v1": "{\"803f430d-d7ca-49cc-b710-61d618399ef7\":20}",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:activeRun:v1:cost-directive": "803f430d-d7ca-49cc-b710-61d618399ef7",
+        "anonymousTelemetry:build:v2:managerial-directorate-telemetry-poc:900505c237c3998f5a0890ec70fda12ad1d06f7fb0e921ea829d7a3050c46096:clientId:v1": "8ec7f07c-a600-4e5a-b6d1-af56090270c6"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323737892-wie7mm",
+        "room": 3,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 20,
+      "received": [
+        {
+          "eventId": "f9295d96-6eb1-4db1-869e-75121d58f5e2",
+          "eventType": "run_manifest",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "a2909ca2-8070-4421-a866-359eb8808a21",
+          "eventType": "mode_selected",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1e218aa9-d157-4df8-a1a1-1961c29fe26c",
+          "eventType": "run_started",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1e080612-5867-464d-b0c8-ef67cc3a5220",
+          "eventType": "question_shown",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "fa0fbe45-1d4f-42ff-99c7-73be4cfe586e",
+          "eventType": "run_paused",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "efb21747-3d19-4d58-9528-3f7efddb88ee",
+          "eventType": "run_resumed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "1b62a0c4-8e2a-48b2-971d-72476d39b3c4",
+          "eventType": "answer_submitted",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "0ef7036c-7790-4019-8188-d91ad37d4d49",
+          "eventType": "answer_evaluated",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "c95d2aee-a2de-4b3f-8a8b-3537e96e3169",
+          "eventType": "streak_changed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 1
+        },
+        {
+          "eventId": "e5fb1740-5265-4ee9-a751-b616a3f910ca",
+          "eventType": "question_shown",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "9c603942-bd9e-4e42-a285-bc7587cf5c9b",
+          "eventType": "room_advanced",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "c243fc6a-397d-4960-8ac1-b947080fb506",
+          "eventType": "question_interrupted",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 0
+        },
+        {
+          "eventId": "23b6d675-8450-4ea7-8232-e26b9ff2bb62",
+          "eventType": "run_paused",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "7a08cccb-9ee2-4c7b-b6af-f9090983ff65",
+          "eventType": "run_resumed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "b7788215-91c0-40b8-afcb-e119b7d1a0e0",
+          "eventType": "run_manifest",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "80ac70af-4be3-4781-9009-96269317078a",
+          "eventType": "run_resumed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "f83f9ad4-b469-4014-b9b3-b45f885478b9",
+          "eventType": "question_shown",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": null
+        },
+        {
+          "eventId": "6908adc9-42ec-4412-b239-cf616a5677b4",
+          "eventType": "answer_submitted",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 0
+        },
+        {
+          "eventId": "85992987-2167-4744-aaa3-ba07325b0fc8",
+          "eventType": "answer_evaluated",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 0
+        },
+        {
+          "eventId": "9c8c1cdd-29de-47c5-a37c-1f73aa949709",
+          "eventType": "streak_changed",
+          "runId": "803f430d-d7ca-49cc-b710-61d618399ef7",
+          "copyCount": 0
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "before-save",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee",
+      "activeRun": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+      "runID": "1789323756117-nimola",
+      "namespace": "mq:managerial-directorate-classroom:",
+      "localStorageKeys": [
+        "managerialHub_bestStreak",
+        "costDirective:daily:v1",
+        "managerialHub_directive_room",
+        "costDirectiveSave_v1_standard",
+        "costDirectiveLatestTelemetryRunID",
+        "costDirectiveRunID",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:sequences:v1",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_directive_complete",
+        "managerialHub_costDirective_status",
+        "costDirectiveTelemetry_1789323756117-nimola",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:clientId:v1",
+        "costDirectiveTelemetry_contract:1789323756117-nimola",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:runs:v1",
+        "managerialHub_directive_status",
+        "costDirectiveCurrentMode",
+        "managerialHub_directive_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:queue:v1",
+        "costDirectiveUser",
+        "managerialHub_costDirective_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:activeRun:v1:cost-directive",
+        "costDirective:guideIntroSeen",
+        "managerialHub_costDirective_room"
+      ],
+      "sessionStorageKeys": [
+        "costDirective:daily:announced:2026-09-13"
+      ],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:sequences:v1": "{\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\":9}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:clientId:v1": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:runs:v1": "{\"cost-directive:1789323756117-nimola\":\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\",\"cost-directive:artifacts:e5c7c626-7f9c-4c60-b290-fb92b332e72d\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:e5c7c626-7f9c-4c60-b290-fb92b332e72d\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:activeRun:v1:cost-directive": "e5c7c626-7f9c-4c60-b290-fb92b332e72d"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323756117-nimola",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 9,
+      "received": [
+        {
+          "eventId": "4f376ca8-0c0e-4e8a-8104-3a7acf34e183",
+          "eventType": "run_manifest",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "14107a20-c873-4948-a327-dc027afc616b",
+          "eventType": "mode_selected",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "c92f2587-957d-4781-aa28-e735865a37a0",
+          "eventType": "run_started",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "e95043a6-967c-492c-9cd6-0ae94681b5e2",
+          "eventType": "question_shown",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "8f910698-5ccb-4df9-b85d-9c199152f483",
+          "eventType": "run_paused",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "b2731590-1e08-4a9d-adac-39160d47dd7c",
+          "eventType": "run_resumed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "0fbedaff-0191-432c-a98f-311af1af3dcc",
+          "eventType": "answer_submitted",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "30421cb3-c0ce-437c-9a52-656faa82c096",
+          "eventType": "answer_evaluated",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "43ce5427-a4f9-4de6-9b0f-ff812470dde1",
+          "eventType": "streak_changed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "before-reload",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee",
+      "activeRun": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+      "runID": "1789323756117-nimola",
+      "namespace": "mq:managerial-directorate-classroom:",
+      "localStorageKeys": [
+        "managerialHub_bestStreak",
+        "costDirective:daily:v1",
+        "managerialHub_directive_room",
+        "costDirectiveSave_v1_standard",
+        "costDirectiveLatestTelemetryRunID",
+        "costDirectiveRunID",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:sequences:v1",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_directive_complete",
+        "managerialHub_costDirective_status",
+        "costDirectiveTelemetry_1789323756117-nimola",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:clientId:v1",
+        "costDirectiveTelemetry_contract:1789323756117-nimola",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:runs:v1",
+        "managerialHub_directive_status",
+        "costDirectiveCurrentMode",
+        "managerialHub_directive_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:queue:v1",
+        "costDirectiveUser",
+        "managerialHub_costDirective_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:activeRun:v1:cost-directive",
+        "costDirective:guideIntroSeen",
+        "managerialHub_costDirective_room"
+      ],
+      "sessionStorageKeys": [
+        "costDirective:daily:announced:2026-09-13"
+      ],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:sequences:v1": "{\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\":11}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:clientId:v1": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:runs:v1": "{\"cost-directive:1789323756117-nimola\":\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\",\"cost-directive:artifacts:e5c7c626-7f9c-4c60-b290-fb92b332e72d\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:e5c7c626-7f9c-4c60-b290-fb92b332e72d\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:activeRun:v1:cost-directive": "e5c7c626-7f9c-4c60-b290-fb92b332e72d"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323756117-nimola",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 11,
+      "received": [
+        {
+          "eventId": "4f376ca8-0c0e-4e8a-8104-3a7acf34e183",
+          "eventType": "run_manifest",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "14107a20-c873-4948-a327-dc027afc616b",
+          "eventType": "mode_selected",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "c92f2587-957d-4781-aa28-e735865a37a0",
+          "eventType": "run_started",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "e95043a6-967c-492c-9cd6-0ae94681b5e2",
+          "eventType": "question_shown",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "8f910698-5ccb-4df9-b85d-9c199152f483",
+          "eventType": "run_paused",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "b2731590-1e08-4a9d-adac-39160d47dd7c",
+          "eventType": "run_resumed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "0fbedaff-0191-432c-a98f-311af1af3dcc",
+          "eventType": "answer_submitted",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "30421cb3-c0ce-437c-9a52-656faa82c096",
+          "eventType": "answer_evaluated",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "43ce5427-a4f9-4de6-9b0f-ff812470dde1",
+          "eventType": "streak_changed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "c254c804-1be2-4463-9fb2-f6865c08a54b",
+          "eventType": "question_shown",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "3ac5d1fa-eb2b-4519-a053-53e882196549",
+          "eventType": "room_advanced",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "after-reload",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+      "queue": [
+        {
+          "eventId": "7eca2f6d-5a02-4b3b-b25d-3be5b2b79bfa",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "anonymousClientId": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+          "buildId": "managerial-directorate-classroom",
+          "buildVersion": "5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee",
+          "schemaVersion": 3,
+          "phase": "phaseAnonymousTelemetryPOC-v1",
+          "gameId": "cost-directive",
+          "mode": "standard",
+          "eventType": "question_interrupted",
+          "sequenceNumber": 12,
+          "eventTimestamp": "2026-09-13T18:22:37.760Z",
+          "synthetic": false,
+          "elapsedTimeMs": 1001,
+          "position": 2,
+          "questionId": "49",
+          "conceptId": "fixed_cost_fallacy",
+          "learningObjective": "LO3.5",
+          "questionType": "application",
+          "difficulty": "easy",
+          "selectedResponse": null,
+          "correct": null,
+          "responseTimeMs": 367,
+          "rapidGuess": false,
+          "remediationStage": "",
+          "bridgeStage": "",
+          "retestStage": "",
+          "bossStage": "",
+          "graphQuestion": false,
+          "score": 0,
+          "streak": 1,
+          "dailyProgress": 1,
+          "artifact": "",
+          "completionStatus": "",
+          "masteryAttempts": 1,
+          "masteryCorrect": 1,
+          "masteryAccuracy": 1,
+          "selectionReason": "diversify",
+          "weaknessEstimate": [
+            {
+              "key": "ac_mc_mr_calculation",
+              "attempts": 1,
+              "accuracy": 1
+            }
+          ],
+          "sourceEvent": "",
+          "sourceRunId": "1789323756117-nimola",
+          "lifecycleReason": "pagehide",
+          "activeResponseTimeMs": 367,
+          "hiddenTimeMs": 0,
+          "tabSwitchCount": 0,
+          "timeAfterReturnMs": null,
+          "focusLossCount": 0,
+          "unfocusedTimeMs": 0,
+          "timeAfterFocusMs": null,
+          "selectionCount": 0,
+          "maxSelectedChars": 0,
+          "questionSelected": 0,
+          "answersSelected": 0,
+          "copyCount": 0,
+          "questionCopied": 0,
+          "answersCopied": 0,
+          "lastCopyElapsedMs": null,
+          "timeCopyToHideMs": null,
+          "timeCopyToBlurMs": null,
+          "contractID": "mq-measurement/1",
+          "manifestID": "b4e88d0c3d1d5a8725e732e2e6cbfc33055fac9700a36f41dc6184cea80b82a3",
+          "provenanceStatus": "measured-segment",
+          "presentationID": "bf29ae41-2f62-49b4-a50d-5c3f6b9365ee",
+          "attemptID": "63fe568f-da19-4006-ba9f-21d78a2ba250",
+          "canonicalSelectedIndex": null,
+          "localSequence": 4,
+          "supportJSON": null,
+          "originAttemptID": null,
+          "resourceID": null,
+          "manifestJSON": null,
+          "deliveryQuality": "{\"overflow\":0,\"permanentlyRejected\":0,\"cancelled\":0,\"storageFailures\":0}"
+        },
+        {
+          "eventId": "cabc4702-f20f-418b-9289-5c0a4faae03d",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "anonymousClientId": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+          "buildId": "managerial-directorate-classroom",
+          "buildVersion": "5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee",
+          "schemaVersion": 3,
+          "phase": "phaseAnonymousTelemetryPOC-v1",
+          "gameId": "cost-directive",
+          "mode": "standard",
+          "eventType": "run_paused",
+          "sequenceNumber": 13,
+          "eventTimestamp": "2026-09-13T18:22:37.760Z",
+          "synthetic": false,
+          "elapsedTimeMs": 1365,
+          "position": 2,
+          "questionId": "49",
+          "conceptId": "fixed_cost_fallacy",
+          "learningObjective": "LO3.5",
+          "questionType": "application",
+          "difficulty": "easy",
+          "selectedResponse": null,
+          "correct": null,
+          "responseTimeMs": 0,
+          "rapidGuess": false,
+          "remediationStage": "",
+          "bridgeStage": "",
+          "retestStage": "",
+          "bossStage": "",
+          "graphQuestion": false,
+          "score": 0,
+          "streak": 1,
+          "dailyProgress": 1,
+          "artifact": "",
+          "completionStatus": "",
+          "masteryAttempts": 1,
+          "masteryCorrect": 1,
+          "masteryAccuracy": 1,
+          "selectionReason": "diversify",
+          "weaknessEstimate": [
+            {
+              "key": "ac_mc_mr_calculation",
+              "attempts": 1,
+              "accuracy": 1
+            }
+          ],
+          "sourceEvent": "",
+          "sourceRunId": "1789323756117-nimola",
+          "lifecycleReason": "pagehide",
+          "activeResponseTimeMs": null,
+          "hiddenTimeMs": null,
+          "tabSwitchCount": null,
+          "timeAfterReturnMs": null,
+          "focusLossCount": null,
+          "unfocusedTimeMs": null,
+          "timeAfterFocusMs": null,
+          "selectionCount": null,
+          "maxSelectedChars": null,
+          "questionSelected": null,
+          "answersSelected": null,
+          "copyCount": null,
+          "questionCopied": null,
+          "answersCopied": null,
+          "lastCopyElapsedMs": null,
+          "timeCopyToHideMs": null,
+          "timeCopyToBlurMs": null,
+          "contractID": "mq-measurement/1",
+          "manifestID": "b4e88d0c3d1d5a8725e732e2e6cbfc33055fac9700a36f41dc6184cea80b82a3",
+          "provenanceStatus": "measured-segment",
+          "presentationID": "bf29ae41-2f62-49b4-a50d-5c3f6b9365ee",
+          "attemptID": "63fe568f-da19-4006-ba9f-21d78a2ba250",
+          "canonicalSelectedIndex": null,
+          "localSequence": 4,
+          "supportJSON": null,
+          "originAttemptID": null,
+          "resourceID": null,
+          "manifestJSON": null,
+          "deliveryQuality": "{\"overflow\":0,\"permanentlyRejected\":0,\"cancelled\":0,\"storageFailures\":0}"
+        },
+        {
+          "eventId": "840caf58-2d4f-45ee-be6f-1e6212f08ff6",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "anonymousClientId": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+          "buildId": "managerial-directorate-classroom",
+          "buildVersion": "5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee",
+          "schemaVersion": 3,
+          "phase": "phaseAnonymousTelemetryPOC-v1",
+          "gameId": "cost-directive",
+          "mode": "standard",
+          "eventType": "run_resumed",
+          "sequenceNumber": 14,
+          "eventTimestamp": "2026-09-13T18:22:37.762Z",
+          "synthetic": false,
+          "elapsedTimeMs": 1365,
+          "position": 2,
+          "questionId": "49",
+          "conceptId": "fixed_cost_fallacy",
+          "learningObjective": "LO3.5",
+          "questionType": "application",
+          "difficulty": "easy",
+          "selectedResponse": null,
+          "correct": null,
+          "responseTimeMs": 0,
+          "rapidGuess": false,
+          "remediationStage": "",
+          "bridgeStage": "",
+          "retestStage": "",
+          "bossStage": "",
+          "graphQuestion": false,
+          "score": 0,
+          "streak": 1,
+          "dailyProgress": 1,
+          "artifact": "",
+          "completionStatus": "",
+          "masteryAttempts": 1,
+          "masteryCorrect": 1,
+          "masteryAccuracy": 1,
+          "selectionReason": "diversify",
+          "weaknessEstimate": [
+            {
+              "key": "ac_mc_mr_calculation",
+              "attempts": 1,
+              "accuracy": 1
+            }
+          ],
+          "sourceEvent": "",
+          "sourceRunId": "1789323756117-nimola",
+          "lifecycleReason": "visibility-visible",
+          "activeResponseTimeMs": null,
+          "hiddenTimeMs": null,
+          "tabSwitchCount": null,
+          "timeAfterReturnMs": null,
+          "focusLossCount": null,
+          "unfocusedTimeMs": null,
+          "timeAfterFocusMs": null,
+          "selectionCount": null,
+          "maxSelectedChars": null,
+          "questionSelected": null,
+          "answersSelected": null,
+          "copyCount": null,
+          "questionCopied": null,
+          "answersCopied": null,
+          "lastCopyElapsedMs": null,
+          "timeCopyToHideMs": null,
+          "timeCopyToBlurMs": null,
+          "contractID": "mq-measurement/1",
+          "manifestID": "b4e88d0c3d1d5a8725e732e2e6cbfc33055fac9700a36f41dc6184cea80b82a3",
+          "provenanceStatus": "measured-segment",
+          "presentationID": "bf29ae41-2f62-49b4-a50d-5c3f6b9365ee",
+          "attemptID": "63fe568f-da19-4006-ba9f-21d78a2ba250",
+          "canonicalSelectedIndex": null,
+          "localSequence": 4,
+          "supportJSON": null,
+          "originAttemptID": null,
+          "resourceID": null,
+          "manifestJSON": null,
+          "deliveryQuality": "{\"overflow\":0,\"permanentlyRejected\":0,\"cancelled\":0,\"storageFailures\":0}"
+        }
+      ],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee",
+      "activeRun": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+      "runID": "",
+      "namespace": "mq:managerial-directorate-classroom:",
+      "localStorageKeys": [
+        "managerialHub_bestStreak",
+        "costDirective:daily:v1",
+        "managerialHub_directive_room",
+        "costDirectiveSave_v1_standard",
+        "costDirectiveLatestTelemetryRunID",
+        "costDirectiveRunID",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:sequences:v1",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_directive_complete",
+        "managerialHub_costDirective_status",
+        "costDirectiveTelemetry_1789323756117-nimola",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:clientId:v1",
+        "costDirectiveTelemetry_contract:1789323756117-nimola",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:runs:v1",
+        "managerialHub_directive_status",
+        "costDirectiveCurrentMode",
+        "managerialHub_directive_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:queue:v1",
+        "costDirectiveUser",
+        "managerialHub_costDirective_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:activeRun:v1:cost-directive",
+        "costDirective:guideIntroSeen",
+        "managerialHub_costDirective_room"
+      ],
+      "sessionStorageKeys": [
+        "costDirective:daily:announced:2026-09-13"
+      ],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:sequences:v1": "{\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\":14}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:clientId:v1": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:runs:v1": "{\"cost-directive:1789323756117-nimola\":\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\",\"cost-directive:artifacts:e5c7c626-7f9c-4c60-b290-fb92b332e72d\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:e5c7c626-7f9c-4c60-b290-fb92b332e72d\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:queue:v1": "[{\"eventId\":\"7eca2f6d-5a02-4b3b-b25d-3be5b2b79bfa\",\"runId\":\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\",\"anonymousClientId\":\"0ea46ec4-fa2c-4631-96e0-356f5094fd9d\",\"buildId\":\"managerial-directorate-classroom\",\"buildVersion\":\"5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee\",\"schemaVersion\":3,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"gameId\":\"cost-directive\",\"mode\":\"standard\",\"eventType\":\"question_interrupted\",\"sequenceNumber\":12,\"eventTimestamp\":\"2026-09-13T18:22:37.760Z\",\"synthetic\":false,\"elapsedTimeMs\":1001,\"position\":2,\"questionId\":\"49\",\"conceptId\":\"fixed_cost_fallacy\",\"learningObjective\":\"LO3.5\",\"questionType\":\"application\",\"difficulty\":\"easy\",\"selectedResponse\":null,\"correct\":null,\"responseTimeMs\":367,\"rapidGuess\":false,\"remediationStage\":\"\",\"bridgeStage\":\"\",\"retestStage\":\"\",\"bossStage\":\"\",\"graphQuestion\":false,\"score\":0,\"streak\":1,\"dailyProgress\":1,\"artifact\":\"\",\"completionStatus\":\"\",\"masteryAttempts\":1,\"masteryCorrect\":1,\"masteryAccuracy\":1,\"selectionReason\":\"diversify\",\"weaknessEstimate\":[{\"key\":\"ac_mc_mr_calculation\",\"attempts\":1,\"accuracy\":1}],\"sourceEvent\":\"\",\"sourceRunId\":\"1789323756117-nimola\",\"lifecycleReason\":\"pagehide\",\"activeResponseTimeMs\":367,\"hiddenTimeMs\":0,\"tabSwitchCount\":0,\"timeAfterReturnMs\":null,\"focusLossCount\":0,\"unfocusedTimeMs\":0,\"timeAfterFocusMs\":null,\"selectionCount\":0,\"maxSelectedChars\":0,\"questionSelected\":0,\"answersSelected\":0,\"copyCount\":0,\"questionCopied\":0,\"answersCopied\":0,\"lastCopyElapsedMs\":null,\"timeCopyToHideMs\":null,\"timeCopyToBlurMs\":null,\"contractID\":\"mq-measurement/1\",\"manifestID\":\"b4e88d0c3d1d5a8725e732e2e6cbfc33055fac9700a36f41dc6184cea80b82a3\",\"provenanceStatus\":\"measured-segment\",\"presentationID\":\"bf29ae41-2f62-49b4-a50d-5c3f6b9365ee\",\"attemptID\":\"63fe568f-da19-4006-ba9f-21d78a2ba250\",\"canonicalSelectedIndex\":null,\"localSequence\":4,\"supportJSON\":null,\"originAttemptID\":null,\"resourceID\":null,\"manifestJSON\":null,\"deliveryQuality\":\"{\\\"overflow\\\":0,\\\"permanentlyRejected\\\":0,\\\"cancelled\\\":0,\\\"storageFailures\\\":0}\"},{\"eventId\":\"cabc4702-f20f-418b-9289-5c0a4faae03d\",\"runId\":\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\",\"anonymousClientId\":\"0ea46ec4-fa2c-4631-96e0-356f5094fd9d\",\"buildId\":\"managerial-directorate-classroom\",\"buildVersion\":\"5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee\",\"schemaVersion\":3,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"gameId\":\"cost-directive\",\"mode\":\"standard\",\"eventType\":\"run_paused\",\"sequenceNumber\":13,\"eventTimestamp\":\"2026-09-13T18:22:37.760Z\",\"synthetic\":false,\"elapsedTimeMs\":1365,\"position\":2,\"questionId\":\"49\",\"conceptId\":\"fixed_cost_fallacy\",\"learningObjective\":\"LO3.5\",\"questionType\":\"application\",\"difficulty\":\"easy\",\"selectedResponse\":null,\"correct\":null,\"responseTimeMs\":0,\"rapidGuess\":false,\"remediationStage\":\"\",\"bridgeStage\":\"\",\"retestStage\":\"\",\"bossStage\":\"\",\"graphQuestion\":false,\"score\":0,\"streak\":1,\"dailyProgress\":1,\"artifact\":\"\",\"completionStatus\":\"\",\"masteryAttempts\":1,\"masteryCorrect\":1,\"masteryAccuracy\":1,\"selectionReason\":\"diversify\",\"weaknessEstimate\":[{\"key\":\"ac_mc_mr_calculation\",\"attempts\":1,\"accuracy\":1}],\"sourceEvent\":\"\",\"sourceRunId\":\"1789323756117-nimola\",\"lifecycleReason\":\"pagehide\",\"activeResponseTimeMs\":null,\"hiddenTimeMs\":null,\"tabSwitchCount\":null,\"timeAfterReturnMs\":null,\"focusLossCount\":null,\"unfocusedTimeMs\":null,\"timeAfterFocusMs\":null,\"selectionCount\":null,\"maxSelectedChars\":null,\"questionSelected\":null,\"answersSelected\":null,\"copyCount\":null,\"questionCopied\":null,\"answersCopied\":null,\"lastCopyElapsedMs\":null,\"timeCopyToHideMs\":null,\"timeCopyToBlurMs\":null,\"contractID\":\"mq-measurement/1\",\"manifestID\":\"b4e88d0c3d1d5a8725e732e2e6cbfc33055fac9700a36f41dc6184cea80b82a3\",\"provenanceStatus\":\"measured-segment\",\"presentationID\":\"bf29ae41-2f62-49b4-a50d-5c3f6b9365ee\",\"attemptID\":\"63fe568f-da19-4006-ba9f-21d78a2ba250\",\"canonicalSelectedIndex\":null,\"localSequence\":4,\"supportJSON\":null,\"originAttemptID\":null,\"resourceID\":null,\"manifestJSON\":null,\"deliveryQuality\":\"{\\\"overflow\\\":0,\\\"permanentlyRejected\\\":0,\\\"cancelled\\\":0,\\\"storageFailures\\\":0}\"},{\"eventId\":\"840caf58-2d4f-45ee-be6f-1e6212f08ff6\",\"runId\":\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\",\"anonymousClientId\":\"0ea46ec4-fa2c-4631-96e0-356f5094fd9d\",\"buildId\":\"managerial-directorate-classroom\",\"buildVersion\":\"5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee\",\"schemaVersion\":3,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"gameId\":\"cost-directive\",\"mode\":\"standard\",\"eventType\":\"run_resumed\",\"sequenceNumber\":14,\"eventTimestamp\":\"2026-09-13T18:22:37.762Z\",\"synthetic\":false,\"elapsedTimeMs\":1365,\"position\":2,\"questionId\":\"49\",\"conceptId\":\"fixed_cost_fallacy\",\"learningObjective\":\"LO3.5\",\"questionType\":\"application\",\"difficulty\":\"easy\",\"selectedResponse\":null,\"correct\":null,\"responseTimeMs\":0,\"rapidGuess\":false,\"remediationStage\":\"\",\"bridgeStage\":\"\",\"retestStage\":\"\",\"bossStage\":\"\",\"graphQuestion\":false,\"score\":0,\"streak\":1,\"dailyProgress\":1,\"artifact\":\"\",\"completionStatus\":\"\",\"masteryAttempts\":1,\"masteryCorrect\":1,\"masteryAccuracy\":1,\"selectionReason\":\"diversify\",\"weaknessEstimate\":[{\"key\":\"ac_mc_mr_calculation\",\"attempts\":1,\"accuracy\":1}],\"sourceEvent\":\"\",\"sourceRunId\":\"1789323756117-nimola\",\"lifecycleReason\":\"visibility-visible\",\"activeResponseTimeMs\":null,\"hiddenTimeMs\":null,\"tabSwitchCount\":null,\"timeAfterReturnMs\":null,\"focusLossCount\":null,\"unfocusedTimeMs\":null,\"timeAfterFocusMs\":null,\"selectionCount\":null,\"maxSelectedChars\":null,\"questionSelected\":null,\"answersSelected\":null,\"copyCount\":null,\"questionCopied\":null,\"answersCopied\":null,\"lastCopyElapsedMs\":null,\"timeCopyToHideMs\":null,\"timeCopyToBlurMs\":null,\"contractID\":\"mq-measurement/1\",\"manifestID\":\"b4e88d0c3d1d5a8725e732e2e6cbfc33055fac9700a36f41dc6184cea80b82a3\",\"provenanceStatus\":\"measured-segment\",\"presentationID\":\"bf29ae41-2f62-49b4-a50d-5c3f6b9365ee\",\"attemptID\":\"63fe568f-da19-4006-ba9f-21d78a2ba250\",\"canonicalSelectedIndex\":null,\"localSequence\":4,\"supportJSON\":null,\"originAttemptID\":null,\"resourceID\":null,\"manifestJSON\":null,\"deliveryQuality\":\"{\\\"overflow\\\":0,\\\"permanentlyRejected\\\":0,\\\"cancelled\\\":0,\\\"storageFailures\\\":0}\"}]",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:activeRun:v1:cost-directive": "e5c7c626-7f9c-4c60-b290-fb92b332e72d"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323756117-nimola",
+        "room": 2,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 13,
+      "received": [
+        {
+          "eventId": "4f376ca8-0c0e-4e8a-8104-3a7acf34e183",
+          "eventType": "run_manifest",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "14107a20-c873-4948-a327-dc027afc616b",
+          "eventType": "mode_selected",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "c92f2587-957d-4781-aa28-e735865a37a0",
+          "eventType": "run_started",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "e95043a6-967c-492c-9cd6-0ae94681b5e2",
+          "eventType": "question_shown",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "8f910698-5ccb-4df9-b85d-9c199152f483",
+          "eventType": "run_paused",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "b2731590-1e08-4a9d-adac-39160d47dd7c",
+          "eventType": "run_resumed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "0fbedaff-0191-432c-a98f-311af1af3dcc",
+          "eventType": "answer_submitted",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "30421cb3-c0ce-437c-9a52-656faa82c096",
+          "eventType": "answer_evaluated",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "43ce5427-a4f9-4de6-9b0f-ff812470dde1",
+          "eventType": "streak_changed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "c254c804-1be2-4463-9fb2-f6865c08a54b",
+          "eventType": "question_shown",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "3ac5d1fa-eb2b-4519-a053-53e882196549",
+          "eventType": "room_advanced",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "7eca2f6d-5a02-4b3b-b25d-3be5b2b79bfa",
+          "eventType": "question_interrupted",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 0
+        },
+        {
+          "eventId": "cabc4702-f20f-418b-9289-5c0a4faae03d",
+          "eventType": "run_paused",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        }
+      ]
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "stage": "after-continue-answer",
+      "url": "http://127.0.0.1:61360/play/managerial-directorate-classroom/cost-directive/?telemetrySynthetic=1",
+      "meta": "enabled",
+      "remoteEnabled": true,
+      "clientId": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+      "queue": [],
+      "quality": {
+        "overflow": 0,
+        "permanentlyRejected": 0,
+        "cancelled": 0,
+        "storageFailures": 0
+      },
+      "buildScope": "5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee",
+      "activeRun": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+      "runID": "1789323756117-nimola",
+      "namespace": "mq:managerial-directorate-classroom:",
+      "localStorageKeys": [
+        "managerialHub_bestStreak",
+        "costDirective:daily:v1",
+        "managerialHub_directive_room",
+        "costDirectiveSave_v1_standard",
+        "costDirectiveLatestTelemetryRunID",
+        "costDirectiveRunID",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:sequences:v1",
+        "managerialHub_totalCorrectAnswers",
+        "managerialHub_directive_complete",
+        "managerialHub_costDirective_status",
+        "costDirectiveTelemetry_1789323756117-nimola",
+        "managerialHub_costDirective_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:clientId:v1",
+        "costDirectiveTelemetry_contract:1789323756117-nimola",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:runs:v1",
+        "managerialHub_directive_status",
+        "costDirectiveCurrentMode",
+        "managerialHub_directive_started",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:queue:v1",
+        "costDirectiveUser",
+        "managerialHub_costDirective_bestStreak",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:activeRun:v1:cost-directive",
+        "costDirective:guideIntroSeen",
+        "managerialHub_costDirective_room"
+      ],
+      "sessionStorageKeys": [
+        "costDirective:daily:announced:2026-09-13"
+      ],
+      "telemetry": {
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:sequences:v1": "{\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\":20}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:clientId:v1": "0ea46ec4-fa2c-4631-96e0-356f5094fd9d",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:runs:v1": "{\"cost-directive:1789323756117-nimola\":\"e5c7c626-7f9c-4c60-b290-fb92b332e72d\",\"cost-directive:artifacts:e5c7c626-7f9c-4c60-b290-fb92b332e72d\":{\"compass\":false,\"lens\":false,\"scales\":false},\"cost-directive:mode:e5c7c626-7f9c-4c60-b290-fb92b332e72d\":\"standard\"}",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:queue:v1": "[]",
+        "anonymousTelemetry:build:v2:managerial-directorate-classroom:5e419017cf100671146912f19134ccf4a1f0bdb3196e2f44f9f28d93bf59f5ee:activeRun:v1:cost-directive": "e5c7c626-7f9c-4c60-b290-fb92b332e72d"
+      },
+      "saveKey": "costDirectiveSave_v1_standard",
+      "saved": {
+        "runID": "1789323756117-nimola",
+        "room": 3,
+        "gameMode": "standard",
+        "fields": [
+          "room",
+          "bossHealth",
+          "bossCheckpoint",
+          "correctAnswers",
+          "totalAttempts",
+          "maxStreak",
+          "streak",
+          "username",
+          "runID",
+          "gameMode",
+          "conceptMemory",
+          "masteryState",
+          "adaptiveMode",
+          "tagHistory",
+          "lastTypes",
+          "usedQuestions",
+          "questionHistory",
+          "savedAt",
+          "achievementTracking",
+          "artifacts",
+          "saveSchema",
+          "elapsedMs",
+          "runPhase",
+          "phase15"
+        ]
+      },
+      "receivedCount": 20,
+      "received": [
+        {
+          "eventId": "4f376ca8-0c0e-4e8a-8104-3a7acf34e183",
+          "eventType": "run_manifest",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "14107a20-c873-4948-a327-dc027afc616b",
+          "eventType": "mode_selected",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "c92f2587-957d-4781-aa28-e735865a37a0",
+          "eventType": "run_started",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "e95043a6-967c-492c-9cd6-0ae94681b5e2",
+          "eventType": "question_shown",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "8f910698-5ccb-4df9-b85d-9c199152f483",
+          "eventType": "run_paused",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "b2731590-1e08-4a9d-adac-39160d47dd7c",
+          "eventType": "run_resumed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "0fbedaff-0191-432c-a98f-311af1af3dcc",
+          "eventType": "answer_submitted",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "30421cb3-c0ce-437c-9a52-656faa82c096",
+          "eventType": "answer_evaluated",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "43ce5427-a4f9-4de6-9b0f-ff812470dde1",
+          "eventType": "streak_changed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 1
+        },
+        {
+          "eventId": "c254c804-1be2-4463-9fb2-f6865c08a54b",
+          "eventType": "question_shown",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "3ac5d1fa-eb2b-4519-a053-53e882196549",
+          "eventType": "room_advanced",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "7eca2f6d-5a02-4b3b-b25d-3be5b2b79bfa",
+          "eventType": "question_interrupted",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 0
+        },
+        {
+          "eventId": "cabc4702-f20f-418b-9289-5c0a4faae03d",
+          "eventType": "run_paused",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "840caf58-2d4f-45ee-be6f-1e6212f08ff6",
+          "eventType": "run_resumed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "783399af-eb7e-407c-b2de-85ffe3f824db",
+          "eventType": "run_manifest",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "7562b20c-7919-41ca-9aa3-647339c3afc7",
+          "eventType": "run_resumed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "9fac190f-1246-4c90-b48b-d349f0ce0dbf",
+          "eventType": "question_shown",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": null
+        },
+        {
+          "eventId": "fa9cc0d2-9199-4a2b-abe5-535a7f3f5d7c",
+          "eventType": "answer_submitted",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 0
+        },
+        {
+          "eventId": "fa4a3875-671b-4e2a-b709-52bf11e3ba8c",
+          "eventType": "answer_evaluated",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 0
+        },
+        {
+          "eventId": "2ae25226-300c-472a-8380-a0e0472b54dd",
+          "eventType": "streak_changed",
+          "runId": "e5c7c626-7f9c-4c60-b290-fb92b332e72d",
+          "copyCount": 0
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "enabled save-refresh-Continue: same scope/client/run, new answer, copy reset",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "browser preference persists: false",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "browser preference persists: true",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "different build scope has distinct pseudonym/namespace",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "build OFF cannot be overridden by browser ON",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "malformed collectionKey fails closed",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "unreadable collectionKey fails closed",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "malformed activeRunKey fails closed",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "unreadable activeRunKey fails closed",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-telemetry-poc",
+      "case": "malformed queueKey fails closed",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "enabled save-refresh-Continue: same scope/client/run, new answer, copy reset",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "browser preference persists: false",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "browser preference persists: true",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "different build scope has distinct pseudonym/namespace",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "build OFF cannot be overridden by browser ON",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "malformed collectionKey fails closed",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "unreadable collectionKey fails closed",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "malformed activeRunKey fails closed",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "unreadable activeRunKey fails closed",
+      "status": "PASS"
+    },
+    {
+      "family": "managerial-directorate-classroom",
+      "case": "malformed queueKey fails closed",
+      "status": "PASS"
+    }
+  ],
+  "workerErrors": []
+}

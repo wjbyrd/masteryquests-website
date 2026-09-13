@@ -435,7 +435,7 @@ function createTelemetryContract(get, registry) {
   return {fields,stamp,show,exportRows,wrapShuffle,hash,stable,build,state,resources,installResources};
 }
 
-  const MQContract=createTelemetryContract(globalValue, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.09.10-contract1","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"8cc33eabc193716a392c85525d6a40355f6bbf5c5ee5505d027f12819c73f2f7","games":{"cost-directive":{"engineRevision":"1aa3b13ff3f5f3bc605f8ac7eef313bed970909421b3899cea16d2050205e703","pocEngineRevision":"679e1fcd2623cfafc339613e2e146925f9c301d7d23dd11744c94689218c8d3a","classroomEngineRevision":"1653a909f41321752b2432ee44132151a4569e33dc161d4e7f1e98504faa5cd8","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"8d3922950fac1b8419b034467e005fa5179312535ec912d990091eb8f7fa73e7","pocEngineRevision":"60cca7d21188ee070aed2b3ef12c3157025dc3b68881546df5a671f9608e2626","classroomEngineRevision":"7d5eadf08176e03316f0d3061d8da1f82fd03e9804c033eb8e1a8680aaa8db7a","assetRevision":"b08933cae7a38a40c1ab82a012b5ef2ca45a3271a467be2ea303532e635333fa"},"strategy-desk":{"engineRevision":"8c831eca82af41b0433bbc45e9fa01f503a87deaf124fc2ab94c6dd351e8ab29","pocEngineRevision":"4f4e066f8b564f949bd0bce2dc3005eb3f94db7cca089871b1073478541cb712","classroomEngineRevision":"17ae7e848e1957c82616889cee6c1797a521ba4a56db8775b66c5268d54fff1d","assetRevision":"fee2394b66f0bccdd4ad9c5289d9ea6e09e0cf58b56987b59c510c9bf738b6cf"},"agency-protocol":{"engineRevision":"f5fad05193dc16d79007ee8733fbdcbf62b266f091aac11231c89bea3fe1b632","pocEngineRevision":"31e5106ce30c8a32a3d2229a3f5bbc1ce1597e26fd6697786081302372bba022","classroomEngineRevision":"ce65745dfa3b1966149d4c1bdb8c5d476b934c4dd07a9d3d1d2d3b6456b13169","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"e09f9b640310dbb3b3962007f10e9efae1f63243a4d6b15cd1f59273cf07503e","assetRevision":"cbeeea56e054a29eb211219b581e7e08a7485e65dfbfe0a971105ce2192ec716"}}});
+  const MQContract=createTelemetryContract(globalValue, /* RELEASE REGISTRY */ {"contractID":"mq-measurement/1","measurementRevision":"mq-tracker-2026.09.10-contract1","localSchema":"mq-local-csv/1","anonymousEnvelope":3,"manifestSchema":"mq-run-manifest/1","trackerSourceRevision":"05b10a6c8973b04225743e996fe75af1c27ccdb87e742b2db0012dabe26a13f3","games":{"cost-directive":{"engineRevision":"1aa3b13ff3f5f3bc605f8ac7eef313bed970909421b3899cea16d2050205e703","pocEngineRevision":"679e1fcd2623cfafc339613e2e146925f9c301d7d23dd11744c94689218c8d3a","classroomEngineRevision":"1653a909f41321752b2432ee44132151a4569e33dc161d4e7f1e98504faa5cd8","assetRevision":"e84ae7d58d4f614ec045fb1b8f1327e9acb14060321b757e92ee42277369eb71"},"market-signal":{"engineRevision":"8d3922950fac1b8419b034467e005fa5179312535ec912d990091eb8f7fa73e7","pocEngineRevision":"60cca7d21188ee070aed2b3ef12c3157025dc3b68881546df5a671f9608e2626","classroomEngineRevision":"7d5eadf08176e03316f0d3061d8da1f82fd03e9804c033eb8e1a8680aaa8db7a","assetRevision":"b08933cae7a38a40c1ab82a012b5ef2ca45a3271a467be2ea303532e635333fa"},"strategy-desk":{"engineRevision":"8c831eca82af41b0433bbc45e9fa01f503a87deaf124fc2ab94c6dd351e8ab29","pocEngineRevision":"4f4e066f8b564f949bd0bce2dc3005eb3f94db7cca089871b1073478541cb712","classroomEngineRevision":"17ae7e848e1957c82616889cee6c1797a521ba4a56db8775b66c5268d54fff1d","assetRevision":"fee2394b66f0bccdd4ad9c5289d9ea6e09e0cf58b56987b59c510c9bf738b6cf"},"agency-protocol":{"engineRevision":"f5fad05193dc16d79007ee8733fbdcbf62b266f091aac11231c89bea3fe1b632","pocEngineRevision":"31e5106ce30c8a32a3d2229a3f5bbc1ce1597e26fd6697786081302372bba022","classroomEngineRevision":"ce65745dfa3b1966149d4c1bdb8c5d476b934c4dd07a9d3d1d2d3b6456b13169","assetRevision":"90b45185b2f7b58e87bb619618a0c7642860be1748eb45ef768820db614faec8"},"composer":{"engineRevision":"e09f9b640310dbb3b3962007f10e9efae1f63243a4d6b15cd1f59273cf07503e","assetRevision":"cbeeea56e054a29eb211219b581e7e08a7485e65dfbfe0a971105ce2192ec716"}}});
   // END MEASUREMENT CONTRACT
 
   const BEHAVIOR_FIELDS = ["activeResponseTimeMs","hiddenTimeMs","tabSwitchCount","timeAfterReturnMs","focusLossCount","unfocusedTimeMs","timeAfterFocusMs","selectionCount","maxSelectedChars","questionSelected","answersSelected","copyCount","questionCopied","answersCopied","lastCopyElapsedMs","timeCopyToHideMs","timeCopyToBlurMs"];
@@ -508,6 +508,17 @@ function createTelemetryContract(get, registry) {
     try { safeStorageSet(key, JSON.stringify(value)); } catch (_) { state.quality.storageFailures++; }
   }
 
+  function readActiveRunId(key) {
+    // createRun/resumeRun persist a plain UUID, not a JSON string.
+    try {
+      const value = localStorage['getItem'](key);
+      if (value === null) return "";
+      if (/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(value)) return value;
+    } catch (_) {}
+    memoryRemoteDisabled = true;
+    return "";
+  }
+
   // New transport state never reads or rewrites the old family-scoped queue/UUID.
   const BUILD_SCOPE = (()=>{try{const config=globalValue("FACULTY_COMPOSITION_CONFIG",{});if(IS_COMPOSER&&!/^[a-f0-9]{64}$/.test(config.compositionFingerprint))return "";const value=IS_COMPOSER?MQContract.hash([config.compositionFingerprint,MQContract.build().buildRevision]):MQContract.build().buildRevision;return /^[a-f0-9]{64}$/.test(value)?value:"";}catch(_){return "";}})();
   const STORAGE_PREFIX = "anonymousTelemetry:build:v2:" + BUILD_ID + ":" + BUILD_SCOPE + ":";
@@ -527,7 +538,7 @@ function createTelemetryContract(get, registry) {
     lastMeasurement:null,
     runs: readJSON(RUNS_KEY, {}),
     sequences: readJSON(SEQUENCES_KEY, {}),
-    activeRunId: readJSON(ACTIVE_RUN_KEY, "") || "",
+    activeRunId: readActiveRunId(ACTIVE_RUN_KEY),
     sourceRunId: "",
     flushing: false,
     retryAttempt: 0,

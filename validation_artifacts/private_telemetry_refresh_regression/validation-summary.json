@@ -1,0 +1,116 @@
+{
+  "Private parity browser": {
+    "passed": 29,
+    "failed": 0
+  },
+  "Deterministic parity": {
+    "passed": 16,
+    "failed": 0
+  },
+  "Readiness": {
+    "passed": 27,
+    "failed": 0
+  },
+  "Governance": {
+    "passed": 14,
+    "failed": 0
+  },
+  "Scheduled retention": {
+    "passed": 11,
+    "failed": 0
+  },
+  "Measurement contract": {
+    "passed": 16,
+    "failed": 0
+  },
+  "Contract browser": {
+    "passed": 17,
+    "failed": 0
+  },
+  "Classroom access": {
+    "passed": 27,
+    "failed": 0
+  },
+  "Published Managerial": {
+    "passed": 103,
+    "failed": 0,
+    "remoteRequests": 0
+  },
+  "Composer": {
+    "runners": 27,
+    "failed": 0
+  },
+  "UX": {
+    "status": "PASS"
+  },
+  "baseline": {
+    "working": [
+      11,
+      18
+    ],
+    "HEAD": [
+      11,
+      18
+    ],
+    "identicalFailureNames": [
+      "managerial-directorate-telemetry-poc save/refresh/Continue resets timing state",
+      "managerial-directorate-telemetry-poc timed response instrumentation",
+      "managerial-directorate-telemetry-poc exam response instrumentation",
+      "managerial-directorate-telemetry-poc quiz response instrumentation",
+      "managerial-directorate-telemetry-poc unlimited response instrumentation",
+      "managerial-directorate-telemetry-poc legendary response instrumentation",
+      "managerial-directorate-telemetry-poc score response instrumentation",
+      "managerial-directorate-telemetry-poc fadingFortune response instrumentation",
+      "managerial-directorate-telemetry-poc riskReward response instrumentation",
+      "managerial-directorate-classroom save/refresh/Continue resets timing state",
+      "managerial-directorate-classroom timed response instrumentation",
+      "managerial-directorate-classroom exam response instrumentation",
+      "managerial-directorate-classroom quiz response instrumentation",
+      "managerial-directorate-classroom unlimited response instrumentation",
+      "managerial-directorate-classroom legendary response instrumentation",
+      "managerial-directorate-classroom score response instrumentation",
+      "managerial-directorate-classroom fadingFortune response instrumentation",
+      "managerial-directorate-classroom riskReward response instrumentation"
+    ]
+  },
+  "criticalBrowserChecks": {
+    "passed": 20
+  },
+  "readerChecks": {
+    "status": "PASS",
+    "cases": 33,
+    "results": [
+      {
+        "source": "private POC",
+        "cases": 11,
+        "status": "PASS"
+      },
+      {
+        "source": "private classroom",
+        "cases": 11,
+        "status": "PASS"
+      },
+      {
+        "source": "generated Composer adapter",
+        "cases": 11,
+        "status": "PASS"
+      }
+    ]
+  },
+  "uxSourceHashesUnchanged": {
+    "build/faculty-build-composer/index.html": "51aa5ecab035fa8102e11045895f1936162305c186597d1f43fe85872d2ad518",
+    "build/faculty-build-composer/composer.js": "eee2281ad6c162da4f71a5bd55e8fe5f555960d81466e32aaa32bde8d37b1e4a",
+    "build/faculty-build-composer/composer-core.js": "c9d6bdddee56847640f215cbd092b5e6f4f06891ce3bac64447eadae481bbfc1",
+    "build/faculty-build-composer/composer.css": "e6e0e88f7fc52353c0547e3b10b42af0a09d1aa997e8b8427e21ea759fa329fc",
+    "privacy/index.html": "b2d108913cbd93e53f5b5cbdb5324b2f87f2ca992e4e35fb00795d3ffe685419",
+    "how-to/composer/index.html": "5add38d5b81df101f033dcd2b36c42321dc82cd7ae3b33c8924514d0f919f540",
+    "how-to/index.html": "e00ea6e9f1ec84a73fed1cda46e7efb7eb03146cc955c9e7c0e70dce83132b23",
+    "how-to/responsible-telemetry-use/index.html": "45a5d21e1ef796f7b13f3ddd2b20b9d5cc5970d38adfaa4e992aa1aaf4a35097",
+    "how-to/telemetry-data-dictionary/index.html": "cef74cb37e1bec8cfab02e843e5364978971436dd04cff2e2b2d41f5c17beffe",
+    "audit_tools/telemetry_governance/render.mjs": "56e7b08968806d993e82b6ef96ae6bf79c18d2fe394138e7b173484ca8a937f3",
+    "audit_tools/managerial_classroom/build.mjs": "e6cbba622e6dc6999fe887fad1b2a3c8601da0e9f2d0ff502abfb04826e3a553"
+  },
+  "head": "56177e06c24edbab477a6ff57cdabe6516f6429f",
+  "branch": "main",
+  "initialStatus": "clean"
+}
