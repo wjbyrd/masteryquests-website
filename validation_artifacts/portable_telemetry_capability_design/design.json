@@ -1,0 +1,1119 @@
+{
+  "format": "mq-portable-telemetry-capability-design/1",
+  "audit_date": "2026-09-14",
+  "repository": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "report": "FINAL_REPORT_portable_telemetry_capability_design.md",
+  "baseline": {
+    "branch": "main",
+    "head": "070019ca57c72e503498184b4c201ad9ddef7ca4",
+    "git_status_short": "",
+    "source_mapped": true,
+    "production_state_basis": "user-supplied verified production path plus local source; no remote production checks"
+  },
+  "recommendation": {
+    "implementation": "GO for separate staged implementation",
+    "production_activation": "NO-GO until proof gates and release decisions",
+    "feature_implemented": false,
+    "deployed": false,
+    "database_changed": false,
+    "contracts_changed": false
+  },
+  "locked": {
+    "measurement": "mq-measurement/1",
+    "governance": "mq-governance/2",
+    "disclosure": "mq-disclosure/2",
+    "anonymous_envelope": 3,
+    "retention_days": 730,
+    "retention_unit": "whole-run",
+    "retention_clock": "latest stored server receipt",
+    "retention_cron": "17 4 * * *",
+    "faculty_collection_default": false,
+    "student_download": "local and independent",
+    "admin_token_separate": true,
+    "maintenance_token_separate": true,
+    "faculty_identity_system": false,
+    "public_polished_games": "no capability enablement; pre-existing National Engine legacy transport exception disclosed"
+  },
+  "capability": {
+    "type": "opaque_random",
+    "random_bits": 256,
+    "wire_format": "mqic1_ + 43 canonical unpadded base64url characters",
+    "hash": "SHA-256 of full canonical ASCII token",
+    "stored_hash_encoding": "64 lowercase hex",
+    "raw_return": "once after successful commit",
+    "publicly_inspectable": true,
+    "authority": [
+      "submit anonymous events within exact authorized build tuple"
+    ],
+    "forbidden_authority": [
+      "read",
+      "list",
+      "reconstruct",
+      "export",
+      "delete",
+      "maintenance",
+      "mint or renew capabilities",
+      "identity authentication",
+      "cross-build writes"
+    ]
+  },
+  "proposed_endpoints": [
+    {
+      "method": "POST",
+      "path": "/v1/build-capabilities",
+      "authority": "Independent Turnstile and issuance quotas; no authority from ingest credential",
+      "body_limit_bytes": 8192,
+      "response": 201
+    },
+    {
+      "method": "POST",
+      "path": "/v1/events",
+      "authority": "X-MQ-Ingest-Capability plus exact scope and existing payload validation",
+      "legacy": "explicit exact tuple/origin/time inventory only",
+      "response": 202
+    },
+    {
+      "method": "GET",
+      "path": "/v1/admin/build-capabilities",
+      "authority": "ADMIN_TOKEN",
+      "excludes": [
+        "raw capability",
+        "hash"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/v1/admin/build-capabilities/revoke",
+      "authority": "ADMIN_TOKEN plus distinct MAINTENANCE_TOKEN"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/admin/build-telemetry/block",
+      "authority": "ADMIN_TOKEN plus distinct MAINTENANCE_TOKEN"
+    },
+    {
+      "method": "POST",
+      "path": "/v1/admin/build-telemetry/unblock",
+      "authority": "ADMIN_TOKEN plus distinct MAINTENANCE_TOKEN"
+    }
+  ],
+  "endpoint_prefix": "https://masteryquests.org/api/anonymous-telemetry-poc",
+  "proposed_tables": [
+    {
+      "name": "telemetry_build_policies",
+      "fields": [
+        {
+          "name": "game_id",
+          "type": "TEXT",
+          "declaration": "game_id TEXT NOT NULL CHECK(length(game_id) BETWEEN 1 AND 100),"
+        },
+        {
+          "name": "build_id",
+          "type": "TEXT",
+          "declaration": "build_id TEXT NOT NULL CHECK(length(build_id) BETWEEN 1 AND 100),"
+        },
+        {
+          "name": "created_at",
+          "type": "INTEGER",
+          "declaration": "created_at INTEGER NOT NULL CHECK(created_at > 0),"
+        },
+        {
+          "name": "blocked_at",
+          "type": "INTEGER",
+          "declaration": "blocked_at INTEGER CHECK(blocked_at IS NULL OR blocked_at >= created_at),"
+        },
+        {
+          "name": "accepted_event_count",
+          "type": "INTEGER",
+          "declaration": "accepted_event_count INTEGER NOT NULL DEFAULT 0 CHECK(accepted_event_count >= 0),"
+        },
+        {
+          "name": "accepted_bytes",
+          "type": "INTEGER",
+          "declaration": "accepted_bytes INTEGER NOT NULL DEFAULT 0 CHECK(accepted_bytes >= 0),"
+        }
+      ]
+    },
+    {
+      "name": "telemetry_build_capabilities",
+      "fields": [
+        {
+          "name": "capability_id",
+          "type": "TEXT",
+          "declaration": "capability_id TEXT PRIMARY KEY NOT NULL CHECK(length(capability_id) = 36),"
+        },
+        {
+          "name": "capability_hash",
+          "type": "TEXT",
+          "declaration": "capability_hash TEXT NOT NULL UNIQUE"
+        },
+        {
+          "name": "game_id",
+          "type": "TEXT",
+          "declaration": "game_id TEXT NOT NULL,"
+        },
+        {
+          "name": "build_id",
+          "type": "TEXT",
+          "declaration": "build_id TEXT NOT NULL,"
+        },
+        {
+          "name": "build_version",
+          "type": "TEXT",
+          "declaration": "build_version TEXT NOT NULL"
+        },
+        {
+          "name": "schema_version",
+          "type": "INTEGER",
+          "declaration": "schema_version INTEGER NOT NULL CHECK(schema_version = 3),"
+        },
+        {
+          "name": "issued_at",
+          "type": "INTEGER",
+          "declaration": "issued_at INTEGER NOT NULL CHECK(issued_at > 0),"
+        },
+        {
+          "name": "expires_at",
+          "type": "INTEGER",
+          "declaration": "expires_at INTEGER NOT NULL CHECK(expires_at > issued_at),"
+        },
+        {
+          "name": "revoked_at",
+          "type": "INTEGER",
+          "declaration": "revoked_at INTEGER CHECK(revoked_at IS NULL OR revoked_at >= issued_at),"
+        },
+        {
+          "name": "issuance_request_id",
+          "type": "TEXT",
+          "declaration": "issuance_request_id TEXT NOT NULL UNIQUE CHECK(length(issuance_request_id) = 36),"
+        },
+        {
+          "name": "activation_digest",
+          "type": "TEXT",
+          "declaration": "activation_digest TEXT NOT NULL"
+        },
+        {
+          "name": "accepted_request_count",
+          "type": "INTEGER",
+          "declaration": "accepted_request_count INTEGER NOT NULL DEFAULT 0 CHECK(accepted_request_count >= 0),"
+        },
+        {
+          "name": "accepted_event_count",
+          "type": "INTEGER",
+          "declaration": "accepted_event_count INTEGER NOT NULL DEFAULT 0 CHECK(accepted_event_count >= 0),"
+        },
+        {
+          "name": "accepted_bytes",
+          "type": "INTEGER",
+          "declaration": "accepted_bytes INTEGER NOT NULL DEFAULT 0 CHECK(accepted_bytes >= 0),"
+        },
+        {
+          "name": "last_used_at",
+          "type": "INTEGER,",
+          "declaration": "last_used_at INTEGER,"
+        }
+      ]
+    },
+    {
+      "name": "telemetry_scope_windows",
+      "fields": [
+        {
+          "name": "scope_type",
+          "type": "TEXT",
+          "declaration": "scope_type TEXT NOT NULL CHECK(scope_type IN ("
+        },
+        {
+          "name": "scope_key",
+          "type": "TEXT",
+          "declaration": "scope_key TEXT NOT NULL CHECK(length(scope_key) BETWEEN 1 AND 160),"
+        },
+        {
+          "name": "window_seconds",
+          "type": "INTEGER",
+          "declaration": "window_seconds INTEGER NOT NULL CHECK(window_seconds IN (0, 60, 3600, 86400)),"
+        },
+        {
+          "name": "window_start",
+          "type": "INTEGER",
+          "declaration": "window_start INTEGER NOT NULL CHECK(window_start >= 0),"
+        },
+        {
+          "name": "request_count",
+          "type": "INTEGER",
+          "declaration": "request_count INTEGER NOT NULL DEFAULT 0 CHECK(request_count >= 0),"
+        },
+        {
+          "name": "event_count",
+          "type": "INTEGER",
+          "declaration": "event_count INTEGER NOT NULL DEFAULT 0 CHECK(event_count >= 0),"
+        },
+        {
+          "name": "byte_count",
+          "type": "INTEGER",
+          "declaration": "byte_count INTEGER NOT NULL DEFAULT 0 CHECK(byte_count >= 0),"
+        },
+        {
+          "name": "expires_at",
+          "type": "INTEGER,",
+          "declaration": "expires_at INTEGER,"
+        }
+      ]
+    }
+  ],
+  "existing_table_additions": {
+    "telemetry_ingest_batches": [
+      {
+        "name": "capability_id",
+        "type": "TEXT",
+        "nullable": true
+      },
+      {
+        "name": "admission_valid",
+        "type": "INTEGER",
+        "default": 1,
+        "check": "admission_valid = 1"
+      }
+    ]
+  },
+  "migration": {
+    "proposed_path": "server/anonymous-telemetry-poc/migrations/0003_build_ingest_capabilities.sql",
+    "created": false,
+    "applied": false,
+    "sql_location": "Report section 9",
+    "requires": [
+      "Historical JSON/index validation",
+      "Receipt guard and issuance guard transactional proof",
+      "No cascade to telemetry data"
+    ]
+  },
+  "binding_rules": {
+    "exact": [
+      "game_id",
+      "build_id",
+      "build_version",
+      "schema_version"
+    ],
+    "schema_version": 3,
+    "initial_game_id": "faculty-composer",
+    "build_id_pattern": "^composer-[a-f0-9]{64}$",
+    "build_version": "existing MQContract.build().buildRevision; 64 lowercase hex",
+    "singular_capability_manifest_id": false,
+    "manifest_reason": "run manifests vary by mode and runtime parameters",
+    "manifest_rules": [
+      "Resolve same-run same-tuple run_manifest from batch or accepted events",
+      "Existing validateManifest including configuration and full manifest hashes",
+      "manifest.buildRevision equals capability.build_version and event.buildVersion",
+      "Hash manifest excluding buildRevision, mode, modeParameters equals capability.build_version",
+      "event.mode equals manifest.mode and is supported"
+    ],
+    "null_manifest": "Narrow unresolved empty-context lifecycle list only; measured questions/resources reject",
+    "run_owner": [
+      "run_id",
+      "game_id",
+      "build_id",
+      "build_version",
+      "anonymous_client_id"
+    ],
+    "cross_scope_duplicates": "reject",
+    "unchanged_payload_envelope": true
+  },
+  "capability_lifetime": {
+    "days": 365,
+    "seconds": 31536000,
+    "clock": "trusted server/database admission time",
+    "boundary": "reject now >= expires_at",
+    "separate_from_retention": true,
+    "automatic_renewal": false,
+    "regeneration": "fresh independently gated issue; does not reset build quota"
+  },
+  "revocation": {
+    "single_token": true,
+    "whole_build_across_revisions": true,
+    "permanent_parent_block": true,
+    "revived_old_tokens": false,
+    "positive_auth_cache": false,
+    "effect": "no writes authorized after committed revoke/block",
+    "existing_telemetry_deleted": false
+  },
+  "cors_strategy": {
+    "ingest": "validated dynamic HTTPS Origin echo; Vary; no credentials",
+    "activation": "exact hosted Composer origins plus independently verified challenge",
+    "admin": "no broad CORS change",
+    "https_arbitrary": true,
+    "null_file": false,
+    "http_localhost": "explicit staging allowlist only",
+    "no_origin_ingest": "capability required",
+    "preflight_methods": [
+      "POST",
+      "OPTIONS"
+    ],
+    "preflight_headers": [
+      "content-type",
+      "x-telemetry-phase",
+      "x-mq-ingest-capability"
+    ],
+    "max_age_seconds": 600,
+    "expose_headers": [
+      "Retry-After"
+    ],
+    "origin_is_authentication": false,
+    "referrer_policy": "no-referrer",
+    "redirect_policy": "error",
+    "lms_limit": "opaque sandbox origin and CSP may prevent remote collection"
+  },
+  "rate_limit_strategy": {
+    "all_new_numbers_tunable": true,
+    "current_client_events_minute": 300,
+    "max_events_batch": 50,
+    "max_request_bytes": 131072,
+    "client_batch_default": 25,
+    "issuance": {
+      "edge_ip_attempts_minute": 5,
+      "edge_ip_attempts_hour": 30,
+      "browser_cooldown_seconds": 60,
+      "successful_build_day": 10,
+      "max_live_per_tuple": 3,
+      "successful_global_hour": 100,
+      "successful_global_day": 500
+    },
+    "ingest": {
+      "edge_ip_requests_minute": 6000,
+      "edge_capability_ip_requests_minute": 3000,
+      "capability_requests_minute": 3000,
+      "capability_submitted_events_minute": 60000,
+      "build_submitted_events_minute": 90000,
+      "global_requests_minute": 10000,
+      "global_submitted_events_minute": 180000
+    },
+    "accepted_budgets": {
+      "capability_events": 2000000,
+      "capability_bytes": 536870912,
+      "build_events": 5000000,
+      "build_bytes": 1073741824,
+      "initial_global_capability_bytes": 2147483648
+    },
+    "d1_size": {
+      "alert_percent": 60,
+      "stop_percent": 70,
+      "basis": "verified actual usable capacity; payload bytes are not disk bytes"
+    },
+    "hard_counters": "D1 atomic receipt guard + mutations; edge limiter is permissive per-location",
+    "ip_storage": "transient HMAC edge key only; no application IP/hostname rows"
+  },
+  "composer_flow": {
+    "activation_point": "actual Generate after frozen identity and local checks",
+    "preview_issues_capabilities": false,
+    "off_network_requests": 0,
+    "failure": "block ON download; explicit OFF alternative",
+    "recipe_contains_capability": false,
+    "descriptor": "separate MQ_INGEST_ACTIVATION, excluded from recipe/measurement hashes",
+    "response_loss": "same attempt 409 no raw recovery; at most one fresh bounded replacement with new challenge"
+  },
+  "game_failure": {
+    "remote": "fail closed; terminal descriptor suspension; bounded retry for transient faults",
+    "local_play": true,
+    "local_measurement": true,
+    "download_game_data": true,
+    "opt_out_preserved_across_rotation": true
+  },
+  "backward_compatibility": {
+    "current_beta_untouched": true,
+    "server_owned_legacy_inventory": true,
+    "grace_days_recommended": 90,
+    "grace_start": null,
+    "permanent_grandfathering": false,
+    "header_present_fallback": false,
+    "no_origin_legacy_after_grace_flag": false,
+    "rollback_requires_capability_aware_worker": true
+  },
+  "privacy": {
+    "event_data_and_destination_unchanged": true,
+    "new_activation_and_challenge_processing": true,
+    "raw_token_in_events": false,
+    "policy_versions_recommended_unchanged": true,
+    "metadata_lifecycle_owner_review": true,
+    "public_exception": {
+      "paths": [
+        "play/macro-command-system/national-engine/index.html",
+        "play/macro-command-system/national-engine/nationalengine.html"
+      ],
+      "legacy_transport": true,
+      "modified": false,
+      "universal_zero_remote_certified": false
+    }
+  },
+  "observability": [
+    "issued/active/expired/revoked/blocked aggregates",
+    "validation/mismatch/rate failures without raw inputs",
+    "accepted event/request/byte counters",
+    "D1 latency/errors/size and retention status",
+    "coarse host categories only; no retained hostname/IP/referrer"
+  ],
+  "migration_stages": [
+    {
+      "id": 0,
+      "name": "Review and isolate",
+      "rollback": "No changes",
+      "risk": "none",
+      "evidence": "Owner decisions, exact legacy inventory, provider metadata"
+    },
+    {
+      "id": 1,
+      "name": "Unused server support",
+      "rollback": "Flags OFF; retain additive empty tables",
+      "risk": "low staging; index load risk",
+      "evidence": "Identity parity, transactional guard proof, DDL/index checks, flags-off baseline"
+    },
+    {
+      "id": 2,
+      "name": "Dual-mode validation",
+      "rollback": "Disable new admission; retain safe legacy inventory and capability-aware validator",
+      "risk": "medium",
+      "evidence": "Current beta preserved; no fallback; role separation; retention"
+    },
+    {
+      "id": 3,
+      "name": "Private Composer beta",
+      "rollback": "Disable issuance/revert Composer; keep safe existing-capability validation",
+      "risk": "medium",
+      "evidence": "ON/OFF/failure/recipe/local CSV/identity/challenge/redaction"
+    },
+    {
+      "id": 4,
+      "name": "Independent HTTPS host proof",
+      "rollback": "Revoke beta capability or suspend new ingest",
+      "risk": "medium bounded synthetic",
+      "evidence": "Cross-host preflight, 202 and verified D1 run/events/manifests"
+    },
+    {
+      "id": 5,
+      "name": "Require for new builds",
+      "rollback": "Stop issuance/new downloads; retain validator or fail closed",
+      "risk": "medium-high",
+      "evidence": "Class/NAT load, storage budget, disclosure and public-scope checks"
+    },
+    {
+      "id": 6,
+      "name": "Deprecate legacy",
+      "rollback": "Only explicit short reviewed tuple extension",
+      "risk": "medium",
+      "evidence": "Announced grace, regeneration, no-header rejection, local play/download"
+    }
+  ],
+  "files_likely_affected": [
+    {
+      "path": "server/anonymous-telemetry-poc/worker.mjs",
+      "responsibility": "Routing and ingest/admin SQL",
+      "proposed_change": "Route-specific capability, legacy, CORS and atomic admission",
+      "kind": "canonical",
+      "risk": "high"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/capabilities.mjs",
+      "responsibility": "New",
+      "proposed_change": "Crypto, issuance, lifecycle, revocation",
+      "kind": "proposed_new",
+      "risk": "high"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/capability-admission.mjs",
+      "responsibility": "New",
+      "proposed_change": "Binding, run ownership, manifests and transactional guards/quotas",
+      "kind": "proposed_new",
+      "risk": "high"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/migrations/0003_build_ingest_capabilities.sql",
+      "responsibility": "New",
+      "proposed_change": "Additive DDL, proposed only in report",
+      "kind": "proposed_new",
+      "risk": "high"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/legacy-builds.json",
+      "responsibility": "New",
+      "proposed_change": "Owner-reviewed exact legacy tuple/origin/sunset inventory",
+      "kind": "proposed_new",
+      "risk": "high"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/wrangler.jsonc",
+      "responsibility": "Worker configuration",
+      "proposed_change": "Feature flags and quotas; preserve binding, DB, policy and cron",
+      "kind": "canonical",
+      "risk": "high"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/transport-safety.mjs",
+      "responsibility": "Safe limit config and CSV",
+      "proposed_change": "Bound new limits; keep CSV behavior",
+      "kind": "canonical",
+      "risk": "medium"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/measurement-contract.mjs",
+      "responsibility": "Manifest validator",
+      "proposed_change": "Reuse without semantic changes; export only if needed",
+      "kind": "conditional",
+      "risk": "medium"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/telemetry-core.mjs",
+      "responsibility": "Envelope validator",
+      "proposed_change": "Prefer unchanged; bounded parsing safety only if required",
+      "kind": "conditional",
+      "risk": "high"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/README.md",
+      "responsibility": "Architecture/operator guide",
+      "proposed_change": "Document capability scope and residual risks",
+      "kind": "canonical",
+      "risk": "low"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/PRODUCTION_ACTIVATION_RUNBOOK.md",
+      "responsibility": "Release runbook",
+      "proposed_change": "Staged capability rollout, rollback and incident recovery",
+      "kind": "canonical",
+      "risk": "medium"
+    },
+    {
+      "path": "build/faculty-build-composer/composer.js",
+      "responsibility": "Faculty UI and download",
+      "proposed_change": "Generate-only activation with frozen identity and explicit failure",
+      "kind": "canonical",
+      "risk": "high"
+    },
+    {
+      "path": "build/faculty-build-composer/composer-core.js",
+      "responsibility": "Recipes/config/HTML",
+      "proposed_change": "Pure identity preparation and separate descriptor embedding",
+      "kind": "canonical",
+      "risk": "high"
+    },
+    {
+      "path": "build/faculty-build-composer/telemetry-activation.js",
+      "responsibility": "New",
+      "proposed_change": "Activation client and deferred challenge",
+      "kind": "proposed_new",
+      "risk": "medium"
+    },
+    {
+      "path": "build/faculty-build-composer/telemetry-identity-source.js",
+      "responsibility": "New if needed",
+      "proposed_change": "Generated inert maintained helper/registry wrapper",
+      "kind": "proposed_generated",
+      "risk": "high"
+    },
+    {
+      "path": "build/faculty-build-composer/index.html",
+      "responsibility": "UI/disclosure/scripts",
+      "proposed_change": "Activation status, accurate footer and deferred runtime loading",
+      "kind": "canonical",
+      "risk": "medium"
+    },
+    {
+      "path": "build/faculty-build-composer/composer.css",
+      "responsibility": "UI style",
+      "proposed_change": "Small accessible status additions if needed",
+      "kind": "conditional",
+      "risk": "low"
+    },
+    {
+      "path": "play/managerial-directorate-telemetry-poc/telemetry-client.js",
+      "responsibility": "Maintained transport",
+      "proposed_change": "Capability header/state/manifest retries, isolated from gameplay",
+      "kind": "canonical_with_generated_block",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/composer-transport.mjs",
+      "responsibility": "Composer adapter generator",
+      "proposed_change": "Derive new capability transport with fixed endpoint",
+      "kind": "canonical",
+      "risk": "high"
+    },
+    {
+      "path": "build/faculty-build-composer/anonymous-telemetry-source.js",
+      "responsibility": "Encoded adapter",
+      "proposed_change": "Regenerate only",
+      "kind": "generated",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_contract/generate.mjs",
+      "responsibility": "Provenance generator",
+      "proposed_change": "Generate identity wrapper and coordinated derived artifacts",
+      "kind": "canonical",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_contract/registry.json",
+      "responsibility": "Provenance registry",
+      "proposed_change": "Regenerate from source changes",
+      "kind": "generated",
+      "risk": "medium"
+    },
+    {
+      "path": "audit_tools/telemetry_contract/hash.mjs",
+      "responsibility": "Hash helper",
+      "proposed_change": "Regenerate if required; unchanged hash semantics",
+      "kind": "generated",
+      "risk": "medium"
+    },
+    {
+      "path": "build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html",
+      "responsibility": "Game template",
+      "proposed_change": "Generated provenance only; preserve local measurements",
+      "kind": "canonical_with_generated_block",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/managerial_telemetry_parity/sync-composer-behavior.mjs",
+      "responsibility": "Behavior generator",
+      "proposed_change": "Usually check only; preserve boundaries",
+      "kind": "conditional",
+      "risk": "medium"
+    },
+    {
+      "path": "audit_tools/managerial_classroom/build.mjs",
+      "responsibility": "Private builder",
+      "proposed_change": "Explicit future private-family activation input; default OFF",
+      "kind": "later_canonical",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/anonymous_telemetry_poc/create_private_build.mjs",
+      "responsibility": "Private builder",
+      "proposed_change": "Explicit future private-family activation input; default OFF",
+      "kind": "later_canonical",
+      "risk": "high"
+    },
+    {
+      "path": "play/managerial-directorate-classroom/telemetry-client.js",
+      "responsibility": "Classroom adapter",
+      "proposed_change": "Regenerate after private-family approval",
+      "kind": "later_generated",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/published_managerial_parity/sync.mjs",
+      "responsibility": "Public adapter generator",
+      "proposed_change": "Check local-only isolation; no new network authorization",
+      "kind": "conditional",
+      "risk": "high"
+    },
+    {
+      "path": "play/managerial-intelligence-directorate/local-telemetry.js",
+      "responsibility": "Public local adapter",
+      "proposed_change": "Keep local-only; conditional generated provenance",
+      "kind": "conditional_generated",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/capabilities-check.mjs",
+      "responsibility": "New tests",
+      "proposed_change": "Deterministic issuance/admission/transaction/CORS tests",
+      "kind": "proposed_new",
+      "risk": "medium"
+    },
+    {
+      "path": "audit_tools/public_site_publication/build-dist.mjs",
+      "responsibility": "Explicit publication builder",
+      "proposed_change": "Allowlist new runtime JS only",
+      "kind": "canonical",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/render.mjs",
+      "responsibility": "Disclosure generator",
+      "proposed_change": "Synchronize factual copy with locked semantics",
+      "kind": "canonical",
+      "risk": "medium"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/admin.mjs",
+      "responsibility": "Operator CLI",
+      "proposed_change": "Restricted list/revoke/block and no token logging",
+      "kind": "canonical",
+      "risk": "medium"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/check.mjs",
+      "responsibility": "Governance/transport regression",
+      "proposed_change": "Capability and continuity fixtures; preserve retention",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/test-fixture.mjs",
+      "responsibility": "Governance/transport regression",
+      "proposed_change": "Capability and continuity fixtures; preserve retention",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/readiness-remediation.mjs",
+      "responsibility": "Governance/transport regression",
+      "proposed_change": "Capability and continuity fixtures; preserve retention",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/browser.mjs",
+      "responsibility": "Governance/transport regression",
+      "proposed_change": "Capability and continuity fixtures; preserve retention",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/private-refresh-check.mjs",
+      "responsibility": "Governance/transport regression",
+      "proposed_change": "Capability and continuity fixtures; preserve retention",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/scheduled-check.mjs",
+      "responsibility": "Governance/transport regression",
+      "proposed_change": "Capability and continuity fixtures; preserve retention",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs",
+      "responsibility": "Backend regression",
+      "proposed_change": "Concurrency/ownership and explicit legacy inventory",
+      "kind": "canonical_test",
+      "risk": "medium"
+    },
+    {
+      "path": "audit_tools/anonymous_telemetry_poc/run_regressions.mjs",
+      "responsibility": "Backend regression",
+      "proposed_change": "Concurrency/ownership and explicit legacy inventory",
+      "kind": "canonical_test",
+      "risk": "medium"
+    },
+    {
+      "path": "build/faculty-build-composer/tests/composer-test-helpers.js",
+      "responsibility": "Composer regression",
+      "proposed_change": "Mock activation and verify identity/recipe/failure",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "build/faculty-build-composer/tests/composer-integrity-contracts.js",
+      "responsibility": "Composer regression",
+      "proposed_change": "Mock activation and verify identity/recipe/failure",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "build/faculty-build-composer/tests/composer-audit-contracts.js",
+      "responsibility": "Composer regression",
+      "proposed_change": "Mock activation and verify identity/recipe/failure",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "build/faculty-build-composer/tests/verify_composer_regression_contracts.cjs",
+      "responsibility": "Composer regression",
+      "proposed_change": "Mock activation and verify identity/recipe/failure",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "build/faculty-build-composer/tests/run_generated_telemetry_smoke.js",
+      "responsibility": "Composer regression",
+      "proposed_change": "Mock activation and verify identity/recipe/failure",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_contract/check.mjs",
+      "responsibility": "Contract regression",
+      "proposed_change": "Prove unchanged semantics and descriptor exclusion",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_contract/browser.mjs",
+      "responsibility": "Contract regression",
+      "proposed_change": "Prove unchanged semantics and descriptor exclusion",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "audit_tools/telemetry_contract/scope.mjs",
+      "responsibility": "Contract regression",
+      "proposed_change": "Prove unchanged semantics and descriptor exclusion",
+      "kind": "canonical_test",
+      "risk": "high"
+    },
+    {
+      "path": "privacy/index.html",
+      "responsibility": "Privacy/governance documentation",
+      "proposed_change": "Accurate activation/challenge/hosting/failure explanation",
+      "kind": "canonical",
+      "risk": "medium"
+    },
+    {
+      "path": "how-to/responsible-telemetry-use/index.html",
+      "responsibility": "Privacy/governance documentation",
+      "proposed_change": "Accurate activation/challenge/hosting/failure explanation",
+      "kind": "canonical",
+      "risk": "medium"
+    },
+    {
+      "path": "TELEMETRY_GOVERNANCE.md",
+      "responsibility": "Privacy/governance documentation",
+      "proposed_change": "Accurate activation/challenge/hosting/failure explanation",
+      "kind": "canonical",
+      "risk": "medium"
+    },
+    {
+      "path": "how-to/telemetry-data-dictionary/fields.json",
+      "responsibility": "Dictionary source/render/check",
+      "proposed_change": "Keep event inventory unchanged; separate control-plane documentation",
+      "kind": "conditional",
+      "risk": "medium"
+    },
+    {
+      "path": "how-to/telemetry-data-dictionary/index.html",
+      "responsibility": "Dictionary source/render/check",
+      "proposed_change": "Keep event inventory unchanged; separate control-plane documentation",
+      "kind": "conditional",
+      "risk": "medium"
+    },
+    {
+      "path": "audit_tools/telemetry_data_dictionary/render.mjs",
+      "responsibility": "Dictionary source/render/check",
+      "proposed_change": "Keep event inventory unchanged; separate control-plane documentation",
+      "kind": "conditional",
+      "risk": "medium"
+    },
+    {
+      "path": "audit_tools/telemetry_data_dictionary/check.mjs",
+      "responsibility": "Dictionary source/render/check",
+      "proposed_change": "Keep event inventory unchanged; separate control-plane documentation",
+      "kind": "conditional",
+      "risk": "medium"
+    }
+  ],
+  "unresolved_decisions": [
+    {
+      "id": "D01",
+      "question": "Inspectable-token forgery/DoS residual risk",
+      "recommendation": "Accept only for bounded untrusted operational analytics",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D02",
+      "question": "Lifetime and renewal",
+      "recommendation": "365 days, new random token, max 3 live per tuple; hash-only response loss tradeoff",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D03",
+      "question": "Quotas and capacity",
+      "recommendation": "Tune starting hypotheses using actual D1 and class/NAT evidence",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D04",
+      "question": "Challenge configuration",
+      "recommendation": "Dedicated Turnstile only at hosted Composer ON Generate",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D05",
+      "question": "Metadata lifecycle and wording",
+      "recommendation": "Compact control records, transient infrastructure keys, preserve locked semantics",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D06",
+      "question": "Activation failure",
+      "recommendation": "Block ON download; explicit OFF alternative",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D07",
+      "question": "Legacy inventory and dates",
+      "recommendation": "Exact tuple/origin inventory; announced 90-day grace, dates unset",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D08",
+      "question": "Public National Engine exception",
+      "recommendation": "Separate owner resolution before universal public-local-only claim",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D09",
+      "question": "Supported LMS/hosts",
+      "recommendation": "HTTPS serialized origins; null denied; representative LMS test",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D10",
+      "question": "D1 naming",
+      "recommendation": "Leave current internal name, UUID and binding",
+      "status": "owner_review_before_relevant_rollout_stage"
+    },
+    {
+      "id": "D11",
+      "question": "Custodian operations",
+      "recommendation": "Existing admin plus separate maintenance for revoke/block; reviewed budget uplift",
+      "status": "owner_review_before_relevant_rollout_stage"
+    }
+  ],
+  "implementation_proof_gates": [
+    "Exact generated/runtime identity parity across modes/settings",
+    "Atomic issuance/receipt guards under quota, owner, duplicate and revoke races",
+    "Historical JSON and index plans",
+    "No privilege crossover or legacy downgrade",
+    "No token leakage",
+    "Safe rollback without resurrecting revocations"
+  ],
+  "current_validation": {
+    "adapter_sync_check": "PASS",
+    "contract_generator_check": "PASS",
+    "cors_probe": {
+      "environment": "in-memory actual Worker, no D1 binding",
+      "allowed_origin_options": 204,
+      "allowed_origin_post": 503,
+      "unapproved_origin_options": 403,
+      "unapproved_origin_post": 403,
+      "no_origin_options": 204,
+      "no_origin_post": 503,
+      "post_503_means": "passed origin gate; not ingest success"
+    },
+    "beta_projection": {
+      "build_id": "composer-ede71cd5d8134f4b3997592ae992e19f5014d27d17d6c5a626232fc5ef9c4a8a",
+      "build_version": "296544b1222894d84c67298257964b1bfa4808212cad18c5e6e0fd4c1cafd09f",
+      "standard_manifest": "c3d6a9a47b815ca92a3baa172a307321af40f0086dac6290fd6cf63adcd65d21",
+      "quiz_manifest": "228744c977fc52497d9f3d014cd54884c3b0202fa2bd0db359245d4eac785725",
+      "both_existing_validator_pass": true,
+      "both_project_to_same_build_revision": true,
+      "basis": "extracted beta config/pools/registry plus explicit default runtime settings; no gameplay/production traffic"
+    }
+  },
+  "planned_tests": {
+    "location": "Report section 21",
+    "ids": [
+      "I01",
+      "I02",
+      "I03",
+      "I04",
+      "I05",
+      "I06",
+      "I07",
+      "I08",
+      "I09",
+      "I10",
+      "I11",
+      "I12",
+      "I13",
+      "I14",
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G16",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "G21",
+      "G22",
+      "G23",
+      "G24",
+      "G25",
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "U01",
+      "U02",
+      "U03",
+      "U04",
+      "U05",
+      "U06",
+      "U07",
+      "U08",
+      "U09",
+      "U10",
+      "U11",
+      "U12",
+      "U13",
+      "U14",
+      "U15",
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "P01",
+      "P02",
+      "A01",
+      "A02",
+      "A03",
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "O01",
+      "L01"
+    ],
+    "feature_tests_executed": false
+  },
+  "provider_sources": [
+    "https://developers.cloudflare.com/workers/runtime-apis/web-crypto/",
+    "https://developers.cloudflare.com/turnstile/get-started/server-side-validation/",
+    "https://developers.cloudflare.com/turnstile/troubleshooting/testing/",
+    "https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/",
+    "https://developers.cloudflare.com/d1/worker-api/d1-database/#batch",
+    "https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/update/",
+    "https://developers.cloudflare.com/api/resources/d1/subresources/database/methods/edit/",
+    "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/CORS",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Allow-Origin"
+  ],
+  "final_verification": {
+    "branch": "main",
+    "head": "070019ca57c72e503498184b4c201ad9ddef7ca4",
+    "tracked_diff": "",
+    "outputs": [
+      "FINAL_REPORT_portable_telemetry_capability_design.md",
+      "validation_artifacts/portable_telemetry_capability_design/design.json"
+    ],
+    "production_requests": 0,
+    "production_mutations": 0,
+    "deployed": false,
+    "commit_or_push": false,
+    "git_status_short": "?? FINAL_REPORT_portable_telemetry_capability_design.md\n?? validation_artifacts/portable_telemetry_capability_design/design.json",
+    "git_diff_check": "PASS",
+    "artifact_consistency": "PASS",
+    "only_requested_outputs": true,
+    "planned_test_count": 80,
+    "proposed_sql_executed": false
+  }
+}
