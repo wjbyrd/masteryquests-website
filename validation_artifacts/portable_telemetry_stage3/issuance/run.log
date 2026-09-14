@@ -1,0 +1,27 @@
+(node:65288) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+201 exact response, 365 days, hash-only storage and no-store: PASS
+Flags OFF or malformed never verify or mint: PASS
+missing true rejects without writes/challenge: PASS
+false rejects without writes/challenge: PASS
+string true rejects without writes/challenge: PASS
+unknown field rejects without writes/challenge: PASS
+wrong build rejects without writes/challenge: PASS
+wrong version rejects without writes/challenge: PASS
+wrong schema rejects without writes/challenge: PASS
+wrong measurement rejects without writes/challenge: PASS
+wrong governance rejects without writes/challenge: PASS
+wrong disclosure rejects without writes/challenge: PASS
+Challenge failure rejects atomically: PASS
+Challenge wrong action rejects atomically: PASS
+Challenge wrong hostname rejects atomically: PASS
+Challenge wrong context rejects atomically: PASS
+Challenge replay rejects: PASS
+Same attempt never remints; changed digest conflicts: PASS
+Live cap and issuance rate limit have no partial writes: PASS
+Blocked build rejects mint: PASS
+Activation CORS is first-party POST content-type only: PASS
+Query, oversized, malformed and encoded activation reject: PASS
+Provider adapter validates expiry, action/context boundary and exact request: PASS
+Provider/storage exceptions never expose challenge or credential: PASS
+{"passed":24,"failed":0}

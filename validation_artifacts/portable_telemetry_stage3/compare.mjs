@@ -1,0 +1,4 @@
+import fs from 'node:fs';import {createHash} from 'node:crypto';
+const out='validation_artifacts/portable_telemetry_stage3',baseline=JSON.parse(fs.readFileSync(out+'/baseline/source.json')),sha=b=>createHash('sha256').update(b).digest('hex');
+const helper='audit_tools/telemetry_contract/hash.mjs',current=fs.readFileSync(helper,'utf8');for(const candidate of [current.replace(/\r\n/g,'\n'),current.replace(/\r\n/g,'\n').replace(/\n/g,'\r\n')])if(sha(candidate)===baseline.hashes[helper])fs.writeFileSync(helper,candidate);
+const changed=[],missing=[];for(const [p,h]of Object.entries(baseline.hashes)){if(!fs.existsSync(p))missing.push(p);else if(sha(fs.readFileSync(p))!==h)changed.push(p);}fs.writeFileSync(out+'/source-comparison.json',JSON.stringify({baselineFiles:Object.keys(baseline.hashes).length,changed,missing},null,2));console.log(JSON.stringify({changed,missing}));

@@ -103,7 +103,10 @@ for (const name of [
   "course-area-model.js",
   "custom-asset-core.js",
   "faculty-outcome-core.js",
-  "anonymous-telemetry-source.js"
+  "anonymous-telemetry-source.js",
+  "ingest-activation.js",
+  "measurement-build.js",
+  "telemetry-activation.js"
 ]) {
   copyFile(path.join(composerRoot, name));
 }

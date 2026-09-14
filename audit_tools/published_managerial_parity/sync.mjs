@@ -10,7 +10,10 @@ export function localClient(root){
  const source=read(root,'play/managerial-directorate-telemetry-poc/telemetry-client.js');
  const between=(start,end)=>{const a=source.indexOf(start),b=source.indexOf(end,a);assert(a>=0&&b>a,`Source boundary changed: ${start}`);return source.slice(a,b);};
  const fn=name=>{const match=source.match(new RegExp('^  function '+name+'\\([^]*?^  }','m'));assert(match,`Missing maintained function ${name}`);return match[0];};
- const tracker=between('  // BEGIN GENERATED COMPOSER BEHAVIOR','  function readJSON(');
+ // Public games retain their published measurement release while Composer transport evolves.
+ const publicRegistry=JSON.parse(read(root,'audit_tools/telemetry_contract/public-release-registry.json'));
+ const tracker=between('  // BEGIN GENERATED COMPOSER BEHAVIOR','  function readJSON(')
+   .replace(/\/\* RELEASE REGISTRY \*\/ \{[^\n]+\}\);/,'/* RELEASE REGISTRY */ '+JSON.stringify(publicRegistry)+');');
  const csv=['installLocalTelemetryColumns','installLocalCsvDownload','localTelemetryTail','attachLocalMeasurements'].map(fn).join('\n\n');
  let hooks=fn('installHooks').replace('    if(IS_COMPOSER){installComposerHooks();return;}\n','');
  hooks=hooks.replace('mapGameEvent(data || {},measurements)','localEvent(data || {})').replace('    wrapAfter("showMasteryReportScreen", masterySummary);\n','    wrapAfter("showMasteryReportScreen", ()=>MQContract.resources());\n');

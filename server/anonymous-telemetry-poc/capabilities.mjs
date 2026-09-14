@@ -1,4 +1,4 @@
-// Stage 1 server foundation. Not connected to HTTP routes; no network verifier is installed.
+// Canonical server foundation; HTTP routing and provider verification live in dedicated modules.
 import { contractHash, stableContractJSON } from '../../audit_tools/telemetry_contract/hash.mjs';
 import { validateManifest } from './measurement-contract.mjs';
 import { UUID_PATTERN } from './telemetry-core.mjs';

@@ -2,6 +2,15 @@
 'use strict';
 
 const Core = window.MQComposerCore;
+const Activation = window.MQTelemetryActivation;
+let inputVersion=0, generationPending=false, previousRecipeSnapshot=null;
+const activationSession=Activation.createSession({challenge:Activation.browserChallenge,hash:value=>Core.sha256Hex(Core.stableStringify(value))});
+function invalidateActivation(){inputVersion++;activationSession.invalidate();}
+function activationFailure(error){
+  const messages={activation_challenge_failed:'Verification failed. Retry activation.',activation_rate_limited:'Activation is rate limited. Wait before retrying.',activation_unsupported:'This build configuration cannot be activated.',activation_stale:'Your build changed during activation. Generate again for the current build.',activation_invalid_response:'The activation response could not be verified.'};
+  const node=$('activationFailure');node.hidden=false;$('activationFailureMessage').textContent=messages[error?.message]||'Activation is unavailable. Your game selections are preserved.';
+  announce($('activationFailureMessage').textContent);
+}
 const Library = window.MQ_COMPOSER_LIBRARY;
 const CourseAreaModel = window.MQCourseAreaModel;
 const ThemeLibrary = window.MQOfficialThemeLibrary;
@@ -1227,6 +1236,9 @@ function recalculate(){
   state.title = $('gameTitle').value;
   state.slug = $('gameSlug').value;
   state.guideName = $('guideName').value;
+  const snapshot=Core.stableStringify(recipe());
+  if(previousRecipeSnapshot!==null&&previousRecipeSnapshot!==snapshot)invalidateActivation();
+  previousRecipeSnapshot=snapshot;
   state.composition = Core.compose(Library, recipe());
   $('conceptGrid').querySelectorAll('[data-scope-summary]').forEach(node => { node.innerHTML = scopedCountMarkup(node.dataset.scopeSummary); });
   state.generatedSizeEstimate = null;
@@ -1319,7 +1331,7 @@ function renderCoverage(){
       : `<strong>Ready for all selected modes.</strong><span>The current concept mix meets the required question coverage.</span>`;
 
   $('readinessMessage').innerHTML += state.allowAnonymousDataCollection === true
-    ? '<span><strong>Anonymous data collection: ON</strong> — this generated game is configured to send anonymous gameplay telemetry when online. Students can turn off future transmission where supported.</span>'
+    ? '<span><strong>Anonymous data collection: ON</strong> — activation will be checked when you generate.</span>'
     : '<span><strong>Anonymous data collection: OFF</strong> — this generated game will not send anonymous gameplay telemetry.</span>';
 
   const keyMetrics = [
@@ -1407,7 +1419,7 @@ function renderFinal(){
     </div>
     ${blockerSummary}
   `;
-  $('downloadPackage').disabled = !okay;
+  $('downloadPackage').disabled = generationPending || !okay;
   $('downloadRecipe').disabled = !state.selectedConceptIds.length;
   $('reviewReadiness').classList.toggle('hidden', okay);
   $('technicalDetails').textContent = JSON.stringify({
@@ -1668,10 +1680,14 @@ function generatedHtmlSizeBreakdown(html, composition, config, metadata){
   };
 }
 
-async function prepareGeneratedGame({verifyAnswerHashes = false, reportProgress = false} = {}){
-  const activeRecipe = recipe();
+async function prepareGeneratedGame({verifyAnswerHashes = false, reportProgress = false, frozenRecipe=null} = {}){
+  const activeRecipe = frozenRecipe || recipe();
   const composition = Core.compose(Library, activeRecipe);
   if(composition.errors.length) throw new Error(composition.errors.join('\n'));
+  if(reportProgress){
+    const selected=activeRecipe.selectedConceptIds.filter(id=>metaById.has(id));
+    if(location.protocol==='file:'||selected.length===1&&(metaById.get(selected[0]).coverageStatus||'insufficient')==='insufficient')throw new Error('activation_unsupported');
+  }
   if(!state.conceptReviewManifest) throw new Error('Concept Review manifest is unavailable.');
   const conceptReviews = Core.resolveConceptReviews(
     Library,
@@ -1749,9 +1765,24 @@ async function prepareGeneratedGame({verifyAnswerHashes = false, reportProgress 
 }
 
 async function generateGameDownload(){
+  if(generationPending)return;
+  generationPending=true;$('downloadPackage').disabled=true;$('activationFailure').hidden=true;
+  try{
   const customWarnings = await verifyCurrentCustomAssets();
   if(customWarnings.length) announce(`${customWarnings.length} invalid custom image selection${customWarnings.length === 1 ? ' was' : 's were'} restored to the selected theme.`);
-  const prepared = await prepareGeneratedGame({verifyAnswerHashes:true, reportProgress:true});
+  const frozenRecipe=JSON.parse(JSON.stringify(recipe())),snapshot=Core.stableStringify(frozenRecipe),version=inputVersion;
+  const isCurrent=()=>version===inputVersion&&snapshot===Core.stableStringify(recipe());
+  const prepared = await prepareGeneratedGame({verifyAnswerHashes:true, reportProgress:true,frozenRecipe});
+  if(!isCurrent())throw new Error('activation_stale');
+  let activated=null;
+  if(frozenRecipe.allowAnonymousDataCollection===true){
+    announce('Activating anonymous telemetry for this build.');
+    try{
+      activated=await activationSession.activate(Core.activationScope(prepared.config,prepared.composition),{enabled:true,isCurrent});
+      if(!isCurrent())throw new Error('activation_stale');
+      prepared.html=Core.buildHtml(state.templateText,prepared.composition,prepared.config,prepared.metadata,activated);
+    }catch(error){activationFailure(error);return;}
+  }
   const {
     activeRecipe,
     answerCheck,
@@ -1770,6 +1801,7 @@ async function generateGameDownload(){
   state.generatedSizeEstimateStatus = 'ready';
   renderGeneratedSizeEstimate();
   renderFinal();
+  if(activated){const label=[...$('readinessMessage').querySelectorAll('span')].find(node=>node.textContent.includes('Anonymous data collection: ON'));if(label)label.textContent='Anonymous data collection: ON — telemetry link activated for this build until '+new Date(activated.expiresAt).toLocaleDateString()+'. The generated game is authorized for anonymous telemetry. External-host portability will be validated separately.';}
   const manifest = {
     ...metadata,
     generatedFilename: `${config.slug}.html`,
@@ -1831,7 +1863,7 @@ Open ${config.slug}.html directly in a modern browser. The game HTML is self-con
 
 Concept Review PDFs open from ${Core.CONCEPT_REVIEW_PUBLIC_BASE_URL} and require internet access only when a learner opens a recommended review. The game itself can still run from the downloaded HTML file.
 
-To deploy, upload the HTML to GitHub Pages or another public HTTPS static host, then link or embed that URL in your LMS when the LMS permits external iframe content. Progress and game data stay in the learner's browser. The game does not collect email addresses or transmit gameplay data to a server.
+The HTML is self-contained for local gameplay. ${activated?'Anonymous telemetry is authorized for this build until '+new Date(activated.expiresAt).toLocaleDateString()+'. External-host telemetry portability will be validated separately. Learners can turn off future transmission; local gameplay and Download Game Data remain available.':'Anonymous telemetry is OFF. Progress and game data stay in the learner’s browser.'} No email addresses are intentionally collected.
 
 Enabled modes: ${config.supportedModes.map(mode => MODE_LABELS[mode]).join(', ')}
 
@@ -1848,9 +1880,11 @@ Checkpoint questions are assigned by their published difficulty. Optional checkp
   const zip = deterministicZip(entries);
   downloadBlob(zip, `${config.slug}.zip`);
   announce('Game download ready.');
+  }finally{generationPending=false;renderFinal();}
 }
 
 async function importRecipe(file){
+  invalidateActivation();
   const imported = JSON.parse(await file.text());
   if(imported.contentScopes != null){
     const errors = Core.validateRecipeShape(Library, imported);
@@ -1999,10 +2033,13 @@ async function init(){
   });
   $('downloadPackage').addEventListener('click', () => {
     generateGameDownload().catch(error => {
-      console.error(error);
-      alert(`Game generation failed: ${error.message}`);
-      announce('Game generation failed.');
+      activationFailure(error);
     });
+  });
+  $('retryActivation').addEventListener('click',()=>generateGameDownload().catch(activationFailure));
+  $('generateLocalOnly').addEventListener('click',()=>{
+    state.allowAnonymousDataCollection=false;$('allowAnonymousDataCollection').checked=false;invalidateActivation();recalculate();
+    generateGameDownload().catch(activationFailure);
   });
 
   if(location.protocol === 'file:') $('protocolWarning').classList.add('show');

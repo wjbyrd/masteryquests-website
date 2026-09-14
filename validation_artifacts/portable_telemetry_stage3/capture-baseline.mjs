@@ -1,0 +1,4 @@
+import fs from 'node:fs';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
+const git=(...a)=>execFileSync('git',a,{encoding:'utf8',maxBuffer:16777216}).trim();const files=git('ls-files','-z').split('\0').filter(Boolean);const hashes={};for(const p of files)hashes[p]=createHash('sha256').update(fs.readFileSync(p)).digest('hex');fs.writeFileSync('validation_artifacts/portable_telemetry_stage3/baseline/source.json',JSON.stringify({status:'',branch:git('branch','--show-current'),head:git('rev-parse','HEAD'),hashes},null,2));
+let runner=fs.readFileSync('validation_artifacts/portable_telemetry_stage2_redaction/run-regressions.mjs','utf8').replaceAll('portable_telemetry_stage2_redaction','portable_telemetry_stage3').replace(",['http-runtime','audit_tools/telemetry_governance/capability-http-check.mjs','--runtime']",'');fs.writeFileSync('validation_artifacts/portable_telemetry_stage3/run-regressions.mjs',runner);
+

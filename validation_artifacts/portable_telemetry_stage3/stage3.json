@@ -1,0 +1,499 @@
+{
+  "repository": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "branch": "main",
+  "startingHead": "f6447453367cb280a26d690039d25777f85e28e4",
+  "baselineClean": true,
+  "stage3": "IMPLEMENTED_AND_LOCALLY_VERIFIED",
+  "stage4Recommendation": "NO-GO",
+  "remainingPrerequisite": "Provision a dedicated real staging Turnstile widget/secret and complete isolated first-party activation → generated game → ingest staging proof, including live-tail redaction and resource cleanup.",
+  "activationContract": {
+    "version": "mq-build-activation/1",
+    "requestFields": [
+      "activationVersion",
+      "issuanceRequestId",
+      "allowAnonymousDataCollection",
+      "gameId",
+      "buildId",
+      "buildVersion",
+      "schemaVersion",
+      "measurementContract",
+      "governanceVersion",
+      "disclosureVersion",
+      "turnstileToken"
+    ],
+    "status": 201,
+    "cacheControl": "no-store",
+    "disabledStatus": 404,
+    "lifetimeDays": 365,
+    "responseFields": [
+      "activationVersion",
+      "capability",
+      "capabilityId",
+      "endpoint",
+      "gameId",
+      "buildId",
+      "buildVersion",
+      "schemaVersion",
+      "issuedAt",
+      "expiresAt",
+      "ok",
+      "governanceVersion"
+    ]
+  },
+  "descriptorFields": [
+    "activationVersion",
+    "capability",
+    "capabilityId",
+    "endpoint",
+    "gameId",
+    "buildId",
+    "buildVersion",
+    "schemaVersion",
+    "issuedAt",
+    "expiresAt"
+  ],
+  "canonicalHeader": "X-MQ-Ingest-Token",
+  "oldHeader": "REJECTED",
+  "featureFlags": {
+    "production": {
+      "issuance": false,
+      "ingest": false,
+      "legacyGrace": false
+    },
+    "localFixture": {
+      "issuance": true,
+      "ingest": true,
+      "legacyGrace": false
+    }
+  },
+  "challenge": {
+    "interface": "IMPLEMENTED",
+    "localMock": "PASS",
+    "realProviderAcceptance": "NOT_TESTED",
+    "configuration": "No staging configuration supplied or present in checked local configuration"
+  },
+  "composerTests": {
+    "passed": 11,
+    "failed": 0,
+    "results": [
+      {
+        "name": "OFF/malformed choices cause zero challenge or activation requests",
+        "status": "PASS"
+      },
+      {
+        "name": "Generate activation sends exact minimal fields and server-matching context",
+        "status": "PASS"
+      },
+      {
+        "name": "Double Generate and repeated download reuse one in-memory activation",
+        "status": "PASS"
+      },
+      {
+        "name": "Changed inputs invalidate reuse; reload creates a fresh attempt",
+        "status": "PASS"
+      },
+      {
+        "name": "Stale response discarded after invalidation or snapshot change",
+        "status": "PASS"
+      },
+      {
+        "name": "Failure remains blocked; explicit OFF fallback makes no request",
+        "status": "PASS"
+      },
+      {
+        "name": "Response endpoint cannot redirect credentials or change scope",
+        "status": "PASS"
+      },
+      {
+        "name": "Expired malformed and unknown descriptor fields fail closed",
+        "status": "PASS"
+      },
+      {
+        "name": "Different tokens preserve exact analytical build and all measurement hashes",
+        "status": "PASS"
+      },
+      {
+        "name": "Recipe import migration save and canonical identity discard activation metadata",
+        "status": "PASS"
+      },
+      {
+        "name": "Preview preparation is pure and generated privacy links are absolute",
+        "status": "PASS"
+      }
+    ],
+    "identityParity": true
+  },
+  "issuanceTests": {
+    "passed": 24,
+    "failed": 0,
+    "results": [
+      {
+        "name": "201 exact response, 365 days, hash-only storage and no-store",
+        "status": "PASS"
+      },
+      {
+        "name": "Flags OFF or malformed never verify or mint",
+        "status": "PASS"
+      },
+      {
+        "name": "missing true rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "false rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "string true rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "unknown field rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "wrong build rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "wrong version rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "wrong schema rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "wrong measurement rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "wrong governance rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "wrong disclosure rejects without writes/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "Challenge failure rejects atomically",
+        "status": "PASS"
+      },
+      {
+        "name": "Challenge wrong action rejects atomically",
+        "status": "PASS"
+      },
+      {
+        "name": "Challenge wrong hostname rejects atomically",
+        "status": "PASS"
+      },
+      {
+        "name": "Challenge wrong context rejects atomically",
+        "status": "PASS"
+      },
+      {
+        "name": "Challenge replay rejects",
+        "status": "PASS"
+      },
+      {
+        "name": "Same attempt never remints; changed digest conflicts",
+        "status": "PASS"
+      },
+      {
+        "name": "Live cap and issuance rate limit have no partial writes",
+        "status": "PASS"
+      },
+      {
+        "name": "Blocked build rejects mint",
+        "status": "PASS"
+      },
+      {
+        "name": "Activation CORS is first-party POST content-type only",
+        "status": "PASS"
+      },
+      {
+        "name": "Query, oversized, malformed and encoded activation reject",
+        "status": "PASS"
+      },
+      {
+        "name": "Provider adapter validates expiry, action/context boundary and exact request",
+        "status": "PASS"
+      },
+      {
+        "name": "Provider/storage exceptions never expose challenge or credential",
+        "status": "PASS"
+      }
+    ]
+  },
+  "generatedGameResults": {
+    "passed": 16,
+    "failed": 0,
+    "results": [
+      {
+        "name": "OFF Composer browsing preview recipe save and Generate cause zero activation/challenge",
+        "status": "PASS"
+      },
+      {
+        "name": "ON pending readiness; Generate issues once and embeds only in playable HTML",
+        "status": "PASS"
+      },
+      {
+        "name": "Repeated Generate reuses capability without another challenge or issuance",
+        "status": "PASS"
+      },
+      {
+        "name": "Activation failure blocks ON download and explicit OFF fallback preserves content",
+        "status": "PASS"
+      },
+      {
+        "name": "Inputs changed during issuance discard stale result and block download",
+        "status": "PASS"
+      },
+      {
+        "name": "Generated Edge game starts and sends scoped 202 with valid runtime manifests and receipt",
+        "status": "PASS"
+      },
+      {
+        "name": "Gameplay and local CSV survive HTTP 403",
+        "status": "PASS"
+      },
+      {
+        "name": "Gameplay and local CSV survive HTTP 429",
+        "status": "PASS"
+      },
+      {
+        "name": "Gameplay and local CSV survive HTTP 503",
+        "status": "PASS"
+      },
+      {
+        "name": "Redirect response never forwards capability to another host",
+        "status": "PASS"
+      },
+      {
+        "name": "Opt-out survives token replacement without resetting browser ID or local data",
+        "status": "PASS"
+      },
+      {
+        "name": "Descriptor missing fails closed without breaking gameplay/download",
+        "status": "PASS"
+      },
+      {
+        "name": "Descriptor malformed fails closed without breaking gameplay/download",
+        "status": "PASS"
+      },
+      {
+        "name": "Descriptor expired fails closed without breaking gameplay/download",
+        "status": "PASS"
+      },
+      {
+        "name": "Descriptor mismatched fails closed without breaking gameplay/download",
+        "status": "PASS"
+      },
+      {
+        "name": "No browser exceptions or credential leakage in stored telemetry and receipts",
+        "status": "PASS"
+      }
+    ],
+    "browser": "153.0.4234.32",
+    "activationCalls": 3,
+    "challengeLoads": 1,
+    "ingestRequests": 11,
+    "provider": "INJECTED_LOCAL_VERIFIER",
+    "productionCalls": 0,
+    "rawEvidenceMatches": 0
+  },
+  "staging": {
+    "performed": false,
+    "reason": "Real Turnstile staging configuration unavailable; no mock deployed"
+  },
+  "identityParity": "PASS",
+  "regressions": {
+    "before": {
+      "capabilities": {
+        "passed": 56,
+        "failed": 0
+      },
+      "governance": {
+        "passed": 14,
+        "failed": 0
+      },
+      "scheduled": {
+        "passed": 11,
+        "failed": 0
+      },
+      "backend": {
+        "passed": 18,
+        "failed": 0
+      },
+      "regressions": {
+        "passed": 21,
+        "failed": 0
+      },
+      "contract": {
+        "passed": 16,
+        "failed": 0
+      },
+      "private-refresh": {
+        "passed": 33,
+        "failed": 0
+      },
+      "http-sqlite": {
+        "passed": 39,
+        "failed": 0
+      },
+      "readiness": {
+        "passed": 27,
+        "failed": 0
+      },
+      "header-sqlite": {
+        "passed": 8,
+        "failed": 0
+      },
+      "header-runtime": {
+        "passed": 8,
+        "failed": 0
+      },
+      "public-browser": {
+        "passed": 103,
+        "failed": 0
+      }
+    },
+    "after": {
+      "capabilities": {
+        "passed": 56,
+        "failed": 0
+      },
+      "governance": {
+        "passed": 14,
+        "failed": 0
+      },
+      "scheduled": {
+        "passed": 11,
+        "failed": 0
+      },
+      "backend": {
+        "passed": 18,
+        "failed": 0
+      },
+      "regressions": {
+        "passed": 21,
+        "failed": 0
+      },
+      "contract": {
+        "passed": 16,
+        "failed": 0
+      },
+      "private-refresh": {
+        "passed": 33,
+        "failed": 0
+      },
+      "http-sqlite": {
+        "passed": 39,
+        "failed": 0
+      },
+      "readiness": {
+        "passed": 27,
+        "failed": 0
+      },
+      "header-sqlite": {
+        "passed": 8,
+        "failed": 0
+      },
+      "header-runtime": {
+        "passed": 8,
+        "failed": 0
+      },
+      "public-browser": {
+        "passed": 103,
+        "failed": 0
+      }
+    }
+  },
+  "composerRegression": {
+    "passed": 27,
+    "failed": 0
+  },
+  "distValidation": {
+    "ok": true,
+    "dist": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\dist",
+    "fileCount": 1793,
+    "composerConceptReviewPdfCount": 151,
+    "forbiddenFileCount": 0,
+    "incomingQuestionAssetCount": 0
+  },
+  "filesChanged": [
+    "FINAL_REPORT_portable_telemetry_stage3.md",
+    "audit_tools/public_site_publication/build-dist.mjs",
+    "audit_tools/published_managerial_parity/sync.mjs",
+    "audit_tools/telemetry_contract/public-release-registry.json",
+    "audit_tools/telemetry_contract/registry.json",
+    "audit_tools/telemetry_governance/composer-activation-source.mjs",
+    "audit_tools/telemetry_governance/composer-transport.mjs",
+    "audit_tools/telemetry_governance/readiness-remediation.mjs",
+    "audit_tools/telemetry_governance/stage3-browser-check.mjs",
+    "audit_tools/telemetry_governance/stage3-composer-check.mjs",
+    "audit_tools/telemetry_governance/stage3-fixture.mjs",
+    "audit_tools/telemetry_governance/stage3-issuance-check.mjs",
+    "build/faculty-build-composer/anonymous-telemetry-source.js",
+    "build/faculty-build-composer/composer-core.js",
+    "build/faculty-build-composer/composer.js",
+    "build/faculty-build-composer/index.html",
+    "build/faculty-build-composer/ingest-activation.js",
+    "build/faculty-build-composer/measurement-build.js",
+    "build/faculty-build-composer/telemetry-activation.js",
+    "build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html",
+    "play/managerial-directorate-classroom/telemetry-client.js",
+    "play/managerial-directorate-telemetry-poc/telemetry-client.js",
+    "server/anonymous-telemetry-poc/CAPABILITY_OPERATOR.md",
+    "server/anonymous-telemetry-poc/capabilities.mjs",
+    "server/anonymous-telemetry-poc/capability-issuance.mjs",
+    "server/anonymous-telemetry-poc/turnstile-verifier.mjs",
+    "server/anonymous-telemetry-poc/worker.mjs"
+  ],
+  "sourceComparison": {
+    "baselineFiles": 11606,
+    "changed": [
+      "audit_tools/public_site_publication/build-dist.mjs",
+      "audit_tools/published_managerial_parity/sync.mjs",
+      "audit_tools/telemetry_contract/registry.json",
+      "audit_tools/telemetry_governance/composer-transport.mjs",
+      "audit_tools/telemetry_governance/readiness-remediation.mjs",
+      "build/faculty-build-composer/anonymous-telemetry-source.js",
+      "build/faculty-build-composer/composer-core.js",
+      "build/faculty-build-composer/composer.js",
+      "build/faculty-build-composer/index.html",
+      "build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html",
+      "play/managerial-directorate-classroom/telemetry-client.js",
+      "play/managerial-directorate-telemetry-poc/telemetry-client.js",
+      "server/anonymous-telemetry-poc/CAPABILITY_OPERATOR.md",
+      "server/anonymous-telemetry-poc/capabilities.mjs",
+      "server/anonymous-telemetry-poc/worker.mjs"
+    ],
+    "missing": []
+  },
+  "cleanup": {
+    "remoteResourcesCreated": 0,
+    "remoteResourcesRetained": 0,
+    "tailsOpened": 0,
+    "localBrowserAndDatabaseFixturesClosed": true
+  },
+  "production": {
+    "workerUntouched": true,
+    "d1Untouched": true,
+    "noMigration": true,
+    "noDeployment": true,
+    "allFlagsFalse": true,
+    "corsUnchanged": true,
+    "publicGamesUnchanged": true,
+    "nationalEngineUnchanged": true,
+    "contractsRetentionAndCSVUnchanged": true
+  },
+  "gitDiffCheck": "PASS",
+  "credentialScans": {
+    "filesScanned": 2160,
+    "rawCapabilityPatternMatches": 0,
+    "exactEphemeralChecks": "PASS in browser/composer tests before report write and telemetry/recipe/CSV inspection",
+    "hashesInEvidence": "No capability hashes exported; source hashes are artifact-integrity metadata",
+    "artifact": "credential-scan.json"
+  }
+}

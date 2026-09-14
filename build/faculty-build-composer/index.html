@@ -33,7 +33,7 @@
         <div class="collection-setting">
             <h3>Anonymous gameplay data</h3>
             <label><input id="allowAnonymousDataCollection" type="checkbox" aria-describedby="anonymousCollectionHelp"> Allow anonymous gameplay data collection</label>
-            <p id="anonymousCollectionHelp"><strong>OFF by default.</strong> Enable this option explicitly to configure the generated game to send anonymous gameplay and interaction telemetry to Mastery Quests for instructional and product analytics. Ordinary collection is operational analytics, not automatically research.</p>
+            <p id="anonymousCollectionHelp"><strong>OFF by default.</strong> When enabled, Generate activates a build-specific anonymous telemetry link using limited build and control metadata. Gameplay telemetry does not intentionally include names, email addresses, LMS account identifiers, university identifiers, or free-text responses. Collection supports operational analytics, not automatically research. The game remains playable and local data downloads remain available if remote telemetry becomes unavailable.</p>
             <p>Names, email addresses, LMS account identifiers, university identifiers, and free-text responses are not intentionally included in application telemetry.</p>
             <p>Students can inspect supported game data using <strong>Download Game Data</strong>. Where supported, they can turn off future remote transmission in their browser. This does not delete records already accepted by the server.</p>
             <p><a href="/privacy/">Privacy</a> · <a href="/how-to/responsible-telemetry-use/">Responsible Telemetry Use</a> · <a href="/how-to/telemetry-data-dictionary/">Telemetry Data Dictionary</a></p>
@@ -183,6 +183,12 @@
       <div class="panel">
         <h2>Game readiness</h2>
         <div id="readinessMessage" class="readiness-message"></div>
+        <div id="activationChallenge"></div>
+        <div id="activationFailure" role="alert" hidden>
+          <p id="activationFailureMessage"></p>
+          <button id="retryActivation" type="button">Retry activation</button>
+          <button id="generateLocalOnly" type="button">Turn off anonymous data collection and generate a local-only game</button>
+        </div>
         <div id="gameSizeEstimate" class="game-size-estimate" aria-live="polite">
           <strong>Estimated game size: Not calculated yet</strong>
         </div>
@@ -227,11 +233,14 @@
     <div id="liveRegion" class="screen-reader" aria-live="polite"></div>
   </main>
 
-  <footer class="footer">The Composer runs locally in your browser, and your faculty selections are not transmitted. Generated games can optionally send anonymous gameplay data when you enable that setting in Game details.</footer>
+  <footer class="footer">The Composer runs locally while you build. If you enable anonymous gameplay collection, Generate sends limited build-activation metadata to Mastery Quests to authorize that generated game. Recipe and question content are not uploaded for activation.</footer>
 
   <script src="data/faculty-outcomes.js?v=20260910-faculty-lo-labels"></script>
   <script src="faculty-outcome-core.js?v=20260910-faculty-lo"></script>
   <script src="anonymous-telemetry-source.js?v=20260913-disclosure"></script>
+  <script src="ingest-activation.js?v=20260914-stage3"></script>
+  <script src="measurement-build.js?v=20260914-stage3"></script>
+  <script src="telemetry-activation.js?v=20260914-stage3"></script>
   <script src="composer-core.js?v=20260913-telemetry-ux"></script>
   <script src="course-area-model.js?v=20260910-faculty-lo"></script>
   <script src="data/composer_library.js?v=20260910-faculty-lo"></script>

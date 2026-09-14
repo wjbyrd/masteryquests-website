@@ -1,4 +1,5 @@
 import {featureFlags} from './capabilities.mjs';
+import {issueCapabilityHTTP,issuancePreflight} from './capability-issuance.mjs';
 import {dualModeIngest,capabilityPreflight} from './dual-mode-ingest.mjs';
 import {scheduledRetention} from './scheduled-retention.mjs';
 import {govern,requireMaintenance} from './governance.mjs';
@@ -20,22 +21,27 @@ import {
 const API_PREFIXES = ["/api/anonymous-telemetry-poc", ""];
 const COMPLETION_EVENT = "run_completed";
 
-export default {
+export function createWorker(dependencies={}) { return {
   async scheduled(controller,env) { return scheduledRetention(controller,env); },
   async fetch(request, env) {
     try {
-      return await route(request, env);
+      return await route(request, env, dependencies);
     } catch (error) {
       const status = error instanceof TelemetryValidationError ? error.status : Number(error?.status || 500);
       if (status >= 500) console.error("anonymous telemetry worker error", error);
       return json({ ok: false, phase: PHASE, error: status >= 500 ? "internal error" : String(error.message || error) }, status);
     }
   }
-};
+}; }
+export default createWorker();
 
-async function route(request, env) {
+async function route(request, env, dependencies) {
   const url = new URL(request.url);
   const pathname = stripPrefix(url.pathname);
+  if(pathname==='/v1/build-capabilities'){
+    if(request.method==='POST')return issueCapabilityHTTP(request,env,dependencies);
+    if(request.method==='OPTIONS'&&featureFlags(env).issuance)return issuancePreflight(request,env);
+  }
   if (request.method === "OPTIONS") {
     if(featureFlags(env).ingest) {
       if(pathname==='/v1/events')return capabilityPreflight(request,env);

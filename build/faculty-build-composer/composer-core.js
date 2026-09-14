@@ -1,8 +1,8 @@
 (function(root, factory){
-  const api = factory(typeof module === 'object' && module.exports ? require('./faculty-outcome-core.js') : root.MQFacultyOutcomes, typeof module === 'object' && module.exports ? require('./anonymous-telemetry-source.js') : root.MQAnonymousTelemetrySource);
+  const api = factory(typeof module === 'object' && module.exports ? require('./faculty-outcome-core.js') : root.MQFacultyOutcomes, typeof module === 'object' && module.exports ? require('./anonymous-telemetry-source.js') : root.MQAnonymousTelemetrySource, typeof module === 'object' && module.exports ? require('./ingest-activation.js') : root.MQIngestActivation, typeof module === 'object' && module.exports ? require('./measurement-build.js') : root.MQMeasurementBuild);
   if(typeof module === 'object' && module.exports) module.exports = api;
   else root.MQComposerCore = api;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function(FacultyOutcomes, AnonymousTelemetrySource){
+})(typeof globalThis !== 'undefined' ? globalThis : this, function(FacultyOutcomes, AnonymousTelemetrySource, IngestActivation, MeasurementBuild){
 'use strict';
 
 const COMPOSER_VERSION = '4.5s.3k';
@@ -2064,7 +2064,10 @@ function conceptReviewRuntimeRegion(composition){
   return `// =====================================================\n// CONCEPT REVIEW ROUTING — GENERATED\n// Routing data is embedded so locally opened games do not fetch a sibling manifest.\n// Review PDFs are served from ${CONCEPT_REVIEW_PUBLIC_BASE_URL}\n// =====================================================\nglobalThis.MQ_CONCEPT_REVIEW_MANIFEST = ${embeddedManifest};\n${runtimeSource}`;
 }
 
-function buildHtml(template, composition, config, metadata){
+function activationScope(config,composition){
+  return {gameId:'faculty-composer',buildId:'composer-'+config.compositionFingerprint,buildVersion:MeasurementBuild.prepare(config,composition).buildRevision,schemaVersion:3};
+}
+function buildHtml(template, composition, config, metadata, activation=null){
   // Transport permission is build configuration, never part of the event schema.
   config={...config,allowAnonymousDataCollection:config?.allowAnonymousDataCollection===true};
   let output = replaceMarkedRegion(
@@ -2081,6 +2084,11 @@ function buildHtml(template, composition, config, metadata){
   );
   if(config.allowAnonymousDataCollection===true){
     if(typeof AnonymousTelemetrySource!=='string')throw new Error('Maintained anonymous transport source unavailable.');
+    if(activation){
+      const descriptor=IngestActivation.validate(activation,activationScope(config,composition));
+      const json=JSON.stringify(descriptor).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
+      output=output.replace('</body>','<script>globalThis.MQ_INGEST_ACTIVATION = '+json+';</script>\n</body>');
+    }
     output=output.replace('</body>', '<script>\n'+AnonymousTelemetrySource.replace(/<\/script/gi,'<\\/script')+'\n</script>\n</body>');
   }
   return output;
@@ -2224,6 +2232,7 @@ return {
   validateModes,
   validateGeneratedGraphAssets,
   buildHtml,
+  activationScope,
   canonicalRecipe,
   createConfig,
   verifyAnswers,
