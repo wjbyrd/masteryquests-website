@@ -1,0 +1,113 @@
+{
+  "results": [
+    {
+      "name": "Shared engine and accessibility shell identical outside two allowlisted authoring regions",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact maintained field validator embedded in HTML and authoring tool",
+      "status": "PASS"
+    },
+    {
+      "name": "Sample package and every mode minimum pass",
+      "status": "PASS"
+    },
+    {
+      "name": "Blank structure reports missing content readiness",
+      "status": "PASS"
+    },
+    {
+      "name": "All required fields reject omissions",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed objects and syntax produce faculty errors",
+      "status": "PASS"
+    },
+    {
+      "name": "Current aliases, arbitrary type labels and string IDs accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid answers and unsupported type values fail",
+      "status": "PASS"
+    },
+    {
+      "name": "Hash formats accepted; malformed and shadowed hashes fail",
+      "status": "PASS"
+    },
+    {
+      "name": "Boss pool difficulty and stages follow runtime",
+      "status": "PASS"
+    },
+    {
+      "name": "Repair/bridge difficulty optional and skills required",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate IDs fail; repeated text warns",
+      "status": "PASS"
+    },
+    {
+      "name": "Graph descriptions and safe paths checked",
+      "status": "PASS"
+    },
+    {
+      "name": "Inline image data URLs remain valid current local assets",
+      "status": "PASS"
+    },
+    {
+      "name": "TSV conversion preserves quotes and multiline text",
+      "status": "PASS"
+    },
+    {
+      "name": "Manual default has no transport endpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "Public entry points route to manual package and validator",
+      "status": "PASS"
+    },
+    {
+      "name": "Authoring page local links resolve",
+      "status": "PASS"
+    }
+  ],
+  "sample": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "counts": {
+      "easy": 12,
+      "medium": 12,
+      "hard": 12,
+      "elite": 12,
+      "legendary": 12,
+      "easyBoss": 3,
+      "mediumBoss": 3,
+      "finalBoss": 3,
+      "legendaryBoss": 3,
+      "repair": 3,
+      "bridge": 3
+    },
+    "modeReadiness": {
+      "standard": "Ready for minimum launch count; test your full run",
+      "timed": "Ready for minimum launch count; test your full run",
+      "exam": "Ready for minimum launch count; test your full run",
+      "quiz": "Ready for minimum launch count; test your full run",
+      "unlimited": "Ready for minimum launch count; test your full run",
+      "legendary": "Ready for minimum launch count; test your full run",
+      "score": "Ready for minimum launch count; test your full run",
+      "trialGraph": "Ready for minimum launch count; test your full run",
+      "fadingFortune": "Ready for minimum launch count; test your full run",
+      "riskReward": "Ready for minimum launch count; test your full run"
+    },
+    "questionCount": 78
+  },
+  "intentionalDifferences": [
+    "Marked manual config",
+    "JSON package adapter",
+    "No curated Concept Review manifest",
+    "No remote transport"
+  ]
+}

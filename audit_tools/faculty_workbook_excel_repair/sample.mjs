@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+await import('../../tools/question-bank-validator/validator.js');
+const out='validation_artifacts/faculty_workbook_excel_repair';
+const api=globalThis.MQManualPackage;
+const converted=api.fromTSV(fs.readFileSync(out+'/sample.tsv','utf8'));
+const result=api.validatePackage(converted);
+assert(result.ok,JSON.stringify(result.errors));
+const questions=[...Object.values(converted.banks).flat(),...converted.repairQuestions,...converted.bridgeQuestions];
+assert.equal(questions.length,5);
+assert.equal(new Set(questions.map(q=>q.id)).size,5);
+fs.writeFileSync(out+'/sample-conversion.json',JSON.stringify({status:'PASS',count:questions.length,ids:questions.map(q=>q.id),validation:result},null,2));
+console.log('PASS: five workbook sample rows converted by actual TSV importer and accepted by validator.');

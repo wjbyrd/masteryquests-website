@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "table": "xl/tables/table1.xml",
+  "range": "A1:AJ301",
+  "columns": 36,
+  "negativeFixturesRejected": [
+    "stale range",
+    "stale filter",
+    "wrong count",
+    "stale header",
+    "duplicate name",
+    "blank name",
+    "duplicate ID",
+    "invalid table name"
+  ],
+  "brokenBaselineRejected": "Stale table range",
+  "baselineCellValuesFormulasNumberFormats": "identical",
+  "validations": {
+    "AF2:AF301": "\"TRUE,FALSE\"",
+    "B2:B301": "\"easy,medium,hard,elite,legendary,easyBoss,mediumBoss,finalBoss,legendaryBoss,repair,bridge\"",
+    "C2:C301": "\"easy,medium,hard,elite,legendary\"",
+    "I2:I301": "\"A,B,C,D\""
+  },
+  "cachedSummary": [
+    5,
+    0,
+    5
+  ],
+  "sampleRows": 5,
+  "sha256": "ed5419290fe3a573008eac680c654a2551f3e36cb52307ec74dc3c462903fade"
+}

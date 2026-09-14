@@ -2,10 +2,10 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {FileBlob,SpreadsheetFile} from '@oai/artifact-tool';
-const root=process.cwd(),out=path.join(root,'validation_artifacts/free_faculty_template_parity/workbook');
+const root=process.cwd(),out=path.resolve(process.env.MQ_WORKBOOK_EVIDENCE_DIR||'validation_artifacts/free_faculty_template_parity/workbook');
 await fs.mkdir(out,{recursive:true});
 const file=path.join(root,'downloads/resources/faculty-question-bank-validator.xlsx');
-const backup=path.join(out,'before.xlsx');
+const backup=path.join(root,'validation_artifacts/free_faculty_template_parity/workbook/before.xlsx');
 try{await fs.access(backup);}catch{await fs.copyFile(file,backup);}
 const wb=await SpreadsheetFile.importXlsx(await FileBlob.load(process.argv.includes('--review')?file:backup));
 if(process.argv.includes('--review')){
@@ -14,7 +14,6 @@ if(process.argv.includes('--review')){
 }
 console.log((await wb.inspect({kind:'sheet',include:'id,name',maxChars:2000})).ndjson);
 await fs.writeFile(path.join(out,'before.png'),new Uint8Array(await (await wb.render({sheetName:'Question_Bank',range:'A1:J5',scale:1})).arrayBuffer()));
-console.log(wb.help('worksheet.dataValidations',{include:'index,examples,notes',maxChars:2500}).ndjson);
 if(process.argv.includes('--inspect'))process.exit(0);
 const sheet=wb.worksheets.getItem('Question_Bank');
 // Preserve the original drafting columns and 300 input rows. The unsafe JS export
@@ -22,6 +21,12 @@ const sheet=wb.worksheets.getItem('Question_Bank');
 sheet.getRange('AG1:AJ1').values=[['AnswerHash','ImageAlt','GraphDescription','BossStage']];
 sheet.getRange('AB1:AE1').values=[['IDConventionNote','DraftStatus','DraftMessage','NextStep']];
 sheet.getRange('V1').values=[['LegacyImageNote']];
+// Imported tables retain their own header names/range when cells are edited.
+// Rebuild the table after the final schema is present, retaining filtering and style.
+for(const table of [...sheet.tables.items])table.delete();
+const draftingTable=sheet.tables.add('A1:AJ301',true,'QuestionBankTable');
+draftingTable.style='TableStyleMedium2';
+draftingTable.showFilterButton=true;
 sheet.getRange('AG1:AJ301').format.columnWidth=30;
 sheet.getRange('AH1:AI301').format.wrapText=true;
 sheet.getRange('AG2:AG301').numberFormat='@';
@@ -92,5 +97,8 @@ sheet.getRange('P2').values=[['']];wb.recalculate();assert.equal(sheet.getRange(
 sheet.getRange('P2').values=[['addition']];wb.recalculate();assert.equal(sheet.getRange('AC2').values[0][0],'CHECK ONLINE');
 await fs.writeFile(path.join(out,'verification.json'),JSON.stringify({rows:summary.getRange('B3:B5').values,requiredRepairSkillMutation:'PASS'},null,2));
 for(const [name,range] of [['Question_Bank','A1:J6'],['Question_Bank','Z1:AJ6'],['Instructions','A1:B8'],['Instructions','A9:B15'],['Validator_Summary','A1:D10'],['Lists','A1:C12']])await fs.writeFile(path.join(out,`${name}-${range.replace(':','-')}.png`),new Uint8Array(await (await wb.render({sheetName:name,range,scale:1})).arrayBuffer()));
-await (await SpreadsheetFile.exportXlsx(wb)).save(file);
+// Keep artifact-tool's inspection sidecar out of the public download directory.
+const exported=path.join(out,'faculty-question-bank-validator.xlsx');
+await (await SpreadsheetFile.exportXlsx(wb)).save(exported);
+await fs.copyFile(exported,file);
 console.log('Updated workbook and verified required-field recalculation.');
