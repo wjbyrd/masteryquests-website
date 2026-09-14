@@ -1,0 +1,383 @@
+{
+  "status": "INCOMPLETE_STOPPED",
+  "stage3Recommendation": "NO-GO",
+  "deploymentStatus": "NOT DEPLOYED",
+  "repository": "C:/Users/Jennings/Documents/GitHub/masteryquests-website",
+  "branch": "main",
+  "startingHead": "a248c116c66ab509686e9234b8d343c93c12ef1e",
+  "baseline": {
+    "source": "baseline/source.json",
+    "acceptedUncommittedWorkPreserved": true
+  },
+  "flags": {
+    "CAPABILITY_ISSUANCE_ENABLED": "false",
+    "CAPABILITY_INGEST_ENABLED": "false",
+    "CAPABILITY_LEGACY_GRACE_ENABLED": "false"
+  },
+  "workerRouteModes": {
+    "flagsOff": "Original Worker ingestion unchanged",
+    "ingestEnabled": "POST /v1/events uses shared transactional admission; header presence selects capability only; absent header selects exact server-owned grace",
+    "issuance": "Unavailable",
+    "adminPreflight": "Closed; no CORS expansion"
+  },
+  "capabilityHeader": {
+    "name": "X-MQ-Ingest-Capability",
+    "emptyOrMalformed": "Reject; never legacy fallback",
+    "originless": "Permitted only with valid capability authority"
+  },
+  "responseCodeMapping": {
+    "202": "Accepted",
+    "400": [
+      "invalid_batch",
+      "invalid_json",
+      "invalid_request"
+    ],
+    "403": [
+      "ingest_not_authorized",
+      "ingest_scope_mismatch"
+    ],
+    "409": [
+      "event_conflict",
+      "manifest_required"
+    ],
+    "413": "request_too_large",
+    "415": "unsupported_media_type",
+    "429": "ingest_rate_limited",
+    "503": "ingest_unavailable"
+  },
+  "errorHandling": {
+    "noStore": true,
+    "credentialsRedacted": true,
+    "retryAfterSeconds": 60,
+    "readableOversizedErrorVerified": false
+  },
+  "legacyInventory": {
+    "entries": [
+      {
+        "game_id": "faculty-composer",
+        "build_id": "composer-ede71cd5d8134f4b3997592ae992e19f5014d27d17d6c5a626232fc5ef9c4a8a",
+        "build_version": "296544b1222894d84c67298257964b1bfa4808212cad18c5e6e0fd4c1cafd09f",
+        "schema_version": 3,
+        "allowed_origin": "https://masteryquests.org",
+        "sunset_at": null
+      }
+    ],
+    "source": "beta-testing/composer-telemetry-live-test/index.html",
+    "sourceSha256": "6931b46906b8f1a047a0bc0890f70422702269ec4adb514c36f107a1fc7f0bb5",
+    "tupleRecomputedByLocalSuite": true,
+    "productionSunset": "PENDING OWNER ACTIVATION; null is rejected by active validation",
+    "managerial": "Excluded: eight checked-in POC/classroom artifacts have collection disabled",
+    "publicGamesAndNationalEngine": "Excluded"
+  },
+  "inventoryValidation": {
+    "serverOwnedOnly": true,
+    "maxEntries": 64,
+    "maxJsonBytes": 16384,
+    "exactFields": [
+      "game_id",
+      "build_id",
+      "build_version",
+      "schema_version",
+      "allowed_origin",
+      "sunset_at"
+    ],
+    "rejects": [
+      "unknown fields",
+      "wildcards",
+      "duplicates",
+      "invalid tuple",
+      "invalid origin",
+      "missing or noncanonical finite sunset"
+    ],
+    "invalidEntryRejectsWholeInventory": true
+  },
+  "graceBehavior": {
+    "requiresExactTrueFlag": true,
+    "requiresExactRawTuple": true,
+    "requiresExactOrigin": true,
+    "sunsetExclusive": true,
+    "recheckedAtTransaction": true,
+    "blockedBuildRejects": true,
+    "capabilityReceiptId": null,
+    "noClientOverride": true
+  },
+  "cors": {
+    "allowedOrigins": "Intersection of existing ALLOWED_ORIGINS and https://masteryquests.org / https://www.masteryquests.org",
+    "originsBroadened": false,
+    "route": "/v1/events",
+    "allowedHeaders": [
+      "content-type",
+      "x-telemetry-phase",
+      "x-mq-ingest-capability"
+    ],
+    "credentials": false,
+    "exposedHeaders": [
+      "Retry-After"
+    ]
+  },
+  "transactionInvariants": {
+    "singleD1Batch": true,
+    "sharedCapabilityAndGracePersistence": true,
+    "immutableRunAndEventOwnership": true,
+    "exactRetriesDoNotInflateCountsOrRetention": true,
+    "regularInsertsAndSnapshotGuards": true,
+    "quotaAndAuthorityRecheckedAtomically": true,
+    "noInMemoryMutex": true,
+    "capabilityReceiptAttribution": "Operator capability ID only; grace NULL",
+    "raceChecksPassed": true
+  },
+  "testResults": {
+    "baseline": {
+      "capabilities": {
+        "passed": 56,
+        "failed": 0,
+        "evidence": "baseline/capabilities/capabilities-results.json"
+      },
+      "governance": {
+        "passed": 14,
+        "failed": 0,
+        "evidence": "baseline/governance/governance-results.json"
+      },
+      "readiness": {
+        "passed": 27,
+        "failed": 0,
+        "evidence": "baseline/readiness/remediation-results.json"
+      },
+      "scheduled": {
+        "passed": 11,
+        "failed": 0,
+        "evidence": "baseline/scheduled/scheduled-results.json"
+      },
+      "backend": {
+        "passed": 18,
+        "failed": 0,
+        "evidence": "baseline/backend/backend_integration_results.json"
+      },
+      "regressions": {
+        "passed": 21,
+        "failed": 0,
+        "evidence": "baseline/regressions/regression_results.json"
+      },
+      "contract": {
+        "passed": 16,
+        "failed": 0,
+        "evidence": "baseline/contract/targeted-results.json"
+      }
+    },
+    "final": {
+      "capabilities": {
+        "passed": 56,
+        "failed": 0,
+        "evidence": "final/capabilities/capabilities-results.json"
+      },
+      "governance": {
+        "passed": 14,
+        "failed": 0,
+        "evidence": "final/governance/governance-results.json"
+      },
+      "readiness": {
+        "passed": 27,
+        "failed": 0,
+        "evidence": "final/readiness/remediation-results.json"
+      },
+      "scheduled": {
+        "passed": 11,
+        "failed": 0,
+        "evidence": "final/scheduled/scheduled-results.json"
+      },
+      "backend": {
+        "passed": 18,
+        "failed": 0,
+        "evidence": "final/backend/backend_integration_results.json"
+      },
+      "regressions": {
+        "passed": 21,
+        "failed": 0,
+        "evidence": "final/regressions/regression_results.json"
+      },
+      "contract": {
+        "passed": 16,
+        "failed": 0,
+        "evidence": "final/contract/targeted-results.json"
+      }
+    },
+    "sqlite": {
+      "passed": 39,
+      "failed": 0,
+      "evidence": "http-sqlite-results.json"
+    },
+    "directHttp": {
+      "passed": 36,
+      "failed": 3,
+      "failures": [
+        {
+          "name": "All controlled error classes carry readable first-party CORS and no-store",
+          "status": "FAIL",
+          "detail": "TypeError: terminated\n    at Fetch.onAborted (node:internal/deps/undici/undici:13602:53)\n    at Fetch.emit (node:events:508:28)\n    at Fetch.terminate (node:internal/deps/undici/undici:12732:14)\n    at Object.onError (node:internal/deps/undici/undici:13728:38)\n    at Request.onError (node:internal/deps/undici/undici:3073:31)\n    at Object.errorRequest (node:internal/deps/undici/undici:1932:17)\n    at Socket.onHttpSocketClose (node:internal/deps/undici/undici:7726:14)\n    at Socket.emit (node:events:520:35)\n    at TCP.<anonymous> (node:net:346:12)"
+        },
+        {
+          "name": "128 KiB and multibyte boundaries enforce actual UTF-8 bytes",
+          "status": "FAIL",
+          "detail": "TypeError: terminated\n    at Fetch.onAborted (node:internal/deps/undici/undici:13602:53)\n    at Fetch.emit (node:events:508:28)\n    at Fetch.terminate (node:internal/deps/undici/undici:12732:14)\n    at Object.onError (node:internal/deps/undici/undici:13728:38)\n    at Request.onError (node:internal/deps/undici/undici:3073:31)\n    at Object.errorRequest (node:internal/deps/undici/undici:1932:17)\n    at Socket.onHttpSocketClose (node:internal/deps/undici/undici:7726:14)\n    at Socket.emit (node:events:520:35)\n    at TCP.<anonymous> (node:net:346:12)"
+        },
+        {
+          "name": "Misleading Content-Length cannot permit an oversized body",
+          "status": "FAIL",
+          "detail": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'UND_ERR_SOCKET'\n- 'UND_ERR_REQ_CONTENT_LENGTH_MISMATCH'\n           ^\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/capability-http-check.mjs:41:373\n    at async test (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/capability-http-check.mjs:13:262)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/capability-http-check.mjs:41:1"
+        }
+      ],
+      "evidence": "http-miniflare-results.json"
+    },
+    "privateRefresh": {
+      "passedCases": 33,
+      "evidence": "final/private-refresh/run.log"
+    },
+    "publicBrowser": {
+      "passed": 103,
+      "failed": 0,
+      "evidence": "final/public-browser/results.json"
+    }
+  },
+  "localCloudflareRuntime": {
+    "miniflare": "5.20260910.0-alpha",
+    "workerd": "1.20260910.1",
+    "compatibilityDate": "2026-08-07",
+    "transport": "Actual loopback HTTP fetch",
+    "database": "Disposable local D1",
+    "externalNetworkBlocked": true,
+    "productionEvidence": false,
+    "diagnosticEvidence": "runtime-transport-diagnostics.json",
+    "oversizedResponseSamples": 10,
+    "oversizedUnreadableSamples": 9
+  },
+  "measurements": [
+    {
+      "case": "novel-1",
+      "runtime": "miniflare",
+      "queries": 35,
+      "statements": 21,
+      "rowsRead": 28,
+      "rowsWritten": 41,
+      "latencyMs": 416.9618000000046,
+      "status": 202
+    },
+    {
+      "case": "novel-25",
+      "runtime": "miniflare",
+      "queries": 203,
+      "statements": 117,
+      "rowsRead": 110,
+      "rowsWritten": 346,
+      "latencyMs": 763.4624999999942,
+      "status": 202
+    },
+    {
+      "case": "novel-50",
+      "runtime": "miniflare",
+      "queries": 378,
+      "statements": 217,
+      "rowsRead": 185,
+      "rowsWritten": 671,
+      "latencyMs": 1752.9593000000023,
+      "status": 202
+    },
+    {
+      "case": "exact-duplicate-50",
+      "runtime": "miniflare",
+      "queries": 228,
+      "statements": 117,
+      "rowsRead": 10438,
+      "rowsWritten": 119,
+      "latencyMs": 1155.713699999993,
+      "status": 202
+    },
+    {
+      "case": "mixed-25-duplicate-25-novel",
+      "runtime": "miniflare",
+      "queries": 303,
+      "statements": 167,
+      "rowsRead": 10438,
+      "rowsWritten": 394,
+      "latencyMs": 744.6438000000053,
+      "status": 202
+    }
+  ],
+  "measurementLimits": "Local instrumented samples only; queries count prepare calls; D1 batch row metadata excludes prelookup reads; deployment plan limits unverified",
+  "cleanup": {
+    "invokedInProduction": false,
+    "cronChanged": false,
+    "defaultLimit": 100,
+    "maxLimit": 1000,
+    "onlyExpiredPositiveDurationWindows": true,
+    "lifetimeCountersAndTelemetryPreserved": true
+  },
+  "filesChanged": {
+    "modifiedPreExisting": [
+      "server/anonymous-telemetry-poc/capability-admission.mjs",
+      "server/anonymous-telemetry-poc/worker.mjs",
+      "server/anonymous-telemetry-poc/wrangler.jsonc"
+    ],
+    "newSource": [
+      "server/anonymous-telemetry-poc/dual-mode-ingest.mjs",
+      "server/anonymous-telemetry-poc/legacy-builds.mjs",
+      "server/anonymous-telemetry-poc/legacy-grace.mjs",
+      "server/anonymous-telemetry-poc/scope-window-cleanup.mjs",
+      "audit_tools/telemetry_governance/capability-http-fixture.mjs",
+      "audit_tools/telemetry_governance/capability-http-check.mjs",
+      "audit_tools/telemetry_governance/capability-runtime-diagnostic.mjs"
+    ],
+    "report": "FINAL_REPORT_portable_telemetry_stage2.md",
+    "evidenceDirectory": "validation_artifacts/portable_telemetry_stage2/"
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "comparedFiles": 10673,
+    "changed": [
+      "server/anonymous-telemetry-poc/capability-admission.mjs",
+      "server/anonymous-telemetry-poc/worker.mjs",
+      "server/anonymous-telemetry-poc/wrangler.jsonc"
+    ],
+    "missing": [],
+    "acceptedStage1Changes": [
+      "server/anonymous-telemetry-poc/capability-admission.mjs",
+      "server/anonymous-telemetry-poc/worker.mjs",
+      "server/anonymous-telemetry-poc/wrangler.jsonc"
+    ],
+    "protectedSourcesUnchanged": true
+  },
+  "preserved": {
+    "measurementContract": "mq-measurement/1",
+    "governanceContract": "mq-governance/2",
+    "disclosureContract": "mq-disclosure/2",
+    "contractsUnchanged": true,
+    "retentionUnchanged": true,
+    "composerUnchanged": true,
+    "clientsUnchanged": true,
+    "betaHtmlUnchanged": true,
+    "publicGamesUnchanged": true,
+    "nationalEngineUnchanged": true
+  },
+  "operations": {
+    "productionCalls": false,
+    "productionD1Access": false,
+    "remoteMigration0003": false,
+    "deployment": false,
+    "turnstileChanges": false
+  },
+  "resolvedHarnessIssues": [
+    "Miniflare dispatchFetch stripped empty header; actual HTTP preserves it and unchanged no-fallback assertions pass",
+    "Cleanup fixture compared envelope to row array; corrected representation, same preservation invariant passes"
+  ],
+  "unresolvedIssues": [
+    "Actual local HTTP intermittently terminates oversized 413 response bodies; minimal independent Worker reproduced 9 of 10 unreadable oversized responses",
+    "Three required actual-HTTP assertions remain failed, including misleading Content-Length transport error classification; no claim that oversized data was accepted",
+    "Production grace sunset remains pending owner activation; inventory is inactive and all feature flags remain OFF"
+  ],
+  "stage3Prerequisites": [
+    "Resolve runtime oversized-response discrepancy in authorized follow-up without weakening bounded-body or error readability invariants",
+    "Resolve misleading Content-Length transport classification and prove no writes",
+    "Rerun complete local Worker/D1 suite and existing regressions to green",
+    "Review deployment-plan capacity and approve finite inventory sunset before any future activation"
+  ],
+  "report": "FINAL_REPORT_portable_telemetry_stage2.md"
+}

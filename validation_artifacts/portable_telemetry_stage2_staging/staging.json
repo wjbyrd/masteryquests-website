@@ -1,0 +1,353 @@
+{
+  "status": "HTTP_STAGING_PASS_REDACTION_GATE_FAIL",
+  "stage2Complete": false,
+  "stage3Recommendation": "NO-GO",
+  "outcomeClassification": {
+    "http": "A: deployed HTTP matrix fully passes; observed local emulator difference",
+    "overall": "C: mixed acceptance result because credential metadata redaction fails"
+  },
+  "repository": "C:/Users/Jennings/Documents/GitHub/masteryquests-website",
+  "branch": "main",
+  "startingHead": "a248c116c66ab509686e9234b8d343c93c12ef1e",
+  "staging": {
+    "name": "masteryquests-telemetry-http-staging",
+    "databaseName": "masteryquests-telemetry-http-staging",
+    "databaseId": "4dc4825c-a83c-4216-8185-c0096d694f2a",
+    "account": "731780cdf08ed25520def0167a6be2df",
+    "createdAt": "2026-09-14T19:22:22.935Z",
+    "syntheticOnly": true,
+    "workerDeployed": true,
+    "migrations": [
+      {
+        "file": "0001_initial.sql",
+        "sha256": "c441df67a162544fa7d93f0c4186fc295555c714ba524d35ca5fc1df5c9a3944"
+      },
+      {
+        "file": "0002_completion_semantics.sql",
+        "sha256": "feb731463a27c790565b3a2fee20fe01ad193fdb9294ff161e9cd31dea5c79ef"
+      },
+      {
+        "file": "0003_build_ingest_capabilities.sql",
+        "sha256": "d67432d1c9ed8c85f5a407cf7e606ff05cc00d63effe2ce909797fa6efb61951"
+      }
+    ],
+    "cleanupDecision": "Delete this new Worker and this new D1 after evidence capture",
+    "url": "https://masteryquests-telemetry-http-staging.wjbyrd.workers.dev",
+    "version": "9798f3db-7ed9-4bbc-b53b-5d6c6f97da1d",
+    "tailId": "64ccc6faa62d4ba8923f15c27961e1ef",
+    "tailClosed": true,
+    "extraTailIds": [
+      "64ccc6faa62d4ba8923f15c27961e1ef"
+    ],
+    "workerDeleted": true,
+    "workerDeletedAt": "2026-09-14T19:33:18.191Z",
+    "databaseDeleted": true,
+    "databaseDeletedAt": "2026-09-14T19:33:19.123Z",
+    "cleanupVerified": true
+  },
+  "production": {
+    "deploymentStatus": "NOT DEPLOYED / UNCHANGED",
+    "workerModified": false,
+    "databaseAccessed": false,
+    "remoteMigrationsApplied": false,
+    "flagsChanged": false
+  },
+  "config": {
+    "name": "masteryquests-telemetry-http-staging",
+    "account_id": "731780cdf08ed25520def0167a6be2df",
+    "main": "worker.mjs",
+    "compatibility_date": "2026-08-07",
+    "workers_dev": true,
+    "routes": [],
+    "d1_databases": [
+      {
+        "binding": "TELEMETRY_DB",
+        "database_name": "masteryquests-telemetry-http-staging",
+        "database_id": "4dc4825c-a83c-4216-8185-c0096d694f2a"
+      }
+    ],
+    "vars": {
+      "TELEMETRY_RETENTION_DAYS": "730",
+      "TELEMETRY_RETENTION_MODE": "automatic",
+      "TELEMETRY_GOVERNANCE_POLICY": "mq-governance/2",
+      "ALLOWED_ORIGINS": "https://masteryquests.org",
+      "CAPABILITY_ISSUANCE_ENABLED": "false",
+      "CAPABILITY_INGEST_ENABLED": "true",
+      "CAPABILITY_LEGACY_GRACE_ENABLED": "false",
+      "MAX_EVENTS_PER_CLIENT_MINUTE": "300"
+    },
+    "observability": {
+      "logs": {
+        "enabled": true,
+        "head_sampling_rate": 1,
+        "invocation_logs": false,
+        "persist": true
+      },
+      "traces": {
+        "enabled": false
+      }
+    },
+    "triggers": {
+      "crons": []
+    }
+  },
+  "origin": {
+    "value": "https://masteryquests.org",
+    "simulation": "Document fulfilled in memory at approved origin; actual HTTPS staging network with normal CORS; all other network blocked",
+    "productionPageChanged": false,
+    "productionCorsBroadened": false
+  },
+  "matrix": {
+    "ordinaryTrials": 320,
+    "ordinaryOversizedTrials": 300,
+    "oversizedPassed": 300,
+    "nodeHttpsOversized": 120,
+    "undiciOversized": 120,
+    "edgeOversized": 60,
+    "repetitionsPerOversizedCondition": 10,
+    "bytes": [
+      100,
+      131072,
+      131073,
+      524288,
+      2097152
+    ],
+    "encodings": [
+      "ASCII",
+      "multibyte UTF-8"
+    ],
+    "framing": [
+      "declared Content-Length",
+      "chunked/no Content-Length",
+      "browser-managed Content-Length"
+    ],
+    "browser": "153.0.4234.32",
+    "specialTrials": [
+      {
+        "client": "node:https",
+        "kind": "slow-bounded-upload",
+        "framing": "chunked",
+        "status": 413,
+        "readableBody": true,
+        "noWrites": true,
+        "elapsedMs": 8581
+      },
+      {
+        "client": "node:https",
+        "kind": "malformed-content-length",
+        "framing": "false-small",
+        "status": 400,
+        "readableBody": true,
+        "noWrites": true,
+        "elapsedMs": 221
+      },
+      {
+        "client": "node:https",
+        "kind": "malformed-content-length",
+        "framing": "false-large",
+        "status": null,
+        "readableBody": false,
+        "noWrites": true,
+        "elapsedMs": 10012,
+        "timeout": true,
+        "exception": "controlled upload deadline"
+      },
+      {
+        "client": "undici",
+        "kind": "malformed-content-length",
+        "framing": "false-small",
+        "status": null,
+        "readableBody": false,
+        "noWrites": true,
+        "exception": "fetch failed",
+        "code": "UND_ERR_REQ_CONTENT_LENGTH_MISMATCH"
+      },
+      {
+        "client": "undici",
+        "kind": "malformed-content-length",
+        "framing": "false-large",
+        "status": null,
+        "readableBody": false,
+        "noWrites": true,
+        "exception": "fetch failed",
+        "code": "UND_ERR_REQ_CONTENT_LENGTH_MISMATCH"
+      }
+    ]
+  },
+  "noWriteProof": {
+    "rejectedGroups": 40,
+    "specialCases": 5,
+    "unchanged": true,
+    "tables": [
+      "telemetry_events",
+      "telemetry_runs",
+      "telemetry_ingest_batches",
+      "telemetry_rate_limits",
+      "telemetry_build_policies",
+      "telemetry_build_capabilities",
+      "telemetry_scope_windows"
+    ],
+    "attemptCountersChanged": false
+  },
+  "health": {
+    "passed": 56,
+    "eventAndReceiptAttributionVerified": true,
+    "acceptedState": {
+      "status": "PASS",
+      "counts": {
+        "events": 84,
+        "runs": 84,
+        "receipts": 84,
+        "run_events": 84,
+        "receipt_events": 84,
+        "capability_events": 84,
+        "build_events": 84,
+        "unattributed_receipts": 0
+      },
+      "syntheticOnly": true
+    }
+  },
+  "rows": {
+    "before": {
+      "hash": "083c4557936ce5e159cd93b31a18087d2b98f4aa33754ec1a10725c9a4b78cef",
+      "counts": {
+        "telemetry_events": 18,
+        "telemetry_runs": 18,
+        "telemetry_ingest_batches": 18,
+        "telemetry_rate_limits": 18,
+        "telemetry_build_policies": 1,
+        "telemetry_build_capabilities": 1,
+        "telemetry_scope_windows": 10
+      }
+    },
+    "after": {
+      "hash": "e53d5bbd25b5abe82c51675e2378e01658b9744883fd55ee96d721f6ef8b7974",
+      "counts": {
+        "telemetry_events": 84,
+        "telemetry_runs": 84,
+        "telemetry_ingest_batches": 84,
+        "telemetry_rate_limits": 84,
+        "telemetry_build_policies": 2,
+        "telemetry_build_capabilities": 2,
+        "telemetry_scope_windows": 24
+      }
+    }
+  },
+  "logs": {
+    "status": "FAIL",
+    "applicationConsoleMatches": 0,
+    "exceptions": 0,
+    "tailEventsInspected": 302,
+    "tailFramesContainingSyntheticCredential": 301,
+    "locations": [
+      "event.request.headers.x-mq-ingest-capability"
+    ],
+    "rawValuesSaved": false,
+    "persistedLogMetadataNotSeparatelyAudited": true,
+    "fullTailCoverage": false,
+    "explanation": "Authenticated live-tail request metadata exposes the custom capability header. Application console/exception payloads did not. Sensitive values were examined only in memory; evidence contains counts and field paths. This fails the requested strict redaction criterion."
+  },
+  "boundedness": {
+    "canonicalReaderUnchanged": true,
+    "ceilingBytes": 131072,
+    "unboundedBufferingAdded": false,
+    "unboundedDrainingAdded": false,
+    "controlledSlowUploadDeadlineMs": 10000,
+    "deployedHeapProfiling": false,
+    "proof": "Unchanged canonical reader plus 9/9 bounded-reader checks and controlled deployed slow upload; platform heap usage was not sampled"
+  },
+  "localSuites": {
+    "capabilities": {
+      "passed": 56,
+      "failed": 0,
+      "evidence": "final/capabilities/capabilities-results.json"
+    },
+    "governance": {
+      "passed": 14,
+      "failed": 0,
+      "evidence": "final/governance/governance-results.json"
+    },
+    "readiness": {
+      "passed": 27,
+      "failed": 0,
+      "evidence": "final/readiness/remediation-results.json"
+    },
+    "scheduled": {
+      "passed": 11,
+      "failed": 0,
+      "evidence": "final/scheduled/scheduled-results.json"
+    },
+    "backend": {
+      "passed": 18,
+      "failed": 0,
+      "evidence": "final/backend/backend_integration_results.json"
+    },
+    "regressions": {
+      "passed": 21,
+      "failed": 0,
+      "evidence": "final/regressions/regression_results.json"
+    },
+    "contract": {
+      "passed": 16,
+      "failed": 0,
+      "evidence": "final/contract/targeted-results.json"
+    },
+    "publicBrowser": {
+      "passed": 103,
+      "failed": 0,
+      "evidence": "final/public-browser/results.json"
+    },
+    "sqlite": {
+      "passed": 39,
+      "failed": 0,
+      "evidence": "final/http-sqlite/http-sqlite-results.json"
+    },
+    "runtime": {
+      "passed": 37,
+      "failed": 2,
+      "evidence": "final/http-runtime/http-miniflare-results.json"
+    },
+    "bodyReader": {
+      "passed": 9,
+      "failed": 0,
+      "evidence": "final/body-reader/body-reader-results.json"
+    }
+  },
+  "privateRefresh": {
+    "passed": 33,
+    "evidence": "final/private-refresh/run.log"
+  },
+  "localAssertionsWeakened": false,
+  "sourceVerification": {
+    "status": "PASS",
+    "comparedFiles": 11077,
+    "changed": [],
+    "missing": []
+  },
+  "filesChanged": {
+    "preExisting": [],
+    "newSource": [
+      "audit_tools/telemetry_governance/staging/worker.mjs",
+      "audit_tools/telemetry_governance/staging/control.mjs",
+      "audit_tools/telemetry_governance/staging/setup.mjs",
+      "audit_tools/telemetry_governance/staging/test.mjs",
+      "audit_tools/telemetry_governance/staging/log-probe.mjs",
+      "audit_tools/telemetry_governance/staging/cleanup.mjs"
+    ],
+    "temporaryConfig": "Removed after preserving exact deployed configuration in evidence",
+    "report": "FINAL_REPORT_portable_telemetry_stage2_staging.md",
+    "evidenceRoot": "validation_artifacts/portable_telemetry_stage2_staging/"
+  },
+  "remainingGate": "Resolve or explicitly govern synthetic-capability exposure in provider live-tail metadata in a separately authorized follow-up; no Stage 3 work performed",
+  "harnessNotes": [
+    "Initial collector decoded binary tail frames incorrectly; partial evidence retained and full matrix rerun with ArrayBuffer decoding",
+    "A separate metadata probe identified the credential field; tail coverage is a sample rather than every request",
+    "After complete evidence and verified resource deletion, lingering local transport handles required stopping the matrix and log-probe processes. Explicit exits after awaited teardown were added and syntax-checked; no HTTP test or canonical source changed."
+  ],
+  "gitDiffCheck": "PASS",
+  "evidenceScan": {
+    "gitDiffCheck": "PASS",
+    "publishedTextArtifactsChecked": 175,
+    "rawCapabilityPatternMatches": 0
+  }
+}

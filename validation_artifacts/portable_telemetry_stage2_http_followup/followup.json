@@ -1,0 +1,340 @@
+{
+  "status": "INCOMPLETE_RUNTIME_LIMITATION",
+  "stage2Complete": false,
+  "stage3Recommendation": "NO-GO",
+  "deployment": "NOT DEPLOYED",
+  "baseline": {
+    "branch": "main",
+    "head": "a248c116c66ab509686e9234b8d343c93c12ef1e",
+    "runtimePassed": 36,
+    "runtimeFailed": 3,
+    "evidence": "baseline/http-miniflare-results.json"
+  },
+  "rootCauseClassification": "Observed interaction between unread upload data, early local workerd/Miniflare response and client/socket behavior. Reproduces without telemetry or D1; cancellation and bounded draining do not guarantee readable errors. No production attribution. Compression changes observability; identity responses still fail in Edge for larger uploads.",
+  "minimal": {
+    "runtime": "5.20260910.0-alpha",
+    "compatibilityDate": "2026-08-07",
+    "trials": 810,
+    "summary": {
+      "immediate": {
+        "node:http": {
+          "trials": 60,
+          "unreadable": 0
+        },
+        "undici": {
+          "trials": 60,
+          "unreadable": 35
+        },
+        "edge": {
+          "trials": 15,
+          "unreadable": 12
+        }
+      },
+      "cancel": {
+        "node:http": {
+          "trials": 60,
+          "unreadable": 0
+        },
+        "undici": {
+          "trials": 60,
+          "unreadable": 33
+        },
+        "edge": {
+          "trials": 15,
+          "unreadable": 10
+        }
+      },
+      "drain": {
+        "node:http": {
+          "trials": 60,
+          "unreadable": 0
+        },
+        "undici": {
+          "trials": 60,
+          "unreadable": 8
+        },
+        "edge": {
+          "trials": 15,
+          "unreadable": 3
+        }
+      },
+      "threshold": {
+        "node:http": {
+          "trials": 60,
+          "unreadable": 0
+        },
+        "undici": {
+          "trials": 60,
+          "unreadable": 19
+        },
+        "edge": {
+          "trials": 15,
+          "unreadable": 6
+        }
+      },
+      "threshold-cancel": {
+        "node:http": {
+          "trials": 60,
+          "unreadable": 0
+        },
+        "undici": {
+          "trials": 60,
+          "unreadable": 10
+        },
+        "edge": {
+          "trials": 15,
+          "unreadable": 5
+        }
+      },
+      "identity": {
+        "node:http": {
+          "trials": 60,
+          "unreadable": 0
+        },
+        "undici": {
+          "trials": 60,
+          "unreadable": 0
+        },
+        "edge": {
+          "trials": 15,
+          "unreadable": 6
+        }
+      }
+    },
+    "evidence": "body-diagnostic.json",
+    "runtimeLogsCaptured": true,
+    "drainLimitBytes": 1048576,
+    "byobBufferBytes": 16384,
+    "thresholdReadBytes": 131073,
+    "unboundedBuffering": false,
+    "compressionFinding": "Content-Encoding: identity made all sampled Node/undici responses readable, but six Edge oversized trials still failed; automatic compression is a contributor, not a sufficient root-cause explanation or safe complete fix."
+  },
+  "actualWorker": {
+    "browser": "153.0.4234.32",
+    "originSimulation": "HTTPS document fulfilled in memory; local-network-access permission granted only to that origin; API calls use actual loopback HTTP with normal browser CORS; all other network blocked",
+    "trials": 92,
+    "noWriteProofs": 56,
+    "observationVerification": {
+      "status": "PASS",
+      "oversizedNoWriteSnapshots": 54,
+      "malformedNoWriteSnapshots": 2,
+      "readable413BodiesValidated": 17,
+      "browserObserved413HeadersValidated": 6,
+      "bodyReadabilityGuarantee": "FAIL; partial observability only"
+    },
+    "healthAfterMalformed": "PASS",
+    "evidence": "body-runtime-results.json"
+  },
+  "canonicalReader": {
+    "changed": false,
+    "limitBytes": 131072,
+    "retainedChunkBytesMaximum": 131072,
+    "incomingChunkNotRetainedWhenOverLimit": true,
+    "contentLengthNotSoleLimit": true,
+    "missingLengthBounded": true,
+    "proof": {
+      "passed": 9,
+      "failed": 0,
+      "limitBytes": 131072,
+      "results": [
+        {
+          "declared": null,
+          "multibyte": false,
+          "actualBytes": 131072,
+          "pulls": 33,
+          "cancelled": false,
+          "status": "PASS"
+        },
+        {
+          "declared": null,
+          "multibyte": false,
+          "actualBytes": 131073,
+          "pulls": 33,
+          "cancelled": true,
+          "status": "PASS"
+        },
+        {
+          "declared": null,
+          "multibyte": true,
+          "actualBytes": 131072,
+          "pulls": 33,
+          "cancelled": false,
+          "status": "PASS"
+        },
+        {
+          "declared": null,
+          "multibyte": true,
+          "actualBytes": 131073,
+          "pulls": 33,
+          "cancelled": true,
+          "status": "PASS"
+        },
+        {
+          "declared": "1",
+          "multibyte": false,
+          "actualBytes": 131072,
+          "pulls": 33,
+          "cancelled": false,
+          "status": "PASS"
+        },
+        {
+          "declared": "1",
+          "multibyte": false,
+          "actualBytes": 131073,
+          "pulls": 33,
+          "cancelled": true,
+          "status": "PASS"
+        },
+        {
+          "declared": "1",
+          "multibyte": true,
+          "actualBytes": 131072,
+          "pulls": 33,
+          "cancelled": false,
+          "status": "PASS"
+        },
+        {
+          "declared": "1",
+          "multibyte": true,
+          "actualBytes": 131073,
+          "pulls": 33,
+          "cancelled": true,
+          "status": "PASS"
+        },
+        {
+          "case": "infinite producer cancelled on first excess chunk",
+          "pulls": 33,
+          "cancelled": true,
+          "status": "PASS"
+        }
+      ]
+    },
+    "scopeOfMemoryProof": "Application retains at most the configured byte ceiling plus a bounded concatenation; an incoming runtime-provided chunk is not an application-controlled allocation. No unbounded drain added."
+  },
+  "contentLength": {
+    "previousAssertion": "Exact UND_ERR_REQ_CONTENT_LENGTH_MISMATCH",
+    "replacement": "Transport TypeError or HTTP 413; unchanged full local D1 snapshot including seeded existing work; no leaked credentials; subsequent valid request succeeds",
+    "applicationAssertionsWeakened": false
+  },
+  "tests": {
+    "capabilities": {
+      "passed": 56,
+      "failed": 0,
+      "evidence": "final/capabilities/capabilities-results.json"
+    },
+    "governance": {
+      "passed": 14,
+      "failed": 0,
+      "evidence": "final/governance/governance-results.json"
+    },
+    "readiness": {
+      "passed": 27,
+      "failed": 0,
+      "evidence": "final/readiness/remediation-results.json"
+    },
+    "scheduled": {
+      "passed": 11,
+      "failed": 0,
+      "evidence": "final/scheduled/scheduled-results.json"
+    },
+    "backend": {
+      "passed": 18,
+      "failed": 0,
+      "evidence": "final/backend/backend_integration_results.json"
+    },
+    "regressions": {
+      "passed": 21,
+      "failed": 0,
+      "evidence": "final/regressions/regression_results.json"
+    },
+    "contract": {
+      "passed": 16,
+      "failed": 0,
+      "evidence": "final/contract/targeted-results.json"
+    },
+    "publicBrowser": {
+      "passed": 103,
+      "failed": 0,
+      "evidence": "final/public-browser/results.json"
+    },
+    "sqlite": {
+      "passed": 39,
+      "failed": 0,
+      "evidence": "final/http-sqlite/http-sqlite-results.json"
+    },
+    "runtime": {
+      "passed": 37,
+      "failed": 2,
+      "evidence": "final/http-runtime/http-miniflare-results.json"
+    }
+  },
+  "privateRefresh": {
+    "passed": 33,
+    "evidence": "final/private-refresh/run.log"
+  },
+  "readinessRetry": {
+    "initialPassed": 26,
+    "initialFailed": 1,
+    "cause": "Missing preflight.json in new output directory",
+    "correction": "Populate required preflight from captured starting hashes; unchanged assertions rerun",
+    "initialEvidence": "final/readiness/first-attempt/"
+  },
+  "filesChanged": {
+    "modified": [
+      "audit_tools/telemetry_governance/capability-http-check.mjs",
+      "audit_tools/telemetry_governance/capability-http-fixture.mjs"
+    ],
+    "newTests": [
+      "audit_tools/telemetry_governance/capability-body-diagnostic.mjs",
+      "audit_tools/telemetry_governance/capability-body-runtime-check.mjs",
+      "audit_tools/telemetry_governance/capability-body-reader-check.mjs"
+    ],
+    "report": "FINAL_REPORT_portable_telemetry_stage2_http_followup.md",
+    "evidenceRoot": "validation_artifacts/portable_telemetry_stage2_http_followup/"
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "comparedFiles": 10900,
+    "changed": [
+      "audit_tools/telemetry_governance/capability-http-check.mjs",
+      "audit_tools/telemetry_governance/capability-http-fixture.mjs"
+    ],
+    "missing": [],
+    "unexpected": []
+  },
+  "flags": {
+    "CAPABILITY_ISSUANCE_ENABLED": "false",
+    "CAPABILITY_INGEST_ENABLED": "false",
+    "CAPABILITY_LEGACY_GRACE_ENABLED": "false"
+  },
+  "scope": {
+    "serverImplementationUnchanged": true,
+    "composerUnchanged": true,
+    "clientsUnchanged": true,
+    "betaHtmlUnchanged": true,
+    "publicGamesUnchanged": true,
+    "nationalEngineUnchanged": true,
+    "contractsUnchanged": true,
+    "retentionUnchanged": true,
+    "migration0003Unchanged": true,
+    "priorReportsAndEvidencePreserved": true
+  },
+  "operations": {
+    "productionCalls": false,
+    "productionD1Access": false,
+    "remoteMigration": false,
+    "deployment": false,
+    "stage3Work": false
+  },
+  "remainingFailures": [
+    "Readable controlled oversized error response",
+    "Actual UTF-8/body boundary response readability"
+  ],
+  "requiredEvidence": [
+    "Resolve local runtime transport behavior without unbounded draining or relaxed assertions, then obtain runtime 39/39",
+    "Separately authorized isolated staging Worker/D1 under approved first-party origin: ordinary and slow/chunked uploads at 128 KiB, +1, 512 KiB and 2 MiB; repeat with real browsers and Node; require readable controlled 413 with ACAO/Vary/no-store",
+    "For every rejected or malformed staging request, prove unchanged events/runs/receipts/capability/build/window/lifetime counters and healthy next request; capture status/headers/body/socket/runtime logs without secrets",
+    "Verify bounded memory/time for cancellation and slow or unending uploads; no production data or migration access"
+  ],
+  "gitDiffCheck": "PASS"
+}

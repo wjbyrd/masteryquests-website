@@ -1,0 +1,235 @@
+{
+  "passed": 56,
+  "failed": 0,
+  "localOnly": true,
+  "network": "external denied; no verifier network implementation",
+  "transactionFixture": "SQLite synchronous BEGIN IMMEDIATE / COMMIT in batch; no JavaScript lock or mutex; deterministic pre-batch barriers",
+  "maxBindings": 41,
+  "maxBatch": 217,
+  "results": [
+    {
+      "name": "Token uses 32 native random bytes, canonical encoding, deterministic native SHA-256 and strict parsing",
+      "status": "PASS"
+    },
+    {
+      "name": "Strict flags and bounded quota config: only exact server true enables fixtures",
+      "status": "PASS"
+    },
+    {
+      "name": "Activation allowlist/primitives/versions/bounds and challenge success/failure/context/replay/unavailability",
+      "status": "PASS"
+    },
+    {
+      "name": "Additive migration preserves prior schemas, historical valid/legacy/malformed JSON and NULL receipts",
+      "status": "PASS"
+    },
+    {
+      "name": "Isolated issuance stores digest only, one-year expiry, duplicate/conflict and fresh replacement",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent duplicate issuance persists exactly one capability and one issuance window increment",
+      "status": "PASS"
+    },
+    {
+      "name": "Atomic issuance live cap, build/global quotas and blocked policy",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact tuple admission, same-owner addition, exact retry preserves summaries and retention receipts",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing/malformed/operator-ID credentials and wrong raw tuple/schema are rejected without writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Expiry/revocation/block status and admission fail closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Immutable run ownership rejects changed buildId",
+      "status": "PASS"
+    },
+    {
+      "name": "Immutable run ownership rejects changed gameId",
+      "status": "PASS"
+    },
+    {
+      "name": "Immutable run ownership rejects changed buildVersion",
+      "status": "PASS"
+    },
+    {
+      "name": "Immutable run ownership rejects changed anonymousClientId",
+      "status": "PASS"
+    },
+    {
+      "name": "Historically mixed events reject even if the summary owner matches",
+      "status": "PASS"
+    },
+    {
+      "name": "Changed event payload and run/sequence collisions conflict; canonical extras ordering retries exactly",
+      "status": "PASS"
+    },
+    {
+      "name": "Deterministic concurrent first-write race: identical",
+      "status": "PASS"
+    },
+    {
+      "name": "Deterministic concurrent first-write race: sequence",
+      "status": "PASS"
+    },
+    {
+      "name": "Deterministic concurrent first-write race: payload",
+      "status": "PASS"
+    },
+    {
+      "name": "Deterministic concurrent first-write race: owner",
+      "status": "PASS"
+    },
+    {
+      "name": "Admission rechecks revoke between lookup and transaction",
+      "status": "PASS"
+    },
+    {
+      "name": "Admission rechecks block between lookup and transaction",
+      "status": "PASS"
+    },
+    {
+      "name": "Admission rechecks expiry between lookup and transaction",
+      "status": "PASS"
+    },
+    {
+      "name": "Atomic concurrent quota: CAP_ACCEPTED_EVENTS",
+      "status": "PASS"
+    },
+    {
+      "name": "Atomic concurrent quota: BUILD_ACCEPTED_EVENTS",
+      "status": "PASS"
+    },
+    {
+      "name": "Atomic concurrent quota: CAP_EVENTS_MINUTE",
+      "status": "PASS"
+    },
+    {
+      "name": "Atomic concurrent quota: BUILD_EVENTS_MINUTE",
+      "status": "PASS"
+    },
+    {
+      "name": "Atomic concurrent quota: GLOBAL_EVENTS_MINUTE",
+      "status": "PASS"
+    },
+    {
+      "name": "Atomic concurrent quota: GLOBAL_REQUESTS_MINUTE",
+      "status": "PASS"
+    },
+    {
+      "name": "Atomic concurrent quota: CAP_REQUESTS_MINUTE",
+      "status": "PASS"
+    },
+    {
+      "name": "SQL failure rolls back all dependent writes: telemetry_events",
+      "status": "PASS"
+    },
+    {
+      "name": "SQL failure rolls back all dependent writes: telemetry_runs",
+      "status": "PASS"
+    },
+    {
+      "name": "SQL failure rolls back all dependent writes: telemetry_build_capabilities",
+      "status": "PASS"
+    },
+    {
+      "name": "SQL failure rolls back all dependent writes: telemetry_build_policies",
+      "status": "PASS"
+    },
+    {
+      "name": "SQL failure rolls back all dependent writes: telemetry_ingest_batches",
+      "status": "PASS"
+    },
+    {
+      "name": "SQL failure rolls back all dependent writes: telemetry_scope_windows",
+      "status": "PASS"
+    },
+    {
+      "name": "Multiple runtime manifests bind to one immutable revision; altered revisions and ID-only authority reject",
+      "status": "PASS"
+    },
+    {
+      "name": "Null-manifest exception admits only unresolved empty-context lifecycle",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy HTTP parity before/after migration with flags OFF and arbitrary capability headers; CORS unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "Ingest capability has no admin/control/issuance authority; admin plus distinct maintenance required",
+      "status": "PASS"
+    },
+    {
+      "name": "Secrets absent from telemetry/receipts/CSV/errors/logs and publishable snapshots",
+      "status": "PASS"
+    },
+    {
+      "name": "Maximum 50-event batch commits accurate aggregates within D1 binding bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "Canonical normalized byte ceilings are atomic at capability/build/global scopes",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent byte budget contenders cannot exceed one normalized row",
+      "status": "PASS"
+    },
+    {
+      "name": "Replacement tokens/revisions retain build and global cumulative budgets",
+      "status": "PASS"
+    },
+    {
+      "name": "Existing client submitted-event limit is additional, atomic, and charges duplicates",
+      "status": "PASS"
+    },
+    {
+      "name": "Clock-window boundary retries under the new database window",
+      "status": "PASS"
+    },
+    {
+      "name": "Orphaned or inflated historical summaries reject without normalization",
+      "status": "PASS"
+    },
+    {
+      "name": "Issuance rollback covers policy, capability and window writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Build blocked during issuance and flags flipped at commit reject all writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Manifest insertion and dependent measured event commit together; changed configuration cannot rebind",
+      "status": "PASS"
+    },
+    {
+      "name": "Prior manifest deletion between lookup and commit invalidates the entire request",
+      "status": "PASS"
+    },
+    {
+      "name": "Expiry during dependent SQL writes is caught by final permission guard and rolls back",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent different-build owners establish one run owner and reject global event-ID borrowing",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed JSON and deeply nested/oversized request bodies fail before admission",
+      "status": "PASS"
+    },
+    {
+      "name": "Flags-OFF valid legacy schemas 1/2/3 behave alike before and after additive migration",
+      "status": "PASS"
+    }
+  ]
+}

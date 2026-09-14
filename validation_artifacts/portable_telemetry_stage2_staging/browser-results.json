@@ -1,0 +1,1283 @@
+{
+  "version": "153.0.4234.32",
+  "originSimulation": "Document fulfilled in memory at approved origin; actual HTTPS staging network with normal CORS; all other network blocked",
+  "network": [
+    {
+      "status": 400,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9XaorHC22MJwlP%2BsCDAZfJ79t3ritNl7O9DzRiiBS9bRYyGczz4SWFMFF8q%2Bs12wjD3Dr4Ra%2F6kN2sMCO2HobrMO2Ub%2Bwru%2BRouJDtDOlB3O1NYGZuWuP%2FDTsmSRIfobhYZ3wHfEQ%2BKH%2FKgRCqkT%2Br4FxaW2SQq6fJzslrmc37j3eGwjN6XOvYdc\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cf8e3e5e0554-ATL",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "content-length": "76",
+        "date": "Mon, 14 Sep 2026 19:31:14 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wq2VzHs827H3c1tIWt9lMLzR4%2BFSe8N%2FF6xgV6GLoIonBmEZHuchOUM9zGlj00nMjuqVamSx2eO0rcOvtbd3HAK%2B2Dg2SR5AQ8wO1D5giPiGQrfJFB71puqMrwycsKkLFBlJc%2BbfZEnufLp%2BwRb5ayKKN0HQCpAISU3l3oJVQj9LXceEpLARRbus\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cf93f9820554-ATL",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "content-length": "192",
+        "date": "Mon, 14 Sep 2026 19:31:15 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=02JTYFN2tjB4TV%2Fyv%2BCbEnERD6pG3Y%2BCoMjCaKEWNWTD4%2BZHhW0VwYI1ROZIBi4Y0%2F5fxTewVBey%2FTbPQUj%2BbUrFiL6uepTLaLoXgED5hjZ7vOa9AU5MEwSYsoDlJ2OovFDDuPFJezfGSIZydXblD77gGkNfgy9wyYJnQL0YSY3HAYs8KDQ4fg8m\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cf9c5f382381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:16 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zNMgZzDbRFvNYfkEwRjF%2B38wZYCY4MH7MRE1QuXMCmSPJxZqLTQuLPBFTOZcmb96IXm5t6PGPWeChS6zyrSSHvVmrVW2Q1w7dYNmyS0KoXQney9LtwyUSCrife7wYbddCeU2ruuYP1IPlaFtQNmTKwzeKcOyVqfZO6ac9DOQ6Tha4yAD2q11yWjK\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cf9d2f462381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:16 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1C0EDnsm3A5RG3yfJkOX6pLWjar4%2F%2F9UxF1KZw7EpNueWXTB3C8aXcoekKnM0g9UZ%2B4%2FDI8g3nXIFInV0QZIz2JQISU%2FGfjL2%2FJpRFRLJspmjpa0JW8F3KK8IbWky5xmm3uq8NRi9uQUluW%2FuaSY9wKI40JRC1vek08rL%2FLkUscxB8O3hqPovc6N\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cf9dff602381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:16 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=UdscETXCYfhkJpsG%2BnfdUa1Uvjo9o3asoP%2Bbqfkd2nurOviZTO7K0siR8%2BWbUUZ%2BX2SOwW0XJ3JDcKichrqS%2BOZYNDv1u2TKZe7YRqKoB8PMGMDVDbv1q5YFu6B7R0XCl1qmHFKsyZRuU19zP38ilvrClXMC8tmpL79LtQDB8wl9bV74VTD53nfa\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cf9ecf6c2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:17 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=R9nnH9N0zpK1Bm0j%2Bq1ZJRfaHTumCrqLD1%2B6qJLYSkYy%2B%2FARBL%2FWL3vBXXQo0uIpdYMTDUnxRHbFKw5zGNFliuJmm7YBQLI9rcfnUdu4jVX1HWNk21nhIgoEuGPtR0KGXMUnb09VuFD5mQxhAJwaFBlp3VkY%2BrF%2BpEGWHRvPfa9fjUgBqqhWY8z%2B\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cf9f8f782381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:17 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HGnxuAuZpgDi%2BZi7pSrulF96%2BorD7Y8qn%2F3zg7GWUEfov%2B62pJlUkjE5iQ65bRaGbgAsqeeTGNpdOSvYFdEnyAgNjnCfOA%2FICypaEMYhWilS6ZF6tjPGen%2B19lrb%2B%2BHUl0HBmzifPEs7Uz0vCikERQ9ZmQ4%2FanZmuwcS6vxF84wwn%2FlDjG7fYcor\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfa08f972381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:17 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=X9qAq%2FKAKKl7iPnkDB4m%2BpU4vaCbWtTwrsvWEEP%2Fnc7Ei8VJ6yEDh25g2JJARC%2FORYNqW1Mx88oZOvrfBHNbxNw6Vot4xR4uXgReJ%2BqdRCmu1aEADNo6gFkRz8BMnnffdgBkeQvJJiZtE9dU3BpqgzCusJM8uysNKwuqEx3CzExDizCIoDai4awl\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfa15fb32381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:17 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4ialnLnpYL9k%2BX4VQ8m2WXqSich7c%2Fz0uhRq1ql%2FOlbF0OUW5nOAbcMZWoe6bejLPeG%2BS%2Fh4SGkpo88Sjv4sVrwFrsFsgV0ykoriiObG%2Bwhg%2BjDfgqb7rdIJArVRedEjbB97I4xksYYjcTN%2BMnitfz31e0ohvCBuVbWoH4WGN6Ziv0Kh6%2Bkd9Kwg\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfa2dfd22381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:17 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Cw8WyvkkMRt5gmbP9TTiTBfui4y2euYUWxKyCAenjnsgbzE%2BAZv7tAr%2B6sunSc5LKfRTyxCMiwBHUpWsKy0385IYIgm%2B7oQG7CStfDlzr7pm5HLfHB6m4V9Y4LDthfOOTWvrgllskKV6mYfjIArs5GtPN057bTO3yEVwC3Ab9vOfFTXZpXV0KDSJ\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfa3cfe42381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:17 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=t5kWaWXjFJoWeONxbPGlAkTEIiKHCdc5Xo8iMsB1rjoGCeyw%2B1n5GazOEPvLAP9LP9HXU9qcBT0MnRN5JMk6qV81HUCAeof5eWgMR8sLqValbxrNhwe6pvZfaZwzXD7%2FLF5BmAOS%2FMqYtgleLBrGi14JZYoF3NueHoc730rVzPVIzEBdAwMzCf8X\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfa4cffa2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:18 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KSBQYcG7wHOL%2BurgXe9KtCcVSJeo%2BfUT67zKj78vNPM%2FXjVPddMkd4N9HD6p1VJSCvCIkSD4gOw%2BuI1T7uXj0i8PdL5e3rALzo0Y7HC8jNmUu4aEjZ2Bc9P3vWVDi3MH037dV6jEzxkx5efe46yRVKrY0kynhPBMnx3Ey79R%2FKbykUMEHSw9qnfF\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfabc8b82381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:19 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=dfXnZMDSmb9tqyOZVsJDJ86R7DDoIW50%2FuyJezuQ9%2BzHDc4%2Bt8Hm66BwwTQReIFCf5y3qARnUWXgTjYCylpolRF45QrctdNNcrZkLyqaDVnIhykCEgRLIi6qHDGHiwkvkS1qPD%2B6KDehbL3LHCqXnJ%2Br08KnLTrejjM73XALjLUO07MV03tlosQE\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfae89042381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:19 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=iuJCrWbu1KhsTdXD2gD%2B23D0tkjkhRLaUODHhxPIpaDDLwGpxynoq1ZlhUUiPrgbt%2FzWlkXpEbzwJG5r%2F2r83twPIQh3TiaagZEWBrKCYaR83KXIa2iLW6sMULVb1smVKJuoE3ezu%2FeEceVRtkyuSSDrMjXYdFMqgLAgfVnr3qL%2FF0zQhGwLlprh\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfb0b9a42381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:20 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QrEp1QNB4OmT%2Fpnece1WAox8w4ifU6f7URjadAzbqKNkHyxY440cSkbVCwr%2FaOQtW1%2FncohwkqJEUmj3lv6SUIuiypN%2Fuov4U0l9FiJ%2Fc%2BmRFgpQ8GpYGnn9oaUKJFa4DGDebmFm0Vb7rzsnoy1QgMYHIErM7HWJzrd1MHQsVpd6gVPSznoRdmy9\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfb2e9f22381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:20 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=oXQPTH6SitvXlzN2bvdvtIjMO%2FVgyUi1IIibCvCwD6Gr0dmUTy2TnMpHNinmmdPHc%2BKOzWOV6b%2Fi38vq79XSkQuv%2BSBi%2FnBjT%2FEDTCmlUiqvnA3RhPUtYaBJiHGaTyuzZ8oRyMw1KCQMzgzA15mNK1AX%2BEB1Ltblt7DQ0BOXRhxo%2BwNrCHZWgW6f\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfb59a592381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:20 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Fjz4PdCvxUXvX9mLAYkzvftuCgiifm3%2BiCqQxe2usLIzXN5kNZAH8%2Ff9yWGppmXLJ2%2FxTV7n5kdhrnO7Qs1V19YYjeASSuEoVGty2CBy2LZktFUykdDrb9BICOJ%2FYOoc%2B8DqRdAw%2FZODUAcjdSf8Ftw%2FGV3w1Th4a6%2FB%2FZpOI1ans66Hods%2FgFQo\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfb79a9a2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:21 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=1Lc%2BTzyZgh2PLTAeSWD16Bhxcwf5KwEgzOksuLRmQ2xUNxMLgnyPI8oC%2B0%2BgpAboPFApdLev11GKL6OuYusIXp1TGljoa8x9Uf8lpDctOb8nDkWB7zaafLlDNTcHmS5fUG1M8Lrzhp%2Fp%2FDb%2FaLAy%2F60QYPrSIEfWF5Yn0cbgh%2Fz%2FxnnjVFKbatx0\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfb9bae92381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:21 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gUgDgWdBqs48NW0dMQx96Oyl5TmlbYOyEJZ1m896TNC64moxJRLkxdyx7wth%2FAoCk82f%2FXCR7PuLHoBtbNWU9pMExmbIq4i2WVVXRL0ag%2BYdWDn4gSbvAc5XbROceqgoYpSZMDDqapACCg8tgqp41DtZiZrD2UaWJw7Q%2FZb2a15pD9ZcWcyTCYIr\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfbc5b582381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:21 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8wgRwK4NyN7a2%2FN4ALV4zAnjQ4tcNwCfgHXbqfoc49ngt5KpiEpjrtvemWwSE26HUQN8kEw5jT6o44iPjqOKFKB9QkiWi4kIUWW5l3fopM3ayxOb1nvsMQz2OkWxeDqs3%2FO4Glpm0V6%2FOqTkSpkcOvMljTRQdutM%2B6vUlauKPdDLGw1MtSL9Br3R\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfbe8ba12381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:22 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rh1X95gy2h9IM10jxnvbC1MixnfaXJF9bpVgAMXn5xByQS5mpLTtiSDF%2BlPbb5ACLMswrBgSFApbJLeLIe1gUM8aypyz8ffoS0dVa6yWPMIk96AT6jMcMZXPT0VDLUwxHg00hGon6d9ABeoNZpaUutJ95Nufd1oAkLki9iU5LVTdfAsP%2Fm%2FCEsc1\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfc26c0b2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:23 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8tXXy3K%2Beol9sCWkB7Xwpb26X1aguT8S6D4fhnxVL7I6%2BvAOL2%2FbmApYMX%2BFKuQirrNEk0%2FNQaDofyDDouPdx1P305A%2BNQhJFMUeVsvVD6SxyRtCTjZh2MktuZnGlseI6L2mwHIqUbsMhtFw4NmsC4rP4ySQ4vPG6qiYBCOujw5J5uxSZ2vLR1lu\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfcd7cf42381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:25 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=028QZ0gbFEy8ku%2BUIN7tDANxQWjsIieLGTYKutgPwvD5ORfNh1%2FxQHyr7PbrqEoNTnZZDm14zW3HItQsU3Veb4EYHOg5ygwMQ%2FloU4IiQDtA7KsS7dgB3G4hq7kj%2B%2Bu%2BokySmymB4tZepUJAA86riPpum24RIY%2BLgjwN1AKb3K4nAfrABt397VCh\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfd3ed962381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:26 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4hlJhGVx3rwA3oqoLSX2GfO4m%2FpV2dD8ZUeabTaSXtdamxwpBKonVTvXi2FQv8cUiVUaNk5U7bTGcVGzHU%2FTGCfoZr8fntII8bO6Ay4uTxp8jfESs%2FYe7wHBZWCNVAPZgWyfdZVIjSq116q5Yemkmuo9fjXh3thRjwXINpNvoCwOIRUa4e2RFhUX\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfddeea72381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:27 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rE%2BRSCMs0Y5tfESu8Sd3rL5v0j1kLjPyDM4p6cax%2BFZq06dpzvrBoVu0iHSWjYVPPvUnqCpLSzUFcKI%2BDoA3%2FwLtKDWTO7cOtwRezH63Cqn2FMpare6T%2F8mTDTNdbU8fC9w2boCUwtfb7u%2F5Xo4lHdd%2B9elDd8b5QLsph%2FSEJwjaA7qD5VciIP3G\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfe40f482381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:28 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jO4%2FJMqWfTVoLOLrAiW1aF0tuG3VoW6HSIUFDpLtGxE%2B82J4W58FR6njhyC8%2FpZrgRHxN134zhG%2BHROynauOXUHbfoUeK2hCn%2BstEzWL10Qz8qGVNwUjdblhopXzAnmYQ3j7%2BuLzYO8%2FE%2F3mF9lYbu9ZczHnLRvhZ63PzZxAfnXQD%2BBY5OM23iLC\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfea08532381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:30 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8ldwQzmH6sFjUW%2BWrq7dBmf8eWyqEBm%2BrImiFA9iKtZh4PJWmbrwvZSeq67O4KQYUUQdEWuTH8mijr6GzF6j7bSFaKXkGn25H7MhwYKQ%2F3cR62q2%2BKpl84eSHsMFv5M7UQRezg8UOPCqiwiWEKRYLF%2F2Wc%2B9NgX6srT8aSc6Qk3LFf1cwuf37trg\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cff259ca2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:31 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=80lsENhkqzFGLOS7wJBvPuRP7nxF%2B385d%2FUJjvz4cuXpPXuP%2FT9wKvvutpHBroixxw6EG4QCf0U6115sl2W2VfLwscqDnxiIEhIBcZOgr%2FilSXWIwOEbcdl%2F4unBep3FtGDyzcq7wWN4XmBmAIG1h7GX9N1e0dLGoOsaRMM3CPyRks78YIYiHYB9\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cff96ab82381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:32 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hbQRd5zPpaSrOb6sTRmKZ9cXvt0zbFbPnPq%2BCgN3FRuQS13nofcRfVjpSB0zIPyg9KV2jbaZ8ys96QSSxVhVx%2FvbRIh9UgFwQB2P9NImJ3%2BCnm2QU8w%2BQihatyQr%2BAD0AMqedNFgRVvmV24yH7lwfIgkwBJ0iWZkqO676miKCi7Gret1OpIXoCK7\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1cfff7b4e2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:33 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aVb2qvuvGF4icNIeAguC%2BRgCQmHSb7IabLqiZY9wTLSvOQP2S%2F4c0SvbngOidgm4%2BY6PIj0UTFFoAb6MDkFqaGFrawrqhxcw659ArFXy34KD3WObN2MuLpxDJO2nwAHzzYv8HoBfH3ncsffq%2Finiu1Wq6TEPigpQPgy04EVNLpg7Yjsx29pvZmSB\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d0082c142381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:34 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=IfT8XywpiBN9YxorSXYB7ZtgwEpcsiHEuX8R68htw0CT5MnKINT8ckxlNYWWBjSoDyNFqIOb7wYgy3o%2B9nyiVPTcpKidnFCdeVWvo13xwPB4TZHs5Li3xXJeEDFOn3PZhNubJG3ogScFWEUcccpVpTZ1cBNvL25VV%2BiV7xF3WFJPfV3Xp7B4jutS\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d00ecd062381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:35 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 400,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ArEMsAS5gmwSB8Iz4TwYcOi3ojRIuc0aISes21BuCSbr%2Bz1CvCTWg5MgwVfaPhDrNxywNIIbw0xK%2FEIx87aJa%2BrYuXkZk260GAsnu4U1Mul%2Fe7A7xDHd5K71sUwasxHySWyFizldU7E3smV60dnT%2Fq9HCib0aWeQyn7peFtM184OWaP%2BXT2Kqcdd\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d0187e172381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "76",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:36 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=mT3ZdbZTQHal%2BMMvW8jO1Z3zU4mctfotZaHrGEwFp8IfUbPcF%2BdWT4jEkwZkab0FiAXat8HDZ5dkz5cpCRMGZ7TK2%2FFMlAOTPKXaIhXBPER32xbYXmfnP1p2vR0a5WMAALXDObfLHAdQfTjZ0EGCyP5D5%2FM5gpxCIZ7mJSxkzYQL%2BaC8RcSe%2BVw8\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d01d9e902381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "192",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:37 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5NUhcGRRuWfWG1fk7Wm6%2BEYaCpoEbU0wHNq12ygcYjdnHiLIw717NygqhWxm%2BYcMWKfytYrIZhpDL7XMM6%2BYkfCaV6567qmoT7vrewHf9CEy%2B7%2BZXdGHOTvQWJ9MhAIV5dtDhZaO0vJd83KcsJOymcTXK57u4FyLWJCZnD4dox45Dv3C5bfOxVb2\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d024af462381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:38 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=cnrwPOEj1wEzc5dwYRKxhljL7AEdi03%2BXWBwtFK45cEaoNsmZC8mCCNJ2Zq8jG7v%2FLU0qzlLFb4LTvpszUUdpso1kmp3aGrfAGVqMLXT179IhLjZiC4fT7QwoJWXG%2B52UHU%2BR1T41ZRCk1Lps2oO2NRgvrT21IVcN0h55B28QRL6f5waUPuJg7bb\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d0260f812381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:38 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=qSSjzbU%2BNeu4c8MgQHZEFhNIat5B%2BQpFF95EM3z%2BWVSjx%2FSxP4CIioewceJFAHe2kEZKv5CPKWBAETDYFEafnohNUc7LKgD9m9XQO1V2YJTauetdQVByn0kAFT1anXgqTbWtCJ6Rj2i2JJDfTn0PmGf8P3hWBR%2BQqnvLjY3Y%2BzQXrh6daLyl18hd\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d026cf942381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:38 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=pyT4dSVeZX8NGTHxCE79INp4uidPv8E2AmK7I9DqQTY9Z269Td%2F%2BodiuhKaOBzkwED9xvBSUv0LKD3TbZKJnNLceOyRoKwFB4sdRp0FnI52o6s8hGRmdy%2B9a59tFcK4BU72CKQTcv1HZK1mBkMyH%2FHhe6mmCGzOQXAJIwUFzNWgeLtege1l8k9C%2F\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d027afa42381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:38 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2lZ%2B4q0E93ac2%2FB2s55bA3GDJQMB5xQEwUd56PJexkp1Kk5LVx2PM2czOuJP1hmTySuhS2MOW%2BeQUStb6KWVA7VocqCLTc9Fl1pVe4%2FSWjEYMEGbkRt2BZTEJBmcvJjWKmIXkw5I84UcRF0Czn8m6Xmv%2FSMFV4KnMN4TT2ftFSTuKvdkO0dbKz2h\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d0287fbf2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:39 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=n1a18eGmg8rkWBwJ65pWD34IGSXrwKsV%2Fz0I9N0LicpCFx3d03nlLHuzgItiqFQcu%2FcVP86uKk3QQxOPNMpTVVQ%2BrH%2FkhyzfdHkYtrzYKMhRBNgKCa0IuwOHvXmApGmpSMwVxm5TcVvvpz9ylSFTf6i%2B3y7QGITR26BagDIKz7pZlR2onDgtvGug\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d0294fcd2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:39 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wz0H5kDNSVFtJoLPsyecQlO2GGnDmV2LYqZVaInsBkAy2koWMB17kTyxc5Fo5IMgWSEpe0%2FXAzr9uskdUcW%2FyxNWgKrd%2FmdpmPHCR0yVEStf5OTxW5o%2FE2pHlQsvTjqpSRXmT2zejuYRqljtwRKFWBSn6NSFrLLDMwGEEDN5tJxE66Bll%2Fs2tYui\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d02a1fe22381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:39 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KklHTC2Sc93h0Yb5kivprkaJv2UlR%2Baon6eAjl%2BIB3%2FGCrjDwqekGLkmtR1rh4BWbeYkg6bDx7HDkz3tHtHMoKdiJNzC0NB1RtqsDeZ0QsDECicyaRdQSYspQHFJ6Q0wSiGqLAZXcBQMZNHzDU%2BzTy3iPNsZnPqA%2FzSRdbr92rILk939upyuByNU\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d02acff72381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:39 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ka8FM%2B2zPjZIR6C6X%2F1HpnD4W%2FgjJYcjGv3W9du2Al9YQQO3vAhmBREnKhIq01h5GdSFTcK221Rrf6Hr%2FRtQORjpfS1dTuqt2sbnejhCmy39wP90mKep1kFinlftZ5H3ctn5uKkrmUJVqOJxsR7dZcv0SK15CX%2BZJ7vbv%2Bd6nuLd4t7G%2F9wx8c%2BG\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d02b980f2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:39 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=v%2FharUYFlvB0KXtMtolWVoncJRnJp3PrxGlpElaHpdVq4BrjWIbb3XipmPCo%2Fope6gNGjGULbmTS6ZWq5mvs22DendyPyk7dWXOCJXJNBq4RbjoMQG3s%2BHCakMoyGf0qTutBpuinHoYcdvYgc7iINNo6YFIIz4GNnTfw9i5LCxUQG%2BBicF5TgIL1\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d02c98232381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:39 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=T5p5Fb43CoQ6uP319YFCE1meQe9GrtFAnXZ%2BDzG%2B1e3twgzfOCpvRComMAk2vRG8tMvXlIupRh5Y3LWgh70q4%2FwzfFDajpTjgRNlVVz6PzJEN9MZwH2EHA7Xat9a%2BCIqD45WBQP8fQoLbC8Kcc%2FAClJKXDUKDEhgrRKEpyeLkIGzeii2UoyGBG3K\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d032087f2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:40 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HSNRACpvRY9Dp6p%2BJWEobGbk7Vd8wCXZ2PGRNcgkbq9Hlb7VY0viJxdK0%2BDllypNZ12atdg9OtXV8Ll3ld2wMyxh7y99vl6drBuMKqV4bwzpRAvTX2dUYnNvuN%2FUmuqcU7cuZh%2F9N8XfGtNBJ2Ba2l48%2BJEASZ25ZLGkr5EamMZEWG9EOr7weTDF\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d03408a92381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:41 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=ip5Puc3QUbaycULwjBaJF1LX2lWmA0jlftMwTxcLpzMo6X5noI%2BTt%2BIiDCrITrDSfPE7WPMxbQ74l93%2BZ7CcRHsVCyHZlwsHRgOHS9JPHFnEoekFheqDQ3e2sNGjDsSVvXS4kvdocWadYDvQxBUT1OYRRDIEyO2Vaf%2F4tZSel9d%2BB9STkSOhziMa\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d03658d22381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:41 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=XEr0cL8hOLkxNhe2XgWZ4oUyUsq0kbHyozTt5pfyhWv2zRPkOMS4Eet%2BRNwBESwfGv81pzuoi%2BcxHHcVUi4c%2FphKqady7tWMQMtMtRi2%2BQ4SrvmJ7FBJrj68weertrZVqdviBgDaJih%2BY7TDrVtKZpNCxsPug1YkRwwQHWkWE4Y8RpLJ8%2FCi7yeA\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d03868f42381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:41 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2BKKaenGDC3UI3DODKhPSC8gmdUlhl7TScKTKh%2BH%2BV91EvL17Um7XpqdIfgZcFhwTV%2BealbYP27utKSNjKXhSEe8GW5tKwdmVlQHfqbxEkWkcuVvWfqEwEDQ6iTNAuznnSVEpK80yuN6n1RpH%2BzIB2lHe5BVW8YWaiqz2ZbEh6DSTxGqldgedqDb%2B\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d03aa91f2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:42 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=O%2FD8lnaSso3SK5%2BVPrNTrkutrD6CPME090nuthbjs6CyhAayxkZyxNkn1bHbaBBPzFpK5jfrrD31B3RuIqf4xvwtGw8FIsMJnKb0jIFBHIf4aZ1xDmRj1yz2z%2Bzo2UAqNOnbhQoLNTtbrEW7CNIn7JcMZauRLCKHaYQ7HAZRu8mm0zgdt9mDkwGz\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d03d097e2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:42 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zsmPapsdeH%2Bhq0FdDi0iNXjZDRiZ8Wecao6KZkAuOmET8p5R9nfP6PhiFY593FwtpTL0vYnXwwMl4UdlaR0i2ei7Fq5I8slXj1irwHyfcS5%2Bg521XA0y86unqtFLIRWqFl%2B4XbUCj8fLYPN4tLTPOOqS7%2BgOg1bKF6FsvGQDTalCwMz34oinz7sr\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d03fb9bf2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:42 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=l3avWRxdMFoIcKRQNSkRxa%2F3%2F1Fd5zjhA9yLh8n8cjDB3BsbLfppIvXj4Rqt4G6WLQDYxJGx97e95TLKkYS4f5gELGHuAu%2Fz6BJhsguCl04lVDfvcsjymkbXMBzHvlW5Cw2m3w4RG671QKPw7HsZ4Qy1WHnCCum5esMvIwakHHT%2FcZEXFDelsCYc\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d04199f02381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:43 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=aAP1Ksm6Y2wtUS1Z%2BAknOvzheywtaz8Eh%2Fg4MTw5GvY6pEHeQ3Y8leJrjwjXrX%2FphXMMeAcVcL7aeXWD4L2I%2BjrAnjlPO2ZPLOONi8UIzRvMZShM%2FyMmopgdeHaoYCfPNdOTz%2FiicNm2kk5EnkvRwoamcMcmZyvhWpG3RjflEw%2FsYb1fK3IhwU%2BR\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d043aa472381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:43 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KAcIYHW%2FrpcoOmh4NmBGc1rXljs2yzptqj%2BRpoBA7VETITjz8Go2d9hPaDHEyQEhwF1wTo7UtRbk%2FD6WJ2njxLhZYf7ta0BUZTLQfNkXhQU0s4mWHXgQyHH6vZgiG5f%2BastY3egvcdXg3LUrTKskaiMSfwRbF7Ho05Orb%2BSlE4BB2wfO5VaOdhnT\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d045da9c2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:43 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DRl7TdoS0QuxC37PPDHDr216pdxOfBBklQpSAXZ7o2zpVw8zzLeOt85aKGPO6nuDroLmJub2W76GHQqNCDJDWgYGf8j4n%2B68CpuzOxyHboDv5FoqKJmPyQh%2B1yX%2Bgtd%2BaO5gn3TksHwNaCJ%2FFBrR1eJR3GG5fWtX%2FVbTlwWuoEBY2lF3EUwN77x0\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d04d9bbc2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:45 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9Q%2FYs1aR3ZwYhr3eXn1n3xhjSDq0X46ZFoAumy4NePpcbDGjco6SBcl5PHxCqX5o49CCnpSSgK15ndQnQKvieZ0RcEAvCRLgdZfhpk4glqLwmGoJ3rwz3um6TQ9BaAmCORR5%2BE2qQkgf%2BfaIfivS8fEknyLam89w7N8pRqjLmyB%2B%2BnN1QFn3Y%2BXE\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d055ed032381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:47 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=H4Tk7MUwy5pRFebcuxe9bnrA1x1pbAXzHYmkYy%2FqN1a1bIf%2Fye5y0vYqFKg1E5hZPWkZc%2F5TlswYVRfuyE1XpyT0uNOpcGp3EISk5AXCBzxQyz%2FcBE%2Fy%2FEEz1dEjeglCP7p3f1ipMipvAiG%2F9wVB6qaKCoVFT07t%2Bk%2BtxBnhb1K2%2BJEbPVMQsOzh\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d05d4dbe2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:48 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2BLIRzSOxbLNOYYD51DnL1ZE3ZnzrFK%2Fk1bgPJllrn8RbD%2BAfJ1zs5FS0wj8tF8IGTr0C3dS8x7isYn%2Fo2oKVbPBcwUDfzKpekNOuip0sxc0hJ0f5Edj%2F4CYoAUvhfwqrCpmJ0fpYAdWEaFHP5yMMN5RuwQztWTAfhQvQcDz3EQAOeKjJwi9am8u%2B\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d0660ea32381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:49 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xdk2%2B3dBua%2FYBT9OBkOsRlX0tZNw5TBLU6QHnW1yaGNDTiKzSDdnESdF61YvHWS8TQdtThUnyPoynSBmR3lxUvMqom3BmkfWPQBsR5%2BwAcCw8zKi1DFAAKccYKU%2BUpddTto3NFuJUj1VkpD7Icn8FKmPNZUrK%2FL5vs%2Fm0Vqi3Ugyc%2BUe6qJ%2Fl2tH\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d06d9f652381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:50 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=UHO1HEcASd8Hh8NWWqgKzyky2jGxK4rVzIg2pRNOV%2FCwK4Df%2FXlxkV3W7uf5ymahX0t9WxpNU2g9NkNaztX5XlU7QMSO44Hc3R0m3jammcmI3NeV%2FG7E8sfHv%2BnKMqP30iwV2tglFJS57DSUBhNUMZJoN%2Bo87V762qJfanueoOL9drL2hIyCPI%2FR\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d07578262381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:52 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=lp7FY5ZxKggQUp7YLLjrM3K2gB5oZDW%2BpqgQTbTk4y5IreCmSHcWQcIByKwcFZDhbyZrzSY1VNcylmnQ81b52xftAPxKkudfapt6sKpH%2F8NE0YoM4nKdM9osvT0ReDqc8OtpVJP2LnDfyozPwxTYHpL9EEhxhzAwAoUYzg%2FgoR4S3hUsrYm0AeyR\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d07c891b2381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:53 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2BfV4n47TE4osFIFadITuFAvJisgWtzRTclKO%2BIICes81UoO9D%2Blj8LGVzt07RveGv%2Fd6VaXxlf9NuZ7FnhaxFPAQPVrNKn6dCFOGvSiat4n9J1aF%2BA6Bw7Ls0N29WeMrkFWdkWRFrIpc%2BJVBRoZtXhMDmZ64wpoHD3GF6qM3HQY9Nic53qLZfIWL\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d083f9e42381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:54 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=eEJVQ3WncPBvzzv7ih4egpEh8VyoSL8dsLgz4TDsCKenkwglVB%2FVnzkgI%2Fhn4Ou2HTQsB%2FWa%2FkqDR6MFP7tUc3j6ClbtoSMIJco1EhHPmE%2BS9HmPLHyzD80s4nA1GWdM0gtU4GQRsLhm7MBjAo79GlceXJUQ5BPQOY%2BTuT1zObodkwp2LZXkJr%2Bg\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d08c1a732381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:55 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=UJi3odt2TXLgmqRFJa5fOZjbjhcoDuLLJxLKyB%2F%2BEKKn85hNlNfIYdBkg1jrGrt3vyYNnOLyVjmBTvvDlMehmfKPQqTuMz7P6rzWGHpdGEEQf2WrW8NI5gD%2BmsJiE%2FTPV0nCS3dFmwNh95pYSv5Pn9iNy87hO5A7iz7ITpt%2FY7lgoEue8HOIIGWS\"}]}",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a3b1d0930b022381-ATL",
+        "server-timing": "cfExtPri",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-length": "80",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Mon, 14 Sep 2026 19:31:56 GMT",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin",
+        "server": "cloudflare",
+        "priority": "u=1,i"
+      }
+    }
+  ],
+  "pageErrors": []
+}

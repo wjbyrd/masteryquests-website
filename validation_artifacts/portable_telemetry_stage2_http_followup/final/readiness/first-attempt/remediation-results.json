@@ -1,0 +1,116 @@
+{
+  "passed": 26,
+  "failed": 1,
+  "results": [
+    {
+      "name": "Private explicit parse rejects every inherited fail-open/config/storage state",
+      "status": "PASS"
+    },
+    {
+      "name": "Rate configuration has bounded integer/default semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "Both maintained private builders require an explicit build option",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin CSV neutralizes strings only, preserves JSON and emitted sidecar hash",
+      "status": "PASS"
+    },
+    {
+      "name": "CORS and distinct authorization remain enforced on actual Worker routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Central field set and frozen schema are identical to inherited audit",
+      "status": "FAIL",
+      "detail": "Error: ENOENT: no such file or directory, open 'C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\validation_artifacts\\portable_telemetry_stage2_http_followup\\final\\readiness\\preflight.json'\n    at Object.openSync (node:fs:560:18)\n    at Object.readFileSync (node:fs:444:35)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/readiness-remediation.mjs:44:417\n    at test (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/readiness-remediation.mjs:11:80)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/readiness-remediation.mjs:44:7"
+    },
+    {
+      "name": "Composer recipe/UI default false and strict boolean opt-in",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual Composer UI defaults OFF and recipe download retains explicit choice",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated on: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated default: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated missing: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated false: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated empty: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated whitespace: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated unknown: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated string-true: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated number: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated null: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated unreadable: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Build pseudonym scope, browser scope, storage reset, queue migration and opt-out",
+      "status": "PASS"
+    },
+    {
+      "name": "Unavailable transport storage and malformed current queue fail closed; old family UUID is not adopted",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-intelligence-directorate explicit enable=false",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc explicit enable=false",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc explicit enable=true",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-classroom explicit enable=false",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-classroom explicit enable=true",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated transport introduces no unapproved field/identifier or Worker errors",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

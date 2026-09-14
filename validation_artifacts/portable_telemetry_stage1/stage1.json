@@ -1,0 +1,710 @@
+{
+  "format": "mq-portable-telemetry-stage1/1",
+  "repository": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "branch": "main",
+  "startingHEAD": "a248c116c66ab509686e9234b8d343c93c12ef1e",
+  "designRead": [
+    "FINAL_REPORT_portable_telemetry_capability_design.md",
+    "validation_artifacts/portable_telemetry_capability_design/design.json"
+  ],
+  "stage1Foundation": "IMPLEMENTED; local transactional invariants PASS",
+  "stage2Recommendation": "NO-GO pending inherited governance disclosure drift resolution and green required regression",
+  "featureFlags": {
+    "CAPABILITY_ISSUANCE_ENABLED": "false",
+    "CAPABILITY_INGEST_ENABLED": "false",
+    "default": false,
+    "enableRule": "Exact server-owned string true only",
+    "workerIntegration": "None; existing Worker unchanged; new helpers only directly exercised in enabled disposable fixtures"
+  },
+  "migration": {
+    "file": "server/anonymous-telemetry-poc/migrations/0003_build_ingest_capabilities.sql",
+    "remoteApplied": false,
+    "tables": {
+      "telemetry_build_policies": [
+        {
+          "cid": 0,
+          "name": "game_id",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "build_id",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "created_at",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "blocked_at",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "accepted_event_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "accepted_bytes",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        }
+      ],
+      "telemetry_build_capabilities": [
+        {
+          "cid": 0,
+          "name": "capability_id",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "capability_hash",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "game_id",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "build_id",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "build_version",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "schema_version",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "issued_at",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "expires_at",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "revoked_at",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 9,
+          "name": "issuance_request_id",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 10,
+          "name": "activation_digest",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 11,
+          "name": "accepted_request_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 12,
+          "name": "accepted_event_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 13,
+          "name": "accepted_bytes",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 14,
+          "name": "last_used_at",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "telemetry_scope_windows": [
+        {
+          "cid": 0,
+          "name": "scope_type",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "scope_key",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 2
+        },
+        {
+          "cid": 2,
+          "name": "window_seconds",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 3
+        },
+        {
+          "cid": 3,
+          "name": "window_start",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 4
+        },
+        {
+          "cid": 4,
+          "name": "request_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "event_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "byte_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "expires_at",
+          "type": "INTEGER",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        }
+      ],
+      "telemetry_ingest_batches": [
+        {
+          "cid": 0,
+          "name": "batch_id",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 1
+        },
+        {
+          "cid": 1,
+          "name": "received_at",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": "CURRENT_TIMESTAMP",
+          "pk": 0
+        },
+        {
+          "cid": 2,
+          "name": "anonymous_client_id",
+          "type": "TEXT",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 3,
+          "name": "event_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 4,
+          "name": "inserted_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 5,
+          "name": "duplicate_count",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 6,
+          "name": "synthetic",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "0",
+          "pk": 0
+        },
+        {
+          "cid": 7,
+          "name": "capability_id",
+          "type": "TEXT",
+          "notnull": 0,
+          "dflt_value": null,
+          "pk": 0
+        },
+        {
+          "cid": 8,
+          "name": "admission_valid",
+          "type": "INTEGER",
+          "notnull": 1,
+          "dflt_value": "1",
+          "pk": 0
+        }
+      ]
+    },
+    "indexes": [
+      {
+        "name": "telemetry_capabilities_build",
+        "tbl_name": "telemetry_build_capabilities",
+        "sql": "CREATE INDEX telemetry_capabilities_build\n  ON telemetry_build_capabilities(game_id, build_id, build_version, expires_at)"
+      },
+      {
+        "name": "telemetry_capabilities_unrevoked_expiry",
+        "tbl_name": "telemetry_build_capabilities",
+        "sql": "CREATE INDEX telemetry_capabilities_unrevoked_expiry\n  ON telemetry_build_capabilities(expires_at) WHERE revoked_at IS NULL"
+      },
+      {
+        "name": "telemetry_scope_windows_expiry",
+        "tbl_name": "telemetry_scope_windows",
+        "sql": "CREATE INDEX telemetry_scope_windows_expiry\n  ON telemetry_scope_windows(expires_at) WHERE expires_at IS NOT NULL"
+      },
+      {
+        "name": "telemetry_batches_capability_receipt",
+        "tbl_name": "telemetry_ingest_batches",
+        "sql": "CREATE INDEX telemetry_batches_capability_receipt\n  ON telemetry_ingest_batches(capability_id, received_at)\n  WHERE capability_id IS NOT NULL"
+      },
+      {
+        "name": "telemetry_run_manifest_reference",
+        "tbl_name": "telemetry_events",
+        "sql": "CREATE INDEX telemetry_run_manifest_reference\n  ON telemetry_events(run_id, build_id, game_id, build_version,\n                      CASE WHEN json_valid(extras_json) THEN json_extract(extras_json, '$.manifestID') END)\n  WHERE event_type = 'run_manifest' AND schema_version = 3"
+      }
+    ],
+    "compatibility": "0001 then 0002 then 0003, historical valid/legacy/malformed JSON retained, existing event schema and CSV header unchanged",
+    "deviations": [
+      "CASE WHEN json_valid(extras_json) THEN json_extract(...) END protects malformed historical JSON in expression index",
+      "Name existing proposed CHECK guard mq_ingest_admission for safe retry classification"
+    ]
+  },
+  "capability": {
+    "format": "mqic1_<43 canonical unpadded base64url characters>",
+    "entropyBits": 256,
+    "crypto": "Native Web Crypto getRandomValues and SHA-256",
+    "storedAuthority": "SHA-256 full canonical ASCII token; lowercase 64 hex only",
+    "rawPersistence": false,
+    "lifetimeSeconds": 31536000,
+    "idIsAuthority": false
+  },
+  "tupleBinding": {
+    "game_id": "faculty-composer",
+    "build_id": "composer- plus 64 lowercase hex",
+    "build_version": "64 lowercase hex",
+    "schema_version": 3,
+    "fixedManifestID": false,
+    "hashReuse": "Existing contractHash/stableContractJSON; manifest projects to immutable base revision"
+  },
+  "runOwnerFields": [
+    "run_id",
+    "anonymous_client_id",
+    "game_id",
+    "build_id",
+    "build_version"
+  ],
+  "transactionInvariants": [
+    "One D1 batch is the commit boundary",
+    "Database CHECK guards revalidate permission, immutable ownership, exact event snapshots, absent novel IDs/sequences, manifests, window clock and budgets",
+    "Only guarded novel plain INSERT statements are followed by run aggregation",
+    "Events, summaries, receipt, client limiter, capability/build/windows counters commit or roll back together",
+    "Final permission guard detects expiry during SQL writes",
+    "No application mutex, no Worker locks, no production JS BEGIN/round trips",
+    "Corrupt/mixed/orphaned/inflated historical runs reject without repair"
+  ],
+  "duplicateSemantics": {
+    "definition": "Same authorized event ID, owner and all 38 normalized stored columns; extras JSON compares canonical object form",
+    "accepted": 0,
+    "acknowledged": true,
+    "runCountIncrement": 0,
+    "novelEventOrByteIncrement": 0,
+    "eventOrRunReceiptRefresh": false,
+    "submittedWindowWorkCharged": true,
+    "changedEventOrOccupiedSequence": "409 conflict"
+  },
+  "quotas": {
+    "provisional": true,
+    "defaults": {
+      "LIVE_PER_TUPLE": 3,
+      "ISSUES_BUILD_DAY": 10,
+      "ISSUES_GLOBAL_HOUR": 100,
+      "ISSUES_GLOBAL_DAY": 500,
+      "CAP_REQUESTS_MINUTE": 3000,
+      "CAP_EVENTS_MINUTE": 60000,
+      "BUILD_EVENTS_MINUTE": 90000,
+      "GLOBAL_REQUESTS_MINUTE": 10000,
+      "GLOBAL_EVENTS_MINUTE": 180000,
+      "CAP_ACCEPTED_EVENTS": 2000000,
+      "CAP_ACCEPTED_BYTES": 536870912,
+      "BUILD_ACCEPTED_EVENTS": 5000000,
+      "BUILD_ACCEPTED_BYTES": 1073741824,
+      "GLOBAL_ACCEPTED_BYTES": 2147483648
+    },
+    "overridePrefix": "MQ_CAP_",
+    "invalidConfiguration": "Bounded positive integer or safe fallback",
+    "clientEventsPerMinute": 300,
+    "maxRequestBytes": 131072,
+    "maxBatchEvents": 50,
+    "acceptedByteDefinition": "UTF-8 stableContractJSON of normalized novel event, including extras; not physical D1 storage"
+  },
+  "validation": {
+    "suites": {
+      "capabilities": {
+        "passed": 56,
+        "failed": 0,
+        "status": "PASS",
+        "evidence": "validation_artifacts/portable_telemetry_stage1/capabilities-results.json",
+        "failures": []
+      },
+      "governance": {
+        "passed": 13,
+        "failed": 1,
+        "status": "FAIL",
+        "evidence": "validation_artifacts/portable_telemetry_stage1/governance/governance-results.json",
+        "failures": [
+          "Canonical generated disclosures and frozen schema dictionary have no drift"
+        ]
+      },
+      "readiness": {
+        "passed": 27,
+        "failed": 0,
+        "status": "PASS",
+        "evidence": "validation_artifacts/portable_telemetry_stage1/readiness/remediation-results.json",
+        "failures": []
+      },
+      "scheduled": {
+        "passed": 11,
+        "failed": 0,
+        "status": "PASS",
+        "evidence": "validation_artifacts/portable_telemetry_stage1/scheduled/scheduled-results.json",
+        "failures": []
+      },
+      "backend": {
+        "passed": 18,
+        "failed": 0,
+        "status": "PASS",
+        "evidence": "validation_artifacts/portable_telemetry_stage1/backend/backend_integration_results.json",
+        "failures": []
+      },
+      "regressions": {
+        "passed": 21,
+        "failed": 0,
+        "status": "PASS",
+        "evidence": "validation_artifacts/portable_telemetry_stage1/regressions/regression_results.json",
+        "failures": []
+      },
+      "contract": {
+        "passed": 16,
+        "failed": 0,
+        "status": "PASS",
+        "evidence": "validation_artifacts/portable_telemetry_stage1/contract/targeted-results.json",
+        "failures": []
+      }
+    },
+    "totalPassed": 162,
+    "totalFailed": 1,
+    "maxSQLBindings": 41,
+    "maxStatementsInBatch": 217,
+    "concurrency": "Deterministic pre-batch barriers and synchronous real SQLite transactions; no arbitrary race sleeps or mutex",
+    "failureInjection": "SQLite abort triggers at event INSERT, run UPDATE, capability/build counters, receipt and window writes; issuance failures and mid-write expiry also tested",
+    "externalNetworking": "Node fetch/http/https/socket guard permits loopback only; browser context routes intercept telemetry into local Worker and abort other external requests",
+    "browser": "Headless local Microsoft Edge; disposable generated fixtures only",
+    "independentCompoundChecks": [
+      {
+        "command": "node audit_tools/telemetry_contract/generate.mjs --check",
+        "status": "PASS"
+      },
+      {
+        "command": "node audit_tools/managerial_telemetry_parity/sync-composer-behavior.mjs --check",
+        "status": "PASS"
+      },
+      {
+        "command": "node audit_tools/telemetry_contract/inventory.mjs",
+        "status": "PASS"
+      },
+      {
+        "command": "node audit_tools/telemetry_data_dictionary/render.mjs --check",
+        "status": "PASS"
+      }
+    ],
+    "sourceDiffGuard": {
+      "status": "PASS",
+      "protectedTrackedChanges": [],
+      "configurationChange": "Only two disabled flags",
+      "gitDiffCheck": "PASS",
+      "newSourceWhitespaceCheck": "PASS",
+      "publicationRawCapabilityPatternScan": "PASS"
+    }
+  },
+  "sourceProof": [
+    {
+      "path": "server/anonymous-telemetry-poc/worker.mjs",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "0d4f48dc345b9b1e8771b1814bd103bcd6d004f4751c4dac6a2e8f9c79cf6839"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/telemetry-core.mjs",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "453a1cdabf75c343824e3b5bc13ebc95e0c0016301f166efba45e9e86a6aed7e"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/measurement-contract.mjs",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "91d6d8cf2f1dc5fecc80b21366439e20968b8770e6b9a32bbd7a052d8f43fd37"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/governance-policy.mjs",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "4e9b1a47e694122ac87ceb36f1a876fcac24f55ec4a612d1379eec9a41f9ab79"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/governance.mjs",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "57cd8c776634f836517e3a7635af0c1fd9a589faea96d2c1b228a2b433e2aea1"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/scheduled-retention.mjs",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "a919eec5ddb75e71f4b5aa442e17f0c8e1f1a71fa306a7812ec912b9ee1db387"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/migrations/0001_initial.sql",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "c441df67a162544fa7d93f0c4186fc295555c714ba524d35ca5fc1df5c9a3944"
+    },
+    {
+      "path": "server/anonymous-telemetry-poc/migrations/0002_completion_semantics.sql",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "feb731463a27c790565b3a2fee20fe01ad193fdb9294ff161e9cd31dea5c79ef"
+    },
+    {
+      "path": "audit_tools/telemetry_contract/hash.mjs",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "e31262f5996412fdd189b8b1edd32e73cac24e55830b67387c7f4915e220facb"
+    },
+    {
+      "path": "audit_tools/telemetry_contract/schema.json",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "9c9b42fc2a04556f7bb794afc1000dc6972e251476cc01984cb966d207abefcb"
+    },
+    {
+      "path": "audit_tools/telemetry_contract/release.json",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "5d7371d87efc1902920db706d9ed80f70334e239cf03075d6db3421df336c714"
+    },
+    {
+      "path": "audit_tools/telemetry_governance/render.mjs",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "56e7b08968806d993e82b6ef96ae6bf79c18d2fe394138e7b173484ca8a937f3"
+    },
+    {
+      "path": "how-to/responsible-telemetry-use/index.html",
+      "equalsStartingHEAD": true,
+      "canonicalTextSha256": "d5e7665029a12ae7ea51a850673ecb62b085c4a3076508c94268267bc74e3eb1"
+    }
+  ],
+  "lockedPolicy": {
+    "measurement": "mq-measurement/1",
+    "governance": "mq-governance/2",
+    "disclosure": "mq-disclosure/2",
+    "schema": 3,
+    "retentionDays": 730,
+    "retentionUnit": "whole-run",
+    "cron": "17 4 * * *",
+    "adminAndDistinctMaintenanceUnchanged": true
+  },
+  "operations": {
+    "productionD1Access": false,
+    "remoteEndpointCalls": false,
+    "realTurnstileCalls": false,
+    "remoteMigration": false,
+    "deployment": false,
+    "composerClientPublicGamesNationalEngineDistChanges": false
+  },
+  "unresolvedIssues": [
+    {
+      "id": "inherited-governance-disclosure-drift",
+      "severity": "required regression failure",
+      "details": "Unchanged render.mjs expects Canvas, unchanged how-to/responsible-telemetry-use/index.html says your LMS. Persists after CRLF normalization. Both match starting HEAD. Public docs are outside authorized Stage 1 edits.",
+      "evidence": "validation_artifacts/portable_telemetry_stage1/governance-baseline-drift.json"
+    }
+  ],
+  "stage2Prerequisites": [
+    "Resolve inherited disclosure/generator mismatch in an authorized scope and rerun governance check",
+    "Explicitly authorize Stage 2; no routing or client integration has been performed",
+    "Integrate capability HTTP routing with redacted errors, JSON response/no-store handling and feature gates",
+    "Connect separately configured real challenge verification with action/hostname/context/idempotency validation; no network verifier ships in Stage 1",
+    "Integrate the safe ownership/duplicate foundation with the legacy grace path before exposing capability traffic",
+    "Validate actual D1 provider batch/latency/capacity and multi-isolate behavior; 50-event fixture uses up to 217 statements with at most 41 parameters per statement",
+    "Review provisional quotas and define bounded cleanup for expired short windows while retaining cumulative counters",
+    "Carry out the approved later Composer/runtime/CORS/grace work only in its own stage"
+  ],
+  "filesChanged": {
+    "modified": [
+      "audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs",
+      "audit_tools/anonymous_telemetry_poc/run_regressions.mjs",
+      "server/anonymous-telemetry-poc/wrangler.jsonc"
+    ],
+    "newSources": [
+      "audit_tools/telemetry_governance/capabilities-check.mjs",
+      "audit_tools/telemetry_governance/local-network-only.mjs",
+      "server/anonymous-telemetry-poc/capabilities.mjs",
+      "server/anonymous-telemetry-poc/capability-admission.mjs",
+      "server/anonymous-telemetry-poc/migrations/0003_build_ingest_capabilities.sql"
+    ],
+    "report": "FINAL_REPORT_portable_telemetry_stage1.md",
+    "evidence": [
+      "validation_artifacts/portable_telemetry_stage1/backend/backend_integration_results.json",
+      "validation_artifacts/portable_telemetry_stage1/backend-baseline/backend_integration_results.json",
+      "validation_artifacts/portable_telemetry_stage1/capabilities-results.json",
+      "validation_artifacts/portable_telemetry_stage1/capabilities-run.log",
+      "validation_artifacts/portable_telemetry_stage1/composer-behavior.log",
+      "validation_artifacts/portable_telemetry_stage1/contract/current-local.csv",
+      "validation_artifacts/portable_telemetry_stage1/contract/current-private.csv",
+      "validation_artifacts/portable_telemetry_stage1/contract/mixed-local.csv",
+      "validation_artifacts/portable_telemetry_stage1/contract/run.log",
+      "validation_artifacts/portable_telemetry_stage1/contract/targeted-results.json",
+      "validation_artifacts/portable_telemetry_stage1/contract-generation.log",
+      "validation_artifacts/portable_telemetry_stage1/dictionary.log",
+      "validation_artifacts/portable_telemetry_stage1/field-inventory.log",
+      "validation_artifacts/portable_telemetry_stage1/governance/cli-b6509b3c-232c-48fd-8938-702edcc2519c.csv",
+      "validation_artifacts/portable_telemetry_stage1/governance/cli-b6509b3c-232c-48fd-8938-702edcc2519c.csv.governance.json",
+      "validation_artifacts/portable_telemetry_stage1/governance/cli-b7c4f213-aa84-4ddf-86d9-34030ca31e14.csv",
+      "validation_artifacts/portable_telemetry_stage1/governance/cli-b7c4f213-aa84-4ddf-86d9-34030ca31e14.csv.governance.json",
+      "validation_artifacts/portable_telemetry_stage1/governance/cli-db0e86f4-923e-478b-8eef-99a53e426fb4.csv",
+      "validation_artifacts/portable_telemetry_stage1/governance/cli-db0e86f4-923e-478b-8eef-99a53e426fb4.csv.governance.json",
+      "validation_artifacts/portable_telemetry_stage1/governance/cli-f3170851-ea79-4b24-96a3-64c46568581f.csv",
+      "validation_artifacts/portable_telemetry_stage1/governance/cli-f3170851-ea79-4b24-96a3-64c46568581f.csv.governance.json",
+      "validation_artifacts/portable_telemetry_stage1/governance/governance-results.json",
+      "validation_artifacts/portable_telemetry_stage1/governance/run.log",
+      "validation_artifacts/portable_telemetry_stage1/governance/synthetic-admin.csv",
+      "validation_artifacts/portable_telemetry_stage1/governance/synthetic-admin.csv.governance.json",
+      "validation_artifacts/portable_telemetry_stage1/governance/synthetic-dry-run.json",
+      "validation_artifacts/portable_telemetry_stage1/governance/synthetic-execute.json",
+      "validation_artifacts/portable_telemetry_stage1/governance-baseline-drift.json",
+      "validation_artifacts/portable_telemetry_stage1/readiness/composer-toggle.png",
+      "validation_artifacts/portable_telemetry_stage1/readiness/csv-safety.json",
+      "validation_artifacts/portable_telemetry_stage1/readiness/faculty-disabled-recipe.json",
+      "validation_artifacts/portable_telemetry_stage1/readiness/faculty-enabled-recipe.json",
+      "validation_artifacts/portable_telemetry_stage1/readiness/field-inventory-diff.json",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-default.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-empty.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-false.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-missing.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-null.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-number.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-on.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-string-true.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-unknown.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-unreadable.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/generated-whitespace.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/malformed-queue.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/managerial-directorate-classroom-false.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/managerial-directorate-classroom-true.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/managerial-directorate-telemetry-poc-false.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/managerial-directorate-telemetry-poc-true.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/managerial-intelligence-directorate-false.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/opted-out.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/preflight.json",
+      "validation_artifacts/portable_telemetry_stage1/readiness/pseudonym-scope.json",
+      "validation_artifacts/portable_telemetry_stage1/readiness/remediation-results.json",
+      "validation_artifacts/portable_telemetry_stage1/readiness/run.log",
+      "validation_artifacts/portable_telemetry_stage1/readiness/storage-denied.csv",
+      "validation_artifacts/portable_telemetry_stage1/readiness/toggle-state-matrix.json",
+      "validation_artifacts/portable_telemetry_stage1/readiness/toggle-transport-matrix.json",
+      "validation_artifacts/portable_telemetry_stage1/regressions/regression_results.json",
+      "validation_artifacts/portable_telemetry_stage1/regressions/run.log",
+      "validation_artifacts/portable_telemetry_stage1/scheduled/run.log",
+      "validation_artifacts/portable_telemetry_stage1/scheduled/scheduled-results.json",
+      "validation_artifacts/portable_telemetry_stage1/scheduled/synthetic-scheduled-operations.json",
+      "validation_artifacts/portable_telemetry_stage1/stage1.json"
+    ]
+  }
+}

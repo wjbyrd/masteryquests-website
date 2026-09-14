@@ -1,0 +1,36 @@
+{
+  "name": "masteryquests-telemetry-http-staging",
+  "databaseName": "masteryquests-telemetry-http-staging",
+  "databaseId": "4dc4825c-a83c-4216-8185-c0096d694f2a",
+  "account": "731780cdf08ed25520def0167a6be2df",
+  "createdAt": "2026-09-14T19:22:22.935Z",
+  "syntheticOnly": true,
+  "workerDeployed": true,
+  "migrations": [
+    {
+      "file": "0001_initial.sql",
+      "sha256": "c441df67a162544fa7d93f0c4186fc295555c714ba524d35ca5fc1df5c9a3944"
+    },
+    {
+      "file": "0002_completion_semantics.sql",
+      "sha256": "feb731463a27c790565b3a2fee20fe01ad193fdb9294ff161e9cd31dea5c79ef"
+    },
+    {
+      "file": "0003_build_ingest_capabilities.sql",
+      "sha256": "d67432d1c9ed8c85f5a407cf7e606ff05cc00d63effe2ce909797fa6efb61951"
+    }
+  ],
+  "cleanupDecision": "Delete this new Worker and this new D1 after evidence capture",
+  "url": "https://masteryquests-telemetry-http-staging.wjbyrd.workers.dev",
+  "version": "9798f3db-7ed9-4bbc-b53b-5d6c6f97da1d",
+  "tailId": "64ccc6faa62d4ba8923f15c27961e1ef",
+  "tailClosed": true,
+  "extraTailIds": [
+    "64ccc6faa62d4ba8923f15c27961e1ef"
+  ],
+  "workerDeleted": true,
+  "workerDeletedAt": "2026-09-14T19:33:18.191Z",
+  "databaseDeleted": true,
+  "databaseDeletedAt": "2026-09-14T19:33:19.123Z",
+  "cleanupVerified": true
+}

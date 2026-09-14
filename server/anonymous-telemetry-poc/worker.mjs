@@ -1,3 +1,5 @@
+import {featureFlags} from './capabilities.mjs';
+import {dualModeIngest,capabilityPreflight} from './dual-mode-ingest.mjs';
 import {scheduledRetention} from './scheduled-retention.mjs';
 import {govern,requireMaintenance} from './governance.mjs';
 import {configuration} from './governance-policy.mjs';
@@ -34,11 +36,18 @@ export default {
 async function route(request, env) {
   const url = new URL(request.url);
   const pathname = stripPrefix(url.pathname);
-  if (request.method === "OPTIONS") return corsResponse(request, env);
+  if (request.method === "OPTIONS") {
+    if(featureFlags(env).ingest) {
+      if(pathname==='/v1/events')return capabilityPreflight(request,env);
+      if(pathname.startsWith('/v1/admin/')||pathname==='/v1/build-capabilities')return noStore(json({ok:false,error:'not found'},404));
+    }
+    return corsResponse(request, env);
+  }
   if (request.method === "GET" && pathname === "/v1/health") {
     return withCors(request, env, json({ ok: true, phase: PHASE, storage: Boolean(env.TELEMETRY_DB) }));
   }
   if (request.method === "POST" && pathname === "/v1/events") {
+    if(featureFlags(env).ingest)return dualModeIngest(request,env);
     assertAllowedOrigin(request, env);
     return withCors(request, env, await ingest(request, env));
   }

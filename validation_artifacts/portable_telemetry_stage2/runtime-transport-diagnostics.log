@@ -1,0 +1,106 @@
+{
+  "runtime": "5.20260910.0-alpha",
+  "compatibilityDate": "2026-08-07",
+  "localOnly": true,
+  "headers": [
+    {
+      "sentValue": "",
+      "dispatch": {
+        "present": false,
+        "value": null
+      },
+      "directHTTP": {
+        "present": true,
+        "value": ""
+      }
+    },
+    {
+      "sentValue": "bad",
+      "dispatch": {
+        "present": true,
+        "value": "bad"
+      },
+      "directHTTP": {
+        "present": true,
+        "value": "bad"
+      }
+    }
+  ],
+  "early413": [
+    {
+      "bytes": 100,
+      "status": 413,
+      "readableBody": true,
+      "body": "{\"error\":\"request_too_large\"}"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": true,
+      "body": "{\"error\":\"request_too_large\"}"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": false,
+      "error": "terminated",
+      "cause": "ECONNRESET"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": false,
+      "error": "terminated",
+      "cause": "ECONNRESET"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": false,
+      "error": "terminated",
+      "cause": "ECONNRESET"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": false,
+      "error": "terminated",
+      "cause": "ECONNRESET"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": false,
+      "error": "terminated",
+      "cause": "ECONNRESET"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": false,
+      "error": "terminated",
+      "cause": "ECONNRESET"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": false,
+      "error": "terminated",
+      "cause": "ECONNRESET"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": false,
+      "error": "terminated",
+      "cause": "ECONNRESET"
+    },
+    {
+      "bytes": 131073,
+      "status": 413,
+      "readableBody": false,
+      "error": "terminated",
+      "cause": "ECONNRESET"
+    }
+  ]
+}

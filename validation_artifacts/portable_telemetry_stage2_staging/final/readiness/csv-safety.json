@@ -1,0 +1,57 @@
+[
+  {
+    "input": "=1+1",
+    "output": "'=1+1",
+    "numeric": "-2"
+  },
+  {
+    "input": "+SUM(A1:A2)",
+    "output": "'+SUM(A1:A2)",
+    "numeric": "-2"
+  },
+  {
+    "input": "-1+2",
+    "output": "'-1+2",
+    "numeric": "-2"
+  },
+  {
+    "input": "@SUM(1,1)",
+    "output": "'@SUM(1,1)",
+    "numeric": "-2"
+  },
+  {
+    "input": "  =1+1",
+    "output": "'  =1+1",
+    "numeric": "-2"
+  },
+  {
+    "input": " \ttext",
+    "output": "' \ttext",
+    "numeric": "-2"
+  },
+  {
+    "input": "\t=1",
+    "output": "'\t=1",
+    "numeric": "-2"
+  },
+  {
+    "input": "\rtext",
+    "output": "'\rtext",
+    "numeric": "-2"
+  },
+  {
+    "input": "\ntext",
+    "output": "'\ntext",
+    "numeric": "-2"
+  },
+  {
+    "input": "ordinary",
+    "output": "ordinary",
+    "numeric": "-2"
+  },
+  {
+    "input": "quoted, \"text\"\nsecond line",
+    "output": "quoted, \"text\"\nsecond line",
+    "numeric": "-2"
+  }
+]

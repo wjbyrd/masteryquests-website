@@ -1,0 +1,86 @@
+{
+  "phase": "phaseAnonymousTelemetryPOC-v1",
+  "generatedAt": "2026-09-14T17:42:12.985Z",
+  "status": "FAIL",
+  "passed": 15,
+  "failed": 3,
+  "total": 18,
+  "synthetic": true,
+  "results": [
+    {
+      "name": "01 migration creates normalized tables",
+      "status": "PASS"
+    },
+    {
+      "name": "02 health endpoint reports storage",
+      "status": "PASS"
+    },
+    {
+      "name": "03 disallowed origin rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "04 direct identifier rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "04b arbitrary extras rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "04c duplicate run sequence inside one batch rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "05 valid batch ingests",
+      "status": "PASS"
+    },
+    {
+      "name": "06 duplicate retry is idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "07 resumed run stores one run with contiguous sequence",
+      "status": "PASS"
+    },
+    {
+      "name": "08 completion and mastery batch ingests",
+      "status": "PASS"
+    },
+    {
+      "name": "09 admin routes require bearer secret",
+      "status": "PASS"
+    },
+    {
+      "name": "10 admin summary returns counts without caching",
+      "status": "PASS"
+    },
+    {
+      "name": "11 run events are sequence ordered",
+      "status": "PASS"
+    },
+    {
+      "name": "12 server reconstruction is coherent",
+      "status": "PASS"
+    },
+    {
+      "name": "13 anomaly report surfaces incomplete runs",
+      "status": "PASS"
+    },
+    {
+      "name": "14 CSV export excludes synthetic by default",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n400 !== 200\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs:67:232\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs:37:9)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs:67:1"
+    },
+    {
+      "name": "15 CSV export can include synthetic",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(text.includes(\"event_id\") && text.includes(scenario(\"F\").events[0].runId))\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs:68:243\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs:37:9)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs:68:1"
+    },
+    {
+      "name": "16 synthetic cleanup removes QA rows",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n403 !== 200\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs:69:242\n    at async check (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs:37:9)\n    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/anonymous_telemetry_poc/run_backend_integration.mjs:69:1"
+    }
+  ]
+}

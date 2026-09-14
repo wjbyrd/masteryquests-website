@@ -1,0 +1,13 @@
+{
+  "purpose": "Identify sensitive live-tail metadata locations without retaining values",
+  "unknownCredentialResponse": 403,
+  "credentialLocations": [
+    "event.request.headers.x-mq-ingest-capability"
+  ],
+  "applicationLogMatches": 0,
+  "concurrentEventCounts": {
+    "before": 68,
+    "after": 70
+  },
+  "valuesPersisted": false
+}

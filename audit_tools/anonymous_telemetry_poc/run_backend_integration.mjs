@@ -3,11 +3,13 @@ import fs from "node:fs";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
 import worker from "../../server/anonymous-telemetry-poc/worker.mjs";
+import { approvedEnvironment } from '../../server/anonymous-telemetry-poc/governance-policy.mjs';
 import { PHASE } from "../../server/anonymous-telemetry-poc/telemetry-core.mjs";
 
 const repo = path.resolve(process.argv[2] || ".");
-const outputDir = path.join(repo, "validation_artifacts", "anonymous_telemetry_poc");
-const synthetic = JSON.parse(fs.readFileSync(path.join(outputDir, "synthetic_scenarios.json"), "utf8"));
+const outputDir = process.env.MQ_EVIDENCE_DIR || path.join(repo, "validation_artifacts", "anonymous_telemetry_poc");
+fs.mkdirSync(outputDir, { recursive: true });
+const synthetic = JSON.parse(fs.readFileSync(path.join(repo, "validation_artifacts", "anonymous_telemetry_poc", "synthetic_scenarios.json"), "utf8"));
 const migration = fs.readFileSync(path.join(repo, "server", "anonymous-telemetry-poc", "migrations", "0001_initial.sql"), "utf8");
 const db = new DatabaseSync(":memory:");
 db.exec(migration);
@@ -26,6 +28,8 @@ class D1Database {
 }
 
 const env = {
+  ...approvedEnvironment(),
+  MAINTENANCE_TOKEN: "synthetic-test-maintenance-token",
   TELEMETRY_DB: new D1Database(db),
   ALLOWED_ORIGINS: "https://private.example.test",
   MAX_EVENTS_PER_CLIENT_MINUTE: "300",
@@ -36,10 +40,11 @@ async function check(name, fn) {
   try { await fn(); results.push({ name, status: "PASS" }); }
   catch (error) { results.push({ name, status: "FAIL", detail: String(error?.stack || error) }); }
 }
-async function call(pathname, { method = "GET", body, origin = "https://private.example.test", admin = false } = {}) {
+async function call(pathname, { method = "GET", body, origin = "https://private.example.test", admin = false, maintenance = false } = {}) {
   const headers = {};
   if (origin) headers.origin = origin;
   if (body !== undefined) headers["content-type"] = "application/json";
+  if (maintenance) headers['x-telemetry-maintenance'] = env.MAINTENANCE_TOKEN;
   if (admin) headers.authorization = `Bearer ${env.ADMIN_TOKEN}`;
   const request = new Request(`https://telemetry.example.test${pathname}`, { method, headers, body: body === undefined ? undefined : JSON.stringify(body) });
   return worker.fetch(request, env);
@@ -63,9 +68,9 @@ await check("10 admin summary returns counts without caching", async () => { con
 await check("11 run events are sequence ordered", async () => { const runId = scenario("E").events[0].runId; const response = await call(`/v1/admin/runs/${runId}`, { admin: true }); const body = await response.json(); assert.deepEqual(body.events.map(event => event.sequence_number), [1,2,3,4]); });
 await check("12 server reconstruction is coherent", async () => { const runId = scenario("F").events[0].runId; const response = await call(`/v1/admin/runs/${runId}/reconstruct`, { admin: true }); const body = await response.json(); assert.equal(body.reconstruction.completionStatus, "complete"); assert.equal(body.reconstruction.masterySummary.accuracy, 1); assert.equal(body.reconstruction.sequence.contiguous, true); });
 await check("13 anomaly report surfaces incomplete runs", async () => { const response = await call("/v1/admin/anomalies", { admin: true }); const body = await response.json(); assert.ok(body.runsWithGapsOutOfOrderOrIncomplete.some(run => run.run_id === scenario("E").events[0].runId)); });
-await check("14 CSV export excludes synthetic by default", async () => { const response = await call("/v1/admin/export.csv?buildId=managerial-directorate-telemetry-poc", { admin: true }); const text = await response.text(); assert.equal(response.status, 200); assert.equal(text.trim(), ""); });
+await check("14 CSV export excludes synthetic by default", async () => { const response = await call("/v1/admin/export.csv?buildId=managerial-directorate-telemetry-poc", { admin: true }); const text = await response.text(); assert.equal(response.status, 200); assert.equal(text.split("\r\n").length, 1); assert.ok(text.startsWith('"event_id"')); });
 await check("15 CSV export can include synthetic", async () => { const response = await call("/v1/admin/export.csv?buildId=managerial-directorate-telemetry-poc&includeSynthetic=1", { admin: true }); const text = await response.text(); assert.ok(text.includes("event_id") && text.includes(scenario("F").events[0].runId)); });
-await check("16 synthetic cleanup removes QA rows", async () => { const response = await call("/v1/admin/cleanup", { method: "POST", admin: true, body: { scope: "synthetic", confirm: "DELETE" } }); const body = await response.json(); assert.equal(response.status, 200); assert.ok(body.deletedEvents >= 13); assert.equal(db.prepare("SELECT COUNT(*) AS count FROM telemetry_events").get().count, 0); });
+await check("16 synthetic cleanup removes QA rows", async () => { const response = await call("/v1/admin/cleanup", { method: "POST", admin: true, maintenance: true, body: { scope: "synthetic", confirm: "DELETE" } }); const body = await response.json(); assert.equal(response.status, 200); assert.ok(body.counts.events >= 13); assert.equal(db.prepare("SELECT COUNT(*) AS count FROM telemetry_events").get().count, 0); });
 
 const failed = results.filter(result => result.status === "FAIL");
 const report = { phase: PHASE, generatedAt: new Date().toISOString(), status: failed.length ? "FAIL" : "PASS", passed: results.length - failed.length, failed: failed.length, total: results.length, synthetic: true, results };

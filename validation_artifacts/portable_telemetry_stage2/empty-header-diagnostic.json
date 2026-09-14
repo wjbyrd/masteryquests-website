@@ -1,0 +1,31 @@
+{
+  "runtime": "5.20260910.0-alpha",
+  "compatibilityDate": "2026-08-07",
+  "localOnly": true,
+  "results": [
+    {
+      "sentHeaderPresent": true,
+      "sentValue": "",
+      "dispatch": {
+        "present": false,
+        "value": null
+      },
+      "directLocalHTTP": {
+        "present": true,
+        "value": ""
+      }
+    },
+    {
+      "sentHeaderPresent": true,
+      "sentValue": "bad",
+      "dispatch": {
+        "present": true,
+        "value": "bad"
+      },
+      "directLocalHTTP": {
+        "present": true,
+        "value": "bad"
+      }
+    }
+  ]
+}

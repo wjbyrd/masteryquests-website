@@ -5,6 +5,7 @@ import vm from 'node:vm';
 import { webcrypto } from 'node:crypto';
 import { DatabaseSync } from 'node:sqlite';
 import { PHASE, reconstructRun, validateEnvelope } from '../../server/anonymous-telemetry-poc/telemetry-core.mjs';
+import {approvedEnvironment} from '../../server/anonymous-telemetry-poc/governance-policy.mjs';
 import worker from '../../server/anonymous-telemetry-poc/worker.mjs';
 const repo = path.resolve(process.argv[2] || '.');
 const read = p => fs.readFileSync(path.join(repo,p),'utf8');
@@ -12,7 +13,7 @@ const results = [];
 async function check(name, fn) { try { await fn(); results.push({name,status:'PASS'}); } catch(e) { results.push({name,status:'FAIL',detail:e.stack}); } }
 function client(storage = new Map()) {
   const listeners = {}, timers = new Map(), nodes = new Map(); let timer = 0;
-  const node = () => ({style:{},open:false,addEventListener(type,fn){this[type]=fn;},querySelector(key){return this[key] ||= {textContent:''};}});
+  const node = () => ({style:{},open:false,addEventListener(type,fn){this[type]=fn;},querySelector(key){return this[key] ||= {textContent:'',addEventListener(){}};}});
   const context = vm.createContext({crypto:webcrypto, AbortController, URLSearchParams, location:{search:'?telemetryDebug=1&telemetrySynthetic=1'},
     localStorage:{getItem:k=>storage.get(k)??null,setItem:(k,v)=>storage.set(k,String(v)),removeItem:k=>storage.delete(k)},
     document:{currentScript:{dataset:{gameId:'cost-directive'}},documentElement:{dataset:{}},visibilityState:'visible',
@@ -91,7 +92,7 @@ await check('H real client failure, retry, multi-batch flush and queue recovery'
   while(resumed.events().length)await resumed.api.flush();assert.deepEqual(batches.map(b=>b.length),[25,25,12]);assert.deepEqual(batches.flat().map(e=>e.eventId),before.map(e=>e.eventId));
 });
 await check('H simulated failure preserves exact event IDs before recovery',async()=>{
-  const h=client(new Map([['anonymousTelemetry:debugFailure:v1','1']]));h.run(`sendGameData({event:'start',runID:'sim'})`);const before=h.events();assert.equal((await h.api.flush()).simulated,true);assert.deepEqual(h.events(),before);
+  const h=client();await h.nodes.get('anonymousTelemetryDebug').click({target:{dataset:{action:'failure'}}});h.run(`sendGameData({event:'start',runID:'sim'})`);const before=h.events();assert.equal((await h.api.flush()).simulated,true);assert.deepEqual(h.events(),before);
   await h.nodes.get('anonymousTelemetryDebug').click({target:{dataset:{action:'failure'}}});assert.equal((await h.api.flush()).ok,true);assert.equal(h.events().length,0);
 });
 await check('debug Close collapses and Fresh cannot create a throwaway or split mapped run',async()=>{
@@ -104,7 +105,7 @@ await check('mastery report emits only when viewed',()=>{
 });
 const db=new DatabaseSync(':memory:');db.exec(read('server/anonymous-telemetry-poc/migrations/0001_initial.sql'));
 class Statement{constructor(sql){this.sql=sql;this.values=[];}bind(...v){this.values=v;return this;}async all(){return {results:db.prepare(this.sql).all(...this.values)};}async first(){return db.prepare(this.sql).get(...this.values);}async run(){return {meta:{changes:Number(db.prepare(this.sql).run(...this.values).changes)}};}}
-const env={TELEMETRY_DB:{prepare:sql=>new Statement(sql),async batch(statements){db.exec('BEGIN');try{const rows=[];for(const s of statements)rows.push(await s.run());db.exec('COMMIT');return rows;}catch(e){db.exec('ROLLBACK');throw e;}}},ADMIN_TOKEN:'local-test',MAX_EVENTS_PER_CLIENT_MINUTE:10000};
+const env={...approvedEnvironment(),TELEMETRY_DB:{prepare:sql=>new Statement(sql),async batch(statements){db.exec('BEGIN');try{const rows=[];for(const s of statements)rows.push(await s.run());db.exec('COMMIT');return rows;}catch(e){db.exec('ROLLBACK');throw e;}}},ADMIN_TOKEN:'local-test',MAX_EVENTS_PER_CLIENT_MINUTE:10000};
 async function call(route,events){return worker.fetch(new Request('https://local.test/v1/'+route,{method:events?'POST':'GET',headers:{authorization:'Bearer local-test','content-type':'application/json'},body:events?JSON.stringify({phase:PHASE,events}):undefined}),env);}
 for(const status of ['complete','timed_complete','timed_ended_early','riskReward_bust','exam_ended_by_student'])await check('F durable terminal status '+status+' survives lifecycle and delayed adaptive events',async()=>{
   const h=client();h.run(`sendGameData({event:'start',runID:'terminal-${status}'});sendGameData({event:'${status}',totalTime:600000});`);
@@ -140,4 +141,5 @@ await check('privacy allowlist still rejects identifiers, arbitrary text and mis
   const e=c.events()[0];for(const extra of [{email:'x'},{freeResponse:'x'},{studentId:'x'},{anything:'x'},{artifactAlreadyOwned:'yes'}])assert.throws(()=>validateEnvelope({phase:PHASE,events:[{...e,...extra}]}));
 });
 const failed=results.filter(r=>r.status==='FAIL');const report={phase:PHASE,generatedAt:new Date().toISOString(),passed:results.length-failed.length,failed:failed.length,total:results.length,results};
-fs.writeFileSync(path.join(repo,'validation_artifacts/anonymous_telemetry_poc/regression_results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(failed.length)process.exitCode=1;
+const outputDir=process.env.MQ_EVIDENCE_DIR||path.join(repo,'validation_artifacts/anonymous_telemetry_poc');fs.mkdirSync(outputDir,{recursive:true});
+fs.writeFileSync(path.join(outputDir,'regression_results.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));if(failed.length)process.exitCode=1;

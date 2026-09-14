@@ -1,0 +1,63 @@
+{
+  "passed": 13,
+  "failed": 1,
+  "results": [
+    {
+      "name": "Approved environment is mandatory; contradictory duration/mode/identity fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Dry run counts exact old/current/legacy/incomplete whole runs; straddling/new/exact boundary survive",
+      "status": "PASS"
+    },
+    {
+      "name": "Execute deletes exact eligible data atomically, preserves newer data, and rerun is idempotent",
+      "status": "PASS"
+    },
+    {
+      "name": "Wrong/future/malformed cutoff and missing explicit confirmation fail without deletion",
+      "status": "PASS"
+    },
+    {
+      "name": "Late receipt between preview and execute protects whole run; invalid timestamp also protects",
+      "status": "PASS"
+    },
+    {
+      "name": "Database failure rolls back event and run deletion together",
+      "status": "PASS"
+    },
+    {
+      "name": "Run deletion dry-run/confirmation targets only supplied UUID; malformed IDs rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Every admin route requires ADMIN_TOKEN; required maintenance separation restricts destructive routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Legacy cleanup remains explicitly authenticated and now preserves mixed-synthetic runs",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin export headers and optional offline sidecar disclose policy without changing CSV schema",
+      "status": "PASS"
+    },
+    {
+      "name": "Canonical generated disclosures and frozen schema dictionary have no drift",
+      "status": "FAIL",
+      "detail": "Error: Command failed: C:\\Program Files\\nodejs\\node.exe audit_tools/telemetry_governance/render.mjs --check\nfile:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/render.mjs:4\r\nconst write=(p,s)=>{if(check){if(read(p)!==s)throw Error('Governance disclosure drift: '+p);}else{fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true});fs.writeFileSync(path.join(root,p),s);}};\r\n                                                   ^\r\n\r\nError: Governance disclosure drift: how-to/responsible-telemetry-use/index.html\r\n    at write (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/render.mjs:4:52)\r\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/render.mjs:17:1\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\r\n\r\nNode.js v24.14.1\r\n\n    at genericNodeError (node:internal/errors:985:15)\n    at wrappedFn (node:internal/errors:539:14)\n    at checkExecSyncError (node:child_process:925:11)\n    at execFileSync (node:child_process:961:15)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/check.mjs:16:423\n    at test (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/check.mjs:4:262)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/check.mjs:16:7"
+    },
+    {
+      "name": "Governance policy/docs negatives and public secret/transmission guards detect drift",
+      "status": "PASS"
+    },
+    {
+      "name": "Deletion rejects misleading cross-scope fields and can remove an orphaned named run",
+      "status": "PASS"
+    },
+    {
+      "name": "Operator CLI exports actual local Worker CSV with policy sidecar and does not log credentials",
+      "status": "PASS"
+    }
+  ]
+}

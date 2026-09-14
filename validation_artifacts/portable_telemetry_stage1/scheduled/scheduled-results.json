@@ -1,0 +1,50 @@
+{
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Scheduled retention covers old/boundary/straddling/recent/incomplete/legacy/current/invalid/late and auxiliary records",
+      "status": "PASS"
+    },
+    {
+      "name": "Manual and scheduled execution select equivalent rows and preserve exactly the same run categories",
+      "status": "PASS"
+    },
+    {
+      "name": "Overlapping scheduled invocations are safe and do not double-delete",
+      "status": "PASS"
+    },
+    {
+      "name": "Unavailable D1 and query failure reject with bounded failure report and no deletion",
+      "status": "PASS"
+    },
+    {
+      "name": "Scheduled transaction failure rolls back all changes and remains visibly failed",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing/contradictory policy, invalid/future scheduler context and invalid trusted time cannot delete",
+      "status": "PASS"
+    },
+    {
+      "name": "Manual routes require distinct maintenance and admin credentials; internal Worker handler needs neither secret",
+      "status": "PASS"
+    },
+    {
+      "name": "Current and legacy export policy context stay distinct; no measurement schema change",
+      "status": "PASS"
+    },
+    {
+      "name": "Bounded operation reporting has only permitted fields and excludes run/event identifiers, payloads and secrets",
+      "status": "PASS"
+    },
+    {
+      "name": "Late new arrival protects a run while a duplicate-only batch cannot extend raw event retention",
+      "status": "PASS"
+    },
+    {
+      "name": "Schedule/policy/provider/research wording drift negatives fail without changing source files",
+      "status": "PASS"
+    }
+  ]
+}

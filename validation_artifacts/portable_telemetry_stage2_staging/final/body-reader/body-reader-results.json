@@ -1,0 +1,77 @@
+{
+  "passed": 9,
+  "failed": 0,
+  "limitBytes": 131072,
+  "results": [
+    {
+      "declared": null,
+      "multibyte": false,
+      "actualBytes": 131072,
+      "pulls": 33,
+      "cancelled": false,
+      "status": "PASS"
+    },
+    {
+      "declared": null,
+      "multibyte": false,
+      "actualBytes": 131073,
+      "pulls": 33,
+      "cancelled": true,
+      "status": "PASS"
+    },
+    {
+      "declared": null,
+      "multibyte": true,
+      "actualBytes": 131072,
+      "pulls": 33,
+      "cancelled": false,
+      "status": "PASS"
+    },
+    {
+      "declared": null,
+      "multibyte": true,
+      "actualBytes": 131073,
+      "pulls": 33,
+      "cancelled": true,
+      "status": "PASS"
+    },
+    {
+      "declared": "1",
+      "multibyte": false,
+      "actualBytes": 131072,
+      "pulls": 33,
+      "cancelled": false,
+      "status": "PASS"
+    },
+    {
+      "declared": "1",
+      "multibyte": false,
+      "actualBytes": 131073,
+      "pulls": 33,
+      "cancelled": true,
+      "status": "PASS"
+    },
+    {
+      "declared": "1",
+      "multibyte": true,
+      "actualBytes": 131072,
+      "pulls": 33,
+      "cancelled": false,
+      "status": "PASS"
+    },
+    {
+      "declared": "1",
+      "multibyte": true,
+      "actualBytes": 131073,
+      "pulls": 33,
+      "cancelled": true,
+      "status": "PASS"
+    },
+    {
+      "case": "infinite producer cancelled on first excess chunk",
+      "pulls": 33,
+      "cancelled": true,
+      "status": "PASS"
+    }
+  ]
+}

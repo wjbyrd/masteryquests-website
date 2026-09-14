@@ -1,0 +1,39 @@
+{
+  "name": "masteryquests-telemetry-http-staging",
+  "account_id": "731780cdf08ed25520def0167a6be2df",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-08-07",
+  "workers_dev": true,
+  "routes": [],
+  "d1_databases": [
+    {
+      "binding": "TELEMETRY_DB",
+      "database_name": "masteryquests-telemetry-http-staging",
+      "database_id": "4dc4825c-a83c-4216-8185-c0096d694f2a"
+    }
+  ],
+  "vars": {
+    "TELEMETRY_RETENTION_DAYS": "730",
+    "TELEMETRY_RETENTION_MODE": "automatic",
+    "TELEMETRY_GOVERNANCE_POLICY": "mq-governance/2",
+    "ALLOWED_ORIGINS": "https://masteryquests.org",
+    "CAPABILITY_ISSUANCE_ENABLED": "false",
+    "CAPABILITY_INGEST_ENABLED": "true",
+    "CAPABILITY_LEGACY_GRACE_ENABLED": "false",
+    "MAX_EVENTS_PER_CLIENT_MINUTE": "300"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": false,
+      "persist": true
+    },
+    "traces": {
+      "enabled": false
+    }
+  },
+  "triggers": {
+    "crons": []
+  }
+}

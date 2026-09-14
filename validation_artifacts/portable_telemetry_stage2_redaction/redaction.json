@@ -1,0 +1,263 @@
+{
+  "canonicalHeader": "X-MQ-Ingest-Token",
+  "oldHeaderBehavior": "Reject when capability ingest enabled, including both headers and legacy grace; never an alias",
+  "tail": {
+    "events": 23,
+    "rawTokenMatches": 0,
+    "rawHashMatches": 0,
+    "partialTokenMatches": 0,
+    "consoleRawMatches": 0,
+    "exceptionRawMatches": 0,
+    "adminTokenMatches": 0,
+    "maintenanceTokenMatches": 0,
+    "providerFieldPath": "event.request.headers.x-mq-ingest-token",
+    "headerStates": {
+      "redacted": 16,
+      "omitted": 7
+    },
+    "markers": [
+      "REDACTED"
+    ],
+    "newHeaderObservations": 16
+  },
+  "applicationLogs": {
+    "rawMatches": 0,
+    "exceptionMatches": 0
+  },
+  "persistedLogs": {
+    "status": "UNAVAILABLE",
+    "limitation": "Cloudflare API rejected staging operation: HTTP 403 codes 10000"
+  },
+  "functionalIngestCount": 5,
+  "negativeCaseCount": 17,
+  "duplicate": {
+    "case": "exact-duplicate",
+    "status": "PASS",
+    "accepted": 0,
+    "noEventRunOrAcceptedCounterInflation": true,
+    "submittedWorkCountersMayCharge": true
+  },
+  "httpSanity": [
+    {
+      "case": "oversized",
+      "status": 413,
+      "readable": true,
+      "noWrites": true
+    },
+    {
+      "case": "multibyte oversized",
+      "status": 413,
+      "readable": true,
+      "noWrites": true
+    },
+    {
+      "case": "Edge oversized",
+      "status": 413,
+      "readable": true,
+      "noWrites": true,
+      "browser": "153.0.4234.32"
+    }
+  ],
+  "regression": {
+    "before": {
+      "capabilities": {
+        "passed": 56,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "governance": {
+        "passed": 14,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "scheduled": {
+        "passed": 11,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "backend": {
+        "passed": 18,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "regressions": {
+        "passed": 21,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "contract": {
+        "passed": 16,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "private-refresh": {
+        "passed": 33,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "http-sqlite": {
+        "passed": 39,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "readiness": {
+        "passed": 27,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "http-runtime": {
+        "passed": 37,
+        "failed": 2,
+        "status": "KNOWN_EMULATOR_LIMITATION"
+      },
+      "header-sqlite": {
+        "passed": 8,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "header-runtime": {
+        "passed": 8,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "public-browser": {
+        "passed": 103,
+        "failed": 0,
+        "status": "PASS"
+      }
+    },
+    "after": {
+      "capabilities": {
+        "passed": 56,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "governance": {
+        "passed": 14,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "scheduled": {
+        "passed": 11,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "backend": {
+        "passed": 18,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "regressions": {
+        "passed": 21,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "contract": {
+        "passed": 16,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "private-refresh": {
+        "passed": 33,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "http-sqlite": {
+        "passed": 39,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "readiness": {
+        "passed": 27,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "http-runtime": {
+        "passed": 37,
+        "failed": 2,
+        "status": "KNOWN_EMULATOR_LIMITATION"
+      },
+      "header-sqlite": {
+        "passed": 8,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "header-runtime": {
+        "passed": 8,
+        "failed": 0,
+        "status": "PASS"
+      },
+      "public-browser": {
+        "passed": 103,
+        "failed": 0,
+        "status": "PASS"
+      }
+    }
+  },
+  "gitDiffCheck": "PASS",
+  "resources": {
+    "name": "masteryquests-telemetry-redaction-staging",
+    "databaseName": "masteryquests-telemetry-redaction-staging",
+    "databaseId": "0a9035dd-2fc9-4715-88cd-d95c66fb024b",
+    "account": "731780cdf08ed25520def0167a6be2df",
+    "createdAt": "2026-09-14T20:00:52.817Z",
+    "syntheticOnly": true,
+    "workerDeployed": true,
+    "migrations": [
+      {
+        "file": "0001_initial.sql",
+        "sha256": "c441df67a162544fa7d93f0c4186fc295555c714ba524d35ca5fc1df5c9a3944"
+      },
+      {
+        "file": "0002_completion_semantics.sql",
+        "sha256": "feb731463a27c790565b3a2fee20fe01ad193fdb9294ff161e9cd31dea5c79ef"
+      },
+      {
+        "file": "0003_build_ingest_capabilities.sql",
+        "sha256": "d67432d1c9ed8c85f5a407cf7e606ff05cc00d63effe2ce909797fa6efb61951"
+      }
+    ],
+    "cleanupDecision": "Delete this new Worker and this new D1 after evidence capture",
+    "url": "https://masteryquests-telemetry-redaction-staging.wjbyrd.workers.dev",
+    "version": "5cf4c85d-c20f-4bbd-b94c-cfcb35049a52",
+    "tailId": "20859ea3d89b4382b95722b9f90aeb69",
+    "tailClosed": true,
+    "workerDeleted": true,
+    "workerDeletedAt": "2026-09-14T20:02:22.450Z",
+    "databaseDeleted": true,
+    "databaseDeletedAt": "2026-09-14T20:02:23.280Z",
+    "cleanupVerified": true
+  },
+  "sourceComparison": {
+    "baselineFiles": 11260,
+    "changed": [
+      "audit_tools/telemetry_governance/capabilities-check.mjs",
+      "audit_tools/telemetry_governance/capability-body-runtime-check.mjs",
+      "audit_tools/telemetry_governance/capability-http-check.mjs",
+      "audit_tools/telemetry_governance/capability-http-fixture.mjs",
+      "audit_tools/telemetry_governance/capability-runtime-diagnostic.mjs",
+      "audit_tools/telemetry_governance/staging/log-probe.mjs",
+      "audit_tools/telemetry_governance/staging/test.mjs",
+      "server/anonymous-telemetry-poc/capability-admission.mjs",
+      "server/anonymous-telemetry-poc/dual-mode-ingest.mjs"
+    ],
+    "missing": []
+  },
+  "production": {
+    "workerUntouched": true,
+    "databaseUntouched": true,
+    "noProductionMigration": true,
+    "allCapabilityFlagsFalse": true,
+    "noComposerClientPublicGameChanges": true,
+    "contractsAndRetentionUnchanged": true
+  },
+  "stage2": "COMPLETE",
+  "stage3Recommendation": "GO",
+  "stage3Implemented": false,
+  "evidenceScan": {
+    "scannedFiles": 172,
+    "exactRawMatches": 0,
+    "exactHashMatches": 0,
+    "rawCapabilityPatternMatches": 0
+  }
+}

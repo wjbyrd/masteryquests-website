@@ -1,0 +1,2080 @@
+{
+  "localOnly": true,
+  "browser": "153.0.4234.32",
+  "firstPartyOrigin": "https://masteryquests.org",
+  "browserOriginSimulation": "HTTPS document fulfilled in memory; local-network-access permission granted only to that origin; API calls use actual loopback HTTP with normal browser CORS; all other network blocked",
+  "records": [
+    {
+      "client": "undici",
+      "requestedBytes": 100,
+      "actualBytes": 684,
+      "multibyte": false,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"59bd50c6-b45d-49a3-b13c-4e30e2e2eaa5\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"52e95526-5ab2-4ff8-81fb-593e1154e0a2\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 100,
+      "actualBytes": 684,
+      "multibyte": false,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"894f5ec9-a997-413f-beff-a8f29954f131\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"370c093e-7dd1-46d7-90d7-1e7efdf98434\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 100,
+      "actualBytes": 684,
+      "multibyte": false,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"b2abb1cb-c48f-4956-a7a2-fb46f04a4537\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"55d15742-126e-4df2-8b66-7f74c84d9a72\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 100,
+      "actualBytes": 685,
+      "multibyte": true,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"ddfa030a-adc4-4639-bdc1-4a11b5ba65b7\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"7e475954-e2a5-434b-a342-7e93012831aa\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 100,
+      "actualBytes": 685,
+      "multibyte": true,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"8da1af72-718f-4a3c-8c9f-8ddce3fb5417\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"14a098f1-10b6-4cf3-9703-cb20c2cb7d97\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 100,
+      "actualBytes": 685,
+      "multibyte": true,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"bff8483e-77bd-4e7d-a38a-05a5df4343e5\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"38abcd3c-ec76-4d8c-abd3-77626a2bbd4e\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": false,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"9fe93d21-18b0-4752-b760-a2bc46ecd68b\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"ac65f8a2-9c11-4c49-ac03-8b211d679cb1\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": false,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"b694ea29-3e69-4c77-a812-842b068224be\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"24e21547-9eaa-461a-9eae-0d9bc20bcd91\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": false,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"37c83cae-9802-4959-b5b0-3599dfa460b9\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"a7445105-b27a-447d-919b-a58cbc2c70fd\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": true,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"9537ba29-5434-42b3-8840-f2de5a7e50ba\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"9e59889e-58dc-4de0-90f5-dafcf934fee6\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": true,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"a5152a34-e7be-45f5-9fda-c14d2506e36a\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"df7f7863-923f-426e-8af8-a249198977b4\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": true,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"ba7d346a-34c6-479c-a64b-95c2fc929923\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"f7cebfce-a191-4387-aaa3-9c60f48fb546\"]}"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": false,
+      "trial": 0,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": false,
+      "trial": 1,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": false,
+      "trial": 2,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": true,
+      "trial": 0,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": true,
+      "trial": 1,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": true,
+      "trial": 2,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": false,
+      "trial": 0,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": false,
+      "trial": 1,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": false,
+      "trial": 2,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": true,
+      "trial": 0,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": true,
+      "trial": 1,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": true,
+      "trial": 2,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": false,
+      "trial": 0,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": false,
+      "trial": 1,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": false,
+      "trial": 2,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": true,
+      "trial": 0,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": true,
+      "trial": 1,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": true,
+      "trial": 2,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14",
+      "afterHash": "0118f087f6e67769cc68c963442e17409b7e7d82d24e9327d414ab6111b54a14"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 100,
+      "actualBytes": 684,
+      "multibyte": false,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"75b41688-5653-47ac-9f24-d1dfc4166871\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"c9824428-2dd0-44c7-af70-f190b79e274b\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 100,
+      "actualBytes": 684,
+      "multibyte": false,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"704343a7-7364-4c6e-b8bb-f6b3748bbe2c\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"66ccb56e-e48e-43e2-8c02-0822133c59b6\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 100,
+      "actualBytes": 684,
+      "multibyte": false,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"140041f5-de25-4b1c-a223-cc92988ded78\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"5f91deba-916c-4fa5-98a2-f0c5249b5ed3\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 100,
+      "actualBytes": 685,
+      "multibyte": true,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"b47ffe25-2d01-4c82-8c94-b6138f53a7c2\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"4d3cb5da-21f5-4ee7-bcb7-f3bf66466807\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 100,
+      "actualBytes": 685,
+      "multibyte": true,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"86af1db7-fbf5-4c9c-88f5-5d8ec654643d\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"5def58f6-111d-4aac-b8d0-bcd58cd61d17\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 100,
+      "actualBytes": 685,
+      "multibyte": true,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"d680ba4c-75a1-44f2-81ab-c1a0efc3a6ba\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"16511f9d-2e51-42bb-9d20-2bd6254b44c5\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": false,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"9cffb066-2dc0-4087-b7cf-613b062f8d32\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"17b7fe2f-df14-455f-bf0b-86d63e6b0b1d\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": false,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"a0bf9b27-9526-4c6d-9f5b-4d6840c58fd1\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"0834fb45-3cc9-40e3-8808-d8949e61e0c6\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": false,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"842048e0-35bb-4d82-876c-2ec526c6aad7\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"973fa1dc-b8d4-47ff-87cc-27fb02a44515\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": true,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"42e0dff6-de0f-4ec6-bf0d-ed9d609ce545\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"6dd7a45c-04c1-4e6c-bac4-d99415f7d967\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": true,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"b709d983-53a3-4d9e-bbe1-0f00bcb1cafd\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"7cdc98da-4405-4c9f-a092-539594f34779\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": true,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"b60ccd01-168b-41b1-beef-8fc0bc229465\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"c7c32302-a26e-4444-a05a-58c7f80eee4e\"]}"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": false,
+      "trial": 0,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": false,
+      "trial": 1,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": false,
+      "trial": 2,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": true,
+      "trial": 0,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": true,
+      "trial": 1,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": true,
+      "trial": 2,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": false,
+      "trial": 0,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": false,
+      "trial": 1,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": false,
+      "trial": 2,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": true,
+      "trial": 0,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": true,
+      "trial": 1,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": true,
+      "trial": 2,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": false,
+      "trial": 0,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": false,
+      "trial": 1,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": false,
+      "trial": 2,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": true,
+      "trial": 0,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": true,
+      "trial": 1,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "undici-chunked",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": true,
+      "trial": 2,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "access-control-allow-origin": "https://masteryquests.org",
+        "access-control-expose-headers": "Retry-After",
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-type": "application/json; charset=utf-8",
+        "transfer-encoding": "chunked",
+        "vary": "Origin",
+        "x-content-type-options": "nosniff"
+      },
+      "exception": "terminated",
+      "cause": "ECONNRESET",
+      "noWrites": true,
+      "beforeHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b",
+      "afterHash": "e416ca06c63ace469205945ec6d3edc1c786ec7f345444414a81ef31ea412c6b"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 100,
+      "actualBytes": 684,
+      "multibyte": false,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"9b319d92-72bd-427c-89c0-902a585a582b\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"0b14b2e7-19e4-4677-a856-a2485d572f98\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 100,
+      "actualBytes": 684,
+      "multibyte": false,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"38a5dea6-e0d8-4187-8e19-11eb35c41d17\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"f350ebe5-f7ac-4ac5-b818-47236dc148fa\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 100,
+      "actualBytes": 684,
+      "multibyte": false,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"17d17419-c300-46cd-aa68-91ecc645967c\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"87efc726-d759-460f-a612-280ab72b5b0b\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 100,
+      "actualBytes": 685,
+      "multibyte": true,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"461c09b1-a0d8-4eca-bfab-6cf4265a97b7\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"259034da-4439-47b7-af60-d2aa444772eb\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 100,
+      "actualBytes": 685,
+      "multibyte": true,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"339636d9-f9bc-4713-bdb3-c143110946e4\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"60319f65-d596-4018-8c09-571fed721f31\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 100,
+      "actualBytes": 685,
+      "multibyte": true,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"3ea02598-9b1f-4172-97fa-316e3643b8a7\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"7a404ef5-db99-486f-b4e4-b8d728f67d34\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": false,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"dcd106d8-76fa-4bb4-ad97-96a45d5c101f\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"44315012-638f-48e8-bcfe-847602a48789\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": false,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"b64e84ad-4156-425e-8779-2b434a785cce\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"32c70336-5b8b-4271-bd69-0c8e0841a083\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": false,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"05872538-306d-4b5c-87e5-890e2833ce4d\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"856e4839-3be1-4652-8f02-b68a58f0e52e\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": true,
+      "trial": 0,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"979429c4-bbab-4776-8259-a917568bd081\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"358ce3ba-892a-44b6-be00-98b5b030d06c\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": true,
+      "trial": 1,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"0a5efa28-a0ab-4a6e-b8f0-1d86224a0fa4\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"515ae32e-c18c-435e-9b6a-5d8f1a00a94d\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131072,
+      "actualBytes": 131072,
+      "multibyte": true,
+      "trial": 2,
+      "status": 202,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":true,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"batchId\":\"5669bae1-3a7d-4e67-aadc-a8eb6130fc5b\",\"accepted\":1,\"duplicates\":0,\"acknowledgedEventIds\":[\"7e2c4f0f-e5b3-40bd-8e9d-29e8baa84223\"]}"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": false,
+      "trial": 0,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": false,
+      "trial": 1,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": false,
+      "trial": 2,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": true,
+      "trial": 0,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": true,
+      "trial": 1,
+      "status": 413,
+      "readableBody": true,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "body": "{\"ok\":false,\"phase\":\"phaseAnonymousTelemetryPOC-v1\",\"error\":\"request_too_large\"}",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 131073,
+      "actualBytes": 131073,
+      "multibyte": true,
+      "trial": 2,
+      "status": 413,
+      "readableBody": false,
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json; charset=utf-8"
+      },
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": false,
+      "trial": 0,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": false,
+      "trial": 1,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": false,
+      "trial": 2,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": true,
+      "trial": 0,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": true,
+      "trial": 1,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 524288,
+      "actualBytes": 524288,
+      "multibyte": true,
+      "trial": 2,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": false,
+      "trial": 0,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": false,
+      "trial": 1,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": false,
+      "trial": 2,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": true,
+      "trial": 0,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": true,
+      "trial": 1,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "edge",
+      "requestedBytes": 2097152,
+      "actualBytes": 2097152,
+      "multibyte": true,
+      "trial": 2,
+      "status": null,
+      "readableBody": false,
+      "exception": "Failed to fetch",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "undici",
+      "malformedContentLength": "1",
+      "actualBytes": 131073,
+      "status": null,
+      "exception": "The operation was aborted due to timeout",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    },
+    {
+      "client": "undici",
+      "malformedContentLength": "131074",
+      "actualBytes": 131073,
+      "status": null,
+      "exception": "fetch failed",
+      "cause": "UND_ERR_REQ_CONTENT_LENGTH_MISMATCH",
+      "noWrites": true,
+      "beforeHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3",
+      "afterHash": "ef50c0c9a3573be64fa396010364b1bad7ce72fe6c2cc602951d9142c73129d3"
+    }
+  ],
+  "browserErrors": [],
+  "browserNetwork": [
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 202,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "status": 413,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "status": 413,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "status": 413,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "status": 413,
+      "headers": {
+        "transfer-encoding": "chunked",
+        "cache-control": "no-store",
+        "access-control-expose-headers": "Retry-After",
+        "content-encoding": "gzip",
+        "x-content-type-options": "nosniff",
+        "access-control-allow-origin": "https://masteryquests.org",
+        "content-type": "application/json; charset=utf-8",
+        "vary": "Origin"
+      }
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    },
+    {
+      "failed": "net::ERR_FAILED"
+    }
+  ],
+  "runtimeLogs": [],
+  "healthAfterMalformed": "PASS",
+  "snapshotTables": [
+    "telemetry_events",
+    "telemetry_runs",
+    "telemetry_ingest_batches",
+    "telemetry_rate_limits",
+    "telemetry_build_policies",
+    "telemetry_build_capabilities",
+    "telemetry_scope_windows"
+  ]
+}

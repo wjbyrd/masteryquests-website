@@ -1,0 +1,657 @@
+{
+  "canonicalHeader": "X-MQ-Ingest-Token",
+  "beforeSeed": {
+    "digest": "00e149988c6d9b583355eaac4ee9f9a95b1794b4e5b889f19d75312769656cb3",
+    "counts": {
+      "telemetry_events": 0,
+      "telemetry_runs": 0,
+      "telemetry_ingest_batches": 0,
+      "telemetry_rate_limits": 0,
+      "telemetry_build_policies": 0,
+      "telemetry_build_capabilities": 0,
+      "telemetry_scope_windows": 0
+    }
+  },
+  "after": {
+    "digest": "c3ca5d0e601edad7ea31f849bd7f74b207ede8dd598e3d9ebf4a33364ee577ac",
+    "counts": {
+      "telemetry_events": 5,
+      "telemetry_runs": 5,
+      "telemetry_ingest_batches": 6,
+      "telemetry_rate_limits": 5,
+      "telemetry_build_policies": 1,
+      "telemetry_build_capabilities": 1,
+      "telemetry_scope_windows": 4
+    }
+  },
+  "functional": [
+    {
+      "label": "initial",
+      "status": 202,
+      "accepted": 1,
+      "tupleAndRowsVerified": true,
+      "receiptAttributed": true
+    },
+    {
+      "label": "exact 131072 bytes",
+      "status": 202,
+      "accepted": 1,
+      "tupleAndRowsVerified": true,
+      "receiptAttributed": true
+    },
+    {
+      "label": "final health 0",
+      "status": 202,
+      "accepted": 1,
+      "tupleAndRowsVerified": true,
+      "receiptAttributed": true
+    },
+    {
+      "label": "final health 1",
+      "status": 202,
+      "accepted": 1,
+      "tupleAndRowsVerified": true,
+      "receiptAttributed": true
+    },
+    {
+      "label": "final health 2",
+      "status": 202,
+      "accepted": 1,
+      "tupleAndRowsVerified": true,
+      "receiptAttributed": true
+    }
+  ],
+  "negative": [
+    {
+      "label": "missing token",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "malformed token",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "random token",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "expired token",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "e1ef7507d457d7dce50185a7161be0217603d6289315b9d572a7dc9a487757b0",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "e1ef7507d457d7dce50185a7161be0217603d6289315b9d572a7dc9a487757b0",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "revoked token",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "de7fa2a004e65e268ac90d5aa9be37c954129135d1c7168d4fe7e0964df57e6b",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "de7fa2a004e65e268ac90d5aa9be37c954129135d1c7168d4fe7e0964df57e6b",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "blocked build",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "c98a962eb5cb7f4f341380a2d8276920d7d2f03af7683996f58984fddee1343a",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "c98a962eb5cb7f4f341380a2d8276920d7d2f03af7683996f58984fddee1343a",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "wrong build",
+      "status": 403,
+      "error": "ingest_scope_mismatch",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "wrong game",
+      "status": 403,
+      "error": "ingest_scope_mismatch",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "wrong version",
+      "status": 403,
+      "error": "ingest_scope_mismatch",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "wrong schema",
+      "status": 403,
+      "error": "ingest_scope_mismatch",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "old header only",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "both old and new",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "Authorization instead",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "query instead",
+      "status": 400,
+      "error": "invalid_request",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "JSON instead",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "cookie instead",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    },
+    {
+      "label": "operator capabilityId instead",
+      "status": 403,
+      "error": "ingest_not_authorized",
+      "noWrites": true,
+      "before": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      },
+      "after": {
+        "digest": "7b0b6bd7f729ec57391ac7b1247935ad42d8aa254210bca494fd10396442462f",
+        "counts": {
+          "telemetry_events": 1,
+          "telemetry_runs": 1,
+          "telemetry_ingest_batches": 2,
+          "telemetry_rate_limits": 1,
+          "telemetry_build_policies": 1,
+          "telemetry_build_capabilities": 1,
+          "telemetry_scope_windows": 4
+        }
+      }
+    }
+  ],
+  "results": [
+    {
+      "case": "exact-duplicate",
+      "status": "PASS",
+      "accepted": 0,
+      "noEventRunOrAcceptedCounterInflation": true,
+      "submittedWorkCountersMayCharge": true
+    },
+    {
+      "case": "telemetry-secret-scan",
+      "status": "PASS"
+    }
+  ],
+  "cors": [
+    {
+      "requested": "x-mq-ingest-token",
+      "status": 204,
+      "allowed": "content-type,x-telemetry-phase,x-mq-ingest-token"
+    },
+    {
+      "requested": "x-mq-ingest-capability",
+      "status": 403,
+      "allowed": "content-type,x-telemetry-phase,x-mq-ingest-token"
+    },
+    {
+      "requested": "x-mq-ingest-token,x-mq-ingest-capability",
+      "status": 403,
+      "allowed": "content-type,x-telemetry-phase,x-mq-ingest-token"
+    }
+  ],
+  "sanity": [
+    {
+      "case": "oversized",
+      "status": 413,
+      "readable": true,
+      "noWrites": true
+    },
+    {
+      "case": "multibyte oversized",
+      "status": 413,
+      "readable": true,
+      "noWrites": true
+    },
+    {
+      "case": "Edge oversized",
+      "status": 413,
+      "readable": true,
+      "noWrites": true,
+      "browser": "153.0.4234.32"
+    }
+  ],
+  "tail": {
+    "events": 23,
+    "rawTokenMatches": 0,
+    "rawHashMatches": 0,
+    "partialTokenMatches": 0,
+    "consoleRawMatches": 0,
+    "exceptionRawMatches": 0,
+    "adminTokenMatches": 0,
+    "maintenanceTokenMatches": 0,
+    "providerFieldPath": "event.request.headers.x-mq-ingest-token",
+    "headerStates": {
+      "redacted": 16,
+      "omitted": 7
+    },
+    "markers": [
+      "REDACTED"
+    ],
+    "newHeaderObservations": 16
+  },
+  "applicationLogs": {
+    "rawMatches": 0,
+    "exceptionMatches": 0
+  },
+  "persistedLogs": {
+    "status": "UNAVAILABLE",
+    "limitation": "Cloudflare API rejected staging operation: HTTP 403 codes 10000"
+  },
+  "productionSecretsPresent": false,
+  "noncanonicalCarriers": "Nonsecret markers in staging; local tests use real fixture credentials",
+  "providerInputUnmodified": true
+}

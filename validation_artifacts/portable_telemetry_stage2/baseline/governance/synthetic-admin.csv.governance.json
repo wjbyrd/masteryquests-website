@@ -1,0 +1,14 @@
+{
+  "format": "mq-export-governance/1",
+  "governancePolicyVersion": "mq-governance/2",
+  "disclosureVersion": "mq-disclosure/2",
+  "measurementContract": "mq-measurement/1",
+  "exportSha256": "c5834266fcf7994cb5c94eae9592699030fb40ce05c03f77676e6b36f8c67294",
+  "exportedAt": "2026-09-10T12:00:00.000Z",
+  "retention": {
+    "days": 730,
+    "mode": "automatic",
+    "unit": "whole-run",
+    "clock": "latest-server-receipt"
+  }
+}

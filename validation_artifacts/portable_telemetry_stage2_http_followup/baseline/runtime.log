@@ -1,0 +1,72 @@
+(node:62256) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+miniflare Flags OFF preserve schema 1/2/3, originless delivery, arbitrary capability and old acknowledgment: PASS
+miniflare Exact server true only; client flags cannot enable grace or issuance: PASS
+miniflare Valid capability HTTP admission, operator attribution, exact retry and receipt retention: PASS
+miniflare Missing, malformed, empty, comma-combined, unknown and operator-ID credentials reject: PASS
+miniflare Capability expired never falls back to valid legacy tuple: PASS
+miniflare Capability revoked never falls back to valid legacy tuple: PASS
+miniflare Capability blocked never falls back to valid legacy tuple: PASS
+miniflare Malformed/unknown/empty capability plus known grace tuple is never legacy authority: PASS
+miniflare Valid capability with wrong game/build/version/schema or legacy tuple fails scope: PASS
+miniflare Known beta inventory is derived from immutable source; grace writes NULL capability receipt: PASS
+miniflare Grace requires exact origin/tuple and rejects missing Origin, unknown builds and client bypasses: PASS
+miniflare Sunset is exclusive and expired grace never admits: PASS
+miniflare Pending owner sunset and malformed inventory fail closed: PASS
+miniflare Invalid inventory cannot broaden the accepted subset: PASS
+miniflare Runtime manifests resolve dynamically, missing references are 409, invalid revisions are 403: PASS
+miniflare capability HTTP conflicts preserve owner, event and run sequence: PASS
+miniflare grace HTTP conflicts preserve owner, event and run sequence: PASS
+miniflare capability concurrent HTTP identical writers: PASS
+miniflare capability concurrent HTTP sequence writers: PASS
+miniflare capability concurrent HTTP owner writers: PASS
+miniflare grace concurrent HTTP identical writers: PASS
+miniflare grace concurrent HTTP sequence writers: PASS
+miniflare grace concurrent HTTP owner writers: PASS
+miniflare Concurrent different-build capability writers establish one immutable owner: PASS
+miniflare revocation between lookup and HTTP transaction aborts all writes: PASS
+miniflare block between lookup and HTTP transaction aborts all writes: PASS
+miniflare expiry between lookup and HTTP transaction aborts all writes: PASS
+miniflare Concurrent quota exhaustion returns 429 and Retry-After without overshoot/fallback: PASS
+miniflare capability SQL failure at every dependent stage rolls back the entire request: PASS
+miniflare grace SQL failure at every dependent stage rolls back the entire request: PASS
+miniflare Route-scoped capability CORS supports apex/www and keeps admin/activation closed: PASS
+miniflare All controlled error classes carry readable first-party CORS and no-store: FAIL
+miniflare Body validation handles 0/1/50/51 events, JSON, media type and encoding: PASS
+miniflare 128 KiB and multibyte boundaries enforce actual UTF-8 bytes: FAIL
+miniflare Misleading Content-Length cannot permit an oversized body: FAIL
+miniflare Ingest capability cannot access admin; Authorization/cookies/JSON/query cannot replace header: PASS
+miniflare Credential-bearing storage exception is redacted from response/logs/telemetry/receipts/CSV: PASS
+miniflare Short-window cleanup is bounded and preserves lifetime accounting and all telemetry: PASS
+miniflare Local statement/latency measurements retain security at 1,25,50,duplicate and mixed batch sizes: PASS
+{"runtime":"miniflare","passed":36,"failed":3}
+TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:13602:53)
+    at Fetch.emit (node:events:508:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:12732:14)
+    at Object.onError (node:internal/deps/undici/undici:13728:38)
+    at Request.onError (node:internal/deps/undici/undici:3073:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1932:17)
+    at Socket.onHttpSocketClose (node:internal/deps/undici/undici:7726:14)
+    at Socket.emit (node:events:520:35)
+    at TCP.<anonymous> (node:net:346:12)
+TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:13602:53)
+    at Fetch.emit (node:events:508:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:12732:14)
+    at Object.onError (node:internal/deps/undici/undici:13728:38)
+    at Request.onError (node:internal/deps/undici/undici:3073:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1932:17)
+    at Socket.onHttpSocketClose (node:internal/deps/undici/undici:7726:14)
+    at Socket.emit (node:events:520:35)
+    at TCP.<anonymous> (node:net:346:12)
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'UND_ERR_SOCKET'
+- 'UND_ERR_REQ_CONTENT_LENGTH_MISMATCH'
+           ^
+
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/capability-http-check.mjs:41:373
+    at async test (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/capability-http-check.mjs:13:262)
+    at async file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/capability-http-check.mjs:41:1

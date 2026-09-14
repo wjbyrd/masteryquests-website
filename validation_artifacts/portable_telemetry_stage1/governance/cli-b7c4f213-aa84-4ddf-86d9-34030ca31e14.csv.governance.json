@@ -1,0 +1,20 @@
+{
+  "format": "mq-export-governance/1",
+  "governancePolicyVersion": "mq-governance/2",
+  "disclosureVersion": "mq-disclosure/2",
+  "measurementContract": "mq-measurement/1",
+  "exportSha256": "cbd89137654c32024137bc0c88a89d3332ca6cf57771751133bb97079ec60600",
+  "exportedAt": "2026-09-14T17:48:18.282Z",
+  "scope": {
+    "buildId": "synthetic-governance",
+    "includeSynthetic": true,
+    "rowLimit": 50000
+  },
+  "retention": {
+    "days": 730,
+    "mode": "automatic",
+    "unit": "whole-run",
+    "clock": "latest-server-receipt"
+  },
+  "applicability": "Current server policy at export; historical event policy is unknown. Downloaded copies are outside server retention."
+}

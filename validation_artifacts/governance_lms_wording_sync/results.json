@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "stage1Blocker": "CLEARED",
+  "deployment": "NOT DEPLOYED",
+  "suites": {
+    "governance": {
+      "passed": 14,
+      "failed": 0,
+      "evidence": "validation_artifacts/governance_lms_wording_sync/governance/governance-results.json"
+    },
+    "readiness": {
+      "passed": 27,
+      "failed": 0,
+      "evidence": "validation_artifacts/governance_lms_wording_sync/readiness/remediation-results.json"
+    },
+    "scheduled": {
+      "passed": 11,
+      "failed": 0,
+      "evidence": "validation_artifacts/governance_lms_wording_sync/scheduled/scheduled-results.json"
+    }
+  },
+  "sourceVerification": {
+    "status": "PASS",
+    "comparedFiles": 10627,
+    "unchangedFiles": 10626,
+    "changed": [
+      "audit_tools/telemetry_governance/render.mjs"
+    ],
+    "missing": [],
+    "comparison": "Byte-for-byte SHA-256 against start-of-task working tree, including uncommitted Stage 1 work"
+  },
+  "rendererCheck": "PASS",
+  "gitDiffCheck": "PASS",
+  "productionCalls": false,
+  "externalNetwork": "Blocked in Node; browser telemetry intercepted into local Worker and other external requests aborted",
+  "newReports": [
+    "FINAL_REPORT_governance_lms_wording_sync.md"
+  ],
+  "evidenceDirectory": "validation_artifacts/governance_lms_wording_sync"
+}
