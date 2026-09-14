@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "url": "https://stage3.masteryquests.org/",
+  "results": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/composer.js",
+      "status": 200
+    },
+    {
+      "path": "/ingest-activation.js",
+      "status": 200
+    },
+    {
+      "path": "/telemetry-activation.js",
+      "status": 200
+    },
+    {
+      "path": "/anonymous-telemetry-source.js",
+      "status": 200
+    },
+    {
+      "path": "/data/composer_library.js",
+      "status": 200
+    },
+    {
+      "path": "/data/concept-reviews/manifest.json",
+      "status": 200
+    },
+    {
+      "path": "/template/mastery-quests-faculty-template-composer-ready.html",
+      "status": 200
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200
+    },
+    {
+      "path": "/v1/build-capabilities",
+      "method": "OPTIONS",
+      "status": 204
+    },
+    {
+      "path": "/v1/events",
+      "method": "OPTIONS",
+      "status": 204
+    }
+  ],
+  "unapprovedOriginRejected": true,
+  "challengeAttempted": false,
+  "issuancePostAttempted": false
+}

@@ -1,0 +1,59 @@
+(node:71068) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Token uses 32 native random bytes, canonical encoding, deterministic native SHA-256 and strict parsing: PASS
+Strict flags and bounded quota config: only exact server true enables fixtures: PASS
+Activation allowlist/primitives/versions/bounds and challenge success/failure/context/replay/unavailability: PASS
+Additive migration preserves prior schemas, historical valid/legacy/malformed JSON and NULL receipts: PASS
+Isolated issuance stores digest only, one-year expiry, duplicate/conflict and fresh replacement: PASS
+Concurrent duplicate issuance persists exactly one capability and one issuance window increment: PASS
+Atomic issuance live cap, build/global quotas and blocked policy: PASS
+Exact tuple admission, same-owner addition, exact retry preserves summaries and retention receipts: PASS
+Missing/malformed/operator-ID credentials and wrong raw tuple/schema are rejected without writes: PASS
+Expiry/revocation/block status and admission fail closed: PASS
+Immutable run ownership rejects changed buildId: PASS
+Immutable run ownership rejects changed gameId: PASS
+Immutable run ownership rejects changed buildVersion: PASS
+Immutable run ownership rejects changed anonymousClientId: PASS
+Historically mixed events reject even if the summary owner matches: PASS
+Changed event payload and run/sequence collisions conflict; canonical extras ordering retries exactly: PASS
+Deterministic concurrent first-write race: identical: PASS
+Deterministic concurrent first-write race: sequence: PASS
+Deterministic concurrent first-write race: payload: PASS
+Deterministic concurrent first-write race: owner: PASS
+Admission rechecks revoke between lookup and transaction: PASS
+Admission rechecks block between lookup and transaction: PASS
+Admission rechecks expiry between lookup and transaction: PASS
+Atomic concurrent quota: CAP_ACCEPTED_EVENTS: PASS
+Atomic concurrent quota: BUILD_ACCEPTED_EVENTS: PASS
+Atomic concurrent quota: CAP_EVENTS_MINUTE: PASS
+Atomic concurrent quota: BUILD_EVENTS_MINUTE: PASS
+Atomic concurrent quota: GLOBAL_EVENTS_MINUTE: PASS
+Atomic concurrent quota: GLOBAL_REQUESTS_MINUTE: PASS
+Atomic concurrent quota: CAP_REQUESTS_MINUTE: PASS
+SQL failure rolls back all dependent writes: telemetry_events: PASS
+SQL failure rolls back all dependent writes: telemetry_runs: PASS
+SQL failure rolls back all dependent writes: telemetry_build_capabilities: PASS
+SQL failure rolls back all dependent writes: telemetry_build_policies: PASS
+SQL failure rolls back all dependent writes: telemetry_ingest_batches: PASS
+SQL failure rolls back all dependent writes: telemetry_scope_windows: PASS
+Multiple runtime manifests bind to one immutable revision; altered revisions and ID-only authority reject: PASS
+Null-manifest exception admits only unresolved empty-context lifecycle: PASS
+Legacy HTTP parity before/after migration with flags OFF and arbitrary capability headers; CORS unchanged: PASS
+Ingest capability has no admin/control/issuance authority; admin plus distinct maintenance required: PASS
+Secrets absent from telemetry/receipts/CSV/errors/logs and publishable snapshots: PASS
+Maximum 50-event batch commits accurate aggregates within D1 binding bounds: PASS
+Canonical normalized byte ceilings are atomic at capability/build/global scopes: PASS
+Concurrent byte budget contenders cannot exceed one normalized row: PASS
+Replacement tokens/revisions retain build and global cumulative budgets: PASS
+Existing client submitted-event limit is additional, atomic, and charges duplicates: PASS
+Clock-window boundary retries under the new database window: PASS
+Orphaned or inflated historical summaries reject without normalization: PASS
+Issuance rollback covers policy, capability and window writes: PASS
+Build blocked during issuance and flags flipped at commit reject all writes: PASS
+Manifest insertion and dependent measured event commit together; changed configuration cannot rebind: PASS
+Prior manifest deletion between lookup and commit invalidates the entire request: PASS
+Expiry during dependent SQL writes is caught by final permission guard and rolls back: PASS
+Concurrent different-build owners establish one run owner and reject global event-ID borrowing: PASS
+Malformed JSON and deeply nested/oversized request bodies fail before admission: PASS
+Flags-OFF valid legacy schemas 1/2/3 behave alike before and after additive migration: PASS
+{"passed":56,"failed":0,"maxBindings":41,"maxBatch":217}

@@ -1,0 +1,469 @@
+{
+  "repository": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "branch": "main",
+  "startingHead": "61bc7fd7a4ed84990cf8991cfeb65a8b38567eec",
+  "status": "FINAL_ACCEPTED",
+  "canonicalDefect": "Workers fetch rejects redirect error before Siteverify",
+  "correction": "redirect manual; existing non-2xx rejection blocks redirects without following Location",
+  "canonicalMatrix": {
+    "passed": 19,
+    "failed": 0
+  },
+  "workerdMatrix": {
+    "passed": 19,
+    "failed": 0
+  },
+  "verifierIdentity": {
+    "identical": true,
+    "sha256": "4d8239f16e11f3175775df91e01a2f4d291b5e7719818693d3a0a41952a79f91",
+    "stagingPatch": false
+  },
+  "regressions": [
+    {
+      "name": "capabilities",
+      "exitCode": 0,
+      "expected": 56,
+      "passed": 56,
+      "status": "PASS"
+    },
+    {
+      "name": "governance",
+      "exitCode": 0,
+      "expected": 14,
+      "passed": 14,
+      "status": "PASS"
+    },
+    {
+      "name": "readiness",
+      "exitCode": 0,
+      "expected": 27,
+      "passed": 27,
+      "status": "PASS"
+    },
+    {
+      "name": "scheduled",
+      "exitCode": 0,
+      "expected": 11,
+      "passed": 11,
+      "status": "PASS"
+    },
+    {
+      "name": "backend",
+      "exitCode": 0,
+      "expected": 18,
+      "passed": 18,
+      "status": "PASS"
+    },
+    {
+      "name": "regressions",
+      "exitCode": 0,
+      "expected": 21,
+      "passed": 21,
+      "status": "PASS"
+    },
+    {
+      "name": "contract",
+      "exitCode": 0,
+      "expected": 16,
+      "passed": 16,
+      "status": "PASS"
+    },
+    {
+      "name": "private-refresh",
+      "exitCode": 0,
+      "expected": 33,
+      "passed": 33,
+      "status": "PASS"
+    },
+    {
+      "name": "http-sqlite",
+      "exitCode": 0,
+      "expected": 39,
+      "passed": 39,
+      "status": "PASS"
+    },
+    {
+      "name": "header-sqlite",
+      "exitCode": 0,
+      "expected": 8,
+      "passed": 8,
+      "status": "PASS"
+    },
+    {
+      "name": "header-runtime",
+      "exitCode": 0,
+      "expected": 8,
+      "passed": 8,
+      "status": "PASS"
+    },
+    {
+      "name": "stage3-issuance",
+      "exitCode": 0,
+      "expected": 24,
+      "passed": 24,
+      "status": "PASS"
+    },
+    {
+      "name": "stage3-composer",
+      "exitCode": 0,
+      "expected": 11,
+      "passed": 11,
+      "status": "PASS"
+    },
+    {
+      "name": "stage3-browser",
+      "exitCode": 0,
+      "expected": 16,
+      "passed": 16,
+      "status": "PASS"
+    },
+    {
+      "name": "public-browser",
+      "exitCode": 0,
+      "expected": 103,
+      "passed": 103,
+      "status": "PASS"
+    },
+    {
+      "name": "canonical-verifier",
+      "exitCode": 0,
+      "expected": 19,
+      "passed": 19,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_faculty_outcome_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_content_scope_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_default_character_set_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_exam_navigation_boss_reveal_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_checkpoint_artifact_exam_integrity_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_guide_intro_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase1_targeted_repair_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase15_production_hardening_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_visibility_aware_telemetry_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_generated_telemetry_smoke.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase3a_official_theme_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase3b_custom_asset_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase3e_graph_question_sync_validation.mjs",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_question_quality_auditor_validation.mjs",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_macro_phase2_taxonomy_validation.mjs",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_checkpoint_remediation_design_change_validation.mjs",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_concept_review_integration.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_mastery_report_concept_reviews.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_mastery_report_2_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_mastery_report_state_leak_hotfix.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_mode_availability_fix.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_quiz_mode_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_unlimited_practice_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_trial_by_graph_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_fading_fortune_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_risk_reward_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_risk_reward_state_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    }
+  ],
+  "composerRunners": {
+    "passed": 27,
+    "failed": 0
+  },
+  "staging": {
+    "worker": "masteryquests-telemetry-stage3-staging",
+    "databaseId": "993f49a5-4dd4-41ee-9007-bbf4bb4856c9",
+    "workerExists": true,
+    "databaseExists": true,
+    "secretBindingPresent": true,
+    "baselineCapabilities": 1,
+    "baselineActive": 0,
+    "productionTouched": false,
+    "version": "64c9817a-f183-42fc-83f7-3b5ebd611017",
+    "url": "https://stage3.masteryquests.org/",
+    "retained": true,
+    "retentionRecommendation": "Retain isolated synthetic Worker/D1/domain/widget for Stage 4; no active test capabilities or tails."
+  },
+  "manualTurnstile": {
+    "status": "PASS",
+    "ownerBrowser": "Edge",
+    "ownerBrowserVersion": "not supplied",
+    "httpStatus": 201,
+    "automatedChallengeAttempts": 0
+  },
+  "newIssuance": {
+    "status": "PASS",
+    "baselineCount": 1,
+    "afterCount": 2,
+    "intendedNewCount": 1,
+    "lifetimeSeconds": 31536000,
+    "exactDescriptorTupleAndTimestamps": true
+  },
+  "hashOnlyStorage": {
+    "status": "PASS",
+    "rawCapabilityStored": false,
+    "facultyIdentityStored": false,
+    "evidence": "Downloaded descriptor compared in memory against D1 capability row and its fixed metadata-only schema"
+  },
+  "minimalGameHealth": {
+    "status": "PASS",
+    "minimalProof": true,
+    "browserVersion": "153.0.4234.32",
+    "results": [
+      {
+        "name": "Downloaded descriptor matches hash-only D1 issuance and exact tuple",
+        "status": "PASS"
+      },
+      {
+        "name": "Real issued game launches and sends 202 through canonical header; CSV excludes credential",
+        "status": "PASS"
+      },
+      {
+        "name": "Staging events and runtime manifest match exact build; receipts attribute issued capability",
+        "status": "PASS"
+      },
+      {
+        "name": "Live-tail redacts X-MQ-Ingest-Token with zero raw capability or digest matches",
+        "status": "PASS"
+      }
+    ],
+    "tail": {
+      "events": 2,
+      "headerObservations": 2,
+      "redacted": 2,
+      "rawMatches": 0,
+      "hashMatches": 0,
+      "unrecognized": 0
+    },
+    "provider": "REAL_TURNSTILE_OWNER_COMPLETED",
+    "issuanceStatus": 201,
+    "productionCalls": 0,
+    "challengeAttempts": 0,
+    "downloadPersistedByHarness": false
+  },
+  "liveTail": {
+    "status": "PASS",
+    "issuanceObserved201": true,
+    "issuanceConsoleEntries": 0,
+    "issuanceExceptionEntries": 0,
+    "issuanceRequestBodyFields": 0,
+    "ingest": {
+      "events": 2,
+      "headerObservations": 2,
+      "redacted": 2,
+      "rawMatches": 0,
+      "hashMatches": 0,
+      "unrecognized": 0
+    },
+    "challengeAndSecretCheck": "Structural absence: no request body, application-console or exception payload; secret value was not read and challenge token was not requested. No exact-value secret/challenge scan claimed.",
+    "rawPayloadsPersisted": false
+  },
+  "production": {
+    "deployed": false,
+    "d1Touched": false,
+    "migration0003Applied": false,
+    "flagsAllFalse": true,
+    "corsChanged": false,
+    "publicComposerDeployed": false,
+    "publicGamesChanged": false,
+    "nationalEngineChanged": false,
+    "contractsChanged": false,
+    "retentionChanged": false
+  },
+  "artifactScan": {
+    "scannedFiles": 241,
+    "rawCapabilityPatternMatches": 0
+  },
+  "gitDiffCheck": true,
+  "filesChanged": [
+    "server/anonymous-telemetry-poc/turnstile-verifier.mjs",
+    "audit_tools/telemetry_governance/stage3-issuance-check.mjs",
+    "audit_tools/telemetry_governance/turnstile-verifier-matrix.mjs",
+    "audit_tools/telemetry_governance/turnstile-verifier-check.mjs",
+    "audit_tools/telemetry_governance/stage3-staging/prepare-manual-host.mjs",
+    "audit_tools/telemetry_governance/stage3-staging/fix-staging-provider-redirect.mjs",
+    "audit_tools/telemetry_governance/stage3-staging/add-safe-diagnostics.mjs",
+    "audit_tools/telemetry_governance/stage3-staging/control.mjs",
+    "audit_tools/telemetry_governance/stage3-staging/verify-retained-identity.mjs",
+    "audit_tools/telemetry_governance/stage3-staging/run-verifier-regressions.mjs",
+    "audit_tools/telemetry_governance/stage3-staging/resume-composer-regressions.mjs",
+    "audit_tools/telemetry_governance/stage3-staging/restore-verifier-test-artifacts.cjs",
+    "audit_tools/telemetry_governance/stage3-staging/tail-canonical-confirmation.mjs",
+    "audit_tools/telemetry_governance/stage3-staging/wrangler.staging.json",
+    "validation_artifacts/portable_telemetry_stage3_staging/manual-host-build.json",
+    "validation_artifacts/portable_telemetry_stage3_staging/manual-host-reachability.json",
+    "validation_artifacts/portable_telemetry_stage3_staging/resources.json",
+    "FINAL_REPORT_portable_telemetry_stage3_verifier_fix.md",
+    "validation_artifacts/portable_telemetry_stage3_verifier_fix/",
+    "audit_tools/telemetry_governance/stage3-staging/minimal-canonical-game-proof.mjs"
+  ],
+  "stage3": "FINAL_ACCEPTED",
+  "stage4": "GO_FOR_NEXT_SEPARATELY_SCOPED_STAGE",
+  "cleanup": {
+    "resourcesRetained": true,
+    "allKnownTailsClosed": true,
+    "totalTestCapabilities": 2,
+    "activeTestCapabilities": 0
+  },
+  "initialHealth429": {
+    "observed": true,
+    "resolvedOnOneBoundedRetry": true,
+    "limitsChanged": false,
+    "rootCause": "Not conclusively established; inspected quota counters were below ceilings."
+  }
+}

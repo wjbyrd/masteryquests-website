@@ -1,0 +1,930 @@
+{
+  "generatedAt": "2026-09-04T20:00:00-04:00",
+  "schemaVersion": "1.0.0",
+  "sourceLibrary": {
+    "countByDiscipline": {
+      "general": 26,
+      "macro": 57,
+      "micro": 68
+    },
+    "manifestSha256": "6d3b4a68bc7a5a40b229888e0f2e72d7938fbb4d8eadbb859a62cf085016eb09",
+    "pdfCount": 151,
+    "totalPdfBytes": 67491120
+  },
+  "status": "PASS",
+  "testCases": [
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 96
+      },
+      "case": "A",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "scarcity-and-tradeoffs"
+      ],
+      "generatedPackageBytes": 11213,
+      "name": "one-general-concept",
+      "questionCount": 96,
+      "referencedPdfBytes": 367465,
+      "reviewCodes": [
+        "GEN-ECON-01"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 11213,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "scarcity-and-tradeoffs"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 90
+      },
+      "case": "B",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "production-possibilities-frontier"
+      ],
+      "generatedPackageBytes": 16886,
+      "name": "general-graph-concept",
+      "questionCount": 90,
+      "referencedPdfBytes": 385546,
+      "reviewCodes": [
+        "GEN-ECON-08"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 16886,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "production-possibilities-frontier"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 171
+      },
+      "case": "C",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "price-elasticity-of-demand"
+      ],
+      "generatedPackageBytes": 17708,
+      "name": "micro-granular-subtopic",
+      "questionCount": 171,
+      "referencedPdfBytes": 517597,
+      "reviewCodes": [
+        "MICRO-04"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 17708,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "price-elasticity-of-demand"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 177
+      },
+      "case": "G",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "externalities"
+      ],
+      "generatedPackageBytes": 20739,
+      "name": "externalities-dedicated-review",
+      "questionCount": 177,
+      "referencedPdfBytes": 540246,
+      "reviewCodes": [
+        "MICRO-54"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 20739,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "externalities"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 176
+      },
+      "case": "H",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "public-goods-and-common-resources"
+      ],
+      "generatedPackageBytes": 32531,
+      "name": "public-goods-dedicated-review",
+      "questionCount": 176,
+      "referencedPdfBytes": 561230,
+      "reviewCodes": [
+        "MICRO-55"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 32531,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "public-goods-and-common-resources"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 240
+      },
+      "case": "I",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "factor-markets"
+      ],
+      "generatedPackageBytes": 25796,
+      "name": "factor-markets-dedicated-review",
+      "questionCount": 240,
+      "referencedPdfBytes": 395030,
+      "reviewCodes": [
+        "MICRO-57"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 25796,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "factor-markets"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 160
+      },
+      "case": "J",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "consumer-choice"
+      ],
+      "generatedPackageBytes": 17920,
+      "name": "consumer-choice-dedicated-review",
+      "questionCount": 160,
+      "referencedPdfBytes": 390467,
+      "reviewCodes": [
+        "MICRO-58"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 17920,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "consumer-choice"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 160
+      },
+      "case": "K",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "income-inequality-poverty-and-redistribution"
+      ],
+      "generatedPackageBytes": 18501,
+      "name": "income-inequality-dedicated-review",
+      "questionCount": 160,
+      "referencedPdfBytes": 650717,
+      "reviewCodes": [
+        "MICRO-59"
+      ],
+      "reviewPdfCount": 1,
+      "runtimeManifestBytes": 18501,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "income-inequality-poverty-and-redistribution"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 180
+      },
+      "case": "L",
+      "diagnosticClosureSize": 1,
+      "diagnosticConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "generatedPackageBytes": 31686,
+      "name": "information-behavior-public-choice-dedicated-review",
+      "questionCount": 180,
+      "referencedPdfBytes": 3049207,
+      "reviewCodes": [
+        "MICRO-60",
+        "MICRO-61",
+        "MICRO-62",
+        "MICRO-63",
+        "MICRO-64",
+        "MICRO-65",
+        "MICRO-66",
+        "MICRO-67",
+        "MICRO-68"
+      ],
+      "reviewPdfCount": 9,
+      "runtimeManifestBytes": 31686,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "information-asymmetry-behavioral-and-political-economy"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "quiz"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 608
+      },
+      "case": "D",
+      "diagnosticClosureSize": 11,
+      "diagnosticConceptIds": [
+        "average-costs",
+        "cost-components-schedules",
+        "costs-of-production",
+        "economic-costs",
+        "long-run-average-cost-scale",
+        "marginal-cost-production-linkages",
+        "minimum-efficient-scale",
+        "profit-concepts",
+        "short-run-cost-curves",
+        "short-run-production",
+        "sunk-avoidable-costs"
+      ],
+      "generatedPackageBytes": 85969,
+      "name": "micro-costs-family-parent",
+      "questionCount": 608,
+      "referencedPdfBytes": 4120522,
+      "reviewCodes": [
+        "MICRO-18",
+        "MICRO-19",
+        "MICRO-20",
+        "MICRO-21",
+        "MICRO-22",
+        "MICRO-23",
+        "MICRO-24",
+        "MICRO-25",
+        "MICRO-26",
+        "MICRO-27"
+      ],
+      "reviewPdfCount": 10,
+      "runtimeManifestBytes": 85969,
+      "selectedConceptCount": 1,
+      "selectedConceptIds": [
+        "costs-of-production"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "standard"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 919
+      },
+      "case": "E",
+      "diagnosticClosureSize": 16,
+      "diagnosticConceptIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "aggregate-demand",
+        "demand-and-supply-shocks",
+        "disinflation-and-policy",
+        "fiscal-multipliers-and-crowding-out",
+        "fiscal-policy-and-aggregate-demand",
+        "liquidity-preference-and-money-market",
+        "long-run-aggregate-supply-and-potential-output",
+        "long-run-macroeconomic-self-adjustment",
+        "long-run-phillips-curve",
+        "monetary-policy-transmission",
+        "phillips-curve-expectations",
+        "sacrifice-ratio",
+        "short-run-aggregate-supply",
+        "short-run-phillips-curve",
+        "stabilization-policy"
+      ],
+      "generatedPackageBytes": 151798,
+      "name": "macro-stabilization-starter",
+      "questionCount": 919,
+      "referencedPdfBytes": 8608402,
+      "reviewCodes": [
+        "MACRO-28",
+        "MACRO-29",
+        "MACRO-30",
+        "MACRO-31",
+        "MACRO-32",
+        "MACRO-33",
+        "MACRO-34",
+        "MACRO-35",
+        "MACRO-36",
+        "MACRO-37",
+        "MACRO-38",
+        "MACRO-39",
+        "MACRO-40",
+        "MACRO-41",
+        "MACRO-50",
+        "MACRO-51"
+      ],
+      "reviewPdfCount": 16,
+      "runtimeManifestBytes": 151798,
+      "selectedConceptCount": 14,
+      "selectedConceptIds": [
+        "liquidity-preference-and-money-market",
+        "monetary-policy-transmission",
+        "fiscal-policy-and-aggregate-demand",
+        "fiscal-multipliers-and-crowding-out",
+        "stabilization-policy",
+        "aggregate-demand",
+        "aggregate-supply",
+        "macroeconomic-equilibrium-and-shocks",
+        "long-run-macroeconomic-adjustment",
+        "short-run-phillips-curve",
+        "long-run-phillips-curve",
+        "phillips-curve-expectations",
+        "disinflation-and-policy",
+        "sacrifice-ratio"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ]
+    },
+    {
+      "answerVerification": {
+        "issues": [],
+        "ok": true,
+        "questionCount": 9667
+      },
+      "case": "F",
+      "diagnosticClosureSize": 147,
+      "diagnosticConceptIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "aggregate-demand",
+        "applications-of-elasticity",
+        "average-costs",
+        "bank-balance-sheets-reserves-and-capital",
+        "binding-price-ceilings",
+        "binding-price-floors",
+        "budget-accounting-and-public-saving",
+        "capital-flows-and-net-capital-outflow",
+        "central-bank-and-federal-reserve",
+        "competitive-efficiency-limits",
+        "competitive-entry-exit-long-run",
+        "competitive-industry-cost-conditions",
+        "competitive-market-price-taking-revenue",
+        "competitive-markets",
+        "competitive-output-choice",
+        "competitive-profit-loss",
+        "competitive-short-run-supply",
+        "competitive-shutdown",
+        "consumer-and-producer-surplus",
+        "consumer-choice",
+        "consumer-surplus",
+        "cost-components-schedules",
+        "costs-of-production",
+        "cpi-and-inflation-measurement",
+        "cpi-bias",
+        "cpi-versus-gdp-deflator",
+        "cross-price-elasticity-of-demand",
+        "crowding-out-and-capital-formation",
+        "debt-measures-burden-and-fiscal-data",
+        "deficits-debt-and-government-borrowing",
+        "demand",
+        "demand-and-supply-shocks",
+        "deposit-creation-and-money-multiplier",
+        "disinflation-and-policy",
+        "economic-costs",
+        "economic-growth-policy",
+        "economist-policy-role",
+        "efficiency-equity-surplus-limits",
+        "efficient-quantity-allocation",
+        "elasticity",
+        "elasticity-and-total-revenue",
+        "externalities",
+        "factor-markets",
+        "fiscal-multipliers-and-crowding-out",
+        "fiscal-policy-and-aggregate-demand",
+        "fisher-effect",
+        "foreign-exchange-market",
+        "gains-from-trade",
+        "gdp-components",
+        "gdp-measurement",
+        "import-quotas-quota-rents",
+        "incentives",
+        "income-elasticity-of-demand",
+        "income-inequality-poverty-and-redistribution",
+        "indexing-and-real-values",
+        "inflation-costs",
+        "inflation-tax-and-deflation",
+        "information-asymmetry-behavioral-and-political-economy",
+        "integrated-economic-analysis",
+        "international-trade-and-trade-policy",
+        "international-transactions-and-identities",
+        "labor-market-institutions",
+        "limits-of-gdp",
+        "liquidity-preference-and-money-market",
+        "living-standards-and-growth",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "long-run-aggregate-supply-and-potential-output",
+        "long-run-average-cost-scale",
+        "long-run-macroeconomic-self-adjustment",
+        "long-run-phillips-curve",
+        "marginal-analysis",
+        "marginal-cost-production-linkages",
+        "market-equilibrium",
+        "market-power",
+        "mcomp-advertising-nonprice",
+        "mcomp-efficiency-variety-limits",
+        "mcomp-entry-exit-long-run",
+        "mcomp-short-run-choice",
+        "mcomp-structure-differentiation",
+        "micro-versus-macro",
+        "minimum-efficient-scale",
+        "models-and-assumptions",
+        "monetary-control-limits",
+        "monetary-neutrality",
+        "monetary-policy-tools",
+        "monetary-policy-transmission",
+        "money-functions-and-measures",
+        "monopolistic-competition",
+        "monopoly",
+        "monopoly-demand-revenue",
+        "monopoly-output-price",
+        "monopoly-power-barriers",
+        "monopoly-price-discrimination",
+        "monopoly-profit-loss-shutdown",
+        "monopoly-welfare-efficiency",
+        "natural-monopoly-regulation",
+        "natural-rate-of-unemployment",
+        "nominal-exchange-rates",
+        "oligopoly",
+        "oligopoly-collusion-cartels",
+        "oligopoly-dynamic-strategy",
+        "oligopoly-game-theory-foundations",
+        "oligopoly-rivalry-coordination",
+        "oligopoly-structure-concentration",
+        "oligopoly-welfare-policy",
+        "open-economy-policy-transmission",
+        "opportunity-cost",
+        "perfect-competition",
+        "phillips-curve-expectations",
+        "positive-versus-normative-analysis",
+        "price-elasticity-of-demand",
+        "price-elasticity-of-supply",
+        "price-signals",
+        "producer-surplus",
+        "production-possibilities-frontier",
+        "productivity-measurement",
+        "profit-concepts",
+        "public-goods-and-common-resources",
+        "quantity-theory-of-money",
+        "real-exchange-rates-and-purchasing-power",
+        "real-versus-nominal-gdp",
+        "real-versus-nominal-interest-rates",
+        "sacrifice-ratio",
+        "saving-and-investment-identities",
+        "scarcity-and-tradeoffs",
+        "short-run-aggregate-supply",
+        "short-run-cost-curves",
+        "short-run-phillips-curve",
+        "short-run-production",
+        "sources-of-productivity",
+        "stabilization-policy",
+        "statutory-versus-economic-tax-incidence",
+        "sunk-avoidable-costs",
+        "supply",
+        "surplus-changes-policy-effects",
+        "tariffs-revenue-deadweight-loss",
+        "tax-incidence",
+        "tax-wedges-and-revenue",
+        "total-surplus-gains-from-exchange",
+        "trade-domestic-production-consumption-quantities",
+        "trade-gains-surplus-winners-losers",
+        "trade-policy-efficiency-distribution",
+        "trade-world-price-status",
+        "unemployment-measurement",
+        "unemployment-types"
+      ],
+      "generatedPackageBytes": 1507251,
+      "name": "large-all-top-level-concepts",
+      "questionCount": 9667,
+      "referencedPdfBytes": 67121350,
+      "reviewCodes": [
+        "GEN-ECON-01",
+        "GEN-ECON-02",
+        "GEN-ECON-03",
+        "GEN-ECON-04",
+        "GEN-ECON-05",
+        "GEN-ECON-06",
+        "GEN-ECON-07",
+        "GEN-ECON-08",
+        "GEN-ECON-09",
+        "GEN-ECON-10",
+        "GEN-ECON-11",
+        "GEN-ECON-12",
+        "GEN-ECON-13",
+        "GEN-ECON-14",
+        "GEN-ECON-15",
+        "GEN-ECON-16",
+        "GEN-ECON-17",
+        "GEN-ECON-18",
+        "GEN-ECON-19",
+        "GEN-ECON-20",
+        "GEN-ECON-21",
+        "GEN-ECON-22",
+        "GEN-ECON-23",
+        "GEN-ECON-24",
+        "GEN-ECON-25",
+        "GEN-ECON-26",
+        "MACRO-01",
+        "MACRO-02",
+        "MACRO-03",
+        "MACRO-04",
+        "MACRO-05",
+        "MACRO-06",
+        "MACRO-07",
+        "MACRO-08",
+        "MACRO-09",
+        "MACRO-10",
+        "MACRO-11",
+        "MACRO-12",
+        "MACRO-13",
+        "MACRO-14",
+        "MACRO-15",
+        "MACRO-16",
+        "MACRO-17",
+        "MACRO-18",
+        "MACRO-19",
+        "MACRO-20",
+        "MACRO-21",
+        "MACRO-22",
+        "MACRO-23",
+        "MACRO-24",
+        "MACRO-25",
+        "MACRO-26",
+        "MACRO-27",
+        "MACRO-28",
+        "MACRO-29",
+        "MACRO-30",
+        "MACRO-31",
+        "MACRO-32",
+        "MACRO-33",
+        "MACRO-34",
+        "MACRO-35",
+        "MACRO-36",
+        "MACRO-37",
+        "MACRO-38",
+        "MACRO-39",
+        "MACRO-40",
+        "MACRO-41",
+        "MACRO-42",
+        "MACRO-43",
+        "MACRO-44",
+        "MACRO-45",
+        "MACRO-46",
+        "MACRO-47",
+        "MACRO-48",
+        "MACRO-49",
+        "MACRO-50",
+        "MACRO-51",
+        "MACRO-52",
+        "MACRO-53",
+        "MACRO-54",
+        "MACRO-55",
+        "MACRO-56",
+        "MACRO-57",
+        "MICRO-01",
+        "MICRO-02",
+        "MICRO-04",
+        "MICRO-05",
+        "MICRO-06",
+        "MICRO-07",
+        "MICRO-08",
+        "MICRO-09",
+        "MICRO-10",
+        "MICRO-11",
+        "MICRO-12",
+        "MICRO-13",
+        "MICRO-14",
+        "MICRO-15",
+        "MICRO-16",
+        "MICRO-17",
+        "MICRO-18",
+        "MICRO-19",
+        "MICRO-20",
+        "MICRO-21",
+        "MICRO-22",
+        "MICRO-23",
+        "MICRO-24",
+        "MICRO-25",
+        "MICRO-26",
+        "MICRO-27",
+        "MICRO-28",
+        "MICRO-29",
+        "MICRO-30",
+        "MICRO-31",
+        "MICRO-32",
+        "MICRO-33",
+        "MICRO-34",
+        "MICRO-35",
+        "MICRO-36",
+        "MICRO-37",
+        "MICRO-38",
+        "MICRO-39",
+        "MICRO-40",
+        "MICRO-41",
+        "MICRO-42",
+        "MICRO-43",
+        "MICRO-44",
+        "MICRO-45",
+        "MICRO-46",
+        "MICRO-47",
+        "MICRO-48",
+        "MICRO-49",
+        "MICRO-50",
+        "MICRO-51",
+        "MICRO-52",
+        "MICRO-53",
+        "MICRO-54",
+        "MICRO-55",
+        "MICRO-56",
+        "MICRO-57",
+        "MICRO-58",
+        "MICRO-59",
+        "MICRO-60",
+        "MICRO-61",
+        "MICRO-62",
+        "MICRO-63",
+        "MICRO-64",
+        "MICRO-65",
+        "MICRO-66",
+        "MICRO-67",
+        "MICRO-68"
+      ],
+      "reviewPdfCount": 150,
+      "runtimeManifestBytes": 1507251,
+      "selectedConceptCount": 94,
+      "selectedConceptIds": [
+        "ad-as-equilibrium-and-output-gaps",
+        "aggregate-demand",
+        "bank-balance-sheets-reserves-and-capital",
+        "binding-price-ceilings",
+        "binding-price-floors",
+        "budget-accounting-and-public-saving",
+        "capital-flows-and-net-capital-outflow",
+        "central-bank-and-federal-reserve",
+        "competitive-markets",
+        "consumer-and-producer-surplus",
+        "consumer-choice",
+        "costs-of-production",
+        "cpi-and-inflation-measurement",
+        "cpi-bias",
+        "cpi-versus-gdp-deflator",
+        "crowding-out-and-capital-formation",
+        "debt-measures-burden-and-fiscal-data",
+        "deficits-debt-and-government-borrowing",
+        "demand",
+        "demand-and-supply-shocks",
+        "deposit-creation-and-money-multiplier",
+        "disinflation-and-policy",
+        "economic-growth-policy",
+        "economist-policy-role",
+        "elasticity",
+        "externalities",
+        "factor-markets",
+        "fiscal-multipliers-and-crowding-out",
+        "fiscal-policy-and-aggregate-demand",
+        "fisher-effect",
+        "foreign-exchange-market",
+        "gains-from-trade",
+        "gdp-components",
+        "gdp-measurement",
+        "incentives",
+        "income-inequality-poverty-and-redistribution",
+        "indexing-and-real-values",
+        "inflation-costs",
+        "inflation-tax-and-deflation",
+        "information-asymmetry-behavioral-and-political-economy",
+        "integrated-economic-analysis",
+        "international-trade-and-trade-policy",
+        "international-transactions-and-identities",
+        "labor-market-institutions",
+        "limits-of-gdp",
+        "liquidity-preference-and-money-market",
+        "living-standards-and-growth",
+        "loanable-funds-equilibrium",
+        "loanable-funds-shifts",
+        "long-run-aggregate-supply-and-potential-output",
+        "long-run-macroeconomic-self-adjustment",
+        "long-run-phillips-curve",
+        "marginal-analysis",
+        "market-equilibrium",
+        "market-failures",
+        "market-power",
+        "micro-versus-macro",
+        "models-and-assumptions",
+        "monetary-control-limits",
+        "monetary-neutrality",
+        "monetary-policy-tools",
+        "monetary-policy-transmission",
+        "money-functions-and-measures",
+        "monopolistic-competition",
+        "monopoly",
+        "natural-rate-of-unemployment",
+        "nominal-exchange-rates",
+        "oligopoly",
+        "open-economy-policy-transmission",
+        "opportunity-cost",
+        "perfect-competition",
+        "phillips-curve-expectations",
+        "positive-versus-normative-analysis",
+        "price-signals",
+        "production-possibilities-frontier",
+        "productivity-measurement",
+        "public-goods-and-common-resources",
+        "quantity-theory-of-money",
+        "real-exchange-rates-and-purchasing-power",
+        "real-versus-nominal-gdp",
+        "real-versus-nominal-interest-rates",
+        "sacrifice-ratio",
+        "saving-and-investment-identities",
+        "scarcity-and-tradeoffs",
+        "short-run-aggregate-supply",
+        "short-run-phillips-curve",
+        "sources-of-productivity",
+        "stabilization-policy",
+        "statutory-versus-economic-tax-incidence",
+        "supply",
+        "tax-incidence",
+        "tax-wedges-and-revenue",
+        "unemployment-measurement",
+        "unemployment-types"
+      ],
+      "status": "PASS",
+      "supportedModes": [
+        "standard",
+        "timed",
+        "exam",
+        "quiz",
+        "unlimited",
+        "legendary",
+        "score",
+        "trialGraph",
+        "fadingFortune",
+        "riskReward"
+      ]
+    }
+  ],
+  "validation": {
+    "brokenRuntimePaths": [],
+    "dedicatedRouting": {
+      "consumer-choice": [
+        "MICRO-58"
+      ],
+      "externalities": [
+        "MICRO-54"
+      ],
+      "factor-markets": [
+        "MICRO-57"
+      ],
+      "income-inequality-poverty-and-redistribution": [
+        "MICRO-59"
+      ],
+      "information-asymmetry-behavioral-and-political-economy": [
+        "MICRO-60",
+        "MICRO-61",
+        "MICRO-62",
+        "MICRO-63",
+        "MICRO-64",
+        "MICRO-65",
+        "MICRO-66",
+        "MICRO-67",
+        "MICRO-68"
+      ],
+      "market-power": [
+        "MICRO-56"
+      ],
+      "public-goods-and-common-resources": [
+        "MICRO-55"
+      ]
+    },
+    "duplicateConflictingMappings": [],
+    "fullLibraryPackagedOnlyWhenRequired": true,
+    "manifest": {
+      "errors": [],
+      "ok": true,
+      "warnings": [
+        {
+          "canonicalConceptId": "consumer-and-producer-surplus",
+          "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "canonicalConceptId": "costs-of-production",
+          "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "canonicalConceptId": "elasticity",
+          "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "canonicalConceptId": "integrated-economic-analysis",
+          "type": "diagnosable-no-sheet-meta"
+        },
+        {
+          "canonicalConceptId": "international-trade-and-trade-policy",
+          "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "canonicalConceptId": "monopolistic-competition",
+          "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "canonicalConceptId": "monopoly",
+          "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "canonicalConceptId": "oligopoly",
+          "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "canonicalConceptId": "perfect-competition",
+          "type": "diagnosable-parent-covered-by-children"
+        },
+        {
+          "reviewCode": "MICRO-03",
+          "type": "orphan-review"
+        },
+        {
+          "reviewCode": "MICRO-03",
+          "type": "unreachable-review"
+        }
+      ]
+    },
+    "missingRequiredReviewPdfs": [],
+    "runtimeUrlIssues": [],
+    "sourceHashMismatches": []
+  }
+}

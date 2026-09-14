@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "minimalProof": true,
+  "browserVersion": "153.0.4234.32",
+  "results": [
+    {
+      "name": "Downloaded descriptor matches hash-only D1 issuance and exact tuple",
+      "status": "PASS"
+    },
+    {
+      "name": "Real issued game launches and sends 202 through canonical header; CSV excludes credential",
+      "status": "PASS"
+    },
+    {
+      "name": "Staging events and runtime manifest match exact build; receipts attribute issued capability",
+      "status": "PASS"
+    },
+    {
+      "name": "Live-tail redacts X-MQ-Ingest-Token with zero raw capability or digest matches",
+      "status": "PASS"
+    }
+  ],
+  "tail": {
+    "events": 2,
+    "headerObservations": 2,
+    "redacted": 2,
+    "rawMatches": 0,
+    "hashMatches": 0,
+    "unrecognized": 0
+  },
+  "provider": "REAL_TURNSTILE_OWNER_COMPLETED",
+  "issuanceStatus": 201,
+  "productionCalls": 0,
+  "challengeAttempts": 0,
+  "downloadPersistedByHarness": false
+}

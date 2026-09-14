@@ -1,0 +1,15 @@
+node:fs:2413
+    return binding.writeFileUtf8(
+                   ^
+
+Error: UNKNOWN: unknown error, open 'C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\unlimited-only.html'
+    at Object.writeFileSync (node:fs:2413:20)
+    at writeTestArtifact (C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\composer-test-helpers.js:160:6)
+    at C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\run_unlimited_practice_validation.js:101:3 {
+  errno: -4094,
+  code: 'UNKNOWN',
+  syscall: 'open',
+  path: 'C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\build\\faculty-build-composer\\tests\\unlimited-only.html'
+}
+
+Node.js v24.14.1

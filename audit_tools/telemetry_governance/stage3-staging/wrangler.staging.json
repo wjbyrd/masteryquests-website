@@ -1,0 +1,49 @@
+{
+  "name": "masteryquests-telemetry-stage3-staging",
+  "account_id": "731780cdf08ed25520def0167a6be2df",
+  "main": ".wrangler/manual-host/worker.mjs",
+  "compatibility_date": "2026-08-07",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "stage3.masteryquests.org",
+      "custom_domain": true
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "TELEMETRY_DB",
+      "database_name": "masteryquests-telemetry-stage3-staging",
+      "database_id": "993f49a5-4dd4-41ee-9007-bbf4bb4856c9"
+    }
+  ],
+  "vars": {
+    "TELEMETRY_RETENTION_DAYS": "730",
+    "TELEMETRY_RETENTION_MODE": "automatic",
+    "TELEMETRY_GOVERNANCE_POLICY": "mq-governance/2",
+    "ALLOWED_ORIGINS": "https://stage3.masteryquests.org",
+    "CAPABILITY_ISSUANCE_ENABLED": "true",
+    "CAPABILITY_INGEST_ENABLED": "true",
+    "CAPABILITY_LEGACY_GRACE_ENABLED": "false",
+    "MAX_EVENTS_PER_CLIENT_MINUTE": "300"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": false,
+      "persist": true
+    },
+    "traces": {
+      "enabled": false
+    }
+  },
+  "triggers": {
+    "crons": []
+  },
+  "assets": {
+    "directory": ".wrangler/manual-host/site",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  }
+}

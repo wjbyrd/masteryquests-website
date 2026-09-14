@@ -1,0 +1,15 @@
+{
+  "stagingOnly": true,
+  "origin": "https://stage3.masteryquests.org",
+  "publicTurnstileSitekey": "0x4AAAAAAE0fGN3DW-5u-dBd",
+  "sitekeyMetaName": "mq-turnstile-sitekey",
+  "action": "mq_build_activate",
+  "workerName": "masteryquests-telemetry-stage3-staging",
+  "workerOrigin": "https://stage3.masteryquests.org",
+  "routeMapping": {
+    "/v1/build-capabilities": "/v1/build-capabilities",
+    "/v1/events": "/v1/events"
+  },
+  "transport": "Direct HTTPS to the existing isolated staging Worker through its staging custom domain; no browser interception.",
+  "status": "AWAITING_OWNER_MANUAL_201"
+}

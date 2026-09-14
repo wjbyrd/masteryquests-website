@@ -1,0 +1,63 @@
+{
+  "name": "masteryquests-telemetry-stage3-staging",
+  "databaseName": "masteryquests-telemetry-stage3-staging",
+  "databaseId": "993f49a5-4dd4-41ee-9007-bbf4bb4856c9",
+  "account": "731780cdf08ed25520def0167a6be2df",
+  "createdAt": "2026-09-14T21:24:21.366Z",
+  "syntheticOnly": true,
+  "workerDeployed": true,
+  "status": "STAGE3_FINAL_ACCEPTED_STAGING_RETAINED",
+  "migrations": [
+    {
+      "file": "0001_initial.sql",
+      "sha256": "c441df67a162544fa7d93f0c4186fc295555c714ba524d35ca5fc1df5c9a3944"
+    },
+    {
+      "file": "0002_completion_semantics.sql",
+      "sha256": "feb731463a27c790565b3a2fee20fe01ad193fdb9294ff161e9cd31dea5c79ef"
+    },
+    {
+      "file": "0003_build_ingest_capabilities.sql",
+      "sha256": "d67432d1c9ed8c85f5a407cf7e606ff05cc00d63effe2ce909797fa6efb61951"
+    }
+  ],
+  "cleanupDecision": "Retain Worker, custom domain, D1 and secret per latest owner instruction not to delete staging; all known tails closed.",
+  "workerOrigin": "https://masteryquests-telemetry-stage3-staging.wjbyrd.workers.dev",
+  "versionId": "64c9817a-f183-42fc-83f7-3b5ebd611017",
+  "turnstileSecretAccessed": false,
+  "realProviderProof": "CANONICAL_PASS",
+  "productionTouched": false,
+  "startingHead": "61bc7fd7a4ed84990cf8991cfeb65a8b38567eec",
+  "branch": "main",
+  "wranglerVersion": "4.72.0",
+  "dryRunPassed": true,
+  "ownerConfirmedSecretInstalled": true,
+  "tailId": "4c2678ef46634bccadba9b7f37b2b981",
+  "tailClosed": true,
+  "manualGate": {
+    "firstPartyHostedUrl": "https://stage3.masteryquests.org/",
+    "reachabilityChecksPassed": 12,
+    "challengeAttempted": false,
+    "productionChanged": false,
+    "resourcesPreserved": true
+  },
+  "manualComposerUrl": "https://stage3.masteryquests.org/",
+  "safeDiagnosticsInstalled": true,
+  "manualIssuance": {
+    "ownerObservedStatus": 201,
+    "providerSuccess": true,
+    "capabilityCount": 1,
+    "lifetimeSeconds": 31536000,
+    "ingestEvents": 0
+  },
+  "extraTailIds": [
+    "ad26b25f82e44d1cbbf6f6b7043f6f20",
+    "1bdfd519c15e4f459d61797f5d0e10ca",
+    "4c2678ef46634bccadba9b7f37b2b981",
+    "e0f9ec4366f64777b0e5daf006fdebd5"
+  ],
+  "generatedGameProof": "MINIMAL_PASS",
+  "allKnownTailsClosed": true,
+  "capabilityRevokedDuringProof": true,
+  "canonicalVerifierUnpatched": true
+}

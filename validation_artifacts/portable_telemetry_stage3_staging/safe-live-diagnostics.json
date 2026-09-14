@@ -1,0 +1,57 @@
+{
+  "markers": [
+    {
+      "step": "verifier-start"
+    },
+    {
+      "step": "verifier-exception",
+      "at": "verifier-start",
+      "type": "TypeError"
+    },
+    {
+      "step": "issuance-error",
+      "code": "activation_unavailable"
+    },
+    {
+      "step": "verifier-start"
+    },
+    {
+      "step": "verifier-exception",
+      "at": "verifier-start",
+      "type": "TypeError"
+    },
+    {
+      "step": "issuance-error",
+      "code": "activation_unavailable"
+    },
+    {
+      "step": "verifier-start"
+    },
+    {
+      "step": "verifier-exception",
+      "at": "verifier-start",
+      "type": "TypeError"
+    },
+    {
+      "step": "issuance-error",
+      "code": "activation_unavailable"
+    },
+    {
+      "step": "verifier-start"
+    },
+    {
+      "step": "provider-http",
+      "status": 200
+    },
+    {
+      "step": "provider-body-start"
+    },
+    {
+      "step": "provider-body-read"
+    },
+    {
+      "step": "provider-json-parsed",
+      "success": true
+    }
+  ]
+}

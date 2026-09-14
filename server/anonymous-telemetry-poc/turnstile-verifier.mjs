@@ -4,7 +4,7 @@ export function createTurnstileVerifier(env, {fetchProvider=globalThis.fetch, no
   return async ({token,idempotencyKey,context}) => {
     if(typeof env.TURNSTILE_SECRET_KEY!=='string'||!env.TURNSTILE_SECRET_KEY)reject('activation_unavailable',503);
     const response=await fetchProvider('https://challenges.cloudflare.com/turnstile/v0/siteverify',{
-      method:'POST',headers:{'content-type':'application/json'},redirect:'error',
+      method:'POST',headers:{'content-type':'application/json'},redirect:'manual',
       signal:AbortSignal.timeout(10000),body:JSON.stringify({secret:env.TURNSTILE_SECRET_KEY,response:token,idempotency_key:idempotencyKey})
     });
     if(!response.ok)reject('activation_unavailable',503);

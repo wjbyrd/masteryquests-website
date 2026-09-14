@@ -1,0 +1,112 @@
+{
+  "phase": "mode10-risk-reward-v1",
+  "ok": true,
+  "composerVersion": "4.5s.3k",
+  "canonicalQuestionCount": 9779,
+  "perfectCompetitionEligible": 383,
+  "byDifficulty": {
+    "easy": 76,
+    "medium": 78,
+    "hard": 85,
+    "elite": 44,
+    "legendary": 100
+  },
+  "supportedTargets": {
+    "perfectCompetition": [
+      10,
+      15,
+      20
+    ],
+    "integratedEconomicAnalysis": [
+      10
+    ],
+    "competitiveMarkets": [
+      10,
+      15
+    ]
+  },
+  "allTenModes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "configRiskReward": {
+    "enabled": true,
+    "startingBankroll": 1000,
+    "wagerOptions": [
+      {
+        "label": "10%",
+        "ratio": 0.1
+      },
+      {
+        "label": "25%",
+        "ratio": 0.25
+      },
+      {
+        "label": "50%",
+        "ratio": 0.5
+      },
+      {
+        "label": "ALL IN",
+        "ratio": 1
+      }
+    ],
+    "allowedTargets": [
+      10,
+      15,
+      20
+    ]
+  },
+  "sourceChecks": {
+    "card": true,
+    "setup": true,
+    "hud": true,
+    "hiddenUntilWager": true,
+    "settlementGuard": true,
+    "allInBust": true,
+    "noRemediation": true,
+    "fixedCompletion": true,
+    "mastery": true,
+    "telemetry": true,
+    "bustedResult": true,
+    "replay": true
+  },
+  "issues": []
+}

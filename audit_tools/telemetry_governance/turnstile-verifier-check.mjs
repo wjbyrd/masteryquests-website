@@ -1,0 +1,2 @@
+import './local-network-only.mjs';import fs from 'node:fs';import {runVerifierMatrix} from './turnstile-verifier-matrix.mjs';
+const timer=setInterval(()=>{},1000);try{const result=await runVerifierMatrix();const out=process.env.MQ_EVIDENCE_DIR||'validation_artifacts/portable_telemetry_stage3_verifier_fix/canonical-verifier';fs.mkdirSync(out,{recursive:true});fs.writeFileSync(out+'/results.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));if(result.failed)process.exitCode=1;}finally{clearInterval(timer);}

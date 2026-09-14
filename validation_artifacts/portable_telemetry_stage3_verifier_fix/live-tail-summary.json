@@ -1,0 +1,22 @@
+{
+  "status": "CLOSED",
+  "events": 2,
+  "issuanceStatuses": [
+    201
+  ],
+  "ingestStatuses": [
+    429
+  ],
+  "ingestHeader": {
+    "redacted": 1,
+    "omitted": 0,
+    "unexpected": 0
+  },
+  "consoleEntries": 0,
+  "exceptionEntries": 0,
+  "requestBodyFields": 0,
+  "rawCapabilityPatternMatches": 0,
+  "rawPayloadsPersisted": false,
+  "secretValueRead": false,
+  "method": "Inspect event structure and redaction without storing raw provider events or reading secrets."
+}

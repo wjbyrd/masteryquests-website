@@ -1,0 +1,6 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {api,query,state,name} from './control.mjs';
+const expected='993f49a5-4dd4-41ee-9007-bbf4bb4856c9';assert.equal(name,'masteryquests-telemetry-stage3-staging');assert.equal(state().databaseId,expected);
+const db=await api('/d1/database/'+expected);assert(!db.notFound);assert.equal(db.uuid,expected);assert.equal(db.name,name);
+const settings=await api('/workers/scripts/'+name+'/settings');assert(!settings.notFound);const binding=settings.bindings.find(b=>b.name==='TELEMETRY_DB');assert.equal(binding.id||binding.database_id,expected);assert(settings.bindings.some(b=>b.name==='TURNSTILE_SECRET_KEY'&&b.type==='secret_text'));
+const rows=(await query('SELECT COUNT(*) AS count, SUM(CASE WHEN revoked_at IS NULL THEN 1 ELSE 0 END) AS active FROM telemetry_build_capabilities'))[0].results[0];
+const result={worker:name,databaseId:expected,workerExists:true,databaseExists:true,secretBindingPresent:true,baselineCapabilities:rows.count,baselineActive:rows.active,productionTouched:false};fs.writeFileSync('validation_artifacts/portable_telemetry_stage3_verifier_fix/staging-identity.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));

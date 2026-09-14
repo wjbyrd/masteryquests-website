@@ -1,0 +1,42 @@
+(node:63668) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+sqlite Flags OFF preserve schema 1/2/3, originless delivery, arbitrary capability and old acknowledgment: PASS
+sqlite Exact server true only; client flags cannot enable grace or issuance: PASS
+sqlite Valid capability HTTP admission, operator attribution, exact retry and receipt retention: PASS
+sqlite Missing, malformed, empty, comma-combined, unknown and operator-ID credentials reject: PASS
+sqlite Capability expired never falls back to valid legacy tuple: PASS
+sqlite Capability revoked never falls back to valid legacy tuple: PASS
+sqlite Capability blocked never falls back to valid legacy tuple: PASS
+sqlite Malformed/unknown/empty capability plus known grace tuple is never legacy authority: PASS
+sqlite Valid capability with wrong game/build/version/schema or legacy tuple fails scope: PASS
+sqlite Known beta inventory is derived from immutable source; grace writes NULL capability receipt: PASS
+sqlite Grace requires exact origin/tuple and rejects missing Origin, unknown builds and client bypasses: PASS
+sqlite Sunset is exclusive and expired grace never admits: PASS
+sqlite Pending owner sunset and malformed inventory fail closed: PASS
+sqlite Invalid inventory cannot broaden the accepted subset: PASS
+sqlite Runtime manifests resolve dynamically, missing references are 409, invalid revisions are 403: PASS
+sqlite capability HTTP conflicts preserve owner, event and run sequence: PASS
+sqlite grace HTTP conflicts preserve owner, event and run sequence: PASS
+sqlite capability concurrent HTTP identical writers: PASS
+sqlite capability concurrent HTTP sequence writers: PASS
+sqlite capability concurrent HTTP owner writers: PASS
+sqlite grace concurrent HTTP identical writers: PASS
+sqlite grace concurrent HTTP sequence writers: PASS
+sqlite grace concurrent HTTP owner writers: PASS
+sqlite Concurrent different-build capability writers establish one immutable owner: PASS
+sqlite revocation between lookup and HTTP transaction aborts all writes: PASS
+sqlite block between lookup and HTTP transaction aborts all writes: PASS
+sqlite expiry between lookup and HTTP transaction aborts all writes: PASS
+sqlite Concurrent quota exhaustion returns 429 and Retry-After without overshoot/fallback: PASS
+sqlite capability SQL failure at every dependent stage rolls back the entire request: PASS
+sqlite grace SQL failure at every dependent stage rolls back the entire request: PASS
+sqlite Route-scoped capability CORS supports apex/www and keeps admin/activation closed: PASS
+sqlite All controlled error classes carry readable first-party CORS and no-store: PASS
+sqlite Body validation handles 0/1/50/51 events, JSON, media type and encoding: PASS
+sqlite 128 KiB and multibyte boundaries enforce actual UTF-8 bytes: PASS
+sqlite Misleading Content-Length cannot permit an oversized body: PASS
+sqlite Ingest capability cannot access admin; Authorization/cookies/JSON/query cannot replace header: PASS
+sqlite Credential-bearing storage exception is redacted from response/logs/telemetry/receipts/CSV: PASS
+sqlite Short-window cleanup is bounded and preserves lifetime accounting and all telemetry: PASS
+sqlite Local statement/latency measurements retain security at 1,25,50,duplicate and mixed batch sizes: PASS
+{"runtime":"sqlite","passed":39,"failed":0}

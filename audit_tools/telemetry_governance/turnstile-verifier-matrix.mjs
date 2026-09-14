@@ -1,0 +1,25 @@
+import {createTurnstileVerifier} from '../../server/anonymous-telemetry-poc/turnstile-verifier.mjs';
+import {verifyActivationChallenge} from '../../server/anonymous-telemetry-poc/capabilities.mjs';
+import {createWorker} from '../../server/anonymous-telemetry-poc/worker.mjs';
+export async function runVerifierMatrix(){
+ const assert=(v,m)=>{if(!v)throw Error(m);},endpoint='https://challenges.cloudflare.com/turnstile/v0/siteverify',now=Date.now(),markers=Array.from({length:4},()=>crypto.randomUUID()),[secret,token,capability,digest]=markers,logs=[],results=[];
+ const original={};for(const k of ['log','warn','error','info','debug']){original[k]=console[k];console[k]=(...v)=>logs.push(v.map(String).join(' '));}
+ const valid={success:true,challenge_ts:new Date(now-1000).toISOString(),action:'mq_build_activate',hostname:'masteryquests.org',cdata:'expected-context'};
+ const cases=[['valid-200',200,{},true],['provider-false',200,{success:false},false],...[301,302,303,307,308].map(s=>['redirect-'+s,s,{},false]),['provider-400',400,{},false],['provider-500',500,{},false],['malformed-json',200,{},false],['oversized-body',200,{},false],['timeout',0,{},false],['wrong-action',200,{action:'wrong'},false],['wrong-hostname',200,{hostname:'unapproved.example'},false],['wrong-context',200,{cdata:'wrong'},false],['expired',200,{challenge_ts:new Date(now-300001).toISOString()},false],['future',200,{challenge_ts:new Date(now+60001).toISOString()},false],['missing-timestamp',200,{challenge_ts:null},false],['valid-final',200,{},true]];
+ try{for(const [name,status,patch,expected]of cases){const destinations=[],errors=[];let cancelled=false;const oldTimeout=AbortSignal.timeout;
+ try{
+ if(name==='timeout')AbortSignal.timeout=ms=>{assert(ms===10000,'deadline changed');return oldTimeout.call(AbortSignal,1);};
+ const verifier=createTurnstileVerifier({TURNSTILE_SECRET_KEY:secret},{now:()=>now,fetchProvider:async(url,options)=>{destinations.push(url);assert(url===endpoint,'unexpected destination');assert(options.redirect==='manual','redirect must be manual');new Request(url,options);const body=JSON.parse(options.body);assert(Object.keys(body).sort().join(',')==='idempotency_key,response,secret','unexpected provider fields');assert(body.secret===secret&&body.response===token,'provider arguments mismatch');assert(options.signal instanceof AbortSignal,'timeout signal missing');
+ if(name==='timeout')return new Promise((_,reject)=>{if(options.signal.aborted)reject(new DOMException('fixture timeout','TimeoutError'));else options.signal.addEventListener('abort',()=>reject(new DOMException('fixture timeout','TimeoutError')),{once:true});});
+ if(name==='malformed-json')return new Response('{'+secret+token+capability+digest,{status:200});
+ if(name==='oversized-body')return new Response(new ReadableStream({start(c){c.enqueue(new Uint8Array(16385));},cancel(){cancelled=true;}}));
+ return Response.json({...valid,...patch},{status,headers:{location:'https://attacker.invalid/collect'}});
+ }});
+ let accepted=false;try{await verifyActivationChallenge({turnstileToken:token,issuanceRequestId:crypto.randomUUID()},'expected-context',verifier);accepted=true;}catch(e){errors.push(String(e));}
+ assert(accepted===expected,'acceptance mismatch');assert(destinations.length===1&&destinations[0]===endpoint,'outbound count mismatch');if(name==='oversized-body')assert(cancelled,'oversized body not cancelled');assert(!markers.some(s=>errors.join('').includes(s)),'boundary error credential leak');
+ if(!expected){const worker=createWorker({verifyChallenge:async()=>{throw Error(markers.join('|'));}});const request={activationVersion:'mq-build-activation/1',issuanceRequestId:crypto.randomUUID(),allowAnonymousDataCollection:true,gameId:'faculty-composer',buildId:'composer-'+'a'.repeat(64),buildVersion:'b'.repeat(64),schemaVersion:3,measurementContract:'mq-measurement/1',governanceVersion:'mq-governance/2',disclosureVersion:'mq-disclosure/2',turnstileToken:token};const r=await worker.fetch(new Request('https://masteryquests.org/v1/build-capabilities',{method:'POST',headers:{origin:'https://masteryquests.org','content-type':'application/json'},body:JSON.stringify(request)}),{CAPABILITY_ISSUANCE_ENABLED:'true',ALLOWED_ORIGINS:'https://masteryquests.org'});const text=await r.text();assert(r.status===503,'HTTP failure status changed');assert(!markers.some(s=>text.includes(s)),'HTTP failure credential leak');}
+ results.push({name,status:'PASS',accepted,outboundCount:destinations.length,destinations});
+ }catch(e){results.push({name,status:'FAIL',reason:markers.reduce((s,m)=>s.replaceAll(m,'[REDACTED]'),String(e.message))});}finally{AbortSignal.timeout=oldTimeout;}}
+ assert(!markers.some(s=>logs.join('').includes(s)),'console credential leak');const report={passed:results.filter(r=>r.status==='PASS').length,failed:results.filter(r=>r.status==='FAIL').length,results,consoleCredentialMatches:0,boundaryErrorCredentialMatches:0,httpErrorBodyCredentialMatches:0};assert(!markers.some(s=>JSON.stringify(report).includes(s)),'evidence credential leak');return report;
+ }finally{for(const k of Object.keys(original))console[k]=original[k];}
+}

@@ -1,0 +1,116 @@
+{
+  "passed": 26,
+  "failed": 1,
+  "results": [
+    {
+      "name": "Private explicit parse rejects every inherited fail-open/config/storage state",
+      "status": "PASS"
+    },
+    {
+      "name": "Rate configuration has bounded integer/default semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "Both maintained private builders require an explicit build option",
+      "status": "PASS"
+    },
+    {
+      "name": "Admin CSV neutralizes strings only, preserves JSON and emitted sidecar hash",
+      "status": "PASS"
+    },
+    {
+      "name": "CORS and distinct authorization remain enforced on actual Worker routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Central field set and frozen schema are identical to inherited audit",
+      "status": "FAIL",
+      "detail": "AssertionError [ERR_ASSERTION]: server/anonymous-telemetry-poc/wrangler.jsonc\n+ actual - expected\n\n+ '73b433090f218888a2e390972e8a26f860d05b5679596859642ecd994ab0d77a'\n- '39ac902df01a6d1def641d6e8e122926c19e67aa04e1e8a3a541f6c6fb06df3d'\n\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/readiness-remediation.mjs:45:949\n    at test (file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/readiness-remediation.mjs:12:80)\n    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/audit_tools/telemetry_governance/readiness-remediation.mjs:45:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "Composer recipe/UI default false and strict boolean opt-in",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual Composer UI defaults OFF and recipe download retains explicit choice",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated on: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated default: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated missing: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated false: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated empty: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated whitespace: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated unknown: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated string-true: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated number: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated null: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated unreadable: transport hierarchy and real local download",
+      "status": "PASS"
+    },
+    {
+      "name": "Build pseudonym scope, browser scope, storage reset, queue migration and opt-out",
+      "status": "PASS"
+    },
+    {
+      "name": "Unavailable transport storage and malformed current queue fail closed; old family UUID is not adopted",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-intelligence-directorate explicit enable=false",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc explicit enable=false",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-telemetry-poc explicit enable=true",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-classroom explicit enable=false",
+      "status": "PASS"
+    },
+    {
+      "name": "managerial-directorate-classroom explicit enable=true",
+      "status": "PASS"
+    },
+    {
+      "name": "Generated transport introduces no unapproved field/identifier or Worker errors",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}

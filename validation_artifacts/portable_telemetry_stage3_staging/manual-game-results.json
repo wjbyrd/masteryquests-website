@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "name": "Downloaded descriptor matches hash-only D1 issuance and exact tuple",
+      "status": "PASS"
+    },
+    {
+      "name": "Real issued game launches and sends 202 through canonical header; CSV excludes credential",
+      "status": "PASS"
+    },
+    {
+      "name": "Staging events and runtime manifest match exact build; receipts attribute issued capability",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact duplicate acknowledges with zero newly accepted events",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser opt-out stops remote sending while local gameplay and CSV continue",
+      "status": "PASS"
+    },
+    {
+      "name": "Real server revocation returns 403 without breaking gameplay or CSV",
+      "status": "PASS"
+    },
+    {
+      "name": "Live-tail redacts X-MQ-Ingest-Token with zero raw capability or digest matches",
+      "status": "PASS"
+    }
+  ],
+  "tail": {
+    "events": 4,
+    "headerObservations": 4,
+    "redacted": 4,
+    "rawMatches": 0,
+    "hashMatches": 0,
+    "unrecognized": 0
+  },
+  "provider": "REAL_TURNSTILE_OWNER_COMPLETED",
+  "issuanceStatus": 201,
+  "productionCalls": 0,
+  "challengeAttempts": 0,
+  "downloadPersistedByHarness": false
+}

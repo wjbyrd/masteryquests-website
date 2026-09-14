@@ -1,0 +1,34 @@
+import fs from 'node:fs';import path from 'node:path';import {execFileSync} from 'node:child_process';import {createHash} from 'node:crypto';
+const root=process.cwd(),dir=path.join(root,'audit_tools/telemetry_governance/stage3-staging'),work=path.join(dir,'.wrangler/manual-host'),site=path.join(work,'site'),clone=path.join(work,'clone'),origin='https://stage3.masteryquests.org',endpoint=origin+'/v1/events';
+if(!site.startsWith(path.join(dir,'.wrangler')+path.sep))throw Error('Unsafe staging path');if(fs.existsSync(site))fs.rmSync(site,{recursive:true});fs.mkdirSync(site,{recursive:true});fs.mkdirSync(clone,{recursive:true});
+const source=path.join(root,'build/faculty-build-composer');
+const index=fs.readFileSync(path.join(source,'index.html'),'utf8');
+const roots=new Set(['index.html','concept-review-runtime.js',...Array.from(index.matchAll(/(?:src|href)="([^"?#]+)(?:[?#][^"]*)?"/g),m=>m[1]).filter(x=>!x.startsWith('/')&&!x.includes(':'))]);
+for(const file of roots){if(fs.existsSync(path.join(source,file))&&fs.statSync(path.join(source,file)).isFile()){fs.mkdirSync(path.dirname(path.join(site,file)),{recursive:true});fs.copyFileSync(path.join(source,file),path.join(site,file));}}
+for(const sub of ['data/default-theme-assets','data/question-assets'])fs.cpSync(path.join(source,sub),path.join(site,sub),{recursive:true});
+fs.mkdirSync(path.join(site,'template'),{recursive:true});fs.copyFileSync(path.join(source,'template/mastery-quests-faculty-template-composer-ready.html'),path.join(site,'template/mastery-quests-faculty-template-composer-ready.html'));
+fs.mkdirSync(path.join(site,'data/concept-reviews'),{recursive:true});for(const f of fs.readdirSync(path.join(source,'data/concept-reviews')))if(f==='manifest.json'||f.endsWith('.pdf'))fs.copyFileSync(path.join(source,'data/concept-reviews',f),path.join(site,'data/concept-reviews',f));
+function replace(file,from,to){let s=fs.readFileSync(file,'utf8');if(!s.includes(from))throw Error('Missing staging substitution '+file);fs.writeFileSync(file,s.replaceAll(from,to));}
+replace(path.join(site,'ingest-activation.js'),'https://masteryquests.org/api/anonymous-telemetry-poc/v1/events',endpoint);
+replace(path.join(site,'telemetry-activation.js'),"['https://masteryquests.org','https://www.masteryquests.org']","['"+origin+"']");
+replace(path.join(site,'index.html'),'</head>','<meta name="robots" content="noindex,nofollow"><meta name="mq-turnstile-sitekey" content="0x4AAAAAAE0fGN3DW-5u-dBd"></head>');
+fs.mkdirSync(path.join(clone,'audit_tools/telemetry_contract'),{recursive:true});fs.copyFileSync(path.join(root,'audit_tools/telemetry_contract/hash.mjs'),path.join(clone,'audit_tools/telemetry_contract/hash.mjs'));
+const server=path.join(clone,'server/anonymous-telemetry-poc');fs.mkdirSync(server,{recursive:true});for(const f of fs.readdirSync(path.join(root,'server/anonymous-telemetry-poc')))if(f.endsWith('.mjs'))fs.copyFileSync(path.join(root,'server/anonymous-telemetry-poc',f),path.join(server,f));
+if(!fs.readFileSync(path.join(server,'turnstile-verifier.mjs')).equals(fs.readFileSync(path.join(root,'server/anonymous-telemetry-poc/turnstile-verifier.mjs'))))throw Error('Staging verifier must match canonical bytes');
+for(const f of ['capability-issuance.mjs','dual-mode-ingest.mjs'])replace(path.join(server,f),"['https://masteryquests.org','https://www.masteryquests.org']","['"+origin+"']");
+replace(path.join(server,'capabilities.mjs'),"['masteryquests.org', 'www.masteryquests.org']","['stage3.masteryquests.org']");replace(path.join(server,'capabilities.mjs'),'https://masteryquests.org/api/anonymous-telemetry-poc/v1/events',endpoint);
+for(const sub of ['build/faculty-build-composer','play/managerial-directorate-telemetry-poc','audit_tools/telemetry_governance'])fs.mkdirSync(path.join(clone,sub),{recursive:true});
+fs.copyFileSync(path.join(site,'ingest-activation.js'),path.join(clone,'build/faculty-build-composer/ingest-activation.js'));
+fs.copyFileSync(path.join(root,'play/managerial-directorate-telemetry-poc/telemetry-client.js'),path.join(clone,'play/managerial-directorate-telemetry-poc/telemetry-client.js'));
+let generator=fs.readFileSync(path.join(root,'audit_tools/telemetry_governance/composer-transport.mjs'),'utf8').replaceAll('https://masteryquests.org/api/anonymous-telemetry-poc/v1/events',endpoint);fs.writeFileSync(path.join(clone,'audit_tools/telemetry_governance/composer-transport.mjs'),generator);
+execFileSync(process.execPath,['audit_tools/telemetry_governance/composer-transport.mjs'],{cwd:clone});fs.copyFileSync(path.join(clone,'build/faculty-build-composer/anonymous-telemetry-source.js'),path.join(site,'anonymous-telemetry-source.js'));
+fs.writeFileSync(path.join(work,'worker.mjs'),`import worker from './clone/server/anonymous-telemetry-poc/worker.mjs';
+export default {async fetch(request,env){const u=new URL(request.url);let response;
+if(['/v1/build-capabilities','/v1/events'].includes(u.pathname)&&['POST','OPTIONS'].includes(request.method))response=await worker.fetch(request,env);
+else if(['GET','HEAD'].includes(request.method)&&u.hostname==='stage3.masteryquests.org'&&!u.pathname.startsWith('/v1/'))response=await env.ASSETS.fetch(request);
+else response=new Response(null,{status:404});
+const headers=new Headers(response.headers);headers.set('x-robots-tag','noindex, nofollow, noarchive');return new Response(response.body,{status:response.status,headers});}};
+`);
+fs.writeFileSync(path.join(site,'robots.txt'),'User-agent: *\nDisallow: /\n');
+const config=JSON.parse(fs.readFileSync(path.join(dir,'wrangler.staging.json')));config.main='.wrangler/manual-host/worker.mjs';config.routes=[{pattern:'stage3.masteryquests.org',custom_domain:true}];config.vars.ALLOWED_ORIGINS=origin;config.assets={directory:'.wrangler/manual-host/site',binding:'ASSETS',run_worker_first:true};fs.writeFileSync(path.join(dir,'wrangler.staging.json'),JSON.stringify(config,null,2)+'\n');
+const files=[];function walk(d){for(const f of fs.readdirSync(d,{withFileTypes:true})){const p=path.join(d,f.name);if(f.isDirectory())walk(p);else files.push({file:path.relative(site,p).replaceAll('\\','/'),bytes:fs.statSync(p).size,sha256:createHash('sha256').update(fs.readFileSync(p)).digest('hex')});}}walk(site);fs.writeFileSync(path.join(root,'validation_artifacts/portable_telemetry_stage3_staging/manual-host-build.json'),JSON.stringify({origin,endpoint,files,canonicalSourceModified:false,realVerifierUnchanged:true},null,2)+'\n');console.log(JSON.stringify({files:files.length,bytes:files.reduce((a,f)=>a+f.bytes,0)}));
