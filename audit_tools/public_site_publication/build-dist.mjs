@@ -88,6 +88,10 @@ for (const rel of [
   copyFile(rel);
 }
 
+// Temporary, intentionally unlinked Composer telemetry beta. Never publish the tree.
+const composerTelemetryBeta = "beta-testing/composer-telemetry-live-test/index.html";
+copyFile(composerTelemetryBeta);
+
 const composerRoot = "build/faculty-build-composer";
 
 for (const name of [
@@ -164,6 +168,7 @@ function walk(dir) {
 walk(dist);
 
 const forbidden = files.filter(file =>
+  (file.startsWith("beta-testing/") && file !== composerTelemetryBeta) ||
   /(?:^|\/)canvas[- _]quiz[- _]converter(?:[- _/.]|$)/i.test(file) ||
   file.startsWith("audit_tools/") ||
   file.startsWith("server/") ||
