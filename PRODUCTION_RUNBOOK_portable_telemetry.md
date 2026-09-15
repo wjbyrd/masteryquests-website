@@ -1,6 +1,127 @@
-# Portable telemetry production runbook — BLOCKED / DO NOT EXECUTE YET
+# Portable telemetry — current production operations runbook
 
-This is the subsequent rollout task's runbook. **Every production mutation below is DO NOT RUN IN THIS REHEARSAL.** Production remains NO-GO until the engineering evidence in FINAL_REPORT_portable_telemetry_quota_boundary_fix.md is accepted, the production Turnstile widget/sitekey is ready, and the owner approves the pilot quota/tier and exact legacy sunset. No push is authorized by this document. Refresh resource versions and bookmarks at release time; the values here are rehearsal observations.
+**PORTABLE TELEMETRY PRODUCTION ROLLOUT — COMPLETE.** State below records the owner-operated production closeout, reconciled with repository source. See [final report](FINAL_REPORT_portable_telemetry_production_rollout.md) and [owner evidence](validation_artifacts/portable_telemetry_production_rollout/owner-production-attestation.md). Historical Stage 1–5 reports describe their original gates and are not current operating instructions. Refresh metadata before a later incident.
+
+> **Never use `CAPABILITY_INGEST_ENABLED=false` as a post-capability kill switch. It restores legacy admission semantics. Use the rehearsed ingest pause.**
+
+## Normal current state
+
+Production is live as recorded by the owner on 2026-09-15.
+
+| Field | Value |
+|---|---|
+| telemetry_Worker | `masteryquests-anonymous-telemetry-poc` |
+| current_telemetry_version | `333d2d44-edf3-45f8-b0ff-9b1e9065977d` |
+| website_Worker | `masteryquests-website` |
+| current_website_version | `d0cb7115-58f1-4671-ad1e-8eb914e80ea5` |
+| D1 | `managerial-telemetry-poc` |
+| D1_UUID | `16b248ff-20cb-429c-a4a1-dd50d17c1fd0` |
+| binding | `TELEMETRY_DB` |
+| migrations | `0001 / 0002 / 0003_build_ingest_capabilities.sql applied` |
+| CAPABILITY_INGEST_ENABLED | `true` |
+| CAPABILITY_ISSUANCE_ENABLED | `true` |
+| CAPABILITY_LEGACY_GRACE_ENABLED | `true` |
+
+A dedicated production Turnstile widget is provisioned. Public sitekey: `0x4AAAAAAE2FLWXPDiiJsAFx`. `TURNSTILE_SECRET_KEY` is installed as a production Worker secret. Never read or record its value. Issuance is restricted to official Composer origins `https://masteryquests.org` and `https://www.masteryquests.org`; server verification checks action `mq_build_activate`, approved hostname and context binding. The smoke closeout observed zero active capabilities after test revocations; this is a dated count, not a required steady-state zero.
+
+**Deployment hazard:** committed `server/anonymous-telemetry-poc/wrangler.jsonc` retains all capability flags false. It is a base configuration, not the live release configuration. Do not deploy it directly to production. Reviewed phase configs supply the production flags, pilot quotas and exact inventory. This closeout does not alter configuration.
+
+## Approved pilot quotas
+
+Owner-confirmed plan: **Workers Free**. These are approved pilot ceilings, not a class-capacity guarantee. Release variables use the prefix `MQ_CAP_`.
+
+| Field | Value |
+|---|---|
+| LIVE_PER_TUPLE | `3` |
+| ISSUES_BUILD_DAY | `5` |
+| ISSUES_GLOBAL_HOUR | `10` |
+| ISSUES_GLOBAL_DAY | `25` |
+| CAP_REQUESTS_MINUTE | `600` |
+| CAP_EVENTS_MINUTE | `6000` |
+| BUILD_EVENTS_MINUTE | `12000` |
+| GLOBAL_REQUESTS_MINUTE | `1200` |
+| GLOBAL_EVENTS_MINUTE | `24000` |
+| CAP_ACCEPTED_EVENTS | `50000` |
+| CAP_ACCEPTED_BYTES | `16777216` |
+| BUILD_ACCEPTED_EVENTS | `100000` |
+| BUILD_ACCEPTED_BYTES | `33554432` |
+| GLOBAL_ACCEPTED_BYTES | `67108864` |
+
+Existing `MAX_EVENTS_PER_CLIENT_MINUTE=300` remains unchanged. Accepted logical bytes are not physical D1 size. Lifetime counters are not reset by retention. Retention remains 730 days for whole runs from latest stored server receipt, with daily cron `17 4 * * *` (04:17 UTC).
+
+## Exact legacy grace and sunset
+
+Only this exact tuple and origin receive grace:
+
+| Field | Value |
+|---|---|
+| game_id | `faculty-composer` |
+| build_id | `composer-ede71cd5d8134f4b3997592ae992e19f5014d27d17d6c5a626232fc5ef9c4a8a` |
+| build_version | `296544b1222894d84c67298257964b1bfa4808212cad18c5e6e0fd4c1cafd09f` |
+| schema_version | `3` |
+| allowed_origin | `https://masteryquests.org` |
+| sunset_at | `2026-12-14T14:30:00.000Z` |
+
+Sunset is **2026-12-14T14:30:00.000Z**, checked using database time. Planned operator reminders: approximately 30 days before (2026-11-14), seven days before (2026-12-07), and sunset day (2026-12-14). These are documented plans; no reminder automation was created in this task. At/after the exact sunset verify that the grandfathered beta no longer remotely ingests under grace, local gameplay still works, and capability-authenticated builds remain unaffected. Record status-only evidence. Do not remove grace early or extend the sunset without separate approval.
+
+## Operator setup and configuration review
+
+From the repository in PowerShell, use the previously rehearsed pinned Wrangler:
+
+```powershell
+function Invoke-Wrangler {
+  & npx --yes wrangler@4.72.0 @args
+  if ($LASTEXITCODE -ne 0) { throw "Wrangler failed; stop" }
+}
+Invoke-Wrangler deployments list --name masteryquests-anonymous-telemetry-poc --config server/anonymous-telemetry-poc/wrangler.jsonc
+Invoke-Wrangler deployments list --name masteryquests-website --config wrangler.jsonc
+Invoke-Wrangler d1 info managerial-telemetry-poc --config server/anonymous-telemetry-poc/wrangler.jsonc
+Invoke-Wrangler d1 migrations list managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc
+```
+
+Confirm the production D1 UUID above and current reviewed source before any authorized incident mutation. If phase files need reconstruction, the existing generator is local-only and overwrites phase files. Use the original release input below; **never substitute today’s incident time**, which would extend grace by another 90 days:
+
+```powershell
+node audit_tools/telemetry_governance/stage5-release-config.mjs 2026-09-15T14:30:00.000Z
+```
+
+This generator input is the instant implied by the approved 90-day sunset, not an independently timestamped deployment observation. Inspect `release-inputs.json` and the selected phase file: exact sunset, one tuple, all approved quotas, D1 UUID, production route, main entry, flags, retention cron and invocation-log setting. Pause main must be `audit_tools/telemetry_governance/stage5-production-pause-entry.mjs`; issuance-off main must be the canonical Worker. Do not deploy `off.json` or `pre-migration-pause.json` now. Dry-run the selected file with `Invoke-Wrangler deploy --dry-run --config <reviewed-phase-file> --outdir .wrangler/incident-dryrun` before deployment. A dry run does not establish live secret availability or behavior.
+
+## Emergency issuance stop
+
+For issuance abuse or provider outage, deploy the reviewed capability-aware issuance-off configuration: ingest=true, issuance=false, exact grace=true. Existing valid capabilities remain usable; new issuance is unavailable. Commands below are procedures for an authorized incident, not actions performed by closeout.
+
+```powershell
+Invoke-Wrangler deploy --config .wrangler/stage5-release/issuance-off.json --name masteryquests-anonymous-telemetry-poc
+```
+
+## Emergency ingest stop
+
+For ingest abuse or D1 instability, deploy the rehearsed pause entry. It rejects ingest and issuance with 503 before D1 access, including legacy traffic, while preserving health (200), admin and scheduled dispatch. Health alone does not prove intake is open.
+
+```powershell
+Invoke-Wrangler deploy --config .wrangler/stage5-release/pause.json --name masteryquests-anonymous-telemetry-poc
+```
+
+**Never use `CAPABILITY_INGEST_ENABLED=false` as a post-capability kill switch: it restores legacy admission semantics.**
+
+Verify the new deployed version, route behavior and flags after propagation. In-flight requests may finish; unsent data may be lost. Gameplay and local CSV continue. Resume only after diagnosis and incident approval, using reviewed `on.json` (normal) or `issuance-off.json` (ingest only). Never reset lifetime counters as a recovery shortcut.
+
+## Current rollback anchors
+
+| Field | Value |
+|---|---|
+| telemetry_current | `333d2d44-edf3-45f8-b0ff-9b1e9065977d` |
+| telemetry_capability_aware_issuance_off | `31b216a5-587f-4060-86fb-4bac4d96079e` |
+| website_current | `d0cb7115-58f1-4671-ad1e-8eb914e80ea5` |
+| website_immediate_prior_known_good | `622b581f-28ea-43b1-ab7a-8972168a8335` |
+| website_pre_sitekey_fallback | `fef3a8ae-5c6a-4f38-82bc-772bd5dca0fe` |
+
+Production capabilities have existed. Do not routinely roll back to a pre-capability legacy Worker, even when active capability count is zero. Prefer reviewed capability-aware phase deployment with enforcement retained; an ingest incident uses the pause deployment. Verify version-bound flags, bindings, secret availability and exact grace before using the issuance-off anchor.
+
+Website rollback is independent of D1 authorization state: it does not revoke capabilities, undo migrations or delete telemetry. The pre-sitekey fallback removes configured Composer activation from the website; existing authorized games can still ingest. Coordinate an issuance stop when appropriate.
+
+D1 Time Travel is separate disaster recovery, never routine code rollback. It can lose accepted records, resurrect revocations, remove blocks and rewind quota accounting. A separately approved incident plan must reconcile authorization state and quotas while intake stays paused. Do not reuse a rehearsal bookmark or drop additive tables.
 
 ## Corrected ingest retry contract
 
@@ -12,238 +133,36 @@ The server reclassifies a stale minute snapshot within a maximum of three admiss
 
 For unexplained 429s, do not force repeated Generate or flush operations. Record server time, Retry-After, submitted event count, relevant capability/build/global/client counters and limits, and whether a boundary was crossed. Keep token values, raw headers and learner data out of evidence. Investigate recurrent rejection below quota even if a bounded retry succeeds. The original Stage 3 incident remains historically unproven; the deterministic defect and its regression evidence are documented separately.
 
-The blocker-fix read-only check observed website version `e0cff283-c818-4524-9a35-489933a3b74a`, newer than the rehearsal's site baseline. This task did not deploy it. Reconcile its provenance and refresh the reviewed website rollback target at the release hold; do not assume the rehearsal version is still current.
 
-## Release inputs and read-only preparation
+## Production monitoring checklist
 
-Run from Windows PowerShell in the repository. Use pinned Wrangler through npx rather than a transient cache path. The rehearsal used 4.72.0 successfully; upgrading it requires a fresh dry run.
+At pilot sessions and daily initially, review the following; after any incident or release, check at 5, 15, 30 and 60 minutes. Move to weekly review only after stable evidence.
 
-```powershell
-Set-Location 'C:\Users\Jennings\Documents\GitHub\masteryquests-website'
-function Invoke-Wrangler {
-  & npx --yes wrangler@4.72.0 @args
-  if ($LASTEXITCODE -ne 0) { throw 'Wrangler failed; stop the release' }
-}
-git status --short
-git branch --show-current
-git rev-parse HEAD
-git log -5 --oneline
-git ls-remote origin refs/heads/main
-Invoke-Wrangler --version
-Invoke-Wrangler whoami
-Invoke-Wrangler deployments list --name masteryquests-anonymous-telemetry-poc --config server/anonymous-telemetry-poc/wrangler.jsonc
-Invoke-Wrangler deployments list --name masteryquests-website --config wrangler.jsonc
-Invoke-Wrangler d1 info managerial-telemetry-poc --config server/anonymous-telemetry-poc/wrangler.jsonc
-Invoke-Wrangler d1 migrations list managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc
-Invoke-Wrangler d1 time-travel info managerial-telemetry-poc --config server/anonymous-telemetry-poc/wrangler.jsonc --json
-node audit_tools/telemetry_governance/stage5-production-baseline.mjs
-```
+- [ ] Issuance failures and unexpected loss of successful activation.
+- [ ] Turnstile failures: distinguish browser challenge failure from server verification/provider unavailability.
+- [ ] 403 authorization/scope failures: check expiry, revocation, build block, tuple and origin without credentials.
+- [ ] Unexplained 429: record server time, Retry-After, submitted event count, capability/build/global/client counters, limits and whether a minute boundary occurred. Do not force repeated Generate/flush.
+- [ ] 503: distinguish planned pause from bounded admission retry failure, provider outage or D1 failure; check health separately.
+- [ ] D1 errors and quota headroom.
+- [ ] Accepted event volume and receipt attribution; compare interval deltas.
+- [ ] Duplicate count/ratio; duplicates must not inflate accepted counters or refresh run retention. Request/work accounting can still increase.
+- [ ] Active capability count (unrevoked/unexpired), and separately unblocked usable count.
+- [ ] Physical database size via D1 info. Rehearsed operator thresholds: warn at 100 MiB or 50% logical byte budget; pause new intake for review at 250 MiB or imminent exhaustion. These are manual thresholds, not automatic guards.
+- [ ] Daily retention execution at 04:17 UTC and successful outcome; health does not prove the cron ran. Do not execute deletion just to test monitoring.
+- [ ] Authenticated live-tail redaction spot check: X-MQ-Ingest-Token must be REDACTED or omitted; review console/exception exposure, record only sanitized counts/status, then close the tail. Never save raw tail payloads, headers, HARs or capability tokens. Persisted-log verification remains a separate open item.
 
-Require production D1 `16b248ff-20cb-429c-a4a1-dd50d17c1fd0`, TELEMETRY_DB binding, and route `masteryquests.org/api/anonymous-telemetry-poc/*`. Rehearsal telemetry rollback version: `afaa4ada-d6cf-48a5-bdde-13cc35f52f80`. Website current rollback version: `edebb0d2-6ecd-4b82-860d-233ed6b4e37d`; previous: `8681fb11-550a-47dd-bb3e-f6070ab17ca5`. Record any newer reviewed versions before proceeding. Never substitute a staging resource.
+## HTTPS hosts, local files and LMS limits
 
-Owner approves an exact UTC rollout instant, pilot limits, and the single beta legacy entry. Generate local phase configs; this command does not deploy:
+Telemetry-enabled generated games can submit from supported HTTPS hosts. Arbitrary valid HTTPS origin is transport permission only; a valid build-scoped capability remains authorization. Issuance is only from official Mastery Quests Composer origins.
 
-```powershell
-$RolloutUTC = Read-Host 'Owner-approved rollout UTC, e.g. YYYY-MM-DDTHH:MM:SS.000Z'
-node audit_tools/telemetry_governance/stage5-release-config.mjs $RolloutUTC
-Get-Content .wrangler/stage5-release/release-inputs.json
-Invoke-Wrangler deploy --dry-run --config .wrangler/stage5-release/off.json --outdir .wrangler/release-dryrun-off
-Invoke-Wrangler deploy --dry-run --config .wrangler/stage5-release/pause.json --outdir .wrangler/release-dryrun-pause
-```
+A telemetry-enabled generated game opened as `file://...` has an opaque/null browser Origin. Production intentionally rejects null origins; remote preflight may return 403. Gameplay and local telemetry CSV remain available. The exact same build, hosted on a supported HTTPS origin with its valid capability, may submit remotely. This is expected security behavior. Restrictive LMS sandbox/CSP or network policies can also prevent remote collection; test the actual student context. No cross-host browser identity continuity or learner identity assurance is provided.
 
-The illustrative rehearsal timestamp was 2026-09-16T00:00:00.000Z, yielding 2026-12-15T00:00:00.000Z sunset. **Those dates are not approved release dates. Regenerate all configs with the actual approved instant.** Do not use the example configs left under `.wrangler` without regeneration and review.
+Faculty opt-in is required; browser opt-out, expiry or revocation stops future remote collection. Capability lifetime is 365 days; telemetry retention remains 730 days. Revocation does not delete accepted telemetry. National Engine is outside this rollout and remains its separate known legacy transport exception.
 
-## HOLD 1 — bounded collection pause and migration
+## Git and website auto-deploy
 
-Owner must explicitly approve both the pause deployment and migration. Require green release regressions, exact migration SHA `d67432d1c9ed8c85f5a407cf7e606ff05cc00d63effe2ce909797fa6efb61951`, current Time Travel bookmark, matching resources, and a collection window avoiding the 04:17 UTC retention cron. Notify affected beta operators of the bounded pause. Estimate minutes operationally; local index timings are not production downtime guarantees.
+**Pushes to main trigger production website deployment. Treat push-to-main as a production website action.** Avoid pushing unrelated preparation work during a controlled rollout. After an authorized push, verify the resulting Cloudflare website version; when provenance matters, compare the live asset SHA-256 against canonical repository source.
 
-**DO NOT RUN IN THIS REHEARSAL:**
+The owner reports that live `build/faculty-build-composer/anonymous-telemetry-source.js` was hash-verified against canonical source after rollout. The release hash was not supplied and is not a permanent invariant. No push or live hash recheck was performed by this documentation closeout.
 
-```powershell
-Invoke-Wrangler deploy --config .wrangler/stage5-release/pre-migration-pause.json --name masteryquests-anonymous-telemetry-poc
-```
-
-The pause entry rejects ingest and issuance with 503, including legacy submissions, while preserving health/admin and existing scheduled behavior. Verify the deployed version and endpoint behavior after propagation. Then owner confirms migration:
-
-```powershell
-# DO NOT RUN IN THIS REHEARSAL
-Invoke-Wrangler d1 migrations apply managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc
-```
-
-Read-only verification:
-
-```powershell
-Invoke-Wrangler d1 migrations list managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc
-Invoke-Wrangler d1 execute managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc --command "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
-Invoke-Wrangler d1 execute managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc --command "PRAGMA table_info(telemetry_ingest_batches)"
-```
-
-If migration fails, stop. Inspect its transaction status and migration table; never blindly reapply individual statements. If it succeeds but release is aborted, leave additive tables/columns/indexes intact. Before any production capability exists, the known-good old Worker remains a valid code rollback. Do not drop tables/indexes as routine rollback.
-
-## HOLD 2 — capability-aware Worker, all flags OFF
-
-Require migration verification, rollback ID, and an approved candidate commit containing the 429 fix. This transition ends the bounded collection pause and restores legacy behavior.
-
-```powershell
-# DO NOT RUN IN THIS REHEARSAL
-Invoke-Wrangler deploy --config .wrangler/stage5-release/off.json --name masteryquests-anonymous-telemetry-poc
-```
-
-Read-only checks:
-
-```powershell
-Invoke-RestMethod 'https://masteryquests.org/api/anonymous-telemetry-poc/v1/health'
-Invoke-Wrangler deployments list --name masteryquests-anonymous-telemetry-poc --config server/anonymous-telemetry-poc/wrangler.jsonc
-```
-
-Owner runs one designated synthetic interaction in the exact beta artifact before continuing. Confirm its expected legacy 202 and aggregate D1 change. Do not use students. Capture the new capability-aware version as `$CapabilityAwareVersion` for post-launch rollback, validating its UUID format before use.
-
-## HOLD 3 — capability ingest and exact bounded grace
-
-Require successful flags-off legacy proof, resource identity, approved pilot tier/budgets, and exact approved legacy sunset. Review `.wrangler/stage5-release/ingest.json`: ingest=true, issuance=false, grace=true, one inventoried tuple only.
-
-```powershell
-# DO NOT RUN IN THIS REHEARSAL
-Invoke-Wrangler deploy --config .wrangler/stage5-release/ingest.json --name masteryquests-anonymous-telemetry-poc
-```
-
-Verify external valid-HTTPS preflight 204, missing/invalid capability rejection, closed external activation/admin CORS, and exact beta grace. Do not manually mint a production capability to test this phase. Issuance remains OFF. Existing proof plus preflight/rejection tests establish server readiness until real owner generation after HOLD 5.
-
-## Production Turnstile owner setup — separate approval required
-
-Create a dedicated widget named **Mastery Quests Composer Production**, Managed mode, hostname masteryquests.org. Keep the existing staging widget unchanged. The server enforces action `mq_build_activate`, apex/www hostname and cData binding. The public sitekey is not secret. The dedicated secret goes only into the production telemetry Worker secret store through Wrangler's secure prompt.
-
-```powershell
-# DO NOT RUN IN THIS REHEARSAL; owner pastes the secret directly into Wrangler's prompt
-Invoke-Wrangler secret put TURNSTILE_SECRET_KEY --name masteryquests-anonymous-telemetry-poc --config server/anonymous-telemetry-poc/wrangler.jsonc
-# Names only, safe read-only verification
-Invoke-Wrangler secret list --name masteryquests-anonymous-telemetry-poc --config server/anonymous-telemetry-poc/wrangler.jsonc
-```
-
-Do not read a secret file, echo a secret, pass it as an argument, copy it into JSON, or reuse the staging sitekey/secret. Record only widget name, public sitekey and binding name. Verify production provider behavior through manual owner generation, never headless Turnstile.
-
-## HOLD 5 — enable issuance before publishing the configured Composer
-
-This deliberately precedes HOLD 4. Require the production widget/secret, ingest/grace proof, fixed quota-boundary behavior, approved origin restrictions, and a prepared Composer artifact. The current public Composer already includes activation modules but lacks a sitekey; enabling the ready backend before publishing the key avoids an additional configured-UI/server-unavailable interval. No successful activation occurs without the real challenge.
-
-```powershell
-# DO NOT RUN IN THIS REHEARSAL
-Invoke-Wrangler deploy --config .wrangler/stage5-release/on.json --name masteryquests-anonymous-telemetry-poc
-```
-
-Confirm official activation preflight and external denial. Do not announce availability yet. Emergency issuance-only rollback is the `issuance-off.json` deployment below, retaining capability ingest and exact grace.
-
-## HOLD 4 — configured public Composer / website release
-
-Require the ready server and dedicated production public sitekey. In the separately authorized release task, add only the approved public meta setting to canonical Composer HTML, review the diff, and rebuild. No staging endpoint is permitted. This local source mutation is **not performed by Stage 5**:
-
-```powershell
-# DO NOT RUN IN THIS REHEARSAL
-$ProductionSitekey = Read-Host 'Dedicated PUBLIC production Turnstile sitekey'
-if ($ProductionSitekey -notmatch '^0x[A-Za-z0-9_-]+$') { throw 'Invalid public sitekey' }
-$ComposerIndex = Join-Path (Get-Location) 'build/faculty-build-composer/index.html'
-$ComposerHTML = [System.IO.File]::ReadAllText($ComposerIndex)
-if ($ComposerHTML.Contains('name="mq-turnstile-sitekey"')) { throw 'Existing meta requires review before replacement' }
-$ComposerHTML = $ComposerHTML.Replace('</head>', '<meta name="mq-turnstile-sitekey" content="' + $ProductionSitekey + '"></head>')
-[System.IO.File]::WriteAllText($ComposerIndex, $ComposerHTML)
-node audit_tools/public_site_publication/build-dist.mjs .
-git diff --check
-Invoke-Wrangler deploy --dry-run --config wrangler.jsonc --outdir .wrangler/release-dryrun-site
-```
-
-Require ok=true, 151 review PDFs, zero forbidden/incoming files, production endpoints, no staging key/domain and no secret/capability artifacts. Review the exact source diff and follow the owner's commit workflow; do not push without explicit authorization. Then owner approves publication:
-
-```powershell
-# DO NOT RUN IN THIS REHEARSAL
-Invoke-Wrangler deploy --config wrangler.jsonc --name masteryquests-website
-```
-
-## HOLD 6 — synthetic smoke before leaving issuance active
-
-Owner uses ordinary Edge, no students:
-
-1. Health endpoint returns 200; exact beta legacy path remains within its approved grace.
-2. Public Composer OFF Generate downloads a ZIP with zero Turnstile/activation requests.
-3. Public Composer ON Generate: manual real Turnstile, POST build-capabilities 201, ZIP download.
-4. Run the unchanged generated HTML on an approved first-party surface: POST events 202. Verify exact transported run/build/version/schema and capability receipt in D1; do not confuse local game IDs with transport UUIDs.
-5. Host that exact file unchanged on the owner's GitHub Pages test site. Observe OPTIONS 204, POST 202, no CORS error, and token-header presence without sharing its value.
-6. Verify opt-out, duplicate accepted=0 without event/byte or retention inflation, revocation 403, and gameplay/CSV continuity. No token, digest, HAR, raw headers or raw event export in evidence.
-7. Authenticated tail redaction check: token REDACTED/omitted; zero raw credential matches, console or exception exposure. Close tail afterward.
-8. Revoke only designated smoke capability IDs. Do not delete accepted records because authorization was revoked. Check no unused smoke capabilities remain.
-
-Read-only structural/aggregate commands:
-
-```powershell
-Invoke-Wrangler d1 execute managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc --command "SELECT COUNT(*) AS runs FROM telemetry_runs"
-Invoke-Wrangler d1 execute managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc --command "SELECT COUNT(*) AS events FROM telemetry_events"
-Invoke-Wrangler d1 execute managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc --command "SELECT COUNT(*) AS receipts FROM telemetry_ingest_batches"
-Invoke-Wrangler d1 execute managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc --command "SELECT COUNT(*) AS active FROM telemetry_build_capabilities WHERE revoked_at IS NULL AND expires_at>unixepoch()"
-```
-
-Use the release task's scoped in-memory artifact verifier for exact run/receipt matching; do not dump tables. Keep issuance disabled if any gate fails. Monitor at 5, 15, 30 and 60 minutes, then daily during the pilot. Announcement follows owner acceptance, not deployment completion.
-
-## Exact emergency commands — DO NOT RUN IN THIS REHEARSAL
-
-Issuance abuse/provider outage: stop new issuance while existing capabilities remain usable:
-
-```powershell
-Invoke-Wrangler deploy --config .wrangler/stage5-release/issuance-off.json --name masteryquests-anonymous-telemetry-poc
-```
-
-Ingest abuse, D1 instability, emergency migration pause: reject all ingest and issuance while preserving authorization state:
-
-```powershell
-Invoke-Wrangler deploy --config .wrangler/stage5-release/pause.json --name masteryquests-anonymous-telemetry-poc
-```
-
-**Never use ingest=false as the post-capability kill switch. It restores legacy admission.** The pause intentionally interrupts legacy remote collection too. Local gameplay/CSV continue; in-flight requests may finish before deployment propagation, and unsent data may not all be recovered. Resume only after diagnosis and owner approval using the reviewed `ingest.json` or `on.json`. Do not reset lifetime counters casually.
-
-Specific compromised/smoke capability: authenticated Cloudflare D1 operator action, not public HTTP authority. Validate the nonsecret operator UUID and record approval:
-
-```powershell
-$CapabilityId = Read-Host 'Exact reviewed capability operator UUID, NOT the raw token'
-if ($CapabilityId -notmatch '^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$') { throw 'Invalid operator UUID' }
-Invoke-Wrangler d1 execute managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc --command "UPDATE telemetry_build_capabilities SET revoked_at=unixepoch() WHERE capability_id='$CapabilityId' AND revoked_at IS NULL"
-```
-
-One compromised build:
-
-```powershell
-$BuildId = Read-Host 'Exact reviewed composer build ID'
-if ($BuildId -notmatch '^composer-[a-f0-9]{64}$') { throw 'Invalid build ID' }
-Invoke-Wrangler d1 execute managerial-telemetry-poc --remote --config server/anonymous-telemetry-poc/wrangler.jsonc --command "UPDATE telemetry_build_policies SET blocked_at=unixepoch() WHERE game_id='faculty-composer' AND build_id='$BuildId' AND blocked_at IS NULL"
-```
-
-These preserve accepted telemetry. Recovery from compromise is a new approved build/activation after investigation, not silently un-revoking credentials. ADMIN_TOKEN and MAINTENANCE_TOKEN HTTP requirements remain unchanged; no new public controls are introduced.
-
-## Rollback eras
-
-**Pre-capability only:** before any production capability is issued, old Worker rollback can restore legacy behavior while leaving unused migration 0003 schema in place:
-
-```powershell
-# DO NOT RUN IN THIS REHEARSAL; only valid before production capabilities exist
-Invoke-Wrangler rollback afaa4ada-d6cf-48a5-bdde-13cc35f52f80 --name masteryquests-anonymous-telemetry-poc --config server/anonymous-telemetry-poc/wrangler.jsonc --message 'Pre-capability release rollback'
-```
-
-**Post-capability:** deploy the pause entry or a reviewed capability-aware version/config with capability enforcement retained. Do not roll back to the old unauthenticated Worker. A version rollback must preserve the intended flags, bindings, secret availability and exact grace sunset; verify them explicitly. The runbook prefers redeployment from a reviewed capability-aware commit/config over guessing version-bound configuration.
-
-Website-only rollback does not revoke capabilities or restore D1:
-
-```powershell
-# DO NOT RUN IN THIS REHEARSAL; refresh the known-good ID before actual rollout
-Invoke-Wrangler rollback edebb0d2-6ecd-4b82-860d-233ed6b4e37d --name masteryquests-website --config wrangler.jsonc --message 'Composer release rollback'
-```
-
-The current site baseline itself lacks a production sitekey, so pair UI rollback with issuance OFF as appropriate. Existing authorized game files may continue ingesting.
-
-## Disaster recovery is separate
-
-D1 Time Travel is available; the rehearsal bookmark is recorded in `time-travel.json`. Database restore is not routine code rollback: it can lose accepted events, resurrect revoked capabilities, remove blocks and rewind quota accounting. Require a separate incident approval, current authorization-state reconciliation plan and exact incident bookmark before considering restore. **No restore command was executed in Stage 5.**
-
-```powershell
-# DISASTER-RECOVERY ONLY; DO NOT RUN IN THIS REHEARSAL
-$IncidentBookmark = Read-Host 'Separately reviewed incident recovery bookmark'
-Invoke-Wrangler d1 time-travel restore managerial-telemetry-poc --bookmark $IncidentBookmark --config server/anonymous-telemetry-poc/wrangler.jsonc
-```
-
-Keep intake paused after restore until revocations, blocks and quotas are reconciled and smoke tests pass. Never use the rehearsal bookmark automatically for a later incident.
+For active-capability listing, scoped revocation/build block and aggregate receipt SQL, use [CAPABILITY_OPERATOR.md](server/anonymous-telemetry-poc/CAPABILITY_OPERATOR.md). Mutation procedures require a separately authorized operator incident; none ran in this closeout.

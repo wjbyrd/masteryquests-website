@@ -1,0 +1,252 @@
+{
+  "status": "PORTABLE TELEMETRY PRODUCTION ROLLOUT — COMPLETE",
+  "evidenceBasis": "owner-operated production attestation; reconciled with repository implementation and historical reports; no new production verification",
+  "repository": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "branch": "main",
+  "finalHEAD": "7f5582e381ca29862890a4f98cae175d595eb8fa",
+  "headMeaning": "Existing final HEAD for this documentation-only working tree; no commit or push made",
+  "rolloutDate": "2026-09-15",
+  "rolloutDateBasis": "release commit date and 90-day legacy sunset; individual hold times not supplied",
+  "closeoutDate": "2026-09-15",
+  "telemetryWorker": {
+    "name": "masteryquests-anonymous-telemetry-poc",
+    "version": "333d2d44-edf3-45f8-b0ff-9b1e9065977d",
+    "issuanceOffAnchor": "31b216a5-587f-4060-86fb-4bac4d96079e"
+  },
+  "websiteWorker": {
+    "name": "masteryquests-website",
+    "version": "d0cb7115-58f1-4671-ad1e-8eb914e80ea5",
+    "priorKnownGood": "622b581f-28ea-43b1-ab7a-8972168a8335",
+    "preSitekeyFallback": "fef3a8ae-5c6a-4f38-82bc-772bd5dca0fe",
+    "pushToMainDeploys": true
+  },
+  "d1": {
+    "name": "managerial-telemetry-poc",
+    "uuid": "16b248ff-20cb-429c-a4a1-dd50d17c1fd0",
+    "binding": "TELEMETRY_DB",
+    "migrations": [
+      "0001_initial.sql",
+      "0002_completion_semantics.sql",
+      "0003_build_ingest_capabilities.sql"
+    ],
+    "migrationState": "applied"
+  },
+  "flags": {
+    "CAPABILITY_INGEST_ENABLED": true,
+    "CAPABILITY_ISSUANCE_ENABLED": true,
+    "CAPABILITY_LEGACY_GRACE_ENABLED": true
+  },
+  "turnstile": {
+    "dedicatedProductionWidgetProvisioned": true,
+    "publicSitekey": "0x4AAAAAAE2FLWXPDiiJsAFx",
+    "secretBinding": "TURNSTILE_SECRET_KEY",
+    "secretInstalled": true,
+    "secretValueRead": false
+  },
+  "plan": "Workers Free",
+  "pilotQuotas": {
+    "LIVE_PER_TUPLE": 3,
+    "ISSUES_BUILD_DAY": 5,
+    "ISSUES_GLOBAL_HOUR": 10,
+    "ISSUES_GLOBAL_DAY": 25,
+    "CAP_REQUESTS_MINUTE": 600,
+    "CAP_EVENTS_MINUTE": 6000,
+    "BUILD_EVENTS_MINUTE": 12000,
+    "GLOBAL_REQUESTS_MINUTE": 1200,
+    "GLOBAL_EVENTS_MINUTE": 24000,
+    "CAP_ACCEPTED_EVENTS": 50000,
+    "CAP_ACCEPTED_BYTES": 16777216,
+    "BUILD_ACCEPTED_EVENTS": 100000,
+    "BUILD_ACCEPTED_BYTES": 33554432,
+    "GLOBAL_ACCEPTED_BYTES": 67108864
+  },
+  "existingClientEventsMinute": 300,
+  "legacyGrace": {
+    "game_id": "faculty-composer",
+    "build_id": "composer-ede71cd5d8134f4b3997592ae992e19f5014d27d17d6c5a626232fc5ef9c4a8a",
+    "build_version": "296544b1222894d84c67298257964b1bfa4808212cad18c5e6e0fd4c1cafd09f",
+    "schema_version": 3,
+    "allowed_origin": "https://masteryquests.org",
+    "sunset_at": "2026-12-14T14:30:00.000Z"
+  },
+  "capabilityLifetimeDays": 365,
+  "retention": {
+    "days": 730,
+    "cron": "17 4 * * *",
+    "basis": "whole run; latest stored server receipt"
+  },
+  "finalActiveCapabilityCount": 0,
+  "smokeEvidence": [
+    "bounded intake pause returned expected 503;",
+    "health remained 200;",
+    "migration 0003 applied successfully;",
+    "capability-era tables created;",
+    "telemetry_ingest_batches gained: capability_id admission_valid",
+    "initial capability/policy/scope-window tables were empty;",
+    "capability-aware Worker deployed with flags OFF;",
+    "legacy production beta continued returning 202;",
+    "D1 legacy counts increased consistently;",
+    "capability ingest then enabled;",
+    "arbitrary valid HTTPS capability preflight returned 204;",
+    "external issuance remained blocked;",
+    "malformed capability returned 403;",
+    "exact grandfathered beta remained 202;",
+    "production capability issuance enabled;",
+    "official Composer activation preflight returned 204;",
+    "GitHub activation origin returned 403;",
+    "production sitekey deployed to public Composer;",
+    "telemetry-OFF Composer generation caused no activation traffic;",
+    "telemetry-ON Composer generation successfully issued capability;",
+    "unchanged GitHub-hosted production-generated game: OPTIONS 204 POST 202;",
+    "production D1 attributed receipts/events to exact capability;",
+    "browser opt-out stopped further remote requests;",
+    "exact duplicate replay: HTTP 202 accepted=0 duplicates=1 no change to: run event count run last_received_at capability accepted events/bytes build accepted events/bytes global accepted events/bytes;",
+    "capability revocation produced terminal 403;",
+    "subsequent remote sends stopped;",
+    "gameplay continued;",
+    "local CSV remained downloadable;",
+    "live tail exposed no raw X-MQ-Ingest-Token;",
+    "a second freshly generated production Composer game hosted on GitHub Pages also returned 204/202;",
+    "final production active capability count = 0."
+  ],
+  "holdOrder": [
+    1,
+    2,
+    3,
+    5,
+    4,
+    6
+  ],
+  "liveAssetHashVerification": {
+    "ownerReportedMatch": true,
+    "path": "build/faculty-build-composer/anonymous-telemetry-source.js",
+    "releaseHash": null,
+    "independentlyRecheckedInCloseout": false
+  },
+  "localFile": {
+    "origin": "null",
+    "remotePreflightMayReturn": 403,
+    "gameplayAvailable": true,
+    "csvAvailable": true,
+    "sameBuildSupportedHttpsWithValidCapability": true
+  },
+  "rollback": {
+    "preCapabilityLegacyWorkerRecommended": false,
+    "websiteIndependentOfD1": true,
+    "issuanceStop": "deploy reviewed issuance-off.json; ingest=true, issuance=false, grace=true",
+    "ingestStop": "deploy reviewed pause.json; reject ingest and issuance with 503; health remains available",
+    "neverUseIngestFalseAsKillSwitch": true
+  },
+  "sunsetPlan": {
+    "reminders": [
+      {
+        "date": "2026-11-14",
+        "offsetDays": 30
+      },
+      {
+        "date": "2026-12-07",
+        "offsetDays": 7
+      },
+      {
+        "date": "2026-12-14",
+        "offsetDays": 0
+      }
+    ],
+    "scheduledByThisTask": false,
+    "checks": [
+      "exact legacy beta no longer ingests under grace",
+      "local gameplay remains operational",
+      "capability-authenticated builds unaffected"
+    ],
+    "removeGraceEarly": false
+  },
+  "monitoring": [
+    "issuance failures",
+    "Turnstile failures",
+    "403 authorization failures",
+    "unexplained 429",
+    "503",
+    "D1 errors",
+    "accepted event volume",
+    "duplicates",
+    "active capability count",
+    "database size",
+    "retention execution",
+    "live-tail token redaction"
+  ],
+  "unexplained429Record": [
+    "server time",
+    "Retry-After",
+    "submitted event count",
+    "capability/build/global/client counters",
+    "limits",
+    "minute boundary"
+  ],
+  "knownLimitations": [
+    "HTTPS transport permission is not authorization or universal host compatibility",
+    "null-origin/file and restrictive LMS sandbox/CSP may prevent remote telemetry",
+    "no learner identity assurance or cross-host identity continuity",
+    "accepted data not deleted by revocation",
+    "persisted provider log metadata not independently verified",
+    "local emulator oversized-response readability limitation remains historical",
+    "pilot logical-byte budgets do not equal physical D1 size",
+    "National Engine is a separate legacy transport exception outside this rollout"
+  ],
+  "deferredWork": [
+    "bounded expired short-window cleanup scheduling",
+    "retained staging cleanup decision",
+    "persisted-provider-log access/verification",
+    "pilot capacity and adoption review",
+    "sunset reminder scheduling and checks",
+    "publication of documentation after review"
+  ],
+  "productionActionsThisTask": {
+    "deployments": 0,
+    "d1Writes": 0,
+    "capabilitiesIssued": 0,
+    "capabilitiesRevoked": 0,
+    "flagChanges": 0,
+    "secretChanges": 0,
+    "corsChanges": 0,
+    "pushes": 0,
+    "remoteCalls": 0
+  },
+  "holds": [
+    {
+      "name": "HOLD 1 — bounded pause and migration",
+      "result": "Owner observed expected intake 503 while health remained 200. Migration 0003 applied successfully; capability, policy and scope-window tables were created and initially empty. telemetry_ingest_batches gained capability_id and admission_valid. Migrations 0001/0002 remained applied.",
+      "status": "PASS",
+      "source": "owner-production-attestation.md"
+    },
+    {
+      "name": "HOLD 2 — capability-aware Worker, flags OFF",
+      "result": "Owner observed the capability-aware deployment with flags OFF, the exact production beta returning 202 and consistently increasing D1 legacy counts. This was a rollout transition, not the current operating mode.",
+      "status": "PASS",
+      "source": "owner-production-attestation.md"
+    },
+    {
+      "name": "HOLD 3 — capability ingest and exact grace",
+      "result": "Capability ingest enabled. Arbitrary valid HTTPS capability preflight returned 204; external issuance stayed blocked; malformed capability returned 403; exact grandfathered beta continued 202.",
+      "status": "PASS",
+      "source": "owner-production-attestation.md"
+    },
+    {
+      "name": "HOLD 5 — issuance enabled",
+      "result": "Dedicated production Turnstile configuration was installed and production issuance enabled. Official Composer activation preflight returned 204; GitHub activation origin returned 403. HOLD 5 intentionally preceded HOLD 4.",
+      "status": "PASS",
+      "source": "owner-production-attestation.md"
+    },
+    {
+      "name": "HOLD 4 — public Composer sitekey",
+      "result": "Production public sitekey was deployed to Composer. Current reviewed website and rollback versions are recorded below. The live adapter was hash-verified against canonical source by the owner.",
+      "status": "PASS",
+      "source": "owner-production-attestation.md"
+    },
+    {
+      "name": "HOLD 6 — owner-operated production smoke",
+      "result": "Telemetry-OFF Generate caused no activation traffic. Telemetry-ON Generate successfully issued a capability. The unchanged first fresh production-generated game on GitHub received OPTIONS 204 / POST 202. D1 attributed receipts/events to its exact capability. Browser opt-out stopped subsequent remote requests. A second freshly generated production Composer game hosted on GitHub Pages independently received 204/202. No per-build UUIDs, counts or timestamps beyond those supplied are invented.",
+      "status": "PASS",
+      "source": "owner-production-attestation.md"
+    }
+  ]
+}

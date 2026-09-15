@@ -144,7 +144,7 @@
 </div>
 </div>
 </section>
-</main>
+<section class="section" id="portable-telemetry"><div class="site-container"><h2>Optional telemetry on HTTPS hosts</h2><p>Telemetry-enabled generated games can submit from supported HTTPS hosts. Faculty must explicitly opt in when generating a game with the official Mastery Quests Composer; collection is OFF by default. Composer issues build-scoped authorization with a 365-day capability lifetime. Browser opt-out, revocation or expiry stops future remote collection while local gameplay and Download Game Data CSV remain available. Revocation does not delete accepted telemetry; the 730-day retention policy remains separate from authorization lifetime.</p><p>A game opened directly as <code>file://...</code> has an opaque/null browser Origin. Production intentionally rejects remote telemetry from null origins, so preflight may return 403. Local gameplay and CSV still work. Hosting the exact same build on a supported HTTPS host permits remote submission while its capability is valid. Restrictive LMS sandbox, CSP or network settings may prevent remote telemetry even on HTTPS; test the actual student launch context. Anonymous telemetry provides no learner identity assurance or cross-host browser identity continuity.</p><p>National Engine remains a separate legacy transport exception outside this anonymous capability rollout. These statements do not mean every Mastery Quests game uses this system.</p></div></section></main>
 <footer class="site-footer">
 <div class="site-container footer-inner">
 <div>

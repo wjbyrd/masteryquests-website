@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "localOnly": true,
+  "productionRequests": 0,
+  "results": [
+    {
+      "name": "Legacy tuple, approved sunset and original generator input",
+      "status": "PASS"
+    },
+    {
+      "name": "Approved pilot limits match existing release generator",
+      "status": "PASS"
+    },
+    {
+      "name": "D1 identity, lifetime, retention, public sitekey and base-config hazard",
+      "status": "PASS"
+    },
+    {
+      "name": "Current operator status, rollback anchors and kill-switch semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "Five public pages retain factual host, choice, lifetime and exception language",
+      "status": "PASS"
+    },
+    {
+      "name": "Operator SQL compiles and scoped mutations preserve accepted telemetry locally",
+      "status": "PASS"
+    },
+    {
+      "name": "Governance renderer consistency",
+      "status": "PASS"
+    },
+    {
+      "name": "Dictionary renderer consistency",
+      "status": "PASS"
+    },
+    {
+      "name": "Dictionary field/source consistency",
+      "status": "PASS"
+    },
+    {
+      "name": "git diff --check",
+      "status": "PASS"
+    },
+    {
+      "name": "Tracked changes restricted to documentation and its renderer",
+      "status": "PASS"
+    },
+    {
+      "name": "Tracked and delivered text credential-pattern scan",
+      "status": "PASS"
+    }
+  ],
+  "filesChanged": [
+    "FINAL_REPORT_portable_telemetry_production_rollout.md",
+    "PRODUCTION_RUNBOOK_portable_telemetry.md",
+    "audit_tools/telemetry_governance/render.mjs",
+    "build/index.html",
+    "how-to/composer/index.html",
+    "how-to/responsible-telemetry-use/index.html",
+    "how-to/telemetry-data-dictionary/index.html",
+    "privacy/index.html",
+    "server/anonymous-telemetry-poc/CAPABILITY_OPERATOR.md",
+    "validation_artifacts/portable_telemetry_production_rollout/browser-check.mjs",
+    "validation_artifacts/portable_telemetry_production_rollout/browser.json",
+    "validation_artifacts/portable_telemetry_production_rollout/check.mjs",
+    "validation_artifacts/portable_telemetry_production_rollout/owner-production-attestation.md",
+    "validation_artifacts/portable_telemetry_production_rollout/production.json",
+    "validation_artifacts/portable_telemetry_production_rollout/validation.json"
+  ],
+  "credentialScan": {
+    "textFilesScanned": 8414,
+    "matchingFiles": [],
+    "syntheticFixtures": [
+      {
+        "file": "audit_tools/telemetry_governance/stage3-issuance-check.mjs",
+        "reason": "unchanged pre-existing injected-provider dummy value, not a production credential"
+      }
+    ],
+    "scope": "all tracked text plus closeout delivery files; binary files excluded",
+    "limitations": "pattern scan cannot prove absence of every unknown secret format; no production secret value read or compared"
+  },
+  "sqlValidation": "in-memory SQLite only; synthetic hash-only row, no token issuance or production D1",
+  "evidenceAttribution": "production acceptance is owner-attested; local checks do not independently verify remote state"
+}
