@@ -1,0 +1,12 @@
+OFF/malformed choices cause zero challenge or activation requests: PASS
+Generate activation sends exact minimal fields and server-matching context: PASS
+Double Generate and repeated download reuse one in-memory activation: PASS
+Changed inputs invalidate reuse; reload creates a fresh attempt: PASS
+Stale response discarded after invalidation or snapshot change: PASS
+Failure remains blocked; explicit OFF fallback makes no request: PASS
+Response endpoint cannot redirect credentials or change scope: PASS
+Expired malformed and unknown descriptor fields fail closed: PASS
+Different tokens preserve exact analytical build and all measurement hashes: PASS
+Recipe import migration save and canonical identity discard activation metadata: PASS
+Preview preparation is pure and generated privacy links are absolute: PASS
+{"passed":11,"failed":0}
