@@ -1,0 +1,102 @@
+{
+  "passed": 24,
+  "failed": 0,
+  "results": [
+    {
+      "name": "201 exact response, 365 days, hash-only storage and no-store",
+      "status": "PASS"
+    },
+    {
+      "name": "Flags OFF or malformed never verify or mint",
+      "status": "PASS"
+    },
+    {
+      "name": "missing true rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "false rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "string true rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown field rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong build rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong version rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong schema rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong measurement rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong governance rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong disclosure rejects without writes/challenge",
+      "status": "PASS"
+    },
+    {
+      "name": "Challenge failure rejects atomically",
+      "status": "PASS"
+    },
+    {
+      "name": "Challenge wrong action rejects atomically",
+      "status": "PASS"
+    },
+    {
+      "name": "Challenge wrong hostname rejects atomically",
+      "status": "PASS"
+    },
+    {
+      "name": "Challenge wrong context rejects atomically",
+      "status": "PASS"
+    },
+    {
+      "name": "Challenge replay rejects",
+      "status": "PASS"
+    },
+    {
+      "name": "Same attempt never remints; changed digest conflicts",
+      "status": "PASS"
+    },
+    {
+      "name": "Live cap and issuance rate limit have no partial writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Blocked build rejects mint",
+      "status": "PASS"
+    },
+    {
+      "name": "Activation CORS is first-party POST content-type only",
+      "status": "PASS"
+    },
+    {
+      "name": "Query, oversized, malformed and encoded activation reject",
+      "status": "PASS"
+    },
+    {
+      "name": "Provider adapter validates expiry, action/context boundary and exact request",
+      "status": "PASS"
+    },
+    {
+      "name": "Provider/storage exceptions never expose challenge or credential",
+      "status": "PASS"
+    }
+  ]
+}

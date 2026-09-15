@@ -1,0 +1,36 @@
+(node:68816) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Defined below-quota admission at boundary -1000 ms: PASS
+Defined below-quota admission at boundary -1 ms: PASS
+Defined below-quota admission at boundary 0 ms: PASS
+Defined below-quota admission at boundary 1 ms: PASS
+Defined below-quota admission at boundary 1000 ms: PASS
+Transaction crosses all scopes together; stale batch rolls back and reclassifies: PASS
+Preliminary quota read crosses boundary and is reclassified: PASS
+capability new window exhausted returns genuine 429 without writes: PASS
+capability old exhausted window does not poison new available window: PASS
+build new window exhausted returns genuine 429 without writes: PASS
+build old exhausted window does not poison new available window: PASS
+global new window exhausted returns genuine 429 without writes: PASS
+global old exhausted window does not poison new available window: PASS
+client new window exhausted returns genuine 429 without writes: PASS
+client old exhausted window does not poison new available window: PASS
+Retry-After at 0 ms is remaining whole seconds: PASS
+Retry-After at 1 ms is remaining whole seconds: PASS
+Retry-After at 59000 ms is remaining whole seconds: PASS
+Retry-After at 59999 ms is remaining whole seconds: PASS
+Duplicate across boundary preserves accepted bytes/events and run count: PASS
+Concurrent boundary contenders with capacity 1: PASS
+Concurrent boundary contenders with capacity 2: PASS
+Concurrent build boundary ceiling stays exact: PASS
+Concurrent global boundary ceiling stays exact: PASS
+Concurrent client boundary ceiling stays exact: PASS
+Three stale transactional attempts exhaust safely as 503: PASS
+Three stale preliminary classifications exhaust safely as 503: PASS
+Alternating trusted boundary clock never resets a consumed window: PASS
+CAP_ACCEPTED_EVENTS lifetime budget is terminal 403 even in a fresh minute: PASS
+BUILD_ACCEPTED_EVENTS lifetime budget is terminal 403 even in a fresh minute: PASS
+CAP_ACCEPTED_BYTES lifetime budget is terminal 403 even in a fresh minute: PASS
+BUILD_ACCEPTED_BYTES lifetime budget is terminal 403 even in a fresh minute: PASS
+GLOBAL_ACCEPTED_BYTES lifetime budget is terminal 403 even in a fresh minute: PASS
+Lifetime 403 takes priority when minute and lifetime budgets are both full: PASS

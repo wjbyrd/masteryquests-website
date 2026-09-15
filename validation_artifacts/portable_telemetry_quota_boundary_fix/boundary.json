@@ -1,0 +1,142 @@
+{
+  "passed": 34,
+  "total": 34,
+  "results": [
+    {
+      "name": "Defined below-quota admission at boundary -1000 ms",
+      "status": "PASS"
+    },
+    {
+      "name": "Defined below-quota admission at boundary -1 ms",
+      "status": "PASS"
+    },
+    {
+      "name": "Defined below-quota admission at boundary 0 ms",
+      "status": "PASS"
+    },
+    {
+      "name": "Defined below-quota admission at boundary 1 ms",
+      "status": "PASS"
+    },
+    {
+      "name": "Defined below-quota admission at boundary 1000 ms",
+      "status": "PASS"
+    },
+    {
+      "name": "Transaction crosses all scopes together; stale batch rolls back and reclassifies",
+      "status": "PASS"
+    },
+    {
+      "name": "Preliminary quota read crosses boundary and is reclassified",
+      "status": "PASS"
+    },
+    {
+      "name": "capability new window exhausted returns genuine 429 without writes",
+      "status": "PASS"
+    },
+    {
+      "name": "capability old exhausted window does not poison new available window",
+      "status": "PASS"
+    },
+    {
+      "name": "build new window exhausted returns genuine 429 without writes",
+      "status": "PASS"
+    },
+    {
+      "name": "build old exhausted window does not poison new available window",
+      "status": "PASS"
+    },
+    {
+      "name": "global new window exhausted returns genuine 429 without writes",
+      "status": "PASS"
+    },
+    {
+      "name": "global old exhausted window does not poison new available window",
+      "status": "PASS"
+    },
+    {
+      "name": "client new window exhausted returns genuine 429 without writes",
+      "status": "PASS"
+    },
+    {
+      "name": "client old exhausted window does not poison new available window",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After at 0 ms is remaining whole seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After at 1 ms is remaining whole seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After at 59000 ms is remaining whole seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After at 59999 ms is remaining whole seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate across boundary preserves accepted bytes/events and run count",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent boundary contenders with capacity 1",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent boundary contenders with capacity 2",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent build boundary ceiling stays exact",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent global boundary ceiling stays exact",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent client boundary ceiling stays exact",
+      "status": "PASS"
+    },
+    {
+      "name": "Three stale transactional attempts exhaust safely as 503",
+      "status": "PASS"
+    },
+    {
+      "name": "Three stale preliminary classifications exhaust safely as 503",
+      "status": "PASS"
+    },
+    {
+      "name": "Alternating trusted boundary clock never resets a consumed window",
+      "status": "PASS"
+    },
+    {
+      "name": "CAP_ACCEPTED_EVENTS lifetime budget is terminal 403 even in a fresh minute",
+      "status": "PASS"
+    },
+    {
+      "name": "BUILD_ACCEPTED_EVENTS lifetime budget is terminal 403 even in a fresh minute",
+      "status": "PASS"
+    },
+    {
+      "name": "CAP_ACCEPTED_BYTES lifetime budget is terminal 403 even in a fresh minute",
+      "status": "PASS"
+    },
+    {
+      "name": "BUILD_ACCEPTED_BYTES lifetime budget is terminal 403 even in a fresh minute",
+      "status": "PASS"
+    },
+    {
+      "name": "GLOBAL_ACCEPTED_BYTES lifetime budget is terminal 403 even in a fresh minute",
+      "status": "PASS"
+    },
+    {
+      "name": "Lifetime 403 takes priority when minute and lifetime budgets are both full",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,773 @@
+{
+  "schema": "mq-quota-boundary-fix/1",
+  "generatedAt": "2026-09-15T03:29:24.953Z",
+  "repository": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "branch": "main",
+  "startingHEAD": "e8f5ac78588dce28049d3170124bc0d7fb61d09d",
+  "initialStatus": "clean",
+  "committed": false,
+  "pushed": false,
+  "original": {
+    "status": "PASS",
+    "simulation": "Database time read immediately before a minute boundary; subsequent SQL guards see next minute",
+    "counterExhaustion": false,
+    "observedStatus": 429,
+    "retryAfter": "60",
+    "writesOnRejectedRequest": 0,
+    "normalClockStatus": 202,
+    "historicalStage3CauseProven": false,
+    "conclusion": "Minute-window freshness predicates can return 429 with counters below quota. This plausibly explains Stage 3, but its original timing evidence is unavailable."
+  },
+  "engineeringBlocker": "CLEARED",
+  "productionDecision": "NO-GO",
+  "productionDeployment": "NOT DEPLOYED",
+  "rootCause": "Preliminary quota predicates combined counter ceilings and freshness; stale database minute N versus SQL minute N+1 escaped transaction retry as false 429.",
+  "clockModel": {
+    "authority": "D1 unixepoch()",
+    "classification": "One SELECT reads predicate and current database seconds; compare to classified minute",
+    "clientTimeTrusted": false,
+    "freshnessGuardsRetained": true,
+    "attemptsMaximum": 3,
+    "staleExhaustion": {
+      "status": 503,
+      "error": "ingest_unavailable"
+    },
+    "legacyFlagsOffClock": "Worker Date.now() unchanged",
+    "issuanceHourDayPathChanged": false
+  },
+  "quotas": {
+    "ceilingsChanged": false,
+    "atomicAccounting": true,
+    "duplicateInflation": false,
+    "ownershipChecksPreserved": true,
+    "perClientPreserved": true,
+    "lifetimeFailure": {
+      "status": 403,
+      "error": "ingest_budget_exhausted"
+    },
+    "shortWindowFailure": {
+      "status": 429,
+      "error": "ingest_rate_limited",
+      "retryAfter": "max(1,60-(databaseSeconds % 60))"
+    },
+    "lifetimePrecedesMinute": true
+  },
+  "clientContract": {
+    "authority": "Accepted design response table; explicitly reconciles historical Stage 2/3 behavior",
+    "recognizedRetryCode": "ingest_rate_limited",
+    "maxRetries": 3,
+    "horizonMs": 300000,
+    "jitterMs": [
+      0,
+      1000
+    ],
+    "backoffMs": [
+      1000,
+      2000,
+      4000
+    ],
+    "minimumDelayMs": 1000,
+    "invalidHeaderFallbackMs": 60000,
+    "queueMaximum": 2000,
+    "sameEventIds": true,
+    "cooldownCannotBeBypassed": true,
+    "cancelOnOptOutOrExpiry": true,
+    "authorizationAndBudget403Terminal": true,
+    "unknown429Terminal": true,
+    "network503Bounded": true,
+    "exhaustion": "Cancel queued remote work; pause current page without permanent descriptor marker",
+    "gameplayAndLocalCSVPreserved": true
+  },
+  "tests": {
+    "boundary": {
+      "passed": 34,
+      "total": 34,
+      "results": [
+        {
+          "name": "Defined below-quota admission at boundary -1000 ms",
+          "status": "PASS"
+        },
+        {
+          "name": "Defined below-quota admission at boundary -1 ms",
+          "status": "PASS"
+        },
+        {
+          "name": "Defined below-quota admission at boundary 0 ms",
+          "status": "PASS"
+        },
+        {
+          "name": "Defined below-quota admission at boundary 1 ms",
+          "status": "PASS"
+        },
+        {
+          "name": "Defined below-quota admission at boundary 1000 ms",
+          "status": "PASS"
+        },
+        {
+          "name": "Transaction crosses all scopes together; stale batch rolls back and reclassifies",
+          "status": "PASS"
+        },
+        {
+          "name": "Preliminary quota read crosses boundary and is reclassified",
+          "status": "PASS"
+        },
+        {
+          "name": "capability new window exhausted returns genuine 429 without writes",
+          "status": "PASS"
+        },
+        {
+          "name": "capability old exhausted window does not poison new available window",
+          "status": "PASS"
+        },
+        {
+          "name": "build new window exhausted returns genuine 429 without writes",
+          "status": "PASS"
+        },
+        {
+          "name": "build old exhausted window does not poison new available window",
+          "status": "PASS"
+        },
+        {
+          "name": "global new window exhausted returns genuine 429 without writes",
+          "status": "PASS"
+        },
+        {
+          "name": "global old exhausted window does not poison new available window",
+          "status": "PASS"
+        },
+        {
+          "name": "client new window exhausted returns genuine 429 without writes",
+          "status": "PASS"
+        },
+        {
+          "name": "client old exhausted window does not poison new available window",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After at 0 ms is remaining whole seconds",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After at 1 ms is remaining whole seconds",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After at 59000 ms is remaining whole seconds",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After at 59999 ms is remaining whole seconds",
+          "status": "PASS"
+        },
+        {
+          "name": "Duplicate across boundary preserves accepted bytes/events and run count",
+          "status": "PASS"
+        },
+        {
+          "name": "Concurrent boundary contenders with capacity 1",
+          "status": "PASS"
+        },
+        {
+          "name": "Concurrent boundary contenders with capacity 2",
+          "status": "PASS"
+        },
+        {
+          "name": "Concurrent build boundary ceiling stays exact",
+          "status": "PASS"
+        },
+        {
+          "name": "Concurrent global boundary ceiling stays exact",
+          "status": "PASS"
+        },
+        {
+          "name": "Concurrent client boundary ceiling stays exact",
+          "status": "PASS"
+        },
+        {
+          "name": "Three stale transactional attempts exhaust safely as 503",
+          "status": "PASS"
+        },
+        {
+          "name": "Three stale preliminary classifications exhaust safely as 503",
+          "status": "PASS"
+        },
+        {
+          "name": "Alternating trusted boundary clock never resets a consumed window",
+          "status": "PASS"
+        },
+        {
+          "name": "CAP_ACCEPTED_EVENTS lifetime budget is terminal 403 even in a fresh minute",
+          "status": "PASS"
+        },
+        {
+          "name": "BUILD_ACCEPTED_EVENTS lifetime budget is terminal 403 even in a fresh minute",
+          "status": "PASS"
+        },
+        {
+          "name": "CAP_ACCEPTED_BYTES lifetime budget is terminal 403 even in a fresh minute",
+          "status": "PASS"
+        },
+        {
+          "name": "BUILD_ACCEPTED_BYTES lifetime budget is terminal 403 even in a fresh minute",
+          "status": "PASS"
+        },
+        {
+          "name": "GLOBAL_ACCEPTED_BYTES lifetime budget is terminal 403 even in a fresh minute",
+          "status": "PASS"
+        },
+        {
+          "name": "Lifetime 403 takes priority when minute and lifetime budgets are both full",
+          "status": "PASS"
+        }
+      ]
+    },
+    "client": {
+      "passed": 22,
+      "total": 22,
+      "results": [
+        {
+          "name": "Canonical generated client crosses stale transaction boundary into SQLite once",
+          "status": "PASS"
+        },
+        {
+          "name": "Genuine SQLite minute 429 honors delay, retries same IDs, clears queue once",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After 0 has safe minimum, bounded jitter and no early flush",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After 1 has safe minimum, bounded jitter and no early flush",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After 59 has safe minimum, bounded jitter and no early flush",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After 60 has safe minimum, bounded jitter and no early flush",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After invalid has safe minimum, bounded jitter and no early flush",
+          "status": "PASS"
+        },
+        {
+          "name": "Retry-After date respected",
+          "status": "PASS"
+        },
+        {
+          "name": "Huge Retry-After exceeds horizon without early retry or permanent descriptor invalidation",
+          "status": "PASS"
+        },
+        {
+          "name": "Overflowing numeric Retry-After cannot become an early retry",
+          "status": "PASS"
+        },
+        {
+          "name": "Late background wake beyond five minutes cannot send",
+          "status": "PASS"
+        },
+        {
+          "name": "New events cannot replace cooldown with an immediate send; queue stays bounded",
+          "status": "PASS"
+        },
+        {
+          "name": "At most three retries then session pause, no busy loop or permanent descriptor mark",
+          "status": "PASS"
+        },
+        {
+          "name": "browser cancellation during wait prevents replay",
+          "status": "PASS"
+        },
+        {
+          "name": "faculty cancellation during wait prevents replay",
+          "status": "PASS"
+        },
+        {
+          "name": "expiry cancellation during wait prevents replay",
+          "status": "PASS"
+        },
+        {
+          "name": "ingest_not_authorized 403 is terminal with zero retry",
+          "status": "PASS"
+        },
+        {
+          "name": "ingest_budget_exhausted 403 is terminal with zero retry",
+          "status": "PASS"
+        },
+        {
+          "name": "Revocation rejection after delayed retry terminates descriptor",
+          "status": "PASS"
+        },
+        {
+          "name": "Unknown 429 is not silently made retryable",
+          "status": "PASS"
+        },
+        {
+          "name": "503 recovery is transient and same queued IDs are retained",
+          "status": "PASS"
+        },
+        {
+          "name": "Opt-out while 429 response body is pending cannot schedule replay",
+          "status": "PASS"
+        }
+      ]
+    },
+    "releaseCritical": [
+      {
+        "name": "stage4-cors",
+        "exitCode": 0,
+        "expected": 24,
+        "passed": 24,
+        "status": "PASS"
+      },
+      {
+        "name": "stage4-cors-runtime",
+        "exitCode": 0,
+        "expected": 24,
+        "passed": 24,
+        "status": "PASS"
+      },
+      {
+        "name": "capabilities",
+        "exitCode": 0,
+        "expected": 56,
+        "passed": 56,
+        "status": "PASS"
+      },
+      {
+        "name": "governance",
+        "exitCode": 0,
+        "expected": 14,
+        "passed": 14,
+        "status": "PASS"
+      },
+      {
+        "name": "readiness",
+        "exitCode": 0,
+        "expected": 27,
+        "passed": 27,
+        "status": "PASS"
+      },
+      {
+        "name": "scheduled",
+        "exitCode": 0,
+        "expected": 11,
+        "passed": 11,
+        "status": "PASS"
+      },
+      {
+        "name": "backend",
+        "exitCode": 0,
+        "expected": 18,
+        "passed": 18,
+        "status": "PASS"
+      },
+      {
+        "name": "regressions",
+        "exitCode": 0,
+        "expected": 21,
+        "passed": 21,
+        "status": "PASS"
+      },
+      {
+        "name": "contract",
+        "exitCode": 0,
+        "expected": 16,
+        "passed": 16,
+        "status": "PASS"
+      },
+      {
+        "name": "private-refresh",
+        "exitCode": 0,
+        "expected": 33,
+        "passed": 33,
+        "status": "PASS"
+      },
+      {
+        "name": "http-sqlite",
+        "exitCode": 0,
+        "expected": 39,
+        "passed": 39,
+        "status": "PASS"
+      },
+      {
+        "name": "header-sqlite",
+        "exitCode": 0,
+        "expected": 8,
+        "passed": 8,
+        "status": "PASS"
+      },
+      {
+        "name": "header-runtime",
+        "exitCode": 0,
+        "expected": 8,
+        "passed": 8,
+        "status": "PASS"
+      },
+      {
+        "name": "stage3-issuance",
+        "exitCode": 0,
+        "expected": 24,
+        "passed": 24,
+        "status": "PASS"
+      },
+      {
+        "name": "stage3-composer",
+        "exitCode": 0,
+        "expected": 11,
+        "passed": 11,
+        "status": "PASS"
+      },
+      {
+        "name": "stage3-browser",
+        "exitCode": 0,
+        "expected": 17,
+        "passed": 17,
+        "status": "PASS"
+      },
+      {
+        "name": "public-browser",
+        "exitCode": 0,
+        "expected": 103,
+        "passed": 103,
+        "status": "PASS"
+      },
+      {
+        "name": "canonical-verifier",
+        "exitCode": 0,
+        "expected": 19,
+        "passed": 19,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_faculty_outcome_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_content_scope_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_default_character_set_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_exam_navigation_boss_reveal_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_checkpoint_artifact_exam_integrity_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_guide_intro_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase1_targeted_repair_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase15_production_hardening_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_visibility_aware_telemetry_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_generated_telemetry_smoke.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase3a_official_theme_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase3b_custom_asset_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase3e_graph_question_sync_validation.mjs",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_question_quality_auditor_validation.mjs",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_macro_phase2_taxonomy_validation.mjs",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_checkpoint_remediation_design_change_validation.mjs",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_concept_review_integration.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_mastery_report_concept_reviews.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_mastery_report_2_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_mastery_report_state_leak_hotfix.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_mode_availability_fix.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_quiz_mode_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_unlimited_practice_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_trial_by_graph_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_fading_fortune_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_risk_reward_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_risk_reward_state_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      }
+    ],
+    "finalServer": {
+      "capabilities": 56,
+      "http": 39,
+      "corsRuntime": 24
+    },
+    "deterministicClock": true,
+    "arbitrarySleeps": false
+  },
+  "historicalStage3CauseProven": false,
+  "historicalConclusion": "Reproduced defect is a plausible mechanism consistent with the historical symptom; no retrospective proof.",
+  "staging": {
+    "readOnly": true,
+    "worker": "masteryquests-telemetry-stage3-staging",
+    "database": "993f49a5-4dd4-41ee-9007-bbf4bb4856c9",
+    "capabilities": 5,
+    "active": 0,
+    "tailCount": 0,
+    "deployed": false,
+    "newCapabilities": 0,
+    "realBoundaryTestPerformed": false,
+    "reason": "Deterministic SQLite clocks and transaction barriers provide reliable boundary/concurrency proof without provider interactions."
+  },
+  "production": {
+    "checkedAt": "2026-09-15T03:25:33.944Z",
+    "resources": [
+      {
+        "name": "masteryquests-anonymous-telemetry-poc",
+        "version": "afaa4ada-d6cf-48a5-bdde-13cc35f52f80",
+        "matchesRehearsal": true,
+        "vars": [
+          {
+            "name": "ALLOWED_ORIGINS",
+            "value": "https://masteryquests.org,https://www.masteryquests.org"
+          }
+        ],
+        "secretNames": [
+          "ADMIN_TOKEN",
+          "MAINTENANCE_TOKEN"
+        ]
+      },
+      {
+        "name": "masteryquests-website",
+        "version": "e0cff283-c818-4524-9a35-489933a3b74a",
+        "matchesRehearsal": false,
+        "vars": [],
+        "secretNames": [
+          "CLASSROOM_ACCESS_CODE",
+          "CLASSROOM_SESSION_SECRET"
+        ]
+      }
+    ],
+    "database": "16b248ff-20cb-429c-a4a1-dd50d17c1fd0",
+    "migrations": [
+      {
+        "name": "0001_initial.sql"
+      },
+      {
+        "name": "0002_completion_semantics.sql"
+      }
+    ],
+    "counts": {
+      "telemetry_runs": 53,
+      "telemetry_events": 3427,
+      "telemetry_ingest_batches": 1225,
+      "telemetry_rate_limits": 15
+    },
+    "matchesRehearsal": false,
+    "migration0003Applied": false,
+    "productionWrites": 0,
+    "productionDeployments": 0,
+    "turnstileModified": false,
+    "unchangedBetweenTaskObservations": true,
+    "websiteDiffersFromRehearsal": true,
+    "websiteProvenanceVerified": false
+  },
+  "integrity": {
+    "protectedHashes": {
+      "audit_tools/telemetry_contract/schema.json": "9c9b42fc2a04556f7bb794afc1000dc6972e251476cc01984cb966d207abefcb",
+      "audit_tools/telemetry_contract/release.json": "5d7371d87efc1902920db706d9ed80f70334e239cf03075d6db3421df336c714",
+      "audit_tools/telemetry_contract/runtime.js": "acc3c2caae4cd718a0f30fc1997b001e166860aa1d9fbd2e654bf26812388bde",
+      "server/anonymous-telemetry-poc/measurement-contract.mjs": "91d6d8cf2f1dc5fecc80b21366439e20968b8770e6b9a32bbd7a052d8f43fd37",
+      "server/anonymous-telemetry-poc/telemetry-core.mjs": "453a1cdabf75c343824e3b5bc13ebc95e0c0016301f166efba45e9e86a6aed7e",
+      "server/anonymous-telemetry-poc/governance-policy.mjs": "4e9b1a47e694122ac87ceb36f1a876fcac24f55ec4a612d1379eec9a41f9ab79",
+      "server/anonymous-telemetry-poc/governance.mjs": "57cd8c776634f836517e3a7635af0c1fd9a589faea96d2c1b228a2b433e2aea1",
+      "server/anonymous-telemetry-poc/scheduled-retention.mjs": "a919eec5ddb75e71f4b5aa442e17f0c8e1f1a71fa306a7812ec912b9ee1db387",
+      "server/anonymous-telemetry-poc/wrangler.jsonc": "73b433090f218888a2e390972e8a26f860d05b5679596859642ecd994ab0d77a",
+      "wrangler.jsonc": "c55379d019ca56870fa6bb48c3b7246a27257ac86b7383d6652c478d924fbd86",
+      "server/anonymous-telemetry-poc/worker.mjs": "5ae76eeafe06513f3817c785ecfb1b0ad9624b72949ce74a754b881e7c14c8f3",
+      "server/anonymous-telemetry-poc/turnstile-verifier.mjs": "4d8239f16e11f3175775df91e01a2f4d291b5e7719818693d3a0a41952a79f91",
+      "server/anonymous-telemetry-poc/migrations/0003_build_ingest_capabilities.sql": "d67432d1c9ed8c85f5a407cf7e606ff05cc00d63effe2ce909797fa6efb61951",
+      "play/managerial-intelligence-directorate/local-telemetry.js": "d48f6022185c5ff2051cb71b72264300e2225f3fa7d9eab338e23e171d3359b1"
+    },
+    "changedTrackedFiles": [
+      "PRODUCTION_RUNBOOK_portable_telemetry.md",
+      "audit_tools/telemetry_contract/registry.json",
+      "audit_tools/telemetry_governance/capabilities-check.mjs",
+      "audit_tools/telemetry_governance/capability-http-check.mjs",
+      "audit_tools/telemetry_governance/capability-http-fixture.mjs",
+      "audit_tools/telemetry_governance/stage3-browser-check.mjs",
+      "audit_tools/telemetry_governance/stage4-cors-check.mjs",
+      "audit_tools/telemetry_governance/stage5-regressions.mjs",
+      "build/faculty-build-composer/anonymous-telemetry-source.js",
+      "build/faculty-build-composer/measurement-build.js",
+      "build/faculty-build-composer/template/mastery-quests-faculty-template-composer-ready.html",
+      "play/managerial-directorate-classroom/telemetry-client.js",
+      "play/managerial-directorate-telemetry-poc/telemetry-client.js",
+      "server/anonymous-telemetry-poc/capability-admission.mjs",
+      "server/anonymous-telemetry-poc/dual-mode-ingest.mjs"
+    ],
+    "measurementContract": "mq-measurement/1 unchanged",
+    "governance": "mq-governance/2 unchanged",
+    "disclosure": "mq-disclosure/2 unchanged",
+    "retentionDays": 730,
+    "provenanceRegistryRegenerated": true,
+    "diffCheck": "PASS",
+    "generatorChecks": "PASS",
+    "evidenceFilesScanned": 254,
+    "distTextFilesScanned": 150,
+    "credentialPatternMatches": 0,
+    "stagingDistMatches": 0
+  },
+  "dist": {
+    "ok": true,
+    "fileCount": 1793,
+    "composerConceptReviewPdfCount": 151,
+    "forbiddenFileCount": 0,
+    "incomingQuestionAssetCount": 0,
+    "productionDeployed": false
+  },
+  "runbook": "PRODUCTION_RUNBOOK_portable_telemetry.md",
+  "report": "FINAL_REPORT_portable_telemetry_quota_boundary_fix.md",
+  "remainingPrerequisites": [
+    "Dedicated production Turnstile widget/public key/secure owner-installed secret",
+    "Owner approval of pilot quotas, verified account tier and capacity",
+    "Exact approved rollout/legacy sunset",
+    "Review current website provenance and rollback target",
+    "Accepted candidate commit/evidence and explicit human GO at release holds"
+  ]
+}

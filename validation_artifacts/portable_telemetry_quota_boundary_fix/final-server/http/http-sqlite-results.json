@@ -1,0 +1,215 @@
+{
+  "runtime": "sqlite",
+  "version": "3.51.2",
+  "passed": 39,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Flags OFF preserve schema 1/2/3, originless delivery, arbitrary capability and old acknowledgment",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact server true only; client flags cannot enable grace or issuance",
+      "status": "PASS"
+    },
+    {
+      "name": "Valid capability HTTP admission, operator attribution, exact retry and receipt retention",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing, malformed, empty, comma-combined, unknown and operator-ID credentials reject",
+      "status": "PASS"
+    },
+    {
+      "name": "Capability expired never falls back to valid legacy tuple",
+      "status": "PASS"
+    },
+    {
+      "name": "Capability revoked never falls back to valid legacy tuple",
+      "status": "PASS"
+    },
+    {
+      "name": "Capability blocked never falls back to valid legacy tuple",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed/unknown/empty capability plus known grace tuple is never legacy authority",
+      "status": "PASS"
+    },
+    {
+      "name": "Valid capability with wrong game/build/version/schema or legacy tuple fails scope",
+      "status": "PASS"
+    },
+    {
+      "name": "Known beta inventory is derived from immutable source; grace writes NULL capability receipt",
+      "status": "PASS"
+    },
+    {
+      "name": "Grace requires exact origin/tuple and rejects missing Origin, unknown builds and client bypasses",
+      "status": "PASS"
+    },
+    {
+      "name": "Sunset is exclusive and expired grace never admits",
+      "status": "PASS"
+    },
+    {
+      "name": "Pending owner sunset and malformed inventory fail closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid inventory cannot broaden the accepted subset",
+      "status": "PASS"
+    },
+    {
+      "name": "Runtime manifests resolve dynamically, missing references are 409, invalid revisions are 403",
+      "status": "PASS"
+    },
+    {
+      "name": "capability HTTP conflicts preserve owner, event and run sequence",
+      "status": "PASS"
+    },
+    {
+      "name": "grace HTTP conflicts preserve owner, event and run sequence",
+      "status": "PASS"
+    },
+    {
+      "name": "capability concurrent HTTP identical writers",
+      "status": "PASS"
+    },
+    {
+      "name": "capability concurrent HTTP sequence writers",
+      "status": "PASS"
+    },
+    {
+      "name": "capability concurrent HTTP owner writers",
+      "status": "PASS"
+    },
+    {
+      "name": "grace concurrent HTTP identical writers",
+      "status": "PASS"
+    },
+    {
+      "name": "grace concurrent HTTP sequence writers",
+      "status": "PASS"
+    },
+    {
+      "name": "grace concurrent HTTP owner writers",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent different-build capability writers establish one immutable owner",
+      "status": "PASS"
+    },
+    {
+      "name": "revocation between lookup and HTTP transaction aborts all writes",
+      "status": "PASS"
+    },
+    {
+      "name": "block between lookup and HTTP transaction aborts all writes",
+      "status": "PASS"
+    },
+    {
+      "name": "expiry between lookup and HTTP transaction aborts all writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent quota exhaustion returns 429 and Retry-After without overshoot/fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "capability SQL failure at every dependent stage rolls back the entire request",
+      "status": "PASS"
+    },
+    {
+      "name": "grace SQL failure at every dependent stage rolls back the entire request",
+      "status": "PASS"
+    },
+    {
+      "name": "Route-scoped capability CORS supports apex/www and keeps admin/activation closed",
+      "status": "PASS"
+    },
+    {
+      "name": "All controlled error classes carry readable first-party CORS and no-store",
+      "status": "PASS"
+    },
+    {
+      "name": "Body validation handles 0/1/50/51 events, JSON, media type and encoding",
+      "status": "PASS"
+    },
+    {
+      "name": "128 KiB and multibyte boundaries enforce actual UTF-8 bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "Misleading Content-Length cannot permit an oversized body",
+      "status": "PASS"
+    },
+    {
+      "name": "Ingest capability cannot access admin; Authorization/cookies/JSON/query cannot replace header",
+      "status": "PASS"
+    },
+    {
+      "name": "Credential-bearing storage exception is redacted from response/logs/telemetry/receipts/CSV",
+      "status": "PASS"
+    },
+    {
+      "name": "Short-window cleanup is bounded and preserves lifetime accounting and all telemetry",
+      "status": "PASS"
+    },
+    {
+      "name": "Local statement/latency measurements retain security at 1,25,50,duplicate and mixed batch sizes",
+      "status": "PASS"
+    }
+  ],
+  "measurements": [
+    {
+      "case": "misleading-content-length",
+      "runtime": "sqlite",
+      "transportRejected": false,
+      "noWrites": true,
+      "healthAfterRejection": true
+    },
+    {
+      "case": "novel-1",
+      "runtime": "sqlite",
+      "statements": 21,
+      "queries": 35,
+      "latencyMs": 4.807400000000143,
+      "status": 202
+    },
+    {
+      "case": "novel-25",
+      "runtime": "sqlite",
+      "statements": 117,
+      "queries": 203,
+      "latencyMs": 37.38429999999994,
+      "status": 202
+    },
+    {
+      "case": "novel-50",
+      "runtime": "sqlite",
+      "statements": 217,
+      "queries": 378,
+      "latencyMs": 43.28510000000006,
+      "status": 202
+    },
+    {
+      "case": "exact-duplicate-50",
+      "runtime": "sqlite",
+      "statements": 117,
+      "queries": 228,
+      "latencyMs": 32.01739999999995,
+      "status": 202
+    },
+    {
+      "case": "mixed-25-duplicate-25-novel",
+      "runtime": "sqlite",
+      "statements": 167,
+      "queries": 303,
+      "latencyMs": 38.67380000000003,
+      "status": 202
+    }
+  ],
+  "productionEvidence": false,
+  "localOnly": true
+}

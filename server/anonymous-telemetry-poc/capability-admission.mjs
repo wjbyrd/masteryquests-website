@@ -5,8 +5,21 @@ import {eventRateLimit} from './transport-safety.mjs';
 import {stableContractJSON} from '../../audit_tools/telemetry_contract/hash.mjs';
 import {requireFeature, reject, parseCapability, hashCapability, readBoundedJSON, validateTuple,
   matchesTuple, capabilityStatus, validateRuntimeManifest, assertNoCredentials, capabilityLimits,
-  databaseTime, scopeWindow, buildScopeKey, windowPredicate, windowUpsert, checkWindows,
-  safeDatabaseError, isAdmissionRace} from './capabilities.mjs';
+  databaseTime, scopeWindow, buildScopeKey, windowPredicate, windowUpsert,
+  safeDatabaseError, isAdmissionRace, CapabilityError} from './capabilities.mjs';
+
+// Read quota result and database clock in the same statement. A stale snapshot
+// must be reclassified, never interpreted as quota exhaustion. Transactional
+// freshness guards remain in place and roll the entire batch back on a race.
+async function checkAdmissionQuota(db, predicate, now, lifetime=false) {
+  const row=await db.prepare(`SELECT (${predicate.sql}) AS allowed, unixepoch() AS now`).bind(...predicate.values).first();
+  if(Math.floor(row.now/60)!==Math.floor(now/60))reject('ingest_window_changed',503);
+  if(!row.allowed) {
+    const error=new CapabilityError(lifetime?'ingest_budget_exhausted':'capability_rate_limited',lifetime?403:429);
+    if(!lifetime)error.retryAfter=Math.max(1,60-(row.now%60));
+    throw error;
+  }
+}
 
 const columns = 'event_id,run_id,anonymous_client_id,build_id,build_version,schema_version,phase,game_id,mode,event_type,sequence_number,event_timestamp,elapsed_time_ms,position,question_id,concept_id,learning_objective,question_type,difficulty,selected_response,correct,response_time_ms,rapid_guess,remediation_stage,bridge_stage,retest_stage,boss_stage,graph_question,score,streak,daily_progress,artifact,completion_status,mastery_attempts,mastery_correct,mastery_accuracy,synthetic,extras_json'.split(',');
 const fields = 'eventId,runId,anonymousClientId,buildId,buildVersion,schemaVersion,phase,gameId,mode,eventType,sequenceNumber,eventTimestamp,elapsedTimeMs,position,questionId,conceptId,learningObjective,questionType,difficulty,selectedResponse,correct,responseTimeMs,rapidGuess,remediationStage,bridgeStage,retestStage,bossStage,graphQuestion,score,streak,dailyProgress,artifact,completionStatus,masteryAttempts,masteryCorrect,masteryAccuracy,synthetic,extras'.split(',');
@@ -131,6 +144,7 @@ async function admitRequest(request,env,{afterRead,httpSemantics=false}={},grace
   const limits=capabilityLimits(env);
   try {
     for(let attempt=0;attempt<3;attempt++) {
+      try {
       requireFeature(env,'ingest');
       const cap=grace?null:attempt===0?initialCap:await lookupCapability(db,hash);
       const now=await databaseTime(db);
@@ -156,12 +170,17 @@ async function admitRequest(request,env,{afterRead,httpSemantics=false}={},grace
         scopeWindow('ingest-build',buildScopeKey(events[0]),60,now,increments,{events:limits.BUILD_EVENTS_MINUTE}),
         scopeWindow('ingest-global','global',60,now,increments,{requests:limits.GLOBAL_REQUESTS_MINUTE,events:limits.GLOBAL_EVENTS_MINUTE}),
         scopeWindow('ingest-global','global',0,now,{requests:1,events:novel.length,bytes},{bytes:limits.GLOBAL_ACCEPTED_BYTES})];
-      await checkWindows(db,windows);predicates.push(...windows.map(windowPredicate));
+      // Lifetime exhaustion is terminal even when a minute limit is also full.
+      for(const w of windows.filter(w=>!w.seconds))await checkAdmissionQuota(db,windowPredicate(w),now,true);
+      predicates.push(...windows.map(windowPredicate));
       const budgets=[...(cap?[{sql:`EXISTS(SELECT 1 FROM telemetry_build_capabilities WHERE capability_id=? AND accepted_event_count+?<=? AND accepted_bytes+?<=?)`,values:[cap.capability_id,novel.length,limits.CAP_ACCEPTED_EVENTS,bytes,limits.CAP_ACCEPTED_BYTES]}]:[]),
         {sql:`COALESCE((SELECT accepted_event_count FROM telemetry_build_policies WHERE game_id=? AND build_id=?),0)+?<=? AND COALESCE((SELECT accepted_bytes FROM telemetry_build_policies WHERE game_id=? AND build_id=?),0)+?<=?`,values:[events[0].gameId,events[0].buildId,novel.length,limits.BUILD_ACCEPTED_EVENTS,events[0].gameId,events[0].buildId,bytes,limits.BUILD_ACCEPTED_BYTES]}];
       const minute=Math.floor(now/60),client=events[0].anonymousClientId;
-      budgets.push({sql:`COALESCE((SELECT event_count FROM telemetry_rate_limits WHERE anonymous_client_id=? AND window_minute=?),0)+?<=? AND CAST(unixepoch()/60 AS INTEGER)=?`,values:[client,minute,events.length,eventRateLimit(env.MAX_EVENTS_PER_CLIENT_MINUTE),minute]});
-      for(const p of budgets) await allowed(db,p,'capability_rate_limited',429);
+      for(const p of budgets)await checkAdmissionQuota(db,p,now,true);
+      for(const w of windows.filter(w=>w.seconds))await checkAdmissionQuota(db,windowPredicate(w),now);
+      const clientQuota={sql:`COALESCE((SELECT event_count FROM telemetry_rate_limits WHERE anonymous_client_id=? AND window_minute=?),0)+?<=? AND CAST(unixepoch()/60 AS INTEGER)=?`,values:[client,minute,events.length,eventRateLimit(env.MAX_EVENTS_PER_CLIENT_MINUTE),minute]};
+      await checkAdmissionQuota(db,clientQuota,now);
+      budgets.push(clientQuota);
       predicates.push(...budgets);
       const id=crypto.randomUUID();
       const statements=[...(grace?[db.prepare('INSERT INTO telemetry_build_policies(game_id,build_id,created_at) VALUES(?,?,unixepoch()) ON CONFLICT(game_id,build_id) DO NOTHING').bind(events[0].gameId,events[0].buildId)]:[]),db.prepare(`INSERT INTO telemetry_ingest_batches
@@ -180,7 +199,14 @@ async function admitRequest(request,env,{afterRead,httpSemantics=false}={},grace
       if(grace)matchLegacyBuild(input.events,request.headers.get('origin'),env,await databaseTime(db));
       requireFeature(env,'ingest');
       try { await db.batch(statements);return {ok:true,phase:PHASE,batchId:id,accepted:novel.length,duplicates:events.length-novel.length,acknowledgedEventIds:events.map(e=>e.eventId)}; }
-      catch(error) { if(!isAdmissionRace(error)) throw error;if(attempt===2) reject('ingest_conflict',409); }
+      catch(error) { if(!isAdmissionRace(error)) throw error;if(attempt===2) {
+        if(Math.floor((await databaseTime(db))/60)!==minute)reject('ingest_window_changed',503);
+        reject('ingest_conflict',409);
+      } }
+      } catch(error) {
+        if(error?.code!=='ingest_window_changed')throw error;
+        if(attempt===2)reject('ingest_window_unavailable',503);
+      }
     }
   } catch(error) { throw safeDatabaseError(error); }
 }

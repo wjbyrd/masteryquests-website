@@ -1,6 +1,18 @@
 # Portable telemetry production runbook — BLOCKED / DO NOT EXECUTE YET
 
-This is the subsequent rollout task's runbook. **Every production mutation below is DO NOT RUN IN THIS REHEARSAL.** Stage 5 recommends NO-GO until the minute-boundary 429 issue is fixed and revalidated, the production Turnstile widget/sitekey is ready, and the owner approves the pilot quota/tier and exact legacy sunset. No push is authorized by this document. Refresh resource versions and bookmarks at release time; the values here are rehearsal observations.
+This is the subsequent rollout task's runbook. **Every production mutation below is DO NOT RUN IN THIS REHEARSAL.** Production remains NO-GO until the engineering evidence in FINAL_REPORT_portable_telemetry_quota_boundary_fix.md is accepted, the production Turnstile widget/sitekey is ready, and the owner approves the pilot quota/tier and exact legacy sunset. No push is authorized by this document. Refresh resource versions and bookmarks at release time; the values here are rehearsal observations.
+
+## Corrected ingest retry contract
+
+`429 ingest_rate_limited` means a short-window limit, with Retry-After equal to the remaining database-clock seconds in the minute (1–60). The generated Composer client honors delta-seconds or HTTP-date Retry-After, uses a one-second minimum and a 60-second fallback for malformed/missing values, then adds 0–1 second jitter above the greater of the server delay and exponential backoff. It permits at most three retries after the initial request within five minutes. New gameplay events and manual flushes cannot bypass the delay. Late background wake beyond that horizon stops sending.
+
+Retry exhaustion cancels this page's queued remote work and pauses its transport; it does not persistently invalidate a healthy capability. The queue remains capped at 2,000 events. Original event IDs/sequences survive retries. Browser/faculty opt-out and expiry cancel pending transport. A revocation/authorization `403` and `403 ingest_budget_exhausted` remain terminal for the descriptor; they never trigger renewal or legacy fallback. Unknown 429 codes also fail closed. Network/503 recovery uses the same bounded Composer retry budget. Gameplay and local CSV remain available.
+
+The server reclassifies a stale minute snapshot within a maximum of three admission attempts, retaining every transactional freshness and quota guard. Repeated transitions return controlled 503 with no partial writes. Lifetime budgets take precedence over minute throttles and return terminal 403; increasing a minute limit cannot repair lifetime exhaustion.
+
+For unexplained 429s, do not force repeated Generate or flush operations. Record server time, Retry-After, submitted event count, relevant capability/build/global/client counters and limits, and whether a boundary was crossed. Keep token values, raw headers and learner data out of evidence. Investigate recurrent rejection below quota even if a bounded retry succeeds. The original Stage 3 incident remains historically unproven; the deterministic defect and its regression evidence are documented separately.
+
+The blocker-fix read-only check observed website version `e0cff283-c818-4524-9a35-489933a3b74a`, newer than the rehearsal's site baseline. This task did not deploy it. Reconcile its provenance and refresh the reviewed website rollback target at the release hold; do not assume the rehearsal version is still current.
 
 ## Release inputs and read-only preparation
 

@@ -1,0 +1,94 @@
+{
+  "passed": 22,
+  "total": 22,
+  "results": [
+    {
+      "name": "Canonical generated client crosses stale transaction boundary into SQLite once",
+      "status": "PASS"
+    },
+    {
+      "name": "Genuine SQLite minute 429 honors delay, retries same IDs, clears queue once",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After 0 has safe minimum, bounded jitter and no early flush",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After 1 has safe minimum, bounded jitter and no early flush",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After 59 has safe minimum, bounded jitter and no early flush",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After 60 has safe minimum, bounded jitter and no early flush",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After invalid has safe minimum, bounded jitter and no early flush",
+      "status": "PASS"
+    },
+    {
+      "name": "Retry-After date respected",
+      "status": "PASS"
+    },
+    {
+      "name": "Huge Retry-After exceeds horizon without early retry or permanent descriptor invalidation",
+      "status": "PASS"
+    },
+    {
+      "name": "Overflowing numeric Retry-After cannot become an early retry",
+      "status": "PASS"
+    },
+    {
+      "name": "Late background wake beyond five minutes cannot send",
+      "status": "PASS"
+    },
+    {
+      "name": "New events cannot replace cooldown with an immediate send; queue stays bounded",
+      "status": "PASS"
+    },
+    {
+      "name": "At most three retries then session pause, no busy loop or permanent descriptor mark",
+      "status": "PASS"
+    },
+    {
+      "name": "browser cancellation during wait prevents replay",
+      "status": "PASS"
+    },
+    {
+      "name": "faculty cancellation during wait prevents replay",
+      "status": "PASS"
+    },
+    {
+      "name": "expiry cancellation during wait prevents replay",
+      "status": "PASS"
+    },
+    {
+      "name": "ingest_not_authorized 403 is terminal with zero retry",
+      "status": "PASS"
+    },
+    {
+      "name": "ingest_budget_exhausted 403 is terminal with zero retry",
+      "status": "PASS"
+    },
+    {
+      "name": "Revocation rejection after delayed retry terminates descriptor",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown 429 is not silently made retryable",
+      "status": "PASS"
+    },
+    {
+      "name": "503 recovery is transient and same queued IDs are retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Opt-out while 429 response body is pending cannot schedule replay",
+      "status": "PASS"
+    }
+  ]
+}

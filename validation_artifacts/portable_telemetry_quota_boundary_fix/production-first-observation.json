@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-09-15T03:20:46.888Z",
+  "resources": [
+    {
+      "name": "masteryquests-anonymous-telemetry-poc",
+      "version": "afaa4ada-d6cf-48a5-bdde-13cc35f52f80",
+      "matchesRehearsal": true,
+      "vars": [
+        {
+          "name": "ALLOWED_ORIGINS",
+          "value": "https://masteryquests.org,https://www.masteryquests.org"
+        }
+      ],
+      "secretNames": [
+        "ADMIN_TOKEN",
+        "MAINTENANCE_TOKEN"
+      ]
+    },
+    {
+      "name": "masteryquests-website",
+      "version": "e0cff283-c818-4524-9a35-489933a3b74a",
+      "matchesRehearsal": false,
+      "vars": [],
+      "secretNames": [
+        "CLASSROOM_ACCESS_CODE",
+        "CLASSROOM_SESSION_SECRET"
+      ]
+    }
+  ],
+  "database": "16b248ff-20cb-429c-a4a1-dd50d17c1fd0",
+  "migrations": [
+    {
+      "name": "0001_initial.sql"
+    },
+    {
+      "name": "0002_completion_semantics.sql"
+    }
+  ],
+  "counts": {
+    "telemetry_runs": 53,
+    "telemetry_events": 3427,
+    "telemetry_ingest_batches": 1225,
+    "telemetry_rate_limits": 15
+  },
+  "matchesRehearsal": false,
+  "migration0003Applied": false,
+  "productionWrites": 0,
+  "productionDeployments": 0,
+  "turnstileModified": false
+}

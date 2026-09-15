@@ -8,6 +8,7 @@ const ERRORS={
   ingest_conflict:[409,'event_conflict'],manifest_required:[409,'manifest_required'],
   request_too_large:[413,'request_too_large'],unsupported_media_type:[415,'unsupported_media_type'],
   capability_rate_limited:[429,'ingest_rate_limited'],invalid_batch:[400,'invalid_batch'],
+  ingest_budget_exhausted:[403,'ingest_budget_exhausted'],
   invalid_json:[400,'invalid_json'],invalid_request:[400,'invalid_request'],credential_in_payload:[400,'invalid_batch']
 };
 // Transport syntax only. Capability admission remains the write authorization.
@@ -23,12 +24,12 @@ function allowedOrigin(request,env,portable=false) {
   if(portable)return serializedHttpsOrigin(origin);
   return origin && FIRST_PARTY.includes(origin) && String(env.ALLOWED_ORIGINS||'').split(',').map(x=>x.trim()).includes(origin)?origin:null;
 }
-function response(request,env,body,status,preflight=false) {
+function response(request,env,body,status,preflight=false,retryAfter=60) {
   const headers={'cache-control':'no-store','x-content-type-options':'nosniff','vary':preflight?'Origin, Access-Control-Request-Method, Access-Control-Request-Headers':'Origin'};
   if(body!==null)headers['content-type']='application/json; charset=utf-8';
   const origin=allowedOrigin(request,env,preflight||request.headers.has('x-mq-ingest-token'));
   if(origin){headers['access-control-allow-origin']=origin;headers['access-control-expose-headers']='Retry-After';if(preflight){headers['access-control-allow-methods']='POST,OPTIONS';headers['access-control-allow-headers']=HEADERS.join(',');}}
-  if(status===429)headers['retry-after']='60';
+  if(status===429)headers['retry-after']=String(retryAfter);
   return new Response(body===null?null:JSON.stringify(body),{status,headers});
 }
 export function capabilityPreflight(request,env) {
@@ -46,6 +47,6 @@ export async function dualModeIngest(request,env) {
   } catch(error) {
     // New credential-bearing paths never reach the legacy raw-error logger.
     const [status,code]=error instanceof CapabilityError ? ERRORS[error.code]||[503,'ingest_unavailable'] : [503,'ingest_unavailable'];
-    return response(request,env,{ok:false,phase:PHASE,error:code},status);
+    return response(request,env,{ok:false,phase:PHASE,error:code},status,false,error.retryAfter);
   }
 }

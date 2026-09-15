@@ -42,8 +42,9 @@ async function finish(h){
  h.snapshot=async()=>{const tables=['telemetry_events','telemetry_runs','telemetry_ingest_batches','telemetry_rate_limits','telemetry_build_policies','telemetry_build_capabilities','telemetry_scope_windows'];const rows=[];for(const t of tables)rows.push([t,(await h.db.prepare('SELECT * FROM '+t+' ORDER BY rowid').all()).results]);return JSON.stringify(rows);};
  return h;
 }
-export async function sqliteHarness(overrides={}){
+export async function sqliteHarness(overrides={},clock=null){
  const db=new DatabaseSync(':memory:');db.exec('PRAGMA foreign_keys=ON');const env=config(overrides),h={env,secrets:[env.ADMIN_TOKEN,env.MAINTENANCE_TOKEN],metrics:[],beforeBatch:null,throwPrepare:null};
+ if(clock)db.function('unixepoch',()=>Math.floor(clock.now/1000));
  class Statement{constructor(sql,metric){this.sql=sql;this.values=[];this.metric=metric;}bind(...v){if(v.length>100)throw Error('D1 binding ceiling exceeded');this.values=v;return this;}execute(){const stmt=db.prepare(this.sql);if(/^\s*(SELECT|PRAGMA)/i.test(this.sql))return {success:true,results:stmt.all(...this.values)};return {success:true,results:[],meta:{changes:Number(stmt.run(...this.values).changes)}};}async first(){return db.prepare(this.sql).get(...this.values)||null;}async all(){return this.execute();}async run(){return this.execute();}}
  h.db={prepare:s=>new Statement(s),async batch(ss){db.exec('BEGIN IMMEDIATE');try{const r=ss.map(s=>s.execute());db.exec('COMMIT');return r;}catch(error){db.exec('ROLLBACK');throw error;}}};
  h.call=async(url,options={})=>{const metric={statements:0,queries:0},start=performance.now();const instrumented={prepare(sql){metric.queries++;if(h.throwPrepare)throw Error(h.throwPrepare);return h.db.prepare(sql);},async batch(ss){metric.statements+=ss.length;if(h.beforeBatch)await h.beforeBatch();return h.db.batch(ss);}};const r=await worker.fetch(new Request('http://local.test'+url,options),{...env,TELEMETRY_DB:instrumented});metric.latencyMs=performance.now()-start;metric.status=r.status;h.metrics.push(metric);return r;};h.close=async()=>db.close();return finish(h);
