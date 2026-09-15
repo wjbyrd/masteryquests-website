@@ -6,7 +6,7 @@
   "createdAt": "2026-09-14T21:24:21.366Z",
   "syntheticOnly": true,
   "workerDeployed": true,
-  "status": "STAGE3_FINAL_ACCEPTED_STAGING_RETAINED",
+  "status": "CANONICAL_CONFIRMATION_PASSED_RESOURCES_RETAINED",
   "migrations": [
     {
       "file": "0001_initial.sql",
@@ -23,7 +23,7 @@
   ],
   "cleanupDecision": "Retain Worker, custom domain, D1 and secret per latest owner instruction not to delete staging; all known tails closed.",
   "workerOrigin": "https://masteryquests-telemetry-stage3-staging.wjbyrd.workers.dev",
-  "versionId": "64c9817a-f183-42fc-83f7-3b5ebd611017",
+  "versionId": "22c766ea-be10-481e-8e4a-8d5eadf5666d",
   "turnstileSecretAccessed": false,
   "realProviderProof": "CANONICAL_PASS",
   "productionTouched": false,
@@ -54,7 +54,8 @@
     "ad26b25f82e44d1cbbf6f6b7043f6f20",
     "1bdfd519c15e4f459d61797f5d0e10ca",
     "4c2678ef46634bccadba9b7f37b2b981",
-    "e0f9ec4366f64777b0e5daf006fdebd5"
+    "e0f9ec4366f64777b0e5daf006fdebd5",
+    "1e2f61e50cde4e8fb9fd659cc56c5b4d"
   ],
   "generatedGameProof": "MINIMAL_PASS",
   "allKnownTailsClosed": true,
