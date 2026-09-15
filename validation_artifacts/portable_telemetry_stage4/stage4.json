@@ -1,0 +1,551 @@
+{
+  "stage4": "COMPLETE",
+  "phase": "ACCEPTED_STAGING_RETAINED",
+  "repository": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website",
+  "branch": "main",
+  "startingHead": "3cbb3a383cc8c9ff839fffaf8b1f5b05a161b7c1",
+  "staging": {
+    "worker": "masteryquests-telemetry-stage3-staging",
+    "databaseId": "993f49a5-4dd4-41ee-9007-bbf4bb4856c9",
+    "origin": "https://stage3.masteryquests.org",
+    "beforeVersion": "22c766ea-be10-481e-8e4a-8d5eadf5666d",
+    "version": "4a63b1f3-aa40-4522-89c0-fb913ca7315c"
+  },
+  "externalOrigin": "https://wjbyrd.github.io",
+  "hostedArtifactModified": false,
+  "localCors": {
+    "sqlite": {
+      "passed": 24,
+      "failed": 0
+    },
+    "workerd": {
+      "passed": 24,
+      "failed": 0
+    }
+  },
+  "manualPreflight": 204,
+  "manualPost": 202,
+  "externalD1Proof": "PASS: exact transported run IDs, scope, receipts and manifest build revision",
+  "hostIndependence": "PASS: identical HTML bytes, same capability/build, independent HTTPS and first-party browser contexts",
+  "duplicate": {
+    "accepted": 0,
+    "duplicates": 3,
+    "runEventCountUnchanged": true,
+    "acceptedEventByteCountersUnchanged": true,
+    "retentionReceiptUnchanged": true
+  },
+  "optOut": {
+    "status": "PASS",
+    "existingOptOutUI": true,
+    "questionsAnswered": 2,
+    "remoteRequests": 0,
+    "persistsAfterReload": true,
+    "gameplay": true,
+    "csv": true,
+    "capabilityRemainsRevoked": true,
+    "artifactUnchanged": true
+  },
+  "revocation": "PASS: unchanged external artifact returns 403 and preserves gameplay/CSV",
+  "liveTail": {
+    "status": "CLOSED",
+    "origin": "https://wjbyrd.github.io",
+    "events": 21,
+    "statuses": [
+      {
+        "method": "OPTIONS",
+        "status": 204
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "POST",
+        "status": 202
+      },
+      {
+        "method": "POST",
+        "status": 403
+      }
+    ],
+    "redacted": 14,
+    "omitted": 7,
+    "unexpectedHeaderValues": 0,
+    "rawCapabilityMatches": 0,
+    "capabilityHashMatches": 0,
+    "consoleEntries": 0,
+    "exceptionEntries": 0,
+    "rawPayloadsPersisted": false
+  },
+  "unexpected429Observed": false,
+  "productionCalls": 0,
+  "productionDeployed": false,
+  "measurementSchemaChanged": false,
+  "retentionRecommendation": "Retain isolated staging for Stage 5; revoke specific test capability after proof and close tail.",
+  "regressions": [
+    {
+      "name": "capabilities",
+      "exitCode": 0,
+      "expected": 56,
+      "passed": 56,
+      "status": "PASS"
+    },
+    {
+      "name": "governance",
+      "exitCode": 0,
+      "expected": 14,
+      "passed": 14,
+      "status": "PASS"
+    },
+    {
+      "name": "readiness",
+      "exitCode": 0,
+      "expected": 27,
+      "passed": 27,
+      "status": "PASS"
+    },
+    {
+      "name": "scheduled",
+      "exitCode": 0,
+      "expected": 11,
+      "passed": 11,
+      "status": "PASS"
+    },
+    {
+      "name": "backend",
+      "exitCode": 0,
+      "expected": 18,
+      "passed": 18,
+      "status": "PASS"
+    },
+    {
+      "name": "regressions",
+      "exitCode": 0,
+      "expected": 21,
+      "passed": 21,
+      "status": "PASS"
+    },
+    {
+      "name": "contract",
+      "exitCode": 0,
+      "expected": 16,
+      "passed": 16,
+      "status": "PASS"
+    },
+    {
+      "name": "private-refresh",
+      "exitCode": 0,
+      "expected": 33,
+      "passed": 33,
+      "status": "PASS"
+    },
+    {
+      "name": "http-sqlite",
+      "exitCode": 0,
+      "expected": 39,
+      "passed": 39,
+      "status": "PASS"
+    },
+    {
+      "name": "header-sqlite",
+      "exitCode": 0,
+      "expected": 8,
+      "passed": 8,
+      "status": "PASS"
+    },
+    {
+      "name": "header-runtime",
+      "exitCode": 0,
+      "expected": 8,
+      "passed": 8,
+      "status": "PASS"
+    },
+    {
+      "name": "stage3-issuance",
+      "exitCode": 0,
+      "expected": 24,
+      "passed": 24,
+      "status": "PASS"
+    },
+    {
+      "name": "stage3-composer",
+      "exitCode": 0,
+      "expected": 11,
+      "passed": 11,
+      "status": "PASS"
+    },
+    {
+      "name": "stage3-browser",
+      "exitCode": 0,
+      "expected": 17,
+      "passed": 17,
+      "status": "PASS"
+    },
+    {
+      "name": "public-browser",
+      "exitCode": 0,
+      "expected": 103,
+      "passed": 103,
+      "status": "PASS"
+    },
+    {
+      "name": "canonical-verifier",
+      "exitCode": 0,
+      "expected": 19,
+      "passed": 19,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_faculty_outcome_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_content_scope_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_default_character_set_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_exam_navigation_boss_reveal_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_checkpoint_artifact_exam_integrity_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_guide_intro_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase1_targeted_repair_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase15_production_hardening_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_visibility_aware_telemetry_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_generated_telemetry_smoke.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase3a_official_theme_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase3b_custom_asset_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_phase3e_graph_question_sync_validation.mjs",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_question_quality_auditor_validation.mjs",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_macro_phase2_taxonomy_validation.mjs",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_checkpoint_remediation_design_change_validation.mjs",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_concept_review_integration.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_mastery_report_concept_reviews.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_mastery_report_2_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_mastery_report_state_leak_hotfix.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_mode_availability_fix.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_quiz_mode_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_unlimited_practice_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_trial_by_graph_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_fading_fortune_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_risk_reward_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "composer-run_risk_reward_state_validation.js",
+      "exitCode": 0,
+      "expected": 1,
+      "passed": 1,
+      "status": "PASS"
+    }
+  ],
+  "deployedChecks": [
+    {
+      "path": "/v1/events",
+      "method": "OPTIONS",
+      "status": 204,
+      "acao": "https://wjbyrd.github.io"
+    },
+    {
+      "path": "/v1/events",
+      "method": "OPTIONS",
+      "status": 403,
+      "acao": "https://wjbyrd.github.io"
+    },
+    {
+      "path": "/v1/events",
+      "method": "OPTIONS",
+      "status": 403,
+      "acao": null
+    },
+    {
+      "path": "/v1/events",
+      "method": "POST",
+      "status": 403,
+      "acao": "https://wjbyrd.github.io"
+    },
+    {
+      "path": "/v1/events",
+      "method": "POST",
+      "status": 403,
+      "acao": null
+    },
+    {
+      "path": "/v1/build-capabilities",
+      "method": "OPTIONS",
+      "status": 403,
+      "acao": null
+    },
+    {
+      "path": "/v1/admin/cleanup",
+      "method": "OPTIONS",
+      "status": 404,
+      "acao": null
+    }
+  ],
+  "diffCheck": "PASS",
+  "manualEvidence": "Owner ordinary-Edge screenshot plus live tail before automated follow-up: 5 OPTIONS 204 and 6 POST 202",
+  "cleanup": {
+    "specificCapabilityRevoked": true,
+    "additionalUnusedSameBuildCapabilityRevoked": 1,
+    "capabilities": {
+      "total": 5,
+      "active": 0
+    },
+    "artifactUnchanged": true,
+    "acceptedTelemetryPreserved": true,
+    "resourcesRetained": true,
+    "tailClosed": true,
+    "productionCalls": 0
+  },
+  "gameProof": {
+    "status": "PASS",
+    "results": [
+      {
+        "name": "Owner external run has exact D1 run/events/receipt and manifest attribution",
+        "status": "PASS"
+      },
+      {
+        "name": "Unchanged actual GitHub page sends authenticated 202 and supports gameplay/CSV",
+        "status": "PASS"
+      },
+      {
+        "name": "External opt-out UI stops future transport and preserves gameplay/CSV",
+        "status": "PASS"
+      },
+      {
+        "name": "Exact external batch duplicate does not inflate events/accepted bytes or extend run retention",
+        "status": "PASS"
+      },
+      {
+        "name": "Same unchanged build submits from first-party and independent HTTPS origins",
+        "status": "PASS"
+      },
+      {
+        "name": "Revoked capability returns 403 for unchanged GitHub artifact while gameplay/CSV survive",
+        "status": "PASS"
+      }
+    ],
+    "browser": "153.0.4234.32",
+    "artifactUnchanged": true,
+    "revoked": true,
+    "productionCalls": 0,
+    "challengeAttempts": 0,
+    "unexpected429": false
+  },
+  "stage5Recommendation": "GO for a separately authorized production-rollout rehearsal; production is not enabled or deployed."
+}

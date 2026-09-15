@@ -1,0 +1,31 @@
+{
+  "ownerScreenshot": {
+    "preflight": 204,
+    "post": 202
+  },
+  "runs": [
+    {
+      "runId": "9f246700-91d7-4cf5-9ddb-310cbdb35156",
+      "events": 38,
+      "receipts": 3,
+      "exactScope": true,
+      "manifestResolved": true
+    },
+    {
+      "runId": "2a32ec99-f445-4576-9926-738e0d36f451",
+      "events": 14,
+      "receipts": 7,
+      "exactScope": true,
+      "manifestResolved": true
+    },
+    {
+      "runId": "22e036cc-0b0e-4636-9579-a6eca946c3d7",
+      "events": 7,
+      "receipts": 2,
+      "exactScope": true,
+      "manifestResolved": true
+    }
+  ],
+  "context": "Owner-operated staging test; no learner cohort",
+  "attributionNote": "Rows observed after the pre-owner-gate baseline. Owner did not provide an individual run ID; this set may include follow-up fixture runs. Exact external fixture run attribution is recorded separately in host-independence.json."
+}

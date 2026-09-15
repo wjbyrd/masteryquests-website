@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Owner external run has exact D1 run/events/receipt and manifest attribution",
+    "status": "PASS"
+  },
+  {
+    "name": "Unchanged actual GitHub page sends authenticated 202 and supports gameplay/CSV",
+    "status": "PASS"
+  },
+  {
+    "name": "External opt-out UI stops future transport and preserves gameplay/CSV",
+    "status": "PASS"
+  },
+  {
+    "name": "Exact external batch duplicate does not inflate events/accepted bytes or extend run retention",
+    "status": "PASS"
+  },
+  {
+    "name": "Same unchanged build submits from first-party and independent HTTPS origins",
+    "status": "PASS"
+  },
+  {
+    "name": "Revoked capability returns 403 for unchanged GitHub artifact while gameplay/CSV survive",
+    "status": "PASS"
+  }
+]

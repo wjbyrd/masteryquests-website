@@ -1,0 +1,303 @@
+[
+  {
+    "name": "capabilities",
+    "exitCode": 0,
+    "expected": 56,
+    "passed": 56,
+    "status": "PASS"
+  },
+  {
+    "name": "governance",
+    "exitCode": 0,
+    "expected": 14,
+    "passed": 14,
+    "status": "PASS"
+  },
+  {
+    "name": "readiness",
+    "exitCode": 0,
+    "expected": 27,
+    "passed": 27,
+    "status": "PASS"
+  },
+  {
+    "name": "scheduled",
+    "exitCode": 0,
+    "expected": 11,
+    "passed": 11,
+    "status": "PASS"
+  },
+  {
+    "name": "backend",
+    "exitCode": 0,
+    "expected": 18,
+    "passed": 18,
+    "status": "PASS"
+  },
+  {
+    "name": "regressions",
+    "exitCode": 0,
+    "expected": 21,
+    "passed": 21,
+    "status": "PASS"
+  },
+  {
+    "name": "contract",
+    "exitCode": 0,
+    "expected": 16,
+    "passed": 16,
+    "status": "PASS"
+  },
+  {
+    "name": "private-refresh",
+    "exitCode": 0,
+    "expected": 33,
+    "passed": 33,
+    "status": "PASS"
+  },
+  {
+    "name": "http-sqlite",
+    "exitCode": 0,
+    "expected": 39,
+    "passed": 39,
+    "status": "PASS"
+  },
+  {
+    "name": "header-sqlite",
+    "exitCode": 0,
+    "expected": 8,
+    "passed": 8,
+    "status": "PASS"
+  },
+  {
+    "name": "header-runtime",
+    "exitCode": 0,
+    "expected": 8,
+    "passed": 8,
+    "status": "PASS"
+  },
+  {
+    "name": "stage3-issuance",
+    "exitCode": 0,
+    "expected": 24,
+    "passed": 24,
+    "status": "PASS"
+  },
+  {
+    "name": "stage3-composer",
+    "exitCode": 0,
+    "expected": 11,
+    "passed": 11,
+    "status": "PASS"
+  },
+  {
+    "name": "stage3-browser",
+    "exitCode": 0,
+    "expected": 17,
+    "passed": 17,
+    "status": "PASS"
+  },
+  {
+    "name": "public-browser",
+    "exitCode": 0,
+    "expected": 103,
+    "passed": 103,
+    "status": "PASS"
+  },
+  {
+    "name": "canonical-verifier",
+    "exitCode": 0,
+    "expected": 19,
+    "passed": 19,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_faculty_outcome_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_content_scope_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_default_character_set_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_exam_navigation_boss_reveal_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_checkpoint_artifact_exam_integrity_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_guide_intro_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_phase1_targeted_repair_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_phase15_production_hardening_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_visibility_aware_telemetry_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_generated_telemetry_smoke.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_phase3a_official_theme_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_phase3b_custom_asset_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_phase3e_graph_question_sync_validation.mjs",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_question_quality_auditor_validation.mjs",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_macro_phase2_taxonomy_validation.mjs",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_checkpoint_remediation_design_change_validation.mjs",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_concept_review_integration.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_mastery_report_concept_reviews.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_mastery_report_2_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_mastery_report_state_leak_hotfix.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_mode_availability_fix.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_quiz_mode_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_unlimited_practice_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_trial_by_graph_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_fading_fortune_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_risk_reward_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  },
+  {
+    "name": "composer-run_risk_reward_state_validation.js",
+    "exitCode": 0,
+    "expected": 1,
+    "passed": 1,
+    "status": "PASS"
+  }
+]

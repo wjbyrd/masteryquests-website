@@ -10,14 +10,23 @@ const ERRORS={
   capability_rate_limited:[429,'ingest_rate_limited'],invalid_batch:[400,'invalid_batch'],
   invalid_json:[400,'invalid_json'],invalid_request:[400,'invalid_request'],credential_in_payload:[400,'invalid_batch']
 };
-function allowedOrigin(request,env) {
+// Transport syntax only. Capability admission remains the write authorization.
+export function serializedHttpsOrigin(value) {
+  if(typeof value!=='string'||!value||/[\s,]/u.test(value))return null;
+  try {
+    const url=new URL(value);
+    return url.protocol==='https:'&&!url.username&&!url.password&&url.origin===value?value:null;
+  } catch { return null; }
+}
+function allowedOrigin(request,env,portable=false) {
   const origin=request.headers.get('origin');
+  if(portable)return serializedHttpsOrigin(origin);
   return origin && FIRST_PARTY.includes(origin) && String(env.ALLOWED_ORIGINS||'').split(',').map(x=>x.trim()).includes(origin)?origin:null;
 }
 function response(request,env,body,status,preflight=false) {
   const headers={'cache-control':'no-store','x-content-type-options':'nosniff','vary':preflight?'Origin, Access-Control-Request-Method, Access-Control-Request-Headers':'Origin'};
   if(body!==null)headers['content-type']='application/json; charset=utf-8';
-  const origin=allowedOrigin(request,env);
+  const origin=allowedOrigin(request,env,preflight||request.headers.has('x-mq-ingest-token'));
   if(origin){headers['access-control-allow-origin']=origin;headers['access-control-expose-headers']='Retry-After';if(preflight){headers['access-control-allow-methods']='POST,OPTIONS';headers['access-control-allow-headers']=HEADERS.join(',');}}
   if(status===429)headers['retry-after']='60';
   return new Response(body===null?null:JSON.stringify(body),{status,headers});
@@ -25,12 +34,12 @@ function response(request,env,body,status,preflight=false) {
 export function capabilityPreflight(request,env) {
   const method=request.headers.get('access-control-request-method');
   const requested=(request.headers.get('access-control-request-headers')||'').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean);
-  if(!allowedOrigin(request,env)||method!=='POST'||requested.some(x=>!HEADERS.includes(x)))return response(request,env,{ok:false,phase:PHASE,error:'ingest_not_authorized'},403,true);
+  if(!allowedOrigin(request,env,true)||method!=='POST'||requested.some(x=>!HEADERS.includes(x)))return response(request,env,{ok:false,phase:PHASE,error:'ingest_not_authorized'},403,true);
   return response(request,env,null,204,true);
 }
 export async function dualModeIngest(request,env) {
   try {
-    if(request.headers.has('origin')&&!allowedOrigin(request,env))return response(request,env,{ok:false,phase:PHASE,error:'ingest_not_authorized'},403);
+    if(request.headers.has('origin')&&!allowedOrigin(request,env,request.headers.has('x-mq-ingest-token')))return response(request,env,{ok:false,phase:PHASE,error:'ingest_not_authorized'},403);
     // Presence, including an empty or malformed value, selects capability ONLY. Never fall back.
     const admit=request.headers.has('x-mq-ingest-token')?admitCapabilityRequest:admitLegacyGraceRequest;
     return response(request,env,await admit(request,env,{httpSemantics:true}),202);

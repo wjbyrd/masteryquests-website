@@ -1,0 +1,51 @@
+{
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "path": "/v1/events",
+      "method": "OPTIONS",
+      "status": 204,
+      "acao": "https://wjbyrd.github.io"
+    },
+    {
+      "path": "/v1/events",
+      "method": "OPTIONS",
+      "status": 403,
+      "acao": "https://wjbyrd.github.io"
+    },
+    {
+      "path": "/v1/events",
+      "method": "OPTIONS",
+      "status": 403,
+      "acao": null
+    },
+    {
+      "path": "/v1/events",
+      "method": "POST",
+      "status": 403,
+      "acao": "https://wjbyrd.github.io"
+    },
+    {
+      "path": "/v1/events",
+      "method": "POST",
+      "status": 403,
+      "acao": null
+    },
+    {
+      "path": "/v1/build-capabilities",
+      "method": "OPTIONS",
+      "status": 403,
+      "acao": null
+    },
+    {
+      "path": "/v1/admin/cleanup",
+      "method": "OPTIONS",
+      "status": 404,
+      "acao": null
+    }
+  ],
+  "artifactUnchanged": true,
+  "capabilityActive": true,
+  "productionCalls": 0
+}

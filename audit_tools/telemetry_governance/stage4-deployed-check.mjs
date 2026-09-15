@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {readExternalArtifact,stagingOrigin} from './stage4-external-artifact.mjs';
+import {query,state,save} from './stage3-staging/control.mjs';
+const out='validation_artifacts/portable_telemetry_stage4',origin='https://wjbyrd.github.io',results=[];
+async function probe(path,method,expected,expectedCors,headers={},body){const r=await fetch(stagingOrigin+path,{method,redirect:'error',headers:{origin,...headers},...(body?{body}:{})});assert.equal(r.status,expected,path);assert.equal(r.headers.get('access-control-allow-origin'),expectedCors,path);assert.equal(r.headers.get('access-control-allow-credentials'),null);if(expectedCors)assert.match(r.headers.get('vary'),/Origin/);results.push({path,method,status:r.status,acao:r.headers.get('access-control-allow-origin')});}
+await probe('/v1/events','OPTIONS',204,origin,{'access-control-request-method':'POST','access-control-request-headers':'content-type,x-telemetry-phase,x-mq-ingest-token'});
+await probe('/v1/events','OPTIONS',403,origin,{'access-control-request-method':'DELETE'});
+await probe('/v1/events','OPTIONS',403,null,{origin:'null','access-control-request-method':'POST'});
+await probe('/v1/events','POST',403,origin,{'content-type':'application/json','x-mq-ingest-token':'invalid'},'{}');
+await probe('/v1/events','POST',403,null,{'content-type':'application/json'},'{}');
+await probe('/v1/build-capabilities','OPTIONS',403,null,{'access-control-request-method':'POST','access-control-request-headers':'content-type'});
+await probe('/v1/admin/cleanup','OPTIONS',404,null,{'access-control-request-method':'POST'});
+const a=await readExternalArtifact(),baseline=JSON.parse(fs.readFileSync(out+'/external-baseline.json'));
+assert.equal(a.artifactSha256,baseline.artifactSha256);
+const cap=(await query('SELECT revoked_at,expires_at,capability_hash FROM telemetry_build_capabilities WHERE capability_id=?',[a.descriptor.capabilityId]))[0].results[0];
+assert(cap&&cap.revoked_at===null&&cap.expires_at>Date.now()/1000&&cap.capability_hash===a.capabilityHash);
+fs.writeFileSync(out+'/deployed-check.json',JSON.stringify({passed:results.length,failed:0,results,artifactUnchanged:true,capabilityActive:true,productionCalls:0},null,2));
+const report=JSON.parse(fs.readFileSync(out+'/stage4.json'));report.phase='AWAITING_MANUAL_EXTERNAL_PROOF';report.staging.version='4a63b1f3-aa40-4522-89c0-fb913ca7315c';report.regressions=JSON.parse(fs.readFileSync(out+'/regressions/summary.json'));report.deployedChecks=results;fs.writeFileSync(out+'/stage4.json',JSON.stringify(report,null,2));save({...state(),versionId:report.staging.version,status:'STAGE4_AWAITING_MANUAL_EXTERNAL_PROOF'});
+console.log('Deployed staging checks: 7/7 PASS; external artifact unchanged and capability active.');

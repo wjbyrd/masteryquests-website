@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+const base='audit_tools/telemetry_governance/stage3-staging';
+const config=JSON.parse(fs.readFileSync(base+'/wrangler.staging.json'));
+assert.equal(config.name,'masteryquests-telemetry-stage3-staging');
+assert.equal(config.d1_databases[0].database_id,'993f49a5-4dd4-41ee-9007-bbf4bb4856c9');
+assert.equal(config.routes[0].pattern,'stage3.masteryquests.org');
+for(const [key,value]of Object.entries({CAPABILITY_INGEST_ENABLED:'true',CAPABILITY_ISSUANCE_ENABLED:'true',CAPABILITY_LEGACY_GRACE_ENABLED:'false'}))assert.equal(config.vars[key],value);
+const work=base+'/.wrangler/manual-host',server=work+'/clone/server/anonymous-telemetry-poc';
+const hash=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+function inventory(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(x=>x.isDirectory()?inventory(path.join(dir,x.name)):[path.join(dir,x.name)]);}
+const target=path.join(server,'dual-mode-ingest.mjs');
+const before=new Map(inventory(work).filter(p=>p!==target).map(p=>[p,hash(p)]));
+const canonical=fs.readFileSync('server/anonymous-telemetry-poc/dual-mode-ingest.mjs','utf8');
+const firstParty="['https://masteryquests.org','https://www.masteryquests.org']";
+assert.equal(canonical.split(firstParty).length,2);
+fs.writeFileSync(target,canonical.replace(firstParty,"['https://stage3.masteryquests.org']"));
+for(const [p,digest]of before)assert.equal(hash(p),digest,p);
+assert.equal(hash(server+'/turnstile-verifier.mjs'),hash('server/anonymous-telemetry-poc/turnstile-verifier.mjs'));
+fs.writeFileSync('validation_artifacts/portable_telemetry_stage4/staging-preparation.json',JSON.stringify({changedStagedModules:['dual-mode-ingest.mjs'],otherStagedFilesUnchanged:before.size,canonicalVerifierUnpatched:true,composerAssetsUnchanged:true,configUnchanged:true},null,2));
+console.log('Prepared only staged dual-mode-ingest.mjs; all other bundle and Composer asset files preserved.');

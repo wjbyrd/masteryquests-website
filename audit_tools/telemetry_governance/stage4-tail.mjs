@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import {readExternalArtifact,externalURL} from './stage4-external-artifact.mjs';
+import {api,name,state,save} from './stage3-staging/control.mjs';
+const out='validation_artifacts/portable_telemetry_stage4',artifact=await readExternalArtifact();
+const report={status:'LISTENING',origin:new URL(externalURL).origin,events:0,statuses:[],redacted:0,omitted:0,unexpectedHeaderValues:0,rawCapabilityMatches:0,capabilityHashMatches:0,consoleEntries:0,exceptionEntries:0,rawPayloadsPersisted:false};
+const persist=()=>fs.writeFileSync(out+'/live-tail.json',JSON.stringify(report,null,2)+'\n');
+const t=await api('/workers/scripts/'+name+'/tails','POST',{});
+save({...state(),extraTailIds:[...(state().extraTailIds||[]),t.id],allKnownTailsClosed:false});
+fs.writeFileSync(out+'/tail-control.json',JSON.stringify({tailId:t.id,closed:false}));
+const ws=new WebSocket(t.url,'trace-v1');ws.binaryType='arraybuffer';
+ws.addEventListener('message',e=>{try{const text=typeof e.data==='string'?e.data:new TextDecoder().decode(e.data),v=JSON.parse(text),request=v.event?.request;if(!request||new URL(request.url).pathname!=='/v1/events')return;const headers=request.headers||{},originKey=Object.keys(headers).find(k=>k.toLowerCase()==='origin');if(headers[originKey]!==report.origin)return;report.events++;report.rawCapabilityMatches+=Number(text.includes(artifact.descriptor.capability));report.capabilityHashMatches+=Number(text.includes(artifact.capabilityHash));report.consoleEntries+=(v.logs||[]).length;report.exceptionEntries+=(v.exceptions||[]).length;const key=Object.keys(headers).find(k=>k.toLowerCase()==='x-mq-ingest-token');if(!key)report.omitted++;else if(/redact|mask/i.test(String(headers[key])))report.redacted++;else report.unexpectedHeaderValues++;report.statuses.push({method:request.method,status:v.event?.response?.status??null});persist();console.log(JSON.stringify({events:report.events,status:report.statuses.at(-1)}));}catch{}});
+await new Promise((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('Tail connection deadline')),15000);ws.addEventListener('open',()=>{clearTimeout(timer);ws.send(JSON.stringify({debug:false}));resolve();},{once:true});});persist();console.log('STAGE4_EXTERNAL_TAIL_READY');
+await new Promise(resolve=>{const interval=setInterval(()=>{if(fs.existsSync(out+'/close-tail')){clearInterval(interval);clearTimeout(timer);resolve();}},1000);const timer=setTimeout(()=>{clearInterval(interval);resolve();},3600000);});
+ws.close();await api('/workers/scripts/'+name+'/tails/'+t.id,'DELETE');report.status='CLOSED';persist();fs.writeFileSync(out+'/tail-control.json',JSON.stringify({tailId:t.id,closed:true}));save({...state(),allKnownTailsClosed:true});
