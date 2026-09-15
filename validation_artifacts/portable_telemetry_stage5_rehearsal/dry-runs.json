@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "wrangler": "4.72.0",
+  "evidenceBasis": "Observed successful exit code 0 from each local Wrangler dry run during rehearsal",
+  "productionDeployment": false,
+  "configs": [
+    "server/anonymous-telemetry-poc/wrangler.jsonc",
+    "wrangler.jsonc",
+    ".wrangler/stage5-release/pause.json"
+  ]
+}

@@ -1,0 +1,1458 @@
+{
+  "schema": "mq-stage5-rehearsal/1",
+  "generatedAt": "2026-09-15T02:58:45.178Z",
+  "rehearsal": "COMPLETE",
+  "productionDecision": "NO-GO",
+  "blockers": [
+    "Reproduced below-quota minute-boundary 429; client currently treats 429 as terminal. Fix and regress before production activation.",
+    "Dedicated production Turnstile widget, public sitekey and secure secret installation remain owner provisioning steps.",
+    "Owner must approve exact rollout/sunset, verify account tier and accept bounded pilot quotas."
+  ],
+  "repository": {
+    "branch": "main",
+    "head": "52379af7fed54ebc09b27a4f352df2eea0479a9f",
+    "initialWorkingTree": "clean",
+    "originMain": "52379af7fed54ebc09b27a4f352df2eea0479a9f",
+    "aheadOfOrigin": false,
+    "pushPerformed": false
+  },
+  "production": {
+    "baseline": {
+      "readOnly": true,
+      "productionWrites": 0,
+      "database": {
+        "uuid": "16b248ff-20cb-429c-a4a1-dd50d17c1fd0",
+        "name": "managerial-telemetry-poc",
+        "fileSize": 4653056,
+        "version": "production",
+        "createdAt": "2026-09-05T10:58:00.751Z"
+      },
+      "workers": {
+        "masteryquests-anonymous-telemetry-poc": {
+          "bindings": [
+            {
+              "name": "ADMIN_TOKEN",
+              "type": "secret_text"
+            },
+            {
+              "name": "ALLOWED_ORIGINS",
+              "type": "plain_text",
+              "value": "https://masteryquests.org,https://www.masteryquests.org"
+            },
+            {
+              "name": "MAINTENANCE_TOKEN",
+              "type": "secret_text"
+            },
+            {
+              "name": "MAX_EVENTS_PER_CLIENT_MINUTE",
+              "type": "plain_text",
+              "value": "300"
+            },
+            {
+              "name": "TELEMETRY_DB",
+              "type": "d1",
+              "id": "16b248ff-20cb-429c-a4a1-dd50d17c1fd0"
+            },
+            {
+              "name": "TELEMETRY_GOVERNANCE_POLICY",
+              "type": "plain_text",
+              "value": "mq-governance/2"
+            },
+            {
+              "name": "TELEMETRY_RETENTION_DAYS",
+              "type": "plain_text",
+              "value": "730"
+            },
+            {
+              "name": "TELEMETRY_RETENTION_MODE",
+              "type": "plain_text",
+              "value": "automatic"
+            }
+          ],
+          "observability": {
+            "enabled": false,
+            "head_sampling_rate": 1,
+            "redact_query_string": false,
+            "logs": {
+              "enabled": true,
+              "head_sampling_rate": 1,
+              "persist": true,
+              "invocation_logs": true
+            },
+            "traces": {
+              "enabled": false,
+              "persist": true,
+              "head_sampling_rate": 1
+            }
+          },
+          "compatibilityDate": "2026-08-07",
+          "deployments": {
+            "deployments": [
+              {
+                "id": "8b68e124-b4b6-46d8-bffe-b61a0793e6b0",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "afaa4ada-d6cf-48a5-bdde-13cc35f52f80",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-13T16:10:31.745056Z"
+              },
+              {
+                "id": "9a08ee62-9e7a-4669-8581-9fa3951db147",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "secret"
+                },
+                "versions": [
+                  {
+                    "version_id": "8e6e6e3f-5d08-4fe5-b050-a37980147cc7",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-12T22:12:42.490207Z"
+              },
+              {
+                "id": "b2276d02-ce44-4ff1-90d9-3152f5f1add4",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "7c1fd1f8-21b1-4b38-a297-ecdfb49a62ed",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-12T21:56:09.752524Z"
+              },
+              {
+                "id": "6e4982e9-560e-4cff-8a08-b5b2d50cd09c",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "secret"
+                },
+                "versions": [
+                  {
+                    "version_id": "70f38482-f260-4037-b62d-f565bd1ce38f",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-12T21:54:42.914908Z"
+              },
+              {
+                "id": "c718f820-85ef-4e62-a45e-30a35f2aae46",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "5e53b39a-aabe-4c56-84d2-a91638fc36fd",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-10T17:32:49.670869Z"
+              },
+              {
+                "id": "64172f8d-0b69-462c-ad34-6a3774c80ae4",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "a46e2d71-9554-4a3c-93c4-b3f46ff38f6f",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-06T14:03:02.085323Z"
+              },
+              {
+                "id": "f066eb6a-75e0-4371-97ae-5efb8ea98e9b",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "24135d1a-c681-4c95-8d96-3c5aed1e16f1",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-05T13:40:21.698648Z"
+              },
+              {
+                "id": "aea2efdd-6cb4-49cd-bf18-1bb59470e931",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "89e289ba-8f53-40d0-9bde-3ea432d6e27a",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-05T11:06:49.327833Z"
+              },
+              {
+                "id": "b6b0e794-f315-4dbb-baa0-29a2992a3812",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "19461d51-8616-4875-9018-d1406789a9bb",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-05T11:04:25.597256Z"
+              },
+              {
+                "id": "4ad11ccc-fd16-4261-93fd-9e7f4656ba66",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "secret"
+                },
+                "versions": [
+                  {
+                    "version_id": "c69928d4-7a6a-45a0-9040-f16815eb4e57",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-05T11:03:48.075558Z"
+              }
+            ]
+          },
+          "schedules": {
+            "schedules": [
+              {
+                "cron": "17 4 * * *",
+                "created_on": "2026-09-12T21:56:11.584382Z",
+                "modified_on": "2026-09-13T16:10:34.985811Z"
+              }
+            ]
+          }
+        },
+        "masteryquests-website": {
+          "bindings": [
+            {
+              "name": "ASSETS",
+              "type": "assets"
+            },
+            {
+              "name": "CLASSROOM_ACCESS_CODE",
+              "type": "secret_text"
+            },
+            {
+              "name": "CLASSROOM_LOGIN_LIMIT",
+              "type": "ratelimit"
+            },
+            {
+              "name": "CLASSROOM_SESSION_SECRET",
+              "type": "secret_text"
+            }
+          ],
+          "compatibilityDate": "2026-08-07",
+          "deployments": {
+            "deployments": [
+              {
+                "id": "c82bb900-153d-4b9a-a4c1-798ba42c22b0",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "edebb0d2-6ecd-4b82-860d-233ed6b4e37d",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-15T02:05:00.013598Z"
+              },
+              {
+                "id": "c98161e6-a222-453f-ba62-a5880740f33a",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "8681fb11-550a-47dd-bb3e-f6070ab17ca5",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-15T00:58:28.159431Z"
+              },
+              {
+                "id": "6102f5bf-935e-491e-9093-6644dd58e457",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "18a46244-ca54-472d-b40e-f82f07220d79",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-15T00:44:32.665407Z"
+              },
+              {
+                "id": "fffc482e-a08b-40bd-9e3d-8f8e1329ea13",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "735d340b-5f9d-4d1a-b8f8-020ba40f168b",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-14T23:51:27.836116Z"
+              },
+              {
+                "id": "99e2e552-95a0-4356-8594-5b3b2443f176",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "82a3debd-1d1d-4b9d-bbd0-3c69f7d8e368",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-14T21:07:46.095234Z"
+              },
+              {
+                "id": "8214fdce-60a1-4c24-b5ae-81022084688a",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "763e2f2f-0a22-4d3f-a68d-68ee91d26dc1",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-14T20:25:55.39562Z"
+              },
+              {
+                "id": "192d6a75-c405-46cc-a710-8b8f95b2ef62",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "d466831b-678e-4b8f-8058-0e72f336dc9b",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-14T16:13:47.907503Z"
+              },
+              {
+                "id": "a95bb1e9-c010-46b3-95e2-33f872554339",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "7cfc307c-aa6a-492f-a984-86e6f41b5d9d",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-14T16:05:09.724646Z"
+              },
+              {
+                "id": "43ae082b-a871-4eb2-bf53-2f8dfd497ea4",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "01878f54-2ed1-469e-897d-17227ce70c03",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-14T00:07:26.78566Z"
+              },
+              {
+                "id": "9be5a2e6-1373-40a9-a97f-d0efb6fc510c",
+                "source": "wrangler",
+                "strategy": "percentage",
+                "author_email": "wjbyrd@troy.edu",
+                "annotations": {
+                  "workers/triggered_by": "deployment"
+                },
+                "versions": [
+                  {
+                    "version_id": "963dd333-27bd-4c3f-8904-ac7f9c3d7f03",
+                    "percentage": 100
+                  }
+                ],
+                "created_on": "2026-09-14T00:05:04.484046Z"
+              }
+            ]
+          },
+          "schedules": {
+            "schedules": []
+          }
+        }
+      },
+      "tables": [
+        {
+          "name": "_cf_KV",
+          "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+        },
+        {
+          "name": "d1_migrations",
+          "sql": "CREATE TABLE \"d1_migrations\"(\n\t\tid         INTEGER PRIMARY KEY AUTOINCREMENT,\n\t\tname       TEXT UNIQUE,\n\t\tapplied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)"
+        },
+        {
+          "name": "sqlite_sequence",
+          "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+        },
+        {
+          "name": "telemetry_events",
+          "sql": "CREATE TABLE telemetry_events (\n  event_id TEXT PRIMARY KEY,\n  run_id TEXT NOT NULL,\n  anonymous_client_id TEXT NOT NULL,\n  build_id TEXT NOT NULL,\n  build_version TEXT NOT NULL,\n  schema_version INTEGER NOT NULL,\n  phase TEXT NOT NULL,\n  game_id TEXT NOT NULL,\n  mode TEXT NOT NULL,\n  event_type TEXT NOT NULL,\n  sequence_number INTEGER NOT NULL,\n  event_timestamp TEXT NOT NULL,\n  received_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  elapsed_time_ms REAL NOT NULL DEFAULT 0,\n  position INTEGER NOT NULL DEFAULT 0,\n  question_id TEXT NOT NULL DEFAULT '',\n  concept_id TEXT NOT NULL DEFAULT '',\n  learning_objective TEXT NOT NULL DEFAULT '',\n  question_type TEXT NOT NULL DEFAULT '',\n  difficulty TEXT NOT NULL DEFAULT '',\n  selected_response INTEGER,\n  correct INTEGER,\n  response_time_ms REAL NOT NULL DEFAULT 0,\n  rapid_guess INTEGER NOT NULL DEFAULT 0,\n  remediation_stage TEXT NOT NULL DEFAULT '',\n  bridge_stage TEXT NOT NULL DEFAULT '',\n  retest_stage TEXT NOT NULL DEFAULT '',\n  boss_stage TEXT NOT NULL DEFAULT '',\n  graph_question INTEGER NOT NULL DEFAULT 0,\n  score REAL NOT NULL DEFAULT 0,\n  streak INTEGER NOT NULL DEFAULT 0,\n  daily_progress REAL NOT NULL DEFAULT 0,\n  artifact TEXT NOT NULL DEFAULT '',\n  completion_status TEXT NOT NULL DEFAULT '',\n  mastery_attempts INTEGER NOT NULL DEFAULT 0,\n  mastery_correct INTEGER NOT NULL DEFAULT 0,\n  mastery_accuracy REAL NOT NULL DEFAULT 0,\n  synthetic INTEGER NOT NULL DEFAULT 0,\n  extras_json TEXT NOT NULL DEFAULT '{}',\n  UNIQUE(run_id, sequence_number)\n)"
+        },
+        {
+          "name": "telemetry_ingest_batches",
+          "sql": "CREATE TABLE telemetry_ingest_batches (\n  batch_id TEXT PRIMARY KEY,\n  received_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  anonymous_client_id TEXT NOT NULL,\n  event_count INTEGER NOT NULL,\n  inserted_count INTEGER NOT NULL,\n  duplicate_count INTEGER NOT NULL,\n  synthetic INTEGER NOT NULL DEFAULT 0\n)"
+        },
+        {
+          "name": "telemetry_rate_limits",
+          "sql": "CREATE TABLE telemetry_rate_limits (\n  anonymous_client_id TEXT NOT NULL,\n  window_minute INTEGER NOT NULL,\n  event_count INTEGER NOT NULL,\n  PRIMARY KEY(anonymous_client_id, window_minute)\n)"
+        },
+        {
+          "name": "telemetry_runs",
+          "sql": "CREATE TABLE telemetry_runs (\n  run_id TEXT PRIMARY KEY,\n  anonymous_client_id TEXT NOT NULL,\n  build_id TEXT NOT NULL,\n  build_version TEXT NOT NULL,\n  game_id TEXT NOT NULL,\n  mode TEXT NOT NULL,\n  first_event_at TEXT NOT NULL,\n  last_event_at TEXT NOT NULL,\n  first_received_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  last_received_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  event_count INTEGER NOT NULL DEFAULT 0,\n  max_sequence INTEGER NOT NULL DEFAULT 0,\n  completed INTEGER NOT NULL DEFAULT 0,\n  completion_status TEXT NOT NULL DEFAULT '',\n  synthetic INTEGER NOT NULL DEFAULT 0\n)"
+        }
+      ],
+      "migrations": [
+        {
+          "id": 1,
+          "name": "0001_initial.sql",
+          "applied_at": "2026-09-05 11:01:39"
+        },
+        {
+          "id": 2,
+          "name": "0002_completion_semantics.sql",
+          "applied_at": "2026-09-05 13:41:14"
+        }
+      ],
+      "counts": {
+        "telemetry_runs": 53,
+        "telemetry_events": 3427,
+        "telemetry_ingest_batches": 1225,
+        "telemetry_rate_limits": 15
+      },
+      "receipts": [
+        {
+          "earliest": "2026-09-05 11:17:54",
+          "latest": "2026-09-14 20:51:58"
+        }
+      ],
+      "syntheticCounts": [
+        {
+          "synthetic": 0,
+          "total": 2204
+        },
+        {
+          "synthetic": 1,
+          "total": 1223
+        }
+      ],
+      "dailyVolumes": [
+        {
+          "day": "2026-09-14",
+          "events": 32
+        },
+        {
+          "day": "2026-09-10",
+          "events": 332
+        },
+        {
+          "day": "2026-09-08",
+          "events": 261
+        },
+        {
+          "day": "2026-09-06",
+          "events": 1039
+        },
+        {
+          "day": "2026-09-05",
+          "events": 1763
+        }
+      ],
+      "sizeEstimate": [
+        {
+          "events": 3427,
+          "averageExtrasCharacters": 373.72133060986283
+        }
+      ]
+    },
+    "finalReadOnly": {
+      "versions": {
+        "masteryquests-anonymous-telemetry-poc": "afaa4ada-d6cf-48a5-bdde-13cc35f52f80",
+        "masteryquests-website": "edebb0d2-6ecd-4b82-860d-233ed6b4e37d"
+      },
+      "counts": {
+        "telemetry_runs": 53,
+        "telemetry_events": 3427,
+        "telemetry_ingest_batches": 1225,
+        "telemetry_rate_limits": 15
+      },
+      "migrations": [
+        {
+          "name": "0001_initial.sql"
+        },
+        {
+          "name": "0002_completion_semantics.sql"
+        }
+      ],
+      "productionVersionsUnchanged": true,
+      "aggregateCountsUnchanged": true,
+      "migration0003Applied": false,
+      "productionWrites": 0
+    },
+    "source": {
+      "sha256": "5aabebc4968360f60bc082bc81149bee87d33c16529d32f79c1aa7927b12f169",
+      "bytes": 70502,
+      "contentType": "multipart/form-data; boundary=7b6da2cca92764264bb985c6de867fd23d343f9f1a2cfc7dbc374c2c38e1",
+      "capabilityRoutePresent": false,
+      "capabilityHeaderPresent": false
+    },
+    "publicComposer": {
+      "activationModule": true,
+      "ingestModule": true,
+      "publicSitekeyPresent": false,
+      "sha256": "4244808efe26885ecd2bcc210100a1f8c3a27ebe6104f1598ec58b9ad43630c8"
+    },
+    "writes": 0,
+    "deployed": false,
+    "secretValuesRead": false
+  },
+  "regressions": {
+    "suiteRunnerEntries": 45,
+    "status": "PASS",
+    "results": [
+      {
+        "name": "stage4-cors",
+        "exitCode": 0,
+        "expected": 24,
+        "passed": 24,
+        "status": "PASS"
+      },
+      {
+        "name": "stage4-cors-runtime",
+        "exitCode": 0,
+        "expected": 24,
+        "passed": 24,
+        "status": "PASS"
+      },
+      {
+        "name": "capabilities",
+        "exitCode": 0,
+        "expected": 56,
+        "passed": 56,
+        "status": "PASS"
+      },
+      {
+        "name": "governance",
+        "exitCode": 0,
+        "expected": 14,
+        "passed": 14,
+        "status": "PASS"
+      },
+      {
+        "name": "readiness",
+        "exitCode": 0,
+        "expected": 27,
+        "passed": 27,
+        "status": "PASS"
+      },
+      {
+        "name": "scheduled",
+        "exitCode": 0,
+        "expected": 11,
+        "passed": 11,
+        "status": "PASS"
+      },
+      {
+        "name": "backend",
+        "exitCode": 0,
+        "expected": 18,
+        "passed": 18,
+        "status": "PASS"
+      },
+      {
+        "name": "regressions",
+        "exitCode": 0,
+        "expected": 21,
+        "passed": 21,
+        "status": "PASS"
+      },
+      {
+        "name": "contract",
+        "exitCode": 0,
+        "expected": 16,
+        "passed": 16,
+        "status": "PASS"
+      },
+      {
+        "name": "private-refresh",
+        "exitCode": 0,
+        "expected": 33,
+        "passed": 33,
+        "status": "PASS"
+      },
+      {
+        "name": "http-sqlite",
+        "exitCode": 0,
+        "expected": 39,
+        "passed": 39,
+        "status": "PASS"
+      },
+      {
+        "name": "header-sqlite",
+        "exitCode": 0,
+        "expected": 8,
+        "passed": 8,
+        "status": "PASS"
+      },
+      {
+        "name": "header-runtime",
+        "exitCode": 0,
+        "expected": 8,
+        "passed": 8,
+        "status": "PASS"
+      },
+      {
+        "name": "stage3-issuance",
+        "exitCode": 0,
+        "expected": 24,
+        "passed": 24,
+        "status": "PASS"
+      },
+      {
+        "name": "stage3-composer",
+        "exitCode": 0,
+        "expected": 11,
+        "passed": 11,
+        "status": "PASS"
+      },
+      {
+        "name": "stage3-browser",
+        "exitCode": 0,
+        "expected": 17,
+        "passed": 17,
+        "status": "PASS"
+      },
+      {
+        "name": "public-browser",
+        "exitCode": 0,
+        "expected": 103,
+        "passed": 103,
+        "status": "PASS"
+      },
+      {
+        "name": "canonical-verifier",
+        "exitCode": 0,
+        "expected": 19,
+        "passed": 19,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_faculty_outcome_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_content_scope_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_default_character_set_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_exam_navigation_boss_reveal_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_checkpoint_artifact_exam_integrity_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_guide_intro_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase1_targeted_repair_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase15_production_hardening_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_visibility_aware_telemetry_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_generated_telemetry_smoke.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase3a_official_theme_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase3b_custom_asset_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_phase3e_graph_question_sync_validation.mjs",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_question_quality_auditor_validation.mjs",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_macro_phase2_taxonomy_validation.mjs",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_checkpoint_remediation_design_change_validation.mjs",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_concept_review_integration.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_mastery_report_concept_reviews.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_mastery_report_2_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_mastery_report_state_leak_hotfix.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_mode_availability_fix.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_quiz_mode_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_unlimited_practice_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_trial_by_graph_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_fading_fortune_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_risk_reward_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      },
+      {
+        "name": "composer-run_risk_reward_state_validation.js",
+        "exitCode": 0,
+        "expected": 1,
+        "passed": 1,
+        "status": "PASS"
+      }
+    ]
+  },
+  "migration": {
+    "status": "PASS",
+    "migrationSha256": "d67432d1c9ed8c85f5a407cf7e606ff05cc00d63effe2ce909797fa6efb61951",
+    "statementCount": 10,
+    "results": [
+      {
+        "name": "empty",
+        "rows": 0,
+        "malformedExtras": false,
+        "migrationMs": 2.730700000000013,
+        "oldBytes": 77824,
+        "newBytes": 135168,
+        "rowsPreserved": true,
+        "oldBatchCompatible": true,
+        "integrity": "ok"
+      },
+      {
+        "name": "representative",
+        "rows": 3427,
+        "malformedExtras": false,
+        "migrationMs": 6.997200000000021,
+        "oldBytes": 3186688,
+        "newBytes": 3268608,
+        "rowsPreserved": true,
+        "oldBatchCompatible": true,
+        "integrity": "ok"
+      },
+      {
+        "name": "malformed-extras",
+        "rows": 100,
+        "malformedExtras": true,
+        "migrationMs": 2.4156000000000404,
+        "oldBytes": 126976,
+        "newBytes": 184320,
+        "rowsPreserved": true,
+        "oldBatchCompatible": true,
+        "integrity": "ok"
+      },
+      {
+        "name": "old-batches",
+        "rows": 100,
+        "malformedExtras": false,
+        "migrationMs": 2.0995000000000346,
+        "oldBytes": 139264,
+        "newBytes": 196608,
+        "rowsPreserved": true,
+        "oldBatchCompatible": true,
+        "integrity": "ok"
+      },
+      {
+        "name": "synthetic-scale",
+        "rows": 100000,
+        "malformedExtras": true,
+        "migrationMs": 38.82729999999992,
+        "oldBytes": 74833920,
+        "newBytes": 75583488,
+        "rowsPreserved": true,
+        "oldBatchCompatible": true,
+        "integrity": "ok"
+      }
+    ],
+    "compatibility": [
+      {
+        "worker": "deployed",
+        "migrationApplied": false,
+        "schemas": [
+          1,
+          2,
+          3
+        ],
+        "passed": true
+      },
+      {
+        "worker": "proposed-flags-off",
+        "migrationApplied": false,
+        "schemas": [
+          1,
+          2,
+          3
+        ],
+        "passed": true
+      },
+      {
+        "worker": "deployed",
+        "migrationApplied": true,
+        "schemas": [
+          1,
+          2,
+          3
+        ],
+        "passed": true
+      },
+      {
+        "worker": "proposed-flags-off",
+        "migrationApplied": true,
+        "schemas": [
+          1,
+          2,
+          3
+        ],
+        "passed": true
+      }
+    ],
+    "importantFinding": "CAPABILITY_INGEST_ENABLED=false restores legacy admission and is NOT a safe post-capability ingest kill switch. Use a separately rehearsed deny-ingest wrapper.",
+    "productionWrites": 0,
+    "remoteMigrationApplied": false
+  },
+  "migrationPolicy": {
+    "remoteApplied": false,
+    "pauseRequired": true,
+    "routineRollback": "Leave additive unused schema; no destructive down-migration",
+    "postCapabilityRollback": "Capability-enforcing Worker or deny-ingest pause only"
+  },
+  "flags": {
+    "initial": {
+      "ingest": false,
+      "issuance": false,
+      "grace": false
+    },
+    "sequence": [
+      "bounded intake pause",
+      "migration 0003",
+      "new Worker all flags false",
+      "legacy compatibility proof",
+      "ingest true / issuance false / exact grace true",
+      "dedicated production provider provisioning",
+      "issuance true",
+      "configured public Composer publication",
+      "owner smoke and monitoring"
+    ],
+    "offMeans": "Legacy compatibility, not denial of all ingestion"
+  },
+  "legacy": {
+    "inventory": [
+      {
+        "game_id": "faculty-composer",
+        "build_id": "composer-ede71cd5d8134f4b3997592ae992e19f5014d27d17d6c5a626232fc5ef9c4a8a",
+        "build_version": "296544b1222894d84c67298257964b1bfa4808212cad18c5e6e0fd4c1cafd09f",
+        "schema_version": 3,
+        "allowed_origin": "https://masteryquests.org",
+        "sunsetPolicy": "owner-approved rollout UTC + 90 days"
+      }
+    ],
+    "liveArtifact": {
+      "status": 200,
+      "sameBytes": true,
+      "localCollectionEnabled": true,
+      "remoteCollectionEnabled": true
+    },
+    "sunsetDays": 90,
+    "exactInstantApproved": false,
+    "exampleGeneratedInstantIsNotApproval": true,
+    "communications": "Notify operators before activation and 30/7 days before sunset",
+    "exclusions": [
+      "collection-disabled Private Managerial",
+      "arbitrary Composer builds",
+      "public polished games",
+      "National Engine"
+    ]
+  },
+  "turnstile": {
+    "recommendation": "Dedicated production Managed widget",
+    "hostname": "masteryquests.org",
+    "action": "mq_build_activate",
+    "secretInstallation": "Owner interactive Wrangler secure prompt in subsequent authorized task",
+    "created": false,
+    "stagingReused": false
+  },
+  "dist": {
+    "ok": true,
+    "dist": "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\dist",
+    "fileCount": 1793,
+    "composerConceptReviewPdfCount": 151,
+    "forbiddenFileCount": 0,
+    "incomingQuestionAssetCount": 0
+  },
+  "distScan": {
+    "requiredModules": [
+      "telemetry-activation.js",
+      "ingest-activation.js",
+      "measurement-build.js",
+      "composer.js",
+      "composer-core.js",
+      "index.html",
+      "anonymous-telemetry-source.js"
+    ],
+    "filesScanned": 149,
+    "stagingOrCredentialMatches": 0,
+    "publicProductionSitekeyStillRequired": true
+  },
+  "dryRuns": {
+    "status": "PASS",
+    "wrangler": "4.72.0",
+    "evidenceBasis": "Observed successful exit code 0 from each local Wrangler dry run during rehearsal",
+    "productionDeployment": false,
+    "configs": [
+      "server/anonymous-telemetry-poc/wrangler.jsonc",
+      "wrangler.jsonc",
+      ".wrangler/stage5-release/pause.json"
+    ]
+  },
+  "cors": {
+    "status": "PASS",
+    "activation": [
+      {
+        "route": "activation",
+        "origin": "https://masteryquests.org",
+        "status": 204
+      },
+      {
+        "route": "activation",
+        "origin": "https://www.masteryquests.org",
+        "status": 204
+      },
+      {
+        "route": "activation",
+        "origin": "https://faculty.github.io",
+        "status": 403
+      }
+    ],
+    "portableIngest": true,
+    "exactLegacyGrace": true,
+    "externalLegacyDenied": true,
+    "adminClosed": true,
+    "invalidOriginsDenied": true,
+    "illustrativeSunset": "2026-12-15T00:00:00.000Z"
+  },
+  "quotas": {
+    "proposed": {
+      "LIVE_PER_TUPLE": 3,
+      "ISSUES_BUILD_DAY": 5,
+      "ISSUES_GLOBAL_HOUR": 10,
+      "ISSUES_GLOBAL_DAY": 25,
+      "CAP_REQUESTS_MINUTE": 600,
+      "CAP_EVENTS_MINUTE": 6000,
+      "BUILD_EVENTS_MINUTE": 12000,
+      "GLOBAL_REQUESTS_MINUTE": 1200,
+      "GLOBAL_EVENTS_MINUTE": 24000,
+      "CAP_ACCEPTED_EVENTS": 50000,
+      "CAP_ACCEPTED_BYTES": 16777216,
+      "BUILD_ACCEPTED_EVENTS": 100000,
+      "BUILD_ACCEPTED_BYTES": 33554432,
+      "GLOBAL_ACCEPTED_BYTES": 67108864
+    },
+    "ownerApproved": false,
+    "perClientEventsMinuteUnchanged": 300,
+    "pilot": "At most one approximately 30-person class-equivalent before review"
+  },
+  "capacity": {
+    "accountTierVerified": false,
+    "conservativeAssumption": "Free pending owner verification",
+    "physicalBytesPerEventEstimate": [
+      2048,
+      4096
+    ],
+    "eventsPerIllustrativeRun": 200,
+    "classSizeScenario": 30,
+    "sessionsPerYearScenario": 100,
+    "annualGiBApprox": [
+      1.2,
+      2.4
+    ],
+    "warningPhysicalMiB": 100,
+    "pausePhysicalMiB": 250,
+    "physicalThresholdAutomatic": false,
+    "logicalBudgetWarningFractionConsumed": 0.5,
+    "retentionDays": 730
+  },
+  "quotaDiagnostic": {
+    "status": "PASS",
+    "simulation": "Database time read immediately before a minute boundary; subsequent SQL guards see next minute",
+    "counterExhaustion": false,
+    "observedStatus": 429,
+    "retryAfter": "60",
+    "writesOnRejectedRequest": 0,
+    "normalClockStatus": 202,
+    "historicalStage3CauseProven": false,
+    "conclusion": "Minute-window freshness predicates can return 429 with counters below quota. This plausibly explains Stage 3, but its original timing evidence is unavailable."
+  },
+  "monitoring": {
+    "initialMinutes": [
+      5,
+      15,
+      30,
+      60
+    ],
+    "cadence": "Each pilot session and daily initially; weekly only after stable evidence",
+    "signals": [
+      "issuance",
+      "Turnstile failures",
+      "authorization/scope rejection",
+      "429",
+      "503",
+      "D1 errors",
+      "accepted events",
+      "duplicates",
+      "quota headroom",
+      "D1 size",
+      "retention",
+      "revocations",
+      "credential redaction"
+    ],
+    "rawCredentialsAllowed": false
+  },
+  "killSwitches": {
+    "issuance": "issuance-off config; preserve ingest",
+    "ingest": "deny-ingest pause entry; NEVER ingest=false after activation",
+    "compromise": "Scoped capability revoke or build block",
+    "website": "Independent website rollback; preserve D1 authorization state",
+    "proof": {
+      "status": "PASS",
+      "results": [
+        {
+          "route": "/v1/events",
+          "method": "POST",
+          "status": 503,
+          "noWrites": true
+        },
+        {
+          "route": "/v1/events",
+          "method": "OPTIONS",
+          "status": 503,
+          "noWrites": true
+        },
+        {
+          "route": "/api/anonymous-telemetry-poc/v1/events",
+          "method": "POST",
+          "status": 503,
+          "noWrites": true
+        },
+        {
+          "route": "/api/anonymous-telemetry-poc/v1/events",
+          "method": "OPTIONS",
+          "status": 503,
+          "noWrites": true
+        },
+        {
+          "route": "/v1/build-capabilities",
+          "method": "POST",
+          "status": 503,
+          "noWrites": true
+        },
+        {
+          "route": "/v1/build-capabilities",
+          "method": "OPTIONS",
+          "status": 503,
+          "noWrites": true
+        }
+      ],
+      "healthPreserved": true,
+      "recoveryWithoutReissuance": true
+    }
+  },
+  "recovery": {
+    "timeTravel": {
+      "bookmark": "00000056-00000000-000050e7-aba7e54f42c29d361c7ab6aaf35ee1a8",
+      "readOnly": true,
+      "restoreExecuted": false
+    },
+    "restorePerformed": false,
+    "warning": "Restore may lose events and resurrect revoked capabilities or rewind blocks/quotas; separate incident authorization and reconciliation required"
+  },
+  "smoke": {
+    "ownerOperated": true,
+    "students": false,
+    "steps": [
+      "OFF downloads without activation",
+      "ON real Turnstile 201 and ZIP",
+      "first-party 202",
+      "unchanged GitHub Pages 204/202",
+      "D1 receipt/run matching",
+      "opt-out",
+      "exact duplicate without inflation",
+      "revocation 403 and local gameplay/CSV",
+      "tail redaction and closure",
+      "revoke designated smoke capabilities"
+    ]
+  },
+  "humanHolds": {
+    "executionOrder": [
+      1,
+      2,
+      3,
+      5,
+      4,
+      6
+    ],
+    "required": true,
+    "details": "PRODUCTION_RUNBOOK_portable_telemetry.md"
+  },
+  "runbook": "PRODUCTION_RUNBOOK_portable_telemetry.md",
+  "report": "FINAL_REPORT_portable_telemetry_stage5_rehearsal.md",
+  "staging": {
+    "rehearsal": {
+      "status": "PASS",
+      "results": [
+        {
+          "phase": "flags-off",
+          "version": "be377f85-16bb-480e-a158-a2cbb7069385",
+          "ingest": false,
+          "issuance": false,
+          "paused": false,
+          "preflight": 403,
+          "activation": 404,
+          "composer": 200,
+          "propagationStatuses": [
+            403
+          ]
+        },
+        {
+          "phase": "ingest-only",
+          "version": "e834f5a7-d62e-430e-9534-5a0945009959",
+          "ingest": true,
+          "issuance": false,
+          "paused": false,
+          "preflight": 204,
+          "activation": 404,
+          "composer": 200,
+          "propagationStatuses": [
+            204
+          ]
+        },
+        {
+          "phase": "issuance-ready",
+          "version": "053b21ef-5859-4e65-988c-cd5932fc2b3f",
+          "ingest": true,
+          "issuance": true,
+          "paused": false,
+          "preflight": 204,
+          "activation": 204,
+          "composer": 200,
+          "propagationStatuses": [
+            204
+          ]
+        },
+        {
+          "phase": "paused",
+          "version": "ae1f3de8-b76a-40b7-b464-b08968f804dc",
+          "ingest": true,
+          "issuance": false,
+          "paused": true,
+          "preflight": 503,
+          "activation": 503,
+          "composer": 200,
+          "propagationStatuses": [
+            503
+          ],
+          "activationPropagation": [
+            503
+          ]
+        },
+        {
+          "phase": "restored",
+          "version": "b1e4dcd3-9ce7-40e0-a29f-ba9c236d861c",
+          "ingest": true,
+          "issuance": true,
+          "paused": false,
+          "preflight": 204,
+          "activation": 204,
+          "composer": 200,
+          "propagationStatuses": [
+            204
+          ],
+          "activationPropagation": [
+            204
+          ]
+        }
+      ],
+      "unchangedDatabaseCounts": {
+        "events": 98,
+        "active": 0
+      },
+      "newCapabilities": 0,
+      "productionWrites": 0,
+      "originalConfigFileUnchanged": true
+    },
+    "cleanliness": {
+      "counts": {
+        "capabilities": 5,
+        "active": 0,
+        "events": 98
+      },
+      "eventSyntheticFlags": [
+        {
+          "synthetic": 0,
+          "count": 98
+        }
+      ],
+      "tailCount": 0,
+      "knownTailsClosed": true,
+      "secretNames": [
+        "TURNSTILE_SECRET_KEY"
+      ],
+      "vars": [
+        {
+          "name": "CAPABILITY_INGEST_ENABLED",
+          "value": "true"
+        },
+        {
+          "name": "CAPABILITY_ISSUANCE_ENABLED",
+          "value": "true"
+        },
+        {
+          "name": "CAPABILITY_LEGACY_GRACE_ENABLED",
+          "value": "false"
+        }
+      ],
+      "version": "b1e4dcd3-9ce7-40e0-a29f-ba9c236d861c",
+      "secretValuesRead": false,
+      "context": "Retained staging records derive from owner/harness proof runs, not students; runtime synthetic flags are reported separately."
+    },
+    "retainUntil": "Production smoke acceptance",
+    "newEvents": 0,
+    "newCapabilities": 0,
+    "syntheticFlagCaveat": "All retained 98 events have synthetic=0 despite owner/harness test provenance; no students and no relabeling/deletion"
+  },
+  "documentation": {
+    "publishNow": false,
+    "targets": [
+      "Privacy",
+      "Responsible Telemetry Use",
+      "Composer guide",
+      "faculty Build guide",
+      "Telemetry Data Dictionary control-plane note",
+      "CAPABILITY_OPERATOR.md"
+    ],
+    "draftInReport": true,
+    "contractVersionBump": false,
+    "nationalEngine": "Separate legacy identifying-transport exception; outside this rollout"
+  },
+  "integrity": {
+    "protectedHashes": {
+      "audit_tools/telemetry_contract/schema.json": true,
+      "audit_tools/telemetry_contract/release.json": true,
+      "audit_tools/telemetry_contract/runtime.js": true,
+      "server/anonymous-telemetry-poc/measurement-contract.mjs": true,
+      "server/anonymous-telemetry-poc/telemetry-core.mjs": true,
+      "server/anonymous-telemetry-poc/governance-policy.mjs": true,
+      "server/anonymous-telemetry-poc/governance.mjs": true,
+      "server/anonymous-telemetry-poc/scheduled-retention.mjs": true,
+      "server/anonymous-telemetry-poc/wrangler.jsonc": true
+    },
+    "trackedChanges": [
+      "validation_artifacts/portable_telemetry_stage3_staging/resources.json"
+    ],
+    "diffCheck": "PASS",
+    "canonicalApplicationChanged": false,
+    "productionConfigChanged": false,
+    "telemetrySemanticsChanged": false,
+    "productionDeployment": "NOT DEPLOYED"
+  }
+}

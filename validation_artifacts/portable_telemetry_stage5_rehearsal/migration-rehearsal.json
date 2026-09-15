@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "migrationSha256": "d67432d1c9ed8c85f5a407cf7e606ff05cc00d63effe2ce909797fa6efb61951",
+  "statementCount": 10,
+  "results": [
+    {
+      "name": "empty",
+      "rows": 0,
+      "malformedExtras": false,
+      "migrationMs": 2.730700000000013,
+      "oldBytes": 77824,
+      "newBytes": 135168,
+      "rowsPreserved": true,
+      "oldBatchCompatible": true,
+      "integrity": "ok"
+    },
+    {
+      "name": "representative",
+      "rows": 3427,
+      "malformedExtras": false,
+      "migrationMs": 6.997200000000021,
+      "oldBytes": 3186688,
+      "newBytes": 3268608,
+      "rowsPreserved": true,
+      "oldBatchCompatible": true,
+      "integrity": "ok"
+    },
+    {
+      "name": "malformed-extras",
+      "rows": 100,
+      "malformedExtras": true,
+      "migrationMs": 2.4156000000000404,
+      "oldBytes": 126976,
+      "newBytes": 184320,
+      "rowsPreserved": true,
+      "oldBatchCompatible": true,
+      "integrity": "ok"
+    },
+    {
+      "name": "old-batches",
+      "rows": 100,
+      "malformedExtras": false,
+      "migrationMs": 2.0995000000000346,
+      "oldBytes": 139264,
+      "newBytes": 196608,
+      "rowsPreserved": true,
+      "oldBatchCompatible": true,
+      "integrity": "ok"
+    },
+    {
+      "name": "synthetic-scale",
+      "rows": 100000,
+      "malformedExtras": true,
+      "migrationMs": 38.82729999999992,
+      "oldBytes": 74833920,
+      "newBytes": 75583488,
+      "rowsPreserved": true,
+      "oldBatchCompatible": true,
+      "integrity": "ok"
+    }
+  ],
+  "compatibility": [
+    {
+      "worker": "deployed",
+      "migrationApplied": false,
+      "schemas": [
+        1,
+        2,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "worker": "proposed-flags-off",
+      "migrationApplied": false,
+      "schemas": [
+        1,
+        2,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "worker": "deployed",
+      "migrationApplied": true,
+      "schemas": [
+        1,
+        2,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "worker": "proposed-flags-off",
+      "migrationApplied": true,
+      "schemas": [
+        1,
+        2,
+        3
+      ],
+      "passed": true
+    }
+  ],
+  "importantFinding": "CAPABILITY_INGEST_ENABLED=false restores legacy admission and is NOT a safe post-capability ingest kill switch. Use a separately rehearsed deny-ingest wrapper.",
+  "productionWrites": 0,
+  "remoteMigrationApplied": false
+}

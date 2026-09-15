@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "capabilities": 5,
+    "active": 0,
+    "events": 98
+  },
+  "eventSyntheticFlags": [
+    {
+      "synthetic": 0,
+      "count": 98
+    }
+  ],
+  "tailCount": 0,
+  "knownTailsClosed": true,
+  "secretNames": [
+    "TURNSTILE_SECRET_KEY"
+  ],
+  "vars": [
+    {
+      "name": "CAPABILITY_INGEST_ENABLED",
+      "value": "true"
+    },
+    {
+      "name": "CAPABILITY_ISSUANCE_ENABLED",
+      "value": "true"
+    },
+    {
+      "name": "CAPABILITY_LEGACY_GRACE_ENABLED",
+      "value": "false"
+    }
+  ],
+  "version": "b1e4dcd3-9ce7-40e0-a29f-ba9c236d861c",
+  "secretValuesRead": false,
+  "context": "Retained staging records derive from owner/harness proof runs, not students; runtime synthetic flags are reported separately."
+}

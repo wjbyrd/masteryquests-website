@@ -1,0 +1,20 @@
+(node:44852) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Composer patterns compile under Chromium v semantics and slug constraint validation is exact: PASS
+OFF Composer browsing preview recipe save and Generate cause zero activation/challenge: PASS
+ON pending readiness; Generate issues once and embeds only in playable HTML: PASS
+Repeated Generate reuses capability without another challenge or issuance: PASS
+Activation failure blocks ON download and explicit OFF fallback preserves content: PASS
+Inputs changed during issuance discard stale result and block download: PASS
+Generated Edge game starts and sends scoped 202 with valid runtime manifests and receipt: PASS
+Gameplay and local CSV survive HTTP 403: PASS
+Gameplay and local CSV survive HTTP 429: PASS
+Gameplay and local CSV survive HTTP 503: PASS
+Redirect response never forwards capability to another host: PASS
+Opt-out survives token replacement without resetting browser ID or local data: PASS
+Descriptor missing fails closed without breaking gameplay/download: PASS
+Descriptor malformed fails closed without breaking gameplay/download: PASS
+Descriptor expired fails closed without breaking gameplay/download: PASS
+Descriptor mismatched fails closed without breaking gameplay/download: PASS
+No browser exceptions or credential leakage in stored telemetry and receipts: PASS
+{"passed":17,"failed":0}

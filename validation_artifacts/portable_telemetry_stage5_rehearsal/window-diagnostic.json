@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "simulation": "Database time read immediately before a minute boundary; subsequent SQL guards see next minute",
+  "counterExhaustion": false,
+  "observedStatus": 429,
+  "retryAfter": "60",
+  "writesOnRejectedRequest": 0,
+  "normalClockStatus": 202,
+  "historicalStage3CauseProven": false,
+  "conclusion": "Minute-window freshness predicates can return 429 with counters below quota. This plausibly explains Stage 3, but its original timing evidence is unavailable."
+}

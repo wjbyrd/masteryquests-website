@@ -1,0 +1,27 @@
+
+ ⛅️ wrangler 4.72.0 (update available 4.131.2)
+──────────────────────────────────────────────
+🌀 Building list of assets...
+✨ Read 742 files from the assets directory C:\Users\Jennings\Documents\GitHub\masteryquests-website\audit_tools\telemetry_governance\stage3-staging\.wrangler\manual-host\site
+🌀 Starting asset upload...
+No updated asset files to upload. Proceeding with deployment...
+Total Upload: 115.10 KiB / gzip: 29.46 KiB
+Worker Startup Time: 7 ms
+Your Worker has access to the following bindings:
+Binding                                                                           Resource                  
+env.TELEMETRY_DB (masteryquests-telemetry-stage3-staging)                         D1 Database               
+env.ASSETS                                                                        Assets                    
+env.TELEMETRY_RETENTION_DAYS ("730")                                              Environment Variable      
+env.TELEMETRY_RETENTION_MODE ("automatic")                                        Environment Variable      
+env.TELEMETRY_GOVERNANCE_POLICY ("mq-governance/2")                               Environment Variable      
+env.ALLOWED_ORIGINS ("https://stage3.masteryquests.org")                          Environment Variable      
+env.CAPABILITY_ISSUANCE_ENABLED ("false")                                         Environment Variable      
+env.CAPABILITY_INGEST_ENABLED ("true")                                            Environment Variable      
+env.CAPABILITY_LEGACY_GRACE_ENABLED ("false")                                     Environment Variable      
+env.MAX_EVENTS_PER_CLIENT_MINUTE ("300")                                          Environment Variable      
+
+Uploaded masteryquests-telemetry-stage3-staging (6.21 sec)
+Deployed masteryquests-telemetry-stage3-staging triggers (1.18 sec)
+  https://masteryquests-telemetry-stage3-staging.wjbyrd.workers.dev
+  stage3.masteryquests.org (custom domain)
+Current Version ID: e834f5a7-d62e-430e-9534-5a0945009959

@@ -1,0 +1,51 @@
+{
+  "passed": 11,
+  "failed": 0,
+  "results": [
+    {
+      "name": "OFF/malformed choices cause zero challenge or activation requests",
+      "status": "PASS"
+    },
+    {
+      "name": "Generate activation sends exact minimal fields and server-matching context",
+      "status": "PASS"
+    },
+    {
+      "name": "Double Generate and repeated download reuse one in-memory activation",
+      "status": "PASS"
+    },
+    {
+      "name": "Changed inputs invalidate reuse; reload creates a fresh attempt",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale response discarded after invalidation or snapshot change",
+      "status": "PASS"
+    },
+    {
+      "name": "Failure remains blocked; explicit OFF fallback makes no request",
+      "status": "PASS"
+    },
+    {
+      "name": "Response endpoint cannot redirect credentials or change scope",
+      "status": "PASS"
+    },
+    {
+      "name": "Expired malformed and unknown descriptor fields fail closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Different tokens preserve exact analytical build and all measurement hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "Recipe import migration save and canonical identity discard activation metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "Preview preparation is pure and generated privacy links are absolute",
+      "status": "PASS"
+    }
+  ],
+  "identityParity": true
+}

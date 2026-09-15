@@ -1,0 +1,525 @@
+{
+  "readOnly": true,
+  "productionWrites": 0,
+  "database": {
+    "uuid": "16b248ff-20cb-429c-a4a1-dd50d17c1fd0",
+    "name": "managerial-telemetry-poc",
+    "fileSize": 4653056,
+    "version": "production",
+    "createdAt": "2026-09-05T10:58:00.751Z"
+  },
+  "workers": {
+    "masteryquests-anonymous-telemetry-poc": {
+      "bindings": [
+        {
+          "name": "ADMIN_TOKEN",
+          "type": "secret_text"
+        },
+        {
+          "name": "ALLOWED_ORIGINS",
+          "type": "plain_text",
+          "value": "https://masteryquests.org,https://www.masteryquests.org"
+        },
+        {
+          "name": "MAINTENANCE_TOKEN",
+          "type": "secret_text"
+        },
+        {
+          "name": "MAX_EVENTS_PER_CLIENT_MINUTE",
+          "type": "plain_text",
+          "value": "300"
+        },
+        {
+          "name": "TELEMETRY_DB",
+          "type": "d1",
+          "id": "16b248ff-20cb-429c-a4a1-dd50d17c1fd0"
+        },
+        {
+          "name": "TELEMETRY_GOVERNANCE_POLICY",
+          "type": "plain_text",
+          "value": "mq-governance/2"
+        },
+        {
+          "name": "TELEMETRY_RETENTION_DAYS",
+          "type": "plain_text",
+          "value": "730"
+        },
+        {
+          "name": "TELEMETRY_RETENTION_MODE",
+          "type": "plain_text",
+          "value": "automatic"
+        }
+      ],
+      "observability": {
+        "enabled": false,
+        "head_sampling_rate": 1,
+        "redact_query_string": false,
+        "logs": {
+          "enabled": true,
+          "head_sampling_rate": 1,
+          "persist": true,
+          "invocation_logs": true
+        },
+        "traces": {
+          "enabled": false,
+          "persist": true,
+          "head_sampling_rate": 1
+        }
+      },
+      "compatibilityDate": "2026-08-07",
+      "deployments": {
+        "deployments": [
+          {
+            "id": "8b68e124-b4b6-46d8-bffe-b61a0793e6b0",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "afaa4ada-d6cf-48a5-bdde-13cc35f52f80",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-13T16:10:31.745056Z"
+          },
+          {
+            "id": "9a08ee62-9e7a-4669-8581-9fa3951db147",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "secret"
+            },
+            "versions": [
+              {
+                "version_id": "8e6e6e3f-5d08-4fe5-b050-a37980147cc7",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-12T22:12:42.490207Z"
+          },
+          {
+            "id": "b2276d02-ce44-4ff1-90d9-3152f5f1add4",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "7c1fd1f8-21b1-4b38-a297-ecdfb49a62ed",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-12T21:56:09.752524Z"
+          },
+          {
+            "id": "6e4982e9-560e-4cff-8a08-b5b2d50cd09c",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "secret"
+            },
+            "versions": [
+              {
+                "version_id": "70f38482-f260-4037-b62d-f565bd1ce38f",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-12T21:54:42.914908Z"
+          },
+          {
+            "id": "c718f820-85ef-4e62-a45e-30a35f2aae46",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "5e53b39a-aabe-4c56-84d2-a91638fc36fd",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-10T17:32:49.670869Z"
+          },
+          {
+            "id": "64172f8d-0b69-462c-ad34-6a3774c80ae4",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "a46e2d71-9554-4a3c-93c4-b3f46ff38f6f",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-06T14:03:02.085323Z"
+          },
+          {
+            "id": "f066eb6a-75e0-4371-97ae-5efb8ea98e9b",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "24135d1a-c681-4c95-8d96-3c5aed1e16f1",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-05T13:40:21.698648Z"
+          },
+          {
+            "id": "aea2efdd-6cb4-49cd-bf18-1bb59470e931",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "89e289ba-8f53-40d0-9bde-3ea432d6e27a",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-05T11:06:49.327833Z"
+          },
+          {
+            "id": "b6b0e794-f315-4dbb-baa0-29a2992a3812",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "19461d51-8616-4875-9018-d1406789a9bb",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-05T11:04:25.597256Z"
+          },
+          {
+            "id": "4ad11ccc-fd16-4261-93fd-9e7f4656ba66",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "secret"
+            },
+            "versions": [
+              {
+                "version_id": "c69928d4-7a6a-45a0-9040-f16815eb4e57",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-05T11:03:48.075558Z"
+          }
+        ]
+      },
+      "schedules": {
+        "schedules": [
+          {
+            "cron": "17 4 * * *",
+            "created_on": "2026-09-12T21:56:11.584382Z",
+            "modified_on": "2026-09-13T16:10:34.985811Z"
+          }
+        ]
+      }
+    },
+    "masteryquests-website": {
+      "bindings": [
+        {
+          "name": "ASSETS",
+          "type": "assets"
+        },
+        {
+          "name": "CLASSROOM_ACCESS_CODE",
+          "type": "secret_text"
+        },
+        {
+          "name": "CLASSROOM_LOGIN_LIMIT",
+          "type": "ratelimit"
+        },
+        {
+          "name": "CLASSROOM_SESSION_SECRET",
+          "type": "secret_text"
+        }
+      ],
+      "compatibilityDate": "2026-08-07",
+      "deployments": {
+        "deployments": [
+          {
+            "id": "c82bb900-153d-4b9a-a4c1-798ba42c22b0",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "edebb0d2-6ecd-4b82-860d-233ed6b4e37d",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-15T02:05:00.013598Z"
+          },
+          {
+            "id": "c98161e6-a222-453f-ba62-a5880740f33a",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "8681fb11-550a-47dd-bb3e-f6070ab17ca5",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-15T00:58:28.159431Z"
+          },
+          {
+            "id": "6102f5bf-935e-491e-9093-6644dd58e457",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "18a46244-ca54-472d-b40e-f82f07220d79",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-15T00:44:32.665407Z"
+          },
+          {
+            "id": "fffc482e-a08b-40bd-9e3d-8f8e1329ea13",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "735d340b-5f9d-4d1a-b8f8-020ba40f168b",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-14T23:51:27.836116Z"
+          },
+          {
+            "id": "99e2e552-95a0-4356-8594-5b3b2443f176",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "82a3debd-1d1d-4b9d-bbd0-3c69f7d8e368",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-14T21:07:46.095234Z"
+          },
+          {
+            "id": "8214fdce-60a1-4c24-b5ae-81022084688a",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "763e2f2f-0a22-4d3f-a68d-68ee91d26dc1",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-14T20:25:55.39562Z"
+          },
+          {
+            "id": "192d6a75-c405-46cc-a710-8b8f95b2ef62",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "d466831b-678e-4b8f-8058-0e72f336dc9b",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-14T16:13:47.907503Z"
+          },
+          {
+            "id": "a95bb1e9-c010-46b3-95e2-33f872554339",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "7cfc307c-aa6a-492f-a984-86e6f41b5d9d",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-14T16:05:09.724646Z"
+          },
+          {
+            "id": "43ae082b-a871-4eb2-bf53-2f8dfd497ea4",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "01878f54-2ed1-469e-897d-17227ce70c03",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-14T00:07:26.78566Z"
+          },
+          {
+            "id": "9be5a2e6-1373-40a9-a97f-d0efb6fc510c",
+            "source": "wrangler",
+            "strategy": "percentage",
+            "author_email": "wjbyrd@troy.edu",
+            "annotations": {
+              "workers/triggered_by": "deployment"
+            },
+            "versions": [
+              {
+                "version_id": "963dd333-27bd-4c3f-8904-ac7f9c3d7f03",
+                "percentage": 100
+              }
+            ],
+            "created_on": "2026-09-14T00:05:04.484046Z"
+          }
+        ]
+      },
+      "schedules": {
+        "schedules": []
+      }
+    }
+  },
+  "tables": [
+    {
+      "name": "_cf_KV",
+      "sql": "CREATE TABLE _cf_KV (\n        key TEXT PRIMARY KEY,\n        value BLOB\n      ) WITHOUT ROWID"
+    },
+    {
+      "name": "d1_migrations",
+      "sql": "CREATE TABLE \"d1_migrations\"(\n\t\tid         INTEGER PRIMARY KEY AUTOINCREMENT,\n\t\tname       TEXT UNIQUE,\n\t\tapplied_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL\n)"
+    },
+    {
+      "name": "sqlite_sequence",
+      "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+    },
+    {
+      "name": "telemetry_events",
+      "sql": "CREATE TABLE telemetry_events (\n  event_id TEXT PRIMARY KEY,\n  run_id TEXT NOT NULL,\n  anonymous_client_id TEXT NOT NULL,\n  build_id TEXT NOT NULL,\n  build_version TEXT NOT NULL,\n  schema_version INTEGER NOT NULL,\n  phase TEXT NOT NULL,\n  game_id TEXT NOT NULL,\n  mode TEXT NOT NULL,\n  event_type TEXT NOT NULL,\n  sequence_number INTEGER NOT NULL,\n  event_timestamp TEXT NOT NULL,\n  received_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  elapsed_time_ms REAL NOT NULL DEFAULT 0,\n  position INTEGER NOT NULL DEFAULT 0,\n  question_id TEXT NOT NULL DEFAULT '',\n  concept_id TEXT NOT NULL DEFAULT '',\n  learning_objective TEXT NOT NULL DEFAULT '',\n  question_type TEXT NOT NULL DEFAULT '',\n  difficulty TEXT NOT NULL DEFAULT '',\n  selected_response INTEGER,\n  correct INTEGER,\n  response_time_ms REAL NOT NULL DEFAULT 0,\n  rapid_guess INTEGER NOT NULL DEFAULT 0,\n  remediation_stage TEXT NOT NULL DEFAULT '',\n  bridge_stage TEXT NOT NULL DEFAULT '',\n  retest_stage TEXT NOT NULL DEFAULT '',\n  boss_stage TEXT NOT NULL DEFAULT '',\n  graph_question INTEGER NOT NULL DEFAULT 0,\n  score REAL NOT NULL DEFAULT 0,\n  streak INTEGER NOT NULL DEFAULT 0,\n  daily_progress REAL NOT NULL DEFAULT 0,\n  artifact TEXT NOT NULL DEFAULT '',\n  completion_status TEXT NOT NULL DEFAULT '',\n  mastery_attempts INTEGER NOT NULL DEFAULT 0,\n  mastery_correct INTEGER NOT NULL DEFAULT 0,\n  mastery_accuracy REAL NOT NULL DEFAULT 0,\n  synthetic INTEGER NOT NULL DEFAULT 0,\n  extras_json TEXT NOT NULL DEFAULT '{}',\n  UNIQUE(run_id, sequence_number)\n)"
+    },
+    {
+      "name": "telemetry_ingest_batches",
+      "sql": "CREATE TABLE telemetry_ingest_batches (\n  batch_id TEXT PRIMARY KEY,\n  received_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  anonymous_client_id TEXT NOT NULL,\n  event_count INTEGER NOT NULL,\n  inserted_count INTEGER NOT NULL,\n  duplicate_count INTEGER NOT NULL,\n  synthetic INTEGER NOT NULL DEFAULT 0\n)"
+    },
+    {
+      "name": "telemetry_rate_limits",
+      "sql": "CREATE TABLE telemetry_rate_limits (\n  anonymous_client_id TEXT NOT NULL,\n  window_minute INTEGER NOT NULL,\n  event_count INTEGER NOT NULL,\n  PRIMARY KEY(anonymous_client_id, window_minute)\n)"
+    },
+    {
+      "name": "telemetry_runs",
+      "sql": "CREATE TABLE telemetry_runs (\n  run_id TEXT PRIMARY KEY,\n  anonymous_client_id TEXT NOT NULL,\n  build_id TEXT NOT NULL,\n  build_version TEXT NOT NULL,\n  game_id TEXT NOT NULL,\n  mode TEXT NOT NULL,\n  first_event_at TEXT NOT NULL,\n  last_event_at TEXT NOT NULL,\n  first_received_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  last_received_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  event_count INTEGER NOT NULL DEFAULT 0,\n  max_sequence INTEGER NOT NULL DEFAULT 0,\n  completed INTEGER NOT NULL DEFAULT 0,\n  completion_status TEXT NOT NULL DEFAULT '',\n  synthetic INTEGER NOT NULL DEFAULT 0\n)"
+    }
+  ],
+  "migrations": [
+    {
+      "id": 1,
+      "name": "0001_initial.sql",
+      "applied_at": "2026-09-05 11:01:39"
+    },
+    {
+      "id": 2,
+      "name": "0002_completion_semantics.sql",
+      "applied_at": "2026-09-05 13:41:14"
+    }
+  ],
+  "counts": {
+    "telemetry_runs": 53,
+    "telemetry_events": 3427,
+    "telemetry_ingest_batches": 1225,
+    "telemetry_rate_limits": 15
+  },
+  "receipts": [
+    {
+      "earliest": "2026-09-05 11:17:54",
+      "latest": "2026-09-14 20:51:58"
+    }
+  ],
+  "syntheticCounts": [
+    {
+      "synthetic": 0,
+      "total": 2204
+    },
+    {
+      "synthetic": 1,
+      "total": 1223
+    }
+  ],
+  "dailyVolumes": [
+    {
+      "day": "2026-09-14",
+      "events": 32
+    },
+    {
+      "day": "2026-09-10",
+      "events": 332
+    },
+    {
+      "day": "2026-09-08",
+      "events": 261
+    },
+    {
+      "day": "2026-09-06",
+      "events": 1039
+    },
+    {
+      "day": "2026-09-05",
+      "events": 1763
+    }
+  ],
+  "sizeEstimate": [
+    {
+      "events": 3427,
+      "averageExtrasCharacters": 373.72133060986283
+    }
+  ]
+}

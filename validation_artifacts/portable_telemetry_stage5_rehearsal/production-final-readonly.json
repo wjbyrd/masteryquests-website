@@ -1,0 +1,24 @@
+{
+  "versions": {
+    "masteryquests-anonymous-telemetry-poc": "afaa4ada-d6cf-48a5-bdde-13cc35f52f80",
+    "masteryquests-website": "edebb0d2-6ecd-4b82-860d-233ed6b4e37d"
+  },
+  "counts": {
+    "telemetry_runs": 53,
+    "telemetry_events": 3427,
+    "telemetry_ingest_batches": 1225,
+    "telemetry_rate_limits": 15
+  },
+  "migrations": [
+    {
+      "name": "0001_initial.sql"
+    },
+    {
+      "name": "0002_completion_semantics.sql"
+    }
+  ],
+  "productionVersionsUnchanged": true,
+  "aggregateCountsUnchanged": true,
+  "migration0003Applied": false,
+  "productionWrites": 0
+}

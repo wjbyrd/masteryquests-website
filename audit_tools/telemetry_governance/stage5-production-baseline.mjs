@@ -1,0 +1,13 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {readAPI,productionQuery,database,workers} from './stage5-readonly.mjs';
+const out='validation_artifacts/portable_telemetry_stage5_rehearsal';
+const db=await readAPI('/d1/database/'+database);assert.equal(db.uuid,database);assert.equal(db.name,'managerial-telemetry-poc');
+const result={readOnly:true,productionWrites:0,database:{uuid:db.uuid,name:db.name,fileSize:db.file_size,version:db.version,createdAt:db.created_at},workers:{}};
+for(const name of workers){const settings=await readAPI('/workers/scripts/'+name+'/settings'),deployments=await readAPI('/workers/scripts/'+name+'/deployments'),schedules=await readAPI('/workers/scripts/'+name+'/schedules');const binding=settings.bindings?.find(b=>b.name==='TELEMETRY_DB');if(name===workers[0])assert.equal(binding?.id||binding?.database_id,database);const publicVars=new Set(['ALLOWED_ORIGINS','MAX_EVENTS_PER_CLIENT_MINUTE','CAPABILITY_ISSUANCE_ENABLED','CAPABILITY_INGEST_ENABLED','CAPABILITY_LEGACY_GRACE_ENABLED','TELEMETRY_RETENTION_DAYS','TELEMETRY_RETENTION_MODE','TELEMETRY_GOVERNANCE_POLICY']);result.workers[name]={bindings:settings.bindings?.map(b=>({name:b.name,type:b.type,...(b.type==='d1'?{id:b.id||b.database_id}:{}),...(publicVars.has(b.name)?{value:b.text}: {})})),observability:settings.observability,compatibilityDate:settings.compatibility_date,deployments,schedules};}
+result.tables=await productionQuery("SELECT name,sql FROM sqlite_master WHERE type='table' ORDER BY name");
+result.migrations=result.tables.some(t=>t.name==='d1_migrations')?await productionQuery('SELECT id,name,applied_at FROM d1_migrations ORDER BY id'):[];
+result.counts={};for(const name of ['telemetry_runs','telemetry_events','telemetry_ingest_batches','telemetry_rate_limits'])result.counts[name]=(await productionQuery('SELECT COUNT(*) AS total FROM '+name))[0].total;
+result.receipts=await productionQuery('SELECT MIN(received_at) AS earliest,MAX(received_at) AS latest FROM telemetry_ingest_batches');
+result.syntheticCounts=await productionQuery('SELECT synthetic,COUNT(*) AS total FROM telemetry_events GROUP BY synthetic');
+result.dailyVolumes=await productionQuery("SELECT date(received_at) AS day,COUNT(*) AS events FROM telemetry_events GROUP BY date(received_at) ORDER BY day DESC LIMIT 14");
+result.sizeEstimate=await productionQuery('SELECT COUNT(*) AS events,AVG(length(extras_json)) AS averageExtrasCharacters FROM telemetry_events');
+fs.writeFileSync(out+'/production-baseline.json',JSON.stringify(result,null,2));console.log(JSON.stringify({identityVerified:true,database:result.database,counts:result.counts,migrations:result.migrations.map(x=>x.name)}));

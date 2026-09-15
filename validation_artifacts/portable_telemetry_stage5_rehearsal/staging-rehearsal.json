@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "phase": "flags-off",
+      "version": "be377f85-16bb-480e-a158-a2cbb7069385",
+      "ingest": false,
+      "issuance": false,
+      "paused": false,
+      "preflight": 403,
+      "activation": 404,
+      "composer": 200,
+      "propagationStatuses": [
+        403
+      ]
+    },
+    {
+      "phase": "ingest-only",
+      "version": "e834f5a7-d62e-430e-9534-5a0945009959",
+      "ingest": true,
+      "issuance": false,
+      "paused": false,
+      "preflight": 204,
+      "activation": 404,
+      "composer": 200,
+      "propagationStatuses": [
+        204
+      ]
+    },
+    {
+      "phase": "issuance-ready",
+      "version": "053b21ef-5859-4e65-988c-cd5932fc2b3f",
+      "ingest": true,
+      "issuance": true,
+      "paused": false,
+      "preflight": 204,
+      "activation": 204,
+      "composer": 200,
+      "propagationStatuses": [
+        204
+      ]
+    },
+    {
+      "phase": "paused",
+      "version": "ae1f3de8-b76a-40b7-b464-b08968f804dc",
+      "ingest": true,
+      "issuance": false,
+      "paused": true,
+      "preflight": 503,
+      "activation": 503,
+      "composer": 200,
+      "propagationStatuses": [
+        503
+      ],
+      "activationPropagation": [
+        503
+      ]
+    },
+    {
+      "phase": "restored",
+      "version": "b1e4dcd3-9ce7-40e0-a29f-ba9c236d861c",
+      "ingest": true,
+      "issuance": true,
+      "paused": false,
+      "preflight": 204,
+      "activation": 204,
+      "composer": 200,
+      "propagationStatuses": [
+        204
+      ],
+      "activationPropagation": [
+        204
+      ]
+    }
+  ],
+  "unchangedDatabaseCounts": {
+    "events": 98,
+    "active": 0
+  },
+  "newCapabilities": 0,
+  "productionWrites": 0,
+  "originalConfigFileUnchanged": true
+}

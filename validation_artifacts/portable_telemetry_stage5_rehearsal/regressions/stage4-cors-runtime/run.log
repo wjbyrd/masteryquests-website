@@ -1,0 +1,27 @@
+(node:6108) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Serialized HTTPS origin syntax rejects non-origin and smuggled values: PASS
+All valid HTTPS origins receive narrowly scoped preflight: PASS
+Unsupported preflight method and headers reject: PASS
+Invalid browser origins and duplicate Origin fields reject: PASS
+Valid token works from unrelated HTTPS hosts and without Origin: PASS
+External capability authorization: missing: PASS
+External capability authorization: malformed: PASS
+External capability authorization: random: PASS
+External capability authorization: expired: PASS
+External capability authorization: revoked: PASS
+External capability authorization: blocked: PASS
+External capability authorization: wrong game: PASS
+External capability authorization: wrong build: PASS
+External capability authorization: wrong version: PASS
+External capability authorization: wrong schema: PASS
+External capability authorization: old only: PASS
+External capability authorization: both headers: PASS
+External capability authorization: authorization: PASS
+Invalid Origin rejects even valid capability without writes: PASS
+Legacy grace stays exact first-party and invalid token never falls back: PASS
+Activation, admin, maintenance and health do not gain external CORS: PASS
+Controlled 400 409 413 415 503 errors remain readable and sanitized: PASS
+Expected quota 429 exposes Retry-After through external CORS: PASS
+Disabled capability ingest retains original external-origin rejection: PASS
+{"passed":24,"failed":0}
