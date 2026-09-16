@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Two daily economics puzzles. Find four hidden connections in Micro and Macro with Econ-nections by Mastery Quests.">
+  <meta name="theme-color" content="#062454">
+  <title>Econ-nections · Daily Economic Puzzle | Mastery Quests</title>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="./econnections.css">
+  <script type="module" src="./econnections.js"></script>
+</head>
+<body class="econ-page">
+  <a class="skip-link" href="#main-content">Skip to puzzle</a>
+  <header class="econ-site-header">
+    <a href="/" aria-label="Mastery Quests home"><img src="/assets/images/mastery-quests-logo.png" alt="Mastery Quests" width="232"></a>
+    <a class="back-link" href="/games/">← All games</a>
+  </header>
+  <main id="main-content" class="econ-shell">
+    <header class="econ-heading">
+      <p class="econ-eyebrow"><span class="signal-dot" aria-hidden="true"></span> A little economics. Every day.</p>
+      <h1>ECON<span>-</span>NECTIONS</h1>
+      <p class="econ-subtitle">Daily Economic Puzzle</p>
+    </header>
+    <p id="storage-warning" class="notice" role="status" hidden></p>
+    <p id="day-notice" class="notice" role="status" hidden></p>
+    <section id="landing" aria-labelledby="landing-title">
+      <div class="landing-intro"><h2 id="landing-title" tabindex="-1">Find the four economic connections.</h2>
+        <p>16 tiles. Four hidden groups. Three strikes.<br>Choose your daily puzzle and connect what you know.</p></div>
+      <div class="domain-choices">
+        <button class="domain-card" data-domain="micro" type="button">
+          <span class="domain-overline">01 / THE INDIVIDUAL CHOICE</span>
+          <span class="domain-name">Micro <span aria-hidden="true">↗</span></span>
+          <span class="domain-description">Markets, decisions &amp; incentives</span>
+          <span id="micro-status" class="domain-status">Not played today</span>
+        </button>
+        <button class="domain-card" data-domain="macro" type="button">
+          <span class="domain-overline">02 / THE BIGGER PICTURE</span>
+          <span class="domain-name">Macro <span aria-hidden="true">↗</span></span>
+          <span class="domain-description">Growth, money &amp; the economy</span>
+          <span id="macro-status" class="domain-status">Not played today</span>
+        </button>
+      </div>
+      <div id="landing-stats" class="stats-strip" aria-label="Your local statistics"></div>
+      <p class="streak-note">A streak grows when you solve either puzzle each day. Solving both counts as one day.</p>
+      <details class="how-to"><summary>How to play</summary>
+        <ol><li>Select four tiles that share an economic connection.</li><li>Submit to check your group. Correct connections lock in with an explanation.</li><li>Find all four groups before your third strike. On strike three, the remaining connections are revealed.</li></ol>
+        <p>Connections may be concepts, cause-and-effect sequences, or common misconceptions. Tile order within a group does not matter. Repeating the same wrong set does not cost another strike.</p>
+        <p>Group difficulty runs from 1 (light teal) to 4 (deep blue). Your progress is saved in this browser. No account needed.</p>
+      </details>
+    </section>
+    <section id="game" aria-labelledby="game-title" hidden>
+      <div class="game-topline"><button id="choose-domain" class="text-button" type="button">← Daily puzzles</button><span id="puzzle-date"></span></div>
+      <div class="board-heading"><div><p class="econ-eyebrow">TODAY’S CONNECTIONS</p><h2 id="game-title" tabindex="-1"></h2></div><span class="daily-label">DAILY / <span id="domain-label"></span></span></div>
+      <p id="instructions">Create four groups of four. Select tiles, then submit.</p>
+      <div id="solved-groups" class="solved-groups" aria-label="Economic connections"></div>
+      <div id="tile-board" class="tile-board" role="group" aria-label="Unsolved economic terms" aria-describedby="instructions"></div>
+      <div class="board-status"><span id="attempts"></span><span id="group-count"></span><span id="selection-count"></span></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div id="actions" class="game-actions"><button id="shuffle" class="econ-button secondary" type="button">Shuffle</button><button id="deselect" class="econ-button secondary" type="button" disabled>Deselect All</button><button id="submit" class="econ-button primary" type="button" disabled>Submit group</button></div>
+      <section id="results" class="results" aria-labelledby="result-title" hidden>
+        <p class="econ-eyebrow" id="result-eyebrow"></p><h2 id="result-title" tabindex="-1"></h2>
+        <p id="result-description"></p><div id="result-stats" class="stats-strip"></div>
+        <p>Come back tomorrow for a new set of connections.</p>
+        <div class="result-actions"><button id="share" class="econ-button secondary" type="button">Copy results</button><button id="other-domain" class="econ-button primary" type="button"></button></div>
+        <label id="share-fallback" hidden>Copy your spoiler-free results<textarea id="share-text" readonly rows="5"></textarea></label>
+        <p id="share-status" role="status"></p>
+      </section>
+    </section>
+    <footer class="econ-footer"><span id="daily-date"></span><span>New puzzles at 00:00 UTC · About 2 minutes</span><a href="/privacy/">Saved on this device · Privacy</a></footer>
+    <noscript><p class="notice">Enable JavaScript to play Econ-nections. The game runs entirely in your browser.</p></noscript>
+  </main>
+</body>
+</html>
