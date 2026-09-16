@@ -1,142 +1,19 @@
-// Curated relationships, separate from the engine. Concept IDs reference the
-// canonical Composer registry; objective IDs should only be added after review.
-export const POOL_VERSION = '1';
-const group = (id, domain, category, difficulty, title, tiles, explanation, concepts, tags, extra = {}) => ({
-  id, domain, category, difficulty, title, tiles, explanation, concepts, tags,
-  sourceObjectives: [], ...extra,
-});
+import { GROUPS as LEGACY_GROUPS, BOARDS as LEGACY_BOARDS } from './pools/v1.js';
+import { MICRO_GROUPS } from './pools/micro-v2.js';
+import { MACRO_GROUPS } from './pools/macro-v2.js';
+import { BOARDS as LOCAL_BOARDS } from './pools/calendar-v2.js';
 
-export const GROUPS = [
-  group('mi-demand', 'micro', 'concept', 1, 'Demand shifters',
-    ['Buyer income', 'Consumer tastes', 'Prices of related goods', 'Buyer expectations'],
-    'Each can shift the entire demand curve. A change in the good’s own price instead changes quantity demanded.', ['demand'], ['demand', 'shifts']),
-  group('mi-ceiling', 'micro', 'causal', 2, 'A binding price ceiling',
-    ['Price below equilibrium', 'Quantity demanded exceeds supply', 'Shortage emerges', 'Nonprice rationing'],
-    'A ceiling below equilibrium creates a shortage in the standard competitive model. Queues or other nonprice mechanisms ration the limited supply.', ['binding-price-ceilings'], ['price-controls']),
-  group('mi-sunk', 'micro', 'trap', 3, 'Sunk costs: leave them out',
-    ['Nonrefundable ticket', 'Past advertising expense', 'Unrecoverable research spending', 'Forfeited application fee'],
-    'Once paid and unrecoverable, these costs should not affect a forward-looking marginal decision. Future avoidable costs still matter.', ['sunk-avoidable-costs'], ['decision-making', 'sunk-costs']),
-  group('mi-public', 'micro', 'concept', 4, 'Public goods in the textbook model',
-    ['National defense', 'Nonexclusive flood protection', 'Unencrypted public broadcast', 'Publicly available theorem'],
-    'These examples are nonrival and nonexcludable under the stated conditions. Public funding alone does not make something a public good.', ['public-goods-and-common-resources'], ['public-goods']),
-
-  group('mi-supply', 'micro', 'concept', 1, 'Supply shifters',
-    ['Input costs', 'Production technology', 'Number of sellers', 'Per-unit producer tax'],
-    'These factors change how much firms offer at each price, shifting supply rather than causing a movement along it.', ['supply'], ['supply', 'shifts']),
-  group('mi-trade', 'micro', 'causal', 2, 'Comparative advantage → gains from trade',
-    ['Compare opportunity costs', 'Specialize at lower relative cost', 'Trade at mutually beneficial terms', 'Consume beyond own PPF'],
-    'In the standard trade model, specialization by comparative advantage and a trading price between opportunity costs can expand consumption possibilities.', ['gains-from-trade'], ['trade']),
-  group('mi-movement', 'micro', 'trap', 3, 'Movement along demand, not a shift',
-    ['Own-price change', 'Other demand factors fixed', 'Same demand curve', 'Quantity demanded changes'],
-    'Holding other determinants constant, changing the good’s own price moves the buyer along an existing demand curve.', ['demand'], ['movement-versus-shift'], { incompatibleWith: ['mi-demand', 'mi-demand-up'] }),
-  group('mi-monopoly', 'micro', 'concept', 4, 'Barriers that sustain monopoly power',
-    ['Exclusive patent', 'Control of a key resource', 'Exclusive operating license', 'Natural monopoly cost structure'],
-    'Legal protection, resource control, or economies of scale can prevent entry and sustain market power.', ['monopoly-power-barriers'], ['monopoly']),
-
-  group('mi-elasticity', 'micro', 'concept', 1, 'Four elasticity measures',
-    ['Price elasticity of demand', 'Price elasticity of supply', 'Income elasticity', 'Cross-price elasticity'],
-    'Elasticities measure responsiveness using percentage changes. The relevant price or income variable differs across these four measures.', ['elasticity'], ['elasticity']),
-  group('mi-demand-up', 'micro', 'causal', 2, 'Demand increases, supply unchanged',
-    ['Demand shifts right', 'Excess demand at old price', 'Equilibrium price rises', 'Equilibrium quantity rises'],
-    'With downward-sloping demand and upward-sloping supply, a rightward demand shift raises both equilibrium price and quantity.', ['market-equilibrium'], ['demand', 'equilibrium'], { incompatibleWith: ['mi-demand', 'mi-movement'] }),
-  group('mi-economic-cost', 'micro', 'trap', 3, 'Implicit costs, even without a bill',
-    ['Forgone owner salary', 'Forgone rent on owned space', 'Forgone interest on own funds', 'Value of owner’s unpaid time'],
-    'Using your own resources has an opportunity cost. Economic profit deducts implicit as well as explicit costs; accounting profit does not deduct implicit costs.', ['economic-costs'], ['implicit-costs']),
-  group('mi-game', 'micro', 'concept', 4, 'Elements of a strategic game',
-    ['Players', 'Available strategies', 'Payoff functions', 'Information structure'],
-    'A game specifies who chooses, their available actions, what they know, and the payoff from each combination of actions.', ['oligopoly-game-theory-foundations'], ['game-theory']),
-
-  group('mi-costs', 'micro', 'concept', 1, 'Short-run cost measures',
-    ['Fixed cost', 'Variable cost', 'Average total cost', 'Marginal cost'],
-    'These summarize production costs: fixed and variable components, cost per unit, and the added cost of one more unit.', ['costs-of-production'], ['costs']),
-  group('mi-tax', 'micro', 'causal', 2, 'A per-unit tax on a competitive market',
-    ['Buyer–seller price wedge', 'Fewer units traded', 'Government tax receipts', 'Lost gains from exchange'],
-    'With ordinary downward-sloping demand and upward-sloping supply, a tax reduces trade, raises revenue, and creates deadweight loss.', ['tax-wedges-and-revenue'], ['taxation']),
-  group('mi-external', 'micro', 'trap', 3, 'External costs beyond the transaction',
-    ['Smoke harming neighbors', 'Noise disturbing residents', 'Runoff damaging fisheries', 'Emissions warming the climate'],
-    'These impose uncompensated costs on third parties. Private market costs omit part of the social cost.', ['externalities'], ['external-costs']),
-  group('mi-discrimination', 'micro', 'concept', 4, 'Conditions for price discrimination',
-    ['Some market power', 'Different willingness to pay', 'Ability to separate buyers', 'Limited resale'],
-    'Charging different buyers different prices for the same good requires market power, differences in willingness to pay, and a way to limit arbitrage.', ['monopoly-price-discrimination'], ['pricing']),
-
-  group('ma-gdp', 'macro', 'concept', 1, 'The expenditure components of GDP',
-    ['Consumption', 'Investment', 'Government purchases', 'Net exports'],
-    'GDP = C + I + G + NX. Investment means new capital, housing, and inventory changes; government transfers are not government purchases.', ['gdp-components'], ['gdp']),
-  group('ma-money', 'macro', 'causal', 2, 'Expansionary monetary transmission',
-    ['Policy rate falls', 'Borrowing becomes cheaper', 'Interest-sensitive spending rises', 'Aggregate demand expands'],
-    'Other things equal, a lower policy rate can stimulate borrowing and spending, shifting aggregate demand right. Transmission is not instantaneous or guaranteed.', ['monetary-policy-transmission'], ['monetary-policy']),
-  group('ma-real', 'macro', 'trap', 3, 'Real measures: adjusted for prices',
-    ['Constant-price GDP', 'Purchasing-power wage', 'Inflation-adjusted return', 'Real household income'],
-    'Real measures adjust nominal amounts for price changes, helping separate purchasing power or output from changes in the price level.', ['real-versus-nominal-gdp', 'indexing-and-real-values'], ['real-versus-nominal']),
-  group('ma-bank', 'macro', 'concept', 4, 'Assets on a commercial bank’s balance sheet',
-    ['Vault cash', 'Central-bank reserve balance', 'Loans to customers', 'Bank-owned securities'],
-    'These are assets of the bank. Customer deposits are liabilities; bank capital is assets minus liabilities.', ['bank-balance-sheets-reserves-and-capital'], ['banking']),
-
-  group('ma-unemployment', 'macro', 'concept', 1, 'Frictional unemployment: between jobs',
-    ['Graduate searching for first job', 'Worker relocating between jobs', 'Job seeker comparing offers', 'Quitter searching for a better fit'],
-    'Each is actively seeking work during normal matching and search. Skill mismatch is structural; recession-driven job loss is cyclical.', ['unemployment-types'], ['unemployment']),
-  group('ma-supply-shock', 'macro', 'causal', 2, 'An adverse short-run supply shock',
-    ['Input energy costs surge', 'Short-run supply shifts left', 'Output falls as prices rise', 'Stagflation pressure'],
-    'With aggregate demand unchanged, a rise in input costs shifts SRAS left and lowers real output while raising the price level.', ['demand-and-supply-shocks'], ['ad-as']),
-  group('ma-deficit', 'macro', 'trap', 3, 'Deficit: a flow, not the debt stock',
-    ['Spending exceeds revenue', 'Measured over a fiscal year', 'Annual borrowing gap', 'Adds to outstanding debt'],
-    'A budget deficit is the excess of spending over revenue during a period. Debt is an accumulated stock; valuation and other adjustments can also change it.', ['deficits-debt-and-government-borrowing'], ['fiscal-accounting']),
-  group('ma-cpi-bias', 'macro', 'concept', 4, 'Challenges in measuring consumer inflation',
-    ['Substitution between goods', 'New goods appear', 'Product quality changes', 'Shopping outlets change'],
-    'A price index must account for substitution, new products, quality changes, and outlet changes. Statistical adjustments reduce, but do not eliminate, measurement challenges.', ['cpi-bias'], ['inflation-measurement']),
-
-  group('ma-growth', 'macro', 'concept', 1, 'Sources of labor productivity',
-    ['Physical capital per worker', 'Human capital', 'Natural resources per worker', 'Technological knowledge'],
-    'Capital, skills, resources, and technology help determine output per worker and long-run living standards.', ['sources-of-productivity'], ['growth']),
-  group('ma-crowding', 'macro', 'causal', 2, 'Crowding out in the loanable-funds model',
-    ['Budget deficit expands', 'National saving decreases', 'Real interest rate rises', 'Private investment declines'],
-    'In the closed-economy loanable-funds model, a larger deficit reduces national saving, raises the real interest rate, and crowds out investment, other things equal.', ['crowding-out-and-capital-formation'], ['fiscal-policy']),
-  group('ma-multiplier', 'macro', 'trap', 3, 'Assumptions behind the simple 1/r multiplier',
-    ['No excess reserves', 'No currency drain', 'All loan proceeds redeposited', 'Fixed required reserve ratio'],
-    'The textbook deposit multiplier 1/r is conditional on these assumptions. It is not a mechanical forecast of modern bank lending or money growth.', ['deposit-creation-and-money-multiplier'], ['banking', 'model-limits']),
-  group('ma-auto', 'macro', 'concept', 4, 'Automatic fiscal stabilizers in a downturn',
-    ['Income-tax receipts fall', 'Unemployment benefits rise', 'Means-tested aid expands', 'Existing tax brackets reduce burdens'],
-    'Existing tax and benefit rules cushion falling disposable income without requiring a new discretionary policy. Exact effects depend on program design.', ['fiscal-policy-and-aggregate-demand'], ['automatic-stabilizers']),
-
-  group('ma-cpi', 'macro', 'concept', 1, 'Building a fixed-basket price index',
-    ['Choose a consumer basket', 'Record item prices', 'Calculate basket cost', 'Compare with base-year cost'],
-    'A basic CPI compares the cost of a fixed consumer basket with its base-year cost, multiplied by 100. Inflation is the percentage change in the index.', ['cpi-and-inflation-measurement'], ['price-index']),
-  group('ma-ad', 'macro', 'causal', 2, 'Demand-driven expansion in the short run',
-    ['Autonomous spending increases', 'AD curve shifts right', 'Real output rises', 'Price level rises'],
-    'With upward-sloping SRAS unchanged, stronger aggregate demand raises both real output and the price level in the short run.', ['aggregate-demand'], ['ad-as']),
-  group('ma-exclusions', 'macro', 'trap', 3, 'Not current domestic production in GDP',
-    ['Purchase of existing shares', 'Resale of a used car', 'Government transfer payment', 'Unpaid household cooking'],
-    'These transactions or activities are excluded from measured current GDP. Newly provided brokerage and resale services do count.', ['gdp-measurement'], ['gdp-boundary'], { incompatibleWith: ['ma-gdp'] }),
-  group('ma-money-functions', 'macro', 'concept', 4, 'Money serving as a unit of account',
-    ['Menu prices in dollars', 'Accounts recorded in euros', 'Invoice totals in yen', 'Debt quoted in pounds'],
-    'Money is the common measuring unit in each example. Paying is the medium-of-exchange role; holding purchasing power is the store-of-value role.', ['money-functions-and-measures'], ['money-functions']),
-];
-
-// Reviewed combinations, rather than arbitrary mixing of plausible categories.
-// Order is difficulty 1 → 4. Each domain cycles through eight boards.
-export const BOARDS = {
-  micro: [
-    ['mi-demand', 'mi-ceiling', 'mi-sunk', 'mi-public'],
-    ['mi-supply', 'mi-trade', 'mi-movement', 'mi-monopoly'],
-    ['mi-elasticity', 'mi-demand-up', 'mi-economic-cost', 'mi-game'],
-    ['mi-costs', 'mi-tax', 'mi-external', 'mi-discrimination'],
-    ['mi-demand', 'mi-trade', 'mi-external', 'mi-game'],
-    ['mi-supply', 'mi-ceiling', 'mi-economic-cost', 'mi-discrimination'],
-    ['mi-elasticity', 'mi-tax', 'mi-movement', 'mi-public'],
-    ['mi-costs', 'mi-demand-up', 'mi-sunk', 'mi-monopoly'],
-  ],
-  macro: [
-    ['ma-gdp', 'ma-money', 'ma-real', 'ma-bank'],
-    ['ma-unemployment', 'ma-supply-shock', 'ma-deficit', 'ma-cpi-bias'],
-    ['ma-growth', 'ma-crowding', 'ma-multiplier', 'ma-auto'],
-    ['ma-cpi', 'ma-ad', 'ma-exclusions', 'ma-money-functions'],
-    ['ma-gdp', 'ma-supply-shock', 'ma-multiplier', 'ma-money-functions'],
-    ['ma-unemployment', 'ma-crowding', 'ma-real', 'ma-bank'],
-    ['ma-growth', 'ma-ad', 'ma-deficit', 'ma-cpi-bias'],
-    ['ma-cpi', 'ma-money', 'ma-exclusions', 'ma-auto'],
-  ],
+export const POOL_VERSION = '2';
+const authoredGroups = [...MICRO_GROUPS, ...MACRO_GROUPS];
+// Authored ambiguity families are conservative exclusion rules, not a runtime
+// board generator. Materialize explicit incompatibleWith IDs for every group.
+export const GROUPS = authoredGroups.map(group => ({ ...group,
+  incompatibleWith: authoredGroups.filter(other => other.id !== group.id && other.domain === group.domain
+    && group.ambiguityFamilies.some(family => other.ambiguityFamilies.includes(family))).map(other => other.id),
+}));
+export const BOARDS = LOCAL_BOARDS;
+// v1 is a frozen historical answer key. Do not migrate its dates or overwrite it.
+export const PUZZLE_POOLS = {
+  '1': { groups: LEGACY_GROUPS, boards: LEGACY_BOARDS, dateBasis: 'utc' },
+  '2': { groups: GROUPS, boards: BOARDS, dateBasis: 'local' },
 };
-
-// Retain every published pool here when adding a new version so old results can
-// still be replayed. Never edit the groups/boards of an already published pool.
-export const PUZZLE_POOLS = { '1': { groups: GROUPS, boards: BOARDS } };

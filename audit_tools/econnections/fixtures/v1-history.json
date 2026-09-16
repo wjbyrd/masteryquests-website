@@ -1,0 +1,181 @@
+{
+  "poolHash": "0be8763970f4f19451e535f3da344c9e1a2c1c001ea9fb27f4d129143b0561c5",
+  "records": [
+    {
+      "puzzleId": "econnections:1:2026-09-15:micro",
+      "date": "2026-09-15",
+      "domain": "micro",
+      "poolVersion": "1",
+      "started": true,
+      "completed": true,
+      "solved": true,
+      "groupsSolved": 4,
+      "solvedGroupIds": [
+        "mi-supply",
+        "mi-ceiling",
+        "mi-economic-cost",
+        "mi-discrimination"
+      ],
+      "strikesUsed": 0,
+      "incorrectSubmissions": [],
+      "attempts": [
+        [
+          "mi-supply:1",
+          "mi-supply:2",
+          "mi-supply:3",
+          "mi-supply:0"
+        ],
+        [
+          "mi-ceiling:3",
+          "mi-ceiling:1",
+          "mi-ceiling:0",
+          "mi-ceiling:2"
+        ],
+        [
+          "mi-economic-cost:3",
+          "mi-economic-cost:2",
+          "mi-economic-cost:1",
+          "mi-economic-cost:0"
+        ],
+        [
+          "mi-discrimination:0",
+          "mi-discrimination:2",
+          "mi-discrimination:1",
+          "mi-discrimination:3"
+        ]
+      ],
+      "elapsedTimeMs": 65000,
+      "tileOrder": [
+        "mi-ceiling:3",
+        "mi-supply:1",
+        "mi-economic-cost:3",
+        "mi-ceiling:1",
+        "mi-economic-cost:2",
+        "mi-economic-cost:1",
+        "mi-ceiling:0",
+        "mi-supply:2",
+        "mi-economic-cost:0",
+        "mi-discrimination:0",
+        "mi-supply:3",
+        "mi-supply:0",
+        "mi-discrimination:2",
+        "mi-ceiling:2",
+        "mi-discrimination:1",
+        "mi-discrimination:3"
+      ]
+    },
+    {
+      "puzzleId": "econnections:1:2026-09-16:macro",
+      "date": "2026-09-16",
+      "domain": "macro",
+      "poolVersion": "1",
+      "started": true,
+      "completed": true,
+      "solved": false,
+      "groupsSolved": 0,
+      "solvedGroupIds": [],
+      "strikesUsed": 3,
+      "incorrectSubmissions": [
+        [
+          "ma-growth:1",
+          "ma-ad:1",
+          "ma-deficit:2",
+          "ma-cpi-bias:0"
+        ],
+        [
+          "ma-growth:2",
+          "ma-ad:2",
+          "ma-deficit:0",
+          "ma-cpi-bias:2"
+        ],
+        [
+          "ma-growth:3",
+          "ma-ad:3",
+          "ma-deficit:1",
+          "ma-cpi-bias:3"
+        ]
+      ],
+      "attempts": [
+        [
+          "ma-growth:1",
+          "ma-ad:1",
+          "ma-deficit:2",
+          "ma-cpi-bias:0"
+        ],
+        [
+          "ma-growth:2",
+          "ma-ad:2",
+          "ma-deficit:0",
+          "ma-cpi-bias:2"
+        ],
+        [
+          "ma-growth:3",
+          "ma-ad:3",
+          "ma-deficit:1",
+          "ma-cpi-bias:3"
+        ]
+      ],
+      "elapsedTimeMs": 65000,
+      "tileOrder": [
+        "ma-deficit:2",
+        "ma-deficit:0",
+        "ma-cpi-bias:0",
+        "ma-ad:1",
+        "ma-ad:2",
+        "ma-cpi-bias:2",
+        "ma-cpi-bias:3",
+        "ma-growth:1",
+        "ma-deficit:1",
+        "ma-growth:2",
+        "ma-cpi-bias:1",
+        "ma-growth:3",
+        "ma-growth:0",
+        "ma-ad:3",
+        "ma-deficit:3",
+        "ma-ad:0"
+      ]
+    },
+    {
+      "puzzleId": "econnections:1:2026-09-17:micro",
+      "date": "2026-09-17",
+      "domain": "micro",
+      "poolVersion": "1",
+      "started": true,
+      "completed": false,
+      "solved": false,
+      "groupsSolved": 1,
+      "solvedGroupIds": [
+        "mi-costs"
+      ],
+      "strikesUsed": 0,
+      "incorrectSubmissions": [],
+      "attempts": [
+        [
+          "mi-costs:2",
+          "mi-costs:3",
+          "mi-costs:1",
+          "mi-costs:0"
+        ]
+      ],
+      "elapsedTimeMs": 65000,
+      "tileOrder": [
+        "mi-costs:2",
+        "mi-sunk:0",
+        "mi-monopoly:0",
+        "mi-monopoly:3",
+        "mi-monopoly:2",
+        "mi-sunk:1",
+        "mi-costs:3",
+        "mi-demand-up:3",
+        "mi-demand-up:0",
+        "mi-sunk:2",
+        "mi-costs:1",
+        "mi-sunk:3",
+        "mi-monopoly:1",
+        "mi-demand-up:1",
+        "mi-demand-up:2",
+        "mi-costs:0"
+      ]
+    }
+  ]
+}

@@ -1,12 +1,7 @@
 import { GROUPS, BOARDS, POOL_VERSION, PUZZLE_POOLS } from './econnections_groups.js';
+import { localDate, dayNumber } from './calendar-date.js';
+export { localDate, dayNumber } from './calendar-date.js';
 
-export const DAY_MS = 86400000;
-export const utcDate = (now = new Date()) => now.toISOString().slice(0, 10);
-export function dayNumber(date) {
-  const value = Date.parse(`${date}T00:00:00Z`);
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !Number.isFinite(value) || utcDate(new Date(value)) !== date) throw new Error('Invalid puzzle date.');
-  return value / DAY_MS;
-}
 export function hash(value) {
   let result = 2166136261;
   for (const character of value) result = Math.imul(result ^ character.charCodeAt(0), 16777619);
@@ -34,20 +29,29 @@ export function validatePool(groups = GROUPS, boards = BOARDS) {
     if (!Array.isArray(group.tiles) || group.tiles.length !== 4 || group.tiles.some(t => typeof t !== 'string' || !t.trim()) || new Set(group.tiles.map(normalizeLabel)).size !== 4) errors.push(`Invalid tiles: ${group.id}`);
   }
   for (const domain of ['micro', 'macro']) {
+    const boardKeys = new Set();
     if (!boards[domain]?.length) errors.push(`No boards: ${domain}`);
     for (const [index, board] of (boards[domain] || []).entries()) {
       const selected = board.map(id => groups.find(g => g.id === id));
       const name = `${domain} board ${index + 1}`;
       if (board.length !== 4 || new Set(board).size !== 4 || selected.some(g => !g || g.domain !== domain)) { errors.push(`Invalid groups: ${name}`); continue; }
+      const key = [...board].sort().join('|');
+      if (boardKeys.has(key)) errors.push(`Repeated board: ${name}`);
+      boardKeys.add(key);
       if (new Set(selected.map(g => g.difficulty)).size !== 4) errors.push(`Difficulty mix: ${name}`);
       if (new Set(selected.flatMap(g => g.tiles).map(normalizeLabel)).size !== 16) errors.push(`Overlapping labels: ${name}`);
       if (selected.some(g => g.incompatibleWith?.some(id => board.includes(id)))) errors.push(`Incompatible relationships: ${name}`);
+      if (new Set(selected.map(g => g.category)).size < 2) errors.push(`Relationship variety: ${name}`);
+      for (const [i, group] of selected.entries()) for (const other of selected.slice(i + 1)) {
+        if (group.ambiguityFamilies?.some(family => other.ambiguityFamilies?.includes(family))) errors.push(`Semantic family collision: ${name}: ${group.id} / ${other.id}`);
+      }
     }
   }
+  for (const group of groups) if (group.incompatibleWith?.some(id => !ids.has(id) || id === group.id)) errors.push(`Unknown/self incompatibility: ${group.id}`);
   return errors;
 }
 
-export function createPuzzle(domain, date = utcDate(), version = POOL_VERSION) {
+export function createPuzzle(domain, date = localDate(), version = POOL_VERSION) {
   const pool = PUZZLE_POOLS[version];
   if (!['micro', 'macro'].includes(domain) || !pool?.boards?.[domain]) throw new Error('Unknown puzzle domain or pool version.');
   const day = dayNumber(date);
@@ -55,10 +59,10 @@ export function createPuzzle(domain, date = utcDate(), version = POOL_VERSION) {
   const groups = pool.boards[domain][index].map(id => pool.groups.find(g => g.id === id));
   const puzzleId = `econnections:${version}:${date}:${domain}`;
   const tiles = shuffled(groups.flatMap(g => g.tiles.map((label, i) => ({ id: `${g.id}:${i}`, label, groupId: g.id }))), hash(puzzleId));
-  return { puzzleId, date, domain, poolVersion: version, groups, tiles };
+  return { puzzleId, date, domain, poolVersion: version, dateBasis: pool.dateBasis, groups, tiles };
 }
 export function startRecord(puzzle) {
-  return { puzzleId: puzzle.puzzleId, date: puzzle.date, domain: puzzle.domain, poolVersion: puzzle.poolVersion,
+  return { puzzleId: puzzle.puzzleId, date: puzzle.date, domain: puzzle.domain, poolVersion: puzzle.poolVersion, dateBasis: puzzle.dateBasis,
     started: true, completed: false, solved: false, groupsSolved: 0, solvedGroupIds: [], strikesUsed: 0,
     incorrectSubmissions: [], attempts: [], elapsedTimeMs: 0, tileOrder: puzzle.tiles.map(t => t.id) };
 }
@@ -102,18 +106,28 @@ export function streakFor(dates, today) {
   const currentStreak = last === dayNumber(today) || last === dayNumber(today) - 1 ? run : 0;
   return { currentStreak, bestStreak };
 }
-export function summarize(records, today = utcDate()) {
-  const eligible = records.filter(r => r.started && r.date <= today);
+export function summarize(records, today = localDate()) {
+  // Count actual historical games once, without guessing a local date for a v1
+  // save that has no play/completion timestamp. Legacy dates never drive a live
+  // local-calendar streak, even if a UTC label is "tomorrow" locally.
+  const unique = [...new Map(records.filter(r => r.started).map(r => [r.puzzleId, r])).values()];
+  const legacy = unique.filter(r => PUZZLE_POOLS[r.poolVersion]?.dateBasis === 'utc');
+  const local = unique.filter(r => PUZZLE_POOLS[r.poolVersion]?.dateBasis === 'local' && r.date <= today);
+  const eligible = [...legacy, ...local];
   const stats = { gamesPlayed: eligible.length, gamesCompleted: eligible.filter(r => r.completed).length,
     gamesSolved: eligible.filter(r => r.solved).length, perfectSolves: eligible.filter(r => r.solved && r.strikesUsed === 0).length,
-    ...streakFor(eligible.filter(r => r.solved).map(r => r.date), today), domains: {} };
+    ...streakFor(local.filter(r => r.solved).map(r => r.date), today), domains: {},
+    legacyHistory: { gamesPlayed: legacy.length, gamesCompleted: legacy.filter(r => r.completed).length,
+      gamesSolved: legacy.filter(r => r.solved).length,
+      bestStreak: streakFor(legacy.filter(r => r.solved).map(r => r.date), today).bestStreak } };
   for (const domain of ['micro', 'macro']) {
     const subset = eligible.filter(r => r.domain === domain);
+    const localSubset = local.filter(r => r.domain === domain);
     stats[`${domain}Played`] = subset.length;
     stats[`${domain}Solved`] = subset.filter(r => r.solved).length;
-    stats.domains[domain] = { lastCompletedDate: subset.filter(r => r.completed).map(r => r.date).sort().at(-1) || null,
-      lastSolvedDate: subset.filter(r => r.solved).map(r => r.date).sort().at(-1) || null,
-      ...streakFor(subset.filter(r => r.solved).map(r => r.date), today) };
+    stats.domains[domain] = { lastCompletedDate: localSubset.filter(r => r.completed).map(r => r.date).sort().at(-1) || null,
+      lastSolvedDate: localSubset.filter(r => r.solved).map(r => r.date).sort().at(-1) || null,
+      ...streakFor(localSubset.filter(r => r.solved).map(r => r.date), today) };
   }
   return stats;
 }

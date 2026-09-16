@@ -1,11 +1,12 @@
-import { createPuzzle, startRecord, submitGroup, summarize, utcDate, shuffled, validatePool } from './engine.js';
+import { createPuzzle, startRecord, submitGroup, summarize, localDate, shuffled, validatePool } from './engine.js';
+import { displayDate } from './calendar-date.js';
 import { createStore, STORAGE_PREFIX } from './storage.js';
 
 const $ = id => document.getElementById(id);
 const domainName = domain => domain === 'micro' ? 'Micro' : 'Macro';
-const niceDate = date => new Intl.DateTimeFormat('en', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
+const niceDate = displayDate;
 const duration = ms => `${Math.floor(ms / 60000)}:${String(Math.floor(ms / 1000) % 60).padStart(2, '0')}`;
-let today = utcDate(), puzzle = null, record = null, selection = new Set(), lastTick = null;
+let today = localDate(), puzzle = null, record = null, selection = new Set(), lastTick = null;
 let storage;
 try { storage = window.localStorage; } catch { /* The store supplies a visible warning and an in-memory fallback. */ }
 const store = createStore(storage, message => { $('storage-warning').textContent = message; $('storage-warning').hidden = false; });
@@ -53,12 +54,12 @@ function saveProgress() {
   if (changed) renderGame();
 }
 function checkDay() {
-  const date = utcDate();
+  const date = localDate();
   if (date === today) return false;
   saveProgress(); today = date; puzzle = null; record = null; selection.clear(); lastTick = null;
   document.body.classList.remove('playing');
   $('game').hidden = true; $('landing').hidden = false;
-  $('day-notice').textContent = 'A new UTC day has begun. Today’s Micro and Macro puzzles are ready; earlier progress is kept in your local history.';
+  $('day-notice').textContent = 'A new day has begun. Today’s Micro and Macro puzzles are ready; earlier progress is kept in your local history.';
   $('day-notice').hidden = false;
   updateLanding(); $('landing-title').focus(); return true;
 }
@@ -83,7 +84,7 @@ function updateSelection() {
 function renderGame() {
   $('game-title').textContent = `${domainName(puzzle.domain)} connections`;
   $('domain-label').textContent = puzzle.domain.toUpperCase();
-  $('puzzle-date').textContent = `${niceDate(puzzle.date)} · UTC`;
+  $('puzzle-date').textContent = niceDate(puzzle.date);
   $('solved-groups').replaceChildren();
   for (const group of puzzle.groups.filter(g => record.completed || record.solvedGroupIds.includes(g.id)).sort((a, b) => a.difficulty - b.difficulty)) {
     const card = document.createElement('article'); card.className = 'connection'; card.dataset.difficulty = group.difficulty;
@@ -176,7 +177,7 @@ $('choose-domain').addEventListener('click', () => {
 document.querySelectorAll('[data-domain]').forEach(button => button.addEventListener('click', () => openDomain(button.dataset.domain)));
 $('other-domain').addEventListener('click', () => openDomain(puzzle.domain === 'micro' ? 'macro' : 'micro'));
 $('share').addEventListener('click', async () => {
-  const summary = `Econ-nections · ${domainName(puzzle.domain)} · ${puzzle.date} UTC\n${record.solved ? 'Solved' : 'Completed, not solved'} · ${record.groupsSolved}/4 connections\n${record.strikesUsed}/3 strikes · ${duration(record.elapsedTimeMs)}\n${new URL('/games/econnections/', location.origin).href}`;
+  const summary = `Econ-nections · ${domainName(puzzle.domain)} · ${puzzle.date}\n${record.solved ? 'Solved' : 'Completed, not solved'} · ${record.groupsSolved}/4 connections\n${record.strikesUsed}/3 strikes · ${duration(record.elapsedTimeMs)}\n${new URL('/games/econnections/', location.origin).href}`;
   try { await navigator.clipboard.writeText(summary); $('share-status').textContent = 'Spoiler-free results copied.'; }
   catch { $('share-fallback').hidden = false; $('share-text').value = summary; $('share-text').focus(); $('share-text').select(); $('share-status').textContent = 'Select and copy the summary below.'; }
 });

@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { GROUPS, BOARDS } from '../../games/econnections/econnections_groups.js';
-import { createPuzzle, startRecord, submitGroup, restoreRecord, summarize, validatePool, utcDate, dayNumber } from '../../games/econnections/engine.js';
+import { GROUPS, BOARDS, PUZZLE_POOLS } from '../../games/econnections/econnections_groups.js';
+import { createPuzzle, startRecord, submitGroup, restoreRecord, summarize, validatePool, localDate, dayNumber } from '../../games/econnections/engine.js';
 import { createStore } from '../../games/econnections/storage.js';
 
 const tilesFor = (puzzle, group) => puzzle.tiles.filter(t => t.groupId === group.id).map(t => t.id);
@@ -17,43 +17,55 @@ function memoryStorage() {
   return { get length() { return values.size; }, key: i => [...values.keys()][i], getItem: key => values.get(key) ?? null, setItem: (key, value) => values.set(key, value) };
 }
 
-test('all 32 curated groups, 16 boards, and canonical concept references validate', () => {
+test('96 active relationships, 120 boards, and all canonical concept references validate', () => {
   assert.deepEqual(validatePool(), []);
   const registry = JSON.parse(readFileSync(new URL('../../build/faculty-build-composer/data/composer_registry.json', import.meta.url), 'utf8'));
   const concepts = new Set(registry.concepts.map(c => c.canonicalConceptId));
   for (const domain of ['micro', 'macro']) {
-    assert.equal(GROUPS.filter(g => g.domain === domain).length, 16);
-    assert.equal(BOARDS[domain].length, 8);
+    assert.equal(GROUPS.filter(g => g.domain === domain).length, 48);
+    assert.equal(BOARDS[domain].length, 60);
     assert.deepEqual(new Set(GROUPS.filter(g => g.domain === domain).map(g => g.category)), new Set(['concept', 'causal', 'trap']));
   }
   for (const group of GROUPS) for (const concept of group.concepts) assert.ok(concepts.has(concept), concept);
+  for (const group of GROUPS) {
+    assert.ok(group.explanation.trim() && group.notes.trim());
+    assert.deepEqual(group.sourceObjectives, []);
+    assert.ok(group.tiles.every(t => t.length <= 40));
+    assert.ok(group.incompatibleWith.length > 0);
+  }
   const used = new Set(Object.values(BOARDS).flat(2));
   assert.ok(GROUPS.every(g => used.has(g.id)));
 });
 test('audit rejects duplicate labels and prohibited combinations', () => {
   const badGroups = structuredClone(GROUPS); badGroups[0].tiles[1] = badGroups[0].tiles[0];
   assert.ok(validatePool(badGroups).some(e => e.includes('tiles')));
-  const badBoards = structuredClone(BOARDS); badBoards.micro[0] = ['mi-demand', 'mi-demand-up', 'mi-sunk', 'mi-public'];
+  const badBoards = structuredClone(BOARDS); badBoards.micro[0] = ['mi-demand-drivers', 'mi-ceiling-chain', 'mi-entry', 'mi-simultaneous'];
   assert.ok(validatePool(GROUPS, badBoards).some(e => e.includes('Incompatible')));
+  const repeated = structuredClone(BOARDS); repeated.micro[1] = [...repeated.micro[0]].reverse();
+  assert.ok(validatePool(GROUPS, repeated).some(e => e.includes('Repeated board')));
 });
-test('daily selection is deterministic, domain-specific, and cycles all boards without adjacent repeats', () => {
+test('five years of dates are deterministic, with no board repeat sooner than 60 calendar days', () => {
   for (const domain of ['micro', 'macro']) {
-    const seen = new Set(); let previous;
-    for (let day = 0; day < 366; day++) {
-      const date = utcDate(new Date(Date.UTC(2026, 0, 1 + day)));
+    const seen = new Map(); let previous;
+    for (let day = 0; day < 1827; day++) {
+      const date = localDate(new Date(2026, 0, 1 + day, 12));
       const puzzle = createPuzzle(domain, date);
       assert.deepEqual(puzzle, createPuzzle(domain, date));
       assert.equal(new Set(puzzle.tiles.map(t => t.label)).size, 16);
-      const ids = puzzle.groups.map(g => g.id).join(); seen.add(ids);
+      const ids = puzzle.groups.map(g => g.id).sort().join();
+      if (seen.has(ids)) assert.equal(day - seen.get(ids), 60);
+      seen.set(ids, day);
       assert.notEqual(ids, previous); previous = ids;
       assert.ok(puzzle.groups.every(g => g.domain === domain));
     }
-    assert.equal(seen.size, 8);
+    assert.equal(seen.size, 60);
   }
-  assert.equal(utcDate(new Date('2026-09-16T23:30:00-05:00')), '2026-09-17');
   assert.throws(() => dayNumber('2026-02-30'));
   assert.throws(() => createPuzzle('general'));
   assert.throws(() => createPuzzle('micro', '2026-09-16', 'unknown'));
+});
+test('legacy and local pools both remain structurally valid', () => {
+  for (const pool of Object.values(PUZZLE_POOLS)) assert.deepEqual(validatePool(pool.groups, pool.boards), []);
 });
 test('valid groups lock; four groups win even with two strikes; end state is immutable', () => {
   const puzzle = createPuzzle('micro', '2026-09-16');

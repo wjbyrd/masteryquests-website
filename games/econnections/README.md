@@ -1,82 +1,106 @@
-# Econ-nections v1
+# Econ-nections — local-date release (pool v2)
 
-A standalone daily economics classification game at `/games/econnections/`, linked from `/games/`. No account, backend, package install, or build step is required to play. Serve the repository over HTTP; ES modules do not work reliably with `file://`.
+Standalone game at `/games/econnections/`, linked from `/games/`. The existing game, UI, three strikes, colors, interactions, and quest systems are unchanged in this release. Serve the repository over HTTP; no backend, account, or package install is needed to play.
 
-## Structure
+## Local dates and rollover
 
-- `index.html`: accessible landing screen, game, results, and shared site branding.
-- `econnections.css`: scoped layout and neutral tiles; solved/revealed groups use difficulty-numbered light teal, teal, blue, and navy cards. Desktop uses four columns; screens at or below 420px use two readable columns. Mobile controls stay visible while scrolling.
-- `econnections.js`: DOM rendering, interaction, keyboard support, active-time accounting, rollover, result sharing, and cross-tab refresh.
-- `engine.js`: pure daily selection, pool validation, gameplay transitions, progress replay, and aggregate statistics.
-- `storage.js`: localStorage adapter with one record per puzzle and a visible warning/in-memory fallback for unavailable, full, or corrupt storage.
-- `econnections_groups.js`: 32 curated relationships and 16 curated boards, separate from game logic.
-- `package.json`: declares ES modules for Node-based audits; no dependencies.
-- `../../audit_tools/econnections/`: engine/content and real-browser regression checks. These stay outside public runtime assets.
+`calendar-date.js` centralizes `localDate()`, `displayDate()`, and `dayNumber()`.
 
-## Daily selection and content
+- `localDate()` uses the device's `getFullYear()`, `getMonth()`, and `getDate()`, explicitly padded to `YYYY-MM-DD`. It never converts the current clock to UTC.
+- Selection, new records, landing statuses, streaks, displayed dates, and share summaries use that local date. Example: 11:30 p.m. Eastern on September 16 is still the September 16 puzzle.
+- The existing five-second heartbeat compares local date labels. Interaction and visibility-return checks do the same. No fixed midnight timeout or timezone-offset assumption is used.
+- On a date change, the old record is saved, the active puzzle and selection are cleared, and the landing screen shows the new date. Finished records remain finished; unfinished records remain historical played games, not completions.
+- The footer says “New puzzles at local midnight.” There is no UTC label on the live UI.
+- The browser's timezone and clock are authoritative. Changing timezone can change which date is active; a previously played date resumes its same versioned record. The game makes no server-time or anti-cheat claim.
 
-Each domain has eight curated boards, each containing four groups (one each at difficulties 1–4). The board index is `(UTC epoch day + hash(domain + ':' + poolVersion)) mod boardCount`. A seeded Fisher–Yates shuffle uses the full puzzle ID for stable initial tile order. Manual shuffling changes presentation only.
+`dayNumber()` is pure Gregorian calendar arithmetic: year/month/day validation, leap-year rules, and an ordinal with 1970-01-01 as zero. It does not subtract local timestamps or divide durations by 86,400,000. A 23-hour or 25-hour DST date is still exactly one calendar day. The epoch also preserves v1's historical board indexes.
 
-The current ID is `econnections:1:YYYY-MM-DD:micro` or `...:macro`. All devices using the same release and UTC date see the same board. Puzzles reset at **00:00 UTC**, not local midnight. An open tab returns to the landing page at rollover; yesterday's unfinished record remains in local history and counts as played, not completed. System clock accuracy is assumed. There is no server clock or anti-cheat enforcement.
+## Streaks and historical compatibility
 
-**v1 tradeoff:** curated combinations reduce the ambiguity of arbitrary runtime mixing. Each domain's group combinations repeat after eight days, with a date-specific initial tile order. This is a representative starter library, not a long production calendar. Automated validation rejects duplicate IDs/labels, wrong counts, invalid classifications, missing metadata, unknown canonical concept references, prohibited pairings, and missing difficulty levels. Semantic ambiguity still needs editorial review.
+Played means entered. Completed means a win or third-strike loss. Solved means four groups found before the third strike. Solving either domain extends the overall streak; solving both on one local date counts once. Each domain also has its own streak. A loss cannot erase a solve in the other domain. Yesterday's streak remains current while today is still available; a missed date breaks it.
 
-The pool contains 16 Micro and 16 Macro groups. Both include concept, causal, and misconception/trap categories. Micro covers demand/supply, price controls, trade, elasticity, costs, taxation, externalities, public goods, monopoly, and strategic games. Macro covers GDP, unemployment, productivity, price measurement, AD–AS, policy transmission, fiscal accounting, banking, and money functions. Explanations state important model assumptions.
+**Migration decision:** v1 saves lack play/completion timestamps and timezone information, so their UTC date labels cannot be reliably converted into the player's original local dates.
 
-Every relationship supports:
+- Keep all existing `mq.econnections.result.econnections:1:...` records untouched. There is no destructive migration, copying, relabeling, or replacement of legacy keys.
+- Preserve the original content exactly in `pools/v1.js`; the registry still loads it to replay v1 attempts and reconstruct answers.
+- New active puzzles use `econnections:2:YYYY-MM-DD:micro` and `...:macro`, with `dateBasis: 'local'`. V1 uses `dateBasis: 'utc'` when reconstructed. The pool's date basis is authoritative, rather than a mutable saved flag.
+- Valid legacy games still count once toward lifetime played/completed/solved, perfect solves, and per-domain played/solved totals. A legacy UTC label that is tomorrow locally is still included in lifetime totals. Duplicate puzzle identities are deduplicated.
+- **Current/best local streaks and per-domain last completed/solved dates start from local-date records.** Legacy UTC dates do not extend, break, or inflate a local streak. This intentionally resets the displayed streak for existing v1 players on first upgrade; it does not erase their results.
+- `summarize().legacyHistory` exposes legacy played/completed/solved totals and the historical UTC best streak separately. Original per-game dates and attempts remain available through `store.all()`.
+- Today's v1 result never marks the new v2 daily puzzle complete. They are different games with independent identities; actually entering both counts two games, not a migration duplicate.
 
-```js
-{
-  id: 'unique-stable-id',
-  domain: 'micro',              // micro | macro
-  category: 'concept',          // concept | causal | trap
-  difficulty: 1,                // 1–4, also determines solved-card color
-  title: 'Relationship title',
-  tiles: ['A', 'B', 'C', 'D'],
-  explanation: 'A short explanation with any necessary assumptions.',
-  concepts: ['canonical-concept-id'],
-  tags: ['topic'],
-  sourceObjectives: [],         // verified canonical objectives only
-  notes: 'Optional editorial notes',
-  incompatibleWith: ['other-group-id'] // optional board exclusion
-}
-```
+Keep published pool versions available indefinitely while their local history is supported. A future pool change should add a new immutable registry entry and version, preferably with an explicit date-based activation schedule. Do not edit an existing published board order, group text, or answer key.
 
-`concepts` reference `build/faculty-build-composer/data/composer_registry.json`. Objective arrays are intentionally empty until exact objective mappings are reviewed; invented objective IDs are not shipped. The game does not load Composer question text or infer relationships at runtime. Future authoring tooling can export editorially approved groups from canonical metadata into this schema.
+## Content calendar and determinism
 
-For a new release, add a new entry to `PUZZLE_POOLS` and update `POOL_VERSION`. **Keep published pool entries and group arrays immutable and available**: saved records use their original version to reconstruct their answer key. Schedule a future pool switch at a UTC day boundary to avoid changing an already-played day's active puzzle. An activation-date selector can be added when the first scheduled content update is introduced. Never delete prior pool versions while their local history must remain readable.
+| Active v2 content | Micro | Macro |
+| --- | ---: | ---: |
+| Relationships | 48 | 48 |
+| Groups at each difficulty (1–4) | 12 | 12 |
+| Concept relationships | 21 | 19 |
+| Causal relationships | 11 | 12 |
+| Trap/misconception relationships | 16 | 17 |
+| Curated boards | 60 | 60 |
+| Exact-board repeat cycle | 60 local dates | 60 local dates |
 
-## Rules, persistence, and statistics
+The archived v1 pool additionally retains its 16 relationships and eight boards per domain. Those archived boards are not selected for new play.
 
-- Entering a domain creates a `started` record, counting as **played**.
-- Four unique, still-active tiles are required to submit. A correct set locks its group; a wrong set uses one strike. A previously tried wrong set gives feedback without another strike.
-- Four correct groups means **solved**; a third wrong set ends the puzzle as **completed, not solved** and reveals the remainder. Both are **completed**. Reveals do not count as solves.
-- Records are stored under `mq.econnections.result.<puzzleId>`. They include puzzle/version/date/domain, started/completed/solved, groups solved and IDs, strikes, incorrect submissions, attempt history, elapsed milliseconds, and tile order.
-- Attempts, shuffles, domain changes, page hide, and a five-second heartbeat save progress. Selected-but-unsubmitted tiles reset on reopening. The clock counts visible time while inside an unfinished puzzle; it pauses on the landing page, hidden tabs, and completion. It is shown at the end, not as a countdown.
-- Restore replays attempts against the versioned answer key, rather than trusting cached counters. Unsupported or malformed records trigger a warning and are left in storage; valid records remain playable. No data is sent off-device.
-- Lifetime totals are derived from result records, so reopening a result does not increment totals. Totals include played/completed/solved, perfect solves, Micro/Macro played and solved, overall current/best streak, and per-domain current/best streak and last completed/solved date.
-- A streak counts consecutive **UTC dates with at least one solve**. Solving both domains counts as one day. Yesterday's streak remains current while today is still available; a missed date breaks it. A loss does not erase a solve in the other domain that day. Completion alone does not extend a streak.
-- Separate keys prevent a Micro write from replacing Macro history. Storage events refresh progress from other tabs; each action reads existing progress before writing. This is local best-effort synchronization, not a transactional multiplayer system. Clearing browser storage clears the history; there is no account sync.
-- Result sharing copies a spoiler-free text summary. If clipboard access fails, an accessible selected text box lets the player copy manually.
+Each v2 board is a literal four-ID row in `pools/calendar-v2.js`, ordered by difficulty. Selection remains `(calendar day ordinal + hash(domain + ':' + poolVersion)) mod boardCount`; the puzzle ID seeds the initial Fisher–Yates tile shuffle. Same release, domain, and local date produce the same answer groups and initial tile order in every timezone. Players in different local dates can appropriately see different puzzles at the same instant.
 
-## Accessibility
+No complete four-group board repeats within the 60-day cycle. Individual groups deliberately recur in different combinations: Micro groups appear 4–7 times per cycle, Macro groups 2–10 times. Thus 60 boards does **not** mean 240 different groups per domain. The 60-board target was chosen over stretching to 90 to retain conservative separation between closely related macro mechanisms.
 
-Tiles are real buttons with `aria-pressed`; Tab, Space/Enter, arrow keys, and Escape work. Up/down movement follows the current column count. Status feedback is announced through a polite live region. Correct submissions move focus to the remaining board; completion moves it to the result heading. Difficulty and connected/revealed state have text labels as well as color. Controls have visible focus, touch-sized targets, and reduced-motion support.
+Micro spans scarcity, opportunity cost, marginal choices, incentives, trade, PPF, demand/supply, equilibrium, controls, elasticities, taxes/incidence, surplus, externalities, goods classification, costs, market structures, entry, monopoly, and strategy. Macro spans GDP, nominal/real measures, price indexes, inflation, labor markets, productivity/growth, saving/investment, finance, banks/reserves/capital, money, AD–AS, policy, multipliers, debt, Phillips curves, and expectations.
+
+## Relationship schema and editorial controls
+
+Each relationship contains `id`, `domain`, `category`, `difficulty`, `title`, four `tiles`, `explanation`, `concepts`, `tags`, `sourceObjectives`, `notes`, and `incompatibleWith`. V2 adds `ambiguityFamilies`: authored editorial exclusion labels. `relationship.js` is only shorthand for constructing this data shape.
+
+`concepts` are verified against `build/faculty-build-composer/data/composer_registry.json`. `sourceObjectives` remain empty unless an exact mapping is verified. The browser never invents relationships from questions or generates new boards.
+
+`econnections_groups.js` materializes explicit, symmetric `incompatibleWith` IDs from the authored ambiguity families. This is exclusion metadata, not runtime board assembly. The shipped calendar is static. Board curation avoids, for example:
+
+- Demand/supply shifts beside movements or similar equilibrium chains.
+- Supply shifters beside cost/scale/capacity groups.
+- Explicit costs beside sunk/implicit costs that could contain the same example.
+- Price discrimination beside elasticity or related pricing conditions.
+- GDP component lists beside GDP investment/exclusion lists.
+- Inflation surprises beside expected-inflation mechanisms.
+- AD expansions beside supply self-adjustment or money-demand chains.
+- Monetary transmission beside quantity-theory or other monetary mechanisms.
+- Other labor classifications beside unemployment-denominator traps.
+
+Validation rejects duplicate IDs, invalid domains/types/difficulties, missing metadata/explanations, malformed four-tile groups, normalized duplicate labels, unknown group or exclusion IDs, repeated boards (even reordered), missing difficulties, one-type-only boards, and family/incompatibility collisions. The audit additionally verifies canonical references, objective provenance, group usage, concise labels (maximum 40 characters; current maximum 36), and no repeated canonical concept inside a board. Every active board contains at least two relationship types.
+
+All 120 board combinations were reviewed through their intended meanings and exclusion rules. Further faculty/student playtesting should calibrate difficulty and expose unanticipated alternate readings; automated structural checks cannot prove semantic uniqueness. The notes and printable review sheets make that review concrete.
+
+## Files and responsibilities
+
+- `index.html`, `econnections.css`: existing UI and responsive layout; only the date-related footer text changed this pass.
+- `econnections.js`: existing interaction/controller with local-date selection, labels, and rollover.
+- `calendar-date.js`: local date helper, display formatting, Gregorian ordinal.
+- `engine.js`: selection, pool validation, unchanged game rules, restore, local/legacy statistics.
+- `storage.js`: unchanged per-puzzle localStorage adapter and fallback. Saves attempts, tile order, elapsed active time, and status; restores by replay. No account sync or network reporting.
+- `econnections_groups.js`: active version, registry, exclusion metadata.
+- `pools/v1.js`: exact archived v1 content.
+- `pools/micro-v2.js`, `pools/macro-v2.js`: active relationships and editorial notes.
+- `pools/calendar-v2.js`: 60 static boards per domain.
+- `pools/relationship.js`: data-shape helper.
+- `../../audit_tools/econnections/`: regression tests, frozen legacy fixture, and content audit/review tool.
+
+Runtime `.js` modules are included automatically by the existing publication builder. The engine uses the same progress, neutral tiles, solved-card colors, keyboard controls, active timer, result sharing, and mobile layout as v1.
 
 ## Verification
 
 From the repository root:
 
 ```text
-node --test audit_tools/econnections/engine.test.mjs
+node --test audit_tools/econnections/engine.test.mjs audit_tools/econnections/calendar-date.test.mjs
+node audit_tools/econnections/content-audit.mjs
+node audit_tools/econnections/content-audit.mjs --review
 node audit_tools/econnections/browser.test.mjs
 node audit_tools/public_documentation/check.cjs
 ```
 
-The browser test requires Playwright and Chrome. Set `PLAYWRIGHT_MODULE` to an absolute Playwright package path if needed; set `BROWSER_CHANNEL` or `BROWSER_EXECUTABLE` for another installed Chromium browser. It serves an ephemeral localhost site and writes screenshots to `tmp/econnections/`. The engine tests need only Node (18+).
+The 14 engine/date tests include six real timezones, month/year/leap/century boundaries, DST, legacy snapshots and hash parity, all content constraints, and 1,827 successive dates per domain with no repeat sooner than 60 days. Browser coverage includes the existing win/loss/persistence/keyboard/mobile checks plus an Eastern 8 p.m. non-rollover, local midnight, preserved completed/unfinished history, migration totals, and timezone-emulated DST/calendar transitions with streak display.
 
-The existing publication script `audit_tools/public_site_publication/build-dist.mjs` copies `games/` automatically. Runtime modules deliberately use `.js`; that script excludes `.mjs` audit files. There are no new routes or dependencies to configure. Source implementation does not itself publish the site.
-
-## Future expansion
-
-Add a larger reviewed calendar, Composer-authoring export, objective/skill mappings, and scheduled pool activation while retaining old versions. More editorial playtesting can tune difficulty, ambiguity, and the approximate two-minute target. Account sync, leaderboard, quests, and automatic relationship generation are outside v1.
+The browser runner requires Playwright and an installed Chromium browser. Set `PLAYWRIGHT_MODULE` if needed, and `BROWSER_CHANNEL` or `BROWSER_EXECUTABLE` for the browser. Set `ECON_SITE_ROOT` to a generated `dist/` directory to test the production bundle. Screenshots go to ignored `tmp/econnections/`. The audit and legacy fixture remain outside public runtime assets.

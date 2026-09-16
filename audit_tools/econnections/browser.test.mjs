@@ -27,14 +27,16 @@ const errors = [], passed = [];
 const check = label => { passed.push(label); console.log(`PASS ${label}`); };
 try {
   browser = await chromium.launch({ headless: true, ...(process.env.BROWSER_EXECUTABLE ? { executablePath: process.env.BROWSER_EXECUTABLE } : { channel: process.env.BROWSER_CHANNEL || 'chrome' }) });
-  const context = await browser.newContext({ viewport: { width: 1280, height: 1000 }, reducedMotion: 'reduce' });
+  const context = await browser.newContext({ viewport: { width: 1280, height: 1000 }, reducedMotion: 'reduce', timezoneId: 'America/New_York' });
   await context.grantPermissions(['clipboard-read', 'clipboard-write']);
   const page = await context.newPage();
   page.on('pageerror', error => errors.push(error.message));
   await page.clock.install({ time: new Date('2026-09-16T12:00:00Z') });
   await page.goto(`${origin}/games/`);
   await page.getByRole('link', { name: 'Play Econ-nections' }).last().click();
-  await page.locator('#micro-status').filter({ hasText: 'Not played today' }).waitFor();
+  await page.locator('#micro-status').filter({ hasText: 'Not played today · Play' }).waitFor();
+  assert.equal(await page.locator('#daily-date').innerText(), 'Sep 16, 2026');
+  assert.doesNotMatch(await page.locator('body').innerText(), /UTC/);
   await page.screenshot({ path: path.join(out, 'landing-desktop.png'), fullPage: true });
   check('Games entry opens the standalone landing page');
   await page.locator('[data-domain="micro"]').click();
@@ -92,14 +94,24 @@ try {
   assert.match(await page.locator('#macro-status').innerText(), /Completed today/);
   assert.deepEqual(await page.locator('#landing-stats .stat strong').allTextContents(), ['1', '1', '2', '2', '1', '1']);
   check('three-strike loss, repeat protection, reveal, revisit and distinct lifetime stats');
+  // 8 p.m. Eastern: crossing UTC midnight must not change either puzzle.
   await page.clock.setSystemTime(new Date('2026-09-17T00:00:01Z')); await page.clock.runFor(5000);
+  assert.ok(await page.locator('#day-notice').isHidden());
+  assert.match(await page.locator('#micro-status').innerText(), /Solved today/);
+  assert.match(await page.locator('#macro-status').innerText(), /Completed today/);
+  assert.equal(await page.locator('#daily-date').innerText(), 'Sep 16, 2026');
+  check('UTC midnight at 8 p.m. Eastern does not change local puzzles or statuses');
+  const oldResults = await page.evaluate(() => Object.keys(localStorage).filter(k => k.startsWith('mq.econnections.result.')).sort().map(k => [k, localStorage.getItem(k)]));
+  await page.clock.setSystemTime(new Date('2026-09-17T03:59:59Z')); await page.clock.runFor(6000);
   assert.ok(await page.locator('#day-notice').isVisible());
   assert.match(await page.locator('#micro-status').innerText(), /Not played/);
   await page.locator('[data-domain="micro"]').click();
   const next = await page.evaluate(async () => (await import('/games/econnections/engine.js')).createPuzzle('micro', '2026-09-17'));
   assert.notDeepEqual(next.groups.map(g => g.id), puzzle.groups.map(g => g.id));
   assert.equal(await page.locator('.tile').count(), 16);
-  check('UTC midnight rollover starts a new deterministic board and preserves history');
+  assert.equal(await page.locator('#puzzle-date').innerText(), 'Sep 17, 2026');
+  for (const [key, raw] of oldResults) assert.equal(await page.evaluate(key => localStorage.getItem(key), key), raw);
+  check('local midnight starts a new board and preserves completed history byte for byte');
   await page.setViewportSize({ width: 390, height: 844 });
   await page.screenshot({ path: path.join(out, 'board-mobile.png'), fullPage: true });
   for (const width of [320, 390, 768]) {
@@ -116,8 +128,67 @@ try {
     await selectIds(second, next.tiles.filter(t => t.groupId === group.id).map(t => t.id)); await second.locator('#submit').click();
   }
   await page.locator('#results').waitFor(); assert.match(await page.locator('#result-title').innerText(), /Four connections/);
+  assert.equal(await page.locator('#result-stats .stat strong').nth(2).innerText(), '2');
+  assert.equal(await page.locator('#result-stats .stat strong').nth(3).innerText(), '2');
   check('another tab’s completion synchronizes without a second counted game');
   await second.close();
+  // Check historical migration in a separate browser without touching v1 keys.
+  const legacyContext = await browser.newContext({ timezoneId: 'America/New_York' });
+  const legacyPage = await legacyContext.newPage();
+  await legacyPage.clock.install({ time: new Date('2026-09-17T03:30:00Z') });
+  await legacyPage.goto(`${origin}/games/econnections/`);
+  const fixture = JSON.parse(await readFile(path.join(sourceRoot, 'audit_tools/econnections/fixtures/v1-history.json'), 'utf8'));
+  await legacyPage.evaluate(records => { for (const r of records) localStorage.setItem(`mq.econnections.result.${r.puzzleId}`, JSON.stringify(r)); }, fixture.records);
+  await legacyPage.reload();
+  assert.equal(await legacyPage.locator('#daily-date').innerText(), 'Sep 16, 2026');
+  assert.match(await legacyPage.locator('#micro-status').innerText(), /Not played/);
+  assert.match(await legacyPage.locator('#macro-status').innerText(), /Not played/);
+  assert.deepEqual(await legacyPage.locator('#landing-stats .stat strong').allTextContents(), ['0', '0', '3', '2', '1', '1']);
+  await legacyPage.locator('[data-domain="micro"]').click();
+  const localPuzzle = await legacyPage.evaluate(async () => (await import('/games/econnections/engine.js')).createPuzzle('micro'));
+  assert.equal(localPuzzle.date, '2026-09-16'); assert.equal(localPuzzle.poolVersion, '2');
+  await selectIds(legacyPage, localPuzzle.tiles.filter(t => t.groupId === localPuzzle.groups[0].id).map(t => t.id));
+  await legacyPage.locator('#submit').click();
+  await legacyPage.clock.setSystemTime(new Date('2026-09-17T03:59:59Z')); await legacyPage.clock.runFor(6000);
+  assert.ok(await legacyPage.locator('#landing').isVisible());
+  assert.ok(await legacyPage.locator('#game').isHidden());
+  const partial = await legacyPage.evaluate(id => JSON.parse(localStorage.getItem(`mq.econnections.result.${id}`)), localPuzzle.puzzleId);
+  assert.equal(partial.groupsSolved, 1); assert.equal(partial.completed, false); assert.equal(partial.date, '2026-09-16');
+  for (const r of fixture.records) assert.equal(await legacyPage.evaluate(id => localStorage.getItem(`mq.econnections.result.${id}`), r.puzzleId), JSON.stringify(r));
+  assert.match(await legacyPage.locator('#micro-status').innerText(), /Not played/);
+  check('legacy lifetime totals survive; v2 has independent status; midnight preserves an unfinished game');
+  await legacyContext.close();
+
+  // Real timezone emulation checks open-tab rollover at DST and calendar edges.
+  for (const [zone, before, after, label] of [
+    ['America/New_York', '2026-03-08T23:59:59-04:00', '2026-03-09', 'Mar 9, 2026'],
+    ['America/New_York', '2026-11-01T23:59:59-05:00', '2026-11-02', 'Nov 2, 2026'],
+    ['America/New_York', '2026-12-31T23:59:59-05:00', '2027-01-01', 'Jan 1, 2027'],
+    ['Asia/Tokyo', '2028-02-28T23:59:59+09:00', '2028-02-29', 'Feb 29, 2028'],
+    ['Asia/Kathmandu', '2028-02-29T23:59:59+05:45', '2028-03-01', 'Mar 1, 2028'],
+  ]) {
+    const dateContext = await browser.newContext({ timezoneId: zone });
+    const datePage = await dateContext.newPage();
+    await datePage.clock.install({ time: new Date(new Date(before).getTime() - 1000) });
+    await datePage.clock.pauseAt(new Date(before));
+    await datePage.goto(`${origin}/games/econnections/`);
+    // Seed a local solve on the date just ending, then observe the UI streak.
+    await datePage.evaluate(async () => {
+      const { createPuzzle, startRecord, submitGroup } = await import('/games/econnections/engine.js');
+      const p = createPuzzle('micro'); let r = startRecord(p);
+      for (const g of p.groups) r = submitGroup(p, r, p.tiles.filter(t => t.groupId === g.id).map(t => t.id)).record;
+      localStorage.setItem(`mq.econnections.result.${p.puzzleId}`, JSON.stringify(r));
+    });
+    await datePage.reload();
+    await datePage.clock.runFor(6000);
+    assert.equal(await datePage.locator('#daily-date').innerText(), label);
+    assert.equal(await datePage.locator('#landing-stats .stat strong').first().innerText(), '1');
+    assert.match(await datePage.locator('#micro-status').innerText(), /Not played/);
+    await datePage.locator('[data-domain="macro"]').click();
+    assert.equal(await datePage.evaluate(async () => (await import('/games/econnections/engine.js')).createPuzzle('macro').date), after);
+    await dateContext.close();
+  }
+  check('local midnight and streak carry across 23/25-hour days, year boundary, leap day and month boundary');
   const blockedContext = await browser.newContext(); const blocked = await blockedContext.newPage();
   await blocked.addInitScript(() => { Storage.prototype.setItem = () => { throw new DOMException('blocked'); }; });
   await blocked.goto(`${origin}/games/econnections/`); await blocked.locator('[data-domain="micro"]').click();
