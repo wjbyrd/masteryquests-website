@@ -52,7 +52,11 @@ check(/Checkpoint encounters are diagnostic\/assessment sequences\. Remediation[
 
 const currentSelection=extractFunction(template,"buildBossQuestionSet");
 const headSelection=extractFunction(headTemplate,"buildBossQuestionSet");
-check(currentSelection===headSelection,"checkpoint question selection unchanged");
+const selectionContext={usedQuestions:{legendaryBoss:[]},getRecentQuestionFingerprints:()=>new Set(),getBossQuestionFingerprint:q=>q.id,getBossObjectiveKey:q=>q.objective,resolveRecordSkill:q=>q.primarySkill,shuffle:x=>x,orderBossQuestionSet:x=>x,challengeQuestionBanks:{},Math:{floor:Math.floor,random:()=>0}};
+selectionContext.bank=['nash','nash','nash','cooperative','noncooperative'].map((skill,i)=>({id:String(i),objective:'OLI.2',primarySkill:skill,type:'legendaryBoss'}));
+vm.runInNewContext(`${currentSelection}\nselected=buildBossQuestionSet(bank,'legendaryBoss','OLI.2');`,selectionContext);
+check(new Set(selectionContext.selected.map(q=>q.primarySkill)).size===3,"targeted boss objective retains three available skill forms instead of three Nash questions");
+check(selectionContext.selected.every(q=>q.objective==='OLI.2'),"skill variety preserves the diagnosed objective");
 for(const expression of [/tagWeakness >= 2\.2/,/typeBucket\.attempts >= 2/,/typeAccuracy < 0\.6/,/objectiveAccuracy < 0\.5/,/objectiveAttempts >= 2/,/objectiveAccuracy < 0\.6/])check(expression.test(template),`remediation threshold retained ${expression}`);
 
 function simulate({checkpointAnswers=[],postCheckpointMiss=false,weaknessWouldTrigger=true}){

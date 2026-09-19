@@ -226,7 +226,11 @@ const foundationsResult = auditQuestionRecords(foundationsEntries, {
   assetMap: assets,
   composerRoot: path.join(repoRoot, "build", "faculty-build-composer")
 });
-assert.equal(foundationsEntries.length, 563, "Foundations audit scope changed");
+const bankReview = JSON.parse(fs.readFileSync(path.join(repoRoot,'validation_artifacts/question_bank_audit_20260919/revisions.json'),'utf8'));
+const movedProfitIds = new Set(bankReview.filter(c=>c.concept==='opportunity-cost' && c.after.primaryConceptId==='costs-of-production').map(c=>c.id));
+assert.equal(movedProfitIds.size,9,'Explicit economic-profit routing corrections');
+assert.equal(foundationsEntries.length, 563-movedProfitIds.size, "Foundations audit scope changed");
+for(const id of movedProfitIds) assert(collectComposerQuestions(library,{concepts:['costs-of-production']}).some(e=>e.id===id),'Relocated profit record retained: '+id);
 assertAuditedFindings(foundationsResult, 'foundations_assessment_audit_2026_09_06', foundationsEntries);
 
 const foundationsArtifactDir = path.join(repoRoot, "validation_artifacts", "question_quality");

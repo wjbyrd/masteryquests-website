@@ -459,6 +459,32 @@ export function loadComposerLibrary(libraryPath = DEFAULT_LIBRARY) {
   return JSON.parse(source.slice(prefix.length, -1));
 }
 
+// Editorial signals are deliberately separate from the release-blocking rules.
+// A flag requires economic review; it never authorizes an automatic rewrite.
+export function auditQuestionConstruction(entries) {
+  const findings = [];
+  for (const entry of entries) {
+    const q = entry.question, stem = normalizeText(q.q);
+    const {options, correctIndex} = optionState(q);
+    const flag = (rule, detail) => findings.push({questionId:entry.id, conceptId:entry.conceptId, difficulty:q.canonicalDifficulty, rule, detail});
+    if (correctIndex >= 0) {
+      const key = options[correctIndex], distractors = options.filter((_, i) => i !== correctIndex);
+      const average = distractors.reduce((n, s) => n + words(s).length, 0) / distractors.length;
+      if (words(key).length >= 8 && words(key).length >= average * 1.45) flag('key-length-145-percent', {keyWords:words(key).length, distractorAverage:average});
+      const qualification = /\b(while|although|because|depends on|even though|therefore)\b/i;
+      if (qualification.test(key) && !distractors.some(s => qualification.test(s))) flag('key-only-qualification', key);
+      if (/[;]|\bbecause\b/i.test(key) && distractors.every(s => !/[;]|\bbecause\b/i.test(s))) flag('key-only-reasoning-clause', key);
+      if (distractors.filter(s => /\b(always|never|must|automatically|entirely)\b/i.test(s)).length >= 2 && qualification.test(key)) flag('absolute-distractors-nuanced-key', key);
+      if (/then interpret|which.*and why|which.*and.*which/i.test(stem) && options.every(s => words(s).length <= 7)) flag('multi-part-stem-short-options', stem);
+    }
+    if (/compact[- ](?:market|equilibrium)|price ceiling and price floor graph|ceiling\/floor graph|movie graph with/i.test(stem)) flag('awkward-graph-reference', stem);
+    if (/(?:production|consumption)-distortion|buyer-burden rectangle|two tax prices|continuing trades/i.test(stem)) flag('nonstandard-welfare-language', stem);
+    if (/\(?\d+\s*,\s*\d+\)?\s*;\s*\(?\d+\s*,\s*\d+/.test(stem)) flag('coordinate-schedule', stem);
+    if (/makers review dealer rivalry|managers evaluate a rival response|platforms examine network competition/.test(stem)) flag('decorative-scenario', stem);
+  }
+  return findings;
+}
+
 export function collectComposerQuestions(library, config = {}) {
   const selected = config.concepts?.length ? config.concepts : Object.keys(library.concepts || {});
   const selectedPools = config.pools?.length ? new Set(config.pools) : null;

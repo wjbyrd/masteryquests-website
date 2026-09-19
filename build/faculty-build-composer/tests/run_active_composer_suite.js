@@ -25,6 +25,8 @@ const ACTIVE_RUNNERS = [
   'run_question_quality_auditor_validation.mjs',
   'run_macro_phase2_taxonomy_validation.mjs',
   'run_checkpoint_remediation_design_change_validation.mjs',
+  'run_legendary_final_checkpoint_validation.mjs',
+  'run_question_bank_comprehensive_validation.mjs',
   'run_concept_review_integration.js',
   'run_mastery_report_concept_reviews.js',
   'run_mastery_report_2_validation.js',

@@ -5535,12 +5535,12 @@ function buildBossQuestionSet(bank, poolName, chosenObjective){
         )
         : [];
 
-    const selected = objectiveMatches.length >= 3
-        ? shuffle([...objectiveMatches]).slice(0, 3)
-        : shuffle([...objectiveMatches]);
+    // Apply the existing diversity scoring inside a targeted objective too.
+    // Previously three available matches bypassed it and could all test Nash.
+    const selected = [];
 
     const remaining = shuffle(
-        available.filter(question =>
+        (objectiveMatches.length >= 3 ? objectiveMatches : available).filter(question =>
             !selected.some(item => item.id === question.id)
         )
     );
@@ -5563,6 +5563,7 @@ function buildBossQuestionSet(bank, poolName, chosenObjective){
             let score = 0;
             const objective = getBossObjectiveKey(question);
 
+            if(chosenObjective && objective === chosenObjective) score += 8;
             if(objective && !selectedObjectives.has(objective)) score += 2;
             if(question.type && !selectedTypes.has(question.type)) score += 1;
             const questionSkill = resolveRecordSkill(question);
@@ -14488,6 +14489,8 @@ answer = async function(choice, ...args){
 
 const phase15BaseHandleVictory = handleVictory;
 handleVictory = function(...args){
+    // Legendary completion owns the same lock; delegate before acquiring it.
+    if(gameMode === "legendary") return handleLegendaryVictory(...args);
     if(phase15CompletionLocked) return;
     phase15CompletionLocked = true;
     runPhase = "complete";

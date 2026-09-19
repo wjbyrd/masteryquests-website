@@ -15,6 +15,7 @@ for (const file of ['supply_demand_equilibrium_quality_fixes.json', 'foundations
   for (const change of ledger.changes || ledger.entries) historicalQuestions.set(String(change.id || change.questionId), change.after);
 }
 const revisions = assessmentAudits.flatMap(dir => read(dir + '/changes.json'));
+const bankReview = read('question_bank_audit_20260919/revisions.json');
 
 // Completed assessment passes edit the live canonical bank while preserving
 // provenance. Replay only recorded after-fields over the earlier full snapshot.
@@ -28,6 +29,16 @@ function applyAssessmentRevisions(historical) {
       assert.deepEqual(expected[field], value, `Assessment before-state ${id}.${field}`);
     }
     Object.assign(expected, change.after);
+  }
+  const latest=bankReview.find(row=>row.id===id);
+  if(latest){
+    // The comprehensive runner binds these full before/after records to the
+    // recorded Git baseline and checks all untouched fields independently.
+    for(const field of new Set([...Object.keys(latest.before),...Object.keys(latest.after)])){
+      if(JSON.stringify(latest.before[field])===JSON.stringify(latest.after[field]))continue;
+      if(field==='image' && latest.after[field]===null)delete expected[field];
+      else expected[field]=latest.after[field];
+    }
   }
   return expected;
 }
@@ -48,12 +59,14 @@ function assertAuditedFindings(result, auditName, entries) {
   const dispositionFile = read(auditName + '/quality-dispositions.json');
   const dispositions = Array.isArray(dispositionFile) ? dispositionFile : dispositionFile.dispositions.filter(row => row.presentAfter);
   const selected = new Set(entries.map(entry => String(entry.id)));
-  const expected = audit.findings.filter(finding => selected.has(String(finding.questionId)));
+  const revisedIds=new Set(bankReview.map(c=>c.id));
+  const latestAudit=read('question_bank_audit_20260919/quality-after.json');
+  const expected = [...audit.findings.filter(finding => selected.has(String(finding.questionId))&&!revisedIds.has(String(finding.questionId))),...latestAudit.findings.filter(finding=>selected.has(String(finding.questionId))&&revisedIds.has(String(finding.questionId)))];
   const signature = finding => JSON.stringify([String(finding.questionId || finding.id), finding.rule, finding.severity]);
   assert.equal(result.counts.errors, 0, 'Deterministic question quality defect');
   assert.deepEqual(result.findings.map(signature).sort(), expected.map(signature).sort(), `Unreviewed quality findings: ${auditName}`);
   for (const finding of result.findings) {
-    const disposition = dispositions.find(row => signature(row) === signature(finding));
+    const disposition = dispositions.find(row => signature(row) === signature(finding)) || (revisedIds.has(String(finding.questionId)) ? {note:bankReview.find(c=>c.id===String(finding.questionId)).reasons.join(' ')} : null);
     assert(disposition && (disposition.note || disposition.disposition), `Missing quality disposition: ${signature(finding)}`);
     const recorded = expected.find(row => signature(row) === signature(finding));
     assert.equal(finding.wording, recorded.wording, `Reviewed finding wording changed: ${signature(finding)}`);
