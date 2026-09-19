@@ -1,4 +1,5 @@
 import { SESSION_FIELDS, EVENT_FIELDS, TOKEN, validateSession, validateEvent, validatePath, exactKeys, requireValue } from '../../games/econnections/classroom-contract.js';
+import { provisionCourse, instructorCourse, instructorView, currentSession, activate, closeSession, randomToken } from './courses.mjs';
 
 const PREFIX = '/api/econnections-classroom';
 const MAX_BODY = 8192;
@@ -50,18 +51,36 @@ export function createWorker({ now = () => new Date().toISOString() } = {}) {
         }
         origin = request.headers.get('Origin');
         if (!origin || !(env.ALLOWED_ORIGINS || '').split(',').map(x => x.trim()).includes(origin)) { origin = null; fail(403); }
-        if (!['/resolve', '/events'].includes(path.slice(PREFIX.length))) fail(404);
-        const headers = { 'Access-Control-Allow-Origin': origin, 'Vary': 'Origin', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type', 'Cache-Control': 'no-store' };
+        if (!['/resolve', '/events', '/instructor/open', '/instructor/activate', '/instructor/close'].includes(path.slice(PREFIX.length))) fail(404);
+        const headers = { 'Access-Control-Allow-Origin': origin, 'Vary': 'Origin', 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type, Authorization', 'Cache-Control': 'no-store' };
         if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers });
         if (request.method !== 'POST') fail(405);
         await limit(env.CLASSROOM_GLOBAL_RATE, 'classroom');
         const input = await body(request);
+        if (path.includes('/instructor/')) {
+          await limit(env.CLASSROOM_RATE, 'instructor:' + await digest(request.headers.get('Authorization') || ''));
+          const course = await instructorCourse(env.CLASSROOM_DB, request, digest), receipt = now();
+          let view;
+          if (path.endsWith('/open')) {
+            try { exactKeys(input, []); } catch { fail(400); }
+            view = await instructorView(env.CLASSROOM_DB, course, receipt);
+          } else if (path.endsWith('/activate')) view = await activate(env.CLASSROOM_DB, course, input, receipt);
+          else view = await closeSession(env.CLASSROOM_DB, course, input, receipt);
+          const response = json(view);
+          for (const [key, value] of Object.entries(headers)) response.headers.set(key, value);
+          return response;
+        }
         try { exactKeys(input, path.endsWith('/events') ? ['accessToken', 'event'] : ['accessToken']); requireValue(typeof input.accessToken === 'string' && TOKEN.test(input.accessToken)); } catch { fail(400); }
         const accessHash = await digest(input.accessToken);
         if (path.endsWith('/resolve')) await limit(env.CLASSROOM_RATE, 'resolve:' + accessHash);
-        const row = await env.CLASSROOM_DB.prepare('SELECT * FROM classroom_sessions WHERE accessHash = ?').bind(accessHash).first();
-        if (!row) fail(404);
-        const session = metadata(row), receipt = now();
+        const course = await env.CLASSROOM_DB.prepare("SELECT * FROM classroom_courses WHERE studentToken=? AND status='active'").bind(input.accessToken).first();
+        if (!course) fail(404);
+        const receipt = now();
+        if (path.endsWith('/events')) { try { validateEvent(input.event); } catch { fail(400); } }
+        const row = path.endsWith('/resolve') ? await currentSession(env.CLASSROOM_DB, course, receipt)
+          : await env.CLASSROOM_DB.prepare('SELECT * FROM classroom_sessions WHERE classroomID=? AND sessionID=?').bind(course.classroomID, input.event.sessionID).first();
+        if (!row) fail(path.endsWith('/resolve') ? 410 : 404, path.endsWith('/resolve') ? 'no_active_session' : undefined);
+        const session = metadata(row);
         try { validateSession(session); } catch { fail(503); }
         if (accessState(session, receipt) === 'upcoming') fail(403, 'session_not_open');
         let response;
@@ -77,8 +96,10 @@ export function createWorker({ now = () => new Date().toISOString() } = {}) {
         for (const [key, value] of Object.entries(headers)) response.headers.set(key, value);
         return response;
       } catch (error) {
-        const response = json(error.code === 'session_not_open'
-          ? { ok: false, code: 'session_not_open', error: 'Classroom session is not open yet' }
+        const messages = { session_not_open: 'Classroom session is not open yet', no_active_session: 'No Econ-nections session is currently active for this class.',
+          active_session_exists: 'A session is already active. End it before activating another.', invalid_window: 'Check the date, timezone and ordered session times.', retired_session_access: 'Per-session access has been retired. Provision a classroom instead.' };
+        const response = json(messages[error.code]
+          ? { ok: false, code: error.code, error: messages[error.code] }
           : { ok: false, error: 'Classroom request unavailable or rejected' }, error.status || 500);
         if (origin) { response.headers.set('Access-Control-Allow-Origin', origin); response.headers.set('Vary', 'Origin'); }
         return response;
@@ -114,6 +135,22 @@ async function ingest(db, session, event, receipt) {
 }
 async function admin(request, env, path, receipt) {
   const db = env.CLASSROOM_DB, url = new URL(request.url);
+  if (path === '/admin/classrooms' && request.method === 'POST') return json(await provisionCourse(db, await body(request), receipt, digest), 201);
+  if (path === '/admin/classrooms/rotate-instructor' && request.method === 'POST') {
+    const input = await body(request);
+    try { exactKeys(input, ['classroomID']); requireValue(typeof input.classroomID === 'string'); } catch { fail(400); }
+    const instructorToken = randomToken();
+    const row = await db.prepare('UPDATE classroom_courses SET instructorHash=? WHERE classroomID=? RETURNING classroomID').bind(await digest(instructorToken), input.classroomID).first();
+    if (!row) fail(404);
+    return json({ classroomID: row.classroomID, instructorToken });
+  }
+  if (path === '/admin/classrooms/status' && request.method === 'POST') {
+    const input = await body(request);
+    try { exactKeys(input, ['classroomID', 'status']); requireValue(typeof input.classroomID === 'string' && ['active', 'disabled'].includes(input.status)); } catch { fail(400); }
+    const row = await db.prepare('UPDATE classroom_courses SET status=? WHERE classroomID=? RETURNING classroomID').bind(input.status, input.classroomID).first();
+    if (!row) fail(404);
+    return json({ ok: true, classroomID: row.classroomID, status: input.status });
+  }
   if (path === '/admin/close' && request.method === 'POST') {
     const input = await body(request);
     try { exactKeys(input, ['sessionID']); requireValue(typeof input.sessionID === 'string'); } catch { fail(400); }
@@ -122,12 +159,7 @@ async function admin(request, env, path, receipt) {
     return json({ ok: true, sessionID: row.sessionID, status: 'closed' });
   }
   if (path === '/admin/sessions' && request.method === 'POST') {
-    const input = await body(request);
-    let session;
-    try { exactKeys(input, SESSION_FIELDS.filter(key => key !== 'createdAt')); session = validateSession({ ...input, createdAt: receipt }); requireValue(session.status !== 'closed'); } catch { fail(400); }
-    const token = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(32)))).replaceAll('+', '-').replaceAll('/', '_').replaceAll('=', '');
-    try { await db.prepare(`INSERT INTO classroom_sessions(${SESSION_FIELDS.join(',')}, accessHash) VALUES(${SESSION_FIELDS.map(() => '?').join(',')}, ?)`).bind(...SESSION_FIELDS.map(key => session[key]), await digest(token)).run(); } catch { fail(409); }
-    return json({ session, studentPath: '/games/econnections/?classroom=' + token }, 201);
+    fail(410, 'retired_session_access');
   }
   if (request.method !== 'GET') fail(405);
   if (path === '/admin/run') {

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 import { createServer } from 'node:http';
-import { readFile, stat } from 'node:fs/promises';
+import { readFile, stat, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { harness } from './classroom-harness.mjs';
@@ -65,7 +65,7 @@ try {
   await page.goto(origin + fixture.studentPath); await page.locator('.tile').first().waitFor();
   await eventually(() => count('session_start') === 1);
   assert.equal(await page.locator('.tile').count(), 16);
-  const key = 'mq.econnections.classroom.v1.run.' + fixture.accessToken;
+  const key = 'mq.econnections.classroom.v1.run.' + fixture.session.sessionID;
   const saved = await page.evaluate(key => JSON.parse(localStorage.getItem(key)), key);
   assert.equal(saved.record.puzzleId, puzzleID); assert.equal(saved.record.completed, false);
   assert.notEqual(saved.playerID, saved.runID);
@@ -138,9 +138,9 @@ try {
   await loss.reload(); await loss.locator('#results').waitFor(); assert.equal(count('puzzle_complete'), 2);
   check('third-strike completion stays distinct from a solve and is not emitted again on reload');
 
-  const nextFixture = await h.session({ sessionID: 'next-session' });
+  const nextFixture = await h.session();
   await page.goto(origin + nextFixture.studentPath); await page.locator('.tile').first().waitFor();
-  const nextKey = 'mq.econnections.classroom.v1.run.' + nextFixture.accessToken;
+  const nextKey = 'mq.econnections.classroom.v1.run.' + nextFixture.session.sessionID;
   const next = await page.evaluate(key => JSON.parse(localStorage.getItem(key)), nextKey);
   assert.equal(next.playerID, saved.playerID); assert.notEqual(next.runID, saved.runID);
   await eventually(() => count('session_start') === 3);
@@ -225,6 +225,91 @@ try {
   await choose(damaged, ids[0]); assert.equal(await damaged.locator('.tile').count(), 12);
   assert.equal(requests.filter(r => r.path.endsWith('/events')).length, beforeDamaged);
   check('corrupt pending state cannot emit malformed events or break gameplay');
+
+  h.setTime('2026-09-21T17:40:00.000Z');
+  const course = await h.course(), teacherContext = await browser.newContext({ timezoneId: 'Asia/Tokyo', viewport: { width: 1440, height: 1100 } });
+  const external = [];
+  await teacherContext.route('**/*', route => {
+    if (new URL(route.request().url()).origin !== origin) { external.push(route.request().url()); return route.abort(); }
+    return route.continue();
+  });
+  const teacher = await teacherContext.newPage(); teacher.on('pageerror', e => errors.push(e.message));
+  const studentContext = await browser.newContext(), student = await studentContext.newPage();
+  student.on('pageerror', e => errors.push(e.message));
+  await student.goto(origin + course.studentPath);
+  await student.locator('#classroom-notice').filter({ hasText: 'No Econ-nections session is currently active' }).waitFor();
+  assert.equal(await student.locator('.tile').count(), 0);
+  assert.deepEqual(await student.evaluate(() => Object.keys(localStorage)), []);
+  await teacher.goto(origin + '/games/econnections-class/');
+  await teacher.locator('#instructor-token').fill('incorrect-token'); await teacher.getByRole('button', { name: 'Open Classroom', exact: true }).click();
+  await teacher.locator('#message').filter({ hasText: 'not accepted' }).waitFor();
+  await teacher.locator('#instructor-token').fill(course.instructorToken); await teacher.getByRole('button', { name: 'Open Classroom', exact: true }).click();
+  await teacher.locator('#console').waitFor();
+  assert.equal(await teacher.locator('#instructor-token').inputValue(), '');
+  assert.ok(!(await teacher.content()).includes(course.instructorToken)); assert.ok(!teacher.url().includes(course.instructorToken));
+  assert.equal(await teacher.evaluate(() => localStorage.length + sessionStorage.length), 0);
+  assert.equal(await teacher.locator('#date').inputValue(), '2026-09-21');
+  assert.equal(await teacher.locator('#timezone').inputValue(), 'America/Chicago');
+  assert.equal(await teacher.locator('#window').inputValue(), '12:40');
+  assert.equal(await teacher.locator('#walkthrough').inputValue(), '13:00');
+  assert.equal(await teacher.locator('#close').inputValue(), '13:30');
+  const permanentURL = origin + course.studentPath;
+  assert.equal(await teacher.locator('#student-url').innerText(), permanentURL);
+  const qrMarkup = await teacher.locator('#qr').innerHTML();
+  const raster = await teacher.evaluate(async () => {
+    const svg = new XMLSerializer().serializeToString(document.querySelector('#qr svg'));
+    const url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
+    const img = new Image(); img.src = url; await img.decode();
+    const canvas = document.createElement('canvas'); canvas.width = canvas.height = 800;
+    const context = canvas.getContext('2d'); context.imageSmoothingEnabled = false; context.drawImage(img, 0, 0, 800, 800); URL.revokeObjectURL(url);
+    return Array.from(context.getImageData(0, 0, 800, 800).data);
+  });
+  const jsQR = createRequire(import.meta.url)(process.env.JSQR_MODULE || fileURLToPath(new URL('../../tmp/econnections/qr-test/node_modules/jsqr', import.meta.url)));
+  assert.equal(jsQR(new Uint8ClampedArray(raster), 800, 800).data, permanentURL);
+  const screenshotDir = fileURLToPath(new URL('../../tmp/econnections/', import.meta.url)); await mkdir(screenshotDir, { recursive: true });
+  await teacher.screenshot({ path: path.join(screenshotDir, 'instructor-console.png'), fullPage: true });
+  assert.deepEqual(external, []);
+  check('instructor login is memory-only, defaults use classroom time, no active session creates no run, and local QR independently decodes to the student URL');
+
+  const secondTeacher = await teacherContext.newPage();
+  await secondTeacher.goto(origin + '/games/econnections-class/');
+  await secondTeacher.locator('#instructor-token').fill(course.instructorToken); await secondTeacher.getByRole('button', { name: 'Open Classroom', exact: true }).click();
+  await secondTeacher.locator('#console').waitFor();
+  let browserPlayer, priorRun, lastSession;
+  const occurrenceIDs = [];
+  for (const [date, hour] of [['2026-09-21', '12'], ['2026-09-23', '12'], ['2026-09-25', '12'], ['2026-09-25', '14']]) {
+    h.setTime(date + 'T' + String(+hour + 5) + ':40:00.000Z');
+    await teacher.locator('#date').fill(date); await teacher.locator('#window').fill(hour + ':40');
+    await teacher.locator('#walkthrough').fill(String(+hour + 1) + ':00'); await teacher.locator('#close').fill(String(+hour + 1) + ':30');
+    await teacher.getByRole('button', { name: 'Activate Session', exact: true }).click(); await teacher.locator('#active').waitFor();
+    const activeView = await (await h.instructor(course, 'open')).json(); lastSession = activeView.activeSession; occurrenceIDs.push(lastSession.sessionID);
+    if (occurrenceIDs.length === 1) {
+      await secondTeacher.getByRole('button', { name: 'Activate Session', exact: true }).click();
+      await secondTeacher.locator('#message').filter({ hasText: 'already active' }).waitFor();
+      assert.ok(await secondTeacher.locator('#active').isVisible());
+      assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_sessions WHERE classroomID=?').get(course.classroom.classroomID).n, 1);
+      await secondTeacher.close();
+    }
+    assert.equal(await teacher.locator('#student-url').innerText(), permanentURL); assert.equal(await teacher.locator('#qr').innerHTML(), qrMarkup);
+    await student.goto(permanentURL); await student.locator('.tile').first().waitFor();
+    const runKey = 'mq.econnections.classroom.v1.run.' + lastSession.sessionID;
+    const run = await student.evaluate(key => JSON.parse(localStorage.getItem(key)), runKey);
+    browserPlayer ??= run.playerID; assert.equal(run.playerID, browserPlayer); assert.notEqual(run.runID, priorRun); priorRun = run.runID;
+    assert.equal(run.record.puzzleId, lastSession.puzzleID); assert.equal(run.record.completed, false);
+    const pinned = await student.evaluate(async date => (await import('/games/econnections/engine.js')).createPuzzle('micro', date), date);
+    for (const group of pinned.groups) await choose(student, pinned.tiles.filter(t => t.groupId === group.id).map(t => t.id));
+    await eventually(() => h.sqlite.prepare("SELECT COUNT(*) AS n FROM classroom_events WHERE sessionID=? AND eventType='puzzle_complete'").get(lastSession.sessionID).n === 1);
+    await teacher.locator('#end').click(); await teacher.locator('#activate').waitFor();
+    await student.reload(); await student.locator('#classroom-notice').filter({ hasText: 'No Econ-nections session is currently active' }).waitFor();
+    assert.equal(await student.locator('.tile').count(), 0);
+  }
+  assert.equal(new Set(occurrenceIDs).size, 4);
+  for (const id of occurrenceIDs) assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_events WHERE sessionID=?').get(id).n, 10);
+  assert.equal(await teacher.evaluate(() => localStorage.length + sessionStorage.length), 0);
+  assert.deepEqual(external, []);
+  await teacher.locator('#logout').click(); await teacher.locator('#access').waitFor();
+  assert.equal(await teacher.locator('#instructor-token').inputValue(), '');
+  check('one QR supports Monday/Wednesday/Friday and another same-day session with separate telemetry, stable player ID, new run IDs, and explicit close');
 
   for (const { body } of requests.filter(r => r.path.endsWith('/events'))) {
     assert.deepEqual(Object.keys(body).sort(), ['accessToken', 'event']);

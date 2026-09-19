@@ -1,11 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { DatabaseSync } from 'node:sqlite';
 import { harness, ORIGIN } from './classroom-harness.mjs';
-import { SCHEMA, eventFields, transitionEvents, pinnedPuzzle, validatePath, validateSession, EVENT_FIELDS } from '../../games/econnections/classroom-contract.js';
+import { SCHEMA, eventFields, transitionEvents, pinnedPuzzle, validatePath, validateSession, EVENT_FIELDS, SESSION_FIELDS } from '../../games/econnections/classroom-contract.js';
 import { startRecord, submitGroup } from '../../games/econnections/engine.js';
 import { zonedInstant } from '../../server/econnections-classroom/session-tools.mjs';
-import { csvCell, accessState } from '../../server/econnections-classroom/worker.mjs';
+import { csvCell, accessState, digest } from '../../server/econnections-classroom/worker.mjs';
 
 function pathFor(session, win = true) {
   const puzzle = pinnedPuzzle(session), runID = crypto.randomUUID(), playerID = crypto.randomUUID();
@@ -73,7 +74,7 @@ test('isolated schema, exact engine replay, ordered wins and duplicate-containin
     if (!win) { assert.equal(stored.filter(e => e.oneAway).length, 2); assert.equal(stored.filter(e => e.eventType === 'group_attempt').length, 4); }
   }
   const tables = h.sqlite.prepare("SELECT name FROM sqlite_master WHERE type='table'").all().map(x => x.name);
-  assert.deepEqual(tables, ['classroom_sessions', 'classroom_runs', 'classroom_events']);
+  assert.deepEqual(tables, ['classroom_sessions', 'classroom_runs', 'classroom_events', 'classroom_courses']);
 });
 test('idempotency returns original receipt even after close; conflicts and sequence gaps fail', async () => {
   const h = harness(), f = await h.session(), events = pathFor(f.session);
@@ -178,6 +179,8 @@ test('spreadsheet-safe export retains raw IDs and paginates; retention removes w
   assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_events').get().n, 0);
   assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_runs').get().n, 0);
   assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_sessions').get().n, 0);
+  assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_courses').get().n, 1);
+  assert.equal((await (await h.instructor(f, 'open')).json()).studentPath, f.studentPath);
 });
 test('session and CSV cursors traverse complete multi-page results without truncation or duplicates', async () => {
   const h = harness(), f = await h.session();
@@ -190,4 +193,121 @@ test('session and CSV cursors traverse complete multi-page results without trunc
   assert.equal((await csv1.text()).split('\r\n').length, 1001);
   const csv2 = await h.call('/admin/export?sessionID=' + f.session.sessionID + '&after=' + csv1.headers.get('x-next-cursor'), undefined, { admin: true });
   assert.equal((await csv2.text()).split('\r\n').length, 11); assert.equal(csv2.headers.get('x-next-cursor'), '');
+});
+
+const activation = overrides => ({ sessionDate: '2026-09-21', domain: 'micro', timeZone: 'America/Chicago', studentWindowStart: '12:40', walkthroughStart: '13:00', sessionClose: '13:30', ...overrides });
+test('classroom provisioning separates admin, instructor and student privileges without plaintext instructor storage', async () => {
+  const h = harness(), a = await h.course(), b = await h.course();
+  assert.notEqual(a.instructorToken, a.accessToken); assert.notEqual(a.accessToken, b.accessToken);
+  assert.ok(!a.studentPath.includes(a.instructorToken) && !a.studentPath.includes(h.env.ADMIN_TOKEN));
+  const stored = h.sqlite.prepare('SELECT * FROM classroom_courses WHERE classroomID=?').get(a.classroom.classroomID);
+  assert.equal(stored.instructorHash, await digest(a.instructorToken)); assert.ok(!JSON.stringify(stored).includes(a.instructorToken));
+  const opened = await h.instructor(a, 'open'); assert.equal(opened.status, 200); assert.equal(opened.headers.get('cache-control'), 'no-store');
+  const view = await opened.json(); assert.equal(view.classroom.classroomID, a.classroom.classroomID); assert.ok(!JSON.stringify(view).includes(a.instructorToken));
+  assert.equal((await h.instructor({ instructorToken: 'x'.repeat(43) }, 'open')).status, 401);
+  assert.equal((await h.instructor({ instructorToken: a.accessToken }, 'open')).status, 401);
+  assert.equal((await h.instructor({ instructorToken: h.env.ADMIN_TOKEN }, 'open')).status, 401);
+  for (const route of ['/admin/session', '/admin/export', '/admin/classrooms', '/admin/classrooms/rotate-instructor']) {
+    assert.equal((await h.call(route, {}, { headers: { Authorization: 'Bearer ' + a.instructorToken } })).status, 401);
+  }
+  assert.equal((await h.call('/instructor/open', {}, { headers: { Authorization: 'Bearer ' + a.instructorToken, Origin: 'https://evil.test' } })).status, 403);
+  assert.equal((await h.call('/instructor/open', {}, { headers: { Authorization: 'Bearer ' + a.instructorToken, Origin: '' } })).status, 403);
+  assert.equal((await h.call('/instructor/open?token=' + a.instructorToken, {})).status, 401);
+  assert.equal((await h.instructor(a, 'activate', activation({ classroomID: b.classroom.classroomID }))).status, 400);
+  const sessionB = await h.activate(b);
+  assert.equal((await h.instructor(a, 'close', { sessionID: sessionB.session.sessionID })).status, 404);
+  assert.equal((await h.call('/events', { accessToken: a.accessToken, event: pathFor(sessionB.session)[0] })).status, 404);
+  assert.equal((await h.call('/admin/sessions', {}, { admin: true })).status, 410);
+});
+
+test('one permanent QR routes Monday, Wednesday, Friday and a second same-day occurrence into separate runs', async () => {
+  const h = harness(), course = await h.course();
+  const noActive = await h.call('/resolve', { accessToken: course.accessToken });
+  assert.equal(noActive.status, 410); assert.equal((await noActive.json()).code, 'no_active_session');
+  assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_runs').get().n, 0);
+  const playerID = crypto.randomUUID(), sessions = [], runs = [];
+  for (const [date, hour] of [['2026-09-21', '12'], ['2026-09-23', '12'], ['2026-09-25', '12'], ['2026-09-25', '14']]) {
+    const params = activation({ sessionDate: date, studentWindowStart: hour + ':40', walkthroughStart: String(+hour + 1) + ':00', sessionClose: String(+hour + 1) + ':30' });
+    h.setTime(zonedInstant(date + 'T' + hour + ':40', 'America/Chicago'));
+    const f = await h.activate(course, params); sessions.push(f.session.sessionID);
+    assert.equal(f.studentPath, course.studentPath);
+    const resolved = await (await h.call('/resolve', { accessToken: course.accessToken })).json();
+    assert.equal(resolved.session.sessionID, f.session.sessionID);
+    assert.equal(resolved.session.puzzleID, 'econnections:2:' + date + ':micro'); assert.equal(resolved.session.puzzleVersion, '2');
+    const events = pathFor(f.session).map(event => ({ ...event, playerID })); runs.push(events[0].runID);
+    for (const event of events) assert.equal((await send(h, f, event)).status, 200);
+    assert.equal((await h.instructor(course, 'activate', params)).status, 409);
+    const firstAck = await (await send(h, f, events[0])).json();
+    assert.equal((await h.instructor(course, 'close', { sessionID: f.session.sessionID })).status, 200);
+    assert.equal((await h.call('/resolve', { accessToken: course.accessToken })).status, 410);
+    assert.deepEqual(await (await send(h, f, events[0])).json(), firstAck);
+  }
+  assert.equal(new Set(sessions).size, 4); assert.equal(new Set(runs).size, 4);
+  assert.equal(h.sqlite.prepare('SELECT COUNT(DISTINCT playerID) AS n FROM classroom_runs').get().n, 1);
+  for (const sessionID of sessions) {
+    assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_events WHERE sessionID=?').get(sessionID).n, 10);
+    const { summary } = await (await h.call('/admin/session?sessionID=' + sessionID, undefined, { admin: true })).json();
+    assert.equal(summary.runsStarted, 1); assert.equal(summary.solved, 1);
+  }
+});
+
+test('database exclusivity handles simultaneous activations, upcoming reservation, automatic expiry and stale close actions', async () => {
+  const h = harness(), course = await h.course(); h.setTime('2026-09-21T17:00:00.000Z');
+  const competing = await Promise.all([h.instructor(course, 'activate', activation()), h.instructor(course, 'activate', activation())]);
+  assert.deepEqual(competing.map(r => r.status).sort(), [200, 409]);
+  const first = (await competing.find(r => r.status === 200).json()).activeSession;
+  assert.equal(first.status, 'upcoming'); assert.equal((await h.call('/resolve', { accessToken: course.accessToken })).status, 403);
+  h.setTime(first.sessionClose);
+  const second = await h.activate(course, activation({ studentWindowStart: '13:30', walkthroughStart: '13:40', sessionClose: '13:55', domain: 'macro' }));
+  assert.notEqual(second.session.sessionID, first.sessionID);
+  assert.equal(h.sqlite.prepare('SELECT status FROM classroom_sessions WHERE sessionID=?').get(first.sessionID).status, 'closed');
+  await h.instructor(course, 'close', { sessionID: first.sessionID });
+  assert.equal((await (await h.instructor(course, 'open')).json()).activeSession.sessionID, second.session.sessionID);
+  assert.equal(h.sqlite.prepare("SELECT COUNT(*) AS n FROM classroom_sessions WHERE status != 'closed'").get().n, 1);
+});
+
+test('instructor token rotation and classroom disable preserve the student URL and enforce revocation', async () => {
+  const h = harness(), course = await h.course(); await h.activate(course);
+  const rotated = await (await h.call('/admin/classrooms/rotate-instructor', { classroomID: course.classroom.classroomID }, { admin: true })).json();
+  assert.equal((await h.instructor(course, 'open')).status, 401);
+  const replacement = { ...course, instructorToken: rotated.instructorToken };
+  assert.equal((await (await h.instructor(replacement, 'open')).json()).studentPath, course.studentPath);
+  await h.call('/admin/classrooms/status', { classroomID: course.classroom.classroomID, status: 'disabled' }, { admin: true });
+  assert.equal((await h.instructor(replacement, 'open')).status, 401);
+  assert.equal((await h.call('/resolve', { accessToken: course.accessToken })).status, 404);
+});
+
+test('activation preserves IANA timing validation, rejects DST ambiguity/gaps and does not mutate course defaults', async () => {
+  const h = harness(), course = await h.course();
+  h.setTime('2026-01-01T00:00:00.000Z');
+  for (const overrides of [{ sessionDate: '2026-03-08', studentWindowStart: '02:30', walkthroughStart: '03:00', sessionClose: '03:30' },
+    { sessionDate: '2026-11-01', studentWindowStart: '01:30', walkthroughStart: '02:00', sessionClose: '02:30' }, { timeZone: 'CST' }, { domain: 'principles' }]) {
+    assert.equal((await h.instructor(course, 'activate', activation(overrides))).status, 400);
+  }
+  await h.activate(course, activation({ sessionDate: '2026-01-19', studentWindowStart: '11:40', walkthroughStart: '12:00', sessionClose: '12:30' }));
+  const view = await (await h.instructor(course, 'open')).json();
+  assert.equal(view.activeSession.walkthroughStart, '2026-01-19T18:00:00.000Z');
+  assert.equal(view.classroom.defaultStudentWindowStart, '12:40');
+});
+
+test('additive migration preserves legacy raw events while retired session tokens cannot resolve', async () => {
+  const h = harness(), f = await h.session(), event = pathFor(f.session)[0]; await send(h, f, event);
+  const old = new DatabaseSync(':memory:');
+  old.exec(readFileSync(new URL('../../server/econnections-classroom/migrations/0001_classroom.sql', import.meta.url), 'utf8'));
+  for (const table of ['classroom_sessions', 'classroom_runs', 'classroom_events']) {
+    for (const row of h.sqlite.prepare('SELECT * FROM ' + table).all()) {
+      delete row.classroomID;
+      old.prepare(`INSERT INTO ${table}(${Object.keys(row).join(',')}) VALUES(${Object.keys(row).map(() => '?').join(',')})`).run(...Object.values(row));
+    }
+  }
+  const raw = old.prepare('SELECT * FROM classroom_events').get();
+  old.exec(readFileSync(new URL('../../server/econnections-classroom/migrations/0002_classroom_courses.sql', import.meta.url), 'utf8'));
+  assert.deepEqual(old.prepare('SELECT * FROM classroom_events').get(), raw);
+  assert.equal(old.prepare('SELECT classroomID FROM classroom_sessions').get().classroomID, null);
+  old.close();
+  const oldToken = 'a'.repeat(43), sessionID = crypto.randomUUID();
+  h.sqlite.prepare(`INSERT INTO classroom_sessions(${SESSION_FIELDS.join(',')}, accessHash) VALUES(${Array(SESSION_FIELDS.length + 1).fill('?').join(',')})`)
+    .run(...SESSION_FIELDS.map(key => key === 'sessionID' ? sessionID : f.session[key]), await digest(oldToken));
+  assert.equal((await h.call('/resolve', { accessToken: oldToken })).status, 404);
+  const legacy = await h.call('/admin/session?sessionID=' + sessionID, undefined, { admin: true }); assert.equal(legacy.status, 200);
 });

@@ -1,0 +1,30 @@
+:root { color-scheme: light; }
+body { margin: 0; background: #f4f7fa; color: #102d45; font-family: system-ui, sans-serif; }
+[hidden] { display: none !important; }
+.site-bar { padding: 1rem 4vw; display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid #d1dce5; }
+a { color: #124c72; }
+main { max-width: 1200px; margin: 2rem auto; padding: 0 1.25rem 3rem; }
+h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin: .5rem 0 1.5rem; }
+h2 { margin-top: 0; }
+.eyebrow { font-weight: 750; letter-spacing: .12em; color: #286461; font-size: .85rem; }
+.panel { padding: clamp(1.25rem, 3vw, 2rem); background: white; border: 1px solid #d1dce5; border-radius: 16px; }
+#access { max-width: 520px; }
+label { display: block; font-weight: 650; margin: 1rem 0 .4rem; }
+input, select { display: block; box-sizing: border-box; width: 100%; min-height: 46px; border: 1px solid #869bab; border-radius: 6px; padding: .6rem; font: inherit; color: inherit; background: white; }
+button { font: inherit; font-weight: 650; border-radius: 7px; min-height: 46px; padding: .7rem 1rem; border: 1px solid #174e67; background: #174e67; color: white; cursor: pointer; }
+button:disabled { opacity: .55; cursor: wait; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #a95700; outline-offset: 3px; }
+p { line-height: 1.6; }
+#message:not(:empty) { padding: .85rem 1rem; border-left: 4px solid #286461; background: #e6f0ef; }
+.toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.5rem; }
+.toolbar p { margin-right: auto; }
+.toolbar button, #copy { background: white; color: #174e67; }
+.classroom-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 1.5rem; align-items: start; }
+.qr-panel { text-align: center; }
+#qr svg { display: block; width: min(100%, 440px); height: auto; margin: auto; }
+.student-url { display: block; overflow-wrap: anywhere; margin: 1rem 0; text-align: left; }
+.times { display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem; }
+dl { display: grid; grid-template-columns: auto 1fr; gap: 1rem; }
+dt { font-weight: 650; } dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 850px) { .classroom-grid { grid-template-columns: 1fr; } }
+@media (max-width: 440px) { .times { grid-template-columns: 1fr; } .site-bar { flex-wrap: wrap; } }

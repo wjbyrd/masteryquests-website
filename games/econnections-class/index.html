@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>Econ-nections Classroom · Mastery Quests</title>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="./classroom.css">
+  <script type="module" src="./classroom.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to classroom</a>
+  <header class="site-bar"><a href="/games/">Mastery Quests / Games</a><a href="/games/econnections/">Public daily play</a></header>
+  <main id="main">
+    <p class="eyebrow">ECON-NECTIONS CLASSROOM</p>
+    <h1 id="heading">Instructor access</h1>
+    <p id="message" role="status" aria-live="polite"></p>
+    <form id="access" class="panel">
+      <label for="instructor-token">Instructor access token</label>
+      <input id="instructor-token" type="password" autocomplete="off" autocapitalize="none" spellcheck="false" required aria-describedby="token-help">
+      <p id="token-help">Use the private token for your classroom. It stays in memory only while this page is open.</p>
+      <button type="submit">Open Classroom</button>
+    </form>
+    <section id="console" hidden aria-label="Classroom activation console">
+      <div class="toolbar"><p id="classroom-label"></p><button id="refresh" type="button">Refresh status</button><button id="logout" type="button">Lock classroom</button></div>
+      <div class="classroom-grid">
+        <section class="panel qr-panel" aria-labelledby="qr-title">
+          <h2 id="qr-title">Classroom QR</h2>
+          <div id="qr"></div>
+          <p>Students scan this code to join the active Econ-nections session. Use this same QR every time.</p>
+          <a id="student-url" class="student-url" target="_blank" rel="noreferrer"></a>
+          <button id="copy" type="button">Copy student link</button>
+        </section>
+        <section class="panel" aria-label="Session controls">
+          <div id="active" hidden>
+            <p class="eyebrow" id="active-status">SESSION ACTIVE</p>
+            <h2 id="active-puzzle"></h2>
+            <dl id="active-details"></dl>
+            <p>Walkthrough time is the analysis cutoff. Students may play until the close time.</p>
+            <button id="end" type="button">End Session</button>
+          </div>
+          <form id="activate">
+            <h2>Activate a session</h2>
+            <p>No session is currently active. Choose any date; each activation creates a separate session.</p>
+            <label for="domain">Puzzle</label>
+            <select id="domain" name="domain"><option value="micro">Micro</option><option value="macro">Macro</option></select>
+            <label for="date">Date</label><input id="date" name="sessionDate" type="date" required>
+            <label for="timezone">Timezone</label><input id="timezone" name="timeZone" type="text" required spellcheck="false">
+            <div class="times">
+              <label>Student window<input id="window" name="studentWindowStart" type="time" required></label>
+              <label>Walkthrough<input id="walkthrough" name="walkthroughStart" type="time" required></label>
+              <label>Close<input id="close" name="sessionClose" type="time" required></label>
+            </div>
+            <p>Times use the selected timezone. The student link opens at the student window and closes at the close time.</p>
+            <button type="submit">Activate Session</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

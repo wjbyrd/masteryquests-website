@@ -1,32 +1,84 @@
 # Econ-nections classroom pilot
 
-Dedicated Worker and D1 database for `econnections-classroom/1`. This directory is source-only and excluded by the existing static publication builder and `.assetsignore`. No deployment, D1 provisioning, account change, production credential, or Managerial/Composer telemetry change is included.
+One classroom, one private instructor token, one permanent student QR, and separate dated session occurrences. This is a dedicated Worker/D1 service using the unchanged `econnections-classroom/1` event contract. Public Econ-nections stays local-only. Managerial/Composer telemetry, `mq-measurement/1`, and its database are unchanged.
 
-## Local verification
+## Instructor workflow
 
-From the repository root, with Node 24+:
+The owner provisions a classroom once. The instructor opens **/games/econnections-class/**, enters the private classroom token, and sees the permanent QR and student URL. The input is cleared immediately, the token remains only in module memory for this page, and Lock classroom/reload discards it. It is never stored in localStorage/sessionStorage, shown after authentication, placed in URLs, included in QR content or telemetry, or logged by this application.
 
-```powershell
-node --test audit_tools/econnections/engine.test.mjs audit_tools/econnections/calendar-date.test.mjs audit_tools/econnections/classroom.test.mjs
-node audit_tools/econnections/content-audit.mjs
-node audit_tools/econnections/browser.test.mjs
-node audit_tools/econnections/classroom-browser.test.mjs
-node audit_tools/public_documentation/check.cjs
-```
+The activation form defaults its date to today in the classroom timezone using server time. Course-specific default wall times and timezone are editable for each activation. Choose Micro or Macro, a date, student window, walkthrough and close; Activate Session creates a fresh UUID sessionID and pins the original engine's exact puzzleID/pool version. The scheduled class time equals that occurrence's walkthrough time. Course defaults remain unchanged by overrides.
 
-The browser runners need Playwright and Chrome (or `BROWSER_CHANNEL`/`BROWSER_EXECUTABLE`). Set `PLAYWRIGHT_MODULE` to an existing Playwright installation, or install it in ignored local tooling. Tests use synthetic sessions, in-memory SQLite with the actual migration, an adapter matching the D1 API, and the real Worker route handlers. They do not contact Cloudflare. See the implementation report for the exact results and additional runtime checks.
+Use any calendar date. There is no Monday assumption, recurrence or automatic scheduling. Holidays require no handling: simply do not activate. Wednesday/Friday substitutions, makeup days, multiple sessions per week and multiple sessions on one date all use the **same QR**. Every session retains its own telemetry. Classroom history is not capped by a scheduling limit; individual occurrences remain subject to 730-day retention.
 
-## Owner setup commands — not run remotely by this implementation
+Only one upcoming/open occurrence may reserve a classroom. A second activation returns 409 with the existing session displayed by the console; it cannot silently create a competing occurrence. End Session closes the displayed occurrence explicitly. At its configured close time, it stops resolving even without a background job; the next activation transaction marks expired rows closed before inserting a new one. Use Refresh status to update a page left open across expiry or another instructor tab's actions. A stale End Session action targets its displayed sessionID and cannot close a newer session.
 
-The root static site and existing Worker configuration are not changed. This service must be deployed separately and attached to the two narrowly scoped API routes in this directory's configuration. Verify these paths do not overlap an existing zone route before activation.
+The student URL is always `/games/econnections/?classroom=<opaque course student value>`. It contains no instructor/global credential, database ID, or session-specific access token. Resolution looks up the classroom first and then its one current occurrence. A copied QR can be shared; it is an access link, **not verified student or enrollment identity**.
 
-Install Wrangler locally if necessary. The following keeps tooling under an ignored directory:
+## Access and timing
+
+- No current session: resolution returns 410, code `no_active_session`, and the student sees “No Econ-nections session is currently active for this class.” No browser/run ID, progress or start event is initialized. Public daily play remains an explicit alternative.
+- Before studentWindowStart: resolution and ingestion return 403, code `session_not_open`. No run starts, and a cached run cannot bypass an explicit refusal.
+- studentWindowStart <= server time < sessionClose: the current occurrence is playable. Reload uses that occurrence's existing run/progress.
+- walkthroughStart is analytical only. A completion qualifies as pre-walkthrough only when `puzzle_complete.serverTimestamp < walkthroughStart`. Equality is late; play continues after walkthrough until close. Client elapsed time never supplies the cutoff clock.
+- At/after sessionClose, or after manual close: new events are rejected. Exact retries of events already accepted for that classroom/session return their original receipt; they never become events in a later session.
+
+The intended pilot uses America/Chicago, with classroom defaults 12:40 / 13:00 / 13:30. These are editable values in classroom.example.json, not global hardcoded times. Activation uses the IANA/DST-aware conversion in timing.mjs, extracted without changing the original algorithm. It rejects nonexistent spring-forward and ambiguous fall-back wall times instead of silently picking an offset. Sessions use same-date windows with ordered start <= walkthrough < close; overnight windows are outside this pilot. The conversion supports contemporary IANA offsets in 15-minute increments. No CST offset is hardcoded.
+
+## Credentials and schema
+
+Migration **0002_classroom_courses.sql** is additive. Apply 0001 first, then 0002; do not recreate the database.
+
+| Entity | Contents |
+| --- | --- |
+| classroom_courses | classroomID; courseLabel; sectionLabel; timeZone; defaultStudentWindowStart/defaultWalkthroughStart/defaultSessionClose (HH:mm); instructorHash; studentToken; active/disabled status; createdAt |
+| classroom_sessions | Original session metadata plus nullable classroomID foreign key. New occurrences always have a parent. |
+| classroom_runs / classroom_events | Unchanged identity, raw event columns, uniqueness, foreign keys, event sequencing and receipt timestamps. |
+
+A partial unique index on classroom_sessions(classroomID), where status is upcoming/open, is the concurrency guard. Expiry cleanup plus insert run in one D1 transaction. Upcoming occurrences reserve the slot too; this console is not a future-session scheduling system.
+
+Three distinct privileges:
+
+1. Global ADMIN_TOKEN: owner provisioning, instructor-token replacement, classroom disable/enable, authenticated telemetry queries/export and existing owner session close. It is supplied privately to the Worker and CLI, never the instructor screen.
+2. Instructor token: a random opaque 256-bit value, returned once at provisioning or replacement. D1 stores only its SHA-256 hash. It can read its own classroom config/student URL, activate that classroom and close its occurrences. It cannot choose another classroomID, export data, change retention or administer the Worker.
+3. Student value: an independent random 256-bit value identifying only a classroom. It is stored in plaintext in classroom_courses so the permanent URL can be reconstructed after any instructor login. This is intentional: it is a projected/shareable access value, not an instructor secret. Reading it from a database backup cannot grant instructor/admin privilege, but can permit joining an open classroom. Treat backups and exported records as private operational data.
+
+Global owner routes can replace the instructor token without changing the QR, or disable a classroom to reject both instructor and student access. Re-enabling does not create a session and may expose its previously active occurrence if it has not closed. No plaintext instructor token is persisted by the service. Keep the one-time provisioning output privately; Windows file permissions follow its containing directory ACL.
+
+Legacy per-session access is **retired**, not supported alongside the course QR. POST /admin/sessions now returns 410. Existing session rows/events survive with classroomID null and remain visible through authenticated admin queries. Their old accessHash is ignored by all student routes. New rows use an inert `retired:<sessionID>` marker in that old NOT NULL column, solely to keep the migration additive; no per-session student credential is generated. Legacy local run keys are left untouched. The old session-tools CLI rejects provisioning and directs operators to classroom-tools; its pure conversion helper is retained for compatibility.
+
+## HTTP routes
+
+All routes start **/api/econnections-classroom**. Instructor/student requests use exact allowed Origin, POST JSON, no-store, no cookies and no-referrer. Instructor authorization is a Bearer header, never a query parameter. Error messages are bounded and never echo supplied credentials.
+
+| Route | Authorization / input | Result |
+| --- | --- | --- |
+| POST /admin/classrooms | Global admin; classroom.example.json fields | Config, permanent studentPath, once-only instructorToken |
+| POST /admin/classrooms/rotate-instructor | Global admin; {classroomID} | Replacement token once; same student link |
+| POST /admin/classrooms/status | Global admin; {classroomID,status} | active or disabled |
+| POST /instructor/open | Instructor Bearer; {} | Only its classroom config, studentPath, current occurrence and server time |
+| POST /instructor/activate | Instructor Bearer; session.example.json fields | New pinned occurrence, or 409 active_session_exists |
+| POST /instructor/close | Instructor Bearer; {sessionID} | Closes only an occurrence belonging to that classroom |
+| POST /resolve | {accessToken} (permanent student value) | Current session metadata and authoritative server timestamp |
+| POST /events | {accessToken,event} | Original event acknowledgment; same receipt for exact retries |
+| POST /admin/close | Global admin; {sessionID} | Existing owner close route |
+| GET /admin/session?sessionID=... | Global admin; optional afterRun | Metadata, counts, mean completion time, up to 100 runs with solve order and nextRunCursor |
+| GET /admin/run?runID=... | Global admin | Session metadata and ordered raw events |
+| GET /admin/export?sessionID=... | Global admin; optional after | Spreadsheet-safe CSV up to 1000 rows; X-Next-Cursor for more |
+
+The instructor API has no global admin privilege. Admin responses are also no-store on errors, do not permit browser CORS, and fail closed without a sufficiently long configured secret. Cross-classroom session submissions and instructor close attempts are rejected. After rotation, the old token fails on the next request. A request already authorized before revocation may finish; this is not a full account/session platform.
+
+## One-time provisioning and local testing
+
+From the repository root, install local tooling if not already present:
 
 ```powershell
 npm.cmd install --prefix tmp/econnections/tools --no-save --package-lock=false wrangler@4
+npm.cmd install --prefix tmp/econnections/qr-test --no-save --package-lock=false jsqr@1.4.0
 ```
 
-For local development, create `server/econnections-classroom/.dev.vars` (already ignored) containing a **local-only** random `ADMIN_TOKEN` of at least 32 characters and `ALLOWED_ORIGINS="http://127.0.0.1:8787"`. Do not commit this file. Then:
+Wrangler/Miniflare and the independent QR decoder are local test tools in an ignored directory. Neither is shipped to student/instructor browsers. The UI's vendored Project Nayuki v1.8.0 QR generator is MIT licensed; vendor/LICENSE.txt and vendor/README.md document its source and transformation. QR rendering occurs entirely in the browser with no service or CDN.
+
+Create a local-only server/econnections-classroom/.dev.vars (ignored) containing a privately generated random ADMIN_TOKEN of at least 32 characters and ALLOWED_ORIGINS="http://127.0.0.1:8787". Then:
 
 ```powershell
 node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js d1 migrations apply econnections-classroom --local --config server/econnections-classroom/wrangler.jsonc
@@ -34,112 +86,74 @@ node audit_tools/public_site_publication/build-dist.mjs
 node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js dev --local --config server/econnections-classroom/wrangler.jsonc --assets (Join-Path $PWD 'dist') --port 8787
 ```
 
-Keep that terminal running. In another PowerShell terminal, load the same local token privately and create a session:
+In another terminal, provision once using the same private local admin token:
 
 ```powershell
 $env:CLASSROOM_API = 'http://127.0.0.1:8787'
 $env:CLASSROOM_ADMIN_TOKEN = [Net.NetworkCredential]::new('', (Read-Host 'Local admin token' -AsSecureString)).Password
-node server/econnections-classroom/session-tools.mjs server/econnections-classroom/session.example.json tmp/econnections/private-session.json
+node server/econnections-classroom/classroom-tools.mjs server/econnections-classroom/classroom.example.json tmp/econnections/private-classroom.json
 ```
 
-Adjust the example's date, wall times, labels and puzzle ID before use if the sample session has passed. The output's `studentPath` is the private link to open on the local origin. A QR code may encode that exact URL using an instructor's existing QR tool. No QR service or token-bearing external request is needed by this implementation. Keep session output files private and outside source control; `tmp/econnections/` is ignored. Windows file permissions follow the containing directory's ACL; the CLI's `0600` mode is not an independent Windows ACL guarantee.
+The new output file contains the once-only instructorToken and permanent studentURL/studentPath. It is never printed to the terminal or overwritten. Keep it private; tmp/econnections is ignored. Open /games/econnections-class/ on the local origin, enter that instructor token, and activate occurrences through the page. Do not run the provisioning CLI for every session. session.example.json is now an example instructor activation body, not a provisioning request; replace its date before use.
 
-Later, when the owner elects to provision the pilot:
-
-```powershell
-node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js d1 create econnections-classroom
-```
-
-Replace **only** `REPLACE_WITH_DEDICATED_D1_ID` in this service's configuration with that newly created database's ID. Never reuse the Managerial telemetry database or binding. Then run, deliberately and separately:
-
-```powershell
-node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js d1 migrations apply econnections-classroom --remote --config server/econnections-classroom/wrangler.jsonc
-node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js secret put ADMIN_TOKEN --config server/econnections-classroom/wrangler.jsonc
-$classroomBundle = Join-Path $PWD 'tmp/econnections/worker-build'
-node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js deploy --dry-run --config server/econnections-classroom/wrangler.jsonc --outdir $classroomBundle
-node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js deploy --config server/econnections-classroom/wrangler.jsonc
-```
-
-`secret put` should receive a privately generated production credential, distinct from the local token. No credential belongs in URLs. Set `CLASSROOM_API` to `https://masteryquests.org`, privately load that admin credential, and use the same session-creation command with a fresh output filename. Publish the updated static assets through the repository's existing site process. Confirm the deployed browser/Worker share supported immutable pool versions, origin rules, rate bindings and scheduled retention; perform the win/loss/reload smoke tests before distributing the QR link. Neither the configuration placeholder nor a passing local test means that production is ready.
-
-The dry-run is also safe before provisioning. After it, run `node audit_tools/econnections/classroom-runtime.test.mjs` for an in-memory workerd/D1/rate-binding integration check. It uses the local Miniflare bundled with Wrangler (or `MINIFLARE_MODULE`) and creates no remote database. Wrangler 4.135.0 was used for the implementation verification; rerun the local checks if using a different version.
-
-## Sessions and timing
-
-`session.example.json` uses local wall-clock strings and `America/Chicago`. `session-tools.mjs` converts them with the runtime's IANA timezone database, validates the full schema, and posts canonical UTC instants. It rejects nonexistent spring-forward times and ambiguous fall-back times rather than selecting an offset silently. It supports contemporary IANA offsets in 15-minute increments. Direct API callers must supply canonical `YYYY-MM-DDTHH:mm:ss.sssZ` instants and are responsible for converting intended wall times correctly; `timeZone` must be an IANA region and the scheduled instant must map to `sessionDate` there. No CST offset is hardcoded.
-
-The example Monday September 21, 2026 session has intended warmup at 12:40, walkthrough/scheduled start at 13:00, and close at 13:30 Chicago time, within the proposed 13:00–14:00 class meeting. The session pins `econnections:2:2026-09-21:micro`; it need not match a student's local date. Both broad Micro and Macro puzzles and retained pool versions are supported through the original engine.
-
-- Before `studentWindowStart`, status is upcoming/not open. Even a valid private link returns HTTP 403 with code `session_not_open` and a generic not-open message from resolution and ingestion. No run, start event or classroom progress is initialized. At exactly `studentWindowStart`, access opens; it remains open while server time is earlier than `sessionClose`. An authoritative early refusal cannot fall back to cached progress. An open run can reload/resume during that window.
-- `walkthroughStart` is the analytical cutoff. A completion qualifies only when its Worker-generated receipt is **strictly earlier**. Equality is late. The walkthrough is analytical only and does not close access. `elapsedMs` is active client time and never determines eligibility.
-- New events and resolution are rejected at or after `sessionClose`, or immediately after an authenticated manual close. There is no backdating or grace period. An exact retry of an existing event can still retrieve its original acknowledgment; no additional row is written.
-- Session metadata and puzzle identity are immutable after creation, except status can be closed. Create a new session for a correction. Readable IDs are unique; each session gets a separate cryptographically random 256-bit access token, stored only as SHA-256 in D1 and returned once. An accidentally lost token requires a replacement session.
-
-## HTTP routes
-
-All routes start `/api/econnections-classroom`. Student routes require a configured exact `Origin`; they use POST JSON, `credentials: omit`, no-store, and no-referrer. No third-party API host is configurable in the student client.
-
-| Method/path | Input | Output |
-| --- | --- | --- |
-| POST `/resolve` | `{accessToken}` | Validated session metadata, effective status and server timestamp |
-| POST `/events` | `{accessToken,event}` | `{ok,eventID,serverTimestamp}`; same acknowledgment for exact retries |
-| POST `/admin/sessions` | All session fields except server-assigned `createdAt` | Session plus once-only private `studentPath` |
-| POST `/admin/close` | `{sessionID}` | Closed status |
-| GET `/admin/session?sessionID=...` | Optional `afterRun` cursor | Metadata, whole-session counts, mean elapsed completion time, up to 100 run IDs/browser IDs and their ordered group solves; `nextRunCursor` |
-| GET `/admin/run?runID=...` | Run ID | Session metadata plus all events in sequence order |
-| GET `/admin/export?sessionID=...` | Optional numeric `after` row cursor | Spreadsheet-safe CSV, up to 1000 rows; `X-Next-Cursor` is empty on the final page |
-
-Admin routes require `Authorization: Bearer <ADMIN_TOKEN>` and send no-store on success and failure. An unset/short token fails closed. Use headers in a local script/client, never credentials in query strings. Admin routes do not allow browser CORS. For example, with the private environment variables above:
+For telemetry administration, use the global token in request headers rather than URLs:
 
 ```powershell
 $classroomHeaders = @{ Authorization = "Bearer $env:CLASSROOM_ADMIN_TOKEN" }
-Invoke-RestMethod "$env:CLASSROOM_API/api/econnections-classroom/admin/session?sessionID=econ-monday-2026-09-21-section-a" -Headers $classroomHeaders
-Invoke-WebRequest "$env:CLASSROOM_API/api/econnections-classroom/admin/export?sessionID=econ-monday-2026-09-21-section-a" -Headers $classroomHeaders -OutFile tmp/econnections/events-page1.csv
+# Substitute a real occurrence ID obtained from the instructor activation response.
+Invoke-RestMethod "$env:CLASSROOM_API/api/econnections-classroom/admin/session?sessionID=SESSION_ID" -Headers $classroomHeaders
+Invoke-WebRequest "$env:CLASSROOM_API/api/econnections-classroom/admin/export?sessionID=SESSION_ID" -Headers $classroomHeaders -OutFile tmp/econnections/events-page1.csv
 ```
 
-Follow `X-Next-Cursor` to export additional CSV pages; each page includes a header. The mean includes both solved and unsolved terminal runs and is `null` without completions. Counts are global to the session, independent of the run page. No median or student participation percentage is claimed. The solve path includes sequence numbers, stable group IDs, active times and receipt times; complete raw paths come from `/admin/run` or the CSV.
+Follow X-Next-Cursor for further CSV pages; each page includes a header. Summary means include solved and unsolved terminal runs and are null without completions. Counts are whole-session, independent of the run page. No median, verified-student denominator or research statistical analysis is claimed.
 
-## Contract and database
+## Verification commands
 
-`games/econnections/classroom-contract.js` is the shared versioned validator, with no dependency on the other telemetry POC. Each event has exactly:
+Use Node 24+, Playwright and local Chrome (or BROWSER_CHANNEL/BROWSER_EXECUTABLE). PLAYWRIGHT_MODULE and MINIFLARE_MODULE can point to existing installations. JSQR_MODULE can override the test decoder path.
 
-`eventID`, `sessionID`, `runID`, `playerID`, `eventType`, `sequenceNumber`, `elapsedMs`, `selectedTileIds`, `correct`, `oneAway`, `groupID`, `groupsSolvedCount`, `schemaVersion`.
-
-The Worker adds `serverTimestamp`; a client-supplied value is rejected. Relational session metadata supplies `puzzleID` and `puzzleVersion`. CSV includes both. UUIDs are random v4; sequences start at one. Non-attempt tile arrays are empty, non-solve group IDs are null, and non-attempt `oneAway` is false. `correct` is null on start, attempt success on `group_attempt`, true on `group_solved`, and **fully solved** on terminal `puzzle_complete`. A terminal loss therefore has `correct:false` and fewer than four solved groups. `groupsSolvedCount` is the resulting count (unchanged on a wrong/duplicate attempt).
-
-An engine transition writes the raw attempt first, then a solve event when applicable, then terminal completion. Repeating a wrong set still creates a raw attempt while leaving engine strikes/attempt history unchanged. Stable IDs are lexically sorted as a set of four; no click order is retained. Group mixtures, difficulty order and confusion pairs are analytical products, never stored as extra behavioral fields.
-
-Migration `0001_classroom.sql` creates:
-
-- `classroom_sessions`: all 14 session fields and a unique access-token hash.
-- `classroom_runs`: minimal run/session/browser identity relation, one run per browser ID per session. No duplicated summary totals.
-- `classroom_events`: indexed typed columns and a canonical payload for exact-content retry comparison/replay. The payload deliberately repeats only the small event contract, not session metadata. Unique event IDs, unique `(runID,sequenceNumber)`, one start/terminal per run, foreign keys, and a contiguous-sequence trigger protect identity/order. Indexes cover session/type/time, run sequence, player/time, overall time and event type.
-
-The service validates paths by replaying the original `submitGroup()` engine and expecting its exact attempt/solve/terminal sequence. SQL transactional batches prevent orphan starts and protect concurrent writes. Exact duplicate retries return HTTP 200; conflicting IDs/sequence/content return 409. Invalid shape is 400, not-open/origin/auth 403/403/401, oversize body 413, rate limit 429, closed new traffic 410, missing access 404, unavailable bindings 503. Other errors are generic and do not echo sensitive inputs. Unknown contract fields/versions are rejected; a future schema needs explicit client/server compatibility work. Published pool definitions must remain available to interpret old paths.
-
-Example read-only SQL analyses:
-
-```sql
-SELECT runID FROM classroom_events WHERE sessionID = ? AND eventType = 'session_start';
-SELECT e.* FROM classroom_events e JOIN classroom_sessions s USING(sessionID)
- WHERE e.sessionID = ? AND eventType = 'puzzle_complete' AND serverTimestamp < s.walkthroughStart;
-SELECT * FROM classroom_events WHERE runID = ? ORDER BY sequenceNumber;
-SELECT groupID, sequenceNumber FROM classroom_events
- WHERE runID = ? AND eventType = 'group_solved' ORDER BY sequenceNumber;
-SELECT selectedTileIds, COUNT(*) AS attempts FROM classroom_events
- WHERE sessionID = ? AND eventType = 'group_attempt' GROUP BY selectedTileIds ORDER BY attempts DESC;
+```powershell
+node --test audit_tools/econnections/engine.test.mjs audit_tools/econnections/calendar-date.test.mjs audit_tools/econnections/classroom.test.mjs audit_tools/econnections/classroom-tools.test.mjs
+node audit_tools/econnections/content-audit.mjs
+node audit_tools/econnections/content-audit.mjs --review > tmp/econnections/content-review.md
+node audit_tools/public_documentation/check.cjs
+node audit_tools/public_site_publication/build-dist.mjs
+$env:ECON_SITE_ROOT = 'dist'
+node audit_tools/econnections/browser.test.mjs
+node audit_tools/econnections/classroom-browser.test.mjs
+node audit_tools/econnections/classroom-publication.test.mjs
+$env:WRANGLER_SEND_METRICS = 'false'
+$classroomBundle = Join-Path $PWD 'tmp/econnections/worker-build'
+node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js deploy --dry-run --config server/econnections-classroom/wrangler.jsonc --outdir $classroomBundle
+node audit_tools/econnections/classroom-runtime.test.mjs
+git diff --check
 ```
 
-## Bounds, privacy and failure policy
+The SQLite harness runs all migrations and the actual Worker. The workerd test uses actual local D1 and rate bindings and tests simultaneous activation conflicts. Browser tests independently decode the rendered QR, exercise the same QR through Monday/Wednesday/Friday/two same-day occurrences, and reject external requests from the instructor context. The publication check verifies the instructor/local QR assets and license are included while server source, tests, local tooling and secrets are excluded, and checks protected public/Managerial files against HEAD.
 
-Bodies are streamed with an 8192-byte limit; one event per request, no batching. A run has at most 256 events and each active elapsed value is an integer from zero to 24 hours. Cloudflare rate bindings apply 120 requests/minute per browser ID (resolution uses the access-token hash), plus 3000 requests/minute for the service per Cloudflare location. Missing limiters fail closed. These are operational limits, not a verified-student or bot-proof admission system. A holder can share a session link or clear storage; browser IDs are pseudonymous, not authenticated people. Engine-valid submissions are not proof of learning or honest active time.
+## Unchanged event, privacy and failure policies
 
-The browser holds one Web Lock per session across its lifetime, persists progress and queued events in one localStorage write, and retains event UUIDs, sequence and retry counts on reload. Only the first tab can participate; a second tab must wait by closing/reloading manually. bfcache return reloads and reacquires ownership. Without Web Locks, corrupted state or usable local saving, reporting fails closed and the validated puzzle remains playable in memory. Storage cleared during play stops the old run's reporting; a later fresh load creates new identifiers.
+The raw event allowlist, UUID semantics, 256-event run bound, 8192-byte body limit, three-try persisted retry budget, eight-second timeout, engine replay, ordered attempts and single terminal event remain unchanged. Types remain session_start, group_attempt, group_solved and puzzle_complete. Attempts contain four sorted stable IDs; duplicate wrong sets create raw attempts without another strike. correct on completion distinguishes four-group solve from third-strike loss. Mixture classifications, difficulty order and confusion pairs are derived later, not additional raw fields.
 
-Transmission starts only after metadata validation. At most three tries per queued event are permitted across reloads, with an eight-second timeout and short bounded retry delays. Events are sent in order; an exhausted/rejected head stops later reporting rather than creating a misleading partial sequence. Accepted events cannot be recalled by clearing local storage. Delivery success is displayed only after a server acknowledgment with the matching event ID. An outage after initialization preserves local play; metadata previously validated as open permits local-only continuation during an outage, but an explicit `session_not_open` refusal prevents starting or resuming even a cached run. Legacy upcoming metadata does not enable offline continuation. A first-time visitor without validated metadata gets a public-play link. No telemetry failure is used to prevent access to the ordinary game.
+Each resolved occurrence uses `mq.econnections.classroom.v1.run.<sessionID>`; the course routing cache contains only the last successfully validated session metadata. Reloads keep that occurrence's runID/sequence; a later occurrence gets a new runID while playerID stays the persistent browser UUID. Public `mq.econnections.result.*` history/streaks remain separate. One writer Web Lock per occurrence protects tabs. Old tabs never relabel their events into a new session. Existing accepted-event retries can acknowledge a closed occurrence through its parent course while that course remains enabled.
 
-The implementation does not persist names, email, institutional IDs, IP identity, raw user agents, fingerprints, cookies, clipboard contents, keystrokes, tile click order, screen contents or unrelated URLs. Student fetches omit credentials and referrers; the game page's referrer policy also prevents its token-bearing URL from being forwarded in link/resource referrers. Hosting platforms may still process transport metadata and the initial private URL; the Worker has application observability disabled and never logs request bodies or tokens. Treat links, browser IDs, event exports and raw decision paths as private pilot data, not a guarantee of anonymity or legal/research compliance.
+Network failure never blocks the ordinary game. A previously validated open run may continue locally during an outage with reporting disabled. Explicit no-active/not-open/invalid-course responses cannot fall back to cached gameplay. Missing Web Locks, blocked saving or damaged state disable reporting and permit in-memory play after valid resolution. Clearing storage creates a new browser ID; shared browsers can share it. None of this proves unique students, enrollment, honest elapsed time or cross-device identity.
 
-CSV formula prefixes (including leading whitespace/control characters) are escaped only in exports; raw JSON and D1 values remain unchanged. Daily scheduled retention deletes sessions 730 days after close by default and cascades all associated runs/events. Retention must be an integer 1–730 days or the job fails; monitor scheduled-run failures using platform operations. Whole-session deletion preserves complete paths while data exists. Cloudflare's independent backups/log retention and local browser/export retention are outside this job; local progress persists until cleared.
+No names, email, institutional IDs, IP-derived identity, user-agent fingerprints, cookies, individual tile-click order, keystrokes, clipboard contents, screenshots or unrelated URLs are collected by the telemetry service. The application never logs tokens or event bodies. Application observability remains disabled. Hosting infrastructure can process ordinary transport metadata and the initial student URL. The projected QR is shareable by design; no anonymity, legal compliance or research authorization guarantee is added.
 
-Cloudflare references: [D1 transactional batches](https://developers.cloudflare.com/d1/worker-api/d1-database/), [rate limiter scope and bindings](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/), [Wrangler configuration](https://developers.cloudflare.com/workers/wrangler/configuration/).
+CSV formula prefixes, including leading whitespace/control characters, are escaped only on export. Raw D1/JSON values remain unchanged. Default retention remains **730 days after sessionClose**, with allowed bounds 1–730. The scheduled job deletes whole expired session occurrences and cascades their runs/events; it does not delete their parent classroom or permanent QR. Local browser records, provisioning files, exports and Cloudflare's independent backup/log policies are outside that retention job.
+
+## Later owner actions — not performed by this implementation
+
+Provision a dedicated classroom database only if none exists; never use the Managerial database. For an existing local/remote classroom database, retain it and apply both ordered migrations (already-applied migrations are skipped). The database ID placeholder must be replaced only with that dedicated database's ID before remote activation. Example owner commands, deliberately not executed here:
+
+```powershell
+node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js d1 create econnections-classroom
+# Set this service's database_id to that dedicated database ID.
+node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js d1 migrations apply econnections-classroom --remote --config server/econnections-classroom/wrangler.jsonc
+node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js secret put ADMIN_TOKEN --config server/econnections-classroom/wrangler.jsonc
+node tmp/econnections/tools/node_modules/wrangler/bin/wrangler.js deploy --config server/econnections-classroom/wrangler.jsonc
+```
+
+Review the two narrow API routes and exact origins, publish the updated static site through its existing process, then provision each classroom once using CLASSROOM_API=https://masteryquests.org and a privately loaded owner token. Keep instructor credentials distinct from local test values. Replace old per-session QR codes with the new permanent classroom QR. Legacy data stay queryable; there is no automatic course assignment to historical orphan sessions. Smoke-test activation, scan, submit, close and reactivation before classroom use. No remote resources, migration, deployment, account settings, production secrets or Git push were performed for this amendment.
+
+References: [Project Nayuki QR generator](https://www.nayuki.io/page/qr-code-generator-library), [D1 transactional batches](https://developers.cloudflare.com/d1/worker-api/d1-database/), [Cloudflare rate bindings](https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/).

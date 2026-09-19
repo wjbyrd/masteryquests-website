@@ -1,10 +1,9 @@
 // Run after the Wrangler dry-run documented in the service README.
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { prepareSession } from '../../server/econnections-classroom/session-tools.mjs';
 import { pinnedPuzzle, SCHEMA, eventFields, transitionEvents } from '../../games/econnections/classroom-contract.js';
 import { startRecord, submitGroup } from '../../games/econnections/engine.js';
 const root = fileURLToPath(new URL('../../', import.meta.url));
@@ -21,32 +20,40 @@ const mf = new Miniflare(convertV4MiniflareOptions({
 }));
 try {
   const db = await mf.getD1Database('CLASSROOM_DB');
-  const migration = await readFile(new URL('../../server/econnections-classroom/migrations/0001_classroom.sql', import.meta.url), 'utf8');
-  // D1 exec uses newline-delimited statements; retain trigger-body semicolons.
-  const statements = migration.replace(/^--.*$/gm, '').split(/;\s*(?=PRAGMA|CREATE|$)/).map(x => x.trim()).filter(Boolean);
-  for (const sql of statements) await db.prepare(sql).run();
-  const call = (route, data, admin = false) => mf.dispatchFetch('https://classroom.test/api/econnections-classroom' + route, {
-    method: data === undefined ? 'GET' : 'POST', headers: { Origin: 'https://classroom.test', 'Content-Type': 'application/json', ...(admin ? { Authorization: 'Bearer ' + adminToken } : {}) }, ...(data === undefined ? {} : { body: JSON.stringify(data) }),
+  const migrations = new URL('../../server/econnections-classroom/migrations/', import.meta.url);
+  for (const file of (await readdir(migrations)).sort()) {
+    const migration = await readFile(new URL(file, migrations), 'utf8');
+    // Retain trigger-body semicolons while separating complete SQL statements.
+    const statements = migration.replace(/^--.*$/gm, '').split(/;\s*(?=PRAGMA|CREATE|ALTER|$)/).map(x => x.trim()).filter(Boolean);
+    for (const sql of statements) await db.prepare(sql).run();
+  }
+  const call = (route, data, admin = false, instructorToken) => mf.dispatchFetch('https://classroom.test/api/econnections-classroom' + route, {
+    method: data === undefined ? 'GET' : 'POST', headers: { Origin: 'https://classroom.test', 'Content-Type': 'application/json', ...(admin || instructorToken ? { Authorization: 'Bearer ' + (admin ? adminToken : instructorToken) } : {}) }, ...(data === undefined ? {} : { body: JSON.stringify(data) }),
   });
-  const wall = JSON.parse(await readFile(new URL('../../server/econnections-classroom/session.example.json', import.meta.url), 'utf8'));
-  for (const key of ['sessionDate', 'scheduledClassTime', 'studentWindowStart', 'walkthroughStart', 'sessionClose']) wall[key] = wall[key].replace('2026', '2099');
-  const future = await call('/admin/sessions', prepareSession(wall), true);
-  assert.equal(future.status, 201);
-  const futureData = await future.json(), futureToken = new URL(futureData.studentPath, 'https://classroom.test').searchParams.get('classroom');
-  const early = await call('/resolve', { accessToken: futureToken });
+  const provision = await call('/admin/classrooms', JSON.parse(await readFile(new URL('../../server/econnections-classroom/classroom.example.json', import.meta.url), 'utf8')), true);
+  assert.equal(provision.status, 201);
+  const course = await provision.json(), studentPath = course.studentPath, accessToken = new URL(studentPath, 'https://classroom.test').searchParams.get('classroom');
+  const instructor = (action, data = {}) => call('/instructor/' + action, data, false, course.instructorToken);
+  assert.equal((await call('/resolve', { accessToken })).status, 410);
+  const future = await instructor('activate', { sessionDate: '2099-09-21', domain: 'micro', timeZone: 'America/Chicago', studentWindowStart: '12:40', walkthroughStart: '13:00', sessionClose: '13:30' });
+  assert.equal(future.status, 200);
+  const futureSession = (await future.json()).activeSession;
+  const early = await call('/resolve', { accessToken });
   assert.equal(early.status, 403); assert.equal((await early.json()).code, 'session_not_open');
-  const earlyStart = { eventID: crypto.randomUUID(), sessionID: futureData.session.sessionID, runID: crypto.randomUUID(), playerID: crypto.randomUUID(), sequenceNumber: 1, schemaVersion: SCHEMA,
-    ...eventFields('session_start', startRecord(pinnedPuzzle(futureData.session))) };
-  assert.equal((await call('/events', { accessToken: futureToken, event: earlyStart })).status, 403);
+  const earlyStart = { eventID: crypto.randomUUID(), sessionID: futureSession.sessionID, runID: crypto.randomUUID(), playerID: crypto.randomUUID(), sequenceNumber: 1, schemaVersion: SCHEMA,
+    ...eventFields('session_start', startRecord(pinnedPuzzle(futureSession))) };
+  assert.equal((await call('/events', { accessToken, event: earlyStart })).status, 403);
   assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM classroom_runs').first()).n, 0);
   assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM classroom_events').first()).n, 0);
-  // Use an open window relative to real workerd time; keep the puzzle pinned.
-  const clock = Date.now(), instant = delta => new Date(clock + delta).toISOString();
-  const sessionDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Chicago', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(clock));
-  const creation = await call('/admin/sessions', { ...prepareSession(wall), sessionID: 'runtime-open', sessionDate,
-    studentWindowStart: instant(-60000), scheduledClassTime: instant(0), walkthroughStart: instant(600000), sessionClose: instant(3600000) }, true);
-  assert.equal(creation.status, 201);
-  const { session, studentPath } = await creation.json(), accessToken = new URL(studentPath, 'https://classroom.test').searchParams.get('classroom');
+  await instructor('close', { sessionID: futureSession.sessionID });
+  // Select a test timezone away from its last hour so the open fixture is stable.
+  const clock = new Date(), timeZone = clock.getUTCHours() >= 23 ? 'Pacific/Honolulu' : 'Etc/UTC';
+  const sessionDate = new Intl.DateTimeFormat('en-CA', { timeZone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(clock);
+  const input = { sessionDate, domain: 'micro', timeZone, studentWindowStart: '00:00', walkthroughStart: '23:58', sessionClose: '23:59' };
+  const competing = await Promise.all([instructor('activate', input), instructor('activate', input)]);
+  assert.deepEqual(competing.map(r => r.status).sort(), [200, 409]);
+  const created = await competing.find(r => r.status === 200).json(), session = created.activeSession;
+  assert.equal(created.studentPath, studentPath); assert.notEqual(session.sessionID, futureSession.sessionID);
   assert.equal((await call('/resolve', { accessToken })).status, 200);
   const puzzle = pinnedPuzzle(session), runID = crypto.randomUUID(), playerID = crypto.randomUUID();
   let record = startRecord(puzzle), events = [];
@@ -67,5 +74,8 @@ try {
   assert.equal(exported.status, 200); assert.match(await exported.text(), /preWalkthrough/);
   await call('/admin/close', { sessionID: session.sessionID }, true);
   assert.equal((await call('/resolve', { accessToken })).status, 410);
-  console.log('PASS workerd + D1 + rate bindings: migration, creation, early refusal without runs/events, open resolution, full solve, retry, summary/solve order, CSV and close');
+  const repeated = await instructor('activate', input); assert.equal(repeated.status, 200);
+  assert.equal((await repeated.json()).studentPath, studentPath);
+  assert.equal((await call('/events', { accessToken, event: events.at(-1) })).status, 200);
+  console.log('PASS workerd + D1 + rate bindings: both migrations, classroom provisioning, early/no-session refusal, competing activations, same QR, full solve, retry, summary/CSV and close/reactivation');
 } finally { await mf.dispose(); }
