@@ -5,6 +5,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.colors import Color,white
 from repo_guard import read_json,sha
 import hashlib
+from functools import lru_cache
 ASSETS='audit_tools/pdf_accessibility/canonical_components'
 SPEC=read_json(ASSETS+'/specification.json');TOKENS=SPEC['tokens'];FONTS={}
 for f in SPEC['fonts']:
@@ -13,11 +14,22 @@ for f in SPEC['fonts']:
     font.face.charToGlyph={k:v['glyph'] for k,v in m.items()};font.face.charWidths={k:v['width'] for k,v in m.items()}
     font.face.glyphToChar={v['glyph']:k for k,v in m.items()};font.face.name=('Arimo-'+f['role']).encode()
     pdfmetrics.registerFont(font);FONTS[f['role']]=(name,set(m))
+
+# Preserve the canonical Arimo text, with a small, embedded Unicode extension
+# for mathematical epsilon, multiplication and punctuation used by final QA.
+for role in ['regular','bold']:
+    name='MQCanonicalMath-'+role
+    font=TTFont(name,str(contained(ASSETS+'/'+role+'-math.ttf')))
+    pdfmetrics.registerFont(font);FONTS['math-'+role]=(name,set(font.face.charToGlyph))
+@lru_cache(maxsize=8192)
 def font_for(t,bold=False):
     needed=set(map(ord,t))-{10,13}
     for r in (['bold'] if bold else ['regular',*[r for r in FONTS if r.startswith('quotes')]]):
         if needed<=FONTS[r][1]:return FONTS[r][0]
+    r='math-bold' if bold else 'math-regular'
+    if needed<=FONTS[r][1]:return FONTS[r][0]
     raise ValueError('Canonical glyph coverage: '+repr(t))
+@lru_cache(maxsize=16384)
 def lines(t,w,s,b=False):return wrap(t,w,font_for(t,b),s)
 def canonical_table(table,dense=False):
     from PIL import ImageDraw,ImageFont
@@ -62,8 +74,10 @@ def draw(source,destination,meta):
     if not path.is_relative_to(contained('tmp/pdf_accessibility')):raise ValueError('Staged output only')
     path.parent.mkdir(parents=True,exist_ok=True);con=source['content'];im=None;mode='TEXT';dense=meta.get('canonicalDense')
     flow=meta.get('canonicalFlow',False)
+    finalCompact=meta.get('qaRemediation',{}).get('authorization')=='CONCEPT_REVIEW_FINAL_QA_20260919'
     leadingRatio=1.18 if flow=='CANONICAL_COMPACT_FLOW_TIGHT' else 1.20 if flow else 1.28
     panelBodyGap=16 if flow else 22.6979
+    if finalCompact:panelBodyGap=12
     if meta.get('tableRequired'):
         im,regions=canonical_table(con['table'],dense=bool(dense));assert regions==meta['tableRegions'];mode='CANONICAL_TABLE_DENSE' if dense else 'TABLE + TEXT' if im.width==906 else 'FULL-WIDTH TABLE'
     elif con.get('graph'):
@@ -106,7 +120,7 @@ def draw(source,destination,meta):
             o.setFont(font_for('Outcome:',True),8.55);o.textOut('Outcome:');o.setFont(font_for(line[8:]),8.55);o.textLine(line[8:])
         else:o.setFont(font_for(line),8.55);o.textLine(line)
     c.drawText(o);art('target');txt('Difficulty:',405.42,660.3278,54,9.89925,True,navy)
-    diff={'beginner':1,'intermediate':2,'advanced':3}.get(con['difficulty'].lower(),2)
+    diff={'foundational':1,'beginner':1,'intermediate':2,'advanced':3}.get(con['difficulty'].lower(),2)
     for i,x in enumerate([465,473.2,481.4]):
         c.setLineWidth(.8);c.setStrokeColor(Color(*teal));c.setFillColor(Color(*teal) if i<diff else white);c.circle(x,663.6,3.05,fill=1,stroke=1)
     components.append({'name':'difficulty-dots','centers':[[465,663.6],[473.2,663.6],[481.4,663.6]],'radius':3.05,'active':diff});txt(con['difficulty'],489.7,660.6439,84,9.55)
@@ -137,6 +151,7 @@ def draw(source,destination,meta):
         lead=s*leadingRatio
         core=38.82+(len(lines(con['core'],503.28,s))-1)*lead+2.3
         recog=37.49+sum(len(lines(t,488.4,s))*lead+1.49 for t in con['recognition'])-lead-1.49+2.3
+        if finalCompact:core-=6;recog-=6
         watch=47.09+(len(lines(con['watch'],479.573,s))-1)*lead+8.1
         worked=47.09+(len(lines(label,479.573,16,True))-1)*19.2
         if im is None:worked+=(len(lines(con['worked'],479.573,s))-1)*lead+8.1
@@ -169,7 +184,7 @@ def draw(source,destination,meta):
         else:components.append({'name':name,'bounds':[79.92,bottom,583.2,top]})
         art(name,top)
         if not isCard:
-            txt(heading,80.44425,top-15.6284,503.28,16.2,True,navy);c.setFillColor(Color(*teal));c.rect(80.44365,top-20.3534,503.28,.9,fill=1,stroke=0);y=top-(37.49 if name=='recognition' else 38.82)
+            txt(heading,80.44425,top-15.6284,503.28,16.2,True,navy);c.setFillColor(Color(*teal));c.rect(80.44365,top-20.3534,503.28,.9,fill=1,stroke=0);y=top-(37.49 if name=='recognition' else 38.82)+(6 if finalCompact else 0)
         else:y=txt(heading,91.77075,top-24.3921,479.573,16,True,TOKENS['headingTeal'] if name!='worked' else navy,19.2)-(panelBodyGap if name in ['watch','check'] else 22.6979)
         if name=='recognition':
             for item in con['recognition']:txt('\u2022',87.6249,y,7,size);y=txt(item,94.8,y,488.4,size,lead=lead)-lead-1.49

@@ -1,0 +1,103 @@
+{"report":{"buildInformation":{"releaseDetails":[{
+  "id" : "core",
+  "version" : "1.28.2",
+  "buildDate" : 1752610020000
+},{
+  "id" : "validation-model",
+  "version" : "1.28.2",
+  "buildDate" : 1752610320000
+},{
+  "id" : "gui",
+  "version" : "1.28.2",
+  "buildDate" : 1752613140000
+}]},"jobs":[{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\final_qa_20260919\\candidates\\GEN-ECON-01.pdf",
+  "size" : 367384
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 2393,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789827862911,
+  "finish" : 1789827863559,
+  "duration" : "00:00:00.648",
+  "difference" : 648
+}},{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\final_qa_20260919\\candidates\\MICRO-49.pdf",
+  "size" : 387829
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 2923,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789827863596,
+  "finish" : 1789827863769,
+  "duration" : "00:00:00.173",
+  "difference" : 173
+}},{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\final_qa_20260919\\candidates\\MACRO-54.pdf",
+  "size" : 386092
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 4310,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789827863782,
+  "finish" : 1789827863892,
+  "duration" : "00:00:00.110",
+  "difference" : 110
+}}],"batchSummary":{
+  "duration" : {
+    "start" : 1789827862823,
+    "finish" : 1789827863908,
+    "duration" : "00:00:01.085",
+    "difference" : 1085
+  },
+  "totalJobs" : 3,
+  "outOfMemory" : 0,
+  "veraExceptions" : 0,
+  "validationSummary" : {
+    "nonCompliantPdfaCount" : 0,
+    "failedJobCount" : 0,
+    "totalJobCount" : 3,
+    "compliantPdfaCount" : 3,
+    "successfulJobCount" : 3
+  },
+  "failedEncryptedJobs" : 0,
+  "failedParsingJobs" : 0,
+  "featuresSummary" : {
+    "failedJobCount" : 0,
+    "totalJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "repairSummary" : {
+    "failedJobCount" : 0,
+    "totalJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "multiJob" : true
+}}}

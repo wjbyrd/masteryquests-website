@@ -26,6 +26,9 @@ def initialize():
     write_json(EVIDENCE+'/queue.json',rows)
     print('Checkpoint initialized:',len(rows),'resources;',sum(r['Priority']!='NONE' for r in rows),'flagged')
 def validate_source_binding(source,meta):
+    if meta.get('qaRemediation',{}).get('authorization')=='CONCEPT_REVIEW_FINAL_QA_20260919':
+        from final_qa_build import validate_binding
+        return validate_binding(source,meta)
     b=meta['qaRemediation'];errors=[]
     if b.get('authorization')!='CONCEPT_REVIEW_QA_REMEDIATION_V1' or b.get('sourceRecordSha256')!=source_hash(source):errors.append('STALE_QA_AUTHORIZED_SOURCE')
     if sha(QA+'/REVIEW_CHECKLIST.csv')!=b.get('qaChecklistSha256'):errors.append('STALE_QA_QUEUE')
@@ -57,17 +60,17 @@ def formulas(source,meta,prior,old):
     result=[]
     current=fields(source,meta);previous=fields(old,prior)
     def spoken(t):
-        return t.replace('$',' dollars ').replace('%',' percent ').replace('^2',' squared ').replace(' x ',' times ').replace('/',' divided by ').replace('=',' equals ').replace('+',' plus ').replace(' - ',' minus ').replace('−',' minus ').replace('>',' greater than ').replace('<',' less than ').strip()
+        return t.replace('ε','epsilon').replace('×',' times ').replace('$',' dollars ').replace('%',' percent ').replace('^2',' squared ').replace(' x ',' times ').replace('/',' divided by ').replace('=',' equals ').replace('+',' plus ').replace(' - ',' minus ').replace('−',' minus ').replace('>',' greater than ').replace('<',' less than ').strip()
     for field,text in current.items():
         if text==previous.get(field):
             result.extend(f for f in prior.get('inlineFormulas',[]) if f['sourceField']==field);continue
         # Complete numerical expressions or amounts, not isolated math tags.
-        operand=r'(?:\$?[-−]?\d[\d,]*(?:\.\d+)?%?|\b(?:Q|P|C|I|G|S|T|Y|V|M|TC|TFC|TVC|ATC|AVC|AFC|MR|MC|AR|NCO|NX|CPI|VMP|MPL)\b)'
+        operand=r'(?:\$?[-−]?\d[\d,]*(?:\.\d+)?%?|\b(?:Q|P|C|I|G|S|T|Y|V|M|X|TC|TFC|TVC|ATC|AVC|AFC|MR|MC|AR|NCO|NX|CPI|VMP|MPL|MSC|MPC|MSB|MPB|ε|e|m|rr)\b\*?)'
         unit=r'\(?'+operand+r'\)?'
-        pattern=unit+r'(?:\s*(?:[=+*/^<>−-]|\bx\b)\s*'+unit+r')*'
+        pattern=unit+r'(?:\s*(?:[=+*/^<>×−-]|\bx\b)\s*'+unit+r')*'
         for m in re.finditer(pattern,text):
             t=m.group()
-            if not re.search(r'[$%=+*/^<>−]|(?<!\w)-|\bx\b',t):continue
+            if not re.search(r'[$%=+*/^<>×−]|(?<!\w)-|\bx\b',t):continue
             result.append({'sourceField':field,'compactStart':len(compact(text[:m.start()])),'text':t,'alternative':spoken(t)})
     meta['inlineFormulas']=result;meta['formulaCoverageReviewed']=True
     exceptions=[]

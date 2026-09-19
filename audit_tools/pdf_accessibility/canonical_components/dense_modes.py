@@ -42,6 +42,10 @@ def validate_layout(layout):
             if name=='figure' and dense.get('retainedDiagram'):
                 rendered=dense['minimumLabelPt']*min((b[2]-b[0])/dense['width'],(b[3]-b[1])/dense['height'])
                 if rendered<GRAPH_FLOOR:errors.append('GRAPH_LABEL_FLOOR')
+            if name=='figure' and dense.get('renderer','').startswith('matplotlib'):
+                rendered=dense['minimumLabelPt']*min((b[2]-b[0])/dense['width'],(b[3]-b[1])/dense['height'])
+                if rendered<GRAPH_FLOOR:errors.append('GRAPH_LABEL_FLOOR')
+                if abs((b[2]-b[0])/(b[3]-b[1])-components[name]['pixelWidth']/components[name]['pixelHeight'])>.002:errors.append('GRAPH_ASPECT_DISTORTION')
             if name=='table' and components[name].get('pixelWidth'):
                 if 29*(b[2]-b[0])/components[name]['pixelWidth']<TABLE_FLOOR:errors.append('TABLE_FLOOR')
             for entry in layout.get('panelTextBounds',[]):

@@ -125,7 +125,7 @@ def approved_text_equal(old,new,meta):
     from tag_pilot import normalized
     if meta.get('qaRemediation'):
         binding=meta['qaRemediation']
-        return (binding.get('authorization')=='CONCEPT_REVIEW_QA_REMEDIATION_V1'
+        return (binding.get('authorization') in ('CONCEPT_REVIEW_QA_REMEDIATION_V1','CONCEPT_REVIEW_FINAL_QA_20260919')
                 and digest(normalized(old).encode())==binding.get('baselineTextSha256')
                 and digest(normalized(new).encode())==binding.get('authorizedTextSha256'))
     edit=meta.get('wordingCorrection')

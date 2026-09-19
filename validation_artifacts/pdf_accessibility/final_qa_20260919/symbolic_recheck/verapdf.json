@@ -1,0 +1,83 @@
+{"report":{"buildInformation":{"releaseDetails":[{
+  "id" : "core",
+  "version" : "1.28.2",
+  "buildDate" : 1752610020000
+},{
+  "id" : "validation-model",
+  "version" : "1.28.2",
+  "buildDate" : 1752610320000
+},{
+  "id" : "gui",
+  "version" : "1.28.2",
+  "buildDate" : 1752613140000
+}]},"jobs":[{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\final_qa_20260919\\candidates\\MACRO-36.pdf",
+  "size" : 417272
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 2774,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789830107541,
+  "finish" : 1789830108242,
+  "difference" : 701,
+  "duration" : "00:00:00.701"
+}},{"itemDetails":{
+  "name" : "C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\tmp\\pdf_accessibility\\final_qa_20260919\\candidates\\MACRO-40.pdf",
+  "size" : 390520
+},"validationResult":[ {
+  "details" : {
+    "passedRules" : 106,
+    "failedRules" : 0,
+    "passedChecks" : 2696,
+    "failedChecks" : 0,
+    "ruleSummaries" : [ ]
+  },
+  "jobEndStatus" : "normal",
+  "profileName" : "PDF/UA-1 validation profile",
+  "statement" : "PDF file is compliant with Validation Profile requirements.",
+  "compliant" : true
+} ],"processingTime":{
+  "start" : 1789830108281,
+  "finish" : 1789830108423,
+  "difference" : 142,
+  "duration" : "00:00:00.142"
+}}],"batchSummary":{
+  "duration" : {
+    "start" : 1789830107434,
+    "finish" : 1789830108425,
+    "difference" : 991,
+    "duration" : "00:00:00.991"
+  },
+  "totalJobs" : 2,
+  "outOfMemory" : 0,
+  "veraExceptions" : 0,
+  "failedParsingJobs" : 0,
+  "failedEncryptedJobs" : 0,
+  "validationSummary" : {
+    "nonCompliantPdfaCount" : 0,
+    "totalJobCount" : 2,
+    "failedJobCount" : 0,
+    "compliantPdfaCount" : 2,
+    "successfulJobCount" : 2
+  },
+  "multiJob" : true,
+  "featuresSummary" : {
+    "totalJobCount" : 0,
+    "failedJobCount" : 0,
+    "successfulJobCount" : 0
+  },
+  "repairSummary" : {
+    "totalJobCount" : 0,
+    "failedJobCount" : 0,
+    "successfulJobCount" : 0
+  }
+}}}

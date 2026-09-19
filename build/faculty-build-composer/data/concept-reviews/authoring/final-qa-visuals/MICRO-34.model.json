@@ -1,0 +1,56 @@
+{
+  "model": {
+    "series": [
+      [
+        [
+          [
+            0.0,
+            18.0
+          ],
+          [
+            105.0,
+            51.6
+          ]
+        ],
+        "#145A86",
+        "-",
+        "Long-run supply",
+        null
+      ]
+    ],
+    "notes": [],
+    "fills": [],
+    "xlabel": "Industry quantity",
+    "ylabel": "Price ($)",
+    "limits": {
+      "xlim": [
+        0,
+        110
+      ],
+      "ylim": [
+        0,
+        70
+      ],
+      "xticks": [
+        0,
+        25,
+        50,
+        75,
+        100
+      ],
+      "yticks": [
+        0,
+        20,
+        40,
+        60
+      ]
+    }
+  },
+  "modelSha256": "b452ff46c01b1950e7538c398f91908265f045fc288d43002f774822b88f00ac",
+  "minimumLabelPt": 8.8,
+  "width": 320,
+  "height": 172.66666666666666,
+  "stacked": false,
+  "renderer": "matplotlib 3.11.2",
+  "recipe": "MICRO-34"
+}

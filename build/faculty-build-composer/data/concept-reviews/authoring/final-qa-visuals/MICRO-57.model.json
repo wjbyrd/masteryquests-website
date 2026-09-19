@@ -1,0 +1,108 @@
+{
+  "model": {
+    "series": [
+      [
+        [
+          [
+            0.0,
+            30.0
+          ],
+          [
+            120.0,
+            0.0
+          ]
+        ],
+        "#145A86",
+        "-",
+        "Labor Demand",
+        null
+      ],
+      [
+        [
+          [
+            0.0,
+            10.0
+          ],
+          [
+            120.0,
+            40.0
+          ]
+        ],
+        "#9C3324",
+        "--",
+        "Labor Supply",
+        null
+      ],
+      [
+        [
+          [
+            0.0,
+            20.0
+          ],
+          [
+            40.0,
+            20.0
+          ],
+          [
+            40.0,
+            0.0
+          ]
+        ],
+        "#59636B",
+        ":",
+        "",
+        null
+      ],
+      [
+        [
+          [
+            40.0,
+            20.0
+          ]
+        ],
+        "#171D2B",
+        "-",
+        "",
+        "o"
+      ]
+    ],
+    "notes": [],
+    "fills": [],
+    "xlabel": "Hundreds of warehouse workers",
+    "ylabel": "Hourly wage ($)",
+    "limits": {
+      "xlim": [
+        0,
+        150
+      ],
+      "ylim": [
+        0,
+        40
+      ],
+      "xticks": [
+        0,
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140
+      ],
+      "yticks": [
+        0,
+        10,
+        20,
+        30,
+        40
+      ]
+    }
+  },
+  "modelSha256": "186571cf308fb29c309b3d2e0b2d5bfe421f3964b7ee808875ddb7667ca59b6e",
+  "minimumLabelPt": 8.8,
+  "width": 320,
+  "height": 172.66666666666666,
+  "stacked": false,
+  "renderer": "matplotlib 3.11.2",
+  "recipe": "MICRO-57"
+}
