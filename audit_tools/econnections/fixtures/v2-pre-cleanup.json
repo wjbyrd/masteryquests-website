@@ -1,0 +1,434 @@
+{
+  "description": "Frozen before the cleanup: 60 dates per domain from 2026-09-01; stable puzzle/group/tile order identities and all relationship metadata except display tiles.",
+  "identityHash": "bdf571af0196256f11f967a8bbe12b8860c075b73c3dc4e97d845a1fe98362e0",
+  "metadataHash": "28fb02f3da8a9a0e6322706e3c7e8f63d99e56e84ee22c0a36cc5e752c2c02e0",
+  "calendarHash": "39042dbeb0bc4c49ddee9f2cd9c75e52e5ea9b4c87cc2edc548a661818e3627e",
+  "records": [
+    {
+      "puzzleId": "econnections:2:2026-09-01:micro",
+      "date": "2026-09-01",
+      "domain": "micro",
+      "poolVersion": "2",
+      "dateBasis": "local",
+      "started": true,
+      "completed": false,
+      "solved": false,
+      "groupsSolved": 1,
+      "solvedGroupIds": [
+        "mi-public-examples"
+      ],
+      "strikesUsed": 1,
+      "incorrectSubmissions": [
+        [
+          "mi-surplus-meaning:0",
+          "mi-surplus-meaning:1",
+          "mi-surplus-meaning:2",
+          "mi-opportunity-trap:1"
+        ]
+      ],
+      "attempts": [
+        [
+          "mi-public-examples:3",
+          "mi-public-examples:0",
+          "mi-public-examples:2",
+          "mi-public-examples:1"
+        ],
+        [
+          "mi-surplus-meaning:0",
+          "mi-surplus-meaning:1",
+          "mi-surplus-meaning:2",
+          "mi-opportunity-trap:1"
+        ]
+      ],
+      "elapsedTimeMs": 65432,
+      "tileOrder": [
+        "mi-surplus-meaning:3",
+        "mi-opportunity-trap:0",
+        "mi-public-examples:1",
+        "mi-opportunity-trap:2",
+        "mi-surplus-meaning:2",
+        "mi-opportunity-trap:3",
+        "mi-public-examples:2",
+        "mi-discrimination:2",
+        "mi-opportunity-trap:1",
+        "mi-surplus-meaning:1",
+        "mi-public-examples:0",
+        "mi-discrimination:1",
+        "mi-public-examples:3",
+        "mi-discrimination:3",
+        "mi-surplus-meaning:0",
+        "mi-discrimination:0"
+      ]
+    },
+    {
+      "puzzleId": "econnections:2:2026-09-02:micro",
+      "date": "2026-09-02",
+      "domain": "micro",
+      "poolVersion": "2",
+      "dateBasis": "local",
+      "started": true,
+      "completed": true,
+      "solved": true,
+      "groupsSolved": 4,
+      "solvedGroupIds": [
+        "mi-complements",
+        "mi-ppf-outward",
+        "mi-entry",
+        "mi-corrective"
+      ],
+      "strikesUsed": 1,
+      "incorrectSubmissions": [
+        [
+          "mi-ppf-outward:1",
+          "mi-ppf-outward:2",
+          "mi-ppf-outward:0",
+          "mi-entry:2"
+        ]
+      ],
+      "attempts": [
+        [
+          "mi-complements:0",
+          "mi-complements:3",
+          "mi-complements:2",
+          "mi-complements:1"
+        ],
+        [
+          "mi-ppf-outward:1",
+          "mi-ppf-outward:2",
+          "mi-ppf-outward:0",
+          "mi-entry:2"
+        ],
+        [
+          "mi-ppf-outward:1",
+          "mi-ppf-outward:2",
+          "mi-ppf-outward:0",
+          "mi-ppf-outward:3"
+        ],
+        [
+          "mi-entry:2",
+          "mi-entry:3",
+          "mi-entry:0",
+          "mi-entry:1"
+        ],
+        [
+          "mi-corrective:2",
+          "mi-corrective:1",
+          "mi-corrective:3",
+          "mi-corrective:0"
+        ]
+      ],
+      "elapsedTimeMs": 65432,
+      "tileOrder": [
+        "mi-ppf-outward:3",
+        "mi-ppf-outward:0",
+        "mi-entry:1",
+        "mi-ppf-outward:2",
+        "mi-corrective:0",
+        "mi-complements:1",
+        "mi-complements:2",
+        "mi-entry:0",
+        "mi-corrective:3",
+        "mi-complements:3",
+        "mi-ppf-outward:1",
+        "mi-complements:0",
+        "mi-entry:3",
+        "mi-corrective:1",
+        "mi-corrective:2",
+        "mi-entry:2"
+      ]
+    },
+    {
+      "puzzleId": "econnections:2:2026-09-03:micro",
+      "date": "2026-09-03",
+      "domain": "micro",
+      "poolVersion": "2",
+      "dateBasis": "local",
+      "started": true,
+      "completed": true,
+      "solved": false,
+      "groupsSolved": 1,
+      "solvedGroupIds": [
+        "mi-market-forms"
+      ],
+      "strikesUsed": 3,
+      "incorrectSubmissions": [
+        [
+          "mi-negative-spillovers:1",
+          "mi-negative-spillovers:3",
+          "mi-negative-spillovers:2",
+          "mi-incidence:1"
+        ],
+        [
+          "mi-negative-spillovers:1",
+          "mi-negative-spillovers:3",
+          "mi-negative-spillovers:2",
+          "mi-incidence:0"
+        ],
+        [
+          "mi-negative-spillovers:1",
+          "mi-negative-spillovers:3",
+          "mi-negative-spillovers:2",
+          "mi-incidence:3"
+        ]
+      ],
+      "attempts": [
+        [
+          "mi-market-forms:3",
+          "mi-market-forms:1",
+          "mi-market-forms:0",
+          "mi-market-forms:2"
+        ],
+        [
+          "mi-negative-spillovers:1",
+          "mi-negative-spillovers:3",
+          "mi-negative-spillovers:2",
+          "mi-incidence:1"
+        ],
+        [
+          "mi-negative-spillovers:1",
+          "mi-negative-spillovers:3",
+          "mi-negative-spillovers:2",
+          "mi-incidence:0"
+        ],
+        [
+          "mi-negative-spillovers:1",
+          "mi-negative-spillovers:3",
+          "mi-negative-spillovers:2",
+          "mi-incidence:3"
+        ]
+      ],
+      "elapsedTimeMs": 65432,
+      "tileOrder": [
+        "mi-marginal-average:0",
+        "mi-negative-spillovers:0",
+        "mi-incidence:2",
+        "mi-incidence:3",
+        "mi-marginal-average:2",
+        "mi-marginal-average:3",
+        "mi-incidence:0",
+        "mi-marginal-average:1",
+        "mi-negative-spillovers:2",
+        "mi-market-forms:2",
+        "mi-negative-spillovers:3",
+        "mi-incidence:1",
+        "mi-market-forms:0",
+        "mi-market-forms:1",
+        "mi-negative-spillovers:1",
+        "mi-market-forms:3"
+      ]
+    },
+    {
+      "puzzleId": "econnections:2:2026-09-01:macro",
+      "date": "2026-09-01",
+      "domain": "macro",
+      "poolVersion": "2",
+      "dateBasis": "local",
+      "started": true,
+      "completed": false,
+      "solved": false,
+      "groupsSolved": 1,
+      "solvedGroupIds": [
+        "ma-bank-assets"
+      ],
+      "strikesUsed": 1,
+      "incorrectSubmissions": [
+        [
+          "ma-deflator-scope:2",
+          "ma-deflator-scope:0",
+          "ma-deflator-scope:3",
+          "ma-deficit-debt:0"
+        ]
+      ],
+      "attempts": [
+        [
+          "ma-bank-assets:2",
+          "ma-bank-assets:1",
+          "ma-bank-assets:3",
+          "ma-bank-assets:0"
+        ],
+        [
+          "ma-deflator-scope:2",
+          "ma-deflator-scope:0",
+          "ma-deflator-scope:3",
+          "ma-deficit-debt:0"
+        ]
+      ],
+      "elapsedTimeMs": 65432,
+      "tileOrder": [
+        "ma-unemployment-rates:2",
+        "ma-deficit-debt:1",
+        "ma-deflator-scope:1",
+        "ma-deflator-scope:3",
+        "ma-deflator-scope:0",
+        "ma-unemployment-rates:1",
+        "ma-unemployment-rates:0",
+        "ma-deficit-debt:2",
+        "ma-bank-assets:0",
+        "ma-deficit-debt:3",
+        "ma-deficit-debt:0",
+        "ma-bank-assets:3",
+        "ma-bank-assets:1",
+        "ma-unemployment-rates:3",
+        "ma-deflator-scope:2",
+        "ma-bank-assets:2"
+      ]
+    },
+    {
+      "puzzleId": "econnections:2:2026-09-02:macro",
+      "date": "2026-09-02",
+      "domain": "macro",
+      "poolVersion": "2",
+      "dateBasis": "local",
+      "started": true,
+      "completed": true,
+      "solved": true,
+      "groupsSolved": 4,
+      "solvedGroupIds": [
+        "ma-exchange-function",
+        "ma-demand-expansion",
+        "ma-labor-denominator",
+        "ma-saving-identity"
+      ],
+      "strikesUsed": 1,
+      "incorrectSubmissions": [
+        [
+          "ma-demand-expansion:3",
+          "ma-demand-expansion:1",
+          "ma-demand-expansion:0",
+          "ma-labor-denominator:2"
+        ]
+      ],
+      "attempts": [
+        [
+          "ma-exchange-function:1",
+          "ma-exchange-function:3",
+          "ma-exchange-function:2",
+          "ma-exchange-function:0"
+        ],
+        [
+          "ma-demand-expansion:3",
+          "ma-demand-expansion:1",
+          "ma-demand-expansion:0",
+          "ma-labor-denominator:2"
+        ],
+        [
+          "ma-demand-expansion:3",
+          "ma-demand-expansion:1",
+          "ma-demand-expansion:0",
+          "ma-demand-expansion:2"
+        ],
+        [
+          "ma-labor-denominator:2",
+          "ma-labor-denominator:1",
+          "ma-labor-denominator:0",
+          "ma-labor-denominator:3"
+        ],
+        [
+          "ma-saving-identity:1",
+          "ma-saving-identity:2",
+          "ma-saving-identity:3",
+          "ma-saving-identity:0"
+        ]
+      ],
+      "elapsedTimeMs": 65432,
+      "tileOrder": [
+        "ma-exchange-function:0",
+        "ma-labor-denominator:3",
+        "ma-exchange-function:2",
+        "ma-saving-identity:0",
+        "ma-saving-identity:3",
+        "ma-exchange-function:3",
+        "ma-labor-denominator:0",
+        "ma-saving-identity:2",
+        "ma-labor-denominator:1",
+        "ma-demand-expansion:2",
+        "ma-demand-expansion:0",
+        "ma-demand-expansion:1",
+        "ma-demand-expansion:3",
+        "ma-saving-identity:1",
+        "ma-exchange-function:1",
+        "ma-labor-denominator:2"
+      ]
+    },
+    {
+      "puzzleId": "econnections:2:2026-09-03:macro",
+      "date": "2026-09-03",
+      "domain": "macro",
+      "poolVersion": "2",
+      "dateBasis": "local",
+      "started": true,
+      "completed": true,
+      "solved": false,
+      "groupsSolved": 1,
+      "solvedGroupIds": [
+        "ma-gdp-parts"
+      ],
+      "strikesUsed": 3,
+      "incorrectSubmissions": [
+        [
+          "ma-saving-channels:0",
+          "ma-saving-channels:2",
+          "ma-saving-channels:1",
+          "ma-gap-adjustment:2"
+        ],
+        [
+          "ma-saving-channels:0",
+          "ma-saving-channels:2",
+          "ma-saving-channels:1",
+          "ma-gap-adjustment:1"
+        ],
+        [
+          "ma-saving-channels:0",
+          "ma-saving-channels:2",
+          "ma-saving-channels:1",
+          "ma-gap-adjustment:3"
+        ]
+      ],
+      "attempts": [
+        [
+          "ma-gdp-parts:2",
+          "ma-gdp-parts:1",
+          "ma-gdp-parts:3",
+          "ma-gdp-parts:0"
+        ],
+        [
+          "ma-saving-channels:0",
+          "ma-saving-channels:2",
+          "ma-saving-channels:1",
+          "ma-gap-adjustment:2"
+        ],
+        [
+          "ma-saving-channels:0",
+          "ma-saving-channels:2",
+          "ma-saving-channels:1",
+          "ma-gap-adjustment:1"
+        ],
+        [
+          "ma-saving-channels:0",
+          "ma-saving-channels:2",
+          "ma-saving-channels:1",
+          "ma-gap-adjustment:3"
+        ]
+      ],
+      "elapsedTimeMs": 65432,
+      "tileOrder": [
+        "ma-saving-channels:3",
+        "ma-gdp-parts:0",
+        "ma-gdp-parts:3",
+        "ma-gap-adjustment:0",
+        "ma-gap-adjustment:3",
+        "ma-saving-channels:1",
+        "ma-gap-adjustment:1",
+        "ma-disinflation:3",
+        "ma-gap-adjustment:2",
+        "ma-gdp-parts:1",
+        "ma-disinflation:2",
+        "ma-saving-channels:2",
+        "ma-disinflation:0",
+        "ma-disinflation:1",
+        "ma-gdp-parts:2",
+        "ma-saving-channels:0"
+      ]
+    }
+  ]
+}

@@ -107,6 +107,6 @@
 }
 @media (max-width: 420px) {
   .tile-board { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
-  .tile { font-size: .875rem; min-height: 80px; padding: 15px 10px; overflow-wrap: normal; }
+  .tile { font-size: .8125rem; line-height: 1.25; min-height: 80px; padding: 13px 8px; overflow-wrap: anywhere; }
 }
 @media (prefers-reduced-motion: reduce) { .econ-page *, .econ-page *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

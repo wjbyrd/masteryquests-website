@@ -10,7 +10,7 @@ Standalone game at `/games/econnections/`, linked from `/games/`. The existing g
 - Selection, new records, landing statuses, streaks, displayed dates, and share summaries use that local date. Example: 11:30 p.m. Eastern on September 16 is still the September 16 puzzle.
 - The existing five-second heartbeat compares local date labels. Interaction and visibility-return checks do the same. No fixed midnight timeout or timezone-offset assumption is used.
 - On a date change, the old record is saved, the active puzzle and selection are cleared, and the landing screen shows the new date. Finished records remain finished; unfinished records remain historical played games, not completions.
-- The footer says “New puzzles at local midnight.” There is no UTC label on the live UI.
+- The footer keeps the local puzzle date and device/privacy link without reset or play-duration copy. There is no UTC label on the live UI.
 - The browser's timezone and clock are authoritative. Changing timezone can change which date is active; a previously played date resumes its same versioned record. The game makes no server-time or anti-cheat claim.
 
 `dayNumber()` is pure Gregorian calendar arithmetic: year/month/day validation, leap-year rules, and an ordinal with 1970-01-01 as zero. It does not subtract local timestamps or divide durations by 86,400,000. A 23-hour or 25-hour DST date is still exactly one calendar day. The epoch also preserves v1's historical board indexes.
@@ -29,7 +29,15 @@ Played means entered. Completed means a win or third-strike loss. Solved means f
 - `summarize().legacyHistory` exposes legacy played/completed/solved totals and the historical UTC best streak separately. Original per-game dates and attempts remain available through `store.all()`.
 - Today's v1 result never marks the new v2 daily puzzle complete. They are different games with independent identities; actually entering both counts two games, not a migration duplicate.
 
-Keep published pool versions available indefinitely while their local history is supported. A future pool change should add a new immutable registry entry and version, preferably with an explicit date-based activation schedule. Do not edit an existing published board order, group text, or answer key.
+Keep published pool versions available indefinitely while their local history is supported. A future answer-key or calendar change should add a new immutable registry entry and version, preferably with an explicit date-based activation schedule. Do not edit an existing published board order or answer key.
+
+**Cleanup compatibility:** v2 display-label corrections keep pool version `2`. Puzzle identity and initial shuffle use the version/domain/date, not display wording. Saved attempts and tile order use stable `groupId:tileIndex` IDs; no group or tile positions changed. Existing records replay with the polished labels and retain their attempts, strikes, elapsed time, completion and streaks. No migration, key rewrite, or progress reset is needed. The frozen pre-cleanup fixture checks all 120 identities and initial orders, unchanged relationship metadata/calendars, and old partial/won/lost records for both domains. Archived v1 wording remains untouched.
+
+## Incorrect guesses and mobile tiles
+
+An incorrect selection of four distinct, unsolved tiles shows **“1 away.”** only when its maximum overlap with a remaining answer group is exactly three. It still uses one strike, including on the third strike. Repeating the same wrong set keeps the duplicate warning and may repeat the hint without another strike. Overlaps of two or fewer give no proximity feedback. The engine returns only a transient boolean; no group or tile is identified and nothing is added to saved records. The existing polite, atomic status region announces the hint; selection and keyboard focus behavior are preserved.
+
+At widths up to 420px, active unsolved tile labels use `.8125rem` text, `1.25` line height, and `13px 8px` padding, retaining the two-column grid, 8px gaps and 80px minimum tile height. Text wraps at spaces, with an emergency wrap for an overlong word. Solved-card typography, colors, touch targets and sticky controls are unchanged.
 
 ## Content calendar and determinism
 
@@ -69,13 +77,13 @@ Each relationship contains `id`, `domain`, `category`, `difficulty`, `title`, fo
 - Monetary transmission beside quantity-theory or other monetary mechanisms.
 - Other labor classifications beside unemployment-denominator traps.
 
-Validation rejects duplicate IDs, invalid domains/types/difficulties, missing metadata/explanations, malformed four-tile groups, normalized duplicate labels, unknown group or exclusion IDs, repeated boards (even reordered), missing difficulties, one-type-only boards, and family/incompatibility collisions. The audit additionally verifies canonical references, objective provenance, group usage, concise labels (maximum 40 characters; current maximum 36), and no repeated canonical concept inside a board. Every active board contains at least two relationship types.
+Validation rejects duplicate IDs, invalid domains/types/difficulties, missing metadata/explanations, malformed four-tile groups, normalized duplicate labels, unknown group or exclusion IDs, repeated boards (even reordered), missing difficulties, one-type-only boards, and family/incompatibility collisions. The audit additionally verifies canonical references, objective provenance, group usage, concise labels (maximum 40 characters; current maximum 39), and no repeated canonical concept inside a board. Every active board contains at least two relationship types.
 
 All 120 board combinations were reviewed through their intended meanings and exclusion rules. Further faculty/student playtesting should calibrate difficulty and expose unanticipated alternate readings; automated structural checks cannot prove semantic uniqueness. The notes and printable review sheets make that review concrete.
 
 ## Files and responsibilities
 
-- `index.html`, `econnections.css`: existing UI and responsive layout; only the date-related footer text changed this pass.
+- `index.html`, `econnections.css`: UI and responsive layout, including the quieter results/footer and narrow-screen active tile typography.
 - `econnections.js`: existing interaction/controller with local-date selection, labels, and rollover.
 - `calendar-date.js`: local date helper, display formatting, Gregorian ordinal.
 - `engine.js`: selection, pool validation, unchanged game rules, restore, local/legacy statistics.
@@ -101,6 +109,6 @@ node audit_tools/econnections/browser.test.mjs
 node audit_tools/public_documentation/check.cjs
 ```
 
-The 14 engine/date tests include six real timezones, month/year/leap/century boundaries, DST, legacy snapshots and hash parity, all content constraints, and 1,827 successive dates per domain with no repeat sooner than 60 days. Browser coverage includes the existing win/loss/persistence/keyboard/mobile checks plus an Eastern 8 p.m. non-rollover, local midnight, preserved completed/unfinished history, migration totals, and timezone-emulated DST/calendar transitions with streak display.
+The 18 engine/date tests include exact near-miss boundaries, duplicate protection, solved-group exclusion, pre-cleanup v2 compatibility, six real timezones, month/year/leap/century boundaries, DST, legacy snapshots and hash parity, all content constraints, and 1,827 successive dates per domain with no repeat sooner than 60 days. Browser coverage includes completion/footer copy, clipboard and fallback, other-domain actions, near-miss live-region/keyboard behavior, all 384 active labels at 320/390/420/768px, solved typography and sticky controls, plus the existing win/loss/persistence checks, Eastern 8 p.m. non-rollover, local midnight, preserved completed/unfinished history, migration totals, and timezone-emulated DST/calendar transitions with streak display.
 
 The browser runner requires Playwright and an installed Chromium browser. Set `PLAYWRIGHT_MODULE` if needed, and `BROWSER_CHANNEL` or `BROWSER_EXECUTABLE` for the browser. Set `ECON_SITE_ROOT` to a generated `dist/` directory to test the production bundle. Screenshots go to ignored `tmp/econnections/`. The audit and legacy fixture remain outside public runtime assets.

@@ -66,13 +66,23 @@ export function startRecord(puzzle) {
     started: true, completed: false, solved: false, groupsSolved: 0, solvedGroupIds: [], strikesUsed: 0,
     incorrectSubmissions: [], attempts: [], elapsedTimeMs: 0, tileOrder: puzzle.tiles.map(t => t.id) };
 }
+// The caller supplies only remaining answer sets. Return proximity, never an answer.
+export function isNearMiss(tileIds, remainingGroups) {
+  const selected = new Set(tileIds);
+  if (tileIds.length !== 4 || selected.size !== 4) return false;
+  const overlaps = remainingGroups.map(ids => [...new Set(ids)].filter(id => selected.has(id)).length);
+  return Math.max(0, ...overlaps) === 3;
+}
 export function submitGroup(puzzle, record, tileIds) {
   if (record.completed) return { record, kind: 'finished' };
   const tiles = tileIds.map(id => puzzle.tiles.find(t => t.id === id));
   if (tileIds.length !== 4 || new Set(tileIds).size !== 4 || tiles.some(t => !t || record.solvedGroupIds.includes(t.groupId))) return { record, kind: 'invalid' };
   const signature = [...tileIds].sort().join('|');
-  if (record.incorrectSubmissions.some(ids => [...ids].sort().join('|') === signature)) return { record, kind: 'duplicate' };
   const correct = tiles.every(t => t.groupId === tiles[0].groupId);
+  const nearMiss = !correct && isNearMiss(tileIds, puzzle.groups
+    .filter(group => !record.solvedGroupIds.includes(group.id))
+    .map(group => puzzle.tiles.filter(tile => tile.groupId === group.id).map(tile => tile.id)));
+  if (record.incorrectSubmissions.some(ids => [...ids].sort().join('|') === signature)) return { record, kind: 'duplicate', nearMiss };
   const next = { ...record, attempts: [...record.attempts, [...tileIds]],
     solvedGroupIds: correct ? [...record.solvedGroupIds, tiles[0].groupId] : [...record.solvedGroupIds],
     incorrectSubmissions: correct ? [...record.incorrectSubmissions] : [...record.incorrectSubmissions, [...tileIds]],
@@ -80,7 +90,7 @@ export function submitGroup(puzzle, record, tileIds) {
   next.groupsSolved = next.solvedGroupIds.length;
   next.solved = next.groupsSolved === 4;
   next.completed = next.solved || next.strikesUsed === 3;
-  return { record: next, kind: correct ? 'correct' : 'incorrect' };
+  return { record: next, kind: correct ? 'correct' : 'incorrect', nearMiss };
 }
 
 // Restore progress by replaying legal attempts instead of trusting cached totals.

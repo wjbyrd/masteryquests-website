@@ -77,7 +77,8 @@ function openDomain(domain) {
 }
 function updateSelection() {
   for (const tile of $('tile-board').children) tile.setAttribute('aria-pressed', String(selection.has(tile.dataset.tileId)));
-  $('selection-count').textContent = record.completed ? 'Puzzle complete' : `${selection.size} / 4 selected`;
+  $('selection-count').hidden = record.solved;
+  $('selection-count').textContent = record.solved ? '' : record.completed ? 'Puzzle complete' : `${selection.size} / 4 selected`;
   $('submit').disabled = selection.size !== 4 || record.completed;
   $('deselect').disabled = selection.size === 0 || record.completed;
 }
@@ -111,9 +112,12 @@ function renderGame() {
 }
 function renderResults() {
   const stats = summarize(store.all(), today);
-  $('result-eyebrow').textContent = record.solved ? 'ALL SIGNALS CONNECTED' : 'DAILY PUZZLE COMPLETE';
-  $('result-title').textContent = record.solved ? 'Four connections. Nicely done.' : 'Completed, not solved.';
-  $('result-description').textContent = record.solved ? 'You found all four economic connections.' : `You found ${record.groupsSolved} of 4 connections. The remaining groups are revealed above with their explanations.`;
+  $('result-eyebrow').hidden = record.solved;
+  $('result-eyebrow').textContent = record.solved ? '' : 'DAILY PUZZLE COMPLETE';
+  $('result-title').textContent = record.solved ? 'Four Econ-nections. Nicely done.' : 'Completed, not solved.';
+  $('result-description').hidden = record.solved;
+  $('result-description').textContent = record.solved ? '' : `You found ${record.groupsSolved} of 4 connections. The remaining groups are revealed above with their explanations.`;
+  $('result-return').hidden = record.solved;
   statsMarkup($('result-stats'), [[duration(record.elapsedTimeMs), 'Active time'], [`${record.strikesUsed} / 3`, 'Strikes used'], [stats.currentStreak, 'Current streak'], [stats.bestStreak, 'Best streak']]);
   const other = puzzle.domain === 'micro' ? 'macro' : 'micro';
   $('other-domain').textContent = `${store.get(createPuzzle(other, today))?.completed ? 'View' : 'Play'} today’s ${domainName(other)}`;
@@ -152,20 +156,22 @@ $('submit').addEventListener('click', () => {
   if (syncRecord()) { renderGame(); announce('Progress updated from another tab. Select your next group.'); return; }
   captureTime();
   const result = submitGroup(puzzle, record, [...selection]);
-  if (result.kind === 'duplicate') { announce('You already tried this set. No extra strike; try a different connection.'); return; }
+  const hint = result.nearMiss ? ' 1 away.' : '';
+  if (result.kind === 'duplicate') { announce(`You already tried this set. No extra strike; try a different connection.${hint}`); return; }
   if (result.kind === 'invalid' || result.kind === 'finished') return;
   record = result.record;
   if (result.kind === 'correct') selection.clear();
   if (record.completed) { selection.clear(); lastTick = null; }
   store.save(record); renderGame();
   if (record.completed) {
-    announce(record.solved ? 'Solved! All four connections found.' : 'Third strike. Remaining connections revealed.');
+    // Focusing the single result heading announces success without a second message.
+    announce(record.solved ? '' : `Third strike. Remaining connections revealed.${hint}`);
     $('result-title').focus();
   } else if (result.kind === 'correct') {
     const group = puzzle.groups.find(g => g.id === record.solvedGroupIds.at(-1));
     announce(`Connected: ${group.title}. ${group.explanation}`); $('tile-board').firstElementChild?.focus();
   } else {
-    announce(`That set does not form a connection. ${3 - record.strikesUsed} strikes remaining. Change your selection to try again.`, true);
+    announce(`That set does not form a connection.${hint} ${3 - record.strikesUsed} strikes remaining. Change your selection to try again.`, true);
     $('tile-board').classList.remove('miss'); void $('tile-board').offsetWidth; $('tile-board').classList.add('miss');
   }
 });

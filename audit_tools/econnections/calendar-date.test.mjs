@@ -72,9 +72,10 @@ test('frozen v1 saves reconstruct exact answers; migration never rewrites or dou
   for (const [key, raw] of original) assert.equal(values.get(key), raw);
   assert.equal(puzzle.poolVersion, '2'); assert.equal(puzzle.dateBasis, 'local');
 });
-test('active UI has local-midnight wording and no UTC date or share labels', () => {
+test('active UI keeps local dates without reset, duration, or UTC labels', () => {
   const html = readFileSync(new URL('../../games/econnections/index.html', import.meta.url), 'utf8');
   const controller = readFileSync(new URL('../../games/econnections/econnections.js', import.meta.url), 'utf8');
-  assert.match(html, /local midnight/); assert.doesNotMatch(html, /UTC/);
+  assert.doesNotMatch(html, /New puzzles at local midnight|About 2 minutes|UTC/);
+  assert.match(html, /id="daily-date"/);
   assert.doesNotMatch(controller, /utcDate|UTC|toISOString/);
 });
