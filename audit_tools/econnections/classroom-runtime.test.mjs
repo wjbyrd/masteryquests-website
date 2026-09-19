@@ -13,7 +13,7 @@ const adminToken = crypto.randomUUID() + crypto.randomUUID();
 const mf = new Miniflare(convertV4MiniflareOptions({
   modules: true, scriptPath: path.join(root, 'tmp/econnections/worker-build/worker.js'), compatibilityDate: '2026-09-19',
   d1Databases: { CLASSROOM_DB: 'classroom-test-only' },
-  bindings: { ADMIN_TOKEN: adminToken, ALLOWED_ORIGINS: 'https://classroom.test', RETENTION_DAYS: '90' },
+  bindings: { ADMIN_TOKEN: adminToken, ALLOWED_ORIGINS: 'https://classroom.test', RETENTION_DAYS: '730' },
   ratelimits: {
     CLASSROOM_RATE: { namespace_id: '1101', simple: { limit: 120, period: 60 } },
     CLASSROOM_GLOBAL_RATE: { namespace_id: '1102', simple: { limit: 3000, period: 60 } },
@@ -30,7 +30,21 @@ try {
   });
   const wall = JSON.parse(await readFile(new URL('../../server/econnections-classroom/session.example.json', import.meta.url), 'utf8'));
   for (const key of ['sessionDate', 'scheduledClassTime', 'studentWindowStart', 'walkthroughStart', 'sessionClose']) wall[key] = wall[key].replace('2026', '2099');
-  const creation = await call('/admin/sessions', prepareSession(wall), true);
+  const future = await call('/admin/sessions', prepareSession(wall), true);
+  assert.equal(future.status, 201);
+  const futureData = await future.json(), futureToken = new URL(futureData.studentPath, 'https://classroom.test').searchParams.get('classroom');
+  const early = await call('/resolve', { accessToken: futureToken });
+  assert.equal(early.status, 403); assert.equal((await early.json()).code, 'session_not_open');
+  const earlyStart = { eventID: crypto.randomUUID(), sessionID: futureData.session.sessionID, runID: crypto.randomUUID(), playerID: crypto.randomUUID(), sequenceNumber: 1, schemaVersion: SCHEMA,
+    ...eventFields('session_start', startRecord(pinnedPuzzle(futureData.session))) };
+  assert.equal((await call('/events', { accessToken: futureToken, event: earlyStart })).status, 403);
+  assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM classroom_runs').first()).n, 0);
+  assert.equal((await db.prepare('SELECT COUNT(*) AS n FROM classroom_events').first()).n, 0);
+  // Use an open window relative to real workerd time; keep the puzzle pinned.
+  const clock = Date.now(), instant = delta => new Date(clock + delta).toISOString();
+  const sessionDate = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Chicago', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date(clock));
+  const creation = await call('/admin/sessions', { ...prepareSession(wall), sessionID: 'runtime-open', sessionDate,
+    studentWindowStart: instant(-60000), scheduledClassTime: instant(0), walkthroughStart: instant(600000), sessionClose: instant(3600000) }, true);
   assert.equal(creation.status, 201);
   const { session, studentPath } = await creation.json(), accessToken = new URL(studentPath, 'https://classroom.test').searchParams.get('classroom');
   assert.equal((await call('/resolve', { accessToken })).status, 200);
@@ -53,5 +67,5 @@ try {
   assert.equal(exported.status, 200); assert.match(await exported.text(), /preWalkthrough/);
   await call('/admin/close', { sessionID: session.sessionID }, true);
   assert.equal((await call('/resolve', { accessToken })).status, 410);
-  console.log('PASS workerd + D1 + rate bindings: migration, creation, resolution, full solve, retry, summary/solve order, CSV and close');
+  console.log('PASS workerd + D1 + rate bindings: migration, creation, early refusal without runs/events, open resolution, full solve, retry, summary/solve order, CSV and close');
 } finally { await mf.dispose(); }

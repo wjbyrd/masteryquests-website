@@ -51,6 +51,17 @@ try {
   assert.equal(JSON.parse(publicRecord).solved, true); assert.equal(requests.length, 0);
   check('ordinary daily play, including a full solve, makes zero classroom API requests');
 
+  h.setTime('2026-09-21T17:39:59.999Z');
+  await page.goto(origin + fixture.studentPath);
+  await page.locator('#classroom-notice').filter({ hasText: 'not open yet' }).waitFor();
+  assert.equal(await page.locator('.tile').count(), 0);
+  assert.equal(await page.evaluate(() => Object.keys(localStorage).filter(key => key.startsWith('mq.econnections.classroom.')).length), 0);
+  assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_runs').get().n, 0);
+  assert.equal(count('session_start'), 0);
+  assert.equal(requests.filter(r => r.path.endsWith('/events')).length, 0);
+  assert.equal(await page.evaluate(key => localStorage.getItem(key), publicKey), publicRecord);
+  check('before opening, a valid private link creates no progress, browser ID, run or events');
+  h.setTime(fixture.session.studentWindowStart);
   await page.goto(origin + fixture.studentPath); await page.locator('.tile').first().waitFor();
   await eventually(() => count('session_start') === 1);
   assert.equal(await page.locator('.tile').count(), 16);
@@ -60,6 +71,23 @@ try {
   assert.notEqual(saved.playerID, saved.runID);
   assert.equal(saved.playerID, await page.evaluate(() => localStorage.getItem('mq.econnections.classroom.v1.player')));
   check('valid session pins exact puzzle with separate progress, player UUID, run UUID and one start');
+
+  const cached = await page.evaluate(key => localStorage.getItem(key), key);
+  h.setTime('2026-09-21T17:39:59.999Z');
+  await page.reload();
+  await page.locator('#classroom-notice').filter({ hasText: 'not open yet' }).waitFor();
+  assert.equal(await page.locator('.tile').count(), 0);
+  assert.equal(count('session_start'), 1);
+  assert.equal(requests.filter(r => r.path.endsWith('/events')).length, 1);
+  // No new document writes to the cached run after an authoritative refusal.
+  const refusedCache = await page.evaluate(key => localStorage.getItem(key), key);
+  assert.equal(JSON.parse(refusedCache).runID, JSON.parse(cached).runID);
+  await page.clock.runFor(6000);
+  assert.equal(await page.evaluate(key => localStorage.getItem(key), key), refusedCache);
+  h.setTime(fixture.session.studentWindowStart);
+  await page.reload(); await page.locator('.tile').first().waitFor();
+  assert.equal(count('session_start'), 1);
+  check('cached progress cannot bypass an early-access refusal; the same run resumes when open');
 
   const other = await context.newPage();
   await other.goto(origin + fixture.studentPath);

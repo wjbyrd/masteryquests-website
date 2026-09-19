@@ -11,7 +11,7 @@
     { "name": "CLASSROOM_RATE", "namespace_id": "1101", "simple": { "limit": 120, "period": 60 } },
     { "name": "CLASSROOM_GLOBAL_RATE", "namespace_id": "1102", "simple": { "limit": 3000, "period": 60 } }
   ],
-  "vars": { "ALLOWED_ORIGINS": "https://masteryquests.org,https://www.masteryquests.org", "RETENTION_DAYS": "90" },
+  "vars": { "ALLOWED_ORIGINS": "https://masteryquests.org,https://www.masteryquests.org", "RETENTION_DAYS": "730" },
   "observability": { "enabled": false },
   "triggers": { "crons": ["23 5 * * *"] }
 }

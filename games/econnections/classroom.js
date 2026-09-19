@@ -21,17 +21,24 @@ async function claim(name) {
 export async function initializeClassroom(token, storage, notice) {
   if (!TOKEN.test(token)) throw new Error('This classroom link is invalid. No classroom data was sent.');
   const key = CLASSROOM_PREFIX + 'run.' + token;
-  let session;
+  let session, notOpen = false;
   try {
     const response = await request('/resolve', { accessToken: token });
+    if (response.status === 403) notOpen = (await response.json()).code === 'session_not_open';
     if (!response.ok) throw new Error('unavailable');
     const data = await response.json();
     session = validateSession(data.session);
+    if (session.status === 'upcoming') { notOpen = true; throw new Error('not open'); }
     if (session.status === 'closed') throw new Error('closed');
   } catch {
+    if (notOpen) throw new Error('Classroom session is not open yet. Reload when the student window opens, or open public daily play.');
     // Only previously validated metadata may support offline continuation.
     // Remote telemetry stays disabled until a future reload validates it again.
-    try { session = validateSession(JSON.parse(storage.getItem(key)).session); } catch { /* fail closed */ }
+    session = null;
+    try {
+      const cached = validateSession(JSON.parse(storage.getItem(key)).session);
+      if (cached.status === 'open') session = cached;
+    } catch { /* fail closed */ }
     if (!session) throw new Error('Classroom session unavailable or closed. Reload to try again, or open public daily play. No classroom events were sent.');
     return openRun(false);
   }

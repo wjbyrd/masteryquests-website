@@ -3,13 +3,12 @@ import { SESSION_FIELDS, EVENT_FIELDS, TOKEN, validateSession, validateEvent, va
 const PREFIX = '/api/econnections-classroom';
 const MAX_BODY = 8192;
 const json = (value, status = 200) => new Response(JSON.stringify(value), { status, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', 'Referrer-Policy': 'no-referrer', 'X-Content-Type-Options': 'nosniff' } });
-function fail(status) { throw Object.assign(new Error('Request rejected'), { status }); }
+function fail(status, code) { throw Object.assign(new Error('Request rejected'), { status, code }); }
 export async function digest(value) { return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(value))), x => x.toString(16).padStart(2, '0')).join(''); }
 function metadata(row) { return Object.fromEntries(SESSION_FIELDS.map(key => [key, row[key]])); }
 export function accessState(session, now) {
   if (session.status === 'closed' || now >= session.sessionClose) return 'closed';
-  // A pre-created upcoming session is accessible immediately. studentWindowStart
-  // is an instructional window, not an authorization gate.
+  // Server time gates access; walkthroughStart only classifies completions.
   return now < session.studentWindowStart ? 'upcoming' : 'open';
 }
 async function body(request) {
@@ -64,6 +63,7 @@ export function createWorker({ now = () => new Date().toISOString() } = {}) {
         if (!row) fail(404);
         const session = metadata(row), receipt = now();
         try { validateSession(session); } catch { fail(503); }
+        if (accessState(session, receipt) === 'upcoming') fail(403, 'session_not_open');
         let response;
         if (path.endsWith('/resolve')) {
           const status = accessState(session, receipt);
@@ -77,7 +77,9 @@ export function createWorker({ now = () => new Date().toISOString() } = {}) {
         for (const [key, value] of Object.entries(headers)) response.headers.set(key, value);
         return response;
       } catch (error) {
-        const response = json({ ok: false, error: 'Classroom request unavailable or rejected' }, error.status || 500);
+        const response = json(error.code === 'session_not_open'
+          ? { ok: false, code: 'session_not_open', error: 'Classroom session is not open yet' }
+          : { ok: false, error: 'Classroom request unavailable or rejected' }, error.status || 500);
         if (origin) { response.headers.set('Access-Control-Allow-Origin', origin); response.headers.set('Vary', 'Origin'); }
         return response;
       }

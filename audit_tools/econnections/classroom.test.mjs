@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { harness, ORIGIN } from './classroom-harness.mjs';
 import { SCHEMA, eventFields, transitionEvents, pinnedPuzzle, validatePath, validateSession, EVENT_FIELDS } from '../../games/econnections/classroom-contract.js';
 import { startRecord, submitGroup } from '../../games/econnections/engine.js';
@@ -21,6 +22,37 @@ function pathFor(session, win = true) {
   return events;
 }
 async function send(h, fixture, event) { return h.call('/events', { accessToken: fixture.accessToken, event }); }
+
+test('server access window rejects early starts and enforces exact opening/closing boundaries', async () => {
+  for (const [stamp, status] of [
+    ['2026-09-21T17:39:59.999Z', 403],
+    ['2026-09-21T17:40:00.000Z', 200],
+    ['2026-09-21T17:59:59.999Z', 200],
+    ['2026-09-21T18:00:00.000Z', 200],
+    ['2026-09-21T18:10:00.000Z', 200],
+    ['2026-09-21T18:29:59.999Z', 200],
+    ['2026-09-21T18:30:00.000Z', 410],
+    ['2026-09-21T18:30:00.001Z', 410],
+  ]) {
+    const h = harness(), f = await h.session(), events = pathFor(f.session);
+    h.setTime(stamp);
+    const response = await h.call('/resolve', { accessToken: f.accessToken });
+    assert.equal(response.status, status, stamp);
+    if (status === 403) {
+      assert.deepEqual(await response.json(), { ok: false, code: 'session_not_open', error: 'Classroom session is not open yet' });
+      assert.equal(response.headers.get('cache-control'), 'no-store');
+    }
+    for (const event of status === 200 ? events : events.slice(0, 2)) assert.equal((await send(h, f, event)).status, status, stamp);
+    assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_runs').get().n, status === 200 ? 1 : 0);
+    assert.equal(h.sqlite.prepare("SELECT COUNT(*) AS n FROM classroom_events WHERE eventType='session_start'").get().n, status === 200 ? 1 : 0);
+    if (status !== 200) assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_events').get().n, 0);
+    else {
+      const { summary } = await (await h.call('/admin/session?sessionID=' + f.session.sessionID, undefined, { admin: true })).json();
+      assert.equal(summary.completedBeforeWalkthrough, stamp < f.session.walkthroughStart ? 1 : 0);
+      assert.equal(summary.completedAtOrAfterWalkthrough, stamp >= f.session.walkthroughStart ? 1 : 0);
+    }
+  }
+});
 
 test('isolated schema, exact engine replay, ordered wins and duplicate-containing third-strike losses', async () => {
   const h = harness(), f = await h.session();
@@ -120,7 +152,7 @@ test('IANA timezone conversion follows Chicago DST and rejects invalid/ambiguous
   assert.equal(accessState(f.session, '2026-09-21T16:00:00.000Z'), 'upcoming');
   assert.equal(accessState(f.session, '2026-09-21T17:45:00.000Z'), 'open');
   h.setTime('2026-09-21T16:00:00.000Z');
-  assert.equal((await h.call('/resolve', { accessToken: f.accessToken })).status, 200);
+  assert.equal((await h.call('/resolve', { accessToken: f.accessToken })).status, 403);
 });
 test('spreadsheet-safe export retains raw IDs and paginates; retention removes whole sessions', async () => {
   const h = harness(), f = await h.session();
@@ -132,7 +164,17 @@ test('spreadsheet-safe export retains raw IDs and paginates; retention removes w
   const csv = await response.text(); assert.match(csv, /preWalkthrough/); assert.match(csv, /econnections:2:2026-09-21:micro/); assert.equal(csv.split('\r\n').length, 11);
   const empty = await h.call('/admin/export?sessionID=' + f.session.sessionID + '&after=1000', undefined, { admin: true });
   assert.equal((await empty.text()).split('\r\n').length, 1);
-  h.setTime('2027-01-01T00:00:00.000Z'); await h.worker.scheduled({}, h.env);
+  const config = JSON.parse(readFileSync(new URL('../../server/econnections-classroom/wrangler.jsonc', import.meta.url), 'utf8'));
+  assert.equal(config.vars.RETENTION_DAYS, '730'); assert.equal(h.env.RETENTION_DAYS, '730');
+  for (const days of ['0', '731', '1.5', 'invalid']) await assert.rejects(h.worker.scheduled({}, { ...h.env, RETENTION_DAYS: days }), /Invalid retention/);
+  const expiration = Date.parse(f.session.sessionClose) + 730 * 86400000;
+  for (const stamp of ['2027-01-01T00:00:00.000Z', new Date(expiration).toISOString()]) {
+    h.setTime(stamp); await h.worker.scheduled({}, h.env);
+    assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_events').get().n, 10);
+    assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_runs').get().n, 1);
+    assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_sessions').get().n, 1);
+  }
+  h.setTime(new Date(expiration + 1).toISOString()); await h.worker.scheduled({}, h.env);
   assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_events').get().n, 0);
   assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_runs').get().n, 0);
   assert.equal(h.sqlite.prepare('SELECT COUNT(*) AS n FROM classroom_sessions').get().n, 0);
