@@ -3265,3 +3265,27 @@ button:focus-visible {
     height: 460px;
   }
 }
+
+/* Public update archive: repeat month sections and articles in the page HTML. */
+.updates-page {
+  max-width: 820px;
+  padding-block: clamp(36px, 6vw, 72px);
+}
+.updates-introduction { margin-bottom: 40px; }
+.updates-introduction .eyebrow { color: var(--navy-800); }
+.updates-introduction h1 {
+  margin: 12px 0 20px;
+  color: var(--navy-900);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.15;
+}
+.updates-month h2 { color: var(--navy-900); font-size: 1.4rem; }
+.update-entry { padding-block: 24px; border-top: 1px solid var(--gray-300); }
+.update-entry h3 { margin: 8px 0 16px; color: var(--navy-900); font-size: 1.25rem; line-height: 1.35; }
+.update-entry p:last-child { margin-bottom: 0; }
+.update-meta { margin: 0; color: var(--gray-600); font-size: 0.9rem; }
+.updates-page a, .updates-crosslink a { text-decoration: underline; text-underline-offset: 3px; }
+.updates-page a:focus-visible, .updates-crosslink a:focus-visible { outline-color: var(--navy-800); }
+.updates-crosslink { margin-bottom: 56px; padding-top: 24px; border-top: 1px solid var(--gray-300); }
+.updates-crosslink h2 { margin: 0; color: var(--navy-900); font-size: 1.25rem; }
+.updates-crosslink p { margin: 8px 0; }
