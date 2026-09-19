@@ -112,3 +112,28 @@ node audit_tools/public_documentation/check.cjs
 The 18 engine/date tests include exact near-miss boundaries, duplicate protection, solved-group exclusion, pre-cleanup v2 compatibility, six real timezones, month/year/leap/century boundaries, DST, legacy snapshots and hash parity, all content constraints, and 1,827 successive dates per domain with no repeat sooner than 60 days. Browser coverage includes completion/footer copy, clipboard and fallback, other-domain actions, near-miss live-region/keyboard behavior, all 384 active labels at 320/390/420/768px, solved typography and sticky controls, plus the existing win/loss/persistence checks, Eastern 8 p.m. non-rollover, local midnight, preserved completed/unfinished history, migration totals, and timezone-emulated DST/calendar transitions with streak display.
 
 The browser runner requires Playwright and an installed Chromium browser. Set `PLAYWRIGHT_MODULE` if needed, and `BROWSER_CHANNEL` or `BROWSER_EXECUTABLE` for the browser. Set `ECON_SITE_ROOT` to a generated `dist/` directory to test the production bundle. Screenshots go to ignored `tmp/econnections/`. The audit and legacy fixture remain outside public runtime assets.
+
+## Optional classroom sessions
+
+Normal `/games/econnections/` play remains local-only: no classroom API requests, account, session, or browser identifier is required. Daily Micro/Macro selection, local history, streaks, rules, and public cross-tab synchronization remain unchanged.
+
+An instructor-created link has the form `/games/econnections/?classroom=<opaque random access token>`. It resolves through the separate `/api/econnections-classroom/` service to one immutable puzzle ID and pool version. The device's date/timezone cannot roll that puzzle over. A malformed link, unavailable metadata, or a closed session does not enable reporting. If a previously validated classroom run is cached, the same pinned puzzle can continue locally during an outage, with reporting disabled until metadata can be validated on a later reload. Otherwise the page offers public daily play.
+
+Classroom progress is stored separately under `mq.econnections.classroom.v1.run.<token>`; public `mq.econnections.result.*` records are neither inherited nor overwritten. Classroom results do not change public streaks. A browser can have one run per session. A Web Lock permits one active classroom tab per session: a second tab shows a notice to continue in the first tab or close it and reload. Public tabs keep their existing synchronization. Browsers without Web Locks or usable storage can play the validated puzzle in memory with reporting disabled.
+
+Classroom events collect a pseudonymous persistent browser UUID (`playerID`), independent run/event UUIDs, session ID, event sequence, submitted four-tile sets sorted by stable ID, grouping outcomes, near misses, solved group IDs/counts, and active elapsed time. The service assigns receipt timestamps. It collects no names, email, institutional IDs, fingerprints, individual tile-click order, keystrokes, or unrelated browsing data. A browser ID is not verified student identity: shared browsers may share it, clearing browser storage creates a new ID, and there is no cross-device identity claim. Hosting infrastructure may process ordinary request metadata; this layer does not store IP addresses or user-agent fields.
+
+Only `session_start`, `group_attempt`, `group_solved`, and `puzzle_complete` are emitted. Repeated wrong sets each produce an attempt event but still cost no additional strike. A terminal event records whether four groups were solved; a third-strike loss is completed, not solved. No separate `one_away` event or individual clickstream is collected.
+
+**Pre-walkthrough completion means `puzzle_complete.serverTimestamp < walkthroughStart`.** Equality and later receipt count as walkthrough-period activity, even if the device claims an earlier time. Delayed/retried delivery is never backdated. `studentWindowStart` describes the intended warmup window; pre-created sessions may be opened earlier. `sessionClose` ends new event acceptance and is not the walkthrough cutoff. Exact retries of already accepted events return their original receipt, including after close.
+
+Progress and the pending event queue are saved together. Each event gets at most three transmission attempts across reloads; failures do not block solving or claim successful delivery. At the 256-event run limit, reporting stops visibly and play continues. Local records/queues persist until browser storage is cleared; the server's default retention is 90 days after session close.
+
+This is the separate `econnections-classroom/1` contract and a dedicated D1 service. It does not modify `mq-measurement/1`. See [service setup, routes, schema and policies](../../server/econnections-classroom/README.md) and [implementation report](../../server/econnections-classroom/IMPLEMENTATION_REPORT.md). No remote resources are provisioned by this change.
+
+Additional local checks (Node 24+ for the SQLite test harness):
+
+```text
+node --test audit_tools/econnections/classroom.test.mjs
+node audit_tools/econnections/classroom-browser.test.mjs
+```

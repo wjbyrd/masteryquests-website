@@ -1,6 +1,7 @@
 import { createPuzzle, startRecord, submitGroup, summarize, localDate, shuffled, validatePool } from './engine.js';
 import { displayDate } from './calendar-date.js';
 import { createStore, STORAGE_PREFIX } from './storage.js';
+import { initializeClassroom } from './classroom.js';
 
 const $ = id => document.getElementById(id);
 const domainName = domain => domain === 'micro' ? 'Micro' : 'Macro';
@@ -9,7 +10,9 @@ const duration = ms => `${Math.floor(ms / 60000)}:${String(Math.floor(ms / 1000)
 let today = localDate(), puzzle = null, record = null, selection = new Set(), lastTick = null;
 let storage;
 try { storage = window.localStorage; } catch { /* The store supplies a visible warning and an in-memory fallback. */ }
-const store = createStore(storage, message => { $('storage-warning').textContent = message; $('storage-warning').hidden = false; });
+let classroom = null;
+const classroomRequested = new URLSearchParams(location.search).has('classroom');
+let store = createStore(storage, message => { $('storage-warning').textContent = message; $('storage-warning').hidden = false; });
 
 function statsMarkup(target, entries) {
   target.replaceChildren(...entries.map(([value, label]) => {
@@ -54,6 +57,7 @@ function saveProgress() {
   if (changed) renderGame();
 }
 function checkDay() {
+  if (classroomRequested) return false;
   const date = localDate();
   if (date === today) return false;
   saveProgress(); today = date; puzzle = null; record = null; selection.clear(); lastTick = null;
@@ -65,7 +69,8 @@ function checkDay() {
 }
 function openDomain(domain) {
   checkDay(); saveProgress();
-  puzzle = createPuzzle(domain, today); record = store.get(puzzle) || startRecord(puzzle);
+  if (classroomRequested && !classroom) return;
+  puzzle = classroom?.puzzle || createPuzzle(domain, today); record = store.get(puzzle) || startRecord(puzzle);
   selection.clear(); lastTick = record.completed || document.hidden ? null : performance.now();
   store.save(record);
   document.body.classList.add('playing');
@@ -121,6 +126,12 @@ function renderResults() {
   statsMarkup($('result-stats'), [[duration(record.elapsedTimeMs), 'Active time'], [`${record.strikesUsed} / 3`, 'Strikes used'], [stats.currentStreak, 'Current streak'], [stats.bestStreak, 'Best streak']]);
   const other = puzzle.domain === 'micro' ? 'macro' : 'micro';
   $('other-domain').textContent = `${store.get(createPuzzle(other, today))?.completed ? 'View' : 'Play'} today’s ${domainName(other)}`;
+  if (classroom) {
+    $('other-domain').hidden = true;
+    $('result-return').hidden = true;
+    $('result-eyebrow').textContent = record.solved ? '' : 'CLASSROOM PUZZLE COMPLETE';
+    statsMarkup($('result-stats'), [[duration(record.elapsedTimeMs), 'Active time'], [`${record.strikesUsed} / 3`, 'Strikes used']]);
+  }
 }
 function announce(message, miss = false) { $('feedback').textContent = message; $('feedback').className = `feedback${miss ? ' miss' : ''}`; }
 
@@ -156,6 +167,7 @@ $('submit').addEventListener('click', () => {
   if (syncRecord()) { renderGame(); announce('Progress updated from another tab. Select your next group.'); return; }
   captureTime();
   const result = submitGroup(puzzle, record, [...selection]);
+  classroom?.recordTransition(result, [...selection]);
   const hint = result.nearMiss ? ' 1 away.' : '';
   if (result.kind === 'duplicate') { announce(`You already tried this set. No extra strike; try a different connection.${hint}`); return; }
   if (result.kind === 'invalid' || result.kind === 'finished') return;
@@ -196,6 +208,7 @@ document.addEventListener('visibilitychange', () => {
 });
 window.addEventListener('pagehide', saveProgress);
 window.addEventListener('storage', event => {
+  if (classroomRequested) return;
   if (event.key !== null && !event.key.startsWith(STORAGE_PREFIX)) return;
   if (checkDay()) return;
   if (record) { if (syncRecord()) { renderGame(); if (record.completed) lastTick = null; announce('Progress updated from another tab.'); } }
@@ -206,6 +219,18 @@ if (poolErrors.length) {
   $('landing').hidden = true; $('storage-warning').hidden = false;
   $('storage-warning').textContent = 'The puzzle library could not be loaded. Please try again later.';
   console.error(poolErrors);
+} else if (classroomRequested) {
+  $('landing').hidden = true;
+  $('classroom-notice').hidden = false;
+  $('classroom-notice').textContent = 'Loading classroom session…';
+  $('classroom-public').hidden = false;
+  try {
+    classroom = await initializeClassroom(new URLSearchParams(location.search).get('classroom'), storage, message => { $('classroom-notice').textContent = message; });
+    store = classroom.store;
+    $('choose-domain').hidden = true;
+    openDomain(classroom.puzzle.domain);
+    setInterval(saveProgress, 5000);
+  } catch (error) { $('classroom-notice').textContent = error.message; }
 } else {
   updateLanding();
   setInterval(() => { if (!checkDay()) saveProgress(); }, 5000);
