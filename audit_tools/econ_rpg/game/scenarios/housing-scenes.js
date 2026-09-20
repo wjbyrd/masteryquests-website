@@ -12,7 +12,7 @@ export default {
       when: { all: [pipeline, { not: delivered }] },
       alt: 'A crane, structural frame and work-site fencing occupy the service yard. Homes are being built but are not yet available to tenants.' },
     { id: 'pressure', label: 'Limited vacancies', when: { state: 'availability', op: 'lte', value: 3 },
-      alt: 'People wait outside a lettings office and a shop window advertises a viewing. The occupied apartment blocks and shops are unchanged; a queue illustrates limited access to vacant homes.' },
+      alt: 'A larger queue waits outside the lettings office beneath warm, curtained apartment windows. A viewing sign and the occupied homes illustrate competition for limited vacancies in the same waterfront neighborhood.' },
     { id: 'baseline', label: 'Existing neighborhood',
       alt: 'An elevated 2D view of Linden: terracotta, teal and ochre apartment buildings, balconies, a grocer, cafe, repair shop and cycle shop, a bus shelter, crosswalks, trees and a waterfront promenade.' }
   ]

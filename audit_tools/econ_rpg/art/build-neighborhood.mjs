@@ -2,10 +2,10 @@
 // All views reuse the same neighborhood geometry; only small overlays differ.
 import { mkdirSync, writeFileSync } from 'node:fs';
 // Illustration strokes, not CSS filters: silhouettes > frames > surface details.
-const edge = '#283c4b';
+const edge = '#20364c';
 const point = (x, y, z = 0) => [480 + (x - y) * 1.05, 128 + (x + y) * .5 - z];
 const pts = values => values.map(v => point(...v).map(n => +n.toFixed(2)).join(',')).join(' ');
-const poly = (values, fill, stroke = edge, width = 1.35) => `<polygon points="${pts(values)}" fill="${fill}" stroke="${stroke}" stroke-width="${width}" stroke-linejoin="round"/>`;
+const poly = (values, fill, stroke = edge, width = 1.5) => `<polygon points="${pts(values)}" fill="${fill}" stroke="${stroke}" stroke-width="${width}" stroke-linejoin="round"/>`;
 const line = (a, b, color = edge, width = 1) => `<polyline points="${pts([a,b])}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round"/>`;
 const flat = (x,y,w,d,z,color,stroke = edge) => poly([[x,y,z],[x+w,y,z],[x+w,y+d,z],[x,y+d,z]],color,stroke);
 const front = (x,y,w,z,h,color) => poly([[x,y,z],[x+w,y,z],[x+w,y,z+h],[x,y,z+h]],color);
@@ -22,7 +22,7 @@ function tree(x,y,size=1) {
   const [cx,cy]=point(x,y,39*size);
   return flat(x-9,y-9,18,18,1,'#a9b296')+box(x-7,y-7,14,14,5,['#c38b64','#8e6550','#efc994'])+
     line([x,y,5],[x,y,37*size],'#624c3b',4.5)+line([x,y,23*size],[x-8,y,33*size],'#624c3b',2)+
-    `<g transform="translate(${cx} ${cy}) scale(${size})"><path d="M-18 12C-27 6-27-4-20-8C-25-18-15-25-8-22C-5-33 8-32 12-23C23-27 30-16 24-9C34-4 31 8 23 11C24 21 11 25 5 21C-4 30-16 23-15 18Z" fill="#568738" stroke="#284e3f" stroke-width="1.8"/><path d="M-20-8C-25-18-15-25-8-22C-5-33 8-32 12-23C23-27 30-16 24-9L15-5 11 5 1 1-8 8-17 2Z" fill="#88b543"/><path d="M-15-13l8-5 4 7-8 4ZM4-20l8-1 4 6-8 4ZM-4-4l8-2 3 6-8 3Z" fill="#b4ce63"/></g>`;
+    `<g transform="translate(${cx} ${cy}) scale(${size})"><path d="M-18 12C-27 6-27-4-20-8C-25-18-15-25-8-22C-5-33 8-32 12-23C23-27 30-16 24-9C34-4 31 8 23 11C24 21 11 25 5 21C-4 30-16 23-15 18Z" fill="#4a8639" stroke="#284e3f" stroke-width="1.8"/><path d="M-20-8C-25-18-15-25-8-22C-5-33 8-32 12-23C23-27 30-16 24-9L15-5 11 5 1 1-8 8-17 2Z" fill="#83ba42"/><path d="M-15-13l8-5 4 7-8 4ZM4-20l8-1 4 6-8 4ZM-4-4l8-2 3 6-8 3Z" fill="#b6d967"/></g>`;
 }
 function person(x,y,shirt='#df9a6f',scale=1) {
   return dot(x+2,y+1,1,4*scale,'#334a4c40')+line([x-2,y,1],[x,y,8*scale],edge,2.4*scale)+line([x+3,y,1],[x+1,y,8*scale],edge,2.4*scale)+
@@ -51,8 +51,8 @@ function bench(x,y) {
     flat(x,y-4,25,8,7,'#b38d66')+front(x,y-4,25,10,6,'#b38d66');
 }
 function windowFront(x,y,z,w=10,h=14,lit=false) {
-  return front(x-1.5,y,w+3,z-1.5,h+3,'#f3dec0')+front(x,y+.2,w,z,h,lit?'#e9b565':'#32658c')+
-    poly([[x+1,y+.4,z+h-1],[x+w-1,y+.4,z+h-1],[x+1,y+.4,z+4]],lit?'#f6d891':'#73b0ca','none')+
+  return front(x-1.5,y,w+3,z-1.5,h+3,'#fff0d5')+front(x,y+.2,w,z,h,lit?'#e9b565':'#23567f')+
+    poly([[x+1,y+.4,z+h-1],[x+w-1,y+.4,z+h-1],[x+1,y+.4,z+4]],lit?'#f6d891':'#85cde3','none')+
     line([x+w/2,y+.6,z],[x+w/2,y+.6,z+h],edge,1.1)+line([x,y+.6,z+h/2],[x+w,y+.6,z+h/2],edge,1.1)+
     flat(x-2,y, w+4,3,z-2,'#e4c59b');
 }
@@ -117,7 +117,7 @@ function building(x,y,w,d,h,colors,{shop='',roof='flat',balcony=false,style='mas
     for(let r=0;r<3;r++)art+=line([x-3,y+d/2+(d/2+3)*(r+1)/4,h+17-17*(r+1)/4],[x+w+3,y+d/2+(d/2+3)*(r+1)/4,h+17-17*(r+1)/4],'#e29860',.8);
     art+=box(x+9,y+10,8,8,12,['#a67864','#785d50','#bf9b7c'],h+6);
   }else{
-    art+=flat(x+3,y+3,w-6,d-6,h+.1,'#536875')+front(x-2,y+d+2,w+4,h,5,'#f3dec0')+side(x+w+2,y-2,d+4,h,5,'#bdc5b8');
+    art+=flat(x+3,y+3,w-6,d-6,h+.1,'#3b536c')+front(x-2,y+d+2,w+4,h,5,'#fff0d5')+side(x+w+2,y-2,d+4,h,5,'#bdc5b8');
     art+=line([x-2,y+d+2,h+5],[x+w+2,y+d+2,h+5],'#fcf0d2',1.2);
     art+=box(x+10,y+10,15,11,8,['#d1d8d2','#819aa4','#eef0dc'],h+1);
     for(let a=0;a<4;a++)art+=line([x+12,y+12+a*2,h+9],[x+23,y+12+a*2,h+9],'#536d80',1);
@@ -131,13 +131,17 @@ function building(x,y,w,d,h,colors,{shop='',roof='flat',balcony=false,style='mas
   return art;
 }
 
-let ground = `<rect x="-100" y="-100" width="1200" height="850" fill="#d7dfd0"/>`;
+let ground = `<rect x="-100" y="-100" width="1200" height="850" fill="#eef4f8"/>`;
 ground+=poly([[-25,-5,-7],[444,-5,-7],[444,428,-7],[-25,428,-7]],'#476b73','none');
-ground+=flat(-25,-5,469,433,0,'#c9c9ac','none');
-ground+=flat(-25,353,469,75,1,'#3a96a5','none');
-for(let x=-10;x<430;x+=28)for(let y=368;y<425;y+=19){ground+=line([x,y,1.2],[x+12,y,1.2],'#9bd2d0',1.5);ground+=line([x+5,y+3,1.2],[x+17,y+3,1.2],'#65b9bf',1);}
-ground+=flat(-10,1,438,338,1,'#e5d4b3','none');
-ground+=flat(-10,157,438,49,2,'#536677','none')+flat(190,1,48,338,2,'#536677','none');
+ground+=flat(-25,-5,469,433,0,'#d6dedf','none');
+ground+=flat(-25,353,469,75,1,'#178fb4','none');
+// Curved, staggered ripples break the road-like rows of straight water marks.
+for(let row=0;row<4;row++)for(let col=0;col<12;col++){
+  const [rx,ry]=point(-12+col*38+(row%2)*17,362+row*19,1.3);
+  ground+=`<path d="M${rx} ${ry}q5-3 10 0t10 0m-7 6q4-2 8 0" fill="none" stroke="${(row+col)%3?'#73d7e9':'#d1f7fa'}" stroke-width="1.6" stroke-linecap="round"/>`;
+}
+ground+=flat(-10,1,438,338,1,'#f3e5cd','none');
+ground+=flat(-10,157,438,49,2,'#465c72','none')+flat(190,1,48,338,2,'#465c72','none');
 for(const y of [156,207])ground+=line([-10,y,3],[428,y,3],'#f7e5c9',3);
 for(const x of [188,240])ground+=line([x,1,3],[x,339,3],'#f7e5c9',3);
 for(let x=3;x<425;x+=30)if(x<170||x>245)ground+=flat(x,180,13,1.2,2.2,'#e1d9ad','none');
@@ -151,18 +155,28 @@ for(let x=-10;x<425;x+=22)ground+=line([x,353,-8],[x,353,3],'#596f7b',1);
 ground+=line([-10,348,3],[430,348,3],'#405965',2);
 for(let x=0;x<430;x+=22)ground+=line([x,348,3],[x,348,13],'#405965',1.2);
 ground+=line([-10,348,13],[430,348,13],'#405965',1.5);
+// A short timber landing and moored launch make the water unmistakable.
+ground+=flat(119,350,27,40,5,'#bf8959');
+for(let y=353;y<390;y+=5)ground+=line([119,y,5.2],[146,y,5.2],'#78513c',1);
+for(const x of [120,146])for(const y of [352,387])ground+=box(x-1,y-1,3,3,12,['#97704b','#624b3c','#efcf97']);
+ground+=poly([[154,364,2],[174,364,2],[174,389,2],[164,404,2],[154,389,2]],'#124c73','none');
+ground+=poly([[153,363,6],[173,363,6],[173,388,6],[163,402,6],[153,388,6]],'#f8f3df');
+ground+=poly([[156,367,7],[170,367,7],[170,388,7],[163,397,7],[156,388,7]],'#367b9f');
+ground+=box(156,368,14,13,12,['#f7eed5','#b4d9e0','#fff9e8'],7);
+ground+=front(158,381.2,10,10,7,'#225676')+side(170.2,370,8,10,7,'#357d9f');
+ground+=line([153,370,6],[145,365,9],'#685645',1.1);
 
 let back = tree(24,18,.8)+tree(180,13,.9)+tree(248,12,.9)+tree(413,40,.9);
-back+=building(34,15,63,47,93,['#d99a60','#a76643','#e6be82'],{roof:'gable',style:'brick'});
-back+=building(105,17,63,57,125,['#c9674f','#954537','#dcc0a3'],{balcony:true,style:'brick'});
-back+=building(263,20,58,49,105,['#ecce86','#c89d63','#f0dab0']);
-back+=building(331,24,63,52,79,['#e0e3d0','#9bb6b0','#d8d6b8'],{style:'modern'});
+back+=building(34,15,63,47,93,['#f0b76a','#b87548','#e6be82'],{roof:'gable',style:'brick'});
+back+=building(105,17,63,57,125,['#e77f60','#ae513f','#dcc0a3'],{balcony:true,style:'brick'});
+back+=building(263,20,58,49,105,['#f9dc94','#c79355','#f0dab0']);
+back+=building(331,24,63,52,79,['#f0f3e7','#94babc','#d8d6b8'],{style:'modern'});
 // Side-street traffic follows its lane and sits behind the nearer shop row.
 back+=car(195,105,'#c5684a','y');
-back+=building(28,85,66,52,76,['#e5ba80','#ac8056','#e9c49a'],{shop:'GROCER',awning:'#53836b'});
-back+=building(110,91,63,46,100,['#528c9f','#36637f','#ccd9cb'],{shop:'LINDEN CAFE',balcony:true,style:'modern',awning:'#b6783d'});
-back+=building(270,92,58,42,65,['#dc9754','#a66540','#e6c98f'],{shop:'REPAIRS',roof:'gable',style:'brick'});
-back+=building(341,94,61,43,85,['#95b3a0','#5c877b','#ddd7b5'],{balcony:true,style:'modern'});
+back+=building(28,85,66,52,76,['#f4cd91','#b0875c','#e9c49a'],{shop:'GROCER',awning:'#53836b'});
+back+=building(110,91,63,46,100,['#55a5c1','#326b92','#ccd9cb'],{shop:'LINDEN CAFE',balcony:true,style:'modern',awning:'#b6783d'});
+back+=building(270,92,58,42,65,['#f1b363','#b57543','#e6c98f'],{shop:'REPAIRS',roof:'gable',style:'brick'});
+back+=building(341,94,61,43,85,['#b7d4bc','#6b9e90','#ddd7b5'],{balcony:true,style:'modern'});
 back+=tree(16,131,.78)+tree(250,120,.75)+tree(409,121,.9)+tree(181,75,.75);
 // Grocer's produce tables, cafe chairs, and the mechanic's narrow service alley.
 for(const x of [34,52,70]){
@@ -173,15 +187,15 @@ back+=planting(103,141,12)+planting(154,144,14)+planting(388,145,17);
 back+=box(166,140,7,5,10,['#7b9881','#5e7c70','#a5b69a']);
 back+=bench(114,147)+person(134,148,'#e2b968');
 
-let frontBlock = building(25,230,64,60,81,['#ba644d','#874438','#d1ac86'],{roof:'gable',style:'brick',shop:'QUAY BOOKS',awning:'#3f7990'});
+let frontBlock = building(25,230,64,60,81,['#dc795d','#a45342','#d1ac86'],{roof:'gable',style:'brick',shop:'QUAY BOOKS',awning:'#3f7990'});
 // Original landmark: the small square clock turret on the converted quay building.
 frontBlock+=box(46,248,23,19,26,['#e4c491','#ba9b6c','#f4ddaa'],95);
 frontBlock+=flat(43,245,29,25,123,'#3a6573');
 const [clockX,clockY]=point(58,267.5,109);
 frontBlock+=`<g transform="matrix(1 .476 0 1 ${clockX} ${clockY})"><circle r="8" fill="#f4e4bd" stroke="${edge}" stroke-width="1.6"/><path d="M0-5V0L4 2" fill="none" stroke="${edge}" stroke-width="1.6"/></g>`;
-frontBlock+=building(101,232,69,56,107,['#e8c68c','#b18d61','#ddd1a8'],{balcony:false});
+frontBlock+=building(101,232,69,56,107,['#ffe1a5','#c59a64','#ddd1a8'],{balcony:false});
 // A projecting stone bay gives this older apartment block a different silhouette.
-frontBlock+=box(125,285,23,11,71,['#ead7ac','#bda786','#f4e3bb'],27);
+frontBlock+=box(125,285,23,11,71,['#f9e4ba','#c7ab7e','#f4e3bb'],27);
 for(const z of [33,58,83])frontBlock+=windowFront(129,296.5,z,14,17)+flat(123,285,27,14,z-5,'#dbbf90');
 frontBlock+=front(108,289,52,24,12,'#315869')+text(112,289.4,28,'LETTINGS',7.2);
 frontBlock+=planting(104,294,14)+planting(153,294,13);
@@ -227,19 +241,21 @@ function lot(state) {
     a+=line([393,278,208],[282,278,190],edge,1.2)+line([393,278,208],[434,278,190],edge,1.2);
     a+=box(388,272,15,9,10,['#e7b450','#a17736','#f2d585'],185);
     a+=line([310,278,183],[310,278,119],edge,1.5)+line([310,278,119],[316,278,117],edge,3);
-    a+=front(269,316,116,2,22,'#396e87');
+    a+=front(269,316,116,2,22,'#287ea5');
     for(let x=274;x<384;x+=7)a+=line([x,316.4,3],[x,316.4,23],'#8db8c0',.9);
     a+=front(294,317,65,8,10,'#e0d4b6')+text(300,317.2,11,'HOUSING WORKS',6,'#2d4a60');
-    a+=person(264,321,'#e9b64b',1.1);
+    a+=person(264,321,'#f2b642',1.2);
+    for(const x of [275,382])a+=poly([[x-4,322,1],[x+4,322,1],[x,322,14]],'#e28b35')+front(x-3,322.2,6,4,2,'#fff1d8');
     for(let z=0;z<9;z+=3)a+=box(376,296,17,8,2,['#cb9a5f','#977342','#edbc7c'],z);
     a+=box(271,239,15,12,10,['#74898d','#466975','#a8b8b4']);
   }else if(state==='homes'){
-    a+=building(278,251,94,49,115,['#c8d9d5','#6797a2','#f0debb'],{balcony:true,style:'modern'});
+    a+=building(278,251,94,49,115,['#f2f0df','#73aeb9','#fff0d0'],{balcony:true,style:'modern'});
     // Two warm entrance bays distinguish the finished building from the open frame.
     a+=front(315,301,26,3,25,'#356880')+front(319,301.5,18,5,20,'#98ccdf');
     a+=flat(311,299,36,9,28,'#b9804a')+front(311,308,36,26,3,'#83583c');
     a+=front(339,301,28,28,9,'#315569')+text(341,301.3,31,'HOMES',5.8);
     a+=planting(280,310,24)+planting(344,310,28)+tree(380,311,.7);
+    a+=flat(312,310,26,18,2,'#fff0d7')+planting(276,323,25)+planting(345,323,26);
     a+=person(324,316,'#df9d66',1.05)+person(334,312,'#557e9a',1.05)+person(351,324,'#b77969');
   }else{
     // Existing single-storey service yard, deliberately not an empty placeholder.
@@ -256,18 +272,25 @@ function lot(state) {
 function overlay(state){
   if(state==='pressure'){
     let a=front(108,289,52,24,12,'#234c65')+text(112,289.4,28,'LETTINGS',7.2);
-    // A modest waiting group occupies an otherwise clear foreground pavement.
-    a+=flat(111,304,62,22,1.5,'#c7b99c','none');
+    // Occupied-window panels and a fuller queue stay readable at phone scale.
+    for(const [x,z] of [[108,55],[151,55],[108,80],[151,80]]){
+      a+=front(x,290,17,z,13,'#f5d08b')+front(x+2,290.3,5,z+2,9,'#b85f45')+front(x+10,290.3,5,z+2,9,'#b85f45');
+    }
+    a+=flat(111,304,70,25,1.5,'#ecdfc7','none');
     for(const x of [112,140,169])a+=line([x,327,2],[x,327,11],edge,1.5);
     a+=line([112,327,10],[169,327,10],'#5a7476',1.5);
-    const people=[[115,306],[129,307],[143,308],[157,309],[164,317],[150,319],[136,319],[123,319]];
-    people.forEach(([x,y],i)=>{a+=person(x,y,['#c2754f','#4c7592','#ad984f','#658a74'][i%4],1.1);});
+    const people=[[115,306],[129,307],[143,308],[157,309],[171,310],[174,321],[160,323],[146,323],[132,323],[118,322]];
+    people.forEach(([x,y],i)=>{a+=person(x,y,['#d57143','#3c739e','#d7ae41','#54816b'][i%4],1.35);});
     a+=front(97,303,15,4,21,'#f1dfb6')+text(98,303.5,17,'VIEW',4.4,'#294854');
     a+=line([99,303,0],[99,303,4],edge,2)+line([110,303,0],[110,303,4],edge,2);
     return a;
   }
   if(state==='maintenance'){
     let a='';
+    // Broad areas of exposed masonry read before the finer cracks and scaffolding.
+    a+=poly([[105,290,97],[121,290,97],[118,290,78],[123,290,65],[117,290,42],[103,290,47]],'#a77960');
+    a+=poly([[148,298,95],[147,298,72],[151,298,56],[147,298,31],[141,298,29],[141,298,97]],'#a77960');
+    for(let z=46;z<93;z+=7)a+=line([106,290.3,z],[117,290.3,z],'#614a40',1.1);
     for(const [x,z] of [[34,29],[52,29],[34,54],[52,54],[70,54],[128,34],[128,59]]){
       const y=x<100?291:297;
       a+=front(x,y+1,13,z,17,'#333e42')+front(x-1,y+2,15,z+2,5,'#b99665')+

@@ -17,8 +17,7 @@ export function renderScene(sceneSet, run) {
   img.alt = variant.alt; img.width = 1000; img.height = 610;
   img.decoding = 'sync';
   const caption = document.createElement('figcaption');
-  const name = document.createElement('span'); name.textContent = sceneSet.label;
   const state = document.createElement('strong'); state.textContent = variant.label;
-  caption.append(name, state); figure.append(img, caption);
+  caption.append(state); figure.append(img, caption);
   return figure;
 }

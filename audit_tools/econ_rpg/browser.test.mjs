@@ -39,6 +39,8 @@ try {
     const figure = page.locator('.neighborhood-scene'), img = figure.locator('img');
     const run = await saved(), expected = selectScene(scenario.sceneSet, run);
     assert.equal(await figure.getAttribute('data-scene'), expected.id);
+    assert.equal(await figure.locator('figcaption').innerText(), expected.label);
+    assert.equal(await figure.locator('figcaption').evaluate(e => getComputedStyle(e).textAlign), 'center');
     assert.equal(await img.getAttribute('alt'), expected.alt);
     await img.evaluate(image => image.decode());
     assert.ok(await img.evaluate(image => image.naturalWidth > 0));
@@ -117,6 +119,8 @@ try {
     await bounds(); await page.screenshot({ path: path.join(out, `consequence-${width}.png`), fullPage: true });
     await summary.focus(); await page.keyboard.press('Enter');
     assert.ok(await status.locator('.indicator-definitions').isVisible());
+    assert.equal(await help.locator(':scope > p').innerText(), 'Indicators show simplified scenario conditions, not real-world forecasts.');
+    assert.doesNotMatch(await help.innerText(), /This model does not measure debt|Values stop at|bounded, ordinal/i);
     assert.equal(await summary.innerText(), 'What do these indicators mean?');
     assert.equal(await summary.evaluate(e => getComputedStyle(e).outlineStyle), 'solid');
     assert.ok((await summary.boundingBox()).height >= 44);

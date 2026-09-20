@@ -69,7 +69,7 @@ export function renderState(s, run) {
   for (const spec of Object.values(s.state)) {
     const group = el('div'); group.append(el('dt', spec.label), el('dd', spec.short)); definitions.append(group);
   }
-  details.append(el('summary', 'What do these indicators mean?'), definitions, el('p', s.modelNote)); panel.append(details);
+  details.append(el('summary', 'What do these indicators mean?'), definitions, el('p', 'Indicators show simplified scenario conditions, not real-world forecasts.')); panel.append(details);
 }
 export function render(s, run, saved, actions, focus = true) {
   const view = document.querySelector('#view'); view.replaceChildren();
