@@ -3,9 +3,8 @@ import { createRun, decide, advance, transitionEvent, validateScenario } from '.
 import { loadRun, saveRun, clearRun } from './storage.js';
 import { render } from './ui.js';
 validateScenario(scenario);
-document.title = `${scenario.title} · Mastery Quests development`;
+document.title = `${scenario.title} · Mastery Quests`;
 document.querySelector('#scenario-title').textContent = scenario.title;
-document.querySelector('#subtitle').textContent = scenario.subtitle;
 // Future integration seam only. No listeners, network calls, or event persistence.
 const onTransition = () => {};
 let storage;

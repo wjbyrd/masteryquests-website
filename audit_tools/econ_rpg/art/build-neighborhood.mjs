@@ -33,8 +33,8 @@ function lamp(x,y) {
   return box(x-2,y-2,4,4,2,['#56636b','#384e5a','#70828a'])+line([x,y,2],[x,y,38],'#455e66',2.3)+
     line([x,y,38],[x+8,y,40],'#455e66',2)+flat(x+5,y-3,9,6,40,'#e8d6a4')+dot(x+9,y,38,2,'#fbdfa3');
 }
-function car(x,y,color='#d6ad58') {
-  return flat(x-2,y-1,36,18,0,'#293e4b50','none')+
+function car(x,y,color='#d6ad58',axis='x') {
+  const art = flat(x-2,y-1,36,18,0,'#293e4b50','none')+
     dot(x+6,y+16,4,4,edge)+dot(x+27,y+16,4,4,edge)+
     box(x,y,34,16,8,[color,'#355b70',color],4)+
     poly([[x+8,y+1,12],[x+13,y+1,20],[x+26,y+1,20],[x+30,y+1,12],[x+30,y+15,12],[x+26,y+15,20],[x+13,y+15,20],[x+8,y+15,12]],color)+
@@ -43,6 +43,8 @@ function car(x,y,color='#d6ad58') {
     poly([[x+8,y+1,13],[x+12,y+1,19],[x+12,y+14,19],[x+8,y+14,13]],'#5a95b3')+
     front(x,y+16,4,8,3,'#f5ddb0')+front(x+30,y+16,3,8,3,'#e0ab75')+
     front(x,y+16,34,4,1.8,'#bbc4bd')+dot(x+6,y+17,4,2,'#8d9c9f')+dot(x+27,y+17,4,2,'#8d9c9f');
+  // Reflection swaps the two street axes without changing vertical height.
+  return axis === 'y' ? `<g transform="translate(${2*point(x,y)[0]} 0) scale(-1 1)">${art}</g>` : art;
 }
 function bench(x,y) {
   return line([x+2,y,0],[x+2,y,8],edge,2)+line([x+22,y,0],[x+22,y,8],edge,2)+
@@ -155,6 +157,8 @@ back+=building(34,15,63,47,93,['#d99a60','#a76643','#e6be82'],{roof:'gable',styl
 back+=building(105,17,63,57,125,['#c9674f','#954537','#dcc0a3'],{balcony:true,style:'brick'});
 back+=building(263,20,58,49,105,['#ecce86','#c89d63','#f0dab0']);
 back+=building(331,24,63,52,79,['#e0e3d0','#9bb6b0','#d8d6b8'],{style:'modern'});
+// Side-street traffic follows its lane and sits behind the nearer shop row.
+back+=car(195,105,'#c5684a','y');
 back+=building(28,85,66,52,76,['#e5ba80','#ac8056','#e9c49a'],{shop:'GROCER',awning:'#53836b'});
 back+=building(110,91,63,46,100,['#528c9f','#36637f','#ccd9cb'],{shop:'LINDEN CAFE',balcony:true,style:'modern',awning:'#b6783d'});
 back+=building(270,92,58,42,65,['#dc9754','#a66540','#e6c98f'],{shop:'REPAIRS',roof:'gable',style:'brick'});
@@ -185,7 +189,7 @@ frontBlock+=tree(13,310,1)+tree(182,285,.85)+bench(59,324)+lamp(185,221)+lamp(12
 frontBlock+=person(92,308,'#7c99b3')+person(83,322,'#b37961')+person(39,310,'#dbb153');
 
 // Road objects are painted behind the foreground buildings, never over their facades.
-let traffic=car(164,172,'#dea536')+car(321,186,'#5c96b0')+car(199,83,'#c5684a');
+let traffic=car(164,172,'#dea536')+car(321,186,'#5c96b0');
 // Bus shelter, route sign, shop tables and ordinary street activity.
 traffic+=box(248,211,41,14,2,['#9aa8a1','#728b8e','#ccd0b4']);
 for(const x of [249,287])traffic+=line([x,212,2],[x,212,32],edge,2.8);

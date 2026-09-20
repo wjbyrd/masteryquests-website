@@ -27,7 +27,6 @@ export function contentBlocks(blocks, parent) {
     }
   }
 }
-export const level = value => value <= 1 ? 'Very limited' : value <= 3 ? 'Limited' : value <= 5 ? 'Moderate' : 'Strong';
 export function changes(s, before, after) {
   const ul = el('ul', undefined, 'changes');
   for (const [id, spec] of Object.entries(s.state)) {
@@ -43,31 +42,45 @@ function heading(view, title, eyebrow) {
 }
 export function renderState(s, run) {
   const panel = document.querySelector('#state-panel'); panel.replaceChildren();
-  const title = el('h2', s.stateTitle || 'Conditions'); title.id = 'state-title'; panel.append(title, el('p', 'Illustrative steps, not estimated policy effects.', 'muted'));
+  const title = el('h2', s.stateTitle || 'Conditions'); title.id = 'state-title'; panel.append(title);
   const initial = Object.fromEntries(Object.entries(s.state).map(([id, spec]) => [id, spec.initial]));
   const state = run?.state || initial;
-  const list = el('dl');
+  const recent = run?.history.at(-1);
+  const list = el('dl', undefined, 'indicator-list');
   for (const [id, spec] of Object.entries(s.state)) {
     const group = el('div', undefined, 'state-item'); group.append(el('dt', spec.label));
-    const dd = el('dd'); dd.append(el('strong', `${level(state[id])} · ${state[id]} / ${spec.max}`));
+    const dd = el('dd');
     const dots = el('span', undefined, 'steps'); dots.setAttribute('aria-hidden', 'true');
     for (let i = spec.min; i < spec.max; i++) dots.append(el('i', '', i < state[id] ? 'filled' : ''));
-    dd.append(dots, el('small', spec.short)); group.append(dd); list.append(group);
+    const value = el('span', `${state[id]} / ${spec.max}`, 'state-value');
+    value.append(el('span', ' steps', 'sr-only'));
+    dd.append(dots, value);
+    const delta = recent ? recent.after[id] - recent.before[id] : 0;
+    if (delta) {
+      const movement = el('span', undefined, 'state-change');
+      const sign = el('span', `${delta > 0 ? '↑ +' : '↓ '}${delta}`); sign.setAttribute('aria-hidden', 'true');
+      movement.append(sign, el('span', `${delta > 0 ? 'Increased' : 'Decreased'} by ${Math.abs(delta)} ${Math.abs(delta) === 1 ? 'step' : 'steps'} after the latest decision.`, 'sr-only'));
+      dd.append(movement);
+    }
+    group.append(dd); list.append(group);
   }
   panel.append(list);
-  const details = el('details'); details.append(el('summary', 'How to read these indicators'), el('p', s.modelNote)); panel.append(details);
+  const details = el('details'), definitions = el('dl', undefined, 'indicator-definitions');
+  for (const spec of Object.values(s.state)) {
+    const group = el('div'); group.append(el('dt', spec.label), el('dd', spec.short)); definitions.append(group);
+  }
+  details.append(el('summary', 'What do these indicators mean?'), definitions, el('p', s.modelNote)); panel.append(details);
 }
 export function render(s, run, saved, actions, focus = true) {
   const view = document.querySelector('#view'); view.replaceChildren();
   document.querySelector('#restart').hidden = !run && !saved;
   renderState(s, run || saved);
   if (!run) {
-    heading(view, s.introTitle || 'Your scenario', s.role);
+    heading(view, s.introTitle || 'Your scenario');
+    document.querySelector('#view-title').classList.add('sr-only');
     contentBlocks(s.introduction, view);
-    view.append(el('p', `${s.duration} · ${s.decisions} decisions · Multiple endings`, 'run-info'));
     if (saved) view.append(button(saved.phase === 'ending' ? 'Review saved outcome' : `Resume decision ${Math.min(saved.history.length + (saved.phase === 'decision' ? 1 : 0), s.decisions)} of ${s.decisions}`, actions.resume));
     else view.append(button('Begin scenario', actions.start));
-    view.append(el('p', 'Make a recommendation, see its consequences, then decide what comes next. There is no answer score. Try a different path after the debrief.', 'muted'));
   } else if (run.phase === 'decision') {
     const node = nodeContent(s, run);
     heading(view, node.title, `Decision ${run.history.length + 1} of ${s.decisions} · ${node.time || ''}`);
@@ -102,7 +115,7 @@ export function render(s, run, saved, actions, focus = true) {
     view.append(el('h3', 'Alternative decisions'));
     const alternatives = el('ul', undefined, 'what-ifs');
     [0, 2, 3].filter(i => i < run.history.length).forEach(i => alternatives.append(el('li', run.history[i].whatIf)));
-    view.append(alternatives, el('p', 'Change an early decision on your next run. Notice which later choices become possible and who bears the costs.'), button('Replay scenario', actions.replay));
+    view.append(alternatives, button('Replay scenario', actions.replay));
   }
   const scene = renderScene(s.sceneSet, run || saved);
   if (scene) document.querySelector('#view-title').after(scene);

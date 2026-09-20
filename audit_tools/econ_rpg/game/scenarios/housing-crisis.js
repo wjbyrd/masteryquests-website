@@ -12,7 +12,7 @@ export default {
   role: 'Housing advisor · City of Linden', duration: 'About 10–15 minutes', decisions: 6, endingEyebrow: 'Your outcome · Two years of decisions',
   introduction: [
     p('Rents in Linden have risen faster than household incomes. Apartment vacancies are scarce, and new homes take time to build. Linden already has a small emergency housing fund; the city asks you to build on that response while keeping homes available and maintained.'),
-    p('Advise the housing task force through six decisions over two years. Each policy changes the conditions you face next. You will see who benefits, what it costs, and what remains unresolved.')
+    p('Advise the housing task force over the next two years.')
   ],
   modelNote: 'An instructional model, not a forecast. Indicators are bounded, ordinal conditions, not dollars, percentages, or estimated policy effects. Higher means more of the named condition. Affordability tracks relief for current renters; availability tracks access for people seeking a home. Zero budget room means further commitments squeeze other services; this model does not measure debt. Values stop at 0 and 8.',
   state: {

@@ -92,6 +92,39 @@ try {
   const representatives = summarize(enumerate()).representatives;
   for (const width of [1280, 390, 320]) {
     await page.setViewportSize({ width, height: width === 320 ? 720 : 960 });
+    // This isolated browser context owns its test save; leave the user's preview untouched.
+    await page.evaluate(k => localStorage.removeItem(k), key); await page.reload();
+    await page.getByRole('button', { name: 'Begin scenario' }).waitFor();
+    assert.doesNotMatch(await page.locator('body').innerText(), /Multiple endings|10–15 minutes|Make a recommendation, see|There is no answer score|Development · Instructor QA|No gameplay transmission|Each policy changes the conditions/);
+    await bounds(); await page.screenshot({ path: path.join(out, `intro-${width}.png`), fullPage: true });
+    await page.getByRole('button', { name: 'Begin scenario' }).click(); await focus();
+    await page.screenshot({ path: path.join(out, `first-decision-${width}.png`), fullPage: true });
+    await choose('ceiling');
+    const status = page.locator('#state-panel'), help = status.locator('details'), summary = help.locator('summary');
+    assert.equal(await help.getAttribute('open'), null);
+    assert.equal(await status.locator('.indicator-list .state-item').count(), 5);
+    assert.equal(await status.locator('.indicator-definitions dt').count(), 5);
+    assert.ok(await status.locator('.indicator-definitions').isHidden());
+    assert.doesNotMatch(await status.locator('.indicator-list').innerText(), /Moderate|Limited|Strong|Weak|Relief for current renters|Access for people/);
+    const affordability = status.locator('.state-item').first();
+    assert.match(await affordability.locator('.state-value').innerText(), /5 \/ 8/);
+    assert.equal(await affordability.locator('.steps .filled').count(), 5);
+    assert.match(await affordability.locator('.state-change').innerText(), /↑ \+3/);
+    assert.match(await affordability.locator('.state-change .sr-only').textContent(), /Increased by 3 steps after the latest decision/);
+    assert.match(await status.locator('.state-item').nth(1).innerText(), /↓ -1/);
+    assert.equal(await status.locator('.state-item').nth(3).locator('.state-change').count(), 0);
+    assert.ok((await status.boundingBox()).height < 420, 'Collapsed status remains compact at every width');
+    await bounds(); await page.screenshot({ path: path.join(out, `consequence-${width}.png`), fullPage: true });
+    await summary.focus(); await page.keyboard.press('Enter');
+    assert.ok(await status.locator('.indicator-definitions').isVisible());
+    assert.equal(await summary.innerText(), 'What do these indicators mean?');
+    assert.equal(await summary.evaluate(e => getComputedStyle(e).outlineStyle), 'solid');
+    assert.ok((await summary.boundingBox()).height >= 44);
+    await bounds(); await page.screenshot({ path: path.join(out, `state-help-${width}.png`), fullPage: true });
+    await page.keyboard.press('Space'); assert.equal(await help.getAttribute('open'), null);
+    await next(); assert.match(await status.locator('.state-change').first().innerText(), /↑ \+3/);
+    await fresh(); assert.equal(await status.locator('.state-change').count(), 0);
+    check(`Minimal intro, numeric status, signed latest changes, reset, collapsed definitions and keyboard help at ${width}px`);
     for (const representative of representatives) {
       await fresh();
       await sceneCheck();
