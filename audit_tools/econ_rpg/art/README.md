@@ -52,3 +52,24 @@ The six masters moved from `art/source/` to `art/source/main-attraction/`; the s
 Park scene priority: materially deteriorated experience after deferred maintenance; completed expansion; ongoing construction; crowd pressure; lower-volume premium operation; baseline. Construction adds no usable capacity until delivery. An expansion can coexist with worn older rides, and maintenance takes visual precedence. Neither premium appearance nor upgraded facilities is a visual score. Captions, indicators and the complete path explain conditions a single image cannot show.
 
 See [MAIN-ATTRACTION-REPORT.md](../MAIN-ATTRACTION-REPORT.md) for exact conditions, validation and screenshots. All source and runtime assets remain private under the existing publication guard.
+
+## The Economy’s Edge — PPF scene guidance
+
+Keep the same four-panel composition across the six approved views. Top left shows capital production; top right shows technology, training and infrastructure preparing future capacity; bottom left shows idle workers and equipment; bottom right shows household goods and services. Idle resources means unused labor/capital, not the number of crates, stored parts or inventories. Future growth is capacity-expanding preparation, not a third category of current output.
+
+Use the existing images exactly as supplied. No important text belongs inside future artwork; keep labels and explanations in accessible HTML. This integration adds no lettering, overlays, crops, recoloring, recompression or pixel edits. All twelve supplied source/runtime files are 1448 × 1086, with pre-move SHA-256 hashes recorded in `ppf-assets.json`.
+
+| Scene | Master in `source/ppf/` | Runtime in `../game/art/scenes/the-economys-edge/` |
+|---|---|---|
+| balanced | `ppf-balanced.png` | `balanced.webp` |
+| consumption | `ppf-consumption.png` | `consumption.webp` |
+| capital | `ppf-capital.png` | `capital.webp` |
+| slowdown | `ppf-slowdown.png` | `slowdown.webp` |
+| recovery | `ppf-recovery.png` | `recovery.webp` |
+| growth | `ppf-growth.png` | `growth.webp` |
+
+The runtime namespace was already safe and was retained. Masters were supplied inside `game/art/sources/`; they moved unchanged to `art/source/ppf/` so the preview cannot serve them. No park or Linden master changed. The user-supplied `room-to-stay/` copies were retained, and their original hashes verified before restoring the five missing legacy housing URLs; this keeps the housing configuration and existing tests unchanged.
+
+Economic consistency governs scene selection. At full utilization, more current consumption costs capital output and vice versa. A slowdown leaves more idle resources and less current production without destroying the frontier. Recovery reuses those resources. Growth appears only after completed improvements expand capacity. A strong pipeline alone never triggers growth art, particularly while resources remain idle. The top-right panel is a qualitative illustration, not a literal count of pending projects; completed productivity improvements can remain visible when the pipeline indicator falls.
+
+Current priority is completed growth; disruption/continued slack; recent recovery; consumption or capital emphasis at full utilization; balanced otherwise. A final reallocation after recovery selects its current production emphasis. Keep scene selection read-only and the full 4:3 frame visible at desktop, 390px and 320px. See [PPF-REPORT.md](../PPF-REPORT.md) for precise rules and QA.

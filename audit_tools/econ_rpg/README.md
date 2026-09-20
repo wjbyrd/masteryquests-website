@@ -14,10 +14,11 @@ Open <http://127.0.0.1:4179>. The preview binds only to loopback and serves only
 
 - [Room to Stay](http://127.0.0.1:4179/?scenario=housing-crisis): housing policy; the unchanged default.
 - [The Main Attraction](http://127.0.0.1:4179/?scenario=main-attraction): monopoly and market power; development-complete and ready for instructor QA.
+- [The Economy’s Edge](http://127.0.0.1:4179/?scenario=ppf): scarcity, production possibilities, recovery and growth; private instructor QA.
 
-Both use one engine, controller, renderer, scene selector, storage implementation and debrief framework. There is no public picker. See [Main Attraction report](MAIN-ATTRACTION-REPORT.md) and [nine instructor playthroughs](MAIN-ATTRACTION-QA-PATHS.md).
+All three use one engine, controller, renderer, scene selector, storage implementation and debrief framework. There is no public picker. See [Main Attraction report](MAIN-ATTRACTION-REPORT.md), [its instructor playthroughs](MAIN-ATTRACTION-QA-PATHS.md), and [The Economy’s Edge report](PPF-REPORT.md) and [playthroughs](PPF-QA-PATHS.md).
 
-## Purpose and cognitive demand
+## Room to Stay purpose and cognitive demand
 
 The learner is Linden’s housing advisor, making six policy decisions over two years. The experience assesses applied decisions, causal reasoning, distributional tradeoffs, second-order effects and path dependence. It does not grade retrieval, classify concepts or award an answer score. The loop is decision → consequence → visible state changes → next decision → ending → debrief.
 
@@ -36,6 +37,8 @@ Five ordinal indicators separate affordability for current renters, availability
 | `game/scenarios/registry.js` | Private query routing; missing/unknown IDs fall back to Room to Stay |
 | `game/scenarios/main-attraction.js`, `game/scenarios/main-attraction-scenes.js` | Park economics, metadata, branches, endings and six read-only scene conditions |
 | `art/main-attraction-assets.json` | Checksums of the twelve supplied park source/runtime files |
+| `game/scenarios/ppf.js`, `game/scenarios/ppf-scenes.js` | The Economy’s Edge content, authored production mixes, delayed delivery and four-panel scene conditions |
+| `art/ppf-assets.json` | Original paths, hashes and dimensions of twelve supplied economy assets |
 | `game/storage.js` | Versioned local save, strict deterministic replay validation, reset |
 | `game/ui.js` | Safe DOM rendering, structured blocks, state summaries, choices and debrief |
 | `game/rpg.js` | Controller, focus/live announcements, local persistence, no-op transition hook |
@@ -45,10 +48,12 @@ Five ordinal indicators separate affordability for current renters, availability
 | `QA-PATHS.md` | Every major branch/ending combination to play manually |
 | `main-attraction-qa.mjs`, `main-attraction.test.mjs`, `main-attraction.browser.test.mjs` | Exhaustive park coverage, save/asset/routing checks and browser QA |
 | `MAIN-ATTRACTION-QA-PATHS.md`, `MAIN-ATTRACTION-REPORT.md` | Compact park review set and implementation/validation report |
+| `ppf-qa.mjs`, `ppf.test.mjs`, `ppf.browser.test.mjs` | Exhaustive PPF rules, complete branch/scene coverage and browser checks |
+| `PPF-QA-PATHS.md`, `PPF-REPORT.md` | Economy playthroughs, modeling assumptions and validation report |
 
 No runtime dependencies, downloaded fonts, analytics, framework or third-party assets. The neighborhood uses five supplied, approved local WebPs; the park uses six in its own namespace. Both have meaningful alt text and visible HTML scene labels. PNG masters stay outside the runtime root. Economic consequences and indicators remain the source of instructional meaning.
 
-## Approved artwork and scene selection
+## Room to Stay artwork and scene selection
 
 The active artwork consists of five approved 1448 × 1086 WebPs under `game/art/scenes/`. Their canonical full-quality PNG masters remain under `art/source/`. The files were supplied already complete: no generation, conversion, recompression, resizing or pixel editing was performed during integration. SHA-256 checksums recorded before integration are in `art/approved-assets.json` and enforced by the scene tests. The WebPs were found in `art/scenes/` and moved unchanged into the required runtime folder. No file was renamed.
 
@@ -141,9 +146,30 @@ The six approved 1448 × 1086 park WebPs live under `game/art/scenes/main-attrac
 
 The nine [manual routes](MAIN-ATTRACTION-QA-PATHS.md) cover all choices, funding gates in both states, conditional consequences, endings and scenes. Park browser QA runs them at 1280px, 390px and 320px, captures intro/decision/consequence/debrief and all six scenes, and checks keyboard/focus, indicators, exact resume, separate saves, errors and requests.
 
+## The Economy’s Edge
+
+The third scenario is economy-driven: a national economic planning director in fictional Calder chooses between household output and capital production. Room to Stay is policy-driven and The Main Attraction is firm-driven. The Economy’s Edge teaches scarcity, increasing opportunity cost, unused resources, recovery and productive investment through six choices, without graphs, formulas or calculation exercises.
+
+Four compact 0–8 indicators replace the other scenarios' five rows automatically through the unchanged shared renderer:
+
+| Indicator | Initial | Interpretation |
+|---|---:|---|
+| Current consumption | 5 | Current household output and living standards |
+| Capital production | 5 | Current equipment, infrastructure and productive investment |
+| Resource utilization | 8 | Use of available labor and capital |
+| Future growth | 2 | Productive improvements still in preparation |
+
+The six stages are initial allocation, reallocation under pressure, disruption, recovery, investment and final production. Nine nodes allow separate investment choices when slack remains and separate final choices for an unchanged frontier, completed expansion or unfinished recovery. Exhaustive checks cover **361 paths**, six decisions each, 25 node/choice pairs and all five endings. Eleven [manual routes](PPF-QA-PATHS.md) cover every branch, conditional gate and scene.
+
+The PPF consistency rules are explicit: full-utilization reallocation increases one output only by reducing the other; a disruption lowers both through idle resources without destroying capacity; restarts can increase both but never exceed the earlier mix; investment sacrifices household output now for preparation; only completed improvements allow production on a larger frontier. Future growth is a pipeline, not a third output. When completed projects enter use, the pipeline indicator falls even though realized capacity has increased. Recovery alone never triggers the growth scene.
+
+The same supplied four-panel composition persists across balanced, consumption, capital, slowdown, recovery and growth scenes: top left capital goods, top right future improvements, bottom left idle labor/equipment, bottom right household goods. Panels are related economic conditions, not independent sliders. Runtime files remain unchanged at `game/art/scenes/the-economys-edge/`; canonical masters moved outside the served root to `art/source/ppf/`. The [Art Bible](art/README.md) and [report](PPF-REPORT.md) explain selection, asset provenance and limits of the ordinal model.
+
+PPF-specific tests check every reachable phase against the original or expanded production boundary, output tradeoffs, increasing opportunity cost, shock/recovery differences, delayed delivery, exact saves and all three scenario keys. Both earlier scenarios retain frozen full-path outcomes. Browser QA uses 1280px, 390px and 320px and exercises four-row help, keyboard/focus, every scene/ending and separate saves.
+
 ## Local saves and privacy
 
-Independent keys: `mq.econ-rpg.housing-crisis` and `mq.econ-rpg.main-attraction`; both scenarios currently use version 1. Routing between them preserves both saves. A save includes scenario ID/version, a random local run ID, local start time, phase, current node, final ending if any, indicator state and the decision history. The random run ID identifies only this local run; it is not a fingerprint or stable user identifier. There is no personal data input.
+Independent keys: `mq.econ-rpg.housing-crisis`, `mq.econ-rpg.main-attraction` and `mq.econ-rpg.ppf`; all three scenarios currently use version 1. Routing between them preserves their separate saves. A save includes scenario ID/version, a random local run ID, local start time, phase, current node, final ending if any, indicator state and the decision history. The random run ID identifies only this local run; it is not a fingerprint or stable user identifier. There is no personal data input.
 
 Save on start, after each decision and after each consequence is advanced. The landing page offers resume or outcome review. Reloading a consequence returns to that consequence without applying effects twice. Storage replays every decision and compares the entire reconstructed save before accepting it. A version mismatch or corrupt/illegal save fails safely and offers a fresh start. Storage denial/quota failure leaves the current session playable with a visible warning.
 
@@ -167,6 +193,7 @@ Playwright checks 320px, 390px and 1280px through all 13 opening/ending combinat
 node --test audit_tools/econ_rpg/engine.test.mjs
 node --test audit_tools/econ_rpg/scenes.test.mjs
 node --test audit_tools/econ_rpg/main-attraction.test.mjs
+node --test audit_tools/econ_rpg/ppf.test.mjs
 node --test audit_tools/econ_rpg/publication.test.mjs
 node audit_tools/econ_rpg/qa.mjs
 node audit_tools/econ_rpg/qa.mjs --all
@@ -174,11 +201,13 @@ node audit_tools/econ_rpg/qa.mjs --write tmp/econ-rpg/all-paths.json
 node audit_tools/econ_rpg/qa.mjs --manual audit_tools/econ_rpg/QA-PATHS.md
 node audit_tools/econ_rpg/main-attraction-qa.mjs
 node audit_tools/econ_rpg/main-attraction-qa.mjs --write
+node audit_tools/econ_rpg/ppf-qa.mjs --write
 
 # Follow existing repo convention: set this to your installed Playwright package.
 $env:PLAYWRIGHT_MODULE='C:\path\to\node_modules\playwright'
 node audit_tools/econ_rpg/browser.test.mjs
 node audit_tools/econ_rpg/main-attraction.browser.test.mjs
+node audit_tools/econ_rpg/ppf.browser.test.mjs
 ```
 
 Chrome is the default browser channel; `BROWSER_CHANNEL` or `BROWSER_EXECUTABLE` can override it. The browser test creates `tmp/econ-rpg/` and stores screenshots plus a results JSON there. That directory is git-ignored and excluded from publication. Create it before using `--write` if the browser test has not run.
