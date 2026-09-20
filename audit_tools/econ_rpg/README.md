@@ -15,8 +15,9 @@ Open <http://127.0.0.1:4179>. The preview binds only to loopback and serves only
 - [Room to Stay](http://127.0.0.1:4179/?scenario=housing-crisis): housing policy; the unchanged default.
 - [The Main Attraction](http://127.0.0.1:4179/?scenario=main-attraction): monopoly and market power; development-complete and ready for instructor QA.
 - [The Economy’s Edge](http://127.0.0.1:4179/?scenario=ppf): scarcity, production possibilities, recovery and growth; private instructor QA.
+- [Megastar Mania](http://127.0.0.1:4179/?scenario=megastar-mania): concert ticket supply and demand; private instructor QA.
 
-All three use one engine, controller, renderer, scene selector, storage implementation and debrief framework. There is no public picker. See [Main Attraction report](MAIN-ATTRACTION-REPORT.md), [its instructor playthroughs](MAIN-ATTRACTION-QA-PATHS.md), and [The Economy’s Edge report](PPF-REPORT.md) and [playthroughs](PPF-QA-PATHS.md).
+All four use one engine, controller, renderer, scene selector, storage implementation and debrief framework. There is no public picker. See [Main Attraction report](MAIN-ATTRACTION-REPORT.md), [its instructor playthroughs](MAIN-ATTRACTION-QA-PATHS.md), [The Economy’s Edge report](PPF-REPORT.md) and [playthroughs](PPF-QA-PATHS.md), and [Megastar Mania report](MEGASTAR-MANIA-REPORT.md) and [playthroughs](MEGASTAR-MANIA-QA-PATHS.md).
 
 ## Room to Stay purpose and cognitive demand
 
@@ -50,6 +51,10 @@ Five ordinal indicators separate affordability for current renters, availability
 | `MAIN-ATTRACTION-QA-PATHS.md`, `MAIN-ATTRACTION-REPORT.md` | Compact park review set and implementation/validation report |
 | `ppf-qa.mjs`, `ppf.test.mjs`, `ppf.browser.test.mjs` | Exhaustive PPF rules, complete branch/scene coverage and browser checks |
 | `PPF-QA-PATHS.md`, `PPF-REPORT.md` | Economy playthroughs, modeling assumptions and validation report |
+| `game/scenarios/megastar-mania.js`, `megastar-mania-scenes.js`, `megastar-mania-market.js` | Tour content, seven scene conditions and scenario authoring helpers for price-sensitive market comparisons |
+| `art/megastar-mania-assets.json` | Original paths, dimensions and hashes of fourteen supplied tour images |
+| `megastar-mania-qa.mjs`, `megastar-mania.test.mjs`, `megastar-mania.browser.test.mjs` | Exhaustive tour economics, persistence, scene coverage and browser checks |
+| `MEGASTAR-MANIA-QA-PATHS.md`, `MEGASTAR-MANIA-REPORT.md` | Sixteen review routes, model limitations and validation report |
 
 No runtime dependencies, downloaded fonts, analytics, framework or third-party assets. The neighborhood uses five supplied, approved local WebPs; the park uses six in its own namespace. Both have meaningful alt text and visible HTML scene labels. PNG masters stay outside the runtime root. Economic consequences and indicators remain the source of instructional meaning.
 
@@ -227,3 +232,22 @@ Intentional release requires moving reviewed runtime files into an approved publ
 Reviewed every choice, conditional consequence and ending for consistent direction of effects, natural instructional language, cost-bearing groups, plausible alternatives, nonpartisan framing and absence of moralized grading. Consequences are three concise sentences. No real locality, politicians, empirical estimates or claims of an optimal policy appear. Five indicators cannot represent the full market: migration, credit, land costs, differing rent-control designs, funding sources and heterogeneous owner responses are simplified. Chosen assumptions include a binding ceiling covering future projects, persistent scarce vacancies, rising repair costs and a two-year construction horizon.
 
 200 authored legal paths are mechanically verified, not evidence of predictive validity. Instructor review should focus on assumptions, proportionality of illustrative steps, ceiling/exemption interactions, subsidy targeting, fiscal-ending precedence and whether students infer the distinction between rents and access. This is development work; no deployment, push, remote resource creation or production telemetry integration is part of it.
+
+## Megastar Mania model and QA
+
+`megastar-mania`, version 1, has six decisions over seven reachable nodes: opening price; breakout pricing (with an alternate opening after a surplus); supply expansion; illness; interview response; crossover. Its five 0–8 indicators are Ticket Demand, Ticket Supply, Tour Revenue, Fan Goodwill and Career Momentum. The title has no subtitle.
+
+Demand records preference strength, not attendance. The earlier price choices persist in history. A small scenario authoring helper combines that price history with demand and available capacity to build ordinary engine conditions for surplus, balance and shortage. This introduces neither a sixth saved indicator nor a separate transition engine. It keeps price changes distinct from demand shifts, and capacity changes distinct from audience growth. No model formulas, graphs, definitions quiz or answer grades appear during play.
+
+Revenue is an ordinal indicator of financial strength from ticket receipts after refunds, not profit or a currency estimate. At fixed prices, later demand/capacity changes affect receipts only when actual ticket sales change; more willing buyers cannot raise receipts if all available seats already sell. Price-setting outcomes are authored illustrations, not elasticity estimates. Logistics and the artist’s recovery have tradeoffs beyond receipts. Every path remains illustrative rather than predictive.
+
+The final outcomes are Reputation on the Ropes, Too Big, Too Fast, Crossover Superstar, Sold Out Everywhere, Built for the Crowd and A Smaller Circuit. The last title replaces the suggested “Niche but Loyal” because a compact route can retain a core audience while goodwill still needs repair. Outcomes are not ranked. All 729 legal paths have six decisions. The generated 16-route guide covers every reachable conditional consequence, all choices, seven scenes and six endings.
+
+```powershell
+node audit_tools/econ_rpg/megastar-mania-qa.mjs --write
+node --test audit_tools/econ_rpg/megastar-mania.test.mjs
+node --test audit_tools/econ_rpg/engine.test.mjs audit_tools/econ_rpg/scenes.test.mjs audit_tools/econ_rpg/main-attraction.test.mjs audit_tools/econ_rpg/ppf.test.mjs audit_tools/econ_rpg/megastar-mania.test.mjs audit_tools/econ_rpg/publication.test.mjs
+node audit_tools/econ_rpg/megastar-mania.browser.test.mjs
+```
+
+The browser script uses the same Playwright installation configuration as the earlier browser suites (`PLAYWRIGHT_MODULE` when not installed locally). It writes ignored screenshots and results to `tmp/econ-rpg/megastar-mania/`; it does not deploy. The publication test rebuilds local generated `dist/` and checks exclusion of all four scenarios and all 48 approved asset hashes. See the [report](MEGASTAR-MANIA-REPORT.md) for results and [manual paths](MEGASTAR-MANIA-QA-PATHS.md) for instructor review.

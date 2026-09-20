@@ -73,3 +73,35 @@ The runtime namespace was already safe and was retained. Masters were supplied i
 Economic consistency governs scene selection. At full utilization, more current consumption costs capital output and vice versa. A slowdown leaves more idle resources and less current production without destroying the frontier. Recovery reuses those resources. Growth appears only after completed improvements expand capacity. A strong pipeline alone never triggers growth art, particularly while resources remain idle. The top-right panel is a qualitative illustration, not a literal count of pending projects; completed productivity improvements can remain visible when the pipeline indicator falls.
 
 Current priority is completed growth; disruption/continued slack; recent recovery; consumption or capital emphasis at full utilization; balanced otherwise. A final reallocation after recovery selects its current production emphasis. Keep scene selection read-only and the full 4:3 frame visible at desktop, 390px and 320px. See [PPF-REPORT.md](../PPF-REPORT.md) for precise rules and QA.
+
+## Megastar Mania — concert market art direction
+
+Use the same waterfront concert venue, skyline and elevated, oblique management-game viewpoint across all seven scenes. Maps are the main signal for added or removed tour dates. Crowds communicate attendance and unmet ticket requests; they are not decoration or a reward. Preserve the approved signage as supplied, without adding banners, overlays or repeated decorative lettering. The meaningful labels and explanations remain in accessible HTML.
+
+All fourteen supplied files remain byte-for-byte unchanged at 1448 × 1086. The PNGs were already named `megastar-*.png` in `game/art/sources/`; they moved to the canonical private `art/source/megastar-mania/` folder. The supplied WebPs stayed in `game/art/scenes/megastar-mania/`. No generation, conversion, recompression, cropping or pixel editing was needed. Original locations, byte counts, dimensions and pre-move SHA-256 hashes are recorded in `megastar-mania-assets.json` and enforced by tests.
+
+| Approved original name | Canonical PNG in `source/megastar-mania/` | Runtime WebP in `../game/art/scenes/megastar-mania/` |
+|---|---|---|
+| waterfront_megastar_concert_at_sunset.png | megastar-baseline.png | baseline.webp |
+| quiet_twilight_concert_by_the_bay.png | megastar-surplus.png | surplus.webp |
+| neon_sold_out_waterfront_concert.png | megastar-shortage.png | shortage.webp |
+| twilight_tour_map_at_the_waterfront.png | megastar-expanded-tour.png | expanded-tour.webp |
+| closed_venue_tour_dates_canceled.png | megastar-supply-shock.png | supply-shock.webp |
+| underattended_waterfront_concert_at_dusk.png | megastar-demand-drop.png | demand-drop.webp |
+| waterfront_concert_under_the_stars.png | megastar-demand-boom.png | demand-boom.webp |
+
+The descriptive original names above follow the approved mapping; those names were not present in the workspace. The integration verified the supplied canonical-name files themselves.
+
+Scene selection uses price history, current preference strength, remaining capacity and recent decisions:
+
+1. **Supply shock:** only the illness consequence. The closed venue has no active performance and no waiting crowd. The next decision explicitly moves to the recovered artist’s remaining performances; canceled capacity is not restored.
+2. **Demand drop:** after the interview when tickets wanted at the retained price fall below remaining capacity. A demand decline that still leaves excess requests uses shortage art instead.
+3. **Demand boom:** after a limited or full crossover, with strong demand and enough ticket purchases to fill the remaining capacity. A crossover with unsold seats keeps the demand-drop scene.
+4. **Expanded tour:** a recent increase in dates or venue size, before illness, with strong enough purchases to support the depicted attendance. When expansion outstrips buyers at the price, empty-seat art takes precedence; the consequence still describes the extra dates/seats.
+5. **Shortage:** ticket requests exceed available seats at the official price. The sold-out sign, packed venue and shut-out fans show why resale pressure can arise.
+6. **Surplus:** available seats exceed ticket purchases before the publicity decline. The performer is on stage; this is weak turnout, not a canceled concert.
+7. **Baseline:** the neutral starting view or purchases in balance with available tickets.
+
+A scene is a representative tour view, not a literal count of seats, fans or cities. The supply-shock scene represents the removed performances; later scenes represent those still occurring. The generic source image uses cancellation signage, so postponed performances are described as canceled for their original dates and moved beyond the current window. Art never changes state, price, saves or endings. All seven use the unchanged, uncropped 4:3 renderer and meaningful captions/alt text at desktop, 390px and 320px.
+
+See [Megastar Mania report](../MEGASTAR-MANIA-REPORT.md) and [instructor routes](../MEGASTAR-MANIA-QA-PATHS.md). Masters return 404 from the loopback preview. All source and runtime assets remain excluded by the existing publication boundary.

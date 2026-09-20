@@ -96,7 +96,7 @@ test('every phase of every park path resumes exactly; scenarios, restart, replay
 test('private registry preserves default/unknown routing and does not mistake inherited object names for scenarios', () => {
   for (const query of ['', '?view=approved-art','?scenario=missing','?scenario=toString','?scenario=__proto__']) assert.equal(scenarioFor(query), housing);
   assert.equal(scenarioFor('?scenario=housing-crisis'), housing);
-  assert.equal(scenarioFor('?scenario=main-attraction'), scenario); assert.equal(Object.keys(scenarios).length, 3);
+  assert.equal(scenarioFor('?scenario=main-attraction'), scenario); assert.equal(Object.keys(scenarios).length, 4);
 });
 
 test('six approved park masters/WebPs retain their original bytes and unique namespaced mappings', () => {
