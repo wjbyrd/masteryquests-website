@@ -4,6 +4,8 @@
 
 This report records the initial build. The subsequent private copy/art refinement, replacement of the CSS skyline, and current scene QA are documented in [REFINEMENT-REPORT.md](REFINEMENT-REPORT.md).
 
+The later pass using the supplied image reference is documented in [ART-QA-REPORT.md](ART-QA-REPORT.md), with the current five-view mobile/desktop screenshot set and the v1 art bible.
+
 Room to Stay is a standalone, local-only housing-policy scenario: six consequential decisions, visible consequences, five ordinal conditions, five endings, a causal path debrief and replay. The runtime is isolated under `audit_tools/econ_rpg/game/`. Nothing was added to a public page.
 
 ## Files and architecture

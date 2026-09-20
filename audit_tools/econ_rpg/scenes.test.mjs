@@ -40,6 +40,12 @@ test('all five scenes reachable across unchanged 200 legal paths and every scene
   }
   const svg = readFileSync(new URL('./game/art/neighborhood.svg', import.meta.url), 'utf8');
   assert.equal(reached.size, 5);
+  const ids = [...svg.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
+  assert.equal(ids.length, new Set(ids).size, 'SVG IDs are unique');
+  const sceneIDs = scenario.sceneSet.variants.map(v => v.id);
+  assert.equal(sceneIDs.length, new Set(sceneIDs).size, 'Scene IDs are unique');
+  assert.equal([...svg.matchAll(/<view\b/g)].length, 5, 'Exactly five visual states');
+  for (const match of svg.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(match[1]), `Local fragment ${match[1]} exists`);
   for (const variant of scenario.sceneSet.variants) {
     assert.ok(reached.has(variant.id)); assert.ok(variant.alt.length > 70); assert.ok(variant.label);
     assert.ok(svg.includes(`<view id="${variant.id}"`));

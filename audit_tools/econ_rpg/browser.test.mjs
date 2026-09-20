@@ -43,10 +43,22 @@ try {
     await img.evaluate(image => image.decode());
     assert.ok(await img.evaluate(image => image.naturalWidth > 0));
     const box = await img.boundingBox(); assert.ok(box.width >= 250 && box.height >= 180);
+    if (page.viewportSize().width <= 390) assert.ok(box.height <= 240, 'Phone art has a bounded height for gameplay flow');
     const width = page.viewportSize().width, key = `${width}-${expected.id}`;
     if (!seenScenes.has(key)) {
-      const pixels = await figure.screenshot({ path: path.join(out, `scene-${key}.png`) });
+      await figure.screenshot({ path: path.join(out, `scene-${key}.png`) });
+      // Compare the artwork without captions: different labels alone must not pass.
+      const pixels = await img.screenshot({ path: path.join(out, `art-only-${key}.png`) });
       seenScenes.set(key, pixels.toString('base64'));
+      // Every encountered view must survive a real browser reload, not just a selector unit test.
+      if (run) {
+        violations.push(...await page.evaluate(() => window.__networkViolations));
+        await page.reload();
+        await page.getByRole('button', { name: /Resume decision|Review saved outcome/ }).click();
+        assert.deepEqual(await saved(), run);
+        assert.equal(await page.locator('.neighborhood-scene').getAttribute('data-scene'), expected.id);
+        await page.locator('.neighborhood-scene img').evaluate(image => image.decode());
+      }
     }
   };
   const choose = async id => { await page.locator(`[data-choice="${id}"]`).click(); await focus(); assert.equal((await saved()).phase, 'consequence'); await sceneCheck(); };
@@ -76,13 +88,19 @@ try {
   await page.getByRole('button', { name: 'Start over', exact: true }).click(); await page.keyboard.press('Escape');
   assert.ok(await page.getByRole('dialog').isHidden()); assert.equal((await saved()).history.length, 2);
   check('Keyboard activation, focus, live updates, exact consequence resume, conditional narrative, restart cancellation');
-  // Exhaustive first-decision / ending combinations through real controls at both widths.
+  // Exhaustive first-decision / ending combinations through real controls at all three widths.
   const representatives = summarize(enumerate()).representatives;
-  for (const width of [1280, 320]) {
+  for (const width of [1280, 390, 320]) {
     await page.setViewportSize({ width, height: width === 320 ? 720 : 960 });
     for (const representative of representatives) {
       await fresh();
       await sceneCheck();
+      if (width <= 390) {
+        // Art may add one small scroll, but must not bury the first decision behind a tall hero.
+        const layout = await page.evaluate(() => ({ card: document.querySelector('#view').getBoundingClientRect().top,
+          choice: document.querySelector('[data-choice]').getBoundingClientRect().top }));
+        assert.ok(layout.choice - layout.card < 800, 'First choice is within a short phone scroll');
+      }
       for (const id of representative.choices) {
         await bounds();
         const targets = await page.locator('#view button').evaluateAll(buttons => buttons.map(b => b.getBoundingClientRect().height));
@@ -137,7 +155,7 @@ try {
   await blocked.locator('[data-choice="ceiling"]').click();
   assert.equal(await blocked.locator('#view-title').innerText(), 'Policy consequences');
   check('Version mismatch fails safely; blocked storage remains playable with clear warning');
-  check('Five distinct local scene views at desktop and 320px, descriptive alternatives, scene restoration and restrained copy');
+  check('Five distinct local scene images without captions at desktop, 390px and 320px; reload restores each view; bounded phone framing and descriptive alternatives');
   // Enforce absence of attempted network activity, including requests stopped by CSP.
   violations.push(...await page.evaluate(() => window.__networkViolations));
   assert.deepEqual(external, []); assert.deepEqual(violations, []); assert.deepEqual(errors, []);

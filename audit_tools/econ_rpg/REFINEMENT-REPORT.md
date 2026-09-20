@@ -1,5 +1,7 @@
 # Private RPG refinement — copy and neighborhood scenes
 
+This report records the first scene-system pass, when the image reference was missing. The subsequent reference-informed drawing pass and its current screenshots/results are in [ART-QA-REPORT.md](ART-QA-REPORT.md).
+
 The skyline has been replaced with an original, state-responsive 2D neighborhood diorama. Promotional taglines have been replaced with direct scenario labels. The six-decision game, all 200 paths, effects, endings and serialized saves are unchanged.
 
 The requested reference PNG was **not available** at `/mnt/data/colorful_isometric_waterfront_neighborhood.png` or in the accessible attachment/workspace files. The result follows the written art direction; a claim of exact visual fidelity to that image would be unsupported. Reference comparison remains a manual QA item.

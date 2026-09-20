@@ -4,10 +4,11 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
 /* Local vector neighborhood. Static views share geometry in one SVG asset. */
-.neighborhood-scene{margin:0 -10px 24px;overflow:hidden;border:1px solid #546e79;border-radius:10px;background:#e1e6cf}
-.neighborhood-scene img{display:block;width:100%;height:auto;aspect-ratio:1000/610;object-fit:contain}
+.neighborhood-scene{margin:0 -10px 24px;overflow:hidden;border:1px solid #546e79;border-radius:10px;background:#d7dfd0}
+.neighborhood-scene img{display:block;width:100%;height:auto;aspect-ratio:1000/610;object-fit:cover;object-position:48% 50%}
 .neighborhood-scene figcaption{display:flex;justify-content:space-between;align-items:center;gap:6px 16px;flex-wrap:wrap;padding:10px 14px;color:#dbe9e5;background:#163843;font-size:.74rem;line-height:1.45}
 .neighborhood-scene figcaption strong{color:#f1dfb0;font-weight:600}
 #view>h2{margin-bottom:20px}
 @media(min-width:761px){.neighborhood-scene img{max-height:370px}.states{top:20px}.state-item{padding:12px 0}}
-@media(max-width:760px){.neighborhood-scene{margin:0 -12px 20px;border-radius:8px}.neighborhood-scene img{min-height:180px}.neighborhood-scene figcaption{font-size:.69rem;padding:8px 10px}.states .muted{margin-top:10px}.states .state-item{padding:12px 0}}
+@media(max-width:760px){.neighborhood-scene{margin:0 -12px 20px;border-radius:8px}.neighborhood-scene img{min-height:200px}.neighborhood-scene figcaption{font-size:.69rem;padding:8px 10px}.states .muted{margin-top:10px}.states .state-item{padding:12px 0}}
+@media(max-width:440px){.neighborhood-scene img{height:clamp(200px,61vw,240px);aspect-ratio:auto}}
