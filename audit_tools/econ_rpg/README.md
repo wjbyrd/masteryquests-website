@@ -23,7 +23,9 @@ Five ordinal indicators separate affordability for current renters, availability
 | File | Responsibility |
 |---|---|
 | `game/index.html`, `game/icon.svg` | Semantic standalone shell and local favicon |
-| `game/rpg.css` | Mastery Quests navy/teal styling, CSS city illustration, mobile layout, focus styles |
+| `game/rpg.css` | Mastery Quests navy/teal styling, neighborhood scene layout, mobile layout, focus styles |
+| `game/scenes.js`, `game/scenarios/housing-scenes.js` | Read-only visual selection and scenario-owned scene descriptions/conditions |
+| `game/art/neighborhood.svg`, `art/build-neighborhood.mjs` | Original local SVG diorama with five shared views, and its reproducible authoring source |
 | `game/engine.js` | Immutable state transitions, conditions, ordered outcomes, routing, schema validation and event record helper |
 | `game/scenarios/housing-crisis.js` | All economics content, state definitions, branches, endings and instructional metadata |
 | `game/storage.js` | Versioned local save, strict deterministic replay validation, reset |
@@ -34,7 +36,29 @@ Five ordinal indicators separate affordability for current renters, availability
 | `publication.test.mjs` | Real production build exclusion and protected-file checks |
 | `QA-PATHS.md` | Every major branch/ending combination to play manually |
 
-No runtime dependencies, fonts, analytics, framework or third-party assets. City art is decorative CSS. Future meaningful figures use structured image blocks with alt text and descriptions.
+No runtime dependencies, downloaded fonts, analytics, framework or third-party assets. The neighborhood is original local SVG artwork, with meaningful alt text and visible scene labels. Economic consequences and indicators remain the source of instructional meaning.
+
+## Visual refinement and reference status
+
+The visual direction is a pixel-inspired 2D urban diorama: an elevated oblique neighborhood, crisp edges, flat cel shading, ochre/terracotta/teal facades, apartment windows and balconies, local shops and striped awnings, crossings, bus shelter, parked vehicles, trees, people and a waterfront promenade. There is no 3D runtime, animation, city-building mechanic or remotely loaded asset. The old CSS skyline and its markup were removed.
+
+The requested style-anchor path was `/mnt/data/colorful_isometric_waterfront_neighborhood.png`. That file was not available in this Windows workspace or attached files. This pass interprets the detailed written visual brief; it does **not** claim a verified visual match to an unseen reference. Compare against the actual image during instructor art QA when it is available.
+
+The SVG contains shared neighborhood groups in `<defs>` and five named `<view>` fragments. `scenes.js` selects a fragment and description from `housing-scenes.js` using the engine's existing declarative conditions. The illustration sits after the current screen heading, so advancing to a new decision keeps both the scene and its associated content in reading order. Nothing is written into a run, and the scene selector cannot change effects, routing or ending eligibility. Version-1 saves remain compatible.
+
+| Scene | Trigger and visual change |
+|---|---|
+| Existing neighborhood | Initial/default scene; apartments, shops and a small service yard |
+| Limited vacancies | Availability ≤3 after at least one choice; applicants outside a lettings office |
+| Deferred maintenance | Quality ≤3; scaffolding, boarded windows, worn plaster and repair materials |
+| Housing under construction | Earlier permit reform or co-funding, before the final review; crane, unfinished frame and fencing |
+| New homes completed | Final review has delivered housing and availability ≥5; apartments replace the service yard |
+
+Selection priority is maintenance → completed homes → construction → limited vacancies → baseline. Maintenance can remain the visible condition even when other construction is occurring; the text and all indicators still describe the whole outcome. A completed-homes image is **not** a balanced-ending or success badge: a fiscal-stress outcome can also have new homes. Construction appears only after an enabling decision; new homes appear only at the review when the model delivers them.
+
+The header now says “A branching housing-policy scenario.” “Economics in the making,” the “Six decisions. One city…” slogan, “Take your seat,” and similar presentation copy were removed or replaced with functional labels. Existing decisions, consequences and instructional debrief content were preserved.
+
+Rebuild the original artwork with `node audit_tools/econ_rpg/art/build-neighborhood.mjs`. The generated SVG is checked in; no generator runs in the browser. See [art/README.md](art/README.md) for provenance and editing notes and [REFINEMENT-REPORT.md](REFINEMENT-REPORT.md) for this pass's QA results.
 
 ## Scenario schema
 
@@ -107,7 +131,7 @@ The page loads only its own local files. CSP disallows connections, third-party 
 
 ## Accessibility and mobile
 
-Semantic headings, native buttons/dialog/details, logical DOM order, skip link, visible gold focus outlines, focus moved to the new heading after each transition, textual arrow/direction labels and a polite live region for indicator changes. Decorative city art is hidden from assistive technology. Minimum 48px action targets, no canvas, no animations, reduced-motion rules, self-hosted system fonts. State follows decisions in mobile reading order and uses two compact columns. The debrief shows causal summaries and expandable details instead of requiring one long explanation per step.
+Semantic headings, native buttons/dialog/details, logical DOM order, skip link, visible gold focus outlines, focus moved to the new heading after each transition, textual arrow/direction labels and a polite live region for indicator changes. Each neighborhood view has descriptive alternative text and a visible condition caption; no economic information is conveyed only by the scene. Minimum 48px action targets, no canvas, no animations, reduced-motion rules and system fonts. State follows decisions in mobile reading order and uses two compact columns. The debrief shows causal summaries and expandable details instead of requiring one long explanation per step.
 
 Playwright checks 320px and 1280px through all 13 opening/ending combinations plus 390px/640px layout checks. Screenshot review covers intro, choices, consequences and debrief. Native Tab/Enter/Space, focus, Escape dismissal and unavailable storage are exercised. Automated browser checks do not replace a screen-reader audit or real-device instructor review.
 
@@ -115,6 +139,7 @@ Playwright checks 320px and 1280px through all 13 opening/ending combinations pl
 
 ```powershell
 node --test audit_tools/econ_rpg/engine.test.mjs
+node --test audit_tools/econ_rpg/scenes.test.mjs
 node --test audit_tools/econ_rpg/publication.test.mjs
 node audit_tools/econ_rpg/qa.mjs
 node audit_tools/econ_rpg/qa.mjs --all
@@ -128,7 +153,7 @@ node audit_tools/econ_rpg/browser.test.mjs
 
 Chrome is the default browser channel; `BROWSER_CHANNEL` or `BROWSER_EXECUTABLE` can override it. The browser test creates `tmp/econ-rpg/` and stores screenshots plus a results JSON there. That directory is git-ignored and excluded from publication. Create it before using `--write` if the browser test has not run.
 
-The engine suite checks invalid schema mutations, all reachable paths, all phases of exact save/resume, reset/isolation, mismatches, corruption, conditional branches and immutable transitions. The browser suite exercises 28 complete runs plus focused edge cases; it fails on external requests, CSP violations, page or console errors.
+The engine suite checks invalid schema mutations, all reachable paths, all phases of exact save/resume, reset/isolation, mismatches, corruption, conditional branches and immutable transitions. The scene suite checks state/path selection, all five named local views, delayed construction and byte-equivalence with pre-refinement version-1 saves. Its frozen SHA-256 covers all 200 serialized completed paths; an intentional future content revision requires reviewing that invariant and scenario version. The browser suite exercises 28 complete runs plus focused edge cases; it fails on external requests, CSP violations, page or console errors. All five scene states are decoded and captured at 1280px and 320px, with alt text, image size and distinct-render checks.
 
 Publication tests rebuild local `dist` using the existing production builder (no deploy). They verify the prototype is absent by path and content and use `git diff` to check protected tracked files. The protected-file assertion assumes a clean baseline; unrelated work in protected paths will cause it to fail until reviewed. Existing site tests can be run with the commands in [IMPLEMENTATION-REPORT.md](IMPLEMENTATION-REPORT.md).
 

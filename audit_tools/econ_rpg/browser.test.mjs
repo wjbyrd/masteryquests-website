@@ -7,6 +7,7 @@ import path from 'node:path';
 import { previewServer } from './serve.mjs';
 import { enumerate, summarize } from './qa.mjs';
 import scenario from './game/scenarios/housing-crisis.js';
+import { selectScene } from './game/scenes.js';
 const { chromium } = createRequire(import.meta.url)(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const out = fileURLToPath(new URL('../../tmp/econ-rpg/', import.meta.url));
 await mkdir(out, { recursive: true });
@@ -33,16 +34,33 @@ try {
   const saved = () => page.evaluate(k => JSON.parse(localStorage.getItem(k)), key);
   const bounds = async () => assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'No horizontal overflow');
   const focus = async () => assert.equal(await page.evaluate(() => document.activeElement.id), 'view-title');
-  const choose = async id => { await page.locator(`[data-choice="${id}"]`).click(); await focus(); assert.equal((await saved()).phase, 'consequence'); };
+  const seenScenes = new Map();
+  const sceneCheck = async () => {
+    const figure = page.locator('.neighborhood-scene'), img = figure.locator('img');
+    const run = await saved(), expected = selectScene(scenario.sceneSet, run);
+    assert.equal(await figure.getAttribute('data-scene'), expected.id);
+    assert.equal(await img.getAttribute('alt'), expected.alt);
+    await img.evaluate(image => image.decode());
+    assert.ok(await img.evaluate(image => image.naturalWidth > 0));
+    const box = await img.boundingBox(); assert.ok(box.width >= 250 && box.height >= 180);
+    const width = page.viewportSize().width, key = `${width}-${expected.id}`;
+    if (!seenScenes.has(key)) {
+      const pixels = await figure.screenshot({ path: path.join(out, `scene-${key}.png`) });
+      seenScenes.set(key, pixels.toString('base64'));
+    }
+  };
+  const choose = async id => { await page.locator(`[data-choice="${id}"]`).click(); await focus(); assert.equal((await saved()).phase, 'consequence'); await sceneCheck(); };
   const next = async () => { await page.getByRole('button', { name: /Continue to next decision|See your outcome/ }).click(); await focus(); };
   const fresh = async () => {
     await page.getByRole('button', { name: 'Start over', exact: true }).click();
     assert.ok(await page.getByRole('dialog').isVisible());
     await page.getByRole('button', { name: 'Clear run and start over' }).click(); await focus();
   };
-  await page.goto(origin); await page.getByRole('button', { name: 'Take your seat' }).waitFor();
+  await page.goto(origin); await page.getByRole('button', { name: 'Begin scenario' }).waitFor();
+  await sceneCheck();
+  assert.doesNotMatch(await page.locator('body').innerText(), /Six decisions\. One city|Economics in the making|Take your seat/);
   await bounds(); await page.screenshot({ path: path.join(out, 'intro-desktop.png'), fullPage: true });
-  await page.getByRole('button', { name: 'Take your seat' }).focus(); await page.keyboard.press('Enter'); await focus();
+  await page.getByRole('button', { name: 'Begin scenario' }).focus(); await page.keyboard.press('Enter'); await focus();
   await page.keyboard.press('Tab');
   assert.equal(await page.evaluate(() => document.activeElement.dataset.choice), 'ceiling');
   assert.equal(await page.evaluate(() => getComputedStyle(document.activeElement).outlineStyle), 'solid');
@@ -50,7 +68,8 @@ try {
   await focus(); assert.match(await page.locator('#announcement').innerText(), /affordability increased/);
   const snapshot = await saved();
   await page.reload(); await page.getByRole('button', { name: /Resume decision/ }).click();
-  assert.deepEqual(await saved(), snapshot); assert.match(await page.locator('#view').innerText(), /The city responds/);
+  assert.deepEqual(await saved(), snapshot); assert.match(await page.locator('#view').innerText(), /Policy consequences/);
+  await sceneCheck();
   await next(); assert.match(await page.locator('#view-title').innerText(), /vacant apartment/);
   await choose('registry'); await next();
   assert.match(await page.locator('#view').innerText(), /cannot recover those costs/);
@@ -63,6 +82,7 @@ try {
     await page.setViewportSize({ width, height: width === 320 ? 720 : 960 });
     for (const representative of representatives) {
       await fresh();
+      await sceneCheck();
       for (const id of representative.choices) {
         await bounds();
         const targets = await page.locator('#view button').evaluateAll(buttons => buttons.map(b => b.getBoundingClientRect().height));
@@ -78,6 +98,9 @@ try {
       violations.push(...await page.evaluate(() => window.__networkViolations));
     }
     check(`All ${representatives.length} opening-policy / ending combinations at ${width}px; six decisions, debrief, tap sizes and no overflow`);
+    const views = [...seenScenes].filter(([key]) => key.startsWith(`${width}-`));
+    assert.equal(views.length, 5, `All five scene states render at ${width}px`);
+    assert.equal(new Set(views.map(([,pixels]) => pixels)).size, 5, 'Named SVG views produce distinct images');
   }
   const oldID = (await saved()).runID;
   await page.getByRole('button', { name: 'Replay scenario' }).click();
@@ -103,17 +126,18 @@ try {
   }
   check('Construction subsidy is playable when funded and delivers delayed units on both rent-policy paths');
   await page.evaluate(k => { const value = JSON.parse(localStorage.getItem(k)); value.scenarioVersion = 999; localStorage.setItem(k, JSON.stringify(value)); }, key);
-  await page.reload(); await page.getByRole('button', { name: 'Take your seat' }).waitFor();
+  await page.reload(); await page.getByRole('button', { name: 'Begin scenario' }).waitFor();
   assert.match(await page.locator('#storage-notice').innerText(), /different scenario version/);
-  await page.getByRole('button', { name: 'Take your seat' }).click();
+  await page.getByRole('button', { name: 'Begin scenario' }).click();
   assert.equal((await saved()).scenarioVersion, 1);
   const blocked = await context.newPage();
   await blocked.addInitScript(() => { Object.defineProperty(window, 'localStorage', { get() { throw new DOMException('Storage blocked'); } }); });
-  await blocked.goto(origin); await blocked.getByRole('button', { name: 'Take your seat' }).click();
+  await blocked.goto(origin); await blocked.getByRole('button', { name: 'Begin scenario' }).click();
   assert.match(await blocked.locator('#storage-notice').innerText(), /could not be saved/);
   await blocked.locator('[data-choice="ceiling"]').click();
-  assert.equal(await blocked.locator('#view-title').innerText(), 'The city responds');
+  assert.equal(await blocked.locator('#view-title').innerText(), 'Policy consequences');
   check('Version mismatch fails safely; blocked storage remains playable with clear warning');
+  check('Five distinct local scene views at desktop and 320px, descriptive alternatives, scene restoration and restrained copy');
   // Enforce absence of attempted network activity, including requests stopped by CSP.
   violations.push(...await page.evaluate(() => window.__networkViolations));
   assert.deepEqual(external, []); assert.deepEqual(violations, []); assert.deepEqual(errors, []);

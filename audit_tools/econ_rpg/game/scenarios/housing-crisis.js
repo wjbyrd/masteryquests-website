@@ -1,3 +1,4 @@
+import housingScenes from './housing-scenes.js';
 const p = text => ({ type: 'paragraph', text });
 const chosen = id => ({ chosen: id });
 const atLeast = (state, value) => ({ state, op: 'gte', value });
@@ -5,8 +6,9 @@ const atMost = (state, value) => ({ state, op: 'lte', value });
 const ceiling = chosen('response.ceiling');
 export default {
   id: 'housing-crisis', version: 1, title: 'Room to Stay',
-  subtitle: 'Six decisions. One city. More than one way forward.',
-  introTitle: 'A city needs your advice', stateTitle: 'City conditions', consequenceTitle: 'The city responds',
+  subtitle: 'A branching housing-policy scenario',
+  sceneSet: housingScenes,
+  introTitle: 'Housing policy brief', stateTitle: 'City conditions', consequenceTitle: 'Policy consequences',
   role: 'Housing advisor · City of Linden', duration: 'About 10–15 minutes', decisions: 6, endingEyebrow: 'Your outcome · Two years of decisions',
   introduction: [
     p('Rents in Linden have risen faster than household incomes. Apartment vacancies are scarce, and new homes take time to build. Linden already has a small emergency housing fund; the city asks you to build on that response while keeping homes available and maintained.'),

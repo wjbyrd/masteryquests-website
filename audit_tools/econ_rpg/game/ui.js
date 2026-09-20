@@ -1,4 +1,5 @@
 import { nodeContent, availableChoices } from './engine.js';
+import { renderScene } from './scenes.js';
 export function el(tag, text, className) {
   const element = document.createElement(tag);
   if (text !== undefined) element.textContent = text;
@@ -65,7 +66,7 @@ export function render(s, run, saved, actions, focus = true) {
     contentBlocks(s.introduction, view);
     view.append(el('p', `${s.duration} · ${s.decisions} decisions · Multiple endings`, 'run-info'));
     if (saved) view.append(button(saved.phase === 'ending' ? 'Review saved outcome' : `Resume decision ${Math.min(saved.history.length + (saved.phase === 'decision' ? 1 : 0), s.decisions)} of ${s.decisions}`, actions.resume));
-    else view.append(button('Take your seat', actions.start));
+    else view.append(button('Begin scenario', actions.start));
     view.append(el('p', 'Make a recommendation, see its consequences, then decide what comes next. There is no answer score. Try a different path after the debrief.', 'muted'));
   } else if (run.phase === 'decision') {
     const node = nodeContent(s, run);
@@ -98,10 +99,12 @@ export function render(s, run, saved, actions, focus = true) {
     });
     view.append(path, el('h3', 'Read the economics'));
     s.debrief.forEach(part => { view.append(el('h4', part.title), el('p', part.text)); });
-    view.append(el('h3', 'What if you had…'));
+    view.append(el('h3', 'Alternative decisions'));
     const alternatives = el('ul', undefined, 'what-ifs');
     [0, 2, 3].filter(i => i < run.history.length).forEach(i => alternatives.append(el('li', run.history[i].whatIf)));
     view.append(alternatives, el('p', 'Change an early decision on your next run. Notice which later choices become possible and who bears the costs.'), button('Replay scenario', actions.replay));
   }
+  const scene = renderScene(s.sceneSet, run || saved);
+  if (scene) document.querySelector('#view-title').after(scene);
   if (focus) { document.querySelector('#view-title').focus({ preventScroll: true }); view.scrollIntoView({ block: 'start', behavior: 'instant' }); }
 }
