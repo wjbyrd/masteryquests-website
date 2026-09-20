@@ -4,6 +4,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 const root = fileURLToPath(new URL('../../', import.meta.url));
 const builder = path.join(root, 'audit_tools/public_site_publication/build-dist.mjs');
 test('staging uses the existing explicit deny rule; current production build excludes all prototype files', () => {
@@ -20,9 +21,12 @@ test('staging uses the existing explicit deny rule; current production build exc
   } }
   walk(dist);
   assert.ok(files.length > 100);
+  const supplied = JSON.parse(readFileSync(new URL('./art/approved-assets.json', import.meta.url), 'utf8'));
+  const artHashes = new Set(supplied.map(a => a.sha256));
   for (const file of files) {
     assert.doesNotMatch(file, /econ[_-]rpg|housing-crisis/i);
     if (/\.(html|js|json|css)$/i.test(file)) assert.doesNotMatch(readFileSync(file, 'utf8'), /mq\.econ-rpg|scenarios\/housing-crisis|Room to Stay/);
+    if (/\.(png|webp)$/i.test(file)) assert.equal(artHashes.has(createHash('sha256').update(readFileSync(file)).digest('hex')), false, 'Approved art must not publish under any name');
   }
 });
 test('public navigation, frozen games, Composer, telemetry and Cloudflare configuration are untouched', () => {

@@ -13,8 +13,8 @@ export function renderScene(sceneSet, run) {
   const figure = document.createElement('figure');
   figure.className = 'neighborhood-scene'; figure.dataset.scene = variant.id;
   const img = document.createElement('img');
-  img.src = `${sceneSet.asset}#${variant.id}`;
-  img.alt = variant.alt; img.width = 1000; img.height = 610;
+  img.src = variant.src;
+  img.alt = variant.alt; img.width = sceneSet.width; img.height = sceneSet.height;
   img.decoding = 'sync';
   const caption = document.createElement('figcaption');
   const state = document.createElement('strong'); state.textContent = variant.label;

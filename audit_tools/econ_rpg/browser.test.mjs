@@ -14,7 +14,7 @@ await mkdir(out, { recursive: true });
 const server = previewServer();
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;
-const key = `mq.econ-rpg.${scenario.id}`, errors = [], external = [], violations = [], passed = [];
+const key = `mq.econ-rpg.${scenario.id}`, errors = [], external = [], violations = [], passed = [], sceneSwitchMs = [], imageRequests = new Set();
 let browser;
 const check = text => { passed.push(text); console.log(`PASS ${text}`); };
 try {
@@ -26,6 +26,7 @@ try {
   });
   const page = await context.newPage();
   page.on('pageerror', e => errors.push(e.message));
+  page.on('request', request => { if (request.resourceType() === 'image') imageRequests.add(request.url()); });
   page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
   await page.addInitScript(() => {
     window.__networkViolations = [];
@@ -42,10 +43,14 @@ try {
     assert.equal(await figure.locator('figcaption').innerText(), expected.label);
     assert.equal(await figure.locator('figcaption').evaluate(e => getComputedStyle(e).textAlign), 'center');
     assert.equal(await img.getAttribute('alt'), expected.alt);
+    assert.equal(await img.getAttribute('src'), expected.src);
     await img.evaluate(image => image.decode());
-    assert.ok(await img.evaluate(image => image.naturalWidth > 0));
+    assert.deepEqual(await img.evaluate(image => [image.naturalWidth, image.naturalHeight, image.width, image.height].slice(0, 2)), [1448, 1086]);
+    assert.equal(await img.getAttribute('width'), '1448'); assert.equal(await img.getAttribute('height'), '1086');
     const box = await img.boundingBox(); assert.ok(box.width >= 250 && box.height >= 180);
-    if (page.viewportSize().width <= 390) assert.ok(box.height <= 240, 'Phone art has a bounded height for gameplay flow');
+    assert.ok(Math.abs(box.width / box.height - 4 / 3) < .005, 'Intrinsic 4:3 ratio without stretching or cropping');
+    assert.equal(await img.evaluate(image => getComputedStyle(image).objectFit), 'contain');
+    if (page.viewportSize().width <= 390) assert.ok(box.height <= 260, 'Full phone artwork stays compact');
     const width = page.viewportSize().width, key = `${width}-${expected.id}`;
     if (!seenScenes.has(key)) {
       await figure.screenshot({ path: path.join(out, `scene-${key}.png`) });
@@ -63,7 +68,13 @@ try {
       }
     }
   };
-  const choose = async id => { await page.locator(`[data-choice="${id}"]`).click(); await focus(); assert.equal((await saved()).phase, 'consequence'); await sceneCheck(); };
+  const choose = async id => {
+    const started = performance.now();
+    await page.locator(`[data-choice="${id}"]`).click(); await focus();
+    await page.locator('.neighborhood-scene img').evaluate(image => image.decode());
+    sceneSwitchMs.push(Math.round(performance.now() - started));
+    assert.equal((await saved()).phase, 'consequence'); await sceneCheck();
+  };
   const next = async () => { await page.getByRole('button', { name: /Continue to next decision|See your outcome/ }).click(); await focus(); };
   const fresh = async () => {
     await page.getByRole('button', { name: 'Start over', exact: true }).click();
@@ -155,7 +166,7 @@ try {
     check(`All ${representatives.length} opening-policy / ending combinations at ${width}px; six decisions, debrief, tap sizes and no overflow`);
     const views = [...seenScenes].filter(([key]) => key.startsWith(`${width}-`));
     assert.equal(views.length, 5, `All five scene states render at ${width}px`);
-    assert.equal(new Set(views.map(([,pixels]) => pixels)).size, 5, 'Named SVG views produce distinct images');
+    assert.equal(new Set(views.map(([,pixels]) => pixels)).size, 5, 'Approved WebPs produce distinct images');
   }
   const oldID = (await saved()).runID;
   await page.getByRole('button', { name: 'Replay scenario' }).click();
@@ -196,6 +207,17 @@ try {
   // Enforce absence of attempted network activity, including requests stopped by CSP.
   violations.push(...await page.evaluate(() => window.__networkViolations));
   assert.deepEqual(external, []); assert.deepEqual(violations, []); assert.deepEqual(errors, []);
+  assert.deepEqual([...imageRequests].map(url => new URL(url).pathname).sort(), ['/art/scenes/baseline.webp','/art/scenes/construction.webp','/art/scenes/homes.webp','/art/scenes/maintenance.webp','/art/scenes/pressure.webp']);
+  for (const variant of scenario.sceneSet.variants) {
+    const response = await context.request.get(`${origin}/${variant.src.slice(2)}`);
+    assert.equal(response.status(), 200); assert.match(response.headers()['content-type'], /image\/webp/);
+  }
+  for (const name of ['linden-baseline.png','linden-limited-vacancies.png','linden-deferred-maintenance.png','linden-housing-under-construction.png','linden-new-homes-completed.png']) {
+    assert.equal((await context.request.get(`${origin}/art/source/${name}`)).status(), 404, 'Masters are outside the preview root');
+  }
   check('No external requests, CSP violations, console errors or page errors');
-  await writeFile(path.join(out, 'browser-results.json'), JSON.stringify({ passed, external, violations, errors }, null, 2));
+  sceneSwitchMs.sort((a,b) => a-b);
+  const switching = { samples: sceneSwitchMs.length, medianMs: sceneSwitchMs[Math.floor(sceneSwitchMs.length / 2)], maxMs: sceneSwitchMs.at(-1) };
+  console.log('Scene switch including control activation and decode:', switching);
+  await writeFile(path.join(out, 'browser-results.json'), JSON.stringify({ passed, external, violations, errors, imageRequests: [...imageRequests], switching }, null, 2));
 } finally { await browser?.close(); await new Promise(resolve => server.close(resolve)); }

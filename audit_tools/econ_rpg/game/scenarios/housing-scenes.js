@@ -1,19 +1,19 @@
 const pipeline = { any: [{ chosen: 'supply.reform' }, { chosen: 'supply.subsidy' }] };
 const delivered = { any: [{ chosen: 'review.access' }, { chosen: 'review.protect' }] };
 export default {
-  asset: './art/neighborhood.svg', label: 'Linden · Housing district', initial: 'baseline',
+  width: 1448, height: 1086, initial: 'baseline',
   // First match wins. Deterioration remains visible even when construction exists.
   variants: [
-    { id: 'maintenance', label: 'Deferred maintenance', when: { state: 'quality', op: 'lte', value: 3 },
-      alt: 'The same waterfront neighborhood, with boarded windows, cracked plaster and repair scaffolding on older apartments. Deferred maintenance is also explained in the consequences and quality indicator.' },
-    { id: 'homes', label: 'New homes completed', when: { all: [pipeline, delivered, { state: 'availability', op: 'gte', value: 5 }] },
-      alt: 'New apartments with balconies and an occupied entrance replace the small service yard. The existing shops and neighborhood remain. More homes do not by themselves resolve every affordability or budget problem.' },
-    { id: 'construction', label: 'Housing under construction', phases: ['decision', 'consequence'],
+    { id: 'maintenance', src: './art/scenes/maintenance.webp', label: 'Deferred maintenance', when: { state: 'quality', op: 'lte', value: 3 },
+      alt: 'The same waterfront neighborhood has cracked facades, damaged roofs, boarded windows and torn shop awnings. Barriers mark deferred upkeep; the consequences and quality indicator explain the economic effects.' },
+    { id: 'homes', src: './art/scenes/homes.webp', label: 'New homes completed', when: { all: [pipeline, delivered, { state: 'availability', op: 'gte', value: 5 }] },
+      alt: 'A completed apartment building with balconies and a planted rooftop adds housing to the waterfront neighborhood. Shops, the clock tower and promenade remain. More homes alone do not resolve every affordability or budget problem.' },
+    { id: 'construction', src: './art/scenes/construction.webp', label: 'Housing under construction', phases: ['decision', 'consequence'],
       when: { all: [pipeline, { not: delivered }] },
-      alt: 'A crane, structural frame and work-site fencing occupy the service yard. Homes are being built but are not yet available to tenants.' },
-    { id: 'pressure', label: 'Limited vacancies', when: { state: 'availability', op: 'lte', value: 3 },
-      alt: 'A larger queue waits outside the lettings office beneath warm, curtained apartment windows. A viewing sign and the occupied homes illustrate competition for limited vacancies in the same waterfront neighborhood.' },
-    { id: 'baseline', label: 'Existing neighborhood',
-      alt: 'An elevated 2D view of Linden: terracotta, teal and ochre apartment buildings, balconies, a grocer, cafe, repair shop and cycle shop, a bus shelter, crosswalks, trees and a waterfront promenade.' }
+      alt: 'A crane, exposed apartment frame, workers, materials and blue fencing mark a housing construction site in the same waterfront neighborhood. These homes are being built but are not yet available to tenants.' },
+    { id: 'pressure', src: './art/scenes/pressure.webp', label: 'Limited vacancies', when: { state: 'availability', op: 'lte', value: 3 },
+      alt: 'A queue waits beneath the yellow-striped awning beside a housing symbol. More people fill the sidewalks and apartment windows glow above them, illustrating competition for limited vacancies in the same waterfront neighborhood.' },
+    { id: 'baseline', src: './art/scenes/baseline.webp', label: 'Existing neighborhood',
+      alt: 'An elevated illustrated view of Linden: apartment buildings and shops, a clock tower, striped awnings, trees, cars and a bus shelter. A sailboat passes the waterfront promenade, with a city skyline behind the neighborhood.' }
   ]
 };

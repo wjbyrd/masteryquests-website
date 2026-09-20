@@ -25,7 +25,7 @@ Five ordinal indicators separate affordability for current renters, availability
 | `game/index.html`, `game/icon.svg` | Semantic standalone shell and local favicon |
 | `game/rpg.css` | Mastery Quests navy/teal styling, neighborhood scene layout, mobile layout, focus styles |
 | `game/scenes.js`, `game/scenarios/housing-scenes.js` | Read-only visual selection and scenario-owned scene descriptions/conditions |
-| `game/art/neighborhood.svg`, `art/build-neighborhood.mjs` | Original local SVG diorama with five shared views, and its reproducible authoring source |
+| `art/source/`, `game/art/scenes/`, `art/approved-assets.json` | Approved PNG masters, unchanged runtime WebPs and supplied-file checksums |
 | `game/engine.js` | Immutable state transitions, conditions, ordered outcomes, routing, schema validation and event record helper |
 | `game/scenarios/housing-crisis.js` | All economics content, state definitions, branches, endings and instructional metadata |
 | `game/storage.js` | Versioned local save, strict deterministic replay validation, reset |
@@ -36,31 +36,25 @@ Five ordinal indicators separate affordability for current renters, availability
 | `publication.test.mjs` | Real production build exclusion and protected-file checks |
 | `QA-PATHS.md` | Every major branch/ending combination to play manually |
 
-No runtime dependencies, downloaded fonts, analytics, framework or third-party assets. The neighborhood is original local SVG artwork, with meaningful alt text and visible scene labels. Economic consequences and indicators remain the source of instructional meaning.
+No runtime dependencies, downloaded fonts, analytics, framework or third-party assets. The neighborhood uses five supplied, approved local WebPs, with meaningful alt text and visible HTML scene labels. PNG masters stay outside the runtime root. Economic consequences and indicators remain the source of instructional meaning.
 
-## Visual refinement and reference status
+## Approved artwork and scene selection
 
-The latest visual-communication pass brightens architectural surfaces, separates them with stronger outlines, replaces the greenish backdrop with pale sky, and clarifies the waterfront with curved ripples, a timber landing and a moored boat. Occupied windows/queues, worn masonry, the open construction frame and completed housing are more distinct. Each image now has one centered, prominent condition label. Indicator help contains five definitions and one short forecast caveat. A rendered comparison retained the right-hand panel on desktop and the panel below actions on phones; putting it above delayed the phone scene without enlarging it. See [VISUAL-CLARITY-REPORT.md](VISUAL-CLARITY-REPORT.md) for measurements and screenshots. Reproduce the layout comparison with `node audit_tools/econ_rpg/layout-review.mjs` using the same Playwright environment as the browser tests; it never adds a layout switch to gameplay.
+The active artwork consists of five approved 1448 × 1086 WebPs under `game/art/scenes/`. Their canonical full-quality PNG masters remain under `art/source/`. The files were supplied already complete: no generation, conversion, recompression, resizing or pixel editing was performed during integration. SHA-256 checksums recorded before integration are in `art/approved-assets.json` and enforced by the scene tests. The WebPs were found in `art/scenes/` and moved unchanged into the required runtime folder. No file was renamed.
 
-The visual direction is a pixel-inspired 2D urban diorama: an elevated oblique neighborhood, crisp edges, flat cel shading, ochre/terracotta/teal facades, apartment windows and balconies, local shops and striped awnings, crossings, bus shelter, parked vehicles, trees, people and a waterfront promenade. There is no 3D runtime, animation, city-building mechanic or remotely loaded asset. The old CSS skyline and its markup were removed.
+| Scene ID | Runtime file | Existing selection trigger |
+|---|---|---|
+| baseline | `game/art/scenes/baseline.webp` | Initial/default neighborhood |
+| pressure | `game/art/scenes/pressure.webp` | Availability ≤3 after at least one choice |
+| maintenance | `game/art/scenes/maintenance.webp` | Quality ≤3 |
+| construction | `game/art/scenes/construction.webp` | Prior permit reform/co-funding before final delivery |
+| homes | `game/art/scenes/homes.webp` | Final review has delivered housing and availability ≥5 |
 
-The approved reference is now available as the attached `codex-clipboard-0b5009a6-5235-44d7-aaed-14bbb1fb83ec.png` and was visually inspected for the latest art pass. Its crisp architectural definition, controlled color, lived-in detail and close framing informed original Linden illustrations. No individual reference building, layout, sign, character or distinctive feature was copied. The reference is not a shipped asset. See [ART-QA-REPORT.md](ART-QA-REPORT.md) for an explicit comparison and [Mastery Quests RPG Art Bible — v1](art/README.md#mastery-quests-rpg-art-bible--v1) for the reusable visual standard.
+Priority remains maintenance → homes → construction → pressure → baseline. Scene IDs, thresholds, history checks and phases are unchanged. `scenes.js` selects the existing variant and renders its direct `src`, description and prominent condition caption. It never mutates a run or save. New housing can coexist with fiscal stress; the artwork is not an economic score.
 
-The SVG contains shared neighborhood groups in `<defs>` and five named `<view>` fragments. `scenes.js` selects a fragment and description from `housing-scenes.js` using the engine's existing declarative conditions. The illustration sits after the current screen heading, so advancing to a new decision keeps both the scene and its associated content in reading order. Nothing is written into a run, and the scene selector cannot change effects, routing or ending eligibility. Version-1 saves remain compatible.
+Images appear after the current heading, at full available card width with automatic height and `object-fit: contain`. Intrinsic width/height attributes match the approved 4:3 files. No crop, filter, maximum-height clamp or mobile minimum-height stretch remains. Display sizes are about 748 × 561px on desktop, 334 × 251px at 390px, and 264 × 198px at 320px. The compact conditions panel remains right on desktop and below actions on phones; short optional help is unchanged. No preload or new asset infrastructure is needed for the measured local switching behavior.
 
-| Scene | Trigger and visual change |
-|---|---|
-| Existing neighborhood | Initial/default scene; apartments, shops and a small service yard |
-| Limited vacancies | Availability ≤3 after at least one choice; applicants outside a lettings office |
-| Deferred maintenance | Quality ≤3; scaffolding, boarded windows, worn plaster and repair materials |
-| Housing under construction | Earlier permit reform or co-funding, before the final review; crane, unfinished frame and fencing |
-| New homes completed | Final review has delivered housing and availability ≥5; apartments replace the service yard |
-
-Selection priority is maintenance → completed homes → construction → limited vacancies → baseline. Maintenance can remain the visible condition even when other construction is occurring; the text and all indicators still describe the whole outcome. A completed-homes image is **not** a balanced-ending or success badge: a fiscal-stress outcome can also have new homes. Construction appears only after an enabling decision; new homes appear only at the review when the model delivers them.
-
-The opening now shows the scenario title, neighborhood and brief housing setup followed by Begin (or the existing resume/review control). Development labels, subtitle, duration/decision-count metadata, no-score and replay explanations, and the repeated privacy footer are absent. Decision progress, save warnings and all substantive economic content remain. See [UI-CLEANUP-REPORT.md](UI-CLEANUP-REPORT.md) for this focused cleanup and its screenshots.
-
-Rebuild the original artwork with `node audit_tools/econ_rpg/art/build-neighborhood.mjs`. The generated SVG is checked in; no generator runs in the browser. Its shared layers now distinguish rear buildings, road traffic, foreground buildings, street furniture and the service yard; this keeps occlusion correct across all five views. Tightened framing and local architectural detail replace empty background space without changing gameplay. The illustration height stays between 200 and 240px at narrow phone widths. See [art/README.md](art/README.md) for provenance/editing notes and [ART-QA-REPORT.md](ART-QA-REPORT.md) for current results; [REFINEMENT-REPORT.md](REFINEMENT-REPORT.md) records the earlier copy/scene-system pass.
+The retired generated SVG and generator have been removed. Historical reports retain their descriptions of previous implementations; they are not the active art workflow. See [APPROVED-ART-INTEGRATION-REPORT.md](APPROVED-ART-INTEGRATION-REPORT.md) for current verification and screenshots, and [Mastery Quests RPG Art Bible — v1](art/README.md#mastery-quests-rpg-art-bible--v1) for the asset workflow. A repository style-reference file was not present during integration; any future `art/reference/neighborhood-style-reference.png` belongs only in development material, never gameplay.
 
 ## Scenario schema
 
@@ -135,7 +129,7 @@ The page loads only its own local files. CSP disallows connections, third-party 
 
 Semantic headings, native buttons/dialog/details, logical DOM order, skip link, visible gold focus outlines, focus moved to the new heading after each transition, textual arrow/direction labels and a polite live region for indicator changes. Each neighborhood view has descriptive alternative text and a visible condition caption; no economic information is conveyed only by the scene. Minimum 48px action targets, no canvas, no animations, reduced-motion rules and system fonts. State follows decisions in mobile reading order and uses five compact rows, with equal-width bars, numeric levels and signed movement from the latest decision. Movement uses actual bounded changes, survives resume, and clears on restart. One native details control, “What do these indicators mean?”, starts collapsed and contains the five definitions and model caveat. The debrief shows causal summaries and expandable details instead of requiring one long explanation per step.
 
-Playwright checks 320px, 390px and 1280px through all 13 opening/ending combinations, plus a 640px layout check. Each of the five scene images is decoded and captured at the same viewport sizes, with additional caption-free captures. Scene reload/resume and bounded phone framing are checked. Screenshot review covers intro, choices, consequences and debrief. Native Tab/Enter/Space, focus, Escape dismissal and unavailable storage are exercised. Automated browser checks do not replace a screen-reader audit or real-device instructor review.
+Playwright checks 320px, 390px and 1280px through all 13 opening/ending combinations, plus a 640px layout check. Each of the five scene images is decoded and captured at the same viewport sizes, with additional caption-free captures. Scene reload/resume, intrinsic dimensions, uncropped aspect ratio and compact phone display are checked. Screenshot review covers intro, choices, consequences and debrief. Native Tab/Enter/Space, focus, Escape dismissal and unavailable storage are exercised. Automated browser checks do not replace a screen-reader audit or real-device instructor review.
 
 ## Tests and QA tools
 
@@ -155,7 +149,7 @@ node audit_tools/econ_rpg/browser.test.mjs
 
 Chrome is the default browser channel; `BROWSER_CHANNEL` or `BROWSER_EXECUTABLE` can override it. The browser test creates `tmp/econ-rpg/` and stores screenshots plus a results JSON there. That directory is git-ignored and excluded from publication. Create it before using `--write` if the browser test has not run.
 
-The engine suite checks invalid schema mutations, all reachable paths, all phases of exact save/resume, reset/isolation, mismatches, corruption, conditional branches and immutable transitions. The scene suite checks state/path selection, unique SVG/scene IDs, local fragment targets, all five views, delayed construction and byte-equivalence with pre-refinement version-1 saves. Its frozen SHA-256 covers all 200 serialized completed paths; an intentional future content revision requires reviewing that invariant and scenario version. The browser suite exercises 41 complete runs plus focused edge cases; it fails on external requests, CSP violations, page or console errors. All five scene states are decoded, reloaded and captured at 1280px, 390px and 320px, with alt text, image size and distinct-render checks that exclude caption text.
+The engine suite checks invalid schema mutations, all reachable paths, all phases of exact save/resume, reset/isolation, mismatches, corruption, conditional branches and immutable transitions. The scene suite checks state/path selection, five unique IDs and exact WebP mappings, file signatures, unchanged PNG/WebP checksums, absence of obsolete runtime URLs, delayed construction and byte-equivalence with pre-refinement version-1 saves. Its frozen SHA-256 covers all 200 serialized completed paths; an intentional future content revision requires reviewing that invariant and scenario version. The browser suite exercises 41 complete runs plus focused edge cases; it fails on external requests, CSP violations, page or console errors. All five scene states are decoded, reloaded and captured at 1280px, 390px and 320px, with alt text, image size and distinct-render checks that exclude caption text.
 
 Publication tests rebuild local `dist` using the existing production builder (no deploy). They verify the prototype is absent by path and content and use `git diff` to check protected tracked files. The protected-file assertion assumes a clean baseline; unrelated work in protected paths will cause it to fail until reviewed. Existing site tests can be run with the commands in [IMPLEMENTATION-REPORT.md](IMPLEMENTATION-REPORT.md).
 

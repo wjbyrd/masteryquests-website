@@ -30,7 +30,6 @@ try {
           .state-item{border:0}.state-item dt{font-size:.78rem}
           .state-item dd{gap:6px;grid-template-columns:minmax(55px,1fr) 5ch 4ch}
           .steps{min-width:55px}
-          .neighborhood-scene img{max-height:520px}
         }` }));
       await page.addStyleTag({ url: `${origin}/__layout-review.css` });
     }

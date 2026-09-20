@@ -11,7 +11,7 @@ export function previewServer() {
       if (file !== path.resolve(gameRoot) && !file.startsWith(gameRoot)) { res.writeHead(403).end(); return; }
       if ((await stat(file)).isDirectory()) file = path.join(file, 'index.html');
       const body = await readFile(file);
-      res.writeHead(200, { 'Content-Type': ({ '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.svg': 'image/svg+xml' })[path.extname(file)] || 'application/octet-stream',
+      res.writeHead(200, { 'Content-Type': ({ '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.svg': 'image/svg+xml', '.webp': 'image/webp' })[path.extname(file)] || 'application/octet-stream',
         'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', 'X-Robots-Tag': 'noindex, nofollow' });
       res.end(body);
     } catch { res.writeHead(404).end('Not found'); }

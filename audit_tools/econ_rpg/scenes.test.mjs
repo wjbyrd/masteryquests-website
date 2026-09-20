@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import scenario from './game/scenarios/housing-crisis.js';
 import { createRun, decide, advance } from './game/engine.js';
@@ -28,7 +28,7 @@ test('scene selection reflects housing conditions, construction lag and completi
   assert.equal(selected(path(['ceiling','registry','phase','reform','renew','protect'])), 'maintenance');
 });
 
-test('all five scenes reachable across unchanged 200 legal paths and every scene has a local named view and description', () => {
+test('all five scenes reachable across unchanged 200 legal paths and resolve to the approved local WebPs', () => {
   const result = enumerate(); assert.equal(result.complete.length, 200);
   const reached = new Set(['baseline']);
   for (const completed of result.complete) {
@@ -38,20 +38,37 @@ test('all five scenes reachable across unchanged 200 legal paths and every scene
       run = advance(scenario, run); reached.add(selected(run));
     }
   }
-  const svg = readFileSync(new URL('./game/art/neighborhood.svg', import.meta.url), 'utf8');
   assert.equal(reached.size, 5);
-  const ids = [...svg.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
-  assert.equal(ids.length, new Set(ids).size, 'SVG IDs are unique');
   const sceneIDs = scenario.sceneSet.variants.map(v => v.id);
   assert.equal(sceneIDs.length, new Set(sceneIDs).size, 'Scene IDs are unique');
-  assert.equal([...svg.matchAll(/<view\b/g)].length, 5, 'Exactly five visual states');
-  for (const match of svg.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(match[1]), `Local fragment ${match[1]} exists`);
+  assert.deepEqual([...sceneIDs].sort(), ['baseline','construction','homes','maintenance','pressure']);
   for (const variant of scenario.sceneSet.variants) {
     assert.ok(reached.has(variant.id)); assert.ok(variant.alt.length > 70); assert.ok(variant.label);
-    assert.ok(svg.includes(`<view id="${variant.id}"`));
+    assert.equal(variant.src, `./art/scenes/${variant.id}.webp`);
+    const data = readFileSync(new URL(variant.src, new URL('./game/', import.meta.url)));
+    assert.equal(data.toString('ascii', 0, 4), 'RIFF');
+    assert.equal(data.toString('ascii', 8, 12), 'WEBP');
   }
-  assert.doesNotMatch(svg, /<script|<foreignObject|(?:href|src)="(?:https?:|\/\/)/i);
-  assert.match(svg, /<use href="#back"/);
+  assert.equal(scenario.sceneSet.width, 1448); assert.equal(scenario.sceneSet.height, 1086);
+  function inspect(dir) {
+    for (const entry of readdirSync(dir, { withFileTypes: true })) {
+      const file = new URL(entry.name + (entry.isDirectory() ? '/' : ''), dir);
+      if (entry.isDirectory()) inspect(file);
+      else if (/\.(js|css|html)$/.test(entry.name)) assert.doesNotMatch(readFileSync(file, 'utf8'), /neighborhood\.svg|art\/source\/|\.png\b/);
+    }
+  }
+  inspect(new URL('./game/', import.meta.url));
+});
+
+test('supplied PNG masters and runtime WebPs remain byte-for-byte unchanged', () => {
+  const manifest = JSON.parse(readFileSync(new URL('./art/approved-assets.json', import.meta.url), 'utf8'));
+  assert.equal(manifest.filter(a => a.path.startsWith('art/source/') && a.path.endsWith('.png')).length, 5);
+  assert.equal(manifest.filter(a => a.path.startsWith('game/art/scenes/') && a.path.endsWith('.webp')).length, 5);
+  for (const asset of manifest) {
+    const data = readFileSync(new URL(asset.path, import.meta.url));
+    assert.equal(data.length, asset.bytes, asset.path);
+    assert.equal(createHash('sha256').update(data).digest('hex'), asset.sha256, asset.path);
+  }
 });
 
 test('pre-refinement version-1 saves remain byte-equivalent after replay', () => {
