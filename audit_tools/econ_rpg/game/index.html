@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#062454">
+  <title>Room to Stay · Mastery Quests development</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./rpg.css">
+  <script type="module" src="./rpg.js"></script>
+</head>
+<body>
+  <a class="skip" href="#view">Skip to scenario</a>
+  <header class="masthead"><span class="brand">MASTERY <b>QUESTS</b></span><span class="badge">Development · Instructor QA</span></header>
+  <main>
+    <header class="hero">
+      <div class="hero-copy"><p class="eyebrow">Economics in the making</p><h1 id="scenario-title">Room to Stay</h1><p id="subtitle"></p></div>
+      <div class="city" aria-hidden="true"><span class="sun"></span><span class="building a"></span><span class="building b"></span><span class="building c"></span><span class="building d"></span><span class="building e"></span><span class="street"></span></div>
+    </header>
+    <p id="storage-notice" role="status" class="notice" hidden></p>
+    <div class="layout"><section id="view" class="panel" aria-labelledby="view-title" tabindex="-1"></section><aside id="state-panel" class="panel states" aria-labelledby="state-title"></aside></div>
+    <div class="toolbar"><button id="restart" class="quiet" type="button" hidden>Start over</button><span>Local-only progress · No account · No gameplay transmission</span></div>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+  </main>
+  <dialog id="restart-dialog" aria-labelledby="restart-title"><h2 id="restart-title">Start a fresh run?</h2><p>Your saved path for this scenario will be cleared from this browser.</p><div class="actions"><button id="cancel-restart" type="button">Keep playing</button><button id="confirm-restart" type="button">Clear run and start over</button></div></dialog>
+  <noscript><p>This local scenario needs JavaScript. Enable it and reload to play.</p></noscript>
+</body>
+</html>
