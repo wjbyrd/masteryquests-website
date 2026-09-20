@@ -36,7 +36,7 @@ Inspect rows 1–6 first: premium operation; broad access/crowding; funded expan
 
 - `single`: Keep one admission price
 - `dates`: Use peak and off-peak prices
-- `members`: Offer named local off-peak memberships
+- `members`: Offer off-peak memberships to local residents
 
 ### The signature ride
 
@@ -44,17 +44,17 @@ Inspect rows 1–6 first: premium operation; broad access/crowding; funded expan
 - `defer`: Defer the major overhaul
 - `partial`: Make partial repairs during short closures
 
-### A place for the next crowd
+### Investing in capacity
 
 - `expand`: Build a major new attraction
 - `throughput`: Improve loading and ride throughput
-- `hold`: Hold capacity and retain the funds
+- `hold`: Keep existing capacity and save the funds
 
-### Another reason to go elsewhere
+### A new competitor
 
 - `broaden`: Broaden access with lower-priced packages
 - `differentiate`: Strengthen the premium experience
-- `course`: Keep the current offer
+- `course`: Keep existing prices and services
 
 ## Focused checks
 
