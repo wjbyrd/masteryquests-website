@@ -1,7 +1,8 @@
-import scenario from './scenarios/housing-crisis.js';
+import { scenarioFor } from './scenarios/registry.js';
 import { createRun, decide, advance, transitionEvent, validateScenario } from './engine.js';
 import { loadRun, saveRun, clearRun } from './storage.js';
 import { render } from './ui.js';
+const scenario = scenarioFor(window.location.search);
 validateScenario(scenario);
 document.title = `${scenario.title} · Mastery Quests`;
 document.querySelector('#scenario-title').textContent = scenario.title;

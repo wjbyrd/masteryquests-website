@@ -1,4 +1,4 @@
-# Room to Stay — development economics scenario
+# Mastery Quests — private branching economics RPG
 
 Local, unlinked Mastery Quests prototype for instructor QA. **Not a production release.** The intended future release window is October 2026; nothing automatically unlocks or publishes on that date.
 
@@ -11,6 +11,11 @@ node audit_tools/econ_rpg/serve.mjs
 ```
 
 Open <http://127.0.0.1:4179>. The preview binds only to loopback and serves only `game/`. Set `PORT` if needed. Keep the command running while playing; Ctrl+C stops it. ES modules need an HTTP preview; do not double-click the HTML file. Saves belong to the browser and exact origin, including port.
+
+- [Room to Stay](http://127.0.0.1:4179/?scenario=housing-crisis): housing policy; the unchanged default.
+- [The Main Attraction](http://127.0.0.1:4179/?scenario=main-attraction): monopoly and market power; development-complete and ready for instructor QA.
+
+Both use one engine, controller, renderer, scene selector, storage implementation and debrief framework. There is no public picker. See [Main Attraction report](MAIN-ATTRACTION-REPORT.md) and [nine instructor playthroughs](MAIN-ATTRACTION-QA-PATHS.md).
 
 ## Purpose and cognitive demand
 
@@ -28,6 +33,9 @@ Five ordinal indicators separate affordability for current renters, availability
 | `art/source/`, `game/art/scenes/`, `art/approved-assets.json` | Approved PNG masters, unchanged runtime WebPs and supplied-file checksums |
 | `game/engine.js` | Immutable state transitions, conditions, ordered outcomes, routing, schema validation and event record helper |
 | `game/scenarios/housing-crisis.js` | All economics content, state definitions, branches, endings and instructional metadata |
+| `game/scenarios/registry.js` | Private query routing; missing/unknown IDs fall back to Room to Stay |
+| `game/scenarios/main-attraction.js`, `game/scenarios/main-attraction-scenes.js` | Park economics, metadata, branches, endings and six read-only scene conditions |
+| `art/main-attraction-assets.json` | Checksums of the twelve supplied park source/runtime files |
 | `game/storage.js` | Versioned local save, strict deterministic replay validation, reset |
 | `game/ui.js` | Safe DOM rendering, structured blocks, state summaries, choices and debrief |
 | `game/rpg.js` | Controller, focus/live announcements, local persistence, no-op transition hook |
@@ -35,8 +43,10 @@ Five ordinal indicators separate affordability for current renters, availability
 | `serve.mjs`, `browser.test.mjs` | Loopback preview and Playwright smoke/branch checks |
 | `publication.test.mjs` | Real production build exclusion and protected-file checks |
 | `QA-PATHS.md` | Every major branch/ending combination to play manually |
+| `main-attraction-qa.mjs`, `main-attraction.test.mjs`, `main-attraction.browser.test.mjs` | Exhaustive park coverage, save/asset/routing checks and browser QA |
+| `MAIN-ATTRACTION-QA-PATHS.md`, `MAIN-ATTRACTION-REPORT.md` | Compact park review set and implementation/validation report |
 
-No runtime dependencies, downloaded fonts, analytics, framework or third-party assets. The neighborhood uses five supplied, approved local WebPs, with meaningful alt text and visible HTML scene labels. PNG masters stay outside the runtime root. Economic consequences and indicators remain the source of instructional meaning.
+No runtime dependencies, downloaded fonts, analytics, framework or third-party assets. The neighborhood uses five supplied, approved local WebPs; the park uses six in its own namespace. Both have meaningful alt text and visible HTML scene labels. PNG masters stay outside the runtime root. Economic consequences and indicators remain the source of instructional meaning.
 
 ## Approved artwork and scene selection
 
@@ -101,9 +111,9 @@ Choice availability, the first matching node variant and the first matching outc
 
 Content blocks support `paragraph {text}`, `table {caption, headers, rows}` and `image {src, alt, description}`. Image sources must be relative local paths beginning `./` without parent traversal. Tables have semantic captions and column headers. No arbitrary HTML is inserted. Future graphs can be local images with text equivalents or semantic tables, without changing transitions. The current UI’s condition descriptors and step bars are designed for ordinal 0–8 indicators; keep that scale for new scenarios or extend the renderer deliberately.
 
-To add a scenario, author another data module, validate and enumerate it, then change the controller’s scenario import and page title. No engine changes are required. This prototype loads one scenario at a time; no catalog or public entry point is added. Version changes intentionally invalidate old saves; bump the version for changes to effects, routing, wording stored in history or ending rules.
+To add a scenario, author another data module and scene configuration, validate and enumerate it, then register its stable ID in `game/scenarios/registry.js`. The controller resolves `?scenario=…` once on page load; the shared renderer supplies the title and content. Missing or unknown IDs retain the housing default. No engine changes are required, and no catalog or public entry point is added. Version changes intentionally invalidate old saves; bump the version for changes to effects, routing, wording stored in history or ending rules.
 
-## Branches and endings
+## Room to Stay branches and endings
 
 Six decisions use seven authored nodes. The initial ceiling route goes to a vacancy lottery/new-lease exemption decision. Assistance and emergency grants go to a coverage decision. Both reconverge at maintenance → supply → next budget → two-year review. Ceiling history changes maintenance prose/severity. Budget gates repair grants and construction subsidies. Supply policy and new-lease exemptions change later completions. Every displayed option is consequential in context, even when an indicator holds steady.
 
@@ -111,9 +121,29 @@ Five endings, in priority order: fiscal stress, shortage/quality deterioration, 
 
 Current exhaustive QA: 200 paths, six decisions each, seven nodes, 17 authored choices, five reachable endings, no dead ends, no orphans and no cycles. See [QA-PATHS.md](QA-PATHS.md) for all 52 combinations of initial policy × allocation/support rule × supply policy × ending. The shorter default CLI report covers all 13 opening-policy/ending combinations.
 
+## The Main Attraction
+
+The learner is general manager of Starhaven Park, a dominant regional attraction whose land, rides, reputation and large capital requirements limit entry. Families still have other entertainment options. The learning objective is to evaluate monopoly pricing, capacity, investment and segmentation by tracing firm outcomes and consumer access. Choices apply elasticity, marginal revenue versus marginal cost, congestion, screening, resale restrictions, delayed investment and substitute competition.
+
+| Indicator | Initial (0–8) | Meaning |
+|---|---|---|
+| Park earnings | 5 | Retained operating strength after commitments |
+| Guest access | 4 | Ability to afford admission and use the park |
+| Guest experience | 5 | Waiting, service and visit quality |
+| Park capacity | 4 | Ability to serve guests without congestion |
+| Market power | 6 | Pricing strength from differentiation and limited substitutes |
+
+Six decisions cover admission, queues, segmentation, maintenance, investment and competition. Lower admission opens a busy-midway branch; raise/hold opens the steady-midway branch. Both reconverge at segmentation. Prior pricing changes membership receipts and deferred-upkeep losses; retained earnings gate overhaul, expansion and final premium programming. Major construction spends funds at decision 5 and delivers capacity only at decision 6. Maintenance consequences also carry into the next season.
+
+Exhaustive QA covers **665 legal paths**, exactly six decisions per path, seven nodes and 21 node/choice pairs. Five endings are reachable: Running on Reputation (150), Lines Around the Midway (84), Built for the Next Season (123), A Park Worth the Premium (50), and Still the Main Attraction (258). Their first-match precedence selects the headline; it is not a ranking. There is no answer score or designated correct route.
+
+The six approved 1448 × 1086 park WebPs live under `game/art/scenes/main-attraction/`; masters live under `art/source/main-attraction/`. `art/main-attraction-assets.json` records pre-move byte counts and SHA-256 hashes. Ambiguous shared files were moved into this namespace without renaming or changing image bytes. Selection priority is deferred maintenance → delivered expansion → construction → crowding → premium operation → baseline. Access/capacity thresholds are qualitative crowd-pressure proxies, not attendance forecasts. Maintenance can remain visible despite investment; a premium scene does not imply a preferred ending. Full mapping and limitations are in the [report](MAIN-ATTRACTION-REPORT.md).
+
+The nine [manual routes](MAIN-ATTRACTION-QA-PATHS.md) cover all choices, funding gates in both states, conditional consequences, endings and scenes. Park browser QA runs them at 1280px, 390px and 320px, captures intro/decision/consequence/debrief and all six scenes, and checks keyboard/focus, indicators, exact resume, separate saves, errors and requests.
+
 ## Local saves and privacy
 
-Key: `mq.econ-rpg.housing-crisis`. A save includes scenario ID/version, a random local run ID, local start time, phase, current node, final ending if any, indicator state and the decision history. The random run ID identifies only this local run; it is not a fingerprint or stable user identifier. There is no personal data input.
+Independent keys: `mq.econ-rpg.housing-crisis` and `mq.econ-rpg.main-attraction`; both scenarios currently use version 1. Routing between them preserves both saves. A save includes scenario ID/version, a random local run ID, local start time, phase, current node, final ending if any, indicator state and the decision history. The random run ID identifies only this local run; it is not a fingerprint or stable user identifier. There is no personal data input.
 
 Save on start, after each decision and after each consequence is advanced. The landing page offers resume or outcome review. Reloading a consequence returns to that consequence without applying effects twice. Storage replays every decision and compares the entire reconstructed save before accepting it. A version mismatch or corrupt/illegal save fails safely and offers a fresh start. Storage denial/quota failure leaves the current session playable with a visible warning.
 
@@ -136,15 +166,19 @@ Playwright checks 320px, 390px and 1280px through all 13 opening/ending combinat
 ```powershell
 node --test audit_tools/econ_rpg/engine.test.mjs
 node --test audit_tools/econ_rpg/scenes.test.mjs
+node --test audit_tools/econ_rpg/main-attraction.test.mjs
 node --test audit_tools/econ_rpg/publication.test.mjs
 node audit_tools/econ_rpg/qa.mjs
 node audit_tools/econ_rpg/qa.mjs --all
 node audit_tools/econ_rpg/qa.mjs --write tmp/econ-rpg/all-paths.json
 node audit_tools/econ_rpg/qa.mjs --manual audit_tools/econ_rpg/QA-PATHS.md
+node audit_tools/econ_rpg/main-attraction-qa.mjs
+node audit_tools/econ_rpg/main-attraction-qa.mjs --write
 
 # Follow existing repo convention: set this to your installed Playwright package.
 $env:PLAYWRIGHT_MODULE='C:\path\to\node_modules\playwright'
 node audit_tools/econ_rpg/browser.test.mjs
+node audit_tools/econ_rpg/main-attraction.browser.test.mjs
 ```
 
 Chrome is the default browser channel; `BROWSER_CHANNEL` or `BROWSER_EXECUTABLE` can override it. The browser test creates `tmp/econ-rpg/` and stores screenshots plus a results JSON there. That directory is git-ignored and excluded from publication. Create it before using `--write` if the browser test has not run.
@@ -159,7 +193,7 @@ The whole feature lives under `audit_tools/econ_rpg/`, outside public trees. The
 
 Intentional release requires moving reviewed runtime files into an approved public location, explicitly adding a public entry point and updating the staging test/documentation. There is no date switch. Do not publish the source repository directly.
 
-## Content audit and limitations
+## Room to Stay content audit and limitations
 
 Reviewed every choice, conditional consequence and ending for consistent direction of effects, natural instructional language, cost-bearing groups, plausible alternatives, nonpartisan framing and absence of moralized grading. Consequences are three concise sentences. No real locality, politicians, empirical estimates or claims of an optimal policy appear. Five indicators cannot represent the full market: migration, credit, land costs, differing rent-control designs, funding sources and heterogeneous owner responses are simplified. Chosen assumptions include a binding ceiling covering future projects, persistent scarce vacancies, rising repair costs and a two-year construction horizon.
 

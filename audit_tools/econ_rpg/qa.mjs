@@ -21,7 +21,7 @@ export function enumerate(s = scenario) {
     unreachableNodes: s.nodes.filter(n => !nodes.has(n.id)).map(n => n.id),
     unreachableEndings: s.endings.filter(e => !complete.some(r => r.endingID === e.id)).map(e => e.id) };
 }
-export function summarize(result) {
+export function summarize(result, s = scenario) {
   const combinations = new Map();
   for (const run of result.complete) {
     const key = `${run.history[0].choiceID} / ${run.endingID}`;
@@ -29,7 +29,7 @@ export function summarize(result) {
   }
   return { paths: result.complete.length, nodes: result.nodes.length, choices: result.choices.length,
     decisionCounts: [...new Set(result.complete.map(r => r.history.length))],
-    endings: Object.fromEntries(scenario.endings.map(e => [e.id, result.complete.filter(r => r.endingID === e.id).length])),
+    endings: Object.fromEntries(s.endings.map(e => [e.id, result.complete.filter(r => r.endingID === e.id).length])),
     unreachableNodes: result.unreachableNodes, unreachableEndings: result.unreachableEndings,
     representatives: [...combinations.entries()].map(([combination, run]) => ({ combination,
       choices: run.history.map(h => h.choiceID), labels: run.history.map(h => h.label), state: run.state })) };
