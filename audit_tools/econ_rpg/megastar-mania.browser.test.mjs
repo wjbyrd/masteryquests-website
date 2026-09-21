@@ -9,6 +9,7 @@ import attraction from './game/scenarios/main-attraction.js';
 import housing from './game/scenarios/housing-crisis.js';
 import { availableChoices } from './game/engine.js';
 import { selectScene } from './game/scenes.js';
+import { ticketMarket } from './game/scenarios/megastar-mania-market.js';
 import { storageKey } from './game/storage.js';
 import { coverage } from './megastar-mania-qa.mjs';
 const { chromium } = createRequire(import.meta.url)(process.env.PLAYWRIGHT_MODULE || 'playwright');
@@ -90,8 +91,17 @@ try {
     assert.equal((await saved()).phase, 'consequence');
     assert.ok((await page.locator('#announcement').innerText()).length > 0);
     await panel(); await scene();
+    if (before.nodeID === 'expansion') assert.equal((await page.locator('.neighborhood-scene').getAttribute('data-scene')) === 'expanded-tour', id === 'dates');
   };
-  const next = async () => { await page.getByRole('button', { name: /Continue to next decision|See your outcome/ }).click(); await focus(); };
+  const next = async () => {
+    await page.getByRole('button', { name: /Continue to next decision|See your outcome/ }).click(); await focus();
+    const run = await saved();
+    if (run.phase === 'decision' && run.nodeID === 'illness') {
+      const market = ticketMarket(run).status;
+      assert.equal(await page.locator('.neighborhood-scene').getAttribute('data-scene'), market === 'balanced' ? 'baseline' : market);
+      await scene();
+    }
+  };
 
   // All four scenarios share an origin, but must never share a save key.
   await page.goto(origin); await page.getByRole('button', { name: 'Begin scenario' }).click();
@@ -148,8 +158,8 @@ try {
       assert.equal(await housingBytes(), originalHousing);
     }
     assert.equal([...seen].filter(k => k.startsWith(`${width}-`)).length, 7);
-    assert.equal([...endings].filter(k => k.startsWith(`${width}-`)).length, 6);
-    check(`${manual.length} complete coverage runs at ${width}px: seven scenes, six endings, conditional consequences, panel values, debrief and no overflow`);
+    assert.equal([...endings].filter(k => k.startsWith(`${width}-`)).length, 7);
+    check(`${manual.length} complete coverage runs at ${width}px: seven scenes, seven endings, date-map sequencing, conditional consequences, panel values, debrief and no overflow`);
   }
   const parkEnding = await saved();
   await page.goto(`${origin}/?scenario=housing-crisis`); await page.getByRole('button', { name: /Resume decision/ }).click();

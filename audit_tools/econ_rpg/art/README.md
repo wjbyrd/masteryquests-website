@@ -97,7 +97,7 @@ Scene selection uses price history, current preference strength, remaining capac
 1. **Supply shock:** only the illness consequence. The closed venue has no active performance and no waiting crowd. The next decision explicitly moves to the recovered artist’s remaining performances; canceled capacity is not restored.
 2. **Demand drop:** after the interview when tickets wanted at the retained price fall below remaining capacity. A demand decline that still leaves excess requests uses shortage art instead.
 3. **Demand boom:** after a limited or full crossover, with strong demand and enough ticket purchases to fill the remaining capacity. A crossover with unsold seats keeps the demand-drop scene.
-4. **Expanded tour:** a recent increase in dates or venue size, before illness, with strong enough purchases to support the depicted attendance. When expansion outstrips buyers at the price, empty-seat art takes precedence; the consequence still describes the extra dates/seats.
+4. **Expanded tour:** only the immediate consequence of adding dates, in shortage, balance or surplus. The map illustrates the action of adding tour stops and ticket supply, not realized attendance. Advancing returns to market-state art. Larger venues increase capacity without adding tour stops and never trigger this map.
 5. **Shortage:** ticket requests exceed available seats at the official price. The sold-out sign, packed venue and shut-out fans show why resale pressure can arise.
 6. **Surplus:** available seats exceed ticket purchases before the publicity decline. The performer is on stage; this is weak turnout, not a canceled concert.
 7. **Baseline:** the neutral starting view or purchases in balance with available tickets.

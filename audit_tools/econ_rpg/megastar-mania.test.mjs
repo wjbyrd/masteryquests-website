@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 import scenario from './game/scenarios/megastar-mania.js';
 import housing from './game/scenarios/housing-crisis.js';
 import attraction from './game/scenarios/main-attraction.js';
@@ -30,7 +31,7 @@ test('Megastar schema and all 729 six-decision paths cover every node, choice, c
   assert.equal(Object.keys(scenario.state).length, 5); assert.equal(data.result.complete.length, 729);
   assert.deepEqual(data.result.unreachableNodes, []); assert.deepEqual(data.result.unreachableEndings, []);
   assert.equal(data.result.nodes.length, 7); assert.equal(data.result.choices.length, 21);
-  assert.deepEqual(data.summary.endings, {reputation:162,'too-big':147,crossover:141,'sold-out':202,built:47,niche:30});
+  assert.deepEqual(data.summary.endings, {reputation:162,'too-big':147,crossover:141,'sold-out':202,built:47,intimate:12,niche:18});
   assert.deepEqual([...data.summary.scenes].sort(), ['baseline','demand-boom','demand-drop','expanded-tour','shortage','supply-shock','surplus']);
   const review = new Set(data.selected.flatMap(row => row.features));
   for (const row of rows) {
@@ -78,19 +79,25 @@ test('Every conditional consequence matches exactly one outcome; receipts follow
   assert.deepEqual([...statusesAfterDrop].sort(), ['balanced','shortage','surplus']);
 });
 
-test('Scene priority respects actual attendance, recent decisions and a closed cancellation event without altering state', () => {
+test('Scene sequencing shows added dates immediately in every market, then returns to deterministic market art', () => {
+  const expansionMarkets = new Set();
   for (const row of rows) for (const run of row.phases) {
     const snapshot = JSON.stringify(run), scene = selectScene(scenario.sceneSet, run), market = expectedMarket(run);
     assert.equal(JSON.stringify(run), snapshot);
+    assert.deepEqual(selectScene(scenario.sceneSet, JSON.parse(snapshot)), scene);
     if (scene.id === 'supply-shock') { assert.equal(run.phase, 'consequence'); assert.equal(run.history.at(-1).nodeID, 'illness'); }
     if (run.phase === 'consequence' && run.history.at(-1).nodeID === 'illness') assert.equal(scene.id, 'supply-shock');
     if (run.phase === 'decision' && run.nodeID === 'publicity') assert.notEqual(scene.id, 'supply-shock');
     if (['surplus','demand-drop'].includes(scene.id)) assert.equal(market.status, 'surplus');
     if (scene.id === 'shortage') assert.equal(market.status, 'shortage');
     if (scene.id === 'demand-boom') { assert.ok(market.wanted >= market.supply); assert.ok(run.state.demand >= 6); assert.ok(['experiment','full'].includes(run.history.at(-1).choiceID)); }
-    if (scene.id === 'expanded-tour') { assert.ok(market.wanted >= market.supply); assert.equal(run.history.length, 3); assert.ok(['dates','venues'].includes(run.history[2].choiceID)); }
+    const addedDates = run.phase === 'consequence' && run.history.at(-1)?.nodeID === 'expansion' && run.history.at(-1).choiceID === 'dates';
+    assert.equal(scene.id === 'expanded-tour', addedDates);
+    if (addedDates) expansionMarkets.add(market.status);
+    if (run.phase === 'decision' && run.nodeID === 'illness') assert.equal(scene.id, market.status === 'balanced' ? 'baseline' : market.status);
     if (scene.id === 'baseline') assert.equal(market.status, 'balanced');
   }
+  assert.deepEqual([...expansionMarkets].sort(), ['balanced','shortage','surplus']);
 });
 
 test('Ending distinctions fit the market and no route maximizes every indicator', () => {
@@ -103,8 +110,28 @@ test('Ending distinctions fit the market and no route maximizes every indicator'
     if (run.endingID === 'sold-out') assert.equal(market.status, 'shortage');
     if (run.endingID === 'reputation') assert.ok(run.state.demand <= 4);
     if (run.endingID === 'crossover') { assert.equal(run.history[5].choiceID, 'full'); assert.ok(run.state.demand >= 7); }
-    if (run.endingID === 'niche') { assert.equal(run.history[2].choiceID, 'limited'); assert.notEqual(market.status, 'shortage'); }
+    if (run.endingID === 'intimate') { assert.equal(run.history[2].choiceID, 'limited'); assert.ok(run.state.demand >= 6); assert.notEqual(market.status, 'shortage'); }
+    if (run.endingID === 'niche') { assert.equal(run.history[2].choiceID, 'limited'); assert.ok(run.state.demand < 6); assert.notEqual(market.status, 'shortage'); }
   }
+});
+
+test('Compared with cc9dd579, only twelve final ending IDs change; all choices, consequences, state and other endings stay identical', async () => {
+  const committed = execFileSync('git',['show','cc9dd5791c79655157cc0ea3f47719601244578b:audit_tools/econ_rpg/game/scenarios/megastar-mania.js'],{encoding:'utf8'});
+  const source = committed.replace(/from '(\.\/[^']+)'/g, (_, relative) => `from '${new URL(relative, pathToFileURL(`${process.cwd()}/audit_tools/econ_rpg/game/scenarios/megastar-mania.js`)).href}'`);
+  const previous = (await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`)).default;
+  assert.deepEqual({...scenario,endings:undefined}, {...previous,endings:undefined});
+  const oldRuns = enumerate(previous).complete, storage = memory();
+  let changed = 0;
+  for (const [i, run] of data.result.complete.entries()) {
+    const old = oldRuns[i];
+    assert.deepEqual({...run,endingID:null}, {...old,endingID:null});
+    saveRun(storage,scenario,old);
+    if (run.endingID !== old.endingID) {
+      changed++; assert.equal(old.endingID,'niche'); assert.equal(run.endingID,'intimate');
+      assert.equal(loadRun(storage,scenario).reason,'unavailable');
+    } else assert.deepEqual(loadRun(storage,scenario).run,old);
+  }
+  assert.equal(changed,12);
 });
 
 test('All 9,477 phases resume exactly, with four isolated save keys and safe rejection of corrupt saves', () => {

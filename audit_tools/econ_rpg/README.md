@@ -54,7 +54,7 @@ Five ordinal indicators separate affordability for current renters, availability
 | `game/scenarios/megastar-mania.js`, `megastar-mania-scenes.js`, `megastar-mania-market.js` | Tour content, seven scene conditions and scenario authoring helpers for price-sensitive market comparisons |
 | `art/megastar-mania-assets.json` | Original paths, dimensions and hashes of fourteen supplied tour images |
 | `megastar-mania-qa.mjs`, `megastar-mania.test.mjs`, `megastar-mania.browser.test.mjs` | Exhaustive tour economics, persistence, scene coverage and browser checks |
-| `MEGASTAR-MANIA-QA-PATHS.md`, `MEGASTAR-MANIA-REPORT.md` | Sixteen review routes, model limitations and validation report |
+| `MEGASTAR-MANIA-QA-PATHS.md`, `MEGASTAR-MANIA-REPORT.md` | Seventeen review routes, model limitations and validation report |
 
 No runtime dependencies, downloaded fonts, analytics, framework or third-party assets. The neighborhood uses five supplied, approved local WebPs; the park uses six in its own namespace. Both have meaningful alt text and visible HTML scene labels. PNG masters stay outside the runtime root. Economic consequences and indicators remain the source of instructional meaning.
 
@@ -241,7 +241,7 @@ Demand records preference strength, not attendance. The earlier price choices pe
 
 Revenue is an ordinal indicator of financial strength from ticket receipts after refunds, not profit or a currency estimate. At fixed prices, later demand/capacity changes affect receipts only when actual ticket sales change; more willing buyers cannot raise receipts if all available seats already sell. Price-setting outcomes are authored illustrations, not elasticity estimates. Logistics and the artist’s recovery have tradeoffs beyond receipts. Every path remains illustrative rather than predictive.
 
-The final outcomes are Reputation on the Ropes, Too Big, Too Fast, Crossover Superstar, Sold Out Everywhere, Built for the Crowd and A Smaller Circuit. The last title replaces the suggested “Niche but Loyal” because a compact route can retain a core audience while goodwill still needs repair. Outcomes are not ranked. All 729 legal paths have six decisions. The generated 16-route guide covers every reachable conditional consequence, all choices, seven scenes and six endings.
+The final outcomes are Reputation on the Ropes, Too Big, Too Fast, Crossover Superstar, Sold Out Everywhere, Built for the Crowd, Intimate by Choice and A Smaller Circuit. Intimate by Choice recognizes a deliberately limited tour with strong preference demand and no shortage at the posted price; A Smaller Circuit retains more modest-demand paths. Outcomes are not ranked. All 729 legal paths have six decisions. The generated 17-route guide covers every reachable conditional consequence, all choices, seven scenes and seven endings.
 
 ```powershell
 node audit_tools/econ_rpg/megastar-mania-qa.mjs --write
