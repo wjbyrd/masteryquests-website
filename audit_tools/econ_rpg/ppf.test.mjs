@@ -138,9 +138,9 @@ test('PPF art retains supplied bytes, uses six isolated WebPs and keeps source m
   for(const v of scenario.sceneSet.variants) {assert.equal(v.src,`./art/scenes/the-economys-edge/${v.id}.webp`);assert.ok(v.alt.length>100);}
 });
 
-test('both earlier scenarios retain their full frozen behavior and shared runtime implementations are untouched',()=>{
+test('both earlier scenarios retain their full frozen behavior and shared engine/storage are untouched',()=>{
   const hash=s=>createHash('sha256').update(JSON.stringify(enumerate(s).complete)).digest('hex');
   assert.equal(hash(housing),'f5eb10bba272b655a3253ba355b801b0aa7e445147ee4a0bed5ad4ec77cb1d6e');
   assert.equal(hash(attraction),'e9bb3c77ba9f57acc27b1d49a442e911526a761a70fe1bc51b072e40122561ad');
-  execFileSync('git',['diff','--exit-code','HEAD','--',...['engine.js','storage.js','ui.js','rpg.js','rpg.css','scenes.js','scenarios/housing-crisis.js','scenarios/housing-scenes.js','scenarios/main-attraction.js','scenarios/main-attraction-scenes.js'].map(f=>`audit_tools/econ_rpg/game/${f}`)],{stdio:'pipe'});
+  execFileSync('git',['diff','--exit-code','HEAD','--',...['engine.js','storage.js','scenes.js','scenarios/housing-crisis.js','scenarios/housing-scenes.js','scenarios/main-attraction.js','scenarios/main-attraction-scenes.js'].map(f=>`audit_tools/econ_rpg/game/${f}`)],{stdio:'pipe'});
 });

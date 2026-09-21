@@ -2,11 +2,27 @@
 
 Completed September 20, 2026; targeted gameplay refinements reviewed against commit `cc9dd5791c79655157cc0ea3f47719601244578b` on September 21, 2026. **Ready for instructor QA.** Development only; nothing deployed, published or pushed.
 
+## September 21 indicator presentation update
+
+Reviewed against `39c0b2a16cdc3641f98cb252b0bf776f7f990b5d`, with the user's already-updated `expanded-tour.webp` present as a local change. This update changes presentation only. All 729 complete path histories, numerical state transitions and ending IDs retain their pre-update checksum: `159c41396c164eb675935898b4e944fbc340c35dc6e07e1ce0f5329974d70532`. The seven ending counts below are unchanged, and all 9,477 current run phases resume exactly.
+
+**Labels and display:** “Ticket Demand” is now **Fan Interest**. Fan Interest and Ticket Supply use qualitative labels instead of numeric totals or matching eight-step bars. For example, interest can be Moderate or Strong and capacity can be Limited or Broad. Tour Revenue, Fan Goodwill and Career Momentum retain their existing numerical display. The underlying state IDs, 0–8 ranges and market mechanics are unchanged.
+
+**Ticket Market:** a separate three-position gauge sits at the top of the conditions panel. Shortage is on the left, balance in the center and surplus on the right. A pointer, highlighted segment and short description identify the derived result at the posted price. The gauge communicates a category, not the size of a ticket gap. Before the first price decision it has no pointer and asks the player to choose a price. Selection uses the existing `marketIs` conditions, verified against `ticketMarket`; it never compares raw Fan Interest with Ticket Supply.
+
+**Help and consequences:** the collapsed help now separately explains underlying enthusiasm, available capacity and ticket requests at the posted price. A short visible note says that fan interest is not a ticket count. For those two states, panel deltas and consequence/debrief change badges say stronger/weaker interest or more/less capacity instead of numeric steps. Screen-reader announcements use the qualitative labels and include the derived market condition. The gauge has an accessible meter role and descriptive value text, and does not rely on color alone. No decision or economic-consequence prose was rewritten.
+
+**Shared UI scope:** `game/ui.js` adds opt-in qualitative displays and market-gauge rendering; `game/rpg.css` styles only the new classes; `game/rpg.js` uses the shared announcement formatter. Megastar alone supplies the optional display metadata. The other three RPGs retain their labels, numerical panels, announcements and complete path histories. Engine, storage, scene rules and price-sensitive market calculations are unchanged. Historical test assertions that required byte-identical shared UI files now protect engine/storage/scenario data instead, backed by all three earlier browser suites.
+
+**Updated image:** the existing runtime path remains `game/art/scenes/megastar-mania/expanded-tour.webp`. Its user-supplied updated file is 647,912 bytes at 1448 × 1086, SHA-256 `5bb44ce5816b419c2189b5d6a141050d34dfbe26246b2ebca9923ab2d1b8243b`. The file was read and verified, not edited, regenerated or replaced. The asset manifest now records this checksum, retains the previous checksum for provenance and identifies the unchanged PNG master as the earlier version. Browser QA verifies the actual served WebP against the new checksum. It continues to appear on every immediate added-date consequence; larger venues do not trigger it.
+
+**Review:** compare premium → aggressive → dates, moderate → keep → dates, and introductory → keep → dates. All three reach internal interest 7 and capacity 7, but the gauge shows surplus, balance and shortage respectively because their posted prices differ. Both visible state labels remain the same across this comparison, demonstrating why they cannot substitute for the market result. See the updated [QA guide](MEGASTAR-MANIA-QA-PATHS.md) for the full routes and indicator checks.
+
 Play at <http://127.0.0.1:4179/?scenario=megastar-mania>. The title is exactly **Megastar Mania**, without a subtitle. Start with routes 1–8 in [MEGASTAR-MANIA-QA-PATHS.md](MEGASTAR-MANIA-QA-PATHS.md); together they show all seven scenes and all seven endings. Seventeen routes cover every reachable conditional consequence and choice, including added dates under shortage, balance and surplus.
 
-## September 21 refinement scope
+## Earlier September 21 gameplay refinement scope
 
-Only two gameplay rules changed from the reviewed commit: added-date consequence art and classification of strong-demand limited-tour endings. The map's alt description now identifies the action being illustrated rather than asserting strong ticket sales. All decision prose, choices, numerical effects, routing, market derivation, existing ending prose, debrief, artwork and shared runtime remain unchanged. Supporting tests and documentation reflect those two changes.
+In the earlier refinement against `cc9dd579`, only two gameplay rules changed: added-date consequence art and classification of strong-demand limited-tour endings. The map's alt description identified the action being illustrated rather than asserting strong ticket sales. At that stage, all decision prose, choices, numerical effects, routing, market derivation, existing ending prose, debrief, artwork and shared runtime remained unchanged. The later presentation-only update is recorded above.
 
 `expansion.dates` now selects `expanded-tour` on its immediate consequence in all three derived market states. Advancing returns to the current market image. `expansion.venues` never selects the tour-stop map.
 
@@ -16,7 +32,7 @@ Version 1 and save structure remain unchanged. Decision/consequence histories ar
 
 ## Architecture and changed files
 
-The fourth scenario uses the existing shared engine, controller, UI, CSS, scene renderer, storage and debrief. Those implementations are unchanged. The private registry adds `megastar-mania`, version 1, through the existing `?scenario=` query parameter. Missing, unknown and inherited-object query names still resolve to Room to Stay. No public scenario picker was added.
+The fourth scenario uses the existing shared engine, controller, UI, CSS, scene renderer, storage and debrief. Engine, storage and scene rendering are unchanged; the shared presentation layer now supports Megastar's opt-in indicator display described above. The private registry adds `megastar-mania`, version 1, through the existing `?scenario=` query parameter. Missing, unknown and inherited-object query names still resolve to Room to Stay. No public scenario picker was added.
 
 Added under `audit_tools/econ_rpg/`:
 
@@ -24,7 +40,7 @@ Added under `audit_tools/econ_rpg/`:
 - `game/scenarios/megastar-mania-scenes.js`: seven scenario-owned image conditions, captions and alt descriptions.
 - `game/scenarios/megastar-mania-market.js`: scenario authoring helpers that compile price/history/state comparisons into ordinary shared-engine conditions. No separate transition engine or additional saved indicator.
 - `megastar-mania-qa.mjs`: exhaustive enumeration, representative routes and manual-guide generation.
-- `megastar-mania.test.mjs`: nine suites for structure, economic invariants, scenes, endings, persistence, assets, committed-history comparison and earlier scenario behavior.
+- `megastar-mania.test.mjs`: ten suites for structure, economic invariants, scenes, endings, persistence, assets, committed-history comparison, deterministic indicators and earlier scenario behavior.
 - `megastar-mania.browser.test.mjs`: browser coverage using the existing preview and Playwright pattern.
 - `art/megastar-mania-assets.json`: fourteen pre-integration hashes, sizes, dimensions and original locations.
 - `art/source/megastar-mania/`: seven approved PNG masters moved from the runtime source folder.
@@ -38,6 +54,8 @@ Modified existing files:
 - `publication.test.mjs`: scans for Megastar content and the fourteen new art hashes as well as the previous content/assets.
 - `README.md`: fourth preview URL, architecture, model assumptions and QA commands.
 - `art/README.md`: Art Bible guidance, approved-name mapping and conditional scene priorities.
+
+The latest presentation update additionally modifies the shared `game/ui.js`, `game/rpg.css` and announcement delegation in `game/rpg.js`; the optional state/market display metadata in `game/scenarios/megastar-mania.js`; the updated runtime asset's manifest record; the QA generator/browser checks; the shared-file assertions in `main-attraction.test.mjs` and `ppf.test.mjs`; and the related private documentation. The runtime image modification itself was supplied by the user before this task.
 
 No public or production source files changed. The publication test regenerated ignored local `dist/` solely to verify the existing exclusion boundary. Browser screenshots and logs are ignored evidence under `tmp/econ-rpg/`; they are not public output.
 
@@ -54,7 +72,7 @@ The player manages fictional indie-pop singer **Jules Arlen**. Six major decisio
 
 Seven unique nodes and 21 node/choice pairs generate **729 legal paths**. Every path has exactly six decisions. All nodes and endings are reachable, with no cycles or dead ends.
 
-The five compact 0–8 indicators are **Ticket Demand, Ticket Supply, Tour Revenue, Fan Goodwill and Career Momentum**. Definitions remain in the shared collapsed help panel. Values are ordinal illustrations, not empirical measurements or a common welfare score.
+The five underlying 0–8 states are displayed as **Fan Interest, Ticket Supply, Tour Revenue, Fan Goodwill and Career Momentum**. Fan Interest and Ticket Supply now show qualitative labels; the other three retain their numerical steps. **Ticket Market** is a derived display, not a sixth saved state. Definitions remain in the shared collapsed help panel. Values are ordinal illustrations, not empirical measurements or a common welfare score.
 
 Demand means preference strength. Price choices remain in history, and the scenario's authored comparison uses both price and preference strength to determine tickets wanted relative to capacity. The demand indicator itself does not change merely because a ticket price changes. More dates and larger rooms increase supply without increasing demand. Illness removes current supply without reducing demand. Publicity and crossover change demand without changing available seats.
 
@@ -84,7 +102,7 @@ Masters: `audit_tools/econ_rpg/art/source/megastar-mania/megastar-{scene}.png`.
 
 Runtime: `audit_tools/econ_rpg/game/art/scenes/megastar-mania/{scene}.webp`.
 
-All fourteen files remain **byte-for-byte identical to the supplied assets**, at 1448 × 1086. The supplied PNGs were already canonically named in `game/art/sources/`; they moved outside the preview root. Runtime WebPs already existed in the required namespace. No new art, conversion, recompression, crop, resize, overlay or pixel edit was performed. The Art Bible records the mapping from the seven descriptive original names in the request to these canonical names.
+All fourteen files remain **byte-for-byte identical to their current supplied versions**, at 1448 × 1086, including the user's updated expanded-tour runtime WebP described above. Its PNG master remains the earlier supplied image. At initial integration, the canonically named PNGs moved from `game/art/sources/` outside the preview root; runtime WebPs already existed in the required namespace. No new art, conversion, recompression, crop, resize, overlay or pixel edit was performed by Codex. The Art Bible records the mapping from the seven descriptive original names in the request to these canonical names.
 
 | Scene | Selection and meaning |
 |---|---|
@@ -102,7 +120,7 @@ The cancellation image represents removed performances. The next decision explic
 
 ## Verification results
 
-**Automated tests: 38 passed, zero failed on September 21.** This includes nine Megastar tests and all existing engine, scene, park, PPF and publication tests.
+**Automated tests: 39 passed, zero failed on September 21.** This includes ten Megastar tests and all existing engine, scene, park, PPF and publication tests. All 729 legal six-decision paths were rerun successfully. The new gauge is checked against the independent price-sensitive market oracle across all 9,477 phases, with repeatable qualitative labels, accessible announcements and no state mutation. Three runs with identical interest/capacity state but different prices explicitly produce three different market readings.
 
 The exhaustive checks validate unique IDs, targets, all reachable nodes/choices/outcomes, bounds, six decisions on all 729 routes, every ending and every scene. All 9,477 current decision/consequence/ending phases replay exactly. Repeated selection from cloned runs is deterministic and leaves state unchanged. Every added-date consequence shows the map, covering shortage, balance and surplus; no venue-expansion or later screen does. Advancing from expansion selects the independently verified market image. Four save keys remain isolated. Restart/replay identity, corrupted state and version mismatches are checked. Economic assertions cover price versus demand, supply-only changes, publicity-only changes, revenue under binding capacity, resale-only shortages, recent cancellation scenes and market-consistent endings. Comparison with the requested commit proves all 729 histories/state transitions unchanged and exactly twelve final ending IDs reclassified.
 
@@ -114,13 +132,13 @@ Earlier full serialized path histories retain their frozen SHA-256 checksums:
 | The Main Attraction | 665 | `e9bb3c77ba9f57acc27b1d49a442e911526a761a70fe1bc51b072e40122561ad` |
 | The Economy’s Edge | 361 | `3fd6ef7143484f891e64470ef384a8dde4174408426cd39f692fa1f45b550b3a` |
 
-**Browser checks: headless Chrome.** The revised Megastar coverage set contains 17 routes at each of 1280px, 390px and 320px: **51 full playthroughs**, all seven scenes and all seven endings at each width, including explicit date-map consequence and subsequent market-image assertions. The earlier September 20 browser regression run covered 41 housing runs, 27 park runs and 33 PPF runs; those scenarios and the shared runtime remain unchanged, with their automated regressions and complete-path hashes verified again on September 21.
+**Browser checks: headless Chrome.** The revised Megastar coverage set contains 17 routes at each of 1280px, 390px and 320px: **51 full playthroughs**, all seven scenes and all seven endings at each width, including date-map sequencing, qualitative state labels, all three gauge positions and the unpriced initial display. Gauge pointer positions, accessible value text and exact served updated-image bytes are checked. All three earlier browser suites are rerun for the shared presentation change: 41 housing runs, 27 park runs and 33 PPF runs, for **152 complete playthroughs** across the four scenarios. Their original numerical indicator assertions remain intact.
 
-Checks include exact UI choices and path history, five indicators and signed changes, collapsed help, six path entries, three counterfactuals, image decode and full 4:3 framing, descriptive alt text, captions, no horizontal overflow, and buttons at least 44px high. Keyboard Enter/Space/Tab activation, visible focus, focus transfer, live announcements and Escape cancellation passed. Reload at consequences/decisions/endings, ending review, replay, blocked storage, version mismatch, and the three older scenarios' untouched saves passed. Desktop and narrow first-decision screenshots and the mobile debrief were visually reviewed. Real-device and screen-reader review remain appropriate instructor QA; this is not a claim of a full assistive-technology audit.
+Checks include exact UI choices and path history, five underlying indicators plus the derived gauge, concise changes, six collapsed help definitions, six path entries, three counterfactuals, image decode and full 4:3 framing, descriptive alt text, captions, no horizontal overflow, and buttons at least 44px high. Keyboard Enter/Space/Tab activation, visible focus, focus transfer, live announcements and Escape cancellation are checked. Reload at consequences/decisions/endings, ending review, replay, blocked storage, version mismatch, and the three older scenarios' untouched saves are checked. Desktop and narrow indicator screenshots supplement the first-decision and debrief captures. Real-device and screen-reader review remain appropriate instructor QA; this is not a claim of a full assistive-technology audit.
 
 No external requests, CSP violations, console errors or page errors were recorded by any browser suite. All seven Megastar WebPs return the correct local image MIME type. Source-master URLs return 404. Art-only captures accompany captioned scenes at all three widths.
 
-Current refinement evidence: `tmp/econ-rpg/megastar-mania/browser-results.json`, screenshots in that folder, `tmp/econ-rpg/megastar-refinements-units.log` and `tmp/econ-rpg/megastar-refinements-browser.log`. Original earlier-scenario browser evidence remains in the three `megastar-*-regression.log` files.
+Current presentation evidence: `tmp/econ-rpg/megastar-mania/browser-results.json`, `indicators-{width}-{condition}.png` and other screenshots in that folder, `tmp/econ-rpg/megastar-indicators-units.log`, `megastar-indicators-browser.log`, and the three `megastar-indicators-{housing,park,ppf}.log` files. Earlier gameplay refinement evidence remains in the `megastar-refinements-*.log` files.
 
 **Publication guard: passed.** The existing explicit `audit_tools/` deny rule and `.assetsignore` remain unchanged. The real local build contains no RPG content, no private directory and none of the 48 approved source/runtime image hashes under any filename. Protected public navigation, Games, Composer, telemetry, Cloudflare and publication tooling show no changes. No deployment or push command ran.
 
@@ -134,9 +152,9 @@ For the scene correction, compare row 1 (added dates create surplus), row 4 (bal
 
 | # | Question | Answer |
 |---|---|---|
-| 1 | Does Megastar Mania run on the shared RPG engine? | **Yes.** No engine duplication or runtime modification. |
+| 1 | Does Megastar Mania run on the shared RPG engine? | **Yes.** No engine duplication or logic change; shared presentation supports its optional gauge. |
 | 2 | Did Room to Stay remain unchanged? | **Yes.** Content, runtime behavior, frozen paths and regression suite preserved. |
-| 3 | Did The Main Attraction remain unchanged? | **Yes.** Scenario preserved; only its registry-count test now expects four. |
+| 3 | Did The Main Attraction remain unchanged? | **Yes.** Scenario, numerical panel and complete paths preserved; test assertions allow the optional shared UI extension. |
 | 4 | Did The Economy’s Edge remain unchanged? | **Yes.** Content, frozen paths and regression suite preserved. |
 | 5 | Does it teach supply and demand without gameplay graphs or formulas? | **Yes.** Decisions and consequences precede the conceptual debrief. |
 | 6 | Can players experience surplus and shortage? | **Yes.** Both have reachable consequences and appropriate scenes. |

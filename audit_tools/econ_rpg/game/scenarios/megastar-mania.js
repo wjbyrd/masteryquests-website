@@ -28,9 +28,14 @@ export default {
   consequenceTitle: 'Tour consequences', endingEyebrow: 'Your outcome · After the tour', duration: 'About 10–15 minutes', decisions: 6, sceneSet,
   introduction: [p('Jules Arlen is a fictional indie-pop singer with a modest following and a waterfront show to book. You manage the tour: set ticket prices, decide how far to expand, and respond when illness or public attention changes the market.'), p('Each stage follows the next booking window. Watch who can get tickets, how many seats remain available and what supports the artist’s future. The venue is a representative view of the tour; no single indicator is a score to maximize.')],
   metadata: { concept: 'Supply and demand in concert ticket markets', learningObjective: 'Distinguish price-driven changes in quantity demanded from shifts in demand and available ticket supply.', mechanism: 'Posted prices, capacity, shortages, surplus and secondary markets', misconception: 'A sellout proves the price was ideal, or more dates mean higher demand.' },
+  marketIndicator: { label: 'Ticket Market', short: 'Compares ticket requests at the posted price with available seats. The pointer shows the result, not a number of tickets.', variants: [
+    { id: 'shortage', label: 'Shortage', position: -1, text: 'More ticket requests than available seats.', when: marketIs('shortage') },
+    { id: 'balanced', label: 'Balanced', position: 0, text: 'Ticket requests match available seats.', when: marketIs('balanced') },
+    { id: 'surplus', label: 'Surplus', position: 1, text: 'More available seats than ticket requests.', when: marketIs('surplus') }
+  ] },
   state: {
-    demand: { label: 'Ticket Demand', short: 'How strongly consumers want tickets, distinct from purchases at a particular price', min: 0, max: 8, initial: 4 },
-    supply: { label: 'Ticket Supply', short: 'Seats and performances available in the current tour window', min: 0, max: 8, initial: 4 },
+    demand: { label: 'Fan Interest', short: 'Underlying enthusiasm for Jules, not the number of tickets wanted at a particular price.', min: 0, max: 8, initial: 4, display: { values: ['Very low','Very low','Low','Low','Moderate','Moderate','Strong','Strong','Very strong'], up: 'Stronger interest', down: 'Weaker interest' } },
+    supply: { label: 'Ticket Supply', short: 'Available seats and performances. Compare ticket requests with capacity using the Ticket Market gauge, not the Fan Interest label.', min: 0, max: 8, initial: 4, display: { values: ['None','Very limited','Very limited','Limited','Moderate','Broad','Broad','Extensive','Extensive'], up: 'More capacity', down: 'Less capacity' } },
     revenue: { label: 'Tour Revenue', short: 'Financial strength from ticket receipts after refunds, not a profit estimate', min: 0, max: 8, initial: 4 },
     goodwill: { label: 'Fan Goodwill', short: 'How fans view the artist and touring experience', min: 0, max: 8, initial: 5 },
     momentum: { label: 'Career Momentum', short: 'Broader visibility, audience reach and prospects for future work', min: 0, max: 8, initial: 3 }

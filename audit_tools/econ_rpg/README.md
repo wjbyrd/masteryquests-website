@@ -235,7 +235,7 @@ Reviewed every choice, conditional consequence and ending for consistent directi
 
 ## Megastar Mania model and QA
 
-`megastar-mania`, version 1, has six decisions over seven reachable nodes: opening price; breakout pricing (with an alternate opening after a surplus); supply expansion; illness; interview response; crossover. Its five 0–8 indicators are Ticket Demand, Ticket Supply, Tour Revenue, Fan Goodwill and Career Momentum. The title has no subtitle.
+`megastar-mania`, version 1, has six decisions over seven reachable nodes: opening price; breakout pricing (with an alternate opening after a surplus); supply expansion; illness; interview response; crossover. Its five underlying 0–8 states are displayed as Fan Interest, Ticket Supply, Tour Revenue, Fan Goodwill and Career Momentum. Fan Interest and Ticket Supply use qualitative labels, without comparable numeric totals; a separate Ticket Market gauge shows the price-sensitive result. It is a derived display, not a sixth saved state. The title has no subtitle.
 
 Demand records preference strength, not attendance. The earlier price choices persist in history. A small scenario authoring helper combines that price history with demand and available capacity to build ordinary engine conditions for surplus, balance and shortage. This introduces neither a sixth saved indicator nor a separate transition engine. It keeps price changes distinct from demand shifts, and capacity changes distinct from audience growth. No model formulas, graphs, definitions quiz or answer grades appear during play.
 

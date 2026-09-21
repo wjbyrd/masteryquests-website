@@ -13,6 +13,7 @@ import { loadRun, saveRun, clearRun, storageKey } from './game/storage.js';
 import { selectScene } from './game/scenes.js';
 import { scenarios, scenarioFor } from './game/scenarios/registry.js';
 import { ticketMarket } from './game/scenarios/megastar-mania-market.js';
+import { marketReading, indicatorValue, announceChanges } from './game/ui.js';
 import { enumerate } from './qa.mjs';
 import { coverage, trace } from './megastar-mania-qa.mjs';
 const data = coverage();
@@ -119,7 +120,8 @@ test('Compared with cc9dd579, only twelve final ending IDs change; all choices, 
   const committed = execFileSync('git',['show','cc9dd5791c79655157cc0ea3f47719601244578b:audit_tools/econ_rpg/game/scenarios/megastar-mania.js'],{encoding:'utf8'});
   const source = committed.replace(/from '(\.\/[^']+)'/g, (_, relative) => `from '${new URL(relative, pathToFileURL(`${process.cwd()}/audit_tools/econ_rpg/game/scenarios/megastar-mania.js`)).href}'`);
   const previous = (await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`)).default;
-  assert.deepEqual({...scenario,endings:undefined}, {...previous,endings:undefined});
+  const mechanics = s => ({...s,endings:undefined,marketIndicator:undefined,state:Object.fromEntries(Object.entries(s.state).map(([id,spec]) => [id,{...spec,label:undefined,short:undefined,display:undefined}]))});
+  assert.deepEqual(mechanics(scenario), mechanics(previous));
   const oldRuns = enumerate(previous).complete, storage = memory();
   let changed = 0;
   for (const [i, run] of data.result.complete.entries()) {
@@ -159,10 +161,44 @@ test('All fourteen approved art files retain supplied bytes and dimensions in th
   for (const scene of scenario.sceneSet.variants) { assert.equal(scene.src,`./art/scenes/megastar-mania/${scene.id}.webp`); assert.ok(scene.alt.length > 100); }
 });
 
-test('Earlier scenarios preserve their entire frozen path behavior and the shared runtime stays unchanged', () => {
+test('All four scenarios preserve their entire frozen path behavior; engine, storage and earlier scenario data stay unchanged', () => {
   const hash = s => createHash('sha256').update(JSON.stringify(enumerate(s).complete)).digest('hex');
   assert.equal(hash(housing),'f5eb10bba272b655a3253ba355b801b0aa7e445147ee4a0bed5ad4ec77cb1d6e');
   assert.equal(hash(attraction),'e9bb3c77ba9f57acc27b1d49a442e911526a761a70fe1bc51b072e40122561ad');
   assert.equal(hash(ppf),'3fd6ef7143484f891e64470ef384a8dde4174408426cd39f692fa1f45b550b3a');
-  execFileSync('git',['diff','--exit-code','HEAD','--',...['engine.js','storage.js','ui.js','rpg.js','rpg.css','scenes.js','scenarios/housing-crisis.js','scenarios/housing-scenes.js','scenarios/main-attraction.js','scenarios/main-attraction-scenes.js','scenarios/ppf.js','scenarios/ppf-scenes.js'].map(f => `audit_tools/econ_rpg/game/${f}`)],{stdio:'pipe'});
+  assert.equal(hash(scenario),'159c41396c164eb675935898b4e944fbc340c35dc6e07e1ce0f5329974d70532');
+  execFileSync('git',['diff','--exit-code','HEAD','--',...['engine.js','storage.js','scenes.js','scenarios/housing-crisis.js','scenarios/housing-scenes.js','scenarios/main-attraction.js','scenarios/main-attraction-scenes.js','scenarios/ppf.js','scenarios/ppf-scenes.js'].map(f => `audit_tools/econ_rpg/game/${f}`)],{stdio:'pipe'});
+});
+
+test('The qualitative panel and derived gauge are deterministic across all phases without suggesting raw interest minus capacity', () => {
+  assert.equal(scenario.state.demand.label,'Fan Interest');
+  assert.equal(marketReading(scenario,createRun(scenario)),null);
+  for (const row of rows) for (const run of row.phases) {
+    const snapshot = JSON.stringify(run), reading = marketReading(scenario,run);
+    assert.deepEqual(marketReading(scenario,JSON.parse(snapshot)),reading);
+    if (run.history.length) {
+      assert.equal(reading.id,expectedMarket(run).status);
+      assert.equal(reading.position,{shortage:-1,balanced:0,surplus:1}[reading.id]);
+      assert.equal(scenario.marketIndicator.variants.filter(v => matches(v.when,run)).length,1);
+      const announcement = announceChanges(scenario,run);
+      assert.doesNotMatch(announcement,/\.\./);
+      assert.ok(announcement.includes(`Ticket Market: ${reading.label} at the posted price`));
+      assert.doesNotMatch(announcement, /(?:Fan Interest|Ticket Supply) (?:increased|decreased) to \d/);
+    }
+    for (const id of ['demand','supply']) {
+      assert.ok(indicatorValue(scenario.state[id],run.state[id]).length);
+      assert.doesNotMatch(indicatorValue(scenario.state[id],run.state[id]),/\d/);
+    }
+    assert.equal(JSON.stringify(run),snapshot);
+  }
+  const identicalRaw = [['premium','aggressive'],['moderate','keep'],['introductory','keep']].map(prices => trace([...prices,'dates']).run);
+  for (const run of identicalRaw) assert.deepEqual([run.state.demand,run.state.supply],[7,7]);
+  assert.deepEqual(identicalRaw.map(run => marketReading(scenario,run).id),['surplus','balanced','shortage']);
+  for (const s of [housing,attraction,ppf]) {
+    assert.equal(s.marketIndicator,undefined);
+    assert.ok(Object.values(s.state).every(spec => spec.display === undefined));
+    const run = decide(s,createRun(s),s.nodes.find(n => n.id === s.start).choices[0].id), entry=run.history.at(-1);
+    const previousAnnouncement = Object.keys(s.state).filter(k => entry.before[k] !== entry.after[k]).map(k => `${s.state[k].label} ${entry.after[k] > entry.before[k] ? 'increased' : 'decreased'} to ${entry.after[k]} of ${s.state[k].max}`).join('. ') || 'Indicators held steady.';
+    assert.equal(announceChanges(s,run),previousAnnouncement);
+  }
 });

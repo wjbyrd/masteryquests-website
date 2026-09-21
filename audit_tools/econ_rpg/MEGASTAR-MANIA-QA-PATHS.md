@@ -33,7 +33,7 @@ Private preview: <http://127.0.0.1:4179/?scenario=megastar-mania>. Version 1. St
 | 16 | premium → aggressive → dates → cancel → quiet → experiment | too-big | baseline, surplus, expanded-tour, supply-shock, demand-drop | 5 / 5 / 2 / 0 / 8 |
 | 17 | moderate → keep → limited → cancel → quiet → original | reputation | baseline, shortage, supply-shock | 3 / 2 / 3 / 2 / 6 |
 
-D = preference strength; S = available tickets; R = financial strength from receipts after refunds; G = goodwill; M = career momentum. All are ordinal teaching indicators, not empirical estimates. Do not compare D directly with S to diagnose shortage: the posted price also determines purchases.
+D = underlying Fan Interest; S = available ticket capacity; R = financial strength from receipts after refunds; G = goodwill; M = career momentum. The numbers in this instructor table are internal ordinal state, not empirical estimates. The student panel shows qualitative Fan Interest and Ticket Supply labels instead of their numbers, plus a separate Ticket Market gauge derived at the posted price. Do not subtract D and S to diagnose shortage.
 
 ## Choice key
 
@@ -81,6 +81,9 @@ D = preference strength; S = available tickets; R = financial strength from rece
 
 ## Focused review
 
+- Before the first price decision, Ticket Market asks for a price and has no pointer. After pricing, its pointer shows shortage on the left, balance in the center, or surplus on the right. It is a qualitative result, not a quantity gap. Fan Interest and Ticket Supply have descriptive labels without matching numeric scales; the other three indicators retain their existing steps.
+- Compare premium → aggressive → dates, moderate → keep → dates, and introductory → keep → dates. All reach internal interest 7 and capacity 7, but the Ticket Market gauge must show surplus, balance and shortage respectively. Posted price explains the difference.
+- The expanded-tour image is the user-updated runtime WebP, used unchanged at the same path. Check its map and extra touring buses on every added-date consequence; no other scene rule changed.
 - Compare all three opening prices: demand and supply stay fixed, while purchases change. Premium leaves empty seats; moderate clears the illustrative market; introductory pricing creates unfilled requests.
 - The breakout raises demand for every pricing response. Price changes affect quantity demanded, not the demand indicator. An aggressive increase after a premium opening can still leave surplus tickets.
 - Added dates and bigger venues change supply only. If there are no extra willing buyers at the price, new seats do not raise ticket receipts. Adding dates always shows the expanded-tour map on the immediate consequence, including shortage, balance and surplus. Continue to see market-state art again. Larger venues never trigger the map.
@@ -91,7 +94,7 @@ D = preference strength; S = available tickets; R = financial strength from rece
 - Resale appears only with actual unfilled requests at the official price. It is not a judgment that the price was wrong. “Sold out” alone is not proof of a shortage; shut-out buyers supply that evidence.
 - The four debrief sections and six path entries should match the decisions. Different priorities can favor receipts, goodwill, capacity or career prospects; there is no aggregate score.
 - Reload at a decision, consequence and ending. Restart, cancel restart with Escape, and replay. Switch between all four scenarios and confirm their saves remain separate.
-- Try keyboard-only play, expand the indicator help, and read the ending at 320px and 390px. Automated checks cover focus, live announcements, button targets and overflow; also review on a real phone and with a screen reader.
+- Try keyboard-only play, expand the indicator help, and read the ending at 320px and 390px. Help now explains Fan Interest, available capacity and the derived Ticket Market separately. Consequence changes and live announcements should say stronger/weaker interest and more/less capacity, with no comparable raw interest/supply totals. Automated checks cover focus, live announcements, button targets and overflow; also review on a real phone and with a screen reader.
 
 ## Ending counts
 

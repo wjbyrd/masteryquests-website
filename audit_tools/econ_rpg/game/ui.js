@@ -1,4 +1,4 @@
-import { nodeContent, availableChoices } from './engine.js';
+import { nodeContent, availableChoices, matches } from './engine.js';
 import { renderScene } from './scenes.js';
 export function el(tag, text, className) {
   const element = document.createElement(tag);
@@ -27,11 +27,41 @@ export function contentBlocks(blocks, parent) {
     }
   }
 }
+export const indicatorValue = (spec, value) => spec.display ? spec.display.values[value] : `${value} / ${spec.max}`;
+export const marketReading = (s, run) => run?.history.length ? s.marketIndicator?.variants.find(v => matches(v.when, run)) : null;
+export function announceChanges(s, run) {
+  const entry = run.history.at(-1);
+  const changes = Object.keys(s.state).filter(k => entry.before[k] !== entry.after[k]).map(k => {
+    const spec = s.state[k], direction = entry.after[k] > entry.before[k] ? 'increased' : 'decreased';
+    return spec.display ? `${spec.label} ${direction}: ${indicatorValue(spec, entry.after[k])}` : `${spec.label} ${direction} to ${entry.after[k]} of ${spec.max}`;
+  }).join('. ') || 'Indicators held steady.';
+  const market = marketReading(s, run);
+  return market ? `${changes}${changes.endsWith('.') ? ' ' : '. '}${s.marketIndicator.label}: ${market.label} at the posted price. ${market.text}` : changes;
+}
+function renderMarket(s, run) {
+  const config = s.marketIndicator, reading = marketReading(s, run);
+  const group = el('section', undefined, 'ticket-market'); group.dataset.market = reading?.id || 'pending';
+  group.append(el('h3', config.label), el('p', 'At the posted price', 'market-context'));
+  const gauge = el('div', undefined, 'market-gauge');
+  gauge.setAttribute('role', reading ? 'meter' : 'img');
+  gauge.setAttribute('aria-label', reading ? config.label : `${config.label}: choose an opening ticket price first.`);
+  if (reading) {
+    gauge.setAttribute('aria-valuemin', '-1'); gauge.setAttribute('aria-valuemax', '1'); gauge.setAttribute('aria-valuenow', String(reading.position));
+    gauge.setAttribute('aria-valuetext', `${reading.label} at the posted price. ${reading.text}`);
+  }
+  const track = el('div', undefined, 'market-track'); track.setAttribute('aria-hidden', 'true');
+  for (const id of ['shortage','balanced','surplus']) track.append(el('span', '', `market-zone ${id}`));
+  const pointer = el('span', '▼', 'market-pointer'); pointer.hidden = !reading; track.append(pointer);
+  const labels = el('div', undefined, 'market-labels'); labels.setAttribute('aria-hidden', 'true');
+  for (const label of ['Shortage','Balanced','Surplus']) labels.append(el('span', label));
+  gauge.append(track, labels); group.append(gauge, el('p', reading?.text || 'Choose an opening ticket price to see the market result.', 'market-result'));
+  return group;
+}
 export function changes(s, before, after) {
   const ul = el('ul', undefined, 'changes');
   for (const [id, spec] of Object.entries(s.state)) {
     const delta = after[id] - before[id];
-    if (delta) ul.append(el('li', `${spec.label}: ${delta > 0 ? '↑ increased' : '↓ decreased'} ${Math.abs(delta)} ${Math.abs(delta) === 1 ? 'step' : 'steps'}`));
+    if (delta) ul.append(el('li', spec.display ? `${spec.label}: ${delta > 0 ? '↑ ' + spec.display.up : '↓ ' + spec.display.down}` : `${spec.label}: ${delta > 0 ? '↑ increased' : '↓ decreased'} ${Math.abs(delta)} ${Math.abs(delta) === 1 ? 'step' : 'steps'}`));
   }
   if (!ul.children.length) ul.append(el('li', 'Indicators held steady in this step.'));
   return ul;
@@ -43,6 +73,7 @@ function heading(view, title, eyebrow) {
 export function renderState(s, run) {
   const panel = document.querySelector('#state-panel'); panel.replaceChildren();
   const title = el('h2', s.stateTitle || 'Conditions'); title.id = 'state-title'; panel.append(title);
+  if (s.marketIndicator) panel.append(renderMarket(s, run));
   const initial = Object.fromEntries(Object.entries(s.state).map(([id, spec]) => [id, spec.initial]));
   const state = run?.state || initial;
   const recent = run?.history.at(-1);
@@ -50,6 +81,13 @@ export function renderState(s, run) {
   for (const [id, spec] of Object.entries(s.state)) {
     const group = el('div', undefined, 'state-item'); group.append(el('dt', spec.label));
     const dd = el('dd');
+    if (spec.display) {
+      group.classList.add('qualitative');
+      dd.append(el('span', indicatorValue(spec, state[id]), 'state-value'));
+      const delta = recent ? recent.after[id] - recent.before[id] : 0;
+      if (delta) dd.append(el('span', delta > 0 ? `↑ ${spec.display.up}` : `↓ ${spec.display.down}`, 'state-change'));
+      group.append(dd); list.append(group); continue;
+    }
     const dots = el('span', undefined, 'steps'); dots.setAttribute('aria-hidden', 'true');
     for (let i = spec.min; i < spec.max; i++) dots.append(el('i', '', i < state[id] ? 'filled' : ''));
     const value = el('span', `${state[id]} / ${spec.max}`, 'state-value');
@@ -65,9 +103,13 @@ export function renderState(s, run) {
     group.append(dd); list.append(group);
   }
   panel.append(list);
+  if (s.marketIndicator) panel.append(el('p', 'Fan interest is not a ticket count.', 'indicator-note'));
   const details = el('details'), definitions = el('dl', undefined, 'indicator-definitions');
   for (const spec of Object.values(s.state)) {
     const group = el('div'); group.append(el('dt', spec.label), el('dd', spec.short)); definitions.append(group);
+  }
+  if (s.marketIndicator) {
+    const group = el('div'); group.append(el('dt', s.marketIndicator.label), el('dd', s.marketIndicator.short)); definitions.append(group);
   }
   details.append(el('summary', 'What do these indicators mean?'), definitions, el('p', 'Indicators show simplified scenario conditions, not real-world forecasts.')); panel.append(details);
 }

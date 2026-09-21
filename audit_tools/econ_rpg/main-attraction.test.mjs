@@ -115,5 +115,6 @@ test('six approved park masters/WebPs retain their original bytes and unique nam
 });
 
 test('Room to Stay data, artwork and shared transition/storage/UI implementations are untouched', () => {
-  execFileSync('git', ['diff','--exit-code','HEAD','--','audit_tools/econ_rpg/game/engine.js','audit_tools/econ_rpg/game/storage.js','audit_tools/econ_rpg/game/ui.js','audit_tools/econ_rpg/game/rpg.css','audit_tools/econ_rpg/game/scenes.js','audit_tools/econ_rpg/game/scenarios/housing-crisis.js','audit_tools/econ_rpg/game/scenarios/housing-scenes.js','audit_tools/econ_rpg/art/approved-assets.json'], { stdio: 'pipe' });
+  // Shared presentation can gain opt-in displays; frozen paths and browser regressions protect existing behavior.
+  execFileSync('git', ['diff','--exit-code','HEAD','--','audit_tools/econ_rpg/game/engine.js','audit_tools/econ_rpg/game/storage.js','audit_tools/econ_rpg/game/scenes.js','audit_tools/econ_rpg/game/scenarios/housing-crisis.js','audit_tools/econ_rpg/game/scenarios/housing-scenes.js','audit_tools/econ_rpg/art/approved-assets.json'], { stdio: 'pipe' });
 });

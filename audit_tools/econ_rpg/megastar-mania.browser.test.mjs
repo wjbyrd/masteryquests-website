@@ -2,6 +2,8 @@ import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { previewServer } from './serve.mjs';
 import scenario from './game/scenarios/megastar-mania.js';
 import ppf from './game/scenarios/ppf.js';
@@ -10,6 +12,7 @@ import housing from './game/scenarios/housing-crisis.js';
 import { availableChoices } from './game/engine.js';
 import { selectScene } from './game/scenes.js';
 import { ticketMarket } from './game/scenarios/megastar-mania-market.js';
+import { indicatorValue } from './game/ui.js';
 import { storageKey } from './game/storage.js';
 import { coverage } from './megastar-mania-qa.mjs';
 const { chromium } = createRequire(import.meta.url)(process.env.PLAYWRIGHT_MODULE || 'playwright');
@@ -19,6 +22,7 @@ const server = previewServer(); await new Promise(resolve => server.listen(0, '1
 const origin = `http://127.0.0.1:${server.address().port}`, url = `${origin}/?scenario=megastar-mania`;
 const key = storageKey(scenario), homeKey = storageKey(housing), parkKey = storageKey(attraction), ppfKey = storageKey(ppf), errors = [], external = [], violations = [], passed = [], images = new Set();
 const manual = coverage().selected, seen = new Set(), endings = new Set();
+const marketViews = new Set();
 let browser;
 const check = message => { passed.push(message); console.log(`PASS ${message}`); };
 try {
@@ -49,12 +53,25 @@ try {
       const row = page.locator('.indicator-list .state-item').nth(Number(index));
       assert.equal(await row.locator('dt').innerText(), spec.label);
       const value = run?.state[id] ?? spec.initial;
-      assert.match(await row.locator('.state-value').innerText(), new RegExp(`${value} / 8`));
-      assert.equal(await row.locator('.steps .filled').count(), value);
+      assert.match(await row.locator('.state-value').innerText(), new RegExp(spec.display ? `^${indicatorValue(spec,value)}$` : `${value} / 8`));
+      assert.equal(await row.locator('.steps .filled').count(), spec.display ? 0 : value);
       const last = run?.history.at(-1), delta = last ? last.after[id] - last.before[id] : 0;
       assert.equal(await row.locator('.state-change').count(), delta ? 1 : 0);
-      if (delta) assert.match(await row.locator('.state-change').innerText(), new RegExp(delta > 0 ? `↑ \\+${delta}` : `↓ ${delta}`));
+      if (delta) assert.match(await row.locator('.state-change').innerText(), new RegExp(spec.display ? (delta > 0 ? spec.display.up : spec.display.down) : (delta > 0 ? `↑ \\+${delta}` : `↓ ${delta}`)));
+      if (spec.display) assert.doesNotMatch(await row.innerText(), /\d/);
     }
+    const market = page.locator('.ticket-market'), gauge = market.locator('.market-gauge');
+    const status = run?.history.length ? ticketMarket(run).status : 'pending';
+    assert.equal(await market.getAttribute('data-market'),status);
+    assert.equal(await gauge.getAttribute('role'),status === 'pending' ? 'img' : 'meter');
+    if (status !== 'pending') {
+      assert.equal(await gauge.getAttribute('aria-valuenow'),String({shortage:-1,balanced:0,surplus:1}[status]));
+      assert.match(await gauge.getAttribute('aria-valuetext'),new RegExp(`${status} at the posted price`, 'i'));
+      const position = await market.locator('.market-pointer').evaluate(el => parseFloat(getComputedStyle(el).left) / el.parentElement.getBoundingClientRect().width);
+      assert.ok(Math.abs(position - {shortage:1/6,balanced:1/2,surplus:5/6}[status]) < .01);
+    } else assert.ok(await market.locator('.market-pointer').isHidden());
+    const marketKey = `${page.viewportSize().width}-${status}`;
+    if (!marketViews.has(marketKey)) { marketViews.add(marketKey); await page.locator('#state-panel').screenshot({path:`${out}/indicators-${marketKey}.png`}); }
   };
   const scene = async () => {
     const run = await saved(), expected = selectScene(scenario.sceneSet, run), figure = page.locator('.neighborhood-scene'), img = figure.locator('img');
@@ -142,7 +159,7 @@ try {
           await page.screenshot({ path: `${out}/consequence-${width}.png`, fullPage: true });
           const help = page.locator('#state-panel details'); assert.equal(await help.getAttribute('open'), null);
           await help.locator('summary').focus(); await page.keyboard.press('Enter');
-          assert.equal(await help.locator('.indicator-definitions dt').count(), 5);
+          assert.equal(await help.locator('.indicator-definitions dt').count(), 6);
           assert.ok(await help.locator('.indicator-definitions').isVisible());
           await bounds(); await page.screenshot({ path: `${out}/help-${width}.png`, fullPage: true });
           await page.keyboard.press('Space'); assert.equal(await help.getAttribute('open'), null);
@@ -159,6 +176,7 @@ try {
     }
     assert.equal([...seen].filter(k => k.startsWith(`${width}-`)).length, 7);
     assert.equal([...endings].filter(k => k.startsWith(`${width}-`)).length, 7);
+    assert.equal([...marketViews].filter(k => k.startsWith(`${width}-`)).length,4);
     check(`${manual.length} complete coverage runs at ${width}px: seven scenes, seven endings, date-map sequencing, conditional consequences, panel values, debrief and no overflow`);
   }
   const parkEnding = await saved();
@@ -192,6 +210,11 @@ try {
   for (const v of scenario.sceneSet.variants) {
     const response = await context.request.get(`${origin}/${v.src.slice(2)}`);
     assert.equal(response.status(), 200); assert.match(response.headers()['content-type'], /image\/webp/);
+    if (v.id === 'expanded-tour') {
+      const updated = JSON.parse(readFileSync(new URL('./art/megastar-mania-assets.json',import.meta.url),'utf8')).find(a => a.path.endsWith('expanded-tour.webp'));
+      assert.equal(createHash('sha256').update(await response.body()).digest('hex'),updated.sha256);
+      assert.equal(updated.sha256,'5bb44ce5816b419c2189b5d6a141050d34dfbe26246b2ebca9923ab2d1b8243b');
+    }
     assert.equal((await context.request.get(`${origin}/art/source/megastar-mania/megastar-${v.id}.png`)).status(), 404);
     assert.equal((await context.request.get(`${origin}/art/sources/megastar-${v.id}.png`)).status(), 404);
   }
@@ -201,5 +224,5 @@ try {
   violations.push(...await page.evaluate(() => window.__violations));
   assert.deepEqual(external, []); assert.deepEqual(errors, []); assert.deepEqual(violations, []);
   check('Approved local WebPs only; source masters inaccessible; no external requests, CSP violations or runtime errors');
-  await writeFile(`${out}/browser-results.json`, JSON.stringify({ passed, completeRuns: manual.length*3, scenes: [...seen], endings: [...endings], images: [...images], external, violations, errors }, null, 2));
+  await writeFile(`${out}/browser-results.json`, JSON.stringify({ passed, completeRuns: manual.length*3, scenes: [...seen], endings: [...endings], marketViews: [...marketViews], images: [...images], external, violations, errors }, null, 2));
 } finally { await browser?.close(); await new Promise(resolve => server.close(resolve)); }

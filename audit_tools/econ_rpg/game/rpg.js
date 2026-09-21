@@ -1,7 +1,7 @@
 import { scenarioFor } from './scenarios/registry.js';
 import { createRun, decide, advance, transitionEvent, validateScenario } from './engine.js';
 import { loadRun, saveRun, clearRun } from './storage.js';
-import { render } from './ui.js';
+import { render, announceChanges } from './ui.js';
 const scenario = scenarioFor(window.location.search);
 validateScenario(scenario);
 document.title = `${scenario.title} · Mastery Quests`;
@@ -30,8 +30,7 @@ const actions = {
   resume() { run = saved; paint(); event(run.phase === 'decision' ? 'decision_presented' : run.phase === 'consequence' ? 'consequence_viewed' : 'scenario_complete'); },
   choose(id) {
     run = decide(scenario, run, id); persist(); event('decision_selected', id); paint(); event('consequence_viewed', id);
-    const entry = run.history.at(-1);
-    document.querySelector('#announcement').textContent = Object.keys(scenario.state).filter(k => entry.before[k] !== entry.after[k]).map(k => `${scenario.state[k].label} ${entry.after[k] > entry.before[k] ? 'increased' : 'decreased'} to ${entry.after[k]} of ${scenario.state[k].max}`).join('. ') || 'Indicators held steady.';
+    document.querySelector('#announcement').textContent = announceChanges(scenario, run);
   },
   advance() { run = advance(scenario, run); persist(); paint(); event(run.phase === 'ending' ? 'scenario_complete' : 'decision_presented'); },
   replay() { reset(); }
