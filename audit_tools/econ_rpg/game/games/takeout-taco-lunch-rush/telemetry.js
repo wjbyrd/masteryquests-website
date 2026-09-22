@@ -1,11 +1,12 @@
 import { GAME_ID } from './engine.js';
 import { debriefMetrics } from './debrief.js';
 import { analysisMetrics } from './analysis.js';
+import { twoTruckMetrics, TWO_TRUCK_QUESTIONS } from './two-truck.js';
 export const STORAGE_PREFIX = 'mq.takeout-taco.run.v1.';
 // Local-only, one record per run (as in daily Econ-nections). No identity or network queue.
 // Retain the latest 20 runs; storage failure leaves this run usable in memory.
 export function createRecorder(storage, onWarning = () => {}, runID = crypto.randomUUID()) {
-  const record = { schemaVersion: 3, gameID: GAME_ID, runID, events: [] };
+  const record = { schemaVersion: 4, gameID: GAME_ID, runID, events: [] };
   let warned = false;
   return {
     record,
@@ -13,9 +14,9 @@ export function createRecorder(storage, onWarning = () => {}, runID = crypto.ran
       record.events.push({ runID, gameID: GAME_ID, timestamp: new Date().toISOString(), sequenceNumber: record.events.length + 1,
         action, round: state.round, workers: state.workers, previousWorkers, output: state.output, addedOutput: state.addedOutput,
         distinctCrewLevelsTested: state.tested.length, finalCrew: state.finalCrew,
-        backlog: state.backlog, ...debriefMetrics(state), ...analysisMetrics(state),
+        backlog: state.backlog, ...debriefMetrics(state), ...analysisMetrics(state), ...twoTruckMetrics(state),
         questionID: action === 'debrief_answer' ? state.answers.at(-1)?.id : action.endsWith('_answer') ? state.phase : null,
-        answer: action === 'debrief_answer' ? state.answers.at(-1)?.value : action.endsWith('_answer') ? state.analysisAnswers[state.phase]?.value : null,
+        answer: action === 'debrief_answer' ? state.answers.at(-1)?.value : action.endsWith('_answer') ? (TWO_TRUCK_QUESTIONS[state.phase] ? state.twoTruck[TWO_TRUCK_QUESTIONS[state.phase].field]?.value : state.analysisAnswers[state.phase]?.value) : null,
         completed: state.phase === 'complete' });
       try {
         if (!storage) throw new Error('Storage unavailable');

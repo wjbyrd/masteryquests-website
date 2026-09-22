@@ -3,6 +3,8 @@ import { SCENES, sceneIndex } from './scenes.js';
 import { debriefQuestions, currentQuestion, answerDebrief, continueDebrief, explorationMessage } from './debrief.js';
 import { answerAnalysis, continueAnalysis } from './analysis.js';
 import { renderAnalysis } from './analysis-view.js';
+import { chooseAllocation, answerTwoTruck, continueTwoTruck } from './two-truck.js';
+import { renderTwoTruck } from './two-truck-view.js';
 import { createRecorder } from './telemetry.js';
 
 const game = document.querySelector('#game');
@@ -39,7 +41,9 @@ function render(focus) {
       <fieldset><legend>${q.prompt}</legend>${q.kind === 'calculation' ? `<form id="calculation-form"><label for="extra-tacos">Additional tacos</label><div class="calculation-entry"><input id="extra-tacos" name="extra-tacos" type="number" inputmode="numeric" min="0" max="1000" step="1" required ${answered ? `disabled value="${answered.value}"` : ''}><button class="primary" type="submit" ${answered ? 'disabled' : ''}>CHECK CALCULATION</button></div></form>` : `<div class="answer-options ${q.id === 'turning' ? '' : 'concept-options'}">${q.options.map((option, index) => `<button data-answer="${index}" ${answered ? 'disabled' : ''} ${answered?.value === index ? 'aria-pressed="true"' : ''}>${option}</button>`).join('')}</div>`}</fieldset>
       ${answered ? `<div class="question-feedback" tabindex="-1" role="status"><p><strong>${answered.correct ? 'Yes.' : 'Here’s the comparison.'}</strong> ${q.explanation}</p><button class="primary" data-action="continue_debrief">${state.questionIndex + 1 === debriefQuestions(state).length ? 'BUILD THE PRODUCTION PICTURE' : 'CONTINUE'}</button></div>` : ''}</section>`;
   } else if (state.phase === 'reveal') {
-    game.innerHTML = `<section class="review reveal"><p class="eyebrow">The pattern behind the rush</p><h2 id="stage-title" tabindex="-1">DIMINISHING MARGINAL RETURNS</h2><p class="exploration-message">${explorationMessage(state)}</p><p>The third worker added <strong>13 tacos</strong>. The fourth worker still increased total production, but only by <strong>11</strong>. The fixed truck, grill, prep space, and equipment were beginning to constrain the additional labor. Marginal product had started to fall even though total product was still rising.</p><table><caption>Tacos per production window</caption><thead><tr><th scope="col">Labor</th><th scope="col">Total Product</th><th scope="col">Marginal Product</th></tr></thead><tbody>${rows(productionRows(), true)}</tbody></table><p class="small"><strong>Total product:</strong> all tacos made in one window. <strong>Marginal product of labor:</strong> the extra tacos from one more worker, with other inputs fixed. The first worker adds 8 tacos relative to zero workers; the opening scene was not a production window.</p><div class="explanation-grid"><section><h3>First, divide the work.</h3><p>Early workers can increase one another’s productivity because tasks can be divided. One worker can cook while another handles orders, prep, or assembly. That specialization helps explain why marginal product initially rises.</p></section><section><h3>Then, share the same space.</h3><p>As the crew grew, more workers had to share the same truck, grill, prep space, and equipment. Additional workers still increased total production, but by smaller amounts. In the short run, labor can change while the truck and equipment stay fixed.</p></section></div><p class="takeaway">Smaller additions. Still more tacos.</p><p>You finished with ${crew(state.finalCrew)}. This experiment compares production; it does not rank your final crew.</p><button class="primary" data-action="continue_analysis">WHAT IF?</button></section>`;
+    game.innerHTML = `<section class="review reveal"><p class="eyebrow">The pattern behind the rush</p><h2 id="stage-title" tabindex="-1">DIMINISHING MARGINAL RETURNS</h2><p class="exploration-message">${explorationMessage(state)}</p><p>The third worker added <strong>13 tacos</strong>. The fourth worker still increased total production, but only by <strong>11</strong>. The fixed truck, grill, prep space, and equipment were beginning to constrain the additional labor. Marginal product had started to fall even though total product was still rising.</p><table><caption>Tacos per production window</caption><thead><tr><th scope="col">Labor</th><th scope="col">Total Product</th><th scope="col">Marginal Product</th></tr></thead><tbody>${rows(productionRows(), true)}</tbody></table><p class="small"><strong>Total product:</strong> all tacos made in one window. <strong>Marginal product of labor:</strong> the extra tacos from one more worker, with other inputs fixed. The first worker adds 8 tacos relative to zero workers; the opening scene was not a production window.</p><div class="explanation-grid"><section><h3>First, divide the work.</h3><p>Early workers can increase one another’s productivity because tasks can be divided. One worker can cook while another handles orders, prep, or assembly. That specialization helps explain why marginal product initially rises.</p></section><section><h3>Then, share the same space.</h3><p>As the crew grew, more workers had to share the same truck, grill, prep space, and equipment. Additional workers still increased total production, but by smaller amounts. In the short run, labor can change while the truck and equipment stay fixed.</p></section></div><p class="takeaway">Smaller additions. Still more tacos.</p><p>You finished with ${crew(state.finalCrew)}. This experiment compares production; it does not rank your final crew.</p><button class="primary" data-action="continue_analysis">THE NEXT RUSH</button></section>`;
+  } else if (['two_truck', 'allocation_result', 'capacity_question', 'dmr_transfer', 'complete'].includes(state.phase)) {
+    game.innerHTML = renderTwoTruck(state);
   } else {
     game.innerHTML = renderAnalysis(state);
   }
@@ -66,16 +70,34 @@ game.addEventListener('click', event => {
   if (target.dataset.analysisAnswer !== undefined) {
     state = answerAnalysis(state, Number(target.dataset.analysisAnswer));
     if (state !== before) {
-      recorder.log({ total_graph: 'total_product_graph_answer', marginal_graph: 'marginal_product_graph_answer', what_if: 'what_if_answer' }[state.phase], state, state.workers);
+      recorder.log({ total_graph: 'total_product_graph_answer', marginal_graph: 'marginal_product_graph_answer' }[state.phase], state, state.workers);
+      render('feedback');
+    }
+    return;
+  }
+  if (target.dataset.allocation !== undefined) {
+    state = chooseAllocation(state, Number(target.dataset.allocation));
+    if (state !== before) {
+      recorder.log('two_truck_allocation', state, state.workers);
+      if (!before.twoTruck.bestAllocationFound && state.twoTruck.bestAllocationFound) recorder.log('two_truck_best_allocation_found', state, state.workers);
+      render('stage');
+    }
+    return;
+  }
+  if (target.dataset.truckAnswer !== undefined) {
+    state = answerTwoTruck(state, Number(target.dataset.truckAnswer));
+    if (state !== before) {
+      recorder.log(state.phase === 'capacity_question' ? 'two_truck_concept_answer' : 'two_truck_dmr_transfer_answer', state, state.workers);
       render('feedback');
     }
     return;
   }
   const action = target.dataset.action;
-  state = action === 'continue_debrief' ? continueDebrief(state) : action === 'continue_analysis' ? continueAnalysis(state) : advance(state, action);
+  state = action === 'continue_debrief' ? continueDebrief(state) : action === 'continue_analysis' ? continueAnalysis(state) : action === 'continue_two_truck' ? continueTwoTruck(state) : advance(state, action);
   if (state === before) return;
-  if (!['continue_debrief', 'continue_analysis'].includes(action)) recorder.log(action, state, before.workers || null);
+  if (!['continue_debrief', 'continue_analysis', 'continue_two_truck'].includes(action)) recorder.log(action, state, before.workers || null);
   if (before.phase === 'debrief' && state.phase === 'total_graph') recorder.log('production_review_complete', state, state.workers);
+  if (before.phase === 'reveal' && state.phase === 'two_truck') recorder.log('two_truck_challenge_start', state, state.workers);
   if (state.phase === 'complete') recorder.log('game_complete', state, state.workers);
   render(state.phase !== before.phase || action === 'continue_debrief' ? 'stage' : action);
   if (state.phase === 'active') document.querySelector('#announcement').textContent = `Window ${state.round}. ${resultText(state)} ${operationalText(state)}${state.round === MAX_WINDOWS ? ' Review the production record to continue.' : ''}`;

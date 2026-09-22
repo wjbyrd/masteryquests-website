@@ -3,14 +3,15 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { MAX_WINDOWS, TOTAL_PRODUCT, productionRows, newRun, canAct, canReview, advance, operationalText } from './game/games/takeout-taco-lunch-rush/engine.js';
-import { SCENES, sceneIndex } from './game/games/takeout-taco-lunch-rush/scenes.js';
+import { SCENES, sceneIndex, TWO_TRUCK_SCENE } from './game/games/takeout-taco-lunch-rush/scenes.js';
 import { debriefQuestions, currentQuestion, answerDebrief, continueDebrief, debriefMetrics } from './game/games/takeout-taco-lunch-rush/debrief.js';
 import { ANALYSIS_QUESTIONS, answerAnalysis, continueAnalysis, analysisMetrics } from './game/games/takeout-taco-lunch-rush/analysis.js';
 import { graphPoints, productionGraph } from './game/games/takeout-taco-lunch-rush/graphs.js';
+import { allocationResult, chooseAllocation, continueTwoTruck, answerTwoTruck, twoTruckMetrics } from './game/games/takeout-taco-lunch-rush/two-truck.js';
 import { STORAGE_PREFIX, createRecorder } from './game/games/takeout-taco-lunch-rush/telemetry.js';
 
 test('opening is not production; supplied schedule and adjacent increments are exact', () => {
-  assert.deepEqual(newRun(), { phase:'intro',workers:0,previousWorkers:null,round:0,output:null,addedOutput:null,tested:[],backlog:0,answers:[],questionIndex:0,finalCrew:null,analysisAnswers:{total_graph:null,marginal_graph:null,what_if:null} });
+  assert.deepEqual(newRun(), { phase:'intro',workers:0,previousWorkers:null,round:0,output:null,addedOutput:null,tested:[],backlog:0,answers:[],questionIndex:0,finalCrew:null,analysisAnswers:{total_graph:null,marginal_graph:null},twoTruck:{attempts:[],current:null,bestAllocationFound:false,capacityAnswer:null,dmrAnswer:null} });
   assert.deepEqual(productionRows().map(r=>r.output),[8,18,31,42,50,53]);
   assert.deepEqual(productionRows().map(r=>r.added),[8,10,13,11,8,3]);
   const gains=productionRows().map(r=>r.added);
@@ -130,8 +131,8 @@ test('observed graphs and later revealed points retain exact production values a
     assert.match(productionGraph('marginal',tested,true),/Worker 3: peak 13 · Worker 4: first decline 11/);
   }
 });
-test('all 64 graph/transfer answer combinations preserve phase order and completion, without changing management state', () => {
-  for(let total=0;total<4;total++)for(let marginal=0;marginal<4;marginal++)for(let transfer=0;transfer<4;transfer++){
+test('all 256 graph and capacity/DMR answer combinations preserve phase order', () => {
+  for(let total=0;total<4;total++)for(let marginal=0;marginal<4;marginal++)for(let capacity=0;capacity<4;capacity++)for(let dmr=0;dmr<4;dmr++){
     let s={...newRun(),phase:'total_graph',workers:4,round:4,output:42,tested:[1,2,3,4]};
     for(const [phase,value,next] of [['total_graph',total,'marginal_graph'],['marginal_graph',marginal,'connect_graphs']]){
       assert.equal(s.phase,phase);assert.equal(continueAnalysis(s),s);
@@ -140,10 +141,39 @@ test('all 64 graph/transfer answer combinations preserve phase order and complet
       assert.equal(answerAnalysis(s,0),s);s=continueAnalysis(s);assert.equal(s.phase,next);
     }
     s=continueAnalysis(s);assert.equal(s.phase,'reveal');
-    assert.equal(answerAnalysis(s,0),s);s=continueAnalysis(s);assert.equal(s.phase,'what_if');
-    assert.equal(continueAnalysis(s),s);s=answerAnalysis(s,transfer);assert.equal(s.analysisAnswers.what_if.correct,transfer===1);
-    s=continueAnalysis(s);assert.equal(s.phase,'complete');assert.equal(continueAnalysis(s),s);assert.equal(answerAnalysis(s,1),s);
-    assert.equal(analysisMetrics(s).whatIfCorrect,transfer===1);assert.equal(s.round,4);assert.equal(s.workers,4);assert.equal(s.output,42);
-    assert.deepEqual(newRun().analysisAnswers,{total_graph:null,marginal_graph:null,what_if:null});
+    assert.equal(chooseAllocation(s,3),s);s=continueAnalysis(s);assert.equal(s.phase,'two_truck');
+    assert.equal(continueTwoTruck(s),s);s=chooseAllocation(s,3);s=continueTwoTruck(s);assert.equal(s.phase,'capacity_question');
+    assert.equal(continueTwoTruck(s),s);s=answerTwoTruck(s,capacity);assert.equal(s.twoTruck.capacityAnswer.correct,capacity===2);
+    assert.equal(answerTwoTruck(s,2),s);s=continueTwoTruck(s);assert.equal(s.phase,'dmr_transfer');
+    assert.equal(continueTwoTruck(s),s);s=answerTwoTruck(s,dmr);assert.equal(s.twoTruck.dmrAnswer.correct,dmr===2);
+    s=continueTwoTruck(s);assert.equal(s.phase,'complete');assert.equal(continueTwoTruck(s),s);assert.equal(answerTwoTruck(s,2),s);
+    assert.equal(s.round,4);assert.equal(s.workers,4);assert.equal(s.output,42);
+    assert.equal(twoTruckMetrics(s).capacityQuestionCorrect,capacity===2);
+    assert.equal(twoTruckMetrics(s).dmrTransferCorrect,dmr===2);
   }
+});
+test('allocation arithmetic, every retry prefix through eight attempts, and reset', t => {
+  assert.equal(allocationResult(6).combinedOutput,53);
+  for(const [a,total] of [[5,58],[4,60],[3,62]]){
+    const r=allocationResult(a);assert.equal(r.allocationTruckA+r.allocationTruckB,6);assert.equal(r.combinedOutput,total);
+    assert.equal(r.truckAOutput+r.truckBOutput,total);
+  }
+  let count=0;
+  function walk(s,depth){
+    assert.equal(chooseAllocation(s,6),s);assert.equal(chooseAllocation(s,2),s);
+    for(const a of [5,4,3]){
+      const result=chooseAllocation(s,a);count++;
+      assert.equal(result.twoTruck.attempts.length,s.twoTruck.attempts.length+1);
+      assert.equal(chooseAllocation(result,a),result);
+      const next=continueTwoTruck(result);
+      assert.equal(next.phase,a===3?'capacity_question':'two_truck');
+      assert.equal(result.twoTruck.bestAllocationFound,a===3);
+      if(a!==3 && depth<8)walk(next,depth+1);
+    }
+  }
+  walk({...newRun(),phase:'two_truck'},1);t.diagnostic(`${count} allocation attempts across all retry prefixes through eight attempts.`);
+  assert.deepEqual(newRun().twoTruck,{attempts:[],current:null,bestAllocationFound:false,capacityAnswer:null,dmrAnswer:null});
+  assert.match(TWO_TRUCK_SCENE.src,/takout-taco-worker-7\.webp$/);
+  assert.ok(TWO_TRUCK_SCENE.alt.includes('three workers'));
+  assert.equal(createHash('sha256').update(readFileSync(new URL(TWO_TRUCK_SCENE.src))).digest('hex'),'4f4851c0a85a3c875b77502613fb4d0de8625a4a78f4072e8e5cbdd3e478f751');
 });

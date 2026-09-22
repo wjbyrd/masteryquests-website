@@ -15,3 +15,7 @@ export const SCENES = Object.freeze(files.map((file, workers) => Object.freeze({
   alt: descriptions[workers],
 })));
 export const sceneIndex = state => state.workers <= 1 ? (state.backlog > STRESS_THRESHOLD ? 1 : 0) : state.workers;
+export const TWO_TRUCK_SCENE = Object.freeze({
+  src: new URL('../../art/scenes/takeout-taco-lunch-rush/takout-taco-worker-7.webp', import.meta.url).href,
+  alt: 'Two Takeout Taco trucks operate side by side, each staffed by three workers, with customers lined up at both trucks.',
+});

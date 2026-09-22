@@ -3,7 +3,7 @@ export const MAX_WINDOWS = 10;
 export const TOTAL_PRODUCT = Object.freeze([0, 8, 18, 31, 42, 50, 53]);
 export const productionRows = () => TOTAL_PRODUCT.slice(1).map((output, index) => ({ workers: index + 1, output, added: output - TOTAL_PRODUCT[index] }));
 export const STRESS_THRESHOLD = 8;
-export const newRun = () => ({ phase: 'intro', workers: 0, previousWorkers: null, round: 0, output: null, addedOutput: null, tested: [], backlog: 0, answers: [], questionIndex: 0, finalCrew: null, analysisAnswers: { total_graph: null, marginal_graph: null, what_if: null } });
+export const newRun = () => ({ phase: 'intro', workers: 0, previousWorkers: null, round: 0, output: null, addedOutput: null, tested: [], backlog: 0, answers: [], questionIndex: 0, finalCrew: null, analysisAnswers: { total_graph: null, marginal_graph: null }, twoTruck: { attempts: [], current: null, bestAllocationFound: false, capacityAnswer: null, dmrAnswer: null } });
 export const canReview = state => state.phase === 'active' && (state.tested.length >= 4 || state.round === MAX_WINDOWS);
 // A small illustrative waiting-order state, not a demand or production model.
 // First window starts manageable; sustained solo service builds pressure gradually.

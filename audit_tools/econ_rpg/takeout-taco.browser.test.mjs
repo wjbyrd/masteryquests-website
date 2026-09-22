@@ -81,15 +81,34 @@ async function finishAnalysis(p, depth, {wrong, prefix}={}) {
   const message=await p.locator('.exploration-message').innerText();
   assert.match(message,depth===4?/Two staffing levels remained untested/:depth===5?/beyond the turning point/:depth===6?/Full production record observed/:/untested levels/);
   await action(p,'continue_analysis');
-  assert.equal(await p.locator('.what-if').count(),1);
-  assert.match(await p.locator('legend').innerText(),/second grill and adds more prep space/);
-  if(prefix)await layout(p,prefix+'-what-if');
-  await p.locator(`[data-analysis-answer="${wrong?0:1}"]`).click();
-  assert.match(await p.locator('.question-feedback').innerText(),/fixed production constraint has been relaxed/);
-  assert.match(await p.locator('.question-feedback').innerText(),wrong?/Here’s the connection/:/Yes/);
-  await action(p,'continue_analysis');
+  assert.equal(await p.locator('[data-allocation]').count(),3);
+  assert.equal(await p.locator('img[src$="worker-7.webp"]').count(),0);
+  assert.match(await p.locator('.truck-baseline').innerText(),/6 workers → 53 tacos/);
+  if(prefix)await layout(p,prefix+'-two-truck-start');
+  const attempts=wrong?[4,5,4,3]:prefix?.startsWith('laptop')?[5,4,3]:[3];
+  for(const a of attempts){
+    await p.locator(`[data-allocation="${a}"]`).click();
+    assert.match(await p.locator('.allocation-totals').innerText(),new RegExp(`${a===5?58:a===4?60:62} tacos`));
+    assert.equal(await p.locator('img[src$="worker-7.webp"]').count(),a===3?1:0);
+    if(prefix)await layout(p,prefix+`-allocation-${a}`);
+    if(a===3){await p.locator('.two-truck-payoff img').evaluate(img=>img.decode());assert.match(await p.locator('.capacity-gain').innerText(),/\+9 TACOS/);}
+    else assert.equal(await p.getByRole('button',{name:'TRY ANOTHER SPLIT'}).count(),1);
+    await action(p,'continue_two_truck');
+  }
+  assert.match(await p.locator('legend').innerText(),/same six workers produce more/);
+  await p.locator(`[data-truck-answer="${wrong?0:2}"]`).click();
+  assert.match(await p.locator('.question-feedback').innerText(),/amount of capital available/);
+  if(prefix)await layout(p,prefix+'-capacity-feedback');
+  await action(p,'continue_two_truck');
+  assert.match(await p.locator('legend').innerText(),/contradict diminishing marginal returns/);
+  await p.locator(`[data-truck-answer="${wrong?0:2}"]`).click();
+  assert.match(await p.locator('.question-feedback').innerText(),/Adding another truck changes the fixed input/);
+  await action(p,'continue_two_truck');
   assert.equal(await p.locator('.final-takeaway').count(),1);
-  assert.match(await p.locator('#stage-title').innerText(),/SPECIALIZATION FIRST. CROWDING LATER./);
+  assert.match(await p.locator('#stage-title').innerText(),/CAPACITY MATTERS/);
+  assert.match(await p.locator('.truck-comparison').innerText(),/53 tacos/);
+  assert.match(await p.locator('.truck-comparison').innerText(),/62 tacos/);
+  assert.match(await p.locator('.capacity-gain').innerText(),/\+9 TACOS/);
   if(prefix)await layout(p,prefix+'-final');
 }
 try {
@@ -130,10 +149,15 @@ try {
   await action(p,'review_record');await finishDebrief(p,6,{prefix:'laptop-full'});
   records=await p.evaluate(()=>Object.keys(localStorage).filter(k=>k.startsWith('mq.takeout-taco.run.v1.')).map(k=>JSON.parse(localStorage[k])));
   const record=records.find(r=>r.runID!==firstRun), last=record.events.at(-1);
-  assert.equal(records.length,2);assert.equal(record.schemaVersion,3);assert.equal(record.events.length,22);
+  assert.equal(records.length,2);assert.equal(record.schemaVersion,4);assert.equal(record.events.length,28);
   assert.equal(last.action,'game_complete');assert.equal(last.completed,true);assert.equal(last.debriefQuestionsAnswered,6);assert.equal(last.debriefQuestionsCorrect,6);assert.equal(last.maximumCrewObserved,6);assert.equal(last.finalCrew,5);
-  for(const field of ['turningPointCorrect','marginalCalculationCorrect','totalVsMarginalCorrect','sixthWorkerCorrect','fixedInputCorrect','totalProductGraphCorrect','marginalProductGraphCorrect','whatIfCorrect'])assert.equal(last[field],true);
+  for(const field of ['turningPointCorrect','marginalCalculationCorrect','totalVsMarginalCorrect','sixthWorkerCorrect','fixedInputCorrect','totalProductGraphCorrect','marginalProductGraphCorrect','capacityQuestionCorrect','dmrTransferCorrect'])assert.equal(last[field],true);
   assert.equal(record.events.filter(e=>e.action==='production_review_complete').length,1);
+  assert.equal(record.events.filter(e=>e.action==='two_truck_challenge_start').length,1);
+  assert.equal(record.events.filter(e=>e.action==='two_truck_allocation').length,3);
+  assert.equal(record.events.filter(e=>e.action==='two_truck_best_allocation_found').length,1);
+  assert.equal(last.allocationAttemptNumber,3);assert.equal(last.combinedOutput,62);
+  assert.equal(record.events[0].allocationAttemptNumber,0);assert.equal(record.events[0].capacityQuestionCorrect,null);
   assert.ok(record.events.filter(e=>e.action!=='game_complete').every(e=>e.completed===false));
   assert.equal(record.events.filter(e=>e.action==='debrief_answer').length,6);assert.equal(record.events.filter(e=>e.action==='game_complete').length,1);
   await p.getByRole('link',{name:'RETURN TO GAMES'}).click();assert.equal(new URL(p.url()).pathname,'/games/');await p.getByRole('link',{name:'PLAY LUNCH RUSH'}).click();await imageCrew(p,0);await p.close();
