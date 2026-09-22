@@ -14,10 +14,32 @@ export function roundPayoff(playerAction, rivalAction, multiplier) {
   const player = Math.round(playerBase * scale / 100), rival = Math.round(rivalBase * scale / 100);
   return { player, rival, industry: player + rival };
 }
-export function nextShares(playerShare, playerAction, rivalAction) {
-  const movement = playerAction === rivalAction ? 0 : playerAction === 'aggressive' ? 6 : -6;
-  const player = Math.max(25, Math.min(75, playerShare + movement));
-  return { player, rival: 100-player, playerChange: player-playerShare, rivalChange: playerShare-player };
+// Percentage of this game's orders, independent of profit.
+export const ROUND_ORDER_SHARES = Object.freeze({
+  'standard/standard': Object.freeze([50,50]),
+  'aggressive/standard': Object.freeze([62,38]),
+  'standard/aggressive': Object.freeze([38,62]),
+  'aggressive/aggressive': Object.freeze([50,50])
+});
+export function roundOrderShare(playerAction,rivalAction) {
+  const split=ROUND_ORDER_SHARES[`${playerAction}/${rivalAction}`];
+  if(!split) throw Error('Invalid order-share actions');
+  return {player:split[0],rival:split[1]};
+}
+export function seasonOrderShares(history) {
+  let playerWeightedOrders=0,rivalWeightedOrders=0;
+  for(const h of history) {
+    if(!Number.isFinite(h.multiplier)||h.multiplier<=0) throw Error('Invalid market weight');
+    const split=roundOrderShare(h.playerAction,h.rivalAction);
+    // Integer hundredths of market weight keep all configured weighted units exact.
+    const weight=Math.round(h.multiplier*100);
+    playerWeightedOrders+=split.player*weight;
+    rivalWeightedOrders+=split.rival*weight;
+  }
+  const totalWeightedOrders=playerWeightedOrders+rivalWeightedOrders;
+  const player=totalWeightedOrders?100*playerWeightedOrders/totalWeightedOrders:50;
+  return {player,rival:100-player,playerWeightedOrders:playerWeightedOrders/100,
+    rivalWeightedOrders:rivalWeightedOrders/100,totalWeightedOrders:totalWeightedOrders/100};
 }
 export function seasonStats(history) {
   const count = predicate => history.filter(predicate).length;
@@ -48,8 +70,8 @@ export function classifySeason(history) {
 }
 export const mutualStandardCounterfactual = rounds => rounds.reduce((sum,r) => sum + roundPayoff('standard','standard',r.multiplier).industry,0);
 export const outcomeText = (player, rival) => ({
-  'standard/standard': 'Both platforms kept normal offers. Each served its established customers without a major subsidy, preserving margins and leaving shares steady.',
-  'aggressive/standard': 'Your discount pulled orders away from the rival. Added volume outweighed the lower margin per subsidized order, raising your profit and moving share toward you.',
-  'standard/aggressive': 'The rival’s discount pulled away orders while you protected the margin on each sale. Lost volume reduced your profit and moved share toward the rival.',
-  'aggressive/aggressive': 'Both platforms pushed large discounts. Subsidized delivery activity was heavy, but neither gained net share. Paying for those offers cut profit for both.'
+  'standard/standard': 'Both platforms kept normal offers. Each served its established customers without a major subsidy, preserving margins and splitting this game’s orders equally.',
+  'aggressive/standard': 'Your discount pulled orders away from the rival. Added volume outweighed the lower margin per subsidized order, raising your profit and giving you the larger share of this game’s orders.',
+  'standard/aggressive': 'The rival’s discount pulled away orders while you protected the margin on each sale. Lost volume reduced your profit and gave the rival the larger share of this game’s orders.',
+  'aggressive/aggressive': 'Both platforms pushed large discounts. Subsidized delivery activity was heavy, but this game’s orders were split equally. Paying for those offers cut profit for both.'
 })[`${player}/${rival}`];

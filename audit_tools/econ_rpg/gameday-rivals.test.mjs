@@ -7,9 +7,9 @@ import scenario from './game/scenarios/gameday-rivals.js';
 import { scenarios,scenarioFor } from './game/scenarios/registry.js';
 import { createSeason,commitRival,revealRound,nextRound } from './game/gameday-rivals-engine.js';
 import { SAVE_KEY,saveSeason,loadSeason,clearSeason } from './game/gameday-rivals-storage.js';
-import { ACTIONS,BASE_PAYOFFS,roundPayoff,nextShares,classifySeason,CLASSIFICATIONS,mutualStandardCounterfactual } from './game/scenarios/gameday-rivals-market.js';
-import { chooseRivalAction,aggressionProbability,seededRandom } from './game/scenarios/gameday-rivals-rival.js';
-import { slots,roadZones,crosswalks,footprint,pointInPolygon,activityFor,sceneFor } from './game/scenarios/gameday-rivals-scenes.js';
+import { ACTIONS,BASE_PAYOFFS,roundPayoff,ROUND_ORDER_SHARES,roundOrderShare,seasonOrderShares,classifySeason,CLASSIFICATIONS,mutualStandardCounterfactual } from './game/scenarios/gameday-rivals-market.js';
+import { chooseRivalAction,aggressionProbability,seededRandom,roundRandom } from './game/scenarios/gameday-rivals-rival.js';
+import { activityFor,sceneFor } from './game/scenarios/gameday-rivals-scenes.js';
 import { audit,simulate } from './gameday-rivals-qa.mjs';
 import { enumerate } from './qa.mjs';
 const data=audit();
@@ -67,17 +67,85 @@ test('one canonical matrix preserves T > R > P > S each round with exact dollar 
   }
   assert.equal(mutualStandardCounterfactual(scenario.rounds),1410000);
 });
-test('share begins 50/50, stays bounded and complementary, and never changes the profit payoff',()=>{
-  assert.deepEqual([createSeason().playerShare,createSeason().rivalShare],[50,50]);
-  for(const {run} of data.seasons)for(const h of run.history){assert.equal(h.playerShare+h.rivalShare,100);assert.ok(h.playerShare>=25&&h.playerShare<=75);const movement=h.playerAction===h.rivalAction?0:h.playerAction==='aggressive'?6:-6;assert.equal(h.playerShare,Math.max(25,Math.min(75,h.playerShareBefore+movement)));assert.equal(h.playerShareChange,h.playerShare-h.playerShareBefore);assert.equal(h.rivalShareChange+h.playerShareChange,0);}
-  assert.equal(nextShares(74,'aggressive','standard').playerChange,1);assert.equal(nextShares(26,'standard','aggressive').playerChange,-1);
+test('final-round pressure permits five restrained rival rounds followed by aggression without current-choice information',()=>{
+  const row=simulate(20,Array(6).fill('standard'));
+  assert.deepEqual(row.run.history.map(h=>h.rivalAction),['standard','standard','standard','standard','standard','aggressive']);
+  const history=row.run.history.slice(0,5),last=scenario.rounds[5];
+  const probability=aggressionProbability(history,last),without=aggressionProbability(history,{...last,pressure:0});
+  assert.ok(Math.abs(probability-.22)<1e-12);assert.ok(Math.abs(without-.10)<1e-12);
+  assert.ok(Math.abs(probability-aggressionProbability(history,{...last,pressure:.08})-.04)<1e-12);
+  const draw=roundRandom(20,5)();assert.ok(draw>=without&&draw<probability);
+  assert.equal(row.run.history[5].rivalProfit,232500);
+  let actual=0,noPressure=0;
+  for(const {run} of data.seasons){const prior=run.history.slice(0,5),u=roundRandom(run.seed,5)();actual+=u<aggressionProbability(prior,last);noPressure+=u<aggressionProbability(prior,{...last,pressure:0});}
+  assert.equal(actual,1208);assert.equal(noPressure,928);
 });
+test('round order splits and demand-weighted shares reproduce from all 12,288 completed histories independently of profit',()=>{
+  assert.deepEqual(ROUND_ORDER_SHARES,{'standard/standard':[50,50],'aggressive/standard':[62,38],'standard/aggressive':[38,62],'aggressive/aggressive':[50,50]});
+  assert.deepEqual([createSeason().playerShare,createSeason().rivalShare],[50,50]);
+  for(const {phases} of data.seasons)for(const run of phases.filter(r=>r.phase==='reveal')) {
+    let player=0,rival=0;
+    for(const h of run.history) {
+      const p=h.playerAction===h.rivalAction?50:h.playerAction==='aggressive'?62:38;
+      assert.equal(h.playerRoundOrderShare,p);assert.equal(h.rivalRoundOrderShare,100-p);
+      assert.equal(h.multiplier,scenario.rounds[h.roundIndex].multiplier);
+      player+=p*h.multiplier;rival+=(100-p)*h.multiplier;
+    }
+    const share=seasonOrderShares(run.history);
+    assert.ok(Math.abs(share.playerWeightedOrders-player)<1e-9);assert.ok(Math.abs(share.rivalWeightedOrders-rival)<1e-9);
+    assert.ok(Math.abs(run.playerShare-player/(player+rival)*100)<1e-12);
+    assert.equal(run.playerShare+run.rivalShare,100);assert.ok(run.playerShare>=38&&run.playerShare<=62);
+    assert.deepEqual(seasonOrderShares(structuredClone(run.history)),share);
+    assert.deepEqual(seasonOrderShares(run.history.map(h=>({...h,playerProfit:999,rivalProfit:-200,playerShare:1}))),share);
+    assert.equal(nextRound({...run,completed:true,playerShare:1,rivalShare:99}).playerShare,share.player);
+  }
+});
+test('equal asymmetric win counts favor the winner of the larger market, in both directions',()=>{
+  const history=scenario.rounds.map((r,i)=>({multiplier:r.multiplier,playerAction:i===1?'aggressive':'standard',rivalAction:i===5?'aggressive':'standard'}));
+  const share=seasonOrderShares(history);
+  assert.ok(Math.abs(share.player-48.80851063829787)<1e-12);assert.ok(share.rival>50);
+  const reverse=seasonOrderShares(history.map(h=>({...h,playerAction:h.rivalAction,rivalAction:h.playerAction})));
+  assert.ok(reverse.player>50);assert.ok(Math.abs(reverse.player-share.rival)<1e-12);
+  const onlyWin=index=>seasonOrderShares(scenario.rounds.map((r,i)=>({multiplier:r.multiplier,playerAction:i===index?'aggressive':'standard',rivalAction:'standard'}))).player;
+  assert.ok(onlyWin(5)>onlyWin(1));assert.ok(onlyWin(4)>onlyWin(1));
+});
+test('legacy development save migrates from verified round history without retaining old shares',()=>{
+  const legacy=JSON.parse(readFileSync(new URL('./fixtures/gameday-rivals-legacy-save.json',import.meta.url),'utf8')),storage=memory();
+  storage.setItem(SAVE_KEY,JSON.stringify(legacy));const restored=loadSeason(storage);
+  assert.equal(restored.reason,null);assert.equal(restored.run.marketShareVersion,2);
+  const expected=simulate(legacy.seed,legacy.history.map(h=>h.playerAction)).run;
+  assert.equal(restored.run.playerShare,expected.playerShare);assert.notEqual(restored.run.playerShare,legacy.playerShare);
+  assert.equal(restored.run.playerSeasonProfit,legacy.playerSeasonProfit);assert.equal(restored.run.classification,legacy.classification);
+  assert.equal(restored.run.phase,'debrief');assert.equal(restored.run.history.length,6);
+  for(let length=1;length<=6;length++) {
+    const history=legacy.history.slice(0,length),last=history.at(-1);
+    const partial={...legacy,roundIndex:last.roundIndex,roundKey:last.roundKey,demand:last.demand,multiplier:last.multiplier,
+      playerCurrentChoice:last.playerAction,rivalCurrentChoice:last.rivalAction,
+      playerRoundProfit:last.playerProfit,rivalRoundProfit:last.rivalProfit,industryRoundProfit:last.industryProfit,
+      playerSeasonProfit:history.reduce((n,h)=>n+h.playerProfit,0),rivalSeasonProfit:history.reduce((n,h)=>n+h.rivalProfit,0),industrySeasonProfit:history.reduce((n,h)=>n+h.industryProfit,0),
+      playerShare:last.playerShare,rivalShare:last.rivalShare,history,completed:length===6,classification:length===6?legacy.classification:null};
+    storage.setItem(SAVE_KEY,JSON.stringify(partial));const loaded=loadSeason(storage);
+    assert.equal(loaded.reason,null);assert.equal(loaded.run.history.length,length);
+    assert.equal(loaded.run.phase,length===6?'debrief':'observe');assert.equal(loaded.run.roundIndex,length===6?5:length);
+    assert.equal(loaded.run.playerShare,seasonOrderShares(history).player);
+    assert.equal(loaded.run.playerSeasonProfit,partial.playerSeasonProfit);
+  }
+  storage.setItem(SAVE_KEY,JSON.stringify({...legacy,playerSeasonProfit:1}));assert.equal(loadSeason(storage).reason,'unavailable');
+  const changed=structuredClone(legacy);changed.history[0].rivalAction=changed.history[0].rivalAction==='standard'?'aggressive':'standard';
+  storage.setItem(SAVE_KEY,JSON.stringify(changed));assert.equal(loadSeason(storage).reason,'unavailable');
+});
+test('all seeded rival actions, profit paths, multipliers and classifications retain their pre-patch fingerprint',()=>{
+  const projection=data.seasons.map(({run})=>({seed:run.seed,classification:run.classification,profits:[run.playerSeasonProfit,run.rivalSeasonProfit,run.industrySeasonProfit],history:run.history.map(h=>[h.roundKey,h.multiplier,h.playerAction,h.rivalAction,h.playerProfit,h.rivalProfit,h.industryProfit])}));
+  assert.equal(createHash('sha256').update(JSON.stringify(projection)).digest('hex'),'cc10f13c006f712e81a4a60d4f4d95c20eec7eb756fb7301d779b2e893814b38');
+});
+
 test('completed reveal saves replay exactly; resume advances once; reset clears only this versioned key',()=>{
   const storage=memory();for(const s of Object.values(scenarios).filter(s=>s.id!==scenario.id))storage.setItem(`mq.econ-rpg.${s.id}`,`preserve-${s.id}`);
   assert.equal(saveSeason(storage,createSeason()),false);
   for(const {phases} of data.seasons)for(const run of phases.filter(r=>r.phase==='reveal')) {assert.equal(saveSeason(storage,run),true);const restored=loadSeason(storage);assert.equal(restored.reason,null);assert.deepEqual(restored.run,nextRound(run));assert.equal(restored.run.playerSeasonProfit,run.playerSeasonProfit);assert.equal(restored.run.seed,run.seed);}
   const good=simulate(0,Array(6).fill('standard')).phases.find(r=>r.phase==='reveal');
   saveSeason(storage,{...good,playerSeasonProfit:999});assert.equal(loadSeason(storage).reason,'unavailable');
+  saveSeason(storage,{...good,playerShare:1,rivalShare:99});assert.equal(loadSeason(storage).reason,'unavailable');
   saveSeason(storage,{...good,scenarioVersion:2});assert.equal(loadSeason(storage).reason,'version');
   clearSeason(storage);assert.equal(storage.getItem(SAVE_KEY),null);
   for(const s of Object.values(scenarios).filter(s=>s.id!==scenario.id))assert.equal(storage.getItem(`mq.econ-rpg.${s.id}`),`preserve-${s.id}`);
@@ -96,15 +164,12 @@ test('all six distinct round images exist unchanged; only Game 6 is night, with 
   // Absence is surfaced explicitly in the QA report, not hidden by substituting a round image.
   for(const missing of data.summary.missingReference)assert.equal(existsSync(new URL(missing,import.meta.url)),false);
 });
-test('all four activity states use fixed safe road footprints, consistent colors/marks and opposing lane orientations',()=>{
-  const road=[[0,490],[1025,804],[658,1018],[0,710]];
-  for(const slot of slots){const zone=roadZones[slot.lane];assert.equal(slot.direction,zone.direction);assert.equal(slot.rotation,zone.rotation);assert.ok(['car','moped'].includes(slot.type));
-    for(const point of footprint(slot)){assert.ok(pointInPolygon(point,zone.polygon),`slot ${slot.id} within lane`);assert.ok(pointInPolygon(point,road),`slot ${slot.id} on road`);for(const crossing of crosswalks)assert.equal(pointInPolygon(point,crossing),false);}}
-  assert.equal(Math.abs(roadZones.northwest.rotation-roadZones.southeast.rotation),180);
-  const ids=new Set();
-  for(const player of ACTIONS)for(const rival of ACTIONS){const activity=activityFor(player,rival);ids.add(activity.id);assert.deepEqual(activityFor(player,rival),activity);assert.equal(activity.player,player==='aggressive'?4:2);assert.equal(activity.rival,rival==='aggressive'?4:2);assert.equal(new Set(activity.units.map(u=>u.id)).size,activity.units.length);for(const unit of activity.units){assert.ok(slots.some(s=>s.id===unit.id&&s.x===unit.x&&s.y===unit.y));assert.equal(scenario.firms[unit.firm].mark,unit.firm==='player'?'P':'R');}}
-  assert.equal(ids.size,4);assert.equal(activityFor(null,null).units.length,0);
+test('four deterministic activity levels have no remaining vehicle renderer or positioning system',()=>{
+  const ids=new Set();for(const p of ACTIONS)for(const r of ACTIONS){const activity=activityFor(p,r);ids.add(activity.id);assert.equal(activity.player,p==='aggressive'?4:2);assert.equal(activity.rival,r==='aggressive'?4:2);assert.deepEqual(activityFor(p,r),activity);}
+  assert.equal(ids.size,4);assert.equal(activityFor(null,null).id,'unrevealed');
+  for(const file of ['game/gameday-rivals-view.js','game/scenarios/gameday-rivals-scenes.js','game/gameday-rivals.css']) assert.doesNotMatch(readFileSync(new URL(file,import.meta.url),'utf8'),/vehicleGraphic|data-slot|gr-traffic|roadZones|createElementNS|rotate\(/);
 });
+
 test('private registry routes the fifth game while all earlier scenarios preserve full frozen behavior',()=>{
   assert.equal(scenarioFor('?scenario=gameday-rivals'),scenario);assert.equal(scenarioFor(''),scenarios['housing-crisis']);assert.equal(scenarioFor('?scenario=constructor'),scenarios['housing-crisis']);
   const hashes={'housing-crisis':'f5eb10bba272b655a3253ba355b801b0aa7e445147ee4a0bed5ad4ec77cb1d6e','main-attraction':'e9bb3c77ba9f57acc27b1d49a442e911526a761a70fe1bc51b072e40122561ad',ppf:'3fd6ef7143484f891e64470ef384a8dde4174408426cd39f692fa1f45b550b3a','megastar-mania':'159c41396c164eb675935898b4e944fbc340c35dc6e07e1ce0f5329974d70532'};

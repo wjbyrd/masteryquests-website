@@ -1,6 +1,6 @@
 import { createSeason, commitRival, revealRound, nextRound } from './gameday-rivals-engine.js';
 import { loadSeason, saveSeason, clearSeason } from './gameday-rivals-storage.js';
-import { renderGame, money } from './gameday-rivals-view.js';
+import { renderGame, money, shareLabels } from './gameday-rivals-view.js';
 export function mount(scenario) {
   const stylesheet=document.createElement('link');stylesheet.rel='stylesheet';stylesheet.href='./gameday-rivals.css';document.head.append(stylesheet);
   document.body.classList.add('gr-game');document.title=`${scenario.title} · Mastery Quests`;document.querySelector('#scenario-title').textContent=scenario.title;
@@ -33,7 +33,7 @@ export function mount(scenario) {
       const resolved=revealRound(run,action,commitment);run=resolved;
       if(!saveSeason(storage,run)) notice('This season could not be saved. You can keep playing while this page is open.');
       saved=nextRound(run);paint();
-      const h=run.history.at(-1);announcement.textContent=`Both offers revealed. You: ${h.playerAction}. Rival: ${h.rivalAction}. Your game-day profit: ${money(h.playerProfit)}. Rival profit: ${money(h.rivalProfit)}. Your share: ${h.playerShare} percent.`;
+      const h=run.history.at(-1);announcement.textContent=`Both offers revealed. You: ${h.playerAction}. Rival: ${h.rivalAction}. Your game-day profit: ${money(h.playerProfit)}. Rival profit: ${money(h.rivalProfit)}. Your game-day order share: ${h.playerRoundOrderShare} percent. Your season market share: ${shareLabels(run.history).player}.`;
     },
     next(){if(run?.phase!=='reveal')return;run=nextRound(run);locked=false;paint();},
     reset

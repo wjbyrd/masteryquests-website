@@ -1,49 +1,44 @@
 import { el } from './ui.js';
 import { sceneFor, activityFor } from './scenarios/gameday-rivals-scenes.js';
-import { BASE_PAYOFFS, CLASSIFICATIONS, seasonStats, mutualStandardCounterfactual, outcomeText } from './scenarios/gameday-rivals-market.js';
+import { BASE_PAYOFFS, CLASSIFICATIONS, seasonStats, mutualStandardCounterfactual, outcomeText, seasonOrderShares } from './scenarios/gameday-rivals-market.js';
 export const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
-const signed = n => `${n>0?'+':''}${n}`;
-const svgNS='http://www.w3.org/2000/svg';
-function svg(tag,attrs={}) { const node=document.createElementNS(svgNS,tag); for(const [key,value] of Object.entries(attrs)) node.setAttribute(key,String(value)); return node; }
+export function shareLabels(history=[]) {
+  const tenths=Math.round(seasonOrderShares(history).player*10);
+  const format=n=>new Intl.NumberFormat('en-US',{maximumFractionDigits:1}).format(n/10)+'%';
+  return {player:format(tenths),rival:format(1000-tenths)};
+}
 function button(label,action,className='gr-button') { const b=el('button',label,className);b.type='button';b.addEventListener('click',action);return b; }
 function title(parent,text,eyebrow) { parent.append(el('p',eyebrow,'eyebrow')); const h=el('h2',text); h.id='view-title';h.tabIndex=-1;parent.append(h); }
-export function vehicleGraphic(unit,firm) {
-  const outer=svg('g',{'data-slot':unit.id,'data-firm':unit.firm,'data-type':unit.type,transform:`translate(${unit.x} ${unit.y}) rotate(${unit.rotation})`});
-  const g=svg('g',{transform:'scale(1.6)'});outer.append(g);
-  // All silhouettes face local +x; lane rotation determines their travel direction.
-  if(unit.type==='car') {
-    g.append(svg('rect',{x:-17,y:-7,width:34,height:14,rx:5,fill:firm.color,stroke:'#10243b','stroke-width':2}));
-    g.append(svg('rect',{x:3,y:-5,width:6,height:10,rx:2,fill:'#e7f4ff'}));
-    g.append(svg('path',{d:'M 17 -3 L 20 0 L 17 3',fill:'#fff'}));
-  } else {
-    g.append(svg('path',{d:'M -15 0 H 15',stroke:'#0d233a','stroke-width':7,'stroke-linecap':'round'}));
-    g.append(svg('rect',{x:-16,y:-7,width:13,height:14,rx:2,fill:firm.color,stroke:'#10243b','stroke-width':2,'data-delivery-box':unit.firm}));
-    g.append(svg('path',{d:'M -1 0 H 13 L 16 -4',stroke:firm.color,'stroke-width':5,fill:'none'}));
-    g.append(svg('circle',{cx:2,cy:0,r:4,fill:firm.color,stroke:'#10243b','stroke-width':1}));
-  }
-  const mark=svg('text',{x:unit.type==='car'?-7:-10,y:3,'text-anchor':'middle',fill:'#10243b','font-size':8,'font-weight':900});mark.textContent=firm.mark;g.append(mark);
-  return outer;
-}
 function scene(s,run) {
   const metadata=sceneFor(s,run.roundIndex), figure=el('figure',undefined,'gr-scene'), stage=el('div',undefined,'gr-scene-stage');
   const img=el('img'); img.src=metadata.src;img.alt=metadata.alt;img.width=metadata.width;img.height=metadata.height;
   img.addEventListener('error',()=>{const message=el('p',`Missing scene asset: ${metadata.src}. No substitute image has been loaded.`,'notice');stage.append(message);},{once:true});
   stage.append(img);
-  const activity=activityFor(run.phase==='observe'?null:run.playerCurrentChoice,run.phase==='observe'?null:run.rivalCurrentChoice);
-  const overlay=svg('svg',{viewBox:`0 0 ${metadata.width} ${metadata.height}`,class:'gr-traffic',role:'img','aria-label':activity.description,'data-activity':activity.id});
-  activity.units.forEach(unit=>overlay.append(vehicleGraphic(unit,s.firms[unit.firm])));stage.append(overlay);figure.append(stage);
-  const caption=el('figcaption');caption.append(el('span','Background activity shows the game-day market. Outlined P / R units show the revealed promotion activity.'));
-  if(run.phase!=='observe') caption.append(el('span',`P · ${s.firms.player.name}: ${activity.player} units   /   R · ${s.firms.rival.name}: ${activity.rival} units`,'gr-unit-key'));
+  figure.append(stage);
+  const caption=el('figcaption','Background activity shows the game-day market.');
   figure.append(caption);return figure;
+}
+function deliveryActivity(s,run) {
+  const activity=activityFor(run.playerCurrentChoice,run.rivalCurrentChoice),section=el('section',undefined,'gr-activity');
+  section.dataset.activity=activity.id;section.setAttribute('aria-label','Delivery activity');section.append(el('h3','Delivery activity'));
+  for(const who of ['player','rival']) {
+    const row=el('div',undefined,'gr-activity-row');row.dataset.firm=who;
+    row.append(el('span',s.firms[who].name));
+    const bar=el('span',undefined,'gr-activity-bar');bar.setAttribute('aria-hidden','true');
+    for(let i=0;i<4;i++)bar.append(el('i',undefined,i<activity[who]?'filled':''));
+    row.append(bar,el('span',activity[who]===4?'High':'Moderate','gr-activity-level'));section.append(row);
+  }
+  return section;
 }
 function stat(label,value,className='') { const cell=el('div',undefined,`gr-stat ${className}`);cell.append(el('dt',label),el('dd',value));return cell; }
 export function renderDashboard(s,run,parent) {
   parent.replaceChildren();const heading=el('h2','Season desk');heading.id='state-title';parent.append(heading);
-  const stats=el('dl',undefined,'gr-stats');
-  stats.append(stat('Your Season Profit',money(run?.playerSeasonProfit||0),'gr-player'),stat('Rival Season Profit',money(run?.rivalSeasonProfit||0),'gr-rival'),stat('Your Market Share',`${run?.playerShare??50}%`),stat('Rival Market Share',`${run?.rivalShare??50}%`));parent.append(stats);
-  parent.append(el('p',`You · ${s.firms.player.name} (P, orange)\nRival · ${s.firms.rival.name} (R, green)`,'gr-firms'));
-  parent.append(el('p','Profit is the financial result. Market share tracks the distribution of orders; it does not change the profit calculation.','gr-note'));
+  const stats=el('dl',undefined,'gr-stats'),shares=shareLabels(run?.history);
+  stats.append(stat('Your Season Profit',money(run?.playerSeasonProfit||0),'gr-player'),stat('Rival Season Profit',money(run?.rivalSeasonProfit||0),'gr-rival'),stat('Your Market Share',shares.player),stat('Rival Market Share',shares.rival));parent.append(stats);
   if(run) parent.append(el('p',`${run.history.length} of 6 game days completed`,'gr-progress'));
+  const help=el('details',undefined,'gr-desk-help');
+  help.append(el('summary','How to read these numbers'),el('p','Profit is the financial result of the pricing decisions. Market share tracks each platform’s demand-weighted share of game-day orders across the season.','gr-note'));
+  parent.append(help);
 }
 export function renderLedger(s,run,parent) {
   parent.replaceChildren();parent.append(el('h2','Season history'));
@@ -52,16 +47,16 @@ export function renderLedger(s,run,parent) {
   for(const h of run.history) {
     const row=el('li'), heading=el('h3',`${h.roundIndex+1}. ${s.rounds[h.roundIndex].name}`), values=el('dl');
     const player=s.actions.find(a=>a.id===h.playerAction).short,rival=s.actions.find(a=>a.id===h.rivalAction).short;
-    values.append(stat('You',player,'gr-player'),stat('Rival',rival,'gr-rival'),stat('Your Profit',money(h.playerProfit)),stat('Rival Profit',money(h.rivalProfit)),stat('Share · You / Rival',`${h.playerShare}% / ${h.rivalShare}%`));
-    row.append(heading,values);list.append(row);
+    values.append(stat('You',player,'gr-player'),stat('Rival',rival,'gr-rival'),stat('Your Profit',money(h.playerProfit)),stat('Rival Profit',money(h.rivalProfit)),stat('Game-Day Order Share · You / Rival',`${h.playerRoundOrderShare}% / ${h.rivalRoundOrderShare}%`));
+    row.append(heading,el('p',`Market weight: ${h.multiplier}×`,'gr-note'),values);list.append(row);
   }
   parent.append(list);
 }
 function reveal(s,run,parent,actions) {
-  const h=run.history.at(-1), cards=el('div',undefined,'gr-reveal');
+  const h=run.history.at(-1), cards=el('div',undefined,'gr-reveal'),shares=shareLabels(run.history);
   for(const who of ['player','rival']) {
     const card=el('section',undefined,`gr-reveal-card gr-${who}`), action=s.actions.find(a=>a.id===h[`${who}Action`]);
-    card.append(el('h3',who==='player'?`You · ${s.firms[who].name}`:`Rival · ${s.firms[who].name}`),el('p',action.label,'gr-action-revealed'),el('p',money(h[`${who}Profit`]),'gr-profit'),el('p',`${signed(h[`${who}ShareChange`])} percentage points · share now ${h[`${who}Share`]}%`,'gr-note'));cards.append(card);
+    card.append(el('h3',who==='player'?`You · ${s.firms[who].name}`:`Rival · ${s.firms[who].name}`),el('p',action.label,'gr-action-revealed'),el('p',money(h[`${who}Profit`]),'gr-profit'),el('p',`Game-Day Order Share: ${h[`${who}RoundOrderShare`]}%`,'gr-round-share gr-note'),el('p',`Season Market Share: ${shares[who]}`,'gr-season-share gr-note'));cards.append(card);
   }
   parent.append(cards,el('p',outcomeText(h.playerAction,h.rivalAction),'gr-explanation'));
   parent.append(el('p',`Combined game-day profit: ${money(h.industryProfit)}. Both offers were chosen independently.`,'gr-note'));
@@ -71,8 +66,8 @@ function debrief(s,run,parent,actions) {
   const classification=CLASSIFICATIONS.find(c=>c.id===run.classification), counts=seasonStats(run.history), benchmark=mutualStandardCounterfactual(s.rounds);
   title(parent,classification.title,'Season complete · six home games');
   parent.append(el('p',classification.summary,'gr-explanation'));
-  const totals=el('dl',undefined,'gr-debrief-totals');
-  totals.append(stat('Your total season profit',money(run.playerSeasonProfit)),stat('Rival total season profit',money(run.rivalSeasonProfit)),stat('Combined industry profit',money(run.industrySeasonProfit)),stat('Final shares · You / Rival',`${run.playerShare}% / ${run.rivalShare}%`));parent.append(totals);
+  const totals=el('dl',undefined,'gr-debrief-totals'),shares=shareLabels(run.history);
+  totals.append(stat('Your total season profit',money(run.playerSeasonProfit)),stat('Rival total season profit',money(run.rivalSeasonProfit)),stat('Combined industry profit',money(run.industrySeasonProfit)),stat('Final Season Market Share · You / Rival',`${shares.player} / ${shares.rival}`));parent.append(totals);
   parent.append(el('h3','The choices behind your season'));
   const stats=el('dl',undefined,'gr-counts');
   for(const [label,value] of [ ['Your Standard / Aggressive',`${counts.playerStandard} / ${counts.playerAggressive}`],['Rival Standard / Aggressive',`${counts.rivalStandard} / ${counts.rivalAggressive}`],['Mutual Standard',counts.mutualStandard],['Mutual Aggressive',counts.mutualAggressive],['Asymmetric rounds',counts.asymmetric],['You aggressive / rival standard',counts.playerExploits],['Rival aggressive / you standard',counts.rivalExploits] ]) stats.append(stat(label,String(value)));parent.append(stats);
@@ -97,7 +92,7 @@ export function renderGame(s,run,saved,roots,actions,qaSeed=null) {
   const {view,dashboard,ledger}=roots;view.replaceChildren();renderDashboard(s,run||saved,dashboard);renderLedger(s,run||saved,ledger);
   if(!run) {
     title(view,'Six games. Your next move.','Alderwick · delivery operations');
-    view.append(el('p',s.introduction,'gr-explanation'),el('p','There are no negotiations. Watch the market, choose your promotion and learn from the revealed history. Profit and market share tell different parts of the story.','gr-note'));
+    view.append(el('p',s.introduction,'gr-explanation'),el('p','There are no negotiations. Watch the market, choose your promotion and learn from the revealed history.','gr-note'));
     if(saved) view.append(button(saved.completed?'Review Saved Season':`Resume at Game Day ${saved.roundIndex+1}`,actions.resume,'gr-button gr-continue'));
     else view.append(button('Start Season',actions.start,'gr-button gr-continue'));
     if(qaSeed!==null) view.append(el('p',`QA seed: ${qaSeed}. Replay uses this fixed seed.`,'gr-note'));
@@ -107,7 +102,7 @@ export function renderGame(s,run,saved,roots,actions,qaSeed=null) {
   const round=s.rounds[run.roundIndex];title(view,round.name,`Game Day ${run.roundIndex+1} of 6${run.phase==='reveal'?' · Both offers revealed':''}`);
   const opportunity=el('p',undefined,'gr-opportunity');opportunity.append(el('span','Market opportunity'),el('strong',round.demand));view.append(opportunity);
   view.append(scene(s,run));
-  if(run.phase==='reveal') {reveal(s,run,view,actions);return;}
+  if(run.phase==='reveal') {view.append(deliveryActivity(s,run));reveal(s,run,view,actions);return;}
   view.append(el('p',round.context,'gr-context'),el('h3','Choose your game-day offer'),el('p','The rival’s offer is already locked and hidden. Your choice will reveal both offers together.','gr-note'));
   const choices=el('div',undefined,'gr-choices');
   for(const action of s.actions) {const b=button('',()=>actions.choose(action.id));b.dataset.strategy=action.id;b.append(el('strong',action.label),el('span',action.detail));choices.append(b);}view.append(choices);

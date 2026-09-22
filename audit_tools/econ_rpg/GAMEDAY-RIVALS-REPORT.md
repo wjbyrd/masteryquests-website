@@ -1,6 +1,6 @@
 # Gameday Rivals — implementation and QA report
 
-Private development implementation, September 21, 2026. Preview: <http://127.0.0.1:4179/?scenario=gameday-rivals>. Start with `node audit_tools/econ_rpg/serve.mjs` from the repository root. No deployment, push, publication, public navigation addition or production source modification was performed.
+Private development implementation with instructor-play patch, September 21, 2026. Preview: <http://127.0.0.1:4179/?scenario=gameday-rivals>. Start with `node audit_tools/econ_rpg/serve.mjs` from the repository root. No deployment, push, publication, public navigation addition or production source modification was performed.
 
 ## Experience and architecture
 
@@ -8,7 +8,7 @@ The player manages fictional Copper Cart against fictional Clover Run in Alderwi
 
 `game/scenarios/gameday-rivals.js` owns the title, identities, labels and six round definitions. Renaming the visible title requires changing its `title` field; the save/route ID can remain stable. Economics, rival behavior and scene metadata live in separate scenario modules. `gameday-rivals-engine.js` supplies immutable observe/reveal/advance transitions. Its controller, view, CSS and storage are separate from the four earlier RPGs. The shared changes are a registry entry and a new `preview.js` dispatch entry in the existing private HTML shell. The original RPG engine, controller, renderer, styles, storage and scenario logic remain byte-unchanged relative to HEAD `f850939`.
 
-The command center shows market opportunity, the round scene, equally styled strategy buttons, season profits/shares and a persistent semantic history ledger. Reveals report both choices, both profits, actual bounded share changes and a short outcome explanation. Neither the payoff matrix nor formal Prisoner's Dilemma, dominant-strategy or Nash terminology appears during the six rounds. The final debrief adds those concepts, counts and the student's actual results.
+The command center shows market opportunity, the round scene, equally styled strategy buttons, season profits/shares and a persistent semantic history ledger. Reveals report both choices, both profits, game-day order shares and demand-weighted season shares and a short outcome explanation. Neither the payoff matrix nor formal Prisoner's Dilemma, dominant-strategy or Nash terminology appears during the six rounds. The final debrief adds those concepts, counts and the student's actual results.
 
 ## Payoffs and demand
 
@@ -32,7 +32,24 @@ Both payoffs receive the same demand multiplier. Integer hundredths and whole-do
 | Homecoming | Very High | 1.35 | 209,250 | 135,000 | 94,500 | 60,750 |
 | Biggest Rival | Maximum | 1.50 | 232,500 | 150,000 | 105,000 | 67,500 |
 
-Every round preserves **T > R > P > S**. Final stakes are largest. Numeric multipliers stay out of the round UI. Profit is the payoff; market share is a separate description of order distribution, beginning 50/50. An asymmetric round moves six percentage points toward the aggressive firm, clamped to 25–75%; symmetric rounds move zero. The rival's share is always the complement. The UI reports the actual change at a bound, and share never feeds back into profit.
+Every round preserves **T > R > P > S**. Final stakes are largest. The profit matrix and all demand multipliers remain unchanged. Profit is the payoff; order distribution is a separate measure.
+
+### Instructor-play patch: demand-weighted season share
+
+The previous method started at 50/50, added/subtracted six percentage points after asymmetric rounds and clamped to 25–75%. That method could cancel equal counts of wins even when they occurred in differently sized markets. It is removed.
+
+The centralized `ROUND_ORDER_SHARES` configuration now assigns **50/50** for S/S and A/A, **62/38** for A/S, and **38/62** for S/A. For completed round i:
+
+- Player weighted orders = player round order-share percentage × demand multiplier.
+- Rival weighted orders = rival round order-share percentage × demand multiplier.
+- Player season share (%) = 100 × total player weighted orders / total weighted orders for both firms.
+- Rival season share (%) = 100 − player season share.
+
+These are relative weighted order units, not measured order counts or profit. Integer hundredths of the configured market weights keep accumulation exact; the ratio retains JavaScript numeric precision. Display rounds the player percentage to one decimal and takes its complement for the rival, so displayed shares also sum to 100%. Before any completed round, the desk displays the neutral 50/50 baseline.
+
+Reveals separately label **Game-Day Order Share** and **Season Market Share**. The ledger shows each round’s order split and market weight so the final ratio can be reproduced. The Season Desk and debrief recompute from completed history rather than trusting a carried share cache. The old percentage-point-change language is removed, including outcome explanations that incorrectly implied symmetric rounds could not change the cumulative average.
+
+With four symmetric rounds, a player win in the Small-Team Game and a rival win in the Biggest Rival game, the weighted player total is 344.1 and the rival total 360.9: **48.8085106383% / 51.1914893617%**, displayed **48.8% / 51.2%**. Reversing the winners reverses the shares. One high-demand win influences season share more than one low-demand win. The profit formula, rival algorithm and classification logic never consume these share values.
 
 The independent mutual-Standard industry comparison is **$1,410,000** over six games. Asymmetric base payoffs also sum to $200,000; only mutual Aggressive lowers joint profit relative to that benchmark. The debrief states this explicitly. It explains why Aggressive is one-shot dominant, why mutual Aggressive is the one-shot Nash equilibrium, and why history changes expectations about this uncertain competitor. The finite horizon has no later home-game response after Game 6; the narrative does not claim that repetition guarantees cooperation or that restraint is a finite-game equilibrium. No communication, agreement or recommendation to coordinate occurs.
 
@@ -46,36 +63,25 @@ The controller locks player input and disables the old buttons before resolving.
 
 ## Save, resume and replay
 
-Serializable state includes scenario/version, run ID/time/seed, current phase/index/key/demand/multiplier, both current choices, round and cumulative firm/industry profits, shares, full action/payoff/share history, classification and completion. Unresolved choices are null. History entries are the action/profit/share histories without redundant arrays.
+Serializable state includes scenario/version, run ID/time/seed, current phase/index/key/demand/multiplier, both current choices, round and cumulative firm/industry profits, shares, full action/payoff/share history, classification and completion. Unresolved choices are null. History entries include both round order-share percentages alongside actions, profits and the demand multiplier, without redundant arrays. The state marks the calculation with `marketShareVersion: 2`.
 
-`gamedayRivalsSave_v1` is written only after a completed reveal. Loading strictly replays every saved player action against the stored seed and compares the whole resulting state. Corruption and incompatible versions fail visibly. Resume advances the last completed reveal once, restoring the next unresolved game or the final debrief without another payout. Storage denial permits in-memory play with an explicit warning. New Season uses the existing accessible confirmation dialog and removes only this game's key. Play Another Season also starts a clean run.
+`gamedayRivalsSave_v1` is written only after a completed reveal. Loading strictly replays every saved player action against the stored seed and compares the whole resulting state. Legacy saves without `marketShareVersion` discard only old share fields and validate all remaining fields against replay before deriving corrected shares. The key and scenario version stay stable; no old share value is mixed into the new formula. A captured pre-patch save fixture verifies this migration. New-format corrupted shares are rejected by the full-state comparison. Corruption and incompatible versions fail visibly. Resume advances the last completed reveal once, restoring the next unresolved game or the final debrief without another payout. Storage denial permits in-memory play with an explicit warning. New Season uses the existing accessible confirmation dialog and removes only this game's key. Play Another Season also starts a clean run.
 
-## Assets, overlays and accessibility
+## Assets, activity comparison and accessibility
 
 Six runtime WebPs and six PNG masters are supplied originals, preserved byte-for-byte. Masters moved outside the served `game/` root. The asset manifest records original/current paths, hashes, dimensions and byte counts. No image generation, pixel editing, conversion or recompression was performed. Each round maps directly to its own image; only Game 6 uses the night file. All retain 1448 × 1086 proportions and `object-fit: contain`. Missing runtime images show a filename-specific notice without fallback.
 
 **Unresolved reference limitation:** the expected `canonical-day.webp` is absent, including in the asset folder confirmed by the user. No substitute is created. The six actual round images were inspected; comparisons against the missing canonical geometry cannot be certified yet.
 
-Base crowds/traffic represent demand. SVG outlined P/orange and R/green units represent revealed strategy: 2/2, 4/2, 2/4 or 4/4. Existing colored vehicles in the raster remain background traffic, distinguished by the caption. Every SVG vehicle uses one firm's color, including moped boxes, plus a P/R mark and accessible text. Coordinates are fixed in image space:
+The on-image activity system is removed entirely: no SVG vehicle renderer, P/R markers, road slots, rotations or overlay styles remain. The supplied raster artwork alone communicates the underlying market environment. Its caption now reads “Background activity shows the game-day market.” No image pixels changed.
 
-| Slot | x / y | Direction / rotation | Type |
-|---|---|---|---|
-| nw1 | 250 / 647 | northwest / 201° | car |
-| nw2 | 430 / 716 | northwest / 201° | moped |
-| nw3 | 610 / 785 | northwest / 201° | car |
-| nw4 | 750 / 839 | northwest / 201° | moped |
-| se1 | 250 / 708 | southeast / 21° | moped |
-| se2 | 430 / 777 | southeast / 21° | car |
-| se3 | 610 / 847 | southeast / 21° | moped |
-| se4 | 740 / 896 | southeast / 21° | car |
-
-The two directions are exactly 180° apart. Scaled vehicle footprints remain inside authored lane/road polygons and outside crosswalk polygons. No random positioning or moving vehicle animation is used. These are schematic indicators over supplied traffic, not a physical traffic simulation. They are small on phones, so the visible unit counts and full text reveals carry equivalent information.
+After reveal, a compact normal HTML/CSS **Delivery activity** comparison appears below, outside the scene figure. Copper Cart uses orange segments; Clover Run uses green. Each row includes the firm name and Moderate (two of four segments) or High (four segments). S/S is Moderate/Moderate, A/S High/Moderate, S/A Moderate/High and A/A High/High. This presentation remains subordinate to the larger profit amounts and does not feed into payoffs or weighted order shares. No vehicle icons or image-positioned elements are generated.
 
 Buttons are native keyboard controls with inherited visible focus, at least 48px targets and equal visual weight. Headings receive focus on transitions; a live region announces both choices/profits. The ledger uses ordered rows, headings and description lists. At 390px and 320px, reveal cards/actions stack, stats use two columns and ledger rows become cards. The matrix has its own bounded scroll container if needed. Reduced-motion mode disables transitions/animations; no timing or motion is required. Automated keyboard/layout checks supplement screenshot inspection; a human screen-reader session remains a useful instructor check.
 
 ## Exhaustive QA and classifications
 
-Exactly **64 player sequences × 32 seeds (0–31) = 2,048 complete seasons**, comprising **12,288 reveals**. All six rounds, two actions, deterministic transitions, input isolation, payoffs, accumulation, bounded shares, save/replay, scenes and class reachability are asserted. All supplied assets are hash-checked.
+Exactly **64 player sequences × 32 seeds (0–31) = 2,048 complete seasons**, comprising **12,288 reveals**. All six rounds, two actions, deterministic transitions, input isolation, payoffs, accumulation, weighted shares, legacy migration, save/replay, scenes and class reachability are asserted. All supplied assets are hash-checked.
 
 Classification precedence is the following table order. A retaliation transition counts at most once when either current aggressive action follows the opponent's previous aggressive action. It describes observed timing, not proven motive. No threshold adjustment was needed.
 
@@ -90,17 +96,15 @@ Classification precedence is the following table order. A retaliation transition
 
 [QA paths](GAMEDAY-RIVALS-QA-PATHS.md) lists all 64 sequences and nine representative seeds/routes: the eight requested patterns plus a Market-Share Chase witness. The browser set extends these to 14 paths for all 24 round/activity combinations, then repeats at 1280px, 390px and 320px: **42 complete browser seasons**, plus targeted keyboard/reload/reset/failure checks.
 
-### Final results
+### Instructor-play patch QA results
 
-- **49/49 unit, regression and publication-isolation tests passed.** The revised vehicle footprints also passed the Gameday unit suite after their final size change.
-- **42 complete Gameday browser seasons passed**, covering all six classifications and all 24 round/activity combinations at each of three widths. There are 72 scene screenshots, plus full reveal/debrief captures. Actual DOM actions, payoffs, shares and ledger rows match deterministic simulation. No horizontal page overflow, duplicate reward, early matrix/theory disclosure or premature rival-action disclosure was detected.
-- Targeted browser checks passed for Enter/Space activation, focus transfer, live announcements, reload after all six reveals, exact restored totals/seed, reset cancellation, four older save keys, automatic/QA seed reset, invalid seed, incompatible save, storage denial and an explicitly missing image. Normal play produced **zero runtime errors, external requests or CSP violations**.
-- All four earlier browser suites passed: **Room to Stay 41 complete runs**, **The Main Attraction 27**, **The Economy’s Edge 33**, **Megastar Mania 51**: **152 complete regression runs** plus their targeted checks. Megastar's immediate added-date map and all seven endings passed. The prior four complete-path outputs remain frozen at 200 / 665 / 361 / 729 paths with their pre-change SHA-256 fingerprints.
-- Local production staging excludes the private runtime, game names, save key, identities and all supplied asset hashes. Protected production source/navigation/configuration files remain unchanged. `git diff --check` passed.
+The patch reruns the complete Gameday suite and the existing unit/regression/publication checks. Exact simulation count remains **2,048 seasons / 12,288 reveals**, with all six classification counts unchanged. A SHA-256 fingerprint of every seeded rival action, round multiplier, round/season profit and classification matches pre-patch commit `07a8898`: `cc10f13c006f712e81a4a60d4f4d95c20eec7eb756fb7301d779b2e893814b38`.
 
-Initial QA exposed two test-harness defects: strict equality treated zero and negative zero differently in a share-complement assertion, and a browser notice assertion raced the dynamic module mount. These were corrected and the checks rerun successfully; neither changed the game rules. Visual inspection also led to enlarging the schematic vehicles within the checked safe footprints. **No unresolved runtime test failure remains.** Canonical-reference verification is explicitly pending the absent file, not counted as passed.
+New assertions cover every round split, exact market weighting, complementary/reproducible shares, profit independence, the Small-Team/Biggest-Rival wins in both directions, debrief recomputation despite stale share caches, legacy migration and rejection of corrupted historical actions/profits. Browser checks cover all 24 round/activity states at three widths, asserting that the image stage contains only its IMG, no vehicle/marker/SVG/canvas overlays exist, activity bars lie below the image, names/colors/labels match, and reveal/desk shares agree. The six runtime images still match the supplied hashes.
 
-Evidence is under ignored `tmp/econ-rpg/gameday-rivals/`, including `results.json`, 72 scene images and desktop/phone reveal/debrief images. Logs are `tmp/econ-rpg/gameday-unit.log`, `gameday-browser.log` and `gameday-{housing,park,ppf,megastar}-regression.log`. These are QA output, not runtime dependencies.
+**Final results: 52/52 unit, regression and publication tests passed; 42 complete browser seasons passed at 1280px, 390px and 320px.** All six classifications remain reachable with unchanged counts. The 72 activity comparison captures cover all round/state/width combinations; full reveal/debrief screenshots were also captured, and desktop/phone reveals were visually reviewed. No page overflow, runtime errors, external requests or CSP violations occurred in normal play. Keyboard/reload/reset/storage-denial/missing-image tests passed, together with legacy-save reconstruction. No unresolved patch failure remains.
+
+Evidence is under ignored `tmp/econ-rpg/gameday-rivals/` (activity screenshots, reveal/debrief screenshots and results.json). Patch logs are `tmp/econ-rpg/gameday-patch-unit.log` and `gameday-patch-browser.log`. Earlier implementation evidence included 152 older-game browser runs; those historical runs are not counted as rerun for this narrow patch. The four prior scenario path fingerprints and protected-file diff were checked again. Artwork, rival source, round configuration and older scenario files have no diff; the frozen economic fingerprint confirms all payoff and classification paths are unchanged.
 
 ### Reproduce
 
@@ -122,3 +126,37 @@ Created: `game/preview.js`; `game/gameday-rivals-{app,engine,storage,view}.js`; 
 Modified: private `game/index.html` script entry, `game/scenarios/registry.js`, README and art README; registry-count expectation in `main-attraction.test.mjs`; branching-save-key scope in `megastar-mania.test.mjs`; publication test exclusions/hash manifest coverage. No older scenario mechanics or prose changed. The publication test builds only ignored local staging and verifies that game content and supplied art are absent; it does not publish.
 
 The final audit verifies no production/public navigation edits, no unrelated tracked changes, no save collisions, no current-choice input to the rival, intact payoff ordering and unchanged supplied image bytes. Remaining manual work is instructor playtesting and the canonical-reference comparison when that missing file is supplied.
+
+## Instructor-play patch diff audit
+
+Only Gameday activity rendering/styles/scene metadata, order-share calculation and related state/persistence, share labels/announcements, tests and these QA documents changed. Added a captured legacy-save fixture. Scenario configuration, rival source, profit matrix/function, multipliers, round order and classification thresholds are unchanged. All twelve supplied image hashes still match. No older RPG, public navigation or production source changed. No deployment or push.
+
+## September 22 instructor-play layout pass
+
+The desktop/tablet scene figure is now centered and capped at **520px**, using the complete 4:3 image with automatic height and `object-fit: contain`. At 1280px the image is about 518 × 389px, down from roughly 858 × 644px. Phone widths through 540px retain the prior wide image frame rather than shrinking the scene further. The environment stays near the top while activity and profit reveals move substantially higher on the page. No raster or image-selection changes were made.
+
+The Season Desk uses normal grid flow at every width. Its former sticky positioning could move the rail through the full-width history row because both belonged to the same grid container. Removing stickiness keeps the desk in its own row; the history starts below both columns. The existing one-column breakpoint at 900px remains. Desk padding and metric gaps are tightened, while values keep their readable sizes.
+
+The desk now contains only the four priority metrics, game-day progress and **How to read these numbers**. That explanation uses native `details`/`summary`, default collapsed, with its state triangle, keyboard activation and existing visible focus styling. Opening it retains both profit and demand-weighted-share explanations. No new redundant labels were added. The repeated Copper Cart/Clover Run identity lines were removed from the desk; firm identities remain in the activity comparison and reveal cards. The only additional copy trim removes the intro sentence “Profit and market share tell different parts of the story,” whose interpretation now lives in the desk disclosure. Reveals, history guidance and the economics debrief are otherwise retained.
+
+The compact orange/green activity comparison is preserved without changing its renderer, four outcome mappings or labels. It remains outside the image and aligned with the reveal area. No decorative vehicles or image overlays were reintroduced.
+
+### Final-round rival inspection
+
+**No rival-algorithm change is needed or made.** Game 6 contributes 0.12 to aggression probability, versus Game 5's 0.08. Holding previous history fixed, that is a 4 percentage-point increase over the prior pressure and a 12-point increase over zero final pressure. With two preceding Standard player actions, the final probability is **22%**, compared with **10%** without final pressure or **18%** using Game 5 pressure. Restraint still matters: final aggression is neither forced nor necessarily more probable than the 26% opening offer.
+
+In the established seeds 0–31, **seeds 20 and 25** with player `SSSSSS` produce rival `SSSSSA`. Seed 20's final draw is **0.1917954453**, below the final 0.22 threshold but above the no-pressure 0.10 threshold. The rival receives **$232,500** for that asymmetric final result: the unchanged $155,000 temptation payoff times the largest demand multiplier, 1.50. This explains how the observed late aggressive move can produce the season's largest individual payout.
+
+Across the same **2,048** fixed seasons, Game 6 rival Aggressive appears **1,208** times. Re-evaluating the same pre-round histories and draws with only final pressure set to zero gives **928**, a difference of **280**. This controlled comparison demonstrates a material pressure effect; these repeated-seed coverage cases are not independent random trials or a population estimate.
+
+The rival still receives only completed action pairs, round key/index/pressure and its seeded draw. The controller commits before presenting current strategy buttons; exhaustive tests still compare the current Standard/Aggressive alternatives and confirm an identical rival commitment. There is no input from the current player choice or payoff. The added regression fixes the seed-20 witness and the pressure comparison counts, without changing any economic behavior.
+
+### Layout validation and scope
+
+The complete 2,048-season Gameday audit and all unit/regression/publication checks were rerun. Browser coverage retains 42 complete seasons across desktop and phone widths, with all 24 round/activity combinations. Additional layout fixtures cover **1440, 1280, 1024, 920, 900, 768, 540, 390 and 320px** in intro, reveal and debrief. For collapsed and expanded help, geometry checks inspect the top, middle, history boundary and bottom of the page, confirming containment and column/row gaps. Enter and Space toggle the native disclosure; the explanation remains accessible and the repeated desk identities are absent.
+
+**Final September 22 results: 53/53 unit, regression and publication tests passed; all 42 complete browser seasons and all nine-width layout checks passed.** There are 27 intro/reveal/debrief layout fixtures, each checked with help closed, open and closed again at four scroll positions. No desk/history overlap, panel overflow, page overflow, runtime error, external request or CSP violation was found. Desktop, tablet and phone screenshots confirm cleaner framing and contained expanded help. The four older scenario path fingerprints, all six Gameday classifications, exact payoff fingerprint and supplied artwork hashes still pass. No unresolved layout or gameplay failure remains.
+
+Logs: `tmp/econ-rpg/gameday-layout-unit.log` and `gameday-layout-browser.log`; screenshots: `tmp/econ-rpg/gameday-rivals/layout-*-collapsed.png` and `layout-*-expanded.png`. All seven protected source-file hashes match the start of this layout task, and `git diff --check` passes.
+
+This pass changes only Gameday presentation/CSS, QA assertions and the two QA documents plus their generator. The earlier weighted-share patch was already present in the working tree and is preserved. Before/after file hashes protect that existing engine, storage, app, market module, rival module, configuration and scene metadata. No payoff, multiplier, round order, market-share method, reveal flow, debrief logic or classification threshold changed. No older scenario, production/public file or artwork changed. No deployment or push.
