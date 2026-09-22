@@ -1,4 +1,4 @@
-# Mastery Quests — private branching economics RPG
+# Mastery Quests — private economics games
 
 Local, unlinked Mastery Quests prototype for instructor QA. **Not a production release.** The intended future release window is October 2026; nothing automatically unlocks or publishes on that date.
 
@@ -16,8 +16,9 @@ Open <http://127.0.0.1:4179>. The preview binds only to loopback and serves only
 - [The Main Attraction](http://127.0.0.1:4179/?scenario=main-attraction): monopoly and market power; development-complete and ready for instructor QA.
 - [The Economy’s Edge](http://127.0.0.1:4179/?scenario=ppf): scarcity, production possibilities, recovery and growth; private instructor QA.
 - [Megastar Mania](http://127.0.0.1:4179/?scenario=megastar-mania): concert ticket supply and demand; private instructor QA.
+- [Gameday Rivals](http://127.0.0.1:4179/?scenario=gameday-rivals): six simultaneous promotion rounds against a seeded, history-dependent delivery rival; private instructor QA.
 
-All four use one engine, controller, renderer, scene selector, storage implementation and debrief framework. There is no public picker. See [Main Attraction report](MAIN-ATTRACTION-REPORT.md), [its instructor playthroughs](MAIN-ATTRACTION-QA-PATHS.md), [The Economy’s Edge report](PPF-REPORT.md) and [playthroughs](PPF-QA-PATHS.md), and [Megastar Mania report](MEGASTAR-MANIA-REPORT.md) and [playthroughs](MEGASTAR-MANIA-QA-PATHS.md).
+The four branching RPGs use one engine, controller, renderer, scene selector, storage implementation and debrief framework. Gameday Rivals has its own repeated-strategy engine, controller, view, styles and versioned save. The small `preview.js` entry dispatches to that mode or the unchanged RPG controller. There is no public picker. See [Main Attraction report](MAIN-ATTRACTION-REPORT.md), [its instructor playthroughs](MAIN-ATTRACTION-QA-PATHS.md), [The Economy’s Edge report](PPF-REPORT.md) and [playthroughs](PPF-QA-PATHS.md), [Megastar Mania report](MEGASTAR-MANIA-REPORT.md) and [playthroughs](MEGASTAR-MANIA-QA-PATHS.md), and [Gameday Rivals report](GAMEDAY-RIVALS-REPORT.md) and [seeded seasons](GAMEDAY-RIVALS-QA-PATHS.md).
 
 ## Room to Stay purpose and cognitive demand
 

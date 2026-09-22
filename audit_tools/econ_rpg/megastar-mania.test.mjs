@@ -141,7 +141,7 @@ test('All 9,477 phases resume exactly, with four isolated save keys and safe rej
   for (const row of rows) for (const phase of row.phases) { saveRun(storage,scenario,phase); assert.deepEqual(loadRun(storage,scenario).run,phase); }
   clearRun(storage,scenario); assert.equal(loadRun(storage,scenario).run,null);
   for (const [s,r] of older) assert.deepEqual(loadRun(storage,s).run,r);
-  assert.equal(new Set(Object.values(scenarios).map(storageKey)).size,4);
+  assert.equal(new Set(Object.values(scenarios).filter(s => s.kind !== 'repeated-strategy').map(storageKey)).size,4);
   const fresh = createRun(scenario); assert.notEqual(fresh.runID,createRun(scenario).runID);
   saveRun(storage,scenario,{...fresh,scenarioVersion:2}); assert.equal(loadRun(storage,scenario).reason,'version');
   saveRun(storage,scenario,{...fresh,state:{...fresh.state,supply:8}}); assert.equal(loadRun(storage,scenario).reason,'unavailable');
