@@ -17,6 +17,7 @@ Open <http://127.0.0.1:4179>. The preview binds only to loopback and serves only
 - [The Economy’s Edge](http://127.0.0.1:4179/?scenario=ppf): scarcity, production possibilities, recovery and growth; private instructor QA.
 - [Megastar Mania](http://127.0.0.1:4179/?scenario=megastar-mania): concert ticket supply and demand; private instructor QA.
 - [Gameday Rivals](http://127.0.0.1:4179/?scenario=gameday-rivals): six simultaneous promotion rounds against a seeded, history-dependent delivery rival; private instructor QA.
+- [Takeout Taco: Lunch Rush](http://127.0.0.1:4179/games/takeout-taco-lunch-rush/): standalone staffing and production mini-game, independent of the RPG engines. See [implementation and QA report](TAKEOUT-TACO-REPORT.md).
 
 The four branching RPGs use one engine, controller, renderer, scene selector, storage implementation and debrief framework. Gameday Rivals has its own repeated-strategy engine, controller, view, styles and versioned save. The small `preview.js` entry dispatches to that mode or the unchanged RPG controller. There is no public picker. See [Main Attraction report](MAIN-ATTRACTION-REPORT.md), [its instructor playthroughs](MAIN-ATTRACTION-QA-PATHS.md), [The Economy’s Edge report](PPF-REPORT.md) and [playthroughs](PPF-QA-PATHS.md), [Megastar Mania report](MEGASTAR-MANIA-REPORT.md) and [playthroughs](MEGASTAR-MANIA-QA-PATHS.md), and [Gameday Rivals report](GAMEDAY-RIVALS-REPORT.md) and [seeded seasons](GAMEDAY-RIVALS-QA-PATHS.md).
 
