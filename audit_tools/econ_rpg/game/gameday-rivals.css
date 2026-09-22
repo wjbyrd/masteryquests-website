@@ -27,3 +27,51 @@
 .gr-activity-bar{display:flex;gap:4px}.gr-activity-bar i{width:16px;height:8px;border-radius:2px;background:#314863}
 .gr-activity-row[data-firm=player] .filled{background:var(--gr-orange)}.gr-activity-row[data-firm=rival] .filled{background:var(--gr-green)}
 @media(max-width:540px){.gr-activity{padding:12px}.gr-activity-row{grid-template-columns:minmax(0,1fr) 52px 58px;gap:6px}.gr-activity-bar i{width:10px}.gr-activity-bar{gap:4px}}
+
+/* Density belongs to active rounds only; intro and completed debrief retain their spacing. */
+.gr-round-body{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start}
+.gr-round-side{min-width:0}
+.gr-active-round .gr-scene{margin-bottom:0}
+@media(min-width:1200px){
+  .gr-active-round main,.gr-active-round .masthead{max-width:1560px}
+  .gr-active-round .masthead{min-height:48px}
+  .gr-active-round .hero{padding:12px 0}.gr-active-round .hero h1{font-size:2rem}
+  .gr-active-round .gr-layout{grid-template-columns:minmax(0,1fr) 240px;gap:16px}
+  .gr-active-round .gr-command{padding:18px}
+  .gr-active-round .gr-command>.eyebrow{margin-bottom:8px}
+  .gr-active-round .gr-command>h2{font-size:1.5rem;margin-bottom:10px}
+  .gr-active-round .gr-opportunity{margin-bottom:6px}
+  .gr-active-round .gr-opportunity strong{padding:2px 12px}
+  .gr-active-round .gr-round-body{grid-template-columns:minmax(0,54fr) minmax(0,46fr);gap:18px}
+  .gr-active-round .gr-scene{width:100%;max-width:none;margin:0}
+  .gr-active-round .gr-scene figcaption{padding:6px 10px;line-height:1.4}
+  .gr-active-round .gr-round-side>.gr-context{font-size:.9rem;line-height:1.5;margin-bottom:12px}
+  .gr-active-round .gr-round-side>h3{font-size:1rem;margin:8px 0}
+  .gr-active-round .gr-round-side>.gr-note{font-size:.8rem;line-height:1.5;margin-bottom:10px}
+  .gr-active-round .gr-choices{grid-template-columns:1fr;gap:10px}
+  .gr-active-round .gr-choices .gr-button{padding:12px}
+  .gr-active-round .gr-choices strong{font-size:.95rem}
+  .gr-active-round .gr-choices span{font-size:.8rem;line-height:1.5;margin-top:4px}
+  .gr-active-round .gr-activity{padding:8px 12px;margin:0 0 10px}
+  .gr-active-round .gr-activity h3{margin-bottom:6px}
+  .gr-active-round .gr-activity-row{margin:4px 0}
+  .gr-active-round .gr-reveal{gap:10px;margin:0 0 10px}
+  .gr-active-round .gr-reveal-card{padding:10px}
+  .gr-active-round .gr-reveal-card h3{font-size:.75rem;margin-bottom:6px}
+  .gr-active-round .gr-action-revealed{font-size:.9rem;line-height:1.4;margin-bottom:6px}
+  .gr-active-round .gr-profit{font-size:1.4rem;margin-bottom:6px}
+  .gr-active-round .gr-reveal-card .gr-note{font-size:.75rem;line-height:1.4}
+  .gr-active-round .gr-round-side>.gr-explanation{font-size:.875rem;line-height:1.5;margin-bottom:8px}
+  .gr-active-round .gr-round-side>.gr-continue{margin-top:6px;padding:12px 16px}
+  .gr-active-round .gr-dashboard{padding:18px}
+  .gr-active-round .gr-history{padding:14px 18px}
+  .gr-active-round .gr-history>h2{margin-bottom:12px}
+  .gr-active-round .gr-ledger>li{padding:12px 14px}
+  .gr-active-round .gr-ledger h3{margin-bottom:6px}
+  .gr-active-round .gr-ledger .gr-note{margin-bottom:10px}
+}
+@media(min-width:901px) and (max-width:1199px){
+  .gr-active-round .gr-layout{grid-template-columns:1fr}
+  .gr-active-round .gr-stats{grid-template-columns:1fr 1fr}
+  .gr-active-round .gr-history{grid-column:auto}
+}

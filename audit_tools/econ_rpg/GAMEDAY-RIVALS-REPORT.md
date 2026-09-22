@@ -160,3 +160,41 @@ The complete 2,048-season Gameday audit and all unit/regression/publication chec
 Logs: `tmp/econ-rpg/gameday-layout-unit.log` and `gameday-layout-browser.log`; screenshots: `tmp/econ-rpg/gameday-rivals/layout-*-collapsed.png` and `layout-*-expanded.png`. All seven protected source-file hashes match the start of this layout task, and `git diff --check` passes.
 
 This pass changes only Gameday presentation/CSS, QA assertions and the two QA documents plus their generator. The earlier weighted-share patch was already present in the working tree and is preserved. Before/after file hashes protect that existing engine, storage, app, market module, rival module, configuration and scene metadata. No payoff, multiplier, round order, market-share method, reveal flow, debrief logic or classification threshold changed. No older scenario, production/public file or artwork changed. No deployment or push.
+
+## Active-round UI density pass — September 22
+
+This pass supersedes the centered desktop image composition described above. At widths **1200px and above**, the round body is a **54% image / 46% decision-or-reveal grid**, below the unchanged round title and Market Opportunity line. The image and compact caption occupy the left column; context, instruction and vertically stacked promotion buttons occupy the right. After selection, that same right column contains the existing activity bars, both strategy/profit/share cards, consequence text and continuation button. No additional block is appended below the image and no overlay is drawn on the art.
+
+The active screen uses more available horizontal space: a flexible command panel with a 240px Season Desk rail, within a maximum 1560px page. Masthead/hero spacing, command padding, heading margins, caption padding, control gaps and reveal spacing are tightened only while a round is active. The illustration scales with its column, remaining complete and uncropped; measured image widths range from about 447px at the desktop breakpoint to 642px on wide desktop. This avoids making the scene tiny or centering it in an otherwise empty wide card.
+
+History follows the command/desk grid row with a 16px gap. Its active-screen heading and entry padding are compacted, without an accordion or hidden entries. The desk remains non-sticky and lean, with its existing four metrics, progress and default-collapsed help. No identity labels, extra explanations or round data were added to it.
+
+Below **1200px**, the active screen stacks image, context/strategy or reveal, Season Desk, then Season History. The tablet image remains capped at 520px and phone framing stays wide. Controls retain at least 48px touch targets. Narrow layouts deliberately allow vertical scrolling instead of squeezing three columns onto a tablet.
+
+The only copy change is the interface instruction: “The rival’s offer is locked. Choose yours to reveal both.” Scenario context, outcomes and final instructional content are not rewritten. All compact CSS is scoped to the active-round body class; entering the final debrief removes that class. The debrief function has the same normalized SHA-256 fingerprint as before, and its 1280px full-page screenshot is byte-identical to the pre-pass capture. The final summary retains its original spacious layout.
+
+### Measured desktop density
+
+Measurements below are document coordinates from the top of the page for the first Aggressive/Standard reveal (seed 0), not positions after automatic scrolling. Both choices are wholly visible in the corresponding observation screen.
+
+| Viewport | Bottom of second choice | Bottom of continuation | Bottom of history heading | First history entry begins |
+|---|---:|---:|---:|---:|
+| 1920 × 1080 | 513px | 650px | 827px | 839px |
+| 1440 × 900 | 513px | 650px | 778px | 790px |
+| 1366 × 768 | 513px | 650px | 748px | 760px |
+| 1280 × 800 | 535px | 670px | 744px | 756px |
+| 1200 × 768 | 535px | 691px | 765px | 777px |
+
+At 1366 × 768, the full history heading is visible and the first entry reaches the lower edge; taller desktop viewports show more of the entry. At 1280px the prior centered reveal placed history around 1400px down the page; the new heading is fully visible by about 744px. The full ledger remains available by normal scrolling.
+
+### Density QA and scope
+
+The established 2,048-season economic audit is retained. Browser coverage includes the existing 42 complete seasons and 16 additional complete density seasons: all-Standard (seed 1) and all-Aggressive (seed 0) at **1920×1080, 1440×900, 1366×768, 1280×800, 1200×768, 1024×768, 768×1024 and 390×844**. Desktop assertions check both actions, continuation and the history heading at scroll position zero for every round; they also check the 54/46 split, reuse of the right-side region and image-first stacking below the breakpoint. Existing nine-width disclosure and scroll-boundary containment checks remain in place.
+
+**Final density-pass results: 54/54 automated unit/regression/publication tests passed, including all 2,048 simulated seasons; 58 complete browser seasons passed.** All desktop density assertions and the nine-width disclosure/scroll-boundary checks pass. No horizontal page overflow, desk/history collision, runtime error, external request or CSP violation was detected. Laptop, wide-desktop and narrow-screen captures were visually inspected. The first density run exposed a clipped history heading on the 1200×768 asymmetric reveal; the adjacent activity and header spacing was tightened and the full browser suite rerun successfully. No economic explanation was shortened to fix it.
+
+The completed debrief screenshot still matches the pre-pass PNG byte-for-byte (`d6e1dd80e6a7e710a2f8336e51538c3ae20fe99624525285af59e63f9e2d0ac3`). The debrief source fingerprint, seven protected gameplay/configuration file hashes, prior scenario path fingerprints and all twelve supplied art hashes remain unchanged. `git diff --check` passes.
+
+Evidence: `tmp/econ-rpg/gameday-density-unit.log`, `gameday-density-browser.log`, `gameday-rivals/results.json` and `gameday-rivals/density-*-observe.png` / `density-*-reveal.png`. The report and manual QA notes are updated for the composition change.
+
+The runtime diff is limited to `gameday-rivals-view.js` and scoped additions to `gameday-rivals.css`. Economics, payoff logic, multipliers, rival decisions, order-share calculations, classifications, state transitions, persistence, scene selection and supplied image bytes remain unchanged. The final debrief content/function is unchanged. No production/public files or other scenarios changed; nothing was deployed or pushed.

@@ -89,6 +89,7 @@ function debrief(s,run,parent,actions) {
   parent.append(button('Play Another Season',actions.reset,'gr-button gr-continue'));
 }
 export function renderGame(s,run,saved,roots,actions,qaSeed=null) {
+  document.body.classList.toggle('gr-active-round',Boolean(run&&run.phase!=='debrief'));
   const {view,dashboard,ledger}=roots;view.replaceChildren();renderDashboard(s,run||saved,dashboard);renderLedger(s,run||saved,ledger);
   if(!run) {
     title(view,'Six games. Your next move.','Alderwick · delivery operations');
@@ -101,9 +102,10 @@ export function renderGame(s,run,saved,roots,actions,qaSeed=null) {
   if(run.phase==='debrief') {debrief(s,run,view,actions);return;}
   const round=s.rounds[run.roundIndex];title(view,round.name,`Game Day ${run.roundIndex+1} of 6${run.phase==='reveal'?' · Both offers revealed':''}`);
   const opportunity=el('p',undefined,'gr-opportunity');opportunity.append(el('span','Market opportunity'),el('strong',round.demand));view.append(opportunity);
-  view.append(scene(s,run));
-  if(run.phase==='reveal') {view.append(deliveryActivity(s,run));reveal(s,run,view,actions);return;}
-  view.append(el('p',round.context,'gr-context'),el('h3','Choose your game-day offer'),el('p','The rival’s offer is already locked and hidden. Your choice will reveal both offers together.','gr-note'));
+  const body=el('div',undefined,'gr-round-body'),side=el('div',undefined,'gr-round-side');
+  body.append(scene(s,run),side);view.append(body);
+  if(run.phase==='reveal') {side.append(deliveryActivity(s,run));reveal(s,run,side,actions);return;}
+  side.append(el('p',round.context,'gr-context'),el('h3','Choose your game-day offer'),el('p','The rival’s offer is locked. Choose yours to reveal both.','gr-note'));
   const choices=el('div',undefined,'gr-choices');
-  for(const action of s.actions) {const b=button('',()=>actions.choose(action.id));b.dataset.strategy=action.id;b.append(el('strong',action.label),el('span',action.detail));choices.append(b);}view.append(choices);
+  for(const action of s.actions) {const b=button('',()=>actions.choose(action.id));b.dataset.strategy=action.id;b.append(el('strong',action.label),el('span',action.detail));choices.append(b);}side.append(choices);
 }

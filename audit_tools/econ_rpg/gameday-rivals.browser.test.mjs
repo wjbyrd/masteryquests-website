@@ -23,6 +23,7 @@ for(const row of data.seasons)if(features(row).some(f=>!covered.has(f))){cases.p
 assert.equal(covered.size,24);
 const errors=[],external=[],violations=[],passed=[],seen=new Set(),classifications=new Set();let browser;
 const layoutWidths=[1440,1280,1024,920,900,768,540,390,320];
+const densityViewports=[[1920,1080],[1440,900],[1366,768],[1280,800],[1200,768],[1024,768],[768,1024],[390,844]],densityMeasurements=[];
 const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const check=t=>{passed.push(t);console.log(`PASS ${t}`);};
 try {
@@ -57,7 +58,9 @@ try {
     const activity=activityFor(expected.playerAction,expected.rivalAction),indicator=page.locator('.gr-activity');assert.equal(await indicator.getAttribute('data-activity'),activity.id);
     assert.equal(await page.locator('.gr-traffic,[data-slot],.gr-scene svg,.gr-scene canvas').count(),0);
     assert.deepEqual(await page.locator('.gr-scene-stage').evaluate(e=>[...e.children].map(c=>c.tagName)),['IMG']);
-    assert.ok((await indicator.boundingBox()).y>=(await page.locator('.gr-scene').boundingBox()).y+(await page.locator('.gr-scene').boundingBox()).height);
+    const sceneBox=await page.locator('.gr-scene').boundingBox(),activityBox=await indicator.boundingBox();
+    assert.ok(activityBox.x>=sceneBox.x+sceneBox.width||activityBox.y>=sceneBox.y+sceneBox.height,'activity remains outside artwork');
+    assert.equal(await indicator.locator('..').getAttribute('class'),'gr-round-side');
     for(const who of ['player','rival']){const row=indicator.locator('[data-firm="'+who+'"]');assert.match(await row.textContent(),new RegExp(scenario.firms[who].name));assert.equal(await row.locator('.filled').count(),activity[who]);assert.equal(await row.locator('.gr-activity-level').textContent(),activity[who]===4?'High':'Moderate');assert.equal(await row.locator('.filled').first().evaluate(e=>getComputedStyle(e).backgroundColor),who==='player'?'rgb(247, 152, 58)':'rgb(85, 206, 145)');}
     assert.deepEqual(await page.locator('.gr-round-share').allTextContents(),[expected.playerRoundOrderShare,expected.rivalRoundOrderShare].map(n=>'Game-Day Order Share: '+n+'%'));
     assert.deepEqual(await page.locator('.gr-season-share').allTextContents(),['player','rival'].map(w=>'Season Market Share: '+shareLabels(run.history)[w]));
@@ -68,11 +71,36 @@ try {
    }
    assert.equal(await page.locator('#view-title').textContent(),CLASSIFICATIONS.find(c=>c.id===row.run.classification).title);classifications.add(row.run.classification);
    assert.equal(await page.locator('.gr-matrix').count(),1);assert.match(await page.locator('main').innerText(),/T > R > P > S/);assert.match(await page.locator('main').innerText(),/Nash equilibrium/);assert.match(await page.locator('main').innerText(),/finite horizon/);
+   assert.equal(await page.locator('body').evaluate(e=>e.classList.contains('gr-active-round')),false);
+   assert.equal(await page.locator('.gr-round-body').count(),0);
+   assert.equal(await page.locator('.gr-command').evaluate(e=>getComputedStyle(e).paddingTop),width===1280?'28px':'22px');
    await panel(row.run);if(index===0)await page.screenshot({path:`${out}/debrief-${width}.png`,fullPage:true});
    violations.push(...await page.evaluate(()=>window.__violations));
   }
  }
  assert.equal(seen.size,72);assert.equal(classifications.size,6);check(`${cases.length*3} complete browser seasons at 1280/390/320px; all six classifications and 24 round/activity combinations at each width`);
+ for(const [width,height] of densityViewports)for(const [seed,action] of [[1,'standard'],[0,'aggressive']]) {
+  await page.setViewportSize({width,height});await fresh(seed);
+  for(let i=0;i<6;i++){
+   await page.locator('.gr-scene img').evaluate(e=>e.decode());await page.evaluate(()=>scrollTo(0,0));
+   const observe=await page.evaluate(()=>{
+    const img=document.querySelector('.gr-scene').getBoundingClientRect(),side=document.querySelector('.gr-round-side').getBoundingClientRect();
+    return {image:img.toJSON(),side:side.toJSON(),actionBottom:Math.max(...[...document.querySelectorAll('[data-strategy]')].map(e=>e.getBoundingClientRect().bottom))};
+   });
+   if(width>=1200){assert.ok(observe.side.left>=observe.image.right+16);assert.ok(Math.abs(observe.side.top-observe.image.top)<1);assert.ok(observe.actionBottom<=height,'both actions visible at page top');const ratio=observe.image.width/(observe.image.width+observe.side.width);assert.ok(ratio>=.52&&ratio<=.58);}
+   else assert.ok(observe.side.top>=observe.image.bottom+14,'image precedes decision on narrow screens');
+   if(i===0&&action==='standard')await page.screenshot({path:`${out}/density-${width}-observe.png`});
+   await page.locator(`[data-strategy="${action}"]`).click();await page.evaluate(()=>scrollTo(0,0));
+   const reveal=await page.evaluate(()=>({side:document.querySelector('.gr-round-side').getBoundingClientRect().toJSON(),nextBottom:document.querySelector('.gr-round-side>.gr-continue').getBoundingClientRect().bottom,historyHeading:document.querySelector('.gr-history>h2').getBoundingClientRect().toJSON(),firstEntryTop:document.querySelector('.gr-ledger>li').getBoundingClientRect().top}));
+   assert.equal(reveal.side.x,observe.side.x);assert.equal(reveal.side.width,observe.side.width);
+   if(width>=1200){assert.ok(reveal.nextBottom<=height,`reveal continuation visible at ${width}×${height}, round ${i+1}, ${action}`);assert.ok(reveal.historyHeading.bottom<=height,`history heading visible at ${width}×${height}, round ${i+1}, ${action}: ${reveal.historyHeading.bottom}`);}
+   densityMeasurements.push({width,height,round:i+1,action,actionBottom:observe.actionBottom,imageWidth:observe.image.width,nextBottom:reveal.nextBottom,historyHeadingBottom:reveal.historyHeading.bottom,firstEntryTop:reveal.firstEntryTop});
+   if(i===0&&action==='standard')await page.screenshot({path:`${out}/density-${width}-reveal.png`});
+   await bounds();await page.locator('.gr-round-side>.gr-continue').click();
+  }
+  assert.equal(await page.locator('body').evaluate(e=>e.classList.contains('gr-active-round')),false);
+ }
+ check('16 additional complete density seasons: desktop actions, reveal continuation and history heading visible without scrolling; same right column reused; narrow screens stack in order');
  // Exercise the history boundary with both disclosure states, including the old sticky-rail collision area.
  const layoutSafe=async()=>{
   for(const location of ['top','middle','history','bottom']) {
@@ -83,9 +111,9 @@ try {
     const d=desk.getBoundingClientRect(),h=history.getBoundingClientRect(),m=main.getBoundingClientRect();
     return {gap:h.top-d.bottom,mainGap:h.top-m.bottom,deskOverflow:desk.scrollHeight>desk.clientHeight+1,
      pageOverflow:document.documentElement.scrollWidth>innerWidth,position:getComputedStyle(desk).position,
-     separated:d.left>=m.right+20||d.top>=m.bottom+20};
+     separated:d.left>=m.right+16||d.top>=m.bottom+16};
    },location);
-   assert.ok(state.gap>=20&&state.mainGap>=20,'history remains below both panels');assert.ok(state.separated,'clean column or stacking gap');
+   assert.ok(state.gap>=16&&state.mainGap>=16,'history remains below both panels');assert.ok(state.separated,'clean column or stacking gap');
    assert.equal(state.deskOverflow,false);assert.equal(state.pageOverflow,false);assert.equal(state.position,'static');
   }
  };
@@ -103,7 +131,8 @@ try {
    if(phase==='reveal') {
     const img=page.locator('.gr-scene img');await img.evaluate(e=>e.decode());const box=await img.boundingBox();
     assert.ok(Math.abs(box.width/box.height-4/3)<.01);
-    if(width>540)assert.ok(box.width<=520&&box.width>=450,'desktop/tablet image cap with legible framing');
+    if(width>=1200)assert.ok(box.width>=420,'desktop scene stays legible in its own column');
+    else if(width>540)assert.ok(box.width<=520&&box.width>=450,'tablet image cap with legible framing');
     else assert.ok(box.width>=width-64,'phone scene retains usable width');
     await page.locator('#view-title').scrollIntoViewIfNeeded();await page.screenshot({path:`${out}/layout-${width}-collapsed.png`,fullPage:true});
    }
@@ -113,7 +142,7 @@ try {
    await summary.focus();await page.keyboard.press('Space');assert.equal(await help.evaluate(e=>e.open),false);await layoutSafe();
   }
  }
- check('nine desktop/tablet/mobile widths: smaller uncropped scene, no desk/history collisions at four scroll positions, keyboard disclosure in intro/reveal/debrief, no repeated desk identities');
+ check('nine desktop/tablet/mobile widths: uncropped scene, no desk/history collisions at four scroll positions, keyboard disclosure in intro/reveal/debrief, no repeated desk identities');
  await page.setViewportSize({width:1280,height:960});await fresh(4);
  for(let i=0;i<6;i++){
   await page.locator('[data-strategy="standard"]').focus();await page.keyboard.press(i%2?'Space':'Enter');const snapshot=await saved();await page.reload();
@@ -139,5 +168,5 @@ try {
  for(const asset of manifest.filter(a=>a.path.startsWith('game/'))){const response=await context.request.get(`${origin}/${asset.path.slice(5)}`);assert.equal(response.status(),200);assert.equal(createHash('sha256').update(await response.body()).digest('hex'),asset.sha256);}
  assert.equal((await context.request.get(`${origin}/art/sources/round-01-home-opener.png`)).status(),404);check('served WebPs retain supplied hashes; PNG masters are outside the preview root');
  assert.deepEqual(errors,[]);assert.deepEqual(external,[]);assert.deepEqual(violations,[]);check('no runtime errors, external requests or CSP violations in normal play');
- await writeFile(`${out}/results.json`,JSON.stringify({completeBrowserSeasons:cases.length*3,widths:[1280,390,320],layoutWidths,roundActivityScreenshots:seen.size,classifications:[...classifications],passed,errors,external,violations},null,2));
+ await writeFile(`${out}/results.json`,JSON.stringify({completeBrowserSeasons:cases.length*3+densityViewports.length*2,widths:[1280,390,320],layoutWidths,densityViewports,densityMeasurements,roundActivityScreenshots:seen.size,classifications:[...classifications],passed,errors,external,violations},null,2));
 } finally {if(browser)await browser.close();await new Promise(r=>server.close(r));}

@@ -14,6 +14,11 @@ import { audit,simulate } from './gameday-rivals-qa.mjs';
 import { enumerate } from './qa.mjs';
 const data=audit();
 const memory=()=>{const m=new Map();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,v),removeItem:k=>m.delete(k)};};
+test('completed-season instructional renderer remains unchanged by active-round density styling',()=>{
+  const source=readFileSync(new URL('./game/gameday-rivals-view.js',import.meta.url),'utf8');
+  const debrief=source.slice(source.indexOf('function debrief('),source.indexOf('export function renderGame'));
+  assert.equal(createHash('sha256').update(debrief.replace(/\r\n/g,'\n')).digest('hex'),'3dc9931e5d63df940d56d50545c8b41c5c67e631739bea234afe2bc3f2d7986f');
+});
 
 test('all 64 player histories × 32 seeds produce exactly 2,048 reproducible six-round seasons',()=>{
   assert.equal(scenario.rounds.length,6);assert.deepEqual(scenario.actions.map(a=>a.id),ACTIONS);
