@@ -30,7 +30,7 @@ async function select(page, postings) {
 async function totals(page, accounts) {
   assert.equal(await target(page), e.gdp(accounts));
   for (const key of [...Object.keys(accounts), 'NX']) {
-    assert.equal(await page.locator(`[data-component="${key}"] dd`).innerText(), (key === 'NX' ? e.nx(accounts) : accounts[key]).toLocaleString('en-US'));
+    assert.equal(await page.locator(`[data-component="${key}"] .component-value`).innerText(), (key === 'NX' ? e.nx(accounts) : accounts[key]).toLocaleString('en-US'));
   }
 }
 async function setup(viewport, seed, reduce = false, blocked = false) {
@@ -157,7 +157,7 @@ try {
   const scenario = e.currentScenario(e.newRun(1)); await select(page,scenario.postings); await action(page,'post');
   assert.equal(await page.locator('[data-action="next"]').count(),1);
   await page.emulateMedia({reducedMotion:'reduce'}); await settled(page);
-  await page.goto(origin+'/games/'); await page.getByRole('link',{name:'PLAY GDP LIVE'}).click();
+  await page.goto(origin+'/games/'); await page.getByRole('link',{name:'PLAY GAME: GDP LIVE',exact:true}).click();
   assert.match(page.url(),/\/games\/gdp-live\/$/); await page.close();
   assert.deepEqual(errors,[]); assert.deepEqual(external,[]);
   await writeFile(out+'results.json',JSON.stringify({results,errors,external},null,2));

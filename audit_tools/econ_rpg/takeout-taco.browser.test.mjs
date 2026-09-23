@@ -160,7 +160,7 @@ try {
   assert.equal(record.events[0].allocationAttemptNumber,0);assert.equal(record.events[0].capacityQuestionCorrect,null);
   assert.ok(record.events.filter(e=>e.action!=='game_complete').every(e=>e.completed===false));
   assert.equal(record.events.filter(e=>e.action==='debrief_answer').length,6);assert.equal(record.events.filter(e=>e.action==='game_complete').length,1);
-  await p.getByRole('link',{name:'RETURN TO GAMES'}).click();assert.equal(new URL(p.url()).pathname,'/games/');await p.getByRole('link',{name:'PLAY LUNCH RUSH'}).click();await imageCrew(p,0);await p.close();
+  await p.locator('.end-actions').getByRole('link',{name:'RETURN TO GAMES'}).click();assert.equal(new URL(p.url()).pathname,'/games/');await p.getByRole('link',{name:'PLAY GAME: Takeout Taco: Lunch Rush',exact:true}).click();await imageCrew(p,0);await p.close();
   results.push('Solo calm/threshold/stress/low-and-high-backlog return paths; all images; boundaries; unique logs; cap fallback; full debrief after crew reduction; replay, telemetry and return route passed.');
   for(const [index,viewport] of [{width:1920,height:1080},{width:1280,height:720},{width:900,height:800},{width:768,height:1024},{width:390,height:844},{width:320,height:740}].entries()){
     const p=await setup(viewport), depth=4+index%3;

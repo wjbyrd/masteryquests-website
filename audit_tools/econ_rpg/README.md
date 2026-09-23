@@ -12,6 +12,8 @@ node audit_tools/econ_rpg/serve.mjs
 
 Open <http://127.0.0.1:4179>. The preview binds only to loopback and serves only `game/`. Set `PORT` if needed. Keep the command running while playing; Ctrl+C stops it. ES modules need an HTTP preview; do not double-click the HTML file. Saves belong to the browser and exact origin, including port.
 
+The complete private [Games library](http://127.0.0.1:4179/games/) links all seven mini-games. Each game has a permanent **RETURN TO GAMES** link. See the [mini-game accessibility audit](MINI-GAME-ACCESSIBILITY-AUDIT.md) for the inventory, artwork choices, fixes, keyboard/zoom checks, and remaining manual review.
+
 - [Room to Stay](http://127.0.0.1:4179/?scenario=housing-crisis): housing policy; the unchanged default.
 - [The Main Attraction](http://127.0.0.1:4179/?scenario=main-attraction): monopoly and market power; development-complete and ready for instructor QA.
 - [The Economy’s Edge](http://127.0.0.1:4179/?scenario=ppf): scarcity, production possibilities, recovery and growth; private instructor QA.

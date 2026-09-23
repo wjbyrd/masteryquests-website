@@ -17,7 +17,7 @@ export function productionGraph(kind, tested, reveal = false, id = kind) {
   const description = points.map(p => `Worker ${p.workers}: ${p.value} tacos (${p.observed ? 'observed' : 'revealed from the complete record'})`).join('; ');
   const ticks = Array.from({ length: maximum / step + 1 }, (_, i) => i * step);
   return `<figure class="production-graph" data-graph="${kind}"><h3>${title}</h3><p class="axis-label">${axis}</p>
-    <svg viewBox="0 0 480 302" role="img" aria-labelledby="${id}-title ${id}-desc">
+    <svg viewBox="0 0 480 302" role="img" aria-labelledby="${id}-title" aria-describedby="${id}-desc">
       <title id="${id}-title">${title}: workers and tacos</title><desc id="${id}-desc">${description}${total ? '' : '. Worker 3 peaks at 13. Worker 4 is the first decline at 11, still positive.'}</desc>
       ${ticks.map(n => `<line class="graph-grid" x1="52" x2="448" y1="${y(n)}" y2="${y(n)}"/><text class="graph-tick" x="40" y="${y(n) + 6}" text-anchor="end">${n}</text>`).join('')}
       <path class="graph-axis" d="M52 20 V254 H448"/>
@@ -26,5 +26,6 @@ export function productionGraph(kind, tested, reveal = false, id = kind) {
       ${points.some(p => !p.observed) ? `<polyline class="graph-line" points="${observedCoords}"/>` : ''}
       ${points.map(p => `${!total && [3, 4].includes(p.workers) ? `<circle class="graph-highlight" cx="${x(p.workers)}" cy="${y(p.value)}" r="13"/>` : ''}${p.observed ? `<circle class="graph-point" data-workers="${p.workers}" data-value="${p.value}" data-observed="true" cx="${x(p.workers)}" cy="${y(p.value)}" r="6"/>` : `<path class="revealed-point" data-workers="${p.workers}" data-value="${p.value}" data-observed="false" d="M${x(p.workers)} ${y(p.value) - 7} l7 7 -7 7 -7 -7 Z"/>`}`).join('')}
     </svg><p class="axis-label x-axis">Workers</p>
+    <details class="graph-data"><summary>${title} graph values</summary><table><caption>${axis} · same values as the graph</caption><thead><tr><th scope="col">Workers</th><th scope="col">${total ? 'Tacos' : 'Additional tacos'}</th><th scope="col">Record</th></tr></thead><tbody>${points.map(p => `<tr><th scope="row">${p.workers}</th><td>${p.value}</td><td>${p.observed ? 'Observed' : 'Revealed'}</td></tr>`).join('')}</tbody></table></details>
     <figcaption><span>● Observed</span>${points.some(p => !p.observed) ? '<span>◇ Revealed from complete record</span>' : ''}${!total ? '<span class="graph-key">Worker 3: peak 13 · Worker 4: first decline 11</span>' : ''}</figcaption></figure>`;
 }
