@@ -21,11 +21,11 @@ test('staging uses the existing explicit deny rule; current production build exc
   } }
   walk(dist);
   assert.ok(files.length > 100);
-  const supplied = ['approved-assets.json','main-attraction-assets.json','ppf-assets.json','megastar-mania-assets.json','gameday-rivals-assets.json'].flatMap(name => JSON.parse(readFileSync(new URL(`./art/${name}`, import.meta.url), 'utf8')));
+  const supplied = ['approved-assets.json','main-attraction-assets.json','ppf-assets.json','megastar-mania-assets.json','gameday-rivals-assets.json','labor-force-files-assets.json'].flatMap(name => JSON.parse(readFileSync(new URL(`./art/${name}`, import.meta.url), 'utf8')));
   const artHashes = new Set(supplied.map(a => a.sha256));
   for (const file of files) {
     assert.doesNotMatch(file, /econ[_-]rpg|housing-crisis/i);
-    if (/\.(html|js|json|css)$/i.test(file)) assert.doesNotMatch(readFileSync(file, 'utf8'), /mq\.econ-rpg|scenarios\/housing-crisis|Room to Stay|The Main Attraction|main-attraction\.js|The Economy[’']s Edge|scenarios\/ppf|Megastar Mania|megastar-mania|Jules Arlen|Gameday Rivals|gameday-rivals|gamedayRivalsSave_v1|Copper Cart|Clover Run|CPI LIVE|cpi-live/);
+    if (/\.(html|js|json|css)$/i.test(file)) assert.doesNotMatch(readFileSync(file, 'utf8'), /mq\.econ-rpg|scenarios\/housing-crisis|Room to Stay|The Main Attraction|main-attraction\.js|The Economy[’']s Edge|scenarios\/ppf|Megastar Mania|megastar-mania|Jules Arlen|Gameday Rivals|gameday-rivals|gamedayRivalsSave_v1|Copper Cart|Clover Run|CPI LIVE|cpi-live|LABOR FORCE FILES|labor-force-files/);
     if (/\.(png|webp)$/i.test(file)) assert.equal(artHashes.has(createHash('sha256').update(readFileSync(file)).digest('hex')), false, 'Approved art must not publish under any name');
   }
 });

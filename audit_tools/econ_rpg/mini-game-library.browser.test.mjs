@@ -203,12 +203,12 @@ async function seeded(p){await p.addInitScript(()=>{const original=crypto.getRan
 let zoomContext;
 try{
   const landing=await browser.newPage({viewport:{width:1366,height:900}});watch(landing);await landing.goto(origin+'/games/');
-  // CPI LIVE has its own exhaustive keyboard/zoom browser suite; inspect its card here too.
-  assert.deepEqual((await landing.locator('[data-game]').evaluateAll(es=>es.map(e=>e.dataset.game))).sort(),[...inventory,'cpi-live'].sort());
+  // New measurement games have their own exhaustive keyboard/zoom suites; inspect their cards here too.
+  assert.deepEqual((await landing.locator('[data-game]').evaluateAll(es=>es.map(e=>e.dataset.game))).sort(),[...inventory,'cpi-live','labor-force-files'].sort());
   for(const card of await landing.locator('.game-card').all()){
     assert.ok((await card.locator('h2').innerText()).length>3);assert.ok((await card.locator('p').innerText()).length>30);
     assert.equal(await card.locator('img,[role=img]').count(),1);
-    if(await card.locator('img').count()){await card.locator('img').evaluate(i=>i.decode());assert.equal(await card.locator('img').evaluate(i=>getComputedStyle(i).objectFit),'contain');}
+    if(await card.locator('img').count()){await card.locator('img').evaluate(i=>i.decode());assert.equal(await card.locator('img').evaluate(i=>getComputedStyle(i).objectFit),(await card.getAttribute('data-game'))==='takeout-taco-lunch-rush'?'cover':'contain');}
   }
   await reflow(landing,'library');await landing.close();
   for(const mode of ['desktop','zoom200']){
