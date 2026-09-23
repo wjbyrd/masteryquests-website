@@ -14,6 +14,8 @@ Open <http://127.0.0.1:4179>. The preview binds only to loopback and serves only
 
 The complete private [Games library](http://127.0.0.1:4179/games/) links all seven mini-games. Each game has a permanent **RETURN TO GAMES** link. See the [mini-game accessibility audit](MINI-GAME-ACCESSIBILITY-AUDIT.md) for the inventory, artwork choices, fixes, keyboard/zoom checks, and remaining manual review.
 
+The [instructional follow-up audit](INSTRUCTIONAL-FOLLOWUP-AUDIT.md) documents the seven-game review, targeted end-of-game applications, PPF and ticket-market diagrams, unchanged PASS games, and regression checks.
+
 - [Room to Stay](http://127.0.0.1:4179/?scenario=housing-crisis): housing policy; the unchanged default.
 - [The Main Attraction](http://127.0.0.1:4179/?scenario=main-attraction): monopoly and market power; development-complete and ready for instructor QA.
 - [The Economy’s Edge](http://127.0.0.1:4179/?scenario=ppf): scarcity, production possibilities, recovery and growth; private instructor QA.

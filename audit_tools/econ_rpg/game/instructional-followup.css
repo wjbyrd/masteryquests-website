@@ -1,0 +1,26 @@
+.instructional-followup{margin:28px 0;padding-top:24px;border-top:2px solid #91a9c5;overflow-wrap:anywhere}
+.instructional-followup>h3{margin-top:0}.instructional-followup h4{line-height:1.5}
+.instructional-followup .followup-stage{margin-top:24px;padding:18px;background:#071f3c;border:1px solid #91a9c5;border-radius:12px}
+.instructional-followup .followup-options{display:grid;gap:10px}
+.instructional-followup button{min-height:48px;white-space:normal;border-color:#91a9c5}
+.instructional-followup button[aria-pressed=true]{border:3px solid #efcd87}
+.instructional-followup button[aria-pressed=true]::after{content:' — Selected';font-weight:700}
+.instructional-followup button[aria-disabled=true]{cursor:default}
+.instructional-followup :focus-visible{outline:3px solid #efcd87;outline-offset:4px}
+.instructional-followup .followup-feedback:not(:empty){margin:16px 0 0;padding-left:12px;border-left:3px solid #efcd87}
+.instructional-followup table{width:100%;table-layout:fixed;font-size:.92rem;margin:16px 0}
+.instructional-followup th,.instructional-followup td{padding:8px;overflow-wrap:anywhere;text-align:left}
+.instructional-followup caption{text-align:left;margin-bottom:8px;font-weight:650}
+.instructional-followup .followup-graph{margin:20px 0}
+.instructional-followup .followup-graph th:first-child{width:23%}
+.instructional-followup svg{display:block;width:100%;max-width:520px;height:auto;background:#071f3c;border-radius:10px}
+.instructional-followup svg text{fill:#ebf3ff;font:22px system-ui,sans-serif}
+.instructional-followup svg line,.instructional-followup svg path{fill:none;stroke:#ebf3ff;stroke-width:2}
+.instructional-followup svg circle,.instructional-followup svg rect{fill:#ebf3ff}
+.instructional-followup svg .model-curve{stroke:#77d9d3;stroke-width:4}
+.instructional-followup svg .model-expanded{stroke:#efcd87;stroke-width:4;stroke-dasharray:9 5}
+.instructional-followup svg .model-price{stroke:#ebf3ff;stroke-dasharray:6 4}
+.instructional-followup svg .model-guide{stroke:#bccbe1;stroke-dasharray:3 5}
+.instructional-followup figcaption{margin:10px 0;color:#bccbe1}
+@media(max-width:480px){.instructional-followup .followup-stage{padding:12px}.instructional-followup th,.instructional-followup td{padding:6px}.instructional-followup button{padding:12px}}
+@media(forced-colors:active){.instructional-followup svg text{fill:CanvasText}.instructional-followup svg line,.instructional-followup svg path{stroke:CanvasText}.instructional-followup svg circle,.instructional-followup svg rect{fill:CanvasText}.instructional-followup button[aria-pressed=true]{border-color:Highlight}}

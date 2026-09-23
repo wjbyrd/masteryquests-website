@@ -1,5 +1,6 @@
 import { nodeContent, availableChoices, matches } from './engine.js';
 import { renderScene } from './scenes.js';
+import { renderFollowup } from './instructional-followup-view.js';
 export function el(tag, text, className) {
   const element = document.createElement(tag);
   if (text !== undefined) element.textContent = text;
@@ -157,7 +158,10 @@ export function render(s, run, saved, actions, focus = true) {
     view.append(el('h3', 'Alternative decisions'));
     const alternatives = el('ul', undefined, 'what-ifs');
     [0, 2, 3].filter(i => i < run.history.length).forEach(i => alternatives.append(el('li', run.history[i].whatIf)));
-    view.append(alternatives, button('Replay scenario', actions.replay));
+    view.append(alternatives);
+    const followup = renderFollowup(s.id, run);
+    if (followup) view.append(followup);
+    view.append(button('Replay scenario', actions.replay));
   }
   const scene = renderScene(s.sceneSet, run || saved);
   if (scene) document.querySelector('#view-title').after(scene);

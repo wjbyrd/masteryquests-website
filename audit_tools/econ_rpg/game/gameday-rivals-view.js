@@ -1,6 +1,7 @@
 import { el } from './ui.js';
 import { sceneFor, activityFor } from './scenarios/gameday-rivals-scenes.js';
 import { BASE_PAYOFFS, CLASSIFICATIONS, seasonStats, mutualStandardCounterfactual, outcomeText, seasonOrderShares } from './scenarios/gameday-rivals-market.js';
+import { renderFollowup } from './instructional-followup-view.js';
 export const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 export function shareLabels(history=[]) {
   const tenths=Math.round(seasonOrderShares(history).player*10);
@@ -99,7 +100,12 @@ export function renderGame(s,run,saved,roots,actions,qaSeed=null) {
     if(qaSeed!==null) view.append(el('p',`QA seed: ${qaSeed}. Replay uses this fixed seed.`,'gr-note'));
     return;
   }
-  if(run.phase==='debrief') {debrief(s,run,view,actions);return;}
+  if(run.phase==='debrief') {
+    debrief(s,run,view,actions);
+    const followup=renderFollowup(s.id,run);
+    if(followup) view.lastElementChild.before(followup);
+    return;
+  }
   const round=s.rounds[run.roundIndex];title(view,round.name,`Game Day ${run.roundIndex+1} of 6${run.phase==='reveal'?' · Both offers revealed':''}`);
   const opportunity=el('p',undefined,'gr-opportunity');opportunity.append(el('span','Market opportunity'),el('strong',round.demand));view.append(opportunity);
   const body=el('div',undefined,'gr-round-body'),side=el('div',undefined,'gr-round-side');

@@ -4,6 +4,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { previewServer } from './serve.mjs';
 import { scenarios } from './game/scenarios/registry.js';
+import { followupFor } from './game/instructional-followup.js';
 import * as gdp from './game/games/gdp-live/engine.js';
 import { CONFIG } from './game/games/gdp-live/config.js';
 const {chromium}=createRequire(import.meta.url)(process.env.PLAYWRIGHT_MODULE||'playwright');
@@ -94,6 +95,24 @@ async function dialog(p){
   await p.keyboard.press('Escape');assert.equal(await p.locator('dialog').isVisible(),false);assert.equal(await p.evaluate(()=>document.activeElement.id),'restart');
   await activate(p,'#restart');await activate(p,'#cancel-restart');assert.equal(await p.evaluate(()=>document.activeElement.id),'restart');
 }
+async function completeApplications(p,id){
+  const run=await p.evaluate(id=>JSON.parse(localStorage.getItem(id==='gameday-rivals'?'gamedayRivalsSave_v1':`mq.econ-rpg.${id}`)),id);
+  if(id==='gameday-rivals')run.phase='debrief';
+  const model=followupFor(id,run);
+  for(const task of model.questions){
+    assert.equal(await p.locator('.followup-stage').getAttribute('data-question'),task.id);
+    const options=p.locator('.followup-options button');
+    for(let i=0;i<task.options.length;i++)if(i!==task.correct){
+      await activate(p,options.nth(i),'Space');
+      assert.match(await p.locator('.followup-feedback').textContent(),/Reconsider.*Choose again\./);
+      assert.equal(await p.locator('.followup-stage .primary').isVisible(),false);
+    }
+    await activate(p,options.nth(task.correct));
+    assert.match(await p.locator('.followup-feedback').textContent(),/^Correct\./);
+    await activate(p,p.locator('.followup-stage .primary'));
+  }
+  assert.equal(await p.locator('.instructional-followup').getAttribute('data-complete'),'true');
+}
 async function playRpg(p,id,mode){
   await activate(p,p.getByRole('button',{name:'Begin scenario',exact:true}));
   await dialog(p);if(mode==='desktop')await reflow(p,id+'-decision');
@@ -104,7 +123,9 @@ async function playRpg(p,id,mode){
     await activate(p,p.getByRole('button',{name:/Continue to next decision|See your outcome/}));
   }
   await inspect(p,id+'-complete');if(mode==='desktop')await reflow(p,id+'-complete');
+  await completeApplications(p,id);
   await activate(p,p.getByRole('button',{name:'Replay scenario',exact:true}));assert.ok(await p.locator('[data-choice]').count()>0);
+  assert.equal(await p.locator('.instructional-followup').count(),0);
 }
 async function playGameday(p,mode){
   await activate(p,p.getByRole('button',{name:'Start Season',exact:true}));await dialog(p);
@@ -116,7 +137,9 @@ async function playGameday(p,mode){
     await activate(p,p.locator('#view .gr-continue'));
   }
   if(mode==='desktop')await reflow(p,'gameday-complete');else await inspect(p,'gameday-complete-zoom');
+  await completeApplications(p,'gameday-rivals');
   await activate(p,p.getByRole('button',{name:'Play Another Season',exact:true}));assert.equal(await p.locator('[data-strategy]').count(),2);
+  assert.equal(await p.locator('.instructional-followup').count(),0);
 }
 async function graphTable(p,kind,values){
   const graph=p.locator(`[data-graph="${kind}"]`);
