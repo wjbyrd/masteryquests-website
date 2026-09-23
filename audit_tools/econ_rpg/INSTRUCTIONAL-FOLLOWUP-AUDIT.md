@@ -1,123 +1,181 @@
 # Instructional follow-up audit
 
-Audited 2026-09-22. Private preview only; no deployment or push.
+Initial library audit: 2026-09-22. Targeted instructional-design revision: 2026-09-23. Private preview only; no deployment or push.
 
-## Inventory and decision
+## Inventory and current closure
 
-Inspected the private library, scenario registry, both standalone game folders, shared RPG ending renderer, Gameday season debrief, and public game collection entry points. Seven games fit this audit. The Economic Realm, Managerial Intelligence Directorate, Macro Command System and Micro Domains are adaptive question-bank collections; their classroom/faculty variants are also excluded. Econ-nections is a grouping puzzle, not an economic simulation. No public game was changed.
+Seven private games fit the RPG, economic-simulation or accounting categories. Public adaptive collections (Economic Realm, Managerial Intelligence Directorate, Macro Command System and Micro Domains), their classroom/faculty variants, and the Econ-nections grouping puzzle remain outside this audit.
 
-The table records the **pre-change** findings. A read-only counterfactual is useful explanation, but does not demonstrate that the learner can apply the idea.
-
-| Game | Type | What happened? | Why economically? | Transfer? | Action |
+| Game | Current type | What happened? | Why economically? | Transfer? | Latest action |
 |---|---|---|---|---|---|
-| Room to Stay | Branching housing-policy RPG | PASS | PASS | GAP | MINOR |
-| The Main Attraction | Branching market-power RPG | PASS | PASS | GAP | MINOR |
-| The Economy’s Edge | Branching production simulation | PASS | PASS | GAP | MINOR |
-| Megastar Mania | Branching ticket-market RPG | PASS | PASS | GAP | MINOR |
-| Gameday Rivals | Repeated-strategy simulation | PASS | PASS | GAP | MINOR |
+| Room to Stay | Branching price-ceiling / housing-market simulation | PASS | PASS | PASS | Recenter scenario; formal ceiling model; numeric variants |
+| The Main Attraction | Branching market-power RPG | PASS | PASS | PASS | Numeric follow-up variants only |
+| The Economy’s Edge | Branching production simulation | PASS | PASS | PASS | Content unchanged; shared resolved-answer fix |
+| Megastar Mania | Branching ticket-market RPG | PASS | PASS | PASS | Content unchanged; shared resolved-answer fix |
+| Gameday Rivals | Repeated-strategy simulation | PASS | PASS | PASS | Content unchanged; shared resolved-answer fix |
 | Takeout Taco: Lunch Rush | Production simulation | PASS | PASS | PASS | NONE |
 | GDP LIVE | Accounting/classification simulation | PASS | PASS | PASS | NONE |
 
-No game had a major explanation gap. In particular, Economy’s Edge already explicitly explains all eight requested mechanisms in its path consequences and four debrief sections. It needed model interpretation and answered transfer, not a replacement debrief. All five modified games now provide an application sequence with explanatory correction feedback and an explicit completion state. Existing endings, path recaps and classroom stopping points remain available.
+The initial audit identified five minor transfer gaps, no major explanation gaps, and two PASS games requiring no work. This revision addresses the subsequent conceptual-identity and replayability review. It does not replace the shared RPG engine or impose one ending template on every game.
 
-## Per-game evidence and changes
+## Room to Stay: from choosing a policy to managing its consequences
 
-### Room to Stay
+### Old and new conceptual structure
 
-**Current follow-up inspected:** actual six-choice path, state changes, mechanisms and consequence/tradeoff disclosures; efficiency/quantity, distribution/affordability, and fiscal-cost/timing debrief; three path-selected alternative decisions. The path covers binding ceilings, rationing, repair incentives, subsidies, additionality, constraints, delayed construction and budget opportunity cost. No answered transfer task existed.
+Previously the opening offered a rent ceiling, rental assistance or emergency grants. Two routes could avoid a ceiling entirely. The new version begins after political pressure over rising rents has led Linden to impose a **binding ceiling below equilibrium**, including future rental projects. Lower covered rents benefit incumbents; more units are sought and fewer offered at the controlled price. The housing advisor inherits that condition rather than voting on it.
 
-**Change:** appended “Advise the next city,” linked to the actual opening choice and its mechanism. Two applications: predict newcomer access when an already binding ceiling is lowered; calculate additional construction when 50 units are supported but 30 would have been built anyway, distinguishing them from repairs to 80 occupied units. Correct additional supply is 20. Distractor feedback separates low posted rent from obtaining a lease, allocation from extra supply, and spending from additionality. No graph or debrief rewrite.
+The opening, library card and debrief now identify a price-ceiling simulation. The six-decision arc retains seven authored nodes and branching:
+
+| Decision | Preserved material / targeted revision |
+|---|---|
+| 1. Vacancy allocation | Lottery and new-lease exemption moved to the opening. Lottery changes allocation, not the shortage. Exempt leases can charge market rents; existing covered tenants retain protection. |
+| 2. Maintenance | Inspections, conditional repair grants and phased requirements retained. Controlled revenue limits recovery of repair costs; some owners defer work or withdraw marginal units. Grants improve existing homes without adding apartments. |
+| 3. Future supply | Permitting reform, co-funded mixed-rent construction and retaining development limits retained. Added a new-construction exemption when new leases are still controlled. Expected returns improve before homes arrive. |
+| 4. Incumbents/newcomers | Distinct controlled-new-lease and exempt-new-lease branches. Choose stronger incumbent renewal security (less turnover) or application/relocation help for newcomers (public cost, no invented units). |
+| 5. Mitigation | Targeted rental assistance, temporary eviction grants and tapering now sit on top of the ceiling. Assistance does not create vacancies; exempt rents may absorb purchasing power. |
+| 6. Two-year review | Access versus current-renter stability retained. Earlier supply policies deliver with a lag. New-construction exemptions now have their own delayed outcome; reform responds less strongly when new units remain controlled. |
+
+No route repeals the ceiling on existing covered leases. New-lease exemptions therefore do not erase the premise. Both benefits and costs remain explicit: lower rents/security for covered tenants, rationing/access for outsiders, maintenance and construction incentives, and fiscal costs of mitigation. No policy is scored as universally best.
+
+### Initialization and saved runs
+
+| Indicator | Former pre-policy baseline | New inherited-ceiling start | Reason |
+|---|---:|---:|---|
+| Renter affordability | 2 | 5 | First-order payment relief for covered incumbents |
+| Housing availability | 3 | 2 | More applicants and fewer units offered at the controlled price |
+| Housing quality | 5 | 5 | Future maintenance pressure is not instant physical damage |
+| Budget room | 7 | 7 | Enacting the ceiling is not itself the assistance expenditure |
+| Construction incentive | 3 | 2 | Lower expected controlled returns weaken incentives |
+
+These are bounded 0–8 ordinal teaching indicators, not estimated effects. The original model disclaimer remains; the opening also states the ordinal limitation. Comments and tests document the initialization. Quality pressure is explained before the maintenance decision; nuanced “some owners” language avoids claiming universal neglect.
+
+Room to Stay is now **scenario version 2**. Current saves resume exactly at every phase. Version-1 saves receive the existing version-mismatch notice and a fresh-start option; they are not silently translated into different decisions or outcomes. The shared save format, storage key and engine are unchanged. Other games’ saves remain isolated.
+
+### Endings and representative paths
+
+All five ending IDs, titles and precedence rules remain. Three summaries now explicitly connect the result to the inherited ceiling; existing shortage and protected-tenant summaries already made that connection. Counts changed because the decision arc changed:
+
+| Ending | Revised paths | Representative choices |
+|---|---:|---|
+| Relief with a funding gap | 75 | registry → inspect → reform → stability → renew → protect |
+| A lease worth holding onto | 33 | registry → phase → reform → stability → renew → access |
+| More homes, a difficult transition | 8 | exempt → inspect → reform → search → taper → access |
+| Stability for some, a wait for others | 88 | registry → inspect → reform → stability → renew → access |
+| Room to move, work still ahead | 48 | registry → inspect → reform → search → taper → access |
+
+**252 legal paths**, six decisions each, seven nodes and 18 node/choice pairs. The regenerated [QA guide](QA-PATHS.md) contains 18 routes covering every choice, reachable consequence variant and ending. No unreachable ending/node, cycle or dead end remains. All five supplied neighborhood images are reused unchanged. Opening art now shows vacancy pressure; the new construction-exemption route uses the existing construction/completed-homes rules.
+
+### Formal bridge and applications
+
+“Read the rent ceiling” follows the experiential ending, actual path recap, consequences, economics and alternatives. Its introduction cites the player’s actual allocation and maintenance choices. One responsive SVG shows upward-sloping supply and downward-sloping demand; Pe/Qe equilibrium; Pc below Pe; Qs < Qe < Qd; and a labelled bracket for **shortage = Qd − Qs**. The graphic has axis labels, SVG title/description and a visible text equivalent. Line patterns, labels and the bracket make meaning independent of color.
+
+The graph explicitly represents the **initial controlled market**, not estimated Linden quantities or the final market after exemptions and mitigation. No fake empirical numbers are supplied.
+
+Three short applications complete the sequence:
+
+1. Read the diagram: another city uses a transparent lottery at unchanged Pc and curves. The shortage remains Qd − Qs; allocation changes.
+2. Transfer: lowering an already binding ceiling with upward-sloping supply widens the shortage; low advertised rent does not guarantee access.
+3. Additionality: distinguish repaired occupied units from new supply and subtract construction that would have occurred anyway. Four numeric variants replace the fixed example.
+
+Incorrect options explain the relevant misconception and permit correction. The existing outcome remains a classroom stopping point; replay and Return to Games stay available.
+
+## Replayability: small numeric pools
+
+Only surface values in two numeric templates vary. Qualitative questions, RPG choices, payoffs, transitions and ending rules are not randomized.
 
 ### The Main Attraction
 
-**Current follow-up inspected:** actual path and indicators, explicit MR below price under uniform pricing, elasticity, segmentation/resale, congestion, repairs versus investment, sunk versus marginal cost, substitutes and entry barriers. Existing alternatives were read-only.
+The park’s gameplay and debrief are unchanged. Its resale/segmentation application is unchanged. The incremental-profit question has four variants:
 
-**Change:** appended “Try the next attraction,” linked to the final choice and its mechanism. Two applications: evaluate a uniform price cut from 100 tickets at $50 to 110 at $48 with $350 extra cost; diagnose freely resalable student discounts in a new museum. Revenue rises $280, average incremental revenue is $28 per extra guest, and profit falls $70. Feedback explains the lost revenue on existing sales and the need to separate customer groups. No monopoly graph or changes to gameplay.
+| Variant | Before Q @ P | After Q @ P | Extra cost | Lost revenue on existing sales | Revenue on extra sales | ΔTR | ΔProfit |
+|---|---|---|---:|---:|---:|---:|---:|
+| A | 100 @ $50 | 110 @ $48 | $350 | $200 | $480 | $280 | −$70 |
+| B | 120 @ $45 | 135 @ $43 | $300 | $240 | $645 | $405 | +$105 |
+| C | 80 @ $60 | 92 @ $57 | $444 | $240 | $684 | $444 | $0 |
+| D | 150 @ $40 | 175 @ $38 | $500 | $300 | $950 | $650 | +$150 |
 
-### The Economy’s Edge
+All before/after revenues, losses on existing sales, additional-ticket revenue, net revenue change, extra cost and profit effects are computed from the selected data. The correct option and explanation are generated from the result, including unchanged profit in C. Average incremental revenue is respectively $28, $27, $37 and $26 per extra guest—below each new ticket price because existing sales also receive the price cut.
 
-**Current follow-up inspected:** actual production path and ordinal state changes; scarcity, increasing opportunity cost, consumer/capital allocation, productive efficiency, idle resources, recovery, delayed investment and outward capacity shifts already explicit. Missing a learner-operated formal-model bridge.
+Distractors model two distinct errors: ignore the discount on existing sales; or confuse revenue change with profit change. Option order varies deterministically across pool entries. This prevents learning a fixed answer position or an always-negative profit sign. Arithmetic is integral, with no rounding ambiguity.
 
-**Change:** appended “Read the frontier,” with one responsive PPF SVG. It connects the actual disruption and final allocation to an illustrative position: B inside the original frontier for remaining slack; A on the original frontier for full recovery without expansion; C on the larger frontier only for realized expansion. The dashed frontier is explicitly hypothetical for runs that did not reach it. Three applications distinguish recovery B→A, completed productivity gains/outward shift, and forgone consumer goods when reallocating fully employed resources to capital goods.
+### Room to Stay
 
-**Graph notes:** consumer goods horizontally, capital goods vertically; original and expanded frontiers differ by solid/dashed strokes, not color alone. Visible caption and A/B/C interpretation table provide a text equivalent; SVG title/description support assistive technology. Positions are schematic relationships, not game-indicator coordinates or quantities. No claim that a balanced mix is inherently best, or that planned investment immediately increases capacity.
+| Variant | Occupied units repaired | Supported new units | Would have been built anyway | Additional units |
+|---|---:|---:|---:|---:|
+| A | 80 | 50 | 30 | 20 |
+| B | 90 | 60 | 25 | 35 |
+| C | 65 | 45 | 20 | 25 |
+| D | 100 | 70 | 50 | 20 |
 
-### Megastar Mania
+Correct answers are calculated as supported minus baseline. Distractors count all supported units or incorrectly add repairs to new construction. Prompt, options, explanation and feedback derive from the same selected values. Repairs remain explicitly separate from new supply.
 
-**Current follow-up inspected:** path-specific consequences, derived ticket-market display, ending, actual choices and state changes; shortage/surplus and price pressure, receipts versus resale proceeds, capacity changes and demand shifts already explained. No graph interpretation or answered transfer.
+### Selection and reset
 
-**Change:** appended “Here is what economists draw,” referencing the actual final choice/mechanism and final market result. One responsive diagram shows fixed remaining capacity S, downward-sloping D and the retained posted-price line. Qd/Qs ordering comes directly from `ticketMarket(run)`, including both price decisions; it never compares raw fan interest with supply. Two applications interpret the run’s shortage/balance/surplus and resulting price pressure, then distinguish another artist’s hit-driven demand shift from a price movement or additional capacity. Feedback explains why stronger interest cannot raise fixed-price sales beyond capacity.
+`instructional-variants.js` hashes the existing randomly generated run UUID with a template salt to select one of four variants. A new run can draw a new variant; consecutive repeats remain possible. Resume/reload of the same saved outcome keeps its variant, so a task does not change mid-attempt. Selection never reads economic indicators, choices or the ending, and never mutates a saved run.
 
-**Graph notes:** this is short-run remaining ticket capacity, so S is vertical. The curve shapes and distances are schematic, without dollar or ticket-count scales inferred from ordinal indicators. A visible description and expanded label key accompany the accessible SVG. Only one graph appears per ending; no extra stage diagrams or changes to existing art.
+An internal index override permits exact unit testing. Browser QA supplies controlled run IDs to cover every entry without exposing QA controls to players. No question bank, new storage schema, random gameplay branch, identity field or telemetry infrastructure was introduced. Practice answer state remains view-local and clears on replay/reset; reloading restarts practice with the same surface values.
 
-### Gameday Rivals
+## Shared renderer and games preserved
 
-**Current follow-up inspected:** actual profits and weighted shares, actual action-pair counts, base payoff matrix, T>R>P>S, individual/joint incentives, one-shot dominance/Nash equilibrium, uncertain history-dependent rival, final-round pressure and the fixed-demand all-Standard benchmark. This was strong explanation but no answered counterfactual.
+Resolved choices now use native `disabled`, replacing the previous aria-only interaction guard. Selected text and `aria-pressed` remain visible. Focus moves to the explanatory feedback, and Tab reaches Next/Finish directly rather than revisiting resolved answers. Feedback remains semantic, visible and accessible; incorrect answers stay interactive. Button targets remain at least 44px, with visible keyboard focus and no new animation.
 
-**Change:** appended “A different promotion game” after the existing debrief and before replay. Actual player aggression count connects the season to a new, clearly hypothetical payoff matrix: Standard/Standard $120/$120; Aggressive/Standard $140/$50; Standard/Aggressive $50/$140; Aggressive/Aggressive $40/$40. One task asks for the best response to each rival offer. Correct: Aggressive against Standard, Standard against Aggressive; neither dominates. Feedback explains why mutual Aggressive is no longer Nash when matching costs change. No recommendation to coordinate and no claim of a unique repeated-game equilibrium.
+Economy’s Edge retains its PPF diagram and three existing tasks; Megastar retains its price-sensitive diagram and two tasks; Gameday retains its counterfactual payoff matrix/task. These games receive only the necessary shared resolved-answer behavior. Their authored content, engines, scenarios, artwork and state logic are unchanged. Gameday’s original debrief function still matches its frozen hash.
 
-The existing `debrief` function retains its frozen source hash. The new matrix is teaching content only: actual payoffs, rival behavior, shares, classifications, imagery and active-round layout are unchanged.
+Takeout Taco and GDP LIVE remain entirely untouched. Taco already links observed production to marginal-product calculations, graphs and a two-truck transfer. GDP already requires component posting, error correction, a separate ledger audit and combined-change calculation. Their runtime files and telemetry are byte-unchanged.
 
-### Takeout Taco: Lunch Rush — unchanged
+## Files in this revision
 
-**Current follow-up inspected:** observed production record; 3–6 evidence-dependent Production Review tasks with explanations and marginal-product calculations; total- and marginal-product graph interpretation; observed/revealed distinction and accessible graph tables; fixed-input synthesis; two-truck allocation retries; two final capacity/diminishing-returns questions.
-
-This already connects the learner’s record to mechanisms and requires application beyond the original truck. The same six workers can be allocated across two trucks: 3+3 produces 62 tacos versus 53 on one truck, followed by explanation of the changed capital constraint. No runtime, content, imagery or telemetry files changed.
-
-### GDP LIVE — unchanged
-
-**Current follow-up inspected:** seeded transactions with actual component postings and receipts; correction feedback on exclusions, investment and imports; identity synthesis; a separate draft-ledger error identification/repair task; combined GDP-change calculation; actual final ledger and performance review.
-
-This already requires correction and synthesis: the final simultaneous changes imply +$20B, with import offsets and signed investment changes accounted for. Errors permit revision without prematurely applying incorrect postings. No additional units or questions were needed. No runtime, content, imagery or telemetry files changed.
-
-## State, accessibility and classroom use
-
-- New questions appear only after the existing RPG ending or Gameday season debrief. Existing teaching text and read-only alternatives remain intact.
-- Each task requires a correct answer to advance; every wrong option has misconception-specific feedback and permits correction. There is no numerical grade or score added to an ending. Replay and Return to Games remain available for classroom stopping points.
-- Practice is local to the mounted ending view. Replay/restart discards it. Reload/resume reconstructs the saved economic outcome and starts practice afresh; answers are not advertised as saved. No changes to game save schemas, balances, histories, classifications or market logic.
-- The modified games have no active anonymous event recorder (RPG transitions have a no-op integration seam). No telemetry infrastructure, identity collection, network events or storage keys were added. Taco/GDP telemetry remains untouched.
-- Native buttons, visible selected text, 48px minimum targets, live textual feedback, labelled choice groups and focused task/completion headings support keyboard use. Graphs have text equivalents, and new styling is scoped to the follow-up section. No animation is introduced.
-
-## Files
+All paths below are relative to `audit_tools/econ_rpg/`.
 
 Created:
 
-- `game/instructional-followup.js` — pure scenario-specific applications and answer feedback.
-- `game/instructional-followup-view.js` — end-only rendering, diagrams, tables and session practice state.
-- `game/instructional-followup.css` — scoped responsive presentation.
-- `instructional-followup.test.mjs` — exhaustive model/path/answer and unchanged-file checks.
-- `instructional-followup.browser.test.mjs` — ending/model variants, correction flow, reflow, reload/reset/navigation.
-- `INSTRUCTIONAL-FOLLOWUP-AUDIT.md` — this report.
+- `game/instructional-variants.js` — four validated entries per numeric template, run-ID selection and dynamic questions/calculations.
 
-Modified:
+Modified runtime/presentation:
 
-- `game/ui.js` — append applications after existing RPG alternatives.
-- `game/gameday-rivals-view.js` — append application after the preserved season debrief.
-- `gameday-rivals.test.mjs` — permit the authorized shared UI append; preserve all engine/data/style and frozen-path checks.
-- `mini-game-library.browser.test.mjs` — complete new tasks through keyboard-only wrong-answer/correction flows in existing full runs.
-- `README.md` — link this audit.
+- `game/scenarios/housing-crisis.js` — v2 inherited-ceiling premise, six-stage arc, initialization, distribution branches, new-construction exemption, mitigation and debrief.
+- `game/scenarios/housing-scenes.js` — initial pressure image and new exemption pipeline; asset bytes unchanged.
+- `game/games/index.html` — Room to Stay description only.
+- `game/instructional-followup.js` — housing graph and three tasks; housing/park numeric factories.
+- `game/instructional-followup-view.js` — ceiling SVG and native resolved-answer/focus behavior.
+- `game/instructional-followup.css` — resolved cursor rule now targets native disabled buttons.
+
+Modified QA/documentation:
+
+- `engine.test.mjs`, `scenes.test.mjs`, `browser.test.mjs` — revised housing premise, all paths, economic invariants, scenes, versions and browser fixtures.
+- `instructional-followup.test.mjs`, `instructional-followup.browser.test.mjs`, `mini-game-library.browser.test.mjs` — every numeric variant, dynamic answers, graph geometry, disabled/focus flow, reset and keyboard/zoom checks.
+- `main-attraction.test.mjs`, `ppf.test.mjs`, `megastar-mania.test.mjs`, `gameday-rivals.test.mjs` — replace the obsolete housing-v1 fingerprint/blanket no-change guard with the reviewed v2 reference; retain other games’ frozen checks.
+- `main-attraction.browser.test.mjs`, `ppf.browser.test.mjs`, `megastar-mania.browser.test.mjs` — their cross-game save-isolation fixture uses the new housing opening choice.
+- `qa.mjs`, `QA-PATHS.md`, `README.md`, `INSTRUCTIONAL-FOLLOWUP-AUDIT.md` — current arc, counts, saved-version behavior and audit evidence.
+
+Shared `engine.js`, `storage.js`, `rpg.js`, `ui.js`, scene renderer and existing RPG/Gameday styles were not edited. Public game/navigation/build configuration files were not edited.
 
 ## Verification
 
-The combined unit/regression suite passes **76 tests**. It includes all 200 housing paths, 665 attraction paths, 361 PPF paths and 729 Megastar paths (1,955 total); all 2,048 seeded Gameday seasons; all new answer branches; unchanged frozen RPG histories/endings and Gameday behavior/debrief hash. PPF A/B/C mapping and all three derived ticket-market states are checked exhaustively. Independent arithmetic checks cover both new calculations and changed best responses.
+**79 unit/regression tests passed.** Housing checks enumerate all 252 paths and replay every saved phase; verify initial state/premise, no enact-or-avoid opening, rationing, repair-only effects, distribution branches, all five endings, delayed construction and exemption interactions. New tests independently recompute all eight numeric variants, answer positions, distinct options, explanations, integer incremental revenue and stable run-based selection. Every wrong answer supplies substantive feedback; no NaN/undefined values occur.
 
-Existing Taco coverage includes 9,020 legal prefixes, 5,791 cap-complete paths and graph/two-truck branches. GDP includes all scenario/account combinations, all audits and 1,000 complete seeded runs. The publication check performs a local build and confirms private-file exclusion. Git diff checks confirm PASS games, scenario economics, saves and public surfaces are unchanged.
+Unchanged regression coverage includes 665 park paths, 361 PPF paths, 729 Megastar paths, all 2,048 seeded Gameday seasons, Taco production/graph/two-truck branches and 1,000 seeded complete GDP runs. Prior non-housing gameplay fingerprints remain unchanged. A local publication build confirms private-file exclusion; it does not deploy.
 
-Browser suites:
+Browser QA:
 
-- `mini-game-library.browser.test.mjs`: all seven games from their Games cards, completed with Tab/Enter/Space, replay and return, at desktop and real Chrome 200% zoom (14 complete runs). New tasks exercise every wrong option and correction. Existing checks cover contrast, focus, native dialogs, target sizes, tables, image alternatives, 1366/900/390/320px reflow and reduced motion.
-- `instructional-followup.browser.test.mjs`: 37 representative ending/model variants at 1280px and 320px, plus one per modified game at 768px and 390px (84 checks). Verifies correct end-only content, all wrong/correct feedback, advance guards, original debrief retention, immutable saves, fresh practice on reload, restart and Return to Games. No console/page/HTTP errors. Screenshots in ignored `tmp/econ-rpg/instructional-followup/`; library results in ignored `tmp/econ-rpg/library-accessibility/`.
+- Housing browser suite: nine opening/ending combinations plus one extra art-coverage route at 1280, 390 and 320px (30 complete runs), plus two subsidy runs. Checks all five art states, consequences, saved phases, replay, version mismatch, blocked storage, keyboard help, responsive layout and no external requests/CSP/console/page errors.
+- Instructional follow-up suite: 45 ending/model/explicit-numeric fixtures at both 1280 and 320px, plus five-game spot checks at 768 and 390px (100 checks). All four housing and four park variants are individually exercised with keyboard-only application controls, every wrong option and correction. Tests check Pc below Pe, Qs < Qe < Qd, semantic graph text, option/feedback reflow, touch targets, native disabling, explanation focus, next-control focus, same variant on resume, reset and return navigation.
+- Seven-game library suite: 14 complete keyboard-only runs, including real Chrome 200% zoom, reduced motion, replay and return. Contrast, target sizes, tables, focus and native restart dialogs pass. The other games’ existing follow-ups still complete through the shared renderer fix.
+- Dedicated Main Attraction, PPF and Megastar browser regressions: 27, 33 and 51 complete coverage runs respectively across 1280/390/320px, plus save-isolation, ending review, replay, version-mismatch and blocked-storage checks. Existing scenes and endings still render correctly with no external requests, CSP violations or runtime errors.
 
-Run with the existing external Playwright module path as needed:
+Screenshots/results are ignored under `tmp/econ-rpg/`, including `instructional-followup/` and `library-accessibility/`. Numeric question and resolved-feedback screenshots cover each pool entry on desktop and narrow mobile. No console/page errors occurred in the completed browser runs.
+
+Reproduce with the existing external Playwright module configuration:
 
 ```powershell
 node --test audit_tools/econ_rpg/instructional-followup.test.mjs audit_tools/econ_rpg/engine.test.mjs audit_tools/econ_rpg/scenes.test.mjs audit_tools/econ_rpg/main-attraction.test.mjs audit_tools/econ_rpg/ppf.test.mjs audit_tools/econ_rpg/megastar-mania.test.mjs audit_tools/econ_rpg/gameday-rivals.test.mjs audit_tools/econ_rpg/takeout-taco.test.mjs audit_tools/econ_rpg/gdp-live.test.mjs audit_tools/econ_rpg/publication.test.mjs
+node audit_tools/econ_rpg/browser.test.mjs
 node audit_tools/econ_rpg/instructional-followup.browser.test.mjs
 node audit_tools/econ_rpg/mini-game-library.browser.test.mjs
 ```
 
 ## Instructor judgment and limits
 
-The new economics are mechanically checked, but instructors should decide whether schematic PPF positions and fixed-window vertical ticket supply are the right formalization level for their course. They are explicitly illustrative, not estimated economic relationships. Housing additionality assumes the stated no-program construction baseline; the museum and new delivery payoff matrix are hypothetical transfer cases, not new game rules.
+The ceiling model intentionally uses upward-sloping supply, a binding initial control and a two-year horizon. Actual rent-control rules, elasticities and owner responses differ; ordinal magnitudes are not empirical predictions. The graph is an initial-market formalization, while the scenario explores later exemptions and mitigation. The additionality baseline is explicitly supplied, not inferred from spending.
 
-Actual screen-reader speech and physical-device checks remain useful; automated semantics, keyboard/zoom/reflow and contrast checks are not a claim of full accessibility certification. No further content addition is required to close the identified transfer gaps.
+Instructors may review the illustrative strength/timing of responses and ending precedence for their course. No political recommendation or unique best policy is implied. Automated semantics, keyboard/zoom/reflow and contrast checks do not replace testing actual screen-reader speech and physical devices.

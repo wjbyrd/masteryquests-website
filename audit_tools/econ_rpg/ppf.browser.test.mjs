@@ -94,7 +94,7 @@ try {
 
   // Both scenarios share an origin, but must never share a save key.
   await page.goto(origin); await page.getByRole('button', { name: 'Begin scenario' }).click();
-  await page.locator('[data-choice="ceiling"]').click();
+  await page.locator('[data-choice="registry"]').click();
   await page.goto(`${origin}/?scenario=main-attraction`); await page.getByRole('button', { name: 'Begin scenario' }).click();
   await page.locator('[data-choice="raise"]').click(); const originalHousing = await housingBytes();
   await page.goto(url); await page.getByRole('button', { name: 'Begin scenario' }).waitFor();

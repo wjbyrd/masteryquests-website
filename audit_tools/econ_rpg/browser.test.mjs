@@ -87,22 +87,25 @@ try {
   await bounds(); await page.screenshot({ path: path.join(out, 'intro-desktop.png'), fullPage: true });
   await page.getByRole('button', { name: 'Begin scenario' }).focus(); await page.keyboard.press('Enter'); await focus();
   await page.keyboard.press('Tab');
-  assert.equal(await page.evaluate(() => document.activeElement.dataset.choice), 'ceiling');
+  assert.equal(await page.evaluate(() => document.activeElement.dataset.choice), 'registry');
   assert.equal(await page.evaluate(() => getComputedStyle(document.activeElement).outlineStyle), 'solid');
   await page.keyboard.press('Space');
-  await focus(); assert.match(await page.locator('#announcement').innerText(), /affordability increased/);
+  await focus(); assert.match(await page.locator('#announcement').innerText(), /Budget room decreased/);
   const snapshot = await saved();
   await page.reload(); await page.getByRole('button', { name: /Resume decision/ }).click();
   assert.deepEqual(await saved(), snapshot); assert.match(await page.locator('#view').innerText(), /Policy consequences/);
   await sceneCheck();
-  await next(); assert.match(await page.locator('#view-title').innerText(), /vacant apartment/);
-  await choose('registry'); await next();
+  await next(); assert.match(await page.locator('#view-title').innerText(), /Keeping homes habitable/);
   assert.match(await page.locator('#view').innerText(), /cannot recover those costs/);
+  await choose('grants'); await next();
   await page.getByRole('button', { name: 'Start over', exact: true }).click(); await page.keyboard.press('Escape');
   assert.ok(await page.getByRole('dialog').isHidden()); assert.equal((await saved()).history.length, 2);
   check('Keyboard activation, focus, live updates, exact consequence resume, conditional narrative, restart cancellation');
   // Exhaustive first-decision / ending combinations through real controls at all three widths.
-  const representatives = summarize(enumerate()).representatives;
+  const allPaths=enumerate();
+  const representatives = summarize(allPaths).representatives;
+  const baseline=allPaths.complete.find(r=>selectScene(scenario.sceneSet,r).id==='baseline');
+  representatives.push({combination:`baseline coverage / ${baseline.endingID}`,choices:baseline.history.map(h=>h.choiceID)});
   for (const width of [1280, 390, 320]) {
     await page.setViewportSize({ width, height: width === 320 ? 720 : 960 });
     // This isolated browser context owns its test save; leave the user's preview untouched.
@@ -112,7 +115,7 @@ try {
     await bounds(); await page.screenshot({ path: path.join(out, `intro-${width}.png`), fullPage: true });
     await page.getByRole('button', { name: 'Begin scenario' }).click(); await focus();
     await page.screenshot({ path: path.join(out, `first-decision-${width}.png`), fullPage: true });
-    await choose('ceiling');
+    await choose('exempt');
     const status = page.locator('#state-panel'), help = status.locator('details'), summary = help.locator('summary');
     assert.equal(await help.getAttribute('open'), null);
     assert.equal(await status.locator('.indicator-list .state-item').count(), 5);
@@ -120,11 +123,11 @@ try {
     assert.ok(await status.locator('.indicator-definitions').isHidden());
     assert.doesNotMatch(await status.locator('.indicator-list').innerText(), /Moderate|Limited|Strong|Weak|Relief for current renters|Access for people/);
     const affordability = status.locator('.state-item').first();
-    assert.match(await affordability.locator('.state-value').innerText(), /5 \/ 8/);
-    assert.equal(await affordability.locator('.steps .filled').count(), 5);
-    assert.match(await affordability.locator('.state-change').innerText(), /↑ \+3/);
-    assert.match(await affordability.locator('.state-change .sr-only').textContent(), /Increased by 3 steps after the latest decision/);
-    assert.match(await status.locator('.state-item').nth(1).innerText(), /↓ -1/);
+    assert.match(await affordability.locator('.state-value').innerText(), /4 \/ 8/);
+    assert.equal(await affordability.locator('.steps .filled').count(), 4);
+    assert.match(await affordability.locator('.state-change').innerText(), /↓ -1/);
+    assert.match(await affordability.locator('.state-change .sr-only').textContent(), /Decreased by 1 step after the latest decision/);
+    assert.match(await status.locator('.state-item').nth(1).innerText(), /↑ \+1/);
     assert.equal(await status.locator('.state-item').nth(3).locator('.state-change').count(), 0);
     assert.ok((await status.boundingBox()).height < 420, 'Collapsed status remains compact at every width');
     await bounds(); await page.screenshot({ path: path.join(out, `consequence-${width}.png`), fullPage: true });
@@ -137,7 +140,7 @@ try {
     assert.ok((await summary.boundingBox()).height >= 44);
     await bounds(); await page.screenshot({ path: path.join(out, `state-help-${width}.png`), fullPage: true });
     await page.keyboard.press('Space'); assert.equal(await help.getAttribute('open'), null);
-    await next(); assert.match(await status.locator('.state-change').first().innerText(), /↑ \+3/);
+    await next(); assert.match(await status.locator('.state-change').first().innerText(), /↓ -1/);
     await fresh(); assert.equal(await status.locator('.state-change').count(), 0);
     check(`Minimal intro, numeric status, signed latest changes, reset, collapsed definitions and keyboard help at ${width}px`);
     for (const representative of representatives) {
@@ -160,7 +163,7 @@ try {
       assert.equal(await page.locator('.path > li').count(), 6); assert.equal(await page.locator('.what-ifs > li').count(), 3);
       await bounds();
       await page.locator('.path details summary').first().click(); await bounds();
-      if (representative.combination === 'ceiling / protected') await page.screenshot({ path: path.join(out, `debrief-${width}.png`), fullPage: true });
+      if (representative.combination === 'registry / protected') await page.screenshot({ path: path.join(out, `debrief-${width}.png`), fullPage: true });
       violations.push(...await page.evaluate(() => window.__networkViolations));
     }
     check(`All ${representatives.length} opening-policy / ending combinations at ${width}px; six decisions, debrief, tap sizes and no overflow`);
@@ -172,18 +175,17 @@ try {
   await page.getByRole('button', { name: 'Replay scenario' }).click();
   assert.notEqual((await saved()).runID, oldID); assert.equal((await saved()).history.length, 0);
   await page.screenshot({ path: path.join(out, 'decision-mobile.png'), fullPage: true });
-  await choose('assistance'); await page.screenshot({ path: path.join(out, 'consequence-mobile.png'), fullPage: true }); await next();
-  await choose('expand'); await next(); await choose('grants'); await next();
-  assert.equal(await page.locator('[data-choice="subsidy"]').count(), 0);
-  assert.match(await page.locator('#view').innerText(), /at least 3 steps/);
+  await choose('exempt'); await next(); await choose('grants'); await next();
+  assert.equal(await page.locator('[data-choice="exempt"]').count(), 0);
+  assert.match(await page.locator('#view').innerText(), /only if new leases are still controlled/);
   await page.reload(); await page.getByRole('button', { name: /Resume decision/ }).click();
-  assert.equal(await page.locator('[data-choice="subsidy"]').count(), 0);
+  assert.equal(await page.locator('[data-choice="exempt"]').count(), 0);
   await page.setViewportSize({ width: 390, height: 844 }); await bounds();
   await page.setViewportSize({ width: 640, height: 960 }); await bounds();
-  check('Replay identity reset, unavailable subsidy, exact decision resume, 390px and 640px layouts');
+  check('Replay identity reset, duplicate exemption unavailable, exact decision resume, 390px and 640px layouts');
   for (const [ids, ending] of [
-    [['bridge', 'target', 'phase', 'subsidy', 'taper', 'access'], 'supply'],
-    [['ceiling', 'registry', 'inspect', 'subsidy', 'taper', 'protect'], 'protected']
+    [['exempt', 'phase', 'subsidy', 'search', 'taper', 'access'], 'supply'],
+    [['registry', 'inspect', 'subsidy', 'stability', 'taper', 'protect'], 'protected']
   ]) {
     await fresh();
     for (const id of ids) { await choose(id); await next(); await bounds(); }
@@ -195,12 +197,12 @@ try {
   await page.reload(); await page.getByRole('button', { name: 'Begin scenario' }).waitFor();
   assert.match(await page.locator('#storage-notice').innerText(), /different scenario version/);
   await page.getByRole('button', { name: 'Begin scenario' }).click();
-  assert.equal((await saved()).scenarioVersion, 1);
+  assert.equal((await saved()).scenarioVersion, 2);
   const blocked = await context.newPage();
   await blocked.addInitScript(() => { Object.defineProperty(window, 'localStorage', { get() { throw new DOMException('Storage blocked'); } }); });
   await blocked.goto(origin); await blocked.getByRole('button', { name: 'Begin scenario' }).click();
   assert.match(await blocked.locator('#storage-notice').innerText(), /could not be saved/);
-  await blocked.locator('[data-choice="ceiling"]').click();
+  await blocked.locator('[data-choice="registry"]').click();
   assert.equal(await blocked.locator('#view-title').innerText(), 'Policy consequences');
   check('Version mismatch fails safely; blocked storage remains playable with clear warning');
   check('Five distinct local scene images without captions at desktop, 390px and 320px; reload restores each view; bounded phone framing and descriptive alternatives');

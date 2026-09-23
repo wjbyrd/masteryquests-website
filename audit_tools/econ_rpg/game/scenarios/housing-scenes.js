@@ -1,7 +1,7 @@
-const pipeline = { any: [{ chosen: 'supply.reform' }, { chosen: 'supply.subsidy' }] };
+const pipeline = { any: [{ chosen: 'supply.reform' }, { chosen: 'supply.subsidy' }, { chosen: 'supply.exempt' }] };
 const delivered = { any: [{ chosen: 'review.access' }, { chosen: 'review.protect' }] };
 export default {
-  width: 1448, height: 1086, initial: 'baseline',
+  width: 1448, height: 1086, initial: 'pressure',
   // First match wins. Deterioration remains visible even when construction exists.
   variants: [
     { id: 'maintenance', src: './art/scenes/maintenance.webp', label: 'Deferred maintenance', when: { state: 'quality', op: 'lte', value: 3 },

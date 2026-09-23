@@ -76,7 +76,7 @@ test('construction is not usable capacity; completion occurs once and deferred r
 
 test('every phase of every park path resumes exactly; scenarios, restart, replay and versions remain isolated', () => {
   const storage = memory();
-  const home = decide(housing, createRun(housing), 'ceiling'); saveRun(storage, housing, home);
+  const home = decide(housing, createRun(housing), 'registry'); saveRun(storage, housing, home);
   for (const run of data.result.complete) {
     for (const phase of trace(run.history.map(h => h.choiceID)).phases) {
       assert.equal(saveRun(storage, scenario, phase), true);
@@ -114,7 +114,7 @@ test('six approved park masters/WebPs retain their original bytes and unique nam
   }
 });
 
-test('Room to Stay data, artwork and shared transition/storage/UI implementations are untouched', () => {
-  // Shared presentation can gain opt-in displays; frozen paths and browser regressions protect existing behavior.
-  execFileSync('git', ['diff','--exit-code','HEAD','--','audit_tools/econ_rpg/game/engine.js','audit_tools/econ_rpg/game/storage.js','audit_tools/econ_rpg/game/scenes.js','audit_tools/econ_rpg/game/scenarios/housing-crisis.js','audit_tools/econ_rpg/game/scenarios/housing-scenes.js','audit_tools/econ_rpg/art/approved-assets.json'], { stdio: 'pipe' });
+test('Shared engine, storage, scene renderer and approved artwork remain untouched', () => {
+  // Room to Stay v2 is an authorized scenario revision; shared engines and approved art stay frozen.
+  execFileSync('git', ['diff','--exit-code','HEAD','--','audit_tools/econ_rpg/game/engine.js','audit_tools/econ_rpg/game/storage.js','audit_tools/econ_rpg/game/scenes.js','audit_tools/econ_rpg/art/approved-assets.json'], { stdio: 'pipe' });
 });

@@ -1,4 +1,5 @@
 import { ticketMarket, marketCopy } from './scenarios/megastar-mania-market.js';
+import { variantIndex, parkQuestion, housingQuestion } from './instructional-variants.js';
 
 // Presentation-only applications. Neither answers nor diagrams enter the saved
 // economic state. A reload offers a fresh practice attempt on the saved outcome.
@@ -6,32 +7,31 @@ const option = (text, feedback) => ({ text, feedback });
 const question = (id, prompt, correct, options, explanation) => ({ id, prompt, correct, options, explanation });
 const pathLink = entry => `You chose “${entry.label}”. Your path illustrated ${entry.mechanism.toLowerCase()}. Apply that reasoning to a different setting.`;
 
-export function followupFor(id, run) {
+export function followupFor(id, run, { variant: override } = {}) {
   if (!run || !['ending', 'debrief'].includes(run.phase)) return null;
   const history = run.history;
   if (id === 'housing-crisis') return {
-    title: 'Advise the next city', intro: pathLink(history[0]),
+    title: 'Read the rent ceiling',
+    intro: `You already saw this happen. You inherited a ceiling below equilibrium and chose “${history[0].label}”, then “${history[1].label}”. Lower covered rents helped incumbents, while more applicants sought fewer available units. The graph shows that initial controlled market; later exemptions and mitigation in your path can change its response.`,
+    graph: { kind: 'ceiling', description: 'Rent is on the vertical axis; rental units on the horizontal axis. Upward-sloping S and downward-sloping D intersect at equilibrium rent Pe and quantity Qe. The binding ceiling Pc is below Pe. At Pc, Qs is below Qe and Qd is above Qe: Qd > Qs. The bracket from Qs to Qd is the shortage, Qd − Qs. This is an illustrative initial market, not measured Linden quantities or the final market after exemptions.' },
     questions: [
+      question('housing-graph', 'At Pc in the diagram, another city allocates the available Qs apartments through a transparent lottery. With the ceiling and curves unchanged, what happens to the shortage bracket?', 0, [
+        option('It remains Qd − Qs; the lottery changes who gets the available units.', ''),
+        option('It disappears because everyone now has an equal chance.', 'A fairer chance is not a promise of a lease. Compare how many households want units at Pc with how many units are offered.'),
+        option('It becomes Qe − Qs because demand stays at the equilibrium quantity.', 'Qe is the quantity at Pe. At the lower controlled price Pc, read the demand curve again: quantity demanded changes too.')
+      ], 'At the binding ceiling, Qd exceeds Qs. A lottery can improve transparency while leaving the shortage Qd − Qs unchanged. Relief for successful tenants and access for those still searching remain different outcomes.'),
       question('housing-access', 'Another city lowers an already binding rent ceiling. With upward-sloping rental supply and no new construction, what is the likely effect on access for newcomers?', 1, [
         option('Access improves automatically because every advertised rent is lower.', 'A lower payment helps someone who obtains a lease. Consider how the number seeking units compares with the number owners offer.'),
         option('The shortage widens: more households seek units while fewer units are offered.', ''),
         option('A vacancy lottery eliminates the shortage.', 'A lottery changes who gets the available homes. It does not add homes or remove excess demand.')
       ], 'A binding ceiling can lower rents for protected tenants while worsening access for newcomers. Price relief and housing availability are different outcomes.'),
-      question('housing-additionality', 'A city funds repairs to 80 occupied apartments and supports 50 new units. Of those new units, 30 would have been built anyway. How many additional units does this create relative to no program?', 2, [
-        option('130 units', 'Repairs preserve or improve existing homes; these 80 occupied apartments are not new units. Also subtract construction that would have happened anyway.'),
-        option('50 units', 'The relevant comparison is with no program, not with no construction at all. Some supported units would have been built anyway.'),
-        option('20 units', '')
-      ], '50 − 30 = 20 additional units. Repairs can improve quality and preserve existing supply, but this example adds no units through repair. Budget spending and additional housing are not the same measure.')
+      housingQuestion(variantIndex(run, 'housing-additionality', override))
     ]
   };
   if (id === 'main-attraction') return {
     title: 'Try the next attraction', intro: pathLink(history.at(-1)),
     questions: [
-      question('attraction-margin', 'A different park sells 100 tickets at $50. Cutting the single price to $48 sells 110 tickets. Serving the extra guests costs $350 more. With all other costs unchanged, should it cut the price to raise profit?', 0, [
-        option('No. Extra revenue is $280, less than the $350 extra cost.', ''),
-        option('Yes. The 10 extra tickets bring in $480, more than the extra cost.', 'The lower price also applies to the original 100 tickets. Include that lost revenue before comparing the extra revenue with extra cost.'),
-        option('Yes. More visitors always mean more profit.', 'Profit depends on revenue minus cost, not visitor count. Compare the change in total revenue with the change in cost.')
-      ], '$48 × 110 − $50 × 100 = $280 extra revenue, or $28 per extra guest, below the $48 ticket price. With $350 additional cost, profit falls $70. The price cut on existing sales is why marginal revenue is below price.'),
+      parkQuestion(variantIndex(run, 'attraction-margin', override)),
       question('attraction-resale', 'A new museum offers cheap student tickets and expensive general tickets. Student tickets are freely transferable and easy to resell. What threatens this pricing plan?', 2, [
         option('A price difference alone guarantees higher profit.', 'Higher-price customers need a reason they cannot use the cheap tickets. Think about what easy resale lets them do.'),
         option('The museum’s past construction spending becomes a marginal admission cost.', 'Past construction spending does not change when one more ticket is sold. The issue here is keeping customer groups separated.'),

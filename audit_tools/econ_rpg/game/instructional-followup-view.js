@@ -31,7 +31,7 @@ function graphFor(model) {
   }
   const line = (x1, y1, x2, y2, cls = '') => draw('line', { x1, y1, x2, y2, class: cls });
   const text = (x, y, label, attrs = {}) => draw('text', { x, y, ...attrs }, label);
-  draw('title', { id: 'followup-graph-title' }, model.kind === 'ppf' ? 'Production possibilities: recovery and growth' : `Your final ticket market: ${model.status}`);
+  draw('title', { id: 'followup-graph-title' }, model.kind === 'ceiling' ? 'A binding rent ceiling creates a shortage' : model.kind === 'ppf' ? 'Production possibilities: recovery and growth' : `Your final ticket market: ${model.status}`);
   draw('desc', { id: 'followup-graph-desc' }, model.description);
   line(80, 35, 80, 275); line(80, 275, 490, 275);
   if (model.kind === 'ppf') {
@@ -48,6 +48,23 @@ function graphFor(model) {
       ['B', 'Inside the original frontier: idle resources; recovery can raise both outputs.'],
       ['C', 'On a larger frontier: feasible only after productive capacity expands.']
     ] }));
+  } else if (model.kind === 'ceiling') {
+    text(12, 22, 'Rent'); text(230, 331, 'Rental units');
+    line(120, 230, 420, 30, 'model-expanded'); text(430, 42, 'S');
+    line(120, 30, 450, 250, 'model-curve'); text(132, 35, 'D');
+    line(80, 130, 270, 130, 'model-guide'); text(27, 138, 'Pe');
+    line(80, 200, 470, 200, 'model-price'); text(27, 208, 'Pc'); text(395, 190, 'Ceiling');
+    draw('circle', { cx: 270, cy: 130, r: 6 });
+    for (const [q, x, y] of [['Qs', 165, 200], ['Qe', 270, 130], ['Qd', 375, 200]]) {
+      if (q === 'Qe') { line(x, y, x, 214, 'model-guide'); line(x, 260, x, 275, 'model-guide'); }
+      else line(x, y, x, 275, 'model-guide');
+      text(x, 300, q, { 'text-anchor': 'middle' });
+    }
+    // An explicit bracket and label identify shortage independently of color.
+    line(165, 225, 375, 225); line(165, 220, 165, 232); line(375, 220, 375, 232);
+    text(270, 252, 'Shortage', { 'text-anchor': 'middle' });
+    figure.append(svg, el('figcaption', 'Pe / Qe: equilibrium rent / quantity. Pc: binding ceiling. Qs: units offered at Pc. Qd: units sought at Pc. Shortage = Qd − Qs.'));
+    figure.append(el('p', model.description));
   } else {
     const qs = 270, qd = model.status === 'shortage' ? 350 : model.status === 'surplus' ? 190 : 270;
     text(12, 22, 'Ticket price'); text(210, 325, 'Ticket quantity');
@@ -104,7 +121,12 @@ export function renderFollowup(id, run) {
         for (const sibling of options.children) sibling.setAttribute('aria-pressed', String(sibling === button));
         feedback.textContent = `${answer.correct ? 'Correct.' : 'Reconsider.'} ${answer.feedback}${answer.correct ? '' : ' Choose again.'}`;
         solved = answer.correct; next.hidden = !solved;
-        if (solved) for (const sibling of options.children) sibling.setAttribute('aria-disabled', 'true');
+        if (solved) {
+          for (const sibling of options.children) sibling.disabled = true;
+          // Do not strand focus on the newly disabled answer. The explanation
+          // stays visible/focusable; Tab proceeds directly to the next task.
+          feedback.tabIndex = -1; feedback.focus();
+        }
       }); options.append(button);
     });
     stage.append(el('p', `Application ${index + 1} of ${model.questions.length}`, 'eyebrow'), prompt, options, feedback, next);

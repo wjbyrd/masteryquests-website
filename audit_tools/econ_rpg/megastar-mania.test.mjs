@@ -161,13 +161,13 @@ test('All fourteen approved art files retain supplied bytes and dimensions in th
   for (const scene of scenario.sceneSet.variants) { assert.equal(scene.src,`./art/scenes/megastar-mania/${scene.id}.webp`); assert.ok(scene.alt.length > 100); }
 });
 
-test('All four scenarios preserve their entire frozen path behavior; engine, storage and earlier scenario data stay unchanged', () => {
+test('current housing v2 and other scenarios match frozen paths; engine, storage and other scenario data stay unchanged', () => {
   const hash = s => createHash('sha256').update(JSON.stringify(enumerate(s).complete)).digest('hex');
-  assert.equal(hash(housing),'f5eb10bba272b655a3253ba355b801b0aa7e445147ee4a0bed5ad4ec77cb1d6e');
+  assert.equal(hash(housing),'275c6f29ee1b47d5985f87357cfb6d0cc840443d61679ceae588f9cbffaf70a4');
   assert.equal(hash(attraction),'e9bb3c77ba9f57acc27b1d49a442e911526a761a70fe1bc51b072e40122561ad');
   assert.equal(hash(ppf),'3fd6ef7143484f891e64470ef384a8dde4174408426cd39f692fa1f45b550b3a');
   assert.equal(hash(scenario),'159c41396c164eb675935898b4e944fbc340c35dc6e07e1ce0f5329974d70532');
-  execFileSync('git',['diff','--exit-code','HEAD','--',...['engine.js','storage.js','scenes.js','scenarios/housing-crisis.js','scenarios/housing-scenes.js','scenarios/main-attraction.js','scenarios/main-attraction-scenes.js','scenarios/ppf.js','scenarios/ppf-scenes.js'].map(f => `audit_tools/econ_rpg/game/${f}`)],{stdio:'pipe'});
+  execFileSync('git',['diff','--exit-code','HEAD','--',...['engine.js','storage.js','scenes.js','scenarios/main-attraction.js','scenarios/main-attraction-scenes.js','scenarios/ppf.js','scenarios/ppf-scenes.js'].map(f => `audit_tools/econ_rpg/game/${f}`)],{stdio:'pipe'});
 });
 
 test('The qualitative panel and derived gauge are deterministic across all phases without suggesting raw interest minus capacity', () => {

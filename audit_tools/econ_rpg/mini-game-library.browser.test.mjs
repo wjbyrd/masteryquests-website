@@ -109,6 +109,10 @@ async function completeApplications(p,id){
     }
     await activate(p,options.nth(task.correct));
     assert.match(await p.locator('.followup-feedback').textContent(),/^Correct\./);
+    assert.equal(await p.locator('.followup-options button:disabled').count(),3);
+    assert.equal(await p.evaluate(()=>document.activeElement.className),'followup-feedback');
+    await p.keyboard.press('Tab');
+    assert.equal(await p.locator('.followup-stage .primary').evaluate(el=>el===document.activeElement),true);
     await activate(p,p.locator('.followup-stage .primary'));
   }
   assert.equal(await p.locator('.instructional-followup').getAttribute('data-complete'),'true');

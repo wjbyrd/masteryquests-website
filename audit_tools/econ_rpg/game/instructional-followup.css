@@ -5,7 +5,7 @@
 .instructional-followup button{min-height:48px;white-space:normal;border-color:#91a9c5}
 .instructional-followup button[aria-pressed=true]{border:3px solid #efcd87}
 .instructional-followup button[aria-pressed=true]::after{content:' — Selected';font-weight:700}
-.instructional-followup button[aria-disabled=true]{cursor:default}
+.instructional-followup button:disabled{cursor:default}
 .instructional-followup :focus-visible{outline:3px solid #efcd87;outline-offset:4px}
 .instructional-followup .followup-feedback:not(:empty){margin:16px 0 0;padding-left:12px;border-left:3px solid #efcd87}
 .instructional-followup table{width:100%;table-layout:fixed;font-size:.92rem;margin:16px 0}

@@ -7,6 +7,7 @@ import { enumerate } from './qa.mjs';
 import { audit } from './gameday-rivals-qa.mjs';
 import { scenarios } from './game/scenarios/registry.js';
 import { followupFor } from './game/instructional-followup.js';
+import { variantIndex } from './game/instructional-variants.js';
 const { chromium } = createRequire(import.meta.url)(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const out = fileURLToPath(new URL('../../tmp/econ-rpg/instructional-followup/', import.meta.url));
 await mkdir(out, { recursive: true });
@@ -20,6 +21,13 @@ for (const id of ['housing-crisis','main-attraction','ppf','megastar-mania']) {
   }
 }
 for (const { run } of audit().representatives) fixtures.push({ id: 'gameday-rivals', run, variant: run.classification });
+for (const [id,template] of [['housing-crisis','housing-additionality'],['main-attraction','attraction-margin']]) {
+  for(let i=0;i<4;i++) {
+    const run=structuredClone(enumerate(scenarios[id]).complete[0]);
+    for(let n=0;;n++) {run.runID=`numeric-qa-${n}`;if(variantIndex(run,template)===i)break;}
+    fixtures.push({id,run,variant:`numeric-${i}`});
+  }
+}
 const server = previewServer(); await new Promise(r => server.listen(0, '127.0.0.1', r));
 const origin = `http://127.0.0.1:${server.address().port}`;
 const browser = await chromium.launch({ channel: 'chrome', headless: true });
@@ -30,6 +38,16 @@ page.on('response', r => { if (r.status() >= 400) errors.push(`${r.status()} ${r
 async function resume(id) {
   await page.getByRole('button', { name: id === 'gameday-rivals' ? 'Review Saved Season' : 'Review saved outcome', exact: true }).click();
   await page.locator('.instructional-followup').waitFor();
+}
+async function activate(locator) {
+  for(let i=0;i<120;i++) {
+    if(await locator.evaluate(el=>el===document.activeElement)) {
+      assert.equal(await locator.evaluate(el=>getComputedStyle(el).outlineStyle),'solid');
+      await page.keyboard.press('Enter');return;
+    }
+    await page.keyboard.press('Tab');
+  }
+  throw Error('Cannot reach application control by keyboard');
 }
 try {
   for (const width of [1280,768,390,320]) {
@@ -53,26 +71,47 @@ try {
         assert.ok((await svg.locator('desc').textContent()).includes(model.graph.description));
         assert.ok((await svg.boundingBox()).width <= (await page.locator('.instructional-followup').boundingBox()).width + 1);
         if (id === 'ppf') assert.equal(await page.locator('.followup-graph tbody tr').count(), 3);
+        if (id === 'housing-crisis') {
+          assert.match(await svg.textContent(),/Qd − Qs/);
+          const geometry=await svg.evaluate(el=>({
+            ceiling:[...el.querySelectorAll('.model-price')].map(n=>Number(n.getAttribute('y1'))),
+            equilibrium:Number(el.querySelector('circle').getAttribute('cy')),
+            quantities:[...el.querySelectorAll('text')].filter(n=>['Qs','Qe','Qd'].includes(n.textContent)).map(n=>[n.textContent,Number(n.getAttribute('x'))])
+          }));
+          assert.ok(geometry.ceiling[0]>geometry.equilibrium,'ceiling is below equilibrium on price axis');
+          assert.deepEqual(geometry.quantities.map(q=>q[0]),['Qs','Qe','Qd']);
+          assert.ok(geometry.quantities[0][1]<geometry.quantities[1][1]&&geometry.quantities[1][1]<geometry.quantities[2][1]);
+        }
       }
       if (width === 1280 || width === 320) await page.locator('.instructional-followup').screenshot({ path: `${out}/${id}-${variant}-${width}.png` });
       for (const task of model.questions) {
         assert.equal(await page.locator('.followup-stage').getAttribute('data-question'), task.id);
+        assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${task.id}/${variant}/${width}: task overflow`);
+        for(const b of await page.locator('.followup-options button').all())assert.ok((await b.boundingBox()).height>=44);
+        if(task.variantID && variant.startsWith('numeric-'))await page.locator('.followup-stage').screenshot({path:`${out}/${task.variantID}-question-${width}.png`});
         for (let i = 0; i < task.options.length; i++) if (i !== task.correct) {
-          await page.locator('.followup-options button').nth(i).click();
+          await activate(page.locator('.followup-options button').nth(i));
           assert.ok((await page.locator('.followup-feedback').textContent()).includes(task.options[i].feedback));
           assert.equal(await page.locator('.followup-stage .primary').isVisible(), false);
         }
-        await page.locator('.followup-options button').nth(task.correct).click();
+        await activate(page.locator('.followup-options button').nth(task.correct));
         assert.ok((await page.locator('.followup-feedback').textContent()).includes(task.explanation));
+        assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`${task.id}/${variant}/${width}: feedback overflow`);
+        if(task.variantID && variant.startsWith('numeric-'))await page.locator('.followup-stage').screenshot({path:`${out}/${task.variantID}-answer-${width}.png`});
         const correctText = await page.locator('.followup-feedback').textContent();
+        assert.equal(await page.locator('.followup-options button:disabled').count(),3);
+        assert.equal(await page.evaluate(()=>document.activeElement.className),'followup-feedback');
         await page.locator('.followup-options button').nth((task.correct + 1) % 3).evaluate(el => el.click());
         assert.equal(await page.locator('.followup-feedback').textContent(), correctText, 'answered task stays resolved');
-        await page.locator('.followup-stage .primary').click();
+        await page.keyboard.press('Tab');
+        assert.equal(await page.locator('.followup-stage .primary').evaluate(el=>el===document.activeElement),true,'resolved answers are skipped by Tab');
+        await activate(page.locator('.followup-stage .primary'));
         assert.equal(await page.evaluate(() => document.activeElement.tagName), 'H4');
       }
       assert.equal(await page.locator('.instructional-followup').getAttribute('data-complete'), 'true');
       assert.equal(await page.evaluate(key => localStorage.getItem(key), key), JSON.stringify(saved), 'applications do not alter saved economic state');
       await page.reload(); await resume(id);
+      assert.equal(await page.locator('.followup-stage h4').textContent(),model.questions[0].prompt,'same numeric variant on resume');
       assert.equal(await page.locator('.followup-stage').getAttribute('data-question'), model.questions[0].id);
       assert.equal(await page.locator('.followup-feedback').textContent(), '');
       await page.locator('#restart').click(); await page.locator('#confirm-restart').click();

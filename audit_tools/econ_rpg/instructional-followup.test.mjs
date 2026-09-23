@@ -7,6 +7,7 @@ import { scenarios } from './game/scenarios/registry.js';
 import { createRun, decide } from './game/engine.js';
 import { followupFor, evaluateAnswer } from './game/instructional-followup.js';
 import { ticketMarket } from './game/scenarios/megastar-mania-market.js';
+import { PARK_VARIANTS, HOUSING_VARIANTS, parkValues, parkQuestion, housingQuestion, variantIndex } from './game/instructional-variants.js';
 
 test('all RPG paths have deterministic outcome-specific applications only after the ending', t => {
   for (const id of ['housing-crisis', 'main-attraction', 'ppf', 'megastar-mania']) {
@@ -60,7 +61,7 @@ test('all 2048 rival seasons retain actual counts and use a genuinely changed be
 });
 
 test('application calculations and model distinctions have independent economic checks', () => {
-  const park = followupFor('main-attraction', enumerate(scenarios['main-attraction']).complete[0]);
+  const park = followupFor('main-attraction', enumerate(scenarios['main-attraction']).complete[0], {variant:0});
   assert.equal(48 * 110 - 50 * 100, 280); assert.equal(280 - 350, -70);
   assert.match(park.questions[0].explanation, /\$28 per extra guest/);
   assert.equal(50 - 30, 20);
@@ -68,10 +69,46 @@ test('application calculations and model distinctions have independent economic 
   assert.ok(runs.some(run => Math.sign(run.state.demand - run.state.supply) !== Math.sign(ticketMarket(run).wanted - run.state.supply)), 'test includes raw-demand comparisons that would misclassify the market');
 });
 
-test('PASS games, economics, saves and public surfaces are unmodified', () => {
+test('all eight numeric variants have distinct answers, exact arithmetic, dynamic explanations and stable selection', () => {
+  for(const [i,v] of PARK_VARIANTS.entries()){
+    const x=parkValues(v), q=parkQuestion(i);
+    assert.equal(x.beforeTR,v.beforeP*v.beforeQ);assert.equal(x.afterTR,v.afterP*v.afterQ);
+    assert.equal(x.lostRevenue,v.beforeQ*(v.beforeP-v.afterP));assert.equal(x.addedRevenue,(v.afterQ-v.beforeQ)*v.afterP);
+    assert.equal(x.deltaTR,x.addedRevenue-x.lostRevenue);assert.equal(x.deltaProfit,x.afterTR-x.beforeTR-v.extraCost);
+    assert.ok(Number.isInteger(x.incrementalRevenue)&&x.incrementalRevenue<v.afterP);
+    assert.equal(new Set(q.options.map(o=>o.text)).size,3);
+    const expected=x.deltaProfit===0?'Profit is unchanged.':`Profit ${x.deltaProfit>0?'rises':'falls'} by $${Math.abs(x.deltaProfit)}.`;
+    assert.equal(q.options[q.correct].text,expected);
+    for(const n of [x.beforeTR,x.afterTR,x.lostRevenue,x.addedRevenue,x.deltaTR,v.extraCost]) assert.ok(q.explanation.includes(`$${n.toLocaleString('en-US')}`));
+    assert.ok(q.explanation.includes(expected));
+    q.options.forEach((_,j)=>assert.equal(evaluateAnswer(q,j).correct,j===q.correct));
+  }
+  for(const [i,v] of HOUSING_VARIANTS.entries()){
+    const q=housingQuestion(i);assert.ok(v.baseline<v.supported);
+    assert.equal(q.options[q.correct].text,`${v.supported-v.baseline} units`);
+    assert.match(q.explanation,new RegExp(`${v.supported} − ${v.baseline} = ${v.supported-v.baseline}`));
+    assert.ok(q.explanation.includes(String(v.repaired)));assert.equal(new Set(q.options.map(o=>o.text)).size,3);
+    q.options.forEach((_,j)=>assert.equal(evaluateAnswer(q,j).correct,j===q.correct));
+  }
+  for(const id of ['housing-crisis','main-attraction']){
+    const run=enumerate(scenarios[id]).complete[0], seen=new Set();
+    for(let n=0;n<64;n++){
+      const r={...run,runID:`qa-run-${n}`},before=JSON.stringify(r),m=followupFor(id,r);
+      const task=m.questions.find(q=>q.variantID);seen.add(task.variantID);
+      assert.deepEqual(followupFor(id,structuredClone(r)),m);assert.equal(JSON.stringify(r),before);
+      assert.doesNotMatch(JSON.stringify(m),/NaN|undefined/);
+      assert.equal(variantIndex(r,'test'),variantIndex({...r,state:{},history:[]},'test'),'no dependence on economic path');
+    }
+    assert.equal(seen.size,4);
+    for(let variant=0;variant<4;variant++)assert.ok(followupFor(id,run,{variant}).questions.some(q=>q.variantID));
+  }
+  assert.throws(()=>variantIndex({runID:'qa'},'test',4));
+});
+
+test('unrequested games, shared engines, saves and public surfaces are unmodified', () => {
   execFileSync('git', ['diff','--exit-code','HEAD','--',
     'audit_tools/econ_rpg/game/games/takeout-taco-lunch-rush', 'audit_tools/econ_rpg/game/games/gdp-live',
-    'audit_tools/econ_rpg/game/scenarios', 'audit_tools/econ_rpg/game/engine.js',
+    ...['main-attraction','ppf','megastar-mania','gameday-rivals'].map(s=>`audit_tools/econ_rpg/game/scenarios/${s}.js`), 'audit_tools/econ_rpg/game/engine.js',
     'audit_tools/econ_rpg/game/gameday-rivals-engine.js', 'audit_tools/econ_rpg/game/storage.js',
     'audit_tools/econ_rpg/game/gameday-rivals-storage.js', 'games', 'play'], { stdio: 'pipe' });
 });

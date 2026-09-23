@@ -93,7 +93,7 @@ try {
 
   // Both scenarios share an origin, but must never share a save key.
   await page.goto(origin); await page.getByRole('button', { name: 'Begin scenario' }).click();
-  await page.locator('[data-choice="ceiling"]').click(); const originalHousing = await housingBytes();
+  await page.locator('[data-choice="registry"]').click(); const originalHousing = await housingBytes();
   await page.goto(url); await page.getByRole('button', { name: 'Begin scenario' }).waitFor();
   assert.equal(await page.title(), 'The Main Attraction · Mastery Quests');
   await page.getByRole('button', { name: 'Begin scenario' }).focus(); await page.keyboard.press('Enter'); await focus();

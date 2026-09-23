@@ -13,24 +13,26 @@ const selected = run => selectScene(scenario.sceneSet, run).id;
 
 test('scene selection reflects housing conditions, construction lag and completion without mutating a run', () => {
   const run = createRun(scenario), snapshot = structuredClone(run);
-  assert.equal(selected(run), 'baseline'); assert.deepEqual(run, snapshot);
+  assert.equal(selected(run), 'pressure'); assert.deepEqual(run, snapshot);
   assert.equal(selectScene(null, run), null);
-  assert.equal(selected(path(['ceiling'])), 'pressure');
-  assert.equal(selected(path(['ceiling','registry','phase'])), 'maintenance');
-  assert.equal(selected(path(['bridge','target','inspect','reform'])), 'construction');
-  const renewed = path(['bridge','target','inspect','reform','taper']);
+  assert.equal(selected(path(['registry'])), 'pressure');
+  assert.equal(selected(path(['registry','phase'])), 'maintenance');
+  assert.equal(selected(path(['exempt','grants','reform'])), 'construction');
+  const renewed = path(['exempt','grants','reform','search','taper']);
   assert.equal(selected(renewed), 'construction');
   const delivered = decide(scenario, renewed, 'access');
   assert.equal(selected(delivered), 'homes');
   assert.equal(selected(advance(scenario, delivered)), 'homes');
   // Supply encouragement alone is not a completed-home image; weak response is not a "win".
-  assert.equal(selected(path(['ceiling','registry','inspect','reform','renew','access'])), 'pressure');
-  assert.equal(selected(path(['ceiling','registry','phase','reform','renew','protect'])), 'maintenance');
+  assert.equal(selected(path(['registry','inspect','reform','stability','renew','access'])), 'pressure');
+  assert.equal(selected(path(['registry','phase','reform','stability','renew','protect'])), 'maintenance');
+  assert.equal(selected(path(['registry','grants','exempt'])), 'construction');
+  assert.equal(selected(path(['registry','grants','exempt','search','taper','access'])), 'homes');
 });
 
-test('all five scenes reachable across unchanged 200 legal paths and resolve to the approved local WebPs', () => {
-  const result = enumerate(); assert.equal(result.complete.length, 200);
-  const reached = new Set(['baseline']);
+test('all five existing scenes reachable across 252 revised legal paths and resolve to approved local WebPs', () => {
+  const result = enumerate(); assert.equal(result.complete.length, 252);
+  const reached = new Set(['pressure']);
   for (const completed of result.complete) {
     let run = createRun(scenario);
     for (const choice of completed.history) {
@@ -71,15 +73,15 @@ test('supplied PNG masters and runtime WebPs remain byte-for-byte unchanged', ()
   }
 });
 
-test('pre-refinement version-1 saves remain byte-equivalent after replay', () => {
-  // Frozen from all 200 pre-refinement v1 paths, checked against commit 5508e8e.
-  // Detect changes to states, history text, routing, ending IDs or serialized shape.
+test('version-2 saves replay exactly; old version-1 outcomes are explicitly rejected', () => {
+  // Intentional v2 ceiling-first revision replaces the former 200-path v1 hash.
   const completeRuns = enumerate().complete;
   assert.equal(createHash('sha256').update(JSON.stringify(completeRuns)).digest('hex'),
-    'f5eb10bba272b655a3253ba355b801b0aa7e445147ee4a0bed5ad4ec77cb1d6e');
+    '275c6f29ee1b47d5985f87357cfb6d0cc840443d61679ceae588f9cbffaf70a4');
   for(const complete of completeRuns) {
     const raw=JSON.stringify(complete);
     const storage={getItem:key=>key===storageKey(scenario)?raw:null};
     assert.deepEqual(loadRun(storage,scenario).run,complete);
+    assert.equal(loadRun({getItem:()=>JSON.stringify({...complete,scenarioVersion:1})},scenario).reason,'version');
   }
 });
