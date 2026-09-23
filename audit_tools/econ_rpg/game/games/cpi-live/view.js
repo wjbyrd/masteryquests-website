@@ -1,23 +1,30 @@
 import { CONFIG } from './config.js';
-import { BASE, PHASES, cpi, inflation, model, isRepriced, indexKnown, rateKnown } from './engine.js';
+import { PHASES, cpi, inflation, model, isRepriced, indexKnown, rateKnown } from './engine.js';
+import { timelineCharts } from './charts.js';
 export const money = cents => (cents / 100).toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: cents % 100 ? CONFIG.decimals.currency : 0, maximumFractionDigits: CONFIG.decimals.currency });
 export const indexText = n => n.toFixed(CONFIG.decimals.index);
 export const rateText = n => `${n.toFixed(CONFIG.decimals.rate)}%`;
 export const signedMoney = cents => `${cents > 0 ? '+' : cents < 0 ? '−' : ''}${money(Math.abs(cents))}`;
 const esc = text => String(text).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const button = (action, label) => `<button class="primary" type="button" data-action="${action}">${label}</button>`;
-const formula = (label, text) => `<div class="cpi-formula"><strong>${label}</strong><span>${text}</span></div>`;
-const cpiFormula = () => formula('CPI', 'Current cost of the fixed basket ÷ base cost of the fixed basket × 100');
-const rateFormula = () => formula('Inflation', '(Current CPI − previous CPI) ÷ previous CPI × 100');
+const formula = (label, text, spoken) => `<div class="cpi-formula"><strong>${label}</strong><span aria-hidden="true">${text}</span><span class="sr-only">${spoken}</span></div>`;
+const cpiFormula = () => formula('CPI', '(Current basket cost ÷ base basket cost) × 100', 'CPI equals current basket cost divided by base basket cost, multiplied by one hundred.');
+const rateFormula = () => formula('Inflation rate', '((New CPI − previous CPI) ÷ previous CPI) × 100', 'Inflation rate equals new CPI minus previous CPI, divided by previous CPI, multiplied by one hundred.');
+function hints(run){
+  if(run.solved)return '';
+  const hint=run.hints[run.phase]||{concept:false,formula:false};
+  const concept=run.phase==='cpi'?'Compare the current cost of the fixed basket with the base-year cost. The base year is indexed to 100.':'Inflation measures the percentage change in CPI from the previous period.';
+  return `<div class="cpi-hints"><button type="button" data-hint="concept" aria-expanded="${hint.concept}" aria-controls="concept-hint">${hint.concept?'HIDE HINTS':'NEED A HINT?'}</button><div id="concept-hint" ${hint.concept?'':'hidden'}>${hint.concept?`<p>${concept}</p><button type="button" data-hint="formula" aria-expanded="${hint.formula}" aria-controls="formula-hint">${hint.formula?'HIDE FORMULA':'SHOW FORMULA'}</button><div id="formula-hint" ${hint.formula?'':'hidden'}>${hint.formula?(run.phase==='cpi'?cpiFormula():rateFormula()):''}</div>`:''}</div></div>`;
+}
 export function receipt(run) {
   const m = model(run), updated = !['intro','base'].includes(run.phase), priced = isRepriced(run);
   const baseDone = run.phase === 'base' && run.solved || updated;
-  const rows = updated ? m.current.rows : BASE.rows;
-  return `<section class="cpi-receipt" aria-labelledby="receipt-title"><div class="receipt-heading"><div><p class="receipt-kicker">Household receipt</p><h2 id="receipt-title">Fixed market basket</h2></div><span class="locked">Quantities fixed</span></div>
-    <p class="receipt-period">${updated ? 'Year 2 · '+m.shock.name : 'Year 1 · base year'}</p>
-    <table><caption>Same five items. Same quantities.${updated ? ' Only prices change.' : ''}</caption><thead><tr><th scope="col">Item / quantity</th><th scope="col">Unit price</th><th scope="col">Expenditure</th></tr></thead><tbody>${rows.map(r => `<tr ${priced && r.contribution ? 'class="price-changed"' : ''}><th scope="row">${r.name}<small>${r.quantity} × <span class="fixed-word">fixed</span></small></th><td>${updated && r.price !== CONFIG.basket.find(i=>i.id===r.id).price ? `<span class="old-price">${money(CONFIG.basket.find(i=>i.id===r.id).price)} →</span>` : ''}${money(r.price)}</td><td>${priced || !updated && (r.id !== 'groceries' || baseDone) ? `<strong>${money(r.cost)}</strong>` : '<span class="pending">Calculate</span>'}${priced ? `<small>${signedMoney(r.contribution)} vs base</small>` : ''}</td></tr>`).join('')}</tbody></table>
-    <div class="receipt-total"><span>Basket cost</span><strong id="basket-total">${priced ? money(m.current.cost) : !updated && baseDone ? money(BASE.cost) : 'To calculate'}</strong></div>
-    ${baseDone ? `<p class="base-reference">Base basket reference <strong>${money(BASE.cost)}</strong></p>` : '<p class="base-reference">Quantity × unit price = item expenditure</p>'}
+  const rows = updated ? m.current.rows : m.base.rows;
+  return `<section class="cpi-receipt" aria-labelledby="receipt-title"><div class="receipt-heading"><div><h2 id="receipt-title">Fixed market basket</h2></div><span class="locked">Quantities fixed</span></div>
+    <p class="receipt-period">${updated ? 'Year 2 · '+m.shock.name : 'Year 1 · Base year'}</p>
+    <table><caption class="sr-only">Fixed quantities, unit prices and item expenditures for ${updated ? 'Year 2' : 'the base year'}.</caption><thead><tr><th scope="col">Item / quantity</th><th scope="col">Unit price</th><th scope="col">Expenditure</th></tr></thead><tbody>${rows.map(r => `<tr ${priced && r.contribution ? 'class="price-changed"' : ''}><th scope="row">${r.name}<small>${r.quantity} × <span class="fixed-word">fixed</span></small></th><td>${updated && r.price !== m.base.rows.find(i=>i.id===r.id).price ? `<span class="old-price">${money(m.base.rows.find(i=>i.id===r.id).price)} →</span>` : ''}${money(r.price)}</td><td>${priced || !updated && (r.id !== 'groceries' || baseDone) ? `<strong>${money(r.cost)}</strong>` : '<span class="pending">Calculate</span>'}${priced ? `<small>${signedMoney(r.contribution)} vs base</small>` : ''}</td></tr>`).join('')}</tbody></table>
+    <div class="receipt-total"><span>Basket cost</span><strong id="basket-total">${priced ? money(m.current.cost) : !updated && baseDone ? money(m.base.cost) : 'To calculate'}</strong></div>
+    ${baseDone ? `<p class="base-reference">Base basket reference <strong>${money(m.base.cost)}</strong></p>` : '<p class="base-reference">Quantity × unit price = item expenditure</p>'}
     <dl class="index-monitor"><div><dt>CPI <small>${indexKnown(run) ? 'Year 2 index' : baseDone ? 'Base-year index' : 'Build the base first'}</small></dt><dd id="cpi-value">${indexKnown(run) ? indexText(m.index) : baseDone ? indexText(100) : '—'}</dd></div><div><dt>Inflation <small>${rateKnown(run) ? 'Year 1 → Year 2' : 'Period-to-period change'}</small></dt><dd id="inflation-value">${rateKnown(run) ? rateText(m.rate) : updated ? 'To calculate' : 'Base year'}</dd></div></dl>
     <p class="receipt-foot">Basket cost is a dollar amount. CPI measures the price level as an index.</p></section>`;
 }
@@ -32,19 +39,19 @@ function comparisons(m, revealed) {
   return `<div class="comparison-grid">${m.cases.map((c,i)=>`<section><h3>Case ${i ? 'B' : 'A'}</h3><p><strong>${c.item.name} +${c.percent}%</strong></p>${revealed ? `<p>${money(c.item.cost)} base expenditure × ${c.percent}% = <strong>${money(c.contribution)} added</strong></p><p>Basket ${money(c.cost)}<br>CPI ${indexText(c.index)}</p>` : '<p class="cpi-help">All other prices stay at base-year levels.</p>'}</section>`).join('')}</div>`;
 }
 export function auditWork(run) {
-  const m = model(run), current = money(m.current.cost), base = money(BASE.cost), correct = indexText(m.index);
+  const m = model(run), current = money(m.current.cost), base = money(m.base.cost), correct = indexText(m.index);
   switch (m.audit.id) {
     case 'quantities': {
       // The sole deliberate quantity error is isolated to this analyst's draft, never the live basket.
-      const badQuantity = CONFIG.basket.find(r=>r.id==='groceries').quantity - 2;
+      const badQuantity = m.base.rows.find(r=>r.id==='groceries').quantity - 2;
       const badCost = m.current.cost - 2 * m.current.rows.find(r=>r.id==='groceries').price;
-      return { draft: `The analyst buys ${badQuantity} grocery units instead of the fixed ${CONFIG.basket.find(r=>r.id==='groceries').quantity}; every other quantity and all Year 2 prices match your receipt. Draft cost: ${money(badCost)}. Draft CPI: ${money(badCost)} ÷ ${base} × 100 = ${indexText(cpi(badCost))}.`, repair: `Restore the original grocery quantity. Correct basket: ${current}; CPI: ${correct}.` };
+      return { draft: `The analyst buys ${badQuantity} grocery units instead of the fixed ${m.base.rows.find(r=>r.id==='groceries').quantity}; every other quantity and all Year 2 prices match your basket. Draft cost: ${money(badCost)}. Draft CPI: ${money(badCost)} ÷ ${base} × 100 = ${indexText(cpi(badCost,m.base.cost))}.`, repair: `Restore the original grocery quantity. Correct basket: ${current}; CPI: ${correct}.` };
     }
     case 'average': {
-      const changes=m.current.rows.map((r,i)=>(r.price / CONFIG.basket[i].price - 1)*100), average=changes.reduce((a,b)=>a+b,0)/changes.length;
-      return { draft: `The analyst averages these item price changes: ${changes.map((v,i)=>`${CONFIG.basket[i].name} ${rateText(v)}`).join('; ')}. Each item gets one equal share. Reported inflation: ${rateText(average)}.`, repair: `Using full-precision price changes, repricing gives ${current}, CPI ${correct}, and inflation ${rateText(m.rate)}. The simple average ignores spending shares.` };
+      const changes=m.current.rows.map((r,i)=>(r.price / m.base.rows[i].price - 1)*100), average=changes.reduce((a,b)=>a+b,0)/changes.length;
+      return { draft: `The analyst averages these item price changes: ${changes.map((v,i)=>`${m.base.rows[i].name} ${rateText(v)}`).join('; ')}. Each item gets one equal share. Reported inflation: ${rateText(average)}.`, repair: `Using full-precision price changes, repricing gives ${current}, CPI ${correct}, and inflation ${rateText(m.rate)}. The simple average ignores spending shares.` };
     }
-    case 'reverse': return { draft: `The analyst uses your fixed quantities and correct costs, but writes CPI = ${base} ÷ ${current} × 100 = ${indexText(BASE.cost/m.current.cost*100)}.`, repair: `Reverse the ratio: ${current} ÷ ${base} × 100 = ${correct}.` };
+    case 'reverse': return { draft: `The analyst uses your fixed quantities and correct costs, but writes CPI = ${base} ÷ ${current} × 100 = ${indexText(m.base.cost/m.current.cost*100)}.`, repair: `Reverse the ratio: ${current} ÷ ${base} × 100 = ${correct}.` };
     case 'level': return { draft: `A separate index report lists CPI ${CONFIG.auditExample[2]}. The analyst announces: “Inflation is ${CONFIG.auditExample[2]}%.” No previous-year CPI is provided.`, repair: `CPI ${CONFIG.auditExample[2]} means the fixed basket costs ${CONFIG.auditExample[2]-100}% more than in the base year. Annual inflation cannot be recovered without the previous-year index.` };
     case 'period': { const [a,b,c]=CONFIG.auditExample; return { draft: `A separate report has Year 1 CPI ${a}, Year 2 CPI ${b}, and Year 3 CPI ${c}. The analyst reports Year 3 annual inflation as (${c} − ${a}) ÷ ${a} × 100 = ${rateText(inflation(a,c))}.`, repair: `Use Year 2: (${c} − ${b}) ÷ ${b} × 100 = ${rateText(inflation(b,c))}.` }; }
   }
@@ -55,14 +62,14 @@ function timeline(m, revealRates, includeFinal) {
 function explanation(run) {
   const m=model(run);
   switch(run.phase){
-    case 'base':return `<p>You built a ${money(BASE.cost)} basket. The base year is indexed to <strong>100</strong>.</p>${cpiFormula()}`;
-    case 'reprice':return `<p>Basket cost increased from ${money(BASE.cost)} to ${money(m.current.cost)}. Quantities stayed fixed; the receipt now shows each item's dollar contribution.</p>`;
+    case 'base':return `<p>The base basket costs ${money(m.base.cost)}. The base year is indexed to <strong>100</strong>.</p>`;
+    case 'reprice':return `<p>Basket cost increased from ${money(m.base.cost)} to ${money(m.current.cost)}. Quantities stayed fixed; the basket panel now shows each item's dollar contribution.</p>`;
     case 'cpi':return `<p>CPI is now ${indexText(m.index)}. The basket costs ${rateText(m.rate)} more than in the base year. CPI is an index, not dollars or an inflation rate.</p>`;
     case 'inflation':return `<p>Year 1 → Year 2 inflation is ${rateText(m.rate)}. Subtracting 100 works here only because the previous CPI is 100. Later comparisons require the previous year's index.</p>`;
     case 'meaning':return '<p>CPI 108 means the fixed basket costs 8% more than in the base year. Annual inflation is the percentage change from the previous year’s CPI.</p>';
     case 'weight':return `<p>The ${m.cases[m.winner==='a'?0:1].item.name.toLowerCase()} change adds more dollars to the same basket, so it moves CPI more. Items with a larger share of base spending have more influence on the overall index.</p>`;
     case 'audit':return `<p>${m.audit.feedback}</p><p><strong>Corrected calculation:</strong> ${auditWork(run).repair}</p>`;
-    case 'timeline_rate':return `<p>Year 3 inflation = (${m.values[2]} − ${m.values[1]}) ÷ ${m.values[1]} × 100 = <strong>${rateText(m.rates[2])}</strong>. The denominator is the previous year, not always 100.</p>`;
+    case 'timeline_rate':return `<p>Year 3 inflation is <strong>${rateText(m.rates[2])}</strong>. This compares Year 3 CPI ${m.values[2]} with the previous year's CPI ${m.values[1]}, not automatically with 100.</p>`;
     case 'timeline_compare':{
       const labels={slowing:'Prices are still rising, but inflation has slowed. This is disinflation.',accelerating:'Prices are rising faster. Inflation has accelerated.',stable:'CPI is unchanged. Annual inflation is zero: the price level is stable.',deflation:'CPI fell. Annual inflation is negative: this is deflation.'};
       const [a,b,c]=CONFIG.disinflationExample;
@@ -73,26 +80,25 @@ function explanation(run) {
 }
 export function work(run) {
   const m=model(run);
-  if(run.phase==='intro')return `<p class="eyebrow">Household price monitor</p><h2 id="stage-title" tabindex="-1">Same basket. New prices.</h2><p>Build a household receipt, reprice it, and work out what changed. Then test which prices matter most and check an analyst’s work.</p><p>No timer. Every answer can be corrected.</p>${button('start','BUILD THE BASE BASKET')}`;
-  if(run.phase==='complete')return `<p class="eyebrow">Price check complete</p><h2 id="stage-title" tabindex="-1">The numbers tell different stories.</h2><p class="cpi-help">Your repriced household basket · Year 2</p><dl class="cpi-results"><div><dt>Base basket</dt><dd>${money(BASE.cost)}</dd></div><div><dt>Final basket</dt><dd>${money(m.current.cost)}</dd></div><div><dt>Final CPI</dt><dd>${indexText(m.index)}</dd></div><div><dt>Basket inflation · Year 1 → 2</dt><dd>${rateText(m.rate)}</dd></div></dl><h3>Biggest price pressure</h3><p><strong>${m.pressures[0].name}: ${signedMoney(m.pressures[0].contribution)}</strong> added to basket cost. This is the dollar effect of its price change, not simply the largest percentage rise.</p><p>Fixed quantities + changed prices → changed basket cost → changed CPI. Inflation measures the percentage change in CPI over a period.</p><dl class="cpi-results"><div><dt>First-attempt accuracy</dt><dd>${Math.round(run.firstCorrect/PHASES.length*100)}% <small>(${run.firstCorrect}/${PHASES.length})</small></dd></div><div><dt>Audit</dt><dd>Repaired · ${run.attempts.audit} attempt(s)</dd></div><div><dt>Multi-year interpretation</dt><dd>Complete · Year 3 ${rateText(m.rates[2])}; Year 4 ${rateText(m.rates[3])}</dd></div></dl><div class="actions">${button('replay','PLAY AGAIN')}<a class="button" href="/games/">RETURN TO GAMES</a></div>`;
+  if(run.phase==='intro')return `<p class="eyebrow">Household price monitor</p><h2 id="stage-title" tabindex="-1">SAME BASKET. NEW PRICES.</h2><p>Calculate the base-year basket cost, then track how changing prices affect the CPI and inflation rate.</p><p>No timer. Every answer can be corrected.</p>${button('start','BUILD THE BASE BASKET')}`;
+  if(run.phase==='complete')return `<p class="eyebrow">Price check complete</p><h2 id="stage-title" tabindex="-1">The numbers tell different stories.</h2><p class="cpi-help">Your repriced household basket · Year 2</p><dl class="cpi-results"><div><dt>Base basket</dt><dd>${money(m.base.cost)}</dd></div><div><dt>Final basket</dt><dd>${money(m.current.cost)}</dd></div><div><dt>Final CPI</dt><dd>${indexText(m.index)}</dd></div><div><dt>Basket inflation · Year 1 → 2</dt><dd>${rateText(m.rate)}</dd></div></dl><h3>Biggest price pressure</h3><p><strong>${m.pressures[0].name}: ${signedMoney(m.pressures[0].contribution)}</strong> added to basket cost. This is the dollar effect of its price change, not simply the largest percentage rise.</p><p>CPI indexes the price level relative to the base year. Inflation measures its percentage change from the previous period. Disinflation means prices still rise, but more slowly. Deflation means the price level falls.</p><dl class="cpi-results"><div><dt>First-attempt accuracy</dt><dd>${Math.round(run.firstCorrect/PHASES.length*100)}% <small>(${run.firstCorrect}/${PHASES.length})</small></dd></div><div><dt>Audit</dt><dd>Repaired · ${run.attempts.audit} attempt(s)</dd></div><div><dt>Multi-year interpretation</dt><dd>Complete · Year 3 ${rateText(m.rates[2])}; Year 4 ${rateText(m.rates[3])}</dd></div></dl><div class="actions">${button('replay','PLAY AGAIN')}<a class="button" href="/games/">RETURN TO GAMES</a></div>`;
   const content={
-    base:['Build the base-year receipt','Calculate the groceries expenditure, then add all five item expenditures. The receipt gives the other four to keep the arithmetic brief.'],
-    reprice:['Reprice the same basket',`Year 2: ${m.shock.name.toLowerCase()}. The receipt shows the new unit prices. Use the original quantities to find the new total.`],
-    cpi:['Turn the basket cost into an index',`The same basket cost ${money(BASE.cost)} in Year 1 and ${money(m.current.cost)} in Year 2. What is the new CPI?`],
+    base:['Build the base-year basket','Calculate the groceries expenditure, then add all five item expenditures. The basket panel gives the other four to keep the arithmetic brief.'],
+    reprice:['Reprice the same basket',`Year 2: ${m.shock.name}. The unit prices have changed. Use the original basket quantities to calculate the new basket cost.`],
+    cpi:['Turn the basket cost into an index',`The same basket cost ${money(m.base.cost)} in Year 1 and ${money(m.current.cost)} in Year 2. What is the new CPI?`],
     inflation:['How fast did the price level change?',`Previous CPI: ${indexText(100)}. Current CPI: ${indexText(m.index)}. Calculate Year 1 → Year 2 inflation.`],
     meaning:['An index is not a rate','A separate report says CPI = 108. Which statement can you conclude from that alone?'],
     weight:['Which price matters more?','Two isolated changes to the same base basket. Predict which moves CPI more, then compare the dollars added.'],
     audit:['The index is wrong. Find the mistake.','A hypothetical analyst has made exactly one major error. Identify it to repair the report.'],
-    timeline_rate:['A high CPI. But how much inflation?','This separate economy has its own CPI path; it does not replace your household receipt. Calculate Year 3 annual inflation.'],
+    timeline_rate:['A high CPI. But how much inflation?','This separate economy has its own CPI path; it does not replace your household basket. Calculate Year 3 annual inflation.'],
     timeline_compare:['What happened to inflation?','Compare Year 3 with Year 2. Choose the description that matches both the price level and the annual rates.'],
     deflation:['Prices fell. Back to the base year?','Year 4 has arrived in the example. Which statement describes the change from Year 3 to Year 4?'],
   }[run.phase];
   let body='';
-  if(run.phase==='cpi')body+=cpiFormula();
-  if(['inflation','timeline_rate'].includes(run.phase))body+=rateFormula();
+
   if(run.phase==='weight')body+=comparisons(m,run.weightRevealed);
   if(run.phase==='audit')body+=`<blockquote class="analyst"><p class="eyebrow">Analyst’s draft · not verified</p><p>${auditWork(run).draft}</p></blockquote>`;
-  if(['timeline_rate','timeline_compare','deflation'].includes(run.phase))body+=timeline(m,run.phase!=='timeline_rate'||run.solved,run.phase==='deflation');
+  if(['timeline_rate','timeline_compare','deflation'].includes(run.phase)){const rates=run.phase!=='timeline_rate'&&!!run.attempts[run.phase];body+=timelineCharts(m,run.phase==='deflation',rates)+timeline(m,rates,run.phase==='deflation');}
   body+=`<div id="feedback" class="cpi-feedback ${run.feedback?'has-feedback':''}" tabindex="-1">${run.feedback ? `<strong>${run.solved?'Verified':'Try again'}</strong>${run.solved?explanation(run):`<p>${esc(run.feedback)}</p>`}` : ''}</div>`;
   if(run.phase==='base')body+=numeric(run,[['component','Groceries expenditure'],['total','Total base basket cost']],'currency');
   if(run.phase==='reprice')body+=numeric(run,[['total','New basket cost']],'currency');
@@ -103,6 +109,7 @@ export function work(run) {
   if(run.phase==='audit')body+=choices(run,CONFIG.audits.map(a=>[a.id,a.label]));
   if(run.phase==='timeline_compare')body+=choices(run,[['slowing','Prices still rise, but inflation is lower: disinflation.'],['accelerating','Prices rise faster: inflation is higher.'],['stable','The price level is stable: inflation is zero.'],['deflation','The price level falls: inflation is negative.']]);
   if(run.phase==='deflation')body+=choices(run,[['above','Deflation: prices fell, but the basket still costs more than in the base year.'],['below','Deflation: prices are now below the base-year level.'],['slower','Disinflation: prices are still rising, just more slowly.']]);
+  if(['cpi','inflation','timeline_rate'].includes(run.phase))body+=hints(run);
   if(run.solved)body+=button('next',run.phase==='deflation'?'SEE YOUR PRICE CHECK':run.phase==='base'?'OPEN YEAR 2 PRICES':'CONTINUE');
   return `<p class="eyebrow">Price check ${PHASES.indexOf(run.phase)+1} / ${PHASES.length}</p><h2 id="stage-title" tabindex="-1">${content[0]}</h2><p>${content[1]}</p>${body}`;
 }

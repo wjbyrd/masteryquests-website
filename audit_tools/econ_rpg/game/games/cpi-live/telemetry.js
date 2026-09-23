@@ -1,17 +1,18 @@
 import { CONFIG } from './config.js';
-import { BASE, model, isRepriced } from './engine.js';
+import { model, isRepriced } from './engine.js';
 export const STORAGE_PREFIX = 'mq.cpi-live.run.v1.';
 // Same local-only retention convention as GDP Live; no identity, requests or backend.
 export function createRecorder(storage, runID, warn = () => {}, now = () => Date.now()) {
-  const started = now(), record = { schemaVersion: 1, gameID: CONFIG.gameID, runID, events: [] };
+  let record = { schemaVersion: 2, gameID: CONFIG.gameID, runID, events: [] };
+  try { const saved=JSON.parse(storage?.getItem(STORAGE_PREFIX+runID));if(saved?.schemaVersion===2&&saved.runID===runID&&Array.isArray(saved.events))record=saved; } catch { /* Play remains available without local history. */ }
   let warned = false;
   return { record, log(action, before, after = before, extra = {}) {
     const a = model(before), b = model(after);
     record.events.push({ action, runID, gameID: CONFIG.gameID, sequenceNumber: record.events.length + 1,
-      timestamp: new Date(now()).toISOString(), elapsedMs: Math.max(0, now() - started), phase: before.phase,
-      scenarioID: after.shockID, comparisonID: after.comparisonID, auditCaseID: after.auditID, timelineID: after.timelineID,
-      basketCostBefore: (isRepriced(before) ? a.current.cost : BASE.cost) / 100,
-      basketCostAfter: (isRepriced(after) ? b.current.cost : BASE.cost) / 100,
+      timestamp: new Date(now()).toISOString(), elapsedMs: Math.max(0, now() - after.startedAt), phase: before.phase,
+      basketID:after.basketID,scenarioID: after.shockID, comparisonID: after.comparisonID, auditCaseID: after.auditID, timelineID: after.timelineID,
+      basketCostBefore: (isRepriced(before) ? a.current.cost : a.base.cost) / 100,
+      basketCostAfter: (isRepriced(after) ? b.current.cost : b.base.cost) / 100,
       cpiBefore: isRepriced(before) ? a.index : 100, cpiAfter: isRepriced(after) ? b.index : 100,
       inflationRate: b.rate, completed: after.phase === 'complete', ...extra });
     try {
