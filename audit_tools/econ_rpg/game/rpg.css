@@ -19,10 +19,12 @@
 .state-item.qualitative .state-value{font-size:.9rem;font-weight:600;color:var(--ink);text-align:left}
 .state-item.qualitative .state-change{font-size:.7rem;white-space:normal}.indicator-note{font-size:.75rem;color:var(--muted);margin:12px 0 0}
 .states details[open] summary{margin-bottom:10px}
-.neighborhood-scene{margin:0 -10px 24px;overflow:hidden;border:1px solid #546e79;border-radius:10px;background:#eef4f8}
+/* Shared RPG scene art only: 532 × 399px artwork at the desktop cap. */
+.neighborhood-scene{width:100%;max-width:534px;margin:0 auto 18px;overflow:hidden;border:1px solid #546e79;border-radius:10px;background:#eef4f8}
 .neighborhood-scene img{display:block;width:100%;height:auto;object-fit:contain}
-.neighborhood-scene figcaption{display:flex;justify-content:center;align-items:center;text-align:center;padding:12px 14px;color:#f3ebd7;background:#123747;font-size:1rem;line-height:1.4}
+.neighborhood-scene figcaption{display:flex;justify-content:center;align-items:center;text-align:center;padding:8px 14px;color:#f3ebd7;background:#123747;font-size:1rem;line-height:1.4}
 .neighborhood-scene figcaption strong{color:#f7e7bd;font-weight:700}
 #view>h2{margin-bottom:20px}
 @media(min-width:761px){.states{top:20px}.state-item{padding:6px 0}}
-@media(max-width:760px){.neighborhood-scene{margin:0 -12px 20px;border-radius:8px}.neighborhood-scene figcaption{font-size:.9rem;padding:11px 10px}.states .muted{margin-top:10px}.states .state-item{padding:6px 0}}
+@media(max-width:760px){.neighborhood-scene{border-radius:8px}.neighborhood-scene figcaption{font-size:.9rem;padding:8px 10px}.states .muted{margin-top:10px}.states .state-item{padding:6px 0}}
+@media(max-width:540px){.neighborhood-scene{width:auto;max-width:none;margin:0 -12px 16px}}

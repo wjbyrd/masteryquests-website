@@ -179,7 +179,7 @@ test('private registry routes the fifth game; current housing v2 and other scena
   assert.equal(scenarioFor('?scenario=gameday-rivals'),scenario);assert.equal(scenarioFor(''),scenarios['housing-crisis']);assert.equal(scenarioFor('?scenario=constructor'),scenarios['housing-crisis']);
   const hashes={'housing-crisis':'275c6f29ee1b47d5985f87357cfb6d0cc840443d61679ceae588f9cbffaf70a4','main-attraction':'e9bb3c77ba9f57acc27b1d49a442e911526a761a70fe1bc51b072e40122561ad',ppf:'3fd6ef7143484f891e64470ef384a8dde4174408426cd39f692fa1f45b550b3a','megastar-mania':'159c41396c164eb675935898b4e944fbc340c35dc6e07e1ce0f5329974d70532'};
   for(const [id,hash] of Object.entries(hashes))assert.equal(createHash('sha256').update(JSON.stringify(enumerate(scenarios[id]).complete)).digest('hex'),hash);
-  // Shared UI may append the authorized instructional applications. Economic
-  // paths remain frozen above; engines, scenario data and existing styles below.
-  execFileSync('git',['diff','--exit-code','HEAD','--',...['engine.js','storage.js','rpg.js','rpg.css','scenes.js','scenarios/main-attraction.js','scenarios/ppf.js','scenarios/megastar-mania.js'].map(f=>`audit_tools/econ_rpg/game/${f}`)],{stdio:'pipe'});
+  // Shared UI may append instructional applications and resize RPG scene art.
+  // Economic paths remain frozen above; engines and scenario data below.
+  execFileSync('git',['diff','--exit-code','HEAD','--',...['engine.js','storage.js','rpg.js','scenes.js','scenarios/main-attraction.js','scenarios/ppf.js','scenarios/megastar-mania.js'].map(f=>`audit_tools/econ_rpg/game/${f}`)],{stdio:'pipe'});
 });
