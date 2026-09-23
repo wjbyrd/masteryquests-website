@@ -203,7 +203,8 @@ async function seeded(p){await p.addInitScript(()=>{const original=crypto.getRan
 let zoomContext;
 try{
   const landing=await browser.newPage({viewport:{width:1366,height:900}});watch(landing);await landing.goto(origin+'/games/');
-  assert.deepEqual((await landing.locator('[data-game]').evaluateAll(es=>es.map(e=>e.dataset.game))).sort(),inventory.slice().sort());
+  // CPI LIVE has its own exhaustive keyboard/zoom browser suite; inspect its card here too.
+  assert.deepEqual((await landing.locator('[data-game]').evaluateAll(es=>es.map(e=>e.dataset.game))).sort(),[...inventory,'cpi-live'].sort());
   for(const card of await landing.locator('.game-card').all()){
     assert.ok((await card.locator('h2').innerText()).length>3);assert.ok((await card.locator('p').innerText()).length>30);
     assert.equal(await card.locator('img,[role=img]').count(),1);

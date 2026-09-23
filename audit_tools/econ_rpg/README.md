@@ -12,7 +12,7 @@ node audit_tools/econ_rpg/serve.mjs
 
 Open <http://127.0.0.1:4179>. The preview binds only to loopback and serves only `game/`. Set `PORT` if needed. Keep the command running while playing; Ctrl+C stops it. ES modules need an HTTP preview; do not double-click the HTML file. Saves belong to the browser and exact origin, including port.
 
-The complete private [Games library](http://127.0.0.1:4179/games/) links all seven mini-games. Each game has a permanent **RETURN TO GAMES** link. See the [mini-game accessibility audit](MINI-GAME-ACCESSIBILITY-AUDIT.md) for the inventory, artwork choices, fixes, keyboard/zoom checks, and remaining manual review.
+The complete private [Games library](http://127.0.0.1:4179/games/) links all eight mini-games. Each game has a permanent **RETURN TO GAMES** link. See the [mini-game accessibility audit](MINI-GAME-ACCESSIBILITY-AUDIT.md) for the original seven-game review and the [CPI LIVE report](CPI-LIVE-REPORT.md) for the new fixed-basket price-index game.
 
 The [instructional follow-up audit](INSTRUCTIONAL-FOLLOWUP-AUDIT.md) documents the seven-game review, targeted end-of-game applications, PPF and ticket-market diagrams, unchanged PASS games, and regression checks.
 
@@ -21,6 +21,7 @@ The [instructional follow-up audit](INSTRUCTIONAL-FOLLOWUP-AUDIT.md) documents t
 - [The Economy’s Edge](http://127.0.0.1:4179/?scenario=ppf): scarcity, production possibilities, recovery and growth; private instructor QA.
 - [Megastar Mania](http://127.0.0.1:4179/?scenario=megastar-mania): concert ticket supply and demand; private instructor QA.
 - [Gameday Rivals](http://127.0.0.1:4179/?scenario=gameday-rivals): six simultaneous promotion rounds against a seeded, history-dependent delivery rival; private instructor QA.
+- [CPI LIVE](http://127.0.0.1:4179/games/cpi-live/): build and reprice a fixed household basket, calculate CPI and inflation, compare expenditure effects, audit an error and interpret a multi-year index path; private instructor QA.
 - [Takeout Taco: Lunch Rush](http://127.0.0.1:4179/games/takeout-taco-lunch-rush/): standalone staffing and production mini-game, independent of the RPG engines. See [implementation and QA report](TAKEOUT-TACO-REPORT.md).
 
 - [GDP LIVE](http://127.0.0.1:4179/games/gdp-live/): standalone national-accounts mini-game. See [implementation and QA report](GDP-LIVE-REPORT.md).

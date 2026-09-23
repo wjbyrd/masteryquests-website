@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <rect width="640" height="480" fill="#071f3c"/>
+  <rect x="55" y="48" width="310" height="384" rx="12" fill="#f7f4eb"/>
+  <g font-family="system-ui,sans-serif" fill="#172d48">
+    <text x="79" y="88" font-size="17" font-weight="700" letter-spacing="1">FIXED MARKET BASKET</text>
+    <text x="79" y="114" font-size="13">QUANTITIES FIXED</text>
+    <path d="M79 136h262M79 322h262" stroke="#9daeb8" stroke-dasharray="4 4"/>
+    <g font-size="19"><text x="79" y="173">Rent</text><text x="341" y="173" text-anchor="end">$1,000</text>
+      <text x="79" y="209">Groceries</text><text x="341" y="209" text-anchor="end">$200</text>
+      <text x="79" y="245">Gas</text><text x="341" y="245" text-anchor="end">$120</text>
+      <text x="79" y="281">Other items</text><text x="341" y="281" text-anchor="end">$80</text></g>
+    <text x="79" y="357" font-size="14">BASE BASKET COST</text><text x="79" y="402" font-size="36" font-weight="750">$1,400</text>
+  </g>
+  <g font-family="system-ui,sans-serif" fill="#ebf3ff"><text x="402" y="173" font-size="19" letter-spacing="2">CPI</text>
+    <text x="396" y="235" fill="#77d9d3" font-size="52" font-weight="750">100.0</text>
+    <text x="402" y="264" font-size="15">BASE YEAR</text>
+    <path d="M402 302h172" stroke="#91a9c5"/><text x="402" y="337" font-size="14">SAME BASKET.</text><text x="402" y="362" font-size="14">NEW PRICES.</text></g>
+</svg>

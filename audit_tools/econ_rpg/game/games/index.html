@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow"><meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Games · Private Preview | Mastery Quests</title>
   <link rel="icon" href="../icon.svg"><link rel="stylesheet" href="../rpg.css">
   <link rel="stylesheet" href="./library.css"><link rel="stylesheet" href="../mini-game-accessibility.css">
+  <script type="module" src="./cpi-live/card.js"></script>
 </head>
 <body class="library-page">
   <a class="skip" href="#games">Skip to games</a>
@@ -21,6 +22,10 @@
       <article class="game-card" data-game="gdp-live" aria-labelledby="gdp-live-title">
         <div class="card-placeholder" role="img" aria-label="GDP LIVE placeholder. Card artwork is not yet available."><strong aria-hidden="true">GDP LIVE</strong><span aria-hidden="true">Card artwork coming later</span></div>
         <div class="game-card-copy"><h2 id="gdp-live-title">GDP LIVE</h2><p>Post economic activity to a live GDP counter, audit bad entries, and build the expenditure approach to national accounting.</p><a href="./gdp-live/" aria-label="PLAY GAME: GDP LIVE">PLAY GAME</a></div>
+      </article>
+      <article class="game-card" data-game="cpi-live" aria-labelledby="cpi-live-title">
+        <img src="./cpi-live/card.svg" alt="A fixed household basket receipt totaling $1,400 beside a base-year CPI monitor reading 100.0." width="640" height="480" loading="lazy">
+        <div class="game-card-copy"><h2 id="cpi-live-title">Household price monitor</h2><p>Reprice a fixed household basket and investigate the price level and inflation.</p><a href="./cpi-live/" aria-label="PLAY GAME: Household price monitor">PLAY GAME</a></div>
       </article>
       <article class="game-card" data-game="housing-crisis" aria-labelledby="housing-crisis-title">
         <img src="../art/scenes/baseline.webp" alt="Linden’s waterfront neighborhood, with apartments, shops and shared public space." width="1448" height="1086" loading="lazy">
