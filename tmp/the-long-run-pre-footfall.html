@@ -372,27 +372,13 @@ function renderWorld(){
    Tuning: PIXEL_TUNING controls cadence, speeds and caps. getVisualEconomyState
    maps the existing worldState values to sprite density. Both canvases use the
    same 640 × 360 grid; PIXEL_PATHS and PIXEL_ANCHORS locate all activity. */
-const PIXEL_TUNING={fps:20,vehicleSpeed:23,walkSpeed:4,maxVehicles:10,maxPeople:18,priceFlashSeconds:.8};
+const PIXEL_TUNING={fps:20,vehicleSpeed:23,walkSpeed:3.3,maxVehicles:10,maxPeople:18,priceFlashSeconds:.8};
 const PIXEL_PALETTE={O:TOWN_PALETTE.ink,B:TOWN_PALETTE.sand,D:TOWN_PALETTE.ochre,L:TOWN_PALETTE.sun,W:TOWN_PALETTE.sky,G:TOWN_PALETTE.teal,H:TOWN_PALETTE.cream,R:TOWN_PALETTE.brick,T:TOWN_PALETTE.deep,K:TOWN_PALETTE.steel,S:TOWN_PALETTE.skin,C:TOWN_PALETTE.sea,A:TOWN_PALETTE.paper,P:TOWN_PALETTE.slate,F:TOWN_PALETTE.wood,Y:TOWN_PALETTE.gold,V:TOWN_PALETTE.far,E:TOWN_PALETTE.paper,Q:TOWN_PALETTE.ochre,N:TOWN_PALETTE.ochre,Z:TOWN_PALETTE.skin,J:TOWN_PALETTE.steel,U:TOWN_PALETTE.deep,M:TOWN_PALETTE.ochre};
 
 // Native 18 × 27 people: one extra row of articulation, with the same grounded foot line.
 const SPRITE_PLACEMENT={compact:{x:0,y:0},sedan:{x:0,y:0},truck:{x:0,y:0},
   pedestrian:{x:-7,y:-25},shopper:{x:-7,y:-25},resident:{x:-7,y:-25},factoryWorker:{x:-7,y:-25},worker:{x:-7,y:-25}};
-// Four main poses, with a one-pixel stance correction between poses.
-// Each eight-pixel stride covers two footfalls; idle remains frame 4.
-const SPRITE_WALK={sequence:[0,1,2,3],pixelFrames:[0,5,1,6,2,7,3,8],phases:[0,2,4,6,null,1,3,5,7],idleFrame:4};
-function walkingPhase(object){
-  // Use the exact rounded coordinate drawn by blit, including leftward/doorway travel.
-  // Each pixel of body travel is canceled by one pixel of planted-foot travel in the sprite.
-  const progress=object.travelY?Math.round(object.y)*object.travelY:Math.round(object.x)*object.direction;
-  return ((progress+object.index*2)%PIXEL_POLISH.walkStridePixels+PIXEL_POLISH.walkStridePixels)%PIXEL_POLISH.walkStridePixels;
-}
-function walkingFeet(phase,travelY=0){
-  const step=phase%4,leftPlanted=phase<4,lift=[0,3,2,1][step];
-  const planted=travelY?{x:leftPlanted?8:11,y:travelY>0?26-step:23+step}:{x:10-step,y:26};
-  const swinging=travelY?{x:leftPlanted?11:8,y:(travelY>0?23+step:26-step)-lift}:{x:6+step,y:26-lift};
-  return {left:leftPlanted?planted:swinging,right:leftPlanted?swinging:planted,planted,leftPlanted};
-}
+const SPRITE_WALK={sequence:[0,1,2,3],idleFrame:4};
 const PERSON_HEAD=['       FFFF','      FQQFFF','     FQQQFFFO','     FNSSSSO','     FNSZSOSS','      NSSSN','       NS','      UCNSU'];
 // Contact, passing, opposite contact, passing, relaxed standing. The far arm is shaded.
 const PERSON_TORSOS=[
@@ -409,29 +395,14 @@ const PERSON_LEGS=[
  ['      TPPJPP','      TT JPP','       TTJPP','        TJPP','        TJPP','       TT PP','      TT  PP','      OOO PP','          PO','          OOO'],
  ['      TPPJPP','      TT JPP','      TT JPP','      TT JPP','      TT  PP','     TT   PP','     TT   PP','     TT   PP','     TO   PO','     OOO  OOO']
 ];
-function humanFrames(role,travelY=0){
+function humanFrames(role){
   const head=role==='worker'?['       YYY','      YHYYY','     YYHYYYY','    YYYYYYYYY','     ONZSOSS','      NSSSN','       NS','      UYNSYU']:
     role==='factoryWorker'?['       OOOO','      CCCCCO','     CAAAACCO','     OCCCOOOO','      NZSOSS','      NSSSN','       NS','      UCNCO']:PERSON_HEAD;
-  return SPRITE_WALK.phases.map(phase=>{
-    const i=phase===null?4:Math.floor(phase/2),body=PERSON_TORSOS[i];
+  return PERSON_TORSOS.map((body,i)=>{
     // A small forward weight shift at passing, without bouncing the head vertically.
     const shift=i===1||i===3?1:0;
     const pixels=[...head.map(row=>' '.repeat(shift)+row),...body,...PERSON_LEGS[i]].map(row=>row.padEnd(18).split(''));
     const r=(x,y,w,h,c)=>{for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)pixels[yy][xx]=c;};
-    // Neck/ear highlights and a sleeve seam retain the current compact silhouette.
-    pixels[5][7+shift]='Z';pixels[6][8+shift]='N';pixels[9][7]='A';pixels[14][9]='U';
-    if(phase!==null){
-      for(let y=17;y<27;y++)pixels[y].fill(' ');
-      const feet=walkingFeet(phase,travelY);
-      const line=(x0,y0,x1,y1,color)=>{const count=Math.max(Math.abs(x1-x0),Math.abs(y1-y0));for(let n=0;n<=count;n++){const x=Math.round(x0+(x1-x0)*n/count),y=Math.round(y0+(y1-y0)*n/count);r(x,y,2,1,color);}};
-      for(const [side,hip,tone,edge] of [['left',7,'T','P'],['right',10,'P','J']]){
-        const foot=feet[side],planted=side==='left'?feet.leftPlanted:!feet.leftPlanted;
-        const knee=Math.round((hip+foot.x)/2)+(planted?0:2),kneeY=planted?21:20;
-        line(hip,17,knee,kneeY,tone);line(knee,kneeY,foot.x,foot.y-1,tone);
-        pixels[kneeY][knee]=edge;pixels[foot.y-1][foot.x]=edge;
-        r(foot.x,foot.y,3,1,'O');pixels[foot.y-1][foot.x+1]='T';
-      }
-    }
     if(role==='worker'){
       for(let y=8;y<16;y++)for(const x of [7,10])if('CAU'.includes(pixels[y][x]))pixels[y][x]='Y';
       for(const x of [7,8,9,10])if(pixels[11][x]!==' ')pixels[11][x]='H';
@@ -482,24 +453,10 @@ function vehicleFrames(type){
     if(sedan){r(roof-3,10,1,5,'M');r(roof-1,11,2,1,'K');}
     r(width-7,14,4,1,'O');r(3,17,width-6,1,'O');
   }
-  if(type==='truck'){
-    r(3,2,1,11,'H');r(6,3,16,1,'K');r(25,5,1,7,'M');r(24,9,1,2,'O');
-    r(31,6,1,3,'H');r(32,7,1,2,'H');r(36,6,1,4,'G');r(38,9,3,1,'K');
-    r(29,13,9,1,'L');r(39,12,1,4,'M');r(41,14,2,1,'O');r(3,14,21,1,'K');
-  }else{
-    const roof=type==='sedan'?11:8;
-    // Glazing edges, small reflections, roof trim and a darker lower door contour.
-    r(roof,2,1,7,'M');r(roof+2,4,1,3,'H');r(roof+3,5,1,2,'H');
-    r(roof+9,4,1,2,'H');r(roof+13,4,1,4,'G');r(roof+15,8,2,1,'K');
-    r(roof+1,9,13,1,'M');r(roof+1,12,5,1,'L');r(roof+9,12,5,1,'L');
-    r(roof+1,14,5,1,'M');r(width-5,13,2,1,'K');r(3,13,1,1,'L');
-  }
   const wheels=type==='compact'?[8,27]:type==='sedan'?[9,32]:[9,36];
-  // Wheel arches separate the body from tires without changing lane height.
-  for(const cx of wheels){r(cx-2,13,5,1,'M');r(cx-3,14,1,2,'O');r(cx+3,14,1,2,'O');}
   return [0,1].map(phase=>{
     const copy=grid.map(row=>[...row]);
-    const wheel=[' TTTTT ','TTKKKTT',phase?'TKHTKKT':'TKKTHKT','TTKOKTT',' TTTTT ','  TTT  '];
+    const wheel=[' TTTTT ','TTKKKTT',phase?'TKKTKKT':'TKTKTKT','TTKKKTT',' TTTTT ','  TTT  '];
     for(const cx of wheels)wheel.forEach((row,y)=>[...row].forEach((c,x)=>{if(c!==' ')copy[14+y][cx-3+x]=c;}));
     return copy.map(row=>row.join(''));
   });
@@ -542,11 +499,10 @@ const pixelWorld=(()=>{
   const vehicleShadows=['#a87b32','#285a78','#984736','#9cabaf','#624f85'];
   const skinColors=['#bd825d','#e2ab80'],skinShadows=['#875438','#b67a55'],skinHighlights=['#d49a75','#f3c29a'];
   let visual=null,objects=[],time=0,lastTime=0,raf=0,priceUntil=0,frameCount=0;
-  function spriteImage(type,frame,variant=0,travelY=0){
-    const key=`${type}/${frame}/${variant}/${visual.upgraded}/${travelY}`;
+  function spriteImage(type,frame,variant=0){
+    const key=`${type}/${frame}/${variant}/${visual.upgraded}`;
     if(cache.has(key))return cache.get(key);
-    const frames=travelY?humanFrames(type,travelY):sprites[type].frames;
-    const matrix=frames[frame%frames.length];
+    const matrix=sprites[type].frames[frame%sprites[type].frames.length];
     const sheet=document.createElement('canvas');sheet.width=Math.max(...matrix.map(row=>row.length));sheet.height=matrix.length;
     const brush=sheet.getContext('2d'),palette={...PIXEL_PALETTE,B:vehicleColors[variant%vehicleColors.length],C:shirtColors[variant%shirtColors.length],A:shirtHighlights[variant%shirtHighlights.length],S:skinColors[variant%2],N:skinShadows[variant%2],Z:skinHighlights[variant%2],U:shirtShadows[variant%shirtShadows.length],J:'#67869b'};
     if(['compact','sedan','truck'].includes(type)){palette.L=vehicleHighlights[variant%vehicleHighlights.length];palette.M=vehicleShadows[variant%vehicleShadows.length];}
@@ -556,15 +512,15 @@ const pixelWorld=(()=>{
     matrix.forEach((row,y)=>[...row].forEach((color,x)=>{if(color!==' '){brush.fillStyle=palette[color];brush.fillRect(x,y,1,1);}}));
     cache.set(key,sheet);return sheet;
   }
-  function blit(type,x,y,frame=0,direction=1,variant=0,travelY=0){
-    const image=spriteImage(type,frame,variant,travelY),offset=SPRITE_PLACEMENT[type]||{x:0,y:0};ctx.save();ctx.translate(Math.round(x)+offset.x,Math.round(y)+offset.y);
+  function blit(type,x,y,frame=0,direction=1,variant=0){
+    const image=spriteImage(type,frame,variant),offset=SPRITE_PLACEMENT[type]||{x:0,y:0};ctx.save();ctx.translate(Math.round(x)+offset.x,Math.round(y)+offset.y);
     if(direction<0){ctx.translate(image.width,0);ctx.scale(-1,1);}ctx.drawImage(image,0,0);ctx.restore();
   }
   function pathLength(path){return path.slice(1).reduce((total,p,i)=>total+Math.hypot(p[0]-path[i][0],p[1]-path[i][1]),0);}
   function locate(object){
     if(!object.path)return;
     const points=PIXEL_PATHS[object.path];let left=object.distance;
-    for(let i=1;i<points.length;i++){const [x,y]=points[i-1],dx=points[i][0]-x,dy=points[i][1]-y,len=Math.hypot(dx,dy);if(left<=len||i===points.length-1){const f=Math.min(1,left/len);object.x=x+dx*f;object.y=y+dy*f;object.travelY=dx===0?Math.sign(dy):0;if(dx)object.direction=dx<0?-1:1;if(!['compact','sedan','truck'].includes(object.spriteType))object.frame=SPRITE_WALK.pixelFrames[walkingPhase(object)];return;}left-=len;}
+    for(let i=1;i<points.length;i++){const [x,y]=points[i-1],dx=points[i][0]-x,dy=points[i][1]-y,len=Math.hypot(dx,dy);if(left<=len||i===points.length-1){const f=Math.min(1,left/len);object.x=x+dx*f;object.y=y+dy*f;if(dx)object.direction=dx<0?-1:1;return;}left-=len;}
   }
   function addPerson(path,index,distance=0,type='pedestrian'){
     const object={x:0,y:0,direction:1,speed:PIXEL_TUNING.walkSpeed,frame:0,spriteType:type,active:true,path,index,distance,wait:0};
@@ -620,8 +576,7 @@ const pixelWorld=(()=>{
         if(object.path==='construction'){object.distance=0;}
         else{object.active=false;object.wait=vehicle?.2:1.3+(object.index%3)*.5;}
       }
-      locate(object);
-      if(isVehicle(object))object.frame=Math.floor(time*PIXEL_POLISH.wheelFrameRate+object.index)%2;
+      locate(object);const phase=Math.floor(isVehicle(object)?time*PIXEL_POLISH.wheelFrameRate+object.index:object.distance/PIXEL_POLISH.walkStridePixels*SPRITE_WALK.sequence.length+object.index);object.frame=isVehicle(object)?phase%2:SPRITE_WALK.sequence[phase%SPRITE_WALK.sequence.length];
     }
   }
   function rect(x,y,width,height,color){ctx.fillStyle=color;ctx.fillRect(Math.round(x),Math.round(y),width,height);}
@@ -655,7 +610,7 @@ const pixelWorld=(()=>{
     ctx.save();ctx.beginPath();ctx.rect(0,196,WORLD_GRID.width,42);ctx.clip();
     for(const object of vehicles){if(!object.active)continue;blit(object.spriteType,object.x,object.y,object.frame,object.direction,object.index);}
     ctx.restore();
-    for(const object of objects.filter(o=>!isVehicle(o)).sort((a,b)=>a.y-b.y)){if(!object.active)continue;blit(object.spriteType,object.x,object.y,object.idle?SPRITE_WALK.idleFrame:object.frame,object.direction,object.index,object.travelY||0);}
+    for(const object of objects.filter(o=>!isVehicle(o)).sort((a,b)=>a.y-b.y)){if(!object.active)continue;blit(object.spriteType,object.x,object.y,object.idle?SPRITE_WALK.idleFrame:object.frame,object.direction,object.index);}
     // Small produce and pump accents mark price changes without permanent number boards.
     if(time<priceUntil&&!reducedMotion.matches){const f=PIXEL_ANCHORS.fuelPrice,m=PIXEL_ANCHORS.marketPrice;priceCorners(f.x,f.y,f.w,f.h);if(visual.retailActivity==='open')priceCorners(m.x,m.y,m.w,m.h);}
     frameCount++;
