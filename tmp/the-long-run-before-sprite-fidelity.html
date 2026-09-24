@@ -225,7 +225,7 @@ const PIXEL_SMALL_FONT={
   '8':'010/101/010/101/010','9':'010/101/011/001/110','$':'011/110/011/110/010',
   '.':'000/000/000/000/010',',':'000/000/000/010/100',' ':'000/000/000/000/000'
 };
-const PIXEL_POLISH={signPadding:5,signHeight:9,walkFrameRate:4,wheelFrameRate:3,personGap:11,vehicleGap:38};
+const PIXEL_POLISH={signPadding:5,signHeight:9,walkFrameRate:4,wheelFrameRate:3,personGap:9,vehicleGap:38};
 // Buildings and entrances are in the same coordinates as PIXEL_PATHS/PIXEL_ANCHORS.
 const TOWN_BUILDINGS={
   cafe:{x:14,y:71,w:74,h:61},market:{x:106,y:57,w:88,h:75},bank:{x:215,y:53,w:70,h:79},
@@ -365,215 +365,109 @@ function renderWorld(){
    maps the existing worldState values to sprite density. Both canvases use the
    same 480 × 270 grid; PIXEL_PATHS and PIXEL_ANCHORS locate all activity. */
 const PIXEL_TUNING={fps:10,vehicleSpeed:17,walkSpeed:2.5,maxVehicles:10,maxPeople:18,priceFlashSeconds:.8};
-const PIXEL_PALETTE={O:TOWN_PALETTE.ink,B:TOWN_PALETTE.sand,D:TOWN_PALETTE.ochre,L:TOWN_PALETTE.sun,W:TOWN_PALETTE.sky,G:TOWN_PALETTE.teal,H:TOWN_PALETTE.cream,R:TOWN_PALETTE.brick,T:TOWN_PALETTE.deep,K:TOWN_PALETTE.steel,S:TOWN_PALETTE.skin,C:TOWN_PALETTE.sea,A:TOWN_PALETTE.paper,P:TOWN_PALETTE.slate,F:TOWN_PALETTE.wood,Y:TOWN_PALETTE.gold,V:TOWN_PALETTE.far,E:TOWN_PALETTE.paper};
+const PIXEL_PALETTE={O:TOWN_PALETTE.ink,B:TOWN_PALETTE.sand,D:TOWN_PALETTE.ochre,L:TOWN_PALETTE.sun,W:TOWN_PALETTE.sky,G:TOWN_PALETTE.teal,H:TOWN_PALETTE.cream,R:TOWN_PALETTE.brick,T:TOWN_PALETTE.deep,K:TOWN_PALETTE.steel,S:TOWN_PALETTE.skin,C:TOWN_PALETTE.sea,P:TOWN_PALETTE.slate,F:TOWN_PALETTE.wood,Y:TOWN_PALETTE.gold,V:TOWN_PALETTE.far,E:TOWN_PALETTE.paper};
 
-// Native-resolution actor art: matrix dimensions are the sprite scale (no resampling).
-// Placement preserves the previous foot/road contact points as the silhouettes grow.
-const SPRITE_PLACEMENT={compact:{x:0,y:-1},sedan:{x:0,y:-1},truck:{x:0,y:-1},pedestrian:{x:-1,y:-3},worker:{x:-1,y:-3}};
-const SPRITE_WALK={sequence:[0,1,2,1],idleFrame:1};
+// Actual pixel matrices. Spaces are transparent; each symbol is one canvas pixel.
 const sprites={
-  compact:{frames:[
-    [
-      "       OOOOOOO          ",
-      "      OBBBBBBBO         ",
-      "     OBWWBWWWBBO        ",
-      "    OBBGGBGGGBBBO       ",
-      " OBBBLLLLLBLLLLLLLLLBO  ",
-      " ORBBBBBBBBBBBBBBBBBBHO ",
-      " OBBBBBBBBDKBBBBBBBBBBO ",
-      " OKDDDDDDDDDDDDDDDDDDKO ",
-      "  OOTTTTOOOOOOOOOTTTTO  ",
-      "    TKTT         TKTT   ",
-      "    TTKT         TTKT   ",
-      "    TTTT         TTTT   "
-    ],
-    [
-      "       OOOOOOO          ",
-      "      OBBBBBBBO         ",
-      "     OBWWBWWWBBO        ",
-      "    OBBGGBGGGBBBO       ",
-      " OBBBLLLLLBLLLLLLLLLBO  ",
-      " ORBBBBBBBBBBBBBBBBBBHO ",
-      " OBBBBBBBBDKBBBBBBBBBBO ",
-      " OKDDDDDDDDDDDDDDDDDDKO ",
-      "  OOTTTTOOOOOOOOOTTTTO  ",
-      "    TTKT         TTKT   ",
-      "    TKTT         TKTT   ",
-      "    TTTT         TTTT   "
-    ]
-  ]},
-  sedan:{frames:[
-    [
-      "        OOOOOOOOOO          ",
-      "       OBBBBBBBBBBO         ",
-      "      OBWWWWBWWWWBBO        ",
-      "     OBBGGGGBGGGGBBBO       ",
-      " OBBBLLLLLLLLBLLLLLLLLLLBO  ",
-      " ORBBBBBBBBBBBBBBBBBBBBBBHO ",
-      " OBBBBBBBBBBBDKBBBBBBBBBBBO ",
-      " OKDDDDDDDDDDDDDDDDDDDDDDKO ",
-      "  OOOTTTTOOOOOOOOOOOOTTTTO  ",
-      "     TKTT            TKTT   ",
-      "     TTKT            TTKT   ",
-      "     TTTT            TTTT   "
-    ],
-    [
-      "        OOOOOOOOOO          ",
-      "       OBBBBBBBBBBO         ",
-      "      OBWWWWBWWWWBBO        ",
-      "     OBBGGGGBGGGGBBBO       ",
-      " OBBBLLLLLLLLBLLLLLLLLLLBO  ",
-      " ORBBBBBBBBBBBBBBBBBBBBBBHO ",
-      " OBBBBBBBBBBBDKBBBBBBBBBBBO ",
-      " OKDDDDDDDDDDDDDDDDDDDDDDKO ",
-      "  OOOTTTTOOOOOOOOOOOOTTTTO  ",
-      "     TTKT            TTKT   ",
-      "     TKTT            TKTT   ",
-      "     TTTT            TTTT   "
-    ]
-  ]},
-  truck:{frames:[
-    [
-      " OOOOOOOOOOOOOOOOO             ",
-      " OEWWWWWWWWWWWWWEO             ",
-      " OEKEEEEEEEEEEEEEO OBBBBBBO    ",
-      " OEKLLLLLLLLLLLEEO OBBWWWWBO   ",
-      " OEKLLLLLLLLLLLEEO OBBGGGGGBO  ",
-      " OEKEEEEEEEEEEEEEO OBKBBBBBBO  ",
-      " ORBBBBBBBBBBBBBBBBBBBBBBBBBHO ",
-      " OKDDDDDDDDDDDDDDDDDDDDDDDDDKO ",
-      "  OOOTTTTOOOOOOOOOOOOOOOTTTTOO ",
-      "     TKTT               TKTT   ",
-      "     TTKT               TTKT   ",
-      "     TTTT               TTTT   "
-    ],
-    [
-      " OOOOOOOOOOOOOOOOO             ",
-      " OEWWWWWWWWWWWWWEO             ",
-      " OEKEEEEEEEEEEEEEO OBBBBBBO    ",
-      " OEKLLLLLLLLLLLEEO OBBWWWWBO   ",
-      " OEKLLLLLLLLLLLEEO OBBGGGGGBO  ",
-      " OEKEEEEEEEEEEEEEO OBKBBBBBBO  ",
-      " ORBBBBBBBBBBBBBBBBBBBBBBBBBHO ",
-      " OKDDDDDDDDDDDDDDDDDDDDDDDDDKO ",
-      "  OOOTTTTOOOOOOOOOOOOOOOTTTTOO ",
-      "     TTKT               TTKT   ",
-      "     TKTT               TKTT   ",
-      "     TTTT               TTTT   "
-    ]
-  ]},
-  pedestrian:{frames:[
-    [
-      "   FFF   ",
-      "  FFFFF  ",
-      "  FSSS   ",
-      "  FSSOS  ",
-      "   SS    ",
-      "  OCCO   ",
-      " OCCACO  ",
-      " SCCCOS  ",
-      "  CCOSS  ",
-      "  FFFF   ",
-      "  PPPP   ",
-      "  PP PP  ",
-      " PP  PP  ",
-      " PP   P  ",
-      " OOO  OO "
-    ],
-    [
-      "   FFF   ",
-      "  FFFFF  ",
-      "  FSSS   ",
-      "  FSSOS  ",
-      "   SS    ",
-      "  OCCO   ",
-      " OCCACO  ",
-      " SCCACS  ",
-      "  CCCC   ",
-      "  FFFF   ",
-      "  PPPP   ",
-      "   PPP   ",
-      "   PPP   ",
-      "   P P   ",
-      "   O OO  "
-    ],
-    [
-      "   FFF   ",
-      "  FFFFF  ",
-      "  FSSS   ",
-      "  FSSOS  ",
-      "   SS    ",
-      "  OCCO   ",
-      " OCCACO  ",
-      " SSCCCS  ",
-      " SSCCO   ",
-      "  FFFF   ",
-      "  PPPP   ",
-      "  PP PP  ",
-      "  PP  PP ",
-      "  P   PP ",
-      " OO  OOO "
-    ]
-  ]},
-  worker:{frames:[
-    [
-      "   YYY   ",
-      "  YHYYY  ",
-      " YYYYYYY ",
-      "  SSSOS  ",
-      "   SS    ",
-      "  OYYO   ",
-      " OYCHYO  ",
-      " SYHHYS  ",
-      "  YCYSS  ",
-      "  FFFF   ",
-      "  PPPP   ",
-      "  PP PP  ",
-      " PP  PP  ",
-      " PP   P  ",
-      " OOO  OO "
-    ],
-    [
-      "   YYY   ",
-      "  YHYYY  ",
-      " YYYYYYY ",
-      "  SSSOS  ",
-      "   SS    ",
-      "  OYYO   ",
-      " OYCHYO  ",
-      " SYHHYS  ",
-      "  YCCY   ",
-      "  FFFF   ",
-      "  PPPP   ",
-      "   PPP   ",
-      "   PPP   ",
-      "   P P   ",
-      "   O OO  "
-    ],
-    [
-      "   YYY   ",
-      "  YHYYY  ",
-      " YYYYYYY ",
-      "  SSSOS  ",
-      "   SS    ",
-      "  OYYO   ",
-      " OYCHYO  ",
-      " SYHHYS  ",
-      " SSYCY   ",
-      "  FFFF   ",
-      "  PPPP   ",
-      "  PP PP  ",
-      "  PP  PP ",
-      "  P   PP ",
-      " OO  OOO "
-    ]
-  ]},
+  compact:{frames:[[
+    '      OOOOOO        ',
+    '     OBBWWBBO       ',
+    '    OBBWWWWBBO      ',
+    ' OOOOBBBBBBBBBOOO   ',
+    ' ORBBBBBBBBBBBBBBHO ',
+    ' ODBBBBBBBBBBBBBBDO ',
+    ' ODDDDDDDDDDDDDDDDO ',
+    ' OOOTTOOOOOOOOTTOOO ',
+    '    TKT      TKT    ',
+    '    TTT      TTT    '
+  ]]},
+  sedan:{frames:[[
+    '      OOOOOOOOO         ',
+    '     OBWWBWWWWBO        ',
+    '    OBBWWBWWWWBBO       ',
+    ' OOOOBBBBBBBBBBBBOOOO   ',
+    ' ORBBBBBBBBBBBBBBBBBHO  ',
+    ' ODBBBBBBBBBBBBBBBBBDO  ',
+    ' ODDDDDDDDDDDDDDDDDDDO  ',
+    ' OOOTTOOOOOOOOOOTTOOOO  ',
+    '    TKT        TKT      ',
+    '    TTT        TTT      '
+  ]]},
+  truck:{frames:[[
+    ' OOOOOOOOOOOOOO           ',
+    ' OEEEEEEEEEEEEO OOOOO     ',
+    ' OELLLLLLLLLLEO OBWWWO    ',
+    ' OELLLLLLLLLLEO OBWWWWO   ',
+    ' OEEEEEEEEEEEEO OBBBBBOO  ',
+    ' OEEEEEEEEEEEEOOOBBBBBBHO ',
+    ' ODDDDDDDDDDDDDDDDDDDDDO ',
+    ' OOOTTOOOOOOOOOOOOOTTOOO ',
+    '    TKT           TKT    ',
+    '    TTT           TTT    '
+  ]]},
+  pedestrian:{frames:[[
+    '  FFF  ',
+    '  FSS  ',
+    '  SSO  ',
+    '   S   ',
+    '  CCC  ',
+    ' SCCCS ',
+    ' SCCCS ',
+    '  CCC  ',
+    '  PPP  ',
+    '  P P  ',
+    ' PP P  ',
+    ' OO OO '
+  ],[
+    '  FFF  ',
+    '  FSS  ',
+    '  SSO  ',
+    '   S   ',
+    '  CCC  ',
+    '  CCCS ',
+    ' SCCC  ',
+    '  CCC  ',
+    '  PPP  ',
+    ' P  P  ',
+    ' P  PP ',
+    'OO  OO '
+  ]]},
+  worker:{frames:[[
+    '  YYY  ',
+    ' YYYYY ',
+    '  SSO  ',
+    '   S   ',
+    '  YCY  ',
+    ' SYCYS ',
+    ' SYCYS ',
+    '  YCY  ',
+    '  PPP  ',
+    '  P P  ',
+    ' PP P  ',
+    ' OO OO '
+  ],[
+    '  YYY  ',
+    ' YYYYY ',
+    '  SSO  ',
+    '   S   ',
+    '  YCY  ',
+    '  YCYS ',
+    ' SYCY  ',
+    '  YCY  ',
+    '  PPP  ',
+    ' P  P  ',
+    ' P  PP ',
+    'OO  OO '
+  ]]},
   smoke:{frames:[['   EE   ','  EEEE  ',' EEEEEE ','  EEEE  '],['   EE EE  ','  EEEEEEE ',' EEEEEEEE ','  EEEEEE  ','    EE    '],[' EE    EE  ',' EEE  EEEE ','  EEEEEEE  ','   EEEEE   ','     EE    ']]},
   hook:{frames:[[' O ',' O ',' OO','  O','OOO']]},
   flag:{frames:[['VVVVVVVV  ','VVVVVVVVV ','VVVVVVVVVV','VVVVVVVVV ','VVVVVVVV  ','VVVVVVV   '],['VVVVVVV   ','VVVVVVVV  ','VVVVVVVVV ','VVVVVVVVVV','VVVVVVVVV ','VVVVVVVV  ']]}
 };
+// A second wheel frame, with the hub shifted one pixel, never rescales the body.
+for(const type of ['compact','sedan','truck'])sprites[type].frames.push(sprites[type].frames[0].map(row=>row.replaceAll('TKT','KTT')));
+
 const PIXEL_PATHS={
-  upperRoad:[[-34,149],[480,149]],lowerRoad:[[480,163],[-34,163]],
+  upperRoad:[[-28,149],[480,149]],lowerRoad:[[480,163],[-28,163]],
   sidewalk:[[13,132],[289,132]],sidewalkReturn:[[289,134],[13,134]],retail:[[108,132],[176,132],[176,119]],
   factory:[[322,128],[451,128]],factoryReturn:[[451,130],[322,130]],factoryEntrance:[[322,128],[409,128],[409,119]],
   construction:[[397,238],[415,238],[397,238]]
@@ -595,20 +489,19 @@ const pixelWorld=(()=>{
   ctx.imageSmoothingEnabled=false;
   const cache=new Map(),vehicleColors=[TOWN_PALETTE.gold,TOWN_PALETTE.teal,TOWN_PALETTE.brick,TOWN_PALETTE.paper,TOWN_PALETTE.purple];
   const shirtColors=[TOWN_PALETTE.teal,TOWN_PALETTE.brick,TOWN_PALETTE.leaf,TOWN_PALETTE.purple,TOWN_PALETTE.sand];
-  const shirtHighlights=[TOWN_PALETTE.sky,TOWN_PALETTE.skin,TOWN_PALETTE.lightGrass,TOWN_PALETTE.steel,TOWN_PALETTE.sun];
   let visual=null,objects=[],time=0,lastTime=0,raf=0,priceUntil=0,frameCount=0;
   function spriteImage(type,frame,variant=0){
     const key=`${type}/${frame}/${variant}/${visual.upgraded}`;
     if(cache.has(key))return cache.get(key);
     const matrix=sprites[type].frames[frame%sprites[type].frames.length];
     const sheet=document.createElement('canvas');sheet.width=Math.max(...matrix.map(row=>row.length));sheet.height=matrix.length;
-    const brush=sheet.getContext('2d'),palette={...PIXEL_PALETTE,B:vehicleColors[variant%vehicleColors.length],C:shirtColors[variant%shirtColors.length],A:shirtHighlights[variant%shirtHighlights.length],S:variant%2?TOWN_PALETTE.skin:TOWN_PALETTE.ochre};
+    const brush=sheet.getContext('2d'),palette={...PIXEL_PALETTE,B:vehicleColors[variant%vehicleColors.length],C:shirtColors[variant%shirtColors.length],S:variant%2?TOWN_PALETTE.skin:TOWN_PALETTE.ochre};
     if(type==='smoke')palette.E=visual.upgraded?TOWN_PALETTE.paper:TOWN_PALETTE.steel;
     matrix.forEach((row,y)=>[...row].forEach((color,x)=>{if(color!==' '){brush.fillStyle=palette[color];brush.fillRect(x,y,1,1);}}));
     cache.set(key,sheet);return sheet;
   }
   function blit(type,x,y,frame=0,direction=1,variant=0){
-    const image=spriteImage(type,frame,variant),offset=SPRITE_PLACEMENT[type]||{x:0,y:0};ctx.save();ctx.translate(Math.round(x)+offset.x,Math.round(y)+offset.y);
+    const image=spriteImage(type,frame,variant);ctx.save();ctx.translate(Math.round(x),Math.round(y));
     if(direction<0){ctx.translate(image.width,0);ctx.scale(-1,1);}ctx.drawImage(image,0,0);ctx.restore();
   }
   function pathLength(path){return path.slice(1).reduce((total,p,i)=>total+Math.hypot(p[0]-path[i][0],p[1]-path[i][1]),0);}
@@ -621,7 +514,7 @@ const pixelWorld=(()=>{
     const object={x:0,y:0,direction:1,speed:PIXEL_TUNING.walkSpeed,frame:0,spriteType:type,active:true,path,index,distance,wait:0};
     locate(object);objects.push(object);
   }
-  function fixedPerson(x,y,index,idle=true){objects.push({x,y,direction:1,speed:0,frame:SPRITE_WALK.idleFrame,spriteType:'pedestrian',active:true,path:null,index,distance:0,idle});}
+  function fixedPerson(x,y,index,idle=true){objects.push({x,y,direction:1,speed:0,frame:0,spriteType:'pedestrian',active:true,path:null,index,distance:0,idle});}
   const isVehicle=object=>['truck','sedan','compact'].includes(object.spriteType);
   const motionKey=object=>(isVehicle(object)?'vehicle':'person')+'/'+object.path+'/'+object.index;
   function entryClear(object){
@@ -634,11 +527,11 @@ const pixelWorld=(()=>{
     // Each lane keeps its own spacing; sprites are recycled only beyond the road edges.
     for(let i=0;i<visual.trafficLevel;i++){
       const path=i%2?'lowerRoad':'upperRoad',laneIndex=Math.floor(i/2),laneCount=Math.ceil((visual.trafficLevel-(i%2))/2);
-      const object={x:0,y:0,direction:i%2?-1:1,speed:PIXEL_TUNING.vehicleSpeed*(i%2?.92:1),frame:0,spriteType:i%visual.deliveryEvery===0?'truck':i%2?'sedan':'compact',active:true,path,index:i,distance:(laneIndex+.35)*pathLength(PIXEL_PATHS[path])/laneCount,wait:0};locate(object);objects.push(object);
+      const object={x:0,y:0,direction:i%2?-1:1,speed:PIXEL_TUNING.vehicleSpeed*(i%2?.92:1),frame:0,spriteType:i%visual.deliveryEvery===0?'truck':i%2?'sedan':'compact',active:true,path,index:i,distance:(laneIndex+.35)*508/laneCount,wait:0};locate(object);objects.push(object);
     }
     fixedPerson(110,236,1,visual.householdIdle);fixedPerson(121,236,2);
     for(let i=0;i<visual.cafe;i++)fixedPerson(28+i*21,126,i);
-    for(let i=0;i<visual.idle;i++)fixedPerson(160+i*11,236,i+3);
+    for(let i=0;i<visual.idle;i++)fixedPerson(163+i*9,236,i+3);
     if(visual.constructionActivity!=='paused')addPerson('construction',3,4,'worker');
     const fixed=objects.filter(object=>!['truck','sedan','compact'].includes(object.spriteType)).length;
     const workerCount=Math.min(visual.workers,PIXEL_TUNING.maxPeople-fixed-visual.shoppers);
@@ -671,7 +564,7 @@ const pixelWorld=(()=>{
         if(object.path==='construction'){object.distance=0;}
         else{object.active=false;object.wait=vehicle?.2:1.3+(object.index%3)*.5;}
       }
-      locate(object);const phase=Math.floor(time*(isVehicle(object)?PIXEL_POLISH.wheelFrameRate:PIXEL_POLISH.walkFrameRate)+object.index);object.frame=isVehicle(object)?phase%2:SPRITE_WALK.sequence[phase%SPRITE_WALK.sequence.length];
+      locate(object);object.frame=Math.floor(time*(isVehicle(object)?PIXEL_POLISH.wheelFrameRate:PIXEL_POLISH.walkFrameRate)+object.index)%2;
     }
   }
   function rect(x,y,width,height,color){ctx.fillStyle=color;ctx.fillRect(Math.round(x),Math.round(y),width,height);}
@@ -701,7 +594,7 @@ const pixelWorld=(()=>{
     ctx.save();ctx.beginPath();ctx.rect(0,148,WORLD_GRID.width,29);ctx.clip();
     for(const object of vehicles){if(!object.active)continue;blit(object.spriteType,object.x,object.y,object.frame,object.direction,object.index);}
     ctx.restore();
-    for(const object of objects.filter(o=>!isVehicle(o)).sort((a,b)=>a.y-b.y)){if(!object.active)continue;blit(object.spriteType,object.x,object.y,object.idle?SPRITE_WALK.idleFrame:object.frame,object.direction,object.index);}
+    for(const object of objects.filter(o=>!isVehicle(o)).sort((a,b)=>a.y-b.y)){if(!object.active)continue;blit(object.spriteType,object.x,object.y,object.idle?0:object.frame,object.direction,object.index);}
     // Bitmap price text is also exposed in the canvas description. Corners tick on updates.
     if(time<priceUntil&&!reducedMotion.matches){const f=PIXEL_ANCHORS.fuelPrice,m=PIXEL_ANCHORS.marketPrice;priceCorners(f.x,f.y,f.w,f.h);if(visual.retailActivity==='open')priceCorners(m.x,m.y,m.w,m.h);}
     frameCount++;

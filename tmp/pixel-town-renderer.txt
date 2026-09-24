@@ -1,0 +1,166 @@
+// One virtual grid and one palette serve the town, bitmap signs and moving sprites.
+// CSS controls display size only; neither canvas is enlarged for devicePixelRatio.
+const WORLD_GRID={width:480,height:270};
+const TOWN_PALETTE={
+  ink:'#243e50',deep:'#1e3444',slate:'#344e6a',road:'#536d7d',steel:'#98b5b5',
+  sky:'#bde7e5',far:'#87bbb0',cloud:'#e7eee0',leaf:'#58936c',grass:'#89b875',
+  shade:'#3c7058',lightGrass:'#b7cf8c',paving:'#d2c9a6',cream:'#fff3b2',
+  paper:'#e7eee0',sand:'#d9a45c',ochre:'#9b693f',sun:'#f4d184',gold:'#efc55f',
+  brick:'#cf6952',brickDark:'#944b43',wood:'#594239',skin:'#cf9872',
+  teal:'#5d9ca9',sea:'#5c8c96',purple:'#8579a5'
+};
+// 5 × 7 bitmap lettering: every mark is a filled pixel, never antialiased type.
+const PIXEL_FONT={
+  A:['01110','10001','10001','11111','10001','10001','10001'],B:['11110','10001','10001','11110','10001','10001','11110'],
+  C:['01111','10000','10000','10000','10000','10000','01111'],D:['11110','10001','10001','10001','10001','10001','11110'],
+  E:['11111','10000','10000','11110','10000','10000','11111'],F:['11111','10000','10000','11110','10000','10000','10000'],
+  G:['01111','10000','10000','10111','10001','10001','01110'],H:['10001','10001','10001','11111','10001','10001','10001'],
+  I:['11111','00100','00100','00100','00100','00100','11111'],J:['00111','00010','00010','00010','10010','10010','01100'],
+  K:['10001','10010','10100','11000','10100','10010','10001'],L:['10000','10000','10000','10000','10000','10000','11111'],
+  M:['10001','11011','10101','10101','10001','10001','10001'],N:['10001','11001','10101','10011','10001','10001','10001'],
+  O:['01110','10001','10001','10001','10001','10001','01110'],P:['11110','10001','10001','11110','10000','10000','10000'],
+  Q:['01110','10001','10001','10001','10101','10010','01101'],R:['11110','10001','10001','11110','10100','10010','10001'],
+  S:['01111','10000','10000','01110','00001','00001','11110'],T:['11111','00100','00100','00100','00100','00100','00100'],
+  U:['10001','10001','10001','10001','10001','10001','01110'],V:['10001','10001','10001','10001','10001','01010','00100'],
+  W:['10001','10001','10001','10101','10101','10101','01010'],X:['10001','10001','01010','00100','01010','10001','10001'],
+  Y:['10001','10001','01010','00100','00100','00100','00100'],Z:['11111','00001','00010','00100','01000','10000','11111'],
+  '0':['01110','10001','10011','10101','11001','10001','01110'],'1':['00100','01100','00100','00100','00100','00100','01110'],
+  '2':['01110','10001','00001','00010','00100','01000','11111'],'3':['11110','00001','00001','01110','00001','00001','11110'],
+  '4':['00010','00110','01010','10010','11111','00010','00010'],'5':['11111','10000','10000','11110','00001','00001','11110'],
+  '6':['01110','10000','10000','11110','10001','10001','01110'],'7':['11111','00001','00010','00100','01000','01000','01000'],
+  '8':['01110','10001','10001','01110','10001','10001','01110'],'9':['01110','10001','10001','01111','00001','00001','01110'],
+  '$':['00100','01111','10100','01110','00101','11110','00100'],'%':['11001','11010','00010','00100','01000','01011','10011'],
+  '.':['00000','00000','00000','00000','00000','00110','00110'],',':['00000','00000','00000','00000','00110','00100','01000'],
+  '+':['00000','00100','00100','11111','00100','00100','00000'],'-':['00000','00000','00000','11111','00000','00000','00000'],
+  '/':['00001','00010','00010','00100','01000','01000','10000'],' ':['00000','00000','00000','00000','00000','00000','00000']
+};
+// Buildings and entrances are in the same coordinates as PIXEL_PATHS/PIXEL_ANCHORS.
+const TOWN_BUILDINGS={
+  cafe:{x:14,y:68,w:74,h:64},market:{x:106,y:53,w:88,h:79},bank:{x:215,y:48,w:70,h:84},
+  works:{x:315,y:76,w:140,h:56},home:{x:15,y:209,w:84,h:45},civic:{x:215,y:211,w:73,h:43},
+  fuel:{x:316,y:208,w:69,h:49},site:{x:397,y:207,w:74,h:50}
+};
+const PIXEL_ANCHORS={machine:{x:400,y:109},stack:{x:333,y:34},hook:{x:455,y:201},flag:{x:243,y:189},
+  marketPrice:{x:115,y:105,w:43,h:13},fuelPrice:{x:348,y:231,w:36,h:13}};
+function renderPixelTown(w){
+  const canvas=$('#world'),g=canvas.getContext('2d'),p=TOWN_PALETTE;
+  g.imageSmoothingEnabled=false;
+  const rect=(x,y,width,height,color)=>{g.fillStyle=p[color]||color;g.fillRect(Math.round(x),Math.round(y),Math.round(width),Math.round(height));};
+  const box=(x,y,width,height,fill,border='ink')=>{rect(x,y,width,height,border);rect(x+1,y+1,width-2,height-2,fill);};
+  const text=(value,x,y,color='cream',center=false)=>{value=String(value).toUpperCase();if(center)x-=Math.floor((value.length*6-1)/2);for(const letter of value){const glyph=PIXEL_FONT[letter]||PIXEL_FONT[' '];glyph.forEach((row,gy)=>[...row].forEach((bit,gx)=>{if(bit==='1')rect(x+gx,y+gy,1,1,color);}));x+=6;}};
+  const roof=(x,y,width,height,color)=>{for(let step=0;step<height;step+=2)rect(x+height-step,y+step,width-2*(height-step),2,color);rect(x,y+height,width,3,'ink');};
+  const tree=(x,y)=>{rect(x+6,y+12,3,12,'wood');rect(x+3,y+2,10,3,'shade');rect(x,y+5,17,11,'shade');rect(x+2,y+3,12,10,'leaf');rect(x+4,y,7,4,'leaf');rect(x+3,y+5,6,5,'grass');rect(x+2,y+16,12,2,'shade');};
+  const shrub=(x,y,width=17)=>{rect(x,y+3,width,5,'shade');rect(x+2,y,width-4,6,'leaf');for(let i=4;i<width-3;i+=6)rect(x+i,y+1,3,2,'grass');};
+  const window=(x,y,width=10,height=12,lit=true)=>{box(x,y,width,height,'ink');rect(x+1,y+1,width-2,height-2,lit?'cream':'sea');rect(x+2,y+2,width-4,2,lit?'sun':'teal');rect(x+Math.floor(width/2),y+1,1,height-2,'ink');rect(x,y+height,width,1,'paper');};
+  const front=(b,wall)=>{rect(b.x+3,b.y+3,b.w,b.h,'shade');box(b.x,b.y,b.w,b.h,wall);rect(b.x+2,b.y+2,b.w-4,2,'paper');rect(b.x+1,b.y+b.h-4,b.w-2,3,'ochre');};
+  const sign=(name,x,y,width,bg='ink')=>{box(x,y,width,12,bg);text(name,x+Math.floor(width/2),y+3,'cream',true);};
+  const door=(x,y,width=13,height=24)=>{box(x,y,width,height,'deep');rect(x+2,y+2,width-4,height-6,'sea');rect(x+width-4,y+height-10,1,2,'cream');};
+  const crate=(x,y)=>{box(x,y,9,8,'sand','wood');rect(x+2,y+2,5,1,'sun');rect(x+4,y+1,1,6,'ochre');};
+  // Back layer: stepped hills, low skyline and sparse clouds.
+  rect(0,0,480,270,'sky');
+  for(const [x,y] of [[18,17],[132,11],[267,18],[419,10]]){rect(x,y+3,25,4,'paper');rect(x+5,y,12,3,'paper');}
+  for(let x=0;x<480;x+=12){const h=15+Math.round((Math.sin(x/49)+1)*10);rect(x,52-h,12,h+26,'far');}
+  for(const [x,y,width,height] of [[39,35,15,34],[60,29,11,40],[145,34,15,28],[190,37,11,31],[276,27,17,43],[300,41,11,29],[429,32,16,38]]){rect(x,y,width,height,'sea');rect(x+2,y+3,width-4,2,'far');for(let wx=x+3;wx<x+width-3;wx+=5)rect(wx,y+9,2,2,'sky');}
+  rect(0,69,480,201,'grass');
+  for(let x=3;x<480;x+=23){rect(x,80+(x%5)*5,3,1,'lightGrass');rect(x+5,90+(x%4)*7,1,2,'leaf');}
+  // Two continuous sidewalks, two clear vehicle lanes and a connected crossing.
+  rect(0,130,480,18,'paving');rect(0,145,480,2,'paper');rect(0,147,480,31,'road');
+  rect(0,148,480,1,'steel');rect(0,176,480,1,'steel');
+  for(let x=4;x<480;x+=19)rect(x,161,9,1,'cream');
+  rect(0,178,480,12,'paving');rect(0,178,480,2,'paper');
+  for(let x=0;x<480;x+=16){rect(x,140,15,1,'sand');rect(x,186,15,1,'sand');}
+  rect(296,123,14,24,'paving');rect(296,178,14,91,'paving');
+  for(let y=150;y<175;y+=5)rect(297,y,12,3,'paper');
+  rect(204,188,9,78,'paving');rect(0,262,480,8,'paving');
+  rect(100,190,97,67,'lightGrass');rect(99,190,9,72,'paving');rect(105,248,87,10,'paving');
+  rect(210,199,82,62,'paving');rect(313,196,74,65,'steel');rect(316,198,68,61,'paving');
+  rect(390,192,90,70,'ochre');rect(392,194,86,66,'paving');
+  rect(389,179,12,19,'paving');rect(313,179,13,20,'paving');
+  // Cafe: stepped roof, striped awning, front door and outdoor tables.
+  const cafe=TOWN_BUILDINGS.cafe;front(cafe,'sand');rect(12,64,78,4,'ink');rect(16,61,70,3,'brickDark');
+  sign('CAFE',28,71,45,'shade');
+  window(20,91,20,27);window(46,91,17,27);door(69,99,13,33);
+  rect(16,85,70,6,'cream');for(let x=16;x<86;x+=12)rect(x,85,6,6,'brick');
+  for(const x of [31,52,73]){box(x-5,137,11,3,'cream');rect(x,140,1,4,'wood');rect(x-7,140,2,3,'wood');}
+  shrub(2,119,10);
+  // Market: the price board and vacancy/hiring cues use existing derived values.
+  const market=TOWN_BUILDINGS.market;front(market,'brick');rect(104,50,92,4,'ink');rect(108,47,84,3,'brickDark');
+  for(let x=113;x<186;x+=18)window(x,59,12,14,!w.vacancy);
+  sign('MARKET',125,80,49,'ink');
+  rect(108,94,84,7,'cream');for(let x=108;x<192;x+=12)rect(x,94,6,7,'teal');
+  box(112,101,51,26,w.vacancy?'sea':'sun');door(173,103,16,29);
+  box(115,105,43,13,'deep');text(w.vacancy?'LEASE':money(w.basket),136,108,'cream',true);
+  if(w.hiring){rect(164,116,7,9,'gold');text('+',165,117,'ink');}
+  if(!w.vacancy){crate(112,127);crate(125,127);rect(115,125,2,2,'leaf');rect(128,125,2,2,'brick');}
+  // Bank: classical silhouette without a giant text panel.
+  const bank=TOWN_BUILDINGS.bank;front(bank,'paper');roof(211,36,78,12,'slate');
+  sign('BANK',230,55,41,'slate');
+  for(const x of [220,275]){rect(x,72,5,55,'steel');rect(x-1,72,7,3,'cream');rect(x-1,126,7,3,'cream');}
+  text('LOANS',251,76,'slate',true);box(233,86,35,13,'ink');text(percent(economy.interestRate),251,89,'cream',true);
+  door(241,105,20,27);rect(240,110,22,1,'steel');rect(212,132,76,3,'steel');rect(210,135,80,2,'paper');
+  // Works: toothed roof, loading apron, machine bay and supply crates.
+  const works=TOWN_BUILDINGS.works;
+  for(const [x,y,h] of [[333,36,43],[353,45,34]]){box(x,y,7,h,'brickDark');rect(x-1,y,9,3,'ink');rect(x+1,y+8,5,2,'brick');}
+  front(works,w.upgraded?'far':'steel');
+  for(let x=314;x<398;x+=21){roof(x,61,23,14,'slate');rect(x+15,66,5,9,'teal');}
+  rect(395,69,61,8,'ink');rect(398,70,56,4,'slate');
+  sign('WORKS',341,81,47,'slate');
+  for(let x=322;x<391;x+=16)window(x,102,11,12,!w.vacancy);
+  box(397,103,29,29,'deep');rect(398,104,27,2,'steel');
+  rect(395,132,35,4,'steel');rect(392,136,42,7,'road');for(let x=394;x<434;x+=7)rect(x,136,3,2,'gold');
+  rect(394,145,42,2,'steel');
+  for(let i=0;i<clamp(Math.round(w.active/3),1,7);i++)crate(319+i*10,124-(i%2)*2);
+  if(w.upgraded){box(405,62,36,7,'teal');for(let x=408;x<439;x+=7)rect(x,63,1,5,'sky');text('+',446,83,'cream');}
+  rect(438,117,10,15,'slate');rect(441,119,4,4,w.vacancy?'brick':'lightGrass');
+  // Home and yard: one recurring household, income and a shrinking/growing basket.
+  const home=TOWN_BUILDINGS.home;front(home,'sun');roof(11,191,92,18,'brickDark');
+  for(let x=31;x<87;x+=12)rect(x,199,6,1,'brick');
+  sign('HOME',28,211,42,'wood');window(22,229,21,18,!w.unemployed);door(76,230,14,24);
+  rect(89,254,23,4,'steel');rect(12,257,87,2,'shade');shrub(15,251,24);
+  text('PAY',146,207,'ink',true);text('$'+Math.round(w.pay).toLocaleString('en-US'),146,217,'ink',true);
+  const basketCount=clamp(Math.floor((w.pay/3200)/(economy.priceLevel/100)*5),1,5);
+  rect(136,242,20,8,'wood');rect(138,244,16,5,'sand');rect(137,241,18,1,'sun');
+  for(let i=0;i<basketCount;i++){rect(138+i*3,239,3,3,i%2?'leaf':'brick');rect(139+i*3,238,1,1,'shade');}
+  text(w.unemployed?'NO WORK':w.shortHours?'FEWER HRS':basketCount<5?'PAY BUYS LESS':'AT WORK',149,258,'ink',true);
+  rect(181,244,13,2,'wood');rect(182,246,2,3,'wood');rect(191,246,2,3,'wood');
+  // Civic plaza and government-project materials retain their original trigger.
+  const civic=TOWN_BUILDINGS.civic;front(civic,'paper');roof(211,193,81,18,'slate');
+  sign('CIVIC',232,213,41,'slate');door(245,234,13,20);
+  for(const x of [220,235,263,278]){rect(x,228,4,25,'cream');rect(x-1,227,6,2,'steel');}
+  rect(213,254,77,3,'steel');rect(210,257,83,2,'paper');rect(241,186,1,15,'ink');
+  if(economy.governmentDemand>57){crate(280,247);crate(280,239);rect(276,259,14,2,'gold');}
+  // Fuel forecourt: pump, hose and legible bitmap price board.
+  const fuel=TOWN_BUILDINGS.fuel;rect(fuel.x,204,fuel.w,3,'ink');box(314,195,73,10,'brick');text('FUEL',350,197,'cream',true);
+  rect(319,207,3,45,'steel');rect(380,207,3,45,'steel');
+  box(324,224,10,25,'brick');box(326,227,6,6,'cream');rect(326,235,6,1,'wood');
+  rect(334,229,5,2,'ink');rect(338,230,2,13,'ink');rect(336,242,3,2,'ink');
+  rect(347,220,39,29,'ink');text('GAL',367,222,'paper',true);text(money(w.fuel),366,234,'cream',true);
+  rect(351,250,2,5,'slate');rect(380,250,2,5,'slate');rect(323,254,15,2,'paper');
+  // Construction: open frame, scaffold and staging space. No extra state model.
+  const site=TOWN_BUILDINGS.site,frame=w.construction==='paused'?'steel':'sand';
+  rect(422,218,46,35,'slate');rect(424,220,42,31,'paving');
+  for(const x of [423,444,465])rect(x,217,3,36,frame);
+  for(const y of [218,234,250])rect(422,y,46,3,frame);
+  rect(424,237,18,12,w.construction==='paused'?'steel':'brick');rect(447,237,17,12,w.construction==='paused'?'steel':'brick');
+  for(const x of [428,450])for(let i=0;i<6;i++)rect(x+i*2,223+i,2,1,'wood');
+  rect(408,202,3,51,'gold');rect(407,200,68,3,'gold');
+  for(let y=206;y<249;y+=7){rect(406,y,7,1,'ochre');rect(408,y+1,2,3,'ochre');}
+  for(let i=0;i<12;i++){rect(410+i*2,199-i,2,1,'gold');rect(434+i*3,188+i,3,1,'gold');}
+  rect(403,251,12,4,'slate');crate(398,251);crate(411,253);
+  rect(418,259,54,9,'deep');text(w.construction==='paused'?'PAUSED':w.construction==='active'?'BUILDING':'WORKING',445,260,w.construction==='paused'?'sun':'lightGrass',true);
+  // Street furniture stays clear of all routes; trees are stepped clusters.
+  for(const [x,y] of [[1,111],[91,111],[198,105],[289,110],[461,112],[1,232],[191,224],[292,239]])tree(x,y);
+  for(const [x,y] of [[6,139],[202,139],[311,139],[473,139]]){rect(x,y-10,1,12,'ink');rect(x-1,y-12,3,3,'cream');rect(x-2,y+2,5,1,'slate');}
+  for(const [x,y,width] of [[14,185,77],[109,190,77],[220,184,65]])shrub(x,y,width);
+  box(92,117,8,12,'slate');rect(94,120,4,4,'cream');rect(95,129,1,5,'ink');
+  rect(468,181,8,2,'wood');rect(468,183,1,4,'wood');rect(475,183,1,4,'wood');
+}
+function renderWorld(){
+  const w=worldState(),householdCondition=w.unemployed?'LOOKING FOR WORK':w.shortHours?'REDUCED HOURS':'OFF TO WORK';
+  $('#world-title').textContent=`Common Ground: a living economy in Year ${economy.year}`;
+  $('#world-description').textContent=`Year ${economy.year}. ${w.vacancy?'Empty storefronts and reduced factory shifts.':'Open shops and working factory shifts.'} ${w.hiring?'Help wanted signs.':''} ${w.shoppers} shoppers and ${w.cars} vehicles. Construction ${w.construction}. ${w.upgraded?'Upgraded factory equipment.':''} Fuel ${money(w.fuel)} per gallon; grocery basket ${money(w.basket)}; bank loan rate ${percent(economy.interestRate)}. The recurring household has ${householdCondition.toLowerCase()}, with monthly work income ${money(w.pay)}.`;
+  renderPixelTown(w);
+  $('#city-year').textContent=`YEAR ${economy.year}`;
+  $('#city-caption').textContent=`${w.hiring?'Firms are hiring.':w.vacancy?'Some storefronts are empty.':'Shops are open.'} ${w.construction==='paused'?'Private projects are on hold.':w.construction==='active'?'Construction crews are busy.':'Construction continues at a measured pace.'} ${w.upgraded?'The factory has newer equipment.':''}`;
+  pixelWorld.sync();
+}
