@@ -4,7 +4,7 @@ const categories = ['rent','groceries','gas','streaming','haircuts'];
 const names = ['Rent','Groceries','Gas','Streaming','Haircuts'];
 const base = (id, quantities, prices) => ({ id, items: categories.map((id,i)=>({id,name:names[i],quantity:quantities[i],price:prices[i]})) });
 export const CONFIG = freeze({
-  title: 'CPI LIVE', gameID: 'cpi-live', route: '/games/cpi-live/',
+  title: 'CPI Live', gameID: 'cpi-live', route: '/games/cpi-live/',
   description: 'Reprice a fixed household basket, build the CPI, calculate inflation, audit bad calculations, and learn why some price changes matter more than others.',
   modelNote: 'Simulated household market basket · simplified fixed-basket CPI model',
   decimals: { currency: 2, index: 1, rate: 1 },

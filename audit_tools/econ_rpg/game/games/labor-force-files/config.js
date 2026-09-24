@@ -1,8 +1,8 @@
 const freeze = value => { if (value && typeof value === 'object') { Object.values(value).forEach(freeze); Object.freeze(value); } return value; };
 export const CONFIG = freeze({
-  title: 'LABOR FORCE FILES', gameID: 'labor-force-files', route: '/games/labor-force-files/',
+  title: 'Labor Force Files', gameID: 'labor-force-files', route: '/games/labor-force-files/',
   description: 'Track employment, unemployment, participation, and discouraged workers to see what the unemployment rate really says.',
-  modelNote: 'A simplified instructional labor-market model. Exact counts are in the report; silhouettes are illustrative. Official measurement includes additional rules.',
+  modelNote: 'A simplified instructional labor-market model. Exact counts appear in the report; silhouettes are illustrative.',
   retainedRuns: 20, rateTolerance: 0.05,
   baselines: [
     { id:'district-a', adultPopulation:250, employed:160, unemployed:10 },

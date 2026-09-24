@@ -1,0 +1,62 @@
+{
+  "profiles": {
+    "Overheated Economy": 41,
+    "Policy-Driven Recovery": 21,
+    "Fragile Recovery": 26,
+    "Balanced Expansion": 59,
+    "Stalled Economy": 79,
+    "Stagflation Pressure": 2,
+    "Productivity-Led Growth": 15
+  },
+  "representatives": {
+    "Overheated Economy": [
+      "confidence",
+      "fiscal-expand",
+      "rate-cut",
+      "housing-boom",
+      "support"
+    ],
+    "Policy-Driven Recovery": [
+      "breakthrough",
+      "fiscal-contract",
+      "rate-hike",
+      "housing-boom",
+      "support"
+    ],
+    "Fragile Recovery": [
+      "confidence",
+      "fiscal-expand",
+      "rate-cut",
+      "commodities",
+      "support"
+    ],
+    "Balanced Expansion": [
+      "breakthrough",
+      "fiscal-contract",
+      "rate-cut",
+      "commodities",
+      "support"
+    ],
+    "Stalled Economy": [
+      "energy",
+      "fiscal-contract",
+      "rate-hike",
+      "commodities",
+      "support"
+    ],
+    "Stagflation Pressure": [
+      "energy",
+      "fiscal-contract",
+      "rate-hike",
+      "infrastructure",
+      "support"
+    ],
+    "Productivity-Led Growth": [
+      "breakthrough",
+      "fiscal-expand",
+      "rate-cut",
+      "housing-boom",
+      "control"
+    ]
+  }
+}

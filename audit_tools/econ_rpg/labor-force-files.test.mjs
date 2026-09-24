@@ -3,8 +3,10 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
+import {fieldFeedback,fieldSummary} from './game/games/labor-force-files/field-feedback.js';
 import {CONFIG} from './game/games/labor-force-files/config.js';
 import * as e from './game/games/labor-force-files/engine.js';
+import {summaryData,summaryText,seriesGeometry,summaryChart} from './game/games/labor-force-files/summary-chart.js';
 import {board,work,explanation} from './game/games/labor-force-files/view.js';
 import {restore,load,last,save,selectedIDs} from './game/games/labor-force-files/storage.js';
 import {recorder,PREFIX} from './game/games/labor-force-files/telemetry.js';
@@ -89,4 +91,42 @@ test('all six supplied image bytes are untouched and scene selection determinist
   assert.equal(manifest.length,6);for(const art of manifest){const bytes=readFileSync(new URL('./game/art/scenes/labor-force-files/'+art.file,import.meta.url));assert.equal(bytes.length,art.bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),art.sha256);assert.deepEqual(art.dimensions,[1672,941]);}
   for(const d of CONFIG.direct)for(let step=0;step<17;step++){const r={...e.newRun(1),step,directID:d.id},m=e.model(r);assert.deepEqual(e.model(r),m);assert.ok(m.scene.alt.length>60);const stage=e.question(r).stage;assert.equal(m.scene.id,stage<4?1:stage===4?(d.kind==='hiring'?2:3):stage===5?4:stage===6?5:6);}
   execFileSync('git',['diff','--exit-code','HEAD','--','audit_tools/econ_rpg/game/games/cpi-live','audit_tools/econ_rpg/game/games/gdp-live','audit_tools/econ_rpg/game/games/takeout-taco-lunch-rush','audit_tools/econ_rpg/game/scenarios','audit_tools/econ_rpg/game/rpg.js','audit_tools/econ_rpg/game/rpg.css','audit_tools/econ_rpg/game/instructional-followup.js'],{stdio:'pipe'});
+});
+
+test('final graph uses the selected run accounts, preserves the report and explains independent comparisons',()=>{
+  for(const baseline of CONFIG.baselines)for(const direct of CONFIG.direct)for(const expansion of CONFIG.expansions)for(const discouraged of CONFIG.discouraged)for(const mixed of CONFIG.mixed)for(const headline of CONFIG.headlines){
+    const run={...e.newRun(1),baselineID:baseline.id,directID:direct.id,expansionID:expansion.id,discouragedID:discouraged.id,mixedID:mixed.id,headlineID:headline.id};
+    const m=e.model(run),data=summaryData(run),keys=['base','direct','expansion','discouraged','mixed','headline'];
+    assert.equal(data.length,6);data.forEach((row,i)=>{eq(row.ur,m[keys[i]].ur);eq(row.lfpr,m[keys[i]].lfpr);});
+    for(const key of ['ur','lfpr']){const g=seriesGeometry(data,key,50,120);assert.ok(g.min>=0&&g.max<=100);assert.deepEqual(g.points.map(p=>p.value),data.map(r=>r[key]));assert.ok(g.points.every(p=>p.x>=56&&p.x<=356&&p.y>=50&&p.y<=120));}
+    const text=summaryText(run);assert.match(text,/independent|baseline/);assert.ok(text.includes(m.discouraged.ur.toFixed(1)+'%'));assert.ok(text.includes(m.expansion.lfpr.toFixed(1)+'%'));
+    const chart=summaryChart(run);assert.match(chart,/not a time series/);assert.match(chart,/solid \/ circles/);assert.match(chart,/dashed \/ squares/);assert.match(chart,/summary-chart-desc/);
+  }
+  let run=e.start(e.newRun(1));while(e.question(run)){assert.doesNotMatch(work(run),/run-summary-title/);run=e.next(e.submit(run,e.expected(run)));}
+  const html=work(run);for(const label of ['First-attempt accuracy','Checks including UR','Checks including LFPR','Classification','Headline audit','What the final report shows','PLAY AGAIN','RETURN TO GAMES','run-summary-title'])assert.ok(html.includes(label),label);
+  assert.deepEqual(summaryData(restore(JSON.parse(JSON.stringify(run)))),summaryData(run));
+});
+
+test('partial numeric feedback validates each part independently and preserves saved correct answers',()=>{
+  for(const baseline of CONFIG.baselines)for(const direct of CONFIG.direct)for(const expansion of CONFIG.expansions)for(const mixed of CONFIG.mixed){
+    let r=e.start({...e.newRun(1),baselineID:baseline.id,directID:direct.id,expansionID:expansion.id,mixedID:mixed.id});
+    while(e.question(r)){
+      const target=e.expected(r);
+      if(typeof target==='object'){
+        const keys=Object.keys(target);
+        for(let mask=0;mask<2**keys.length;mask++){
+          const answer=Object.fromEntries(keys.map((k,i)=>[k,mask&(1<<i)?target[k]:k==='participation'?'rises':999]));
+          const submitted=e.submit(r,answer),before=JSON.stringify(submitted),fields=fieldFeedback(submitted);
+          assert.equal(fields.length,keys.length);fields.forEach((f,i)=>{assert.equal(f.correct,!!(mask&(1<<i)));assert.match(f.text,f.correct?/Correct/:/Recheck/);assert.ok(work(submitted).includes('field-'+f.key+'-feedback'));});
+          assert.equal(JSON.stringify(submitted),before,'feedback never mutates the run');
+          if(!submitted.solved)assert.doesNotMatch(fieldSummary(submitted),/check each field/i);
+          if(keys.includes('participation')&&mask===1){assert.match(fields[0].text,/UR: Correct/);assert.match(fields[1].text,/labor force and adult population are unchanged/);assert.equal(submitted.answer.ur,target.ur);}
+        }
+      }
+      r=e.next(e.submit(r,target));
+    }
+  }
+  let r=e.start(e.newRun(0));while(e.question(r).id!=='direct-calc')r=e.next(e.submit(r,e.expected(r)));
+  const target=e.expected(r);r=e.submit(r,{ur:target.ur,participation:'falls'});const restored=restore(JSON.parse(JSON.stringify(r)));assert.deepEqual(fieldFeedback(restored),fieldFeedback(r));assert.equal(restored.answer.ur,target.ur);
+  execFileSync('git',['diff','--exit-code','HEAD','--','audit_tools/econ_rpg/game/games/labor-force-files/engine.js','audit_tools/econ_rpg/game/games/labor-force-files/storage.js','audit_tools/econ_rpg/game/games/labor-force-files/telemetry.js'],{stdio:'pipe'});
 });

@@ -47,7 +47,7 @@ try{
       const link=p.locator(`[data-game="${id}"] a`);let focused=false;
       for(let i=0;i<30;i++){if(await link.evaluate(e=>document.activeElement===e)){focused=true;break;}await p.keyboard.press('Tab');}
       assert.ok(focused);assert.ok(await link.evaluate(e=>getComputedStyle(e).outlineStyle==='solid'));
-      await p.keyboard.press('Enter');await p.waitForURL(`**/games/${id}/`);await p.locator('#game-title').filter({hasText:id==='gdp-live'?'GDP LIVE':'CPI LIVE'}).waitFor();
+      await p.keyboard.press('Enter');await p.waitForURL(`**/games/${id}/`);await p.locator('#game-title').filter({hasText:id==='gdp-live'?'GDP Live':'CPI Live'}).waitFor();
       await p.goto(origin+'/games/');
     }
     checks.push(label);await context.close();if(v.zoom)zoom=null;

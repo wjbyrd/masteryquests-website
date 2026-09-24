@@ -13,6 +13,7 @@ Created under `audit_tools/econ_rpg/game/games/labor-force-files/`:
 - `config.js`: centralized title, model note, authored pools, person definitions and scene alternatives.
 - `engine.js`: derived labor accounts, validated population flows, selection, guarded transitions, parsing, hints and scoring.
 - `view.js`: compact artwork, exact population table, calculations, classification, interpretations, headline audit and results.
+- `summary-chart.js`: final-report rate snapshots, two-series graphic, equivalent table and run-specific graph takeaway.
 - `app.js`: DOM interactions, keyboard focus, progressive hints, safe input handling and persistence integration.
 - `storage.js`: current-run/last-selection storage and action-replay validation on resume.
 - `telemetry.js`: anonymous, browser-local events with bounded run retention.
@@ -111,3 +112,80 @@ The nine stages consolidate reading and building the labor force into one task; 
 Change cases are explicitly **independent comparisons with the selected baseline**, not cumulative time periods. This matches the supplied art's baseline-relative meanings, keeps the arithmetic controlled, and lets students compare different reasons for a rate change. The mixed case and headline audit supply the transfer practice requested by the instructional-follow-up standard. No additional quiz or giant final debrief is appended.
 
 The model note deliberately limits claims about official measurement. The art is never used as numerical evidence. No other material departures from the requested scope were introduced.
+
+
+## Final-report graph enhancement
+
+The existing final report remains: performance recap, UR/LFPR calculation checks, classification performance, headline-audit result, concise headline explanation, takeaway and replay/navigation controls. Only the completed report gains **Labor market through the files**, one compact chart panel with two aligned rate plots and a shared file axis. The nine-stage instructional sequence, calculations, selection, saved-run format and telemetry are unchanged.
+
+The panel includes six snapshots from the actual selected run: **Files 1–4: Baseline; File 5: Direct change; File 6: New participants; File 7: Discouraged workers; File 8: Mixed flows; File 9: Headline audit**. The baseline is shown once rather than repeating classification-only or initial calculation steps. Snapshots are derived from the saved run's case IDs through the same calculation model that supplied the completed questions, not sample values or a fresh random selection. Reload produces identical graph data.
+
+UR uses a teal solid line with circles. LFPR uses an off-white dashed line with squares. Direct labels identify both series and percentages. The aligned panels have their own explicitly labeled percentage scales so modest UR changes remain visible alongside much higher participation rates. A visible note states that file order is **not a time series** and each case compares independently with the same baseline. Lines connect the order in which cases were reviewed, not a cumulative monthly trajectory.
+
+A compact six-row table gives both rates to one decimal with file names and semantic row/column headings. The SVG has a meaningful title and a description containing every plotted value; a visible, dynamically generated takeaway explains the selected direct-change and expansion outcomes and contrasts them with lower UR and LFPR under discouragement. It refers to the graph and the baseline, without treating each case as the next time period. Color is supplemented by line styles, point shapes and direct labels. No animation, chart controls, live data or new quiz is added.
+
+The SVG is at most 400px wide, scales within the report, and occupies about 310px of graphic height on desktop. At narrow widths the compact panel, exact-value table and takeaway stack with the existing report. No page-level horizontal scrolling occurs. The graphic adds no keyboard stops or traps; the existing Play Again and Return to Games actions remain available.
+
+Validation for this focused enhancement:
+
+- **All eight labor-game unit suites pass**, including all 3,240 complete authored combinations and a new all-combination check that plotted UR/LFPR values match the run's six calculated snapshots. Chart geometry, dynamic text, original report content, hidden-during-play behavior and identical restored data are verified.
+- **19 final-report browser checks pass**, covering all 24 pool entries and 1366 × 768, 1280 × 720, 768 × 1024, 390 × 844, 320 × 720, and actual 200% Chrome zoom. Checks compare every table rate with the run data, verify line/marker semantics and all SVG label bounds, preserve the five performance rows, test reload consistency and keyboard replay, and confirm no page overflow.
+- Visual inspection covers desktop, 320px and real 200% zoom. Zero page/console errors or missing resources were recorded. A screen-reader listening pass was not performed.
+- `git diff --check` passes. The engine, configuration, app event flow, storage and telemetry have no changes in this pass.
+
+New browser test: `audit_tools/econ_rpg/labor-force-files-summary.browser.test.mjs`. Evidence: `tmp/econ-rpg/labor-force-files/summary/`, with unit/browser logs alongside it. No push or deployment.
+
+
+## MQ readability and field-feedback cleanup
+
+This pass supersedes the original charcoal-shell styling while retaining the supplied noir artwork, strong serif title, newspaper headline phase, compact image sizing and nine-stage instructional structure. The final report and its run-summary graph are preserved.
+
+### Shell and header
+
+The page now inherits the shared MQ navy, light text, teal primary controls and gold focus/correction accents. Its background uses the familiar navy/blue gradient; the interaction panel has a distinct blue surface. Muddy gray-black form, button and feedback backgrounds were replaced with clearer MQ surfaces. Labels, notes and body text have stronger sizing and spacing; the LFPR direction choices are grouped in a bordered native fieldset. Hover, disabled, selected and focus states remain explicit.
+
+The “POPULATION · EMPLOYMENT · PARTICIPATION” strapline is removed without replacement. The title remains prominent. The model note is shortened to: “A simplified instructional labor-market model. Exact counts appear in the report; silhouettes are illustrative.” No numerical configuration changed.
+
+### Population Report comparison
+
+A matched desktop comparison was captured with the same data and MQ shell using both the prior dark Population Report and the new newspaper-gray surface. The paper treatment was retained because it separates the exact figures from the scene and dark controls, makes the Before/After columns easier to scan, and supports distinct rate rows without muting the interface.
+
+The panel uses clean gray `#e6e9e9`, dark navy text `#172d48`, darker rules, a restrained dark-teal heading/border and a slightly deeper gray-blue background for bold UR/LFPR rows. It has no parchment color, image texture or simulated distress. Tested report headings, table text, muted notes, prompts, labels, controls and field-feedback text all exceed 4.5:1 contrast; the lowest measured ratio in that set is **6.54:1**. The dark comparison also remained readable, but did not provide the same visual separation.
+
+### Images without added black bands
+
+All six supplied scene files remain byte-for-byte unchanged. On the game page, the image element now sizes to its intrinsic aspect ratio within the existing 220px desktop / 260px tablet height caps, rather than occupying a wider black frame. Phones scale the complete image to the available width. On the Games hub, only the Labor Force Files card media uses the artwork's native **1672:941** aspect ratio instead of a 4:3 letterbox. No group boundaries are cropped and no source image is stretched, edited or recompressed. Automated checks compare displayed image-box ratios with natural dimensions at every requested size; both locations have no added letterboxing.
+
+### Field-specific correction
+
+New `field-feedback.js` derives a result for each submitted part using the engine's existing acceptance rules and selected case. Numeric inputs and the LFPR direction group get their own text, `aria-invalid` state and `aria-describedby` association. The summary identifies only the fields needing correction. Accepted entries retain their values and visible success status; students can correct the other part without retyping them.
+
+Example verified in the browser with adult population 200, employment falling from 114 to 106, unemployment rising from 6 to 14, and labor force fixed at 120:
+
+- **UR: Correct — 11.7%.**
+- **LFPR: Recheck. The labor force and adult population are unchanged, so LFPR stays the same.**
+
+The top feedback reads “1 of 2 answers correct. Update LFPR.” Keyboard focus goes to the invalid LFPR radio group, not back to the correct UR field. The single polite live region announces both field results. When both are wrong, both receive corrective messages. Three-field mixed cases separately identify the labor-force count, UR and LFPR results. Text labels and borders supplement color.
+
+This validation is presentation-only. Economic calculations, tolerance, scoring, authored variants, classification, headline logic, telemetry schema and saved-run transitions are unchanged. Status is re-derived from saved submitted answers, so existing partial saves resume consistently. Field messages guide denominators without automatically opening formulas; requested hint behavior remains intact.
+
+### Validation
+
+- All **nine Labor Force Files unit suites** pass, including all **3,240 complete combinations**, source-image hashes, final-chart checks and new correct/incorrect masks for each numeric field across the authored baselines/direct/expansion/mixed pools.
+- The broader non-browser regression run passes **100 tests with zero failures**, covering the existing private game library.
+- **20 full keyboard-only game runs** pass across every pool entry, normal/reduced motion, replay, reload and hint flows.
+- **Six focused UI browser checks** cover 1366 × 768, 1280 × 720, 768 × 1024, 390 × 844, 320 × 720 and actual 200% browser zoom. Each tests four partial-answer patterns, appropriate focus, correction without touching a correct UR value, resume, contrast and hub/game image proportions. No horizontal page scrolling occurs.
+- **19 final-report browser checks** pass after the restyling, preserving its graph, exact-value table, performance rows and keyboard actions.
+- Zero page/console errors or missing resources in the passing browser suites. Engine, storage and telemetry source guards pass; `git diff --check` passes. A screen-reader listening pass was not performed.
+
+New focused test: `audit_tools/econ_rpg/labor-force-files-ui.browser.test.mjs`. Evidence, including before/dark-comparison/paper screenshots, partial-feedback examples and contrast results, is under `tmp/econ-rpg/labor-force-files/ui-cleanup/`.
+
+No unrelated game changes, push or deployment.
+
+### Hub card alignment follow-up
+
+The native-ratio hub exception made the Labor Force Files image shorter than adjacent cards. The hub now uses the shared 4:3 frame with `object-fit:fill` for this card only. This intentionally stretches the illustration vertically, preserving its complete contents without added bands and aligning image bottoms and heading starts with the other cards. The actual game page keeps its natural image proportions. Browser measurements at 1366px, 768px and 390px confirm matching image heights and heading offsets across cards; the desktop screenshot was visually inspected. Evidence: `tmp/econ-rpg/labor-force-files/ui-cleanup/hub-aligned.png`. No gameplay or source-art changes, push or deployment.
+
+### Title case and full-width scene follow-up
+
+Hub and game titles now read GDP Live, CPI Live and Labor Force Files. The Labor Force Files header model-note subtitle and scene caption are removed. All in-game scene images now fill the Population Report width, stretching horizontally within the compact desktop/tablet height; phones retain automatic height. The full illustration stays visible without added bands. This supersedes the earlier natural-width game-page sizing. Browser checks at 1366, 1280, 768, 390 and 320px confirm equal image/report widths and left edges, no horizontal overflow, correct hub/page titles, and no page errors. Desktop appearance was visually inspected; evidence: `tmp/econ-rpg/labor-force-files/ui-cleanup/full-width-1366.png` and `full-width-390.png`. Gameplay remains unchanged. No push or deployment.

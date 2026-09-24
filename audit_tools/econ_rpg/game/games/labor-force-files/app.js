@@ -1,6 +1,7 @@
 import {CONFIG} from './config.js';
 import * as engine from './engine.js';
 import {board,work} from './view.js';
+import {fieldFeedback} from './field-feedback.js';
 import {load,last,save} from './storage.js';
 import {recorder} from './telemetry.js';
 const report=document.querySelector('#report'),view=document.querySelector('#work'),announcement=document.querySelector('#announcement');
@@ -9,14 +10,9 @@ const warn=text=>{const el=document.querySelector('#storage-warning');el.textCon
 const persist=()=>{if(!save(storage,run))warn('Progress could not be saved. You can continue in this tab; reloading may lose progress.');};
 document.title=`${CONFIG.title} | Mastery Quests`;
 document.querySelector('#game-title').textContent=CONFIG.title;
-document.querySelector('#model-note').textContent=CONFIG.modelNote;
 function render(focus) {
   const html=board(run);if(report.innerHTML!==html)report.innerHTML=html;
   view.innerHTML=work(run);
-  const target=engine.expected(run);
-  if(run.answer&&target&&typeof target==='object')for(const [key,value]of Object.entries(target)){
-    const el=view.querySelector(`[name="${key}"]`);if(el&&key!=='participation')el.setAttribute('aria-invalid',String(!engine.accepts(run.answer[key],value,key)));
-  }
   if(focus)document.getElementById(focus)?.focus();
 }
 function reset(initial=false) {
@@ -33,9 +29,9 @@ function answer(value) {
   const action=q.person!==undefined?'classification_attempt':{base:'labor_force_attempt',ur:'ur_attempt',lfpr:'lfpr_attempt','direct-predict':'change_prediction','direct-calc':'change_calculation','discouraged-interpret':'discouraged_interpretation',headline:'headline_audit_attempt'}[q.id]||q.id.replaceAll('-','_')+'_attempt';
   log.log(action,before,run);if(run.solved)log.log(q.person!==undefined?'classification_complete':q.id==='headline'?'headline_audit_complete':q.id.replaceAll('-','_')+'_complete',before,run);
   persist();render();
-  const feedback=document.querySelector('#feedback');announcement.textContent=`Attempt ${run.attempts[q.id]}. ${feedback.textContent}`;
+  const feedback=document.querySelector('#feedback'),fields=fieldFeedback(run);announcement.textContent=`Attempt ${run.attempts[q.id]}. ${!run.solved&&fields.length?fields.map(f=>f.text).join(' '):feedback.textContent}`;
   if(!run.solved&&typeof value==='object'){
-    const invalid=view.querySelector('input[aria-invalid=true]');if(invalid){invalid.focus();invalid.select();}else feedback.focus();
+    const invalid=view.querySelector('input[type=text][aria-invalid=true]')||view.querySelector('input[type=radio][aria-invalid=true]:checked')||view.querySelector('input[aria-invalid=true]');if(invalid){invalid.focus();if(invalid.type==='text')invalid.select();}else feedback.focus();
   }else feedback.focus();
 }
 view.addEventListener('submit',event=>{if(event.target.id!=='answer-form')return;event.preventDefault();answer(Object.fromEntries(new FormData(event.target)));});
