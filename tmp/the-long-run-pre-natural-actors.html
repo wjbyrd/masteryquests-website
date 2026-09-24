@@ -212,7 +212,7 @@ const TOWN_PALETTE={
   coral:'#e37a56',blue:'#3d96b8',violet:'#9e7dbb',jade:'#319a87',amber:'#f1c253',
   skyline:'#91adb2',skylineShade:'#819da5',skylineWindow:'#c1d3d0'
 };
-const PIXEL_POLISH={walkStridePixels:8,wheelFrameRate:3,personGap:16,vehicleGap:68};
+const PIXEL_POLISH={walkFrameRate:4,wheelFrameRate:3,personGap:16,vehicleGap:68};
 const TOWN_BUILDINGS={
   cafe:{x:19,y:105,w:104,h:49},market:{x:145,y:77,w:117,h:99},
   bank:{x:282,y:116,w:112,h:59},works:{x:420,y:105,w:188,h:71},
@@ -375,85 +375,76 @@ function renderWorld(){
 const PIXEL_TUNING={fps:20,vehicleSpeed:23,walkSpeed:3.3,maxVehicles:10,maxPeople:18,priceFlashSeconds:.8};
 const PIXEL_PALETTE={O:TOWN_PALETTE.ink,B:TOWN_PALETTE.sand,D:TOWN_PALETTE.ochre,L:TOWN_PALETTE.sun,W:TOWN_PALETTE.sky,G:TOWN_PALETTE.teal,H:TOWN_PALETTE.cream,R:TOWN_PALETTE.brick,T:TOWN_PALETTE.deep,K:TOWN_PALETTE.steel,S:TOWN_PALETTE.skin,C:TOWN_PALETTE.sea,A:TOWN_PALETTE.paper,P:TOWN_PALETTE.slate,F:TOWN_PALETTE.wood,Y:TOWN_PALETTE.gold,V:TOWN_PALETTE.far,E:TOWN_PALETTE.paper,Q:TOWN_PALETTE.ochre,N:TOWN_PALETTE.ochre,Z:TOWN_PALETTE.skin,J:TOWN_PALETTE.steel,U:TOWN_PALETTE.deep,M:TOWN_PALETTE.ochre};
 
-// Native 18 × 27 people: one extra row of articulation, with the same grounded foot line.
+// Native 16 × 26 people. The four poses share a grounded foot line, not a scaled bitmap.
 const SPRITE_PLACEMENT={compact:{x:0,y:0},sedan:{x:0,y:0},truck:{x:0,y:0},
-  pedestrian:{x:-7,y:-25},shopper:{x:-7,y:-25},resident:{x:-7,y:-25},factoryWorker:{x:-7,y:-25},worker:{x:-7,y:-25}};
+  pedestrian:{x:-6,y:-24},shopper:{x:-6,y:-24},resident:{x:-6,y:-24},factoryWorker:{x:-6,y:-24},worker:{x:-6,y:-24}};
 const SPRITE_WALK={sequence:[0,1,2,3],idleFrame:4};
-const PERSON_HEAD=['       FFFF','      FQQFFF','     FQQQFFFO','     FNSSSSO','     FNSZSOSS','      NSSSN','       NS','      UCNSU'];
-// Contact, passing, opposite contact, passing, relaxed standing. The far arm is shaded.
+const PERSON_HEAD=['      FFFF','     FQQFFF','    FQQQFFFO','    FNSSSSO','    FNSZSOS','     NSSSN','      NS','     OCNSO'];
 const PERSON_TORSOS=[
- ['     UCCAACU','    UCCCAAACU','    UCUCCCCACU','    SU UCCCCACS','    S  UCCCCUS','       UCCCU','       UCCCU','      UCCCCU','      TPPJPP'],
- ['      UCCAACU','     UCCCAAACU','     UCUCCCCAS','     SUCCCCCS','     S UCCCUS','       UCCCU','       UCCCU','      UCCCCU','      TPPJPP'],
- ['     UCCAACU','     UCCCAAACU','    UCCACCU US','   SCCACCU  S','   SSUCCCCU','     UCCCU','      UCCCU','      UCCCCU','      TPPJPP'],
- ['      UCCAACU','     UCCCAAACU','     UCCACCU','     SUCCCACU','     S UCCCACS','       UCCCU S','       UCCCU','      UCCCCU','      TPPJPP'],
- ['     UCCAACU','    UCCCAAACU','    UCUCCCCACU','    SUCCCCCU S','    S UCCCU  S','      UCCCU S','      UCCCU','      UCCCCU','      TPPJPP']
+ ['    UCCAACO','   UCCCAAACU','   UCCACCCCU','   SUCCCCCUCS','   S UCCCCUSS','     UCCCUSSS','     UCCCU S','     UCCCCU','     TPPKPP'],
+ ['    UCCAACO','    CCCAAACU','    CCACCCCU','    UCCCCCUS','    SUCCCCUS','    S UCCCUS','     UCCCU S','     UCCCCU','     TPPKPP'],
+ ['    OCCAACU','    CCCAAACU','   UCCACCCCU','  SCCUCCCCUS','  SSUCCCCCU','   S UCCCU','     UCCCU','     UCCCCU','     TPPKPP'],
+ ['    OCCAACU','   UCCCAAACU','   UCCACCCCU','   SUCCCCCUS','   S UCCCCUS','     UCCCCUS','     UCCCU S','     UCCCCU','     TPPKPP'],
+ ['    OCCAACU','   UCCCAAACU','   UCCACCCCU','   UCCCCCACU','   SUCCCCUCS','   S UCCCU S','     UCCCU S','     UCCCCU','     TPPKPP']
 ];
 const PERSON_LEGS=[
- ['      TPPJPP','     TTP JPP','     TT  JPP','     TT   JP','    TT    JP','    TT    PP','    TT     PP','    TT     PP','   TOO     PO','   OOO     OOO'],
- ['      TPPJPP','      TT JPP','      TT  JP','      TT  JP','      TT JPP','      TTJPP','      TT PP','      TT OOO','      TO','      OOO'],
- ['      TPPJPP','      TPP JPP','      TPP  JP','     TPP   JP','     TP    JP','    TTP    PP','    TT     PP','    TT     PP','    TO     POO','    OOO    OOO'],
- ['      TPPJPP','      TT JPP','       TTJPP','        TJPP','        TJPP','       TT PP','      TT  PP','      OOO PP','          PO','          OOO'],
- ['      TPPJPP','      TT JPP','      TT JPP','      TT JPP','      TT  PP','     TT   PP','     TT   PP','     TT   PP','     TO   PO','     OOO  OOO']
+ ['     TPPJPP','    TTP JPP','    TT   JPP','   TT     JPP','   TT      JP','  TTT      PP','  TT       PP','  TO       PO','  OOO      OOO'],
+ ['     TPPJPP','      TPJPP','      T PJPP','      T  JPP','      T   PP','      T  PP','      TT PP','      TT','      OOO'],
+ ['     PPPPTT','    PJPP TT','   PJPP   TT','   PJP     TT','   JP       T','   PP       TT','   PP       TT','  PPO       TO','  OOO      OOO'],
+ ['     TPPJPP','     T PJPP','     T PJPP','     TT JPP','      T JPP','       TJPP','      T  PP','      TT PP','         OOO'],
+ ['     TPPJPP','     TT JPP','     TT JPP','     TT JPP','     TT  JP','     TT  PP','     TT  PP','     TO  PO','     OOO OOO']
 ];
 function humanFrames(role){
-  const head=role==='worker'?['       YYY','      YHYYY','     YYHYYYY','    YYYYYYYYY','     ONZSOSS','      NSSSN','       NS','      UYNSYU']:
-    role==='factoryWorker'?['       OOOO','      CCCCCO','     CAAAACCO','     OCCCOOOO','      NZSOSS','      NSSSN','       NS','      UCNCO']:PERSON_HEAD;
+  const head=role==='worker'?['      YYY','     YHYYY','    YYHYYYY','   YYYYYYYYY','    ONZSOS','     NSSSN','      NS','     OYNSYO']:
+    role==='factoryWorker'?['      OOOO','     CCCCCO','    CAAAACCO','    OCCCOOOO','     NZSOS','     NSSSN','      NS','     OCNCO']:PERSON_HEAD;
   return PERSON_TORSOS.map((body,i)=>{
-    // A small forward weight shift at passing, without bouncing the head vertically.
-    const shift=i===1||i===3?1:0;
-    const pixels=[...head.map(row=>' '.repeat(shift)+row),...body,...PERSON_LEGS[i]].map(row=>row.padEnd(18).split(''));
-    const r=(x,y,w,h,c)=>{for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)pixels[yy][xx]=c;};
+    const pixels=[...head,...body,...PERSON_LEGS[i]].map(row=>row.padEnd(16).split(''));
     if(role==='worker'){
-      for(let y=8;y<16;y++)for(const x of [7,10])if('CAU'.includes(pixels[y][x]))pixels[y][x]='Y';
-      for(const x of [7,8,9,10])if(pixels[11][x]!==' ')pixels[11][x]='H';
-      // Tool belt while walking; bent elbows and a held tool in the stationary pose.
-      r(7,15,4,1,'F');r(9,16,2,2,'K');
-      if(i===4){r(4,11,2,4,' ');r(11,10,3,6,' ');r(5,11,2,2,'C');r(6,13,3,1,'S');r(11,11,2,2,'C');r(10,13,3,1,'S');r(8,14,6,1,'F');r(13,12,2,3,'K');}
+      for(let y=8;y<16;y++)for(const x of [6,10])if('CAU'.includes(pixels[y][x]))pixels[y][x]='Y';
+      for(const x of [6,7,8,9,10])if(pixels[11][x]!==' ')pixels[11][x]='H';
+      pixels[14][8]='F';pixels[15][8]='K';pixels[15][9]='F';pixels[16][9]='K';
     }
     if(role==='factoryWorker'){
-      for(let y=9;y<16;y++)for(let x=7;x<=10;x++)if('CAU'.includes(pixels[y][x]))pixels[y][x]='P';
-      r(8,10,1,3,'J');r(10,10,1,3,'J');
-      // Carrying a small part at rest, with forearms held in front of the overalls.
-      if(i===4){r(4,11,2,4,' ');r(11,11,3,5,' ');r(5,11,2,2,'P');r(6,13,2,2,'S');r(11,11,2,2,'P');r(11,13,2,2,'S');r(8,12,4,4,'K');r(9,13,2,2,'H');}
+      for(let y=9;y<16;y++)for(let x=6;x<=10;x++)if('CAU'.includes(pixels[y][x]))pixels[y][x]='P';
+      pixels[10][6]='J';pixels[10][10]='J';pixels[12][8]='K';pixels[13][8]='J';pixels[13][9]='J';
     }
     if(role==='shopper'){
-      // The laden arm hangs steadily; only the free arm swings.
-      r(12,12,4,5,' ');r(11,12,2,2,'C');r(12,14,1,2,'S');r(12,16,3,1,'F');
-      r(12,17,1,5,'F');r(13,17,3,5,'D');r(13,17,1,4,'L');r(12,22,4,1,'F');r(14,17,1,1,'V');r(15,17,1,1,'R');
-      pixels[4][5]='F';pixels[5][5]='F';pixels[6][5]='F';
+      // A separate hand, handle and grocery bag; the bag hangs above the foot line.
+      pixels[15][12]='S';pixels[16][12]='F';pixels[16][14]='F';
+      for(let y=17;y<=22;y++)for(let x=12;x<=15;x++)pixels[y][x]=x===12||y===22?'F':x===13?'L':'D';
+      pixels[17][14]='V';pixels[17][15]='R';
+      pixels[4][4]='F';pixels[5][4]='F';pixels[6][4]='F';
     }
     if(role==='resident'){
       for(let y=8;y<16;y++)if(pixels[y][8]!==' ')pixels[y][8]='U';
-      pixels[11][9]='K';pixels[14][9]='K';pixels[1][7]='K';
+      pixels[11][9]='K';pixels[14][9]='K';pixels[1][6]='K';
     }
     return pixels.map(row=>row.join(''));
   });
 }
-// Shorter native silhouettes give the cabin and body more vertical presence inside each 20px lane.
+// Vehicle silhouettes are authored as native pixel spans with separate bodywork, glazing and tires.
 function vehicleFrames(type){
-  const width=type==='compact'?35:type==='sedan'?41:46,height=20;
+  // ~20% longer bodywork; the 20px height preserves the existing lane clearance.
+  const width=type==='compact'?48:type==='sedan'?55:60,height=20;
   const grid=Array.from({length:height},()=>Array(width).fill(' '));
   const r=(x,y,w,h,c)=>{for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)grid[yy][xx]=c;};
   if(type==='truck'){
-    // Tall cargo box, a separate upright cab and a short stepped hood.
-    r(1,0,27,16,'O');r(2,1,25,13,'E');r(3,2,23,1,'H');r(3,3,1,10,'K');r(5,5,20,5,'L');r(5,12,20,1,'K');r(24,3,1,10,'K');
-    r(29,3,10,1,'O');r(28,4,12,3,'O');r(28,7,14,4,'O');r(28,11,17,6,'O');
-    r(29,4,9,1,'L');r(29,5,10,7,'B');r(30,5,7,6,'W');r(31,5,5,1,'H');r(30,10,7,1,'G');r(38,7,2,5,'O');
-    r(29,12,14,4,'B');r(30,12,3,1,'K');r(41,11,3,1,'L');r(43,12,2,2,'H');r(1,15,43,2,'M');r(1,13,2,2,'R');r(43,15,3,2,'K');
+    r(1,0,39,15,'O');r(2,1,37,12,'E');r(3,2,35,1,'H');r(3,3,2,9,'K');r(6,4,31,1,'K');r(6,6,31,4,'L');r(6,11,31,1,'K');r(35,4,1,8,'K');
+    r(41,3,10,1,'O');r(40,4,14,1,'O');r(40,5,15,2,'O');r(40,7,16,2,'O');r(40,9,18,6,'O');
+    r(41,4,10,1,'L');r(41,5,12,5,'B');r(42,6,9,4,'W');r(43,6,7,1,'H');r(43,9,9,2,'G');r(51,7,2,4,'O');
+    r(41,11,15,3,'B');r(42,12,3,1,'K');r(53,11,1,3,'M');r(56,11,2,2,'H');r(1,14,57,2,'B');r(1,16,58,1,'M');r(2,13,2,2,'R');r(57,14,3,2,'K');
   }else{
-    const sedan=type==='sedan';
-    // Hatchback has a tall rear; sedan has a lower roof and a distinct trunk.
-    const roof=sedan?11:8,roofWidth=sedan?17:15;
-    r(roof,sedan?1:0,roofWidth,1,'O');r(roof-1,sedan?2:1,roofWidth+2,2,'O');r(roof,sedan?2:1,roofWidth,1,'L');
-    for(let y=3;y<=9;y++){const back=sedan?Math.floor((y-2)/3):0,front=Math.floor((y-2)/2);r(roof-1-back,y,roofWidth+2+back+front,1,'O');r(roof-back,y,roofWidth+back+front,1,'B');}
-    r(roof+1,3,6,6,'W');r(roof+8,3,6,6,'W');r(roof+1,3,5,1,'H');r(roof+8,3,5,1,'H');r(roof+1,8,6,1,'G');r(roof+8,8,6,1,'G');r(roof+7,3,1,6,'O');
-    r(4,9,width-8,1,'O');r(2,10,width-4,1,'O');r(1,11,width-2,6,'O');r(2,11,width-4,5,'B');
-    r(3,10,width-7,1,'L');r(2,11,width-4,1,'L');r(2,15,width-4,2,'M');r(0,14,2,2,'K');r(width-2,14,2,2,'K');
-    r(2,12,2,2,'R');r(width-4,11,2,2,'H');r(roof+7,10,1,5,'M');r(roof+9,11,2,1,'K');
-    if(sedan){r(roof-3,10,1,5,'M');r(roof-1,11,2,1,'K');}
-    r(width-7,14,4,1,'O');r(3,17,width-6,1,'O');
+    const long=type==='sedan',roofLeft=long?12:14,roofRight=long?36:31,front=width-2;
+    r(roofLeft+1,1,roofRight-roofLeft-1,1,'O');r(roofLeft,2,roofRight-roofLeft+1,1,'O');r(roofLeft+1,2,roofRight-roofLeft-1,1,'L');
+    for(let y=3;y<=8;y++){const inset=Math.floor((y-2)/2);r(roofLeft-inset,y,roofRight-roofLeft+2*inset+1,1,'O');r(roofLeft-inset+1,y,roofRight-roofLeft+2*inset-1,1,'B');}
+    for(const [x,ww] of long?[[12,10],[24,11],[37,2]]:[[14,8],[24,7]]){r(x,4,ww,4,'W');r(x+1,4,Math.max(1,ww-2),1,'H');r(x,7,ww,1,'G');}
+    r(4,8,width-10,1,'O');r(3,9,width-6,1,'O');r(2,10,width-4,5,'O');r(3,10,width-6,4,'B');
+    r(5,9,width-11,1,'L');r(4,10,width-8,1,'L');r(3,14,width-6,2,'M');r(1,12,3,2,'K');r(front-1,12,3,2,'K');
+    r(3,11,2,2,'R');r(front-3,10,2,2,'H');r(23,10,1,4,'M');r(25,11,3,1,'K');if(long){r(37,10,1,4,'M');r(39,11,3,1,'K');}
+    r(front-7,13,4,1,'O');r(5,13,3,1,'M');
+    r(3,16,width-6,1,'O');
   }
-  const wheels=type==='compact'?[8,27]:type==='sedan'?[9,32]:[9,36];
+  const wheels=type==='compact'?[9,37]:type==='sedan'?[10,44]:[10,49];
   return [0,1].map(phase=>{
     const copy=grid.map(row=>[...row]);
     const wheel=[' TTTTT ','TTKKKTT',phase?'TKKTKKT':'TKTKTKT','TTKKKTT',' TTTTT ','  TTT  '];
@@ -576,7 +567,7 @@ const pixelWorld=(()=>{
         if(object.path==='construction'){object.distance=0;}
         else{object.active=false;object.wait=vehicle?.2:1.3+(object.index%3)*.5;}
       }
-      locate(object);const phase=Math.floor(isVehicle(object)?time*PIXEL_POLISH.wheelFrameRate+object.index:object.distance/PIXEL_POLISH.walkStridePixels*SPRITE_WALK.sequence.length+object.index);object.frame=isVehicle(object)?phase%2:SPRITE_WALK.sequence[phase%SPRITE_WALK.sequence.length];
+      locate(object);const phase=Math.floor(time*(isVehicle(object)?PIXEL_POLISH.wheelFrameRate:PIXEL_POLISH.walkFrameRate)+object.index);object.frame=isVehicle(object)?phase%2:SPRITE_WALK.sequence[phase%SPRITE_WALK.sequence.length];
     }
   }
   function rect(x,y,width,height,color){ctx.fillStyle=color;ctx.fillRect(Math.round(x),Math.round(y),width,height);}
