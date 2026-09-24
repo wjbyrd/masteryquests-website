@@ -1,0 +1,6 @@
+const {chromium}=require('C:/Users/Jennings/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{const b=await chromium.launch({channel:'chrome',headless:true});try{const p=await b.newPage({viewport:{width:1440,height:900},reducedMotion:'reduce'});p.on('pageerror',console.error);await p.goto('http://127.0.0.1:4179/games/the-long-run/');await p.screenshot({path:'tmp/the-long-run-actor-upgrade-desktop.png',fullPage:true});
+await p.evaluate(()=>{const c=document.createElement('canvas');c.id='review';c.width=205;c.height=162;c.style.cssText='position:fixed;inset:0;width:1025px;height:810px;image-rendering:pixelated;z-index:999';document.body.append(c);const g=c.getContext('2d');g.fillStyle=TOWN_PALETTE.paving;g.fillRect(0,0,205,72);g.fillStyle=TOWN_PALETTE.road;g.fillRect(0,72,205,90);
+const colors={...PIXEL_PALETTE,B:TOWN_PALETTE.coral,L:'#ffaf87',M:'#984736',C:TOWN_PALETTE.blue,A:TOWN_PALETTE.sky,U:'#285a78',S:'#e2ab80',N:'#b67a55',J:'#67869b'};
+['pedestrian','worker','compact','sedan','truck'].forEach((type,i)=>sprites[type].frames.forEach((frame,n)=>frame.forEach((row,y)=>[...row].forEach((v,x)=>{if(v!==' '){g.fillStyle=colors[v];g.fillRect(8+n*38+x,8+i*31+y,1,1);}}))));});await p.locator('#review').screenshot({path:'tmp/the-long-run-actor-upgrade-sheet.png'});
+}finally{await b.close()}})();

@@ -10,7 +10,7 @@
 :root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;--bg:#071f3b;--panel:#10375f;--line:#527da0;--accent:#79d8d4;--ink:#f5f8fb;--muted:#c4d5e4;--gold:#ffda89}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#16466f,transparent 65%),var(--bg);color:var(--ink)}button{font:inherit;cursor:pointer;min-height:44px}button:disabled{cursor:default}button:focus-visible,a:focus-visible,summary:focus-visible,.world-window:focus-visible{outline:3px solid var(--gold);outline-offset:3px}button,.world-window{-webkit-tap-highlight-color:transparent}[hidden]{display:none!important}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.shell{max-width:1460px;margin:auto;padding:14px 22px 32px}h1,h2,h3,p{margin-top:0}button.primary{background:var(--accent);color:#071f3b;border:1px solid var(--accent);border-radius:9px;padding:10px 17px;font-weight:800}.secondary{color:var(--ink);background:#17456b;border:1px solid #7299b7;border-radius:9px;padding:9px 14px}.secondary:hover{background:#21587f}.primary:hover{background:#a5eee8}
 /* 2. WORLD LAYOUT */
-.masthead{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:11px;border-bottom:1px solid var(--line)}.brand{font-weight:850;font-size:.87rem;letter-spacing:.12em}.brand span{color:var(--accent)}.version{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}.title-row{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0 10px}.title-row h1{font-size:clamp(1.6rem,3vw,2.05rem);letter-spacing:-.04em;line-height:1;margin:0}.title-row p{font-size:.81rem;color:var(--muted);margin:0}.timeline{display:flex;gap:5px;padding:0;margin:0;list-style:none}.timeline li{font-size:.69rem;border:1px solid var(--line);border-radius:6px;padding:6px 10px;white-space:nowrap}.timeline .current{color:#071f3b;background:var(--accent);border-color:var(--accent);font-weight:850}.timeline .past{background:#1b4d70;color:#fff}.world-shell{position:relative;border:1px solid #739caa;border-radius:14px;overflow:hidden;background:#bae1e4;box-shadow:0 12px 28px #0003}.world-window{overflow:hidden;outline-offset:-4px!important}.world-canvas{display:block;width:100%;height:auto;aspect-ratio:640/360;image-rendering:pixelated;background:#bde7e5}.world-topline{position:absolute;top:12px;left:16px;right:16px;display:flex;justify-content:space-between;align-items:start;gap:12px;pointer-events:none}.city-name{color:#163a4a;font-size:.72rem;font-weight:850;letter-spacing:.16em;background:#ffffffd9;border-radius:7px;padding:8px 12px;box-shadow:0 2px 5px #244b5820}.motion-control{pointer-events:auto;background:#f7fbf3eb;color:#163a4a;border:1px solid #426b78;border-radius:7px;min-height:44px;padding:7px 12px;font-size:.72rem;font-weight:750}.pan-hint{display:none;font-size:.74rem;color:var(--muted);margin:7px 0 0}.time-passage{position:absolute;inset:0;display:grid;place-items:center;background:#123453e8;font-size:clamp(1.3rem,4vw,3rem);letter-spacing:.15em;font-weight:850;z-index:4}.city-caption{color:var(--muted);font-size:.75rem;line-height:1.4;margin:8px 1px 0;min-height:1em}
+.masthead{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:11px;border-bottom:1px solid var(--line)}.brand{font-weight:850;font-size:.87rem;letter-spacing:.12em}.brand span{color:var(--accent)}.version{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}.title-row{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0 10px}.title-row h1{font-size:clamp(1.6rem,3vw,2.05rem);letter-spacing:-.04em;line-height:1;margin:0}.title-row p{font-size:.81rem;color:var(--muted);margin:0}.timeline{display:flex;gap:5px;padding:0;margin:0;list-style:none}.timeline li{font-size:.69rem;border:1px solid var(--line);border-radius:6px;padding:6px 10px;white-space:nowrap}.timeline .current{color:#071f3b;background:var(--accent);border-color:var(--accent);font-weight:850}.timeline .past{background:#1b4d70;color:#fff}.world-shell{position:relative;border:1px solid #739caa;border-radius:14px;overflow:hidden;background:#bae1e4;box-shadow:0 12px 28px #0003}.world-window{overflow:hidden;outline-offset:-4px!important}.world-canvas{display:block;width:100%;height:auto;aspect-ratio:480/270;image-rendering:pixelated;background:#bde7e5}.world-topline{position:absolute;top:12px;left:16px;right:16px;display:flex;justify-content:space-between;align-items:start;gap:12px;pointer-events:none}.city-name{color:#163a4a;font-size:.72rem;font-weight:850;letter-spacing:.16em;background:#ffffffd9;border-radius:7px;padding:8px 12px;box-shadow:0 2px 5px #244b5820}.motion-control{pointer-events:auto;background:#f7fbf3eb;color:#163a4a;border:1px solid #426b78;border-radius:7px;min-height:44px;padding:7px 12px;font-size:.72rem;font-weight:750}.pan-hint{display:none;font-size:.74rem;color:var(--muted);margin:7px 0 0}.time-passage{position:absolute;inset:0;display:grid;place-items:center;background:#123453e8;font-size:clamp(1.3rem,4vw,3rem);letter-spacing:.15em;font-weight:850;z-index:4}.city-caption{color:var(--muted);font-size:.75rem;line-height:1.4;margin:8px 1px 0;min-height:1em}
 /* 3. RETRO WORLD — shared canvas grid, modern outer shell. */
 .city-surface{position:relative;width:100%;min-width:960px}.pixel-world{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;image-rendering:pixelated;z-index:1}
 .world-shell{border:3px solid #243e50;border-radius:0;background:#243e50;box-shadow:0 0 0 1px #98b5b5,4px 4px 0 #071522}
@@ -23,16 +23,16 @@
 /* 5. DECISION UI */
 .decision{padding:14px 0 0}.decision-heading{display:flex;align-items:baseline;gap:13px;margin:0 0 10px}.decision-heading h2{font-size:1.07rem;line-height:1.35;margin:0}.decision-heading .type{font-size:.64rem;letter-spacing:.11em;color:var(--accent);font-weight:800;text-transform:uppercase;white-space:nowrap}.options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.choice{display:flex;align-items:start;gap:12px;text-align:left;border:1px solid #6a95b2;border-radius:10px;padding:13px;background:linear-gradient(130deg,#16466f,#10375f);color:var(--ink);min-height:83px;transition:background .15s,border-color .15s}.choice:hover:not(:disabled){background:#21587c;border-color:var(--accent)}.choice:disabled{opacity:.6}.choice-key{display:grid;place-items:center;flex-shrink:0;width:26px;height:26px;border:1px solid var(--accent);border-radius:7px;color:var(--accent);font-size:.74rem;font-weight:800}.choice strong{display:block;font-size:.88rem;margin-bottom:4px}.choice .detail{display:block;color:var(--muted);font-size:.76rem;line-height:1.4}.decision-watching{font-size:.9rem;color:var(--accent);margin:14px 0 0}.outcome{display:flex;align-items:center;justify-content:space-between;gap:18px;background:var(--panel);border:1px solid var(--line);padding:16px;border-radius:12px;margin-top:12px}.outcome h2{margin:3px 0 6px;font-size:1.45rem}.outcome p{margin:0;line-height:1.5;color:var(--muted);font-size:.86rem}.eyebrow{font-size:.66rem;font-weight:850;color:var(--accent);letter-spacing:.13em;text-transform:uppercase}
 /* 6. RETRO MESSAGE WINDOWS — original consequence wording stays intact. */
-.callouts{position:relative;display:flex;gap:10px;padding:10px;background:#243e50;border-top:1px solid #a0b4af;font-family:ui-monospace,Consolas,monospace}
-.callouts:empty{display:none}.callout{flex:1;min-width:0;background:#405e75;border:1px solid #8ba7ba;border-radius:0;padding:14px 15px;color:#f5f8fb;box-shadow:none;animation:notice .4s steps(2,end) both}
-.callout strong{display:block;font-size:.69rem;letter-spacing:.025em;color:#efe4b0;margin-bottom:6px}.callout p{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.9375rem;line-height:1.5;margin:0}
+.callouts{position:relative;display:flex;gap:10px;padding:10px;background:#2c4351;border-top:1px solid #a0b4af;font-family:ui-monospace,Consolas,monospace}
+.callouts:empty{display:none}.callout{flex:1;min-width:0;background:#3c5569;border:1px solid #819b9d;border-radius:0;padding:10px 12px;color:#dce5da;box-shadow:none;animation:notice .4s steps(2,end) both}
+.callout strong{display:block;font-size:.69rem;letter-spacing:.025em;color:#efe4b0;margin-bottom:6px}.callout p{font-size:.75rem;line-height:1.5;margin:0}
 .callout.earlier{border-color:#dcb75e}.callout:nth-child(2){animation-delay:.2s}.callout:nth-child(3){animation-delay:.4s}.callout:nth-child(4){animation-delay:.6s}
 @keyframes notice{from{opacity:0}to{opacity:1}}
 /* 7. FINAL REPORT */
-.report{border-top:1px solid var(--line);padding-top:24px;margin-top:25px}.report-intro{max-width:780px;color:var(--muted);font-size:.9rem;line-height:1.6}.report h2{font-size:1.5rem;margin-bottom:10px}.report h3{font-size:1.16rem;margin:24px 0 13px}.story{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.story li{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}.story-year{font-size:.68rem;letter-spacing:.1em;font-weight:850;color:var(--accent);display:block;margin-bottom:5px}.story strong{font-size:.91rem;display:block;margin-bottom:6px}.story p{font-size:.81rem;line-height:1.5;color:var(--muted);margin:0}.concepts{display:grid;grid-template-columns:1fr 1fr;gap:11px}.concepts article{padding:13px 15px;border-left:3px solid var(--accent);background:#10375f;border-radius:0 7px 7px 0}.concepts h4{font-size:.9rem;margin:0 0 6px}.concepts p{font-size:.85rem;line-height:1.5;color:var(--muted);margin:0}.concept-year{display:block;color:var(--accent);font-size:.75rem;font-weight:850;letter-spacing:.1em;margin-bottom:8px}.transfer{margin-top:28px;padding:22px;border:2px solid #719eae;border-radius:12px;background:#142f47}.transfer-kicker{display:block;color:var(--accent);font-size:.75rem;font-weight:850;letter-spacing:.12em;margin-bottom:9px}.transfer h3{margin-top:0}.transfer p{line-height:1.55}.transfer .transfer-question{font-size:1.0625rem;max-width:850px;margin-bottom:20px}.transfer-options{display:flex;gap:12px}.transfer-options button{flex:1;text-align:left;font-size:.9375rem;line-height:1.5;padding:14px;background:#183a55}.transfer-options button:hover:not(:disabled){background:#254e6c}.transfer-options button[aria-pressed="true"]{border-color:var(--accent)}.transfer-feedback{border-left:3px solid var(--accent);padding-left:13px;margin-top:16px;color:var(--ink)}.end-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.report{border-top:1px solid var(--line);padding-top:24px;margin-top:25px}.report-intro{max-width:780px;color:var(--muted);font-size:.9rem;line-height:1.6}.report h2{font-size:1.5rem;margin-bottom:10px}.report h3{font-size:1.16rem;margin:24px 0 13px}.story{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.story li{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}.story-year{font-size:.68rem;letter-spacing:.1em;font-weight:850;color:var(--accent);display:block;margin-bottom:5px}.story strong{font-size:.91rem;display:block;margin-bottom:6px}.story p{font-size:.81rem;line-height:1.5;color:var(--muted);margin:0}.concepts{display:grid;grid-template-columns:1fr 1fr;gap:11px}.concepts article{padding:13px 15px;border-left:3px solid var(--accent);background:#10375f;border-radius:0 7px 7px 0}.concepts h4{font-size:.9rem;margin:0 0 6px}.concepts p{font-size:.85rem;line-height:1.5;color:var(--muted);margin:0}.transfer{margin-top:24px;padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}.transfer h3{margin-top:0}.transfer p{line-height:1.5}.transfer-options{display:flex;gap:9px}.transfer-options button{flex:1;text-align:left;font-size:.84rem}.transfer-feedback{border-left:3px solid var(--accent);padding-left:13px;margin-top:16px;color:var(--ink)}.end-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.model-note{font-size:.75rem;line-height:1.5;color:var(--muted);margin:17px 0 0}
 /* 8. AD-AS REVEAL */
 .model{border:1px solid var(--line);border-radius:12px;padding:20px;margin-top:18px;background:#10375f}.model h3{margin:0 0 10px}.model p{font-size:.88rem;line-height:1.5}.model-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;align-items:start}.graph{display:block;width:100%;background:#f5f9fc;border-radius:9px;color:#12344b}.model-controls{display:flex;gap:5px;flex-wrap:wrap;margin:13px 0}.model-controls button{min-width:52px;padding:8px}.model-controls button[aria-pressed="true"]{background:var(--accent);color:var(--bg);font-weight:800}.graph-caption{color:var(--muted)}.legend{display:flex;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:.75rem;margin-top:9px}.graph-stat{font-size:.88rem;color:var(--muted);line-height:1.7}.legend span::before{content:'';display:inline-block;width:18px;border-top:3px solid var(--accent);margin-right:6px;vertical-align:middle}.legend span:nth-child(2)::before{border-top-color:#ffb990}.legend span:nth-child(3)::before{border-top-style:dashed;border-top-color:#dac6ff}
-/* Desktop pullback: 840px display; the internal world remains 640 × 360. */
+/* Desktop pullback: 840px display; the internal world remains 480 × 270. */
 .world-column{width:100%;max-width:966px;min-width:0;margin-inline:auto}
 @media(min-width:1400px){
   .play-layout{display:grid;grid-template-columns:846px minmax(360px,420px);gap:18px;max-width:1284px;margin-inline:auto;align-items:start}
@@ -52,8 +52,8 @@
   .world-column .callouts:empty{display:none}
 }
 /* 19. ACCESSIBILITY */
-@media(max-width:1050px){.shell{padding:12px 15px 25px}.title-row p{display:none}.hud-item{padding:0 13px}.callout{max-width:none}.world-window{overflow-x:auto}.pan-hint{display:block}.story{grid-template-columns:1fr 1fr}}
-@media(max-width:700px){.title-row{display:block}.title-row h1{margin:3px 0 12px}.timeline{justify-content:space-between}.timeline li{flex:1;text-align:center;padding:6px 1px;font-size:.65rem}.hud{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;padding:8px 0}.hud-item{padding:0 4px;border:0;white-space:normal}.hud-item:first-child{display:none}.hud-item strong{display:block;margin:3px 0 0;font-size:.83rem}.hud-label{font-size:.56rem;letter-spacing:.03em}.hud-item .arrow{font-size:.66rem}.world-topline{padding:5px 7px;gap:5px}.city-name{font-size:.62rem;padding:8px}.motion-control{font-size:.67rem;padding:7px}.callouts{display:grid;grid-template-columns:1fr 1fr;padding:7px;gap:6px;background:#243e50}.callout{margin:0;max-width:none}.callout strong{font-size:.69rem}.options{grid-template-columns:1fr}.choice{min-height:68px;padding:11px}.decision-heading{display:block}.decision-heading .type{display:block;margin-bottom:5px}.decision-heading h2{font-size:1.02rem}.outcome{display:block}.outcome button{margin-top:12px}.story,.concepts,.model-grid{grid-template-columns:1fr}.transfer-options{flex-direction:column}.model{padding:13px}.version{font-size:.56rem}.brand{font-size:.76rem}.report{padding-top:20px}.graph-stat{font-size:.82rem}.graph text{font-size:26px}}
+@media(max-width:1050px){.shell{padding:12px 15px 25px}.title-row p{display:none}.hud-item{padding:0 13px}.callout{padding:8px;max-width:none}.callout p{font-size:.68rem}.world-window{overflow-x:auto}.pan-hint{display:block}.story{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.title-row{display:block}.title-row h1{margin:3px 0 12px}.timeline{justify-content:space-between}.timeline li{flex:1;text-align:center;padding:6px 1px;font-size:.65rem}.hud{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;padding:8px 0}.hud-item{padding:0 4px;border:0;white-space:normal}.hud-item:first-child{display:none}.hud-item strong{display:block;margin:3px 0 0;font-size:.83rem}.hud-label{font-size:.56rem;letter-spacing:.03em}.hud-item .arrow{font-size:.66rem}.world-topline{padding:5px 7px;gap:5px}.city-name{font-size:.62rem;padding:8px}.motion-control{font-size:.67rem;padding:7px}.callouts{display:grid;grid-template-columns:1fr 1fr;padding:7px;gap:6px;background:#243e50}.callout{margin:0;max-width:none}.callout strong{font-size:.61rem}.callout p{font-size:.69rem}.options{grid-template-columns:1fr}.choice{min-height:68px;padding:11px}.decision-heading{display:block}.decision-heading .type{display:block;margin-bottom:5px}.decision-heading h2{font-size:1.02rem}.outcome{display:block}.outcome button{margin-top:12px}.story,.concepts,.model-grid{grid-template-columns:1fr}.transfer-options{flex-direction:column}.model{padding:13px}.version{font-size:.56rem}.brand{font-size:.76rem}.report{padding-top:20px}.graph-stat{font-size:.82rem}.graph text{font-size:26px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -67,7 +67,7 @@
     <div class="world-column">
     <section class="world-shell" id="world-shell" aria-label="The living economy">
       <div class="world-topline"><span class="city-name">COMMON GROUND · <span id="city-year">YEAR 1</span></span><button class="motion-control" id="motion" type="button" aria-pressed="false">Pause city motion</button></div>
-      <div class="world-window" tabindex="0" aria-label="City view. On smaller screens, scroll horizontally to explore every district."><div class="city-surface"><canvas id="world" class="world-canvas" width="640" height="360" role="img" aria-labelledby="world-title world-description"></canvas><canvas id="pixel-world" class="pixel-world" width="640" height="360" aria-hidden="true"></canvas></div></div>
+      <div class="world-window" tabindex="0" aria-label="City view. On smaller screens, scroll horizontally to explore every district."><div class="city-surface"><canvas id="world" class="world-canvas" width="480" height="270" role="img" aria-labelledby="world-title world-description"></canvas><canvas id="pixel-world" class="pixel-world" width="480" height="270" aria-hidden="true"></canvas></div></div>
       <span id="world-title" class="sr-only"></span><span id="world-description" class="sr-only"></span>
       <div id="callouts" class="callouts" aria-label="Changes across the city"></div>
       <div id="time-passage" class="time-passage" hidden aria-hidden="true">TIME PASSES…</div>
@@ -200,164 +200,187 @@ function stepEconomy(id){if(economy.year>=6)throw new Error('The six-year econom
 function worldState(){const gap=economy.realGDP-economy.potentialGDP;const active=clamp(Math.round(11+(economy.realGDP-100)*.45+(economy.consumerConfidence-50)*.06),3,22);return {gap,active,workers:clamp(Math.round(15-economy.unemployment),2,13),shoppers:clamp(Math.round(active-(economy.priceLevel-100)*.09),2,18),cars:clamp(Math.round(active/2),2,9),hiring:economy.unemployment<4.2,vacancy:gap<-2.5,investment:economy.businessInvestment,construction:economy.businessInvestment>54?'active':economy.businessInvestment<43?'paused':'steady',upgraded:economy.productivity>=60,fuel:3.49*(economy.priceLevel/100)*(1+Math.max(0,-economy.supplyShift)*.024),basket:24*(economy.priceLevel/100),pay:3200*(1+(economy.productivity-50)*.003)*(economy.unemployment>=7?0:economy.unemployment>=5.8?.72:1),unemployed:economy.unemployment>=7,shortHours:economy.unemployment>=5.8,pressure:economy.inflation>=4};}
 // One virtual grid and one palette serve the town, bitmap signs and moving sprites.
 // CSS controls display size only; neither canvas is enlarged for devicePixelRatio.
-// Native 640 × 360 art: architectural components are drawn at their own pixel density.
-const WORLD_GRID={width:640,height:360};
+const WORLD_GRID={width:480,height:270};
 const TOWN_PALETTE={
-  ink:'#233b4a',deep:'#192e40',slate:'#344d68',road:'#465d70',steel:'#abc2c0',
-  sky:'#c5e2df',far:'#9ebdb5',cloud:'#e5ece0',leaf:'#508961',grass:'#87ad77',
+  ink:'#263d4b',deep:'#192e40',slate:'#3b5069',road:'#465d70',steel:'#abc2c0',
+  sky:'#c5e2df',far:'#9ebdb5',cloud:'#e5ece0',leaf:'#568765',grass:'#89ad7d',
   shade:'#3c6953',lightGrass:'#b7cf8b',paving:'#d2c9ae',cream:'#fff0bd',
-  paper:'#e5ece0',sand:'#dda86a',ochre:'#9c7049',sun:'#f4d187',gold:'#eec252',
-  brick:'#d37b5c',brickDark:'#8e4e48',wood:'#504039',skin:'#e2ab80',
-  teal:'#449faa',sea:'#70969a',purple:'#967cae',
-  coral:'#e37a56',blue:'#3d96b8',violet:'#9e7dbb',jade:'#319a87',amber:'#f1c253',
-  skyline:'#91adb2',skylineShade:'#819da5',skylineWindow:'#c1d3d0'
+  paper:'#e5ece0',sand:'#d5a56a',ochre:'#9c7049',sun:'#f0cf85',gold:'#ebbb52',
+  brick:'#cb795d',brickDark:'#8e4e48',wood:'#504039',skin:'#e2ab80',
+  teal:'#4d9da6',sea:'#70969a',purple:'#967cae',
+  coral:'#df7356',blue:'#438eaf',violet:'#9a78bc',jade:'#389887',amber:'#efbf50'
 };
-const PIXEL_POLISH={walkFrameRate:4,wheelFrameRate:3,personGap:16,vehicleGap:68};
+// 5 × 7 bitmap lettering: every mark is a filled pixel, never antialiased type.
+const PIXEL_FONT={
+  A:['01110','10001','10001','11111','10001','10001','10001'],B:['11110','10001','10001','11110','10001','10001','11110'],
+  C:['01111','10000','10000','10000','10000','10000','01111'],D:['11110','10001','10001','10001','10001','10001','11110'],
+  E:['11111','10000','10000','11110','10000','10000','11111'],F:['11111','10000','10000','11110','10000','10000','10000'],
+  G:['01111','10000','10000','10111','10001','10001','01110'],H:['10001','10001','10001','11111','10001','10001','10001'],
+  I:['11111','00100','00100','00100','00100','00100','11111'],J:['00111','00010','00010','00010','10010','10010','01100'],
+  K:['10001','10010','10100','11000','10100','10010','10001'],L:['10000','10000','10000','10000','10000','10000','11111'],
+  M:['10001','11011','10101','10101','10001','10001','10001'],N:['10001','11001','10101','10011','10001','10001','10001'],
+  O:['01110','10001','10001','10001','10001','10001','01110'],P:['11110','10001','10001','11110','10000','10000','10000'],
+  Q:['01110','10001','10001','10001','10101','10010','01101'],R:['11110','10001','10001','11110','10100','10010','10001'],
+  S:['01111','10000','10000','01110','00001','00001','11110'],T:['11111','00100','00100','00100','00100','00100','00100'],
+  U:['10001','10001','10001','10001','10001','10001','01110'],V:['10001','10001','10001','10001','10001','01010','00100'],
+  W:['10001','10001','10001','10101','10101','10101','01010'],X:['10001','10001','01010','00100','01010','10001','10001'],
+  Y:['10001','10001','01010','00100','00100','00100','00100'],Z:['11111','00001','00010','00100','01000','10000','11111'],
+  '0':['01110','10001','10011','10101','11001','10001','01110'],'1':['00100','01100','00100','00100','00100','00100','01110'],
+  '2':['01110','10001','00001','00010','00100','01000','11111'],'3':['11110','00001','00001','01110','00001','00001','11110'],
+  '4':['00010','00110','01010','10010','11111','00010','00010'],'5':['11111','10000','10000','11110','00001','00001','11110'],
+  '6':['01110','10000','10000','11110','10001','10001','01110'],'7':['11111','00001','00010','00100','01000','01000','01000'],
+  '8':['01110','10001','10001','01110','10001','10001','01110'],'9':['01110','10001','10001','01111','00001','00001','01110'],
+  '$':['00100','01111','10100','01110','00101','11110','00100'],'%':['11001','11010','00010','00100','01000','01011','10011'],
+  '.':['00000','00000','00000','00000','00000','00110','00110'],',':['00000','00000','00000','00000','00110','00100','01000'],
+  '+':['00000','00100','00100','11111','00100','00100','00000'],'-':['00000','00000','00000','11111','00000','00000','00000'],
+  '/':['00001','00010','00010','00100','01000','01000','10000'],' ':['00000','00000','00000','00000','00000','00000','00000']
+};
+// Compact five-pixel-high lettering; M/N/W use wider glyphs for legibility.
+const PIXEL_SMALL_FONT={
+  A:'010/101/111/101/101',B:'110/101/110/101/110',C:'011/100/100/100/011',D:'110/101/101/101/110',
+  E:'111/100/110/100/111',F:'111/100/110/100/100',G:'011/100/101/101/011',H:'101/101/111/101/101',
+  I:'111/010/010/010/111',J:'001/001/001/101/010',K:'101/101/110/101/101',L:'100/100/100/100/111',
+  M:'10001/11011/10101/10001/10001',N:'1001/1101/1011/1001/1001',O:'010/101/101/101/010',P:'110/101/110/100/100',
+  Q:'010/101/101/111/011',R:'110/101/110/101/101',S:'011/100/010/001/110',T:'111/010/010/010/010',
+  U:'101/101/101/101/111',V:'101/101/101/101/010',W:'10001/10001/10101/10101/01010',X:'101/101/010/101/101',
+  Y:'101/101/010/010/010',Z:'111/001/010/100/111',
+  '0':'111/101/101/101/111','1':'010/110/010/010/111','2':'110/001/010/100/111','3':'110/001/010/001/110',
+  '4':'101/101/111/001/001','5':'111/100/110/001/110','6':'011/100/110/101/010','7':'111/001/010/010/010',
+  '8':'010/101/010/101/010','9':'010/101/011/001/110','$':'011/110/011/110/010',
+  '.':'000/000/000/000/010',',':'000/000/000/010/100',' ':'000/000/000/000/000'
+};
+const PIXEL_POLISH={signPadding:5,signHeight:9,walkFrameRate:4,wheelFrameRate:3,personGap:11,vehicleGap:38};
+// Buildings and entrances are in the same coordinates as PIXEL_PATHS/PIXEL_ANCHORS.
 const TOWN_BUILDINGS={
-  cafe:{x:19,y:105,w:104,h:49},market:{x:145,y:77,w:117,h:99},
-  bank:{x:282,y:116,w:112,h:59},works:{x:420,y:105,w:188,h:71},
-  home:{x:29,y:294,w:103,h:49},civic:{x:286,y:296,w:104,h:48},
-  fuel:{x:421,y:264,w:99,h:85},site:{x:529,y:265,w:109,h:84}
+  cafe:{x:14,y:79,w:74,h:37},market:{x:106,y:57,w:88,h:75},bank:{x:211,y:83,w:82,h:45},
+  works:{x:315,y:76,w:140,h:56},home:{x:22,y:218,w:76,h:36},civic:{x:217,y:218,w:69,h:36},
+  fuel:{x:316,y:208,w:69,h:49},site:{x:397,y:207,w:74,h:50}
 };
-// Explicitly placed interaction/effect points, not a scaled legacy coordinate map.
-const PIXEL_ANCHORS={machine:{x:538,y:145},stack:{x:448,y:45},hook:{x:606,y:269},flag:{x:326,y:246},
-  marketPrice:{x:151,y:161,w:13,h:12},fuelPrice:{x:438,y:323,w:13,h:23}};
+const PIXEL_ANCHORS={machine:{x:400,y:109},stack:{x:333,y:34},hook:{x:455,y:201},flag:{x:243,y:189},
+  marketPrice:{x:114,y:120,w:9,h:8},fuelPrice:{x:326,y:239,w:10,h:14}};
 function renderPixelTown(w){
-  const canvas=$('#world'),g=canvas.getContext('2d'),p=TOWN_PALETTE;g.imageSmoothingEnabled=false;
-  const r=(x,y,width,height,color)=>{g.fillStyle=p[color]||color;g.fillRect(Math.round(x),Math.round(y),Math.round(width),Math.round(height));};
-  const box=(x,y,width,height,color,edge='ink')=>{r(x,y,width,height,edge);r(x+1,y+1,width-2,height-2,color);};
-  const facade=(b,color,side)=>{r(b.x+5,b.y+5,b.w,b.h,'shade');r(b.x+b.w-5,b.y+3,8,b.h-3,side);box(b.x,b.y,b.w-4,b.h,color);r(b.x+1,b.y+1,b.w-6,2,'paper');r(b.x+1,b.y+3,2,b.h-6,'cream');r(b.x+3,b.y+b.h-4,b.w-8,3,side);};
-  const roof=(x,y,width,height,color,highlight)=>{
-    for(let row=0;row<height;row++){const inset=height-row;r(x+inset,y+row,width-2*inset,1,color);
-      if(row%5===3)for(let tx=x+inset+3+(row%2)*4;tx<x+width-inset-3;tx+=13)r(tx,y+row,7,1,highlight);}
-    r(x,y+height,width,3,'ink');r(x+2,y+height,width-4,1,highlight);r(x+4,y+height+3,width-6,2,'ochre');
-  };
-  const window=(x,y,width=15,height=20,lit=true)=>{
-    box(x-1,y-1,width+2,height+3,'steel');box(x,y,width,height,'deep');r(x+2,y+2,width-4,height-4,lit?'cream':'sea');
-    r(x+3,y+3,2,height-7,lit?'paper':'sky');r(x+width-5,y+3,2,height-5,lit?'sun':'teal');
-    r(x+Math.floor(width/2),y+1,1,height-2,'wood');r(x+1,y+Math.floor(height*.58),width-2,1,'wood');r(x-2,y+height+1,width+4,2,'paper');
-  };
-  const door=(x,y,width,height,glass=true)=>{
-    box(x-2,y-2,width+4,height+3,'steel');box(x,y,width,height,'deep');
-    r(x+2,y+2,width-4,height-5,'slate');box(x+3,y+3,width-6,Math.floor(height*.58),glass?'sea':'wood');
-    if(glass){r(x+4,y+4,2,Math.floor(height*.45),'sky');r(x+6,y+4,width-10,2,'teal');}
-    r(x+width-5,y+height-10,2,3,'gold');r(x+3,y+height-6,width-6,1,'steel');
-  };
-  const crate=(x,y,width=12,height=11)=>{box(x,y,width,height,'sand','wood');r(x+2,y+2,width-4,1,'sun');r(x+2,y+height-3,width-4,1,'ochre');r(x+3,y+2,1,height-4,'ochre');r(x+width-4,y+2,1,height-4,'wood');r(x+2,y+4,width-4,1,'ochre');};
-  const shrub=(x,y,width=21)=>{r(x,y+5,width,6,'shade');r(x+3,y+2,width-5,7,'leaf');r(x+6,y,width-11,6,'leaf');for(let dx=5;dx<width-4;dx+=7){r(x+dx,y+3,4,2,'grass');r(x+dx+1,y+2,2,1,'lightGrass');}};
-  const tree=(x,y)=>{r(x+11,y+22,5,17,'wood');r(x+12,y+23,1,13,'ochre');r(x+8,y+36,13,2,'shade');
-    r(x+3,y+7,24,20,'shade');r(x,y+13,29,10,'shade');r(x+6,y+2,19,20,'leaf');r(x+2,y+9,23,13,'leaf');r(x+10,y,10,9,'leaf');
-    for(const [dx,dy] of [[7,6],[16,4],[3,14],[17,13],[10,20]]){r(x+dx,y+dy,7,3,'grass');r(x+dx+2,y+dy-1,3,2,'lightGrass');}};
-  const awning=(x,y,width,base)=>{r(x+1,y+9,width,3,'wood');for(let dx=0;dx<width;dx+=10){r(x+dx+2,y,8,3,dx%20?base:'paper');r(x+dx,y+3,10,5,dx%20?base:'cream');r(x+dx+1,y+8,8,2,dx%20?base:'sun');}r(x+2,y,width-4,1,'paper');};
-  const bench=(x,y)=>{r(x,y,22,2,'wood');r(x,y+4,22,2,'sand');r(x,y+7,22,2,'wood');r(x+2,y+9,2,5,'ink');r(x+18,y+9,2,5,'ink');};
-  // Quiet distant layers, with small windows and irregular foliage edges.
-  r(0,0,640,360,'sky');
-  for(const [x,y] of [[30,24],[183,18],[362,27],[555,13]]){r(x,y+6,36,5,'cloud');r(x+7,y+2,22,7,'cloud');r(x+14,y,9,4,'paper');}
-  for(let x=0;x<640;x+=8){const y=52+Math.round(Math.sin(x/63)*10);r(x,y,8,62,'far');}
-  // A few lower, overlapping blocks extend the town without closing the gaps in the sky.
-  for(const [x,y,ww,hh] of [[113,68,25,31],[224,64,20,30],[318,61,29,36],[527,65,28,34],[610,69,22,29]]){
-    r(x,y,ww,hh,'skyline');r(x+ww-3,y+2,3,hh-2,'skylineShade');r(x-1,y-2,ww+2,2,'skylineWindow');
-    for(let yy=y+6;yy<y+hh-4;yy+=9)for(let xx=x+4;xx<x+ww-4;xx+=7)r(xx,yy,3,3,'skylineWindow');
-  }
-  for(const [x,y,ww,hh] of [[51,49,22,44],[84,38,17,55],[191,45,23,48],[249,52,18,41],[367,40,25,57],[400,56,17,41],[576,42,23,55]]){
-    r(x,y,ww,hh,'skylineShade');r(x+2,y+2,ww-4,2,'skylineWindow');r(x+ww-3,y+4,3,hh-4,'skyline');for(let yy=y+9;yy<y+hh-7;yy+=10)for(let xx=x+4;xx<x+ww-5;xx+=7)r(xx,yy,3,4,'skylineWindow');}
-  r(0,94,640,266,'grass');for(let x=5;x<640;x+=29){r(x,106+(x%5)*7,4,1,'lightGrass');r(x+7,123+(x%4)*8,2,2,'leaf');}
-  // Pavement remains wide enough for 26-pixel people; the roadway has two 21-pixel lanes.
-  r(0,171,640,25,'paving');r(0,191,640,2,'paper');r(0,193,640,3,'steel');r(0,196,640,42,'road');r(0,196,640,1,'slate');r(0,237,640,1,'slate');
-  for(let x=7;x<640;x+=29)if(x<391||x>413)r(x,217,12,1,'cream');
-  r(0,238,640,16,'paving');r(0,238,640,2,'steel');r(0,241,640,1,'paper');
-  for(let x=3;x<640;x+=27){r(x,184,1,7,'steel');r(x,244,1,8,'steel');}
-  r(395,165,18,31,'paving');r(395,238,18,122,'paving');for(let y=199;y<236;y+=6)r(397,y,14,3,'cream');
-  r(268,254,12,105,'paving');r(0,350,640,10,'paving');r(133,254,10,96,'paving');r(141,335,122,8,'paving');
-  r(281,280,113,68,'paving');r(421,254,99,96,'paving');r(530,264,109,85,'ochre');r(532,266,105,81,'paving');
-  for(const x of [428,513]){r(x,247,1,97,'steel');r(x+2,272,5,1,'paper');}
-  // Cafe: recessed glazing, separate cups, stools, tiled counter and scalloped awning.
-  facade(TOWN_BUILDINGS.cafe,'sand','ochre');roof(16,90,108,15,'brickDark','brick');
-  for(const x of [27,65]){window(x,126,28,22);r(x+3,143,22,2,'wood');r(x+3,145,22,2,'ochre');
-    for(const cx of [x+6,x+17]){r(cx,139,4,4,'paper');r(cx+4,140,1,2,'cream');r(cx-1,143,6,1,'sun');}r(x+13,128,1,14,'paper');}
-  door(101,124,16,30);awning(22,111,100,'brick');
-  r(21,155,103,18,'paving');r(21,172,103,1,'steel');
-  for(const x of [45,78,111]){box(x-6,159,13,4,'cream','wood');r(x-5,160,11,1,'paper');r(x,163,2,7,'wood');r(x-3,170,8,1,'ink');r(x+8,163,4,2,'sand');r(x+9,165,1,5,'wood');}
-  r(121,123,9,2,'wood');box(123,127,8,10,'cream','wood');r(125,129,3,4,'brickDark');r(128,130,1,2,'brickDark');r(124,134,6,1,'ochre');
-  // Grocery: masonry joints, sash windows, filled shelves and varied produce shapes.
-  facade(TOWN_BUILDINGS.market,'brick','brickDark');r(141,73,124,4,'ink');r(144,69,118,4,'brickDark');r(146,70,114,1,'sand');
-  for(let yy=82;yy<125;yy+=8){r(148,yy,9,1,'brickDark');r(249,yy+3,7,1,'brickDark');}
-  for(const x of [155,179,203,227])window(x,88,16,21,!w.vacancy);
-  r(148,117,110,3,'sun');r(148,120,110,1,'brickDark');awning(147,124,110,'teal');
-  box(151,139,72,21,'deep');r(153,141,68,17,'sea');
-  for(const y of [147,155]){r(153,y,68,2,'wood');if(!w.vacancy)for(let x=155;x<218;x+=9){box(x,y-5,5,5,x%3?'cream':'sun','ochre');r(x+1,y-4,3,1,x%2?'brick':'leaf');}}
-  r(174,140,2,19,'ink');r(199,140,2,19,'ink');door(238,140,20,36);
-  if(w.hiring){box(243,145,6,8,'paper');r(244,147,4,1,'teal');r(244,150,3,1,'ink');}
-  if(!w.vacancy)for(const [i,x] of [151,168,185,202].entries()){crate(x,164,14,11);for(let j=0;j<3;j++){r(x+2+j*4,160,3,5,i%2?'brick':'leaf');r(x+3+j*4,159,1,2,i%2?'shade':'lightGrass');}r(x+2,167,10,1,'sun');}
-  // Bank: low masonry plinth, engraved cornice, fluted pilasters and double glazed doors.
-  facade(TOWN_BUILDINGS.bank,'paper','steel');roof(277,97,121,19,'slate','sea');r(279,116,117,4,'steel');r(283,117,108,1,'cream');
-  for(let x=286;x<390;x+=8)r(x,122,4,2,'steel');
-  for(let y=129;y<170;y+=9){r(284,y,8,1,'steel');r(383,y,7,1,'steel');}
-  window(295,135,17,24);window(365,135,17,24);door(328,141,23,34);r(339,143,1,30,'steel');r(335,160,1,3,'gold');
-  for(const x of [318,354]){r(x-2,130,9,3,'paper');r(x,133,5,38,'steel');r(x,134,1,35,'cream');r(x+3,134,1,35,'sea');r(x-2,171,9,4,'paper');}
-  r(315,128,48,3,'steel');r(281,175,114,3,'steel');r(278,178,119,3,'paper');r(275,181,124,2,'steel');
-  box(379,162,9,14,'slate');box(381,164,5,5,'teal');r(381,171,5,1,'paper');r(382,173,1,1,'cream');r(385,173,1,1,'cream');
-  // Works: sawtooth glazing, vent ribs, rolling loading door, grouped freight and pallet feet.
-  for(const [x,y,hh] of [[447,46,61],[473,61,46]]){box(x,y,10,hh,'brickDark');r(x-2,y,14,4,'ink');r(x+2,y+4,3,hh-6,'brick');for(let sy=y+12;sy<y+hh;sy+=11)r(x+1,sy,8,1,'wood');}
-  facade(TOWN_BUILDINGS.works,w.upgraded?'far':'steel','sea');
-  for(let x=419;x<529;x+=27){for(let row=0;row<21;row++)r(x+21-row,84+row,6+row,1,'slate');r(x+21,88,5,16,'teal');r(x+22,90,1,12,'sky');r(x+21,98,5,1,'steel');}
-  r(528,98,82,7,'ink');r(531,99,76,3,'slate');r(531,99,76,1,'steel');
-  for(const x of [431,456,481,506])window(x,137,15,20,!w.vacancy);
-  for(const x of [434,493]){r(x,118,26,8,'sea');for(let yy=119;yy<125;yy+=2)r(x+2,yy,22,1,'steel');}
-  box(532,138,47,39,'deep');r(533,139,45,4,'steel');r(534,140,43,1,'paper');
-  r(530,176,52,4,'steel');r(526,180,59,11,'road');for(let x=529;x<584;x+=9)r(x,180,4,2,'gold');r(526,192,59,1,'steel');
-  r(583,171,39,3,'wood');r(585,174,4,2,'ochre');r(614,174,4,2,'ochre');
-  for(let i=0;i<clamp(Math.round(w.active/3),1,7);i++)crate(583+(i%3)*12,160-Math.floor(i/3)*11,11,11);
-  box(599,148,8,12,'slate');r(601,150,3,4,w.vacancy?'brick':'lightGrass');
-  if(w.upgraded){box(544,87,46,9,'teal');for(let x=547;x<586;x+=8){r(x,89,1,5,'sky');r(x+2,89,4,1,'sea');}r(592,112,7,2,'cream');r(595,109,2,8,'cream');}
-  // Residence: individual roof tiles, dormer, shutters, paneled door and railed porch.
-  box(107,256,10,24,'brickDark');r(105,255,14,3,'brick');r(109,258,3,15,'brick');
-  facade(TOWN_BUILDINGS.home,'sun','ochre');roof(23,267,114,27,'brickDark','brick');
-  box(74,278,17,15,'sun');roof(71,271,23,7,'slate','sea');window(78,281,8,10,!w.unemployed);
-  for(const x of [40,105]){window(x,311,16,22,!w.unemployed);r(x-4,311,3,23,'teal');r(x+17,311,3,23,'teal');r(x-4,316,3,1,'sea');r(x+17,325,3,1,'sea');}
-  door(70,310,21,33,false);r(74,315,5,8,'ochre');r(82,315,5,8,'ochre');r(74,327,13,9,'wood');
-  roof(62,302,38,7,'slate','sea');for(const x of [63,97]){r(x,312,3,31,'cream');r(x+2,313,1,29,'sand');}
-  r(59,343,44,3,'steel');r(57,346,48,3,'paving');r(72,349,18,11,'paving');
-  r(58,332,11,2,'cream');r(92,332,12,2,'cream');for(const x of [60,65,94,100])r(x,333,1,10,'paper');
-  shrub(29,335,29);shrub(105,335,27);box(132,329,11,7,'teal');r(135,336,2,11,'wood');r(142,326,1,7,'brick');
-  box(176,280,53,17,'ochre','wood');for(const x of [181,197,213]){shrub(x,279,14);r(x+5,282,2,2,'brick');}
+  const canvas=$('#world'),g=canvas.getContext('2d'),p=TOWN_PALETTE;
+  g.imageSmoothingEnabled=false;
+  const rect=(x,y,width,height,color)=>{g.fillStyle=p[color]||color;g.fillRect(Math.round(x),Math.round(y),Math.round(width),Math.round(height));};
+  const box=(x,y,width,height,fill,border='ink')=>{rect(x,y,width,height,border);rect(x+1,y+1,width-2,height-2,fill);};
+  const text=(value,x,y,color='cream',center=false)=>{value=String(value).toUpperCase();if(center)x-=Math.floor((value.length*6-1)/2);for(const letter of value){const glyph=PIXEL_FONT[letter]||PIXEL_FONT[' '];glyph.forEach((row,gy)=>[...row].forEach((bit,gx)=>{if(bit==='1')rect(x+gx,y+gy,1,1,color);}));x+=6;}};
+  const roof=(x,y,width,height,color)=>{for(let step=0;step<height;step+=2){rect(x+height-step,y+step,width-2*(height-step),2,color);rect(x+height-step,y+step,2,1,color==='brickDark'?'brick':'steel');}rect(x,y+height,width,2,'ink');};
+  const tree=(x,y)=>{rect(x+6,y+12,3,12,'wood');rect(x+3,y+2,10,3,'shade');rect(x,y+5,17,11,'shade');rect(x+2,y+3,12,10,'leaf');rect(x+4,y,7,4,'leaf');rect(x+3,y+5,6,5,'grass');rect(x+2,y+16,12,2,'shade');};
+  const shrub=(x,y,width=17)=>{rect(x,y+3,width,5,'shade');rect(x+2,y,width-4,6,'leaf');for(let i=4;i<width-3;i+=6)rect(x+i,y+1,3,2,'grass');};
+  const window=(x,y,width=10,height=12,lit=true)=>{box(x,y,width,height,'ink');rect(x+1,y+1,width-2,height-2,lit?'cream':'sea');rect(x+width-3,y+2,2,height-3,lit?'sun':'teal');rect(x+Math.floor(width/2),y+1,1,height-2,'ink');rect(x,y+height,width,1,'steel');};
+  const front=(b,wall)=>{const shadow=wall==='brick'?'brickDark':['paper','steel','far'].includes(wall)?'sea':'ochre';rect(b.x+3,b.y+3,b.w,b.h,'shade');box(b.x,b.y,b.w,b.h,wall);rect(b.x+1,b.y+1,b.w-2,1,'paper');rect(b.x+1,b.y+1,1,b.h-2,'paper');rect(b.x+b.w-3,b.y+2,2,b.h-3,shadow);rect(b.x+1,b.y+b.h-3,b.w-2,2,shadow);};
+  const door=(x,y,width=13,height=24)=>{box(x,y,width,height,'deep');rect(x+2,y+2,width-4,height-6,'sea');rect(x+width-4,y+height-10,1,2,'cream');};
+  const crate=(x,y)=>{box(x,y,9,8,'sand','wood');rect(x+2,y+2,5,1,'sun');rect(x+4,y+1,1,6,'ochre');};
+  // Back layer: stepped hills, low skyline and sparse clouds.
+  rect(0,0,480,270,'sky');
+  for(const [x,y] of [[18,17],[132,11],[267,18],[419,10]]){rect(x,y+3,25,4,'paper');rect(x+5,y,12,3,'paper');}
+  for(let x=0;x<480;x+=12){const h=15+Math.round((Math.sin(x/49)+1)*10);rect(x,52-h,12,h+26,'far');}
+  for(const [x,y,width,height] of [[39,35,15,34],[60,29,11,40],[145,34,15,28],[190,37,11,31],[276,27,17,43],[300,41,11,29],[429,32,16,38]]){rect(x,y,width,height,'sea');rect(x+2,y+3,width-4,2,'far');for(let wx=x+3;wx<x+width-3;wx+=5)rect(wx,y+9,2,2,'sky');}
+  rect(0,69,480,201,'grass');
+  for(let x=3;x<480;x+=23){rect(x,80+(x%5)*5,3,1,'lightGrass');rect(x+5,90+(x%4)*7,1,2,'leaf');}
+  // Two continuous sidewalks, two clear vehicle lanes and a connected crossing.
+  rect(0,130,480,18,'paving');rect(0,145,480,1,'paper');rect(0,146,480,1,'steel');rect(0,147,480,31,'road');
+  rect(0,148,480,1,'slate');rect(0,176,480,1,'slate');
+  for(let x=4;x<480;x+=20)if(x+8<295||x>310)rect(x,161,8,1,'cream');
+  rect(0,178,480,12,'paving');rect(0,178,480,1,'steel');rect(0,179,480,1,'paper');
+  for(let x=0;x<480;x+=20){rect(x,141,1,4,'steel');rect(x,180,1,4,'steel');}
+  rect(296,123,14,24,'paving');rect(296,178,14,91,'paving');
+  for(let y=150;y<175;y+=5)rect(297,y,12,3,'cream');
+  rect(204,188,9,78,'paving');rect(0,262,480,8,'paving');
+  rect(100,190,97,67,'grass');rect(99,190,9,72,'paving');rect(105,249,87,6,'paving');
+  rect(214,203,76,58,'paving');rect(314,200,73,61,'steel');rect(316,202,69,57,'paving');
+  rect(393,198,84,64,'ochre');rect(394,199,82,61,'paving');
+  rect(389,179,12,19,'paving');rect(313,179,13,20,'paving');
+  // Cafe: low storefront, coffee counter, fabric awning and a recessed patio.
+  const cafe=TOWN_BUILDINGS.cafe;front(cafe,'sand');roof(12,70,78,9,'brickDark');
+  window(20,94,19,16);window(45,94,18,16);door(70,93,13,23);
+  for(const x of [22,47]){rect(x,105,14,2,'wood');rect(x+2,102,3,3,'paper');rect(x+7,102,3,3,'paper');}
+  rect(16,85,70,6,'cream');for(let x=16;x<86;x+=12)rect(x,85,6,6,'brick');
+  rect(16,91,70,2,'ochre');rect(16,85,70,1,'sun');
+  rect(84,95,7,1,'wood');box(85,97,7,8,'cream','wood');rect(86,99,3,3,'brickDark');rect(89,99,1,2,'brickDark');
+  rect(16,116,74,13,'paving');rect(16,128,74,1,'steel');
+  for(const x of [35,59,83]){box(x-5,121,11,3,'cream','wood');rect(x,124,1,4,'wood');rect(x+6,125,3,1,'wood');rect(x+7,126,1,2,'wood');}
+  shrub(2,119,10);
+  // Grocery: broad shop window, stocked shelves and produce outside the entrance.
+  const market=TOWN_BUILDINGS.market;front(market,'brick');rect(104,54,92,3,'ink');rect(108,51,84,3,'brickDark');rect(108,51,84,1,'brick');
+  for(let x=114;x<183;x+=18)window(x,63,11,12,!w.vacancy);
+  rect(108,89,84,7,'cream');for(let x=108;x<192;x+=12)rect(x,89,6,7,'teal');rect(108,96,84,2,'shade');
+  box(112,100,51,20,'deep');rect(114,102,47,16,'sea');door(173,103,16,29);
+  for(const y of [108,116]){rect(114,y,47,1,'wood');if(!w.vacancy)for(let x=116;x<160;x+=7){rect(x,y-4,4,4,x%2?'sun':'paper');rect(x,y-3,4,1,'brick');}}
+  rect(136,101,2,18,'ink');
+  if(w.hiring){box(176,107,5,6,'paper');rect(177,109,3,1,'teal');}
+  if(!w.vacancy)for(const [i,x] of [114,126,138,150].entries()){crate(x,120);for(let j=0;j<3;j++){rect(x+1+j*2,118,2,3,i%2?'brick':'leaf');rect(x+2+j*2,117,1,1,'shade');}}
+  // Bank: a broad stone facade, low pediment, paired columns and double doors.
+  const bank=TOWN_BUILDINGS.bank;front(bank,'paper');roof(207,68,90,15,'slate');
+  rect(209,83,86,3,'steel');rect(211,87,82,2,'cream');
+  for(let y=93;y<123;y+=9){rect(212,y,6,1,'steel');rect(286,y,6,1,'steel');}
+  window(220,97,12,16);window(273,97,12,16);
+  door(244,103,18,25);rect(252,104,1,23,'steel');rect(249,117,1,2,'cream');
+  for(const x of [237,265]){rect(x,95,4,31,'steel');rect(x,95,1,31,'cream');rect(x-1,93,6,3,'paper');rect(x-1,125,6,3,'paper');}
+  rect(234,91,39,3,'steel');rect(235,91,37,1,'cream');
+  rect(211,128,82,3,'steel');rect(209,131,86,3,'paper');rect(207,134,90,2,'steel');
+  // Small wall ATM: slot and keypad, with no duplicated interest-rate display.
+  box(280,117,7,10,'slate');rect(282,119,3,3,'teal');rect(282,124,3,1,'paper');
+  // Works: toothed roof, loading apron, machine bay and supply crates.
+  const works=TOWN_BUILDINGS.works;
+  for(const [x,y,h] of [[333,36,43],[353,45,34]]){box(x,y,7,h,'brickDark');rect(x-1,y,9,3,'ink');rect(x+1,y+8,5,2,'brick');}
+  front(works,w.upgraded?'far':'steel');
+  for(let x=314;x<398;x+=21){for(let step=0;step<14;step++){rect(x+14-step,62+step,7+step,1,'slate');rect(x+14-step,62+step,1,1,'steel');}rect(x+16,66,4,9,'teal');}
+  rect(395,69,61,8,'ink');rect(398,70,56,4,'slate');rect(398,70,56,1,'steel');
+  for(let x=323;x<387;x+=16)window(x,102,10,12,!w.vacancy);
+  box(397,103,29,29,'deep');rect(398,104,27,2,'steel');
+  rect(395,132,35,3,'steel');rect(392,135,42,8,'road');for(let x=395;x<434;x+=8)rect(x,135,3,1,'gold');
+  rect(394,145,42,1,'steel');
+  rect(429,128,27,3,'wood');rect(430,131,3,2,'ochre');rect(451,131,3,2,'ochre');
+  for(let i=0;i<clamp(Math.round(w.active/3),1,7);i++)crate(429+(i%3)*9,120-Math.floor(i/3)*8);
+  if(w.upgraded){box(405,62,36,7,'teal');for(let x=408;x<439;x+=7)rect(x,63,1,5,'sky');text('+',446,83,'cream');}
+  rect(438,117,10,15,'slate');rect(441,119,4,4,w.vacancy?'brick':'lightGrass');
+  // Modest residence: pitched roof, chimney, porch, mailbox and a lived-in yard.
+  const home=TOWN_BUILDINGS.home;front(home,'sun');
+  box(78,198,7,17,'brickDark');rect(77,198,9,2,'brick');roof(18,199,84,19,'brickDark');
+  window(56,208,7,7,!w.unemployed);window(30,228,12,14,!w.unemployed);window(77,228,12,14,!w.unemployed);door(54,230,14,24);
+  rect(49,228,24,3,'brickDark');rect(50,231,2,23,'cream');rect(71,231,2,23,'cream');
+  rect(49,254,25,2,'steel');rect(47,256,29,2,'paving');rect(55,258,12,8,'paving');
+  shrub(22,249,22);shrub(78,249,18);rect(101,245,1,11,'wood');box(98,241,8,5,'teal');rect(105,239,1,4,'brick');
+  box(131,211,40,13,'ochre','wood');for(const x of [135,146,157])shrub(x,209,10);
   const basketCount=clamp(Math.floor((w.pay/3200)/(economy.priceLevel/100)*5),1,5);
-  box(185,329,27,11,'sand','wood');r(187,332,23,1,'ochre');r(187,336,23,1,'ochre');r(185,327,27,2,'wood');
-  for(let i=0;i<basketCount;i++){r(188+i*4,324,3,5,i%2?'leaf':'brick');r(189+i*4,323,1,2,'shade');}
-  bench(241,326);
-  // Town hall: clock cupola, flag, short portico and conventional divided-light windows.
-  facade(TOWN_BUILDINGS.civic,'paper','steel');roof(280,278,115,18,'slate','sea');
-  box(325,264,23,22,'paper');roof(322,257,29,7,'slate','sea');box(331,268,12,12,'cream');r(336,270,1,5,'ink');r(337,274,4,1,'ink');
-  r(335,268,2,1,'ochre');r(335,279,2,1,'ochre');r(331,273,1,2,'ochre');r(342,273,1,2,'ochre');r(324,241,2,45,'ink');
-  window(297,311,17,22);window(365,311,17,22);door(329,314,22,30);r(325,310,31,3,'steel');
-  for(const x of [324,354]){r(x,314,3,30,'cream');r(x+2,314,1,30,'steel');}r(282,344,112,3,'steel');r(279,347,118,3,'paper');
-  if(economy.governmentDemand>57){crate(380,332);crate(380,321);r(375,351,22,2,'gold');}
-  // Service station: glazed shop, distinct pump faces/nozzles and a shaded canopy underside.
-  facade({x:457,y:268,w:62,h:37},'paper','steel');r(454,264,66,4,'slate');window(463,278,22,18);door(494,277,18,28);
-  box(423,303,97,8,'brick');r(425,304,93,2,'cream');r(425,311,93,3,'wood');
-  for(const x of [426,513]){r(x,314,4,32,'steel');r(x,315,1,29,'paper');}
-  for(const x of [438,484]){r(x-4,346,24,3,'steel');box(x,323,13,23,'brick');box(x+2,326,9,9,'deep');r(x+3,327,7,4,'cream');r(x+3,333,7,1,'steel');r(x+3,338,3,2,'paper');r(x+8,338,2,2,'gold');r(x+13,328,6,2,'ink');r(x+18,330,2,12,'ink');r(x+15,341,4,2,'ink');r(x+14,338,2,5,'wood');}
-  r(429,259,25,1,'paper');r(429,259,1,9,'paper');
-  // Site: braced frame, masonry courses, scaffold planks and a separate worker lane.
-  const frame=w.construction==='paused'?'steel':'sand';r(564,291,66,52,'slate');r(567,294,60,45,'paving');
-  for(const x of [564,595,626]){r(x,290,3,52,frame);r(x,290,1,52,'cream');}
-  for(const y of [292,315,340]){r(564,y,66,3,frame);r(564,y,66,1,'cream');}
-  for(const [x,ww] of [[568,25],[599,25]]){r(x,320,ww,19,w.construction==='paused'?'steel':'brick');for(let yy=324;yy<338;yy+=5){r(x,yy,ww,1,w.construction==='paused'?'sea':'brickDark');for(let xx=x+((yy%2)*4)+5;xx<x+ww;xx+=9)r(xx,yy-4,1,4,'ochre');}}
-  if(w.construction==='active'){r(568,301,25,13,'brick');r(568,307,25,1,'brickDark');r(580,301,1,13,'ochre');}
-  for(let i=0;i<16;i++){r(568+i,296+i,2,1,'wood');r(623-i,296+i,2,1,'wood');}
-  for(const x of [560,633])r(x,293,2,52,'steel');for(let y=300;y<345;y+=10)r(559,y,77,2,'wood');
-  r(546,267,4,75,'gold');r(543,264,93,4,'gold');r(543,268,93,1,'ochre');
-  for(let y=274;y<338;y+=8){r(544,y,8,1,'ochre');r(546,y+1,2,5,'ochre');}
-  for(let i=0;i<19;i++){r(548+i*2,263-i,2,1,'gold');r(586+i*2,246+i,2,1,'gold');}
-  r(540,340,18,5,'slate');crate(531,341);crate(548,344);for(const y of [344,348]){r(580,y,45,3,'sand');r(583,y,39,1,'sun');}
-  // Restrained furniture: its ground contacts sit outside the actor walking lanes.
-  for(const [x,y] of [[0,150],[125,144],[261,141],[395,146],[614,148],[0,313],[251,303],[396,319]])tree(x,y);
-  for(const [x,y] of [[3,174],[265,174],[415,174],[635,174]]){r(x,y-20,2,22,'ink');r(x-2,y-24,6,2,'ink');box(x-2,y-22,6,6,'cream');r(x-3,y+2,8,2,'slate');}
-  for(const [x,y,ww] of [[26,250,57],[148,257,26],[228,257,24],[296,249,58]])shrub(x,y,ww);
-  box(127,167,9,12,'slate');r(126,166,11,2,'steel');for(const x of [129,132,135])r(x,169,1,8,'sea');
-  bench(609,244);
+  rect(136,242,20,8,'wood');rect(138,244,16,5,'sand');rect(137,241,18,1,'sun');
+  for(let i=0;i<basketCount;i++){rect(138+i*3,239,3,3,i%2?'leaf':'brick');rect(139+i*3,238,1,1,'shade');}
+  rect(181,244,13,2,'wood');rect(182,246,2,3,'wood');rect(191,246,2,3,'wood');
+  // Civic plaza and government-project materials retain their original trigger.
+  const civic=TOWN_BUILDINGS.civic;front(civic,'paper');roof(213,207,77,11,'slate');
+  box(244,199,16,14,'paper');roof(242,195,20,4,'slate');box(248,201,8,8,'cream');rect(251,203,1,3,'ink');rect(251,205,3,1,'ink');
+  window(224,228,12,13);window(269,228,12,13);door(245,232,14,22);
+  rect(240,229,24,2,'steel');rect(241,231,2,23,'cream');rect(262,231,2,23,'cream');
+  rect(213,254,77,3,'steel');rect(210,257,83,2,'paper');rect(241,186,1,27,'ink');
+  if(economy.governmentDemand>57){crate(280,247);crate(280,239);rect(276,259,14,2,'gold');}
+  // Service station: rear kiosk, driveway, canopy and two pump islands.
+  rect(314,188,72,12,'paving');rect(315,188,1,12,'steel');rect(384,188,1,12,'steel');
+  front({x:336,y:203,w:47,h:28},'paper');rect(334,200,51,3,'slate');window(341,211,17,12);door(366,210,12,21);
+  box(316,225,69,6,'brick');rect(317,226,67,1,'cream');rect(319,231,3,23,'steel');rect(379,231,3,23,'steel');
+  for(const x of [326,358]){rect(x-3,253,18,3,'steel');box(x,239,10,14,'brick');box(x+2,241,6,5,'cream');rect(x+2,248,6,1,'wood');rect(x+10,243,4,1,'ink');rect(x+13,244,1,7,'ink');rect(x+11,250,3,1,'ink');}
+  // Construction: open frame, scaffold and staging space. No extra state model.
+  const site=TOWN_BUILDINGS.site,frame=w.construction==='paused'?'steel':'sand';
+  rect(422,218,46,35,'slate');rect(424,220,42,31,'paving');
+  for(const x of [423,444,465]){rect(x,217,2,36,frame);rect(x,217,1,36,'cream');}
+  for(const y of [218,234,250])rect(422,y,46,2,frame);
+  rect(424,237,18,12,w.construction==='paused'?'steel':'brick');rect(447,237,17,12,w.construction==='paused'?'steel':'brick');
+  for(const x of [428,450])for(let i=0;i<6;i++)rect(x+i*2,223+i,2,1,'wood');
+  rect(408,202,3,51,'gold');rect(407,200,68,3,'gold');
+  for(let y=206;y<249;y+=7){rect(406,y,7,1,'ochre');rect(408,y+1,2,3,'ochre');}
+  for(let i=0;i<12;i++){rect(410+i*2,199-i,2,1,'gold');rect(434+i*3,188+i,3,1,'gold');}
+  rect(403,251,12,4,'slate');crate(398,251);crate(411,253);
+  // State is visible in the unfinished wall and staged materials, without status boards.
+  if(w.construction==='active'){rect(425,226,16,7,'brick');rect(425,229,16,1,'brickDark');}
+  for(const y of [254,257]){rect(432,y,31,2,'sand');rect(434,y,27,1,'sun');}
+  rect(468,228,2,28,'steel');for(let y=229;y<255;y+=5)rect(465,y,7,1,'steel');
+  // Street furniture stays clear of all routes; trees are stepped clusters.
+  for(const [x,y] of [[1,111],[91,111],[198,105],[289,110],[461,112],[1,232],[191,224],[292,239]])tree(x,y);
+  for(const [x,y] of [[6,139],[202,139],[311,139],[473,139]]){rect(x,y-10,1,12,'ink');rect(x-1,y-12,3,3,'cream');rect(x-2,y+2,5,1,'slate');}
+  for(const [x,y,width] of [[18,185,48],[112,190,19],[167,190,19],[222,184,42]])shrub(x,y,width);
+  box(92,117,8,12,'slate');rect(94,120,4,4,'cream');rect(95,129,1,5,'ink');
+  rect(468,181,8,2,'wood');rect(468,183,1,4,'wood');rect(475,183,1,4,'wood');
 }
-
 function renderWorld(){
   const w=worldState(),householdCondition=w.unemployed?'LOOKING FOR WORK':w.shortHours?'REDUCED HOURS':'OFF TO WORK';
   $('#world-title').textContent=`Common Ground: a living economy in Year ${economy.year}`;
@@ -371,101 +394,331 @@ function renderWorld(){
 /* PIXEL ANIMATION — presentation only. No writes to economy or its history.
    Tuning: PIXEL_TUNING controls cadence, speeds and caps. getVisualEconomyState
    maps the existing worldState values to sprite density. Both canvases use the
-   same 640 × 360 grid; PIXEL_PATHS and PIXEL_ANCHORS locate all activity. */
-const PIXEL_TUNING={fps:20,vehicleSpeed:23,walkSpeed:3.3,maxVehicles:10,maxPeople:18,priceFlashSeconds:.8};
-const PIXEL_PALETTE={O:TOWN_PALETTE.ink,B:TOWN_PALETTE.sand,D:TOWN_PALETTE.ochre,L:TOWN_PALETTE.sun,W:TOWN_PALETTE.sky,G:TOWN_PALETTE.teal,H:TOWN_PALETTE.cream,R:TOWN_PALETTE.brick,T:TOWN_PALETTE.deep,K:TOWN_PALETTE.steel,S:TOWN_PALETTE.skin,C:TOWN_PALETTE.sea,A:TOWN_PALETTE.paper,P:TOWN_PALETTE.slate,F:TOWN_PALETTE.wood,Y:TOWN_PALETTE.gold,V:TOWN_PALETTE.far,E:TOWN_PALETTE.paper,Q:TOWN_PALETTE.ochre,N:TOWN_PALETTE.ochre,Z:TOWN_PALETTE.skin,J:TOWN_PALETTE.steel,U:TOWN_PALETTE.deep,M:TOWN_PALETTE.ochre};
+   same 480 × 270 grid; PIXEL_PATHS and PIXEL_ANCHORS locate all activity. */
+const PIXEL_TUNING={fps:20,vehicleSpeed:17,walkSpeed:2.5,maxVehicles:10,maxPeople:18,priceFlashSeconds:.8};
+const PIXEL_PALETTE={O:TOWN_PALETTE.ink,B:TOWN_PALETTE.sand,D:TOWN_PALETTE.ochre,L:TOWN_PALETTE.sun,W:TOWN_PALETTE.sky,G:TOWN_PALETTE.teal,H:TOWN_PALETTE.cream,R:TOWN_PALETTE.brick,T:TOWN_PALETTE.deep,K:TOWN_PALETTE.steel,S:TOWN_PALETTE.skin,C:TOWN_PALETTE.sea,A:TOWN_PALETTE.paper,P:TOWN_PALETTE.slate,F:TOWN_PALETTE.wood,Y:TOWN_PALETTE.gold,V:TOWN_PALETTE.far,E:TOWN_PALETTE.paper,Q:TOWN_PALETTE.ochre,N:TOWN_PALETTE.ochre,J:TOWN_PALETTE.steel,U:TOWN_PALETTE.deep,M:TOWN_PALETTE.ochre};
 
-// Native 16 × 26 people. The four poses share a grounded foot line, not a scaled bitmap.
-const SPRITE_PLACEMENT={compact:{x:0,y:0},sedan:{x:0,y:0},truck:{x:0,y:0},
-  pedestrian:{x:-6,y:-24},shopper:{x:-6,y:-24},resident:{x:-6,y:-24},factoryWorker:{x:-6,y:-24},worker:{x:-6,y:-24}};
+// Native-resolution actor art: matrix dimensions are the sprite scale (no resampling).
+// Placement preserves the previous foot/road contact points as the silhouettes grow.
+const SPRITE_PLACEMENT={compact:{x:0,y:-1},sedan:{x:0,y:-1},truck:{x:0,y:-1},pedestrian:{x:-2,y:-6},worker:{x:-2,y:-6}};
 const SPRITE_WALK={sequence:[0,1,2,3],idleFrame:4};
-const PERSON_HEAD=['      FFFF','     FQQFFF','    FQQQFFFO','    FNSSSSO','    FNSZSOS','     NSSSN','      NS','     OCNSO'];
-const PERSON_TORSOS=[
- ['    UCCAACO','   UCCCAAACU','   UCCACCCCU','   SUCCCCCUCS','   S UCCCCUSS','     UCCCUSSS','     UCCCU S','     UCCCCU','     TPPKPP'],
- ['    UCCAACO','    CCCAAACU','    CCACCCCU','    UCCCCCUS','    SUCCCCUS','    S UCCCUS','     UCCCU S','     UCCCCU','     TPPKPP'],
- ['    OCCAACU','    CCCAAACU','   UCCACCCCU','  SCCUCCCCUS','  SSUCCCCCU','   S UCCCU','     UCCCU','     UCCCCU','     TPPKPP'],
- ['    OCCAACU','   UCCCAAACU','   UCCACCCCU','   SUCCCCCUS','   S UCCCCUS','     UCCCCUS','     UCCCU S','     UCCCCU','     TPPKPP'],
- ['    OCCAACU','   UCCCAAACU','   UCCACCCCU','   UCCCCCACU','   SUCCCCUCS','   S UCCCU S','     UCCCU S','     UCCCCU','     TPPKPP']
-];
-const PERSON_LEGS=[
- ['     TPPJPP','    TTP JPP','    TT   JPP','   TT     JPP','   TT      JP','  TTT      PP','  TT       PP','  TO       PO','  OOO      OOO'],
- ['     TPPJPP','      TPJPP','      T PJPP','      T  JPP','      T   PP','      T  PP','      TT PP','      TT','      OOO'],
- ['     PPPPTT','    PJPP TT','   PJPP   TT','   PJP     TT','   JP       T','   PP       TT','   PP       TT','  PPO       TO','  OOO      OOO'],
- ['     TPPJPP','     T PJPP','     T PJPP','     TT JPP','      T JPP','       TJPP','      T  PP','      TT PP','         OOO'],
- ['     TPPJPP','     TT JPP','     TT JPP','     TT JPP','     TT  JP','     TT  PP','     TT  PP','     TO  PO','     OOO OOO']
-];
-function humanFrames(role){
-  const head=role==='worker'?['      YYY','     YHYYY','    YYHYYYY','   YYYYYYYYY','    ONZSOS','     NSSSN','      NS','     OYNSYO']:
-    role==='factoryWorker'?['      OOOO','     CCCCCO','    CAAAACCO','    OCCCOOOO','     NZSOS','     NSSSN','      NS','     OCNCO']:PERSON_HEAD;
-  return PERSON_TORSOS.map((body,i)=>{
-    const pixels=[...head,...body,...PERSON_LEGS[i]].map(row=>row.padEnd(16).split(''));
-    if(role==='worker'){
-      for(let y=8;y<16;y++)for(const x of [6,10])if('CAU'.includes(pixels[y][x]))pixels[y][x]='Y';
-      for(const x of [6,7,8,9,10])if(pixels[11][x]!==' ')pixels[11][x]='H';
-      pixels[14][8]='F';pixels[15][8]='K';pixels[15][9]='F';pixels[16][9]='K';
-    }
-    if(role==='factoryWorker'){
-      for(let y=9;y<16;y++)for(let x=6;x<=10;x++)if('CAU'.includes(pixels[y][x]))pixels[y][x]='P';
-      pixels[10][6]='J';pixels[10][10]='J';pixels[12][8]='K';pixels[13][8]='J';pixels[13][9]='J';
-    }
-    if(role==='shopper'){
-      // A separate hand, handle and grocery bag; the bag hangs above the foot line.
-      pixels[15][12]='S';pixels[16][12]='F';pixels[16][14]='F';
-      for(let y=17;y<=22;y++)for(let x=12;x<=15;x++)pixels[y][x]=x===12||y===22?'F':x===13?'L':'D';
-      pixels[17][14]='V';pixels[17][15]='R';
-      pixels[4][4]='F';pixels[5][4]='F';pixels[6][4]='F';
-    }
-    if(role==='resident'){
-      for(let y=8;y<16;y++)if(pixels[y][8]!==' ')pixels[y][8]='U';
-      pixels[11][9]='K';pixels[14][9]='K';pixels[1][6]='K';
-    }
-    return pixels.map(row=>row.join(''));
-  });
-}
-// Vehicle silhouettes are authored as native pixel spans with separate bodywork, glazing and tires.
-function vehicleFrames(type){
-  // ~20% longer bodywork; the 20px height preserves the existing lane clearance.
-  const width=type==='compact'?48:type==='sedan'?55:60,height=20;
-  const grid=Array.from({length:height},()=>Array(width).fill(' '));
-  const r=(x,y,w,h,c)=>{for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)grid[yy][xx]=c;};
-  if(type==='truck'){
-    r(1,0,39,15,'O');r(2,1,37,12,'E');r(3,2,35,1,'H');r(3,3,2,9,'K');r(6,4,31,1,'K');r(6,6,31,4,'L');r(6,11,31,1,'K');r(35,4,1,8,'K');
-    r(41,3,10,1,'O');r(40,4,14,1,'O');r(40,5,15,2,'O');r(40,7,16,2,'O');r(40,9,18,6,'O');
-    r(41,4,10,1,'L');r(41,5,12,5,'B');r(42,6,9,4,'W');r(43,6,7,1,'H');r(43,9,9,2,'G');r(51,7,2,4,'O');
-    r(41,11,15,3,'B');r(42,12,3,1,'K');r(53,11,1,3,'M');r(56,11,2,2,'H');r(1,14,57,2,'B');r(1,16,58,1,'M');r(2,13,2,2,'R');r(57,14,3,2,'K');
-  }else{
-    const long=type==='sedan',roofLeft=long?12:14,roofRight=long?36:31,front=width-2;
-    r(roofLeft+1,1,roofRight-roofLeft-1,1,'O');r(roofLeft,2,roofRight-roofLeft+1,1,'O');r(roofLeft+1,2,roofRight-roofLeft-1,1,'L');
-    for(let y=3;y<=8;y++){const inset=Math.floor((y-2)/2);r(roofLeft-inset,y,roofRight-roofLeft+2*inset+1,1,'O');r(roofLeft-inset+1,y,roofRight-roofLeft+2*inset-1,1,'B');}
-    for(const [x,ww] of long?[[12,10],[24,11],[37,2]]:[[14,8],[24,7]]){r(x,4,ww,4,'W');r(x+1,4,Math.max(1,ww-2),1,'H');r(x,7,ww,1,'G');}
-    r(4,8,width-10,1,'O');r(3,9,width-6,1,'O');r(2,10,width-4,5,'O');r(3,10,width-6,4,'B');
-    r(5,9,width-11,1,'L');r(4,10,width-8,1,'L');r(3,14,width-6,2,'M');r(1,12,3,2,'K');r(front-1,12,3,2,'K');
-    r(3,11,2,2,'R');r(front-3,10,2,2,'H');r(23,10,1,4,'M');r(25,11,3,1,'K');if(long){r(37,10,1,4,'M');r(39,11,3,1,'K');}
-    r(front-7,13,4,1,'O');r(5,13,3,1,'M');
-    r(3,16,width-6,1,'O');
-  }
-  const wheels=type==='compact'?[9,37]:type==='sedan'?[10,44]:[10,49];
-  return [0,1].map(phase=>{
-    const copy=grid.map(row=>[...row]);
-    const wheel=[' TTTTT ','TTKKKTT',phase?'TKKTKKT':'TKTKTKT','TTKKKTT',' TTTTT ','  TTT  '];
-    for(const cx of wheels)wheel.forEach((row,y)=>[...row].forEach((c,x)=>{if(c!==' ')copy[14+y][cx-3+x]=c;}));
-    return copy.map(row=>row.join(''));
-  });
-}
 const sprites={
-  compact:{frames:vehicleFrames('compact')},sedan:{frames:vehicleFrames('sedan')},truck:{frames:vehicleFrames('truck')},
-  pedestrian:{frames:humanFrames('pedestrian')},shopper:{frames:humanFrames('shopper')},resident:{frames:humanFrames('resident')},factoryWorker:{frames:humanFrames('factoryWorker')},worker:{frames:humanFrames('worker')},
-  smoke:{frames:[['     EE     ','   EEEEE    ','  EEHHHEE   ',' EEEEEEEEE  ','  EEEEEEE   ','    EEEE    '],['    EE EE     ','  EEEEEEEEE   ',' EEHHHEEEEE   ',' EEEEEEEEEE   ','   EEEEEEEE   ','     EEEE     '],['  EE     EE    ',' EEEE  EEEEE   ','  EEEEEEEEEEE  ','   EEEEEEEEE   ','     EEEEEE    ','       EE      ']]},
-  hook:{frames:[['  O  ','  O  ','  O  ','  OO ','   OO','   OO',' OOO ',' OOO ']]},
-  flag:{frames:[['VVVVVVVVVV    ','VEEEEEEEVVV   ','VVVVVVVVVVVV  ','VEEEEEEEVVVVV ','VVVVVVVVVVVVV ','VVVVVVVVVVVV  ','VVVVVVVVVVV   ','VVVVVVVVVV    '],['VVVVVVVVV     ','VEEEEEVVVV    ','VVVVVVVVVVV   ','VEEEEEEEVVVV  ','VVVVVVVVVVVVV ','VVVVVVVVVVVVVV','VVVVVVVVVVVVV ','VVVVVVVVVVVV  ']]}
+  compact:{frames:[
+    [
+      "         OOOOOOOOOOO            ",
+      "        OLLLLLLLLLLBO           ",
+      "       OBHWWWOBHWWWBBO          ",
+      "      OBBWWWWOBWWWWWBBO         ",
+      "     OBBGGGGGOBGGGGGBBBO        ",
+      "   OBBBBBBBBBBBBBBBBBBBBO       ",
+      " OLLLLLLLLLLLLLLLLLLLLLLBBBBO   ",
+      " ORBBBBBBBBBBBBBBBBBBBBBBBBBHO  ",
+      " OBBBBBBBBBBBMKBBBBBBBBBBBBBBO  ",
+      " OKMMTTTTTMMMMMMMMMMMMTTTTTMKO  ",
+      "  OOTKKTTOOOOOOOOOOOOTKKTTOO    ",
+      "    TKKTT            TKKTT      ",
+      "    TTTTT            TTTTT      ",
+      "     TTT              TTT       "
+    ],
+    [
+      "         OOOOOOOOOOO            ",
+      "        OLLLLLLLLLLBO           ",
+      "       OBHWWWOBHWWWBBO          ",
+      "      OBBWWWWOBWWWWWBBO         ",
+      "     OBBGGGGGOBGGGGGBBBO        ",
+      "   OBBBBBBBBBBBBBBBBBBBBO       ",
+      " OLLLLLLLLLLLLLLLLLLLLLLBBBBO   ",
+      " ORBBBBBBBBBBBBBBBBBBBBBBBBBHO  ",
+      " OBBBBBBBBBBBMKBBBBBBBBBBBBBBO  ",
+      " OKMMTTTTTMMMMMMMMMMMMTTTTTMKO  ",
+      "  OOTKTKTOOOOOOOOOOOOTKTKTOO    ",
+      "    TKTKT            TKTKT      ",
+      "    TTTTT            TTTTT      ",
+      "     TTT              TTT       "
+    ]
+  ]},
+  sedan:{frames:[
+    [
+      "       OOOOOOOOOOOOOOOO           ",
+      "      OLLLLLLLLLLLLLLLBO          ",
+      "      OBHWWWOBWWWOBWWWBBO         ",
+      "      OBWWWWOBWWWOBWWWWBBO        ",
+      "      OBGGGGOBGGGOBGGGGBBBO       ",
+      "   OBBBBBBBBBBBBBBBBBBBBBBBO      ",
+      " OLLLLLLLLLLLLLLLLLLLLLLLLLLBBBO  ",
+      " ORBBBBBBBBBBBBBBBBBBBBBBBBBBBHO  ",
+      " OBBBBBBBBBBBBBMKBBBBBBBBBBBBBBO  ",
+      " OKMMMTTTTTMMMMMMMMMMMMTTTTTMMKO  ",
+      "  OOOTKKTTOOOOOOOOOOOOOTKKTTOO    ",
+      "     TKKTT             TKKTT      ",
+      "     TTTTT             TTTTT      ",
+      "      TTT               TTT       "
+    ],
+    [
+      "       OOOOOOOOOOOOOOOO           ",
+      "      OLLLLLLLLLLLLLLLBO          ",
+      "      OBHWWWOBWWWOBWWWBBO         ",
+      "      OBWWWWOBWWWOBWWWWBBO        ",
+      "      OBGGGGOBGGGOBGGGGBBBO       ",
+      "   OBBBBBBBBBBBBBBBBBBBBBBBO      ",
+      " OLLLLLLLLLLLLLLLLLLLLLLLLLLBBBO  ",
+      " ORBBBBBBBBBBBBBBBBBBBBBBBBBBBHO  ",
+      " OBBBBBBBBBBBBBMKBBBBBBBBBBBBBBO  ",
+      " OKMMMTTTTTMMMMMMMMMMMMTTTTTMMKO  ",
+      "  OOOTKTKTOOOOOOOOOOOOOTKTKTOO    ",
+      "     TKTKT             TKTKT      ",
+      "     TTTTT             TTTTT      ",
+      "      TTT               TTT       "
+    ]
+  ]},
+  truck:{frames:[
+    [
+      " OOOOOOOOOOOOOOOOOOOO             ",
+      " OEHHHHHHHHHHHHHHHHEO             ",
+      " OEKEEEEEEEEEEEEEEEEO  OLLLLLO    ",
+      " OEKEEEEEEEEEEEEEEEEO OBBHWWBO    ",
+      " OEKLLLLLLLLLLLLLLLEO OBBWWWOBBO  ",
+      " OEKLLLLLLLLLLLLLLLEO OBBGGGOBBO  ",
+      " OEKEEEEEEEEEEEEEEEEO OBBOBBBBBO  ",
+      " OEKEEEEEEEEEEEEEEEEO OBBOKBBBBBO ",
+      " ORBBBBBBBBBBBBBBBBBBBBBBBBBBBBHO ",
+      " OKMMTTTTTMMMMMMMMMMMMMMTTTTTMMKO ",
+      "  OOTKKTTOOOOOOOOOOOOOOTKKTTOOO   ",
+      "    TKKTT              TKKTT      ",
+      "    TTTTT              TTTTT      ",
+      "     TTT                TTT       "
+    ],
+    [
+      " OOOOOOOOOOOOOOOOOOOO             ",
+      " OEHHHHHHHHHHHHHHHHEO             ",
+      " OEKEEEEEEEEEEEEEEEEO  OLLLLLO    ",
+      " OEKEEEEEEEEEEEEEEEEO OBBHWWBO    ",
+      " OEKLLLLLLLLLLLLLLLEO OBBWWWOBBO  ",
+      " OEKLLLLLLLLLLLLLLLEO OBBGGGOBBO  ",
+      " OEKEEEEEEEEEEEEEEEEO OBBOBBBBBO  ",
+      " OEKEEEEEEEEEEEEEEEEO OBBOKBBBBBO ",
+      " ORBBBBBBBBBBBBBBBBBBBBBBBBBBBBHO ",
+      " OKMMTTTTTMMMMMMMMMMMMMMTTTTTMMKO ",
+      "  OOTKTKTOOOOOOOOOOOOOOTKTKTOOO   ",
+      "    TKTKT              TKTKT      ",
+      "    TTTTT              TTTTT      ",
+      "     TTT                TTT       "
+    ]
+  ]},
+  pedestrian:{frames:[
+    [
+      "    FFFF   ",
+      "   FQQFF   ",
+      "   FSSSO   ",
+      "   FNSSOS  ",
+      "    NSS    ",
+      "    NS     ",
+      "   OCAU    ",
+      "  UCCAUC   ",
+      "  UCACCS   ",
+      "  SCCCUS   ",
+      "   UCCUS   ",
+      "   TPPP    ",
+      "   TPJPP   ",
+      "  TTP JPP  ",
+      "  TT   JP  ",
+      " TT     P  ",
+      " TT     P  ",
+      " OOO    OOO"
+    ],
+    [
+      "    FFFF   ",
+      "   FQQFF   ",
+      "   FSSSO   ",
+      "   FNSSOS  ",
+      "    NSS    ",
+      "    NS     ",
+      "   OCAU    ",
+      "   CCAUC   ",
+      "   CCACS   ",
+      "   SCCUS   ",
+      "   UCCC    ",
+      "   TPPP    ",
+      "    TPJP   ",
+      "    T PJ   ",
+      "    T PJ   ",
+      "    T  PP  ",
+      "    T PP   ",
+      "    OO     "
+    ],
+    [
+      "    FFFF   ",
+      "   FQQFF   ",
+      "   FSSSO   ",
+      "   FNSSOS  ",
+      "    NSS    ",
+      "    NS     ",
+      "   OCAU    ",
+      "   CCAUCO  ",
+      "  UCCACS   ",
+      "  SSCCCU   ",
+      "   UCCC    ",
+      "   TPPP    ",
+      "   PPPPT   ",
+      "  PJPP TT  ",
+      "  PJP   TT ",
+      "  PP     T ",
+      "  PP     T ",
+      "  OOO   OOO"
+    ],
+    [
+      "    FFFF   ",
+      "   FQQFF   ",
+      "   FSSSO   ",
+      "   FNSSOS  ",
+      "    NSS    ",
+      "    NS     ",
+      "   OCAU    ",
+      "  UCCAUC   ",
+      "  SCCACU   ",
+      "  SCCCUS   ",
+      "   UCCC    ",
+      "   TPPP    ",
+      "    TPJP   ",
+      "     PJP   ",
+      "   T PJP   ",
+      "   TT PP   ",
+      "    T PP   ",
+      "      OOO  "
+    ],
+    [
+      "    FFFF   ",
+      "   FQQFF   ",
+      "   FSSSO   ",
+      "   FNSSOS  ",
+      "    NSS    ",
+      "    NS     ",
+      "   OCAU    ",
+      "  UCCAUC   ",
+      "  UCCACU   ",
+      "  SCCACS   ",
+      "  SUCCUS   ",
+      "   TPPP    ",
+      "    TPJP   ",
+      "    T JP   ",
+      "    T JP   ",
+      "    T  P   ",
+      "    T  P   ",
+      "    OO OO  "
+    ]
+  ]},
+  worker:{frames:[
+    [
+      "    YYY    ",
+      "   YHYYY   ",
+      "  YYYYYYY  ",
+      "   NSSOS   ",
+      "    NSS    ",
+      "    NS     ",
+      "   OYHY    ",
+      "  OPYPYP   ",
+      "  OPYPPS   ",
+      "  SPYPYS   ",
+      "   YPPYS   ",
+      "   TPPP    ",
+      "   TPJPP   ",
+      "  TTP JPP  ",
+      "  TT   JP  ",
+      " TT     P  ",
+      " TT     P  ",
+      " OOO    OOO"
+    ],
+    [
+      "    YYY    ",
+      "   YHYYY   ",
+      "  YYYYYYY  ",
+      "   NSSOS   ",
+      "    NSS    ",
+      "    NS     ",
+      "   OYHY    ",
+      "   PYPYP   ",
+      "   PYPPS   ",
+      "   SPYYS   ",
+      "   YPPY    ",
+      "   TPPP    ",
+      "    TPJP   ",
+      "    T PJ   ",
+      "    T PJ   ",
+      "    T  PP  ",
+      "    T PP   ",
+      "    OO     "
+    ],
+    [
+      "    YYY    ",
+      "   YHYYY   ",
+      "  YYYYYYY  ",
+      "   NSSOS   ",
+      "    NSS    ",
+      "    NS     ",
+      "   OYHY    ",
+      "   PYPYPO  ",
+      "  OPYPPS   ",
+      "  SSPPPY   ",
+      "   YPPY    ",
+      "   TPPP    ",
+      "   PPPPT   ",
+      "  PJPP TT  ",
+      "  PJP   TT ",
+      "  PP     T ",
+      "  PP     T ",
+      "  OOO   OOO"
+    ],
+    [
+      "    YYY    ",
+      "   YHYYY   ",
+      "  YYYYYYY  ",
+      "   NSSOS   ",
+      "    NSS    ",
+      "    NS     ",
+      "   OYHY    ",
+      "  OPYPYP   ",
+      "  SPYPPY   ",
+      "  SPPYYS   ",
+      "   YPPY    ",
+      "   TPPP    ",
+      "    TPJP   ",
+      "     PJP   ",
+      "   T PJP   ",
+      "   TT PP   ",
+      "    T PP   ",
+      "      OOO  "
+    ],
+    [
+      "    YYY    ",
+      "   YHYYY   ",
+      "  YYYYYYY  ",
+      "   NSSOS   ",
+      "    NSS    ",
+      "    NS     ",
+      "   OYHY    ",
+      "  OPYPYP   ",
+      "  OPYHPO   ",
+      "  SPYPPS   ",
+      "  SYPPYS   ",
+      "   TPPP    ",
+      "    TPJP   ",
+      "    T JP   ",
+      "    T JP   ",
+      "    T  P   ",
+      "    T  P   ",
+      "    OO OO  "
+    ]
+  ]},
+  smoke:{frames:[['   EE   ','  EEEE  ',' EEEEEE ','  EEEE  '],['   EE EE  ','  EEEEEEE ',' EEEEEEEE ','  EEEEEE  ','    EE    '],[' EE    EE  ',' EEE  EEEE ','  EEEEEEE  ','   EEEEE   ','     EE    ']]},
+  hook:{frames:[[' O ',' O ',' OO','  O','OOO']]},
+  flag:{frames:[['VVVVVVVV  ','VVVVVVVVV ','VVVVVVVVVV','VVVVVVVVV ','VVVVVVVV  ','VVVVVVV   '],['VVVVVVV   ','VVVVVVVV  ','VVVVVVVVV ','VVVVVVVVVV','VVVVVVVVV ','VVVVVVVV  ']]}
 };
 const PIXEL_PATHS={
-  upperRoad:[[-64,197],[640,197]],lowerRoad:[[640,218],[-64,218]],
-  sidewalk:[[22,188],[390,188]],sidewalkReturn:[[390,191],[22,191]],retail:[[145,188],[246,188],[246,172]],
-  factory:[[432,187],[609,187]],factoryReturn:[[609,190],[432,190]],factoryEntrance:[[432,187],[552,187],[552,172]],
-  construction:[[564,351],[620,351],[564,351]]
+  upperRoad:[[-34,149],[480,149]],lowerRoad:[[480,163],[-34,163]],
+  sidewalk:[[13,132],[289,132]],sidewalkReturn:[[289,134],[13,134]],retail:[[108,132],[176,132],[176,119]],
+  factory:[[322,128],[451,128]],factoryReturn:[[451,130],[322,130]],factoryEntrance:[[322,128],[409,128],[409,119]],
+  construction:[[397,238],[415,238],[397,238]]
 };
-
 function getVisualEconomyState(){
   const w=worldState();
   return {
@@ -488,17 +741,16 @@ const pixelWorld=(()=>{
   const shirtShadows=['#285a78','#984736','#256856','#624f85','#a27732'];
   const vehicleHighlights=['#ffe092','#85bed3','#ffaf87','#fff5d8','#c6aadf'];
   const vehicleShadows=['#a87b32','#285a78','#984736','#9cabaf','#624f85'];
-  const skinColors=['#bd825d','#e2ab80'],skinShadows=['#875438','#b67a55'],skinHighlights=['#d49a75','#f3c29a'];
+  const skinColors=['#bd825d','#e2ab80'],skinShadows=['#875438','#b67a55'];
   let visual=null,objects=[],time=0,lastTime=0,raf=0,priceUntil=0,frameCount=0;
   function spriteImage(type,frame,variant=0){
     const key=`${type}/${frame}/${variant}/${visual.upgraded}`;
     if(cache.has(key))return cache.get(key);
     const matrix=sprites[type].frames[frame%sprites[type].frames.length];
     const sheet=document.createElement('canvas');sheet.width=Math.max(...matrix.map(row=>row.length));sheet.height=matrix.length;
-    const brush=sheet.getContext('2d'),palette={...PIXEL_PALETTE,B:vehicleColors[variant%vehicleColors.length],C:shirtColors[variant%shirtColors.length],A:shirtHighlights[variant%shirtHighlights.length],S:skinColors[variant%2],N:skinShadows[variant%2],Z:skinHighlights[variant%2],U:shirtShadows[variant%shirtShadows.length],J:'#67869b'};
+    const brush=sheet.getContext('2d'),palette={...PIXEL_PALETTE,B:vehicleColors[variant%vehicleColors.length],C:shirtColors[variant%shirtColors.length],A:shirtHighlights[variant%shirtHighlights.length],S:skinColors[variant%2],N:skinShadows[variant%2],U:shirtShadows[variant%shirtShadows.length],J:'#67869b'};
     if(['compact','sedan','truck'].includes(type)){palette.L=vehicleHighlights[variant%vehicleHighlights.length];palette.M=vehicleShadows[variant%vehicleShadows.length];}
-    if(type==='worker'){palette.Y=TOWN_PALETTE.gold;palette.C=TOWN_PALETTE.blue;palette.A=TOWN_PALETTE.steel;palette.U=shirtShadows[0];}
-    if(type==='factoryWorker'){palette.C=TOWN_PALETTE.teal;palette.A=TOWN_PALETTE.steel;palette.U=shirtShadows[0];}
+    if(type==='worker')palette.Y=variant%2?TOWN_PALETTE.gold:TOWN_PALETTE.paper;
     if(type==='smoke')palette.E=visual.upgraded?TOWN_PALETTE.paper:TOWN_PALETTE.steel;
     matrix.forEach((row,y)=>[...row].forEach((color,x)=>{if(color!==' '){brush.fillStyle=palette[color];brush.fillRect(x,y,1,1);}}));
     cache.set(key,sheet);return sheet;
@@ -517,7 +769,7 @@ const pixelWorld=(()=>{
     const object={x:0,y:0,direction:1,speed:PIXEL_TUNING.walkSpeed,frame:0,spriteType:type,active:true,path,index,distance,wait:0};
     locate(object);objects.push(object);
   }
-  function fixedPerson(x,y,index,idle=true,type='resident'){objects.push({x,y,direction:1,speed:0,frame:SPRITE_WALK.idleFrame,spriteType:type,active:true,path:null,index,distance:0,idle});}
+  function fixedPerson(x,y,index,idle=true){objects.push({x,y,direction:1,speed:0,frame:SPRITE_WALK.idleFrame,spriteType:'pedestrian',active:true,path:null,index,distance:0,idle});}
   const isVehicle=object=>['truck','sedan','compact'].includes(object.spriteType);
   const motionKey=object=>(isVehicle(object)?'vehicle':'person')+'/'+object.path+'/'+object.index;
   function entryClear(object){
@@ -532,16 +784,16 @@ const pixelWorld=(()=>{
       const path=i%2?'lowerRoad':'upperRoad',laneIndex=Math.floor(i/2),laneCount=Math.ceil((visual.trafficLevel-(i%2))/2);
       const object={x:0,y:0,direction:i%2?-1:1,speed:PIXEL_TUNING.vehicleSpeed*(i%2?.92:1),frame:0,spriteType:i%visual.deliveryEvery===0?'truck':i%2?'sedan':'compact',active:true,path,index:i,distance:(laneIndex+.35)*pathLength(PIXEL_PATHS[path])/laneCount,wait:0};locate(object);objects.push(object);
     }
-    fixedPerson(147,329,1,visual.householdIdle);fixedPerson(165,329,2);
-    for(let i=0;i<visual.cafe;i++)fixedPerson(29+i*33,169,i,true,'pedestrian');
-    for(let i=0;i<visual.idle;i++)fixedPerson(218+i*18,343,i+3);
+    fixedPerson(110,236,1,visual.householdIdle);fixedPerson(121,236,2);
+    for(let i=0;i<visual.cafe;i++)fixedPerson(22+i*24,116,i);
+    for(let i=0;i<visual.idle;i++)fixedPerson(160+i*11,236,i+3);
     if(visual.constructionActivity!=='paused')addPerson('construction',3,4,'worker');
     const fixed=objects.filter(object=>!['truck','sedan','compact'].includes(object.spriteType)).length;
     const workerCount=Math.min(visual.workers,PIXEL_TUNING.maxPeople-fixed-visual.shoppers);
-    for(let i=0;i<workerCount;i++){const path=i===0?'factoryEntrance':i%2?'factoryReturn':'factory',x=434+(i+.5)*168/workerCount;addPerson(path,i+5,path==='factoryReturn'?609-x:x-432,'factoryWorker');}
+    for(let i=0;i<workerCount;i++){const path=i===0?'factoryEntrance':i%2?'factoryReturn':'factory',x=327+(i+.5)*116/workerCount;addPerson(path,i+5,path==='factoryReturn'?451-x:x-322,'worker');}
     const room=PIXEL_TUNING.maxPeople-objects.filter(object=>!['truck','sedan','compact'].includes(object.spriteType)).length;
     const shopperCount=Math.min(visual.shoppers,room);
-    for(let i=0;i<shopperCount;i++){const path=i===0?'retail':i%2?'sidewalkReturn':'sidewalk',x=22+(i-.5)*368/Math.max(shopperCount-1,1);addPerson(path,i+1,i===0?92:path==='sidewalkReturn'?390-x:x-22,i%2?'pedestrian':'shopper');}
+    for(let i=0;i<shopperCount;i++){const path=i===0?'retail':i%2?'sidewalkReturn':'sidewalk',x=13+(i-.5)*276/Math.max(shopperCount-1,1);addPerson(path,i+1,i===0?74:path==='sidewalkReturn'?289-x:x-13);}
     // A year change updates density without teleporting the actors that remain.
     for(const object of objects){const old=previous.get(motionKey(object));if(!object.path||!old)continue;for(const key of ['distance','wait','active','frame'])object[key]=old[key];locate(object);}
     if(keepPositions)for(const object of objects){
@@ -574,31 +826,27 @@ const pixelWorld=(()=>{
   function drawFactory(){
     const p=TOWN_PALETTE,{x,y}=PIXEL_ANCHORS.machine;
     const operating=visual.factoryActivity!=='slow',gear=operating?Math.floor(time*(visual.upgraded?4:2))%2:0;
-    rect(x,y,35,27,p.ink);rect(x+1,y+1,33,25,visual.upgraded?p.teal:p.steel);rect(x+2,y+2,31,3,visual.upgraded?p.sky:p.paper);
-    rect(x+2,y+22,31,3,p.slate);rect(x+3,y+6,29,14,p.deep);
-    for(const gx of [x+10,x+24]){
-      rect(gx-4,y+9,9,7,p.slate);rect(gx-3,y+8,7,9,p.slate);rect(gx-2,y+10,5,5,p.steel);
-      rect(gx,y+11,1,3,p.ink);rect(gx+(gear?2:-2),y+11,1,3,p.paper);rect(gx-1,y+(gear?10:14),3,1,p.paper);
-    }
-    if(visual.upgraded){rect(x+25,y+3,5,1,gear?p.cream:p.leaf);rect(x+5,y+19,24,1,p.gold);}
+    rect(x,y,22,14,p.ink);rect(x+1,y+1,20,12,visual.upgraded?p.teal:p.steel);rect(x+1,y+1,20,2,visual.upgraded?p.sky:p.paper);
+    for(const gx of [x+5,x+15]){rect(gx-2,y+6,5,5,p.slate);rect(gx+(gear?1:0),y+7,1,3,p.paper);rect(gx-1,y+8,3,1,p.paper);}
+    if(visual.upgraded)rect(x+18,y+4,2,1,gear?p.cream:p.leaf);
     const period=visual.factoryActivity==='busy'?2.8:visual.factoryActivity==='slow'?8:4.8,puffAge=time%period;
-    if(puffAge<1.5){const frame=Math.min(2,Math.floor(puffAge*2));blit('smoke',PIXEL_ANCHORS.stack.x+frame,PIXEL_ANCHORS.stack.y-6-Math.floor(puffAge*8),frame);}
-    if(visual.factoryActivity==='busy'&&Math.floor(time*2)%6===0)rect(602,153,2,2,p.cream);
+    if(puffAge<1.5){const frame=Math.min(2,Math.floor(puffAge*2));blit('smoke',PIXEL_ANCHORS.stack.x+frame,PIXEL_ANCHORS.stack.y-4-Math.floor(puffAge*6),frame);}
+    if(visual.factoryActivity==='busy'&&Math.floor(time*2)%6===0)rect(443,121,2,2,p.cream);
   }
   function drawConstruction(){
     const p=TOWN_PALETTE,active=visual.constructionActivity==='active',position=active?Math.floor(time/1.6)%2:0;
-    const hookX=PIXEL_ANCHORS.hook.x+position*3,hookY=PIXEL_ANCHORS.hook.y;
-    rect(hookX,hookY,1,25,p.ink);blit('hook',hookX-2,hookY+24);
-    if(active){rect(533,342,9,4,p.ochre);rect(534,337,8,5,p.sand);if(position){rect(536,333,6,4,p.sun);rect(537,331,4,2,p.cream);}}
+    const hookX=PIXEL_ANCHORS.hook.x+position*2,hookY=PIXEL_ANCHORS.hook.y;
+    rect(hookX,hookY,1,19,p.ink);blit('hook',hookX-1,hookY+18);
+    if(active){rect(399,252,6,3,p.ochre);rect(400,249,5,3,p.sand);if(position)rect(402,246,4,3,p.sun);}
   }
   function priceCorners(x,y,width,height){const c=TOWN_PALETTE.gold;rect(x,y,3,1,c);rect(x,y,1,3,c);rect(x+width-3,y,3,1,c);rect(x+width-1,y,1,3,c);rect(x,y+height-1,3,1,c);rect(x,y+height-3,1,3,c);rect(x+width-3,y+height-1,3,1,c);rect(x+width-1,y+height-3,1,3,c);}
   function draw(){
     if(!visual)return;ctx.clearRect(0,0,canvas.width,canvas.height);ctx.imageSmoothingEnabled=false;
     drawFactory();drawConstruction();blit('flag',PIXEL_ANCHORS.flag.x,PIXEL_ANCHORS.flag.y,Math.floor(time/1.2)%2);
     // Doors respond only to the existing open/for-lease state and shopper arrivals.
-    if(visual.retailActivity==='open'&&objects.some(object=>object.path==='retail'&&object.active&&object.y<181)){rect(240,147,16,28,TOWN_PALETTE.deep);rect(240,147,2,28,TOWN_PALETTE.steel);}
+    if(visual.retailActivity==='open'&&objects.some(object=>object.path==='retail'&&object.active&&object.y<126)){rect(174,122,14,9,TOWN_PALETTE.deep);rect(174,122,1,9,TOWN_PALETTE.steel);}
     const vehicles=objects.filter(object=>['truck','sedan','compact'].includes(object.spriteType));
-    ctx.save();ctx.beginPath();ctx.rect(0,196,WORLD_GRID.width,42);ctx.clip();
+    ctx.save();ctx.beginPath();ctx.rect(0,148,WORLD_GRID.width,29);ctx.clip();
     for(const object of vehicles){if(!object.active)continue;blit(object.spriteType,object.x,object.y,object.frame,object.direction,object.index);}
     ctx.restore();
     for(const object of objects.filter(o=>!isVehicle(o)).sort((a,b)=>a.y-b.y)){if(!object.active)continue;blit(object.spriteType,object.x,object.y,object.idle?SPRITE_WALK.idleFrame:object.frame,object.direction,object.index);}
@@ -637,17 +885,9 @@ const PROFILES=[
 ];
 function endingProfile(){return PROFILES.find(profile=>profile.test(economy));}
 function renderOutcome(){const profile=endingProfile();$('#decision').innerHTML=`<div class="outcome"><div><span class="eyebrow">Year 6 · Your living economy</span><h2 id="decision-title" tabindex="-1">${profile.name}</h2><p>${profile.description}</p></div><button class="primary" id="read-story" type="button" ${economy.phase!=='finished'?'disabled':''}>Read your economic history</button></div>`;}
-function economicExplanations(){const f=economy.flags,items=[];
-  const add=(ids,title,text,includeLags=false)=>{
-    for(const entry of economy.history.filter(entry=>ids.includes(entry.choice?.id))){
-      const affected=includeLags?economy.history.filter(year=>year.events.some(event=>event.sourceYear===entry.year&&event.id===entry.choice.id)).map(year=>year.year):[];
-      items.push({yearStart:entry.year,yearEnd:Math.max(entry.year,...affected),title,text,order:items.length});
-    }
-  };
-  if(f.demandShock||f.investmentBoom)add(['confidence','housing-boom'],'Demand shocks','Optimism or investment plans increased aggregate demand. More spending initially raised output and employment, with more pressure on prices when capacity was stretched.');if(f.supplyShock)add(['energy','commodities'],'Short-run aggregate supply','Higher energy or commodity costs shifted SRAS left. The city could produce less at each price level, combining weaker output with higher prices.');if(f.fiscalExpansion){const start=economy.history[1].state;add(['fiscal-expand'],'Fiscal expansion and crowding out',`Public purchases added demand to an economy with ${percent(start.unemployment)} unemployment and ${percent(start.inflation)} inflation. Jobs received support, while budget pressure rose. Later financing pressure restrained some private investment.`);}if(f.fiscalContraction)add(['fiscal-contract'],'Fiscal contraction','Reduced government purchases shifted aggregate demand left. That eased price pressure but also removed orders and employment from businesses.');if(f.monetaryEasing||f.monetaryTightening)add(['rate-cut','rate-hike'],'Monetary policy and lags',f.monetaryTightening?'The Year 3 rate increase made finance more expensive. Private construction weakened in Year 4, and demand continued cooling in Year 5.':'The Year 3 rate cut reduced borrowing costs. Investment and demand increased over Years 4–5, rather than appearing all at once.',true);if(f.productivityDevelopment)add(['breakthrough','infrastructure'],'Productivity and long-run supply','Improved technology or infrastructure moved SRAS right, then increased long-run capacity. The upgraded factory was the visible counterpart of a rightward LRAS shift.',true);if(f.support||f.control)add(['support','control'],'Stabilization tradeoffs',f.support?'The final demand support favored output and employment. Extra spending also added inflation and budget pressure relative to allowing adjustment.':'The final policy restrained demand to slow inflation. Lower orders also reduced output and employment relative to allowing adjustment.');items.push({yearStart:6,yearEnd:6,through:true,order:items.length,title:'Long-run adjustment',text:'Earlier investment gradually became productive capacity. Costs and wages adjusted to the gap between actual and potential output, so earlier shocks continued changing the city even without a new policy.'});return items.sort((a,b)=>a.yearStart-b.yearStart||a.yearEnd-b.yearEnd||a.order-b.order);}
-
+function economicExplanations(){const f=economy.flags,items=[];if(f.demandShock||f.investmentBoom)items.push(['Demand shocks','Optimism or investment plans increased aggregate demand. More spending initially raised output and employment, with more pressure on prices when capacity was stretched.']);if(f.supplyShock)items.push(['Short-run aggregate supply','Higher energy or commodity costs shifted SRAS left. The city could produce less at each price level, combining weaker output with higher prices.']);if(f.fiscalExpansion){const start=economy.history[1].state;items.push(['Fiscal expansion and crowding out',`Public purchases added demand to an economy with ${percent(start.unemployment)} unemployment and ${percent(start.inflation)} inflation. Jobs received support, while budget pressure rose. Later financing pressure restrained some private investment.`]);}if(f.fiscalContraction)items.push(['Fiscal contraction','Reduced government purchases shifted aggregate demand left. That eased price pressure but also removed orders and employment from businesses.']);if(f.monetaryEasing||f.monetaryTightening)items.push(['Monetary policy and lags',f.monetaryTightening?'The Year 3 rate increase made finance more expensive. Private construction weakened in Year 4, and demand continued cooling in Year 5.':'The Year 3 rate cut reduced borrowing costs. Investment and demand increased over Years 4–5, rather than appearing all at once.']);if(f.productivityDevelopment)items.push(['Productivity and long-run supply','Improved technology or infrastructure moved SRAS right, then increased long-run capacity. The upgraded factory was the visible counterpart of a rightward LRAS shift.']);if(f.support||f.control)items.push(['Stabilization tradeoffs',f.support?'The final demand support favored output and employment. Extra spending also added inflation and budget pressure relative to allowing adjustment.':'The final policy restrained demand to slow inflation. Lower orders also reduced output and employment relative to allowing adjustment.']);items.push(['Long-run adjustment','Earlier investment gradually became productive capacity. Costs and wages adjusted to the gap between actual and potential output, so earlier shocks continued changing the city even without a new policy.']);return items;}
 function transferQuestion(){if(economy.flags.supplyShock)return {prompt:'Another economy sees unemployment and inflation rise after an energy shortage. Which change best explains both outcomes?',answers:['Aggregate demand increased','Short-run aggregate supply decreased','Long-run aggregate supply increased'],target:1,explanation:'The energy shortage raises production costs. SRAS shifts left: less output and employment, alongside a higher price level. A demand boom would usually lift output rather than reduce it.'};if(economy.flags.monetaryTightening||economy.flags.monetaryEasing)return {prompt:'A central bank raises interest rates today. Construction plans weaken next year. Which connection explains the delay?',answers:['Borrowing costs change spending plans over time','Higher rates instantly create new factories','Investment is independent of borrowing costs'],target:0,explanation:'Firms reassess financing, orders and project plans over time. Higher rates tend to weaken interest-sensitive investment and aggregate demand with a lag.'};if(economy.flags.productivityDevelopment)return {prompt:'New equipment lets firms produce more with the same resources. Which change can support higher sustainable output?',answers:['A permanent reduction in productive capacity','A rise in long-run aggregate supply','A fall in productivity'],target:1,explanation:'Higher productivity expands productive capacity. LRAS moves right, allowing more sustainable output; short-run supply can improve as production costs fall.'};return {prompt:'Households become more optimistic and spend more while factories are already busy. What pressure is likely to accompany higher output?',answers:['Price pressure from stronger aggregate demand','An automatic fall in every price','A permanent loss of productive capacity'],target:0,explanation:'Stronger aggregate demand tends to raise output in the short run. Near capacity, additional spending also creates more upward pressure on prices.'};}
-function renderFinalReport(){const report=$('#report'),profile=endingProfile(),transfer=transferQuestion();report.hidden=false;report.innerHTML=`<h2 id="report-title" tabindex="-1">The economy remembers</h2><p class="report-intro">You shaped five developments and responses across six years. The city is now frozen at its Year 6 outcome: <strong>${profile.name}</strong>. These are descriptive conditions, not a ranking.</p><h3>What happened?</h3><ol class="story">${economy.history.map(entry=>`<li><span class="story-year">YEAR ${entry.year}</span><strong>${esc(entry.choice?.title||profile.name)}</strong><p>${entry.year===1?'The city began near potential output.':esc(entry.events.find(event=>event.delayed)?.text||entry.events[0]?.text||'Costs, spending and capacity continued adjusting.')} GDP ${entry.state.realGDP.toFixed(1)} · inflation ${percent(entry.state.inflation)} · unemployment ${percent(entry.state.unemployment)}.</p></li>`).join('')}</ol><h3>Why did it happen economically?</h3><div class="concepts">${economicExplanations().map(({yearStart,yearEnd,through,title,text})=>`<article><span class="concept-year">${through?`THROUGH YEAR ${yearEnd}`:yearStart===yearEnd?`YEAR ${yearStart}`:`YEARS ${yearStart}–${yearEnd}`}</span><h4>${title}</h4><p>${esc(text)}</p></article>`).join('')}</div><section class="transfer" aria-labelledby="transfer-title"><span class="transfer-kicker">TRANSFER CHALLENGE</span><h3 id="transfer-title">Can you use it somewhere else?</h3><p class="transfer-question">${transfer.prompt}</p><div class="transfer-options">${transfer.answers.map((text,i)=>`<button class="secondary" type="button" data-transfer="${i}">${text}</button>`).join('')}</div><p id="transfer-feedback" class="transfer-feedback" tabindex="-1" hidden></p></section><div id="end-actions" class="end-actions" hidden><button class="primary" id="model-toggle" type="button" aria-expanded="false" aria-controls="model">See the model behind your economy</button><button class="secondary" id="restart" type="button">Restart Simulation</button></div><section id="model" class="model" hidden aria-labelledby="model-title"><h3 id="model-title">Your city, through AD–AS</h3><p>You first saw these changes through jobs, prices, production, investment, and household conditions. The AD–AS model represents those same changes at the aggregate level.</p><div class="model-controls" aria-label="Select a year in the model">${economy.history.map(entry=>`<button type="button" class="secondary" data-graph-year="${entry.year}" aria-pressed="${entry.year===1}">Year ${entry.year}</button>`).join('')}</div><div class="model-grid"><div><svg id="graph" class="graph" viewBox="0 0 640 405" role="img" aria-labelledby="graph-title graph-description"></svg><div class="legend"><span>AD · solid</span><span>SRAS · solid</span><span>LRAS · dashed</span></div></div><div id="graph-explanation"></div></div></section>`;}
+function renderFinalReport(){const report=$('#report'),profile=endingProfile(),transfer=transferQuestion();report.hidden=false;report.innerHTML=`<h2 id="report-title" tabindex="-1">The economy remembers</h2><p class="report-intro">You shaped five developments and responses across six years. The city is now frozen at its Year 6 outcome: <strong>${profile.name}</strong>. These are descriptive conditions, not a ranking.</p><h3>What happened?</h3><ol class="story">${economy.history.map(entry=>`<li><span class="story-year">YEAR ${entry.year}</span><strong>${esc(entry.choice?.title||profile.name)}</strong><p>${entry.year===1?'The city began near potential output.':esc(entry.events.find(event=>event.delayed)?.text||entry.events[0]?.text||'Costs, spending and capacity continued adjusting.')} GDP ${entry.state.realGDP.toFixed(1)} · inflation ${percent(entry.state.inflation)} · unemployment ${percent(entry.state.unemployment)}.</p></li>`).join('')}</ol><h3>Why did it happen economically?</h3><div class="concepts">${economicExplanations().map(([title,text])=>`<article><h4>${title}</h4><p>${esc(text)}</p></article>`).join('')}</div><section class="transfer"><h3>Can you use it somewhere else?</h3><p>${transfer.prompt}</p><div class="transfer-options">${transfer.answers.map((text,i)=>`<button class="secondary" type="button" data-transfer="${i}">${text}</button>`).join('')}</div><p id="transfer-feedback" class="transfer-feedback" tabindex="-1" hidden></p></section><div class="end-actions"><button class="primary" id="model-toggle" type="button" aria-expanded="false" aria-controls="model">See the model behind your economy</button><button class="secondary" id="restart" type="button">Restart Simulation</button></div><section id="model" class="model" hidden aria-labelledby="model-title"><h3 id="model-title">Your city, through AD–AS</h3><p>You first saw these changes through jobs, prices, production, investment, and household conditions. The AD–AS model represents those same changes at the aggregate level.</p><div class="model-controls" aria-label="Select a year in the model">${economy.history.map(entry=>`<button type="button" class="secondary" data-graph-year="${entry.year}" aria-pressed="${entry.year===1}">Year ${entry.year}</button>`).join('')}</div><div class="model-grid"><div><svg id="graph" class="graph" viewBox="0 0 640 405" role="img" aria-labelledby="graph-title graph-description"></svg><div class="legend"><span>AD · solid</span><span>SRAS · solid</span><span>LRAS · dashed</span></div></div><div id="graph-explanation"></div></div></section><p class="model-note">This deterministic teaching model illustrates introductory relationships. Its indices and rates are not forecasts. Inflation is the yearly change in the price level; the graph shows the cumulative price level.</p>`;}
 
 /* 8. AD-AS REVEAL — actual stored intercepts, capacity and equilibrium for every year. */
 function renderGraph(year){graphYear=year;const entry=economy.history[year-1],s=entry.state,previous=economy.history[year-2]?.state;const all=economy.history.map(item=>item.state);const minX=Math.floor((Math.min(...all.map(item=>Math.min(item.realGDP,item.potentialGDP)))-13)/5)*5,maxX=Math.ceil((Math.max(...all.map(item=>Math.max(item.realGDP,item.potentialGDP)))+13)/5)*5;const minP=Math.floor((Math.min(...all.map(item=>item.priceLevel))-19)/5)*5,maxP=Math.ceil((Math.max(...all.map(item=>item.priceLevel))+19)/5)*5;const x=value=>78+(value-minX)/(maxX-minX)*486,y=value=>328-(value-minP)/(maxP-minP)*270;let ticks='';for(let i=0;i<=4;i++){const q=minX+(maxX-minX)*i/4,p=minP+(maxP-minP)*i/4;ticks+=`<path d="M${x(q)} 58V328M78 ${y(p)}H564" stroke="#d4e0e7" stroke-width="1"/><text x="${x(q)}" y="350" text-anchor="middle">${q.toFixed(0)}</text><text x="65" y="${y(p)+4}" text-anchor="end">${p.toFixed(0)}</text>`;}
@@ -660,7 +900,7 @@ function renderGraph(year){graphYear=year;const entry=economy.history[year-1],s=
 
 /* 19. ACCESSIBILITY — native controls, focus after transitions, a quiet live region. */
 function reset(){transitionToken++;economy=initialEconomy();recordYear();$('#report').hidden=true;$('#report').innerHTML='';$('#world-shell').classList.remove('finished','changing');$('#motion').hidden=false;$('#time-passage').hidden=true;$('#callouts').innerHTML='';render();window.scrollTo({top:0,behavior:'auto'});$('#decision-title').focus({preventScroll:true});$('#announcement').textContent='A new economy begins in Year 1, near potential output.';}
-document.addEventListener('click',event=>{const choice=event.target.closest('[data-choice]');if(choice&&!choice.disabled){advanceTime(choice.dataset.choice);return;}const graph=event.target.closest('[data-graph-year]');if(graph){renderGraph(Number(graph.dataset.graphYear));$('#announcement').textContent=`Model reveal: Year ${graph.dataset.graphYear}. ${$('#graph-explanation').innerText}`;return;}const transfer=event.target.closest('[data-transfer]');if(transfer){const q=transferQuestion();const answer=Number(transfer.dataset.transfer),feedback=$('#transfer-feedback');feedback.hidden=false;feedback.textContent=(answer===q.target?'That mechanism fits this scenario. ':'Compare the direction of output and prices. ')+q.explanation;document.querySelectorAll('[data-transfer]').forEach(button=>{button.disabled=true;button.setAttribute('aria-pressed',String(button===transfer));});$('#end-actions').hidden=false;feedback.focus();$('#announcement').textContent=feedback.textContent;return;}if(event.target.id==='motion'){motionPaused=!motionPaused;$('#world-shell').classList.toggle('paused',motionPaused);event.target.setAttribute('aria-pressed',String(motionPaused));event.target.textContent=motionPaused?'Resume city motion':'Pause city motion';return;}if(event.target.id==='restart'){reset();return;}if(event.target.id==='read-story'){$('#report-title').scrollIntoView({block:'start',behavior:reducedMotion.matches?'auto':'smooth'});$('#report-title').focus();return;}if(event.target.id==='model-toggle'){const panel=$('#model'),open=panel.hidden;panel.hidden=!open;event.target.setAttribute('aria-expanded',String(open));if(open)renderGraph(graphYear);}});
+document.addEventListener('click',event=>{const choice=event.target.closest('[data-choice]');if(choice&&!choice.disabled){advanceTime(choice.dataset.choice);return;}const graph=event.target.closest('[data-graph-year]');if(graph){renderGraph(Number(graph.dataset.graphYear));$('#announcement').textContent=`Model reveal: Year ${graph.dataset.graphYear}. ${$('#graph-explanation').innerText}`;return;}const transfer=event.target.closest('[data-transfer]');if(transfer){const q=transferQuestion();const answer=Number(transfer.dataset.transfer),feedback=$('#transfer-feedback');feedback.hidden=false;feedback.textContent=(answer===q.target?'That mechanism fits this scenario. ':'Compare the direction of output and prices. ')+q.explanation;document.querySelectorAll('[data-transfer]').forEach(button=>{button.disabled=true;button.setAttribute('aria-pressed',String(button===transfer));});feedback.focus();$('#announcement').textContent=feedback.textContent;return;}if(event.target.id==='motion'){motionPaused=!motionPaused;$('#world-shell').classList.toggle('paused',motionPaused);event.target.setAttribute('aria-pressed',String(motionPaused));event.target.textContent=motionPaused?'Resume city motion':'Pause city motion';return;}if(event.target.id==='restart'){reset();return;}if(event.target.id==='read-story'){$('#report-title').scrollIntoView({block:'start',behavior:reducedMotion.matches?'auto':'smooth'});$('#report-title').focus();return;}if(event.target.id==='model-toggle'){const panel=$('#model'),open=panel.hidden;panel.hidden=!open;event.target.setAttribute('aria-expanded',String(open));if(open)renderGraph(graphYear);}});
 render();
 </script>
 </body>
