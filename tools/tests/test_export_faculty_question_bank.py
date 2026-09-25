@@ -128,5 +128,46 @@ class ExportIntegrity(unittest.TestCase):
             export.verify_pdf(pdf, rows, records)
 
 
+    def test_shared_questions_are_retained_in_each_discipline(self):
+        records, _ = self.audit(library(question()))
+        groups = export.partition_disciplines(records, {"test": {"areas": ["general", "micro", "macro"]}})
+        for area, (label, _) in export.DISCIPLINES.items():
+            self.assertEqual(set(groups[area]), {"Q1"})
+            row = export.make_rows(groups[area], export.ROOT)[0]
+            self.assertEqual(row["discipline"], label)
+            self.assertEqual(row["question_text"], question()["q"])
+
+    def test_unmapped_discipline_is_an_error(self):
+        records, _ = self.audit(library(question()))
+        with self.assertRaisesRegex(export.ValidationError, "Q1: ambiguous/unmapped"):
+            export.partition_disciplines(records, {})
+
+    def test_derived_area_membership_does_not_include_entire_parent(self):
+        lib = library(question())
+        lib["concepts"]["test"]["questions"]["easy"].append(question(id="Q2"))
+        records, _ = self.audit(lib)
+        records["Q1"]["pools"].add("derived/shared_child/questions/easy")
+        groups = export.partition_disciplines(records, {
+            "test": {"areas": ["micro"]}, "shared_child": {"areas": ["general", "macro"]}})
+        self.assertEqual(set(groups["micro"]), {"Q1", "Q2"})
+        for area in ["general", "macro"]:
+            self.assertEqual(set(groups[area]), {"Q1"})
+            self.assertEqual(groups[area]["Q1"]["pools"], {"derived/shared_child/questions/easy"})
+
+    def test_image_resize_caps_resolution_and_preserves_original(self):
+        from PIL import Image
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "graph.png"
+            Image.new("RGB", (2400, 1200), "white").save(path)
+            before = path.read_bytes()
+            data, width, height, info = export.optimized_graph(path, 480, 260)
+            self.assertEqual(info["target_dpi"], 180)
+            self.assertEqual(info["palette_colors"], 256)
+            self.assertEqual(info["embedded_pixels"], [1200, 600])
+            self.assertEqual(width / height, 2)
+            self.assertTrue(data.startswith(b"\x89PNG\r\n\x1a\n"))
+            self.assertEqual(path.read_bytes(), before)
+
+
 if __name__ == "__main__":
     unittest.main()

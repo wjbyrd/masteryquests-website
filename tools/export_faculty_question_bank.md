@@ -15,10 +15,15 @@ characters missing from Arial. The runtime does not use a network service.
 
 Outputs are local only:
 
-- `faculty_exports/mastery_quests_composer_question_bank.pdf`
-- `faculty_exports/mastery_quests_composer_question_bank.csv`
+- `faculty_exports/general_economics_question_bank.pdf` and `.csv`
+- `faculty_exports/microeconomics_question_bank.pdf` and `.csv`
+- `faculty_exports/macroeconomics_question_bank.pdf` and `.csv`
 - `faculty_exports/validation_summary.json` (counts, warning IDs, source checksum,
   and question-to-PDF-page index for review)
+- `faculty_exports/validation_report.md` (per-discipline comparison)
+
+No combined PDF or CSV is generated. The previous consolidated files are removed
+only after all six replacement files pass validation.
 
 ## Exact scope
 
@@ -40,11 +45,32 @@ choice and array order do matter.
 
 Polished game banks, authoring snapshots, legacy folders, tests, examples, and
 historical files named in question provenance are not inputs. The `game` column
-is `Mastery Quests Composer`, representing this one consolidated library. The
+is `Mastery Quests Composer`, identifying the canonical content source. The
 original `sourceGame` is retained verbatim in `source_game`; many such values
 identify authoring batches rather than separate games. PDF ordering is by the
 canonical raw tag, natural objective order, difficulty, and ID. Unknown explicit
-difficulties sort after known difficulties. No question is reclassified.
+difficulties sort after known difficulties. Stored topics and difficulty are unchanged.
+
+## Discipline membership
+
+The authoritative mapping is `build/faculty-build-composer/course-area-model.js`.
+The exporter calls `create(library.registry.concepts)`, as `composer.js` does,
+and uses each concept's `areas` memberships, not its single display badge.
+General, Micro, and Macro memberships include shared foundational concepts.
+The macro supplement is included even though its normal composer card is hidden.
+
+Each stored, routed, or derived pool contributes only its actual question IDs to
+its owner's course areas. A derived child does not pull in its entire parent bank.
+Questions reused across areas appear in each relevant export, with IDs deduplicated
+within each discipline and pool lists scoped to that discipline. Canonical content
+and provenance remain unchanged. Conflicting canonical versions still block export.
+Unknown or unmapped memberships are reported as errors; wording is never used to
+guess a discipline.
+
+All three CSVs share the complete column schema, including `discipline`,
+`classification_source`, and `classification_concepts` for auditing. The report
+distinguishes the sum across exports from the globally distinct ID count, so
+documented reuse is visible.
 
 ## Answers and fidelity
 
@@ -62,12 +88,19 @@ and choose Text column types if exact type preservation is needed.
 
 The PDF retains the original question wording, options, feedback, and hints.
 Stored HTML payoff tables are rendered as tables. Graphs are loaded only from
-the composer data directory, embedded without cropping, and captioned. Missing
+the composer data directory, embedded without cropping, and captioned. Temporary
+in-memory copies are resized to 150 DPI at their rendered size; wide graphs
+(aspect ratio at least 1.6) use 180 DPI to retain detail in smaller labels.
+Images are never upscaled. Copies are composited on white and use an adaptive
+256-color PNG palette, reducing surplus antialiasing color variations without
+JPEG artifacts or reducing resolution further. Original image files are never modified. Embedded dimensions and
+target DPI are recorded in the validation summary. The practical size target is
+below 20 MB per PDF, preferably 5–15 MB, while preserving readable graphs. Missing
 graphs remain explicit warnings. If a literal image path is absent, a graph may
 be resolved through that question's own concept asset registration only when its
 filename and SHA-256 identify an unambiguous file. The original `image` string is
 preserved, and `image_resolution` / `resolved_image_file` document the fallback.
-Pedagogical metadata is displayed; long
+Pedagogical metadata and the canonical source file are displayed; long
 historical source paths and hashes are available in the CSV.
 
 The current Composer library is JSON containing fixed questions, including
@@ -86,7 +119,8 @@ and image existence before publication. It round-trips the CSV and uses PDFium
 (or pypdf when PDFium is unavailable)
 to extract **every** PDF question, checking IDs, order, complete stems, choices,
 correct answers, feedback, and hints against source data. It checks the source
-checksum again before publishing. Failed validation leaves existing exports
+checksums of the library, answer core, course-area model, and every original image
+again before publishing. Failed validation leaves existing exports
 untouched and reports that they are stale. Error details are written to
 `faculty_exports/last_export_error.txt`.
 
