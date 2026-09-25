@@ -1,0 +1,11 @@
+const fs=require('node:fs');let s=fs.readFileSync('tmp/the-long-run-eight-frame-check.cjs','utf8');
+s=s.replaceAll('pre-eight-frame','pre-anatomy-anchor').replaceAll('long-run-eight-frame-','long-run-anatomy-anchor-');
+const start=s.indexOf('const scrub='),end=s.indexOf('assert.equal(scrub',start);
+s=s.slice(0,start)+String.raw`const scrub=s=>s.replace(/const SPRITE_PLACEMENT=[\s\S]*?(?=const sprites=\{)/,'ACTOR_ART\n').replace(/function blit[\s\S]*?(?=  function pathLength)/,'ACTOR_PLACEMENT\n').replace(/    (?:const vehicles=objects.filter\(|[/][/] Sort actors by ground contact:)[\s\S]*?(?=    [/][/] Small produce)/,'ACTOR_DRAW_ORDER\n');`+'\n'+s.slice(end);
+s=s.replace('const a=api(old)',`const section=(source,start,end)=>source.slice(source.indexOf(start),source.indexOf(end));
+assert.equal(section(now,'function vehicleFrames(','const sprites='),section(old,'function vehicleFrames(','const sprites='));
+assert.equal(section(now,'function walkingPhase(','const PERSON_HEAD='),section(old,'function walkingPhase(','const PERSON_HEAD='));
+assert.ok(!now.includes('ctx.rect(0,196,WORLD_GRID.width,42)'));
+const a=api(old)`);
+s=s.replace("const h=sprites[car.spriteType].frames[0].length,y=clamp(car.y+SPRITE_PLACEMENT[car.spriteType].y,196,238-h);if(y<196||y+h>238)issues.add('Lane clipping');", "const y=vehicleDrawY(car.spriteType,car.path),contact=y+VEHICLE_WHEEL_CONTACT[car.spriteType];if(contact!==VEHICLE_ROAD_BASELINES[car.path]||contact-6<196||contact>=238)issues.add('Wheel contact off road');if(lane==='upperRoad'&&y>=196)issues.add('Roof trapped in road band');");
+fs.writeFileSync('tmp/the-long-run-anatomy-anchor-check.cjs',s);
