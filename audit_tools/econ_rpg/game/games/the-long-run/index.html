@@ -249,7 +249,12 @@ function renderPixelTown(w){
     r(x+3,y+7,24,20,'shade');r(x,y+13,29,10,'shade');r(x+6,y+2,19,20,'leaf');r(x+2,y+9,23,13,'leaf');r(x+10,y,10,9,'leaf');
     for(const [dx,dy] of [[7,6],[16,4],[3,14],[17,13],[10,20]]){r(x+dx,y+dy,7,3,'grass');r(x+dx+2,y+dy-1,3,2,'lightGrass');}};
   const awning=(x,y,width,base)=>{r(x+1,y+9,width,3,'wood');for(let dx=0;dx<width;dx+=10){r(x+dx+2,y,8,3,dx%20?base:'paper');r(x+dx,y+3,10,5,dx%20?base:'cream');r(x+dx+1,y+8,8,2,dx%20?base:'sun');}r(x+2,y,width-4,1,'paper');};
-  const bench=(x,y)=>{r(x,y,22,2,'wood');r(x,y+4,22,2,'sand');r(x,y+7,22,2,'wood');r(x+2,y+9,2,5,'ink');r(x+18,y+9,2,5,'ink');};
+  const bench=(x,y)=>{
+    for(const dx of [2,23]){r(x+dx,y,2,16,'ink');r(x+dx-1,y+15,4,1,'slate');}
+    for(const dy of [0,4]){r(x,y+dy,27,3,'wood');r(x+1,y+dy,25,1,'sand');}
+    r(x-1,y+8,29,3,'sand');r(x-1,y+11,29,2,'wood');r(x,y+8,27,1,'sun');
+    for(const dx of [0,25]){r(x+dx,y+6,2,5,'ink');r(x+dx-1,y+6,4,1,'steel');}
+  };
   // Quiet distant layers, with small windows and irregular foliage edges.
   r(0,0,640,360,'sky');
   for(const [x,y] of [[30,24],[183,18],[362,27],[555,13]]){r(x,y+6,36,5,'cloudShade');r(x+7,y+2,22,7,'cloud');r(x+14,y,9,4,'cloud');}
@@ -300,7 +305,7 @@ function renderPixelTown(w){
   // Works: sawtooth glazing, vent ribs, rolling loading door, grouped freight and pallet feet.
   for(const [x,y,hh] of [[447,46,61],[473,61,46]]){box(x,y,10,hh,'brickDark');r(x-2,y,14,4,'ink');r(x+2,y+4,3,hh-6,'brick');for(let sy=y+12;sy<y+hh;sy+=11)r(x+1,sy,8,1,'wood');}
   facade(TOWN_BUILDINGS.works,w.upgraded?'far':'steel','sea');
-  for(let x=419;x<529;x+=27){for(let row=0;row<21;row++)r(x+21-row,84+row,6+row,1,'slate');r(x+21,88,5,16,'teal');r(x+22,90,1,12,'sky');r(x+21,98,5,1,'steel');}
+  for(let x=419;x<527;x+=27){for(let row=0;row<21;row++)r(x+21-row,84+row,6+row,1,'slate');r(x+21,88,5,16,'teal');r(x+22,90,1,12,'sky');r(x+21,98,5,1,'steel');}
   r(528,98,82,7,'ink');r(531,99,76,3,'slate');r(531,99,76,1,'steel');
   for(const x of [431,456,481,506])window(x,137,15,20,!w.vacancy);
   for(const x of [434,493]){r(x,118,26,8,'sea');for(let yy=119;yy<125;yy+=2)r(x+2,yy,22,1,'steel');}
@@ -309,7 +314,7 @@ function renderPixelTown(w){
   r(583,171,39,3,'wood');r(585,174,4,2,'ochre');r(614,174,4,2,'ochre');
   for(let i=0;i<clamp(Math.round(w.active/3),1,7);i++)crate(583+(i%3)*12,160-Math.floor(i/3)*11,11,11);
   box(599,148,8,12,'slate');r(601,150,3,4,w.vacancy?'brick':'lightGrass');
-  if(w.upgraded){box(544,87,46,9,'teal');for(let x=547;x<586;x+=8){r(x,89,1,5,'sky');r(x+2,89,4,1,'sea');}r(592,112,7,2,'cream');r(595,109,2,8,'cream');}
+  if(w.upgraded){r(550,96,40,3,'steel');box(553,89,34,8,'teal');for(let x=556;x<582;x+=7){r(x,91,1,4,'sky');r(x+2,91,3,1,'sea');}r(592,112,7,2,'cream');r(595,109,2,8,'cream');}
   // Residence: individual roof tiles, dormer, shutters, paneled door and railed porch.
   box(107,256,10,24,'brickDark');r(105,255,14,3,'brick');r(109,258,3,15,'brick');
   facade(TOWN_BUILDINGS.home,'sun','ochre');roof(23,267,114,27,'brickDark','brick');
@@ -338,21 +343,27 @@ function renderPixelTown(w){
   for(const x of [426,513]){r(x,314,4,32,'steel');r(x,315,1,29,'paper');}
   for(const x of [438,484]){r(x-4,346,24,3,'steel');box(x,323,13,23,'brick');box(x+2,326,9,9,'deep');r(x+3,327,7,4,'cream');r(x+3,333,7,1,'steel');r(x+3,338,3,2,'paper');r(x+8,338,2,2,'gold');r(x+13,328,6,2,'ink');r(x+18,330,2,12,'ink');r(x+15,341,4,2,'ink');r(x+14,338,2,5,'wood');}
   r(429,259,25,1,'paper');r(429,259,1,9,'paper');
-  // Site: braced frame, masonry courses, scaffold planks and a separate worker lane.
-  const frame=w.construction==='paused'?'steel':'sand';r(564,291,66,52,'slate');r(567,294,60,45,'paving');
-  for(const x of [564,595,626]){r(x,290,3,52,frame);r(x,290,1,52,'cream');}
-  for(const y of [292,315,340]){r(564,y,66,3,frame);r(564,y,66,1,'cream');}
-  for(const [x,ww] of [[568,25],[599,25]]){r(x,320,ww,19,w.construction==='paused'?'steel':'brick');for(let yy=324;yy<338;yy+=5){r(x,yy,ww,1,w.construction==='paused'?'sea':'brickDark');for(let xx=x+((yy%2)*4)+5;xx<x+ww;xx+=9)r(xx,yy-4,1,4,'ochre');}}
-  if(w.construction==='active'){r(568,301,25,13,'brick');r(568,307,25,1,'brickDark');r(580,301,1,13,'ochre');}
-  for(let i=0;i<16;i++){r(568+i,296+i,2,1,'wood');r(623-i,296+i,2,1,'wood');}
-  for(const x of [560,633])r(x,293,2,52,'steel');for(let y=300;y<345;y+=10)r(559,y,77,2,'wood');
-  r(546,267,4,75,'gold');r(543,264,93,4,'gold');r(543,268,93,1,'ochre');
-  for(let y=274;y<338;y+=8){r(544,y,8,1,'ochre');r(546,y+1,2,5,'ochre');}
-  for(let i=0;i<19;i++){r(548+i*2,263-i,2,1,'gold');r(586+i*2,246+i,2,1,'gold');}
+  // Open upper bays and an unfinished masonry ground floor, with scaffold only at the edges.
+  const frame=w.construction==='paused'?'steel':'sand';
+  r(567,299,60,42,'sea');r(569,301,56,38,'paving');
+  for(const x of [565,595,627]){r(x,293,3,50,frame);r(x,293,1,50,'cream');r(x,290,1,3,'ink');}
+  for(const y of [315,341]){r(564,y,67,3,'steel');r(564,y,67,1,'paper');}
+  for(const [x,ww] of [[568,27],[599,27]]){r(x,319,ww,22,w.construction==='paused'?'steel':'brick');for(let yy=323;yy<340;yy+=5){r(x,yy,ww,1,w.construction==='paused'?'sea':'brickDark');for(let xx=x+((yy%2)*4)+5;xx<x+ww;xx+=9)r(xx,yy-4,1,4,'ochre');}}
+  r(576,324,11,12,'deep');r(607,322,12,19,'deep');r(575,322,13,2,'sand');r(606,320,14,2,'sand');
+  if(w.construction==='active'){r(568,307,19,8,'brick');r(568,303,10,4,'brick');r(568,311,19,1,'brickDark');r(577,307,1,7,'ochre');}
+  for(const x of [560,634]){r(x,301,1,44,'ink');r(x+2,301,1,44,'steel');for(let yy=307;yy<344;yy+=9)r(x,yy,3,1,'steel');}
+  for(const y of [313,337]){r(559,y,77,2,'wood');r(559,y,77,1,'sand');}
+  // Separate lattice tower, counterweight, operator cab and horizontal trussed jib.
+  for(const x of [545,552])r(x,261,2,80,'gold');
+  for(let y=272;y<336;y+=9){r(545,y,9,1,'ochre');for(let i=0;i<7;i++)r(546+i,y+i+1,1,1,'ochre');}
+  r(533,263,104,2,'gold');r(533,270,104,2,'ochre');
+  for(let x=535;x<631;x+=8)for(let i=0;i<6;i++)r(x+i,265+i,1,1,'gold');
+  r(533,272,10,6,'slate');r(534,272,8,1,'steel');box(554,273,10,9,'gold');r(556,275,6,4,'sky');
+  r(549,249,2,14,'gold');for(let i=0;i<13;i++){r(550+i*3,250+i,3,1,'steel');r(548-i,251+i,1,1,'steel');}
   r(540,340,18,5,'slate');crate(531,341);crate(548,344);for(const y of [344,348]){r(580,y,45,3,'sand');r(583,y,39,1,'sun');}
   // Restrained furniture: its ground contacts sit outside the actor walking lanes.
-  for(const [x,y] of [[0,150],[125,144],[261,141],[395,146],[614,148],[0,313],[251,303],[396,319]])tree(x,y);
-  for(const [x,y] of [[3,174],[265,174],[415,174],[635,174]]){r(x,y-20,2,22,'ink');r(x-2,y-24,6,2,'ink');box(x-2,y-22,6,6,'cream');r(x-3,y+2,8,2,'slate');}
+  for(const [x,y] of [[0,137],[125,133],[261,130],[395,132],[611,136],[0,272],[143,271],[247,267]])tree(x,y);
+  for(const [x,y] of [[97,183],[225,183],[374,183],[503,183]]){r(x,y-20,2,22,'ink');r(x-2,y-24,6,2,'ink');box(x-2,y-22,6,6,'cream');r(x-3,y+2,8,2,'slate');}
   for(const [x,y,ww] of [[26,250,57],[148,257,26],[228,257,24],[296,249,58]])shrub(x,y,ww);
   box(127,167,9,12,'slate');r(126,166,11,2,'steel');for(const x of [129,132,135])r(x,169,1,8,'sea');
   bench(609,244);
@@ -377,7 +388,7 @@ const PIXEL_PALETTE={O:TOWN_PALETTE.ink,B:TOWN_PALETTE.sand,D:TOWN_PALETTE.ochre
 
 // Redrawn 20 × 30 people: 6.25% shorter and 9% narrower, with unchanged ground contact.
 const SPRITE_PLACEMENT={compact:{x:0,y:0},sedan:{x:0,y:0},truck:{x:0,y:0},
-  pedestrian:{x:-9,y:-28},shopper:{x:-9,y:-28},resident:{x:-9,y:-28},factoryWorker:{x:-9,y:-28},worker:{x:-9,y:-28}};
+  pedestrian:{x:-9,y:-28},shopper:{x:-9,y:-28},resident:{x:-9,y:-28},seatedResident:{x:-9,y:-28},factoryWorker:{x:-9,y:-28},worker:{x:-9,y:-28}};
 // Tires share a road-contact baseline; roofs project above it without road-band clipping.
 const VEHICLE_ROAD_BASELINES={upperRoad:212,lowerRoad:233};
 const VEHICLE_WHEEL_CONTACT={compact:29,sedan:29,truck:30};
@@ -425,11 +436,12 @@ function humanFrames(role,travelY=0){
     const feet=idle?{left:{x:8,y:29},right:{x:12,y:29},leftPlanted:true}:walkingFeet(phase,travelY);
     for(const [side,hip,tone] of [['left',8,'T'],['right',11,'P']]){
       const foot=feet[side],planted=idle||(side==='left'?feet.leftPlanted:!feet.leftPlanted);
-      const bend=(hip+foot.x)/2+(planted?(down?.7:0):2.8);
+      const swing=Math.sin((phase%8)/7*Math.PI);
+      const bend=(hip+foot.x)/2+(planted?(down?.5:0):1.2+1.4*swing);
       // Scan-convert a tapered, curved trouser silhouette. There is no drawn knee joint.
       for(let y=18;y<foot.y;y++){
         const t=(y-18)/Math.max(1,foot.y-19),center=(1-t)*(1-t)*(hip+1)+2*(1-t)*t*(bend+1)+t*t*(foot.x+1);
-        const width=t<.3?4-t*2:t<.55?3.4-(t-.3)*3.6:t<.76?2.5+(t-.55)*2:2.92-(t-.76)*4;
+        const width=3.8-1.8*t;
         const left=Math.round(center-width/2),right=Math.max(left+1,Math.round(center+width/2)-1);
         r(left,y,right-left+1,1,tone);
       }
@@ -454,9 +466,20 @@ function humanFrames(role,travelY=0){
     return pixels.map(row=>row.join(''));
   });
 }
-// Taller passenger cabins and deeper bodies; passenger length grows only two pixels.
+// A lowered pelvis rests on the bench seat; horizontal thighs turn into hanging calves.
+function seatedResidentFrame(){
+  const pixels=Array.from({length:30},()=>Array(20).fill(' '));
+  const r=(x,y,w,h,c)=>{for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)pixels[yy][xx]=c;};
+  PERSON_HEAD.forEach((row,y)=>[...row].forEach((c,x)=>{if(c!==' ')pixels[y+7][x]=c;}));
+  r(10,13,2,1,'S');r(8,14,6,1,'U');r(7,15,8,2,'U');r(8,15,6,6,'C');r(8,16,1,5,'U');r(10,15,2,1,'A');
+  r(7,17,2,4,'C');r(8,20,5,2,'S');r(14,17,2,3,'C');r(13,20,4,1,'S');
+  r(9,22,5,3,'T');r(11,24,2,4,'T');r(11,28,4,1,'O');
+  r(9,21,9,3,'P');r(16,23,2,6,'P');r(16,29,4,1,'O');r(10,21,6,1,'K');
+  return pixels.map(row=>row.join(''));
+}
+// Taller passenger cabins and deeper bodies, with a longer-roof wagon as a visual variant.
 function vehicleFrames(type){
-  const width=type==='compact'?48:type==='sedan'?54:58,height=type==='truck'?31:30;
+  const width=type==='compact'?48:type==='sedan'?54:type==='wagon'?56:58,height=type==='truck'?31:30;
   const grid=Array.from({length:height},()=>Array(width).fill(' '));
   const r=(x,y,w,h,c)=>{for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)grid[yy][xx]=c;};
   if(type==='truck'){
@@ -466,6 +489,13 @@ function vehicleFrames(type){
     r(36,4,11,1,'L');r(36,5,12,13,'B');r(37,5,9,11,'W');r(38,5,7,1,'H');r(38,6,1,5,'H');r(39,8,1,3,'H');r(37,15,9,1,'G');r(47,9,2,9,'O');r(47,12,4,1,'K');
     r(36,18,18,6,'B');r(36,18,3,1,'K');r(36,21,9,1,'L');r(48,18,1,6,'M');r(51,16,3,1,'L');r(54,18,2,3,'H');r(51,21,3,2,'O');
     r(1,23,55,3,'M');r(2,23,30,1,'K');r(1,21,2,2,'R');r(55,23,3,2,'K');r(3,26,51,1,'O');
+  }else if(type==='wagon'){
+    r(5,1,32,1,'O');r(4,2,35,2,'O');r(3,4,37,13,'O');r(4,4,35,13,'B');r(5,3,32,1,'L');
+    for(let y=5;y<17;y++){r(39,y,1+Math.floor((y-5)/4),1,'O');r(38,y,1+Math.floor((y-5)/4),1,'B');}
+    for(const [x,w] of [[6,8],[17,8],[28,9]]){r(x,5,w,10,'W');r(x,5,w-1,1,'H');r(x+1,6,1,4,'H');r(x,14,w,1,'G');}
+    r(2,16,47,1,'O');r(1,17,52,10,'O');r(2,17,50,8,'B');r(2,17,48,1,'L');r(2,25,50,2,'M');r(3,27,48,1,'O');
+    for(const x of [16,27]){r(x,16,1,9,'M');r(x+2,19,3,1,'K');}
+    r(2,16,2,7,'R');r(50,19,3,3,'H');r(0,23,2,3,'K');r(53,23,3,3,'K');r(7,21,7,1,'L');r(38,12,4,1,'K');
   }else{
     const sedan=type==='sedan',roof=sedan?13:10,roofWidth=sedan?21:20;
     r(roof,0,roofWidth,1,'O');r(roof-1,1,roofWidth+2,2,'O');r(roof,1,roofWidth,1,'L');
@@ -510,16 +540,19 @@ function commercialFrames(style){
   return [0,1].map(phase=>{const copy=grid.map(row=>[...row]);const tire=['  TTTTT  ',' TTKKKTT ','TTKKHKKTT',phase?'TKKTOKKKT':'TKKKOTKKT','TTKKKKKTT','TTKKTKKTT',' TTKKKTT ','  TTTTT  '];for(const cx of wheels)tire.forEach((row,y)=>[...row].forEach((c,x)=>{if(c!==' ')copy[23+y][cx-4+x]=c;}));return copy.map(row=>row.join(''));});
 }
 const commercialSprites=Object.fromEntries(COMMERCIAL_STYLES.map(style=>[style,{frames:commercialFrames(style)}]));
+const wagonSprite={frames:vehicleFrames('wagon')};
+function passengerVariant(type,index){return type==='sedan'&&index%3===0?'wagon':type;}
 const sprites={
   compact:{frames:vehicleFrames('compact')},sedan:{frames:vehicleFrames('sedan')},truck:{frames:vehicleFrames('truck')},
-  pedestrian:{frames:humanFrames('pedestrian')},shopper:{frames:humanFrames('shopper')},resident:{frames:humanFrames('resident')},factoryWorker:{frames:humanFrames('factoryWorker')},worker:{frames:humanFrames('worker')},
-  smoke:{frames:[['     EE     ','   EEEEE    ','  EEHHHEE   ',' EEEEEEEEE  ','  EEEEEEE   ','    EEEE    '],['    EE EE     ','  EEEEEEEEE   ',' EEHHHEEEEE   ',' EEEEEEEEEE   ','   EEEEEEEE   ','     EEEE     '],['  EE     EE    ',' EEEE  EEEEE   ','  EEEEEEEEEEE  ','   EEEEEEEEE   ','     EEEEEE    ','       EE      ']]},
+  pedestrian:{frames:humanFrames('pedestrian')},shopper:{frames:humanFrames('shopper')},resident:{frames:humanFrames('resident')},seatedResident:{frames:[seatedResidentFrame()]},factoryWorker:{frames:humanFrames('factoryWorker')},worker:{frames:humanFrames('worker')},
+  smoke:{frames:[['     EE     ','   EEEEE    ','  EEHHHEE   ',' EEEHHHEEE  ',' EEEEEEEEE  ','  KEEEEEK   ','    KKKK    '],['    EE EE     ','  EEEEEEEEE   ',' EEHHHEEEEE   ',' EEHHHEEEEE   ','  EEEEEEEEE   ','   KEEEEEK    ','     KKKK     '],['  EE     EE    ',' EEEE  EEEEE   ','  EEHHHEEEEEE  ','   EEEEEEEEE   ','   KEEEEEEEK   ','     KEEEK     ','       KK      ']]},
   hook:{frames:[['  O  ','  O  ','  O  ','  OO ','   OO','   OO',' OOO ',' OOO ']]},
-  flag:{frames:[['VVVVVVVVVV    ','VEEEEEEEVVV   ','VVVVVVVVVVVV  ','VEEEEEEEVVVVV ','VVVVVVVVVVVVV ','VVVVVVVVVVVV  ','VVVVVVVVVVV   ','VVVVVVVVVV    '],['VVVVVVVVV     ','VEEEEEVVVV    ','VVVVVVVVVVV   ','VEEEEEEEVVVV  ','VVVVVVVVVVVVV ','VVVVVVVVVVVVVV','VVVVVVVVVVVVV ','VVVVVVVVVVVV  ']]}
+  flag:{frames:[['RRRRRRRRRRRR    ','REEEEEEEEEERR   ','REEEEEEEEEERRR  ','RRRRRRRRRRRRRRR ','RRRRRRRRRRRRRRRR','REEEEEEEEEEERRR ','REEEEEEEEEERRR  ','RRRRRRRRRRRRR   ','RRRRRRRRRRRR    '],['RRRRRRRRRRR     ','REEEEEEEERRR    ','REEEEEEEEERRR   ','RRRRRRRRRRRRRR  ','RRRRRRRRRRRRRRR ','REEEEEEEEEEERRRR','REEEEEEEEEEERRR ','RRRRRRRRRRRRRR  ','RRRRRRRRRRRRR   ']]}
 };
 const PIXEL_PATHS={
   upperRoad:[[-64,197],[640,197]],lowerRoad:[[640,218],[-64,218]],
   sidewalk:[[22,188],[390,188]],sidewalkReturn:[[390,191],[22,191]],retail:[[145,188],[246,188],[246,172]],
+  bank:[[378,191],[340,191],[340,172]],bankExit:[[340,172],[340,191],[378,191]],
   factory:[[432,187],[609,187]],factoryReturn:[[609,190],[432,190]],factoryEntrance:[[432,187],[552,187],[552,172]],
   construction:[[564,351],[620,351],[564,351]]
 };
@@ -552,14 +585,14 @@ const pixelWorld=(()=>{
     const style=type==='truck'?commercialVariant(variant,visual.deliveryEvery):'';
     const key=`${type}/${frame}/${variant}/${visual.upgraded}/${travelY}/${style}`;
     if(cache.has(key))return cache.get(key);
-    const frames=type==='truck'?commercialSprites[style].frames:travelY?humanFrames(type,travelY):sprites[type].frames;
+    const frames=type==='truck'?commercialSprites[style].frames:passengerVariant(type,variant)==='wagon'?wagonSprite.frames:travelY?humanFrames(type,travelY):sprites[type].frames;
     const matrix=frames[frame%frames.length];
     const sheet=document.createElement('canvas');sheet.width=Math.max(...matrix.map(row=>row.length));sheet.height=matrix.length;
     const brush=sheet.getContext('2d'),palette={...PIXEL_PALETTE,B:vehicleColors[variant%vehicleColors.length],C:shirtColors[variant%shirtColors.length],A:shirtHighlights[variant%shirtHighlights.length],S:skinColors[variant%2],N:skinShadows[variant%2],Z:skinHighlights[variant%2],U:shirtShadows[variant%shirtShadows.length],J:'#67869b'};
     if(['compact','sedan','truck'].includes(type)){palette.L=vehicleHighlights[variant%vehicleHighlights.length];palette.M=vehicleShadows[variant%vehicleShadows.length];}
     if(type==='worker'){palette.Y=TOWN_PALETTE.gold;palette.C=TOWN_PALETTE.blue;palette.A=TOWN_PALETTE.steel;palette.U=shirtShadows[0];}
     if(type==='factoryWorker'){palette.C=TOWN_PALETTE.teal;palette.A=TOWN_PALETTE.steel;palette.U=shirtShadows[0];}
-    if(type==='smoke')palette.E=visual.upgraded?TOWN_PALETTE.paper:TOWN_PALETTE.steel;
+    if(type==='smoke'){palette.E=visual.upgraded?'#cbd7df':'#b4c4ce';palette.H=TOWN_PALETTE.paper;palette.K='#8198aa';}
     matrix.forEach((row,y)=>[...row].forEach((color,x)=>{if(color!==' '){brush.fillStyle=palette[color];brush.fillRect(x,y,1,1);}}));
     cache.set(key,sheet);return sheet;
   }
@@ -579,7 +612,7 @@ const pixelWorld=(()=>{
   }
   function fixedPerson(x,y,index,idle=true,type='resident'){objects.push({x,y,direction:1,speed:0,frame:SPRITE_WALK.idleFrame,spriteType:type,active:true,path:null,index,distance:0,idle});}
   const isVehicle=object=>['truck','sedan','compact'].includes(object.spriteType);
-  const motionKey=object=>(isVehicle(object)?'vehicle':'person')+'/'+object.path+'/'+object.index;
+  const motionKey=object=>(isVehicle(object)?'vehicle':'person')+'/'+(object.path==='bankExit'?'bank':object.path)+'/'+object.index;
   function entryClear(object){
     const [x,y]=PIXEL_PATHS[object.path][0];
     return !objects.some(other=>other!==object&&other.active&&other.path&&(isVehicle(object)?isVehicle(other)&&other.path===object.path&&other.distance<PIXEL_POLISH.vehicleGap:!isVehicle(other)&&Math.abs(other.y-y)<5&&Math.abs(other.x-x)<PIXEL_POLISH.personGap));
@@ -592,18 +625,18 @@ const pixelWorld=(()=>{
       const path=i%2?'lowerRoad':'upperRoad',laneIndex=Math.floor(i/2),laneCount=Math.ceil((visual.trafficLevel-(i%2))/2);
       const object={x:0,y:0,direction:i%2?-1:1,speed:PIXEL_TUNING.vehicleSpeed*(i%2?.92:1),frame:0,spriteType:i%visual.deliveryEvery===0?'truck':i%2?'sedan':'compact',active:true,path,index:i,distance:(laneIndex+.35)*pathLength(PIXEL_PATHS[path])/laneCount,wait:0};locate(object);objects.push(object);
     }
-    fixedPerson(147,329,1,visual.householdIdle);fixedPerson(165,329,2);
+    fixedPerson(171,328,1,visual.householdIdle);fixedPerson(216,314,2);
     for(let i=0;i<visual.cafe;i++)fixedPerson(29+i*33,169,i,true,'pedestrian');
-    for(let i=0;i<visual.idle;i++)fixedPerson(218+i*18,343,i+3);
+    for(let i=0;i<visual.idle;i++)fixedPerson(i===0?250:198+(i-1)*21,i===0?341:350,i+3,true,i===0?'seatedResident':'resident');
     if(visual.constructionActivity!=='paused')addPerson('construction',3,4,'worker');
     const fixed=objects.filter(object=>!['truck','sedan','compact'].includes(object.spriteType)).length;
     const workerCount=Math.min(visual.workers,PIXEL_TUNING.maxPeople-fixed-visual.shoppers);
     for(let i=0;i<workerCount;i++){const path=i===0?'factoryEntrance':i%2?'factoryReturn':'factory',x=434+(i+.5)*168/workerCount;addPerson(path,i+5,path==='factoryReturn'?609-x:x-432,'factoryWorker');}
     const room=PIXEL_TUNING.maxPeople-objects.filter(object=>!['truck','sedan','compact'].includes(object.spriteType)).length;
     const shopperCount=Math.min(visual.shoppers,room);
-    for(let i=0;i<shopperCount;i++){const path=i===0?'retail':i%2?'sidewalkReturn':'sidewalk',x=22+(i-.5)*368/Math.max(shopperCount-1,1);addPerson(path,i+1,i===0?92:path==='sidewalkReturn'?390-x:x-22,i%2?'pedestrian':'shopper');}
+    for(let i=0;i<shopperCount;i++){const path=i===0?'retail':i===1?'bank':i%2?'sidewalkReturn':'sidewalk',x=22+(i-.5)*368/Math.max(shopperCount-1,1);addPerson(path,i+1,i===0?92:i===1?27:path==='sidewalkReturn'?390-x:x-22,i%2?'pedestrian':'shopper');}
     // A year change updates density without teleporting the actors that remain.
-    for(const object of objects){const old=previous.get(motionKey(object));if(!object.path||!old)continue;for(const key of ['distance','wait','active','frame'])object[key]=old[key];locate(object);}
+    for(const object of objects){const old=previous.get(motionKey(object));if(!object.path||!old)continue;for(const key of ['path','direction','distance','wait','active','frame'])object[key]=old[key];locate(object);}
     if(keepPositions)for(const object of objects){
       if(!object.path||previous.has(motionKey(object)))continue;
       const length=pathLength(PIXEL_PATHS[object.path]),peers=objects.filter(o=>o!==object&&o.active&&o.path&&isVehicle(o)===isVehicle(object));
@@ -625,7 +658,7 @@ const pixelWorld=(()=>{
       if(object.distance>pathLength(PIXEL_PATHS[object.path])){
         const vehicle=['truck','sedan','compact'].includes(object.spriteType);
         if(object.path==='construction'){object.distance=0;}
-        else{object.active=false;object.wait=vehicle?.2:1.3+(object.index%3)*.5;}
+        else{object.active=false;object.wait=vehicle?.2:1.3+(object.index%3)*.5;if(object.path==='bank'||object.path==='bankExit')object.path=object.path==='bank'?'bankExit':'bank';}
       }
       locate(object);
       if(isVehicle(object))object.frame=Math.floor(time*PIXEL_POLISH.wheelFrameRate+object.index)%2;
@@ -642,14 +675,19 @@ const pixelWorld=(()=>{
       rect(gx,y+11,1,3,p.ink);rect(gx+(gear?2:-2),y+11,1,3,p.paper);rect(gx-1,y+(gear?10:14),3,1,p.paper);
     }
     if(visual.upgraded){rect(x+25,y+3,5,1,gear?p.cream:p.leaf);rect(x+5,y+19,24,1,p.gold);}
-    const period=visual.factoryActivity==='busy'?2.8:visual.factoryActivity==='slow'?8:4.8,puffAge=time%period;
-    if(puffAge<1.5){const frame=Math.min(2,Math.floor(puffAge*2));blit('smoke',PIXEL_ANCHORS.stack.x+frame,PIXEL_ANCHORS.stack.y-6-Math.floor(puffAge*8),frame);}
+    const period=visual.factoryActivity==='busy'?1.35:visual.factoryActivity==='slow'?5.5:2.4;
+    for(let i=0;i<2;i++){
+      const age=(time+i*period)%(period*2);
+      if(age<2.8){const frame=Math.min(2,Math.floor(age));blit('smoke',PIXEL_ANCHORS.stack.x-2+Math.floor(age*3),PIXEL_ANCHORS.stack.y-6-Math.floor(age*8),frame);}
+    }
+    if(visual.factoryActivity!=='slow'){const age=(time+1.1)%(period*1.8);if(age<2.2)blit('smoke',PIXEL_ANCHORS.stack.x+24+Math.floor(age*3),PIXEL_ANCHORS.stack.y+9-Math.floor(age*8),Math.min(2,Math.floor(age)));}
     if(visual.factoryActivity==='busy'&&Math.floor(time*2)%6===0)rect(602,153,2,2,p.cream);
   }
   function drawConstruction(){
     const p=TOWN_PALETTE,active=visual.constructionActivity==='active',position=active?Math.floor(time/1.6)%2:0;
-    const hookX=PIXEL_ANCHORS.hook.x+position*3,hookY=PIXEL_ANCHORS.hook.y;
-    rect(hookX,hookY,1,25,p.ink);blit('hook',hookX-2,hookY+24);
+    const hookX=PIXEL_ANCHORS.hook.x+position*3,hookY=PIXEL_ANCHORS.hook.y+3;
+    rect(hookX-2,hookY-3,5,3,p.slate);rect(hookX,hookY,1,16,p.ink);blit('hook',hookX-2,hookY+15);
+    if(active){rect(hookX-9,hookY+23,21,3,p.steel);rect(hookX-9,hookY+23,21,1,p.paper);}
     if(active){rect(533,342,9,4,p.ochre);rect(534,337,8,5,p.sand);if(position){rect(536,333,6,4,p.sun);rect(537,331,4,2,p.cream);}}
   }
   function priceCorners(x,y,width,height){const c=TOWN_PALETTE.gold;rect(x,y,3,1,c);rect(x,y,1,3,c);rect(x+width-3,y,3,1,c);rect(x+width-1,y,1,3,c);rect(x,y+height-1,3,1,c);rect(x,y+height-3,1,3,c);rect(x+width-3,y+height-1,3,1,c);rect(x+width-1,y+height-3,1,3,c);}
@@ -658,6 +696,7 @@ const pixelWorld=(()=>{
     drawFactory();drawConstruction();blit('flag',PIXEL_ANCHORS.flag.x,PIXEL_ANCHORS.flag.y,Math.floor(time/1.2)%2);
     // Doors respond only to the existing open/for-lease state and shopper arrivals.
     if(visual.retailActivity==='open'&&objects.some(object=>object.path==='retail'&&object.active&&object.y<181)){rect(240,147,16,28,TOWN_PALETTE.deep);rect(240,147,2,28,TOWN_PALETTE.steel);}
+    if(objects.some(object=>(object.path==='bank'||object.path==='bankExit')&&object.active&&object.y<181)){rect(340,144,9,29,TOWN_PALETTE.deep);rect(348,144,1,29,TOWN_PALETTE.steel);}
     // Sort actors by ground contact: sidewalk people behind top-lane traffic,
     // top-lane traffic behind lower-lane traffic, and foreground people in front.
     const groundY=object=>isVehicle(object)?VEHICLE_ROAD_BASELINES[object.path]:object.y+1;
