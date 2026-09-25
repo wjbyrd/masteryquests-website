@@ -212,7 +212,7 @@ const TOWN_PALETTE={
   coral:'#e37a56',blue:'#3d96b8',violet:'#9e7dbb',jade:'#319a87',amber:'#f1c253',
   skyline:'#91adb2',skylineShade:'#819da5',skylineWindow:'#c1d3d0'
 };
-const PIXEL_POLISH={walkCyclePixels:16,wheelFrameRate:3,personGap:16,vehicleGap:84};
+const PIXEL_POLISH={walkStridePixels:8,wheelFrameRate:3,personGap:16,vehicleGap:68};
 const TOWN_BUILDINGS={
   cafe:{x:19,y:105,w:104,h:49},market:{x:145,y:77,w:117,h:99},
   bank:{x:282,y:116,w:112,h:59},works:{x:420,y:105,w:188,h:71},
@@ -372,118 +372,135 @@ function renderWorld(){
    Tuning: PIXEL_TUNING controls cadence, speeds and caps. getVisualEconomyState
    maps the existing worldState values to sprite density. Both canvases use the
    same 640 × 360 grid; PIXEL_PATHS and PIXEL_ANCHORS locate all activity. */
-const PIXEL_TUNING={fps:30,vehicleSpeed:23,walkSpeed:15,maxVehicles:10,maxPeople:18,priceFlashSeconds:.8};
+const PIXEL_TUNING={fps:20,vehicleSpeed:23,walkSpeed:4,maxVehicles:10,maxPeople:18,priceFlashSeconds:.8};
 const PIXEL_PALETTE={O:TOWN_PALETTE.ink,B:TOWN_PALETTE.sand,D:TOWN_PALETTE.ochre,L:TOWN_PALETTE.sun,W:TOWN_PALETTE.sky,G:TOWN_PALETTE.teal,H:TOWN_PALETTE.cream,R:TOWN_PALETTE.brick,T:TOWN_PALETTE.deep,K:TOWN_PALETTE.steel,S:TOWN_PALETTE.skin,C:TOWN_PALETTE.sea,A:TOWN_PALETTE.paper,P:TOWN_PALETTE.slate,F:TOWN_PALETTE.wood,Y:TOWN_PALETTE.gold,V:TOWN_PALETTE.far,E:TOWN_PALETTE.paper,Q:TOWN_PALETTE.ochre,N:TOWN_PALETTE.ochre,Z:TOWN_PALETTE.skin,J:TOWN_PALETTE.steel,U:TOWN_PALETTE.deep,M:TOWN_PALETTE.ochre};
 
-// Redrawn native 22 × 32 people; bottom-row soles retain the previous path + 1 ground line.
-const SPRITE_PLACEMENT={compact:{x:0,y:-2},sedan:{x:0,y:-2},truck:{x:0,y:-4},
-  pedestrian:{x:-10,y:-30},shopper:{x:-10,y:-30},resident:{x:-10,y:-30},factoryWorker:{x:-10,y:-30},worker:{x:-10,y:-30}};
-// Eight authored poses: contact, down, passing, up; then the opposite leg.
-// Odd-pixel corrections between poses keep the supporting foot fixed to the ground.
-const SPRITE_WALK={sequence:[0,1,2,3,4,5,6,7],pixelFrames:[0,9,1,10,2,11,3,12,4,13,5,14,6,15,7,16],phases:[0,2,4,6,8,10,12,14,null,1,3,5,7,9,11,13,15],idleFrame:8};
+// Native 18 × 27 people: one extra row of articulation, with the same grounded foot line.
+const SPRITE_PLACEMENT={compact:{x:0,y:0},sedan:{x:0,y:0},truck:{x:0,y:0},
+  pedestrian:{x:-7,y:-25},shopper:{x:-7,y:-25},resident:{x:-7,y:-25},factoryWorker:{x:-7,y:-25},worker:{x:-7,y:-25}};
+// Four main poses, with a one-pixel stance correction between poses.
+// Each eight-pixel stride covers two footfalls; idle remains frame 4.
+const SPRITE_WALK={sequence:[0,1,2,3],pixelFrames:[0,5,1,6,2,7,3,8],phases:[0,2,4,6,null,1,3,5,7],idleFrame:4};
 function walkingPhase(object){
+  // Use the exact rounded coordinate drawn by blit, including leftward/doorway travel.
+  // Each pixel of body travel is canceled by one pixel of planted-foot travel in the sprite.
   const progress=object.travelY?Math.round(object.y)*object.travelY:Math.round(object.x)*object.direction;
-  return ((progress+object.index*4)%PIXEL_POLISH.walkCyclePixels+PIXEL_POLISH.walkCyclePixels)%PIXEL_POLISH.walkCyclePixels;
+  return ((progress+object.index*2)%PIXEL_POLISH.walkStridePixels+PIXEL_POLISH.walkStridePixels)%PIXEL_POLISH.walkStridePixels;
 }
 function walkingFeet(phase,travelY=0){
-  const step=phase%8,leftPlanted=phase<8,lift=[0,2,3,4,4,3,2,1][step];
-  const planted=travelY?{x:leftPlanted?8:13,y:travelY>0?31-step:24+step}:{x:14-step,y:31};
-  const swinging=travelY?{x:leftPlanted?13:8,y:(travelY>0?24+step:31-step)-lift}:{x:6+step,y:31-lift};
+  const step=phase%4,leftPlanted=phase<4,lift=[0,3,2,1][step];
+  const planted=travelY?{x:leftPlanted?8:11,y:travelY>0?26-step:23+step}:{x:10-step,y:26};
+  const swinging=travelY?{x:leftPlanted?11:8,y:(travelY>0?23+step:26-step)-lift}:{x:6+step,y:26-lift};
   return {left:leftPlanted?planted:swinging,right:leftPlanted?swinging:planted,planted,leftPlanted};
 }
-const PERSON_HEAD=[
- '         FFFFF','        FQQFFFF','       FFQQQFFFO','       FQNSSSSOO','       FNSZSSOSSS',
- '        NSSZSSO','         NSSSS','         UNNS','        UCNSCU'
+const PERSON_HEAD=['       FFFF','      FQQFFF','     FQQQFFFO','     FNSSSSO','     FNSZSOSS','      NSSSN','       NS','      UCNSU'];
+// Contact, passing, opposite contact, passing, relaxed standing. The far arm is shaded.
+const PERSON_TORSOS=[
+ ['     UCCAACU','    UCCCAAACU','    UCUCCCCACU','    SU UCCCCACS','    S  UCCCCUS','       UCCCU','       UCCCU','      UCCCCU','      TPPJPP'],
+ ['      UCCAACU','     UCCCAAACU','     UCUCCCCAS','     SUCCCCCS','     S UCCCUS','       UCCCU','       UCCCU','      UCCCCU','      TPPJPP'],
+ ['     UCCAACU','     UCCCAAACU','    UCCACCU US','   SCCACCU  S','   SSUCCCCU','     UCCCU','      UCCCU','      UCCCCU','      TPPJPP'],
+ ['      UCCAACU','     UCCCAAACU','     UCCACCU','     SUCCCACU','     S UCCCACS','       UCCCU S','       UCCCU','      UCCCCU','      TPPJPP'],
+ ['     UCCAACU','    UCCCAAACU','    UCUCCCCACU','    SUCCCCCU S','    S UCCCU  S','      UCCCU S','      UCCCU','      UCCCCU','      TPPJPP']
 ];
-const WALK_ARMS=[
- {far:[7,14,6,18],near:[16,14,18,17]},
- {far:[7,15,7,19],near:[16,15,17,18]},
- {far:[8,15,9,18],near:[15,16,14,19]},
- {far:[9,14,12,17],near:[13,16,12,20]},
- {far:[12,14,15,17],near:[12,15,9,18]},
- {far:[11,15,13,18],near:[12,16,10,19]},
- {far:[9,16,10,19],near:[14,16,14,20]},
- {far:[8,15,7,18],near:[15,15,17,18]}
+const PERSON_LEGS=[
+ ['      TPPJPP','     TTP JPP','     TT  JPP','     TT   JP','    TT    JP','    TT    PP','    TT     PP','    TT     PP','   TOO     PO','   OOO     OOO'],
+ ['      TPPJPP','      TT JPP','      TT  JP','      TT  JP','      TT JPP','      TTJPP','      TT PP','      TT OOO','      TO','      OOO'],
+ ['      TPPJPP','      TPP JPP','      TPP  JP','     TPP   JP','     TP    JP','    TTP    PP','    TT     PP','    TT     PP','    TO     POO','    OOO    OOO'],
+ ['      TPPJPP','      TT JPP','       TTJPP','        TJPP','        TJPP','       TT PP','      TT  PP','      OOO PP','          PO','          OOO'],
+ ['      TPPJPP','      TT JPP','      TT JPP','      TT JPP','      TT  PP','     TT   PP','     TT   PP','     TT   PP','     TO   PO','     OOO  OOO']
 ];
 function humanFrames(role,travelY=0){
-  const head=role==='worker'?[
-    '         YYYYY','        YHYYYYY','       YYHYYYYYY','       YYYYYYYYYY','       ONNZSSOSSS',
-    '        NSSZSSO','         NSSSS','         UNNS','        UYNSYU'
-  ]:role==='factoryWorker'?[
-    '         OOOOO','        CCCCCCO','       CCAAAACCO','       OCCCCCOOOO','        NNZSSOSSS',
-    '        NSSZSSO','         NSSSS','         UNNS','        UCNCCU'
-  ]:PERSON_HEAD;
+  const head=role==='worker'?['       YYY','      YHYYY','     YYHYYYY','    YYYYYYYYY','     ONZSOSS','      NSSSN','       NS','      UYNSYU']:
+    role==='factoryWorker'?['       OOOO','      CCCCCO','     CAAAACCO','     OCCCOOOO','      NZSOSS','      NSSSN','       NS','      UCNCO']:PERSON_HEAD;
   return SPRITE_WALK.phases.map(phase=>{
-    const idle=phase===null,pose=idle?0:Math.floor(phase/2),down=!idle&&(pose===1||pose===5)?1:0;
-    const pixels=Array.from({length:32},()=>Array(22).fill(' '));
+    const i=phase===null?4:Math.floor(phase/2),body=PERSON_TORSOS[i];
+    // A small forward weight shift at passing, without bouncing the head vertically.
+    const shift=i===1||i===3?1:0;
+    const pixels=[...head.map(row=>' '.repeat(shift)+row),...body,...PERSON_LEGS[i]].map(row=>row.padEnd(18).split(''));
     const r=(x,y,w,h,c)=>{for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)pixels[yy][xx]=c;};
-    const line=(x0,y0,x1,y1,c,w=2)=>{const count=Math.max(1,Math.abs(x1-x0),Math.abs(y1-y0));for(let n=0;n<=count;n++)r(Math.round(x0+(x1-x0)*n/count),Math.round(y0+(y1-y0)*n/count),w,1,c);};
-    head.forEach((row,y)=>[...row].forEach((c,x)=>{if(c!==' ')pixels[y][x]=c;}));
-    // Far arm is a distinct dark sleeve behind a shaped shoulder and shirt front.
-    const arms=idle?{far:[7,16,8,20],near:[15,16,15,20]}:WALK_ARMS[pose];
-    line(8,11+down,...arms.far.slice(0,2),'U');line(...arms.far,'N');
-    r(8,9+down,7,1,'U');r(7,10+down,9,2,'U');r(8,10+down,7,2,'C');
-    r(8,12+down,7,6,'C');r(8,12+down,1,6,'U');r(9,12+down,2,4,'A');r(14,12+down,1,6,'U');
-    r(9,17+down,6,2,'U');r(9,17+down,4,1,'C');r(9,19,5,2,'P');r(9,19,5,1,'T');
-    // The head does not sway. One pixel of knee compression supplies weight acceptance.
-    line(14,11+down,...arms.near.slice(0,2),'C');line(...arms.near,'S');
-    r(arms.near[0],arms.near[1],2,1,'U');r(arms.near[2],arms.near[3],2,1,'Z');
-    const feet=idle?{left:{x:8,y:31},right:{x:13,y:31},leftPlanted:true}:walkingFeet(phase,travelY);
-    for(const [side,hip,tone,edge] of [['left',9,'T','P'],['right',12,'P','J']]){
-      const foot=feet[side],planted=idle||(side==='left'?feet.leftPlanted:!feet.leftPlanted);
-      const knee=Math.round((hip+foot.x)/2)+(planted?0:2),kneeY=Math.min(planted?25+down:24,foot.y-2);
-      line(hip,20,knee,kneeY,tone);line(knee,kneeY,foot.x,foot.y-1,tone);
-      pixels[kneeY][knee]=edge;pixels[foot.y-1][foot.x]=edge;r(foot.x,foot.y,3,1,'O');
-      // Toe remains planted while the rear heel rises during push-off.
-      if(!idle&&planted&&phase%8>=6){pixels[foot.y][foot.x]=' ';pixels[foot.y-1][foot.x]='O';}
-      pixels[foot.y-1][foot.x+1]='T';
+    // Neck/ear highlights and a sleeve seam retain the current compact silhouette.
+    pixels[5][7+shift]='Z';pixels[6][8+shift]='N';pixels[9][7]='A';pixels[14][9]='U';
+    if(phase!==null){
+      for(let y=17;y<27;y++)pixels[y].fill(' ');
+      const feet=walkingFeet(phase,travelY);
+      const line=(x0,y0,x1,y1,color)=>{const count=Math.max(Math.abs(x1-x0),Math.abs(y1-y0));for(let n=0;n<=count;n++){const x=Math.round(x0+(x1-x0)*n/count),y=Math.round(y0+(y1-y0)*n/count);r(x,y,2,1,color);}};
+      for(const [side,hip,tone,edge] of [['left',7,'T','P'],['right',10,'P','J']]){
+        const foot=feet[side],planted=side==='left'?feet.leftPlanted:!feet.leftPlanted;
+        const knee=Math.round((hip+foot.x)/2)+(planted?0:2),kneeY=planted?21:20;
+        line(hip,17,knee,kneeY,tone);line(knee,kneeY,foot.x,foot.y-1,tone);
+        pixels[kneeY][knee]=edge;pixels[foot.y-1][foot.x]=edge;
+        r(foot.x,foot.y,3,1,'O');pixels[foot.y-1][foot.x+1]='T';
+      }
     }
     if(role==='worker'){
-      r(9,11+down,1,6,'Y');r(13,11+down,1,6,'Y');r(9,14+down,5,1,'H');r(9,18,5,1,'F');r(11,19,2,2,'K');
-      if(idle){r(6,14,3,7,' ');r(15,14,3,7,' ');line(8,12,7,16,'C');line(7,16,10,17,'S');line(14,12,16,16,'C');line(16,16,13,17,'S');r(10,18,8,1,'F');r(17,16,2,3,'K');}
-    }else if(role==='factoryWorker'){
-      r(10,12+down,3,5,'P');r(9,11+down,1,6,'J');r(13,11+down,1,6,'J');r(10,14+down,3,2,'K');r(11,14+down,1,1,'H');
-      if(idle){r(6,15,3,6,' ');r(15,14,3,7,' ');line(8,12,7,16,'C');line(7,16,10,18,'S');line(14,12,16,16,'C');line(16,16,14,18,'S');r(10,17,5,4,'K');r(11,18,3,2,'H');}
-    }else if(role==='shopper'){
-      // Loaded arm hangs close to the body; the free arm retains the gait counter-swing.
-      r(15,12,5,9,' ');line(14,12,16,16,'C');line(16,16,16,20,'S');r(16,20,3,1,'F');r(16,21,1,2,'F');r(19,21,1,2,'F');
-      r(16,23,5,5,'D');r(16,23,1,5,'F');r(17,23,1,4,'L');r(16,28,5,1,'F');r(18,22,1,2,'V');r(20,23,1,1,'R');
-      pixels[5][7]='F';pixels[6][8]='F';
-    }else if(role==='resident'){
-      r(11,11+down,1,6,'U');r(12,13+down,2,2,'K');pixels[2][9]='K';
-      if(idle){r(15,15,2,6,' ');line(14,12,16,16,'C');line(16,16,13,18,'S');}
+      for(let y=8;y<16;y++)for(const x of [7,10])if('CAU'.includes(pixels[y][x]))pixels[y][x]='Y';
+      for(const x of [7,8,9,10])if(pixels[11][x]!==' ')pixels[11][x]='H';
+      // Tool belt while walking; bent elbows and a held tool in the stationary pose.
+      r(7,15,4,1,'F');r(9,16,2,2,'K');
+      if(i===4){r(4,11,2,4,' ');r(11,10,3,6,' ');r(5,11,2,2,'C');r(6,13,3,1,'S');r(11,11,2,2,'C');r(10,13,3,1,'S');r(8,14,6,1,'F');r(13,12,2,3,'K');}
+    }
+    if(role==='factoryWorker'){
+      for(let y=9;y<16;y++)for(let x=7;x<=10;x++)if('CAU'.includes(pixels[y][x]))pixels[y][x]='P';
+      r(8,10,1,3,'J');r(10,10,1,3,'J');
+      // Carrying a small part at rest, with forearms held in front of the overalls.
+      if(i===4){r(4,11,2,4,' ');r(11,11,3,5,' ');r(5,11,2,2,'P');r(6,13,2,2,'S');r(11,11,2,2,'P');r(11,13,2,2,'S');r(8,12,4,4,'K');r(9,13,2,2,'H');}
+    }
+    if(role==='shopper'){
+      // The laden arm hangs steadily; only the free arm swings.
+      r(12,12,4,5,' ');r(11,12,2,2,'C');r(12,14,1,2,'S');r(12,16,3,1,'F');
+      r(12,17,1,5,'F');r(13,17,3,5,'D');r(13,17,1,4,'L');r(12,22,4,1,'F');r(14,17,1,1,'V');r(15,17,1,1,'R');
+      pixels[4][5]='F';pixels[5][5]='F';pixels[6][5]='F';
+    }
+    if(role==='resident'){
+      for(let y=8;y<16;y++)if(pixels[y][8]!==' ')pixels[y][8]='U';
+      pixels[11][9]='K';pixels[14][9]='K';pixels[1][7]='K';
     }
     return pixels.map(row=>row.join(''));
   });
 }
-// New native bodywork; separate glass, beltline, doors, fenders and seven-row tires.
+// Shorter native silhouettes give the cabin and body more vertical presence inside each 20px lane.
 function vehicleFrames(type){
-  const width=type==='compact'?44:type==='sedan'?50:56,height=type==='truck'?24:22;
+  const width=type==='compact'?35:type==='sedan'?41:46,height=20;
   const grid=Array.from({length:height},()=>Array(width).fill(' '));
   const r=(x,y,w,h,c)=>{for(let yy=y;yy<y+h;yy++)for(let xx=x;xx<x+w;xx++)grid[yy][xx]=c;};
   if(type==='truck'){
-    r(1,0,32,18,'O');r(2,1,30,15,'E');r(3,2,28,1,'H');r(3,3,1,12,'K');r(5,5,25,7,'L');r(6,6,23,1,'H');r(5,14,25,1,'K');r(29,3,1,11,'M');r(28,10,1,2,'O');
-    r(35,3,11,1,'O');r(34,4,14,2,'O');r(34,6,16,7,'O');r(34,13,20,5,'O');
-    r(35,4,11,1,'L');r(35,5,12,8,'B');r(36,5,9,7,'W');r(37,5,7,1,'H');r(37,6,1,4,'H');r(38,8,1,2,'H');r(36,11,9,1,'G');r(46,8,2,5,'O');r(46,9,4,1,'K');
-    r(35,13,17,5,'B');r(35,13,3,1,'K');r(35,15,9,1,'L');r(47,13,1,5,'M');r(50,12,3,1,'L');r(52,13,2,3,'H');r(50,16,3,1,'O');
-    r(1,17,53,3,'M');r(2,17,29,1,'K');r(1,15,2,2,'R');r(53,17,3,2,'K');r(3,20,49,1,'O');
+    // Tall cargo box, a separate upright cab and a short stepped hood.
+    r(1,0,27,16,'O');r(2,1,25,13,'E');r(3,2,23,1,'H');r(3,3,1,10,'K');r(5,5,20,5,'L');r(5,12,20,1,'K');r(24,3,1,10,'K');
+    r(29,3,10,1,'O');r(28,4,12,3,'O');r(28,7,14,4,'O');r(28,11,17,6,'O');
+    r(29,4,9,1,'L');r(29,5,10,7,'B');r(30,5,7,6,'W');r(31,5,5,1,'H');r(30,10,7,1,'G');r(38,7,2,5,'O');
+    r(29,12,14,4,'B');r(30,12,3,1,'K');r(41,11,3,1,'L');r(43,12,2,2,'H');r(1,15,43,2,'M');r(1,13,2,2,'R');r(43,15,3,2,'K');
   }else{
-    const sedan=type==='sedan',roof=sedan?13:10,roofWidth=sedan?20:19;
-    r(roof,0,roofWidth,1,'O');r(roof-1,1,roofWidth+2,2,'O');r(roof,1,roofWidth,1,'L');
-    for(let y=3;y<=10;y++){const back=sedan?Math.floor((y-2)/3):Math.floor((y-2)/5),front=Math.floor((y-2)/3);r(roof-1-back,y,roofWidth+2+back+front,1,'O');r(roof-back,y,roofWidth+back+front,1,'B');}
-    r(roof+1,3,7,7,'W');r(roof+10,3,8,7,'W');r(roof+1,3,6,1,'H');r(roof+10,3,7,1,'H');r(roof+2,4,1,3,'H');r(roof+3,6,1,2,'H');r(roof+11,4,1,3,'H');
-    r(roof+1,9,7,1,'G');r(roof+10,9,8,1,'G');r(roof+8,3,2,7,'O');r(roof+18,8,3,1,'K');r(roof,10,roofWidth,1,'M');
-    r(4,10,width-9,1,'O');r(2,11,width-5,1,'O');r(1,12,width-2,6,'O');r(2,12,width-4,5,'B');r(3,11,width-7,1,'L');r(2,12,width-4,1,'L');
-    r(2,17,width-4,2,'M');r(3,19,width-6,1,'O');r(0,15,2,3,'K');r(width-2,15,2,3,'K');r(2,13,2,2,'R');r(width-4,12,2,2,'H');
-    r(roof+8,11,1,6,'M');r(roof+10,12,3,1,'K');r(roof+1,13,5,1,'L');r(roof+11,14,5,1,'L');r(roof+1,16,6,1,'M');r(width-8,16,5,1,'O');
-    if(sedan){r(roof-4,11,1,6,'M');r(roof-2,12,2,1,'K');r(4,12,5,1,'L');}
+    const sedan=type==='sedan';
+    // Hatchback has a tall rear; sedan has a lower roof and a distinct trunk.
+    const roof=sedan?11:8,roofWidth=sedan?17:15;
+    r(roof,sedan?1:0,roofWidth,1,'O');r(roof-1,sedan?2:1,roofWidth+2,2,'O');r(roof,sedan?2:1,roofWidth,1,'L');
+    for(let y=3;y<=9;y++){const back=sedan?Math.floor((y-2)/3):0,front=Math.floor((y-2)/2);r(roof-1-back,y,roofWidth+2+back+front,1,'O');r(roof-back,y,roofWidth+back+front,1,'B');}
+    r(roof+1,3,6,6,'W');r(roof+8,3,6,6,'W');r(roof+1,3,5,1,'H');r(roof+8,3,5,1,'H');r(roof+1,8,6,1,'G');r(roof+8,8,6,1,'G');r(roof+7,3,1,6,'O');
+    r(4,9,width-8,1,'O');r(2,10,width-4,1,'O');r(1,11,width-2,6,'O');r(2,11,width-4,5,'B');
+    r(3,10,width-7,1,'L');r(2,11,width-4,1,'L');r(2,15,width-4,2,'M');r(0,14,2,2,'K');r(width-2,14,2,2,'K');
+    r(2,12,2,2,'R');r(width-4,11,2,2,'H');r(roof+7,10,1,5,'M');r(roof+9,11,2,1,'K');
+    if(sedan){r(roof-3,10,1,5,'M');r(roof-1,11,2,1,'K');}
+    r(width-7,14,4,1,'O');r(3,17,width-6,1,'O');
   }
-  const wheels=type==='compact'?[10,34]:type==='sedan'?[11,39]:[11,45],wheelTop=height-7;
-  for(const cx of wheels){r(cx-3,wheelTop-1,7,1,'M');r(cx-4,wheelTop,1,3,'O');r(cx+4,wheelTop,1,3,'O');}
+  if(type==='truck'){
+    r(3,2,1,11,'H');r(6,3,16,1,'K');r(25,5,1,7,'M');r(24,9,1,2,'O');
+    r(31,6,1,3,'H');r(32,7,1,2,'H');r(36,6,1,4,'G');r(38,9,3,1,'K');
+    r(29,13,9,1,'L');r(39,12,1,4,'M');r(41,14,2,1,'O');r(3,14,21,1,'K');
+  }else{
+    const roof=type==='sedan'?11:8;
+    // Glazing edges, small reflections, roof trim and a darker lower door contour.
+    r(roof,2,1,7,'M');r(roof+2,4,1,3,'H');r(roof+3,5,1,2,'H');
+    r(roof+9,4,1,2,'H');r(roof+13,4,1,4,'G');r(roof+15,8,2,1,'K');
+    r(roof+1,9,13,1,'M');r(roof+1,12,5,1,'L');r(roof+9,12,5,1,'L');
+    r(roof+1,14,5,1,'M');r(width-5,13,2,1,'K');r(3,13,1,1,'L');
+  }
+  const wheels=type==='compact'?[8,27]:type==='sedan'?[9,32]:[9,36];
+  // Wheel arches separate the body from tires without changing lane height.
+  for(const cx of wheels){r(cx-2,13,5,1,'M');r(cx-3,14,1,2,'O');r(cx+3,14,1,2,'O');}
   return [0,1].map(phase=>{
     const copy=grid.map(row=>[...row]);
-    const wheel=['  TTTTT  ',' TTKKKTT ','TTKKHKKTT',phase?'TKKTOKKKT':'TKKKOTKKT','TTKKK KTT',' TTKKKTT ','  TTTTT  '];
-    for(const cx of wheels)wheel.forEach((row,y)=>[...row].forEach((c,x)=>{if(c!==' ')copy[wheelTop+y][cx-4+x]=c;}));
+    const wheel=[' TTTTT ','TTKKKTT',phase?'TKHTKKT':'TKKTHKT','TTKOKTT',' TTTTT ','  TTT  '];
+    for(const cx of wheels)wheel.forEach((row,y)=>[...row].forEach((c,x)=>{if(c!==' ')copy[14+y][cx-3+x]=c;}));
     return copy.map(row=>row.join(''));
   });
 }
@@ -540,7 +557,7 @@ const pixelWorld=(()=>{
     cache.set(key,sheet);return sheet;
   }
   function blit(type,x,y,frame=0,direction=1,variant=0,travelY=0){
-    const image=spriteImage(type,frame,variant,travelY),offset=SPRITE_PLACEMENT[type]||{x:0,y:0};ctx.save();const drawY=['compact','sedan','truck'].includes(type)?clamp(Math.round(y)+offset.y,196,238-image.height):Math.round(y)+offset.y;ctx.translate(Math.round(x)+offset.x,drawY);
+    const image=spriteImage(type,frame,variant,travelY),offset=SPRITE_PLACEMENT[type]||{x:0,y:0};ctx.save();ctx.translate(Math.round(x)+offset.x,Math.round(y)+offset.y);
     if(direction<0){ctx.translate(image.width,0);ctx.scale(-1,1);}ctx.drawImage(image,0,0);ctx.restore();
   }
   function pathLength(path){return path.slice(1).reduce((total,p,i)=>total+Math.hypot(p[0]-path[i][0],p[1]-path[i][1]),0);}
