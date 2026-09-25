@@ -91,7 +91,10 @@ const base=process.env.BASE_URL || 'http://127.0.0.1:4179';
       await use('post');await loan(100,500);await use('next-round');await use('post');assert.match(await body(),/\$1,100/);await loan(160,1440);
       await use('next-round');await use('post');await loan(210,1440);assert.match(await body(),/No loan or outgoing payment/);
       await page.locator('.return-games').press('Enter');await page.waitForURL('**/games/');
-      assert.equal(await page.locator('[data-game="money-in-motion"]').count(),0,'prototype must not have a hub card');
+      assert.equal(await page.locator('[data-game="money-in-motion"]').count(),1,'hub has one Money in Motion card');
+      await page.getByRole('link',{name:'PLAY GAME: Money in Motion',exact:true}).press('Enter');
+      await page.waitForURL('**/games/money-in-motion/');
+      assert.match(await body(),/Bank training 1 \/ 3/i);
       console.log(`PASS ${viewport.width}×${viewport.height}: full flow, correction/retry, keyboard, touch targets, ${reduced?'reduced motion':'motion'}, no overflow/errors, hub navigation`);
       await page.close();
     }

@@ -1,6 +1,6 @@
 # Money in Motion
 
-Private, standalone prototype: `/games/money-in-motion/` when serving `audit_tools/econ_rpg/game`. It is intentionally absent from the Games hub.
+Private, standalone prototype: `/games/money-in-motion/` when serving `audit_tools/econ_rpg/game`. It is available from the private Games hub, with the supplied Money in Motion artwork filling its cover and a Play Game link.
 
 ## Implementation
 
@@ -30,7 +30,7 @@ The browser check needs Playwright and installed Chrome, plus the private server
 
 Verified: thirteen accounting/total-target tests (including 125 sampled partial-loan paths and 125 paths proving equivalence to the original incremental inputs); complete walkthroughs at 1440×900, 1280×720, 820×1180, 390×844, and 320×740; keyboard form order and activation; correction/retry; 44px controls; reduced motion; no page overflow or browser errors; formula revealed after the manual chain; transfer response required before the deeper explanation; restart and return navigation. Desktop, tablet, and mobile screenshots were visually inspected.
 
-Existing games, shared styles, and the Games hub are unchanged by this prototype.
+Existing games are unchanged. The private Games hub uses the supplied `art/scenes/money-in-motion/money-in-motion.webp` artwork; the game itself remains an interface-only simulation.
 
 ## First-round UX and numerical readability pass
 
