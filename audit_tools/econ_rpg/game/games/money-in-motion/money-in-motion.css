@@ -12,3 +12,28 @@
 @media(max-width:760px){.desk,.summary-grid{grid-template-columns:1fr}.progress{grid-template-columns:1fr 1fr}.money-page .masthead{justify-content:flex-start}.preview-label{display:none}.money-page .panel{padding:18px}.legend{gap:6px}.legend span{display:block;width:100%}.money-page h2{font-size:1.3rem}.wide{grid-column:auto}}
 @media(max-width:480px){.network{grid-template-columns:1fr;gap:25px}.bank-card h3{min-height:0}.bank-card:not(:last-child)::after{content:'↓';right:50%;top:auto;bottom:-25px}.fields{grid-template-columns:1fr}.balance-grid{gap:12px}.account-row{font-size:.8rem}.system-ledger dd{font-size:1.1rem}.report-list div{display:block}.report-list dd{text-align:left;margin-top:4px}.progress li{padding:7px;font-size:.75rem}}
 @media(prefers-reduced-motion:reduce){.money-page *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Paper accounting surfaces inside the existing navy shell. */
+.money-page .hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 20px;padding:14px 0 8px}
+.money-page .hero h1{margin:0;font-size:clamp(2rem,4vw,2.7rem)}
+.reference-tools{display:flex;flex-wrap:wrap;gap:4px 20px;align-items:flex-start}
+.reference-tools details{max-width:340px;font-size:.85rem}.reference-tools summary{padding:10px 0;min-height:44px}
+.reference-tools details[open]{flex-basis:340px}.reference-tools p{margin:0 0 12px}.reference-tools dl{margin:0 0 12px}.reference-tools dt{font-weight:700;color:var(--teal)}.reference-tools dd{margin:0 0 10px}
+.progress{margin-bottom:14px}.progress li{padding:7px 10px}
+.money-page :is(.desk .panel,.bank-card,.system-ledger,.network-task){background:#f7f7f2;color:#172c43;border-color:#adbdca;--line:#b8c6ce;--muted:#4a5e6e;--deposit:#245a8b;--reserve:#14665b;--loan:#835115;box-shadow:0 8px 24px #0002}
+.money-page .desk .panel{padding:18px}.desk .panel .eyebrow,.desk .panel .formula{color:#15645f}
+:is(.desk .panel,.bank-card,.system-ledger,.network-task) .account-row strong{color:#172c43}
+:is(.desk .panel,.network-task) .field input{background:#fff;color:#142b43;border:1px solid #71889a;font-size:1.05rem}
+:is(.desk .panel,.network-task) .field input[aria-invalid=true]{border:2px solid #a3491e}
+:is(.desk .panel,.bank-card,.network-task) :is(input,button,summary):focus-visible{outline:3px solid #125dad;outline-offset:3px}
+.desk .slip{background:#e9eeed;border-color:#a17b36;padding:9px 12px;margin-bottom:12px}.desk .slip h3{margin-bottom:4px}.desk .slip ul{margin:3px 0}.desk .slip .small{font-size:.78rem}
+.desk p{margin-bottom:12px}.reserve-desk{margin-top:10px;padding-top:10px}.reserve-desk dd{text-align:right}.balanced{margin:10px 0}
+.entry-support{display:flex;flex-wrap:wrap;align-items:start;justify-content:space-between;gap:0 16px}.entry-support .small{margin:12px 0;font-size:.78rem}.hint{font-size:.85rem;max-width:600px}.hint summary,.bank-card summary{color:#145c69;min-height:44px}.hint p{margin-bottom:8px}.hint details{padding-left:12px;border-left:2px solid #9daeb9}.fields{margin:12px 0;align-items:end}.field label{font-weight:650}
+:is(.desk .panel,.network-task) .feedback{background:#fff0db;border-color:#98501c;color:#3c291b}.new-loan{font-variant-numeric:tabular-nums}
+.network-intro{margin-bottom:8px}.network{gap:14px;margin:10px 0}.bank-card{padding:9px 12px}.money-page .bank-card h3{min-height:0;font-size:.92rem;margin:0 0 4px}.active-label{display:inline-block;margin-left:6px;font-size:.7rem;color:#155f58;border-bottom:2px solid #155f58;font-weight:700}.bank-card.active{outline-color:#70d8c7}.bank-card .account-row{padding:3px 0;font-size:.85rem}.bank-card summary{font-size:.8rem;padding:10px 0}.bank-card:not(:last-child)::after{color:#a8ede4}
+.system-ledger{gap:0;margin:8px 0;border:1px solid;border-radius:9px;overflow:hidden}.system-ledger>div{background:transparent;border:0;border-right:1px solid var(--line);border-radius:0;padding:7px 12px}.system-ledger>div:last-child{border-right:0}.system-ledger dd{color:#172c43;margin:1px 0 0;font-size:1.15rem}
+.money-page .network-task{padding:12px 16px}.network-task h3{margin-bottom:4px}.network-origin{font-size:.8rem;color:var(--muted);margin:0 0 5px}.network-task .transfer{font-size:.82rem;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:0 0 6px;margin:0 0 6px}.network-task form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 16px;align-items:end}.network-task .fields{margin:6px 0}.network-task button[type=submit]{margin:6px 0}.network-task .entry-support,.network-task .feedback{grid-column:1/-1}.network-task .entry-support .small{margin:10px 0}.network-task .hint summary{padding:10px 0}.network-task .mobile-snapshot{grid-column:1/-1}
+.money-page footer{padding:12px 0;font-size:.72rem}
+@media(max-width:1000px){.network-task form{grid-template-columns:1fr}.network-task button[type=submit]{justify-self:start}.system-ledger>div:nth-child(2){border-right:0}.system-ledger>div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:760px){.money-page .hero{gap:4px;padding-top:14px}.reference-tools{gap:0 18px}.reference-tools details{max-width:100%}.reference-tools details[open]{flex-basis:100%}.mobile-snapshot{background:#e9eeed}.entry-support{display:block}.fields{gap:10px}.money-page .desk .panel{padding:16px}}
+@media(max-width:480px){.network{gap:20px}.bank-card:not(:last-child)::after{bottom:-22px}.network-task .entry-support{grid-column:auto}.money-page .network-task{padding:14px}.balance-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
