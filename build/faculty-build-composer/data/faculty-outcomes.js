@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "530ce41689bf83126ccde2d7d0fd236ca0c34761042455323ce7d3f99e97bbab",
+  "librarySha256": "a0f273710c9b4b1d648222bc9b7aa58fd203a6bc26d0af8112cf787c30b394af",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -3217,7 +3217,7 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 24,
+            "ordinary": 23,
             "checkpoints": 9,
             "repair": 4,
             "bridge": 3,
@@ -3226,7 +3226,7 @@
               "easy": 7,
               "medium": 5,
               "hard": 4,
-              "elite": 2,
+              "elite": 1,
               "legendary": 6
             },
             "supportedModes": [
@@ -3254,7 +3254,7 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 13,
+            "ordinary": 14,
             "checkpoints": 4,
             "repair": 2,
             "bridge": 1,
@@ -3263,7 +3263,7 @@
               "easy": 1,
               "medium": 3,
               "hard": 4,
-              "elite": 1,
+              "elite": 2,
               "legendary": 4
             },
             "supportedModes": [
@@ -6039,6 +6039,7 @@
           "conceptId": "international-trade-and-trade-policy",
           "label": "Use world prices to determine trade status and quantities",
           "skillIds": [
+            "algebraic_equilibrium_price",
             "domestic_consumption_under_trade",
             "domestic_production_under_trade",
             "export_market_graph",
@@ -7006,8 +7007,7 @@
             "opportunity_cost_to_marginal_cost",
             "scarcity_to_marginal_choice",
             "stopping_point_analysis",
-            "sunk_cost_avoidance",
-            "sunk_cost_trap"
+            "sunk_cost_avoidance"
           ],
           "presets": [
             "brief",
@@ -7022,10 +7022,10 @@
             "seed": 1,
             "difficulty": {
               "easy": 11,
-              "medium": 12,
+              "medium": 13,
               "hard": 13,
               "elite": 6,
-              "legendary": 27
+              "legendary": 26
             },
             "supportedModes": [
               "standard",
@@ -7148,7 +7148,7 @@
           ],
           "coverage": {
             "ordinary": 22,
-            "checkpoints": 7,
+            "checkpoints": 8,
             "repair": 1,
             "bridge": 2,
             "seed": 0,
@@ -7236,7 +7236,7 @@
           ],
           "coverage": {
             "ordinary": 16,
-            "checkpoints": 6,
+            "checkpoints": 5,
             "repair": 0,
             "bridge": 0,
             "seed": 0,
@@ -8011,7 +8011,6 @@
             "assumptions",
             "assumptions_role",
             "ceteris_paribus",
-            "circular_flow_components",
             "core_models",
             "economic_model_reasoning",
             "model_assumption_usefulness",
@@ -8021,9 +8020,7 @@
             "model_simplification_value",
             "models_to_ceteris_paribus",
             "models_to_ppf",
-            "nonprice_rationing",
             "ppf",
-            "price_ceiling",
             "scarcity",
             "simplification"
           ],
@@ -10868,9 +10865,6 @@
             "positive_statement_identification",
             "positive_testability",
             "positive_vs_normative",
-            "price_ceiling",
-            "shortage",
-            "tax_policy",
             "testability",
             "testable_claims"
           ],
@@ -10880,14 +10874,14 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 37,
-            "checkpoints": 13,
+            "ordinary": 38,
+            "checkpoints": 12,
             "repair": 6,
             "bridge": 4,
             "seed": 0,
             "difficulty": {
               "easy": 8,
-              "medium": 8,
+              "medium": 9,
               "hard": 8,
               "elite": 3,
               "legendary": 10
@@ -11328,19 +11322,18 @@
           ],
           "coverage": {
             "ordinary": 20,
-            "checkpoints": 6,
+            "checkpoints": 5,
             "repair": 1,
             "bridge": 4,
             "seed": 0,
             "difficulty": {
               "easy": 2,
-              "medium": 4,
-              "hard": 7,
+              "medium": 5,
+              "hard": 6,
               "elite": 0,
               "legendary": 7
             },
             "supportedModes": [
-              "legendary",
               "trialGraph",
               "fadingFortune",
               "riskReward"
@@ -11393,7 +11386,7 @@
           ],
           "coverage": {
             "ordinary": 34,
-            "checkpoints": 8,
+            "checkpoints": 9,
             "repair": 6,
             "bridge": 4,
             "seed": 0,
@@ -11409,6 +11402,7 @@
               "exam",
               "quiz",
               "unlimited",
+              "legendary",
               "trialGraph",
               "fadingFortune",
               "riskReward"
@@ -12896,6 +12890,7 @@
             "tax_incidence_definition",
             "tax_incidence_misconception_detection",
             "tax_wedge",
+            "tax_wedge_calculation",
             "tax_wedge_identification"
           ],
           "presets": [
@@ -13000,6 +12995,7 @@
           "conceptId": "supply",
           "label": "Apply the law of supply and distinguish movements from shifts",
           "skillIds": [
+            "graph_reading",
             "law_of_supply",
             "movement_vs_supply_shift",
             "supply_shift_and_movement"
@@ -13010,16 +13006,16 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 12,
+            "ordinary": 15,
             "checkpoints": 3,
             "repair": 2,
             "bridge": 2,
             "seed": 0,
             "difficulty": {
-              "easy": 2,
-              "medium": 3,
+              "easy": 3,
+              "medium": 4,
               "hard": 3,
-              "elite": 2,
+              "elite": 3,
               "legendary": 2
             },
             "supportedModes": [
@@ -13059,23 +13055,20 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 31,
+            "ordinary": 28,
             "checkpoints": 8,
             "repair": 2,
             "bridge": 2,
             "seed": 0,
             "difficulty": {
-              "easy": 6,
-              "medium": 10,
+              "easy": 5,
+              "medium": 9,
               "hard": 7,
-              "elite": 3,
+              "elite": 2,
               "legendary": 5
             },
             "supportedModes": [
-              "timed",
-              "exam",
               "quiz",
-              "unlimited",
               "trialGraph",
               "fadingFortune",
               "riskReward"
@@ -13725,6 +13718,7 @@
           "conceptId": "trade-world-price-status",
           "label": "Interpret the world price and identify whether a small country imports or exports a good under free trade.",
           "skillIds": [
+            "algebraic_equilibrium_price",
             "exporter_identification",
             "importer_identification",
             "small_country_model",
@@ -13908,5 +13902,5 @@
       "hidden": false
     }
   },
-  "policySha256": "418a365bafad2d77a5341f9019302c4a4e568b7c56b664e39677ad61fcb0fc7f"
+  "policySha256": "a56b6376e762ffca2a1634ea01cb03e2b07572bdf7fe0febee6c7d56b24ec61d"
 });
