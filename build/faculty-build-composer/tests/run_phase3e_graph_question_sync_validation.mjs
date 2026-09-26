@@ -20,6 +20,8 @@ const repoRoot = path.resolve(composerRoot, "..", "..");
 const manifestPath = path.join(composerRoot, "data/composer_library_manifest.json");
 const phaseIds = new Set(ordinaryQuestions.map(question => String(question.id)));
 const graphIntegrityRemediation = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "graph_assessment_integrity_remediation.json"), "utf8"));
+const difficultyAlignment = JSON.parse(fs.readFileSync(path.join(repoRoot, "validation_artifacts", "question_quality", "general_economics_difficulty_alignment_graph_revisions.json"), "utf8"));
+const alignedById = new Map(difficultyAlignment.questions.map(row => [String(row.id), row]));
 
 const expectedConcept = new Map([
   ...range(40000, 40005).map(id => [id, "production-possibilities-frontier"]),
@@ -112,13 +114,40 @@ async function run() {
   pass(JSON.stringify(distribution(ordinaryQuestions, "type")) === JSON.stringify({ graph_calculation: 11, graph_interpretation: 10, graph_integration: 17, graph_trap: 10 }), "Source type distribution changed");
 
   const recordsById = new Map(synchronized.map(record => [String(record.question.id), record]));
+  pass(alignedById.size === difficultyAlignment.questions.length, "Difficulty alignment IDs are not unique");
+  pass([...alignedById.keys()].every(id => phaseIds.has(id)), "Difficulty alignment includes an unknown graph ID");
   for (const author of ordinaryQuestions) {
     const found = recordsById.get(String(author.id));
     if (!found) continue;
     const { conceptId, pool, question } = found;
     pass(conceptId === expectedConcept.get(author.id), `Concept mapping ${author.id}: ${conceptId}`);
-    pass(pool === author.pool && question.difficulty === author.pool && question.canonicalDifficulty === author.pool, `Difficulty ${author.id}`);
-    const curated = currentAuditedQuestion(author.id, {id: String(author.id), q: author.q, feedback: author.feedback, type: author.type});
+    const priorCurated = currentAuditedQuestion(author.id, {id: String(author.id), q: author.q, feedback: author.feedback, type: author.type});
+    const alignment = alignedById.get(String(author.id));
+    // Preserve the historical source and audit contract, then apply only the
+    // separately reviewed instructor-alignment fields to current expectations.
+    if (alignment) {
+      const previous = {
+        q: priorCurated?.q || author.q,
+        options: priorCurated?.options || author.options,
+        feedback: priorCurated?.feedback || author.feedback,
+        type: priorCurated?.type || author.type,
+        difficulty: author.pool,
+        canonicalDifficulty: author.pool,
+        aHash: priorCurated?.aHash || sha256(normalize(author.answer))
+      };
+      for (const [field, value] of Object.entries(alignment.before)) {
+        const unshuffledOptions = field === "options" && !previous.options;
+        const expected = unshuffledOptions ? [author.answer, ...author.distractors].sort() : previous[field];
+        const recorded = unshuffledOptions ? [...value].sort() : value;
+        pass(JSON.stringify(expected) === JSON.stringify(recorded), `Alignment baseline ${author.id}: ${field}`);
+      }
+      for (const [field, value] of Object.entries(alignment.after)) {
+        pass(JSON.stringify(question[field]) === JSON.stringify(value), `Aligned current field ${author.id}: ${field}`);
+      }
+    }
+    const expectedDifficulty = alignment?.after.difficulty || author.pool;
+    pass(pool === expectedDifficulty && question.difficulty === expectedDifficulty && question.canonicalDifficulty === expectedDifficulty, `Difficulty ${author.id}`);
+    const curated = alignment ? {...priorCurated, ...alignment.after} : priorCurated;
     pass(
       curated ? question.q === curated.q && question.feedback === curated.feedback : question.q === author.q && question.feedback === author.feedback,
       `Canonical copy changed ${author.id}`

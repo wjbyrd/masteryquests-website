@@ -1,0 +1,391 @@
+{
+  "phase": "general-economics-instructor-difficulty-alignment-2026-09-26",
+  "scope": "Reviewed canonical Composer revisions only; historical Market Gate author source and earlier audit fixtures remain unchanged.",
+  "questions": [
+    {
+      "id": "40025",
+      "audit_findings": [
+        "GEA-0001"
+      ],
+      "reason": "Determine binding status, then actual equilibrium outcome; instructor calibration.",
+      "before": {
+        "q": "Refer to the graph. What price and quantity result when the rent ceiling is set at $2,000?",
+        "options": [
+          "$2,000 and 100 thousand apartments",
+          "$1,500 and 200 thousand apartments",
+          "$2,000 and 300 thousand apartments",
+          "$1,000 and 200 thousand apartments."
+        ],
+        "feedback": "A nonbinding ceiling leaves equilibrium unchanged.",
+        "type": "graph_integration",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "aHash": "b046dcdf52ef9e95bd92a03fc571a80d29e0022ef4654c9a9cff474d781203d1"
+      },
+      "after": {
+        "q": "Refer to the graph. What price and quantity result when the rent ceiling is set at $2,000?",
+        "options": [
+          "$2,000 and 100 thousand apartments",
+          "$1,500 and 200 thousand apartments",
+          "$2,000 and 300 thousand apartments",
+          "$1,000 and 200 thousand apartments."
+        ],
+        "feedback": "A nonbinding ceiling leaves equilibrium unchanged.",
+        "type": "graph_integration",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "aHash": "b046dcdf52ef9e95bd92a03fc571a80d29e0022ef4654c9a9cff474d781203d1"
+      }
+    },
+    {
+      "id": "40026",
+      "audit_findings": [
+        "GEA-0002"
+      ],
+      "reason": "Identify equilibrium, diagnose nonbinding ceiling and reversed shortage sign, then infer the corresponding binding floor.",
+      "before": {
+        "q": "A student uses the quantities shown at the $2,000 rent ceiling to conclude that the market has a surplus. What is the student’s error?",
+        "options": [
+          "A ceiling is a minimum, so price must remain above 2,000 dollars",
+          "The displayed quantities must be added instead of subtracted",
+          "A ceiling is a maximum, so price can clear below 2,000 dollars",
+          "Any price above equilibrium necessarily creates a shortage"
+        ],
+        "feedback": "A ceiling is a maximum, not a mandated price.",
+        "type": "graph_trap",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "aHash": "a38ff120e24d2931b01b11ca1fe6514f3d90b91de7991e023298fca733e79479"
+      },
+      "after": {
+        "q": "Refer to the graph. A student says a $2,000 rent ceiling binds and creates a 200-thousand-apartment shortage. Which diagnosis corrects both errors and identifies the policy that could sustain the gap at $2,000?",
+        "options": [
+          "Binding ceiling: $2,000 and 100 thousand; Qd > Qs by 200 thousand, consistent with a binding floor.",
+          "Nonbinding ceiling: $1,500 and 200 thousand; at $2,000, Qd > Qs by 200 thousand, consistent with a binding ceiling.",
+          "Nonbinding ceiling: $1,500 and 200 thousand; at $2,000, Qs > Qd by 200 thousand, consistent with a binding floor.",
+          "Binding ceiling: $2,000 and 300 thousand; Qs > Qd by 200 thousand, consistent with a binding ceiling."
+        ],
+        "feedback": "Equilibrium is $1,500 and 200 thousand. A maximum of $2,000 permits that equilibrium and does not force price up. At $2,000, Qs=300 thousand and Qd=100 thousand: the hypothetical gap is a 200-thousand surplus. A floor at $2,000, not the stated ceiling, could hold price above equilibrium.",
+        "type": "graph_trap",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "aHash": "6b11b0cd2a0658621179826176ce8f4621c729ea5e5e607a5392036d2b636411"
+      }
+    },
+    {
+      "id": "40032",
+      "audit_findings": [
+        "GEA-0003"
+      ],
+      "reason": "Diagnose the minimum-price, employment and gap-sign errors, then distinguish a floor from a ceiling.",
+      "before": {
+        "q": "Refer to the graph. A student treats the $6 minimum wage as the market wage and predicts a labor shortage. What is the student’s error?",
+        "options": [
+          "A floor is a minimum, so wage can rise to equilibrium",
+          "A floor is a maximum, so wage cannot rise above 6 dollars",
+          "Labor supply must be subtracted from equilibrium quantity",
+          "Any wage below equilibrium creates a binding surplus"
+        ],
+        "feedback": "A floor is a minimum, not a mandated wage.",
+        "type": "graph_trap",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "aHash": "ad8d5852d57ae15c7f5f96991c2cc2ea3569002d5926e3577862c43bc47feae6"
+      },
+      "after": {
+        "q": "Refer to the graph. A student says a $6 minimum wage binds, fixes employment at 300 thousand and creates a 200-thousand-worker surplus. Which diagnosis corrects the claim and identifies the policy that could sustain the gap at $6?",
+        "options": [
+          "Nonbinding floor: $12 and 200 thousand; at $6, Qd > Qs by 200 thousand, consistent with a binding wage ceiling.",
+          "Binding floor: $6 and 300 thousand; Qs > Qd by 200 thousand, consistent with a binding wage ceiling.",
+          "Nonbinding floor: $12 and 200 thousand; at $6, Qs > Qd by 200 thousand, consistent with a binding wage floor.",
+          "Binding floor: $6 and 100 thousand; Qd > Qs by 200 thousand, consistent with a binding wage floor."
+        ],
+        "feedback": "The $6 minimum is below the $12 equilibrium, so wage and employment remain $12 and 200 thousand. At a hypothetical $6 wage, firms demand 300 thousand workers but only 100 thousand offer labor: a shortage, not surplus. A binding wage ceiling could prevent wage from rising; the floor does not.",
+        "type": "graph_trap",
+        "difficulty": "legendary",
+        "canonicalDifficulty": "legendary",
+        "aHash": "558e0e91b293a80e31a7b7a5af202ac425648d2615c6a8df7d3260b2e449cbe2"
+      }
+    },
+    {
+      "id": "40031",
+      "audit_findings": [
+        "GEA-0004"
+      ],
+      "reason": "Determine nonbinding floor, then actual wage and employment; instructor calibration.",
+      "before": {
+        "q": "Refer to the graph. What wage and employment level result when a $6 minimum wage is imposed?",
+        "options": [
+          "$6 and 100 thousand workers",
+          "$6 and 300 thousand workers",
+          "$18 and 200 thousand workers",
+          "$12 and 200 thousand workers."
+        ],
+        "feedback": "A nonbinding floor leaves equilibrium unchanged.",
+        "type": "graph_integration",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "aHash": "087efc8e33d38024e77c010d051a35abb0f7f5d3319f77cc50f78fe5333dc409"
+      },
+      "after": {
+        "q": "Refer to the graph. What wage and employment level result when a $6 minimum wage is imposed?",
+        "options": [
+          "$6 and 100 thousand workers",
+          "$6 and 300 thousand workers",
+          "$18 and 200 thousand workers",
+          "$12 and 200 thousand workers."
+        ],
+        "feedback": "A nonbinding floor leaves equilibrium unchanged.",
+        "type": "graph_integration",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "aHash": "087efc8e33d38024e77c010d051a35abb0f7f5d3319f77cc50f78fe5333dc409"
+      }
+    },
+    {
+      "id": "40008",
+      "audit_findings": [
+        "GEA-0228"
+      ],
+      "reason": "Identify the visible curve shift rather than movement along the original curve.",
+      "before": {
+        "q": "Refer to the graph. Why is the move from A to B a decrease in supply rather than merely a decrease in quantity supplied?",
+        "options": [
+          "Supply itself shifts left from S0 to S1",
+          "Quantity supplied rises along the original S0 curve",
+          "Demand itself shifts right from D0 to D1",
+          "The market stays at A on the original curves"
+        ],
+        "feedback": "A quantity-supplied change moves along one curve; here the supply curve itself shifts.",
+        "type": "graph_trap",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "aHash": "139638e2e0840647c1d738ed00772341ad3c09c79e8bb258964615af38e17e57"
+      },
+      "after": {
+        "q": "Refer to the graph. Why is the move from A to B a decrease in supply rather than merely a decrease in quantity supplied?",
+        "options": [
+          "Supply itself shifts left from S0 to S1",
+          "Quantity supplied rises along the original S0 curve",
+          "Demand itself shifts right from D0 to D1",
+          "The market stays at A on the original curves"
+        ],
+        "feedback": "A quantity-supplied change moves along one curve; here the supply curve itself shifts.",
+        "type": "graph_trap",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "aHash": "139638e2e0840647c1d738ed00772341ad3c09c79e8bb258964615af38e17e57"
+      }
+    },
+    {
+      "id": "40002",
+      "audit_findings": [
+        "GEA-0271"
+      ],
+      "reason": "Identify the point beyond the existing frontier.",
+      "before": {
+        "q": "Refer to the graph. Which proposed change would require greater productive capacity rather than reallocation along PPF0?",
+        "options": [
+          "Moving from A to B along PPF0",
+          "Moving from B toward A along PPF0",
+          "Producing at a point beyond PPF0",
+          "Choosing another point located on PPF0"
+        ],
+        "feedback": "Points on PPF0 are attainable now; sustaining a point outside requires an outward capacity shift.",
+        "type": "graph_integration",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "aHash": "b83c49f8e82506858b4f35c273f7c96bc4df7afa25ddf799c2960646dabf8cfb"
+      },
+      "after": {
+        "q": "Refer to the graph. Which proposed change would require greater productive capacity rather than reallocation along PPF0?",
+        "options": [
+          "Moving from A to B along PPF0",
+          "Moving from B toward A along PPF0",
+          "Producing at a point beyond PPF0",
+          "Choosing another point located on PPF0"
+        ],
+        "feedback": "Points on PPF0 are attainable now; sustaining a point outside requires an outward capacity shift.",
+        "type": "graph_integration",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "aHash": "b83c49f8e82506858b4f35c273f7c96bc4df7afa25ddf799c2960646dabf8cfb"
+      }
+    },
+    {
+      "id": "40019",
+      "audit_findings": [
+        "GEA-0325"
+      ],
+      "reason": "Read price and quantity at two labeled graph points.",
+      "before": {
+        "q": "Refer to the graph. What can be concluded about the move from D to B?",
+        "options": [
+          "Price falls; quantity rises in the drawing",
+          "Price and quantity both remain unchanged",
+          "Quantity falls; the price direction is ambiguous",
+          "Price rises; quantity is unchanged in the drawing"
+        ],
+        "feedback": "From D to B, the opposing quantity effects cancel while both shifts raise equilibrium price, so quantity is unchanged and price rises.",
+        "type": "graph_integration",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "aHash": "b98dd92009c8d06218030144ade7f3021fdfaf0ff893f380c830916bfdd3627d"
+      },
+      "after": {
+        "q": "Refer to the graph. What can be concluded about the move from D to B?",
+        "options": [
+          "Price falls; quantity rises in the drawing",
+          "Price and quantity both remain unchanged",
+          "Quantity falls; the price direction is ambiguous",
+          "Price rises; quantity is unchanged in the drawing"
+        ],
+        "feedback": "From D to B, the opposing quantity effects cancel while both shifts raise equilibrium price, so quantity is unchanged and price rises.",
+        "type": "graph_integration",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "aHash": "b98dd92009c8d06218030144ade7f3021fdfaf0ff893f380c830916bfdd3627d"
+      }
+    },
+    {
+      "id": "40023",
+      "audit_findings": [
+        "GEA-0336"
+      ],
+      "reason": "Distinguish desired demand from supply-limited transactions under a binding ceiling.",
+      "before": {
+        "q": "Refer to the graph. At the binding $1,000 rent ceiling, what is the maximum number of apartments that can actually be rented?",
+        "options": [
+          "200 thousand apartments",
+          "300 thousand apartments",
+          "400 thousand apartments",
+          "100 thousand apartments"
+        ],
+        "feedback": "Transactions are limited by the short side, quantity supplied.",
+        "type": "graph_integration",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "aHash": "b8e0c70ba9bc9de867f7d91062ec15e59e0aa8159a246a631f3b8e6adb9ef5a7"
+      },
+      "after": {
+        "q": "Refer to the graph. At the binding $1,000 rent ceiling, what is the maximum number of apartments that can actually be rented?",
+        "options": [
+          "200 thousand apartments",
+          "300 thousand apartments",
+          "400 thousand apartments",
+          "100 thousand apartments"
+        ],
+        "feedback": "Transactions are limited by the short side, quantity supplied.",
+        "type": "graph_integration",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "aHash": "b8e0c70ba9bc9de867f7d91062ec15e59e0aa8159a246a631f3b8e6adb9ef5a7"
+      }
+    },
+    {
+      "id": "40035",
+      "audit_findings": [
+        "GEA-0337"
+      ],
+      "reason": "Calculate buyer and seller burdens relative to the untaxed equilibrium.",
+      "before": {
+        "q": "Refer to the graph. Relative to the original $10 equilibrium price, how is the $4 tax burden divided?",
+        "options": [
+          "Buyers bear all $4; sellers bear none.",
+          "Sellers bear all $4; buyers bear none.",
+          "Buyers gain $2; sellers bear $6.",
+          "Buyers bear $2; sellers bear $2."
+        ],
+        "feedback": "Buyer price rises to 12 and seller price falls to 8.",
+        "type": "graph_integration",
+        "difficulty": "elite",
+        "canonicalDifficulty": "elite",
+        "aHash": "ff9cd661ba05ea444b49c3367b60eacd9ffa0aec82ec3f5a8d7352a7cd6924df"
+      },
+      "after": {
+        "q": "Refer to the graph. Relative to the original $10 equilibrium price, how is the $4 tax burden divided?",
+        "options": [
+          "Buyers bear all $4; sellers bear none.",
+          "Sellers bear all $4; buyers bear none.",
+          "Buyers gain $2; sellers bear $6.",
+          "Buyers bear $2; sellers bear $2."
+        ],
+        "feedback": "Buyer price rises to 12 and seller price falls to 8.",
+        "type": "graph_integration",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "aHash": "ff9cd661ba05ea444b49c3367b60eacd9ffa0aec82ec3f5a8d7352a7cd6924df"
+      }
+    },
+    {
+      "id": "40022",
+      "audit_findings": [
+        "GEA-0364"
+      ],
+      "reason": "Read two graph quantities and calculate the stated ceiling shortage.",
+      "before": {
+        "q": "Refer to the graph. What shortage is created by the $1,000 rent ceiling?",
+        "options": [
+          "100 thousand apartments",
+          "300 thousand apartments",
+          "200 thousand apartments",
+          "400 thousand apartments"
+        ],
+        "feedback": "At the $1,000 ceiling, quantity demanded is 300 thousand apartments and quantity supplied is 100 thousand, so the shortage is 200 thousand apartments.",
+        "type": "graph_calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "aHash": "7393c777951044c775de243ee0f4a09114eb33042b69f27a648c2f7845200c0c"
+      },
+      "after": {
+        "q": "Refer to the graph. What shortage is created by the $1,000 rent ceiling?",
+        "options": [
+          "100 thousand apartments",
+          "300 thousand apartments",
+          "200 thousand apartments",
+          "400 thousand apartments"
+        ],
+        "feedback": "At the $1,000 ceiling, quantity demanded is 300 thousand apartments and quantity supplied is 100 thousand, so the shortage is 200 thousand apartments.",
+        "type": "graph_calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "aHash": "7393c777951044c775de243ee0f4a09114eb33042b69f27a648c2f7845200c0c"
+      }
+    },
+    {
+      "id": "40028",
+      "audit_findings": [
+        "GEA-0420"
+      ],
+      "reason": "Read two graph quantities and calculate the stated floor surplus.",
+      "before": {
+        "q": "Refer to the graph. At the $15 minimum wage, what labor surplus is created?",
+        "options": [
+          "100 thousand workers",
+          "50 thousand workers",
+          "150 thousand workers",
+          "250 thousand workers"
+        ],
+        "feedback": "Labor supplied 250 minus labor demanded 150 equals 100 thousand.",
+        "type": "graph_calculation",
+        "difficulty": "hard",
+        "canonicalDifficulty": "hard",
+        "aHash": "5537b38ca01c9e19b7ce62ac363c1d272eb55c454ca086f3c6dbb544bc2363c8"
+      },
+      "after": {
+        "q": "Refer to the graph. At the $15 minimum wage, what labor surplus is created?",
+        "options": [
+          "100 thousand workers",
+          "50 thousand workers",
+          "150 thousand workers",
+          "250 thousand workers"
+        ],
+        "feedback": "Labor supplied 250 minus labor demanded 150 equals 100 thousand.",
+        "type": "graph_calculation",
+        "difficulty": "medium",
+        "canonicalDifficulty": "medium",
+        "aHash": "5537b38ca01c9e19b7ce62ac363c1d272eb55c454ca086f3c6dbb544bc2363c8"
+      }
+    }
+  ]
+}
