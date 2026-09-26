@@ -1,5 +1,6 @@
 const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
+const micro=require('./microeconomics-approved-revisions.js');
 const path=require('path');
 const vm=require('vm');
 const crypto=require('crypto');
@@ -116,6 +117,10 @@ function runtimeDeckCheck(composition,target){
   const bankReviewGraphIds=new Set(bankReview.filter(c=>c.after.graphRequired===true && c.before.graphRequired!==true).map(c=>c.id));
   const bankReviewGraphDelta=bankReview.reduce((n,c)=>n+Number(c.after.graphRequired===true)-Number(c.before.graphRequired===true),0);
   bankReviewGraphIds.forEach(id=>foundationsGraphIds.add(id));
+  micro.assertCurrentLibrary(library);
+  const microGraphIds=new Set(micro.ledger.changes.filter(c=>c.after.graphRequired===true&&c.before.graphRequired!==true).map(c=>c.id));
+  const ordinaryIds=new Set(Object.values(library.concepts).flatMap(m=>Object.values(m.questions||{}).flat()).map(q=>String(q.id)));
+  const microGraphDelta=micro.ledger.changes.filter(c=>ordinaryIds.has(c.id)&&c.fields.includes('graphRequired')).reduce((n,c)=>n+Number(c.after.graphRequired===true)-Number(c.before.graphRequired===true),0);
   let flagged=0, flaggedOutsideAudit=0, flaggedWithoutImage=0;
   for(const module of Object.values(library.concepts)){
     for(const items of Object.values(module.questions||{})){
@@ -124,7 +129,7 @@ function runtimeDeckCheck(composition,target){
         if(q.graphRequired===true){
           flagged++;
           const id=String(q.canonicalId||q.id||q.questionId||'');
-          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id) && !foundationsGraphIds.has(id) && !openEconomyGraphIds.has(id)) flaggedOutsideAudit++;
+          if(!auditIds.has(id) && !phase3eIds.has(id) && !externalitiesIds.has(id) && !publicGoodsIds.has(id) && !factorMarketIds.has(id) && !consumerChoiceIds.has(id) && !inequalityIds.has(id) && !savingInvestmentIds.has(id) && !qualityGraphIds.has(id) && !foundationsGraphIds.has(id) && !openEconomyGraphIds.has(id) && !microGraphIds.has(id)) flaggedOutsideAudit++;
           if(!q.image) flaggedWithoutImage++;
         }
       }
@@ -133,7 +138,7 @@ function runtimeDeckCheck(composition,target){
   if(auditIds.size!==612) issues.push(`audit id count ${auditIds.size}`);
   if(qualityGraphIds.size!==23) issues.push(`quality remediation graph id count ${qualityGraphIds.size}`);
   if(foundationsGraphIds.size!==23+bankReviewGraphIds.size) issues.push(`foundations remediation graph id count ${foundationsGraphIds.size}`);
-  if(flagged!==1055+openExpectedGraphs+bankReviewGraphDelta) issues.push(`graphRequired count ${flagged}`);
+  if(flagged!==1055+openExpectedGraphs+bankReviewGraphDelta+microGraphDelta) issues.push(`graphRequired count ${flagged}`);
   if(flaggedOutsideAudit) issues.push(`flags outside audited set ${flaggedOutsideAudit}`);
   if(flaggedWithoutImage) issues.push(`flags without image ${flaggedWithoutImage}`);
 

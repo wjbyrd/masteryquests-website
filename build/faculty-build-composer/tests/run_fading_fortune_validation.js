@@ -1,5 +1,6 @@
 const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
 const fs=require('fs');
+const micro=require('./microeconomics-approved-revisions.js');
 const path=require('path');
 const vm=require('vm');
 const root=path.resolve(__dirname,'..');
@@ -49,7 +50,14 @@ function runtimeDeckCheck(composition,target){
   if(new Set(ids).size!==20) issues.push('20 deck duplicate IDs');
   if(pcRuntime.deck.some(q=>!Array.isArray(q.options)||q.options.length!==4)) issues.push('20 deck includes invalid option count');
 
-  const twelve=core.compose(library,recipe('integrated-economic-analysis'));
+  // The original 12-record fixture spans three concepts after approved routing.
+ const twelveLibrary=structuredClone(library);
+ const fixture=micro.baselineLibrary.concepts['integrated-economic-analysis'];
+ const originalIds=new Set(Object.values(fixture.questions).flat().map(q=>String(q.id)));
+ const currentById=new Map(Object.values(library.concepts).flatMap(m=>Object.values(m.questions||{}).flat()).map(q=>[String(q.id),q]));
+ twelveLibrary.concepts['integrated-economic-analysis'].questions=Object.fromEntries(Object.entries(fixture.questions).map(([pool,qs])=>[pool,qs.map(q=>structuredClone(currentById.get(String(q.id))))]));
+ micro.assertCurrentLibrary(library);
+ const twelve=core.compose(twelveLibrary,recipe('integrated-economic-analysis'));
   const twelveRun=runtimeDeckCheck(twelve,10);
   if(twelve.counts.fadingFortuneEligible!==12 || JSON.stringify(twelveRun.supported)!==JSON.stringify([10])) issues.push(`12-inventory targets ${twelve.counts.fadingFortuneEligible}/${JSON.stringify(twelveRun.supported)}`);
   const seventeen=core.compose(library,recipe('competitive-markets'));

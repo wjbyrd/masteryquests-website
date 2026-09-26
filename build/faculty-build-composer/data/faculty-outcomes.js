@@ -2,7 +2,7 @@
 (function(root,data){if(typeof module==='object'&&module.exports)module.exports=data;else root.MQFacultyOutcomePolicy=data;})(typeof globalThis!=='undefined'?globalThis:this,{
   "schemaVersion": 1,
   "policyVersion": "faculty-lo-1",
-  "librarySha256": "46d589e92ee85efa2f98bb3bc364464f13a9d0068fb5585fd01b25fd5b7bcdb0",
+  "librarySha256": "2047e745015c31b25b22585b1a4653e6e594a8bf8834d8c58834b36474abf474",
   "concepts": {
     "ad-as-equilibrium-and-output-gaps": {
       "outcomes": [
@@ -102,8 +102,12 @@
           "conceptId": "aggregate-demand",
           "label": "Identify aggregate-demand shifters and predict their effects",
           "skillIds": [
+            "aggregate_demand",
+            "fiscal_policy",
             "identify_ad_shifters",
+            "monetary_policy_transmission",
             "movement_vs_shift",
+            "opposing_macro_policy_analysis",
             "read_ad_shift"
           ],
           "presets": [
@@ -111,7 +115,7 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 29,
+            "ordinary": 30,
             "checkpoints": 8,
             "repair": 3,
             "bridge": 1,
@@ -120,7 +124,7 @@
               "easy": 6,
               "medium": 6,
               "hard": 6,
-              "elite": 4,
+              "elite": 5,
               "legendary": 7
             },
             "supportedModes": [
@@ -179,10 +183,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 10,
-              "elite": 6,
-              "legendary": 22
+              "medium": 22,
+              "hard": 9,
+              "elite": 7,
+              "legendary": 10
             },
             "supportedModes": [
               "timed",
@@ -240,8 +244,8 @@
             "difficulty": {
               "easy": 10,
               "medium": 10,
-              "hard": 10,
-              "elite": 8,
+              "hard": 13,
+              "elite": 5,
               "legendary": 6
             },
             "supportedModes": [
@@ -910,9 +914,9 @@
             "difficulty": {
               "easy": 5,
               "medium": 5,
-              "hard": 7,
+              "hard": 15,
               "elite": 4,
-              "legendary": 16
+              "legendary": 8
             },
             "supportedModes": [
               "quiz",
@@ -975,10 +979,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
+              "medium": 13,
               "hard": 10,
               "elite": 6,
-              "legendary": 10
+              "legendary": 7
             },
             "supportedModes": [
               "timed",
@@ -1038,10 +1042,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 5,
+              "medium": 10,
               "hard": 5,
-              "elite": 6,
-              "legendary": 17
+              "elite": 4,
+              "legendary": 14
             },
             "supportedModes": [
               "quiz",
@@ -1234,17 +1238,16 @@
             "seed": 0,
             "difficulty": {
               "easy": 14,
-              "medium": 12,
-              "hard": 17,
-              "elite": 15,
-              "legendary": 18
+              "medium": 13,
+              "hard": 32,
+              "elite": 14,
+              "legendary": 3
             },
             "supportedModes": [
               "timed",
               "exam",
               "quiz",
               "unlimited",
-              "legendary",
               "trialGraph",
               "fadingFortune",
               "riskReward"
@@ -1300,10 +1303,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 16,
-              "hard": 16,
+              "medium": 18,
+              "hard": 15,
               "elite": 2,
-              "legendary": 7
+              "legendary": 6
             },
             "supportedModes": [
               "timed",
@@ -1363,10 +1366,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 10,
+              "medium": 11,
+              "hard": 25,
               "elite": 1,
-              "legendary": 16
+              "legendary": 0
             },
             "supportedModes": [
               "timed",
@@ -1426,10 +1429,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 10,
-              "elite": 10,
-              "legendary": 16
+              "medium": 11,
+              "hard": 17,
+              "elite": 5,
+              "legendary": 13
             },
             "supportedModes": [
               "timed",
@@ -1487,9 +1490,9 @@
             "seed": 0,
             "difficulty": {
               "easy": 12,
-              "medium": 11,
+              "medium": 13,
               "hard": 14,
-              "elite": 3,
+              "elite": 1,
               "legendary": 0
             },
             "supportedModes": [
@@ -1526,9 +1529,9 @@
             "seed": 0,
             "difficulty": {
               "easy": 12,
-              "medium": 11,
-              "hard": 14,
-              "elite": 4,
+              "medium": 12,
+              "hard": 15,
+              "elite": 2,
               "legendary": 0
             },
             "supportedModes": [
@@ -1563,17 +1566,17 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 165,
-            "checkpoints": 60,
+            "ordinary": 166,
+            "checkpoints": 59,
             "repair": 18,
             "bridge": 23,
             "seed": 0,
             "difficulty": {
-              "easy": 28,
-              "medium": 28,
-              "hard": 34,
-              "elite": 22,
-              "legendary": 53
+              "easy": 30,
+              "medium": 55,
+              "hard": 68,
+              "elite": 3,
+              "legendary": 10
             },
             "supportedModes": [
               "standard",
@@ -1645,18 +1648,12 @@
             "seed": 0,
             "difficulty": {
               "easy": 7,
-              "medium": 12,
-              "hard": 7,
-              "elite": 3,
+              "medium": 19,
+              "hard": 3,
+              "elite": 0,
               "legendary": 0
             },
             "supportedModes": [
-              "standard",
-              "timed",
-              "exam",
-              "quiz",
-              "unlimited",
-              "score",
               "fadingFortune",
               "riskReward"
             ]
@@ -1702,11 +1699,11 @@
             "bridge": 1,
             "seed": 0,
             "difficulty": {
-              "easy": 12,
-              "medium": 12,
-              "hard": 11,
-              "elite": 5,
-              "legendary": 2
+              "easy": 13,
+              "medium": 22,
+              "hard": 7,
+              "elite": 0,
+              "legendary": 0
             },
             "supportedModes": [
               "timed",
@@ -1748,17 +1745,13 @@
             "bridge": 3,
             "seed": 0,
             "difficulty": {
-              "easy": 15,
-              "medium": 18,
-              "hard": 12,
-              "elite": 4,
-              "legendary": 4
+              "easy": 23,
+              "medium": 28,
+              "hard": 2,
+              "elite": 0,
+              "legendary": 0
             },
             "supportedModes": [
-              "timed",
-              "exam",
-              "quiz",
-              "unlimited",
               "fadingFortune",
               "riskReward"
             ]
@@ -1844,9 +1837,9 @@
             "seed": 0,
             "difficulty": {
               "easy": 2,
-              "medium": 3,
+              "medium": 5,
               "hard": 4,
-              "elite": 2,
+              "elite": 0,
               "legendary": 0
             },
             "supportedModes": [
@@ -1958,17 +1951,17 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 60,
+            "ordinary": 69,
             "checkpoints": 5,
             "repair": 9,
             "bridge": 7,
             "seed": 0,
             "difficulty": {
               "easy": 15,
-              "medium": 15,
-              "hard": 14,
-              "elite": 2,
-              "legendary": 14
+              "medium": 18,
+              "hard": 21,
+              "elite": 3,
+              "legendary": 12
             },
             "supportedModes": [
               "timed",
@@ -2012,11 +2005,11 @@
             "bridge": 30,
             "seed": 0,
             "difficulty": {
-              "easy": 42,
-              "medium": 44,
-              "hard": 48,
-              "elite": 24,
-              "legendary": 39
+              "easy": 44,
+              "medium": 56,
+              "hard": 58,
+              "elite": 16,
+              "legendary": 23
             },
             "supportedModes": [
               "timed",
@@ -2051,11 +2044,11 @@
             "bridge": 9,
             "seed": 0,
             "difficulty": {
-              "easy": 15,
-              "medium": 15,
-              "hard": 15,
-              "elite": 8,
-              "legendary": 22
+              "easy": 16,
+              "medium": 33,
+              "hard": 16,
+              "elite": 4,
+              "legendary": 6
             },
             "supportedModes": [
               "timed",
@@ -2093,10 +2086,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 14,
-              "medium": 13,
-              "hard": 12,
-              "elite": 8,
-              "legendary": 13
+              "medium": 18,
+              "hard": 14,
+              "elite": 4,
+              "legendary": 10
             },
             "supportedModes": [
               "timed",
@@ -2140,7 +2133,16 @@
           "label": "Calculate CPI and inflation using a market basket.",
           "skillIds": [
             "cpi_calculation",
-            "inflation_rate"
+            "inflation_adjustment",
+            "inflation_rate",
+            "inflation_rate_calculation",
+            "labor_incentives",
+            "nominal_vs_real",
+            "percentage_change",
+            "purchasing_power",
+            "real_wage_inflation_adjustment",
+            "real_wage_interpretation",
+            "real_wage_percentage_comparison"
           ],
           "presets": [
             "brief",
@@ -2149,7 +2151,7 @@
           ],
           "coverage": {
             "ordinary": 39,
-            "checkpoints": 15,
+            "checkpoints": 19,
             "repair": 4,
             "bridge": 2,
             "seed": 0,
@@ -2198,11 +2200,26 @@
           "conceptId": "cpi-bias",
           "label": "Analyze substitution, quality, and new-goods bias.",
           "skillIds": [
+            "consumer_response_to_prices",
+            "cost_of_living",
+            "cost_of_living_bias",
+            "cost_of_living_measurement",
             "cpi_bias_interpretation",
+            "cpi_substitution_bias",
+            "fixed_basket_bias_interpretation",
+            "indexation_bias_analysis",
+            "indexed_contract_bias_analysis",
+            "inflation_rate_calculation",
+            "law_of_demand",
             "new_goods_bias",
+            "quality_bias",
             "quality_change_bias",
             "quality_new_goods_bias",
-            "substitution_bias"
+            "real_income",
+            "real_wage_interpretation",
+            "reported_vs_true_inflation_analysis",
+            "substitution_bias",
+            "substitution_effect"
           ],
           "presets": [
             "brief",
@@ -2211,7 +2228,7 @@
           ],
           "coverage": {
             "ordinary": 29,
-            "checkpoints": 12,
+            "checkpoints": 18,
             "repair": 4,
             "bridge": 2,
             "seed": 0,
@@ -2260,11 +2277,19 @@
           "conceptId": "cpi-versus-gdp-deflator",
           "label": "Compare the construction and uses of CPI and the GDP deflator.",
           "skillIds": [
+            "consumer_basket",
+            "consumer_prices",
             "cpi_calculation",
             "cpi_vs_gdp_deflator",
+            "cpi_vs_gdp_deflator_import_effect",
             "deflator_composition",
             "deflator_scope",
-            "index_choice"
+            "diverging_price_indexes_interpretation",
+            "domestic_output",
+            "domestic_production",
+            "import_prices",
+            "index_choice",
+            "price_index_scope_comparison"
           ],
           "presets": [
             "brief",
@@ -2273,7 +2298,7 @@
           ],
           "coverage": {
             "ordinary": 28,
-            "checkpoints": 12,
+            "checkpoints": 15,
             "repair": 2,
             "bridge": 1,
             "seed": 0,
@@ -2338,13 +2363,12 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 5,
-              "hard": 7,
-              "elite": 4,
-              "legendary": 10
+              "medium": 23,
+              "hard": 0,
+              "elite": 0,
+              "legendary": 3
             },
             "supportedModes": [
-              "quiz",
               "fadingFortune",
               "riskReward"
             ]
@@ -2864,9 +2888,13 @@
           "conceptId": "demand-and-supply-shocks",
           "label": "Evaluate combined shocks and stabilization tradeoffs",
           "skillIds": [
+            "aggregate_demand",
             "choose_stabilization_response",
             "evaluate_supply_shock_policy",
             "infer_combined_shocks",
+            "long_run_aggregate_supply",
+            "productivity_and_demand_policy_synthesis",
+            "productivity_growth",
             "simultaneous_shifts",
             "trace_combined_shocks"
           ],
@@ -2875,7 +2903,7 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 17,
+            "ordinary": 18,
             "checkpoints": 7,
             "repair": 2,
             "bridge": 1,
@@ -2885,7 +2913,7 @@
               "medium": 3,
               "hard": 3,
               "elite": 5,
-              "legendary": 6
+              "legendary": 7
             },
             "supportedModes": [
               "legendary",
@@ -3098,10 +3126,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 5,
+              "medium": 6,
               "hard": 5,
               "elite": 0,
-              "legendary": 1
+              "legendary": 0
             },
             "supportedModes": [
               "quiz",
@@ -3311,11 +3339,11 @@
             "bridge": 3,
             "seed": 0,
             "difficulty": {
-              "easy": 5,
-              "medium": 5,
+              "easy": 7,
+              "medium": 7,
               "hard": 5,
-              "elite": 3,
-              "legendary": 8
+              "elite": 1,
+              "legendary": 6
             },
             "supportedModes": [
               "quiz",
@@ -3372,10 +3400,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 15,
-              "elite": 6,
-              "legendary": 38
+              "medium": 27,
+              "hard": 41,
+              "elite": 0,
+              "legendary": 1
             },
             "supportedModes": [
               "standard",
@@ -3383,7 +3411,6 @@
               "exam",
               "quiz",
               "unlimited",
-              "legendary",
               "score",
               "fadingFortune",
               "riskReward"
@@ -3435,13 +3462,12 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 1,
-              "elite": 3,
-              "legendary": 15
+              "medium": 22,
+              "hard": 4,
+              "elite": 1,
+              "legendary": 2
             },
             "supportedModes": [
-              "legendary",
               "fadingFortune",
               "riskReward"
             ]
@@ -3463,24 +3489,19 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 57,
-            "checkpoints": 13,
+            "ordinary": 58,
+            "checkpoints": 12,
             "repair": 6,
             "bridge": 6,
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 13,
-              "elite": 6,
-              "legendary": 18
+              "medium": 44,
+              "hard": 0,
+              "elite": 0,
+              "legendary": 4
             },
             "supportedModes": [
-              "timed",
-              "exam",
-              "quiz",
-              "unlimited",
-              "legendary",
               "fadingFortune",
               "riskReward"
             ]
@@ -3520,11 +3541,11 @@
             "bridge": 8,
             "seed": 0,
             "difficulty": {
-              "easy": 24,
-              "medium": 14,
-              "hard": 32,
-              "elite": 15,
-              "legendary": 19
+              "easy": 26,
+              "medium": 35,
+              "hard": 35,
+              "elite": 2,
+              "legendary": 6
             },
             "supportedModes": [
               "standard",
@@ -3568,10 +3589,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 20,
-              "medium": 20,
-              "hard": 20,
-              "elite": 14,
-              "legendary": 30
+              "medium": 34,
+              "hard": 24,
+              "elite": 10,
+              "legendary": 16
             },
             "supportedModes": [
               "standard",
@@ -3636,10 +3657,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 10,
-              "elite": 8,
-              "legendary": 8
+              "medium": 12,
+              "hard": 15,
+              "elite": 3,
+              "legendary": 6
             },
             "supportedModes": [
               "standard",
@@ -3757,10 +3778,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 0,
-              "medium": 1,
-              "hard": 4,
-              "elite": 5,
-              "legendary": 8
+              "medium": 3,
+              "hard": 6,
+              "elite": 3,
+              "legendary": 6
             },
             "supportedModes": [
               "fadingFortune",
@@ -3804,9 +3825,9 @@
             "seed": 0,
             "difficulty": {
               "easy": 2,
-              "medium": 6,
-              "hard": 6,
-              "elite": 7,
+              "medium": 8,
+              "hard": 7,
+              "elite": 4,
               "legendary": 1
             },
             "supportedModes": [
@@ -3852,9 +3873,9 @@
             "seed": 0,
             "difficulty": {
               "easy": 1,
-              "medium": 8,
-              "hard": 21,
-              "elite": 16,
+              "medium": 17,
+              "hard": 24,
+              "elite": 4,
               "legendary": 2
             },
             "supportedModes": [
@@ -3922,10 +3943,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 31,
-              "medium": 40,
-              "hard": 25,
-              "elite": 9,
-              "legendary": 7
+              "medium": 67,
+              "hard": 14,
+              "elite": 0,
+              "legendary": 0
             },
             "supportedModes": [
               "timed",
@@ -4038,11 +4059,11 @@
             "bridge": 1,
             "seed": 0,
             "difficulty": {
-              "easy": 19,
-              "medium": 27,
-              "hard": 20,
-              "elite": 8,
-              "legendary": 5
+              "easy": 18,
+              "medium": 43,
+              "hard": 18,
+              "elite": 0,
+              "legendary": 0
             },
             "supportedModes": [
               "standard",
@@ -5095,20 +5116,19 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 26,
-            "checkpoints": 6,
+            "ordinary": 27,
+            "checkpoints": 5,
             "repair": 3,
             "bridge": 3,
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 5,
-              "hard": 6,
-              "elite": 2,
-              "legendary": 8
+              "medium": 21,
+              "hard": 0,
+              "elite": 0,
+              "legendary": 1
             },
             "supportedModes": [
-              "quiz",
               "fadingFortune",
               "riskReward"
             ]
@@ -5158,11 +5178,11 @@
             "bridge": 6,
             "seed": 0,
             "difficulty": {
-              "easy": 21,
-              "medium": 29,
-              "hard": 20,
-              "elite": 9,
-              "legendary": 3
+              "easy": 20,
+              "medium": 52,
+              "hard": 8,
+              "elite": 2,
+              "legendary": 0
             },
             "supportedModes": [
               "standard",
@@ -5198,10 +5218,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 15,
-              "medium": 11,
-              "hard": 10,
-              "elite": 3,
-              "legendary": 3
+              "medium": 19,
+              "hard": 7,
+              "elite": 1,
+              "legendary": 0
             },
             "supportedModes": [
               "quiz",
@@ -5534,11 +5554,11 @@
             "bridge": 4,
             "seed": 0,
             "difficulty": {
-              "easy": 15,
-              "medium": 21,
-              "hard": 14,
-              "elite": 7,
-              "legendary": 1
+              "easy": 11,
+              "medium": 37,
+              "hard": 10,
+              "elite": 0,
+              "legendary": 0
             },
             "supportedModes": [
               "standard",
@@ -5572,11 +5592,11 @@
             "bridge": 0,
             "seed": 0,
             "difficulty": {
-              "easy": 12,
-              "medium": 13,
-              "hard": 8,
-              "elite": 3,
-              "legendary": 4
+              "easy": 13,
+              "medium": 20,
+              "hard": 7,
+              "elite": 0,
+              "legendary": 0
             },
             "supportedModes": [
               "quiz",
@@ -5604,11 +5624,11 @@
             "bridge": 2,
             "seed": 0,
             "difficulty": {
-              "easy": 11,
+              "easy": 17,
               "medium": 16,
               "hard": 12,
-              "elite": 4,
-              "legendary": 3
+              "elite": 1,
+              "legendary": 0
             },
             "supportedModes": [
               "timed",
@@ -5647,105 +5667,48 @@
           "conceptId": "integrated-economic-analysis",
           "label": "Apply economic models to linked market and macroeconomic scenarios",
           "skillIds": [
-            "aggregate_demand",
             "assumptions_role",
             "binding_price_ceiling",
             "binding_price_ceiling_shortage",
             "binding_price_floor_labor_surplus",
             "black_markets",
-            "borrower_lender_effects",
-            "business_cycle_recovery",
             "buyer_burden",
             "buyer_price",
             "buyer_seller_tax_equivalence",
             "buyers_sellers_share_tax",
-            "capital_accumulation",
-            "capital_deepening",
-            "capital_per_worker",
-            "capital_scarcity",
-            "catch_up_effect_interpretation",
             "ceiling_distributional_tradeoff",
             "ceiling_shortage_calculation",
             "ceiling_shortage_full_cost_analysis",
             "ceiling_supply_response",
             "circular_flow_components",
-            "combined_real_value_analysis",
-            "combined_real_value_comparison",
-            "consumer_basket",
-            "consumer_prices",
-            "consumer_response_to_prices",
-            "cost_of_living",
-            "cost_of_living_bias",
-            "cost_of_living_measurement",
             "cost_pass_through",
             "cost_shift",
-            "cpi_bias_interpretation",
             "cpi_limits",
-            "cpi_substitution_bias",
-            "cpi_vs_gdp_deflator_import_effect",
             "cross_market_policy_chain",
             "cross_market_tax_incidence_comparison",
-            "cyclical_unemployment_identification",
-            "deflation",
             "demand_elasticity",
-            "diminishing_returns",
-            "diminishing_returns_growth_analysis",
-            "diminishing_returns_to_capital",
-            "discouraged_worker_effect",
-            "discouraged_workers",
-            "diverging_price_indexes_interpretation",
-            "domestic_output",
-            "domestic_production",
             "economic_incidence",
             "economic_models",
             "elasticity_tax_burden",
             "elasticity_tax_revenue_quantity",
-            "employment",
-            "employment_change",
-            "employment_status_classification",
             "equilibrium",
             "equilibrium_quantity",
-            "fiscal_policy",
-            "fixed_basket_bias_interpretation",
-            "foreign_investment",
-            "frictional_unemployment",
             "full_price_nonmoney_cost_analysis",
             "gdp_as_macro_measure",
-            "gdp_deflator",
-            "growth_pattern_diagnosis",
             "growth_policy_tradeoff",
-            "growth_structural_unemployment_link",
             "households_firms_roles",
-            "human_capital",
-            "import_prices",
             "incentive_design_tradeoff",
             "incentives",
             "incentives_secondary_effects",
-            "indexation_bias_analysis",
-            "indexed_contract_bias_analysis",
             "inelastic_demand",
-            "inflation",
             "inflation_adjustment",
-            "inflation_expectations",
-            "inflation_rate_calculation",
             "integrated_transfer",
-            "job_search",
-            "labor_force_definition",
-            "labor_force_flow_analysis",
-            "labor_force_participation",
-            "labor_force_reentry_effect",
-            "labor_incentives",
-            "labor_market_adjustment",
-            "labor_market_signal_quality_analysis",
             "labor_surplus",
             "labor_surplus_calculation",
             "law_of_demand",
             "legal_vs_economic_tax_incidence",
             "less_elastic_side",
             "living_standards",
-            "long_run_aggregate_supply",
-            "long_run_growth",
-            "macro_interpretation",
             "macroeconomics_definition",
             "marginal_behavior",
             "market_allocation",
@@ -5763,26 +5726,14 @@
             "mixed_policy_supply_ceiling",
             "model_application_limits",
             "model_purpose",
-            "monetary_policy_transmission",
             "multi_indicator_macro_diagnosis",
-            "multi_year_labor_force_analysis",
-            "nominal_interest",
-            "nominal_minus_inflation",
-            "nominal_real_labor_market_synthesis",
             "nominal_to_real_wage_bridge",
-            "nominal_vs_real",
             "nonmoney_rationing_costs",
             "nonprice_rationing",
             "nonprice_rationing_interpretation",
             "official_price_vs_full_cost_analysis",
             "opportunity_cost",
             "opportunity_cost_identification",
-            "opposing_macro_policy_analysis",
-            "output_per_worker",
-            "participation_rate",
-            "percentage_calculation",
-            "percentage_change",
-            "physical_capital",
             "policy_analysis",
             "policy_shock_full_cost_synthesis",
             "policy_statement_classification",
@@ -5796,50 +5747,22 @@
             "price_control_hidden_costs",
             "price_floor",
             "price_floor_surplus",
-            "price_index_scope_comparison",
             "price_signal_allocation",
             "price_signals",
             "productive_capacity",
             "productivity",
-            "productivity_and_demand_policy_synthesis",
-            "productivity_displacement_tradeoff_analysis",
-            "productivity_factor_classification",
             "productivity_growth",
-            "productivity_living_standard_link",
-            "purchasing_power",
             "quality_adjustment_policy_analysis",
             "quality_bias",
             "quantity_response",
             "quantity_supplied_quantity_demanded",
-            "real_income",
-            "real_interest_comparison",
-            "real_interest_rate",
-            "real_interest_rate_calculation",
-            "real_interest_rate_interpretation",
-            "real_interest_rate_ranking",
-            "real_living_standard_comparison",
-            "real_living_standard_evidence_analysis",
-            "real_output",
-            "real_vs_nominal_gdp",
-            "real_vs_nominal_values",
             "real_wage_adjustment",
-            "real_wage_growth",
-            "real_wage_inflation_adjustment",
-            "real_wage_interpretation",
-            "real_wage_percentage_comparison",
             "real_wages",
-            "reported_vs_true_inflation_analysis",
             "scarcity_definition",
             "seller_price",
-            "short_run_fluctuations",
             "shortage",
             "shortage_calculation",
             "shortages",
-            "skill_mismatch",
-            "standards_of_living",
-            "structural_unemployment",
-            "substitution_bias",
-            "substitution_effect",
             "supply_decrease_equilibrium_effects",
             "supply_elasticity",
             "supply_shift",
@@ -5852,21 +5775,9 @@
             "tax_wedge",
             "tax_wedge_equilibrium_chain",
             "tax_wedge_market_size",
-            "technological_knowledge",
-            "technology",
-            "technology_adoption",
-            "technology_labor_adjustment_analysis",
             "tradeoff_identification",
             "unemployment",
-            "unemployment_and_lfpr_calculation",
-            "unemployment_measurement",
-            "unemployment_rate",
-            "unemployment_rate_limit_interpretation",
             "unemployment_rate_limits",
-            "unemployment_rate_quality_check",
-            "unemployment_type_comparison",
-            "unexpected_inflation_borrower_lender_effects",
-            "unexpected_inflation_real_return_analysis",
             "unintended_consequences"
           ],
           "presets": [
@@ -5875,8 +5786,8 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 12,
-            "checkpoints": 80,
+            "ordinary": 9,
+            "checkpoints": 37,
             "repair": 6,
             "bridge": 6,
             "seed": 0,
@@ -5884,14 +5795,10 @@
               "easy": 0,
               "medium": 0,
               "hard": 0,
-              "elite": 5,
-              "legendary": 7
+              "elite": 4,
+              "legendary": 5
             },
-            "supportedModes": [
-              "legendary",
-              "fadingFortune",
-              "riskReward"
-            ]
+            "supportedModes": []
           }
         }
       ],
@@ -6563,14 +6470,24 @@
           "label": "Use real GDP per person and compounding to compare living standards.",
           "skillIds": [
             "growth_rate_catch_up",
+            "inflation_adjustment",
             "limits_of_real_gdp_per_person",
+            "output_per_worker",
             "productivity_and_living_standards",
             "productivity_calculation",
+            "productivity_growth",
+            "productivity_living_standard_link",
             "real_gdp_per_person",
             "real_gdp_per_person_comparison",
             "real_gdp_per_person_growth",
+            "real_living_standard_comparison",
+            "real_living_standard_evidence_analysis",
+            "real_output",
+            "real_vs_nominal_values",
+            "real_wage_growth",
             "rule_of_70",
-            "rule_of_70_comparison"
+            "rule_of_70_comparison",
+            "standards_of_living"
           ],
           "presets": [
             "brief",
@@ -6579,7 +6496,7 @@
           ],
           "coverage": {
             "ordinary": 35,
-            "checkpoints": 15,
+            "checkpoints": 18,
             "repair": 4,
             "bridge": 2,
             "seed": 0,
@@ -6808,11 +6725,11 @@
             "bridge": 6,
             "seed": 0,
             "difficulty": {
-              "easy": 10,
-              "medium": 10,
+              "easy": 11,
+              "medium": 22,
               "hard": 10,
-              "elite": 5,
-              "legendary": 18
+              "elite": 3,
+              "legendary": 7
             },
             "supportedModes": [
               "timed",
@@ -7077,10 +6994,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
+              "medium": 14,
               "hard": 10,
-              "elite": 3,
-              "legendary": 5
+              "elite": 1,
+              "legendary": 3
             },
             "supportedModes": [
               "timed",
@@ -7462,11 +7379,11 @@
             "bridge": 8,
             "seed": 2,
             "difficulty": {
-              "easy": 72,
-              "medium": 104,
-              "hard": 84,
-              "elite": 44,
-              "legendary": 32
+              "easy": 74,
+              "medium": 122,
+              "hard": 95,
+              "elite": 24,
+              "legendary": 21
             },
             "supportedModes": [
               "standard",
@@ -7584,10 +7501,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 10,
-              "elite": 5,
-              "legendary": 19
+              "medium": 24,
+              "hard": 20,
+              "elite": 0,
+              "legendary": 0
             },
             "supportedModes": [
               "timed",
@@ -7644,10 +7561,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 5,
-              "hard": 5,
+              "medium": 6,
+              "hard": 15,
               "elite": 5,
-              "legendary": 13
+              "legendary": 2
             },
             "supportedModes": [
               "quiz",
@@ -7716,10 +7633,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 15,
-              "medium": 22,
-              "hard": 23,
-              "elite": 27,
-              "legendary": 43
+              "medium": 50,
+              "hard": 26,
+              "elite": 16,
+              "legendary": 23
             },
             "supportedModes": [
               "timed",
@@ -7969,10 +7886,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 5,
-              "hard": 5,
-              "elite": 3,
-              "legendary": 5
+              "medium": 11,
+              "hard": 6,
+              "elite": 1,
+              "legendary": 0
             },
             "supportedModes": [
               "quiz",
@@ -8758,10 +8675,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 23,
-              "medium": 20,
+              "medium": 35,
               "hard": 44,
-              "elite": 10,
-              "legendary": 31
+              "elite": 5,
+              "legendary": 21
             },
             "supportedModes": [
               "timed",
@@ -8803,10 +8720,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 11,
-              "medium": 10,
-              "hard": 10,
-              "elite": 5,
-              "legendary": 19
+              "medium": 24,
+              "hard": 20,
+              "elite": 0,
+              "legendary": 0
             },
             "supportedModes": [
               "timed",
@@ -8855,10 +8772,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 18,
-              "medium": 23,
-              "hard": 23,
-              "elite": 22,
-              "legendary": 45
+              "medium": 37,
+              "hard": 36,
+              "elite": 16,
+              "legendary": 24
             },
             "supportedModes": [
               "timed",
@@ -8967,10 +8884,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 22,
-              "medium": 20,
-              "hard": 25,
+              "medium": 40,
+              "hard": 31,
               "elite": 8,
-              "legendary": 36
+              "legendary": 10
             },
             "supportedModes": [
               "timed",
@@ -9013,10 +8930,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 20,
-              "medium": 19,
-              "hard": 20,
+              "medium": 40,
+              "hard": 22,
               "elite": 17,
-              "legendary": 39
+              "legendary": 16
             },
             "supportedModes": [
               "timed",
@@ -9051,10 +8968,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 8,
-              "medium": 10,
+              "medium": 16,
               "hard": 17,
               "elite": 5,
-              "legendary": 12
+              "legendary": 6
             },
             "supportedModes": [
               "timed",
@@ -9091,9 +9008,9 @@
             "difficulty": {
               "easy": 10,
               "medium": 12,
-              "hard": 13,
+              "hard": 14,
               "elite": 10,
-              "legendary": 9
+              "legendary": 8
             },
             "supportedModes": [
               "timed",
@@ -9163,10 +9080,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 12,
+              "medium": 22,
+              "hard": 18,
               "elite": 0,
-              "legendary": 18
+              "legendary": 0
             },
             "supportedModes": [
               "timed",
@@ -9223,10 +9140,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 12,
-              "medium": 10,
+              "medium": 18,
               "hard": 13,
               "elite": 8,
-              "legendary": 16
+              "legendary": 8
             },
             "supportedModes": [
               "timed",
@@ -9349,10 +9266,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
+              "medium": 20,
               "hard": 10,
               "elite": 4,
-              "legendary": 15
+              "legendary": 5
             },
             "supportedModes": [
               "timed",
@@ -9409,9 +9326,9 @@
             "difficulty": {
               "easy": 10,
               "medium": 12,
-              "hard": 13,
+              "hard": 14,
               "elite": 10,
-              "legendary": 9
+              "legendary": 8
             },
             "supportedModes": [
               "timed",
@@ -9472,10 +9389,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
+              "medium": 22,
               "hard": 17,
               "elite": 9,
-              "legendary": 20
+              "legendary": 8
             },
             "supportedModes": [
               "timed",
@@ -9536,10 +9453,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 11,
+              "medium": 15,
+              "hard": 13,
               "elite": 9,
-              "legendary": 18
+              "legendary": 11
             },
             "supportedModes": [
               "timed",
@@ -9769,10 +9686,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 22,
+              "medium": 16,
+              "hard": 28,
               "elite": 10,
-              "legendary": 18
+              "legendary": 6
             },
             "supportedModes": [
               "timed",
@@ -9780,6 +9697,7 @@
               "quiz",
               "unlimited",
               "legendary",
+              "trialGraph",
               "fadingFortune",
               "riskReward"
             ]
@@ -9814,17 +9732,16 @@
             "seed": 0,
             "difficulty": {
               "easy": 12,
-              "medium": 11,
+              "medium": 23,
               "hard": 18,
               "elite": 0,
-              "legendary": 12
+              "legendary": 0
             },
             "supportedModes": [
               "timed",
               "exam",
               "quiz",
               "unlimited",
-              "legendary",
               "fadingFortune",
               "riskReward"
             ]
@@ -9854,10 +9771,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 8,
-              "medium": 9,
+              "medium": 14,
               "hard": 10,
               "elite": 8,
-              "legendary": 19
+              "legendary": 14
             },
             "supportedModes": [
               "timed",
@@ -9942,17 +9859,16 @@
             "seed": 0,
             "difficulty": {
               "easy": 8,
-              "medium": 10,
-              "hard": 9,
+              "medium": 13,
+              "hard": 12,
               "elite": 0,
-              "legendary": 9
+              "legendary": 3
             },
             "supportedModes": [
               "timed",
               "exam",
               "quiz",
               "unlimited",
-              "legendary",
               "fadingFortune",
               "riskReward"
             ]
@@ -10014,10 +9930,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 10,
+              "medium": 13,
+              "hard": 13,
               "elite": 0,
-              "legendary": 12
+              "legendary": 6
             },
             "supportedModes": [
               "timed",
@@ -10131,12 +10047,13 @@
             "difficulty": {
               "easy": 7,
               "medium": 5,
-              "hard": 8,
+              "hard": 14,
               "elite": 0,
-              "legendary": 6
+              "legendary": 0
             },
             "supportedModes": [
               "quiz",
+              "trialGraph",
               "fadingFortune",
               "riskReward"
             ]
@@ -10163,13 +10080,14 @@
             "seed": 0,
             "difficulty": {
               "easy": 3,
-              "medium": 5,
+              "medium": 11,
               "hard": 14,
               "elite": 10,
-              "legendary": 12
+              "legendary": 6
             },
             "supportedModes": [
               "legendary",
+              "trialGraph",
               "fadingFortune",
               "riskReward"
             ]
@@ -10280,17 +10198,16 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
+              "medium": 22,
               "hard": 17,
               "elite": 0,
-              "legendary": 12
+              "legendary": 0
             },
             "supportedModes": [
               "timed",
               "exam",
               "quiz",
               "unlimited",
-              "legendary",
               "fadingFortune",
               "riskReward"
             ]
@@ -10342,10 +10259,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
+              "medium": 15,
               "hard": 10,
               "elite": 8,
-              "legendary": 16
+              "legendary": 11
             },
             "supportedModes": [
               "timed",
@@ -10641,10 +10558,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 30,
-              "medium": 28,
-              "hard": 40,
-              "elite": 19,
-              "legendary": 39
+              "medium": 29,
+              "hard": 72,
+              "elite": 18,
+              "legendary": 7
             },
             "supportedModes": [
               "standard",
@@ -10693,10 +10610,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 22,
-              "medium": 20,
-              "hard": 19,
-              "elite": 15,
-              "legendary": 33
+              "medium": 28,
+              "hard": 22,
+              "elite": 12,
+              "legendary": 25
             },
             "supportedModes": [
               "timed",
@@ -10739,10 +10656,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 24,
-              "medium": 30,
-              "hard": 26,
-              "elite": 9,
-              "legendary": 27
+              "medium": 34,
+              "hard": 34,
+              "elite": 6,
+              "legendary": 18
             },
             "supportedModes": [
               "timed",
@@ -10944,11 +10861,11 @@
             "bridge": 4,
             "seed": 0,
             "difficulty": {
-              "easy": 12,
-              "medium": 8,
+              "easy": 13,
+              "medium": 12,
               "hard": 4,
-              "elite": 1,
-              "legendary": 5
+              "elite": 0,
+              "legendary": 1
             },
             "supportedModes": [
               "trialGraph",
@@ -10981,13 +10898,12 @@
             "seed": 0,
             "difficulty": {
               "easy": 7,
-              "medium": 2,
-              "hard": 1,
+              "medium": 6,
+              "hard": 2,
               "elite": 1,
-              "legendary": 7
+              "legendary": 2
             },
             "supportedModes": [
-              "legendary",
               "fadingFortune",
               "riskReward"
             ]
@@ -11015,14 +10931,14 @@
             "bridge": 0,
             "seed": 0,
             "difficulty": {
-              "easy": 5,
-              "medium": 4,
-              "hard": 17,
-              "elite": 3,
-              "legendary": 7
+              "easy": 6,
+              "medium": 8,
+              "hard": 19,
+              "elite": 0,
+              "legendary": 3
             },
             "supportedModes": [
-              "legendary",
+              "quiz",
               "fadingFortune",
               "riskReward"
             ]
@@ -11073,10 +10989,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 1,
-              "medium": 2,
-              "hard": 11,
-              "elite": 1,
-              "legendary": 7
+              "medium": 6,
+              "hard": 14,
+              "elite": 0,
+              "legendary": 1
             },
             "supportedModes": [
               "fadingFortune",
@@ -11105,9 +11021,9 @@
             "seed": 0,
             "difficulty": {
               "easy": 9,
-              "medium": 8,
+              "medium": 9,
               "hard": 0,
-              "elite": 2,
+              "elite": 1,
               "legendary": 0
             },
             "supportedModes": [
@@ -11176,10 +11092,10 @@
             "seed": 1,
             "difficulty": {
               "easy": 4,
-              "medium": 4,
+              "medium": 7,
               "hard": 4,
-              "elite": 2,
-              "legendary": 3
+              "elite": 1,
+              "legendary": 1
             },
             "supportedModes": [
               "fadingFortune",
@@ -11264,9 +11180,9 @@
             "seed": 0,
             "difficulty": {
               "easy": 2,
-              "medium": 2,
-              "hard": 4,
-              "elite": 2,
+              "medium": 3,
+              "hard": 5,
+              "elite": 0,
               "legendary": 0
             },
             "supportedModes": [
@@ -11506,17 +11422,17 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 45,
+            "ordinary": 54,
             "checkpoints": 15,
             "repair": 6,
             "bridge": 6,
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 10,
-              "elite": 2,
-              "legendary": 13
+              "medium": 12,
+              "hard": 17,
+              "elite": 3,
+              "legendary": 12
             },
             "supportedModes": [
               "timed",
@@ -11598,10 +11514,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 18,
-              "medium": 7,
+              "medium": 9,
               "hard": 8,
               "elite": 1,
-              "legendary": 4
+              "legendary": 2
             },
             "supportedModes": [
               "quiz",
@@ -11660,11 +11576,11 @@
             "bridge": 2,
             "seed": 0,
             "difficulty": {
-              "easy": 16,
-              "medium": 24,
-              "hard": 15,
-              "elite": 7,
-              "legendary": 7
+              "easy": 17,
+              "medium": 26,
+              "hard": 19,
+              "elite": 4,
+              "legendary": 3
             },
             "supportedModes": [
               "timed",
@@ -12021,10 +11937,13 @@
             "gdp_deflator",
             "gdp_deflator_growth",
             "gdp_welfare_scope",
+            "nominal_real_labor_market_synthesis",
             "nominal_vs_real_gdp",
             "price_output_decomposition",
             "real_gdp_calculation",
-            "real_growth_rate"
+            "real_growth_rate",
+            "real_vs_nominal_gdp",
+            "unemployment_measurement"
           ],
           "presets": [
             "brief",
@@ -12032,7 +11951,7 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 31,
+            "ordinary": 32,
             "checkpoints": 12,
             "repair": 4,
             "bridge": 2,
@@ -12042,7 +11961,7 @@
               "medium": 7,
               "hard": 8,
               "elite": 4,
-              "legendary": 6
+              "legendary": 7
             },
             "supportedModes": [
               "standard",
@@ -12082,11 +12001,30 @@
           "conceptId": "real-versus-nominal-interest-rates",
           "label": "Calculate and interpret real and nominal interest rates.",
           "skillIds": [
+            "borrower_lender_effects",
             "borrower_lender_inflation",
+            "combined_real_value_analysis",
+            "combined_real_value_comparison",
+            "deflation",
             "ex_ante_ex_post_real_rate",
             "fisher_boundary",
+            "inflation",
+            "inflation_adjustment",
+            "inflation_expectations",
             "inflation_rate",
-            "real_interest_rate"
+            "nominal_interest",
+            "nominal_minus_inflation",
+            "purchasing_power",
+            "real_interest_comparison",
+            "real_interest_rate",
+            "real_interest_rate_calculation",
+            "real_interest_rate_interpretation",
+            "real_interest_rate_ranking",
+            "real_vs_nominal_values",
+            "real_wage_adjustment",
+            "real_wage_interpretation",
+            "unexpected_inflation_borrower_lender_effects",
+            "unexpected_inflation_real_return_analysis"
           ],
           "presets": [
             "brief",
@@ -12095,7 +12033,7 @@
           ],
           "coverage": {
             "ordinary": 31,
-            "checkpoints": 12,
+            "checkpoints": 20,
             "repair": 2,
             "bridge": 1,
             "seed": 0,
@@ -12453,11 +12391,11 @@
             "bridge": 7,
             "seed": 0,
             "difficulty": {
-              "easy": 10,
-              "medium": 10,
-              "hard": 13,
-              "elite": 10,
-              "legendary": 31
+              "easy": 12,
+              "medium": 18,
+              "hard": 20,
+              "elite": 7,
+              "legendary": 17
             },
             "supportedModes": [
               "timed",
@@ -12594,10 +12532,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 11,
-              "medium": 12,
-              "hard": 13,
-              "elite": 7,
-              "legendary": 10
+              "medium": 14,
+              "hard": 15,
+              "elite": 4,
+              "legendary": 9
             },
             "supportedModes": [
               "timed",
@@ -12635,12 +12573,26 @@
           "conceptId": "sources-of-productivity",
           "label": "Analyze physical capital, human capital, natural resources, and technology.",
           "skillIds": [
+            "capital_accumulation",
+            "capital_deepening",
+            "capital_per_worker",
+            "capital_scarcity",
+            "catch_up_effect_interpretation",
+            "diminishing_returns",
+            "diminishing_returns_growth_analysis",
+            "diminishing_returns_to_capital",
+            "foreign_investment",
+            "growth_pattern_diagnosis",
             "human_capital",
             "natural_resources",
             "physical_capital",
             "productivity_calculation",
+            "productivity_factor_classification",
+            "productivity_growth",
             "real_gdp_per_person",
-            "technological_knowledge"
+            "technological_knowledge",
+            "technology",
+            "technology_adoption"
           ],
           "presets": [
             "brief",
@@ -12649,7 +12601,7 @@
           ],
           "coverage": {
             "ordinary": 36,
-            "checkpoints": 24,
+            "checkpoints": 29,
             "repair": 6,
             "bridge": 6,
             "seed": 0,
@@ -12961,10 +12913,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 5,
+              "medium": 8,
               "hard": 5,
-              "elite": 3,
-              "legendary": 3
+              "elite": 2,
+              "legendary": 1
             },
             "supportedModes": [
               "quiz",
@@ -13125,10 +13077,10 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 5,
-              "hard": 6,
-              "elite": 9,
-              "legendary": 18
+              "medium": 17,
+              "hard": 13,
+              "elite": 2,
+              "legendary": 6
             },
             "supportedModes": [
               "quiz",
@@ -13429,14 +13381,13 @@
             "seed": 0,
             "difficulty": {
               "easy": 5,
-              "medium": 14,
+              "medium": 23,
               "hard": 12,
-              "elite": 7,
-              "legendary": 9
+              "elite": 3,
+              "legendary": 4
             },
             "supportedModes": [
               "quiz",
-              "legendary",
               "trialGraph",
               "fadingFortune",
               "riskReward"
@@ -13488,24 +13439,23 @@
             "full"
           ],
           "coverage": {
-            "ordinary": 58,
-            "checkpoints": 20,
+            "ordinary": 59,
+            "checkpoints": 19,
             "repair": 6,
             "bridge": 6,
             "seed": 0,
             "difficulty": {
               "easy": 10,
-              "medium": 10,
-              "hard": 11,
-              "elite": 7,
-              "legendary": 20
+              "medium": 16,
+              "hard": 28,
+              "elite": 2,
+              "legendary": 3
             },
             "supportedModes": [
               "timed",
               "exam",
               "quiz",
               "unlimited",
-              "legendary",
               "trialGraph",
               "fadingFortune",
               "riskReward"
@@ -13778,19 +13728,37 @@
           "label": "Classify labor-force status and calculate unemployment and participation rates.",
           "skillIds": [
             "active_search_requirement",
+            "business_cycle_recovery",
             "combined_unemployment_participation_calculation",
+            "discouraged_worker_effect",
             "discouraged_worker_rate_effect",
             "discouraged_workers",
+            "employment",
+            "employment_change",
             "employment_classification",
+            "employment_status_classification",
             "employment_to_unemployment_flow",
             "frictional_unemployment",
+            "job_search",
             "labor_force_calculation",
             "labor_force_definition",
+            "labor_force_flow_analysis",
             "labor_force_participation",
+            "labor_force_reentry_effect",
+            "labor_market_signal_quality_analysis",
+            "macro_interpretation",
+            "multi_year_labor_force_analysis",
             "natural_rate",
+            "participation_rate",
+            "percentage_calculation",
             "structural_unemployment",
             "underemployment_classification",
-            "unemployment_rate"
+            "unemployment",
+            "unemployment_and_lfpr_calculation",
+            "unemployment_rate",
+            "unemployment_rate_limit_interpretation",
+            "unemployment_rate_limits",
+            "unemployment_rate_quality_check"
           ],
           "presets": [
             "brief",
@@ -13799,7 +13767,7 @@
           ],
           "coverage": {
             "ordinary": 49,
-            "checkpoints": 20,
+            "checkpoints": 29,
             "repair": 5,
             "bridge": 5,
             "seed": 0,
@@ -13848,11 +13816,23 @@
           "conceptId": "unemployment-types",
           "label": "Distinguish frictional, structural, and cyclical unemployment.",
           "skillIds": [
+            "aggregate_demand",
             "cyclical_unemployment",
+            "cyclical_unemployment_identification",
             "employment_classification",
             "frictional_unemployment",
+            "growth_structural_unemployment_link",
+            "labor_market_adjustment",
+            "long_run_growth",
             "natural_rate",
-            "structural_unemployment"
+            "productivity_displacement_tradeoff_analysis",
+            "productivity_growth",
+            "short_run_fluctuations",
+            "skill_mismatch",
+            "structural_unemployment",
+            "technological_knowledge",
+            "technology_labor_adjustment_analysis",
+            "unemployment_type_comparison"
           ],
           "presets": [
             "brief",
@@ -13861,7 +13841,7 @@
           ],
           "coverage": {
             "ordinary": 29,
-            "checkpoints": 21,
+            "checkpoints": 26,
             "repair": 3,
             "bridge": 4,
             "seed": 0,
@@ -13904,5 +13884,5 @@
       "hidden": false
     }
   },
-  "policySha256": "50f0ff774940df07d7fb36d6faa1c9b739c11eec81662d79fc6e0486961e0535"
+  "policySha256": "be1f02856bd96b63af89676a6f7fa07235fb8aa98b4cab4fdb1acc1cc0f456b9"
 });

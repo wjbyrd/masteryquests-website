@@ -3,6 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const approved = require('./general-economics-approved-revisions.js');
+const micro = require('./microeconomics-approved-revisions.js');
 const repoRoot = path.resolve(__dirname, '../../..');
 const read = relative => JSON.parse(fs.readFileSync(path.join(repoRoot, 'validation_artifacts', relative), 'utf8'));
 const assessmentAudits = [
@@ -41,18 +42,18 @@ function applyAssessmentRevisions(historical) {
       else expected[field]=latest.after[field];
     }
   }
-  return approved.applyApprovedRevisions(expected);
+  return micro.applyApprovedRevisions(approved.applyApprovedRevisions(expected));
 }
 const historicalQuestion = id => historicalQuestions.get(String(id));
 function provenanceSnapshot(id, current) {
   const firstRevision = revisions.find(row => String(row.id) === String(id));
-  return {...approved.beforeApprovedRevisions(id, current), ...firstRevision?.before, ...historicalQuestion(id), id: String(id)};
+  return {...approved.beforeApprovedRevisions(id, micro.beforeApprovedRevisions(id, current)), ...firstRevision?.before, ...historicalQuestion(id), id: String(id)};
 }
 const currentAuditedQuestion = (id, fallback) => {
   const historical = historicalQuestion(id);
   const firstRevision = revisions.find(row => String(row.id) === String(id));
   if (!historical && !firstRevision && !fallback) return undefined;
-  return applyAssessmentRevisions({...approved.beforeApprovedRevisions(id, fallback), ...firstRevision?.before, ...historical, id: String(id)});
+  return applyAssessmentRevisions({...approved.beforeApprovedRevisions(id, micro.beforeApprovedRevisions(id, fallback)), ...firstRevision?.before, ...historical, id: String(id)});
 };
 
 function assertAuditedFindings(result, auditName, entries) {

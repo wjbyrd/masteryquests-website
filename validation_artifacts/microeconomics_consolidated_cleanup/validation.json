@@ -1,0 +1,1070 @@
+{
+  "status": "PASS",
+  "baselineRef": "c171eca5645e27baef4e36a4eb990bb0b07f61c7",
+  "baselineSha256": "e7c83aff3f0d08252c253b5cec08552ee6f8ac5868a2861c801f9ae2761f9241",
+  "canonical": {
+    "concepts": 149,
+    "questions": 9779,
+    "graphs": 1133,
+    "assets": 507
+  },
+  "questionsAudited": 9779,
+  "questionsChanged": 273,
+  "unchanged": 9506,
+  "changesByConcept": {
+    "aggregate-demand": 3,
+    "bank-balance-sheets-reserves-and-capital": 1,
+    "binding-price-ceilings": 8,
+    "binding-price-floors": 5,
+    "capital-flows-and-net-capital-outflow": 1,
+    "competitive-markets": 1,
+    "consumer-and-producer-surplus": 22,
+    "consumer-choice": 1,
+    "costs-of-production": 14,
+    "demand": 2,
+    "elasticity": 8,
+    "information-asymmetry-behavioral-and-political-economy": 4,
+    "international-trade-and-trade-policy": 12,
+    "long-run-aggregate-supply-and-potential-output": 1,
+    "market-equilibrium": 1,
+    "monopolistic-competition": 64,
+    "monopoly": 37,
+    "oligopoly": 28,
+    "opportunity-cost": 9,
+    "perfect-competition": 42,
+    "production-possibilities-frontier": 1,
+    "short-run-aggregate-supply": 1,
+    "stabilization-policy": 1,
+    "statutory-versus-economic-tax-incidence": 2,
+    "tax-incidence": 4
+  },
+  "changesByOriginalDifficulty": {
+    "elite": 5,
+    "hard": 31,
+    "legendary": 232,
+    "medium": 5
+  },
+  "difficultyBefore": {
+    "easy": 1790,
+    "elite": 810,
+    "hard": 1992,
+    "legendary": 2120,
+    "medium": 2054,
+    "unknown": 1013
+  },
+  "difficultyAfter": {
+    "easy": 1813,
+    "elite": 599,
+    "hard": 2175,
+    "legendary": 1601,
+    "medium": 2578,
+    "unknown": 1013
+  },
+  "reclassifications": [
+    {
+      "id": "P62C-CPS-L-026",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62E-COP-L-056",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62E-COP-L-059",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62F-PC-C-024",
+      "from": "hard",
+      "to": "medium"
+    },
+    {
+      "id": "P62C-CPS-L-089",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62E-COP-L-050",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62E-COP-L-051",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62E-COP-L-061",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62E-COP-L-062",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62B-ELAS-LB-032",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-063",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-066",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-069",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-072",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-075",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-078",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-081",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-084",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-087",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-090",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-032",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-034",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-037",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-038",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-044",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62E-COP-L-029",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62E-COP-L-032",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62E-COP-L-035",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62E-COP-L-038",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62E-COP-L-041",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62E-COP-L-044",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62E-COP-L-075",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-062",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-061",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-065",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-064",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-068",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-067",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-071",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-070",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-074",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-073",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-077",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-076",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-080",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-079",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-083",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-082",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-086",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-085",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62H-MCMP-L-089",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62H-MCMP-L-088",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P52A-OPPC-L-004",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P72-OPPC-L-021",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P72-OPPC-LB-007",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9130",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9123",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9033",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P52B-COMP-L-003",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62C-CPS-L-076",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62C-CPS-LB-036",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "42661",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62B-ELAS-L-060",
+      "from": "legendary",
+      "to": "medium"
+    },
+    {
+      "id": "P62F-PC-L-031",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-033",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-035",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-036",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-039",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-040",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-041",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-042",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-043",
+      "from": "legendary",
+      "to": "hard"
+    },
+    {
+      "id": "P62F-PC-L-045",
+      "from": "legendary",
+      "to": "hard"
+    }
+  ],
+  "routingCorrections": [
+    "P52A-OPPC-M-002",
+    "P52A-OPPC-H-002",
+    "P72-OPPC-H-011",
+    "P72-OPPC-EL-004",
+    "P52A-OPPC-L-004",
+    "P72-OPPC-L-021",
+    "P52A-OPPC-B3-002",
+    "P72-OPPC-B3-005",
+    "P72-OPPC-LB-007"
+  ],
+  "graphsRemoved": [
+    "P62E-COP-L-056",
+    "P62I-OLI-LB-001",
+    "P62I-OLI-LB-004"
+  ],
+  "legendaryLengthCueFlagsBefore": 457,
+  "legendaryLengthCueFlagsAfter": 188,
+  "originalFlagsResolved": 285,
+  "generated": [
+    {
+      "preset": "general-foundations",
+      "selectedConceptIds": 10,
+      "generatedOccurrences": 832,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "micro-market-foundations",
+      "selectedConceptIds": 11,
+      "generatedOccurrences": 787,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "micro-market-policy",
+      "selectedConceptIds": 11,
+      "generatedOccurrences": 709,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "micro-firms-markets",
+      "selectedConceptIds": 5,
+      "generatedOccurrences": 2610,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "micro-market-failures-public-goods",
+      "selectedConceptIds": 3,
+      "generatedOccurrences": 362,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "micro-factor-choice-inequality",
+      "selectedConceptIds": 3,
+      "generatedOccurrences": 560,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": false
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "micro-trade-welfare",
+      "selectedConceptIds": 4,
+      "generatedOccurrences": 1529,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "micro-principles-core",
+      "selectedConceptIds": 14,
+      "generatedOccurrences": 4566,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "macro-measurement-growth",
+      "selectedConceptIds": 17,
+      "generatedOccurrences": 988,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": false
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "macro-saving-investment-budgets-debt",
+      "selectedConceptIds": 7,
+      "generatedOccurrences": 268,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "money-banking-inflation",
+      "selectedConceptIds": 13,
+      "generatedOccurrences": 818,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "stabilization-policy",
+      "selectedConceptIds": 14,
+      "generatedOccurrences": 730,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "preset": "open-economy-macro",
+      "selectedConceptIds": 6,
+      "generatedOccurrences": 240,
+      "modes": [
+        {
+          "mode": "standard",
+          "ok": true
+        },
+        {
+          "mode": "timed",
+          "ok": true
+        },
+        {
+          "mode": "exam",
+          "ok": true
+        },
+        {
+          "mode": "quiz",
+          "ok": true
+        },
+        {
+          "mode": "unlimited",
+          "ok": true
+        },
+        {
+          "mode": "legendary",
+          "ok": true
+        },
+        {
+          "mode": "score",
+          "ok": true
+        },
+        {
+          "mode": "trialGraph",
+          "ok": true
+        },
+        {
+          "mode": "fadingFortune",
+          "ok": true
+        },
+        {
+          "mode": "riskReward",
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "constructionRuleCounts": {
+    "absolute-distractors-nuanced-key": 98,
+    "key-length-145-percent": 1565,
+    "key-only-qualification": 212,
+    "key-only-reasoning-clause": 216
+  },
+  "originalLegendaryLengthFlagsClearedByContent": 207,
+  "originalLegendaryLengthFlagsReclassifiedOnly": 78
+}

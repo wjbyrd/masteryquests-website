@@ -8,12 +8,16 @@ import {loadComposerLibrary,collectComposerQuestions,auditQuestionConstruction} 
 const require=createRequire(import.meta.url),core=require('../composer-core.js');
 const integrity=require('./composer-integrity-contracts.js');
 const approved=require('./general-economics-approved-revisions.js');
+const micro=require('./microeconomics-approved-revisions.js');
 const out='validation_artifacts/question_bank_audit_20260919';
+const resultOut='validation_artifacts/microeconomics_consolidated_cleanup';
+fs.mkdirSync(resultOut,{recursive:true});
 const baselineRef='c171eca5645e27baef4e36a4eb990bb0b07f61c7';
 const relative='build/faculty-build-composer/data/composer_library.js';
 const source=execFileSync('git',['show',`${baselineRef}:${relative}`],{encoding:'utf8',maxBuffer:64*1024*1024});
 const baseline=JSON.parse(source.slice('window.MQ_COMPOSER_LIBRARY='.length).trim().slice(0,-1));
 const current=loadComposerLibrary(),changes=JSON.parse(fs.readFileSync(out+'/revisions.json','utf8'));
+micro.assertCurrentLibrary(current);
 const before=collectComposerQuestions(baseline),after=collectComposerQuestions(current);
 const byId=new Map(after.map(e=>[String(e.id),e])),beforeById=new Map(before.map(e=>[String(e.id),e]));
 const sha=s=>crypto.createHash('sha256').update(s).digest('hex');
@@ -24,9 +28,9 @@ for(const e of before){
  const revision=changes.find(c=>c.id===e.id),actual=byId.get(e.id);
  if(revision)assert.deepEqual(revision.before,e.question,'Revision before-state matches immutable Git baseline: '+e.id);
  let expected=structuredClone(revision?.after||e.question);if(expected.image===null)delete expected.image;
- expected=approved.applyApprovedRevisions(expected);
+ expected=micro.applyApprovedRevisions(approved.applyApprovedRevisions(expected));
  assert.deepEqual(actual.question,expected,'Canonical after-state, including untouched fields: '+e.id);
- if(revision)assert.equal(actual.conceptId,revision.after.primaryConceptId,'Concept routing '+e.id);
+ if(revision)assert.equal(actual.conceptId,(micro.approvedQuestion(e.id)||revision.after).primaryConceptId,'Concept routing '+e.id);
  assert.equal(actual.question.options.filter(o=>sha(norm(o))===actual.question.aHash).length,1,'Unique answer key '+e.id);
  assert(typeof actual.question.tag==='string'&&actual.question.tag.trim(),'Required tag '+e.id);
  const module=current.concepts[actual.conceptId];
@@ -50,7 +54,7 @@ for(const id of ['P62I-OLI-LB-001','P62I-OLI-LB-004']){
  assert.equal(key,`${nash[0]} is the unique equilibrium; ${joint[0]} maximizes joint payoff`);
  payoffTables.push({id,payoffs,nash,joint});
 }
-fs.writeFileSync(out+'/boss-payoff-table-proof.json',JSON.stringify(payoffTables,null,2)+'\n');
+fs.writeFileSync(resultOut+'/boss-payoff-table-proof.json',JSON.stringify(payoffTables,null,2)+'\n');
 const composer=fs.readFileSync('build/faculty-build-composer/composer.js','utf8');
 const presetText=composer.match(/const PRESETS = (\[[\s\S]*?\n\]);/)[1];
 const presets=vm.runInNewContext('('+presetText+')');
@@ -59,7 +63,15 @@ for(const preset of presets){
  for(const id of preset.conceptIds)assert(current.concepts[id],'Broken preset '+id);
  const recipe={schemaVersion:core.RECIPE_SCHEMA_VERSION,title:'Audit',slug:'question-bank-audit',selectedConceptIds:[...preset.conceptIds],supportedModes:[...core.MODE_ORDER],checkpointFocus:Object.fromEntries(core.CHECKPOINT_ORDER.map(k=>[k,null]))};
  const composition=core.compose(current,recipe),old=core.compose(baseline,recipe);
- assert.deepEqual(composition.errors,old.errors,'No new composition errors '+preset.id);
+ const exception=micro.ledger.presetChanges.find(r=>r.id===preset.id);
+ if(exception){
+  assert.deepEqual([...preset.conceptIds],exception.conceptIds,'Exact calibrated preset');
+  const prior=core.compose(micro.baselineLibrary,recipe);
+  assert.deepEqual(prior.errors,exception.before,'Frozen pre-cleanup mode availability');
+  assert.equal(prior.banks.legendary.length,exception.legendaryBefore);
+  assert.equal(composition.banks.legendary.length,exception.legendaryAfter);
+ }
+ assert.deepEqual(composition.errors,exception?.after||old.errors,'Exact composition limitations '+preset.id);
  const qs=[...Object.values(composition.banks).flat(),...Object.values(composition.challengeQuestionBanks).flat(),...composition.repairQuestions,...composition.bridgeQuestions];
  for(const q of qs){
    assert(!Object.hasOwn(q,'answer')&&!Object.hasOwn(q,'correct'),'Student-safe key handling '+q.id);
@@ -81,6 +93,6 @@ const allAfterLengthFlags=new Set(construction.filter(f=>f.rule==='key-length-14
 const report={status:'PASS',baselineRef,baselineSha256:sha(source),canonical,questionsAudited:after.length,questionsChanged:changes.length,unchanged:after.length-changes.length,changesByConcept:countBy(changes,c=>c.concept),changesByOriginalDifficulty:countBy(changes,c=>c.difficulty),difficultyBefore:countBy(before,e=>e.question.canonicalDifficulty||'unknown'),difficultyAfter:countBy(after,e=>e.question.canonicalDifficulty||'unknown'),reclassifications:changes.filter(c=>c.before.canonicalDifficulty!==c.after.canonicalDifficulty).map(c=>({id:c.id,from:c.before.canonicalDifficulty,to:c.after.canonicalDifficulty})),routingCorrections:changes.filter(c=>c.before.primaryConceptId!==c.after.primaryConceptId).map(c=>c.id),graphsRemoved:changes.filter(c=>c.before.image&&!c.after.image).map(c=>c.id),legendaryLengthCueFlagsBefore:beforeCues.size,legendaryLengthCueFlagsAfter:afterCues.size,originalFlagsResolved:[...beforeCues].filter(id=>!afterCues.has(id)).length,generated,constructionRuleCounts:countBy(construction,f=>f.rule)};
 report.originalLegendaryLengthFlagsClearedByContent=[...beforeCues].filter(id=>!allAfterLengthFlags.has(id)).length;
 report.originalLegendaryLengthFlagsReclassifiedOnly=[...beforeCues].filter(id=>allAfterLengthFlags.has(id)&&!afterCues.has(id)).length;
-fs.writeFileSync(out+'/validation.json',JSON.stringify(report,null,2)+'\n');
-fs.writeFileSync(out+'/legendary-review-index.json',JSON.stringify(legendary(before).map(e=>({id:e.id,concept:e.conceptId,primarySkill:e.question.primarySkill,changed:changes.some(c=>c.id===e.id),difficultyAfter:byId.get(e.id).question.canonicalDifficulty,flagsBefore:beforeConstruction.filter(f=>f.questionId===e.id).map(f=>f.rule),flagsAfter:construction.filter(f=>f.questionId===e.id).map(f=>f.rule)})),null,2)+'\n');
+fs.writeFileSync(resultOut+'/validation.json',JSON.stringify(report,null,2)+'\n');
+fs.writeFileSync(resultOut+'/legendary-review-index.json',JSON.stringify(legendary(before).map(e=>({id:e.id,concept:e.conceptId,primarySkill:e.question.primarySkill,changed:changes.some(c=>c.id===e.id),difficultyAfter:byId.get(e.id).question.canonicalDifficulty,flagsBefore:beforeConstruction.filter(f=>f.questionId===e.id).map(f=>f.rule),flagsAfter:construction.filter(f=>f.questionId===e.id).map(f=>f.rule)})),null,2)+'\n');
 console.log(JSON.stringify({status:report.status,questions:after.length,changed:changes.length,legendaryCueFlags:[beforeCues.size,afterCues.size],presets:generated.length}));

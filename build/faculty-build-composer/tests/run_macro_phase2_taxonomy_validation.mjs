@@ -9,6 +9,10 @@ import {fileURLToPath} from 'node:url';
 
 const require=createRequire(import.meta.url);
 const {assertCanonicalIntegrity}=require('./composer-integrity-contracts.js');
+const micro=require('./microeconomics-approved-revisions.js');
+const approvedRoutes=micro.ledger.routing.filter(r=>r.removeFromMicro);
+const routeIds=approvedRoutes.map(r=>r.id);
+const routeCount=id=>approvedRoutes.filter(r=>r.to===id).length;
 const {writeTestArtifact}=require('./composer-test-helpers.js');
 const composerRoot=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const repo=path.resolve(composerRoot,'..','..');
@@ -91,6 +95,9 @@ check('Phase 1 files consumed',[inventoryPath,taxonomyPath,issuesPath,resourcePa
 check('Macro family parent count',macroFamilies.length===10,{actual:macroFamilies.length,expected:10});
 check('Current child concept count',currentChildIds.length===51&&new Set(currentChildIds).size===51,{actual:currentChildIds.length,expected:51});
 const integrity=assertCanonicalIntegrity(library);
+micro.assertCurrentLibrary(library);
+for(const id of Object.keys(expectedNewCounts))expectedNewCounts[id]+=routeCount(id);
+for(const family of macroFamilies)expectedFamilyCounts[family.id]+=family.conceptIds.reduce((n,id)=>n+routeCount(id),0);
 check('Library registry IDs synchronized',new Set(Object.keys(library.concepts)).size===library.registry.concepts.length&&library.registry.concepts.length===registry.concepts.length,{moduleCount:Object.keys(library.concepts).length,embeddedRegistry:library.registry.concepts.length,fileRegistry:registry.concepts.length});
 check('Library semantic hashes synchronized',library.librarySha256===registry.librarySha256&&library.librarySha256===manifest.librarySha256,{librarySha256:library.librarySha256});
 
@@ -98,12 +105,13 @@ const ordinary=currentChildIds.flatMap(id=>uniqueEntries(library.concepts[id],id
 const supplement=uniqueEntries(library.concepts[supplementId],supplementId);
 const ordinaryIds=ordinary.map(row=>qid(row.question));
 const supplementIds=supplement.map(row=>qid(row.question));
-check('Ordinary Macro count',ordinary.length===2758&&new Set(ordinaryIds).size===2758,{actual:ordinary.length,unique:new Set(ordinaryIds).size,expected:2758});
+check('Ordinary Macro count',ordinary.length===2758+routeIds.length&&new Set(ordinaryIds).size===2758+routeIds.length,{actual:ordinary.length,unique:new Set(ordinaryIds).size,expected:2758+routeIds.length});
 check('Supplement count',supplement.length===112&&new Set(supplementIds).size===112,{actual:supplement.length,unique:new Set(supplementIds).size,expected:112});
-check('Total Macro count',new Set([...ordinaryIds,...supplementIds]).size===2870,{actual:new Set([...ordinaryIds,...supplementIds]).size,expected:2870});
+check('Total Macro count',new Set([...ordinaryIds,...supplementIds]).size===2870+routeIds.length,{actual:new Set([...ordinaryIds,...supplementIds]).size,expected:2870+routeIds.length});
 check('No ordinary/supplement overlap',ordinaryIds.every(id=>!new Set(supplementIds).has(id)));
 const overall=metrics([...ordinary,...supplement]);
-check('Category totals',overall.practice===1778&&overall.checkpoint===620&&overall.adaptiveSupport===360&&overall.supplemental===112,overall);
+const routedMetrics=metrics(ordinary.filter(row=>routeIds.includes(qid(row.question))));
+check('Category totals',overall.practice===1778+routedMetrics.practice&&overall.checkpoint===620+routedMetrics.checkpoint&&overall.adaptiveSupport===360&&overall.supplemental===112,overall);
 
 const familySummaries={};
 for(const family of macroFamilies){
@@ -139,7 +147,7 @@ check('No duplicate canonical IDs across current children',new Set(ordinaryIds).
 // Preserve exact membership using the checked-in migration inventory, not an
 // external TEMP file that froze content before subsequent assessment audits.
 const historicalIds=inventory.questions.map(row=>row.questionId).sort();
-assert.deepEqual([...ordinaryIds,...supplementIds].sort(),historicalIds,'Original Macro canonical membership changed');
+assert.deepEqual([...ordinaryIds,...supplementIds].sort(),[...historicalIds,...routeIds].sort(),'Original Macro membership plus exact authorized additions');
 const approved=readJson(path.join(repo,'audit_tools/macro_phase2/macro_phase2_validation.json'));
 for(const family of macroFamilies) assert.deepEqual(family.conceptIds,approved.familySummaries[family.id].childIds,'Approved family child membership '+family.id);
 const macroComposition=core.compose(library,{schemaVersion:core.RECIPE_SCHEMA_VERSION,title:'Current Macro integrity',slug:'current-macro-integrity',supportedModes:[...core.MODE_ORDER],selectedConceptIds:currentChildIds});

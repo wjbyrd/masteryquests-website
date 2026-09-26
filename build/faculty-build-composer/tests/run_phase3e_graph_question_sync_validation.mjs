@@ -13,6 +13,7 @@ const require = createRequire(import.meta.url);
 const {assertCanonicalIntegrity} = require('./composer-integrity-contracts.js');
 const {currentAuditedQuestion} = require('./composer-audit-contracts.js');
 const approved = require('./general-economics-approved-revisions.js');
+const micro = require('./microeconomics-approved-revisions.js');
 const core = require("../composer-core.js");
 const helpers = require("./composer-test-helpers.js");
 const testRoot = path.dirname(fileURLToPath(import.meta.url));
@@ -146,9 +147,9 @@ async function run() {
         pass(JSON.stringify(question[field]) === JSON.stringify(value), `Aligned current field ${author.id}: ${field}`);
       }
     }
-    const expectedDifficulty = alignment?.after.difficulty || author.pool;
+    const expectedDifficulty = micro.approvedQuestion(author.id)?.difficulty || alignment?.after.difficulty || author.pool;
     pass(pool === expectedDifficulty && question.difficulty === expectedDifficulty && question.canonicalDifficulty === expectedDifficulty, `Difficulty ${author.id}`);
-    const curated = approved.approvedQuestion(author.id) || (alignment ? {...priorCurated, ...alignment.after} : priorCurated);
+    const curated = micro.approvedQuestion(author.id) || approved.approvedQuestion(author.id) || (alignment ? {...priorCurated, ...alignment.after} : priorCurated);
     pass(
       curated ? question.q === curated.q && question.feedback === curated.feedback : question.q === author.q && question.feedback === author.feedback,
       `Canonical copy changed ${author.id}`
