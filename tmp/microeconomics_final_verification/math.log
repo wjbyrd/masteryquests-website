@@ -1,0 +1,167 @@
+{
+  "status": "validated implementation arithmetic/models",
+  "checks": 662,
+  "displayReviewDispositions": [
+    {
+      "questionID": "P62G-MON-LB-009",
+      "formula": "(64-20)*22-200-100",
+      "reason": "Intermediate post-charge profit establishes continued activity; key asks unchanged output/DWL and $100 transfer."
+    },
+    {
+      "questionID": "P62G-MON-LB-021",
+      "formula": "(72-20)*26-200-100",
+      "reason": "Intermediate post-charge profit establishes continued activity; key asks unchanged output/DWL and $100 transfer."
+    },
+    {
+      "questionID": "P62G-MON-LB-033",
+      "formula": "(80-20)*30-200-100",
+      "reason": "Intermediate post-charge profit establishes continued activity; key asks unchanged output/DWL and $100 transfer."
+    },
+    {
+      "questionID": "P62H-MCMP-LB-012",
+      "formula": "26.25-(10+10)",
+      "reason": "Positive computed markup supports qualitative key; feedback prints price and MC separately."
+    },
+    {
+      "questionID": "P62H-MCMP-LB-024",
+      "formula": "29.5-(10+12)",
+      "reason": "Positive computed markup supports qualitative key; feedback prints price and MC separately."
+    },
+    {
+      "questionID": "P62H-MCMP-LB-036",
+      "formula": "32.75-(10+14)",
+      "reason": "Positive computed markup supports qualitative key; feedback prints price and MC separately."
+    },
+    {
+      "questionID": "P62C-CPS-L-002",
+      "formula": "15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-004",
+      "formula": "25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-005",
+      "formula": "35+25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-007",
+      "formula": "15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-009",
+      "formula": "25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-010",
+      "formula": "35+25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-012",
+      "formula": "15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-014",
+      "formula": "25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-015",
+      "formula": "35+25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-045",
+      "formula": "15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-047",
+      "formula": "25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-048",
+      "formula": "35+25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-050",
+      "formula": "15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-052",
+      "formula": "25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-053",
+      "formula": "35+25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-055",
+      "formula": "15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-057",
+      "formula": "25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "P62C-CPS-L-058",
+      "formula": "35+25+15+5",
+      "reason": "Baseline efficient surplus is an intermediate; final task applies misallocation, per-trade resource cost, or unused-seller cutoff, separately checked by schedule mode."
+    },
+    {
+      "questionID": "PMS-CPS-BR-024",
+      "formula": "15-15",
+      "reason": "Intermediate calculation supports stated qualitative or comparison answer; final key and feedback reviewed."
+    },
+    {
+      "questionID": "42637",
+      "formula": "8/7",
+      "reason": "Exact fractional or spelled-out result is equivalent to computed decimal."
+    },
+    {
+      "questionID": "42574",
+      "formula": "(40-8)/8",
+      "reason": "Intermediate calculation supports stated qualitative or comparison answer; final key and feedback reviewed."
+    },
+    {
+      "questionID": "42617",
+      "formula": "(88-4*14)/6",
+      "reason": "Exact fractional or spelled-out result is equivalent to computed decimal."
+    },
+    {
+      "questionID": "P62B-ELAS-B3-006",
+      "formula": "3*10/(120-3*10)",
+      "reason": "Exact fractional or spelled-out result is equivalent to computed decimal."
+    },
+    {
+      "questionID": "43005",
+      "formula": "100-20",
+      "reason": "Intermediate calculation supports stated qualitative or comparison answer; final key and feedback reviewed."
+    },
+    {
+      "questionID": "PM6-MON-BR-091",
+      "formula": "1/(1-1/4)",
+      "reason": "Intermediate calculation supports stated qualitative or comparison answer; final key and feedback reviewed."
+    },
+    {
+      "questionID": "PM5-PC-BR-034",
+      "formula": "100000-75000-25000",
+      "reason": "Intermediate calculation supports stated qualitative or comparison answer; final key and feedback reviewed."
+    }
+  ],
+  "unresolvedDisplayReviews": 0
+}

@@ -1,0 +1,29 @@
+
+Generating General Economics: 1,589 questions
+Checking General Economics: 1,589 questions in 1,104 PDF pages...
+General Economics verified. PDF size: 4.63 MB
+
+Generating Microeconomics: 6,301 questions
+Prepared 2,000 PDF questions
+Prepared 4,000 PDF questions
+Prepared 6,000 PDF questions
+Laid out 2,000 PDF questions
+Laid out 4,000 PDF questions
+Laid out 6,000 PDF questions
+Checking Microeconomics: 6,301 questions in 4,407 PDF pages...
+Microeconomics verified. PDF size: 19.18 MB
+
+Generating Macroeconomics: 4,745 questions
+Prepared 2,000 PDF questions
+Prepared 4,000 PDF questions
+Laid out 2,000 PDF questions
+Laid out 4,000 PDF questions
+Checking Macroeconomics: 4,745 questions in 3,354 PDF pages...
+Macroeconomics verified. PDF size: 11.6 MB
+Traceback (most recent call last):
+  File "C:\Users\Jennings\Documents\GitHub\masteryquests-website\tools\export_faculty_question_bank.py", line 823, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\Users\Jennings\Documents\GitHub\masteryquests-website\tools\export_faculty_question_bank.py", line 801, in main
+    os.replace(path, output / path.name)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\faculty_exports\\.export-oqwj_az9\\microeconomics_question_bank.pdf' -> 'C:\\Users\\Jennings\\Documents\\GitHub\\masteryquests-website\\faculty_exports\\microeconomics_question_bank.pdf'

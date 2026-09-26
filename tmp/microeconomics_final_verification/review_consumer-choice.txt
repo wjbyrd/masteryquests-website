@@ -1,0 +1,262 @@
+42636
+easy
+application
+interpret_relative_price
+Good X costs $6 and good Y costs $6. What is the opportunity cost of one unit of X in units of Y?
+A:1 unit of Y [KEY]
+B:6 units of Y
+C:12 units of Y
+D:0.5 unit of Y
+Feedback: One unit of X costs $6, the same as one unit of Y. Buying one X therefore gives up one Y.
+
+
+42630
+medium
+application
+interpret_relative_price
+A budget line has Y on the vertical axis and X on the horizontal axis. X costs $5 and Y costs $10. What is its slope?
+A:−2
+B:0.5
+C:−0.5 [KEY]
+D:2
+Feedback: The slope is −Px/Py = −5/10 = −0.5: one more X requires giving up half a Y.
+
+
+42634
+medium
+application
+interpret_relative_price
+One unit of X costs 0.4 units of Y. If Y costs $10, what is the price of X?
+A:$25
+B:$10.40
+C:$4 [KEY]
+D:$9.60
+Feedback: Px/Py = 0.4, so Px = 0.4 × $10 = $4.
+
+
+42637
+medium
+application
+interpret_relative_price
+X costs $7 and Y costs $8. What is the opportunity cost of one Y, expressed in units of X?
+A:7/8 units of X
+B:8/7 units of X [KEY]
+C:1 unit of X
+D:15 units of X
+Feedback: To buy one Y, the shopper gives up $8/$7 = 8/7 units of X. Reversing which good is acquired reverses the price ratio.
+
+
+42629
+medium
+application
+interpret_relative_price
+X costs $4 and Y costs $8. A shopper gives up three units of Y to buy X without changing spending. How many units of X can replace them?
+A:1.5 units of X
+B:6 units of X [KEY]
+C:3 units of X
+D:12 units of X
+Feedback: Three units of Y release $24, which buys six units of X at $4 each.
+
+
+42635
+hard
+application
+interpret_relative_price
+X initially costs $5 and Y costs $12. X rises to $6 while Y rises to $18. Has X become more or less costly in units of Y?
+A:More costly: the ratio rises because X has a higher dollar price.
+B:Unchanged: both prices increased.
+C:Less costly: the ratio falls from 12/5 to 3.
+D:Less costly: the ratio falls from 5/12 to 1/3. [KEY]
+Feedback: Relative cost depends on Px/Py. It falls from about 0.417 to 0.333 even though the dollar price of X rises.
+
+
+42638
+hard
+application
+interpret_relative_price
+X costs $3 and Y costs $10. A student says that doubling income halves the opportunity cost of X. What is the error?
+A:Income changes the price ratio, but the opportunity cost remains 3 Y.
+B:The opportunity cost doubles because purchasing power doubles.
+C:Income changes affordability, but the unchanged price ratio still makes one X cost 0.3 Y. [KEY]
+D:The student should halve both money prices when income doubles.
+Feedback: Opportunity cost in units of Y is Px/Py = 3/10. An income increase shifts the budget line outward without changing its slope.
+
+
+42631
+hard
+application
+interpret_relative_price
+Initially X costs $6 and Y costs $12. Both prices then double while income stays fixed. Which comparison is correct?
+A:The opportunity cost of X doubles; both budget intercepts halve.
+B:The opportunity cost of X stays at 0.5 Y; both budget intercepts stay fixed.
+C:The opportunity cost of X halves; both budget intercepts double.
+D:The opportunity cost of X stays at 0.5 Y; both budget intercepts halve. [KEY]
+Feedback: Doubling both prices leaves their ratio unchanged, but fixed income buys half as much of either good.
+
+
+42562
+hard
+integration
+unaffordable_bundle
+Use the graph’s original prices, $4 per yogurt and $8 per cereal box, and income of $40. A grant raises income to $52. Does bundle C, eight yogurts and three cereal boxes, become feasible, and what additional grant would just make it feasible?
+A:It becomes feasible; $4 of income remains unspent.
+B:It remains infeasible; another $16 is required.
+C:It remains infeasible; another $4 is required. [KEY]
+D:It becomes feasible; no income remains unspent.
+Feedback: Bundle C costs 8×$4+3×$8=$56. The $52 budget is still $4 short; the original $16 shortfall is partly covered by the first grant.
+question-assets/consumer-choice/CHOICE-01.webp
+
+42565
+hard
+integration
+budget_equation
+The graph shows a $40 budget with yogurt at $4 and cereal at $8. A proposed bundle contains six yogurts and two cereal boxes. A seller then raises only the cereal price to $10. Which adjustment keeps spending within $40 while preserving the six yogurts?
+A:Keep two cereal boxes; a price change leaves the original budget equation valid.
+B:Reduce cereal to 1.6 boxes; the budget pivots inward rather than shifting in parallel. [KEY]
+C:Reduce cereal to 1.6 boxes; the budget shifts in parallel because income is unchanged.
+D:Increase cereal to 2.5 boxes; the budget pivots outward as cereal becomes more expensive.
+Feedback: Six yogurts cost $24, leaving $16 for cereal; at $10 each that buys 1.6 boxes. Only cereal’s price changes, so its intercept moves while the yogurt intercept stays fixed.
+question-assets/consumer-choice/CHOICE-01.webp
+
+42571
+hard
+integration
+relative_price_change
+Cereal’s price falls from $8 to $4 as shown, while yogurt stays at $4. Income subsequently falls from $40 to $32. Compare cereal’s opportunity cost and the affordability of four yogurts plus four cereal boxes with the original situation.
+A:Cereal’s opportunity cost rises from one yogurt to two; the bundle changes from unaffordable to just affordable.
+B:Cereal’s opportunity cost falls from two yogurts to one; the bundle remains unaffordable because income falls.
+C:Cereal’s opportunity cost remains two yogurts; the bundle becomes affordable only if income returns to $40.
+D:Cereal’s opportunity cost falls from two yogurts to one; the bundle changes from unaffordable to just affordable. [KEY]
+Feedback: The price ratio falls from 8/4=2 to 4/4=1. The bundle originally costs $48, above $40; afterwards it costs $32, exactly the new income.
+question-assets/consumer-choice/CHOICE-02.webp
+
+42574
+hard
+integration
+feasible_set_contraction
+The graph shows yogurt rising from $4 to $8 while cereal stays $8 and income stays $40. A consumer previously bought six yogurts and one cereal box. If the cereal box is retained, what yogurt adjustment restores feasibility, and why?
+A:Keep six yogurts; the budget contracts only for cereal-heavy bundles.
+B:Reduce yogurt from six to five; the new bundle costs exactly $40.
+C:Reduce yogurt from six to four; the new bundle costs exactly $40. [KEY]
+D:Increase yogurt from six to eight; more units spread the price increase.
+Feedback: Retaining cereal uses $8, leaving $32. At $8 per yogurt, four yogurts are affordable. The original six-yogurt bundle would now cost $56.
+question-assets/consumer-choice/CHOICE-03.webp
+
+42577
+hard
+integration
+slope_change
+With yogurt horizontal, its price doubles from $4 to $8 while cereal stays $8. Income then doubles from $40 to $80. Relative to the original budget, which claim correctly separates the income and relative-price effects?
+A:Both intercepts return to their original values, so doubling income reverses the price change completely.
+B:The yogurt intercept returns to 10, the cereal intercept rises from 5 to 10, and the budget remains steeper. [KEY]
+C:Both intercepts double, while the slope returns to its original value because income doubles.
+D:The yogurt intercept falls to 5, the cereal intercept stays 5, and income cannot affect either intercept.
+Feedback: The final intercepts are 80/8=10 for each good. Originally they were 10 yogurts and 5 cereal boxes. The slope changes from −4/8 to −8/8; income does not restore the old price ratio.
+question-assets/consumer-choice/CHOICE-03.webp
+
+42583
+hard
+integration
+budget_vs_demand
+The budget contracts from $40 to $32 with prices fixed at $4 for yogurt and $8 for cereal. With tastes unchanged, the consumer moves from four yogurts and three cereal boxes to six yogurts and one cereal box. Which inference uses the observed choices rather than the budget shift alone?
+A:Both goods are inferior because the budget set contracts, regardless of the chosen quantities.
+B:Yogurt is normal and cereal is inferior because yogurt consumption rises and cereal consumption falls.
+C:Both goods are normal because both bundles exhaust their respective incomes.
+D:Over this income change yogurt behaves as an inferior good and cereal as a normal good; the budget lines alone would not reveal this. [KEY]
+Feedback: Income falls while yogurt consumption rises, the inferior-good pattern. Cereal consumption falls with income, the normal-good pattern. Affordability alone does not establish either classification.
+question-assets/consumer-choice/CHOICE-04.webp
+
+42569
+legendary
+integration
+pivot_vs_shift
+The graph first shows cereal’s price falling from $8 to $4 while yogurt stays $4 and income stays $40. Income then falls to $32. Relative to the original budget, which final intercept comparison is correct?
+A:Maximum yogurt and cereal both fall by 20%; the combined change is a parallel inward shift.
+B:Maximum yogurt falls from 10 to 8, but maximum cereal rises from 5 to 8; the combined change is not a parallel shift. [KEY]
+C:Maximum yogurt stays at 10 and cereal rises to 8; only the original pivot matters.
+D:Maximum yogurt rises to 8 and cereal falls to 5; the combined change reverses both price effects.
+Feedback: After both changes the intercepts are $32/$4=8 for each good. Compared with the original intercepts 10 and 5, one falls and the other rises. Income and relative-price effects must be combined.
+question-assets/consumer-choice/CHOICE-02.webp
+
+42581
+legendary
+integration
+income_intercept
+The graph shows income falling from $40 to $32 with yogurt at $4 and cereal at $8. Suppose both prices then fall by 20%. How does the final budget compare with the original $40 budget?
+A:It remains 20% smaller: lower prices do not offset the income loss.
+B:It has the same feasible set and slope: both income and prices are 80% of their original values. [KEY]
+C:It expands beyond the original set: the two separate price cuts add to a 40% income gain.
+D:It has the original yogurt intercept but a different cereal intercept: proportional price cuts change relative prices.
+Feedback: Final prices are $3.20 and $6.40. The intercepts are 32/3.2=10 and 32/6.4=5, exactly the original ones; the relative-price slope is unchanged.
+question-assets/consumer-choice/CHOICE-04.webp
+
+42593
+legendary
+integration
+attainable_indifference_curve
+The graph places IC3 beyond the current budget. A cash grant makes a point on IC3 attainable. A restricted voucher of the same dollar amount permits only cereal purchases and does not reach IC3 or any higher indifference curve, though a lower indifference curve is attainable. Which conclusion follows for this consumer?
+A:The voucher gives the same utility as cash because equal face values create identical feasible sets.
+B:The cash grant can reach the higher utility level; the restricted voucher cannot be treated as equivalent merely because its face value is the same. [KEY]
+C:The voucher gives higher utility because restricting cereal purchases enlarges the feasible set.
+D:Neither policy can improve utility because IC3 was unattainable before the policy.
+Feedback: The policy comparison depends on feasible choices. Cash allows the point on IC3; the stated restriction excludes it. Equal nominal values do not establish equal utility when the feasible sets differ.
+question-assets/consumer-choice/CHOICE-06.webp
+
+42605
+legendary
+integration
+equimarginal_rule
+At the smooth interior tangency shown, MUx/Px=MUy/Py. The price of X falls while income and Y’s price stay fixed. At the old bundle, which adjustment is supported, assuming diminishing marginal utility and an interior new optimum?
+A:MUx/Px initially falls below MUy/Py; reallocating spending away from X restores equality.
+B:MUx/Px initially exceeds MUy/Py; reallocating spending toward X helps restore equality, but the final bundle must also satisfy the new budget. [KEY]
+C:The old equality remains because a price change cannot affect marginal utility per dollar at a fixed bundle.
+D:MUx must equal MUy at the new optimum even when prices differ, so the new budget is irrelevant.
+Feedback: At the unchanged bundle MUx is initially unchanged but Px is lower, increasing MUx/Px. Reallocation toward X can lower its marginal utility until the per-dollar condition is restored, subject to the new budget constraint.
+question-assets/consumer-choice/CHOICE-08.webp
+
+42617
+legendary
+integration
+construct_budget_constraint
+Income is $88, X costs $6 and Y costs $14. A consumer wants to retain four units of Y after X’s price rises to $8. What is the maximum affordable X, and which comparison with the original budget is correct?
+A:Four X; the maximum at four Y rises from 3 to 4 because the relative price of X falls.
+B:Four X; the maximum at four Y falls from 5⅓ to 4 because the relative price of X rises. [KEY]
+C:Eleven X; spend all $88 on X while also retaining four Y.
+D:5⅓ X; the original budget boundary remains valid because income is unchanged.
+Feedback: Four Y cost $56, leaving $32. That buys 32/6=5⅓ X originally but 32/8=4 after the price rise. The price change rotates the budget rather than changing nominal income.
+
+
+42633
+legendary
+integration
+interpret_relative_price
+X initially costs $3 and Y costs $8. After X rises to $6, a shopper says “the opportunity cost of two extra X is still three-quarters of a Y because income did not change.” Which correction is right?
+A:Two extra X now cost the income needed for 0.75 Y; unchanged income holds the price ratio fixed.
+B:Two extra X now cost the income needed for 1.5 Y; opportunity cost depends on relative prices, not unchanged income. [KEY]
+C:Two extra X now cost the income needed for 2.67 Y; use Y’s price divided by X’s price for each X.
+D:Two extra X now cost the income needed for 6 Y; the dollar price is already measured in Y units.
+Feedback: At the new prices one X costs 6/8=0.75 Y, so two X cost 1.5 Y. The former two-X cost was 2×3/8=0.75 Y; income does not determine this ratio.
+
+
+42626
+medium
+application
+analyze_budget_change
+Income is $60; X and Y each cost $6. X falls to $3 while Y stays at $6. What are the new X- and Y-intercepts?
+A:10 X and 20 Y
+B:20 X and 20 Y
+C:20 X and 10 Y [KEY]
+D:10 X and 10 Y
+Feedback: The intercepts are income divided by each price: 60/3=20 X and 60/6=10 Y. Only the X-intercept changes.
+
+
+42639
+medium
+application
+interpret_relative_price
+X costs $4 and Y costs $12. A shopper replaces two units of Y with X while keeping spending fixed. How many units of X can be added?
+A:2/3 of a unit
+B:2 units
+C:8 units
+D:6 units [KEY]
+Feedback: Two Y release $24; dividing by $4 per X gives six X. This applies the relative-price tradeoff to a bundle change.

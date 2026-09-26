@@ -1,0 +1,7358 @@
+{
+  "publicationOccurrences": 10708,
+  "publicationFailures": [],
+  "targetTypes": 2105,
+  "typeFailures": [],
+  "commonErrorTargets": 695,
+  "commonErrorFailures": [],
+  "emptyFeedback": [],
+  "routing": [
+    {
+      "id": "P52B-S4-IEA-EL-002",
+      "from": "integrated-economic-analysis",
+      "to": "aggregate-demand",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses aggregate-demand; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "aggregate-demand",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "INTEGRATED",
+      "objectiveLabel": "INTEGRATED"
+    },
+    {
+      "id": "P52B-S4-IEA-L-001",
+      "from": "integrated-economic-analysis",
+      "to": "real-versus-nominal-gdp",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses real-versus-nominal-gdp; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "real-versus-nominal-gdp",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "INTEGRATED",
+      "objectiveLabel": "INTEGRATED"
+    },
+    {
+      "id": "P52B-S4-IEA-L-002",
+      "from": "integrated-economic-analysis",
+      "to": "demand-and-supply-shocks",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses demand-and-supply-shocks; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "demand-and-supply-shocks",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "INTEGRATED",
+      "objectiveLabel": "INTEGRATED"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19000",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-and-inflation-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-and-inflation-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-and-inflation-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.4",
+      "objectiveLabel": "LO25.4"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19001",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-bias",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-bias; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-bias",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.2",
+      "objectiveLabel": "LO25.2"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19002",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-bias",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-bias; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-bias",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.2",
+      "objectiveLabel": "LO25.2"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19003",
+      "from": "integrated-economic-analysis",
+      "to": "real-versus-nominal-interest-rates",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses real-versus-nominal-interest-rates; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "real-versus-nominal-interest-rates",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.5",
+      "objectiveLabel": "LO25.5"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19004",
+      "from": "integrated-economic-analysis",
+      "to": "real-versus-nominal-interest-rates",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses real-versus-nominal-interest-rates; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "real-versus-nominal-interest-rates",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.5",
+      "objectiveLabel": "LO25.5"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19005",
+      "from": "integrated-economic-analysis",
+      "to": "real-versus-nominal-interest-rates",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses real-versus-nominal-interest-rates; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "real-versus-nominal-interest-rates",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.5",
+      "objectiveLabel": "LO25.5"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19006",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-versus-gdp-deflator",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-versus-gdp-deflator; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-versus-gdp-deflator",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.3",
+      "objectiveLabel": "LO25.3"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19007",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-versus-gdp-deflator",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-versus-gdp-deflator; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-versus-gdp-deflator",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.3",
+      "objectiveLabel": "LO25.3"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19008",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-versus-gdp-deflator",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-versus-gdp-deflator; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-versus-gdp-deflator",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.3",
+      "objectiveLabel": "LO25.3"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19009",
+      "from": "integrated-economic-analysis",
+      "to": "living-standards-and-growth",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses living-standards-and-growth; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "living-standards-and-growth",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO26.2",
+      "objectiveLabel": "LO26.2"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19010",
+      "from": "integrated-economic-analysis",
+      "to": "sources-of-productivity",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses sources-of-productivity; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "sources-of-productivity",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO26.4",
+      "objectiveLabel": "LO26.4"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19011",
+      "from": "integrated-economic-analysis",
+      "to": "sources-of-productivity",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses sources-of-productivity; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "sources-of-productivity",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO26.4",
+      "objectiveLabel": "LO26.4"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19012",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-types",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-types; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-types",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.3",
+      "objectiveLabel": "LO29.3"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19013",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-types",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-types; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-types",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.3",
+      "objectiveLabel": "LO29.3"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19014",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-types",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-types; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-types",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.3",
+      "objectiveLabel": "LO29.3"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19021",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.1",
+      "objectiveLabel": "LO29.1"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19022",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.2",
+      "objectiveLabel": "LO29.2"
+    },
+    {
+      "id": "ECON-EC-FINALBOSS-19023",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.1",
+      "objectiveLabel": "LO29.1"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18000",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-bias",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-bias; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-bias",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.2",
+      "objectiveLabel": "LO25.2"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18001",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-and-inflation-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-and-inflation-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-and-inflation-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.1",
+      "objectiveLabel": "LO25.1"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18002",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-bias",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-bias; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-bias",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.2",
+      "objectiveLabel": "LO25.2"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18003",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-and-inflation-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-and-inflation-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-and-inflation-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.4",
+      "objectiveLabel": "LO25.4"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18004",
+      "from": "integrated-economic-analysis",
+      "to": "real-versus-nominal-interest-rates",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses real-versus-nominal-interest-rates; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "real-versus-nominal-interest-rates",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.5",
+      "objectiveLabel": "LO25.5"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18005",
+      "from": "integrated-economic-analysis",
+      "to": "real-versus-nominal-interest-rates",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses real-versus-nominal-interest-rates; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "real-versus-nominal-interest-rates",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.5",
+      "objectiveLabel": "LO25.5"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18006",
+      "from": "integrated-economic-analysis",
+      "to": "living-standards-and-growth",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses living-standards-and-growth; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "living-standards-and-growth",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO26.2",
+      "objectiveLabel": "LO26.2"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18007",
+      "from": "integrated-economic-analysis",
+      "to": "sources-of-productivity",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses sources-of-productivity; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "sources-of-productivity",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO26.3",
+      "objectiveLabel": "LO26.3"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18008",
+      "from": "integrated-economic-analysis",
+      "to": "integrated-economic-analysis",
+      "removeFromMicro": false,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "micro"
+      ],
+      "basis": "Retain: PPF capacity growth is a substantive shared micro foundation.",
+      "currentConcept": "integrated-economic-analysis",
+      "currentAreas": [
+        "micro"
+      ],
+      "objective": "LO26.3",
+      "objectiveLabel": "LO26.3"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18009",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.2",
+      "objectiveLabel": "LO29.2"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18010",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.2",
+      "objectiveLabel": "LO29.2"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18011",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.2",
+      "objectiveLabel": "LO29.2"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18021",
+      "from": "integrated-economic-analysis",
+      "to": "integrated-economic-analysis",
+      "removeFromMicro": false,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "micro"
+      ],
+      "basis": "Retain: current-resource opportunity cost versus future capacity is a substantive intertemporal micro tradeoff.",
+      "currentConcept": "integrated-economic-analysis",
+      "currentAreas": [
+        "micro"
+      ],
+      "objective": "LO26.4",
+      "objectiveLabel": "LO26.4"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18022",
+      "from": "integrated-economic-analysis",
+      "to": "sources-of-productivity",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses sources-of-productivity; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "sources-of-productivity",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO26.4",
+      "objectiveLabel": "LO26.4"
+    },
+    {
+      "id": "ECON-EC-MEDIUMBOSS-18023",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-types",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-types; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-types",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.3",
+      "objectiveLabel": "LO29.3"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20000",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-and-inflation-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-and-inflation-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-and-inflation-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.4",
+      "objectiveLabel": "LO25.4"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20001",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-bias",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-bias; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-bias",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.2",
+      "objectiveLabel": "LO25.2"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20002",
+      "from": "integrated-economic-analysis",
+      "to": "cpi-bias",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses cpi-bias; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "cpi-bias",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.2",
+      "objectiveLabel": "LO25.2"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20003",
+      "from": "integrated-economic-analysis",
+      "to": "real-versus-nominal-interest-rates",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses real-versus-nominal-interest-rates; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "real-versus-nominal-interest-rates",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.5",
+      "objectiveLabel": "LO25.5"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20004",
+      "from": "integrated-economic-analysis",
+      "to": "real-versus-nominal-interest-rates",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses real-versus-nominal-interest-rates; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "real-versus-nominal-interest-rates",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.5",
+      "objectiveLabel": "LO25.5"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20005",
+      "from": "integrated-economic-analysis",
+      "to": "real-versus-nominal-interest-rates",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses real-versus-nominal-interest-rates; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "real-versus-nominal-interest-rates",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO25.5",
+      "objectiveLabel": "LO25.5"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20006",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.1",
+      "objectiveLabel": "LO29.1"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20007",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.2",
+      "objectiveLabel": "LO29.2"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20008",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-measurement",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-measurement; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-measurement",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.2",
+      "objectiveLabel": "LO29.2"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20018",
+      "from": "integrated-economic-analysis",
+      "to": "living-standards-and-growth",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses living-standards-and-growth; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "living-standards-and-growth",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO26.2",
+      "objectiveLabel": "LO26.2"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20019",
+      "from": "integrated-economic-analysis",
+      "to": "unemployment-types",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses unemployment-types; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "unemployment-types",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO29.3",
+      "objectiveLabel": "LO29.3"
+    },
+    {
+      "id": "ECON-EC-LEGENDARYBOSS-20020",
+      "from": "integrated-economic-analysis",
+      "to": "sources-of-productivity",
+      "removeFromMicro": true,
+      "beforeAreas": [
+        "micro"
+      ],
+      "afterAreas": [
+        "macro"
+      ],
+      "basis": "The keyed task assesses sources-of-productivity; move only this canonical record to that existing Macro concept.",
+      "currentConcept": "sources-of-productivity",
+      "currentAreas": [
+        "macro"
+      ],
+      "objective": "LO26.4",
+      "objectiveLabel": "LO26.4"
+    }
+  ],
+  "additionalDifficulty": [
+    {
+      "questionID": "P62E-COP-EL-011",
+      "before": "elite",
+      "after": "hard",
+      "basis": [
+        "MEA-0071 instructor: cost crossing and fixed-cost counterfactual; Hard linked reasoning",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62B-ELAS-L-084",
+      "before": "legendary",
+      "after": "elite",
+      "basis": [
+        "MEA-0054 instructor: replace bundling with controlled substitute-availability comparison",
+        "MEA-0054 instructor implementation: compare equal-horizon elasticity experiments; remove obsolete bundling/monopoly metadata, balance evidence-based alternatives, calibrate Elite rather than Legendary."
+      ]
+    },
+    {
+      "questionID": "42843",
+      "before": "medium",
+      "after": "easy",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42826",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42830",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42834",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42876",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42878",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42813",
+      "before": "medium",
+      "after": "hard",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "43001",
+      "before": "medium",
+      "after": "easy",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42906",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42910",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42914",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42918",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "43011",
+      "before": "medium",
+      "after": "hard",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42886",
+      "before": "medium",
+      "after": "hard",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42888",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42893",
+      "before": "medium",
+      "after": "hard",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "42902",
+      "before": "easy",
+      "after": "medium",
+      "basis": [
+        "Audited redundancy: varied representation, inference or boundary case",
+        "C commonError: Specific misconception tied to the final task and its alternatives"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-001",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-002",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-003",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-004",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-005",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-006",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-007",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-008",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-009",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-010",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-011",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-012",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-013",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-014",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    },
+    {
+      "questionID": "P62F-PC-L-015",
+      "before": "legendary",
+      "after": "hard",
+      "basis": [
+        "MEA-0079: vary profit signs, shutdown, exit and checkpoint counterfactuals",
+        "C task type: Explicitly reviewed substantive revision task"
+      ]
+    }
+  ],
+  "acceptedUnchanged": [
+    {
+      "id": "ECON-MG-LEGENDARYBOSS-9138",
+      "allFieldsEqual": true
+    },
+    {
+      "id": "P62B-ELAS-EL-022",
+      "allFieldsEqual": true
+    }
+  ],
+  "graphFlagChanges": [
+    {
+      "id": "P62I-OLI-L-003",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-006",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-009",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-012",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-015",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-018",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-009",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-010",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-011",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-012",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-013",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-014",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-015",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-016",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-017",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-018",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-019",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-H-020",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-002",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-005",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-008",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-011",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-014",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-017",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0091",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-EL-001",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-EL-003",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-EL-004",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0088"
+      ]
+    },
+    {
+      "id": "P62I-OLI-EL-005",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-EL-006",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0088"
+      ]
+    },
+    {
+      "id": "P62I-OLI-EL-007",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-EL-009",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-EL-010",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0088"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-001",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-004",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-007",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-010",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-013",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-L-016",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-013",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-014",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-015",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-016",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-017",
+      "after": true,
+      "findings": [
+        "MEA-0099",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-018",
+      "after": true,
+      "findings": [
+        "MEA-0099",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-019",
+      "after": true,
+      "findings": [
+        "MEA-0099",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-020",
+      "after": true,
+      "findings": [
+        "MEA-0099",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-021",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-C-022",
+      "after": true,
+      "findings": [
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-LB-002",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-LB-003",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-LB-005",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0092",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-LB-006",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-LB-007",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0092",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-LB-008",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-LB-009",
+      "after": true,
+      "findings": [
+        "MEA-0040",
+        "MEA-0112"
+      ]
+    },
+    {
+      "id": "P62I-OLI-LB-023",
+      "after": false,
+      "findings": [
+        "MEA-0040",
+        "MEA-0089"
+      ]
+    },
+    {
+      "id": "P62I-OLI-LB-026",
+      "after": false,
+      "findings": [
+        "MEA-0040",
+        "MEA-0089"
+      ]
+    }
+  ],
+  "ordinaryPoolMoves": [
+    {
+      "id": "P62C-CPS-EL-020",
+      "move": {
+        "id": "P62C-CPS-EL-020",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-021",
+      "move": {
+        "id": "P62C-CPS-EL-021",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-003",
+      "move": {
+        "id": "P62C-CPS-EL-003",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-004",
+      "move": {
+        "id": "P62C-CPS-EL-004",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-007",
+      "move": {
+        "id": "P62C-CPS-EL-007",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-008",
+      "move": {
+        "id": "P62C-CPS-EL-008",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-009",
+      "move": {
+        "id": "P62C-CPS-EL-009",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-010",
+      "move": {
+        "id": "P62C-CPS-EL-010",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-014",
+      "move": {
+        "id": "P62C-CPS-EL-014",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-015",
+      "move": {
+        "id": "P62C-CPS-EL-015",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-016",
+      "move": {
+        "id": "P62C-CPS-EL-016",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-022",
+      "move": {
+        "id": "P62C-CPS-EL-022",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-024",
+      "move": {
+        "id": "P62C-CPS-EL-024",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-025",
+      "move": {
+        "id": "P62C-CPS-EL-025",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-028",
+      "move": {
+        "id": "P62C-CPS-EL-028",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-030",
+      "move": {
+        "id": "P62C-CPS-EL-030",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-020",
+      "move": {
+        "id": "P62C-CPS-L-020",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-024",
+      "move": {
+        "id": "P62C-CPS-L-024",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-028",
+      "move": {
+        "id": "P62C-CPS-L-028",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-034",
+      "move": {
+        "id": "P62C-CPS-L-034",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-037",
+      "move": {
+        "id": "P62C-CPS-L-037",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-040",
+      "move": {
+        "id": "P62C-CPS-L-040",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-043",
+      "move": {
+        "id": "P62C-CPS-L-043",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-059",
+      "move": {
+        "id": "P62C-CPS-L-059",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-060",
+      "move": {
+        "id": "P62C-CPS-L-060",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-061",
+      "move": {
+        "id": "P62C-CPS-L-061",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-062",
+      "move": {
+        "id": "P62C-CPS-L-062",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-063",
+      "move": {
+        "id": "P62C-CPS-L-063",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-064",
+      "move": {
+        "id": "P62C-CPS-L-064",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-065",
+      "move": {
+        "id": "P62C-CPS-L-065",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-066",
+      "move": {
+        "id": "P62C-CPS-L-066",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-067",
+      "move": {
+        "id": "P62C-CPS-L-067",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-068",
+      "move": {
+        "id": "P62C-CPS-L-068",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-071",
+      "move": {
+        "id": "P62C-CPS-L-071",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-077",
+      "move": {
+        "id": "P62C-CPS-L-077",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-078",
+      "move": {
+        "id": "P62C-CPS-L-078",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-081",
+      "move": {
+        "id": "P62C-CPS-L-081",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-082",
+      "move": {
+        "id": "P62C-CPS-L-082",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-084",
+      "move": {
+        "id": "P62C-CPS-L-084",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-011",
+      "move": {
+        "id": "P62C-CPS-EL-011",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-012",
+      "move": {
+        "id": "P62C-CPS-EL-012",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-017",
+      "move": {
+        "id": "P62C-CPS-EL-017",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-018",
+      "move": {
+        "id": "P62C-CPS-EL-018",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-023",
+      "move": {
+        "id": "P62C-CPS-EL-023",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-026",
+      "move": {
+        "id": "P62C-CPS-EL-026",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-027",
+      "move": {
+        "id": "P62C-CPS-EL-027",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-EL-029",
+      "move": {
+        "id": "P62C-CPS-EL-029",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-001",
+      "move": {
+        "id": "P62C-CPS-L-001",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-002",
+      "move": {
+        "id": "P62C-CPS-L-002",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-003",
+      "move": {
+        "id": "P62C-CPS-L-003",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-004",
+      "move": {
+        "id": "P62C-CPS-L-004",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-005",
+      "move": {
+        "id": "P62C-CPS-L-005",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-006",
+      "move": {
+        "id": "P62C-CPS-L-006",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-007",
+      "move": {
+        "id": "P62C-CPS-L-007",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-008",
+      "move": {
+        "id": "P62C-CPS-L-008",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-009",
+      "move": {
+        "id": "P62C-CPS-L-009",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-010",
+      "move": {
+        "id": "P62C-CPS-L-010",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-011",
+      "move": {
+        "id": "P62C-CPS-L-011",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-012",
+      "move": {
+        "id": "P62C-CPS-L-012",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-013",
+      "move": {
+        "id": "P62C-CPS-L-013",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-014",
+      "move": {
+        "id": "P62C-CPS-L-014",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-015",
+      "move": {
+        "id": "P62C-CPS-L-015",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-016",
+      "move": {
+        "id": "P62C-CPS-L-016",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-017",
+      "move": {
+        "id": "P62C-CPS-L-017",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-018",
+      "move": {
+        "id": "P62C-CPS-L-018",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-019",
+      "move": {
+        "id": "P62C-CPS-L-019",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-022",
+      "move": {
+        "id": "P62C-CPS-L-022",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-023",
+      "move": {
+        "id": "P62C-CPS-L-023",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-027",
+      "move": {
+        "id": "P62C-CPS-L-027",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-029",
+      "move": {
+        "id": "P62C-CPS-L-029",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-031",
+      "move": {
+        "id": "P62C-CPS-L-031",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-032",
+      "move": {
+        "id": "P62C-CPS-L-032",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-033",
+      "move": {
+        "id": "P62C-CPS-L-033",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-035",
+      "move": {
+        "id": "P62C-CPS-L-035",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-036",
+      "move": {
+        "id": "P62C-CPS-L-036",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-039",
+      "move": {
+        "id": "P62C-CPS-L-039",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-042",
+      "move": {
+        "id": "P62C-CPS-L-042",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-045",
+      "move": {
+        "id": "P62C-CPS-L-045",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-046",
+      "move": {
+        "id": "P62C-CPS-L-046",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-047",
+      "move": {
+        "id": "P62C-CPS-L-047",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-048",
+      "move": {
+        "id": "P62C-CPS-L-048",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-049",
+      "move": {
+        "id": "P62C-CPS-L-049",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-050",
+      "move": {
+        "id": "P62C-CPS-L-050",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-051",
+      "move": {
+        "id": "P62C-CPS-L-051",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-052",
+      "move": {
+        "id": "P62C-CPS-L-052",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-053",
+      "move": {
+        "id": "P62C-CPS-L-053",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-054",
+      "move": {
+        "id": "P62C-CPS-L-054",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-055",
+      "move": {
+        "id": "P62C-CPS-L-055",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-056",
+      "move": {
+        "id": "P62C-CPS-L-056",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-057",
+      "move": {
+        "id": "P62C-CPS-L-057",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-058",
+      "move": {
+        "id": "P62C-CPS-L-058",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-080",
+      "move": {
+        "id": "P62C-CPS-L-080",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62C-CPS-L-085",
+      "move": {
+        "id": "P62C-CPS-L-085",
+        "conceptId": "consumer-and-producer-surplus",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42657",
+      "move": {
+        "id": "42657",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42663",
+      "move": {
+        "id": "42663",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42691",
+      "move": {
+        "id": "42691",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42694",
+      "move": {
+        "id": "42694",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42697",
+      "move": {
+        "id": "42697",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42591",
+      "move": {
+        "id": "42591",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42659",
+      "move": {
+        "id": "42659",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42687",
+      "move": {
+        "id": "42687",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42689",
+      "move": {
+        "id": "42689",
+        "conceptId": "consumer-choice",
+        "from": "legendary",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42598",
+      "move": {
+        "id": "42598",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42607",
+      "move": {
+        "id": "42607",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42610",
+      "move": {
+        "id": "42610",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42613",
+      "move": {
+        "id": "42613",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42619",
+      "move": {
+        "id": "42619",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42624",
+      "move": {
+        "id": "42624",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42629",
+      "move": {
+        "id": "42629",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42643",
+      "move": {
+        "id": "42643",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42649",
+      "move": {
+        "id": "42649",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42652",
+      "move": {
+        "id": "42652",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42666",
+      "move": {
+        "id": "42666",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42677",
+      "move": {
+        "id": "42677",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42682",
+      "move": {
+        "id": "42682",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42685",
+      "move": {
+        "id": "42685",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42709",
+      "move": {
+        "id": "42709",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42715",
+      "move": {
+        "id": "42715",
+        "conceptId": "consumer-choice",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42567",
+      "move": {
+        "id": "42567",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42579",
+      "move": {
+        "id": "42579",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42603",
+      "move": {
+        "id": "42603",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42615",
+      "move": {
+        "id": "42615",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42645",
+      "move": {
+        "id": "42645",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42673",
+      "move": {
+        "id": "42673",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42711",
+      "move": {
+        "id": "42711",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42647",
+      "move": {
+        "id": "42647",
+        "conceptId": "consumer-choice",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42675",
+      "move": {
+        "id": "42675",
+        "conceptId": "consumer-choice",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42713",
+      "move": {
+        "id": "42713",
+        "conceptId": "consumer-choice",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42631",
+      "move": {
+        "id": "42631",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42699",
+      "move": {
+        "id": "42699",
+        "conceptId": "consumer-choice",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42701",
+      "move": {
+        "id": "42701",
+        "conceptId": "consumer-choice",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-020",
+      "move": {
+        "id": "P62E-COP-EL-020",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "P62E-COP-L-053",
+      "move": {
+        "id": "P62E-COP-L-053",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "P62E-COP-L-055",
+      "move": {
+        "id": "P62E-COP-L-055",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-004",
+      "move": {
+        "id": "P62E-COP-EL-004",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-005",
+      "move": {
+        "id": "P62E-COP-EL-005",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-006",
+      "move": {
+        "id": "P62E-COP-EL-006",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-012",
+      "move": {
+        "id": "P62E-COP-EL-012",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-014",
+      "move": {
+        "id": "P62E-COP-EL-014",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-017",
+      "move": {
+        "id": "P62E-COP-EL-017",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-018",
+      "move": {
+        "id": "P62E-COP-EL-018",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-022",
+      "move": {
+        "id": "P62E-COP-EL-022",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-024",
+      "move": {
+        "id": "P62E-COP-EL-024",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-049",
+      "move": {
+        "id": "P62E-COP-L-049",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-052",
+      "move": {
+        "id": "P62E-COP-L-052",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-054",
+      "move": {
+        "id": "P62E-COP-L-054",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-058",
+      "move": {
+        "id": "P62E-COP-L-058",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-060",
+      "move": {
+        "id": "P62E-COP-L-060",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-067",
+      "move": {
+        "id": "P62E-COP-L-067",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-069",
+      "move": {
+        "id": "P62E-COP-L-069",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-070",
+      "move": {
+        "id": "P62E-COP-L-070",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-071",
+      "move": {
+        "id": "P62E-COP-L-071",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-072",
+      "move": {
+        "id": "P62E-COP-L-072",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-073",
+      "move": {
+        "id": "P62E-COP-L-073",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-074",
+      "move": {
+        "id": "P62E-COP-L-074",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-076",
+      "move": {
+        "id": "P62E-COP-L-076",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-077",
+      "move": {
+        "id": "P62E-COP-L-077",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-078",
+      "move": {
+        "id": "P62E-COP-L-078",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-079",
+      "move": {
+        "id": "P62E-COP-L-079",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-081",
+      "move": {
+        "id": "P62E-COP-L-081",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-082",
+      "move": {
+        "id": "P62E-COP-L-082",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-083",
+      "move": {
+        "id": "P62E-COP-L-083",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-086",
+      "move": {
+        "id": "P62E-COP-L-086",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-L-089",
+      "move": {
+        "id": "P62E-COP-L-089",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-009",
+      "move": {
+        "id": "P62E-COP-EL-009",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-011",
+      "move": {
+        "id": "P62E-COP-EL-011",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-029",
+      "move": {
+        "id": "P62E-COP-EL-029",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-035",
+      "move": {
+        "id": "P62E-COP-EL-035",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-038",
+      "move": {
+        "id": "P62E-COP-EL-038",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62E-COP-EL-042",
+      "move": {
+        "id": "P62E-COP-EL-042",
+        "conceptId": "costs-of-production",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62E-COP-L-097",
+      "move": {
+        "id": "P62E-COP-L-097",
+        "conceptId": "costs-of-production",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-H-038",
+      "move": {
+        "id": "P62B-ELAS-H-038",
+        "conceptId": "elasticity",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-073",
+      "move": {
+        "id": "P62B-ELAS-L-073",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "P62B-ELAS-H-019",
+      "move": {
+        "id": "P62B-ELAS-H-019",
+        "conceptId": "elasticity",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-H-020",
+      "move": {
+        "id": "P62B-ELAS-H-020",
+        "conceptId": "elasticity",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-H-023",
+      "move": {
+        "id": "P62B-ELAS-H-023",
+        "conceptId": "elasticity",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-H-024",
+      "move": {
+        "id": "P62B-ELAS-H-024",
+        "conceptId": "elasticity",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-H-026",
+      "move": {
+        "id": "P62B-ELAS-H-026",
+        "conceptId": "elasticity",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-H-027",
+      "move": {
+        "id": "P62B-ELAS-H-027",
+        "conceptId": "elasticity",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-H-028",
+      "move": {
+        "id": "P62B-ELAS-H-028",
+        "conceptId": "elasticity",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-001",
+      "move": {
+        "id": "P62B-ELAS-EL-001",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-002",
+      "move": {
+        "id": "P62B-ELAS-EL-002",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-003",
+      "move": {
+        "id": "P62B-ELAS-EL-003",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-005",
+      "move": {
+        "id": "P62B-ELAS-EL-005",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-006",
+      "move": {
+        "id": "P62B-ELAS-EL-006",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-007",
+      "move": {
+        "id": "P62B-ELAS-EL-007",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-008",
+      "move": {
+        "id": "P62B-ELAS-EL-008",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-009",
+      "move": {
+        "id": "P62B-ELAS-EL-009",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-010",
+      "move": {
+        "id": "P62B-ELAS-EL-010",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-013",
+      "move": {
+        "id": "P62B-ELAS-EL-013",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-014",
+      "move": {
+        "id": "P62B-ELAS-EL-014",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-023",
+      "move": {
+        "id": "P62B-ELAS-EL-023",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-024",
+      "move": {
+        "id": "P62B-ELAS-EL-024",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-025",
+      "move": {
+        "id": "P62B-ELAS-EL-025",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-026",
+      "move": {
+        "id": "P62B-ELAS-EL-026",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-027",
+      "move": {
+        "id": "P62B-ELAS-EL-027",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-028",
+      "move": {
+        "id": "P62B-ELAS-EL-028",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-036",
+      "move": {
+        "id": "P62B-ELAS-EL-036",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-038",
+      "move": {
+        "id": "P62B-ELAS-EL-038",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-017",
+      "move": {
+        "id": "P62B-ELAS-L-017",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-018",
+      "move": {
+        "id": "P62B-ELAS-L-018",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-019",
+      "move": {
+        "id": "P62B-ELAS-L-019",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-020",
+      "move": {
+        "id": "P62B-ELAS-L-020",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-021",
+      "move": {
+        "id": "P62B-ELAS-L-021",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-022",
+      "move": {
+        "id": "P62B-ELAS-L-022",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-023",
+      "move": {
+        "id": "P62B-ELAS-L-023",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-025",
+      "move": {
+        "id": "P62B-ELAS-L-025",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-026",
+      "move": {
+        "id": "P62B-ELAS-L-026",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-027",
+      "move": {
+        "id": "P62B-ELAS-L-027",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-028",
+      "move": {
+        "id": "P62B-ELAS-L-028",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-031",
+      "move": {
+        "id": "P62B-ELAS-L-031",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-033",
+      "move": {
+        "id": "P62B-ELAS-L-033",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-036",
+      "move": {
+        "id": "P62B-ELAS-L-036",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-037",
+      "move": {
+        "id": "P62B-ELAS-L-037",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-038",
+      "move": {
+        "id": "P62B-ELAS-L-038",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-039",
+      "move": {
+        "id": "P62B-ELAS-L-039",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-040",
+      "move": {
+        "id": "P62B-ELAS-L-040",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-043",
+      "move": {
+        "id": "P62B-ELAS-L-043",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-044",
+      "move": {
+        "id": "P62B-ELAS-L-044",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-048",
+      "move": {
+        "id": "P62B-ELAS-L-048",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-049",
+      "move": {
+        "id": "P62B-ELAS-L-049",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-054",
+      "move": {
+        "id": "P62B-ELAS-L-054",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-055",
+      "move": {
+        "id": "P62B-ELAS-L-055",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-061",
+      "move": {
+        "id": "P62B-ELAS-L-061",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-063",
+      "move": {
+        "id": "P62B-ELAS-L-063",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-064",
+      "move": {
+        "id": "P62B-ELAS-L-064",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-065",
+      "move": {
+        "id": "P62B-ELAS-L-065",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-066",
+      "move": {
+        "id": "P62B-ELAS-L-066",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-067",
+      "move": {
+        "id": "P62B-ELAS-L-067",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-068",
+      "move": {
+        "id": "P62B-ELAS-L-068",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-069",
+      "move": {
+        "id": "P62B-ELAS-L-069",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-070",
+      "move": {
+        "id": "P62B-ELAS-L-070",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-074",
+      "move": {
+        "id": "P62B-ELAS-L-074",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-075",
+      "move": {
+        "id": "P62B-ELAS-L-075",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-076",
+      "move": {
+        "id": "P62B-ELAS-L-076",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-077",
+      "move": {
+        "id": "P62B-ELAS-L-077",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-078",
+      "move": {
+        "id": "P62B-ELAS-L-078",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-083",
+      "move": {
+        "id": "P62B-ELAS-L-083",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-085",
+      "move": {
+        "id": "P62B-ELAS-L-085",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-086",
+      "move": {
+        "id": "P62B-ELAS-L-086",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-087",
+      "move": {
+        "id": "P62B-ELAS-L-087",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-096",
+      "move": {
+        "id": "P62B-ELAS-L-096",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-012",
+      "move": {
+        "id": "P62B-ELAS-EL-012",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-031",
+      "move": {
+        "id": "P62B-ELAS-EL-031",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-032",
+      "move": {
+        "id": "P62B-ELAS-EL-032",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-033",
+      "move": {
+        "id": "P62B-ELAS-EL-033",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-034",
+      "move": {
+        "id": "P62B-ELAS-EL-034",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-035",
+      "move": {
+        "id": "P62B-ELAS-EL-035",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-EL-037",
+      "move": {
+        "id": "P62B-ELAS-EL-037",
+        "conceptId": "elasticity",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-001",
+      "move": {
+        "id": "P62B-ELAS-L-001",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-002",
+      "move": {
+        "id": "P62B-ELAS-L-002",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-003",
+      "move": {
+        "id": "P62B-ELAS-L-003",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-004",
+      "move": {
+        "id": "P62B-ELAS-L-004",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-005",
+      "move": {
+        "id": "P62B-ELAS-L-005",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-006",
+      "move": {
+        "id": "P62B-ELAS-L-006",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-007",
+      "move": {
+        "id": "P62B-ELAS-L-007",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-008",
+      "move": {
+        "id": "P62B-ELAS-L-008",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-009",
+      "move": {
+        "id": "P62B-ELAS-L-009",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-010",
+      "move": {
+        "id": "P62B-ELAS-L-010",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-011",
+      "move": {
+        "id": "P62B-ELAS-L-011",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-012",
+      "move": {
+        "id": "P62B-ELAS-L-012",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-013",
+      "move": {
+        "id": "P62B-ELAS-L-013",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-014",
+      "move": {
+        "id": "P62B-ELAS-L-014",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-015",
+      "move": {
+        "id": "P62B-ELAS-L-015",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-034",
+      "move": {
+        "id": "P62B-ELAS-L-034",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-035",
+      "move": {
+        "id": "P62B-ELAS-L-035",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-041",
+      "move": {
+        "id": "P62B-ELAS-L-041",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-062",
+      "move": {
+        "id": "P62B-ELAS-L-062",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-079",
+      "move": {
+        "id": "P62B-ELAS-L-079",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-080",
+      "move": {
+        "id": "P62B-ELAS-L-080",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-091",
+      "move": {
+        "id": "P62B-ELAS-L-091",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-094",
+      "move": {
+        "id": "P62B-ELAS-L-094",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62B-ELAS-L-084",
+      "move": {
+        "id": "P62B-ELAS-L-084",
+        "conceptId": "elasticity",
+        "from": "legendary",
+        "to": "elite"
+      }
+    },
+    {
+      "id": "42528",
+      "move": {
+        "id": "42528",
+        "conceptId": "factor-markets",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42385",
+      "move": {
+        "id": "42385",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42391",
+      "move": {
+        "id": "42391",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42394",
+      "move": {
+        "id": "42394",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42397",
+      "move": {
+        "id": "42397",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42425",
+      "move": {
+        "id": "42425",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42431",
+      "move": {
+        "id": "42431",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42434",
+      "move": {
+        "id": "42434",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42437",
+      "move": {
+        "id": "42437",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42443",
+      "move": {
+        "id": "42443",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42446",
+      "move": {
+        "id": "42446",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42449",
+      "move": {
+        "id": "42449",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42455",
+      "move": {
+        "id": "42455",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42458",
+      "move": {
+        "id": "42458",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42522",
+      "move": {
+        "id": "42522",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42525",
+      "move": {
+        "id": "42525",
+        "conceptId": "factor-markets",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42327",
+      "move": {
+        "id": "42327",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42339",
+      "move": {
+        "id": "42339",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42351",
+      "move": {
+        "id": "42351",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42363",
+      "move": {
+        "id": "42363",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42387",
+      "move": {
+        "id": "42387",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42399",
+      "move": {
+        "id": "42399",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42427",
+      "move": {
+        "id": "42427",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42439",
+      "move": {
+        "id": "42439",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42451",
+      "move": {
+        "id": "42451",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42463",
+      "move": {
+        "id": "42463",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42475",
+      "move": {
+        "id": "42475",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42489",
+      "move": {
+        "id": "42489",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42503",
+      "move": {
+        "id": "42503",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42515",
+      "move": {
+        "id": "42515",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42527",
+      "move": {
+        "id": "42527",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42539",
+      "move": {
+        "id": "42539",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42401",
+      "move": {
+        "id": "42401",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42429",
+      "move": {
+        "id": "42429",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42441",
+      "move": {
+        "id": "42441",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42453",
+      "move": {
+        "id": "42453",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42465",
+      "move": {
+        "id": "42465",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42477",
+      "move": {
+        "id": "42477",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42491",
+      "move": {
+        "id": "42491",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42505",
+      "move": {
+        "id": "42505",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42517",
+      "move": {
+        "id": "42517",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42529",
+      "move": {
+        "id": "42529",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42541",
+      "move": {
+        "id": "42541",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42413",
+      "move": {
+        "id": "42413",
+        "conceptId": "factor-markets",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42415",
+      "move": {
+        "id": "42415",
+        "conceptId": "factor-markets",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42843",
+      "move": {
+        "id": "42843",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "medium",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42789",
+      "move": {
+        "id": "42789",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42851",
+      "move": {
+        "id": "42851",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42791",
+      "move": {
+        "id": "42791",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42826",
+      "move": {
+        "id": "42826",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42830",
+      "move": {
+        "id": "42830",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42834",
+      "move": {
+        "id": "42834",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42876",
+      "move": {
+        "id": "42876",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42878",
+      "move": {
+        "id": "42878",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42749",
+      "move": {
+        "id": "42749",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42755",
+      "move": {
+        "id": "42755",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42758",
+      "move": {
+        "id": "42758",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42767",
+      "move": {
+        "id": "42767",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42770",
+      "move": {
+        "id": "42770",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42773",
+      "move": {
+        "id": "42773",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42779",
+      "move": {
+        "id": "42779",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42784",
+      "move": {
+        "id": "42784",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42799",
+      "move": {
+        "id": "42799",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42802",
+      "move": {
+        "id": "42802",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42811",
+      "move": {
+        "id": "42811",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42814",
+      "move": {
+        "id": "42814",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42817",
+      "move": {
+        "id": "42817",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42825",
+      "move": {
+        "id": "42825",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42828",
+      "move": {
+        "id": "42828",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42831",
+      "move": {
+        "id": "42831",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42839",
+      "move": {
+        "id": "42839",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42842",
+      "move": {
+        "id": "42842",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42854",
+      "move": {
+        "id": "42854",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42857",
+      "move": {
+        "id": "42857",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42866",
+      "move": {
+        "id": "42866",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42869",
+      "move": {
+        "id": "42869",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42873",
+      "move": {
+        "id": "42873",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42751",
+      "move": {
+        "id": "42751",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42763",
+      "move": {
+        "id": "42763",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42775",
+      "move": {
+        "id": "42775",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42821",
+      "move": {
+        "id": "42821",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42833",
+      "move": {
+        "id": "42833",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42813",
+      "move": {
+        "id": "42813",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "medium",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42739",
+      "move": {
+        "id": "42739",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42847",
+      "move": {
+        "id": "42847",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42859",
+      "move": {
+        "id": "42859",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42870",
+      "move": {
+        "id": "42870",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42809",
+      "move": {
+        "id": "42809",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42823",
+      "move": {
+        "id": "42823",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42835",
+      "move": {
+        "id": "42835",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42861",
+      "move": {
+        "id": "42861",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42872",
+      "move": {
+        "id": "42872",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42849",
+      "move": {
+        "id": "42849",
+        "conceptId": "income-inequality-poverty-and-redistribution",
+        "from": "legendary",
+        "to": "elite"
+      }
+    },
+    {
+      "id": "43001",
+      "move": {
+        "id": "43001",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "medium",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42974",
+      "move": {
+        "id": "42974",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42986",
+      "move": {
+        "id": "42986",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42997",
+      "move": {
+        "id": "42997",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "43000",
+      "move": {
+        "id": "43000",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "43012",
+      "move": {
+        "id": "43012",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "43035",
+      "move": {
+        "id": "43035",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42906",
+      "move": {
+        "id": "42906",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42910",
+      "move": {
+        "id": "42910",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42914",
+      "move": {
+        "id": "42914",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42918",
+      "move": {
+        "id": "42918",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "easy",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42922",
+      "move": {
+        "id": "42922",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42925",
+      "move": {
+        "id": "42925",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42931",
+      "move": {
+        "id": "42931",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42934",
+      "move": {
+        "id": "42934",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42937",
+      "move": {
+        "id": "42937",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42948",
+      "move": {
+        "id": "42948",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42951",
+      "move": {
+        "id": "42951",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42957",
+      "move": {
+        "id": "42957",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42960",
+      "move": {
+        "id": "42960",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42963",
+      "move": {
+        "id": "42963",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42971",
+      "move": {
+        "id": "42971",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "43003",
+      "move": {
+        "id": "43003",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "43023",
+      "move": {
+        "id": "43023",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "43026",
+      "move": {
+        "id": "43026",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "43041",
+      "move": {
+        "id": "43041",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "43050",
+      "move": {
+        "id": "43050",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42901",
+      "move": {
+        "id": "42901",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42939",
+      "move": {
+        "id": "42939",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "43031",
+      "move": {
+        "id": "43031",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "43021",
+      "move": {
+        "id": "43021",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "43045",
+      "move": {
+        "id": "43045",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "43011",
+      "move": {
+        "id": "43011",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "medium",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42887",
+      "move": {
+        "id": "42887",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42913",
+      "move": {
+        "id": "42913",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42927",
+      "move": {
+        "id": "42927",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42953",
+      "move": {
+        "id": "42953",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42965",
+      "move": {
+        "id": "42965",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42979",
+      "move": {
+        "id": "42979",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42991",
+      "move": {
+        "id": "42991",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "43005",
+      "move": {
+        "id": "43005",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "43017",
+      "move": {
+        "id": "43017",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "43043",
+      "move": {
+        "id": "43043",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "43054",
+      "move": {
+        "id": "43054",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42967",
+      "move": {
+        "id": "42967",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42993",
+      "move": {
+        "id": "42993",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "43007",
+      "move": {
+        "id": "43007",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "43033",
+      "move": {
+        "id": "43033",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "43056",
+      "move": {
+        "id": "43056",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42981",
+      "move": {
+        "id": "42981",
+        "conceptId": "information-asymmetry-behavioral-and-political-economy",
+        "from": "legendary",
+        "to": "elite"
+      }
+    },
+    {
+      "id": "P77-MFAIL-L-018",
+      "move": {
+        "id": "P77-MFAIL-L-018",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42220",
+      "move": {
+        "id": "42220",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "easy"
+      }
+    },
+    {
+      "id": "42067",
+      "move": {
+        "id": "42067",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42075",
+      "move": {
+        "id": "42075",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42076",
+      "move": {
+        "id": "42076",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42085",
+      "move": {
+        "id": "42085",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42093",
+      "move": {
+        "id": "42093",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42094",
+      "move": {
+        "id": "42094",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42097",
+      "move": {
+        "id": "42097",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42099",
+      "move": {
+        "id": "42099",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42102",
+      "move": {
+        "id": "42102",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42144",
+      "move": {
+        "id": "42144",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42146",
+      "move": {
+        "id": "42146",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42238",
+      "move": {
+        "id": "42238",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P77-MFAIL-L-016",
+      "move": {
+        "id": "P77-MFAIL-L-016",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P77-MFAIL-L-023",
+      "move": {
+        "id": "P77-MFAIL-L-023",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P77-MFAIL-L-024",
+      "move": {
+        "id": "P77-MFAIL-L-024",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42152",
+      "move": {
+        "id": "42152",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42154",
+      "move": {
+        "id": "42154",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42263",
+      "move": {
+        "id": "42263",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "42068",
+      "move": {
+        "id": "42068",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42077",
+      "move": {
+        "id": "42077",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42098",
+      "move": {
+        "id": "42098",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42143",
+      "move": {
+        "id": "42143",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42150",
+      "move": {
+        "id": "42150",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42158",
+      "move": {
+        "id": "42158",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42271",
+      "move": {
+        "id": "42271",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42282",
+      "move": {
+        "id": "42282",
+        "conceptId": "market-failures",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P77-MFAIL-L-017",
+      "move": {
+        "id": "P77-MFAIL-L-017",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P77-MFAIL-L-021",
+      "move": {
+        "id": "P77-MFAIL-L-021",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "42241",
+      "move": {
+        "id": "42241",
+        "conceptId": "market-failures",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-003",
+      "move": {
+        "id": "P62H-MCMP-EL-003",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-006",
+      "move": {
+        "id": "P62H-MCMP-EL-006",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-009",
+      "move": {
+        "id": "P62H-MCMP-EL-009",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-012",
+      "move": {
+        "id": "P62H-MCMP-EL-012",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-015",
+      "move": {
+        "id": "P62H-MCMP-EL-015",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-016",
+      "move": {
+        "id": "P62H-MCMP-EL-016",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-018",
+      "move": {
+        "id": "P62H-MCMP-EL-018",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-019",
+      "move": {
+        "id": "P62H-MCMP-EL-019",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-020",
+      "move": {
+        "id": "P62H-MCMP-EL-020",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-022",
+      "move": {
+        "id": "P62H-MCMP-EL-022",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-023",
+      "move": {
+        "id": "P62H-MCMP-EL-023",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-024",
+      "move": {
+        "id": "P62H-MCMP-EL-024",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-032",
+      "move": {
+        "id": "P62H-MCMP-EL-032",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-031",
+      "move": {
+        "id": "P62H-MCMP-L-031",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-032",
+      "move": {
+        "id": "P62H-MCMP-L-032",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-034",
+      "move": {
+        "id": "P62H-MCMP-L-034",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-035",
+      "move": {
+        "id": "P62H-MCMP-L-035",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-037",
+      "move": {
+        "id": "P62H-MCMP-L-037",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-038",
+      "move": {
+        "id": "P62H-MCMP-L-038",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-040",
+      "move": {
+        "id": "P62H-MCMP-L-040",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-041",
+      "move": {
+        "id": "P62H-MCMP-L-041",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-043",
+      "move": {
+        "id": "P62H-MCMP-L-043",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-044",
+      "move": {
+        "id": "P62H-MCMP-L-044",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-046",
+      "move": {
+        "id": "P62H-MCMP-L-046",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-047",
+      "move": {
+        "id": "P62H-MCMP-L-047",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-050",
+      "move": {
+        "id": "P62H-MCMP-L-050",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-051",
+      "move": {
+        "id": "P62H-MCMP-L-051",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-053",
+      "move": {
+        "id": "P62H-MCMP-L-053",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-054",
+      "move": {
+        "id": "P62H-MCMP-L-054",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-056",
+      "move": {
+        "id": "P62H-MCMP-L-056",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-057",
+      "move": {
+        "id": "P62H-MCMP-L-057",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-059",
+      "move": {
+        "id": "P62H-MCMP-L-059",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-L-060",
+      "move": {
+        "id": "P62H-MCMP-L-060",
+        "conceptId": "monopolistic-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-025",
+      "move": {
+        "id": "P62H-MCMP-EL-025",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-033",
+      "move": {
+        "id": "P62H-MCMP-EL-033",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62H-MCMP-EL-035",
+      "move": {
+        "id": "P62H-MCMP-EL-035",
+        "conceptId": "monopolistic-competition",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62G-MON-L-002",
+      "move": {
+        "id": "P62G-MON-L-002",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-003",
+      "move": {
+        "id": "P62G-MON-L-003",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-005",
+      "move": {
+        "id": "P62G-MON-L-005",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-006",
+      "move": {
+        "id": "P62G-MON-L-006",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-008",
+      "move": {
+        "id": "P62G-MON-L-008",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-009",
+      "move": {
+        "id": "P62G-MON-L-009",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-011",
+      "move": {
+        "id": "P62G-MON-L-011",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-012",
+      "move": {
+        "id": "P62G-MON-L-012",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-014",
+      "move": {
+        "id": "P62G-MON-L-014",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-015",
+      "move": {
+        "id": "P62G-MON-L-015",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-017",
+      "move": {
+        "id": "P62G-MON-L-017",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-018",
+      "move": {
+        "id": "P62G-MON-L-018",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-021",
+      "move": {
+        "id": "P62G-MON-L-021",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-024",
+      "move": {
+        "id": "P62G-MON-L-024",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-027",
+      "move": {
+        "id": "P62G-MON-L-027",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-030",
+      "move": {
+        "id": "P62G-MON-L-030",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-033",
+      "move": {
+        "id": "P62G-MON-L-033",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-036",
+      "move": {
+        "id": "P62G-MON-L-036",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-039",
+      "move": {
+        "id": "P62G-MON-L-039",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-042",
+      "move": {
+        "id": "P62G-MON-L-042",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-043",
+      "move": {
+        "id": "P62G-MON-L-043",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-045",
+      "move": {
+        "id": "P62G-MON-L-045",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-046",
+      "move": {
+        "id": "P62G-MON-L-046",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-048",
+      "move": {
+        "id": "P62G-MON-L-048",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-049",
+      "move": {
+        "id": "P62G-MON-L-049",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-051",
+      "move": {
+        "id": "P62G-MON-L-051",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-052",
+      "move": {
+        "id": "P62G-MON-L-052",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-054",
+      "move": {
+        "id": "P62G-MON-L-054",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-055",
+      "move": {
+        "id": "P62G-MON-L-055",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-057",
+      "move": {
+        "id": "P62G-MON-L-057",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-058",
+      "move": {
+        "id": "P62G-MON-L-058",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-060",
+      "move": {
+        "id": "P62G-MON-L-060",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-062",
+      "move": {
+        "id": "P62G-MON-L-062",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-065",
+      "move": {
+        "id": "P62G-MON-L-065",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-068",
+      "move": {
+        "id": "P62G-MON-L-068",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-071",
+      "move": {
+        "id": "P62G-MON-L-071",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-074",
+      "move": {
+        "id": "P62G-MON-L-074",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-077",
+      "move": {
+        "id": "P62G-MON-L-077",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-078",
+      "move": {
+        "id": "P62G-MON-L-078",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-080",
+      "move": {
+        "id": "P62G-MON-L-080",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-081",
+      "move": {
+        "id": "P62G-MON-L-081",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-083",
+      "move": {
+        "id": "P62G-MON-L-083",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-084",
+      "move": {
+        "id": "P62G-MON-L-084",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-086",
+      "move": {
+        "id": "P62G-MON-L-086",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-087",
+      "move": {
+        "id": "P62G-MON-L-087",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-089",
+      "move": {
+        "id": "P62G-MON-L-089",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-090",
+      "move": {
+        "id": "P62G-MON-L-090",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62G-MON-L-001",
+      "move": {
+        "id": "P62G-MON-L-001",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62G-MON-L-004",
+      "move": {
+        "id": "P62G-MON-L-004",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62G-MON-L-007",
+      "move": {
+        "id": "P62G-MON-L-007",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62G-MON-L-010",
+      "move": {
+        "id": "P62G-MON-L-010",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62G-MON-L-013",
+      "move": {
+        "id": "P62G-MON-L-013",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62G-MON-L-016",
+      "move": {
+        "id": "P62G-MON-L-016",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62G-MON-L-092",
+      "move": {
+        "id": "P62G-MON-L-092",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62G-MON-L-094",
+      "move": {
+        "id": "P62G-MON-L-094",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62G-MON-L-095",
+      "move": {
+        "id": "P62G-MON-L-095",
+        "conceptId": "monopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-003",
+      "move": {
+        "id": "P62I-OLI-L-003",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-006",
+      "move": {
+        "id": "P62I-OLI-L-006",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-009",
+      "move": {
+        "id": "P62I-OLI-L-009",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-012",
+      "move": {
+        "id": "P62I-OLI-L-012",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-015",
+      "move": {
+        "id": "P62I-OLI-L-015",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-018",
+      "move": {
+        "id": "P62I-OLI-L-018",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-019",
+      "move": {
+        "id": "P62I-OLI-L-019",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-020",
+      "move": {
+        "id": "P62I-OLI-L-020",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-021",
+      "move": {
+        "id": "P62I-OLI-L-021",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-022",
+      "move": {
+        "id": "P62I-OLI-L-022",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-023",
+      "move": {
+        "id": "P62I-OLI-L-023",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-024",
+      "move": {
+        "id": "P62I-OLI-L-024",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-025",
+      "move": {
+        "id": "P62I-OLI-L-025",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-026",
+      "move": {
+        "id": "P62I-OLI-L-026",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-027",
+      "move": {
+        "id": "P62I-OLI-L-027",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-028",
+      "move": {
+        "id": "P62I-OLI-L-028",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-029",
+      "move": {
+        "id": "P62I-OLI-L-029",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-030",
+      "move": {
+        "id": "P62I-OLI-L-030",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-031",
+      "move": {
+        "id": "P62I-OLI-L-031",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-035",
+      "move": {
+        "id": "P62I-OLI-L-035",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-039",
+      "move": {
+        "id": "P62I-OLI-L-039",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-075",
+      "move": {
+        "id": "P62I-OLI-L-075",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-077",
+      "move": {
+        "id": "P62I-OLI-L-077",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-079",
+      "move": {
+        "id": "P62I-OLI-L-079",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-081",
+      "move": {
+        "id": "P62I-OLI-L-081",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-083",
+      "move": {
+        "id": "P62I-OLI-L-083",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-002",
+      "move": {
+        "id": "P62I-OLI-L-002",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-005",
+      "move": {
+        "id": "P62I-OLI-L-005",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-008",
+      "move": {
+        "id": "P62I-OLI-L-008",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-011",
+      "move": {
+        "id": "P62I-OLI-L-011",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-014",
+      "move": {
+        "id": "P62I-OLI-L-014",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-017",
+      "move": {
+        "id": "P62I-OLI-L-017",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-032",
+      "move": {
+        "id": "P62I-OLI-L-032",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-036",
+      "move": {
+        "id": "P62I-OLI-L-036",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62I-OLI-L-040",
+      "move": {
+        "id": "P62I-OLI-L-040",
+        "conceptId": "oligopoly",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-EL-014",
+      "move": {
+        "id": "P62F-PC-EL-014",
+        "conceptId": "perfect-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-EL-015",
+      "move": {
+        "id": "P62F-PC-EL-015",
+        "conceptId": "perfect-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-EL-018",
+      "move": {
+        "id": "P62F-PC-EL-018",
+        "conceptId": "perfect-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-EL-020",
+      "move": {
+        "id": "P62F-PC-EL-020",
+        "conceptId": "perfect-competition",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-L-062",
+      "move": {
+        "id": "P62F-PC-L-062",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-L-063",
+      "move": {
+        "id": "P62F-PC-L-063",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-L-067",
+      "move": {
+        "id": "P62F-PC-L-067",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-L-069",
+      "move": {
+        "id": "P62F-PC-L-069",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-L-071",
+      "move": {
+        "id": "P62F-PC-L-071",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-L-072",
+      "move": {
+        "id": "P62F-PC-L-072",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-L-073",
+      "move": {
+        "id": "P62F-PC-L-073",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-L-092",
+      "move": {
+        "id": "P62F-PC-L-092",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P62F-PC-EL-031",
+      "move": {
+        "id": "P62F-PC-EL-031",
+        "conceptId": "perfect-competition",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-EL-035",
+      "move": {
+        "id": "P62F-PC-EL-035",
+        "conceptId": "perfect-competition",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-EL-037",
+      "move": {
+        "id": "P62F-PC-EL-037",
+        "conceptId": "perfect-competition",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-EL-041",
+      "move": {
+        "id": "P62F-PC-EL-041",
+        "conceptId": "perfect-competition",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-001",
+      "move": {
+        "id": "P62F-PC-L-001",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-002",
+      "move": {
+        "id": "P62F-PC-L-002",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-003",
+      "move": {
+        "id": "P62F-PC-L-003",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-004",
+      "move": {
+        "id": "P62F-PC-L-004",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-005",
+      "move": {
+        "id": "P62F-PC-L-005",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-006",
+      "move": {
+        "id": "P62F-PC-L-006",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-007",
+      "move": {
+        "id": "P62F-PC-L-007",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-008",
+      "move": {
+        "id": "P62F-PC-L-008",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-009",
+      "move": {
+        "id": "P62F-PC-L-009",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-010",
+      "move": {
+        "id": "P62F-PC-L-010",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-011",
+      "move": {
+        "id": "P62F-PC-L-011",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-012",
+      "move": {
+        "id": "P62F-PC-L-012",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-013",
+      "move": {
+        "id": "P62F-PC-L-013",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-014",
+      "move": {
+        "id": "P62F-PC-L-014",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-015",
+      "move": {
+        "id": "P62F-PC-L-015",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-064",
+      "move": {
+        "id": "P62F-PC-L-064",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-066",
+      "move": {
+        "id": "P62F-PC-L-066",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-074",
+      "move": {
+        "id": "P62F-PC-L-074",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-078",
+      "move": {
+        "id": "P62F-PC-L-078",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-079",
+      "move": {
+        "id": "P62F-PC-L-079",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-081",
+      "move": {
+        "id": "P62F-PC-L-081",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-082",
+      "move": {
+        "id": "P62F-PC-L-082",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-083",
+      "move": {
+        "id": "P62F-PC-L-083",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-085",
+      "move": {
+        "id": "P62F-PC-L-085",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-088",
+      "move": {
+        "id": "P62F-PC-L-088",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P62F-PC-L-098",
+      "move": {
+        "id": "P62F-PC-L-098",
+        "conceptId": "perfect-competition",
+        "from": "legendary",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "P52B-PSIG-EL-002",
+      "move": {
+        "id": "P52B-PSIG-EL-002",
+        "conceptId": "price-signals",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P52B-PSIG-L-002",
+      "move": {
+        "id": "P52B-PSIG-L-002",
+        "conceptId": "price-signals",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "P52B-PSIG-L-003",
+      "move": {
+        "id": "P52B-PSIG-L-003",
+        "conceptId": "price-signals",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "ECON-MG-HARD-246",
+      "move": {
+        "id": "ECON-MG-HARD-246",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "hard",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "ECON-MG-ELITE-302",
+      "move": {
+        "id": "ECON-MG-ELITE-302",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "elite",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9057",
+      "move": {
+        "id": "ECON-MG-LEGENDARY-9057",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9059",
+      "move": {
+        "id": "ECON-MG-LEGENDARY-9059",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9064",
+      "move": {
+        "id": "ECON-MG-LEGENDARY-9064",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9067",
+      "move": {
+        "id": "ECON-MG-LEGENDARY-9067",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "ECON-MG-LEGENDARY-9074",
+      "move": {
+        "id": "ECON-MG-LEGENDARY-9074",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "legendary",
+        "to": "medium"
+      }
+    },
+    {
+      "id": "ECON-MG-ELITE-315",
+      "move": {
+        "id": "ECON-MG-ELITE-315",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "ECON-MG-ELITE-316",
+      "move": {
+        "id": "ECON-MG-ELITE-316",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "elite",
+        "to": "hard"
+      }
+    },
+    {
+      "id": "40040",
+      "move": {
+        "id": "40040",
+        "conceptId": "tax-wedges-and-revenue",
+        "from": "elite",
+        "to": "hard"
+      }
+    }
+  ]
+}

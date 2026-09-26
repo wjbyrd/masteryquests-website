@@ -1,0 +1,814 @@
+43001
+easy
+application
+diagnose_behavioral_bias
+A person values avoiding a $20 loss more strongly than obtaining a $20 gain relative to the same reference point. Which pattern is illustrated?
+A:Risk neutrality
+B:Loss aversion [KEY]
+C:Availability from a vivid recent event
+D:Perfectly symmetric valuation of gains and losses
+Feedback: The comparison holds the amount fixed and shows greater weight on a loss relative to the reference point.
+
+
+42907
+medium
+application
+analyze_adverse_selection
+Hidden quality makes buyers offer $80 for a pooled device. Good sellers require at least $100; bad sellers require $30. Which sellers are willing to trade at the pooled price?
+A:Good sellers only
+B:Both types
+C:Neither type
+D:Bad sellers only [KEY]
+Feedback: The $80 offer exceeds the bad seller’s reservation value but falls below the good seller’s. This selection can worsen the pool.
+
+
+42909
+medium
+application
+analyze_adverse_selection
+Before buying a warranty, a customer privately knows its device is fragile. Which fact would instead describe moral hazard?
+A:The customer knew the device was fragile before contracting.
+B:The customer handles the device less carefully after obtaining coverage. [KEY]
+C:The warranty price is printed in the contract.
+D:The seller sees the same fragility test as the customer.
+Feedback: Hidden preexisting fragility creates adverse selection; changed care after coverage is a behavioral response creating moral hazard.
+
+
+42919
+medium
+application
+analyze_adverse_selection
+A seller can purchase credible quality certification for $5. It raises the price a verified good device receives from $80 to $100. Holding all other costs fixed, is certification privately worthwhile for that seller?
+A:No; any positive verification fee makes certification unprofitable.
+B:Yes; the seller gains the entire $100 as additional profit.
+C:No; the price gain is only $5.
+D:Yes; the $20 price gain exceeds the $5 fee by $15. [KEY]
+Feedback: Certification adds $20 to revenue and $5 to cost, for a $15 net gain.
+
+
+42933
+medium
+application
+analyze_moral_hazard
+An insurer reimburses all losses. It then adds a deductible that makes the insured bear part of each loss, holding information and all other terms fixed. Which incentive changes most directly?
+A:The insured bears a smaller loss and therefore has less reason for care.
+B:The insured has a stronger financial reason to prevent a loss. [KEY]
+C:The insurer learns every hidden characteristic before contracting.
+D:The deductible guarantees no accident can occur.
+Feedback: A deductible leaves some loss with the insured and can strengthen care incentives, without guaranteeing perfect care or revealing all types.
+
+
+42935
+medium
+application
+analyze_moral_hazard
+An insured driver maintains exactly the same level of care before and after coverage. An accident then occurs. Does that accident alone establish moral hazard?
+A:Yes; every insured loss proves reduced care.
+B:Yes; the insurer’s payment establishes hidden precontract risk.
+C:No; moral hazard is impossible in insurance.
+D:No; the accident alone does not demonstrate a coverage-induced change in behavior. [KEY]
+Feedback: A bad outcome can occur without a change in incentives or behavior. The stated unchanged care does not demonstrate moral hazard.
+
+
+42959
+medium
+application
+distinguish_signaling_screening
+A job applicant independently obtains a credible certificate before approaching employers. Employers did not require or design a menu of choices. Which information mechanism is described?
+A:Screening by the employer
+B:Moral hazard after employment
+C:A benefits cliff
+D:Signaling by the informed applicant [KEY]
+Feedback: The informed side takes an observable action to communicate its type.
+
+
+42961
+medium
+application
+distinguish_signaling_screening
+An informed seller voluntarily posts a warranty that is much more expensive for low-quality sellers to honor. Why can it convey quality?
+A:All sellers face identical warranty costs and incentives.
+B:Low-quality sellers may find imitation less profitable because expected warranty costs are higher. [KEY]
+C:Posting a warranty mechanically improves the physical product.
+D:A warranty prevents buyers from learning about defects.
+Feedback: Different expected costs can make the observable warranty a credible signal rather than cheap talk.
+
+
+42975
+medium
+application
+apply_behavioral_economics
+Workers are randomly assigned to automatic retirement enrollment or active enrollment, with identical plans and easy opt-out. Participation is 80% versus 50%. What does this comparison most directly support?
+A:The default changes every worker’s income.
+B:All automatically enrolled workers prefer the plan to every alternative.
+C:The plan’s financial return differs by 30 percentage points.
+D:The enrollment default affects participation in this setting. [KEY]
+Feedback: Random assignment and identical terms isolate the default difference. Participation alone does not establish each worker’s welfare or financial return.
+
+
+42985
+medium
+application
+apply_behavioral_economics
+A behavioral intervention was tested only on volunteers from one workplace. Which statement accurately describes the evidence?
+A:It proves effectiveness in every workplace.
+B:It provides evidence about that sample; broader effectiveness needs additional support. [KEY]
+C:It supplies no evidence because volunteers are never informative.
+D:It establishes the intervention’s mechanism solely from the sample size.
+Feedback: A restricted sample can be informative while limiting generalization to other settings.
+
+
+43025
+medium
+application
+apply_arrow_impossibility
+A voting rule ranks A above B. Voters’ individual comparisons of A with B stay fixed, but changing their views about C makes the social ranking put B above A. Which condition is violated?
+A:The requirement that voters have no preferences
+B:Independence of irrelevant alternatives [KEY]
+C:A rule requiring equal incomes
+D:The arithmetic of vote totals only
+Feedback: IIA requires the social comparison of A and B to depend on individual comparisons of that pair, not changed views about a third option.
+
+
+43039
+medium
+application
+identify_condorcet_cycle
+Three equal-sized groups rank A>B>C, B>C>A and C>A>B. Which option wins a pairwise contest between A and B?
+A:B by two groups to one
+B:A unanimously
+C:They tie
+D:A by two groups to one [KEY]
+Feedback: The first and third groups prefer A to B; only the second prefers B.
+
+
+42906
+medium
+application
+analyze_adverse_selection
+Applicants all know their own risk before applying. Which policy most directly addresses adverse selection?
+A:Monitoring precautions taken after coverage begins
+B:Reimbursing every claim without inspection
+C:Credible precontract risk verification [KEY]
+D:Hiding all application information from the insurer
+Feedback: Adverse selection concerns hidden precontract types. Risk verification addresses that timing, whereas monitoring later behavior addresses moral hazard.
+
+
+42910
+medium
+application
+analyze_adverse_selection
+Coverage is priced separately for each applicant’s accurately verified risk, with no hidden risk characteristic in this model. Does a high-risk person buying insurance alone demonstrate adverse selection?
+A:Yes; any high-risk purchase proves private information exists.
+B:Yes; risk-based pricing hides the applicant’s risk.
+C:No; high risk is observed and incorporated in pricing. [KEY]
+D:No; high-risk people cannot benefit from insurance.
+Feedback: Adverse selection requires an information problem affecting selection. A high-risk purchase at a fully informed price is not sufficient evidence.
+
+
+42914
+medium
+application
+analyze_adverse_selection
+A buyer values a good device at $120 and a bad device at $40. Half of devices offered are each type, but quality is hidden. What is the risk-neutral buyer’s expected value?
+A:$160
+B:$120
+C:$80 [KEY]
+D:$40
+Feedback: Expected value is 0.5 × 120 + 0.5 × 40 = $80. Pooling quality makes willingness to pay depend on the mix.
+
+
+42918
+medium
+application
+analyze_adverse_selection
+After good devices withdraw from a market, only devices worth $40 to buyers remain. Buyers learn the new composition. Should their former $80 pooled valuation persist?
+A:Yes; the original mix determines value permanently.
+B:No; the withdrawal raises expected value to $120.
+C:No; the remaining pool is worth $40 per device. [KEY]
+D:Yes; observed composition cannot affect willingness to pay.
+Feedback: Once buyers know only bad devices remain, the old mixed-pool expectation is no longer appropriate.
+
+
+42931
+medium
+application
+analyze_moral_hazard
+Two banks hold identical assets initially. Only one receives a credible promise that taxpayers will absorb large future losses. With other incentives fixed, which response is consistent with moral hazard?
+A:The protected bank selects less risk because it bears all taxpayers’ losses.
+B:Both banks must select identical risk because their initial assets match.
+C:The unprotected bank becomes insured merely because another bank is protected.
+D:The protected bank selects more risk because it bears less downside. [KEY]
+Feedback: The guarantee changes the protected bank’s marginal exposure to losses even though initial assets are equal.
+
+
+42937
+medium
+application
+analyze_moral_hazard
+Monitoring costs $8 per policy and is expected to reduce real accident losses by $5, with no other benefits or costs. Is monitoring justified by net resource savings in this example?
+A:Yes; every reduction in moral hazard exceeds its cost.
+B:No; it costs $3 more than the expected loss reduction. [KEY]
+C:Yes; the net saving is $13.
+D:No; the reduction in losses is a transfer rather than a resource benefit.
+Feedback: The resource gain is $5 and the cost is $8, giving net savings of −$3.
+
+
+42951
+medium
+application
+distinguish_signaling_screening
+An employer offers two contract packages that induce applicants with different private productivity to choose differently. Who designs the information-revealing action, and what is it called?
+A:The informed applicant designs screening.
+B:The uninformed employer sends a signal of applicant quality.
+C:The applicants disclose all types through a compulsory public test.
+D:The uninformed employer designs screening. [KEY]
+Feedback: Screening is initiated by the less-informed side through offers that reveal private information via choices.
+
+
+42957
+medium
+application
+distinguish_signaling_screening
+A bank offers borrowers a choice between a low-interest loan with collateral and a high-interest loan without collateral. Borrowers privately know their repayment risk. Which action constitutes screening?
+A:A borrower’s unsolicited public reputation campaign
+B:The bank’s design of the contract menu [KEY]
+C:The bank’s payment after a default
+D:A borrower’s change in effort after the loan
+Feedback: The uninformed bank designs alternatives intended to reveal risk through borrowers’ choices.
+
+
+43003
+medium
+application
+diagnose_behavioral_bias
+After seeing a vivid news report of a rare accident, a traveler raises its estimated frequency without new statistical data. What is the availability-based explanation?
+A:The report mechanically changes the true accident rate.
+B:The traveler computes the rate from a larger random sample.
+C:The traveler values losses and gains symmetrically.
+D:Ease of recalling the event substitutes for evidence about its frequency. [KEY]
+Feedback: Salient, easy-to-recall examples can receive excessive weight when judging frequency.
+
+
+43050
+medium
+application
+apply_median_voter_theorem
+Five voters have single-peaked preferences over one spending level, with ideal points 1, 3, 4, 8 and 10. Which level is the median ideal point and defeats any alternative in pairwise majority voting under these assumptions?
+A:5.2
+B:3
+C:4 [KEY]
+D:8
+Feedback: The ordered middle ideal point is 4, not the mean 5.2. Single-peakedness makes the median proposal a majority winner.
+
+
+42911
+hard
+application
+analyze_adverse_selection
+Buyers initially think 75% of devices are good, worth $120, and 25% are bad, worth $40. Good sellers require $90. If the good share falls to 50%, how does participation change at expected-value prices?
+A:The offer rises from $80 to $100, attracting good sellers.
+B:The offer falls from $120 to $40, but good sellers still accept.
+C:The offer stays at $90 because reservation values determine expected quality.
+D:The offer falls from $100 to $80, causing good sellers to withdraw. [KEY]
+Feedback: The initial expectation is 0.75(120)+0.25(40)=$100; the new expectation is $80, below the good seller’s $90 reservation value.
+
+
+42917
+hard
+application
+analyze_adverse_selection
+A warranty provider introduces a reliable pre-purchase fragility test but does not monitor care after purchase. Which problem does this change directly address?
+A:Postpurchase moral hazard, while fragility remains hidden.
+B:Adverse selection from hidden fragility, while postpurchase moral hazard can remain. [KEY]
+C:Both problems completely, because any test makes behavior enforceable.
+D:Neither problem, because information never affects contracting.
+Feedback: The test reveals precontract type; it does not reveal or change the enforceability of later care.
+
+
+42943
+hard
+application
+analyze_moral_hazard
+An insurer can perfectly verify a driver’s care but cannot contract on or enforce consequences for that care. Does observation alone remove the incentive to take less care?
+A:Yes; seeing an action automatically changes the driver’s payoff.
+B:Yes; observation refunds every premium.
+C:No; the remaining issue must be hidden precontract type only.
+D:No; an observable action need not be contractible, so incentives may remain unchanged. [KEY]
+Feedback: Observation and enforceability are separate. Verified actions need enforceable consequences to change the described incentive.
+
+
+42977
+hard
+application
+apply_behavioral_economics
+A small study reports that a reminder improves saving. A larger, preregistered replication with comparable conditions finds an estimate near zero and a confidence interval excluding the original large effect. What is the best response?
+A:Discard the replication because it disagrees with the first result.
+B:Reduce confidence in the original large effect while considering both studies’ uncertainty and designs. [KEY]
+C:Conclude reminders must reduce saving in every setting.
+D:Treat the first estimate as certain because it was published first.
+Feedback: The replication supplies contrary evidence about the claimed magnitude. It need not prove an exactly zero effect everywhere to weaken the original claim.
+
+
+42983
+hard
+application
+apply_behavioral_economics
+A program switches its default at the same time it increases the employer subsidy. Participation rises. Why can the increase not be attributed entirely to the default from this comparison alone?
+A:Defaults cannot influence behavior when a subsidy exists.
+B:Participation is unrelated to incentives.
+C:An increase in participation proves the subsidy had no effect.
+D:The subsidy changed too, creating a competing explanation. [KEY]
+Feedback: Two relevant conditions changed together. Without further evidence their contributions cannot be separated.
+
+
+42989
+hard
+application
+apply_behavioral_economics
+Two studies estimate an intervention effect at 4 and 5 percentage points, each with an uncertainty interval from −2 to 10. Does the one-point difference establish conflicting effects?
+A:Yes; any different point estimates establish different underlying effects.
+B:No; the estimates are close relative to their reported uncertainty. [KEY]
+C:Yes; overlapping intervals prove opposite mechanisms.
+D:No; the true effect is necessarily exactly 4.5 points.
+Feedback: Sampling variation can produce nearby estimates. Their uncertainty does not support treating the one-point difference as a demonstrated conflict.
+
+
+43009
+hard
+application
+diagnose_behavioral_bias
+A person rejects a fair gamble. Why does that fact alone not establish loss aversion?
+A:Loss aversion requires accepting every fair gamble.
+B:Ordinary risk aversion can also explain rejection; evidence about gains and losses around a reference point is needed. [KEY]
+C:Risk aversion and loss aversion are identical definitions.
+D:Rejecting a gamble proves probability judgments are accurate.
+Feedback: Risk aversion concerns curvature over outcomes; loss aversion concerns asymmetric valuation of gains and losses relative to a reference point. A single rejection need not distinguish them.
+
+
+43015
+hard
+application
+diagnose_behavioral_bias
+Two groups see the same accident-rate table; one also sees a vivid anecdote. Random assignment yields higher risk estimates only in the anecdote group. What does this design add?
+A:It proves the true accident rate rose in the anecdote group.
+B:It changes the table’s sample size for one group.
+C:It establishes loss aversion rather than a judgment effect.
+D:It isolates the anecdote’s effect while holding the statistical information fixed. [KEY]
+Feedback: Holding the table constant and randomly varying the anecdote supports an effect of salience on risk judgment.
+
+
+43029
+hard
+application
+apply_arrow_impossibility
+A rule violates independence of irrelevant alternatives in one example. Does that alone imply that every voter’s ranking is cyclic?
+A:Yes; IIA is the definition of individual transitivity.
+B:No; the collective rule can violate IIA even when each individual ranking is transitive. [KEY]
+C:Yes; adding an alternative necessarily changes every pairwise preference.
+D:No; IIA places no restriction on a social ranking rule.
+Feedback: IIA concerns how a collective pairwise ranking responds to preference profiles; it is distinct from consistency of each individual’s ranking.
+
+
+43011
+hard
+application
+diagnose_behavioral_bias
+After a recent burglary, residents become more worried. Local data also show a sustained increase in burglaries. Why is increased concern alone insufficient to diagnose availability bias?
+A:A recent event prevents any rational response.
+B:Availability bias requires no memorable events.
+C:Statistical evidence cannot influence perceived risk.
+D:The concern could reflect the documented increase in risk as well as the vivid event. [KEY]
+Feedback: A changed belief is not automatically a bias when relevant risk evidence also changes. The two explanations require discrimination.
+
+
+42887
+hard
+application
+identify_information_asymmetry
+Sellers claim their products are reliable. An independent test accurately identifies reliability and results are disclosed before buyers choose. Which mechanism could improve trade?
+A:The test changes every unreliable product into a reliable one.
+B:The test prevents all buyers from considering prices.
+C:The test creates adverse selection by hiding quality that was formerly disclosed.
+D:Reliable sellers can distinguish their products, reducing buyers’ need to price all products as a pooled average. [KEY]
+Feedback: Credible disclosure separates qualities rather than improving the physical product itself; good products need not be priced as though they were average.
+
+
+42913
+hard
+application
+analyze_adverse_selection
+Two warranty markets differ only in information. In A, fragility is privately known before purchase; in B, fragility is verified and priced, but postpurchase care is unobserved. Which pairing is correct?
+A:A: moral hazard; B: adverse selection
+B:A: adverse selection; B: moral hazard [KEY]
+C:Both: adverse selection only
+D:Both: moral hazard only
+Feedback: A concerns who selects coverage based on hidden type. B concerns hidden actions after coverage begins.
+
+
+42927
+hard
+application
+analyze_moral_hazard
+A bank expects rescue only if its losses become very large. Managers respond by choosing a riskier portfolio after financing is obtained. What makes this a moral-hazard mechanism?
+A:The rescue reveals the bank’s hidden precontract type with certainty.
+B:The risk increase is a fixed characteristic that cannot respond to incentives.
+C:Rescue expectations raise the bank’s share of every possible loss.
+D:The rescue expectation reduces the downside the bank bears and changes its later risk-taking. [KEY]
+Feedback: Sharing or shifting losses can weaken incentives to avoid them; the stated change is in behavior after financing.
+
+
+42953
+hard
+application
+distinguish_signaling_screening
+A borrower offers collateral as a signal of repayment confidence. Suppose both high-risk and low-risk borrowers face the same expected collateral loss and obtain the same loan benefit. What follows?
+A:Collateral necessarily separates types even when their incentives match.
+B:The stated costs and benefits do not give the two types different signaling incentives. [KEY]
+C:Equal incentives reveal every borrower to be low risk.
+D:Equal incentives convert the signal into perfect lender screening.
+Feedback: A separating signal needs an incentive difference that makes mimicking unattractive for one type. The stated identical payoffs provide none.
+
+
+42965
+hard
+application
+distinguish_signaling_screening
+A warranty initially costs good sellers $2 and bad sellers $20 to honor. Third-party insurance then makes the warranty cost $3 for either type. Holding the price premium fixed, what happens to its separating rationale?
+A:It strengthens because identical costs reveal quality more accurately.
+B:It weakens because the warranty no longer imposes a higher signaling cost on bad sellers. [KEY]
+C:It is unchanged because signaling never depends on imitation incentives.
+D:It reverses physical quality, making bad products good.
+Feedback: Equalizing the cost removes the original reason bad sellers would be less willing to mimic the warranty.
+
+
+42979
+hard
+application
+apply_behavioral_economics
+Automatic enrollment raises participation, but some workers later opt out and report that the plan did not fit their needs. Which conclusion follows?
+A:The opt-outs prove defaults have no effect on initial choices.
+B:Higher participation establishes unanimous informed preference for the plan.
+C:The plan must yield lower returns solely because opt-outs occur.
+D:The default changes choices; higher participation alone does not establish that every affected worker benefits. [KEY]
+Feedback: Choice effects and welfare effects are separate. Some people may remain enrolled because of inertia rather than a plan that best fits their circumstances.
+
+
+42991
+hard
+application
+apply_behavioral_economics
+A trial finds that a default raises participation by 20 points among new employees. A firm plans to apply the same estimate to long-serving workers who already made active choices. What limitation matters?
+A:Random assignment guarantees an identical effect in every population.
+B:Prior choices make the trial’s result mathematically impossible.
+C:A 20-point effect means participation must double in every group.
+D:The trial identifies an effect for its participants; transfer to a group with prior active choices requires evidence. [KEY]
+Feedback: Internal evidence from one group does not guarantee the same response in a different decision context.
+
+
+43005
+hard
+application
+diagnose_behavioral_bias
+Two identical outcomes are framed as keeping $80 of an endowed $100 or losing $20 of it. A decision changes with the framing. Which explanation is consistent with this evidence, without claiming it is uniquely proven?
+A:The frames produce different final wealth by definition.
+B:Reference-dependent evaluation can make the loss frame more salient despite identical final wealth. [KEY]
+C:The change proves the person has different income in the two descriptions.
+D:The frames eliminate any role for a reference point.
+Feedback: The monetary outcome is the same. A difference in response is consistent with framing and reference dependence, though it alone does not uniquely identify a mechanism.
+
+
+43017
+hard
+application
+diagnose_behavioral_bias
+A policy analyst predicts that a $50 rebate framed as avoiding a loss will work identically for people who expected the rebate and people who did not. What does reference dependence suggest?
+A:Equal dollars force identical reference points.
+B:Different expectations may create different reference points, so equal dollars need not produce equal responses. [KEY]
+C:Only the final dollar amount can matter in a reference-dependent model.
+D:A reference point changes the legal value of the currency.
+Feedback: Expectations can affect whether an outcome is experienced as a gain or avoidance of a loss, limiting the prediction of identical responses.
+
+
+43043
+hard
+application
+identify_condorcet_cycle
+Three equal-sized groups rank A>B>C, B>C>A and C>A>B. Under sequential pairwise voting with sincere votes, compare agenda 1 (A versus B, then the winner versus C) with agenda 2 (B versus C, then the winner versus A).
+A:Both agendas select A.
+B:Agenda 1 selects B; agenda 2 selects C.
+C:Both agendas select C.
+D:Agenda 1 selects C; agenda 2 selects A. [KEY]
+Feedback: A beats B but then loses to C. B beats C but then loses to A. The cycle makes the final result depend on the agenda.
+
+
+43054
+hard
+application
+apply_median_voter_theorem
+A median-voter prediction was derived for single-peaked preferences on one policy dimension. The election then adds a second independent policy dimension. What conclusion is warranted?
+A:The arithmetic median on the first dimension must still win every multidimensional comparison.
+B:Adding a dimension guarantees unanimous agreement.
+C:The original theorem’s assumptions no longer suffice to guarantee a median policy winner. [KEY]
+D:All individual preferences must become cyclic.
+Feedback: The one-dimensional ordering supports the median-voter result. Moving to multiple dimensions removes that guarantee without proving that a cycle must occur.
+
+
+42967
+hard
+application
+distinguish_signaling_screening
+High-productivity applicants value a job at $30,000 more than their alternative and face a $5,000 certificate cost. Low-productivity applicants gain $10,000 and face a $15,000 cost. With the job available only to certificate holders, can certification separate the two types under these payoffs?
+A:No; both types gain because the job is valuable.
+B:No; both types lose because certification is costly.
+C:Yes; low types gain $5,000 while high types lose $25,000.
+D:Yes; high types gain $25,000 net while low types would lose $5,000. [KEY]
+Feedback: High types have benefit minus cost 30,000 − 5,000 = 25,000; low types have 10,000 − 15,000 = −5,000. Their incentives differ as separation requires.
+
+
+42993
+hard
+application
+apply_behavioral_economics
+Several small studies report a large behavioral effect, while a well-designed large replication reports a smaller positive effect. Which conclusion best combines magnitude and replication evidence?
+A:Any smaller effect proves the underlying mechanism does not exist.
+B:The evidence may support a positive effect while weakening the claim that it is as large as first reported. [KEY]
+C:A positive effect in the replication confirms the original magnitude exactly.
+D:The number of small studies alone makes sample size and design irrelevant.
+Feedback: Replicating a direction does not establish the original magnitude. Assessing both size and uncertainty can support a more modest conclusion.
+
+
+43007
+hard
+application
+diagnose_behavioral_bias
+A vivid report raises perceived accident risk, while a large representative dataset shows that the rate has not changed. Which response most directly corrects an availability-based inference?
+A:Increase the estimated frequency further because the story is memorable.
+B:Ignore both the story and the dataset because no probability can be estimated.
+C:Treat the single report as more representative than the large dataset.
+D:Use the representative frequency data while distinguishing vividness from prevalence. [KEY]
+Feedback: Representative base-rate evidence addresses frequency; vividness alone does not show a change in that frequency.
+
+
+43033
+hard
+application
+apply_arrow_impossibility
+A designer claims that Arrow’s theorem proves no useful election rule can exist. Which correction best states the limitation of that claim?
+A:The theorem guarantees all voting rules satisfy every fairness condition.
+B:The theorem concerns satisfying a specified set of conditions together; a rule can remain useful while relaxing a condition. [KEY]
+C:The theorem applies only when there are exactly two alternatives.
+D:The theorem says individual preferences cannot be transitive.
+Feedback: An impossibility result about jointly meeting conditions is not a claim that every rule is useless. Practical design involves which conditions to retain or relax.
+
+
+42981
+elite
+application
+apply_behavioral_economics
+A reminder works in one experiment but not in another. The second changes both the population and delivery method. Which follow-up best distinguishes these explanations?
+A:Repeat the original treatment only and ignore the second population.
+B:Vary population and delivery method separately in a design that can compare their effects. [KEY]
+C:Average the two results and declare the mechanism universal.
+D:Attribute the difference to population without testing delivery.
+Feedback: Separating the factors can reveal whether population, delivery or their interaction explains the difference; the two-study comparison confounds them.
+
+
+42882
+hard
+integration
+identify_information_asymmetry
+A marketplace makes product quality observable before purchase and makes seller effort observable and enforceable after purchase. Pollution from production still harms nearby residents. Which assessment separates the problems?
+A:Better information removes the pollution cost as well as the hidden-information problems, so no other distortion remains.
+B:Only hidden action can be addressed; observing quality before purchase cannot affect selection into trade.
+C:Better information can reduce hidden-type and hidden-action problems, but it does not itself make sellers bear the pollution cost. [KEY]
+D:Only pollution can be addressed; making information shared cannot improve the contracting problems.
+Feedback: Observable quality improves type-based contracting; enforceable effort improves action incentives. Pollution is an external cost, so it can remain even when information is shared.
+
+
+42884
+easy
+application
+identify_information_asymmetry
+A used-device seller knows the battery fails after an hour; buyers cannot test it before paying. Which information is asymmetric?
+A:The device’s hidden quality before the transaction [KEY]
+B:A buyer’s effort after purchasing insurance
+C:Both parties’ knowledge of the posted price
+D:The number of units in a public inventory
+Feedback: The seller knows a quality characteristic the buyer cannot observe before buying.
+
+
+42885
+hard
+integration
+identify_information_asymmetry
+Two borrowers seek identical loans, but only they know their project risks before signing. A lender charges a pooled interest rate. Safer borrowers increasingly decline the loans, while riskier borrowers remain. Which diagnosis and response fit the timing?
+A:Moral hazard worsens the borrower pool; monitoring effort only after lending directly reveals the original hidden types.
+B:Adverse selection worsens the borrower pool; verified pre-loan risk information can support risk-specific offers. [KEY]
+C:Adverse selection improves the pool; increasing the pooled rate must bring safer borrowers back.
+D:Moral hazard improves the pool; a uniform rate removes differences in project risk before contracting.
+Feedback: Private risk is a hidden type before the contract. If safer borrowers exit, the remaining pool becomes riskier; screening before lending targets that mechanism.
+
+
+42886
+hard
+application
+identify_information_asymmetry
+Both sides can verify a product’s quality and enforce promised actions, but only the seller knows its private reservation price. Which statement is correct?
+A:All private information is eliminated because quality is verifiable.
+B:Enforceable actions necessarily create moral hazard.
+C:Quality and action problems have been addressed, but the parties need not have identical information about valuations. [KEY]
+D:Private reservation prices imply the product’s quality cannot be verified.
+Feedback: Information about quality, actions and valuations are different. Removing two asymmetries does not logically eliminate the third.
+
+
+42888
+medium
+application
+identify_information_asymmetry
+A buyer and seller both receive a reliable independent inspection of a device before trading. Does the seller’s former private knowledge of battery quality remain an information advantage for this transaction?
+A:No; the verified inspection makes that quality information available to both. [KEY]
+B:Yes; any sale necessarily contains hidden quality.
+C:Yes; verification creates postpurchase moral hazard.
+D:No; inspection guarantees the absence of all market failures.
+Feedback: Reliable shared quality information removes this particular asymmetry, without establishing that every other market failure is absent.
+
+
+42891
+hard
+integration
+identify_information_asymmetry
+Buyers value a verified reliable product at $120, and its seller’s resource cost is $100. Without verification, buyers offer only $80 because quality is hidden. Independent verification costs $10 and reliably identifies quality. Which conclusion follows?
+A:Verification cannot restore trade because the original pooled offer is below the seller’s cost.
+B:Verification restores trade and creates $40 of net gains, measured by the rise from the pooled offer to buyer value.
+C:Verification leaves $20 of net gains because a real verification cost is only a transfer.
+D:Verification can restore the reliable-product trade and leave $10 of net gains after its resource cost. [KEY]
+Feedback: Without verification the $80 offer cannot cover the reliable seller’s $100 cost. With verification, willingness to pay $120 exceeds cost $100 plus verification $10, leaving $10 of net surplus.
+
+
+42892
+easy
+application
+identify_information_asymmetry
+A borrower knows its intended project is risky, but the lender sees only the same application data used for safer borrowers. At which point does this asymmetry arise?
+A:Before the loan contract, when the borrower’s type is hidden. [KEY]
+B:Only after the borrower misses a repayment.
+C:Only when the lender posts an interest rate.
+D:After repayment, when the loan is no longer active.
+Feedback: The private project-risk information exists before contracting; an eventual loss is not needed for the asymmetry to exist.
+
+
+42893
+hard
+application
+identify_information_asymmetry
+Before lending, a bank can verify a borrower’s past defaults but cannot observe the risk of its new project. What can the bank conclude about information asymmetry?
+A:All private information disappears once any history is verified.
+B:One source has been reduced, but private information about the new project can remain. [KEY]
+C:Verification creates hidden past defaults that were previously observable.
+D:The remaining problem must concern actions taken after the loan, not hidden current project quality.
+Feedback: Verifying one observable history does not reveal every relevant private characteristic. The new project’s risk remains hidden before contracting.
+
+
+42894
+hard
+integration
+identify_information_asymmetry
+A buyer and contractor can observe quality but cannot enforce a promised effort level in court. A proposal merely publishes the observed effort, while another makes payment contingent on a verified effort measure. Which is more directly targeted at hidden-action incentives?
+A:Publication alone, because observing an action necessarily makes all promised penalties enforceable.
+B:Neither, because incentives matter only for hidden types before contracting.
+C:The contingent-payment contract, because shared observation must be connected to enforceable rewards or penalties to change the contractor’s payoff. [KEY]
+D:The contingent-payment contract only if it prevents buyers from observing quality.
+Feedback: Information and enforceability are distinct. Making payment contingent on a verified action changes the incentive to exert effort; observation alone does not establish that contractual consequence.
+
+
+42895
+medium
+application
+identify_information_asymmetry
+A verification service reveals product quality only after a sale becomes final, with no refund rights. Why might it fail to prevent a buyer’s initial quality mistake?
+A:Verified information can never influence choice.
+B:The service necessarily changes the product’s production cost.
+C:The buyer had full information before purchasing.
+D:The information arrives too late to affect the irreversible purchase choice. [KEY]
+Feedback: Timing matters: postpurchase knowledge cannot guide the already irreversible decision described.
+
+
+42899
+hard
+integration
+analyze_adverse_selection
+Half of used devices are reliable and worth $120 to buyers; half are defective and worth $40. Reliable sellers require at least $100 and defective sellers $20. Buyers cannot distinguish quality. What happens if they initially offer the expected value and then update after sellers decide whether to participate?
+A:The initial offer is $80; reliable sellers stay because $80 exceeds defective sellers’ $20 requirement.
+B:The initial offer is $160; both types stay because values should be added without weighting.
+C:The initial offer is $100; defective sellers withdraw because buyers prefer reliable products.
+D:The initial offer is $80; reliable sellers withdraw, so the remaining pool supports only $40. [KEY]
+Feedback: The pooled value is 0.5×120+0.5×40=$80. That is below reliable sellers’ $100 reservation value. Their exit leaves defective products valued at $40, illustrating adverse selection.
+
+
+42902
+medium
+application
+analyze_adverse_selection
+An insurer must charge one premium. People who privately know they face unusually low risk stop buying after the premium rises. What happens to the average risk among those remaining?
+A:It falls.
+B:It must stay fixed.
+C:It rises. [KEY]
+D:It becomes zero.
+Feedback: The withdrawal of safer customers leaves a larger share of high-risk customers in the insured pool.
+
+
+42905
+hard
+integration
+analyze_adverse_selection
+Customers privately know device fragility before buying insurance; after purchase some reduce care. The insurer proposes a durability test before purchase and a deductible on each claim. Which assessment correctly separates the purposes?
+A:The test addresses moral hazard after purchase; the deductible identifies the device’s original hidden type without affecting care.
+B:The test addresses hidden type and adverse selection; the deductible can preserve care incentives after purchase and reduce moral hazard. [KEY]
+C:Both target only adverse selection because all insurance problems arise before purchase.
+D:Both target only moral hazard because private fragility is an action chosen after purchase.
+Feedback: Fragility at purchase is a type; care after coverage is an action. Screening and cost sharing address distinct information and incentive problems.
+
+
+42889
+legendary
+integration
+identify_information_asymmetry
+A lender cannot observe applicants’ existing risk types. After the pooled rate rises, low-risk applicants withdraw; among those funded, some also switch to riskier projects that the lender cannot monitor. Which policy pairing addresses both mechanisms?
+A:Screen applicants’ types before lending and assume that this alone makes later actions observable.
+B:Screen applicants’ types before lending and link repayment incentives or monitoring to post-loan actions. [KEY]
+C:Monitor funded borrowers’ actions and assume that this alone identifies the risk of applicants who withdrew.
+D:Raise the pooled rate again and treat both changes as evidence that all applicants have the same risk.
+Feedback: Safe-type withdrawal is adverse selection; changing risk after funding is moral hazard. The two stages call for information about types and incentives for actions, respectively.
+
+
+42903
+legendary
+integration
+analyze_adverse_selection
+A pooled used-product market loses reliable sellers because buyers cannot distinguish quality. A manufacturer proposes a warranty that is cheap for reliable products but expensive for unreliable ones because claims are verifiable. Why can this help, and what condition matters?
+A:The warranty can credibly signal quality whenever it is advertised, even if both seller types can imitate it at the same cost.
+B:The warranty solves post-purchase buyer moral hazard by making the original product type identical across sellers.
+C:The warranty eliminates the need for credibility because buyers can infer quality from a higher asking price alone.
+D:The warranty can credibly signal quality if expected claim costs make imitation unattractive for unreliable sellers. [KEY]
+Feedback: A warranty is informative when seller types face different expected costs and the claim promise is enforceable. If low-quality sellers can mimic it cheaply, the separating signal breaks down.
+
+
+42915
+legendary
+integration
+analyze_adverse_selection
+Reliable products are worth $120 to buyers and cost sellers $100. Hidden quality prevents reliable sellers from trading at the pooled offer. Verification perfectly reveals quality but uses $30 of real resources per product. Is restoring each reliable trade with this verification method necessarily a surplus gain?
+A:Yes; any trade restored by better information raises surplus regardless of verification cost.
+B:Yes; the full $120 buyer value is a surplus gain because seller cost is a transfer.
+C:No; verification prevents buyers from distinguishing reliable and defective products.
+D:No; the potential $20 gain from trade is smaller than the $30 verification cost. [KEY]
+Feedback: Better information can restore exchange, but here net surplus would be $120−$100−$30=−$10. The information improvement must be assessed alongside its resource cost.
+
+
+42929
+legendary
+integration
+analyze_moral_hazard
+An insurer can cheaply monitor care and enforce a premium discount for verified care, but cannot observe a customer’s inherited risk before contracting. Which problem can the policy directly reduce, and which may remain?
+A:It can reduce adverse selection; moral hazard must remain even with enforceable care incentives.
+B:It can reduce hidden-action moral hazard; hidden-type adverse selection may remain. [KEY]
+C:It eliminates both problems because monitoring later care reveals inherited risk perfectly.
+D:It eliminates neither problem because premiums cannot change behavior.
+Feedback: A discount conditional on care changes the reward for a post-contract action. It does not, under the stated information limit, reveal the customer’s original risk type.
+
+
+42941
+legendary
+integration
+analyze_moral_hazard
+A company can eliminate employees’ hidden shirking through monitoring. Monitoring would recover $18,000 of output but use $25,000 of real resources annually. A cheaper incentive contract recovers $12,000 at a $4,000 resource cost. Which comparison is correct?
+A:Perfect monitoring gains $18,000 net and is preferable because its resource cost is irrelevant to incentives.
+B:Perfect monitoring loses $7,000 net, while the incentive contract gains $8,000; eliminating all hidden action is not necessarily efficient. [KEY]
+C:The incentive contract loses $8,000 net because any remaining shirking makes a policy inefficient.
+D:Both policies have the same net benefit because both address moral hazard.
+Feedback: Net benefits are 18,000−25,000=−7,000 and 12,000−4,000=8,000. Better observability is useful only when its gains justify its resource cost.
+
+
+42955
+legendary
+integration
+distinguish_signaling_screening
+An insurer offers low-premium/high-deductible and high-premium/low-deductible plans before it knows applicants’ risk types. A customer separately provides a costly certified safety record. Which distinction correctly identifies the two information mechanisms?
+A:The menu is signaling by the informed insurer; the customer’s record is screening by the uninformed side.
+B:Both are screening because neither depends on who initiates the information mechanism.
+C:Both are moral hazard because the information concerns actions only after coverage begins.
+D:The menu is screening by the less-informed insurer; the customer’s credible record is signaling by the informed side. [KEY]
+Feedback: The insurer designs a menu to induce self-selection, a screening device. The informed applicant supplies a credible observable record, a signal. Timing and who initiates the mechanism distinguish them.
+
+
+42968
+medium
+application
+distinguish_signaling_screening
+A job applicant chooses to obtain an unsolicited certificate before applying; an employer separately offers a menu of trial contracts to reveal applicants’ types. Which action is signaling?
+A:The applicant’s certificate [KEY]
+B:The employer’s contract menu
+C:Both actions are signaling by the informed side.
+D:Neither action can convey information.
+Feedback: The informed applicant initiates the certificate signal. The uninformed employer initiates the screening menu.

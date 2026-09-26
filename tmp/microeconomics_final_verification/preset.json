@@ -1,0 +1,576 @@
+{
+  "id": "micro-factor-choice-inequality",
+  "before": 23,
+  "after": 0,
+  "modes": [
+    {
+      "mode": "standard",
+      "label": "Standard Campaign",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 131
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 255
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 62
+        },
+        {
+          "pool": "easyBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "mediumBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "finalBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 18
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 18
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "label": "Timed Trial",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 131
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 255
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 62
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 18
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 18
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "label": "Exam Drill",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 131
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 255
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 62
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 18
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 18
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "label": "Quiz",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 5,
+          "count": 131
+        },
+        {
+          "pool": "medium",
+          "minimum": 5,
+          "count": 255
+        },
+        {
+          "pool": "hard",
+          "minimum": 5,
+          "count": 62
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "label": "Unlimited Practice",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 131
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 255
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 62
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 18
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 18
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "label": "Legendary Mode",
+      "requirements": [
+        {
+          "pool": "legendary",
+          "minimum": 6,
+          "count": 0
+        },
+        {
+          "pool": "legendaryBoss",
+          "minimum": 3,
+          "count": 18
+        }
+      ],
+      "deficiencies": [
+        {
+          "pool": "legendary",
+          "minimum": 6,
+          "count": 0
+        }
+      ],
+      "issues": [],
+      "ok": false
+    },
+    {
+      "mode": "score",
+      "label": "Score Attack",
+      "requirements": [
+        {
+          "pool": "easy",
+          "minimum": 6,
+          "count": 131
+        },
+        {
+          "pool": "medium",
+          "minimum": 6,
+          "count": 255
+        },
+        {
+          "pool": "hard",
+          "minimum": 6,
+          "count": 62
+        },
+        {
+          "pool": "easyBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "mediumBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "finalBoss",
+          "minimum": 3,
+          "count": 18
+        },
+        {
+          "pool": "repair",
+          "minimum": 1,
+          "count": 18
+        },
+        {
+          "pool": "bridge",
+          "minimum": 1,
+          "count": 18
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "label": "Trial by Graph",
+      "requirements": [
+        {
+          "pool": "graphSafe",
+          "minimum": 10,
+          "count": 86
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "label": "Fading Fortune",
+      "requirements": [
+        {
+          "pool": "fadingFortuneEligible",
+          "minimum": 10,
+          "count": 452
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "label": "Risk & Reward",
+      "requirements": [
+        {
+          "pool": "riskRewardEligible",
+          "minimum": 10,
+          "count": 452
+        }
+      ],
+      "deficiencies": [],
+      "issues": [],
+      "ok": true
+    }
+  ],
+  "formerLegendary": [
+    {
+      "id": "42401",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42401",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "A catering company expands its crew. The latest worker adds 9 events, down from 13 for the worker before. How should the manager interpret this?",
+        "key": "Marginal product is diminishing even though total product may still rise",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42415",
+      "currentDifficulty": "hard",
+      "decision": {
+        "id": "42415",
+        "tier": "hard",
+        "canonical": "hard",
+        "stem": "At a machine shop, the marginal worker produces value from 3 extra parts sold for $24 apiece. How does a $68 wage affect the hiring decision?",
+        "key": "Hire the worker because VMP exceeds the wage",
+        "basis": "Compute VMP and compare the inferred value with a wage before deciding."
+      }
+    },
+    {
+      "id": "42429",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42429",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "One more worker lets a repair garage sell 2 additional repairs at $45 each. How much value does that worker add per hour?",
+        "key": "$90 per hour",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42441",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42441",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "One more worker lets a farm stand sell 9 additional baskets at $7 each. How much value does that worker add per hour?",
+        "key": "$63 per hour",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42453",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42453",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "The bottling line adds 2 workers and gains 50 cases of output. What is the marginal product per worker?",
+        "key": "25 cases per added worker",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42465",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42465",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "The construction wage declines. How should the firm's labor-demand response be represented?",
+        "key": "Movement down construction labor demand",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42477",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42477",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "Faster bottling equipment complements line workers and raises their MPL. How should the firm's labor-demand response be represented?",
+        "key": "A rightward shift of line-worker demand",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42491",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42491",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "Self-checkout machines replace routine cashier tasks. What relationship among productive inputs does the scenario imply?",
+        "key": "Capital substitutes for cashier labor and reduces cashier demand",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42505",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42505",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "Remote-work options make software jobs more attractive to qualified workers. What happens to labor supply?",
+        "key": "Labor supply to those jobs shifts right",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42517",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42517",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "Stricter licensing reduces the supply of dental assistants. With labor demand unchanged, what is the new competitive-market direction?",
+        "key": "The wage rises and employment falls",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42529",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42529",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "In a market for electricians, labor demand is Ld = 720 − 24w and labor supply is Ls = 120 + 16w. What are the equilibrium wage and employment?",
+        "key": "$15 per hour and 360 workers",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42541",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42541",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "The selling price of solar installations falls. What is the labor-demand effect?",
+        "key": "Installer labor demand shifts left, other things equal",
+        "basis": "Reviewed each listed factor task: direct graph read, one product/ratio, routine equilibrium algebra, or one shift application."
+      }
+    },
+    {
+      "id": "42647",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42647",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "In hypothetical consumer-choice case G, bundle D contains at least as much of both desirable goods as bundle E and more of one. Under more-is-better, how are they ranked?",
+        "key": "D is strictly preferred to E",
+        "basis": "One budget calculation, graph read, or direct application of the specified consumer-choice rule."
+      }
+    },
+    {
+      "id": "42675",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42675",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "In hypothetical consumer-choice case G, bundle A has utility 40 and bundle B has utility 20. Which conclusion is not justified by ordinal utility?",
+        "key": "A provides exactly twice as much satisfaction as B",
+        "basis": "One budget calculation, graph read, or direct application of the specified consumer-choice rule."
+      }
+    },
+    {
+      "id": "42689",
+      "currentDifficulty": "easy",
+      "decision": {
+        "id": "42689",
+        "tier": "easy",
+        "canonical": "easy",
+        "stem": "In hypothetical consumer-choice case C, the consumer is always willing to trade two units of Y for one X. What preference form fits?",
+        "key": "Perfect substitutes with straight-line indifference curves",
+        "basis": "Recognize a stated preference property or standard optimum condition."
+      }
+    },
+    {
+      "id": "42701",
+      "currentDifficulty": "hard",
+      "decision": {
+        "id": "42701",
+        "tier": "hard",
+        "canonical": "hard",
+        "stem": "In hypothetical consumer-choice case C, an affordable interior bundle has MRS greater than Px/Py. Which move can raise utility?",
+        "key": "Buy more X and less Y until the tradeoffs align",
+        "basis": "Interpret the optimum or diagnose a constraint/tradeoff before selecting the adjustment."
+      }
+    },
+    {
+      "id": "42713",
+      "currentDifficulty": "medium",
+      "decision": {
+        "id": "42713",
+        "tier": "medium",
+        "canonical": "medium",
+        "stem": "In hypothetical consumer-choice case E, MUx/Px is 7.5 and MUy/Py is 5.0. How should spending adjust?",
+        "key": "Shift spending toward X and away from Y",
+        "basis": "One budget calculation, graph read, or direct application of the specified consumer-choice rule."
+      }
+    },
+    {
+      "id": "42809",
+      "currentDifficulty": "hard",
+      "decision": {
+        "id": "42809",
+        "tier": "hard",
+        "canonical": "hard",
+        "stem": "Two households have equal labor earnings. Household A inherits productive assets, while B does not. A proposal equalizes their current labor earnings but leaves asset ownership and returns unchanged. Which evaluation is justified?",
+        "key": "The proposal leaves this wealth gap and associated capital-income gap in place; equal labor earnings do not establish equal economic resources.",
+        "basis": "Reviewed final revised task: conditional diagnosis or linked inference."
+      }
+    },
+    {
+      "id": "42823",
+      "currentDifficulty": "hard",
+      "decision": {
+        "id": "42823",
+        "tier": "hard",
+        "canonical": "hard",
+        "stem": "A hypothetical poverty measure counts cash income but excludes food vouchers. A household has $25,000 in cash and $3,000 in vouchers; its threshold is $27,000. Replacing the vouchers with $3,000 cash changes no prices. Which conclusion follows?",
+        "key": "Measured status changes from below to above the threshold, though this alone does not measure the change in well-being.",
+        "basis": "Reviewed final revised task: conditional diagnosis or linked inference."
+      }
+    },
+    {
+      "id": "42835",
+      "currentDifficulty": "hard",
+      "decision": {
+        "id": "42835",
+        "tier": "hard",
+        "canonical": "hard",
+        "stem": "Two households each have $31,000 measured income. The threshold is $30,000 for the smaller household and $34,000 for the larger. An analyst classifies both as above poverty because their incomes match. What is the error?",
+        "key": "The analyst ignores different applicable thresholds; only the smaller household is above its threshold.",
+        "basis": "Reviewed final revised task: conditional diagnosis or linked inference."
+      }
+    },
+    {
+      "id": "42849",
+      "currentDifficulty": "elite",
+      "decision": {
+        "id": "42849",
+        "tier": "elite",
+        "canonical": "elite",
+        "stem": "An equal-cost cash grant gives recipients more choice than a restricted tutoring benefit. Suppose tutoring produces an external benefit not reflected in recipients’ choices. Which assessment is justified?",
+        "key": "Cash weakly expands private choice; the external benefit gives a separate reason a policymaker might favor tutoring.",
+        "basis": "Reviewed final revised task: competing explanations or evidence transfer."
+      }
+    },
+    {
+      "id": "42861",
+      "currentDifficulty": "hard",
+      "decision": {
+        "id": "42861",
+        "tier": "hard",
+        "canonical": "hard",
+        "stem": "One policy restores property proven to have been stolen; another redistributes legitimately acquired property to equalize incomes. Both lower inequality. What follows under an entitlement framework?",
+        "key": "The first may rectify a rights violation; the common distributional result does not make the two policies equivalent.",
+        "basis": "Reviewed final revised task: conditional diagnosis or linked inference."
+      }
+    },
+    {
+      "id": "42872",
+      "currentDifficulty": "hard",
+      "decision": {
+        "id": "42872",
+        "tier": "hard",
+        "canonical": "hard",
+        "stem": "A program replaces a $1,000 benefit cliff at one earnings cutoff with a $0.20 reduction per dollar over the next $5,000. Which assessment is correct?",
+        "key": "The abrupt $1,000 loss disappears, but the 20% phaseout weakens the marginal return to earnings across a wider range.",
+        "basis": "Reviewed final revised task: conditional diagnosis or linked inference."
+      }
+    }
+  ]
+}

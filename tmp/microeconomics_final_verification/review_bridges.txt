@@ -1,0 +1,1208 @@
+42626
+medium
+application
+analyze_budget_change
+Income is $60; X and Y each cost $6. X falls to $3 while Y stays at $6. What are the new X- and Y-intercepts?
+A:10 X and 20 Y
+B:20 X and 20 Y
+C:20 X and 10 Y [KEY]
+D:10 X and 10 Y
+Feedback: The intercepts are income divided by each price: 60/3=20 X and 60/6=10 Y. Only the X-intercept changes.
+
+REPAIRS: [{"id":"42627","q":"In hypothetical consumer-choice case D, the price of X falls while income and Y's price stay fixed. Which budget-line change follows?","key":"The X-intercept rises and the line pivots outward around the Y-intercept"}]
+
+42639
+medium
+application
+interpret_relative_price
+X costs $4 and Y costs $12. A shopper replaces two units of Y with X while keeping spending fixed. How many units of X can be added?
+A:2/3 of a unit
+B:2 units
+C:8 units
+D:6 units [KEY]
+Feedback: Two Y release $24; dividing by $4 per X gives six X. This applies the relative-price tradeoff to a bundle change.
+
+REPAIRS: [{"id":"42640","q":"Good X costs $5 and good Y costs $6. What is the opportunity cost of one unit of X in units of Y?","key":"5/6 unit of Y"}]
+
+P62B-ELAS-BR-001
+bridge
+application
+tax_incidence_elasticity
+Demand elasticity has magnitude 0.3 and supply elasticity is 1.2 in a competitive market. Which side bears more of a small per-unit tax?
+A:Sellers, because supply is more elastic.
+B:Both equally, because the tax is per unit.
+C:Buyers, because demand is less elastic. [KEY]
+D:The side legally sending the payment, regardless of elasticity.
+Feedback: Buyers adjust quantity less readily than sellers; the less elastic side bears more of the tax.
+
+REPAIRS: [{"id":"P62B-ELAS-R-017","q":"A learner says the side that sends the tax payment to the government bears the entire tax burden. Which statement best corrects the error?","key":"Relative elasticity determines incidence, not remittance"}]
+
+P62B-ELAS-BR-002
+bridge
+application
+elasticity_deadweight_loss
+Two competitive markets receive the same $4 per-unit tax and have linear curves with no other distortions. Quantity falls by 10 units in A and 30 in B. Which has the greater deadweight loss?
+A:A: $40 versus B: $120
+B:Both: $4
+C:B: $120 versus A: $40
+D:B: $60 versus A: $20 [KEY]
+Feedback: DWL is half the tax wedge times lost quantity: A=0.5×4×10=$20 and B=0.5×4×30=$60.
+
+REPAIRS: [{"id":"P62B-ELAS-R-018","q":"A learner says inelastic markets have no tax burden because quantity changes little. Which statement best corrects the error?","key":"Small deadweight loss can coexist with substantial tax burden"}]
+
+P62B-ELAS-BR-006
+bridge
+application
+elasticity_factor_market_application
+Labor-demand elasticity is −0.8. With other conditions fixed, use the small-change approximation to predict employment after a 5% wage increase.
+A:Employment rises about 4%.
+B:Employment falls about 6.25%.
+C:Employment rises about 5%.
+D:Employment falls about 4%. [KEY]
+Feedback: Percentage employment change is −0.8×5%=−4%; labor is the input demanded.
+
+REPAIRS: [{"id":"PMS-ELAS-R-029","q":"A learner says labor demand elasticity is unrelated to substitution possibilities. Best correction?","key":"More available substitutes for a type of labor generally make labor demand more elastic"}]
+
+P62B-ELAS-BR-007
+bridge
+application
+elasticity_policy_application
+A factory’s output imposes an unpriced $3 external cost per unit. A corrective tax raises its relevant per-unit cost, and output demand is price-responsive. Which outcome is consistent with the purpose of the tax?
+A:Output falls as the firm faces more of the social cost of production. [KEY]
+B:Output rises because an external cost is an extra benefit.
+C:The tax is justified only if output cannot change.
+D:The external cost disappears solely because tax revenue is collected.
+Feedback: The unpriced harm motivates correction; incorporating that cost can reduce output and associated harm. Revenue collection itself is not removal of the physical externality.
+
+REPAIRS: [{"id":"PMS-ELAS-R-028","q":"A learner says a price-based policy will reduce quantity by the same percentage in every market. Which statement best corrects the error?","key":"Quantity response depends on the relevant elasticity"}]
+
+PMS-ELAS-BR-022
+bridge
+calculation
+total_revenue_formula
+A demand point has price $12 and quantity 50. What is total revenue at that point?
+A:$62
+B:$0.24
+C:$38
+D:$600 [KEY]
+Feedback: Multiply price by units sold: $12×50=$600.
+
+REPAIRS: [{"id":"PMS-ELAS-R-019","q":"A learner calculates total revenue by adding price and quantity. Which statement best corrects the error?","key":"Multiply price by quantity sold"}]
+
+PMS-ELAS-BR-025
+bridge
+application
+marginal_revenue_elasticity_link
+A seller is on a smooth downward-sloping demand segment with |Ed|=2. Is selling a little more output associated with positive or negative marginal revenue?
+A:Positive: the quantity gain outweighs the price reduction’s effect on revenue. [KEY]
+B:Negative: every price reduction lowers total revenue.
+C:Zero: every point on demand maximizes revenue.
+D:Negative: elastic demand means quantity barely responds.
+Feedback: On an elastic segment, a small price reduction raises total revenue, so the extra output has positive MR.
+
+REPAIRS: [{"id":"P62B-ELAS-R-012","q":"A learner says marginal revenue is positive on inelastic demand. Which statement best corrects the error?","key":"Marginal revenue is negative in the inelastic range"},{"id":"PMS-ELAS-R-021","q":"A learner says marginal revenue must be positive everywhere on a downward-sloping demand curve. Which statement best corrects the error?","key":"Marginal revenue becomes zero near unit elasticity and negative on the inelastic portion"}]
+
+PMS-ELAS-BR-027
+bridge
+calculation
+total_revenue_formula
+A seller receives $18 per unit and sells 400 units after a change. What is its total revenue?
+A:$418
+B:$22.22
+C:$7,200 [KEY]
+D:$6,800
+Feedback: Total revenue is 18×400=$7,200, regardless of costs.
+
+REPAIRS: [{"id":"PMS-ELAS-R-019","q":"A learner calculates total revenue by adding price and quantity. Which statement best corrects the error?","key":"Multiply price by quantity sold"}]
+
+P62C-CPS-BR-010
+bridge
+application
+surplus_policy_application
+A tax reduces consumer surplus by $50 and producer surplus by $30, while government collects $60. With no other effects, what is the deadweight loss?
+A:$80
+B:$20 [KEY]
+C:$60
+D:$140
+Feedback: Total surplus changes by −50−30+60=−20. Government revenue is included as a transfer, not counted again as a loss.
+
+REPAIRS: [{"id":"PMS-CPS-R-025","q":"A learner counts a $20 transfer from consumers to producers as a $20 deadweight loss. Which statement best corrects this mistake?","key":"A transfer changes who receives surplus; deadweight loss requires gains that disappear"}]
+
+P62C-CPS-BR-015
+bridge
+application
+surplus_policy_application
+A ceiling transfers $16 from sellers to buyers and prevents trades worth $5 in combined surplus. Enforcement uses $2 of real resources. What is the total-surplus change?
+A:+$9
+B:−$23
+C:−$7 [KEY]
+D:−$5
+Feedback: The transfer cancels across buyers and sellers. Lost gains and real enforcement costs reduce total surplus by 5+2=$7.
+
+REPAIRS: [{"id":"PMS-CPS-R-025","q":"A learner counts a $20 transfer from consumers to producers as a $20 deadweight loss. Which statement best corrects this mistake?","key":"A transfer changes who receives surplus; deadweight loss requires gains that disappear"}]
+
+P62C-CPS-BR-017
+bridge
+application
+willingness_to_pay
+A buyer’s maximum willingness to pay is $28. A seller offers the unit for $24, with no other costs. What is the buyer’s gain from accepting?
+A:$4 [KEY]
+B:$24
+C:$28
+D:$52
+Feedback: Consumer surplus equals willingness to pay minus price: 28−24=$4.
+
+REPAIRS: []
+
+P62C-CPS-BR-019
+bridge
+application
+willingness_to_accept
+A seller’s minimum acceptable compensation for one unit is $17. It receives $22. What is the seller’s gain above that opportunity cost?
+A:$17
+B:$22
+C:$5 [KEY]
+D:$39
+Feedback: Producer surplus on the unit is payment minus willingness to accept: 22−17=$5.
+
+REPAIRS: []
+
+PMS-CPS-BR-004
+bridge
+application
+consumer_surplus_definition
+A buyer values a unit at $30 and pays $20. The seller’s opportunity cost is $12. How much does consumer surplus contribute to the $18 total surplus?
+A:$8
+B:$10 [KEY]
+C:$20
+D:$30
+Feedback: Buyer surplus is 30−20=$10. Seller surplus is 20−12=$8, making total surplus $18.
+
+REPAIRS: []
+
+PMS-CPS-BR-010
+bridge
+calculation
+total_surplus
+A market graph shows consumer surplus of $45 and producer surplus of $35. There are no external effects. What is total surplus?
+A:$10
+B:$45
+C:$35
+D:$80 [KEY]
+Feedback: Add the two gains: 45+35=$80. Revenue is not an additional surplus component.
+
+REPAIRS: [{"id":"PMS-CPS-R-008","q":"A learner treats consumer surplus and producer surplus as competing measures and keeps only the larger one. Which statement best corrects this mistake?","key":"Total surplus adds both buyer and seller surplus"}]
+
+PMS-CPS-BR-012
+bridge
+application
+total_surplus
+A policy reduces buyer surplus from $50 to $38 and raises seller surplus from $30 to $42, with no other effects. What happens to total surplus?
+A:It falls by $12.
+B:It stays at $80. [KEY]
+C:It rises by $12.
+D:It falls by $24.
+Feedback: The $12 reduction for buyers exactly matches the $12 gain for sellers; 38+42=50+30=80.
+
+REPAIRS: [{"id":"PMS-CPS-R-008","q":"A learner treats consumer surplus and producer surplus as competing measures and keeps only the larger one. Which statement best corrects this mistake?","key":"Total surplus adds both buyer and seller surplus"}]
+
+PMS-CPS-BR-020
+bridge
+application
+efficient_quantity
+The first three units have marginal benefits $20, $15 and $9, and marginal costs $6, $10 and $12. With no other effects, how many units maximize total surplus?
+A:1
+B:2 [KEY]
+C:3
+D:0
+Feedback: The first two units create positive gains (14 and 5); the third destroys 3. Stop after two.
+
+REPAIRS: [{"id":"PMS-CPS-R-014","q":"A learner keeps producing after the next seller’s cost exceeds the next buyer’s value. Which statement best corrects this mistake?","key":"Stop before units whose marginal cost exceeds marginal willingness to pay"},{"id":"PMS-CPS-R-019","q":"A learner says the efficient quantity is where price is lowest. Which statement best corrects this mistake?","key":"The efficient quantity is where marginal buyer value and marginal seller cost cross"}]
+
+PMS-CPS-BR-024
+bridge
+application
+efficient_quantity
+At Q=4, marginal benefit is $18 and marginal cost is $12; at Q=5 they are both $15; at Q=6 they are $12 and $18. With smooth declining MB and rising MC, where is the efficient output?
+A:Q=4
+B:Q=5 [KEY]
+C:Q=6
+D:Q=0
+Feedback: At Q=5 the marginal value equals marginal cost. Below it an expansion adds gains; above it extra units cost more than they are worth.
+
+REPAIRS: [{"id":"PMS-CPS-R-014","q":"A learner keeps producing after the next seller’s cost exceeds the next buyer’s value. Which statement best corrects this mistake?","key":"Stop before units whose marginal cost exceeds marginal willingness to pay"},{"id":"PMS-CPS-R-019","q":"A learner says the efficient quantity is where price is lowest. Which statement best corrects this mistake?","key":"The efficient quantity is where marginal buyer value and marginal seller cost cross"}]
+
+P62E-COP-BR-003
+bridge
+application
+economic_profit
+A firm has $90,000 revenue, $60,000 explicit costs and $20,000 forgone owner income. What is economic profit?
+A:$10,000 [KEY]
+B:$30,000
+C:$50,000
+D:$90,000
+Feedback: Economic profit subtracts explicit and implicit costs: 90,000−60,000−20,000=$10,000.
+
+REPAIRS: [{"id":"P62E-COP-R-003","q":"Accounting profit is $60,000 and implicit costs are $45,000. Economic profit?","key":"$15,000"},{"id":"PMC-COP-R-024","q":"A learner says economic profit equals accounting profit plus implicit costs. Which statement best corrects this mistake?","key":"Economic profit equals accounting profit minus implicit costs"},{"id":"PMC-COP-R-026","q":"A learner finds accounting profit of $50,000 and implicit cost of $70,000, then reports economic profit of $20,000. Which statement best corrects this mistake?","key":"Economic profit is −$20,000"}]
+
+P62E-COP-BR-004
+bridge
+application
+normal_profit
+An owner earns $25,000 accounting profit and forgoes $25,000 in its best alternative use of time and capital. What does economic profit equal?
+A:$25,000: forgone returns are ignored.
+B:$0: the owner’s opportunity cost is covered. [KEY]
+C:−$25,000: the accounting return does not count.
+D:$50,000: add the two returns.
+Feedback: Economic profit is accounting profit minus implicit opportunity cost: 25,000−25,000=0.
+
+REPAIRS: [{"id":"P62E-COP-R-004","q":"A firm earns zero economic profit. What has it covered?","key":"Explicit and implicit costs, including normal profit"},{"id":"PMC-COP-R-025","q":"A learner calls zero economic profit a “loss.","key":"Zero economic profit means all explicit and implicit costs, including normal profit, are covered"}]
+
+P62E-COP-BR-005
+bridge
+calculation
+marginal_cost
+Total cost is $200 at 10 units and $224 at 12 units. What is average marginal cost over those two additional units?
+A:$24 per unit
+B:$18.67 per unit
+C:$12 per unit [KEY]
+D:$2 per unit
+Feedback: ΔTC/ΔQ=(224−200)/(12−10)=24/2=$12 per additional unit.
+
+REPAIRS: [{"id":"P62E-COP-R-015","q":"TC rises from $900 to $1,020 as Q rises from 30 to 36. MC is:","key":"$20"},{"id":"PMC-COP-R-089","q":"A learner calculates MC as TC/Q. Which statement best corrects this mistake?","key":"MC = ΔTC/ΔQ"},{"id":"PMC-COP-R-090","q":"A learner says a higher fixed property tax must raise MC. Which statement best corrects this mistake?","key":"A pure fixed-cost increase does not change MC"},{"id":"PMC-COP-R-092","q":"TC rises by $50 when output rises by 5 units, but a learner reports MC = $50. Which statement best corrects this mistake?","key":"MC is $10 per unit"}]
+
+P62E-COP-BR-006
+bridge
+application
+marginal_average_relationship
+Producing 10 units costs $100. The eleventh unit adds $6. What happens to average total cost?
+A:It rises to $10.60.
+B:It stays at $10.
+C:It falls to $6.
+D:It falls to about $9.64. [KEY]
+Feedback: New ATC=106/11≈$9.64. The added unit costs less than the original $10 average.
+
+REPAIRS: [{"id":"P62E-COP-R-016","q":"MC is below ATC. What happens to ATC?","key":"ATC falls"},{"id":"PMC-COP-R-102","q":"A learner says MC must be falling whenever ATC is falling. Which statement best corrects this mistake?","key":"MC can be rising while ATC is still falling, as long as MC remains below ATC"}]
+
+P62E-COP-BR-008
+bridge
+application
+marginal_cost
+A workshop pays fixed rent of $500. One extra unit requires $8 of material and $4 of labor; rent is unchanged. What is that unit’s marginal cost?
+A:$512
+B:$12 [KEY]
+C:$500
+D:$4
+Feedback: Only the additional material and labor enter this marginal cost: 8+4=$12.
+
+REPAIRS: [{"id":"P62E-COP-R-015","q":"TC rises from $900 to $1,020 as Q rises from 30 to 36. MC is:","key":"$20"},{"id":"PMC-COP-R-089","q":"A learner calculates MC as TC/Q. Which statement best corrects this mistake?","key":"MC = ΔTC/ΔQ"},{"id":"PMC-COP-R-090","q":"A learner says a higher fixed property tax must raise MC. Which statement best corrects this mistake?","key":"A pure fixed-cost increase does not change MC"},{"id":"PMC-COP-R-092","q":"TC rises by $50 when output rises by 5 units, but a learner reports MC = $50. Which statement best corrects this mistake?","key":"MC is $10 per unit"}]
+
+P62E-COP-BR-012
+bridge
+application
+marginal_cost
+A price-taking firm can sell one extra unit for $18; making it adds $14 to total cost. What is the marginal profit from that unit?
+A:−$4
+B:+$4 [KEY]
+C:+$18
+D:+$32
+Feedback: Marginal revenue minus marginal cost is 18−14=$4.
+
+REPAIRS: [{"id":"P62E-COP-R-015","q":"TC rises from $900 to $1,020 as Q rises from 30 to 36. MC is:","key":"$20"},{"id":"PMC-COP-R-089","q":"A learner calculates MC as TC/Q. Which statement best corrects this mistake?","key":"MC = ΔTC/ΔQ"},{"id":"PMC-COP-R-090","q":"A learner says a higher fixed property tax must raise MC. Which statement best corrects this mistake?","key":"A pure fixed-cost increase does not change MC"},{"id":"PMC-COP-R-092","q":"TC rises by $50 when output rises by 5 units, but a learner reports MC = $50. Which statement best corrects this mistake?","key":"MC is $10 per unit"}]
+
+P62E-COP-BR-020
+bridge
+application
+marginal_cost
+A firm can sell another unit for $16, but its marginal cost is $19. Holding other choices fixed, should it add that unit?
+A:Yes; it would raise profit by $3.
+B:No; it would lower profit by $3. [KEY]
+C:Yes; any positive revenue raises profit.
+D:No; the full $19 is a profit loss regardless of revenue.
+Feedback: The extra unit changes profit by 16−19=−$3.
+
+REPAIRS: [{"id":"P62E-COP-R-015","q":"TC rises from $900 to $1,020 as Q rises from 30 to 36. MC is:","key":"$20"},{"id":"PMC-COP-R-089","q":"A learner calculates MC as TC/Q. Which statement best corrects this mistake?","key":"MC = ΔTC/ΔQ"},{"id":"PMC-COP-R-090","q":"A learner says a higher fixed property tax must raise MC. Which statement best corrects this mistake?","key":"A pure fixed-cost increase does not change MC"},{"id":"PMC-COP-R-092","q":"TC rises by $50 when output rises by 5 units, but a learner reports MC = $50. Which statement best corrects this mistake?","key":"MC is $10 per unit"}]
+
+PMC-COP-BR-011
+bridge
+application
+opportunity_cost_firm
+An owner uses a building that could instead earn $12,000 in annual rent. No rent check is paid by the owner’s business. What annual cost should economic analysis include?
+A:$0 because no payment occurs
+B:$12,000 explicit wage cost
+C:$12,000 implicit opportunity cost [KEY]
+D:$24,000 because both uses count at once
+Feedback: Using the building sacrifices the $12,000 rental alternative even without a cash payment.
+
+REPAIRS: [{"id":"PMC-COP-R-010","q":"A learner says, “If the owner did not write a check, the resource has no cost.","key":"Owner-supplied resources can have implicit opportunity costs even without a cash payment"}]
+
+PMC-COP-BR-027
+bridge
+application
+economic_profit
+Accounting profit is $42,000 and the owner forgoes a $35,000 outside salary, with no other implicit costs. What is economic profit?
+A:$42,000
+B:$77,000
+C:$7,000 [KEY]
+D:−$35,000
+Feedback: Subtract the forgone owner return: 42,000−35,000=$7,000.
+
+REPAIRS: [{"id":"P62E-COP-R-003","q":"Accounting profit is $60,000 and implicit costs are $45,000. Economic profit?","key":"$15,000"},{"id":"PMC-COP-R-024","q":"A learner says economic profit equals accounting profit plus implicit costs. Which statement best corrects this mistake?","key":"Economic profit equals accounting profit minus implicit costs"},{"id":"PMC-COP-R-026","q":"A learner finds accounting profit of $50,000 and implicit cost of $70,000, then reports economic profit of $20,000. Which statement best corrects this mistake?","key":"Economic profit is −$20,000"}]
+
+PMC-COP-BR-049
+bridge
+application
+total_cost
+At one output TC is $160 and TVC is $100. At a higher output TVC is $145 while fixed cost is unchanged. What is TC at the higher output?
+A:$205 [KEY]
+B:$245
+C:$145
+D:$160
+Feedback: The first row gives TFC=160−100=60. Add the same $60 to the new TVC: 145+60=$205.
+
+REPAIRS: [{"id":"P62E-COP-R-011","q":"At zero output, TFC is $500 and TVC is $0. TC is:","key":"$500"},{"id":"P62E-COP-R-012","q":"TFC is $300 and TVC is $700. TC is:","key":"$1,000"},{"id":"PMC-COP-R-043","q":"A learner writes TC = TFC − TVC. Which statement best corrects this mistake?","key":"TC = TFC + TVC"}]
+
+PMC-COP-BR-070
+bridge
+application
+average_fixed_cost
+Fixed cost is $120. Output rises from 10 to 15 units without changing fixed cost. What is the new AFC?
+A:$12
+B:$18
+C:$120
+D:$8 [KEY]
+Feedback: Spread $120 across 15 units: AFC=$8, down from $12.
+
+REPAIRS: [{"id":"PMC-COP-R-065","q":"A learner divides output by TFC to calculate AFC. Which statement best corrects this mistake?","key":"AFC = TFC/Q"},{"id":"PMC-COP-R-068","q":"A learner says AFC eventually rises because “all U-shaped costs rise.","key":"AFC keeps falling as fixed cost is spread over more output"}]
+
+PMC-COP-BR-072
+bridge
+application
+average_total_cost
+At an output of 20, AFC is $3 and AVC is $7. What is ATC?
+A:$4
+B:$10 [KEY]
+C:$21
+D:$200
+Feedback: ATC=AFC+AVC=3+7=$10 per unit.
+
+REPAIRS: [{"id":"P62E-COP-R-013","q":"AFC is $4 and AVC is $11. ATC is:","key":"$15"},{"id":"PMC-COP-R-067","q":"A learner says ATC = AVC − AFC. Which statement best corrects this mistake?","key":"ATC = AVC + AFC"},{"id":"PMC-COP-R-069","q":"At Q = 10, AFC = $6 and AVC = $14. A learner reports ATC = $8. Which statement best corrects this mistake?","key":"ATC is $20"}]
+
+PMC-COP-BR-075
+bridge
+application
+average_total_cost
+At 5 units total cost is $50. The sixth unit adds $16. What is ATC at 6 units?
+A:$10
+B:$16
+C:$11 [KEY]
+D:$66
+Feedback: Total cost becomes $66; 66/6=$11. The above-average added cost raises ATC.
+
+REPAIRS: [{"id":"P62E-COP-R-013","q":"AFC is $4 and AVC is $11. ATC is:","key":"$15"},{"id":"PMC-COP-R-067","q":"A learner says ATC = AVC − AFC. Which statement best corrects this mistake?","key":"ATC = AVC + AFC"},{"id":"PMC-COP-R-069","q":"At Q = 10, AFC = $6 and AVC = $14. A learner reports ATC = $8. Which statement best corrects this mistake?","key":"ATC is $20"}]
+
+P62F-PC-BR-001
+bridge
+application
+marginal_rule
+A competitive firm receives $15 for one more unit and incurs $11 of extra cost. What does the marginal rule recommend?
+A:Reject the unit; it lowers profit by $4.
+B:Add the unit only if fixed cost is zero.
+C:Add the unit; it raises profit by $4. [KEY]
+D:Reject the unit because revenue must equal total cost.
+Feedback: MR−MC=15−11=$4, so the extra unit improves profit.
+
+REPAIRS: [{"id":"P62F-PC-R-007","q":"MR is $25 and the next unit’s MC is $19. What should the firm do?","key":"Produce the next unit"},{"id":"P62F-PC-R-008","q":"MR is $25 and the next unit’s MC is $31. What should the firm do?","key":"Do not produce the next unit"},{"id":"PM5-PC-R-016","q":"A learner says a competitive firm should keep expanding whenever MR is above ATC. Which statement best corrects this mistake?","key":"Compare MR with MC for the next unit, not MR with ATC"}]
+
+P62F-PC-BR-002
+bridge
+application
+profit_per_unit
+At its chosen output, a competitive firm has P=$24 and ATC=$19. What is profit per unit?
+A:$24
+B:$19
+C:$43
+D:$5 [KEY]
+Feedback: P−ATC=24−19=$5 per unit.
+
+REPAIRS: [{"id":"P62F-PC-R-009","q":"At the chosen output, P=$30 and ATC=$24. Profit per unit is:","key":"$6"},{"id":"PM5-PC-R-028","q":"A learner computes profit per unit as ATC − P when P exceeds ATC. Which statement best corrects this mistake?","key":"Use P − ATC for profit per unit"}]
+
+P62F-PC-BR-003
+bridge
+application
+shutdown_rule
+A competitive firm’s best positive output has P=$10, AVC=$8 and ATC=$13. Fixed cost is unavoidable this period. Should it operate or shut down now?
+A:Operate; revenue covers variable cost and part of fixed cost. [KEY]
+B:Shut down; any economic loss requires immediate closure.
+C:Operate because price exceeds ATC.
+D:Shut down because price exceeds AVC.
+Feedback: P exceeds AVC by $2, contributing to fixed costs. Shutting down would forgo that contribution while fixed cost remains.
+
+REPAIRS: [{"id":"P62F-PC-R-014","q":"P is below minimum AVC. What should the firm do?","key":"Shut down"},{"id":"PM5-PC-R-043","q":"A learner uses P < ATC as the shutdown rule. Which statement best corrects this mistake?","key":"Compare price with AVC for shutdown; ATC determines profit or loss"}]
+
+P62F-PC-BR-004
+bridge
+application
+short_run_fixed_cost
+A firm produces 50 units at its unique MR=MC optimum and pays an additional unavoidable $100 fixed license fee. Demand, MC and AVC are unchanged. What happens to its short-run output?
+A:It rises by 100 units.
+B:It stays at 50 units. [KEY]
+C:It falls by 2 units.
+D:It becomes zero solely because the fee is fixed.
+Feedback: An unavoidable fixed fee changes profit but neither marginal revenue/cost nor the variable-cost shutdown comparison.
+
+REPAIRS: [{"id":"PM5-PC-R-045","q":"A learner says shutting down eliminates all costs immediately. Which statement best corrects this mistake?","key":"Short-run fixed costs remain even when output is zero"},{"id":"PM5-PC-R-068","q":"A learner shifts short-run supply left after a fixed-cost increase. Which statement best corrects this mistake?","key":"Fixed cost changes ATC and profit, not MC or AVC, so short-run supply does not shift"}]
+
+P62F-PC-BR-005
+bridge
+application
+normal_profit
+A firm’s revenue equals explicit costs plus $18,000 of implicit owner costs. What return is covered even though economic profit is zero?
+A:An $18,000 economic profit above opportunity cost
+B:No return on owner resources
+C:The $18,000 normal return on owner resources [KEY]
+D:Only consumer surplus
+Feedback: The implicit $18,000 is part of economic cost and compensates the owner for the alternative forgone.
+
+REPAIRS: [{"id":"P62F-PC-R-012","q":"Why can accounting profit be positive at zero economic profit?","key":"Accounting profit does not subtract implicit costs"}]
+
+P62F-PC-BR-006
+bridge
+application
+firm_short_run_supply
+On its rising MC curve, a competitive firm has MC=$12 at Q=4 and MC=$15 at Q=5; AVC is below both prices. If market price rises from $12 to $15, what output change follows?
+A:From 5 to 4 units
+B:No change because all supply is fixed
+C:Shutdown at both prices
+D:From 4 to 5 units [KEY]
+Feedback: Above the shutdown range, the firm follows rising MC: P=MC moves from Q=4 to Q=5.
+
+REPAIRS: [{"id":"P62F-PC-R-015","q":"Which MC segment is competitive short-run supply?","key":"MC at and above minimum AVC"},{"id":"P62F-PC-R-016","q":"At a price below minimum AVC, a firm’s quantity supplied is:","key":"Zero"},{"id":"PM5-PC-R-067","q":"A learner labels the entire MC curve as the firm’s short-run supply curve. Which statement best corrects this mistake?","key":"Use only the rising MC portion at and above minimum AVC"},{"id":"PM5-PC-R-070","q":"A learner says a higher wage cannot shift supply because the firm is a price taker. Which statement best corrects this mistake?","key":"Price taking fixes the output price, not the firm’s costs; a wage increase can raise MC and shift supply"}]
+
+P62F-PC-BR-007
+bridge
+application
+market_supply_aggregation
+At price $10, three competitive firms supply 4, 6 and 5 units. What is market quantity supplied at that price?
+A:15 units [KEY]
+B:5 units
+C:30 units
+D:10 units
+Feedback: Horizontal aggregation adds quantities at the same price: 4+6+5=15.
+
+REPAIRS: [{"id":"PM5-PC-R-069","q":"A learner adds firms’ supply prices vertically to build market supply. Which statement best corrects this mistake?","key":"At each price, add the quantities supplied across firms horizontally"}]
+
+P62F-PC-BR-008
+bridge
+application
+entry
+At a given price, ten firms each supply 5 units. Two identical firms enter while existing cost curves stay fixed. What is total supply at that price afterward?
+A:50 units
+B:60 units [KEY]
+C:12 units
+D:70 units
+Feedback: Entry increases the number of suppliers to 12; 12×5=60 units at the given price.
+
+REPAIRS: [{"id":"P62F-PC-R-017","q":"Positive economic profit causes entry. What does entry do to market supply and price?","key":"Supply rises and price falls"},{"id":"PM5-PC-R-086","q":"A learner says positive economic profit causes existing firms to raise the market price. What is the long-run repair?","key":"Profit attracts entry, which increases market supply and tends to lower price"}]
+
+P62F-PC-BR-009
+bridge
+application
+exit
+At a given price, eight firms each supply 6 units. Two firms exit and the remaining firms’ schedules stay fixed. What is market supply at that price?
+A:48 units
+B:12 units
+C:36 units [KEY]
+D:60 units
+Feedback: Six remaining firms supply 6×6=36 units.
+
+REPAIRS: [{"id":"P62F-PC-R-018","q":"Economic loss causes exit. What does exit do to market supply and price?","key":"Supply falls and price rises"},{"id":"PM5-PC-R-087","q":"A learner says loss-making competitive firms can remain forever with no industry adjustment. Which statement best corrects this mistake?","key":"Persistent losses encourage exit when firms can leave in the long run"}]
+
+P62F-PC-BR-010
+bridge
+application
+marginal_rule
+A competitive firm receives $20 on each extra unit. The next unit costs $17 and the following one $23. Which additional output maximizes profit from these two units?
+A:Add both units.
+B:Add neither unit.
+C:Add only the second unit.
+D:Add only the first unit. [KEY]
+Feedback: The first adds $3 to profit; the second subtracts $3. Adding only the first is best.
+
+REPAIRS: [{"id":"P62F-PC-R-007","q":"MR is $25 and the next unit’s MC is $19. What should the firm do?","key":"Produce the next unit"},{"id":"P62F-PC-R-008","q":"MR is $25 and the next unit’s MC is $31. What should the firm do?","key":"Do not produce the next unit"},{"id":"PM5-PC-R-016","q":"A learner says a competitive firm should keep expanding whenever MR is above ATC. Which statement best corrects this mistake?","key":"Compare MR with MC for the next unit, not MR with ATC"}]
+
+P62F-PC-BR-011
+bridge
+application
+discrete_output_choice
+A price-taking firm sells at $10. The first four units cost $4, $7, $9 and $13 at the margin, respectively. Fixed cost is unavoidable. What output maximizes profit?
+A:3 units [KEY]
+B:4 units
+C:2 units
+D:0 units
+Feedback: The first three units each add revenue greater than cost; the fourth reduces profit by $3.
+
+REPAIRS: [{"id":"PM5-PC-R-018","q":"A learner sees MR = $20, the next unit’s MC = $18, and stops production at the current output. Which statement best corrects this mistake?","key":"Add the next unit because it adds $20 of revenue and only $18 of cost"}]
+
+P62F-PC-BR-012
+bridge
+application
+rising_mc_condition
+A firm’s MR is $10. Near output A, MC falls from $12 to $8; near output B, MC rises from $8 to $12. Which crossing gives a local profit maximum?
+A:A
+B:B [KEY]
+C:Both A and B
+D:Neither A nor B
+Feedback: At B, marginal profit changes from positive to negative as MC crosses MR upward. A gives the opposite change.
+
+REPAIRS: [{"id":"PM5-PC-R-017","q":"A learner finds an output where MR = MC but MC is falling at that point and declares it profit maximizing. What condition is missing?","key":"MC should be rising through MR for the usual maximum"}]
+
+P62F-PC-BR-013
+bridge
+application
+allocative_efficiency
+The next unit is worth $22 to buyers and costs $16 to produce, with no external effects. Would adding it move toward allocative efficiency?
+A:No; it destroys $6 of surplus.
+B:No; efficiency requires minimizing AFC first.
+C:Yes; it adds $6 of surplus. [KEY]
+D:Yes; it adds $22 of surplus regardless of cost.
+Feedback: Marginal benefit exceeds marginal cost by $6, so this additional unit increases total surplus.
+
+REPAIRS: [{"id":"P62F-PC-R-020","q":"Allocative efficiency occurs at:","key":"P=MC"},{"id":"PM5-PC-R-111","q":"A learner says productive efficiency and allocative efficiency are the same condition. Which statement best corrects this mistake?","key":"Productive efficiency concerns minimum ATC; allocative efficiency concerns P = MC"}]
+
+P62F-PC-BR-015
+bridge
+application
+integrated_competitive_firm_analysis
+A competitive firm has MC=$9 and AVC=$7 at a specified output. A $2 tax is charged on every unit produced. What are MC and AVC at that same output after tax?
+A:MC=$11 and AVC=$9 [KEY]
+B:MC=$9 and AVC=$9
+C:MC=$11 and AVC=$7
+D:MC=$7 and AVC=$5
+Feedback: The per-unit tax adds $2 to both marginal cost and variable cost per unit.
+
+REPAIRS: []
+
+P62F-PC-BR-016
+bridge
+application
+short_run_fixed_cost
+An unavoidable $60 annual license fee is added to a firm producing 20 units. At that output, how do ATC and MC change?
+A:ATC and MC both rise by $3.
+B:ATC rises by $3; MC is unchanged. [KEY]
+C:ATC rises by $60; MC is unchanged.
+D:AVC and MC both rise by $60.
+Feedback: The fixed fee adds 60/20=$3 to ATC but does not change the cost of another unit.
+
+REPAIRS: [{"id":"PM5-PC-R-045","q":"A learner says shutting down eliminates all costs immediately. Which statement best corrects this mistake?","key":"Short-run fixed costs remain even when output is zero"},{"id":"PM5-PC-R-068","q":"A learner shifts short-run supply left after a fixed-cost increase. Which statement best corrects this mistake?","key":"Fixed cost changes ATC and profit, not MC or AVC, so short-run supply does not shift"}]
+
+PM5-PC-BR-032
+bridge
+application
+profit_per_unit
+At the chosen output P=$14 and ATC=$18. What is the firm’s per-unit economic result?
+A:A $4 profit
+B:A $4 loss [KEY]
+C:An $18 loss
+D:A $14 profit
+Feedback: P−ATC=14−18=−$4 per unit.
+
+REPAIRS: [{"id":"P62F-PC-R-009","q":"At the chosen output, P=$30 and ATC=$24. Profit per unit is:","key":"$6"},{"id":"PM5-PC-R-028","q":"A learner computes profit per unit as ATC − P when P exceeds ATC. Which statement best corrects this mistake?","key":"Use P − ATC for profit per unit"}]
+
+PM5-PC-BR-033
+bridge
+application
+total_profit
+A firm sells 30 units at $12 each and incurs $300 in total economic cost. What is total economic profit?
+A:$60 [KEY]
+B:$360
+C:$312
+D:−$288
+Feedback: Revenue=30×12=$360; subtract $300 to obtain $60.
+
+REPAIRS: [{"id":"P62F-PC-R-010","q":"A firm earns $4 per unit on 50 units. Total profit is:","key":"$200"},{"id":"PM5-PC-R-029","q":"A learner reports $5 of total profit because P − ATC = $5 and the firm sells 60 units. What is missing?","key":"Multiply the $5 per-unit profit by 60 units"}]
+
+PM5-PC-BR-034
+bridge
+application
+zero_economic_profit
+A firm has $100,000 revenue, $75,000 explicit costs and $25,000 implicit costs. Is zero economic profit consistent with all opportunity costs being covered?
+A:No; revenue must exceed $100,000 to cover those costs.
+B:No; implicit costs are excluded from opportunity cost.
+C:Yes; explicit costs alone equal revenue.
+D:Yes; revenue equals the full $100,000 economic cost. [KEY]
+Feedback: 75,000+25,000=100,000. Zero economic profit includes payment for the owner’s forgone alternatives.
+
+REPAIRS: [{"id":"P62F-PC-R-011","q":"For a competitive firm, earning zero economic profit means:","key":"All explicit and implicit costs are covered"}]
+
+PM5-PC-BR-035
+bridge
+application
+break_even
+A firm chooses Q=40 at P=$15 and ATC=$15. What are total revenue, total cost and economic profit?
+A:TR=$600; TC=$15; profit=$585
+B:TR=$15; TC=$600; profit=−$585
+C:TR=$600; TC=$600; profit=$0 [KEY]
+D:TR=$600; TC=$0; profit=$600
+Feedback: Both TR and TC equal 15×40=$600, so the firm breaks even economically.
+
+REPAIRS: [{"id":"PM5-PC-R-030","q":"A learner says P = ATC means the firm has no accounting profit and no return to the owner. Which statement best corrects this mistake?","key":"P = ATC means zero economic profit; normal profit is included in economic cost"}]
+
+PM5-PC-BR-072
+bridge
+application
+market_supply_aggregation
+At price $8, firm A supplies 3 units and firm B supplies 7. At price $10, they supply 5 and 9. What is industry quantity at price $10?
+A:10 units
+B:14 units [KEY]
+C:24 units
+D:20 units
+Feedback: At the common $10 price, add 5+9=14; do not add quantities from different price rows.
+
+REPAIRS: [{"id":"PM5-PC-R-069","q":"A learner adds firms’ supply prices vertically to build market supply. Which statement best corrects this mistake?","key":"At each price, add the quantities supplied across firms horizontally"}]
+
+PM5-PC-BR-088
+bridge
+application
+entry
+Incumbents earn positive economic profit. Entry is easy, and new firms arrive while market demand stays fixed. What initial market adjustment tends to erode the profit?
+A:Demand contracts because entrants buy the incumbents’ goods.
+B:Supply expands and market price falls. [KEY]
+C:Supply contracts and market price rises.
+D:Each incumbent’s fixed cost necessarily disappears.
+Feedback: New sellers add output at each price. With unchanged demand, the supply expansion lowers price and incumbent profit.
+
+REPAIRS: [{"id":"P62F-PC-R-017","q":"Positive economic profit causes entry. What does entry do to market supply and price?","key":"Supply rises and price falls"},{"id":"PM5-PC-R-086","q":"A learner says positive economic profit causes existing firms to raise the market price. What is the long-run repair?","key":"Profit attracts entry, which increases market supply and tends to lower price"}]
+
+PM5-PC-BR-090
+bridge
+application
+normal_profit
+An owner requires $30,000 to match the best alternative use of its resources. The business earns exactly that amount after explicit costs. What are normal profit and economic profit?
+A:Normal profit=$0; economic profit=$30,000
+B:Both equal $30,000
+C:Both equal $0
+D:Normal profit=$30,000; economic profit=$0 [KEY]
+Feedback: The $30,000 covers implicit opportunity cost. Economic profit is the amount above that required return, here zero.
+
+REPAIRS: [{"id":"P62F-PC-R-012","q":"Why can accounting profit be positive at zero economic profit?","key":"Accounting profit does not subtract implicit costs"}]
+
+P62H-MCMP-BR-001
+bridge
+application
+short_run_output_choice
+A differentiated firm’s MR is $16 and MC is $12 for the next unit. Should it add that unit, holding other decisions fixed?
+A:No; it subtracts $4 from profit.
+B:Only if ATC is zero.
+C:Yes; it adds $4 to profit. [KEY]
+D:Only if the demand curve is horizontal.
+Feedback: The extra revenue exceeds the extra cost by $4.
+
+REPAIRS: [{"id":"P62H-MCMP-R-005","q":"What is the correct sequence for short-run firm choice?","key":"Choose Q where MR=MC, then read P from demand"},{"id":"P62H-MCMP-R-006","q":"A table has no exact MR=MC equality. Which output should be selected?","key":"The last unit whose MR is at least MC"}]
+
+P62H-MCMP-BR-002
+bridge
+application
+short_run_shutdown
+At its best positive output a differentiated firm has P=$9, AVC=$11 and ATC=$15. Fixed cost is unavoidable this period. Should it produce now?
+A:Yes; any revenue is better than shutdown.
+B:Yes; price need only cover AFC.
+C:No; producing always requires positive economic profit.
+D:No; shutting down avoids a variable-cost loss. [KEY]
+Feedback: Revenue does not cover variable cost at the best positive output. Shutdown loses fixed cost only.
+
+REPAIRS: [{"id":"PM7-MCMP-R-011","q":"A monopolistically competitive firm chooses its MR=MC output. At that output, price is below ATC but above AVC. What should the firm do in the short run?","key":"Continue producing and accept an economic loss"}]
+
+P62H-MCMP-BR-003
+bridge
+application
+long_run_zero_profit
+At long-run equilibrium a differentiated firm sells 20 units at $30 and has ATC=$30. What is economic profit?
+A:$0 [KEY]
+B:$600
+C:$30
+D:−$600
+Feedback: (P−ATC)Q=(30−30)×20=0.
+
+REPAIRS: [{"id":"P62H-MCMP-R-013","q":"What does zero economic profit mean?","key":"All explicit and implicit costs, including normal profit, are covered"}]
+
+P62H-MCMP-BR-004
+bridge
+application
+excess_capacity
+A firm chooses Q=30, while its ATC is minimized at Q=50. What is its excess capacity?
+A:30 units
+B:20 units [KEY]
+C:50 units
+D:80 units
+Feedback: Excess capacity is the minimum-ATC output minus chosen output: 50−30=20.
+
+REPAIRS: [{"id":"P62H-MCMP-R-016","q":"What does excess capacity measure?","key":"Q at minimum ATC minus the firm’s equilibrium Q"}]
+
+P62H-MCMP-BR-005
+bridge
+application
+market_structure_characteristics
+Many cafés sell differentiated drinks and new cafés can enter without major barriers. Which shared feature with perfect competition allows profit to attract new producers?
+A:Identical products
+B:Horizontal demand for each café
+C:Relatively easy entry [KEY]
+D:Price equal to marginal cost by definition
+Feedback: Entry can occur in both models even though café products are differentiated.
+
+REPAIRS: [{"id":"P62H-MCMP-R-001","q":"A market has many sellers but all products are identical. Why is that not enough for monopolistic competition?","key":"Product differentiation is also required"},{"id":"PM7-MCMP-R-010","q":"A market has many small sellers and easy entry, but every seller offers exactly the same product. What key condition for monopolistic competition is missing?","key":"Product differentiation"}]
+
+P62H-MCMP-BR-006
+bridge
+application
+long_run_zero_profit
+After entry, a differentiated firm has P=$25 and ATC=$25 at its chosen output. Which long-run result matches standard perfect competition?
+A:Price must also equal MC
+B:Output must minimize ATC
+C:The firm’s demand must be horizontal
+D:Zero economic profit [KEY]
+Feedback: P=ATC establishes zero economic profit. The other equalities do not follow for a differentiated firm.
+
+REPAIRS: [{"id":"P62H-MCMP-R-013","q":"What does zero economic profit mean?","key":"All explicit and implicit costs, including normal profit, are covered"}]
+
+P62H-MCMP-BR-007
+bridge
+application
+markup
+At its chosen output a differentiated firm has P=$18 and MC=$12. What markup over marginal cost remains?
+A:$6 per unit [KEY]
+B:$18 per unit
+C:$12 per unit
+D:$30 per unit
+Feedback: The markup is P−MC=18−12=$6, consistent with downward-sloping firm demand.
+
+REPAIRS: [{"id":"P62H-MCMP-R-015","q":"Why can a firm have a markup with zero economic profit?","key":"Price can equal ATC while exceeding MC"}]
+
+P62H-MCMP-BR-008
+bridge
+application
+productive_inefficiency
+Firm A chooses Q=40 where its ATC is minimized. Firm B chooses Q=25 but minimizes ATC at Q=35. Which firm is productively efficient at its chosen output?
+A:B only
+B:A only [KEY]
+C:Both
+D:Neither
+Feedback: A operates at minimum ATC; B produces below its minimum-cost output.
+
+REPAIRS: []
+
+P62H-MCMP-BR-009
+bridge
+application
+short_run_output_choice
+A differentiated firm’s MR and MC cross at Q=10. Demand shows P=$24 there, while MR=$16. What price corresponds to the profit-maximizing output?
+A:$16
+B:$10
+C:$24 [KEY]
+D:$8
+Feedback: MR=MC selects Q=10; demand, not MR, gives its selling price of $24.
+
+REPAIRS: [{"id":"P62H-MCMP-R-005","q":"What is the correct sequence for short-run firm choice?","key":"Choose Q where MR=MC, then read P from demand"},{"id":"P62H-MCMP-R-006","q":"A table has no exact MR=MC equality. Which output should be selected?","key":"The last unit whose MR is at least MC"}]
+
+P62H-MCMP-BR-010
+bridge
+application
+entry_after_profit
+A profitable café attracts nearby competitors selling close alternatives. Holding the café’s cost curves fixed, what tends to happen to its demand and profit?
+A:Its demand shifts outward and profit necessarily rises.
+B:Its MC falls solely because rivals enter.
+C:Its demand becomes vertical by definition.
+D:Its demand shifts inward and its profit tends to fall. [KEY]
+Feedback: New alternatives draw customers away from the incumbent, reducing its demand and eroding profit.
+
+REPAIRS: []
+
+P62H-MCMP-BR-011
+bridge
+application
+close_substitutes
+A town has one water supplier with no close substitute and many restaurants offering differentiated meals. For which seller is switching to a close rival’s product generally easier?
+A:A restaurant [KEY]
+B:The water supplier
+C:Both have no substitutes
+D:Neither, because differentiation prevents substitution
+Feedback: Restaurant alternatives are close substitutes despite differentiation; the water supplier is specified to lack a close substitute.
+
+REPAIRS: []
+
+P62H-MCMP-BR-012
+bridge
+application
+long_run_zero_profit
+Firm A’s profit attracts unrestricted entry; firm B’s profit is protected by an effective entry barrier. Which can more readily sustain positive economic profit in the long run?
+A:A
+B:B [KEY]
+C:Both must lose all profit immediately
+D:Neither can ever earn economic profit
+Feedback: The barrier prevents the entry response that would otherwise erode B’s profit.
+
+REPAIRS: [{"id":"P62H-MCMP-R-013","q":"What does zero economic profit mean?","key":"All explicit and implicit costs, including normal profit, are covered"}]
+
+P62H-MCMP-BR-013
+bridge
+application
+elasticity_firm_demand
+Before close substitutes enter, a 5% price increase reduces a firm’s quantity by 2%. After entry, the same price increase reduces quantity by 8%. What happens to demand elasticity magnitude?
+A:It falls from 1.6 to 0.4.
+B:It stays at 5.
+C:It rises from 0.4 to 1.6. [KEY]
+D:It rises from 2.5 to 4.
+Feedback: Use |%ΔQ/%ΔP|: 2/5=0.4 and 8/5=1.6. More substitutes are consistent with greater responsiveness.
+
+REPAIRS: []
+
+PM7-MCMP-BR-012
+bridge
+application
+short_run_output_choice
+A firm has MR=40−2Q and constant MC=12. At what output do these curves meet?
+A:Q=26
+B:Q=14 [KEY]
+C:Q=20
+D:Q=12
+Feedback: 40−2Q=12 gives 2Q=28 and Q=14.
+
+REPAIRS: [{"id":"P62H-MCMP-R-005","q":"What is the correct sequence for short-run firm choice?","key":"Choose Q where MR=MC, then read P from demand"},{"id":"P62H-MCMP-R-006","q":"A table has no exact MR=MC equality. Which output should be selected?","key":"The last unit whose MR is at least MC"}]
+
+PM7-MCMP-BR-013
+bridge
+application
+short_run_shutdown
+At its best positive output a firm receives P=$20 and has AVC=$16, ATC=$23. Fixed costs are unavoidable now. What should it do this period?
+A:Operate despite an economic loss. [KEY]
+B:Shut down because P is below ATC.
+C:Operate because it earns positive economic profit.
+D:Shut down because P exceeds AVC.
+Feedback: Each unit contributes $4 toward unavoidable fixed cost, so operation is better than shutdown despite the $3 per-unit total-cost loss.
+
+REPAIRS: [{"id":"PM7-MCMP-R-011","q":"A monopolistically competitive firm chooses its MR=MC output. At that output, price is below ATC but above AVC. What should the firm do in the short run?","key":"Continue producing and accept an economic loss"}]
+
+PM7-MCMP-BR-014
+bridge
+application
+short_run_profit
+A differentiated firm chooses 50 units with P=$18 and ATC=$20. What is economic profit?
+A:+$100
+B:−$2
+C:+$900
+D:−$100 [KEY]
+Feedback: (18−20)×50=−$100.
+
+REPAIRS: []
+
+PM7-MCMP-BR-035
+bridge
+application
+advertising_elasticity
+After a branding campaign, the magnitude of price elasticity falls from 2 to 0.5. Using the small-change approximation, what quantity response follows a 4% price increase after the campaign?
+A:An 8% decrease
+B:A 2% increase
+C:A 2% decrease [KEY]
+D:A 0.5% decrease
+Feedback: The postcampaign response is −0.5×4%=−2%.
+
+REPAIRS: []
+
+PM7-MCMP-BR-037
+bridge
+application
+innovation_product_development
+A new product feature earns short-run profit, but rivals can copy it and enter freely. What response would tend to erode the innovator’s profit?
+A:Rivals introduce close alternatives that draw away some of its demand. [KEY]
+B:Rivals’ entry guarantees the innovator a permanent monopoly.
+C:Imitation raises every buyer’s reservation value for the original by definition.
+D:Entry eliminates the innovator’s fixed costs.
+Feedback: Imitation and entry expand the alternatives available to buyers, weakening the original firm’s demand advantage.
+
+REPAIRS: []
+
+P62G-MON-BR-006
+bridge
+application
+profit_maximizing_output
+A monopolist has MR=50−2Q and MC=10. What output solves MR=MC?
+A:Q=30
+B:Q=25
+C:Q=10
+D:Q=20 [KEY]
+Feedback: 50−2Q=10 implies Q=20.
+
+REPAIRS: [{"id":"PM6-MON-R-023","q":"Which equality identifies the candidate output for a single-price monopolist?","key":"MR = MC"},{"id":"PM6-MON-R-025","q":"If MR exceeds MC at the current output, what should a profit-maximizing monopolist generally do?","key":"Increase output"},{"id":"PM6-MON-R-026","q":"If the MR=MC intersection occurs where MC is falling and another later intersection occurs where MC is rising, which is the usual profit-maximizing candidate?","key":"The intersection on the rising portion of MC"}]
+
+P62G-MON-BR-007
+bridge
+application
+monopoly_profit
+After choosing output, a monopolist charges $40 and has ATC=$28. What is economic profit per unit?
+A:$12 [KEY]
+B:$40
+C:$28
+D:$68
+Feedback: Price minus ATC is 40−28=$12 per unit.
+
+REPAIRS: [{"id":"P62G-MON-R-009","q":"At Q=20, price is $50, ATC is $38, and MC is $30. What is profit?","key":"$240"},{"id":"P62G-MON-R-010","q":"Why does P>MC not prove positive economic profit?","key":"ATC can still exceed price"},{"id":"PM6-MON-R-033","q":"Which expression gives total economic profit for a monopolist producing Q units?","key":"(P − ATC) × Q"}]
+
+P62G-MON-BR-009
+bridge
+application
+monopoly_shutdown
+At its best positive output a monopolist has total revenue $500 and variable cost $540. Fixed cost of $100 is unavoidable now. What should it do this period?
+A:Operate because revenue is positive.
+B:Operate because revenue exceeds fixed cost.
+C:Shut down, avoiding the $40 shortfall on variable cost. [KEY]
+D:Shut down to avoid the fixed cost as well.
+Feedback: Operation loses $140; shutdown loses the unavoidable $100 only. The $40 variable-cost shortfall makes shutdown better.
+
+REPAIRS: [{"id":"P62G-MON-R-011","q":"A monopolist has P below ATC but above AVC at its best output. It should:","key":"Produce in the short run and minimize its loss"},{"id":"P62G-MON-R-012","q":"Short-run shutdown allows a monopolist to avoid:","key":"Variable cost but not fixed cost"},{"id":"PM6-MON-R-034","q":"A monopolist is losing money because P<ATC, but P>AVC. What does the shutdown rule say?","key":"Continue producing in the short run if the chosen output minimizes the loss"}]
+
+P62G-MON-BR-012
+bridge
+application
+elasticity_and_mr
+For demand P=20−Q, total revenue is maximized at Q=10. MR=20−2Q. What is MR at that output?
+A:$10
+B:$0 [KEY]
+C:$20
+D:$100
+Feedback: MR at Q=10 is 20−20=0, matching the total-revenue maximum.
+
+REPAIRS: [{"id":"P62G-MON-R-005","q":"If demand is inelastic at the current output, reducing output will usually:","key":"Raise total revenue and lower total cost, increasing profit"},{"id":"P62G-MON-R-006","q":"At the unit-elastic point of a demand curve, marginal revenue is:","key":"Zero"}]
+
+P62G-MON-BR-014
+bridge
+application
+monopoly_deadweight_loss
+A monopolist omits a unit worth $18 to a buyer that would cost $12 to produce. With no external effects, how much surplus is lost on that omitted unit?
+A:$18
+B:$12
+C:$30
+D:$6 [KEY]
+Feedback: The forgone gain from trade is value minus marginal cost: 18−12=$6.
+
+REPAIRS: [{"id":"P62G-MON-R-013","q":"Which part of lost consumer surplus is deadweight loss?","key":"The portion not transferred to the monopolist because output is not produced"},{"id":"PM6-MON-R-043","q":"Which area is conceptually deadweight loss from monopoly?","key":"The lost surplus on units between monopoly output and the efficient output"}]
+
+P62G-MON-BR-016
+bridge
+application
+profit_maximizing_output
+The next unit would add $14 to a monopolist’s revenue and $18 to its cost. Should the firm add it?
+A:Yes; it would increase profit by $4.
+B:No; it would reduce profit by $4. [KEY]
+C:Yes; all additional sales increase profit.
+D:No; the lost profit equals the full $18 cost.
+Feedback: MR−MC=14−18=−$4.
+
+REPAIRS: [{"id":"PM6-MON-R-023","q":"Which equality identifies the candidate output for a single-price monopolist?","key":"MR = MC"},{"id":"PM6-MON-R-025","q":"If MR exceeds MC at the current output, what should a profit-maximizing monopolist generally do?","key":"Increase output"},{"id":"PM6-MON-R-026","q":"If the MR=MC intersection occurs where MC is falling and another later intersection occurs where MC is rising, which is the usual profit-maximizing candidate?","key":"The intersection on the rising portion of MC"}]
+
+PM6-MON-BR-011
+bridge
+application
+barriers_to_entry
+A profitable incumbent has an exclusive legal right to supply a product, and potential rivals cannot enter during its term. What mechanism can preserve its profit?
+A:Profit itself eliminates all production costs.
+B:The exclusive right makes every buyer’s demand perfectly elastic.
+C:The barrier blocks the entry response to profit. [KEY]
+D:Potential entry necessarily expands supply during the prohibition.
+Feedback: When entry is blocked, profit need not attract the new supply that would otherwise erode it.
+
+REPAIRS: [{"id":"P62G-MON-R-002","q":"Which fact most strongly supports classifying a firm as a monopoly?","key":"It is the only supplier and rivals cannot enter because it controls an essential input"},{"id":"PM6-MON-R-010","q":"What must accompany a single seller for monopoly power to be durable?","key":"A meaningful barrier that makes entry difficult"}]
+
+PM6-MON-BR-019
+bridge
+application
+elasticity_and_mr
+At a point on smooth downward-sloping demand, P=$30 and |Ed|=3. Using MR=P(1−1/|Ed|), what is MR?
+A:$10
+B:−$20
+C:$20 [KEY]
+D:$40
+Feedback: MR=30(1−1/3)=20, positive on this elastic segment.
+
+REPAIRS: [{"id":"P62G-MON-R-005","q":"If demand is inelastic at the current output, reducing output will usually:","key":"Raise total revenue and lower total cost, increasing profit"},{"id":"P62G-MON-R-006","q":"At the unit-elastic point of a demand curve, marginal revenue is:","key":"Zero"}]
+
+PM6-MON-BR-027
+bridge
+application
+profit_maximizing_output
+A monopolist’s demand is P=30−Q, so MR=30−2Q; MC=10. What output satisfies its marginal rule?
+A:Q=20
+B:Q=15
+C:Q=10 [KEY]
+D:Q=30
+Feedback: Equate MR and MC: 30−2Q=10, so Q=10. Demand equal to MC would give a different, efficient benchmark.
+
+REPAIRS: [{"id":"PM6-MON-R-023","q":"Which equality identifies the candidate output for a single-price monopolist?","key":"MR = MC"},{"id":"PM6-MON-R-025","q":"If MR exceeds MC at the current output, what should a profit-maximizing monopolist generally do?","key":"Increase output"},{"id":"PM6-MON-R-026","q":"If the MR=MC intersection occurs where MC is falling and another later intersection occurs where MC is rising, which is the usual profit-maximizing candidate?","key":"The intersection on the rising portion of MC"}]
+
+PM6-MON-BR-028
+bridge
+application
+integrated_monopoly_analysis
+A monopolist has already chosen Q=12 using MR=MC. Demand is P=50−2Q. What price supports that quantity?
+A:$12
+B:$26 [KEY]
+C:$24
+D:$50
+Feedback: Read price from demand at the selected output: 50−2(12)=$26.
+
+REPAIRS: []
+
+PM6-MON-BR-067
+bridge
+application
+regulatory_tradeoff
+Under marginal-cost pricing a natural monopoly supplies 100 units at P=$8, while ATC=$11 at that output. What subsidy covers the total-cost shortfall?
+A:$3
+B:$800
+C:$300 [KEY]
+D:$1,100
+Feedback: The shortfall is (ATC−P)Q=(11−8)×100=$300.
+
+REPAIRS: []
+
+PM6-MON-BR-091
+bridge
+application
+third_degree_price_discrimination
+A firm can separate two customer groups without resale and faces the same positive constant MC for both. At their interior optima demand elasticities have magnitudes 2 and 4. Which group has the higher price under third-degree discrimination?
+A:The group with elasticity magnitude 4
+B:Both must have the same price
+C:The group with elasticity magnitude 2 [KEY]
+D:The group with more customers regardless of elasticity
+Feedback: MR=MC implies a larger markup for the less elastic group; with common MC, the |Ed|=2 group has the higher price.
+
+REPAIRS: [{"id":"P62G-MON-R-018","q":"Which group normally receives the higher price under third-degree discrimination?","key":"The group with less elastic demand"},{"id":"PM6-MON-R-090","q":"Under third-degree price discrimination, which group normally pays the higher price when marginal cost is the same?","key":"The group with less elastic demand"}]
+
+P62I-OLI-BR-001
+bridge
+application
+cartel
+Two firms form an effective cartel. Industry MR equals industry MC at a combined output of 40 units. If they divide output equally, how much does each produce?
+A:40 units
+B:80 units
+C:20 units [KEY]
+D:10 units
+Feedback: The cartel chooses joint monopoly output first, then divides 40 equally: 20 each.
+
+REPAIRS: [{"id":"PM8-OLI-R-041","q":"A student calls any concentrated industry a cartel. What is the correction?","key":"A cartel requires coordination among firms to restrict competition; concentration alone does not establish that"}]
+
+P62I-OLI-BR-003
+bridge
+application
+joint_profit_maximization
+A cartel faces industry MR=60−2Q and constant industry MC=20. What joint output maximizes profit?
+A:Q=20 [KEY]
+B:Q=40
+C:Q=30
+D:Q=60
+Feedback: Set industry MR=MC: 60−2Q=20, giving Q=20.
+
+REPAIRS: [{"id":"P62I-OLI-R-013","q":"How does a cartel select joint output?","key":"Where industry MR equals industry MC"}]
+
+P62I-OLI-BR-005
+bridge
+application
+strategic_interdependence
+An airline’s fare cut is profitable if its rival keeps fares fixed but unprofitable if the rival matches it. What must the airline consider when deciding?
+A:Only the airline’s fixed cost
+B:Only whether the firms sell identical products
+C:The rival’s likely response [KEY]
+D:The fare cut’s effect assuming the rival cannot react
+Feedback: The payoff depends on the other firm’s action, which is the strategic interdependence central to oligopoly.
+
+REPAIRS: [{"id":"P62I-OLI-R-001","q":"A market has three firms that closely track one another’s pricing. What feature matters most?","key":"Strategic interdependence"},{"id":"PM8-OLI-R-009","q":"A student describes oligopoly as “a market where each firm can safely ignore rivals.” What is the key error?","key":"Oligopoly decisions are strategically interdependent because major rivals can respond"}]
+
+P62I-OLI-BR-009
+bridge
+application
+cartel_welfare
+Industry demand is P=50−Q and marginal cost is $10. What output gives the competitive efficiency benchmark for evaluating a cartel?
+A:Q=20
+B:Q=50
+C:Q=40 [KEY]
+D:Q=10
+Feedback: The benchmark sets marginal value equal to MC: 50−Q=10, so Q=40.
+
+REPAIRS: [{"id":"P62I-OLI-R-014","q":"Why is cartel profit not equal to deadweight loss?","key":"Some consumer loss is transferred to producers while DWL is lost surplus"},{"id":"PM8-OLI-R-072","q":"A student treats every dollar of consumer-surplus loss from a cartel as deadweight loss. What should the student separate?","key":"Surplus transferred to producers from surplus destroyed by trades that no longer occur"}]
+
+P62I-OLI-BR-014
+bridge
+application
+cartel_welfare
+A cartel omits two units whose buyer values are $25 and $20 and whose marginal costs are $10 and $12. What surplus is lost from omitting them?
+A:$45
+B:$22
+C:$67
+D:$23 [KEY]
+Feedback: The forgone gains are (25−10)+(20−12)=15+8=$23.
+
+REPAIRS: [{"id":"P62I-OLI-R-014","q":"Why is cartel profit not equal to deadweight loss?","key":"Some consumer loss is transferred to producers while DWL is lost surplus"},{"id":"PM8-OLI-R-072","q":"A student treats every dollar of consumer-surplus loss from a cartel as deadweight loss. What should the student separate?","key":"Surplus transferred to producers from surplus destroyed by trades that no longer occur"}]
+
+P62I-OLI-BR-015
+bridge
+application
+cartel_welfare
+On 10 units still traded, a cartel raises price by $3 per unit without changing costs. Ignoring any separately lost trades, what transfer occurs?
+A:$30 from buyers to sellers [KEY]
+B:$30 from sellers to buyers
+C:$3 from buyers to government
+D:$30 of deadweight loss on these units
+Feedback: Buyers pay $3×10=$30 more and sellers receive the same amount; this is a transfer on the retained trades.
+
+REPAIRS: [{"id":"P62I-OLI-R-014","q":"Why is cartel profit not equal to deadweight loss?","key":"Some consumer loss is transferred to producers while DWL is lost surplus"},{"id":"PM8-OLI-R-072","q":"A student treats every dollar of consumer-surplus loss from a cartel as deadweight loss. What should the student separate?","key":"Surplus transferred to producers from surplus destroyed by trades that no longer occur"}]
+
+PM8-OLI-BR-011
+bridge
+application
+hhi
+A market has three firms with percentage shares 50, 30 and 20. What is the HHI?
+A:100
+B:10,000
+C:3,800 [KEY]
+D:1,900
+Feedback: HHI=50²+30²+20²=2500+900+400=3800.
+
+REPAIRS: [{"id":"P62I-OLI-R-003","q":"Which measure squares market shares?","key":"HHI"}]
+
+PM8-OLI-BR-023
+bridge
+application
+payoff_matrix_reading
+A payoff cell at row A and column Y is (7,3), with the row player listed first. What does it report?
+A:Row chooses Y and earns 3; column chooses A and earns 7.
+B:Both players earn the joint payoff 10.
+C:Row chooses A and earns 7; column chooses Y and earns 3. [KEY]
+D:Row earns 3 and column earns 7.
+Feedback: The row/column positions identify actions, and the stated payoff order assigns 7 to the row player and 3 to the column player.
+
+REPAIRS: [{"id":"P62I-OLI-R-005","q":"In payoff order (Row, Column), whose payoff is second?","key":"The column player’s"},{"id":"P62I-OLI-R-006","q":"Why must payoff order be stated?","key":"Reversing the order changes each firm’s incentives"}]
+
+PM8-OLI-BR-025
+bridge
+application
+dominant_strategy
+A row player’s payoffs are: A against X=6, A against Y=4; B against X=3, B against Y=5. Does it have a strictly dominant action?
+A:No; A is better against X but B is better against Y. [KEY]
+B:Yes; A because its highest payoff is 6.
+C:Yes; B because it earns 5 against Y.
+D:Yes; both A and B are strictly dominant.
+Feedback: Compare within each rival action: 6>3 favors A against X, but 5>4 favors B against Y. No one action wins both comparisons.
+
+REPAIRS: [{"id":"P62I-OLI-R-008","q":"What makes a strategy dominant?","key":"It beats the player’s alternative under every rival action"}]
+
+PM8-OLI-BR-026
+bridge
+application
+nash_equilibrium
+Payoffs (row, column) are A/X=(4,3), A/Y=(1,1), B/X=(2,0), B/Y=(3,2). Which outcomes are pure-strategy Nash equilibria?
+A:A/Y and B/X
+B:A/X only
+C:B/Y only
+D:A/X and B/Y [KEY]
+Feedback: Against X, row prefers A (4>2); against Y, row prefers B (3>1). Against A, column prefers X (3>1); against B, column prefers Y (2>0). The mutual best responses are A/X and B/Y.
+
+REPAIRS: [{"id":"P62I-OLI-R-009","q":"What defines Nash equilibrium?","key":"Mutual best responses"}]

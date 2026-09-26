@@ -1,0 +1,1862 @@
+[
+  {
+    "id": "42626",
+    "skill": "analyze_budget_change",
+    "stem": "Income is $60; X and Y each cost $6. X falls to $3 while Y stays at $6. What are the new X- and Y-intercepts?",
+    "key": "20 X and 10 Y",
+    "repairs": [
+      {
+        "id": "42627",
+        "stem": "In hypothetical consumer-choice case D, the price of X falls while income and Y's price stay fixed. Which budget-line change follows?",
+        "key": "The X-intercept rises and the line pivots outward around the Y-intercept"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "42639",
+    "skill": "interpret_relative_price",
+    "stem": "X costs $4 and Y costs $12. A shopper replaces two units of Y with X while keeping spending fixed. How many units of X can be added?",
+    "key": "6 units",
+    "repairs": [
+      {
+        "id": "42640",
+        "stem": "Good X costs $5 and good Y costs $6. What is the opportunity cost of one unit of X in units of Y?",
+        "key": "5/6 unit of Y"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62B-ELAS-BR-001",
+    "skill": "tax_incidence_elasticity",
+    "stem": "Demand elasticity has magnitude 0.3 and supply elasticity is 1.2 in a competitive market. Which side bears more of a small per-unit tax?",
+    "key": "Buyers, because demand is less elastic.",
+    "repairs": [
+      {
+        "id": "P62B-ELAS-R-017",
+        "stem": "A learner says the side that sends the tax payment to the government bears the entire tax burden. Which statement best corrects the error?",
+        "key": "Relative elasticity determines incidence, not remittance"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62B-ELAS-BR-002",
+    "skill": "elasticity_deadweight_loss",
+    "stem": "Two competitive markets receive the same $4 per-unit tax and have linear curves with no other distortions. Quantity falls by 10 units in A and 30 in B. Which has the greater deadweight loss?",
+    "key": "B: $60 versus A: $20",
+    "repairs": [
+      {
+        "id": "P62B-ELAS-R-018",
+        "stem": "A learner says inelastic markets have no tax burden because quantity changes little. Which statement best corrects the error?",
+        "key": "Small deadweight loss can coexist with substantial tax burden"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62B-ELAS-BR-006",
+    "skill": "elasticity_factor_market_application",
+    "stem": "Labor-demand elasticity is −0.8. With other conditions fixed, use the small-change approximation to predict employment after a 5% wage increase.",
+    "key": "Employment falls about 4%.",
+    "repairs": [
+      {
+        "id": "PMS-ELAS-R-029",
+        "stem": "A learner says labor demand elasticity is unrelated to substitution possibilities. Best correction?",
+        "key": "More available substitutes for a type of labor generally make labor demand more elastic"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62B-ELAS-BR-007",
+    "skill": "elasticity_policy_application",
+    "stem": "A factory’s output imposes an unpriced $3 external cost per unit. A corrective tax raises its relevant per-unit cost, and output demand is price-responsive. Which outcome is consistent with the purpose of the tax?",
+    "key": "Output falls as the firm faces more of the social cost of production.",
+    "repairs": [
+      {
+        "id": "PMS-ELAS-R-028",
+        "stem": "A learner says a price-based policy will reduce quantity by the same percentage in every market. Which statement best corrects the error?",
+        "key": "Quantity response depends on the relevant elasticity"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMS-ELAS-BR-022",
+    "skill": "total_revenue_formula",
+    "stem": "A demand point has price $12 and quantity 50. What is total revenue at that point?",
+    "key": "$600",
+    "repairs": [
+      {
+        "id": "PMS-ELAS-R-019",
+        "stem": "A learner calculates total revenue by adding price and quantity. Which statement best corrects the error?",
+        "key": "Multiply price by quantity sold"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMS-ELAS-BR-025",
+    "skill": "marginal_revenue_elasticity_link",
+    "stem": "A seller is on a smooth downward-sloping demand segment with |Ed|=2. Is selling a little more output associated with positive or negative marginal revenue?",
+    "key": "Positive: the quantity gain outweighs the price reduction’s effect on revenue.",
+    "repairs": [
+      {
+        "id": "P62B-ELAS-R-012",
+        "stem": "A learner says marginal revenue is positive on inelastic demand. Which statement best corrects the error?",
+        "key": "Marginal revenue is negative in the inelastic range"
+      },
+      {
+        "id": "PMS-ELAS-R-021",
+        "stem": "A learner says marginal revenue must be positive everywhere on a downward-sloping demand curve. Which statement best corrects the error?",
+        "key": "Marginal revenue becomes zero near unit elasticity and negative on the inelastic portion"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMS-ELAS-BR-027",
+    "skill": "total_revenue_formula",
+    "stem": "A seller receives $18 per unit and sells 400 units after a change. What is its total revenue?",
+    "key": "$7,200",
+    "repairs": [
+      {
+        "id": "PMS-ELAS-R-019",
+        "stem": "A learner calculates total revenue by adding price and quantity. Which statement best corrects the error?",
+        "key": "Multiply price by quantity sold"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62C-CPS-BR-010",
+    "skill": "surplus_policy_application",
+    "stem": "A tax reduces consumer surplus by $50 and producer surplus by $30, while government collects $60. With no other effects, what is the deadweight loss?",
+    "key": "$20",
+    "repairs": [
+      {
+        "id": "PMS-CPS-R-025",
+        "stem": "A learner counts a $20 transfer from consumers to producers as a $20 deadweight loss. Which statement best corrects this mistake?",
+        "key": "A transfer changes who receives surplus; deadweight loss requires gains that disappear"
+      },
+      {
+        "id": "P62C-CPS-R-019",
+        "stem": "A price change moves $12 from consumers to producers with quantity fixed. What occurred?",
+        "key": "A transfer, not a $12 deadweight loss"
+      },
+      {
+        "id": "P62C-CPS-R-020",
+        "stem": "A policy transfers $20 to consumers and prevents $6 of gains. Total-surplus loss?",
+        "key": "$6"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62C-CPS-BR-015",
+    "skill": "surplus_policy_application",
+    "stem": "A ceiling transfers $16 from sellers to buyers and prevents trades worth $5 in combined surplus. Enforcement uses $2 of real resources. What is the total-surplus change?",
+    "key": "−$7",
+    "repairs": [
+      {
+        "id": "PMS-CPS-R-025",
+        "stem": "A learner counts a $20 transfer from consumers to producers as a $20 deadweight loss. Which statement best corrects this mistake?",
+        "key": "A transfer changes who receives surplus; deadweight loss requires gains that disappear"
+      },
+      {
+        "id": "P62C-CPS-R-019",
+        "stem": "A price change moves $12 from consumers to producers with quantity fixed. What occurred?",
+        "key": "A transfer, not a $12 deadweight loss"
+      },
+      {
+        "id": "P62C-CPS-R-020",
+        "stem": "A policy transfers $20 to consumers and prevents $6 of gains. Total-surplus loss?",
+        "key": "$6"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62C-CPS-BR-017",
+    "skill": "willingness_to_pay",
+    "stem": "A buyer’s maximum willingness to pay is $28. A seller offers the unit for $24, with no other costs. What is the buyer’s gain from accepting?",
+    "key": "$4",
+    "repairs": [
+      {
+        "id": "P62C-CPS-R-001",
+        "stem": "A buyer says, “I paid $18, so my willingness to pay was $18.” Best correction?",
+        "key": "$18 is the price; willingness to pay is the maximum the buyer would have paid"
+      },
+      {
+        "id": "P62C-CPS-R-002",
+        "stem": "A buyer values a ticket at $26 but pays $20. Which number is value and which is payment?",
+        "key": "$26 is willingness to pay; $20 is price"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62C-CPS-BR-019",
+    "skill": "willingness_to_accept",
+    "stem": "A seller’s minimum acceptable compensation for one unit is $17. It receives $22. What is the seller’s gain above that opportunity cost?",
+    "key": "$5",
+    "repairs": [
+      {
+        "id": "P62C-CPS-R-007",
+        "stem": "A seller says, “I received $16, so willingness to accept was $16.” Correction?",
+        "key": "$16 is price received; willingness to accept is the seller’s minimum"
+      },
+      {
+        "id": "P62C-CPS-R-008",
+        "stem": "A seller would have accepted $9 but receives $14. Willingness to accept is:",
+        "key": "$9"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMS-CPS-BR-004",
+    "skill": "consumer_surplus_definition",
+    "stem": "A buyer values a unit at $30 and pays $20. The seller’s opportunity cost is $12. How much does consumer surplus contribute to the $18 total surplus?",
+    "key": "$10",
+    "repairs": [
+      {
+        "id": "P62C-CPS-R-003",
+        "stem": "A student adds value and price to find consumer surplus. What should happen?",
+        "key": "Subtract price from willingness to pay"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMS-CPS-BR-010",
+    "skill": "total_surplus",
+    "stem": "A market graph shows consumer surplus of $45 and producer surplus of $35. There are no external effects. What is total surplus?",
+    "key": "$80",
+    "repairs": [
+      {
+        "id": "PMS-CPS-R-008",
+        "stem": "A learner treats consumer surplus and producer surplus as competing measures and keeps only the larger one. Which statement best corrects this mistake?",
+        "key": "Total surplus adds both buyer and seller surplus"
+      },
+      {
+        "id": "P62C-CPS-R-013",
+        "stem": "A student reports total surplus as consumer surplus only. What is missing?",
+        "key": "Producer surplus"
+      },
+      {
+        "id": "P62C-CPS-R-014",
+        "stem": "Consumer surplus is $34 and producer surplus is $26. Total surplus?",
+        "key": "$60"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMS-CPS-BR-012",
+    "skill": "total_surplus",
+    "stem": "A policy reduces buyer surplus from $50 to $38 and raises seller surplus from $30 to $42, with no other effects. What happens to total surplus?",
+    "key": "It stays at $80.",
+    "repairs": [
+      {
+        "id": "PMS-CPS-R-008",
+        "stem": "A learner treats consumer surplus and producer surplus as competing measures and keeps only the larger one. Which statement best corrects this mistake?",
+        "key": "Total surplus adds both buyer and seller surplus"
+      },
+      {
+        "id": "P62C-CPS-R-013",
+        "stem": "A student reports total surplus as consumer surplus only. What is missing?",
+        "key": "Producer surplus"
+      },
+      {
+        "id": "P62C-CPS-R-014",
+        "stem": "Consumer surplus is $34 and producer surplus is $26. Total surplus?",
+        "key": "$60"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMS-CPS-BR-020",
+    "skill": "efficient_quantity",
+    "stem": "The first three units have marginal benefits $20, $15 and $9, and marginal costs $6, $10 and $12. With no other effects, how many units maximize total surplus?",
+    "key": "2",
+    "repairs": [
+      {
+        "id": "PMS-CPS-R-014",
+        "stem": "A learner keeps producing after the next seller’s cost exceeds the next buyer’s value. Which statement best corrects this mistake?",
+        "key": "Stop before units whose marginal cost exceeds marginal willingness to pay"
+      },
+      {
+        "id": "PMS-CPS-R-019",
+        "stem": "A learner says the efficient quantity is where price is lowest. Which statement best corrects this mistake?",
+        "key": "The efficient quantity is where marginal buyer value and marginal seller cost cross"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMS-CPS-BR-024",
+    "skill": "efficient_quantity",
+    "stem": "At Q=4, marginal benefit is $18 and marginal cost is $12; at Q=5 they are both $15; at Q=6 they are $12 and $18. With smooth declining MB and rising MC, where is the efficient output?",
+    "key": "Q=5",
+    "repairs": [
+      {
+        "id": "PMS-CPS-R-014",
+        "stem": "A learner keeps producing after the next seller’s cost exceeds the next buyer’s value. Which statement best corrects this mistake?",
+        "key": "Stop before units whose marginal cost exceeds marginal willingness to pay"
+      },
+      {
+        "id": "PMS-CPS-R-019",
+        "stem": "A learner says the efficient quantity is where price is lowest. Which statement best corrects this mistake?",
+        "key": "The efficient quantity is where marginal buyer value and marginal seller cost cross"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62E-COP-BR-003",
+    "skill": "economic_profit",
+    "stem": "A firm has $90,000 revenue, $60,000 explicit costs and $20,000 forgone owner income. What is economic profit?",
+    "key": "$10,000",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-024",
+        "stem": "A learner says economic profit equals accounting profit plus implicit costs. Which statement best corrects this mistake?",
+        "key": "Economic profit equals accounting profit minus implicit costs"
+      },
+      {
+        "id": "PMC-COP-R-026",
+        "stem": "A learner finds accounting profit of $50,000 and implicit cost of $70,000, then reports economic profit of $20,000. Which statement best corrects this mistake?",
+        "key": "Economic profit is −$20,000"
+      },
+      {
+        "id": "P62E-COP-R-003",
+        "stem": "Accounting profit is $60,000 and implicit costs are $45,000. Economic profit?",
+        "key": "$15,000"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62E-COP-BR-004",
+    "skill": "normal_profit",
+    "stem": "An owner earns $25,000 accounting profit and forgoes $25,000 in its best alternative use of time and capital. What does economic profit equal?",
+    "key": "$0: the owner’s opportunity cost is covered.",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-025",
+        "stem": "A learner calls zero economic profit a “loss.",
+        "key": "Zero economic profit means all explicit and implicit costs, including normal profit, are covered"
+      },
+      {
+        "id": "P62E-COP-R-004",
+        "stem": "A firm earns zero economic profit. What has it covered?",
+        "key": "Explicit and implicit costs, including normal profit"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62E-COP-BR-005",
+    "skill": "marginal_cost",
+    "stem": "Total cost is $200 at 10 units and $224 at 12 units. What is average marginal cost over those two additional units?",
+    "key": "$12 per unit",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-089",
+        "stem": "A learner calculates MC as TC/Q. Which statement best corrects this mistake?",
+        "key": "MC = ΔTC/ΔQ"
+      },
+      {
+        "id": "PMC-COP-R-090",
+        "stem": "A learner says a higher fixed property tax must raise MC. Which statement best corrects this mistake?",
+        "key": "A pure fixed-cost increase does not change MC"
+      },
+      {
+        "id": "PMC-COP-R-092",
+        "stem": "TC rises by $50 when output rises by 5 units, but a learner reports MC = $50. Which statement best corrects this mistake?",
+        "key": "MC is $10 per unit"
+      },
+      {
+        "id": "P62E-COP-R-015",
+        "stem": "TC rises from $900 to $1,020 as Q rises from 30 to 36. MC is:",
+        "key": "$20"
+      },
+      {
+        "id": "P62E-COP-R-016",
+        "stem": "MC is below ATC. What happens to ATC?",
+        "key": "ATC falls"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62E-COP-BR-006",
+    "skill": "marginal_average_relationship",
+    "stem": "Producing 10 units costs $100. The eleventh unit adds $6. What happens to average total cost?",
+    "key": "It falls to about $9.64.",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-102",
+        "stem": "A learner says MC must be falling whenever ATC is falling. Which statement best corrects this mistake?",
+        "key": "MC can be rising while ATC is still falling, as long as MC remains below ATC"
+      },
+      {
+        "id": "P62E-COP-R-016",
+        "stem": "MC is below ATC. What happens to ATC?",
+        "key": "ATC falls"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62E-COP-BR-008",
+    "skill": "marginal_cost",
+    "stem": "A workshop pays fixed rent of $500. One extra unit requires $8 of material and $4 of labor; rent is unchanged. What is that unit’s marginal cost?",
+    "key": "$12",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-089",
+        "stem": "A learner calculates MC as TC/Q. Which statement best corrects this mistake?",
+        "key": "MC = ΔTC/ΔQ"
+      },
+      {
+        "id": "PMC-COP-R-090",
+        "stem": "A learner says a higher fixed property tax must raise MC. Which statement best corrects this mistake?",
+        "key": "A pure fixed-cost increase does not change MC"
+      },
+      {
+        "id": "PMC-COP-R-092",
+        "stem": "TC rises by $50 when output rises by 5 units, but a learner reports MC = $50. Which statement best corrects this mistake?",
+        "key": "MC is $10 per unit"
+      },
+      {
+        "id": "P62E-COP-R-015",
+        "stem": "TC rises from $900 to $1,020 as Q rises from 30 to 36. MC is:",
+        "key": "$20"
+      },
+      {
+        "id": "P62E-COP-R-016",
+        "stem": "MC is below ATC. What happens to ATC?",
+        "key": "ATC falls"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62E-COP-BR-012",
+    "skill": "marginal_cost",
+    "stem": "A price-taking firm can sell one extra unit for $18; making it adds $14 to total cost. What is the marginal profit from that unit?",
+    "key": "+$4",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-089",
+        "stem": "A learner calculates MC as TC/Q. Which statement best corrects this mistake?",
+        "key": "MC = ΔTC/ΔQ"
+      },
+      {
+        "id": "PMC-COP-R-090",
+        "stem": "A learner says a higher fixed property tax must raise MC. Which statement best corrects this mistake?",
+        "key": "A pure fixed-cost increase does not change MC"
+      },
+      {
+        "id": "PMC-COP-R-092",
+        "stem": "TC rises by $50 when output rises by 5 units, but a learner reports MC = $50. Which statement best corrects this mistake?",
+        "key": "MC is $10 per unit"
+      },
+      {
+        "id": "P62E-COP-R-015",
+        "stem": "TC rises from $900 to $1,020 as Q rises from 30 to 36. MC is:",
+        "key": "$20"
+      },
+      {
+        "id": "P62E-COP-R-016",
+        "stem": "MC is below ATC. What happens to ATC?",
+        "key": "ATC falls"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62E-COP-BR-020",
+    "skill": "marginal_cost",
+    "stem": "A firm can sell another unit for $16, but its marginal cost is $19. Holding other choices fixed, should it add that unit?",
+    "key": "No; it would lower profit by $3.",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-089",
+        "stem": "A learner calculates MC as TC/Q. Which statement best corrects this mistake?",
+        "key": "MC = ΔTC/ΔQ"
+      },
+      {
+        "id": "PMC-COP-R-090",
+        "stem": "A learner says a higher fixed property tax must raise MC. Which statement best corrects this mistake?",
+        "key": "A pure fixed-cost increase does not change MC"
+      },
+      {
+        "id": "PMC-COP-R-092",
+        "stem": "TC rises by $50 when output rises by 5 units, but a learner reports MC = $50. Which statement best corrects this mistake?",
+        "key": "MC is $10 per unit"
+      },
+      {
+        "id": "P62E-COP-R-015",
+        "stem": "TC rises from $900 to $1,020 as Q rises from 30 to 36. MC is:",
+        "key": "$20"
+      },
+      {
+        "id": "P62E-COP-R-016",
+        "stem": "MC is below ATC. What happens to ATC?",
+        "key": "ATC falls"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMC-COP-BR-011",
+    "skill": "opportunity_cost_firm",
+    "stem": "An owner uses a building that could instead earn $12,000 in annual rent. No rent check is paid by the owner’s business. What annual cost should economic analysis include?",
+    "key": "$12,000 implicit opportunity cost",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-010",
+        "stem": "A learner says, “If the owner did not write a check, the resource has no cost.",
+        "key": "Owner-supplied resources can have implicit opportunity costs even without a cash payment"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMC-COP-BR-027",
+    "skill": "economic_profit",
+    "stem": "Accounting profit is $42,000 and the owner forgoes a $35,000 outside salary, with no other implicit costs. What is economic profit?",
+    "key": "$7,000",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-024",
+        "stem": "A learner says economic profit equals accounting profit plus implicit costs. Which statement best corrects this mistake?",
+        "key": "Economic profit equals accounting profit minus implicit costs"
+      },
+      {
+        "id": "PMC-COP-R-026",
+        "stem": "A learner finds accounting profit of $50,000 and implicit cost of $70,000, then reports economic profit of $20,000. Which statement best corrects this mistake?",
+        "key": "Economic profit is −$20,000"
+      },
+      {
+        "id": "P62E-COP-R-003",
+        "stem": "Accounting profit is $60,000 and implicit costs are $45,000. Economic profit?",
+        "key": "$15,000"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMC-COP-BR-049",
+    "skill": "total_cost",
+    "stem": "At one output TC is $160 and TVC is $100. At a higher output TVC is $145 while fixed cost is unchanged. What is TC at the higher output?",
+    "key": "$205",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-043",
+        "stem": "A learner writes TC = TFC − TVC. Which statement best corrects this mistake?",
+        "key": "TC = TFC + TVC"
+      },
+      {
+        "id": "P62E-COP-R-011",
+        "stem": "At zero output, TFC is $500 and TVC is $0. TC is:",
+        "key": "$500"
+      },
+      {
+        "id": "P62E-COP-R-012",
+        "stem": "TFC is $300 and TVC is $700. TC is:",
+        "key": "$1,000"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMC-COP-BR-070",
+    "skill": "average_fixed_cost",
+    "stem": "Fixed cost is $120. Output rises from 10 to 15 units without changing fixed cost. What is the new AFC?",
+    "key": "$8",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-065",
+        "stem": "A learner divides output by TFC to calculate AFC. Which statement best corrects this mistake?",
+        "key": "AFC = TFC/Q"
+      },
+      {
+        "id": "PMC-COP-R-068",
+        "stem": "A learner says AFC eventually rises because “all U-shaped costs rise.",
+        "key": "AFC keeps falling as fixed cost is spread over more output"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMC-COP-BR-072",
+    "skill": "average_total_cost",
+    "stem": "At an output of 20, AFC is $3 and AVC is $7. What is ATC?",
+    "key": "$10",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-067",
+        "stem": "A learner says ATC = AVC − AFC. Which statement best corrects this mistake?",
+        "key": "ATC = AVC + AFC"
+      },
+      {
+        "id": "PMC-COP-R-069",
+        "stem": "At Q = 10, AFC = $6 and AVC = $14. A learner reports ATC = $8. Which statement best corrects this mistake?",
+        "key": "ATC is $20"
+      },
+      {
+        "id": "P62E-COP-R-013",
+        "stem": "AFC is $4 and AVC is $11. ATC is:",
+        "key": "$15"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PMC-COP-BR-075",
+    "skill": "average_total_cost",
+    "stem": "At 5 units total cost is $50. The sixth unit adds $16. What is ATC at 6 units?",
+    "key": "$11",
+    "repairs": [
+      {
+        "id": "PMC-COP-R-067",
+        "stem": "A learner says ATC = AVC − AFC. Which statement best corrects this mistake?",
+        "key": "ATC = AVC + AFC"
+      },
+      {
+        "id": "PMC-COP-R-069",
+        "stem": "At Q = 10, AFC = $6 and AVC = $14. A learner reports ATC = $8. Which statement best corrects this mistake?",
+        "key": "ATC is $20"
+      },
+      {
+        "id": "P62E-COP-R-013",
+        "stem": "AFC is $4 and AVC is $11. ATC is:",
+        "key": "$15"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-001",
+    "skill": "marginal_rule",
+    "stem": "A competitive firm receives $15 for one more unit and incurs $11 of extra cost. What does the marginal rule recommend?",
+    "key": "Add the unit; it raises profit by $4.",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-016",
+        "stem": "A learner says a competitive firm should keep expanding whenever MR is above ATC. Which statement best corrects this mistake?",
+        "key": "Compare MR with MC for the next unit, not MR with ATC"
+      },
+      {
+        "id": "P62F-PC-R-007",
+        "stem": "MR is $25 and the next unit’s MC is $19. What should the firm do?",
+        "key": "Produce the next unit"
+      },
+      {
+        "id": "P62F-PC-R-008",
+        "stem": "MR is $25 and the next unit’s MC is $31. What should the firm do?",
+        "key": "Do not produce the next unit"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-002",
+    "skill": "profit_per_unit",
+    "stem": "At its chosen output, a competitive firm has P=$24 and ATC=$19. What is profit per unit?",
+    "key": "$5",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-028",
+        "stem": "A learner computes profit per unit as ATC − P when P exceeds ATC. Which statement best corrects this mistake?",
+        "key": "Use P − ATC for profit per unit"
+      },
+      {
+        "id": "P62F-PC-R-009",
+        "stem": "At the chosen output, P=$30 and ATC=$24. Profit per unit is:",
+        "key": "$6"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-003",
+    "skill": "shutdown_rule",
+    "stem": "A competitive firm’s best positive output has P=$10, AVC=$8 and ATC=$13. Fixed cost is unavoidable this period. Should it operate or shut down now?",
+    "key": "Operate; revenue covers variable cost and part of fixed cost.",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-043",
+        "stem": "A learner uses P < ATC as the shutdown rule. Which statement best corrects this mistake?",
+        "key": "Compare price with AVC for shutdown; ATC determines profit or loss"
+      },
+      {
+        "id": "P62F-PC-R-013",
+        "stem": "P is below ATC but above AVC. What should the firm do in the short run?",
+        "key": "Produce at the MR=MC output"
+      },
+      {
+        "id": "P62F-PC-R-014",
+        "stem": "P is below minimum AVC. What should the firm do?",
+        "key": "Shut down"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-004",
+    "skill": "short_run_fixed_cost",
+    "stem": "A firm produces 50 units at its unique MR=MC optimum and pays an additional unavoidable $100 fixed license fee. Demand, MC and AVC are unchanged. What happens to its short-run output?",
+    "key": "It stays at 50 units.",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-045",
+        "stem": "A learner says shutting down eliminates all costs immediately. Which statement best corrects this mistake?",
+        "key": "Short-run fixed costs remain even when output is zero"
+      },
+      {
+        "id": "PM5-PC-R-068",
+        "stem": "A learner shifts short-run supply left after a fixed-cost increase. Which statement best corrects this mistake?",
+        "key": "Fixed cost changes ATC and profit, not MC or AVC, so short-run supply does not shift"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-005",
+    "skill": "normal_profit",
+    "stem": "A firm’s revenue equals explicit costs plus $18,000 of implicit owner costs. What return is covered even though economic profit is zero?",
+    "key": "The $18,000 normal return on owner resources",
+    "repairs": [
+      {
+        "id": "P62F-PC-R-012",
+        "stem": "Why can accounting profit be positive at zero economic profit?",
+        "key": "Accounting profit does not subtract implicit costs"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-006",
+    "skill": "firm_short_run_supply",
+    "stem": "On its rising MC curve, a competitive firm has MC=$12 at Q=4 and MC=$15 at Q=5; AVC is below both prices. If market price rises from $12 to $15, what output change follows?",
+    "key": "From 4 to 5 units",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-067",
+        "stem": "A learner labels the entire MC curve as the firm’s short-run supply curve. Which statement best corrects this mistake?",
+        "key": "Use only the rising MC portion at and above minimum AVC"
+      },
+      {
+        "id": "PM5-PC-R-070",
+        "stem": "A learner says a higher wage cannot shift supply because the firm is a price taker. Which statement best corrects this mistake?",
+        "key": "Price taking fixes the output price, not the firm’s costs; a wage increase can raise MC and shift supply"
+      },
+      {
+        "id": "P62F-PC-R-015",
+        "stem": "Which MC segment is competitive short-run supply?",
+        "key": "MC at and above minimum AVC"
+      },
+      {
+        "id": "P62F-PC-R-016",
+        "stem": "At a price below minimum AVC, a firm’s quantity supplied is:",
+        "key": "Zero"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-007",
+    "skill": "market_supply_aggregation",
+    "stem": "At price $10, three competitive firms supply 4, 6 and 5 units. What is market quantity supplied at that price?",
+    "key": "15 units",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-069",
+        "stem": "A learner adds firms’ supply prices vertically to build market supply. Which statement best corrects this mistake?",
+        "key": "At each price, add the quantities supplied across firms horizontally"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-008",
+    "skill": "entry",
+    "stem": "At a given price, ten firms each supply 5 units. Two identical firms enter while existing cost curves stay fixed. What is total supply at that price afterward?",
+    "key": "60 units",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-086",
+        "stem": "A learner says positive economic profit causes existing firms to raise the market price. What is the long-run repair?",
+        "key": "Profit attracts entry, which increases market supply and tends to lower price"
+      },
+      {
+        "id": "P62F-PC-R-017",
+        "stem": "Positive economic profit causes entry. What does entry do to market supply and price?",
+        "key": "Supply rises and price falls"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-009",
+    "skill": "exit",
+    "stem": "At a given price, eight firms each supply 6 units. Two firms exit and the remaining firms’ schedules stay fixed. What is market supply at that price?",
+    "key": "36 units",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-087",
+        "stem": "A learner says loss-making competitive firms can remain forever with no industry adjustment. Which statement best corrects this mistake?",
+        "key": "Persistent losses encourage exit when firms can leave in the long run"
+      },
+      {
+        "id": "P62F-PC-R-018",
+        "stem": "Economic loss causes exit. What does exit do to market supply and price?",
+        "key": "Supply falls and price rises"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-010",
+    "skill": "marginal_rule",
+    "stem": "A competitive firm receives $20 on each extra unit. The next unit costs $17 and the following one $23. Which additional output maximizes profit from these two units?",
+    "key": "Add only the first unit.",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-016",
+        "stem": "A learner says a competitive firm should keep expanding whenever MR is above ATC. Which statement best corrects this mistake?",
+        "key": "Compare MR with MC for the next unit, not MR with ATC"
+      },
+      {
+        "id": "P62F-PC-R-007",
+        "stem": "MR is $25 and the next unit’s MC is $19. What should the firm do?",
+        "key": "Produce the next unit"
+      },
+      {
+        "id": "P62F-PC-R-008",
+        "stem": "MR is $25 and the next unit’s MC is $31. What should the firm do?",
+        "key": "Do not produce the next unit"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-011",
+    "skill": "discrete_output_choice",
+    "stem": "A price-taking firm sells at $10. The first four units cost $4, $7, $9 and $13 at the margin, respectively. Fixed cost is unavoidable. What output maximizes profit?",
+    "key": "3 units",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-018",
+        "stem": "A learner sees MR = $20, the next unit’s MC = $18, and stops production at the current output. Which statement best corrects this mistake?",
+        "key": "Add the next unit because it adds $20 of revenue and only $18 of cost"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-012",
+    "skill": "rising_mc_condition",
+    "stem": "A firm’s MR is $10. Near output A, MC falls from $12 to $8; near output B, MC rises from $8 to $12. Which crossing gives a local profit maximum?",
+    "key": "B",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-017",
+        "stem": "A learner finds an output where MR = MC but MC is falling at that point and declares it profit maximizing. What condition is missing?",
+        "key": "MC should be rising through MR for the usual maximum"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-013",
+    "skill": "allocative_efficiency",
+    "stem": "The next unit is worth $22 to buyers and costs $16 to produce, with no external effects. Would adding it move toward allocative efficiency?",
+    "key": "Yes; it adds $6 of surplus.",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-111",
+        "stem": "A learner says productive efficiency and allocative efficiency are the same condition. Which statement best corrects this mistake?",
+        "key": "Productive efficiency concerns minimum ATC; allocative efficiency concerns P = MC"
+      },
+      {
+        "id": "P62F-PC-R-020",
+        "stem": "Allocative efficiency occurs at:",
+        "key": "P=MC"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-015",
+    "skill": "integrated_competitive_firm_analysis",
+    "stem": "A competitive firm has MC=$9 and AVC=$7 at a specified output. A $2 tax is charged on every unit produced. What are MC and AVC at that same output after tax?",
+    "key": "MC=$11 and AVC=$9",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-070",
+        "stem": "A learner says a higher wage cannot shift supply because the firm is a price taker. Which statement best corrects this mistake?",
+        "key": "Price taking fixes the output price, not the firm’s costs; a wage increase can raise MC and shift supply"
+      }
+    ],
+    "matchBasis": "Related repair family; skill names differ",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62F-PC-BR-016",
+    "skill": "short_run_fixed_cost",
+    "stem": "An unavoidable $60 annual license fee is added to a firm producing 20 units. At that output, how do ATC and MC change?",
+    "key": "ATC rises by $3; MC is unchanged.",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-045",
+        "stem": "A learner says shutting down eliminates all costs immediately. Which statement best corrects this mistake?",
+        "key": "Short-run fixed costs remain even when output is zero"
+      },
+      {
+        "id": "PM5-PC-R-068",
+        "stem": "A learner shifts short-run supply left after a fixed-cost increase. Which statement best corrects this mistake?",
+        "key": "Fixed cost changes ATC and profit, not MC or AVC, so short-run supply does not shift"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM5-PC-BR-032",
+    "skill": "profit_per_unit",
+    "stem": "At the chosen output P=$14 and ATC=$18. What is the firm’s per-unit economic result?",
+    "key": "A $4 loss",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-028",
+        "stem": "A learner computes profit per unit as ATC − P when P exceeds ATC. Which statement best corrects this mistake?",
+        "key": "Use P − ATC for profit per unit"
+      },
+      {
+        "id": "P62F-PC-R-009",
+        "stem": "At the chosen output, P=$30 and ATC=$24. Profit per unit is:",
+        "key": "$6"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM5-PC-BR-033",
+    "skill": "total_profit",
+    "stem": "A firm sells 30 units at $12 each and incurs $300 in total economic cost. What is total economic profit?",
+    "key": "$60",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-029",
+        "stem": "A learner reports $5 of total profit because P − ATC = $5 and the firm sells 60 units. What is missing?",
+        "key": "Multiply the $5 per-unit profit by 60 units"
+      },
+      {
+        "id": "P62F-PC-R-010",
+        "stem": "A firm earns $4 per unit on 50 units. Total profit is:",
+        "key": "$200"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM5-PC-BR-034",
+    "skill": "zero_economic_profit",
+    "stem": "A firm has $100,000 revenue, $75,000 explicit costs and $25,000 implicit costs. Is zero economic profit consistent with all opportunity costs being covered?",
+    "key": "Yes; revenue equals the full $100,000 economic cost.",
+    "repairs": [
+      {
+        "id": "P62F-PC-R-011",
+        "stem": "For a competitive firm, earning zero economic profit means:",
+        "key": "All explicit and implicit costs are covered"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM5-PC-BR-035",
+    "skill": "break_even",
+    "stem": "A firm chooses Q=40 at P=$15 and ATC=$15. What are total revenue, total cost and economic profit?",
+    "key": "TR=$600; TC=$600; profit=$0",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-030",
+        "stem": "A learner says P = ATC means the firm has no accounting profit and no return to the owner. Which statement best corrects this mistake?",
+        "key": "P = ATC means zero economic profit; normal profit is included in economic cost"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM5-PC-BR-072",
+    "skill": "market_supply_aggregation",
+    "stem": "At price $8, firm A supplies 3 units and firm B supplies 7. At price $10, they supply 5 and 9. What is industry quantity at price $10?",
+    "key": "14 units",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-069",
+        "stem": "A learner adds firms’ supply prices vertically to build market supply. Which statement best corrects this mistake?",
+        "key": "At each price, add the quantities supplied across firms horizontally"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM5-PC-BR-088",
+    "skill": "entry",
+    "stem": "Incumbents earn positive economic profit. Entry is easy, and new firms arrive while market demand stays fixed. What initial market adjustment tends to erode the profit?",
+    "key": "Supply expands and market price falls.",
+    "repairs": [
+      {
+        "id": "PM5-PC-R-086",
+        "stem": "A learner says positive economic profit causes existing firms to raise the market price. What is the long-run repair?",
+        "key": "Profit attracts entry, which increases market supply and tends to lower price"
+      },
+      {
+        "id": "P62F-PC-R-017",
+        "stem": "Positive economic profit causes entry. What does entry do to market supply and price?",
+        "key": "Supply rises and price falls"
+      }
+    ],
+    "status": "FAILED — DEFECT REMAINS",
+    "transfer": "Repeats entry -> supply expansion -> lower price already asked by P62F-PC-R-017; fixed demand does not require a new transfer step."
+  },
+  {
+    "id": "PM5-PC-BR-090",
+    "skill": "normal_profit",
+    "stem": "An owner requires $30,000 to match the best alternative use of its resources. The business earns exactly that amount after explicit costs. What are normal profit and economic profit?",
+    "key": "Normal profit=$30,000; economic profit=$0",
+    "repairs": [
+      {
+        "id": "P62F-PC-R-012",
+        "stem": "Why can accounting profit be positive at zero economic profit?",
+        "key": "Accounting profit does not subtract implicit costs"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-001",
+    "skill": "short_run_output_choice",
+    "stem": "A differentiated firm’s MR is $16 and MC is $12 for the next unit. Should it add that unit, holding other decisions fixed?",
+    "key": "Yes; it adds $4 to profit.",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-005",
+        "stem": "What is the correct sequence for short-run firm choice?",
+        "key": "Choose Q where MR=MC, then read P from demand"
+      },
+      {
+        "id": "P62H-MCMP-R-006",
+        "stem": "A table has no exact MR=MC equality. Which output should be selected?",
+        "key": "The last unit whose MR is at least MC"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-002",
+    "skill": "short_run_shutdown",
+    "stem": "At its best positive output a differentiated firm has P=$9, AVC=$11 and ATC=$15. Fixed cost is unavoidable this period. Should it produce now?",
+    "key": "No; shutting down avoids a variable-cost loss.",
+    "repairs": [
+      {
+        "id": "PM7-MCMP-R-011",
+        "stem": "A monopolistically competitive firm chooses its MR=MC output. At that output, price is below ATC but above AVC. What should the firm do in the short run?",
+        "key": "Continue producing and accept an economic loss"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-003",
+    "skill": "long_run_zero_profit",
+    "stem": "At long-run equilibrium a differentiated firm sells 20 units at $30 and has ATC=$30. What is economic profit?",
+    "key": "$0",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-013",
+        "stem": "What does zero economic profit mean?",
+        "key": "All explicit and implicit costs, including normal profit, are covered"
+      },
+      {
+        "id": "P62H-MCMP-R-014",
+        "stem": "Where does long-run tangency occur in the standard model?",
+        "key": "On the downward-sloping portion of ATC before its minimum"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-004",
+    "skill": "excess_capacity",
+    "stem": "A firm chooses Q=30, while its ATC is minimized at Q=50. What is its excess capacity?",
+    "key": "20 units",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-016",
+        "stem": "What does excess capacity measure?",
+        "key": "Q at minimum ATC minus the firm’s equilibrium Q"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-005",
+    "skill": "market_structure_characteristics",
+    "stem": "Many cafés sell differentiated drinks and new cafés can enter without major barriers. Which shared feature with perfect competition allows profit to attract new producers?",
+    "key": "Relatively easy entry",
+    "repairs": [
+      {
+        "id": "PM7-MCMP-R-010",
+        "stem": "A market has many small sellers and easy entry, but every seller offers exactly the same product. What key condition for monopolistic competition is missing?",
+        "key": "Product differentiation"
+      },
+      {
+        "id": "P62H-MCMP-R-001",
+        "stem": "A market has many sellers but all products are identical. Why is that not enough for monopolistic competition?",
+        "key": "Product differentiation is also required"
+      },
+      {
+        "id": "P62H-MCMP-R-002",
+        "stem": "A market has differentiated products but only three firms that react strategically to one another. Which model is the better starting point?",
+        "key": "Oligopoly"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-006",
+    "skill": "long_run_zero_profit",
+    "stem": "After entry, a differentiated firm has P=$25 and ATC=$25 at its chosen output. Which long-run result matches standard perfect competition?",
+    "key": "Zero economic profit",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-013",
+        "stem": "What does zero economic profit mean?",
+        "key": "All explicit and implicit costs, including normal profit, are covered"
+      },
+      {
+        "id": "P62H-MCMP-R-014",
+        "stem": "Where does long-run tangency occur in the standard model?",
+        "key": "On the downward-sloping portion of ATC before its minimum"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-007",
+    "skill": "markup",
+    "stem": "At its chosen output a differentiated firm has P=$18 and MC=$12. What markup over marginal cost remains?",
+    "key": "$6 per unit",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-015",
+        "stem": "Why can a firm have a markup with zero economic profit?",
+        "key": "Price can equal ATC while exceeding MC"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-008",
+    "skill": "productive_inefficiency",
+    "stem": "Firm A chooses Q=40 where its ATC is minimized. Firm B chooses Q=25 but minimizes ATC at Q=35. Which firm is productively efficient at its chosen output?",
+    "key": "A only",
+    "repairs": [
+      {
+        "id": "PM7-MCMP-R-047",
+        "stem": "A monopolistically competitive firm earns zero economic profit in long-run equilibrium. Does that prove the outcome is fully efficient?",
+        "key": "No. Price can still exceed MC and output can remain below the minimum-ATC quantity"
+      },
+      {
+        "id": "P62H-MCMP-R-016",
+        "stem": "What does excess capacity measure?",
+        "key": "Q at minimum ATC minus the firm’s equilibrium Q"
+      }
+    ],
+    "matchBasis": "Related repair family; skill names differ",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-009",
+    "skill": "short_run_output_choice",
+    "stem": "A differentiated firm’s MR and MC cross at Q=10. Demand shows P=$24 there, while MR=$16. What price corresponds to the profit-maximizing output?",
+    "key": "$24",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-005",
+        "stem": "What is the correct sequence for short-run firm choice?",
+        "key": "Choose Q where MR=MC, then read P from demand"
+      },
+      {
+        "id": "P62H-MCMP-R-006",
+        "stem": "A table has no exact MR=MC equality. Which output should be selected?",
+        "key": "The last unit whose MR is at least MC"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-010",
+    "skill": "entry_after_profit",
+    "stem": "A profitable café attracts nearby competitors selling close alternatives. Holding the café’s cost curves fixed, what tends to happen to its demand and profit?",
+    "key": "Its demand shifts inward and its profit tends to fall.",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-009",
+        "stem": "Short-run profit attracts entry. What happens to an existing firm’s demand?",
+        "key": "It shifts left as new substitutes appear"
+      }
+    ],
+    "matchBasis": "Related repair family; skill names differ",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-011",
+    "skill": "close_substitutes",
+    "stem": "A town has one water supplier with no close substitute and many restaurants offering differentiated meals. For which seller is switching to a close rival’s product generally easier?",
+    "key": "A restaurant",
+    "repairs": [
+      {
+        "id": "PM7-MCMP-R-010",
+        "stem": "A market has many small sellers and easy entry, but every seller offers exactly the same product. What key condition for monopolistic competition is missing?",
+        "key": "Product differentiation"
+      }
+    ],
+    "matchBasis": "Related repair family; skill names differ",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-012",
+    "skill": "long_run_zero_profit",
+    "stem": "Firm A’s profit attracts unrestricted entry; firm B’s profit is protected by an effective entry barrier. Which can more readily sustain positive economic profit in the long run?",
+    "key": "B",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-013",
+        "stem": "What does zero economic profit mean?",
+        "key": "All explicit and implicit costs, including normal profit, are covered"
+      },
+      {
+        "id": "P62H-MCMP-R-014",
+        "stem": "Where does long-run tangency occur in the standard model?",
+        "key": "On the downward-sloping portion of ATC before its minimum"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62H-MCMP-BR-013",
+    "skill": "elasticity_firm_demand",
+    "stem": "Before close substitutes enter, a 5% price increase reduces a firm’s quantity by 2%. After entry, the same price increase reduces quantity by 8%. What happens to demand elasticity magnitude?",
+    "key": "It rises from 0.4 to 1.6.",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-010",
+        "stem": "How does entry usually affect the elasticity of an existing firm’s demand?",
+        "key": "It becomes more elastic"
+      }
+    ],
+    "matchBasis": "Related repair family; skill names differ",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM7-MCMP-BR-012",
+    "skill": "short_run_output_choice",
+    "stem": "A firm has MR=40−2Q and constant MC=12. At what output do these curves meet?",
+    "key": "Q=14",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-005",
+        "stem": "What is the correct sequence for short-run firm choice?",
+        "key": "Choose Q where MR=MC, then read P from demand"
+      },
+      {
+        "id": "P62H-MCMP-R-006",
+        "stem": "A table has no exact MR=MC equality. Which output should be selected?",
+        "key": "The last unit whose MR is at least MC"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM7-MCMP-BR-013",
+    "skill": "short_run_shutdown",
+    "stem": "At its best positive output a firm receives P=$20 and has AVC=$16, ATC=$23. Fixed costs are unavoidable now. What should it do this period?",
+    "key": "Operate despite an economic loss.",
+    "repairs": [
+      {
+        "id": "PM7-MCMP-R-011",
+        "stem": "A monopolistically competitive firm chooses its MR=MC output. At that output, price is below ATC but above AVC. What should the firm do in the short run?",
+        "key": "Continue producing and accept an economic loss"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM7-MCMP-BR-014",
+    "skill": "short_run_profit",
+    "stem": "A differentiated firm chooses 50 units with P=$18 and ATC=$20. What is economic profit?",
+    "key": "−$100",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-007",
+        "stem": "A firm has P>MC but P<ATC. Which statement is correct?",
+        "key": "It has a markup but an economic loss"
+      },
+      {
+        "id": "P62H-MCMP-R-008",
+        "stem": "A firm has P<ATC but P>AVC. What should it do in the short run?",
+        "key": "Produce at MR=MC and minimize its loss"
+      }
+    ],
+    "matchBasis": "Related repair family; skill names differ",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM7-MCMP-BR-035",
+    "skill": "advertising_elasticity",
+    "stem": "After a branding campaign, the magnitude of price elasticity falls from 2 to 0.5. Using the small-change approximation, what quantity response follows a 4% price increase after the campaign?",
+    "key": "A 2% decrease",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-010",
+        "stem": "How does entry usually affect the elasticity of an existing firm’s demand?",
+        "key": "It becomes more elastic"
+      },
+      {
+        "id": "P62H-MCMP-R-017",
+        "stem": "An ad shifts firm demand right. Is that a movement along demand?",
+        "key": "No, it is a demand shift"
+      }
+    ],
+    "matchBasis": "Broader firm-demand/advertising family: elasticity response plus demand-shift distinction; no exact same-named repairSkill entry exists, as before cleanup.",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM7-MCMP-BR-037",
+    "skill": "innovation_product_development",
+    "stem": "A new product feature earns short-run profit, but rivals can copy it and enter freely. What response would tend to erode the innovator’s profit?",
+    "key": "Rivals introduce close alternatives that draw away some of its demand.",
+    "repairs": [
+      {
+        "id": "P62H-MCMP-R-020",
+        "stem": "What does nonprice competition mean?",
+        "key": "Firms compete through quality, service, location, branding, and other dimensions in addition to price"
+      }
+    ],
+    "matchBasis": "Related repair family; skill names differ",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62G-MON-BR-006",
+    "skill": "profit_maximizing_output",
+    "stem": "A monopolist has MR=50−2Q and MC=10. What output solves MR=MC?",
+    "key": "Q=20",
+    "repairs": [
+      {
+        "id": "PM6-MON-R-023",
+        "stem": "Which equality identifies the candidate output for a single-price monopolist?",
+        "key": "MR = MC"
+      },
+      {
+        "id": "PM6-MON-R-025",
+        "stem": "If MR exceeds MC at the current output, what should a profit-maximizing monopolist generally do?",
+        "key": "Increase output"
+      },
+      {
+        "id": "PM6-MON-R-026",
+        "stem": "If the MR=MC intersection occurs where MC is falling and another later intersection occurs where MC is rising, which is the usual profit-maximizing candidate?",
+        "key": "The intersection on the rising portion of MC"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62G-MON-BR-007",
+    "skill": "monopoly_profit",
+    "stem": "After choosing output, a monopolist charges $40 and has ATC=$28. What is economic profit per unit?",
+    "key": "$12",
+    "repairs": [
+      {
+        "id": "PM6-MON-R-033",
+        "stem": "Which expression gives total economic profit for a monopolist producing Q units?",
+        "key": "(P − ATC) × Q"
+      },
+      {
+        "id": "P62G-MON-R-009",
+        "stem": "At Q=20, price is $50, ATC is $38, and MC is $30. What is profit?",
+        "key": "$240"
+      },
+      {
+        "id": "P62G-MON-R-010",
+        "stem": "Why does P>MC not prove positive economic profit?",
+        "key": "ATC can still exceed price"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62G-MON-BR-009",
+    "skill": "monopoly_shutdown",
+    "stem": "At its best positive output a monopolist has total revenue $500 and variable cost $540. Fixed cost of $100 is unavoidable now. What should it do this period?",
+    "key": "Shut down, avoiding the $40 shortfall on variable cost.",
+    "repairs": [
+      {
+        "id": "PM6-MON-R-034",
+        "stem": "A monopolist is losing money because P<ATC, but P>AVC. What does the shutdown rule say?",
+        "key": "Continue producing in the short run if the chosen output minimizes the loss"
+      },
+      {
+        "id": "P62G-MON-R-011",
+        "stem": "A monopolist has P below ATC but above AVC at its best output. It should:",
+        "key": "Produce in the short run and minimize its loss"
+      },
+      {
+        "id": "P62G-MON-R-012",
+        "stem": "Short-run shutdown allows a monopolist to avoid:",
+        "key": "Variable cost but not fixed cost"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62G-MON-BR-012",
+    "skill": "elasticity_and_mr",
+    "stem": "For demand P=20−Q, total revenue is maximized at Q=10. MR=20−2Q. What is MR at that output?",
+    "key": "$0",
+    "repairs": [
+      {
+        "id": "P62G-MON-R-005",
+        "stem": "If demand is inelastic at the current output, reducing output will usually:",
+        "key": "Raise total revenue and lower total cost, increasing profit"
+      },
+      {
+        "id": "P62G-MON-R-006",
+        "stem": "At the unit-elastic point of a demand curve, marginal revenue is:",
+        "key": "Zero"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62G-MON-BR-014",
+    "skill": "monopoly_deadweight_loss",
+    "stem": "A monopolist omits a unit worth $18 to a buyer that would cost $12 to produce. With no external effects, how much surplus is lost on that omitted unit?",
+    "key": "$6",
+    "repairs": [
+      {
+        "id": "PM6-MON-R-043",
+        "stem": "Which area is conceptually deadweight loss from monopoly?",
+        "key": "The lost surplus on units between monopoly output and the efficient output"
+      },
+      {
+        "id": "P62G-MON-R-013",
+        "stem": "Which part of lost consumer surplus is deadweight loss?",
+        "key": "The portion not transferred to the monopolist because output is not produced"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62G-MON-BR-016",
+    "skill": "profit_maximizing_output",
+    "stem": "The next unit would add $14 to a monopolist’s revenue and $18 to its cost. Should the firm add it?",
+    "key": "No; it would reduce profit by $4.",
+    "repairs": [
+      {
+        "id": "PM6-MON-R-023",
+        "stem": "Which equality identifies the candidate output for a single-price monopolist?",
+        "key": "MR = MC"
+      },
+      {
+        "id": "PM6-MON-R-025",
+        "stem": "If MR exceeds MC at the current output, what should a profit-maximizing monopolist generally do?",
+        "key": "Increase output"
+      },
+      {
+        "id": "PM6-MON-R-026",
+        "stem": "If the MR=MC intersection occurs where MC is falling and another later intersection occurs where MC is rising, which is the usual profit-maximizing candidate?",
+        "key": "The intersection on the rising portion of MC"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM6-MON-BR-011",
+    "skill": "barriers_to_entry",
+    "stem": "A profitable incumbent has an exclusive legal right to supply a product, and potential rivals cannot enter during its term. What mechanism can preserve its profit?",
+    "key": "The barrier blocks the entry response to profit.",
+    "repairs": [
+      {
+        "id": "PM6-MON-R-010",
+        "stem": "What must accompany a single seller for monopoly power to be durable?",
+        "key": "A meaningful barrier that makes entry difficult"
+      },
+      {
+        "id": "P62G-MON-R-002",
+        "stem": "Which fact most strongly supports classifying a firm as a monopoly?",
+        "key": "It is the only supplier and rivals cannot enter because it controls an essential input"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM6-MON-BR-019",
+    "skill": "elasticity_and_mr",
+    "stem": "At a point on smooth downward-sloping demand, P=$30 and |Ed|=3. Using MR=P(1−1/|Ed|), what is MR?",
+    "key": "$20",
+    "repairs": [
+      {
+        "id": "P62G-MON-R-005",
+        "stem": "If demand is inelastic at the current output, reducing output will usually:",
+        "key": "Raise total revenue and lower total cost, increasing profit"
+      },
+      {
+        "id": "P62G-MON-R-006",
+        "stem": "At the unit-elastic point of a demand curve, marginal revenue is:",
+        "key": "Zero"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM6-MON-BR-027",
+    "skill": "profit_maximizing_output",
+    "stem": "A monopolist’s demand is P=30−Q, so MR=30−2Q; MC=10. What output satisfies its marginal rule?",
+    "key": "Q=10",
+    "repairs": [
+      {
+        "id": "PM6-MON-R-023",
+        "stem": "Which equality identifies the candidate output for a single-price monopolist?",
+        "key": "MR = MC"
+      },
+      {
+        "id": "PM6-MON-R-025",
+        "stem": "If MR exceeds MC at the current output, what should a profit-maximizing monopolist generally do?",
+        "key": "Increase output"
+      },
+      {
+        "id": "PM6-MON-R-026",
+        "stem": "If the MR=MC intersection occurs where MC is falling and another later intersection occurs where MC is rising, which is the usual profit-maximizing candidate?",
+        "key": "The intersection on the rising portion of MC"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM6-MON-BR-028",
+    "skill": "integrated_monopoly_analysis",
+    "stem": "A monopolist has already chosen Q=12 using MR=MC. Demand is P=50−2Q. What price supports that quantity?",
+    "key": "$26",
+    "repairs": [
+      {
+        "id": "P62G-MON-R-007",
+        "stem": "What is the correct order for solving a monopoly graph?",
+        "key": "Find Q where MR=MC, then read P from demand"
+      }
+    ],
+    "matchBasis": "Related repair family; skill names differ",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM6-MON-BR-067",
+    "skill": "regulatory_tradeoff",
+    "stem": "Under marginal-cost pricing a natural monopoly supplies 100 units at P=$8, while ATC=$11 at that output. What subsidy covers the total-cost shortfall?",
+    "key": "$300",
+    "repairs": [
+      {
+        "id": "P62G-MON-R-015",
+        "stem": "Why can P=MC cause a regulated natural monopoly to lose money?",
+        "key": "Declining ATC leaves ATC above MC over the relevant range"
+      }
+    ],
+    "matchBasis": "Related repair family; skill names differ",
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM6-MON-BR-091",
+    "skill": "third_degree_price_discrimination",
+    "stem": "A firm can separate two customer groups without resale and faces the same positive constant MC for both. At their interior optima demand elasticities have magnitudes 2 and 4. Which group has the higher price under third-degree discrimination?",
+    "key": "The group with elasticity magnitude 2",
+    "repairs": [
+      {
+        "id": "PM6-MON-R-090",
+        "stem": "Under third-degree price discrimination, which group normally pays the higher price when marginal cost is the same?",
+        "key": "The group with less elastic demand"
+      },
+      {
+        "id": "P62G-MON-R-018",
+        "stem": "Which group normally receives the higher price under third-degree discrimination?",
+        "key": "The group with less elastic demand"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62I-OLI-BR-001",
+    "skill": "cartel",
+    "stem": "Two firms form an effective cartel. Industry MR equals industry MC at a combined output of 40 units. If they divide output equally, how much does each produce?",
+    "key": "20 units",
+    "repairs": [
+      {
+        "id": "PM8-OLI-R-041",
+        "stem": "A student calls any concentrated industry a cartel. What is the correction?",
+        "key": "A cartel requires coordination among firms to restrict competition; concentration alone does not establish that"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62I-OLI-BR-003",
+    "skill": "joint_profit_maximization",
+    "stem": "A cartel faces industry MR=60−2Q and constant industry MC=20. What joint output maximizes profit?",
+    "key": "Q=20",
+    "repairs": [
+      {
+        "id": "P62I-OLI-R-013",
+        "stem": "How does a cartel select joint output?",
+        "key": "Where industry MR equals industry MC"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62I-OLI-BR-005",
+    "skill": "strategic_interdependence",
+    "stem": "An airline’s fare cut is profitable if its rival keeps fares fixed but unprofitable if the rival matches it. What must the airline consider when deciding?",
+    "key": "The rival’s likely response",
+    "repairs": [
+      {
+        "id": "PM8-OLI-R-009",
+        "stem": "A student describes oligopoly as “a market where each firm can safely ignore rivals.” What is the key error?",
+        "key": "Oligopoly decisions are strategically interdependent because major rivals can respond"
+      },
+      {
+        "id": "P62I-OLI-R-001",
+        "stem": "A market has three firms that closely track one another’s pricing. What feature matters most?",
+        "key": "Strategic interdependence"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62I-OLI-BR-009",
+    "skill": "cartel_welfare",
+    "stem": "Industry demand is P=50−Q and marginal cost is $10. What output gives the competitive efficiency benchmark for evaluating a cartel?",
+    "key": "Q=40",
+    "repairs": [
+      {
+        "id": "PM8-OLI-R-072",
+        "stem": "A student treats every dollar of consumer-surplus loss from a cartel as deadweight loss. What should the student separate?",
+        "key": "Surplus transferred to producers from surplus destroyed by trades that no longer occur"
+      },
+      {
+        "id": "P62I-OLI-R-014",
+        "stem": "Why is cartel profit not equal to deadweight loss?",
+        "key": "Some consumer loss is transferred to producers while DWL is lost surplus"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62I-OLI-BR-014",
+    "skill": "cartel_welfare",
+    "stem": "A cartel omits two units whose buyer values are $25 and $20 and whose marginal costs are $10 and $12. What surplus is lost from omitting them?",
+    "key": "$23",
+    "repairs": [
+      {
+        "id": "PM8-OLI-R-072",
+        "stem": "A student treats every dollar of consumer-surplus loss from a cartel as deadweight loss. What should the student separate?",
+        "key": "Surplus transferred to producers from surplus destroyed by trades that no longer occur"
+      },
+      {
+        "id": "P62I-OLI-R-014",
+        "stem": "Why is cartel profit not equal to deadweight loss?",
+        "key": "Some consumer loss is transferred to producers while DWL is lost surplus"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "P62I-OLI-BR-015",
+    "skill": "cartel_welfare",
+    "stem": "On 10 units still traded, a cartel raises price by $3 per unit without changing costs. Ignoring any separately lost trades, what transfer occurs?",
+    "key": "$30 from buyers to sellers",
+    "repairs": [
+      {
+        "id": "PM8-OLI-R-072",
+        "stem": "A student treats every dollar of consumer-surplus loss from a cartel as deadweight loss. What should the student separate?",
+        "key": "Surplus transferred to producers from surplus destroyed by trades that no longer occur"
+      },
+      {
+        "id": "P62I-OLI-R-014",
+        "stem": "Why is cartel profit not equal to deadweight loss?",
+        "key": "Some consumer loss is transferred to producers while DWL is lost surplus"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM8-OLI-BR-011",
+    "skill": "hhi",
+    "stem": "A market has three firms with percentage shares 50, 30 and 20. What is the HHI?",
+    "key": "3,800",
+    "repairs": [
+      {
+        "id": "P62I-OLI-R-003",
+        "stem": "Which measure squares market shares?",
+        "key": "HHI"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM8-OLI-BR-023",
+    "skill": "payoff_matrix_reading",
+    "stem": "A payoff cell at row A and column Y is (7,3), with the row player listed first. What does it report?",
+    "key": "Row chooses A and earns 7; column chooses Y and earns 3.",
+    "repairs": [
+      {
+        "id": "P62I-OLI-R-005",
+        "stem": "In payoff order (Row, Column), whose payoff is second?",
+        "key": "The column player’s"
+      },
+      {
+        "id": "P62I-OLI-R-006",
+        "stem": "Why must payoff order be stated?",
+        "key": "Reversing the order changes each firm’s incentives"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM8-OLI-BR-025",
+    "skill": "dominant_strategy",
+    "stem": "A row player’s payoffs are: A against X=6, A against Y=4; B against X=3, B against Y=5. Does it have a strictly dominant action?",
+    "key": "No; A is better against X but B is better against Y.",
+    "repairs": [
+      {
+        "id": "P62I-OLI-R-008",
+        "stem": "What makes a strategy dominant?",
+        "key": "It beats the player’s alternative under every rival action"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  },
+  {
+    "id": "PM8-OLI-BR-026",
+    "skill": "nash_equilibrium",
+    "stem": "Payoffs (row, column) are A/X=(4,3), A/Y=(1,1), B/X=(2,0), B/Y=(3,2). Which outcomes are pure-strategy Nash equilibria?",
+    "key": "A/X and B/Y",
+    "repairs": [
+      {
+        "id": "P62I-OLI-R-009",
+        "stem": "What defines Nash equilibrium?",
+        "key": "Mutual best responses"
+      }
+    ],
+    "status": "VERIFIED",
+    "transfer": "Applies repaired relation to supplied values, a concrete context, a comparison or a changed decision; reviewed against repair family."
+  }
+]
