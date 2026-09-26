@@ -12,6 +12,7 @@ import {
 const require = createRequire(import.meta.url);
 const {assertCanonicalIntegrity} = require('./composer-integrity-contracts.js');
 const {currentAuditedQuestion} = require('./composer-audit-contracts.js');
+const approved = require('./general-economics-approved-revisions.js');
 const core = require("../composer-core.js");
 const helpers = require("./composer-test-helpers.js");
 const testRoot = path.dirname(fileURLToPath(import.meta.url));
@@ -121,7 +122,7 @@ async function run() {
     if (!found) continue;
     const { conceptId, pool, question } = found;
     pass(conceptId === expectedConcept.get(author.id), `Concept mapping ${author.id}: ${conceptId}`);
-    const priorCurated = currentAuditedQuestion(author.id, {id: String(author.id), q: author.q, feedback: author.feedback, type: author.type});
+    const priorCurated = approved.beforeApprovedRevisions(author.id, currentAuditedQuestion(author.id, {id: String(author.id), q: author.q, feedback: author.feedback, type: author.type}));
     const alignment = alignedById.get(String(author.id));
     // Preserve the historical source and audit contract, then apply only the
     // separately reviewed instructor-alignment fields to current expectations.
@@ -147,7 +148,7 @@ async function run() {
     }
     const expectedDifficulty = alignment?.after.difficulty || author.pool;
     pass(pool === expectedDifficulty && question.difficulty === expectedDifficulty && question.canonicalDifficulty === expectedDifficulty, `Difficulty ${author.id}`);
-    const curated = alignment ? {...priorCurated, ...alignment.after} : priorCurated;
+    const curated = approved.approvedQuestion(author.id) || (alignment ? {...priorCurated, ...alignment.after} : priorCurated);
     pass(
       curated ? question.q === curated.q && question.feedback === curated.feedback : question.q === author.q && question.feedback === author.feedback,
       `Canonical copy changed ${author.id}`

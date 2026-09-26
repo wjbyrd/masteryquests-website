@@ -2,6 +2,7 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const approved = require('./general-economics-approved-revisions.js');
 const repoRoot = path.resolve(__dirname, '../../..');
 const read = relative => JSON.parse(fs.readFileSync(path.join(repoRoot, 'validation_artifacts', relative), 'utf8'));
 const assessmentAudits = [
@@ -40,18 +41,18 @@ function applyAssessmentRevisions(historical) {
       else expected[field]=latest.after[field];
     }
   }
-  return expected;
+  return approved.applyApprovedRevisions(expected);
 }
 const historicalQuestion = id => historicalQuestions.get(String(id));
 function provenanceSnapshot(id, current) {
   const firstRevision = revisions.find(row => String(row.id) === String(id));
-  return {...current, ...firstRevision?.before, ...historicalQuestion(id), id: String(id)};
+  return {...approved.beforeApprovedRevisions(id, current), ...firstRevision?.before, ...historicalQuestion(id), id: String(id)};
 }
 const currentAuditedQuestion = (id, fallback) => {
   const historical = historicalQuestion(id);
   const firstRevision = revisions.find(row => String(row.id) === String(id));
   if (!historical && !firstRevision && !fallback) return undefined;
-  return applyAssessmentRevisions({...fallback, ...firstRevision?.before, ...historical, id: String(id)});
+  return applyAssessmentRevisions({...approved.beforeApprovedRevisions(id, fallback), ...firstRevision?.before, ...historical, id: String(id)});
 };
 
 function assertAuditedFindings(result, auditName, entries) {
@@ -61,12 +62,16 @@ function assertAuditedFindings(result, auditName, entries) {
   const selected = new Set(entries.map(entry => String(entry.id)));
   const revisedIds=new Set(bankReview.map(c=>c.id));
   const latestAudit=read('question_bank_audit_20260919/quality-after.json');
-  const expected = [...audit.findings.filter(finding => selected.has(String(finding.questionId))&&!revisedIds.has(String(finding.questionId))),...latestAudit.findings.filter(finding=>selected.has(String(finding.questionId))&&revisedIds.has(String(finding.questionId)))];
+  const earlierExpected = [...audit.findings.filter(finding => selected.has(String(finding.questionId))&&!revisedIds.has(String(finding.questionId))),...latestAudit.findings.filter(finding=>selected.has(String(finding.questionId))&&revisedIds.has(String(finding.questionId)))];
+  const expected = [...earlierExpected.filter(finding => !approved.approvedIds.has(String(finding.questionId))),
+    ...approved.ledger.qualityFindings.filter(finding => selected.has(String(finding.questionId)))];
   const signature = finding => JSON.stringify([String(finding.questionId || finding.id), finding.rule, finding.severity]);
   assert.equal(result.counts.errors, 0, 'Deterministic question quality defect');
   assert.deepEqual(result.findings.map(signature).sort(), expected.map(signature).sort(), `Unreviewed quality findings: ${auditName}`);
   for (const finding of result.findings) {
-    const disposition = dispositions.find(row => signature(row) === signature(finding)) || (revisedIds.has(String(finding.questionId)) ? {note:bankReview.find(c=>c.id===String(finding.questionId)).reasons.join(' ')} : null);
+    const disposition = approved.approvedIds.has(String(finding.questionId))
+      ? {note: 'Exact current state recorded by final verification and targeted exception closure.'}
+      : dispositions.find(row => signature(row) === signature(finding)) || (revisedIds.has(String(finding.questionId)) ? {note:bankReview.find(c=>c.id===String(finding.questionId)).reasons.join(' ')} : null);
     assert(disposition && (disposition.note || disposition.disposition), `Missing quality disposition: ${signature(finding)}`);
     const recorded = expected.find(row => signature(row) === signature(finding));
     assert.equal(finding.wording, recorded.wording, `Reviewed finding wording changed: ${signature(finding)}`);

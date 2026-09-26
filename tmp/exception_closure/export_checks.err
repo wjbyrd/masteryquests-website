@@ -1,0 +1,60 @@
+Traceback (most recent call last):
+  File "C:\Users\Jennings\Documents\GitHub\masteryquests-website/tmp/exception_closure/check_exports.py", line 31, in <module>
+    e.verify_pdf(pdfpath, expected, group)
+  File "C:\Users\Jennings\Documents\GitHub\masteryquests-website\tools\export_faculty_question_bank.py", line 671, in verify_pdf
+    raise ValidationError("PDF content verification failed:\n" + "\n".join(errors))
+exporter.ValidationError: PDF content verification failed:
+P75-TRADE-L-020: complete feedback not found in emitted PDF text
+P75-TRADE-L-021: complete feedback not found in emitted PDF text
+P52B-TRADE-M-001: complete feedback not found in emitted PDF text
+P52B-TRADE-M-001: complete option 0 not found in emitted PDF text
+P52B-TRADE-M-001: complete option 2 not found in emitted PDF text
+P52B-TRADE-M-001: complete option 3 not found in emitted PDF text
+P52B-COMP-M-004: complete feedback not found in emitted PDF text
+P52B-COMP-M-004: complete option 0 not found in emitted PDF text
+P52B-COMP-M-004: complete option 1 not found in emitted PDF text
+P52B-COMP-M-004: complete option 2 not found in emitted PDF text
+P52B-COMP-H-001: complete feedback not found in emitted PDF text
+P52B-COMP-H-001: complete option 1 not found in emitted PDF text
+P52B-COMP-H-001: complete option 2 not found in emitted PDF text
+P52B-COMP-H-001: complete option 3 not found in emitted PDF text
+P52B-COMP-EL-002: complete feedback not found in emitted PDF text
+P52B-COMP-EL-002: complete option 0 not found in emitted PDF text
+P52B-COMP-EL-002: complete option 2 not found in emitted PDF text
+P52B-COMP-EL-002: complete option 3 not found in emitted PDF text
+P52B-S3-DEM-B3-002: complete feedback not found in emitted PDF text
+P52B-S3-DEM-B3-002: complete option 0 not found in emitted PDF text
+P52B-S3-DEM-B3-002: complete option 1 not found in emitted PDF text
+P77-EPOL-BR-042: complete feedback not found in emitted PDF text
+P77-EPOL-E-003: complete correct answer not found in emitted PDF text
+P77-EPOL-E-003: complete feedback not found in emitted PDF text
+P77-EPOL-E-003: complete option 0 not found in emitted PDF text
+P77-EPOL-E-003: complete option 1 not found in emitted PDF text
+P77-EPOL-E-003: complete option 2 not found in emitted PDF text
+P77-EPOL-E-003: complete option 3 not found in emitted PDF text
+P77-EPOL-H-011: complete feedback not found in emitted PDF text
+P52B-INC-R-002: complete stem not found in emitted PDF text
+P52B-INC-B2-002: complete feedback not found in emitted PDF text
+P52B-INC-B2-003: complete feedback not found in emitted PDF text
+P62D-ITP-BR-015: complete feedback not found in emitted PDF text
+P62D-ITP-BR-015: complete option 1 not found in emitted PDF text
+P62D-ITP-BR-015: complete option 2 not found in emitted PDF text
+P62D-ITP-BR-015: complete option 3 not found in emitted PDF text
+PMS-ITP-BR-021: complete feedback not found in emitted PDF text
+PMS-ITP-BR-021: complete option 1 not found in emitted PDF text
+PMS-ITP-BR-021: complete option 2 not found in emitted PDF text
+PMS-ITP-BR-021: complete option 3 not found in emitted PDF text
+P62D-ITP-E-029: complete feedback not found in emitted PDF text
+P62D-ITP-E-029: complete option 1 not found in emitted PDF text
+P62D-ITP-E-029: complete option 2 not found in emitted PDF text
+P62D-ITP-E-029: complete option 3 not found in emitted PDF text
+P52A-MARG-B2-002: complete stem not found in emitted PDF text
+P52A-MARG-B2-002: complete feedback not found in emitted PDF text
+P77-MVM-BR-042: complete feedback not found in emitted PDF text
+40005: complete option 0 not found in emitted PDF text
+40005: complete option 2 not found in emitted PDF text
+40005: complete option 3 not found in emitted PDF text
+P52B-S2-SUP-B3-003: complete feedback not found in emitted PDF text
+P52B-S2-SUP-B3-003: complete option 0 not found in emitted PDF text
+P52B-S2-SUP-B3-003: complete option 2 not found in emitted PDF text
+ECON-MG-FINALBOSS-4012: complete option 3 not found in emitted PDF text

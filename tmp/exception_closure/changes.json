@@ -1,0 +1,2396 @@
+[
+  {
+    "id": "P75-TRADE-L-020",
+    "concept": "gains-from-trade",
+    "fields": [
+      "feedback"
+    ],
+    "before": {
+      "id": "P75-TRADE-L-020",
+      "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+      "q": "A problem gives specialization output and a trading rate but no pre-trade consumption bundle. Can a unique numerical consumption gain be found?",
+      "options": [
+        "No; the autarky comparison is underdetermined",
+        "Yes; the trading rate determines the pre-trade consumption bundle.",
+        "Yes; combined output equals each gain",
+        "No; trade gains can never be measured"
+      ],
+      "tag": "comparative advantage",
+      "type": "application",
+      "objective": "LO1.5",
+      "difficulty": "hard",
+      "conceptCluster": "comparative_advantage_and_trade",
+      "primarySkill": "autarky_baseline_diagnostic",
+      "secondarySkills": [],
+      "repairSkill": "autarky_baseline_diagnostic",
+      "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+      "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+      "aHash": "2f8ed8130c3ef8986318803b70accc59f4c7a913c276ac7e7df65db035d4472c",
+      "canonicalId": "P75-TRADE-L-020",
+      "sourceId": 7500026,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "gains-from-trade",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "tradeDepthCategory": "FULL_TRADE_MODEL",
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "d4bc3d173bb1a242d82d2e6e10352487d65a77456c3fdbdf25ddcea4fb5b7131",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+          "sourceFile": "validation_artifacts/comparative_advantage_gains_trade_standalone_expansion/comparative_advantage_question_changes.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "legendary",
+          "routeKey": "autarky_baseline_diagnostic",
+          "sourceRecordOrder": 25,
+          "sourceId": 7500026,
+          "sourceHash": "d4bc3d173bb1a242d82d2e6e10352487d65a77456c3fdbdf25ddcea4fb5b7131",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    },
+    "after": {
+      "id": "P75-TRADE-L-020",
+      "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+      "q": "A problem gives specialization output and a trading rate but no pre-trade consumption bundle. Can a unique numerical consumption gain be found?",
+      "options": [
+        "No; the autarky comparison is underdetermined",
+        "Yes; the trading rate determines the pre-trade consumption bundle.",
+        "Yes; combined output equals each gain",
+        "No; trade gains can never be measured"
+      ],
+      "tag": "comparative advantage",
+      "type": "application",
+      "objective": "LO1.5",
+      "difficulty": "hard",
+      "conceptCluster": "comparative_advantage_and_trade",
+      "primarySkill": "autarky_baseline_diagnostic",
+      "secondarySkills": [],
+      "repairSkill": "autarky_baseline_diagnostic",
+      "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+      "feedback": "A consumption gain is the difference between the post-trade bundle and the pre-trade, or autarky, bundle. Specialization output and an exchange rate do not identify that missing baseline, so different autarky bundles could imply different numerical gains. Gains can be measured when the required consumption information is supplied.",
+      "aHash": "2f8ed8130c3ef8986318803b70accc59f4c7a913c276ac7e7df65db035d4472c",
+      "canonicalId": "P75-TRADE-L-020",
+      "sourceId": 7500026,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "gains-from-trade",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "tradeDepthCategory": "FULL_TRADE_MODEL",
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "d4bc3d173bb1a242d82d2e6e10352487d65a77456c3fdbdf25ddcea4fb5b7131",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+          "sourceFile": "validation_artifacts/comparative_advantage_gains_trade_standalone_expansion/comparative_advantage_question_changes.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "legendary",
+          "routeKey": "autarky_baseline_diagnostic",
+          "sourceRecordOrder": 25,
+          "sourceId": 7500026,
+          "sourceHash": "d4bc3d173bb1a242d82d2e6e10352487d65a77456c3fdbdf25ddcea4fb5b7131",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "P75-TRADE-L-021",
+    "concept": "gains-from-trade",
+    "fields": [
+      "feedback"
+    ],
+    "before": {
+      "id": "P75-TRADE-L-021",
+      "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+      "q": "A technology has increasing rather than constant opportunity cost. Which claim is safest?",
+      "options": [
+        "Comparative advantage can guide reallocation without universal complete specialization",
+        "Both producers must always specialize completely.",
+        "Opportunity cost becomes irrelevant after exchange",
+        "Absolute advantage fixes every output"
+      ],
+      "tag": "comparative advantage",
+      "type": "application",
+      "objective": "LO1.5",
+      "difficulty": "hard",
+      "conceptCluster": "comparative_advantage_and_trade",
+      "primarySkill": "partial_specialization_model_limits",
+      "secondarySkills": [],
+      "repairSkill": "partial_specialization_model_limits",
+      "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+      "feedback": "Work through the complete model in order and keep the ratio units fixed.",
+      "aHash": "d2fc461d3fc39c21e6c05015b83fd837f04b15ba8c03ea11a87152db42ff6887",
+      "canonicalId": "P75-TRADE-L-021",
+      "sourceId": 7500027,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "gains-from-trade",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "tradeDepthCategory": "FULL_TRADE_MODEL",
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "688798ef130b79165a146fa4d5323b8ee9e3e65f08214c09ebef6cc81fd6d87e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+          "sourceFile": "validation_artifacts/comparative_advantage_gains_trade_standalone_expansion/comparative_advantage_question_changes.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "legendary",
+          "routeKey": "partial_specialization_model_limits",
+          "sourceRecordOrder": 26,
+          "sourceId": 7500027,
+          "sourceHash": "688798ef130b79165a146fa4d5323b8ee9e3e65f08214c09ebef6cc81fd6d87e",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    },
+    "after": {
+      "id": "P75-TRADE-L-021",
+      "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+      "q": "A technology has increasing rather than constant opportunity cost. Which claim is safest?",
+      "options": [
+        "Comparative advantage can guide reallocation without universal complete specialization",
+        "Both producers must always specialize completely.",
+        "Opportunity cost becomes irrelevant after exchange",
+        "Absolute advantage fixes every output"
+      ],
+      "tag": "comparative advantage",
+      "type": "application",
+      "objective": "LO1.5",
+      "difficulty": "hard",
+      "conceptCluster": "comparative_advantage_and_trade",
+      "primarySkill": "partial_specialization_model_limits",
+      "secondarySkills": [],
+      "repairSkill": "partial_specialization_model_limits",
+      "commonError": "Skipping a required link among opportunity cost, specialization, exchange, and the autarky comparison.",
+      "feedback": "With increasing opportunity cost, producing more of a good requires giving up progressively more of the other good. Reallocation can create gains while relative marginal costs differ, but the rising cost can make further specialization unattractive before either producer specializes completely. Absolute productivity alone does not determine that stopping point.",
+      "aHash": "d2fc461d3fc39c21e6c05015b83fd837f04b15ba8c03ea11a87152db42ff6887",
+      "canonicalId": "P75-TRADE-L-021",
+      "sourceId": 7500027,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "gains-from-trade",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "tradeDepthCategory": "FULL_TRADE_MODEL",
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "688798ef130b79165a146fa4d5323b8ee9e3e65f08214c09ebef6cc81fd6d87e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+          "sourceFile": "validation_artifacts/comparative_advantage_gains_trade_standalone_expansion/comparative_advantage_question_changes.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "legendary",
+          "routeKey": "partial_specialization_model_limits",
+          "sourceRecordOrder": 26,
+          "sourceId": 7500027,
+          "sourceHash": "688798ef130b79165a146fa4d5323b8ee9e3e65f08214c09ebef6cc81fd6d87e",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "P52B-TRADE-M-001",
+    "concept": "gains-from-trade",
+    "fields": [
+      "options",
+      "feedback"
+    ],
+    "before": {
+      "id": "P52B-TRADE-M-001",
+      "q": "Rina can make 8 posters or 4 videos in a day. Malik can make 6 posters or 6 videos. Who has the comparative advantage in posters?",
+      "options": [
+        "Malik, because he can make more videos.",
+        "Rina, because one poster costs her 0.5 video while it costs Malik 1 video.",
+        "Malik, because one poster costs him fewer posters.",
+        "Neither, because comparative advantage requires equal productivity."
+      ],
+      "tag": "comparative_advantage_trade",
+      "type": "calculation",
+      "objective": "LO1.5",
+      "difficulty": "medium",
+      "conceptCluster": "core_principles",
+      "primarySkill": "comparative_advantage_calculation",
+      "secondarySkills": [],
+      "repairSkill": "comparative_advantage_calculation",
+      "commonError": "Comparing absolute output instead of opportunity costs.",
+      "feedback": "Rina gives up fewer videos per poster, so she has the comparative advantage in posters.",
+      "aHash": "d38c851258b88d954094fd19878f9cb5bc8e6af2913320f0e8f33240c528d9ee",
+      "canonicalId": "P52B-TRADE-M-001",
+      "sourceId": 5220006,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "medium",
+      "sourceHash": "4d5c52a7e1206232f4d8c95b17a1d0c4b8d4ec032b3856fe62b5a25716efd17e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "medium",
+          "routeKey": null,
+          "sourceRecordOrder": 5,
+          "sourceId": 5220006,
+          "sourceHash": "25c5f1b3e81e6f1c4c4c62cbf9e6d12d347c89397d5003607a8770296fac7220"
+        }
+      ],
+      "primaryConceptId": "gains-from-trade",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "tradeDepthCategory": "SIMPLE_OPPORTUNITY_COST",
+      "tradeMath": {
+        "kind": "comparative",
+        "a": [
+          8,
+          4
+        ],
+        "b": [
+          6,
+          6
+        ],
+        "good": "x",
+        "winner": "A"
+      }
+    },
+    "after": {
+      "id": "P52B-TRADE-M-001",
+      "q": "Rina can make 8 posters or 4 videos in a day. Malik can make 6 posters or 6 videos. Who has the comparative advantage in posters?",
+      "options": [
+        "Malik, because one poster costs him 0.5 video while it costs Rina 1 video.",
+        "Rina, because one poster costs her 0.5 video while it costs Malik 1 video.",
+        "Malik, because one poster costs him 1 video while it costs Rina 2 videos.",
+        "Neither, because one poster costs each of them 1 video at their stated output rates."
+      ],
+      "tag": "comparative_advantage_trade",
+      "type": "calculation",
+      "objective": "LO1.5",
+      "difficulty": "medium",
+      "conceptCluster": "core_principles",
+      "primarySkill": "comparative_advantage_calculation",
+      "secondarySkills": [],
+      "repairSkill": "comparative_advantage_calculation",
+      "commonError": "Comparing absolute output instead of opportunity costs.",
+      "feedback": "Rina gives up 4/8 = 0.5 video per poster, while Malik gives up 6/6 = 1 video per poster. Rina therefore has the lower opportunity cost of posters. Using 8/4 reverses the units to posters per video; swapping the producers or assuming equal costs also gives the wrong comparison.",
+      "aHash": "d38c851258b88d954094fd19878f9cb5bc8e6af2913320f0e8f33240c528d9ee",
+      "canonicalId": "P52B-TRADE-M-001",
+      "sourceId": 5220006,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "medium",
+      "sourceHash": "4d5c52a7e1206232f4d8c95b17a1d0c4b8d4ec032b3856fe62b5a25716efd17e",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "medium",
+          "routeKey": null,
+          "sourceRecordOrder": 5,
+          "sourceId": 5220006,
+          "sourceHash": "25c5f1b3e81e6f1c4c4c62cbf9e6d12d347c89397d5003607a8770296fac7220"
+        }
+      ],
+      "primaryConceptId": "gains-from-trade",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "tradeDepthCategory": "SIMPLE_OPPORTUNITY_COST",
+      "tradeMath": {
+        "kind": "comparative",
+        "a": [
+          8,
+          4
+        ],
+        "b": [
+          6,
+          6
+        ],
+        "good": "x",
+        "winner": "A"
+      }
+    }
+  },
+  {
+    "id": "P52B-COMP-M-004",
+    "concept": "competitive-markets",
+    "fields": [
+      "options",
+      "feedback"
+    ],
+    "before": {
+      "id": "P52B-COMP-M-004",
+      "q": "Why does easy entry matter in a competitive market?",
+      "options": [
+        "Entry guarantees every firm the same cost.",
+        "Entry makes demand disappear.",
+        "Entry lets one firm set the market price.",
+        "Economic profits attract new sellers, increasing competition and making those profits harder to sustain."
+      ],
+      "tag": "competitive_markets",
+      "type": "application",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "markets",
+      "primarySkill": "entry_exit_competition",
+      "secondarySkills": [],
+      "repairSkill": "entry_exit_competition",
+      "commonError": "Ignoring how entry responds to profit opportunities.",
+      "feedback": "Entry expands market supply and puts downward pressure on unusually high economic profits.",
+      "aHash": "e2a1385bfb646b59500499c2ba1bb6b51975843506490e50a670e7048093dfc6",
+      "canonicalId": "P52B-COMP-M-004",
+      "sourceId": 5220068,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "medium",
+      "sourceHash": "5094b73016ecc803f9474d45d8c8936ff5ee48eebd65f81b8bbb9886812318b0",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "medium",
+          "routeKey": null,
+          "sourceRecordOrder": 67,
+          "sourceId": 5220068,
+          "sourceHash": "5094b73016ecc803f9474d45d8c8936ff5ee48eebd65f81b8bbb9886812318b0",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ],
+      "primaryConceptId": "competitive-markets",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+    },
+    "after": {
+      "id": "P52B-COMP-M-004",
+      "q": "Why does easy entry matter in a competitive market?",
+      "options": [
+        "Economic profits attract new sellers, reducing market supply as existing firms divide sales among more rivals.",
+        "Economic profits attract new sellers, lowering each entrant’s costs until all firms share the same cost curve.",
+        "Economic profits attract new sellers, raising market demand as buyers redistribute purchases among rivals.",
+        "Economic profits attract new sellers, increasing competition and making those profits harder to sustain."
+      ],
+      "tag": "competitive_markets",
+      "type": "application",
+      "objective": "LO4.1",
+      "difficulty": "medium",
+      "conceptCluster": "markets",
+      "primarySkill": "entry_exit_competition",
+      "secondarySkills": [],
+      "repairSkill": "entry_exit_competition",
+      "commonError": "Ignoring how entry responds to profit opportunities.",
+      "feedback": "Profit opportunities attract entrants when entry is easy. Their additional supply puts downward pressure on price and economic profits. Redistributing sales does not itself increase market demand, and entry does not make firms’ production costs identical.",
+      "aHash": "e2a1385bfb646b59500499c2ba1bb6b51975843506490e50a670e7048093dfc6",
+      "canonicalId": "P52B-COMP-M-004",
+      "sourceId": 5220068,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "medium",
+      "sourceHash": "5094b73016ecc803f9474d45d8c8936ff5ee48eebd65f81b8bbb9886812318b0",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "medium",
+          "routeKey": null,
+          "sourceRecordOrder": 67,
+          "sourceId": 5220068,
+          "sourceHash": "5094b73016ecc803f9474d45d8c8936ff5ee48eebd65f81b8bbb9886812318b0",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ],
+      "primaryConceptId": "competitive-markets",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "medium",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+    }
+  },
+  {
+    "id": "P52B-COMP-H-001",
+    "concept": "competitive-markets",
+    "fields": [
+      "options",
+      "feedback"
+    ],
+    "before": {
+      "id": "P52B-COMP-H-001",
+      "q": "A restaurant market has many sellers, but each offers a differentiated experience. Which statement is best?",
+      "options": [
+        "The market may be competitive in a broad sense without meeting the strict price-taking benchmark.",
+        "Every restaurant must be a pure price taker.",
+        "Product differentiation eliminates all competition.",
+        "Many sellers guarantee identical products."
+      ],
+      "tag": "competitive_markets",
+      "type": "application",
+      "objective": "LO4.1",
+      "difficulty": "hard",
+      "conceptCluster": "markets",
+      "primarySkill": "competition_degree",
+      "secondarySkills": [],
+      "repairSkill": "competition_degree",
+      "commonError": "Treating market structures as all-or-nothing labels.",
+      "feedback": "Competition can exist by degree; differentiation gives firms some price discretion.",
+      "aHash": "08c719bea3bed3e0dee94a0e3335891ed899f63ed827e3e8c5eeed66e1326d5d",
+      "canonicalId": "P52B-COMP-H-001",
+      "sourceId": 5220069,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "hard",
+      "sourceHash": "741c419e8fd5c1afbb7193282523a6068750f6e5e055b6aed478429d9bba9de8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "hard",
+          "routeKey": null,
+          "sourceRecordOrder": 68,
+          "sourceId": 5220069,
+          "sourceHash": "741c419e8fd5c1afbb7193282523a6068750f6e5e055b6aed478429d9bba9de8"
+        }
+      ],
+      "primaryConceptId": "competitive-markets",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null
+    },
+    "after": {
+      "id": "P52B-COMP-H-001",
+      "q": "A restaurant market has many sellers, but each offers a differentiated experience. Which statement is best?",
+      "options": [
+        "The market may be competitive in a broad sense without meeting the strict price-taking benchmark.",
+        "The large number of restaurants makes each a price taker despite customers’ preferences for particular experiences.",
+        "Differentiation gives each restaurant the pricing freedom of a sole supplier because other dining experiences are distinct.",
+        "Competition should be assessed only through price differences, since differences in service quality do not affect buyer choice."
+      ],
+      "tag": "competitive_markets",
+      "type": "application",
+      "objective": "LO4.1",
+      "difficulty": "hard",
+      "conceptCluster": "markets",
+      "primarySkill": "competition_degree",
+      "secondarySkills": [],
+      "repairSkill": "competition_degree",
+      "commonError": "Treating market structures as all-or-nothing labels.",
+      "feedback": "Many restaurants can compete for customers even when differentiated experiences give individual sellers some price discretion. Differentiation means the strict identical-product price-taking benchmark need not hold, but competing restaurants can still constrain each other’s prices.",
+      "aHash": "08c719bea3bed3e0dee94a0e3335891ed899f63ed827e3e8c5eeed66e1326d5d",
+      "canonicalId": "P52B-COMP-H-001",
+      "sourceId": 5220069,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "hard",
+      "sourceHash": "741c419e8fd5c1afbb7193282523a6068750f6e5e055b6aed478429d9bba9de8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "hard",
+          "routeKey": null,
+          "sourceRecordOrder": 68,
+          "sourceId": 5220069,
+          "sourceHash": "741c419e8fd5c1afbb7193282523a6068750f6e5e055b6aed478429d9bba9de8"
+        }
+      ],
+      "primaryConceptId": "competitive-markets",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "hard",
+      "originalBossTier": null
+    }
+  },
+  {
+    "id": "P52B-COMP-EL-002",
+    "concept": "competitive-markets",
+    "fields": [
+      "options",
+      "feedback"
+    ],
+    "before": {
+      "id": "P52B-COMP-EL-002",
+      "q": "A market has free entry but strong network effects favor the largest platform. What is the best conclusion?",
+      "options": [
+        "Free entry guarantees price taking.",
+        "Formal entry may be easy while effective competition remains weak.",
+        "Network effects have no effect on market power.",
+        "The largest platform must have the lowest opportunity cost."
+      ],
+      "tag": "competitive_markets",
+      "type": "application",
+      "objective": "LO4.1",
+      "difficulty": "elite",
+      "conceptCluster": "markets",
+      "primarySkill": "effective_entry",
+      "secondarySkills": [],
+      "repairSkill": "effective_entry",
+      "commonError": "Equating legal permission to enter with practical competitive viability.",
+      "feedback": "Entrants may be allowed but unable to attract users when network effects reinforce the incumbent.",
+      "aHash": "1b6b1f9627cb7579a0921a5ae5208655f6c6f40e392ce04af18016a0d925be56",
+      "canonicalId": "P52B-COMP-EL-002",
+      "sourceId": 5220074,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "elite",
+      "sourceHash": "81adff869a880360e25354c8b81c568a0ea571f901a639d8fabc34386f1ec975",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "elite",
+          "routeKey": null,
+          "sourceRecordOrder": 73,
+          "sourceId": 5220074,
+          "sourceHash": "81adff869a880360e25354c8b81c568a0ea571f901a639d8fabc34386f1ec975"
+        }
+      ],
+      "primaryConceptId": "competitive-markets",
+      "secondaryConceptIds": [],
+      "instructionalRole": "elite",
+      "canonicalDifficulty": "elite",
+      "originalSourcePool": "elite",
+      "originalBossTier": null
+    },
+    "after": {
+      "id": "P52B-COMP-EL-002",
+      "q": "A market has free entry but strong network effects favor the largest platform. What is the best conclusion?",
+      "options": [
+        "Legal freedom to enter makes the incumbent face perfectly elastic demand despite its user network.",
+        "Formal entry may be easy while effective competition remains weak.",
+        "Network effects remove the incumbent’s advantage because every entrant can start with an equally valuable user network.",
+        "The incumbent’s user advantage implies formal entry is restricted, so the premise of free entry cannot hold."
+      ],
+      "tag": "competitive_markets",
+      "type": "application",
+      "objective": "LO4.1",
+      "difficulty": "elite",
+      "conceptCluster": "markets",
+      "primarySkill": "effective_entry",
+      "secondarySkills": [],
+      "repairSkill": "effective_entry",
+      "commonError": "Equating legal permission to enter with practical competitive viability.",
+      "feedback": "Permission to enter does not ensure that a new platform can attract enough users to compete effectively. When a platform becomes more valuable as its user base grows, the incumbent’s network can be an entry obstacle even without legal restrictions. That advantage does not establish perfectly elastic demand or equal starting networks.",
+      "aHash": "1b6b1f9627cb7579a0921a5ae5208655f6c6f40e392ce04af18016a0d925be56",
+      "canonicalId": "P52B-COMP-EL-002",
+      "sourceId": 5220074,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "elite",
+      "sourceHash": "81adff869a880360e25354c8b81c568a0ea571f901a639d8fabc34386f1ec975",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "elite",
+          "routeKey": null,
+          "sourceRecordOrder": 73,
+          "sourceId": 5220074,
+          "sourceHash": "81adff869a880360e25354c8b81c568a0ea571f901a639d8fabc34386f1ec975"
+        }
+      ],
+      "primaryConceptId": "competitive-markets",
+      "secondaryConceptIds": [],
+      "instructionalRole": "elite",
+      "canonicalDifficulty": "elite",
+      "originalSourcePool": "elite",
+      "originalBossTier": null
+    }
+  },
+  {
+    "id": "P52B-S3-DEM-B3-002",
+    "concept": "demand",
+    "fields": [
+      "options",
+      "feedback"
+    ],
+    "before": {
+      "id": "P52B-S3-DEM-B3-002",
+      "q": "Movie tickets are a normal good. Income rises, but the price of streaming subscriptions, a substitute, falls. What is the strongest conclusion about movie-ticket demand?",
+      "options": [
+        "Demand rises if the income effect is larger than the substitute-price effect",
+        "Demand falls if the substitute-price effect is larger than the income effect",
+        "Quantity demanded changes along one curve because both events change the ticket price",
+        "The net shift is uncertain because the two effects oppose each other"
+      ],
+      "tag": "demand",
+      "type": "checkpoint",
+      "objective": "LO4.2",
+      "difficulty": "finalBoss",
+      "conceptCluster": "supply_demand",
+      "primarySkill": "multiple_demand_shifters",
+      "secondarySkills": [],
+      "repairSkill": "multiple_demand_shifters",
+      "commonError": "Claiming certainty when opposing demand shifters act simultaneously.",
+      "feedback": "Higher income raises demand for a normal good, while a cheaper substitute lowers it. Effect sizes are required.",
+      "aHash": "12aa4cd05183664c8713548201fcb8c64453da586d46faa43646644c8a30f72e",
+      "canonicalId": "P52B-S3-DEM-B3-002",
+      "sourceId": 5220248,
+      "sourceGame": "phase5.2b-stage3-rescue",
+      "sourceChapter": [],
+      "sourcePool": "finalBoss",
+      "sourceHash": "45e79c2013f029043f382ae236069312d5374798594b4d9b983f0afa78a5f2d7",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-stage3-rescue",
+          "sourceFile": "phase5.2b_stage3_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 7,
+          "sourceId": 5220248,
+          "sourceHash": "45e79c2013f029043f382ae236069312d5374798594b4d9b983f0afa78a5f2d7",
+          "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+        }
+      ],
+      "primaryConceptId": "demand",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss",
+      "boss": "Final Checkpoint",
+      "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+    },
+    "after": {
+      "id": "P52B-S3-DEM-B3-002",
+      "q": "Movie tickets are a normal good. Income rises, but the price of streaming subscriptions, a substitute, falls. What is the strongest conclusion about movie-ticket demand?",
+      "options": [
+        "Demand rises because higher income and a cheaper substitute both increase demand for movie tickets.",
+        "Demand falls because the cheaper substitute lowers ticket demand while income does not shift demand for a normal good.",
+        "Quantity demanded changes along one curve because both events change the ticket price",
+        "The net shift is uncertain because the two effects oppose each other"
+      ],
+      "tag": "demand",
+      "type": "checkpoint",
+      "objective": "LO4.2",
+      "difficulty": "finalBoss",
+      "conceptCluster": "supply_demand",
+      "primarySkill": "multiple_demand_shifters",
+      "secondarySkills": [],
+      "repairSkill": "multiple_demand_shifters",
+      "commonError": "Claiming certainty when opposing demand shifters act simultaneously.",
+      "feedback": "Higher income increases demand for a normal good, while a cheaper substitute reduces demand for movie tickets. The effects oppose each other and their relative sizes are not supplied, so the net shift cannot be determined. These are demand shifters, not changes caused by the ticket’s own price.",
+      "aHash": "12aa4cd05183664c8713548201fcb8c64453da586d46faa43646644c8a30f72e",
+      "canonicalId": "P52B-S3-DEM-B3-002",
+      "sourceId": 5220248,
+      "sourceGame": "phase5.2b-stage3-rescue",
+      "sourceChapter": [],
+      "sourcePool": "finalBoss",
+      "sourceHash": "45e79c2013f029043f382ae236069312d5374798594b4d9b983f0afa78a5f2d7",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-stage3-rescue",
+          "sourceFile": "phase5.2b_stage3_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 7,
+          "sourceId": 5220248,
+          "sourceHash": "45e79c2013f029043f382ae236069312d5374798594b4d9b983f0afa78a5f2d7",
+          "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+        }
+      ],
+      "primaryConceptId": "demand",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss",
+      "boss": "Final Checkpoint",
+      "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+    }
+  },
+  {
+    "id": "P77-EPOL-BR-042",
+    "concept": "economist-policy-role",
+    "fields": [
+      "feedback"
+    ],
+    "before": {
+      "id": "P77-EPOL-BR-042",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "A subsidy changes behavior beyond its intended target. Which economic idea helps explain these additional responses?",
+      "options": [
+        "Only the directly targeted behavior should be included in the analysis",
+        "Responses outside the target are irrelevant to the policy’s effects",
+        "Unintended responses occur only when enforcement fails.",
+        "Incentives can create unintended consequences"
+      ],
+      "tag": "economist policy role",
+      "type": "bridge",
+      "objective": "GE.7.7",
+      "difficulty": "microBridge",
+      "conceptCluster": "economist_policy_role",
+      "primarySkill": "policy_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "policy_tradeoff",
+      "commonError": "misses_unintended_consequence_of_incentives",
+      "feedback": "Economic analysis clarifies tradeoffs but does not uniquely rank every social goal.",
+      "aHash": "664f70345655d84d9f03dc287971c99daea828bb7f3a4fae82b64abaeb1bd106",
+      "canonicalId": "P77-EPOL-BR-042",
+      "sourceId": 7700117,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "policy_tradeoff",
+      "primaryConceptId": "economist-policy-role",
+      "secondaryConceptIds": [
+        "incentives"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "policy_tradeoff",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "dd3d7d9fa052ea2e8f7ded7ac7b239424fd614eb0d24dcb45927f6f97cf87eb6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "microSkillBridgePools",
+          "sourcePool": "policy_tradeoff",
+          "routeKey": "policy_tradeoff",
+          "sourceRecordOrder": 41,
+          "sourceId": 7700117,
+          "sourceHash": "dd3d7d9fa052ea2e8f7ded7ac7b239424fd614eb0d24dcb45927f6f97cf87eb6",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    },
+    "after": {
+      "id": "P77-EPOL-BR-042",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "A subsidy changes behavior beyond its intended target. Which economic idea helps explain these additional responses?",
+      "options": [
+        "Only the directly targeted behavior should be included in the analysis",
+        "Responses outside the target are irrelevant to the policy’s effects",
+        "Unintended responses occur only when enforcement fails.",
+        "Incentives can create unintended consequences"
+      ],
+      "tag": "economist policy role",
+      "type": "bridge",
+      "objective": "GE.7.7",
+      "difficulty": "microBridge",
+      "conceptCluster": "economist_policy_role",
+      "primarySkill": "policy_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "policy_tradeoff",
+      "commonError": "misses_unintended_consequence_of_incentives",
+      "feedback": "A subsidy changes the payoff from an action. People may adjust related choices as well as the behavior the policy targets, creating effects the designer did not intend. Those responses belong in the policy’s benefit-and-cost analysis even when the subsidy is enforced as designed.",
+      "aHash": "664f70345655d84d9f03dc287971c99daea828bb7f3a4fae82b64abaeb1bd106",
+      "canonicalId": "P77-EPOL-BR-042",
+      "sourceId": 7700117,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "policy_tradeoff",
+      "primaryConceptId": "economist-policy-role",
+      "secondaryConceptIds": [
+        "incentives"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "policy_tradeoff",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "dd3d7d9fa052ea2e8f7ded7ac7b239424fd614eb0d24dcb45927f6f97cf87eb6",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "microSkillBridgePools",
+          "sourcePool": "policy_tradeoff",
+          "routeKey": "policy_tradeoff",
+          "sourceRecordOrder": 41,
+          "sourceId": 7700117,
+          "sourceHash": "dd3d7d9fa052ea2e8f7ded7ac7b239424fd614eb0d24dcb45927f6f97cf87eb6",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "P77-EPOL-E-003",
+    "concept": "economist-policy-role",
+    "fields": [
+      "options",
+      "feedback",
+      "aHash"
+    ],
+    "before": {
+      "id": "P77-EPOL-E-003",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "An adviser compares costs borne by commuters and taxpayers. What should the adviser make explicit?",
+      "options": [
+        "Only the total cost, because distribution does not matter",
+        "Making the policy tradeoffs explicit",
+        "Whether the policy is efficient enough to eliminate all value judgments",
+        "A single overall result without identifying who bears the costs."
+      ],
+      "tag": "economist policy role",
+      "type": "application",
+      "objective": "GE.7.7",
+      "difficulty": "easy",
+      "conceptCluster": "economist_policy_role",
+      "primarySkill": "policy_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "policy_tradeoff",
+      "commonError": "Treating efficiency as the only criterion of social desirability.",
+      "feedback": "Economic analysis clarifies tradeoffs but does not uniquely rank every social goal.",
+      "aHash": "32d4b0a5211b3fe80b53252061a995dec63ac27f3844c19a1f1cf3819a9ca914",
+      "canonicalId": "P77-EPOL-E-003",
+      "sourceId": 7700078,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "policy_tradeoff",
+      "primaryConceptId": "economist-policy-role",
+      "secondaryConceptIds": [],
+      "instructionalRole": "easy",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "policy_tradeoff",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "250e4afc5e7bbb398887b2599ca6bbd89dc6f7de24a6010d6719941daa7dab86",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "policy_tradeoff",
+          "routeKey": "policy_tradeoff",
+          "sourceRecordOrder": 2,
+          "sourceId": 7700078,
+          "sourceHash": "250e4afc5e7bbb398887b2599ca6bbd89dc6f7de24a6010d6719941daa7dab86",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    },
+    "after": {
+      "id": "P77-EPOL-E-003",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "An adviser compares costs borne by commuters and taxpayers. What should the adviser make explicit?",
+      "options": [
+        "The combined cost alone, without showing how it is divided between the two groups.",
+        "The costs each group bears and the tradeoffs between the policy alternatives.",
+        "The adviser’s preferred outcome alone, without showing the costs of other choices.",
+        "The taxpayers’ costs alone, without including the costs borne by commuters."
+      ],
+      "tag": "economist policy role",
+      "type": "application",
+      "objective": "GE.7.7",
+      "difficulty": "easy",
+      "conceptCluster": "economist_policy_role",
+      "primarySkill": "policy_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "policy_tradeoff",
+      "commonError": "Treating efficiency as the only criterion of social desirability.",
+      "feedback": "An informative comparison identifies which costs fall on commuters and which fall on taxpayers, and how those costs change across policy alternatives. A single total can conceal the distribution of costs and the tradeoffs facing the decision maker.",
+      "aHash": "e9aa8dad1a5bbead8f2fc7b959e35f5506a3750f6be07cdf58008bba89922029",
+      "canonicalId": "P77-EPOL-E-003",
+      "sourceId": 7700078,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "policy_tradeoff",
+      "primaryConceptId": "economist-policy-role",
+      "secondaryConceptIds": [],
+      "instructionalRole": "easy",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "policy_tradeoff",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "250e4afc5e7bbb398887b2599ca6bbd89dc6f7de24a6010d6719941daa7dab86",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "policy_tradeoff",
+          "routeKey": "policy_tradeoff",
+          "sourceRecordOrder": 2,
+          "sourceId": 7700078,
+          "sourceHash": "250e4afc5e7bbb398887b2599ca6bbd89dc6f7de24a6010d6719941daa7dab86",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "P77-EPOL-H-011",
+    "concept": "economist-policy-role",
+    "fields": [
+      "feedback"
+    ],
+    "before": {
+      "id": "P77-EPOL-H-011",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "A model omits enforcement costs. What should the policy estimate do?",
+      "options": [
+        "Include feasible implementation and administration costs",
+        "Ignore enforcement costs if the policy objective is worthwhile",
+        "Count only the direct statutory cost of the program",
+        "Assume administration uses no scarce resources."
+      ],
+      "tag": "economist policy role",
+      "type": "application",
+      "objective": "GE.7.7",
+      "difficulty": "medium",
+      "conceptCluster": "economist_policy_role",
+      "primarySkill": "policy_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "policy_tradeoff",
+      "commonError": "Confusing statutory design with actual implementation.",
+      "feedback": "Economic analysis clarifies tradeoffs but does not uniquely rank every social goal.",
+      "aHash": "bb399af36a6546e23a3ace1d90e33243419b0ebb73352d9364518751dddd8284",
+      "canonicalId": "P77-EPOL-H-011",
+      "sourceId": 7700086,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "policy_tradeoff",
+      "primaryConceptId": "economist-policy-role",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "policy_tradeoff",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "29395438ec947efadf577a6462e5b93e0caf0b0f524bcbe8e2ecc79c38a8f719",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "policy_tradeoff",
+          "routeKey": "policy_tradeoff",
+          "sourceRecordOrder": 10,
+          "sourceId": 7700086,
+          "sourceHash": "29395438ec947efadf577a6462e5b93e0caf0b0f524bcbe8e2ecc79c38a8f719",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    },
+    "after": {
+      "id": "P77-EPOL-H-011",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "A model omits enforcement costs. What should the policy estimate do?",
+      "options": [
+        "Include feasible implementation and administration costs",
+        "Ignore enforcement costs if the policy objective is worthwhile",
+        "Count only the direct statutory cost of the program",
+        "Assume administration uses no scarce resources."
+      ],
+      "tag": "economist policy role",
+      "type": "application",
+      "objective": "GE.7.7",
+      "difficulty": "medium",
+      "conceptCluster": "economist_policy_role",
+      "primarySkill": "policy_tradeoff",
+      "secondarySkills": [],
+      "repairSkill": "policy_tradeoff",
+      "commonError": "Confusing statutory design with actual implementation.",
+      "feedback": "Enforcement and administration use scarce staff time, equipment and other resources. A feasible policy estimate must include those implementation costs when comparing benefits with costs. Omitting them can overstate net benefits even if the policy’s stated goal is desirable.",
+      "aHash": "bb399af36a6546e23a3ace1d90e33243419b0ebb73352d9364518751dddd8284",
+      "canonicalId": "P77-EPOL-H-011",
+      "sourceId": 7700086,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "policy_tradeoff",
+      "primaryConceptId": "economist-policy-role",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "policy_tradeoff",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "29395438ec947efadf577a6462e5b93e0caf0b0f524bcbe8e2ecc79c38a8f719",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "policy_tradeoff",
+          "routeKey": "policy_tradeoff",
+          "sourceRecordOrder": 10,
+          "sourceId": 7700086,
+          "sourceHash": "29395438ec947efadf577a6462e5b93e0caf0b0f524bcbe8e2ecc79c38a8f719",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "P52B-INC-R-002",
+    "concept": "incentives",
+    "fields": [
+      "q"
+    ],
+    "before": {
+      "id": "P52B-INC-R-002",
+      "q": "Which example is an unintended response to an incentive?",
+      "options": [
+        "A planned result that occurs exactly as policy designers expected",
+        "People respond to a rule in a way that produces an unplanned result",
+        "Evidence that the original rule created no behavioral pressure at all",
+        "A response that every person makes in exactly the same way"
+      ],
+      "tag": "incentives",
+      "type": "application",
+      "objective": "LO1.4",
+      "difficulty": "microRepair",
+      "conceptCluster": "core_principles",
+      "primarySkill": "incentives_unintended_consequences",
+      "secondarySkills": [],
+      "repairSkill": "incentives_unintended_consequences",
+      "commonError": "Treating an unplanned response as proof that no incentive existed.",
+      "feedback": "People can respond to the changed payoff while producing a side effect the designer did not intend.",
+      "aHash": "207eb86bfb4446c3d370a28f9959325aa3ca622a04b2c3e01e45c9e4fb0b11a5",
+      "canonicalId": "P52B-INC-R-002",
+      "sourceId": 5220158,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "repair",
+      "sourceHash": "c7b72b6c6a5c9c1cdfd3e5131b1a47f5004c5c360e4bce4b7792b6ab4d5974ce",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "microSkillRepairPools",
+          "sourcePool": "repair",
+          "routeKey": "incentives_unintended_consequences",
+          "sourceRecordOrder": 157,
+          "sourceId": 5220158,
+          "sourceHash": "c76cd2990b6fb122f99b74fb5e7bb7669f1b5086ece5c13e9848fbf0c8b07f1f"
+        },
+        {
+          "sourceGame": "phase7.4-incentives-standalone-expansion",
+          "sourceFile": "validation_artifacts/incentives_standalone_expansion/incentives_question_changes.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "incentives_unintended_consequences",
+          "sourceRecordOrder": 8,
+          "sourceId": 5220158,
+          "sourceHash": "c7b72b6c6a5c9c1cdfd3e5131b1a47f5004c5c360e4bce4b7792b6ab4d5974ce",
+          "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+        }
+      ],
+      "primaryConceptId": "incentives",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+    },
+    "after": {
+      "id": "P52B-INC-R-002",
+      "q": "Which statement describes an unintended response to an incentive?",
+      "options": [
+        "A planned result that occurs exactly as policy designers expected",
+        "People respond to a rule in a way that produces an unplanned result",
+        "Evidence that the original rule created no behavioral pressure at all",
+        "A response that every person makes in exactly the same way"
+      ],
+      "tag": "incentives",
+      "type": "application",
+      "objective": "LO1.4",
+      "difficulty": "microRepair",
+      "conceptCluster": "core_principles",
+      "primarySkill": "incentives_unintended_consequences",
+      "secondarySkills": [],
+      "repairSkill": "incentives_unintended_consequences",
+      "commonError": "Treating an unplanned response as proof that no incentive existed.",
+      "feedback": "People can respond to the changed payoff while producing a side effect the designer did not intend.",
+      "aHash": "207eb86bfb4446c3d370a28f9959325aa3ca622a04b2c3e01e45c9e4fb0b11a5",
+      "canonicalId": "P52B-INC-R-002",
+      "sourceId": 5220158,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "repair",
+      "sourceHash": "c7b72b6c6a5c9c1cdfd3e5131b1a47f5004c5c360e4bce4b7792b6ab4d5974ce",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "microSkillRepairPools",
+          "sourcePool": "repair",
+          "routeKey": "incentives_unintended_consequences",
+          "sourceRecordOrder": 157,
+          "sourceId": 5220158,
+          "sourceHash": "c76cd2990b6fb122f99b74fb5e7bb7669f1b5086ece5c13e9848fbf0c8b07f1f"
+        },
+        {
+          "sourceGame": "phase7.4-incentives-standalone-expansion",
+          "sourceFile": "validation_artifacts/incentives_standalone_expansion/incentives_question_changes.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "repair",
+          "routeKey": "incentives_unintended_consequences",
+          "sourceRecordOrder": 8,
+          "sourceId": 5220158,
+          "sourceHash": "c7b72b6c6a5c9c1cdfd3e5131b1a47f5004c5c360e4bce4b7792b6ab4d5974ce",
+          "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+        }
+      ],
+      "primaryConceptId": "incentives",
+      "secondaryConceptIds": [],
+      "instructionalRole": "repair",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "repair",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phase7.4-incentives-standalone-expansion-v1"
+    }
+  },
+  {
+    "id": "P52B-INC-B2-002",
+    "concept": "incentives",
+    "fields": [
+      "feedback"
+    ],
+    "before": {
+      "id": "P52B-INC-B2-002",
+      "q": "A fee changes behavior for some people but not others. What is the best explanation?",
+      "options": [
+        "The fee is not an incentive.",
+        "All people have identical marginal benefits.",
+        "People face different constraints, preferences, and alternatives.",
+        "Only laws create incentives."
+      ],
+      "tag": "incentives",
+      "type": "application",
+      "objective": "LO1.4",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "core_principles",
+      "primarySkill": "heterogeneous_incentive_response",
+      "secondarySkills": [],
+      "repairSkill": "heterogeneous_incentive_response",
+      "commonError": "Evaluating incentives without examining margins, metrics, or heterogeneity.",
+      "feedback": "Good incentive analysis asks whose behavior changes, at what margin, and with what side effects.",
+      "aHash": "70e2789d6edd2fdf5a06238b080766cf06950b8cfcd8db39de763bccafb60ac9",
+      "canonicalId": "P52B-INC-B2-002",
+      "sourceId": 5220155,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "bf7aa1f7eda6100e79dcfefd2076953bc7f9669cf0a5e93cc5962487a43b92bd",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 154,
+          "sourceId": 5220155,
+          "sourceHash": "bf7aa1f7eda6100e79dcfefd2076953bc7f9669cf0a5e93cc5962487a43b92bd"
+        }
+      ],
+      "primaryConceptId": "incentives",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "boss": "Checkpoint Two"
+    },
+    "after": {
+      "id": "P52B-INC-B2-002",
+      "q": "A fee changes behavior for some people but not others. What is the best explanation?",
+      "options": [
+        "The fee is not an incentive.",
+        "All people have identical marginal benefits.",
+        "People face different constraints, preferences, and alternatives.",
+        "Only laws create incentives."
+      ],
+      "tag": "incentives",
+      "type": "application",
+      "objective": "LO1.4",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "core_principles",
+      "primarySkill": "heterogeneous_incentive_response",
+      "secondarySkills": [],
+      "repairSkill": "heterogeneous_incentive_response",
+      "commonError": "Evaluating incentives without examining margins, metrics, or heterogeneity.",
+      "feedback": "The same fee can change the relative attractiveness of an action by different amounts for different people. Someone with a close substitute may switch, while someone with few alternatives or a high benefit from the action may continue. An unchanged choice does not mean the fee created no incentive.",
+      "aHash": "70e2789d6edd2fdf5a06238b080766cf06950b8cfcd8db39de763bccafb60ac9",
+      "canonicalId": "P52B-INC-B2-002",
+      "sourceId": 5220155,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "bf7aa1f7eda6100e79dcfefd2076953bc7f9669cf0a5e93cc5962487a43b92bd",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 154,
+          "sourceId": 5220155,
+          "sourceHash": "bf7aa1f7eda6100e79dcfefd2076953bc7f9669cf0a5e93cc5962487a43b92bd"
+        }
+      ],
+      "primaryConceptId": "incentives",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "boss": "Checkpoint Two"
+    }
+  },
+  {
+    "id": "P52B-INC-B2-003",
+    "concept": "incentives",
+    "fields": [
+      "feedback"
+    ],
+    "before": {
+      "id": "P52B-INC-B2-003",
+      "q": "A policy subsidizes an action many people already planned to take. What limits additional impact?",
+      "options": [
+        "Every payment creates an equal new action.",
+        "Subsidies cannot affect behavior.",
+        "The action has no opportunity cost.",
+        "Much of the spending is inframarginal rather than behavior-changing."
+      ],
+      "tag": "incentives",
+      "type": "application",
+      "objective": "LO1.4",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "core_principles",
+      "primarySkill": "marginal_incentive_effect",
+      "secondarySkills": [],
+      "repairSkill": "marginal_incentive_effect",
+      "commonError": "Evaluating incentives without examining margins, metrics, or heterogeneity.",
+      "feedback": "Good incentive analysis asks whose behavior changes, at what margin, and with what side effects.",
+      "aHash": "169a1488188c6486ee4ea432cb203aca044b166db7fcb50b637edaba7f2619ff",
+      "canonicalId": "P52B-INC-B2-003",
+      "sourceId": 5220156,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "44c18e5a9cf0a28b1c8cb996eddecb2197ae07d252294a19a0333ed8ed0bcd6d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 155,
+          "sourceId": 5220156,
+          "sourceHash": "44c18e5a9cf0a28b1c8cb996eddecb2197ae07d252294a19a0333ed8ed0bcd6d"
+        }
+      ],
+      "primaryConceptId": "incentives",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "boss": "Checkpoint Two"
+    },
+    "after": {
+      "id": "P52B-INC-B2-003",
+      "q": "A policy subsidizes an action many people already planned to take. What limits additional impact?",
+      "options": [
+        "Every payment creates an equal new action.",
+        "Subsidies cannot affect behavior.",
+        "The action has no opportunity cost.",
+        "Much of the spending is inframarginal rather than behavior-changing."
+      ],
+      "tag": "incentives",
+      "type": "application",
+      "objective": "LO1.4",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "core_principles",
+      "primarySkill": "marginal_incentive_effect",
+      "secondarySkills": [],
+      "repairSkill": "marginal_incentive_effect",
+      "commonError": "Evaluating incentives without examining margins, metrics, or heterogeneity.",
+      "feedback": "People who would take the action without the subsidy can receive a payment without changing their behavior. Those payments are inframarginal: they support actions already planned rather than inducing additional ones. The policy’s additional impact depends on how many people change their choice because of the subsidy.",
+      "aHash": "169a1488188c6486ee4ea432cb203aca044b166db7fcb50b637edaba7f2619ff",
+      "canonicalId": "P52B-INC-B2-003",
+      "sourceId": 5220156,
+      "sourceGame": "phase5.2b-minimum-coverage-rescue",
+      "sourceChapter": [],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "44c18e5a9cf0a28b1c8cb996eddecb2197ae07d252294a19a0333ed8ed0bcd6d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-minimum-coverage-rescue",
+          "sourceFile": "phase5.2b_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 155,
+          "sourceId": 5220156,
+          "sourceHash": "44c18e5a9cf0a28b1c8cb996eddecb2197ae07d252294a19a0333ed8ed0bcd6d"
+        }
+      ],
+      "primaryConceptId": "incentives",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "boss": "Checkpoint Two"
+    }
+  },
+  {
+    "id": "P62D-ITP-BR-015",
+    "concept": "international-trade-and-trade-policy",
+    "fields": [
+      "options",
+      "feedback"
+    ],
+    "before": {
+      "id": "P62D-ITP-BR-015",
+      "sourceGame": "internationalTradeTradePolicy",
+      "q": "How is a tariff connected to a tax wedge?",
+      "options": [
+        "It creates a gap between the domestic buyer price and the world resource price",
+        "It creates a gap between two domestic currencies",
+        "It makes imports free",
+        "It sets producer surplus to zero"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_price_effect",
+      "secondarySkills": [],
+      "repairSkill": "tariff_price_effect",
+      "commonError": "predicts_tariff_lowers_domestic_price",
+      "feedback": "In the small-country model, the tariff creates a wedge between the world price and the higher domestic price paid and received in the protected market.",
+      "aHash": "d70969feec7834af1a192495416f41bce684be3b830eee75a79bd8e1d396571c",
+      "canonicalId": "P62D-ITP-BR-015",
+      "sourceId": 673114,
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "sourceHash": "9d2be3565107e5bb85fbd2f4ad5aae0ae72893f5278f33548c054ba4127a5000",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.2d-international-trade-and-trade-policy-authoring.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "tariff_price_effect",
+          "sourceRecordOrder": 14,
+          "sourceId": 673114,
+          "sourceHash": "9d2be3565107e5bb85fbd2f4ad5aae0ae72893f5278f33548c054ba4127a5000",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ],
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "tax-wedges-and-revenue"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "tariffs-revenue-deadweight-loss"
+      ],
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+    },
+    "after": {
+      "id": "P62D-ITP-BR-015",
+      "sourceGame": "internationalTradeTradePolicy",
+      "q": "How is a tariff connected to a tax wedge?",
+      "options": [
+        "It creates a gap between the domestic buyer price and the world resource price",
+        "It creates a gap between domestic quantity supplied and domestic quantity demanded, measured as tax per unit.",
+        "It creates a gap between the government’s total tariff receipts and the per-unit price paid for imports.",
+        "It creates a gap between the lower domestic buyer price and the unchanged world price after the tariff."
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.4",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_price_effect",
+      "secondarySkills": [],
+      "repairSkill": "tariff_price_effect",
+      "commonError": "predicts_tariff_lowers_domestic_price",
+      "feedback": "In the small-country importing model, a tariff raises the domestic price above the world price while imports continue. That price difference is the per-unit tax wedge. The import quantity and total tariff revenue are different measures, and the tariff does not lower the domestic buyer price.",
+      "aHash": "d70969feec7834af1a192495416f41bce684be3b830eee75a79bd8e1d396571c",
+      "canonicalId": "P62D-ITP-BR-015",
+      "sourceId": 673114,
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "sourceHash": "9d2be3565107e5bb85fbd2f4ad5aae0ae72893f5278f33548c054ba4127a5000",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.2d-international-trade-and-trade-policy-authoring.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "tariff_price_effect",
+          "sourceRecordOrder": 14,
+          "sourceId": 673114,
+          "sourceHash": "9d2be3565107e5bb85fbd2f4ad5aae0ae72893f5278f33548c054ba4127a5000",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ],
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "tax-wedges-and-revenue"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "tariffs-revenue-deadweight-loss"
+      ],
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+    }
+  },
+  {
+    "id": "PMS-ITP-BR-021",
+    "concept": "international-trade-and-trade-policy",
+    "fields": [
+      "options",
+      "feedback"
+    ],
+    "before": {
+      "id": "PMS-ITP-BR-021",
+      "q": "How does a quota-versus-tariff comparison connect to policy design?",
+      "options": [
+        "Two policies can create similar price and quantity effects but differ in who receives the transfer",
+        "All trade restrictions have identical distributional effects",
+        "Only quotas create deadweight loss",
+        "Tariffs never affect domestic producers"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_quota_comparison",
+      "secondarySkills": [],
+      "repairSkill": "tariff_quota_comparison",
+      "commonError": "assumes_tariff_and_quota_are_always_identical",
+      "feedback": "Policy evaluation must track both efficiency distortions and the destination of rents or revenue.",
+      "aHash": "6f92d80503c5de889b6bf06d0faa94fb7f38d0d72a1f2a249b6818589f7157a6",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "trade-policy-efficiency-distribution"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-BR-021",
+      "sourceId": 6950079,
+      "sourceHash": "f746fdc862954f9bc69a693282d2bfa78a6e2df64398e60c65ca6bfea1c1144d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "tariff_quota_comparison",
+          "sourceRecordOrder": 78,
+          "sourceId": 6950079,
+          "sourceHash": "f746fdc862954f9bc69a693282d2bfa78a6e2df64398e60c65ca6bfea1c1144d"
+        }
+      ]
+    },
+    "after": {
+      "id": "PMS-ITP-BR-021",
+      "q": "How does a quota-versus-tariff comparison connect to policy design?",
+      "options": [
+        "Two policies can create similar price and quantity effects but differ in who receives the transfer",
+        "Two policies with matching price and quantity effects must give their revenue or rents to the same recipients.",
+        "Two policies with matching import quantities must raise equal government revenue, even when quota licenses are given away.",
+        "Two policies can raise the same domestic price, but only the quota distorts domestic production and consumption."
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "bridge",
+      "objective": "ITP.5",
+      "difficulty": "bridge",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "tariff_quota_comparison",
+      "secondarySkills": [],
+      "repairSkill": "tariff_quota_comparison",
+      "commonError": "assumes_tariff_and_quota_are_always_identical",
+      "feedback": "An equivalent tariff and binding quota can produce similar prices and quantities, yet tariff revenue goes to government while quota rents go to the holders of import rights unless those rights are auctioned. Both can distort production and consumption. Policy design must therefore track who receives revenue or rents as well as efficiency effects.",
+      "aHash": "6f92d80503c5de889b6bf06d0faa94fb7f38d0d72a1f2a249b6818589f7157a6",
+      "sourceGame": "micro-concept-library",
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "bridge",
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [
+        "trade-policy-efficiency-distribution"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "bridge",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "import-quotas-quota-rents"
+      ],
+      "canonicalId": "PMS-ITP-BR-021",
+      "sourceId": 6950079,
+      "sourceHash": "f746fdc862954f9bc69a693282d2bfa78a6e2df64398e60c65ca6bfea1c1144d",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phaseMicro3b-adaptive-support-backfill-v1_questions.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "bridge",
+          "routeKey": "tariff_quota_comparison",
+          "sourceRecordOrder": 78,
+          "sourceId": 6950079,
+          "sourceHash": "f746fdc862954f9bc69a693282d2bfa78a6e2df64398e60c65ca6bfea1c1144d"
+        }
+      ]
+    }
+  },
+  {
+    "id": "P62D-ITP-E-029",
+    "concept": "international-trade-and-trade-policy",
+    "fields": [
+      "options",
+      "feedback"
+    ],
+    "before": {
+      "id": "P62D-ITP-E-029",
+      "sourceGame": "internationalTradeTradePolicy",
+      "q": "Why can retaliation make a tariff more costly?",
+      "options": [
+        "Trading partners may restrict the country’s exports, harming additional producers and workers",
+        "Retaliation lowers every domestic price",
+        "Retaliation automatically refunds tariff revenue",
+        "Retaliation guarantees more trade"
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "concept",
+      "objective": "ITP.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "protectionism_arguments",
+      "secondarySkills": [],
+      "repairSkill": "protectionism_arguments",
+      "commonError": "treats_policy_slogan_as_complete_analysis",
+      "feedback": "Retaliation can spread losses to export industries.",
+      "aHash": "8a21134e8c7065c2ee7d365e4df59e5ef39ab24a1acd2275655be1cab41bbe96",
+      "canonicalId": "P62D-ITP-E-029",
+      "sourceId": 670028,
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "easy",
+      "sourceHash": "9302d92e1f81db7b3594d2de85481725edb2fa756ff0bb087cc985c93e93f164",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.2d-international-trade-and-trade-policy-authoring.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "protectionism_arguments",
+          "sourceRecordOrder": 28,
+          "sourceId": 670028,
+          "sourceHash": "9302d92e1f81db7b3594d2de85481725edb2fa756ff0bb087cc985c93e93f164"
+        }
+      ],
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-policy-efficiency-distribution"
+      ]
+    },
+    "after": {
+      "id": "P62D-ITP-E-029",
+      "sourceGame": "internationalTradeTradePolicy",
+      "q": "Why can retaliation make a tariff more costly?",
+      "options": [
+        "Trading partners may restrict the country’s exports, harming additional producers and workers",
+        "Trading partners may tax imports from the country, but the proceeds go into the original country’s treasury.",
+        "Trading partners may tax imports from the country, making its goods cheaper for foreign customers to buy.",
+        "Trading partners may restrict imports from the country, increasing sales opportunities for the country’s exporters."
+      ],
+      "tag": "international_trade_and_trade_policy",
+      "type": "concept",
+      "objective": "ITP.6",
+      "difficulty": "easy",
+      "conceptCluster": "micro_international_trade",
+      "primarySkill": "protectionism_arguments",
+      "secondarySkills": [],
+      "repairSkill": "protectionism_arguments",
+      "commonError": "treats_policy_slogan_as_complete_analysis",
+      "feedback": "Retaliation can restrict sales of the country’s exports in foreign markets. Export producers and their workers can therefore lose business in addition to the costs created by the original tariff.",
+      "aHash": "8a21134e8c7065c2ee7d365e4df59e5ef39ab24a1acd2275655be1cab41bbe96",
+      "canonicalId": "P62D-ITP-E-029",
+      "sourceId": 670028,
+      "sourceChapter": [
+        "international-trade-and-trade-policy"
+      ],
+      "sourcePool": "easy",
+      "sourceHash": "9302d92e1f81db7b3594d2de85481725edb2fa756ff0bb087cc985c93e93f164",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "micro-concept-library",
+          "sourceFile": "phase6.2d-international-trade-and-trade-policy-authoring.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "easy",
+          "routeKey": "protectionism_arguments",
+          "sourceRecordOrder": 28,
+          "sourceId": 670028,
+          "sourceHash": "9302d92e1f81db7b3594d2de85481725edb2fa756ff0bb087cc985c93e93f164"
+        }
+      ],
+      "primaryConceptId": "international-trade-and-trade-policy",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "easy",
+      "originalSourcePool": "easy",
+      "originalBossTier": null,
+      "familyConceptId": "international-trade-and-trade-policy",
+      "subtopicIds": [
+        "trade-policy-efficiency-distribution"
+      ]
+    }
+  },
+  {
+    "id": "P52A-MARG-B2-002",
+    "concept": "marginal-analysis",
+    "fields": [
+      "q",
+      "feedback"
+    ],
+    "before": {
+      "id": "P52A-MARG-B2-002",
+      "q": "A nonrefundable fee has already been paid. It should affect the current decision:",
+      "options": [
+        "Only if some part of it can still be recovered or avoided.",
+        "Only when total benefits are positive.",
+        "Always, because past spending must be recovered.",
+        "Never, even if a refund remains available."
+      ],
+      "tag": "marginal_analysis",
+      "type": "application",
+      "objective": "LO1.3",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "core_principles",
+      "primarySkill": "sunk_cost_avoidance",
+      "repairSkill": "sunk_cost_avoidance",
+      "commonError": "Using a blanket rule without checking whether the cost is truly sunk.",
+      "feedback": "A cost is sunk only when it cannot be recovered or changed.",
+      "aHash": "cd52856ff3b995d78767ebcf164fa964662bb39a4b33558008e280544403e24c",
+      "canonicalId": "P52A-MARG-B2-002",
+      "sourceId": 5200091,
+      "sourceGame": "phase5.2a-concept-expansion",
+      "sourceChapter": [],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "f1f816c5a08123fc535bc88331ce8c0335dc3a48b1ba102b276124f44e135860",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2a-concept-expansion",
+          "sourceFile": "phase5.2a_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 90,
+          "sourceId": 5200091,
+          "sourceHash": "f1f816c5a08123fc535bc88331ce8c0335dc3a48b1ba102b276124f44e135860"
+        }
+      ],
+      "primaryConceptId": "marginal-analysis",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "boss": "Checkpoint Two"
+    },
+    "after": {
+      "id": "P52A-MARG-B2-002",
+      "q": "A fee has already been paid, but its refund terms have not yet been checked. When should it affect the current decision?",
+      "options": [
+        "Only if some part of it can still be recovered or avoided.",
+        "Only when total benefits are positive.",
+        "Always, because past spending must be recovered.",
+        "Never, even if a refund remains available."
+      ],
+      "tag": "marginal_analysis",
+      "type": "application",
+      "objective": "LO1.3",
+      "difficulty": "mediumBoss",
+      "conceptCluster": "core_principles",
+      "primarySkill": "sunk_cost_avoidance",
+      "repairSkill": "sunk_cost_avoidance",
+      "commonError": "Using a blanket rule without checking whether the cost is truly sunk.",
+      "feedback": "Check whether the current choice changes how much of the fee can be recovered. A refund available under one choice but not another is relevant; a payment that cannot be recovered or changed is sunk. Having paid the fee does not by itself establish that it is irrelevant, and a desire to recover past spending is not a marginal benefit.",
+      "aHash": "cd52856ff3b995d78767ebcf164fa964662bb39a4b33558008e280544403e24c",
+      "canonicalId": "P52A-MARG-B2-002",
+      "sourceId": 5200091,
+      "sourceGame": "phase5.2a-concept-expansion",
+      "sourceChapter": [],
+      "sourcePool": "mediumBoss",
+      "sourceHash": "f1f816c5a08123fc535bc88331ce8c0335dc3a48b1ba102b276124f44e135860",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2a-concept-expansion",
+          "sourceFile": "phase5.2a_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "mediumBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 90,
+          "sourceId": 5200091,
+          "sourceHash": "f1f816c5a08123fc535bc88331ce8c0335dc3a48b1ba102b276124f44e135860"
+        }
+      ],
+      "primaryConceptId": "marginal-analysis",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "medium",
+      "originalSourcePool": "mediumBoss",
+      "originalBossTier": "mediumBoss",
+      "boss": "Checkpoint Two"
+    }
+  },
+  {
+    "id": "P77-MVM-BR-042",
+    "concept": "micro-versus-macro",
+    "fields": [
+      "feedback"
+    ],
+    "before": {
+      "id": "P77-MVM-BR-042",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "A soda tax prediction concerns sales, while a recommendation concerns national health. How should these two claims be distinguished?",
+      "options": [
+        "Call both claims macro because policy is involved",
+        "Call both claims normative because health matters",
+        "Ignore the product-market response",
+        "Separate the analysis level from the value judgment"
+      ],
+      "tag": "micro versus macro",
+      "type": "bridge",
+      "objective": "GE.7.7",
+      "difficulty": "microBridge",
+      "conceptCluster": "micro_versus_macro",
+      "primarySkill": "both_levels",
+      "secondarySkills": [],
+      "repairSkill": "both_levels",
+      "commonError": "confuses_policy_analysis_with_policy_preference",
+      "feedback": "One event can require both market-level and economy-wide analysis.",
+      "aHash": "03fb7b415102c8810d80d7d14f4987fd4a7de258c65c61c9a78fc58935d42da6",
+      "canonicalId": "P77-MVM-BR-042",
+      "sourceId": 7700040,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "both_levels",
+      "primaryConceptId": "micro-versus-macro",
+      "secondaryConceptIds": [
+        "positive-versus-normative-analysis"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "both_levels",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "091e44aadba390da373011873a02c06c0e517bead2c98b3c3f3ca4fa4f92cb5f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "microSkillBridgePools",
+          "sourcePool": "both_levels",
+          "routeKey": "both_levels",
+          "sourceRecordOrder": 41,
+          "sourceId": 7700040,
+          "sourceHash": "091e44aadba390da373011873a02c06c0e517bead2c98b3c3f3ca4fa4f92cb5f",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    },
+    "after": {
+      "id": "P77-MVM-BR-042",
+      "sourceGame": "general-economics-final-maturation",
+      "q": "A soda tax prediction concerns sales, while a recommendation concerns national health. How should these two claims be distinguished?",
+      "options": [
+        "Call both claims macro because policy is involved",
+        "Call both claims normative because health matters",
+        "Ignore the product-market response",
+        "Separate the analysis level from the value judgment"
+      ],
+      "tag": "micro versus macro",
+      "type": "bridge",
+      "objective": "GE.7.7",
+      "difficulty": "microBridge",
+      "conceptCluster": "micro_versus_macro",
+      "primarySkill": "both_levels",
+      "secondarySkills": [],
+      "repairSkill": "both_levels",
+      "commonError": "confuses_policy_analysis_with_policy_preference",
+      "feedback": "A prediction about soda sales is a testable claim about a particular product market. A recommendation about national health includes a judgment about desired outcomes and policy tradeoffs. Micro-versus-macro scope and positive-versus-normative reasoning are separate distinctions; a national policy recommendation does not make every underlying claim macroeconomic or normative.",
+      "aHash": "03fb7b415102c8810d80d7d14f4987fd4a7de258c65c61c9a78fc58935d42da6",
+      "canonicalId": "P77-MVM-BR-042",
+      "sourceId": 7700040,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "both_levels",
+      "primaryConceptId": "micro-versus-macro",
+      "secondaryConceptIds": [
+        "positive-versus-normative-analysis"
+      ],
+      "instructionalRole": "bridge",
+      "canonicalDifficulty": "unknown",
+      "originalSourcePool": "both_levels",
+      "originalBossTier": null,
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "091e44aadba390da373011873a02c06c0e517bead2c98b3c3f3ca4fa4f92cb5f",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "general-economics-final-maturation",
+          "sourceFile": "GENERAL_ECONOMICS_QUESTION_CHANGES.json",
+          "sourceGlobal": "microSkillBridgePools",
+          "sourcePool": "both_levels",
+          "routeKey": "both_levels",
+          "sourceRecordOrder": 41,
+          "sourceId": 7700040,
+          "sourceHash": "091e44aadba390da373011873a02c06c0e517bead2c98b3c3f3ca4fa4f92cb5f",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "40005",
+    "concept": "production-possibilities-frontier",
+    "fields": [
+      "options"
+    ],
+    "before": {
+      "id": "40005",
+      "sourceGame": "market-gate",
+      "q": "Refer to the graph. After the shift from PPF0 to PPF1, production remains at B. Which statement combines the capacity change with the observed production choice?",
+      "options": [
+        "PPF1 determines society's preferred output combination without preference information",
+        "Capacity expanded, but unchanged B is now inside the new frontier; higher welfare is not established by the shift alone",
+        "B remains efficient because it was efficient on PPF0",
+        "The unchanged output proves the outward shift cannot represent added capacity"
+      ],
+      "image": "question-assets/production-possibilities-frontier/PPF-02.webp",
+      "imageAlt": "Burgers are on the horizontal axis and fries on the vertical axis. Bowed PPF0 includes A at 10 burgers and 120 fries and B at 30 burgers and 80 fries. Dashed PPF1 lies outside PPF0, reaching about 150 fries at zero burgers and 60 burgers at zero fries.",
+      "graphRequired": true,
+      "tag": "ppf_growth",
+      "type": "graph_trap",
+      "objective": "LO2.2",
+      "difficulty": "legendary",
+      "conceptCluster": "phase2a_graph_reasoning",
+      "primarySkill": "ppf_growth",
+      "secondarySkills": [],
+      "repairSkill": "ppf_growth",
+      "commonError": "misreads_graph_relationship",
+      "feedback": "The outward frontier makes more output feasible and places the old B inside the new boundary. A capacity change alone does not show that production adjusted or establish a welfare ranking.",
+      "sourceCurationPhase": "phaseQH5-foundations-curation-graph-evidence-v1",
+      "aHash": "05d4a94ca8ccf96471826c5ebb225f35ea1e5af3f940f367b7acdc05b997f0c8",
+      "graphDescription": "Burgers are on the horizontal axis and fries on the vertical axis. Bowed PPF0 includes A at 10 burgers and 120 fries and B at 30 burgers and 80 fries. Dashed PPF1 lies outside PPF0, reaching about 150 fries at zero burgers and 60 burgers at zero fries.",
+      "canonicalId": "40005",
+      "sourceId": 40005,
+      "sourceChapter": [
+        2,
+        2
+      ],
+      "sourcePool": "legendary",
+      "sourceHash": "3bb20457a5508f1c631ec02636a958aaa7adb06572dad3ec9ec075e2bbe923b8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "market-gate",
+          "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendary",
+          "routeKey": null,
+          "sourceRecordOrder": 0,
+          "sourceId": 40005,
+          "sourceHash": "3bb20457a5508f1c631ec02636a958aaa7adb06572dad3ec9ec075e2bbe923b8",
+          "sourceCurationPhase": "phaseQH5-foundations-curation-graph-evidence-v1"
+        }
+      ],
+      "primaryConceptId": "production-possibilities-frontier",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null
+    },
+    "after": {
+      "id": "40005",
+      "sourceGame": "market-gate",
+      "q": "Refer to the graph. After the shift from PPF0 to PPF1, production remains at B. Which statement combines the capacity change with the observed production choice?",
+      "options": [
+        "Capacity expanded, and PPF1 identifies the preferred output combination; unchanged production at B therefore establishes that welfare has increased.",
+        "Capacity expanded, but unchanged B is now inside the new frontier; higher welfare is not established by the shift alone",
+        "Capacity expanded, but unchanged B remains on the efficient frontier; its earlier efficiency establishes that resources are still fully employed.",
+        "Capacity stayed unchanged because production remains at B; the shift to PPF1 changes the selected output mix rather than the feasible set."
+      ],
+      "image": "question-assets/production-possibilities-frontier/PPF-02.webp",
+      "imageAlt": "Burgers are on the horizontal axis and fries on the vertical axis. Bowed PPF0 includes A at 10 burgers and 120 fries and B at 30 burgers and 80 fries. Dashed PPF1 lies outside PPF0, reaching about 150 fries at zero burgers and 60 burgers at zero fries.",
+      "graphRequired": true,
+      "tag": "ppf_growth",
+      "type": "graph_trap",
+      "objective": "LO2.2",
+      "difficulty": "legendary",
+      "conceptCluster": "phase2a_graph_reasoning",
+      "primarySkill": "ppf_growth",
+      "secondarySkills": [],
+      "repairSkill": "ppf_growth",
+      "commonError": "misreads_graph_relationship",
+      "feedback": "The outward frontier makes more output feasible and places the old B inside the new boundary. A capacity change alone does not show that production adjusted or establish a welfare ranking.",
+      "sourceCurationPhase": "phaseQH5-foundations-curation-graph-evidence-v1",
+      "aHash": "05d4a94ca8ccf96471826c5ebb225f35ea1e5af3f940f367b7acdc05b997f0c8",
+      "graphDescription": "Burgers are on the horizontal axis and fries on the vertical axis. Bowed PPF0 includes A at 10 burgers and 120 fries and B at 30 burgers and 80 fries. Dashed PPF1 lies outside PPF0, reaching about 150 fries at zero burgers and 60 burgers at zero fries.",
+      "canonicalId": "40005",
+      "sourceId": 40005,
+      "sourceChapter": [
+        2,
+        2
+      ],
+      "sourcePool": "legendary",
+      "sourceHash": "3bb20457a5508f1c631ec02636a958aaa7adb06572dad3ec9ec075e2bbe923b8",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "market-gate",
+          "sourceFile": "play/economic-realm/market-gate/market_gate_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "legendary",
+          "routeKey": null,
+          "sourceRecordOrder": 0,
+          "sourceId": 40005,
+          "sourceHash": "3bb20457a5508f1c631ec02636a958aaa7adb06572dad3ec9ec075e2bbe923b8",
+          "sourceCurationPhase": "phaseQH5-foundations-curation-graph-evidence-v1"
+        }
+      ],
+      "primaryConceptId": "production-possibilities-frontier",
+      "secondaryConceptIds": [],
+      "instructionalRole": "main",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null
+    }
+  },
+  {
+    "id": "P52B-S2-SUP-B3-003",
+    "concept": "supply",
+    "fields": [
+      "options",
+      "feedback"
+    ],
+    "before": {
+      "id": "P52B-S2-SUP-B3-003",
+      "q": "Technology improves while the expected future selling price rises sharply and firms store current output. What is the strongest conclusion about current supply?",
+      "options": [
+        "Current supply increases if the technology effect exceeds the inventory-withholding effect.",
+        "The net direction is ambiguous without knowing the strength of each effect.",
+        "Current supply decreases if the inventory-withholding effect exceeds the technology effect.",
+        "Quantity supplied moves along one curve because both events change the product's current price."
+      ],
+      "tag": "supply",
+      "type": "multi-step",
+      "objective": "LO4.3",
+      "difficulty": "finalBoss",
+      "conceptCluster": "supply_demand",
+      "primarySkill": "multiple_supply_shifters",
+      "secondarySkills": [],
+      "repairSkill": "multiple_supply_shifters",
+      "commonError": "Declaring a net shift when opposing determinants are not quantified.",
+      "feedback": "Better technology shifts supply right, while withholding output for future sale shifts current supply left.",
+      "aHash": "2b2bd7abec9cfa01b43c767e4d65b2774999a4c99fa623bbf13cde9811ae70d4",
+      "canonicalId": "P52B-S2-SUP-B3-003",
+      "sourceId": 5220213,
+      "sourceGame": "phase5.2b-stage2-rescue",
+      "sourceChapter": [],
+      "sourcePool": "finalBoss",
+      "sourceHash": "e31257d3c804668e2d16c3a324ababb130c34dd6ce6c43d895910b54f95b0952",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-stage2-rescue",
+          "sourceFile": "phase5.2b_stage2_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 17,
+          "sourceId": 5220213,
+          "sourceHash": "e31257d3c804668e2d16c3a324ababb130c34dd6ce6c43d895910b54f95b0952",
+          "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+        }
+      ],
+      "primaryConceptId": "supply",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss",
+      "boss": "Final Checkpoint",
+      "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+    },
+    "after": {
+      "id": "P52B-S2-SUP-B3-003",
+      "q": "Technology improves while the expected future selling price rises sharply and firms store current output. What is the strongest conclusion about current supply?",
+      "options": [
+        "Current supply increases because improved technology and storing output for future sale both add to current market supply.",
+        "The net direction is ambiguous without knowing the strength of each effect.",
+        "Current supply decreases because the expected future price rises sharply, which establishes that withholding outweighs the technology improvement.",
+        "Quantity supplied moves along one curve because both events change the product's current price."
+      ],
+      "tag": "supply",
+      "type": "multi-step",
+      "objective": "LO4.3",
+      "difficulty": "finalBoss",
+      "conceptCluster": "supply_demand",
+      "primarySkill": "multiple_supply_shifters",
+      "secondarySkills": [],
+      "repairSkill": "multiple_supply_shifters",
+      "commonError": "Declaring a net shift when opposing determinants are not quantified.",
+      "feedback": "Better technology increases current supply, while withholding output for a higher expected future price reduces current supply. The word “sharply” does not quantify the withholding effect relative to the technology effect, so the net direction remains uncertain. Neither determinant is a change in the product’s current price along a fixed curve.",
+      "aHash": "2b2bd7abec9cfa01b43c767e4d65b2774999a4c99fa623bbf13cde9811ae70d4",
+      "canonicalId": "P52B-S2-SUP-B3-003",
+      "sourceId": 5220213,
+      "sourceGame": "phase5.2b-stage2-rescue",
+      "sourceChapter": [],
+      "sourcePool": "finalBoss",
+      "sourceHash": "e31257d3c804668e2d16c3a324ababb130c34dd6ce6c43d895910b54f95b0952",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase5.2b-stage2-rescue",
+          "sourceFile": "phase5.2b_stage2_authoring_questions.json",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 17,
+          "sourceId": 5220213,
+          "sourceHash": "e31257d3c804668e2d16c3a324ababb130c34dd6ce6c43d895910b54f95b0952",
+          "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+        }
+      ],
+      "primaryConceptId": "supply",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss",
+      "boss": "Final Checkpoint",
+      "sourceCurationPhase": "phaseQH4-supply-demand-equilibrium-audit-remediation-v1"
+    }
+  },
+  {
+    "id": "ECON-MG-FINALBOSS-4012",
+    "concept": "tax-incidence",
+    "fields": [
+      "options"
+    ],
+    "before": {
+      "id": "ECON-MG-FINALBOSS-4012",
+      "q": "Supply is much less elastic than demand. A tax is imposed. What is the likely result?",
+      "options": [
+        "Sellers bear more of the burden because quantity supplied is less responsive",
+        "Buyers bear more of the burden because demand is more elastic",
+        "The burden must be equal because the tax wedge is fixed",
+        "Buyers and sellers split the burden equally because the tax amount is fixed"
+      ],
+      "tag": "tax_incidence",
+      "type": "trap",
+      "objective": "LO6.5",
+      "difficulty": "finalBoss",
+      "conceptCluster": "government_policy",
+      "primarySkill": "inelastic_supply_tax_burden",
+      "secondarySkills": [
+        "elasticity",
+        "tax_incidence"
+      ],
+      "repairSkill": "tax_wedge_incidence",
+      "commonError": "assigns_burden_to_more_elastic_side",
+      "feedback": "The less elastic side bears more of the tax. If supply is less elastic than demand, sellers bear more of the burden.",
+      "aHash": "7c978acfb08113e4ce11f03ba84fd11486867142c74c846395919dc7f025ac39",
+      "canonicalId": "ECON-MG-FINALBOSS-4012",
+      "sourceId": 4012,
+      "sourceGame": "market-gate",
+      "sourceChapter": [
+        6
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "97f4d13caa2a55cf3c3c13697402eb2ea902708b7695279aa97b577dd1ca02be",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "market-gate",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\market-gate\\market_gate_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 12,
+          "sourceId": 4012,
+          "sourceHash": "97f4d13caa2a55cf3c3c13697402eb2ea902708b7695279aa97b577dd1ca02be"
+        }
+      ],
+      "primaryConceptId": "tax-incidence",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss"
+    },
+    "after": {
+      "id": "ECON-MG-FINALBOSS-4012",
+      "q": "Supply is much less elastic than demand. A tax is imposed. What is the likely result?",
+      "options": [
+        "Sellers bear more of the burden because quantity supplied is less responsive",
+        "Buyers bear more of the burden because demand is more elastic",
+        "The burden must be equal because the tax wedge is fixed",
+        "The side required to remit the tax bears more because statutory payment determines the economic burden"
+      ],
+      "tag": "tax_incidence",
+      "type": "trap",
+      "objective": "LO6.5",
+      "difficulty": "finalBoss",
+      "conceptCluster": "government_policy",
+      "primarySkill": "inelastic_supply_tax_burden",
+      "secondarySkills": [
+        "elasticity",
+        "tax_incidence"
+      ],
+      "repairSkill": "tax_wedge_incidence",
+      "commonError": "assigns_burden_to_more_elastic_side",
+      "feedback": "The less elastic side bears more of the tax. If supply is less elastic than demand, sellers bear more of the burden.",
+      "aHash": "7c978acfb08113e4ce11f03ba84fd11486867142c74c846395919dc7f025ac39",
+      "canonicalId": "ECON-MG-FINALBOSS-4012",
+      "sourceId": 4012,
+      "sourceGame": "market-gate",
+      "sourceChapter": [
+        6
+      ],
+      "sourcePool": "finalBoss",
+      "sourceHash": "97f4d13caa2a55cf3c3c13697402eb2ea902708b7695279aa97b577dd1ca02be",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "market-gate",
+          "sourceFile": "C:\\Users\\Jennings\\Desktop\\Mastery Quests\\phase4-production\\phase4.2-economic-realm-deployment-bundles\\market-gate\\market_gate_questions_student.js",
+          "sourceGlobal": "questionBanks",
+          "sourcePool": "finalBoss",
+          "routeKey": null,
+          "sourceRecordOrder": 12,
+          "sourceId": 4012,
+          "sourceHash": "97f4d13caa2a55cf3c3c13697402eb2ea902708b7695279aa97b577dd1ca02be"
+        }
+      ],
+      "primaryConceptId": "tax-incidence",
+      "secondaryConceptIds": [],
+      "instructionalRole": "boss",
+      "canonicalDifficulty": "hard",
+      "originalSourcePool": "finalBoss",
+      "originalBossTier": "finalBoss"
+    }
+  },
+  {
+    "id": "P75-TRADE-L-016",
+    "concept": "gains-from-trade",
+    "fields": [
+      "tradeMath"
+    ],
+    "before": {
+      "id": "P75-TRADE-L-016",
+      "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+      "q": "Specialization creates a gross gain of 24 units of a common consumption good. Shipping uses 5 units and verification uses 7. The proposed division gives one party 15 units of gross gain and assigns it both costs. Does that party gain, and what net gain remains for the other?",
+      "options": [
+        "Yes, it gains 3 units; the other gains 9",
+        "Yes, it gains 15 units; the other gains 9",
+        "No, it loses 12 units; the other gains 24",
+        "Yes, both gain 12 units"
+      ],
+      "tag": "comparative advantage",
+      "type": "calculation",
+      "objective": "LO1.5",
+      "difficulty": "legendary",
+      "conceptCluster": "comparative_advantage_and_trade",
+      "primarySkill": "transaction_cost_net_gain",
+      "secondarySkills": [],
+      "repairSkill": "transaction_cost_net_gain",
+      "commonError": "Ignoring transaction and transport costs.",
+      "feedback": "Net total gain is 24 - 5 - 7 = 12. The cost-paying party gains 15 - 12 = 3; the other receives the remaining gross 9 and pays no cost.",
+      "aHash": "577c665fdfc1ddf8323c81d99c8903f31a35cbf5c8de281fdf88c210c621fd9e",
+      "canonicalId": "P75-TRADE-L-016",
+      "sourceId": 7500022,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "gains-from-trade",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "tradeDepthCategory": "NUMERICAL_GAIN_ONE_PARTY",
+      "tradeMath": {
+        "kind": "net",
+        "gross": [
+          18,
+          1
+        ],
+        "cost": [
+          7,
+          1
+        ],
+        "expected": [
+          11,
+          1
+        ]
+      },
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "4d0ff3587e3a2f033995479aeb2300b2a374d11920822e8154d548a1f19ec1db",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+          "sourceFile": "validation_artifacts/comparative_advantage_gains_trade_standalone_expansion/comparative_advantage_question_changes.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "legendary",
+          "routeKey": "transaction_cost_net_gain",
+          "sourceRecordOrder": 21,
+          "sourceId": 7500022,
+          "sourceHash": "4d0ff3587e3a2f033995479aeb2300b2a374d11920822e8154d548a1f19ec1db",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    },
+    "after": {
+      "id": "P75-TRADE-L-016",
+      "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+      "q": "Specialization creates a gross gain of 24 units of a common consumption good. Shipping uses 5 units and verification uses 7. The proposed division gives one party 15 units of gross gain and assigns it both costs. Does that party gain, and what net gain remains for the other?",
+      "options": [
+        "Yes, it gains 3 units; the other gains 9",
+        "Yes, it gains 15 units; the other gains 9",
+        "No, it loses 12 units; the other gains 24",
+        "Yes, both gain 12 units"
+      ],
+      "tag": "comparative advantage",
+      "type": "calculation",
+      "objective": "LO1.5",
+      "difficulty": "legendary",
+      "conceptCluster": "comparative_advantage_and_trade",
+      "primarySkill": "transaction_cost_net_gain",
+      "secondarySkills": [],
+      "repairSkill": "transaction_cost_net_gain",
+      "commonError": "Ignoring transaction and transport costs.",
+      "feedback": "Net total gain is 24 - 5 - 7 = 12. The cost-paying party gains 15 - 12 = 3; the other receives the remaining gross 9 and pays no cost.",
+      "aHash": "577c665fdfc1ddf8323c81d99c8903f31a35cbf5c8de281fdf88c210c621fd9e",
+      "canonicalId": "P75-TRADE-L-016",
+      "sourceId": 7500022,
+      "sourceChapter": [
+        1
+      ],
+      "sourcePool": "legendary",
+      "primaryConceptId": "gains-from-trade",
+      "secondaryConceptIds": [],
+      "instructionalRole": "legendary",
+      "canonicalDifficulty": "legendary",
+      "originalSourcePool": "legendary",
+      "originalBossTier": null,
+      "tradeDepthCategory": "NUMERICAL_GAIN_ONE_PARTY",
+      "tradeMath": {
+        "kind": "net",
+        "gross": [
+          24,
+          1
+        ],
+        "cost": [
+          12,
+          1
+        ],
+        "expected": [
+          12,
+          1
+        ]
+      },
+      "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1",
+      "sourceHash": "4d0ff3587e3a2f033995479aeb2300b2a374d11920822e8154d548a1f19ec1db",
+      "sourceOccurrences": [
+        {
+          "sourceGame": "phase7.5-comparative-advantage-gains-trade-standalone-expansion",
+          "sourceFile": "validation_artifacts/comparative_advantage_gains_trade_standalone_expansion/comparative_advantage_question_changes.json",
+          "sourceGlobal": "questions",
+          "sourcePool": "legendary",
+          "routeKey": "transaction_cost_net_gain",
+          "sourceRecordOrder": 21,
+          "sourceId": 7500022,
+          "sourceHash": "4d0ff3587e3a2f033995479aeb2300b2a374d11920822e8154d548a1f19ec1db",
+          "sourceCurationPhase": "phaseQH7-principles-micro-human-read-curation-v1"
+        }
+      ]
+    }
+  }
+]

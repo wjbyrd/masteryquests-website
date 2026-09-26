@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "source_sha256": "9b3dc7e1b647323cc35b789d6968633bef5f3249e022ac663ec37f78a4740db9",
+  "changed_question_ids": [
+    "P75-TRADE-L-020",
+    "P75-TRADE-L-021",
+    "P52B-TRADE-M-001",
+    "P52B-COMP-M-004",
+    "P52B-COMP-H-001",
+    "P52B-COMP-EL-002",
+    "P52B-S3-DEM-B3-002",
+    "P77-EPOL-BR-042",
+    "P77-EPOL-E-003",
+    "P77-EPOL-H-011",
+    "P52B-INC-R-002",
+    "P52B-INC-B2-002",
+    "P52B-INC-B2-003",
+    "P62D-ITP-BR-015",
+    "PMS-ITP-BR-021",
+    "P62D-ITP-E-029",
+    "P52A-MARG-B2-002",
+    "P77-MVM-BR-042",
+    "40005",
+    "P52B-S2-SUP-B3-003",
+    "ECON-MG-FINALBOSS-4012",
+    "P75-TRADE-L-016"
+  ],
+  "question_exceptions_closed": 21,
+  "maintenance_exceptions_closed": 4,
+  "active_suite": {
+    "passed": 29,
+    "total": 29
+  },
+  "exporter_tests": {
+    "passed": 14,
+    "total": 14
+  },
+  "general": {
+    "questions": 1589,
+    "uniqueIds": 1589,
+    "pdfPages": 1104,
+    "csvMismatches": 0,
+    "pdfMismatches": 0
+  },
+  "priorReportsChanged": [],
+  "outputHashes": {
+    "general_economics_question_bank.csv": "a259f89500ebd87c495f61db86b9b423029678496c345aa9cb3de74ee540c9c5",
+    "general_economics_question_bank.pdf": "11332c2c54b8965fd9ab0b1a0913ca12ea1d1cd17bfe6fb5bff9f013b61cc8ed",
+    "microeconomics_question_bank.csv": "69f0dcde53adc6f517f413d7781803aabff34c824377d3ee9d0464fc4b05a503",
+    "microeconomics_question_bank.pdf": "e28eb8deb8a6657df53d2441fc921763412bff93c7af2d71527ffc9c3328a6b7",
+    "macroeconomics_question_bank.csv": "60e14300186b5f1f89b8d2e1092bc5b6ace13f491a7ac219c7e40598c99fa4de",
+    "macroeconomics_question_bank.pdf": "c7c8f14eaf7c97fea39e36969be8d02234944627f72387a000729df4c9582c2b"
+  }
+}

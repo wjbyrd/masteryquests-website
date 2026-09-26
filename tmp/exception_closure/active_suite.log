@@ -1,0 +1,147 @@
+PASS run_faculty_outcome_validation.js
+PASS run_content_scope_validation.js
+PASS run_default_character_set_validation.js
+PASS run_exam_navigation_boss_reveal_validation.js
+PASS run_checkpoint_artifact_exam_integrity_validation.js
+PASS run_guide_intro_validation.js
+PASS run_phase1_targeted_repair_validation.js
+PASS run_phase15_production_hardening_validation.js
+PASS run_visibility_aware_telemetry_validation.js
+PASS run_generated_telemetry_smoke.js
+PASS run_phase3a_official_theme_validation.js
+PASS run_phase3b_custom_asset_validation.js
+FAIL run_phase3e_graph_question_sync_validation.mjs
+{
+  "phase": "phase3e-market-gate-graph-sync-v1",
+  "ok": false,
+  "composerVersion": "4.5s.3k",
+  "recipeSchemaVersion": "1.6.0",
+  "canonicalQuestionCount": 9779,
+  "synchronizedQuestions": 48,
+  "difficulty": {
+    "medium": 7,
+    "hard": 16,
+    "elite": 20,
+    "legendary": 5
+  },
+  "types": {
+    "graph_calculation": 11,
+    "graph_interpretation": 10,
+    "graph_integration": 17,
+    "graph_trap": 10
+  },
+  "conceptIds": [
+    "production-possibilities-frontier",
+    "supply",
+    "demand",
+    "market-equilibrium",
+    "binding-price-ceilings",
+    "binding-price-floors",
+    "tax-wedges-and-revenue",
+    "tax-incidence",
+    "statutory-versus-economic-tax-incidence"
+  ],
+  "phaseAssetRegistrations": 21,
+  "physicalAssetsCopied": 0,
+  "cleanedGraphs": 11,
+  "generatedBytes": 7532344,
+  "inlineScripts": 1,
+  "generatedArtifact": "C:\\Users\\Jennings\\AppData\\Local\\Temp\\mq-active-composer-tests-BUAi0O\\tests\\phase3e-market-gate-sample.html",
+  "modes": [
+    {
+      "mode": "standard",
+      "ok": true
+    },
+    {
+      "mode": "timed",
+      "ok": true
+    },
+    {
+      "mode": "exam",
+      "ok": true
+    },
+    {
+      "mode": "quiz",
+      "ok": true
+    },
+    {
+      "mode": "unlimited",
+      "ok": true
+    },
+    {
+      "mode": "legendary",
+      "ok": true
+    },
+    {
+      "mode": "score",
+      "ok": true
+    },
+    {
+      "mode": "trialGraph",
+      "ok": true
+    },
+    {
+      "mode": "fadingFortune",
+      "ok": true
+    },
+    {
+      "mode": "riskReward",
+      "ok": true
+    }
+  ],
+  "issues": [
+    "Alignment baseline 40026: q",
+    "Alignment baseline 40026: options",
+    "Alignment baseline 40026: feedback",
+    "Alignment baseline 40026: aHash",
+    "Alignment baseline 40032: q",
+    "Alignment baseline 40032: options",
+    "Alignment baseline 40032: feedback",
+    "Alignment baseline 40032: aHash"
+  ]
+}
+FAIL run_question_quality_auditor_validation.mjs
+C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\composer-audit-contracts.js:67
+    ...approved.ledger.qualityFindings.filter(finding => selected.has(String(finding.questionId)))];
+                                       ^
+
+TypeError: Cannot read properties of undefined (reading 'filter')
+    at assertAuditedFindings (C:\Users\Jennings\Documents\GitHub\masteryquests-website\build\faculty-build-composer\tests\composer-audit-contracts.js:67:40)
+    at file:///C:/Users/Jennings/Documents/GitHub/masteryquests-website/build/faculty-build-composer/tests/run_question_quality_auditor_validation.mjs:65:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.19.0
+PASS run_macro_phase2_taxonomy_validation.mjs
+PASS run_checkpoint_remediation_design_change_validation.mjs
+PASS run_legendary_final_checkpoint_validation.mjs
+PASS run_question_bank_comprehensive_validation.mjs
+PASS run_concept_review_integration.js
+PASS run_mastery_report_concept_reviews.js
+PASS run_mastery_report_2_validation.js
+PASS run_mastery_report_state_leak_hotfix.js
+PASS run_mode_availability_fix.js
+PASS run_quiz_mode_validation.js
+PASS run_unlimited_practice_validation.js
+PASS run_trial_by_graph_validation.js
+PASS run_fading_fortune_validation.js
+PASS run_risk_reward_validation.js
+PASS run_risk_reward_state_validation.js
+{
+  "ok": false,
+  "total": 29,
+  "passed": 27,
+  "failed": [
+    {
+      "runner": "run_phase3e_graph_question_sync_validation.mjs",
+      "passed": false,
+      "durationMs": 2200
+    },
+    {
+      "runner": "run_question_quality_auditor_validation.mjs",
+      "passed": false,
+      "durationMs": 2873
+    }
+  ]
+}

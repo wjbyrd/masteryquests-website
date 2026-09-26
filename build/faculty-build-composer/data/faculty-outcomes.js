@@ -13315,7 +13315,6 @@
             "buyer_price",
             "buyer_tax_burden_calculation",
             "elasticity_tax_quantity_burden",
-            "quantity_response",
             "seller_price",
             "seller_tax_burden_calculation",
             "tax_burden_calculation",
