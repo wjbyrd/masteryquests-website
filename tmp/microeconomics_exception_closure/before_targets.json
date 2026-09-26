@@ -1,0 +1,168 @@
+[
+  {
+    "id": "P62B-ELAS-B3-019",
+    "q": "Use the two labeled points on vertical D2. A student correctly computes zero midpoint demand elasticity, then concludes that total revenue is unchanged between the points. Which diagnosis is correct?",
+    "options": [
+      "Zero quantity change gives zero elasticity, but the higher-price point has higher revenue because the same positive quantity sells at a higher price.",
+      "Zero elasticity also means zero price change, so equal revenue follows.",
+      "Zero elasticity means quantity rises enough to offset the price rise, so equal revenue follows.",
+      "A vertical demand curve has infinite elasticity, so the midpoint calculation must be reversed."
+    ],
+    "tag": "elasticity",
+    "type": "integration",
+    "objective": "ELAS.2",
+    "difficulty": "finalBoss",
+    "conceptCluster": "elasticity",
+    "primarySkill": "midpoint_formula",
+    "secondarySkills": [],
+    "repairSkill": "midpoint_formula",
+    "commonError": "misreads_elasticity_graph",
+    "feedback": "For vertical D2, quantity is unchanged while price differs. The midpoint quantity-change numerator is zero. Revenue is P×Q, so with a positive fixed Q the higher price produces higher revenue.",
+    "aHash": "ecd60e328586d8f82d7c6edcbb28bb2bd5f5091337c9343544989bb92d3c113e",
+    "canonicalId": "P62B-ELAS-B3-019",
+    "sourceId": 715037,
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "elasticity"
+    ],
+    "sourcePool": "finalBoss",
+    "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2b-elasticity-graph-expansion-v2",
+        "sourceGlobal": "questions",
+        "sourcePool": "finalBoss",
+        "routeKey": "perfectly_elastic_inelastic",
+        "sourceRecordOrder": 37,
+        "sourceId": 715037,
+        "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7"
+      },
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+        "sourceGlobal": "targetedRepairs",
+        "sourcePool": "boss",
+        "routeKey": "perfectly_elastic_inelastic",
+        "sourceRecordOrder": 80,
+        "sourceId": 715037,
+        "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7",
+        "changeType": "REMOVE_GRAPH"
+      }
+    ],
+    "primaryConceptId": "elasticity",
+    "secondaryConceptIds": [],
+    "instructionalRole": "boss",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "finalBoss",
+    "originalBossTier": "finalBoss",
+    "familyConceptId": "elasticity",
+    "subtopicIds": [
+      "price-elasticity-of-demand"
+    ]
+  },
+  {
+    "id": "PM5-PC-BR-088",
+    "q": "Incumbents earn positive economic profit. Entry is easy, and new firms arrive while market demand stays fixed. What initial market adjustment tends to erode the profit?",
+    "options": [
+      "Demand contracts because entrants buy the incumbents’ goods.",
+      "Supply expands and market price falls.",
+      "Supply contracts and market price rises.",
+      "Each incumbent’s fixed cost necessarily disappears."
+    ],
+    "tag": "perfect_competition",
+    "type": "application",
+    "objective": "PC.6",
+    "difficulty": "bridge",
+    "conceptCluster": "micro_perfect_competition",
+    "primarySkill": "entry",
+    "secondarySkills": [
+      "market-equilibrium"
+    ],
+    "repairSkill": "entry",
+    "commonError": "misapplies_competitive_firm_rule",
+    "feedback": "New sellers add output at each price. With unchanged demand, the supply expansion lowers price and incumbent profit.",
+    "aHash": "acb404f2cabeb827497889055a65cedbb98913ba9b97c8bf60912e5f9b35de2d",
+    "sourceGame": "micro-concept-library",
+    "sourceChapter": [
+      "perfect-competition"
+    ],
+    "sourcePool": "bridge",
+    "primaryConceptId": "perfect-competition",
+    "secondaryConceptIds": [],
+    "instructionalRole": "bridge",
+    "canonicalDifficulty": "medium",
+    "originalSourcePool": "bridge",
+    "originalBossTier": null,
+    "familyConceptId": "perfect-competition",
+    "subtopicIds": [
+      "competitive-entry-exit-long-run"
+    ],
+    "canonicalId": "PM5-PC-BR-088",
+    "sourceId": 9600088,
+    "sourceHash": "46124199b2e0ddde4cb7f204fe17a630e82c5675e14d029dee1383b77ce1dd35",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1_questions.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "bridge",
+        "routeKey": "entry",
+        "sourceRecordOrder": 87,
+        "sourceId": 9600088,
+        "sourceHash": "46124199b2e0ddde4cb7f204fe17a630e82c5675e14d029dee1383b77ce1dd35"
+      }
+    ]
+  },
+  {
+    "id": "P62C-CPS-H-026",
+    "sourceGame": "micro-concept-library",
+    "q": "A firm earns $500 in revenue. Its explicit variable costs are $280 and its explicit fixed lease cost is $70. The owner also forgoes $40 of income from another job. What is accounting profit, and why is the forgone income treated that way?",
+    "options": [
+      "$110; accounting profit subtracts explicit costs and the $40 forgone income.",
+      "$220; accounting profit excludes both the fixed lease and the $40 forgone income.",
+      "$190; accounting profit subtracts the lease but adds the $40 forgone income.",
+      "$150; accounting profit subtracts explicit costs, so the $40 forgone income is excluded."
+    ],
+    "tag": "consumer_producer_surplus",
+    "type": "multi-step",
+    "objective": "CPS.5",
+    "difficulty": "hard",
+    "conceptCluster": "micro_consumer_producer_surplus",
+    "primarySkill": "producer_surplus_definition",
+    "secondarySkills": [],
+    "repairSkill": "producer_surplus_definition",
+    "commonError": "confuses_revenue_or_profit_with_surplus",
+    "feedback": "Accounting profit is revenue minus explicit costs: $500−$280−$70=$150. The forgone $40 is an implicit opportunity cost used in economic profit, not an additional explicit cost.",
+    "aHash": "ba00be3798ca52d7d52421c0283552a4224ecfb719121e6c6fc95dd0c87471e0",
+    "canonicalId": "P62C-CPS-H-026",
+    "sourceId": 660225,
+    "sourceChapter": [
+      "consumer-and-producer-surplus"
+    ],
+    "sourcePool": "hard",
+    "sourceHash": "18013f283e7f07171bb7242fa3aea8945d5075b28ea43be75c12eff4abdceba3",
+    "sourceOccurrences": [
+      {
+        "sourceGame": "micro-concept-library",
+        "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+        "sourceGlobal": "questions",
+        "sourcePool": "hard",
+        "routeKey": "producer_surplus_definition",
+        "sourceRecordOrder": 25,
+        "sourceId": 660225,
+        "sourceHash": "18013f283e7f07171bb7242fa3aea8945d5075b28ea43be75c12eff4abdceba3"
+      }
+    ],
+    "primaryConceptId": "consumer-and-producer-surplus",
+    "secondaryConceptIds": [],
+    "instructionalRole": "main",
+    "canonicalDifficulty": "hard",
+    "originalSourcePool": "hard",
+    "originalBossTier": null,
+    "familyConceptId": "consumer-and-producer-surplus",
+    "subtopicIds": [
+      "producer-surplus"
+    ]
+  }
+]

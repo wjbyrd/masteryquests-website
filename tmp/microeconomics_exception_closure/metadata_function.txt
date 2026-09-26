@@ -1,0 +1,12 @@
+function entries(module){return contracts.questionRecords({concepts:{x:module}});}
+function metadata(entry,module){
+ const rows=entries(module),unique=[...new Map(rows.map(r=>[String(r.question.id),r.question])).values()],p=module.questions||{},boss=p.boss||[];
+ entry.includedSkills=[...new Set(unique.map(q=>q.primarySkill).filter(Boolean))].sort();
+ entry.questionCountByRole={boss:boss.length,bridge:(module.bridgeQuestions||[]).length,calculation:(p.calculation||[]).length,elite:(p.elite||[]).length,integration:(p.integration||[]).length,legendary:(p.legendary||[]).length,legendaryBoss:(p.legendaryBoss||[]).length,main:['easy','medium','hard'].reduce((n,k)=>n+(p[k]||[]).length,0),repair:(module.repairQuestions||[]).length,repairSeed:(module.repairSeedQuestions||[]).length};
+ entry.questionCountByDifficulty={easy:0,medium:0,hard:0,elite:0,legendary:0,unknown:0};for(const q of unique){const tier=q.canonicalDifficulty||q.difficulty;entry.questionCountByDifficulty[tier in entry.questionCountByDifficulty?tier:'unknown']++;}
+ entry.repairCoverage={directSkillMatches:(module.repairQuestions||[]).length,mainWithUsableSkill:unique.length};
+ entry.bridgeCoverage={directSkillMatches:(module.bridgeQuestions||[]).length,mainWithUsableSkill:unique.length};
+ entry.calculationCoverage=unique.filter(q=>/calculat/i.test(q.type||'')||q.instructionalRole==='calculation').length;
+ entry.graphCoverage=unique.filter(q=>q.image).length;
+ if(entry.runtimeAdaptiveCounts){const counts={easy:0,medium:0,hard:0};for(const pool of Object.keys(counts))counts[pool]=(p[pool]||[]).length;for(const q of [...p.calculation||[],...p.integration||[]]){const tier=q.canonicalDifficulty||q.difficulty;if(tier in counts)counts[tier]++;}entry.runtimeAdaptiveCounts=counts;}
+}

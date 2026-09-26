@@ -1,0 +1,19 @@
+test_csv_roundtrip_all_choices_and_nested_metadata (test_export_faculty_question_bank.ExportIntegrity.test_csv_roundtrip_all_choices_and_nested_metadata) ... ok
+test_dangling_reference_fails (test_export_faculty_question_bank.ExportIntegrity.test_dangling_reference_fails) ... ok
+test_derived_area_membership_does_not_include_entire_parent (test_export_faculty_question_bank.ExportIntegrity.test_derived_area_membership_does_not_include_entire_parent) ... ok
+test_exact_javascript_hash_normalization (test_export_faculty_question_bank.ExportIntegrity.test_exact_javascript_hash_normalization) ... ok
+test_identical_duplicates_merge_all_memberships (test_export_faculty_question_bank.ExportIntegrity.test_identical_duplicates_merge_all_memberships) ... ok
+test_image_resize_caps_resolution_and_preserves_original (test_export_faculty_question_bank.ExportIntegrity.test_image_resize_caps_resolution_and_preserves_original) ... ok
+test_metadata_conflict_stops_export (test_export_faculty_question_bank.ExportIntegrity.test_metadata_conflict_stops_export) ... ok
+test_missing_image_uses_only_verified_own_concept_asset (test_export_faculty_question_bank.ExportIntegrity.test_missing_image_uses_only_verified_own_concept_asset) ... ok
+test_numeric_answer_precedes_hash (test_export_faculty_question_bank.ExportIntegrity.test_numeric_answer_precedes_hash) ... ok
+test_pdf_preserves_symbol_and_table_text (test_export_faculty_question_bank.ExportIntegrity.test_pdf_preserves_symbol_and_table_text) ... ok
+test_shared_questions_are_retained_in_each_discipline (test_export_faculty_question_bank.ExportIntegrity.test_shared_questions_are_retained_in_each_discipline) ... ok
+test_sort_and_literal_economic_comparison (test_export_faculty_question_bank.ExportIntegrity.test_sort_and_literal_economic_comparison) ... ok
+test_unmapped_discipline_is_an_error (test_export_faculty_question_bank.ExportIntegrity.test_unmapped_discipline_is_an_error) ... ok
+test_zero_or_multiple_hash_matches_fail (test_export_faculty_question_bank.ExportIntegrity.test_zero_or_multiple_hash_matches_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.864s
+
+OK

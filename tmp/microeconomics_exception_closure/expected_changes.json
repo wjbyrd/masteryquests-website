@@ -1,0 +1,455 @@
+{
+  "baselineRef": "b9846e0d56aa1a883f1507e3a0d4222762975a23",
+  "baselineSourceSha256": "ec4dd60b42e624eb913515a93bb2537f5fef7a050e1df19e7d83b18c51a0ee99",
+  "changedQuestionIds": [
+    "P62B-ELAS-B3-019",
+    "PM5-PC-BR-088",
+    "P62C-CPS-H-026"
+  ],
+  "changes": [
+    {
+      "id": "P62C-CPS-H-026",
+      "fields": [
+        "tag",
+        "objective",
+        "conceptCluster",
+        "primarySkill",
+        "repairSkill",
+        "commonError",
+        "primaryConceptId",
+        "familyConceptId",
+        "subtopicIds"
+      ],
+      "before": {
+        "tag": "consumer_producer_surplus",
+        "objective": "CPS.5",
+        "conceptCluster": "micro_consumer_producer_surplus",
+        "primarySkill": "producer_surplus_definition",
+        "repairSkill": "producer_surplus_definition",
+        "commonError": "confuses_revenue_or_profit_with_surplus",
+        "primaryConceptId": "consumer-and-producer-surplus",
+        "familyConceptId": "consumer-and-producer-surplus",
+        "subtopicIds": [
+          "producer-surplus"
+        ]
+      },
+      "after": {
+        "tag": "costs_of_production",
+        "objective": "COP.1",
+        "conceptCluster": "micro_costs_of_production",
+        "primarySkill": "accounting_profit",
+        "repairSkill": "accounting_profit",
+        "commonError": "subtracts_implicit_costs",
+        "primaryConceptId": "costs-of-production",
+        "familyConceptId": "costs-of-production",
+        "subtopicIds": [
+          "profit-concepts"
+        ]
+      },
+      "removedFields": [],
+      "beforeRecord": {
+        "id": "P62C-CPS-H-026",
+        "sourceGame": "micro-concept-library",
+        "q": "A firm earns $500 in revenue. Its explicit variable costs are $280 and its explicit fixed lease cost is $70. The owner also forgoes $40 of income from another job. What is accounting profit, and why is the forgone income treated that way?",
+        "options": [
+          "$110; accounting profit subtracts explicit costs and the $40 forgone income.",
+          "$220; accounting profit excludes both the fixed lease and the $40 forgone income.",
+          "$190; accounting profit subtracts the lease but adds the $40 forgone income.",
+          "$150; accounting profit subtracts explicit costs, so the $40 forgone income is excluded."
+        ],
+        "tag": "consumer_producer_surplus",
+        "type": "multi-step",
+        "objective": "CPS.5",
+        "difficulty": "hard",
+        "conceptCluster": "micro_consumer_producer_surplus",
+        "primarySkill": "producer_surplus_definition",
+        "secondarySkills": [],
+        "repairSkill": "producer_surplus_definition",
+        "commonError": "confuses_revenue_or_profit_with_surplus",
+        "feedback": "Accounting profit is revenue minus explicit costs: $500−$280−$70=$150. The forgone $40 is an implicit opportunity cost used in economic profit, not an additional explicit cost.",
+        "aHash": "ba00be3798ca52d7d52421c0283552a4224ecfb719121e6c6fc95dd0c87471e0",
+        "canonicalId": "P62C-CPS-H-026",
+        "sourceId": 660225,
+        "sourceChapter": [
+          "consumer-and-producer-surplus"
+        ],
+        "sourcePool": "hard",
+        "sourceHash": "18013f283e7f07171bb7242fa3aea8945d5075b28ea43be75c12eff4abdceba3",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "hard",
+            "routeKey": "producer_surplus_definition",
+            "sourceRecordOrder": 25,
+            "sourceId": 660225,
+            "sourceHash": "18013f283e7f07171bb7242fa3aea8945d5075b28ea43be75c12eff4abdceba3"
+          }
+        ],
+        "primaryConceptId": "consumer-and-producer-surplus",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "hard",
+        "originalSourcePool": "hard",
+        "originalBossTier": null,
+        "familyConceptId": "consumer-and-producer-surplus",
+        "subtopicIds": [
+          "producer-surplus"
+        ]
+      },
+      "afterRecord": {
+        "id": "P62C-CPS-H-026",
+        "sourceGame": "micro-concept-library",
+        "q": "A firm earns $500 in revenue. Its explicit variable costs are $280 and its explicit fixed lease cost is $70. The owner also forgoes $40 of income from another job. What is accounting profit, and why is the forgone income treated that way?",
+        "options": [
+          "$110; accounting profit subtracts explicit costs and the $40 forgone income.",
+          "$220; accounting profit excludes both the fixed lease and the $40 forgone income.",
+          "$190; accounting profit subtracts the lease but adds the $40 forgone income.",
+          "$150; accounting profit subtracts explicit costs, so the $40 forgone income is excluded."
+        ],
+        "tag": "costs_of_production",
+        "type": "multi-step",
+        "objective": "COP.1",
+        "difficulty": "hard",
+        "conceptCluster": "micro_costs_of_production",
+        "primarySkill": "accounting_profit",
+        "secondarySkills": [],
+        "repairSkill": "accounting_profit",
+        "commonError": "subtracts_implicit_costs",
+        "feedback": "Accounting profit is revenue minus explicit costs: $500−$280−$70=$150. The forgone $40 is an implicit opportunity cost used in economic profit, not an additional explicit cost.",
+        "aHash": "ba00be3798ca52d7d52421c0283552a4224ecfb719121e6c6fc95dd0c87471e0",
+        "canonicalId": "P62C-CPS-H-026",
+        "sourceId": 660225,
+        "sourceChapter": [
+          "consumer-and-producer-surplus"
+        ],
+        "sourcePool": "hard",
+        "sourceHash": "18013f283e7f07171bb7242fa3aea8945d5075b28ea43be75c12eff4abdceba3",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2c-consumer-and-producer-surplus-authoring.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "hard",
+            "routeKey": "producer_surplus_definition",
+            "sourceRecordOrder": 25,
+            "sourceId": 660225,
+            "sourceHash": "18013f283e7f07171bb7242fa3aea8945d5075b28ea43be75c12eff4abdceba3"
+          }
+        ],
+        "primaryConceptId": "costs-of-production",
+        "secondaryConceptIds": [],
+        "instructionalRole": "main",
+        "canonicalDifficulty": "hard",
+        "originalSourcePool": "hard",
+        "originalBossTier": null,
+        "familyConceptId": "costs-of-production",
+        "subtopicIds": [
+          "profit-concepts"
+        ]
+      }
+    },
+    {
+      "id": "P62B-ELAS-B3-019",
+      "fields": [
+        "q",
+        "commonError",
+        "feedback"
+      ],
+      "before": {
+        "q": "Use the two labeled points on vertical D2. A student correctly computes zero midpoint demand elasticity, then concludes that total revenue is unchanged between the points. Which diagnosis is correct?",
+        "commonError": "misreads_elasticity_graph",
+        "feedback": "For vertical D2, quantity is unchanged while price differs. The midpoint quantity-change numerator is zero. Revenue is P×Q, so with a positive fixed Q the higher price produces higher revenue."
+      },
+      "after": {
+        "q": "Demand is perfectly inelastic: quantity demanded remains at the same positive amount when market price increases. A student correctly computes zero midpoint demand elasticity, then concludes that total revenue is unchanged. Which diagnosis is correct?",
+        "commonError": "fails_to_connect_elasticity_to_revenue",
+        "feedback": "Quantity is unchanged while price increases, so the midpoint quantity-change numerator and demand elasticity are zero. Revenue is P×Q: with a positive fixed Q, the higher price produces higher revenue."
+      },
+      "removedFields": [],
+      "beforeRecord": {
+        "id": "P62B-ELAS-B3-019",
+        "q": "Use the two labeled points on vertical D2. A student correctly computes zero midpoint demand elasticity, then concludes that total revenue is unchanged between the points. Which diagnosis is correct?",
+        "options": [
+          "Zero quantity change gives zero elasticity, but the higher-price point has higher revenue because the same positive quantity sells at a higher price.",
+          "Zero elasticity also means zero price change, so equal revenue follows.",
+          "Zero elasticity means quantity rises enough to offset the price rise, so equal revenue follows.",
+          "A vertical demand curve has infinite elasticity, so the midpoint calculation must be reversed."
+        ],
+        "tag": "elasticity",
+        "type": "integration",
+        "objective": "ELAS.2",
+        "difficulty": "finalBoss",
+        "conceptCluster": "elasticity",
+        "primarySkill": "midpoint_formula",
+        "secondarySkills": [],
+        "repairSkill": "midpoint_formula",
+        "commonError": "misreads_elasticity_graph",
+        "feedback": "For vertical D2, quantity is unchanged while price differs. The midpoint quantity-change numerator is zero. Revenue is P×Q, so with a positive fixed Q the higher price produces higher revenue.",
+        "aHash": "ecd60e328586d8f82d7c6edcbb28bb2bd5f5091337c9343544989bb92d3c113e",
+        "canonicalId": "P62B-ELAS-B3-019",
+        "sourceId": 715037,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "elasticity"
+        ],
+        "sourcePool": "finalBoss",
+        "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2b-elasticity-graph-expansion-v2",
+            "sourceGlobal": "questions",
+            "sourcePool": "finalBoss",
+            "routeKey": "perfectly_elastic_inelastic",
+            "sourceRecordOrder": 37,
+            "sourceId": 715037,
+            "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7"
+          },
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+            "sourceGlobal": "targetedRepairs",
+            "sourcePool": "boss",
+            "routeKey": "perfectly_elastic_inelastic",
+            "sourceRecordOrder": 80,
+            "sourceId": 715037,
+            "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7",
+            "changeType": "REMOVE_GRAPH"
+          }
+        ],
+        "primaryConceptId": "elasticity",
+        "secondaryConceptIds": [],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "hard",
+        "originalSourcePool": "finalBoss",
+        "originalBossTier": "finalBoss",
+        "familyConceptId": "elasticity",
+        "subtopicIds": [
+          "price-elasticity-of-demand"
+        ]
+      },
+      "afterRecord": {
+        "id": "P62B-ELAS-B3-019",
+        "q": "Demand is perfectly inelastic: quantity demanded remains at the same positive amount when market price increases. A student correctly computes zero midpoint demand elasticity, then concludes that total revenue is unchanged. Which diagnosis is correct?",
+        "options": [
+          "Zero quantity change gives zero elasticity, but the higher-price point has higher revenue because the same positive quantity sells at a higher price.",
+          "Zero elasticity also means zero price change, so equal revenue follows.",
+          "Zero elasticity means quantity rises enough to offset the price rise, so equal revenue follows.",
+          "A vertical demand curve has infinite elasticity, so the midpoint calculation must be reversed."
+        ],
+        "tag": "elasticity",
+        "type": "integration",
+        "objective": "ELAS.2",
+        "difficulty": "finalBoss",
+        "conceptCluster": "elasticity",
+        "primarySkill": "midpoint_formula",
+        "secondarySkills": [],
+        "repairSkill": "midpoint_formula",
+        "commonError": "fails_to_connect_elasticity_to_revenue",
+        "feedback": "Quantity is unchanged while price increases, so the midpoint quantity-change numerator and demand elasticity are zero. Revenue is P×Q: with a positive fixed Q, the higher price produces higher revenue.",
+        "aHash": "ecd60e328586d8f82d7c6edcbb28bb2bd5f5091337c9343544989bb92d3c113e",
+        "canonicalId": "P62B-ELAS-B3-019",
+        "sourceId": 715037,
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "elasticity"
+        ],
+        "sourcePool": "finalBoss",
+        "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.2b-elasticity-graph-expansion-v2",
+            "sourceGlobal": "questions",
+            "sourcePool": "finalBoss",
+            "routeKey": "perfectly_elastic_inelastic",
+            "sourceRecordOrder": 37,
+            "sourceId": 715037,
+            "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7"
+          },
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phase6.3-targeted-production-repair-v1.json",
+            "sourceGlobal": "targetedRepairs",
+            "sourcePool": "boss",
+            "routeKey": "perfectly_elastic_inelastic",
+            "sourceRecordOrder": 80,
+            "sourceId": 715037,
+            "sourceHash": "642246fea8d76a0734b62ad1159c81d8499b8ea527599cfd958b276565d940c7",
+            "changeType": "REMOVE_GRAPH"
+          }
+        ],
+        "primaryConceptId": "elasticity",
+        "secondaryConceptIds": [],
+        "instructionalRole": "boss",
+        "canonicalDifficulty": "hard",
+        "originalSourcePool": "finalBoss",
+        "originalBossTier": "finalBoss",
+        "familyConceptId": "elasticity",
+        "subtopicIds": [
+          "price-elasticity-of-demand"
+        ]
+      }
+    },
+    {
+      "id": "PM5-PC-BR-088",
+      "fields": [
+        "q",
+        "options",
+        "feedback",
+        "aHash"
+      ],
+      "before": {
+        "q": "Incumbents earn positive economic profit. Entry is easy, and new firms arrive while market demand stays fixed. What initial market adjustment tends to erode the profit?",
+        "options": [
+          "Demand contracts because entrants buy the incumbents’ goods.",
+          "Supply expands and market price falls.",
+          "Supply contracts and market price rises.",
+          "Each incumbent’s fixed cost necessarily disappears."
+        ],
+        "feedback": "New sellers add output at each price. With unchanged demand, the supply expansion lowers price and incumbent profit.",
+        "aHash": "acb404f2cabeb827497889055a65cedbb98913ba9b97c8bf60912e5f9b35de2d"
+      },
+      "after": {
+        "q": "Competitive firms initially earn positive economic profit. Entry expands market supply and lowers price from $10 to $6. An incumbent’s marginal costs for units 1–4 are $3, $5, $8 and $12; variable cost at zero output is zero and fixed cost is unavoidable this period. With costs unchanged, how does its profit-maximizing output change?",
+        "options": [
+          "It falls from 3 units to 2 units.",
+          "It stays at 3 units because entry does not change marginal cost.",
+          "It rises from 3 units to 4 units because market supply expands.",
+          "It falls from 3 units to zero because any price fall requires shutdown."
+        ],
+        "feedback": "Entry adds market supply and lowers price. A price-taking firm compares that price with each unit’s marginal cost: at $10, the first three units add to profit; at $6, only the first two do. Output therefore falls from 3 to 2. Those two units still cover their variable costs, so shutdown would forgo a positive contribution to unavoidable fixed cost.",
+        "aHash": "158c4bf62ef365854fe78c6a09f2d2e306c2a354693e9e1dc8d80bcf146a61fb"
+      },
+      "removedFields": [],
+      "beforeRecord": {
+        "id": "PM5-PC-BR-088",
+        "q": "Incumbents earn positive economic profit. Entry is easy, and new firms arrive while market demand stays fixed. What initial market adjustment tends to erode the profit?",
+        "options": [
+          "Demand contracts because entrants buy the incumbents’ goods.",
+          "Supply expands and market price falls.",
+          "Supply contracts and market price rises.",
+          "Each incumbent’s fixed cost necessarily disappears."
+        ],
+        "tag": "perfect_competition",
+        "type": "application",
+        "objective": "PC.6",
+        "difficulty": "bridge",
+        "conceptCluster": "micro_perfect_competition",
+        "primarySkill": "entry",
+        "secondarySkills": [
+          "market-equilibrium"
+        ],
+        "repairSkill": "entry",
+        "commonError": "misapplies_competitive_firm_rule",
+        "feedback": "New sellers add output at each price. With unchanged demand, the supply expansion lowers price and incumbent profit.",
+        "aHash": "acb404f2cabeb827497889055a65cedbb98913ba9b97c8bf60912e5f9b35de2d",
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "perfect-competition"
+        ],
+        "sourcePool": "bridge",
+        "primaryConceptId": "perfect-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "bridge",
+        "canonicalDifficulty": "medium",
+        "originalSourcePool": "bridge",
+        "originalBossTier": null,
+        "familyConceptId": "perfect-competition",
+        "subtopicIds": [
+          "competitive-entry-exit-long-run"
+        ],
+        "canonicalId": "PM5-PC-BR-088",
+        "sourceId": 9600088,
+        "sourceHash": "46124199b2e0ddde4cb7f204fe17a630e82c5675e14d029dee1383b77ce1dd35",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1_questions.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "bridge",
+            "routeKey": "entry",
+            "sourceRecordOrder": 87,
+            "sourceId": 9600088,
+            "sourceHash": "46124199b2e0ddde4cb7f204fe17a630e82c5675e14d029dee1383b77ce1dd35"
+          }
+        ]
+      },
+      "afterRecord": {
+        "id": "PM5-PC-BR-088",
+        "q": "Competitive firms initially earn positive economic profit. Entry expands market supply and lowers price from $10 to $6. An incumbent’s marginal costs for units 1–4 are $3, $5, $8 and $12; variable cost at zero output is zero and fixed cost is unavoidable this period. With costs unchanged, how does its profit-maximizing output change?",
+        "options": [
+          "It falls from 3 units to 2 units.",
+          "It stays at 3 units because entry does not change marginal cost.",
+          "It rises from 3 units to 4 units because market supply expands.",
+          "It falls from 3 units to zero because any price fall requires shutdown."
+        ],
+        "tag": "perfect_competition",
+        "type": "application",
+        "objective": "PC.6",
+        "difficulty": "bridge",
+        "conceptCluster": "micro_perfect_competition",
+        "primarySkill": "entry",
+        "secondarySkills": [
+          "market-equilibrium"
+        ],
+        "repairSkill": "entry",
+        "commonError": "misapplies_competitive_firm_rule",
+        "feedback": "Entry adds market supply and lowers price. A price-taking firm compares that price with each unit’s marginal cost: at $10, the first three units add to profit; at $6, only the first two do. Output therefore falls from 3 to 2. Those two units still cover their variable costs, so shutdown would forgo a positive contribution to unavoidable fixed cost.",
+        "aHash": "158c4bf62ef365854fe78c6a09f2d2e306c2a354693e9e1dc8d80bcf146a61fb",
+        "sourceGame": "micro-concept-library",
+        "sourceChapter": [
+          "perfect-competition"
+        ],
+        "sourcePool": "bridge",
+        "primaryConceptId": "perfect-competition",
+        "secondaryConceptIds": [],
+        "instructionalRole": "bridge",
+        "canonicalDifficulty": "medium",
+        "originalSourcePool": "bridge",
+        "originalBossTier": null,
+        "familyConceptId": "perfect-competition",
+        "subtopicIds": [
+          "competitive-entry-exit-long-run"
+        ],
+        "canonicalId": "PM5-PC-BR-088",
+        "sourceId": 9600088,
+        "sourceHash": "46124199b2e0ddde4cb7f204fe17a630e82c5675e14d029dee1383b77ce1dd35",
+        "sourceOccurrences": [
+          {
+            "sourceGame": "micro-concept-library",
+            "sourceFile": "phaseMicro5-perfect-competition-granularity-adaptive-backfill-v1_questions.json",
+            "sourceGlobal": "questions",
+            "sourcePool": "bridge",
+            "routeKey": "entry",
+            "sourceRecordOrder": 87,
+            "sourceId": 9600088,
+            "sourceHash": "46124199b2e0ddde4cb7f204fe17a630e82c5675e14d029dee1383b77ce1dd35"
+          }
+        ]
+      }
+    }
+  ],
+  "moves": [
+    {
+      "id": "P62C-CPS-H-026",
+      "fromConcept": "consumer-and-producer-surplus",
+      "toConcept": "costs-of-production",
+      "pool": "hard"
+    }
+  ],
+  "afterLibrarySha256": "dd76822c6054f98140e9120916cbb41487bf8867cffda37af6a76c70e7fc2043",
+  "countsBefore": {
+    "general": 1589,
+    "micro": 6301,
+    "macro": 4745
+  },
+  "countsAfter": {
+    "general": 1589,
+    "micro": 6301,
+    "macro": 4745
+  },
+  "sharedGeneralTargets": []
+}
