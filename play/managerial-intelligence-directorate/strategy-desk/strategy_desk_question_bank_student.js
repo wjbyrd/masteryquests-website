@@ -434,24 +434,24 @@ window.questionBanks = {
     {
       "id": 19,
       "sourceGame": "strategyDesk",
-      "q": "Using the midpoint method, price falls from $10 to $8 and quantity rises from 500 to 580. The elasticity magnitude is closest to",
+      "q": "An analyst gets different elasticity magnitudes when reversing the direction of the same observed price and quantity change. Which calculation avoids this base-period problem?",
       "options": [
-        "0.16",
-        "0.67",
-        "1.50",
-        "2.50"
+        "Divide the dollar price change by the change in units",
+        "Use average price and average quantity as the percentage-change bases",
+        "Use the final price for both the price and quantity denominators",
+        "Use percentage revenue change in place of percentage quantity change"
       ],
       "tag": "price_elasticity",
-      "type": "calculation",
+      "type": "interpretation",
       "objective": "LO6.3",
       "difficulty": "easy",
       "conceptCluster": "LO6.3_strategy_desk",
       "primarySkill": "price_elasticity",
       "secondarySkills": [],
       "repairSkill": "price_elasticity",
-      "commonError": "uses_raw_changes_instead_of_midpoint_percentages",
-      "feedback": "The midpoint percentage changes are about 14.8% for quantity and 22.2% for price, giving an elasticity magnitude near 0.67.",
-      "aHash": "dd2f324d090bedf04eda038fd97aa8a9f6078d233eeb4ce45e779374d5c97338"
+      "commonError": "uses_direction_dependent_percentage_bases",
+      "feedback": "The midpoint method uses the average of the two prices and the average of the two quantities. These bases do not depend on which observation is called the starting point.",
+      "aHash": "a6c8943193ea75e0bcb886f79e19ae90be9c33cf33054f07953e826381801d4e"
     },
     {
       "id": 20,
@@ -1798,12 +1798,12 @@ window.questionBanks = {
     {
       "id": 81,
       "sourceGame": "strategyDesk",
-      "q": "A seller moves first and chooses a price of $50 or $20. A buyer values the item at $60 and can accept or walk away. Ignoring cost, what outcome follows?",
+      "q": "A buyer announces a final offer but can revise it freely tomorrow. The seller expects another offer if it refuses. Which change would most strengthen the claim that this offer is final?",
       "options": [
-        "$20 is accepted",
-        "$50 is accepted",
-        "The buyer rejects both prices",
-        "The seller chooses no price"
+        "Repeat the announcement without changing the buyer’s alternatives",
+        "Reveal that the buyer can extend the deadline without cost",
+        "Adopt an enforceable rule that prevents the buyer from making a later offer",
+        "Invite the seller to submit several counteroffers after the deadline"
       ],
       "tag": "strategic_bargaining",
       "type": "application",
@@ -1813,9 +1813,9 @@ window.questionBanks = {
       "primarySkill": "strategic_bargaining",
       "secondarySkills": [],
       "repairSkill": "strategic_bargaining",
-      "commonError": "fails_to_use_backward_induction",
-      "feedback": "The buyer accepts either affordable price, so the seller chooses the higher price of $50.",
-      "aHash": "c6742cee0b3bd820f22b1c5ca3bca686e851c095e78b06c6e278fd4c94a19e4f"
+      "commonError": "confuses_announcement_with_commitment",
+      "feedback": "A binding limit changes the continuation game by removing later offers. Repetition alone leaves the buyer free to revise, so the seller can rationally discount the announcement.",
+      "aHash": "2362231dc399ea2f1e15f42f7a7b106dc680576efd4c8fc2bcd6109dd25b60ac"
     },
     {
       "id": 82,
@@ -5359,14 +5359,14 @@ window.questionBanks = {
         "It leaves the negotiation unchanged.",
         "It automatically determines the final salary."
       ],
-      "tag": "strategic_bargaining",
+      "tag": "nonstrategic_bargaining",
       "type": "application",
-      "objective": "LO16.1",
+      "objective": "LO16.2",
       "difficulty": "hard",
       "conceptCluster": "LO16.1_strategy_desk",
-      "primarySkill": "strategic_bargaining",
+      "primarySkill": "nonstrategic_bargaining",
       "secondarySkills": [],
-      "repairSkill": "strategic_bargaining",
+      "repairSkill": "nonstrategic_bargaining",
       "commonError": "ignores_improved_outside_option",
       "feedback": "The alternative job improves what the worker can obtain without agreement.",
       "aHash": "e0a94b8a47bbe0eb3147dcd3ae099ff76198288ff6099a0c3d4afa7466b3d42c"
@@ -6674,7 +6674,7 @@ window.questionBanks = {
     {
       "id": 331,
       "sourceGame": "strategyDesk",
-      "q": "A firm can charge separate prices to two groups but resale is impossible only at a cost of $4 per unit. The price gap is $10. What threatens the strategy?",
+      "q": "A firm charges two groups prices that differ by $10. A reseller can buy in the low-price group and resell in the high-price group at a transport and transaction cost of $4 per unit. What threatens the strategy?",
       "options": [
         "Demand becomes perfectly inelastic",
         "The groups become complements",
@@ -6982,7 +6982,7 @@ window.questionBanks = {
     {
       "id": 345,
       "sourceGame": "strategyDesk",
-      "q": "High-value customers value Premium at $150 and Basic at $90. Low-value customers value Premium at $95 and Basic at $75. Basic is priced at $60. What is the highest Premium price that keeps high-value customers choosing Premium?",
+      "q": "High-value customers value Premium at $150 and Basic at $90. Low-value customers value Premium at $95 and Basic at $75. Basic is priced at $60. Customers choose Premium when indifferent. What is the highest Premium price that keeps high-value customers choosing Premium?",
       "options": [
         "$95",
         "$120",
@@ -7004,7 +7004,7 @@ window.questionBanks = {
     {
       "id": 346,
       "sourceGame": "strategyDesk",
-      "q": "Using the same values, what additional condition must hold to keep low-value customers from choosing Premium at a Premium price of $120?",
+      "q": "Low-value customers value Basic at $75 and Premium at $95. Basic costs $60 and Premium costs $120. Which incentive-compatibility condition directs low-value customers toward Basic?",
       "options": [
         "Premium surplus must exceed Basic surplus for low-value buyers",
         "Premium must always be cheaper than Basic",
@@ -7012,7 +7012,7 @@ window.questionBanks = {
         "Both versions must contain identical features"
       ],
       "tag": "indirect_price_discrimination",
-      "type": "strategy",
+      "type": "interpretation",
       "objective": "LO14.1",
       "difficulty": "elite",
       "conceptCluster": "LO14.1_strategy_desk",
@@ -7224,7 +7224,7 @@ window.questionBanks = {
     {
       "id": 356,
       "sourceGame": "strategyDesk",
-      "q": "Using the same valuations, what is the maximum revenue from selling the goods separately?",
+      "q": "Two consumers value Good 1 and Good 2 at ($90, $30) and ($50, $80), respectively. Marginal cost is zero, each buys at most one of each good, and customers buy when price equals value. What is maximum revenue from selling the goods separately?",
       "options": [
         "$180",
         "$220",
@@ -7630,7 +7630,7 @@ window.questionBanks = {
     {
       "id": 374,
       "sourceGame": "strategyDesk",
-      "q": "Both firms earn 8 if both maintain price and 5 if both cut, but either firm can earn 10 by cutting while the other maintains. Why can both cutting still be a Nash equilibrium?",
+      "q": "Two firms simultaneously choose Maintain or Cut. Payoffs, listed as (Firm A, Firm B), are Maintain/Maintain (8,8), Maintain/Cut (2,10), Cut/Maintain (10,2), and Cut/Cut (5,5). Why is Cut/Cut a Nash equilibrium?",
       "options": [
         "Both cutting maximizes total industry profit",
         "Maintaining price is a strictly dominant strategy",
@@ -7674,7 +7674,7 @@ window.questionBanks = {
     {
       "id": 376,
       "sourceGame": "strategyDesk",
-      "q": "Using the same values, what is the seller's minimum acceptable payoff from an agreement?",
+      "q": "A seller receives a payoff of $9 million if negotiations fail. The buyer's disagreement payoff is $7 million. Both accept agreement when indifferent. What is the seller's minimum acceptable payoff from an agreement?",
       "options": [
         "$9 million",
         "$6 million",
@@ -7690,7 +7690,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "uses_gain_instead_of_disagreement_value",
-      "feedback": "The seller must receive at least its $9 million disagreement payoff to prefer agreement.",
+      "feedback": "The seller's reservation payoff is its own $9 million outside option. Receiving exactly that amount makes the seller indifferent; the stated tie rule allows agreement.",
       "aHash": "c7e844477746e60eace11ec934348bc34886da200cd78b3702126192d7dce0da"
     },
     {
@@ -9040,7 +9040,7 @@ window.questionBanks = {
     {
       "id": 9047,
       "sourceGame": "strategyDesk",
-      "q": "Using the same valuations, what revenue does separate pricing at $60 for each good produce?",
+      "q": "Three consumers value goods A and B at ($100, $0), ($60, $60), and ($0, $100). Each buys at most one of each good and buys when price equals value. What revenue results from separate prices of $60 for each good?",
       "options": [
         "$180",
         "$300",
@@ -9106,7 +9106,7 @@ window.questionBanks = {
     {
       "id": 9050,
       "sourceGame": "strategyDesk",
-      "q": "For the same gym, what is the highest membership fee that keeps both types when the per-visit charge remains $4?",
+      "q": "A gym serves one heavy user with gross value $300 for 30 visits and one light user with gross value $140 for 5 visits. Visit counts are fixed at a $4 usage price. Both join when indifferent. What is the highest membership fee that retains both users?",
       "options": [
         "$100",
         "$140",
@@ -9122,7 +9122,7 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "two_part_tariff",
       "commonError": "uses_heavy_type_surplus_instead_of_binding_light_type",
-      "feedback": "Light users have value 140 and usage charges of 20, leaving $120 available for the fee. They are the binding type.",
+      "feedback": "The heavy user can pay a fee up to $300 − 30 × $4 = $180; the light user can pay up to $140 − 5 × $4 = $120. The lower ceiling binds. At $120 the light user is indifferent and joins under the stated rule.",
       "aHash": "38f1defd84f62a3d821cf82e00ba4f8e81f9201dd9a1b3d4d86416f0419ca81f"
     },
     {
@@ -10035,7 +10035,7 @@ window.questionBanks = {
       "repairSkill": "market_demand",
       "commonError": "misapplies_market_demand_recognition",
       "feedback": "Market demand is the horizontal sum of individual demand schedules at each common price.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "4a9344ff3879f7def538850575b74845119d8bfc32321ce42573055bc2252edd"
     },
     {
@@ -10058,7 +10058,7 @@ window.questionBanks = {
       "repairSkill": "market_demand",
       "commonError": "misapplies_market_demand_application",
       "feedback": "Add the quantities at the same price: 1 + 3 + 0 + 2 = 6.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "70f2a9bb85ae1a4b1a22d5fd0f4ba1666b465f9d41f1fcca9185a9dcc1966a10"
     },
     {
@@ -10083,7 +10083,7 @@ window.questionBanks = {
       "repairSkill": "market_demand",
       "commonError": "misapplies_market_demand_synthesis",
       "feedback": "Market quantity is 180 at $40 and 260 at $35, so the price cut raises total quantity demanded by 80 units.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "45b9e9281733ce4c1068f900b483ee604a09c38fbd9ebe77dcaab829f5e92966"
     },
     {
@@ -10106,7 +10106,7 @@ window.questionBanks = {
       "repairSkill": "optimal_pricing",
       "commonError": "misapplies_optimal_pricing_recognition",
       "feedback": "Optimal pricing uses marginal analysis rather than volume, imitation, or average cost alone.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "9530321fc0812334fe5372bf2d21c965cde4fa50e44d85004175db394e3f7210"
     },
     {
@@ -10131,7 +10131,7 @@ window.questionBanks = {
       "repairSkill": "optimal_pricing",
       "commonError": "misapplies_optimal_pricing_application",
       "feedback": "Lost contribution is $8,000; contribution from added sales is $6,000; net contribution falls $2,000.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "84b8bac92f21c51e08419f7bf33abe67ee0d432d7c1ed0494a4d9f3112d34d6f"
     },
     {
@@ -10156,7 +10156,7 @@ window.questionBanks = {
       "repairSkill": "optimal_pricing",
       "commonError": "misapplies_optimal_pricing_synthesis",
       "feedback": "The percentages alone do not establish profit; margin and lost volume must be evaluated together.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "8a3be22c4564530afa43f9bb1a70dee86cf56beac2db13b78eb037cf2c2750da"
     },
     {
@@ -10179,7 +10179,7 @@ window.questionBanks = {
       "repairSkill": "price_elasticity",
       "commonError": "misapplies_price_elasticity_recognition",
       "feedback": "Elasticity is classified by absolute value; |−1.8| exceeds 1.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "d5c52a4efbeb47114897a1c3bd21cf69994e45e9a0dfe42721507c9436e31b1c"
     },
     {
@@ -10202,7 +10202,7 @@ window.questionBanks = {
       "repairSkill": "price_elasticity",
       "commonError": "misapplies_price_elasticity_application",
       "feedback": "Quantity changes −15% and price changes +10%; −15% ÷ 10% = −1.50.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "f5b33a1e7f298e5e4d07bc7dbcfdf99d2651a90549ce2565c962651d59952ae5"
     },
     {
@@ -10227,7 +10227,7 @@ window.questionBanks = {
       "repairSkill": "price_elasticity",
       "commonError": "misapplies_price_elasticity_synthesis",
       "feedback": "With inelastic demand, a price increase raises revenue and generally improves contribution when marginal cost is unchanged.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "393ab8298901fb74376e8d6849f2db9aa607bd229db2071a4317e044f6cd42b9"
     },
     {
@@ -10250,7 +10250,7 @@ window.questionBanks = {
       "repairSkill": "forecasting_elasticities",
       "commonError": "misapplies_forecasting_elasticities_recognition",
       "feedback": "Cross-price elasticity links demand for one product to the price of another.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "d0152705134ea5db8f478b158b4d0b26eb8d78ec2dfbd1c18a7dd7d3af327454"
     },
     {
@@ -10273,7 +10273,7 @@ window.questionBanks = {
       "repairSkill": "forecasting_elasticities",
       "commonError": "misapplies_forecasting_elasticities_application",
       "feedback": "1.5 × 8% = 12%; the positive sign indicates substitutes.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "6379dd47c269717d9e2a010fc4fc95738c13df08cdb9a13c97ee71bea25ca955"
     },
     {
@@ -10296,7 +10296,7 @@ window.questionBanks = {
       "repairSkill": "forecasting_elasticities",
       "commonError": "misapplies_forecasting_elasticities_synthesis",
       "feedback": "Income adds 1.2×4%=4.8%; the rival price cut changes demand by 0.8×−3%=−2.4%; net = +2.4%.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "5171efb5873cc99bd83db99e520d19656f3bc31459c933ab0112f80fe8cc3b07"
     },
     {
@@ -10319,7 +10319,7 @@ window.questionBanks = {
       "repairSkill": "stay_even_volume",
       "commonError": "misapplies_stay_even_volume_recognition",
       "feedback": "The analysis asks how many extra units are needed to offset reduced contribution on existing sales.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "7956011a722b1fed075bac11dc83f6e1426118e3cb327f4f3a2fc9a3050c57b7"
     },
     {
@@ -10342,7 +10342,7 @@ window.questionBanks = {
       "repairSkill": "stay_even_volume",
       "commonError": "misapplies_stay_even_volume_application",
       "feedback": "Old contribution is $20 and new contribution is $16. Required volume increase is $4 ÷ $16 = 25%.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "72da55d317fd997b93138b8646a2238e806a4c4566d1e854277b5a583d8aef23"
     },
     {
@@ -10367,7 +10367,7 @@ window.questionBanks = {
       "repairSkill": "stay_even_volume",
       "commonError": "misapplies_stay_even_volume_synthesis",
       "feedback": "Contribution falls from $30 to $24, so required growth is $6 ÷ $24 = 25%; forecast growth is only 18%.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "3411bb568e84d44415440439ad95befea62df2d9ea98b299132a65a36d68d24f"
     },
     {
@@ -10390,7 +10390,7 @@ window.questionBanks = {
       "repairSkill": "substitute_pricing",
       "commonError": "misapplies_substitute_pricing_recognition",
       "feedback": "Cannibalization is an internal opportunity cost in portfolio pricing.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "a49b38bff9db19233f05e221bc99951ed19b4de230e764bcf41af1de66840295"
     },
     {
@@ -10413,7 +10413,7 @@ window.questionBanks = {
       "repairSkill": "substitute_pricing",
       "commonError": "misapplies_substitute_pricing_application",
       "feedback": "A adds $7,200; B loses $3,600; net contribution rises $3,600.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "f6e9c3c430d7165774803ddf797136d8a48045a92ff6c44cf12aaf5d935c7546"
     },
     {
@@ -10438,7 +10438,7 @@ window.questionBanks = {
       "repairSkill": "substitute_pricing",
       "commonError": "misapplies_substitute_pricing_synthesis",
       "feedback": "The correct objective is total portfolio profit, not one product’s result.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "d01921c932295119e923111e30bc1c4b006a4e479637e959a9945dc4b2ee1fe9"
     },
     {
@@ -10461,7 +10461,7 @@ window.questionBanks = {
       "repairSkill": "complement_pricing",
       "commonError": "misapplies_complement_pricing_recognition",
       "feedback": "Complement pricing accounts for cross-product demand and contribution effects.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "e9ae1899158247348d8c267823b1fca72d7c91042dca720dfc022fd808cf88f1"
     },
     {
@@ -10484,7 +10484,7 @@ window.questionBanks = {
       "repairSkill": "complement_pricing",
       "commonError": "misapplies_complement_pricing_application",
       "feedback": "Printer contribution falls $20,000, while cartridges add $30,000; net rises $10,000.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "cce11a13dcf9828b3c311b6f412ca8e1b7f72f8378d97040a800cf304fec7f78"
     },
     {
@@ -10509,7 +10509,7 @@ window.questionBanks = {
       "repairSkill": "complement_pricing",
       "commonError": "misapplies_complement_pricing_synthesis",
       "feedback": "Expected service contribution is $54; subtracting the $45 device sacrifice leaves $9.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "fb89971549c2208df24109b7656079ef447b258740713654906a54a8ec3403f3"
     },
     {
@@ -10532,7 +10532,7 @@ window.questionBanks = {
       "repairSkill": "capacity_pricing",
       "commonError": "misapplies_capacity_pricing_recognition",
       "feedback": "Unused perishable capacity can be sold when incremental revenue exceeds incremental cost and no better sale is displaced.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "63f8e15c78b35fe19509cf5a0bb300fb63f59d1c98d348394b95cacd37ce94f6"
     },
     {
@@ -10555,7 +10555,7 @@ window.questionBanks = {
       "repairSkill": "capacity_pricing",
       "commonError": "misapplies_capacity_pricing_application",
       "feedback": "The room contributes $65 − $28 = $37 because no higher-value booking is displaced.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "625a162f2a05b7d8318bb3303ced375fd90c8fe9fac0f93fcfd0d8623c7b7326"
     },
     {
@@ -10580,7 +10580,7 @@ window.questionBanks = {
       "repairSkill": "capacity_pricing",
       "commonError": "misapplies_capacity_pricing_synthesis",
       "feedback": "The seat has an opportunity cost: expected business contribution is 0.60×($500−$80)=$252, exceeding the leisure contribution of $140.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "61cd8d8d6a10f810ff33ccd3efe0fed91ec751f4f6bc61249113691f5ab81ffe"
     },
     {
@@ -10603,7 +10603,7 @@ window.questionBanks = {
       "repairSkill": "forecast_driven_pricing",
       "commonError": "misapplies_forecast_driven_pricing_recognition",
       "feedback": "Forecasts inform pricing because expected demand relative to capacity changes the value of limited inventory.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "d489e4a76303683086bbdf644adc2ac8bd08dd223b254168a9448e788f8ae1fa"
     },
     {
@@ -10626,7 +10626,7 @@ window.questionBanks = {
       "repairSkill": "forecast_driven_pricing",
       "commonError": "misapplies_forecast_driven_pricing_application",
       "feedback": "The $72 forecast is closest to capacity without creating a large shortage.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "ff68313bfa1d08e9d6e6007209b06e3d33908f1787cc2e9751b4c621a45a755e"
     },
     {
@@ -10651,7 +10651,7 @@ window.questionBanks = {
       "repairSkill": "forecast_driven_pricing",
       "commonError": "misapplies_forecast_driven_pricing_synthesis",
       "feedback": "At $180: 70×$145=$10,150. At $155: 95×$120=$11,400.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "8f5446ec9e77b4a754c96274dda0a1e52b57cdf8e825763ae7dc9b9da34f52fa"
     },
     {
@@ -10674,7 +10674,7 @@ window.questionBanks = {
       "repairSkill": "promotion_response",
       "commonError": "misapplies_promotion_response_recognition",
       "feedback": "Promotion is profitable only when incremental contribution exceeds promotional spending and other lost margin.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "152eecc22c4314fb56a7e7d4785a8cec193c89a48f143e5052e9adef30562d66"
     },
     {
@@ -10697,7 +10697,7 @@ window.questionBanks = {
       "repairSkill": "promotion_response",
       "commonError": "misapplies_promotion_response_application",
       "feedback": "Incremental contribution is $33,000; subtracting the $24,000 campaign cost leaves $9,000.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "1c7c5e17361e9ef8e222ef46a6ed4c8589cc8ad5cc02847797174ac099b63bdb"
     },
     {
@@ -10722,7 +10722,7 @@ window.questionBanks = {
       "repairSkill": "promotion_response",
       "commonError": "misapplies_promotion_response_synthesis",
       "feedback": "Incremental buyers add $13,500, existing buyers lose $15,000 from the coupon, and campaign cost is $5,000; net contribution falls $6,500.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "7453ef6731b564b69d3d2abcd0d4f21754c9e834547d5907e99dbdefad634232"
     },
     {
@@ -10745,7 +10745,7 @@ window.questionBanks = {
       "repairSkill": "behavioral_pricing",
       "commonError": "misapplies_behavioral_pricing_recognition",
       "feedback": "Reference dependence means perceived value is shaped by a comparison point.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "f3ef5ed55dbb83dc2867e0ed76f5f21ce2b768d78e2a2fe0ff10eb02037a101f"
     },
     {
@@ -10768,7 +10768,7 @@ window.questionBanks = {
       "repairSkill": "behavioral_pricing",
       "commonError": "misapplies_behavioral_pricing_application",
       "feedback": "Behavioral pricing can frame value, but fabricated comparison prices are misleading.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "b7609dd157000f640bff04cb9f752f83bb381ab6354cef909d1f43ae43d768b8"
     },
     {
@@ -10793,7 +10793,7 @@ window.questionBanks = {
       "repairSkill": "behavioral_pricing",
       "commonError": "misapplies_behavioral_pricing_synthesis",
       "feedback": "Partitioning and left-digit framing can alter perception without materially changing total economic cost.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "51a83a09e322fd7ed665d259441472cd2093ef037a0104b04410d36604c3aac0"
     }
   ],
@@ -10818,7 +10818,7 @@ window.questionBanks = {
       "repairSkill": "price_discrimination",
       "commonError": "misapplies_price_discrimination_recognition",
       "feedback": "Price discrimination requires heterogeneous willingness to pay plus some ability to separate buyers or prevent arbitrage.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "769e517726456519f82c2a53b0d12f8fbbe62ca2edf6795a828822320b9270d7"
     },
     {
@@ -10841,7 +10841,7 @@ window.questionBanks = {
       "repairSkill": "price_discrimination",
       "commonError": "misapplies_price_discrimination_application",
       "feedback": "The group with less elastic demand should face the higher markup, provided resale is controlled.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "862936ff7c498d4de009a4fa4c687bfab2c75d1774e3d584431ff2afec9598af"
     },
     {
@@ -10864,7 +10864,7 @@ window.questionBanks = {
       "repairSkill": "price_discrimination",
       "commonError": "misapplies_price_discrimination_synthesis",
       "feedback": "For elasticity magnitude 1.5, (P−20)/P=1/1.5, so P=60. For magnitude 3, P=30.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "b0543310aa49ad2447d5e5a335716c1c02794da57efb01c00b0fda53e39d4076"
     },
     {
@@ -10887,7 +10887,7 @@ window.questionBanks = {
       "repairSkill": "direct_price_discrimination",
       "commonError": "misapplies_direct_price_discrimination_recognition",
       "feedback": "Direct discrimination assigns prices using observable buyer characteristics rather than relying on self-selection.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "421904be158dc1e4b74db3948b10e3a4965b1ab4c2d356137a24b911217e62e6"
     },
     {
@@ -10910,7 +10910,7 @@ window.questionBanks = {
       "repairSkill": "direct_price_discrimination",
       "commonError": "misapplies_direct_price_discrimination_application",
       "feedback": "Verification of buyer type makes the pricing rule direct.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "5d54f848a3ab3d969a40b9b7c0d905d85d8925fba063ef2b3c293e72c2d30f93"
     },
     {
@@ -10933,7 +10933,7 @@ window.questionBanks = {
       "repairSkill": "direct_price_discrimination",
       "commonError": "misapplies_direct_price_discrimination_synthesis",
       "feedback": "Separate pricing nets $160,000−$12,000=$148,000, which is $3,000 above uniform pricing.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "c7407538fc6a081776f60626dd7a7a7c1dab449f2bec247708c513c462456b41"
     },
     {
@@ -10956,7 +10956,7 @@ window.questionBanks = {
       "repairSkill": "arbitrage_control",
       "commonError": "misapplies_arbitrage_control_recognition",
       "feedback": "Resale lets high-value buyers obtain the low segment price indirectly.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "665865f6dd074a8a8a6cbe3287274cf1ac3090ea0130a33375699e019216fcaa"
     },
     {
@@ -10979,7 +10979,7 @@ window.questionBanks = {
       "repairSkill": "arbitrage_control",
       "commonError": "misapplies_arbitrage_control_application",
       "feedback": "Contractual and traceability controls directly restrict resale across segments.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "27e62697894875a5144c361f26956e59523d52a0078f89eaa8994f4ac3705ecb"
     },
     {
@@ -11002,7 +11002,7 @@ window.questionBanks = {
       "repairSkill": "arbitrage_control",
       "commonError": "misapplies_arbitrage_control_synthesis",
       "feedback": "Segmented net revenue is $240,000−$38,000−$12,000=$190,000, so uniform pricing is $8,000 better.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "c3dd0ce18ad8678be69e6257a32f83eb2b2a19fa1003c21fefb5d9e87e555a30"
     },
     {
@@ -11025,7 +11025,7 @@ window.questionBanks = {
       "repairSkill": "robinson_patman",
       "commonError": "misapplies_robinson_patman_recognition",
       "feedback": "The statute targets certain discriminatory prices among competing purchasers when competition may be harmed.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "318388c7feab9cddb5000272bdcd68da7990d5a03ab29d33260eeb8434df50ba"
     },
     {
@@ -11048,7 +11048,7 @@ window.questionBanks = {
       "repairSkill": "robinson_patman",
       "commonError": "misapplies_robinson_patman_application",
       "feedback": "A cost-justification defense depends on demonstrable differences in the cost of serving buyers.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "977cb93277573485e957a3363fc955d3c710ac90ee746913c3b98d50f4c35fc5"
     },
     {
@@ -11071,7 +11071,7 @@ window.questionBanks = {
       "repairSkill": "robinson_patman",
       "commonError": "misapplies_robinson_patman_synthesis",
       "feedback": "The explained difference is $0.85, leaving $0.15 unexplained.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "b6213e89f56b101e073221e4b3a9711c4002df2221c8c1130092c20747140113"
     },
     {
@@ -11094,7 +11094,7 @@ window.questionBanks = {
       "repairSkill": "price_discrimination_cases",
       "commonError": "misapplies_price_discrimination_cases_recognition",
       "feedback": "Age verification assigns a price using an observable buyer characteristic.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "ddee244e0bd6c50e386c683d4cc40c6d98fdccbe6488a3115cc0c37396f563b0"
     },
     {
@@ -11117,7 +11117,7 @@ window.questionBanks = {
       "repairSkill": "price_discrimination_cases",
       "commonError": "misapplies_price_discrimination_cases_application",
       "feedback": "The restriction induces self-selection rather than directly observing willingness to pay.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "fd3fb09d9908119298e240d3f41a624d4b80b2868d34bf271b876a63442b2040"
     },
     {
@@ -11140,7 +11140,7 @@ window.questionBanks = {
       "repairSkill": "price_discrimination_cases",
       "commonError": "misapplies_price_discrimination_cases_synthesis",
       "feedback": "Net gains are $14,000, $15,000, and $31,000; uniform pricing is best under these figures.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "8b818ed850d516f50339e2e1ee7f59856d7b78c02495e1cee8b87eea70eae671"
     },
     {
@@ -11163,7 +11163,7 @@ window.questionBanks = {
       "repairSkill": "indirect_price_discrimination",
       "commonError": "misapplies_indirect_price_discrimination_recognition",
       "feedback": "Indirect discrimination relies on self-selection among options.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "df11a90d8cf2cff874bef5686dba3b17a405048a5bfd6b9e5a12ba920cfadeb6"
     },
     {
@@ -11186,7 +11186,7 @@ window.questionBanks = {
       "repairSkill": "indirect_price_discrimination",
       "commonError": "misapplies_indirect_price_discrimination_application",
       "feedback": "Restrictions create a sorting mechanism when flexibility is more valuable to high-demand customers.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "a321c369d88189165d2595f467871de154a97bf9937e829f9bf643fd78ea2b72"
     },
     {
@@ -11209,7 +11209,7 @@ window.questionBanks = {
       "repairSkill": "indirect_price_discrimination",
       "commonError": "misapplies_indirect_price_discrimination_synthesis",
       "feedback": "Preventing 450 downgrades preserves $24 each, or $10,800; losing 100 low-plan users costs $1,800; net gain is $9,000.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "14e28c96619fb8eaa690cee491d6507b988e4dcd6cbadd051b9bd64f3a644442"
     },
     {
@@ -11232,7 +11232,7 @@ window.questionBanks = {
       "repairSkill": "cannibalization_control",
       "commonError": "misapplies_cannibalization_control_recognition",
       "feedback": "The lower-priced version must sacrifice attributes valued especially by high-value customers.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "e0d91cfec2c23811943b76bb815b5f34a4f37bcb00249c0ca425b0d3f0b72279"
     },
     {
@@ -11255,7 +11255,7 @@ window.questionBanks = {
       "repairSkill": "cannibalization_control",
       "commonError": "misapplies_cannibalization_control_application",
       "feedback": "Cartridge purchases meter usage and allow heavy users to pay more over time.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "6d36f6bdf8433629f32a65d6d1c5d50b492140a4433da3d7bf1da638d2d767d1"
     },
     {
@@ -11278,7 +11278,7 @@ window.questionBanks = {
       "repairSkill": "cannibalization_control",
       "commonError": "misapplies_cannibalization_control_synthesis",
       "feedback": "New buyers add $17,500; downgrades lose $45 each, or $9,900; net gain is $7,600.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "42663f09f75741818ddbb3b0deaf28de2ffaf2f402061dd6142fd37486ff7e8d"
     },
     {
@@ -11301,7 +11301,7 @@ window.questionBanks = {
       "repairSkill": "self_selection_pricing",
       "commonError": "misapplies_self_selection_pricing_recognition",
       "feedback": "A menu of differentiated options lets buyers reveal type through their choices.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "6aade006741fe109dcaf1dd2829567db7ba54274cc7e3e9242bd8b4ef7914b46"
     },
     {
@@ -11324,7 +11324,7 @@ window.questionBanks = {
       "repairSkill": "self_selection_pricing",
       "commonError": "misapplies_self_selection_pricing_application",
       "feedback": "Different fixed and variable charges sort light and heavy users.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "2fc9fa49e63a935c9b0418d293daa863a803450c0aaa0a5a7e02cee79a791d4c"
     },
     {
@@ -11347,7 +11347,7 @@ window.questionBanks = {
       "repairSkill": "self_selection_pricing",
       "commonError": "misapplies_self_selection_pricing_synthesis",
       "feedback": "Light users pay $36 and retain $4 surplus; heavy users pay $100 and are indifferent.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "8546140a62d20e9d6fa528390637df978757700f91892a6b8722f305bdbfe1f5"
     },
     {
@@ -11370,7 +11370,7 @@ window.questionBanks = {
       "repairSkill": "bundling",
       "commonError": "misapplies_bundling_recognition",
       "feedback": "Bundling can reduce dispersion in total willingness to pay when component valuations offset one another.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "48d89eb908c6c61fd2f369ed699e27a455f18fc0f7ec3e3d333c9e74e1cb4054"
     },
     {
@@ -11393,7 +11393,7 @@ window.questionBanks = {
       "repairSkill": "bundling",
       "commonError": "misapplies_bundling_application",
       "feedback": "Each consumer values the bundle at $100, so a $100 price yields $200 total revenue.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "797c7d463af6ea7fa7f88d50602cea0531e3e0da8cb59be3b0983bb98958cce8"
     },
     {
@@ -11416,7 +11416,7 @@ window.questionBanks = {
       "repairSkill": "bundling",
       "commonError": "misapplies_bundling_synthesis",
       "feedback": "The bundle earns $300, which is $20 more than the stated $280 from separate pricing.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "d73ece47a7bc12ccc4848f8301e643d62b58c6905e859fd20d3adc82d6db8b49"
     }
   ],
@@ -11441,7 +11441,7 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "misapplies_strategic_interdependence_recognition",
       "feedback": "Strategic interdependence exists when one player's payoff depends on the actions chosen by others.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "2e50458276b96ecb5de362ff36fd938eb483d2395614780ca9a84ca6b3b0a5bd"
     },
     {
@@ -11464,7 +11464,7 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "misapplies_strategic_interdependence_application",
       "feedback": "Against a rival that does not advertise, advertising yields 11 rather than 8.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "ab9e1675f0b7cf38dfaebf7bde1c6c95390ee9277e71bd96b5be4e6d123655b5"
     },
     {
@@ -11487,7 +11487,7 @@ window.questionBanks = {
       "repairSkill": "strategic_interdependence",
       "commonError": "misapplies_strategic_interdependence_synthesis",
       "feedback": "Advertising gives 11 instead of 8 when the rival restrains and 5 instead of 2 when the rival advertises, so it is dominant. The resulting equilibrium is inefficient.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "0b530455c2874fe800556a5eba1510f056208c64152d03f9a241c51de0be845d"
     },
     {
@@ -11510,7 +11510,7 @@ window.questionBanks = {
       "repairSkill": "game_timing",
       "commonError": "misapplies_game_timing_recognition",
       "feedback": "Sequential play gives a later mover information about an earlier action; simultaneous play does not.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "c889acc647455540a2500fb5ff5f7e7566a4b656fae6ca3c82620552bc755380"
     },
     {
@@ -11533,7 +11533,7 @@ window.questionBanks = {
       "repairSkill": "game_timing",
       "commonError": "misapplies_game_timing_application",
       "feedback": "Player 2 compares its own payoffs: after Invest, 5 exceeds 4, so Low; after Don't Invest, 3 exceeds 2, so High.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "image": "gametreeone.webp",
       "graphRequired": true,
       "aHash": "64d52f3ac8543a078a19b8462a9d71de548403a2fd5c8bf5023fdc0ac8efab59"
@@ -11558,7 +11558,7 @@ window.questionBanks = {
       "repairSkill": "game_timing",
       "commonError": "misapplies_game_timing_synthesis",
       "feedback": "Backward induction gives Low after Invest and High after Don't Invest. Player 1 then chooses Don't Invest because 4 exceeds 2.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "image": "gametreeone.webp",
       "graphRequired": true,
       "aHash": "90d311e39a2965448a04457c1fc65f12066ace2fe0c688d4a2fc2e3479f68319"
@@ -11583,7 +11583,7 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "misapplies_nash_equilibrium_recognition",
       "feedback": "Nash equilibrium requires mutual best responses, not maximum joint payoff or equal payoffs.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "8e6ad1504be026fd7f73636e19a2bbba30a8d129a4fbbe5d550fa9936bb205bf"
     },
     {
@@ -11606,7 +11606,7 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "misapplies_nash_equilibrium_application",
       "feedback": "Player 1 prefers Up against Left and Down against Right. Player 2 prefers Right against either row. Only Down-Right is a mutual best response.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "f45a601c6b79bc8298dfb22e443cb5b4dfefe3d89c170705fb52ee2a1c196259"
     },
     {
@@ -11629,7 +11629,7 @@ window.questionBanks = {
       "repairSkill": "nash_equilibrium",
       "commonError": "misapplies_nash_equilibrium_synthesis",
       "feedback": "Set 3q equal to 1−q. Then 4q=1, so q=0.25.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "a30a043314fa89294fa2c1c989a01fbb5329e5c085a5c5a8d27317656de24ae0"
     },
     {
@@ -11652,7 +11652,7 @@ window.questionBanks = {
       "repairSkill": "strategic_rule_design",
       "commonError": "misapplies_strategic_rule_design_recognition",
       "feedback": "A threat must be optimal or enforceable when execution becomes relevant; an empty announcement does not change the game.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "181db21f8f38e824d9eba9a7081b055f98b45de52e3748cbd1106564836bd3c9"
     },
     {
@@ -11675,7 +11675,7 @@ window.questionBanks = {
       "repairSkill": "strategic_rule_design",
       "commonError": "misapplies_strategic_rule_design_application",
       "feedback": "Firm B compares its own payoffs at each node: 6>3 after High, 5>4 after Medium, and 8>7 after Low.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "image": "gametreetwo.webp",
       "graphRequired": true,
       "aHash": "fb95983718d90a54e32e3a1a95262ff7aa0991591d922fe0c85c6190568430f3"
@@ -11700,7 +11700,7 @@ window.questionBanks = {
       "repairSkill": "strategic_rule_design",
       "commonError": "misapplies_strategic_rule_design_synthesis",
       "feedback": "The contract changes B's action after High from Not Match to Match. Firm A receives 8−1=7, exceeding 6 from Medium and 2 from Low.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "image": "gametreetwo.webp",
       "graphRequired": true,
       "aHash": "3a1d5ae3d60c68f2d271419aa22bbf17a803a2ea83f14e120c89d0d337b6b702"
@@ -11725,7 +11725,7 @@ window.questionBanks = {
       "repairSkill": "strategic_bargaining",
       "commonError": "misapplies_strategic_bargaining_recognition",
       "feedback": "Strategic bargaining focuses on how timing, commitments, threats, and responses shape the result.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "1d8f9c2b06f73ef0eb1a81e9e7f015034388d397c770af2b2cf778fc9c4c5042"
     },
     {
@@ -11748,7 +11748,7 @@ window.questionBanks = {
       "repairSkill": "strategic_bargaining",
       "commonError": "misapplies_strategic_bargaining_application",
       "feedback": "After Stand Firm, the union prefers Strike because 5>2. After Compromise, it anticipates Concede and compares 3 from demanding more with 4 from accepting, so it accepts.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "image": "gametreethree.webp",
       "graphRequired": true,
       "aHash": "3c6427c3aabbab85a073362c335a2e94475b525cfe954037429190548543cb5a"
@@ -11773,7 +11773,7 @@ window.questionBanks = {
       "repairSkill": "strategic_bargaining",
       "commonError": "fails_to_compare_root_payoffs_after_commitment",
       "feedback": "With the union committed to Demand More, the company anticipates Concede and gets 3. Stand Firm leads to Strike and payoff 1, so the company chooses Compromise.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "image": "gametreethree.webp",
       "graphRequired": true,
       "aHash": "95d4c13590b015ebe6c3e924834bd8196b6a1ffcd1cc233dc98052e3287d0e00"
@@ -11798,7 +11798,7 @@ window.questionBanks = {
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "misapplies_nonstrategic_bargaining_recognition",
       "feedback": "The bargaining surplus is what remains after both parties' outside options are protected.",
-      "bossStage": "recognition",
+      "bossStage": "opening",
       "aHash": "10aadae96d1f36389c8b9676203bc07670bc1f3eed67ae6d98f92538d0f95440"
     },
     {
@@ -11821,7 +11821,7 @@ window.questionBanks = {
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "misapplies_nonstrategic_bargaining_application",
       "feedback": "The surplus is $120−$30−$20=$70. Half is $35, added to the seller's $30 outside option, giving $65.",
-      "bossStage": "application",
+      "bossStage": "middle",
       "aHash": "71b7b594d8a639374e8d9e9e34f198055b91b513d25c2b44203774fdfa5b5ab3"
     },
     {
@@ -11844,7 +11844,7 @@ window.questionBanks = {
       "repairSkill": "nonstrategic_bargaining",
       "commonError": "misapplies_nonstrategic_bargaining_synthesis",
       "feedback": "Initially the surplus is 12, so payoffs are 10 and 8. After the union outside option rises, surplus falls to 9; equal shares produce 8.5 for the firm and 9.5 for the union. The union gains 1.5 and the firm loses 1.5.",
-      "bossStage": "synthesis",
+      "bossStage": "final",
       "aHash": "4c0a53170cfa54bc94c68a57179942cadc669f800eb8eaf68fb85934576d386b"
     }
   ],
@@ -13084,15 +13084,15 @@ window.questionBanks = {
     {
       "id": 9156,
       "sourceGame": "strategyDesk",
-      "q": "A gym charges a $100 membership fee plus marginal-cost pricing for visits. A customer’s consumer surplus at the visit price is $140. What is the largest fee that keeps participation strictly attractive?",
+      "q": "At the marginal-cost usage price, a customer has $140 of consumer surplus before a membership fee. Fees can be any nonnegative real amount. Which range of fees makes joining strictly preferable to staying out?",
       "options": [
-        "Any fee below $140",
-        "Exactly $140, leaving the customer indifferent between joining and not joining",
-        "$100",
-        "$240"
+        "0 ≤ fee < $140",
+        "0 ≤ fee ≤ $140",
+        "Fee = $140 only",
+        "Fee > $140"
       ],
       "tag": "consumer_surplus_extraction",
-      "type": "trap",
+      "type": "interpretation",
       "objective": "LO14.3",
       "difficulty": "legendaryBoss",
       "conceptCluster": "LO14.3_strategy_desk",
@@ -13100,8 +13100,8 @@ window.questionBanks = {
       "secondarySkills": [],
       "repairSkill": "consumer_surplus_extraction",
       "commonError": "confuses_weak_and_strict_participation",
-      "feedback": "A fee of $140 leaves zero surplus and only weak participation. Strict participation requires a fee below $140.",
-      "aHash": "776e6d4ab579e1e7bfe537d23cf4126b115522f0c5481ae4eb985677ba817005"
+      "feedback": "Strict participation requires positive net surplus: $140 − fee > 0. The full feasible range is 0 ≤ fee < $140; equality gives indifference. There is no largest real-valued fee in this open-ended range.",
+      "aHash": "230084c94beba75bc5abd5cf34d04e15b815047e15d3123bc4dcd17c7502c588"
     },
     {
       "id": 9157,
@@ -14403,12 +14403,12 @@ window.microSkillRepairPools = {
     {
       "id": 5036,
       "sourceGame": "strategyDesk",
-      "q": "What makes price discrimination direct?",
+      "q": "A manager says any two different posted prices prove direct price discrimination. What additional fact is needed?",
       "options": [
-        "The seller observes or verifies the customer's group before assigning price",
-        "Customers choose among product versions without being identified",
-        "Let every customer claim an anonymous discount without verifying any segment characteristic",
-        "The price changes with aggregate demand"
+        "The two prices produce the same sales volume",
+        "The lower price covers fixed cost",
+        "The seller assigns prices using a verified customer characteristic",
+        "The customer chooses freely between versions with different restrictions"
       ],
       "tag": "segmentation",
       "type": "repair",
@@ -14418,9 +14418,9 @@ window.microSkillRepairPools = {
       "primarySkill": "direct_price_discrimination",
       "secondarySkills": [],
       "repairSkill": "direct_price_discrimination",
-      "commonError": "misapplies_direct_price_discrimination",
-      "feedback": "Direct discrimination uses observable characteristics or verified eligibility.",
-      "aHash": "3297ccf9216e26bc36b0bbb86a2d9a5b83941916404ee58f380765c51fb5f0e5"
+      "commonError": "confuses_price_menu_with_verified_group_pricing",
+      "feedback": "Direct discrimination uses an observed or verified group to assign price. A menu of versions can instead induce self-selection, which is indirect discrimination.",
+      "aHash": "44af3a57855186dd9d8cf8bcca941569e93ccc757d57fd620d9553729104a52b"
     },
     {
       "id": 5037,
@@ -16561,7 +16561,7 @@ window.microSkillBridgePools = {
       "q": "Which change would most increase cannibalization of the premium plan?",
       "options": [
         "Tightening the basic plan's usage cap",
-        "Make the low-price version identical to premium and let heavy users avoid usage charges",
+        "Adding a premium-only feature valued mainly by heavy users",
         "Charging heavy users by use",
         "Removing nearly all differences between basic and premium"
       ],
@@ -16672,24 +16672,24 @@ window.microSkillBridgePools = {
     {
       "id": 6058,
       "sourceGame": "strategyDesk",
-      "q": "Why can a $95 bundle work better than separate high prices in the previous example?",
+      "q": "Two buyers value goods A/B at ($90,$10) and ($20,$80). Each wants at most one of each good and buys when indifferent. Costs are zero. Why does a $95 bundle earn more than separate prices of $90 for A and $80 for B?",
       "options": [
-        "Both buyers value the combined package at $100",
-        "Bundle products without comparing customer valuations or profits from separate and mixed sales",
-        "It directly verifies customer identity",
-        "It prevents all competition"
+        "The bundle sells twice for $190, whereas those separate prices earn $170",
+        "The separate prices sell both goods to both buyers and earn $340",
+        "The bundle earns $95 because only one buyer values both goods",
+        "The bundle earns $200 because revenue equals total willingness to pay"
       ],
       "tag": "bundling",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO14.4",
       "difficulty": "bridge",
       "conceptCluster": "LO14.4_bridge",
       "primarySkill": "bundling",
       "secondarySkills": [],
       "repairSkill": "bundling",
-      "commonError": "misapplies_bundling",
-      "feedback": "The bundle captures both buyers because their total valuations are similar.",
-      "aHash": "ea02a228d8a2b8806c59ff532a2a8a9fe37f0fff806c90940aec53a29ff99385"
+      "commonError": "counts_willingness_to_pay_as_revenue",
+      "feedback": "Each bundle is worth $100, so both buyers pay $95. At the specified separate prices, only the first buyer purchases A and only the second purchases B: $90 + $80 = $170. The comparison concerns these stated prices.",
+      "aHash": "7764749e831e90d891e68593dcc397f0b449fcf5669e982f5c5503856c1a04df"
     },
     {
       "id": 6059,

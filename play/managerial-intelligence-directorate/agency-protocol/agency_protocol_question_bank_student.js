@@ -2676,12 +2676,12 @@ const questionBanks = {
     {
       "id": 101,
       "sourceGame": "agencyProtocol",
-      "q": "A used-car buyer cannot tell whether a car is reliable or defective before purchase. What information problem is present?",
+      "q": "A shipping insurer finds that new customers had fewer damage claims than comparable firms before enrollment. Their handling practices have not changed after enrollment. Which interpretation fits this evidence?",
       "options": [
-        "Adverse selection",
-        "Shirking",
-        "Moral hazard",
-        "Decentralization"
+        "Moral hazard because coverage changed handling effort",
+        "Adverse selection because new customers have higher hidden losses",
+        "Favorable selection because the enrolled group already had lower risk",
+        "A causal prevention effect because insurance must have improved handling"
       ],
       "tag": "adverse_selection",
       "type": "interpretation",
@@ -2691,9 +2691,9 @@ const questionBanks = {
       "primarySkill": "hidden_information_before_contract",
       "secondarySkills": [],
       "repairSkill": "hidden_information_before_contract",
-      "commonError": "confuses_hidden_information_before_contract_with_hidden_action_after_contract",
-      "feedback": "The seller knows more about the product's quality before the transaction.",
-      "aHash": "31e55046b3ece7183b1f616a145a03936065f7548d4dae52c5583dd6e87e8bb0"
+      "commonError": "confuses_selected_risk_composition_with_post_contract_behavior",
+      "feedback": "The difference predates coverage, so it concerns who enrolled rather than a behavioral response to insurance. Selection of lower-risk customers is favorable selection; it is not evidence that coverage changed behavior.",
+      "aHash": "35a8882d927c93c3f3ca25c0b1f80231f11545f9af95259fdeb1f8306fb9cb2c"
     },
     {
       "id": 102,
@@ -10381,15 +10381,15 @@ const microSkillRepairPools = {
     {
       "id": 5004,
       "sourceGame": "agencyProtocol",
-      "q": "Screening occurs when...",
+      "q": "A learner calls an employer-required work sample a signal sent by an applicant. Which distinction corrects the classification?",
       "options": [
-        "The uninformed side tries to learn hidden information",
-        "The informed side voluntarily reveals quality",
-        "An employee reduces effort after hiring",
-        "A division manager pads a budget"
+        "Screening starts with the less-informed employer seeking information",
+        "Screening requires monitoring effort after hiring",
+        "Signaling includes every test required by an employer",
+        "Signaling means an employer hides the job requirements"
       ],
       "tag": "screening",
-      "type": "definition",
+      "type": "interpretation",
       "objective": "LO19.3",
       "difficulty": "repair",
       "conceptCluster": "repair_agency_protocol_screening",
@@ -10397,8 +10397,8 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "screening_hidden_type",
       "commonError": "confuses_screening_by_the_less_informed_party_with_signaling_by_the_informed_party",
-      "feedback": "Screening is used by the less-informed side to sort different types before a transaction.",
-      "aHash": "698251053a693b4e1e31f80e8c60585fb06801f7a94238151ab786216fd64941"
+      "feedback": "The employer initiates a test to learn applicant type before hiring. That is screening; an applicant voluntarily presenting credible evidence is signaling.",
+      "aHash": "8416f171237f322939c4a275b12e5eb7d516898f19b4e61cfd05e79ad7177d9c"
     },
     {
       "id": 5005,
@@ -10427,15 +10427,15 @@ const microSkillRepairPools = {
     {
       "id": 5006,
       "sourceGame": "agencyProtocol",
-      "q": "Signaling occurs when...",
+      "q": "An unknown seller claims its product is reliable. What must be established before treating the claim as a credible quality signal?",
       "options": [
-        "The informed side voluntarily reveals information about itself",
-        "The uninformed side runs a test before the deal",
-        "An employee hides effort after hiring",
-        "A firm sets an internal price"
+        "Whether reliable sellers use longer advertisements",
+        "Whether the claim is more costly for low-quality sellers to imitate",
+        "Whether all sellers charge the same price",
+        "Whether buyers can change effort after purchase"
       ],
       "tag": "signaling",
-      "type": "definition",
+      "type": "interpretation",
       "objective": "LO19.4",
       "difficulty": "repair",
       "conceptCluster": "repair_agency_protocol_signaling",
@@ -10443,8 +10443,8 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "credible_signaling_hidden_type",
       "commonError": "assumes_any_claim_is_a_credible_signal_without_costly_verification",
-      "feedback": "Signaling is when the informed party tries to credibly reveal hidden quality or ability.",
-      "aHash": "0cf17b675c566a4c03782598523d7017a28eacf411275ff7828adb08bd1ad27a"
+      "feedback": "A claim separates types only if imitation is sufficiently unattractive to lower-quality sellers. Cheap claims by themselves need not reveal quality.",
+      "aHash": "ec29f5e3b1ff10d21c35f2661318df7dd5ab68fee712b07b9bdd0011c9f055b8"
     },
     {
       "id": 5007,
@@ -10703,15 +10703,15 @@ const microSkillRepairPools = {
     {
       "id": 5018,
       "sourceGame": "agencyProtocol",
-      "q": "A principal-agent relationship exists when...",
+      "q": "A learner says the purchasing manager is the principal because the manager chooses suppliers. Which role distinction is correct?",
       "options": [
-        "One party makes decisions on behalf of another",
-        "Both parties have identical information and goals",
-        "No delegation exists",
-        "A firm sells only one product"
+        "The party with more information must be the principal",
+        "A supplier becomes the principal by accepting an order",
+        "The owner delegates the decision; the manager acts as the owner’s agent",
+        "Decision authority removes the distinction between principal and agent"
       ],
       "tag": "principal_agent",
-      "type": "definition",
+      "type": "interpretation",
       "objective": "LO21.1",
       "difficulty": "repair",
       "conceptCluster": "repair_agency_protocol_principal_agent",
@@ -10719,8 +10719,8 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "principal_agent_conflict",
       "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "The agent acts for the principal, but their incentives may differ.",
-      "aHash": "f8cc6d2faadca142f911d158b4dd9bd7f43708d7922420d32409123d097c374c"
+      "feedback": "The principal delegates a decision to an agent. Making the decision does not make the purchasing manager the principal in the owner-manager relationship.",
+      "aHash": "f46974ca69be0431104ecd75bd68f74b7855a733add37f499d7bc830325c50c0"
     },
     {
       "id": 5019,
@@ -10841,15 +10841,15 @@ const microSkillRepairPools = {
     {
       "id": 5024,
       "sourceGame": "agencyProtocol",
-      "q": "Centralization means...",
+      "q": "A branch gathers local demand data but must obtain headquarters approval for every price change. Where are the pricing decision rights?",
       "options": [
-        "Important decisions are made by higher-level managers",
-        "All decisions are made by customers",
-        "Each worker sets company strategy",
-        "No one has authority"
+        "At the branch because it collected the data",
+        "With customers because they determine demand",
+        "Split equally whenever two offices exchange information",
+        "At headquarters because final approval remains there"
       ],
       "tag": "organization",
-      "type": "definition",
+      "type": "interpretation",
       "objective": "LO21.4",
       "difficulty": "repair",
       "conceptCluster": "repair_agency_protocol_organization",
@@ -10857,21 +10857,21 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "organization",
       "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Centralization keeps decision authority near the top.",
-      "aHash": "3408805d2f849a4c6587907415a4f8d51f5aa5e2b6bdc341cfda9445c36e4eb8"
+      "feedback": "Information collection and decision authority are different. Final approval at headquarters makes the pricing decision centralized.",
+      "aHash": "f765dd3d94e6dc9346f18fb572bb9aeff8ed0ae2ebb2ad13325f3a9b1096b537"
     },
     {
       "id": 5025,
       "sourceGame": "agencyProtocol",
-      "q": "Decentralization means...",
+      "q": "Headquarters lets a regional manager approve service refunds within a limit and reviews the decisions later. Why is this still decentralization?",
       "options": [
-        "Decision-making authority is pushed lower in the organization",
-        "Only the CEO makes every decision",
-        "Managers have no discretion",
-        "Departments cannot act locally"
+        "The manager has delegated discretion even though oversight remains",
+        "Decentralization requires eliminating all limits and reviews",
+        "Every refund must first be approved by headquarters",
+        "Local discretion means the firm no longer bears refund costs"
       ],
       "tag": "organization",
-      "type": "definition",
+      "type": "interpretation",
       "objective": "LO21.4",
       "difficulty": "repair",
       "conceptCluster": "repair_agency_protocol_organization",
@@ -10879,23 +10879,23 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "organization",
       "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Decentralization gives lower-level managers more decision authority.",
-      "aHash": "471d9b7669b96853033b708e59d8bfe1e515aa51b85ee0b3e8043aa9d0212ba0"
+      "feedback": "Decentralization assigns meaningful decision rights locally. Limits, reporting and audits can accompany those rights; decentralization does not mean no accountability.",
+      "aHash": "392e5b1dbf235f2f93c5a633350916200a88785b8b7c3fabee81d5936cd624e0"
     }
   ],
   "gaming": [
     {
       "id": 5026,
       "sourceGame": "agencyProtocol",
-      "q": "Gaming incentives occurs when agents...",
+      "q": "A service team closes cases rapidly to meet its target, although many cases reopen. What explains why a higher measured score need not mean better performance?",
       "options": [
-        "Improve the measured target while hurting the real goal",
-        "Always maximize total firm value",
-        "Reveal hidden quality before a sale",
-        "Eliminate all monitoring costs"
+        "The target contains no incentive because output is counted",
+        "The measure rewards closure without fully measuring durable resolution",
+        "Any reopened case proves workers have low ability before hiring",
+        "Faster closure necessarily increases total customer value"
       ],
       "tag": "gaming",
-      "type": "definition",
+      "type": "interpretation",
       "objective": "LO21.5",
       "difficulty": "repair",
       "conceptCluster": "repair_agency_protocol_gaming",
@@ -10903,8 +10903,8 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "gaming",
       "commonError": "chooses_surface_match_instead_of_incentive_diagnosis",
-      "feedback": "Agents game incentives when they chase the metric instead of the true objective.",
-      "aHash": "016a742bb38676e53936b46322f9ba495e6842f24abafff902d47767e5a88103"
+      "feedback": "A narrow proxy can reward actions that raise the metric while missing the real goal. Quality and reopened cases reveal what the closure count omits.",
+      "aHash": "0a6f76eb85b770c8300d350492b830bcb23d86942021a7dc6b8cf73796547100"
     },
     {
       "id": 5027,
@@ -11001,12 +11001,12 @@ const microSkillRepairPools = {
     {
       "id": 5031,
       "sourceGame": "agencyProtocol",
-      "q": "Transfer pricing matters because it...",
+      "q": "A learner argues that an internal price cannot matter because the payment stays inside the firm. What does that argument miss?",
       "options": [
-        "Affects division incentives and reported profits",
-        "Eliminates all coordination problems",
-        "Prevents moral hazard in insurance",
-        "Makes all divisions cost centers"
+        "Internal payments always create new revenue for the parent",
+        "Transfer prices must equal historical fixed cost",
+        "Internal prices can change divisional decisions even when the transfer cancels in total profit",
+        "Each internal payment is also a payment to an outside supplier"
       ],
       "tag": "transfer_pricing",
       "type": "interpretation",
@@ -11017,8 +11017,8 @@ const microSkillRepairPools = {
       "secondarySkills": [],
       "repairSkill": "transfer_pricing_internal_trade",
       "commonError": "sets_transfer_price_from_division_politics_instead_of_opportunity_cost_and_total_firm_value",
-      "feedback": "Internal prices shape how division managers behave.",
-      "aHash": "5d8e5e1906ab17da5cd9e05e7489f1cd9e080221fbc95d894659ba2a36d4e499"
+      "feedback": "The accounting transfer cancels at firm level, but local managers may change sourcing, output or sales in response to their own measured margins.",
+      "aHash": "c0534d2bcbd00d0322def1bfca12b1c30c04c437a47caf68d7a422387cb0541b"
     }
   ],
   "profit_center": [
@@ -11718,12 +11718,12 @@ const microSkillBridgePools = {
     {
       "id": 6018,
       "sourceGame": "agencyProtocol",
-      "q": "A principal-agent problem is most likely when...",
+      "q": "An owner delegates contract renewal to a manager. The manager chooses a supplier that offers personal travel benefits despite a better offer for the firm. Which feature makes this an agency conflict?",
       "options": [
-        "An agent makes decisions for a principal but has different incentives",
-        "Both parties have identical goals and information",
-        "No decision authority is delegated",
-        "The relationship has no information problem"
+        "The supplier and owner must have the same objective",
+        "The manager holds an outside job offer",
+        "The firm uses no internal transfer price",
+        "Private benefits can distort a decision made on the owner’s behalf"
       ],
       "tag": "principal_agent",
       "type": "diagnostic",
@@ -11734,8 +11734,8 @@ const microSkillBridgePools = {
       "secondarySkills": [],
       "repairSkill": "principal_agent_conflict",
       "commonError": "assumes_principal_and_agent_objectives_are_automatically_aligned",
-      "feedback": "Agency problems require delegation plus possible incentive conflict.",
-      "aHash": "5adcb3b0f595c1fcede000755e150e23b523dec043179c62eb98723897d1f949"
+      "feedback": "The manager acts for the owner but benefits personally from a choice that harms the owner. Delegation and divergent incentives create the conflict.",
+      "aHash": "0db171d832075b0c20aecf9d416afb663bb9ff061e9ad527544e412e3441f1ad"
     },
     {
       "id": 6019,

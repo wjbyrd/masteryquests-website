@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import {newState,complete,restore,policyGauges,contextualPuzzle,FINAL_ORDER} from '../../game/games/the-shock-house/engine.js';
+import {PUZZLES} from '../../game/games/the-shock-house/content.js';
+let assertions=0;
+const check=(value,message)=>{assert(value,message);assertions++;};
+const state=newState();
+for(const id of PUZZLES)check(!complete(state,id).ok,`${id} must reject incomplete evidence`);
+state.inspectedObjects=['pay','food','bills','notebook','invoices','production','stock','national','badge-used'];
+state.budget={march:[3000,1400,600,200],april:[3200,1500,800,500]};
+check(complete(state,'budget').ok);check(restore(state));
+const inventoryLength=state.inventory.length;check(complete(state,'budget').ok);check(state.inventory.length===inventoryLength,'No duplicate rewards');
+state.invoices=['early','middle','late'];check(complete(state,'cost').ok);check(restore(state));
+state.jobs=['A','B','C'];check(!complete(state,'orders').ok,'A loss-making job must be rejected');state.jobs=['A','C'];check(complete(state,'orders').ok);check(restore(state));
+state.connected=['household','costs','staffing'];state.indicators=[-1,1,1];check(complete(state,'indicators').ok);check(restore(state));
+state.broadcastSequence=['March 16','March 14','March 21'];check(!complete(state,'radio').ok);state.broadcastSequence=['March 14','March 16','March 21'];check(complete(state,'radio').ok);check(restore(state));
+state.visitedRooms.push('policy');state.inventory=[];state.currentRoom='policy';
+state.seals=['prices','work'];state.policyTried=['tight'];check(!complete(state,'policy').ok);state.policyTried.push('loose');check(complete(state,'policy').ok);check(restore(state));
+for(let v=-3;v<=3;v++){const gauges=policyGauges(v);check(gauges.inflation>=4&&gauges.conditions<=6,'No costless equilibrium exists');if(v<3){const next=policyGauges(v+1);check(next.inflation>gauges.inflation&&next.conditions>gauges.conditions,'Both gauges rise as demand loosens');}}
+state.finalSequence=[...FINAL_ORDER];check(complete(state,'exit').ok);check(restore(state));
+check(contextualPuzzle(state,'exit')===null,'No stale hint after all puzzles');
+const finalAttempts=state.finalAttempts;complete(state,'exit');check(state.finalAttempts===finalAttempts,'Repeated solved action must be idempotent');
+for(const patch of [{version:2},{budget:null},{invoices:null},{hintLevels:null},{settings:null},{solvedPuzzles:['policy']},{evidence:[]},{inventory:['badge']},{date:'<script>'},{stage:'results',transferDone:false},{finalSequence:[]}])check(restore({...state,...patch})===null,'Malformed save rejected: '+JSON.stringify(patch));
+state.stage='reveal';state.transfer=[1,1,-1];state.transferDone=true;check(restore(state));state.stage='results';check(restore(state));
+console.log(JSON.stringify({passed:true,assertions}));

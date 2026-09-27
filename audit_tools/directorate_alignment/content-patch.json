@@ -1,0 +1,1992 @@
+{
+  "version": 1,
+  "changes": [
+    {
+      "game": "cost-directive",
+      "id": 208,
+      "before": "b9cc7486ef62a4eee0b9d33c41385e805b7c4816b6c62c578a3c95f91bf0190b",
+      "after": "70b013308d84fb6d7622edd864e9ca98fbc768e845b00c899542dcb7b42ff968",
+      "fields": {
+        "type": "diagnosis",
+        "commonError": "rewards_invoice_savings_while_ignoring_known_rework_cost"
+      }
+    },
+    {
+      "game": "cost-directive",
+      "id": 225,
+      "before": "93d4ce1f7fdf8675d95f13faf77298c55598c675010333f971fd9ec9c4baa9d5",
+      "after": "d6cef1596a774d8ebac42db87bb960ebe0eab7619fe83117983f648ba13d3286",
+      "fields": {
+        "type": "calculation"
+      }
+    },
+    {
+      "game": "cost-directive",
+      "id": 9011,
+      "before": "692f2108cd3785c90cae21aaa2cde17a3705b925362a55c91d0a25069f9a7957",
+      "after": "fa04e5c60b825acad05777db05b204f5b9fd2f249df85797273d383126941050",
+      "fields": {
+        "q": "Regional managers know which service requests customers value, while headquarters knows the cost of sharing specialist capacity across regions. A regional margin bonus ignores delays imposed on other regions. Which design uses both sources of information and aligns pricing decisions?",
+        "options": [
+          "Keep local pricing, share capacity costs, and charge each region for the delays its accepted work imposes",
+          "Keep local pricing and share capacity costs, but retain the regional margin bonus without delay charges",
+          "Move all pricing to headquarters, use capacity costs, and stop collecting local customer information",
+          "Keep local pricing and replace the margin bonus with a revenue bonus while sharing capacity reports"
+        ],
+        "aHash": "24d577358536062e6444234fe6a99a35547726f430dcfaed382a9c4771510ce4",
+        "feedback": "Local demand information and central capacity information are complementary. Sharing data addresses the information gap; making regions bear the costs they impose addresses the incentive gap. Data alone leaves the narrow bonus distorted.",
+        "type": "integration",
+        "secondarySkills": [
+          "incentive_system_design"
+        ],
+        "commonError": "fixes_information_without_fixing_cross_region_incentives"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9108,
+      "before": "ff8db6665b6c20186e54ec103a627bfe544e703c3f6d868dae6d189119f04eed",
+      "after": "29498cd38762b0269c90f44212f56fec3a3de14da64aabe069c41f37a5da1bdf",
+      "fields": {
+        "options": [
+          "Operate, because its $60,000 contribution exceeds the $40,000 avoidable fixed cost",
+          "Shut down, because total revenue is below total cost",
+          "Operate, because the $90,000 unavoidable fixed cost can be recovered",
+          "Shut down, because any avoidable fixed cost requires closure"
+        ],
+        "aHash": "bef83cbf8ae7a935810df35e505c31f268b3019ea685a2b4b681551550a846c7"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9109,
+      "before": "fb66f9860e2f167f9b2fd18c3cd9fcdfc992bc8d42bb9272bb6820c16eba0c1f",
+      "after": "3d08e9d91e9affb29f9c5edfb72a0bafd61a103938d4ac178e73d146f0db28c3",
+      "fields": {
+        "options": [
+          "Abandon, because total expected revenue is below the full $960,000 historical cost",
+          "Finish, because the expected incremental payoff is $318,000, which exceeds the $260,000 completion cost",
+          "Finish only if the $700,000 can be recovered from the customer",
+          "Abandon, because the failure payoff is below the completion cost"
+        ],
+        "aHash": "b96ce070b3abd77f81ad5e8e0169b7b884237e2b1170d8ec5e93920f1d8fe88d"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9110,
+      "before": "a4a6713bc6599c44683a7a3401731b7d38531f06df580db7901ab9c03bfd2d78",
+      "after": "18fc1700440c3bb9243ce3598d3e5ff27f091532d5c44fdda09f14853a3c77e4",
+      "fields": {
+        "options": [
+          "A nonbinding promise to negotiate fairly after the equipment is installed",
+          "A spot-market agreement that lets the buyer reset price every month",
+          "A long-term contract with a price-adjustment formula, minimum-purchase commitment, and verifiable termination payment",
+          "A clause requiring the supplier to absorb every unforeseen cost without renegotiation"
+        ],
+        "aHash": "b2121d6314c4d015bff97036c0d8333e3d3f070b4ca19df6c5e298e7d96a6310"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9111,
+      "before": "1fe46bf08961bf39d8914167187fad2773170803cf34956564efef093fda21b0",
+      "after": "61499a46628b7099355b49c790d818da36897098c59b33afdef44a64b9c6e904",
+      "fields": {
+        "options": [
+          "The firm investing first promises not to sue",
+          "Both firms leave all terms open until after investment",
+          "The larger firm receives a unilateral cancellation right",
+          "Each firm posts an asset or performance bond that it loses if it opportunistically abandons the agreement"
+        ],
+        "aHash": "1562ba7ba1c8f7510bf9ac9b97a5f03d12b1a46098059e0daf87e2bd3bd76553"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9115,
+      "before": "3fee6bf268a55b70019b761d4027723b1294917188d53902522b42256662e466",
+      "after": "931457337aadf659b9414f212875add8b8eca9f4ed082ca4a3c7881ee323330f",
+      "fields": {
+        "options": [
+          "$969,000",
+          "$369,000",
+          "-$81,000",
+          "$1,811,736"
+        ],
+        "aHash": "0ca0bf7c5aec9a6075808010b31ea59fd6d00780fcd9cc89d2493a7ad76371f7"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9120,
+      "before": "44bb3f11218201ee5ed9147978f8609a34069d08b49586c1fe3b3fe7d86f333d",
+      "after": "66b5a4b884be7c77acffe9853cdb055d5d3b5d05c83f8c95cd550b0a6084b25d",
+      "fields": {
+        "options": [
+          "An objective steel-price index adjusts input-related payments, while volume bands and renegotiation triggers address extreme demand states",
+          "The buyer may cut any payment whenever its profit falls",
+          "The supplier sets any price needed to preserve its margin",
+          "The original price never changes, regardless of shocks or market collapse"
+        ],
+        "aHash": "f768429d229d55b0d968094484afd24a3970f48bbf963f45449c54c8392c3169"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9122,
+      "before": "fa1270e790d86e612949dfc4dd0570184cc6e7482169d5794732c253d8cf5a8e",
+      "after": "153c02b81aa1d603b6ce918fd9f0d0ac6cb7887b14323080f3da741610819a9a",
+      "fields": {
+        "options": [
+          "40.0%",
+          "71.4%",
+          "About 28.6%",
+          "60.0%"
+        ],
+        "aHash": "dc55c1b6e49ffa22d1258765937e25b8ee3ac95cd6132c6a66f365caef17c7bb"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9123,
+      "before": "04802f57ed462b16dfb65d3a665770f941e4df5c1d17e0601f0c814352746557",
+      "after": "1b26e107d739c22eb6f12c47b8e418dd4a216b8c905f028755376dbd5f0bab40",
+      "fields": {
+        "options": [
+          "False flags, costing about $388,000 versus $54,000",
+          "The costs are equal because both are classification errors",
+          "False flags, because legitimate transactions are more common",
+          "Missed fraud, costing about $48,600 versus $15,520 for false flags"
+        ],
+        "aHash": "70b7645de79794023e23e7efd453d1d85e514d8ad424b89bbb54e9358144f284"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9125,
+      "before": "b2c4d0186323af4244ae69ea015bf8799e2e1c8b8291340e89904fe10ab30736",
+      "after": "59614cdb4c901a5312af6c76c18ab06dba752889821a1de79359da4d4d07414a",
+      "fields": {
+        "options": [
+          "The app caused an 11% productivity gain",
+          "The 11-point gap is not a causal estimate because self-selection and different prior trends contaminate it",
+          "The app caused a 14% gain because volunteers used it",
+          "The app had no effect because both groups improved"
+        ],
+        "aHash": "d45bb95a0355f5db2e42d251f12d34b7d95e10924cd5fb064694d23725928552"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9127,
+      "before": "e8df301448004192c5a59b45805870731659e4c3b0c922f18bde7ce4e4a9811d",
+      "after": "039e3d9673e841b55f3d57a77805d3a37bcca99076aa03a7198cec42240e5547",
+      "fields": {
+        "options": [
+          "Difference-in-differences requires identical sales levels before treatment",
+          "The control group must receive the policy later",
+          "The treatment effect is automatically 7% because 8 minus 1 equals 7",
+          "The groups did not exhibit parallel pre-treatment trends, so the control may not represent the treatment counterfactual"
+        ],
+        "aHash": "4b8547ace177d0c0f3c4bffa4bfad4129da3d4ecf7e75e62112d5b5cede874e8"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9128,
+      "before": "393f338e4c151a8fb57c1e4171d96793c3785bcca6c5106fe2ffd5d720bdb0f6",
+      "after": "a9bc9ffeffd21760d47c6981367d652a2eb4daa9f3732c5dce38472028bc23da",
+      "fields": {
+        "options": [
+          "Randomize entire branches and analyze outcomes with branch-level clustering",
+          "Randomize employees within each branch and ignore coworker contact",
+          "Let managers choose which employees receive the script",
+          "Compare top-performing branches with bottom-performing branches"
+        ],
+        "aHash": "6352c9852a3d692a4baa8efd42ddae4dea804285b2fde62f652e76f143d95bb2"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9129,
+      "before": "c25278b209bb011980d6d0956ea556a27abe2f5a73424dcb6857bc4685ca8bde",
+      "after": "1fe88574a658d50430cd89f7778fa7ff2a73212042eb38b7feefbea735708c03",
+      "fields": {
+        "options": [
+          "Random assignment guarantees unbiased results regardless of dropout",
+          "Differential attrition can destroy comparability even though initial assignment was random",
+          "The treatment effect must be negative because more treated workers left",
+          "Attrition matters only when total sample size falls below 100"
+        ],
+        "aHash": "3dda09dfbbdf67a14f01549b7ce9663ea1be203dccb5de856b5d6ba4901feb8d"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9130,
+      "before": "de87a880fd57dc8976d70a09419ce2c5d18439bb222c721e341b820691c62a6f",
+      "after": "1e3851588dd8485aba7184abd0a3879a724a1a032f798707916834e6e9b3d742",
+      "fields": {
+        "options": [
+          "Compare redeemers with nonredeemers",
+          "Drop control customers who found other coupons",
+          "Compare outcomes by randomized offer assignment, regardless of actual redemption",
+          "Compare only customers who followed their assigned condition"
+        ],
+        "aHash": "59338c6ba72cecfbb3bc7901d220b214fd1eb2050b7e0532a989570166263b3b"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9131,
+      "before": "d0d38d5512fc7e4d2d669aa6231ae3d4ef1e725eecf6c3d02d284795e5c8819b",
+      "after": "57bcc7d53d292cd4222a4c183023c9bad76714868742b9848a0b10b5097f4bae",
+      "fields": {
+        "options": [
+          "Hourly checks reduce sample size to zero",
+          "A p-value below 0.05 proves the effect is economically important",
+          "Stopping early always increases Type II error but never Type I error",
+          "Repeated opportunities to stop on a random favorable fluctuation raise the overall Type I error rate"
+        ],
+        "aHash": "7270f9a31216bd9a6a803a3db4c10447516a3ea3c3e2d884eeb8bf6beaccdbda"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9133,
+      "before": "78733ba11beabad1ef3fefb884784e8b55b1c02ac10cc07d44196cd1e0ad37b1",
+      "after": "b1d326cc33742a409eb700b01d6b749885cfb48530ee219a5b2271ca1ef076ec",
+      "fields": {
+        "options": [
+          "The model must overstate expected revenue because all correlations raise means",
+          "The model may understate joint bad or margin-compressing states by breaking the observed dependence structure",
+          "Independence changes no risk estimate as long as each variable has the correct average",
+          "The model becomes a randomized experiment"
+        ],
+        "aHash": "2a536e751f277e1b1a31e31a4fca27656f6f464b4c340558f9b173384aabc39a"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9134,
+      "before": "a1a7fde248da79ecb50a493a192c9c5a613f91b407a680103ec82f75dc339036",
+      "after": "900c89f5d08d68459f5ab5bfa5181e1f0c7cf19e3c86750562749cd8f7eb7982",
+      "fields": {
+        "options": [
+          "Charge everyone $60; expected revenue is $73,200",
+          "Charge everyone $100; expected revenue is $42,000",
+          "Charge $100 to the high-value segment and $60 to the low-value segment; expected revenue is $90,000",
+          "Charge both segments $80; expected revenue is $97,600"
+        ],
+        "aHash": "6ea30e8d4358d0089463dc4cd46669532d33cbe5a81dd25c4a8619377332fe6f"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9135,
+      "before": "bf25276e0c1ed7c976574b4305dbbcedb08edee1c255e7e2496244c868f568b2",
+      "after": "084b48b189ea5b0d7f45c7fbff577f6a3e2eb9158f8e5b38670149e16a23cc80",
+      "fields": {
+        "options": [
+          "Business demand is less elastic than student demand",
+          "The firm can verify student status before purchase",
+          "Marginal cost is low",
+          "Students can cheaply resell licenses to businesses, undermining separation between segments"
+        ],
+        "aHash": "dc0c734d3483d33e94f524a08605ca127cfca76c3a2e2b4f8fe2362ab6344932"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9137,
+      "before": "2f687adfeb2d7555558d5d2aa79fdfd0625cd2a1611cf025ab913c6f9b0729b6",
+      "after": "416b2c761e62f5d4f00831c992dfb6700474babdfd3c87f0d9cac07c1956b431",
+      "fields": {
+        "options": [
+          "The treatment has no effect on any customer",
+          "The overall average can hide economically important heterogeneous effects that support targeted pricing",
+          "Randomization failed because subgroup effects differ",
+          "The discount should be offered to everyone because the average is zero"
+        ],
+        "aHash": "41b070198dd2b0e16208cd582714d63e6ccb4c68a801d7715723c93958578359"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9139,
+      "before": "067747a977b02ac0f81f2a7094dea69fc170a4107b9ed47e807b829b24c89390",
+      "after": "8d441ff5a49c9e87934617ddda4d83c128609b8876de37c905cf06004433a1ea",
+      "fields": {
+        "options": [
+          "Write a contract claiming every possible future event is already covered",
+          "Give one party unrestricted authority with no compensation rule",
+          "Delay all investment until uncertainty disappears",
+          "Assign decision rights, define measurable performance boundaries, create an escalation process, and specify buyout or exit rules"
+        ],
+        "aHash": "16f03d7a08610ebabda1a5793d3b98d5d941acffe588b70b6f9898fdbf6733ed"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9140,
+      "before": "8ebe564c5bfadb13fecb572108e9ed57e0c204d2e145130517556919fbb3b8bd",
+      "after": "0d4ac460ad90f39442bb33aa4575784f447fcd278556a90ef96f1d419aa7f6b7",
+      "fields": {
+        "options": [
+          "The forecasts are overconfident or poorly calibrated because the event occurs only 50% of the time",
+          "The forecasts are perfectly calibrated because 100 is a large sample",
+          "The forecasts are underconfident because 50% is below 70%",
+          "Calibration cannot be assessed using repeated forecasts"
+        ],
+        "aHash": "d74b2800cf26b6f0e46d4732a7c0dc25b7007079241c8c1530045b670e3aa8d8"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9141,
+      "before": "e6239e09e875a3cf981ad50a45226bf30462e99195db64e8e9154a1622f6a356",
+      "after": "02683960250ffe13f19c3bdfca908735121e6270af5494214eaf07971713e63d",
+      "fields": {
+        "options": [
+          "Random assignment automatically created selection bias",
+          "Regression to the mean: extreme observations often move toward normal even without treatment",
+          "The stores improved because coaching must work retroactively",
+          "A control group is unnecessary when all selected stores were poor performers"
+        ],
+        "aHash": "2e229f99e680878201bc448a8dbc6082ee641c5bcb7fd99b65a5ded00c9ad871"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9144,
+      "before": "3d02c4eb9ea13de76278630a92fd402054019416a8b1b48c127fcffe141811b0",
+      "after": "9338295a4e6f249232833f3d565efd5e17ebfd38d3b1f9eb36ef64afd4565eab",
+      "fields": {
+        "options": [
+          "X and Y are close substitutes and likely belong in the same relevant product market",
+          "X and Y are complements and must be sold together",
+          "Brand Y belongs in every market where its buyers spend money",
+          "The evidence proves the geographic market is national"
+        ],
+        "aHash": "bc31686a15941fd2cdde3fa34cd8dd381ba5a235bebb4e5d4de3bf16282822e3"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9145,
+      "before": "d5ff380dedcbecb81aa98c36c7090e8f7ca36a7ece6aff03b930693bf2f5a99e",
+      "after": "b507729ee292be83806cb7b209f589bfdec1d7263092e2f9ce1476e00f03022e",
+      "fields": {
+        "options": [
+          "The cities must be one market because B's posted price is lower",
+          "The delivered price from B is $127, so B may not constrain A despite its lower posted price",
+          "Shipping costs never matter when products are identical",
+          "City A is automatically a monopoly market"
+        ],
+        "aHash": "7867b6a25ce756b24a9d05067ff76a2a60cd1bf658a3c9ccd8a44316dbdeba43"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9146,
+      "before": "d27c289c29a63307db3532c767673a8eefe86d77dcdaedf4d20cd1724d54fb84",
+      "after": "5b0999bac8e7d61ca7b0bafda1e75298767c30ee30e10e1fd497d0e9feeebc77",
+      "fields": {
+        "options": [
+          "Hotels use the same buildings on both dates",
+          "All hotel stays are identical because they involve lodging",
+          "Capacity cannot be shifted freely across dates, and consumers cannot substitute an ordinary week for the event weekend",
+          "A market must always cover an entire calendar year"
+        ],
+        "aHash": "b5d60af210aa75ebf800b68bdf0ca7fb19d88fb9d63d952af1995dc001acec19"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9149,
+      "before": "f3305aed5ddd12a79f61978a9431a0d8e3c91f452defcbb2fba8a61623d4411a",
+      "after": "59efcbb3ce9b9e29d1c5ba1d7f556e3231e9d107a2eb1bc25f8a333d5cc66fd8",
+      "fields": {
+        "options": [
+          "Price stays at $40 while quantity rises to 130",
+          "Price rises from $40 to about $41.67, and quantity rises from 100 to about 133.33",
+          "Price falls to about $38.33 while quantity rises to 126.67",
+          "Price rises to $50 while quantity stays at 100"
+        ],
+        "aHash": "8afd5ed892d542ea7f9c5cf47980725e8f59378228e2c12079542d014dd35f19"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9150,
+      "before": "839c9404f1b6ed59f55ac2bc1a0c7edef3f6b58c20af5007a38019ff6a473180",
+      "after": "83d4bd25b6900a01bc1503df3770a85e562ba797885e5a47bd90eab31fe0930d",
+      "fields": {
+        "options": [
+          "Demand increased while supply decreased",
+          "Demand decreased while supply increased",
+          "Demand increased from D0 to D1 and supply increased from S0 to S1",
+          "Demand and supply both decreased"
+        ],
+        "aHash": "9e0628fb6328c80fccbf67a6c936271e7780ab824891c9e1f928d536a30b33e0"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9154,
+      "before": "95fb3c00abda5a1b3964c296c5f211df4d89013385e963f829afdbccd86f51b0",
+      "after": "0eb5bc8c13eefdb998584cdaba15b037e4bceceba171b1196b3e08e970f07ac1",
+      "fields": {
+        "options": [
+          "The trade destroys $4 of surplus because seller cost is positive",
+          "The buyer alone gains $72 regardless of price",
+          "The trade creates $4 of total surplus and should occur if transaction costs are below $4",
+          "The seller alone gains $68 regardless of price"
+        ],
+        "aHash": "b4a084e36e454653a6570e04580e22df3ee98c470071b7185c5774f422d395af"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9155,
+      "before": "f80ba3f1f50ee98280b733230015106c74544bec8ca72a257a1b1476ff5bd3ee",
+      "after": "84e83822eae1ce5d7c49d402e68b83426208b2b7201a3676609a3cc7e4fdc8ec",
+      "fields": {
+        "options": [
+          "Two units, with price between $50 and $60",
+          "Four units, with price between $85 and $90",
+          "Five units, with any price above $95",
+          "Three units, with a clearing price between $70 and $75"
+        ],
+        "aHash": "be338bd19f9398560556b51b77c133dcbbc003fd5c7d2ab644a0fae76c773db8"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9159,
+      "before": "5c5f1d296e3ab2c7f1b32d63bfedf0c0f6ca6f955669737b78135ad1e83cc3be",
+      "after": "72a869d112ed52020db840f151b35913cf7b4d5ae27828a6b0c9cf32d7e0e0e3",
+      "fields": {
+        "options": [
+          "Buyers bear most of the burden because they legally purchase the good",
+          "Demand must be perfectly inelastic",
+          "The side that sends the tax payment to government bears the full burden",
+          "Sellers bear most of the tax burden, suggesting supply is less elastic than demand"
+        ],
+        "aHash": "bc0e8fdf1155c69ef462d592f25c32914d7d6e457ce83e36caf5ffaadbdaa3fe"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9160,
+      "before": "fb4d5da9a95ee540a94009141a715c93d677708ab3cc544d176e3a43fb2c16c7",
+      "after": "f3c703622e3702b8f34a3bcae710b3d1f34c770ffe60824ea497ccd1a295a7ed",
+      "fields": {
+        "options": [
+          "The segments may have sharply different substitution options, so aggregation hides heterogeneous demand responses",
+          "Elasticity cannot be calculated for services",
+          "All airline customers face identical opportunity costs",
+          "Market definition never affects estimated demand"
+        ],
+        "aHash": "d70e232ed00e1076844996d544cecd9497119542bc5046de59b381eb5e827029"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9162,
+      "before": "2f2df328b32ccb6534bd0492a2c1757b3f85ded61d22aee73c94002a22be0102",
+      "after": "95cf48c813b0ec8fc406bdf968a3473ee3341a2046e86ed7014f8f534aa9e504",
+      "fields": {
+        "options": [
+          "Ethanol demand decreases, while soy-feed supply increases",
+          "Ethanol supply increases, while soy-feed demand decreases",
+          "Ethanol supply decreases, while demand for soy-based feed increases",
+          "Both ethanol and soy-feed demand decrease"
+        ],
+        "aHash": "551d0478aa42072fb115bbfb3e52d1c48c711fc2a4bdec40cc1a038c946bff76"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9163,
+      "before": "bc9f0b77490478f8a372db7442a98fa96c1ea9183ce3842790ef9179c505dea1",
+      "after": "4904c33457d9f6f751b2f9bbc35e770d29fb530b0740961cee785bf6969fd149",
+      "fields": {
+        "options": [
+          "Current demand decreases and current supply increases, lowering price",
+          "Both current demand and supply increase, making price ambiguous and quantity higher",
+          "Expectations affect only future curves, never current behavior",
+          "Current demand increases and current supply decreases, raising price while leaving quantity ambiguous"
+        ],
+        "aHash": "add671e49ae5a8611a2aa53d151163880f10fadbf22b2f8d323636c2861ad5b3"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9165,
+      "before": "ccfcf50ce3e151af67e75ad03d07ef8179fb91e4cc51c67918458b43c7a66553",
+      "after": "5c0c441d4a34708a8f0ab2a4f19db1f7a79059d88beb9aee8fc955979e9bb54d",
+      "fields": {
+        "options": [
+          "Demand increased and supply decreased",
+          "Demand fell from D2 to D1 while supply increased from S2 to S1",
+          "Only supply decreased",
+          "Only demand increased"
+        ],
+        "aHash": "afcf0baf6c7027ae63371cea49e7d1620b188c4b5dc5204e1d384a10f4166077"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9166,
+      "before": "e8f39b65a1af6a17e68f3249339d15f742a1522e80f44374e3b40825ba7a087c",
+      "after": "268f39922273d3f73f659283cdb3c1452f90d5faa81826fd3550ec60d2657e50",
+      "fields": {
+        "options": [
+          "$480,000 profit, attracting exit that raises price",
+          "$240,000 loss, causing immediate shutdown",
+          "$240,000 profit, attracting entry that expands market supply and pushes price downward",
+          "$480,000 profit, with no long-run response because the firm is a price taker"
+        ],
+        "aHash": "e2b05951ae4ba111daae5a06ec1ad0606791e99c15af78462fc442a819ce3e9c"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9167,
+      "before": "58ce7d8eef11d68f2b98d144e6c1612b5f361cac2754d40b262255cb34c91a9d",
+      "after": "9c818c0123da4a9a9b018bbee5cc0a1eb4d996082a82b6fd57219b59fe0bb1cf",
+      "fields": {
+        "options": [
+          "The market moves to C; firms earn profit; exit shifts supply to S0",
+          "The market moves directly to D with no temporary profit signal",
+          "The market moves to B; losses cause exit; price rises further",
+          "The market moves to B; firms earn profit; entry shifts supply to S1; the market settles at D with price back at P1"
+        ],
+        "aHash": "f1642437c67a290ead836319a69efeeca49c0cca435327b74f04966e047542e6"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9168,
+      "before": "368956d0ca5a86410085988060b8374a8a87c95d54d210120eba3592d518186e",
+      "after": "1a91a85d1c8c2bd23aae041b97be358f547c28c6c247ac2bc77defae1a061c90",
+      "fields": {
+        "options": [
+          "Firms incur losses, exit shifts supply left from S1 toward S0, and the market moves toward A",
+          "Firms earn profit, entry shifts supply farther right, and price falls below P0",
+          "Firms shut down permanently with no market-supply change",
+          "Demand automatically shifts from D0 to D1"
+        ],
+        "aHash": "a4f0e3f03465ef6ddb1b03c34190ca5b7b2a89b77f8792dfcf4373601d1df86f"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9169,
+      "before": "d24792fa73bc5b6e6bbea9078c877b4056741e062aa8dbbc252ff0c5ad83cd09",
+      "after": "b2282fcc6960382c72e9ab96b24fe5630aa19e218ce5362a352c7695f5d218a6",
+      "fields": {
+        "options": [
+          "Its price falls to P0, output falls, and it exits immediately",
+          "Its price rises from P1 to P2, output rises from Q1 to Q2, and it earns positive economic profit",
+          "Its price stays at P1 because competitive firms set market price",
+          "Its output rises but profit remains zero because MR always equals MC"
+        ],
+        "aHash": "6b6019e7244c3a1a2406c052381dee0fe73017bf0e694d636454d074df475789"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9170,
+      "before": "db16fc400e64311d9e03766ea0748f64ccd7bfa9e30f583f7ee2c80de83382d6",
+      "after": "6086e1e1aabeaa0e8976562145bd62980fc106ad4ac7f2972907137598ab048b",
+      "fields": {
+        "options": [
+          "A to B and A to C, because demand shocks are mean reversion",
+          "D to B and A to C, because firms prefer higher prices",
+          "B to D erodes positive profit through entry, while C to A erodes losses through exit",
+          "B to C and C to D, because supply never changes"
+        ],
+        "aHash": "3ed140073eb474e2a6364ed8739ab3ae37e800ddeee8042d6a671ab9e8782306"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9172,
+      "before": "0bd30f067947e504db204dfcc54e914c587a96d543c34ec7d0f74bf3b643fcbf",
+      "after": "52bf2cf4d76e68ea2abca188081f3210bf490eba7f2d6b3101f8f183292213fa",
+      "fields": {
+        "options": [
+          "It may be a compensating wage differential for undesirable job attributes, not evidence that B necessarily offers higher economic rent",
+          "It proves workers in B are 19.4% more productive",
+          "It is a compensating risk differential only if the firm faces bankruptcy risk",
+          "Competitive markets require identical nominal wages for identical skill"
+        ],
+        "aHash": "70f8053643859ae3377c245088289b9be6eb7c204896f0223c3e39a42300bbd1"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9173,
+      "before": "7fbaafdb1f2e901f9105d3b2132009279f50dc0b84f36511b1cff7c4364331de",
+      "after": "994f1a19c8c387422030013250ba39ab193c6c8906e550816be31122024f800e",
+      "fields": {
+        "options": [
+          "Investors buy the risky asset because any positive premium is sufficient",
+          "Investors sell the risky asset; its price falls until its expected return rises enough to restore the required premium",
+          "Its price rises until the expected return falls below 8%",
+          "Nothing changes because expected return exceeds the risk-free rate"
+        ],
+        "aHash": "cc6b5275665b5fc24c328c60ad3a112ff3a13dfb13dc812de116b6ee857aee79"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9177,
+      "before": "89237557c232c81bdd616622e5dff5576eb1b6555d9f99b14f6140c51594ffac",
+      "after": "ec73fd82afdfb6d80fc1f8d8b8a5c8d68331c89bdca359765dc07984956f3291",
+      "fields": {
+        "options": [
+          "Usage price $6 and membership fee $16",
+          "Usage price $2 and membership fee $32 per consumer",
+          "Usage price $10 and membership fee $0",
+          "Usage price $2 and membership fee $64"
+        ],
+        "aHash": "2a587345e295e03974b237087df4f57fe31052735f0d4b1034b59516530b4e82"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9178,
+      "before": "be9e8d833bd065644496667c654d70c43a06191f515cdb5f4195b290b2b3cf12",
+      "after": "b47a8c71886cc1ad6d8d08a1381c0a39d145b87b35efcd1d161a4b238c985b64",
+      "fields": {
+        "options": [
+          "Set price at average total cost and claim the outcome is fully allocatively efficient",
+          "Set price above the unregulated monopoly price",
+          "Set price at marginal cost and finance the resulting fixed-cost shortfall with a transparent lump-sum subsidy",
+          "Require zero output whenever marginal cost is below average cost"
+        ],
+        "aHash": "83b78d95413585c655edab766b836313973433e55815668691dc0438cb784a9c"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9179,
+      "before": "e2db34e102e8127aa76d552f14e7af197002efe1313d61bfdb6f469656a08274",
+      "after": "7ab48ea1c56272299adb44b80211f3582fc8c338aa2ef38a2c65f866e31df390",
+      "fields": {
+        "options": [
+          "Demand shifts right enough to preserve the same monopoly margin by definition",
+          "The incumbent’s profit rises because more firms advertise the product",
+          "Generic entry cannot affect profit because the original firm still owns its factories",
+          "Entry and imitation shift market supply outward, reduce price, and erode the incumbent’s economic profit"
+        ],
+        "aHash": "2b018b9a0a5506db0dab7d539ce7ff7c94c7e969309634d21ea27bf31997ffc9"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9180,
+      "before": "9c12a31366fccef85b4f2618f4e56b71e35b9e3fb61a6735aa233a50918c477a",
+      "after": "e0ae9a323492f3c36e1a2a37f9ec7b1ac74587150b6812db77800620612ebfc3",
+      "fields": {
+        "options": [
+          "Interoperability weakens lock-in and makes network effects less protective of monopoly profit",
+          "Network effects become stronger because users have more choices",
+          "Interoperability creates a legal patent",
+          "Entry becomes impossible whenever the incumbent has more users"
+        ],
+        "aHash": "ac288b75af56a2adb9365d96ae37aeebda9fb708cfad294ee228f15446b850b5"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9181,
+      "before": "58de92204b263ceb2bcf7307c3810cf9a364a85df00c1508ed0e967037e1539b",
+      "after": "e679ad33a1287cce30886515222799582e9b5d966a6052dfd7a15e5d6325fdd6",
+      "fields": {
+        "options": [
+          "A single seller is always a price taker",
+          "Potential hit-and-run entry constrains the incumbent even before actual entry occurs",
+          "Monopoly pricing requires more than one incumbent",
+          "Low sunk cost guarantees the firm earns zero accounting profit"
+        ],
+        "aHash": "41ab7a14ee096e1f83b5e02ef2ea8d52e670049fb971a65b0c42d1198d5dabc5"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9182,
+      "before": "7606a0da0018bcd3b4a5f706c7a78f997edbe1f83b5378b164b346b39a426ace",
+      "after": "adf38623ce46a8ba1a9c89e01e29a30acf6e89c9c756d2cf3cf9f9c71194eded",
+      "fields": {
+        "options": [
+          "Yes; undiscounted contribution totals $24,000",
+          "Yes; any positive annual contribution justifies entry",
+          "No; the present value of operating contribution is about $19,895, slightly below the sunk entry cost",
+          "No; entry is never rational in a concentrated market"
+        ],
+        "aHash": "3f9532c8adeb78e127220db4e754ca1800e8541e4b89c926a198a0cfa2b80465"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9184,
+      "before": "378de9894e844a5e5cd9ad1b1a93c023109d5d191840b2d968bfe93358912e3e",
+      "after": "689ae8c6be8789a90ff18da33a8899378d17a601b348ee11568af8de8e6ad65e",
+      "fields": {
+        "options": [
+          "Q = 70, which is above the unregulated monopoly quantity of 50 but below the efficient quantity of 100",
+          "Q = 50, because regulation cannot change monopoly output",
+          "Q = 100, because any price cap forces marginal-cost pricing",
+          "Q = 20, because the cap equals marginal cost plus $30"
+        ],
+        "aHash": "54ad45cd9c3b0742f8d1d36f120ac295d10a36183c39e5d37b24e51f859612ed"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9185,
+      "before": "a08776e1ef6fc3bb5a4dfa92cb3ad9e519ccfd567ab7fdcac36eb76939e67bfc",
+      "after": "f840a3c0b3a28858eb2dd946b4ea1a5b106b354f50feede25b4e4c7b354b8f11",
+      "fields": {
+        "options": [
+          "The decline proves demand is falling to zero",
+          "The profit premium is mean-reverting toward the competitive return, though it need not hit exactly 6% next year",
+          "Mean reversion requires returns to alternate above and below 6% each year",
+          "The industry remains a permanent monopoly because return is still above 6%"
+        ],
+        "aHash": "56418dc1119fcd5af380ebb5fb5c2a1a716633eb9c08800e9c686516224c2873"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 9186,
+      "before": "3ab01813098d87677098a27397e046903ef2032d06db4e55ebb4ec5223cc4926",
+      "after": "a7135b212423c749ab250516b973d586f80c48cae4c1830d238e9580c641346f",
+      "fields": {
+        "options": [
+          "Bond A must offer the higher yield because it is safer",
+          "Both must offer identical yields because expected cash flows match",
+          "Bond B must offer a higher expected yield to compensate investors for added liquidity and default risk",
+          "Bond B's price must be higher because risk raises required return"
+        ],
+        "aHash": "88deb069b7dd14ab4c511cb50d27ae0f8165036007537392bd111a94de4c64fc"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 5047,
+      "before": "4eb4ebf1011a66a5ea295a0a96201b3a78cc43e4955acd9481472e08862ce550",
+      "after": "3b9dc681f8258808161731468971f7419b96083ac368446680b79562e8965ae9",
+      "fields": {
+        "q": "A manager computes marginal revenue using only receipts from new customers. A price cut also applies to existing customers. What belongs in the marginal-revenue calculation?",
+        "options": [
+          "All new receipts, without changing revenue from earlier customers",
+          "The change in total revenue, including the discount on existing sales",
+          "The new price less average fixed cost",
+          "The change in total cost divided by the additional units"
+        ],
+        "aHash": "8e63d8b7d993cbb853315144654ea78139308b103a8d104be1a3a02aa53cb656",
+        "feedback": "Marginal revenue is the change in total revenue per added unit. A uniform price cut lowers revenue on existing units as well as attracting new sales. The posted price alone misses that loss.",
+        "type": "conceptual",
+        "commonError": "ignores_price_cut_on_existing_sales"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 6047,
+      "before": "615195f39d684d2a19347c7b1e8066af9666de9993ddd160bee69d0b14091fd4",
+      "after": "e25921f107bccc46c42699adb682d4f84ff3e331642e7e3da68537486b05b49b",
+      "fields": {
+        "q": "A supplier reports $7,920 in sales from 220 identical units. Each unit uses $17 in variable inputs, and period fixed cost is $1,450. What is total profit?",
+        "options": [
+          "$4,180",
+          "$2,730",
+          "$6,470",
+          "$2,820"
+        ],
+        "aHash": "cef6daae4338b3822320f3d2ade75ff362af76ef7d35b4b5ed8715e9691f92f5",
+        "feedback": "Variable cost is 220 × $17 = $3,740. Subtract both variable and fixed costs from revenue: $7,920 − $3,740 − $1,450 = $2,730. Contribution of $4,180 still includes fixed costs.",
+        "type": "calculation",
+        "commonError": "reports_contribution_without_subtracting_fixed_cost"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 4028,
+      "before": "04f915bbabad5dfab72e7e854cc198d1db2802622cc327d3f6dc0dc6dce2038c",
+      "after": "7fb5767c216bcc35176cf70d222d9c7eb9d72116e5f05337abcc2f543adcaca4",
+      "fields": {
+        "q": "A market has demand P = 100 - Q and constant marginal cost of $20, with no fixed cost. If one firm supplies the market at a single price, what price and quantity maximize profit?"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 4029,
+      "before": "d22af1cdb30993ba74168940b903d1876732d4bade2f865c147275dffeae919e",
+      "after": "d2e6962a23fd7ddbb0940361a6e53d69ec5d54140ee9fe59d36e6523a731ab4a",
+      "fields": {
+        "q": "A market has demand P = 100 - Q and constant marginal cost of $20, with no fixed cost. Competition yields Q = 80 and P = $20; single-price monopoly yields Q = 40 and P = $60. Which comparison is correct?"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 5046,
+      "before": "0c330848e92d22af8b5844346e83d3ee6a2cbc55f8231f4770a5da4d8a03a716",
+      "after": "80fb7f87158cdba90009a070acbe472f91f006648d7d6183fffb465b2495c71d",
+      "fields": {
+        "q": "A manager selects monopoly output where price equals marginal cost. Why can this overstate the profit-maximizing output when demand slopes downward?",
+        "options": [
+          "The extra unit can require a price cut on existing sales, so marginal revenue is below price",
+          "The extra unit necessarily raises average fixed cost",
+          "The firm should choose the highest feasible price regardless of sales",
+          "Marginal revenue equals total revenue whenever price changes"
+        ],
+        "aHash": "72f87562fb132f9d7bcd78d6f28ec00323fe5fb1088d1a1c924a00b57b676051",
+        "feedback": "A uniform-price monopolist considers the effect on all sales. Its marginal revenue is below price, so the interior output rule compares marginal revenue with marginal cost.",
+        "commonError": "uses_price_instead_of_marginal_revenue"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 109,
+      "before": "0231eca439f1967525f3f0f93561d73c1ee306f9c6bbb8541ea04748d331639e",
+      "after": "d0c086ef9c91b752a391cb74b24f74eff0bf8c423b5920dff2033517b30bdfe9",
+      "fields": {
+        "q": "A machine costs $43,200. Cumulative net receipts reach $19,200 after year 1 and $31,200 after year 2. During year 3, net receipts accrue evenly at $2,000 per month. Ignoring discounting, when is the purchase cost recovered?",
+        "options": [
+          "At the end of year 2",
+          "After 2 years and 3 months",
+          "After 2 years and 6 months",
+          "At the end of year 3"
+        ],
+        "aHash": "fd2497042ca4d30166e06a658d71653480c072289b4ce8271f2b922af10ad743",
+        "feedback": "After two years, $43,200 − $31,200 = $12,000 remains. At $2,000 per month, recovery requires six more months. Payback is 2.5 years; cumulative receipts must not be counted a second time.",
+        "commonError": "double_counts_cumulative_cash_receipts"
+      }
+    },
+    {
+      "game": "market-signal",
+      "id": 157,
+      "before": "a26f0019dc38c9b5890ed249663fae4922e5c00f6742fb3ecd787d8e202c8ad7",
+      "after": "f304363ed684e9ab86954b8f322989d8b0c476889d769e63ae7916878a302a6b",
+      "fields": {
+        "q": "At a posted price of $14, customers order 170 units while suppliers offer 95. Restoring a delivery route adds 40 units to the quantity supplied at that price; demand is unchanged. What imbalance remains?",
+        "options": [
+          "A surplus of 35 units",
+          "A shortage of 35 units",
+          "A shortage of 75 units",
+          "A surplus of 40 units"
+        ],
+        "aHash": "0c817ee7de474588f0a3d0f20eefb70a7331637d8b78a506ed7dadaebd1027d6",
+        "feedback": "Restored delivery raises quantity supplied to 135. Demand remains 170, so the shortage is 35 units. The delivery improvement reduces the shortage without eliminating it.",
+        "commonError": "confuses_supply_increase_with_surplus"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 331,
+      "before": "89208c2456f71d53e73b97a4fc99f9d6d25096b56be37ebbe6b832345efca000",
+      "after": "4eb31ff98d1c69abfc3ac7b1f9c1425bf7208213929bce9bb6a4dcedef32e34e",
+      "fields": {
+        "q": "A firm charges two groups prices that differ by $10. A reseller can buy in the low-price group and resell in the high-price group at a transport and transaction cost of $4 per unit. What threatens the strategy?"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 345,
+      "before": "e9ed95276e6de0b915aa30cdf21cbe2672f48d4fde24a9f5e9763511f406c4e5",
+      "after": "a636788ac351c51d2c95c008c8e9fe02e7ca7c946f5b14d6144af45268863907",
+      "fields": {
+        "q": "High-value customers value Premium at $150 and Basic at $90. Low-value customers value Premium at $95 and Basic at $75. Basic is priced at $60. Customers choose Premium when indifferent. What is the highest Premium price that keeps high-value customers choosing Premium?"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 346,
+      "before": "276c1240e6c7e68b7dba53d649b0238f2881fae8dc3f7a6802644a104c5bcc68",
+      "after": "14364c88193eef0dd11d9b6799b52a58bce11717693949e52076bf8b8e9aff13",
+      "fields": {
+        "q": "Low-value customers value Basic at $75 and Premium at $95. Basic costs $60 and Premium costs $120. Which incentive-compatibility condition directs low-value customers toward Basic?",
+        "type": "interpretation"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 356,
+      "before": "402ebc07f3ab7806dd167987bcf462576249c16663b711fbf8bb23cd1fc81ab4",
+      "after": "a00d57c73ef79ec35d206fe33ccb10406288e660098b48683689f89448e14d92",
+      "fields": {
+        "q": "Two consumers value Good 1 and Good 2 at ($90, $30) and ($50, $80), respectively. Marginal cost is zero, each buys at most one of each good, and customers buy when price equals value. What is maximum revenue from selling the goods separately?"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 376,
+      "before": "ee2ac5d8462fa4561f317ab844aa8a3b4633e7488f2d2c21f93e6c7c411637a0",
+      "after": "41ebc8f4b8c0a8ae97a019302690ca5c7c6513a91eab1636d6ec3a39f1fd7179",
+      "fields": {
+        "q": "A seller receives a payoff of $9 million if negotiations fail. The buyer's disagreement payoff is $7 million. Both accept agreement when indifferent. What is the seller's minimum acceptable payoff from an agreement?",
+        "feedback": "The seller's reservation payoff is its own $9 million outside option. Receiving exactly that amount makes the seller indifferent; the stated tie rule allows agreement."
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 374,
+      "before": "bbc6b20c417de4ac944ed8e0fbab705a1efe9cc665d291eb881fc7b8fd3d642b",
+      "after": "9a73392a4f0e5c16ab0ab2ef578b652ab986418fcbbfc26401c196425a9c44a5",
+      "fields": {
+        "q": "Two firms simultaneously choose Maintain or Cut. Payoffs, listed as (Firm A, Firm B), are Maintain/Maintain (8,8), Maintain/Cut (2,10), Cut/Maintain (10,2), and Cut/Cut (5,5). Why is Cut/Cut a Nash equilibrium?"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 9047,
+      "before": "329679ded2d3188447b7e8d30560825a820a1520b828120b5476e097ad7aa398",
+      "after": "753ae8df3a6da755063916f2f3d164b951239890f5eb0314d7190b55f56010b4",
+      "fields": {
+        "q": "Three consumers value goods A and B at ($100, $0), ($60, $60), and ($0, $100). Each buys at most one of each good and buys when price equals value. What revenue results from separate prices of $60 for each good?"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 9050,
+      "before": "07122a6b0c14334dd6a2a6f078499064b9ef140959f45b0235dca11be827979a",
+      "after": "0b50f2c48fe191eadd24c78576acbcb00b7cb7388ee80627acb28c5ca8166b9f",
+      "fields": {
+        "q": "A gym serves one heavy user with gross value $300 for 30 visits and one light user with gross value $140 for 5 visits. Visit counts are fixed at a $4 usage price. Both join when indifferent. What is the highest membership fee that retains both users?",
+        "feedback": "The heavy user can pay a fee up to $300 − 30 × $4 = $180; the light user can pay up to $140 − 5 × $4 = $120. The lower ceiling binds. At $120 the light user is indifferent and joins under the stated rule."
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 6058,
+      "before": "9fd0f3473de52eb580f65b7ceb3dd6b471a7940aa95bbf593976f54f36c5acee",
+      "after": "331dcf8b00fc2b5146123c2e520e4d4cf9483eada008abb57c26ea028110e23b",
+      "fields": {
+        "q": "Two buyers value goods A/B at ($90,$10) and ($20,$80). Each wants at most one of each good and buys when indifferent. Costs are zero. Why does a $95 bundle earn more than separate prices of $90 for A and $80 for B?",
+        "options": [
+          "The bundle sells twice for $190, whereas those separate prices earn $170",
+          "The separate prices sell both goods to both buyers and earn $340",
+          "The bundle earns $95 because only one buyer values both goods",
+          "The bundle earns $200 because revenue equals total willingness to pay"
+        ],
+        "aHash": "7764749e831e90d891e68593dcc397f0b449fcf5669e982f5c5503856c1a04df",
+        "feedback": "Each bundle is worth $100, so both buyers pay $95. At the specified separate prices, only the first buyer purchases A and only the second purchases B: $90 + $80 = $170. The comparison concerns these stated prices.",
+        "type": "calculation",
+        "commonError": "counts_willingness_to_pay_as_revenue"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 6053,
+      "before": "90278ca81454b8554241e5043d0adac1ef6a18a4b9463d1e6aa836c4c071f32b",
+      "after": "f24e8843c1e5b82e24f0ac9a839ffe913249cec5c5f06f8adadc909425dbf85d",
+      "fields": {
+        "options": [
+          "Tightening the basic plan's usage cap",
+          "Adding a premium-only feature valued mainly by heavy users",
+          "Charging heavy users by use",
+          "Removing nearly all differences between basic and premium"
+        ]
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 9156,
+      "before": "6ecb545a8d5fec5a9323c54933de01535e8c44d1bd7e2899460eaeccdc065cea",
+      "after": "fd9e427032ce6a272b56ccd87b80d0625ed2cdcfeb62e558a54f28d71d3f56b6",
+      "fields": {
+        "q": "At the marginal-cost usage price, a customer has $140 of consumer surplus before a membership fee. Fees can be any nonnegative real amount. Which range of fees makes joining strictly preferable to staying out?",
+        "options": [
+          "0 ≤ fee < $140",
+          "0 ≤ fee ≤ $140",
+          "Fee = $140 only",
+          "Fee > $140"
+        ],
+        "aHash": "230084c94beba75bc5abd5cf34d04e15b815047e15d3123bc4dcd17c7502c588",
+        "feedback": "Strict participation requires positive net surplus: $140 − fee > 0. The full feasible range is 0 ≤ fee < $140; equality gives indifference. There is no largest real-valued fee in this open-ended range.",
+        "type": "interpretation"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 261,
+      "before": "77a43c96d6b70ae236e4f70da848d994d352a4926921e8042bc347c205e45bd7",
+      "after": "497feb82b7ce4c867c56dba1e7556469b356a75f1527238b0f03d9d7c20ffef0",
+      "fields": {
+        "objective": "LO16.2",
+        "tag": "nonstrategic_bargaining",
+        "primarySkill": "nonstrategic_bargaining",
+        "repairSkill": "nonstrategic_bargaining"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 5036,
+      "before": "981e4cc4d88934be65230fe970cb62923c5c9adec8281962a1b6462e313787ea",
+      "after": "a13138421efb20dc82b9d131a664a9579d474dbfcc2a87ca58dd99f273de770a",
+      "fields": {
+        "q": "A manager says any two different posted prices prove direct price discrimination. What additional fact is needed?",
+        "options": [
+          "The two prices produce the same sales volume",
+          "The lower price covers fixed cost",
+          "The seller assigns prices using a verified customer characteristic",
+          "The customer chooses freely between versions with different restrictions"
+        ],
+        "aHash": "44af3a57855186dd9d8cf8bcca941569e93ccc757d57fd620d9553729104a52b",
+        "feedback": "Direct discrimination uses an observed or verified group to assign price. A menu of versions can instead induce self-selection, which is indirect discrimination.",
+        "commonError": "confuses_price_menu_with_verified_group_pricing"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 19,
+      "before": "e882843881d218f445abc71bd8820aadab204c615728eb4fc73f791708764cd4",
+      "after": "42d79b52dd2f85b2593532c91602c10bc82e5450edcca61ad8a7c9d246ed6263",
+      "fields": {
+        "q": "An analyst gets different elasticity magnitudes when reversing the direction of the same observed price and quantity change. Which calculation avoids this base-period problem?",
+        "options": [
+          "Divide the dollar price change by the change in units",
+          "Use average price and average quantity as the percentage-change bases",
+          "Use the final price for both the price and quantity denominators",
+          "Use percentage revenue change in place of percentage quantity change"
+        ],
+        "aHash": "a6c8943193ea75e0bcb886f79e19ae90be9c33cf33054f07953e826381801d4e",
+        "feedback": "The midpoint method uses the average of the two prices and the average of the two quantities. These bases do not depend on which observation is called the starting point.",
+        "type": "interpretation",
+        "commonError": "uses_direction_dependent_percentage_bases"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 81,
+      "before": "0af1ea154e00e2bd30092de9f82daae583679c29cf45893cb87824be40050b4f",
+      "after": "20b9293922855012b521cd7651f22d254c1731ba3d46372d81d08fc196ec4a13",
+      "fields": {
+        "q": "A buyer announces a final offer but can revise it freely tomorrow. The seller expects another offer if it refuses. Which change would most strengthen the claim that this offer is final?",
+        "options": [
+          "Repeat the announcement without changing the buyer’s alternatives",
+          "Reveal that the buyer can extend the deadline without cost",
+          "Adopt an enforceable rule that prevents the buyer from making a later offer",
+          "Invite the seller to submit several counteroffers after the deadline"
+        ],
+        "aHash": "2362231dc399ea2f1e15f42f7a7b106dc680576efd4c8fc2bcd6109dd25b60ac",
+        "feedback": "A binding limit changes the continuation game by removing later offers. Repetition alone leaves the buyer free to revise, so the seller can rationally discount the announcement.",
+        "commonError": "confuses_announcement_with_commitment"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2000,
+      "before": "83ce7a73568f59224d557719752d6772c0e510a5c858b2d95a59b32faefb9629",
+      "after": "4c9fb6711b82227672b21dd4a7112a88c26b1f5b2f3e3447bb0ff98439480dbf",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2001,
+      "before": "d8cd817c142f9806f6992e492b1bde37765865a200a3e8bc187a5e638af7b650",
+      "after": "e4e1592d43efeda858ecd24457fd94bc19dd5a714e205d2f120e0aee6125c516",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2002,
+      "before": "65dba8a9a1a27868c35f6a28146991576bc433d8e0b5ac6942f073fabbe8b44e",
+      "after": "da5b35a5ec7fe50cdc9ee70eb2ed22a656ea04d038c7b17d5fcfb21c87b39e08",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2003,
+      "before": "efe6079fe30cade33f87beeb5038aa72b5abc86c56affa3bd744e1e8510310e7",
+      "after": "bd38d3ffe12fcb0161c4bbdd0d928fa914875dca406a671c1cbd90ff7694d5e0",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2004,
+      "before": "af7e342a97ef1091be66b26f140c9a5169aaeb9f39af77f888259985895f95bf",
+      "after": "a612875ce68606e1ac6c53c5ae605e218feb9b10a898b6165fdcad3deed0edcd",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2005,
+      "before": "1da580e2bc75656f3190274f160d280251ec1c2e580029479c2ee385776279c5",
+      "after": "a1608be363d0995a7a3e8d5ff748ee2975187f38cbfeae18e87f7a1bb36a2d9a",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2006,
+      "before": "39029eb2a8f91bf66955317cfa9b99fcdda12175ffa388b56d1cd6336b250a66",
+      "after": "f23aa00ef45bf11e74a8b183ba2903e1af92c100c42a54861647c3e15365540c",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2007,
+      "before": "852f1617c17be27c636c415e4292ae964d508a9e80af5f92ea8df1d510f3db2e",
+      "after": "f42005970d1b2b32378dfb7f6f94c04e4cca099b42217ff7c8d4e0d205edbc79",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2008,
+      "before": "c0761de67ff7264b52117238a39692062267796199f11538628a231d077078be",
+      "after": "761e793e7045b1077b71134fb1ddf3facf303fc67b2eefdd90cbbdc2c0fa3435",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2009,
+      "before": "ed60529356a1ef21ad5e1e65f914f612c1f7aa1bfad781635463b0514e1035de",
+      "after": "6205105d5ba1e8e651c841a453333db0dbde309732bab991c0210fc1e795193c",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2010,
+      "before": "a72517553f8916cb7b2c7d9e5866b0ce32e9626ee613500d4142614cbb082ae6",
+      "after": "2a02dca6d66e249b9cb22a6633bd09791ab833a0618e9f31b1650e4615f44463",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2011,
+      "before": "cce54d3120603196fdbf765433db7389a3965a2f48610cbad0b0fc218a86a2a6",
+      "after": "6f60e04c4f58b2396c1c5e9774e64b70bf4edfaf8ad708fa1075ce2bca94a436",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2012,
+      "before": "2898f53241ead7adb7de33b1cabd16d19ab530f54e96ced4eff76d0624f1b710",
+      "after": "5597fa1e8555ec5ec86082c4c1620a9c278b36dae044649d3f0c5d9b7194d456",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2013,
+      "before": "4ff9d45285168206c75f18b3b0880a709d82ded1c21fcf5b168008fb3d460c52",
+      "after": "27ac484beb23e71e79bde101be210aecda4f9ba82bd0b35e4e985255605233e5",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2014,
+      "before": "e5d24611282bbadbc381161683fdefc3c5a4cc27d6663e680f8d04c620dd74d9",
+      "after": "ec9f95916539619a206cd19d4413710cb33fa2c237f8c0a3db6f173868842752",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2015,
+      "before": "bce88de429424f306ebe57ce24a1b177bad938a7171db9d30255d3f5bba2cbba",
+      "after": "c62faec849d0a78f38f90dbb99dac693a0330d99e52a91c1c0cc8f7d5dee304c",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2016,
+      "before": "4895408ad5481c450254abfa51a78381dee13152b6382afd23196a399e0efe0e",
+      "after": "99e580b9a96fa876b36ce25ee3c6e8f5655e634ed7e360fd9f2a6eb35347fccc",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2017,
+      "before": "ad38936c33ab55e92ed88dce84d03419a9d9bfafa3902dba8c484ff8cce7f408",
+      "after": "50c9a31bece138a657b2752d5ff7baf7121693f98c44a7d3aa6b8325bfd8aa5d",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2018,
+      "before": "92ee9c3dfb5fd6a5b3424cb9702d4937a3c9c20a3904debf5666fcda7c86a47d",
+      "after": "d9a49f699eb4514c82c986a4b06662db9ab5dbc8f158048997f9b56f1aab97c7",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2019,
+      "before": "a6d954db052e5fbc525c13b5456779a3d0409b0736e70269ca06dcd4243117db",
+      "after": "1c9954e86299310661a29ec1f92ab5520e826d57a77779885a055813893e68f1",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2020,
+      "before": "3900db3eec4d8085ad0fc034e84075c7bbc9001ed607219c82b4b6242704f3d2",
+      "after": "0924560819bc2f2329a75b7e88656b46861aa4f3b78da2cb6affbe2b8d5cb756",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2021,
+      "before": "2a9c4f00933f91b1c530ec834985fba953711f11decd2f538705e0d38a3ec0bf",
+      "after": "6a623af84a8aba17da305bca9cfe5c55e4162f1b76a19ac9c8ebbd8b896d1ab6",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2022,
+      "before": "6a95a3b44c6ef0e6c649e65c8c36e714aacdec66b5b5b43bdb6b022e3607da8a",
+      "after": "0d0ccf8a104de86503f0e55ff1882a962f68ec317c72843a8c4ae8ff706982be",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2023,
+      "before": "d697b8af0e1db18595ee6202b957fde6cd4571532ecaca0ffc8a05d2edca8ca8",
+      "after": "5cf09920443169dbffd0e6a44e90c88dce75c4ba282a6ecf1a90b12f27d487f9",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2024,
+      "before": "15cce34d1ebd024bafd6ca5770bbd7b059c74214c46718fcd1603077f2c925a5",
+      "after": "295ca5ebef78f362bbdcd72606774d05d4b3e550469fa94e8e86d5d0377d7d1b",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2025,
+      "before": "36196284cbc743685dd099f4f3cb5ff786a32f9d77cc0ef89c114ea7836cf87c",
+      "after": "1c73157e7a2036642ddfa56707123e00993c3b676d748b0035c511ab38b702bd",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2026,
+      "before": "2b277c15f8a281759246de3448e2a8105b7a7b86dc668f8a4d2bc62922467350",
+      "after": "8d6cc34642cd4ad8aea4b52ce84ff7c8228e8c4701b2545035754d18deb74cfc",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2027,
+      "before": "f0f804b1a36bd8fd64852ecdc91ccc56df8bb0e8e9b2059ca368fc362df5259a",
+      "after": "93a5a4e3dd7524c216b3e15c84e8452cc044b674e30c6b65d1da5d89d1304f10",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2028,
+      "before": "e60c0a2ddeaf9af3046062256dfbd74ea019f84fe367b4bdc2880f721e197d03",
+      "after": "e793a2cb05190c6fc0339cb107d5640245802921ebd8affe89d28097083aec1a",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2029,
+      "before": "24e7262779125957667ce76c5005bf2767cb37bbf08882b0690aa3da6a04eb5d",
+      "after": "b84b3ad1f9b829c0845a70bfc8bc5ae4e5bee46abf15344d31bbc3c39de21490",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2030,
+      "before": "3d4c9e0686d758b8026bfb04cae9449daee48919a213e1e972c9588af89a27a6",
+      "after": "da9f9ccd7d21d24f78eee487131aa49650dd4dcc6a9d2560e7fe9d7cd742bb95",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2031,
+      "before": "99899b58825657354fc5a018745ea2bca0f4db67d0262dabd9f7193ca3288b31",
+      "after": "4fd2716038415a702ec93af8b2742651b067865f236681a67682af527c5f9d79",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 2032,
+      "before": "b44829b332902c048a1b7503b878efabdc3f02a92ead93b80fe6b9b42c1aa095",
+      "after": "0d68625e96955b6be1107524eef1974952452226b8550650206e6f1fd7c2050d",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3000,
+      "before": "a6aa51b85e725eedadf8c04cdaa13b4bac4dd405a3c667ebdb5215c86f5f82d0",
+      "after": "dd74a09eadafb6a97c4ca93bc8d4c505b525a0b90b3861669fbfe46441c3d72e",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3001,
+      "before": "d2cfdcd7b481f140086301ca0239e0e0bbf5d66c65ef31ea08f8ecb2e59f4fa4",
+      "after": "437c580bb234ef2c04d211aaa5343bab8b127a08697201c02f75092c694b357d",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3002,
+      "before": "de34f57b42e1598e564d994239a1f05e0890ff823dcd7da01f0a99a2a08af088",
+      "after": "77401766190091974ddb1715710eb4d6da2eb556c2e3066d09a7174bf1eff8f1",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3003,
+      "before": "c84a35bb31814c2705ba880a005ed278040a1a367cec56522782c349defb93f1",
+      "after": "ffa7365ba036d4953e59576c2e84e7c1a2898a7495218a7d4cc5b9b25c69d6c5",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3004,
+      "before": "d05dd529600268fb8885cbff7edc4fc1a2cd71e3bb81fad4696b2c7dec1599f5",
+      "after": "ae71f0bc165615a296d21caac6e4b457c82a8df123e3c1447a4b52167de9e6ca",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3005,
+      "before": "dad3933d5542c35671e079c38b739b41285eb47acde26b25cde23292f4ebd2e6",
+      "after": "fea484a99176c3bb4645ee6f9ffb24014d993829a6084b5c2a20bb5900755799",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3006,
+      "before": "22e5d03b0207c7065f5341a72ea79c00e1d60e425e8718d09ba3e1cb1bce8513",
+      "after": "99627fe7d540c7f30be4827740bdf892a10d0f0360861dc04be803fcba279215",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3007,
+      "before": "63744ce8146e24f8a541c8de79f0b581a947f354f0d746b9907c9551ac44d993",
+      "after": "79a3da86be4e54e14136f59f574031ec2775d8fe301dec2d726ec88bf02508c1",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3008,
+      "before": "8c59d31b1eba36e74b45ca0ca9d4daa6eabf3efef15d61fa121b3e686c3b0f1a",
+      "after": "5e422657eea52a154a006c03c59d05279a914e52fb8e277494bb771a31341f91",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3009,
+      "before": "48563d3fce9c9837113a028684e17366a33fea9e168b243c64a68a9a702eaf22",
+      "after": "a67293baaf1583512e837fd3f1883513c9a5067c6e91ae57da37f697f9ab8221",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3010,
+      "before": "aa9d17cad931332dc2d9bd2c0f6b3164a911a2bbff38df0fab4431bfd4124841",
+      "after": "9cf495eaeffc204f363c05a09175179be41511d9993968c40d80379570d6a7b6",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3011,
+      "before": "1a58653d8f1b089ee92156b4f418b37dc0781dd553793744ca30b938ee8b0f26",
+      "after": "3d567f99d5ba70c78eb9f903e7f49defe7e2a5617c93602c4969e6020afda42e",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3012,
+      "before": "9bf7b7b1312da4fdfb478d3e07c1bf1d12038fb4db906fbe13dfb5be2b122e0f",
+      "after": "2c2bf92517223e56cbae244136cf14d778d8d17df5a62f3de54285610934e619",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3013,
+      "before": "4c8946560046cc1be31e3c7ea1792c706d0afb1790d0a00eda0988765b6f4949",
+      "after": "64bdf889c708e72a71a934d80f5c0a9f315b8faaa26a014641781fef980f0782",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3014,
+      "before": "93e46f43f889dcf65b4ea9b3112e7982508ee463f85691cb7e77b97046ae393e",
+      "after": "b454a6b1c133e555d7641df7e80f7677b0301396fe8989cafbae2119d7b7ddb9",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3015,
+      "before": "bb6249ae0759e3e07d17fe7903c73f5403b706df31dbc21bfd0394a2775ffc2f",
+      "after": "31f8c2d4f051945168bd8c768042228f84799e2ed7e6f31be0ef017fb1f3af98",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3016,
+      "before": "8cb82375571ecd15c00f80ca0830d226ff85801c496a89af47e4032a1f407de9",
+      "after": "11782d7ce7793c6286ebdde576dba09360154fabd77704dacacab291ac1a2dcb",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3017,
+      "before": "af3f18c2a320151e4eb67c4821cb8eb8a20e90d1d25022c644eb12e689ba1453",
+      "after": "c288e7972b8b98e612787b871dbe59524aa9244bd1691e8213927bc350cf8b07",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3018,
+      "before": "42e87db6e511d5257e0c2493ba73a583a2cbaca369563eaf8dee28f3f01f812d",
+      "after": "6f6e39aef5e20b3d5363661cda7c0d5aa042f776f5f7f227c832c6bcc9e36cdb",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3019,
+      "before": "c0e657166d523dcacb428c02033d6ecfac8a90e39aad65efbe2eda907344ee28",
+      "after": "0e6b9a2242259baa8c833b40ed1053fc54e360be5766de3d1d8a6246184bd4b8",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3020,
+      "before": "c4f3d4f5d9d2c23a4d380c6a2cb9fa5b256be73c7f4cd4584f6826697860ece6",
+      "after": "a2cda1dbf47d553dbddbe921ea9e377c648b390748c54c1dd8cd9a70a0970a2f",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3021,
+      "before": "f284779cea1d73c88a1ac21904c8f07bd0e09f593f1f539d843861af81eb52e8",
+      "after": "afb822de8b6d2e152ae127aa3577c04d8c2e17ba06acaf065cfca6343973d904",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3022,
+      "before": "c1c97b31c1b9c055355d6f10e829ae26a27cf71e195c8f71433cc6a2bc242721",
+      "after": "9387018f373a3cf1dce07003deb194446ecf7e223d1ac88389a5593ea39fed93",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3023,
+      "before": "833bc7e250b9fd8710735b526c720bd2d6997cd4712c571879c750a8597c8e6f",
+      "after": "0bd8a29336627973a756b02d2972ae4641155530a13c2d5704d044cf0ebbeefe",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3024,
+      "before": "f6cc194479641432ec3dbe27952a6c74aad266fca2409b8777c363b2abfb7688",
+      "after": "54ae51479df6a621715f1b938b054eb6ce7d2aa17451687ba0954800af96ae00",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3025,
+      "before": "db54fd51bca47e67fc0ff47e5346262debf621177b74dc93db4216857a28fd6c",
+      "after": "85e3a5f637b8d08a8ba9f5cab493ca51bb172da3897d04887a5a4bf1513eee63",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 3026,
+      "before": "6b5ef3169c7220136e69fa2474d49f42d45cdda0c2c444a48e8f22cec48b777b",
+      "after": "a3a4e0d317a23dcbf5609bad76b452031de3d396e02e8f38edc78dcfe6d4f7a0",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4000,
+      "before": "9fe7627ee14591fad782c2e26217fd830dd7770e7af48525258696f4b69ad7da",
+      "after": "bfab75f38404fb5f79712ea8a2bc7f458e56a68b4b599b5da6bf9e5a359b4d6f",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4001,
+      "before": "bd7f1e979f4895513141b7a4bfb49c37db3b2f39350af351e9d29c9e60634142",
+      "after": "7265504379df6fbf2463173e35df46a0bf69eef6c4b81f6a0ac29c669183a1b8",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4002,
+      "before": "cf38036d5307755050767f7e859a3666c61bac3a2ca2e4c91c181d987a6e3908",
+      "after": "9d441c842d89ecf807999e7ecf393d584ca5438cd98de354f9e8d9d6d6eb6b1d",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4003,
+      "before": "4693a775e46d70b509abc24c14a4eaaa775f49b188faf40fb9cd7aa273a1c320",
+      "after": "4fef04e9141675bbb81f78ebacf0f3522e80d14b9101389cfc1603742b5e19c1",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4004,
+      "before": "5d39cc56796def494526f3c90a5ade0c63d9cedee0a1259a449cb5355a54ddef",
+      "after": "cab2a9202520172bc7a10472b42f5d98b2de6564367617c124b7966ff3cef4d3",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4005,
+      "before": "d2b214cf548a65a4443d8e48fddfedadaaefd4a84c5784430a48ace51995c3e2",
+      "after": "c97e0567e43d8768b85af560d1a1641cd0b5e3f2d74a393fde8579b919b5613a",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4006,
+      "before": "365c925e805c943fab685ccd99fd922786d11a7116ca20edcfad34f4492601e3",
+      "after": "1cb6c2423c176fac1e9617709a37b0afd542fb84cdbae502d96f78fc57345ce8",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4007,
+      "before": "9439d92fd75aa7add480eb6c7f08a745638b58042091245c1df93aee93315a23",
+      "after": "742b29c519f9c67ff7cd7bc78fdb086eeacdfdebbeef1e580d24ec57175db32e",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4008,
+      "before": "d883afda0430e74269e9344ae544ada5764151a63f5ba8afd055f668bb4cb449",
+      "after": "2f340f99e7df11a85efb44c7c7a2c58f9cc61d7189a683cad0ef2432ac62d84e",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4009,
+      "before": "292383a3454ebe194b5a4d1d84253231178109e4b94d027c52d5349d320ec054",
+      "after": "3729f233301eb8802aa2b0269b881f38863da00b36da0b53cae828824708152b",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4010,
+      "before": "7dd6072a7ee93031953a5b1693268abb62c1405b88a696fe551cdae6a09bfdbc",
+      "after": "0d5c815b94870fd91df99d2f8b8eee0c414b8d0f09a8a7ce86af7d1f53a8d865",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4011,
+      "before": "8eb43451358ed0f0e5d09cb5acea832cf282ba43fc075709e0cb9e7cf2ff9a6c",
+      "after": "3d7a7ac22820cbd3bf2eb686d4bf13e26bcc71f17fc5a87c14bcc8db72f3ebe1",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4012,
+      "before": "73d1c0ad1e48749e6dacd52192bad3f3f9d32dd64978e61c04a5c2896926c02b",
+      "after": "f30a51f0ecf6618451ad0cc085e4367a103623adb63a85d5f86e18eb2b83ef0c",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4013,
+      "before": "3e770510034aac60d3194b5c0f5b523eb81d3a76e48d41c0ba383d6135b83267",
+      "after": "cf255cc464076fd72e18f232c22d07a3d96ad99fd9df327853bc8c5d5f7e2c7f",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4014,
+      "before": "14068249df74d50bc74fadb2d624e609a22c8dbcb88c3463867a0bbfcba069ee",
+      "after": "334eacf3b14da0afd7dfcfa0b3cc0b654abc8f8d432c45f1f53722a41b8c2301",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4015,
+      "before": "07967eb73d5afc4c90eb8ac179535b8b2c9a843d18d2fa814ed549c033592498",
+      "after": "5edd40ac7814c731279e7b20c8aa4e35897bc62041eeb56bffa7cd90d56107bb",
+      "fields": {
+        "bossStage": "opening"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4016,
+      "before": "d50de6e1985da19bfba64a7a0ce843e40dfed24c1029bf60a9d949dfd64a7d4d",
+      "after": "89783a1896f3f4d014d6dec34599ccee575f0d511ef3413bf33d368b8e19536f",
+      "fields": {
+        "bossStage": "middle"
+      }
+    },
+    {
+      "game": "strategy-desk",
+      "id": 4017,
+      "before": "f10ae30c4addfd4663a7f44300817040b545497e4ee39ace68ca5a3fe1ee86d9",
+      "after": "0b4d75410d59891fda367e4fd933e6d75afe409a817d004a58a38e9aa3e928f8",
+      "fields": {
+        "bossStage": "final"
+      }
+    },
+    {
+      "game": "agency-protocol",
+      "id": 5004,
+      "before": "91e152ddc328ab834d3100a51c21f22ff8383298c9c4c3ce002deb3e03a1f740",
+      "after": "4f7636722cd96f2afca3d46c2bec63b8571d9616407b530d84404c59987b1f6e",
+      "fields": {
+        "q": "A learner calls an employer-required work sample a signal sent by an applicant. Which distinction corrects the classification?",
+        "options": [
+          "Screening starts with the less-informed employer seeking information",
+          "Screening requires monitoring effort after hiring",
+          "Signaling includes every test required by an employer",
+          "Signaling means an employer hides the job requirements"
+        ],
+        "aHash": "8416f171237f322939c4a275b12e5eb7d516898f19b4e61cfd05e79ad7177d9c",
+        "feedback": "The employer initiates a test to learn applicant type before hiring. That is screening; an applicant voluntarily presenting credible evidence is signaling.",
+        "type": "interpretation"
+      }
+    },
+    {
+      "game": "agency-protocol",
+      "id": 5006,
+      "before": "743c879fac24d642e948455179f8eea349635a9cfd096695f84d2a3ec33a1a69",
+      "after": "7c2e7704b34c0fdc4521d6d3fd4ab5a037455921e3dfeed845c0249161ec4952",
+      "fields": {
+        "q": "An unknown seller claims its product is reliable. What must be established before treating the claim as a credible quality signal?",
+        "options": [
+          "Whether reliable sellers use longer advertisements",
+          "Whether the claim is more costly for low-quality sellers to imitate",
+          "Whether all sellers charge the same price",
+          "Whether buyers can change effort after purchase"
+        ],
+        "aHash": "ec29f5e3b1ff10d21c35f2661318df7dd5ab68fee712b07b9bdd0011c9f055b8",
+        "feedback": "A claim separates types only if imitation is sufficiently unattractive to lower-quality sellers. Cheap claims by themselves need not reveal quality.",
+        "type": "interpretation"
+      }
+    },
+    {
+      "game": "agency-protocol",
+      "id": 5018,
+      "before": "50b3ae8bc079fcd71df3e2ecc4b3d6896316dddf5258985142a881a55b0f5be9",
+      "after": "4442e5e9c792a416a69b56c826c74351cb0e0414bd552300d4af4a291f99b3b0",
+      "fields": {
+        "q": "A learner says the purchasing manager is the principal because the manager chooses suppliers. Which role distinction is correct?",
+        "options": [
+          "The party with more information must be the principal",
+          "A supplier becomes the principal by accepting an order",
+          "The owner delegates the decision; the manager acts as the owner’s agent",
+          "Decision authority removes the distinction between principal and agent"
+        ],
+        "aHash": "f46974ca69be0431104ecd75bd68f74b7855a733add37f499d7bc830325c50c0",
+        "feedback": "The principal delegates a decision to an agent. Making the decision does not make the purchasing manager the principal in the owner-manager relationship.",
+        "type": "interpretation"
+      }
+    },
+    {
+      "game": "agency-protocol",
+      "id": 5024,
+      "before": "daaa5675210b242fc06995d99b6867d1f6937a1d4a55f97775bc3f925bae9715",
+      "after": "8058bc7c9c57a5dca4ffc5cbb77f07b530b842990ed5a82edabf9fabbaf5a5f3",
+      "fields": {
+        "q": "A branch gathers local demand data but must obtain headquarters approval for every price change. Where are the pricing decision rights?",
+        "options": [
+          "At the branch because it collected the data",
+          "With customers because they determine demand",
+          "Split equally whenever two offices exchange information",
+          "At headquarters because final approval remains there"
+        ],
+        "aHash": "f765dd3d94e6dc9346f18fb572bb9aeff8ed0ae2ebb2ad13325f3a9b1096b537",
+        "feedback": "Information collection and decision authority are different. Final approval at headquarters makes the pricing decision centralized.",
+        "type": "interpretation"
+      }
+    },
+    {
+      "game": "agency-protocol",
+      "id": 5025,
+      "before": "fb57aa866dc99d2372d45872a6e51108abc6fdd489d0bcbd1c1e29a2d3618ddb",
+      "after": "e4d830cd32510804181317bcc360239a1e21821c1941b27337b6d5e92706fbbf",
+      "fields": {
+        "q": "Headquarters lets a regional manager approve service refunds within a limit and reviews the decisions later. Why is this still decentralization?",
+        "options": [
+          "The manager has delegated discretion even though oversight remains",
+          "Decentralization requires eliminating all limits and reviews",
+          "Every refund must first be approved by headquarters",
+          "Local discretion means the firm no longer bears refund costs"
+        ],
+        "aHash": "392e5b1dbf235f2f93c5a633350916200a88785b8b7c3fabee81d5936cd624e0",
+        "feedback": "Decentralization assigns meaningful decision rights locally. Limits, reporting and audits can accompany those rights; decentralization does not mean no accountability.",
+        "type": "interpretation"
+      }
+    },
+    {
+      "game": "agency-protocol",
+      "id": 5026,
+      "before": "4c5551ba05569e596a6b93e6f907e620b051148d24c1016864a4f8fb0700503d",
+      "after": "324135e84326c7c5f8ac265beff5b8fef7071c3c8cc63844c4e81f1733e1f226",
+      "fields": {
+        "q": "A service team closes cases rapidly to meet its target, although many cases reopen. What explains why a higher measured score need not mean better performance?",
+        "options": [
+          "The target contains no incentive because output is counted",
+          "The measure rewards closure without fully measuring durable resolution",
+          "Any reopened case proves workers have low ability before hiring",
+          "Faster closure necessarily increases total customer value"
+        ],
+        "aHash": "0a6f76eb85b770c8300d350492b830bcb23d86942021a7dc6b8cf73796547100",
+        "feedback": "A narrow proxy can reward actions that raise the metric while missing the real goal. Quality and reopened cases reveal what the closure count omits.",
+        "type": "interpretation"
+      }
+    },
+    {
+      "game": "agency-protocol",
+      "id": 5031,
+      "before": "7488a7b895a26494a606d26d6efd83b8b98609b0c5c4cef8a40e89096b0ba326",
+      "after": "afb8ffc2941db287c4292c896ca17f0a243f90f8434c5fbff5079849bf07bfa2",
+      "fields": {
+        "q": "A learner argues that an internal price cannot matter because the payment stays inside the firm. What does that argument miss?",
+        "options": [
+          "Internal payments always create new revenue for the parent",
+          "Transfer prices must equal historical fixed cost",
+          "Internal prices can change divisional decisions even when the transfer cancels in total profit",
+          "Each internal payment is also a payment to an outside supplier"
+        ],
+        "aHash": "c0534d2bcbd00d0322def1bfca12b1c30c04c437a47caf68d7a422387cb0541b",
+        "feedback": "The accounting transfer cancels at firm level, but local managers may change sourcing, output or sales in response to their own measured margins.",
+        "type": "interpretation"
+      }
+    },
+    {
+      "game": "agency-protocol",
+      "id": 6018,
+      "before": "a3fc103e4ae5682e51f68e195f3fe6202b5be5c3c8fd3a26b45134e0583cae8c",
+      "after": "36680bb935df59e42c55831adeb7726d37352b5aef96ed5572a21ec2b919c1e0",
+      "fields": {
+        "q": "An owner delegates contract renewal to a manager. The manager chooses a supplier that offers personal travel benefits despite a better offer for the firm. Which feature makes this an agency conflict?",
+        "options": [
+          "The supplier and owner must have the same objective",
+          "The manager holds an outside job offer",
+          "The firm uses no internal transfer price",
+          "Private benefits can distort a decision made on the owner’s behalf"
+        ],
+        "aHash": "0db171d832075b0c20aecf9d416afb663bb9ff061e9ad527544e412e3441f1ad",
+        "feedback": "The manager acts for the owner but benefits personally from a choice that harms the owner. Delegation and divergent incentives create the conflict.",
+        "type": "diagnostic"
+      }
+    },
+    {
+      "game": "agency-protocol",
+      "id": 101,
+      "before": "1197e1b940b4440bcfb33bffd0e93f2730107b6017d991eda5d49ba94a6b2e8a",
+      "after": "bf21df61ab983bc27201990cd14667b9bd20a3b413630b649ab55c33ca54c715",
+      "fields": {
+        "q": "A shipping insurer finds that new customers had fewer damage claims than comparable firms before enrollment. Their handling practices have not changed after enrollment. Which interpretation fits this evidence?",
+        "options": [
+          "Moral hazard because coverage changed handling effort",
+          "Adverse selection because new customers have higher hidden losses",
+          "Favorable selection because the enrolled group already had lower risk",
+          "A causal prevention effect because insurance must have improved handling"
+        ],
+        "aHash": "35a8882d927c93c3f3ca25c0b1f80231f11545f9af95259fdeb1f8306fb9cb2c",
+        "feedback": "The difference predates coverage, so it concerns who enrolled rather than a behavioral response to insurance. Selection of lower-risk customers is favorable selection; it is not evidence that coverage changed behavior.",
+        "commonError": "confuses_selected_risk_composition_with_post_contract_behavior"
+      }
+    }
+  ],
+  "numericChecks": [
+    {
+      "game": "market-signal",
+      "id": 6047,
+      "expression": "7920-220*17-1450",
+      "expected": 2730
+    },
+    {
+      "game": "strategy-desk",
+      "id": 356,
+      "expression": "max(90,50*2)+max(80,30*2)",
+      "expected": 180
+    },
+    {
+      "game": "strategy-desk",
+      "id": 9047,
+      "expression": "2*60+2*60",
+      "expected": 240
+    },
+    {
+      "game": "strategy-desk",
+      "id": 9050,
+      "expression": "min(300-30*4,140-5*4)",
+      "expected": 120
+    },
+    {
+      "game": "strategy-desk",
+      "id": 6058,
+      "expression": "2*95-(90+80)",
+      "expected": 20
+    },
+    {
+      "game": "market-signal",
+      "id": 109,
+      "expression": "(43200-31200)/2000",
+      "expected": 6
+    },
+    {
+      "game": "market-signal",
+      "id": 157,
+      "expression": "170-(95+40)",
+      "expected": 35
+    }
+  ]
+}

@@ -2273,12 +2273,12 @@ const questionBanks = {
     {
       "id": 109,
       "sourceGame": "marketSignal",
-      "q": "A $15,000 investment generates $5,000 in year 1, $7,000 in year 2, and $6,000 in year 3. Ignoring discounting, what is its payback period?",
+      "q": "A machine costs $43,200. Cumulative net receipts reach $19,200 after year 1 and $31,200 after year 2. During year 3, net receipts accrue evenly at $2,000 per month. Ignoring discounting, when is the purchase cost recovered?",
       "options": [
-        "2 years",
-        "2.8 years",
-        "2.5 years",
-        "3 years"
+        "At the end of year 2",
+        "After 2 years and 3 months",
+        "After 2 years and 6 months",
+        "At the end of year 3"
       ],
       "tag": "irregular_payback_period",
       "type": "calculation",
@@ -2288,9 +2288,9 @@ const questionBanks = {
       "primarySkill": "payback_period_calculation",
       "secondarySkills": [],
       "repairSkill": "payback_period_calculation",
-      "commonError": "Stopping at the first full year after cumulative cash flow exceeds the cost",
-      "feedback": "After two years, $3,000 remains; half of the year-3 cash flow recovers it, giving 2.5 years.",
-      "aHash": "e973c9a09f8dd0257bf130bef525eccd63d0bed45fe698edd02097b5c5c61f6e"
+      "commonError": "double_counts_cumulative_cash_receipts",
+      "feedback": "After two years, $43,200 − $31,200 = $12,000 remains. At $2,000 per month, recovery requires six more months. Payback is 2.5 years; cumulative receipts must not be counted a second time.",
+      "aHash": "fd2497042ca4d30166e06a658d71653480c072289b4ce8271f2b922af10ad743"
     },
     {
       "id": 110,
@@ -3335,12 +3335,12 @@ const questionBanks = {
     {
       "id": 157,
       "sourceGame": "marketSignal",
-      "q": "Demand is Qd = 200 - 5P and supply is Qs = 40 + 5P. At a market price of $10, what condition exists?",
+      "q": "At a posted price of $14, customers order 170 units while suppliers offer 95. Restoring a delivery route adds 40 units to the quantity supplied at that price; demand is unchanged. What imbalance remains?",
       "options": [
-        "A surplus of 60 units",
-        "A shortage of 20 units",
-        "Equilibrium at 100 units",
-        "A shortage of 60 units"
+        "A surplus of 35 units",
+        "A shortage of 35 units",
+        "A shortage of 75 units",
+        "A surplus of 40 units"
       ],
       "tag": "shortage_equations",
       "type": "calculation",
@@ -3350,9 +3350,9 @@ const questionBanks = {
       "primarySkill": "shortage_surplus_calculation",
       "secondarySkills": [],
       "repairSkill": "shortage_surplus_calculation",
-      "commonError": "Reversing quantity demanded and quantity supplied",
-      "feedback": "At $10, Qd = 150 and Qs = 90, so the shortage is 60.",
-      "aHash": "892d0367be0992e8d05b40bd7a49d32d0e1ddbe05068274bd4ac3c0696cd038f"
+      "commonError": "confuses_supply_increase_with_surplus",
+      "feedback": "Restored delivery raises quantity supplied to 135. Demand remains 170, so the shortage is 35 units. The delivery improvement reduces the shortage without eliminating it.",
+      "aHash": "0c817ee7de474588f0a3d0f20eefb70a7331637d8b78a506ed7dadaebd1027d6"
     },
     {
       "id": 158,
@@ -12401,7 +12401,7 @@ const questionBanks = {
     {
       "id": 4028,
       "sourceGame": "marketSignal",
-      "q": "If one firm monopolizes that market, what price and quantity maximize profit?",
+      "q": "A market has demand P = 100 - Q and constant marginal cost of $20, with no fixed cost. If one firm supplies the market at a single price, what price and quantity maximize profit?",
       "options": [
         "P = $60 and Q = 40",
         "P = $20 and Q = 80",
@@ -12426,7 +12426,7 @@ const questionBanks = {
     {
       "id": 4029,
       "sourceGame": "marketSignal",
-      "q": "Compare the competitive and monopoly outcomes in this market. Which statement is correct?",
+      "q": "A market has demand P = 100 - Q and constant marginal cost of $20, with no fixed cost. Competition yields Q = 80 and P = $20; single-price monopoly yields Q = 40 and P = $60. Which comparison is correct?",
       "options": [
         "Monopoly transfers all lost consumer surplus to the firm, so deadweight loss is zero",
         "Monopoly reduces quantity by 40 units and creates deadweight loss of $800",
@@ -12656,7 +12656,7 @@ const questionBanks = {
       "options": [
         "Operate, because its $60,000 contribution exceeds the $40,000 avoidable fixed cost",
         "Shut down, because total revenue is below total cost",
-        "Operate, because the $90,000 unavoidable fixed cost can be recovered — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Operate, because the $90,000 unavoidable fixed cost can be recovered",
         "Shut down, because any avoidable fixed cost requires closure"
       ],
       "tag": "boss_shutdown_avoidable_fixed_cost",
@@ -12679,7 +12679,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "A firm has already spent $700,000 developing a platform. Finishing costs $260,000. If finished, the platform yields $420,000 with probability 0.70 and $80,000 otherwise. The payoff arrives immediately. What is the correct decision?",
       "options": [
-        "Abandon, because total expected revenue is below the full $960,000 historical cost after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "Abandon, because total expected revenue is below the full $960,000 historical cost",
         "Finish, because the expected incremental payoff is $318,000, which exceeds the $260,000 completion cost",
         "Finish only if the $700,000 can be recovered from the customer",
         "Abandon, because the failure payoff is below the completion cost"
@@ -12707,7 +12707,7 @@ const questionBanks = {
         "A nonbinding promise to negotiate fairly after the equipment is installed",
         "A spot-market agreement that lets the buyer reset price every month",
         "A long-term contract with a price-adjustment formula, minimum-purchase commitment, and verifiable termination payment",
-        "A clause requiring the supplier to absorb every unforeseen cost without renegotiation — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism"
+        "A clause requiring the supplier to absorb every unforeseen cost without renegotiation"
       ],
       "tag": "boss_hold_up_contract_design",
       "type": "analysis",
@@ -12731,7 +12731,7 @@ const questionBanks = {
       "options": [
         "The firm investing first promises not to sue",
         "Both firms leave all terms open until after investment",
-        "The larger firm receives a unilateral cancellation right — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "The larger firm receives a unilateral cancellation right",
         "Each firm posts an asset or performance bond that it loses if it opportunistically abandons the agreement"
       ],
       "tag": "boss_exchange_of_hostages",
@@ -12829,7 +12829,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "A project costs $600,000 and pays $150,000, $180,000, and $210,000 in years 1–3. Beginning in year 4, cash flow grows at 3% forever. At an 11% discount rate, what is the approximate NPV?",
       "options": [
-        "$969,000 after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "$969,000",
         "$369,000",
         "-$81,000",
         "$1,811,736"
@@ -12957,7 +12957,7 @@ const questionBanks = {
         "An objective steel-price index adjusts input-related payments, while volume bands and renegotiation triggers address extreme demand states",
         "The buyer may cut any payment whenever its profit falls",
         "The supplier sets any price needed to preserve its margin",
-        "The original price never changes, regardless of shocks or market collapse — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism"
+        "The original price never changes, regardless of shocks or market collapse"
       ],
       "tag": "boss_indexed_contingency_contract",
       "type": "analysis",
@@ -13004,7 +13004,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Approving a risky supplier saves $300,000 if the supplier performs but costs $120,000 if it fails. Ignoring risk aversion, what minimum estimated probability of success makes approval preferable to rejection?",
       "options": [
-        "40.0% after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "40.0%",
         "71.4%",
         "About 28.6%",
         "60.0%"
@@ -13031,7 +13031,7 @@ const questionBanks = {
       "options": [
         "False flags, costing about $388,000 versus $54,000",
         "The costs are equal because both are classification errors",
-        "False flags, because legitimate transactions are more common after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "False flags, because legitimate transactions are more common",
         "Missed fraud, costing about $48,600 versus $15,520 for false flags"
       ],
       "tag": "boss_asymmetric_classification_cost",
@@ -13081,7 +13081,7 @@ const questionBanks = {
       "options": [
         "The app caused an 11% productivity gain",
         "The 11-point gap is not a causal estimate because self-selection and different prior trends contaminate it",
-        "The app caused a 14% gain because volunteers used it — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "The app caused a 14% gain because volunteers used it",
         "The app had no effect because both groups improved"
       ],
       "tag": "boss_selection_bias_prior_trends",
@@ -13129,7 +13129,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Before a policy change, treatment-store sales had been rising 6% per month while control-store sales were flat. After treatment, the treatment group rises 8% and the control group rises 1%. Why is a simple difference-in-differences estimate suspect?",
       "options": [
-        "Difference-in-differences requires identical sales levels before treatment — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Difference-in-differences requires identical sales levels before treatment",
         "The control group must receive the policy later",
         "The treatment effect is automatically 7% because 8 minus 1 equals 7",
         "The groups did not exhibit parallel pre-treatment trends, so the control may not represent the treatment counterfactual"
@@ -13155,7 +13155,7 @@ const questionBanks = {
       "q": "A new sales script spreads through conversations among employees in the same branch. What experimental design best limits contamination?",
       "options": [
         "Randomize entire branches and analyze outcomes with branch-level clustering",
-        "Randomize employees within each branch and ignore coworker contact — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Randomize employees within each branch and ignore coworker contact",
         "Let managers choose which employees receive the script",
         "Compare top-performing branches with bottom-performing branches"
       ],
@@ -13181,7 +13181,7 @@ const questionBanks = {
       "options": [
         "Random assignment guarantees unbiased results regardless of dropout",
         "Differential attrition can destroy comparability even though initial assignment was random",
-        "The treatment effect must be negative because more treated workers left — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "The treatment effect must be negative because more treated workers left",
         "Attrition matters only when total sample size falls below 100"
       ],
       "tag": "boss_differential_attrition",
@@ -13207,7 +13207,7 @@ const questionBanks = {
         "Compare redeemers with nonredeemers",
         "Drop control customers who found other coupons",
         "Compare outcomes by randomized offer assignment, regardless of actual redemption",
-        "Compare only customers who followed their assigned condition — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism"
+        "Compare only customers who followed their assigned condition"
       ],
       "tag": "boss_intention_to_treat",
       "type": "analysis",
@@ -13231,7 +13231,7 @@ const questionBanks = {
       "options": [
         "Hourly checks reduce sample size to zero",
         "A p-value below 0.05 proves the effect is economically important",
-        "Stopping early always increases Type II error but never Type I error — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Stopping early always increases Type II error but never Type I error",
         "Repeated opportunities to stop on a random favorable fluctuation raise the overall Type I error rate"
       ],
       "tag": "boss_repeated_testing_error",
@@ -13281,7 +13281,7 @@ const questionBanks = {
       "options": [
         "The model must overstate expected revenue because all correlations raise means",
         "The model may understate joint bad or margin-compressing states by breaking the observed dependence structure",
-        "Independence changes no risk estimate as long as each variable has the correct average — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Independence changes no risk estimate as long as each variable has the correct average",
         "The model becomes a randomized experiment"
       ],
       "tag": "boss_simulation_correlation",
@@ -13307,7 +13307,7 @@ const questionBanks = {
         "Charge everyone $60; expected revenue is $73,200",
         "Charge everyone $100; expected revenue is $42,000",
         "Charge $100 to the high-value segment and $60 to the low-value segment; expected revenue is $90,000",
-        "Charge both segments $80; expected revenue is $97,600 after accounting for every stated value, probability, cash-flow date, and decision constraint"
+        "Charge both segments $80; expected revenue is $97,600"
       ],
       "tag": "boss_segment_pricing_uncertainty",
       "type": "calculation",
@@ -13329,7 +13329,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "A software company charges students $40 and businesses $140 for identical transferable licenses. What condition most threatens the pricing strategy?",
       "options": [
-        "Business demand is less elastic than student demand — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Business demand is less elastic than student demand",
         "The firm can verify student status before purchase",
         "Marginal cost is low",
         "Students can cheaply resell licenses to businesses, undermining separation between segments"
@@ -13382,7 +13382,7 @@ const questionBanks = {
         "The treatment has no effect on any customer",
         "The overall average can hide economically important heterogeneous effects that support targeted pricing",
         "Randomization failed because subgroup effects differ",
-        "The discount should be offered to everyone because the average is zero — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism"
+        "The discount should be offered to everyone because the average is zero"
       ],
       "tag": "boss_heterogeneous_treatment_pricing",
       "type": "analysis",
@@ -13429,7 +13429,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "A technology partnership cannot specify every future use of a jointly developed algorithm. Which governance design best handles unforeseen contingencies?",
       "options": [
-        "Write a contract claiming every possible future event is already covered — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Write a contract claiming every possible future event is already covered",
         "Give one party unrestricted authority with no compensation rule",
         "Delay all investment until uncertainty disappears",
         "Assign decision rights, define measurable performance boundaries, create an escalation process, and specify buyout or exit rules"
@@ -13455,7 +13455,7 @@ const questionBanks = {
       "q": "Across 200 forecasts labeled '70% likely,' the predicted event occurs 100 times. What does this reveal?",
       "options": [
         "The forecasts are overconfident or poorly calibrated because the event occurs only 50% of the time",
-        "The forecasts are perfectly calibrated because 100 is a large sample after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "The forecasts are perfectly calibrated because 100 is a large sample",
         "The forecasts are underconfident because 50% is below 70%",
         "Calibration cannot be assessed using repeated forecasts"
       ],
@@ -13482,7 +13482,7 @@ const questionBanks = {
         "Random assignment automatically created selection bias",
         "Regression to the mean: extreme observations often move toward normal even without treatment",
         "The stores improved because coaching must work retroactively",
-        "A control group is unnecessary when all selected stores were poor performers — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism"
+        "A control group is unnecessary when all selected stores were poor performers"
       ],
       "tag": "boss_regression_to_mean",
       "type": "analysis",
@@ -13556,7 +13556,7 @@ const questionBanks = {
       "options": [
         "X and Y are close substitutes and likely belong in the same relevant product market",
         "X and Y are complements and must be sold together",
-        "Brand Y belongs in every market where its buyers spend money — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Brand Y belongs in every market where its buyers spend money",
         "The evidence proves the geographic market is national"
       ],
       "tag": "boss_cross_price_market_definition",
@@ -13579,7 +13579,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Concrete sells for $120 per ton in City A and $112 in City B, but shipping from B to A costs $15 per ton. What does this imply about treating the cities as one geographic market?",
       "options": [
-        "The cities must be one market because B's posted price is lower after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "The cities must be one market because B's posted price is lower",
         "The delivered price from B is $127, so B may not constrain A despite its lower posted price",
         "Shipping costs never matter when products are identical",
         "City A is automatically a monopoly market"
@@ -13605,7 +13605,7 @@ const questionBanks = {
       "q": "Hotel rooms for a major championship sell out months in advance, while ordinary-week rooms remain plentiful. Why can the event weekend be a separate relevant market?",
       "options": [
         "Hotels use the same buildings on both dates",
-        "All hotel stays are identical because they involve lodging — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "All hotel stays are identical because they involve lodging",
         "Capacity cannot be shifted freely across dates, and consumers cannot substitute an ordinary week for the event weekend",
         "A market must always cover an entire calendar year"
       ],
@@ -13681,7 +13681,7 @@ const questionBanks = {
       "options": [
         "Price stays at $40 while quantity rises to 130",
         "Price rises from $40 to about $41.67, and quantity rises from 100 to about 133.33",
-        "Price falls to about $38.33 while quantity rises to 126.67 after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "Price falls to about $38.33 while quantity rises to 126.67",
         "Price rises to $50 while quantity stays at 100"
       ],
       "tag": "boss_simultaneous_shift_equations",
@@ -13704,7 +13704,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Refer to the symbolic supply-and-demand graph. The market begins at S0 and D0 and ends at quantity QD with price P1. Which curve movements produced the final equilibrium?",
       "options": [
-        "Demand increased while supply decreased after tracing every stated curve movement and intermediate equilibrium shown",
+        "Demand increased while supply decreased",
         "Demand decreased while supply increased",
         "Demand increased from D0 to D1 and supply increased from S0 to S1",
         "Demand and supply both decreased"
@@ -13812,7 +13812,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "At the current market price, the marginal buyer values the good at $72 and the marginal seller's opportunity cost is $68. What does this imply about expanding trade by one unit?",
       "options": [
-        "The trade destroys $4 of surplus because seller cost is positive after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "The trade destroys $4 of surplus because seller cost is positive",
         "The buyer alone gains $72 regardless of price",
         "The trade creates $4 of total surplus and should occur if transaction costs are below $4",
         "The seller alone gains $68 regardless of price"
@@ -13838,7 +13838,7 @@ const questionBanks = {
       "q": "Five buyers value one unit at $100, $90, $75, $60, and $40. Five sellers have costs of $20, $50, $70, $85, and $95. In a competitive market with one unit per participant, what quantity is efficient and what price range can clear the market?",
       "options": [
         "Two units, with price between $50 and $60",
-        "Four units, with price between $85 and $90 after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "Four units, with price between $85 and $90",
         "Five units, with any price above $95",
         "Three units, with a clearing price between $70 and $75"
       ],
@@ -13939,7 +13939,7 @@ const questionBanks = {
       "options": [
         "Buyers bear most of the burden because they legally purchase the good",
         "Demand must be perfectly inelastic",
-        "The side that sends the tax payment to government bears the full burden — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "The side that sends the tax payment to government bears the full burden",
         "Sellers bear most of the tax burden, suggesting supply is less elastic than demand"
       ],
       "tag": "boss_tax_incidence_inference",
@@ -13964,7 +13964,7 @@ const questionBanks = {
       "options": [
         "The segments may have sharply different substitution options, so aggregation hides heterogeneous demand responses",
         "Elasticity cannot be calculated for services",
-        "All airline customers face identical opportunity costs — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "All airline customers face identical opportunity costs",
         "Market definition never affects estimated demand"
       ],
       "tag": "boss_market_aggregation_elasticity",
@@ -14012,7 +14012,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "A drought raises the price of corn. Corn is an input into ethanol and a substitute in use for soy-based animal feed. Holding other factors constant, what paired effect is most likely?",
       "options": [
-        "Ethanol demand decreases, while soy-feed supply increases — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Ethanol demand decreases, while soy-feed supply increases",
         "Ethanol supply increases, while soy-feed demand decreases",
         "Ethanol supply decreases, while demand for soy-based feed increases",
         "Both ethanol and soy-feed demand decrease"
@@ -14038,7 +14038,7 @@ const questionBanks = {
       "q": "Buyers expect next month’s price to rise sharply, while sellers expect production costs to fall next month and can store the product cheaply. What is the likely current-market effect?",
       "options": [
         "Current demand decreases and current supply increases, lowering price",
-        "Both current demand and supply increase, making price ambiguous and quantity higher — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Both current demand and supply increase, making price ambiguous and quantity higher",
         "Expectations affect only future curves, never current behavior",
         "Current demand increases and current supply decreases, raising price while leaving quantity ambiguous"
       ],
@@ -14086,7 +14086,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Refer to the numerical graph. The market is observed at price $18 and quantity 65. A later observation shows price $14 and quantity 65. Which change is consistent with the graph?",
       "options": [
-        "Demand increased and supply decreased after tracing every stated curve movement and intermediate equilibrium shown",
+        "Demand increased and supply decreased",
         "Demand fell from D2 to D1 while supply increased from S2 to S1",
         "Only supply decreased",
         "Only demand increased"
@@ -14116,7 +14116,7 @@ const questionBanks = {
         "$480,000 profit, attracting exit that raises price",
         "$240,000 loss, causing immediate shutdown",
         "$240,000 profit, attracting entry that expands market supply and pushes price downward",
-        "$480,000 profit, with no long-run response because the firm is a price taker after accounting for every stated value, probability, cash-flow date, and decision constraint"
+        "$480,000 profit, with no long-run response because the firm is a price taker"
       ],
       "tag": "boss_competitive_profit_entry",
       "type": "calculation",
@@ -14138,7 +14138,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Refer to the long-run competition graph. The market begins at point A. Demand shifts from D0 to D1. Which chain best describes the short-run and long-run adjustment?",
       "options": [
-        "The market moves to C; firms earn profit; exit shifts supply to S0 after tracing every stated curve movement and intermediate equilibrium shown",
+        "The market moves to C; firms earn profit; exit shifts supply to S0",
         "The market moves directly to D with no temporary profit signal",
         "The market moves to B; losses cause exit; price rises further",
         "The market moves to B; firms earn profit; entry shifts supply to S1; the market settles at D with price back at P1"
@@ -14166,7 +14166,7 @@ const questionBanks = {
       "q": "Refer to the long-run competition graph. If the market is at point C, what adjustment should occur if firms can enter and exit freely?",
       "options": [
         "Firms incur losses, exit shifts supply left from S1 toward S0, and the market moves toward A",
-        "Firms earn profit, entry shifts supply farther right, and price falls below P0 after tracing every stated curve movement and intermediate equilibrium shown",
+        "Firms earn profit, entry shifts supply farther right, and price falls below P0",
         "Firms shut down permanently with no market-supply change",
         "Demand automatically shifts from D0 to D1"
       ],
@@ -14195,7 +14195,7 @@ const questionBanks = {
         "Its price falls to P0, output falls, and it exits immediately",
         "Its price rises from P1 to P2, output rises from Q1 to Q2, and it earns positive economic profit",
         "Its price stays at P1 because competitive firms set market price",
-        "Its output rises but profit remains zero because MR always equals MC after tracing every stated curve movement and intermediate equilibrium shown"
+        "Its output rises but profit remains zero because MR always equals MC"
       ],
       "tag": "boss_graph_firm_market_linkage",
       "type": "graph_analysis",
@@ -14219,7 +14219,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "Refer to the long-run competition graph. Which pair of movements illustrates mean reversion in industry profits?",
       "options": [
-        "A to B and A to C, because demand shocks are mean reversion after tracing every stated curve movement and intermediate equilibrium shown",
+        "A to B and A to C, because demand shocks are mean reversion",
         "D to B and A to C, because firms prefer higher prices",
         "B to D erodes positive profit through entry, while C to A erodes losses through exit",
         "B to C and C to D, because supply never changes"
@@ -14273,7 +14273,7 @@ const questionBanks = {
       "options": [
         "It may be a compensating wage differential for undesirable job attributes, not evidence that B necessarily offers higher economic rent",
         "It proves workers in B are 19.4% more productive",
-        "It is a compensating risk differential only if the firm faces bankruptcy risk — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "It is a compensating risk differential only if the firm faces bankruptcy risk",
         "Competitive markets require identical nominal wages for identical skill"
       ],
       "tag": "boss_compensating_wage_amenities",
@@ -14296,7 +14296,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "A risky asset has an expected return of 8% while the risk-free return is 4%. Investors require a 5% premium for its risk. What adjustment should competitive capital markets produce?",
       "options": [
-        "Investors buy the risky asset because any positive premium is sufficient — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Investors buy the risky asset because any positive premium is sufficient",
         "Investors sell the risky asset; its price falls until its expected return rises enough to restore the required premium",
         "Its price rises until the expected return falls below 8%",
         "Nothing changes because expected return exceeds the risk-free rate"
@@ -14396,7 +14396,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "One hundred identical consumers each have demand q = 10 - P. Marginal cost is $2 and fixed cost is zero. Under a two-part tariff that preserves efficient usage and extracts all consumer surplus, what usage price and membership fee should the monopolist set?",
       "options": [
-        "Usage price $6 and membership fee $16 after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "Usage price $6 and membership fee $16",
         "Usage price $2 and membership fee $32 per consumer",
         "Usage price $10 and membership fee $0",
         "Usage price $2 and membership fee $64"
@@ -14421,7 +14421,7 @@ const questionBanks = {
       "sourceGame": "marketSignal",
       "q": "A natural monopoly has falling average total cost over the relevant output range. Price equal to marginal cost would create a loss. Which regulation most directly preserves efficient output while keeping the firm solvent?",
       "options": [
-        "Set price at average total cost and claim the outcome is fully allocatively efficient — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Set price at average total cost and claim the outcome is fully allocatively efficient",
         "Set price above the unregulated monopoly price",
         "Set price at marginal cost and finance the resulting fixed-cost shortfall with a transparent lump-sum subsidy",
         "Require zero output whenever marginal cost is below average cost"
@@ -14448,7 +14448,7 @@ const questionBanks = {
       "options": [
         "Demand shifts right enough to preserve the same monopoly margin by definition",
         "The incumbent’s profit rises because more firms advertise the product",
-        "Generic entry cannot affect profit because the original firm still owns its factories — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Generic entry cannot affect profit because the original firm still owns its factories",
         "Entry and imitation shift market supply outward, reduce price, and erode the incumbent’s economic profit"
       ],
       "tag": "boss_patent_expiration_profit_erosion",
@@ -14472,7 +14472,7 @@ const questionBanks = {
       "q": "A platform has strong network effects, but users can export their data and communicate seamlessly with rival platforms. What happens to the entry barrier?",
       "options": [
         "Interoperability weakens lock-in and makes network effects less protective of monopoly profit",
-        "Network effects become stronger because users have more choices — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Network effects become stronger because users have more choices",
         "Interoperability creates a legal patent",
         "Entry becomes impossible whenever the incumbent has more users"
       ],
@@ -14499,7 +14499,7 @@ const questionBanks = {
         "A single seller is always a price taker",
         "Potential hit-and-run entry constrains the incumbent even before actual entry occurs",
         "Monopoly pricing requires more than one incumbent",
-        "Low sunk cost guarantees the firm earns zero accounting profit — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism"
+        "Low sunk cost guarantees the firm earns zero accounting profit"
       ],
       "tag": "boss_contestable_market",
       "type": "analysis",
@@ -14522,7 +14522,7 @@ const questionBanks = {
       "q": "An entrant expects contribution profit of $8,000 at the end of each of the next three years and must pay an irreversible entry cost of $20,000 now. At 10%, should it enter?",
       "options": [
         "Yes; undiscounted contribution totals $24,000",
-        "Yes; any positive annual contribution justifies entry after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "Yes; any positive annual contribution justifies entry",
         "No; the present value of operating contribution is about $19,895, slightly below the sunk entry cost",
         "No; entry is never rational in a concentrated market"
       ],
@@ -14573,7 +14573,7 @@ const questionBanks = {
       "options": [
         "Q = 70, which is above the unregulated monopoly quantity of 50 but below the efficient quantity of 100",
         "Q = 50, because regulation cannot change monopoly output",
-        "Q = 100, because any price cap forces marginal-cost pricing after accounting for every stated value, probability, cash-flow date, and decision constraint",
+        "Q = 100, because any price cap forces marginal-cost pricing",
         "Q = 20, because the cap equals marginal cost plus $30"
       ],
       "tag": "boss_monopoly_price_cap_output",
@@ -14599,7 +14599,7 @@ const questionBanks = {
         "The decline proves demand is falling to zero",
         "The profit premium is mean-reverting toward the competitive return, though it need not hit exactly 6% next year",
         "Mean reversion requires returns to alternate above and below 6% each year",
-        "The industry remains a permanent monopoly because return is still above 6% — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism"
+        "The industry remains a permanent monopoly because return is still above 6%"
       ],
       "tag": "boss_profit_mean_reversion_data",
       "type": "analysis",
@@ -14622,7 +14622,7 @@ const questionBanks = {
       "q": "Two bonds have the same expected cash flows and maturity. Bond A is highly liquid and protected by collateral; Bond B is illiquid and unsecured. In equilibrium, what must generally be true?",
       "options": [
         "Bond A must offer the higher yield because it is safer",
-        "Both must offer identical yields because expected cash flows match — a conclusion claimed to remain valid after accounting for every stated constraint and alternative mechanism",
+        "Both must offer identical yields because expected cash flows match",
         "Bond B must offer a higher expected yield to compensate investors for added liquidity and default risk",
         "Bond B's price must be higher because risk raises required return"
       ],
@@ -15798,12 +15798,12 @@ const repairPoolGroups = {
     {
       "id": 5046,
       "sourceGame": "marketSignal",
-      "q": "At what output does a profit-maximizing monopolist produce?",
+      "q": "A manager selects monopoly output where price equals marginal cost. Why can this overstate the profit-maximizing output when demand slopes downward?",
       "options": [
-        "Where price equals marginal cost",
-        "Where average total cost is highest across all feasible output levels",
-        "Where marginal revenue equals marginal cost",
-        "Where demand equals zero"
+        "The extra unit can require a price cut on existing sales, so marginal revenue is below price",
+        "The extra unit necessarily raises average fixed cost",
+        "The firm should choose the highest feasible price regardless of sales",
+        "Marginal revenue equals total revenue whenever price changes"
       ],
       "tag": "repair_monopoly_output_profit_1",
       "type": "conceptual",
@@ -15813,31 +15813,31 @@ const repairPoolGroups = {
       "primarySkill": "monopoly_output_profit",
       "secondarySkills": [],
       "repairSkill": "monopoly_output_profit",
-      "commonError": "Using the competitive P=MC rule for monopoly",
-      "feedback": "A monopolist compares the additional revenue and cost from one more unit.",
-      "aHash": "50c8a1fd61282ffe57d11f5b914e2326187837ce2d4c0f50378922d5b8af544c"
+      "commonError": "uses_price_instead_of_marginal_revenue",
+      "feedback": "A uniform-price monopolist considers the effect on all sales. Its marginal revenue is below price, so the interior output rule compares marginal revenue with marginal cost.",
+      "aHash": "72f87562fb132f9d7bcd78d6f28ec00323fe5fb1088d1a1c924a00b57b676051"
     },
     {
       "id": 5047,
       "sourceGame": "marketSignal",
-      "q": "A monopolist sells 10 units at $30 and 11 units at $28. What is marginal revenue from the 11th unit?",
+      "q": "A manager computes marginal revenue using only receipts from new customers. A price cut also applies to existing customers. What belongs in the marginal-revenue calculation?",
       "options": [
-        "$28",
-        "$20",
-        "$2",
-        "$8"
+        "All new receipts, without changing revenue from earlier customers",
+        "The change in total revenue, including the discount on existing sales",
+        "The new price less average fixed cost",
+        "The change in total cost divided by the additional units"
       ],
       "tag": "repair_monopoly_output_profit_2",
-      "type": "calculation",
+      "type": "conceptual",
       "objective": "LO9.6",
       "difficulty": "repair",
       "conceptCluster": "monopoly_analysis",
       "primarySkill": "monopoly_output_profit",
       "secondarySkills": [],
       "repairSkill": "monopoly_output_profit",
-      "commonError": "Using the new price as marginal revenue",
-      "feedback": "Total revenue rises from $300 to $308, so marginal revenue is $8.",
-      "aHash": "5282dcb73b7e25acd120ba7db666af3861553abaa9cfa5968b124049b9ed1d94"
+      "commonError": "ignores_price_cut_on_existing_sales",
+      "feedback": "Marginal revenue is the change in total revenue per added unit. A uniform price cut lowers revenue on existing units as well as attracting new sales. The posted price alone misses that loss.",
+      "aHash": "8e63d8b7d993cbb853315144654ea78139308b103a8d104be1a3a02aa53cb656"
     }
   ],
   "monopoly_welfare_regulation": [
@@ -17065,12 +17065,12 @@ const bridgePoolGroups = {
     {
       "id": 6047,
       "sourceGame": "marketSignal",
-      "q": "A monopolist sells 100 units at $25, has marginal cost of $10, and fixed cost of $500. What is profit?",
+      "q": "A supplier reports $7,920 in sales from 220 identical units. Each unit uses $17 in variable inputs, and period fixed cost is $1,450. What is total profit?",
       "options": [
-        "$500",
-        "$1,000",
-        "$1,500",
-        "$2,000"
+        "$4,180",
+        "$2,730",
+        "$6,470",
+        "$2,820"
       ],
       "tag": "bridge_monopoly_output_profit_2",
       "type": "calculation",
@@ -17080,9 +17080,9 @@ const bridgePoolGroups = {
       "primarySkill": "monopoly_output_profit",
       "secondarySkills": [],
       "repairSkill": "monopoly_output_profit",
-      "commonError": "Ignoring either variable cost or fixed cost",
-      "feedback": "Profit is ($25-$10)(100) - $500 = $1,000.",
-      "aHash": "5101c9638b2d2781151db487a22ab4407af938151d891f67c126136f30a0aae9"
+      "commonError": "reports_contribution_without_subtracting_fixed_cost",
+      "feedback": "Variable cost is 220 × $17 = $3,740. Subtract both variable and fixed costs from revenue: $7,920 − $3,740 − $1,450 = $2,730. Contribution of $4,180 still includes fixed costs.",
+      "aHash": "cef6daae4338b3822320f3d2ade75ff362af76ef7d35b4b5ed8715e9691f92f5"
     }
   ],
   "monopoly_welfare_regulation": [

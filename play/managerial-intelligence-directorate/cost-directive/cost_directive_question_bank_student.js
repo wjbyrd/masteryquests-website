@@ -4346,7 +4346,7 @@ const questionBanks = {
         "Delegating purchasing is sufficient to align the buyer's objective."
       ],
       "tag": "managerial_problem_diagnosis",
-      "type": "identification",
+      "type": "diagnosis",
       "objective": "LO1.5",
       "difficulty": "hard",
       "conceptCluster": "hard_costDirective_diagnostic_questions",
@@ -4355,7 +4355,7 @@ const questionBanks = {
         "diagnostic_questions"
       ],
       "repairSkill": "managerial_problem_diagnosis",
-      "commonError": "outcome_bias",
+      "commonError": "rewards_invoice_savings_while_ignoring_known_rework_cost",
       "feedback": "The firm spends $3 more per component overall. Existing information does not fix a bonus that excludes rework.",
       "aHash": "c52fe4b1267948fd9f4a839419c86342af969db8811016e7d52b8f4a405022dd"
     },
@@ -4755,7 +4755,7 @@ const questionBanks = {
         "Pickup creates no value because it adds three kinds of cost."
       ],
       "tag": "value_gap_opportunities",
-      "type": "application",
+      "type": "calculation",
       "objective": "LO2.4",
       "difficulty": "hard",
       "conceptCluster": "hard_costDirective_transaction_opportunity",
@@ -8772,28 +8772,26 @@ const questionBanks = {
     {
       "id": 9011,
       "sourceGame": "costDirective",
-      "q": "A well-designed organization is most likely to assign pricing authority to a regional manager when which condition holds?",
+      "q": "Regional managers know which service requests customers value, while headquarters knows the cost of sharing specialist capacity across regions. A regional margin bonus ignores delays imposed on other regions. Which design uses both sources of information and aligns pricing decisions?",
       "options": [
-        "The manager has the lowest salary among regional executives",
-        "The region has the largest number of employees to supervise",
-        "The accounting department wants one price for all regions",
-        "The manager has better local demand information and is rewarded for profit, not just sales volume"
+        "Keep local pricing, share capacity costs, and charge each region for the delays its accepted work imposes",
+        "Keep local pricing and share capacity costs, but retain the regional margin bonus without delay charges",
+        "Move all pricing to headquarters, use capacity costs, and stop collecting local customer information",
+        "Keep local pricing and replace the margin bonus with a revenue bonus while sharing capacity reports"
       ],
       "tag": "organization_design_info_incentives",
-      "type": "application",
+      "type": "integration",
       "objective": "LO1.4",
       "difficulty": "legendary",
       "conceptCluster": "legendary_costDirective_organization_design",
       "primarySkill": "organization_design_info_incentives",
       "secondarySkills": [
-        "incentives",
-        "authority_assignment",
-        "organization_design"
+        "incentive_system_design"
       ],
       "repairSkill": "organization_design_info_incentives",
-      "commonError": "assigns_authority_without_incentive_alignment",
-      "feedback": "Authority should move toward better information when incentives also push the decision maker toward the firm's objective.",
-      "aHash": "98209b89dba180c546b50c087df2881a3aee735f32f3f1617acf57127e95b4c5"
+      "commonError": "fixes_information_without_fixing_cross_region_incentives",
+      "feedback": "Local demand information and central capacity information are complementary. Sharing data addresses the information gap; making regions bear the costs they impose addresses the incentive gap. Data alone leaves the narrow bonus distorted.",
+      "aHash": "24d577358536062e6444234fe6a99a35547726f430dcfaed382a9c4771510ce4"
     },
     {
       "id": 9012,
